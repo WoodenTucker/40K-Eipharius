@@ -2,8 +2,6 @@
 	category = "Black Market"
 
 
-
-
 /datum/cargo_entry/bmarket/puzzle
 	name = "Xenos Puzzle Box"
 	cost = 30
@@ -28,36 +26,6 @@
 	name = "Xenos Alloy"
 	cost = 28
 	item_path = /obj/item/rnd/eng3
-
-/datum/cargo_entry/bmarket/ritualknife
-	name = "Ritual Knife"
-	cost = 69
-	item_path = /obj/item/melee/sword/skinning_knife
-
-/datum/cargo_entry/bmarket/chaosknife
-	name = "Ch**s Knife"
-	cost = 65
-	item_path = /obj/item/melee/sword/chaosknife
-
-/datum/cargo_entry/bmarket/slaaneshsword
-	name = "Sla**sh Blade"
-	cost = 140
-	item_path = /obj/item/melee/sword/slaanesh
-
-/datum/cargo_entry/bmarket/hellblade
-	name = "H*ll Blade"
-	cost = 280
-	item_path = /obj/item/melee/sword/hellblade
-
-/datum/cargo_entry/bmarket/magushelm
-	name = "Magus Helm"
-	cost = 60
-	item_path = /obj/item/clothing/head/culthood/magus
-
-/datum/cargo_entry/bmarket/magusrobes
-	name = "Magus Robes"
-	cost = 140
-	item_path = /obj/item/clothing/suit/cultrobes/magusred
 
 /datum/cargo_entry/bmarket/injectortau
 	name = "Tissue Rebuilder Syrette"

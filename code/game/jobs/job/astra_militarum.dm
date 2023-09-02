@@ -413,7 +413,7 @@ datum/job/ig/bullgryn
 
 /datum/job/kasrkin
 	title = "Kasrkin"
-	supervisors = "Your Sergeant, The Commissar and The Inquisition."
+	supervisors = "The Governor and The Inquisition."
 	department_flag = SEC|INQ
 	total_positions = 0 // Disabled. Kasrkin roundstart presence often result in KOS fights with friendly lateparties.
 	spawn_positions = 0
@@ -451,7 +451,7 @@ datum/job/ig/bullgryn
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
 		H.warfare_faction = IMPERIUM
 //		H.vice = null //THE VETERAN HAS SEEN SOME SHIT BRO
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Kasrkin serving as an agent to the Imperial Guard Sergeant on behalf of your regiment, while expected to follow orders you ultimately serve the Astra Militarum and the memory of Cadia to whom you are loyal above all else. You unlike most veterans of the Astra Militarum are likely experienced and knowledgeable enough about Chaos to not be drinking the kool aid the Imperium gives to it's soldiers and instead serve because of your true understanding of what The God Emperor and all humanity stand against...</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Kasrkin serving as an agent to the Governor on behalf of your regiment, while expected to follow orders you ultimately serve the Astra Militarum and the memory of Cadia to whom you are loyal above all else. You unlike most veterans of the Astra Militarum are likely experienced and knowledgeable enough about Chaos to not be drinking the kool aid the Imperium gives to it's soldiers and instead serve because of your true understanding of what The God Emperor and all humanity stand against...</font></b></span>")
 
 
 // Commissar
@@ -1030,7 +1030,7 @@ datum/job/ig/bullgryn
 	head = null
 	shoes = /obj/item/clothing/shoes/jackboots/ogryn
 	gloves = null
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/warfare/ogryn
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/armor/ogryn/two
 	id_type = /obj/item/card/id/pilgrim/innkeeper

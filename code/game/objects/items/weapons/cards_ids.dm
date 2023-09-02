@@ -625,7 +625,7 @@ var/const/NO_EMAG_ACT = -50
 	access = list(access_meeting) //changed from 209 to 219, as tau is now 209
 
 /obj/item/card/id/key/super/daemon
-	name = "Daemon Key"
+	name = "Strange Key"
 	desc = "You're unsettled at just thinking about what this may open. Maybe ask your local inquisitor for help? They're nice with this kind of stuff."
 	access = list(access_daemon)
 

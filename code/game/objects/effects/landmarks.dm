@@ -379,6 +379,8 @@ Template:
 				/obj/item/melee/telebaton = 3,
 				/obj/item/melee/trench_axe/glaive = 3,
 				/obj/item/melee/trench_axe/glaive/adamantine = 1,
+				/obj/item/melee/sword/machete/chopper/heavy = 2,
+				/obj/item/melee/sword/machete/chopper/heavy/adamantine = 1,
 				/obj/item/melee/trench_axe/bardiche = 3,
 				/obj/item/melee/trench_axe/lance = 2,
 				/obj/item/melee/trench_axe/lance/adamantine = 1,
@@ -1014,6 +1016,9 @@ Template:
 
 /obj/effect/landmark/cargospawn
 	name = "cargospawn"
+
+/obj/effect/landmark/cargospawn2
+	name = "cargospawn2"
 
 /obj/effect/landmark/reqspawn
 	name = "reqspawn"

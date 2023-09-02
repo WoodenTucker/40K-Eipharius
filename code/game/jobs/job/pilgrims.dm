@@ -311,7 +311,7 @@ Pilgrim Fate System
 
 	var/mob/living/carbon/human/U = src
 	U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,) //removes verb
-	var/fates = list("Mysterious Citizen","PDF","Miner","Fate Touched","Disgraced Noble")
+	var/fates = list("Mysterious Citizen","PDF","Miner","Fate Touched","Disgraced Noble","Palace Guard")
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -407,6 +407,26 @@ Pilgrim Fate System
 			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
+		if("Palace Guard")
+			U.add_stats(rand(15,17), rand(14,17), rand(14,16), rand (13,15)) //
+			U.add_skills(rand(6,8),rand(6,8),rand(4,6),rand(5,6),rand(2,6)) //melee, ranged, med, eng, surgery
+			new /obj/item/clothing/gloves/thick(src.loc)
+			new /obj/item/storage/backpack/satchel/warfare(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
+			new /obj/item/device/radio/headset/red_team(src.loc)
+			new /obj/item/device/flashlight/lantern(src.loc) 
+			new /obj/item/clothing/shoes/jackboots/noble(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/card/id/key/grand/master, slot_wear_id)
+			new /obj/item/stack/thrones/twenty(src.loc)
+			new /obj/item/clothing/head/helmet/hevhelm/palace(src.loc)
+			new /obj/item/clothing/suit/armor/brigandine/palace(src.loc)
+			new /obj/item/melee/trench_axe/glaive/adamantine(src.loc)
+			to_chat(U,"<span class='danger'><b><font size=4>THE PROTECTORATE</font></b></span>")
+			to_chat(U,"<span class='goodmood'><b><font size=3>Skilled in the arts of blade and gun lore, you are one of the rare individuals selected by the Governor to protect them personally from the heretic, the alien and worst of all -- the human. Find the Steward/Commissar or Governor for your assignment...</font></b></span>")
+			U.stat = CONSCIOUS
+			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
+			U.sleeping = 0
+			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("PDF")
 			U.add_stats(rand(14,17), rand(12,17), rand(12,17), rand (12,14)) //
 			U.add_skills(rand(5,7),rand(6,8),rand(3,3),rand(4,5),rand(2,2)) //melee, ranged, med, eng, surgery
@@ -497,8 +517,10 @@ Pilgrim Fate System
 				to_chat(U,"<span class='danger'><b><font size=4>THE SORCERER</font></b></span>")
 				to_chat(U,"<span class='goodmood'>You're a foul sorcerer of chaos magics -- unless you aren't. In which case you're a crackpot. Or are you? Who knows. Best hide your robes unless you want to be shot to pieces though...</font></b></span>")
 				U.add_stats(rand(15,16), rand(14,16), rand(14,18), rand (12,16)) //
-				new /obj/item/clothing/head/culthood/magus(src.loc)
-				new /obj/item/clothing/suit/cultrobes/magusred(src.loc)
+				new /obj/item/clothing/suit/armor/knighthosp(src.loc)
+				new /obj/item/clothing/head/helmet/hauberk(src.loc)
+				new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
+				new /obj/item/device/radio/headset/headset_sci(src.loc)
 				if(prob(10))
 					new /obj/item/device/radio/headset/blue_team/all(src.loc)
 				new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
@@ -520,7 +542,7 @@ Pilgrim Fate System
 	social_class = SOCIAL_CLASS_MED //he's important to the pilgrims, but not to anyone else
 	total_positions = 1
 	spawn_positions = 1
-	open_when_dead = 1
+	open_when_dead = 0
 	supervisors = "money"
 	selection_color = "#530606"
 	access = list(access_bar, access_ganger)
@@ -529,16 +551,17 @@ Pilgrim Fate System
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
 	cultist_chance = 100
+	species_role = "Ogryn"
 
 	equip(var/mob/living/carbon/human/H)
+	//theres gonna be some redundencies here but I do not careeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(13,19), rand(13,19), rand(12,19), rand (12,19))
-		H.add_skills(rand(7,8),rand(7,9),rand(2,3),2,2) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(20,30), rand(15,18), rand(15,18), rand (2,5)) //ogryn are stronger than astartes or smh i don't remember
+		H.add_skills(rand(10,13),1,1,1,1) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		H.adjustStaminaLoss(-INFINITY)
-		H.assign_random_quirk()
-		to_chat(H, "<span class='notice'><b><font size=3>You're an up-and-coming entrepreneur on Eipharius. After securing a hefty loan of 700 thrones from the local gang, you now own the local inn. You even had enough cash over to hire a loyal Ogryn to boot. The world is your oyster.. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You're an up-and-coming entrepreneur on Eipharius -- the wisest most big brain Ogryn bonehead that ever lived. After securing a hefty loan of 700 thrones from the local gangboss(via decapatation), you now own the local inn and have become the new Mafia King of Messina. You even found another Ogryn living in the slums, gave them a job as a bartender/bouncer in exchange for a lifetime supply of pizza. The world is your oyster.. </font></b></span>")
+
 /*
 /datum/job/innkeeper
 	title = "innkeeper"
@@ -566,12 +589,46 @@ Pilgrim Fate System
 		H.assign_random_quirk()
 		to_chat(H, "<span class='notice'><b><font size=3>You're an innkeeper hired by the Underboss to keep his new, expensive establishment from collapsing. Sell alcohol, buy crops from the farmer to cook food, keep the place reasonably clean and be ready to duck once the intoxicated gun fights break out.</font></b></span>")
 */
+
+/datum/job/noble
+	title = "Noble"
+	department_flag = PIL
+	total_positions = 2
+	spawn_positions = 2
+	open_when_dead = 0
+	announced = FALSE
+	supervisors = "House Sondar"
+	economic_modifier = 5
+	social_class = SOCIAL_CLASS_MAX
+	announced = 0
+	access = list(access_bar, access_village, access_daemon)
+	minimal_access = list(access_bar, access_village, access_daemon)
+	minimal_player_age = 3
+	ideal_character_age = 40
+	outfit_type = /decl/hierarchy/outfit/job/cargo/noble
+	latejoin_at_spawnpoints = TRUE
+	cultist_chance = 15
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("[current_name] Sondar")
+		H.add_stats(rand(14,17), rand(14,17), rand(14,17), rand(12,16)) 
+		H.add_skills(rand(7,11),rand(7,11),rand(2,8),6,rand(2,8)) //melee, ranged, med, eng, surgery
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
+		H.assign_random_quirk()
+		H.warfare_faction = IMPERIUM
+		to_chat(H, "<span class='notice'><b><font size=3>You are a noble to House Sondar and Heir it's estates including the Mansion, Agri-Farm and Trade Fleet, one of the few to survive the very brief and violent civil war that occurred in this city. Much of your family was massacred, some even ripped apart in the streets by mobs who were torn to pieces by artillery guns and lasfire -- all devoured in absolute carnage. Now it is only you left, years later. A new master of the house must be chosen. Will you be the one to bring House Sondar back into the flame?</font></b></span>")
+
+
 /datum/job/pathfinder
 	title = "Pathfinder"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MED
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	open_when_dead = 0
 	supervisors = "Your own morality and ethics."
 	selection_color = "#848484"
@@ -612,8 +669,8 @@ Pilgrim Fate System
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(13,15), rand(14,17), rand(16,18), rand (18,22)) //strong stats due to their... interesting fame of being cult leaders
-		H.add_skills(rand(6,8),rand(6,7),rand(8,10),4,rand(8,10)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(13,16), rand(14,17), rand(16,18), rand (18,22)) //strong stats due to their... interesting fame of being cult leaders
+		H.add_skills(rand(6,9),rand(6,10),rand(8,10),4,rand(8,10)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.set_trait(new/datum/trait/death_tolerant())
@@ -671,20 +728,27 @@ Pilgrim Fate System
 
 /decl/hierarchy/outfit/job/underboss
 	name = OUTFIT_JOB_NAME("Underboss")
-	uniform = /obj/item/clothing/under/suit_jacket/really_black
-	back = /obj/item/storage/backpack/satchel/warfare
+	uniform = /obj/item/clothing/under/ogryn/jumpsuit
+	head = null
+	shoes = /obj/item/clothing/shoes/jackboots/ogryn
+	gloves = null
+	back = /obj/item/storage/backpack/satchel/warfare/ogryn
 	neck = /obj/item/reagent_containers/food/drinks/canteen
+	suit = /obj/item/clothing/suit/armor/ogryn/bouncer
 	l_ear = /obj/item/device/radio/headset/headset_service
 	r_ear = null
 	l_pocket = /obj/item/device/flashlight/lantern
 	pda_slot = null
 	id_type = null
 	r_pocket = /obj/item/storage/box/coin
-	shoes = /obj/item/clothing/shoes/dress
 	suit_store = null
+	l_hand = /obj/item/melee/sword/machete/chopper/heavy/adamantine
+	r_hand = /obj/item/gun/projectile/ork/automatic/shoota/big
 	backpack_contents = list(
+	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,
-    )
+
+	)
 
 /decl/hierarchy/outfit/job/innkeeper
 	name = OUTFIT_JOB_NAME("Innkeeper")
@@ -735,7 +799,7 @@ Pilgrim Fate System
 	head = null
 	shoes = /obj/item/clothing/shoes/jackboots/ogryn
 	gloves = null
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/warfare/ogryn
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/armor/ogryn/bouncer
 	pda_type = /obj/item/device/pda/penitent
@@ -746,6 +810,7 @@ Pilgrim Fate System
 	belt = null
 	pda_slot = null
 	l_hand = /obj/item/melee/classic_baton/trench_club
+	r_hand = /obj/item/gun/projectile/bolter_pistol
 	backpack_contents = list(
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
@@ -758,7 +823,7 @@ Pilgrim Fate System
 	head = null
 	shoes = /obj/item/clothing/shoes/jackboots/ogryn
 	gloves = null
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/warfare/ogryn
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/armor/ogryn/bouncer
 	id_type = /obj/item/card/id/pilgrim/innkeeper
@@ -768,7 +833,9 @@ Pilgrim Fate System
 	r_ear = null
 	belt = /obj/item/device/flashlight/lantern
 	pda_slot = null
-	l_hand = /obj/item/melee/classic_baton/trench_club
+	l_hand = /obj/item/melee/trench_axe/bardiche
+	r_hand = /obj/item/gun/projectile/bolter_pistol
+	suit_store = /obj/item/gun/projectile/ork/automatic/shoota/big
 	backpack_contents = list(
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,
@@ -965,7 +1032,8 @@ Pilgrim Fate System
 	announced = FALSE
 	cultist_chance = 0 // grog like emperorah :) // bouncer should only be cultist if the innkeeper is. as they would get easily indoctrinated by their dad/boss
 	species_role = "Ogryn"
-
+	access = list(access_bar, access_ganger)
+	minimal_access = list(access_bar)
 
 	equip(var/mob/living/carbon/human/H)
 	//theres gonna be some redundencies here but I do not careeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee

@@ -52,7 +52,7 @@
 	icon_state = "snubby"
 	max_shells = 6
 	caliber = "38"
-	accuracy = 0.7
+	accuracy = 1
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	ammo_type = /obj/item/ammo_casing/c38
 
@@ -66,7 +66,7 @@
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
 	force = 15
-	accuracy = 0.6 //not the best craftsmanship
+	accuracy = 1 //not the best craftsmanship
 	fire_delay= 3
 	ammo_type = /obj/item/ammo_casing/a357
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
@@ -84,8 +84,8 @@
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
 	force = 15
-	accuracy = 0.4 //not the best craftsmanship
-	fire_delay= 10
+	accuracy = 0.8 //not the best craftsmanship
+	fire_delay= 3
 	ammo_type = /obj/item/ammo_casing/a357
 
 /obj/item/gun/projectile/revolver/mateba
@@ -96,7 +96,7 @@
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	ammo_type = /obj/item/ammo_casing/a50
 	sales_price = 10
-	accuracy = 0.1
+	accuracy = 0.5
 	fire_delay= 3
 
 /obj/item/gun/projectile/revolver/villiers
@@ -109,7 +109,7 @@
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
 	max_shells = 6
 	force = 20
-	accuracy = 0.5
+	accuracy = 0
 	fire_delay= 6
 	burst = 2
 	ammo_type = /obj/item/ammo_casing/a357
@@ -125,7 +125,7 @@
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
 	force = 20
-	accuracy = 0.3
+	accuracy = 0.7
 	fire_delay= 2.8
 	ammo_type = /obj/item/ammo_casing/c44
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
@@ -145,7 +145,7 @@
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
 	force = 10
-	accuracy = 0.4
+	accuracy = 0.8
 	fire_delay= 2.7
 	ammo_type = /obj/item/ammo_casing/c44
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
@@ -160,5 +160,5 @@
 	desc = "A custom built .44 slug revolver capable of holding up to 8 shells, it's incredibly heavy in the hand."
 	max_shells = 8
 	force = 15
-	accuracy = 0.8
+	accuracy = 1.2
 	fire_delay= 2.4

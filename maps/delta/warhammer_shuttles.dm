@@ -111,13 +111,13 @@
 	name = "PlanetCargo"
 	landmark_tag = "cargo_end"
 	base_area = /area/cadiaoutpost/oa/shuttle/cargo2
-	base_turf = /turf/simulated/floor/plating
+	base_turf = /turf/simulated/floor/tiled/dark
 
 /obj/effect/shuttle_landmark/ferry/cargo_start
 	name = "MoonCargo"
 	landmark_tag = "cargo_start"
 	base_area = /area/cadiaoutpost/oa/shuttle/cargo2
-	base_turf = /turf/simulated/floor/plating
+	base_turf = /turf/simulated/floor/tiled/dark
 
 /obj/machinery/computer/shuttle_control/ferry/cargo
 	name = "Cargo Elevator Console"

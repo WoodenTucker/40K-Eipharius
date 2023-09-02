@@ -614,8 +614,8 @@
 	sales_price = 26
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="4-round bursts", burst=4, fire_delay=3, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=1.8, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="4-round bursts", burst=4, fire_delay=4.5, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
 		)
 
 /obj/item/gun/projectile/automatic/heavystubber/cognis/update_icon()
@@ -636,8 +636,8 @@
 	sales_price = 22
 
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="2-round bursts", burst=2, fire_delay=3.3, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0), // Villiers perform better in semi then burst
+		list(mode_name="semi-automatic", burst=1, fire_delay=1.8, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="2-round bursts", burst=2, fire_delay=3.6, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0), // Villiers perform better in semi then burst
 		)
 
 // stub rifles, mag fed

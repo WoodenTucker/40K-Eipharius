@@ -41,6 +41,7 @@
 	/datum/job/underboss,
 	/datum/job/bouncer,
 	/datum/job/gangboy,
+	/datum/job/noble,
 	/datum/job/pathfinder,
 	/datum/job/penitent,
 	/datum/job/citizen,
