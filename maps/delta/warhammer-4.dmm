@@ -3140,7 +3140,6 @@
 /obj/item/clothing/suit/armor/templar,
 /obj/item/gun/energy/pulse_rifle/pistol,
 /obj/item/clothing/under/syndicate/tacticool,
-/obj/random/drinkbottle,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "qj" = (
@@ -4971,6 +4970,17 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/northern)
+"Ab" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/item/card/id/key/grand/noble,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/clothing/accessory/holster/armpit,
+/obj/item/device/radio/headset/headset_cargo,
+/obj/random/drinkbottle,
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "Ac" = (
 /obj/structure/curtain/black,
 /turf/simulated/floor/factory_floor,
@@ -66870,7 +66880,7 @@ uG
 qv
 wU
 zA
-lm
+Ab
 Sm
 gx
 qh

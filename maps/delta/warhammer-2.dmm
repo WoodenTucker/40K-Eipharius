@@ -216,6 +216,16 @@
 /obj/item/device/flashlight/lantern,
 /turf/simulated/floor/ceramic/surgery2,
 /area/cadiaoutpost/new_hive/caves)
+"amR" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/structure/table/rack/dark,
+/obj/item/cell/plasma,
+/obj/item/storage/belt/utility/atmostech{
+	color = "grey";
+	name = "forge belt"
+	},
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "anh" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 4;
@@ -243,6 +253,20 @@
 	color = "grey"
 	},
 /turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/farm)
+"aoI" = (
+/obj/effect/decal/cleanable/cobweb{
+	dir = 8
+	},
+/obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
+/obj/structure/closet/crate,
+/turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
 "aoJ" = (
 /obj/structure/table/rack,
@@ -1548,6 +1572,15 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"bDt" = (
+/obj/machinery/door/blast/id_door{
+	req_access = list(302);
+	name = "Secret Door";
+	id = "secretdoor2";
+	maxhealth = 9000
+	},
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "bDw" = (
 /obj/structure/reagent_dispensers/waterbarrel,
 /turf/simulated/floor/darkwood/rotten,
@@ -1620,6 +1653,7 @@
 	dir = 1;
 	icon_state = "tube1"
 	},
+/obj/machinery/organ_printer,
 /turf/simulated/floor/tiled{
 	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
 	icon_state = "white1"
@@ -2961,10 +2995,11 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "cUF" = (
-/turf/simulated/floor/tiled/dark{
-	icon_state = "steel"
-	},
-/area/cadiaoutpost/oa/caves/dark)
+/obj/machinery/artifact_analyser,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "cUZ" = (
 /obj/machinery/light/small/red,
 /turf/simulated/floor/plating,
@@ -3374,8 +3409,9 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "dnS" = (
-/turf/simulated/wall/seolite,
-/area/cadiaoutpost/oa/caves/dark)
+/obj/effect/floor_decal/turf/bloodbar/off,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "dod" = (
 /obj/effect/floor_decal/turf/metal/six,
 /obj/machinery/optable,
@@ -3515,6 +3551,11 @@
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
+/area/cadiaoutpost/oa/farm)
+"dsw" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/structure/gemwasher,
+/turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
 "dsC" = (
 /turf/simulated/floor/darkwood,
@@ -3919,12 +3960,9 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/caves/undercity)
 "dLz" = (
-/obj/structure/closet/hive/iron_c{
-	anchored = 1
-	},
-/obj/random/loot/guardgear,
-/obj/random/loot/guardgear,
-/turf/simulated/floor/darkwood/rotten,
+/obj/structure/telearray/centreleft,
+/obj/effect/floor_decal/turf/bloodbar/off,
+/turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
 "dMa" = (
 /obj/structure/table/rack/dark,
@@ -4306,7 +4344,7 @@
 	armor = list("melee"=35,"bullet"=35,"laser"=35,"energy"=5,"bomb"=0,"bio"=100,"rad"=100)
 	},
 /turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/farm)
 "efP" = (
 /obj/structure/table/rack/shelf{
 	color = "grey"
@@ -4631,6 +4669,12 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/caves/undercity)
+"esc" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/machinery/r_n_d/destructive_analyzer,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "esf" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/reagent_containers/glass/beaker/large{
@@ -4787,7 +4831,7 @@
 	pixel_x = 32
 	},
 /turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/farm)
 "ezO" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -5447,6 +5491,18 @@
 	},
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/new_hive/caves)
+"fdf" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/structure/cult/talisman{
+	desc = "A dusty table constructed from stone - handcut and covered in runic scripture.";
+	name = "Ancient Table"
+	},
+/obj/item/reagent_containers/hypospray/autoinjector/tau{
+	desc = "A disgusting red liquid sloshes around inside the tube.";
+	name = "Mysterious Injector"
+	},
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "fdE" = (
 /obj/random/obstruction,
 /turf/simulated/floor/darkwood/rotten,
@@ -6606,6 +6662,15 @@
 /obj/effect/floor_decal/newcorner/shaft,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/research/robotics)
+"gjz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/structure/table/rack/dark,
+/obj/item/stack/material/glass/fifty,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "gjB" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 4
@@ -6842,7 +6907,7 @@
 	},
 /obj/item/clothing/head/chaossack,
 /turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/farm)
 "gue" = (
 /obj/structure/table/graf/rusty_table,
 /obj/item/device/cassette/heresy1,
@@ -6944,6 +7009,13 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/security/barracks)
+"gBj" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/machinery/shieldgen,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/research/robotics)
 "gBK" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/reagent_containers/glass/bottle/pacid{
@@ -7103,6 +7175,21 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"gHd" = (
+/obj/structure/closet/crate,
+/obj/item/clothing/head/heretichood/alt2{
+	name = "mysterious hood"
+	},
+/obj/item/clothing/head/heretichood/alt2{
+	name = "mysterious hood"
+	},
+/obj/item/clothing/head/heretichood/alt2{
+	name = "mysterious hood"
+	},
+/obj/item/clothing/suit/armor/heretcoat,
+/obj/item/clothing/suit/armor/heretcoat,
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/farm)
 "gHX" = (
 /obj/structure/table/rack,
 /obj/item/gun/projectile/shotgun/pump,
@@ -7138,20 +7225,13 @@
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/caves/dark)
 "gIB" = (
-/obj/structure/closet/hive/darkwood{
-	anchored = 1
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/structure/cult/talisman{
+	desc = "A dusty table constructed from stone - handcut and covered in runic scripture.";
+	name = "Ancient Table"
 	},
-/obj/random/loot/randomarmor,
-/obj/random/loot/randomarmor,
-/obj/random/loot/randomarmor,
-/obj/random/loot/randomarmor,
-/obj/item/clothing/accessory/mfcloak,
-/obj/item/clothing/accessory/mfcloak,
-/obj/item/clothing/accessory/pcloak,
-/obj/item/clothing/accessory/pcloak,
-/obj/item/clothing/accessory/bishopcloak,
-/obj/item/clothing/accessory/bishopcloak,
-/turf/simulated/floor/darkwood/rotten,
+/obj/random/loot/tech2,
+/turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
 "gJq" = (
 /obj/effect/floor_decal/industrial/hatch/blue,
@@ -7624,6 +7704,18 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/caves/undercity)
+"hfB" = (
+/obj/random/loot/randomitemcaves,
+/obj/random/loot/randomitemcaves,
+/obj/random/loot/randomitemcaves,
+/obj/random/loot/randomitemtown,
+/obj/random/loot/randomitemtown,
+/obj/random/loot/randomlasammo,
+/obj/random/loot/randomlasammo,
+/obj/random/loot/randomsupply,
+/obj/structure/closet/crate,
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/farm)
 "hgf" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	icon_state = "04";
@@ -7819,12 +7911,37 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/medicae)
+"hqk" = (
+/obj/machinery/door/blast/id_door{
+	req_access = list(302);
+	name = "Secret Door";
+	id = "secretdoor";
+	maxhealth = 9000
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/farm)
 "hqo" = (
 /turf/simulated/wall/wattle,
 /area/cadiaoutpost/new_hive/caves)
 "hqB" = (
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
+"hrI" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/structure/table/rack/dark,
+/obj/item/paper/crumpled/bloody{
+	name = "reseach instructions";
+	desc = "get ingots. turn into strange alloy. put in the protolathe. find archeotech or steal it from your rivals. become one with the machine god."
+	},
+/obj/item/card/id/silver{
+	access = list(221,222,223);
+	color = "grey";
+	job_access_type = null;
+	name = "L3 Access Card"
+	},
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "htc" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 1
@@ -7920,6 +8037,15 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"hxD" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/machinery/computer/drone_control{
+	dronefab = "Cadia";
+	req_access = list()
+	},
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "hxK" = (
 /obj/machinery/light/small/red{
 	dir = 1
@@ -8456,7 +8582,7 @@
 	name = "disgusting hood"
 	},
 /turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/farm)
 "hSA" = (
 /obj/effect/floor_decal/newcorner/green/corner{
 	dir = 4
@@ -8800,6 +8926,10 @@
 	icon_state = "bulb1"
 	},
 /turf/simulated/floor/tiled,
+/area/cadiaoutpost/new_hive/caves)
+"ikr" = (
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/turf/simulated/floor/seolite,
 /area/cadiaoutpost/new_hive/caves)
 "ikv" = (
 /obj/structure/sign/chaos{
@@ -9646,6 +9776,18 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"iWJ" = (
+/obj/random/loot/randomarmor,
+/obj/random/loot/randomarmor,
+/obj/item/clothing/accessory/mfcloak,
+/obj/item/clothing/accessory/mfcloak,
+/obj/item/clothing/accessory/pcloak,
+/obj/item/clothing/accessory/pcloak,
+/obj/item/clothing/accessory/bishopcloak,
+/obj/item/clothing/accessory/bishopcloak,
+/obj/structure/closet/crate,
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/farm)
 "iWS" = (
 /obj/structure/table/rack/dark,
 /obj/item/ammo_box/shotgun/msslug{
@@ -9938,6 +10080,16 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/service/inn)
+"jhy" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/structure/table/rack/dark,
+/obj/item/gun/energy/pulse/pulserifle{
+	charge_cost = 55;
+	desc = "The remains of an ancient salvage, close examination reveals the power pack is drained and there are even cracks within the crystal assembly.";
+	name = "Salvaged Pulse Rifle"
+	},
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "jiB" = (
 /obj/effect/floor_decal/newcorner/plating/quarter,
 /turf/simulated/floor/darkfloor{
@@ -10187,6 +10339,11 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"jtL" = (
+/obj/structure/telearray/lowleft,
+/obj/effect/floor_decal/turf/bloodbar/off,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "jtN" = (
 /obj/effect/water/bottom,
 /obj/effect/water/top,
@@ -10856,14 +11013,10 @@
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "jWN" = (
-/obj/machinery/door/blast/id_door{
-	req_access = list(302);
-	name = "Secret Door";
-	id = "secretdoor";
-	maxhealth = 9000
-	},
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves/dark)
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/machinery/vending/phoronresearch,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "jXf" = (
 /obj/structure/table/graf/reinf_table,
 /turf/simulated/floor/darkwood/rotten,
@@ -10972,7 +11125,7 @@
 "kcg" = (
 /obj/structure/hivedecor/skulls,
 /turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/farm)
 "kcz" = (
 /obj/item/reagent_containers/spray/cleaner/warfare,
 /obj/structure/table/graf/reinf_table{
@@ -12679,6 +12832,11 @@
 /obj/item/stack/thrones2/five,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"lwp" = (
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/item/pickaxe,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/new_hive/caves)
 "lwB" = (
 /obj/structure/table/rack,
 /obj/item/storage/box/ifak{
@@ -12932,6 +13090,17 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/barracks)
+"lHF" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/shieldgen,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
+"lHT" = (
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/new_hive/caves)
 "lIT" = (
 /obj/random/trash,
 /obj/effect/decal/cleanable/cobweb{
@@ -13896,6 +14065,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"mEi" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/structure/table/rack/dark,
+/obj/item/grenade/spawnergrenade/manhacks{
+	name = "mysterious grenade"
+	},
+/obj/random/loot/tech2,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "mEk" = (
 /obj/effect/floor_decal/spline/fancy/wood/corner{
 	dir = 4
@@ -13974,13 +14152,19 @@
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
 "mHe" = (
-/obj/structure/closet/hive/iron_c{
-	anchored = 1
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/item/card/id/silver{
+	access = list(221,222);
+	color = "grey";
+	job_access_type = null;
+	name = "L2 Access Card"
 	},
-/obj/random/loot/badweapon,
-/obj/random/loot/badweapon,
-/obj/random/loot/badweapon,
-/turf/simulated/floor/darkwood/rotten,
+/obj/item/clothing/suit/armor/seolarmor,
+/obj/item/clothing/head/helmet/soul,
+/obj/item/clothing/head/heretichood/alt2{
+	name = "mysterious hood"
+	},
+/turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
 "mHQ" = (
 /obj/structure/railing{
@@ -14007,6 +14191,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
+"mKW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/machinery/r_n_d/protolathe,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "mLz" = (
 /obj/structure/table/graf/rusty_table,
 /obj/item/card/id/key/middle/jail{
@@ -14239,6 +14429,11 @@
 /obj/item/rnd/illegal3,
 /turf/simulated/floor/stone/ancient_stone_floor3,
 /area/cadiaoutpost/oa/caves/undercity)
+"mTW" = (
+/obj/structure/telearray/centreright,
+/obj/effect/floor_decal/turf/bloodbar/off,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "mTY" = (
 /obj/structure/table/graf/big_wood_table{
 	dir = 8
@@ -14273,6 +14468,16 @@
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
+"mVs" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/structure/table/rack/dark,
+/obj/item/gun/energy/pulse/ionrifle{
+	charge_cost = 50;
+	desc = "The remains of an ancient salvage, close examination reveals the power pack is drained and there are even cracks within the crystal assembly.";
+	name = "Salvaged ION rifle"
+	},
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "mVL" = (
 /obj/structure/hivedecor/bookcase{
 	pixel_x = -11
@@ -14320,6 +14525,20 @@
 	},
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/magistratumpost)
+"mXA" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/item/card/id/silver{
+	access = list(221,222);
+	color = "grey";
+	job_access_type = null;
+	name = "L2 Access Card"
+	},
+/obj/item/clothing/suit/armor/seolarmor,
+/obj/item/clothing/head/heretichood/alt2{
+	name = "mysterious hood"
+	},
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "mXC" = (
 /obj/effect/floor_decal/newcorner/red,
 /obj/effect/floor_decal/newcorner/plating{
@@ -14347,6 +14566,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"mYQ" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/simulated/wall/castle,
+/area/cadiaoutpost/oa/farm)
 "mYZ" = (
 /obj/structure/table/rack,
 /obj/item/grenade/frag/high_yield/krak,
@@ -14908,6 +15134,11 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"nyx" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/structure/cult/clockworkobelisk,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "nyz" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -15203,6 +15434,17 @@
 /obj/structure/bed/chair/cage,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
+"nLK" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/machinery/button/remote/blast_door/id_scan{
+	name = "pristine ID lock";
+	id = "secretdoor";
+	req_one_access = list(247)
+	},
+/obj/structure/table/graf/rusty_table,
+/obj/effect/floor_decal/turf/bloodbar/off,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "nMc" = (
 /obj/effect/floor_decal/newcorner/stone,
 /obj/effect/floor_decal/newcorner/stone{
@@ -15225,8 +15467,13 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/caves)
 "nNn" = (
-/turf/simulated/open,
-/area/cadiaoutpost/oa/caves/dark)
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/machinery/computer/rdconsole/core{
+	req_access = list()
+	},
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "nNy" = (
 /obj/structure/warfare/barricade/sandbag,
 /turf/simulated/floor/surface_floor,
@@ -16021,6 +16268,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
+"ouy" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/machinery/vending/robotics,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "ouL" = (
 /obj/structure/closet/crate{
 	anchored = 1
@@ -16692,6 +16945,13 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"pbO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/item/rnd/eng3,
+/obj/structure/table/rack/dark,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "pbX" = (
 /obj/effect/floor_decal/turf/metal/nine,
 /turf/simulated/floor/tiled{
@@ -16770,7 +17030,7 @@
 /obj/item/device/boombox,
 /obj/item/device/cassette/clockwork1,
 /turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/farm)
 "pfn" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 1
@@ -16877,18 +17137,10 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
 "pjP" = (
-/obj/structure/closet/hive/darkwood{
-	anchored = 1
-	},
-/obj/random/loot/randomitemcaves,
-/obj/random/loot/randomitemcaves,
-/obj/random/loot/randomitemcaves,
-/obj/random/loot/randomitemtown,
-/obj/random/loot/randomitemtown,
-/obj/random/loot/randomlasammo,
-/obj/random/loot/randomlasammo,
-/obj/random/loot/randomsupply,
-/turf/simulated/floor/darkwood/rotten,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/machinery/mecha_part_fabricator,
+/turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
 "pkJ" = (
 /obj/effect/floor_decal/newcorner/plating{
@@ -17258,6 +17510,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
+"pFC" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/machinery/button/remote/blast_door/id_scan{
+	name = "pristine ID lock";
+	id = "secretdoor2";
+	req_one_access = list(247)
+	},
+/obj/structure/table/graf/rusty_table,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "pFP" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 8;
@@ -17281,6 +17543,16 @@
 /obj/item/reagent_containers/food/drinks/glass2/chaos/tzeench,
 /obj/structure/table/graf/big_wood_table,
 /turf/simulated/floor/stone/old4,
+/area/cadiaoutpost/oa/farm)
+"pGG" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/machinery/cell_charger,
+/obj/structure/table/steel,
+/obj/random/tech_supply,
+/obj/random/powercell,
+/obj/random/powercell,
+/turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
 "pGT" = (
 /obj/effect/gibspawner,
@@ -17916,19 +18188,7 @@
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "qjY" = (
-/obj/structure/closet/hive/narnia{
-	name = "Narnia closet"
-	},
-/obj/effect/decal/cleanable/cobweb{
-	dir = 8
-	},
-/obj/random/loot/randomammo1,
-/obj/random/loot/randomammo1,
-/obj/random/loot/randomammo1,
-/obj/random/loot/randomammo1,
-/obj/random/loot/randomammo1,
-/obj/random/loot/randomammo1,
-/obj/random/loot/randomammo1,
+/obj/effect/floor_decal/turf/bloodbar/off,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
 "qkr" = (
@@ -18075,11 +18335,17 @@
 /area/cadiaoutpost/new_hive/caves)
 "qox" = (
 /obj/machinery/door/airlock/imperiumdoor{
-	req_access = list(331);
-	name = "Heir Room"
+	name = "Heir Room";
+	req_one_access = list(331)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"qpK" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/machinery/integrated_circuit_printer,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "qqh" = (
 /obj/random/trap,
 /turf/simulated/floor/tiled/dark{
@@ -18298,7 +18564,7 @@
 "qAS" = (
 /obj/effect/decal/cleanable/cobweb,
 /turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/farm)
 "qAZ" = (
 /obj/structure/sign/chaos{
 	pixel_x = 32
@@ -18313,6 +18579,12 @@
 	},
 /turf/simulated/floor/surface_floor,
 /area/cadiaoutpost/new_hive/caves)
+"qBY" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/crystal_static/pink,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "qCj" = (
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
 	name = "Imperialis Doorway - Monasterium";
@@ -18365,6 +18637,17 @@
 	name = "necron tome"
 	},
 /turf/simulated/floor/stone/old4,
+/area/cadiaoutpost/oa/farm)
+"qEW" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/structure/table/rack/dark,
+/obj/item/cell/pulserifle{
+	name = "xenos battery"
+	},
+/obj/item/cell/pulserifle{
+	name = "xenos battery"
+	},
+/turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
 "qEY" = (
 /turf/simulated/floor/tiled{
@@ -19056,8 +19339,9 @@
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "reI" = (
+/obj/random/loot/guardgear,
+/obj/random/loot/guardgear,
 /obj/structure/closet/crate,
-/obj/random/loot/tech1,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
 "reZ" = (
@@ -19259,7 +19543,7 @@
 	sales_price = 0
 	},
 /turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/farm)
 "roR" = (
 /obj/structure/closet/crate/secure/weapon,
 /obj/machinery/light/darkblue{
@@ -19878,12 +20162,23 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/medicae)
+"rQE" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/machinery/power/port_gen/pacman/super/potato,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "rQJ" = (
 /obj/structure/hivedecor/statue8,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"rQO" = (
+/obj/random/loot/meleespawner,
+/obj/random/loot/meleespawner,
+/obj/structure/closet/crate,
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/farm)
 "rQR" = (
 /obj/structure/bed/chair/wood/simple,
 /obj/effect/floor_decal/newcorner/plating{
@@ -19980,6 +20275,13 @@
 	dir = 6
 	},
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"rXt" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/item/rnd/illegal10,
+/obj/structure/table/rack/dark,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "rXI" = (
 /obj/structure/closet/hive/metal{
 	anchored = 1
@@ -20278,6 +20580,12 @@
 "slE" = (
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/new_hive/caves)
+"smt" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/crystal_static,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "snd" = (
 /obj/item/reagent_containers/food/drinks/glass2/pint{
 	pixel_y = 6;
@@ -21004,6 +21312,11 @@
 /obj/effect/floor_decal/industrial/outline/orange,
 /turf/simulated/floor/ceramic/blackstone,
 /area/cadiaoutpost/oa/magistratumpost)
+"sSa" = (
+/obj/structure/telearray/lowright,
+/obj/effect/floor_decal/turf/bloodbar/off,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "sSo" = (
 /obj/structure/torchwall{
 	dir = 4;
@@ -22111,6 +22424,15 @@
 	icon_state = "dark1"
 	},
 /area/cadiaoutpost/oa/security/barracks)
+"tPo" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/structure/table/rack/dark,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/phoron/ten,
+/obj/item/stack/material/diamond/ten,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "tPv" = (
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 10
@@ -22361,6 +22683,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/barracks)
+"tZf" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/item/rnd/biospace3,
+/obj/structure/table/rack/dark,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "tZx" = (
 /obj/structure/closet/crate{
 	name = "Governor's Funds"
@@ -22547,6 +22876,11 @@
 	},
 /turf/simulated/floor/greengrid,
 /area/cadiaoutpost/oa/research/robotics)
+"ufB" = (
+/obj/structure/telearray/upperleft,
+/obj/effect/floor_decal/turf/bloodbar/off,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "ufL" = (
 /obj/machinery/door/airlock/glass_medical{
 	color = null;
@@ -23495,6 +23829,13 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"viR" = (
+/obj/machinery/artifact_harvester,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/clockwork,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "vkl" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -23502,6 +23843,12 @@
 	},
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"vkM" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/implantchair,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "vlb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/tank/oxygen,
@@ -24253,14 +24600,9 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/caves/undercity)
 "vTV" = (
-/obj/structure/closet/hive/iron_c{
-	anchored = 1
-	},
-/obj/random/loot/meleespawner,
-/obj/random/loot/meleespawner,
-/obj/random/loot/meleespawner,
-/obj/random/loot/meleespawner,
-/turf/simulated/floor/darkwood/rotten,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
 "vUf" = (
 /obj/structure/railing,
@@ -24738,7 +25080,7 @@
 /obj/item/reagent_containers/food/snacks/poo,
 /obj/effect/decal/cleanable/blood/gibs/vomit,
 /turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/farm)
 "wpI" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 1
@@ -25248,6 +25590,17 @@
 /obj/structure/sign/aquilalong,
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"wQm" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/structure/table/steel,
+/obj/machinery/button/remote/blast_door/id_scan{
+	name = "pristine ID lock";
+	id = "secretdoor2";
+	req_one_access = list(247)
+	},
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "wQT" = (
 /obj/effect/floor_decal/newcorner/plating,
 /turf/simulated/floor/tiled,
@@ -25396,16 +25749,21 @@
 	},
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "wWe" = (
-/obj/machinery/button/remote/blast_door/id_scan{
-	name = "pristine ID lock";
-	id = "secretdoor";
-	req_one_access = list(221,222)
+/obj/item/reagent_containers/hypospray/autoinjector/tau{
+	desc = "A disgusting red liquid sloshes around inside the tube.";
+	name = "Mysterious Injector"
 	},
-/obj/structure/table/graf/rusty_table,
+/obj/effect/floor_decal/turf/carpetn00,
+/obj/item/newore/gems/ruby/cut,
+/obj/item/device/holyoils,
+/obj/item/device/autochisel,
+/obj/item/device/hammer,
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/item/rnd/combat10,
 /turf/simulated/floor/tiled/dark{
-	icon_state = "steel"
+	color = "grey"
 	},
-/area/cadiaoutpost/oa/caves/dark)
+/area/cadiaoutpost/oa/farm)
 "wWM" = (
 /obj/machinery/chemical_dispenser/full,
 /obj/effect/floor_decal/newcorner/blue/solid,
@@ -25806,6 +26164,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
+"xlm" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/machinery/r_n_d/circuit_imprinter,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "xmb" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 8
@@ -26283,6 +26647,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"xFB" = (
+/obj/machinery/door/airlock/arbiter{
+	color = "grey";
+	maxhealth = 3000;
+	name = "Groomlake Facility";
+	req_access = list()
+	},
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "xGZ" = (
 /obj/structure/shipdecor{
 	icon_state = "off";
@@ -26342,6 +26715,13 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"xJX" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/structure/reagent_dispensers/acid{
+	pixel_x = -30
+	},
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "xKw" = (
 /obj/machinery/shower{
 	dir = 8;
@@ -26402,6 +26782,14 @@
 	icon_state = "r_window"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"xMz" = (
+/obj/machinery/artifact_scanpad,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/item/grenade/spawnergrenade/manhacks,
+/obj/item/grenade/spawnergrenade/manhacks,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "xNq" = (
 /obj/structure/sign/plate/stoneshrine{
 	pixel_x = 32
@@ -26654,7 +27042,7 @@
 	armor = list("melee"=38,"bullet"=38,"laser"=38,"energy"=20,"bomb"=30,"bio"=10,"rad"=20)
 	},
 /turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/farm)
 "xZe" = (
 /obj/effect/floor_decal/industrial/warning_red{
 	dir = 9
@@ -26808,7 +27196,7 @@
 /obj/item/reagent_containers/food/drinks/glass2/chaos,
 /obj/structure/table/graf/pagan,
 /turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/farm)
 "yeF" = (
 /obj/random/glasses,
 /obj/random/junk,
@@ -26876,6 +27264,11 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/security/barracks)
+"yke" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/structure/forge,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/farm)
 "ykg" = (
 /obj/structure/toilet{
 	pixel_y = 14
@@ -57319,11 +57712,11 @@ tOB
 tOB
 tOB
 tOB
-dnS
-dnS
-dnS
-dnS
-dnS
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 wcj
@@ -57571,11 +57964,11 @@ tOB
 tOB
 tOB
 tOB
-dnS
-nNn
-nNn
-cUF
-jWN
+tOB
+tOB
+tOB
+tOB
+tOB
 gpl
 tOB
 wcj
@@ -57823,11 +58216,11 @@ tOB
 tOB
 tOB
 tOB
-dnS
-dnS
-dnS
-dnS
-dnS
+tOB
+tOB
+tOB
+tOB
+tOB
 dID
 gpl
 wcj
@@ -58078,8 +58471,8 @@ tOB
 tOB
 tOB
 tOB
-wWe
-gpl
+tOB
+tOB
 gpl
 gpl
 wcj
@@ -62743,7 +63136,7 @@ vAj
 mcb
 wUD
 eKm
-oYr
+gBj
 vAj
 hIg
 xHL
@@ -74792,7 +75185,7 @@ dxB
 dxB
 dxB
 dxB
-dxB
+nma
 dxB
 dxB
 uMF
@@ -82828,7 +83221,7 @@ tpQ
 tpQ
 tpQ
 tpQ
-tpQ
+tOB
 jqp
 jqp
 jqp
@@ -83332,7 +83725,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+lwp
 tOB
 tOB
 tOB
@@ -83584,7 +83977,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+ikr
 tOB
 tOB
 tOB
@@ -83835,8 +84228,8 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
+ikr
+ikr
 tOB
 tOB
 tOB
@@ -84087,7 +84480,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+ikr
 tOB
 tOB
 tOB
@@ -84337,9 +84730,9 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
+ikr
+ikr
+ikr
 tOB
 tOB
 tOB
@@ -84588,8 +84981,8 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
+ikr
+lHT
 tOB
 tOB
 tOB
@@ -84839,9 +85232,9 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
+wQm
+ikr
+ikr
 tOB
 tOB
 tOB
@@ -85089,16 +85482,16 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tpQ
-tpQ
-tOB
+uru
+uru
+uru
+mYQ
+bDt
+uru
+uru
+uru
+uru
+uru
 tOB
 tOB
 tOB
@@ -85341,16 +85734,16 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tpQ
-tpQ
-tOB
-tOB
+uru
+hrI
+tZf
+pbO
+vTV
+nNn
+viR
+wQm
+uru
+uru
 tOB
 tOB
 tOB
@@ -85593,16 +85986,16 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tpQ
-tOB
-tOB
-tOB
+uru
+cUF
+vTV
+vTV
+vTV
+vTV
+vTV
+vTV
+uru
+uru
 tOB
 tOB
 tOB
@@ -85845,16 +86238,16 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tpQ
-tpQ
-tOB
-tOB
-tOB
+uru
+xMz
+vTV
+esc
+mKW
+qpK
+xlm
+vTV
+uru
+uru
 tOB
 tOB
 tOB
@@ -86097,16 +86490,16 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tpQ
-tpQ
-tpQ
-tpQ
-tOB
-slE
-slE
+mYQ
+vkM
+vTV
+vTV
+vTV
+vTV
+vTV
+vTV
+uru
+uru
 slE
 slE
 slE
@@ -86349,15 +86742,15 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tpQ
-tpQ
-tpQ
-tOB
-tOB
-tOB
-tOB
-slE
+uru
+qBY
+vTV
+pjP
+gjz
+tPo
+rXt
+vTV
+uru
 uru
 uru
 uru
@@ -86601,19 +86994,19 @@ tOB
 tOB
 tOB
 tpQ
-tpQ
-tpQ
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
+uru
+vTV
+vTV
+vTV
+vTV
+vTV
+vTV
+vTV
+uru
 uru
 reI
-reI
-reI
+rQO
+hfB
 uru
 hiv
 aQW
@@ -86853,19 +87246,19 @@ tOB
 tpQ
 tpQ
 tpQ
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
 uru
-xes
-xes
-xes
+smt
+hxD
+ouy
+vTV
+pGG
+lHF
+lHF
+uru
+uru
+iWJ
+gHd
+aoI
 uru
 aQW
 aQW
@@ -87105,15 +87498,15 @@ tpQ
 tpQ
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
+uru
+uru
+uru
+uru
+xFB
+uru
+mYQ
+uru
+uru
 uru
 hhl
 xes
@@ -87357,15 +87750,15 @@ tpQ
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
+uMF
+uru
+uru
+xJX
+dnS
+dnS
+fdf
+gIB
+uru
 uru
 hSs
 obC
@@ -87609,15 +88002,15 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
+uMF
+uru
+dsw
+dnS
+dnS
+mHe
+dnS
+dnS
+yke
 uru
 uru
 uru
@@ -87861,19 +88254,19 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
+uMF
 uru
-dLz
-vTV
-mHe
+mEi
+dnS
+dnS
+dnS
+dnS
+dnS
+dnS
+uru
+qjY
+qjY
+qjY
 uru
 xes
 xes
@@ -88113,19 +88506,19 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
+uMF
 uru
-xes
-xes
-xes
+amR
+dnS
+dnS
+ufB
+dnS
+dnS
+dnS
+hqk
+qjY
+qjY
+qjY
 uru
 hhl
 xes
@@ -88365,19 +88758,19 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
+uMF
 uru
-hhl
-xes
-xes
+jWN
+dnS
+nyx
+dLz
+jtL
+dnS
+pFC
+uru
+nLK
+qjY
+qjY
 drU
 xes
 xes
@@ -88394,10 +88787,10 @@ qkv
 uru
 uru
 uru
-kGm
-kGm
-kGm
-tOB
+uru
+uru
+uru
+nma
 tOB
 tOB
 tOB
@@ -88617,19 +89010,19 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
+uMF
+uru
+mVs
+dnS
+dnS
+mTW
+sSa
+mXA
+rQE
 uru
 qjY
-gIB
-pjP
+qjY
+qjY
 uru
 xes
 xes
@@ -88648,8 +89041,8 @@ qAS
 gtW
 xYM
 pfa
-kGm
-kGm
+uru
+uru
 tOB
 tOB
 tOB
@@ -88869,15 +89262,15 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
+uMF
+uru
+jhy
+dnS
+dnS
+wWe
+dnS
+dnS
+uru
 uru
 uru
 uru
@@ -88899,9 +89292,9 @@ fEN
 hSx
 kcg
 yer
-hqB
+qrf
 wpz
-kGm
+uru
 tOB
 tOB
 tOB
@@ -89121,16 +89514,16 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
-tOB
+uMF
+uru
+qEW
+dnS
+dnS
+dnS
+dnS
+uru
+uru
+uru
 tOB
 tOB
 tOB
@@ -89151,9 +89544,9 @@ uru
 efD
 ezq
 roL
-hqB
-kGm
-kGm
+qrf
+uru
+uru
 tOB
 tOB
 tOB
@@ -89373,16 +89766,16 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
-tOB
+nma
+uru
+uru
+uru
+uru
+uru
+uru
+uru
+uMF
+nma
 tOB
 tOB
 tOB
@@ -89400,12 +89793,12 @@ tOB
 tOB
 tOB
 kGm
-kGm
-kGm
-kGm
-kGm
-kGm
-tOB
+uru
+uru
+uru
+uru
+uru
+nma
 tOB
 tOB
 tOB

@@ -65,7 +65,8 @@
 	icon_state = "cane_sword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	block_chance = 40
-	force = 32
+	force = 31
+	force_wielded = 35
 	armor_penetration = 20
 	weapon_speed_delay = 7
 	sharp = 1
@@ -75,3 +76,5 @@
 	desc = "A sword specially modified to nest inside the body of a cane, extremely sharp"
 	grab_sound_is_loud = TRUE
 	grab_sound = 'sound/items/unholster_sword01.ogg'
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
+	armor = list(melee = 20, bullet = 20, laser = 20, energy = 10, bomb = 10, bio = 0, rad = 0)
