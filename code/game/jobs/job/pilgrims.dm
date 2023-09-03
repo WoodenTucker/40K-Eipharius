@@ -243,7 +243,7 @@ Pilgrim Fate System
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-			if(prob(15))
+			if(prob(25))
 				to_chat(U,"<span class='danger'><b><font size=4>THE PALADIN</font></b></span>")
 				to_chat(U,"<span class='goodmood'>A holy warrior of your chosen god, you work on behalf of the Ecclesiarchy(or the cult) as a slayer of the heretical and unfaithful. Face against the dark and protect your flock... for a price.</font></b></span>")
 				U.add_stats(rand(16,18), rand(14,16), rand(16,18), rand (10,12)) //veteran mercenary
@@ -255,7 +255,7 @@ Pilgrim Fate System
 					deity.add_cultist(U)
 				if(prob(45))
 					new /obj/item/device/radio/headset/headset_sci(src.loc)
-			else if(prob(15))
+			else if(prob(10))
 				to_chat(U,"<span class='danger'><b><font size=4>THE OPERATIVE</font></b></span>")
 				to_chat(U,"<span class='goodmood'>You are an operative sent here by your benefactors, mysterious patrons from worlds away to do work that may unlock the final steps to their ultimate plan((A-Help with your idea or even ask for a mission if you can't think of anything.))</font></b></span>")
 				U.add_stats(rand(13,17), rand(14,17), rand(14,17), rand (10,12)) //veteran mercenary
@@ -274,6 +274,16 @@ Pilgrim Fate System
 					new /obj/item/device/radio/headset/headset_sci(src.loc)
 				if(prob(15))
 					new /obj/item/device/radio/headset/blue_team/all(src.loc)
+			else if(prob(15))
+				to_chat(U,"<span class='danger'><b><font size=4>THE WITCH HUNTER</font></b></span>")
+				to_chat(U,"<span class='goodmood'>You are a Witch Hunter -- a unique subset of the Bounty Hunter Guild attached to the Chamber Militant, working both as Servant to the Ecclesiarchy and a 'bounty hunter' that the Ecclesiarchy can rely upon without tainting their own hands.</font></b></span>")
+				U.add_stats(rand(13,17), rand(14,17), rand(14,17), rand (10,12)) //veteran mercenary
+				U.add_stats(rand(16,18), rand(14,16), rand(16,18), rand (10,12)) //veteran mercenary
+				new /obj/item/melee/sword/cane(src.loc)
+				new /obj/item/reagent_containers/food/snacks/threebread(src.loc)
+				new /obj/item/clothing/suit/armor/witch(src.loc)
+				new /obj/item/clothing/head/helmet/witch(src.loc)
+				new /obj/item/device/radio/headset/headset_sci(src.loc)
 			else
 				to_chat(U,"<span class='danger'><b><font size=4>THE BOUNTY HUNTER</font></b></span>")
 				to_chat(U,"<span class='goodmood'>A vicious bounty hunter traveling from system to system in search of their next payday, you live luxuriously only for moments before being plunged back into poverty. Hitching a ride to Eipharius with the last of your thrones, you gamble on the hope of finding work out here.(A-Help if nobody is hiring bounty hunters for a bounty target+pay)</font></b></span>")
@@ -311,7 +321,7 @@ Pilgrim Fate System
 
 	var/mob/living/carbon/human/U = src
 	U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,) //removes verb
-	var/fates = list("Mysterious Citizen","PDF","Miner","Fate Touched","Disgraced Noble","Palace Guard")
+	var/fates = list("Mysterious Citizen","PDF","Miner","Fate Touched","Disgraced Noble","Honour Guard")
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -407,7 +417,7 @@ Pilgrim Fate System
 			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-		if("Palace Guard")
+		if("Honour Guard")
 			U.add_stats(rand(15,17), rand(14,17), rand(14,16), rand (13,15)) //
 			U.add_skills(rand(6,8),rand(6,8),rand(4,6),rand(5,6),rand(2,6)) //melee, ranged, med, eng, surgery
 			new /obj/item/clothing/gloves/thick(src.loc)
@@ -422,7 +432,7 @@ Pilgrim Fate System
 			new /obj/item/clothing/suit/armor/brigandine/palace(src.loc)
 			new /obj/item/melee/trench_axe/glaive/adamantine(src.loc)
 			to_chat(U,"<span class='danger'><b><font size=4>THE PROTECTORATE</font></b></span>")
-			to_chat(U,"<span class='goodmood'><b><font size=3>Skilled in the arts of blade and gun lore, you are one of the rare individuals selected by the Governor to protect them personally from the heretic, the alien and worst of all -- the human. Find the Steward/Commissar or Governor for your assignment...</font></b></span>")
+			to_chat(U,"<span class='goodmood'><b><font size=3>Skilled in the arts of blade and gun lore, you are one of the rare individuals selected by EITHER; The Ecclesiarchy or House Sondar(Your Choice) to protect them from the heretic, the alien and worst of all -- the human. Find the Steward/Commissar or Governor for your assignment...</font></b></span>")
 			U.stat = CONSCIOUS
 			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
 			U.sleeping = 0

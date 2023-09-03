@@ -81,13 +81,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"av" = (
-/obj/machinery/artifact_harvester,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/clockwork,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "aw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -158,17 +151,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
-"aL" = (
-/obj/effect/floor_decal/turf/bloodbar/off,
-/obj/structure/table/rack/dark,
-/obj/item/cell/pulserifle{
-	name = "xenos battery"
-	},
-/obj/item/cell/pulserifle{
-	name = "xenos battery"
-	},
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "aM" = (
 /obj/structure/closet/cabinet{
 	color = "grey"
@@ -332,12 +314,6 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/new_hive/caves)
-"bq" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/shieldgen,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "br" = (
 /obj/machinery/door/airlock/ancient_ship/med{
 	name = "Operation Room"
@@ -356,12 +332,6 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/caves/dark)
-"bu" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/caves/dark)
 "bv" = (
 /obj/machinery/light{
@@ -483,12 +453,6 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/new_hive/caves)
-"bN" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/item/stack/material/diamond,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "bO" = (
 /obj/item/device/radio/intercom{
 	pixel_y = 32
@@ -911,11 +875,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"dp" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "dq" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -1199,12 +1158,6 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/new_hive/caves)
-"en" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/crystal_static,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "eq" = (
 /obj/effect/floor_decal/turf/surgery2,
 /obj/machinery/bodyscanner{
@@ -1305,14 +1258,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/caves/undercity)
-"eC" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/machinery/computer/rdconsole/core{
-	req_access = list()
-	},
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "eD" = (
 /turf/unsimulated/oldship{
 	icon_state = "rwall15"
@@ -1672,20 +1617,6 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/new_hive/caves)
-"fL" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/machinery/door/airlock/arbiter{
-	color = "grey";
-	maxhealth = 3000;
-	name = "Groomlake Facility";
-	req_access = list()
-	},
-/obj/machinery/door/blast/bordergater{
-	begins_closed = 0;
-	id = "archeo2"
-	},
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "fM" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -1911,12 +1842,6 @@
 /obj/machinery/light/small/red,
 /turf/simulated/floor/ship_floor/engines,
 /area/cadiaoutpost/new_hive/caves)
-"gp" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/machinery/integrated_circuit_printer,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "gr" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -2304,17 +2229,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/cargo1)
-"hX" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/machinery/mecha_part_fabricator,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
-"hY" = (
-/obj/structure/telearray/centreleft,
-/obj/effect/floor_decal/turf/bloodbar/off,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "hZ" = (
 /obj/machinery/light/small/red{
 	dir = 4
@@ -2677,11 +2591,6 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/new_hive/caves)
-"jf" = (
-/obj/effect/floor_decal/turf/bloodbar/off,
-/obj/structure/cult/clockworkobelisk,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "jh" = (
 /obj/machinery/light/purple{
 	dir = 8
@@ -2830,16 +2739,6 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/caves/dark)
-"jF" = (
-/obj/effect/floor_decal/turf/bloodbar/off,
-/obj/structure/table/rack/dark,
-/obj/item/cell/plasma,
-/obj/item/storage/belt/utility/atmostech{
-	color = "grey";
-	name = "forge belt"
-	},
-/turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "jH" = (
 /obj/structure/closet/secure_closet/security{
@@ -3354,11 +3253,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"lr" = (
-/obj/effect/floor_decal/turf/bloodbar/off,
-/obj/structure/gemwasher,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "ls" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -3611,11 +3505,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
-"mb" = (
-/obj/structure/telearray/lowleft,
-/obj/effect/floor_decal/turf/bloodbar/off,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "mc" = (
 /obj/structure/sign/ship{
 	icon_state = "trading";
@@ -3676,17 +3565,6 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/new_hive/caves)
-"mi" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/plating,
-/obj/machinery/door/airlock/arbiter{
-	color = "grey";
-	maxhealth = 3000;
-	name = "Groomlake Facility";
-	req_access = list(221,222)
-	},
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "mj" = (
 /obj/machinery/computer/shuttle_control/ferry/bloodpact,
 /turf/simulated/floor,
@@ -4462,18 +4340,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"oM" = (
-/obj/effect/floor_decal/turf/bloodbar/off,
-/obj/structure/cult/talisman{
-	desc = "A dusty table constructed from stone - handcut and covered in runic scripture.";
-	name = "Ancient Table"
-	},
-/obj/item/reagent_containers/hypospray/autoinjector/tau{
-	desc = "A disgusting red liquid sloshes around inside the tube.";
-	name = "Mysterious Injector"
-	},
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "oN" = (
 /obj/item/ammo_magazine/ork/slugga,
 /turf/simulated/floor/stone,
@@ -4599,10 +4465,7 @@
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "pc" = (
-/obj/effect/floor_decal/turf/bloodbar/off,
-/obj/structure/reagent_dispensers/acid{
-	pixel_x = -30
-	},
+/mob/living/simple_animal/hostile/mining_borg/behemoth,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "pf" = (
@@ -4983,13 +4846,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
-"qP" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/item/rnd/eng3,
-/obj/structure/table/rack/dark,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "qQ" = (
 /obj/effect/floor_decal/newcorner/trench_flooring{
 	dir = 8
@@ -5091,17 +4947,6 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/new_hive/caves)
-"ri" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/machinery/door/blast/bordergatec{
-	begins_closed = 0;
-	desc = "A large mechanical gate. This one is inscribed with various prayers, sigils, and lathered in holy oil.";
-	id = "archeo1";
-	name = "consecrated gate";
-	opaque = 1
-	},
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "rj" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -5231,15 +5076,6 @@
 /obj/item/reagent_containers/hypospray/autoinjector/tau{
 	desc = "A disgusting red liquid sloshes around inside the tube.";
 	name = "Mysterious Injector"
-	},
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
-"rH" = (
-/obj/machinery/door/airlock/arbiter{
-	color = "grey";
-	maxhealth = 3000;
-	name = "Groomlake Facility";
-	req_access = list()
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
@@ -5445,18 +5281,6 @@
 	icon_state = "r_window"
 	},
 /area/cadiaoutpost/new_hive/caves)
-"sx" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/structure/table/rack/dark,
-/obj/item/stack/material/phoron,
-/obj/item/stack/material/phoron,
-/obj/item/stack/material/phoron,
-/obj/item/stack/material/phoron,
-/obj/item/stack/material/phoron,
-/obj/item/stack/material/phoron,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "sz" = (
 /obj/effect/decal/cleanable/blood{
 	color = "black"
@@ -5616,15 +5440,6 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/caves/dark)
-"sX" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/machinery/computer/drone_control{
-	dronefab = "Cadia";
-	req_access = list()
-	},
-/turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "tc" = (
 /obj/structure/sink{
@@ -6522,16 +6337,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
-"we" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/machinery/cell_charger,
-/obj/structure/table/steel,
-/obj/random/tech_supply,
-/obj/random/powercell,
-/obj/random/powercell,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "wg" = (
 /obj/item/reagent_containers/hypospray/autoinjector/morphine{
 	pixel_y = 16
@@ -7221,11 +7026,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
-"yJ" = (
-/obj/effect/floor_decal/turf/bloodbar/off,
-/obj/machinery/vending/phoronresearch,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "yK" = (
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/ship_floor/steel{
@@ -7892,13 +7692,6 @@
 	icon_state = "evil"
 	},
 /area/cadiaoutpost/new_hive/caves)
-"AW" = (
-/obj/machinery/artifact_scanpad,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/item/gun/energy/pulse/plasma/pistol/glock,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "AX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -8027,12 +7820,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/new_hive/caves)
-"Bp" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/machinery/r_n_d/protolathe,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "Bq" = (
 /obj/structure/bed,
 /obj/item/bedsheet/blue,
@@ -8179,18 +7966,6 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/new_hive/caves)
-"BP" = (
-/obj/effect/floor_decal/turf/bloodbar/off,
-/obj/item/card/id/silver{
-	access = list(221,222);
-	color = "grey";
-	job_access_type = null;
-	name = "L2 Access Card"
-	},
-/obj/item/clothing/suit/armor/seolarmor,
-/obj/item/clothing/head/helmet/soul,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "BQ" = (
 /turf/simulated/floor/tiled{
 	color = "gray"
@@ -8474,15 +8249,6 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/new_hive/caves)
-"CH" = (
-/obj/machinery/button/remote/blast_door/id_scan{
-	name = "pristine ID lock";
-	id = "secretdoor";
-	req_one_access = list(221,222)
-	},
-/obj/structure/table/graf/rusty_table,
-/turf/simulated/floor/stone/old4,
-/area/cadiaoutpost/oa/caves/dark)
 "CI" = (
 /obj/structure/sign/neon/cargo{
 	pixel_x = -32
@@ -8996,18 +8762,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
-"En" = (
-/obj/effect/floor_decal/turf/bloodbar/off,
-/obj/item/card/id/silver{
-	access = list(221,222);
-	color = "grey";
-	job_access_type = null;
-	name = "L2 Access Card"
-	},
-/obj/item/clothing/suit/armor/seolarmor,
-/obj/item/clothing/head/helmet/seolhelm,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "Eo" = (
 /obj/effect/floor_decal/corner/beige{
 	icon_state = "corner_white";
@@ -9703,15 +9457,11 @@
 /obj/item/mining_scanner,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
-"GA" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/machinery/r_n_d/destructive_analyzer,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "GC" = (
-/obj/effect/floor_decal/turf/bloodbar/off,
-/obj/structure/forge,
+/obj/structure/table/marble{
+	color = "grey"
+	},
+/obj/item/clothing/head/helmet/seolhelm,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "GD" = (
@@ -10161,14 +9911,6 @@
 	dir = 1
 	},
 /area/cadiaoutpost/new_hive/caves)
-"In" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/item/stack/material/diamond{
-	amount = 5
-	},
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "Io" = (
 /obj/item/campfire/self_lit{
 	desc = "A campfire.";
@@ -10415,20 +10157,6 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"IR" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/machinery/door/airlock/arbiter{
-	color = "grey";
-	maxhealth = 3000;
-	name = "Groomlake Facility";
-	req_access = list()
-	},
-/obj/machinery/door/blast/bordergatel{
-	begins_closed = 0;
-	id = "archeo2"
-	},
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "IS" = (
 /obj/effect/floor_decal/turf/surgery2,
 /obj/structure/table/marble{
@@ -10540,11 +10268,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"Jp" = (
-/obj/effect/floor_decal/turf/bloodbar/off,
-/obj/machinery/power/port_gen/pacman/super/potato,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "Jq" = (
 /obj/effect/floor_decal/turf/basalt9,
 /turf/simulated/floor/stone,
@@ -10571,15 +10294,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
-"Jy" = (
-/obj/effect/floor_decal/turf/bloodbar/off,
-/obj/structure/table/rack/dark,
-/obj/item/grenade/spawnergrenade/manhacks{
-	name = "mysterious grenade"
-	},
-/obj/random/loot/tech2,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "Jz" = (
 /obj/structure/shipdecor{
 	icon_state = "reading"
@@ -10754,16 +10468,6 @@
 	desc = "Don't drink the water... it makes you forget!";
 	description_fluff = null;
 	name = "Carbonated Water"
-	},
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
-"JU" = (
-/obj/effect/floor_decal/turf/bloodbar/off,
-/obj/structure/table/rack/dark,
-/obj/item/gun/energy/pulse/pulserifle{
-	charge_cost = 55;
-	desc = "The remains of an ancient salvage, close examination reveals the power pack is drained and there are even cracks within the crystal assembly.";
-	name = "Salvaged Pulse Rifle"
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
@@ -11042,6 +10746,7 @@
 	color = "grey"
 	},
 /obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/item/clothing/head/helmet/soul,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "KO" = (
@@ -11080,11 +10785,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"KU" = (
-/mob/living/simple_animal/tomato,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "KV" = (
 /obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/seolite,
@@ -11119,15 +10819,6 @@
 /obj/item/gun/launcher/grenade/mezoa,
 /turf/simulated/floor/ship_floor/steel,
 /area/cadiaoutpost/new_hive/caves)
-"Lc" = (
-/obj/effect/floor_decal/turf/bloodbar/off,
-/obj/structure/cult/talisman{
-	desc = "A dusty table constructed from stone - handcut and covered in runic scripture.";
-	name = "Ancient Table"
-	},
-/obj/random/loot/tech2,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "Ld" = (
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/new_hive/caves)
@@ -11138,28 +10829,6 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/caves/dark)
-"Lj" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/structure/table/rack/dark,
-/obj/item/paper/crumpled/bloody{
-	name = "reseach instructions";
-	desc = "get ingots. turn into strange alloy. put in the protolathe. find archeotech or steal it from your rivals. become one with the machine god."
-	},
-/obj/item/card/id/silver{
-	access = list(221,222,223);
-	color = "grey";
-	job_access_type = null;
-	name = "L3 Access Card"
-	},
-/obj/item/card/id/silver{
-	access = list(221,222,223);
-	color = "grey";
-	job_access_type = null;
-	name = "L3 Access Card"
-	},
-/turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "Lk" = (
 /obj/machinery/light/red,
@@ -11348,14 +11017,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
-"LN" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/machinery/door/blast/bordergatel{
-	begins_closed = 0;
-	id = "archeo1"
-	},
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "LP" = (
 /obj/structure/sign/ship/blood_signs{
 	icon_state = "BLOOD"
@@ -11799,13 +11460,6 @@
 /obj/random/coin,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/undercity)
-"NA" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/item/rnd/biospace3,
-/obj/structure/table/rack/dark,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "NC" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/paper_bin{
@@ -11877,12 +11531,6 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/new_hive/caves)
-"NP" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/machinery/r_n_d/circuit_imprinter,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "NR" = (
 /obj/machinery/igniter{
 	desc = null;
@@ -12245,8 +11893,8 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "Pc" = (
-/obj/structure/telearray/centreright,
-/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/effect/floor_decal/turf/plating,
+/mob/living/simple_animal/hostile/mining_borg/behemoth,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "Pg" = (
@@ -12556,9 +12204,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"Qa" = (
-/turf/simulated/floor/stone/old4,
-/area/cadiaoutpost/oa/caves/dark)
 "Qc" = (
 /obj/structure/table/steel,
 /obj/item/reagent_containers/food/drinks/bottle/bluecuracao{
@@ -12756,11 +12401,6 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/caves/dark)
-"QB" = (
-/obj/structure/telearray/lowright,
-/obj/effect/floor_decal/turf/bloodbar/off,
-/turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "QE" = (
 /obj/random/loot/tech1,
@@ -13084,15 +12724,6 @@
 	},
 /turf/simulated/floor/carpet/purple,
 /area/cadiaoutpost/oa/caves/undercity)
-"RZ" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/structure/table/rack/dark,
-/obj/item/stack/material/glass/fifty,
-/obj/item/reagent_containers/glass/beaker/large,
-/obj/item/reagent_containers/glass/beaker/large,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "Sa" = (
 /obj/item/reagent_containers/food/snacks/meat/rat_meat,
 /turf/simulated/floor/ship_floor/steel{
@@ -13146,12 +12777,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"Sg" = (
-/obj/machinery/artifact_analyser,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "Sh" = (
 /obj/item/material/shard,
 /obj/effect/decal/cleanable/cobweb,
@@ -13165,13 +12790,6 @@
 	icon_state = "evil"
 	},
 /area/cadiaoutpost/new_hive/caves)
-"Sk" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/item/rnd/illegal10,
-/obj/structure/table/rack/dark,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "Sm" = (
 /obj/structure/statue/prayer,
 /turf/simulated/floor/stone/old4,
@@ -13188,32 +12806,6 @@
 	icon_state = "evil"
 	},
 /area/cadiaoutpost/new_hive/caves)
-"St" = (
-/obj/effect/floor_decal/turf/bloodbar/off,
-/obj/structure/table/rack/dark,
-/obj/item/gun/energy/pulse/ionrifle{
-	charge_cost = 50;
-	desc = "The remains of an ancient salvage, close examination reveals the power pack is drained and there are even cracks within the crystal assembly.";
-	name = "Salvaged ION rifle"
-	},
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
-"Su" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/machinery/button/remote/blast_door/lever{
-	id = "archeo1";
-	name = "Inner Gate";
-	pixel_x = -10
-	},
-/obj/machinery/button/remote/blast_door/lever{
-	id = "archeo2";
-	name = "Outer Gate";
-	pixel_x = 10
-	},
-/obj/structure/table/steel,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "Sw" = (
 /obj/structure/window/reinforced{
 	color = "grey";
@@ -13296,12 +12888,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"SP" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/crystal_static/pink,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "SQ" = (
 /obj/machinery/door/window/westleft,
 /obj/structure/cable{
@@ -13367,14 +12953,6 @@
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
-"Ta" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/machinery/door/blast/bordergater{
-	begins_closed = 0;
-	id = "archeo1"
-	},
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "Tb" = (
 /obj/structure/cult/tome,
 /turf/simulated/floor/tiled{
@@ -13645,10 +13223,6 @@
 	},
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/new_hive/caves)
-"TY" = (
-/obj/structure/stairs/south,
-/turf/simulated/floor/stone/old4,
-/area/cadiaoutpost/oa/caves/dark)
 "TZ" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -14205,19 +13779,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"VP" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/implantchair,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
-"VQ" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/structure/table/rack/dark,
-/obj/item/stack/material/steel/fifty,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "VS" = (
 /obj/effect/decal/cleanable/blood/gibs/core,
 /turf/simulated/floor/tiled{
@@ -14441,11 +14002,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"WN" = (
-/obj/structure/telearray/upperleft,
-/obj/effect/floor_decal/turf/bloodbar/off,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "WO" = (
 /obj/machinery/door/airlock/gold{
 	color = "grey"
@@ -14578,22 +14134,6 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/caves/dark)
-"Xo" = (
-/obj/item/reagent_containers/hypospray/autoinjector/tau{
-	desc = "A disgusting red liquid sloshes around inside the tube.";
-	name = "Mysterious Injector"
-	},
-/obj/effect/floor_decal/turf/carpetn00,
-/obj/item/newore/gems/ruby/cut,
-/obj/item/device/holyoils,
-/obj/item/device/autochisel,
-/obj/item/device/hammer,
-/obj/effect/floor_decal/turf/bloodbar/off,
-/obj/item/rnd/combat10,
-/turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
@@ -14913,12 +14453,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"Yi" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/machinery/vending/robotics,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "Yj" = (
 /obj/machinery/light/small/red,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -15118,15 +14652,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"YH" = (
-/obj/machinery/door/blast/id_door{
-	req_access = list(302);
-	name = "Secret Door";
-	id = "secretdoor";
-	maxhealth = 9000
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/caves/dark)
 "YJ" = (
 /obj/machinery/door/airlock/ancient_ship/command/capitan,
 /turf/simulated/floor/ship_floor/steel{
@@ -15247,16 +14772,6 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/new_hive/caves)
-"Ze" = (
-/obj/effect/floor_decal/turf/bloodbar/off,
-/obj/machinery/button/remote/blast_door/id_scan{
-	name = "pristine ID lock";
-	id = "secretdoor";
-	req_one_access = list(221,222)
-	},
-/obj/structure/table/graf/rusty_table,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/caves/dark)
 "Zf" = (
 /obj/machinery/door/airlock/ancient_ship/med{
 	name = "Medical Bay"
@@ -32235,7 +31750,7 @@ GX
 IO
 IO
 IO
-IO
+Pc
 IO
 PK
 wZ
@@ -32249,7 +31764,7 @@ lf
 eS
 fn
 yV
-fn
+GC
 EN
 Jt
 Jt
@@ -33259,7 +32774,7 @@ Jt
 Jt
 Jt
 Jt
-Jt
+pc
 iE
 Jt
 Jt
@@ -41065,7 +40580,7 @@ zx
 Ih
 Ih
 MU
-dd
+MU
 Ih
 Ih
 MU
@@ -41299,7 +40814,7 @@ zx
 dd
 eS
 Jk
-KU
+qt
 Jk
 eS
 VO
@@ -41317,8 +40832,8 @@ zx
 Ih
 MU
 MU
-dd
-dd
+MU
+MU
 Fa
 MU
 MU
@@ -41551,7 +41066,7 @@ zx
 dd
 eS
 Jk
-KU
+qt
 Jk
 eS
 VO
@@ -41570,7 +41085,7 @@ Ih
 MU
 MU
 MU
-dd
+MU
 MU
 MU
 MU
@@ -41822,8 +41337,8 @@ Ih
 MU
 MU
 MU
-dd
-dd
+MU
+MU
 MU
 Ih
 Ih
@@ -42054,7 +41569,7 @@ zx
 zx
 dd
 pO
-KU
+qt
 qt
 le
 pO
@@ -42306,7 +41821,7 @@ zx
 zx
 dd
 eS
-KU
+qt
 qt
 Bz
 eS
@@ -42801,13 +42316,13 @@ zx
 zx
 zx
 zx
-dd
-dd
-dd
-dd
-dd
-dd
-dd
+zx
+zx
+zx
+zx
+zx
+zx
+zx
 dd
 eS
 Jk
@@ -43053,14 +42568,14 @@ zx
 zx
 zx
 zx
-dd
-eS
-eS
-eS
-pO
-eS
-eS
-eS
+zx
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 eS
 eS
 wy
@@ -43305,19 +42820,19 @@ zx
 zx
 zx
 zx
-dd
-eS
-Lj
-NA
-qP
-Sk
-eC
-av
-we
+zx
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 eS
 IO
 IO
-LN
+IO
 IO
 IO
 IO
@@ -43557,19 +43072,19 @@ zx
 zx
 zx
 zx
-dd
-eS
-Sg
-dp
-dp
-dp
-dp
-dp
-dp
+zx
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 eS
 IO
 IO
-ri
+IO
 IO
 IO
 IO
@@ -43809,19 +43324,16 @@ zx
 zx
 zx
 zx
-dd
+zx
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 eS
-AW
-dp
-GA
-Bp
-gp
-NP
-dp
-pO
-IO
-IO
-Ta
 IO
 IO
 IO
@@ -43831,7 +43343,10 @@ IO
 IO
 IO
 IO
-IR
+IO
+IO
+IO
+XG
 IO
 IO
 IO
@@ -44061,16 +43576,16 @@ zx
 zx
 zx
 zx
-dd
-pO
-VP
-dp
-dp
-In
-dp
-dp
-dp
-mi
+zx
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+eS
 IO
 IO
 pO
@@ -44083,7 +43598,7 @@ IO
 eS
 Pq
 IO
-fL
+XG
 IO
 IO
 IO
@@ -44313,16 +43828,16 @@ zx
 zx
 zx
 zx
-dd
+zx
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 eS
-SP
-dp
-hX
-RZ
-VQ
-sx
-dp
-pO
 IO
 IO
 eS
@@ -44565,15 +44080,15 @@ zx
 zx
 zx
 zx
-dd
-eS
-dp
-dp
-dp
-bN
-dp
-dp
-dp
+zx
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 eS
 eS
 IO
@@ -44817,15 +44332,15 @@ zx
 zx
 zx
 zx
-dd
-eS
-en
-sX
-Yi
-dp
-Su
-bq
-bq
+zx
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 eS
 eS
 IO
@@ -45069,15 +44584,15 @@ zx
 zx
 zx
 zx
-dd
-eS
-eS
-eS
-eS
-rH
-eS
-pO
-eS
+zx
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 eS
 eS
 qE
@@ -45321,15 +44836,15 @@ zx
 zx
 zx
 zx
-dd
-dd
-eS
-eS
-pc
-Ia
-Ia
-oM
-Lc
+zx
+zx
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 eS
 eS
 eS
@@ -45574,15 +45089,15 @@ zx
 zx
 zx
 zx
-dd
-eS
-lr
-Ia
-Ia
-BP
-Ia
-Ia
-GC
+zx
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 eS
 eS
 eS
@@ -45826,17 +45341,17 @@ zx
 zx
 zx
 zx
-dd
-eS
-Jy
-Ia
-Ia
-Ia
-Ia
-Ia
-Ia
-eS
-bu
+zx
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 eS
 eS
 eS
@@ -46078,18 +45593,18 @@ zx
 zx
 zx
 zx
-dd
-eS
-jF
-Ia
-Ia
-WN
-Ia
-Ia
-Ia
-YH
-Qa
-TY
+zx
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 eS
 zx
 zx
@@ -46330,17 +45845,17 @@ zx
 zx
 zx
 zx
-dd
-eS
-yJ
-Ia
-jf
-hY
-mb
-Ia
-Ze
-eS
-CH
+zx
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 eS
 eS
 zx
@@ -46582,15 +46097,15 @@ zx
 zx
 zx
 zx
-dd
-eS
-St
-Ia
-BP
-Pc
-QB
-En
-Jp
+zx
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 eS
 eS
 eS
@@ -46834,14 +46349,14 @@ zx
 zx
 zx
 zx
-dd
-eS
-JU
-Ia
-Ia
-Xo
-Ia
-Ia
+zx
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 eS
 eS
 zx
@@ -47086,13 +46601,13 @@ zx
 zx
 dd
 dd
-dd
-eS
-aL
-Ia
-Ia
-Ia
-Ia
+zx
+jV
+jV
+jV
+jV
+jV
+jV
 eS
 eS
 eS

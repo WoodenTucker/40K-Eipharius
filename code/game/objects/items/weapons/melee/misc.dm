@@ -97,6 +97,8 @@
 	origin_tech = list(TECH_COMBAT = 5)
 	attack_verb = list("flicked", "whipped", "lashed")
 	var/slan = 1
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
+	armor = list(melee = 15, bullet = 25, laser = 25, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 //code copypasted from the mutated arm
 /obj/item/melee/whip/lashoftorment/attack(mob/living/carbon/C as mob, var/mob/living/carbon/human/user as mob) //

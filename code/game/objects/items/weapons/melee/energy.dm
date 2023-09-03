@@ -285,7 +285,7 @@
 	item_state = "powersword"
 	icon_state = "powersword"
 	wielded_icon = "powersword-w"
-	active_force = 43 //should be enough to cut off most limbs
+	active_force = 39 //should be enough to cut off most limbs
 	active_throwforce = 18
 	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
 	force = 34
@@ -309,6 +309,9 @@
 	drop_sound = 'sound/items/drop_sword.ogg'
 	grab_sound = 'sound/items/unholster_sword02.ogg'
 	equipsound = 'sound/items/holster_sword1.ogg'
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
+	armor = list(melee = 10, bullet = 25, laser = 25, energy = 10, bomb = 10, bio = 0, rad = 0)
+
 /obj/item/melee/energy/powersword/activate(mob/living/user)
 	..()
 	icon_state = "powersword_on"
@@ -325,9 +328,9 @@
 	item_state = "powersword" // There is no on-mob for powersword we must use this. It looks alright.
 	icon_state = "powersword"
 	wielded_icon = "powersword-w"
-	active_force = 46 //should be enough to cut off most limbs
+	active_force = 39 //should be enough to cut off most limbs
 	active_throwforce = 20
-	force = 36 //its just a adamantium sword when offline
+	force = 34 //its just a adamantium sword when offline
 	throwforce = 15
 	throw_speed = 1
 	throw_range = 4
@@ -349,9 +352,9 @@
 	icon_state = "powerclaw-alt_mag"
 	item_state = "none"
 	wielded_icon = "none"
-	active_force = 40 
+	active_force = 38
 	active_throwforce = 0
-	force = 30
+	force = 33
 	throwforce = 1
 	throw_speed = 1
 	throw_range = 1
@@ -365,6 +368,8 @@
 	atom_flags = 0
 	origin_tech = list(TECH_MAGNET = 1, TECH_COMBAT = 1)
 	attack_verb = list("mauled", "clawed", "cleaved", "torn", "cut")
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/melee/energy/powersword/claw/integrated/activate(mob/living/user)
 	..()

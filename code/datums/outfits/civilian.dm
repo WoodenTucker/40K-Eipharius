@@ -131,7 +131,7 @@
 	belt = /obj/item/device/flashlight/lantern
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
-	suit = /obj/item/clothing/suit/armor/preacher
+	suit = null
 	l_hand = /obj/item/staff/ministorumstaff
 	r_hand = null
 	backpack_contents = list(

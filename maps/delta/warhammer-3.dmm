@@ -4262,6 +4262,17 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel)
+"ehe" = (
+/obj/machinery/door/unpowered/inn/berryfarm{
+	req_access = list();
+	name = "the farmhouse";
+	req_one_access = list(230,211)
+	},
+/obj/structure/banner/blue{
+	pixel_y = -32
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/farm)
 "ehM" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -4331,8 +4342,13 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/new_hive/hive_city)
 "elK" = (
-/obj/structure/sign/medical1,
-/turf/simulated/wall/concrete,
+/obj/structure/grille/iron_fence,
+/obj/structure/banner/blue{
+	pixel_y = -32
+	},
+/turf/simulated/floor/factory_floor{
+	dir = 8
+	},
 /area/cadiaoutpost/oa/farm)
 "emg" = (
 /obj/effect/floor_decal/newcorner/shaft/quarter,
@@ -5141,6 +5157,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
+"fcZ" = (
+/obj/effect/floor_decal/newcorner/trench_flooring{
+	dir = 5
+	},
+/obj/structure/banner/blue{
+	pixel_y = -32
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/groxpen)
 "fde" = (
 /obj/random/firstaid,
 /obj/random/firstaid,
@@ -7226,6 +7251,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
+"gSY" = (
+/obj/structure/banner/blue{
+	pixel_y = -32
+	},
+/turf/simulated/wall/concrete/strong,
+/area/cadiaoutpost/new_hive/hive_city)
 "gTn" = (
 /obj/structure/sign/imperial{
 	pixel_y = -30
@@ -7835,6 +7866,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/gatehouse)
+"hvK" = (
+/obj/structure/banner/blue{
+	pixel_y = -32
+	},
+/turf/simulated/floor/stone/crafted_floor,
+/area/cadiaoutpost/oa/farm)
 "hvZ" = (
 /obj/effect/floor_decal/newcorner/grass{
 	icon_state = "grass2"
@@ -10573,8 +10610,10 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/bridge/hallway)
 "jOH" = (
-/obj/structure/sign/imperial,
-/turf/simulated/wall/concrete/strong,
+/obj/structure/banner/blue{
+	pixel_y = -32
+	},
+/turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/hive_city)
 "jOK" = (
 /obj/machinery/autolathe{
@@ -16055,6 +16094,16 @@
 	icon_state = "r_window"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
+"oXl" = (
+/obj/machinery/door/unpowered/inn/berryfarm{
+	req_access = list();
+	name = "the farmhouse";
+	req_one_access = list(230,211)
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/groxpen)
 "oYj" = (
 /obj/structure/railing,
 /obj/effect/floor_decal/newcorner/plating,
@@ -17177,6 +17226,9 @@
 /obj/machinery/door/unpowered/inn{
 	name = "Equipment Manufactorium"
 	},
+/obj/structure/banner/blue{
+	pixel_y = -32
+	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/hive_city)
 "qep" = (
@@ -17230,6 +17282,15 @@
 "qiL" = (
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/new_hive/hive_city)
+"qjo" = (
+/obj/effect/floor_decal/newcorner/trench_flooring{
+	dir = 10
+	},
+/obj/structure/banner/blue{
+	pixel_y = -32
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/groxpen)
 "qlr" = (
 /obj/structure/sign/poster/poster3{
 	pixel_x = 32
@@ -19580,9 +19641,6 @@
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/table/rack,
 /obj/item/clothing/suit/armor/armoredtrench,
-/obj/item/clothing/suit/armor/armoredtrench,
-/obj/item/clothing/suit/armor/breastplate,
-/obj/item/clothing/suit/armor/breastplate,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -21819,6 +21877,9 @@
 /obj/machinery/light/stolb{
 	on = 1
 	},
+/obj/structure/banner/blue{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/farm)
 "uzj" = (
@@ -22905,6 +22966,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
+"vth" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/mecha/combat/dreadnought,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/engineering)
 "vtz" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
 /turf/simulated/floor/darkwood,
@@ -23194,7 +23262,6 @@
 /turf/simulated/floor/exoplanet/grass,
 /area/cadiaoutpost/oa/bridge/hallway)
 "vGC" = (
-/obj/structure/sign/medical1,
 /obj/item/pyre/self_lit{
 	invisibility = 100;
 	name = "Invisible Light"
@@ -23883,6 +23950,9 @@
 /obj/machinery/door/unpowered/inn{
 	name = "Equipment Manufactorium"
 	},
+/obj/structure/banner/blue{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -23991,6 +24061,12 @@
 	},
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/hive_city)
+"wxB" = (
+/obj/structure/banner/blue{
+	pixel_y = -32
+	},
+/turf/simulated/wall/concrete,
+/area/cadiaoutpost/oa/farm)
 "wyw" = (
 /obj/item/device/flashlight/flare,
 /turf/simulated/floor/dirty,
@@ -63984,7 +64060,7 @@ uFx
 dEh
 jxa
 sEV
-hEv
+vth
 tli
 jpk
 uNf
@@ -70201,7 +70277,7 @@ eTh
 iFU
 nSI
 nSI
-oli
+gSY
 oli
 qen
 oli
@@ -71733,7 +71809,7 @@ deG
 thv
 fPC
 deG
-cDu
+oXl
 emi
 emi
 deG
@@ -71743,7 +71819,7 @@ emi
 deG
 emi
 emi
-cDu
+oXl
 deG
 qTM
 aLk
@@ -71995,7 +72071,7 @@ eBr
 xPF
 tUX
 aDA
-eBr
+fcZ
 deG
 aLk
 bVV
@@ -72751,7 +72827,7 @@ aDA
 foE
 tSi
 eBr
-tUX
+qjo
 deG
 aLk
 bVV
@@ -73227,8 +73303,8 @@ eTh
 eTh
 oli
 oli
+gSY
 oli
-jOH
 wpc
 oli
 oli
@@ -73769,9 +73845,9 @@ aLk
 aLk
 aLk
 mQD
+wxB
 lOQ
-lOQ
-gbl
+ehe
 lOQ
 lOQ
 lOQ
@@ -74494,7 +74570,7 @@ ivO
 eTh
 eTh
 eTh
-eTh
+jOH
 vGC
 dVt
 dVt
@@ -74768,7 +74844,7 @@ mQf
 mQf
 dVt
 uzb
-elK
+lOQ
 aLk
 aLk
 aLk
@@ -75250,7 +75326,7 @@ ivO
 ivO
 eTh
 eTh
-eTh
+jOH
 fba
 dVt
 bVV
@@ -76280,7 +76356,7 @@ dVt
 dVt
 dVt
 uzb
-elK
+lOQ
 aLk
 aLk
 aLk
@@ -76774,11 +76850,11 @@ rrE
 rrE
 rrE
 rrE
-rrE
+elK
 lOQ
 bVV
 bVV
-bVV
+hvK
 lOQ
 rrE
 rrE

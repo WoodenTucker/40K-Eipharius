@@ -331,7 +331,7 @@
 	icon_state = "brim-hat"
 	item_state = "brim-hat"
 	flags_inv = BLOCKHEADHAIR
-	armor = list(melee = 15, bullet = 0, laser = 15, energy = 15, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 40, bullet = 48, laser = 40, energy = 60, bomb = 60, bio = 100, rad = 100)
 
 /obj/item/clothing/head/hospitallerhelm
 	name = "blessed head garments"

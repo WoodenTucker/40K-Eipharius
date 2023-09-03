@@ -260,7 +260,7 @@
 	icon_state = "mecha_missilerack"
 	projectile = /obj/item/missile
 	fire_sound = 'sound/effects/bang.ogg'
-	projectiles = 8
+	projectiles = 2
 	projectile_energy_cost = 200 KILOWATTS
 	equip_cooldown = 60
 
@@ -453,7 +453,7 @@
     projectile = /obj/item/missile/hk
     fire_sound = 'sound/effects/bang.ogg'
     fire_volume = 100 //Loud
-    projectiles = 6
+    projectiles = 1
     projectile_energy_cost = 150 KILOWATTS
     equip_cooldown = 60
 

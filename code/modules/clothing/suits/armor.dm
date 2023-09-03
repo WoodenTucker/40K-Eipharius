@@ -390,17 +390,6 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/suit/armor/preacher
-	name = "Preacher's Gambeson"
-	desc = "The gambeson chosen by the fanatical Frateris, Preachers and Fanatics of the ecclesiarchy"
-	icon_state = "preacherarmor"
-	item_state = "preacherarmor"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 35, bullet = 25, laser = 20, energy = 30, bomb = 10, bio = 10, rad = 10)
-	sales_price = 5
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
 //// PILGRIMS
 
 /obj/item/clothing/suit/storage/hooded/miner
@@ -1279,6 +1268,18 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/suit/armor/witch
+	name = "Witch Hunter's Gambeson"
+	desc = "The gambeson chosen by the fanatical Frateris Witch Hunters of the Ecclesiarchy"
+	icon_state = "preacherarmor"
+	item_state = "preacherarmor"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 48, bullet = 44, laser = 48, energy = 25, bomb = 30, bio = 30, rad = 30)
+	sales_price = 5
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 /obj/item/clothing/suit/armor/trinet
 	name = "Iron Cuirass"
 	desc = "An iron-alloy breastplate forged by local hands, it's craftsmanship is questionable but the exotic alloy is remarkbly unique to Eipharius."
@@ -1748,11 +1749,11 @@ obj/item/clothing/suit/armor
 	slowdown_per_slot[slot_wear_suit] = 0.3
 
 /obj/item/clothing/suit/armor/brigandine/palace
-	name = "Royal Brigandine"
-	desc = "A heavy set of fine plated leather overlayn with carapace to protect against even the most unconventional of weapons. Worn by the Palace Guard of Messina."
-	icon_state = "brigandine"
-	item_state = "brigandine"
-	color = "#606d24"
+	name = "Honour Guard Cuirass"
+	desc = "A heavy set of fine plat with carapace inserts to protect against even the most unconventional of weapons. Worn by the Honour Guard of Messina."
+	icon_state = "templar"
+	item_state = "templar"
+	color = "#ad9b30"
 	armor = list(melee = 51, bullet = 45, laser = 49, energy = 25, bomb = 50, bio = 30, rad = 50)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS

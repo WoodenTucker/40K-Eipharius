@@ -650,7 +650,7 @@
 // cultists, pilgrims ect
 
 /obj/item/clothing/head/heretichood
-	name = "cultist hood"
+	name = "mysterious hood"
 	desc = "A filth hood rag"
 	icon_state = "hood1"
 	item_state = "hood1"

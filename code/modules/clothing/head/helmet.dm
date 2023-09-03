@@ -322,12 +322,21 @@
 
 // NEW HELMETS
 
+/obj/item/clothing/head/helmet/witch
+	name = "Witch Hunter Hat"
+	desc = "An armored hat... how?"
+	armor = list(melee = 30, bullet = 40, laser = 40, energy = 35, bomb = 30, bio = 30, rad = 30)
+	sales_price = 0
+	icon_state = "brim-hat"
+	item_state = "brim-hat"
+	flags_inv = BLOCKHEADHAIR
+
 /obj/item/clothing/head/helmet/soul
 	name = "Seolite Helmet"
 	desc = "A xenos helmet from the seolite forgemasters, remarkbly resistant to thermal damage."
 	icon_state = "soul"
 	item_state = "soul"
-	armor = list(melee = 30, bullet = 40, laser = 58, energy = 35, bomb = 50, bio = 100, rad = 50)
+	armor = list(melee = 30, bullet = 40, laser = 48, energy = 35, bomb = 50, bio = 100, rad = 50)
 	sales_price = 0
 
 /obj/item/clothing/head/helmet/seolhelm
@@ -335,7 +344,7 @@
 	desc = "A xenos power helmet from the seolite forgemasters, remarkbly resistant to thermal damage."
 	icon_state = "seolhelm"
 	item_state = "seolhelm"
-	armor = list(melee = 40, bullet = 48, laser = 68, energy = 35, bomb = 50, bio = 100, rad = 50)
+	armor = list(melee = 40, bullet = 48, laser = 58, energy = 35, bomb = 50, bio = 100, rad = 50)
 	sales_price = 0
 
 /obj/item/clothing/head/helmet/hauberk
@@ -355,11 +364,11 @@
 	sales_price = 2
 
 /obj/item/clothing/head/helmet/hevhelm/palace
-	name = "Palace Guard Helm"
+	name = "Honour Guard Helm"
 	desc = "A heavy metal helmet for your noggin."
 	icon_state = "hevhelm"
 	item_state = "hevhelm"
-	color = "#606d24"
+	color = "#ad9b30"
 	armor = list(melee = 45, bullet = 30, laser = 45, energy = 35, bomb = 30, bio = 50, rad = 30)
 	sales_price = 2
 
