@@ -5565,6 +5565,12 @@
 /obj/item/modular_computer/console/preset/command,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
+"Kc" = (
+/obj/effect/landmark{
+	name = "krootstart"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/krootship)
 "Kg" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/floor_decal/turf/plating,
@@ -11727,8 +11733,8 @@ aK
 bu
 aK
 aK
-aK
-aK
+Kc
+Kc
 aK
 aK
 bn
@@ -11929,8 +11935,8 @@ aK
 bu
 aK
 aK
-aK
-aK
+Kc
+Kc
 aK
 aK
 bo
