@@ -4330,7 +4330,7 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "wx" = (
 /obj/item/modular_computer/console/preset/medical,
-/turf/simulated/floor/ceramic/old,
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel)
 "wz" = (
 /turf/simulated/floor/factory_floor,
@@ -32580,7 +32580,7 @@ KQ
 hC
 OP
 Hg
-wx
+Pc
 KQ
 dS
 aR
@@ -32836,7 +32836,7 @@ Pc
 KQ
 pV
 EI
-Ef
+wx
 Ha
 nl
 vt

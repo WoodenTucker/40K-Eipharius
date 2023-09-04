@@ -1358,11 +1358,12 @@
 /turf/simulated/floor/ceramic/surgery,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "bsa" = (
-/obj/structure/table/steel_reinforced,
-/turf/simulated/floor/darkfloor{
-	dir = 8
+/obj/structure/table/rack,
+/obj/item/rnd/illegal10,
+/turf/simulated/floor/factory_floor{
+	dir = 4
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/villageinside/lab/muffled)
 "bsd" = (
 /obj/structure/bed/chair/wood/fancy{
 	dir = 1
@@ -2389,6 +2390,12 @@
 	},
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"cun" = (
+/obj/machinery/teleport/station,
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/research/robotics)
 "cus" = (
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
@@ -2404,6 +2411,12 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
+"cuG" = (
+/obj/machinery/computer/teleporter,
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/research/robotics)
 "cvb" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	icon_state = "04";
@@ -2794,8 +2807,12 @@
 /obj/item/clothing/head/helmet/metalhelmet{
 	armor = list("melee"=38,"bullet"=30,"laser"=34,"energy"=35,"bomb"=20,"bio"=10,"rad"=10)
 	},
-/obj/item/clothing/head/bountyhead,
-/obj/item/clothing/suit/armor/bountyhunter2,
+/obj/item/clothing/head/bountyhead{
+	armor = list("melee" = 40, "bullet" = 45, "laser" = 40, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 10)
+	},
+/obj/item/clothing/suit/armor/bountyhunter2{
+	armor = list("melee"=45,"bullet"=45,"laser"=45,"energy"=15,"bomb"=10,"bio"=5,"rad"=5)
+	},
 /obj/item/clothing/suit/scum{
 	armor = list("melee"=45,"bullet"=45,"laser"=45,"energy"=15,"bomb"=10,"bio"=5,"rad"=5)
 	},
@@ -7104,12 +7121,13 @@
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
 "gDO" = (
-/obj/effect/floor_decal/industrial/outline/yellow,
-/mob/living/simple_animal/hostile/broken_servitor,
-/turf/simulated/floor/factory_floor{
-	dir = 1
+/obj/effect/floor_decal/turf/metal/four,
+/obj/structure/table/steel_reinforced,
+/obj/item/device/radio/beacon,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/oa/research/robotics)
 "gEr" = (
 /turf/simulated/floor/new_wood/two,
 /area/cadiaoutpost/new_hive/caves)
@@ -7177,17 +7195,6 @@
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "gHd" = (
 /obj/structure/closet/crate,
-/obj/item/clothing/head/heretichood/alt2{
-	name = "mysterious hood"
-	},
-/obj/item/clothing/head/heretichood/alt2{
-	name = "mysterious hood"
-	},
-/obj/item/clothing/head/heretichood/alt2{
-	name = "mysterious hood"
-	},
-/obj/item/clothing/suit/armor/heretcoat,
-/obj/item/clothing/suit/armor/heretcoat,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
 "gHX" = (
@@ -7230,7 +7237,10 @@
 	desc = "A dusty table constructed from stone - handcut and covered in runic scripture.";
 	name = "Ancient Table"
 	},
-/obj/random/loot/tech2,
+/obj/random/loot/tech1,
+/obj/random/loot/tech1,
+/obj/random/loot/tech1,
+/obj/random/loot/tech1,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
 "gJq" = (
@@ -10086,7 +10096,8 @@
 /obj/item/gun/energy/pulse/pulserifle{
 	charge_cost = 55;
 	desc = "The remains of an ancient salvage, close examination reveals the power pack is drained and there are even cracks within the crystal assembly.";
-	name = "Salvaged Pulse Rifle"
+	name = "Salvaged Pulse Rifle";
+	sales_price = 0
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
@@ -13818,6 +13829,8 @@
 	access = list(10,2,5,230,211,213,333,331,221,222,223)
 	},
 /obj/effect/floor_decal/turf/plating,
+/obj/item/rcd,
+/obj/item/rcd_ammo,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -14068,9 +14081,6 @@
 "mEi" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /obj/structure/table/rack/dark,
-/obj/item/grenade/spawnergrenade/manhacks{
-	name = "mysterious grenade"
-	},
 /obj/random/loot/tech2,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
@@ -14161,9 +14171,6 @@
 	},
 /obj/item/clothing/suit/armor/seolarmor,
 /obj/item/clothing/head/helmet/soul,
-/obj/item/clothing/head/heretichood/alt2{
-	name = "mysterious hood"
-	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
 "mHQ" = (
@@ -14474,7 +14481,8 @@
 /obj/item/gun/energy/pulse/ionrifle{
 	charge_cost = 50;
 	desc = "The remains of an ancient salvage, close examination reveals the power pack is drained and there are even cracks within the crystal assembly.";
-	name = "Salvaged ION rifle"
+	name = "Salvaged ION rifle";
+	sales_price = 0
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
@@ -14534,8 +14542,9 @@
 	name = "L2 Access Card"
 	},
 /obj/item/clothing/suit/armor/seolarmor,
-/obj/item/clothing/head/heretichood/alt2{
-	name = "mysterious hood"
+/obj/item/clothing/head/helmet/space/void/engineering/salvage{
+	desc = "An alien void helmet.";
+	name = "Seolite Protective Helmet"
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
@@ -16948,7 +16957,6 @@
 "pbO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/item/rnd/eng3,
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
@@ -18024,7 +18032,8 @@
 /obj/item/clothing/gloves/combat/cadian,
 /obj/item/clothing/under/cadian_uniform,
 /obj/item/clothing/suit/armor/guardsman/carapace{
-	armor = list("melee"=58,"bullet"=62,"laser"=58,"energy"=30,"bomb"=40,"bio"=100,"rad"=90)
+	armor = list("melee"=58,"bullet"=62,"laser"=58,"energy"=30,"bomb"=40,"bio"=100,"rad"=90);
+	sales_price = 0
 	},
 /obj/item/clothing/mask/gas/half/cadianrespirator,
 /obj/item/clothing/head/helmet/guardhelmet,
@@ -20278,8 +20287,8 @@
 "rXt" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/item/rnd/illegal10,
 /obj/structure/table/rack/dark,
+/obj/item/rcd,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
 "rXI" = (
@@ -20494,8 +20503,12 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "sgB" = (
-/obj/item/clothing/suit/armor/cuirass,
-/obj/item/clothing/suit/armor/salvage,
+/obj/item/clothing/suit/armor/cuirass{
+	armor = list("melee"=45,"bullet"=45,"laser"=45,"energy"=15,"bomb"=10,"bio"=5,"rad"=5)
+	},
+/obj/item/clothing/suit/armor/salvage{
+	armor = list("melee"=45,"bullet"=45,"laser"=45,"energy"=15,"bomb"=10,"bio"=5,"rad"=5)
+	},
 /obj/item/clothing/suit/armor/guardsman/mercenary{
 	armor = list("melee"=45,"bullet"=45,"laser"=45,"energy"=15,"bomb"=10,"bio"=5,"rad"=5)
 	},
@@ -20505,14 +20518,28 @@
 /obj/item/clothing/head/helmet/hard_had{
 	armor = list("melee"=35,"bullet"=35,"laser"=35,"energy"=25,"bomb"=30,"bio"=0,"rad"=10)
 	},
-/obj/item/clothing/head/helmet/mining,
-/obj/item/clothing/head/helmet/soul,
-/obj/item/clothing/head/helmet/stalkerhelm2,
-/obj/item/clothing/head/helmet/marinehelm,
-/obj/item/clothing/head/helmet/hevhelm,
-/obj/item/clothing/head/helmet/hauberk,
+/obj/item/clothing/head/helmet/mining{
+	armor = list("melee" = 40, "bullet" = 45, "laser" = 40, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 10)
+	},
+/obj/item/clothing/head/helmet/soul{
+	armor = list("melee" = 40, "bullet" = 45, "laser" = 40, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 10)
+	},
+/obj/item/clothing/head/helmet/stalkerhelm2{
+	armor = list("melee" = 40, "bullet" = 45, "laser" = 40, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 10)
+	},
+/obj/item/clothing/head/helmet/marinehelm{
+	armor = list("melee" = 40, "bullet" = 45, "laser" = 40, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 10)
+	},
+/obj/item/clothing/head/helmet/hevhelm{
+	armor = list("melee" = 40, "bullet" = 45, "laser" = 40, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 10)
+	},
+/obj/item/clothing/head/helmet/hauberk{
+	armor = list("melee" = 40, "bullet" = 45, "laser" = 40, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 10)
+	},
 /obj/structure/table/rack/dark,
-/obj/item/clothing/suit/armor/hauberk,
+/obj/item/clothing/suit/armor/hauberk{
+	armor = list("melee"=45,"bullet"=45,"laser"=45,"energy"=15,"bomb"=10,"bio"=5,"rad"=5)
+	},
 /turf/simulated/floor/darkfloor,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "shK" = (
@@ -22684,12 +22711,12 @@
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "tZf" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/item/rnd/biospace3,
-/obj/structure/table/rack/dark,
-/turf/simulated/floor/seolite,
-/area/cadiaoutpost/oa/farm)
+/obj/effect/floor_decal/newcorner/reinforced,
+/mob/living/simple_animal/hostile/broken_servitor,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/villageinside/lab/muffled)
 "tZx" = (
 /obj/structure/closet/crate{
 	name = "Governor's Funds"
@@ -70266,7 +70293,7 @@ ruX
 wbz
 wbz
 xwP
-gDO
+xwP
 xwP
 xwP
 wbz
@@ -70777,7 +70804,7 @@ ozl
 wbz
 xLt
 jFr
-wmu
+bsa
 xwF
 jFr
 cus
@@ -73291,7 +73318,7 @@ kuR
 tFV
 jjy
 ssF
-tFV
+tZf
 jjy
 ssF
 bhD
@@ -75225,12 +75252,12 @@ rfi
 hcp
 nZF
 oYr
-jxG
+cuG
 dpX
-bsa
+jxG
 oYr
 nZF
-haY
+gDO
 rfi
 gUc
 tUs
@@ -75477,7 +75504,7 @@ eKk
 nAU
 nZF
 oYr
-rCD
+cun
 rWo
 fQo
 oYr
@@ -85736,7 +85763,7 @@ tOB
 tOB
 uru
 hrI
-tZf
+pbO
 pbO
 vTV
 nNn

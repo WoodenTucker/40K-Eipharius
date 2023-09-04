@@ -739,7 +739,7 @@ Pilgrim Fate System
 /decl/hierarchy/outfit/job/underboss
 	name = OUTFIT_JOB_NAME("Underboss")
 	uniform = /obj/item/clothing/under/ogryn/jumpsuit
-	head = null
+	head = /obj/item/clothing/head/ogryn
 	shoes = /obj/item/clothing/shoes/jackboots/ogryn
 	gloves = null
 	back = /obj/item/storage/backpack/satchel/warfare/ogryn
@@ -806,7 +806,7 @@ Pilgrim Fate System
 /decl/hierarchy/outfit/job/ogryn
 	name = OUTFIT_JOB_NAME("Ogryn")
 	uniform = /obj/item/clothing/under/ogryn/jumpsuit
-	head = null
+	head = /obj/item/clothing/head/ogryn
 	shoes = /obj/item/clothing/shoes/jackboots/ogryn
 	gloves = null
 	back = /obj/item/storage/backpack/satchel/warfare/ogryn
@@ -830,7 +830,7 @@ Pilgrim Fate System
 /decl/hierarchy/outfit/job/bouncer
 	name = OUTFIT_JOB_NAME("Bouncer")
 	uniform = /obj/item/clothing/under/ogryn/jumpsuit
-	head = null
+	head = /obj/item/clothing/head/ogryn
 	shoes = /obj/item/clothing/shoes/jackboots/ogryn
 	gloves = null
 	back = /obj/item/storage/backpack/satchel/warfare/ogryn
