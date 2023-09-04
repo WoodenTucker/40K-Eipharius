@@ -587,7 +587,7 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "ck" = (
 /obj/structure/closet/cabinet,
-/obj/random/loot/goodweapon,
+/obj/item/grenade/spawnergrenade/manhacks,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
 "cn" = (
@@ -991,12 +991,9 @@
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "dK" = (
-/obj/effect/water/top,
-/obj/effect/water/bottom,
-/obj/effect/floor_decal/turf/necro1,
-/obj/necrofleshmouth,
-/turf/simulated/floor/exoplanet/water/shallow/lightless,
-/area/cadiaoutpost/oa/caves/undercity)
+/obj/item/newore/silverore,
+/turf/unsimulated/miningtime,
+/area/cadiaoutpost/new_hive/caves)
 "dM" = (
 /obj/machinery/light{
 	icon_state = "tube1";
@@ -5766,8 +5763,8 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
 "tW" = (
-/obj/item/newore/copperore,
-/turf/simulated/floor/stone,
+/obj/item/newore/phoronore,
+/turf/unsimulated/miningtime,
 /area/cadiaoutpost/new_hive/caves)
 "tZ" = (
 /obj/structure/bed/chair{
@@ -6736,9 +6733,6 @@
 	color = "grey";
 	name = "Clinic"
 	},
-/obj/structure/warfare/barricade/concrete_barrier{
-	color = "grey"
-	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/caves/dark)
 "xN" = (
@@ -6844,20 +6838,9 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "yj" = (
-/obj/structure/window_frame{
-	color = "grey";
-	maxhealth = 260
-	},
-/obj/structure/grille{
-	color = "grey"
-	},
-/obj/structure/warfare/barricade/concrete_barrier{
-	color = "grey"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/caves/dark)
+/obj/item/newore/copperore,
+/turf/unsimulated/miningtime,
+/area/cadiaoutpost/new_hive/caves)
 "yk" = (
 /obj/structure/sewers/pipeflow{
 	color = "grey"
@@ -6874,7 +6857,6 @@
 /obj/item/newore/smallrock,
 /obj/item/newore/smallrock,
 /obj/item/newore/smallrock,
-/obj/item/newore/silverore,
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
@@ -8672,8 +8654,8 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "DX" = (
-/obj/item/newore/ironore,
-/turf/simulated/floor/stone,
+/obj/item/ore/diamond,
+/turf/unsimulated/miningtime,
 /area/cadiaoutpost/new_hive/caves)
 "DY" = (
 /obj/machinery/door/airlock/glass_arbiter{
@@ -9139,10 +9121,9 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "Fz" = (
-/obj/item/grenade/spawnergrenade/manhacks,
-/obj/structure/closet/crate,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves/undercity)
+/obj/item/newore/ironore,
+/turf/unsimulated/miningtime,
+/area/cadiaoutpost/new_hive/caves)
 "FC" = (
 /obj/machinery/door/blast/bordergatec/closed{
 	id = "pactgate";
@@ -11330,9 +11311,12 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
 "MV" = (
-/obj/item/newore/coalore,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
+/obj/effect/floor_decal/turf/necro1,
+/mob/living/simple_animal/hostile/smalldemon/chaos,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/dark)
 "MW" = (
 /obj/machinery/door/airlock/phoron{
 	color = "grey";
@@ -12032,8 +12016,8 @@
 /obj/effect/decal/remains{
 	color = "grey"
 	},
-/obj/item/clothing/head/helmet/seolhelm,
 /obj/item/card/id/key/super/daemon,
+/obj/random/loot/tech2,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "Pw" = (
@@ -12834,10 +12818,6 @@
 /obj/structure/closet/crate/miningcar,
 /obj/item/newore/smallrock,
 /obj/item/newore/smallrock,
-/obj/item/newore/smallrock,
-/obj/item/newore/smallrock,
-/obj/item/newore/smallrock,
-/obj/item/newore/smallrock,
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
@@ -13029,14 +13009,8 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "Tq" = (
-/obj/effect/floor_decal/newcorner/rails{
-	dir = 4
-	},
-/obj/structure/closet/crate/miningcar,
 /obj/item/newore/gems/quartz,
-/turf/simulated/floor/factory_floor{
-	dir = 1
-	},
+/turf/unsimulated/miningtime,
 /area/cadiaoutpost/new_hive/caves)
 "Tr" = (
 /obj/machinery/light{
@@ -13920,9 +13894,18 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "Ws" = (
-/obj/item/newore/silverore,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
+/obj/structure/hivedecor/statue5{
+	icon = 'icons/map_project/pillars.dmi';
+	icon_state = "2"
+	},
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/undercity)
 "Wx" = (
 /turf/simulated/wall/techno,
 /area/cadiaoutpost/new_hive/caves)
@@ -14841,7 +14824,6 @@
 /obj/item/newore/coalore,
 /obj/item/newore/coalore,
 /obj/item/newore/coalore,
-/obj/item/newore/copperore,
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
@@ -26702,7 +26684,7 @@ gm
 gm
 gm
 gm
-gm
+MV
 gm
 gm
 gm
@@ -29722,7 +29704,7 @@ jV
 lf
 lf
 gm
-gm
+MV
 gm
 gm
 gm
@@ -36602,7 +36584,7 @@ zx
 zx
 dd
 yY
-Fz
+yY
 dd
 zx
 zx
@@ -41599,7 +41581,7 @@ Ih
 MU
 MU
 MU
-yj
+kl
 Ed
 Ed
 Ed
@@ -50876,7 +50858,7 @@ yx
 yx
 yx
 yx
-yx
+Ws
 Ih
 yY
 yY
@@ -51378,7 +51360,7 @@ dd
 Ih
 Ih
 Ih
-Ih
+yx
 yx
 yx
 Ih
@@ -51630,10 +51612,10 @@ AM
 AM
 AM
 AM
-Sc
+Ws
 yx
 yx
-qA
+yx
 yx
 yx
 yx
@@ -51878,7 +51860,7 @@ zx
 zx
 KE
 KE
-dK
+KE
 KE
 KE
 Sc
@@ -52890,7 +52872,7 @@ jw
 jw
 AM
 yx
-qA
+yx
 Sc
 Sc
 yx
@@ -53647,7 +53629,7 @@ wa
 AM
 AM
 yx
-yx
+qA
 Sc
 yx
 Ih
@@ -59222,7 +59204,7 @@ hI
 hI
 hI
 hI
-hI
+tW
 hI
 hI
 hI
@@ -59723,7 +59705,7 @@ hI
 cL
 bC
 hI
-hI
+DX
 hI
 hI
 hI
@@ -59977,7 +59959,7 @@ yA
 yA
 yA
 yA
-hI
+DX
 hI
 hI
 hI
@@ -60226,7 +60208,7 @@ cL
 zp
 yA
 yA
-MV
+yA
 jb
 yA
 hI
@@ -60732,7 +60714,7 @@ WB
 xl
 yA
 yA
-oB
+yA
 cn
 hI
 hI
@@ -62001,8 +61983,8 @@ hI
 hI
 hI
 hI
-hI
-hI
+tW
+DX
 hI
 hI
 hI
@@ -63268,7 +63250,7 @@ yA
 yA
 yA
 yA
-Ws
+yA
 yA
 iB
 bC
@@ -64024,7 +64006,7 @@ BF
 yA
 yA
 yA
-tW
+yA
 yA
 yA
 yA
@@ -64535,7 +64517,7 @@ yA
 yA
 yA
 yA
-hI
+yj
 hI
 hI
 hI
@@ -64787,7 +64769,7 @@ yA
 OG
 OG
 yA
-hI
+Fz
 hI
 hI
 hI
@@ -65039,7 +65021,7 @@ yA
 yA
 yA
 yA
-hI
+dK
 hI
 hI
 hI
@@ -65291,7 +65273,7 @@ yA
 yA
 Pj
 yA
-hI
+Fz
 hI
 hI
 hI
@@ -65540,7 +65522,7 @@ yA
 yA
 yA
 yA
-DX
+yA
 tV
 hd
 hI
@@ -66041,7 +66023,7 @@ yA
 yA
 jb
 yA
-DX
+yA
 yA
 yA
 yA
@@ -69823,7 +69805,7 @@ jb
 yA
 yA
 yA
-hI
+tW
 hI
 hI
 hI
@@ -70075,7 +70057,7 @@ jb
 yA
 yA
 yA
-hI
+Tq
 hI
 hI
 hI
@@ -70327,7 +70309,7 @@ jb
 yA
 yA
 yA
-hI
+DX
 hI
 hI
 hI
@@ -71321,7 +71303,7 @@ Go
 Wx
 Gi
 yA
-Tq
+WA
 yA
 tV
 cn
@@ -75836,8 +75818,8 @@ hI
 hI
 hI
 hI
-hI
-hI
+tW
+dK
 hI
 hI
 hI
@@ -76586,7 +76568,7 @@ kk
 hI
 hI
 hI
-hI
+yj
 yA
 yA
 yA
@@ -76838,7 +76820,7 @@ hI
 hI
 hI
 hI
-hI
+tW
 yA
 PN
 PN
@@ -77090,7 +77072,7 @@ hI
 hI
 hI
 hI
-hI
+tW
 yA
 yA
 yA

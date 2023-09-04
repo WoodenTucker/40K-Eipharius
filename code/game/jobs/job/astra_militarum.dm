@@ -1027,7 +1027,7 @@ datum/job/ig/bullgryn
 /decl/hierarchy/outfit/job/bullgryn
 	name = OUTFIT_JOB_NAME("Bullgryn")
 	uniform = /obj/item/clothing/under/ogryn/jumpsuit
-	head = null
+	head = /obj/item/clothing/head/ogryn
 	shoes = /obj/item/clothing/shoes/jackboots/ogryn
 	gloves = null
 	back = /obj/item/storage/backpack/satchel/warfare/ogryn
