@@ -912,7 +912,6 @@ Area basic template
 	icon_state = "farm"
 	music = 'sound/newmusic/General_Ambient2.ogg'
 	requires_power = FALSE
-	dynamic_lighting = 1
 
 /area/cadiaoutpost/oa/groxpen
 	name = "groxpen"
@@ -1183,16 +1182,6 @@ Area basic template
 /area/cadiaoutpost/oa/village/Exited(mob/living/L, area/A)
 	. = ..()
 	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/village))
-		L.clear_fullscreen("snowfall_heavy_old")
-
-/area/cadiaoutpost/oa/farm/Entered(mob/living/L,  atom/A)
-	. = ..()
-	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/farm))//Doesn't work but this does stop the lag.
-		L.overlay_fullscreen("snowfall_heavy_old", /obj/screen/fullscreen/snowstorm)
-
-/area/cadiaoutpost/oa/farm/Exited(mob/living/L, area/A)
-	. = ..()
-	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/farm))
 		L.clear_fullscreen("snowfall_heavy_old")
 
 
