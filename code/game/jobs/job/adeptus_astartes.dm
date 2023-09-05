@@ -142,7 +142,7 @@
 	suit_store = /obj/item/gun/projectile/boltrifle/bang
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine = 3,
+	/obj/item/ammo_magazine/bolt_rifle_magazine/astartes = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -168,11 +168,11 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
+	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/melee/chain/pcsword = 1,
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -195,7 +195,7 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -217,7 +217,7 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/melee/chain/pcsword = 1,
-	/obj/item/ammo_magazine/bolt_rifle_magazine = 3,
+	/obj/item/ammo_magazine/bolt_rifle_magazine/astartes = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -238,7 +238,7 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/grenade/frag/shell
-	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
+	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/cell/plasma = 4,
@@ -261,11 +261,11 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
+	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/melee/chain/pcsword = 1,
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -288,7 +288,7 @@
 	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -308,7 +308,7 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	suit_store = /obj/item/gun/projectile/boltrifle/sally
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine = 3,
+	/obj/item/ammo_magazine/bolt_rifle_magazine/astartes = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -330,7 +330,7 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/grenade/frag/shell
-	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
+	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/cell/plasma = 4,
@@ -354,11 +354,11 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
+	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/melee/chain/pcsword = 1,
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -381,7 +381,7 @@
 	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -404,7 +404,7 @@
 	suit_store = /obj/item/gun/projectile/boltrifle
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine = 3,
+	/obj/item/ammo_magazine/bolt_rifle_magazine/astartes = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -426,7 +426,7 @@
 	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/grenade/frag/shell
-	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
+	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/cell/plasma = 4,
@@ -449,11 +449,11 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
+	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/melee/chain/pcsword = 1,
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -476,7 +476,7 @@
 	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,

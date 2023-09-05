@@ -75,7 +75,7 @@ Pilgrim Fate System
 
 	var/mob/living/carbon/human/U = src
 	U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,) //removes verb
-	var/fates = list("Mercenary","Scum","Nomad","Primitive")
+	var/fates = list("Mercenary","Scum","Nomad","Primitive","Witch Hunter")
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -230,7 +230,22 @@ Pilgrim Fate System
 				new /obj/item/clothing/head/plebhood(src.loc)
 				if(prob(25))
 					new /obj/item/device/radio/headset/headset_sci(src.loc)
-
+		if("Witch Hunter")
+			U.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(2,4),rand(2,6)) //melee, ranged, med, eng, surgery
+			new /obj/item/storage/backpack/satchel/warfare(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
+			new /obj/item/device/flashlight/lantern(src.loc) 
+			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/card/id/key/grand/monastary, slot_wear_id)
+			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+			U.stat = CONSCIOUS
+			U.sleeping = 0
+			to_chat(U,"<span class='danger'><b><font size=4>THE WITCH HUNTER</font></b></span>")
+			to_chat(U,"<span class='goodmood'>You are a Witch Hunter -- a unique subset of the Bounty Hunter Guild attached to the Chamber Militant, working both as Servant to the Ecclesiarchy and a 'bounty hunter' that the Ecclesiarchy can rely upon without tainting their own hands.</font></b></span>")
+			U.add_stats(rand(16,17), rand(14,16), rand(14,16), rand (10,12)) //veteran mercenary
+			new /obj/item/melee/sword/cane(src.loc)
+			new /obj/item/clothing/head/helmet/witch(src.loc)
+			new /obj/item/device/radio/headset/headset_sci(src.loc)
 		if("Mercenary")
 			U.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(2,4),rand(2,6)) //melee, ranged, med, eng, surgery
 			new /obj/item/storage/backpack/satchel/warfare(src.loc)
@@ -274,16 +289,6 @@ Pilgrim Fate System
 					new /obj/item/device/radio/headset/headset_sci(src.loc)
 				if(prob(15))
 					new /obj/item/device/radio/headset/blue_team/all(src.loc)
-			else if(prob(15))
-				to_chat(U,"<span class='danger'><b><font size=4>THE WITCH HUNTER</font></b></span>")
-				to_chat(U,"<span class='goodmood'>You are a Witch Hunter -- a unique subset of the Bounty Hunter Guild attached to the Chamber Militant, working both as Servant to the Ecclesiarchy and a 'bounty hunter' that the Ecclesiarchy can rely upon without tainting their own hands.</font></b></span>")
-				U.add_stats(rand(13,17), rand(14,17), rand(14,17), rand (10,12)) //veteran mercenary
-				U.add_stats(rand(16,18), rand(14,16), rand(16,18), rand (10,12)) //veteran mercenary
-				new /obj/item/melee/sword/cane(src.loc)
-				new /obj/item/reagent_containers/food/snacks/threebread(src.loc)
-				new /obj/item/clothing/suit/armor/witch(src.loc)
-				new /obj/item/clothing/head/helmet/witch(src.loc)
-				new /obj/item/device/radio/headset/headset_sci(src.loc)
 			else
 				to_chat(U,"<span class='danger'><b><font size=4>THE BOUNTY HUNTER</font></b></span>")
 				to_chat(U,"<span class='goodmood'>A vicious bounty hunter traveling from system to system in search of their next payday, you live luxuriously only for moments before being plunged back into poverty. Hitching a ride to Eipharius with the last of your thrones, you gamble on the hope of finding work out here.(A-Help if nobody is hiring bounty hunters for a bounty target+pay)</font></b></span>")
@@ -304,8 +309,10 @@ Pilgrim Fate System
 				new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
 				if(prob(15))
 					new /obj/item/device/radio/headset/red_team(src.loc)
+					new /obj/item/card/id/key/middle/jail(src.loc)
 				if(prob(3))
 					new /obj/item/device/radio/headset/headset_sci(src.loc)
+					new /obj/item/card/id/key/grand/monastary(src.loc)
 
 
 /mob/living/carbon/human/proc/citizenclass()
@@ -426,7 +433,7 @@ Pilgrim Fate System
 			new /obj/item/device/radio/headset/red_team(src.loc)
 			new /obj/item/device/flashlight/lantern(src.loc) 
 			new /obj/item/clothing/shoes/jackboots/noble(src.loc)
-			equip_to_slot_or_store_or_drop(new /obj/item/card/id/key/grand/master, slot_wear_id)
+			equip_to_slot_or_store_or_drop(new /obj/item/card/id/key/grand/monastary, slot_wear_id)
 			new /obj/item/stack/thrones/twenty(src.loc)
 			new /obj/item/clothing/head/helmet/hevhelm/palace(src.loc)
 			new /obj/item/clothing/suit/armor/brigandine/palace(src.loc)
@@ -443,7 +450,7 @@ Pilgrim Fate System
 			new /obj/item/clothing/gloves/thick(src.loc)
 			new /obj/item/clothing/head/helmet/whiteshield(src.loc)
 			new /obj/item/clothing/mask/gas/half/cadianrespirator(src.loc)
-			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/cadian_uniform, slot_w_uniform)
 			new /obj/item/storage/backpack/satchel/warfare(src.loc)
 			new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
 			new /obj/item/clothing/suit/armor/whiteshield(src.loc)

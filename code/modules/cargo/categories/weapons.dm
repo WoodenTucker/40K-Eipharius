@@ -157,7 +157,7 @@
 	item_path = /obj/item/gun/energy/pulse/plasma/rifle
 
 /datum/cargo_entry/weapon/meltarifle
-	name = "Melta Rifle"
+	name = "Melta Gun"
 	cost = 500
 	item_path = /obj/item/gun/projectile/meltagun
 

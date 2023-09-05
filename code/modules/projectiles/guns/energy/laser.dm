@@ -600,8 +600,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	charge_cost = 1800
 	wielded_item_state = "ionrifle-wielded"
 	var/plasma_overheat = 1 // Keeping track on how overheated the gun is
-	var/plasma_overheat_decay = 2 // The cooling of the gun per tick
-	var/plasma_overheat_max = 190 // When the gun exploads
+	var/plasma_overheat_decay = 4 // The cooling of the gun per tick
+	var/plasma_overheat_max = 250 // When the gun exploads
 	Fire(atom/target, mob/living/user)
 		if(plasma_overheat >= 50)
 			to_chat(user, "THE BARREL STARTS TO GLOW.")
@@ -619,7 +619,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 			plasma_overheat = 0 // keepin the gun overheat above -1
 			return
 		if(plasma_overheat > plasma_overheat_max)
-			explosion(src.loc, 0, 1, 2, 3) // explodes u, dealing a lot of damage, still (a little) chance to survive
+			explosion(src.loc, 0, 0, 0, 1) // explodes u, dealing a lot of damage, still (a little) chance to survive
 	//firemodes = list(
 		//list(mode_name="semi-charge", burst=1, fire_delay=19, burst_accuracy=null, dispersion=null, automatic = 0),
 		//list(mode_name="overcharge", burst=1, fire_delay=19, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/pulse/pulserifle, charge_cost=150),
@@ -635,15 +635,27 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_HUGE
 	force = 12
 	one_hand_penalty = 2 //heavy af fam
-	accuracy = 0.8
-	fire_delay = 18
+	accuracy = 0.6
+	fire_delay = 16
 	move_delay = 6 //dont want speedy bois
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmarifle
-	charge_cost = 700
+	charge_cost = 600
 	wielded_item_state = "plasmarifle-wielded"
-	sales_price = 115 //funilly enough, plasma rifles are considered more common than plasma pistols in the imperial market, even then, they arent very common
+	sales_price = 60 //funilly enough, plasma rifles are considered more common than plasma pistols in the imperial market, even then, they arent very common
+
+	firemodes = list(
+		list(mode_name="ATAP", fire_delay=16, projectile_type=/obj/item/projectile/energy/pulse/plasmarifle, charge_cost=600),
+		list(mode_name="HEDP", fire_delay = 36, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=2000),
+		)
+
+/obj/item/gun/energy/pulse/plasma/rifle/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.2
+	slowdown_per_slot[slot_wear_suit] = 0.2
+	slowdown_per_slot[slot_r_hand] = 0.4
+	slowdown_per_slot[slot_l_hand] = 0.4
 
 /obj/item/gun/energy/pulse/plasma/pistol
 	name = "plasma pistol"
@@ -656,14 +668,52 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	force = 10
 	one_hand_penalty = 1.1
 	fire_delay = 18.5
-	accuracy = 0.5
+	accuracy = 0.1
 	move_delay = 4 //it a pistol, but giga cool plasma
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	charge_cost = 550
 	wielded_item_state = "plasmapistol"
-	sales_price = 120 //made with adamantium
+	sales_price = 80 //made with adamantium
+
+	firemodes = list(
+		list(mode_name="ATAP", fire_delay=18.5, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol, charge_cost=550),
+		list(mode_name="HEDP", fire_delay = 47, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=2200),
+		)
+
+/obj/item/gun/energy/pulse/plasma/pistol/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.1
+	slowdown_per_slot[slot_wear_suit] = 0.1
+	slowdown_per_slot[slot_r_hand] = 0.2
+	slowdown_per_slot[slot_l_hand] = 0.2
+
+/obj/item/gun/energy/pulse/plasma/pistol/astartes
+	name = "astartes plasma pistol"
+	desc = "A plasma pistol. Great for dealing with threats swiftly. It has an overheat scale and on the end of it is written 'Boom!'."
+	icon = 'icons/obj/weapons/gun/energy.dmi'
+	icon_state = "ppistol"
+	item_state = "plasmapistol"
+	slot_flags = SLOT_BACK|SLOT_S_STORE|SLOT_BELT
+	w_class = ITEM_SIZE_LARGE
+	force = 10
+	one_hand_penalty = 1
+	str_requirement = 20
+	fire_delay = 14.5
+	accuracy = 0.8
+	move_delay = 4 //it a pistol, but giga cool plasma
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
+	charge_cost = 350
+	wielded_item_state = "plasmapistol"
+	sales_price = 0 
+	
+	firemodes = list(
+		list(mode_name="ATAP", fire_delay=14.5, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol, charge_cost=350),
+		list(mode_name="HEDP", fire_delay = 36.5, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=1700),
+		)
 
 /obj/item/gun/energy/pulse/plasma/pistol/chaos // want chaos pistol better than normal. as chaos will be worsely equipped, they need their shining weapons to push up the average
 	name = "Chaotic plasma pistol"
@@ -674,7 +724,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	force = 12
 	one_hand_penalty = 1
 	fire_delay = 17.5
-	accuracy = 0.5
+	accuracy = 0.2
 	move_delay = 3.5 //it a pistol
 	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -684,6 +734,11 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	wielded_item_state = "pulse_pistol"
 	sales_price = 79
 
+	firemodes = list(
+		list(mode_name="ATAP", fire_delay=17.5, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol, charge_cost=600),
+		list(mode_name="HEDP", fire_delay = 45, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=2300),
+		)
+
 /obj/item/gun/energy/pulse/plasma/pistol/mechanicus
 	name = "Ryza Pattern Plasma Pistol"
 	desc = "A plasma pistol from the forge world of Ryza. It's adamantium receiver is detailed with the inscriptions of Ryza Secundus' factorium. It has an overheat scale and on the end of it is written 'Boom!'."
@@ -692,7 +747,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	item_state = "pulse_pistol"
 	force = 10
 	one_hand_penalty = 0.8 //until plasma is better balanced, wield this fancy one.
-	accuracy = 1.1
+	accuracy = 0.3
 	fire_delay = 17
 	move_delay = 3.5
 	recharge_time = 10
@@ -701,8 +756,12 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	charge_cost = 500
 	wielded_item_state = "pulse_pistol"
-	sales_price = 140 //blessed by the omnissiah and made with adamantium
+	sales_price = 100 //blessed by the omnissiah and made with adamantium
 
+	firemodes = list(
+		list(mode_name="ATAP", fire_delay=17, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol, charge_cost=500),
+		list(mode_name="HEDP", fire_delay = 44, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=2100),
+		)
 
 /obj/item/gun/energy/pulse/plasma/pistol/toaster
 	name = "seolite plasma pistol"
@@ -714,7 +773,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_NORMAL
 	force = 10
 	one_hand_penalty = 0.6 //change later?
-	accuracy = 1.2
+	accuracy = 0.6
 	fire_delay = 16
 	move_delay = 3 //it a pistol, but giga cool plasma
 	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 5)
@@ -722,8 +781,13 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	charge_cost = 450
 	wielded_item_state = "pulse_carbine"
-	sales_price = 100
+	sales_price = 120
 	charge_meter = FALSE
+
+	firemodes = list(
+		list(mode_name="ATAP", fire_delay=16, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol, charge_cost=450),
+		list(mode_name="HEDP", fire_delay = 43, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=2000),
+		)
 
 /obj/item/gun/energy/pulse/plasma/pistol/glock
 	name = "archeotech plasma pistol"
@@ -735,7 +799,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_NORMAL
 	force = 10
 	one_hand_penalty = 0.7 //change later?
-	accuracy = 1.1
+	accuracy = 0.5
 	fire_delay = 17
 	move_delay = 2 //it a pistol, but giga cool plasma
 	self_recharge = 9 // very good
@@ -743,8 +807,13 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	charge_cost = 600
 	wielded_item_state = "pulse_pistol"
-	sales_price = 160
+	sales_price = 110
 	charge_meter = FALSE
+
+	firemodes = list(
+		list(mode_name="ATAP", fire_delay=17, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol, charge_cost=600),
+		list(mode_name="HEDP", fire_delay = 44, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=2100),
+		)
 
 
 // tinkered lasguns

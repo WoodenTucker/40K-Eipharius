@@ -614,10 +614,10 @@
 	icon_state = "lasbolt"
 	damage_type = BURN
 	penetration_modifier = 1
-	armor_penetration = 70
-	damage = 10 //believe me, this is kinda of balanced.
+	armor_penetration = 60
+	damage = 45
 	pellets = 1
-	range_step = 2 //not sure what these two mean, but lets go with it!
+	range_step = 3 // stop fucking with my GOT DAMN CODE. DONT TOUCH IT IF YOU DONT KNOW WHAT IT DOES. Next mofucka who breaks mah game is getting perma'd from the Github.
 	spread_step = 2
 	range = 12
 
