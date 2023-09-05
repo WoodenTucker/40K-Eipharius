@@ -41,7 +41,7 @@
 /obj/item/ammo_casing/a75
 	desc = "A 20mm bullet casing."
 	caliber = "75"
-	projectile_type = /obj/item/projectile/bullet/gyro
+	projectile_type = /obj/item/projectile/bullet/pistol/strong/kp
 
 /obj/item/ammo_casing/c38
 	desc = "A .38 bullet casing."
@@ -362,6 +362,10 @@
 	caliber = ".75"
 	projectile_type = /obj/item/projectile/bullet/bolterrifle
 
+/obj/item/ammo_casing/bolter/astartes
+	desc = "A .95 bolt rifle casing."
+	caliber = ".95"
+	projectile_type = /obj/item/projectile/bullet/bolterrifle/astartes
 
 /obj/item/ammo_casing/ork
 	desc = "A giant and crude bullet that was made with scrap."

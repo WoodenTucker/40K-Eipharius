@@ -5518,6 +5518,10 @@
 	desc = "A disgusting red liquid sloshes around inside the tube.";
 	name = "Mysterious Injector"
 	},
+/obj/item/reagent_containers/hypospray/autoinjector/tau{
+	desc = "A disgusting red liquid sloshes around inside the tube.";
+	name = "Mysterious Injector"
+	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
 "fdE" = (
@@ -16958,6 +16962,12 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /obj/structure/table/rack/dark,
+/obj/item/reagent_containers/hypospray/autoinjector/revive{
+	name = "Juvinate Treatment"
+	},
+/obj/item/reagent_containers/hypospray/autoinjector/revive{
+	name = "Juvinate Treatment"
+	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
 "pbX" = (
@@ -26813,8 +26823,7 @@
 /obj/machinery/artifact_scanpad,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/turf/lfloorscorched1,
-/obj/item/grenade/spawnergrenade/manhacks,
-/obj/item/grenade/spawnergrenade/manhacks,
+/obj/item/device/batterer,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
 "xNq" = (

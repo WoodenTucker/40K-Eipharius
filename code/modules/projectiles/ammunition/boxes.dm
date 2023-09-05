@@ -434,6 +434,33 @@
 /obj/item/ammo_magazine/bolt_rifle_magazine/kp/empty
 	initial_ammo = 0
 
+/obj/item/ammo_magazine/bolt_rifle_magazine/astartes
+	name = "Astartes Bolter Magazine"
+	icon_state = "bolty"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	caliber = ".95"
+	matter = list(DEFAULT_WALL_MATERIAL = 5260)
+	ammo_type = /obj/item/ammo_casing/bolter/astartes
+	max_ammo = 30
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/bolt_rifle_magazine/kp/empty
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/bolt_pistol_magazine/astartes
+	name = "Astartes Boltpistol Magazine"
+	icon_state = "boltyp"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	caliber = ".95"
+	matter = list(DEFAULT_WALL_MATERIAL = 2260)
+	ammo_type = /obj/item/ammo_casing/bolter/astartes
+	max_ammo = 15
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/bolt_pistol_magazine/kp/empty
+	initial_ammo = 0
 
 /obj/item/ammo_magazine/melta
 	name = "Melta Canister"

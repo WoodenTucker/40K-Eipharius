@@ -586,6 +586,13 @@
 		list(mode_name="4-round bursts", burst=4, fire_delay=3.2, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
 		)
 
+/obj/item/gun/projectile/automatic/heavystubber/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.1
+	slowdown_per_slot[slot_wear_suit] = 0.1
+	slowdown_per_slot[slot_r_hand] = 0.3
+	slowdown_per_slot[slot_l_hand] = 0.3
+
 /obj/item/gun/projectile/automatic/heavystubber/update_icon()
     ..()
     if(ammo_magazine)
@@ -868,17 +875,17 @@
 	name = "Godwyn Mark Vb Pattern Bolter"
 	desc = "The Adeptus Astartes's legendary and destructive Bolter Rifle, This one is painted in XIIIth Chapter Ultramarines's colour scheme."
 	icon_state = "ultrabolter"
-	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
+	str_requirement = 21
 	w_class = ITEM_SIZE_HUGE
 	force = 30
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	max_shells = 30
-	caliber = ".75"
+	caliber = ".95"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
-	ammo_type = /obj/item/ammo_casing/bolter
+	ammo_type = /obj/item/ammo_casing/bolter/astartes
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
-	allowed_magazines = list(/obj/item/ammo_magazine/bolt_rifle_magazine)
+	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine/astartes
+	allowed_magazines = list(/obj/item/ammo_magazine/bolt_rifle_magazine/astartes)
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
@@ -900,9 +907,16 @@
 	sales_price = 60
 
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=4, burst_accuracy=list(0,0,-1), dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic", burst=1, fire_delay=2.2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=4.4, burst_accuracy=list(0,0,-1), dispersion=null, automatic = 0),
 		)
+
+/obj/item/gun/projectile/boltrifle/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.2
+	slowdown_per_slot[slot_wear_suit] = 0.2 // The slowdown is the same as the human bolter due to it being for Astartes. it's 21 STR requirement makes sure you still need that much strength to use it.
+	slowdown_per_slot[slot_r_hand] = 0.4
+	slowdown_per_slot[slot_l_hand] = 0.4
 
 /obj/item/gun/projectile/boltrifle/update_icon()
 	..()
@@ -990,6 +1004,13 @@
 		list(mode_name="3-round bursts", burst=3, fire_delay=4.6, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
 		)
 
+/obj/item/gun/projectile/boltrifle/lockebolter/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.2
+	slowdown_per_slot[slot_wear_suit] = 0.2
+	slowdown_per_slot[slot_r_hand] = 0.4
+	slowdown_per_slot[slot_l_hand] = 0.4
+
 /obj/item/gun/projectile/boltrifle/lockebolter/drusian //needs lots of work and love, ok standin for now
 	name = "Drusian Pattern bolter"
 	desc = "The Drusian Pattern Bolter, designed initially for Adeptus Arbites personnel when heavier firepower are required -- this Pattern is a variant with higher factorum standards and is produced by the Priests of Mars under the greatest of machine scrutiny. Can also be found in hands of Astra Militarum officers, veterans and Commissar, this pattern is incredibly rare."
@@ -1018,8 +1039,8 @@
 	sales_price = 85
 
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=2.15, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=4.3, burst_accuracy=list(0,0,-1), dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic", burst=1, fire_delay=2.2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=4.4, burst_accuracy=list(0,0,-1), dispersion=null, automatic = 0),
 		)
 
 /obj/item/gun/projectile/boltrifle/lockebolter/update_icon()
@@ -1088,6 +1109,13 @@
 		icon_state = "sisterbolter-30"
 	else
 		icon_state = "sisterbolter-30-e"
+
+/obj/item/gun/projectile/boltrifle/sisterbolter/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.2
+	slowdown_per_slot[slot_wear_suit] = 0.2
+	slowdown_per_slot[slot_r_hand] = 0.4
+	slowdown_per_slot[slot_l_hand] = 0.4
 
 //ORKA
 

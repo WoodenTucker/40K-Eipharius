@@ -90,7 +90,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT
 	armor_penetration = 25
-	force = 5
+	force = 12
 	block_chance = 35
 	throwforce = 7
 	w_class = ITEM_SIZE_NORMAL
@@ -98,7 +98,7 @@
 	attack_verb = list("flicked", "whipped", "lashed")
 	var/slan = 1
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
-	armor = list(melee = 15, bullet = 25, laser = 25, energy = 10, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 //code copypasted from the mutated arm
 /obj/item/melee/whip/lashoftorment/attack(mob/living/carbon/C as mob, var/mob/living/carbon/human/user as mob) //

@@ -244,9 +244,16 @@
 	accuracy = -2
 	fire_delay= 20
 	sales_price = 50
-	burst = 35
+	burst = 30
 	
 	firemodes = list(
-		list(mode_name="OVERCHARGE", burst=45, fire_delay=30, burst_accuracy=null, dispersion=null, automatic = 0.5),
-		list(mode_name="STANDARD", burst=35, fire_delay=20, burst_accuracy=null, dispersion=null, automatic = 0.7),
+		list(mode_name="OVERCHARGE", burst=25, fire_delay=40, burst_accuracy=null, dispersion=null, automatic = 0.7),
+		list(mode_name="STANDARD", burst=18, fire_delay=30, burst_accuracy=null, dispersion=null, automatic = 0.7),
 	)
+
+/obj/item/gun/projectile/meltagun/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.3
+	slowdown_per_slot[slot_wear_suit] = 0.3
+	slowdown_per_slot[slot_r_hand] = 0.5
+	slowdown_per_slot[slot_l_hand] = 0.5

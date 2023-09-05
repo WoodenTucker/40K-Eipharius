@@ -237,8 +237,11 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
-	damage = 90
-	armor_penetration = 60
+	damage = 80
+	armor_penetration = 100
+
+	on_hit(var/atom/target, var/blocked = 0)
+		explosion(target, -1, 0, 1)
 
 /obj/item/projectile/energy/pulse/ion
 	name = "ION round"
@@ -247,6 +250,9 @@
 	icon_state = "pulse1"
 	damage = 80
 	armor_penetration = 100
+
+	on_hit(var/atom/target, var/blocked = 0)
+		explosion(target, -1, 0, 1)
 
 /obj/item/projectile/energy/pulse/plasmarifle
 	name = "plasma round"
@@ -270,6 +276,20 @@
 	armor_penetration = 35
 	light_power = 4
 	light_color = "#2132cf"
+
+/obj/item/projectile/energy/pulse/plasmapistol/overcharge
+	name = "giant plasma round"
+	fire_sound='sound/weapons/marauder.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "pulse1_bl"
+	damage = 70
+	weaken = 1
+	armor_penetration = 45
+	light_power = 4
+	light_color = "#2132cf"
+
+	on_hit(var/atom/target, var/blocked = 0)
+		explosion(target, -1, 0, 1)
 
 /obj/item/projectile/warpboltcrappy
 	name = "Warp Bolt"

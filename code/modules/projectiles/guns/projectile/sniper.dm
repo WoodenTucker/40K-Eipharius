@@ -107,6 +107,13 @@
 		list(mode_name="overcharge", move_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=500),
 		)
 
+/obj/item/gun/energy/las/lasgun/longlas/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.1
+	slowdown_per_slot[slot_wear_suit] = 0.1
+	slowdown_per_slot[slot_r_hand] = 0.3
+	slowdown_per_slot[slot_l_hand] = 0.3
+
 /obj/item/gun/energy/las/lasgun/longlas/verb/scope()
 	set category = "Object"
 	set name = "Use Scope"

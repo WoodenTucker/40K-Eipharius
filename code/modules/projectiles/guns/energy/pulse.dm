@@ -16,6 +16,13 @@
 	accuracy = -1
 	wielded_item_state = "gun_wielded"
 
+/obj/item/gun/energy/pulse_rifle/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.2
+	slowdown_per_slot[slot_wear_suit] = 0.2
+	slowdown_per_slot[slot_r_hand] = 0.3
+	slowdown_per_slot[slot_l_hand] = 0.3
+
 /obj/item/gun/energy/pulse_rifle/carbine
 	name = "pulse carbine"
 	desc = "A weapon that uses advanced pulse-based beam generation technology to emit powerful laser blasts. Less bulky than the full-sized rifle."
@@ -30,6 +37,13 @@
 	burst_delay = 2
 	move_delay = 2
 
+/obj/item/gun/energy/pulse_rifle/carbine/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.1
+	slowdown_per_slot[slot_wear_suit] = 0.1
+	slowdown_per_slot[slot_r_hand] = 0.3
+	slowdown_per_slot[slot_l_hand] = 0.3
+
 /obj/item/gun/energy/pulse_rifle/pistol
 	name = "pulse pistol"
 	desc = "A weapon that uses advanced pulse-based beam generation technology to emit powerful laser blasts. Even smaller than the carbine."
@@ -38,13 +52,14 @@
 	item_state = "pulsep"
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	force = 6
-	projectile_type = /obj/item/projectile/beam/pulse
-	max_shots = 21
+	projectile_type = /obj/item/projectile/beam/pulse/heavy
+	max_shots = 10
 	w_class = ITEM_SIZE_NORMAL
 	one_hand_penalty=1 //a bit heavy
 	burst_delay = 1
 	move_delay = 1
 	wielded_item_state = null
+
 
 /obj/item/gun/energy/pulse_rifle/mounted
 	self_recharge = 1

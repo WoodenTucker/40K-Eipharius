@@ -2789,6 +2789,22 @@ CIRCUITS BELOW
 	build_path = /obj/item/ammo_magazine/bolt_rifle_magazine/kp
 	sort_string = "ZVBI"
 
+/datum/design/item/magpboltp/astartes
+	name = "Bolt Rifle Magazine(KP)"
+	id = "brmkp"
+	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 6, TECH_COMBAT = 5)
+	materials = list("diamond" = 3000, "phoron" = 300)
+	build_path = /obj/item/ammo_magazine/bolt_pistol_magazine/astartes
+	sort_string = "ZVBJ"
+
+/datum/design/item/magbolter/astartes
+	name = "Bolt Rifle Magazine(KP)"
+	id = "brmkp"
+	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 6, TECH_COMBAT = 5)
+	materials = list("diamond" = 6000, "phoron" = 600)
+	build_path = /obj/item/ammo_magazine/bolt_rifle_magazine/astartes
+	sort_string = "ZVBK"
+
 /datum/design/item/lasgunpowerpack
 	name = "Lasgun Power Pack"
 	id = "lasgunpowerpack"
