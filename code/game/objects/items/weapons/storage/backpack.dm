@@ -20,7 +20,7 @@
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK
 	max_w_class = ITEM_SIZE_LARGE
-	max_storage_space = 12
+	max_storage_space = 16
 	var/is_satchel = FALSE //A bit hacky yeah, but satchels carry less so whatever.
 
 /obj/item/storage/backpack/equipped()
@@ -167,9 +167,9 @@
 
 /obj/item/storage/backpack/dufflebag/New()
 	..()
-	slowdown_per_slot[slot_back] = 3
-	slowdown_per_slot[slot_r_hand] = 1
-	slowdown_per_slot[slot_l_hand] = 1
+	slowdown_per_slot[slot_back] = 0.5
+	slowdown_per_slot[slot_r_hand] = 0.5
+	slowdown_per_slot[slot_l_hand] = 0.5
 
 /obj/item/storage/backpack/dufflebag/syndie
 	name = "black dufflebag"
@@ -178,7 +178,7 @@
 
 /obj/item/storage/backpack/dufflebag/syndie/New()
 	..()
-	slowdown_per_slot[slot_back] = 1
+	slowdown_per_slot[slot_back] = 0.4
 
 /obj/item/storage/backpack/dufflebag/syndie/med
 	name = "medical dufflebag"
@@ -218,7 +218,7 @@
 	name = "satchel"
 	desc = "A trendy looking satchel."
 	icon_state = "satchel-norm"
-	max_storage_space = DEFAULT_BOX_STORAGE
+	max_storage_space = DEFAULT_BOX_STORAGE +4
 	slot_flags = SLOT_BACK|SLOT_S_STORE//In your back or your second back slot. Backpacks can only go in the main one though.
 	is_satchel = TRUE
 

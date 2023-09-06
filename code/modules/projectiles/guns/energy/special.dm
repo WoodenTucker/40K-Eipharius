@@ -112,8 +112,7 @@ obj/item/gun/energy/staff/focus
 	str_requirement = 15 //kinda heavy due to it's giant cell.
 	max_shots = 5 //not lore accurate, but this is better.
 	w_class = ITEM_SIZE_NORMAL
-	burst_delay = 2
-	move_delay = 1 //its a small as fuck pistol, it may be poisonous but its small.
+	burst_delay = 2 //its a small as fuck pistol, it may be poisonous but its small.
 	fire_delay = 8
 	charge_cost = 300
 	cell_type = /obj/item/cell/plasma

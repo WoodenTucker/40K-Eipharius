@@ -8,7 +8,6 @@
 	force = 10
 	accuracy = 0.5
 	one_hand_penalty = 0
-	move_delay = 5
 	fire_delay = 6
 	sales_price = 10
 
@@ -176,7 +175,6 @@
 	can_jam = TRUE //yes it can jam
 	accuracy = -0.5
 	force = 20
-	move_delay = 1.5
 	load_method = MAGAZINE
 
 /obj/item/gun/projectile/ork/slugga/update_icon()
@@ -198,7 +196,6 @@
 	caliber = ".75"
 	accuracy = 0
 	fire_delay = 1.8
-	move_delay = 1.5
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -220,8 +217,7 @@
 	force = 10
 	caliber = ".75"
 	accuracy = -0.4
-	fire_delay = 2
-	move_delay = 5.0 // make it shit and mostly ornamental
+	fire_delay = 2.0 // make it shit and mostly ornamental
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -243,7 +239,6 @@
 	caliber = ".75"
 	accuracy = 0.3 //VERY well maintained--maintened? eh, you get what i mean!
 	fire_delay = 1.5
-	move_delay = 1.3
 	sales_price = 58
 
 /obj/item/gun/projectile/bolter_pistol/inquis/update_icon()
@@ -262,8 +257,7 @@
 	force = 20 //i don't think that De'az bolt pistols can have bayonets attached to them, but, imma leave this in, oh also, the Mars Pattern Mark II Scourge is the one with a bayonet.
 	sharp = 1
 	accuracy = 0.6 //normally only 2 of those spawn on the map, one with the sisters, and one on a room in the caves, and they can't even be fabricated
-	fire_delay = 1.5 //fastaa!
-	move_delay = 1.5 //honestly this is kinda of useless
+	fire_delay = 1.5 //fastaa!.5 //honestly this is kinda of useless
 	attack_verb = list ("stabbed", "sliced")
 	hitsound = "stab_sound"
 	sales_price = 70

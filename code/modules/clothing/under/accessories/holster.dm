@@ -6,6 +6,7 @@
 	high_visibility = 1
 	var/obj/item/holstered = null
 	var/list/can_hold
+	can_hold = list(/obj/item/gun/projectile/automatic/machinepistol,/obj/item/gun/projectile/automatic/radcarbine/radpistol,/obj/item/gun/projectile/pistol,/obj/item/gun/energy/taser,/obj/item/gun/projectile/bolter_pistol,/obj/item/gun/projectile/eldar/spistol,/obj/item/gun/projectile/revolver,/obj/item/gun/projectile/necros,/obj/item/gun/projectile/slugrevolver,/obj/item/melee/sword/cutro,/obj/item/melee/sword/combat_knife,/obj/item/melee/sword/machete,/obj/item/gun/energy/las/laspistol,/obj/item/gun/energy/pulse/pulsepistol,/obj/item/gun/energy/pulse/plasma/pistol/toaster)
 
 /obj/item/clothing/accessory/holster/proc/holster(var/obj/item/I, var/mob/living/user)
 	if(holstered && istype(user))

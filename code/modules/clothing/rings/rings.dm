@@ -25,7 +25,7 @@
 	name = "magic ring"
 	desc = "A strange ring with symbols carved on it in some arcane language."
 	icon_state = "magic"
-
+/* THIS RING IS BROKEN
 /obj/item/clothing/ring/magic/equipped(var/mob/living/carbon/human/H, var/slot)
 	..()
 	if(istype(H) && slot == SLOT_GLOVES)
@@ -37,7 +37,7 @@
 
 	if(istype(H))
 		H.remove_cloaking_source(src)
-
+*/
 /////////////////////////////////////////
 //Reagent Rings
 

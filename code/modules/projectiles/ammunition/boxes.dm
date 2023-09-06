@@ -434,12 +434,13 @@
 /obj/item/ammo_magazine/bolt_rifle_magazine/kp/empty
 	initial_ammo = 0
 
-/obj/item/ammo_magazine/bolt_rifle_magazine/astartes
+/obj/item/ammo_magazine/bolt_rifle_magazine_astartes
 	name = "Astartes Bolter Magazine"
 	icon_state = "bolty"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = ".95"
+	w_class = ITEM_SIZE_NORMAL
 	matter = list(DEFAULT_WALL_MATERIAL = 5260)
 	ammo_type = /obj/item/ammo_casing/bolter/astartes
 	max_ammo = 30

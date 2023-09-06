@@ -30,7 +30,7 @@
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
 	caliber = "shotgun"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
-	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
+	ammo_type = /obj/item/ammo_casing/shotgun
 	handle_casings = HOLD_CASINGS
 	var/recentpump = 0 // to prevent spammage
 	var/pumpsound = 'sound/weapons/guns/interact/newpump.ogg' //Support for other kinds of pump weapons.
@@ -49,7 +49,11 @@
 /obj/item/gun/projectile/shotgun/pump/New()
 	..()
 	pump(null, TRUE)//Chamber it when it's created.
-
+	slowdown_per_slot[slot_back] = 0.1
+	slowdown_per_slot[slot_wear_suit] = 0.1
+	slowdown_per_slot[slot_belt] = 0.1
+	slowdown_per_slot[slot_r_hand] = 0.2
+	slowdown_per_slot[slot_l_hand] = 0.2
 
 /obj/item/gun/projectile/shotgun/pump/consume_next_projectile()
 	if(check_for_jam())
@@ -240,20 +244,20 @@
 	one_hand_penalty = 8
 	block_chance = 15 //pretty big, could be used as a shield in theory considering how armored it is
 	gun_type = GUN_SHOTGUN
-	move_delay = 8
 	accuracy = -2
 	fire_delay= 20
 	sales_price = 50
-	burst = 30
+	burst = 16
 	
 	firemodes = list(
-		list(mode_name="OVERCHARGE", burst=25, fire_delay=40, burst_accuracy=null, dispersion=null, automatic = 0.7),
-		list(mode_name="STANDARD", burst=18, fire_delay=30, burst_accuracy=null, dispersion=null, automatic = 0.7),
+		list(mode_name="OVERCHARGE", burst=21, fire_delay=40, burst_accuracy=null, dispersion=null, automatic = 0.7),
+		list(mode_name="STANDARD", burst=16, fire_delay=30, burst_accuracy=null, dispersion=null, automatic = 0.7),
 	)
 
 /obj/item/gun/projectile/meltagun/New()
 	..()
-	slowdown_per_slot[slot_back] = 0.3
+	slowdown_per_slot[slot_back] = 0.2
 	slowdown_per_slot[slot_wear_suit] = 0.3
-	slowdown_per_slot[slot_r_hand] = 0.5
-	slowdown_per_slot[slot_l_hand] = 0.5
+	slowdown_per_slot[slot_belt] = 0.3
+	slowdown_per_slot[slot_r_hand] = 0.46
+	slowdown_per_slot[slot_l_hand] = 0.46

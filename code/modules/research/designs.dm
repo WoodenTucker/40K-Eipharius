@@ -2802,7 +2802,7 @@ CIRCUITS BELOW
 	id = "brmkp"
 	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 6, TECH_COMBAT = 5)
 	materials = list("diamond" = 6000, "phoron" = 600)
-	build_path = /obj/item/ammo_magazine/bolt_rifle_magazine/astartes
+	build_path = /obj/item/ammo_magazine/bolt_rifle_magazine_astartes
 	sort_string = "ZVBK"
 
 /datum/design/item/lasgunpowerpack

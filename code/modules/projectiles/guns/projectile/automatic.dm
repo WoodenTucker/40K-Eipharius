@@ -27,6 +27,14 @@
 		)
 */
 
+/obj/item/gun/projectile/automatic/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.1
+	slowdown_per_slot[slot_wear_suit] = 0.15
+	slowdown_per_slot[slot_belt] = 0.15
+	slowdown_per_slot[slot_r_hand] = 0.2
+	slowdown_per_slot[slot_l_hand] = 0.2
+
 /obj/item/gun/projectile/automatic/smg
 	name = "template smg"
 	desc = "This shouldnt exist and is bugged or not working. Ahelp immediately."
@@ -66,8 +74,7 @@
 	caliber = ".45"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
-	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
-	move_delay = 2.5
+	fire_sound = 'sound/weapons/gunshot/auto2.ogg'.5
 	accuracy = 0
 	fire_delay = 3
 	sales_price = 40

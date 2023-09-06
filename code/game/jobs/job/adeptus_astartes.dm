@@ -142,7 +142,7 @@
 	suit_store = /obj/item/gun/projectile/boltrifle/bang
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine/astartes = 3,
+	/obj/item/ammo_magazine/bolt_rifle_magazine_astartes = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -217,7 +217,7 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/melee/chain/pcsword = 1,
-	/obj/item/ammo_magazine/bolt_rifle_magazine/astartes = 3,
+	/obj/item/ammo_magazine/bolt_rifle_magazine_astartes = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -308,7 +308,7 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	suit_store = /obj/item/gun/projectile/boltrifle/sally
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine/astartes = 3,
+	/obj/item/ammo_magazine/bolt_rifle_magazine_astartes = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -404,7 +404,7 @@
 	suit_store = /obj/item/gun/projectile/boltrifle
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine/astartes = 3,
+	/obj/item/ammo_magazine/bolt_rifle_magazine_astartes = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,

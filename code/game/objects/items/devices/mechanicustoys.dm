@@ -532,7 +532,6 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	accuracy = 0
 	automatic = 1
 	fire_delay = 8
-	move_delay = 5
 	burst=1
 	magazine_type = /obj/item/ammo_magazine/flamer
 	allowed_magazines = /obj/item/ammo_magazine/flamer
@@ -561,7 +560,6 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	wielded_item_state = "autoshotty" // Do not remove this. We do not have any sprites for Bolters on-mob beyond this, it is perfect.
 	fire_delay = 2
 	burst = 1
-	move_delay = 3
 	automatic = 1
 	firemodes = list()
 	accuracy = 1
@@ -656,7 +654,6 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	w_class = ITEM_SIZE_NORMAL
 	force = 8
 	accuracy = -2
-	move_delay = 2
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
@@ -679,7 +676,6 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	w_class = ITEM_SIZE_HUGE
 	force = 8
 	accuracy = -2
-	move_delay = 2
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmarifle
@@ -701,7 +697,6 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	w_class = ITEM_SIZE_NORMAL
 	force = 8
 	accuracy = 2
-	move_delay = 2
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/neurotoxin
@@ -727,7 +722,6 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	sharp = 1
 	edge = 1
 	accuracy = 1
-	move_delay = 2
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/thallax/lightning

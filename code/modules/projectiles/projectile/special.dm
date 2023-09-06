@@ -33,7 +33,7 @@
 	check_armour = "bullet"
 
 	on_hit(var/atom/target, var/blocked = 0)
-		explosion(target, -1, -1, 1)
+		explosion(target, -1, -1, -1, 0, 0)
 
 /obj/item/projectile/bullet/bpistol 
 	name =".50 bolt" //.50, human sized bolters and bolt pistols
@@ -62,7 +62,7 @@
 	armor_penetration = 25
 
 	on_hit(var/atom/target, var/blocked = 0)
-		explosion(target, -1, -1, 1)
+		explosion(target, -1, -1, -1, 0, 0)
 
 /obj/item/projectile/bullet/bolt/ms
 	fire_sound = 'sound/effects/explosion1.ogg'
@@ -70,7 +70,7 @@
 	armor_penetration = 30
 	
 	on_hit(var/atom/target, var/blocked = 0)
-		explosion(target, -1, -1, 0)
+		explosion(target, -1, -1, -1, 0, 0)
 
 /obj/item/projectile/meteor
 	name = "meteor"
