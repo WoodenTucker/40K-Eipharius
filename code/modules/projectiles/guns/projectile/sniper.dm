@@ -92,7 +92,6 @@
 	one_hand_penalty = 2.1
 	fire_delay = 8
 	accuracy = 1
-	move_delay = 4
 	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 4000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/longlas
@@ -109,10 +108,11 @@
 
 /obj/item/gun/energy/las/lasgun/longlas/New()
 	..()
-	slowdown_per_slot[slot_back] = 0.1
+	slowdown_per_slot[slot_back] = 0.05
 	slowdown_per_slot[slot_wear_suit] = 0.1
-	slowdown_per_slot[slot_r_hand] = 0.3
-	slowdown_per_slot[slot_l_hand] = 0.3
+	slowdown_per_slot[slot_belt] = 0.1
+	slowdown_per_slot[slot_r_hand] = 0.25
+	slowdown_per_slot[slot_l_hand] = 0.25
 
 /obj/item/gun/energy/las/lasgun/longlas/verb/scope()
 	set category = "Object"
@@ -225,7 +225,6 @@
 	caliber = "galvanic"
 	max_shells = 7 //Fits seven rounds in the mag, with a revolving cylinder. No room for extra rounds.
 	str_requirement = 17
-	move_delay = 3
 	one_hand_penalty = 2.2
 	accuracy = 1 //extremely accurate
 	fire_delay = 4.9

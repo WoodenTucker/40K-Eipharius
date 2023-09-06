@@ -28,3 +28,11 @@
 	projectile.throw_at(target, throw_distance, release_force, user)
 	play_fire_sound(user,projectile)
 	return 1
+
+/obj/item/gun/launcher/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.2
+	slowdown_per_slot[slot_wear_suit] = 0.2
+	slowdown_per_slot[slot_belt] = 0.2
+	slowdown_per_slot[slot_r_hand] = 0.5
+	slowdown_per_slot[slot_l_hand] = 0.5

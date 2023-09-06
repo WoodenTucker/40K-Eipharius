@@ -243,6 +243,7 @@
 	/obj/item/handcuffs = 2,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
+	/obj/item/gun/energy/taser = 1,
 	)
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
@@ -267,6 +268,7 @@
 	backpack_contents = list(
 	/obj/item/ammo_magazine/c50/ms = 1,
 	/obj/item/handcuffs = 1,
+	/obj/item/gun/energy/taser = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,
@@ -290,6 +292,7 @@
 	suit_store = null
 	backpack_contents = list(
 	/obj/item/ammo_magazine/c50/ms = 1,
+	/obj/item/gun/energy/taser = 1,
 	/obj/item/handcuffs = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -314,6 +317,7 @@
 	r_pocket = /obj/item/device/flashlight/lantern
 	suit_store = /obj/item/gun/projectile/shotgun/pump/voxlegis
 	backpack_contents = list(
+	/obj/item/gun/energy/taser = 1,
 	/obj/item/handcuffs = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/ammo_box/shotgun = 1,

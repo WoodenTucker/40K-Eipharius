@@ -111,7 +111,7 @@
 	icon_state = "shot" //TODO: would be nice to have it's own icon state
 	range = 10 	//These disappear after a short distance.
 	var/pellets = 4			//number of pellets
-	var/range_step = 2		//projectile will lose a fragment each time it travels this distance. Can be a non-integer.
+	var/range_step = 3		//projectile will lose a fragment each time it travels this distance. Can be a non-integer.
 	var/base_spread = 40	//lower means the pellets spread more across body parts. If zero then this is considered a shrapnel explosion instead of a shrapnel cone
 	var/spread_step = 10	//higher means the pellets spread more across body parts with distance
 	light_power = 9 //No tracers.
@@ -615,11 +615,11 @@
 	damage_type = BURN
 	penetration_modifier = 1
 	armor_penetration = 60
-	damage = 45
+	damage = 40
 	pellets = 1
-	range_step = 3 // stop fucking with my GOT DAMN CODE. DONT TOUCH IT IF YOU DONT KNOW WHAT IT DOES. Next mofucka who breaks mah game is getting perma'd from the Github.
+	range_step = 4 // stop fucking with my GOT DAMN CODE. DONT TOUCH IT IF YOU DONT KNOW WHAT IT DOES. Next mofucka who breaks mah game is getting perma'd from the Github.
 	spread_step = 2
-	range = 12
+	range = 16
 
 /obj/item/projectile/bullet/rifle/radcarbine
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'

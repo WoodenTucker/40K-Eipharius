@@ -72,7 +72,7 @@
 	fire_sound = 'sound/weapons/guns/fire/pain_fire.ogg'
 	mob_hit_sound = list('sound/weapons/tase.ogg')
 	nodamage = TRUE
-	agony = 100
+	agony = 200
 	damage_type = PAIN
 	//Damage will be handled on the MOB side, to prevent window shattering.
 
@@ -237,31 +237,31 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
-	damage = 80
+	damage = 90
 	armor_penetration = 100
 
 	on_hit(var/atom/target, var/blocked = 0)
-		explosion(target, -1, 0, 1)
+		explosion(target, -1, -1, 0, 0, 0)
 
 /obj/item/projectile/energy/pulse/ion
 	name = "ION round"
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
-	damage = 80
+	damage = 90
 	armor_penetration = 100
 
 	on_hit(var/atom/target, var/blocked = 0)
-		explosion(target, -1, 0, 1)
+		explosion(target, -1, -1, 0, 0, 0)
 
 /obj/item/projectile/energy/pulse/plasmarifle
 	name = "plasma round"
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 100
+	damage = 90
 	weaken = 1
-	armor_penetration = 40
+	armor_penetration = 65
 	light_power = 4
 	light_color = "#2132cf"
 
@@ -273,7 +273,7 @@
 	icon_state = "pulse1_bl"
 	damage = 90
 	weaken = 1
-	armor_penetration = 35
+	armor_penetration = 50
 	light_power = 4
 	light_color = "#2132cf"
 
@@ -282,14 +282,14 @@
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 70
+	damage = 90
 	weaken = 1
-	armor_penetration = 45
+	armor_penetration = 50
 	light_power = 4
 	light_color = "#2132cf"
 
 	on_hit(var/atom/target, var/blocked = 0)
-		explosion(target, -1, 0, 1)
+		explosion(target, -1, -1, 0, 0, 0)
 
 /obj/item/projectile/warpboltcrappy
 	name = "Warp Bolt"
