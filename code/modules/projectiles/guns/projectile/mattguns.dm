@@ -1241,11 +1241,19 @@
 	fire_delay = 4
 	burst = 5
 	firemodes = list(
-		list(mode_name="'ORMAL AUTO'", burst=4, fire_delay=4, burst_accuracy=list(-3,-5,-6), dispersion=null, automatic = 0.5),
-		list(mode_name="FULLA AUTO", burst=6, fire_delay=5.5, burst_accuracy=list(-6,-5,-8), dispersion=null, automatic = 0.7),
+		list(mode_name="'ORMAL AUTO'", burst=5, fire_delay=4, burst_accuracy=list(-3,-5,-6), dispersion=null, automatic = 0.5),
+		list(mode_name="FULLA AUTO", burst=7, fire_delay=5.5, burst_accuracy=list(-6,-5,-8), dispersion=null, automatic = 0.7),
 
 	)
 	sales_price = 1
+
+/obj/item/gun/projectile/ork/automatic/shoota/big/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.2
+	slowdown_per_slot[slot_wear_suit] = 0.3
+	slowdown_per_slot[slot_belt] = 0.3
+	slowdown_per_slot[slot_r_hand] = 0.5
+	slowdown_per_slot[slot_l_hand] = 0.5
 
 /obj/item/gun/projectile/ork/automatic/shoota/big/update_icon()
 	..()

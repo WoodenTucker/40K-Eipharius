@@ -16,7 +16,7 @@
 	icon_state = "a15";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "af" = (
 /obj/machinery/light/small/red{
 	dir = 4
@@ -25,7 +25,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "ai" = (
 /obj/effect/floor_decal/turf/tunnelchess,
 /obj/effect/decal/cleanable/blood/gibs/limb,
@@ -126,7 +126,7 @@
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "aF" = (
 /obj/machinery/door/blast/bordergatec/closed{
 	id = "pactgate2";
@@ -146,7 +146,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "aJ" = (
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/tiled{
@@ -200,7 +200,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "aU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/floor_decal/corner/white/diagonal,
@@ -255,7 +255,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "bd" = (
 /obj/machinery/light/small/red{
 	dir = 4
@@ -263,7 +263,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "evil"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "be" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/clothing/under/psysuit{
@@ -296,7 +296,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "bl" = (
 /obj/effect/floor_decal/turf/basalt10,
 /obj/effect/floor_decal/turf/basalt0,
@@ -317,7 +317,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "br" = (
 /obj/machinery/door/airlock/ancient_ship/med{
 	name = "Operation Room"
@@ -326,7 +326,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "bs" = (
 /obj/machinery/door/airlock/arbiter{
 	color = "grey";
@@ -370,7 +370,7 @@
 	icon_state = "f";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "bC" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	icon_state = "02";
@@ -456,7 +456,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "bO" = (
 /obj/item/device/radio/intercom{
 	pixel_y = 32
@@ -488,7 +488,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "bloodf2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "bT" = (
 /obj/structure/closet/secure_closet/security{
 	color = "grey";
@@ -514,7 +514,7 @@
 /obj/machinery/light/small/red,
 /obj/random/projectile,
 /turf/simulated/floor/ship_floor/steel,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "bW" = (
 /obj/structure/curtain/black,
 /turf/simulated/floor/tiled{
@@ -542,21 +542,21 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "cc" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 10;
 	icon = 'icons/map_project/windows.dmi';
 	icon_state = "r_window"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "cd" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 4;
 	icon = 'icons/map_project/windows.dmi';
 	icon_state = "r_window3"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "cf" = (
 /obj/item/reagent_containers/food/drinks/glass2/chaos/slannesh,
 /obj/structure/table/graf/pagan,
@@ -611,7 +611,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "cq" = (
 /obj/structure/window/reinforced{
 	color = "grey";
@@ -664,7 +664,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 8
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "cD" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -673,7 +673,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "cF" = (
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /turf/simulated/floor/tiled{
@@ -747,7 +747,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "cQ" = (
 /obj/machinery/computer/shuttle_control/ferry/cargo,
 /obj/effect/floor_decal/turf/plating,
@@ -788,7 +788,7 @@
 	color = "grey"
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "cV" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/black{
 	dir = 8
@@ -912,14 +912,14 @@
 	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/ship_floor/engines,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "du" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 8;
 	icon = 'icons/map_project/windows.dmi';
 	icon_state = "r_window"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "dx" = (
 /obj/effect/floor_decal/newcorner/trench_flooring{
 	dir = 10
@@ -928,7 +928,7 @@
 /area/cadiaoutpost/new_hive/caves)
 "dA" = (
 /turf/simulated/floor/ship_floor/engines,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "dB" = (
 /obj/effect/water/bottom,
 /obj/effect/water/top,
@@ -957,7 +957,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "dF" = (
 /obj/effect/floor_decal/newcorner/stone,
 /turf/simulated/floor/stone/old4,
@@ -1018,7 +1018,7 @@
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "dO" = (
 /obj/structure/table/steel,
 /obj/machinery/microwave{
@@ -1115,7 +1115,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "evil"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "ef" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 8
@@ -1123,7 +1123,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 4
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "eg" = (
 /obj/structure/table/rack/shelf,
 /obj/random/loot/randomsupply,
@@ -1141,7 +1141,7 @@
 	icon_state = "a17";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "ei" = (
 /obj/structure/table/steel,
 /obj/item/paper/crumpled/bloody{
@@ -1160,7 +1160,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "eq" = (
 /obj/effect/floor_decal/turf/surgery2,
 /obj/machinery/bodyscanner{
@@ -1213,7 +1213,7 @@
 /turf/unsimulated/oldship{
 	icon_state = "rwall5"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "ev" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -1246,12 +1246,12 @@
 	icon_state = "a15";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "ez" = (
 /turf/unsimulated/oldship{
 	icon_state = "rwall11"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "eB" = (
 /obj/structure/closet/crate/solar,
 /obj/random/loot/randomsupply,
@@ -1265,14 +1265,14 @@
 /turf/unsimulated/oldship{
 	icon_state = "rwall15"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "eE" = (
 /obj/machinery/light/small/red,
 /turf/simulated/floor/ship_floor/steel{
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "eF" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/door/unpowered/inn{
@@ -1348,7 +1348,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "eN" = (
 /turf/simulated/wall/ancient{
 	color = "grey";
@@ -1420,7 +1420,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "fc" = (
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "fe" = (
 /obj/structure/table/rack/shelf{
 	color = "grey"
@@ -1457,7 +1457,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "fi" = (
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled/dark{
@@ -1511,7 +1511,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 6
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "fr" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/card/id/silver{
@@ -1537,7 +1537,7 @@
 /obj/structure/bed/chair/comfy/captain,
 /obj/effect/floor_decal/spline/plain,
 /turf/simulated/floor/fancyfloor/carpet/blue,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "fB" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -1625,7 +1625,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "fM" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -1660,7 +1660,7 @@
 	},
 /obj/effect/floor_decal/newcorner/blue/solid,
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "fP" = (
 /obj/effect/floor_decal/newcorner/red/corner{
 	dir = 4
@@ -1669,7 +1669,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "fQ" = (
 /obj/structure/table/standard,
 /obj/machinery/microwave,
@@ -1733,7 +1733,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "fW" = (
 /obj/structure/sign/alienbooba,
 /obj/item/pyre/self_lit{
@@ -1803,7 +1803,7 @@
 	icon_state = "a3";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "gi" = (
 /obj/effect/floor_decal/corner/white/diagonal,
 /obj/random/canned_food,
@@ -1812,7 +1812,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "gj" = (
 /turf/simulated/wall/concrete{
 	integrity = 1500
@@ -1835,7 +1835,7 @@
 	icon = 'icons/map_project/windows.dmi';
 	icon_state = "r_window"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "gm" = (
 /obj/effect/floor_decal/turf/necro1,
 /turf/simulated/floor/tiled/dark{
@@ -1852,7 +1852,7 @@
 "go" = (
 /obj/machinery/light/small/red,
 /turf/simulated/floor/ship_floor/engines,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "gr" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -1894,7 +1894,7 @@
 "gy" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "gA" = (
 /obj/machinery/door/unpowered/inn{
 	color = "grey";
@@ -1958,7 +1958,7 @@
 	icon_state = "b4";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "gP" = (
 /obj/machinery/door/airlock/ancient_ship/maint{
 	name = "Cargo Break Room"
@@ -1967,13 +1967,13 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "gR" = (
 /turf/simulated/floor/ship_floor/steel{
 	icon_state = "a3";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "gT" = (
 /obj/effect/floor_decal/turf/bar3,
 /obj/machinery/light/small/red{
@@ -1988,7 +1988,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "gU" = (
 /obj/item/material/shard{
 	color = "grey";
@@ -2065,7 +2065,7 @@
 	icon_state = "arm2"
 	},
 /turf/simulated/floor/ship_floor/steel,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "hn" = (
 /obj/structure/sewers/wallhole,
 /turf/simulated/wall/ancient{
@@ -2086,7 +2086,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "hq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
@@ -2114,7 +2114,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "ht" = (
 /obj/machinery/atmospherics/unary/freezer,
 /turf/simulated/floor/tiled{
@@ -2129,7 +2129,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "evil"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "hw" = (
 /obj/structure/closet/crate{
 	color = "grey"
@@ -2149,7 +2149,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "hA" = (
 /turf/simulated/shuttle/wall/corner/dark/nw,
 /area/cadiaoutpost/oa/caves/dark)
@@ -2220,7 +2220,7 @@
 	icon_state = "v";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "hR" = (
 /obj/structure/closet/crate/bin,
 /obj/random/maintenance,
@@ -2248,7 +2248,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "ia" = (
 /obj/machinery/light/small/red{
 	dir = 1
@@ -2257,7 +2257,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "ic" = (
 /turf/simulated/floor/carpet/blue,
 /area/cadiaoutpost/oa/caves/undercity)
@@ -2269,7 +2269,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "ih" = (
 /obj/item/device/cassette/orks1,
 /turf/simulated/floor/stone,
@@ -2328,14 +2328,14 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "it" = (
 /obj/machinery/light/small/red,
 /turf/simulated/floor/ship_floor/steel{
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "iu" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/door/blast/bordergatel{
@@ -2409,7 +2409,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 5
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "iH" = (
 /obj/effect/floor_decal/newcorner/caveramp{
 	dir = 4
@@ -2451,7 +2451,7 @@
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "iO" = (
 /obj/machinery/shower{
 	icon_state = "shower";
@@ -2489,7 +2489,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "iQ" = (
 /obj/structure/table/rack/dark,
 /obj/machinery/light/small{
@@ -2525,7 +2525,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "evil"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "iV" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
@@ -2545,7 +2545,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "iZ" = (
 /obj/effect/decal/dead,
 /obj/random/loot/badweaponlas,
@@ -2562,7 +2562,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "jb" = (
 /obj/effect/floor_decal/newcorner/rails{
 	dir = 4
@@ -2603,7 +2603,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "jh" = (
 /obj/machinery/light/purple{
 	dir = 8
@@ -2663,7 +2663,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "jn" = (
 /obj/structure/reagent_dispensers/fueltank{
 	color = "grey"
@@ -2792,7 +2792,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "jL" = (
 /obj/effect/floor_decal/turf/sigil{
 	icon_state = "SE"
@@ -2804,14 +2804,14 @@
 /turf/simulated/floor/grass{
 	icon_state = "bloodf2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "jM" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 4;
 	icon = 'icons/map_project/windows.dmi';
 	icon_state = "r_window"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "jN" = (
 /turf/simulated/wall,
 /area/cadiaoutpost/oa/caves/dark)
@@ -2821,7 +2821,7 @@
 	icon = 'icons/map_project/windows.dmi';
 	icon_state = "r_window"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "jP" = (
 /turf/simulated/floor/tiled{
 	color = "grey";
@@ -2891,7 +2891,7 @@
 	color = "black"
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "kg" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 1
@@ -2916,7 +2916,7 @@
 	icon_state = "f";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "ki" = (
 /obj/machinery/computer/cryopod,
 /turf/simulated/wall,
@@ -2948,7 +2948,7 @@
 	icon_state = "a15";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "kp" = (
 /obj/effect/floor_decal/turf/necro1,
 /obj/necrofleshmouth,
@@ -2964,7 +2964,7 @@
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "kr" = (
 /obj/effect/floor_decal/turf/surgery2,
 /obj/structure/bed/roller{
@@ -2994,7 +2994,7 @@
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 1
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "kz" = (
 /obj/machinery/door/unpowered/inn{
 	name = "Bathroom"
@@ -3051,7 +3051,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 9
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "kI" = (
 /obj/structure/table/rack/dark,
 /obj/item/reagent_containers/chem_disp_cartridge/tonic,
@@ -3116,7 +3116,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "kS" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/light{
@@ -3164,7 +3164,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "lc" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -3190,7 +3190,7 @@
 /obj/random/loot/randomlasammo,
 /obj/random/energy,
 /turf/simulated/floor/ship_floor/steel,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "le" = (
 /obj/structure/closet/secure_closet/hydroponics{
 	color = "grey"
@@ -3208,7 +3208,7 @@
 	icon_state = "c";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "lh" = (
 /obj/machinery/light_switch{
 	pixel_x = -25
@@ -3337,7 +3337,7 @@
 "ly" = (
 /obj/machinery/light/small/red,
 /turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "lz" = (
 /obj/effect/gibspawner/human,
 /turf/simulated/floor/tiled{
@@ -3432,7 +3432,7 @@
 	icon_state = "c";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "lO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -3462,7 +3462,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "lT" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/random/trash,
@@ -3534,7 +3534,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "md" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 8
@@ -3543,7 +3543,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "me" = (
 /obj/effect/floor_decal/newcorner/trench_flooring{
 	dir = 1
@@ -3575,7 +3575,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "mj" = (
 /obj/machinery/computer/shuttle_control/ferry/bloodpact,
 /turf/simulated/floor,
@@ -3654,7 +3654,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "mp" = (
 /obj/structure/closet/crate/uranium,
 /turf/simulated/floor/tiled,
@@ -3671,7 +3671,7 @@
 	icon_state = "f";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "mu" = (
 /obj/structure/curtain/open/shower{
 	icon_state = "closed"
@@ -3680,7 +3680,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "mA" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/mortar_shell/frag,
@@ -3739,7 +3739,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "mJ" = (
 /obj/effect/floor_decal/turf/plate,
 /obj/structure/closet/crate{
@@ -3813,7 +3813,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 8
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "mV" = (
 /obj/item/paper_bin{
 	pixel_y = 8
@@ -3829,7 +3829,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "mY" = (
 /obj/structure/railing{
 	dir = 8
@@ -3884,7 +3884,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "nj" = (
 /obj/structure/torchwall{
 	dir = 8;
@@ -3903,7 +3903,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "nl" = (
 /obj/structure/sign/minesign{
 	pixel_y = 32
@@ -3926,7 +3926,7 @@
 	icon_state = "f";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "nw" = (
 /obj/item/reagent_containers/glass/bottle/panacea,
 /obj/structure/table/graf/wood_office_table{
@@ -3937,7 +3937,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "nx" = (
 /obj/machinery/vending/dinnerware{
 	color = "grey"
@@ -4001,14 +4001,14 @@
 /turf/simulated/floor/grass{
 	icon_state = "bloodf2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "nC" = (
 /obj/structure/closet/crate/secure/weapon,
 /obj/random/loot/goodweapon,
 /turf/simulated/floor/ship_floor/engines{
 	dir = 9
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "nD" = (
 /obj/effect/floor_decal/turf/sigil{
 	icon_state = "W"
@@ -4019,17 +4019,17 @@
 /turf/simulated/floor/grass{
 	icon_state = "bloodf2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "nE" = (
 /obj/effect/floor_decal/newcorner/plating,
 /turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "nF" = (
 /obj/effect/floor_decal/newcorner/blue{
 	dir = 8
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "nH" = (
 /obj/machinery/door/blast/regular{
 	dir = 4;
@@ -4041,13 +4041,13 @@
 	icon = 'icons/map_project/windows.dmi';
 	icon_state = "r_window"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "nI" = (
 /obj/structure/shipdecor/warp,
 /turf/simulated/floor/grass{
 	icon_state = "bloodf2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "nJ" = (
 /obj/machinery/light_switch{
 	pixel_x = 28
@@ -4092,7 +4092,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "nP" = (
 /obj/structure/cult/interdictionlensinactive{
 	color = "grey";
@@ -4105,7 +4105,7 @@
 	icon_state = "f";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "nT" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/door/airlock/glass_arbiter{
@@ -4168,7 +4168,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 8
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "of" = (
 /obj/structure/undies_wardrobe{
 	color = "grey"
@@ -4179,7 +4179,7 @@
 /turf/unsimulated/oldship{
 	icon_state = "rwallA"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "oh" = (
 /obj/effect/floor_decal/turf/basalt9,
 /turf/simulated/floor/dirty/indestructable/mud,
@@ -4274,7 +4274,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "ov" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/door/airlock/glass_cone{
@@ -4312,7 +4312,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "evil"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "oE" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/woodentable{
@@ -4329,7 +4329,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "oH" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk{
@@ -4382,7 +4382,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "oQ" = (
 /obj/structure/stairs/south,
 /turf/simulated/floor/stone/old4,
@@ -4459,7 +4459,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "oZ" = (
 /obj/structure/closet/hive/metal{
 	anchored = 1
@@ -4468,7 +4468,7 @@
 	icon_state = "a3";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "pb" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/woodentable{
@@ -4509,7 +4509,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 4
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "pl" = (
 /obj/machinery/door/blast/regular{
 	dir = 4;
@@ -4521,7 +4521,7 @@
 	icon = 'icons/map_project/windows.dmi';
 	icon_state = "r_window"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "pn" = (
 /obj/machinery/atmospherics/unary/cryo_cell{
 	color = "grey"
@@ -4539,7 +4539,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "pq" = (
 /obj/effect/floor_decal/turf/bar3,
 /obj/structure/sign/ship/blood_signs{
@@ -4550,7 +4550,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "pr" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	icon_state = "02";
@@ -4563,7 +4563,7 @@
 	icon_state = "c";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "pw" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/structure/shipdecor{
@@ -4573,7 +4573,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "pz" = (
 /turf/simulated/wall/r_wall,
 /area/cadiaoutpost/oa/caves/dark)
@@ -4599,7 +4599,7 @@
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 10
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "pF" = (
 /obj/structure/closet/crate,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -4634,7 +4634,7 @@
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "pK" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/barbwire{
@@ -4652,7 +4652,7 @@
 	icon_state = "a3";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "pM" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /obj/machinery/light{
@@ -4674,7 +4674,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "pO" = (
 /obj/item/pyre/self_lit{
 	invisibility = 100;
@@ -4690,7 +4690,7 @@
 /obj/structure/table/steel_reinforced,
 /obj/random/loot/heavymelee,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "pS" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	icon_state = "02";
@@ -4727,7 +4727,7 @@
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 9
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "pY" = (
 /obj/structure/table/rack/shelf,
 /obj/item/reagent_containers/food/snacks/soylentgreen{
@@ -4756,7 +4756,7 @@
 /turf/unsimulated/oldship{
 	icon_state = "rwall10"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "qf" = (
 /obj/item/melee/sword/combat_knife,
 /obj/item/retractor,
@@ -4771,7 +4771,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "ql" = (
 /obj/structure/sign/ship{
 	icon_state = "tncD";
@@ -4785,7 +4785,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "qm" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -4855,7 +4855,7 @@
 	icon_state = "a15";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "qN" = (
 /obj/structure/kitchenspike,
 /obj/effect/decal/cleanable/blood,
@@ -4887,7 +4887,7 @@
 	icon_state = "f";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "qU" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -4954,7 +4954,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "bloodf2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "rh" = (
 /obj/structure/sign/ship/blood_signs{
 	icon_state = "graffiti3"
@@ -4963,7 +4963,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "rj" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -4980,7 +4980,7 @@
 "rn" = (
 /obj/effect/floor_decal/newcorner/plating/corner,
 /turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "ro" = (
 /obj/machinery/light/small/red{
 	dir = 1;
@@ -4990,7 +4990,7 @@
 	icon_state = "v";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "rp" = (
 /obj/effect/water/bottom,
 /obj/effect/water/top,
@@ -5004,17 +5004,17 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 10
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "rr" = (
 /turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "rs" = (
 /obj/structure/table/rack/dark,
 /obj/random/exploration,
 /turf/simulated/floor/ship_floor/engines{
 	dir = 4
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "rv" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/crate,
@@ -5066,7 +5066,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "rD" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/window/reinforced{
@@ -5104,7 +5104,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 6
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "rJ" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	dir = 9
@@ -5119,7 +5119,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "rP" = (
 /obj/machinery/button/remote/blast_door/lever{
 	id = "armorypact";
@@ -5144,7 +5144,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "rW" = (
 /obj/structure/shipdecor{
 	icon_state = "off"
@@ -5153,7 +5153,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "rX" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/reagent_containers/pill/methylphenidate,
@@ -5177,7 +5177,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "sa" = (
 /turf/simulated/floor/ship_floor/ramp,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "sc" = (
 /obj/item/archaeological_find/remains/xeno{
 	color = "grey"
@@ -5207,7 +5207,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "si" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -5229,14 +5229,14 @@
 	icon_state = "wood_1tileendtable"
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "sm" = (
 /obj/structure/table/rack/dark,
 /obj/random/material,
 /turf/simulated/floor/ship_floor/engines{
 	dir = 6
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "so" = (
 /obj/effect/water/top,
 /obj/effect/water/bottom,
@@ -5281,7 +5281,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 8
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "st" = (
 /obj/effect/floor_decal/newcorner/rails{
 	dir = 9
@@ -5301,7 +5301,7 @@
 	icon = 'icons/map_project/windows.dmi';
 	icon_state = "r_window"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "sz" = (
 /obj/effect/decal/cleanable/blood{
 	color = "black"
@@ -5309,7 +5309,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "bloodf2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "sA" = (
 /obj/structure/torchwall/service{
 	dir = 4;
@@ -5334,7 +5334,7 @@
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 5
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "sG" = (
 /obj/structure/closet/cabinet,
 /obj/item/storage/secure/briefcase,
@@ -5352,7 +5352,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "sI" = (
 /obj/structure/sewers/pipe,
 /turf/unsimulated/wall/cult,
@@ -5378,7 +5378,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 8
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "sN" = (
 /obj/effect/floor_decal/industrial/warning_red{
 	dir = 8
@@ -5387,7 +5387,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "sP" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/bed/chair/wood{
@@ -5410,7 +5410,7 @@
 	icon_state = "mirror_broke"
 	},
 /turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "sR" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -5420,7 +5420,7 @@
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "sS" = (
 /obj/structure/table/standard,
 /obj/effect/floor_decal/corner/red/diagonal,
@@ -5473,7 +5473,7 @@
 	pixel_x = -32
 	},
 /turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "td" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/cell/lasgun/hotshot,
@@ -5510,7 +5510,7 @@
 /obj/effect/floor_decal/newcorner/blue,
 /obj/item/remains/human,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "ti" = (
 /obj/structure/closet/crate{
 	color = "grey"
@@ -5533,7 +5533,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "bloodf2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "tk" = (
 /obj/item/pyre/self_lit{
 	invisibility = 100;
@@ -5557,7 +5557,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "tn" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/woodentable{
@@ -5582,7 +5582,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "tq" = (
 /obj/machinery/light/small/red{
 	dir = 1;
@@ -5592,7 +5592,7 @@
 	icon_state = "c";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "tu" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -5608,7 +5608,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 10
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "tw" = (
 /obj/item/archaeological_find/remains/xeno{
 	color = "grey"
@@ -5655,7 +5655,7 @@
 	icon_state = "a15";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "tE" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -5760,7 +5760,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "bloodf2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "tR" = (
 /turf/simulated/wall{
 	integrity = 6500
@@ -5798,7 +5798,7 @@
 	icon_state = "c";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "ua" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/item/book/manual{
@@ -5856,7 +5856,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "ui" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 8
@@ -5875,7 +5875,7 @@
 /obj/structure/closet/hive/fancy,
 /obj/random/loot/goodweapon,
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "ul" = (
 /obj/machinery/atmospherics/unary/engine{
 	dir = 4;
@@ -5893,7 +5893,7 @@
 /obj/structure/sign/ship/blood_signs,
 /obj/machinery/light/red,
 /turf/simulated/floor/ship_floor/engines,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "un" = (
 /obj/structure/sign/ship/blood_signs{
 	icon_state = "graffiti3";
@@ -5904,7 +5904,7 @@
 	color = "black"
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "uo" = (
 /obj/machinery/bluespacerelay{
 	color = "grey";
@@ -5960,7 +5960,7 @@
 "ut" = (
 /obj/effect/floor_decal/newcorner/blue/corner,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "uu" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/machinery/door/unpowered/inn{
@@ -5990,7 +5990,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "uy" = (
 /obj/machinery/atmospherics/unary/heater,
 /turf/simulated/floor/seolite,
@@ -6005,7 +6005,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "uC" = (
 /obj/effect/floor_decal/newcorner/trench_flooring{
 	dir = 1
@@ -6040,7 +6040,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "uG" = (
 /obj/effect/floor_decal/turf/rectangles/two,
 /obj/machinery/door/unpowered/inn{
@@ -6084,7 +6084,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "uQ" = (
 /obj/item/humanskin,
 /obj/item/reagent_containers/food/snacks/meat/human{
@@ -6094,12 +6094,12 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "uS" = (
 /obj/structure/table/rack/dark,
 /obj/item/ammo_magazine/handful/shotgun/slug_handful,
 /turf/simulated/floor/ship_floor/steel,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "uT" = (
 /obj/structure/toilet{
 	icon_state = "toilet00";
@@ -6128,7 +6128,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "uV" = (
 /obj/structure/bookcase,
 /turf/simulated/floor/seolite,
@@ -6142,7 +6142,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "va" = (
 /obj/effect/floor_decal/turf/tunnelchess,
 /obj/structure/table/rack/shelf{
@@ -6168,7 +6168,7 @@
 /obj/item/storage/fancy/cigarettes,
 /obj/structure/table/graf/polished_table,
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "vg" = (
 /obj/structure/iv_drip,
 /obj/effect/floor_decal/turf/surgery2,
@@ -6180,7 +6180,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "bloodf2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "vk" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -6198,7 +6198,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "vn" = (
 /obj/item/landmine,
 /turf/simulated/floor/tiled{
@@ -6250,7 +6250,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "vu" = (
 /obj/structure/table/steel,
 /obj/item/clothing/accessory/badge/holo{
@@ -6297,7 +6297,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "vG" = (
 /obj/effect/water/bottom{
 	color = "purple"
@@ -6319,7 +6319,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "vS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -6369,7 +6369,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "bloodf2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "wj" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -6395,7 +6395,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "wl" = (
 /obj/structure/grille,
 /obj/machinery/door/blast/regular{
@@ -6432,7 +6432,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "wp" = (
 /obj/machinery/conveyor{
 	dir = 6
@@ -6512,7 +6512,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "wB" = (
 /obj/machinery/light/small/red{
 	dir = 4
@@ -6524,7 +6524,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "wC" = (
 /obj/random/trash,
 /obj/random/junk,
@@ -6574,7 +6574,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "wT" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/light/small,
@@ -6597,7 +6597,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "wY" = (
 /obj/effect/floor_decal/spline/fancy/wood/corner{
 	dir = 1
@@ -6605,7 +6605,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 10
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "wZ" = (
 /obj/machinery/door/airlock/arbiter{
 	color = "grey";
@@ -6654,7 +6654,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "xl" = (
 /obj/effect/floor_decal/newcorner/rails{
 	dir = 10
@@ -6675,7 +6675,7 @@
 /turf/unsimulated/oldship{
 	icon_state = "rwall4"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "xu" = (
 /obj/effect/floor_decal/spline/fancy/wood/corner{
 	dir = 8
@@ -6683,7 +6683,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 5
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "xv" = (
 /obj/structure/closet/crate{
 	color = "grey"
@@ -6706,7 +6706,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 10
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "xz" = (
 /obj/structure/table/rack/dark,
 /obj/item/clothing/suit/armor/seolsuit,
@@ -6754,7 +6754,7 @@
 	icon_state = "b1";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "xK" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/door/airlock/phoron{
@@ -6775,7 +6775,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "xR" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/decal/cleanable/blood,
@@ -6858,7 +6858,7 @@
 	icon_state = "c";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "yh" = (
 /obj/structure/bed/chair,
 /turf/simulated/floor/tiled{
@@ -6980,7 +6980,7 @@
 "yB" = (
 /obj/effect/floor_decal/turf/armory,
 /turf/simulated/floor/ship_floor/steel,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "yC" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/light{
@@ -6999,7 +6999,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 6
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "yE" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /obj/machinery/crystal,
@@ -7042,7 +7042,7 @@
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "yL" = (
 /obj/structure/bed/chair/wood{
 	dir = 4;
@@ -7129,7 +7129,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 6
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "yY" = (
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
@@ -7150,12 +7150,12 @@
 /turf/simulated/floor/grass{
 	icon_state = "bloodf2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "zd" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/item/remains/human,
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "zf" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -7201,7 +7201,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "evil"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "zl" = (
 /obj/effect/decal/cleanable/blood/gibs,
 /obj/structure/closet/crate,
@@ -7225,7 +7225,7 @@
 "zq" = (
 /obj/item/remains/human,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "zr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -7351,7 +7351,7 @@
 	icon_state = "arm3"
 	},
 /turf/simulated/floor/ship_floor/steel,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "zP" = (
 /obj/machinery/cooker/grill{
 	color = "grey"
@@ -7369,7 +7369,7 @@
 	},
 /obj/effect/floor_decal/newcorner/blue/solid,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "zR" = (
 /obj/machinery/light/small/red,
 /obj/structure/table/steel_reinforced,
@@ -7377,7 +7377,7 @@
 	icon_state = "v";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "zS" = (
 /obj/structure/shipdecor{
 	icon_state = "off"
@@ -7386,7 +7386,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "zU" = (
 /obj/structure/cult/talisman{
 	desc = "A dusty table constructed from stone - handcut and covered in runic scripture.";
@@ -7443,7 +7443,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Aa" = (
 /obj/item/remains/robot{
 	color = "grey"
@@ -7459,7 +7459,7 @@
 	icon_state = "c";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Ac" = (
 /obj/machinery/light/red{
 	dir = 1
@@ -7469,7 +7469,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Af" = (
 /obj/structure/bed/chair/wood{
 	dir = 1;
@@ -7524,7 +7524,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 5
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Aq" = (
 /obj/effect/floor_decal/turf/surgery2,
 /obj/structure/bed/roller{
@@ -7550,7 +7550,7 @@
 	pixel_x = 9
 	},
 /turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Av" = (
 /obj/machinery/light/small/red{
 	dir = 4
@@ -7560,7 +7560,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Aw" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	dir = 1
@@ -7596,7 +7596,7 @@
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 6
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "AD" = (
 /obj/effect/floor_decal/newcorner/shaft{
 	dir = 1
@@ -7610,7 +7610,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 9
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "AG" = (
 /obj/machinery/light,
 /turf/simulated/floor/tiled{
@@ -7683,14 +7683,14 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 4
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "AS" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 5;
 	icon = 'icons/map_project/windows.dmi';
 	icon_state = "r_window"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "AT" = (
 /obj/effect/water/bottom{
 	color = "purple"
@@ -7705,7 +7705,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "evil"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "AX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -7769,7 +7769,7 @@
 	icon_state = "a17";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Bh" = (
 /obj/structure/barbwire{
 	color = "grey"
@@ -7820,6 +7820,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"Bm" = (
+/turf/simulated/floor/grass{
+	icon_state = "evil"
+	},
+/area/cadiaoutpost/oa/caves/dark)
 "Bn" = (
 /obj/structure/table/rack/dark,
 /obj/item/weldingtool,
@@ -7833,7 +7838,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 8
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Bq" = (
 /obj/structure/bed,
 /obj/item/bedsheet/blue,
@@ -7841,7 +7846,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Bu" = (
 /obj/structure/bed,
 /obj/item/material/knife/ritual,
@@ -7947,7 +7952,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 10
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "BM" = (
 /obj/structure/closet/hive/metal{
 	anchored = 1
@@ -7970,7 +7975,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "BN" = (
 /obj/structure/bed/chair/comfy/captain{
 	desc = "Comfy chair for luxury and piloting.";
@@ -7983,7 +7988,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "BQ" = (
 /turf/simulated/floor/tiled{
 	color = "gray"
@@ -8019,7 +8024,7 @@
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "BX" = (
 /obj/effect/floor_decal/turf/basalt9,
 /obj/effect/decal/remains,
@@ -8041,7 +8046,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Cb" = (
 /obj/structure/bed/chair/bogani{
 	desc = "A curved chair that offers an odd but still-comfortable resting spot for its occupant.";
@@ -8058,7 +8063,7 @@
 	icon_state = "f";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Cf" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -8082,7 +8087,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Ci" = (
 /obj/structure/shuttle/window{
 	color = "grey"
@@ -8100,7 +8105,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Ck" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 4
@@ -8146,7 +8151,7 @@
 	icon_state = "c";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Cq" = (
 /obj/structure/barbwire{
 	color = "grey"
@@ -8165,7 +8170,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "bloodf2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Ct" = (
 /obj/item/soap/slannesh,
 /turf/simulated/floor/dirty/tough,
@@ -8178,7 +8183,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "evil"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Cw" = (
 /obj/machinery/kaos/cargo_machine{
 	color = "grey";
@@ -8220,7 +8225,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "CD" = (
 /obj/structure/shipdecor{
 	icon_state = "reading"
@@ -8229,7 +8234,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "CE" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -8268,7 +8273,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "CI" = (
 /obj/structure/sign/neon/cargo{
 	pixel_x = -32
@@ -8277,7 +8282,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "CK" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1;
@@ -8287,7 +8292,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "CL" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -8296,7 +8301,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "CN" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 4
@@ -8340,7 +8345,7 @@
 	icon_state = "b1";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "CQ" = (
 /obj/structure/shipdecor{
 	icon_state = "1,011"
@@ -8349,7 +8354,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "CR" = (
 /obj/structure/shipdecor{
 	icon_state = "negative"
@@ -8359,7 +8364,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "CS" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/vending/security,
@@ -8389,7 +8394,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "CW" = (
 /obj/structure/table/graf/pagan,
 /obj/structure/sign/chaos{
@@ -8453,7 +8458,7 @@
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Dd" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/rack/dark,
@@ -8469,7 +8474,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Dh" = (
 /obj/effect/decal/cleanable/blood/gibs/body,
 /mob/living/simple_animal/hostile/smalldemon/chaos,
@@ -8509,7 +8514,7 @@
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Dt" = (
 /turf/simulated/floor/grass{
 	icon_state = "evil"
@@ -8538,12 +8543,12 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Dy" = (
 /turf/unsimulated/oldship{
 	icon_state = "rwall9"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Dz" = (
 /obj/structure/table/rack/dark,
 /obj/item/card/id/dog_tag/guardsman,
@@ -8574,7 +8579,7 @@
 	icon = 'icons/map_project/windows.dmi';
 	icon_state = "r_window2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "DD" = (
 /obj/machinery/light/small{
 	icon_state = "bulb1";
@@ -8630,7 +8635,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/ship_floor/steel,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "DM" = (
 /obj/item/bedsheet/blue,
 /obj/structure/bed,
@@ -8638,7 +8643,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "DN" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/light,
@@ -8681,7 +8686,7 @@
 	icon_state = "a3";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "DV" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/rack/dark,
@@ -8707,7 +8712,7 @@
 /obj/structure/table/rack/dark,
 /obj/item/gun/energy/taser/carbine,
 /turf/simulated/floor/ship_floor/steel,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Ea" = (
 /obj/effect/decal/cleanable/blood/gibs/xeno/body,
 /turf/simulated/floor/stone,
@@ -8841,14 +8846,14 @@
 /obj/machinery/light/red,
 /obj/item/remains/human,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Ev" = (
 /obj/structure/closet/crate/secure/large,
 /obj/random/exploration,
 /turf/simulated/floor/ship_floor/engines{
 	dir = 9
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Ew" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -8932,13 +8937,13 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "EI" = (
 /turf/simulated/floor/ship_floor/steel{
 	icon_state = "a17";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "EJ" = (
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /turf/simulated/floor/tiled,
@@ -8984,7 +8989,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "ET" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -9028,7 +9033,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 10
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "EY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -9074,7 +9079,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "evil"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Fg" = (
 /obj/machinery/door/airlock/glass_arbiter{
 	color = "grey"
@@ -9163,7 +9168,7 @@
 	icon_state = "v";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Fz" = (
 /obj/item/newore/ironore,
 /turf/unsimulated/miningtime,
@@ -9266,7 +9271,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "FU" = (
 /obj/structure/grille,
 /obj/structure/grille,
@@ -9297,7 +9302,7 @@
 	icon_state = "a15";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "FX" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 1
@@ -9358,7 +9363,7 @@
 /turf/unsimulated/oldship{
 	icon_state = "rwall14"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Gi" = (
 /obj/effect/floor_decal/newcorner/mine_walls,
 /turf/unsimulated/mineral,
@@ -9385,10 +9390,10 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Gn" = (
 /turf/unsimulated/oldship,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Go" = (
 /obj/structure/stairs/south,
 /turf/simulated/floor/tiled/dark{
@@ -9403,7 +9408,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Gq" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/woodentable{
@@ -9451,14 +9456,14 @@
 	icon = 'icons/map_project/windows.dmi';
 	icon_state = "r_window2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Gv" = (
 /obj/machinery/door/blast/bordergatec,
 /turf/simulated/floor/ship_floor/steel{
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Gw" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 4
@@ -9467,7 +9472,7 @@
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Gy" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/vending/props{
@@ -9525,7 +9530,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "GN" = (
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
@@ -9540,7 +9545,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "GP" = (
 /obj/item/archaeological_find/remains/xeno{
 	color = "grey"
@@ -9556,7 +9561,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "evil"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "GV" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/woodentable{
@@ -9593,7 +9598,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Ha" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/railing{
@@ -9629,7 +9634,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Hg" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/paper_bin{
@@ -9642,7 +9647,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Hh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -9676,7 +9681,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Hm" = (
 /obj/machinery/alarm{
 	dir = 8;
@@ -9693,13 +9698,13 @@
 /turf/simulated/floor/grass{
 	icon_state = "evil"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Hp" = (
 /obj/structure/table/rack/dark,
 /obj/random/loot/goodweapon,
 /obj/machinery/light/small/red,
 /turf/simulated/floor/ship_floor/steel,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Hr" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -9733,7 +9738,7 @@
 /turf/unsimulated/oldship{
 	icon_state = "rwall6"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Hz" = (
 /obj/machinery/optable,
 /obj/effect/decal/cleanable/blood,
@@ -9744,7 +9749,7 @@
 "HA" = (
 /obj/machinery/light/red,
 /turf/simulated/floor/ship_floor/engines,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "HB" = (
 /obj/item/ammo_magazine/ork/shoota,
 /turf/simulated/floor/stone,
@@ -9753,7 +9758,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 5
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "HI" = (
 /obj/item/melee/chain/mercycs,
 /obj/item/clothing/glasses/cadiangoggles/elite,
@@ -9828,7 +9833,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "HU" = (
 /obj/structure/window/reinforced{
 	color = "grey";
@@ -9847,7 +9852,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 4
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "HX" = (
 /obj/structure/closet/wardrobe/grey{
 	color = "grey"
@@ -9935,7 +9940,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 1
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Io" = (
 /obj/item/campfire/self_lit{
 	desc = "A campfire.";
@@ -9954,7 +9959,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Iq" = (
 /obj/structure/shipdecor{
 	icon_state = "bluedeath"
@@ -9963,7 +9968,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Ir" = (
 /obj/structure/closet/hive/metal{
 	anchored = 1
@@ -9987,7 +9992,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Is" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -10015,7 +10020,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Iu" = (
 /obj/structure/closet/crate{
 	color = "grey"
@@ -10033,7 +10038,7 @@
 	icon_state = "graffiti2"
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Iy" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /obj/machinery/logcutter,
@@ -10048,7 +10053,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "IA" = (
 /obj/item/reagent_containers/food/drinks/bottle/caddis/supreme{
 	pixel_x = 16
@@ -10065,7 +10070,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "IB" = (
 /obj/structure/closet/crate{
 	color = "grey"
@@ -10100,7 +10105,7 @@
 "ID" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "IE" = (
 /obj/machinery/door/blast/shutters,
 /turf/simulated/floor/plating{
@@ -10132,7 +10137,7 @@
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "II" = (
 /obj/machinery/telecomms/hub{
 	color = "grey"
@@ -10148,7 +10153,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "bloodf2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "IM" = (
 /obj/structure/table/steel,
 /obj/item/reagent_containers/food/drinks/cans/tonic{
@@ -10169,7 +10174,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "bloodf2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "IO" = (
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/seolite,
@@ -10201,7 +10206,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "IU" = (
 /obj/effect/floor_decal/turf/surgery2,
 /turf/simulated/floor/plating,
@@ -10213,7 +10218,7 @@
 	},
 /obj/effect/decal/cleanable/blood/gibs/vomit,
 /turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "IY" = (
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/plating{
@@ -10314,7 +10319,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "JA" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -10491,7 +10496,7 @@
 	icon_state = "v";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "JX" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced{
@@ -10604,7 +10609,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 1
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Ko" = (
 /obj/effect/floor_decal/turf/necro1,
 /obj/item/card/id/silver{
@@ -10630,7 +10635,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "evil"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Ku" = (
 /obj/structure/closet/walllocker/emerglocker/north,
 /obj/structure/closet/secure_closet/freezer/fridge,
@@ -10686,7 +10691,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "KC" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/mortar_launcher/chaos,
@@ -10708,7 +10713,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "KE" = (
 /obj/effect/water/top,
 /obj/effect/water/bottom,
@@ -10722,7 +10727,7 @@
 /turf/unsimulated/oldship{
 	icon_state = "rwall2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "KI" = (
 /obj/structure/grille{
 	color = "grey"
@@ -10744,7 +10749,7 @@
 	icon_state = "chair_preview"
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "KM" = (
 /obj/item/archaeological_find/remains/xeno{
 	color = "grey"
@@ -10813,7 +10818,7 @@
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "KY" = (
 /obj/effect/water/top,
 /obj/effect/water/bottom,
@@ -10830,7 +10835,7 @@
 /obj/structure/table/rack/dark,
 /obj/item/gun/launcher/grenade/mezoa,
 /turf/simulated/floor/ship_floor/steel,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Ld" = (
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/new_hive/caves)
@@ -10848,7 +10853,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Ll" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -10863,7 +10868,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Ln" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/paper_bin{
@@ -10877,7 +10882,7 @@
 	icon_state = "a3";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Lo" = (
 /obj/effect/water/top,
 /obj/effect/water/bottom,
@@ -10903,7 +10908,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "evil"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Ls" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -10950,7 +10955,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 9
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "LC" = (
 /obj/machinery/body_scanconsole{
 	color = "grey";
@@ -10959,7 +10964,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "evil"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "LD" = (
 /obj/machinery/atmospherics/unary/vent_scrubber,
 /turf/simulated/floor/seolite,
@@ -11005,7 +11010,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "LJ" = (
 /obj/machinery/atmospherics/pipe/simple/visible/black{
 	dir = 6
@@ -11023,7 +11028,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "LM" = (
 /obj/structure/table/rack/dark,
 /obj/item/newore/gems/ruby,
@@ -11038,7 +11043,7 @@
 /turf/unsimulated/oldship{
 	icon_state = "rwall8"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "LQ" = (
 /obj/structure/sign/ship/blood_signs{
 	icon_state = "graffiti3";
@@ -11048,7 +11053,7 @@
 	color = "black"
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "LS" = (
 /obj/structure/table/rack/dark,
 /obj/random/loot/randomitemtown,
@@ -11117,14 +11122,14 @@
 	dir = 4
 	},
 /turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Me" = (
 /obj/machinery/door/blast/bordergatel,
 /turf/simulated/floor/ship_floor/steel{
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Mf" = (
 /obj/structure/window/reinforced{
 	color = "grey";
@@ -11156,7 +11161,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Mn" = (
 /obj/mecha/combat/deffdread,
 /turf/simulated/floor/stone,
@@ -11197,7 +11202,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Ms" = (
 /obj/structure/table/rack/dark,
 /obj/item/ammo_box/shotgun{
@@ -11215,7 +11220,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/ship_floor/steel,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Mu" = (
 /obj/machinery/vending/coffee{
 	icon_state = "coffe-broken"
@@ -11228,7 +11233,7 @@
 /turf/unsimulated/oldship{
 	icon_state = "rwall8"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "My" = (
 /obj/effect/effect/ion_trails,
 /obj/structure/curtain/black,
@@ -11300,7 +11305,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "ML" = (
 /obj/structure/table/steel_reinforced,
 /obj/random/snack,
@@ -11308,7 +11313,7 @@
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "MN" = (
 /obj/machinery/light{
 	dir = 4
@@ -11364,7 +11369,7 @@
 	icon_state = "v";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Na" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/torchwall{
@@ -11403,7 +11408,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Nd" = (
 /obj/structure/lattice,
 /turf/simulated/floor,
@@ -11418,7 +11423,7 @@
 /turf/unsimulated/oldship{
 	icon_state = "rwallBLINK"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Nh" = (
 /obj/structure/sign/redcross,
 /turf/simulated/wall,
@@ -11451,7 +11456,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Nm" = (
 /obj/machinery/chem_master{
 	color = "grey"
@@ -11470,7 +11475,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 10
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Ny" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -11492,12 +11497,12 @@
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "ND" = (
 /turf/unsimulated/oldship{
 	icon_state = "rwall1"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "NF" = (
 /obj/item/device/boombox,
 /turf/simulated/floor/stone,
@@ -11550,7 +11555,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "NR" = (
 /obj/machinery/igniter{
 	desc = null;
@@ -11569,7 +11574,7 @@
 /turf/unsimulated/oldship{
 	icon_state = "rwall7"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "NV" = (
 /obj/structure/sewers/wallhole,
 /turf/simulated/wall/concrete{
@@ -11634,7 +11639,7 @@
 /obj/random/loot/guardgear,
 /obj/random/energy,
 /turf/simulated/floor/ship_floor/steel,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Oi" = (
 /obj/item/modular_computer/console/preset/medical,
 /turf/simulated/floor/tiled{
@@ -11646,7 +11651,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Om" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -11680,12 +11685,12 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Os" = (
 /turf/unsimulated/oldship{
 	icon_state = "rwall12"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Ou" = (
 /turf/simulated/shuttle/wall{
 	color = "grey";
@@ -11720,7 +11725,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Oy" = (
 /obj/effect/floor_decal/industrial/warning_red{
 	dir = 4;
@@ -11734,7 +11739,7 @@
 	icon_state = "f";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Oz" = (
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /obj/structure/target_stake,
@@ -11751,7 +11756,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "OB" = (
 /obj/machinery/telecomms/hub{
 	color = "grey"
@@ -11965,7 +11970,7 @@
 /area/cadiaoutpost/new_hive/caves)
 "Pk" = (
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Pl" = (
 /obj/effect/floor_decal/newcorner/trench_flooring{
 	dir = 6
@@ -12001,7 +12006,7 @@
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Po" = (
 /obj/structure/closet/crate{
 	color = "grey"
@@ -12084,7 +12089,7 @@
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "PA" = (
 /obj/effect/floor_decal/newcorner/plating,
 /obj/effect/forcefield{
@@ -12112,7 +12117,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "PF" = (
 /obj/effect/water/top,
 /obj/effect/water/bottom,
@@ -12204,7 +12209,7 @@
 	icon_state = "f";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "PY" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/rack/dark,
@@ -12268,7 +12273,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Qg" = (
 /obj/machinery/light/small/red{
 	dir = 1;
@@ -12278,7 +12283,7 @@
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Qi" = (
 /obj/structure/table/rack/dark,
 /obj/random/soap,
@@ -12286,12 +12291,12 @@
 	icon_state = "v";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Qj" = (
 /obj/structure/table/rack/dark,
 /obj/item/gun/projectile/automatic/machinepistol/a80,
 /turf/simulated/floor/ship_floor/steel,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Ql" = (
 /obj/structure/table/standard,
 /obj/item/toy/figure/captain,
@@ -12322,7 +12327,7 @@
 /turf/unsimulated/oldship{
 	icon_state = "rwall3"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Qq" = (
 /obj/structure/grille,
 /obj/machinery/door/blast/regular{
@@ -12355,7 +12360,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Qs" = (
 /obj/structure/closet/crate/freezer{
 	color = "grey"
@@ -12371,7 +12376,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 1
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Qw" = (
 /obj/structure/grille,
 /obj/machinery/door/blast/regular{
@@ -12438,7 +12443,7 @@
 	icon_state = "a15";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "QJ" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -12469,7 +12474,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "QN" = (
 /obj/structure/table/rack/dark,
 /obj/item/clothing/head/helmet/space/void/mining,
@@ -12485,7 +12490,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "QP" = (
 /obj/structure/torchwall{
 	dir = 4;
@@ -12510,7 +12515,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "QV" = (
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/new_hive/caves)
@@ -12518,7 +12523,7 @@
 /turf/unsimulated/oldship{
 	icon_state = "rwallB"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Rb" = (
 /obj/item/device/cassette/orks1,
 /turf/simulated/floor/trench,
@@ -12531,7 +12536,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Rg" = (
 /obj/structure/bed{
 	desc = "A mass produced sleeping mat, now with actual cloth!";
@@ -12577,14 +12582,14 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Ru" = (
 /obj/structure/closet/crate/secure/large,
 /obj/random/tech_supply,
 /turf/simulated/floor/ship_floor/engines{
 	dir = 5
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Rv" = (
 /obj/structure/closet/crate/operations,
 /turf/simulated/floor/tiled/dark{
@@ -12610,7 +12615,7 @@
 /turf/unsimulated/oldship{
 	icon_state = "rwall13"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "RC" = (
 /obj/structure/closet/secure_closet/freezer/meat,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -12701,7 +12706,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "bloodf2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "RR" = (
 /obj/machinery/light/small/red{
 	dir = 1
@@ -12732,7 +12737,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 6
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "RX" = (
 /obj/structure/fireaxecabinet{
 	pixel_y = 30
@@ -12749,7 +12754,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Sb" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -12818,13 +12823,13 @@
 /turf/simulated/floor/grass{
 	icon_state = "evil"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Sq" = (
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/grass{
 	icon_state = "evil"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Sw" = (
 /obj/structure/window/reinforced{
 	color = "grey";
@@ -12845,7 +12850,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "bloodf2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Sz" = (
 /obj/effect/floor_decal/newcorner/rails{
 	dir = 4
@@ -12864,7 +12869,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "SB" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/decal/cleanable/blood/gibs/xeno,
@@ -12879,7 +12884,7 @@
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "SE" = (
 /obj/machinery/telecomms/processor{
 	color = "grey"
@@ -13020,7 +13025,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "To" = (
 /obj/structure/window/reinforced{
 	color = "grey";
@@ -13042,7 +13047,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Tq" = (
 /obj/item/newore/gems/quartz,
 /turf/unsimulated/miningtime,
@@ -13062,7 +13067,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 6
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Tt" = (
 /turf/simulated/wall/titanium,
 /area/cadiaoutpost/oa/caves/dark)
@@ -13071,7 +13076,7 @@
 	icon_state = "a15";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Tx" = (
 /obj/structure/torchwall/service{
 	dir = 8;
@@ -13087,7 +13092,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 9
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Tz" = (
 /obj/structure/torchwall/service{
 	dir = 8;
@@ -13180,13 +13185,13 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "TO" = (
 /obj/structure/closet/hive/metal{
 	anchored = 1
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "TP" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/random/medical/lite,
@@ -13267,7 +13272,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Uh" = (
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/new_hive/caves)
@@ -13310,13 +13315,13 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Un" = (
 /turf/simulated/floor/ship_floor/steel{
 	icon_state = "v";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Uq" = (
 /obj/effect/floor_decal/turf/basalt3,
 /obj/effect/floor_decal/turf/basalt1,
@@ -13370,7 +13375,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "bloodf2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Uw" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/marble{
@@ -13421,7 +13426,7 @@
 "UE" = (
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "UG" = (
 /obj/machinery/door/unpowered/jail_door{
 	req_access = list();
@@ -13447,7 +13452,7 @@
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "UJ" = (
 /obj/structure/torchwall{
 	pixel_y = 16
@@ -13525,7 +13530,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "UY" = (
 /obj/structure/sign/ship/blood_signs{
 	icon_state = "goup";
@@ -13534,7 +13539,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 1
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "UZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/red{
@@ -13563,7 +13568,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 5
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Vg" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/floor_decal/turf/necro1,
@@ -13577,7 +13582,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Vi" = (
 /obj/machinery/door/blast/regular{
 	density = 0;
@@ -13625,7 +13630,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Vm" = (
 /obj/item/remains/human,
 /obj/structure/sign/double/planet/right{
@@ -13635,7 +13640,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Vp" = (
 /obj/effect/floor_decal/turf/basalt10,
 /turf/simulated/floor/stone,
@@ -13665,7 +13670,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Vu" = (
 /obj/structure/lattice,
 /obj/structure/torchwall/service{
@@ -13701,7 +13706,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "VA" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/item/grenade/chem_grenade/antiweed,
@@ -13760,6 +13765,9 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"VJ" = (
+/turf/simulated/floor/stone/seabed,
+/area/cadiaoutpost/oa/caves/dark)
 "VK" = (
 /obj/structure/sign/ship/blood_signs{
 	icon_state = "graffiti3";
@@ -13769,7 +13777,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "VM" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -13818,7 +13826,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "VY" = (
 /obj/effect/floor_decal/turf/plate,
 /obj/structure/table/rack/dark,
@@ -13877,7 +13885,7 @@
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Wl" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/anti_tank,
@@ -13890,7 +13898,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Wo" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	icon_state = "4";
@@ -13908,7 +13916,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Wq" = (
 /obj/effect/shuttle_landmark/ferry/cargo_start,
 /turf/simulated/floor/tiled/dark{
@@ -13952,7 +13960,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "WA" = (
 /obj/effect/floor_decal/newcorner/rails{
 	dir = 4
@@ -13976,14 +13984,14 @@
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "WF" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 8;
 	icon = 'icons/map_project/windows.dmi';
 	icon_state = "r_window2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "WG" = (
 /obj/effect/floor_decal/turf/splate,
 /turf/simulated/floor/tiled/dark{
@@ -14037,7 +14045,7 @@
 	icon_state = "a3";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "WW" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled{
@@ -14072,7 +14080,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Xc" = (
 /obj/machinery/door/airlock/multi_tile/metal/maintenance{
 	color = "grey";
@@ -14091,7 +14099,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 1
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Xg" = (
 /obj/structure/nganga,
 /turf/simulated/floor/seolite,
@@ -14110,7 +14118,7 @@
 	icon_state = "a3";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Xk" = (
 /obj/structure/torchwall{
 	pixel_y = 30
@@ -14139,7 +14147,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Xn" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -14191,7 +14199,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Xu" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /obj/structure/cult/mendingmotor,
@@ -14246,7 +14254,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "XB" = (
 /obj/machinery/door/unpowered/inn{
 	color = "grey";
@@ -14284,7 +14292,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "evil"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "XG" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/door/airlock/arbiter{
@@ -14408,7 +14416,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "XX" = (
 /obj/item/roller,
 /obj/effect/decal/cleanable/blood/gibs,
@@ -14431,7 +14439,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 1
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Ya" = (
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/new_hive/caves)
@@ -14480,7 +14488,7 @@
 "Yj" = (
 /obj/machinery/light/small/red,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Yk" = (
 /obj/machinery/button/remote/blast_door/lever{
 	color = "grey";
@@ -14510,7 +14518,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Yn" = (
 /obj/structure/table/rack/dark,
 /obj/item/pickaxe/newpick,
@@ -14570,7 +14578,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 1
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Yx" = (
 /obj/item/device/radio/intercom{
 	pixel_y = -32
@@ -14628,7 +14636,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "YB" = (
 /obj/effect/floor_decal/turf/necro1,
 /obj/necrofleshmouth,
@@ -14641,7 +14649,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 6
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "YF" = (
 /obj/machinery/light{
 	dir = 4;
@@ -14682,7 +14690,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "YK" = (
 /obj/machinery/atmospherics/trinary/mixer{
 	dir = 8;
@@ -14705,7 +14713,7 @@
 	icon_state = "a15";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "YP" = (
 /obj/effect/floor_decal/turf/sigil{
 	icon_state = "E"
@@ -14716,7 +14724,7 @@
 /turf/simulated/floor/grass{
 	icon_state = "bloodf2"
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "YQ" = (
 /obj/effect/floor_decal/newcorner/red{
 	dir = 8
@@ -14725,7 +14733,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "YT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	icon_state = "intact";
@@ -14748,7 +14756,7 @@
 /obj/structure/closet/crate/secure/large,
 /obj/random/storage,
 /turf/simulated/floor/ship_floor/engines,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "YZ" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -14795,7 +14803,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Zf" = (
 /obj/machinery/door/airlock/ancient_ship/med{
 	name = "Medical Bay"
@@ -14804,7 +14812,7 @@
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Zg" = (
 /obj/structure/table/rack/dark,
 /obj/item/humanskin,
@@ -14819,7 +14827,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 5
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Zi" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/railing{
@@ -14837,7 +14845,7 @@
 /turf/simulated/floor/ship_floor/engines{
 	dir = 1
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Zl" = (
 /obj/item/device/antibody_scanner,
 /turf/simulated/floor/stone,
@@ -14858,7 +14866,7 @@
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Zq" = (
 /obj/effect/floor_decal/newcorner/rails,
 /obj/structure/closet/crate/miningcar,
@@ -14885,7 +14893,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Zt" = (
 /obj/machinery/vending/sovietsoda{
 	color = "grey"
@@ -14902,7 +14910,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/caves/dark)
 "Zz" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -15251,21 +15259,21 @@ Rq
 Rq
 Rq
 Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
 Hy
 Qp
 Qp
@@ -15273,43 +15281,43 @@ Qp
 Qp
 Qp
 et
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
 Rq
 Rq
 Rq
@@ -15503,21 +15511,21 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 DK
 Zc
@@ -15525,9 +15533,9 @@ Zc
 Zc
 Hp
 Os
-hI
-hI
-hI
+jV
+jV
+jV
 Hy
 Qp
 Qp
@@ -15545,8 +15553,8 @@ NU
 Qp
 Qp
 xt
-hI
-hI
+jV
+jV
 Hy
 Qp
 Qp
@@ -15557,11 +15565,11 @@ Ng
 Qp
 Qp
 et
-hI
-hI
-hI
-hI
-Rq
+jV
+jV
+jV
+jV
+lf
 hI
 hI
 hI
@@ -15755,21 +15763,21 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 DZ
 Hf
@@ -15777,9 +15785,9 @@ yB
 Hf
 Qj
 Os
-hI
-hI
-hI
+jV
+jV
+jV
 QZ
 WC
 KX
@@ -15787,7 +15795,7 @@ yK
 yK
 Os
 Zs
-Dt
+Bm
 Zs
 Os
 ML
@@ -15797,8 +15805,8 @@ Mv
 sH
 sQ
 Os
-hI
-hI
+jV
+jV
 Os
 nC
 ss
@@ -15813,7 +15821,7 @@ Qp
 Qp
 Qp
 et
-Rq
+lf
 hI
 hI
 hI
@@ -16007,21 +16015,21 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 ld
 Hf
@@ -16029,16 +16037,16 @@ hm
 Hf
 Oh
 Os
-hI
-hI
-hI
+jV
+jV
+jV
 Os
 sR
 Wj
 Wj
 IH
 Mv
-Dt
+Bm
 Zs
 it
 Mv
@@ -16049,8 +16057,8 @@ gP
 rr
 ID
 Os
-hI
-hI
+jV
+jV
 Os
 Qv
 Zs
@@ -16065,7 +16073,7 @@ kH
 Bo
 Nr
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -16259,21 +16267,21 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 La
 Hf
@@ -16281,16 +16289,16 @@ zN
 Hf
 uS
 Os
-hI
-hI
-hI
+jV
+jV
+jV
 QZ
 Wj
 Wj
 Wj
 Wj
 gP
-Dt
+Bm
 Zs
 Zs
 gP
@@ -16317,7 +16325,7 @@ Qv
 Zs
 go
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -16511,21 +16519,21 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
 Hy
 Qp
 Qp
 Qp
 Qp
 et
-hI
-hI
-hI
+jV
+jV
+jV
 Os
 Ms
 Zc
@@ -16533,9 +16541,9 @@ Zc
 is
 bV
 Os
-hI
-hI
-hI
+jV
+jV
+jV
 Os
 Wj
 Wj
@@ -16550,7 +16558,7 @@ Wj
 Wj
 WC
 Os
-hI
+jV
 Os
 GM
 SA
@@ -16569,7 +16577,7 @@ Ap
 HW
 yX
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -16763,12 +16771,12 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 Ir
 oP
@@ -16796,13 +16804,13 @@ Qp
 Dy
 Zs
 Zs
-Dt
+Bm
 qd
 Qp
 Qp
 Qp
 Ry
-hI
+jV
 Os
 Zs
 Zs
@@ -16821,7 +16829,7 @@ eE
 KH
 Qp
 Ry
-Rq
+lf
 hI
 hI
 hI
@@ -17015,12 +17023,12 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 sN
 sN
@@ -17040,21 +17048,21 @@ ER
 Ox
 Nl
 Os
-hI
+jV
 Os
 Wj
 UI
 Wj
 gP
 Zs
-Dt
+Bm
 Zs
 gP
 Wj
 UI
 Wj
 Os
-hI
+jV
 Os
 Zs
 Zs
@@ -17073,7 +17081,7 @@ Ty
 sL
 Nr
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -17267,12 +17275,12 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 Zy
 Zy
@@ -17292,21 +17300,21 @@ xt
 Nl
 vt
 Os
-hI
+jV
 QZ
 WC
 iN
 dN
 xt
 Zs
-Dt
+Bm
 Zs
 xt
 dN
 Ds
 WC
 QZ
-hI
+jV
 Os
 Zs
 Zs
@@ -17325,7 +17333,7 @@ Qv
 Zs
 go
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -17519,12 +17527,12 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 CG
 mo
@@ -17544,21 +17552,21 @@ qd
 Qp
 Qp
 Ry
-hI
+jV
 Gf
 Qp
 Qp
 Qp
 Dy
 Zs
-Dt
+Bm
 it
 qd
 Qp
 Qp
 Qp
 Ry
-hI
+jV
 Os
 Tu
 Zs
@@ -17577,7 +17585,7 @@ Ve
 rs
 RV
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -17771,12 +17779,12 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
 qd
 NU
 Qp
@@ -17796,7 +17804,7 @@ ER
 Nl
 Nl
 Os
-hI
+jV
 Os
 Wj
 UI
@@ -17810,7 +17818,7 @@ Wj
 UI
 Wj
 Os
-hI
+jV
 qd
 Qp
 Qp
@@ -17829,7 +17837,7 @@ eE
 KH
 Qp
 Ry
-Rq
+lf
 hI
 hI
 hI
@@ -18023,13 +18031,13 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 Tp
 CD
@@ -18048,23 +18056,23 @@ xt
 Nl
 vt
 Os
-hI
+jV
 QZ
 WC
 iN
 dN
 xt
 Zs
-Dt
+Bm
 Zs
 xt
 dN
 iN
 WC
 QZ
-hI
-hI
-hI
+jV
+jV
+jV
 Hy
 Dy
 Ox
@@ -18081,7 +18089,7 @@ Ty
 oe
 BL
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -18275,13 +18283,13 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 Hg
 md
@@ -18300,14 +18308,14 @@ qd
 Qp
 Qp
 Ry
-hI
+jV
 Gf
 Qp
 Qp
 Qp
 Dy
 Zs
-Dt
+Bm
 Zs
 qd
 Qp
@@ -18333,7 +18341,7 @@ Qv
 Zs
 go
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -18527,13 +18535,13 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 ia
 PE
@@ -18552,7 +18560,7 @@ ER
 Nl
 Nl
 Os
-hI
+jV
 Os
 Wj
 UI
@@ -18585,7 +18593,7 @@ Zh
 AP
 sm
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -18779,13 +18787,13 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 zZ
 Zs
@@ -18804,13 +18812,13 @@ xt
 Nl
 uU
 Os
-hI
+jV
 QZ
 WC
 iN
 dN
 xt
-Dt
+Bm
 Zs
 it
 xt
@@ -18830,14 +18838,14 @@ oZ
 gR
 gR
 Os
-hI
+jV
 qd
 Qp
 Qp
 Qp
 Qp
 Dy
-Rq
+lf
 hI
 zM
 zM
@@ -19031,18 +19039,18 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 qd
 Qp
 NU
 Dy
-hI
+jV
 Gf
 Qp
 Qp
@@ -19056,7 +19064,7 @@ eD
 Qp
 Qp
 Dy
-hI
+jV
 Gf
 Qp
 Qp
@@ -19064,7 +19072,7 @@ Qp
 Dy
 Zs
 Zs
-Dt
+Bm
 qd
 Qp
 Qp
@@ -19083,13 +19091,13 @@ gR
 gR
 qd
 et
-hI
-hI
-hI
-hI
-hI
-hI
-Rq
+jV
+jV
+jV
+jV
+jV
+jV
+lf
 hI
 zM
 zM
@@ -19283,15 +19291,15 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Gf
 Qp
 Qp
@@ -19305,10 +19313,10 @@ Zs
 FT
 Gp
 Os
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
 Os
 Wj
 UI
@@ -19340,8 +19348,8 @@ Qp
 Qp
 Qp
 et
-Rq
-Rq
+lf
+lf
 hI
 zM
 zM
@@ -19535,15 +19543,15 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-Rq
-Rq
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+lf
+lf
+jV
+jV
 Os
 Nc
 bj
@@ -19558,16 +19566,16 @@ Zs
 it
 qd
 et
-hI
-hI
-hI
+jV
+jV
+jV
 QZ
 WC
 iN
 dN
 xt
 Zs
-Dt
+Bm
 Zs
 xt
 dN
@@ -19592,8 +19600,8 @@ cx
 cx
 tv
 Os
-Rq
-hI
+lf
+jV
 hI
 zM
 zM
@@ -19787,15 +19795,15 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-Rq
-Rq
-zM
-Rq
-Rq
-hI
+jV
+jV
+jV
+lf
+lf
+VJ
+lf
+lf
+jV
 Os
 ql
 De
@@ -19820,7 +19828,7 @@ Qp
 Dy
 Zs
 Zs
-Dt
+Bm
 qd
 Qp
 NU
@@ -19844,8 +19852,8 @@ CC
 De
 HA
 QZ
-Rq
-hI
+lf
+jV
 zM
 zM
 zM
@@ -20039,15 +20047,15 @@ Rq
 Rq
 Rq
 Rq
-hI
-Rq
-Rq
-Rq
-zM
+jV
+lf
+lf
+lf
+VJ
 rg
-zM
-Rq
-hI
+VJ
+lf
+jV
 Os
 nF
 nF
@@ -20067,11 +20075,11 @@ Zs
 Zs
 uY
 Zs
-Dt
-Dt
+Bm
+Bm
 uY
-Dt
-Dt
+Bm
+Bm
 Zs
 uY
 Zs
@@ -20096,8 +20104,8 @@ Zc
 De
 YD
 LP
-hI
-hI
+jV
+jV
 zM
 zM
 zM
@@ -20291,14 +20299,14 @@ Rq
 Rq
 Rq
 Rq
-Rq
-Rq
-zM
-zM
+lf
+lf
+VJ
+VJ
 rg
 rg
-zM
-Rq
+VJ
+lf
 Hy
 Dy
 Mm
@@ -20317,15 +20325,15 @@ Zs
 FT
 Zs
 Zs
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
 iU
-Dt
-Dt
+Bm
+Bm
 iU
-Dt
-Dt
+Bm
+Bm
 Zs
 Vt
 Ox
@@ -20348,8 +20356,8 @@ vm
 dA
 sa
 Me
-zM
-zM
+VJ
+VJ
 zM
 zM
 zM
@@ -20543,14 +20551,14 @@ Rq
 Rq
 Rq
 Rq
-Rq
-zM
+lf
+VJ
 rg
 rg
 rg
 rg
 nI
-zM
+VJ
 Mv
 Um
 fO
@@ -20570,14 +20578,14 @@ Qp
 et
 Zs
 Zs
-Dt
-Dt
-Dt
-Dt
-Dt
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
 Zs
 Vt
 Ox
@@ -20600,8 +20608,8 @@ rh
 dA
 sa
 Gv
-zM
-zM
+VJ
+VJ
 zM
 zM
 zM
@@ -20798,8 +20806,8 @@ Rq
 rg
 rg
 rg
-Dt
-Dt
+Bm
+Bm
 rg
 rg
 rg
@@ -20821,15 +20829,15 @@ Hf
 jJ
 Os
 hv
-Dt
+Bm
 iU
-Dt
-Dt
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
+Bm
+Bm
 iU
-Dt
+Bm
 Zs
 Vt
 Ox
@@ -20852,8 +20860,8 @@ VK
 dA
 sa
 fh
-zM
-zM
+VJ
+VJ
 zM
 zM
 zM
@@ -21050,10 +21058,10 @@ Rq
 rg
 rg
 rg
-Dt
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
+Bm
 rg
 sw
 Iq
@@ -21073,16 +21081,16 @@ eh
 eh
 Mv
 Zs
-Dt
-Dt
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
+Bm
+Bm
 iU
-Dt
-Dt
+Bm
+Bm
 iU
-Dt
+Bm
 xt
 hZ
 Ox
@@ -21104,8 +21112,8 @@ Zc
 De
 xx
 xt
-hI
-hI
+jV
+jV
 zM
 zM
 zM
@@ -21302,10 +21310,10 @@ Rq
 rg
 rg
 rg
-Dt
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
+Bm
 rg
 sw
 CQ
@@ -21325,15 +21333,15 @@ Oy
 Oy
 IT
 Zs
-Dt
+Bm
 iU
-Dt
+Bm
 iU
-Dt
-Dt
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
+Bm
+Bm
 it
 Gf
 Qp
@@ -21356,8 +21364,8 @@ dD
 De
 um
 QZ
-Rq
-hI
+lf
+jV
 zM
 zM
 zM
@@ -21551,12 +21559,12 @@ Rq
 Rq
 Rq
 Rq
-zM
+VJ
 rg
 rg
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
 rg
 rg
 sw
@@ -21577,16 +21585,16 @@ xJ
 xJ
 xt
 Zs
-Dt
-Dt
-Dt
-Dt
-Dt
-Dt
-Dt
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
 jM
 Zc
 Os
@@ -21608,8 +21616,8 @@ pk
 pk
 yD
 Os
-Rq
-hI
+lf
+jV
 zM
 zM
 zM
@@ -21803,14 +21811,14 @@ Rq
 Rq
 Rq
 Rq
-zM
+VJ
 rg
 rg
-Dt
-Dt
+Bm
+Bm
 rg
 rg
-zM
+VJ
 pl
 hp
 gy
@@ -21829,14 +21837,14 @@ Hf
 gT
 Os
 lR
-Dt
+Bm
 iU
-Dt
+Bm
 iU
-Dt
-Dt
+Bm
+Bm
 iU
-Dt
+Bm
 iU
 Zs
 du
@@ -21860,8 +21868,8 @@ Qp
 NU
 Qp
 Dy
-Rq
-Rq
+lf
+lf
 zM
 zM
 zM
@@ -22055,14 +22063,14 @@ Rq
 Rq
 Rq
 Rq
-zM
-zM
+VJ
+VJ
 rg
 rg
 rg
-zM
+VJ
 rg
-zM
+VJ
 xt
 CV
 fO
@@ -22081,16 +22089,16 @@ Qp
 Qp
 Ry
 Zs
-Dt
+Bm
 iU
-Dt
-Dt
+Bm
+Bm
 iU
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
 Zs
-Dt
+Bm
 Gf
 Qp
 Ry
@@ -22110,10 +22118,10 @@ Rd
 UX
 zS
 Os
-hI
-hI
-hI
-Rq
+jV
+jV
+jV
+lf
 hI
 zM
 hI
@@ -22307,13 +22315,13 @@ Rq
 Rq
 Rq
 Rq
-Rq
-Rq
-zM
-zM
+lf
+lf
+VJ
+VJ
 rg
-zM
-zM
+VJ
+VJ
 rg
 qd
 et
@@ -22323,25 +22331,25 @@ th
 Cj
 Jz
 Os
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Hy
 ez
 et
 Zs
 Zs
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
 iU
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
 it
 jM
 Zc
@@ -22365,7 +22373,7 @@ Gf
 Qp
 Qp
 et
-Rq
+lf
 hI
 hI
 hI
@@ -22559,15 +22567,15 @@ Rq
 Rq
 Rq
 Rq
-hI
-Rq
-Rq
-Rq
-zM
+jV
+lf
+lf
+lf
+VJ
 rg
-zM
-zM
-zM
+VJ
+VJ
+VJ
 Gf
 ND
 YJ
@@ -22575,10 +22583,10 @@ KH
 Qp
 NU
 Dy
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
 Hy
 Qp
 Qp
@@ -22588,13 +22596,13 @@ Gf
 et
 Zs
 bd
-Dt
-Dt
+Bm
+Bm
 Zs
 bK
-Dt
+Bm
 Zs
-Dt
+Bm
 du
 Zc
 Os
@@ -22617,7 +22625,7 @@ Mv
 tc
 sH
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -22811,10 +22819,10 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-Rq
+jV
+jV
+jV
+lf
 xt
 cc
 AS
@@ -22826,11 +22834,11 @@ fc
 sk
 xk
 Os
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
 Os
 Iz
 Ox
@@ -22869,7 +22877,7 @@ oY
 rr
 ly
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -23063,10 +23071,10 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
 og
 Zc
 uF
@@ -23078,11 +23086,11 @@ rg
 kf
 KL
 Os
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
 Os
 Ox
 Ox
@@ -23093,7 +23101,7 @@ Tn
 Ch
 Ch
 Os
-Dt
+Bm
 Ox
 Os
 mt
@@ -23121,7 +23129,7 @@ xt
 rr
 rr
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -23315,10 +23323,10 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
 QZ
 Xm
 Zc
@@ -23333,8 +23341,8 @@ Gf
 Qp
 Qp
 et
-hI
-hI
+jV
+jV
 Os
 Ox
 Ox
@@ -23373,7 +23381,7 @@ eD
 Qp
 Qp
 Dy
-Rq
+lf
 hI
 hI
 hI
@@ -23567,10 +23575,10 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
 Os
 Uf
 QO
@@ -23585,8 +23593,8 @@ Os
 sH
 sQ
 Os
-hI
-hI
+jV
+jV
 qd
 et
 Ox
@@ -23622,10 +23630,10 @@ Rd
 UX
 zS
 Os
-hI
-hI
-hI
-Rq
+jV
+jV
+jV
+lf
 hI
 hI
 hI
@@ -23819,10 +23827,10 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
 Os
 Zc
 Zc
@@ -23837,9 +23845,9 @@ Mv
 rn
 Au
 Os
-hI
-hI
-hI
+jV
+jV
+jV
 Os
 Ox
 Ox
@@ -23850,7 +23858,7 @@ Ox
 Ox
 ug
 Ox
-Dt
+Bm
 Os
 PX
 PX
@@ -23877,7 +23885,7 @@ Gf
 Qp
 Qp
 et
-Rq
+lf
 hI
 hI
 hI
@@ -24071,9 +24079,9 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
+jV
+jV
+jV
 Hy
 Dy
 qj
@@ -24089,8 +24097,8 @@ mu
 nE
 IV
 Os
-hI
-hI
+jV
+jV
 Hy
 ez
 Qp
@@ -24129,7 +24137,7 @@ Mv
 tc
 sH
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -24323,9 +24331,9 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
+jV
+jV
+jV
 QZ
 uk
 fc
@@ -24341,34 +24349,34 @@ Qp
 Qp
 Qp
 Dy
-hI
-hI
+jV
+jV
 Os
 Ox
 vI
 Ox
 Ox
 Ox
-Dt
+Bm
 vI
 Ox
-Dt
+Bm
 Ox
 Ox
 Ox
-Dt
+Bm
 vI
 Ox
 Ox
 Os
 Wz
 tp
-Dt
+Bm
 Ox
 Ox
 Ox
 So
-Dt
+Bm
 Ox
 Os
 Ox
@@ -24381,7 +24389,7 @@ oY
 rr
 ly
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -24575,9 +24583,9 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
+jV
+jV
+jV
 og
 rC
 fc
@@ -24587,37 +24595,37 @@ Zc
 wn
 af
 QZ
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 Ox
 Ox
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
 Ox
 Ox
 Ox
 Ox
 Ox
-Dt
-Dt
+Bm
+Bm
 Ox
 Ox
-Dt
+Bm
 Ox
 Os
 Sq
-Dt
+Bm
 Ox
-Dt
-Dt
+Bm
+Bm
 Kr
 Bq
 Bq
@@ -24633,7 +24641,7 @@ xt
 rr
 rr
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -24827,9 +24835,9 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
+jV
+jV
+jV
 Os
 cU
 vf
@@ -24839,14 +24847,14 @@ Qp
 Ng
 Qp
 Dy
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 Ox
 Ox
@@ -24862,13 +24870,13 @@ ug
 KH
 Qp
 et
-Dt
+Bm
 Fe
 Os
 Iz
-Dt
+Bm
 ee
-Dt
+Bm
 eE
 KH
 Qp
@@ -24885,7 +24893,7 @@ qd
 NU
 Qp
 Dy
-Rq
+lf
 hI
 hI
 hI
@@ -25079,65 +25087,65 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
+jV
+jV
+jV
 qd
 Qp
 Ng
 Dy
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
-Dt
-Dt
+Bm
+Bm
 Os
-Dt
-Dt
+Bm
+Bm
 Cv
 pt
 pt
 lN
 pt
-Dt
-Dt
+Bm
+Bm
 Fe
 Mv
-Dt
-Dt
+Bm
+Bm
 Os
 XE
-Dt
+Bm
 LC
-Dt
+Bm
 Ox
-Dt
-Dt
-Ox
-Ox
-Os
-Ox
-Ox
-Ox
-Ox
-Ox
+Bm
+Bm
 Ox
 Ox
 Os
-hI
-hI
-Rq
+Ox
+Ox
+Ox
+Ox
+Ox
+Ox
+Ox
+Os
+jV
+jV
+lf
 hI
 hI
 hI
@@ -25331,29 +25339,29 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 Ox
-Dt
+Bm
 Os
 pt
 AV
@@ -25364,16 +25372,16 @@ Co
 oC
 Lq
 zk
-Dt
+Bm
 jM
-Dt
+Bm
 Ox
 Os
 Sq
-Dt
+Bm
 GU
-Dt
-Dt
+Bm
+Bm
 DM
 Ho
 Ho
@@ -25389,7 +25397,7 @@ Ox
 qd
 Qp
 et
-Rq
+lf
 hI
 hI
 hI
@@ -25583,29 +25591,29 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 Ox
-Dt
+Bm
 Os
 pt
 AV
@@ -25616,15 +25624,15 @@ AV
 oC
 oC
 tZ
-Dt
+Bm
 du
-Dt
+Bm
 Ox
 Os
 hv
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
 Fe
 KH
 Qp
@@ -25639,9 +25647,9 @@ Ox
 Ox
 Ox
 jM
-Dt
+Bm
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -25835,50 +25843,50 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 hv
-Dt
+Bm
 Os
 tq
-Dt
-Dt
+Bm
+Bm
 pt
 pt
-Dt
-Dt
+Bm
+Bm
 pt
 pt
-Dt
+Bm
 xt
 Ox
-Dt
+Bm
 Os
 Sq
-Dt
+Bm
 Ox
 Ox
-Dt
-Dt
+Bm
+Bm
 Ox
 br
 Wj
@@ -25893,7 +25901,7 @@ Ox
 jO
 Fe
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -26087,31 +26095,31 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
-Dt
-Dt
+Bm
+Bm
 Os
-Dt
+Bm
 AV
 yf
 lg
@@ -26123,10 +26131,10 @@ tZ
 Fe
 Mv
 Ox
-Dt
+Bm
 Os
 XE
-Dt
+Bm
 So
 Ox
 Ox
@@ -26143,9 +26151,9 @@ Ox
 Ox
 Ox
 du
-Dt
+Bm
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -26339,31 +26347,31 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
-Dt
+Bm
 Ox
 Os
-Dt
+Bm
 AV
 oC
 yf
@@ -26372,9 +26380,9 @@ Co
 yf
 yf
 zk
-Dt
+Bm
 jM
-Dt
+Bm
 Fe
 qd
 Qp
@@ -26397,7 +26405,7 @@ Ox
 Hy
 Qp
 Dy
-Rq
+lf
 hI
 hI
 hI
@@ -26591,50 +26599,50 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Hy
 Dy
 Ox
 Ox
 Mv
-Dt
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
+Bm
 pt
-Dt
-Dt
+Bm
+Bm
 pt
-Dt
+Bm
 pt
 du
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
 Cv
-Dt
+Bm
 Ox
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
 Ox
 Os
 nS
@@ -26647,9 +26655,9 @@ ND
 hz
 KH
 Ry
-hI
-hI
-Rq
+jV
+jV
+lf
 hI
 hI
 hI
@@ -26843,25 +26851,25 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 Ox
 Ox
@@ -26869,25 +26877,25 @@ Ox
 ug
 pt
 Ab
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
 bd
-Dt
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
+Bm
 xt
-Dt
-Dt
+Bm
+Bm
 Ox
-Dt
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
+Bm
 bd
-Dt
-Dt
+Bm
+Bm
 Os
 nS
 nS
@@ -26899,9 +26907,9 @@ Ox
 Ox
 Ox
 Os
-hI
-hI
-Rq
+jV
+jV
+lf
 hI
 hI
 hI
@@ -27095,25 +27103,25 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 Ox
 Ox
@@ -27130,7 +27138,7 @@ Qp
 Qp
 Qp
 Gn
-Dt
+Bm
 Ox
 Hy
 Qp
@@ -27151,9 +27159,9 @@ Ox
 Ox
 eE
 Os
-hI
-hI
-Rq
+jV
+jV
+lf
 hI
 hI
 hI
@@ -27347,25 +27355,25 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Gf
 Qp
 ND
@@ -27382,7 +27390,7 @@ Ox
 Ox
 Ox
 ug
-Dt
+Bm
 Ox
 Os
 Ox
@@ -27403,9 +27411,9 @@ Ox
 Ox
 Ox
 Os
-hI
-hI
-Rq
+jV
+jV
+lf
 hI
 hI
 hI
@@ -27599,25 +27607,25 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 Zs
 Zs
@@ -27634,7 +27642,7 @@ Iz
 Ox
 Ox
 Gn
-Dt
+Bm
 eE
 Os
 Iz
@@ -27657,7 +27665,7 @@ KH
 ez
 Qp
 et
-Rq
+lf
 hI
 hI
 hI
@@ -27851,25 +27859,25 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 ia
 Zs
@@ -27898,18 +27906,18 @@ Os
 Zs
 Zs
 Os
-Dt
-Dt
+Bm
+Bm
 DC
-Dt
-Dt
+Bm
+Bm
 Ox
 Ox
 Ox
 Ox
 Ox
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -28103,25 +28111,25 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 aT
 aT
@@ -28138,8 +28146,8 @@ Rd
 Ch
 Ch
 du
-Dt
-Dt
+Bm
+Bm
 Os
 Ox
 Ox
@@ -28151,17 +28159,17 @@ Zs
 it
 Os
 hv
-Dt
+Bm
 Gu
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
 Ox
 Ox
 Ox
 Ox
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -28355,25 +28363,25 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 qd
 Qp
 Qp
@@ -28402,18 +28410,18 @@ Ry
 Zs
 Zs
 Os
-Dt
-Dt
+Bm
+Bm
 WF
 Ox
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
 Ox
 Ox
 Ox
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -28607,28 +28615,28 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 Ox
 XV
@@ -28638,16 +28646,16 @@ Ox
 Os
 Zc
 Zc
-Dt
+Bm
 Cv
-Dt
+Bm
 Zc
 Zc
 Zc
-Dt
+Bm
 Cv
-Dt
-Dt
+Bm
+Bm
 Zc
 Zc
 qd
@@ -28665,7 +28673,7 @@ Ox
 eE
 KH
 Ry
-Rq
+lf
 hI
 hI
 hI
@@ -28859,28 +28867,28 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 fV
 Ox
@@ -28888,36 +28896,36 @@ GO
 Ox
 vE
 Os
-Dt
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
+Bm
 Zc
 Zc
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
 Zc
 Zc
 Zc
 Zc
-Dt
+Bm
 Zc
 QG
 Os
 Os
-Dt
-Dt
+Bm
+Bm
 cd
 Ox
-Dt
+Bm
 Ox
 Ox
 Ox
 Ox
-Dt
+Bm
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -29111,28 +29119,28 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 XV
 Hl
@@ -29153,23 +29161,23 @@ hv
 KH
 NU
 ND
-Dt
+Bm
 Fe
 KH
 Ry
 Os
 hv
-Dt
+Bm
 Gu
-Dt
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
+Bm
 Ox
-Dt
-Dt
+Bm
+Bm
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -29363,28 +29371,28 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 GO
 Ox
@@ -29393,35 +29401,35 @@ Ox
 Ox
 Os
 ey
-Dt
+Bm
 QG
 Os
 ko
-Dt
+Bm
 QG
 Os
 ey
-Dt
+Bm
 QG
 Os
 ey
 Zc
-Dt
+Bm
 tD
 Os
 Os
-Dt
-Dt
+Bm
+Bm
 WF
 Ox
 Ox
 Ox
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
 Ox
 Os
-Rq
+lf
 hI
 hI
 hI
@@ -29615,28 +29623,28 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 Wp
 Ox
@@ -29645,20 +29653,20 @@ Rt
 eE
 Gf
 ND
-Dt
+Bm
 KH
 eD
 ND
-Dt
+Bm
 KH
 eD
 ND
-Dt
+Bm
 KH
 eD
 ND
 Zc
-Dt
+Bm
 KH
 Ry
 Gf
@@ -29673,7 +29681,7 @@ Qp
 NU
 Qp
 Dy
-Rq
+lf
 hI
 hI
 hI
@@ -29867,28 +29875,28 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 GO
 Ox
@@ -29897,20 +29905,20 @@ Ox
 Ox
 Os
 ey
-Dt
+Bm
 QG
 Os
 ko
-Dt
+Bm
 QG
 Os
 ey
-Dt
+Bm
 ko
 Os
 ey
-Dt
-Dt
+Bm
+Bm
 YM
 Os
 Os
@@ -29923,9 +29931,9 @@ Ox
 Ox
 Rd
 Os
-hI
-hI
-Rq
+jV
+jV
+lf
 hI
 hI
 hI
@@ -30119,28 +30127,28 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 Ox
 XV
@@ -30149,19 +30157,19 @@ Ox
 Zp
 Gf
 ND
-Dt
+Bm
 KH
 eD
 ND
-Dt
+Bm
 KH
 eD
 ND
-Dt
+Bm
 KH
 eD
 ND
-Dt
+Bm
 Fe
 KH
 Ry
@@ -30175,9 +30183,9 @@ Ox
 Ox
 Qr
 Os
-hI
-hI
-Rq
+jV
+jV
+lf
 hI
 hI
 hI
@@ -30371,28 +30379,28 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 QM
 Rt
@@ -30401,7 +30409,7 @@ Sa
 eE
 Os
 ey
-Dt
+Bm
 ko
 Os
 QG
@@ -30409,11 +30417,11 @@ Zc
 qL
 Os
 ac
-Dt
+Bm
 ko
 Os
 FW
-Dt
+Bm
 Zc
 YM
 Os
@@ -30427,9 +30435,9 @@ Ox
 Ox
 Ox
 Os
-hI
-hI
-Rq
+jV
+jV
+lf
 hI
 hI
 hI
@@ -30623,28 +30631,28 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 Ox
 XV
@@ -30665,7 +30673,7 @@ ng
 KH
 ez
 ND
-Dt
+Bm
 Zc
 KH
 Ry
@@ -30679,9 +30687,9 @@ Ox
 Ox
 Ox
 Os
-hI
-hI
-Rq
+jV
+jV
+lf
 hI
 hI
 hI
@@ -30875,28 +30883,28 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 qd
 Qp
 Qp
@@ -30904,26 +30912,26 @@ Qp
 Qp
 Qp
 Ry
-Dt
-Dt
+Bm
+Bm
 Zc
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
 Zc
-Dt
-Dt
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
+Bm
+Bm
 Zc
-Dt
+Bm
 Zc
 ko
 Os
-hI
-hI
-hI
+jV
+jV
+jV
 Os
 Ox
 Ox
@@ -30931,9 +30939,9 @@ Ox
 Ox
 Hy
 Dy
-hI
-hI
-Rq
+jV
+jV
+lf
 hI
 hI
 hI
@@ -31127,44 +31135,44 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
-Dt
-Dt
-Dt
+Bm
+Bm
+Bm
 bd
 Zc
 Zc
-Dt
+Bm
 bd
-Dt
+Bm
 Zc
 Zc
 af
@@ -31173,19 +31181,19 @@ Zc
 wk
 KH
 Ry
-hI
-hI
-hI
+jV
+jV
+jV
 Os
 Ox
 hZ
 Ox
 Ox
 Os
-hI
-hI
-hI
-Rq
+jV
+jV
+jV
+lf
 hI
 hI
 hI
@@ -31379,34 +31387,34 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 Os
 qL
 xt
@@ -31425,19 +31433,19 @@ xt
 ko
 xt
 Os
-hI
-hI
-hI
+jV
+jV
+jV
 qd
 Qp
 Qp
 Qp
 Qp
 Dy
-hI
-hI
-hI
-Rq
+jV
+jV
+jV
+lf
 hI
 hI
 hI
@@ -31631,34 +31639,34 @@ Rq
 Rq
 Rq
 Rq
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
 qd
 Qp
 ez
@@ -31677,19 +31685,19 @@ ez
 Qp
 ez
 Dy
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-Rq
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+jV
+lf
 hI
 hI
 hI
@@ -31883,65 +31891,65 @@ Rq
 Rq
 Rq
 Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
-Rq
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
+lf
 hI
 hI
 hI

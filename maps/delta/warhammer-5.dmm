@@ -839,9 +839,7 @@
 /area/cadiaoutpost/oa/tauship)
 "dm" = (
 /obj/machinery/light,
-/mob/living/simple_animal/hostile/voxslug,
 /obj/item/remains/xeno,
-/obj/item/gun/energy/pulse/pulserifle,
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "dq" = (
@@ -1721,7 +1719,6 @@
 /obj/effect/floor_decal/newcorner/reinforced,
 /obj/machinery/hologram/holopad/longrange,
 /obj/item/remains/xeno,
-/obj/item/device/radio/beacon,
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "jz" = (
@@ -1877,7 +1874,6 @@
 /obj/effect/floor_decal/newcorner/reinforced/corner{
 	dir = 1
 	},
-/mob/living/simple_animal/hostile/voxslug,
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "jZ" = (
@@ -2055,7 +2051,6 @@
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 4
 	},
-/mob/living/simple_animal/hostile/voxslug,
 /obj/item/remains/xeno,
 /obj/item/gun/energy/pulse/pulsepistol,
 /turf/simulated/floor/shuttle/white,
@@ -2754,12 +2749,6 @@
 /obj/item/ammo_box/flares/blue,
 /obj/item/ammo_box/flares/blue,
 /turf/simulated/floor/shuttle/darkred,
-/area/cadiaoutpost/oa/tauship)
-"oq" = (
-/obj/structure/warfare/barricade/concrete_barrier{
-	color = "grey"
-	},
-/turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "or" = (
 /obj/structure/bed/chair/comfy/captain{
@@ -4478,6 +4467,7 @@
 /area/space)
 "BA" = (
 /obj/machinery/teleport/hub,
+/obj/item/device/radio/beacon,
 /turf/simulated/floor/shuttle/yellow,
 /area/cadiaoutpost/oa/tauship)
 "BB" = (
@@ -5159,10 +5149,6 @@
 /obj/effect/wingrille_spawn/reinforced/full,
 /turf/simulated/floor/wood,
 /area/centcom)
-"GU" = (
-/mob/living/simple_animal/hostile/voxslug,
-/turf/simulated/floor/shuttle/white,
-/area/cadiaoutpost/oa/tauship)
 "Hc" = (
 /obj/effect/wingrille_spawn/reinforced_phoron/full,
 /turf/simulated/floor/tiled/dark{
@@ -11095,11 +11081,11 @@ ax
 gL
 gL
 wO
-GU
+Uv
 Uv
 id
 Uv
-GU
+Uv
 kL
 gL
 kz
@@ -11708,7 +11694,7 @@ jW
 Uv
 Uv
 jE
-oq
+Uv
 dN
 Uv
 tU
@@ -12307,7 +12293,7 @@ ax
 gL
 gL
 jv
-GU
+Uv
 Uv
 Uv
 Uv
@@ -12512,7 +12498,7 @@ hk
 gn
 Hx
 kp
-GU
+Uv
 gL
 gL
 gL

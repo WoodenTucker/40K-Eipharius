@@ -72,7 +72,7 @@
 	fire_sound = 'sound/weapons/guns/fire/pain_fire.ogg'
 	mob_hit_sound = list('sound/weapons/tase.ogg')
 	nodamage = TRUE
-	agony = 200
+	agony = 100
 	damage_type = PAIN
 	//Damage will be handled on the MOB side, to prevent window shattering.
 
