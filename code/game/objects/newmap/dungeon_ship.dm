@@ -14,38 +14,34 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	name = "old steel floor"
 	icon = 'icons/map_project/ship/shiptiles.dmi'
 	icon_state = "oldsteel"
-	initial_flooring = /decl/flooring/tiling
 
 /turf/simulated/floor/ship_floor/ramp
 	name = "ship ramp"
 	icon_state = "fancy_stairs"
-	initial_flooring = /decl/flooring/tiling
 
 /turf/simulated/floor/ship_floor/steel
 	name = "polished steel floor"
 	icon_state = "oldsteelf"
-	initial_flooring = /decl/flooring/tiling
 
 /turf/simulated/floor/ship_floor/white
 	name = "old white floor"
 	icon_state = "whitel"
-	initial_flooring = /decl/flooring/tiling
 
+/turf/simulated/floor/ship_floor/evil
+	name = "horror"
+	icon_state = "evil"
 
 /turf/simulated/floor/ship_floor/brown
 	name = "old white floor"
 	icon_state = "brownl"
-	initial_flooring = /decl/flooring/tiling
 
 /turf/simulated/floor/ship_floor/engines
 	name = "engine floor"
 	icon_state = "warningf"
-	initial_flooring = /decl/flooring/tiling
 
 /turf/simulated/floor/ship_floor/platform
 	name = "platform"
 	icon_state = "south3"
-	initial_flooring = /decl/flooring/tiling
 
 // Walls
 

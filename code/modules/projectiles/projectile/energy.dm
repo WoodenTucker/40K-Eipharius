@@ -237,8 +237,8 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
-	damage = 90
-	armor_penetration = 100
+	damage = 120
+	armor_penetration = 65
 
 	on_hit(var/atom/target, var/blocked = 0)
 		explosion(target, -1, -1, 0, 0, 0)
@@ -248,8 +248,8 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
-	damage = 90
-	armor_penetration = 100
+	damage = 120
+	armor_penetration = 65
 
 	on_hit(var/atom/target, var/blocked = 0)
 		explosion(target, -1, -1, 0, 0, 0)
@@ -259,7 +259,7 @@
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 90
+	damage = 100
 	weaken = 1
 	armor_penetration = 65
 	light_power = 4
@@ -271,7 +271,7 @@
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 90
+	damage = 100
 	weaken = 1
 	armor_penetration = 50
 	light_power = 4
@@ -282,9 +282,9 @@
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 90
+	damage = 110
 	weaken = 1
-	armor_penetration = 50
+	armor_penetration = 65
 	light_power = 4
 	light_color = "#2132cf"
 

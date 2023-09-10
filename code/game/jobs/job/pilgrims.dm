@@ -64,7 +64,7 @@ Pilgrim Fate System
 //mob/living/carbon/human/proc/penitentclass(var/mob/living/carbon/human/M)
 /mob/living/carbon/human/proc/penitentclass()
 	set name = "Select your class"
-	set category = "Pilgrim"
+	set category = "CHOOSE YOUR FATE"
 	set desc = "Choose your new profession on this strange world."
 	if(!ishuman(src))
 		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
@@ -317,7 +317,7 @@ Pilgrim Fate System
 
 /mob/living/carbon/human/proc/citizenclass()
 	set name = "Select your class"
-	set category = "Citizen"
+	set category = "CHOOSE YOUR FATE"
 	set desc = "Remember who you are..."
 	if(!ishuman(src))
 		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
@@ -966,7 +966,7 @@ Pilgrim Fate System
 
 /mob/living/carbon/human/proc/gangerclass()
 	set name = "Select your class"
-	set category = "Ganger"
+	set category = "CHOOSE YOUR FATE"
 	set desc = "Choose your ganger archtype."
 	if(!ishuman(src))
 		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")

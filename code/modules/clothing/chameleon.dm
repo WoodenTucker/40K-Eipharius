@@ -42,9 +42,9 @@
 /obj/item/clothing/under/chameleon
 //starts off as black
 	name = "black jumpsuit"
-	icon_state = "black"
+	icon_state = "chaplain"
 	item_state = "bl_suit"
-	worn_state = "black"
+	worn_state = "chapblack"
 	desc = "It's a plain jumpsuit. It seems to have a small dial on the wrist."
 	origin_tech = list(TECH_ILLEGAL = 3)
 	var/global/list/clothing_choices

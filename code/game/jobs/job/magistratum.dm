@@ -126,7 +126,8 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village,)
-
+		H.verbs += list(
+			/mob/living/carbon/human/proc/enforcerclass)
 		to_chat(H, "<span class='notice'><b><font size=3> An Enforcer in the Magisterium. The Governership order you. Yet the Inquisition can override them. Patrol with the cadets. Make sure they know what they’re doing. Collect taxes and ensure the order of the world is peaceful and good. Be an undercover cop if you’re feeling ballsy.</font></b></span>")
 
 /datum/job/cadet
@@ -170,7 +171,8 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village,)
-
+		H.verbs += list(
+			/mob/living/carbon/human/proc/enforcerclass)
 		to_chat(H, "<span class='notice'><b><font size=3> (NEW PLAYER ROLE) A cadet in the Magisterium. The Deacon order you. Yet the Inquisition can override them. Your job is to assist the other enforcers in punishing crime and collecting taxes. </font></b></span>")
 
 /datum/job/arbitrator
@@ -215,6 +217,55 @@
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_inquisition)
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are an Arbitrator, in service to the Adeptus Arbites -- after a long journey across the sub-sector, you have arrived planetside and can begin your holy work bringing judgement to this planet. Your ultimate loyalty being to Holy Terra herself and the judiciary arm of the Adeptus Arbites.</font></b></span>")
+// FATES
+/mob/living/carbon/human/proc/enforcerclass()
+	set name = "Select your equipment." // Do not give the Investigate this. They spawn with the Mateba.
+	set category = "CHOOSE YOUR FATE"
+	set desc = "Select your equipment."
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
+		return
+
+	var/mob/living/carbon/human/U = src
+	U.verbs -= list(/mob/living/carbon/human/proc/enforcerclass) //removes verb
+	var/fates = list("Judge Dredd","Bounty Hunter","Messina Detective")
+
+
+	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
+
+
+	switch(classchoice)
+
+		if("Judge Dredd")
+			new /obj/item/gun/projectile/bolter_pistol(src.loc)
+			new /obj/item/ammo_magazine/bolt_pistol_magazine(src.loc)
+			new /obj/item/ammo_magazine/bolt_pistol_magazine/ms(src.loc)
+			new /obj/item/melee/sword/combat_knife/bowie(src.loc)
+		if("Bounty Hunter")
+			new /obj/item/melee/sword/machete/chopper/heavy/adamantine(src.loc)
+			if(prob(50))
+				new /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle(src.loc)
+				new /obj/item/ammo_magazine/a762/ap(src.loc)
+				new /obj/item/ammo_magazine/a762/ap(src.loc)
+				new /obj/item/ammo_magazine/a762/ap(src.loc)
+			else
+				new /obj/item/gun/projectile/automatic/messina(src.loc)
+				new /obj/item/ammo_magazine/c556/ap(src.loc)
+				new /obj/item/ammo_magazine/c556/ap(src.loc)
+				new /obj/item/ammo_magazine/c556/ap(src.loc)
+		if("Messina Detective")
+			new /obj/item/reagent_containers/hypospray/autoinjector/tau(src.loc)
+			new /obj/item/ammo_magazine/mc45mm/kp(src.loc)
+			new /obj/item/ammo_magazine/mc45mm/kp(src.loc)
+			new /obj/item/ammo_magazine/mc45mm/ms(src.loc)
+			new /obj/item/gun/projectile/talon/renegade(src.loc)
+
+
+
+
 
 
 //Outfits
@@ -291,10 +342,9 @@
 	l_ear = /obj/item/device/radio/headset/entertainment
 	suit_store = null
 	backpack_contents = list(
-	/obj/item/ammo_magazine/c50/ms = 1,
+	/obj/item/ammo_magazine/c50/ms = 2,
 	/obj/item/gun/energy/taser = 1,
 	/obj/item/handcuffs = 1,
-	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,
 	)
@@ -351,6 +401,7 @@
 	backpack_contents = list( // 1 stun 1 buck box
 	/obj/item/handcuffs = 1,
 	/obj/item/ammo_box/shotgun/msslug = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine/ms = 1,
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 1,
 	/obj/item/stack/thrones2/twenty = 1,
 	)

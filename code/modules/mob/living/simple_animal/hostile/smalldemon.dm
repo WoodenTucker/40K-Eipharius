@@ -6,8 +6,8 @@
 	icon_state = "demon"
 	icon_living = "demon"
 	icon_dead = "demon_dead"
-	maxHealth = 500
-	health = 500
+	maxHealth = 600
+	health = 600
 	universal_speak = 1
 	speak_emote = list("harks")
 	emote_hear = list("growls")
@@ -108,7 +108,7 @@
 		return
 	custom_emote(1, pick( list("slashes at [target_mob]", "bites [target_mob]") ) )
 
-	var/damage = rand(25,55)
+	var/damage = rand(25,45)
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
@@ -130,8 +130,8 @@
 	icon_state = "floater"
 	icon_living = "floater"
 	icon_dead = "floater2"
-	maxHealth = 580
-	health = 580
+	maxHealth = 680
+	health = 680
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -147,7 +147,7 @@
 		return
 	custom_emote(1, pick( list("sloshes at [target_mob]", "pulls [target_mob]") ) ) // attack emotes
 
-	var/damage = rand(30,60) // Damage Value
+	var/damage = rand(25,45) // Damage Value
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
@@ -168,8 +168,8 @@
 	icon_state = "oormat"
 	icon_living = "oormat"
 	icon_dead = "oormat2"
-	maxHealth = 1150
-	health = 1150
+	maxHealth = 1450
+	health = 1450
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -185,7 +185,7 @@
 		return
 	custom_emote(1, pick( list("bites at [target_mob]", "crushes [target_mob]") ) ) // attack emotes
 
-	var/damage = rand(75,90) // Damage Value
+	var/damage = rand(20,60) // Damage Value
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
@@ -206,8 +206,8 @@
 	icon_state = "khorne_daemon" // Average speed. High damage and HP.
 	icon_living = "khorne_daemon"
 	icon_dead = "khorne_daemon_dead_anim"
-	maxHealth = 900
-	health = 900
+	maxHealth = 1400
+	health = 1400
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -223,7 +223,7 @@
 		return
 	custom_emote(1, pick( list("slices at [target_mob]", "tears [target_mob]") ) ) // attack emotes
 
-	var/damage = rand(65,115) // Damage Value
+	var/damage = rand(35,65) // Damage Value
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob

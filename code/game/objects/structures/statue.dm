@@ -464,3 +464,17 @@
 	icon_state = "skull"
 	w_class = ITEM_SIZE_SMALL
 	sales_price = 1
+
+/obj/structure/hivedecor/flesh
+	name = "flesh"
+	desc = "A very old skull, who knows how long it's been there."
+	icon = 'icons/cadia-sprites/migrated2/things2.dmi'
+	icon_state = "2"
+	density = 0
+
+/obj/structure/hivedecor/kitten
+	name = "kitten"
+	desc = "A very old skull, who knows how long it's been there."
+	icon = 'icons/cadia-sprites/migrated2/things.dmi'
+	icon_state = "kitten"
+	density = 0

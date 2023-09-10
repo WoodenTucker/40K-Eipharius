@@ -22,8 +22,8 @@
 	health = 300
 	resistance = 2
 	speed = 1.2 // Higher number means slower.
-	melee_damage_lower = 35 // This only effects if controlled by a player.
-	melee_damage_upper = 65
+	melee_damage_lower = 25 // This only effects if controlled by a player.
+	melee_damage_upper = 40
 
 	min_gas = null
 	max_gas = null
@@ -109,7 +109,7 @@
 		return
 	custom_emote(1, pick( list("slashes at [target_mob]", "rends [target_mob]") ) )
 
-	var/damage = rand(25,55)
+	var/damage = rand(20,40)
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
@@ -146,7 +146,7 @@
 	health = 500
 	resistance = 3
 	speed = 1.5 // Higher number means slower.
-	melee_damage_lower = 25 // This only effects if controlled by a player.
+	melee_damage_lower = 35 // This only effects if controlled by a player.
 	melee_damage_upper = 55
 
 
@@ -155,7 +155,7 @@
 		return
 	custom_emote(1, pick( list("slashes at [target_mob] with their blade", "slams into [target_mob]") ) )
 
-	var/damage = rand(25,65)
+	var/damage = rand(35,55)
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
@@ -182,12 +182,12 @@
 
 	attacktext = "slashes"
 
-	maxHealth = 700
-	health = 700
+	maxHealth = 800
+	health = 800
 	resistance = 3
 	speed = 1.6 // Higher number means slower.
 	melee_damage_lower = 45 // This only effects if controlled by a player.
-	melee_damage_upper = 75
+	melee_damage_upper = 60
 
 
 /mob/living/simple_animal/hostile/tyranid/AttackingTarget()
@@ -195,7 +195,7 @@
 		return
 	custom_emote(1, pick( list("slashes at [target_mob] with their blade", "slams into [target_mob]") ) )
 
-	var/damage = rand(45,85)
+	var/damage = rand(45,60)
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
