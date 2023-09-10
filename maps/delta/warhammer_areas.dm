@@ -604,6 +604,8 @@ Area basic template
 /area/cadiaoutpost/oa/engineering/engine/enginewaste
 	name = "Engine Waste"
 	icon_state = "engine_waste"
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+	requires_power = 0
 
 /area/cadiaoutpost/oa/engineering/engine/enginesmes
 	name = "Engine Smes"

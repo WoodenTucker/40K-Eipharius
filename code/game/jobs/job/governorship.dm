@@ -103,7 +103,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 /mob/living/carbon/human/proc/governorclass()
 	set name = "Select your class"
-	set category = "Governor"
+	set category = "CHOOSE YOUR FATE"
 	set desc = "Roll the dice and discover a new story."
 	if(!ishuman(src))
 		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
@@ -154,7 +154,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 /mob/living/carbon/human/proc/servantclass()
 	set name = "Select your class"
-	set category = "Governor"
+	set category = "CHOOSE YOUR FATE"
 	set desc = "Roll the dice and discover a new story."
 	if(!ishuman(src))
 		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")

@@ -102,7 +102,7 @@
 // CLASSES
 /mob/living/carbon/human/proc/inqclass()
 	set name = "Select your equipment." // INQUISITORS GEAR
-	set category = "INQUISITION"
+	set category = "CHOOSE YOUR FATE"
 	set desc = "Select your equipment."
 	if(!ishuman(src))
 		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
@@ -219,7 +219,7 @@
 
 /mob/living/carbon/human/proc/eqclass()
 	set name = "Select your equipment" // INTERROGATORS GEAR
-	set category = "INQUISITION"
+	set category = "CHOOSE YOUR FATE"
 	set desc = "Roll the dice and discover a new story."
 	if(!ishuman(src))
 		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")

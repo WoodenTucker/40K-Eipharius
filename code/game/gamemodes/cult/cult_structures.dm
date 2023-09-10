@@ -108,10 +108,10 @@
 */
 
 /obj/effect/gateway
-	name = "gateway"
+	name = "what the fuck..."
 	desc = "You're pretty sure that abyss is staring back."
-	icon = 'icons/obj/cult.dmi'
-	icon_state = "hole"
+	icon = 'icons/cadia-sprites/migrated2/things.dmi'
+	icon_state = "kitten"
 	density = 1
 	unacidable = 1
 	anchored = 1.0
@@ -130,10 +130,13 @@
 /obj/effect/gateway/active
 	light_range=5
 	light_color="#ff0000"
+	icon = 'icons/cadia-sprites/migrated2/things.dmi'
+	icon_state = "kitten"
 	spawnable=list(
-		/mob/living/simple_animal/hostile/scarybat,
-		/mob/living/simple_animal/hostile/creature,
-		/mob/living/simple_animal/hostile/faithless
+		/mob/living/simple_animal/hostile/smalldemon,
+		/mob/living/simple_animal/hostile/shadow,
+		/mob/living/simple_animal/hostile/smalldemon/bloodletter,
+		/mob/living/simple_animal/hostile/smalldemon/chaos
 	)
 
 /obj/effect/gateway/active/cult
@@ -146,7 +149,7 @@
 	)
 
 /obj/effect/gateway/active/New()
-	spawn(rand(30,60) SECONDS)
+	spawn(rand(100,200) SECONDS)
 		var/t = pick(spawnable)
 		new t(src.loc)
 		qdel(src)

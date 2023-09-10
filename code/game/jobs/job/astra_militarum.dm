@@ -527,7 +527,7 @@ datum/job/ig/bullgryn
 // CLASSES
 /mob/living/carbon/human/proc/guardclass()
 	set name = "Select your class"
-	set category = "The Imperium"
+	set category = "CHOOSE YOUR FATE"
 	set desc = "Roll the dice and discover a new story."
 	if(!ishuman(src))
 		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
@@ -597,7 +597,7 @@ datum/job/ig/bullgryn
 
 /mob/living/carbon/human/proc/veteranclass()
 	set name = "Select your class"
-	set category = "The Imperium"
+	set category = "CHOOSE YOUR FATE"
 	set desc = "Roll the dice and discover a new story."
 	if(!ishuman(src))
 		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
@@ -675,7 +675,7 @@ datum/job/ig/bullgryn
 
 /mob/living/carbon/human/proc/medicclass()
 	set name = "Select your class"
-	set category = "The Imperium"
+	set category = "CHOOSE YOUR FATE"
 	set desc = "Roll the dice and discover a new story."
 	if(!ishuman(src))
 		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
