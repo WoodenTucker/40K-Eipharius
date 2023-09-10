@@ -1526,6 +1526,20 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/gatehouse)
+"buu" = (
+/obj/structure/table/steel_reinforced,
+/obj/machinery/button/remote/blast_door/lever{
+	name = "LOCKDOWN WHOLE DISTRICT";
+	id = "east";
+	pixel_x = 8
+	},
+/obj/machinery/button/remote/blast_door/lever{
+	name = "West Shutter";
+	id = "west";
+	pixel_x = -8
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/villageinside)
 "bvd" = (
 /turf/simulated/shuttle/wall/corner/dark{
 	color = "grey";
@@ -43789,11 +43803,11 @@ vAK
 mDA
 cXJ
 pLj
-pLj
-vAK
-vAK
-vAK
-vAK
+buu
+mDA
+mDA
+mDA
+mDA
 pLj
 fsF
 fsF
@@ -44042,10 +44056,10 @@ mDA
 tNW
 tNW
 mDA
-vAK
-vAK
-vAK
-vAK
+mDA
+mDA
+mDA
+mDA
 pLj
 fsF
 ggv
@@ -44295,9 +44309,9 @@ cXJ
 pLj
 mDA
 mDA
-vAK
-vAK
-vAK
+mDA
+mDA
+mDA
 pLj
 pLj
 pLj
@@ -44548,9 +44562,9 @@ lDN
 mDA
 mDA
 mDA
-vAK
-vAK
-vAK
+mDA
+mDA
+mDA
 vAK
 vAK
 fpD
