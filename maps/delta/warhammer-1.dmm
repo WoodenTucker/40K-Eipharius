@@ -7340,6 +7340,21 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
+"zG" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/wall/r_wall,
+/area/cadiaoutpost/oa/hangarpact)
 "zK" = (
 /obj/structure/table/steel,
 /obj/item/card/id/silver{
@@ -11721,7 +11736,9 @@
 /area/cadiaoutpost/oa/caves/dark)
 "Ou" = (
 /obj/machinery/door/firedoor,
-/turf/simulated/wall,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/hangarpact)
 "Ov" = (
 /obj/structure/cable{
@@ -12607,7 +12624,9 @@
 	icon_state = "4-8";
 	pixel_y = 0
 	},
-/turf/simulated/wall,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/hangarpact)
 "Rt" = (
 /obj/item/humanskin,
@@ -12625,9 +12644,8 @@
 /area/cadiaoutpost/oa/caves/dark)
 "Rv" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/shuttle/wall{
-	color = "grey";
-	icon_state = "wall3"
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "Rx" = (
@@ -14773,9 +14791,7 @@
 	icon_state = "intact";
 	dir = 5
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
+/turf/simulated/wall/r_wall,
 /area/cadiaoutpost/oa/hangarpact)
 "YU" = (
 /obj/structure/torchwall/service{
@@ -60495,7 +60511,7 @@ mj
 mj
 mj
 mj
-mj
+pz
 mj
 mj
 mj
@@ -60747,7 +60763,7 @@ mj
 mj
 mj
 mj
-mj
+pz
 MN
 mj
 MN
@@ -60999,7 +61015,7 @@ mj
 mj
 mj
 mj
-mj
+pz
 jN
 bI
 jN
@@ -61750,9 +61766,9 @@ mj
 mj
 mj
 mj
-mj
-mj
-mj
+pz
+pz
+pz
 mj
 mj
 mj
@@ -63520,7 +63536,7 @@ jN
 jN
 jN
 al
-Hh
+zG
 cT
 jN
 XQ
