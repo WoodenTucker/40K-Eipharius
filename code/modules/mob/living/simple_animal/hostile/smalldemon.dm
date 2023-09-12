@@ -364,6 +364,7 @@
 	speed = 1
 	maxHealth = 320
 	health = 320
+	faction = "Demon"
 
 	harm_intent_damage = 20
 	melee_damage_lower = 25
@@ -390,6 +391,7 @@
 	speed = 1.5
 	maxHealth = 285
 	health = 285
+	faction = "Demon"
 
 	harm_intent_damage = 30
 	melee_damage_lower = 35

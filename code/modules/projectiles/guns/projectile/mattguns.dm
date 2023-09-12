@@ -971,7 +971,7 @@
 	else
 		icon_state = "bangbolter-e"
 
-/obj/item/gun/projectile/boltrifle/lockebolter //needs lots of work and love, ok standin for now
+/obj/item/gun/projectile/lockebolter //needs lots of work and love, ok standin for now
 	name = "Locke Pattern bolter"
 	desc = "The Locke Pattern Bolter, designed for Adeptus Arbites personnel when heavier firepower are required. Can also be found in hands of Astra Militarum officers, veterans and Commissar, Though relatively uncommon. It is a human-sized Bolter, Thus it's very popular among the troops and the lucky ones who get their hands on one of these bad boy."
 	icon_state = "lockebolter"
@@ -987,6 +987,7 @@
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
+	caliber = ".75"
 	ammo_type = /obj/item/ammo_casing/bolter
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
 	allowed_magazines = list(/obj/item/ammo_magazine/bolt_rifle_magazine)
@@ -1010,7 +1011,7 @@
 		list(mode_name="3-round bursts", burst=3, fire_delay=4.6, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
 		)
 
-/obj/item/gun/projectile/boltrifle/lockebolter/New()
+/obj/item/gun/projectile/lockebolter/New()
 	..()
 	slowdown_per_slot[slot_back] = 0.1
 	slowdown_per_slot[slot_wear_suit] = 0.2
@@ -1018,7 +1019,7 @@
 	slowdown_per_slot[slot_r_hand] = 0.4
 	slowdown_per_slot[slot_l_hand] = 0.4
 
-/obj/item/gun/projectile/boltrifle/lockebolter/drusian //needs lots of work and love, ok standin for now
+/obj/item/gun/projectile/lockebolter/drusian //needs lots of work and love, ok standin for now
 	name = "Drusian Pattern bolter"
 	desc = "The Drusian Pattern Bolter, designed initially for Adeptus Arbites personnel when heavier firepower are required -- this Pattern is a variant with higher factorum standards and is produced by the Priests of Mars under the greatest of machine scrutiny. Can also be found in hands of Astra Militarum officers, veterans and Commissar, this pattern is incredibly rare."
 	icon_state = "lockebolter"
@@ -1029,6 +1030,7 @@
 	load_method = MAGAZINE
 	one_hand_penalty = 2.2 //its a bolter not a toy gun
 	ammo_type = /obj/item/ammo_casing/bolter
+	caliber = ".75"
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
 	allowed_magazines = list(/obj/item/ammo_magazine/bolt_rifle_magazine)
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
@@ -1052,28 +1054,28 @@
 		list(mode_name="3-round bursts", burst=3, fire_delay=4.4, burst_accuracy=list(0,0,-1), dispersion=null, automatic = 0),
 		)
 
-/obj/item/gun/projectile/boltrifle/lockebolter/update_icon()
+/obj/item/gun/projectile/lockebolter/update_icon()
 	..()
 	if(ammo_magazine)
 		icon_state = "lockebolter-30"
 	else
 		icon_state = "lockebolter-e"
 
-/obj/item/gun/projectile/boltrifle/lockebolter/infernobolter
+/obj/item/gun/projectile/lockebolter/infernobolter
 	name = "Inferno Bolter"
 	desc = "Corrupted by the warp, this bolter once was owned by a Heretic Astartes. The chaos infused into it made it capable of being fired by a human. But it's capabilities have suffered. Just as planned."
 	icon_state = "1kbolter"
 	loaded_icon = "1kbolter-30"
 	unloaded_icon = "1kbolter-e"
 	accuracy = 1.2
-/obj/item/gun/projectile/boltrifle/lockebolter/infernobolter/update_icon()
+/obj/item/gun/projectile/lockebolter/infernobolter/update_icon()
 	..()
 	if(ammo_magazine)
 		icon_state = "1kbolter-30"
 	else
 		icon_state = "1kbolter-e"
 
-/obj/item/gun/projectile/boltrifle/sisterbolter
+/obj/item/gun/projectile/lockebolter/sisterbolter
 	name = "Godwyn-De'az Pattern Bolter Rifle"
 	desc = "A modified bolter rifle, developed specifically for the Adepta Sororitas. This rifle is almost more scripture than weapon, and is clearly wielded by a devout woman. A large Sarissa is attached to the end of it, useful for carving the Emperor's Mercy from the flesh of those who defy him. <i>She was an angel, pure as righteous destruction. She laid low the twisted and lifted the hearts of the righteous. At her passing, a million voices cried out her name. Shall we ever again see her like? No, not now, nor ever again...</i>"
 	force = 20 //what even is this description?
@@ -1086,6 +1088,7 @@
 	max_shells = 30
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
 	one_hand_penalty = 2 //its still a bolter bro...
+	caliber = ".75"
 	ammo_type = /obj/item/ammo_casing/bolter
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine/sister
 	allowed_magazines = list(/obj/item/ammo_magazine/bolt_rifle_magazine, /obj/item/ammo_magazine/bolt_rifle_magazine/sister)
@@ -1114,14 +1117,14 @@
 		list(mode_name="3-round bursts", burst=3, fire_delay=3.8, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
 
-/obj/item/gun/projectile/boltrifle/sisterbolter/update_icon()
+/obj/item/gun/projectile/lockebolter/sisterbolter/update_icon()
 	..()
 	if(ammo_magazine)
 		icon_state = "sisterbolter-30"
 	else
 		icon_state = "sisterbolter-30-e"
 
-/obj/item/gun/projectile/boltrifle/sisterbolter/New()
+/obj/item/gun/projectile/lockebolter/sisterbolter/New()
 	..()
 	slowdown_per_slot[slot_back] = 0.1
 	slowdown_per_slot[slot_wear_suit] = 0.2

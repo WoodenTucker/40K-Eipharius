@@ -539,7 +539,7 @@ Template:
 
 /obj/random/loot/goodweapon/spawn_choices()
 	return list(
-				/obj/item/gun/projectile/boltrifle/lockebolter = 1,
+				/obj/item/gun/projectile/lockebolter = 1,
 				/obj/item/gun/projectile/bolter_pistol/inquis = 1,
 				/obj/item/gun/energy/pulse/plasma/rifle = 1,
 				/obj/item/gun/energy/pulse/plasma/pistol = 3,

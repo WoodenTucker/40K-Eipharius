@@ -139,12 +139,12 @@
 /datum/cargo_entry/weapon/lockebolter
 	name = "Locke Bolter"
 	cost = 230
-	item_path = /obj/item/gun/projectile/boltrifle/lockebolter
+	item_path = /obj/item/gun/projectile/lockebolter
 
 /datum/cargo_entry/weapon/drusianbolter
 	name = "Drusian Bolter"
 	cost = 300
-	item_path = /obj/item/gun/projectile/boltrifle/lockebolter/drusian
+	item_path = /obj/item/gun/projectile/lockebolter/drusian
 
 /datum/cargo_entry/weapon/plasmapistol
 	name = "Plasma Pistol"

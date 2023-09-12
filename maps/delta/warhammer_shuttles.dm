@@ -35,13 +35,13 @@
 /obj/effect/shuttle_landmark/ferry/bloodpact_end
 	name = "Messina Blood Pact Hanger"
 	landmark_tag = "bloodpact_end"
-	base_area = /area/cadiaoutpost/oa/hangarpact
+	base_area = /area/cadiaoutpost/oa/hangarpact2
 	base_turf = /turf/simulated/floor/plating
 
 /obj/effect/shuttle_landmark/ferry/bloodpact_start
 	name = "Derelict Blood Pact Station"
 	landmark_tag = "bloodpact_start"
-	base_area = /area/cadiaoutpost/oa/hangarpact
+	base_area = /area/cadiaoutpost/oa/hangarpact2
 	base_turf = /turf/simulated/floor/plating
 
 /obj/machinery/computer/shuttle_control/ferry/bloodpact

@@ -65,17 +65,18 @@
 /proc/check_collision(area/target_area, list/target_turfs)
 	for(var/target_turf in target_turfs)
 		var/turf/target = target_turf
-		if(!target)
+		if(target.density)
+			message_admins("Dense turf")
+			return TRUE //dense turf
+	return FALSE
+
+	/*	if(!target)
 			message_admins("Edge of map")
 			return TRUE //collides with edge of map
 
 		if(target.loc != target_area)
 			message_admins("Area collision ([target.loc] & [target_area])")
-			return TRUE //collides with another area
-		if(target.density)
-			message_admins("Dense turf")
-			return TRUE //dense turf
-	return FALSE
+			return TRUE */ //collides with another area 
 
 //Self-naming/numbering ones.
 /obj/effect/shuttle_landmark/automatic

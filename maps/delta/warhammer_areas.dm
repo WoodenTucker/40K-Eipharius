@@ -566,6 +566,12 @@ Area basic template
 	music = 'sound/newmusic/Lab_Experiment.ogg'
 	requires_power = FALSE
 
+/area/cadiaoutpost/oa/hangarpact2
+	name = "Pact Hangar"
+	icon_state = "red"
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+	requires_power = FALSE
+
 /area/cadiaoutpost/oa/hangarmech
 	name = "Mechanicus Hangar"
 	icon_state = "red"

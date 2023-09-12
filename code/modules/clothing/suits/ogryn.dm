@@ -5,7 +5,7 @@
 	icon_state = "ogryn_5"
 	item_state = "ogryn_5"
 	str_requirement = 15 // they can get gibbed and their armor stays. helmet has it, so why not armor too
-	canremove = 0
+	canremove = 1
 	desc = "Worn to shreds and covered in spikes."
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 50, bullet = 50, laser = 50, energy = 25, bomb = 30, bio = 30, rad = 20)
