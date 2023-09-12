@@ -2197,7 +2197,7 @@ CIRCUITS BELOW
 	id = "bolterlocke"
 	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 5, TECH_COMBAT = 5)
 	materials = list(DEFAULT_WALL_MATERIAL = 5000, "diamond" = 12000, "phoron" = 200)
-	build_path = /obj/item/gun/projectile/boltrifle/lockebolter
+	build_path = /obj/item/gun/projectile/lockebolter
 	sort_string = "ZACS"
 
 /datum/design/item/bolter/drusian
@@ -2205,7 +2205,7 @@ CIRCUITS BELOW
 	id = "bolterdrusian"
 	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 6)
 	materials = list("diamond" = 19000, "phoron" = 200)
-	build_path = /obj/item/gun/projectile/boltrifle/lockebolter/drusian
+	build_path = /obj/item/gun/projectile/lockebolter/drusian
 	sort_string = "ZACT"
 
 /datum/design/item/bolter/godwyn

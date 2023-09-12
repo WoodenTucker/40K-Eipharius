@@ -585,7 +585,7 @@
 	glasses = /obj/item/clothing/glasses/hud/health
 	id_type = /obj/item/card/id/dog_tag
 	l_pocket = /obj/item/storage/box/ifak
-	l_hand = /obj/item/gun/projectile/boltrifle/sisterbolter
+	l_hand = /obj/item/gun/projectile/lockebolter/sisterbolter
 	r_pocket = /obj/item/storage/box/coin
 	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
 	backpack_contents = list(
@@ -611,7 +611,7 @@
 	l_pocket = /obj/item/storage/box/ifak
 	l_hand = /obj/item/melee/chain/mercycs
 	r_pocket = /obj/item/storage/box/coin
-	r_hand = /obj/item/gun/projectile/boltrifle/sisterbolter
+	r_hand = /obj/item/gun/projectile/lockebolter/sisterbolter
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 3,
 	/obj/item/reagent_containers/food/snacks/warfare = 1,
@@ -635,7 +635,7 @@
 	id_type = /obj/item/card/id/dog_tag
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/storage/box/coin
-	l_hand = /obj/item/gun/projectile/boltrifle/sisterbolter
+	l_hand = /obj/item/gun/projectile/lockebolter/sisterbolter
 	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 2,
@@ -661,7 +661,7 @@
 	r_pocket = /obj/item/storage/box/coin
 	id_type = /obj/item/card/id/dog_tag
 	l_pocket = /obj/item/storage/box/ifak
-	l_hand = /obj/item/gun/projectile/boltrifle/sisterbolter
+	l_hand = /obj/item/gun/projectile/lockebolter/sisterbolter
 	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 2,

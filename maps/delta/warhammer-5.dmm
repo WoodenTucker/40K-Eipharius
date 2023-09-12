@@ -2450,7 +2450,7 @@
 /obj/item/ammo_magazine/bolt_rifle_magazine,
 /obj/item/ammo_magazine/bolt_rifle_magazine/kp,
 /obj/structure/table/rack/dark,
-/obj/item/gun/projectile/boltrifle/lockebolter/drusian,
+/obj/item/gun/projectile/lockebolter/drusian,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "op" = (

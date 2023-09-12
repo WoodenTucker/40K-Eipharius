@@ -129,7 +129,7 @@
 /datum/noble_entry/weapon/lockebolter
 	name = "Locke Bolter"
 	cost = 260
-	item_path = /obj/item/gun/projectile/boltrifle/lockebolter
+	item_path = /obj/item/gun/projectile/lockebolter
 
 /datum/noble_entry/weapon/plasmapistol
 	name = "Plasma Pistol"

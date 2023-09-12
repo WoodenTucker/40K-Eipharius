@@ -129,7 +129,7 @@
 			new /obj/item/gun/projectile/bolter_pistol/inquis(src.loc)
 			new /obj/item/ammo_magazine/bolt_pistol_magazine/kp(src.loc)
 			if(prob(40))
-				new /obj/item/gun/projectile/boltrifle/lockebolter/drusian(src.loc)
+				new /obj/item/gun/projectile/lockebolter/drusian(src.loc)
 				new /obj/item/ammo_magazine/bolt_rifle_magazine/kp(src.loc)
 				new /obj/item/ammo_magazine/bolt_rifle_magazine(src.loc)
 			else
