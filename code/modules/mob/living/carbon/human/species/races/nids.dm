@@ -26,7 +26,6 @@
 	/mob/living/carbon/human/genestealer/proc/corrosive_acid,
 	/mob/living/carbon/human/genestealer/proc/gsheal,
 	/mob/living/carbon/human/genestealer/proc/givestealerstats,
-	/mob/living/carbon/human/genestealer/proc/stinger,
 	 )
 	slowdown = -0.5
 	unarmed_types = list(
@@ -153,7 +152,7 @@
 				affecting.take_damage(9, 0, DAM_SHARP, "large organic needle")
 				playsound(src, 'sound/effects/lecrunch.ogg', 50, 0, -1)
 
-		if(!do_mob(src, T, 50))
+		if(!do_mob(src, T, 20))
 			to_chat(src, "<span class='warning'>Our conversion of [T] has been interrupted!</span>")
 			isconverting = 0
 			return
@@ -171,12 +170,13 @@
 	src.mind.special_role = "Tyranid"
 	T.AddInfectionImages()
 	src.AddInfectionImages()//likely redundant but sometimes they don't show so better to make it check twice on both parties.
+	T.AddInfectionImages()
 	T.add_language(LANGUAGE_TYRANID)
 	src.dnastore++
-	T.adjustOxyLoss(-1)
-	T.adjustBruteLoss(-1)
-	T.adjustToxLoss(-1)
-	T.adjustBrainLoss(-1)
+	T.adjustOxyLoss(-10)
+	T.adjustBruteLoss(-10)
+	T.adjustToxLoss(-10)
+	T.adjustBrainLoss(-10)
 	T.inject_blood(src, 500)
 	return 1
 
@@ -310,16 +310,6 @@
 	put_in_hands(new /obj/item/melee/powermaul/nidstun)
 	src.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 	return
-
-/mob/living/carbon/human/genestealer/proc/stinger()
-	set name = "Unsheathe Knockout Stinger (0)"
-	set category = "Tyranid"
-	set desc = "Gives their knockout talon"
-
-	put_in_hands(new /obj/item/clothing/ring/reagent/sleepy/nid)
-	src.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-	return
-
 
 //Begin nid items
 

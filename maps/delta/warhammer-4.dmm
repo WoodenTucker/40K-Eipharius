@@ -67,6 +67,12 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/northern)
+"av" = (
+/obj/item/melee/trench_axe/bardiche,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/hive_city)
 "az" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 5;
@@ -826,6 +832,12 @@
 	},
 /turf/simulated/open,
 /area/cadiaoutpost/oa/gatehouse)
+"em" = (
+/obj/item/melee/sword/machete/chopper/heavy,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/hive_city)
 "en" = (
 /obj/item/clothing/suit/armor/sentry/red,
 /obj/item/clothing/head/legacy/sentryhelm/red,
@@ -2326,6 +2338,12 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
+"lu" = (
+/obj/item/melee/sword/broadsword,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/hive_city)
 "lw" = (
 /obj/structure/warfare/barricade/concrete_barrier{
 	dir = 8
@@ -3199,6 +3217,12 @@
 	dir = 10
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
+"qw" = (
+/obj/item/melee/classic_baton/trench_club,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/hive_city)
 "qx" = (
 /obj/structure/torchwall/service{
 	pixel_y = 32
@@ -4825,6 +4849,12 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel)
+"yR" = (
+/obj/item/melee/trench_axe/glaive,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/hive_city)
 "yU" = (
 /obj/effect/floor_decal/newcorner/reinforced,
 /turf/simulated/floor/tiled,
@@ -6145,6 +6175,12 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/inn)
+"FV" = (
+/obj/item/melee/sword/combat_knife/rare,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/hive_city)
 "FW" = (
 /obj/machinery/light{
 	dir = 4;
@@ -8423,6 +8459,7 @@
 /obj/structure/banner/blue{
 	pixel_y = -32
 	},
+/obj/item/gun/energy/las/laspistol/shitty,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -9124,6 +9161,18 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/farm)
+"Tl" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 1
+	},
+/obj/structure/banner/red{
+	pixel_y = 32
+	},
+/obj/item/melee/trench_axe/lance,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/hive_city)
 "Tp" = (
 /obj/item/card/id/key/grand/monastary/inner,
 /obj/item/card/id/key/grand/monastary,
@@ -9198,6 +9247,12 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
+"TO" = (
+/obj/item/gun/energy/las/laspistol/shitty,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/hive_city)
 "TP" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -67342,8 +67397,8 @@ uU
 Sb
 IG
 kv
-mQ
-mQ
+em
+TO
 NK
 IG
 wt
@@ -67371,8 +67426,8 @@ rd
 wt
 IG
 WL
-mQ
-mQ
+qw
+lu
 Qz
 IG
 Sb
@@ -67876,7 +67931,7 @@ aQ
 lq
 IE
 vJ
-mQ
+FV
 jJ
 IG
 Sb
@@ -68098,7 +68153,7 @@ uU
 Sb
 IG
 BK
-mQ
+yR
 Ya
 Pp
 ty
@@ -68350,7 +68405,7 @@ uU
 Sb
 IG
 IE
-mQ
+TO
 oz
 Pp
 IG
@@ -68379,7 +68434,7 @@ pS
 wt
 IG
 le
-mQ
+TO
 mQ
 Pp
 IG
@@ -68601,7 +68656,7 @@ uU
 uU
 Sb
 IG
-kv
+Tl
 PE
 mQ
 EJ
@@ -68631,8 +68686,8 @@ rd
 wt
 IG
 WL
-mQ
-mQ
+av
+em
 jH
 IG
 Sb

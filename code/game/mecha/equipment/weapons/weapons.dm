@@ -203,6 +203,7 @@
 	projectile = /obj/item/projectile/bullet/pellet/shotgun // mechwarrior enjoyer
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
 	fire_volume = 80
+	fire_cooldown = 26
 	projectiles = 40
 	projectiles_per_shot = 4
 	deviation = 0.7
@@ -211,7 +212,7 @@
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg
 	name = "\improper Reaper pattern autocannon"
 	icon_state = "mecha_uac2"
-	equip_cooldown = 10
+	equip_cooldown = 36
 	projectile = /obj/item/projectile/bullet/pistol/medium
 	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
 	projectiles = 300
@@ -223,7 +224,7 @@
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/assault
 	name = "\improper Mark VIII Absolo pattern assault cannon"
 	equip_cooldown = 20
-	fire_cooldown = 12
+	fire_cooldown = 44
 	projectiles_per_shot = 6
 	projectiles = 900
 	projectile_energy_cost = 120 KILOWATTS
@@ -378,7 +379,7 @@
     projectiles_per_shot = 1
     deviation = 0.45
     projectile_energy_cost = 8 KILOWATTS
-    fire_cooldown = 8
+    fire_cooldown = 18
 
 /*
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/flashbang
@@ -424,7 +425,7 @@
     projectiles_per_shot = 2
     deviation = 0.6
     projectile_energy_cost = 8 KILOWATTS
-    fire_cooldown = 15
+    fire_cooldown = 24
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/assaultcannon
 	name = "Mark VIII Absolo pattern assault cannon"
@@ -435,7 +436,7 @@
 	projectile_energy_cost = 12 KILOWATTS
 	projectiles_per_shot = 2
 	deviation = 0.3
-	fire_cooldown = 30
+	fire_cooldown = 34
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/explosive/krak
     name = "Krak Missile Launcher"
@@ -466,7 +467,7 @@
     projectiles = 100
     projectile_energy_cost = 200 KILOWATTS
     equip_cooldown = 40
-    fire_cooldown = 20
+    fire_cooldown = 30
 
 /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/lascannon
 	equip_cooldown = 15
@@ -485,7 +486,7 @@
 	energy_drain = 6 KILOWATTS
 	projectile = /obj/item/projectile/beam/multilas
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
-	fire_cooldown = 10
+	fire_cooldown = 15
 	fire_volume = 50
 	projectiles_per_shot = 4
 	deviation = 0.5
@@ -501,4 +502,4 @@
     projectiles_per_shot = 8
     deviation = 0.8
     projectile_energy_cost = 8 KILOWATTS
-    fire_cooldown = 0
+    fire_cooldown = 22

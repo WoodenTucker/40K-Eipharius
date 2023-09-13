@@ -54,8 +54,8 @@
 
 /datum/job/ig/guardsman
 	title = "Imperial Guardsman"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	auto_rifle_skill = 8
 	semi_rifle_skill = 8
@@ -202,8 +202,8 @@ datum/job/ig/bullgryn
 	title = "Bullgryn"
 	social_class = SOCIAL_CLASS_MED //is it lore accurate? no, does it make sense to have a bullgryn here? also no
 	selection_color = "#33813A"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "Da Emprah. Da Commesar, and da little on's!"
 	outfit_type = /decl/hierarchy/outfit/job/bullgryn
 	latejoin_at_spawnpoints = TRUE

@@ -432,7 +432,6 @@
 	dat += "<A href='byond://?src=\ref[src];janissary=1'>Purchase a Vessorine Janissary (150)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a Ogryn (UNAVAILABLE) (450)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a Psyker (UNAVAILABLE) (450)</A><BR>"
-	dat += "<A href='byond://?src=\ref[src];scion=1'>Purchase a Tempestus Scion (300)</A><BR>"
 	dat += "<B>Xeno scum</B><HR>"
 	dat += "Each xenos comes in a wooden crate and fitted with a sedative implant to prevent unwanted awakening. You can disable the implant using golden writ. You must have exceptional leadership skills to maintain discipline among the xenos mercenaries, otherwise expect a revolt. Expect increased attention from the Ordo Xenos Inquisition as well.<HR>"
 	dat += "<A href='byond://?src=\ref[src];ork=1'>Purchase a Ork Freeboota (350)</A><BR>"
@@ -535,23 +534,6 @@
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
 					GLOB.thrones -= 150
-					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
-				return
-	if (href_list["scion"])
-		if(GLOB.thrones < 300)
-			visible_message("You cannot afford that!")
-			return
-		else
-			for (var/datum/job/job in SSjobs.occupations)
-			var/job = "Tempestus Scion"
-			if (job)
-				var/res = SSjobs.FreeRole(job)
-				if(res == 0)
-					visible_message("We have sent you enough [job]s. Wait for them to arrive before ordering new ones.")
-				if(res == 1)
-					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
-					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
-					GLOB.thrones -= 300
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["ork"])

@@ -179,8 +179,8 @@
 	title = "Arbitrator"
 	head_position = 1
 	supervisors = "The Adeptus Arbites"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	social_class = SOCIAL_CLASS_HIGH
 	selection_color = "#c9952f"
 	outfit_type = /decl/hierarchy/outfit/job/ig/arbitrator
