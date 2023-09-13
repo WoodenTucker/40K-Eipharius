@@ -14,7 +14,13 @@
 	if(display_freq in HIVE_FREQS)
 		freq_text = "Hive Mind"
 	else if(display_freq in IMP_FREQS)
-		freq_text = "Imperial"
+		freq_text = "Vox"
+	else if(display_freq in SRV_FREQ)
+		freq_text = "Militarum"
+	else if(display_freq in AI_FREQ)
+		freq_text = "Omega"
+	else if(display_freq in ERT_FREQ)
+		freq_text = "Violet"
 	else if(display_freq in ALPHA_FREQS)
 		freq_text = "Alpha"
 	else if(display_freq in BRAVO_FREQS)
@@ -22,7 +28,7 @@
 	else if(display_freq in CHARLIE_FREQS)
 		freq_text = "Charlie"
 	else if(display_freq in INQ_FREQS)
-		freq_text = "Inquisition"
+		freq_text = "Vermillion"
 	else if(display_freq in ANTAG_FREQS)
 		freq_text = "#unkn"
 	else
