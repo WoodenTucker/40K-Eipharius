@@ -752,7 +752,7 @@ Pilgrim Fate System
 	back = /obj/item/storage/backpack/satchel/warfare/ogryn
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/armor/ogryn/bouncer
-	l_ear = /obj/item/device/radio/headset/headset_service
+	l_ear = /obj/item/device/radio/headset/ert
 	r_ear = null
 	l_pocket = /obj/item/device/flashlight/lantern
 	pda_slot = null
@@ -772,7 +772,7 @@ Pilgrim Fate System
 	uniform = /obj/item/clothing/under/waiter
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = /obj/item/device/radio/headset/headset_service
+	l_ear = /obj/item/device/radio/headset/ert
 	r_ear = null
 	shoes = /obj/item/clothing/shoes/dress
 	gloves = /obj/item/clothing/gloves/latex
@@ -846,7 +846,7 @@ Pilgrim Fate System
 	id_type = /obj/item/card/id/pilgrim/innkeeper
 	r_pocket = /obj/item/storage/box/coin
 	pda_type = /obj/item/device/pda/penitent
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/ert
 	r_ear = null
 	belt = /obj/item/device/flashlight/lantern
 	pda_slot = null
@@ -866,7 +866,7 @@ Pilgrim Fate System
 	head = /obj/item/clothing/head/helmet/hauberk
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	shoes = null
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/ert
 	r_ear = null
 	id_type = null
 	r_pocket = /obj/item/storage/box/coin
@@ -992,7 +992,7 @@ Pilgrim Fate System
 			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc) 
 			new /obj/item/clothing/suit/armor/goliathplate(src.loc) 
 			new /obj/item/clothing/head/helmet/gangerhelm(src.loc) 
-			new /obj/item/device/radio/headset/headset_service(src.loc) 
+			new /obj/item/device/radio/headset/ert(src.loc) 
 			new /obj/item/storage/backpack/satchel/warfare(src.loc) 
 			new /obj/item/melee/classic_baton/trench_club(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)  
@@ -1008,7 +1008,7 @@ Pilgrim Fate System
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/penitent, slot_w_uniform)
 			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc) 
 			new /obj/item/clothing/suit/storage/vest/tactical(src.loc) 
-			new /obj/item/device/radio/headset/headset_sci(src.loc) 
+			new /obj/item/device/radio/headset/ert(src.loc) 
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id) 
 			new /obj/item/gun/projectile/automatic/machinepistol(src.loc) 
 			new /obj/item/ammo_magazine/mc9mmt/machinepistol(src.loc) 
@@ -1025,6 +1025,7 @@ Pilgrim Fate System
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			new /obj/item/storage/belt/medical/full(src.loc)  
 			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc) 
+			new /obj/item/device/radio/headset/ert(src.loc) 
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id) 
 			new /obj/item/stack/thrones3/twenty(src.loc) 
 			new /obj/item/stack/thrones3/twenty(src.loc) 

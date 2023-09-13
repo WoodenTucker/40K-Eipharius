@@ -225,13 +225,13 @@
 	desc = "A headset used by the box pushers."
 	icon_state = "cargo_headset"
 	item_state = "headset"
-	ks1type = /obj/item/device/encryptionkey/headset_sci
-	ks2type = /obj/item/device/encryptionkey/red_alpha
+	ks1type = /obj/item/device/encryptionkey/headset_cargo
+	ks2type = null
 
 //basic 'common' vox
 /obj/item/device/radio/headset/headset_service
 	icon = 'icons/obj/radio.dmi'
-	name = "vox-caster headset"
+	name = "Standard Issue Vox"
 	desc = "A stripped down version of the standard Guard issue vox."
 	ks1type = /obj/item/device/encryptionkey/red
 	icon_state = "sec_headset"
@@ -244,7 +244,7 @@
 	icon = 'icons/obj/radio.dmi'
 	name = "Marshal vox"
 	desc = "A stripped down version of the standard Guard issue vox. This one has been upgraded with a com-link"
-	ks1type = /obj/item/device/encryptionkey/headset_sci
+	ks1type = /obj/item/device/encryptionkey/headset_cargo
 	ks2type = /obj/item/device/encryptionkey/headset_sec
 	icon_state = "sec_headset"
 	item_state = "sec_headset"
@@ -253,11 +253,11 @@
 
 //IMPORTANT - NEEDS TWEAKING DEPENDING ON IF ERTS ARE PLANNED TO BE USED
 /obj/item/device/radio/headset/ert
-	name = "emergency response team radio headset"
+	name = "Standard Issue Vox"
 	desc = "The headset of the boss's boss."
 	icon_state = "com_headset"
 	item_state = "headset"
-	ks2type = /obj/item/device/encryptionkey/ert
+	ks2type = /obj/item/device/encryptionkey/secure1
 
 //I have no idea if this is used rn
 /obj/item/device/radio/headset/ia
@@ -307,8 +307,8 @@
 //standard guardsmen vox
 /obj/item/device/radio/headset/red_team
 	icon = 'icons/obj/radio.dmi'
-	name = "vox-caster headset"
-	desc = "A standard Guard issue vox-caster headset. Allows the wearer to communicate with the brass and pass along info/orders to his squadmates. Attach it to one of your ears."
+	name = "Standard Issue Vox"
+	desc = "A standard Guard issue Standard Issue Vox. Allows the wearer to communicate with the brass and pass along info/orders to his squadmates. Attach it to one of your ears."
 	ks1type = /obj/item/device/encryptionkey/red
 	ks2type = /obj/item/device/encryptionkey/red_alpha
 	icon_state = "sec_headset"
@@ -492,6 +492,6 @@
 	set_frequency(RED_FREQ)
 /obj/item/device/encryptionkey/inq
 	icon_state = "cypherkey"
-	channels = list("Imperial" = 1, "Inquisition" = 1, "Ecclesiarchy" = 1)
+	channels = list("Vox" = 1, "Vermilion" = 1, "Ecclesiarchy" = 1)
 	origin_tech = list(TECH_ILLEGAL = 2)
 	syndie = 1

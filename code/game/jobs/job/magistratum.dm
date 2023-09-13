@@ -285,7 +285,7 @@
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	r_pocket = /obj/item/storage/box/coin
 	pda_slot = null
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/headset_cargo
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty/magrave
 	l_hand = /obj/item/device/flashlight/lantern
 	backpack_contents = list(
@@ -363,7 +363,7 @@
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	r_pocket = /obj/item/storage/box/coin
 	pda_slot = null
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/headset_cargo
 	r_pocket = /obj/item/device/flashlight/lantern
 	suit_store = /obj/item/gun/projectile/shotgun/pump/voxlegis
 	backpack_contents = list(
