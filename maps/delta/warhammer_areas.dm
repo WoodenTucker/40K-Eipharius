@@ -1020,14 +1020,14 @@ Area basic template
 	dynamic_lighting = 1
 
 /area/cadiaoutpost/oa/villageinside/lab
-	name = "Village Lab"
-	icon_state = "village"
-	music = 'sound/newmusic/Lab_Loud.ogg'
+	name = "Dungeon"
+	icon_state = "dungeon"
+	music = 'sound/newmusic/Lab_Experiment.ogg'
 
 /area/cadiaoutpost/oa/villageinside/lab/muffled
-	name = "Village Lab Muffled"
-	icon_state = "village"
-	music = 'sound/newmusic/Lab_Quiet.ogg'
+	name = "Mysterious Zone"
+	icon_state = "dungeon"
+	music = 'sound/newmusic/Lab_Experiment.ogg'
 
 /area/cadiaoutpost/oa/gatehouse
 	name = "Gatehouse"

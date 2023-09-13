@@ -937,8 +937,8 @@ Pilgrim Fate System
 	title = "Ganger"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MED //better off than your average gross pilgrim
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 2
+	spawn_positions = 2
 	open_when_dead = 0
 	supervisors = "yourself and your fellow gangers"
 	selection_color = "#530606"

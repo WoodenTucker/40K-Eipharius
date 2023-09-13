@@ -5142,6 +5142,8 @@
 /area/centcom)
 "MT" = (
 /obj/structure/table/rack,
+/obj/item/clothing/suit/armor/fwarmor/breacher,
+/obj/item/clothing/head/helmet/fw/breacher,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "MX" = (

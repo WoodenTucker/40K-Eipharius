@@ -166,6 +166,12 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	icon_state = "ws2"
 	desc = "<span class='danger'>The more you look at it, the more whispers and voices you hear on your head.</span>"
 
+/obj/structure/shipdecor/warp2 // This is the animated version.
+	name = "Warp Portal"
+	icon = 'icons/obj/warpstorm.dmi'
+	icon_state = "ws22"
+	desc = "<span class='danger'>The more you look at it, the more whispers and voices you hear on your head.</span>"
+
 // Mobs
 
 /mob/living/simple_animal/hostile/cpt_miller // Boss of the 'dungeon', slow but heavy hitter & high HP, you'll need a party for this or cheese it, had an arm removal code (ripping arms off players when in crit) & weapon blocking chance, but it's possibly gonna be nerfed or such (unrobust peep), so might aswell just make it a simple mob of sorts.
@@ -212,7 +218,7 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	icon = 'icons/map_project/fluff_items.dmi'
 	icon_state = "grimoire1"
 	origin_tech = list(TECH_MATERIAL = 7, TECH_ENGINEERING = 7, TECH_PHORON = 7, TECH_POWER = 7, TECH_BLUESPACE = 7, TECH_BIO = 7, TECH_COMBAT = 7, TECH_MAGNET = 7, TECH_DATA = 7, TECH_ILLEGAL = 9, TECH_ARCANE = 9)
-	sales_price = 6000 // The price for knowledge
+	sales_price = 400 // The price for knowledge
 
 
 /obj/item/clothing/suit/armor/leper
@@ -224,7 +230,7 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
-	armor = list(melee = 50, bullet = 80, laser = 60, energy = 50, bomb = 40, bio = 90, rad = 90) // For skirmish combat, player is fast and can endure shots, but at CQC he's fucked, hit and run is more fitting for the armor user.
+	armor = list(melee = 30, bullet = 50, laser = 50, energy = 50, bomb = 40, bio = 90, rad = 90) // For skirmish combat, player is fast and can endure shots, but at CQC he's fucked, hit and run is more fitting for the armor user.
 	sales_price = 900 // Only 1 in the map
 	weight = 10
 
@@ -236,7 +242,7 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	flags_inv = BLOCKHAIR
-	armor = list(melee = 90, bullet = 80, laser = 70, energy = 50, bomb = 90, rad = 100) // It's to prevent the user being brutally hit on the head and making the armor worthless.
+	armor = list(melee = 30, bullet = 50, laser = 50, energy = 50, bomb = 90, rad = 100) // It's to prevent the user being brutally hit on the head and making the armor worthless.
 	sales_price = 900 // Only 1 in the map
 
 /obj/item/clothing/suit/armor/cerb
@@ -248,7 +254,7 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
-	armor = list(melee = 60, bullet = 80, laser = 60, energy = 50, bomb = 40, bio = 90, rad = 90)
+	armor = list(melee = 40, bullet = 56, laser = 56, energy = 50, bomb = 40, bio = 90, rad = 90)
 	sales_price = 900 // Only 1 in the map
 	weight = 10
 
@@ -260,7 +266,7 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	flags_inv = BLOCKHAIR
-	armor = list(melee = 90, bullet = 80, laser = 70, energy = 50, bomb = 90, rad = 100) // It's to prevent the user being brutally hit on the head and making the armor worthless.
+	armor = list(melee = 40, bullet = 56, laser = 56, energy = 50, bomb = 90, rad = 100) // It's to prevent the user being brutally hit on the head and making the armor worthless.
 	sales_price = 900 // Only 1 in the map
 
 /obj/item/paper/cpt_diary // Lore about the ship's demise, obtained only when the boss dies, as i thought it would be more proper.
