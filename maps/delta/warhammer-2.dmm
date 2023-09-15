@@ -7527,6 +7527,23 @@
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "gHd" = (
 /obj/structure/closet/crate,
+/obj/item/device/radio/headset/ert,
+/obj/item/device/radio/headset/ert,
+/obj/item/device/radio/headset/ert,
+/obj/item/device/radio/headset/ert,
+/obj/item/device/radio/headset/ert,
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
+	},
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
+	},
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
+	},
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
+	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
 "gHX" = (
@@ -8830,7 +8847,8 @@
 "hPI" = (
 /obj/item/clothing/head/helmet/space/void/engineering/salvage{
 	desc = "An alien void helmet.";
-	name = "Seolite Protective Helmet"
+	name = "Seolite Protective Helmet";
+	sales_price = 0
 	},
 /obj/item/clothing/mask/gas/cyborg{
 	armor = list("melee"=15,"bullet"=15,"laser"=15,"energy"=0,"bomb"=0,"bio"=75,"rad"=0)
@@ -14712,7 +14730,9 @@
 	job_access_type = null;
 	name = "L2 Access Card"
 	},
-/obj/item/clothing/suit/armor/seolarmor,
+/obj/item/clothing/suit/armor/seolarmor{
+	sales_price = 0
+	},
 /obj/item/clothing/head/helmet/soul,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
@@ -15096,10 +15116,13 @@
 	job_access_type = null;
 	name = "L2 Access Card"
 	},
-/obj/item/clothing/suit/armor/seolarmor,
+/obj/item/clothing/suit/armor/seolarmor{
+	sales_price = 0
+	},
 /obj/item/clothing/head/helmet/space/void/engineering/salvage{
 	desc = "An alien void helmet.";
-	name = "Seolite Protective Helmet"
+	name = "Seolite Protective Helmet";
+	sales_price = 0
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
@@ -22580,7 +22603,6 @@
 	color = "grey"
 	},
 /obj/random/material,
-/obj/item/stack/thrones/twenty,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
 "thD" = (
@@ -26858,11 +26880,13 @@
 /obj/item/device/radio/headset/red_team/sl_alpha,
 /obj/item/clothing/suit/armor/guardsman/bloodpact{
 	name = "strange armor";
-	armor = list("melee"=38,"bullet"=38,"laser"=38,"energy"=20,"bomb"=30,"bio"=10,"rad"=20)
+	armor = list("melee"=38,"bullet"=38,"laser"=38,"energy"=20,"bomb"=30,"bio"=10,"rad"=20);
+	sales_price = 0
 	},
 /obj/item/clothing/suit/armor/guardsman/bloodpact{
 	name = "strange armor";
-	armor = list("melee"=38,"bullet"=38,"laser"=38,"energy"=20,"bomb"=30,"bio"=10,"rad"=20)
+	armor = list("melee"=38,"bullet"=38,"laser"=38,"energy"=20,"bomb"=30,"bio"=10,"rad"=20);
+	sales_price = 0
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -28102,11 +28126,13 @@
 /obj/item/device/radio/headset/red_team/sl_alpha,
 /obj/item/clothing/suit/armor/guardsman/bloodpact{
 	name = "strange armor";
-	armor = list("melee"=38,"bullet"=38,"laser"=38,"energy"=20,"bomb"=30,"bio"=10,"rad"=20)
+	armor = list("melee"=38,"bullet"=38,"laser"=38,"energy"=20,"bomb"=30,"bio"=10,"rad"=20);
+	sales_price = 0
 	},
 /obj/item/clothing/suit/armor/guardsman/bloodpact{
 	name = "strange armor";
-	armor = list("melee"=38,"bullet"=38,"laser"=38,"energy"=20,"bomb"=30,"bio"=10,"rad"=20)
+	armor = list("melee"=38,"bullet"=38,"laser"=38,"energy"=20,"bomb"=30,"bio"=10,"rad"=20);
+	sales_price = 0
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/farm)

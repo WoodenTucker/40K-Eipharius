@@ -6,12 +6,12 @@
 	faction = "Chaos"
 	rune_recipes = list(
 						/datum/rune_recipe/khorne/offer_bioprinted,
-						/datum/rune_recipe/khorne/offer_skull,
+						/datum/rune_recipe/khorne/offer_heart,
 						/datum/rune_recipe/khorne/knife_teeth,
 						/datum/rune_recipe/khorne/conversion)
 	possible_blessings = list(
-							/datum/heretic_effect/healing,
 							/datum/heretic_effect/tough_skin,
+							/datum/heretic_effect/healing,
 							/datum/heretic_effect/strength/greater,
 							/datum/heretic_effect/strength/lesser,
 							/datum/heretic_effect/strength)

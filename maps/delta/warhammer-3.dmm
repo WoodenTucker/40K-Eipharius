@@ -5274,9 +5274,7 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/hive_city)
 "fhX" = (
-/obj/structure/bed/chair/wood/simple{
-	dir = 1
-	},
+/obj/structure/bed/chair/pew,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel)
 "fiZ" = (

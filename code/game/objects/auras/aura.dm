@@ -175,16 +175,16 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 
 /obj/aura/regenerating/human/ogryn
 	can_regenerate_organs = TRUE
-	brute_mult = 10
-	fire_mult = 10
-	tox_mult = 4
+	brute_mult = 12
+	fire_mult = 12
+	tox_mult = 6
 	organheal = 0.3
 
 /obj/aura/regenerating/human/khornate
 	can_regenerate_organs = TRUE
-	brute_mult = 5
-	fire_mult = 5
-	tox_mult = 3
+	brute_mult = 3
+	fire_mult = 3
+	tox_mult = 2
 	organheal = 0.2
 
 /obj/aura/regenerating/human/skinless
@@ -203,9 +203,9 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 
 /obj/aura/regenerating/human/rat
 	can_regenerate_organs = TRUE
-	brute_mult = 6
-	fire_mult = 6
-	tox_mult = 5
+	brute_mult = 8
+	fire_mult = 8
+	tox_mult = 7
 	organheal = 0.3
 
 /obj/aura/regenerating/human/ultimate

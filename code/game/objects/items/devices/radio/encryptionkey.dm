@@ -171,7 +171,7 @@
 /obj/item/device/encryptionkey/headset_red
 	name = "red radio encryption key"
 	icon_state = "sec_cypherkey"
-	channels = list("Security" = 1, "Vox" = 1)
+	channels = list("Frateris" = 1, "Vox" = 1)
 
 //mechanicus key
 /obj/item/device/encryptionkey/headset_eng
@@ -221,7 +221,7 @@
 	name = "ai integrated encryption key"
 	desc = "Integrated encryption key."
 	icon_state = "cap_cypherkey"
-	channels = list("Command" = 1, "Security" = 1, "Engineering" = 1, "Science" = 1, "Medical" = 1, "Magistratum" = 1, "Service" = 1, "Omega" = 1)
+	channels = list("Command" = 1, "Frateris" = 1, "Engineering" = 1, "Science" = 1, "Medical" = 1, "Magistratum" = 1, "Service" = 1, "Omega" = 1)
 
 //not used
 /obj/item/device/encryptionkey/heads/rd
@@ -275,7 +275,7 @@
 //needs fix if usage planned
 /obj/item/device/encryptionkey/ert
 	name = "\improper ERT radio encryption key"
-	channels = list("Violet" = 1, "Science" = 1, "Command" = 1, "Medical" = 1, "Engineering" = 1, "Security" = 1, "Magistratum" = 1, "Service" = 1)
+	channels = list("Violet" = 1, "Science" = 1, "Command" = 1, "Medical" = 1, "Engineering" = 1, "Frateris" = 1, "Magistratum" = 1, "Service" = 1)
 
 //spec ops isn't a working channel - can fix if wanted - Rushodan
 /obj/item/device/encryptionkey/specops //for events

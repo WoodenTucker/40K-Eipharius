@@ -147,9 +147,9 @@ var/list/radiochannels = list(
 	"Command"		= COMM_FREQ,
 	"Medical"		= MED_FREQ,
 	"Mechanicus"	= ENG_FREQ,
-	"Security" 	    = SEC_FREQ,
+	"Frateris" 	    = SEC_FREQ,
 	"Violet" = ERT_FREQ,
-	"Frateris" 	= DTH_FREQ,
+	"Explorer" 	= DTH_FREQ,
 	"Secure"	= EXP_FREQ,
 	"Supply" 		= SUP_FREQ,
 	"Militarum" 	= SRV_FREQ,
@@ -214,7 +214,7 @@ var/list/DEPT_FREQS = list(AI_FREQ, COMM_FREQ, ENG_FREQ, MED_FREQ, INQ_FREQ, SEC
 		if (AI_FREQ)
 			return "airadio"
 
-		if (SEC_FREQ, RED_INQ,)
+		if (SEC_FREQ, RED_INQ, DTH_FREQ)
 			return "secradio"
 
 		if (ENG_FREQ)

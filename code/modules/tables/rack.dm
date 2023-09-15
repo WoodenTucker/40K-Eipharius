@@ -62,9 +62,9 @@
 	desc = "Fart on it I dare you."
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "fancy"
-	can_plate = 1
-	can_reinforce = 1
-	flipped = 0
+	can_plate = 0
+	can_reinforce = 0
+	flipped = -1
 
 /obj/structure/table/graf/Initialize()
 	auto_align()
