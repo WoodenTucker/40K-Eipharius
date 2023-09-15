@@ -120,13 +120,13 @@ Most blessings and curses should be permanent.
 	SSgods.cultist_count -= 1
 
 /datum/heretic_deity/proc/progress(var/mob/living/carbon/human/CultMember, var/favor)
-	if(favor >= 40)
+	if(favor >= 40 && favor <= 59)
 		RegisterSignal(CultMember, COMSIG_CULT_EFFECT_ADDED, .proc/on_progress)
 		RegisterSignal(CultMember, COMSIG_CULT_EFFECT_ADD_FAILED, .proc/progress_failed)
 		SEND_SIGNAL(CultMember, COMSIG_CULT_ADD_EFFECT, pick(possible_blessings))
-	if(favor >= 60)
+	if(favor >= 60 && favor <= 99)
 		message_admins("[usr.key] has reached Favor 60 || Strong Cultist")
-	if(favor >= 100)
+	if(favor >= 100 && favor <= 139)
 		message_admins("[usr.key] has reached Favor 100 || Master Cultist")
 		SEND_SIGNAL(CultMember, COMSIG_CULT_ADD_EFFECT, pick(possible_blessings))
 	if(favor >= 140)
