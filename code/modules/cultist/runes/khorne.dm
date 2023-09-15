@@ -38,8 +38,9 @@
 	special 	 = TRUE
 
 /datum/rune_recipe/khorne/conversion/do_special(mob/living/carbon/user, obj/effect/cleanable/heretic_rune/rune, list/items)
-	SEND_SIGNAL(user, COMSIG_CULT_ADD_FAVOR, 40)
+
 	var/mob/living/carbon/human/target = items[1]
 	if(target.stat != DEAD && target.mind)
 		var/datum/heretic_deity/khorne/N = GOD(GOD_KHORNE)
 		N.join_request(target)
+		SEND_SIGNAL(user, COMSIG_CULT_ADD_FAVOR, 40)

@@ -10,18 +10,17 @@
 	special = TRUE
 
 /datum/rune_recipe/nurgle/conversion/do_special(mob/living/carbon/user, obj/effect/cleanable/heretic_rune/rune, list/items)
-	SEND_SIGNAL(user, COMSIG_CULT_ADD_FAVOR, 60)
 	var/mob/living/carbon/human/target = items[1]
 	if(target.stat != DEAD && target.mind)
 		var/datum/heretic_deity/nurgle/N = GOD(GOD_NURGLE)
 		N.join_request(target)
+		SEND_SIGNAL(user, COMSIG_CULT_ADD_FAVOR, 60)
 
 /datum/rune_recipe/nurgle/offer_brain
 	ingredients = list(/obj/item/organ/internal/brain)
 	special = TRUE
 
 /datum/rune_recipe/khorne/offer_brain/do_special(var/mob/living/carbon/user, var/obj/effect/cleanable/heretic_rune/rune)
-	SEND_SIGNAL(user, COMSIG_CULT_ADD_FAVOR, 10)
 
 /datum/rune_recipe/nurgle/toughen
 	name = "Toughen Rite"
