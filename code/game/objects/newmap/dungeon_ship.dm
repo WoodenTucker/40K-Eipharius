@@ -206,7 +206,7 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	icon = 'icons/map_project/fluff_items.dmi'
 	icon_state = "panacea"
 	volume = 5 // 5u can heal a 70-80% dmg, excluding bone fractures.
-	sales_price = 5000 // A decent price for ahealing juice
+	sales_price = 50 // A decent price for ahealing juice
 
 /obj/item/reagent_containers/glass/bottle/panacea/New()
 	..()
@@ -218,7 +218,7 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	icon = 'icons/map_project/fluff_items.dmi'
 	icon_state = "grimoire1"
 	origin_tech = list(TECH_MATERIAL = 7, TECH_ENGINEERING = 7, TECH_PHORON = 7, TECH_POWER = 7, TECH_BLUESPACE = 7, TECH_BIO = 7, TECH_COMBAT = 7, TECH_MAGNET = 7, TECH_DATA = 7, TECH_ILLEGAL = 9, TECH_ARCANE = 9)
-	sales_price = 400 // The price for knowledge
+	sales_price = 300 // The price for knowledge
 
 
 /obj/item/clothing/suit/armor/leper
@@ -231,7 +231,7 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	armor = list(melee = 30, bullet = 50, laser = 50, energy = 50, bomb = 40, bio = 90, rad = 90) // For skirmish combat, player is fast and can endure shots, but at CQC he's fucked, hit and run is more fitting for the armor user.
-	sales_price = 900 // Only 1 in the map
+	sales_price = 0 // Only 1 in the map
 	weight = 10
 
 /obj/item/clothing/head/leper
@@ -243,7 +243,7 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	flags_inv = BLOCKHAIR
 	armor = list(melee = 30, bullet = 50, laser = 50, energy = 50, bomb = 90, rad = 100) // It's to prevent the user being brutally hit on the head and making the armor worthless.
-	sales_price = 900 // Only 1 in the map
+	sales_price = 0 // Only 1 in the map
 
 /obj/item/clothing/suit/armor/cerb
 	name = "cerberus armor"
@@ -255,7 +255,7 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	armor = list(melee = 40, bullet = 56, laser = 56, energy = 50, bomb = 40, bio = 90, rad = 90)
-	sales_price = 900 // Only 1 in the map
+	sales_price = 0 // Only 1 in the map
 	weight = 10
 
 /obj/item/clothing/head/cerb
@@ -267,7 +267,7 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	flags_inv = BLOCKHAIR
 	armor = list(melee = 40, bullet = 56, laser = 56, energy = 50, bomb = 90, rad = 100) // It's to prevent the user being brutally hit on the head and making the armor worthless.
-	sales_price = 900 // Only 1 in the map
+	sales_price = 0 // Only 1 in the map
 
 /obj/item/paper/cpt_diary // Lore about the ship's demise, obtained only when the boss dies, as i thought it would be more proper.
 	name = "Capitan Miller's Diary"

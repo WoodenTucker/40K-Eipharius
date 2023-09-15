@@ -351,7 +351,7 @@
 	icon = 'icons/map_project/fluff_items.dmi'
 	icon_state = "necronstuff"
 	w_class = ITEM_SIZE_SMALL
-	sales_price = 125
+	sales_price = 15
 
 /obj/item/fluff_items/paperwork
 	name = "unholy pile of paperwork"
@@ -365,98 +365,98 @@
 	desc = "An strange stone mask, the surface has been cracked and it still smells of iron, it does feel somewhat familiar."
 	icon_state = "stone"
 	w_class = ITEM_SIZE_SMALL
-	sales_price = 100
+	sales_price = 10
 
 /obj/item/fluff_items/bfg
 	name = "A big fucking gun."
 	desc = "An unknown weapon that does not seem from anywhere in this existance, rumours say that it was recovered from the Immaterium and was carried by a guardsmen all dressed in green which slaughtered demons with his bare hands."
 	icon_state = "BFG"
 	w_class = ITEM_SIZE_HUGE
-	sales_price = 100 // RIP AND TEAAAAAR
+	sales_price = 10 // RIP AND TEAAAAAR
 
 /obj/item/fluff_items/atlantis
 	name = "strange rock"
 	desc = "A rock which has been made by some unknown alloy, there's tales of an old myth of a civilization in Terra that was called 'Atlantis' that had structures like that, but what are the odds it's true ?"
 	icon_state = "wtf2"
 	w_class = ITEM_SIZE_HUGE
-	sales_price = 100
+	sales_price = 10
 
 /obj/item/fluff_items/alien_blaster
 	name = "strange pistol"
 	desc = "It seems to be some sort of lasgun but with an smaller size, sadly it's got no ammo and whatever powered the weapon is long gone."
 	icon_state = "egun6"
 	w_class = ITEM_SIZE_SMALL
-	sales_price = 100
+	sales_price = 22
 
 /obj/item/fluff_items/redalert
 	name = "old flask"
 	desc = "An old flask created back on Terra, the number '1927', alongside the name of 'Anatoly Cherdenko' written on there."
 	icon_state = "anatoly_cherdenko"
 	w_class = ITEM_SIZE_SMALL
-	sales_price = 100
+	sales_price = 13
 
 /obj/item/fluff_items/gramophone
 	name = "old gramophone"
 	desc = "A very old gramophone, it seems to be still working but without a vinyl it's useless."
 	icon_state = "gramophone"
 	w_class = ITEM_SIZE_SMALL
-	sales_price = 60
+	sales_price = 11
 
 /obj/item/fluff_items/goldsword
 	name = "golden sword"
 	desc = "A gold sword that was used by a previous governor to slay an important cultist leader on Elipharius 150 years ago."
 	icon_state = "gold_sword"
 	w_class = ITEM_SIZE_SMALL
-	sales_price = 150
+	sales_price = 45
 
 /obj/item/fluff_items/ultrabanner
 	name = "ultramarine banner"
 	desc = "An actual real banner from an Ultramarine company, legends say the wearer will never fall and neither the banner will and that it has powers."
 	icon_state = "umbanner"
 	w_class = ITEM_SIZE_SMALL
-	sales_price = 200
+	sales_price = 25
 
 /obj/item/fluff_items/power_bat
 	name = "deactivated power bat"
 	desc = "Rumors say that there's a group of a chapter called the 'Angry marines', they supposedly use stools, tables, folding chairs and the like to bash to death the enemies of the emperor, how this arrived here is uncertain."
 	icon_state = "powerbat"
 	w_class = ITEM_SIZE_SMALL
-	sales_price = 225
+	sales_price = 35
 
 /obj/item/fluff_items/vietnam
 	name = "ancient helmet"
 	desc = "This helmet shows an extensive amount of wear, let alone the amount of marks of bullets that hit the wearer several times, suprisingly with no holes, there's even some old cig pack attached to it, you can see written on the side of the helmet 'WAR IS A FUCK'."
 	icon_state = "vietnamordinator"
 	w_class = ITEM_SIZE_SMALL
-	sales_price = 75
+	sales_price = 8
 
 /obj/item/fluff_items/spessmanhelm
 	name = "space helmet"
 	desc = "Something that is as old as the start of Terra, apparently these helmets were used back when mankind reached for the stars."
 	icon_state = "space"
 	w_class = ITEM_SIZE_SMALL
-	sales_price = 85
+	sales_price = 15
 
 /obj/item/fluff_items/bonehelm
 	name = "animal skull helmet"
 	desc = "This helmet was made with the head of an old creature from Terra."
 	icon_state = "chariot"
 	w_class = ITEM_SIZE_SMALL
-	sales_price = 95
+	sales_price = 16
 
 /obj/item/fluff_items/goldmask
 	name = "golden mask"
 	desc = "A mask made out of pure gold, whoever created this was either a legendary craftsman or knew their trade very well."
 	icon_state = "goldmask2_icon"
 	w_class = ITEM_SIZE_SMALL
-	sales_price = 150
+	sales_price = 55
 
 /obj/item/fluff_items/silvermask
 	name = "silver mask"
 	desc = "A mask made out of silver, its still as shining as it was back when it was crafted."
 	icon_state = "nsilvermask_icon"
 	w_class = ITEM_SIZE_SMALL
-	sales_price = 100
+	sales_price = 35
 
 /obj/item/fluff_items/skull
 	name = "skull"

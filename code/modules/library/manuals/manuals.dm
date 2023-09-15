@@ -289,7 +289,7 @@
 
 				<h2>Pestilent Favour:</h2>
 				<h3>Imbue yourself with the power of the Grandfather.</h3>
-				Consume feces
+				Convert others to your cause. Place them upon his rune and embrace unity. Alternatively place a human brain upon the rune as a weaker offering.
 
 				<h2>Entropy's Dogma:</h2>
 				<h3>Accept the truth of disease, rejoice at the sight of death and pestilence!.</h3>
@@ -297,7 +297,7 @@
 
 				<h2>Corpulent Epidermis:</h2>
 				<h3>Purulent cysts toughen your hide somewhat.</h3>
-				Live rodent and a human head offered on a rune of Nurgle
+				Chunk of quartz offered on a rune of Nurgle
 
 				<h2>Regenerating Boils:</h2>
 				<h3>Pus-infused growths cover your burns and open wounds at the cost of some toxic damage.</h3>
@@ -321,11 +321,11 @@
 
 				<h2>Blight Grenade:</h2>
 				<h3>Grenade with a powerful payload of armor-melting blight strain. Turn the servants of the Corpse Emperor against him! .</h3>
-				Human head, liver and krak grenade offered on a rune of Nurgle.
+				Human liver and a chunk of ruby offered on a rune of Nurgle.
 
 				<h2>Child of the Grandfather:</h2>
 				<h3>Bring forth a little one to bless your cause.</h3>
-				Human appendix offered on a rune of Nurgle.
+				Chunk of sapphire and an appendix offered on a rune of Nurgle.
 
 				<h2>Foetid Nganga:</h2>
 				<h3>A cauldron to concoct a powerful summoning.</h3>
@@ -378,7 +378,7 @@
 
 				<h2>Bloody Favour:</h2>
 				<h3>Imbue yourself with the power of the Blood God.</h3>
-				Heads offered on a rune of Khorne. Raise your favour to receive blessings improving your combat prowess.
+				Hearts offered on a rune of Khorne. Raise your favour to receive blessings improving your combat prowess.
 
 				<h2>Tools Of Carnage:</h2>
 				<h3>Bless a weapon of slaughter via offerings.</h3>

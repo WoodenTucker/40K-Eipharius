@@ -69,21 +69,21 @@
 	if(!ishuman(src))
 		return
 	if(src.stat == DEAD)
-		to_chat(src, "<span class='notice'>You can't do this while you're dead.</span>")
+		to_chat(src, "<span class='notice'>You can't do this whilea you're dead.</span>")
 		return
 	if(staminaloss >= staminaexhaust / 2)
 		return FALSE
 	if(src.quote_cd == 0)
 		visible_message("[src]'s body covers their wounds with large pus-filled growths!")
 		src.quote_cd = 1
-		sleep(20)
+		sleep(200)
 		src.quote_cd = 0
 	else
 		to_chat(src, "You cannot do that yet.")
 		return
-	adjustOxyLoss(-2)
-	adjustBruteLoss(-2)
-	adjustFireLoss(-2)
+	adjustOxyLoss(-3)
+	adjustBruteLoss(-3)
+	adjustFireLoss(-3)
 	eye_blurry = 0
 	ear_deaf = 0
 	ear_damage = 0

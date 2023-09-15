@@ -67,7 +67,7 @@
 	id_type = /obj/item/card/id/key/super/daemon
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	back = /obj/item/storage/backpack/satchel/warfare
-	l_ear = /obj/item/device/radio/headset/headset_sci // For now they get church vox until I get time to make a new radio headset.
+	l_ear = /obj/item/device/radio/headset/ert // work with gangers.
 	l_hand = null
 	r_pocket = /obj/item/storage/box/coin
 	suit_store = null
