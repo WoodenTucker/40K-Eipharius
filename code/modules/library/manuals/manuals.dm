@@ -289,7 +289,7 @@
 
 				<h2>Pestilent Favour:</h2>
 				<h3>Imbue yourself with the power of the Grandfather.</h3>
-				Convert others to your cause. Place them upon his rune and embrace unity. Alternatively place a human brain upon the rune as a weaker offering.
+				Place a human brain upon the rune or a single throne coin.
 
 				<h2>Entropy's Dogma:</h2>
 				<h3>Accept the truth of disease, rejoice at the sight of death and pestilence!.</h3>
@@ -378,7 +378,7 @@
 
 				<h2>Bloody Favour:</h2>
 				<h3>Imbue yourself with the power of the Blood God.</h3>
-				Hearts offered on a rune of Khorne. Raise your favour to receive blessings improving your combat prowess.
+				Hearts or thrones offered on a rune of Khorne. Raise your favour to receive blessings improving your combat prowess.
 
 				<h2>Tools Of Carnage:</h2>
 				<h3>Bless a weapon of slaughter via offerings.</h3>

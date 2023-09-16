@@ -559,7 +559,7 @@ datum/job/ig/bullgryn
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are a traitor to the Imperium and for reasons unknown to you now, shall be it's destruction. Praise the hivemind/cult/cogitae!</font></b></span>")
 				U.add_stats(rand(13,17), rand(16,18), rand(16,18), rand (12,20))
 				if(prob(30))
-					new /obj/item/device/radio/headset/blue_team/all(src.loc) 
+					new /obj/item/device/radio/headset/blue_team/alpha(src.loc) 
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
 				new /obj/item/stack/thrones3/twenty(src.loc)  
@@ -633,7 +633,7 @@ datum/job/ig/bullgryn
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
 				if(prob(50))
-					new /obj/item/device/radio/headset/blue_team/all(src.loc) 
+					new /obj/item/device/radio/headset/blue_team/alpha(src.loc) 
 				if(prob(10))
 					new /obj/item/storage/pill_bottle/happy(src.loc)  
 				if(prob(10))
@@ -709,7 +709,7 @@ datum/job/ig/bullgryn
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are a traitor to the Imperium and for reasons unknown to you now, shall be it's destruction. Praise the hivemind/cult/cogitae!</font></b></span>")
 				U.add_stats(rand(13,17), rand(16,18), rand(16,18), rand (12,20))
 				if(prob(30))
-					new /obj/item/device/radio/headset/blue_team/all(src.loc) 
+					new /obj/item/device/radio/headset/blue_team/alpha(src.loc) 
 				new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc) 
 				new /obj/item/reagent_containers/hypospray/autoinjector/combatpain(src.loc) 
 				new /obj/item/reagent_containers/hypospray/autoinjector/death(src.loc) 
@@ -1570,7 +1570,7 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/storage/backpack/satchel/warfare
 	mask = null
-	l_ear = /obj/item/device/radio/headset/blue_team/all
+	l_ear = /obj/item/device/radio/headset/blue_team/alpha
 	r_ear = /obj/item/device/radio/headset/red_team
 	r_pocket = /obj/item/storage/box/ifak
 	l_pocket = /obj/item/device/flashlight/lantern
@@ -1592,7 +1592,7 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 	mask = null
 	glasses = /obj/item/clothing/glasses/cadiangoggles
 	id = null
-	l_ear = /obj/item/device/radio/headset/blue_team/all
+	l_ear = /obj/item/device/radio/headset/blue_team/alpha
 	r_ear = /obj/item/reagent_containers/hypospray/autoinjector/blood
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
@@ -1616,7 +1616,7 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 	mask = null
 	glasses = /obj/item/clothing/glasses/cadiangoggles
 	id = null
-	l_ear = /obj/item/device/radio/headset/blue_team/all
+	l_ear = /obj/item/device/radio/headset/blue_team/alpha
 	r_ear = /obj/item/reagent_containers/hypospray/autoinjector/blood
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
@@ -1645,7 +1645,7 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 	r_pocket = /obj/item/device/flashlight/lantern
 	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = /obj/item/device/radio/headset/blue_team/all
+	l_ear = /obj/item/device/radio/headset/blue_team/alpha
 	backpack_contents = list(
 	/obj/item/cell/plasma = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -1669,7 +1669,7 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
-	l_ear = /obj/item/device/radio/headset/blue_team/all
+	l_ear = /obj/item/device/radio/headset/blue_team/alpha
 	neck = /obj/item/reagent_containers/food/drinks/canteen/valhallan
 	suit_store = /obj/item/gun/projectile/automatic/autogrim
 	backpack_contents = list(
@@ -1688,7 +1688,7 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
 	head = /obj/item/clothing/head/heretichood
 	mask = /obj/item/clothing/mask/gas/krieg
-	l_ear = /obj/item/device/radio/headset/blue_team/all
+	l_ear = /obj/item/device/radio/headset/blue_team/alpha
 	suit_store = /obj/item/gun/launcher/rcl_rifle
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
@@ -1716,7 +1716,7 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 	r_pocket = /obj/item/device/flashlight/lantern
 	suit_store = /obj/item/gun/projectile/bolter_pistol // might be too op not sure
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = /obj/item/device/radio/headset/blue_team/all
+	l_ear = /obj/item/device/radio/headset/blue_team/alpha
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,

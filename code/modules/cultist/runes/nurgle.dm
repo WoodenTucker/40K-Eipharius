@@ -14,13 +14,20 @@
 	if(target.stat != DEAD && target.mind)
 		var/datum/heretic_deity/nurgle/N = GOD(GOD_NURGLE)
 		N.join_request(target)
-		SEND_SIGNAL(user, COMSIG_CULT_ADD_FAVOR, 60)
 
 /datum/rune_recipe/nurgle/offer_brain
 	ingredients = list(/obj/item/organ/internal/brain)
 	special = TRUE
 
 /datum/rune_recipe/khorne/offer_brain/do_special(var/mob/living/carbon/user, var/obj/effect/cleanable/heretic_rune/rune)
+	SEND_SIGNAL(user, COMSIG_CULT_ADD_FAVOR, 10)
+
+/datum/rune_recipe/nurgle/offer_gem
+	ingredients = list(/obj/item/stack/thrones)
+	special = TRUE
+
+/datum/rune_recipe/nurgle/offer_gem/do_special(var/mob/living/carbon/user, var/obj/effect/cleanable/heretic_rune/rune)
+	SEND_SIGNAL(user, COMSIG_CULT_ADD_FAVOR, 25)
 
 /datum/rune_recipe/nurgle/toughen
 	name = "Toughen Rite"

@@ -71,6 +71,7 @@
 	. = ..()
 	fully_replace_character_name(random_ork_name(src.gender))
 	warfare_faction = ORKZ
+	faction = "ORKZ"
 	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/ork)
 	outfit.equip(src)
 

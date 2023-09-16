@@ -7,7 +7,7 @@
 	uniform = /obj/item/clothing/under/rank/roguetrader
 	belt = /obj/item/gun/energy/las/laspistol/lord
 	back = /obj/item/storage/backpack/satchel/warfare
-	l_ear = /obj/item/device/radio/headset/headset_service
+	l_ear = /obj/item/device/radio/headset/ert
 	shoes = /obj/item/clothing/shoes/jackboots/noble
 	r_pocket = /obj/item/storage/box/coin
 	id_type = /obj/item/card/id/gold

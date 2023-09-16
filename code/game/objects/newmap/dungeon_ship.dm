@@ -58,55 +58,51 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 /obj/machinery/door/unpowered/shuttle/hatch
 	name = "old hatch"
 	icon_state = "door_closed"
-	icon = 'icons/map_project/ship/hatch.dmi'
+	icon = 'icons/obj/doors/hatch.dmi'
 	autoclose = 1
 	normalspeed = 0
 
 /obj/machinery/door/unpowered/shuttle/hatch2
 	icon_state = "door_closed"
-	icon = 'icons/map_project/ship/escotilha.dmi'
+	icon = 'icons/obj/doors/escotilha.dmi'
 	autoclose = 1
 	normalspeed = 0
 
 /obj/machinery/door/airlock/ancient_ship
 	name = "Ancient Ship Door"
 	icon_state = "normal"
-	icon = 'icons/map_project/ship/individual_1.dmi'
-	assembly_type = /obj/structure/door_assembly/door_assembly_red
+	icon = 'icons/obj/doors/individual_1.dmi'
+
 
 /obj/machinery/door/airlock/ancient_ship/maint
 	name = "Old Maintenance Door"
 	icon_state = "maint"
-	icon = 'icons/map_project/ship/maintdoor.dmi'
-	assembly_type = /obj/structure/door_assembly/door_assembly_red
+	icon = 'icons/obj/doors/maintdoor.dmi'
+
 
 /obj/machinery/door/airlock/ancient_ship/med
 	name = "Ancient Ship Door"
 	icon_state = "door_closed"
-	icon = 'icons/map_project/ship/met_door.dmi'
-	assembly_type = /obj/structure/door_assembly/door_assembly_red
+	icon = 'icons/obj/doors/met_door.dmi'
+
 
 /obj/machinery/door/airlock/ancient_ship/command
 	name = "Bridge Ship Door"
 	icon_state = "door_closed"
 	desc = "You can feel some kind of evil presence behind that door, is it really wise to open it ?" // Giving them a warning, before they die possibly
-	icon = 'icons/map_project/ship/command_door.dmi'
-	assembly_type = /obj/structure/door_assembly/door_assembly_red
+	icon = 'icons/obj/doors/command_door.dmi'
+
 	maxhealth = 1500 // No funny shooting ideas
-	explosion_resistance = 95 // No funny C4 ideas
 	secured_wires = 1 // Find the key to open it, dumbass
-	req_access = list(access_hos) // Chances of them using the keycard to just enter the commissar's office are very slim
 
 /obj/machinery/door/airlock/ancient_ship/command/capitan
 	name = "Capitan's Quarters"
 	icon_state = "door_closed"
 	desc = "The whispers and noises are more and more loud behind it."
-	icon = 'icons/map_project/ship/command_door.dmi'
-	assembly_type = /obj/structure/door_assembly/door_assembly_red
+	icon = 'icons/obj/doors/command_door.dmi'
+
 	maxhealth = 5000 // No skipping the dungeon
 	secured_wires = 1 // Not letting you just hack it and open it, dumbass.
-	explosion_resistance = 10 // No funny C4 ideas
-	req_access = list(access_daemon) // They'll have to defeat the 'boss' for the loot.
 
 // 'Decoration'
 

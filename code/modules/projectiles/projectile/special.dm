@@ -28,12 +28,9 @@
 /obj/item/projectile/bullet/bolterrifle/astartes
 	name =".95 bolt"  // Will make kraken penetrator variants later.
 	icon_state= "bolter"
-	damage = 80
-	armor_penetration = 30 
+	damage = 90
+	armor_penetration = 35 
 	check_armour = "bullet"
-
-	on_hit(var/atom/target, var/blocked = 0)
-		explosion(target, -1, -1, -1, 0, 0)
 
 /obj/item/projectile/bullet/bpistol 
 	name =".50 bolt" //.50, human sized bolters and bolt pistols
@@ -58,19 +55,13 @@
 
 /obj/item/projectile/bullet/bpistol/ms // This is .75 Bolt Pistol Round
 	fire_sound = 'sound/effects/explosion1.ogg'
-	damage = 60
-	armor_penetration = 25
-
-	on_hit(var/atom/target, var/blocked = 0)
-		explosion(target, -1, -1, -1, 0, 0)
+	damage = 78
+	armor_penetration = 35
 
 /obj/item/projectile/bullet/bolt/ms
 	fire_sound = 'sound/effects/explosion1.ogg'
-	damage = 50
-	armor_penetration = 30
-	
-	on_hit(var/atom/target, var/blocked = 0)
-		explosion(target, -1, -1, -1, 0, 0)
+	damage = 88
+	armor_penetration = 35
 
 /obj/item/projectile/meteor
 	name = "meteor"

@@ -7,6 +7,7 @@
 	rune_recipes = list(
 						/datum/rune_recipe/khorne/offer_bioprinted,
 						/datum/rune_recipe/khorne/offer_heart,
+						/datum/rune_recipe/khorne/offer_gem,
 						/datum/rune_recipe/khorne/knife_teeth,
 						/datum/rune_recipe/khorne/conversion)
 	possible_blessings = list(
@@ -45,6 +46,7 @@
 						/datum/heretic_effect/zombie)
 	rune_recipes = list(/datum/rune_recipe/nurgle/deathtolerance,
 						/datum/rune_recipe/nurgle/conversion,
+						/datum/rune_recipe/nurgle/offer_gem,
 						/datum/rune_recipe/nurgle/toughen,
 						/datum/rune_recipe/nurgle/nganga,
 						/datum/rune_recipe/nurgle/uniform,

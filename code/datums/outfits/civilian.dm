@@ -47,7 +47,7 @@
 	id_type = /obj/item/card/id/civilian/botanist
 	pda_type = null
 	pda_slot = null
-	l_ear = /obj/item/device/radio/headset/headset_service
+	l_ear = /obj/item/device/radio/headset/ert
 	r_ear = null
 	r_pocket = /obj/item/storage/box/coin
 	back = /obj/item/storage/backpack/satchel/warfare

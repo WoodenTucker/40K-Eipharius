@@ -374,14 +374,14 @@
 /obj/item/projectile/bullet/rifle/a145
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	damage = 130
-	armor_penetration = 20
+	armor_penetration = 40
 	//hitscan = 1 //so the PTR isn't useless as a sniper weapon
 	penetration_modifier = 1
 	penetrating = 2
 
 /obj/item/projectile/bullet/rifle/a145/apds
-	damage = 100
-	armor_penetration = 45
+	damage = 120
+	armor_penetration = 65
 	penetration_modifier = 1
 	penetrating = 3
 
@@ -389,17 +389,17 @@
 
 /obj/item/projectile/bullet/suffocationbullet//How does this even work?
 	name = "CO2 bullet"
-	damage = 55
+	damage = 65
 	damage_type = OXY
 
 /obj/item/projectile/bullet/cyanideround
 	name = "poison bullet"
-	damage = 55
+	damage = 65
 	damage_type = TOX
 
 /obj/item/projectile/bullet/burstbullet
 	name = "exploding bullet"
-	damage = 35
+	damage = 100
 	embed = 0
 	edge = 1
 
