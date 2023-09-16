@@ -3742,6 +3742,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hallway/northern)
+"tl" = (
+/obj/structure/closet/hive/luxury,
+/obj/effect/landmark/costume/sexyclown,
+/obj/effect/landmark/costume/sexymime,
+/obj/effect/landmark/costume/maid,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/farm)
 "tm" = (
 /obj/structure/lattice,
 /obj/effect/floor_decal/turf/piping{
@@ -4074,6 +4081,14 @@
 	},
 /turf/simulated/open,
 /area/cadiaoutpost/oa/farm)
+"vc" = (
+/obj/machinery/door/unpowered/inn/deadwood{
+	maxhealth = 1500;
+	req_access = list();
+	name = "Bar"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/service/inn)
 "vd" = (
 /obj/item/fluff_items/redalert,
 /obj/structure/table/graf/wood_office_table{
@@ -5974,6 +5989,10 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/gatehouse)
+"EP" = (
+/obj/item/reagent_containers/food/snacks/poo,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/new_hive/hive_city)
 "EQ" = (
 /obj/structure/catwalk,
 /obj/machinery/light/small{
@@ -8040,6 +8059,8 @@
 /area/cadiaoutpost/oa/gatehouse)
 "Oo" = (
 /obj/structure/closet/hive/luxury,
+/obj/effect/landmark/costume/gladiator,
+/obj/effect/landmark/costume/plaguedoctor,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "Op" = (
@@ -8440,6 +8461,10 @@
 /obj/item/clothing/accessory/holster/hip,
 /obj/item/clothing/accessory/mfcloak,
 /obj/item/clothing/accessory/pfcloak,
+/obj/effect/landmark/costume/madscientist,
+/obj/effect/landmark/costume/maid,
+/obj/effect/landmark/costume/nightowl,
+/obj/effect/landmark/costume/pirate,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "Qx" = (
@@ -8573,6 +8598,10 @@
 /obj/item/card/id/key/super/daemon{
 	name = "Strange Key"
 	},
+/obj/item/card/id/key/grand{
+	name = "Farming Key";
+	access = list(272)
+	},
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 5
 	},
@@ -8646,6 +8675,9 @@
 	},
 /obj/item/bedsheet/captain,
 /obj/effect/landmark/start/governor,
+/obj/item/reagent_containers/food/snacks/poo,
+/obj/item/reagent_containers/food/snacks/poo,
+/obj/item/reagent_containers/food/snacks/poo,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "Rp" = (
@@ -9725,6 +9757,10 @@
 /area/cadiaoutpost/oa/villageinside)
 "Wh" = (
 /obj/structure/closet/hive/luxury,
+/obj/effect/landmark/costume/plaguedoctor,
+/obj/effect/landmark/costume/savagehunter,
+/obj/effect/landmark/costume/cutewitch,
+/obj/effect/landmark/costume/butler,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/farm)
 "Wl" = (
@@ -42872,7 +42908,7 @@ vt
 vt
 vt
 wk
-Al
+EP
 Ok
 Al
 VK
@@ -43300,7 +43336,7 @@ xb
 xb
 xb
 fk
-IH
+vc
 Xd
 Xd
 Xd
@@ -63318,7 +63354,7 @@ Jd
 Ie
 at
 vY
-Wh
+tl
 Lj
 Bq
 Jd

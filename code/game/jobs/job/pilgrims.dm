@@ -434,7 +434,7 @@ Pilgrim Fate System
 			new /obj/item/device/flashlight/lantern(src.loc) 
 			new /obj/item/clothing/shoes/jackboots/noble(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/key/grand/monastary, slot_wear_id)
-			new /obj/item/stack/thrones/twenty(src.loc)
+			new /obj/item/stack/thrones/five(src.loc)
 			new /obj/item/clothing/head/helmet/hevhelm/palace(src.loc)
 			new /obj/item/clothing/suit/armor/brigandine/palace(src.loc)
 			new /obj/item/melee/trench_axe/glaive/adamantine(src.loc)
@@ -644,8 +644,8 @@ Pilgrim Fate System
 	title = "Pathfinder"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MED
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	open_when_dead = 0
 	supervisors = "Your own morality and ethics."
 	selection_color = "#848484"
@@ -671,8 +671,8 @@ Pilgrim Fate System
 	title = "Village Medicae"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MED
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	open_when_dead = 0
 	supervisors = "Your own morality and ethics."
 	selection_color = "#848484"

@@ -254,7 +254,7 @@
 //IMPORTANT - NEEDS TWEAKING DEPENDING ON IF ERTS ARE PLANNED TO BE USED
 /obj/item/device/radio/headset/ert
 	name = "Standard Issue Vox"
-	desc = "The headset of the boss's boss."
+	desc = "A sekret headset"
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/secure1

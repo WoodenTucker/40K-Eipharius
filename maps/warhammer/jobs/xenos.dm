@@ -4,7 +4,8 @@
 	shoes = /obj/item/clothing/shoes/krootfeet
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	back = /obj/item/storage/backpack/satchel/warfare/kroot
-	l_ear = /obj/item/device/radio/headset/blue_team/all
+	l_ear = /obj/item/device/radio/headset/blue_team/alpha
+	r_ear = /obj/item/device/radio/headset/red_team
 	belt = /obj/item/device/flashlight/lantern
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/ammo_magazine/handful/kroot_handful
@@ -22,7 +23,7 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	back = /obj/item/storage/backpack/satchel/warfare
 	r_ear = /obj/item/device/radio/headset/red_team
-	l_ear = /obj/item/device/radio/headset/blue_team/all
+	l_ear = /obj/item/device/radio/headset/blue_team/alpha
 	belt = /obj/item/device/flashlight/lantern
 	l_pocket = /obj/item/storage/box/ifak
 	id = null
@@ -39,6 +40,7 @@
 	glasses = /obj/item/clothing/glasses/tyranid
 	neck = null
 	back = null
+	r_ear = /obj/item/device/radio/headset/red_team
 	l_ear = /obj/item/device/radio/headset/hivemind
 	l_hand = /obj/item/melee/powermaul/nidstun
 	belt = null
@@ -87,7 +89,8 @@
 	shoes = /obj/item/clothing/shoes/orkboots
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	back = /obj/item/storage/backpack/satchel/warfare/kroot
-	l_ear = /obj/item/device/radio/headset/blue_team/all
+	r_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/blue_team/bravo
 	belt = /obj/item/melee/classic_baton/trench_club
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
@@ -103,6 +106,7 @@
 	head = /obj/item/clothing/head/helmet/corsair
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	back = /obj/item/storage/backpack/satchel/warfare
+	r_ear = /obj/item/device/radio/headset/red_team
 	l_ear = /obj/item/device/radio/headset/blue_team/all
 	belt = /obj/item/gun/projectile/eldar/spistol
 	l_pocket = /obj/item/storage/box/ifak

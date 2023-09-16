@@ -4483,6 +4483,9 @@
 "etR" = (
 /turf/simulated/floor/tiled/freezer,
 /area/cadiaoutpost/oa/bridge/hallway)
+"eux" = (
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/service/inn)
 "euE" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/stack/material/steel/fifty,
@@ -4603,7 +4606,11 @@
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/bridge/hallway)
 "eAY" = (
-/obj/machinery/door/unpowered/inn,
+/obj/machinery/door/unpowered/inn/berryfarm{
+	req_access = list();
+	name = "the farmhouse";
+	req_one_access = list(272)
+	},
 /turf/simulated/floor/darksteel_floor{
 	dir = 4
 	},
@@ -5800,6 +5807,18 @@
 	},
 /obj/random/loot/randomitemtown,
 /obj/random/loot/randomitemtown,
+/obj/item/card/id/key/grand{
+	name = "Farming Key";
+	access = list(272)
+	},
+/obj/item/card/id/key/grand{
+	name = "Farming Key";
+	access = list(272)
+	},
+/obj/item/card/id/key/grand{
+	name = "Farming Key";
+	access = list(272)
+	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/farm)
 "fHd" = (
@@ -6202,7 +6221,7 @@
 /obj/machinery/door/unpowered/inn/berryfarm{
 	req_access = list();
 	name = "the farmhouse";
-	req_one_access = list(230,211)
+	req_one_access = list(272)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/farm)
@@ -8979,8 +8998,9 @@
 "iBs" = (
 /obj/machinery/door/unpowered/inn/deadwood{
 	maxhealth = 2000;
-	req_access = list(268);
-	name = "Bar"
+	req_access = list();
+	name = "Bar";
+	req_one_access = list(355,268)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/inn)
@@ -12893,8 +12913,21 @@
 	},
 /obj/item/ammo_box/shotgun,
 /obj/item/gun/projectile/shotgun/doublebarrel,
-/obj/item/card/id/ring/disgracedmedicae{
-	name = "farmers key"
+/obj/item/card/id/key/grand{
+	name = "Farming Key";
+	access = list(272)
+	},
+/obj/item/card/id/key/grand{
+	name = "Farming Key";
+	access = list(272)
+	},
+/obj/item/card/id/key/grand{
+	name = "Farming Key";
+	access = list(272)
+	},
+/obj/item/card/id/key/grand{
+	name = "Farming Key";
+	access = list(272)
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/farm)
@@ -13456,11 +13489,9 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "mxh" = (
-/obj/structure/torchwall{
-	pixel_y = 30
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/farm)
+/mob/living/simple_animal/hostile/syndicate/ranged,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/new_hive/hive_city)
 "mxx" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 8
@@ -16831,6 +16862,12 @@
 /obj/machinery/light/red,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/villageinside)
+"pRu" = (
+/mob/living/simple_animal/hostile/syndicate/ranged{
+	canmove = 0
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/new_hive/hive_city)
 "pRw" = (
 /obj/structure/table/marble,
 /obj/item/reagent_containers/glass/beaker/large{
@@ -18895,7 +18932,11 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "rSa" = (
-/obj/machinery/door/unpowered/inn,
+/obj/machinery/door/unpowered/inn/berryfarm{
+	req_access = list();
+	name = "the farmhouse";
+	req_one_access = list(272)
+	},
 /turf/simulated/floor/darksteel_floor,
 /area/cadiaoutpost/oa/groxpen)
 "rSw" = (
@@ -19955,9 +19996,6 @@
 	},
 /area/cadiaoutpost/oa/engineering)
 "sOV" = (
-/obj/item/card/id/ring/disgracedmedicae{
-	name = "farmers key"
-	},
 /obj/structure/table/graf/reinf_table,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
@@ -21698,6 +21736,10 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/gatehouse)
+"uAh" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/new_hive/hive_city)
 "uAq" = (
 /obj/effect/floor_decal/newcorner/nbar{
 	dir = 8
@@ -23009,16 +23051,11 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/bridge/hallway)
 "vDo" = (
-/obj/effect/floor_decal/newcorner/shaft{
-	dir = 8
+/mob/living/simple_animal/hostile/syndicate/ranged/space{
+	canmove = 0
 	},
-/obj/item/card/id/ring/disgracedmedicae{
-	name = "farmers key"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/farm)
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/new_hive/hive_city)
 "vDv" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled{
@@ -34121,7 +34158,7 @@ iFU
 bwI
 bwI
 bwI
-bwI
+mxh
 bwI
 qiL
 qiL
@@ -37405,7 +37442,7 @@ eTh
 eTh
 bwI
 eTh
-eTh
+vDo
 eTh
 sGg
 vBG
@@ -38391,7 +38428,7 @@ qiL
 iFU
 ntr
 bwI
-bwI
+uAh
 bwI
 bwI
 iFU
@@ -41178,7 +41215,7 @@ eTh
 bwI
 eTh
 bwI
-eTh
+pRu
 eTh
 eTh
 eTh
@@ -54612,7 +54649,7 @@ wAq
 rEb
 rEb
 rEb
-iBs
+eux
 rEb
 rEb
 rEb
@@ -55869,7 +55906,7 @@ rEb
 oKP
 lUO
 lUO
-wAq
+iBs
 hqw
 rEb
 jKg
@@ -75408,7 +75445,7 @@ knZ
 acP
 lOQ
 aLx
-vDo
+aLx
 emg
 tlC
 lOQ
@@ -76659,7 +76696,7 @@ aLk
 yaK
 aLk
 lOQ
-mxh
+pje
 pje
 gbl
 xGb

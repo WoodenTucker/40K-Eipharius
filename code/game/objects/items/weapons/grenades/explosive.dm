@@ -106,7 +106,6 @@
 
 /obj/mortar/frag/New()
 	..()
-	explosion(get_turf(src), -1, -1, 6, 3, 0)
 	sleep(0)
 	fragmentate(get_turf(src), 72)
 	qdel(src)
@@ -117,7 +116,7 @@
 /obj/mortar/gas/New()
 	..()
 	create_reagents(10)
-	reagents.add_reagent(/datum/reagent/toxin/mustard_gas, 10)
+	reagents.add_reagent(/datum/reagent/toxin/mustard_gas, 20)
 	var/location = get_turf(src)
 	var/datum/effect/effect/system/smoke_spread/chem/S = new
 	S.attach(location)
@@ -125,6 +124,24 @@
 	spawn(0)
 		S.start()
 	qdel(src)
+
+
+
+/obj/mortar/gas/blight
+	name = "blight mortar"
+
+/obj/mortar/gas/blight/New()
+	..()
+	create_reagents(10)
+	reagents.add_reagent(/datum/reagent/toxin/corrupting, 20)
+	var/location = get_turf(src)
+	var/datum/effect/effect/system/smoke_spread/chem/S = new
+	S.attach(location)
+	S.set_up(reagents, 10, 0, location)
+	spawn(0)
+		S.start()
+	qdel(src)
+
 
 /obj/mortar/fire
 	name = "fire mortar"
@@ -152,7 +169,6 @@ obj/mortar/flare/blue
 
 /obj/mortar/arty/New()
 	..()
-	explosion(get_turf(src), -1, -1, 10, 5, 0)
 	sleep(0)
 	fragmentate(get_turf(src), 84)
 	qdel(src)
