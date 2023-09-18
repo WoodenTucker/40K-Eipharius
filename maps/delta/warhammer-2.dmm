@@ -4600,9 +4600,6 @@
 	pixel_y = 6
 	},
 /obj/item/gun/energy/las/lasgun/lucius,
-/obj/item/gun/energy/las/lasgun/lucius{
-	pixel_y = -6
-	},
 /obj/effect/floor_decal/industrial/mark,
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -6344,11 +6341,17 @@
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "fEF" = (
 /obj/structure/table/rack,
-/obj/item/gun/energy/las/lasgun/accatran,
 /obj/effect/floor_decal/industrial/mark,
 /obj/machinery/light{
 	dir = 1;
 	icon_state = "tube1"
+	},
+/obj/item/gun/energy/las/lasgun/longlas{
+	pixel_y = 8
+	},
+/obj/item/gun/energy/las/lasgun/accatran,
+/obj/item/gun/energy/las/hotshot{
+	pixel_y = -8
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -17606,11 +17609,14 @@
 /turf/simulated/floor/trench,
 /area/cadiaoutpost/new_hive/caves)
 "oUP" = (
-/obj/machinery/door/airlock/cone{
-	req_one_access = list(63,331,10);
-	name = "Close Quarters Training Room"
+/obj/effect/floor_decal/newcorner/shaft/corner{
+	dir = 1
 	},
-/turf/simulated/floor/factory_floor,
+/obj/effect/gibspawner/human,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
 /area/cadiaoutpost/oa/security/barracks)
 "oUR" = (
 /obj/effect/shuttle_landmark/ferry/cargo_start,
@@ -19141,6 +19147,17 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
+"qmJ" = (
+/obj/structure/table/graf/reinf_table{
+	icon_state = "table_horizontal2"
+	},
+/obj/item/rcd,
+/obj/item/stack/barbwire,
+/obj/item/defensive_barrier,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security/barracks)
 "qng" = (
 /obj/structure/bed/chair{
 	dir = 8;
@@ -19676,6 +19693,13 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/service/inn)
+"qKN" = (
+/obj/structure/railing,
+/obj/effect/gibspawner/human,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security/barracks)
 "qLb" = (
 /obj/effect/floor_decal/newcorner/white/solid,
 /obj/effect/wingrille_spawn/reinforced{
@@ -28109,7 +28133,6 @@
 	},
 /obj/effect/floor_decal/newcorner/green/solid,
 /obj/item/device/binoculars,
-/obj/item/rcd,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -72314,7 +72337,7 @@ gCd
 fGN
 noi
 gZP
-lnX
+oUP
 wYk
 wYk
 wYk
@@ -73069,7 +73092,7 @@ fGN
 fGN
 fGN
 fGN
-oUP
+bpK
 fGN
 fGN
 fGN
@@ -74325,10 +74348,10 @@ tOB
 tOB
 slE
 fGN
-pVJ
+qmJ
 sey
 bMd
-wgM
+qKN
 lqV
 jPo
 srD
@@ -74834,7 +74857,7 @@ gms
 sey
 sey
 sey
-sey
+gms
 fGN
 fGN
 uyG
@@ -75840,7 +75863,7 @@ wcj
 wcj
 sey
 sey
-sey
+bpK
 sey
 wcj
 fGN

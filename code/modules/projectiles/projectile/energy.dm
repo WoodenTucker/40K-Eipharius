@@ -251,7 +251,7 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
-	damage = 4
+	damage = 7
 	armor_penetration = 70
 
 /obj/item/projectile/energy/pulse/pulserail
