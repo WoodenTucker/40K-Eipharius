@@ -15,7 +15,7 @@
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	far_fire_sound = "sniper_fire"
 	one_hand_penalty = 2
-	accuracy = 1
+	accuracy = 0.5
 	fire_delay = 3
 	force = 15
 	sales_price = 4
@@ -88,7 +88,7 @@
 	unloaded_icon = "boltactionsharp-e"
 	unwielded_unloaded_icon = "boltactionsharp"
 	wielded_unloaded_icon = "boltaction-wielded"
-	accuracy = 1
+	accuracy = 0.5
 	sales_price = 10
 
 /*
@@ -187,7 +187,7 @@
 	name = "\improper Triangong 4-46"
 	desc = "The stub rifle is a common sight across the galaxy, a hunting rifle firing large-bore rounds. This one is made of quality materials and has been laboured over extensively by expert hands."
 	one_hand_penalty = 1.5
-	accuracy = 1.2
+	accuracy = 1
 	fire_delay = 4
 	sales_price = 23
 	icon_state = "boltactionsharp"
@@ -235,7 +235,7 @@
 	fire_delay = 3.5
 	gping = FALSE
 	sales_price = 10
-	accuracy = 0.8
+	accuracy = 0.3
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/glory
 	name = "\improper Crucible Pattern Stub Rifle"
@@ -243,7 +243,7 @@
 	icon_state = "oldglory"
 	item_state = "boltactionsharp"
 	empty_icon = "oldglory-e"
-	accuracy = 1.4
+	accuracy = 1
 	sales_price = 16
 
 //Paryying.
@@ -270,7 +270,7 @@
 	fire_delay = 6
 	move_delay= 2.5
 	one_hand_penalty = 1.7
-	accuracy = 1.1
+	accuracy = 0.6
 	force = 30
 	sharp = 1
 	screen_shake = 0.5
@@ -361,7 +361,7 @@
 	ammo_type = /obj/item/ammo_casing/shotgun
 	empty_icon = "voxlegisnew-e"
 	one_hand_penalty = 1.4
-	accuracy = 0.5
+	accuracy = 0
 	fire_delay= 3
 	sales_price = 10 // SHOTGUNS HAVE SLOWDOWN IN THEIR PARENT shotgun/pump -- DO NOT APPLY SLOWDOWN TO SHOTGUNS 
 
@@ -370,7 +370,7 @@
 	desc = "A rare specialty Magrave shotgun long out of production - this retired veteran has been well maintained over the years by it's previous owners."
 	move_delay= 2.5
 	one_hand_penalty = 1
-	accuracy = 0.8
+	accuracy = 0.3
 	fire_delay = 2
 	sales_price = 15
 
@@ -386,7 +386,7 @@
 	empty_icon = "hunting-sawn"
 	one_hand_penalty = 0.4
 	fire_delay = 2
-	accuracy = 0
+	accuracy = -0.5
 	armor_penetration = 0
 	sales_price = 5
 
@@ -491,7 +491,7 @@
 	fire_delay = 3.5
 	automatic = 0
 	one_hand_penalty = 1.6
-	accuracy = 1
+	accuracy = 0.5
 	sales_price = 16
 	caliber = "a762"
 	ammo_type = /obj/item/ammo_casing/a762
@@ -532,7 +532,7 @@
 	fire_delay = 2.5
 	automatic = 0.2
 	one_hand_penalty = 1.4
-	accuracy = 1.5
+	accuracy = 1
 	sales_price = 10
 
 	loaded_icon = "commando"
@@ -578,7 +578,7 @@
 	gun_type = GUN_LMG
 	move_delay= 5
 	one_hand_penalty = 2.2 //it is a HMG, but its also not a bolter, this is probably enough penalty
-	accuracy = 0.5
+	accuracy = 0
 	fire_delay = 1.6
 	sales_price = 21
 
@@ -640,7 +640,7 @@
 	desc = "A rugged belt-fed stubber that is long out of service. This one seems to have been diligently maintained over the years."
 	move_delay= 4.5
 	one_hand_penalty = 2
-	accuracy = 1
+	accuracy = 0.5
 	fire_delay = 1.5
 	sales_price = 22
 
@@ -659,7 +659,7 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
 	one_hand_penalty = 0.8
-	accuracy = 0.5
+	accuracy = 0
 	fire_delay = 1.7
 	sales_price = 8
 
@@ -696,7 +696,7 @@
 	icon_state = "autorifle"
 	item_state = "autorifle"
 	one_hand_penalty = 0.6
-	accuracy = 0.7
+	accuracy = 0.2
 	fire_delay = 1.6
 	sales_price = 18
 
@@ -725,7 +725,7 @@
 	loaded_icon = "auto_grim"
 	fire_sound = 'sound/weapons/guns/fire/sfrifle_fire.ogg'
 	one_hand_penalty = 1
-	accuracy = 0.5
+	accuracy = 0
 	fire_delay = 1.6
 	sales_price = 21
 
@@ -759,7 +759,7 @@
 	loaded_icon = "kriegstubber"
 	fire_sound = 'sound/weapons/guns/fire/sfrifle_fire.ogg'
 	one_hand_penalty = 1.2
-	accuracy = 0.7
+	accuracy = 0.2
 	fire_delay = 1.5
 	sales_price = 20
 
@@ -806,7 +806,7 @@
 	w_class = ITEM_SIZE_HUGE
 	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
 	one_hand_penalty = 1.4
-	accuracy = 0.8
+	accuracy = 0.3
 	automatic = 0
 	fire_delay = 4
 	sales_price = 20
@@ -845,7 +845,7 @@
 	w_class = ITEM_SIZE_HUGE
 	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
 	one_hand_penalty = 1.3
-	accuracy = 0.4
+	accuracy = 0
 	automatic = 1
 	fire_delay = 1.5
 	sales_price = 15
@@ -906,7 +906,7 @@
 	one_hand_penalty = 2.2
 	firemodes = list()
 	gun_type = GUN_AUTOMATIC
-	accuracy = 1
+	accuracy = 0.5
 	sales_price = 60
 
 	firemodes = list(
@@ -1003,7 +1003,7 @@
 	burst = 1
 	firemodes = list()
 	gun_type = GUN_AUTOMATIC
-	accuracy = 0
+	accuracy = -0.5
 	sales_price = 70
 
 	firemodes = list(
@@ -1046,7 +1046,7 @@
 	burst = 1
 	firemodes = list()
 	gun_type = GUN_AUTOMATIC
-	accuracy = 0.5
+	accuracy = 0
 	sales_price = 85
 
 	firemodes = list(
@@ -1067,7 +1067,7 @@
 	icon_state = "1kbolter"
 	loaded_icon = "1kbolter-30"
 	unloaded_icon = "1kbolter-e"
-	accuracy = 1.2
+	accuracy = 0.5
 /obj/item/gun/projectile/lockebolter/infernobolter/update_icon()
 	..()
 	if(ammo_magazine)
@@ -1108,7 +1108,7 @@
 	fire_delay = 1.9
 	burst = 1
 	firemodes = list()
-	accuracy = 1.4 //only one gun per round so yeah
+	accuracy = 0.6 //only one gun per round so yeah
 	gun_type = GUN_AUTOMATIC
 	sales_price = 120
 
@@ -1152,7 +1152,7 @@
 	caliber = ".75"
 	can_jam = TRUE
 	one_hand_penalty = 1
-	accuracy = -1.5
+	accuracy = -2
 	ammo_type = /obj/item/ammo_casing/ork/shoota
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/ork/shoota
@@ -1211,7 +1211,7 @@
 	wielded_unloaded_icon = "autoshotty-wielded-e"
 	force = 20 // smg
 	one_hand_penalty = 1
-	accuracy = -1
+	accuracy = -1.5
 	sales_price = 1
 
 	firemodes = list(
@@ -1242,7 +1242,7 @@
 	caliber = ".75"
 	can_jam = TRUE
 	one_hand_penalty = 2
-	accuracy = -2
+	accuracy = -2.5
 	gun_type = GUN_AUTOMATIC
 	fire_delay = 4
 	burst = 5
@@ -1281,7 +1281,7 @@
 	wielded_unloaded_icon = "autoshotty-wielded-e"
 	force = 15
 	one_hand_penalty = 2
-	accuracy = -0.5
+	accuracy = -1
 	gun_type = GUN_SNIPER
 	sales_price = 1
 
@@ -1332,7 +1332,7 @@
 		list(mode_name="automatic",   	 burst=5, fire_delay=1.5, one_hand_penalty=2, burst_accuracy=list(0,1,1), dispersion=null, automatic = 2)
 		)
 	gun_type = GUN_AUTOMATIC
-	accuracy = 1
+	accuracy = 0.5
 
 /obj/item/gun/projectile/eldar/scatapult/update_icon()
 	..()
@@ -1362,7 +1362,7 @@
 	str_requirement = 11
 	move_delay= 4
 	one_hand_penalty = 4
-	accuracy = 0.5 //Good gun, well maintained by the Mechanicus
+	accuracy = 0.1 //Good gun, well maintained by the Mechanicus
 	fire_delay = 3.5
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	magazine_type = /obj/item/ammo_magazine/radcarbine
@@ -1397,7 +1397,7 @@
 	str_requirement = 11
 	move_delay= 2
 	one_hand_penalty = 1
-	accuracy = 0.6 //Good gun, well maintained by the Mechanicus
+	accuracy = 0.1 //Good gun, well maintained by the Mechanicus
 	fire_delay = 2.5
 	slot_flags = SLOT_BELT|SLOT_S_STORE
 	magazine_type = /obj/item/ammo_magazine/radcarbine/radpistol

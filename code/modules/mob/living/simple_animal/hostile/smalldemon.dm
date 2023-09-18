@@ -130,8 +130,8 @@
 	icon_state = "floater"
 	icon_living = "floater"
 	icon_dead = "floater2"
-	maxHealth = 680
-	health = 680
+	maxHealth = 430
+	health = 430
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"

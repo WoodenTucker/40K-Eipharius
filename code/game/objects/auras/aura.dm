@@ -164,42 +164,42 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	brute_mult = 15 // Value of 10 = 1 per second. Bleeding slows this down a lot, so a minimum of 15-20 is needed to stop bleeding.
 	fire_mult = 15
 	tox_mult = 7 // We don't want toxin to heal as quickly as we want death to still be possible -- only slowed down. Not stopped.
-	organheal = 0.4 // Leave this as is. Any higher and you become god.
+	organheal = 0.3 // Leave this as is. Any higher and you become god.
 
 /obj/aura/regenerating/human/ork
 	can_regenerate_organs = TRUE
-	brute_mult = 12
-	fire_mult = 12
+	brute_mult = 9
+	fire_mult = 9
 	tox_mult = 6
-	organheal = 0.4
+	organheal = 0.3
 
 /obj/aura/regenerating/human/ogryn
 	can_regenerate_organs = TRUE
-	brute_mult = 12
-	fire_mult = 12
-	tox_mult = 6
+	brute_mult = 7
+	fire_mult = 7
+	tox_mult = 4
 	organheal = 0.3
 
 /obj/aura/regenerating/human/khornate
 	can_regenerate_organs = TRUE
-	brute_mult = 3
-	fire_mult = 3
-	tox_mult = 2
-	organheal = 0.2
+	brute_mult = 5
+	fire_mult = 5
+	tox_mult = 3
+	organheal = 0.3
 
 /obj/aura/regenerating/human/skinless
 	can_regenerate_organs = TRUE
 	brute_mult = 20
 	fire_mult = 20
 	tox_mult = 15
-	organheal = 0.4
+	organheal = 0.3
 
 /obj/aura/regenerating/human/nid
 	can_regenerate_organs = TRUE
-	brute_mult = 16
-	fire_mult = 16
-	tox_mult = 16
-	organheal = 0.4
+	brute_mult = 15
+	fire_mult = 15
+	tox_mult = 10
+	organheal = 0.3
 
 /obj/aura/regenerating/human/rat
 	can_regenerate_organs = TRUE
@@ -214,8 +214,8 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	can_regenerate_organs = TRUE
 	brute_mult = 45
 	fire_mult = 45
-	tox_mult = 8
-	organheal = 0.7
+	tox_mult = 25
+	organheal = 0.3
 
 
 /*/obj/aura/regenerating/human/astartes/life_tick()
