@@ -9,7 +9,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/penitent
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 50
+	cultist_chance = 70
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -38,7 +38,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/penitent
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 20
+	cultist_chance = 40
 
 
 	equip(var/mob/living/carbon/human/H)

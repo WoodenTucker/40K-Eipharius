@@ -160,9 +160,8 @@
 
 /turf/simulated/floor/seolite
 	name = "Seolite floor"
-	icon = 'icons/turf/soulwall2.dmi'
+	icon = 'icons/turf/flooring/plating.dmi'
 	icon_state = "cluster"
-	initial_flooring = /decl/flooring/tiling
 
 /turf/simulated/floor/tiled/stone
 	name = "stone tiled floor"
