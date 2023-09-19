@@ -16732,10 +16732,13 @@
 /obj/structure/sign/neon/exit{
 	pixel_x = 32
 	},
-/obj/structure/stairs/north,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 1
 	},
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 1
+	},
+/turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
 "qUS" = (
 /obj/structure/sign/plate/stoneshrine{
@@ -18036,10 +18039,13 @@
 /obj/structure/sign/neon/exit{
 	pixel_x = -32
 	},
-/obj/structure/stairs/north,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 1
 	},
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 1
+	},
+/turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
 "scw" = (
 /obj/machinery/light{
@@ -23813,13 +23819,16 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "ybV" = (
-/obj/structure/stairs/north,
 /obj/machinery/door/blast/id_door/open{
 	id = "ass"
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 4
 	},
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 4
+	},
+/turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
 "ycd" = (
 /obj/structure/barbwire{
