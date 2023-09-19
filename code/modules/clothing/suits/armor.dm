@@ -858,7 +858,7 @@ obj/item/clothing/suit/armor
 	name = "Tempestus Scion's Carapace Armour"
 	desc = "The black carapace body armor of the Tempestus Scion, this one has scorch marks and nicks covering it like a mural of carnage."
 	icon_state = "storm"
-	item_state = "storm"
+	item_state = "fharmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 52, bullet = 62, laser = 54, energy = 28, bomb = 68, bio = 20, rad = 35)
 	sales_price = 40

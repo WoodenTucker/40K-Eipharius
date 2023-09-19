@@ -4650,6 +4650,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"qr" = (
+/obj/machinery/teleport/hub,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/caves/dark)
 "qs" = (
 /obj/effect/floor_decal/turf/sigil{
 	icon_state = "N"
@@ -5008,6 +5012,10 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"rU" = (
+/mob/living/simple_animal/hostile/smalldemon/chaos,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/caves/dark)
 "rW" = (
 /obj/structure/shipdecor{
 	icon_state = "off"
@@ -5045,6 +5053,10 @@
 /obj/item/archaeological_find/remains/xeno{
 	color = "grey"
 	},
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/caves/dark)
+"sd" = (
+/obj/machinery/computer/teleporter,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "sg" = (
@@ -14598,8 +14610,8 @@
 	},
 /area/cadiaoutpost/oa/hangarpact)
 "ZR" = (
-/mob/living/simple_animal/hostile/mining_borg/behemoth,
-/turf/simulated/wall/seolite,
+/obj/machinery/teleport/station,
+/turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "ZS" = (
 /obj/effect/gibspawner/human,
@@ -28148,7 +28160,7 @@ Jt
 eS
 Jt
 Jt
-Jt
+pc
 Jt
 Jt
 Jt
@@ -29907,7 +29919,7 @@ Jt
 Jt
 Jt
 EN
-Jt
+rU
 Jt
 EN
 Jt
@@ -30928,7 +30940,7 @@ bv
 Jt
 Jt
 eS
-Jt
+pc
 Jt
 gb
 tO
@@ -31683,7 +31695,7 @@ eS
 Jt
 Jt
 Jt
-ZR
+eS
 Jt
 Jt
 Jt
@@ -32426,8 +32438,8 @@ zC
 Jt
 Jt
 Jt
+sd
 Jt
-pc
 iE
 Jt
 Jt
@@ -32678,7 +32690,7 @@ OB
 Jt
 Jt
 Jt
-Jt
+ZR
 Jt
 xN
 Jt
@@ -32930,7 +32942,7 @@ VN
 Jt
 Jt
 Jt
-Jt
+qr
 Jt
 nP
 Jt
@@ -35687,7 +35699,7 @@ Jt
 Jt
 Jt
 Jt
-Jt
+rU
 Jt
 Jt
 qW
