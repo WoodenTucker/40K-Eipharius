@@ -49,7 +49,7 @@
 	ammo_type = /obj/item/ammo_casing/c9mm
 	burst_delay = 1
 	automatic = 1
-	accuracy = 0
+	accuracy = -0.5
 	force = 8
 	fire_delay = 1
 	sales_price = 10

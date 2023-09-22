@@ -912,7 +912,7 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/hive_city)
+/area/cadiaoutpost/oa/villageinside)
 "dM" = (
 /obj/structure/table/graf/rusty_table,
 /obj/item/storage/fancy/cigarettes/dromedaryco,
@@ -7721,7 +7721,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/hive_city)
+/area/cadiaoutpost/oa/villageinside)
 "EB" = (
 /obj/item/trash/chips,
 /turf/simulated/floor/tiled/dark{
@@ -7788,10 +7788,6 @@
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/new_hive/hive_city)
-"EP" = (
-/obj/item/reagent_containers/food/snacks/poo,
-/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
 "EQ" = (
 /turf/simulated/floor/tiled/dark{
@@ -11184,9 +11180,6 @@
 	},
 /obj/item/bedsheet/captain,
 /obj/effect/landmark/start/governor,
-/obj/item/reagent_containers/food/snacks/poo,
-/obj/item/reagent_containers/food/snacks/poo,
-/obj/item/reagent_containers/food/snacks/poo,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "Rp" = (
@@ -12898,7 +12891,7 @@
 	icon_state = "plant-02"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/hive_city)
+/area/cadiaoutpost/oa/villageinside)
 "Xm" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/tiled{
@@ -26144,8 +26137,8 @@ eP
 eP
 eP
 eP
-IG
-IG
+eP
+eP
 uU
 uU
 uU
@@ -26397,7 +26390,7 @@ UB
 Hl
 Hl
 EA
-IG
+eP
 uU
 uU
 uU
@@ -26649,7 +26642,7 @@ eP
 za
 Hl
 dL
-IG
+eP
 uU
 uU
 uU
@@ -26901,7 +26894,7 @@ Hl
 Hl
 Hl
 Xl
-IG
+eP
 uU
 uU
 uU
@@ -27152,8 +27145,8 @@ eP
 eP
 eP
 eP
-IG
-IG
+eP
+eP
 uU
 uU
 uU
@@ -46000,7 +45993,7 @@ vt
 vt
 vt
 wk
-EP
+Al
 Ok
 Al
 VK
