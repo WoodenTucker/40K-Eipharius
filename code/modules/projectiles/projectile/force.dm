@@ -7,6 +7,7 @@
 
 /obj/item/projectile/forcebolt/strong
 	name = "force bolt"
+	damage = 60
 
 /obj/item/projectile/forcebolt/on_hit(var/atom/movable/target, var/blocked = 0)
 	if(istype(target))
