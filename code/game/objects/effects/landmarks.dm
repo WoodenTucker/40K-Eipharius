@@ -618,18 +618,18 @@ Template:
 	icon_state = "randompilgrim"
 
 /obj/random/loot/randomitemcaves/spawn_choices()
-	return list(/obj/item/shovel = 1,
+	return list(/obj/item/shovel = 3,
 				/obj/item/clothing/glasses/night = 3,
-				/obj/item/pickaxe = 1,
-				/obj/item/storage/firstaid/combat = 1,
-				/obj/item/storage/firstaid/surgery = 1,
-				/obj/item/reagent_containers/hypospray/autoinjector/revive = 4,
-				/obj/item/clothing/accessory/holster/waist = 3,
-				/obj/item/clothing/accessory/storage/webbing = 4,
-				/obj/item/stack/thrones3/ten = 1,
-				/obj/item/stack/thrones3/twenty = 1,
+				/obj/item/pickaxe = 3,
+				/obj/item/storage/firstaid/combat = 2,
+				/obj/item/storage/firstaid/surgery = 2,
+				/obj/item/reagent_containers/hypospray/autoinjector/revive = 6,
+				/obj/item/clothing/accessory/holster/waist = 6,
+				/obj/item/clothing/accessory/storage/webbing = 8,
+				/obj/item/stack/thrones3/ten = 4,
+				/obj/item/stack/thrones3/twenty = 2,
 				/obj/item/stack/thrones2/ten = 1,
-				/obj/item/grenade/frag/high_yield/homemade = 3,
+				/obj/item/grenade/frag/high_yield/homemade = 1,
 				/obj/item/grenade/frag = 1,
 				/obj/item/grenade/frag/high_yield/krak = 1)
 
@@ -650,9 +650,9 @@ Template:
 				/obj/item/clothing/accessory/holster/waist = 3,
 				/obj/item/clothing/accessory/storage/webbing = 5,
 				/obj/item/storage/belt/utility/full = 2,
-				/obj/item/clothing/accessory/legguards = 1,
-				/obj/item/clothing/accessory/armguards/ballistic = 1,
-				/obj/item/grenade/frag/high_yield/homemade = 2)
+				/obj/item/clothing/accessory/legguards = 2,
+				/obj/item/clothing/accessory/armguards/ballistic = 2,
+				/obj/item/grenade/frag/high_yield/homemade = 1)
 
 
 
@@ -713,45 +713,6 @@ Template:
 // Bloodletter = Khorne Demon / Blood Legion Commander. Very high damage and decent HP. Friendly to cultists.
 // Bubbling Mass = Big fat daemon. High HP and damage. Slow.
 // Flesh Beast = Medium daemon. Average HP and damage.
-
-/obj/effect/landmark/animal/horde/New()
-	if (prob(100)) // Difficulty: Impossible. Outpost level threat. Use this to populate very large areas. Never spawn in front of players.
-		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/fleshbeast(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/bloodletter(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/bloodletter(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/bubblingmass(src.loc)
-	if (prob(100))
-		new /obj/effect/decal/cleanable/blood/gibs/up(src.loc)
-	delete_me = 1
-
-/obj/effect/landmark/animal/bloodletter1/New()
-	if (prob(95)) // Difficulty: Very Hard. Squad level threat.
-		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/fleshbeast(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/bloodletter(src.loc)
-	if (prob(100))
-		new /obj/effect/decal/cleanable/blood/gibs/up(src.loc)
-	delete_me = 1
-
-/obj/effect/landmark/animal/bloodletter2/New() // Difficulty: Very Hard. Squad level threat.
-	if (prob(90))
-		new /mob/living/simple_animal/hostile/smalldemon/bloodletter(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/bloodletter(src.loc)
-	if (prob(100))
-		new /obj/effect/decal/cleanable/blood/gibs/up(src.loc)
-	delete_me = 1
-
-/obj/effect/landmark/animal/bubblingmass1/New() // Difficulty: Medium. Guard level threat.
-	if (prob(95))
-		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/fleshbeast(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/bubblingmass(src.loc)
-	if (prob(100))
-		new /obj/effect/decal/cleanable/blood/gibs/up(src.loc)
-	delete_me = 1
 
 /obj/effect/landmark/animal/zygote1/New() // Difficulty: Medium. Guard level threat.
 	if (prob(80))
