@@ -30,6 +30,17 @@
 	},
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"abY" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/item/device/camera,
+/obj/item/device/camera_film,
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "adF" = (
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -42,6 +53,16 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"aeS" = (
+/obj/effect/floor_decal/industrial/hatch/blue,
+/obj/structure/table/rack,
+/obj/item/storage/firstaid/surgery,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "aeU" = (
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/darkfloor{
@@ -292,6 +313,23 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"ard" = (
+/obj/machinery/cryopod{
+	dir = 4
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
+"arK" = (
+/obj/machinery/door/airlock/cone{
+	maxhealth = 3000;
+	name = "Quartermaster Office";
+	req_one_access = list(63,331,10)
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "arL" = (
 /turf/simulated/floor/darkfloor{
 	dir = 1
@@ -306,6 +344,17 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"asE" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 4;
+	icon_state = "plating"
+	},
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table3";
+	dir = 8
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "atm" = (
 /obj/effect/floor_decal/turf/bar3{
 	dir = 4
@@ -391,6 +440,14 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"aym" = (
+/obj/effect/floor_decal/newcorner/blue/diagonal,
+/obj/machinery/light,
+/turf/simulated/floor/tiled{
+	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "ayv" = (
 /obj/effect/decal/cleanable/poo,
 /obj/item/reagent_containers/food/snacks/poo,
@@ -423,6 +480,15 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"aBA" = (
+/obj/machinery/door/airlock/cone{
+	name = "Toilet";
+	id_tag = "privacy1"
+	},
+/turf/simulated/floor/tiled/freezer{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "aCJ" = (
 /obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
@@ -512,6 +578,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/inn)
+"aGv" = (
+/obj/effect/floor_decal/newcorner/shaft/quarter{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "aGx" = (
 /obj/structure/torchwall{
 	dir = 8;
@@ -556,6 +631,18 @@
 /obj/structure/grille/metal_bars/cell,
 /turf/simulated/floor/factory_floor{
 	dir = 1
+	},
+/area/cadiaoutpost/new_hive/caves)
+"aJh" = (
+/obj/structure/closet/secure_closet/medical1{
+	color = "grey";
+	req_access = list();
+	req_one_access = list(10,63,211)
+	},
+/obj/item/storage/belt/medical/full,
+/obj/item/stack/nanopaste,
+/turf/simulated/floor/darkfloor{
+	dir = 4
 	},
 /area/cadiaoutpost/new_hive/caves)
 "aJl" = (
@@ -615,6 +702,18 @@
 /obj/structure/table/rack/shelf,
 /obj/item/newore/goldore,
 /turf/simulated/floor/ceramic/surgery2,
+/area/cadiaoutpost/new_hive/caves)
+"aNB" = (
+/obj/structure/table/rack,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/effect/floor_decal/industrial/mark,
+/obj/machinery/light/small,
+/turf/simulated/floor/darksteel_floor{
+	dir = 1
+	},
 /area/cadiaoutpost/new_hive/caves)
 "aNM" = (
 /obj/structure/bed/chair{
@@ -719,6 +818,17 @@
 /obj/machinery/light/small,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
+"aUH" = (
+/obj/structure/table/rack,
+/obj/item/stack/material/steel/fifty,
+/obj/effect/floor_decal/industrial/mark,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/steel/fifty,
+/obj/item/storage/toolbox/electrical,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "aUT" = (
 /obj/structure/table/rack/dark,
 /obj/random/loot/badweapon,
@@ -772,6 +882,22 @@
 	},
 /turf/simulated/floor/darkfloor,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"aXm" = (
+/obj/effect/floor_decal/industrial/hatch/blue,
+/obj/structure/table/rack,
+/obj/item/extinguisher/mini{
+	pixel_x = 10
+	},
+/obj/item/extinguisher/mini{
+	pixel_x = -10
+	},
+/obj/item/extinguisher/mini,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "aYe" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/reagent_dispensers/fueltank,
@@ -825,6 +951,15 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"baa" = (
+/obj/structure/bed/barrack,
+/obj/structure/bed/barrack1,
+/obj/effect/landmark/start/imperialguard/specialist,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "bab" = (
 /obj/machinery/light/small/red,
 /turf/simulated/floor/tiled{
@@ -905,6 +1040,14 @@
 /obj/random/loot/sidearmammo,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/new_hive/caves)
+"bcD" = (
+/obj/machinery/shower{
+	dir = 8;
+	icon_state = "shower"
+	},
+/obj/item/reagent_containers/food/snacks/poo,
+/turf/simulated/floor/fancyfloor/gray_white,
+/area/cadiaoutpost/new_hive/caves)
 "bdu" = (
 /obj/machinery/door/airlock/glass_medical{
 	color = null;
@@ -918,6 +1061,33 @@
 "beA" = (
 /obj/item/melee/sword/choppa,
 /turf/simulated/floor/stone,
+/area/cadiaoutpost/new_hive/caves)
+"beH" = (
+/obj/machinery/body_scanconsole{
+	dir = 4;
+	icon_state = "body_scannerconsole"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"beX" = (
+/obj/effect/landmark/start{
+	name = "Commissar"
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
+"bfS" = (
+/obj/structure/table/rack/dark,
+/obj/item/mop,
+/obj/item/reagent_containers/glass/bucket,
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/obj/item/soap/soapimp,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
 /area/cadiaoutpost/new_hive/caves)
 "bgc" = (
 /obj/structure/toilet{
@@ -1008,6 +1178,17 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"blg" = (
+/obj/machinery/bodyscanner{
+	dir = 4;
+	icon_state = "body_scanner_0"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "blr" = (
 /obj/structure/closet/hive/metal{
 	anchored = 1
@@ -1299,6 +1480,24 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"buu" = (
+/obj/structure/sign/imperial{
+	pixel_y = -30
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"bvk" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/item/bandage_pack,
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "bvl" = (
 /obj/effect/floor_decal/newcorner/nbar{
 	dir = 1
@@ -1323,12 +1522,32 @@
 /obj/structure/reagent_dispensers/beerbarrel,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"bxw" = (
+/obj/effect/floor_decal/newcorner/blue/diagonal,
+/obj/structure/table/rack/shelf,
+/obj/item/storage/firstaid/regular,
+/turf/simulated/floor/tiled{
+	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "bxZ" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 10
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"byx" = (
+/obj/structure/table/rack,
+/obj/item/clothing/under/cadian_uniform,
+/obj/item/clothing/under/cadian_uniform,
+/obj/item/clothing/under/cadian_uniform,
+/obj/item/clothing/under/cadian_uniform,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "byD" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled{
@@ -1369,6 +1588,15 @@
 	},
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/farm)
+"bAc" = (
+/obj/item/storage/firstaid/regular,
+/obj/structure/table/graf/reinf_table{
+	icon_state = "table_horizontal2"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "bAu" = (
 /mob/living/simple_animal/hostile/undead,
 /turf/simulated/floor/darkfloor{
@@ -1398,6 +1626,25 @@
 	},
 /obj/item/device/boombox,
 /turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
+"bBq" = (
+/obj/effect/floor_decal/industrial/hatch/blue,
+/obj/structure/closet/crate/freezer,
+/obj/item/reagent_containers/ivbag/blood/OMinus,
+/obj/item/reagent_containers/ivbag/blood/OMinus,
+/obj/item/reagent_containers/ivbag/blood/OMinus,
+/obj/item/reagent_containers/ivbag/blood/OMinus,
+/obj/item/reagent_containers/ivbag/blood/OMinus,
+/obj/item/reagent_containers/ivbag/blood/OMinus,
+/obj/item/reagent_containers/ivbag/blood/OMinus,
+/obj/item/reagent_containers/ivbag/blood/OMinus,
+/obj/item/reagent_containers/ivbag/blood/OMinus,
+/obj/item/reagent_containers/ivbag/blood/OMinus,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
 /area/cadiaoutpost/new_hive/caves)
 "bBM" = (
 /obj/structure/bed/chair{
@@ -1503,6 +1750,16 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"bKW" = (
+/obj/structure/bed/padded,
+/obj/item/bedsheet/green{
+	color = "grey"
+	},
+/obj/effect/floor_decal/newcorner/green/solid,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "bKX" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/reagent_containers/food/condiment/barbecue{
@@ -1618,6 +1875,28 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
+"bRv" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 1
+	},
+/obj/structure/bed/chair/office/dark{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"bSa" = (
+/obj/structure/closet/secure_closet/personal/empty{
+	anchored = 1
+	},
+/obj/effect/floor_decal/newcorner/green/solid,
+/obj/item/device/binoculars,
+/obj/item/rcd,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "bSd" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/spline/plain{
@@ -1673,6 +1952,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
+"bUt" = (
+/obj/machinery/door/airlock/cone{
+	maxhealth = 3000;
+	name = "Guard Sergeant Quarters";
+	req_one_access = list(67,331)
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "bUz" = (
 /obj/random/loot/tech2,
 /obj/structure/table/rack/shelf{
@@ -1801,6 +2088,21 @@
 /obj/effect/floor_decal/industrial/warning_red,
 /turf/simulated/floor/greengrid,
 /area/cadiaoutpost/oa/research/robotics)
+"caW" = (
+/obj/effect/floor_decal/industrial/hatch/blue,
+/obj/structure/table/rack,
+/obj/item/storage/firstaid/regular{
+	pixel_y = -7
+	},
+/obj/item/storage/firstaid/regular{
+	pixel_y = 7
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "cbq" = (
 /obj/structure/hivedecor/statue8,
 /turf/simulated/floor/ceramic,
@@ -1951,6 +2253,14 @@
 "cij" = (
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/villageinside/lab)
+"ciA" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "cjk" = (
 /obj/machinery/light/small/red,
 /obj/structure/catwalkrust/blocked,
@@ -2066,6 +2376,24 @@
 	dir = 8
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"coB" = (
+/obj/effect/floor_decal/newcorner/green/quarter{
+	dir = 1
+	},
+/obj/structure/dogbed,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/mob/living/simple_animal/corgi/cpl_buddy,
+/obj/item/device/cassette/dow_spessmuhreen_theme{
+	desc = "Where have you heard this before ? It sounds VERY familiar...";
+	name = "Inon Zur - Space Marines Theme"
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "cpn" = (
 /obj/structure/bed/chair,
 /obj/effect/floor_decal/newcorner/plating{
@@ -2084,6 +2412,22 @@
 	color = "grey";
 	icon_state = "wood_broken3"
 	},
+/area/cadiaoutpost/new_hive/caves)
+"cpO" = (
+/obj/structure/table/rack,
+/obj/item/gun/projectile/bolter_pistol,
+/obj/effect/floor_decal/industrial/mark,
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"cqv" = (
+/obj/effect/floor_decal/newcorner/plating,
+/turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/caves)
 "crE" = (
 /obj/effect/floor_decal/newcorner/plating/corner{
@@ -2132,6 +2476,17 @@
 "cus" = (
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"cuA" = (
+/obj/effect/floor_decal/newcorner/blue/diagonal,
+/obj/structure/table/rack/shelf,
+/obj/item/storage/pill_bottle/inaprovaline,
+/obj/item/storage/pill_bottle/dylovene,
+/obj/item/storage/pill_bottle/tramadol,
+/turf/simulated/floor/tiled{
+	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "cuC" = (
 /obj/effect/floor_decal/newcorner/plating/quarter{
 	dir = 4
@@ -2203,6 +2558,13 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"cxq" = (
+/obj/machinery/shower{
+	dir = 8;
+	icon_state = "shower"
+	},
+/turf/simulated/floor/fancyfloor/gray_white,
+/area/cadiaoutpost/new_hive/caves)
 "cxE" = (
 /obj/structure/table/rack/dark,
 /obj/item/storage/box/smokes,
@@ -2352,6 +2714,10 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/service/inn)
+"cDu" = (
+/obj/machinery/smartfridge/chemistry,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "cEB" = (
 /obj/effect/floor_decal/turf/metal/three,
 /turf/simulated/floor/factory_floor{
@@ -2505,6 +2871,14 @@
 	},
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"cLo" = (
+/obj/machinery/door/airlock/glass_medical{
+	color = null;
+	maxhealth = 900;
+	name = "Surgical Suite"
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "cLp" = (
 /obj/machinery/light/small/red{
 	dir = 4
@@ -2531,6 +2905,12 @@
 	icon_state = "wall3"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
+"cNg" = (
+/obj/item/modular_computer/console/preset/command,
+/turf/simulated/floor/fancyfloor/carpet/grey{
+	dir = 5
+	},
+/area/cadiaoutpost/new_hive/caves)
 "cOe" = (
 /obj/machinery/light/purple{
 	dir = 8
@@ -2599,6 +2979,17 @@
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/farm)
+"cRi" = (
+/obj/structure/iv_drip,
+/obj/effect/floor_decal/newcorner/blue/diagonal,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "cRp" = (
 /obj/structure/torchwall{
 	dir = 4;
@@ -2735,6 +3126,21 @@
 /obj/item/stack/thrones2/twenty,
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/farm)
+"cYt" = (
+/obj/structure/table/rack,
+/obj/item/storage/backpack/warfare,
+/obj/item/storage/backpack/warfare,
+/obj/item/storage/backpack/warfare,
+/obj/item/storage/backpack/warfare,
+/obj/item/storage/backpack/warfare,
+/obj/item/storage/backpack/warfare,
+/obj/item/storage/backpack/dufflebag/eng,
+/obj/item/storage/backpack/dufflebag/eng,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "cYB" = (
 /obj/machinery/light{
 	dir = 8
@@ -2765,6 +3171,18 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"cYM" = (
+/obj/structure/table/steel_reinforced,
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = -6
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 6
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "cYP" = (
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/darkwood/rotten,
@@ -2962,6 +3380,16 @@
 "dhr" = (
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"dih" = (
+/obj/effect/floor_decal/industrial/mark,
+/obj/structure/closet/crate/large,
+/obj/item/clothing/head/bomb_hood/security,
+/obj/item/clothing/suit/bomb_suit/security,
+/obj/item/storage/toolbox/mechanical,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "diF" = (
 /obj/item/storage/firstaid/adv,
 /obj/structure/table/rack/dark,
@@ -3005,6 +3433,18 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"djX" = (
+/obj/structure/table/steel_reinforced,
+/obj/item/storage/box/syringes{
+	pixel_y = -4
+	},
+/obj/item/storage/box/beakers{
+	pixel_y = 6
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "dld" = (
 /obj/effect/floor_decal/newcorner/nbar{
 	dir = 8
@@ -3156,6 +3596,15 @@
 "dsC" = (
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"dsI" = (
+/obj/effect/floor_decal/spline/plain{
+	dir = 1;
+	icon_state = "spline_plain"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "dtx" = (
 /obj/structure/closet/secure_closet/engineering_electrical,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -3279,6 +3728,12 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/research/robotics)
+"dzs" = (
+/obj/effect/floor_decal/spline/plain{
+	dir = 8
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/new_hive/caves)
 "dzx" = (
 /obj/structure/table/rack/dark,
 /obj/random/loot/randomammo1,
@@ -3452,6 +3907,14 @@
 /obj/structure/stairs/south,
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/new_hive/caves)
+"dKv" = (
+/obj/structure/table/rack,
+/obj/item/storage/firstaid/surgery,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "dKI" = (
 /obj/structure/table/rack/dark,
 /obj/random/loot/guardgear,
@@ -3527,6 +3990,17 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"dOi" = (
+/obj/structure/bed/barrack,
+/obj/structure/bed/barrack1,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/effect/landmark/start/imperialguard/medicae,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "dOr" = (
 /obj/machinery/light/purple{
 	dir = 8
@@ -3602,6 +4076,13 @@
 /obj/structure/table/graf/reinf_table,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
+"dPW" = (
+/obj/effect/floor_decal/newcorner/green,
+/obj/machinery/light,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "dQb" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 1
@@ -3661,6 +4142,16 @@
 	},
 /turf/simulated/floor/darkfloor,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"dSt" = (
+/obj/structure/table/graf/rusty_table,
+/obj/item/storage/fancy/cigarettes/dromedaryco,
+/obj/item/flame/lighter/zippo{
+	pixel_x = -10
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "dTX" = (
 /obj/structure/table/steel_reinforced,
 /obj/effect/floor_decal/newcorner/reinforced{
@@ -3702,6 +4193,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"dVH" = (
+/obj/structure/table/rack,
+/obj/item/stack/material/wood/fifty,
+/obj/item/stack/material/wood/fifty,
+/obj/item/stack/material/wood/fifty,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "dVN" = (
 /obj/machinery/cryopod{
 	dir = 4
@@ -3742,6 +4243,17 @@
 "dWY" = (
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"dXm" = (
+/obj/effect/floor_decal/industrial/hatch/blue,
+/obj/structure/bed/chair/wheelchair,
+/obj/structure/bed/chair/wheelchair,
+/obj/structure/bed/chair/wheelchair,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "dXq" = (
 /obj/structure/bed/chair/cage,
 /obj/effect/decal/remains{
@@ -3823,6 +4335,18 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"eao" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "eaT" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 6
@@ -3834,6 +4358,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
+"ebk" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 8;
+	icon_state = "plating"
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "ect" = (
 /obj/item/device/cassette/heresy1,
 /obj/structure/closet/crate{
@@ -3923,6 +4454,14 @@
 /obj/machinery/light/small/red,
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/new_hive/caves)
+"eik" = (
+/obj/structure/bed/barrack,
+/obj/structure/bed/barrack1,
+/obj/effect/landmark/start/imperialguard/medicae,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "eil" = (
 /obj/machinery/door/unpowered/inn{
 	name = "Bathroom"
@@ -3953,6 +4492,13 @@
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/villageinside/lab)
+"eka" = (
+/obj/structure/curtain/open/shower/security{
+	name = "privacy curtain";
+	pixel_x = -32
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
 "ekh" = (
 /obj/structure/table/rack/dark,
 /obj/item/clothing/suit/armor/agent/coat,
@@ -4097,6 +4643,27 @@
 /obj/item/book/manual/khorne_recipes,
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/farm)
+"epx" = (
+/obj/structure/table/rack,
+/obj/item/ammo_magazine/c556/ap,
+/obj/item/ammo_magazine/c556/ap{
+	pixel_x = -12
+	},
+/obj/item/ammo_magazine/c556/ap{
+	pixel_x = 12
+	},
+/obj/effect/floor_decal/industrial/mark,
+/obj/item/ammo_magazine/c556/ap,
+/obj/item/ammo_magazine/c556/ap{
+	pixel_x = 12
+	},
+/obj/item/ammo_magazine/c556/ap{
+	pixel_x = -12
+	},
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "eqo" = (
 /obj/effect/floor_decal/newcorner/shaft/quarter{
 	dir = 8
@@ -4180,6 +4747,13 @@
 /obj/item/stack/thrones,
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"euc" = (
+/obj/effect/landmark/start/imperialguard/sniper,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "euA" = (
 /obj/effect/floor_decal/newcorner/nbar/corner{
 	dir = 4
@@ -4405,6 +4979,17 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
+"eEo" = (
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb1";
+	light_color = "#234F1E"
+	},
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "eEJ" = (
 /obj/item/ammo_casing/heat_shell/orkhe,
 /obj/item/gun/launcher/rcl_rifle/ork,
@@ -4472,6 +5057,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
+"eHb" = (
+/obj/structure/table/graf/reinf_table{
+	icon_state = "table_horizontal2"
+	},
+/obj/item/rcd,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "eHq" = (
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -4507,6 +5101,12 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
+"eIX" = (
+/obj/structure/sign/neon/exit{
+	pixel_x = -32
+	},
+/turf/simulated/floor/darksteel_floor,
+/area/cadiaoutpost/new_hive/caves)
 "eJb" = (
 /obj/effect/floor_decal/newcorner/nbar/corner{
 	dir = 4
@@ -4527,6 +5127,16 @@
 	icon_state = "r_window2"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"eJx" = (
+/obj/structure/table/rack,
+/obj/item/stack/material/glass/fifty,
+/obj/item/stack/material/glass/fifty,
+/obj/item/stack/material/glass/fifty,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "eJC" = (
 /obj/effect/floor_decal/turf/bar3{
 	dir = 4
@@ -4554,6 +5164,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"eKs" = (
+/obj/effect/floor_decal/newcorner/shaft{
+	dir = 1
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "eKN" = (
 /obj/structure/closet/hive/luxury,
 /obj/item/clothing/under/pj/blue,
@@ -4596,6 +5215,17 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"eND" = (
+/obj/machinery/recharger{
+	pixel_x = -34
+	},
+/obj/effect/floor_decal/industrial/loading{
+	dir = 1
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "eOM" = (
 /obj/effect/floor_decal/newcorner/nbar{
 	dir = 9
@@ -4632,6 +5262,15 @@
 /obj/effect/floor_decal/turf/necro1,
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"eRg" = (
+/obj/effect/floor_decal/newcorner/shaft/quarter{
+	dir = 8
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "eRM" = (
 /obj/structure/bed/chair/wood/simple{
 	dir = 8
@@ -4648,6 +5287,17 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"eSB" = (
+/obj/structure/table/rack,
+/obj/effect/floor_decal/industrial/mark,
+/obj/item/airlock_electronics,
+/obj/item/airlock_electronics,
+/obj/item/airlock_electronics,
+/obj/item/airlock_electronics,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "eTc" = (
 /turf/simulated/floor/stone/ancient_stone_floor3,
 /area/cadiaoutpost/oa/service/chapel/recovery)
@@ -4757,6 +5407,10 @@
 	},
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"eUU" = (
+/obj/machinery/light,
+/turf/simulated/floor/ceramic/surgery2,
+/area/cadiaoutpost/new_hive/caves)
 "eVd" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 4
@@ -4792,6 +5446,23 @@
 /obj/effect/floor_decal/newcorner/stone/corner,
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"eWS" = (
+/obj/machinery/door/airlock/glass_medical{
+	color = null;
+	maxhealth = 1200;
+	name = "Storage";
+	req_one_access = list(63,10,331)
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
+"eXE" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "eXO" = (
 /obj/structure/sink{
 	dir = 4;
@@ -4813,6 +5484,20 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"eZh" = (
+/obj/structure/table/rack,
+/obj/item/extinguisher/mini{
+	pixel_x = 10
+	},
+/obj/item/extinguisher/mini,
+/obj/item/extinguisher/mini{
+	pixel_x = -10
+	},
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "eZn" = (
 /obj/effect/decal/remains{
 	color = "grey"
@@ -4822,6 +5507,14 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"eZo" = (
+/obj/structure/table/rack,
+/obj/item/gun/projectile/heavysniper,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "eZz" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 1
@@ -5006,6 +5699,32 @@
 /obj/structure/bed/chair/wood/fancy/comfy2,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"fix" = (
+/obj/effect/floor_decal/newcorner/green{
+	dir = 4
+	},
+/obj/item/fluff_items/paperwork{
+	pixel_y = 7
+	},
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table3";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"fiD" = (
+/obj/effect/floor_decal/newcorner/blue/diagonal,
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/tiled{
+	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "fiF" = (
 /obj/machinery/light{
 	dir = 1;
@@ -5059,6 +5778,17 @@
 /obj/effect/floor_decal/industrial/outline/red,
 /turf/simulated/floor/darksteel_floor,
 /area/cadiaoutpost/oa/magistratumpost)
+"fkl" = (
+/obj/effect/floor_decal/industrial/hatch/blue,
+/obj/structure/iv_drip,
+/obj/structure/iv_drip,
+/obj/structure/iv_drip,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "fle" = (
 /obj/item/remains/human{
 	color = "grey"
@@ -5146,6 +5876,22 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"foK" = (
+/obj/structure/toilet{
+	dir = 4
+	},
+/obj/machinery/button/toggle/door{
+	name = "bathroom privacy 4#";
+	pixel_y = 32;
+	id = "privacy4"
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/freezer{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "fpX" = (
 /obj/effect/water/top{
 	color = "purple"
@@ -5165,6 +5911,20 @@
 	},
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"fqc" = (
+/obj/structure/table/rack,
+/obj/item/cell/lasgun/hotshot,
+/obj/item/cell/lasgun/hotshot{
+	pixel_x = -6
+	},
+/obj/item/cell/lasgun/hotshot{
+	pixel_x = 6
+	},
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "fqj" = (
 /obj/machinery/button/remote/blast_door/id_scan{
 	id = "ass";
@@ -5212,6 +5972,13 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"fsa" = (
+/obj/effect/floor_decal/newcorner/reinforced,
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 4
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "fsc" = (
 /obj/random/technology_scanner,
 /obj/random/technology_scanner,
@@ -5335,6 +6102,30 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"fxH" = (
+/obj/structure/bed/chair,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"fya" = (
+/obj/structure/table/rack,
+/obj/item/clothing/suit/armor/guardsman,
+/obj/item/clothing/suit/armor/guardsman,
+/obj/item/clothing/suit/armor/guardsman,
+/obj/item/clothing/suit/armor/guardsman,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"fzE" = (
+/obj/effect/floor_decal/industrial/mark,
+/obj/structure/reagent_dispensers/fueltank,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "fAn" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -5436,6 +6227,21 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"fGm" = (
+/obj/item/device/healthanalyzer{
+	pixel_x = 8
+	},
+/obj/item/reagent_containers/pill/tramadol{
+	pixel_x = -2
+	},
+/obj/structure/table/graf/reinf_table{
+	icon_state = "table_horizontal2";
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "fGq" = (
 /obj/structure/hivedecor/statue5{
 	icon = 'icons/map_project/pillars.dmi';
@@ -5506,6 +6312,19 @@
 	icon_state = "floor6"
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
+"fIx" = (
+/obj/structure/table/rack,
+/obj/effect/floor_decal/industrial/mark,
+/obj/item/ammo_magazine/box/a556/mg08,
+/obj/item/ammo_magazine/box/a556/mg08,
+/obj/item/ammo_magazine/a762/ap,
+/obj/item/ammo_magazine/a762/ap,
+/obj/item/cell/plasma,
+/obj/item/ammo_magazine/melta,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "fIz" = (
 /obj/structure/stairs/south,
 /turf/simulated/floor/tiled/dark{
@@ -5648,6 +6467,21 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
+"fOU" = (
+/obj/item/paper_bin{
+	pixel_y = 8
+	},
+/obj/item/pen/multi{
+	pixel_y = 4
+	},
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 4
+	},
+/turf/simulated/floor/fancyfloor/carpet/grey{
+	dir = 8
+	},
+/area/cadiaoutpost/new_hive/caves)
 "fPO" = (
 /obj/effect/floor_decal/newcorner/red/quarter,
 /obj/effect/floor_decal/newcorner/plating/corner{
@@ -5695,6 +6529,13 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"fRO" = (
+/obj/effect/floor_decal/spline/plain,
+/obj/machinery/light/small,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "fSg" = (
 /obj/structure/sign/chaos{
 	icon_state = "horny";
@@ -5730,6 +6571,27 @@
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"fWu" = (
+/obj/structure/filingcabinet{
+	pixel_y = 20;
+	pixel_x = 8
+	},
+/obj/structure/filingcabinet{
+	pixel_x = -8;
+	pixel_y = 20
+	},
+/obj/effect/floor_decal/spline/plain{
+	dir = 1;
+	icon_state = "spline_plain"
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/new_hive/caves)
+"fXN" = (
+/obj/machinery/cryopod{
+	dir = 4
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "fYo" = (
 /obj/structure/table/rack,
 /obj/item/stack/material/cloth/fifty,
@@ -5748,6 +6610,17 @@
 	dir = 1
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"gax" = (
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 10
+	},
+/area/cadiaoutpost/new_hive/caves)
+"gcs" = (
+/obj/structure/iv_drip,
+/obj/item/reagent_containers/ivbag/blood/OMinus,
+/obj/effect/floor_decal/newcorner/blue/solid,
+/turf/simulated/floor/ceramic/surgery2,
+/area/cadiaoutpost/new_hive/caves)
 "gcL" = (
 /obj/random/trash,
 /obj/effect/floor_decal/newcorner/plating{
@@ -5831,6 +6704,10 @@
 /obj/item/toothpuller,
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/farm)
+"gfN" = (
+/obj/structure/closet/secure_closet/warden,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
 "gge" = (
 /obj/structure/sink{
 	dir = 4;
@@ -5870,6 +6747,11 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"ghw" = (
+/obj/machinery/computer/operating,
+/obj/effect/floor_decal/newcorner/blue/solid,
+/turf/simulated/floor/ceramic/surgery2,
+/area/cadiaoutpost/new_hive/caves)
 "ghC" = (
 /obj/machinery/light/small/red{
 	dir = 1
@@ -5936,6 +6818,27 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"gku" = (
+/obj/structure/table/rack,
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier,
+/obj/item/stack/barbwire{
+	amount = 15
+	},
+/obj/item/stack/barbwire{
+	amount = 15
+	},
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "gkw" = (
 /obj/machinery/light/small/red{
 	dir = 8;
@@ -5944,6 +6847,16 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
+/area/cadiaoutpost/new_hive/caves)
+"gkP" = (
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 8
+	},
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table3";
+	dir = 8
+	},
+/turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/caves)
 "gkS" = (
 /obj/structure/torchwall/service{
@@ -6038,6 +6951,17 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"gnY" = (
+/obj/item/storage/fancy/cigarettes/dromedaryco,
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/obj/item/storage/belt/warfare,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "goi" = (
 /obj/structure/bed/chair/wood{
 	dir = 4;
@@ -6081,6 +7005,25 @@
 "gpl" = (
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"gpt" = (
+/obj/structure/table/graf/rusty_table,
+/obj/item/device/cassette/grimdark,
+/obj/item/device/cassette/inn1{
+	pixel_y = 10
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"gpC" = (
+/obj/effect/floor_decal/newcorner/shaft{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
 	},
 /area/cadiaoutpost/new_hive/caves)
 "gpO" = (
@@ -6199,6 +7142,22 @@
 	},
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"gvy" = (
+/obj/effect/floor_decal/newcorner/shaft{
+	dir = 1
+	},
+/obj/machinery/light/small{
+	dir = 1;
+	icon_state = "bulb1"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"gwz" = (
+/turf/simulated/floor/fancyfloor/gray_white,
+/area/cadiaoutpost/new_hive/caves)
 "gxt" = (
 /obj/effect/floor_decal/newcorner/white{
 	dir = 4
@@ -6235,6 +7194,17 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"gAu" = (
+/obj/structure/table/rack,
+/obj/item/clothing/shoes/jackboots/cadian,
+/obj/item/clothing/shoes/jackboots/cadian,
+/obj/item/clothing/shoes/jackboots/cadian,
+/obj/item/clothing/shoes/jackboots/cadian,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "gBj" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/shieldgen,
@@ -6422,6 +7392,13 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
+"gHH" = (
+/obj/machinery/door/airlock/cone{
+	req_one_access = list(63,331,10);
+	name = "Close Quarters Training Room"
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "gId" = (
 /obj/structure/curtain/open/shower{
 	icon_state = "closed"
@@ -6564,6 +7541,19 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"gOw" = (
+/obj/effect/floor_decal/newcorner/plating,
+/obj/item/gun/energy/las/laspistol{
+	pixel_y = 8
+	},
+/obj/structure/table/graf/reinf_table{
+	icon_state = "table_horizontal2";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "gOG" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/darkwood/rotten,
@@ -6582,6 +7572,12 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"gPb" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "gPi" = (
 /obj/effect/floor_decal/spline/fancy/wood,
 /obj/machinery/light,
@@ -6624,17 +7620,58 @@
 /obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/villageinside/lab)
+"gRz" = (
+/obj/effect/floor_decal/newcorner/blue/diagonal,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "gRJ" = (
 /obj/structure/torchwall/service{
 	pixel_y = 32
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"gSd" = (
+/obj/structure/table/rack/shelf{
+	color = "grey"
+	},
+/obj/item/melee/sword/commissword,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/obj/item/card/id/key/grand/master{
+	access = list(333,225,331,63)
+	},
+/obj/item/card/id/key/grand/monastary{
+	access = list(213,211)
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
 "gSQ" = (
 /obj/structure/table/rack/dark,
 /obj/item/evidencebag,
 /turf/simulated/floor/ceramic/blackstone,
 /area/cadiaoutpost/oa/magistratumpost)
+"gTh" = (
+/obj/effect/floor_decal/turf/armory{
+	icon_state = "arm3"
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"gTu" = (
+/obj/effect/floor_decal/newcorner/plating/quarter,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "gTv" = (
 /obj/structure/stairs/south,
 /turf/simulated/floor/tiled/dark{
@@ -6689,6 +7726,20 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"gVW" = (
+/obj/structure/table/rack,
+/obj/item/gun/energy/las/laspistol{
+	pixel_y = 8
+	},
+/obj/item/gun/energy/las/laspistol,
+/obj/item/gun/energy/las/laspistol{
+	pixel_y = -8
+	},
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "gWn" = (
 /obj/structure/table/rack/dark,
 /obj/item/device/cassette/inqlog1{
@@ -6742,6 +7793,17 @@
 "gZd" = (
 /obj/item/ammo_magazine/ork/slugga,
 /turf/simulated/floor/trench,
+/area/cadiaoutpost/new_hive/caves)
+"gZp" = (
+/obj/structure/table/rack,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/darksteel_floor{
+	dir = 1
+	},
 /area/cadiaoutpost/new_hive/caves)
 "gZw" = (
 /obj/machinery/light/small{
@@ -6851,11 +7913,31 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
+"hcY" = (
+/obj/structure/table/rack,
+/obj/item/gun/energy/las/lasgun/lucius{
+	pixel_y = 6
+	},
+/obj/item/gun/energy/las/lasgun/lucius,
+/obj/item/gun/energy/las/lasgun/lucius{
+	pixel_y = -6
+	},
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "hdG" = (
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 9
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"heM" = (
+/obj/effect/wingrille_spawn/reinforced{
+	color = "grey"
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "heO" = (
 /obj/structure/torchwall/service{
 	dir = 4;
@@ -6976,6 +8058,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"hkj" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/fancyfloor/gray_white,
+/area/cadiaoutpost/new_hive/caves)
 "hkT" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -6993,6 +8081,22 @@
 	icon_state = "floor6"
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
+"hlt" = (
+/obj/structure/table/rack,
+/obj/effect/floor_decal/industrial/mark,
+/obj/random/loot/randomammosidearm,
+/obj/random/loot/randomammosidearm,
+/obj/random/loot/randomammosidearm,
+/obj/random/loot/randomammosidearm,
+/obj/random/loot/randomammosidearm,
+/obj/random/loot/randomammosidearm,
+/obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "hlA" = (
 /obj/effect/floor_decal/newcorner/nbar{
 	dir = 4
@@ -7089,6 +8193,17 @@
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
+"hsL" = (
+/obj/structure/table/rack,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/darksteel_floor{
+	dir = 4
+	},
+/area/cadiaoutpost/new_hive/caves)
 "htc" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 1
@@ -7293,6 +8408,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
+"hCB" = (
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "hCZ" = (
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
@@ -7334,6 +8459,19 @@
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/cadiaoutpost/oa/magistratumpost)
+"hEu" = (
+/obj/item/clothing/mask/gas/commissar{
+	pixel_y = -1
+	},
+/obj/item/clothing/head/commissar/adept{
+	pixel_y = 14
+	},
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 4
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
 "hEC" = (
 /obj/structure/bed{
 	icon = "icons/map_project/furniture_and_decor.dmi";
@@ -7618,6 +8756,22 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
+"hQD" = (
+/obj/structure/toilet{
+	dir = 4
+	},
+/obj/machinery/button/toggle/door{
+	name = "bathroom privacy 3#";
+	pixel_y = 32;
+	id = "privacy3"
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/freezer{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "hQU" = (
 /obj/effect/floor_decal/newcorner/nbar{
 	dir = 8
@@ -7735,6 +8889,15 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"hVJ" = (
+/obj/effect/floor_decal/newcorner/shaft/quarter{
+	dir = 1
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "hWh" = (
 /obj/machinery/photocopier,
 /obj/item/device/toner,
@@ -7742,6 +8905,29 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"hXT" = (
+/obj/item/clothing/accessory/medal/iron/Administratum{
+	pixel_y = 15;
+	pixel_x = 8
+	},
+/obj/item/reagent_containers/food/drinks/bottle/amasecexpensive{
+	pixel_y = 11;
+	pixel_x = -8
+	},
+/obj/item/reagent_containers/food/drinks/glass2/shot{
+	pixel_y = -5;
+	pixel_x = 9
+	},
+/obj/item/reagent_containers/food/drinks/glass2/shot{
+	pixel_x = -2;
+	pixel_y = -3
+	},
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 8
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
 "hYj" = (
 /obj/structure/sink{
 	dir = 8;
@@ -7828,6 +9014,11 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"idv" = (
+/turf/simulated/floor/fancyfloor/carpet/grey{
+	dir = 6
+	},
+/area/cadiaoutpost/new_hive/caves)
 "ieh" = (
 /obj/effect/floor_decal/newcorner/red/quarter,
 /obj/effect/floor_decal/newcorner/plating/corner{
@@ -7921,6 +9112,14 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"iic" = (
+/obj/effect/floor_decal/spline/plain{
+	dir = 6
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "iif" = (
 /obj/structure/table/rack,
 /obj/item/cell/lasgun{
@@ -8043,6 +9242,17 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"imT" = (
+/obj/structure/table/graf/rusty_table,
+/obj/item/deck/cards,
+/obj/item/dice{
+	pixel_y = 12;
+	pixel_x = 10
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "ina" = (
 /obj/item/pickaxe/diamond,
 /turf/simulated/floor/stone,
@@ -8174,6 +9384,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"iqe" = (
+/obj/machinery/door/airlock/cone{
+	name = "Toilet"
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "iqw" = (
 /obj/effect/floor_decal/industrial/warning_red{
 	dir = 4;
@@ -8303,6 +9519,11 @@
 	},
 /turf/simulated/wall/stone,
 /area/cadiaoutpost/new_hive/caves)
+"ixV" = (
+/obj/random/loot/goodweapon,
+/obj/structure/table/graf/polished_table,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
 "iyf" = (
 /obj/machinery/door/unpowered/inn{
 	req_one_access = list(247);
@@ -8327,6 +9548,14 @@
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
+/area/cadiaoutpost/new_hive/caves)
+"iyD" = (
+/obj/machinery/door/airlock/cone{
+	maxhealth = 3000;
+	name = "Armory Entrace";
+	req_one_access = list(63,67,331,10)
+	},
+/turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/caves)
 "iAe" = (
 /obj/effect/floor_decal/newcorner/plating{
@@ -8403,6 +9632,23 @@
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"iDM" = (
+/obj/structure/bed/chair,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"iDN" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/item/reagent_containers/food/snacks/poo,
+/turf/simulated/floor/fancyfloor/gray_white,
+/area/cadiaoutpost/new_hive/caves)
 "iDU" = (
 /obj/machinery/vending/engineering,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -8684,6 +9930,13 @@
 /obj/effect/floor_decal/newcorner/plating,
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"iSu" = (
+/obj/effect/floor_decal/newcorner/reinforced,
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "iTr" = (
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/service/inn)
@@ -8741,6 +9994,13 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"iWr" = (
+/obj/machinery/door/airlock/cone{
+	req_one_access = list(63,10,331);
+	name = "Guardsmen Bunks"
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "iWw" = (
 /obj/structure/bed/chair{
 	dir = 8;
@@ -8835,6 +10095,30 @@
 	},
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"iYd" = (
+/obj/effect/floor_decal/industrial/mark,
+/obj/structure/closet/crate/large,
+/obj/item/clothing/accessory/storage/pouches/large/green,
+/obj/item/clothing/accessory/storage/pouches/large/green{
+	pixel_y = 8
+	},
+/obj/item/clothing/accessory/storage/pouches/large/green{
+	pixel_y = 8
+	},
+/obj/item/clothing/accessory/storage/pouches/large/green,
+/obj/item/clothing/accessory/storage/bandolier,
+/obj/item/clothing/accessory/storage/bandolier,
+/obj/item/clothing/accessory/holster/hip,
+/obj/item/clothing/accessory/holster/hip,
+/obj/item/clothing/accessory/holster,
+/obj/item/clothing/accessory/holster,
+/obj/item/clothing/accessory/holster/thigh,
+/obj/item/clothing/accessory/holster/thigh,
+/obj/item/clothing/suit/guardchef,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "iYB" = (
 /obj/structure/table/rack/dark,
 /obj/item/reagent_containers/spray/luminol{
@@ -8950,6 +10234,16 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"jdS" = (
+/obj/structure/closet/boxinggloves,
+/obj/machinery/light/small{
+	dir = 1;
+	icon_state = "bulb1"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "jdT" = (
 /obj/effect/floor_decal/turf/bar2,
 /obj/effect/floor_decal/turf/big_cables1{
@@ -9019,6 +10313,13 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
+"jiF" = (
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "jiM" = (
 /obj/effect/floor_decal/newcorner/stone/corner,
 /obj/effect/floor_decal/newcorner/stone/corner{
@@ -9241,6 +10542,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"jvw" = (
+/obj/structure/closet/crate/freezer,
+/obj/item/organ/internal/lungs,
+/obj/item/organ/internal/liver,
+/obj/item/organ/internal/kidneys,
+/obj/item/organ/internal/heart,
+/obj/item/organ/internal/eyes,
+/obj/item/organ/internal/appendix,
+/turf/simulated/floor/ceramic/surgery2,
+/area/cadiaoutpost/new_hive/caves)
 "jvx" = (
 /obj/structure/table/rack/dark,
 /obj/item/melee/chain/pcsword/eviscerator,
@@ -9466,6 +10777,20 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"jKi" = (
+/obj/effect/floor_decal/newcorner/green/quarter,
+/obj/item/flame/lighter/zippo{
+	pixel_x = -10
+	},
+/obj/item/storage/fancy/cigarettes/cigarello/variety{
+	pixel_x = 10
+	},
+/obj/item/storage/fancy/cigarettes/cigarello/variety,
+/obj/structure/table/graf/reinf_table,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "jKy" = (
 /obj/structure/table/rack/dark,
 /obj/item/crowbar,
@@ -9618,6 +10943,14 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"jOS" = (
+/obj/effect/floor_decal/newcorner/plating,
+/obj/machinery/computer/station_alert/security,
+/obj/machinery/light,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "jPE" = (
 /obj/item/book/manual/tzeentch_recipes,
 /turf/simulated/floor/stone/old4,
@@ -9656,6 +10989,26 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
+"jQG" = (
+/obj/structure/sign/commissar{
+	pixel_x = 32
+	},
+/obj/effect/floor_decal/spline/plain{
+	dir = 4
+	},
+/obj/machinery/papershredder,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/new_hive/caves)
+"jQK" = (
+/obj/effect/floor_decal/industrial/hatch/blue,
+/obj/structure/table/rack,
+/obj/item/book/manual/medical_diagnostics_manual,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "jRc" = (
 /obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled,
@@ -9667,6 +11020,21 @@
 	dir = 6
 	},
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
+"jRZ" = (
+/obj/structure/table/rack,
+/obj/item/mortar_shell/flare,
+/obj/item/mortar_shell/flare,
+/obj/item/mortar_shell/flare,
+/obj/item/mortar_shell/flare,
+/obj/item/mortar_shell/flare,
+/obj/item/mortar_shell/flare,
+/obj/item/mortar_shell/flare,
+/obj/item/mortar_shell/flare,
+/obj/item/mortar_shell/flare,
+/obj/item/mortar_shell/flare,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "jSc" = (
 /obj/effect/floor_decal/newcorner/red/quarter{
 	dir = 1
@@ -9784,6 +11152,32 @@
 /obj/effect/decal/cleanable/poo,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"jYH" = (
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 8
+	},
+/obj/structure/sign/imperial{
+	pixel_y = -30
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"jYS" = (
+/obj/structure/table/rack,
+/obj/item/clothing/head/helmet/flak,
+/obj/item/clothing/head/helmet/flak,
+/obj/item/clothing/head/helmet/flak,
+/obj/item/clothing/head/helmet/flak,
+/obj/effect/floor_decal/industrial/mark,
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "jZw" = (
 /obj/structure/table/rack/dark,
 /obj/item/storage/box/teargas{
@@ -9891,6 +11285,15 @@
 /obj/item/clothing/head/hairflower/bow,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"kfl" = (
+/obj/effect/floor_decal/newcorner/shaft/corner{
+	dir = 1
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "kfA" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 4;
@@ -10073,6 +11476,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"kkV" = (
+/obj/structure/warfare/barricade/concrete_barrier,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "klz" = (
 /obj/effect/floor_decal/turf/metal/six,
 /obj/effect/floor_decal/industrial/warning_red,
@@ -10107,6 +11516,11 @@
 /obj/structure/table/graf/reinf_table,
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/magistratumpost)
+"knL" = (
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 6
+	},
+/area/cadiaoutpost/new_hive/caves)
 "kob" = (
 /obj/machinery/light/small/red{
 	dir = 1;
@@ -10240,6 +11654,13 @@
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/new_hive/caves)
+"ksH" = (
+/obj/effect/floor_decal/spline/plain{
+	dir = 1;
+	icon_state = "spline_plain"
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/new_hive/caves)
 "ksQ" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/floor_decal/industrial/warning_red{
@@ -10333,6 +11754,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"kxR" = (
+/obj/effect/floor_decal/newcorner/blue/diagonal,
+/obj/structure/table/rack/shelf,
+/obj/item/storage/firstaid/adv,
+/turf/simulated/floor/tiled{
+	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "kxV" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
 /obj/item/reagent_containers/food/condiment/flour,
@@ -10356,6 +11786,14 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"kzJ" = (
+/obj/structure/table/rack,
+/obj/item/stack/material/plasteel/fifty,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "kAa" = (
 /obj/effect/floor_decal/newcorner/plating/quarter,
 /turf/simulated/floor/darkfloor{
@@ -10446,6 +11884,17 @@
 /obj/structure/warfare/barricade/concrete_barrier,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/villageinside/lab)
+"kDT" = (
+/obj/structure/table/rack,
+/obj/item/grenade/fire,
+/obj/item/grenade/fire,
+/obj/item/grenade/fire,
+/obj/effect/floor_decal/industrial/mark,
+/obj/machinery/light/small,
+/turf/simulated/floor/darksteel_floor{
+	dir = 1
+	},
+/area/cadiaoutpost/new_hive/caves)
 "kEa" = (
 /obj/machinery/computer/operating,
 /obj/effect/floor_decal/newcorner/teal/solid,
@@ -10457,6 +11906,13 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"kEO" = (
+/obj/effect/floor_decal/industrial/mark,
+/obj/structure/reagent_dispensers/watertank,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "kFh" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/reagent_containers/pill/dylovene,
@@ -10497,6 +11953,12 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"kGP" = (
+/obj/item/storage/firstaid/surgery,
+/obj/effect/floor_decal/newcorner/blue/solid,
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/ceramic/surgery2,
+/area/cadiaoutpost/new_hive/caves)
 "kGU" = (
 /obj/structure/table/steel_reinforced,
 /obj/structure/reagent_dispensers/virusfood{
@@ -10516,6 +11978,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
+"kHC" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/obj/item/soap/soapimp,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "kHI" = (
 /obj/effect/decal/cleanable/cobweb{
 	dir = 8
@@ -10579,6 +12051,33 @@
 /obj/machinery/microwave,
 /obj/structure/table/woodentable,
 /turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
+"kLq" = (
+/obj/structure/closet/secure_closet/medical1{
+	color = "grey";
+	req_access = list();
+	req_one_access = list(10,63,211)
+	},
+/obj/item/storage/belt/medical/full,
+/obj/item/stack/nanopaste,
+/obj/machinery/light/small,
+/turf/simulated/floor/darkfloor{
+	dir = 4
+	},
+/area/cadiaoutpost/new_hive/caves)
+"kLB" = (
+/obj/structure/table/rack,
+/obj/item/ammo_magazine/bolt_pistol_magazine,
+/obj/item/ammo_magazine/bolt_pistol_magazine{
+	pixel_x = 8
+	},
+/obj/effect/floor_decal/industrial/mark,
+/obj/item/ammo_magazine/bolt_pistol_magazine{
+	pixel_x = -8
+	},
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
 /area/cadiaoutpost/new_hive/caves)
 "kLQ" = (
 /obj/structure/stairs/south,
@@ -10790,6 +12289,41 @@
 /obj/item/clothing/suit/armor/carapaceduster,
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"kUR" = (
+/obj/structure/table/rack,
+/obj/effect/floor_decal/industrial/mark,
+/obj/item/storage/belt/warfare,
+/obj/item/storage/belt/warfare,
+/obj/item/storage/belt/warfare{
+	pixel_y = 4
+	},
+/obj/item/storage/belt/warfare{
+	pixel_y = 4
+	},
+/obj/item/storage/belt/warfare{
+	pixel_y = 8
+	},
+/obj/item/storage/belt/warfare{
+	pixel_y = 8
+	},
+/obj/item/storage/belt/warfare{
+	pixel_y = 12
+	},
+/obj/item/storage/belt/warfare{
+	pixel_y = 12
+	},
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"kVb" = (
+/obj/effect/floor_decal/newcorner/shaft/quarter{
+	dir = 1
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "kWc" = (
 /obj/effect/decal/cleanable/cobweb2,
 /turf/simulated/floor/stone,
@@ -10819,6 +12353,18 @@
 /obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/factory_floor{
 	dir = 1
+	},
+/area/cadiaoutpost/new_hive/caves)
+"kYV" = (
+/obj/structure/table/rack,
+/obj/item/storage/box/sniperammo,
+/obj/item/storage/box/sniperammo,
+/obj/item/storage/box/sniperammo,
+/obj/item/storage/box/sniperammo,
+/obj/effect/floor_decal/industrial/mark,
+/obj/machinery/light,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
 "kYY" = (
@@ -10949,6 +12495,20 @@
 	icon_state = "dark1"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
+"ldc" = (
+/obj/structure/table/rack,
+/obj/item/gun/energy/las/lasgun{
+	pixel_y = 8
+	},
+/obj/item/gun/energy/las/lasgun,
+/obj/item/gun/energy/las/lasgun{
+	pixel_y = -6
+	},
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "ldl" = (
 /obj/effect/floor_decal/newcorner/purple{
 	dir = 8
@@ -11005,6 +12565,12 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
+"lgB" = (
+/obj/structure/sign/wantedwritten{
+	pixel_x = -32
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
 "lgI" = (
 /obj/machinery/door/airlock/hatch/simiel{
 	name = "Storage";
@@ -11025,6 +12591,15 @@
 	},
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"lhk" = (
+/obj/structure/bed/barrack,
+/obj/structure/bed/barrack1,
+/obj/effect/landmark/start/imperialguard/recruit,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "liy" = (
 /obj/machinery/door/airlock/glass_command/magos{
 	color = null;
@@ -11062,6 +12637,15 @@
 /obj/effect/floor_decal/newcorner/shaft/quarter,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
+"llv" = (
+/obj/effect/floor_decal/newcorner/green/quarter{
+	dir = 4
+	},
+/obj/structure/closet/crate/bin,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "llG" = (
 /obj/effect/floor_decal/turf/metal/nine,
 /obj/machinery/light{
@@ -11072,6 +12656,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"llS" = (
+/obj/structure/iv_drip,
+/obj/effect/floor_decal/newcorner/blue/diagonal,
+/turf/simulated/floor/tiled{
+	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "lnJ" = (
 /mob/living/simple_animal/hostile/shadow{
 	name = "Lesser Shadow";
@@ -11142,6 +12734,15 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"lrA" = (
+/obj/structure/bed/roller,
+/obj/effect/floor_decal/industrial/hatch/blue,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "lrB" = (
 /obj/effect/floor_decal/industrial/warning_red{
 	dir = 5
@@ -11162,6 +12763,18 @@
 /obj/effect/floor_decal/newcorner/purple,
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/caves/dark)
+"ltp" = (
+/obj/structure/table/rack,
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/obj/item/clothing/accessory/storage/webbing,
+/obj/item/clothing/accessory/storage/webbing,
+/obj/item/clothing/accessory/storage/webbing,
+/obj/item/clothing/accessory/storage/webbing,
+/obj/item/clothing/accessory/storage/webbing,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "ltx" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/pen/multi{
@@ -11290,6 +12903,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
+"lAH" = (
+/obj/item/storage/fancy/cigarettes/dromedaryco,
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "lBc" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 10
@@ -11356,6 +12979,12 @@
 /obj/structure/sign/writers,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/new_hive/caves)
+"lDi" = (
+/obj/structure/bed/chair/wood/fancy/comfy2,
+/turf/simulated/floor/fancyfloor/carpet/grey{
+	dir = 1
+	},
+/area/cadiaoutpost/new_hive/caves)
 "lDv" = (
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /obj/structure/table/graf/reinf_table,
@@ -11409,8 +13038,31 @@
 /obj/effect/water/bottom,
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/new_hive/caves)
+"lEZ" = (
+/obj/structure/stairs/north,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/new_hive/caves)
+"lFt" = (
+/obj/effect/floor_decal/newcorner/shaft/quarter{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "lFF" = (
 /turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"lFP" = (
+/obj/structure/table/rack,
+/obj/item/gun/energy/las/lasgun/catachan{
+	pixel_y = 8
+	},
+/obj/item/gun/energy/las/lasgun/catachan,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled{
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
@@ -11473,6 +13125,9 @@
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /turf/simulated/floor/seolite,
+/area/cadiaoutpost/new_hive/caves)
+"lIa" = (
+/turf/simulated/floor/ceramic/surgery,
 /area/cadiaoutpost/new_hive/caves)
 "lJp" = (
 /obj/structure/undies_wardrobe,
@@ -11660,6 +13315,25 @@
 "lPX" = (
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"lQA" = (
+/obj/item/card/id/commissar/spare{
+	pixel_x = -8;
+	pixel_y = -5
+	},
+/obj/item/device/cassette/dow_cmd_theme{
+	name = "Jeremy Soule - Force Commander Theme";
+	desc = "Where have you heard this before ? It sounds VERY familiar..."
+	},
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tilethick";
+	dir = 4
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
+"lQQ" = (
+/obj/structure/sign/mailbox0,
+/turf/simulated/wall/techno,
+/area/cadiaoutpost/new_hive/caves)
 "lQX" = (
 /obj/structure/table/rack/dark,
 /obj/item/handcuffs/cable/red,
@@ -11728,6 +13402,12 @@
 "lSR" = (
 /obj/structure/catwalkrust/blocked,
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
+/area/cadiaoutpost/new_hive/caves)
+"lSW" = (
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
 /area/cadiaoutpost/new_hive/caves)
 "lTr" = (
 /obj/machinery/light/small{
@@ -11800,6 +13480,12 @@
 /obj/effect/floor_decal/newcorner/step,
 /turf/simulated/floor/ceramic/blackstone,
 /area/cadiaoutpost/oa/magistratumpost)
+"mae" = (
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "man" = (
 /turf/simulated/shuttle/wall{
 	color = "grey";
@@ -11892,6 +13578,14 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
+"mcS" = (
+/obj/structure/bed/barrack,
+/obj/structure/bed/barrack1,
+/obj/effect/landmark/start/imperialguard/recruit,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "mfc" = (
 /obj/effect/floor_decal/newcorner/plating/quarter{
 	dir = 4
@@ -12031,6 +13725,16 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"mmV" = (
+/obj/structure/railing{
+	dir = 4;
+	health = 700;
+	maxhealth = 700
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "mnw" = (
 /turf/simulated/floor/ceramic/blackstone,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -12058,6 +13762,15 @@
 /obj/effect/floor_decal/industrial/outline/orange,
 /turf/simulated/floor/ceramic/blackstone,
 /area/cadiaoutpost/oa/magistratumpost)
+"moT" = (
+/obj/machinery/computer/cryopod{
+	pixel_y = 30
+	},
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 1
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "mpr" = (
 /obj/structure/hivedecor/statue8,
 /turf/simulated/floor/stone/crafted_floor,
@@ -12116,6 +13829,15 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
+"mus" = (
+/obj/effect/floor_decal/industrial/hatch/blue,
+/obj/machinery/vending/medical,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "muU" = (
 /obj/structure/hivedecor/defender_statue,
 /turf/simulated/floor/stone/old4,
@@ -12234,6 +13956,26 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"mAt" = (
+/obj/structure/table/steel_reinforced,
+/obj/item/hand_labeler{
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/dropper{
+	pixel_y = -4
+	},
+/obj/item/reagent_containers/dropper,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"mAN" = (
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/obj/structure/closet/crate/operations,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "mBd" = (
 /obj/structure/table/graf/reinf_table,
 /turf/simulated/floor/dirty,
@@ -12260,6 +14002,15 @@
 	},
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/magistratumpost)
+"mBY" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 8
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "mCO" = (
 /obj/effect/floor_decal/newcorner/shaft{
 	dir = 8
@@ -12396,12 +14147,28 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"mIr" = (
+/obj/structure/bed/barrack,
+/obj/structure/bed/barrack1,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/effect/landmark/start/imperialguard/recruit,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "mIF" = (
 /obj/structure/table/rack/dark,
 /obj/item/device/lube,
 /turf/simulated/floor/ceramic/surgery2{
 	dir = 6
 	},
+/area/cadiaoutpost/new_hive/caves)
+"mKc" = (
+/obj/machinery/optable,
+/obj/effect/floor_decal/newcorner/blue/solid,
+/turf/simulated/floor/ceramic/surgery2,
 /area/cadiaoutpost/new_hive/caves)
 "mKg" = (
 /obj/effect/decal/cleanable/dirt,
@@ -12470,6 +14237,14 @@
 /obj/effect/water/top,
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/new_hive/caves)
+"mMM" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/freezer{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "mOf" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 5
@@ -12487,6 +14262,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"mOn" = (
+/obj/machinery/door/airlock/cone{
+	name = "Cryo Room"
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "mOC" = (
 /obj/structure/closet/crate,
 /obj/random/loot/randomitemcaves,
@@ -12581,6 +14362,14 @@
 /obj/effect/water/top,
 /obj/effect/water/bottom,
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
+/area/cadiaoutpost/new_hive/caves)
+"mRz" = (
+/obj/machinery/door/airlock/cone{
+	maxhealth = 3000;
+	name = "Armory Reception";
+	req_one_access = list(63,10,331)
+	},
+/turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/caves)
 "mRK" = (
 /obj/machinery/door/unpowered/inn/magistratum{
@@ -12752,6 +14541,21 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"mXN" = (
+/obj/structure/table/rack,
+/obj/item/mortar_shell/flare/blue,
+/obj/item/mortar_shell/flare/blue,
+/obj/item/mortar_shell/flare/blue,
+/obj/item/mortar_shell/flare/blue,
+/obj/item/mortar_shell/flare/blue,
+/obj/item/mortar_shell/flare/blue,
+/obj/item/mortar_shell/flare/blue,
+/obj/item/mortar_shell/flare/blue,
+/obj/item/mortar_shell/flare/blue,
+/obj/item/mortar_shell/flare/blue,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "mYQ" = (
 /obj/item/pyre/self_lit{
 	invisibility = 100;
@@ -12806,6 +14610,13 @@
 /obj/effect/floor_decal/turf/grimy,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
+"nec" = (
+/obj/effect/floor_decal/newcorner/reinforced/corner,
+/obj/machinery/light,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "nex" = (
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 5
@@ -12838,6 +14649,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"nho" = (
+/obj/effect/floor_decal/spline/plain{
+	dir = 9
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "nik" = (
 /obj/structure/hivedecor/sarcofagus,
 /obj/structure/sign/plate{
@@ -12894,6 +14713,16 @@
 	},
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/new_hive/caves)
+"njO" = (
+/obj/structure/reagent_dispensers/watertank{
+	color = "grey";
+	anchored = 1
+	},
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "njV" = (
 /obj/effect/floor_decal/newcorner/red{
 	dir = 8
@@ -12945,6 +14774,14 @@
 "nmB" = (
 /obj/structure/curtain/black,
 /turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/new_hive/caves)
+"nmZ" = (
+/obj/effect/floor_decal/spline/plain{
+	dir = 6;
+	icon_state = "spline_plain"
+	},
+/obj/structure/bookcase,
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/new_hive/caves)
 "nnb" = (
 /obj/machinery/light/small/red{
@@ -13016,6 +14853,14 @@
 "npy" = (
 /turf/simulated/floor/reinforced,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"npI" = (
+/obj/machinery/shower{
+	pixel_y = 20
+	},
+/turf/simulated/floor/tiled/freezer{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "npP" = (
 /obj/structure/sign/chaos{
 	pixel_x = -32
@@ -13047,6 +14892,23 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
+"nqn" = (
+/obj/structure/toilet{
+	dir = 8;
+	icon_state = "toilet00"
+	},
+/obj/machinery/button/toggle/door{
+	name = "bathroom privacy 2#";
+	pixel_y = 32;
+	id = "privacy2"
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/freezer{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "nqV" = (
 /obj/structure/table/rack/holorack,
 /obj/item/clothing/head/bowlerhat,
@@ -13204,6 +15066,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
+"nxJ" = (
+/turf/simulated/floor/fancyfloor/carpet/grey{
+	dir = 9
+	},
+/area/cadiaoutpost/new_hive/caves)
 "nxW" = (
 /obj/structure/closet/crate/secure/weapon,
 /obj/random/loot/badweaponlas,
@@ -13296,11 +15163,39 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"nBs" = (
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 1
+	},
+/obj/item/paper_bin{
+	pixel_y = 8
+	},
+/obj/item/pen/multi{
+	pixel_y = 4
+	},
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table4"
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "nBR" = (
 /turf/simulated/floor/factory_floor{
 	dir = 8
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"nBT" = (
+/obj/effect/floor_decal/industrial/mark,
+/obj/structure/closet/crate/large,
+/obj/item/clothing/accessory/tcloak,
+/obj/item/clothing/accessory/tcloak,
+/obj/item/clothing/accessory/tcloak,
+/obj/item/clothing/accessory/tcloak,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "nCl" = (
 /obj/structure/bed/chair/office/light{
 	dir = 4
@@ -13323,6 +15218,17 @@
 /obj/effect/landmark/start/inqmagi/enforcercadet,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
+"nCV" = (
+/obj/structure/bed/barrack,
+/obj/structure/bed/barrack1,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/effect/landmark/start/imperialguard/guard,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "nDl" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/clothing/gloves/latex/nitrile,
@@ -13383,6 +15289,14 @@
 	},
 /turf/simulated/wall/seolite,
 /area/cadiaoutpost/new_hive/caves)
+"nFr" = (
+/obj/structure/sign/neon/exit{
+	pixel_x = 32
+	},
+/turf/simulated/floor/darksteel_floor{
+	dir = 4
+	},
+/area/cadiaoutpost/new_hive/caves)
 "nGl" = (
 /obj/machinery/door/airlock/virology{
 	name = "Surgery Bay";
@@ -13407,6 +15321,14 @@
 "nHh" = (
 /obj/random/junk,
 /turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/new_hive/caves)
+"nHF" = (
+/obj/effect/floor_decal/spline/plain{
+	dir = 10
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
 /area/cadiaoutpost/new_hive/caves)
 "nHR" = (
 /turf/simulated/floor/dirty,
@@ -13457,6 +15379,18 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/magistratumpost)
+"nJq" = (
+/obj/structure/table/graf/rusty_table,
+/obj/item/paper_bin{
+	pixel_y = 8
+	},
+/obj/item/pen/multi{
+	pixel_y = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "nJP" = (
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/service/inn)
@@ -13555,6 +15489,16 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
+"nQo" = (
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 12
+	},
+/obj/structure/mirror{
+	pixel_x = 32
+	},
+/turf/simulated/floor/fancyfloor/gray_white,
+/area/cadiaoutpost/new_hive/caves)
 "nQr" = (
 /obj/machinery/light/small/red{
 	dir = 1
@@ -13584,6 +15528,15 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"nSc" = (
+/obj/machinery/door/airlock/cone{
+	name = "Toilet";
+	id_tag = "privacy2"
+	},
+/turf/simulated/floor/tiled/freezer{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "nSl" = (
 /obj/structure/torchwall{
 	dir = 4;
@@ -13632,6 +15585,19 @@
 /obj/item/clothing/accessory/toggleable/hawaii/random,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"nUK" = (
+/obj/item/paper_bin{
+	pixel_y = 8
+	},
+/obj/item/pen/multi{
+	pixel_y = 4
+	},
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table3";
+	dir = 8
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
 "nVG" = (
 /obj/effect/floor_decal/newcorner/shaft{
 	dir = 1
@@ -14014,6 +15980,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"omg" = (
+/obj/effect/floor_decal/newcorner/green/corner{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "omk" = (
 /obj/random/junk,
 /turf/simulated/floor/tiled{
@@ -14082,6 +16056,15 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"onA" = (
+/obj/machinery/door/airlock/cone{
+	name = "Toilet";
+	id_tag = "privacy4"
+	},
+/turf/simulated/floor/tiled/freezer{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "onR" = (
 /obj/structure/table/rack/dark,
 /obj/item/reagent_containers/glass/beaker/large,
@@ -14316,6 +16299,17 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"oxj" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/random/canned_food,
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/obj/item/storage/belt/warfare,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "oxY" = (
 /obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled{
@@ -14413,6 +16407,12 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"oDZ" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 1
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "oEe" = (
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 8
@@ -14689,6 +16689,17 @@
 	dir = 6
 	},
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
+"oNG" = (
+/obj/item/device/healthanalyzer{
+	pixel_x = 8
+	},
+/obj/item/reagent_containers/spray/sterilizine{
+	pixel_x = -6
+	},
+/obj/structure/table/steel_reinforced,
+/obj/item/FixOVein,
+/turf/simulated/floor/ceramic/surgery2,
+/area/cadiaoutpost/new_hive/caves)
 "oNM" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/secure_closet/chemical{
@@ -14724,6 +16735,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"oPk" = (
+/obj/structure/closet/secure_closet/chemical{
+	req_access = list()
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "oPJ" = (
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
@@ -14753,6 +16772,15 @@
 	icon_state = "r_window"
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
+"oSl" = (
+/obj/machinery/door/airlock/cone{
+	name = "Toilet";
+	id_tag = "privacy3"
+	},
+/turf/simulated/floor/tiled/freezer{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "oSs" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 8
@@ -14844,6 +16872,21 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"oYi" = (
+/obj/structure/table/rack,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/effect/floor_decal/industrial/mark,
+/obj/machinery/light/small{
+	dir = 1;
+	icon_state = "bulb1"
+	},
+/turf/simulated/floor/darksteel_floor{
+	dir = 1
+	},
+/area/cadiaoutpost/new_hive/caves)
 "oYr" = (
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
@@ -14884,6 +16927,13 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"pbJ" = (
+/obj/effect/floor_decal/spline/plain{
+	dir = 10;
+	icon_state = "spline_plain"
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/new_hive/caves)
 "pbO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/turf/lfloorscorched1,
@@ -14912,6 +16962,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"pdu" = (
+/obj/effect/floor_decal/newcorner/plating,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "pdE" = (
 /obj/structure/closet/cabinet{
 	anchored = 1
@@ -14967,6 +17023,28 @@
 /obj/item/device/cassette/clockwork1,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/farm)
+"pfk" = (
+/obj/item/device/healthanalyzer{
+	pixel_x = 8
+	},
+/obj/item/reagent_containers/hypospray/autoinjector/morphine{
+	pixel_x = -7;
+	pixel_y = 12
+	},
+/obj/item/reagent_containers/hypospray/autoinjector/morphine{
+	pixel_x = -7
+	},
+/obj/item/reagent_containers/spray/cleaner/warfare{
+	pixel_y = 16;
+	pixel_x = 10
+	},
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "pfn" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 1
@@ -15023,6 +17101,12 @@
 "phz" = (
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/new_hive/caves)
+"phG" = (
+/obj/structure/curtain/open/shower,
+/turf/simulated/floor/tiled/freezer{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "phT" = (
 /obj/structure/flora/pottedplant/crystal,
 /obj/machinery/light,
@@ -15077,12 +17161,36 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
+"pjM" = (
+/obj/structure/table/rack,
+/obj/item/cell/lasgun{
+	pixel_x = -6
+	},
+/obj/item/cell/lasgun,
+/obj/item/cell/lasgun{
+	pixel_x = 6
+	},
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "pjP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /obj/machinery/mecha_part_fabricator,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
+"pkl" = (
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb1";
+	light_color = "#234F1E"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "pkJ" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 4;
@@ -15095,6 +17203,15 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"pla" = (
+/obj/effect/floor_decal/spline/plain{
+	dir = 4;
+	icon_state = "spline_plain"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "plF" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 8;
@@ -15158,6 +17275,17 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"pqM" = (
+/obj/structure/closet/secure_closet/hos{
+	color = "grey";
+	req_access = list(67)
+	},
+/obj/item/device/megaphone,
+/obj/item/device/radio/headset/red_team/all,
+/obj/item/device/radio/headset/red_team/all,
+/obj/item/device/radio/headset/red_team/all,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
 "pqR" = (
 /obj/random/junk,
 /obj/structure/closet/crate/trashcart,
@@ -15167,6 +17295,32 @@
 "prm" = (
 /turf/simulated/floor/fancyfloor/carpet,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"prE" = (
+/obj/item/newspaper{
+	pixel_y = 10;
+	pixel_x = 7
+	},
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb1";
+	light_color = "#234F1E"
+	},
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table3";
+	dir = 4
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
+"prV" = (
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 4
+	},
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table3";
+	dir = 1
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "psv" = (
 /obj/effect/floor_decal/turf/metal/four,
 /turf/simulated/floor/factory_floor{
@@ -15240,6 +17394,12 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"pwu" = (
+/obj/structure/bed/chair/office/dark{
+	dir = 8
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
 "pxM" = (
 /obj/structure/table/rack/shelf{
 	color = "grey"
@@ -15345,6 +17505,23 @@
 	},
 /turf/simulated/floor/fancyfloor/marble,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"pDb" = (
+/obj/structure/table/rack,
+/obj/item/clothing/mask/gas/krieg,
+/obj/item/clothing/mask/gas/krieg,
+/obj/item/clothing/mask/gas/krieg,
+/obj/item/clothing/mask/gas/krieg,
+/obj/item/clothing/mask/gas/krieg,
+/obj/item/clothing/mask/gas/krieg,
+/obj/effect/floor_decal/industrial/mark,
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "pDm" = (
 /obj/item/reagent_containers/spray/sterilizine{
 	pixel_x = -6
@@ -15638,6 +17815,23 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
+"pLS" = (
+/obj/structure/table/rack,
+/obj/effect/floor_decal/industrial/mark,
+/obj/item/defensive_barrier{
+	pixel_y = -8
+	},
+/obj/item/defensive_barrier{
+	pixel_y = -4
+	},
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier{
+	pixel_y = 4
+	},
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "pMw" = (
 /obj/machinery/floodlight,
 /turf/simulated/floor/stone/old4,
@@ -15792,6 +17986,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"pSG" = (
+/obj/effect/floor_decal/newcorner/green/corner{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "pSH" = (
 /obj/structure/closet/crate{
 	anchored = 1
@@ -15880,6 +18082,29 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"pYU" = (
+/obj/structure/table/rack,
+/obj/item/grenade/smokebomb,
+/obj/item/grenade/smokebomb,
+/obj/item/grenade/smokebomb,
+/obj/item/grenade/smokebomb,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/darksteel_floor{
+	dir = 1
+	},
+/area/cadiaoutpost/new_hive/caves)
+"pZb" = (
+/obj/structure/bed/barrack,
+/obj/structure/bed/barrack1,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/effect/landmark/start/imperialguard/medicae,
+/obj/effect/landmark/start/imperialguard/sniper,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "qag" = (
 /obj/structure/torchwall/service{
 	dir = 8;
@@ -15926,6 +18151,13 @@
 /obj/effect/floor_decal/newcorner/stone,
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"qcf" = (
+/obj/structure/bed/padded,
+/obj/item/bedsheet/green{
+	color = "grey"
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
 "qcV" = (
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tilethick"
@@ -15936,6 +18168,14 @@
 	},
 /turf/simulated/floor/fancyfloor/carpet/grey/middle,
 /area/cadiaoutpost/oa/magistratumpost)
+"qcX" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/freezer{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "qdT" = (
 /obj/effect/floor_decal/newcorner/red/solid,
 /obj/structure/closet/secure_closet/guncabinet,
@@ -15943,6 +18183,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
+"qdV" = (
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "qef" = (
 /obj/structure/reagent_dispensers/beerbarrel,
 /turf/simulated/floor/darkwood/rotten,
@@ -15993,6 +18241,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
+"qgu" = (
+/obj/item/reagent_containers/spray/cleaner/warfare,
+/obj/structure/table/graf/reinf_table{
+	icon_state = "table_horizontal2";
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "qgR" = (
 /turf/simulated/floor/ceramic/surgery2{
 	dir = 6
@@ -16006,6 +18264,24 @@
 	dir = 1
 	},
 /turf/simulated/floor/surface_floor,
+/area/cadiaoutpost/new_hive/caves)
+"qjt" = (
+/obj/machinery/door/airlock/glass_medical{
+	color = null;
+	maxhealth = 1200;
+	name = "Chemistry Lab";
+	req_one_access = list(63,10,331)
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
+"qjJ" = (
+/obj/effect/floor_decal/newcorner/green/quarter,
+/obj/structure/sign/commissar{
+	pixel_x = -30
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
 /area/cadiaoutpost/new_hive/caves)
 "qjY" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
@@ -16250,6 +18526,38 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
+"qsV" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 8
+	},
+/obj/item/device/boombox{
+	pixel_y = 20
+	},
+/obj/item/device/cassette/western1{
+	pixel_y = 7
+	},
+/obj/item/device/cassette/unknownsoldier{
+	pixel_y = -3;
+	pixel_x = -6
+	},
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table5"
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"qtu" = (
+/obj/structure/sink{
+	dir = 8;
+	icon_state = "sink";
+	layer = 50;
+	pixel_x = -10;
+	pixel_y = 2
+	},
+/obj/effect/floor_decal/newcorner/blue/solid,
+/turf/simulated/floor/ceramic/surgery2,
+/area/cadiaoutpost/new_hive/caves)
 "qtD" = (
 /obj/effect/floor_decal/turf/aesculapius,
 /turf/simulated/floor/tiled{
@@ -16269,6 +18577,10 @@
 /obj/item/device/cassette/orks1,
 /turf/simulated/floor/trench,
 /area/cadiaoutpost/new_hive/caves)
+"quL" = (
+/obj/effect/floor_decal/newcorner/blue/solid,
+/turf/simulated/floor/ceramic/surgery2,
+/area/cadiaoutpost/new_hive/caves)
 "qvW" = (
 /obj/effect/water/bottom,
 /obj/effect/water/top,
@@ -16282,6 +18594,17 @@
 /obj/structure/bed/chair/torture,
 /turf/simulated/floor/darkfloor,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"qws" = (
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/obj/structure/sign/warning/bomb_range{
+	name = "\improper EXPLOSIVE STORAGE";
+	desc = "It says 'WARNING: EXPLOSIVE EQUIPMENT INSIDE, HANDLE WITH CARE' on it.";
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "qxK" = (
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/tiled{
@@ -16302,6 +18625,12 @@
 	},
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"qyT" = (
+/obj/effect/floor_decal/newcorner/reinforced,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "qzf" = (
 /obj/structure/table/graf/rusty_table,
 /obj/random/loot/randomsupply,
@@ -16318,6 +18647,14 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"qzO" = (
+/obj/structure/bed/chair/office/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "qzW" = (
 /obj/item/card/id/key/middle/jail{
 	access = list(1984,2)
@@ -16331,6 +18668,21 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
+"qAE" = (
+/obj/effect/floor_decal/industrial/hatch/blue,
+/obj/structure/table/rack,
+/obj/item/storage/box/freezer{
+	pixel_y = -9
+	},
+/obj/item/storage/box/freezer{
+	pixel_y = 2
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "qAS" = (
 /obj/effect/decal/cleanable/cobweb,
 /turf/simulated/floor/stone,
@@ -16370,6 +18722,12 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"qCH" = (
+/obj/effect/floor_decal/spline/plain{
+	dir = 5
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/new_hive/caves)
 "qDc" = (
 /obj/structure/sign/mechanicus{
 	pixel_y = -32
@@ -16474,6 +18832,11 @@
 	},
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"qGu" = (
+/obj/machinery/light,
+/obj/effect/floor_decal/spline/plain,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/new_hive/caves)
 "qGU" = (
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/villageinside/lab)
@@ -16531,6 +18894,14 @@
 /obj/effect/decal/cleanable/cobweb,
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"qKc" = (
+/obj/effect/floor_decal/newcorner/shaft{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "qKy" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/storage/firstaid/surgery{
@@ -16560,6 +18931,21 @@
 	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/villageinside/lab)
+"qLY" = (
+/obj/effect/floor_decal/industrial/hatch/blue,
+/obj/structure/table/rack,
+/obj/item/suture,
+/obj/item/suture,
+/obj/item/suture,
+/obj/item/reagent_containers/hypospray/autoinjector/morphine,
+/obj/item/reagent_containers/hypospray/autoinjector/morphine,
+/obj/item/reagent_containers/hypospray/autoinjector/morphine,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "qMq" = (
 /obj/structure/table/rack/holorack,
 /obj/random/masks,
@@ -16594,6 +18980,14 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"qNt" = (
+/obj/effect/floor_decal/spline/plain{
+	dir = 8
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "qNR" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -16723,10 +19117,43 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"qTj" = (
+/obj/effect/floor_decal/newcorner/shaft,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "qTn" = (
 /obj/random/canned_food,
 /obj/random/junk,
 /turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/new_hive/caves)
+"qTF" = (
+/obj/effect/floor_decal/industrial/hatch/blue,
+/obj/structure/table/rack,
+/obj/item/storage/box/bodybags{
+	pixel_y = -6
+	},
+/obj/item/storage/box/bodybags,
+/obj/item/roller,
+/obj/item/roller,
+/obj/item/roller,
+/obj/item/roller,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"qUu" = (
+/obj/effect/floor_decal/newcorner/shaft/corner{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
 /area/cadiaoutpost/new_hive/caves)
 "qUL" = (
 /obj/structure/sign/neon/exit{
@@ -16761,6 +19188,13 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"qVw" = (
+/obj/structure/table/rack,
+/obj/random/loot/goodweapon,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "qVF" = (
 /obj/structure/table/steel_reinforced,
 /obj/effect/floor_decal/newcorner/reinforced{
@@ -16867,6 +19301,17 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
+"qZG" = (
+/obj/structure/table/graf/rusty_table,
+/obj/structure/table/graf/rusty_table,
+/obj/machinery/door/blast/grates{
+	icon_state = "gshutter1";
+	id = "armoryshutters";
+	maxhealth = 1000;
+	name = "armory reception grate"
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "qZJ" = (
 /obj/structure/closet/crate,
 /obj/item/reagent_containers/hypospray/autoinjector/tau,
@@ -16925,6 +19370,12 @@
 "rav" = (
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"raG" = (
+/obj/structure/railing,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "raH" = (
 /obj/random/trash,
 /obj/machinery/light/small/red{
@@ -17029,6 +19480,20 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"rdk" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
+"rdQ" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "rek" = (
 /obj/effect/floor_decal/turf/metal/seven,
 /obj/structure/iv_drip,
@@ -17162,6 +19627,23 @@
 	},
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"rjB" = (
+/obj/structure/toilet{
+	dir = 8;
+	icon_state = "toilet00"
+	},
+/obj/machinery/button/toggle/door{
+	name = "bathroom privacy 1#";
+	pixel_y = 32;
+	id = "privacy1"
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/freezer{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "rjH" = (
 /obj/effect/decal/cleanable/cobweb{
 	dir = 4
@@ -17213,6 +19695,17 @@
 /obj/machinery/microscope,
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/caves/dark)
+"rnF" = (
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 12
+	},
+/obj/structure/mirror{
+	pixel_x = 32
+	},
+/obj/item/reagent_containers/food/snacks/poo,
+/turf/simulated/floor/fancyfloor/gray_white,
+/area/cadiaoutpost/new_hive/caves)
 "rnK" = (
 /obj/item/fluff_items/skull{
 	pixel_y = -18
@@ -17312,6 +19805,17 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"rrh" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/obj/item/storage/fancy/cigarettes/dromedaryco,
+/obj/item/flame/lighter/zippo,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "rri" = (
 /obj/effect/floor_decal/industrial/warning_red{
 	dir = 9
@@ -17491,6 +19995,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
+"ryn" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "ryD" = (
 /obj/structure/table/steel_reinforced,
 /obj/effect/floor_decal/newcorner/reinforced{
@@ -17551,6 +20061,15 @@
 "rBU" = (
 /obj/item/device/cassette/orks1,
 /turf/simulated/floor/stone,
+/area/cadiaoutpost/new_hive/caves)
+"rCl" = (
+/obj/effect/floor_decal/newcorner/shaft{
+	dir = 8
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
 /area/cadiaoutpost/new_hive/caves)
 "rCt" = (
 /obj/effect/floor_decal/newcorner/plating/corner{
@@ -17633,6 +20152,19 @@
 /obj/structure/bed/chair/wood/simple,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"rHm" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/obj/item/reagent_containers/food/drinks/bottle/small/beer,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "rHz" = (
 /obj/structure/table/rack/dark,
 /obj/item/device/encryptionkey/headset_service{
@@ -17657,6 +20189,14 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"rIe" = (
+/obj/machinery/door/airlock/cone{
+	maxhealth = 3000;
+	name = "Commissar's Airlock";
+	req_one_access = list(67,331)
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "rIA" = (
 /obj/structure/coatrack{
 	pixel_x = 10
@@ -17703,6 +20243,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"rJx" = (
+/obj/machinery/photocopier/faxmachine{
+	department = "Guardsmen Planetary Defense Fortress - Armory"
+	},
+/obj/effect/floor_decal/newcorner/green/solid,
+/obj/structure/table/graf/reinf_table,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "rJK" = (
 /obj/machinery/door/unpowered/inn/berryfarm{
 	req_access = list();
@@ -17722,6 +20272,9 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
+"rLj" = (
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/new_hive/caves)
 "rMa" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/reagent_containers/glass/beaker/large,
@@ -17785,6 +20338,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
+"rOu" = (
+/obj/structure/bed/barrack,
+/obj/structure/bed/barrack1,
+/obj/effect/landmark/start/imperialguard/sniper,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "rOD" = (
 /obj/effect/floor_decal/turf/bloodbar,
 /obj/effect/floor_decal/spline/fancy/wood/three_quarters,
@@ -17892,6 +20453,25 @@
 /obj/structure/catwalkrust/blocked,
 /obj/structure/railing,
 /turf/simulated/floor/tiled,
+/area/cadiaoutpost/new_hive/caves)
+"rVW" = (
+/obj/structure/table/rack,
+/obj/item/ammo_box/flares/blue,
+/obj/item/ammo_box/flares/blue,
+/obj/item/ammo_box/flares,
+/obj/item/ammo_box/flares,
+/obj/item/ammo_box/flares,
+/obj/item/ammo_box/flares,
+/obj/item/ammo_box/flares,
+/obj/item/ammo_box/flares,
+/obj/item/ammo_box/flares/blue,
+/obj/item/ammo_box/flares/blue,
+/obj/item/ammo_box/flares/blue,
+/obj/item/ammo_box/flares/blue,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
 /area/cadiaoutpost/new_hive/caves)
 "rWo" = (
 /turf/simulated/floor/darkfloor{
@@ -18047,6 +20627,14 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
+"scm" = (
+/obj/effect/floor_decal/industrial/loading{
+	dir = 8
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "scw" = (
 /obj/machinery/light{
 	dir = 1
@@ -18153,6 +20741,14 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"siy" = (
+/obj/machinery/recharger{
+	pixel_x = -34
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "sjk" = (
 /obj/structure/closet/crate/freezer,
 /obj/item/reagent_containers/food/snacks/khornemeat,
@@ -18207,6 +20803,13 @@
 	dir = 1
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"skU" = (
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/ceramic/surgery,
+/area/cadiaoutpost/new_hive/caves)
 "skZ" = (
 /obj/effect/landmark/start/inqmagi/enforcercadet,
 /turf/simulated/floor/darkwood,
@@ -18220,6 +20823,27 @@
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
+"smx" = (
+/obj/item/ammo_box/shotgun{
+	pixel_x = -8;
+	pixel_y = -6
+	},
+/obj/item/ammo_box/shotgun{
+	pixel_x = 8;
+	pixel_y = -6
+	},
+/obj/item/ammo_box/shotgun{
+	pixel_x = 8
+	},
+/obj/item/ammo_box/shotgun{
+	pixel_x = -8
+	},
+/obj/structure/table/rack,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "snd" = (
 /obj/item/reagent_containers/food/drinks/glass2/pint{
 	pixel_y = 6;
@@ -18238,6 +20862,18 @@
 /obj/item/newore/gems/sapphire,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/villageinside/lab)
+"snq" = (
+/obj/effect/floor_decal/newcorner/shaft{
+	dir = 8
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "soG" = (
 /obj/structure/table/rack/dark,
 /obj/random/loot/randomammo1,
@@ -18290,6 +20926,13 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"sqy" = (
+/obj/structure/bed/chair/office/dark{
+	dir = 8
+	},
+/obj/effect/landmark/start/imperialguard,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
 "sqJ" = (
 /obj/structure/sign/circus{
 	icon_state = "qw5"
@@ -18411,6 +21054,13 @@
 	},
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"sxq" = (
+/obj/structure/table/graf/rusty_table,
+/obj/random/canned_food,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "sxD" = (
 /obj/effect/floor_decal/newcorner/plating/corner{
 	dir = 8
@@ -18590,6 +21240,20 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"sEV" = (
+/obj/structure/table/rack,
+/obj/item/cell/lasgun{
+	pixel_x = 6
+	},
+/obj/item/cell/lasgun{
+	pixel_x = -6
+	},
+/obj/item/cell/lasgun,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "sFc" = (
 /obj/effect/floor_decal/newcorner/plating/corner{
 	dir = 8
@@ -18659,9 +21323,40 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
+"sGt" = (
+/obj/structure/bed{
+	desc = "A mass produced sleeping mat, now with actual cloth!";
+	icon_state = "bed_padding1";
+	name = "sleeping mat"
+	},
+/obj/item/bedsheet/hos,
+/obj/effect/landmark/start/imperialguard/commissar,
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 9
+	},
+/area/cadiaoutpost/new_hive/caves)
+"sGy" = (
+/obj/structure/table/graf/rusty_table,
+/obj/machinery/photocopier/faxmachine{
+	department = "Commissar's Office";
+	req_one_access = list()
+	},
+/obj/effect/floor_decal/spline/plain{
+	dir = 9;
+	icon_state = "spline_plain"
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/new_hive/caves)
 "sGO" = (
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/magistratumpost)
+"sGW" = (
+/obj/effect/landmark/start/imperialguard/specialist,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "sHE" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/microwave,
@@ -18679,6 +21374,16 @@
 /obj/structure/warfare/barricade/sandbag,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"sIs" = (
+/obj/effect/floor_decal/industrial/direction{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "sIV" = (
 /obj/random/junk,
 /turf/simulated/floor/tiled{
@@ -18701,6 +21406,25 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"sKk" = (
+/obj/structure/table/rack,
+/obj/item/storage/box/ifak{
+	pixel_y = -10
+	},
+/obj/item/storage/box/ifak{
+	pixel_y = -6
+	},
+/obj/item/storage/box/ifak{
+	pixel_y = -2
+	},
+/obj/item/storage/box/ifak{
+	pixel_y = 2
+	},
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "sKx" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -18978,6 +21702,22 @@
 	dir = 5
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"sVk" = (
+/obj/machinery/door/airlock/cone{
+	maxhealth = 3000;
+	name = "Explosive Storage";
+	req_one_access = list(63,10,331)
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
+"sVs" = (
+/obj/machinery/door/airlock/cone{
+	maxhealth = 3000;
+	name = "Strong Guard Airlock";
+	req_one_access = list(63,10,331)
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "sVV" = (
 /obj/machinery/organ_printer/robot/mapped,
 /obj/item/stack/material/steel/fifty,
@@ -19100,6 +21840,16 @@
 "tbL" = (
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"tcY" = (
+/obj/machinery/sleeper{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "tdD" = (
 /obj/machinery/door/airlock/maintenance_hatch{
 	name = "The Terror of the Eye"
@@ -19261,6 +22011,12 @@
 /obj/random/storage,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
+"tkQ" = (
+/obj/structure/table/rack,
+/obj/item/mortar_launcher,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "tnm" = (
 /obj/effect/floor_decal/newcorner/train2/corner{
 	dir = 10
@@ -19301,6 +22057,30 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"tpD" = (
+/obj/item/clothing/head/servicesgt{
+	pixel_x = -6;
+	pixel_y = 6
+	},
+/obj/item/storage/fancy/cigarettes/cigarello/mint{
+	pixel_y = 8;
+	pixel_x = 8
+	},
+/obj/item/flame/lighter/zippo,
+/obj/item/reagent_containers/food/drinks/bottle/small/beer{
+	pixel_y = -8;
+	pixel_x = -10
+	},
+/obj/item/reagent_containers/food/drinks/bottle/small/beer{
+	pixel_y = -6;
+	pixel_x = -4
+	},
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table3";
+	dir = 1
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
 "tpQ" = (
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/new_hive/caves)
@@ -19537,6 +22317,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"tAy" = (
+/obj/effect/floor_decal/spline/plain,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/new_hive/caves)
 "tAB" = (
 /obj/effect/floor_decal/newcorner/plating/quarter{
 	dir = 8
@@ -19557,6 +22341,23 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
+"tAW" = (
+/obj/structure/table/rack,
+/obj/item/grenade/frag/warfare,
+/obj/item/grenade/frag/warfare,
+/obj/item/grenade/frag/warfare,
+/obj/item/grenade/frag/warfare,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/darksteel_floor,
+/area/cadiaoutpost/new_hive/caves)
+"tBr" = (
+/obj/structure/table/steel_reinforced,
+/obj/machinery/reagentgrinder,
+/obj/item/stack/material/phoron/ten,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "tBU" = (
 /obj/effect/landmark{
 	name = "genestart"
@@ -19581,6 +22382,25 @@
 /obj/effect/water/top,
 /obj/random/junk,
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
+/area/cadiaoutpost/new_hive/caves)
+"tDw" = (
+/obj/effect/floor_decal/newcorner/plating,
+/obj/item/screwdriver{
+	pixel_y = 19
+	},
+/obj/item/cell/lasgun/small{
+	pixel_x = 14
+	},
+/obj/item/reagent_containers/spray/cleaner/warfare{
+	pixel_y = -9;
+	pixel_x = -6
+	},
+/obj/structure/table/graf/reinf_table{
+	icon_state = "table_horizontal2"
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
 /area/cadiaoutpost/new_hive/caves)
 "tDB" = (
 /obj/effect/decal/cleanable/dirt,
@@ -19704,6 +22524,18 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/service/inn)
+"tIx" = (
+/obj/effect/floor_decal/newcorner/shaft{
+	dir = 4
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "tIO" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -19739,6 +22571,12 @@
 "tKT" = (
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"tLI" = (
+/obj/structure/bed/chair/office/dark{
+	dir = 8
+	},
+/turf/simulated/floor/ceramic/surgery,
+/area/cadiaoutpost/new_hive/caves)
 "tMA" = (
 /obj/effect/floor_decal/newcorner/purple{
 	dir = 4
@@ -19850,6 +22688,16 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"tRc" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/obj/item/storage/belt/warfare,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "tRD" = (
 /obj/effect/floor_decal/newcorner/shaft/quarter{
 	dir = 8
@@ -19887,6 +22735,14 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
+"tSL" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "tSO" = (
 /obj/structure/torchwall/service{
 	dir = 1;
@@ -19894,6 +22750,18 @@
 	},
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"tSX" = (
+/obj/effect/floor_decal/newcorner/blue/diagonal,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/obj/machinery/organ_printer,
+/turf/simulated/floor/tiled{
+	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "tTC" = (
 /obj/structure/largecrate/animal/cat,
 /turf/simulated/floor/tiled{
@@ -19987,6 +22855,13 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
+"tXg" = (
+/obj/machinery/door/airlock/cone{
+	req_one_access = list(63);
+	name = "Janitorial Supplies"
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "tXq" = (
 /turf/unsimulated/wall{
 	icon_state = "r_wall-2"
@@ -20126,6 +23001,11 @@
 	dir = 5
 	},
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"ubF" = (
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 5
+	},
+/area/cadiaoutpost/new_hive/caves)
 "ubK" = (
 /obj/effect/floor_decal/turf/metal,
 /turf/simulated/floor/tiled{
@@ -20140,6 +23020,17 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"uct" = (
+/obj/structure/table/rack,
+/obj/item/landmine,
+/obj/item/landmine,
+/obj/item/landmine,
+/obj/item/landmine,
+/obj/item/landmine,
+/obj/item/landmine,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/darksteel_floor,
+/area/cadiaoutpost/new_hive/caves)
 "ucK" = (
 /obj/structure/flora/pottedplant{
 	icon = "icons/map_project/furniture_and_decor.dmi";
@@ -20290,6 +23181,19 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
+"ujW" = (
+/obj/structure/table/rack,
+/obj/item/gun/projectile/shotgun/pump,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"ukT" = (
+/turf/simulated/floor/fancyfloor/carpet/grey{
+	dir = 10
+	},
+/area/cadiaoutpost/new_hive/caves)
 "ulv" = (
 /obj/structure/table/rack/dark,
 /obj/machinery/light/small{
@@ -20357,6 +23261,24 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"uty" = (
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/obj/structure/closet/crate/miner,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"uun" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 4;
+	icon_state = "plating"
+	},
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table3";
+	dir = 1
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "uvc" = (
 /turf/simulated/floor/factory_floor{
 	dir = 8
@@ -20426,6 +23348,19 @@
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
+"uyd" = (
+/obj/effect/floor_decal/industrial/hatch/blue,
+/obj/structure/table/rack,
+/obj/item/stack/medical/advanced/bruise_pack,
+/obj/item/stack/medical/advanced/bruise_pack,
+/obj/item/stack/medical/advanced/ointment,
+/obj/item/stack/medical/advanced/ointment,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "uyG" = (
 /obj/effect/water/top,
 /obj/effect/water/bottom,
@@ -20461,6 +23396,19 @@
 	},
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/shuttle/inquisition)
+"uzz" = (
+/obj/effect/floor_decal/newcorner/blue/diagonal,
+/obj/machinery/recharger,
+/obj/item/defibrillator/loaded,
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table3";
+	dir = 8
+	},
+/turf/simulated/floor/tiled{
+	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "uzG" = (
 /obj/machinery/light/small/red{
 	dir = 4
@@ -20591,6 +23539,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"uHF" = (
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tilethick";
+	dir = 4
+	},
+/turf/simulated/floor/fancyfloor/carpet/grey/middle,
+/area/cadiaoutpost/new_hive/caves)
 "uHY" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 9
@@ -20626,6 +23581,16 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/research/robotics)
+"uJC" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/item/reagent_containers/food/drinks/bottle/small/beer,
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "uJG" = (
 /obj/machinery/door/airlock/research{
 	name = "Biosmithy"
@@ -20688,6 +23653,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"uMC" = (
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "uMF" = (
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/farm)
@@ -20723,6 +23696,19 @@
 /obj/effect/landmark/start/inqmagi/inquisitor,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"uPt" = (
+/obj/effect/floor_decal/newcorner/blue/diagonal,
+/obj/machinery/recharger,
+/obj/item/defibrillator/loaded,
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table3";
+	dir = 1
+	},
+/turf/simulated/floor/tiled{
+	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "uPT" = (
 /obj/structure/warfare/barricade/sandbag{
 	dir = 4
@@ -20737,6 +23723,18 @@
 	},
 /turf/simulated/floor/surface_floor,
 /area/cadiaoutpost/oa/villageinside/lab)
+"uQm" = (
+/obj/machinery/door/airlock/glass_medical,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
+"uQo" = (
+/obj/effect/floor_decal/turf/armory{
+	icon_state = "arm2"
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "uQu" = (
 /obj/structure/table/rack/dark,
 /obj/item/reagent_containers/food/drinks/bottle/caddis/elite,
@@ -20760,12 +23758,34 @@
 "uRO" = (
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/villageinside/lab)
+"uRP" = (
+/obj/effect/floor_decal/newcorner/green{
+	dir = 4
+	},
+/obj/item/device/radio/headset/red_team/all,
+/obj/item/device/radio/headset/red_team/all,
+/obj/item/device/radio/headset/red_team/all,
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table3";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "uRS" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 1
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"uTu" = (
+/obj/effect/floor_decal/newcorner/shaft/quarter,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "uTN" = (
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 1
@@ -20805,6 +23825,24 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"uVD" = (
+/obj/effect/floor_decal/newcorner/shaft/corner,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"uWQ" = (
+/obj/structure/bed/barrack,
+/obj/structure/bed/barrack1,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/effect/landmark/start/imperialguard/bullgryn,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "uWX" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -20862,6 +23900,20 @@
 /obj/item/clothing/shoes/orange,
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/magistratumpost)
+"vaB" = (
+/obj/structure/table/rack,
+/obj/item/wrench,
+/obj/item/wrench,
+/obj/item/crowbar/red,
+/obj/item/crowbar/red,
+/obj/effect/floor_decal/industrial/mark,
+/obj/item/melee/trench_axe,
+/obj/item/melee/trench_axe,
+/obj/item/melee/trench_axe,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "vaT" = (
 /obj/structure/statue/verina{
 	desc = "A polished and well maintained statue of Saint Celestine of the Order of Our Martyred Lady. Despair, and you give yourself to the shadows. Believe, truly believe in the Emperor of Mankind, and you shall walk in His light no matter how dark the path you tread.";
@@ -20927,6 +23979,17 @@
 	icon_state = "dark1"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"veo" = (
+/obj/structure/table/rack/dark,
+/obj/item/clothing/accessory/storage/webbing_large{
+	pixel_y = -5
+	},
+/obj/item/clothing/accessory/holster/armpit{
+	pixel_y = -2
+	},
+/obj/item/cell/lasgun/hotshot,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
 "vep" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 10
@@ -20957,6 +24020,12 @@
 /obj/machinery/light/small,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"vgF" = (
+/obj/effect/floor_decal/spline/plain{
+	dir = 4
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/new_hive/caves)
 "vgP" = (
 /obj/structure/shipdecor/generator{
 	icon_state = "gen0"
@@ -20999,6 +24068,15 @@
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
+"vkV" = (
+/obj/structure/bed/barrack,
+/obj/structure/bed/barrack1,
+/obj/effect/landmark/start/imperialguard/medicae,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "vlb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/tank/oxygen,
@@ -21037,6 +24115,18 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
+"vmh" = (
+/obj/effect/floor_decal/newcorner/shaft/quarter{
+	dir = 8
+	},
+/obj/structure/sign/neon/armory{
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "vmS" = (
 /obj/structure/hivedecor/sarcofagus2,
 /obj/structure/sign/plate/written{
@@ -21096,6 +24186,17 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/new_hive/caves)
+"vps" = (
+/obj/effect/floor_decal/industrial/mark,
+/obj/structure/closet/crate/large,
+/obj/item/clothing/under/guard/uniform,
+/obj/item/clothing/under/guard/uniform,
+/obj/item/clothing/under/guard/uniform,
+/obj/item/clothing/under/guard/uniform,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "vqj" = (
 /obj/machinery/shower{
 	dir = 8;
@@ -21103,6 +24204,19 @@
 	},
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"vqQ" = (
+/obj/structure/table/rack,
+/obj/effect/floor_decal/industrial/mark,
+/obj/item/storage/backpack/satchel/warfare/chestrig,
+/obj/item/storage/backpack/satchel/warfare/chestrig,
+/obj/item/storage/backpack/satchel/warfare/chestrig,
+/obj/item/storage/backpack/satchel/warfare/chestrig,
+/obj/item/storage/backpack/satchel/warfare/chestrig,
+/obj/item/storage/backpack/satchel/warfare/chestrig,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "vrp" = (
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 1200;
@@ -21131,6 +24245,21 @@
 	icon_state = "r_window"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"vtM" = (
+/obj/structure/table/rack,
+/obj/item/grenade/smokebomb/mortar,
+/obj/item/grenade/smokebomb/mortar,
+/obj/item/grenade/smokebomb/mortar/fire,
+/obj/item/grenade/smokebomb/mortar/fire,
+/obj/effect/floor_decal/industrial/mark,
+/obj/machinery/light/small{
+	dir = 1;
+	icon_state = "bulb1"
+	},
+/turf/simulated/floor/darksteel_floor{
+	dir = 1
+	},
+/area/cadiaoutpost/new_hive/caves)
 "vtO" = (
 /obj/structure/table/rack/shelf{
 	color = "grey"
@@ -21200,6 +24329,12 @@
 	name = "House Sondar Door"
 	},
 /turf/simulated/floor/dirty/tough,
+/area/cadiaoutpost/new_hive/caves)
+"vys" = (
+/obj/structure/table/graf/rusty_table,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
 /area/cadiaoutpost/new_hive/caves)
 "vyu" = (
 /obj/structure/closet/crate/secure/large,
@@ -21289,6 +24424,15 @@
 	dir = 8
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"vCb" = (
+/obj/structure/table/rack,
+/obj/item/clothing/suit/armor/flak/heavy,
+/obj/item/clothing/suit/armor/flak/heavy,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "vCG" = (
 /obj/effect/floor_decal/newcorner/plating,
 /mob/living/simple_animal/hostile/undead,
@@ -21337,18 +24481,42 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"vFF" = (
+/obj/effect/floor_decal/newcorner/reinforced,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "vFG" = (
 /obj/structure/sign/mirror{
 	pixel_y = -32
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
+"vFK" = (
+/obj/effect/floor_decal/newcorner/green,
+/obj/structure/sign/imperial{
+	pixel_y = -30
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "vGd" = (
 /obj/machinery/light/small/red,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/villageinside/lab)
 "vGA" = (
 /obj/effect/floor_decal/newcorner/plating/corner,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"vGF" = (
+/obj/structure/bed/barrack,
+/obj/structure/bed/barrack1,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/effect/landmark/start/imperialguard/sniper,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -21368,6 +24536,18 @@
 	},
 /turf/simulated/floor/surface_floor,
 /area/cadiaoutpost/new_hive/caves)
+"vGT" = (
+/obj/structure/mirror{
+	pixel_y = 30
+	},
+/obj/structure/sink{
+	dir = 1;
+	pixel_y = 16
+	},
+/turf/simulated/floor/tiled/freezer{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "vHc" = (
 /obj/structure/shipdecor{
 	icon_state = "off";
@@ -21380,11 +24560,44 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"vHd" = (
+/obj/effect/floor_decal/newcorner/blue/diagonal,
+/obj/structure/table/rack/shelf,
+/obj/item/suture,
+/obj/item/suture,
+/obj/item/suture,
+/obj/item/suture,
+/turf/simulated/floor/tiled{
+	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "vHf" = (
 /obj/machinery/door/unpowered/inn{
 	name = "Abandoned Building"
 	},
 /turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
+"vHv" = (
+/obj/item/ammo_box/shotgun/msslug{
+	pixel_x = 8;
+	pixel_y = -6
+	},
+/obj/item/ammo_box/shotgun/msslug{
+	pixel_x = 8
+	},
+/obj/item/ammo_box/shotgun/msslug{
+	pixel_x = -8;
+	pixel_y = -6
+	},
+/obj/item/ammo_box/shotgun/msslug{
+	pixel_x = -8
+	},
+/obj/structure/table/rack,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
 /area/cadiaoutpost/new_hive/caves)
 "vIo" = (
 /obj/structure/table/rack/dark,
@@ -21497,6 +24710,14 @@
 /obj/effect/floor_decal/spline/fancy/wood/three_quarters,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"vNI" = (
+/obj/effect/floor_decal/newcorner/shaft,
+/obj/machinery/light/small,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "vOc" = (
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/tiled{
@@ -21569,6 +24790,21 @@
 /obj/item/cell/lasgun,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/research/robotics)
+"vRp" = (
+/obj/effect/floor_decal/industrial/mark,
+/obj/structure/closet/crate/large,
+/obj/item/clothing/suit/armor/whiteshield,
+/obj/item/clothing/suit/armor/whiteshield,
+/obj/item/clothing/suit/armor/whiteshield,
+/obj/item/clothing/suit/armor/whiteshield,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"vSu" = (
+/obj/effect/floor_decal/newcorner/plating/quarter,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "vSx" = (
 /obj/structure/table/graf/rusty_table,
 /obj/structure/torchwall/service{
@@ -21686,6 +24922,14 @@
 	dir = 8
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"vWU" = (
+/obj/structure/table/rack,
+/obj/item/gun/launcher/grenade/mezoa,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/darksteel_floor{
+	dir = 1
+	},
+/area/cadiaoutpost/new_hive/caves)
 "vXb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/chemical_dispenser/full,
@@ -21706,6 +24950,20 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"vYX" = (
+/obj/structure/table/rack,
+/obj/item/reagent_containers/spray/cleaner/warfare{
+	pixel_x = 8
+	},
+/obj/item/reagent_containers/spray/cleaner/warfare{
+	pixel_x = -8
+	},
+/obj/item/reagent_containers/spray/cleaner/warfare,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "vYZ" = (
 /obj/structure/hivedecor/statue4{
 	pixel_x = -15
@@ -21738,6 +24996,16 @@
 /obj/structure/grille/metal_bars,
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"vZX" = (
+/obj/machinery/floodlight,
+/obj/machinery/floodlight,
+/obj/machinery/floodlight,
+/obj/effect/floor_decal/industrial/mark,
+/obj/machinery/floodlight,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "waf" = (
 /obj/effect/floor_decal/newcorner/shaft/corner{
 	dir = 4
@@ -21898,6 +25166,17 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"wjJ" = (
+/obj/structure/table/rack,
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/obj/item/clothing/accessory/storage/black_vest,
+/obj/item/clothing/accessory/storage/black_vest,
+/obj/item/clothing/accessory/storage/brown_vest,
+/obj/item/clothing/accessory/storage/brown_vest,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "wkB" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 8
@@ -21919,6 +25198,14 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"wlO" = (
+/obj/structure/bed/barrack,
+/obj/structure/bed/barrack1,
+/obj/effect/landmark/start/imperialguard/guard,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "wmp" = (
 /obj/structure/sign/chaos{
 	pixel_x = -32
@@ -21974,6 +25261,27 @@
 "won" = (
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/villageinside/lab)
+"wox" = (
+/obj/structure/table/rack,
+/obj/item/reagent_containers/food/snacks/warfare/rat{
+	pixel_x = 8
+	},
+/obj/item/reagent_containers/food/snacks/warfare/rat{
+	pixel_x = -8
+	},
+/obj/item/reagent_containers/food/snacks/warfare/rat{
+	pixel_x = 8;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/food/snacks/warfare/rat{
+	pixel_y = 6;
+	pixel_x = -8
+	},
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "woH" = (
 /obj/structure/curtain/open/shower,
 /turf/simulated/floor/factory_floor,
@@ -22027,6 +25335,15 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"wqG" = (
+/obj/structure/table/rack,
+/obj/effect/floor_decal/industrial/mark,
+/obj/item/gun/projectile/shotgun/pump/shitty/sawn,
+/obj/item/gun/projectile/shotgun/pump/shitty/sawn,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "wrm" = (
 /obj/effect/decal/cleanable/cobweb{
 	dir = 8
@@ -22065,6 +25382,14 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"wui" = (
+/obj/effect/floor_decal/newcorner/shaft{
+	dir = 8
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "wur" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/turf/lfloorscorched1,
@@ -22099,11 +25424,31 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
+"wwp" = (
+/obj/machinery/recharger{
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "wws" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 1
 	},
 /turf/simulated/floor/tiled,
+/area/cadiaoutpost/new_hive/caves)
+"wwu" = (
+/obj/structure/bed/barrack,
+/obj/structure/bed/barrack1,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/effect/landmark/start/imperialguard/guard,
+/obj/effect/landmark/start/imperialguard/recruit,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
 /area/cadiaoutpost/new_hive/caves)
 "wwz" = (
 /obj/structure/table/woodentable{
@@ -22220,6 +25565,28 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"wCj" = (
+/obj/structure/bed/barrack,
+/obj/structure/bed/barrack1,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/effect/landmark/start/imperialguard/medicae,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"wCy" = (
+/obj/effect/floor_decal/industrial/mark,
+/obj/structure/closet/crate/large,
+/obj/item/clothing/head/helmet/whiteshield,
+/obj/item/clothing/head/helmet/whiteshield,
+/obj/item/clothing/head/helmet/whiteshield,
+/obj/item/clothing/head/helmet/whiteshield,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "wCD" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 9
@@ -22229,6 +25596,16 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"wDr" = (
+/obj/structure/table/graf/rusty_table,
+/obj/machinery/door/blast/grates{
+	icon_state = "gshutter1";
+	id = "armoryshutters";
+	maxhealth = 1000;
+	name = "armory reception grate"
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "wDw" = (
 /obj/effect/floor_decal/newcorner/plating/quarter{
 	dir = 1
@@ -22239,6 +25616,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"wDx" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 4;
+	icon_state = "plating"
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "wDD" = (
 /obj/structure/railing,
 /turf/simulated/floor/factory_floor{
@@ -22451,6 +25835,14 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"wOE" = (
+/obj/structure/table/rack,
+/obj/item/storage/toolbox/syndicate,
+/obj/machinery/light,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "wOF" = (
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -22472,6 +25864,19 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"wPy" = (
+/obj/structure/table/rack,
+/obj/item/clothing/mask/gas/nam,
+/obj/item/clothing/mask/gas/nam,
+/obj/item/clothing/mask/gas/nam,
+/obj/item/clothing/mask/gas/nam,
+/obj/item/clothing/mask/gas/nam,
+/obj/item/clothing/mask/gas/nam,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "wPC" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 1;
@@ -22479,6 +25884,15 @@
 	icon_state = "r_window3"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"wPL" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "wPM" = (
 /obj/structure/sign/aquilalong,
 /turf/simulated/floor/stone/old4,
@@ -22547,6 +25961,21 @@
 	dir = 10
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"wTD" = (
+/obj/structure/table/rack,
+/obj/item/clothing/gloves/combat/cadian,
+/obj/item/clothing/gloves/combat/cadian,
+/obj/item/clothing/gloves/combat/cadian,
+/obj/item/clothing/gloves/combat/cadian,
+/obj/effect/floor_decal/industrial/mark,
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "wTF" = (
 /obj/structure/bed/chair/stone_throne,
 /turf/simulated/floor/fancyfloor/carpet/blue{
@@ -22560,12 +25989,48 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"wTR" = (
+/obj/machinery/photocopier,
+/obj/effect/floor_decal/newcorner/green/solid,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "wTT" = (
 /obj/effect/floor_decal/newcorner/nbar{
 	dir = 4
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"wTV" = (
+/obj/structure/curtain/open/shower/security{
+	name = "privacy curtain";
+	pixel_x = -32
+	},
+/obj/structure/sign/imperial{
+	pixel_y = 32
+	},
+/obj/item/storage/fancy/cigar{
+	pixel_y = 14
+	},
+/obj/item/clothing/mask/smokable/cigarette/cigar/havana{
+	pixel_y = -4;
+	pixel_x = -8
+	},
+/obj/item/clothing/mask/smokable/cigarette/cigar/havana{
+	pixel_y = -4;
+	pixel_x = 8
+	},
+/obj/item/clothing/mask/smokable/cigarette/cigar/havana{
+	pixel_y = -4
+	},
+/obj/item/flame/lighter/zippo{
+	pixel_y = 10;
+	pixel_x = 12
+	},
+/obj/structure/table/graf/rich_table,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
 "wUj" = (
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
@@ -22659,6 +26124,20 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"wYS" = (
+/obj/effect/floor_decal/newcorner/shaft{
+	dir = 8
+	},
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb1";
+	light_color = "#234F1E"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "wZe" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/body_bag/cryobag,
@@ -22667,6 +26146,12 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
+"wZn" = (
+/obj/structure/bed/chair{
+	dir = 1
+	},
+/turf/simulated/floor/fancyfloor/carpet/grey,
+/area/cadiaoutpost/new_hive/caves)
 "wZo" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -22763,6 +26248,16 @@
 /obj/effect/floor_decal/newcorner/purple/quarter,
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/caves/dark)
+"xcp" = (
+/obj/machinery/chem_master,
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "xcI" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 10;
@@ -22787,9 +26282,47 @@
 	},
 /turf/simulated/floor/trench,
 /area/cadiaoutpost/new_hive/caves)
+"xej" = (
+/obj/item/paper_bin{
+	pixel_y = 8
+	},
+/obj/item/pen/multi{
+	pixel_y = 4
+	},
+/obj/effect/floor_decal/newcorner/green/quarter{
+	dir = 8
+	},
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table3";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "xes" = (
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
+"xeK" = (
+/obj/effect/floor_decal/industrial/hatch/blue,
+/obj/structure/table/rack,
+/obj/item/storage/firstaid/adv{
+	pixel_y = -8
+	},
+/obj/item/storage/firstaid/adv{
+	pixel_y = 7
+	},
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb1";
+	light_color = "#234F1E"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "xeQ" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 1
@@ -22842,6 +26375,13 @@
 	},
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"xgp" = (
+/obj/effect/floor_decal/newcorner/plating,
+/obj/machinery/light,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "xgu" = (
 /obj/item/pyre/self_lit,
 /turf/simulated/floor/stone,
@@ -22935,6 +26475,15 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"xhK" = (
+/obj/structure/table/graf/rusty_table,
+/obj/item/device/boombox{
+	pixel_y = 11
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "xhQ" = (
 /obj/effect/floor_decal/turf/metal/seven,
 /turf/simulated/floor/factory_floor{
@@ -22979,6 +26528,20 @@
 /obj/item/newore/gems/topaz,
 /obj/item/newore/gems/topaz,
 /turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
+"xjc" = (
+/obj/effect/floor_decal/industrial/hatch/blue,
+/obj/structure/table/rack,
+/obj/item/reagent_containers/spray/cleaner/warfare,
+/obj/item/reagent_containers/spray/cleaner/warfare,
+/obj/item/soap/soapimp{
+	pixel_x = 10
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
 /area/cadiaoutpost/new_hive/caves)
 "xjR" = (
 /obj/effect/decal/cleanable/dirt,
@@ -23063,6 +26626,17 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/inn)
+"xoi" = (
+/obj/structure/table/rack,
+/obj/item/storage/belt/medical/full,
+/obj/item/storage/belt/medical/full,
+/obj/item/storage/belt/medical/full,
+/obj/item/storage/belt/medical/full,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "xpa" = (
 /obj/effect/floor_decal/industrial/warning_red,
 /obj/machinery/light/small/red{
@@ -23082,6 +26656,15 @@
 "xqB" = (
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/caves)
+"xqD" = (
+/obj/structure/table/rack,
+/obj/item/grenade/frag/high_yield/krak,
+/obj/item/grenade/frag/high_yield/krak,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/darksteel_floor{
+	dir = 1
+	},
+/area/cadiaoutpost/new_hive/caves)
 "xqO" = (
 /obj/structure/hivedecor/sarcofagus,
 /obj/structure/sign/plate/written{
@@ -23090,6 +26673,21 @@
 /obj/effect/decal/cleanable/cobweb,
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"xqU" = (
+/obj/effect/floor_decal/industrial/hatch/blue,
+/obj/structure/table/rack,
+/obj/item/storage/firstaid/fire{
+	pixel_y = -8
+	},
+/obj/item/storage/firstaid/fire{
+	pixel_y = 6
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "xrt" = (
 /obj/item/fluff_items/skull,
 /obj/effect/floor_decal/newcorner/stone{
@@ -23100,6 +26698,10 @@
 "xrz" = (
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/caves/dark)
+"xrI" = (
+/obj/item/reagent_containers/food/snacks/poo,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
 "xrQ" = (
 /obj/structure/table/rack/dark,
 /obj/item/storage/firstaid/adv,
@@ -23116,6 +26718,13 @@
 "xsx" = (
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"xsT" = (
+/obj/structure/toilet{
+	dir = 8;
+	icon_state = "toilet00"
+	},
+/turf/simulated/floor/fancyfloor/gray_white,
+/area/cadiaoutpost/new_hive/caves)
 "xtk" = (
 /obj/effect/floor_decal/newcorner/white{
 	dir = 4
@@ -23238,6 +26847,15 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
+"xyn" = (
+/obj/structure/bed/barrack,
+/obj/structure/bed/barrack1,
+/obj/effect/landmark/start/imperialguard/guard,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "xyG" = (
 /turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/oa/villageinside/lab)
@@ -23259,6 +26877,18 @@
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"xzx" = (
+/obj/structure/table/rack,
+/obj/item/gun/energy/las/lasgun/accatran,
+/obj/effect/floor_decal/industrial/mark,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "xzy" = (
 /turf/simulated/floor/plating{
 	color = "grey"
@@ -23319,6 +26949,16 @@
 /obj/structure/filingcabinet/filingcabinet,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
+"xAn" = (
+/obj/effect/floor_decal/newcorner/shaft/quarter,
+/obj/structure/sign/neon/armory{
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "xAt" = (
 /obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/closet/secure_closet/medical1,
@@ -23409,6 +27049,18 @@
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/new_hive/caves)
+"xDT" = (
+/obj/structure/table/rack,
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "xEe" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/sign/warning/biohazard{
@@ -23439,6 +27091,35 @@
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
+"xGr" = (
+/obj/item/stamp/hos{
+	pixel_y = 8;
+	pixel_x = -8
+	},
+/obj/item/stamp/denied{
+	pixel_x = -8
+	},
+/obj/item/book/manual{
+	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
+	name = "Lectitio Divinitatus";
+	pixel_x = 8;
+	pixel_y = 4
+	},
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 8
+	},
+/turf/simulated/floor/fancyfloor/carpet/grey{
+	dir = 4
+	},
+/area/cadiaoutpost/new_hive/caves)
+"xGs" = (
+/obj/effect/floor_decal/newcorner/blue/diagonal,
+/turf/simulated/floor/tiled{
+	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "xGZ" = (
 /obj/structure/shipdecor{
 	icon_state = "off";
@@ -23502,6 +27183,14 @@
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
+"xKm" = (
+/obj/effect/floor_decal/newcorner/green/corner{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "xKD" = (
 /obj/structure/forge,
 /turf/simulated/floor/ceramic/surgery2{
@@ -23545,6 +27234,12 @@
 	icon_state = "r_window"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"xLY" = (
+/obj/machinery/chemical_dispenser/full,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "xMb" = (
 /obj/structure/sign/art/lordgovenor{
 	pixel_x = 32
@@ -23565,6 +27260,19 @@
 /obj/item/device/batterer,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
+"xNb" = (
+/obj/structure/table/rack,
+/obj/item/shovel,
+/obj/item/shovel,
+/obj/item/shovel,
+/obj/item/shovel,
+/obj/item/shovel,
+/obj/item/shovel,
+/obj/effect/floor_decal/industrial/mark,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "xNq" = (
 /obj/structure/sign/plate/stoneshrine{
 	pixel_x = 32
@@ -23594,6 +27302,24 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"xOT" = (
+/obj/structure/table/graf/rusty_table,
+/obj/item/storage/fancy/cigarettes/dromedaryco,
+/obj/item/flame/lighter/zippo{
+	pixel_x = 10
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"xPF" = (
+/obj/effect/floor_decal/newcorner/green{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "xPH" = (
 /obj/structure/forge,
 /obj/structure/torchwall{
@@ -23610,6 +27336,37 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"xQr" = (
+/obj/effect/floor_decal/industrial/hatch/blue,
+/obj/structure/table/rack,
+/obj/item/storage/firstaid/toxin{
+	pixel_y = -6
+	},
+/obj/item/storage/firstaid/toxin{
+	pixel_y = 6
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1";
+	name = "freezer floor"
+	},
+/area/cadiaoutpost/new_hive/caves)
+"xQP" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 1
+	},
+/obj/machinery/button/remote/blast_door{
+	pixel_y = 26;
+	name = "Armory Reception Shutters";
+	id = "armor_shutter"
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "xQQ" = (
 /obj/machinery/door/unpowered/inn{
 	name = "Bathroom"
@@ -23683,6 +27440,23 @@
 "xTz" = (
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/new_hive/caves)
+"xTX" = (
+/obj/item/clothing/accessory/holster/armpit,
+/obj/structure/closet/secure_closet/personal{
+	color = "grey"
+	},
+/obj/item/cell/lasgun/hotshot,
+/obj/item/clothing/head/helmet,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/new_hive/caves)
+"xUQ" = (
+/obj/effect/floor_decal/spline/plain{
+	dir = 5
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "xVh" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -23745,6 +27519,17 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
+"xXO" = (
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/obj/effect/floor_decal/spline/plain{
+	dir = 1;
+	icon_state = "spline_plain"
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/new_hive/caves)
 "xYa" = (
 /obj/machinery/cryopod,
 /obj/machinery/light{
@@ -23754,6 +27539,14 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"xYC" = (
+/obj/machinery/photocopier,
+/obj/item/device/toner,
+/obj/effect/floor_decal/spline/plain{
+	dir = 4
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/new_hive/caves)
 "xYI" = (
 /obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
@@ -23874,6 +27667,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
+"ydI" = (
+/obj/effect/floor_decal/turf/armory,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "ydK" = (
 /obj/effect/decal/cleanable/cobweb2{
 	dir = 8
@@ -51764,9 +55563,9 @@ tOB
 tOB
 tOB
 tOB
-slE
-slE
-slE
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -52015,11 +55814,11 @@ slE
 tOB
 tOB
 tOB
-slE
-slE
 tOB
-slE
-slE
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -52266,13 +56065,6 @@ tOB
 slE
 tOB
 tOB
-slE
-slE
-tOB
-tOB
-tOB
-slE
-slE
 tOB
 tOB
 tOB
@@ -52282,9 +56074,16 @@ tOB
 tOB
 tOB
 tOB
-slE
-slE
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -52518,13 +56317,6 @@ tOB
 slE
 tOB
 tOB
-slE
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
 tOB
 tOB
 tOB
@@ -52532,11 +56324,18 @@ tOB
 tOB
 tOB
 tOB
-slE
-slE
-slE
 tOB
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -52769,26 +56568,26 @@ tOB
 tOB
 slE
 tOB
-slE
-slE
 tOB
 tOB
 tOB
 tOB
 tOB
-slE
-slE
 tOB
 tOB
 tOB
 tOB
 tOB
-slE
-slE
 tOB
 tOB
 tOB
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -53021,26 +56820,26 @@ tOB
 tOB
 slE
 tOB
-slE
-tOB
-tOB
-tOB
-slE
-slE
-slE
-slE
-slE
 tOB
 tOB
 tOB
 tOB
-slE
-slE
 tOB
 tOB
 tOB
 tOB
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -53273,26 +57072,26 @@ tOB
 tOB
 slE
 tOB
-slE
-tOB
-tOB
-tOB
-slE
-tOB
-tOB
-tOB
-slE
-tOB
-tOB
-tOB
-slE
-slE
 tOB
 tOB
 tOB
 tOB
 tOB
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -53525,26 +57324,26 @@ tOB
 tOB
 slE
 tOB
-slE
-tOB
-tOB
-slE
-slE
-slE
-slE
-slE
-slE
-tOB
-tOB
-tOB
-slE
 tOB
 tOB
 tOB
 tOB
 tOB
 tOB
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -53777,26 +57576,26 @@ tOB
 tOB
 slE
 tOB
-slE
-tOB
-slE
-slE
-slE
-tOB
-tOB
-tOB
-slE
-tOB
-tOB
-slE
-slE
 tOB
 tOB
 tOB
 tOB
 tOB
 tOB
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -54029,18 +57828,6 @@ tOB
 tOB
 slE
 tOB
-slE
-slE
-slE
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
-tOB
-tOB
-slE
 tOB
 tOB
 tOB
@@ -54048,7 +57835,19 @@ tOB
 tOB
 tOB
 tOB
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -54282,25 +58081,25 @@ tOB
 slE
 tOB
 tOB
-slE
-slE
 tOB
 tOB
 tOB
 tOB
 tOB
-slE
-tOB
-slE
-slE
-slE
-slE
-slE
-slE
 tOB
 tOB
 tOB
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -54534,24 +58333,24 @@ tOB
 slE
 tOB
 tOB
-slE
 tOB
 tOB
 tOB
 tOB
 tOB
 tOB
-slE
-tOB
-slE
 tOB
 tOB
 tOB
 tOB
-slE
-slE
 tOB
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -54786,24 +58585,24 @@ tOB
 slE
 tOB
 tOB
-slE
 tOB
 tOB
 tOB
 tOB
 tOB
 tOB
-slE
-tOB
-slE
 tOB
 tOB
 tOB
 tOB
 tOB
-slE
-slE
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -55038,24 +58837,24 @@ tOB
 slE
 tOB
 tOB
-slE
 tOB
 tOB
 tOB
 tOB
 tOB
 tOB
-slE
-tOB
-slE
 tOB
 tOB
 tOB
 tOB
 tOB
 tOB
-slE
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -55290,15 +59089,6 @@ tOB
 slE
 tOB
 tOB
-slE
-slE
-tOB
-tOB
-tOB
-tOB
-slE
-slE
-slE
 tOB
 tOB
 tOB
@@ -55306,7 +59096,16 @@ tOB
 tOB
 tOB
 tOB
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -55543,22 +59342,22 @@ slE
 tOB
 tOB
 tOB
-slE
-tOB
-tOB
-tOB
-tOB
-slE
-tOB
-slE
 tOB
 tOB
 tOB
 tOB
 tOB
 tOB
-slE
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -55809,7 +59608,7 @@ tOB
 tOB
 tOB
 tOB
-slE
+tOB
 tOB
 tOB
 tOB
@@ -56048,18 +59847,18 @@ tOB
 tOB
 tOB
 slE
-tOB
-tOB
-tOB
-tOB
 slE
 slE
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
 slE
 slE
 tOB
@@ -56300,17 +60099,17 @@ tOB
 tOB
 tOB
 slE
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
 slE
 slE
 tOB
@@ -56552,17 +60351,17 @@ tOB
 tOB
 tOB
 slE
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
 slE
 tOB
 tOB
@@ -56804,6 +60603,7 @@ tOB
 tOB
 tOB
 slE
+slE
 tOB
 tOB
 tOB
@@ -56811,9 +60611,8 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
+slE
+slE
 slE
 slE
 tOB
@@ -57054,7 +60853,7 @@ tOB
 slE
 tOB
 tOB
-tOB
+slE
 slE
 tOB
 tOB
@@ -57065,7 +60864,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 slE
 tOB
 tOB
@@ -57306,8 +61105,8 @@ tOB
 slE
 tOB
 tOB
-tOB
 slE
+tOB
 tOB
 tOB
 hqB
@@ -57558,9 +61357,9 @@ tOB
 slE
 tOB
 tOB
-tOB
 slE
 tOB
+tOB
 hqB
 hqB
 hqB
@@ -57569,7 +61368,7 @@ hqB
 hqB
 tOB
 tOB
-slE
+tOB
 slE
 slE
 slE
@@ -57810,8 +61609,8 @@ tOB
 slE
 tOB
 tOB
-tOB
 slE
+tOB
 tOB
 hqB
 bpc
@@ -57821,8 +61620,8 @@ bpc
 hqB
 hqB
 tOB
-slE
 tOB
+slE
 tOB
 tOB
 tOB
@@ -58496,15 +62295,15 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
 slE
 slE
 nDA
@@ -58748,16 +62547,16 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
 slE
 nDA
 nDA
@@ -59000,16 +62799,16 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+gcs
+qtu
+kGP
+wcj
+gcs
+qtu
+kGP
+wcj
 slE
 nDA
 nDA
@@ -59247,22 +63046,22 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+slE
+slE
+slE
+slE
+slE
+wcj
+mKc
+quL
+quL
+wcj
+mKc
+quL
+quL
+wcj
+slE
 nDA
 nDA
 nDA
@@ -59498,23 +63297,23 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+slE
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+ghw
+quL
+eUU
+wcj
+ghw
+quL
+eUU
+wcj
+slE
 nDA
 nDA
 nDA
@@ -59750,23 +63549,23 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+wcj
+tBr
+xcp
+xLY
+wcj
+wcj
+oNG
+pEh
+jvw
+wcj
+oNG
+pEh
+jvw
+wcj
+slE
 slE
 tOB
 tOB
@@ -59998,28 +63797,28 @@ wcj
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+slE
+slE
+slE
+slE
+wcj
+cYM
+lIa
+tLI
+lIa
+wcj
+wcj
+wcj
+cLo
+wcj
+wcj
+wcj
+cLo
+wcj
+wcj
+wcj
+slE
 tOB
 tOB
 tOB
@@ -60250,28 +64049,28 @@ wcj
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+wcj
+wcj
+wcj
+wcj
+djX
+lIa
+lIa
+lIa
+wcj
+bxw
+kxR
+xGs
+xGs
+fiD
+xGs
+xGs
+uPt
+uzz
+wcj
+slE
 tOB
 tOB
 tOB
@@ -60502,28 +64301,28 @@ wcj
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+wcj
+xGs
+aJh
+wcj
+mAt
+lIa
+lIa
+lIa
+cDu
+xGs
+jiF
+jiF
+jiF
+jiF
+beH
+jiF
+beH
+xGs
+wcj
+slE
 tOB
 tOB
 tOB
@@ -60754,28 +64553,28 @@ wcj
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+jQK
+xGs
+aJh
+wcj
+oPk
+lIa
+lIa
+lIa
+qjt
+xGs
+tcY
+jiF
+tcY
+jiF
+blg
+jiF
+blg
+xGs
+wcj
+slE
 slE
 slE
 slE
@@ -61006,36 +64805,36 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+fkl
+xGs
+kLq
+wcj
+wcj
+lIa
+skU
+lIa
+heM
+xGs
+sIs
+jiF
+sIs
+jiF
+sIs
+jiF
+sIs
+aym
+wcj
+wcj
+wcj
+wcj
+wcj
+slE
+slE
+slE
+slE
+slE
 tOB
 tOB
 tOB
@@ -61258,54 +65057,54 @@ tOB
 tOB
 tOB
 tOB
+slE
+wcj
+dXm
+xGs
+xGs
+qTF
+wcj
+wcj
+wcj
+wcj
+wcj
+tSX
+jiF
+jiF
+jiF
+pfk
+jiF
+jiF
+jiF
+xGs
+uQm
+hVJ
+rCl
+uTu
+wcj
+wcj
+wcj
+wcj
+wcj
+slE
+slE
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
 tOB
 tOB
 tOB
@@ -61510,54 +65309,54 @@ tOB
 tOB
 tOB
 tOB
+slE
+wcj
+qLY
+xGs
+xGs
+mus
+bBq
+qAE
+xeK
+aXm
+wcj
+xGs
+jiF
+lrA
+lrA
+lrA
+lrA
+lrA
+jiF
+xGs
+heM
+eKs
+uoW
+qTj
+wcj
+tpD
+prE
+nUK
+wcj
+wcj
+slE
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+slE
 tOB
 tOB
 tOB
@@ -61762,54 +65561,54 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+uyd
+xGs
+xGs
+xGs
+xGs
+xGs
+xGs
+xGs
+eWS
+xGs
+xGs
+cRi
+llS
+llS
+cRi
+llS
+xGs
+xGs
+uQm
+eKs
+uoW
+qTj
+wcj
+hPQ
+sqy
+hPQ
+veo
+wcj
+slE
+slE
+slE
+slE
+wcj
+vps
+wCy
+vRp
+lSW
+dih
+iYd
+nBT
+lSW
+fzE
+kEO
+kEO
+wcj
+slE
 tOB
 tOB
 tOB
@@ -62014,54 +65813,54 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+xjc
+gRz
+xGs
+xGs
+xQr
+xqU
+caW
+aeS
+wcj
+cuA
+vHd
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+gvy
+uoW
+qTj
+bUt
+hPQ
+hPQ
+hPQ
+ixV
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+wcj
+slE
 tOB
 tOB
 tOB
@@ -62266,54 +66065,54 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+mcS
+vGF
+xhK
+vys
+wCj
+eik
+wcj
+eKs
+uoW
+qTj
+wcj
+hPQ
+hPQ
+hPQ
+hPQ
+bUt
+gwz
+hkj
+gwz
+wcj
+wcj
+fya
+jYS
+byx
+lSW
+gAu
+wTD
+vCb
+lSW
+xoi
+pDb
+wPy
+wcj
+slE
 tOB
 tOB
 tOB
@@ -62518,54 +66317,54 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+slE
+slE
+slE
+slE
+wcj
+npI
+qqu
+phG
+qqu
+qqu
+qqu
+qqu
+iqe
+wui
+wui
+wui
+wui
+wui
+wui
+wcj
+eKs
+uoW
+qTj
+wcj
+gfN
+rdk
+hPQ
+qcf
+wcj
+nQo
+xsT
+cxq
+wcj
+wcj
+wcj
+wcj
+wcj
+lSW
+wcj
+wcj
+wcj
+lSW
+wcj
+wcj
+wcj
+wcj
+slE
 tOB
 tOB
 tOB
@@ -62774,50 +66573,50 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+npI
+qcX
+wcj
+vGT
+qqu
+qcX
+qqu
+wcj
+lAH
+abY
+oxj
+uJC
+iZm
+iZm
+iWr
+eKs
+uoW
+qTj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+fqc
+pjM
+sEV
+lSW
+fIx
+hlt
+epx
+lSW
+kLB
+smx
+vHv
+wcj
+slE
 tOB
 tOB
 tOB
@@ -63026,50 +66825,50 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+wcj
+wcj
+wcj
+wcj
+aBA
+wcj
+nSc
+wcj
+qKc
+qKc
+qKc
+qKc
+qKc
+qKc
+wcj
+gvy
+uoW
+qTj
+wcj
+nJq
+siy
+siy
+eND
+jYH
+wcj
+nBs
+qsV
+gTu
+wcj
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+wcj
+slE
 tOB
 tOB
 tOB
@@ -63278,50 +67077,50 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+slE
+slE
+slE
+slE
+wcj
+rjB
+wcj
+nqn
+wcj
+rOu
+dOi
+gpt
+xOT
+mIr
+mcS
+wcj
+eKs
+uoW
+qTj
+wcj
+wcj
+iDM
+iZm
+kkV
+qyT
+wDr
+ciA
+lFF
+jOS
+wcj
+wqG
+lSW
+lSW
+hCB
+lSW
+lSW
+lSW
+hCB
+lSW
+lSW
+lSW
+wcj
+slE
 tOB
 tOB
 tOB
@@ -63534,46 +67333,46 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+eKs
+euc
+kfl
+xAn
+wcj
+fxH
+iZm
+kkV
+qyT
+qZG
+bRv
+ydI
+tDw
+wcj
+hcY
+lSW
+lSW
+wcj
+dKv
+lSW
+sKk
+wcj
+iZm
+qVw
+wOE
+wcj
+slE
 tOB
 tOB
 tOB
@@ -63786,46 +67585,46 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+wcj
+lEZ
+lEZ
+eIX
+eKs
+uoW
+uoW
+qTj
+sVs
+iZm
+iZm
+kkV
+qyT
+wDr
+ciA
+uQo
+gOw
+wcj
+xzx
+lSW
+lSW
+uty
+rVW
+lSW
+vaB
+lSW
+lSW
+lSW
+lSW
+wcj
+slE
 tOB
 tOB
 tOB
@@ -64038,46 +67837,46 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+wcj
+lEZ
+lEZ
+nFr
+eKs
+sGW
+uoW
+qTj
+sVs
+iZm
+iZm
+kkV
+nec
+wcj
+xQP
+gTh
+xgp
+wcj
+lFP
+lSW
+lSW
+mAN
+gku
+lSW
+eZh
+lSW
+lSW
+wox
+wjJ
+wcj
+slE
 tOB
 tOB
 tOB
@@ -64290,46 +68089,46 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+eKs
+uoW
+uVD
+vmh
+wcj
+fxH
+iZm
+kkV
+scm
+mRz
+ciA
+lFF
+pdu
+wcj
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+wcj
+slE
 tOB
 tOB
 tOB
@@ -64538,50 +68337,50 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+slE
+slE
+slE
+slE
+wcj
+hQD
+wcj
+foK
+wcj
+wlO
+wwu
+dSt
+sxq
+uWQ
+mcS
+wcj
+gvy
+uoW
+qTj
+wcj
+wcj
+iDM
+iZm
+iZm
+iZm
+wcj
+uMC
+rdQ
+qdV
+iyD
+lSW
+lSW
+lSW
+lSW
+kUR
+lSW
+dVH
+lSW
+lSW
+xDT
+ltp
+wcj
+slE
 tOB
 tOB
 tOB
@@ -64790,50 +68589,50 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+wcj
+wcj
+wcj
+wcj
+oSl
+wcj
+onA
+wcj
+wui
+wui
+wui
+wui
+wui
+wui
+wcj
+eKs
+uoW
+qTj
+wcj
+vys
+wwp
+wwp
+wwp
+buu
+wcj
+wcj
+arK
+wcj
+wcj
+wcj
+lSW
+lSW
+lSW
+kzJ
+lSW
+eJx
+lSW
+lSW
+lSW
+lSW
+wcj
+slE
 tOB
 tOB
 tOB
@@ -65042,50 +68841,50 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+npI
+mMM
+wcj
+vGT
+qqu
+mMM
+qqu
+wcj
+kHC
+uJC
+gnY
+bvk
+iZm
+iZm
+iWr
+eKs
+uoW
+qTj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+coB
+xPF
+qjJ
+bKW
+wcj
+gVW
+ujW
+wcj
+xNb
+lSW
+cYt
+wcj
+iZm
+eZo
+kYV
+wcj
+slE
 tOB
 tOB
 tOB
@@ -65294,50 +69093,50 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+npI
+qqu
+phG
+qqu
+qqu
+qqu
+qqu
+iqe
+qKc
+qKc
+qKc
+qKc
+qKc
+qKc
+wcj
+eKs
+uoW
+kfl
+rCl
+rCl
+wYS
+rCl
+uTu
+wcj
+bSa
+omg
+lFF
+pSG
+jKi
+wcj
+lSW
+lSW
+lSW
+vZX
+lSW
+pLS
+lSW
+lSW
+lSW
+lSW
+wcj
+slE
 tOB
 tOB
 tOB
@@ -65546,50 +69345,50 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wlO
+nCV
+sxq
+imT
+pZb
+mcS
+wcj
+gvy
+uoW
+uoW
+uoW
+uoW
+uoW
+uoW
+qTj
+wcj
+wTR
+lFF
+lFF
+lFF
+vFK
+wcj
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+lSW
+wcj
+slE
 tOB
 tOB
 tOB
@@ -65798,50 +69597,50 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+aGv
+gpC
+gpC
+gpC
+gpC
+qUu
+uoW
+qTj
+wcj
+rJx
+xKm
+lFF
+qzO
+dPW
+wcj
+ldc
+vqQ
+cpO
+qws
+mae
+mae
+hCB
+aUH
+eSB
+vYX
+wcj
+slE
 tOB
 tOB
 tOB
@@ -66058,41 +69857,41 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+wcj
+heM
+heM
+heM
+heM
+wcj
+eKs
+uoW
+vNI
+wcj
+wcj
+llv
+fix
+uRP
+xej
+wcj
+wcj
+wcj
+wcj
+wcj
+sVk
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
 slE
 tOB
 tOB
@@ -66311,40 +70110,40 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+slE
+slE
+slE
+slE
+slE
+wcj
+wcj
+wTV
+eka
+eka
+eka
+wcj
+eKs
+uoW
+qTj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+uct
+gPb
+lBK
+vFF
+tAW
+wcj
+slE
+slE
+slE
 slE
 tOB
 tOB
@@ -66563,38 +70362,38 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+sGy
+dzs
+dzs
+dzs
+pbJ
+wcj
+eKs
+uoW
+qTj
+wcj
+tRc
+eao
+rrh
+wPL
+rHm
+tRc
+wcj
+wcj
+vtM
+gPb
+lBK
+vFF
+kDT
+wcj
+slE
 tOB
 tOB
 tOB
@@ -66815,38 +70614,38 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+sGt
+gax
+lgB
+hEu
+wcj
+fWu
+nxJ
+fOU
+ukT
+qGu
+wcj
+eKs
+uoW
+qTj
+iWr
+kVb
+wui
+wui
+wui
+wui
+wui
+wcj
+wcj
+xqD
+mBY
+ryn
+fsa
+pYU
+wcj
+slE
 tOB
 tOB
 tOB
@@ -67067,38 +70866,38 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+ubF
+knL
+pwu
+lQA
+wcj
+xXO
+lDi
+uHF
+wZn
+tAy
+rIe
+eKs
+uoW
+vNI
+wcj
+lFt
+qKc
+qKc
+qKc
+qKc
+qKc
+wcj
+wcj
+gZp
+iSu
+tkQ
+iSu
+vWU
+wcj
+slE
 tOB
 tOB
 tOB
@@ -67319,45 +71118,45 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+gSd
+hPQ
+beX
+hXT
+wcj
+ksH
+cNg
+xGr
+idv
+tAy
+wcj
+eKs
+uoW
+qTj
+wcj
+baa
+lhk
+vkV
+xyn
+xyn
+lhk
+wcj
+wcj
+oYi
+iSu
+jRZ
+iSu
+aNB
+wcj
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
 nma
 nma
 nma
@@ -67571,45 +71370,45 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+xTX
+hPQ
+hPQ
+hPQ
+wcj
+ksH
+rLj
+rLj
+rLj
+tAy
+wcj
+eKs
+uoW
+qTj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+hsL
+iSu
+mXN
+iSu
+hsL
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+slE
 nma
 nma
 uMF
@@ -67823,45 +71622,45 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+pqM
+hPQ
+xrI
+hPQ
+rIe
+qCH
+vgF
+xYC
+jQG
+nmZ
+wcj
+eKs
+uoW
+kfl
+rCl
+rCl
+rCl
+rCl
+snq
+rCl
+rCl
+uTu
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+fXN
+ard
+fXN
+fXN
+ard
+fXN
+wcj
+slE
 nma
 uMF
 uMF
@@ -68075,45 +71874,45 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+wcj
+wcj
+rvL
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+eKs
+uoW
+uoW
+uoW
+uoW
+uoW
+uoW
+uoW
+uoW
+uoW
+kfl
+rCl
+rCl
+rCl
+wYS
+rCl
+uTu
+wcj
+moT
+ebk
+ebk
+ebk
+ebk
+vSu
+wcj
+slE
 nma
 uMF
 qWh
@@ -68327,45 +72126,45 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+slE
+slE
+wcj
+gwz
+iDN
+gwz
+wcj
+lSW
+eEo
+lSW
+lSW
+tXg
+aGv
+gpC
+tIx
+gpC
+gpC
+gpC
+qUu
+uoW
+uoW
+uoW
+uoW
+uoW
+uoW
+uoW
+uoW
+uoW
+qTj
+mOn
+oDZ
+lBK
+lBK
+lBK
+lBK
+cqv
+wcj
+slE
 nma
 uMF
 nma
@@ -68581,43 +72380,43 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+rnF
+xsT
+bcD
+wcj
+bfS
+njO
+wcj
+wcj
+wcj
+wcj
+gHH
+wcj
+wcj
+wcj
+wcj
+aGv
+gpC
+gpC
+gpC
+tIx
+gpC
+gpC
+gpC
+gpC
+gpC
+eRg
+wcj
+prV
+asE
+wDx
+wDx
+uun
+gkP
+wcj
+slE
 nma
 uMF
 nma
@@ -68833,43 +72632,43 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+iZm
+pkl
+iZm
+iZm
+iZm
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+slE
 nma
 uMF
 nma
@@ -69085,43 +72884,43 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+wcj
+bAc
+iZm
+fxH
+iZm
+mmV
+mmV
+iZm
+wcj
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
 nma
 uMF
 qWh
@@ -69343,6 +73142,17 @@ tOB
 tOB
 tOB
 tOB
+slE
+wcj
+fGm
+iZm
+fxH
+raG
+nho
+qNt
+nHF
+wcj
+slE
 tOB
 tOB
 tOB
@@ -69350,18 +73160,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
 tOB
 nma
 nma
@@ -69595,6 +73394,17 @@ tOB
 tOB
 tOB
 tOB
+slE
+wcj
+jdS
+iZm
+fxH
+raG
+dsI
+iZm
+fRO
+wcj
+slE
 tOB
 tOB
 tOB
@@ -69602,18 +73412,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
 tOB
 nma
 nma
@@ -69847,6 +73646,17 @@ tOB
 tOB
 tOB
 tOB
+slE
+wcj
+eHb
+iZm
+fxH
+raG
+xUQ
+pla
+iic
+wcj
+slE
 tOB
 tOB
 tOB
@@ -69854,18 +73664,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
 tOB
 nma
 nma
@@ -70099,6 +73898,17 @@ tOB
 tOB
 tOB
 tOB
+slE
+wcj
+qgu
+iZm
+fxH
+iZm
+tSL
+tSL
+tSL
+wcj
+slE
 tOB
 tOB
 tOB
@@ -70106,18 +73916,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
 tOB
 nma
 nma
@@ -70351,6 +74150,17 @@ tOB
 tOB
 tOB
 tOB
+slE
+wcj
+wcj
+eXE
+iZm
+iZm
+iZm
+iZm
+wcj
+wcj
+slE
 tOB
 tOB
 tOB
@@ -70358,18 +74168,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
 tOB
 nma
 nma
@@ -70603,6 +74402,17 @@ tOB
 tOB
 tOB
 tOB
+slE
+slE
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+wcj
+slE
 tOB
 tOB
 tOB
@@ -70610,18 +74420,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
 tOB
 nma
 nma
@@ -70856,6 +74655,16 @@ tOB
 tOB
 tOB
 tOB
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
 tOB
 tOB
 tOB
@@ -70863,17 +74672,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
 tOB
 nma
 nma
@@ -71125,7 +74924,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tOB
 nma
 uMF
@@ -71377,7 +75176,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tOB
 nma
 uMF
@@ -71622,7 +75421,7 @@ tOB
 tOB
 tOB
 tOB
-wcj
+tOB
 slE
 slE
 slE
@@ -78635,16 +82434,16 @@ jGb
 jGb
 jGb
 jGb
-mWl
-mWl
-vDU
 jGb
 jGb
 jGb
-poz
-cRp
-hPQ
-xiT
+jGb
+jGb
+jGb
+slE
+slE
+slE
+slE
 jGb
 jGb
 jGb
@@ -78886,17 +82685,17 @@ pxR
 tOB
 tOB
 tOB
-jGb
-mWl
-mWl
-mWl
-jGb
-jGb
-pTd
-hPQ
-hPQ
-hPQ
-qFj
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
 jGb
 jGb
 jGb
@@ -79138,18 +82937,18 @@ pxR
 tOB
 tOB
 tOB
-jGb
-mWl
-ksC
-cla
-jGb
-jGb
-lCM
-hPQ
-hGK
-fGS
-jGb
-jGb
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+slE
+slE
+slE
+slE
+slE
+slE
 jGb
 jGb
 jGb
@@ -79390,19 +83189,19 @@ tOB
 tOB
 tOB
 tOB
-jGb
-jGb
-hpe
-pgd
-hpe
-jGb
-hPQ
-hPQ
-cWt
-vAE
-jGb
-jGb
-jGb
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+slE
+slE
+slE
+slE
+slE
+slE
+slE
 jGb
 cRp
 hPQ
@@ -79642,19 +83441,19 @@ tOB
 tOB
 tOB
 tOB
-jGb
-jfc
-hPQ
-hPQ
-hPQ
-hPQ
-hPQ
-hPQ
-hPQ
-hPQ
-jGb
-auO
-qqu
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 jGb
 hPQ
 hPQ
@@ -79894,19 +83693,19 @@ slE
 slE
 tOB
 tOB
-jGb
-kKI
-hPQ
-hPQ
-hPQ
-hPQ
-hPQ
-hPQ
-hPQ
-hPQ
-rvL
-qqu
-qqu
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 jGb
 vVJ
 hPQ
@@ -80146,19 +83945,19 @@ tOB
 tOB
 slE
 slE
-jGb
-bcv
-hPQ
-hGu
-wFk
-rMB
-hPQ
-hPQ
-hPQ
-hPQ
-jGb
-eGY
-shm
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 jGb
 pTd
 hPQ
@@ -80398,19 +84197,19 @@ tOB
 tOB
 tOB
 slE
-jGb
-jGb
-jGb
-jGb
-jGb
-jGb
-jGb
-jGb
-jGb
-jGb
-jGb
-jGb
-jGb
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 jGb
 jGb
 lCM
@@ -80636,28 +84435,28 @@ iAP
 vDU
 pxR
 pxR
-tOB
-slE
-slE
-tOB
-tOB
-tOB
-tOB
-tOB
+pxR
+pxR
+pxR
+pxR
+pxR
+pxR
 tOB
 tOB
 tOB
 tOB
 tOB
 tOB
-slE
-slE
 tOB
 tOB
 tOB
 tOB
 tOB
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -80883,13 +84682,19 @@ tOB
 pxR
 pxR
 pxR
+mWl
+mWl
+vDU
 pxR
 pxR
 pxR
+poz
+cRp
+hPQ
+xiT
 pxR
 pxR
-slE
-slE
+pxR
 tOB
 tOB
 tOB
@@ -80903,12 +84708,6 @@ tOB
 tOB
 tOB
 tOB
-slE
-slE
-slE
-slE
-slE
-slE
 tOB
 tOB
 tOB
@@ -81135,19 +84934,19 @@ tOB
 tOB
 pxR
 pxR
+mWl
+mWl
+mWl
+pxR
+pxR
+pTd
+hPQ
+hPQ
+hPQ
+qFj
 pxR
 pxR
 pxR
-pxR
-pxR
-slE
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
 tOB
 tOB
 tOB
@@ -81386,20 +85185,20 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+pxR
+mWl
+ksC
+cla
+pxR
+pxR
+lCM
+hPQ
+hGK
+fGS
+pxR
+pxR
+pxR
+pxR
 tOB
 tOB
 tOB
@@ -81638,20 +85437,20 @@ tOB
 tOB
 slE
 slE
-slE
-slE
-slE
-slE
-slE
-slE
-slE
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+pxR
+pxR
+lQQ
+pgd
+lQQ
+pxR
+hPQ
+hPQ
+cWt
+vAE
+pxR
+pxR
+pxR
+pxR
 tOB
 tOB
 tOB
@@ -81890,20 +85689,20 @@ slE
 slE
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+pxR
+jfc
+hPQ
+hPQ
+hPQ
+hPQ
+hPQ
+hPQ
+hPQ
+hPQ
+pxR
+auO
+qqu
+pxR
 tOB
 tOB
 tOB
@@ -82142,20 +85941,20 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+pxR
+kKI
+hPQ
+hPQ
+hPQ
+hPQ
+hPQ
+hPQ
+hPQ
+hPQ
+rvL
+qqu
+qqu
+pxR
 tOB
 tOB
 tOB
@@ -82394,20 +86193,20 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+pxR
+bcv
+hPQ
+hGu
+wFk
+rMB
+hPQ
+hPQ
+hPQ
+hPQ
+pxR
+eGY
+shm
+pxR
 tOB
 tOB
 tOB
@@ -82646,20 +86445,20 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+pxR
+pxR
+pxR
+pxR
+pxR
+pxR
+pxR
+pxR
+pxR
+pxR
+pxR
+pxR
+pxR
+pxR
 tOB
 tOB
 tOB

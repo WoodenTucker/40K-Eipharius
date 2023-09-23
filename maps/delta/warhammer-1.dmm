@@ -8350,6 +8350,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"DB" = (
+/obj/item/pickaxe,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/undercity)
 "DC" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 4;
@@ -49026,7 +49032,7 @@ zx
 zx
 Mg
 yx
-yx
+zx
 Mg
 sp
 sp
@@ -49277,8 +49283,8 @@ zx
 zx
 zx
 Mg
-yx
-yx
+zx
+zx
 Mg
 Mg
 Mg
@@ -49529,8 +49535,8 @@ zx
 dd
 zx
 Mg
-yx
-yx
+zx
+zx
 Mg
 Ih
 Ih
@@ -49781,8 +49787,8 @@ zx
 zx
 zx
 Mg
-yx
-yx
+DB
+zx
 Mg
 Ih
 yY
