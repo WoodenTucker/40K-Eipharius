@@ -11602,10 +11602,6 @@
 /obj/structure/grille/metal_bars,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/hive_city)
-"kIA" = (
-/obj/structure/stairs/south,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/security/barracks)
 "kIP" = (
 /obj/machinery/optable,
 /obj/effect/floor_decal/newcorner/teal/solid,
@@ -64278,9 +64274,9 @@ dII
 bZc
 bZc
 bZc
-dNl
-kIA
-kIA
+dGW
+dGW
+dGW
 dGW
 dGW
 qiL
@@ -64530,9 +64526,9 @@ dWZ
 bZc
 bZc
 bZc
-tLO
-kIA
-kIA
+dGW
+dGW
+dGW
 dGW
 dGW
 qiL
@@ -65034,7 +65030,7 @@ dWZ
 bZc
 bZc
 bZc
-jrI
+dGW
 dGW
 dGW
 dGW
