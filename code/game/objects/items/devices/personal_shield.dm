@@ -101,7 +101,6 @@
 	icon_state = "batterer"
 	w_class = ITEM_SIZE_SMALL
 	slot_flags = SLOT_TIE
-	var/active = 0.0
 
 /obj/item/clothing/accessory/displacer/New()
 	..()
@@ -126,15 +125,6 @@
 		user.loc = picked
 		return PROJECTILE_FORCE_MISS
 	return 0
-
-/obj/item/clothing/accessory/displacer/attack_self(mob/user as mob)
-	src.active = !( src.active )
-	if (src.active)
-		to_chat(user, "<span class='notice'>The displacer field is now active.</span>")
-	else
-		to_chat(user, "<span class='notice'>The displacer field is now inactive.</span>")
-		src.add_fingerprint(user)
-	return
 
 /*/obj/item/clothing/accessory/displacer/emp_act(mob/user, severity)
 	active = 0
