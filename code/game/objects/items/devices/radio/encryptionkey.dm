@@ -213,7 +213,7 @@
 /obj/item/device/encryptionkey/heads/captain
 	name = "Rogue Traders encryption key"
 	icon_state = "cap_cypherkey"
-	channels = list("Command" = 1, "Militarum" = 1)
+	channels = list("Command" = 1, "Militarum" = 1, "Secure" = 1)
 	syndie = 1
 
 //AI IS FUCKING HERESY
