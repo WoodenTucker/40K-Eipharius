@@ -891,7 +891,9 @@
 /turf/simulated/floor/ship_floor/engines,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "dB" = (
-/obj/effect/water/top,
+/obj/effect/water/top{
+	color = "blue"
+	},
 /obj/item/beartrap{
 	color = "grey";
 	deployed = 1;
@@ -4852,7 +4854,9 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "rp" = (
-/obj/effect/water/top,
+/obj/effect/water/top{
+	color = "blue"
+	},
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
@@ -5102,7 +5106,9 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "so" = (
-/obj/effect/water/top,
+/obj/effect/water/top{
+	color = "blue"
+	},
 /obj/item/beartrap{
 	color = "grey";
 	deployed = 1;
@@ -8400,7 +8406,9 @@
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "DO" = (
-/obj/effect/water/top,
+/obj/effect/water/top{
+	color = "blue"
+	},
 /obj/item/reagent_containers/food/snacks/poo,
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/oa/caves/undercity)
@@ -9505,7 +9513,9 @@
 	},
 /area/cadiaoutpost/oa/hangarpact)
 "HK" = (
-/obj/effect/water/top,
+/obj/effect/water/top{
+	color = "blue"
+	},
 /obj/item/reagent_containers/food/snacks/poo,
 /obj/item/beartrap{
 	color = "grey";
@@ -10432,7 +10442,9 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "KE" = (
-/obj/effect/water/top,
+/obj/effect/water/top{
+	color = "blue"
+	},
 /obj/effect/floor_decal/turf/necro1,
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/oa/caves/undercity)
@@ -10536,7 +10548,9 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "KY" = (
-/obj/effect/water/top,
+/obj/effect/water/top{
+	color = "blue"
+	},
 /turf/simulated/floor/dirty/indestructable/lightless,
 /area/cadiaoutpost/oa/caves/undercity)
 "La" = (
@@ -10595,7 +10609,9 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "Lo" = (
-/obj/effect/water/top,
+/obj/effect/water/top{
+	color = "blue"
+	},
 /obj/effect/floor_decal/turf/necro1,
 /obj/effect/floor_decal/turf/necro1,
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
@@ -11814,7 +11830,9 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
 "PS" = (
-/obj/effect/water/top,
+/obj/effect/water/top{
+	color = "blue"
+	},
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
@@ -12397,7 +12415,9 @@
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "Sc" = (
-/obj/effect/water/top,
+/obj/effect/water/top{
+	color = "blue"
+	},
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/oa/caves/undercity)
 "Sd" = (
