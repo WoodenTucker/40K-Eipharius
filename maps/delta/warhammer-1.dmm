@@ -891,9 +891,8 @@
 /turf/simulated/floor/ship_floor/engines,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "dB" = (
-/obj/effect/water/top{
-	color = "blue"
-	},
+/obj/effect/water/bottom,
+/obj/effect/water/top,
 /obj/item/beartrap{
 	color = "grey";
 	deployed = 1;
@@ -3661,6 +3660,11 @@
 	},
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/new_hive/caves)
+"mN" = (
+/obj/effect/water/bottom,
+/obj/effect/water/top,
+/turf/simulated/floor/exoplanet/water/shallow/lightless,
+/area/cadiaoutpost/oa/caves/undercity)
 "mO" = (
 /obj/effect/floor_decal/turf/basalt9,
 /obj/structure/shipdecor/warp,
@@ -4854,9 +4858,8 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "rp" = (
-/obj/effect/water/top{
-	color = "blue"
-	},
+/obj/effect/water/bottom,
+/obj/effect/water/top,
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
@@ -5106,9 +5109,8 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "so" = (
-/obj/effect/water/top{
-	color = "blue"
-	},
+/obj/effect/water/top,
+/obj/effect/water/bottom,
 /obj/item/beartrap{
 	color = "grey";
 	deployed = 1;
@@ -7270,6 +7272,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"zY" = (
+/obj/effect/water/bottom,
+/obj/effect/water/top,
+/turf/simulated/floor/dirty/indestructable/lightless,
+/area/cadiaoutpost/oa/caves/undercity)
 "zZ" = (
 /obj/structure/closet/hive/iron_c{
 	anchored = 1
@@ -8406,9 +8413,8 @@
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "DO" = (
-/obj/effect/water/top{
-	color = "blue"
-	},
+/obj/effect/water/bottom,
+/obj/effect/water/top,
 /obj/item/reagent_containers/food/snacks/poo,
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/oa/caves/undercity)
@@ -9513,9 +9519,8 @@
 	},
 /area/cadiaoutpost/oa/hangarpact)
 "HK" = (
-/obj/effect/water/top{
-	color = "blue"
-	},
+/obj/effect/water/bottom,
+/obj/effect/water/top,
 /obj/item/reagent_containers/food/snacks/poo,
 /obj/item/beartrap{
 	color = "grey";
@@ -10442,9 +10447,8 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "KE" = (
-/obj/effect/water/top{
-	color = "blue"
-	},
+/obj/effect/water/top,
+/obj/effect/water/bottom,
 /obj/effect/floor_decal/turf/necro1,
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/oa/caves/undercity)
@@ -10548,9 +10552,8 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "KY" = (
-/obj/effect/water/top{
-	color = "blue"
-	},
+/obj/effect/water/top,
+/obj/effect/water/bottom,
 /turf/simulated/floor/dirty/indestructable/lightless,
 /area/cadiaoutpost/oa/caves/undercity)
 "La" = (
@@ -10609,9 +10612,8 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "Lo" = (
-/obj/effect/water/top{
-	color = "blue"
-	},
+/obj/effect/water/top,
+/obj/effect/water/bottom,
 /obj/effect/floor_decal/turf/necro1,
 /obj/effect/floor_decal/turf/necro1,
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
@@ -11774,6 +11776,12 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"PF" = (
+/obj/effect/water/top,
+/obj/effect/water/bottom,
+/obj/item/reagent_containers/food/snacks/poo,
+/turf/simulated/floor/exoplanet/water/shallow/lightless,
+/area/cadiaoutpost/oa/caves/undercity)
 "PG" = (
 /obj/structure/forge,
 /obj/effect/floor_decal/turf/clockwork,
@@ -11830,9 +11838,8 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
 "PS" = (
-/obj/effect/water/top{
-	color = "blue"
-	},
+/obj/effect/water/bottom,
+/obj/effect/water/top,
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
@@ -12415,9 +12422,8 @@
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "Sc" = (
-/obj/effect/water/top{
-	color = "blue"
-	},
+/obj/effect/water/top,
+/obj/effect/water/bottom,
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/oa/caves/undercity)
 "Sd" = (
@@ -51812,7 +51818,7 @@ Sc
 Sc
 Sc
 Sc
-Sc
+mN
 Sc
 Sc
 PP
@@ -52304,7 +52310,7 @@ pB
 UO
 pB
 yx
-Sc
+mN
 Sc
 yx
 Ih
@@ -53060,7 +53066,7 @@ bh
 AM
 AM
 yx
-DO
+PF
 Sc
 yx
 Ih
@@ -54069,7 +54075,7 @@ AM
 zx
 AM
 Xk
-Sc
+mN
 yx
 Ih
 aX
@@ -54321,7 +54327,7 @@ AM
 zx
 AM
 yx
-Sc
+mN
 yx
 Ih
 Ek
@@ -54825,7 +54831,7 @@ AM
 zx
 AM
 yx
-Sc
+mN
 yx
 Ih
 mH
@@ -55077,7 +55083,7 @@ AM
 AM
 AM
 yx
-Sc
+mN
 yx
 Ih
 yx
@@ -55322,14 +55328,14 @@ bh
 wC
 bh
 nj
-KY
+zY
 bh
 bh
 AM
 AM
 AM
 yx
-Sc
+mN
 yx
 Ih
 Ih
@@ -55581,7 +55587,7 @@ AM
 AM
 AM
 yx
-Sc
+mN
 yx
 Ih
 yx
@@ -55833,7 +55839,7 @@ AM
 AM
 AM
 Xk
-Sc
+mN
 yx
 Ih
 fU
@@ -56085,7 +56091,7 @@ AM
 AM
 AM
 yx
-Sc
+mN
 yx
 Ih
 lx
@@ -56337,7 +56343,7 @@ AM
 dd
 AM
 yx
-Sc
+mN
 yx
 Ih
 nx
@@ -56589,7 +56595,7 @@ AM
 dd
 AM
 yx
-Sc
+mN
 yx
 Ih
 ab
@@ -56841,7 +56847,7 @@ AM
 dd
 AM
 ur
-Sc
+mN
 yx
 Ih
 kD
@@ -57093,7 +57099,7 @@ AM
 dd
 Fc
 HK
-Sc
+mN
 yx
 Ih
 Ih
@@ -57345,7 +57351,7 @@ AM
 dd
 AM
 yx
-Sc
+mN
 yx
 Ih
 BE
@@ -57597,7 +57603,7 @@ dd
 dd
 tk
 yx
-Sc
+mN
 yx
 Ih
 yx
@@ -57849,7 +57855,7 @@ Tc
 Tc
 Tc
 yx
-Sc
+mN
 yx
 Ih
 Ih
@@ -58101,7 +58107,7 @@ Mj
 yc
 yc
 yx
-Sc
+mN
 yx
 Ih
 yx
@@ -58353,7 +58359,7 @@ Mj
 hE
 FC
 yx
-Sc
+mN
 yx
 Ih
 yx
@@ -58605,7 +58611,7 @@ Mj
 sV
 sV
 yx
-Sc
+mN
 yx
 Ih
 Ih
@@ -58857,7 +58863,7 @@ Tc
 Tc
 Tc
 XC
-Sc
+mN
 yx
 yx
 bh
@@ -59109,19 +59115,19 @@ wr
 Tc
 AJ
 XC
-Sc
+mN
 PP
 PP
-Sc
-Sc
-Sc
+mN
+mN
+mN
 dB
-Sc
-Sc
-Sc
-Sc
-Sc
-Sc
+mN
+mN
+mN
+mN
+mN
+mN
 yx
 Ih
 dd
@@ -59364,16 +59370,16 @@ Ph
 GN
 GN
 GN
-Sc
-Sc
-Sc
-Sc
-Sc
-Sc
-Sc
-Sc
-Sc
-Sc
+mN
+mN
+mN
+mN
+mN
+mN
+mN
+mN
+mN
+mN
 PP
 Ih
 dd
