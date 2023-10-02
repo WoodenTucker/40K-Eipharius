@@ -92,7 +92,13 @@
 			var/mob/living/carbon/human/C = loc
 			C.update_inv_wear_suit()
 
-
+/obj/item/clothing/rosarius/refractor
+	name = "refractor field"
+	desc = "A handheld amulet which incorporates a powerful force field generator. A rare and highly prized piece of technology. Can be worn around the neck."
+	icon = 'icons/obj/device.dmi'
+	icon_state = "motion2"
+	w_class = ITEM_SIZE_SMALL
+	slot_flags = SLOT_TIE
 
 /obj/item/clothing/accessory/displacer
 	name = "displacer field"
