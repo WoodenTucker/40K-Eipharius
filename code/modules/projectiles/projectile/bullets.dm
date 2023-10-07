@@ -727,8 +727,6 @@
 	armor_penetration = 100
 	penetration_modifier = 5
 	
-
-/*
 /obj/item/projectile/bullet/rifle/exitus
 	name = "bullet"
 	icon_state = "bullet"
@@ -748,7 +746,7 @@
 	icon_state = "bullet"
 	damage = 25 //Admin only spawn for now.
 	damage_type = BRUTE
- // commented until no more errors
+
 /obj/item/projectile/bullet/rifle/exitus/explosive/on_hit(var/atom/target)
 	if(istype(target, /mob/living/carbon/human))
 	var/mob/living/carbon/human/M = target
@@ -772,4 +770,4 @@
 		if(H.isChild())
 			var/mob/living/carbon/human/F = firer
 			F.unlock_achievement(new/datum/achievement/child_fire())
-*/
+
