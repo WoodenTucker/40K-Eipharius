@@ -504,3 +504,12 @@
 	canremove = 0
 	flags_inv = HIDEEARS|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EYES
+
+/obj/item/clothing/head/helmet/colonel
+	name = "Colonel's Cap"
+	desc = "A protective cap worn by an Imperial Guard Colonel."
+	icon_state = "hoscap"
+	armor = list(melee = 80, bullet = 80, laser = 80, energy = 80, bomb = 80, bio = 100, rad = 100) //Event only.
+	siemens_coefficient = 0
+	flags_inv = BLOCKHAIR
+	body_parts_covered = HEAD|FACE|EYES //For reasons.
