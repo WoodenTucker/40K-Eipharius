@@ -347,14 +347,13 @@
 
 
 
-/*
-/obj/item/gun/projectile/exitus
+/obj/item/gun/projectile/exitus //Don't disable this, it's an admin sniper.
 	name = "Exitus Sniper Rifle"
 	desc = "The Exitus Rifle is a specialised projectile rifle used exclusively by the Imperial Assassins of the Officio Assassinorum's Vindicare Temple. It is purpose-built for each individual Vindicare sniper."
 	icon_state = "slayersniper"
 	item_state = "slayersniper"
 	w_class = ITEM_SIZE_HUGE
-	force = 10 //give it to the assfartes for the funny.
+	force = 10
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 2, TECH_ILLEGAL = 8)
 	caliber = "exitus"
@@ -391,4 +390,3 @@
 	set popup_menu = 1
 
 	toggle_scope(usr, 4)
-*/

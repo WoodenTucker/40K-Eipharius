@@ -854,6 +854,19 @@ obj/item/clothing/suit/armor
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.2
 
+/obj/item/clothing/suit/armor/colonel
+	name = "Colonel's Jacket"
+	desc = "A distive formal jacket worn by Colonels of the Imperial Guard, this one has had carapace and armourplas plates subtly integrated into it."
+	icon_state = "wardentanjacket"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun)
+	armor = list(melee = 80, bullet = 80, laser = 80, energy = 80, bomb = 80, bio = 80, rad = 80) //Special admin event armour, shouldn't be used in normal fighting.
+	sales_price = 0 //Event armour
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+/obj/item/clothing/suit/armor/colonel/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.1
+
 /obj/item/clothing/suit/armor/scion
 	name = "Tempestus Scion's Carapace Armour"
 	desc = "The black carapace body armor of the Tempestus Scion, this one has scorch marks and nicks covering it like a mural of carnage."
