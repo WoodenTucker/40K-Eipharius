@@ -18,14 +18,14 @@
 							/datum/heretic_effect/strength)
 
 	inherent_verbs = list(
-			/mob/living/carbon/human/proc/bludforbludguy,
-			/mob/living/carbon/human/proc/letriverflow,
+		//	/mob/living/carbon/human/proc/bludforbludguy,
+	//		/mob/living/carbon/human/proc/letriverflow,
 			/mob/living/carbon/human/proc/moving,
 			/mob/living/carbon/human/proc/overthere,
-			/mob/living/carbon/human/proc/praynslay,
+	//		/mob/living/carbon/human/proc/praynslay,
 			/mob/living/carbon/human/proc/chaaaaaarge,
-			/mob/living/carbon/human/proc/chopdem,
-			/mob/living/carbon/human/proc/bringdeath,
+	//		/mob/living/carbon/human/proc/chopdem,
+	//		/mob/living/carbon/human/proc/bringdeath,
 			/mob/living/carbon/human/proc/advance,
 			/mob/living/carbon/human/proc/aaaaaa,
 			/mob/living/carbon/human/proc/getmanualkhorne,

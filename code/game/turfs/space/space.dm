@@ -10,7 +10,7 @@
 	var/static/list/dust_cache
 
 /turf/space/New()
-	icon_state = "white"
+	icon_state = "fake"
 
 /turf/space/proc/build_dust_cache()
 	LAZYINITLIST(dust_cache)
@@ -226,3 +226,7 @@
 /turf/space/bluespace
 	name = "bluespace"
 	icon_state = "bluespace"
+
+/turf/space/Crossed(var/mob/living/carbon/human/M)
+	if(istype(M))
+		M.gib()

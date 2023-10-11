@@ -319,6 +319,8 @@
 	temperature = TCMB
 
 /turf/simulated/floor/airless
+	icon = 'icons/turf/space.dmi'
+	icon_state = "fake"
 	name = "airless plating"
 	initial_gas = null
 	temperature = TCMB
