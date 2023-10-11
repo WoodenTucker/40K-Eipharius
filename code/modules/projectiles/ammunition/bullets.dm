@@ -479,7 +479,7 @@
 	spent_icon = "fshell-spent"
 	caliber = "rad"
 	projectile_type = /obj/item/projectile/bullet/rifle/radcarbine/radpistol
-/* // commented out until the error is fixed
+
 /obj/item/ammo_casing/exitus
 	name = "exitus shell casing"
 	desc = "An exitus rifle shell."
@@ -515,4 +515,3 @@
 	caliber = "exitus"
 	projectile_type = /obj/item/projectile/bullet/rifle/exitus/fire
 	matter = list(DEFAULT_WALL_MATERIAL = 1250)
-*/
