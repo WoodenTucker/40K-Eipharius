@@ -61,7 +61,7 @@
 		if(check_collision(base_area, list_values(translation)))
 			return FALSE
 	return TRUE
-
+/*
 /proc/check_collision(area/target_area, list/target_turfs)
 	for(var/target_turf in target_turfs)
 		var/turf/target = target_turf
@@ -70,7 +70,7 @@
 			return TRUE //dense turf
 	return FALSE
 
-	/*	if(!target)
+		if(!target)
 			message_admins("Edge of map")
 			return TRUE //collides with edge of map
 

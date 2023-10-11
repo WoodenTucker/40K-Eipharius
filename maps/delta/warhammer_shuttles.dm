@@ -52,7 +52,7 @@
 	warmup_time = 10
 	waypoint_station = "magos_start"
 	waypoint_offsite = "magos_end"
-	shuttle_area = /area/cadiaoutpost/oa/shuttle/governor
+	shuttle_area = /area/cadiaoutpost/oa/shuttle/magos
 
 /obj/effect/shuttle_landmark/ferry/magos_end
 	name = "landing pad"
