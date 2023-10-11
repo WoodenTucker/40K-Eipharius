@@ -1,13 +1,4 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"aac" = (
-/obj/effect/floor_decal/industrial/warning_red{
-	icon_state = "warningcorner_red";
-	dir = 8
-	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "aaE" = (
 /obj/effect/water/bottom{
 	color = "blue"
@@ -503,18 +494,6 @@
 	dir = 6
 	},
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
-"aCP" = (
-/obj/machinery/door/unpowered/inn{
-	name = "Inquisitor Quarters"
-	},
-/obj/machinery/door/blast/bordergatec/closed{
-	health = 10000;
-	id = "inq1";
-	maxhealth = 10000;
-	name = "INQUISITION"
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "aDi" = (
 /obj/effect/floor_decal/newcorner/red{
 	dir = 4
@@ -550,20 +529,6 @@
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/caves/dark)
-"aFH" = (
-/obj/effect/floor_decal/spline/fancy/wood,
-/obj/machinery/computer/shuttle_control/ferry/inquisition{
-	req_one_access = list(302)
-	},
-/obj/structure/window/reinforced{
-	dir = 1;
-	icon_state = "rwindow";
-	maxhealth = 4000
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "aFM" = (
 /obj/structure/sign/chaos{
 	pixel_x = 32
@@ -769,14 +734,6 @@
 "aQp" = (
 /turf/simulated/floor/stone/ancient_stone_old,
 /area/cadiaoutpost/new_hive/caves)
-"aQy" = (
-/obj/effect/floor_decal/industrial/warning_red{
-	dir = 4
-	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "aQW" = (
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/farm)
@@ -922,14 +879,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"aYR" = (
-/obj/effect/floor_decal/spline/fancy/wood/cee,
-/obj/effect/floor_decal/spline/plain,
-/obj/effect/floor_decal/newcorner/step_i,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "aYX" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 9
@@ -1431,14 +1380,6 @@
 /obj/effect/floor_decal/industrial/outline/red,
 /turf/simulated/floor/darksteel_floor,
 /area/cadiaoutpost/oa/magistratumpost)
-"bsM" = (
-/obj/structure/bed/chair{
-	dir = 8
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "btV" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 10;
@@ -1821,21 +1762,6 @@
 "bNq" = (
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"bOz" = (
-/obj/structure/bed/chair/wood{
-	dir = 1;
-	icon_state = "wooden_chair_preview"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
-"bPf" = (
-/obj/structure/table/steel_reinforced,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "bPU" = (
 /obj/structure/bed/roller,
 /obj/effect/decal/cleanable/blood/gibs,
@@ -1945,13 +1871,6 @@
 	},
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"bTL" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/storage/toolbox/syndicate,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "bUt" = (
 /obj/machinery/door/airlock/cone{
 	maxhealth = 3000;
@@ -2291,17 +2210,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/inn)
-"ckN" = (
-/obj/structure/table/rack,
-/obj/effect/floor_decal/newcorner/red/solid,
-/obj/item/toothpuller,
-/obj/item/toothpuller,
-/obj/item/halter,
-/obj/item/storage/briefcase/crimekit,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "cla" = (
 /obj/item/card/id/key/super/newmap/hab1,
 /turf/simulated/floor/seolite,
@@ -2629,17 +2537,6 @@
 /obj/random/loot/guardgear,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"cyT" = (
-/obj/effect/floor_decal/newcorner/shaft{
-	dir = 4
-	},
-/obj/effect/floor_decal/spline/plain{
-	dir = 4
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "czS" = (
 /obj/structure/closet/crate{
 	pixel_x = 2
@@ -2692,20 +2589,6 @@
 "cCn" = (
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/magistratumpost)
-"cCC" = (
-/obj/effect/floor_decal/newcorner/shaft,
-/obj/effect/floor_decal/spline/plain,
-/obj/machinery/power/terminal{
-	dir = 4;
-	icon_state = "term"
-	},
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "cCW" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/surgicaldrill,
@@ -2794,22 +2677,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"cIv" = (
-/obj/effect/floor_decal/newcorner/shaft/quarter{
-	dir = 1
-	},
-/obj/effect/floor_decal/spline/plain{
-	dir = 9
-	},
-/obj/structure/window/reinforced{
-	dir = 1;
-	icon_state = "rwindow";
-	maxhealth = 4000
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "cIy" = (
 /obj/random/loot/randomarmor,
 /obj/structure/table/rack/dark,
@@ -2898,13 +2765,6 @@
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/villageinside/lab)
-"cMV" = (
-/obj/structure/sign/imperial,
-/turf/simulated/shuttle/wall{
-	color = "grey";
-	icon_state = "wall3"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "cNg" = (
 /obj/item/modular_computer/console/preset/command,
 /turf/simulated/floor/fancyfloor/carpet/grey{
@@ -3194,31 +3054,6 @@
 /obj/item/device/boombox,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
-"cZi" = (
-/obj/effect/floor_decal/newcorner/shaft{
-	dir = 4
-	},
-/obj/effect/floor_decal/spline/plain{
-	dir = 4
-	},
-/obj/machinery/light/spot{
-	dir = 4;
-	icon_state = "tube1"
-	},
-/obj/machinery/power/apc{
-	dir = 4;
-	icon_state = "apc0";
-	pixel_x = 32;
-	pixel_y = 0
-	},
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/structure/closet/firecloset/full,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "cZy" = (
 /obj/structure/railing{
 	dir = 4;
@@ -3317,29 +3152,6 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
-"dek" = (
-/obj/effect/floor_decal/newcorner/shaft/quarter{
-	dir = 1
-	},
-/obj/effect/floor_decal/spline/plain{
-	dir = 9
-	},
-/obj/structure/table/steel_reinforced,
-/obj/item/paper_bin,
-/obj/item/pen,
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
-	},
-/obj/structure/window/reinforced{
-	dir = 1;
-	icon_state = "rwindow";
-	maxhealth = 4000
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "deK" = (
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/tiled/dark{
@@ -3408,14 +3220,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"djb" = (
-/obj/structure/shuttle/engine/propulsion{
-	color = "grey";
-	dir = 4;
-	icon_state = "propulsion"
-	},
-/turf/simulated/floor,
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "djk" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/statue/verina/broken{
@@ -3762,29 +3566,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"dBd" = (
-/obj/structure/closet/hive/iron_c{
-	anchored = 1
-	},
-/obj/item/card/id/key/grand/inq{
-	access = list(5,63,333,331,230,211,202,302,10,2,1984)
-	},
-/obj/item/clothing/shoes/jackboots/inquisitor,
-/obj/item/clothing/suit/inquisitor,
-/obj/item/clothing/under/inquisitor,
-/obj/item/clothing/head/inquisitor,
-/obj/item/clothing/gloves/thick/swat/combat,
-/obj/random/loot/randomitemtown,
-/obj/random/loot/randomitemtown,
-/obj/random/loot/randomsupply,
-/obj/random/loot/randomsupply,
-/obj/random/loot/randomitemcaves,
-/obj/random/loot/sidearms,
-/obj/random/loot/meleespawner,
-/obj/random/loot/tech2,
-/obj/random/loot/guardgear,
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "dBg" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 5
@@ -3819,18 +3600,6 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
-"dDp" = (
-/obj/item/clothing/suit/storage/hooded/inquisitor,
-/obj/structure/closet/hive/iron_c{
-	anchored = 1
-	},
-/obj/item/clothing/suit/armor/ordohereticus,
-/obj/item/clothing/head/ordohereticus,
-/obj/item/cane/concealed,
-/obj/item/clothing/mask/gas/security/agent,
-/obj/item/clothing/accessory/holster,
-/turf/simulated/floor/darkwood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "dDz" = (
 /obj/structure/table/rack/dark,
@@ -4061,15 +3830,6 @@
 	},
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/hallway/centralhall)
-"dPJ" = (
-/obj/effect/floor_decal/industrial/warning_red{
-	icon_state = "warningcorner_red";
-	dir = 1
-	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "dPN" = (
 /obj/item/stamp/ward,
 /obj/item/stamp/denied{
@@ -4094,27 +3854,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
-"dQB" = (
-/obj/item/pen/multi{
-	pixel_y = 2
-	},
-/obj/item/paper_bin{
-	pixel_y = 8
-	},
-/obj/structure/table/graf/wood_office_table{
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
-/obj/machinery/button/remote/blast_door/lever{
-	id = "inq1";
-	name = "EXIT LEVER";
-	pixel_x = -32
-	},
-/obj/item/gun/energy/pulse/plasma/pistol/toaster,
-/obj/item/clothing/ring/HotshotDigital,
-/obj/item/clothing/ring/PowerBlade,
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "dQD" = (
 /obj/structure/statue/column,
 /turf/simulated/floor/dirty/tough,
@@ -4350,17 +4089,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/armory)
-"eaT" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 6
-	},
-/obj/structure/handrai{
-	dir = 1
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "ebk" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 8;
@@ -4375,18 +4103,6 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"edo" = (
-/obj/structure/table/steel_reinforced,
-/obj/machinery/button/remote/blast_door/id_scan{
-	id = "arvusrampdoor";
-	pixel_x = -5;
-	pixel_y = 0;
-	req_access = list(302)
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "eet" = (
 /obj/structure/stairs/north,
 /turf/simulated/floor/factory_floor,
@@ -4426,6 +4142,10 @@
 /obj/item/pickaxe/newpick,
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/villageinside/lab)
+"egU" = (
+/obj/structure/closet/crate/freezer/rations,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/magistratumpost)
 "eht" = (
 /obj/machinery/shower{
 	dir = 8;
@@ -4483,14 +4203,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
-"eiX" = (
-/obj/effect/floor_decal/industrial/warning_red{
-	dir = 8
-	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "ejg" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/plating,
@@ -4575,23 +4287,6 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
-"emX" = (
-/obj/effect/floor_decal/spline/fancy/wood/corner{
-	dir = 8
-	},
-/obj/structure/table/steel_reinforced,
-/obj/effect/floor_decal/spline/plain{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 1;
-	icon_state = "rwindow";
-	maxhealth = 4000
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "enm" = (
 /obj/effect/floor_decal/turf/metal,
 /obj/structure/bed{
@@ -4667,22 +4362,6 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/security/armory)
-"eqo" = (
-/obj/effect/floor_decal/newcorner/shaft/quarter{
-	dir = 8
-	},
-/obj/effect/floor_decal/spline/plain{
-	dir = 6
-	},
-/obj/structure/fuel_port{
-	pixel_x = 32
-	},
-/obj/structure/cable,
-/obj/machinery/power/smes/buildable/max_cap_in_out,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "eqE" = (
 /obj/effect/floor_decal/newcorner/nbar{
 	dir = 8
@@ -4969,19 +4648,6 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"eDr" = (
-/obj/effect/floor_decal/newcorner/red{
-	dir = 8
-	},
-/obj/machinery/photocopier,
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "eEo" = (
 /obj/machinery/light/small{
 	dir = 8;
@@ -5088,17 +4754,6 @@
 	},
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/caves)
-"eHP" = (
-/obj/machinery/door/airlock/hatch/simiel{
-	name = "Captain's Quarters";
-	req_access = list(302)
-	},
-/obj/effect/floor_decal/turf/splate,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "dark1"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "eHT" = (
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 4
@@ -5205,14 +4860,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/inn)
-"eNa" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 8
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "eNk" = (
 /turf/simulated/floor/ship_floor/engines{
 	dir = 8
@@ -5322,24 +4969,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
-"eTC" = (
-/obj/effect/wingrille_spawn/reinforced,
-/obj/machinery/door/blast/id_door/open{
-	id = "inquisitorshipwindows";
-	name = "Vessel Lockdown"
-	},
-/obj/effect/wingrille_spawn/reinforced,
-/obj/effect/wingrille_spawn/reinforced,
-/obj/structure/window/reinforced{
-	dir = 1;
-	icon_state = "rwindow";
-	maxhealth = 4000
-	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "dark1"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "eTP" = (
 /obj/effect/floor_decal/turf/metal/eight,
 /obj/effect/decal/cleanable/blood,
@@ -5414,14 +5043,6 @@
 /obj/machinery/light,
 /turf/simulated/floor/ceramic/surgery2,
 /area/cadiaoutpost/oa/security/armory)
-"eVd" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 4
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "eVi" = (
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -5728,21 +5349,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/security/armory)
-"fiF" = (
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/obj/structure/closet/crate/freezer/rations,
-/obj/item/reagent_containers/food/drinks/cans/waterbottle,
-/obj/item/reagent_containers/food/drinks/cans/waterbottle,
-/obj/item/reagent_containers/food/drinks/cans/waterbottle,
-/obj/item/reagent_containers/food/drinks/cans/waterbottle,
-/obj/item/reagent_containers/food/drinks/cans/waterbottle,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "fiI" = (
 /obj/structure/torchwall/service{
 	dir = 4;
@@ -6379,14 +5985,6 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"fKq" = (
-/obj/effect/floor_decal/industrial/warning_red{
-	dir = 10
-	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "fKI" = (
 /obj/structure/closet/crate,
 /obj/random/exploration,
@@ -6884,21 +6482,6 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"glG" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/effect/floor_decal/newcorner/red{
-	dir = 4
-	},
-/obj/machinery/microscope{
-	desc = "A highly advanced optical scanner capable of zooming up to 3000x.";
-	name = "high powered electronic-optical augury"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "glJ" = (
 /obj/effect/floor_decal/industrial/warning_red,
 /obj/machinery/light/small/red{
@@ -6970,15 +6553,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/armory)
-"goi" = (
-/obj/structure/bed/chair/wood{
-	dir = 4;
-	icon_state = "wooden_chair_preview"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "goI" = (
 /obj/effect/water/bottom{
 	color = "purple"
@@ -7052,19 +6626,6 @@
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
-"grI" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 8
-	},
-/obj/structure/table/steel_reinforced,
-/obj/item/cell/apc,
-/obj/effect/floor_decal/spline/plain{
-	dir = 4
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "gsn" = (
 /obj/structure/torchwall/service{
 	dir = 4;
@@ -7128,13 +6689,6 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/centralhall)
-"gvi" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/material/kitchen/utensil/knife/boot,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "gvm" = (
 /obj/structure/hivedecor/statue8,
 /turf/simulated/floor/factory_floor{
@@ -7518,16 +7072,6 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
-"gMw" = (
-/obj/structure/closet/cabinet{
-	color = "grey"
-	},
-/obj/machinery/light,
-/obj/effect/floor_decal/newcorner/red/solid,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "gNf" = (
 /obj/effect/landmark/corpse/guard,
 /turf/simulated/floor/stone,
@@ -7572,30 +7116,12 @@
 	dir = 6
 	},
 /area/cadiaoutpost/new_hive/caves)
-"gON" = (
-/obj/machinery/door/airlock/highsecurity/imperiumdoor{
-	maxhealth = 15000;
-	name = "Strong Imperialis Doorway - Locked";
-	req_access = list(333)
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "gPb" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 1
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/armory)
-"gPi" = (
-/obj/effect/floor_decal/spline/fancy/wood,
-/obj/machinery/light,
-/obj/structure/sign/inkvd/two{
-	pixel_y = -30
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "gPr" = (
 /obj/machinery/recharger,
 /obj/item/defibrillator/compact/loaded,
@@ -8010,14 +7536,6 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
-"him" = (
-/obj/structure/table/rack,
-/obj/effect/floor_decal/newcorner/red/solid,
-/obj/random/drinkbottle,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "hiv" = (
 /obj/effect/decal/cleanable/cobweb,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -8072,13 +7590,6 @@
 	},
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/oa/security/armory)
-"hkT" = (
-/obj/machinery/light/small{
-	dir = 1;
-	icon_state = "bulb1"
-	},
-/turf/simulated/floor/greengrid,
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "hkY" = (
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -8111,13 +7622,6 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
-"hlF" = (
-/obj/effect/floor_decal/newcorner/shaft,
-/obj/effect/floor_decal/spline/plain,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "hlT" = (
 /obj/structure/table/rack/dark,
 /obj/random/loot/randomammosidearm,
@@ -8625,16 +8129,6 @@
 "hNc" = (
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/magistratumpost)
-"hNl" = (
-/obj/machinery/door/blast/id_door/open{
-	begins_closed = 1;
-	id = "arvusrampdoor"
-	},
-/turf/simulated/floor/tiled/ramp{
-	dir = 1;
-	icon_state = "ramptop"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "hNm" = (
 /obj/structure/catwalkrust/blocked,
 /obj/machinery/light/small/red,
@@ -8749,21 +8243,6 @@
 	},
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/villageinside/lab)
-"hQA" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/effect/floor_decal/newcorner/red{
-	dir = 4
-	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 30
-	},
-/obj/item/extinguisher/mini,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "hQD" = (
 /obj/structure/toilet{
 	dir = 4
@@ -8794,25 +8273,15 @@
 /area/cadiaoutpost/new_hive/caves)
 "hRl" = (
 /obj/structure/table/rack/dark,
-/obj/random/loot/heavymelee,
-/obj/random/loot/heavymelee,
 /obj/effect/floor_decal/industrial/outline/red,
+/obj/random/loot/meleespawner,
+/obj/random/loot/meleespawner,
+/obj/random/loot/meleespawner,
+/obj/random/loot/meleespawner,
 /turf/simulated/floor/darksteel_floor{
 	dir = 4
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"hRN" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 8
-	},
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "hSs" = (
 /obj/structure/table/rack/shelf{
 	color = "grey"
@@ -9101,15 +8570,6 @@
 	},
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"igF" = (
-/obj/effect/floor_decal/newcorner/red/quarter{
-	dir = 1
-	},
-/obj/machinery/papershredder,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "iho" = (
 /obj/structure/hivedecor/sarcofagus,
 /obj/structure/sign/plate/written{
@@ -9176,13 +8636,6 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/new_hive/caves)
-"ijm" = (
-/obj/effect/floor_decal/spline/fancy/wood,
-/obj/effect/floor_decal/spline/fancy/wood,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "iju" = (
 /obj/machinery/light/small/red{
 	dir = 8;
@@ -9398,15 +8851,6 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/armory)
-"iqw" = (
-/obj/effect/floor_decal/industrial/warning_red{
-	dir = 4;
-	icon_state = "warningcorner_red"
-	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "irU" = (
 /obj/structure/closet/secure_closet/brig,
 /obj/item/clothing/shoes/orange,
@@ -9428,16 +8872,6 @@
 	dir = 6
 	},
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
-"itA" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/effect/floor_decal/newcorner/red,
-/obj/item/reagent_containers/food/drinks/bottle/holywater,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "iui" = (
 /obj/structure/table/steel_reinforced,
 /obj/random/loot/randomammo1,
@@ -9705,19 +9139,6 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"iGI" = (
-/obj/effect/floor_decal/newcorner/shaft,
-/obj/effect/floor_decal/spline/plain,
-/obj/structure/handrai{
-	dir = 1
-	},
-/obj/machinery/telecomms/bus{
-	color = "grey"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "iGV" = (
 /turf/simulated/wall/stone,
 /area/cadiaoutpost/new_hive/caves)
@@ -11579,15 +11000,6 @@
 /obj/item/reagent_containers/food/drinks/bottle/gin,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/hallway/centralhall)
-"kpj" = (
-/obj/structure/closet/cabinet{
-	color = "grey"
-	},
-/obj/effect/floor_decal/newcorner/red/solid,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "kpo" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/standard{
@@ -11654,15 +11066,6 @@
 /mob/living/simple_animal/hostile/retaliate/rat,
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/new_hive/caves)
-"ksh" = (
-/obj/effect/floor_decal/newcorner/shaft/quarter{
-	dir = 1
-	},
-/obj/effect/floor_decal/newcorner/red/corner,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "ksC" = (
 /obj/effect/landmark/start/village{
 	name = "Imperial Citizen"
@@ -11859,21 +11262,6 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"kCE" = (
-/obj/effect/floor_decal/spline/fancy/wood/corner,
-/obj/structure/table/steel_reinforced,
-/obj/effect/floor_decal/spline/plain{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 1;
-	icon_state = "rwindow";
-	maxhealth = 4000
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "kCF" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/device/healthanalyzer,
@@ -11962,12 +11350,6 @@
 "kGm" = (
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/new_hive/caves)
-"kGE" = (
-/obj/structure/bed/chair/office/light{
-	dir = 1
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "kGP" = (
 /obj/item/storage/firstaid/surgery,
 /obj/effect/floor_decal/newcorner/blue/solid,
@@ -12011,26 +11393,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
-"kHL" = (
-/obj/machinery/button/remote/blast_door/lever{
-	id = "inquisitorshipwindows";
-	name = "Vessel Lockdown";
-	pixel_y = 32
-	},
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 1
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "kIj" = (
 /obj/structure/bed/barrack,
 /obj/structure/bed/barrack1,
@@ -12462,14 +11824,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"lbl" = (
-/obj/effect/floor_decal/industrial/warning_red{
-	dir = 5
-	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "lbn" = (
 /obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
@@ -12507,14 +11861,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"lcl" = (
-/obj/effect/wingrille_spawn/reinforced,
-/obj/effect/wingrille_spawn/reinforced,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "dark1"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "ldc" = (
 /obj/structure/table/rack,
 /obj/item/gun/energy/las/lasgun{
@@ -12591,17 +11937,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/armory)
-"lgI" = (
-/obj/machinery/door/airlock/hatch/simiel{
-	name = "Storage";
-	req_access = list(302)
-	},
-/obj/effect/floor_decal/turf/splate,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "dark1"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "lgW" = (
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/centralhall)
@@ -12912,17 +12247,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/inn)
-"lxG" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 1
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "lAH" = (
 /obj/item/storage/fancy/cigarettes/dromedaryco,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -12933,17 +12257,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/armory)
-"lBc" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 10
-	},
-/obj/structure/handrai{
-	dir = 1
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "lBp" = (
 /obj/structure/warfare/barricade/concrete_barrier{
 	dir = 4
@@ -13093,18 +12406,6 @@
 	icon_state = "r_window"
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
-"lGg" = (
-/obj/effect/floor_decal/newcorner/shaft{
-	dir = 8
-	},
-/obj/effect/floor_decal/spline/plain{
-	dir = 8
-	},
-/obj/structure/table/steel_reinforced,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "lGp" = (
 /obj/effect/decal/cleanable/cobweb2{
 	dir = 1
@@ -13211,17 +12512,6 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"lNw" = (
-/obj/machinery/door/airlock/hatch/simiel{
-	name = "Bridge";
-	req_access = list()
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/effect/floor_decal/turf/splate,
-/turf/simulated/floor/plating/reinforced,
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "lNx" = (
 /obj/item/toothpuller,
 /obj/item/toothpuller{
@@ -13506,12 +12796,6 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/security/armory)
-"man" = (
-/turf/simulated/shuttle/wall{
-	color = "grey";
-	icon_state = "wall3"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "mar" = (
 /obj/item/stack/material/sandstone{
 	desc = "What ? You dont recognize your beloved Cadia anymore ?";
@@ -13700,14 +12984,6 @@
 /obj/structure/grille/iron_fence,
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"miQ" = (
-/obj/effect/floor_decal/industrial/warning_red{
-	dir = 6
-	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "miZ" = (
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/oa/hallway/centralhall)
@@ -14082,17 +13358,6 @@
 /obj/structure/ladder/up,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/caves)
-"mEu" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/effect/floor_decal/newcorner/red/quarter,
-/obj/item/paper_bin,
-/obj/item/pen,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "mFa" = (
 /obj/machinery/light/small/red{
 	dir = 8;
@@ -14302,17 +13567,6 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"mPK" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/device/flashlight/lantern,
-/obj/item/device/flashlight/lantern,
-/obj/item/device/flashlight/lantern,
-/obj/item/device/flashlight/lantern,
-/obj/item/device/flashlight/lantern,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "mPP" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 6
@@ -14707,19 +13961,6 @@
 	},
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
-"njq" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/effect/floor_decal/newcorner/red/quarter{
-	dir = 8
-	},
-/obj/machinery/light,
-/obj/machinery/photocopier/faxmachine,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "njM" = (
 /obj/structure/closet/crate,
 /obj/item/clothing/head/culthood/magus{
@@ -14772,22 +14013,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/villageinside/lab)
-"nlZ" = (
-/obj/effect/floor_decal/newcorner/shaft,
-/obj/effect/floor_decal/spline/plain,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/handrai{
-	dir = 1
-	},
-/obj/machinery/telecomms/processor{
-	color = "grey"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "nma" = (
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/farm)
@@ -14895,23 +14120,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
-"npV" = (
-/obj/effect/floor_decal/newcorner/shaft/quarter{
-	dir = 4
-	},
-/obj/effect/floor_decal/spline/plain{
-	dir = 5
-	},
-/obj/structure/filingcabinet,
-/obj/structure/window/reinforced{
-	dir = 1;
-	icon_state = "rwindow";
-	maxhealth = 4000
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "nqn" = (
 /obj/structure/toilet{
 	dir = 8;
@@ -15707,15 +14915,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"nXv" = (
-/obj/structure/torchwall/service{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "nXM" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -15944,18 +15143,6 @@
 "ojM" = (
 /turf/simulated/wall/ancient,
 /area/cadiaoutpost/oa/magistratumpost)
-"ojP" = (
-/obj/machinery/button/remote/blast_door/id_scan{
-	id = "arvusrampdoor";
-	pixel_x = -5;
-	pixel_y = 0;
-	req_access = list(302)
-	},
-/turf/simulated/shuttle/wall{
-	color = "grey";
-	icon_state = "wall3"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "okE" = (
 /obj/machinery/light/red{
 	dir = 4
@@ -16023,8 +15210,6 @@
 	dir = 6;
 	icon_state = "spline_plain"
 	},
-/obj/item/clothing/head/helmet/scion,
-/obj/item/clothing/suit/armor/scion,
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/tiled{
 	color = "grey";
@@ -16050,29 +15235,6 @@
 	icon_state = "dark1"
 	},
 /area/cadiaoutpost/new_hive/caves)
-"onc" = (
-/obj/effect/floor_decal/newcorner/shaft/quarter{
-	dir = 4
-	},
-/obj/effect/floor_decal/spline/plain{
-	dir = 5
-	},
-/obj/structure/table/steel_reinforced,
-/obj/item/paper_bin,
-/obj/item/pen,
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
-	},
-/obj/structure/window/reinforced{
-	dir = 1;
-	icon_state = "rwindow";
-	maxhealth = 4000
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "onx" = (
 /obj/machinery/door/airlock/glass,
 /turf/simulated/floor/factory_floor{
@@ -16261,22 +15423,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
-"ouv" = (
-/obj/effect/floor_decal/newcorner/shaft{
-	dir = 8
-	},
-/obj/effect/floor_decal/spline/plain{
-	dir = 8
-	},
-/obj/machinery/light/spot{
-	dir = 8;
-	icon_state = "tube1"
-	},
-/obj/machinery/suit_cycler,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "ouy" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/turf/lfloorscorched1,
@@ -16597,18 +15743,6 @@
 	},
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
-"oIV" = (
-/obj/effect/floor_decal/newcorner/shaft/corner{
-	dir = 4
-	},
-/obj/structure/bed/chair/comfy/black{
-	dir = 4;
-	icon_state = "comfychair_preview"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "oIY" = (
 /obj/machinery/light/small/red{
 	dir = 8;
@@ -16644,18 +15778,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"oLz" = (
-/obj/effect/floor_decal/spline/fancy/wood/cee{
-	dir = 1
-	},
-/obj/structure/bed/chair/comfy/captain{
-	dir = 1;
-	icon_state = "capchair_preview"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "oLA" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 1
@@ -16678,16 +15800,6 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/magistratumpost)
-"oMN" = (
-/obj/effect/floor_decal/newcorner/shaft/quarter,
-/obj/effect/floor_decal/spline/plain{
-	dir = 10
-	},
-/obj/machinery/suit_cycler,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "oMR" = (
 /obj/effect/floor_decal/newcorner/stone,
 /turf/simulated/floor/stone/chapel,
@@ -16871,15 +15983,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/service/inn)
-"oXh" = (
-/obj/machinery/door/airlock/hatch/simiel{
-	name = "Storage";
-	req_access = list(302)
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "oXL" = (
 /obj/effect/floor_decal/newcorner/red/corner{
 	dir = 4
@@ -17122,11 +16225,6 @@
 	},
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
-"phu" = (
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "phz" = (
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/new_hive/caves)
@@ -17159,18 +16257,6 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
-"piS" = (
-/obj/effect/floor_decal/newcorner/shaft/quarter{
-	dir = 1
-	},
-/obj/effect/floor_decal/spline/plain{
-	dir = 9
-	},
-/obj/structure/table/steel_reinforced,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "pji" = (
 /obj/structure/torchwall/service{
 	pixel_y = 32
@@ -17491,12 +16577,6 @@
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/villageinside/lab)
-"pAD" = (
-/obj/effect/floor_decal/turf/splate,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "pAT" = (
 /obj/machinery/light/purple,
 /obj/effect/floor_decal/newcorner/plating{
@@ -17836,14 +16916,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
-"pLK" = (
-/obj/effect/floor_decal/newcorner/shaft,
-/obj/effect/floor_decal/spline/plain,
-/obj/machinery/light/spot,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "pLS" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/mark,
@@ -17974,19 +17046,6 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
-"pRn" = (
-/obj/effect/floor_decal/newcorner/shaft/quarter{
-	dir = 4
-	},
-/obj/effect/floor_decal/spline/plain{
-	dir = 5
-	},
-/obj/structure/table/steel_reinforced,
-/obj/item/archaeological_find/instrument,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "pSi" = (
 /obj/structure/table/rack/shelf,
 /turf/simulated/floor/reinforced,
@@ -18205,13 +17264,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/armory)
-"qdT" = (
-/obj/effect/floor_decal/newcorner/red/solid,
-/obj/structure/closet/secure_closet/guncabinet,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "qdV" = (
 /obj/effect/floor_decal/newcorner/plating/quarter{
 	dir = 8
@@ -18237,39 +17289,9 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"qeB" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/effect/floor_decal/newcorner/red,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "qeC" = (
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/caves/dark)
-"qfq" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 1
-	},
-/obj/structure/extinguisher_cabinet{
-	pixel_y = 30
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
-"qfK" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 5
-	},
-/obj/structure/handrai,
-/obj/structure/closet/crate/miner,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "qfU" = (
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/security/armory)
@@ -18597,14 +17619,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/service/inn)
-"qtM" = (
-/obj/structure/flora/pottedplant{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "plant";
-	dir = 1
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "qtX" = (
 /obj/item/device/cassette/orks1,
 /turf/simulated/floor/trench,
@@ -18637,12 +17651,6 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/security/armory)
-"qxK" = (
-/obj/effect/floor_decal/spline/fancy/wood,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "qxO" = (
 /obj/item/reagent_containers/glass/beaker/large,
 /obj/structure/table/graf/big_wood_table,
@@ -19265,15 +18273,6 @@
 "qWh" = (
 /turf/simulated/wall/stone,
 /area/cadiaoutpost/oa/farm)
-"qWC" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 8
-	},
-/obj/machinery/media/jukebox,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "qWO" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 1
@@ -19297,17 +18296,6 @@
 	},
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/new_hive/caves)
-"qYN" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 1
-	},
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "qYQ" = (
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -19461,18 +18449,6 @@
 	icon_state = "dark1"
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"rbP" = (
-/obj/effect/floor_decal/newcorner/shaft/corner{
-	dir = 8
-	},
-/obj/structure/bed/chair/comfy/black{
-	dir = 8;
-	icon_state = "comfychair_preview"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "rbQ" = (
 /obj/structure/table/graf/rusty_table,
 /turf/unsimulated/floor{
@@ -19638,20 +18614,6 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
-"rjt" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 1
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/noticeboard{
-	pixel_y = 30
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "rjA" = (
 /obj/structure/hivedecor/statue5{
 	icon = 'icons/map_project/pillars.dmi';
@@ -19848,14 +18810,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/armory)
-"rri" = (
-/obj/effect/floor_decal/industrial/warning_red{
-	dir = 9
-	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "rrD" = (
 /obj/effect/floor_decal/newcorner/nbar/corner,
 /turf/simulated/floor/dirty/tough,
@@ -20176,6 +19130,8 @@
 /obj/random/loot/randomammosidearm,
 /obj/random/loot/randomammosidearm,
 /obj/effect/floor_decal/industrial/outline/red,
+/obj/random/loot/randomammosidearm,
+/obj/random/loot/randomammosidearm,
 /turf/simulated/floor/darksteel_floor{
 	dir = 1
 	},
@@ -20293,17 +19249,6 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
-"rJT" = (
-/obj/effect/floor_decal/newcorner/red/quarter{
-	dir = 1
-	},
-/obj/structure/closet/cabinet{
-	color = "grey"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "rLj" = (
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/security/armory)
@@ -20356,20 +19301,6 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"rNK" = (
-/obj/structure/closet/emcloset,
-/obj/item/device/cassette/brokensaint,
-/obj/item/device/cassette/inqlog1,
-/obj/item/device/boombox,
-/obj/item/storage/briefcase/crimekit,
-/obj/item/wrench,
-/obj/item/crowbar,
-/obj/effect/floor_decal/newcorner/red/solid,
-/obj/item/device/cassette/grimdark,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "rOu" = (
 /obj/structure/bed/barrack,
 /obj/structure/bed/barrack1,
@@ -20378,13 +19309,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/armory)
-"rOD" = (
-/obj/effect/floor_decal/turf/bloodbar,
-/obj/effect/floor_decal/spline/fancy/wood/three_quarters,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "rPM" = (
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/service/chapel/recovery)
@@ -20576,22 +19500,6 @@
 "rYi" = (
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/villageinside/lab)
-"rYl" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 4
-	},
-/obj/structure/table/steel_reinforced,
-/obj/effect/floor_decal/spline/plain{
-	dir = 8
-	},
-/obj/item/card/id/ring/disgracedmedicae{
-	name = "ordos bracelet"
-	},
-/obj/item/card/id/key/grand/monastary/inner,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "rYB" = (
 /turf/simulated/floor/ship_floor/engines{
 	dir = 4
@@ -20916,6 +19824,11 @@
 /obj/random/loot/randomammo1,
 /obj/random/loot/randomammo1,
 /obj/effect/floor_decal/industrial/outline/red,
+/obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
 /turf/simulated/floor/darksteel_floor,
 /area/cadiaoutpost/oa/magistratumpost)
 "soT" = (
@@ -20927,22 +19840,6 @@
 	dir = 6
 	},
 /area/cadiaoutpost/new_hive/caves)
-"soV" = (
-/obj/effect/floor_decal/newcorner/shaft{
-	dir = 4
-	},
-/obj/effect/floor_decal/spline/plain{
-	dir = 4
-	},
-/obj/structure/table/steel_reinforced,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 30
-	},
-/obj/item/archaeological_find/container,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "spl" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 8
@@ -21262,13 +20159,6 @@
 "sDX" = (
 /turf/simulated/floor/trench,
 /area/cadiaoutpost/new_hive/caves)
-"sEa" = (
-/obj/structure/shuttle/engine/propulsion{
-	color = "grey";
-	dir = 8
-	},
-/turf/simulated/floor,
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "sEK" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/taperoll/police,
@@ -21500,29 +20390,12 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
-"sLS" = (
-/obj/machinery/door/airlock/imperiumdoor{
-	maxhealth = 2000;
-	name = "Black Ship Simiel";
-	req_access = list(202)
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "sMl" = (
 /obj/structure/stairs/east,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/farm)
-"sMR" = (
-/obj/effect/floor_decal/newcorner/red/corner{
-	dir = 8
-	},
-/obj/structure/bed/chair/wood,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "sMY" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -21812,9 +20685,6 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"sYo" = (
-/turf/simulated/floor/plating/reinforced,
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "sYv" = (
 /obj/structure/warfare/barricade/concrete_barrier,
 /turf/simulated/floor/tiled/dark{
@@ -21832,17 +20702,6 @@
 /obj/effect/floor_decal/newcorner/stone/corner,
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"tac" = (
-/obj/effect/floor_decal/newcorner/shaft/quarter{
-	dir = 4
-	},
-/obj/effect/floor_decal/newcorner/red/corner{
-	dir = 1
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "tao" = (
 /obj/structure/sign/poster/poster3{
 	pixel_x = 32
@@ -22353,6 +21212,7 @@
 /obj/machinery/light/red{
 	dir = 1
 	},
+/obj/item/reagent_containers/spray/hair_remover,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -22649,14 +21509,6 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/farm)
-"tNX" = (
-/obj/effect/floor_decal/newcorner/red{
-	dir = 1
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "tOd" = (
 /turf/simulated/floor/surface_floor,
 /area/cadiaoutpost/oa/villageinside/lab)
@@ -22738,17 +21590,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/armory)
-"tRD" = (
-/obj/effect/floor_decal/newcorner/shaft/quarter{
-	dir = 8
-	},
-/obj/effect/floor_decal/newcorner/red/corner{
-	dir = 8
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "tRZ" = (
 /obj/effect/floor_decal/newcorner/blue/quarter{
 	dir = 1
@@ -22802,12 +21643,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/security/armory)
-"tTC" = (
-/obj/structure/largecrate/animal/cat,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "tUo" = (
 /obj/structure/toilet{
 	dir = 4
@@ -22995,14 +21830,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
-"uap" = (
-/obj/machinery/door/airlock/hatch/simiel{
-	name = "Bridge";
-	req_access = list()
-	},
-/obj/effect/floor_decal/turf/splate,
-/turf/simulated/floor/plating/reinforced,
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "uat" = (
 /obj/effect/floor_decal/newcorner/nbar{
 	dir = 1
@@ -23250,12 +22077,6 @@
 	},
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"umA" = (
-/obj/effect/floor_decal/industrial/warning_red,
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "unN" = (
 /obj/machinery/door/airlock/highsecurity/lord,
 /turf/simulated/floor/factory_floor,
@@ -23428,14 +22249,6 @@
 /obj/structure/catwalkrust/blocked,
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
-"uzh" = (
-/obj/structure/shuttle/engine/propulsion{
-	color = "grey";
-	dir = 1;
-	icon_state = "propulsion"
-	},
-/turf/simulated/floor,
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "uzz" = (
 /obj/effect/floor_decal/newcorner/blue/diagonal,
 /obj/machinery/recharger,
@@ -23639,15 +22452,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"uJL" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 4
-	},
-/obj/structure/closet/crate/operations,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "uJZ" = (
 /turf/simulated/floor/tiled/freezer,
 /area/cadiaoutpost/new_hive/caves)
@@ -23725,17 +22529,6 @@
 	},
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/farm)
-"uPk" = (
-/obj/structure/bed{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "migbed"
-	},
-/obj/item/bedsheet/hos{
-	color = "grey"
-	},
-/obj/effect/landmark/start/inqmagi/inquisitor,
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "uPt" = (
 /obj/effect/floor_decal/newcorner/blue/diagonal,
 /obj/machinery/recharger,
@@ -23890,19 +22683,6 @@
 	},
 /turf/simulated/floor/fancyfloor/marble,
 /area/cadiaoutpost/oa/hallway/centralhall)
-"uXg" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 4
-	},
-/obj/effect/floor_decal/spline/plain{
-	dir = 10;
-	icon_state = "spline_plain"
-	},
-/obj/effect/floor_decal/newcorner/step_i,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "uXs" = (
 /turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/oa/security/armory)
@@ -24330,14 +23110,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
-"vwt" = (
-/obj/effect/floor_decal/industrial/warning_red{
-	dir = 1
-	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "vwY" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/book/manual/medical_diagnostics_manual{
@@ -24503,15 +23275,6 @@
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/new_hive/caves)
-"vEf" = (
-/obj/effect/floor_decal/newcorner/shaft/quarter,
-/obj/effect/floor_decal/newcorner/red/corner{
-	dir = 4
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "vEt" = (
 /obj/effect/floor_decal/turf/bar3{
 	dir = 4
@@ -24914,19 +23677,6 @@
 /obj/structure/hivedecor/sarcofagus,
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"vVs" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 4
-	},
-/obj/structure/closet/crate/ateopoine,
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "vVJ" = (
 /obj/structure/bed/chair/altar,
 /turf/simulated/floor/darkwood,
@@ -24981,18 +23731,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
-"vYo" = (
-/obj/structure/sign/inkvd{
-	pixel_x = -32
-	},
-/obj/machinery/computer/shuttle_control/ferry/inquisition{
-	req_one_access = list(302)
-	},
-/obj/effect/floor_decal/newcorner/shaft{
-	dir = 4
-	},
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "vYX" = (
 /obj/structure/table/rack,
 /obj/item/reagent_containers/spray/cleaner/warfare{
@@ -25591,17 +24329,6 @@
 /obj/machinery/smartfridge/chemistry,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
-"wBk" = (
-/obj/effect/floor_decal/newcorner/shaft{
-	dir = 8
-	},
-/obj/effect/floor_decal/spline/plain{
-	dir = 8
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "wBM" = (
 /obj/effect/floor_decal/newcorner/train2,
 /turf/simulated/floor/darkfloor{
@@ -25710,12 +24437,6 @@
 /obj/effect/floor_decal/turf/necro1,
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
-"wHy" = (
-/obj/structure/shuttle/engine/propulsion{
-	color = "grey"
-	},
-/turf/simulated/floor,
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "wIr" = (
 /turf/simulated/floor/ship_floor/engines{
 	dir = 10
@@ -25740,23 +24461,6 @@
 	icon_state = "dark1"
 	},
 /area/cadiaoutpost/new_hive/caves)
-"wJY" = (
-/obj/effect/floor_decal/newcorner/red/quarter{
-	dir = 4
-	},
-/obj/structure/closet/secure_closet/bar{
-	icon_broken = "sparks";
-	icon_closed = "guncloset";
-	icon_locked = null;
-	icon_off = null;
-	icon_opened = "gunclosetopen";
-	icon_state = "guncloset";
-	locked = 0
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "wKi" = (
 /obj/structure/torchwall/service{
 	dir = 8;
@@ -26429,14 +25133,6 @@
 /obj/item/pyre/self_lit,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
-"xgz" = (
-/obj/effect/floor_decal/industrial/warning_red{
-	icon_state = "warningcorner_red"
-	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "xgA" = (
 /obj/structure/table/rack/dark,
 /obj/item/reagent_containers/food/drinks/bottle/caddis/supreme,
@@ -26544,12 +25240,6 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"xiq" = (
-/obj/effect/shuttle_landmark/ferry/inquisition_start,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "xix" = (
 /obj/structure/hivedecor/sarcofagus2,
 /obj/structure/sign/plate/written{
@@ -26623,19 +25313,6 @@
 /obj/machinery/r_n_d/circuit_imprinter,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
-"xmb" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 8
-	},
-/obj/effect/floor_decal/spline/plain{
-	dir = 6;
-	icon_state = "spline_plain"
-	},
-/obj/effect/floor_decal/newcorner/step_i,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "xmP" = (
 /obj/structure/table/rack/dark,
 /obj/item/reagent_containers/spray/luminol{
@@ -26853,15 +25530,6 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
-"xwY" = (
-/obj/effect/floor_decal/spline/fancy/wood,
-/obj/structure/handrai{
-	dir = 1
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "xxb" = (
 /obj/effect/floor_decal/newcorner/plating/corner{
 	dir = 8
@@ -26932,11 +25600,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/armory)
-"xzy" = (
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "xzI" = (
 /obj/structure/cult/tome,
 /obj/item/ammo_magazine/bolt_rifle_magazine/sister,
@@ -27046,28 +25709,6 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
-"xCh" = (
-/obj/structure/table/rack,
-/obj/item/storage/box/handcuffs,
-/obj/item/storage/box/handcuffs,
-/obj/effect/floor_decal/newcorner/red/solid,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
-"xCI" = (
-/obj/item/device/flashlight/lamp/green{
-	pixel_y = 14
-	},
-/obj/item/device/pda{
-	pixel_y = -5
-	},
-/obj/structure/table/graf/wood_office_table{
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "xCJ" = (
 /obj/machinery/door/blast/id_door/open{
 	id = null
@@ -27325,12 +25966,6 @@
 "xNx" = (
 /turf/simulated/floor/greengrid,
 /area/cadiaoutpost/oa/caves/dark)
-"xNU" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "xOf" = (
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
@@ -27538,16 +26173,6 @@
 /obj/item/reagent_containers/food/snacks/foodtray,
 /turf/simulated/floor/tiled/freezer,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"xWA" = (
-/obj/effect/floor_decal/newcorner/shaft,
-/obj/effect/floor_decal/spline/plain,
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "xWH" = (
 /obj/structure/torchwall{
 	dir = 1;
@@ -27701,15 +26326,6 @@
 "ydz" = (
 /turf/simulated/open,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"ydH" = (
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "ydI" = (
 /obj/effect/floor_decal/turf/armory,
 /turf/simulated/floor/tiled/dark{
@@ -27798,18 +26414,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"yiZ" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 9
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/handrai,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "yke" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /obj/structure/forge,
@@ -34760,9 +33364,9 @@ slE
 tOB
 tOB
 tOB
-bkf
-bkf
-bkf
+hkY
+hkY
+hkY
 tOB
 tOB
 tOB
@@ -35011,11 +33615,11 @@ tOB
 slE
 tOB
 tOB
-bkf
-bkf
-vYo
-bkf
-bkf
+hkY
+hkY
+hkY
+hkY
+hkY
 bkf
 bkf
 bkf
@@ -35263,11 +33867,11 @@ tOB
 slE
 tOB
 tOB
-bkf
-dQB
-dsC
-xNU
-uPk
+hkY
+hkY
+hkY
+hkY
+hkY
 bkf
 hEC
 dsC
@@ -35515,11 +34119,11 @@ tOB
 slE
 tOB
 tOB
-bkf
-xCI
-kGE
-cBy
-dsC
+hkY
+hkY
+hkY
+hkY
+hkY
 bkf
 gZw
 cBy
@@ -35767,11 +34371,11 @@ tOB
 slE
 tOB
 tOB
-bkf
-qtM
-dDp
-dsC
-dBd
+hkY
+hkY
+hkY
+hkY
+hkY
 bkf
 tqa
 dsC
@@ -36022,7 +34626,7 @@ tOB
 bkf
 bkf
 bkf
-aCP
+bkf
 bkf
 bkf
 bkf
@@ -44864,7 +43468,7 @@ bNq
 bNq
 bNq
 bNq
-gON
+bNq
 bNq
 bNq
 bNq
@@ -45115,8 +43719,8 @@ wOF
 cTn
 bNq
 tOB
-bNq
-sYo
+tOB
+tOB
 bNq
 oJA
 gsn
@@ -45367,8 +43971,8 @@ wOF
 jvj
 bNq
 tOB
-bNq
-sYo
+tOB
+tOB
 bNq
 gqX
 nVK
@@ -45619,8 +44223,8 @@ wOF
 wOF
 bNq
 tOB
-bNq
-sYo
+tOB
+tOB
 bNq
 iun
 nVK
@@ -45871,8 +44475,8 @@ wOF
 wOF
 bNq
 tOB
-bNq
-hkT
+tOB
+tOB
 bNq
 iun
 nVK
@@ -46123,8 +44727,8 @@ bNq
 odI
 bNq
 tOB
-bNq
-sYo
+tOB
+tOB
 bNq
 toH
 nVK
@@ -46375,8 +44979,8 @@ aPi
 dBi
 bNq
 tOB
-bNq
-sYo
+tOB
+tOB
 bNq
 toH
 nVK
@@ -46627,8 +45231,8 @@ jfa
 trO
 bNq
 tOB
-bNq
-sYo
+tOB
+tOB
 bNq
 bNq
 bNq
@@ -46879,8 +45483,8 @@ bNq
 bNq
 bNq
 tOB
-bNq
-sYo
+tOB
+tOB
 bNq
 gPw
 dbZ
@@ -47131,8 +45735,8 @@ tOB
 tOB
 tOB
 tOB
-bNq
-hkT
+tOB
+tOB
 bNq
 kxV
 dbZ
@@ -47382,9 +45986,9 @@ tOB
 tOB
 tOB
 tOB
-bNq
-bNq
-sYo
+tOB
+tOB
+tOB
 bNq
 kKF
 dbZ
@@ -47615,12 +46219,12 @@ tOB
 slE
 slE
 slE
+tOB
 slE
-slE
-slE
-slE
-slE
-slE
+tOB
+tOB
+tOB
+tOB
 slE
 slE
 slE
@@ -47634,9 +46238,9 @@ tOB
 tOB
 tOB
 tOB
-bNq
-sYo
-sYo
+tOB
+tOB
+tOB
 bNq
 kxV
 dbZ
@@ -47864,31 +46468,31 @@ tOB
 tOB
 tOB
 tOB
-slE
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-sLS
-bNq
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+liM
 bNq
 bNq
 xtU
@@ -48116,31 +46720,31 @@ tOB
 tOB
 tOB
 tOB
-slE
-bNq
-nXv
-xzy
-xzy
-xzy
-xzy
-xzy
-xzy
-xzy
-xzy
-xzy
-xgz
-aQy
-aQy
-aQy
-aQy
-aQy
-aQy
-aQy
-iqw
-xzy
-xzy
-xzy
-bNq
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+liM
 dhr
 bNq
 bNq
@@ -48368,31 +46972,31 @@ tOB
 tOB
 tOB
 tOB
-slE
-bNq
-xzy
-xzy
-xgz
-aQy
-aQy
-aQy
-aQy
-aQy
-aQy
-iqw
-umA
-uzh
-man
-man
-man
-man
-man
-wHy
-lbl
-aQy
-aQy
-iqw
-bNq
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+liM
 yfH
 yfH
 yfH
@@ -48620,31 +47224,31 @@ tOB
 tOB
 tOB
 tOB
-slE
-bNq
-xgz
-aQy
-miQ
-man
-man
-man
-man
-ojP
-sEa
-lbl
-miQ
-man
-phu
-phu
-phu
-bOz
-man
-man
-man
-man
-man
-vwt
-bNq
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+liM
 yfH
 dhr
 dhr
@@ -48872,31 +47476,31 @@ tOB
 tOB
 tOB
 tOB
-slE
-bNq
-umA
-man
-man
-man
-piS
-lGg
-ouv
-oMN
-man
-hNl
-cMV
-man
-man
-oXh
-man
-man
-man
-igF
-mEu
-man
-wHy
-vwt
-bNq
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+liM
 yfH
 dhr
 dhr
@@ -49124,31 +47728,31 @@ tOB
 tOB
 tOB
 tOB
-slE
-bNq
-umA
-man
-lcl
-dek
-rbP
-phu
-phu
-hlF
-man
-yiZ
-eNa
-hRN
-qWC
-lBc
-man
-rJT
-eDr
-sMR
-qeB
-man
-wHy
-vwt
-bNq
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+liM
 yfH
 dhr
 dhr
@@ -49376,31 +47980,31 @@ tOB
 tOB
 tOB
 tOB
-slE
-bNq
-umA
-eTC
-lcl
-npV
-cyT
-cyT
-phu
-iGI
-man
-rjt
-phu
-phu
-phu
-qxK
-eHP
-tNX
-goi
-phu
-itA
-man
-man
-vwt
-bNq
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+liM
 yfH
 dhr
 dhr
@@ -49628,31 +48232,31 @@ tOB
 tOB
 tOB
 tOB
-slE
-bNq
-umA
-eTC
-lcl
-kCE
-rYl
-uXg
-phu
-hlF
-uap
-lxG
-bTL
-bPf
-mPK
-xwY
-man
-wJY
-glG
-hQA
-njq
-man
-wHy
-vwt
-bNq
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+liM
 yfH
 dhr
 dhr
@@ -49783,7 +48387,7 @@ sFv
 lwZ
 ojM
 myc
-jMq
+egU
 hJV
 ojM
 tOB
@@ -49880,31 +48484,31 @@ tOB
 tOB
 tOB
 tOB
-slE
-bNq
-umA
-eTC
-lcl
-aFH
-oLz
-aYR
-xiq
-pLK
-man
-kHL
-edo
-rOD
-bPf
-gPi
-man
-man
-man
-man
-man
-man
-wHy
-vwt
-bNq
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+liM
 yfH
 dhr
 dhr
@@ -50132,31 +48736,31 @@ tOB
 tOB
 tOB
 tOB
-slE
-bNq
-umA
-eTC
-lcl
-emX
-grI
-xmb
-phu
-xWA
-lNw
-qYN
-bPf
-gvi
-bPf
-xwY
-man
-him
-qdT
-qdT
-qdT
-man
-wHy
-vwt
-bNq
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+liM
 yfH
 dhr
 dhr
@@ -50384,31 +48988,31 @@ tOB
 tOB
 tOB
 tOB
-slE
-bNq
-umA
-eTC
-lcl
-cIv
-wBk
-wBk
-phu
-nlZ
-man
-qfq
-phu
-bsM
-phu
-ijm
-lgI
-pAD
-ksh
-vEf
-gMw
-man
-man
-vwt
-bNq
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+liM
 liM
 liM
 liM
@@ -50636,31 +49240,31 @@ tOB
 tOB
 tOB
 tOB
-slE
-bNq
-umA
-man
-lcl
-onc
-oIV
-phu
-phu
-cCC
-man
-qfK
-vVs
-uJL
-eVd
-eaT
-man
-fiF
-tac
-tRD
-kpj
-man
-wHy
-vwt
-bNq
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+liM
 liM
 vTq
 pSv
@@ -50888,31 +49492,31 @@ tOB
 tOB
 tOB
 tOB
-slE
-bNq
-umA
-man
-man
-man
-pRn
-soV
-cZi
-eqo
-man
-man
-cMV
-man
-phu
-phu
-man
-man
-rNK
-ckN
-xCh
-man
-wHy
-vwt
-bNq
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+liM
 liM
 ghG
 hML
@@ -51140,31 +49744,31 @@ tOB
 tOB
 tOB
 tOB
-slE
-bNq
-aac
-eiX
-fKq
-man
-man
-man
-man
-man
-djb
-rri
-fKq
-man
-tTC
-ydH
-man
-man
-man
-man
-man
-man
-man
-vwt
-bNq
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+liM
 liM
 kOw
 xho
@@ -51392,31 +49996,31 @@ tOB
 tOB
 tOB
 tOB
-slE
-bNq
-xzy
-xzy
-aac
-eiX
-eiX
-eiX
-eiX
-eiX
-eiX
-dPJ
-umA
-uzh
-man
-man
-man
-man
-man
-wHy
-rri
-eiX
-eiX
-dPJ
-bNq
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+liM
 liM
 boP
 rvv
@@ -51644,31 +50248,31 @@ tOB
 tOB
 tOB
 tOB
-slE
-bNq
-xzy
-xzy
-xzy
-xzy
-xzy
-xzy
-xzy
-xzy
-xzy
-xzy
-aac
-eiX
-eiX
-eiX
-eiX
-eiX
-eiX
-eiX
-dPJ
-xzy
-xzy
-xzy
-bNq
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+liM
 liM
 hym
 rvv
@@ -51896,31 +50500,31 @@ tOB
 tOB
 tOB
 tOB
-slE
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+liM
+liM
 liM
 hym
 rvv

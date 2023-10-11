@@ -19,7 +19,6 @@
 
 	inherent_verbs = list(
 	/mob/living/carbon/human/Bloodpact/proc/givebloodstats,
-	/mob/living/carbon/human/proc/moving,
 	/*/mob/living/carbon/human/proc/draw_rune */ // doesnt work rn because only khorne cultists can draw runes and they technically are not khorne. and if they were, it would use pilgrim khorne slots
 		)
 
@@ -33,7 +32,7 @@
 
 /datum/species/bloodpact/handle_post_spawn(var/mob/living/carbon/human/H)
 	H.age = rand(20,180)//Random age for kiddos.
-	to_chat(H, "<big><span class='warning'>You are veterans of the chaos warband known commonly referred to as the Sekites or Sons of Sek who serve the Immortal Anarch... Anakwanar Sek. Sent to Eipharius you have been tasked with undermining imperial rule and spreading fear throughout the planet. Find and co-ordinate with the local followers of the ruinous powers and plot an uprising to rival old Horus himself. Do not waste your lives, instead spend the lives of your followers whom you recruit from the planet.</span></big>")
+	to_chat(H, "<big><span class='warning'>You are veterans of the chaos warband known commonly referred to as the Sekites or Sons of Sek who serve the Immortal Anarch... Anakwanar Sek. Find and co-ordinate with the local followers of the ruinous powers and plot an uprising to rival old Horus himself. Do not waste your lives, instead spend the lives of your followers whom you recruit from the planet((If you want to besiege the city and kill everyone people A-Help about it first or get boinked))</span></big>")
 	H.update_eyes()	//hacky fix, i don't care and i'll never ever care
 	return ..()
 /mob/living/carbon/human

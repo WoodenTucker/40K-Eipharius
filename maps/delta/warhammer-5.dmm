@@ -313,6 +313,15 @@
 /obj/item/storage/box/cups,
 /turf/simulated/floor/wood,
 /area/centcom)
+"bc" = (
+/obj/structure/shipdecor/cryochamber{
+	icon_state = "cryochamber0"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a15";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "bd" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/simulated/floor/wood,
@@ -348,6 +357,15 @@
 	color = "grey"
 	},
 /area/centcom)
+"bl" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "bn" = (
 /obj/machinery/teleport/station,
 /turf/simulated/floor/tiled/dark,
@@ -356,13 +374,20 @@
 /obj/machinery/teleport/hub,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
-"bs" = (
-/obj/structure/table/graf/reinf_table{
-	icon_state = "table_horizontal2";
+"br" = (
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/obj/machinery/light/small/red{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
-/area/space)
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/shuttle/station1)
+"bs" = (
+/obj/structure/table/graf/big_wood_table,
+/obj/item/reagent_containers/food/snacks/carrotfries,
+/turf/simulated/floor/carpet/purple,
+/area/cadiaoutpost/oa/shuttle/governor)
 "bt" = (
 /obj/structure/table/steel,
 /turf/simulated/floor/tiled/dark,
@@ -410,13 +435,18 @@
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "bA" = (
-/obj/effect/floor_decal/turf/metal/six,
-/obj/structure/statue/guardshrine{
-	layer = 34;
-	pixel_x = -17
-	},
+/obj/structure/closet/cabinet,
+/obj/item/clothing/head/inquisitor,
+/obj/item/clothing/suit/inquisitor,
+/obj/item/clothing/under/inquisitor,
+/obj/item/clothing/under/rank/inquisitor,
+/obj/item/clothing/gloves/thick/swat/combat,
+/obj/item/melee/sword/combat_knife/bowie,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/item/clothing/head/witchhunter_hat,
+/obj/item/clothing/suit/witchhunter,
 /turf/simulated/floor/tiled/dark,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "bB" = (
 /obj/structure/bed/chair{
 	dir = 8;
@@ -430,6 +460,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"bD" = (
+/obj/effect/floor_decal/newcorner/blue/corner{
+	dir = 1
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/shuttle/station1)
 "bF" = (
 /obj/structure/closet/crate,
 /turf/simulated/floor/shuttle/yellow,
@@ -460,6 +496,16 @@
 	},
 /turf/simulated/floor/carpet/red,
 /area/centcom)
+"bK" = (
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/obj/random/shoes,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "bM" = (
 /obj/effect/wingrille_spawn/reinforced/crescent,
 /turf/simulated/floor/shuttle/white,
@@ -483,6 +529,23 @@
 	},
 /turf/simulated/floor/carpet/red,
 /area/centcom)
+"bR" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/bed/chair/comfy/captain,
+/obj/effect/floor_decal/turf/bloodbar,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"bT" = (
+/obj/machinery/light/small/red{
+	dir = 1;
+	icon_state = "bulb1"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "bU" = (
 /obj/effect/floor_decal/carpet/red{
 	dir = 4
@@ -626,6 +689,36 @@
 /obj/item/flame/lighter/zippo,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"cv" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/obj/random/smokes,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"cw" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/random/smokes,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"cy" = (
+/obj/structure/table/steel,
+/obj/item/fluff_items/paperwork,
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/space)
 "cz" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/machinery/shower{
@@ -680,6 +773,13 @@
 	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
+"cJ" = (
+/obj/machinery/light/small,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "cM" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/effect/floor_decal/spline/plain{
@@ -695,6 +795,15 @@
 	},
 /turf/simulated/floor/carpet/red,
 /area/centcom)
+"cT" = (
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a3";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "cV" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/torchwall/service{
@@ -736,6 +845,15 @@
 /obj/effect/floor_decal/turf/brick/two,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"ds" = (
+/obj/structure/shipdecor{
+	icon_state = "negative"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "dw" = (
 /obj/structure/sign/aquilalong,
 /obj/structure/window/reinforced/reliquary,
@@ -805,15 +923,25 @@
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"dY" = (
-/obj/structure/bed/chair{
-	dir = 4;
-	icon_state = "chair_preview"
+"dV" = (
+/obj/machinery/light/red,
+/obj/effect/floor_decal/newcorner/blue{
+	dir = 4
 	},
-/turf/simulated/floor/tiled{
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/shuttle/station1)
+"dX" = (
+/obj/structure/shuttle/engine/propulsion{
 	color = "grey"
 	},
-/area/space)
+/turf/space,
+/area/cadiaoutpost/oa/shuttle/governor)
+"dY" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/bloodbar,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "dZ" = (
 /obj/structure/bed/chair/wood{
 	dir = 1;
@@ -831,6 +959,27 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"eg" = (
+/turf/unsimulated/oldship{
+	icon_state = "rwall10"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"ej" = (
+/obj/item/pen/multi{
+	pixel_y = 2
+	},
+/obj/item/paper_bin{
+	pixel_y = 8
+	},
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 4
+	},
+/obj/item/gun/energy/pulse/plasma/pistol/toaster,
+/obj/item/clothing/ring/HotshotDigital,
+/obj/item/clothing/ring/PowerBlade,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "en" = (
 /obj/machinery/light,
 /turf/simulated/floor/shuttle/white,
@@ -844,6 +993,14 @@
 	color = "grey"
 	},
 /area/centcom)
+"er" = (
+/obj/structure/flora/pottedplant{
+	icon = "icons/map_project/furniture_and_decor.dmi";
+	icon_state = "plant";
+	dir = 1
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "et" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/item/cell/lasgun/hotshot,
@@ -862,6 +1019,19 @@
 /obj/effect/floor_decal/turf/brick/two,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"ex" = (
+/turf/simulated/floor/ship_floor/ramp,
+/area/cadiaoutpost/oa/shuttle/station1)
+"eA" = (
+/obj/structure/bed/chair/pew,
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/space)
 "eF" = (
 /obj/machinery/light/spot{
 	dir = 8;
@@ -871,6 +1041,22 @@
 	color = "grey"
 	},
 /area/centcom)
+"eH" = (
+/obj/structure/table/graf/big_wood_table,
+/obj/item/reagent_containers/food/snacks/cherrypie,
+/turf/simulated/floor/carpet/purple,
+/area/cadiaoutpost/oa/shuttle/governor)
+"eI" = (
+/obj/structure/sign/ship{
+	icon_state = "picture2";
+	pixel_x = -32
+	},
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "eJ" = (
 /obj/structure/table/rack,
 /turf/simulated/floor/tiled/dark{
@@ -878,16 +1064,12 @@
 	},
 /area/centcom)
 "eM" = (
-/obj/machinery/light/small,
-/obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table3";
-	dir = 8
-	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "dark1"
-	},
-/area/space)
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/table/graf/reinf_table,
+/obj/item/fluff_items/paperwork,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "eN" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -912,6 +1094,10 @@
 /obj/effect/floor_decal/turf/brick/two,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"eU" = (
+/obj/machinery/light/red,
+/turf/simulated/floor/ship_floor/engines,
+/area/cadiaoutpost/oa/shuttle/station1)
 "eV" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -994,28 +1180,34 @@
 	icon_state = "wall3"
 	},
 /area/space)
-"fp" = (
-/obj/structure/catwalk,
-/obj/machinery/light/small{
-	dir = 8
+"fq" = (
+/obj/structure/bed/chair/comfy/captain{
+	desc = "Comfy chair for luxury and piloting.";
+	dir = 1;
+	icon_state = "capchair_preview";
+	name = "pilot seat"
 	},
-/obj/structure/railing{
-	dir = 4
+/obj/effect/floor_decal/newcorner/blue/solid,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/turf/simulated/open,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/station1)
 "fr" = (
 /turf/simulated/floor/carpet/red,
 /area/centcom)
 "fu" = (
-/obj/effect/floor_decal/newcorner/whitegreen{
-	dir = 1
+/obj/machinery/light/small{
+	dir = 4
 	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
+/obj/structure/closet/hive/metal{
+	anchored = 1
 	},
-/area/space)
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "fv" = (
 /obj/structure/shuttle/window{
 	color = "grey"
@@ -1025,6 +1217,23 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisitionpact)
+"fA" = (
+/turf/unsimulated/wall/fakeglass{
+	dir = 10;
+	icon = 'icons/map_project/windows.dmi';
+	icon_state = "r_window"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"fC" = (
+/obj/structure/bed/chair/comfy/captain{
+	desc = "Comfy chair for luxury and piloting.";
+	dir = 1;
+	icon_state = "capchair_preview";
+	name = "pilot seat"
+	},
+/obj/effect/floor_decal/newcorner/blue/solid,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/shuttle/station1)
 "fD" = (
 /turf/simulated/shuttle/wall{
 	color = "grey";
@@ -1055,6 +1264,15 @@
 	},
 /turf/simulated/floor/wood,
 /area/centcom)
+"fK" = (
+/obj/effect/floor_decal/newcorner/blue/quarter{
+	dir = 8
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "fL" = (
 /obj/effect/floor_decal/newcorner/teal/diagonal,
 /obj/structure/closet/crate/meat,
@@ -1063,14 +1281,12 @@
 	},
 /area/centcom)
 "fM" = (
-/obj/structure/catwalk,
-/obj/machinery/light/small{
-	dir = 1;
-	icon_state = "bulb1"
+/turf/simulated/shuttle/wall{
+	icon_state = "wall3";
+	dir = 6;
+	color = "grey"
 	},
-/obj/structure/railing,
-/turf/simulated/open,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "fO" = (
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /obj/machinery/suit_storage_unit/engineering,
@@ -1105,6 +1321,12 @@
 	icon_state = "white1"
 	},
 /area/centcom)
+"fS" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/machinery/light,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "fW" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/bed/padded,
@@ -1126,6 +1348,11 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"gh" = (
+/obj/effect/floor_decal/turf/steel,
+/obj/machinery/door/airlock/centcom,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/governor)
 "gi" = (
 /obj/machinery/optable,
 /obj/effect/floor_decal/newcorner/teal/diagonal,
@@ -1141,12 +1368,8 @@
 /turf/simulated/floor/plating,
 /area/centcom)
 "gk" = (
-/obj/machinery/light/small{
-	dir = 1;
-	icon_state = "bulb1"
-	},
-/turf/simulated/open,
-/area/space)
+/turf/unsimulated/wall/fakeglass,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "gl" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/item/gun/projectile/necros,
@@ -1157,16 +1380,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "gm" = (
-/obj/structure/warfare/barricade/concrete_barrier{
-	dir = 1
-	},
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/space)
+/obj/structure/displaycase,
+/obj/effect/floor_decal/turf/metal/five,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "gn" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -1210,6 +1427,27 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"gB" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/dogbed,
+/mob/living/simple_animal/cat/fluff/bones{
+	name = "Heretic";
+	desc = "That's Heretic, belowed pet of the lord inquisitor and a devoted follower of the Emperor";
+	friend_name = "Thaddeus Rex"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"gC" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "gL" = (
 /turf/simulated/shuttle/wall,
 /area/cadiaoutpost/oa/tauship)
@@ -1235,6 +1473,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"gT" = (
+/obj/structure/closet/cabinet,
+/obj/item/clothing/under/rank/victorian/reddress,
+/obj/item/clothing/under/rank/victorian/blackdress,
+/obj/item/clothing/under/dress/dress_cap,
+/turf/simulated/floor/carpet/purple,
+/area/cadiaoutpost/oa/shuttle/governor)
 "gX" = (
 /obj/item/modular_computer/console/preset/civilian,
 /turf/simulated/floor/shuttle/white,
@@ -1270,6 +1515,13 @@
 /obj/item/reagent_containers/food/snacks/liquidfood,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"hf" = (
+/obj/machinery/door/blast/bordergatec,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "hg" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -1361,6 +1613,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisitionpact)
+"hK" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/shuttle/engine/propulsion{
+	color = "grey"
+	},
+/turf/space,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "hO" = (
 /obj/effect/wingrille_spawn/reinforced_phoron/full,
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
@@ -1375,21 +1634,19 @@
 /turf/simulated/floor/carpet/red,
 /area/centcom)
 "hR" = (
-/obj/structure/warfare/barricade/concrete_barrier/sandbag{
-	icon_state = "ends-connected-e-s-w";
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/space)
-"hT" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/obj/effect/floor_decal/turf/metal/six,
+/obj/structure/table/graf/polished_table,
+/obj/item/paper_bin,
+/obj/item/pen,
+/obj/effect/floor_decal/turf/bloodbar,
 /turf/simulated/floor/tiled/dark,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"hT" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/bed/chair/wood/fancy,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/bloodbar,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "hV" = (
 /obj/machinery/door/airlock/vault{
 	name = "ERT Armory"
@@ -1406,6 +1663,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"hY" = (
+/obj/structure/shipdecor/warp{
+	pixel_x = 350
+	},
+/turf/space,
+/area/space)
 "id" = (
 /obj/structure/bed/chair/office/light{
 	dir = 8;
@@ -1424,8 +1687,20 @@
 /turf/simulated/floor/carpet/red,
 /area/centcom)
 "ig" = (
-/obj/structure/grille/iron_fence,
-/turf/simulated/floor/factory_floor,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/bed/chair/wood/fancy,
+/obj/effect/floor_decal/turf/bloodbar,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"ik" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 4
+	},
+/obj/structure/closet,
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
 /area/space)
 "il" = (
 /obj/machinery/papershredder,
@@ -1438,6 +1713,13 @@
 /obj/item/ingots/adamantiumingot,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
+"is" = (
+/turf/unsimulated/wall/fakeglass{
+	dir = 4;
+	icon = 'icons/map_project/windows.dmi';
+	icon_state = "r_window"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "it" = (
 /obj/structure/bed/chair/office/light{
 	dir = 1
@@ -1447,6 +1729,16 @@
 "iu" = (
 /turf/simulated/floor/shuttle/yellow,
 /area/cadiaoutpost/oa/tauship)
+"iv" = (
+/obj/structure/table/steel_reinforced,
+/obj/effect/floor_decal/spline/plain{
+	dir = 9;
+	icon_state = "spline_plain"
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 9
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "ix" = (
 /obj/structure/railing,
 /obj/item/clothing/head/bighat,
@@ -1478,6 +1770,20 @@
 /obj/machinery/bluespacerelay,
 /turf/simulated/floor/wood,
 /area/centcom)
+"iH" = (
+/obj/structure/sign/ship{
+	icon_state = "tncD";
+	pixel_y = 32
+	},
+/obj/structure/shipdecor{
+	icon_state = "tncB0"
+	},
+/obj/effect/floor_decal/newcorner/blue/solid,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "iM" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/effect/floor_decal/turf/brick,
@@ -1493,25 +1799,28 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "iQ" = (
-/obj/structure/catwalk,
-/obj/structure/railing{
-	dir = 8;
-	health = 700;
-	maxhealth = 700
-	},
-/turf/simulated/open,
-/area/space)
+/turf/simulated/floor/fancyfloor/gray_white,
+/area/cadiaoutpost/oa/shuttle/station1)
+"iV" = (
+/turf/simulated/floor/ship_floor/engines,
+/area/cadiaoutpost/oa/shuttle/station1)
 "iW" = (
 /obj/structure/shuttle/engine/propulsion,
 /turf/space,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"iY" = (
-/obj/item/stool{
-	color = "grey"
+"iX" = (
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "v";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/obj/effect/floor_decal/turf/metal/four,
+/area/cadiaoutpost/oa/shuttle/station1)
+"iY" = (
+/obj/structure/displaycase,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/item/clothing/suit/storage/hooded/inquisitor,
 /turf/simulated/floor/tiled/dark,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "iZ" = (
 /obj/structure/railing{
 	dir = 8
@@ -1523,14 +1832,24 @@
 	color = "grey"
 	},
 /area/centcom)
-"jb" = (
-/obj/machinery/light/small,
-/obj/effect/floor_decal/newcorner/whitegreen,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
+"ja" = (
+/obj/structure/shipdecor{
+	icon_state = "tncA"
 	},
-/area/space)
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"jb" = (
+/obj/structure/shipdecor{
+	icon_state = "off"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "m";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "jc" = (
 /obj/machinery/computer/operating,
 /obj/effect/floor_decal/newcorner/teal/diagonal,
@@ -1539,13 +1858,22 @@
 	icon_state = "white1"
 	},
 /area/centcom)
-"je" = (
-/obj/structure/warfare/barricade/concrete_barrier/sandbag{
-	icon_state = "centers";
-	dir = 4
+"jd" = (
+/obj/effect/floor_decal/turf/bar3,
+/obj/structure/sign/double/planet/left{
+	pixel_y = 32
 	},
-/turf/simulated/floor/factory_floor,
-/area/space)
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"je" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/table/graf/reinf_table,
+/obj/item/fluff_items/paperwork,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "jf" = (
 /obj/machinery/cooker/oven,
 /obj/effect/floor_decal/newcorner/plazaf/diagonal,
@@ -1568,6 +1896,10 @@
 	color = "grey"
 	},
 /area/centcom)
+"jk" = (
+/obj/effect/floor_decal/newcorner/blue,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/shuttle/station1)
 "jn" = (
 /obj/structure/bed/chair/comfy/black{
 	dir = 1;
@@ -1593,13 +1925,6 @@
 	icon_state = "white1"
 	},
 /area/centcom)
-"jq" = (
-/obj/effect/floor_decal/newcorner/whitegreen,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
-	},
-/area/space)
 "js" = (
 /obj/structure/table/rack,
 /obj/item/archaeological_find,
@@ -1608,6 +1933,14 @@
 /obj/item/archaeological_find,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
+"jt" = (
+/obj/effect/floor_decal/spline/fancy/wood/corner{
+	dir = 1
+	},
+/turf/simulated/floor/ship_floor/engines{
+	dir = 10
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "ju" = (
 /obj/structure/railing,
 /obj/item/paper/crumpled/bloody{
@@ -2007,6 +2340,16 @@
 /obj/item/bedsheet/hop,
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/tauship)
+"kF" = (
+/obj/machinery/light/small/red{
+	dir = 1;
+	icon_state = "bulb1"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a3";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "kG" = (
 /turf/simulated/shuttle/wall/corner/smoothwhite/ne,
 /area/cadiaoutpost/oa/tauship)
@@ -2098,9 +2441,10 @@
 	},
 /area/centcom)
 "kW" = (
-/obj/effect/floor_decal/turf/metal/six,
-/turf/simulated/floor/tiled/dark,
-/area/space)
+/turf/unsimulated/oldship{
+	icon_state = "rwall13"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "kX" = (
 /obj/machinery/shower{
 	dir = 1;
@@ -2186,6 +2530,24 @@
 	color = "yellow"
 	},
 /area/space)
+"lA" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/shuttle/engine/propulsion{
+	color = "grey"
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"lB" = (
+/obj/effect/floor_decal/turf/bar3,
+/obj/machinery/light/small/red{
+	dir = 8;
+	icon_state = "bulb1"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "lC" = (
 /obj/item/clothing/glasses/thermal/syndi,
 /obj/item/clothing/glasses/thermal/syndi,
@@ -2219,6 +2581,16 @@
 	},
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
+"lM" = (
+/obj/structure/bed/chair{
+	dir = 8;
+	icon_state = "chair_preview"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "lS" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/rack/dark,
@@ -2249,6 +2621,13 @@
 /obj/structure/filingcabinet/filingcabinet,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"ma" = (
+/obj/structure/sign/art/blindfolds,
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
+	},
+/area/cadiaoutpost/oa/shuttle/governor)
 "mb" = (
 /obj/machinery/chemical_dispenser/full,
 /obj/effect/floor_decal/newcorner/teal/diagonal,
@@ -2282,6 +2661,26 @@
 /obj/random/technology_scanner,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
+"mk" = (
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "f";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"mo" = (
+/obj/structure/sign/ship{
+	icon_state = "trading";
+	pixel_x = -32
+	},
+/obj/effect/floor_decal/newcorner/blue{
+	dir = 8
+	},
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "mp" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -2327,6 +2726,11 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"mv" = (
+/turf/unsimulated/oldship{
+	icon_state = "rwallB"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "mA" = (
 /obj/structure/torchwall/service{
 	dir = 1;
@@ -2367,26 +2771,22 @@
 	},
 /area/centcom)
 "mL" = (
-/obj/structure/catwalk,
-/obj/structure/railing{
-	dir = 4
+/obj/structure/sign/inkvd,
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
 	},
-/obj/structure/railing{
-	dir = 8;
-	health = 700;
-	maxhealth = 700
-	},
-/turf/simulated/open,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "mN" = (
 /turf/simulated/floor/carpet,
 /area/centcom)
 "mO" = (
-/obj/effect/wingrille_spawn/reinforced{
-	color = "grey"
+/obj/effect/floor_decal/spline/fancy/wood,
+/obj/machinery/computer/shuttle_control/ferry/inquisition{
+	req_one_access = list(302)
 	},
-/turf/simulated/floor/darksteel_floor,
-/area/space)
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "mQ" = (
 /obj/structure/torchwall/service{
 	dir = 1;
@@ -2412,6 +2812,19 @@
 /obj/structure/curtain/medical,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"na" = (
+/obj/machinery/light/small/red,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/shuttle/station1)
+"nb" = (
+/obj/structure/shipdecor{
+	icon_state = "reading"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "ne" = (
 /obj/structure/table/marble,
 /obj/structure/window/reinforced/reliquary{
@@ -2497,18 +2910,22 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "nq" = (
-/obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table3";
+/turf/simulated/floor/ship_floor/engines{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/station1)
 "nr" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/floor_decal/turf/plating,
 /obj/item/modular_computer/console/preset/civilian,
 /turf/space,
 /area/cadiaoutpost/oa/groxpen)
+"ns" = (
+/obj/structure/toilet{
+	dir = 4
+	},
+/turf/simulated/floor/fancyfloor/gray_white,
+/area/cadiaoutpost/oa/shuttle/station1)
 "nt" = (
 /obj/effect/floor_decal/carpet{
 	dir = 8
@@ -2544,18 +2961,43 @@
 /obj/item/reagent_containers/hypospray/autoinjector/blood,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"nz" = (
+/obj/structure/closet/hive/iron_c{
+	anchored = 1
+	},
+/obj/item/clothing/suit/armor/ordohereticus,
+/obj/item/clothing/head/ordohereticus,
+/obj/item/cane/concealed,
+/obj/item/clothing/mask/gas/security/agent,
+/obj/item/clothing/accessory/holster,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "nB" = (
 /turf/space,
 /area/cadiaoutpost/oa/hangar)
+"nC" = (
+/obj/effect/floor_decal/newcorner/blue/solid,
+/obj/structure/shipdecor{
+	icon_state = "loading"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "nF" = (
-/obj/effect/floor_decal/newcorner/whitegreen/corner{
-	dir = 1
+/obj/item/device/flashlight/lamp/green{
+	pixel_y = 14
 	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
+/obj/item/device/pda{
+	pixel_y = -5
 	},
-/area/space)
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 8
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "nH" = (
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /obj/structure/reagent_dispensers/watertank,
@@ -2630,6 +3072,18 @@
 /obj/item/gun/projectile/lockebolter/drusian,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"og" = (
+/obj/machinery/computer/shuttle_control/specops,
+/obj/structure/table/steel,
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/space)
+"oo" = (
+/turf/unsimulated/oldship{
+	icon_state = "rwall9"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "op" = (
 /obj/structure/table/rack,
 /obj/item/ammo_box/flares/blue,
@@ -2658,6 +3112,13 @@
 /obj/item/gun/energy/pulse_rifle/pistol,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
+"ou" = (
+/obj/structure/sign/double/map/left,
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "ov" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -2667,6 +3128,18 @@
 /obj/effect/floor_decal/turf/brick/two,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"ox" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "oy" = (
 /obj/machinery/light/spot{
 	dir = 4;
@@ -2689,14 +3162,10 @@
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "oE" = (
-/obj/effect/floor_decal/newcorner/whitegreen/quarter{
-	dir = 4
+/turf/unsimulated/oldship{
+	icon_state = "rwall6"
 	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
-	},
-/area/space)
+/area/cadiaoutpost/oa/shuttle/station1)
 "oI" = (
 /obj/machinery/light{
 	dir = 1
@@ -2707,12 +3176,16 @@
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "oL" = (
-/obj/machinery/door/airlock/glass{
-	name = "Guard PDF Entrace";
-	req_one_access = list(63)
+/obj/structure/shuttle/engine/propulsion{
+	color = "grey"
 	},
-/turf/simulated/floor/factory_floor,
-/area/space)
+/turf/space,
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"oM" = (
+/obj/structure/bed/chair/comfy/captain,
+/obj/effect/floor_decal/spline/plain,
+/turf/simulated/floor/fancyfloor/carpet/blue,
+/area/cadiaoutpost/oa/shuttle/station1)
 "oQ" = (
 /obj/machinery/light{
 	icon_state = "tube1";
@@ -2738,19 +3211,32 @@
 /obj/item/reagent_containers/food/snacks/meat/rat_meat,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"oU" = (
+/obj/effect/shuttle_landmark/ferry/governor_start,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/governor)
 "oV" = (
 /obj/item/modular_computer/console/preset/civilian,
 /turf/simulated/floor,
 /area/space)
+"oW" = (
+/turf/simulated/floor/tiled/freezer,
+/area/cadiaoutpost/oa/shuttle/governor)
+"pb" = (
+/obj/structure/bed/chair/wood/fancy,
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 8
+	},
+/turf/simulated/floor/carpet/purple,
+/area/cadiaoutpost/oa/shuttle/governor)
 "pc" = (
-/obj/effect/floor_decal/newcorner/whitegreen/corner{
-	dir = 4
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
-	},
-/area/space)
+/area/cadiaoutpost/oa/shuttle/station1)
 "ph" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 1;
@@ -2766,6 +3252,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/groxpen)
+"pm" = (
+/turf/simulated/floor/ship_floor/engines{
+	dir = 5
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "pn" = (
 /obj/machinery/light{
 	dir = 4;
@@ -2850,25 +3341,35 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "pH" = (
-/obj/structure/bed/chair{
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 4
+	},
+/obj/structure/table/steel,
+/obj/item/fluff_items/paperwork,
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/space)
+"pJ" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/machinery/light{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
-/area/space)
-"pJ" = (
-/obj/machinery/door/airlock/glass{
-	name = "Guard PDF Mess Hall";
-	req_one_access = list(63)
-	},
-/turf/simulated/floor/factory_floor,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "pP" = (
-/obj/structure/warfare/barricade/concrete_barrier/sandbag{
-	icon_state = "ends-connected-e-s-w";
-	dir = 4
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/railing{
+	dir = 1
 	},
-/turf/simulated/floor/factory_floor,
-/area/space)
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "pQ" = (
 /obj/structure/window/reinforced{
 	color = "grey";
@@ -2892,22 +3393,39 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisitionpact)
-"pX" = (
-/obj/effect/floor_decal/newcorner/whitegreen{
-	dir = 4
-	},
-/turf/simulated/floor/tiled{
+"pV" = (
+/obj/structure/window/reinforced{
 	color = "grey";
-	icon_state = "white1"
+	dir = 8
 	},
-/area/space)
-"qa" = (
-/obj/structure/bed/chair{
-	dir = 8;
-	icon_state = "chair_preview"
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a17";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"pX" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/curtain/open/shower/security,
 /turf/simulated/floor/tiled/dark,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"pY" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/machinery/power/smes/buildable/max_cap_in_out,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"qa" = (
+/obj/effect/floor_decal/turf/bar3,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"qb" = (
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "v";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "qe" = (
 /obj/structure/table/rack/dark,
 /obj/item/storage/firstaid/adv,
@@ -2923,6 +3441,14 @@
 "qi" = (
 /turf/simulated/shuttle/wall/corner/dark/ne,
 /area/cadiaoutpost/oa/shuttle/tau1)
+"qm" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/table/graf/reinf_table,
+/obj/item/fluff_items/paperwork,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "qn" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/rack/dark,
@@ -2944,6 +3470,24 @@
 	color = "grey"
 	},
 /area/centcom)
+"qr" = (
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a15";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"qC" = (
+/obj/effect/floor_decal/spline/fancy/wood/corner{
+	dir = 4
+	},
+/turf/simulated/floor/ship_floor/engines{
+	dir = 6
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"qG" = (
+/obj/structure/table/graf/big_wood_table,
+/turf/simulated/floor/carpet/purple,
+/area/cadiaoutpost/oa/shuttle/governor)
 "qH" = (
 /obj/item/clothing/head/helmet/mining,
 /obj/item/clothing/head/helmet/hard_had{
@@ -2956,12 +3500,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "qJ" = (
-/obj/item/stool{
-	color = "grey"
+/turf/unsimulated/oldship{
+	icon_state = "rwall5"
 	},
-/obj/effect/floor_decal/turf/metal,
-/turf/simulated/floor/tiled/dark,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/station1)
 "qM" = (
 /turf/simulated/floor/tiled/freezer,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -2977,9 +3519,10 @@
 	},
 /area/centcom)
 "qV" = (
-/obj/effect/floor_decal/turf/metal/five,
+/obj/machinery/door/airlock/hatch/simiel,
+/obj/effect/floor_decal/turf/bloodbar,
 /turf/simulated/floor/tiled/dark,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "qW" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/spline/fancy/wood/cee{
@@ -2987,16 +3530,57 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"qY" = (
+/obj/machinery/door/airlock/engineering,
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/space)
 "rc" = (
 /obj/machinery/chem_master{
 	color = "grey"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"re" = (
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/shuttle/station1)
 "rf" = (
 /obj/machinery/computer/shuttle_control/ferry/tau,
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/shuttle/tau2)
+"rh" = (
+/obj/structure/closet/hive/iron_c{
+	anchored = 1
+	},
+/obj/item/card/id/key/grand/inq{
+	access = list(5,63,333,331,230,211,202,302,10,2,1984)
+	},
+/obj/item/clothing/shoes/jackboots/inquisitor,
+/obj/item/clothing/suit/inquisitor,
+/obj/item/clothing/under/inquisitor,
+/obj/item/clothing/head/inquisitor,
+/obj/item/clothing/gloves/thick/swat/combat,
+/obj/random/loot/randomitemtown,
+/obj/random/loot/randomitemtown,
+/obj/random/loot/randomsupply,
+/obj/random/loot/randomsupply,
+/obj/random/loot/randomitemcaves,
+/obj/random/loot/sidearms,
+/obj/random/loot/meleespawner,
+/obj/random/loot/tech2,
+/obj/random/loot/guardgear,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"ri" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/table/graf/reinf_table,
+/obj/machinery/light,
+/obj/item/fluff_items/paperwork,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "rj" = (
 /obj/structure/statue/verina,
 /obj/effect/floor_decal/turf/brick/two,
@@ -3012,27 +3596,32 @@
 /area/cadiaoutpost/oa/groxpen)
 "rx" = (
 /obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1";
-	light_color = "#234F1E"
+	dir = 1;
+	icon_state = "bulb1"
 	},
-/obj/effect/floor_decal/turf/metal/seven,
-/turf/simulated/floor/tiled/dark,
-/area/space)
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "rB" = (
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /obj/machinery/vending/tool,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
-"rH" = (
-/obj/effect/floor_decal/newcorner/whitegreen/corner{
+"rF" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/railing{
 	dir = 8
 	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
-	},
-/area/space)
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"rH" = (
+/obj/structure/table/graf/big_wood_table,
+/obj/item/reagent_containers/food/snacks/appletart,
+/turf/simulated/floor/carpet/purple,
+/area/cadiaoutpost/oa/shuttle/governor)
 "rI" = (
 /obj/structure/table/steel,
 /obj/effect/floor_decal/newcorner/teal/diagonal,
@@ -3045,12 +3634,16 @@
 	color = "yellow"
 	},
 /area/space)
-"rL" = (
-/obj/structure/warfare/barricade/concrete_barrier/sandbag{
-	icon_state = "centers"
+"rM" = (
+/obj/structure/shipdecor{
+	icon_state = "charon"
 	},
-/turf/simulated/floor/factory_floor,
-/area/space)
+/obj/effect/floor_decal/newcorner/blue/solid,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "rN" = (
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /obj/machinery/door/airlock/centcom{
@@ -3058,6 +3651,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"rS" = (
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/shuttle/station1)
 "rT" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/torchwall/service{
@@ -3066,14 +3665,14 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "rU" = (
-/obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table3";
-	dir = 4
+/obj/structure/table/steel_reinforced,
+/obj/effect/floor_decal/spline/plain{
+	dir = 5
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 5
 	},
-/area/space)
+/area/cadiaoutpost/oa/shuttle/station1)
 "rX" = (
 /obj/machinery/fusion_fuel_compressor,
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
@@ -3105,6 +3704,18 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"sc" = (
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "t";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"sd" = (
+/obj/effect/floor_decal/spline/fancy/wood,
+/turf/simulated/floor/ship_floor/engines{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "sm" = (
 /turf/simulated/shuttle/wall/corner/dark/nw{
 	color = "grey"
@@ -3146,6 +3757,13 @@
 	color = "grey"
 	},
 /area/centcom)
+"sE" = (
+/obj/item/remains/human,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "sJ" = (
 /obj/structure/table/rack,
 /obj/item/clothing/suit/armor/seolsuit{
@@ -3154,9 +3772,10 @@
 	},
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
-"sL" = (
+"sO" = (
+/obj/structure/catwalkrust/water,
 /turf/simulated/floor/plating,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/governor)
 "sS" = (
 /obj/structure/table/marble,
 /obj/item/clothing/suit/storage/hooded/inquisitor,
@@ -3202,6 +3821,13 @@
 	color = "grey"
 	},
 /area/centcom)
+"td" = (
+/obj/machinery/light/red,
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "tj" = (
 /turf/simulated/wall/techno,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -3243,11 +3869,23 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"tw" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/table/graf/rich_table,
+/obj/machinery/light/red,
+/obj/item/storage/secure/briefcase/heavysniper,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "tz" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/floor_decal/turf/plating,
 /turf/space,
 /area/cadiaoutpost/oa/groxpen)
+"tB" = (
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/space)
 "tC" = (
 /obj/machinery/light{
 	dir = 4;
@@ -3271,12 +3909,21 @@
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "tM" = (
-/obj/machinery/door/airlock/cone{
-	req_one_access = list(63);
-	name = "Hangar"
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/machinery/hologram/projector,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"tR" = (
+/obj/structure/table/graf/polished_table,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/bloodbar,
+/obj/machinery/button/remote/blast_door/lever{
+	id = "inq1";
+	name = "EXIT LEVER"
 	},
-/turf/simulated/floor/factory_floor,
-/area/space)
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "tT" = (
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
@@ -3297,6 +3944,33 @@
 /obj/machinery/gibber,
 /turf/simulated/floor/tiled/freezer,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"tW" = (
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "t";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"tX" = (
+/obj/structure/sign/double/map/right,
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"ua" = (
+/obj/structure/table/steel_reinforced,
+/obj/item/paper_bin{
+	pixel_y = 8
+	},
+/obj/item/pen/multi{
+	pixel_y = 2
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "t";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "ud" = (
 /obj/structure/table/marble,
 /obj/structure/window/reinforced/reliquary{
@@ -3360,6 +4034,20 @@
 	icon_state = "white1"
 	},
 /area/centcom)
+"us" = (
+/turf/unsimulated/oldship{
+	icon_state = "rwall8"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"uw" = (
+/obj/structure/sign/ship{
+	icon_state = "trading";
+	pixel_x = -32
+	},
+/turf/unsimulated/oldship{
+	icon_state = "rwall12"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "ux" = (
 /turf/unsimulated/floor/ert,
 /area/centcom)
@@ -3400,6 +4088,30 @@
 /obj/machinery/atmospherics/pipe/tank/oxygen,
 /turf/simulated/floor/plating,
 /area/centcom)
+"uQ" = (
+/obj/structure/bed/chair/comfy/captain{
+	desc = "Comfy chair for luxury and piloting.";
+	dir = 8;
+	icon_state = "capchair_preview";
+	name = "pilot seat"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"uR" = (
+/obj/machinery/door/blast/regular{
+	dir = 4;
+	id = "ship_shutters";
+	name = "Bridge Blast Door"
+	},
+/turf/unsimulated/wall/fakeglass{
+	dir = 1;
+	icon = 'icons/map_project/windows.dmi';
+	icon_state = "r_window"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "uS" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/torchwall/service{
@@ -3423,28 +4135,15 @@
 	},
 /area/centcom)
 "vc" = (
-/obj/structure/warfare/barricade/concrete_barrier{
-	dir = 1
+/obj/machinery/door/airlock/ancient_ship/command{
+	req_access = list();
+	req_one_access = list(302)
 	},
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1";
-	light_color = "#234F1E"
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/space)
-"vf" = (
-/obj/structure/catwalk,
-/obj/machinery/light/small,
-/obj/structure/railing{
-	dir = 8;
-	health = 700;
-	maxhealth = 700
-	},
-/turf/simulated/open,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/station1)
 "vm" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/floor_decal/turf/metal/five,
@@ -3462,20 +4161,13 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "vq" = (
-/obj/structure/warfare/barricade/sandbag{
-	dir = 4
-	},
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/table/graf/reinf_table,
 /turf/simulated/floor/tiled/dark,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "vu" = (
-/obj/structure/warfare/barricade/sandbag{
-	dir = 8
-	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "dark1"
-	},
-/area/space)
+/turf/simulated/floor/carpet/purple,
+/area/cadiaoutpost/oa/shuttle/governor)
 "vv" = (
 /obj/effect/wingrille_spawn/reinforced/polarized/full,
 /turf/space,
@@ -3486,6 +4178,22 @@
 	color = "grey"
 	},
 /area/centcom)
+"vx" = (
+/obj/structure/bed/chair/office/dark{
+	dir = 8
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a3";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"vy" = (
+/obj/structure/shipdecor/cryochamber,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a15";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "vE" = (
 /turf/unsimulated/wall,
 /area/centcom)
@@ -3509,11 +4217,12 @@
 	},
 /area/centcom)
 "vH" = (
-/obj/structure/warfare/barricade/sandbag{
-	dir = 8
-	},
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/table/graf/reinf_table,
+/obj/machinery/light,
+/obj/item/fluff_items/paperwork,
 /turf/simulated/floor/tiled/dark,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "vK" = (
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /obj/structure/bed/chair/office/dark{
@@ -3569,11 +4278,35 @@
 /obj/item/gun/energy/pulse_rifle/pistol,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
+"wn" = (
+/obj/effect/floor_decal/turf/steel,
+/obj/machinery/door/airlock/centcom,
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/space)
 "wo" = (
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"wp" = (
+/obj/structure/table/steel_reinforced,
+/obj/item/paper_bin{
+	pixel_y = 8
+	},
+/obj/item/pen/multi{
+	pixel_y = 2
+	},
+/obj/machinery/light/small/red{
+	dir = 8;
+	icon_state = "bulb1"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "m";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "wq" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/item/cell/lasgun/hotshot,
@@ -3597,12 +4330,18 @@
 	color = "grey"
 	},
 /area/centcom)
+"ww" = (
+/obj/structure/table/steel,
+/obj/item/fluff_items/paperwork,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/governor)
 "wx" = (
-/obj/effect/wingrille_spawn/reinforced{
-	color = "grey"
-	},
-/turf/simulated/floor/factory_floor,
-/area/space)
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/bed/chair/wood/fancy,
+/obj/effect/floor_decal/turf/bloodbar,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "wy" = (
 /obj/machinery/light{
 	dir = 8;
@@ -3630,6 +4369,10 @@
 	icon_state = "white1"
 	},
 /area/centcom)
+"wC" = (
+/obj/structure/curtain/open/shower/security,
+/turf/simulated/floor/carpet/purple,
+/area/cadiaoutpost/oa/shuttle/governor)
 "wD" = (
 /obj/structure/window/reinforced{
 	dir = 1;
@@ -3638,10 +4381,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
 "wE" = (
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/space)
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/bloodbar,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "wJ" = (
 /obj/effect/wingrille_spawn/reinforced/crescent,
 /turf/space,
@@ -3679,6 +4422,24 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"wS" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/freezer,
+/area/cadiaoutpost/oa/shuttle/governor)
+"wT" = (
+/obj/machinery/button/remote/blast_door/id_scan{
+	id = "arvusrampdoor";
+	pixel_y = 5;
+	req_access = list(302)
+	},
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "wU" = (
 /mob/living/bot/medbot,
 /turf/simulated/floor/tiled/dark{
@@ -3694,14 +4455,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "wY" = (
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1";
-	light_color = "#234F1E"
-	},
-/obj/structure/bed/chair,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/flora/pottedplant,
 /turf/simulated/floor/tiled/dark,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "xb" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/floor_decal/turf/plating,
@@ -3720,22 +4477,21 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "xd" = (
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/space)
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/table/graf/reinf_table,
+/obj/item/storage/belt/medical/full,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"xf" = (
+/obj/structure/grille/metal_bars/cell,
+/obj/effect/floor_decal/turf/metal/five,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "xh" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/obj/effect/floor_decal/newcorner/whitegreen{
-	dir = 8
-	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
-	},
-/area/space)
+/obj/structure/catwalkrust/water,
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "xn" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -3787,6 +4543,24 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisitionpact)
+"xw" = (
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "m";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"xB" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 4
+	},
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/space)
 "xE" = (
 /obj/structure/table/steel,
 /obj/item/defibrillator/loaded,
@@ -3903,10 +4677,9 @@
 /turf/simulated/floor/asteroid/air,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "yf" = (
-/obj/effect/floor_decal/newcorner/whitegreen/corner,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
+/obj/structure/closet,
+/turf/simulated/floor/darkfloor{
+	dir = 8
 	},
 /area/space)
 "yg" = (
@@ -3951,15 +4724,13 @@
 /turf/simulated/floor/asteroid/air,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "yz" = (
-/obj/structure/bed/chair{
-	dir = 8
+/obj/structure/table/rack/dark,
+/obj/random/soap,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "v";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/obj/effect/floor_decal/newcorner/whitegreen,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
-	},
-/area/space)
+/area/cadiaoutpost/oa/shuttle/station1)
 "yA" = (
 /obj/structure/bed/chair{
 	dir = 4;
@@ -3999,10 +4770,20 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "yQ" = (
-/obj/item/device/binoculars,
-/obj/structure/table/steel_reinforced,
-/turf/simulated/floor/tiled/dark,
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
+/obj/structure/closet,
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
 /area/space)
+"yT" = (
+/turf/unsimulated/oldship{
+	icon_state = "rwall15"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "yU" = (
 /obj/machinery/computer/shuttle_control/ferry/inquisition,
 /turf/simulated/floor/plating{
@@ -4026,6 +4807,14 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"ze" = (
+/obj/structure/table/graf/rich_table,
+/obj/item/gun/energy/pulse/plasma/pistol/toaster,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/machinery/light,
+/obj/item/card/id/key/grand/inq,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "zi" = (
 /obj/random/firstaid,
 /obj/random/firstaid,
@@ -4041,6 +4830,13 @@
 	},
 /turf/simulated/floor/plating/reinforced,
 /area/centcom)
+"zl" = (
+/obj/effect/floor_decal/newcorner/blue/quarter,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "zn" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/floor_decal/turf/plating,
@@ -4070,6 +4866,12 @@
 /obj/machinery/atmospherics/pipe/tank/hydrogen,
 /turf/simulated/floor/plating,
 /area/centcom)
+"zs" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "zx" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/machinery/door/airlock/imperiumdoor{
@@ -4111,6 +4913,12 @@
 /obj/effect/floor_decal/newcorner/bar/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"zG" = (
+/obj/structure/bed/chair/office/light{
+	dir = 1
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "zH" = (
 /obj/machinery/vending/medical,
 /obj/effect/floor_decal/newcorner/teal/diagonal,
@@ -4126,12 +4934,14 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "zL" = (
-/obj/structure/bed/chair{
-	dir = 4;
-	icon_state = "chair_preview"
-	},
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/table/graf/rich_table,
+/obj/machinery/light/red,
+/obj/item/gun/projectile/revolver/mateba,
+/obj/item/ammo_magazine/c44,
+/obj/item/ammo_magazine/c44,
 /turf/simulated/floor/tiled/dark,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "zN" = (
 /obj/machinery/light{
 	icon_state = "tube1";
@@ -4139,6 +4949,20 @@
 	},
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/shuttle/tau2)
+"zR" = (
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 4;
+	pixel_x = 16
+	},
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 8;
+	pixel_x = -16
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "f";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "zS" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -4173,6 +4997,13 @@
 	},
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/tauship)
+"Ac" = (
+/obj/effect/floor_decal/turf/bar2,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "t";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Ah" = (
 /obj/structure/table/standard{
 	color = "grey"
@@ -4189,6 +5020,13 @@
 /obj/item/device/radio/headset/red_team,
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/shuttle/tau2)
+"Aj" = (
+/obj/machinery/door/airlock/ancient_ship/maint,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Al" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /obj/machinery/light/spot{
@@ -4198,15 +5036,11 @@
 /turf/simulated/floor/plating,
 /area/centcom)
 "Am" = (
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1";
-	light_color = "#234F1E"
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a3";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/space)
+/area/cadiaoutpost/oa/shuttle/station1)
 "An" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/steel,
@@ -4257,17 +5091,25 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "AN" = (
-/obj/structure/table/graf/reinf_table{
-	icon_state = "table_horizontal2"
+/turf/unsimulated/wall/fakeglass{
+	dir = 8;
+	icon = 'icons/map_project/windows.dmi';
+	icon_state = "r_window"
 	},
-/turf/simulated/floor/tiled/dark,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/station1)
 "AP" = (
 /obj/machinery/light/spot,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
 /area/centcom)
+"AQ" = (
+/turf/unsimulated/wall/fakeglass{
+	dir = 5;
+	icon = 'icons/map_project/windows.dmi';
+	icon_state = "r_window"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "AU" = (
 /obj/machinery/door/blast/regular,
 /turf/simulated/floor/tiled/dark,
@@ -4280,6 +5122,18 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"Bc" = (
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/obj/structure/closet/hive/iron_c{
+	anchored = 1
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "m";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Bd" = (
 /obj/structure/curtain/open/privacy,
 /obj/effect/floor_decal/turf/brick,
@@ -4350,12 +5204,16 @@
 /turf/space,
 /area/space)
 "Bv" = (
-/obj/item/stool{
-	color = "grey"
-	},
-/obj/effect/floor_decal/turf/metal/two,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/bloodbar,
+/obj/effect/floor_decal/turf/bloodbar,
 /turf/simulated/floor/tiled/dark,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"Bz" = (
+/turf/unsimulated/oldship{
+	icon_state = "rwall11"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "BA" = (
 /obj/machinery/teleport/hub,
 /obj/item/device/radio/beacon,
@@ -4381,8 +5239,20 @@
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "BG" = (
-/turf/simulated/open,
-/area/space)
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"BH" = (
+/obj/machinery/light/red{
+	dir = 1
+	},
+/obj/effect/floor_decal/turf/bar3,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "BJ" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -4422,6 +5292,13 @@
 /obj/item/defibrillator,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"BW" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/table/rack/dark,
+/obj/item/clothing/suit/armor/carapace4,
+/obj/item/clothing/head/helmet/stalkerhelm2,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "BX" = (
 /turf/simulated/shuttle/wall/corner/dark/sw{
 	color = "grey"
@@ -4431,12 +5308,22 @@
 	},
 /area/space)
 "BZ" = (
-/obj/machinery/door/airlock/glass{
-	name = "Guard Upper Storage";
-	req_one_access = list(63)
+/turf/space,
+/area/cadiaoutpost/oa/shuttle/station1)
+"Cb" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/machinery/telecomms/processor/preset_two,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"Ce" = (
+/obj/machinery/cryopod{
+	dir = 6
 	},
-/turf/simulated/floor/factory_floor,
-/area/space)
+/turf/unsimulated/oldship{
+	icon_state = "rwall1"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Cn" = (
 /obj/machinery/optable,
 /obj/machinery/oxygen_pump/anesthetic{
@@ -4446,12 +5333,36 @@
 	color = "grey"
 	},
 /area/centcom)
+"Co" = (
+/obj/structure/bed/chair/comfy/captain{
+	desc = "Comfy chair for luxury and piloting.";
+	dir = 4;
+	icon_state = "capchair_preview";
+	name = "pilot seat"
+	},
+/obj/effect/floor_decal/newcorner/blue/solid,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/shuttle/station1)
 "Cp" = (
 /turf/simulated/shuttle/wall{
 	color = "grey";
 	icon_state = "wall3"
 	},
 /area/cadiaoutpost/oa/tauship)
+"Cs" = (
+/obj/structure/sign/ship{
+	icon_state = "trading0";
+	pixel_x = -32
+	},
+/obj/effect/floor_decal/newcorner/blue{
+	dir = 8
+	},
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Ct" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/floor_decal/turf/metal/five,
@@ -4461,6 +5372,13 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"Cx" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "Cz" = (
 /obj/structure/closet/crate/meat,
 /turf/simulated/floor/tiled/freezer,
@@ -4551,20 +5469,26 @@
 /turf/simulated/floor/tiled/ramp,
 /area/centcom)
 "CP" = (
-/obj/machinery/light/small{
-	dir = 1;
-	icon_state = "bulb1"
+/obj/effect/floor_decal/turf/metal/five,
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"CQ" = (
+/turf/simulated/floor/ship_floor/engines{
+	dir = 8
 	},
-/area/space)
+/area/cadiaoutpost/oa/shuttle/station1)
+"CR" = (
+/turf/space,
+/turf/unsimulated/oldship{
+	icon_state = "rwall7"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "CS" = (
-/obj/structure/warfare/barricade/concrete_barrier/sandbag{
-	icon_state = "ends-e-w-s";
-	dir = 4
-	},
-/turf/simulated/floor/factory_floor,
+/turf/simulated/wall,
 /area/space)
 "CT" = (
 /obj/machinery/door/airlock/glass_command{
@@ -4596,6 +5520,16 @@
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"CV" = (
+/obj/machinery/light/small/red{
+	dir = 8;
+	icon_state = "bulb1"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "CX" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -4621,9 +5555,19 @@
 	color = "grey"
 	},
 /area/centcom)
+"Di" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 8
+	},
+/turf/simulated/floor/ship_floor/engines{
+	dir = 4
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Dj" = (
-/obj/machinery/light/small,
-/turf/simulated/floor/tiled/dark,
+/obj/structure/shipdecor/warp{
+	pixel_x = 300
+	},
+/turf/space,
 /area/space)
 "Dm" = (
 /obj/machinery/cooker/grill,
@@ -4636,6 +5580,14 @@
 	color = "grey"
 	},
 /area/centcom)
+"Do" = (
+/obj/machinery/light/red{
+	dir = 1
+	},
+/turf/simulated/floor/ship_floor/engines{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Dr" = (
 /obj/machinery/cooker/grill,
 /obj/effect/floor_decal/newcorner/plazaf/diagonal,
@@ -4644,19 +5596,11 @@
 	},
 /area/centcom)
 "DA" = (
-/obj/structure/catwalk,
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1";
-	light_color = "#234F1E"
-	},
-/obj/structure/railing{
-	dir = 8;
-	health = 700;
-	maxhealth = 700
-	},
-/turf/simulated/open,
-/area/space)
+/obj/structure/table/graf/polished_table,
+/obj/machinery/photocopier/faxmachine,
+/obj/effect/floor_decal/turf/metal/five,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "DE" = (
 /obj/structure/table/rack/shelf{
 	color = "grey"
@@ -4678,6 +5622,15 @@
 	icon_state = "white1"
 	},
 /area/centcom)
+"DM" = (
+/obj/structure/shipdecor{
+	icon_state = "off"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a3";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "DP" = (
 /obj/structure/window/reinforced,
 /obj/machinery/light{
@@ -4686,22 +5639,28 @@
 	},
 /turf/simulated/floor/plating/reinforced,
 /area/centcom)
+"DQ" = (
+/obj/machinery/door/blast/bordergater,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "DS" = (
-/obj/effect/floor_decal/newcorner/whitegreen/quarter,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
+/obj/machinery/light/small/red{
+	dir = 1;
+	icon_state = "bulb1"
 	},
-/area/space)
+/obj/structure/toilet{
+	dir = 4
+	},
+/turf/simulated/floor/fancyfloor/gray_white,
+/area/cadiaoutpost/oa/shuttle/station1)
 "DT" = (
-/obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table3";
-	dir = 8
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/space)
+/obj/effect/floor_decal/turf/metal/five,
+/obj/machinery/light,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "DV" = (
 /obj/machinery/atmospherics/pipe/tank/nitrogen,
 /turf/simulated/floor/plating,
@@ -4740,6 +5699,28 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"Eg" = (
+/obj/structure/sink{
+	dir = 8;
+	icon_state = "sink";
+	layer = 50;
+	pixel_x = -12
+	},
+/obj/structure/mirror{
+	pixel_x = -32
+	},
+/turf/simulated/floor/fancyfloor/gray_white,
+/area/cadiaoutpost/oa/shuttle/station1)
+"El" = (
+/obj/structure/shipdecor{
+	icon_state = "bluedeath"
+	},
+/obj/structure/shipdecor/warp,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Em" = (
 /obj/machinery/light/spot{
 	dir = 4;
@@ -4749,13 +5730,34 @@
 	color = "grey"
 	},
 /area/centcom)
-"Ep" = (
-/obj/item/stool{
-	color = "grey"
+"En" = (
+/obj/structure/sign/ship{
+	icon_state = "picture2";
+	pixel_x = -32
 	},
-/obj/effect/floor_decal/turf/metal/nine,
-/turf/simulated/floor/tiled/dark,
-/area/space)
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"Eo" = (
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a3";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"Ep" = (
+/obj/structure/table/rack/dark,
+/obj/item/storage/toolbox/electrical,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "v";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Et" = (
 /obj/machinery/light{
 	dir = 4
@@ -4783,6 +5785,12 @@
 	color = "grey"
 	},
 /area/centcom)
+"EB" = (
+/obj/item/card/id/key/grand/inq{
+	access = list(5,63,333,331,230,211,202,302,10,2,1984)
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "EC" = (
 /obj/effect/wingrille_spawn/reinforced/polarized/full,
 /turf/space,
@@ -4793,6 +5801,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"EG" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/bed/chair/comfy/captain,
+/obj/effect/floor_decal/turf/bloodbar,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "EK" = (
 /obj/structure/bed/chair{
 	dir = 4;
@@ -4806,11 +5820,14 @@
 	},
 /area/centcom)
 "EQ" = (
-/obj/structure/warfare/barricade/concrete_barrier{
-	dir = 8
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/table/rack/dark,
+/obj/item/clothing/suit/armor/heretcoat{
+	armor = list("melee"=48,"bullet"=58,"laser"=48,"energy"=30,"bomb"=40,"bio"=10,"rad"=20)
 	},
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,
 /turf/simulated/floor/tiled/dark,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "ET" = (
 /obj/structure/bed/chair{
 	dir = 1;
@@ -4823,6 +5840,15 @@
 	color = "grey"
 	},
 /area/centcom)
+"EU" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/table/graf/rich_table,
+/obj/machinery/light/red,
+/obj/item/gun/energy/las/lasgun/catachan,
+/obj/item/cell/lasgun/hotshot,
+/obj/item/cell/lasgun/hotshot,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "EW" = (
 /obj/structure/table/rack,
 /obj/item/gun/projectile/eldar/spistol,
@@ -4872,11 +5898,33 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"Fd" = (
+/obj/effect/floor_decal/newcorner/blue/solid,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/shuttle/station1)
 "Fk" = (
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
 /area/centcom)
+"Fm" = (
+/obj/structure/bed/chair/comfy/captain{
+	desc = "Comfy chair for luxury and piloting.";
+	dir = 1;
+	icon_state = "capchair_preview";
+	name = "pilot seat"
+	},
+/obj/machinery/light/red,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"Fn" = (
+/turf/simulated/floor/ship_floor/engines{
+	dir = 4
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Fo" = (
 /obj/structure/table/steel,
 /obj/effect/floor_decal/turf/brick,
@@ -4900,24 +5948,37 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/tau1)
+"Fr" = (
+/obj/structure/shipdecor{
+	icon_state = "reading"
+	},
+/obj/effect/floor_decal/spline/plain{
+	dir = 1;
+	icon_state = "spline_plain"
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"Fs" = (
+/obj/machinery/light/small/red,
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "v";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Fu" = (
-/obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table3";
-	dir = 1
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/space)
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/plating,
+/obj/effect/floor_decal/turf/bloodbar,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "Fx" = (
-/obj/effect/floor_decal/newcorner/whitegreen/quarter{
-	dir = 1
-	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
-	},
-/area/space)
+/obj/structure/table/graf/big_wood_table,
+/obj/item/reagent_containers/food/snacks/aesirsalad,
+/turf/simulated/floor/carpet/purple,
+/area/cadiaoutpost/oa/shuttle/governor)
 "Fy" = (
 /obj/structure/bed/chair{
 	dir = 8;
@@ -4950,14 +6011,27 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "FF" = (
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1";
-	light_color = "#234F1E"
+/obj/structure/bed,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/obj/effect/floor_decal/turf/metal/six,
-/turf/simulated/floor/tiled/dark,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/station1)
+"FG" = (
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
+	},
+/area/cadiaoutpost/oa/shuttle/governor)
+"FJ" = (
+/obj/structure/shipdecor/generator{
+	icon_state = "gen1"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a15";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "FK" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/effect/floor_decal/turf/brick,
@@ -4966,6 +6040,11 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"FM" = (
+/turf/unsimulated/oldship{
+	icon_state = "rwall14"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "FN" = (
 /turf/simulated/shuttle/wall{
 	color = "grey";
@@ -4985,9 +6064,23 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"FZ" = (
+/turf/unsimulated/oldship{
+	icon_state = "rwall12"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Gc" = (
 /turf/simulated/wall/r_wall,
 /area/centcom)
+"Gg" = (
+/obj/structure/shipdecor{
+	icon_state = "1,011"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Gk" = (
 /turf/simulated/wall/r_wall{
 	icon_state = "rwall12"
@@ -5025,17 +6118,34 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"GH" = (
-/obj/machinery/light/small{
-	dir = 1;
-	icon_state = "bulb1"
+"Gw" = (
+/obj/structure/shipdecor{
+	icon_state = "tncB"
 	},
-/obj/structure/bed/chair{
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"GD" = (
+/obj/machinery/light{
 	dir = 8;
-	icon_state = "chair_preview"
+	icon_state = "tube1"
+	},
+/obj/structure/table/steel,
+/obj/item/book/manual/rust_engine,
+/obj/item/book/manual{
+	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
+	name = "Lectitio Divinitatus"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/governor)
+"GH" = (
+/obj/structure/table/graf/polished_table,
+/obj/effect/floor_decal/turf/bloodbar,
+/obj/machinery/button,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "GL" = (
 /turf/simulated/shuttle/wall/corner/dark/ne{
 	color = "grey"
@@ -5055,19 +6165,42 @@
 /obj/effect/wingrille_spawn/reinforced/full,
 /turf/simulated/floor/wood,
 /area/centcom)
-"GX" = (
-/obj/machinery/light/small,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "dark1"
+"GW" = (
+/obj/structure/table/steel_reinforced,
+/obj/random/snack,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/space)
+/area/cadiaoutpost/oa/shuttle/station1)
+"GX" = (
+/obj/structure/sign/ship{
+	icon_state = "picture2";
+	pixel_x = -32
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Hc" = (
 /obj/effect/wingrille_spawn/reinforced_phoron/full,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
 /area/centcom)
+"Hd" = (
+/obj/structure/window/reinforced{
+	color = "grey";
+	dir = 4;
+	health = 400;
+	maxhealth = 400
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "b1";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Hg" = (
 /obj/structure/table/marble,
 /obj/item/clothing/mask/chameleon/voice,
@@ -5087,10 +6220,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
 "Ho" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/dark,
+/obj/structure/sign/poster/poster7,
+/turf/simulated/wall,
 /area/space)
 "Hp" = (
 /obj/effect/floor_decal/turf/plating,
@@ -5100,6 +6231,14 @@
 	},
 /turf/space,
 /area/cadiaoutpost/oa/groxpen)
+"Hq" = (
+/obj/effect/floor_decal/spline/fancy/wood/corner{
+	dir = 8
+	},
+/turf/simulated/floor/ship_floor/engines{
+	dir = 5
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Hs" = (
 /obj/machinery/door/airlock/multi_tile/glass{
 	dir = 8
@@ -5114,11 +6253,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
 "Hw" = (
-/obj/machinery/light/small,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/space)
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/table/graf/reinf_table,
+/obj/item/pizzabox/meat,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "Hx" = (
 /obj/structure/filingcabinet,
 /obj/machinery/light{
@@ -5127,6 +6266,9 @@
 	},
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
+"HC" = (
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "HF" = (
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /obj/structure/bed/chair/office/dark{
@@ -5178,6 +6320,10 @@
 /obj/item/shield/energy,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
+"HV" = (
+/obj/effect/floor_decal/newcorner/blue/corner,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/shuttle/station1)
 "HW" = (
 /obj/effect/decal/remains,
 /turf/simulated/floor/asteroid/air,
@@ -5191,12 +6337,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "HY" = (
-/obj/effect/floor_decal/turf/metal/six,
-/obj/structure/sign/double/planet/left{
-	pixel_y = 32
-	},
+/obj/structure/table/graf/polished_table,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/bloodbar,
+/obj/item/fluff_items/paperwork,
 /turf/simulated/floor/tiled/dark,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "Ia" = (
 /obj/structure/table/steel,
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
@@ -5209,6 +6355,25 @@
 /obj/structure/table/steel_reinforced,
 /turf/space,
 /area/cadiaoutpost/oa/groxpen)
+"Ic" = (
+/obj/machinery/light/small/red{
+	dir = 1;
+	icon_state = "bulb1"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "v";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"If" = (
+/obj/structure/shipdecor/generator{
+	icon_state = "gen0"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a15";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Ig" = (
 /obj/machinery/suit_storage_unit/medical,
 /obj/effect/floor_decal/newcorner/teal/diagonal,
@@ -5216,15 +6381,24 @@
 	icon_state = "white1"
 	},
 /area/centcom)
+"Ik" = (
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Im" = (
-/obj/effect/floor_decal/newcorner/whitegreen/quarter{
-	dir = 8
+/obj/structure/closet/hive/metal{
+	anchored = 1
 	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "t";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/space)
+/area/cadiaoutpost/oa/shuttle/station1)
 "In" = (
 /obj/effect/floor_decal/turf/plating,
 /turf/space,
@@ -5247,6 +6421,15 @@
 	},
 /turf/simulated/floor/carpet,
 /area/centcom)
+"Iz" = (
+/obj/structure/shipdecor{
+	icon_state = "off"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "t";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "IA" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -5256,13 +6439,30 @@
 	},
 /area/centcom)
 "IC" = (
-/obj/effect/floor_decal/turf/metal/three,
-/turf/simulated/floor/tiled/dark,
-/area/space)
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "IE" = (
 /obj/machinery/atmospherics/pipe/tank/phoron,
 /turf/simulated/floor/plating,
 /area/centcom)
+"IF" = (
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
+/obj/structure/table/steel,
+/obj/item/book/manual/rust_engine,
+/obj/item/book/manual{
+	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
+	name = "Lectitio Divinitatus"
+	},
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/space)
 "IG" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/effect/floor_decal/turf/bloodbar,
@@ -5273,6 +6473,16 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"IH" = (
+/obj/effect/floor_decal/turf/bar3,
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "IK" = (
 /obj/structure/window/reinforced{
 	color = "grey";
@@ -5282,8 +6492,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
 "IM" = (
-/obj/structure/bed/chair,
-/turf/simulated/floor/tiled/dark,
+/obj/structure/catwalkrust/water,
+/turf/simulated/floor/plating,
 /area/space)
 "IP" = (
 /obj/structure/window/reinforced{
@@ -5310,6 +6520,16 @@
 	icon_state = "rwall3"
 	},
 /area/centcom)
+"IS" = (
+/obj/structure/shipdecor/cryochamber{
+	icon_state = "cryochamber3";
+	pixel_y = 10
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a15";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "IT" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/floor_decal/turf/plating,
@@ -5351,11 +6571,39 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"Jh" = (
+/turf/unsimulated/oldship{
+	icon_state = "rwallBLINK"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Ji" = (
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /obj/structure/table/steel,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"Jm" = (
+/obj/structure/table/steel_reinforced,
+/obj/item/paper_bin{
+	pixel_y = 8
+	},
+/obj/item/pen/multi{
+	pixel_y = 2
+	},
+/obj/machinery/light/small/red,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a3";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"Jn" = (
+/obj/structure/shipdecor/cryochamber{
+	icon_state = "cryochamber3"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a15";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Jo" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -5365,25 +6613,22 @@
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "Jp" = (
-/obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table3";
-	dir = 1
+/obj/machinery/light/small{
+	dir = 4
 	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "dark1"
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/space)
+/area/cadiaoutpost/oa/shuttle/station1)
 "Jq" = (
 /obj/machinery/door/airlock/command,
 /turf/simulated/floor/wood,
 /area/centcom)
 "Jr" = (
-/obj/structure/warfare/barricade/concrete_barrier{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
+/obj/structure/bed/chair/pew,
+/turf/simulated/floor/darkfloor{
+	dir = 8
 	},
 /area/space)
 "Js" = (
@@ -5444,6 +6689,20 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"JA" = (
+/obj/effect/floor_decal/spline/fancy/wood/corner,
+/turf/simulated/floor/ship_floor/engines{
+	dir = 9
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"JH" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/toilet,
+/obj/item/reagent_containers/food/snacks/poo,
+/obj/item/reagent_containers/food/snacks/poo,
+/obj/item/reagent_containers/food/snacks/poo,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "JO" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1;
@@ -5484,6 +6743,12 @@
 	},
 /turf/simulated/floor/wood,
 /area/centcom)
+"JX" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/machinery/telecomms/bus/preset_two,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "JY" = (
 /obj/structure/torchwall{
 	dir = 4;
@@ -5502,12 +6767,14 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "Kd" = (
-/obj/machinery/door/airlock/cone{
-	req_one_access = list(63);
-	name = "Briefing Room"
+/obj/structure/displaycase,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/item/clothing/head/helmet/astartes/apothecary/ravenguard{
+	name = "Greyknight Helmet";
+	desc = "The vigilant helmet of the Astartes Apothecary, Painted in white and upgraded with genescanner and integrated scanner, This one bears the symbol of the Grey Knights."
 	},
-/turf/simulated/floor/factory_floor,
-/area/space)
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "Kg" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/floor_decal/turf/plating,
@@ -5523,8 +6790,17 @@
 	},
 /area/cadiaoutpost/oa/krootship)
 "Kl" = (
-/turf/simulated/wall/concrete/strong,
-/area/space)
+/obj/machinery/door/airlock/hatch/simiel,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/bloodbar,
+/obj/machinery/door/blast/bordergatec/closed{
+	health = 10000;
+	id = "inq1";
+	maxhealth = 10000;
+	name = "INQUISITION"
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "Ko" = (
 /obj/machinery/light{
 	dir = 1;
@@ -5557,9 +6833,22 @@
 	},
 /area/centcom)
 "KC" = (
-/obj/effect/floor_decal/turf/metal/four,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/bloodbar,
+/obj/structure/bed/chair/governor_throne,
 /turf/simulated/floor/tiled/dark,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"KE" = (
+/obj/structure/bed{
+	icon = "icons/map_project/furniture_and_decor.dmi";
+	icon_state = "migbed"
+	},
+/obj/item/bedsheet/hos{
+	color = "grey"
+	},
+/obj/effect/landmark/start/inqmagi/inquisitor,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "KG" = (
 /obj/machinery/light/small{
 	dir = 8;
@@ -5590,27 +6879,61 @@
 /obj/item/grenade/frag,
 /turf/space,
 /area/cadiaoutpost/oa/groxpen)
+"KL" = (
+/obj/machinery/light/small/red,
+/turf/simulated/floor/fancyfloor/gray_white,
+/area/cadiaoutpost/oa/shuttle/station1)
+"KN" = (
+/obj/effect/floor_decal/spline/plain{
+	dir = 6
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 6
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "KT" = (
-/obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table3";
-	dir = 8
+/obj/effect/floor_decal/turf/metal/five,
+/obj/machinery/computer/exterminatus{
+	desc = "This terminal acts as the control center for the Simiel's weapon systems.";
+	name = "Weapons Terminal - Exteriminatus"
 	},
+/obj/effect/floor_decal/turf/bloodbar,
 /turf/simulated/floor/tiled/dark,
-/area/space)
-"KW" = (
-/obj/effect/floor_decal/newcorner/whitegreen,
-/obj/machinery/light/small,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"KV" = (
+/turf/simulated/shuttle/wall{
+	icon_state = "wall3";
+	dir = 10;
+	color = "grey"
 	},
-/area/space)
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"KW" = (
+/obj/structure/bed,
+/obj/item/bedsheet/ce,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "m";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "KY" = (
 /turf/simulated/shuttle/wall{
 	color = "grey";
 	icon_state = "wall3"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisitionpact)
+"Lb" = (
+/obj/machinery/door/blast/bordergatel,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"Lf" = (
+/obj/effect/floor_decal/newcorner/blue/corner{
+	dir = 8
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/shuttle/station1)
 "Li" = (
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /obj/structure/bed/chair/office/dark{
@@ -5650,13 +6973,23 @@
 /obj/effect/floor_decal/newcorner/bar/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
-"LD" = (
-/obj/machinery/light/small{
-	dir = 8
+"Lz" = (
+/turf/simulated/floor/ship_floor/engines{
+	dir = 6
 	},
-/obj/effect/floor_decal/turf/metal/eight,
+/area/cadiaoutpost/oa/shuttle/station1)
+"LD" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/bed{
+	desc = "A mass produced sleeping mat, now with actual cloth!";
+	icon_state = "bed_padding1";
+	name = "sleeping mat"
+	},
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/machinery/light/red,
 /turf/simulated/floor/tiled/dark,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "LH" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/bed/chair/comfy/captain{
@@ -5678,6 +7011,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisitionpact)
+"LM" = (
+/obj/effect/floor_decal/newcorner/blue{
+	dir = 8
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/shuttle/station1)
 "LN" = (
 /obj/machinery/vending/boozeomat,
 /obj/effect/floor_decal/newcorner/bar/diagonal,
@@ -5693,6 +7032,13 @@
 	color = "grey"
 	},
 /area/centcom)
+"LQ" = (
+/obj/machinery/light/small/red,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "t";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "LT" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/effect/floor_decal/turf/brick,
@@ -5708,14 +7054,22 @@
 /obj/effect/floor_decal/newcorner/bar/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
-"Ma" = (
-/obj/structure/catwalk,
-/obj/machinery/light/small,
-/obj/structure/railing{
+"LX" = (
+/obj/structure/shipdecor{
+	icon_state = "tncB"
+	},
+/obj/machinery/light/red{
 	dir = 1
 	},
-/turf/simulated/open,
-/area/space)
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"Ma" = (
+/obj/machinery/cooker/oven,
+/turf/simulated/floor/tiled/freezer,
+/area/cadiaoutpost/oa/shuttle/governor)
 "Mf" = (
 /obj/structure/torchwall/service{
 	dir = 4;
@@ -5734,6 +7088,45 @@
 /obj/effect/floor_decal/turf/brick,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"Mm" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"Mn" = (
+/obj/effect/floor_decal/turf/steel,
+/obj/machinery/door/airlock/glass_command,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/governor)
+"Mr" = (
+/obj/machinery/door/airlock/ancient_ship/command{
+	req_access = list();
+	req_one_access = list(63,10,331)
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"Mu" = (
+/obj/machinery/button/remote/blast_door/id_scan{
+	id = "arvusrampdoor";
+	pixel_x = -5;
+	pixel_y = 0;
+	req_access = list(302)
+	},
+/obj/structure/fuel_port{
+	pixel_x = 32
+	},
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "Mz" = (
 /obj/structure/table/woodentable,
 /obj/machinery/chemical_dispenser/bar_coffee/full,
@@ -5775,6 +7168,13 @@
 /obj/machinery/atmospherics/pipe/tank/carbon_dioxide,
 /turf/simulated/floor/plating,
 /area/centcom)
+"MM" = (
+/obj/item/fluff_items/alien_blaster,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "MS" = (
 /obj/structure/table/woodentable,
 /obj/machinery/chemical_dispenser/bar_alc/full,
@@ -5838,6 +7238,11 @@
 /obj/item/stool/bar/padded,
 /turf/simulated/floor/wood,
 /area/centcom)
+"Nj" = (
+/turf/simulated/floor/ship_floor/engines{
+	dir = 10
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Nk" = (
 /obj/structure/sign/double/impbar/right{
 	pixel_y = 30
@@ -5870,6 +7275,13 @@
 /obj/item/ammo_magazine/bolt_rifle_magazine,
 /turf/space,
 /area/cadiaoutpost/oa/groxpen)
+"Nz" = (
+/obj/structure/sign/inkvd/two,
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "NB" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/floor_decal/turf/bloodbar,
@@ -5880,6 +7292,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"NE" = (
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "b4";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "NF" = (
 /obj/structure/flora/pottedplant/bamboo,
 /obj/effect/floor_decal/turf/brick/two,
@@ -5898,9 +7316,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
 "NM" = (
-/obj/machinery/light/small,
-/turf/simulated/open,
-/area/space)
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/bloodbar,
+/obj/effect/shuttle_landmark/ferry/inquisition_start,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "NN" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -5918,6 +7338,16 @@
 /obj/item/reagent_containers/food/snacks/beetsoup,
 /turf/space,
 /area/cadiaoutpost/oa/groxpen)
+"NU" = (
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/obj/random/powercell,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a3";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "NW" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/item/modular_computer/console/preset/civilian,
@@ -5955,6 +7385,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/groxpen)
+"Oe" = (
+/obj/structure/sign/art/lordgovenor,
+/turf/simulated/wall,
+/area/cadiaoutpost/oa/shuttle/governor)
 "Oi" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -5970,6 +7404,11 @@
 	color = "grey"
 	},
 /area/centcom)
+"Om" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "On" = (
 /obj/structure/bed/chair/wood{
 	dir = 8;
@@ -5981,13 +7420,26 @@
 /turf/simulated/floor/carpet,
 /area/centcom)
 "Op" = (
-/obj/structure/catwalk,
-/turf/simulated/open,
-/area/space)
+/obj/machinery/light,
+/obj/effect/floor_decal/turf/metal/five,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "Or" = (
 /obj/machinery/door/blast/grates,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"Ot" = (
+/obj/machinery/door/blast/regular{
+	dir = 4;
+	id = "ship_shutters";
+	name = "Bridge Blast Door"
+	},
+/turf/unsimulated/wall/fakeglass{
+	dir = 8;
+	icon = 'icons/map_project/windows.dmi';
+	icon_state = "r_window"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Ow" = (
 /obj/structure/table/rack,
 /obj/item/gun/projectile/eldar/scatapult,
@@ -5995,29 +7447,25 @@
 /turf/simulated/floor,
 /area/space)
 "OD" = (
-/obj/structure/bed/chair{
+/obj/structure/bed/chair/pew,
+/obj/machinery/light{
+	icon_state = "tube1";
 	dir = 4
 	},
-/obj/effect/floor_decal/newcorner/whitegreen,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
+/turf/simulated/floor/darkfloor{
+	dir = 8
 	},
 /area/space)
 "OH" = (
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1";
-	light_color = "#234F1E"
+/obj/machinery/button/remote/blast_door/id_scan{
+	id = "arvusrampdoor";
+	pixel_x = -5;
+	pixel_y = 0;
+	req_access = list(302)
 	},
-/obj/effect/floor_decal/newcorner/whitegreen{
-	dir = 4
-	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
-	},
-/area/space)
+/obj/structure/table/graf/reinf_table,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "OJ" = (
 /obj/effect/floor_decal/newcorner/teal/diagonal,
 /obj/machinery/light{
@@ -6058,12 +7506,47 @@
 	color = "grey"
 	},
 /area/centcom)
+"OS" = (
+/obj/structure/sign/ship{
+	icon_state = "tncC";
+	pixel_y = 32
+	},
+/obj/structure/shipdecor{
+	icon_state = "tncA"
+	},
+/obj/effect/floor_decal/newcorner/blue/solid,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"OU" = (
+/obj/machinery/door/blast/regular{
+	dir = 4;
+	id = "ship_shutters";
+	name = "Bridge Blast Door"
+	},
+/turf/unsimulated/wall/fakeglass{
+	dir = 4;
+	icon = 'icons/map_project/windows.dmi';
+	icon_state = "r_window"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "OV" = (
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
 /area/centcom)
+"OY" = (
+/obj/structure/shipdecor{
+	icon_state = "off"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Pc" = (
 /obj/structure/bed/chair/wood{
 	dir = 8;
@@ -6078,16 +7561,41 @@
 	},
 /turf/simulated/floor/carpet,
 /area/centcom)
+"Pd" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/table/rack/dark,
+/obj/item/clothing/head/helmet/scion,
+/obj/item/clothing/suit/armor/scion,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"Pf" = (
+/obj/effect/floor_decal/newcorner/blue/corner{
+	dir = 4
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/shuttle/station1)
 "Ph" = (
 /obj/structure/table/marble,
 /obj/item/clothing/head/ordohereticus,
 /obj/effect/floor_decal/turf/brick,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"Po" = (
-/obj/effect/floor_decal/turf/bar2,
-/turf/simulated/floor/tiled/dark,
+"Pj" = (
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
 /area/space)
+"Po" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 8
+	},
+/turf/simulated/floor/carpet/purple,
+/area/cadiaoutpost/oa/shuttle/governor)
 "Pp" = (
 /obj/effect/floor_decal/carpet,
 /obj/effect/floor_decal/carpet{
@@ -6107,6 +7615,16 @@
 /obj/item/gun/energy/plasmacutter,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
+"Py" = (
+/obj/structure/bed{
+	desc = "This is used to lie in, sleep in or strap on.";
+	icon_state = "bed_padding1";
+	name = "comfy bed"
+	},
+/obj/item/bedsheet/hos,
+/obj/effect/floor_decal/turf/metal/five,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "Pz" = (
 /obj/effect/floor_decal/newcorner/plazaf/diagonal,
 /turf/simulated/floor/tiled/dark{
@@ -6114,8 +7632,12 @@
 	},
 /area/centcom)
 "PE" = (
-/turf/simulated/floor/tiled/dark,
-/area/space)
+/obj/machinery/light/small/red,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "PF" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/floor_decal/turf/bloodbar,
@@ -6162,11 +7684,27 @@
 /obj/item/clothing/glasses/blacksun,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
+"PT" = (
+/obj/structure/shipdecor{
+	icon_state = "tncA"
+	},
+/obj/machinery/light/red{
+	dir = 1
+	},
+/obj/structure/shipdecor/warp,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "PW" = (
-/obj/effect/floor_decal/turf/metal/six,
-/obj/machinery/light/small,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/table/graf/rich_table,
+/obj/machinery/light/red,
+/obj/item/melee/sword/commissword/sabre,
+/obj/item/storage/firstaid/regular,
 /turf/simulated/floor/tiled/dark,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "PY" = (
 /turf/simulated/floor/tiled/freezer,
 /area/centcom)
@@ -6212,13 +7750,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "Qj" = (
-/obj/structure/catwalk,
-/obj/structure/railing,
-/obj/structure/railing{
-	dir = 4
+/turf/unsimulated/oldship{
+	icon_state = "rwall2"
 	},
-/turf/simulated/open,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/station1)
 "Qo" = (
 /turf/simulated/floor/plating,
 /area/centcom)
@@ -6233,18 +7768,9 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Qr" = (
-/obj/machinery/light/small{
-	dir = 1;
-	icon_state = "bulb1"
-	},
-/obj/effect/floor_decal/newcorner/whitegreen{
-	dir = 1
-	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
-	},
-/area/space)
+/obj/structure/bed/chair/wood/fancy,
+/turf/simulated/floor/carpet/purple,
+/area/cadiaoutpost/oa/shuttle/governor)
 "Qs" = (
 /obj/effect/floor_decal/carpet{
 	dir = 1
@@ -6340,6 +7866,15 @@
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"Rc" = (
+/obj/structure/bed/chair/office/dark{
+	dir = 8
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "t";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Re" = (
 /obj/machinery/door/airlock/glass,
 /obj/effect/floor_decal/newcorner/plazaf/diagonal,
@@ -6348,22 +7883,48 @@
 	color = "grey"
 	},
 /area/centcom)
+"Rf" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "Rj" = (
-/obj/machinery/light/small{
-	dir = 8
+/turf/unsimulated/wall/fakeglass{
+	dir = 1;
+	icon = 'icons/map_project/windows.dmi';
+	icon_state = "r_window"
 	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/space)
+/area/cadiaoutpost/oa/shuttle/governor)
 "Rm" = (
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /obj/machinery/vending/engineering,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"Rn" = (
+/obj/structure/bed/chair{
+	dir = 8;
+	icon_state = "chair_preview"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "m";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Rp" = (
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/shuttle/tau2)
+"Rs" = (
+/obj/effect/floor_decal/spline/plain{
+	dir = 10;
+	icon_state = "spline_plain"
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 10
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Rt" = (
 /obj/machinery/door/airlock/glass,
 /turf/simulated/floor/tiled/freezer,
@@ -6398,6 +7959,12 @@
 	},
 /turf/simulated/floor/carpet,
 /area/centcom)
+"Rz" = (
+/obj/structure/table/graf/big_wood_table,
+/obj/item/reagent_containers/food/snacks/poo,
+/obj/item/reagent_containers/food/snacks/poo,
+/turf/simulated/floor/carpet/purple,
+/area/cadiaoutpost/oa/shuttle/governor)
 "RC" = (
 /obj/structure/torchwall/service{
 	dir = 8;
@@ -6422,12 +7989,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
 "RL" = (
-/obj/effect/floor_decal/turf/metal/six,
-/obj/structure/sign/double/planet/right{
-	pixel_y = 32
+/obj/machinery/light{
+	dir = 1
 	},
+/obj/effect/floor_decal/turf/metal/five,
 /turf/simulated/floor/tiled/dark,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "RO" = (
 /obj/machinery/fusion_fuel_injector{
 	dir = 4;
@@ -6436,19 +8003,63 @@
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"RP" = (
+/obj/structure/shipdecor{
+	icon_state = "charon";
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/blue/solid,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"RT" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/machinery/door/airlock/hatch/simiel,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"RU" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 4
+	},
+/obj/structure/table/steel,
+/obj/item/fluff_items/paperwork,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/governor)
 "RV" = (
-/obj/item/stool{
-	color = "grey"
+/obj/structure/closet/cabinet,
+/obj/item/clothing/suit/armor/governor,
+/obj/item/clothing/under/child_heir,
+/obj/item/clothing/under/security_uniform_barny,
+/turf/simulated/floor/carpet/purple,
+/area/cadiaoutpost/oa/shuttle/governor)
+"Sg" = (
+/turf/unsimulated/oldship{
+	icon_state = "rwall3"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"Sj" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 8
 	},
 /obj/effect/floor_decal/turf/metal/five,
 /turf/simulated/floor/tiled/dark,
-/area/space)
-"Sg" = (
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "dark1"
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"Sk" = (
+/obj/structure/table/rack/dark,
+/obj/random/smokes,
+/obj/random/smokes,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "v";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/space)
+/area/cadiaoutpost/oa/shuttle/station1)
+"Sp" = (
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/governor)
 "Sr" = (
 /obj/item/storage/backpack/satchel/warfare/kroot,
 /obj/item/storage/backpack/satchel/warfare/kroot,
@@ -6522,12 +8133,13 @@
 /turf/simulated/wall/techno,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "SH" = (
-/obj/structure/catwalk,
-/obj/structure/railing{
-	dir = 1
+/obj/structure/toilet,
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 4
 	},
-/turf/simulated/open,
-/area/space)
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/governor)
 "SI" = (
 /obj/structure/table/standard,
 /obj/item/storage/firstaid/surgery,
@@ -6567,11 +8179,25 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"Tc" = (
+/obj/structure/shipdecor/cryochamber{
+	pixel_y = 10
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a15";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Td" = (
-/obj/structure/catwalk,
-/obj/structure/railing,
-/turf/simulated/open,
-/area/space)
+/obj/machinery/door/airlock/ancient_ship/command{
+	req_access = list();
+	name = "Ancient Door"
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Te" = (
 /obj/machinery/body_scanconsole,
 /obj/effect/floor_decal/newcorner/teal/diagonal,
@@ -6613,6 +8239,15 @@
 /obj/item/clothing/accessory/armguards/ballistic,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"To" = (
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "v";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Tr" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/rack/dark,
@@ -6650,6 +8285,12 @@
 /obj/structure/closet/secure_closet/engineering_electrical,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"TD" = (
+/obj/structure/bed/chair/office/dark{
+	dir = 8
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/shuttle/station1)
 "TF" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/closet/cabinet,
@@ -6659,6 +8300,16 @@
 /obj/item/clothing/shoes/chameleon,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"TI" = (
+/obj/structure/shipdecor/cryochamber{
+	icon_state = "cryochamber0";
+	pixel_y = 10
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a15";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "TK" = (
 /obj/machinery/light{
 	dir = 4;
@@ -6699,6 +8350,19 @@
 	color = "grey"
 	},
 /area/centcom)
+"TU" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
+"TW" = (
+/obj/item/modular_computer/console/preset/command,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/table/graf/polished_table,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "TX" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/machinery/microwave,
@@ -6706,6 +8370,16 @@
 /obj/effect/floor_decal/turf/brick/two,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"TY" = (
+/obj/machinery/door/blast/id_door/open{
+	begins_closed = 1;
+	id = "arvusrampdoor"
+	},
+/turf/simulated/floor/tiled/ramp{
+	dir = 1;
+	icon_state = "ramptop"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "Ua" = (
 /obj/machinery/door/airlock/glass,
 /obj/effect/floor_decal/newcorner/bar/diagonal,
@@ -6720,10 +8394,21 @@
 	color = "grey"
 	},
 /area/centcom)
+"Ue" = (
+/obj/structure/table/graf/polished_table,
+/obj/effect/floor_decal/turf/bloodbar,
+/obj/item/fluff_items/paperwork,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "Uf" = (
 /obj/structure/bed/chair,
 /turf/simulated/floor/asteroid/air,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"Uj" = (
+/turf/unsimulated/oldship{
+	icon_state = "rwall1"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Uk" = (
 /obj/effect/floor_decal/newcorner/teal/diagonal,
 /turf/simulated/floor/tiled{
@@ -6745,6 +8430,13 @@
 /obj/machinery/portable_atmospherics/canister/air,
 /turf/simulated/floor/plating,
 /area/centcom)
+"Us" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 1;
+	icon_state = "spline_fancy"
+	},
+/turf/simulated/floor/ship_floor/engines,
+/area/cadiaoutpost/oa/shuttle/station1)
 "Uu" = (
 /obj/item/clothing/shoes/jackboots/cadian,
 /obj/item/clothing/gloves/combat/cadian,
@@ -6767,6 +8459,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"Ux" = (
+/obj/structure/shipdecor/warp,
+/turf/unsimulated/oldship{
+	icon_state = "rwall12"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Uy" = (
 /obj/item/ammo_magazine/box/a556/mg08,
 /obj/item/ammo_magazine/box/a556/mg08,
@@ -6774,6 +8472,13 @@
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"UC" = (
+/turf/unsimulated/wall/fakeglass{
+	dir = 6;
+	icon = 'icons/map_project/windows.dmi';
+	icon_state = "r_window"
+	},
+/area/cadiaoutpost/oa/shuttle/governor)
 "UF" = (
 /obj/machinery/light,
 /obj/structure/table/rack,
@@ -6792,6 +8497,14 @@
 /obj/effect/floor_decal/turf/brick/two,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"UN" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 4
+	},
+/turf/simulated/floor/ship_floor/engines{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "UR" = (
 /obj/structure/table/steel,
 /obj/item/storage/belt/medical/full,
@@ -6831,14 +8544,8 @@
 /turf/simulated/floor/wood,
 /area/centcom)
 "Vh" = (
-/obj/structure/bed/chair{
-	dir = 8;
-	icon_state = "chair_preview"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "dark1"
-	},
+/obj/structure/shipdecor/warp,
+/turf/space,
 /area/space)
 "Vl" = (
 /obj/item/stool/bar/padded,
@@ -6853,6 +8560,24 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"Vp" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 4
+	},
+/obj/structure/bed{
+	desc = "This is used to lie in, sleep in or strap on.";
+	icon_state = "bed_padding1";
+	name = "comfy bed"
+	},
+/obj/item/bedsheet/rd,
+/turf/simulated/floor/carpet/purple,
+/area/cadiaoutpost/oa/shuttle/governor)
+"Vr" = (
+/turf/unsimulated/oldship{
+	icon_state = "rwall4"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Vt" = (
 /obj/structure/bed/chair/wood{
 	dir = 4;
@@ -6888,6 +8613,14 @@
 /obj/structure/table/rack/shelf,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
+"VF" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "VG" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/floor_decal/turf/plating,
@@ -6914,12 +8647,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "VQ" = (
-/obj/item/stool{
-	color = "grey"
+/turf/unsimulated/oldship{
+	icon_state = "rwall7"
 	},
-/obj/effect/floor_decal/turf/metal/ten,
-/turf/simulated/floor/tiled/dark,
-/area/space)
+/area/cadiaoutpost/oa/shuttle/station1)
 "VS" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/floor_decal/turf/bloodbar,
@@ -6967,6 +8698,13 @@
 	color = "grey"
 	},
 /area/centcom)
+"VX" = (
+/obj/structure/sign/art/lordgovenor,
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
+	},
+/area/cadiaoutpost/oa/shuttle/governor)
 "Wa" = (
 /obj/machinery/atmospherics/pipe/tank/phoron,
 /obj/machinery/light{
@@ -7000,14 +8738,14 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Wj" = (
-/obj/effect/floor_decal/newcorner/whitegreen{
-	dir = 8
-	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
-	},
-/area/space)
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/table/rack/dark,
+/obj/item/clothing/suit/armor/breastplate,
+/obj/item/clothing/head/commissar/adept,
+/obj/item/clothing/head/caphat/formal,
+/obj/item/clothing/head/chameleon,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "Wk" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -7052,6 +8790,11 @@
 	icon_state = "fakewindows2"
 	},
 /area/centcom)
+"Wx" = (
+/turf/simulated/floor/ship_floor/engines{
+	dir = 9
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "WB" = (
 /turf/simulated/shuttle/wall{
 	color = "blue";
@@ -7059,8 +8802,11 @@
 	},
 /area/space)
 "WD" = (
-/turf/simulated/floor/factory_floor,
-/area/space)
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "m";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "WG" = (
 /obj/structure/shuttle/engine/propulsion{
 	color = "grey"
@@ -7078,17 +8824,24 @@
 	},
 /area/centcom)
 "WK" = (
-/obj/machinery/light/small,
-/turf/simulated/floor/factory_floor,
+/obj/structure/shipdecor/warp,
+/obj/structure/shipdecor/warp{
+	pixel_x = 300
+	},
+/obj/structure/shipdecor/warp{
+	pixel_x = 200
+	},
+/obj/structure/shipdecor/warp{
+	pixel_x = 100
+	},
+/turf/space,
 /area/space)
 "WM" = (
-/obj/structure/table/graf/rusty_table,
-/obj/effect/floor_decal/newcorner/whitegreen,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/space)
+/area/cadiaoutpost/oa/shuttle/station1)
 "WT" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -7104,6 +8857,12 @@
 /obj/effect/floor_decal/turf/brick/two,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"Xd" = (
+/obj/structure/displaycase,
+/obj/random/loot/tech2,
+/obj/effect/floor_decal/turf/metal/five,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "Xe" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -7113,6 +8872,15 @@
 	color = "grey"
 	},
 /area/centcom)
+"Xh" = (
+/obj/structure/sign/double/planet/right{
+	pixel_y = 32
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a16";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Xi" = (
 /obj/effect/floor_decal/carpet{
 	dir = 4
@@ -7123,6 +8891,10 @@
 	},
 /turf/simulated/floor/carpet,
 /area/centcom)
+"Xl" = (
+/obj/structure/closet/secure_closet/freezer/fridge,
+/turf/simulated/floor/tiled/freezer,
+/area/cadiaoutpost/oa/shuttle/governor)
 "Xr" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -7137,11 +8909,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
 "Xu" = (
-/obj/structure/warfare/barricade/concrete_barrier{
-	dir = 1
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 4
 	},
-/turf/simulated/floor/factory_floor,
-/area/space)
+/turf/simulated/floor/carpet/purple,
+/area/cadiaoutpost/oa/shuttle/governor)
 "Xx" = (
 /obj/machinery/button/remote/blast_door/id_scan{
 	id = "taudrop";
@@ -7217,13 +8990,13 @@
 	},
 /area/centcom)
 "XR" = (
-/obj/effect/wingrille_spawn/reinforced{
-	color = "grey"
-	},
-/turf/simulated/floor/darksteel_floor{
+/obj/machinery/light{
+	icon_state = "tube1";
 	dir = 4
 	},
-/area/space)
+/obj/effect/floor_decal/turf/metal/five,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "XZ" = (
 /turf/unsimulated/wall/fakeglass{
 	color = "grey";
@@ -7231,6 +9004,17 @@
 	icon_state = "fakewindows"
 	},
 /area/centcom)
+"Ya" = (
+/obj/structure/table/steel,
+/obj/machinery/computer/shuttle_control/ferry/governor{
+	req_one_access = list(331)
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/governor)
+"Yc" = (
+/obj/structure/sign/poster/poster2,
+/turf/simulated/wall,
+/area/space)
 "Ye" = (
 /obj/machinery/light,
 /turf/simulated/floor/wood,
@@ -7243,6 +9027,19 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisitionpact)
+"Yh" = (
+/obj/machinery/cooker/grill,
+/turf/simulated/floor/tiled/freezer,
+/area/cadiaoutpost/oa/shuttle/governor)
+"Yl" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/machinery/door/airlock/imperiumdoor{
+	maxhealth = 1200;
+	name = "Inquisitor's Quarters";
+	req_access = list(302)
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "Yq" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/spline/fancy/wood,
@@ -7265,6 +9062,17 @@
 	icon_state = "fakewindows"
 	},
 /area/centcom)
+"Yx" = (
+/obj/structure/closet/cabinet,
+/obj/item/clothing/mask/gas/security/agent,
+/obj/item/cane/concealed,
+/obj/item/clothing/accessory/storage/webbing,
+/obj/item/clothing/accessory/holster,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/item/clothing/head/witchhunter_hat,
+/obj/item/clothing/suit/witchhunter,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "YA" = (
 /obj/structure/bed/chair/comfy/black{
 	dir = 8;
@@ -7284,6 +9092,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"YI" = (
+/obj/machinery/light/red,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/shuttle/station1)
 "YK" = (
 /obj/effect/floor_decal/industrial/warning_red{
 	icon_state = "warningcorner_red"
@@ -7312,23 +9124,21 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "YV" = (
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
-	},
-/area/space)
+/obj/structure/bed/chair/wood/fancy,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/bloodbar,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "YX" = (
-/obj/structure/warfare/barricade/concrete_barrier/sandbag{
-	icon_state = "centers";
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/space)
+/obj/effect/floor_decal/turf/metal/five,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "YY" = (
-/turf/simulated/floor/bluegrid,
-/area/space)
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "Zc" = (
 /obj/structure/closet/secure_closet/medical1,
 /obj/effect/floor_decal/newcorner/teal/diagonal,
@@ -7479,12 +9289,21 @@
 	},
 /turf/simulated/floor/carpet,
 /area/centcom)
+"ZW" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/effect/floor_decal/turf/metal/five,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "ZX" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/machinery/cooker/fryer,
 /obj/effect/floor_decal/turf/brick/two,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"ZY" = (
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/shuttle/station1)
 "ZZ" = (
 /obj/structure/bed/chair/wood{
 	dir = 4;
@@ -23167,7 +24986,7 @@ ax
 ax
 ax
 ax
-ax
+Vh
 ax
 ax
 ax
@@ -23367,7 +25186,7 @@ ax
 ax
 ax
 ax
-ax
+Vh
 ax
 ax
 ax
@@ -23768,6 +25587,7 @@ ax
 ax
 ax
 ax
+Vh
 ax
 ax
 ax
@@ -23777,14 +25597,13 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+YY
+YY
+YY
+YY
+YY
+YY
+oL
 ax
 ax
 ax
@@ -23970,23 +25789,23 @@ ax
 ax
 ax
 ax
+WK
+ax
+Dj
+ax
+hY
 ax
 ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+YY
+ej
+HC
+zs
+KE
+YY
+oL
 ax
 ax
 ax
@@ -24151,47 +25970,47 @@ ax
 ax
 ax
 ax
-BG
-BG
-BG
-Kl
-Kl
-Kl
-CS
-je
-pP
-Kl
-CS
-je
-pP
-Kl
-Kl
-Kl
-Kl
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
 ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+YY
+nF
+zG
+EB
+HC
+YY
+YY
+YY
+YY
+hK
 ax
 ax
 ax
@@ -24353,47 +26172,47 @@ ax
 ax
 ax
 ax
-BG
-BG
-BG
-Kl
-Kl
-Kl
-EQ
-EQ
-EQ
-Ho
-EQ
-EQ
-EQ
-Kl
-Kl
-Kl
-Kl
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
 ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+gk
+gk
+YY
+YY
+YY
+mL
+YY
+mL
+YY
+YY
+er
+nz
+HC
+rh
+YY
+YY
+YY
+YY
+lA
 ax
 ax
 ax
@@ -24555,51 +26374,51 @@ ax
 ax
 ax
 ax
-BG
-BG
-BG
-Kl
-Kl
-Ho
-PE
-PE
-PE
-PE
-PE
-PE
-PE
-Ho
-PE
-Kl
-Kl
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
 ax
 ax
 ax
 ax
 ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+gk
+gC
+rF
+Cb
+JX
+YY
+VF
+BG
+Sj
+wE
+YY
+YY
+YY
+YY
+qV
+YY
+YY
+YY
+YY
+YY
+YY
+YY
+YY
+KV
 ax
 ax
 ax
@@ -24757,52 +26576,52 @@ ax
 ax
 ax
 ax
-Kl
-Kl
-Kl
-Kl
-Kl
-PE
-PE
-PE
-PE
-PE
-PE
-PE
-PE
-PE
-PE
-Kl
-Kl
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
 ax
 ax
 ax
 ax
 ax
 ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+gk
+pP
+BG
+BG
+BG
+BG
+YY
+BG
+BG
+YX
+wE
+YX
+YX
+YX
+YY
+wY
+YX
+wE
+YX
+YX
+Xd
+YY
+YX
+Pd
+YY
+KV
 ax
 ax
 ax
@@ -24959,52 +26778,52 @@ ax
 ax
 ax
 ax
-Kl
-Kl
-Kl
-Kl
-Kl
-WD
-Kl
-Kl
-qa
-yQ
-Kl
-Kl
-WD
-Kl
-Kl
-Kl
-Kl
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-ig
-ig
-ig
-Kl
-Kl
-Kl
-Kl
-Kl
-ig
-ig
-ig
-Kl
-Kl
 ax
 ax
 ax
 ax
 ax
 ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+gk
+gk
+bl
+BG
+eM
+bR
+BG
+YY
+BG
+dY
+ig
+wE
+ig
+wE
+YX
+YY
+YX
+YX
+tR
+TW
+YX
+Kd
+YY
+YX
+EU
+YY
+oL
 ax
 ax
 ax
@@ -25161,52 +26980,52 @@ ax
 ax
 ax
 ax
-rL
-gm
-wE
-Fx
-xh
-Wj
-DS
-Kl
-Kl
-Kl
-Kl
-Fx
-Wj
-Wj
-DS
-Kl
-Kl
-Kl
-Kl
-Kl
-BG
-BG
-BG
-BG
-BG
-BG
-Kl
-ig
-wE
-wE
-Kl
-xd
-xd
-xd
-Kl
-wE
-wE
-wE
-Rj
-Kl
 ax
 ax
 ax
 ax
 ax
 ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+gk
+gk
+bl
+ri
+eM
+dY
+fS
+mL
+RL
+hT
+vq
+Hw
+vq
+wE
+DT
+YY
+pJ
+YV
+Ue
+wE
+YX
+Op
+Nz
+YX
+BW
+YY
+oL
 ax
 ax
 ax
@@ -25363,52 +27182,52 @@ ax
 ax
 ax
 ax
-rL
-Jr
-wE
-fu
-YV
-YV
-nF
-Wj
-Wj
-xh
-Wj
-rH
-YV
-YV
-jb
-Kl
-Kl
-Kl
-Kl
-Kl
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 gk
-BG
-BG
-BG
-BG
+gk
+bl
+mO
+EG
+Bv
 NM
-Kl
-wE
-wE
-wE
+qV
+dY
+dY
+OH
 tM
 xd
 dY
-xd
+dY
 Kl
-CP
+Fu
 wE
+GH
+KC
 wE
-wE
-ig
-ax
-ax
-ax
-ax
-ax
-ax
+KT
+YY
+YX
+zL
+YY
+oL
 ax
 ax
 ax
@@ -25565,52 +27384,52 @@ ax
 ax
 ax
 ax
-rL
-Jr
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+gk
+gk
+bl
+vH
+qm
 wE
-fu
-yf
-pX
-pX
-pX
-pX
-pX
-pX
-pX
-pX
-pc
-jq
-mO
-BG
-BG
-Sg
-tM
-vH
-vH
-vH
-vH
-vH
-vH
-wE
-wE
-wE
-Hw
-Kl
-Fu
-rU
 DT
-Kl
-wE
-wE
-wE
-wE
+mL
+RL
 ig
-ax
-ax
-ax
-ax
-ax
-ax
+Hw
+vq
+vq
+wE
+DT
+YY
+pJ
+YV
+HY
+wE
+YX
+Op
+Nz
+YX
+EQ
+YY
+oL
 ax
 ax
 ax
@@ -25767,52 +27586,52 @@ ax
 ax
 ax
 ax
-rL
-Jr
-wE
-fu
-jq
-Kl
-Kl
-Kl
-Kl
-wx
-wx
-wx
-Kl
-fu
-jq
-XR
-BG
-BG
-Sg
-tM
-vq
-vq
-vq
-vq
-vq
-vq
-wE
-wE
-wE
-wE
-Kl
-wx
-wx
-wx
-Kl
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+gk
+gk
+bl
 YX
+je
+EG
 YX
-hR
+ou
+pJ
 wE
 ig
-ax
-ax
-ax
-ax
-ax
-ax
+wE
+wx
+wE
+YX
+YY
+BG
+YX
+hR
+DA
+YX
+iY
+YY
+YX
+tw
+YY
+oL
 ax
 ax
 ax
@@ -25969,52 +27788,52 @@ ax
 ax
 ax
 ax
-Kl
-Kl
-Kl
-Qr
-jq
-Kl
-zL
-zL
-Ho
-PE
-PE
-PE
-Kl
-fu
-jq
-Kl
-vu
-vu
-GX
-Kl
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 gk
-BG
-BG
-BG
-BG
-NM
-Kl
+ox
+ZW
 YX
-hR
+BG
+Cx
+tX
+YX
+YX
+YX
 wE
-Rj
+BG
+BG
+YX
+YY
+wY
+YX
 wE
-wE
-wE
-Rj
-wE
-wE
-wE
-wE
-ig
-ax
-ax
-ax
-ax
-ax
-ax
+YX
+YX
+gm
+YY
+YX
+Wj
+YY
+fM
 ax
 ax
 ax
@@ -26171,51 +27990,51 @@ ax
 ax
 ax
 ax
-Xu
-Rj
-wE
-fu
-OD
-Kl
-nq
-KT
-PE
-PE
-PE
-PE
-pJ
-fu
-jq
-oL
-Sg
-Sg
-Sg
-Kl
-BG
-BG
-BG
-BG
-BG
-BG
-Kl
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+gk
+ox
+TU
+YX
+pY
+YY
 CP
+YX
+XR
 wE
-wE
-wE
-wE
-wE
-wE
-wE
-wE
-wE
-wE
-wE
-ig
-ax
-ax
-ax
-ax
-ax
+XR
+YX
+YX
+YY
+YY
+YY
+YY
+Yl
+YY
+YY
+YY
+YX
+PW
+YY
 ax
 ax
 ax
@@ -26373,51 +28192,51 @@ ax
 ax
 ax
 ax
-Xu
-wE
-wE
-fu
-WM
-Kl
-GH
-qa
-PE
-PE
-PE
-Dj
-Kl
-fu
-jb
-Kl
-Kl
-Kl
-Kl
-Kl
-BG
-BG
-BG
-BG
-BG
-BG
-ig
-wE
-wE
-wE
-sL
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+gk
+gk
 YY
 YY
 YY
+mL
+TY
+mL
+Mu
 YY
-sL
-wE
-wE
-wE
-ig
-ax
-ax
-ax
-ax
-ax
+YY
+xf
+YY
+YY
+bA
+pX
+YX
+Rf
+YX
+RT
+YX
+YY
+fM
 ax
 ax
 ax
@@ -26575,50 +28394,50 @@ ax
 ax
 ax
 ax
-Xu
-wE
-wE
-fu
-yz
-Kl
-PE
-PE
-PE
-IM
-AN
-pH
-wx
-fu
-nF
-DS
-Sg
-Sg
-Kl
-Kl
-BG
-BG
-BG
-BG
-BG
-BG
-ig
-wE
-wE
-sL
-sL
-sL
-sL
-sL
-sL
-sL
-sL
-wE
-wE
-ig
 ax
 ax
 ax
 ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+YY
+xh
+YY
+YY
+YY
+YY
+YX
+Om
+YY
+Yx
+pX
+gB
+Py
+ze
+YY
+YY
+fM
 ax
 ax
 ax
@@ -26777,49 +28596,49 @@ ax
 ax
 ax
 ax
-Xu
-Am
-wE
-fu
-jq
-pJ
-PE
-PE
-PE
-wY
-bs
-pH
-wx
-fu
-YV
-jq
-Jp
-eM
-Kl
-Kl
-BG
-BG
-BG
-BG
-BG
-BG
-ig
-wE
-wE
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 YY
-sL
-sL
-sL
-sL
-sL
-sL
+xh
+wT
+ax
 YY
-wE
-wE
-ig
-ax
-ax
-ax
+YY
+JH
+LD
+td
+YY
+YY
+YY
+YY
+YY
+YY
+fM
 ax
 ax
 ax
@@ -26979,47 +28798,47 @@ ax
 ax
 ax
 ax
-Kl
-Kl
-Kl
-Qr
-jq
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-fu
-YV
-jq
-Vh
-Vh
-Kl
-Kl
-Kl
-Kl
-Kl
-BG
-BG
-BG
-Kl
-CP
-wE
-YY
-sL
-sL
-sL
-sL
-sL
-sL
-YY
-wE
-Hw
-Kl
 ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+YY
+xh
+YY
+ax
+ax
+YY
+YY
+YY
+YY
+YY
+YY
+YY
+YY
+fM
 ax
 ax
 ax
@@ -27181,46 +29000,46 @@ ax
 ax
 ax
 ax
-rL
-Jr
-wE
-fu
-jq
-Kl
-Kl
-Fx
-Wj
-Wj
-Wj
-Wj
-Wj
-rH
-YV
-KW
-Kl
-Kl
-Kl
-BG
-BG
-BG
-Kl
-BG
-BG
-BG
-ig
-wE
-wE
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 YY
-sL
-sL
-sL
-sL
-sL
-sL
+xh
 YY
-wE
-wE
-ig
+ax
+ax
+ax
+ax
+ax
+YY
+YY
+YY
+oL
+ax
 ax
 ax
 ax
@@ -27383,46 +29202,46 @@ ax
 ax
 ax
 ax
-rL
-Jr
-wE
-fu
-YV
-Wj
-Wj
-rH
-yf
-pX
-OH
-pX
-pX
-OH
-pX
-Im
-BZ
-Op
-fp
-mL
-mL
-vf
-Kl
-BG
-BG
-BG
-ig
-wE
-wE
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 YY
-sL
-sL
-sL
-sL
-sL
-sL
+xh
 YY
-wE
-wE
-ig
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+YY
+oL
+ax
 ax
 ax
 ax
@@ -27585,56 +29404,56 @@ ax
 ax
 ax
 ax
-rL
-Jr
-wE
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 oE
-pX
-OH
-pX
-pX
-Im
-Kl
-Kl
-Kl
-Kd
-Kl
-Kl
-Kl
-Kl
-Td
-BG
-BG
-BG
-SH
-Kl
-Kl
-Kl
-BG
-ig
-wE
-wE
-YY
-sL
-sL
-sL
-sL
-sL
-sL
-YY
-wE
-wE
-ig
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+Sg
+Sg
+Sg
+Sg
+VQ
+Sg
+Sg
+Sg
+VQ
+Sg
+Sg
+Sg
+qJ
+vc
+mv
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
 ax
 ax
 ax
@@ -27787,46 +29606,6 @@ ax
 ax
 ax
 ax
-rL
-vc
-wE
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-kW
-kW
-kW
-Kl
-Op
-Qj
-BG
-BG
-BG
-SH
-Td
-BG
-Kl
-BG
-ig
-wE
-wE
-YY
-sL
-sL
-sL
-sL
-sL
-sL
-YY
-wE
-wE
-ig
 ax
 ax
 ax
@@ -27837,6 +29616,46 @@ ax
 ax
 ax
 ax
+ax
+ax
+ax
+ax
+mv
+FF
+En
+pc
+pc
+FZ
+WM
+WM
+WM
+FZ
+GW
+eI
+bK
+FZ
+WM
+yT
+Sg
+Sg
+Sg
+qJ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
 ax
 ax
 ax
@@ -27989,56 +29808,56 @@ ax
 ax
 ax
 ax
-Kl
-Kl
-Kl
-Kl
-Kl
-kW
-kW
-hT
-Ep
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+FZ
+rx
+IC
+IC
+lM
+us
+WM
+WM
+PE
+us
+lM
+MM
+IC
+FZ
+WM
+FZ
+To
+To
+To
+FM
+Sg
+Sg
+VQ
+Sg
+Sg
+Sg
+Sg
 qJ
-qJ
-LD
-kW
-kW
-PW
-Kl
-fM
-BG
-BG
-BG
-BG
-SH
-Td
-NM
-Kl
-BG
-ig
-wE
-wE
-YY
-sL
-sL
-sL
-sL
-sL
-sL
-YY
-wE
-wE
-ig
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
 ax
 ax
 ax
@@ -28191,56 +30010,56 @@ ax
 ax
 ax
 ax
-Kl
-Kl
-Kl
-Kl
-Kl
-bA
-kW
-kW
-iY
-RV
-RV
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+mv
 IC
-WD
-WD
-WD
-Kl
+IC
+IC
+IC
 Td
-BG
-BG
-BG
-BG
-SH
+WM
+WM
+WM
 Td
-BG
-Kl
-BG
-Kl
-CP
-wE
-sL
-sL
-sL
-sL
-sL
-sL
-sL
-sL
-wE
-wE
-ig
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+IC
+sE
+cJ
+FZ
+WM
+mv
+Ic
+qb
+qb
+Td
+WM
+WM
+FZ
+NU
+cT
+Am
+Am
+FZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
 ax
 ax
 ax
@@ -28393,56 +30212,56 @@ ax
 ax
 ax
 ax
-BG
-BG
-Kl
-Kl
-Kl
-HY
-Po
-Po
-KC
-qV
-qV
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+FZ
 IC
-WD
-WD
-WD
-Kl
-Td
-BG
-BG
-BG
-BG
-SH
-Td
-BG
-Kl
-BG
-ig
-wE
-wE
-wE
-sL
-YY
-YY
-YY
-YY
-sL
-wE
-wE
-wE
-ig
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+IC
+Jp
+IC
+Vr
+WM
+WM
+WM
+Vr
+IC
+IC
+FF
+FZ
+WM
+kW
+Ep
+qb
+qb
+Vr
+WM
+WM
+us
+kF
+Am
+Am
+Am
+eg
+qJ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
 ax
 ax
 ax
@@ -28595,56 +30414,56 @@ ax
 ax
 ax
 ax
-BG
-BG
-Kl
-Kl
-Kl
-RL
-Po
-Po
-KC
-qV
-qV
-IC
-WD
-WD
-WD
-Kl
-Td
-BG
-BG
-BG
-BG
-SH
-Kl
-Kl
-Kl
-BG
-ig
-wE
-wE
-wE
-wE
-wE
-wE
-wE
-wE
-wE
-wE
-wE
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+eg
+VQ
+Sg
+Sg
+Sg
+oo
+WM
+WM
+WM
+eg
+Sg
+Sg
+Sg
+kW
+WM
+FZ
+yz
+qb
+qb
+FZ
+bT
+WM
+Mr
 Am
-ig
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+Am
+Am
+Am
+Am
+FM
+Sg
+Sg
+Sg
+Sg
+qJ
+BZ
+BZ
 ax
 ax
 ax
@@ -28797,56 +30616,56 @@ ax
 ax
 ax
 ax
-BG
-BG
-Kl
-Kl
-Kl
-bA
-kW
-kW
-iY
-RV
-RV
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+BZ
+FZ
 IC
-WD
-WD
-WK
-Kl
-fM
-BG
-BG
-BG
-BG
-SH
-Kl
-BG
-BG
-BG
-ig
-wE
-wE
-wE
-wE
-wE
-wE
+GX
+IC
+Td
+WM
+WM
+WM
+Td
+IC
+GX
+IC
+FZ
+WM
+mv
+Sk
+qb
+qb
+FZ
+WM
+WM
+Vr
 Am
-wE
-wE
-wE
-Hw
-Kl
-Kl
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+Am
+DM
+Eo
+Jm
+FZ
+Wx
+CQ
+CQ
+Nj
+FZ
+BZ
+BZ
 ax
 ax
 ax
@@ -28999,56 +30818,56 @@ ax
 ax
 ax
 ax
-BG
-BG
-Kl
-Kl
-Kl
-kW
-kW
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+BZ
+mv
 FF
-VQ
-Bv
-Bv
-rx
-kW
-kW
-kW
-Kl
-Td
-BG
-BG
-BG
-BG
-Ma
-Kl
-BG
-BG
-BG
-ig
-wE
-wE
-wE
-wE
-wE
-Hw
-Kl
-ig
-ig
-ig
-ig
-ig
-BG
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+Mm
+fu
+Vr
+WM
+WM
+WM
+Vr
+fu
+cw
+FF
+mv
+WM
+Bz
+qJ
+iX
+Fs
+FZ
+WM
+WM
+FZ
+qr
+Am
+Am
+vx
+Am
+mv
+Do
+WM
+WM
+eU
+mv
+BZ
+BZ
 ax
 ax
 ax
@@ -29201,46 +31020,6 @@ ax
 ax
 ax
 ax
-BG
-BG
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-Op
-iQ
-DA
-iQ
-iQ
-Op
-Kl
-BG
-BG
-BG
-ig
-wE
-wE
-wE
-wE
-ig
-ig
-Kl
-BG
-BG
-BG
-BG
-BG
-BG
 ax
 ax
 ax
@@ -29251,6 +31030,46 @@ ax
 ax
 ax
 ax
+ax
+ax
+ax
+ax
+BZ
+FM
+Sg
+Sg
+Sg
+oo
+WM
+WM
+PE
+eg
+Sg
+Sg
+Sg
+kW
+WM
+WM
+eg
+Sg
+Sg
+oo
+WM
+WM
+eg
+Uj
+fA
+AQ
+Qj
+Sg
+oo
+nq
+WM
+WM
+Lz
+us
+BZ
+BZ
 ax
 ax
 ax
@@ -29403,46 +31222,6 @@ ax
 ax
 ax
 ax
-BG
-BG
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-BG
-BG
-BG
-BG
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-Kl
-BG
-BG
-BG
-Kl
-Am
-wE
-ig
-ig
-ig
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
 ax
 ax
 ax
@@ -29453,6 +31232,46 @@ ax
 ax
 ax
 ax
+ax
+ax
+ax
+ax
+BZ
+FZ
+IC
+GX
+IC
+Td
+WM
+WM
+WM
+Td
+IC
+GX
+IC
+FZ
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+CV
+WM
+WM
+WM
+CV
+WM
+Lb
+nq
+WM
+iV
+ex
+Lb
+BZ
+BZ
 ax
 ax
 ax
@@ -29605,46 +31424,6 @@ ax
 ax
 ax
 ax
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-Kl
-Kl
-ig
-ig
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
-BG
 ax
 ax
 ax
@@ -29655,6 +31434,46 @@ ax
 ax
 ax
 ax
+ax
+ax
+ax
+ax
+BZ
+mv
+FF
+Mm
+fu
+Vr
+WM
+WM
+WM
+Vr
+fu
+Mm
+FF
+mv
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+hf
+nq
+WM
+iV
+ex
+hf
+BZ
+BZ
 ax
 ax
 ax
@@ -29821,42 +31640,42 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+BZ
+FM
+Sg
+Sg
+Sg
+oo
+WM
+WM
+WM
+eg
+Sg
+Sg
+Sg
+kW
+WM
+WM
+WM
+WM
+WM
+Ik
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+DQ
+nq
+WM
+iV
+ex
+DQ
+BZ
+BZ
 ax
 ax
 ax
@@ -30023,42 +31842,42 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+BZ
+FZ
+IC
+GX
+IC
+Td
+WM
+WM
+WM
+Td
+IC
+GX
+IC
+FZ
+WM
+WM
+WM
+WM
+oE
+Sg
+Sg
+qJ
+WM
+WM
+Qj
+Uj
+Mr
+Qj
+qJ
+nq
+WM
+WM
+Nj
+Vr
+BZ
+BZ
 ax
 ax
 ax
@@ -30212,55 +32031,55 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+BZ
+BZ
+BZ
+BZ
+oE
+Sg
+Sg
+Sg
+qJ
+BZ
+BZ
+BZ
+BZ
+BZ
+mv
+FF
+Mm
+fu
+Vr
+WM
+WM
+WM
+Vr
+cv
+Mm
+FF
+mv
+WM
+oE
+Sg
+Sg
+kW
+DS
+Eg
+FZ
+WM
+WM
+is
+ua
+sc
+Iz
+mv
+Do
+WM
+WM
+eU
+mv
+BZ
+BZ
 ax
 ax
 ax
@@ -30414,55 +32233,55 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+BZ
+oE
+Sg
+Sg
+kW
+mo
+Cs
+nC
+FZ
+BZ
+BZ
+BZ
+BZ
+BZ
+FM
+Sg
+Sg
+Sg
+oo
+WM
+WM
+WM
+eg
+Sg
+Sg
+Sg
+kW
+WM
+FZ
+re
+re
+FZ
+iQ
+iQ
+FZ
+WM
+WM
+AN
+tW
+Rc
+LQ
+FZ
+pm
+Fn
+Fn
+Lz
+FZ
+BZ
+BZ
 ax
 ax
 ax
@@ -30616,55 +32435,55 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+BZ
+FZ
+OS
+Fm
+uw
+BH
+uQ
+rM
+FZ
+BZ
+BZ
+BZ
+BZ
+BZ
+FZ
+IC
+GX
+IC
+Td
+WM
+WM
+WM
+Td
+IC
+GX
+IC
+FZ
+WM
+FZ
+TD
+na
+eg
+Uj
+Aj
+FZ
+WM
+PE
+Vr
+Im
+sc
+oE
+Bz
+Sg
+Sg
+VQ
+Sg
+oo
+BZ
+BZ
 ax
 ax
 ax
@@ -30818,51 +32637,51 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+BZ
+FZ
+iH
+WM
+FZ
+jd
+WM
+RP
+FZ
+BZ
+BZ
+BZ
+BZ
+BZ
+mv
+FF
+Mm
+fu
+Vr
+WM
+WM
+WM
+Vr
+fu
+Mm
+FF
+mv
+WM
+FZ
+ZY
+ZY
+ZY
+ZY
+ZY
+us
+WM
+WM
+eg
+Sg
+Jh
+oo
+xw
+wp
+jb
+FZ
 ax
 ax
 ax
@@ -31020,54 +32839,54 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+BZ
+Ux
+LM
+LM
+us
+Xh
+WM
+oE
+oo
+BZ
+BZ
+BZ
+BZ
+BZ
+Bz
+Sg
+CR
+Sg
+oo
+WM
+WM
+WM
+eg
+Sg
+Sg
+Sg
+oo
+WM
+FZ
+ZY
+ZY
+ZY
+ZY
+ZY
+Td
+WM
+WM
+WM
+WM
+WM
+is
+WD
+Rn
+WD
+FM
+Sg
+Sg
+qJ
 ax
 ax
 ax
@@ -31222,54 +33041,54 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+oE
+oo
+Pf
+ZY
+bD
+LM
+LM
+FZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+FZ
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+FZ
+rS
+br
+ZY
+ZY
+ZY
+Vr
+WM
+WM
+WM
+WM
+WM
+AN
+WD
+WD
+WD
+us
+Eg
+ns
+FZ
 ax
 ax
 ax
@@ -31424,54 +33243,54 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+us
+PT
+fC
+ZY
+ZY
+ZY
+YI
+eg
+Sg
+VQ
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+FZ
+WM
+WM
+WM
+oE
+Sg
+Sg
+Td
+Sg
+Sg
+Sg
+Sg
+Bz
+Sg
+Uj
+fA
+AQ
+Td
+eg
+qJ
+WM
+WM
+WM
+WM
+Td
+WD
+WD
+WD
+Aj
+iQ
+KL
+FZ
 ax
 ax
 ax
@@ -31626,54 +33445,54 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+OU
+Gw
+Fd
+JA
+UN
+UN
+jt
+NE
+qr
+FZ
+lB
+qa
+qa
+qa
+qa
+lB
+FZ
+WM
+WM
+WM
+FZ
+WM
+WM
+WM
+CV
+WM
+WM
+WM
+WM
+WM
+CV
+WM
+WM
+WM
+WM
+eg
+Sg
+qJ
+WM
+WM
+Vr
+WD
+Bc
+KW
+Vr
+iQ
+iQ
+FZ
 ax
 ax
 ax
@@ -31828,54 +33647,54 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+uR
+El
+zl
+sd
+iv
+Rs
+Us
+ex
+Ac
+us
+pV
+pV
+pV
+pV
+pV
+pV
+us
+WM
+WM
+WM
+FZ
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+WM
+bc
+FZ
+WM
+PE
+FM
+Sg
+Sg
+Sg
+yT
+Sg
+Sg
+oo
 ax
 ax
 ax
@@ -32030,51 +33849,51 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+uR
+Gg
+fq
+sd
+Fr
+oM
+Us
+ex
+mk
+Mr
+zR
+zR
+zR
+zR
+zR
+zR
+Mr
+WM
+WM
+WM
+FM
+Ce
+bT
+Qj
+VQ
+Ce
+bT
+Qj
+VQ
+Ce
+bT
+Qj
+VQ
+Ce
+WM
+PE
+Qj
+kW
+WM
+WM
+us
+xw
+wp
+jb
+FZ
 ax
 ax
 ax
@@ -32232,54 +34051,54 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+uR
+ds
+fK
+sd
+rU
+KN
+Us
+ex
+Ac
+Vr
+Hd
+Hd
+Hd
+Hd
+Hd
+Hd
+Vr
+WM
+WM
+WM
+FZ
+Tc
+WM
+bc
+FZ
+Jn
+WM
+bc
+FZ
+Tc
+WM
+bc
+FZ
+Tc
+WM
+WM
+If
+FZ
+WM
+WM
+is
+WD
+Rn
+WD
+FM
+Sg
+Sg
+qJ
 ax
 ax
 ax
@@ -32434,54 +34253,54 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+Ot
+ja
+Fd
+Hq
+Di
+Di
+qC
+NE
+qr
+FZ
+IH
+qa
+qa
+qa
+qa
+IH
+FZ
+WM
+WM
+WM
+FM
+Ce
+WM
+Qj
+yT
+Ce
+WM
+Qj
+yT
+Ce
+WM
+Qj
+yT
+Ce
+WM
+WM
+Qj
+kW
+WM
+WM
+AN
+WD
+WD
+WD
+us
+Eg
+ns
+FZ
 ax
 ax
 ax
@@ -32636,54 +34455,54 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+Vr
+LX
+fC
+ZY
+HV
+Co
+dV
+oE
+Sg
+Bz
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+kW
+WM
+WM
+WM
+FZ
+Tc
+WM
+bc
+FZ
+Jn
+WM
+bc
+FZ
+Tc
+WM
+Jn
+FZ
+Tc
+WM
+WM
+FJ
+FZ
+WM
+WM
+Td
+WD
+WD
+WD
+Aj
+iQ
+KL
+FZ
 ax
 ax
 ax
@@ -32838,54 +34657,54 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+eg
+qJ
+Lf
+ZY
+jk
+OY
+nb
+FZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+eg
+qJ
+WM
+WM
+FM
+Ce
+WM
+Qj
+yT
+Ce
+WM
+Qj
+yT
+Ce
+WM
+Qj
+yT
+Ce
+WM
+PE
+Qj
+kW
+WM
+WM
+Vr
+WD
+Bc
+KW
+Vr
+iQ
+iQ
+FZ
 ax
 ax
 ax
@@ -33040,54 +34859,54 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+BZ
+eg
+Sg
+Sg
+Sg
+Sg
+Sg
+oo
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+FZ
+WM
+WM
+FZ
+Tc
+WM
+Jn
+FZ
+bc
+WM
+vy
+FZ
+TI
+WM
+Jn
+FZ
+IS
+WM
+WM
+FJ
+FZ
+WM
+WM
+FM
+Sg
+Sg
+Sg
+eg
+Sg
+Sg
+oo
 ax
 ax
 ax
@@ -33242,47 +35061,47 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+BZ
+us
+Mr
+Mr
+eg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+oo
+Mr
+Mr
+us
 ax
 ax
 ax
@@ -33461,6 +35280,10 @@ ax
 ax
 ax
 ax
+fm
+IM
+IM
+fm
 ax
 ax
 ax
@@ -33477,20 +35300,16 @@ ax
 ax
 ax
 ax
+FG
+sO
+sO
+FG
 ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FG
+FG
 ax
 ax
 ax
@@ -33659,6 +35478,14 @@ ax
 ax
 ax
 ax
+CS
+CS
+ax
+ax
+fm
+IM
+IM
+fm
 ax
 ax
 ax
@@ -33673,26 +35500,18 @@ ax
 ax
 ax
 ax
+FG
+dX
+FG
+sO
+sO
+FG
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FG
+FG
+dX
 ax
 ax
 ax
@@ -33860,6 +35679,20 @@ ax
 ax
 ax
 ax
+CS
+CS
+CS
+CS
+CS
+CS
+qY
+qY
+CS
+CS
+CS
+CS
+CS
+CS
 ax
 ax
 ax
@@ -33868,34 +35701,20 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FG
+FG
+FG
+FG
+Mn
+Mn
+FG
+FG
+FG
+FG
+FG
+FG
+FG
+FG
 ax
 ax
 ax
@@ -34060,46 +35879,46 @@ ax
 ax
 ax
 ax
+CS
+CS
+CS
+CS
+Pj
+Jr
+tB
+eA
+tB
+tB
+Pj
+Jr
+tB
+Jr
+yQ
+CS
+CS
+CS
 ax
 ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FG
+FG
+FG
+vu
+Qr
+Qr
+pb
+vu
+vu
+Po
+vu
+vu
+vu
+Po
+FG
+FG
+FG
 ax
 ax
 ax
@@ -34259,48 +36078,48 @@ ax
 ax
 ax
 ax
+CS
+CS
+CS
+CS
+cy
+IF
+CS
+tB
+Jr
+tB
+Jr
+tB
+tB
+tB
+Jr
+tB
+Jr
+yf
+CS
+Bu
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FG
+FG
+UC
+FG
+FG
+ww
+GD
+FG
+Qr
+Fx
+Rz
+eH
+Qr
+vu
+vu
+vu
+vu
+vu
+vu
+VX
+dX
 ax
 ax
 ax
@@ -34460,49 +36279,49 @@ ax
 ax
 ax
 ax
+CS
+CS
+tB
+tB
+tB
+tB
+tB
+CS
+tB
+Jr
+tB
+Jr
+tB
+tB
+tB
+Jr
+tB
+Jr
+yf
+Ho
+Bu
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FG
+FG
+Sp
+Sp
+Sp
+Sp
+Sp
+FG
+Qr
+rH
+bs
+qG
+Qr
+vu
+vu
+vu
+vu
+vu
+vu
+FG
+dX
 ax
 ax
 ax
@@ -34662,49 +36481,49 @@ ax
 ax
 ax
 ax
+CS
+og
+tB
+tB
+tB
+tB
+tB
+wn
+tB
+tB
+tB
+tB
+tB
+tB
+tB
+tB
+tB
+tB
+tB
+CS
+Bu
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+Rj
+Ya
+oU
+Sp
+Sp
+Sp
+Sp
+gh
+vu
+vu
+Xu
+Xu
+Xu
+Xu
+vu
+vu
+Xu
+vu
+Xu
+FG
+dX
 ax
 ax
 ax
@@ -34864,49 +36683,49 @@ ax
 ax
 ax
 ax
+CS
+CS
+tB
+tB
+tB
+tB
+tB
+CS
+tB
+Jr
+tB
+Jr
+tB
+tB
+tB
+Jr
+tB
+Jr
+yf
+Ho
+Bu
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FG
+FG
+Sp
+Sp
+Sp
+Sp
+Sp
+FG
+FG
+FG
+VX
+gh
+FG
+FG
+gh
+FG
+FG
+gh
+FG
+FG
+dX
 ax
 ax
 ax
@@ -35067,48 +36886,48 @@ ax
 ax
 ax
 ax
+CS
+CS
+CS
+CS
+cy
+pH
+CS
+tB
+Jr
+tB
+Jr
+tB
+tB
+tB
+Jr
+tB
+Jr
+yf
+CS
+Bu
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FG
+FG
+UC
+FG
+FG
+ww
+RU
+FG
+wC
+vu
+vu
+vu
+RV
+FG
+Sp
+FG
+Ma
+oW
+Xl
+FG
+dX
 ax
 ax
 ax
@@ -35272,46 +37091,46 @@ ax
 ax
 ax
 ax
+CS
+CS
+CS
+Yc
+xB
+Jr
+tB
+OD
+yf
+yf
+xB
+Jr
+tB
+Jr
+ik
+CS
+CS
+CS
 ax
 ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FG
+Oe
+FG
+Vp
+wC
+vu
+vu
+gT
+FG
+SH
+FG
+Yh
+wS
+Xl
+FG
+FG
+FG
 ax
 ax
 ax
@@ -35476,6 +37295,20 @@ ax
 ax
 ax
 ax
+CS
+CS
+CS
+CS
+CS
+CS
+CS
+CS
+CS
+CS
+CS
+CS
+CS
+CS
 ax
 ax
 ax
@@ -35484,34 +37317,20 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FG
+FG
+ma
+FG
+FG
+FG
+FG
+FG
+FG
+FG
+FG
+FG
+FG
+FG
 ax
 ax
 ax
@@ -35679,6 +37498,18 @@ ax
 ax
 ax
 ax
+CS
+CS
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+CS
+CS
+Bu
 ax
 ax
 ax
@@ -35689,6 +37520,8 @@ ax
 ax
 ax
 ax
+FG
+dX
 ax
 ax
 ax
@@ -35696,23 +37529,9 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FG
+FG
+dX
 ax
 ax
 ax
@@ -35891,6 +37710,8 @@ ax
 ax
 ax
 ax
+CS
+CS
 ax
 ax
 ax
@@ -35911,10 +37732,8 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
+FG
+FG
 ax
 ax
 ax

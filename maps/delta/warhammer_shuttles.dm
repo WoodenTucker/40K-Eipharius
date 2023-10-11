@@ -24,6 +24,51 @@
 	shuttle_tag = "Inquisition"
 
 
+/datum/shuttle/autodock/ferry/governor
+	name = "governor"
+	warmup_time = 10
+	waypoint_station = "governor_start"
+	waypoint_offsite = "governor_end"
+	shuttle_area = /area/cadiaoutpost/oa/shuttle/governor
+
+/obj/effect/shuttle_landmark/ferry/governor_end
+	name = "landing pad"
+	landmark_tag = "governor_end"
+	base_area = /area/cadiaoutpost/govship1
+	base_turf = /turf/simulated/floor/plating
+
+/obj/effect/shuttle_landmark/ferry/governor_start
+	name = "governor ship"
+	landmark_tag = "governor_start"
+	base_area = /area/cadiaoutpost/govship2
+	base_turf = /turf/simulated/floor/plating
+
+/obj/machinery/computer/shuttle_control/ferry/governor
+	name = "Shuttle Control Console"
+	shuttle_tag = "governor"
+
+/datum/shuttle/autodock/ferry/magos
+	name = "magos"
+	warmup_time = 10
+	waypoint_station = "magos_start"
+	waypoint_offsite = "magos_end"
+	shuttle_area = /area/cadiaoutpost/oa/shuttle/governor
+
+/obj/effect/shuttle_landmark/ferry/magos_end
+	name = "landing pad"
+	landmark_tag = "magos_end"
+	base_area = /area/cadiaoutpost/magosship1
+	base_turf = /turf/simulated/floor/plating
+
+/obj/effect/shuttle_landmark/ferry/magos_start
+	name = "magos ship"
+	landmark_tag = "magos_start"
+	base_area = /area/cadiaoutpost/magosship2
+	base_turf = /turf/simulated/floor/plating
+
+/obj/machinery/computer/shuttle_control/ferry/magos
+	name = "Shuttle Control Console"
+	shuttle_tag = "magos"
 
 /datum/shuttle/autodock/ferry/bloodpact
 	name = "Bloodpact"

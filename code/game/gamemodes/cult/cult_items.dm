@@ -132,16 +132,15 @@
 /obj/item/clothing/suit/witchhunter
 	name = "Witch Hunter Garments"
 	desc = "A garment worn by the Ordo Hereticus, despite looking like your usual clothes, these have reinforced materials below that protect from most small to medium caliber and sharp weapons."
-	icon = 'icons/map_project/ordo_hereticus.dmi'
-	armor = list(melee = 75, bullet = 65, laser = 65, energy = 55, bomb = 55, bio = 85, rad = 100)
+	armor = list(melee = 65, bullet = 75, laser = 70, energy = 55, bomb = 55, bio = 85, rad = 100)
 	icon_state = "femquisitor-armor_worn"
 	item_state = "femquisitor-armor_worn"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 
 /obj/item/clothing/head/witchhunter_hat
 	name = "Ordo Hereticus Hat"
-	icon = 'icons/map_project/ordo_hereticus_helmet.dmi'
 	icon_state = "femquisitor-hat_worn"
+	item_state = "femquisitor-hat_worn"
 	desc = "A hat worn by the Ordo Hereticus, or more often called 'Witch Hunters' due the tasks they've got to do."
 	flags_inv = BLOCKHAIR
 	armor = list(melee = 65, bullet = 55, laser = 55, energy = 55, bomb = 75, bio = 55, rad = 100) //We make the hat actually useful for the witch hunters to wear + Actually protects = Fear
