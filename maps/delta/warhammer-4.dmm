@@ -1,17 +1,7 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ae" = (
-/obj/machinery/button/remote/blast_door/id_scan{
-	name = "The Enterprise - ID lock";
-	id = "enterprise";
-	pixel_x = 32
-	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 4
-	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/unsimulated/mineral,
+/area/cadiaoutpost/rtship1)
 "ag" = (
 /obj/effect/wingrille_spawn/reinforced{
 	color = "grey"
@@ -62,10 +52,6 @@
 "ar" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 4
-	},
-/obj/structure/curtain/open/shower/security{
-	pixel_x = 32;
-	name = "privacy curtain"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/inn)
@@ -141,16 +127,13 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/hive_city)
 "aG" = (
-/obj/machinery/light/small/red{
-	dir = 4
-	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/rtship1)
 "aH" = (
 /obj/structure/curtain/open/shower/security{
 	name = "expensive curtain";
@@ -218,11 +201,10 @@
 	},
 /area/cadiaoutpost/oa/hallway/northern)
 "aX" = (
-/obj/effect/floor_decal/industrial/warning/corner,
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/rtship1)
 "ba" = (
 /obj/item/book/manual{
 	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
@@ -434,11 +416,13 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "cg" = (
-/obj/structure/bed/chair,
-/turf/simulated/floor/tiled{
+/obj/effect/floor_decal/industrial/warning{
+	dir = 10
+	},
+/turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/rtship1)
 "ci" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	icon_state = "4";
@@ -514,7 +498,7 @@
 "cz" = (
 /obj/effect/floor_decal/turf/metal/six,
 /obj/machinery/door/airlock/engineering{
-	req_access = list(247)
+	req_one_access = list(247)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -554,12 +538,18 @@
 /turf/simulated/open,
 /area/cadiaoutpost/oa/hallway/northern)
 "cH" = (
-/obj/effect/floor_decal/turf/metal/six,
-/obj/item/clothing/head/welding/knight,
+/obj/structure/bed/chair/comfy/captain{
+	dir = 1;
+	icon_state = "capchair_preview"
+	},
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 1
+	},
+/obj/effect/shuttle_landmark/ferry/roguet_start,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "cN" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -587,17 +577,18 @@
 /obj/machinery/door/airlock/glass_command/hospitaller{
 	color = null;
 	maxhealth = 600;
-	req_access = list(333)
+	req_one_access = list(333)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel)
 "cU" = (
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table4"
 	},
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/floor/factory_floor{
+	dir = 4
+	},
+/area/cadiaoutpost/oa/service/inn)
 "cW" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 4
@@ -634,15 +625,13 @@
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "di" = (
-/obj/machinery/button/remote/blast_door/id_scan{
-	id = "noblepod";
-	req_one_access = list(225)
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 1
 	},
-/turf/simulated/shuttle/wall{
-	color = "grey";
-	icon_state = "wall3"
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "do" = (
 /obj/effect/floor_decal/newcorner/grey{
 	dir = 8
@@ -767,14 +756,14 @@
 /turf/simulated/floor/fancyfloor/marble,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "eg" = (
-/obj/random/drinkbottle,
+/obj/random/accessory,
 /obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table4"
+	icon_state = "reinf_table5"
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/service/inn)
 "eh" = (
 /obj/structure/table/graf/reinf_table,
 /turf/simulated/floor/wood{
@@ -955,12 +944,11 @@
 /turf/simulated/floor/fancyfloor/carpet/blue,
 /area/cadiaoutpost/oa/hallway/northern)
 "fe" = (
-/obj/structure/table/graf/reinf_table{
-	icon_state = "table_horizontal2";
-	dir = 4
+/obj/structure/shipdecor{
+	icon_state = "reading"
 	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/floor/ship_floor/steel,
+/area/cadiaoutpost/oa/shuttle/roguet)
 "ff" = (
 /obj/effect/floor_decal/turf/metal/six,
 /obj/item/rnd/eng5,
@@ -1014,15 +1002,8 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "fv" = (
-/obj/structure/sink{
-	dir = 4;
-	pixel_x = 12
-	},
-/obj/structure/mirror{
-	pixel_x = 32
-	},
-/turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/new_hive/hive_city)
+/turf/unsimulated/mineral,
+/area/cadiaoutpost/oa/farm)
 "fw" = (
 /obj/item/clothing/suit/armor/bluecoat,
 /obj/item/clothing/head/helmet/bluehelmet,
@@ -1049,14 +1030,13 @@
 	},
 /area/cadiaoutpost/oa/service/inn)
 "fB" = (
-/obj/structure/cargo_pad/bottom_right,
-/obj/effect/landmark/cargospawn,
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal/six,
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 8
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "fG" = (
 /obj/machinery/light/red{
 	dir = 1
@@ -1392,7 +1372,7 @@
 "hs" = (
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
 	name = "Imperialis Doorway - Monasterium";
-	req_access = list(211);
+	req_one_access = list(211);
 	maxhealth = 900
 	},
 /turf/simulated/floor/factory_floor,
@@ -1419,7 +1399,7 @@
 /area/cadiaoutpost/oa/villageinside)
 "hC" = (
 /obj/structure/closet/secure_closet/CMO{
-	req_access = list()
+	req_one_access = list()
 	},
 /obj/item/book/manual{
 	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
@@ -1463,7 +1443,7 @@
 	icon_state = "tube1"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/service/inn)
 "hK" = (
 /obj/item/paper_bin{
 	pixel_y = 10
@@ -1517,13 +1497,14 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "hZ" = (
-/obj/machinery/door/unpowered/inn{
-	name = "Bathroom"
+/obj/random/drinkbottle,
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table5"
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/service/inn)
 "ia" = (
 /obj/structure/lattice,
 /turf/simulated/open,
@@ -1535,14 +1516,11 @@
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/villageinside)
 "if" = (
-/obj/machinery/light/small/red{
-	dir = 8;
-	icon_state = "bulb1"
-	},
-/turf/simulated/floor/plating{
+/obj/effect/floor_decal/newcorner/plating,
+/turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "ih" = (
 /obj/structure/table/rack/shelf{
 	color = "grey"
@@ -1634,18 +1612,9 @@
 /turf/simulated/open,
 /area/cadiaoutpost/oa/hallway/northern)
 "iz" = (
-/obj/structure/shuttle/engine/propulsion{
-	color = "grey";
-	dir = 8
-	},
-/obj/item/pyre/self_lit{
-	invisibility = 100;
-	name = "Invisible Light"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/obj/machinery/computer/crew,
+/turf/simulated/floor/ship_floor/steel,
+/area/cadiaoutpost/oa/shuttle/roguet)
 "iA" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	icon_state = "04";
@@ -1739,7 +1708,7 @@
 "iO" = (
 /obj/structure/closet/secure_closet/captains{
 	color = "grey";
-	req_access = list(331)
+	req_one_access = list(331)
 	},
 /obj/item/card/id/key/grand/master{
 	access = list(333,331,63)
@@ -1785,13 +1754,9 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "je" = (
-/obj/effect/floor_decal/newcorner/reinforced/corner{
-	dir = 4
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/obj/machinery/computer/station_alert/security,
+/turf/simulated/floor/ship_floor/steel,
+/area/cadiaoutpost/oa/shuttle/roguet)
 "jg" = (
 /obj/structure/bed/chair{
 	dir = 4;
@@ -1941,17 +1906,12 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "jI" = (
-/obj/structure/mirror{
-	pixel_x = 32
+/obj/effect/floor_decal/turf/bar3,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
 	},
-/obj/structure/sink{
-	dir = 4;
-	icon_state = "sink";
-	pixel_x = 11;
-	pixel_y = 0
-	},
-/turf/simulated/floor/fancyfloor/marble,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "jJ" = (
 /obj/item/clothing/suit/armor/bluecoat/medic,
 /obj/item/clothing/head/helmet/bluehelmet,
@@ -2022,13 +1982,16 @@
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/farm)
 "kc" = (
-/obj/structure/shuttle/engine/propulsion{
-	color = "grey"
+/obj/machinery/button/remote/blast_door/id_scan{
+	name = "The Enterprise - ID lock";
+	id = "enterprise";
+	pixel_x = 32
 	},
-/turf/simulated/floor/plating{
-	color = "grey"
+/turf/simulated/shuttle/wall{
+	color = "red";
+	icon_state = "wall3"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "kd" = (
 /obj/structure/dogbed{
 	color = "grey"
@@ -2041,14 +2004,6 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/northern)
-"kh" = (
-/obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table5"
-	},
-/turf/simulated/floor/factory_floor{
-	dir = 4
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "kl" = (
 /obj/structure/hivedecor/bookcase,
 /turf/simulated/floor/darkwood,
@@ -2251,7 +2206,7 @@
 "ls" = (
 /obj/machinery/door/airlock/hatch/simiel{
 	name = "Hangar";
-	req_access = list(225)
+	req_one_access = list(225)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
@@ -2302,13 +2257,8 @@
 /turf/simulated/open,
 /area/cadiaoutpost/oa/villageinside)
 "lD" = (
-/obj/effect/floor_decal/industrial/warning/corner{
-	dir = 4
-	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/floor/ship_floor/steel,
+/area/cadiaoutpost/oa/shuttle/roguet)
 "lF" = (
 /turf/simulated/floor/fancyfloor/carpet/green{
 	dir = 5
@@ -2436,11 +2386,9 @@
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/inn)
 "mv" = (
-/obj/structure/shipdecor{
-	icon_state = "off"
-	},
-/turf/simulated/floor/ship_floor/steel,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/obj/machinery/light/small,
+/turf/simulated/floor/fancyfloor/marble,
+/area/cadiaoutpost/oa/shuttle/roguet)
 "mx" = (
 /obj/structure/warfare/barricade/sandbag{
 	dir = 8
@@ -2525,14 +2473,12 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
 "nk" = (
-/obj/machinery/door/unpowered/inn{
-	name = "Bathroom Door";
-	req_access = list(211)
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
 	},
-/turf/simulated/floor/factory_floor{
-	dir = 4
-	},
-/area/cadiaoutpost/new_hive/hive_city)
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/inn)
 "nl" = (
 /obj/effect/wingrille_spawn/reinforced{
 	color = "grey"
@@ -2540,20 +2486,12 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel)
 "nn" = (
-/obj/structure/shuttle/engine/propulsion{
-	color = "grey";
-	dir = 1;
-	icon_state = "propulsion"
+/turf/unsimulated/wall/fakeglass{
+	dir = 4;
+	icon = 'icons/map_project/windows.dmi';
+	icon_state = "r_window"
 	},
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/item/pyre/self_lit{
-	invisibility = 100;
-	name = "Invisible Light"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "no" = (
 /obj/effect/wingrille_spawn/reinforced{
 	color = "grey"
@@ -2614,13 +2552,11 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "nz" = (
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 4
-	},
+/obj/structure/bed/chair,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "nA" = (
 /obj/structure/railing,
 /obj/machinery/light/blue{
@@ -2671,11 +2607,13 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
 "nK" = (
-/turf/simulated/shuttle/wall{
-	color = "grey";
-	icon_state = "wall3"
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 9
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/roguet)
 "nM" = (
 /obj/structure/hivedecor/bookcase{
 	pixel_x = -10
@@ -2749,14 +2687,14 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "op" = (
-/obj/random/accessory,
+/obj/random/gloves,
 /obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table4"
+	icon_state = "reinf_table5"
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/service/inn)
 "oq" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	icon_state = "4";
@@ -2810,7 +2748,7 @@
 /obj/machinery/door/unpowered/inn/room2{
 	maxhealth = 1500;
 	name = "Pathfinder Estate";
-	req_access = list(253)
+	req_one_access = list(253)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/villageinside)
@@ -2882,21 +2820,15 @@
 "oV" = (
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/oa/farm)
-"oW" = (
-/turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/new_hive/hive_city)
 "oY" = (
-/obj/structure/bed/chair/comfy/captain{
-	dir = 1;
-	icon_state = "capchair_preview"
+/obj/item/bedsheet/captain,
+/obj/structure/bed{
+	desc = "This is used to lie in, sleep in or strap on.";
+	icon_state = "bed_padding1";
+	name = "comfy bed"
 	},
-/obj/effect/floor_decal/newcorner/reinforced{
-	dir = 1
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/shuttle/roguet)
 "pb" = (
 /obj/effect/floor_decal/newcorner/reinforced/corner{
 	dir = 1
@@ -2973,13 +2905,12 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/villageinside)
 "pB" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 5
+/turf/unsimulated/wall/fakeglass{
+	dir = 5;
+	icon = 'icons/map_project/windows.dmi';
+	icon_state = "r_window"
 	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "pD" = (
 /obj/structure/flora/yes/cross,
 /turf/simulated/floor/stone/old4,
@@ -2996,13 +2927,12 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "pP" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 9
-	},
-/turf/simulated/floor/plating{
+/obj/effect/floor_decal/turf/metal/six,
+/obj/item/clothing/head/welding/knight,
+/turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/new_hive/hive_city)
 "pR" = (
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tileendtable";
@@ -3055,19 +2985,19 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
 "qb" = (
-/obj/item/bedsheet/captain,
-/obj/structure/bed{
-	desc = "This is used to lie in, sleep in or strap on.";
-	icon_state = "bed_padding1";
-	name = "comfy bed"
+/obj/effect/floor_decal/industrial/warning,
+/turf/simulated/floor/plating{
+	color = "grey"
 	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/rtship1)
 "qd" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 6
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "qg" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -3227,15 +3157,6 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/new_hive/hive_city)
-"rb" = (
-/obj/random/loot/tech1,
-/obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table4"
-	},
-/turf/simulated/floor/factory_floor{
-	dir = 4
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "rd" = (
 /obj/structure/warfare/barricade/sandbag,
 /turf/simulated/floor/trench,
@@ -3280,12 +3201,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "rq" = (
-/obj/structure/railing{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
+/turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "rr" = (
 /obj/structure/window/reinforced{
@@ -3329,9 +3245,14 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "rB" = (
-/obj/machinery/light/small,
-/turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/new_hive/hive_city)
+/obj/random/accessory,
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table4"
+	},
+/turf/simulated/floor/factory_floor{
+	dir = 4
+	},
+/area/cadiaoutpost/oa/service/inn)
 "rC" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 4
@@ -3413,19 +3334,24 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/northern)
 "rY" = (
-/obj/machinery/light,
-/obj/effect/floor_decal/newcorner/plating,
+/obj/machinery/button/remote/blast_door/id_scan{
+	id = "noblepod";
+	req_one_access = list(225)
+	},
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
+	},
+/area/cadiaoutpost/new_hive/hive_city)
+"rZ" = (
+/obj/effect/floor_decal/turf/metal/six,
+/obj/machinery/door/airlock/engineering{
+	req_one_access = list(225)
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
-"rZ" = (
-/obj/structure/toilet{
-	dir = 8;
-	icon_state = "toilet00"
-	},
-/turf/simulated/floor/fancyfloor/marble,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/new_hive/hive_city)
 "se" = (
 /obj/machinery/door/unpowered/inn,
 /turf/simulated/floor/factory_floor,
@@ -3588,11 +3514,9 @@
 	},
 /area/cadiaoutpost/oa/hallway/northern)
 "sW" = (
-/obj/effect/floor_decal/newcorner/plating,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/obj/machinery/door/airlock/hatch/simiel,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/shuttle/roguet)
 "sY" = (
 /turf/simulated/floor/factory_floor{
 	dir = 4
@@ -3810,23 +3734,20 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "tZ" = (
-/obj/effect/floor_decal/industrial/warning/corner{
-	dir = 8
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/closet/crate/secure/large{
+	name = "enterprise large crate";
+	req_one_access = list(225)
 	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
-"ue" = (
-/obj/item/pyre/self_lit{
-	invisibility = 100;
-	name = "Invisible Light"
-	},
-/turf/simulated/shuttle/wall{
+/turf/simulated/floor/tiled{
 	color = "grey";
-	icon_state = "wall3"
+	icon_state = "dark1"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
+"ue" = (
+/obj/machinery/computer/planetarytrade,
+/turf/simulated/floor/ship_floor/steel,
+/area/cadiaoutpost/oa/shuttle/roguet)
 "uf" = (
 /obj/machinery/light/purple,
 /turf/simulated/floor/darkwood{
@@ -3879,13 +3800,14 @@
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/inn)
 "ur" = (
-/obj/structure/closet/hive/iron_c{
-	anchored = 1
+/obj/machinery/light/small/red{
+	dir = 1;
+	icon_state = "bulb1"
 	},
-/obj/random/canned_food,
-/obj/random/canned_food,
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/rtship1)
 "us" = (
 /obj/effect/floor_decal/spline/fancy/wood,
 /obj/item/exploration_loot/zrbite_ingot,
@@ -3953,13 +3875,12 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/northern)
 "uN" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1
+/obj/machinery/light/small/red{
+	dir = 8;
+	icon_state = "bulb1"
 	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/wall/concrete/strong,
+/area/cadiaoutpost/rtship1)
 "uR" = (
 /obj/structure/sign/portrait_hippocrates{
 	pixel_x = -32
@@ -3998,7 +3919,7 @@
 "vc" = (
 /obj/machinery/door/unpowered/inn/deadwood{
 	maxhealth = 1500;
-	req_access = list();
+	req_one_access = list();
 	name = "Bar"
 	},
 /turf/simulated/floor/tiled/dark,
@@ -4044,18 +3965,16 @@
 	},
 /area/cadiaoutpost/oa/service/inn)
 "vo" = (
-/obj/structure/shuttle/engine/propulsion{
-	color = "grey"
+/obj/structure/banner/red{
+	pixel_y = 32
 	},
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/item/pyre/self_lit{
-	invisibility = 100;
-	name = "Invisible Light"
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 4
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "vq" = (
 /obj/structure/bed,
 /turf/simulated/floor/tiled{
@@ -4146,11 +4065,12 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/villageinside)
 "vO" = (
-/obj/structure/shipdecor{
-	icon_state = "loading"
+/turf/unsimulated/wall/fakeglass{
+	dir = 1;
+	icon = 'icons/map_project/windows.dmi';
+	icon_state = "r_window"
 	},
-/turf/simulated/floor/ship_floor/steel,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "vQ" = (
 /obj/structure/sink{
 	dir = 4;
@@ -4209,9 +4129,9 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/farm)
 "wa" = (
-/obj/machinery/computer,
+/obj/machinery/computer/sidepiece,
 /turf/simulated/floor/ship_floor/steel,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "wc" = (
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
@@ -4223,13 +4143,12 @@
 /turf/simulated/floor/ceramic/blackstone,
 /area/cadiaoutpost/oa/service/chapel)
 "wi" = (
-/obj/effect/floor_decal/newcorner/plating/quarter{
-	dir = 1
-	},
+/obj/effect/floor_decal/turf/metal/six,
+/obj/item/rnd/eng5,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/new_hive/hive_city)
 "wk" = (
 /obj/structure/warfare/barricade/sandbag{
 	dir = 1
@@ -4304,12 +4223,13 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
 "wF" = (
-/obj/effect/floor_decal/turf/metal/six,
-/obj/item/rnd/eng5,
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 5
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "wH" = (
 /obj/structure/torchwall/service{
 	dir = 8;
@@ -4318,12 +4238,16 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel)
 "wJ" = (
-/obj/machinery/light,
-/obj/effect/floor_decal/newcorner/reinforced,
+/obj/structure/bed/chair/office/dark{
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 6
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "wL" = (
 /obj/structure/closet/hive/wood,
 /obj/effect/decal/cleanable/cobweb,
@@ -4367,16 +4291,13 @@
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/inn)
 "wT" = (
-/obj/structure/bed/chair/office/dark{
-	dir = 4
-	},
-/obj/effect/floor_decal/newcorner/reinforced{
-	dir = 6
-	},
-/turf/simulated/floor/tiled{
+/obj/structure/shuttle/engine/propulsion{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/roguet)
 "wU" = (
 /obj/structure/flora/pottedplant{
 	icon = "icons/map_project/furniture_and_decor.dmi";
@@ -4386,13 +4307,20 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "wW" = (
-/obj/effect/floor_decal/newcorner/plating/quarter{
-	dir = 8
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
+/obj/structure/closet/crate/secure/large{
+	name = "enterprise large crate";
+	req_one_access = list(225)
 	},
 /turf/simulated/floor/tiled{
-	color = "grey"
+	color = "grey";
+	icon_state = "dark1"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "wX" = (
 /obj/effect/landmark/cargospawn2,
 /turf/space,
@@ -4472,7 +4400,7 @@
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
 	maxhealth = 15000;
 	name = "Strong Imperialis Doorway - Locked";
-	req_access = list(333)
+	req_one_access = list(333)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel)
@@ -4531,27 +4459,13 @@
 /turf/simulated/floor/fancyfloor/marble,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "xN" = (
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
-	},
-/obj/structure/closet/crate/secure/large{
-	name = "enterprise large crate";
-	req_access = list(225)
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 4
 	},
 /turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "dark1"
+	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
-"xR" = (
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "xT" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -4614,17 +4528,23 @@
 	},
 /area/cadiaoutpost/oa/service/chapel)
 "yf" = (
-/obj/effect/floor_decal/newcorner/reinforced{
-	dir = 10
+/obj/structure/banner/red{
+	pixel_y = 32
+	},
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 1
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "yg" = (
-/obj/effect/floor_decal/newcorner/plating,
-/turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/unsimulated/wall/fakeglass{
+	dir = 8;
+	icon = 'icons/map_project/windows.dmi';
+	icon_state = "r_window"
+	},
+/area/cadiaoutpost/oa/shuttle/roguet)
 "yh" = (
 /obj/machinery/door/unpowered/newmap/hab2/room7,
 /turf/simulated/floor/factory_floor,
@@ -4780,11 +4700,13 @@
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/inn)
 "zh" = (
-/obj/effect/floor_decal/newcorner/plating/quarter,
-/turf/simulated/floor/tiled{
+/obj/effect/floor_decal/industrial/warning/corner{
+	dir = 1
+	},
+/turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/rtship1)
 "zk" = (
 /obj/item/card/id/key/grand/monastary/inner,
 /obj/item/card/id/key/grand/monastary,
@@ -4796,16 +4718,18 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel)
 "zo" = (
-/obj/structure/banner/red{
-	pixel_y = 32
+/obj/machinery/button/remote/blast_door/id_scan{
+	name = "The Enterprise - ID lock";
+	id = "enterprise";
+	pixel_x = 32
 	},
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 1
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
 	},
-/turf/simulated/floor/tiled{
+/turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/rtship1)
 "zp" = (
 /obj/machinery/door/unpowered/newmap/inn/room5,
 /turf/simulated/floor/factory_floor,
@@ -4824,12 +4748,15 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/villageinside)
 "zs" = (
-/obj/machinery/computer,
-/obj/effect/floor_decal/turf/bar2,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/obj/structure/bed/chair/office/light{
+	dir = 1
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/shuttle/roguet)
 "zv" = (
 /obj/structure/bed/chair/wood/simple{
 	dir = 4
@@ -4848,8 +4775,13 @@
 /turf/simulated/floor/ceramic/blackstone,
 /area/cadiaoutpost/oa/service/chapel)
 "zA" = (
-/turf/simulated/wall/r_wall,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table5"
+	},
+/turf/simulated/floor/factory_floor{
+	dir = 4
+	},
+/area/cadiaoutpost/oa/service/inn)
 "zC" = (
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/villageinside)
@@ -4983,14 +4915,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/villageinside)
-"Ao" = (
-/obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table4"
-	},
-/turf/simulated/floor/factory_floor{
-	dir = 4
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "Aq" = (
 /obj/structure/hivedecor/bookcase{
 	pixel_x = -11
@@ -5005,10 +4929,14 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/villageinside)
 "As" = (
-/turf/simulated/floor/plating{
+/obj/structure/cargo_pad/bottom_left,
+/obj/effect/landmark/cargospawn,
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/obj/effect/floor_decal/turf/metal/six,
+/turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/new_hive/hive_city)
 "Au" = (
 /obj/structure/sink{
 	dir = 8;
@@ -5106,11 +5034,13 @@
 /turf/simulated/open,
 /area/cadiaoutpost/oa/villageinside)
 "AV" = (
-/obj/effect/floor_decal/industrial/warning,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/rtship1)
 "AX" = (
 /obj/structure/toilet{
 	pixel_y = 14
@@ -5191,12 +5121,11 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "Bn" = (
-/obj/machinery/light{
-	dir = 8
+/obj/effect/floor_decal/turf/metal/six,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/new_hive/hive_city)
 "Bq" = (
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/farm)
@@ -5230,17 +5159,24 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "Bz" = (
-/obj/structure/shipdecor{
-	icon_state = "reading"
+/obj/effect/floor_decal/industrial/warning{
+	dir = 6
 	},
-/turf/simulated/floor/ship_floor/steel,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/rtship1)
 "BD" = (
-/obj/structure/banner/red{
-	pixel_x = -32
+/obj/structure/bed/chair/office/dark{
+	dir = 8
 	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/roguet)
 "BE" = (
 /obj/structure/railing,
 /turf/simulated/floor/tiled/dark{
@@ -5329,14 +5265,13 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "BW" = (
-/obj/structure/cargo_pad,
-/obj/effect/landmark/cargospawn,
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal/six,
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 4
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "BZ" = (
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
@@ -5371,9 +5306,13 @@
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/villageinside)
 "Cq" = (
-/obj/machinery/computer/station_alert/security,
-/turf/simulated/floor/ship_floor/steel,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/obj/effect/floor_decal/industrial/warning{
+	dir = 5
+	},
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/rtship1)
 "Cs" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 5
@@ -5452,12 +5391,13 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "CN" = (
-/obj/machinery/door/airlock/hatch/simiel{
-	name = "Rouge Trader's Quarters";
-	req_access = list(225)
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 1
 	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/roguet)
 "CP" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -5487,15 +5427,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"CZ" = (
-/obj/random/gloves,
-/obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table5"
-	},
-/turf/simulated/floor/factory_floor{
-	dir = 4
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "Db" = (
 /obj/machinery/light,
 /turf/simulated/floor/fancyfloor/gray_white,
@@ -5517,12 +5448,11 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "Dk" = (
-/turf/unsimulated/wall/fakeglass{
-	dir = 8;
-	icon = 'icons/map_project/windows.dmi';
-	icon_state = "r_window"
+/obj/machinery/door/unpowered/inn{
+	name = "Bathroom"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/shuttle/roguet)
 "Dl" = (
 /obj/structure/bed/chair,
 /turf/simulated/floor/tiled/dark{
@@ -5536,13 +5466,13 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/villageinside)
 "Do" = (
-/obj/effect/floor_decal/newcorner/reinforced{
-	dir = 9
+/obj/structure/closet/hive/iron_c{
+	anchored = 1
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/obj/random/canned_food,
+/obj/random/canned_food,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/shuttle/roguet)
 "Dp" = (
 /obj/structure/railing{
 	dir = 4
@@ -5568,19 +5498,17 @@
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "Du" = (
-/obj/structure/shuttle/engine/propulsion{
-	color = "grey";
-	dir = 8
+/obj/structure/closet/crate/secure/large{
+	name = "enterprise large crate";
+	req_one_access = list(225)
 	},
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/item/pyre/self_lit{
-	invisibility = 100;
-	name = "Invisible Light"
-	},
+/obj/structure/cargo_pad,
+/obj/effect/landmark/cargospawn,
 /turf/simulated/floor/tiled{
-	color = "grey"
+	color = "grey";
+	icon_state = "dark1"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "Dv" = (
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 1
@@ -5667,13 +5595,14 @@
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/new_hive/hive_city)
 "DS" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 4
+/obj/machinery/light/small/red{
+	dir = 8;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/rtship1)
 "DT" = (
 /obj/structure/bed/chair/wood/fancy/comfy1{
 	dir = 8
@@ -5689,12 +5618,17 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "DV" = (
-/obj/effect/floor_decal/turf/bar3,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "dark1"
+/obj/structure/mirror{
+	pixel_x = 32
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/obj/structure/sink{
+	dir = 4;
+	icon_state = "sink";
+	pixel_x = 11;
+	pixel_y = 0
+	},
+/turf/simulated/floor/fancyfloor/marble,
+/area/cadiaoutpost/oa/shuttle/roguet)
 "DX" = (
 /obj/structure/railing,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -5848,14 +5782,11 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "EM" = (
-/obj/structure/cargo_pad/bottom_left,
-/obj/effect/landmark/cargospawn,
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal/six,
+/obj/effect/floor_decal/newcorner/reinforced/corner,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "EQ" = (
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
@@ -5881,12 +5812,13 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "EU" = (
-/turf/unsimulated/wall/fakeglass{
-	dir = 10;
-	icon = 'icons/map_project/windows.dmi';
-	icon_state = "r_window"
+/obj/effect/floor_decal/industrial/warning/corner{
+	dir = 8
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/rtship1)
 "EX" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 8
@@ -5923,14 +5855,9 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "Fh" = (
-/obj/machinery/door/unpowered/administratum{
-	maxhealth = 3000;
-	name = "Trader Secure Storage";
-	req_access = list();
-	req_one_access = list(225)
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/obj/machinery/light,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/inn)
 "Fi" = (
 /obj/machinery/light/small{
 	icon_state = "bulb1";
@@ -5979,21 +5906,17 @@
 /turf/simulated/floor/trench,
 /area/cadiaoutpost/new_hive/hive_city)
 "FB" = (
-/obj/effect/floor_decal/newcorner/reinforced/corner{
-	dir = 8
+/obj/structure/shipdecor{
+	icon_state = "tncB0"
 	},
+/obj/effect/floor_decal/turf/bar2,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "FC" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 8
-	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/wall/concrete/strong,
+/area/cadiaoutpost/rtship1)
 "FE" = (
 /obj/random/trash,
 /obj/effect/floor_decal/newcorner/reinforced,
@@ -6008,16 +5931,14 @@
 	},
 /area/cadiaoutpost/oa/farm)
 "FM" = (
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/closet/crate/secure/large{
-	name = "enterprise large crate";
-	req_access = list(225)
+/obj/machinery/light/small/red,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
 	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "dark1"
+/turf/simulated/floor/plating{
+	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/rtship1)
 "FS" = (
 /obj/structure/sink{
 	dir = 8;
@@ -6045,15 +5966,11 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "FW" = (
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+/obj/effect/floor_decal/industrial/warning/corner,
+/turf/simulated/floor/plating{
+	color = "grey"
 	},
-/obj/structure/bed/chair/office/light{
-	dir = 1
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/rtship1)
 "FY" = (
 /obj/effect/wingrille_spawn/reinforced{
 	color = "grey"
@@ -6143,16 +6060,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/villageinside)
 "Gm" = (
-/obj/effect/floor_decal/newcorner/plating/quarter,
-/obj/machinery/button/remote/blast_door/id_scan{
-	name = "The Enterprise - ID lock";
+/obj/machinery/door/blast/id_door{
 	id = "enterprise";
-	pixel_y = -32
+	name = "The Enterprise"
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/shuttle/roguet)
 "Gn" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -6211,9 +6124,15 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "Gw" = (
-/obj/machinery/computer/crew,
-/turf/simulated/floor/ship_floor/steel,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
+	},
+/area/cadiaoutpost/new_hive/hive_city)
 "Gx" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -6231,7 +6150,6 @@
 /obj/machinery/door/unpowered/administratum{
 	maxhealth = 2000;
 	name = "Trader's Chambers";
-	req_access = list();
 	req_one_access = list(225)
 	},
 /turf/simulated/floor/factory_floor,
@@ -6303,13 +6221,11 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/villageinside)
 "GS" = (
-/obj/effect/floor_decal/newcorner/reinforced{
-	dir = 5
+/turf/simulated/shuttle/wall{
+	color = "red";
+	icon_state = "wall3"
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "GU" = (
 /obj/machinery/light{
 	dir = 8
@@ -6400,13 +6316,14 @@
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/chapel)
 "Hh" = (
-/obj/effect/floor_decal/industrial/warning/corner{
-	dir = 1
-	},
-/turf/simulated/floor/plating{
+/obj/structure/cargo_pad,
+/obj/effect/landmark/cargospawn,
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/obj/effect/floor_decal/turf/metal/six,
+/turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/new_hive/hive_city)
 "Hi" = (
 /obj/structure/curtain/open/privacy,
 /turf/simulated/floor/factory_floor,
@@ -6436,12 +6353,14 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
 "Hn" = (
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+/obj/random/loot/tech1,
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table4"
 	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/floor/factory_floor{
+	dir = 4
+	},
+/area/cadiaoutpost/oa/service/inn)
 "Ho" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -6487,22 +6406,21 @@
 /turf/simulated/floor/ceramic/blackstone,
 /area/cadiaoutpost/oa/service/chapel)
 "HC" = (
-/obj/structure/banner/red{
-	pixel_y = 32
-	},
 /obj/effect/floor_decal/newcorner/plating/quarter{
-	dir = 4
+	dir = 8
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "HD" = (
-/obj/effect/floor_decal/newcorner/reinforced/corner,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/obj/machinery/light/small/red{
+	dir = 1;
+	icon_state = "bulb1"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/floor/darkfloor,
+/area/cadiaoutpost/rtship1)
 "HH" = (
 /obj/item/paper_bin{
 	pixel_y = 10
@@ -6516,9 +6434,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/farm)
-"HJ" = (
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "HO" = (
 /obj/effect/floor_decal/spline/fancy/wood,
 /obj/machinery/light/purple,
@@ -6637,13 +6552,9 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "Iz" = (
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
-	},
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/rtship1)
 "IA" = (
 /obj/structure/lattice,
 /obj/effect/floor_decal/turf/piping{
@@ -6686,13 +6597,14 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/villageinside)
 "IK" = (
-/obj/structure/banner/red{
-	pixel_x = -32
+/obj/random/firstaid,
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table4"
 	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
+/turf/simulated/floor/factory_floor{
+	dir = 4
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/service/inn)
 "IL" = (
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 1
@@ -6754,12 +6666,13 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/northern)
 "IZ" = (
-/turf/unsimulated/wall/fakeglass{
-	dir = 5;
-	icon = 'icons/map_project/windows.dmi';
-	icon_state = "r_window"
+/obj/effect/floor_decal/industrial/warning{
+	dir = 9
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/rtship1)
 "Jd" = (
 /turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/oa/farm)
@@ -7123,12 +7036,9 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
 "Lr" = (
-/obj/machinery/door/airlock/hatch/simiel{
-	name = "Bridge";
-	req_access = list(225)
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/obj/machinery/computer/station_alert/engineering,
+/turf/simulated/floor/ship_floor/steel,
+/area/cadiaoutpost/oa/shuttle/roguet)
 "Ls" = (
 /obj/effect/floor_decal/turf/metal/six,
 /turf/simulated/floor/tiled/dark{
@@ -7136,14 +7046,8 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "Lu" = (
-/obj/structure/shipdecor{
-	icon_state = "tncA0"
-	},
-/obj/effect/floor_decal/turf/bar2,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/shuttle/roguet)
 "Lv" = (
 /obj/structure/closet/hive/fancy,
 /turf/simulated/floor/fancyfloor/carpet{
@@ -7353,11 +7257,14 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "Mr" = (
-/obj/machinery/door/unpowered/inn{
-	name = "Bathroom"
+/obj/structure/cargo_pad/bottom_right,
+/obj/effect/landmark/cargospawn,
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/obj/effect/floor_decal/turf/metal/six,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/new_hive/hive_city)
 "Ms" = (
 /obj/machinery/shower{
 	color = "grey"
@@ -7393,13 +7300,10 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/villageinside)
 "MB" = (
-/obj/structure/bed/chair/office/dark{
-	dir = 8
+/obj/machinery/computer/shuttle_control/ferry/roguet{
+	req_one_access = list(225)
 	},
-/obj/effect/floor_decal/newcorner/reinforced{
-	dir = 8
-	},
-/turf/simulated/floor/tiled{
+/turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
@@ -7419,21 +7323,15 @@
 /turf/simulated/open,
 /area/cadiaoutpost/oa/hallway/northern)
 "MF" = (
-/obj/random/drinkbottle,
+/turf/simulated/wall/r_wall,
+/area/cadiaoutpost/oa/service/inn)
+"MH" = (
 /obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table5"
-	},
-/turf/simulated/floor/factory_floor{
+	icon_state = "table_horizontal2";
 	dir = 4
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
-"MH" = (
-/turf/unsimulated/wall/fakeglass{
-	dir = 1;
-	icon = 'icons/map_project/windows.dmi';
-	icon_state = "r_window"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/shuttle/roguet)
 "MI" = (
 /obj/structure/closet/crate,
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -7509,7 +7407,7 @@
 "MV" = (
 /obj/structure/closet/secure_closet/guncabinet{
 	name = "secure Sororitas cabinet";
-	req_access = list(213)
+	req_one_access = list(213)
 	},
 /obj/item/storage/firstaid/combat,
 /obj/item/storage/belt/medical/full,
@@ -7539,7 +7437,7 @@
 /obj/machinery/door/unpowered/inn/room2{
 	maxhealth = 1500;
 	name = "Pathfinder Estate";
-	req_access = list(253)
+	req_one_access = list(253)
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/villageinside)
@@ -7558,7 +7456,6 @@
 /obj/machinery/door/airlock/glass_command/hospitaller{
 	color = null;
 	maxhealth = 600;
-	req_access = list();
 	req_one_access = list(40,213)
 	},
 /turf/simulated/floor/factory_floor,
@@ -7807,28 +7704,23 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "OF" = (
-/obj/random/firstaid,
+/obj/random/loot/badweaponlas,
 /obj/structure/table/graf/reinf_table{
 	icon_state = "reinf_table4"
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/service/inn)
 "OI" = (
 /obj/structure/bed/chair/office/light,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "OK" = (
-/obj/machinery/light/small/red{
-	dir = 1;
-	icon_state = "bulb1"
-	},
-/obj/effect/floor_decal/industrial/warning,
-/turf/simulated/floor/plating{
+/turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "OL" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	icon_state = "02";
@@ -7861,13 +7753,12 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "OV" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 6
+/obj/structure/toilet{
+	dir = 8;
+	icon_state = "toilet00"
 	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/floor/fancyfloor/marble,
+/area/cadiaoutpost/oa/shuttle/roguet)
 "OX" = (
 /turf/simulated/wall/concrete/strong,
 /turf/simulated/wall/concrete/strong,
@@ -7985,14 +7876,13 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "PB" = (
-/obj/machinery/light/small/red{
-	dir = 1;
-	icon_state = "bulb1"
+/obj/effect/floor_decal/industrial/warning/corner{
+	dir = 4
 	},
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/rtship1)
 "PC" = (
 /obj/structure/torchwall/service{
 	dir = 1;
@@ -8032,14 +7922,11 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
 "PV" = (
-/obj/machinery/light/small/red,
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
 	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/new_hive/hive_city)
 "PX" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -8120,13 +8007,13 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "Qx" = (
-/obj/effect/floor_decal/newcorner/reinforced{
-	dir = 6
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
 	},
-/turf/simulated/floor/tiled{
+/turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/rtship1)
 "Qz" = (
 /obj/effect/floor_decal/newcorner/plating,
 /obj/structure/banner/blue{
@@ -8192,9 +8079,11 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/new_hive/hive_city)
 "QL" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/obj/effect/floor_decal/newcorner/plating/quarter,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/roguet)
 "QP" = (
 /obj/structure/table/rack/shelf{
 	color = "grey"
@@ -8338,7 +8227,7 @@
 /obj/machinery/door/unpowered/administratum{
 	maxhealth = 2000;
 	name = "Door";
-	req_access = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
@@ -8404,15 +8293,6 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/villageinside)
-"RJ" = (
-/obj/structure/shipdecor{
-	icon_state = "tncB0"
-	},
-/obj/effect/floor_decal/turf/bar2,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "RK" = (
 /obj/structure/bed/chair/wood/simple{
 	dir = 1
@@ -8420,7 +8300,7 @@
 /obj/machinery/button/remote/blast_door{
 	name = "LOCKDOWN!!!";
 	pixel_y = 32;
-	req_access = list(331);
+	req_one_access = list(331);
 	id = "lockdown2"
 	},
 /turf/simulated/floor/fancyfloor/carpet/middle,
@@ -8431,17 +8311,11 @@
 /turf/simulated/open,
 /area/cadiaoutpost/oa/villageinside)
 "RM" = (
-/obj/item/paper_bin{
-	pixel_y = 10
-	},
-/obj/item/pen/multi{
-	pixel_y = 6
-	},
-/obj/structure/table/graf/reinf_table{
-	icon_state = "table_horizontal2"
+/obj/structure/banner/red{
+	pixel_x = -32
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "RN" = (
 /obj/structure/railing{
 	dir = 8;
@@ -8491,20 +8365,12 @@
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/new_hive/hive_city)
 "RW" = (
-/obj/structure/shuttle/engine/propulsion{
-	color = "grey";
-	dir = 4;
-	icon_state = "propulsion"
+/turf/unsimulated/wall/fakeglass{
+	dir = 10;
+	icon = 'icons/map_project/windows.dmi';
+	icon_state = "r_window"
 	},
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/item/pyre/self_lit{
-	invisibility = 100;
-	name = "Invisible Light"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "RX" = (
 /obj/structure/bed/chair,
 /obj/machinery/light/red{
@@ -8530,13 +8396,13 @@
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/new_hive/hive_city)
 "Sc" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 10
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 1
 	},
-/turf/simulated/floor/plating{
+/turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "Sd" = (
 /obj/effect/floor_decal/newcorner/reinforced,
 /obj/effect/floor_decal/newcorner/reinforced{
@@ -8626,22 +8492,9 @@
 /obj/item/mop,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/villageinside)
-"Sz" = (
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
-	},
-/obj/structure/railing,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "SB" = (
-/turf/simulated/shuttle/wall{
-	color = "red";
-	icon_state = "wall3"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/floor/fancyfloor/marble,
+/area/cadiaoutpost/oa/shuttle/roguet)
 "SD" = (
 /obj/structure/closet/hive/wood{
 	anchored = 1
@@ -8717,11 +8570,13 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "SX" = (
-/obj/effect/floor_decal/turf/metal/six,
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 10
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "SZ" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 4
@@ -8763,13 +8618,12 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "Tg" = (
-/obj/effect/floor_decal/newcorner/reinforced{
-	dir = 1
-	},
+/obj/machinery/light,
+/obj/effect/floor_decal/newcorner/plating,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "Ti" = (
 /obj/machinery/door/airlock/multi_tile/glass{
 	dir = 2;
@@ -8811,8 +8665,14 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/chapel)
 "Tu" = (
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/obj/random/drinkbottle,
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table4"
+	},
+/turf/simulated/floor/factory_floor{
+	dir = 4
+	},
+/area/cadiaoutpost/oa/service/inn)
 "Tv" = (
 /obj/structure/bed/chair,
 /turf/simulated/floor/darkwood{
@@ -8862,12 +8722,12 @@
 /turf/simulated/floor/fancyfloor/carpet,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "TN" = (
-/obj/machinery/door/blast/id_door{
-	id = "enterprise";
-	name = "The Enterprise"
+/obj/machinery/door/airlock/hatch/simiel{
+	name = "Rouge Trader's Quarters";
+	req_one_access = list(225)
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "TO" = (
 /obj/item/gun/energy/las/laspistol/shitty,
 /turf/simulated/floor/tiled/dark{
@@ -9030,12 +8890,17 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/inn)
 "UL" = (
-/turf/unsimulated/wall/fakeglass{
-	dir = 4;
-	icon = 'icons/map_project/windows.dmi';
-	icon_state = "r_window"
+/obj/item/paper_bin{
+	pixel_y = 10
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/obj/item/pen/multi{
+	pixel_y = 6
+	},
+/obj/structure/table/graf/reinf_table{
+	icon_state = "table_horizontal2"
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/shuttle/roguet)
 "UM" = (
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/tiled{
@@ -9050,7 +8915,7 @@
 /area/cadiaoutpost/oa/villageinside)
 "UR" = (
 /obj/machinery/door/unpowered/inn{
-	req_access = list(331)
+	req_one_access = list(331)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/hallway/northern)
@@ -9085,7 +8950,6 @@
 /obj/machinery/door/unpowered/administratum{
 	maxhealth = 2000;
 	name = "Xenos' Room";
-	req_access = list();
 	req_one_access = list(225)
 	},
 /turf/simulated/floor/factory_floor,
@@ -9263,7 +9127,7 @@
 "VY" = (
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
 	name = "Imperialis Doorway - Sister Hospitaller";
-	req_access = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel)
@@ -9280,18 +9144,21 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/villageinside)
 "Wb" = (
-/obj/effect/floor_decal/turf/metal/six,
-/obj/machinery/door/airlock/engineering{
-	req_access = list(225)
-	},
+/obj/effect/floor_decal/turf/bar2,
+/obj/machinery/computer/shuttle_control/ferry/roguet,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "Wc" = (
-/obj/machinery/light/small,
-/turf/simulated/floor/fancyfloor/marble,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/obj/structure/shipdecor{
+	icon_state = "tncA0"
+	},
+/obj/effect/floor_decal/turf/bar2,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/roguet)
 "Wd" = (
 /obj/structure/bed/chair/wood/fancy/comfy1{
 	dir = 4
@@ -9354,14 +9221,13 @@
 /turf/simulated/floor/fancyfloor/carpet/middle,
 /area/cadiaoutpost/oa/hallway/northern)
 "Wv" = (
-/obj/random/accessory,
-/obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table5"
+/obj/machinery/door/unpowered/administratum{
+	maxhealth = 3000;
+	name = "Trader Secure Storage";
+	req_one_access = list(225)
 	},
-/turf/simulated/floor/factory_floor{
-	dir = 4
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/service/inn)
 "Wx" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -9442,11 +9308,18 @@
 	},
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/rtship1)
 "WW" = (
-/obj/machinery/computer/station_alert/engineering,
-/turf/simulated/floor/ship_floor/steel,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/rtship1)
 "WX" = (
 /obj/structure/torchwall/service{
 	pixel_y = 32
@@ -9629,14 +9502,12 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "XQ" = (
-/obj/random/loot/badweaponlas,
-/obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table4"
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
 	},
-/turf/simulated/floor/factory_floor{
-	dir = 4
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/service/inn)
 "XR" = (
 /obj/structure/bed/chair/wood/simple,
 /turf/simulated/floor/fancyfloor/carpet/blue{
@@ -9679,7 +9550,7 @@
 "XY" = (
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
 	name = "Imperialis Doorway - Bathroom";
-	req_access = list(211);
+	req_one_access = list(211);
 	maxhealth = 900
 	},
 /turf/simulated/floor/factory_floor,
@@ -9770,10 +9641,9 @@
 /area/cadiaoutpost/oa/hallway/northern)
 "Yx" = (
 /obj/machinery/door/unpowered/inn/berryfarm{
-	req_access = list();
+	req_one_access = list(355,268);
 	name = "Gang Den";
-	maxhealth = 1000;
-	req_one_access = list(355,268)
+	maxhealth = 1000
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/inn)
@@ -9823,11 +9693,12 @@
 /turf/simulated/floor/fancyfloor/marble,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "YT" = (
-/obj/effect/floor_decal/turf/bar2,
+/obj/machinery/light,
+/obj/effect/floor_decal/newcorner/reinforced,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "YU" = (
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 9
@@ -9875,15 +9746,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
-"Zn" = (
-/obj/structure/toilet{
-	dir = 1
-	},
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/new_hive/hive_city)
 "Zo" = (
 /obj/structure/shuttle/engine/propulsion{
 	color = "grey";
@@ -9924,9 +9786,12 @@
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "Zy" = (
-/obj/machinery/light,
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/service/inn)
 "ZB" = (
 /obj/structure/curtain/open/shower/security{
 	name = "expensive curtain";
@@ -10001,13 +9866,11 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "ZT" = (
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 1
-	},
+/obj/effect/floor_decal/turf/bar2,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/new_hive/hive_city)
 "ZU" = (
 /obj/structure/toilet{
 	color = "gold";
@@ -63585,21 +63448,21 @@ vt
 vt
 vt
 vt
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 vt
 vt
 vt
@@ -63608,7 +63471,7 @@ vt
 vt
 vt
 vt
-Ig
+vt
 Ig
 IH
 IH
@@ -63837,21 +63700,21 @@ IG
 vt
 vt
 vt
-PH
-zA
-zA
-zA
-zA
-zA
-zA
-zA
-zA
-zA
-zA
-zA
-zA
-zA
-PH
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 vt
 vt
 vt
@@ -63860,7 +63723,7 @@ vt
 vt
 vt
 vt
-Ig
+vt
 Ig
 IH
 jy
@@ -64089,21 +63952,21 @@ IG
 vt
 vt
 vt
-PH
-zA
-eg
-MF
-xR
-Ao
-CZ
-HJ
-Ao
-kh
-xR
-rb
-kh
-zA
-PH
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 vt
 vt
 vt
@@ -64112,7 +63975,7 @@ vt
 vt
 vt
 vt
-Ig
+vt
 Ig
 IH
 Vu
@@ -64341,21 +64204,21 @@ IG
 vt
 vt
 uU
-PH
-zA
-HJ
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-zA
-PH
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 vt
 vt
@@ -64364,7 +64227,7 @@ vt
 vt
 vt
 vt
-Ig
+vt
 Ig
 IH
 IH
@@ -64593,30 +64456,30 @@ IG
 IG
 uU
 uU
-PH
-zA
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-zA
-PH
 uU
 uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 vt
 vt
 vt
 vt
 vt
 vt
-Ig
+vt
 Ig
 Ig
 Ig
@@ -64845,21 +64708,21 @@ uU
 IG
 uU
 uU
-PH
-zA
-Tu
-Tu
-Ao
-kh
-Tu
-Tu
-Tu
-Ao
-kh
-Tu
-Tu
-zA
-PH
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 vt
@@ -64901,16 +64764,16 @@ IH
 IH
 IH
 IH
-Uw
 IH
 IH
-UB
-UB
-vt
-vt
-vt
-vt
-vt
+IH
+IH
+IH
+IH
+IH
+IH
+IH
+Ck
 vt
 tf
 Xu
@@ -65097,21 +64960,21 @@ uU
 IG
 uU
 uU
-PH
-zA
-hJ
-Tu
-zA
-zA
-Tu
-Tu
-Tu
-zA
-zA
-Tu
-Zy
-zA
-PH
+Ck
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -65148,21 +65011,21 @@ hg
 PI
 xi
 IH
-PN
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-vt
-vt
-vt
-vt
-vt
+IH
+IH
+IH
+IH
+IH
+IH
+IH
+IH
+IH
+IH
+IH
+IH
+IH
+IH
+Ck
 vt
 NL
 Bq
@@ -65349,21 +65212,21 @@ uU
 IG
 uU
 uU
-PH
-zA
-Tu
-Tu
-Ao
-kh
-Tu
-Tu
-Tu
-op
-Wv
-Tu
-Tu
-zA
-PH
+Ck
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -65400,21 +65263,21 @@ IH
 IH
 IH
 IH
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-vt
-vt
-vt
-vt
-vt
+IH
+IH
+Tu
+hZ
+Zy
+cU
+op
+rN
+cU
+zA
+Zy
+Hn
+zA
+IH
+Ck
 vt
 NL
 Jd
@@ -65601,21 +65464,21 @@ uU
 IG
 uU
 uU
-PH
-zA
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-zA
-PH
+Ck
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -65652,21 +65515,21 @@ js
 In
 ux
 IH
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-vt
-vt
-vt
-vt
-vt
+IH
+IH
+rN
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+IH
+Ck
 vt
 vt
 vt
@@ -65853,21 +65716,21 @@ uU
 IG
 uU
 uU
-PH
-zA
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-Tu
-zA
-PH
+Ck
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -65904,21 +65767,21 @@ In
 In
 In
 IH
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-vt
-vt
-vt
-vt
-vt
+IH
+IH
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+IH
+Ck
 vt
 vt
 vt
@@ -66105,21 +65968,21 @@ Ck
 Ck
 Ck
 Ck
-PH
-zA
-Tu
-Tu
-cU
-Ao
-kh
-HJ
-OF
-kh
-Hn
-XQ
-kh
-zA
-PH
+Ck
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -66156,21 +66019,21 @@ In
 In
 Xa
 Uw
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-vt
-vt
-vt
-vt
-vt
+IH
+IH
+Nn
+Nn
+cU
+zA
+Nn
+Nn
+Nn
+cU
+zA
+Nn
+Nn
+IH
+Ck
 vt
 vt
 vt
@@ -66351,27 +66214,27 @@ uU
 uU
 uU
 uU
-PH
-zA
-zA
-zA
-zA
-zA
-zA
-zA
-zA
-Fh
-zA
-zA
-zA
-zA
-zA
-zA
-zA
-zA
-zA
-zA
-PH
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -66408,21 +66271,21 @@ uu
 mu
 YK
 IH
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-vt
-vt
-vt
-vt
-vt
+IH
+IH
+hJ
+Nn
+MF
+MF
+Nn
+Nn
+Nn
+MF
+MF
+Nn
+Fh
+IH
+Ck
 vt
 vt
 vt
@@ -66603,36 +66466,36 @@ uU
 uU
 uU
 uU
-PH
-zA
-kE
-xK
-qB
-qB
-zA
-wU
-uR
-uG
-qv
-wU
-zA
-Ab
-Sm
-gx
-qh
-zA
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 VW
@@ -66660,21 +66523,21 @@ IH
 IH
 IH
 IH
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-vt
-vt
-vt
-vt
-vt
+IH
+IH
+Nn
+Nn
+cU
+zA
+Nn
+Nn
+Nn
+rB
+eg
+Nn
+Nn
+IH
+Ck
 vt
 vt
 vt
@@ -66855,36 +66718,36 @@ uU
 uU
 uU
 uU
-PH
-zA
-qB
-qB
-qB
-qB
-zA
-NG
-uG
-uG
-uG
-Ri
-zA
-EC
-Zx
-tw
-KJ
-zA
-QL
-Bn
-QL
-QL
-QL
-QL
-QL
-QL
-Bn
-QL
-QL
-PH
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -66912,21 +66775,21 @@ js
 In
 ux
 IH
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-vt
-vt
-vt
-vt
-vt
+IH
+IH
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+IH
+Ck
 vt
 vt
 vt
@@ -67107,36 +66970,36 @@ uU
 uU
 uU
 uU
-PH
-zA
-YS
-qB
-ee
-qB
-zA
-ry
-uG
-uG
-uG
-uG
-UV
-EC
-IL
-TM
-Be
-zA
-QL
-QL
-QL
-QL
-iz
-QL
-QL
-Du
-QL
-QL
-QL
-PH
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -67164,21 +67027,21 @@ In
 In
 In
 IH
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-vt
-vt
-vt
-vt
-vt
+IH
+IH
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
+IH
+Ck
 vt
 vt
 vt
@@ -67359,36 +67222,36 @@ Up
 ci
 uU
 uU
-PH
-zA
-zA
-zA
-zA
-Hi
-zA
-wU
-uG
-uG
-uG
-uG
-zA
-bZ
-nS
-Er
-EC
-zA
-QL
-QL
-QL
-nK
-nK
-nK
-nK
-nK
-nK
-QL
-QL
-PH
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -67416,21 +67279,21 @@ In
 In
 Xa
 Uw
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-vt
-vt
-vt
-vt
-vt
+IH
+IH
+Nn
+Nn
+nk
+cU
+zA
+rN
+IK
+zA
+XQ
+OF
+zA
+IH
+Ck
 vt
 vt
 vt
@@ -67611,36 +67474,36 @@ wt
 iA
 uU
 uU
-PH
-zA
-Po
-qF
-wc
-wc
-zA
-zA
-zA
-zA
-zA
-Rr
-zA
-EC
-lo
-lm
-Zi
-zA
-QL
-QL
-nn
-nK
-di
-YT
-YT
-ue
-nK
-vo
-QL
-PH
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -67668,21 +67531,21 @@ uu
 mu
 YK
 IH
-bo
-Ex
-Ex
-Ex
-Ex
-Ig
-UB
-UB
-UB
-UB
-vt
-vt
-vt
-vt
-vt
+IH
+IH
+IH
+Wv
+IH
+IH
+IH
+IH
+IH
+IH
+IH
+IH
+IH
+IH
+Ck
 vt
 vt
 vt
@@ -67863,36 +67726,36 @@ wt
 ms
 uU
 uU
-PH
-zA
-gp
-sH
-wc
-wc
-zA
-XX
-oM
-KE
-tX
-tX
-zA
-zA
-zA
-zA
-zA
-zA
-QL
-QL
-yg
-Wb
-cH
-BW
-EM
-SX
-nK
-QL
-QL
-PH
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -67926,10 +67789,10 @@ EQ
 EQ
 bo
 Ex
-UB
-UB
-UB
-UB
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -68115,36 +67978,36 @@ wt
 ms
 uU
 uU
-PH
-zA
-wc
-wc
-wc
-iN
-zA
-ld
-tX
-Yg
-bh
-tX
-Rr
-IK
-dR
-jD
-dR
-eB
-WU
-QL
-yg
-Wb
-wF
-BW
-fB
-SX
-nK
-QL
-QL
-PH
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -68178,10 +68041,10 @@ eI
 te
 EQ
 Ex
-UB
-UB
-UB
-UB
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -68367,36 +68230,36 @@ wt
 iA
 uU
 uU
-PH
-zA
-XZ
-wc
-OI
-CB
-zA
-qM
-Kn
-vL
-IR
-tX
-zA
-dR
-dR
-dR
-dR
-ZQ
-QL
-QL
-nn
-nK
-ue
-YT
-YT
-nK
-nK
-vo
-QL
-PH
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -68430,10 +68293,10 @@ xd
 EQ
 EQ
 Ex
-UB
-UB
-UB
-UB
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -68619,36 +68482,36 @@ lH
 oq
 uU
 uU
-PH
-zA
-Rq
-wc
-wc
-Gr
-zA
-mH
-tX
-LC
-Mb
-df
-zA
-zA
-Sz
-Or
-rq
-ZQ
-QL
-QL
-QL
-di
-nK
-nK
-nK
-nK
-nK
-QL
-QL
-PH
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -68682,10 +68545,10 @@ EQ
 EQ
 EQ
 Ex
-UB
-UB
-UB
-UB
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -68871,36 +68734,36 @@ uU
 uU
 uU
 uU
-PH
-zA
-wc
-wc
-wc
-GA
-zA
-tX
-tX
-tX
-tX
-sf
-zA
-zA
-zA
-zA
-dR
-Ds
-WU
-QL
-QL
-QL
-RW
-QL
-QL
-RW
-QL
-QL
-QL
-PH
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -68934,10 +68797,10 @@ EQ
 EQ
 bo
 Ex
-UB
-UB
-UB
-UB
+vt
+vt
+vt
+vt
 vt
 vt
 vt
@@ -69123,36 +68986,36 @@ uU
 uU
 uU
 uU
-PH
-zA
-Oo
-ET
-wc
-wc
-Gz
-tX
-tX
-nE
-zA
-zA
-zA
-zA
-zA
-zA
-BF
-Ds
-WU
-Iz
-QL
-QL
-QL
-QL
-QL
-QL
-Iz
-QL
-QL
-PH
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -69186,23 +69049,23 @@ bo
 Ex
 bo
 sF
-UB
-UB
-UB
-UB
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-uU
-Jd
-Jd
-fI
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+fv
+fv
+fv
 Jd
 mC
 mC
@@ -69375,36 +69238,36 @@ uU
 uU
 uU
 uU
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-ck
-PH
-PH
-PH
-PH
-ls
-PH
-PH
-PH
-hZ
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -69417,44 +69280,44 @@ sF
 sF
 sF
 sF
-Ig
-Ig
-sF
-sF
-sF
 IH
 IH
-Uw
-Uw
 IH
 IH
-no
-no
-no
 IH
-Ex
-Ex
-bo
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-uU
-uU
-Jd
-Jd
-Jd
+IH
+IH
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+uN
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+ae
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+fv
 Jd
 mC
 mC
@@ -69627,86 +69490,86 @@ uU
 uU
 uU
 uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 PH
+PH
+PH
+PH
+PH
+PH
+PH
+PH
+PH
+PH
+PH
+PH
+Ab
+Sm
+gx
+qh
+PH
+PH
+FC
+ur
+FW
+AV
+AV
+AV
+AV
+AV
+zo
+AV
+AV
+AV
 PB
 aX
+aX
 DS
-DS
-DS
-DS
-DS
+aX
+aX
+FC
 ae
-DS
-DS
-DS
-lD
-As
-As
-if
-As
-As
-PH
-PH
-oW
-oW
-nk
-Zn
-Ck
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-vt
-vt
-vt
-vt
-vt
-vt
-IG
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-uU
-uU
-uU
-Jd
-fI
-fI
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+fv
 Jd
 mC
 aK
@@ -69879,87 +69742,87 @@ uU
 uU
 uU
 uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 PH
-As
-AV
-SB
-EU
-IZ
-SB
-SB
-SB
-TN
-TN
-SB
+kE
+xK
+qB
+qB
+PH
+wU
+uR
+uG
+qv
+wU
+PH
+EC
+Zx
+tw
+KJ
+PH
+PH
+Iz
+aX
+qb
+GS
+RW
 pB
-DS
-DS
-DS
-DS
-lD
-PH
-PH
-oW
-rB
-Ck
-Ck
-Ck
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-uU
-uU
+GS
+GS
+GS
+Gm
+Gm
+kc
+Cq
+AV
+AV
+AV
+AV
+PB
+FC
+FC
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+fv
 Jd
-fI
-fI
-fI
 Jd
 Jd
 Jd
@@ -70131,87 +69994,87 @@ uU
 uU
 uU
 uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 PH
-aX
-OV
-SB
-Gw
-WW
+qB
+qB
+qB
+qB
+PH
+NG
+uG
+uG
+uG
+Ri
+UV
+EC
+IL
+TM
+Be
+PH
+PH
+Iz
+FW
+Bz
+GS
+iz
+Lr
+je
+GS
+nz
+CN
+QL
+GS
+GS
+GS
+GS
+GS
+GS
 Cq
-SB
-cg
-wi
-Gm
-SB
-SB
-SB
-SB
-SB
-SB
-pB
-lD
-PH
-fv
-fv
-nk
-Zn
-Ck
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-uU
-uU
-Ck
-Ck
-Ck
-Ck
+PB
+FC
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
 Ck
 Ck
 Ck
@@ -70383,87 +70246,87 @@ uU
 uU
 uU
 uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 PH
-AV
-SB
-SB
-Do
-MB
-yf
-SB
-cg
-ZT
-qd
-zh
-CN
-wc
+YS
+qB
+ee
+qB
+PH
+ry
+uG
+uG
+uG
+uG
+PH
+bZ
+nS
+Er
+EC
+PH
+PH
+Iz
+qb
+GS
+GS
+nK
 BD
-ur
-SB
-SB
-PV
-PH
-Ck
-Ck
-Ck
-Ck
-Ck
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-uU
-uU
+SX
+GS
+nz
+Sc
+OK
+QL
+TN
+Lu
+RM
+Do
+GS
+GS
+FM
+FC
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
 vt
 vt
 vt
@@ -70635,87 +70498,87 @@ uU
 uU
 uU
 uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 PH
-AV
+PH
+PH
+PH
+Hi
+PH
+wU
+uG
+uG
+uG
+uG
+PH
+EC
+lo
+lm
+Zi
+PH
+PH
+Iz
+qb
+nn
+Wc
+di
+OK
+YT
+GS
+GS
+yf
+jI
+if
+GS
 UL
 Lu
-Tg
-qd
-wJ
-SB
-SB
-zo
-DV
-sW
-SB
-RM
-wc
-wc
-SB
-kc
-uN
-PH
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-uU
+Lu
+GS
+wT
+Qx
+FC
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
 uU
 vt
 vt
@@ -70887,87 +70750,87 @@ uU
 uU
 uU
 uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 PH
-AV
+Po
+qF
+wc
+wc
+PH
+PH
+PH
+PH
+PH
+Rr
+PH
+PH
+PH
+PH
+PH
+PH
+PH
+HD
+qb
+vO
+Wb
+cH
+OK
+EM
+SX
+sW
+Sc
+jI
+Tg
+GS
 MH
 zs
 oY
-qd
-HD
-yf
-Lr
-ZT
-DV
-rY
-SB
-fe
-FW
-qb
-SB
-kc
-uN
-PH
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+GS
+wT
+Qx
+FC
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
 vt
 vt
 uU
@@ -71139,69 +71002,87 @@ uU
 uU
 uU
 uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 PH
-AV
-Dk
-RJ
-GS
-je
+gp
+sH
+wc
+wc
+PH
+XX
+oM
+KE
+tX
+tX
+PH
+dR
+dR
+dR
+jD
+dR
+eB
+WU
+qb
+yg
 FB
+wF
+BW
+fB
+qd
+GS
+Sc
+jI
+if
+GS
+GS
+GS
+GS
+GS
+wT
 Qx
-SB
-ZT
-DV
-sW
-SB
-SB
-SB
-SB
-SB
-kc
-uN
-PH
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+FC
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
 vt
 vt
 vt
@@ -71211,30 +71092,12 @@ vt
 vt
 vt
 uU
-uU
-uU
-uU
-uU
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-uU
-uU
-uU
-uU
-uU
-uU
-uU
+PV
+PV
+PV
+PV
+PV
+PV
 uU
 uU
 uU
@@ -71391,70 +71254,87 @@ uU
 uU
 uU
 uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 PH
+wc
+wc
+wc
+iN
+PH
+ld
+tX
+Yg
+bh
+tX
+Rr
+dR
+dR
+dR
+dR
+dR
+ZQ
+Iz
+qb
+GS
+GS
+ue
+di
+YT
+GS
+GS
+vo
+xN
+HC
 OK
-SB
+Dk
 SB
 mv
-Tg
-wJ
-SB
-SB
-HC
-nz
-wW
-qd
-Mr
-qB
-Wc
-SB
-kc
-uN
-PH
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+GS
+wT
+Qx
+FC
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
 vt
 vt
 vt
@@ -71464,29 +71344,12 @@ uU
 uU
 uU
 uU
-uU
-uU
-uU
-uU
-uU
-uU
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
+PV
+rY
+ZT
+ZT
+Gw
+PV
 uU
 uU
 uU
@@ -71643,102 +71506,102 @@ uU
 uU
 uU
 uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 PH
+XZ
+wc
+OI
+CB
+PH
+qM
+Kn
+vL
+IR
+tX
+PH
+dR
+dR
+dR
+dR
+dR
+ZQ
+Iz
+EU
+cg
+GS
+lD
+wF
+wJ
+GS
+Du
+Du
 tZ
-Sc
+tZ
+tZ
+GS
 SB
-vO
+SB
 GS
 wT
-SB
 FM
-FM
-FM
-FM
-FM
-SB
-qB
-qB
-SB
-kc
+FC
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+vt
+vt
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+rZ
+pP
+Hh
+As
+Bn
 PV
-PH
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-uU
-uU
-uU
-uU
-uU
-vt
-vt
-vt
-vt
-vt
-uU
-uU
-uU
-uU
-uU
-uU
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-vt
-vt
-vt
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
 uU
 uU
 uU
@@ -71895,102 +71758,102 @@ uU
 uU
 uU
 uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 PH
+Rq
+wc
+wc
+Gr
 PH
-AV
-SB
-SB
+mH
+tX
+LC
+Mb
+df
+PH
+dR
+Or
+PH
+MB
+dR
+Ds
+WU
+Iz
+qb
+GS
+GS
 wa
-Bz
-SB
-FM
-FM
-xN
-FM
-FM
-SB
+fe
+GS
+Du
+Du
+wW
+tZ
+tZ
+GS
+OV
+DV
+GS
+GS
+Qx
+FC
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 rZ
-jI
-SB
-SB
-uN
-PH
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-vt
-vt
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
+wi
+Hh
+Mr
+Bn
+PV
 uU
 uU
 uU
@@ -72147,26 +72010,87 @@ uU
 uU
 uU
 uU
-BZ
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
 PH
-tZ
-Sc
-SB
+wc
+wc
+wc
+GA
+PH
+tX
+tX
+tX
+tX
+sf
+PH
+PH
+PH
+PH
+PH
+BF
+Ds
+WU
+Iz
 EU
+cg
+GS
+RW
+pB
+GS
+GS
+GS
+GS
+GS
+GS
+GS
+GS
+GS
+GS
 IZ
-SB
-SB
-SB
-SB
-SB
-SB
-SB
-SB
-SB
-SB
-pP
-Hh
-PH
+zh
+FC
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
 uU
 uU
 uU
@@ -72176,73 +72100,12 @@ uU
 uU
 uU
 uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
+PV
+Gw
+ZT
+ZT
+PV
+PV
 uU
 uU
 uU
@@ -72399,26 +72262,87 @@ uU
 uU
 uU
 uU
-BZ
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+uU
+PH
+Oo
+ET
+wc
+wc
+Gz
+tX
+tX
+nE
 PH
 PH
-tZ
+PH
+PH
+PH
+PH
+PH
+ls
+PH
+PH
+PH
 FC
+EU
 aG
-FC
-FC
-FC
+WW
 aG
-FC
-FC
-FC
-FC
-FC
 aG
+aG
+WW
+aG
+aG
+aG
+aG
+aG
+WW
+aG
+zh
 FC
-Hh
-PH
-PH
+FC
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
 uU
 uU
 uU
@@ -72428,73 +72352,12 @@ uU
 uU
 uU
 uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
-uU
+rY
+PV
+PV
+PV
+PV
+PV
 uU
 uU
 uU
@@ -72651,75 +72514,75 @@ Sb
 Sb
 Sb
 Sb
+uU
+uU
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+uU
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+Sb
+PH
+PH
+PH
+PH
+PH
+PH
+PH
+PH
+PH
+PH
+ck
+PH
+rq
+rq
+rq
+rq
+rq
+rq
+rq
 BZ
-BZ
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-PH
-BZ
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
-Sb
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+ae
 Sb
 Sb
 Sb

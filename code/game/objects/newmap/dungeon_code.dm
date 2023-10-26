@@ -6,16 +6,326 @@ This file contains most of the code for the dungeons to work, structures, some i
 
 */
 
+/obj/structure/hivedecor/xenos
+	name = "xenos debris"
+	desc = "..."
+	icon = 'icons/map_project/port/comm_tower3.dmi'
+	icon_state = "resin_final"
+
+
+
+/obj/structure/hivedecor/vehicle
+	name = "Cargo-8"
+	desc = "An ancient cargo hauler of imperial design."
+	icon = 'icons/map_project/port/van.dmi'
+	icon_state = "van_base"
+
+/obj/structure/closet/crate/xenos/cargo8
+	name = "Cargo-8"
+	desc = "An ancient cargo hauler of imperial design."
+	icon = 'icons/map_project/port/van.dmi'
+	icon_state = "vancrate"
+	icon_opened = "vancrateopen"
+	icon_closed = "vancrate"
+
+/obj/structure/hivedecor/vehicle/tau
+	name = "Destroyed Tau APC"
+	desc = "A destroyed armored personnel carrier of Tau origin."
+	icon = 'icons/map_project/port/apc.dmi'
+	icon_state = "apc"
+
+/obj/structure/hivedecor/xenos/broadcaster
+	name = "xenos broadcaster"
+	desc = "A massive vox communication tower of xenos origin."
+	icon = 'icons/map_project/port/comm_tower3.dmi'
+	icon_state = "static1"
+
+/obj/structure/hivedecor/xenos/broadcasterbroken
+	name = "xenos broadcaster"
+	desc = "A massive vox communication tower of xenos origin."
+	icon = 'icons/map_project/port/comm_tower3.dmi'
+	icon_state = "static1_broken"
+
+/obj/structure/hivedecor/xenos/commtower
+	name = "xenos comms relay"
+	desc = "A massive vox communication tower of xenos origin."
+	icon = 'icons/map_project/port/comm_tower2.dmi'
+	icon_state = "comm_tower_off"
+
+/obj/structure/hivedecor/xenos/commtower/powered
+	icon_state = "comm_tower"
+
+/obj/structure/hivedecor/xenos/commtower/damaged
+	icon_state = "comm_tower_broken"
+
+/obj/structure/hivedecor/xenos/commtower/old
+	icon_state = "construct_9_1"
+
+/obj/structure/hivedecor/xenos/coolanttank
+	name = "coolant tank"
+	desc = "A bubbling container of coolant fluid."
+	icon = 'icons/map_project/port/objects.dmi'
+	icon_state = "coolanttank"
+
+// add in crystal crate, crystals -- etc for the cave systems.
+
+/obj/structure/hivedecor/xenos/siphon
+	name = "siphon"
+	desc = "..."
+	icon = 'icons/map_project/port/objects.dmi'
+	icon_state = "psiphon:0"
+
+/obj/structure/hivedecor/xenos/scrubber
+	name = "scrubber"
+	desc = "..."
+	icon = 'icons/map_project/port/objects.dmi'
+	icon_state = "pscrubber:0"
+
+/obj/structure/hivedecor/xenos/autolathe
+	name = "xenos autolathe"
+	desc = "..."
+	icon = 'icons/map_project/port/objects.dmi'
+	icon_state = "autolathe_t"
+
+/obj/structure/hivedecor/xenos/vat
+	name = "xenos machine"
+	desc = "..."
+	icon = 'icons/map_project/port/objects.dmi'
+	icon_state = "vat"
+
+/obj/structure/hivedecor/xenos/processor
+	name = "xenos machine"
+	desc = "..."
+	icon = 'icons/map_project/port/objects.dmi'
+	icon_state = "processor_off"
+
+/obj/structure/hivedecor/xenos/processor/substrate
+	icon_state = "substrate_off"
+
+/obj/structure/hivedecor/xenos/processor/cpu
+	icon_state = "CPU"
+
+/obj/structure/hivedecor/xenos/processor/int
+	icon_state = "int_processor_off"
+
+/obj/structure/hivedecor/xenos/processor/console
+	icon_state = "console"
+
+/obj/structure/hivedecor/xenos/processor/time
+	icon_state = "time"
+
+/obj/structure/hivedecor/xenos/processor/toggle
+	icon_state = "toggle"
+
+/obj/structure/hivedecor/xenos/processor/cracker
+	icon_state = "cracker"
+
+/obj/structure/hivedecor/floodlight
+	name = "floodlight" // does not create light. use with an invisible light source
+	desc = "..."
+	icon = 'icons/map_project/port/objects.dmi'
+	icon_state = "flood01"
+
+/obj/structure/hivedecor/xenos/terminal
+	name = "xenos terminal"
+	desc = "..."
+	icon = 'icons/map_project/port/objects.dmi'
+	icon_state = "frame_med"
+
+/obj/structure/hivedecor/xenos/powergen
+	name = "xenos generator"
+	desc = "..."
+	icon = 'icons/map_project/port/objects.dmi'
+	icon_state = "generator"
+
+/obj/structure/hivedecor/xenos/powergen/on
+	name = "xenos generator"
+	desc = "..."
+	icon = 'icons/map_project/port/objects.dmi'
+	icon_state = "generator_on"
+
+/obj/structure/hivedecor/xenos/artifact
+	name = "xenos artifact"
+	desc = "Death is not the end."
+	icon = 'icons/map_project/port/marker_giant.dmi'
+	icon_state = "marker_giant_active_anim"
+
+/obj/structure/hivedecor/xenos/artifact/teleporter
+	name = "xenos teleporter"
+	desc = "Death is not the end."
+	icon = 'icons/map_project/port/objects.dmi'
+	icon_state = "pad"
+
+/obj/structure/hivedecor/xenos/artifact/teleporter/active
+	icon_state = "pad_active"
+
+/obj/structure/hivedecor/xenos/artifact/node
+	name = "xenos harvester"
+	desc = "..."
+	icon = 'icons/map_project/port/resources_64x64.dmi'
+	icon_state = "node_combined_xeno"
+
+/obj/structure/hivedecor/xenos/artifact/teslatower
+	name = "tesla coil"
+	desc = "..."
+	icon = 'icons/map_project/port/objects.dmi'
+	icon_state = "teslatower"
+
+/obj/structure/hivedecor/xenos/artifact/fuelpump
+	name = "rhizomatic pump"
+	desc = "..."
+	icon = 'icons/map_project/port/objective.dmi'
+	icon_state = "fuelpump"
+
+/obj/structure/hivedecor/xenos/artifact/node2
+	name = "xenos harvester"
+	desc = "..."
+	icon = 'icons/map_project/port/resources_64x64.dmi'
+	icon_state = "node_combined_marine"
+
+/obj/structure/hivedecor/xenos/artifact/node3
+	name = "xenos harvester"
+	desc = "..."
+	icon = 'icons/map_project/port/resources_64x64.dmi'
+	icon_state = "node_on"
+
+/obj/structure/hivedecor/xenos/artifact/megaweapon
+	name = "???"
+	desc = "..."
+	icon = 'icons/map_project/port/artillery.dmi'
+	icon_state = "1"
+
+/obj/structure/hivedecor/xenos/artifact/bluespacedrive
+	name = "???"
+	desc = "..."
+	icon = 'icons/map_project/port/bluespacedrive.dmi'
+	icon_state = "bsd_core"
+
+/obj/structure/hivedecor/xenos/artifact/bluespacedrive/broken
+	name = "???"
+	desc = "..."
+	icon_state = "bsd_core_broken"
+
+/obj/structure/hivedecor/xenos/artifact/bluespacedrive/core
+	name = "???"
+	desc = "..."
+	icon_state = "bsd_c_s"
+
+/obj/structure/hivedecor/xenos/artifact/supermatter
+	name = "???"
+	desc = "..."
+	icon = 'icons/map_project/port/supermatter.dmi'
+	icon_state = "supermatter_glow"
+
+/obj/structure/hivedecor/xenos/artifact/gateway // top part of gateway. starts off.
+	name = "???"
+	desc = "..."
+	icon = 'icons/map_project/port/objects.dmi'
+	icon_state = "offcenter"
+
+/obj/structure/hivedecor/xenos/artifact/gateway/on
+	name = "???"
+	desc = "..."
+	icon_state = "oncenter"
+
+/obj/structure/hivedecor/xenos/artifact/gateway/base
+	name = "???"
+	desc = "..."
+	icon_state = "on"
+
+/obj/structure/hivedecor/xenos/barrel
+	name = "chemical barrel"
+	desc = "..."
+	icon = 'icons/map_project/port/objects.dmi'
+	icon_state = "barrel_blue"
+
+/obj/structure/hivedecor/xenos/barrel/green
+	icon_state = "barrel_green"
+
+/obj/structure/hivedecor/xenos/barrel/red
+	icon_state = "barrel_red"
+
+/obj/structure/hivedecor/xenos/barrel/yellow
+	icon_state = "barrel_yellow"
+
+/obj/structure/hivedecor/xenos/barrel/white
+	icon_state = "barrel_white"
+
+/obj/structure/hivedecor/xenos/barrelmany
+	name = "chemical barrel yard"
+	desc = "..."
+	icon = 'icons/map_project/port/barrel_yard.dmi'
+	icon_state = "pile"
+	density = 0
+
+// Racks, crates and tables
+/obj/structure/table/rack/xenos
+	name = "strange rack"
+	desc ="An organic xenos resin seemss to be growing from the metal."
+	icon = 'icons/map_project/port/objects.dmi'
+	icon_state = "rack"
+
+/obj/structure/closet/crate/xenos
+	name = "secure crate"
+	desc = "A xenos secure crate."
+	icon = 'icons/map_project/port/objects.dmi'
+	icon_state = "secure_crate"
+	icon_opened = "secure_crate2"
+	icon_closed = "secure_crate"
+
+/obj/structure/closet/crate/xenos/chest
+	name = "secure chest"
+	desc = "A xenos secure chest."
+	icon_state = "chest"
+	icon_opened = "chest2"
+	icon_closed = "chest"
+
+/obj/structure/closet/crate/xenos/chest2
+	name = "secure chest"
+	desc = "A xenos secure chest."
+	icon_state = "chest_white"
+	icon_opened = "chest_white2"
+	icon_closed = "chest_white"
+
+/obj/structure/closet/crate/xenos/chest3
+	name = "secure chest"
+	desc = "A xenos secure chest."
+	icon_state = "crate_ds_blue1"
+	icon_opened = "crate_ds_blue1_open"
+	icon_closed = "crate_ds_blue1"
+
+/obj/structure/closet/crate/xenos/droppod
+	name = "xenos drop pod"
+	desc = "An ancient xenos drop pod."
+	icon = 'icons/map_project/port/droppod_32x64.dmi'
+	icon_state = "techpod_closed"
+	icon_opened = "techpod_open"
+	icon_closed = "techpod_closed"
+
+/obj/structure/closet/crate/secure/safe
+	name = "secure safe"
+	desc = "A secure safe."
+	icon = 'icons/map_project/port/structures.dmi'
+	icon_state = "safe"
+	icon_opened = "safe-open"
+	icon_closed = "safe"
+	anchored = 1
+
+/obj/structure/closet/crate/secure/floorsafe
+	name = "secure safe"
+	desc = "A secure safe."
+	icon = 'icons/map_project/port/structures.dmi'
+	icon_state = "floorsafe"
+	icon_opened = "floorsafe-open"
+	icon_closed = "floorsafe"
+	anchored = 1
+	density = 0
 
 // NECRON TOMB - An old mechanicus outpost that was manned by penal units and mechanicus priest studying a tomb, they've been out of contact for several months
 
 /turf/unsimulated/floor/necron_floor
 	icon = 'icons/map_project/tombs.dmi'
 	icon_state = "floor"
-
-/turf/unsimulated/wall/necron
-	icon = 'icons/map_project/tombs.dmi'
-	icon_state = "wall"
 
 /mob/living/simple_animal/hostile/necron
 	name = "Necron Warrior"
@@ -32,8 +342,8 @@ This file contains most of the code for the dungeons to work, structures, some i
 	response_harm = "hits"
 	speed = 5 // Slower but deadilier
 	stop_automated_movement_when_pulled = 0
-	maxHealth = 350
-	health = 350
+	maxHealth = 550
+	health = 550
 	harm_intent_damage = 45
 	melee_damage_lower = 55
 	melee_damage_upper = 55

@@ -340,7 +340,7 @@
 	icon_state = "hotshotgun"
 	item_state = "lascar"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
-	w_class = ITEM_SIZE_LARGE
+	w_class = ITEM_SIZE_HUGE
 	force = 15
 	one_hand_penalty = 1.5
 	fire_delay = 3.1
@@ -358,7 +358,7 @@
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=3.1, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=240),
-		list(mode_name="burst",       burst=3, fire_delay=5.2, burst_accuracy=list(1,0,0), dispersion=null, automatic = 0, charge_cost=240),
+		list(mode_name="burst",       burst=3, fire_delay=5.9, burst_accuracy=list(1,0,0), dispersion=null, automatic = 0, charge_cost=240),
 		) // Burst speed on hotshot is increased by -0.2(slightly faster then lasgun)
 
 /obj/item/gun/energy/las/hotshot/New()
@@ -369,14 +369,45 @@
 	slowdown_per_slot[slot_r_hand] = 0.25
 	slowdown_per_slot[slot_l_hand] = 0.25
 
+/obj/item/gun/energy/las/hotshot/masterwork
+	name = "Masterwork Hot-Shot Lasgun"
+	desc = "A masterwork hotshot Ryza Pattern crafted by a holy Tech Priest of Mars."
+	icon_state = "hotshotgun"
+	item_state = "lascar"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	force = 21
+	one_hand_penalty = 1.3
+	fire_delay = 2.9
+	accuracy = 0.2
+	self_recharge = 1
+	origin_tech = list(TECH_COMBAT = 6, TECH_MAGNET = 6)
+	charge_cost = 220
+	wielded_item_state = "lascar-wielded"
+	sales_price = 150
+
+
+	firemodes = list(
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2.9, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=220),
+		list(mode_name="burst",       burst=3, fire_delay=5.6, burst_accuracy=list(1,0,0), dispersion=null, automatic = 0, charge_cost=220),
+		) // Burst speed on hotshot is increased by -0.2(slightly faster then lasgun)
+
+/obj/item/gun/energy/las/hotshot/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.08
+	slowdown_per_slot[slot_wear_suit] = 0.18
+	slowdown_per_slot[slot_belt] = 0.18
+	slowdown_per_slot[slot_r_hand] = 0.22
+	slowdown_per_slot[slot_l_hand] = 0.22
+
 /obj/item/gun/energy/las/hotshot/krieg
 	name = "Type XIV Lasgun Heavy"
 	desc = "The standard Hellgun issued to Grenadiers of the Death Korps of Krieg."
 	icon_state = "hotshot_krieg"
 	item_state = "hevluscius"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
-	w_class = ITEM_SIZE_LARGE
-	force = 15
+	w_class = ITEM_SIZE_HUGE
+	force = 17
 	one_hand_penalty = 1.7
 	fire_delay = 3.7
 	accuracy = 0.2
@@ -395,6 +426,30 @@
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=3.7, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=290),
 		list(mode_name="burst",       burst=3, fire_delay=7.2, burst_accuracy=list(1,0,0), dispersion=null, automatic = 0, charge_cost=290),
+		)
+
+/obj/item/gun/energy/las/hotshot/krieg/masterwork
+	name = "Type XIV Lasgun Heavy"
+	desc = "A masterwork hotshot Krieg Pattern crafted by a holy Tech Priest of Mars."
+	icon_state = "hotshot_krieg"
+	item_state = "hevluscius"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	force = 23
+	one_hand_penalty = 1.5
+	fire_delay = 3.5
+	accuracy = 0.3
+	self_recharge = 3
+	recharge_time = 9
+	origin_tech = list(TECH_COMBAT = 6, TECH_MAGNET = 6)
+	charge_cost = 270
+	wielded_item_state = "hevluscius-wielded"
+
+	sales_price = 160
+
+	firemodes = list(
+		list(mode_name="semi-automatic",       burst=1, fire_delay=3.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=270),
+		list(mode_name="burst",       burst=3, fire_delay=6.8, burst_accuracy=list(1,0,0), dispersion=null, automatic = 0, charge_cost=270),
 		)
 
 

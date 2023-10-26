@@ -367,6 +367,21 @@ Area basic template
 
 // SPACE STUFF
 
+/area/cadiaoutpost/rtship1
+	name = "RT"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+
+/area/cadiaoutpost/rtship2
+	name = "RT"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+
+
 /area/cadiaoutpost/govship1
 	name = "Govna"
 	icon_state = "forwardpost"
@@ -973,7 +988,7 @@ Area basic template
 /area/cadiaoutpost/oa/supply/offices/roguetrader
 	name = "Rogue Trader's Office"
 	icon_state = "rt"
-	music = 'sound/newmusic/Hab.ogg'
+	music = 'sound/newmusic/Inn_Ambient.ogg'
 	requires_power = FALSE
 
 /area/cadiaoutpost/oa/supply
@@ -1697,6 +1712,12 @@ Area basic template
 	requires_power = 0
 
 /area/cadiaoutpost/oa/shuttle/station2
+	name = "Station"
+	icon_state = "shuttle"
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+	requires_power = 0
+
+ /area/cadiaoutpost/oa/shuttle/roguet
 	name = "Station"
 	icon_state = "shuttle"
 	music = 'sound/newmusic/Lab_Experiment.ogg'

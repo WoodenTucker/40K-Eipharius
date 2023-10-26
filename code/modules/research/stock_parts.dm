@@ -281,7 +281,7 @@
 	sales_price = 25
 
 /obj/item/rnd/power8
-	name = "plasma drive schematics schematics"
+	name = "plasma drive schematics"
 	desc = "Forgotten starship plasma drive schematics produced by the AdMech from a now forgotten world... The Mechanicus will want to study it."
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "datadisk2"

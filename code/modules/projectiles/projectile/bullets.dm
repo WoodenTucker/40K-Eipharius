@@ -532,7 +532,14 @@
 	armor_penetration = 50
 	penetration_modifier = 2
 	
-	
+// XENOS
+/obj/item/projectile/bullet/rifle/pmag
+	fire_sound = 'sound/weapons/gunshot/needler.ogg'
+	icon_state = "pulse"
+	damage = 55
+	damage_type = BRUTE
+	armor_penetration = 30
+	penetration_modifier = 1
 	
 //MECHANICUS
 /obj/item/projectile/bullet/rifle/galvanic

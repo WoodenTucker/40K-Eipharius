@@ -6,19 +6,19 @@
 	icon_state = "demon"
 	icon_living = "demon"
 	icon_dead = "demon_dead"
-	maxHealth = 600
-	health = 600
+	maxHealth = 401
+	health = 401
 	universal_speak = 1
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
 	response_disarm = "shoves"
 	response_harm   = "mauls"
-	melee_damage_lower = 45 // This only effects if controlled by a player.
-	melee_damage_upper = 75
+	melee_damage_lower = 35 // This only effects if controlled by a player.
+	melee_damage_upper = 55
 	attacktext = "claws"
 	maxbodytemp = 1000
-	see_in_dark = 10
+	see_in_dark = 8
 	wander = 1
 	turns_per_move = 25
 
@@ -66,7 +66,7 @@
 
 			if(stance_step <= -20) //If we have not found a mob for 20-ish ticks, revert to idle mode
 				stance = HOSTILE_STANCE_IDLE
-			if(stance_step >= 1)   //If we have been staring at a mob for 1 ticks,
+			if(stance_step >= 3)   //If we have been staring at a mob for 3 ticks,
 				stance = HOSTILE_STANCE_ATTACK
 				playsound(src, 'sound/effects/quotes/cults/demon/demon_spawn2.ogg', 100, 1)
 
@@ -130,8 +130,8 @@
 	icon_state = "floater"
 	icon_living = "floater"
 	icon_dead = "floater2"
-	maxHealth = 430
-	health = 430
+	maxHealth = 410
+	health = 410
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -168,8 +168,8 @@
 	icon_state = "oormat"
 	icon_living = "oormat"
 	icon_dead = "oormat2"
-	maxHealth = 1450
-	health = 1450
+	maxHealth = 950
+	health = 950
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -206,8 +206,8 @@
 	icon_state = "khorne_daemon" // Average speed. High damage and HP.
 	icon_living = "khorne_daemon"
 	icon_dead = "khorne_daemon_dead_anim"
-	maxHealth = 1400
-	health = 1400
+	maxHealth = 1100
+	health = 1100
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -246,8 +246,8 @@
 	icon_state = "loge"
 	icon_living = "loge"
 	icon_dead = "loge2"
-	maxHealth = 640
-	health = 640
+	maxHealth = 540
+	health = 540
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -267,8 +267,8 @@
 	icon_state = "plague"
 	icon_living = "plague"
 	icon_dead = "plague_dead"
-	maxHealth = 600
-	health = 600
+	maxHealth = 500
+	health = 500
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -288,8 +288,8 @@
 	icon_state = "goliath"
 	icon_living = "goliath"
 	icon_dead = "goliath_dead"
-	maxHealth = 650
-	health = 650
+	maxHealth = 610
+	health = 610
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -430,7 +430,7 @@
 	icon_state = "tombs3"
 	icon_living = "tombs3"
 	icon_dead = "tombs3"
-	health = 500
+	health = 444
 	maxHealth = 500
 	melee_damage_lower = 35
 	melee_damage_upper = 45
@@ -464,4 +464,214 @@
 	melee_damage_upper = 45
 	attacktext = "pierces"
 	attack_sound = 'sound/weapons/bladeslice.ogg'
-	speed = 1
+	speed = 1.2
+
+/mob/living/simple_animal/hostile/flesh
+	name = "Headcrab"
+	desc = "A disgusting flesh creature formed out of flesh vines that have occupied a human head..."
+	icon = 'icons/map_project/port/components_large.dmi'
+	speak_chance = 0
+	icon_state = "head"
+	icon_living = "head"
+	icon_dead = "head_dead_2"
+	health = 175
+	maxHealth = 175
+	melee_damage_lower = 15
+	melee_damage_upper = 25
+	attacktext = "bites"
+	attack_sound = 'sound/weapons/bite.ogg'
+	speed = 1.6
+	faction = "Demon"
+
+/mob/living/simple_animal/hostile/giant_spider/flesh
+	name = "Infestor"
+	desc = "A disgusting motherly creature with long tentacles protruding from it's mating hole."
+	icon = 'icons/map_project/port/components_large.dmi'
+	icon_state = "example"
+	icon_living = "example"
+	icon_dead = "torso_lying_2"
+	health = 325
+	maxHealth = 325
+	melee_damage_lower = 15
+	melee_damage_upper = 25
+	attacktext = "bites"
+	attack_sound = 'sound/weapons/bite.ogg'
+	speed = 1.6
+	poison_per_bite = 3
+	poison_type = /datum/reagent/soporific // Makes you sleepy
+
+/mob/living/simple_animal/hostile/flesh/stalker
+	name = "Lurker"
+	desc = "A young hunter-killer bioform xenos with a carapace-like armor structure over it's body, it seems to be a broodling."
+	icon = 'icons/map_project/port/components_large.dmi'
+	speak_chance = 0
+	icon_state = "liz1"
+	icon_living = "liz1"
+	icon_dead = "bodylying"
+	health = 315
+	maxHealth = 315
+	melee_damage_lower = 25
+	melee_damage_upper = 40
+	attacktext = "bites"
+	attack_sound = 'sound/weapons/bite.ogg'
+	speed = 1.5
+	faction = "Demon"
+
+/mob/living/simple_animal/hostile/flesh/stalker2
+	name = "Lurker"
+	desc = "An old hunter-killer bioform xenos with a carapace-like armor structure over it's body."
+	icon = 'icons/map_project/port/components_large.dmi'
+	speak_chance = 0
+	icon_state = "liz2"
+	icon_living = "liz2"
+	icon_dead = "torso_lying1"
+	health = 365
+	maxHealth = 365
+	melee_damage_lower = 30
+	melee_damage_upper = 45
+	attacktext = "bites"
+	attack_sound = 'sound/weapons/bite.ogg'
+	speed = 1.5
+	faction = "Demon"
+
+/mob/living/simple_animal/hostile/flesh/abomination
+	name = "Abomination"
+	desc = "A disgusting flesh creature formed out of flesh vines that have occupied a human corpse..."
+	icon = 'icons/map_project/port/components_large.dmi'
+	speak_chance = 0
+	icon_state = "preview"
+	icon_living = "preview"
+	icon_dead = "torso_lying_2"
+	health = 315
+	maxHealth = 315
+	melee_damage_lower = 19
+	melee_damage_upper = 29
+	attacktext = "bites"
+	attack_sound = 'sound/weapons/bite.ogg'
+	speed = 1.7
+	faction = "Demon"
+
+/mob/living/simple_animal/hostile/flesh/advanced
+	name = "Guardian"
+	desc = "A disgusting flesh creature formed out of many corpses  sewn together with living flesh vines..."
+	icon = 'icons/map_project/port/components_large.dmi'
+	icon_state = "brute-d"
+	icon_living = "brute-d"
+	icon_dead = "brute-d-dead"
+	maxHealth = 1201
+	health = 1201
+	universal_speak = 1
+	speak_emote = list("harks")
+	emote_hear = list("growls")
+	response_help  = "gnashes"
+	response_disarm = "shoves"
+	response_harm   = "mauls"
+	melee_damage_lower = 45 // This only effects if controlled by a player.
+	melee_damage_upper = 75
+	attacktext = "claws"
+	maxbodytemp = 1000
+	see_in_dark = 8
+	wander = 1
+	turns_per_move = 25
+
+	speed = 1.6 // Higher number means slower.
+
+	min_gas = null
+	max_gas = null
+	minbodytemp = 0
+	faction = "Demon"
+	var/stance_step = 0
+
+/mob/living/simple_animal/hostile/flesh/advanced/Life()
+	. =..()
+	if(!.)
+		return
+
+	switch(stance)
+
+		if(HOSTILE_STANCE_TIRED)
+			stop_automated_movement = 1
+			stance_step++
+			if(stance_step >= 5) //rests for 5 ticks
+				if(target_mob && target_mob in ListTargets(10))
+					stance = HOSTILE_STANCE_ATTACK //If the mob he was chasing is still nearby, resume the attack, otherwise go idle.
+				else
+					stance = HOSTILE_STANCE_IDLE
+
+		if(HOSTILE_STANCE_ALERT)
+			stop_automated_movement = 1
+			var/found_mob = 0
+			if(target_mob && target_mob in ListTargets(10))
+				if(!(SA_attackable(target_mob)))
+					stance_step = max(0, stance_step) //If we have not seen a mob in a while, the stance_step will be negative, we need to reset it to 0 as soon as we see a mob again.
+					stance_step++
+					found_mob = 1
+					src.set_dir(get_dir(src,target_mob))	//Keep staring at the mob
+
+					if(stance_step in list(1,2,2)) //every 3 ticks
+						var/action = pick( list( "growls at [target_mob]", "stares angrily at [target_mob]", "prepares to attack [target_mob]", "closely watches [target_mob]" ) )
+						playsound(src, 'sound/effects/quotes/cults/demon/demon_spawn_alert.ogg', 100, 1)
+						if(action)
+							custom_emote(1,action)
+			if(!found_mob)
+				stance_step--
+
+			if(stance_step <= -20) //If we have not found a mob for 20-ish ticks, revert to idle mode
+				stance = HOSTILE_STANCE_IDLE
+			if(stance_step >= 3)   //If we have been staring at a mob for 3 ticks,
+				stance = HOSTILE_STANCE_ATTACK
+				playsound(src, 'sound/effects/quotes/cults/demon/demon_spawn2.ogg', 100, 1)
+
+		if(HOSTILE_STANCE_ATTACKING)
+			if(stance_step >= 50)	//attacks for 30 ticks, then it gets tired and needs to rest
+				custom_emote(1, "is worn out and needs to rest." )
+				stance = HOSTILE_STANCE_TIRED
+				stance_step = 0
+				walk(src, 0) //This stops the bear's walking
+				return
+
+
+
+/mob/living/simple_animal/hostile/smalldemon/attackby(var/obj/item/O as obj, var/mob/user as mob)
+	if(stance != HOSTILE_STANCE_ATTACK && stance != HOSTILE_STANCE_ATTACKING)
+		stance = HOSTILE_STANCE_ALERT
+		stance_step = 3
+		target_mob = user
+	..()
+
+/mob/living/simple_animal/hostile/smalldemon/attack_hand(mob/living/carbon/human/M as mob)
+	if(stance != HOSTILE_STANCE_ATTACK && stance != HOSTILE_STANCE_ATTACKING)
+		stance = HOSTILE_STANCE_ALERT
+		stance_step = 3
+		target_mob = M
+	..()
+
+/mob/living/simple_animal/hostile/smalldemon/FindTarget()
+	. = ..()
+	if(.)
+		custom_emote(1,"charges at [.]")
+		stance = HOSTILE_STANCE_ALERT
+
+/mob/living/simple_animal/hostile/smalldemon/LoseTarget()
+	..(2)
+
+/mob/living/simple_animal/hostile/smalldemon/AttackingTarget()
+	if(!Adjacent(target_mob))
+		return
+	custom_emote(1, pick( list("slashes at [target_mob]", "bites [target_mob]") ) )
+
+	var/damage = rand(20,60)
+
+	if(ishuman(target_mob))
+		var/mob/living/carbon/human/H = target_mob
+		var/dam_zone = pick(BP_CHEST, BP_L_HAND, BP_R_HAND, BP_L_LEG, BP_R_LEG)
+		var/obj/item/organ/external/affecting = H.get_organ(ran_zone(dam_zone))
+		H.apply_damage(damage, BRUTE, affecting, H.run_armor_check(affecting, "melee"), DAM_SHARP)
+		return H
+	else if(isliving(target_mob))
+		var/mob/living/L = target_mob
+		L.adjustBruteLoss(damage)
+		return L
+
+
+// Missing Ubermorph and have yet to make variants of necromorphs using smalldemon code. Alongside simplemob variants of the Ubermorph, Bloodletter and Guardian. Same required for Tyranid Bioforms.

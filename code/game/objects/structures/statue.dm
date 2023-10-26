@@ -329,6 +329,7 @@
 	desc = "When you want something dead and to defend a position, the guard uses these, unfortunately, this one seems to be missing the ammo..And getting a handful of ammo from this older model is going to be a nightmare in logistic terms."
 	icon = 'icons/map_project/furniture_and_decor.dmi'
 	icon_state = "lasgun_emplacement"
+	anchored = 0
 
 /obj/item/fluff_items/artyshell
 	name = "Earthshaker round"

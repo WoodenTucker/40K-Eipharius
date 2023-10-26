@@ -201,8 +201,8 @@
 	head_position = 1
 	department_flag = MED
 	department = "Ministorum"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Deacon and Inquisition"
 	selection_color = "#FCFBFA"
 	economic_modifier = 10

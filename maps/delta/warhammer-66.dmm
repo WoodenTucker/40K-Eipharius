@@ -1,0 +1,12613 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
+"ab" = (
+/obj/item/card/id/key/super/necron_site2,
+/obj/structure/table/graf/shrine,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"ac" = (
+/obj/item/card/id/key/super/necron_site3,
+/obj/structure/table/graf/shrine,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lfloor15"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"ak" = (
+/obj/effect/floor_decal/newcorner/reinforced/corner,
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 8
+	},
+/obj/item/trash/tastybread,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"al" = (
+/obj/effect/gibspawner/human,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"az" = (
+/obj/structure/table/rack/dark,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/cell/high,
+/obj/item/cell/high{
+	pixel_y = -8
+	},
+/turf/simulated/floor/darkfloor,
+/area/cadiaoutpost/oa/mechanicusdig)
+"aA" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"aD" = (
+/obj/item/remains/human,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"aJ" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/unsimulated/oldship{
+	icon_state = "rwall6"
+	},
+/area/cadiaoutpost/oa/shuttle/magos)
+"aT" = (
+/obj/item/remains/human,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "floor3"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"be" = (
+/obj/effect/decal/cleanable/cobweb{
+	dir = 1
+	},
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"bf" = (
+/turf/simulated/floor/tiled/freezer,
+/area/cadiaoutpost/oa/mechanicusdig)
+"bB" = (
+/obj/item/clothing/suit/armor/deldar,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"bE" = (
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "awall8"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"bF" = (
+/obj/item/fluff_items/ammo_crate,
+/obj/item/fluff_items/ammo_crate{
+	pixel_y = 6
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/dungeon1)
+"bN" = (
+/obj/effect/floor_decal/newcorner/reinforced,
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 1
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"bT" = (
+/obj/item/cell/lasgun,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"cf" = (
+/obj/machinery/door/airlock/cone{
+	name = "Storage Room"
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/mechanicusdig)
+"cs" = (
+/obj/effect/floor_decal/newcorner/reinforced,
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"cx" = (
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/theforest)
+"cG" = (
+/obj/structure/bed/barrack,
+/obj/structure/bed/barrack1,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"cH" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/freezer,
+/area/cadiaoutpost/oa/mechanicusdig)
+"cU" = (
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "wall7"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"cX" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/magos)
+"de" = (
+/obj/machinery/door/unpowered/necron_door2,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"dt" = (
+/obj/item/remains/human,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "floor12"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"dz" = (
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "awall2"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"dF" = (
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "wall3"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"dK" = (
+/obj/structure/flora/yes/rock4{
+	icon_state = "rock6"
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
+"dQ" = (
+/obj/structure/sign/mechanicus{
+	pixel_y = -32
+	},
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"em" = (
+/obj/item/clothing/head/helmet/whiteshield,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"eq" = (
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "floor12"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"et" = (
+/obj/item/humanskin,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"ew" = (
+/obj/item/fluff_items/ammo_crate{
+	icon_state = "crate_empty";
+	pixel_y = 14
+	},
+/obj/item/fluff_items/ammo_crate{
+	icon_state = "crate_empty"
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/dungeon1)
+"eJ" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 1
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/computer/shuttle_control/ferry/magos,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"eL" = (
+/obj/effect/floor_decal/newcorner/plating,
+/obj/effect/floor_decal/newcorner/red{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"eN" = (
+/obj/item/newore/smallrock{
+	pixel_x = -6
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/theforest)
+"eQ" = (
+/turf/unsimulated/oldship{
+	icon_state = "rwall8"
+	},
+/area/cadiaoutpost/oa/shuttle/magos)
+"eT" = (
+/obj/structure/table/steel_reinforced,
+/obj/item/paper_bin,
+/obj/item/pen/multi,
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"eV" = (
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/mechanicusdig)
+"eY" = (
+/obj/effect/decal/cleanable/cobweb{
+	dir = 8
+	},
+/turf/unsimulated/floor/necron_floor,
+/area/cadiaoutpost/oa/dungeon1)
+"fa" = (
+/obj/structure/table/graf/shrine,
+/obj/effect/decal/cleanable/cobweb{
+	dir = 4
+	},
+/turf/unsimulated/floor/necron_floor,
+/area/cadiaoutpost/oa/dungeon1)
+"ff" = (
+/obj/item/clothing/head/helmet/darkeldar,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"fi" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/large,
+/obj/item/archaeological_find/robes,
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/oa/mechanicusdig)
+"fB" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/mechanicusdig)
+"fD" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/reinforced/corner,
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"fG" = (
+/turf/unsimulated/oldship{
+	icon_state = "rwall4"
+	},
+/area/cadiaoutpost/oa/shuttle/magos)
+"fH" = (
+/obj/structure/table/graf/shrine,
+/obj/effect/decal/cleanable/cobweb{
+	dir = 4
+	},
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"fJ" = (
+/obj/structure/table/graf/shrine,
+/obj/item/fluff_items/necron1,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lfloor15"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"fL" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"fP" = (
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"fU" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 8;
+	icon_state = "plating"
+	},
+/obj/effect/floor_decal/newcorner/red{
+	dir = 4
+	},
+/obj/structure/sign/mechanicus{
+	pixel_x = -32
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"fW" = (
+/obj/structure/bed/chair{
+	dir = 8
+	},
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/mechanicusdig)
+"gj" = (
+/obj/structure/sink/well,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/mechanicusdig)
+"gq" = (
+/obj/item/clothing/accessory/storage/bandolier,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"gv" = (
+/obj/structure/flora/grass/both,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/mechanicusdig)
+"gw" = (
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"gD" = (
+/obj/structure/shuttle/engine/propulsion{
+	color = "grey"
+	},
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/simulated/wall/ancient{
+	color = null
+	},
+/area/cadiaoutpost/oa/shuttle/magos)
+"gO" = (
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"hg" = (
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/mechanicusdig)
+"hh" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/large,
+/obj/item/archaeological_find/knife,
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/oa/mechanicusdig)
+"hn" = (
+/obj/effect/floor_decal/turf/metal/six,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"hP" = (
+/obj/structure/bookcase/manuals/xenoarchaeology,
+/turf/simulated/floor/darkfloor,
+/area/cadiaoutpost/oa/mechanicusdig)
+"hQ" = (
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/mechanicusdig)
+"hW" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/red,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"ia" = (
+/obj/effect/decal/cleanable/cobweb{
+	dir = 8
+	},
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"iu" = (
+/obj/effect/floor_decal/newcorner/plating,
+/obj/effect/floor_decal/newcorner/red{
+	dir = 1
+	},
+/obj/machinery/light,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"ix" = (
+/obj/structure/table/graf/shrine,
+/obj/item/fluff_items/necron,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"iE" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/magosship2)
+"iW" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"jd" = (
+/obj/machinery/light/red{
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/reinforced,
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"je" = (
+/turf/simulated/wall/concrete/strong,
+/area/cadiaoutpost/oa/mechanicusdig)
+"jo" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/red{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"kf" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/mechanicusdig)
+"kj" = (
+/obj/item/clothing/suit/armor/whiteshield,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"kn" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "wall10"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"kB" = (
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/obj/effect/floor_decal/turf/metal/six,
+/obj/random/drinkbottle,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"kM" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/table/rack/dark,
+/obj/random/loot/randomitemtown,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"kU" = (
+/obj/effect/decal/cleanable/cobweb{
+	dir = 4
+	},
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"kW" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/large,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"lm" = (
+/obj/structure/barbwire,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/mechanicusdig)
+"ly" = (
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "wall6"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"lz" = (
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/mechanicusdig)
+"lA" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/mechanicusdig)
+"lB" = (
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lfloor15"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"lM" = (
+/obj/item/remains/human,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "floor10"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"ma" = (
+/turf/unsimulated/oldship{
+	icon_state = "rwall13"
+	},
+/area/cadiaoutpost/oa/shuttle/magos)
+"mk" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/theforest)
+"mm" = (
+/obj/item/remains/human,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"mo" = (
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/red/corner{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"my" = (
+/turf/simulated/floor/darkfloor{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"mA" = (
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "floor1"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"mC" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/unsimulated/oldship{
+	icon_state = "rwall10"
+	},
+/area/cadiaoutpost/oa/shuttle/magos)
+"mS" = (
+/obj/item/clothing/head/helmet/whiteshield,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lfloor15"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"mT" = (
+/obj/structure/table/graf/shrine,
+/obj/random/loot/tech2,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"mU" = (
+/obj/effect/decal/cleanable/cobweb{
+	dir = 8
+	},
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"ni" = (
+/obj/structure/table/graf/shrine,
+/obj/effect/decal/cleanable/cobweb{
+	dir = 8
+	},
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"nn" = (
+/obj/structure/bed/chair{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/magos)
+"ns" = (
+/obj/effect/floor_decal/newcorner/plating,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"nw" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 8;
+	icon_state = "plating"
+	},
+/obj/effect/floor_decal/newcorner/red{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"nA" = (
+/obj/item/humanskin,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"nB" = (
+/obj/machinery/door/airlock/external,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/mechanicusdig)
+"nD" = (
+/obj/effect/gibspawner/human,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"ob" = (
+/obj/structure/warfare/barricade/concrete_barrier{
+	dir = 1
+	},
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/mechanicusdig)
+"oi" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/mechanicusdig)
+"or" = (
+/obj/item/trash/syndi_cakes,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/mechanicusdig)
+"oB" = (
+/turf/unsimulated/wall/other,
+/area/cadiaoutpost/oa/dungeon1)
+"oJ" = (
+/obj/effect/floor_decal/newcorner/trench_flooring,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/mechanicusdig)
+"oP" = (
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/theforest)
+"pl" = (
+/obj/machinery/light/red{
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"pm" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/large,
+/obj/item/archaeological_find/parts,
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/oa/mechanicusdig)
+"po" = (
+/obj/machinery/computer/atmos_alert,
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"pp" = (
+/turf/simulated/wall/concrete/strong,
+/area/cadiaoutpost/oa/theforest)
+"pq" = (
+/obj/structure/bed/chair{
+	dir = 4
+	},
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/mechanicusdig)
+"pB" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 8
+	},
+/obj/item/trash/semki,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"pL" = (
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/mechanicusdig)
+"pN" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/trash/liquidfood,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/mechanicusdig)
+"qa" = (
+/obj/machinery/light,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/mechanicusdig)
+"qd" = (
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/magosship2)
+"qe" = (
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "awall12"
+	},
+/area/cadiaoutpost/oa/theforest)
+"qh" = (
+/obj/structure/bed/barrack,
+/obj/structure/bed/barrack1,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"qj" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "awall8"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"qA" = (
+/obj/effect/floor_decal/turf/metal/six,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"qL" = (
+/obj/effect/floor_decal/newcorner/trench_flooring{
+	dir = 5
+	},
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/mechanicusdig)
+"qM" = (
+/obj/effect/floor_decal/newcorner/plating/corner,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"qR" = (
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/oa/theforest)
+"re" = (
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/dungeon1)
+"rg" = (
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 8
+	},
+/obj/effect/floor_decal/newcorner/green{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"ru" = (
+/obj/structure/toilet{
+	dir = 4
+	},
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/freezer,
+/area/cadiaoutpost/oa/mechanicusdig)
+"rC" = (
+/obj/machinery/door/airlock/glass_external{
+	color = null
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/magos)
+"rP" = (
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"rW" = (
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "wall13"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"sv" = (
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/mechanicusdig)
+"sw" = (
+/obj/effect/decal/cleanable/cobweb,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "floor11"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"sy" = (
+/obj/effect/decal/cleanable/cobweb{
+	dir = 4
+	},
+/turf/unsimulated/floor/necron_floor,
+/area/cadiaoutpost/oa/dungeon1)
+"sJ" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/large,
+/obj/item/archaeological_find/remains/xeno,
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/oa/mechanicusdig)
+"sO" = (
+/obj/effect/floor_decal/newcorner/plating/corner{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"sU" = (
+/obj/item/newore/smallrock{
+	pixel_y = 13
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/theforest)
+"tq" = (
+/obj/machinery/button/remote/blast_door/id_scan{
+	id = "necron";
+	name = "excavation site ID lock";
+	pixel_x = 32;
+	req_one_access = list(10)
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
+"tz" = (
+/obj/machinery/light/red,
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"tR" = (
+/turf/unsimulated/oldship{
+	icon_state = "rwall6"
+	},
+/area/cadiaoutpost/oa/shuttle/magos)
+"ua" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/large,
+/obj/random/loot/sidearmammo,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"ui" = (
+/obj/effect/floor_decal/newcorner/plating/corner{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"uj" = (
+/obj/machinery/door/blast/grates{
+	name = "Archeological Site Shutters";
+	maxhealth = 9000;
+	id = "necron"
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/dungeon1)
+"us" = (
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "floor7"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"ux" = (
+/obj/structure/warfare/barricade/sandbag{
+	dir = 1
+	},
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/theforest)
+"uy" = (
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/darkfloor{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"uB" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 5
+	},
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/magosship2)
+"vo" = (
+/obj/structure/bed/chair/office/dark{
+	dir = 8
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/darkfloor{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"vq" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/trash/warfare_can/flower,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/mechanicusdig)
+"vx" = (
+/obj/item/remains/xeno,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"vB" = (
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/mechanicusdig)
+"vD" = (
+/obj/structure/table/graf/shrine,
+/obj/random/loot/tech2,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lfloor15"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"vE" = (
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "lawall0"
+	},
+/area/cadiaoutpost/oa/theforest)
+"vJ" = (
+/obj/item/clothing/head/servicesgt{
+	name = "Cadian Lieutenant's Service Cap";
+	desc = "A Cadian Lieutenant's service cap."
+	},
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"vR" = (
+/turf/simulated/floor/darkfloor,
+/area/cadiaoutpost/oa/mechanicusdig)
+"vT" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "wall9"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"vV" = (
+/obj/machinery/computer/shuttle_control/ferry/magos,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/magos)
+"ws" = (
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/magos)
+"wu" = (
+/obj/structure/table/rack/dark,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/clothing/head/bio_hood/anomaly,
+/obj/item/clothing/head/bio_hood/anomaly,
+/turf/simulated/floor/darkfloor,
+/area/cadiaoutpost/oa/mechanicusdig)
+"wz" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/trashcart,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"wC" = (
+/obj/effect/floor_decal/newcorner/reinforced/corner,
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 1
+	},
+/obj/item/trash/plate,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"wR" = (
+/obj/item/clothing/head/helmet/whiteshield,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"xj" = (
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"xp" = (
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "wall12"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"xx" = (
+/obj/effect/floor_decal/newcorner/reinforced,
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"xF" = (
+/obj/structure/grille/iron_fence,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/theforest)
+"xG" = (
+/obj/effect/floor_decal/newcorner/reinforced,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"xV" = (
+/obj/structure/bed/chair{
+	dir = 1
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/magos)
+"yo" = (
+/obj/item/newore/smallrock{
+	pixel_x = -6
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
+"yN" = (
+/obj/machinery/light/small/red,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/dungeon1)
+"yT" = (
+/obj/random/loot/tech1,
+/obj/structure/table/graf/shrine,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"zu" = (
+/obj/item/card/id/key/super/necron_site1,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/theforest)
+"zv" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/magos)
+"zH" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/table/rack/dark,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"zV" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/table/rack/dark,
+/obj/random/loot/guardgear,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"zW" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"zY" = (
+/obj/effect/decal/cleanable/cobweb,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Aa" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/red,
+/obj/structure/sign/mechanicus{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Ae" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/large,
+/obj/item/archaeological_find/fossil,
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/oa/mechanicusdig)
+"At" = (
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "floor14"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"AA" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "awall1"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"AC" = (
+/turf/unsimulated/mineral,
+/area/cadiaoutpost/oa/dungeon1)
+"AG" = (
+/obj/structure/table/graf/shrine,
+/obj/random/loot/tech1,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lfloor15"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"AK" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 8
+	},
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 4
+	},
+/obj/structure/poster/hyshim{
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"AV" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/large,
+/obj/item/archaeological_find/mask,
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Bb" = (
+/obj/structure/flora/grass/both,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
+"Bh" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "wall6"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Bt" = (
+/obj/structure/hivedecor/lasplacement{
+	dir = 8
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/dungeon1)
+"Bx" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/large,
+/obj/item/archaeological_find/material,
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/oa/mechanicusdig)
+"BD" = (
+/obj/effect/floor_decal/newcorner/reinforced,
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 1
+	},
+/obj/item/trash/warfare_can/rat{
+	pixel_x = 14
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"BK" = (
+/obj/machinery/floodlight,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/theforest)
+"BQ" = (
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "wall14"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Ca" = (
+/obj/structure/table/graf/shrine,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Cf" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/large,
+/obj/item/archaeological_find/coin,
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Cp" = (
+/obj/effect/decal/cleanable/urine,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Cw" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/suspension_gen{
+	req_access = list()
+	},
+/obj/machinery/light/small,
+/turf/simulated/floor/darkfloor,
+/area/cadiaoutpost/oa/mechanicusdig)
+"CE" = (
+/obj/effect/floor_decal/newcorner/plating/quarter,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"CG" = (
+/obj/structure/bed/chair/office/dark{
+	dir = 1
+	},
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"CK" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/mechanicusdig)
+"CN" = (
+/obj/effect/floor_decal/newcorner/plating/corner{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Db" = (
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/theforest)
+"Dv" = (
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "wall15"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Dw" = (
+/obj/structure/warfare/barricade/sandbag{
+	dir = 4
+	},
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/theforest)
+"DA" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "wall3"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"DM" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 1
+	},
+/obj/structure/sign/mechanicus{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"DQ" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"DU" = (
+/obj/effect/floor_decal/newcorner/reinforced,
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 1
+	},
+/obj/item/trash/warfare_can/rat{
+	pixel_x = 14;
+	pixel_y = 9
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"DV" = (
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lfloor15"
+	},
+/area/cadiaoutpost/oa/theforest)
+"Ea" = (
+/obj/machinery/light/red{
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Eb" = (
+/obj/structure/warfare/barricade/sandbag{
+	dir = 4
+	},
+/obj/structure/warfare/barricade/sandbag,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
+"Ei" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/table/rack/dark,
+/obj/random/loot/badweapon,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Eo" = (
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Eq" = (
+/obj/structure/flora/tree/pine,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Ez" = (
+/obj/structure/table/graf/shrine,
+/turf/unsimulated/floor/necron_floor,
+/area/cadiaoutpost/oa/dungeon1)
+"EF" = (
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "floor10"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"EJ" = (
+/obj/structure/warfare/barricade/sandbag,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
+"EM" = (
+/obj/structure/table/steel_reinforced,
+/obj/structure/sign/mechanicus{
+	pixel_x = -32
+	},
+/obj/random/loot/randomitemtown,
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"ES" = (
+/turf/unsimulated/floor/necron_floor,
+/area/cadiaoutpost/oa/dungeon1)
+"EX" = (
+/obj/structure/closet/excavation,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/darkfloor,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Fq" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/red{
+	dir = 8
+	},
+/obj/structure/sign/xenoarch{
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Fw" = (
+/obj/structure/bed/chair/office/dark{
+	dir = 8
+	},
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"Fy" = (
+/obj/machinery/door/airlock/glass,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/magos)
+"FH" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/trash/chips,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/mechanicusdig)
+"FL" = (
+/obj/machinery/door/unpowered/necron_door3,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"FO" = (
+/obj/structure/table/rack/dark,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/clothing/suit/bio_suit/anomaly,
+/obj/item/clothing/suit/bio_suit/anomaly,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/darkfloor,
+/area/cadiaoutpost/oa/mechanicusdig)
+"FZ" = (
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "floor5"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Gb" = (
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Gc" = (
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "awall1"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Gh" = (
+/obj/structure/warfare/barricade/sandbag,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/theforest)
+"Gi" = (
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
+"Gr" = (
+/obj/effect/floor_decal/newcorner/reinforced/corner,
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Gt" = (
+/obj/effect/floor_decal/newcorner/green{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Gz" = (
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/obj/effect/floor_decal/turf/metal/six,
+/obj/random/canned_food,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"GA" = (
+/obj/effect/floor_decal/newcorner/plating/quarter,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/mechanicusdig)
+"GS" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"GV" = (
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "awall4"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"GZ" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "wall12"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Hb" = (
+/obj/structure/barbwire,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Hi" = (
+/turf/unsimulated/mineral,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Ho" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/large,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/random/glasses,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Hp" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/large,
+/obj/item/archaeological_find/crystal,
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/oa/mechanicusdig)
+"HA" = (
+/obj/machinery/light/red{
+	dir = 8
+	},
+/obj/effect/floor_decal/newcorner/reinforced,
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"HB" = (
+/obj/structure/flora/yes/rock4{
+	icon_state = "rock2"
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
+"HF" = (
+/obj/item/clothing/suit/armor/whiteshield,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/dungeon1)
+"HP" = (
+/obj/effect/floor_decal/newcorner/green,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"It" = (
+/obj/structure/flora/grass/brown,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
+"Iu" = (
+/obj/structure/table/graf/shrine,
+/obj/item/fluff_items/necron4,
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lfloor15"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"IS" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"Jc" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/trash/snack_bowl,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Jq" = (
+/obj/structure/warfare/barricade/sandbag{
+	dir = 4
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
+"JD" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/mechanicusdig)
+"JI" = (
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"JL" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/large,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/mechanicusdig)
+"JN" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/mechanicusdig)
+"JR" = (
+/obj/effect/floor_decal/newcorner/reinforced,
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"JV" = (
+/obj/structure/table/graf/shrine,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"JX" = (
+/obj/machinery/light,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Ko" = (
+/obj/structure/warfare/barricade/sandbag{
+	dir = 1
+	},
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Kt" = (
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/obj/effect/floor_decal/turf/metal/six,
+/obj/random/firstaid,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Kv" = (
+/obj/machinery/door/airlock/external{
+	name = "Mechanicus Outpost Entrace"
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Kw" = (
+/obj/item/remains/human,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/dungeon1)
+"Ky" = (
+/obj/effect/floor_decal/newcorner/plating,
+/obj/machinery/light,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"KA" = (
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"KB" = (
+/turf/unsimulated/oldship{
+	icon_state = "rwall10"
+	},
+/area/cadiaoutpost/oa/shuttle/magos)
+"KD" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"KM" = (
+/obj/machinery/door/unpowered/necron_door1,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"KV" = (
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"Lf" = (
+/obj/effect/floor_decal/newcorner/plating/corner{
+	dir = 8
+	},
+/obj/effect/floor_decal/newcorner/red/quarter{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Lj" = (
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/obj/effect/floor_decal/turf/metal/six,
+/obj/random/accessory,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Lk" = (
+/turf/unsimulated/mineral,
+/area/cadiaoutpost/oa/theforest)
+"Ll" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/trash/liquidfood/triglyceride,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/mechanicusdig)
+"LA" = (
+/obj/structure/sign/mechanicus{
+	pixel_y = -32
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/mechanicusdig)
+"LC" = (
+/obj/effect/gibspawner/human,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/dungeon1)
+"LO" = (
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "awall12"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"LP" = (
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "floor4"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"LQ" = (
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 8
+	},
+/obj/effect/floor_decal/newcorner/red/corner{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Mj" = (
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "wall10"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Mz" = (
+/obj/machinery/door/airlock/cone{
+	name = "Toilet"
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/mechanicusdig)
+"MH" = (
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "floor3"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"ML" = (
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "wall5"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"MM" = (
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/red/corner,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Nc" = (
+/obj/effect/decal/cleanable/cobweb{
+	dir = 1
+	},
+/turf/unsimulated/floor/necron_floor,
+/area/cadiaoutpost/oa/dungeon1)
+"Nd" = (
+/obj/structure/flora/yes/rock4{
+	name = "rock";
+	icon_state = "cavein"
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/theforest)
+"Nf" = (
+/obj/effect/floor_decal/newcorner/reinforced/corner,
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Ni" = (
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "floor8"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Nq" = (
+/obj/item/newore/smallrock,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
+"NE" = (
+/obj/structure/flora/tree/pine,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
+"NH" = (
+/obj/effect/floor_decal/newcorner/plating/corner{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"NS" = (
+/obj/structure/table/rack/dark,
+/obj/random/junk,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"NX" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/mechanicusdig)
+"NZ" = (
+/obj/structure/bed/chair{
+	dir = 1
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/magos)
+"Od" = (
+/obj/random/loot/goodweapon,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Oe" = (
+/obj/structure/table/graf/shrine,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lfloor15"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Of" = (
+/obj/effect/decal/cleanable/cobweb,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Oj" = (
+/turf/unsimulated/oldship{
+	icon_state = "rwall9"
+	},
+/area/cadiaoutpost/oa/shuttle/magos)
+"Ok" = (
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/theforest)
+"OE" = (
+/obj/effect/floor_decal/newcorner/plating/quarter,
+/obj/effect/floor_decal/newcorner/red/corner{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Pd" = (
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "wall9"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Pr" = (
+/obj/structure/warfare/barricade/sandbag{
+	dir = 1
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
+"Pv" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 8
+	},
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Pw" = (
+/obj/structure/table/graf/shrine,
+/obj/effect/decal/cleanable/cobweb{
+	dir = 1
+	},
+/turf/unsimulated/floor/necron_floor,
+/area/cadiaoutpost/oa/dungeon1)
+"Px" = (
+/obj/item/clothing/shoes/darkeldar,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"PB" = (
+/obj/structure/flora/yes/rock4{
+	name = "rock";
+	icon_state = "cavein"
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
+"PD" = (
+/obj/structure/sign/imperial{
+	pixel_y = 32
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/mechanicusdig)
+"PG" = (
+/obj/machinery/light/red,
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"PS" = (
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"PV" = (
+/obj/item/clothing/suit/armor/whiteshield,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Qh" = (
+/obj/effect/floor_decal/turf/bar3,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Qn" = (
+/obj/structure/flora/yes/rock4{
+	name = "rock";
+	icon_state = "cavein"
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Qs" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Qu" = (
+/obj/machinery/light,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/mechanicusdig)
+"QB" = (
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/mechanicusdig)
+"QT" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/mechanicusdig)
+"QX" = (
+/obj/item/clothing/suit/armor/lieutenant,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Rb" = (
+/obj/item/gun/energy/las/lasgun,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Rl" = (
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "wall12"
+	},
+/area/cadiaoutpost/oa/theforest)
+"Rn" = (
+/obj/machinery/door/airlock/cone{
+	name = "Barracks"
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Rq" = (
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"Rz" = (
+/obj/effect/floor_decal/newcorner/plating/corner{
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/red/quarter{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"RL" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/trashcart,
+/obj/random/loot/randomlasammo,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"RT" = (
+/obj/item/newore/smallrock{
+	pixel_y = 13
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
+"RY" = (
+/obj/structure/bed/chair/comfy/captain{
+	desc = "Comfy chair for luxury and piloting.";
+	dir = 1;
+	icon_state = "capchair_preview";
+	name = "pilot seat"
+	},
+/obj/effect/shuttle_landmark/ferry/magos_start,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/magos)
+"Sj" = (
+/obj/item/gun/energy/las/lasgun,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Sk" = (
+/obj/structure/flora/grass/brown,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Sm" = (
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "floor2"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"ST" = (
+/obj/effect/floor_decal/newcorner/reinforced/corner,
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/green{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Tg" = (
+/obj/structure/warfare/barricade/sandbag{
+	dir = 1
+	},
+/obj/structure/warfare/barricade/sandbag{
+	dir = 4
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
+"Tn" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/suspension_gen{
+	req_access = list()
+	},
+/turf/simulated/floor/darkfloor,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Tt" = (
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/obj/effect/floor_decal/turf/metal/six,
+/obj/random/exploration,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Tv" = (
+/obj/machinery/light/small/red{
+	dir = 1
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/dungeon1)
+"TF" = (
+/obj/structure/warfare/barricade/concrete_barrier{
+	dir = 4
+	},
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/mechanicusdig)
+"TG" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"TJ" = (
+/obj/structure/closet/secure_closet/xenoarchaeologist,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/wrench,
+/obj/item/screwdriver,
+/obj/item/crowbar/red,
+/turf/simulated/floor/darkfloor,
+/area/cadiaoutpost/oa/mechanicusdig)
+"TL" = (
+/obj/structure/table/rack/dark,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/cell/high,
+/obj/item/cell/high{
+	pixel_y = -8
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/darkfloor,
+/area/cadiaoutpost/oa/mechanicusdig)
+"TM" = (
+/obj/structure/warfare/barricade/sandbag{
+	dir = 4
+	},
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Ul" = (
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "floor13"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Up" = (
+/obj/effect/gibspawner/human,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/theforest)
+"Uw" = (
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/theforest)
+"UA" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "lawall0"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"UB" = (
+/obj/structure/table/steel_reinforced,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/random/loot/randomarmor,
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"UF" = (
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "wall11"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"UZ" = (
+/turf/unsimulated/oldship{
+	icon_state = "rwall3"
+	},
+/area/cadiaoutpost/oa/shuttle/magos)
+"Vc" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/large,
+/obj/item/archaeological_find/container,
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Vw" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/item/modular_computer/console,
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"VE" = (
+/turf/simulated/wall/techno,
+/area/cadiaoutpost/oa/mechanicusdig)
+"VR" = (
+/turf/unsimulated/oldship{
+	icon_state = "rwall5"
+	},
+/area/cadiaoutpost/oa/shuttle/magos)
+"VT" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"VY" = (
+/turf/unsimulated/oldship{
+	icon_state = "rwall12"
+	},
+/area/cadiaoutpost/oa/shuttle/magos)
+"Wa" = (
+/obj/machinery/floodlight,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Wh" = (
+/obj/structure/bed/barrack,
+/obj/structure/bed/barrack1,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Wj" = (
+/obj/structure/warfare/barricade/concrete_barrier{
+	dir = 1
+	},
+/obj/structure/warfare/barricade/sandbag{
+	dir = 4
+	},
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Ws" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/red,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Wu" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 8
+	},
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 4
+	},
+/obj/machinery/light,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Xi" = (
+/obj/effect/decal/cleanable/cobweb{
+	dir = 1
+	},
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Xt" = (
+/obj/item/newore/smallrock{
+	pixel_x = -6;
+	pixel_y = 14
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/theforest)
+"Xw" = (
+/obj/structure/closet/crate/trashcart,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"Xx" = (
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/obj/effect/floor_decal/turf/metal/six,
+/obj/random/gloves,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"XI" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/magosship2)
+"XP" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/simulated/shuttle/wall/necron{
+	icon_state = "awall4"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"XT" = (
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/obj/effect/floor_decal/turf/metal/six,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"XV" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 8;
+	icon_state = "plating"
+	},
+/obj/effect/floor_decal/newcorner/red{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"XY" = (
+/obj/structure/table/graf/shrine,
+/obj/item/fluff_items/necron1,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Yd" = (
+/obj/structure/flora/yes/rock4{
+	icon_state = "rock3"
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
+"Ye" = (
+/obj/machinery/computer/station_alert/all,
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"Yh" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 8
+	},
+/obj/effect/floor_decal/newcorner/red{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"YH" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+"YV" = (
+/obj/effect/decal/cleanable/urine,
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "lofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
+"Zk" = (
+/obj/item/modular_computer/console,
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/mechanicusdig)
+"ZY" = (
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/mechanicusdig)
+
+(1,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+"}
+(2,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Hi
+Hi
+je
+je
+je
+je
+je
+je
+je
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+"}
+(3,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+je
+je
+je
+je
+je
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+je
+ru
+je
+ru
+je
+ru
+je
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+qd
+qd
+qd
+qd
+qd
+qd
+qd
+qd
+qd
+qd
+qd
+qd
+qd
+Hi
+"}
+(4,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+je
+kW
+RL
+wz
+je
+je
+je
+je
+je
+je
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+je
+Mz
+je
+Mz
+je
+Mz
+je
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+qd
+qd
+qd
+qd
+qd
+tR
+UZ
+UZ
+UZ
+UZ
+UZ
+gD
+qd
+Hi
+"}
+(5,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+je
+Ho
+JI
+JI
+je
+zH
+VT
+JI
+zV
+je
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+je
+bf
+bf
+bf
+bf
+bf
+je
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+qd
+qd
+tR
+UZ
+UZ
+ma
+ws
+NZ
+nn
+NZ
+ws
+VY
+qd
+Hi
+"}
+(6,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+je
+ua
+JI
+JI
+je
+Ei
+JI
+JI
+kM
+je
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+je
+bf
+cH
+bf
+cH
+bf
+je
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+qd
+aJ
+Oj
+zv
+ws
+eQ
+ws
+nn
+nn
+nn
+ws
+eQ
+qd
+Hi
+"}
+(7,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+aa
+Uw
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+je
+je
+sv
+sv
+je
+JI
+JI
+JI
+kM
+je
+je
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+je
+je
+je
+Mz
+je
+je
+je
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+qd
+VY
+vV
+RY
+ws
+Fy
+ws
+ws
+ws
+ws
+ws
+rC
+qd
+Hi
+"}
+(8,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+aa
+NE
+aa
+Uw
+Uw
+Uw
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+je
+lz
+kf
+GA
+je
+sv
+sv
+sv
+je
+je
+je
+je
+je
+je
+je
+je
+je
+je
+je
+QB
+hg
+hg
+QB
+QB
+Hi
+Hi
+Hi
+VE
+VE
+VE
+VE
+VE
+VE
+VE
+Hi
+qd
+mC
+VR
+cX
+ws
+fG
+ws
+nn
+nn
+nn
+ws
+fG
+qd
+Hi
+"}
+(9,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+PB
+Uw
+Uw
+Uw
+aa
+aa
+aa
+aa
+aa
+aa
+Uw
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+je
+JD
+Gb
+CN
+kf
+kf
+kf
+kf
+kf
+GA
+je
+Wh
+cs
+Wh
+HA
+Wh
+BD
+Wh
+je
+QB
+QB
+hg
+QB
+QB
+Hi
+Hi
+VE
+VE
+gw
+eT
+EM
+po
+gw
+VE
+VE
+XI
+qd
+KB
+UZ
+UZ
+ma
+ws
+xV
+nn
+xV
+ws
+VY
+qd
+Hi
+"}
+(10,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+aa
+aa
+Uw
+aa
+aa
+mk
+mk
+mk
+aa
+aa
+NE
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+je
+hQ
+oi
+QT
+oi
+oi
+oi
+QT
+oi
+pL
+je
+XT
+cs
+Kt
+cs
+XT
+cs
+XT
+je
+CK
+QB
+hg
+hg
+QB
+Hi
+Hi
+VE
+Zk
+gw
+gw
+Fw
+gw
+gw
+VE
+KD
+fP
+uB
+XI
+qd
+qd
+KB
+UZ
+UZ
+UZ
+UZ
+UZ
+gD
+qd
+Hi
+"}
+(11,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+NE
+aa
+BK
+aa
+aa
+aa
+aa
+mk
+mk
+mk
+aa
+aa
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+je
+je
+je
+je
+je
+je
+cf
+je
+je
+je
+je
+Ea
+Gr
+iW
+ST
+iW
+wC
+PG
+je
+PD
+hg
+hg
+QB
+QB
+QB
+Hi
+VE
+KA
+gw
+gw
+gw
+gw
+gw
+nB
+KD
+fP
+fP
+fP
+iE
+qd
+qd
+qd
+qd
+qd
+qd
+qd
+qd
+qd
+Hi
+"}
+(12,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+PB
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Hi
+Hi
+Hi
+je
+JI
+JI
+JI
+VT
+JI
+JI
+Rn
+JI
+JI
+HP
+je
+Gt
+JI
+JI
+Rn
+hg
+hg
+hg
+hg
+hg
+hg
+Hi
+VE
+UB
+CG
+gw
+gw
+zW
+gw
+VE
+KV
+IS
+sO
+ns
+uB
+XI
+XI
+XI
+XI
+XI
+XI
+VE
+VE
+Hi
+Hi
+"}
+(13,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Uw
+Uw
+Uw
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+BK
+aa
+mk
+mk
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Hi
+Hi
+Hi
+je
+JI
+JI
+JI
+JI
+JI
+JI
+Rn
+JI
+JI
+HP
+je
+Gt
+JI
+JI
+Rn
+hg
+hg
+hg
+hg
+gj
+hg
+Hi
+VE
+KA
+eT
+Ye
+gw
+VE
+VE
+VE
+VE
+VE
+eJ
+ui
+DQ
+DQ
+DQ
+DQ
+DQ
+CE
+VE
+VE
+Hi
+Hi
+Hi
+"}
+(14,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+Uw
+oP
+oP
+oP
+oP
+oP
+oP
+oP
+oP
+oP
+oP
+oP
+aa
+aa
+aa
+mk
+mk
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+je
+je
+je
+je
+Rn
+je
+je
+je
+je
+je
+pl
+ZY
+TG
+rg
+TG
+ZY
+tz
+je
+PD
+hg
+hg
+hg
+hg
+hg
+Hi
+VE
+VE
+VE
+VE
+VE
+VE
+Hi
+Hi
+VE
+gO
+NH
+fP
+fP
+JN
+JL
+JN
+JL
+ns
+VE
+Hi
+Hi
+Hi
+Hi
+"}
+(15,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+oP
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+oP
+aa
+aa
+aa
+mk
+mk
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+je
+TG
+YH
+xj
+JI
+JI
+xG
+Xx
+Wh
+je
+XT
+cs
+Lj
+DU
+XT
+cs
+Tt
+je
+CK
+hg
+hg
+QB
+QB
+QB
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+VE
+DM
+fP
+fP
+fP
+fP
+fP
+fP
+fP
+Ky
+VE
+Hi
+Hi
+Hi
+Hi
+"}
+(16,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+oP
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+oP
+Ok
+aa
+aa
+aa
+aa
+Uw
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+je
+Wh
+Gz
+GS
+TG
+TG
+ak
+Pv
+Wu
+je
+Wh
+cs
+Wh
+jd
+Wh
+cs
+Wh
+je
+QB
+hg
+hg
+QB
+je
+fB
+eV
+eV
+eV
+Qu
+je
+Hi
+Hi
+Hi
+Hi
+VE
+KV
+IS
+sO
+fP
+JL
+JN
+JN
+JN
+ns
+VE
+Hi
+Hi
+Hi
+Hi
+"}
+(17,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+NE
+oP
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+oP
+Ok
+aa
+aa
+Uw
+Uw
+Uw
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+NE
+aa
+aa
+je
+fL
+fL
+JR
+Wh
+XT
+cs
+XT
+Wh
+je
+je
+je
+je
+je
+je
+je
+je
+je
+QB
+hg
+hg
+QB
+Qs
+pq
+pq
+eV
+pq
+pq
+eV
+Hi
+VE
+VE
+VE
+VE
+VE
+VE
+KD
+fP
+fP
+fP
+fP
+qM
+Rq
+VE
+Hi
+Hi
+Hi
+Hi
+"}
+(18,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+oP
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+oP
+Ok
+Ok
+aa
+aa
+Pr
+aa
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+aa
+aa
+Bb
+je
+qh
+XT
+fD
+fL
+fL
+Nf
+Pv
+AK
+je
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+QB
+QB
+hg
+hg
+QB
+eV
+pN
+NX
+eV
+Jc
+vq
+or
+Hi
+VE
+Cf
+Ae
+qA
+JI
+VE
+rP
+IS
+IS
+IS
+aA
+Rq
+VE
+VE
+Hi
+Hi
+Hi
+Hi
+"}
+(19,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+Uw
+aa
+oP
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+oP
+Ok
+Ok
+Ok
+aa
+Tg
+Jq
+aa
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+Yd
+aa
+aa
+aa
+NE
+aa
+je
+fL
+fL
+JR
+Wh
+XT
+cs
+kB
+Wh
+je
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+QB
+QB
+hg
+hg
+hg
+eV
+fW
+fW
+eV
+fW
+fW
+eV
+Hi
+VE
+Ae
+Ae
+qA
+JI
+VE
+VE
+nB
+nB
+VE
+VE
+VE
+VE
+Hi
+Hi
+Hi
+Hi
+Hi
+"}
+(20,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+Uw
+Uw
+oP
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+oP
+Ok
+Ok
+Ok
+Ok
+aa
+aa
+aa
+aa
+xF
+pp
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+Bb
+aa
+aa
+aa
+It
+aa
+je
+Wh
+XT
+fD
+pB
+fL
+Nf
+Pv
+Wu
+je
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+QB
+QB
+hg
+hg
+hg
+eV
+eV
+eV
+eV
+eV
+Qu
+je
+Hi
+VE
+hn
+qA
+qA
+JI
+JI
+VE
+MM
+OE
+VE
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+"}
+(21,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+Uw
+oP
+oP
+oP
+oP
+oP
+oP
+oP
+oP
+oP
+oP
+oP
+aa
+Ok
+Ok
+Ok
+Ok
+aa
+aa
+aa
+xF
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+NE
+aa
+aa
+aa
+aa
+Uw
+aa
+je
+je
+je
+xx
+cG
+Gz
+bN
+XT
+Wh
+je
+Hi
+Hi
+Hi
+Hi
+QB
+ob
+oJ
+eV
+QB
+hg
+hg
+hg
+eV
+pq
+pq
+eV
+pq
+pq
+eV
+Hi
+VE
+hh
+pm
+qA
+JI
+JX
+VE
+Aa
+eL
+VE
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+"}
+(22,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+Uw
+aa
+aa
+aa
+aa
+Ok
+Ok
+Ok
+Ok
+aa
+aa
+xF
+xF
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+It
+Uw
+Uw
+aa
+aa
+NE
+sU
+Uw
+aa
+Lk
+je
+je
+je
+je
+je
+je
+je
+je
+Hi
+Hi
+Hi
+lm
+QB
+Ko
+oJ
+eV
+QB
+hg
+hg
+QB
+eV
+Jc
+FH
+eV
+Ll
+Jc
+eV
+Hi
+VE
+Hp
+AV
+qA
+JI
+JI
+VE
+Ws
+eL
+VE
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+"}
+(23,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+NE
+aa
+Uw
+Uw
+Uw
+aa
+aa
+EJ
+aa
+aa
+aa
+Ok
+Ok
+Ok
+Ok
+pp
+xF
+aa
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+Uw
+Uw
+aa
+Uw
+Uw
+aa
+aa
+Bb
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Hi
+Hi
+Hi
+Hi
+lm
+QB
+QB
+Ko
+oJ
+eV
+QB
+hg
+hg
+QB
+lA
+fW
+fW
+eV
+fW
+fW
+eV
+Hi
+VE
+hn
+qA
+qA
+JI
+JI
+VE
+hW
+eL
+VE
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+"}
+(24,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+Uw
+aa
+NE
+aa
+aa
+Jq
+Eb
+aa
+aa
+aa
+aa
+Ok
+Ok
+Ok
+Ok
+aa
+aa
+It
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+Uw
+Uw
+aa
+Bb
+eN
+aa
+It
+aa
+aa
+aa
+aa
+Bb
+Lk
+Lk
+Lk
+Lk
+Lk
+Hi
+Hi
+Hi
+QB
+QB
+lm
+QB
+Ko
+oJ
+eV
+Wa
+hg
+hg
+QB
+je
+fB
+eV
+eV
+eV
+Qu
+je
+Hi
+VE
+Bx
+sJ
+qA
+JI
+JI
+nB
+Ws
+eL
+VE
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+"}
+(25,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+Uw
+aa
+aa
+aa
+aa
+Uw
+Uw
+aa
+pp
+Ok
+Ok
+Ok
+Ok
+aa
+aa
+aa
+It
+aa
+Lk
+Lk
+Uw
+Uw
+aa
+NE
+aa
+aa
+aa
+aa
+Ok
+Ok
+Ok
+Ok
+Ok
+aa
+dK
+aa
+aa
+It
+Lk
+Lk
+Hi
+Hi
+QB
+QB
+lm
+QB
+QB
+Ko
+oJ
+eV
+QB
+hg
+hg
+QB
+QB
+QB
+QB
+Hi
+Hi
+Hi
+Hi
+Hi
+VE
+fi
+Vc
+qA
+JI
+JX
+VE
+Ws
+eL
+VE
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+"}
+(26,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+Uw
+Uw
+aa
+aa
+Uw
+Uw
+Uw
+xF
+xF
+aa
+Ok
+Ok
+Ok
+Ok
+yo
+aa
+aa
+aa
+aa
+aa
+aa
+Uw
+Uw
+Uw
+It
+aa
+aa
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Uw
+Uw
+Uw
+aa
+aa
+QB
+QB
+Qn
+QB
+QB
+lm
+QB
+Ko
+oJ
+eV
+QB
+hg
+hg
+QB
+LA
+VE
+VE
+VE
+VE
+VE
+VE
+VE
+VE
+qA
+qA
+qA
+JI
+JI
+VE
+Aa
+eL
+VE
+VE
+VE
+VE
+VE
+Hi
+Hi
+Hi
+Hi
+"}
+(27,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Uw
+Uw
+BK
+aa
+aa
+xF
+xF
+aa
+aa
+aa
+Ok
+Ok
+Ok
+Ok
+aa
+aa
+aa
+NE
+aa
+It
+It
+aa
+Uw
+aa
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+QB
+Sk
+QB
+QB
+lm
+QB
+QB
+Ko
+oJ
+eV
+QB
+hg
+hg
+QB
+qa
+VE
+MM
+Yh
+OE
+VE
+MM
+OE
+VE
+VE
+VE
+VE
+VE
+VE
+VE
+Ws
+iu
+VE
+Xw
+Xw
+NS
+VE
+Hi
+Hi
+Hi
+Hi
+"}
+(28,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+aa
+xF
+aa
+aa
+aa
+aa
+aa
+Ok
+Ok
+Ok
+Ok
+aa
+aa
+Uw
+aa
+aa
+aa
+aa
+Ok
+Ok
+Ok
+Ok
+Ok
+aa
+aa
+aa
+aa
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+hg
+hg
+hg
+QB
+QB
+lm
+QB
+ob
+oJ
+eV
+QB
+hg
+hg
+hg
+hg
+Kv
+Ws
+Qh
+eL
+Kv
+Ws
+Rz
+XV
+fU
+nw
+nw
+nw
+XV
+nw
+Lf
+eL
+nB
+JI
+JI
+JI
+VE
+Hi
+Hi
+Hi
+Hi
+"}
+(29,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+xF
+aa
+aa
+aa
+Bb
+aa
+aa
+Ok
+Ok
+Ok
+Ok
+Ok
+aa
+Uw
+Ok
+Ok
+Ok
+Ok
+Ok
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+Ok
+Ok
+Ok
+Ok
+Ok
+hg
+hg
+hg
+hg
+hg
+hg
+hg
+hg
+hg
+hg
+hg
+hg
+hg
+hg
+hg
+Kv
+Ws
+Qh
+eL
+Kv
+mo
+jo
+jo
+jo
+jo
+jo
+Fq
+jo
+jo
+jo
+LQ
+VE
+NS
+NS
+NS
+VE
+Hi
+Hi
+Hi
+Hi
+"}
+(30,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+pp
+Lk
+aa
+aa
+aa
+PB
+aa
+aa
+Xt
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+aa
+Uw
+Bb
+aa
+aa
+NE
+aa
+aa
+aa
+NE
+aa
+Bb
+aa
+RT
+aa
+Ok
+hg
+hg
+hg
+hg
+hg
+hg
+hg
+hg
+hg
+hg
+hg
+hg
+hg
+QB
+qa
+VE
+mo
+jo
+LQ
+VE
+VE
+nB
+VE
+VE
+VE
+nB
+VE
+VE
+VE
+VE
+VE
+VE
+VE
+VE
+VE
+VE
+Hi
+Hi
+Hi
+Hi
+"}
+(31,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+Uw
+Uw
+It
+aa
+aa
+aa
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+aa
+Uw
+aa
+RT
+yo
+aa
+aa
+aa
+aa
+Bb
+aa
+aa
+It
+aa
+aa
+aa
+aa
+NE
+QB
+hg
+hg
+hg
+hg
+hg
+hg
+hg
+hg
+hg
+hg
+hg
+hg
+QB
+QB
+VE
+sv
+sv
+VE
+VE
+gw
+gw
+VE
+wu
+FO
+vR
+TJ
+TJ
+VE
+vR
+Cw
+VE
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+"}
+(32,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+aa
+It
+aa
+aa
+Uw
+Uw
+Bb
+Nq
+aa
+aa
+Uw
+Ok
+Ok
+Ok
+aa
+aa
+Uw
+Uw
+aa
+NE
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+NE
+aa
+aa
+Sk
+hg
+hg
+QB
+QB
+lm
+QB
+ob
+oJ
+eV
+QB
+QB
+QB
+QB
+LA
+VE
+uy
+uy
+VE
+KA
+CG
+gw
+VE
+vR
+vR
+vR
+vR
+vR
+sv
+vR
+Tn
+VE
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+"}
+(33,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+PB
+BK
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+Uw
+aa
+aa
+aa
+NE
+Uw
+Uw
+Ok
+Ok
+aa
+Uw
+Uw
+aa
+aa
+aa
+aa
+aa
+NE
+aa
+HB
+Lk
+Lk
+Lk
+aa
+aa
+aa
+aa
+aa
+aa
+gv
+hg
+hg
+QB
+lm
+QB
+QB
+Ko
+oJ
+eV
+QB
+QB
+QB
+QB
+QB
+VE
+vo
+my
+VE
+Vw
+gw
+dQ
+VE
+vR
+vR
+vR
+vR
+vR
+sv
+vR
+Tn
+VE
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+"}
+(34,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+Ok
+aa
+aa
+aa
+aa
+aa
+aa
+Bb
+aa
+aa
+Bb
+aa
+aa
+aa
+aa
+aa
+aa
+Uw
+Uw
+Ok
+Ok
+Ok
+aa
+aa
+aa
+NE
+aa
+aa
+aa
+aa
+aa
+Lk
+Lk
+Uw
+Uw
+Uw
+Bb
+aa
+aa
+NE
+aa
+aa
+Ok
+hg
+QB
+QB
+lm
+QB
+Ko
+oJ
+eV
+QB
+QB
+QB
+QB
+QB
+VE
+my
+my
+nB
+gw
+gw
+gw
+VE
+EX
+EX
+hP
+TL
+az
+VE
+vR
+Cw
+VE
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+"}
+(35,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+Ok
+Ok
+Uw
+aa
+Ok
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+NE
+Bb
+aa
+Uw
+Bb
+Ok
+Ok
+Ok
+aa
+Bb
+aa
+aa
+aa
+aa
+NE
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Uw
+Uw
+aa
+aa
+aa
+NE
+aa
+Ok
+hg
+QB
+Hb
+QB
+QB
+Ko
+oJ
+eV
+QB
+QB
+QB
+QB
+QB
+VE
+VE
+VE
+VE
+VE
+VE
+VE
+VE
+VE
+VE
+VE
+VE
+VE
+VE
+VE
+VE
+VE
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+"}
+(36,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+pp
+pp
+pp
+pp
+pp
+pp
+Uw
+Uw
+Ok
+aa
+Ok
+Ok
+aa
+aa
+aa
+Uw
+Uw
+aa
+Lk
+Lk
+aa
+aa
+aa
+aa
+Uw
+Uw
+Uw
+Ok
+Ok
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+Uw
+aa
+aa
+Ok
+Ok
+hg
+vB
+vB
+lm
+QB
+Ko
+oJ
+eV
+Wa
+QB
+QB
+QB
+QB
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+Hi
+"}
+(37,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+pp
+pp
+Uw
+Uw
+Uw
+Uw
+Nd
+Uw
+Ok
+Ok
+Ok
+Ok
+Uw
+aa
+Ok
+aa
+aa
+aa
+Uw
+Uw
+Lk
+Lk
+aa
+aa
+aa
+aa
+NE
+Uw
+It
+Ok
+Ok
+aa
+Uw
+Uw
+It
+Bb
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Uw
+Uw
+It
+aa
+Ok
+Ok
+QB
+vB
+lm
+QB
+QB
+Ko
+oJ
+eV
+eV
+eV
+eV
+eV
+eV
+Hi
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(38,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+pp
+Nd
+Uw
+Uw
+Uw
+Uw
+Uw
+Uw
+Uw
+Uw
+Ok
+Ok
+Uw
+aa
+aa
+Ok
+Ok
+aa
+aa
+Lk
+Lk
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+HB
+Ok
+Ok
+Ok
+aa
+Uw
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+Ok
+Ok
+Ok
+QB
+vB
+QB
+lm
+QB
+Ko
+oJ
+qL
+qL
+qL
+qL
+qL
+qL
+Hi
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(39,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+pp
+Uw
+Uw
+Uw
+Uw
+Uw
+Uw
+pp
+pp
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+aa
+aa
+NE
+aa
+Lk
+Lk
+aa
+aa
+NE
+aa
+aa
+aa
+NE
+aa
+Ok
+Ok
+Ok
+aa
+NE
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Uw
+aa
+NE
+aa
+Ok
+Ok
+Ok
+QB
+QB
+lm
+QB
+QB
+Wj
+TM
+TM
+TM
+TM
+TF
+eV
+eV
+Hi
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(40,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+pp
+Uw
+Uw
+Uw
+Uw
+pp
+pp
+pp
+Lk
+Lk
+Uw
+aa
+Ok
+aa
+aa
+aa
+aa
+aa
+aa
+Lk
+aa
+aa
+aa
+Lk
+aa
+aa
+aa
+aa
+Nq
+Ok
+Ok
+Ok
+aa
+aa
+aa
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Uw
+Uw
+aa
+aa
+Ok
+Ok
+Ok
+Ok
+QB
+QB
+QB
+lm
+QB
+QB
+QB
+QB
+QB
+QB
+QB
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(41,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+pp
+BK
+Uw
+Uw
+pp
+pp
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+aa
+aa
+aa
+Uw
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+NE
+aa
+Bb
+aa
+Ok
+Ok
+aa
+aa
+aa
+NE
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+It
+aa
+Ok
+Ok
+Ok
+aa
+aa
+QB
+Eq
+QB
+QB
+lm
+QB
+lm
+QB
+lm
+QB
+Hi
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(42,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+pp
+Uw
+Uw
+Uw
+pp
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+NE
+aa
+Uw
+Uw
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+NE
+aa
+Ok
+Ok
+Ok
+aa
+aa
+aa
+aa
+It
+aa
+Lk
+Lk
+Lk
+aa
+aa
+NE
+aa
+aa
+Ok
+Ok
+aa
+aa
+aa
+QB
+QB
+QB
+QB
+QB
+lm
+QB
+lm
+QB
+lm
+Hi
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(43,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+pp
+Uw
+Uw
+Uw
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+Uw
+Uw
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+Ok
+Ok
+Ok
+aa
+aa
+aa
+aa
+aa
+NE
+Lk
+Lk
+aa
+aa
+aa
+aa
+aa
+Ok
+Ok
+Ok
+aa
+aa
+NE
+QB
+gv
+QB
+QB
+Eq
+QB
+QB
+QB
+gv
+QB
+Hi
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(44,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Uw
+Up
+Uw
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+NE
+aa
+aa
+Ok
+Ok
+Ok
+aa
+aa
+NE
+aa
+aa
+RT
+PB
+aa
+aa
+NE
+aa
+Ok
+Ok
+Ok
+aa
+aa
+aa
+aa
+aa
+aa
+dK
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(45,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Nd
+zu
+cx
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+PB
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+NE
+aa
+aa
+aa
+aa
+Bb
+Ok
+Ok
+Ok
+aa
+aa
+aa
+aa
+It
+yo
+aa
+aa
+aa
+aa
+Ok
+Ok
+Ok
+aa
+eN
+Uw
+Bb
+aa
+aa
+aa
+aa
+It
+Uw
+Uw
+aa
+aa
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(46,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+qe
+cx
+DV
+cx
+Rl
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+aa
+NE
+aa
+aa
+aa
+aa
+Ok
+Ok
+Ok
+Ok
+aa
+It
+aa
+aa
+aa
+NE
+aa
+Ok
+Ok
+Ok
+Ok
+Uw
+sU
+aa
+aa
+aa
+aa
+NE
+aa
+Uw
+Uw
+Uw
+NE
+aa
+aa
+It
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(47,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Rl
+Lk
+vE
+DV
+Rl
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+aa
+aa
+aa
+NE
+aa
+aa
+aa
+Ok
+Ok
+Ok
+Ok
+aa
+aa
+aa
+aa
+aa
+Ok
+Ok
+Ok
+aa
+aa
+aa
+NE
+aa
+aa
+aa
+aa
+aa
+Uw
+Uw
+Nq
+aa
+aa
+PB
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(48,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+PB
+Bb
+aa
+aa
+aa
+aa
+Nq
+aa
+Ok
+Ok
+Ok
+Ok
+Ok
+aa
+It
+Ok
+Ok
+Ok
+Ok
+aa
+aa
+aa
+aa
+aa
+aa
+PB
+aa
+aa
+RT
+Bb
+aa
+aa
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(49,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+It
+aa
+aa
+aa
+NE
+aa
+aa
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+aa
+aa
+It
+aa
+aa
+aa
+NE
+aa
+It
+aa
+aa
+aa
+aa
+It
+Nq
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(50,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+aa
+aa
+aa
+Bb
+aa
+aa
+Ok
+Ok
+Ok
+Ok
+Ok
+Ok
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+NE
+aa
+Uw
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(51,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+It
+aa
+aa
+aa
+Ok
+Ok
+Ok
+Ok
+aa
+aa
+aa
+aa
+NE
+aa
+aa
+aa
+Bb
+aa
+aa
+aa
+aa
+aa
+Uw
+Uw
+Bb
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(52,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+NE
+aa
+aa
+Ok
+Ok
+Ok
+Ok
+aa
+aa
+aa
+aa
+aa
+Bb
+aa
+aa
+Uw
+aa
+aa
+aa
+NE
+It
+Uw
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(53,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+aa
+Db
+Dw
+Ok
+Ok
+Dw
+Db
+aa
+aa
+aa
+aa
+aa
+aa
+Uw
+Uw
+aa
+aa
+aa
+aa
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(54,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+aa
+Db
+Gh
+Ok
+Ok
+Ok
+Ok
+ux
+Db
+aa
+aa
+aa
+aa
+NE
+Uw
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(55,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+ly
+dF
+dF
+dF
+dF
+ML
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+aa
+Db
+Gh
+Ok
+Ok
+Ok
+Ok
+ux
+Db
+aa
+aa
+aa
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(56,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+xp
+PS
+PS
+PS
+kU
+BQ
+dF
+dF
+ML
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Gi
+tq
+Ok
+Ok
+Ok
+Ok
+aa
+Gi
+aa
+aa
+aa
+PB
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(57,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+LO
+PS
+PS
+PS
+PS
+xp
+PS
+PS
+Mj
+ML
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+oB
+oB
+uj
+uj
+uj
+uj
+oB
+oB
+aa
+aa
+aa
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(58,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+xp
+PS
+PS
+PS
+PS
+bE
+PS
+PS
+PS
+xp
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+re
+re
+re
+re
+re
+oB
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(59,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+xp
+PS
+PS
+PS
+PS
+KM
+PS
+PS
+Ca
+LO
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+re
+re
+re
+re
+re
+re
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(60,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+ly
+dF
+DA
+dF
+dF
+rW
+PS
+PS
+PS
+PS
+GV
+mU
+PS
+PS
+xp
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+bF
+re
+re
+re
+re
+re
+re
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(61,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+ly
+Pd
+zY
+Eo
+PS
+PS
+Mj
+Gc
+KM
+dz
+dF
+UF
+dF
+dF
+dF
+rW
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+oB
+Tv
+re
+HF
+Bt
+re
+re
+re
+LC
+yN
+oB
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(62,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+ly
+Pd
+PS
+PS
+Eo
+Eo
+PS
+PS
+Eo
+Eo
+PS
+PS
+PS
+PS
+PS
+PS
+Mj
+DA
+dF
+ML
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+re
+Kw
+re
+re
+re
+re
+re
+HF
+re
+AC
+AC
+AC
+AC
+ly
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+cU
+dF
+dF
+dF
+dF
+dF
+ML
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(63,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+ly
+Pd
+PS
+PS
+Eo
+PS
+Eo
+PS
+PS
+PS
+PS
+PS
+PS
+Eo
+Eo
+Eo
+PS
+PS
+Eo
+PS
+xp
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+re
+re
+re
+LC
+re
+re
+re
+re
+re
+Kw
+AC
+AC
+AC
+ly
+Pd
+PS
+PS
+QX
+Eo
+Eo
+PS
+PS
+LO
+PS
+PS
+Ca
+PS
+PS
+xp
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(64,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+LO
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+Eo
+Eo
+Eo
+PS
+PS
+PS
+PS
+Eo
+Eo
+xp
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+re
+re
+re
+re
+re
+re
+re
+re
+re
+re
+AC
+AC
+AC
+xp
+PS
+Eo
+gq
+mm
+vJ
+Eo
+Eo
+PS
+xp
+PS
+Eo
+Eo
+PS
+PS
+xp
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(65,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+ly
+dF
+dF
+dF
+rW
+PS
+PS
+PS
+PS
+PS
+ly
+dF
+dF
+Gc
+KM
+dz
+DA
+dF
+ML
+PS
+PS
+PS
+PS
+PS
+xp
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+oB
+Tv
+ew
+Kw
+HF
+re
+LC
+re
+re
+AC
+AC
+AC
+AC
+xp
+PS
+Eo
+Od
+al
+PS
+PS
+Eo
+PS
+xp
+PS
+PS
+Eo
+Eo
+Eo
+LO
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(66,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+xp
+PS
+Ca
+PS
+xp
+PS
+Eo
+PS
+PS
+ly
+Pd
+ES
+lB
+Ez
+PS
+Ez
+lB
+sy
+Mj
+cU
+dF
+Gc
+KM
+dz
+rW
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+re
+re
+re
+re
+re
+re
+yN
+oB
+AC
+AC
+AC
+AC
+Mj
+dF
+dF
+dF
+dF
+cU
+Gc
+FL
+dz
+rW
+PS
+PS
+PS
+Eo
+PS
+xp
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(67,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+ly
+dF
+dF
+Pd
+PS
+PS
+PS
+bE
+PS
+Eo
+Eo
+dz
+rW
+Ez
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+Ez
+xp
+PS
+PS
+PS
+PS
+xp
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+ly
+Gc
+KM
+KM
+KM
+dz
+ML
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+LO
+PS
+PS
+PS
+BQ
+dF
+Gc
+KM
+dz
+dF
+UF
+dF
+dF
+ML
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(68,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+xp
+PS
+Ca
+PS
+PS
+PS
+PS
+KM
+PS
+PS
+Eo
+PS
+xp
+lB
+PS
+ES
+ES
+ES
+ES
+ES
+PS
+lB
+LO
+PS
+Eo
+PS
+PS
+LO
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+xp
+LP
+FZ
+FZ
+FZ
+mA
+xp
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+ly
+dF
+dF
+rW
+PS
+PS
+PS
+bE
+PS
+PS
+PS
+Eo
+PS
+PS
+PS
+PS
+xp
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(69,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+LO
+PS
+PS
+PS
+PS
+PS
+PS
+GV
+PS
+PS
+Eo
+Eo
+GZ
+lB
+PS
+ES
+lB
+lB
+lB
+ES
+PS
+lB
+xp
+Eo
+PS
+GV
+PS
+xp
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+LO
+dt
+PS
+PS
+mm
+MH
+LO
+AC
+AC
+AC
+AC
+AC
+AC
+ly
+Pd
+Eo
+PS
+bE
+PS
+PS
+Eo
+Eo
+Eo
+Eo
+PS
+PS
+PS
+Eo
+PS
+PS
+LO
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(70,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+xp
+mU
+PS
+PS
+PS
+PS
+PS
+xp
+PS
+PS
+PS
+PS
+LO
+Ez
+PS
+ES
+lB
+fJ
+lB
+ES
+PS
+Ez
+GZ
+Eo
+PS
+bE
+PS
+xp
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+xp
+eq
+PS
+PS
+PS
+MH
+xp
+AC
+AC
+AC
+AC
+AC
+ly
+Pd
+PS
+Eo
+PS
+KM
+PS
+Eo
+Eo
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+Eo
+PS
+xp
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(71,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+xp
+zY
+Ca
+PS
+PS
+Ca
+PS
+xp
+mU
+PS
+PS
+PS
+xp
+lB
+PS
+ES
+lB
+lB
+lB
+ES
+PS
+lB
+xp
+Eo
+PS
+PS
+PS
+LO
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+xp
+eq
+PS
+PS
+PS
+aT
+xp
+AC
+AC
+AC
+AC
+AC
+xp
+PS
+Eo
+Eo
+PS
+GV
+PS
+PS
+PS
+ly
+dF
+dF
+Gc
+KM
+dz
+dF
+cU
+dF
+Pd
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(72,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+Mj
+dF
+dF
+dF
+dF
+dF
+dF
+Dv
+Gc
+KM
+dz
+cU
+xp
+lB
+PS
+ES
+ES
+ES
+ES
+ES
+PS
+lB
+LO
+PS
+PS
+PS
+PS
+xp
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+LO
+eq
+mm
+PS
+PS
+MH
+LO
+AC
+AC
+AC
+AC
+AC
+LO
+ix
+Eo
+PS
+ly
+Pd
+PS
+PS
+PS
+xp
+PS
+PS
+PS
+PS
+PS
+PS
+LO
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(73,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+xp
+PS
+PS
+PS
+xp
+xp
+Ez
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+Pw
+BQ
+dF
+Gc
+KM
+dz
+UF
+ML
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+xp
+Ni
+EF
+EF
+EF
+Sm
+xp
+AC
+AC
+AC
+AC
+AC
+xp
+PS
+PS
+ly
+Pd
+PS
+PS
+PS
+PS
+LO
+Eo
+PS
+PS
+PS
+PS
+Ca
+xp
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(74,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+ly
+dF
+dF
+dF
+dF
+ML
+AC
+AC
+AC
+xp
+PS
+PS
+PS
+xp
+Mj
+ML
+eY
+lB
+lB
+Ez
+lB
+lB
+ES
+ly
+Pd
+PS
+PS
+PS
+Eo
+PS
+kn
+dF
+cU
+dF
+dF
+dF
+dF
+dF
+UF
+dF
+Gc
+KM
+dz
+dF
+UF
+dF
+dF
+dF
+dF
+dF
+Dv
+dF
+dF
+Pd
+Eo
+Eo
+PS
+PS
+PS
+xp
+Eo
+Eo
+PS
+PS
+PS
+PS
+LO
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(75,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Bh
+Pd
+Of
+Eo
+Eo
+Eo
+kn
+ML
+AC
+AC
+xp
+PS
+Eo
+PS
+xp
+AC
+BQ
+dF
+dF
+dF
+DA
+dF
+dF
+dF
+Pd
+PS
+PS
+PS
+PS
+Eo
+Eo
+Eo
+PS
+bE
+sw
+EF
+EF
+EF
+EF
+EF
+EF
+PS
+PS
+PS
+EF
+EF
+lM
+EF
+EF
+EF
+At
+bE
+PS
+PS
+Eo
+Eo
+PS
+PS
+ly
+dF
+rW
+PS
+Eo
+Eo
+ly
+dF
+dF
+Pd
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(76,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+xp
+Eo
+lB
+lB
+lB
+lB
+Eo
+xp
+AC
+AC
+xp
+PS
+Eo
+PS
+xp
+AC
+xp
+PS
+Eo
+Eo
+Eo
+Eo
+Eo
+PS
+PS
+PS
+Eo
+PS
+PS
+PS
+PS
+Eo
+Eo
+KM
+MH
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+eq
+de
+PS
+Eo
+Eo
+PS
+PS
+ly
+Pd
+PS
+xp
+PS
+PS
+PS
+xp
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(77,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+LO
+lB
+Iu
+PS
+vD
+lB
+PS
+BQ
+dF
+dF
+vT
+Eo
+Eo
+PS
+xp
+AC
+xp
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+GV
+PS
+Eo
+Eo
+PS
+PS
+PS
+PS
+Eo
+GV
+MH
+PS
+PS
+LP
+FZ
+FZ
+FZ
+PS
+PS
+PS
+FZ
+FZ
+FZ
+mA
+PS
+PS
+eq
+GV
+PS
+PS
+PS
+PS
+ly
+Pd
+PS
+PS
+xp
+PS
+PS
+PS
+xp
+AC
+AC
+ly
+dF
+cU
+dF
+cU
+dF
+cU
+dF
+ML
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(78,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+xp
+lB
+PS
+PS
+PS
+lB
+PS
+bE
+PS
+PS
+PS
+Eo
+PS
+PS
+xp
+AC
+BQ
+dF
+Gc
+PS
+PS
+PS
+dz
+dF
+Dv
+ML
+PS
+Eo
+PS
+PS
+PS
+PS
+ly
+rW
+MH
+PS
+PS
+eq
+mm
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+MH
+PS
+PS
+eq
+BQ
+dF
+dF
+dF
+dF
+rW
+PS
+PS
+PS
+Mj
+dF
+dF
+dF
+UF
+cU
+dF
+Pd
+Oe
+bE
+Oe
+bE
+Oe
+bE
+Oe
+Mj
+ML
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(79,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+xp
+lB
+fJ
+PS
+vD
+lB
+PS
+FL
+PS
+Eo
+PS
+Eo
+PS
+PS
+xp
+AC
+xp
+Eo
+PS
+PS
+PS
+PS
+PS
+kU
+BQ
+UF
+AA
+ES
+ES
+ES
+ES
+dz
+UF
+rW
+MH
+PS
+PS
+eq
+PS
+UA
+PS
+Eo
+Eo
+Eo
+PS
+UA
+PS
+MH
+PS
+PS
+dt
+LO
+PS
+Eo
+Eo
+PS
+Mj
+ML
+PS
+Eo
+PS
+PS
+PS
+Eo
+PS
+LO
+PS
+PS
+Eo
+PS
+Eo
+PS
+Eo
+PS
+Eo
+PS
+LO
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(80,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+xp
+lB
+PS
+PS
+PS
+lB
+PS
+GV
+PS
+PS
+Eo
+PS
+PS
+PS
+xp
+AC
+xp
+Eo
+Eo
+PS
+PS
+Eo
+Eo
+PS
+xp
+lB
+lB
+lB
+lB
+lB
+lB
+lB
+lB
+LO
+MH
+mm
+PS
+eq
+PS
+PS
+Eo
+Eo
+Eo
+Eo
+Eo
+PS
+PS
+MH
+PS
+PS
+eq
+xp
+PS
+Eo
+Eo
+PS
+PS
+xp
+PS
+PS
+PS
+Eo
+PS
+PS
+PS
+xp
+PS
+ES
+ES
+ES
+ES
+ES
+ES
+ES
+ES
+Eo
+xp
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(81,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+LO
+lB
+Iu
+PS
+mT
+lB
+PS
+BQ
+dF
+dF
+DA
+dF
+dF
+dF
+Pd
+AC
+xp
+PS
+Eo
+PS
+Eo
+Eo
+PS
+PS
+xp
+UA
+Oe
+lB
+lB
+lB
+lB
+Oe
+UA
+xp
+MH
+PS
+PS
+eq
+PS
+PS
+Eo
+Eo
+Eo
+Eo
+Eo
+PS
+PS
+MH
+PS
+PS
+eq
+GZ
+Eo
+Eo
+Eo
+Eo
+Eo
+xp
+KM
+dz
+dF
+dF
+dF
+dF
+cU
+rW
+PS
+ES
+lB
+lB
+lB
+lB
+lB
+lB
+ES
+PS
+LO
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(82,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+xp
+Eo
+lB
+lB
+lB
+lB
+Xi
+xp
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+xp
+PS
+PS
+PS
+Eo
+PS
+PS
+PS
+xp
+lB
+lB
+lB
+lB
+lB
+lB
+lB
+lB
+LO
+MH
+PS
+PS
+eq
+PS
+PS
+Eo
+Eo
+Eo
+Eo
+Eo
+PS
+PS
+MH
+PS
+PS
+eq
+xp
+PS
+Eo
+PS
+PS
+PS
+xp
+Cp
+PS
+al
+PS
+nA
+Rb
+Mj
+rW
+ES
+ES
+UA
+lB
+lB
+lB
+lB
+UA
+ES
+ES
+BQ
+dF
+dF
+ML
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(83,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+kn
+ML
+ia
+Eo
+Eo
+Eo
+Bh
+Pd
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+xp
+mU
+PS
+Eo
+Eo
+PS
+PS
+PS
+BQ
+cU
+Gc
+ES
+ES
+ES
+ES
+dz
+cU
+rW
+MH
+PS
+PS
+eq
+PS
+UA
+PS
+Eo
+Eo
+Eo
+PS
+UA
+PS
+MH
+PS
+PS
+eq
+LO
+PS
+PS
+PS
+PS
+PS
+xp
+PS
+mm
+PS
+Cp
+kj
+PS
+al
+xp
+ES
+lB
+lB
+PS
+PS
+PS
+PS
+lB
+lB
+ES
+qj
+lB
+lB
+LO
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(84,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+Mj
+dF
+dF
+dF
+dF
+Pd
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+BQ
+dF
+Gc
+PS
+PS
+PS
+dz
+dF
+Dv
+Pd
+PS
+PS
+PS
+PS
+PS
+PS
+Mj
+rW
+MH
+PS
+PS
+dt
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+MH
+PS
+PS
+eq
+xp
+dF
+Gc
+KM
+dz
+DA
+Pd
+bT
+PS
+lB
+mS
+lB
+aD
+Eo
+qj
+ES
+lB
+lB
+PS
+PS
+PS
+PS
+lB
+lB
+ES
+PS
+lB
+lB
+xp
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(85,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+ly
+dF
+Pd
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+bE
+PS
+PS
+PS
+PS
+PS
+Eo
+PS
+PS
+bE
+MH
+PS
+PS
+Ni
+EF
+EF
+EF
+PS
+PS
+PS
+EF
+EF
+EF
+Sm
+PS
+PS
+eq
+bE
+PS
+PS
+mm
+PS
+PV
+PS
+nA
+PS
+lB
+lB
+lB
+Eo
+Eo
+de
+ES
+lB
+lB
+PS
+PS
+PS
+PS
+lB
+lB
+ES
+PS
+lB
+ac
+LO
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(86,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+ly
+Pd
+PS
+PS
+Eo
+Eo
+PS
+PS
+PS
+Eo
+PS
+PS
+PS
+Eo
+PS
+PS
+PS
+Eo
+Eo
+Eo
+KM
+MH
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+mm
+PS
+eq
+de
+PS
+nD
+PS
+PS
+Eo
+Eo
+PS
+al
+lB
+lB
+lB
+Eo
+Eo
+XP
+ES
+lB
+lB
+PS
+PS
+PS
+PS
+lB
+lB
+ES
+PS
+lB
+lB
+xp
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(87,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+ly
+Pd
+zY
+PS
+Eo
+Eo
+Eo
+Eo
+GV
+PS
+Eo
+PS
+GV
+PS
+Eo
+Eo
+PS
+PS
+PS
+PS
+PS
+GV
+us
+FZ
+FZ
+FZ
+FZ
+FZ
+FZ
+PS
+mm
+PS
+FZ
+FZ
+FZ
+FZ
+FZ
+FZ
+Ul
+GV
+PS
+PS
+em
+nA
+Eo
+Eo
+mm
+PS
+PS
+mm
+PS
+wR
+nA
+xp
+ES
+lB
+lB
+PS
+PS
+PS
+PS
+lB
+lB
+ES
+XP
+lB
+lB
+LO
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(88,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+xp
+PS
+PS
+PS
+PS
+GV
+PS
+PS
+xp
+PS
+Eo
+Eo
+Mj
+ML
+PS
+PS
+PS
+PS
+PS
+ly
+dF
+UF
+DA
+dF
+dF
+dF
+cU
+Gc
+KM
+dz
+cU
+Gc
+KM
+dz
+cU
+dF
+dF
+dF
+cU
+UF
+DA
+dF
+dF
+ML
+YV
+Eo
+Eo
+GV
+PS
+PS
+Cp
+al
+ly
+rW
+ES
+ES
+UA
+lB
+lB
+lB
+lB
+UA
+ES
+ES
+BQ
+dF
+dF
+Pd
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(89,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+ly
+dF
+dF
+dF
+rW
+PS
+PS
+PS
+ly
+UF
+cU
+dF
+rW
+PS
+PS
+Eo
+Eo
+Mj
+cU
+Gc
+KM
+dz
+cU
+Pd
+PS
+Eo
+Eo
+Eo
+PS
+PS
+xp
+PS
+PS
+PS
+xp
+PS
+PS
+PS
+xp
+AC
+AC
+AC
+xp
+PS
+Eo
+Eo
+PS
+xp
+PS
+Sj
+et
+BQ
+dF
+dF
+dF
+dF
+UF
+rW
+PS
+ES
+lB
+lB
+lB
+lB
+lB
+lB
+ES
+PS
+LO
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(90,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+ly
+Pd
+zY
+Eo
+PS
+bE
+KM
+dz
+cU
+Pd
+PS
+bE
+PS
+Mj
+ML
+PS
+PS
+PS
+be
+xp
+PS
+PS
+kU
+xp
+PS
+Eo
+Eo
+PS
+PS
+PS
+PS
+xp
+PS
+ES
+ES
+xp
+PS
+ES
+ES
+xp
+AC
+AC
+AC
+LO
+Ca
+PS
+Eo
+PS
+xp
+bT
+nD
+Eo
+GZ
+AC
+AC
+AC
+AC
+AC
+xp
+Eo
+ES
+ES
+ES
+ES
+ES
+ES
+ES
+ES
+Eo
+xp
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(91,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+xp
+PS
+Eo
+Eo
+Eo
+Eo
+PS
+fH
+xp
+JV
+Eo
+Eo
+PS
+PS
+BQ
+dF
+dF
+dF
+dF
+Pd
+PS
+Eo
+PS
+bE
+PS
+PS
+PS
+PS
+Eo
+ly
+dF
+Pd
+PS
+ES
+ES
+LO
+PS
+ES
+ES
+Mj
+dF
+ML
+AC
+xp
+PS
+PS
+Eo
+PS
+bE
+PS
+PS
+kj
+BQ
+dF
+dF
+ML
+AC
+AC
+LO
+PS
+PS
+Eo
+PS
+Eo
+PS
+Eo
+PS
+Eo
+PS
+LO
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(92,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+LO
+PS
+PS
+PS
+PS
+PS
+Eo
+PS
+LO
+Eo
+bB
+Eo
+ff
+PS
+bE
+PS
+PS
+PS
+PS
+PS
+PS
+Eo
+PS
+PS
+PS
+PS
+PS
+ly
+dF
+rW
+Ca
+PS
+PS
+ES
+ES
+xp
+PS
+ES
+ES
+ES
+fa
+LO
+AC
+Mj
+ML
+PS
+PS
+PS
+KM
+PS
+PS
+PS
+bE
+PS
+Eo
+Mj
+ML
+AC
+Mj
+dF
+ML
+Oe
+GV
+Oe
+GV
+Oe
+GV
+Oe
+ly
+Pd
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(93,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+xp
+PS
+yT
+PS
+ab
+PS
+Eo
+Ca
+xp
+UA
+Px
+vx
+PS
+PS
+FL
+PS
+dz
+dF
+dF
+AA
+Eo
+PS
+PS
+dz
+dF
+dF
+dF
+Pd
+AG
+xp
+PS
+ES
+ES
+ES
+ES
+LO
+PS
+ES
+ES
+ES
+ES
+xp
+AC
+AC
+xp
+PS
+PS
+PS
+GV
+PS
+Eo
+Eo
+KM
+PS
+Eo
+Eo
+LO
+AC
+AC
+AC
+Mj
+dF
+UF
+dF
+UF
+dF
+UF
+dF
+Pd
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(94,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+LO
+PS
+PS
+PS
+PS
+PS
+PS
+PS
+LO
+PS
+PS
+PS
+PS
+Eo
+GV
+mU
+PS
+PS
+PS
+xp
+Eo
+Eo
+PS
+KM
+ES
+lB
+ES
+bE
+ES
+LO
+Ca
+ES
+ES
+ES
+ES
+xp
+PS
+ES
+ES
+ES
+Ez
+LO
+AC
+AC
+LO
+PS
+Ca
+PS
+xp
+nD
+Eo
+ly
+Gc
+PS
+PS
+Eo
+xp
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(95,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+xp
+PS
+Eo
+Eo
+Eo
+Eo
+Eo
+Ca
+xp
+Ca
+PS
+Eo
+Eo
+Eo
+BQ
+dF
+dF
+dF
+dF
+ML
+PS
+Eo
+PS
+GV
+lB
+ES
+lB
+ES
+lB
+xp
+PS
+ES
+ES
+ES
+ES
+LO
+PS
+ES
+ES
+ES
+ES
+xp
+AC
+AC
+Mj
+dF
+dF
+dF
+UF
+dF
+dF
+rW
+PS
+Eo
+Eo
+PS
+Mj
+ML
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(96,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Mj
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+UF
+ML
+PS
+XP
+Eo
+ly
+Pd
+AC
+AC
+AC
+AC
+xp
+PS
+PS
+PS
+xp
+ES
+lB
+ES
+lB
+Nc
+xp
+ni
+ES
+ES
+ES
+ES
+xp
+PS
+PS
+PS
+PS
+Ca
+LO
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+LO
+Eo
+Eo
+PS
+PS
+PS
+xp
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(97,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Mj
+dF
+UF
+dF
+Pd
+AC
+AC
+AC
+AC
+AC
+xp
+PS
+PS
+PS
+xp
+lB
+ES
+lB
+ES
+ly
+UF
+dF
+dF
+dF
+dF
+dF
+UF
+dF
+dF
+dF
+dF
+dF
+Pd
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Mj
+ML
+PS
+XY
+PS
+ly
+Pd
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(98,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Mj
+dF
+dF
+dF
+UF
+dF
+dF
+DA
+dF
+Pd
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Mj
+dF
+dF
+dF
+Pd
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(99,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}
+(100,1,1) = {"
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+AC
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+Lk
+"}

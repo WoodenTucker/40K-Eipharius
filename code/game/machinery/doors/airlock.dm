@@ -76,7 +76,7 @@
 	name = "Airlock"
 	icon = 'icons/obj/doors/Doorcom.dmi'
 	assembly_type = /obj/structure/door_assembly/door_assembly_com
-	req_access = list(access_heads)
+	req_one_access = list(access_heads)
 
 /obj/machinery/door/airlock/black
 	name = "Airlock"
@@ -102,7 +102,7 @@
 	name = "Arbiter"
 	icon = 'icons/obj/doors/Doorcomalt.dmi'
 	assembly_type = /obj/structure/door_assembly/door_assembly_arbiter
-	req_access = list(access_village)
+	req_one_access = list(access_village)
 
 /obj/machinery/door/airlock/security
 	name = "Airlock"
@@ -113,7 +113,7 @@
 	name = "Mechanicus Airlock"
 	icon = 'icons/obj/doors/Dooreng.dmi'
 	assembly_type = /obj/structure/door_assembly/door_assembly_eng
-	req_access = list(access_mechanicus)
+	req_one_access = list(access_mechanicus)
 
 /obj/machinery/door/airlock/medical
 	name = "Airlock"
@@ -124,7 +124,7 @@
 	name = "Airlock"
 	icon = 'icons/obj/doors/Doorviro.dmi'
 	assembly_type = /obj/structure/door_assembly/door_assembly_viro
-	req_access = list(access_village)
+	req_one_access = list(access_village)
 
 /obj/machinery/door/airlock/maintenance
 	name = "Maintenance Access"
@@ -142,7 +142,7 @@
 	icon = 'icons/obj/doors/Doorext.dmi'
 	opacity = 1
 	assembly_type = /obj/structure/door_assembly/door_assembly_ext
-	req_access = list(access_inquisition)
+	req_one_access = list(access_inquisition)
 
 /obj/machinery/door/airlock/weapon
 	name = "Airlock"
@@ -203,7 +203,7 @@
 	icon = 'icons/obj/doors/Doorfreezer.dmi'
 	opacity = 1
 	assembly_type = /obj/structure/door_assembly/door_assembly_fre
-	req_access = list(access_kitchen)
+	req_one_access = list(access_kitchen)
 
 /obj/machinery/door/airlock/hatch
 	name = "Airtight Hatch"
@@ -214,14 +214,14 @@
 
 /obj/machinery/door/airlock/hatch/chapel
 	name = "Chapel Office"
-	req_access = access_village
+	req_one_access = access_village
 
 /obj/machinery/door/airlock/hatch/simiel
 	icon = 'icons/obj/doors/Doorhatchele.dmi'
 	explosion_resistance = 20
 	opacity = 1
 	assembly_type = /obj/structure/door_assembly/door_assembly_hatch
-	req_access = list(access_inquisition)
+	req_one_access = list(access_inquisition)
 
 
 /obj/machinery/door/airlock/maintenance_hatch
@@ -251,7 +251,7 @@
 	opacity = 0
 	assembly_type = /obj/structure/door_assembly/door_assembly_com
 	glass = 1
-	req_access = list(access_captain)
+	req_one_access = list(access_captain)
 
 /obj/machinery/door/airlock/glass_command/magos
 	name = "Magos Habitatum"
@@ -262,7 +262,7 @@
 	opacity = 0
 	assembly_type = /obj/structure/door_assembly/door_assembly_com
 	glass = 1
-	req_access = list(access_magosd)
+	req_one_access = list(access_magosd)
 
 /obj/machinery/door/airlock/glass_command/commissar
 	name = "Commisarr's Den"
@@ -273,7 +273,7 @@
 	opacity = 0
 	assembly_type = /obj/structure/door_assembly/door_assembly_com
 	glass = 1
-	req_access = list(access_hos)
+	req_one_access = list(access_hos)
 
 /obj/machinery/door/airlock/glass_command/hospitaller //cant be fucked renaming it to abbess
 	name = "Hospitaller' Haven"
@@ -284,7 +284,7 @@
 	opacity = 0
 	assembly_type = /obj/structure/door_assembly/door_assembly_com
 	glass = 1
-	req_access = list(access_abbess)
+	req_one_access = list(access_abbess)
 
 /obj/machinery/door/airlock/glass_command/seneschal
 	name = "Seneschal's Study"
@@ -295,7 +295,7 @@
 	opacity = 0
 	assembly_type = /obj/structure/door_assembly/door_assembly_com
 	glass = 1
-	req_access = list(access_hop)
+	req_one_access = list(access_hop)
 /obj/machinery/door/airlock/glass_black
 	name = "Glass Airlock"
 	icon = 'icons/obj/doors/doorblackglass.dmi'
@@ -355,7 +355,7 @@
 	opacity = 0
 	assembly_type = /obj/structure/door_assembly/door_assembly_cone
 	glass = 1
-	req_access = list(access_village)
+	req_one_access = list(access_village)
 
 /obj/machinery/door/airlock/glass_weap
 	name = "Glass Airlock"
@@ -436,7 +436,7 @@
 	opacity = 0
 	assembly_type = /obj/structure/door_assembly/door_assembly_viro
 	glass = 1
-	req_access = list(access_village)
+	req_one_access = list(access_village)
 
 /obj/machinery/door/airlock/glass_weap
 	name = "Glass Airlock"
@@ -544,7 +544,7 @@
 	name = "Tau Airlock"
 	icon = 'icons/obj/doors/Doorgold.dmi'
 	mineral = "gold"
-	req_access = list(access_tau)
+	req_one_access = list(access_tau)
 
 /obj/machinery/door/airlock/silver
 	name = "Silver Airlock"
@@ -631,7 +631,7 @@
 	explosion_resistance = 20
 	secured_wires = 1
 	assembly_type = /obj/structure/door_assembly/door_assembly_highsecurity
-	req_access = list(access_hos, access_guard_common)
+	req_one_access = list(access_hos, access_guard_common)
 
 /obj/machinery/door/airlock/highsecurity/bolted
 
@@ -641,11 +641,11 @@
 /obj/machinery/door/airlock/highsecurity/lord
 	name = "Thy Lord's Secure Vault"
 	maxhealth = 5000
-	req_access = list(331)
+	req_one_access = list(331)
 
 /obj/machinery/door/airlock/highsecurity/guardarmory
 	name = "Armory"
-	req_access = list()
+	req_one_access = list()
 	req_one_access = list(access_hos, access_guard_armory)
 
 /obj/machinery/door/airlock/highsecurity/guardarmory/bolted  //Not 100% sure if this is redundant.
@@ -662,12 +662,12 @@
 	name = "Imperialis Doorway"
 	desc = "A reinforced monstrous door with an ornate archway. It is made of gothic stone, copper mechanations, and human bones. It proudly displays the Imperium's iconography on its front and is lathered in holy Mechanicus oils, it also smells of pure Ecclesiarchal incense."
 	icon = 'icons/obj/doors/imperiumdoor.dmi'
-	req_access = newlist()
+	req_one_access = newlist()
 
 /obj/machinery/door/airlock/highsecurity/imperiumdoor/armamentarium
 	name = "Imperialis Doorway - Armamentarium"
 	locked = 1
-	req_access = list(213)
+	req_one_access = list(213)
 
 /obj/machinery/door/airlock/highsecurity/imperiumdoor/armamentarium/attackby(obj/item/W, mob/user)
 	if(istype(W, /obj/item/staff/ministorumstaff))
@@ -1471,7 +1471,7 @@ About the new airlock wires panel:
 			req_one_access = src.electronics.conf_access
 		else
 			req_one_access.Cut()
-			req_access = src.electronics.conf_access
+			req_one_access = src.electronics.conf_access
 
 		//get the name from the assembly
 		if(assembly.created_name)

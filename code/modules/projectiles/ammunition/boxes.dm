@@ -529,6 +529,18 @@
 	desc = "An ancient design for loading galvanic rifles. This one seems to have stun rounds loaded."
 	ammo_type = /obj/item/ammo_casing/galvanic/pain
 
+
+/obj/item/ammo_magazine/pulsemag
+	name = "Pulse Matter Cartridge"
+	icon_state = "tinyersatz"
+	origin_tech = list(TECH_COMBAT = 3)
+	mag_type = MAGAZINE
+	caliber = "pmag"
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	ammo_type = /obj/item/ammo_casing/pmag
+	max_ammo = 37
+	multiple_sprites = 1
+
 /obj/item/ammo_magazine/radcarbine
 	name = "Radcarbine Magazine"
 	icon_state = "LMG-mag"

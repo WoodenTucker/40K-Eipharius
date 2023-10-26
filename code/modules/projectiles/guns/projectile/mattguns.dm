@@ -1412,3 +1412,43 @@
 		icon_state = "teslar"
 	else
 		icon_state = "teslar0"
+
+/obj/item/gun/projectile/automatic/gaussrifle
+	name = "Gauss Rifle"
+	desc = "A strange alien weapon which hums with resonant frequencies alien to mankind."
+	icon = 'icons/map_project/port/ds13.dmi'
+	icon_state = "pulserifle"
+	item_state = "pulserifle"
+	wielded_item_state = "pulserifle-wielded"
+	fire_sound = 'sound/weapons/ds/pulse_shot.ogg'
+	loaded_icon = "pulserifle"
+	unwielded_loaded_icon = "pulserifle"
+	wielded_loaded_icon = "pulserifle-wielded"
+	unloaded_icon = "teslar0"
+	unwielded_unloaded_icon = "pulserifle"
+	wielded_unloaded_icon = "pulserifle-wielded"
+	caliber = "pmag"
+	max_shells = 37
+	str_requirement = 10
+	one_hand_penalty = 3.5
+	accuracy = 0.5 //Good gun, well maintained by the Mechanicus
+	fire_delay = 1.5
+	slot_flags = SLOT_BELT|SLOT_S_STORE
+	magazine_type = /obj/item/ammo_magazine/pulsemag
+	allowed_magazines = list(/obj/item/ammo_magazine/pulsemag)
+	w_class = ITEM_SIZE_HUGE
+
+	firemodes = list(
+		list(mode_name="semi-automatic", burst=1, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="5-round bursts", burst=5, fire_delay=4.5, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
+		)
+
+/obj/item/gun/projectile/automatic/gaussrifle/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.15 // Back and wear slowdown is higher due to Xenos tech not being designed for human bodies.
+	slowdown_per_slot[slot_wear_suit] = 0.25
+	slowdown_per_slot[slot_belt] = 0.25
+	slowdown_per_slot[slot_r_hand] = 0.4
+	slowdown_per_slot[slot_l_hand] = 0.4
+
+
