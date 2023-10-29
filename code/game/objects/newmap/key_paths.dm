@@ -511,7 +511,7 @@ DOORS HERE
 	icon_state = "door1"
 	autoclose = 0
 	normalspeed = 0
-	req_access = list(access_inn1) //so innkeeper always can get in if needed
+	req_one_access = list(access_inn1) //so innkeeper always can get in if needed
 
 ///// HAB 1 /////
 
@@ -521,58 +521,58 @@ DOORS HERE
 	icon_state = "door1"
 	autoclose = 0
 	normalspeed = 0
-	req_access = list(access_hab1_1)
+	req_one_access = list(access_hab1_1)
 	maxhealth = 800
 
 /obj/machinery/door/unpowered/newmap/hab1/room2
 	name = "Hab 1 - Room 2"
 	maxhealth = 800
-	req_access = list(access_hab1_2)
+	req_one_access = list(access_hab1_2)
 
 /obj/machinery/door/unpowered/newmap/hab1/room3
 	name = "Hab 1 - Room 3"
 	maxhealth = 800
-	req_access = list(access_hab1_3)
+	req_one_access = list(access_hab1_3)
 
 /obj/machinery/door/unpowered/newmap/hab1/room4
 	name = "Hab 1 - Room 4"
 	maxhealth = 800
-	req_access = list(access_hab1_4)
+	req_one_access = list(access_hab1_4)
 
 /obj/machinery/door/unpowered/newmap/hab1/room5
 	name = "Hab 1 - Room 5"
 	maxhealth = 800
-	req_access = list(access_hab1_5)
+	req_one_access = list(access_hab1_5)
 
 /obj/machinery/door/unpowered/newmap/hab1/room6
 	name = "Hab 1 - Room 6"
 	maxhealth = 800
-	req_access = list(access_hab1_6)
+	req_one_access = list(access_hab1_6)
 
 /obj/machinery/door/unpowered/newmap/hab1/room7
 	name = "Hab 1 - Room 7"
 	maxhealth = 800
-	req_access = list(access_hab1_7)
+	req_one_access = list(access_hab1_7)
 
 /obj/machinery/door/unpowered/newmap/hab1/room8
 	name = "Hab 1 - Room 8"
 	maxhealth = 800
-	req_access = list(access_hab1_8)
+	req_one_access = list(access_hab1_8)
 
 /obj/machinery/door/unpowered/newmap/hab1/room9
 	name = "Hab 1 - Room 9"
 	maxhealth = 800
-	req_access = list(access_hab1_9)
+	req_one_access = list(access_hab1_9)
 
 /obj/machinery/door/unpowered/newmap/hab1/room10
 	name = "Hab 1 - Room 10"
 	maxhealth = 800
-	req_access = list(access_hab1_10)
+	req_one_access = list(access_hab1_10)
 
 /obj/machinery/door/unpowered/newmap/hab1/room11
 	name = "Hab 1 - Room 11"
 	maxhealth = 800
-	req_access = list(access_hab1_11)
+	req_one_access = list(access_hab1_11)
 
 /////  HAB 2 /////
 
@@ -582,48 +582,48 @@ DOORS HERE
 	icon_state = "door1"
 	autoclose = 0
 	normalspeed = 0
-	req_access = list(access_tavroom1)
+	req_one_access = list(access_tavroom1)
 	maxhealth = 900
 
 /obj/machinery/door/unpowered/newmap/hab2/room2
 	name = "Hab 2 - Room 2"
 	maxhealth = 800
-	req_access = list(access_hab1_2)
+	req_one_access = list(access_hab1_2)
 
 /obj/machinery/door/unpowered/newmap/hab2/room3
 	name = "Hab 2 - Room 3"
 	maxhealth = 800
-	req_access = list(access_hab1_3)
+	req_one_access = list(access_hab1_3)
 
 /obj/machinery/door/unpowered/newmap/hab2/room4
 	name = "Hab 2 - Room 4"
 	maxhealth = 800
-	req_access = list(access_hab1_4)
+	req_one_access = list(access_hab1_4)
 
 /obj/machinery/door/unpowered/newmap/hab2/room5
 	name = "Hab 2 - Room 5"
 	maxhealth = 800
-	req_access = list(access_hab1_5)
+	req_one_access = list(access_hab1_5)
 
 /obj/machinery/door/unpowered/newmap/hab2/room6
 	name = "Hab 2 - Room 6"
 	maxhealth = 800
-	req_access = list(access_hab1_6)
+	req_one_access = list(access_hab1_6)
 
 /obj/machinery/door/unpowered/newmap/hab2/room7
 	name = "Hab 2 - Room 7"
 	maxhealth = 800
-	req_access = list(access_hab1_7)
+	req_one_access = list(access_hab1_7)
 
 /obj/machinery/door/unpowered/newmap/hab2/room8
 	name = "Hab 2 - Room 8"
 	maxhealth = 800
-	req_access = list(access_hab1_8)
+	req_one_access = list(access_hab1_8)
 
 /obj/machinery/door/unpowered/newmap/hab2/room9
 	name = "Hab 2 - Room 9"
 	maxhealth = 800
-	req_access = list(access_hab1_9)
+	req_one_access = list(access_hab1_9)
 
 
 /////  INN /////
@@ -635,53 +635,53 @@ DOORS HERE
 	icon_state = "door1"
 	autoclose = 0
 	normalspeed = 0
-	req_access = list(access_tavroom1)
+	req_one_access = list(access_tavroom1)
 	maxhealth = 900
 
 /obj/machinery/door/unpowered/newmap/inn/room2
 	name = "Room 2"
 	maxhealth = 800
-	req_access = list(access_tavroom2)
+	req_one_access = list(access_tavroom2)
 
 /obj/machinery/door/unpowered/newmap/inn/room3
 	name = "Room 3"
 	maxhealth = 800
-	req_access = list(access_tavroom3)
+	req_one_access = list(access_tavroom3)
 
 /obj/machinery/door/unpowered/newmap/inn/room4
 	name = "Room 4"
 	maxhealth = 800
-	req_access = list(access_tavroom4)
+	req_one_access = list(access_tavroom4)
 
 /obj/machinery/door/unpowered/newmap/inn/room5
 	name = "Room 5"
 	maxhealth = 800
-	req_access = list(access_tavroom5)
+	req_one_access = list(access_tavroom5)
 
 /obj/machinery/door/unpowered/newmap/inn/room6
 	name = "Room 6"
 	maxhealth = 800
-	req_access = list(access_tavroom6)
+	req_one_access = list(access_tavroom6)
 
 /obj/machinery/door/unpowered/newmap/inn/room7
 	name = "Room 7"
 	maxhealth = 800
-	req_access = list(access_tavroom7)
+	req_one_access = list(access_tavroom7)
 
 /obj/machinery/door/unpowered/newmap/inn/room8
 	name = "Room 8"
 	maxhealth = 800
-	req_access = list(access_tavroom8)
+	req_one_access = list(access_tavroom8)
 
 /obj/machinery/door/unpowered/newmap/inn/room9
 	name = "Room 9"
 	maxhealth = 800
-	req_access = list(access_tavroom9)
+	req_one_access = list(access_tavroom9)
 
 /obj/machinery/door/unpowered/newmap/inn/room10
 	name = "Room 10"
 	maxhealth = 800
-	req_access = list(access_tavroom10)
+	req_one_access = list(access_tavroom10)
 
 /obj/machinery/door/unpowered/newmap/inn/luxury_room
 	name = "Luxury Room"
@@ -690,7 +690,7 @@ DOORS HERE
 	autoclose = 0
 	normalspeed = 0
 	maxhealth = 1500
-	req_access = list(access_tavroom11)
+	req_one_access = list(access_tavroom11)
 
 ///// MANOR DOORS /////
 
@@ -701,22 +701,22 @@ DOORS HERE
 	autoclose = 0
 	normalspeed = 0
 	maxhealth = 2000
-	req_access = list(access_manor_guest1)
+	req_one_access = list(access_manor_guest1)
 
 /obj/machinery/door/unpowered/newmap/manor/room2
 	name = "Guest Room 2"
 	maxhealth = 2000
-	req_access = list(access_manor_guest2)
+	req_one_access = list(access_manor_guest2)
 
 /obj/machinery/door/unpowered/newmap/manor/room3
 	name = "Guest Room 3"
 	maxhealth = 2000
-	req_access = list(access_manor_guest3)
+	req_one_access = list(access_manor_guest3)
 
 /obj/machinery/door/unpowered/newmap/manor/room4
 	name = "Guest Room 4"
 	maxhealth = 2000
-	req_access = list(access_manor_guest4)
+	req_one_access = list(access_manor_guest4)
 
 /////  IMPERIAL HOUSES   /////
 
@@ -727,37 +727,37 @@ DOORS HERE
 	autoclose = 0
 	normalspeed = 0
 	maxhealth = 2000
-	req_access = list(access_imphouse_1)
+	req_one_access = list(access_imphouse_1)
 
 /obj/machinery/door/unpowered/newmap/imperial_house/house2
 	name = "Imperial House 2"
 	maxhealth = 2000
-	req_access = list(access_imphouse_2)
+	req_one_access = list(access_imphouse_2)
 
 /obj/machinery/door/unpowered/newmap/imperial_house/house3
 	name = "Imperial House 3"
 	maxhealth = 2000
-	req_access = list(access_imphouse_3)
+	req_one_access = list(access_imphouse_3)
 
 /obj/machinery/door/unpowered/newmap/imperial_house/house4
 	name = "Imperial House 4"
 	maxhealth = 2000
-	req_access = list(access_imphouse_4)
+	req_one_access = list(access_imphouse_4)
 
 /obj/machinery/door/unpowered/newmap/imperial_house/house5
 	name = "Imperial House 5"
 	maxhealth = 2000
-	req_access = list(access_imphouse_5)
+	req_one_access = list(access_imphouse_5)
 
 /obj/machinery/door/unpowered/newmap/imperial_house/house6
 	name = "Imperial House 6"
 	maxhealth = 2000
-	req_access = list(access_imphouse_6)
+	req_one_access = list(access_imphouse_6)
 
 /obj/machinery/door/unpowered/newmap/imperial_house/house7
 	name = "Imperial House 7"
 	maxhealth = 2000
-	req_access = list(access_imphouse_7)
+	req_one_access = list(access_imphouse_7)
 
 /////  MISC DOORS /////
 
@@ -768,5 +768,5 @@ DOORS HERE
 	autoclose = 0
 	normalspeed = 0
 	maxhealth = 1500
-	req_access = list(access_kasrkin)
+	req_one_access = list(access_kasrkin)
 

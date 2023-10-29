@@ -23,6 +23,30 @@
 	name = "Shuttle Control Console"
 	shuttle_tag = "Inquisition"
 
+//
+/datum/shuttle/autodock/ferry/roguet
+	name = "roguet"
+	warmup_time = 10
+	waypoint_station = "roguet_start"
+	waypoint_offsite = "roguet_end"
+	shuttle_area = /area/cadiaoutpost/oa/shuttle/roguet
+
+/obj/effect/shuttle_landmark/ferry/roguet_end
+	name = "landing pad"
+	landmark_tag = "roguet_end"
+	base_area = /area/cadiaoutpost/rtship1
+	base_turf = /turf/simulated/floor/plating
+
+/obj/effect/shuttle_landmark/ferry/roguet_start
+	name = "roguet ship"
+	landmark_tag = "roguet_start"
+	base_area = /area/cadiaoutpost/rtship2
+	base_turf = /turf/simulated/floor/plating
+
+/obj/machinery/computer/shuttle_control/ferry/roguet
+	name = "Shuttle Control Console"
+	shuttle_tag = "roguet"
+//
 
 /datum/shuttle/autodock/ferry/governor
 	name = "governor"

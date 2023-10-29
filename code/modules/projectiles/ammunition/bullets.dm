@@ -464,6 +464,14 @@
 	caliber = "galvanic"
 	projectile_type = /obj/item/projectile/bullet/rifle/galvanic/pain
 
+/obj/item/ammo_casing/pmag
+	name = "pulse casing"
+	desc = "pulse casing"
+	icon_state = "fshell"
+	spent_icon = "fshell-spent"
+	caliber = "pmag"
+	projectile_type = /obj/item/projectile/bullet/rifle/pmag
+
 /obj/item/ammo_casing/radcarbine
 	name = "radcarbine casings"
 	desc = "A radcarbine casing"

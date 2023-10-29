@@ -28,7 +28,7 @@
 	/datum/job/engineer,
 	/datum/job/techmenial,
 	/datum/job/deacon,
-	/datum/job/cmo,
+//	/datum/job/cmo,
 	/datum/job/sistersuperior,
 	/datum/job/hospitaller,
 	/datum/job/marshal,

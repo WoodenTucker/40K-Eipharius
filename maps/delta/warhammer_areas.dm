@@ -367,6 +367,21 @@ Area basic template
 
 // SPACE STUFF
 
+/area/cadiaoutpost/rtship1
+	name = "RT"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+
+/area/cadiaoutpost/rtship2
+	name = "RT"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+
+
 /area/cadiaoutpost/govship1
 	name = "Govna"
 	icon_state = "forwardpost"
@@ -386,7 +401,7 @@ Area basic template
 	icon_state = "forwardpost"
 	requires_power = FALSE
 	dynamic_lighting = 1
-	music = 'sound/newmusic/Lab_Experiment.ogg'
+	music = 'sound/newmusic/General_Ambient2.ogg' // located in city
 
 /area/cadiaoutpost/magosship2
 	name = "Magussy"
@@ -409,7 +424,21 @@ Area basic template
 //////////////////////////////////////
 
 /area/cadiaoutpost/oa/dungeon1
-	name = "Necron Tomb"
+	name = "Necron Tomb P1"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/Caves_Terror.ogg'
+
+/area/cadiaoutpost/oa/dungeon2
+	name = "Necron Tomb P2 Lower Floor"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/lovecraft2.ogg'
+
+/area/cadiaoutpost/oa/dungeon3
+	name = "Necron Tomb P2 Upper Floor"
 	icon_state = "forwardpost"
 	requires_power = FALSE
 	dynamic_lighting = 1
@@ -420,7 +449,7 @@ Area basic template
 	icon_state = "forwardpost"
 	requires_power = FALSE
 	dynamic_lighting = 1
-	music = 'sound/newmusic/Caves_Terror.ogg'
+	music = 'sound/newmusic/lovecraft1.ogg'
 
 /area/cadiaoutpost/oa/theforest
 	name = "The Forest"
@@ -428,16 +457,6 @@ Area basic template
 	requires_power = TRUE
 	dynamic_lighting = 1
 	music = 'sound/newmusic/Caves_Terror.ogg'
-
-/area/cadiaoutpost/oa/dungeon1/Entered(mob/living/L,  atom/A)
-	. = ..()
-	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/dungeon1))//Doesn't work but this does stop the lag.
-		L.overlay_fullscreen("snowfall_heavy_old", /obj/screen/fullscreen/fallout)
-
-/area/cadiaoutpost/oa/dungeon1/Exited(mob/living/L, area/A)
-	. = ..()
-	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/dungeon1))
-		L.clear_fullscreen("snowfall_heavy_old")
 
 /area/cadiaoutpost/oa/theforest/Entered(mob/living/L,  atom/A)
 	. = ..()
@@ -973,7 +992,7 @@ Area basic template
 /area/cadiaoutpost/oa/supply/offices/roguetrader
 	name = "Rogue Trader's Office"
 	icon_state = "rt"
-	music = 'sound/newmusic/Hab.ogg'
+	music = 'sound/newmusic/Inn_Ambient.ogg'
 	requires_power = FALSE
 
 /area/cadiaoutpost/oa/supply
@@ -1697,6 +1716,12 @@ Area basic template
 	requires_power = 0
 
 /area/cadiaoutpost/oa/shuttle/station2
+	name = "Station"
+	icon_state = "shuttle"
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+	requires_power = 0
+
+ /area/cadiaoutpost/oa/shuttle/roguet
 	name = "Station"
 	icon_state = "shuttle"
 	music = 'sound/newmusic/Lab_Experiment.ogg'
