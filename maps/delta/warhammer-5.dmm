@@ -394,7 +394,7 @@
 /area/cadiaoutpost/oa/krootship)
 "bu" = (
 /obj/machinery/door/airlock/arbiter{
-	req_one_access  = list();
+	req_one_access = list();
 	name = "Kroot Bridge"
 	},
 /turf/simulated/floor/tiled/dark,
@@ -429,7 +429,7 @@
 /area/cadiaoutpost/oa/krootship)
 "bz" = (
 /obj/machinery/door/airlock/arbiter{
-	req_one_access  = list();
+	req_one_access = list();
 	name = "Kroot Warsphere"
 	},
 /turf/simulated/floor/plating,
@@ -454,12 +454,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
-"bC" = (
-/obj/effect/landmark/map_data{
-	height = 5
-	},
-/turf/simulated/floor/tiled/dark,
-/area/centcom)
 "bD" = (
 /obj/effect/floor_decal/newcorner/blue/corner{
 	dir = 1
@@ -1115,7 +1109,7 @@
 /obj/machinery/door/blast/id_door/open{
 	begins_closed = 1;
 	id = "taudrop";
-	req_one_access  = list(209)
+	req_one_access = list(209)
 	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -1423,7 +1417,7 @@
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
 	name = "Black Ship Simiel's Brig";
-	req_one_access  = list(202)
+	req_one_access = list(202)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -1467,7 +1461,7 @@
 	desc = "A large, apathetic, imposing, and cold looking door. Blood stains cover the surface as do what appear to be scratch marks. Uh oh.";
 	id = null;
 	name = "Simiel's Brig";
-	req_one_access  = list(202)
+	req_one_access = list(202)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -1540,7 +1534,7 @@
 	color = "grey";
 	maxhealth = 5000;
 	name = "Assault Pod";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /obj/effect/floor_decal/turf/plating,
 /turf/space,
@@ -2001,8 +1995,8 @@
 /area/cadiaoutpost/oa/tauship)
 "jD" = (
 /obj/structure/table/rack,
-/obj/item/grenade/frag,
-/obj/item/grenade/frag,
+/obj/item/grenade/frag/high_yield,
+/obj/item/grenade/frag/high_yield,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "jE" = (
@@ -2015,7 +2009,7 @@
 	locked = 1;
 	maxhealth = 3e+007;
 	name = "Bridge - DO NOT OPEN";
-	req_one_access  = list(209,333,666,777,888,999,5,10,25,67,69,91,121,512,413);
+	req_one_access = list(209,333,666,777,888,999,5,10,25,67,69,91,121,512,413);
 	secured_wires = 1
 	},
 /turf/simulated/floor/shuttle/white,
@@ -2266,7 +2260,7 @@
 "ks" = (
 /obj/machinery/door/airlock/gold/tau{
 	name = "Battlesuit Facility";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
@@ -2799,7 +2793,7 @@
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
 	name = "Inquisitor's Quarters";
-	req_one_access  = list(302)
+	req_one_access = list(302)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -3333,7 +3327,7 @@
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
 	name = "Black Ship Simiel";
-	req_one_access  = list(202)
+	req_one_access = list(202)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -3389,7 +3383,7 @@
 /obj/machinery/door/airlock/command{
 	desc = "GET TO DAT SHUTTLE!.";
 	name = "Bloodpact Lander";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -3935,7 +3929,7 @@
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
 	name = "Black Ship Simiel's Brig";
-	req_one_access  = list(202)
+	req_one_access = list(202)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -4143,7 +4137,6 @@
 /area/centcom)
 "vc" = (
 /obj/machinery/door/airlock/ancient_ship/command{
-	req_one_access  = list();
 	req_one_access = list(202)
 	},
 /turf/simulated/floor/plating,
@@ -4324,7 +4317,7 @@
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
 	name = "Black Ship Simiel";
-	req_one_access  = list(202)
+	req_one_access = list(202)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -4619,7 +4612,7 @@
 "xT" = (
 /obj/machinery/door/airlock/gold/tau{
 	name = "Il'Emaar class airlock";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/tauship)
@@ -4888,7 +4881,7 @@
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
 	name = "Inquisitor's Quarters";
-	req_one_access  = list(302)
+	req_one_access = list(302)
 	},
 /obj/machinery/door/blast/bordergatec/closed{
 	health = 10000;
@@ -5170,7 +5163,7 @@
 	id = "taudrop";
 	pixel_x = -5;
 	pixel_y = 0;
-	req_one_access  = list(209)
+	req_one_access = list(209)
 	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -5444,7 +5437,7 @@
 "CH" = (
 /obj/machinery/door/airlock/gold/tau{
 	name = "Il'Emaar class airlock";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
@@ -5706,7 +5699,7 @@
 /obj/effect/floor_decal/turf/brick/two,
 /obj/machinery/door/airlock/multi_tile/metal/imperium{
 	name = "Minor Imperialis Doorway - Retinue";
-	req_one_access  = list(202)
+	req_one_access = list(202)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -6103,7 +6096,7 @@
 /area/cadiaoutpost/oa/krootship)
 "Gn" = (
 /obj/machinery/door/airlock/arbiter{
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -6480,7 +6473,7 @@
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
 	name = "Inquisitor's Quarters";
-	req_one_access  = list(302)
+	req_one_access = list(302)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -7114,7 +7107,6 @@
 /area/cadiaoutpost/oa/shuttle/governor)
 "Mr" = (
 /obj/machinery/door/airlock/ancient_ship/command{
-	req_one_access  = list();
 	req_one_access = list(63,10,331)
 	},
 /turf/simulated/floor/ship_floor/steel{
@@ -7297,7 +7289,7 @@
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
 	name = "Minor Imperialis Doorway - Retinue";
-	req_one_access  = list(213)
+	req_one_access = list(213)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -7470,7 +7462,7 @@
 	id = "arvusrampdoor";
 	pixel_x = -5;
 	pixel_y = 0;
-	req_one_access  = list(302)
+	req_one_access = list(302)
 	},
 /obj/structure/table/graf/reinf_table,
 /turf/simulated/floor/tiled/dark,
@@ -7671,7 +7663,7 @@
 	color = "grey";
 	maxhealth = 5000;
 	name = "Frigate Bunks";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /obj/effect/floor_decal/turf/plating,
 /turf/space,
@@ -8208,7 +8200,7 @@
 /area/cadiaoutpost/oa/shuttle/station1)
 "Td" = (
 /obj/machinery/door/airlock/ancient_ship/command{
-	req_one_access  = list();
+	req_one_access = list();
 	name = "Ancient Door"
 	},
 /turf/simulated/floor/ship_floor/steel{
@@ -8350,7 +8342,7 @@
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
 	name = "Black Ship Simiel";
-	req_one_access  = list(202)
+	req_one_access = list(202)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -8440,7 +8432,7 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Un" = (
 /obj/machinery/door/airlock/gold/tau{
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
@@ -8574,7 +8566,7 @@
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
 	name = "Black Ship Simiel";
-	req_one_access  = list(202)
+	req_one_access = list(202)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -8688,7 +8680,7 @@
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
 	name = "Black Ship Simiel";
-	req_one_access  = list(202)
+	req_one_access = list(202)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -8938,7 +8930,7 @@
 	id = "taudrop";
 	pixel_x = 5;
 	pixel_y = 0;
-	req_one_access  = list(209)
+	req_one_access = list(209)
 	},
 /turf/simulated/shuttle/wall{
 	color = "grey";
@@ -8989,7 +8981,7 @@
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
 	name = "Black Ship Simiel";
-	req_one_access  = list(202)
+	req_one_access = list(202)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -9054,7 +9046,7 @@
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
 	name = "Inquisitor's Quarters";
-	req_one_access  = list(302)
+	req_one_access = list(302)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/shuttle/inquisition)
@@ -9290,7 +9282,7 @@
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
 	name = "Black Ship Simiel's Brig";
-	req_one_access  = list(202)
+	req_one_access = list(202)
 	},
 /turf/simulated/floor/asteroid/air,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -48719,7 +48711,7 @@ qh
 tu
 NL
 RG
-bC
+RG
 RG
 RG
 YE

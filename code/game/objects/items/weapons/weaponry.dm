@@ -37,16 +37,6 @@
 		M.visible_message("<span class='notice'>\The [user] waves \the [src] over \the [M]'s head.</span>")
 		cult.offer_uncult(M)
 		return
-
-	if (istype(M, /mob/living/simple_animal/hostile/smalldemon))
-		M.gib()
-		to_chat(user, "<span class='danger'>You banish the Daemon!</span>")
-		return
-
-	if (istype(M, /mob/living/simple_animal/playerdaemonhost))
-		M.gib()
-		to_chat(user, "<span class='danger'>You banish the Daemon!</span>")
-		return
 	..()
 
 /obj/item/nullrod/afterattack(var/atom/A, var/mob/user, var/proximity)

@@ -601,7 +601,6 @@
 "aJh" = (
 /obj/structure/closet/secure_closet/medical1{
 	color = "grey";
-	req_one_access  = list();
 	req_one_access = list(10,63,211)
 	},
 /obj/item/storage/belt/medical/full,
@@ -1003,7 +1002,7 @@
 	dir = 2;
 	maxhealth = 900;
 	name = "Chemestry";
-	req_one_access  = list(211)
+	req_one_access = list(211)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
@@ -1052,7 +1051,7 @@
 "biE" = (
 /obj/machinery/door/airlock/glass_virology{
 	name = "Quarantine Area";
-	req_one_access  = list(10)
+	req_one_access = list(10)
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 8
@@ -1175,7 +1174,7 @@
 /area/cadiaoutpost/new_hive/caves)
 "bmg" = (
 /obj/structure/closet/secure_closet{
-	req_one_access  = list(2);
+	req_one_access = list(2);
 	name = "Marshall's locker"
 	},
 /obj/random/loot/goodweapon,
@@ -1412,7 +1411,7 @@
 	dir = 2;
 	maxhealth = 900;
 	name = "Medicae Secure";
-	req_one_access  = list(211)
+	req_one_access = list(211)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -1608,7 +1607,7 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "bDt" = (
 /obj/machinery/door/blast/id_door{
-	req_one_access  = list(302);
+	req_one_access = list(302);
 	name = "Secret Door";
 	id = "secretdoor2";
 	maxhealth = 9000
@@ -2864,7 +2863,7 @@
 "cRK" = (
 /obj/machinery/door/airlock/virology{
 	name = "Empty Chamber";
-	req_one_access  = list(10)
+	req_one_access = list(10)
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 8
@@ -3077,7 +3076,7 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
@@ -3176,7 +3175,7 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/recovery)
@@ -3214,7 +3213,7 @@
 /obj/effect/floor_decal/newcorner/white/solid,
 /obj/machinery/door/airlock/glass_virology{
 	name = "Quarantine Room 2";
-	req_one_access  = list(10)
+	req_one_access = list(10)
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 8
@@ -3286,7 +3285,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/secure_closet/chemical{
 	color = "grey";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /obj/effect/decal/cleanable/blood/gibs,
 /turf/simulated/floor/tiled{
@@ -3721,7 +3720,7 @@
 /area/cadiaoutpost/new_hive/caves)
 "dMe" = (
 /obj/machinery/door/airlock/vault{
-	req_one_access  = list(331);
+	req_one_access = list(331);
 	maxhealth = 3000;
 	hackProof = 1;
 	door_crush_damage = 60;
@@ -3863,7 +3862,7 @@
 /obj/machinery/button/remote/blast_door/id_scan{
 	name = "pristine ID lock";
 	id = "inq_interior";
-	req_one_access  = list(302)
+	req_one_access = list(302)
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -4310,7 +4309,6 @@
 "eoq" = (
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
 	name = "Imperialis Doorway - Sacred Altar";
-	req_one_access  = list();
 	req_one_access = list(333,213)
 	},
 /turf/simulated/floor/factory_floor,
@@ -4318,7 +4316,7 @@
 "eow" = (
 /obj/structure/closet/secure_closet/engineering_chief{
 	color = "grey";
-	req_one_access  = list(10)
+	req_one_access = list(10)
 	},
 /obj/item/stack/medical/advanced/ointment,
 /obj/item/stack/medical/advanced/bruise_pack,
@@ -4687,7 +4685,7 @@
 	dir = 2;
 	maxhealth = 900;
 	name = "Surgery Room 2";
-	req_one_access  = list(211)
+	req_one_access = list(211)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
@@ -5539,7 +5537,7 @@
 	id = "ass";
 	pixel_x = -5;
 	pixel_y = 0;
-	req_one_access  = list(302)
+	req_one_access = list(302)
 	},
 /obj/machinery/vending/security,
 /turf/simulated/floor/tiled/dark,
@@ -5672,7 +5670,7 @@
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "fwu" = (
 /obj/machinery/door/unpowered/inn/berryfarm{
-	req_one_access  = list(355);
+	req_one_access = list(355);
 	name = "Bar Storage";
 	maxhealth = 1000
 	},
@@ -5950,7 +5948,7 @@
 /obj/machinery/button/remote/blast_door/id_scan{
 	name = "pristine ID lock";
 	id = "magdoor";
-	req_one_access  = list(1984)
+	req_one_access = list(1984)
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -5996,7 +5994,6 @@
 	color = "grey";
 	maxhealth = 1500;
 	name = "Interior Clinic";
-	req_one_access  = list();
 	req_one_access = list(5,230,211)
 	},
 /turf/simulated/floor/tiled{
@@ -6926,7 +6923,7 @@
 /area/cadiaoutpost/new_hive/caves)
 "gGP" = (
 /obj/machinery/door/blast/id_door{
-	req_one_access  = list(302);
+	req_one_access = list(302);
 	name = "Bradigan's Lair";
 	id = "inqs";
 	maxhealth = 9000
@@ -7068,7 +7065,7 @@
 	dir = 2;
 	maxhealth = 900;
 	name = "Medical Storage";
-	req_one_access  = list(211)
+	req_one_access = list(211)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
@@ -7302,7 +7299,7 @@
 /obj/effect/floor_decal/newcorner/white/solid,
 /obj/machinery/door/airlock/glass_virology{
 	name = "Quarantine Room 1";
-	req_one_access  = list(10)
+	req_one_access = list(10)
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 8
@@ -7531,8 +7528,7 @@
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 900;
 	name = "Arbites Office";
-	req_one_access = list(2);
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -7672,7 +7668,7 @@
 /area/cadiaoutpost/oa/medicae)
 "hqk" = (
 /obj/machinery/door/blast/id_door{
-	req_one_access  = list(302);
+	req_one_access = list(302);
 	name = "Secret Door";
 	id = "secretdoor";
 	maxhealth = 9000
@@ -7809,7 +7805,7 @@
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /obj/machinery/computer/drone_control{
 	dronefab = "Cadia";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
@@ -8485,7 +8481,7 @@
 "icN" = (
 /obj/machinery/door/airlock/virology{
 	name = "Mines";
-	req_one_access  = list(10)
+	req_one_access = list(10)
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 4
@@ -8770,7 +8766,7 @@
 /obj/machinery/door/window/southleft{
 	name = "Relic Storage";
 	color = "grey";
-	req_one_access  = list(333)
+	req_one_access = list(333)
 	},
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -8924,7 +8920,7 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/oa/service/chapel/recovery)
@@ -9222,7 +9218,7 @@
 /obj/machinery/door/unpowered/inn/room2{
 	maxhealth = 1500;
 	name = "Pathfinder Estate";
-	req_one_access  = list(253)
+	req_one_access = list(253)
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 4
@@ -9339,7 +9335,7 @@
 /obj/machinery/door/unpowered/inn/room2{
 	maxhealth = 1500;
 	name = "Pathfinder Estate";
-	req_one_access  = list(253)
+	req_one_access = list(253)
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
@@ -9657,7 +9653,7 @@
 "jdP" = (
 /obj/machinery/door/airlock/glass_virology{
 	name = "Virology";
-	req_one_access  = list(10)
+	req_one_access = list(10)
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 8
@@ -9805,7 +9801,7 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/service/chapel/recovery)
@@ -10048,8 +10044,7 @@
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 2000;
 	name = "Magistratum Armory";
-	req_one_access = list(2,1984);
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -10264,7 +10259,7 @@
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/closet/secure_closet/engineering_chief{
 	color = "grey";
-	req_one_access  = list(10)
+	req_one_access = list(10)
 	},
 /obj/item/stack/thrones,
 /obj/item/stack/thrones,
@@ -10703,7 +10698,7 @@
 /obj/structure/closet/secure_closet/hop2{
 	color = "grey";
 	name = "Heir's attire";
-	req_one_access  = list(331)
+	req_one_access = list(331)
 	},
 /obj/item/clothing/accessory/toggleable/flannel,
 /obj/item/clothing/accessory/toggleable/checkered_jacket,
@@ -10737,10 +10732,9 @@
 /area/cadiaoutpost/oa/research/robotics)
 "kfE" = (
 /obj/machinery/door/unpowered/inn/berryfarm{
-	req_one_access  = list();
+	req_one_access = list(355,268);
 	name = "Gang Den";
-	maxhealth = 1000;
-	req_one_access = list(355,268)
+	maxhealth = 1000
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/inn)
@@ -11432,7 +11426,6 @@
 "kLq" = (
 /obj/structure/closet/secure_closet/medical1{
 	color = "grey";
-	req_one_access  = list();
 	req_one_access = list(10,63,211)
 	},
 /obj/item/storage/belt/medical/full,
@@ -11959,7 +11952,7 @@
 /obj/machinery/door/airlock/glass_command/magos{
 	color = null;
 	maxhealth = 1200;
-	req_one_access  = list(10)
+	req_one_access = list(10)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/research/robotics)
@@ -12085,7 +12078,7 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
@@ -12847,7 +12840,7 @@
 "mcb" = (
 /obj/machinery/door/airlock/virology{
 	name = "Reactor Room";
-	req_one_access  = list(10)
+	req_one_access = list(10)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -12877,8 +12870,7 @@
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 1200;
 	name = "Magistratum Cells";
-	req_one_access = list(63,331,1984,2);
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -13649,8 +13641,7 @@
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 1200;
 	name = "Magistratum Barracks";
-	req_one_access = list(63,331,1984,2);
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -13664,7 +13655,7 @@
 "mSz" = (
 /obj/machinery/door/unpowered/inn{
 	name = "Liquor Storage";
-	req_one_access  = list(331)
+	req_one_access = list(331)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/hallway/centralhall)
@@ -13719,7 +13710,7 @@
 "mUu" = (
 /obj/machinery/door/unpowered/inn{
 	name = "Servant Quarters";
-	req_one_access  = list(331)
+	req_one_access = list(331)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/hallway/centralhall)
@@ -13743,7 +13734,6 @@
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 1200;
 	name = "Magistratum Cells";
-	req_one_access  = list();
 	req_one_access = list(63,331,1984,2)
 	},
 /turf/simulated/floor/factory_floor,
@@ -14065,7 +14055,7 @@
 "non" = (
 /obj/machinery/door/airlock/virology{
 	name = "Magos Biologis Office";
-	req_one_access  = list(10)
+	req_one_access = list(10)
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 8
@@ -14531,7 +14521,7 @@
 "nGl" = (
 /obj/machinery/door/airlock/virology{
 	name = "Surgery Bay";
-	req_one_access  = list(10)
+	req_one_access = list(10)
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 8
@@ -14689,7 +14679,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /obj/machinery/computer/rdconsole/core{
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
@@ -15339,7 +15329,7 @@
 "orW" = (
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
 	name = "Imperialis Doorway - Deacon Office";
-	req_one_access  = list(333)
+	req_one_access = list(333)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -15524,7 +15514,7 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/oa/service/chapel/recovery)
@@ -15845,7 +15835,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/secure_closet/chemical{
 	color = "grey";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/tiled{
 	color = "grey";
@@ -15878,7 +15868,7 @@
 /area/cadiaoutpost/oa/magistratumpost)
 "oPk" = (
 /obj/structure/closet/secure_closet/chemical{
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -15931,7 +15921,7 @@
 "oSK" = (
 /obj/machinery/door/airlock/virology{
 	name = "Virology";
-	req_one_access  = list(10)
+	req_one_access = list(10)
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 8
@@ -16253,7 +16243,7 @@
 	dir = 2;
 	maxhealth = 900;
 	name = "Surgery Room 1";
-	req_one_access  = list(211)
+	req_one_access = list(211)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
@@ -16349,7 +16339,7 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/oa/service/chapel/recovery)
@@ -16393,7 +16383,7 @@
 "pqM" = (
 /obj/structure/closet/secure_closet/hos{
 	color = "grey";
-	req_one_access  = list(67)
+	req_one_access = list(67)
 	},
 /obj/item/device/megaphone,
 /obj/item/device/radio/headset/red_team/all,
@@ -16854,7 +16844,7 @@
 "pJm" = (
 /obj/structure/closet/secure_closet/virology{
 	color = "grey";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /obj/effect/floor_decal/newcorner/whitegreen/solid,
 /turf/simulated/floor/tiled{
@@ -17129,7 +17119,7 @@
 "pVT" = (
 /obj/machinery/door/airlock/virology{
 	name = "Magos Biologis Lab";
-	req_one_access  = list(10)
+	req_one_access = list(10)
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 8
@@ -17350,7 +17340,7 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 4
@@ -17415,8 +17405,7 @@
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "qmv" = (
 /obj/machinery/door/unpowered/jail_door{
-	req_one_access = list(1984);
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -17656,15 +17645,6 @@
 /obj/structure/table/graf/big_wood_table,
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/farm)
-"qyg" = (
-/obj/structure/statue/verina{
-	desc = "A polished and well maintained statue of Saint Katherine of the Order of Our Martyred Lady. The fire of spirit is a beacon of hope, a sign that even in this time of abounding horror, the Emperor has not abandoned His faithful servants.";
-	name = "Statue of Saint Katherine";
-	pixel_x = -15;
-	pixel_y = 6
-	},
-/turf/simulated/floor/stone/crafted_floor,
-/area/cadiaoutpost/oa/service/chapel/recovery)
 "qyT" = (
 /obj/effect/floor_decal/newcorner/reinforced,
 /turf/simulated/floor/tiled{
@@ -17758,7 +17738,7 @@
 "qCj" = (
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
 	name = "Imperialis Doorway - Monasterium";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -18054,7 +18034,7 @@
 /area/cadiaoutpost/oa/villageinside/lab)
 "qPn" = (
 /obj/structure/closet/secure_closet/chemical{
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /obj/effect/floor_decal/newcorner/blue/solid,
 /turf/simulated/floor/tiled{
@@ -18557,7 +18537,7 @@
 /obj/machinery/button/remote/blast_door/id_scan{
 	name = "pristine ID lock";
 	id = "inq_interior";
-	req_one_access  = list(302)
+	req_one_access = list(302)
 	},
 /obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/stone/old4,
@@ -18999,7 +18979,7 @@
 "ryM" = (
 /obj/machinery/door/unpowered/inn/berryfarm{
 	name = "Mining Hamlet";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/caves)
@@ -19171,7 +19151,7 @@
 /obj/effect/floor_decal/newcorner/white/solid,
 /obj/machinery/door/airlock/glass_virology{
 	name = "Quarantine Room 4";
-	req_one_access  = list(10)
+	req_one_access = list(10)
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 8
@@ -19243,9 +19223,8 @@
 /area/cadiaoutpost/oa/security/armory)
 "rJK" = (
 /obj/machinery/door/unpowered/inn/berryfarm{
-	req_one_access  = list();
-	name = "the farmhouse";
-	req_one_access = list(230,211)
+	req_one_access = list(230,211);
+	name = "the farmhouse"
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
@@ -19524,8 +19503,7 @@
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "sbi" = (
 /obj/machinery/door/unpowered/jail_door{
-	req_one_access = list(1984);
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 1
@@ -20119,7 +20097,7 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 1
@@ -20680,7 +20658,6 @@
 "sYd" = (
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
 	name = "Imperialis Doorway - Equipment Storage";
-	req_one_access  = list();
 	req_one_access = list(213,211)
 	},
 /turf/simulated/floor/factory_floor,
@@ -20763,7 +20740,7 @@
 	id = "inqs";
 	pixel_x = -5;
 	pixel_y = 0;
-	req_one_access  = list(302)
+	req_one_access = list(302)
 	},
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -20949,8 +20926,7 @@
 /area/cadiaoutpost/new_hive/caves)
 "tpc" = (
 /obj/machinery/door/unpowered/jail_door{
-	req_one_access = list(1984);
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 1
@@ -21087,8 +21063,7 @@
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 900;
 	name = "Marshall's Office";
-	req_one_access = list(2);
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -21118,7 +21093,7 @@
 /area/cadiaoutpost/new_hive/caves)
 "txl" = (
 /obj/machinery/door/blast/id_door{
-	req_one_access  = list(302);
+	req_one_access = list(302);
 	name = "Bradigan's Lair";
 	id = "inqs";
 	maxhealth = 9000
@@ -21163,8 +21138,7 @@
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 2000;
 	name = "Magistratum Entrace";
-	req_one_access = list(63,331,1984,2);
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -21947,7 +21921,6 @@
 "uep" = (
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
 	name = "Imperialis Doorway - Progenium";
-	req_one_access  = list();
 	req_one_access = list(213)
 	},
 /turf/simulated/floor/factory_floor,
@@ -22149,7 +22122,7 @@
 /obj/structure/closet/secure_closet/hop2{
 	color = "grey";
 	name = "Heir's attire";
-	req_one_access  = list(331)
+	req_one_access = list(331)
 	},
 /obj/random/loot/sidearmammo,
 /obj/random/loot/sidearmammo,
@@ -22195,7 +22168,7 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
@@ -22961,8 +22934,7 @@
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 1200;
 	name = "Magistratum First Aid Bay";
-	req_one_access = list(63,331,1984,2);
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -22984,9 +22956,7 @@
 /obj/item/reagent_containers/food/drinks/bottle/premiumvodka{
 	pixel_x = -8
 	},
-/turf/unsimulated/wall{
-	icon_state = "r_wall-2"
-	},
+/turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "vnW" = (
 /turf/unsimulated/miningtime,
@@ -23484,7 +23454,6 @@
 "vMy" = (
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
 	name = "Imperialis Doorway - Sacred Altar";
-	req_one_access  = list();
 	req_one_access = list(333)
 	},
 /turf/simulated/floor/factory_floor,
@@ -23535,7 +23504,7 @@
 	id = "inqs";
 	pixel_x = -5;
 	pixel_y = 0;
-	req_one_access  = list(302)
+	req_one_access = list(302)
 	},
 /turf/unsimulated/wall{
 	icon_state = "r_wall-2"
@@ -23639,7 +23608,7 @@
 /obj/effect/floor_decal/newcorner/white/solid,
 /obj/machinery/door/airlock/glass_virology{
 	name = "Quarantine Room 3";
-	req_one_access  = list(10)
+	req_one_access = list(10)
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 8
@@ -23759,14 +23728,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
-"vZu" = (
-/obj/structure/statue/verina{
-	desc = "A polished and well maintained statue of Saint Celestine of the Order of Our Martyred Lady. Despair, and you give yourself to the shadows. Believe, truly believe in the Emperor of Mankind, and you shall walk in His light no matter how dark the path you tread.";
-	name = "Statue of Saint Celestine";
-	pixel_x = -15
-	},
-/turf/simulated/floor/stone/crafted_floor,
-/area/cadiaoutpost/oa/service/chapel/recovery)
 "vZz" = (
 /obj/structure/closet/secure_closet/medical2,
 /turf/simulated/floor/ceramic/surgery{
@@ -24027,7 +23988,7 @@
 /obj/machinery/button/remote/blast_door/id_scan{
 	name = "pristine ID lock";
 	id = "magdoor";
-	req_one_access  = list(1984)
+	req_one_access = list(1984)
 	},
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -24596,7 +24557,7 @@
 "wPd" = (
 /obj/structure/closet/secure_closet/guncabinet{
 	name = "secure Sororitas cabinet";
-	req_one_access  = list(213)
+	req_one_access = list(213)
 	},
 /obj/item/storage/firstaid/regular,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -24782,7 +24743,7 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -24811,7 +24772,7 @@
 "wVP" = (
 /obj/machinery/door/unpowered/inn{
 	name = "Bathroom Door";
-	req_one_access  = list(211)
+	req_one_access = list(211)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -25251,7 +25212,7 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /mob/living/simple_animal/hostile/shadow,
 /turf/simulated/floor/stone/old4,
@@ -25553,8 +25514,7 @@
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 2000;
 	name = "Magistratum Entrace";
-	req_one_access = list(63,331,1984,2);
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -25704,8 +25664,7 @@
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 1200;
 	name = "Magistratum Evidence Storage";
-	req_one_access = list(63,331,1984,2);
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -25771,7 +25730,7 @@
 	color = "grey";
 	maxhealth = 3000;
 	name = "Groomlake Facility";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
@@ -25970,7 +25929,7 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -26427,7 +26386,7 @@
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "yku" = (
 /obj/machinery/door/blast/id_door{
-	req_one_access  = list(302);
+	req_one_access = list(302);
 	name = "Bradigan's Lair";
 	id = "inq_interior";
 	maxhealth = 9000
@@ -45242,9 +45201,9 @@ bum
 bNq
 dhr
 liM
-oSs
-htc
-oSs
+rvv
+rvv
+rvv
 liM
 wjB
 djP
@@ -45494,9 +45453,9 @@ dbZ
 bNq
 dhr
 liM
-qyg
-jHR
-vZu
+rvv
+rvv
+rvv
 liM
 bNq
 vgc
@@ -45746,9 +45705,9 @@ fCV
 bNq
 yfH
 liM
-xho
-oUo
-xho
+rvv
+rvv
+rvv
 liM
 bNq
 nSV

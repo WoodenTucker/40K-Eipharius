@@ -415,8 +415,8 @@ datum/job/ig/bullgryn
 	title = "Kasrkin"
 	supervisors = "The Governor and The Inquisition."
 	department_flag = SEC|INQ
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	head_position = 1
 	selection_color = "#23742a"
 	department_flag = SEC|COM
