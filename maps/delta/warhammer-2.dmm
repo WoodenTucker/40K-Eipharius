@@ -988,14 +988,6 @@
 /obj/random/loot/sidearmammo,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/new_hive/caves)
-"bcD" = (
-/obj/machinery/shower{
-	dir = 8;
-	icon_state = "shower"
-	},
-/obj/item/reagent_containers/food/snacks/poo,
-/turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/oa/security/armory)
 "bdu" = (
 /obj/machinery/door/airlock/glass_medical{
 	color = null;
@@ -8751,6 +8743,8 @@
 /area/cadiaoutpost/oa/caves/dark)
 "inX" = (
 /obj/structure/table/graf/polished_steel,
+/obj/item/handcuffs,
+/obj/item/gun/energy/taser,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "inY" = (
@@ -9079,13 +9073,6 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
-"iDN" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/obj/item/reagent_containers/food/snacks/poo,
-/turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/oa/security/armory)
 "iDU" = (
 /obj/machinery/vending/engineering,
@@ -15201,6 +15188,22 @@
 	icon_state = "spline_plain"
 	},
 /obj/structure/table/rack/dark,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -18669,17 +18672,6 @@
 /obj/machinery/microscope,
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/caves/dark)
-"rnF" = (
-/obj/structure/sink{
-	dir = 4;
-	pixel_x = 12
-	},
-/obj/structure/mirror{
-	pixel_x = 32
-	},
-/obj/item/reagent_containers/food/snacks/poo,
-/turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/oa/security/armory)
 "rnK" = (
 /obj/item/fluff_items/skull{
 	pixel_y = -18
@@ -25379,10 +25371,6 @@
 "xrz" = (
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/caves/dark)
-"xrI" = (
-/obj/item/reagent_containers/food/snacks/poo,
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/security/armory)
 "xrQ" = (
 /obj/structure/table/rack/dark,
 /obj/item/storage/firstaid/adv,
@@ -70232,7 +70220,7 @@ qfU
 uXs
 pqM
 cVl
-xrI
+cVl
 cVl
 rIe
 qCH
@@ -70737,7 +70725,7 @@ qfU
 qfU
 uXs
 gwz
-iDN
+hkj
 gwz
 uXs
 lSW
@@ -70988,9 +70976,9 @@ rXB
 rXB
 qfU
 uXs
-rnF
+nQo
 xsT
-bcD
+cxq
 uXs
 bfS
 njO

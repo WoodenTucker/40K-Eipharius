@@ -9239,6 +9239,14 @@
 /obj/effect/floor_decal/spline/fancy/wood/three_quarters,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"Zw" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/table/graf/reinf_table,
+/obj/item/gun/energy/taser,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "Zx" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/bookcase/manuals/medical{
@@ -31419,7 +31427,7 @@ fS
 mL
 RL
 hT
-vq
+Zw
 Hw
 vq
 wE
@@ -39968,14 +39976,14 @@ oM
 Us
 ex
 mk
-Mr
+Td
 zR
 zR
 zR
 zR
 zR
 zR
-Mr
+Td
 WM
 WM
 WM
@@ -41489,8 +41497,8 @@ BZ
 BZ
 BZ
 us
-Mr
-Mr
+Td
+Td
 eg
 Sg
 Sg
@@ -41509,8 +41517,8 @@ Sg
 Sg
 Sg
 oo
-Mr
-Mr
+Td
+Td
 us
 ax
 ax
