@@ -1985,7 +1985,8 @@
 /obj/machinery/button/remote/blast_door/id_scan{
 	name = "The Enterprise - ID lock";
 	id = "enterprise";
-	pixel_x = 32
+	pixel_x = 32;
+	req_one_access = list(225)
 	},
 /turf/simulated/shuttle/wall{
 	color = "red";
@@ -2181,6 +2182,7 @@
 	},
 /obj/item/clothing/accessory/holster/armpit,
 /obj/item/device/radio/headset/headset_cargo,
+/obj/item/card/id/key/middle/ganger,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "lo" = (
@@ -3513,10 +3515,6 @@
 	dir = 9
 	},
 /area/cadiaoutpost/oa/hallway/northern)
-"sW" = (
-/obj/machinery/door/airlock/hatch/simiel,
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/shuttle/roguet)
 "sY" = (
 /turf/simulated/floor/factory_floor{
 	dir = 4
@@ -4721,7 +4719,8 @@
 /obj/machinery/button/remote/blast_door/id_scan{
 	name = "The Enterprise - ID lock";
 	id = "enterprise";
-	pixel_x = 32
+	pixel_x = 32;
+	req_one_access = list(225)
 	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
@@ -4864,6 +4863,7 @@
 /obj/item/clothing/accessory/holster/armpit,
 /obj/item/device/radio/headset/headset_cargo,
 /obj/random/drinkbottle,
+/obj/item/card/id/key/middle/ganger,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "Ac" = (
@@ -5343,6 +5343,7 @@
 	icon_state = "wood_1tilethick";
 	dir = 4
 	},
+/obj/item/card/id/key/middle/ganger,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "CC" = (
@@ -8722,10 +8723,7 @@
 /turf/simulated/floor/fancyfloor/carpet,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "TN" = (
-/obj/machinery/door/airlock/hatch/simiel{
-	name = "Rouge Trader's Quarters";
-	req_one_access = list(225)
-	},
+/obj/machinery/door/airlock/hatch,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/shuttle/roguet)
 "TO" = (
@@ -40735,19 +40733,19 @@ Xd
 Xd
 Xd
 Xd
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
+Xd
+Xd
+Xd
+Xd
+Xd
+Xd
+Xd
+Xd
+Xd
+Xd
+Xd
+Xd
+Xd
 UB
 UB
 UB
@@ -40987,19 +40985,19 @@ Xd
 Xd
 Xd
 Xd
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
+Xd
+Xd
+Xd
+Xd
+Xd
+Xd
+Xd
+Xd
+Xd
+Xd
+Xd
+Xd
+Xd
 UB
 UB
 UB
@@ -41240,11 +41238,11 @@ Xd
 Xd
 Xd
 Xd
-UB
-UB
-UB
-UB
-UB
+Xd
+Xd
+Xd
+Xd
+Xd
 Xd
 Xd
 Xd
@@ -41492,9 +41490,9 @@ Xd
 Xd
 Xd
 Xd
-UB
-UB
-UB
+Xd
+Xd
+Xd
 Xd
 Xd
 Xd
@@ -42758,7 +42756,7 @@ Xd
 Xd
 Xd
 Xd
-PN
+Xd
 Xd
 Xd
 Xd
@@ -43010,7 +43008,7 @@ Xd
 Xd
 Xd
 Xd
-PN
+sY
 Xd
 Xd
 sY
@@ -70807,7 +70805,7 @@ cH
 OK
 EM
 SX
-sW
+TN
 Sc
 jI
 Tg

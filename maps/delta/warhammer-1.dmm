@@ -324,7 +324,7 @@
 /obj/machinery/door/airlock/arbiter{
 	color = "grey";
 	name = "Groomlake Facility";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -485,7 +485,7 @@
 "bT" = (
 /obj/structure/closet/secure_closet/security{
 	color = "grey";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /obj/item/clothing/glasses/regular/scanners{
 	color = "grey"
@@ -2651,7 +2651,7 @@
 "jH" = (
 /obj/structure/closet/secure_closet/security{
 	color = "grey";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /obj/item/clothing/glasses/regular/scanners{
 	color = "grey"
@@ -2666,7 +2666,7 @@
 	color = "grey";
 	maxhealth = 600;
 	name = "Storage";
-	req_one_access  = list(221)
+	req_one_access = list(221)
 	},
 /obj/structure/warfare/barricade/concrete_barrier{
 	color = "grey"
@@ -2741,6 +2741,10 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
+/area/cadiaoutpost/new_hive/caves)
+"jU" = (
+/obj/item/stack/material/diamond,
+/turf/unsimulated/miningtime,
 /area/cadiaoutpost/new_hive/caves)
 "jV" = (
 /turf/unsimulated/miningtime,
@@ -3325,7 +3329,7 @@
 /obj/machinery/door/airlock/glass_arbiter{
 	color = "grey";
 	name = "Security Wing";
-	req_one_access  = list(221)
+	req_one_access = list(221)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -4158,7 +4162,7 @@
 /obj/machinery/door/airlock/glass_cone{
 	color = "grey";
 	maxhealth = 600;
-	req_one_access  = list(221)
+	req_one_access = list(221)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -6164,7 +6168,7 @@
 	color = "grey";
 	maxhealth = 5000;
 	name = "Secure Armory";
-	req_one_access  = list(221,222,223)
+	req_one_access = list(221,222,223)
 	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -6359,7 +6363,7 @@
 /obj/machinery/door/airlock/arbiter{
 	color = "grey";
 	name = "Groomlake Facility";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/seolite,
@@ -6431,7 +6435,7 @@
 /obj/machinery/door/airlock/arbiter{
 	color = "grey";
 	name = "Product Storage 2";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -6484,7 +6488,7 @@
 /obj/machinery/door/airlock/arbiter{
 	color = "grey";
 	name = "Groomlake Facility";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
@@ -6813,7 +6817,7 @@
 /obj/machinery/door/airlock/arbiter{
 	color = "grey";
 	name = "Groomlake Facility";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -8022,7 +8026,7 @@
 /obj/machinery/kaos/cargo_machine{
 	color = "grey";
 	name = "Alien Terminal";
-	req_one_access  = list(400)
+	req_one_access = list(400)
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
@@ -8669,7 +8673,7 @@
 	color = "grey";
 	maxhealth = 3000;
 	name = "Groomlake Facility";
-	req_one_access  = list(221,222)
+	req_one_access = list(221,222)
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
@@ -8705,7 +8709,7 @@
 	color = "grey";
 	maxhealth = 2000;
 	name = "Viewing Chamber";
-	req_one_access  = list(221)
+	req_one_access = list(221)
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
@@ -8757,7 +8761,7 @@
 	color = "grey";
 	maxhealth = 3000;
 	name = "Groomlake Facility";
-	req_one_access  = list(221,222,223)
+	req_one_access = list(221,222,223)
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
@@ -8945,7 +8949,7 @@
 /obj/machinery/door/airlock/arbiter{
 	color = "grey";
 	name = "Product Storage 1";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
@@ -9222,7 +9226,7 @@
 	color = "grey";
 	maxhealth = 1500;
 	name = "Clinic";
-	req_one_access  = list(221)
+	req_one_access = list(221)
 	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/caves/dark)
@@ -9596,7 +9600,7 @@
 /obj/machinery/door/airlock/glass_arbiter{
 	color = "grey";
 	name = "Security Wing";
-	req_one_access  = list(221)
+	req_one_access = list(221)
 	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -9781,7 +9785,7 @@
 /area/cadiaoutpost/oa/hangarpact)
 "It" = (
 /obj/machinery/door/airlock/ancient_ship/command{
-	req_one_access  = list();
+	req_one_access = list();
 	name = "Ancient Door"
 	},
 /turf/simulated/floor/ship_floor/steel{
@@ -9974,7 +9978,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "IT" = (
 /obj/machinery/door/airlock/ancient_ship/command{
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/ship_floor/steel{
 	icon_state = "a16";
@@ -11067,7 +11071,7 @@
 /obj/machinery/kaos/cargo_machine{
 	color = "grey";
 	name = "Alien Terminal";
-	req_one_access  = list(400)
+	req_one_access = list(400)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -11089,7 +11093,7 @@
 	color = "grey";
 	maxhealth = 4000;
 	name = "Secure Storage";
-	req_one_access  = list(221,222,223)
+	req_one_access = list(221,222,223)
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
@@ -11313,7 +11317,7 @@
 	color = "grey";
 	maxhealth = 3000;
 	name = "Crucible";
-	req_one_access  = list(221,222)
+	req_one_access = list(221,222)
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
@@ -13087,9 +13091,10 @@
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "UG" = (
 /obj/machinery/door/unpowered/jail_door{
-	req_one_access  = list();
+	req_one_access = list();
 	name = "mining barracks";
-	desc = "An strong metal door."
+	desc = "An strong metal door.";
+	req_access = list()
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/caves)
@@ -13386,7 +13391,7 @@
 	color = "grey";
 	maxhealth = 4000;
 	name = "Product Storage";
-	req_one_access  = list(221,222)
+	req_one_access = list(221,222)
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
@@ -13760,7 +13765,7 @@
 /obj/machinery/door/airlock/multi_tile/metal/maintenance{
 	color = "grey";
 	maxhealth = 900;
-	req_one_access  = list(221)
+	req_one_access = list(221)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -13974,7 +13979,7 @@
 	color = "grey";
 	maxhealth = 3000;
 	name = "Groomlake Facility";
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
@@ -14335,7 +14340,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "YJ" = (
 /obj/machinery/door/airlock/ancient_ship/command/capitan{
-	req_one_access  = list()
+	req_one_access = list()
 	},
 /turf/simulated/floor/ship_floor/steel{
 	icon_state = "a16";
@@ -14387,7 +14392,7 @@
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "YR" = (
 /obj/machinery/door/airlock/ancient_ship/command{
-	req_one_access  = list();
+	req_one_access = list();
 	name = "Ancient Door"
 	},
 /mob/living/simple_animal/hostile/nurgling,
@@ -14540,7 +14545,7 @@
 /obj/machinery/door/airlock/multi_tile/metal/maintenance{
 	color = "grey";
 	maxhealth = 900;
-	req_one_access  = list(221)
+	req_one_access = list(221)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -60951,7 +60956,7 @@ hI
 hI
 hI
 hI
-hI
+jU
 hI
 hI
 hI
@@ -64245,7 +64250,7 @@ yj
 hI
 hI
 hI
-hI
+jU
 hI
 hI
 hI
@@ -69532,7 +69537,7 @@ yA
 tW
 hI
 hI
-hI
+jU
 hI
 hI
 hI
@@ -74785,7 +74790,7 @@ hI
 hI
 hI
 hI
-hI
+jU
 hI
 hI
 hI
@@ -76794,7 +76799,7 @@ hI
 hI
 hI
 hI
-hI
+jU
 hI
 tW
 yA

@@ -226,7 +226,3 @@
 /turf/space/bluespace
 	name = "bluespace"
 	icon_state = "bluespace"
-
-/turf/space/Crossed(var/mob/living/carbon/human/M)
-	if(istype(M))
-		M.gib()
