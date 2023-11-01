@@ -3119,6 +3119,13 @@
 	},
 /obj/item/storage/lockbox/vials,
 /obj/effect/floor_decal/newcorner/whitegreen/solid,
+/obj/item/storage/lockbox/vials,
+/obj/item/reagent_containers/dropper{
+	pixel_y = -10
+	},
+/obj/item/reagent_containers/dropper{
+	pixel_y = -6
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -11070,6 +11077,11 @@
 	icon_state = "warningcorner_red"
 	},
 /obj/machinery/light,
+/obj/machinery/shower{
+	dir = 4;
+	icon_state = "shower"
+	},
+/obj/effect/floor_decal/industrial/hatch/blue,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -12966,16 +12978,6 @@
 "miZ" = (
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/oa/hallway/centralhall)
-"mjh" = (
-/obj/structure/window/reinforced{
-	dir = 8;
-	icon_state = "rwindow"
-	},
-/obj/effect/floor_decal/newcorner/plating/quarter,
-/turf/simulated/floor/darkfloor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "mjH" = (
 /obj/structure/table/rack/dark,
 /obj/random/loot/goodweapon,
@@ -15596,6 +15598,10 @@
 	dir = 1;
 	icon_state = "tube1"
 	},
+/obj/machinery/shower{
+	dir = 4;
+	icon_state = "shower"
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -15783,6 +15789,11 @@
 /obj/structure/table/steel_reinforced,
 /obj/item/virusdish,
 /obj/effect/floor_decal/newcorner/whitegreen/solid,
+/obj/item/virusdish/random,
+/obj/item/virusdish/random,
+/obj/item/virusdish/random,
+/obj/item/virusdish/random,
+/obj/item/virusdish/random,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -16777,11 +16788,12 @@
 /obj/effect/floor_decal/industrial/warning_red{
 	icon_state = "warningcorner_red"
 	},
-/obj/structure/window/reinforced{
-	dir = 8;
-	icon_state = "rwindow"
-	},
 /obj/machinery/light,
+/obj/machinery/shower{
+	dir = 4;
+	icon_state = "shower"
+	},
+/obj/effect/floor_decal/industrial/hatch/blue,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -20387,6 +20399,10 @@
 /obj/machinery/light{
 	dir = 1;
 	icon_state = "tube1"
+	},
+/obj/machinery/shower{
+	dir = 4;
+	icon_state = "shower"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -24554,16 +24570,6 @@
 /obj/item/storage/firstaid/regular,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"wPq" = (
-/obj/machinery/shower{
-	dir = 4;
-	icon_state = "shower"
-	},
-/obj/effect/floor_decal/industrial/hatch/blue,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "wPy" = (
 /obj/structure/table/rack,
 /obj/item/clothing/mask/gas/nam,
@@ -69282,8 +69288,8 @@ tUs
 tUs
 tUs
 tUs
-tUs
-tUs
+oYr
+oYr
 oYr
 tUs
 tUs
@@ -69534,8 +69540,8 @@ gnG
 vMn
 gnG
 tUs
-tUs
-tUs
+oYr
+oYr
 eLy
 xEe
 jdP
@@ -69785,8 +69791,8 @@ oYr
 dWi
 dWi
 dWi
-wPq
-wPq
+dWi
+dWi
 tUs
 tUs
 tUs
@@ -70037,7 +70043,7 @@ cbw
 kAa
 dWi
 cbw
-mjh
+kAa
 pHr
 tUs
 tUs

@@ -376,12 +376,6 @@
 	icon_state = "rwall8"
 	},
 /area/cadiaoutpost/oa/shuttle/magos)
-"ci" = (
-/obj/structure/banner/blue{
-	pixel_y = -32
-	},
-/turf/simulated/floor/stone/crafted_floor,
-/area/cadiaoutpost/oa/dungeon3)
 "cl" = (
 /turf/simulated/floor/fancyfloor/carpet/blue/middle,
 /area/cadiaoutpost/oa/dungeon3)
@@ -2146,13 +2140,6 @@
 /obj/structure/flora/yes/erista,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/dungeon3)
-"pI" = (
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/stone/crafted_floor,
-/area/cadiaoutpost/oa/dungeon3)
 "pM" = (
 /obj/effect/floor_decal/newcorner/stone/corner,
 /turf/simulated/floor/darkwood,
@@ -3455,19 +3442,6 @@
 	},
 /turf/simulated/floor/stone/seabed,
 /area/cadiaoutpost/oa/mechanicusdig)
-"Ap" = (
-/obj/effect/floor_decal/newcorner/train2/corner{
-	dir = 10
-	},
-/obj/structure/shipdecor/warp2{
-	color = "green";
-	pixel_x = 12;
-	pixel_y = 12
-	},
-/turf/unsimulated/floor/necron_floor{
-	icon_state = "ofloor"
-	},
-/area/cadiaoutpost/oa/dungeon1)
 "Ar" = (
 /turf/simulated/floor/fancyfloor/carpet,
 /area/cadiaoutpost/oa/dungeon3)
@@ -3586,6 +3560,12 @@
 /obj/item/clothing/head/helmet/orkhelmet/horns,
 /turf/unsimulated/floor/sand,
 /area/cadiaoutpost/oa/dungeon1)
+"Bp" = (
+/obj/effect/landmark{
+	name = "tau2start"
+	},
+/turf/simulated/floor/stone/seabed,
+/area/cadiaoutpost/oa/mechanicusdig)
 "Bs" = (
 /obj/machinery/door/unpowered/inn,
 /turf/simulated/floor/darkwood,
@@ -3696,6 +3676,9 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/dungeon3)
+"Cu" = (
+/turf/simulated/shuttle/wall/necron,
+/area/cadiaoutpost/oa/mechanicusdig)
 "Cw" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/suspension_gen{
@@ -5315,6 +5298,17 @@
 	icon_state = "lwall10"
 	},
 /area/cadiaoutpost/oa/dungeon1)
+"RH" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Floor Light";
+	density = 0;
+	color = "green";
+	icon = 'icons/map_project/tombs.dmi';
+	icon_state = "lofloor"
+	},
+/turf/simulated/shuttle/wall/necron,
+/area/cadiaoutpost/oa/mechanicusdig)
 "RJ" = (
 /obj/structure/closet/crate/trashcart,
 /turf/simulated/floor/tiled/dark,
@@ -5497,13 +5491,6 @@
 	dir = 8
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/dungeon3)
-"Tt" = (
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/dungeon3)
 "Ty" = (
 /obj/effect/floor_decal/newcorner/stone{
@@ -7149,9 +7136,9 @@ Hi
 Hi
 Hi
 Hi
-Hi
-Hi
-Hi
+Cu
+Cu
+Cu
 Hi
 Hi
 Hi
@@ -7372,8 +7359,8 @@ Hi
 je
 je
 je
-Hi
-Hi
+RH
+Cu
 Hi
 Hi
 Hi
@@ -7595,7 +7582,7 @@ je
 je
 je
 je
-Hi
+Cu
 Hi
 Hi
 Hi
@@ -8029,15 +8016,15 @@ Hi
 Hi
 Hi
 Hi
-Hi
-Hi
-Hi
+Cu
+Cu
+Cu
 je
 je
 je
+Bp
 je
-je
-je
+Bp
 je
 je
 je
@@ -8252,7 +8239,7 @@ je
 je
 je
 je
-Hi
+RH
 je
 je
 je
@@ -8701,9 +8688,9 @@ je
 je
 je
 je
+Bp
 je
-je
-je
+Bp
 je
 je
 je
@@ -8928,7 +8915,7 @@ je
 je
 je
 je
-Hi
+Cu
 Hi
 Hi
 Hi
@@ -9149,8 +9136,8 @@ je
 je
 je
 je
-Hi
-Hi
+RH
+Cu
 Hi
 Hi
 Hi
@@ -9363,16 +9350,16 @@ Hi
 Hi
 Hi
 Hi
-Hi
+Cu
 je
 je
 je
 je
 Hi
 Hi
-Hi
-Hi
-Hi
+Cu
+Cu
+Cu
 Hi
 Hi
 Hi
@@ -9585,8 +9572,8 @@ Hi
 Hi
 Hi
 Hi
-Hi
-Hi
+Cu
+RH
 je
 je
 Hi
@@ -9807,9 +9794,9 @@ Hi
 Hi
 Hi
 Hi
-Hi
-Hi
-Hi
+Cu
+Cu
+Cu
 Hi
 Hi
 Hi
@@ -26170,11 +26157,11 @@ cC
 cC
 tX
 tX
-pI
+cC
 cC
 cC
 tX
-Tt
+tX
 tX
 PS
 zz
@@ -26395,7 +26382,7 @@ PS
 PS
 cC
 cC
-ci
+cC
 PS
 PS
 PS
@@ -29028,7 +29015,7 @@ jr
 PY
 PY
 jr
-Ap
+YB
 bF
 bF
 bF

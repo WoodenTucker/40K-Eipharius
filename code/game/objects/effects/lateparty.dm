@@ -77,6 +77,12 @@
 			usr.loc = get_turf(locate("landmark*taustart")) //where they spawning
 			var/mob/living/carbon/human/tau/new_character = new(usr.loc)// da mob
 			new_character.key = usr.key //puts ghost in body with new key
+		if("TauNecron")
+			message_admins("[usr.key] has joined the late party: Tau.", 0) //msgs jannies
+			to_chat(usr, "<span class='warning'><b><font size=3>It has been a long flight but we have landed in Imperial space. Follow the Aun's orders. Assimilate this planet for the greater good! Check the Tau tab and remember your caste!</b></font size=3>") //tells mob to do thing
+			usr.loc = get_turf(locate("landmark*tau2start")) //where they spawning
+			var/mob/living/carbon/human/tau/new_character = new(usr.loc)// da mob
+			new_character.key = usr.key //puts ghost in body with new key
 		if("Sekites")
 			message_admins("[attendee] has joined the late party: Sekites.", 0) //msgs jannies
 			to_chat(usr, "<span class='warning'><b><font size=3>You are expected to demand people to join your cult before you kill them, if able. Embrace your Blessings in your Ruinous Powers Tab! Ensure the Commander and Berzerker Chosen armor are donned. Follow their wearers in glorious battle upon the nearby planet of Eipharius. Work alongside your fellow Blood Pact warriors using the Dark Tongue. You may be Khornate, but you are extremely well disciplined. Harvest souls and sacrifice for the Blood God!</b></font size=3>") //tells mob to do thing
@@ -96,7 +102,7 @@
 	return
 
 /proc/Get_Party() //dis is the proc that actually selects the party
-	GLOB.latepartyoptions += pick("Orkz", "Tau",)
+	GLOB.latepartyoptions += pick("Sekites", "Tau",)
 
 	//note for myself, make procs to spawn as group if you ever wanna switch to that.
 	//Something like the new_character key that uses an if isreadied to pull them all at once. You could make like beKroot() that contains everything under if("kroot")

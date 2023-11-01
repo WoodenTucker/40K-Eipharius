@@ -2253,7 +2253,8 @@
 /obj/structure/bed/padded,
 /obj/item/bedsheet/hop,
 /obj/effect/landmark{
-	name = "taustart"
+	name = "taustart";
+	invisibility = 0
 	},
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/tauship)
@@ -2328,7 +2329,8 @@
 /area/cadiaoutpost/oa/tauship)
 "kE" = (
 /obj/effect/landmark{
-	name = "taustart"
+	name = "taustart";
+	invisibility = 0
 	},
 /obj/structure/bed/padded,
 /obj/item/bedsheet/hop,
@@ -6765,7 +6767,8 @@
 /area/centcom)
 "Kc" = (
 /obj/effect/landmark{
-	name = "krootstart"
+	name = "krootstart";
+	invisibility = 0
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)

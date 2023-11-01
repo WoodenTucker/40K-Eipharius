@@ -444,6 +444,13 @@ Area basic template
 	dynamic_lighting = 1
 	music = 'sound/newmusic/Caves_Terror.ogg'
 
+/area/cadiaoutpost/oa/dungeon4
+	name = "Necron Tomb P3 Finale"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/lovecraft2.ogg'
+
 /area/cadiaoutpost/oa/mechanicusdig
 	name = "Necron Mechanicus Site"
 	icon_state = "forwardpost"
@@ -457,6 +464,27 @@ Area basic template
 	requires_power = TRUE
 	dynamic_lighting = 1
 	music = 'sound/newmusic/Caves_Terror.ogg'
+
+
+/area/cadiaoutpost/oa/dungeon1/Entered(mob/living/L,  atom/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))//Doesn't work but this does stop the lag.
+		L.overlay_fullscreen("fog", /obj/screen/fullscreen/fog)
+
+/area/cadiaoutpost/oa/dungeon2/Entered(mob/living/L,  atom/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))//Doesn't work but this does stop the lag.
+		L.overlay_fullscreen("fog", /obj/screen/fullscreen/fog)
+
+/area/cadiaoutpost/oa/dungeon3/Entered(mob/living/L,  atom/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))//Doesn't work but this does stop the lag.
+		L.overlay_fullscreen("ashfall_light", /obj/screen/fullscreen/storm)
+
+/area/cadiaoutpost/oa/dungeon4/Entered(mob/living/L,  atom/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))//Doesn't work but this does stop the lag.
+		L.overlay_fullscreen("ashfall_heavy", /obj/screen/fullscreen/stormheavy)
 
 /area/cadiaoutpost/oa/theforest/Entered(mob/living/L,  atom/A)
 	. = ..()
