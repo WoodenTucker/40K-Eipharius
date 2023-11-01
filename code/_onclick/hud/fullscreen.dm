@@ -126,7 +126,13 @@
 	icon = 'icons/effects/weather.dmi'
 	screen_loc = "WEST,SOUTH to EAST,NORTH"
 	icon_state = "ashfall_light"
-	alpha = 50
+	alpha = 40
+
+/obj/screen/fullscreen/stormheavy
+	icon = 'icons/effects/weather.dmi'
+	screen_loc = "WEST,SOUTH to EAST,NORTH"
+	icon_state = "ashfall_heavy"
+	alpha = 40
 
 /obj/screen/fullscreen/blurry
 	icon = 'icons/mob/screen1.dmi'

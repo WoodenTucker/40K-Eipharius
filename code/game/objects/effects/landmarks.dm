@@ -108,6 +108,32 @@ Template:
 	name = ""
 */
 
+// LATEPARTIES //
+/obj/effect/landmark/start/tau
+	name = "tau"
+	icon_state = "ricehat"
+	invisibility = 0
+
+/obj/effect/landmark/start/ork
+	name = "ork"
+	icon_state = "ricehat"
+	invisibility = 0
+
+/obj/effect/landmark/start/gene
+	name = "gene"
+	icon_state = "ricehat"
+	invisibility = 0
+
+/obj/effect/landmark/start/kroot
+	name = "kroot"
+	icon_state = "ricehat"
+	invisibility = 0
+
+/obj/effect/landmark/start/blood
+	name = "blood"
+	icon_state = "ricehat"
+	invisibility = 0
+
 // Governorship //
 
 /obj/effect/landmark/start/governor

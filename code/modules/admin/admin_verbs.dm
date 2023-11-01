@@ -1052,7 +1052,7 @@ var/list/admin_verbs_mentor = list(
 	set name = "Choose Party"
 	set desc = "Picks the party for the round!"
 
-	var/parties = list("Kroot", "Tau", "Sekites", "Orkz", "Genestealers",) //lists all possible fates
+	var/parties = list("Kroot", "Tau", "Sekites", "Orkz", "Genestealers", "TauNecron",) //lists all possible fates
 
 	var/chooseaparty = input("Choose a party", "Available parties") as null|anything in parties
 
@@ -1076,6 +1076,11 @@ var/list/admin_verbs_mentor = list(
 			GLOB.latepartyoptions.Cut()
 
 			GLOB.latepartyoptions += "Sekites"
+			message_admins("Sekites have been selected as the late party!")
+		if("TauNecron")
+			GLOB.latepartyoptions.Cut()
+
+			GLOB.latepartyoptions += "TauNecron"
 			message_admins("Sekites have been selected as the late party!")
 		if("Genestealers")
 			GLOB.latepartyoptions.Cut()

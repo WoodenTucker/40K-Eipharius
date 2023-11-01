@@ -49,25 +49,31 @@
 					if("Orkz")
 						message_admins("[attendee] has joined the late party: Orkz.", 0) //msgs jannies
 						to_chat(usr, "<span class='warning'><b><font size=3>It's been a long flight, go to your Ork tab and be sure to stretch!</b></font size=3>") //tells mob to do thing
-						usr.loc = get_turf(locate("landmark*orkstart")) //where they spawning
+						usr.loc = get_turf(locate("landmark*ork")) //where they spawning
 						var/mob/living/carbon/human/ork/new_character = new(usr.loc) // da mob
 						new_character.key = attendee //puts ghost in body with new key
 					if("Tau")
 						message_admins("[attendee] has joined the late party: Tau.", 0) //msgs jannies
 						to_chat(usr, "<span class='warning'><b><font size=3>It has been a long flight but we have landed in Imperial space. Follow the Aun's orders. Assimilate this planet for the greater good! Check the Tau tab and remember your caste!</b></font size=3>") //tells mob to do thing
-						usr.loc = get_turf(locate("landmark*taustart")) //where they spawning
+						usr.loc = get_turf(locate("landmark*tau")) //where they spawning
 						var/mob/living/carbon/human/tau/new_character = new(usr.loc)// da mob
 						new_character.key = attendee //puts ghost in body with new key
+					if("TauNecron")
+						message_admins("[usr.key] has joined the late party: Tau.", 0) //msgs jannies
+						to_chat(usr, "<span class='warning'><b><font size=3>It has been a long flight but we have landed in Imperial space. Follow the Aun's orders. Assimilate this planet for the greater good! Check the Tau tab and remember your caste!</b></font size=3>") //tells mob to do thing
+						usr.loc = get_turf(locate("landmark*tau2start")) //where they spawning
+						var/mob/living/carbon/human/tau/new_character = new(usr.loc)// da mob
+						new_character.key = usr.key //puts ghost in body with new key					
 					if("Sekites")
 						message_admins("[attendee] has joined the late party: Sekites.", 0) //msgs jannies
 						to_chat(usr, "<span class='warning'>You are veterans of the chaos warband known commonly referred to as the Sekites or Sons of Sek who serve the Immortal Anarch... Anakwanar Sek. Sent to Eipharius you have been tasked with undermining imperial rule and spreading fear throughout the planet. Find and co-ordinate with the local followers of the ruinous powers and plot an uprising to rival old Horus himself. Do not waste your lives, instead spend the lives of your followers whom you recruit from the planet.</b></font size=3>")
-						usr.loc = get_turf(locate("landmark*bloodstart")) //where they spawning
+						usr.loc = get_turf(locate("landmark*blood")) //where they spawning
 						var/mob/living/carbon/human/Bloodpact/new_character = new(usr.loc)// da mob
 						new_character.key = attendee //puts ghost in body with new key
 					if("Genestealers")
 						message_admins("[attendee] has joined the late party: Genestealer.", 0) //msgs jannies
 						to_chat(usr, "<span class='warning'><b><font size=3>You are the point of the spear of the Great Devourer. Grow your following and undermine this planets defenses.</b></font size=3>") //tells mob to do thing
-						usr.loc = get_turf(locate("landmark*genestart")) //where they spawning
+						usr.loc = get_turf(locate("landmark*gene")) //where they spawning
 						var/mob/living/carbon/human/genestealer/new_character = new(usr.loc)// da mob
 						new_character.key = attendee //puts ghost in body with new key
 			GLOB.daparty.Cut() //CLears our list after the loop completes
