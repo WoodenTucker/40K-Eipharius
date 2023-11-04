@@ -42,11 +42,12 @@
 	worn_state = "magistrate"
 
 /obj/item/clothing/under/rank/cargo
-	name = "quartermaster's jumpsuit"
-	desc = "It's a jumpsuit worn by the quartermaster. It's specially designed to prevent back injuries caused by pushing paper."
+	name = "mechanicus bondsman jumpsuit"
+	desc = "It's a jumpsuit worn by a mechanicus bondsman, signifying their life oath to the guild."
 	icon_state = "qm"
 	item_state = "lb_suit"
 	worn_state = "qm"
+	canremove = 0
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
