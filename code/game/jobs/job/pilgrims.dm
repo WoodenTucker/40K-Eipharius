@@ -75,7 +75,7 @@ Pilgrim Fate System
 
 	var/mob/living/carbon/human/U = src
 	U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,) //removes verb
-	var/fates = list("Mercenary","Scum","Nomad","Primitive","Witch Hunter"."Mechanicus Bondsman",)
+	var/fates = list("Mercenary","Scum","Nomad","Primitive","Witch Hunter","Mechanicus Bondsman",)
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
