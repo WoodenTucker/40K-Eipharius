@@ -2206,12 +2206,13 @@
 /turf/simulated/floor/darksteel_floor,
 /area/cadiaoutpost/new_hive/hive_city)
 "ls" = (
-/obj/machinery/door/airlock/hatch/simiel{
-	name = "Hangar";
-	req_one_access = list(225)
+/obj/structure/cargo_pad,
+/obj/effect/landmark/cargospawn,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
 	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/roguet)
 "lu" = (
 /obj/item/melee/sword/broadsword,
 /turf/simulated/floor/tiled/dark{
@@ -5499,17 +5500,16 @@
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "Du" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/closet/crate/secure/large{
 	name = "enterprise large crate";
 	req_one_access = list(225)
 	},
-/obj/structure/cargo_pad,
-/obj/effect/landmark/cargospawn,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
 	},
-/area/cadiaoutpost/oa/shuttle/roguet)
+/area/cadiaoutpost/new_hive/hive_city)
 "Dv" = (
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 1
@@ -71561,11 +71561,11 @@ lD
 wF
 wJ
 GS
-Du
-Du
 tZ
 tZ
 tZ
+ls
+ls
 GS
 SB
 SB
@@ -71813,11 +71813,11 @@ GS
 wa
 fe
 GS
-Du
-Du
+tZ
+tZ
 wW
-tZ
-tZ
+ls
+ls
 GS
 OV
 DV
@@ -72307,7 +72307,7 @@ PH
 PH
 PH
 PH
-ls
+PH
 PH
 PH
 PH
@@ -72821,7 +72821,7 @@ Sb
 Sb
 Sb
 Sb
-Sb
+Du
 Sb
 Sb
 Sb

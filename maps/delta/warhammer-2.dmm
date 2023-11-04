@@ -92,6 +92,7 @@
 	},
 /obj/item/reagent_containers/glass/beaker/cryoxadone,
 /obj/item/reagent_containers/glass/beaker/cryoxadone,
+/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -127,14 +128,13 @@
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
 "ajj" = (
-/obj/effect/floor_decal/turf/metal/four,
-/obj/machinery/light/red{
-	dir = 1
-	},
+/obj/effect/floor_decal/turf/metal/six,
+/obj/effect/floor_decal/industrial/warning_red,
+/obj/machinery/light,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "ajQ" = (
 /obj/structure/sign/plate/stoneshrine{
 	pixel_x = 32
@@ -376,14 +376,13 @@
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/new_hive/caves)
 "auA" = (
-/obj/effect/floor_decal/turf/metal/two,
-/obj/machinery/light/red{
-	dir = 4
-	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
-	color = "grey"
+	color = "grey";
+	icon_state = "white1"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "auO" = (
 /obj/machinery/shower{
 	dir = 4;
@@ -587,6 +586,7 @@
 "aIx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/unary/cryo_cell,
+/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -692,16 +692,13 @@
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/farm)
 "aOi" = (
-/obj/effect/floor_decal/newcorner/white{
-	dir = 4
+/obj/structure/bed{
+	icon = "icons/map_project/furniture_and_decor.dmi";
+	icon_state = "redebahia"
 	},
-/obj/effect/floor_decal/industrial/loading{
-	dir = 8
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/obj/item/clothing/suit/armor/bountyhunter,
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/new_hive/caves)
 "aOo" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
@@ -793,13 +790,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"aVo" = (
-/obj/structure/closet/wardrobe/virology_white,
-/obj/effect/floor_decal/newcorner/whitegreen/solid,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "aVt" = (
 /obj/structure/closet/crate/secure,
 /obj/random/junk,
@@ -816,8 +806,11 @@
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/magistratumpost)
 "aWx" = (
-/turf/simulated/floor/new_wood/four,
-/area/cadiaoutpost/new_hive/caves)
+/obj/effect/floor_decal/newcorner/plating/quarter,
+/turf/simulated/floor/darkfloor{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/medicae)
 "aWI" = (
 /obj/item/book/manual/nurgle_recipes,
 /turf/simulated/floor/stone/old4,
@@ -872,12 +865,15 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "aYA" = (
-/obj/structure/closet/crate/secure/biohazard,
-/obj/effect/floor_decal/newcorner/plating/quarter,
-/turf/simulated/floor/darkfloor{
-	dir = 8
+/obj/machinery/shower{
+	dir = 8;
+	icon_state = "shower"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/obj/effect/floor_decal/newcorner/plating/quarter,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/medicae)
 "aYX" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 9
@@ -937,6 +933,7 @@
 /obj/random/firstaid,
 /obj/item/storage/firstaid/surgery,
 /obj/item/FixOVein,
+/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -1041,14 +1038,15 @@
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
 "biE" = (
-/obj/machinery/door/airlock/glass_virology{
-	name = "Quarantine Area";
-	req_one_access = list(10)
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 1
 	},
-/turf/simulated/floor/factory_floor{
-	dir = 8
+/obj/machinery/light/small/red{
+	dir = 8;
+	icon_state = "bulb1"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/turf/simulated/floor/greengrid,
+/area/cadiaoutpost/oa/medicae)
 "bjf" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 4;
@@ -1220,11 +1218,18 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
 "bnf" = (
-/obj/effect/floor_decal/newcorner/whitegreen/diagonal,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/phoron{
+	color = "grey";
+	name = "Clinic";
+	req_one_access = list(10)
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/obj/effect/floor_decal/turf/plating,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/oa/medicae)
 "bns" = (
 /obj/structure/railing{
 	dir = 8;
@@ -1772,6 +1777,7 @@
 "bQi" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/firecloset/full,
+/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -1962,13 +1968,11 @@
 	},
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "bYK" = (
-/obj/effect/floor_decal/newcorner/white{
-	dir = 4
+/obj/structure/sign/mechanicus{
+	pixel_x = 32
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/turf/simulated/wall/techno,
+/area/cadiaoutpost/oa/medicae)
 "bYZ" = (
 /obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/ceramic,
@@ -1994,10 +1998,6 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"caA" = (
-/obj/effect/floor_decal/industrial/warning_red,
-/turf/simulated/floor/greengrid,
-/area/cadiaoutpost/oa/research/robotics)
 "caW" = (
 /obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
@@ -2018,13 +2018,10 @@
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "cbw" = (
-/obj/effect/floor_decal/newcorner/plating/quarter{
-	dir = 1
+/turf/simulated/floor/greengrid{
+	dir = 4
 	},
-/turf/simulated/floor/darkfloor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "cbz" = (
 /obj/structure/sink{
 	dir = 8;
@@ -2064,22 +2061,12 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "ccQ" = (
-/obj/structure/table/rack/dark,
-/obj/item/reagent_containers/syringe{
-	pixel_y = -4
-	},
-/obj/item/reagent_containers/syringe,
-/obj/item/reagent_containers/syringe{
-	pixel_y = 4
-	},
-/obj/item/reagent_containers/syringe{
-	pixel_y = 8
-	},
-/obj/effect/floor_decal/newcorner/whitegreen/solid,
+/obj/effect/floor_decal/turf/metal/three,
+/obj/machinery/light/red,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "cdj" = (
 /obj/effect/floor_decal/turf/bar3{
 	dir = 4
@@ -2185,16 +2172,18 @@
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
 "cki" = (
-/obj/machinery/disease2/antibodyanalyser,
+/obj/structure/table/steel_reinforced,
+/obj/item/virusdish,
 /obj/effect/floor_decal/newcorner/whitegreen/solid,
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
+/obj/item/virusdish/random,
+/obj/item/virusdish/random,
+/obj/item/virusdish/random,
+/obj/item/virusdish/random,
+/obj/item/virusdish/random,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "cku" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark{
@@ -2347,15 +2336,6 @@
 /obj/structure/statue/prayer,
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"cta" = (
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 1
-	},
-/obj/effect/floor_decal/newcorner/green,
-/turf/simulated/floor/darkfloor{
-	dir = 1
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "cuj" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 4
@@ -2366,12 +2346,13 @@
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "cun" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/storage/box/syndie_kit/syringegun,
-/turf/simulated/floor/darkfloor{
-	dir = 8
+/obj/effect/floor_decal/newcorner/white{
+	dir = 4
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "cus" = (
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
@@ -2399,12 +2380,12 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
 "cuG" = (
-/obj/item/storage/box/syndie_kit/imp_explosive,
-/obj/structure/table/steel_reinforced,
-/turf/simulated/floor/darkfloor{
-	dir = 8
+/obj/effect/floor_decal/turf/plating,
+/obj/effect/landmark/start/mechanicus/biologis,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "cvS" = (
 /obj/structure/sign/inkvd{
 	pixel_x = 32
@@ -2423,15 +2404,14 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "cwq" = (
-/obj/effect/floor_decal/industrial/warning_red{
+/obj/effect/floor_decal/turf/metal/four,
+/obj/machinery/light/red{
 	dir = 1
 	},
-/obj/machinery/light/small/red{
-	dir = 8;
-	icon_state = "bulb1"
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/turf/simulated/floor/greengrid,
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "cwD" = (
 /obj/random/exploration,
 /turf/simulated/floor/stone,
@@ -2661,13 +2641,11 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/magistratumpost)
 "cHW" = (
-/obj/effect/floor_decal/newcorner/plating/quarter{
-	dir = 4
-	},
+/obj/effect/floor_decal/newcorner/plating,
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "cIy" = (
 /obj/random/loot/randomarmor,
 /obj/structure/table/rack/dark,
@@ -2853,14 +2831,13 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "cRK" = (
-/obj/machinery/door/airlock/virology{
-	name = "Empty Chamber";
-	req_one_access = list(10)
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 4
 	},
-/turf/simulated/floor/factory_floor{
+/turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "cSd" = (
 /obj/structure/hivedecor/statue7,
 /obj/structure/torchwall/service{
@@ -2870,13 +2847,10 @@
 /turf/simulated/floor/ceramic/blackstone,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "cSe" = (
-/obj/effect/floor_decal/turf/metal/three,
-/mob/living/simple_animal/hostile/broken_servitor/subject_03,
-/obj/machinery/light/red,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/turf/simulated/floor/factory_floor{
+	dir = 8
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "cSu" = (
 /obj/machinery/photocopier,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -3109,27 +3083,6 @@
 /obj/structure/closet/crate,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/new_hive/caves)
-"dcM" = (
-/obj/structure/table/rack/dark,
-/obj/item/reagent_containers/dropper{
-	pixel_y = -10
-	},
-/obj/item/reagent_containers/dropper{
-	pixel_y = -6
-	},
-/obj/item/storage/lockbox/vials,
-/obj/effect/floor_decal/newcorner/whitegreen/solid,
-/obj/item/storage/lockbox/vials,
-/obj/item/reagent_containers/dropper{
-	pixel_y = -10
-	},
-/obj/item/reagent_containers/dropper{
-	pixel_y = -6
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "ddy" = (
 /obj/effect/floor_decal/newcorner/train2{
 	dir = 1
@@ -3209,15 +3162,11 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "diG" = (
-/obj/effect/floor_decal/newcorner/white/solid,
-/obj/machinery/door/airlock/glass_virology{
-	name = "Quarantine Room 2";
-	req_one_access = list(10)
+/obj/effect/floor_decal/turf/metal,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/turf/simulated/floor/factory_floor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "djk" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/statue/verina/broken{
@@ -3370,14 +3319,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
-"dpX" = (
-/obj/structure/bed/chair/office/dark{
-	dir = 4
-	},
-/turf/simulated/floor/darkfloor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "dqq" = (
 /obj/machinery/light/small/red{
 	dir = 1
@@ -3576,12 +3517,6 @@
 "dBi" = (
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"dCq" = (
-/obj/effect/floor_decal/turf/metal/five,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "dCU" = (
 /obj/effect/floor_decal/turf/metal/four,
 /obj/effect/decal/cleanable/blood,
@@ -3617,9 +3552,13 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
 "dEu" = (
-/obj/structure/statue/xenotube/off,
-/turf/simulated/floor/greengrid,
-/area/cadiaoutpost/oa/research/robotics)
+/obj/effect/water/top,
+/obj/effect/water/bottom,
+/obj/structure/sign/mechanicus{
+	pixel_x = 32
+	},
+/turf/simulated/floor/exoplanet/water/shallow/lightless,
+/area/cadiaoutpost/new_hive/caves)
 "dEH" = (
 /obj/structure/hivedecor/sarcofagus2,
 /obj/structure/sign/plate{
@@ -3868,6 +3807,7 @@
 "dRd" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/unary/freezer,
+/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -3902,11 +3842,9 @@
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
 "dUg" = (
-/obj/effect/decal/cleanable/cobweb{
-	dir = 4
-	},
-/turf/simulated/floor/new_wood,
-/area/cadiaoutpost/new_hive/caves)
+/obj/structure/statue/xenotube,
+/turf/simulated/floor/greengrid,
+/area/cadiaoutpost/oa/medicae)
 "dUh" = (
 /obj/structure/toilet{
 	dir = 4
@@ -3919,20 +3857,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
-"dVb" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/effect/floor_decal/industrial/warning_red{
-	icon_state = "warningcorner_red";
-	dir = 8
-	},
-/obj/machinery/light,
-/obj/structure/sign/mechanicus{
-	pixel_x = 32
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "dVH" = (
 /obj/structure/table/rack,
 /obj/item/stack/material/wood/fifty,
@@ -3958,11 +3882,11 @@
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
 "dWi" = (
-/obj/effect/floor_decal/turf/plating,
-/turf/simulated/floor/darkfloor{
-	dir = 8
+/obj/effect/floor_decal/turf/metal/seven,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "dWr" = (
 /obj/structure/table/rack/shelf{
 	color = "grey"
@@ -3974,12 +3898,23 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
 "dWB" = (
-/obj/effect/floor_decal/newcorner/green/diagonal,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "dark1"
+/obj/effect/floor_decal/turf/plating,
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 4;
+	icon_state = "warningcorner_red"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/obj/machinery/shower{
+	dir = 4;
+	icon_state = "shower"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/medicae)
 "dWY" = (
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -4034,15 +3969,13 @@
 	},
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "dYN" = (
-/obj/item/device/mmi,
-/obj/item/device/mmi,
-/obj/item/device/mmi,
-/obj/structure/table/rack,
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/turf/simulated/floor/darkfloor{
-	dir = 1
+/obj/structure/sign/mechanicus{
+	pixel_x = 32
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "dZO" = (
 /obj/structure/closet/crate/secure/large,
 /obj/random/loot/randomammo1,
@@ -4196,6 +4129,7 @@
 "eiV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/manifold/hidden,
+/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -4228,12 +4162,6 @@
 	},
 /turf/simulated/floor/darkfloor,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"eki" = (
-/obj/effect/floor_decal/newcorner/teal/diagonal,
-/turf/simulated/floor/darkfloor{
-	dir = 1
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "elh" = (
 /obj/structure/bed/roller{
 	color = "grey"
@@ -4274,6 +4202,7 @@
 	icon_state = "intact";
 	dir = 4
 	},
+/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -4286,19 +4215,22 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
 "enm" = (
-/obj/effect/floor_decal/turf/metal,
-/obj/structure/bed{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "redebahia"
+/obj/structure/table/rack/dark,
+/obj/item/reagent_containers/syringe{
+	pixel_y = -4
 	},
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe{
+	pixel_y = 4
 	},
+/obj/item/reagent_containers/syringe{
+	pixel_y = 8
+	},
+/obj/effect/floor_decal/newcorner/whitegreen/solid,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "enZ" = (
 /obj/effect/floor_decal/newcorner/caveramp{
 	dir = 1
@@ -4313,22 +4245,11 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "eow" = (
-/obj/structure/closet/secure_closet/engineering_chief{
-	color = "grey";
-	req_one_access = list(10)
-	},
-/obj/item/stack/medical/advanced/ointment,
-/obj/item/stack/medical/advanced/bruise_pack,
-/obj/effect/floor_decal/newcorner/plating/quarter{
+/obj/machinery/light/small,
+/turf/simulated/floor/factory_floor{
 	dir = 8
 	},
-/obj/effect/floor_decal/newcorner/green/corner{
-	dir = 8
-	},
-/turf/simulated/floor/darkfloor{
-	dir = 1
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "eoY" = (
 /obj/structure/reagent_dispensers/waterbarrel,
 /obj/machinery/light/small,
@@ -4488,6 +4409,7 @@
 	icon_state = "intact";
 	dir = 5
 	},
+/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -4524,6 +4446,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -4805,11 +4728,16 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "eKk" = (
-/obj/effect/floor_decal/turf/metal/two,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/structure/table/rack,
+/obj/item/stack/material/cloth/fifty,
+/obj/item/stack/material/cloth/fifty{
+	pixel_y = 4
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/darkfloor{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/medicae)
 "eKm" = (
 /obj/effect/floor_decal/newcorner/plating,
 /obj/effect/floor_decal/newcorner/red{
@@ -4834,15 +4762,6 @@
 /obj/item/clothing/under/pj/red,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
-"eLy" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "eMv" = (
 /obj/structure/sink{
 	dir = 4;
@@ -4980,16 +4899,13 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "eUi" = (
-/obj/item/stamp/ce,
-/obj/structure/table/steel_reinforced,
-/obj/item/stamp/denied{
-	pixel_y = -4
+/obj/effect/floor_decal/newcorner/plating/quarter{
+	dir = 8
 	},
-/obj/effect/floor_decal/newcorner/green/solid,
 /turf/simulated/floor/darkfloor{
-	dir = 1
+	dir = 8
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "eUw" = (
 /obj/structure/bed{
 	desc = "A mass produced sleeping mat, now with actual cloth!";
@@ -5002,16 +4918,16 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "eUx" = (
-/obj/effect/floor_decal/turf/bar3{
-	dir = 4
+/obj/machinery/computer/operating,
+/obj/effect/floor_decal/newcorner/teal/solid,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
 	},
-/obj/effect/floor_decal/turf/big_cables1{
-	dir = 5
+/turf/simulated/floor/darkfloor{
+	dir = 1
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "eUP" = (
 /obj/item/flame/candle/small{
 	pixel_x = -9
@@ -5085,15 +5001,28 @@
 	},
 /area/cadiaoutpost/oa/security/armory)
 "eXO" = (
-/obj/structure/sink{
+/obj/flamer_fire{
+	burnlevel = 33;
+	firelevel = 1.#INF
+	},
+/obj/structure/window_frame{
+	desc = "Once, a Novice Cantus came to me, troubled and uncertain. A slip of a girl, only a few strides down the eternal path leading her to the Golden Throne. She asked me a question. She asked me how we can ever truly understand what faith is. I told her that there is no coin to measure what we feel in our hearts. There are no scales upon which we might weigh the faith of one woman against another. There is only duty and blood. There are only deeds and words. There is only the service to the God-Emperor, and the price that demands from each Sister can only be known by Him. But know that whatever fears must be faced, whatever hardships endured, that price is forever worth its full cost.";
+	name = "Eternal Brazier of Saint Katherine"
+	},
+/obj/machinery/door/blast/grates/open{
 	dir = 4;
-	pixel_x = 12
+	health = 600;
+	id = "medicaeld1";
+	maxhealth = 600;
+	name = "Medicae Lockdown"
 	},
-/obj/effect/floor_decal/newcorner/teal/diagonal,
-/turf/simulated/floor/darkfloor{
-	dir = 1
+/obj/structure/sign/mechanicus{
+	pixel_x = 32
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/turf/simulated/wall/ancient{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/medicae)
 "eYA" = (
 /obj/effect/floor_decal/newcorner/red/quarter{
 	dir = 8
@@ -5353,13 +5282,6 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"fiJ" = (
-/obj/effect/floor_decal/turf/metal/five,
-/mob/living/simple_animal/hostile/nurgling,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "fiR" = (
 /obj/machinery/light/small/red{
 	dir = 1
@@ -5966,13 +5888,27 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "fJV" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/book/manual/medical_diagnostics_manual,
-/obj/item/book/manual/engineering_construction,
-/turf/simulated/floor/darkfloor{
-	dir = 1
+/obj/structure/table/rack/dark,
+/obj/item/reagent_containers/glass/beaker/vial{
+	pixel_x = 10
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/obj/item/reagent_containers/glass/beaker/vial{
+	pixel_x = 6
+	},
+/obj/item/reagent_containers/glass/beaker/vial{
+	pixel_x = 2
+	},
+/obj/item/reagent_containers/glass/beaker/vial{
+	pixel_x = -2
+	},
+/obj/item/reagent_containers/glass/beaker/vial{
+	pixel_x = -6
+	},
+/obj/effect/floor_decal/newcorner/whitegreen/solid,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "fKc" = (
 /obj/structure/sign/plate/written{
 	pixel_y = 32
@@ -6112,11 +6048,10 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/farm)
 "fQo" = (
-/obj/item/modular_computer/console/preset/research,
-/turf/simulated/floor/darkfloor{
-	dir = 8
+/turf/simulated/floor/greengrid{
+	dir = 4
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "fQu" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 5;
@@ -6125,12 +6060,11 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "fRq" = (
-/obj/machinery/optable,
-/obj/effect/floor_decal/newcorner/teal/solid,
-/turf/simulated/floor/darkfloor{
-	dir = 1
+/obj/effect/floor_decal/turf/metal/seven,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "fRO" = (
 /obj/effect/floor_decal/spline/plain,
 /obj/machinery/light/small,
@@ -6195,16 +6129,11 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/armory)
 "fYo" = (
-/obj/structure/table/rack,
-/obj/item/stack/material/cloth/fifty,
-/obj/item/stack/material/cloth/fifty{
-	pixel_y = 4
+/obj/effect/floor_decal/turf/metal/three,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/turf/simulated/floor/darkfloor{
-	dir = 1
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "fZK" = (
 /obj/structure/table/rack/dark,
 /obj/item/organ/external/robotic/hand/experimental,
@@ -6479,12 +6408,10 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "glJ" = (
-/obj/effect/floor_decal/industrial/warning_red,
-/obj/machinery/light/small/red{
-	dir = 4
+/turf/simulated/floor/darkfloor{
+	dir = 8
 	},
-/turf/simulated/floor/greengrid,
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "gmr" = (
 /obj/effect/decal/cleanable/cobweb,
 /obj/structure/closet/crate/trashcart,
@@ -6513,16 +6440,6 @@
 /obj/item/clothing/head/hospitallerhelm,
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"gnG" = (
-/obj/structure/closet/l3closet/virology,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/sign/mechanicus{
-	pixel_x = -32
-	},
-/turf/simulated/floor/factory_floor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "gnO" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/storage/belt/medical/full,
@@ -6644,14 +6561,12 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "gtI" = (
-/obj/effect/floor_decal/turf/metal/nine,
-/obj/machinery/light/red{
+/obj/structure/closet/crate/trashcart,
+/obj/effect/floor_decal/newcorner/plating,
+/turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "gtR" = (
 /obj/structure/table/graf/rusty_table,
 /obj/random/loot/guardgear,
@@ -6717,20 +6632,11 @@
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/oa/security/armory)
 "gxt" = (
-/obj/effect/floor_decal/newcorner/white{
-	dir = 4
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 1
 	},
-/obj/structure/sign/warning/biohazard{
-	pixel_y = 32
-	},
-/obj/machinery/light/small{
-	dir = 1;
-	icon_state = "bulb1"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/turf/simulated/floor/greengrid,
+/area/cadiaoutpost/oa/medicae)
 "gyz" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/storage/firstaid/surgery{
@@ -6869,13 +6775,11 @@
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
 "gDO" = (
-/obj/effect/floor_decal/turf/metal/four,
-/obj/structure/table/steel_reinforced,
-/obj/item/device/radio/beacon,
+/obj/effect/floor_decal/turf/metal/ten,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "gEs" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 1
@@ -7077,18 +6981,16 @@
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/new_hive/caves)
 "gNZ" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/effect/floor_decal/industrial/warning_red{
-	icon_state = "warningcorner_red"
+/obj/effect/floor_decal/newcorner/white{
+	dir = 4
 	},
-/obj/effect/floor_decal/industrial/warning_red{
-	dir = 4;
-	icon_state = "warningcorner_red"
+/obj/machinery/light/small{
+	dir = 4
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "gOw" = (
 /obj/effect/floor_decal/newcorner/plating,
 /obj/item/gun/energy/las/laspistol{
@@ -7217,13 +7119,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"gUc" = (
-/obj/effect/floor_decal/turf/metal/three,
-/obj/machinery/optable,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "gUC" = (
 /obj/random/loot/meleespawner,
 /obj/random/loot/meleespawner,
@@ -7295,15 +7190,12 @@
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "gXE" = (
-/obj/effect/floor_decal/newcorner/white/solid,
-/obj/machinery/door/airlock/glass_virology{
-	name = "Quarantine Room 1";
-	req_one_access = list(10)
+/obj/effect/floor_decal/turf/metal/ten,
+/mob/living/simple_animal/hostile/undead/subject_11,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/turf/simulated/floor/factory_floor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "gXK" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 1
@@ -7367,12 +7259,16 @@
 	},
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "haY" = (
-/obj/effect/floor_decal/turf/metal/four,
-/obj/structure/table/steel_reinforced,
+/obj/effect/floor_decal/newcorner/white{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/loading{
+	dir = 8
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "hbi" = (
 /obj/machinery/light/small/red{
 	dir = 4
@@ -7416,11 +7312,12 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "hcp" = (
-/obj/effect/floor_decal/turf/metal/three,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/turf/unsimulated/wall/fakeglass{
+	dir = 6;
+	icon = 'icons/map_project/windows.dmi';
+	icon_state = "r_window"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "hcQ" = (
 /obj/effect/floor_decal/newcorner/red/quarter{
 	dir = 4
@@ -7661,7 +7558,7 @@
 	dir = 2;
 	maxhealth = 900;
 	name = "Medicae Secure";
-	req_one_access = list(5,230,211,213)
+	req_one_access = list(5,10,230,211,213)
 	},
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/medicae)
@@ -7872,14 +7769,8 @@
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/medicae)
 "hAI" = (
-/obj/effect/floor_decal/industrial/warning_red{
-	dir = 1
-	},
-/obj/machinery/light/small/red{
-	dir = 4
-	},
 /turf/simulated/floor/greengrid,
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "hAS" = (
 /obj/structure/table/rack/dark,
 /obj/item/reagent_containers/food/drinks/bottle/amasecpoor,
@@ -8033,15 +7924,14 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "hIf" = (
-/obj/structure/bed/chair/office/dark{
+/obj/effect/floor_decal/newcorner/white/solid,
+/obj/effect/wingrille_spawn/reinforced{
+	color = "grey"
+	},
+/turf/simulated/floor/factory_floor{
 	dir = 8
 	},
-/obj/effect/floor_decal/newcorner/green/solid,
-/obj/effect/landmark/start/mechanicus/biologis,
-/turf/simulated/floor/darkfloor{
-	dir = 1
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "hIg" = (
 /obj/effect/floor_decal/newcorner/train{
 	dir = 1
@@ -8173,11 +8063,19 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "hPg" = (
-/obj/effect/wingrille_spawn/reinforced/polarized/full/biosmithy,
-/turf/simulated/floor/factory_floor{
+/obj/effect/floor_decal/turf/plating,
+/obj/effect/floor_decal/industrial/warning_red{
+	icon_state = "warningcorner_red";
 	dir = 8
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/obj/machinery/light,
+/obj/structure/sign/mechanicus{
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/medicae)
 "hPs" = (
 /obj/machinery/light{
 	dir = 8;
@@ -8411,7 +8309,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "hYm" = (
 /obj/structure/table/rack/shelf{
 	color = "grey"
@@ -8834,14 +8732,14 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "ipV" = (
-/obj/structure/bed/chair/office/dark{
-	dir = 1
+/obj/machinery/light/small{
+	dir = 1;
+	icon_state = "bulb1"
 	},
-/obj/effect/floor_decal/newcorner/whitegreen/diagonal,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/turf/simulated/floor/factory_floor{
+	dir = 8
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "iqe" = (
 /obj/machinery/door/airlock/cone{
 	name = "Toilet"
@@ -8943,15 +8841,12 @@
 /area/cadiaoutpost/oa/villageinside/lab)
 "ixo" = (
 /obj/effect/floor_decal/newcorner/plating/quarter{
-	dir = 4
-	},
-/obj/effect/floor_decal/newcorner/green/corner{
 	dir = 1
 	},
 /turf/simulated/floor/darkfloor{
-	dir = 1
+	dir = 8
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "ixC" = (
 /obj/structure/sign/circus{
 	icon_state = "qw4"
@@ -9174,11 +9069,14 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/new_hive/caves)
 "iJE" = (
-/obj/effect/floor_decal/turf/metal/four,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/machinery/door/airlock/virology{
+	name = "Virology";
+	req_one_access = list(10)
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/turf/simulated/floor/factory_floor{
+	dir = 8
+	},
+/area/cadiaoutpost/new_hive/caves)
 "iJR" = (
 /obj/random/junk,
 /obj/random/junk,
@@ -9244,11 +9142,14 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "iLV" = (
-/obj/effect/floor_decal/turf/metal/eight,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/machinery/door/airlock/glass_virology{
+	name = "Quarantine Area";
+	req_one_access = list(10)
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/turf/simulated/floor/factory_floor{
+	dir = 8
+	},
+/area/cadiaoutpost/new_hive/caves)
 "iMB" = (
 /obj/structure/closet/crate,
 /obj/item/clothing/suit/armor/heretcoat,
@@ -9277,13 +9178,14 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "iOT" = (
-/obj/machinery/smartfridge/secure/virology{
-	color = "grey"
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 1
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/machinery/light/small/red{
+	dir = 4
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/turf/simulated/floor/greengrid,
+/area/cadiaoutpost/oa/medicae)
 "iPm" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 10
@@ -9390,12 +9292,14 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "iVa" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/machinery/light,
+/obj/effect/floor_decal/turf/metal/six,
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 1
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "iVl" = (
 /obj/machinery/light/blue{
 	dir = 1
@@ -9645,14 +9549,18 @@
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "jdP" = (
-/obj/machinery/door/airlock/glass_virology{
-	name = "Virology";
-	req_one_access = list(10)
-	},
-/turf/simulated/floor/factory_floor{
+/obj/effect/floor_decal/newcorner/white{
 	dir = 8
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb1";
+	light_color = "#234F1E"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "jdS" = (
 /obj/structure/closet/boxinggloves,
 /obj/machinery/light/small{
@@ -9940,11 +9848,12 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "juo" = (
-/obj/effect/floor_decal/newcorner/plating,
-/turf/simulated/floor/darkfloor{
-	dir = 8
+/obj/effect/floor_decal/turf/metal/three,
+/mob/living/simple_animal/hostile/mold/subject_08,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "jvj" = (
 /obj/structure/bed/chair{
 	dir = 8;
@@ -10023,17 +9932,12 @@
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
 "jxG" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/paper_bin{
-	pixel_y = 8
+/obj/machinery/disease2/diseaseanalyser,
+/obj/effect/floor_decal/newcorner/whitegreen/solid,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/obj/item/pen/multi{
-	pixel_y = 4
-	},
-/turf/simulated/floor/darkfloor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "jys" = (
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 2000;
@@ -10079,6 +9983,7 @@
 "jAN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/computer/operating,
+/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -10157,12 +10062,14 @@
 /turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/oa/service/inn)
 "jGN" = (
-/obj/machinery/disease2/isolator,
-/obj/effect/floor_decal/newcorner/whitegreen/solid,
+/obj/effect/floor_decal/turf/metal/two,
+/obj/machinery/light/red{
+	dir = 4
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "jGU" = (
 /obj/machinery/light/small{
 	dir = 8;
@@ -10184,20 +10091,20 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "jIG" = (
-/obj/effect/floor_decal/newcorner/plating/corner,
-/obj/effect/floor_decal/newcorner/green/quarter{
-	dir = 1
+/obj/effect/floor_decal/newcorner/white{
+	dir = 8
 	},
-/turf/simulated/floor/darkfloor{
-	dir = 1
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "jJT" = (
 /obj/structure/closet/crate/secure/biohazard,
-/turf/simulated/floor/greengrid{
-	dir = 4
+/obj/effect/floor_decal/newcorner/plating/quarter,
+/turf/simulated/floor/darkfloor{
+	dir = 8
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "jKi" = (
 /obj/effect/floor_decal/newcorner/green/quarter,
 /obj/item/flame/lighter/zippo{
@@ -10314,15 +10221,13 @@
 /turf/simulated/floor/ceramic/blackstone,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "jNu" = (
-/obj/structure/table/steel_reinforced,
-/obj/effect/floor_decal/newcorner/green/solid,
-/obj/item/device/radio/headset/headset_eng,
-/obj/item/device/radio/headset/headset_eng,
-/obj/item/device/radio/headset/headset_eng,
+/obj/machinery/organ_printer/robot/mapped,
+/obj/item/stack/material/steel/fifty,
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "jNG" = (
 /obj/item/storage/briefcase/crimekit,
 /obj/structure/closet/hive/metal{
@@ -10381,17 +10286,10 @@
 /turf/simulated/floor/surface_floor,
 /area/cadiaoutpost/new_hive/caves)
 "jQb" = (
-/obj/item/virusdish/random,
-/obj/item/virusdish/random,
-/obj/structure/table/rack/dark,
-/obj/item/storage/box/beakers,
-/obj/item/storage/box/beakers,
-/obj/effect/floor_decal/newcorner/whitegreen/solid,
-/obj/machinery/light,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/turf/simulated/floor/factory_floor{
+	dir = 8
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "jQo" = (
 /obj/structure/statue/column,
 /turf/simulated/floor/stone/crafted_floor,
@@ -10715,15 +10613,6 @@
 	icon_state = "dark1"
 	},
 /area/cadiaoutpost/oa/security/armory)
-"kfA" = (
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 4;
-	icon_state = "plating"
-	},
-/turf/simulated/floor/darkfloor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "kfE" = (
 /obj/machinery/door/unpowered/inn/berryfarm{
 	req_one_access = list(355,268);
@@ -10795,12 +10684,6 @@
 /obj/structure/hivedecor/statue8,
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"khM" = (
-/obj/effect/floor_decal/turf/metal/ten,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "khV" = (
 /obj/effect/water/bottom,
 /obj/effect/water/top,
@@ -10903,12 +10786,12 @@
 	},
 /area/cadiaoutpost/oa/security/armory)
 "klz" = (
-/obj/effect/floor_decal/turf/metal/six,
-/obj/effect/floor_decal/industrial/warning_red,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/turf/unsimulated/wall/fakeglass{
+	dir = 8;
+	icon = 'icons/map_project/windows.dmi';
+	icon_state = "r_window"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "kmb" = (
 /obj/machinery/shower{
 	dir = 8;
@@ -11020,22 +10903,20 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"kra" = (
-/obj/machinery/shower{
-	dir = 8;
-	icon_state = "shower"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "krl" = (
-/obj/effect/floor_decal/turf/metal/ten,
-/mob/living/simple_animal/hostile/undead/subject_11,
+/obj/effect/floor_decal/turf/metal/two,
+/obj/structure/bed{
+	icon = "icons/map_project/furniture_and_decor.dmi";
+	icon_state = "redebahia"
+	},
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "krr" = (
 /obj/structure/table/rack/dark,
 /obj/item/clothing/under/guard/uniform/sisterofbattle,
@@ -11067,25 +10948,6 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/security/armory)
-"ksQ" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/effect/floor_decal/industrial/warning_red{
-	icon_state = "warningcorner_red";
-	dir = 8
-	},
-/obj/effect/floor_decal/industrial/warning_red{
-	icon_state = "warningcorner_red"
-	},
-/obj/machinery/light,
-/obj/machinery/shower{
-	dir = 4;
-	icon_state = "shower"
-	},
-/obj/effect/floor_decal/industrial/hatch/blue,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "kuc" = (
 /obj/effect/floor_decal/turf/metal/ten,
 /obj/structure/iv_drip,
@@ -11206,11 +11068,19 @@
 	},
 /area/cadiaoutpost/oa/security/armory)
 "kAa" = (
-/obj/effect/floor_decal/newcorner/plating/quarter,
-/turf/simulated/floor/darkfloor{
-	dir = 8
+/obj/structure/table/rack/dark,
+/obj/item/device/antibody_scanner{
+	pixel_x = -8
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/obj/item/device/antibody_scanner,
+/obj/item/device/antibody_scanner{
+	pixel_x = 8
+	},
+/obj/effect/floor_decal/newcorner/whitegreen/solid,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "kAj" = (
 /obj/effect/floor_decal/industrial/warning/corner,
 /turf/simulated/floor/darkfloor{
@@ -11248,13 +11118,14 @@
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "kCf" = (
-/obj/item/storage/firstaid/surgery,
-/obj/structure/table/steel_reinforced,
-/obj/effect/floor_decal/newcorner/teal/solid,
-/turf/simulated/floor/darkfloor{
+/obj/structure/bed/chair/office/dark{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/obj/effect/floor_decal/newcorner/whitegreen/diagonal,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "kCF" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/device/healthanalyzer,
@@ -11292,16 +11163,20 @@
 	},
 /area/cadiaoutpost/oa/security/armory)
 "kEa" = (
-/obj/machinery/computer/operating,
-/obj/effect/floor_decal/newcorner/teal/solid,
-/obj/machinery/light{
+/obj/effect/floor_decal/newcorner/white{
+	dir = 8
+	},
+/obj/structure/sign/warning/biohazard{
+	pixel_y = 32
+	},
+/obj/machinery/light/small{
 	dir = 1;
-	icon_state = "tube1"
+	icon_state = "bulb1"
 	},
-/turf/simulated/floor/darkfloor{
-	dir = 1
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "kEO" = (
 /obj/effect/floor_decal/industrial/mark,
 /obj/structure/reagent_dispensers/watertank,
@@ -11350,15 +11225,12 @@
 /turf/simulated/floor/ceramic/surgery2,
 /area/cadiaoutpost/oa/security/armory)
 "kGU" = (
-/obj/structure/table/steel_reinforced,
-/obj/structure/reagent_dispensers/virusfood{
-	pixel_x = -32
+/obj/effect/floor_decal/industrial/warning_red,
+/obj/machinery/light/small/red{
+	dir = 4
 	},
-/obj/effect/floor_decal/newcorner/whitegreen/solid,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/turf/simulated/floor/greengrid,
+/area/cadiaoutpost/oa/medicae)
 "kHy" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 4;
@@ -11452,16 +11324,6 @@
 /obj/structure/stairs/south,
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"kMd" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/stack/medical/advanced/bruise_pack,
-/obj/item/stack/medical/advanced/ointment{
-	pixel_y = 4
-	},
-/turf/simulated/floor/darkfloor{
-	dir = 1
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "kMW" = (
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /turf/simulated/floor/tiled{
@@ -11608,11 +11470,14 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "kTn" = (
-/obj/machinery/light/small,
-/turf/simulated/floor/factory_floor{
-	dir = 8
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/gibs/robot/down,
+/obj/effect/floor_decal/turf/plating,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "kTz" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/storage/firstaid/regular{
@@ -11808,14 +11673,10 @@
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/new_hive/caves)
 "lbj" = (
-/obj/effect/floor_decal/turf/metal/two,
-/obj/structure/sign/medholo{
-	pixel_x = 32
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/obj/effect/water/top,
+/obj/effect/water/bottom,
+/turf/simulated/floor/exoplanet/water/shallow/lightless,
+/area/cadiaoutpost/oa/medicae)
 "lbn" = (
 /obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
@@ -11994,15 +11855,11 @@
 	},
 /area/cadiaoutpost/oa/security/armory)
 "llG" = (
-/obj/effect/floor_decal/turf/metal/nine,
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+/obj/effect/floor_decal/turf/plating,
+/turf/simulated/floor/darkfloor{
+	dir = 8
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "llS" = (
 /obj/structure/iv_drip,
 /obj/effect/floor_decal/newcorner/blue/diagonal,
@@ -12053,20 +11910,15 @@
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/new_hive/caves)
 "lqP" = (
-/obj/effect/floor_decal/newcorner/white{
-	dir = 8
+/obj/structure/closet/secure_closet/virology{
+	color = "grey";
+	req_one_access = list()
 	},
-/obj/structure/sign/warning/biohazard{
-	pixel_y = 32
-	},
-/obj/machinery/light/small{
-	dir = 1;
-	icon_state = "bulb1"
-	},
+/obj/effect/floor_decal/newcorner/whitegreen/solid,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "lro" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 4
@@ -12472,15 +12324,26 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
 "lLz" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
+/obj/structure/table/rack/dark,
+/obj/item/reagent_containers/dropper{
+	pixel_y = -10
+	},
+/obj/item/reagent_containers/dropper{
+	pixel_y = -6
+	},
+/obj/item/storage/lockbox/vials,
+/obj/effect/floor_decal/newcorner/whitegreen/solid,
+/obj/item/storage/lockbox/vials,
+/obj/item/reagent_containers/dropper{
+	pixel_y = -10
+	},
+/obj/item/reagent_containers/dropper{
+	pixel_y = -6
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "lMP" = (
 /obj/structure/torchwall/service{
 	dir = 1;
@@ -12657,14 +12520,21 @@
 /area/cadiaoutpost/oa/hallway/centralhall)
 "lRC" = (
 /obj/effect/floor_decal/turf/plating,
-/obj/structure/sign/inquisition{
-	name = "Xeno Research Lab";
-	pixel_x = -32
+/obj/effect/floor_decal/industrial/warning_red{
+	icon_state = "warningcorner_red";
+	dir = 1
+	},
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/obj/structure/sign/mechanicus{
+	pixel_x = 32
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "lRG" = (
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/factory_floor{
@@ -12684,14 +12554,14 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "lSb" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/effect/floor_decal/industrial/warning_red{
-	icon_state = "warningcorner_red"
-	},
+/obj/structure/table/rack/dark,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/effect/floor_decal/newcorner/whitegreen/solid,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "lSy" = (
 /obj/machinery/light/small/red{
 	dir = 8;
@@ -12846,25 +12716,12 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "mcl" = (
-/obj/item/robot_parts/robot_suit,
-/obj/item/robot_parts/robot_suit,
-/obj/item/robot_parts/chest,
-/obj/item/robot_parts/chest,
-/obj/item/robot_parts/head,
-/obj/item/robot_parts/head,
-/obj/item/robot_parts/l_arm,
-/obj/item/robot_parts/l_arm,
-/obj/item/robot_parts/l_leg,
-/obj/item/robot_parts/l_leg,
-/obj/item/robot_parts/r_arm,
-/obj/item/robot_parts/r_arm,
-/obj/item/robot_parts/r_leg,
-/obj/item/robot_parts/r_leg,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/darkfloor{
-	dir = 1
+/obj/machinery/disease2/isolator,
+/obj/effect/floor_decal/newcorner/whitegreen/solid,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "mcM" = (
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 1200;
@@ -13578,12 +13435,20 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "mQW" = (
-/obj/effect/floor_decal/turf/metal/three,
-/mob/living/simple_animal/hostile/mold/subject_08,
+/obj/effect/floor_decal/newcorner/white{
+	dir = 4
+	},
+/obj/structure/sign/warning/biohazard{
+	pixel_y = 32
+	},
+/obj/machinery/light/small{
+	dir = 1;
+	icon_state = "bulb1"
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "mQX" = (
 /obj/effect/floor_decal/newcorner/purple{
 	dir = 1
@@ -14041,15 +13906,6 @@
 	dir = 6
 	},
 /area/cadiaoutpost/new_hive/caves)
-"non" = (
-/obj/machinery/door/airlock/virology{
-	name = "Magos Biologis Office";
-	req_one_access = list(10)
-	},
-/turf/simulated/floor/factory_floor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "nor" = (
 /obj/effect/floor_decal/newcorner/red,
 /obj/effect/floor_decal/newcorner/red/corner{
@@ -14137,12 +13993,19 @@
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "nsI" = (
-/obj/machinery/organ_printer/flesh/mapped,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/darkfloor{
-	dir = 1
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/phoron{
+	color = "grey";
+	name = "Clinic"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/obj/structure/sign/mechanicus{
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/oa/medicae)
 "nsN" = (
 /obj/machinery/light/small/red,
 /obj/effect/floor_decal/newcorner/plating,
@@ -14229,18 +14092,16 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
 "nwp" = (
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
+/obj/effect/floor_decal/newcorner/white/solid,
+/obj/effect/floor_decal/newcorner/white/solid,
+/obj/machinery/door/airlock/glass_virology{
+	name = "Quarantine Room 4";
+	req_one_access = list(10)
 	},
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 1
+/turf/simulated/floor/factory_floor{
+	dir = 8
 	},
-/obj/effect/floor_decal/newcorner/green,
-/turf/simulated/floor/darkfloor{
-	dir = 1
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "nwL" = (
 /obj/structure/table/graf/old_table,
 /turf/simulated/floor/tiled{
@@ -14365,14 +14226,11 @@
 /turf/simulated/floor/ceramic/surgery2,
 /area/cadiaoutpost/new_hive/caves)
 "nAU" = (
-/obj/effect/floor_decal/turf/metal/seven,
-/obj/machinery/light/red{
-	dir = 4
-	},
+/obj/effect/floor_decal/turf/metal/two,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "nBs" = (
 /obj/effect/floor_decal/newcorner/plating/quarter{
 	dir = 1
@@ -14508,14 +14366,19 @@
 	},
 /area/cadiaoutpost/oa/security/armory)
 "nGl" = (
-/obj/machinery/door/airlock/virology{
-	name = "Surgery Bay";
-	req_one_access = list(10)
+/obj/effect/floor_decal/turf/metal,
+/obj/structure/bed{
+	icon = "icons/map_project/furniture_and_decor.dmi";
+	icon_state = "redebahia"
 	},
-/turf/simulated/floor/factory_floor{
-	dir = 8
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "nGs" = (
 /obj/structure/table/rack/dark,
 /obj/item/melee/classic_baton/trench_club,
@@ -14905,20 +14768,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"nYp" = (
-/obj/structure/table/rack/dark,
-/obj/item/device/antibody_scanner{
-	pixel_x = -8
-	},
-/obj/item/device/antibody_scanner,
-/obj/item/device/antibody_scanner{
-	pixel_x = 8
-	},
-/obj/effect/floor_decal/newcorner/whitegreen/solid,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "nZF" = (
 /obj/effect/wingrille_spawn/reinforced{
 	color = "grey"
@@ -15246,14 +15095,14 @@
 	},
 /area/cadiaoutpost/oa/security/armory)
 "onR" = (
-/obj/structure/table/rack/dark,
-/obj/item/reagent_containers/glass/beaker/large,
-/obj/item/reagent_containers/glass/beaker/large,
-/obj/effect/floor_decal/newcorner/whitegreen/solid,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 12
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/turf/simulated/floor/darkfloor{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/medicae)
 "onT" = (
 /obj/effect/floor_decal/newcorner/red{
 	dir = 1
@@ -15326,11 +15175,12 @@
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "orJ" = (
-/obj/effect/decal/cleanable/cobweb{
-	dir = 1
+/turf/unsimulated/wall/fakeglass{
+	dir = 1;
+	icon = 'icons/map_project/windows.dmi';
+	icon_state = "r_window"
 	},
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/oa/medicae)
 "orW" = (
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
 	name = "Imperialis Doorway - Deacon Office";
@@ -15438,16 +15288,6 @@
 /obj/item/card/id/key/grand/monastary/inner,
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"ouO" = (
-/obj/structure/closet/l3closet/virology,
-/obj/effect/floor_decal/industrial/hatch/blue,
-/obj/machinery/light/small{
-	dir = 8;
-	icon_state = "bulb1";
-	light_color = "#234F1E"
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/research/robotics)
 "owh" = (
 /obj/structure/table/rack/dark,
 /obj/item/storage/box/handcuffs,
@@ -15589,23 +15429,11 @@
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
 "oED" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/effect/floor_decal/industrial/warning_red{
-	dir = 4;
-	icon_state = "warningcorner_red"
+/obj/effect/floor_decal/newcorner/teal/diagonal,
+/turf/simulated/floor/darkfloor{
+	dir = 1
 	},
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/obj/machinery/shower{
-	dir = 4;
-	icon_state = "shower"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "oEE" = (
 /obj/structure/hivedecor/sarcofagus,
 /obj/structure/sign/plate{
@@ -15768,9 +15596,11 @@
 	},
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "oLp" = (
-/obj/structure/statue/xenotube,
-/turf/simulated/floor/greengrid,
-/area/cadiaoutpost/oa/research/robotics)
+/obj/machinery/light/small,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "oLr" = (
 /turf/simulated/floor/tiled{
 	color = "grey";
@@ -15783,19 +15613,6 @@
 	},
 /turf/simulated/floor/darkfloor{
 	dir = 8
-	},
-/area/cadiaoutpost/oa/research/robotics)
-"oLQ" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/virusdish,
-/obj/effect/floor_decal/newcorner/whitegreen/solid,
-/obj/item/virusdish/random,
-/obj/item/virusdish/random,
-/obj/item/virusdish/random,
-/obj/item/virusdish/random,
-/obj/item/virusdish/random,
-/turf/simulated/floor/tiled{
-	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "oLX" = (
@@ -15933,14 +15750,15 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "oSK" = (
-/obj/machinery/door/airlock/virology{
-	name = "Virology";
-	req_one_access = list(10)
+/obj/item/device/mmi,
+/obj/item/device/mmi,
+/obj/item/device/mmi,
+/obj/structure/table/rack,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/darkfloor{
+	dir = 1
 	},
-/turf/simulated/floor/factory_floor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "oUo" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 4
@@ -16083,11 +15901,12 @@
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
 "pbX" = (
-/obj/effect/floor_decal/turf/metal/nine,
+/obj/effect/floor_decal/turf/metal/five,
+/mob/living/simple_animal/hostile/nurgling,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "pdk" = (
 /obj/effect/floor_decal/newcorner/plating,
 /obj/effect/floor_decal/newcorner/red{
@@ -16135,13 +15954,15 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
 "pdQ" = (
-/obj/effect/floor_decal/turf/metal/eight,
-/obj/structure/table/steel_reinforced,
-/obj/item/reagent_containers/spray/sterilizine,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/effect/floor_decal/newcorner/white/solid,
+/obj/machinery/door/airlock/glass_virology{
+	name = "Quarantine Room 3";
+	req_one_access = list(10)
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/turf/simulated/floor/factory_floor{
+	dir = 8
+	},
+/area/cadiaoutpost/new_hive/caves)
 "pdV" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -16202,27 +16023,13 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/caves)
 "pge" = (
-/obj/structure/table/rack/dark,
-/obj/item/reagent_containers/glass/beaker/vial{
-	pixel_x = 10
+/obj/structure/table/steel_reinforced,
+/obj/item/book/manual/medical_diagnostics_manual,
+/obj/item/book/manual/engineering_construction,
+/turf/simulated/floor/darkfloor{
+	dir = 1
 	},
-/obj/item/reagent_containers/glass/beaker/vial{
-	pixel_x = 6
-	},
-/obj/item/reagent_containers/glass/beaker/vial{
-	pixel_x = 2
-	},
-/obj/item/reagent_containers/glass/beaker/vial{
-	pixel_x = -2
-	},
-/obj/item/reagent_containers/glass/beaker/vial{
-	pixel_x = -6
-	},
-/obj/effect/floor_decal/newcorner/whitegreen/solid,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "pgE" = (
 /obj/effect/floor_decal/newcorner/plating/corner{
 	dir = 1
@@ -16311,17 +16118,9 @@
 	},
 /area/cadiaoutpost/oa/security/armory)
 "pkJ" = (
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 4;
-	icon_state = "plating"
-	},
-/obj/effect/floor_decal/newcorner/green{
-	dir = 8
-	},
-/turf/simulated/floor/darkfloor{
-	dir = 1
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/obj/structure/statue/xenotube/off,
+/turf/simulated/floor/greengrid,
+/area/cadiaoutpost/oa/medicae)
 "pla" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 4;
@@ -16499,20 +16298,6 @@
 	name = "freezer floor"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"pvO" = (
-/obj/machinery/photocopier/faxmachine{
-	department = "Magos Biologis";
-	req_one_access = list()
-	},
-/obj/structure/table/steel_reinforced,
-/obj/effect/floor_decal/newcorner/plating/quarter{
-	dir = 1
-	},
-/obj/effect/floor_decal/newcorner/green/corner,
-/turf/simulated/floor/darkfloor{
-	dir = 1
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "pwu" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 8
@@ -16535,8 +16320,11 @@
 	icon_state = "torchwall0"
 	},
 /obj/effect/decal/cleanable/blood/gibs,
-/turf/simulated/floor/plating{
-	color = "grey"
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/plating,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
 "pyd" = (
@@ -16608,10 +16396,11 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "pCb" = (
-/turf/simulated/floor/greengrid{
-	dir = 4
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/obj/structure/closet/l3closet/virology,
+/obj/effect/floor_decal/industrial/hatch/blue,
+/obj/effect/floor_decal/newcorner/plating/quarter,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/medicae)
 "pCN" = (
 /obj/effect/floor_decal/newcorner/shaft/quarter{
 	dir = 1
@@ -16732,17 +16521,9 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/magistratumpost)
 "pFP" = (
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 8;
-	icon_state = "plating"
-	},
-/obj/effect/floor_decal/newcorner/green{
-	dir = 4
-	},
-/turf/simulated/floor/darkfloor{
-	dir = 1
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/obj/effect/floor_decal/industrial/warning_red,
+/turf/simulated/floor/greengrid,
+/area/cadiaoutpost/oa/medicae)
 "pFV" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -16770,34 +16551,21 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "pGY" = (
-/obj/effect/floor_decal/turf/metal/two,
-/obj/structure/bed{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "redebahia"
+/obj/structure/table/steel_reinforced,
+/obj/item/stack/medical/advanced/bruise_pack,
+/obj/item/stack/medical/advanced/ointment{
+	pixel_y = 4
 	},
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+/turf/simulated/floor/darkfloor{
+	dir = 1
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "pHr" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/effect/floor_decal/industrial/warning_red{
-	icon_state = "warningcorner_red"
+/obj/structure/closet/crate/secure/biohazard,
+/turf/simulated/floor/greengrid{
+	dir = 4
 	},
-/obj/machinery/light,
-/obj/machinery/shower{
-	dir = 4;
-	icon_state = "shower"
-	},
-/obj/effect/floor_decal/industrial/hatch/blue,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "pHs" = (
 /obj/effect/floor_decal/newcorner/stone,
 /obj/effect/floor_decal/newcorner/stone{
@@ -16857,15 +16625,11 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "pJm" = (
-/obj/structure/closet/secure_closet/virology{
-	color = "grey";
-	req_one_access = list()
-	},
-/obj/effect/floor_decal/newcorner/whitegreen/solid,
+/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "pJq" = (
 /obj/structure/table/rack,
 /obj/machinery/light/small/red{
@@ -17131,15 +16895,6 @@
 	},
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"pVT" = (
-/obj/machinery/door/airlock/virology{
-	name = "Magos Biologis Lab";
-	req_one_access = list(10)
-	},
-/turf/simulated/floor/factory_floor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "pWg" = (
 /obj/structure/closet/secure_closet/brig,
 /turf/simulated/floor/tiled{
@@ -17235,6 +16990,7 @@
 "qbD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -17492,16 +17248,13 @@
 /turf/simulated/floor/trench,
 /area/cadiaoutpost/new_hive/caves)
 "qqo" = (
-/obj/effect/floor_decal/turf/metal/seven,
-/obj/machinery/computer/operating,
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+/obj/item/storage/firstaid/surgery,
+/obj/structure/table/steel_reinforced,
+/obj/effect/floor_decal/newcorner/teal/solid,
+/turf/simulated/floor/darkfloor{
+	dir = 1
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "qqu" = (
 /turf/simulated/floor/tiled/freezer{
 	color = "grey"
@@ -17553,13 +17306,12 @@
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "qsg" = (
-/obj/effect/floor_decal/newcorner/white{
-	dir = 8
-	},
+/obj/effect/floor_decal/turf/metal/six,
+/obj/effect/floor_decal/industrial/warning_red,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "qsw" = (
 /obj/structure/table/graf/rusty_table,
 /obj/random/exploration/high,
@@ -17632,13 +17384,10 @@
 /turf/simulated/floor/ceramic/surgery2,
 /area/cadiaoutpost/oa/security/armory)
 "qvW" = (
-/obj/effect/water/bottom,
-/obj/effect/water/top,
-/obj/machinery/light/small/red{
-	dir = 1;
-	icon_state = "bulb1"
+/obj/effect/floor_decal/turf/metal,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/new_hive/caves)
 "qwl" = (
 /obj/structure/bed/chair/torture,
@@ -17846,15 +17595,13 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "qFv" = (
-/obj/effect/floor_decal/newcorner/green/diagonal,
-/obj/machinery/light/small{
-	dir = 4
+/obj/effect/floor_decal/industrial/warning_red,
+/obj/machinery/light/small/red{
+	dir = 8;
+	icon_state = "bulb1"
 	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "dark1"
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/turf/simulated/floor/greengrid,
+/area/cadiaoutpost/oa/medicae)
 "qGo" = (
 /obj/effect/floor_decal/newcorner/nbar{
 	dir = 10
@@ -17949,14 +17696,12 @@
 	},
 /area/cadiaoutpost/oa/service/inn)
 "qLb" = (
-/obj/effect/floor_decal/newcorner/white/solid,
-/obj/effect/wingrille_spawn/reinforced{
-	color = "grey"
+/turf/unsimulated/wall/fakeglass{
+	dir = 5;
+	icon = 'icons/map_project/windows.dmi';
+	icon_state = "r_window"
 	},
-/turf/simulated/floor/factory_floor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "qLd" = (
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -18121,15 +17866,12 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "qRH" = (
-/obj/effect/floor_decal/newcorner/whitegreen/diagonal,
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+/obj/machinery/optable,
+/obj/effect/floor_decal/newcorner/teal/solid,
+/turf/simulated/floor/darkfloor{
+	dir = 1
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "qSM" = (
 /obj/structure/sign/plate/stoneshrine{
 	pixel_y = 32
@@ -18430,20 +18172,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
-"rbH" = (
-/obj/structure/sign/inquisition{
-	name = "Xeno Research Lab";
-	pixel_x = 32
-	},
-/obj/effect/floor_decal/newcorner/green/diagonal,
-/obj/effect/floor_decal/industrial/loading{
-	dir = 1
-	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "dark1"
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "rbQ" = (
 /obj/structure/table/graf/rusty_table,
 /turf/unsimulated/floor{
@@ -18536,11 +18264,14 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
 "rfi" = (
-/obj/effect/floor_decal/turf/metal/six,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/structure/table/rack,
+/obj/item/storage/box/bodybags,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/light,
+/turf/simulated/floor/darkfloor{
+	dir = 1
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "rfp" = (
 /obj/effect/floor_decal/turf/metal/nine,
 /obj/effect/decal/cleanable/blood,
@@ -18640,12 +18371,11 @@
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "rkw" = (
-/obj/effect/floor_decal/turf/metal/three,
-/obj/machinery/light/red,
+/obj/effect/floor_decal/newcorner/whitegreen/diagonal,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "rlR" = (
 /obj/structure/warfare/barricade/sandbag,
 /turf/simulated/floor/plating/reinforced,
@@ -18737,14 +18467,12 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "rpz" = (
-/obj/structure/table/rack,
-/obj/item/storage/box/bodybags,
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/machinery/light,
-/turf/simulated/floor/darkfloor{
-	dir = 1
+/obj/structure/closet/wardrobe/virology_white,
+/obj/effect/floor_decal/newcorner/whitegreen/solid,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "rpL" = (
 /obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
@@ -18777,12 +18505,12 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "rrd" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/effect/floor_decal/industrial/loading,
-/turf/simulated/floor/darkfloor{
-	dir = 8
+/obj/structure/closet/l3closet/virology,
+/obj/effect/floor_decal/newcorner/whitegreen/solid,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "rrh" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/closet/hive/metal{
@@ -18799,15 +18527,12 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "rrL" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/effect/floor_decal/industrial/warning_red{
-	dir = 4;
-	icon_state = "warningcorner_red"
-	},
+/obj/machinery/computer/diseasesplicer,
+/obj/effect/floor_decal/newcorner/whitegreen/solid,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "rrN" = (
 /obj/effect/water/bottom{
 	color = "purple"
@@ -18835,13 +18560,16 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
 "rsj" = (
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 8
+/obj/structure/closet/l3closet/virology,
+/obj/effect/floor_decal/industrial/hatch/blue,
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb1";
+	light_color = "#234F1E"
 	},
-/turf/simulated/floor/darkfloor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/obj/effect/floor_decal/newcorner/plating/quarter,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/medicae)
 "rss" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 10
@@ -18958,13 +18686,6 @@
 /obj/item/reagent_containers/food/drinks/bottle/patron,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/hallway/centralhall)
-"rxM" = (
-/obj/machinery/light/small{
-	dir = 1;
-	icon_state = "bulb1"
-	},
-/turf/simulated/floor/tiled,
-/area/cadiaoutpost/new_hive/caves)
 "ryn" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 4
@@ -19151,16 +18872,16 @@
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "rHK" = (
-/obj/effect/floor_decal/newcorner/white/solid,
-/obj/effect/floor_decal/newcorner/white/solid,
-/obj/machinery/door/airlock/glass_virology{
-	name = "Quarantine Room 4";
-	req_one_access = list(10)
+/obj/machinery/disease2/antibodyanalyser,
+/obj/effect/floor_decal/newcorner/whitegreen/solid,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
 	},
-/turf/simulated/floor/factory_floor{
-	dir = 8
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "rIe" = (
 /obj/machinery/door/airlock/cone{
 	maxhealth = 3000;
@@ -19189,18 +18910,12 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "rJi" = (
-/obj/effect/floor_decal/newcorner/white{
-	dir = 8
-	},
-/obj/machinery/light/small{
-	dir = 8;
-	icon_state = "bulb1";
-	light_color = "#234F1E"
-	},
+/obj/machinery/disease2/incubator,
+/obj/effect/floor_decal/newcorner/whitegreen/solid,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "rJj" = (
 /obj/effect/floor_decal/turf/bar3{
 	dir = 1
@@ -19312,6 +19027,9 @@
 /obj/structure/torchwall{
 	dir = 8;
 	icon_state = "torchwall0"
+	},
+/obj/structure/sign/mechanicus{
+	pixel_x = 32
 	},
 /turf/simulated/floor/plating{
 	color = "grey"
@@ -19523,12 +19241,10 @@
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "sby" = (
-/obj/structure/bed{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "redebahia"
+/obj/effect/floor_decal/turf/metal/three,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/obj/item/clothing/suit/armor/bountyhunter,
-/turf/simulated/floor/new_wood,
 /area/cadiaoutpost/new_hive/caves)
 "sbV" = (
 /obj/structure/torchwall{
@@ -19567,9 +19283,15 @@
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/magistratumpost)
 "scP" = (
-/obj/machinery/door/unpowered/wattle,
-/turf/simulated/floor/factory_floor{
-	dir = 1
+/obj/item/virusdish/random,
+/obj/item/virusdish/random,
+/obj/structure/table/rack/dark,
+/obj/item/storage/box/beakers,
+/obj/item/storage/box/beakers,
+/obj/effect/floor_decal/newcorner/whitegreen/solid,
+/obj/machinery/light,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
 "scU" = (
@@ -19889,9 +19611,6 @@
 	dir = 6
 	},
 /area/cadiaoutpost/new_hive/caves)
-"ssx" = (
-/turf/simulated/floor/greengrid,
-/area/cadiaoutpost/oa/research/robotics)
 "ssF" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 1
@@ -20056,14 +19775,6 @@
 /obj/item/flame/candle/church,
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"sAL" = (
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 1
-	},
-/turf/simulated/floor/darkfloor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "sAR" = (
 /obj/effect/floor_decal/newcorner/plating,
 /turf/simulated/floor/dirty/tough,
@@ -20303,10 +20014,15 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "sJs" = (
-/obj/structure/closet/l3closet/virology,
-/obj/effect/floor_decal/industrial/hatch/blue,
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/research/robotics)
+/obj/effect/floor_decal/newcorner/white/solid,
+/obj/machinery/door/airlock/glass_virology{
+	name = "Quarantine Room 1";
+	req_one_access = list(10)
+	},
+/turf/simulated/floor/factory_floor{
+	dir = 8
+	},
+/area/cadiaoutpost/new_hive/caves)
 "sJu" = (
 /obj/structure/iv_drip,
 /obj/item/reagent_containers/ivbag/blood/OMinus,
@@ -20386,28 +20102,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
-"sNn" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/effect/floor_decal/industrial/warning_red{
-	dir = 4;
-	icon_state = "warningcorner_red"
-	},
-/obj/effect/floor_decal/industrial/warning_red{
-	dir = 1;
-	icon_state = "warningcorner_red"
-	},
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/obj/machinery/shower{
-	dir = 4;
-	icon_state = "shower"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "sNY" = (
 /obj/item/ammo_box/shotgun/msslug,
 /obj/item/ammo_magazine/c44/ap,
@@ -20571,14 +20265,13 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "sTE" = (
-/obj/structure/bed/chair{
-	dir = 4
+/obj/machinery/smartfridge/secure/virology{
+	color = "grey"
 	},
-/obj/effect/floor_decal/newcorner/green/solid,
-/turf/simulated/floor/darkfloor{
-	dir = 1
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "sTT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/spline/plain,
@@ -20618,13 +20311,16 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/armory)
 "sVV" = (
-/obj/machinery/organ_printer/robot/mapped,
-/obj/item/stack/material/steel/fifty,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/darkfloor{
-	dir = 1
+/obj/effect/floor_decal/newcorner/white{
+	dir = 8
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/obj/effect/floor_decal/industrial/loading{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "sWs" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/table/rack,
@@ -20784,12 +20480,6 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
-"tfr" = (
-/obj/effect/floor_decal/newcorner/green/solid,
-/turf/simulated/floor/darkfloor{
-	dir = 1
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "tfV" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/device/taperecorder,
@@ -21204,13 +20894,11 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/security/armory)
 "tAB" = (
-/obj/effect/floor_decal/newcorner/plating/quarter{
-	dir = 8
+/obj/effect/floor_decal/turf/metal/nine,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/turf/simulated/floor/darkfloor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "tAF" = (
 /obj/effect/floor_decal/turf/bar3,
 /turf/simulated/floor/tiled{
@@ -21290,6 +20978,7 @@
 	dir = 8;
 	icon_state = "torchwall0"
 	},
+/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -21429,6 +21118,7 @@
 "tIZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/chair/wheelchair,
+/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -21446,9 +21136,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
 "tKI" = (
-/turf/simulated/wall/ancient{
-	color = "grey"
-	},
+/turf/simulated/wall/techno,
 /area/cadiaoutpost/oa/medicae)
 "tKT" = (
 /turf/simulated/floor/darkwood,
@@ -21667,17 +21355,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"tWk" = (
-/obj/effect/floor_decal/newcorner/white{
-	dir = 8
-	},
-/obj/effect/floor_decal/industrial/loading{
-	dir = 4
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "tWr" = (
 /obj/structure/bed/chair/wood/simple{
 	dir = 8
@@ -21707,6 +21384,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/unary/cryo_cell,
 /obj/effect/decal/cleanable/blood/gibs/vomit,
+/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -21822,6 +21500,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/optable,
 /obj/effect/decal/cleanable/blood/gibs/vomit,
+/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -21856,11 +21535,11 @@
 	},
 /area/cadiaoutpost/oa/security/armory)
 "ubK" = (
-/obj/effect/floor_decal/turf/metal,
+/obj/effect/floor_decal/newcorner/plating/quarter,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "ubZ" = (
 /obj/machinery/light/small/red{
 	dir = 4
@@ -21933,25 +21612,10 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"ueA" = (
-/obj/machinery/light/small{
-	dir = 1;
-	icon_state = "bulb1"
-	},
-/turf/simulated/floor/factory_floor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "ueY" = (
 /obj/structure/grille/metal_bars/cell,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
-"ufg" = (
-/obj/effect/floor_decal/industrial/warning_red{
-	dir = 1
-	},
-/turf/simulated/floor/greengrid,
-/area/cadiaoutpost/oa/research/robotics)
 "ufB" = (
 /obj/structure/telearray/upperleft,
 /obj/effect/floor_decal/turf/bloodbar/off,
@@ -22122,10 +21786,27 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/armory)
 "uvc" = (
-/turf/simulated/floor/factory_floor{
-	dir = 8
+/obj/effect/floor_decal/turf/plating,
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 4;
+	icon_state = "warningcorner_red"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 1;
+	icon_state = "warningcorner_red"
+	},
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/obj/machinery/shower{
+	dir = 4;
+	icon_state = "shower"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/medicae)
 "uvC" = (
 /obj/structure/closet/secure_closet/hop2{
 	color = "grey";
@@ -22366,13 +22047,6 @@
 /obj/structure/stairs/south,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/caves)
-"uGx" = (
-/obj/machinery/disease2/incubator,
-/obj/effect/floor_decal/newcorner/whitegreen/solid,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "uHF" = (
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tilethick";
@@ -22426,13 +22100,13 @@
 	},
 /area/cadiaoutpost/oa/security/armory)
 "uJG" = (
-/obj/machinery/door/airlock/research{
-	name = "Biosmithy"
+/obj/effect/floor_decal/turf/metal/three,
+/mob/living/simple_animal/hostile/broken_servitor/subject_03,
+/obj/machinery/light/red,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/turf/simulated/floor/factory_floor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "uJZ" = (
 /turf/simulated/floor/tiled/freezer,
 /area/cadiaoutpost/new_hive/caves)
@@ -22455,6 +22129,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -22884,6 +22559,7 @@
 "vlb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/tank/oxygen,
+/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -23156,11 +22832,11 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
 "vzi" = (
-/obj/structure/closet/crate,
-/obj/machinery/light/small,
-/obj/item/handcuffs/cable/yellow,
-/turf/simulated/floor/new_wood/six,
-/area/cadiaoutpost/new_hive/caves)
+/obj/effect/floor_decal/turf/metal/four,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/medicae)
 "vzr" = (
 /obj/structure/table/rack/dark,
 /obj/random/loot/randomammo1,
@@ -23433,23 +23109,17 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "vLE" = (
-/obj/structure/closet/crate/trashcart,
-/obj/effect/floor_decal/newcorner/plating,
-/turf/simulated/floor/darkfloor{
-	dir = 8
+/obj/effect/floor_decal/turf/metal/nine,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "vMn" = (
-/obj/structure/closet/l3closet/virology,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+/obj/effect/floor_decal/turf/metal/ten,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/turf/simulated/floor/factory_floor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "vMo" = (
 /obj/structure/bed/chair/wood/simple{
 	dir = 8
@@ -23601,11 +23271,15 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/magistratumpost)
 "vSy" = (
-/obj/effect/floor_decal/turf/metal/seven,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/effect/floor_decal/newcorner/white/solid,
+/obj/machinery/door/airlock/glass_virology{
+	name = "Quarantine Room 2";
+	req_one_access = list(10)
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/turf/simulated/floor/factory_floor{
+	dir = 8
+	},
+/area/cadiaoutpost/new_hive/caves)
 "vSA" = (
 /obj/effect/floor_decal/turf/metal/ten,
 /turf/simulated/floor/factory_floor{
@@ -23613,15 +23287,12 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "vSB" = (
-/obj/effect/floor_decal/newcorner/white/solid,
-/obj/machinery/door/airlock/glass_virology{
-	name = "Quarantine Room 3";
-	req_one_access = list(10)
+/turf/unsimulated/wall/fakeglass{
+	dir = 4;
+	icon = 'icons/map_project/windows.dmi';
+	icon_state = "r_window"
 	},
-/turf/simulated/floor/factory_floor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "vSV" = (
 /obj/structure/bookcase,
 /obj/item/book/manual{
@@ -23968,30 +23639,26 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
-"wmz" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/paper_bin{
-	pixel_y = 8
-	},
-/obj/item/pen/multi{
-	pixel_y = 4
-	},
-/obj/machinery/light,
-/obj/effect/floor_decal/newcorner/green/solid,
+"wmV" = (
+/obj/item/robot_parts/robot_suit,
+/obj/item/robot_parts/robot_suit,
+/obj/item/robot_parts/chest,
+/obj/item/robot_parts/chest,
+/obj/item/robot_parts/head,
+/obj/item/robot_parts/head,
+/obj/item/robot_parts/l_arm,
+/obj/item/robot_parts/l_arm,
+/obj/item/robot_parts/l_leg,
+/obj/item/robot_parts/l_leg,
+/obj/item/robot_parts/r_arm,
+/obj/item/robot_parts/r_arm,
+/obj/item/robot_parts/r_leg,
+/obj/item/robot_parts/r_leg,
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/research/robotics)
-"wmV" = (
-/obj/machinery/light/small{
-	dir = 1;
-	icon_state = "bulb1"
-	},
-/obj/effect/floor_decal/turf/plating,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "wng" = (
 /obj/machinery/button/remote/blast_door/id_scan{
 	name = "pristine ID lock";
@@ -24037,12 +23704,14 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
 "woU" = (
-/obj/structure/closet/l3closet/virology,
-/obj/effect/floor_decal/newcorner/whitegreen/solid,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/plating,
+/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
-	color = "grey"
+	color = "grey";
+	icon_state = "white1"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "wpt" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 4
@@ -24243,17 +23912,12 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "wyt" = (
-/obj/effect/floor_decal/turf/metal,
-/obj/structure/sink{
-	dir = 8;
-	icon_state = "sink";
-	pixel_x = -12;
-	color = "grey"
+/obj/machinery/organ_printer/flesh/mapped,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/darkfloor{
+	dir = 1
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "wyK" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 4
@@ -24636,6 +24300,7 @@
 /obj/structure/table/standard{
 	color = "grey"
 	},
+/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -24689,12 +24354,11 @@
 	},
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "wTK" = (
-/obj/machinery/computer/diseasesplicer,
-/obj/effect/floor_decal/newcorner/whitegreen/solid,
+/obj/effect/floor_decal/turf/metal/eight,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "wTR" = (
 /obj/machinery/photocopier,
 /obj/effect/floor_decal/newcorner/green/solid,
@@ -24823,13 +24487,15 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/villageinside/lab)
 "wYf" = (
-/obj/effect/floor_decal/turf/metal/three,
-/obj/structure/table/steel_reinforced,
-/obj/item/storage/firstaid/surgery,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/machinery/door/airlock/phoron{
+	color = "grey";
+	name = "Clinic";
+	req_one_access = list(10)
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/turf/simulated/floor/factory_floor{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/medicae)
 "wYS" = (
 /obj/effect/floor_decal/newcorner/shaft{
 	dir = 8
@@ -24904,22 +24570,12 @@
 	},
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "wZX" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/effect/floor_decal/industrial/warning_red{
-	icon_state = "warningcorner_red";
-	dir = 1
+/turf/unsimulated/wall/fakeglass{
+	dir = 10;
+	icon = 'icons/map_project/windows.dmi';
+	icon_state = "r_window"
 	},
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/obj/structure/sign/mechanicus{
-	pixel_x = 32
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "xaV" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 8
@@ -24942,12 +24598,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"xbz" = (
-/obj/machinery/door/airlock/engineering,
-/turf/simulated/floor/factory_floor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "xbF" = (
 /obj/structure/table/graf/rusty_table,
 /obj/random/loot/tech1,
@@ -25317,13 +24967,15 @@
 	},
 /area/cadiaoutpost/oa/security/armory)
 "xpa" = (
-/obj/effect/floor_decal/industrial/warning_red,
-/obj/machinery/light/small/red{
-	dir = 8;
-	icon_state = "bulb1"
+/obj/structure/table/steel_reinforced,
+/obj/structure/reagent_dispensers/virusfood{
+	pixel_x = -32
 	},
-/turf/simulated/floor/greengrid,
-/area/cadiaoutpost/oa/research/robotics)
+/obj/effect/floor_decal/newcorner/whitegreen/solid,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "xpi" = (
 /obj/structure/statue/verina{
 	color = "grey";
@@ -25401,16 +25053,11 @@
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/oa/security/armory)
 "xtk" = (
-/obj/effect/floor_decal/newcorner/white{
-	dir = 4
-	},
-/obj/machinery/light/small{
-	dir = 4
-	},
+/obj/effect/floor_decal/turf/metal/four,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "xtw" = (
 /obj/item/clothing/shoes/jackboots/cadian,
 /obj/item/clothing/gloves/combat/cadian,
@@ -25698,27 +25345,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/armory)
-"xEe" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/structure/sign/warning/biohazard{
-	pixel_x = 32
-	},
-/obj/structure/sign/warning/biohazard{
-	pixel_x = -32
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "xEJ" = (
-/obj/effect/floor_decal/turf/metal/six,
-/obj/effect/floor_decal/industrial/warning_red{
-	dir = 4
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 1
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
+/turf/simulated/floor/darkfloor{
+	dir = 8
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/medicae)
 "xFB" = (
 /obj/machinery/door/airlock/arbiter{
 	color = "grey";
@@ -26015,12 +25649,15 @@
 	},
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "xRg" = (
-/obj/machinery/disease2/diseaseanalyser,
-/obj/effect/floor_decal/newcorner/whitegreen/solid,
+/obj/effect/floor_decal/newcorner/whitegreen/diagonal,
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "xRh" = (
 /obj/structure/catwalkrust/blocked,
 /obj/machinery/light/small/red{
@@ -26359,14 +25996,11 @@
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/new_hive/caves)
 "yhM" = (
-/obj/effect/floor_decal/turf/metal/six,
-/obj/effect/floor_decal/industrial/warning_red{
-	dir = 1
-	},
+/obj/effect/floor_decal/turf/metal/eight,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/new_hive/caves)
 "yke" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /obj/structure/forge,
@@ -66899,7 +66533,7 @@ lPf
 lPf
 lPf
 lPf
-lPf
+dEu
 lPf
 lPf
 lPf
@@ -67154,8 +66788,8 @@ tKI
 tKI
 tKI
 tKI
-tKI
-wcj
+bYK
+pxR
 gDl
 lPf
 lPf
@@ -67396,12 +67030,12 @@ lPf
 lPf
 gpl
 gpl
-gpl
+dYN
 gpl
 hvC
 tKI
 sjk
-lDW
+jzs
 tSI
 lDW
 lDW
@@ -67646,11 +67280,11 @@ wcj
 lPf
 lPf
 gpl
-wcj
-wcj
-wcj
-wcj
-wcj
+pxR
+tKI
+tKI
+tKI
+tKI
 tKI
 lDW
 lDW
@@ -67769,16 +67403,16 @@ tUs
 tUs
 tUs
 tUs
-pVT
-tUs
-hPg
-hPg
-tUs
-uJG
 tUs
 tUs
 tUs
-xbz
+tUs
+tUs
+tUs
+tUs
+tUs
+tUs
+tUs
 tUs
 tUs
 tUs
@@ -67898,11 +67532,11 @@ lPf
 lPf
 dID
 gpl
-wcj
-tOB
-tOB
-tOB
-tOB
+pxR
+tKI
+tKI
+tKI
+tKI
 tKI
 bPU
 lDW
@@ -68015,22 +67649,22 @@ slE
 slE
 slE
 ntH
-kni
-kni
-tUs
-pvO
-pFP
-pFP
-pFP
-tUs
-dYN
-eki
-eki
-eki
-sVV
-tUs
-eUx
-oYr
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 tUs
 xWg
 wDw
@@ -68151,10 +67785,10 @@ lPf
 gpl
 wcj
 wcj
-tOB
-tOB
-tOB
-tOB
+tKI
+ugQ
+lDW
+xhn
 tKI
 uqx
 dFD
@@ -68162,7 +67796,7 @@ hQb
 bMN
 dFD
 lDW
-nDV
+eXO
 inE
 gDl
 gDl
@@ -68268,21 +67902,21 @@ slE
 slE
 ntH
 ntH
-kni
-tUs
-cta
-tfr
-sTE
-tfr
-tUs
-mcl
-eki
-eki
-eki
-nsI
-tUs
-eUx
-oYr
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 tUs
 vQn
 bjh
@@ -68403,10 +68037,10 @@ hvC
 wcj
 tOB
 tOB
-tOB
-tOB
-tOB
-wcj
+tKI
+wvR
+lDW
+lDW
 tKI
 hiz
 lDW
@@ -68520,21 +68154,21 @@ slE
 slE
 ntH
 ntH
-kni
-tUs
-cta
-jNu
-eUi
-wmz
-tUs
-kEa
-eki
-eki
-eki
-rpz
-tUs
-wmV
-oYr
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 tUs
 vQn
 bjh
@@ -68655,12 +68289,12 @@ gpl
 wcj
 tOB
 tOB
-tOB
-tOB
-tOB
-khV
 tKI
-jzs
+vXb
+lDW
+wZe
+mQi
+lDW
 lDW
 kwV
 lDW
@@ -68772,21 +68406,21 @@ slE
 slE
 ntH
 ntH
-kni
-tUs
-nwp
-pCb
-hIf
-tfr
-tUs
-fRq
-eki
-eki
-eki
-eki
-uJG
-oYr
-oYr
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 tUs
 xWg
 vPn
@@ -68907,10 +68541,10 @@ wcj
 tOB
 tOB
 tOB
-tOB
-tOB
-wcj
-khV
+tKI
+kpo
+dnO
+oNM
 tKI
 ofI
 rQA
@@ -69024,21 +68658,21 @@ slE
 slE
 ntH
 ntH
-kni
-tUs
-cta
-pCb
-jIG
-pkJ
-tUs
-kCf
-eXO
-kMd
-fJV
-fYo
-tUs
-oYr
-oYr
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 tUs
 tUs
 tUs
@@ -69159,9 +68793,9 @@ wcj
 tOB
 tOB
 tOB
-tOB
-tOB
-gpl
+tKI
+tKI
+tKI
 tKI
 tKI
 tKI
@@ -69276,29 +68910,29 @@ slE
 slE
 ntH
 ntH
-kni
-tUs
-ixo
-pkJ
-eow
-tUs
-tUs
-tUs
-tUs
-tUs
-tUs
-tUs
-oYr
-oYr
-oYr
-tUs
-tUs
-sJs
-ouO
-sJs
-tUs
-kni
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 ntH
 ntH
 ntH
@@ -69413,13 +69047,13 @@ tOB
 tOB
 tOB
 tOB
-wcj
+tOB
 tKI
 dRd
 exo
 tIZ
-lDW
-lDW
+auA
+auA
 bax
 exL
 tKI
@@ -69528,38 +69162,38 @@ slE
 slE
 ntH
 ntH
-kni
-tUs
-non
-tUs
-tUs
-tUs
-tUs
-tUs
-gnG
-vMn
-gnG
-tUs
-oYr
-oYr
-eLy
-xEe
-jdP
-kra
-wUD
-kra
-tUs
-kni
-kni
-kni
-kni
-kni
-kni
-kni
-kni
-kni
-kni
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 tOB
 tOB
 tOB
@@ -69664,24 +69298,24 @@ tOB
 tOB
 tOB
 tOB
-wcj
-wcj
+tOB
+tOB
 tKI
 vlb
 eiV
 dFD
-lDW
+auA
 dFD
-lDW
+auA
 uLj
 tKI
 gDl
 gDl
-kPd
-hqo
-scP
-hqo
-hqo
+lPf
+lPf
+lPf
+lPf
+lPf
 gDl
 khV
 khV
@@ -69780,38 +69414,38 @@ slE
 slE
 ntH
 ntH
-kni
-tUs
-dWB
-qFv
-rbH
-pVT
-rrd
-oYr
-dWi
-dWi
-dWi
-dWi
-dWi
-tUs
-tUs
-tUs
-tUs
-tUs
-wUD
-tUs
-tUs
-tUs
-tUs
-tUs
-tUs
-tUs
-tUs
-tUs
-tUs
-tUs
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 tOB
 tOB
 tOB
@@ -69915,25 +69549,25 @@ tOB
 tOB
 tOB
 tOB
-wcj
-wcj
-khV
+tOB
+tOB
+tOB
 tKI
 agz
 emk
-lDW
-lDW
-lDW
-lDW
+woU
+auA
+auA
+auA
 bax
 tKI
 gDl
 gDl
+dEu
 lPf
-hqo
-aWx
-dUg
-hqo
+lPf
+lPf
+lPf
 gDl
 tOu
 wcj
@@ -70032,38 +69666,38 @@ slE
 slE
 ntH
 ntH
-kni
-tUs
-tUs
-tUs
-tUs
-tUs
-oED
-cbw
-kAa
-dWi
-cbw
-kAa
-pHr
-tUs
-tUs
-tUs
-tUs
-tUs
-oSK
-tUs
-iOT
-tUs
-tUs
-pbX
-enm
-iLV
-tUs
-pbX
-enm
-iLV
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 tOB
 tOB
 tOB
@@ -70167,25 +69801,25 @@ tOB
 tOB
 tOB
 tOB
-wcj
-qvW
-khV
+tOB
+tOB
+tOB
 tKI
 tXb
 eiV
-lDW
+auA
 bax
-vce
+kTn
 tKI
 tKI
 tKI
 tKI
 tKI
 tKI
-hqo
-sby
-vzi
-hqo
+lPf
+lPf
+lPf
+lPf
 gDl
 khV
 wcj
@@ -70284,38 +69918,38 @@ slE
 slE
 ntH
 ntH
-kni
-kni
-tUs
-pbX
-iLV
-fNc
-yhM
-sAL
-vLE
-jJT
-sAL
-juo
-klz
-fNc
-pbX
-iLV
-tUs
-kGU
-bnf
-hYj
-bnf
-nYp
-tUs
-iJE
-pCb
-hcp
-tUs
-iJE
-pCb
-hcp
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 tOB
 tOB
 tOB
@@ -70419,25 +70053,25 @@ tOB
 tOB
 tOB
 tOB
-wcj
-khV
-khV
+tOB
+tOB
+tOB
 tKI
 wRH
 emk
 dFD
-lDW
-lDW
+auA
+auA
 nPR
 tKI
 hzy
 gWq
 tgX
 tKI
-hqo
-hqo
-hqo
-hqo
+lPf
+lPf
+lPf
+lPf
 gDl
 khV
 tpQ
@@ -70537,37 +70171,37 @@ slE
 ntH
 ntH
 ntH
-kni
-tUs
-ajj
-hcp
-xHL
-yhM
-sAL
-vLE
-pCb
-sAL
-juo
-klz
-xHL
-iJE
-cSe
-tUs
-wTK
-bnf
-bnf
-bnf
-dcM
-tUs
-khM
-eKk
-vSy
-tUs
-khM
-eKk
-vSy
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 tOB
 tOB
 tOB
@@ -70671,16 +70305,16 @@ tOB
 tOB
 tOB
 tOB
-wcj
-khV
-khV
+tOB
+tOB
+tOB
 tKI
 aIx
 vcc
-lDW
-lDW
-lDW
-lDW
+auA
+auA
+auA
+auA
 hpf
 oHZ
 bSd
@@ -70789,37 +70423,37 @@ slE
 ntH
 ntH
 ntH
-kni
-tUs
-khM
-vSy
-nrm
-yhM
-cHW
-tAB
-pCb
-cHW
-tAB
-klz
-nrm
-khM
-vSy
-tUs
-jGN
-ipV
-bnf
-bnf
-pge
-tUs
-qLb
-gXE
-qLb
-tUs
-qLb
-vSB
-qLb
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 tOB
 tOB
 tOB
@@ -70928,8 +70562,8 @@ tKI
 tKI
 tKI
 tKI
-lDW
-lDW
+auA
+auA
 tDB
 bQi
 tDB
@@ -70937,7 +70571,7 @@ tKI
 tKI
 kbH
 sKx
-tKI
+bYK
 khV
 gDl
 gDl
@@ -71041,37 +70675,37 @@ slE
 ntH
 ntH
 ntH
-kni
-tUs
-tUs
-tUs
-tUs
-sNn
-oYr
-dWi
-dWi
-dWi
-oYr
-ksQ
-tUs
-tUs
-tUs
-tUs
-cki
-bnf
-bnf
-bnf
-jQb
-tUs
-lqP
-tWk
-qsg
-rJi
-qsg
-tWk
-qsg
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 tOB
 tOB
 tOB
@@ -71176,11 +70810,11 @@ tOB
 tOB
 tOB
 tKI
-ugQ
-lDW
-xhn
 tKI
-lDW
+tKI
+tKI
+auA
+auA
 dFD
 tKI
 tKI
@@ -71192,21 +70826,21 @@ tKI
 tKI
 khV
 gDl
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
-slE
-slE
-slE
-slE
-tOB
-tOB
-slE
-slE
-tOB
+pxR
+pxR
+iJE
+pxR
+pxR
+pxR
+pxR
+pxR
+pxR
+pxR
+pxR
+pxR
+pxR
+pxR
+pxR
 tOB
 tOB
 tOB
@@ -71293,37 +70927,37 @@ slE
 ntH
 ntH
 ntH
-kni
-tUs
-pbX
-iLV
-fNc
-yhM
-cbw
-aYA
-pCb
-cbw
-kAa
-klz
-fNc
-pbX
-iLV
-tUs
-oLQ
-bnf
-bnf
-bnf
-bnf
-biE
-wUD
-wUD
-wUD
-wUD
-wUD
-wUD
-gVk
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 tOB
 tOB
 tOB
@@ -71428,14 +71062,14 @@ tOB
 tOB
 tOB
 tKI
-wvR
-lDW
-lDW
-mQi
-lDW
-lDW
 tKI
-lDW
+tKI
+auA
+auA
+auA
+auA
+tKI
+auA
 nKj
 jAN
 tKI
@@ -71444,21 +71078,21 @@ khV
 khV
 khV
 pLk
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
-tOB
+pxR
+pxR
+rkw
+pxR
+sTE
+pxR
+pxR
+tAB
+nGl
+yhM
+pxR
+tAB
+nGl
+yhM
+pxR
 tOB
 tOB
 tOB
@@ -71545,37 +71179,37 @@ slE
 ntH
 ntH
 ntH
-kni
-tUs
-ajj
-mQW
-xHL
-yhM
-sAL
-juo
-jJT
-sAL
-juo
-klz
-xHL
-iJE
-rkw
-tUs
-xRg
-ipV
-bnf
-bnf
-bnf
-tUs
-gxt
-aOi
-bYK
-xtk
-bYK
-aOi
-bYK
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 tOB
 tOB
 tOB
@@ -71679,16 +71313,16 @@ tOB
 tOB
 tOB
 tOB
-tKI
-vXb
-lDW
-wZe
-tKI
-lDW
+bYK
+auA
+auA
+auA
+auA
+auA
 qbD
-mQi
-lDW
-lDW
+nsI
+auA
+auA
 uaA
 tKI
 khV
@@ -71696,21 +71330,21 @@ gDl
 gDl
 gDl
 gDl
-tpQ
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
-tOB
+pxR
+xpa
+rkw
+hYj
+rkw
+kAa
+pxR
+xtk
+fQo
+sby
+pxR
+xtk
+fQo
+sby
+pxR
 tOB
 tOB
 tOB
@@ -71797,37 +71431,37 @@ slE
 ntH
 ntH
 ntH
-kni
-tUs
-khM
-vSy
-nrm
-yhM
-sAL
-juo
-pCb
-sAL
-juo
-klz
-nrm
-krl
-vSy
-tUs
-uGx
-bnf
-bnf
-bnf
-bnf
-tUs
-qLb
-diG
-qLb
-tUs
-qLb
-rHK
-qLb
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 tOB
 tOB
 tOB
@@ -71932,37 +71566,37 @@ tOB
 tOB
 tOB
 tKI
-kpo
-dnO
-oNM
-tKI
+auA
+auA
+auA
+auA
 pxZ
-lDW
+auA
 tKI
 dFD
-lDW
+auA
 baD
-tKI
+bYK
 khV
 gDl
 tOB
 tpQ
 tpQ
-kIF
-tpQ
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
-slE
-tOB
+pxR
+rrL
+rkw
+rkw
+rkw
+lLz
+pxR
+vMn
+nAU
+fRq
+pxR
+vMn
+nAU
+fRq
+pxR
 tOB
 slE
 slE
@@ -72049,37 +71683,37 @@ slE
 ntH
 ntH
 ntH
-kni
-tUs
-tUs
-tUs
-tUs
-wZX
-cHW
-tAB
-dWi
-cHW
-tAB
-dVb
-tUs
-tUs
-tUs
-tUs
-tUs
-tUs
-uvc
-uvc
-uvc
-tUs
-pbX
-ubK
-iLV
-tUs
-pbX
-ubK
-iLV
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 tOB
 tOB
 tOB
@@ -72184,12 +71818,12 @@ tOB
 tOB
 tOB
 tKI
+bnf
 tKI
 tKI
 tKI
 tKI
-tKI
-tKI
+wYf
 tKI
 tKI
 tKI
@@ -72200,21 +71834,21 @@ gDl
 tpQ
 kIF
 kIF
-kIF
-tpQ
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
-slE
-slE
+pxR
+mcl
+kCf
+rkw
+rkw
+fJV
+pxR
+hIf
+sJs
+hIf
+pxR
+hIf
+pdQ
+hIf
+pxR
 tOB
 slE
 hqB
@@ -72301,37 +71935,37 @@ slE
 ntH
 ntH
 ntH
-kni
-kni
-kni
-tUs
-tUs
-tUs
-tUs
-ueA
-uvc
-kTn
-tUs
-tUs
-tUs
-tUs
 ntH
 ntH
 ntH
-tUs
-woU
-bnf
-onR
-tUs
-iJE
-pCb
-hcp
-tUs
-iJE
-pCb
-hcp
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 tOB
 tOB
 tOB
@@ -72431,19 +72065,19 @@ dID
 gpl
 gpl
 qba
-wcj
-tOB
-tOB
-tOB
-tpQ
-tpQ
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tpQ
+tKI
+tKI
+tKI
+tKI
+tKI
+auA
+tKI
+oSK
+oED
+oED
+oED
+jNu
+tKI
 khV
 khV
 khV
@@ -72452,21 +72086,21 @@ gDl
 tpQ
 kIF
 kIF
-kIF
-kIF
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
+pxR
+rHK
+rkw
+rkw
+rkw
+scP
+pxR
+kEa
+sVV
+jIG
+jdP
+jIG
+sVV
+jIG
+pxR
 slE
 slE
 hqB
@@ -72555,35 +72189,35 @@ ntH
 ntH
 ntH
 ntH
-kni
-tUs
-oLp
-xpa
-fNc
-cbw
-rWo
-kAa
-fNc
-cwq
-oLp
-tUs
 ntH
 ntH
 ntH
-tUs
-pJm
-bnf
-ccQ
-tUs
-khM
-pGY
-vSy
-tUs
-khM
-pGY
-vSy
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 tOB
 tOB
 tOB
@@ -72683,19 +72317,19 @@ gpl
 gpl
 gpl
 dID
-wcj
-tOB
-tOB
-tOB
-tpQ
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tpQ
+tKI
+tKI
+tKI
+tKI
+tKI
+auA
+tKI
+wmV
+oED
+oED
+oED
+wyt
+tKI
 khV
 khV
 khV
@@ -72704,21 +72338,21 @@ gDl
 tpQ
 kIF
 kIF
-tpQ
-tpQ
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+pxR
+cki
+rkw
+rkw
+rkw
+rkw
+iLV
+iZm
+iZm
+iZm
+iZm
+iZm
+iZm
+oLp
+pxR
 tOB
 slE
 hqB
@@ -72807,35 +72441,35 @@ ntH
 ntH
 ntH
 ntH
-kni
-tUs
-ssx
-caA
-xHL
-sAL
-rWo
-juo
-xHL
-ufg
-ssx
-tUs
 ntH
 ntH
 ntH
-tUs
-aVo
-qRH
-ccQ
-tUs
-tUs
-tUs
-tUs
-tUs
-tUs
-tUs
-tUs
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 tOB
 tOB
 tOB
@@ -72935,19 +72569,19 @@ gpl
 wcj
 wcj
 wcj
-wcj
-tOB
-tOB
-tpQ
-tpQ
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tpQ
+tKI
+tKI
+tKI
+tKI
+bYK
+auA
+bYK
+eUx
+oED
+oED
+oED
+rfi
+tKI
 khV
 khV
 gDl
@@ -72956,21 +72590,21 @@ tpQ
 tpQ
 tpQ
 tpQ
-tpQ
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+pxR
+jxG
+kCf
+rkw
+rkw
+rkw
+pxR
+mQW
+haY
+cun
+gNZ
+cun
+haY
+cun
+pxR
 tOB
 slE
 hqB
@@ -73059,35 +72693,35 @@ ntH
 ntH
 ntH
 ntH
-kni
-tUs
-dEu
-caA
-xHL
-sAL
-rWo
-juo
-xHL
-ufg
-oLp
-tUs
 ntH
 ntH
 ntH
-tUs
-tUs
-tUs
-tUs
-tUs
-kni
-kni
-kni
-kni
-kni
-kni
-kni
-kni
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 tOB
 tOB
 tOB
@@ -73187,19 +72821,19 @@ gpl
 wcj
 tOB
 tOB
-tOB
-tOB
-tOB
-tpQ
-tpQ
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-hqo
+tKI
+tKI
+tKI
+tKI
+tKI
+auA
+tKI
+qRH
+oED
+oED
+oED
+oED
+tKI
 lPf
 lPf
 gDl
@@ -73208,21 +72842,21 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+pxR
+rJi
+rkw
+rkw
+rkw
+rkw
+pxR
+hIf
+vSy
+hIf
+pxR
+hIf
+nwp
+hIf
+pxR
 tOB
 slE
 hqB
@@ -73309,29 +72943,29 @@ slE
 ntH
 ntH
 kni
-kni
-kni
-kni
-tUs
-ssx
-glJ
-nrm
-cHW
-rWo
-tAB
-nrm
-hAI
-ssx
-tUs
 ntH
 ntH
-kni
-kni
-kni
-kni
-kni
-kni
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 ntH
 ntH
 ntH
@@ -73439,19 +73073,19 @@ gpl
 wcj
 tOB
 tOB
-tOB
-tOB
-tpQ
-tpQ
-tpQ
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-hqo
+tKI
+tKI
+tKI
+tKI
+tKI
+auA
+tKI
+qqo
+onR
+pGY
+pge
+eKk
+tKI
 lPf
 lPf
 gDl
@@ -73460,21 +73094,21 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+pxR
+pxR
+pxR
+cSe
+cSe
+cSe
+pxR
+tAB
+qvW
+yhM
+pxR
+tAB
+qvW
+yhM
+pxR
 slE
 slE
 eFk
@@ -73561,23 +73195,23 @@ slE
 ntH
 ntH
 kni
-tUs
-tUs
-tUs
-tUs
-tUs
-tUs
-tUs
-ueA
-uvc
-kTn
-tUs
-tUs
-tUs
-tUs
-tUs
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 ntH
 ntH
 ntH
@@ -73691,19 +73325,19 @@ hvC
 wcj
 tOB
 tOB
-tOB
-tpQ
-tpQ
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-hqo
+tKI
+pCb
+rsj
+pCb
+tKI
+auA
+tKI
+tKI
+tKI
+tKI
+tKI
+tKI
+tKI
 lPf
 lPf
 pLk
@@ -73714,19 +73348,19 @@ tpQ
 tpQ
 tpQ
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
-slE
-slE
-slE
+pxR
+rrd
+rkw
+lSb
+pxR
+xtk
+fQo
+sby
+pxR
+xtk
+fQo
+sby
+pxR
 slE
 nLi
 hqB
@@ -73813,23 +73447,23 @@ slE
 ntH
 ntH
 kni
-tUs
-gtI
-ubK
-ubK
-iLV
-cRK
-lRC
-dWi
-dWi
-dWi
-lRC
-nZF
-llG
-wyt
-pdQ
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 ntH
 ntH
 ntH
@@ -73938,24 +73572,24 @@ wcj
 wcj
 gpl
 lPf
-lPf
-iDX
-tOB
-tOB
-tOB
-tOB
-tpQ
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tpQ
-tpQ
+tKI
+tKI
+tKI
+tKI
+tKI
+tKI
+aYA
+ubK
+aYA
+tKI
+bnf
+tKI
+tKI
+tKI
+tKI
+tKI
+tKI
+tKI
 hqo
 lPf
 gDl
@@ -73966,19 +73600,19 @@ uQT
 uQT
 tpQ
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-slE
-slE
-nWy
-slE
+pxR
+lqP
+rkw
+enm
+pxR
+vMn
+krl
+fRq
+pxR
+vMn
+krl
+fRq
+pxR
 slE
 hqB
 hqB
@@ -74065,23 +73699,23 @@ slE
 ntH
 ntH
 kni
-tUs
-iJE
-rfi
-rfi
-hcp
-nZF
-oYr
-cbw
-rsj
-kAa
-oYr
-nZF
-haY
-rfi
-wYf
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 ntH
 ntH
 ntH
@@ -74190,24 +73824,24 @@ dID
 gpl
 gpl
 lPf
+tKI
+tKI
+tKI
+tKI
+tKI
+dWB
+ixo
+aWx
+llG
+ixo
+aWx
+ajj
+tKI
+tKI
+tKI
+tKI
+tKI
 lPf
-gpl
-tOB
-tOB
-tOB
-tpQ
-tpQ
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tpQ
-tpQ
-tpQ
-lPf
 lPf
 lPf
 gDl
@@ -74217,21 +73851,21 @@ gDl
 gDl
 gDl
 tpQ
-tpQ
-tpQ
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+pxR
+rpz
+xRg
+enm
+pxR
+pxR
+pxR
+pxR
+pxR
+pxR
+pxR
+pxR
+pxR
 slE
-slE
-law
-khV
-khV
-khV
 khV
 khV
 khV
@@ -74317,23 +73951,23 @@ slE
 ntH
 ntH
 kni
-tUs
-iJE
-rfi
-rfi
-hcp
-nZF
-oYr
-cuG
-dpX
-jxG
-oYr
-nZF
-gDO
-rfi
-gUc
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 ntH
 tOB
 tOB
@@ -74442,23 +74076,23 @@ lPf
 lPf
 lPf
 lPf
-lPf
-gpl
-tOB
-tOB
-tOB
-tpQ
-tpQ
-tOB
-tOB
-tOB
-tOB
-hqo
-hqo
-hqo
-tpQ
-lPf
-lPf
+tKI
+tKI
+vLE
+wTK
+vSB
+iVa
+xEJ
+gtI
+pHr
+xEJ
+cHW
+qsg
+vSB
+vLE
+wTK
+tKI
+tKI
 lPf
 lPf
 lPf
@@ -74470,20 +74104,20 @@ lPf
 gDl
 gDl
 gDl
-tpQ
-tpQ
-tOB
-tOB
-kIF
+pxR
+pxR
+pxR
+pxR
+pxR
 tOB
 tOB
 tOB
 slE
-iZm
-khV
-khV
-bXx
-khV
+slE
+slE
+slE
+slE
+slE
 ygH
 khV
 bXx
@@ -74569,23 +74203,23 @@ slE
 ntH
 ntH
 kni
-tUs
-khM
-eKk
-eKk
-nAU
-nZF
-oYr
-cun
-rWo
-fQo
-oYr
-nGl
-khM
-lbj
-qqo
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 ntH
 tOB
 tOB
@@ -74694,23 +74328,23 @@ lPf
 lPf
 lPf
 lPf
-lPf
-gpl
-tOB
-tOB
-tOB
-tpQ
-tOB
-tOB
-tOB
-tOB
-hqo
-hqB
-hqB
-hqo
-hqo
-lPf
-lPf
+tKI
+tKI
+cwq
+fYo
+orJ
+iVa
+xEJ
+gtI
+cbw
+xEJ
+cHW
+qsg
+orJ
+vzi
+uJG
+tKI
+tKI
 lPf
 lPf
 lPf
@@ -74736,7 +74370,7 @@ khV
 nxi
 khV
 khV
-hqB
+khV
 khV
 khV
 khV
@@ -74821,23 +74455,23 @@ slE
 ntH
 ntH
 kni
-tUs
-tUs
-tUs
-tUs
-tUs
-tUs
-lLz
-cHW
-kfA
-tAB
-iVa
-tUs
-tUs
-tUs
-tUs
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 ntH
 tOB
 tOB
@@ -74946,23 +74580,23 @@ gpl
 gpl
 gpl
 gpl
-dID
-gpl
-tOB
-tOB
-tpQ
-tpQ
-tOB
-tOB
-tOB
-tOB
-hqo
-hqB
-hqB
-lPf
-lPf
-lPf
-lPf
+tKI
+tKI
+gDO
+dWi
+klz
+iVa
+cRK
+eUi
+cbw
+cRK
+eUi
+qsg
+klz
+gDO
+dWi
+tKI
+tKI
 lPf
 lPf
 lPf
@@ -75073,23 +74707,23 @@ slE
 ntH
 ntH
 kni
-kni
-kni
-tUs
-oYr
-oYr
-oYr
-oYr
-oYr
-oYr
-oYr
-oYr
-oYr
-tUs
-kni
-kni
-kni
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 ntH
 tOB
 tOB
@@ -75198,23 +74832,23 @@ wcj
 wcj
 wcj
 tOB
-tOB
-tOB
-tOB
-tpQ
-tpQ
-tOB
-tOB
-tOB
-tOB
-tOB
-hqo
-hqo
-lPf
-lPf
-lPf
-lPf
-lPf
+tKI
+tKI
+tKI
+tKI
+tKI
+uvc
+pJm
+llG
+llG
+llG
+cuG
+ajj
+tKI
+tKI
+tKI
+tKI
+tKI
 wcj
 wcj
 wcj
@@ -75326,19 +74960,19 @@ ntH
 ntH
 ntH
 ntH
-kni
-tUs
-lSb
-xEJ
-xEJ
-xEJ
-gNZ
-xEJ
-xEJ
-xEJ
-rrL
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 ntH
 ntH
 ntH
@@ -75450,23 +75084,23 @@ khV
 qEY
 wcj
 tOB
-tOB
-tOB
-tpQ
-tpQ
-tpQ
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-hqo
-hqo
-hqo
-hqo
-lPf
-wcj
+tKI
+tKI
+vLE
+wTK
+vSB
+iVa
+ixo
+jJT
+cbw
+ixo
+aWx
+qsg
+vSB
+vLE
+wTK
+tKI
+tKI
 wcj
 jkm
 twM
@@ -75474,7 +75108,7 @@ wcj
 twM
 twM
 twM
-twM
+aOi
 wcj
 wcj
 wcj
@@ -75578,19 +75212,19 @@ ntH
 ntH
 ntH
 ntH
-kni
-tUs
-tUs
-cca
-uUK
-fQu
-tUs
-cca
-uUK
-fQu
-tUs
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 ntH
 ntH
 ntH
@@ -75702,23 +75336,23 @@ qEY
 qEY
 wcj
 tOB
-tOB
-tOB
-tpQ
-jqp
-tpQ
-tpQ
-tpQ
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tpQ
-lPf
-wcj
+tKI
+tKI
+cwq
+juo
+orJ
+iVa
+xEJ
+cHW
+pHr
+xEJ
+cHW
+qsg
+orJ
+vzi
+ccQ
+tKI
+tKI
 wcj
 ijj
 twM
@@ -75830,19 +75464,19 @@ ntH
 ntH
 ntH
 ntH
-kni
-kni
-tUs
-pbX
-ubK
-iLV
-tUs
-pbX
-ubK
-iLV
-tUs
-kni
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 ntH
 ntH
 ntH
@@ -75954,23 +75588,23 @@ khV
 qEY
 wcj
 wcj
-tpQ
-tpQ
-tpQ
-jqp
-jqp
-jqp
-tpQ
-tpQ
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tpQ
-lPf
-wcj
+tKI
+tKI
+gDO
+dWi
+klz
+iVa
+xEJ
+cHW
+cbw
+xEJ
+cHW
+qsg
+klz
+gXE
+dWi
+tKI
+tKI
 wcj
 twM
 twM
@@ -76083,17 +75717,17 @@ ntH
 ntH
 ntH
 ntH
-kni
-tUs
-iJE
-dCq
-hcp
-tUs
-iJE
-fiJ
-hcp
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 ntH
 ntH
 ntH
@@ -76206,23 +75840,23 @@ khV
 khV
 tOB
 wcj
-tpQ
-tpQ
-jqp
-jqp
-lPf
-jqp
-jqp
-tpQ
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tpQ
-kPd
-wcj
+pxR
+pxR
+tKI
+tKI
+tKI
+lRC
+cRK
+eUi
+llG
+cRK
+eUi
+hPg
+tKI
+tKI
+tKI
+pxR
+pxR
 wcj
 twM
 twM
@@ -76335,17 +75969,17 @@ ntH
 ntH
 ntH
 ntH
-kni
-tUs
-khM
-auA
-vSy
-tUs
-khM
-auA
-vSy
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 ntH
 ntH
 ntH
@@ -76460,20 +76094,20 @@ wcj
 wcj
 tpQ
 tpQ
-jqp
-lPf
-lPf
-lPf
-jqp
-tpQ
-tpQ
-tpQ
-tpQ
-tOB
-tOB
-tOB
-tpQ
-lPf
+tKI
+tKI
+tKI
+tKI
+tKI
+ipV
+jQb
+eow
+tKI
+tKI
+tKI
+tKI
+tKI
+pxR
 lPf
 wcj
 tpQ
@@ -76587,17 +76221,17 @@ ntH
 ntH
 ntH
 ntH
-kni
-tUs
-tUs
-tUs
-tUs
-tUs
-tUs
-tUs
-tUs
-tUs
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 ntH
 ntH
 ntH
@@ -76711,20 +76345,20 @@ qEY
 qEY
 wcj
 tpQ
-jqp
-jqp
-lPf
-lPf
-lPf
-jqp
-jqp
 tpQ
-kIF
-kIF
-tpQ
-tOB
-tOB
-tpQ
+tKI
+tKI
+dUg
+qFv
+vSB
+ixo
+glJ
+aWx
+vSB
+biE
+dUg
+tKI
+tKI
 lPf
 lPf
 wcj
@@ -76839,17 +76473,17 @@ ntH
 ntH
 ntH
 ntH
-kni
-kni
-kni
-kni
-kni
-kni
-kni
-kni
-kni
-kni
-kni
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
+ntH
 ntH
 ntH
 ntH
@@ -76963,20 +76597,20 @@ khV
 qEY
 wcj
 tpQ
-rxM
-lPf
-lPf
-lPf
-lPf
-lPf
-jqp
-kIF
-kIF
-kIF
 tpQ
-tOB
-tOB
-tpQ
+tKI
+tKI
+hAI
+pFP
+orJ
+xEJ
+glJ
+cHW
+orJ
+gxt
+hAI
+tKI
+tKI
 tpQ
 lPf
 lPf
@@ -77216,19 +76850,19 @@ tOB
 tpQ
 tpQ
 jqp
-lPf
-lPf
-lPf
-lPf
-lPf
-imG
-tpQ
-kIF
+tKI
+tKI
+pkJ
+pFP
 orJ
-tpQ
-tOB
-tOB
-tOB
+xEJ
+glJ
+cHW
+orJ
+gxt
+dUg
+tKI
+tKI
 tpQ
 lPf
 lPf
@@ -77468,19 +77102,19 @@ tpQ
 tpQ
 rCt
 jqp
-lPf
-lPf
-lPf
-lPf
-lPf
-jqp
-tpQ
-tpQ
-tpQ
-tOB
-tOB
-tOB
-tOB
+tKI
+tKI
+hAI
+kGU
+klz
+cRK
+glJ
+eUi
+klz
+iOT
+hAI
+tKI
+tKI
 tpQ
 tpQ
 lPf
@@ -77720,19 +77354,19 @@ cFh
 uZu
 wws
 lPf
-lPf
-lPf
-lPf
-lPf
-lPf
-grg
-jqp
-jqp
-jqp
-tpQ
-tpQ
-tpQ
-tOB
+lbj
+tKI
+tKI
+tKI
+tKI
+wZX
+hcp
+qLb
+tKI
+tKI
+tKI
+tKI
+tKI
 tOB
 tpQ
 lPf
@@ -77974,15 +77608,15 @@ wws
 lPf
 lPf
 lPf
-lPf
-lPf
-lPf
-lPf
-lPf
-lPf
-jqp
-jqp
-jqp
+tKI
+tKI
+tKI
+vLE
+diG
+wTK
+tKI
+tKI
+tKI
 tpQ
 tOB
 tOB
@@ -78227,13 +77861,13 @@ lPf
 lPf
 lPf
 lPf
-lPf
-lPf
-lPf
-lPf
-lPf
-lPf
-lPf
+tKI
+tKI
+vzi
+pbX
+fYo
+tKI
+tKI
 imG
 tpQ
 tpQ
@@ -78479,13 +78113,13 @@ lPf
 lPf
 lPf
 lPf
-lPf
-lPf
-lPf
-lPf
-lPf
-lPf
-lPf
+tKI
+tKI
+gDO
+jGN
+dWi
+tKI
+tKI
 jqp
 jqp
 tpQ
@@ -78731,13 +78365,13 @@ lPf
 lPf
 lPf
 lPf
-lPf
-lPf
-lPf
-lPf
-lPf
-lPf
-lPf
+tKI
+tKI
+tKI
+tKI
+tKI
+tKI
+tKI
 lPf
 grg
 tpQ
@@ -78984,11 +78618,11 @@ lPf
 lPf
 lPf
 lPf
-lPf
-lPf
-lPf
-lPf
-lPf
+tKI
+tKI
+tKI
+tKI
+tKI
 lPf
 lPf
 jqp

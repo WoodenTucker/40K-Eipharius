@@ -1414,7 +1414,7 @@
 	color = "grey";
 	maxhealth = 1200;
 	name = "Storage";
-	req_one_access = list(5,230,211)
+	req_one_access = list(5,10,230,211)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -3322,6 +3322,9 @@
 	dir = 8;
 	icon_state = "chair_preview"
 	},
+/obj/structure/sign/mechanicus{
+	pixel_x = 32
+	},
 /turf/simulated/floor/tiled/white{
 	color = "grey"
 	},
@@ -3658,6 +3661,18 @@
 /obj/effect/shuttle_landmark/ferry/bloodpact_end,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/hangarpact2)
+"dDc" = (
+/obj/structure/sign/mechanicus{
+	pixel_x = 32
+	},
+/obj/structure/torchwall{
+	dir = 8;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/medicae)
 "dDd" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
@@ -4454,6 +4469,12 @@
 	},
 /turf/simulated/floor/exoplanet/grass,
 /area/cadiaoutpost/oa/bridge/hallway)
+"esF" = (
+/obj/structure/sign/mechanicus{
+	pixel_x = 32
+	},
+/turf/simulated/wall/techno,
+/area/cadiaoutpost/oa/medicae)
 "esG" = (
 /obj/machinery/light{
 	dir = 4
@@ -6218,9 +6239,7 @@
 	invisibility = 100;
 	name = "Invisible Light"
 	},
-/turf/simulated/wall/concrete{
-	integrity = 1500
-	},
+/turf/simulated/wall/techno,
 /area/cadiaoutpost/oa/medicae)
 "gaj" = (
 /obj/machinery/door/unpowered/wattle,
@@ -9373,7 +9392,7 @@
 	color = "grey";
 	maxhealth = 1500;
 	name = "Interior Clinic";
-	req_one_access = list(5,230,211)
+	req_one_access = list(5,10,230,211)
 	},
 /obj/machinery/door/blast/grates{
 	dir = 8;
@@ -11380,7 +11399,7 @@
 	color = "grey";
 	maxhealth = 900;
 	name = "Surgery";
-	req_one_access = list(5,230,211)
+	req_one_access = list(5,10,230,211)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -12115,6 +12134,18 @@
 /obj/random/junk,
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/new_hive/hive_city)
+"lii" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 4;
+	icon_state = "plating"
+	},
+/obj/structure/sign/mechanicus{
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/medicae)
 "lis" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -13451,9 +13482,7 @@
 	},
 /area/cadiaoutpost/oa/service/inn)
 "mrc" = (
-/turf/simulated/wall/concrete{
-	integrity = 1500
-	},
+/turf/simulated/wall/techno,
 /area/cadiaoutpost/oa/medicae)
 "mre" = (
 /obj/effect/floor_decal/newcorner/nbar/corner,
@@ -20419,6 +20448,9 @@
 	dir = 8;
 	icon_state = "torchwall0"
 	},
+/obj/structure/sign/mechanicus{
+	pixel_x = 32
+	},
 /turf/simulated/floor/tiled/white{
 	color = "grey"
 	},
@@ -21477,7 +21509,7 @@
 	color = "grey";
 	maxhealth = 1200;
 	name = "Storage";
-	req_one_access = list(5,230,211)
+	req_one_access = list(5,10,230,211)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -21506,6 +21538,12 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/engineering)
+"uae" = (
+/obj/structure/sign/mechanicus{
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/new_hive/hive_city)
 "uaJ" = (
 /obj/machinery/blackbox_recorder,
 /obj/effect/floor_decal/turf/plating,
@@ -25475,8 +25513,11 @@
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/villageinside)
 "ybg" = (
-/turf/simulated/wall/concrete,
-/area/cadiaoutpost/oa/medicae)
+/obj/structure/sign/mechanicus{
+	pixel_x = 32
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/new_hive/hive_city)
 "ybp" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 6
@@ -65935,14 +65976,14 @@ iqE
 apQ
 apQ
 apQ
-apQ
+uae
 evs
 jRK
 apQ
-apQ
+uae
 apQ
 kNU
-eTh
+ybg
 eTh
 eTh
 eTh
@@ -65950,7 +65991,7 @@ tRh
 eTh
 eTh
 eTh
-eTh
+ybg
 uOW
 uOW
 xKt
@@ -66187,8 +66228,8 @@ apQ
 apQ
 eTh
 eTh
-oli
-oli
+gVo
+gVo
 mrc
 mrc
 mrc
@@ -66439,8 +66480,8 @@ apQ
 cVV
 eTh
 eTh
-oli
-oli
+gVo
+gVo
 mrc
 pxa
 pIv
@@ -66691,8 +66732,8 @@ eTh
 eTh
 eTh
 eTh
-oli
-oli
+gVo
+gVo
 mrc
 lqG
 pIv
@@ -66944,7 +66985,7 @@ eTh
 eTh
 kNU
 eTh
-oli
+gVo
 mrc
 fKT
 pIv
@@ -67196,7 +67237,7 @@ iFU
 iFU
 iFU
 eTh
-oli
+gVo
 mrc
 gIV
 pIv
@@ -67448,7 +67489,7 @@ dTZ
 qVe
 iFU
 eTh
-oli
+gVo
 mrc
 mrc
 bLI
@@ -67700,7 +67741,7 @@ ucq
 ucq
 iFU
 eTh
-oli
+gVo
 mrc
 nBd
 eHC
@@ -67951,8 +67992,8 @@ bmz
 iFU
 bmz
 iFU
-eTh
-oli
+gVo
+gVo
 mrc
 vRf
 hrE
@@ -68202,7 +68243,7 @@ iFU
 vsD
 iFU
 wgp
-ybg
+mrc
 mrc
 mrc
 mrc
@@ -68962,7 +69003,7 @@ mrc
 uCZ
 vxI
 qTJ
-wRY
+vtJ
 qTJ
 wRY
 vEa
@@ -69215,7 +69256,7 @@ bYy
 vxI
 mrc
 mrc
-mrc
+esF
 mrc
 lut
 uBR
@@ -69719,7 +69760,7 @@ tUW
 kiK
 mrc
 uGw
-hrE
+dDc
 lut
 hrE
 uBR
@@ -70218,14 +70259,14 @@ eTh
 eTh
 eTh
 kNU
-mrc
+esF
 tUW
 etN
 mrc
 mrc
 mrc
 pBJ
-wRY
+lii
 uCo
 mrc
 xXA
@@ -70234,7 +70275,7 @@ iWC
 hjQ
 qHN
 coY
-mrc
+esF
 kNU
 eTh
 eTh
