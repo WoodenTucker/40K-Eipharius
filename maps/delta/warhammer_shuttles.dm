@@ -49,7 +49,7 @@
 //
 /datum/shuttle/autodock/ferry/mechiferry
 	name = "mechiferry"
-	warmup_time = 20
+	warmup_time = 10
 	waypoint_station = "mechiferry_start"
 	waypoint_offsite = "mechiferry_end"
 	shuttle_area = /area/cadiaoutpost/oa/shuttle/mechiferry
@@ -96,7 +96,7 @@
 
 /datum/shuttle/autodock/ferry/magos
 	name = "magos"
-	warmup_time = 20
+	warmup_time = 10
 	waypoint_station = "magos_start"
 	waypoint_offsite = "magos_end"
 	shuttle_area = /area/cadiaoutpost/oa/shuttle/magos
@@ -143,7 +143,7 @@
 // toasters
 /datum/shuttle/autodock/ferry/mechanicus
 	name = "mechanicus"
-	warmup_time = 20
+	warmup_time = 10
 	waypoint_station = "mechanicus_start"
 	waypoint_offsite = "mechanicus_end"
 	shuttle_area = /area/cadiaoutpost/oa/shuttle/mechanicus
