@@ -6778,6 +6778,18 @@
 	dir = 4
 	},
 /obj/structure/table/graf/shrine,
+/obj/item/card/id/key/middle{
+	access = list(10);
+	name = "Mechanicus Access Key"
+	},
+/obj/item/card/id/key/middle{
+	access = list(10);
+	name = "Mechanicus Access Key"
+	},
+/obj/item/card/id/key/middle{
+	access = list(10);
+	name = "Mechanicus Access Key"
+	},
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/engineering)
 "gwm" = (
@@ -66228,8 +66240,8 @@ apQ
 apQ
 eTh
 eTh
-gVo
-gVo
+mrc
+mrc
 mrc
 mrc
 mrc
@@ -66480,8 +66492,8 @@ apQ
 cVV
 eTh
 eTh
-gVo
-gVo
+mrc
+mrc
 mrc
 pxa
 pIv
@@ -66732,8 +66744,8 @@ eTh
 eTh
 eTh
 eTh
-gVo
-gVo
+mrc
+mrc
 mrc
 lqG
 pIv
@@ -66985,7 +66997,7 @@ eTh
 eTh
 kNU
 eTh
-gVo
+mrc
 mrc
 fKT
 pIv
@@ -67237,7 +67249,7 @@ iFU
 iFU
 iFU
 eTh
-gVo
+mrc
 mrc
 gIV
 pIv
@@ -67489,7 +67501,7 @@ dTZ
 qVe
 iFU
 eTh
-gVo
+mrc
 mrc
 mrc
 bLI
@@ -67741,7 +67753,7 @@ ucq
 ucq
 iFU
 eTh
-gVo
+mrc
 mrc
 nBd
 eHC
@@ -67992,8 +68004,8 @@ bmz
 iFU
 bmz
 iFU
-gVo
-gVo
+mrc
+mrc
 mrc
 vRf
 hrE
