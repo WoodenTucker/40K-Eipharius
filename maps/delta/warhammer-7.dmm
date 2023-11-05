@@ -1736,9 +1736,8 @@
 /area/cadiaoutpost/oa/dungeon1)
 "nh" = (
 /obj/effect/floor_decal/turf/shaft,
-/obj/effect/decal/cleanable/blood{
-	color = "white";
-	blood_color = "white"
+/obj/effect/decal/cleanable/flour{
+	name = "suspicious stain"
 	},
 /turf/unsimulated/floor/necron_floor{
 	icon_state = "ofloor"
@@ -2822,11 +2821,10 @@
 /area/cadiaoutpost/oa/dungeon3)
 "vO" = (
 /obj/effect/floor_decal/turf/shaft,
-/obj/effect/decal/cleanable/blood{
-	color = "white";
-	blood_color = "white"
-	},
 /obj/effect/decal/remains,
+/obj/effect/decal/cleanable/flour{
+	name = "suspicious stain"
+	},
 /turf/unsimulated/floor/necron_floor{
 	icon_state = "ofloor"
 	},
@@ -4293,11 +4291,10 @@
 /area/cadiaoutpost/oa/mechanicusdig)
 "Hw" = (
 /obj/effect/floor_decal/turf/shaft,
-/obj/effect/decal/cleanable/blood{
-	color = "white";
-	blood_color = "white"
-	},
 /obj/item/reagent_containers/food/drinks/bottle/amasecpoor,
+/obj/effect/decal/cleanable/flour{
+	name = "suspicious stain"
+	},
 /turf/unsimulated/floor/necron_floor{
 	icon_state = "ofloor"
 	},

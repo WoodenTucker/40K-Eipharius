@@ -2929,13 +2929,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"pP" = (
-/obj/effect/floor_decal/turf/metal/six,
-/obj/item/clothing/head/welding/knight,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
 "pR" = (
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tileendtable";
@@ -3336,25 +3329,13 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/northern)
-"rY" = (
-/obj/machinery/button/remote/blast_door/id_scan{
-	id = "noblepod";
-	req_one_access = list(225)
-	},
-/turf/simulated/shuttle/wall{
-	color = "grey";
-	icon_state = "wall3"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
 "rZ" = (
-/obj/effect/floor_decal/turf/metal/six,
-/obj/machinery/door/airlock/engineering{
-	req_one_access = list(225)
+/turf/unsimulated/mineral{
+	icon = 'icons/turf/wall.dmi';
+	icon_state = "concrete0";
+	name = "strange wall"
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
+/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "se" = (
 /obj/machinery/door/unpowered/inn,
 /turf/simulated/floor/factory_floor,
@@ -3878,7 +3859,11 @@
 	dir = 8;
 	icon_state = "bulb1"
 	},
-/turf/simulated/wall/concrete/strong,
+/turf/unsimulated/mineral{
+	icon = 'icons/turf/wall.dmi';
+	icon_state = "concrete0";
+	name = "strange wall"
+	},
 /area/cadiaoutpost/rtship1)
 "uR" = (
 /obj/structure/sign/portrait_hippocrates{
@@ -4141,13 +4126,6 @@
 	},
 /turf/simulated/floor/ceramic/blackstone,
 /area/cadiaoutpost/oa/service/chapel)
-"wi" = (
-/obj/effect/floor_decal/turf/metal/six,
-/obj/item/rnd/eng5,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
 "wk" = (
 /obj/structure/warfare/barricade/sandbag{
 	dir = 1
@@ -4930,14 +4908,12 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/villageinside)
 "As" = (
-/obj/structure/cargo_pad/bottom_left,
-/obj/effect/landmark/cargospawn,
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal/six,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/turf/unsimulated/mineral{
+	icon = 'icons/turf/wall.dmi';
+	icon_state = "concrete0";
+	name = "strange wall"
 	},
-/area/cadiaoutpost/new_hive/hive_city)
+/area/cadiaoutpost/rtship1)
 "Au" = (
 /obj/structure/sink{
 	dir = 8;
@@ -5121,12 +5097,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
-"Bn" = (
-/obj/effect/floor_decal/turf/metal/six,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
 "Bq" = (
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/farm)
@@ -5345,6 +5315,13 @@
 	dir = 4
 	},
 /obj/item/card/id/key/middle/ganger,
+/obj/item/card/id/key/middle/ganger,
+/obj/item/card/id/key/middle/ganger,
+/obj/item/card/id/key/middle/ganger,
+/obj/item/card/id/key/grand/noble,
+/obj/item/card/id/key/grand/noble,
+/obj/item/card/id/key/grand/noble,
+/obj/item/card/id/key/grand/noble,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "CC" = (
@@ -6124,16 +6101,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
-"Gw" = (
-/obj/item/pyre/self_lit{
-	invisibility = 100;
-	name = "Invisible Light"
-	},
-/turf/simulated/shuttle/wall{
-	color = "grey";
-	icon_state = "wall3"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
 "Gx" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -6316,15 +6283,6 @@
 	},
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/chapel)
-"Hh" = (
-/obj/structure/cargo_pad,
-/obj/effect/landmark/cargospawn,
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal/six,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
 "Hi" = (
 /obj/structure/curtain/open/privacy,
 /turf/simulated/floor/factory_floor,
@@ -7257,15 +7215,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
-"Mr" = (
-/obj/structure/cargo_pad/bottom_right,
-/obj/effect/landmark/cargospawn,
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal/six,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
 "Ms" = (
 /obj/machinery/shower{
 	color = "grey"
@@ -7923,9 +7872,10 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
 "PV" = (
-/turf/simulated/shuttle/wall{
-	color = "grey";
-	icon_state = "wall3"
+/turf/unsimulated/mineral{
+	icon = 'icons/turf/wall.dmi';
+	icon_state = "concrete0";
+	name = "strange wall"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "PX" = (
@@ -9864,11 +9814,12 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "ZT" = (
-/obj/effect/floor_decal/turf/bar2,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/turf/unsimulated/mineral{
+	icon = 'icons/turf/wall.dmi';
+	icon_state = "concrete0";
+	name = "strange wall"
 	},
-/area/cadiaoutpost/new_hive/hive_city)
+/area/cadiaoutpost/oa/service/inn)
 "ZU" = (
 /obj/structure/toilet{
 	color = "gold";
@@ -34923,40 +34874,40 @@ uU
 uU
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
 UB
 UB
 UB
@@ -35175,7 +35126,7 @@ uU
 uU
 vt
 vt
-vt
+Ck
 So
 So
 So
@@ -35208,7 +35159,7 @@ So
 So
 So
 So
-UB
+PN
 UB
 UB
 UB
@@ -35427,7 +35378,7 @@ uU
 uU
 vt
 vt
-vt
+Ck
 So
 So
 So
@@ -35460,7 +35411,7 @@ So
 So
 So
 So
-UB
+PN
 UB
 UB
 UB
@@ -35679,7 +35630,7 @@ vt
 uU
 vt
 vt
-vt
+Ck
 So
 So
 So
@@ -35712,7 +35663,7 @@ So
 So
 So
 So
-UB
+PN
 UB
 UB
 UB
@@ -35931,7 +35882,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 So
 So
 So
@@ -35964,7 +35915,7 @@ So
 So
 So
 So
-UB
+PN
 UB
 UB
 UB
@@ -36183,7 +36134,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 So
 So
 So
@@ -36216,7 +36167,7 @@ So
 So
 So
 So
-UB
+PN
 UB
 UB
 UB
@@ -36435,7 +36386,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 So
 So
 So
@@ -36468,7 +36419,7 @@ So
 So
 So
 So
-UB
+PN
 eP
 eP
 eP
@@ -36687,7 +36638,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 So
 So
 So
@@ -36720,7 +36671,7 @@ So
 So
 So
 So
-UB
+PN
 eP
 wL
 zC
@@ -36939,7 +36890,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 So
 So
 So
@@ -36972,7 +36923,7 @@ So
 So
 So
 So
-UB
+PN
 FY
 zC
 zC
@@ -37191,7 +37142,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 So
 So
 So
@@ -37224,7 +37175,7 @@ So
 So
 So
 So
-UB
+PN
 eP
 ja
 zC
@@ -37443,7 +37394,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 So
 So
 So
@@ -37476,7 +37427,7 @@ So
 So
 So
 So
-UB
+PN
 eP
 zC
 zC
@@ -37695,7 +37646,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 So
 So
 So
@@ -37728,7 +37679,7 @@ So
 So
 So
 So
-UB
+PN
 eP
 eP
 eP
@@ -37947,7 +37898,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 So
 So
 So
@@ -37980,7 +37931,7 @@ So
 So
 So
 So
-UB
+PN
 eP
 zC
 zC
@@ -38199,7 +38150,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 So
 So
 So
@@ -38232,7 +38183,7 @@ So
 So
 So
 So
-UB
+PN
 FY
 zC
 zC
@@ -38451,7 +38402,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 So
 So
 So
@@ -38484,7 +38435,7 @@ So
 So
 So
 So
-UB
+PN
 eP
 ja
 zC
@@ -38703,7 +38654,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 So
 So
 So
@@ -38736,7 +38687,7 @@ So
 So
 So
 So
-UB
+PN
 eP
 Ia
 zC
@@ -38955,7 +38906,7 @@ UB
 UB
 UB
 UB
-UB
+PN
 So
 So
 So
@@ -38988,7 +38939,7 @@ So
 So
 So
 So
-UB
+PN
 eP
 eP
 eP
@@ -39207,7 +39158,7 @@ UB
 UB
 UB
 UB
-UB
+PN
 So
 So
 So
@@ -39240,7 +39191,7 @@ So
 So
 So
 So
-UB
+PN
 eP
 Ia
 zC
@@ -39459,7 +39410,7 @@ UB
 UB
 UB
 UB
-UB
+PN
 So
 So
 So
@@ -39492,7 +39443,7 @@ So
 So
 So
 So
-UB
+PN
 eP
 ja
 zC
@@ -39711,7 +39662,7 @@ UB
 UB
 UB
 UB
-UB
+PN
 So
 So
 So
@@ -39744,7 +39695,7 @@ So
 So
 So
 So
-UB
+PN
 FY
 zC
 zC
@@ -39963,7 +39914,7 @@ PN
 PN
 PN
 PN
-UB
+PN
 So
 So
 So
@@ -39996,7 +39947,7 @@ So
 So
 So
 So
-UB
+PN
 eP
 KS
 zC
@@ -40215,7 +40166,7 @@ JI
 lc
 Uz
 PN
-UB
+PN
 So
 So
 So
@@ -40248,7 +40199,7 @@ So
 So
 So
 So
-UB
+PN
 eP
 eP
 eP
@@ -40467,7 +40418,7 @@ yb
 yb
 yb
 PN
-UB
+PN
 So
 So
 So
@@ -40500,7 +40451,7 @@ So
 So
 So
 So
-UB
+PN
 eP
 Ia
 zC
@@ -40719,12 +40670,12 @@ PN
 PN
 PN
 PN
-UB
-UB
-UB
-UB
-UB
-UB
+PN
+PN
+PN
+PN
+PN
+PN
 Xd
 Xd
 Xd
@@ -40746,13 +40697,13 @@ Xd
 Xd
 Xd
 Xd
-UB
-UB
-UB
-UB
-UB
-UB
-UB
+PN
+PN
+PN
+PN
+PN
+PN
+PN
 eP
 zC
 zC
@@ -40976,7 +40927,7 @@ UB
 UB
 UB
 UB
-UB
+PN
 Xd
 Xd
 Xd
@@ -40998,13 +40949,13 @@ Xd
 Xd
 Xd
 Xd
-UB
-UB
-UB
-UB
-UB
-UB
-UB
+PN
+PN
+PN
+PN
+PN
+PN
+PN
 eP
 eP
 ja
@@ -41228,7 +41179,7 @@ UB
 UB
 UB
 UB
-UB
+PN
 Xd
 Xd
 Xd
@@ -41250,7 +41201,7 @@ Xd
 Xd
 Xd
 Xd
-UB
+PN
 UB
 UB
 UB
@@ -41480,7 +41431,7 @@ UB
 UB
 UB
 UB
-UB
+PN
 Xd
 Xd
 Xd
@@ -41502,7 +41453,7 @@ jV
 jV
 jV
 jV
-UB
+PN
 UB
 UB
 UB
@@ -45866,17 +45817,17 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
 Qh
 Qh
 Qh
@@ -45887,7 +45838,7 @@ Qh
 Qh
 Qh
 Qh
-vt
+Ck
 vt
 vt
 vt
@@ -46118,17 +46069,17 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
 Zl
 Zl
 Zl
@@ -46139,11 +46090,11 @@ Zl
 Zl
 Zl
 Zl
-vt
-vt
-vt
-vt
-vt
+Ck
+Ck
+Ck
+Ck
+Ck
 vt
 vt
 vt
@@ -46370,7 +46321,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 Zl
 Zl
 Zl
@@ -46395,7 +46346,7 @@ Zl
 Zl
 Zl
 Zl
-vt
+Ck
 vt
 vt
 vt
@@ -46622,7 +46573,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 Zl
 Zl
 Zl
@@ -46647,7 +46598,7 @@ Zl
 Zl
 Zl
 Zl
-vt
+Ck
 vt
 vt
 vt
@@ -46874,7 +46825,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 Zl
 Zl
 Zl
@@ -46899,7 +46850,7 @@ Zl
 Zl
 Zl
 Zl
-vt
+Ck
 vt
 vt
 vt
@@ -47126,7 +47077,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 Zl
 Zl
 Zl
@@ -47151,7 +47102,7 @@ Zl
 Zl
 Zl
 Zl
-vt
+Ck
 vt
 vt
 vt
@@ -47378,7 +47329,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 Zl
 Zl
 Zl
@@ -47403,7 +47354,7 @@ Zl
 Zl
 Zl
 Zl
-vt
+Ck
 vt
 vt
 vt
@@ -47630,7 +47581,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 Zl
 Zl
 Zl
@@ -47655,7 +47606,7 @@ Zl
 Zl
 Zl
 Zl
-vt
+Ck
 vt
 vt
 vt
@@ -47882,7 +47833,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 Zl
 Zl
 Zl
@@ -47907,7 +47858,7 @@ Zl
 Zl
 Zl
 Zl
-vt
+Ck
 vt
 vt
 vt
@@ -48134,7 +48085,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 Zl
 Zl
 Zl
@@ -48159,7 +48110,7 @@ Zl
 Zl
 Zl
 Zl
-vt
+Ck
 vt
 vt
 vt
@@ -48386,7 +48337,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 Zl
 Zl
 Zl
@@ -48411,7 +48362,7 @@ Zl
 Zl
 Zl
 Zl
-vt
+Ck
 vt
 vt
 vt
@@ -48638,7 +48589,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 Zl
 Zl
 Zl
@@ -48663,7 +48614,7 @@ Zl
 Zl
 Zl
 Zl
-vt
+Ck
 vt
 vt
 vt
@@ -48890,7 +48841,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 Zl
 Zl
 Zl
@@ -48915,7 +48866,7 @@ Zl
 Zl
 Zl
 Zl
-vt
+Ck
 vt
 vt
 vt
@@ -49142,7 +49093,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 Zl
 Zl
 Zl
@@ -49167,7 +49118,7 @@ Zl
 Zl
 Zl
 Zl
-vt
+Ck
 vt
 vt
 vt
@@ -49394,7 +49345,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 Zl
 Zl
 Zl
@@ -49419,7 +49370,7 @@ Zl
 Zl
 Zl
 Zl
-vt
+Ck
 vt
 vt
 vt
@@ -49646,7 +49597,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 Zl
 Zl
 Zl
@@ -49671,7 +49622,7 @@ Zl
 Zl
 Zl
 Zl
-vt
+Ck
 vt
 vt
 vt
@@ -49898,7 +49849,7 @@ vt
 vt
 vt
 vt
-vt
+Ck
 Zl
 Zl
 Zl
@@ -49923,7 +49874,7 @@ Zl
 Zl
 Zl
 Zl
-vt
+Ck
 vt
 vt
 vt
@@ -50150,32 +50101,32 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
+Ck
 vt
 vt
 vt
@@ -69269,41 +69220,41 @@ uU
 uU
 uU
 uU
-IG
-IG
-IG
-IG
-sF
-sF
-sF
-sF
-sF
-IH
-IH
-IH
-IH
-IH
-IH
-IH
-FC
-FC
-FC
-FC
-FC
-FC
-FC
-FC
-FC
-FC
-FC
+PV
+PV
+PV
+PV
+ZT
+ZT
+ZT
+ZT
+ZT
+ZT
+ZT
+ZT
+ZT
+ZT
+ZT
+ZT
+As
+As
+As
+As
+As
+As
+As
+As
+As
+As
+As
 uN
-FC
-FC
-FC
-FC
-FC
-FC
-FC
+As
+As
+As
+As
+As
+As
+As
 ae
 Sb
 Sb
@@ -69519,9 +69470,9 @@ uU
 uU
 uU
 uU
-PH
-PH
-PH
+rZ
+rZ
+rZ
 PH
 PH
 PH
@@ -71090,12 +71041,12 @@ vt
 vt
 vt
 uU
-PV
-PV
-PV
-PV
-PV
-PV
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -71342,12 +71293,12 @@ uU
 uU
 uU
 uU
-PV
-rY
-ZT
-ZT
-Gw
-PV
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -71594,12 +71545,12 @@ uU
 uU
 uU
 uU
-rZ
-pP
-Hh
-As
-Bn
-PV
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -71846,12 +71797,12 @@ uU
 uU
 uU
 uU
-rZ
-wi
-Hh
-Mr
-Bn
-PV
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -72098,12 +72049,12 @@ uU
 uU
 uU
 uU
-PV
-Gw
-ZT
-ZT
-PV
-PV
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -72350,12 +72301,12 @@ uU
 uU
 uU
 uU
-rY
-PV
-PV
-PV
-PV
-PV
+uU
+uU
+uU
+uU
+uU
+uU
 uU
 uU
 uU
@@ -72605,9 +72556,9 @@ Sb
 Sb
 Sb
 Sb
-Sb
-Sb
-Sb
+uU
+uU
+uU
 Sb
 Sb
 Sb
