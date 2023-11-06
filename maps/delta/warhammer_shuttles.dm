@@ -45,7 +45,7 @@
 
 /obj/machinery/computer/shuttle_control/ferry/roguet
 	name = "Shuttle Control Console"
-	shuttle_tag = "mechiferry"
+	shuttle_tag = "roguet"
 //
 /datum/shuttle/autodock/ferry/mechiferry
 	name = "mechiferry"

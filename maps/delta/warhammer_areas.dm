@@ -1762,13 +1762,13 @@ Area basic template
 	music = 'sound/newmusic/Lab_Experiment.ogg'
 	requires_power = 0
 
- /area/cadiaoutpost/oa/shuttle/roguet
-	name = "Station"
+/area/cadiaoutpost/oa/shuttle/roguet
+	name = "roguet"
 	icon_state = "shuttle"
 	music = 'sound/newmusic/Lab_Experiment.ogg'
 	requires_power = 0
 
- /area/cadiaoutpost/oa/shuttle/mechiferry
+/area/cadiaoutpost/oa/shuttle/mechiferry
 	name = "Station"
 	icon_state = "shuttle"
 	music = 'sound/newmusic/Outpost1.ogg'
