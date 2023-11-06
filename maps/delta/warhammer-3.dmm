@@ -9281,7 +9281,7 @@
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/hive_city)
 "iIb" = (
-/turf/space,
+/turf/simulated/floor/fancyfloor/coralg,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
 "iIn" = (
@@ -14226,7 +14226,7 @@
 	name = "Trader Bazaar";
 	req_one_access = list(225)
 	},
-/turf/space,
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "neG" = (
 /turf/simulated/floor/fancyfloor/carpet/grey{

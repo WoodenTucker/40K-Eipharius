@@ -8396,7 +8396,6 @@
 	dir = 4
 	},
 /obj/item/clothing/head/helmet/berserkerhelm,
-/obj/item/clothing/suit/armor/berserker,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/crate,
 /turf/simulated/floor/tiled{
