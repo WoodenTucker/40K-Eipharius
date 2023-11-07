@@ -24,6 +24,7 @@
 	/datum/job/roguetrader,
 	/*/datum/job/janissary,*/
 	/datum/job/xenomerc,
+	/datum/job/skitarii,
 	/datum/job/explorer,
 	/datum/job/biologis,
 	/datum/job/engineer,

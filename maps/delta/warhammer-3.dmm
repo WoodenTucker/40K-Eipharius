@@ -3721,7 +3721,6 @@
 	},
 /area/cadiaoutpost/oa/service/hab/inside)
 "dEs" = (
-/obj/structure/table/rack,
 /obj/item/device/cassette/titansbane,
 /obj/item/device/cassette/unknownsoldier,
 /obj/item/device/cassette/western1,
@@ -3735,6 +3734,7 @@
 /obj/item/device/boombox,
 /obj/item/device/boombox,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/closet/crate/xenos/chest3,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -5669,14 +5669,12 @@
 "fzb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/table/rack/shelf{
-	color = "grey"
-	},
 /obj/item/crutches,
 /obj/item/crutches,
 /obj/item/defibrillator,
 /obj/random/loot/randomitemtown,
 /obj/effect/floor_decal/turf/surgery2,
+/obj/structure/closet/crate/xenos/chest3,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -7343,12 +7341,12 @@
 /area/cadiaoutpost/oa/service/hab/inside)
 "gWd" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/table/rack,
 /obj/random/canned_food,
 /obj/random/canned_food,
 /obj/random/canned_food,
 /obj/random/canned_food,
 /obj/random/canned_food,
+/obj/structure/closet/crate/xenos/chest3,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -8112,11 +8110,11 @@
 /area/cadiaoutpost/oa/villageinside)
 "hFe" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/table/rack,
 /obj/random/accessory,
 /obj/random/accessory,
 /obj/random/accessory,
 /obj/random/accessory,
+/obj/structure/closet/crate/xenos/chest3,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -8396,7 +8394,6 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "hSL" = (
-/obj/structure/table/rack,
 /obj/item/grenade/frag,
 /obj/machinery/light{
 	dir = 1
@@ -8406,6 +8403,7 @@
 /obj/item/grenade/spawnergrenade/manhacks,
 /obj/item/grenade/spawnergrenade/manhacks,
 /obj/item/device/batterer,
+/obj/structure/closet/crate/xenos/chest3,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -10744,9 +10742,6 @@
 /obj/random/firstaid,
 /obj/random/firstaid,
 /obj/random/firstaid,
-/obj/structure/table/rack/shelf{
-	color = "grey"
-	},
 /obj/item/reagent_containers/ivbag/blood/OMinus,
 /obj/item/reagent_containers/ivbag/blood/OMinus,
 /obj/item/reagent_containers/ivbag/blood/OMinus,
@@ -10754,6 +10749,7 @@
 /obj/item/storage/belt/medical/full,
 /obj/item/storage/box/ifak,
 /obj/effect/floor_decal/turf/surgery2,
+/obj/structure/closet/crate/xenos/chest2,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -11179,11 +11175,11 @@
 /area/cadiaoutpost/oa/villageinside)
 "klM" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/table/rack,
 /obj/random/loot/guardgear,
 /obj/random/loot/guardgear,
 /obj/random/loot/guardgear,
 /obj/random/loot/guardgear,
+/obj/structure/closet/crate/xenos/chest3,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -12497,6 +12493,7 @@
 /obj/item/clothing/suit/storage/hooded/wintercoat/medical{
 	armor = list("melee"=20,"bullet"=20,"laser"=20,"energy"=0,"bomb"=0,"bio"=30,"rad"=10)
 	},
+/obj/structure/closet/crate/xenos/chest3,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -12969,6 +12966,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/hive_city)
+"lQi" = (
+/obj/structure/closet/crate/xenos/cargo8,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/new_hive/hive_city)
 "lQk" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/darkwood,
@@ -13405,7 +13406,6 @@
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/hive_city)
 "mnx" = (
-/obj/structure/table/rack,
 /obj/item/clothing/glasses/night,
 /obj/item/clothing/mask/gas/half/cadianrespirator,
 /obj/item/clothing/mask/gas/half/cadianrespirator,
@@ -13416,6 +13416,7 @@
 /obj/item/clothing/mask/gas/half/cadianrespirator,
 /obj/item/clothing/mask/gas/half/cadianrespirator,
 /obj/item/rnd/power10,
+/obj/structure/closet/crate/xenos/chest3,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -14431,7 +14432,6 @@
 /area/cadiaoutpost/oa/bridge/hallway)
 "nsI" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/table/rack,
 /obj/item/reagent_containers/food/snacks/tastybread,
 /obj/item/reagent_containers/food/snacks/tastybread,
 /obj/item/reagent_containers/food/snacks/tastybread,
@@ -14440,6 +14440,7 @@
 /obj/item/reagent_containers/food/snacks/tastybread,
 /obj/item/reagent_containers/food/snacks/tastybread,
 /obj/item/reagent_containers/food/snacks/tastybread,
+/obj/structure/closet/crate/xenos/chest3,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -14881,13 +14882,11 @@
 "nLW" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/table/rack/shelf{
-	color = "grey"
-	},
 /obj/item/storage/firstaid/surgery,
 /obj/random/medical/lite,
 /obj/random/maintenance,
 /obj/effect/floor_decal/turf/surgery2,
+/obj/structure/closet/crate/xenos/chest2,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -17269,9 +17268,9 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "qex" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/table/rack,
 /obj/random/loot/randomitemcaves,
 /obj/random/loot/randomitemcaves,
+/obj/structure/closet/crate/xenos/chest3,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -17923,10 +17922,8 @@
 /obj/random/firstaid,
 /obj/random/firstaid,
 /obj/random/firstaid,
-/obj/structure/table/rack/shelf{
-	color = "grey"
-	},
 /obj/effect/floor_decal/turf/surgery2,
+/obj/structure/closet/crate/xenos/chest2,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -24670,8 +24667,8 @@
 /area/cadiaoutpost/oa/farm)
 "xfo" = (
 /obj/item/reagent_containers/ivbag/blood/OMinus,
-/obj/structure/closet/crate/freezer,
 /obj/effect/floor_decal/turf/surgery2,
+/obj/structure/closet/crate/xenos/chest3,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -25337,11 +25334,9 @@
 /obj/random/medical,
 /obj/random/medical,
 /obj/item/storage/belt/medical/full,
-/obj/structure/table/rack/shelf{
-	color = "grey"
-	},
 /obj/item/storage/box/ifak,
 /obj/effect/floor_decal/turf/surgery2,
+/obj/structure/closet/crate/xenos/chest2,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -82415,7 +82410,7 @@ eTh
 geo
 geo
 geo
-eTh
+lQi
 eTh
 eTh
 eTh
