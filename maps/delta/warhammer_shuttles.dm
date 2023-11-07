@@ -17,7 +17,7 @@
 	name = "Messina Landing Pad"
 	landmark_tag = "inquisition_start"
 	base_area = /area/inqmoon
-	base_turf = /turf/simulated/floor/plating/reinforced
+	base_turf = /turf/simulated/floor/plating
 
 /obj/machinery/computer/shuttle_control/ferry/inquisition
 	name = "Shuttle Control Console"
@@ -35,7 +35,7 @@
 	name = "landing pad"
 	landmark_tag = "roguet_end"
 	base_area = /area/cadiaoutpost/rtship2
-	base_turf = /turf/simulated/floor/plating
+	base_turf = /turf/space
 
 /obj/effect/shuttle_landmark/ferry/roguet_start
 	name = "roguet ship"

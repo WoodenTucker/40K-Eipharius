@@ -234,6 +234,53 @@
 		H.get_idcard()?.access = list(access_mechanicus, access_heads, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, access_all_personal_lockers) // this may be unneeded or bloat for mechanicus, needs testing
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Magos Explorator, resting within a Forge Temple of the Mechanicus constructed by the AdMech. Your primary duty is to explore the planet and locate relics and research items. You have equal power alongside the Biologis. Ensure the Menials and Techpriests are properly trained in your craft.</font></b></span>")
 
+/datum/job/skitarii
+	title = "Skitarii"
+	department = "Science"
+	department_flag = SCI|ENG
+	total_positions = 1
+	spawn_positions = 1
+	minimal_player_age = 7
+	open_when_dead = 0
+	supervisors = "the Adeptus Mechanicus and Magos Biologis."
+	selection_color = "#d82424"
+	economic_modifier = 7
+	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
+	access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, 56, access_heads, access_all_personal_lockers)
+	minimal_access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, 56, access_heads, access_all_personal_lockers)
+	outfit_type = /decl/hierarchy/outfit/job/skitarii/basic
+	auto_rifle_skill = 8 
+	semi_rifle_skill = 8
+	sniper_skill = 8
+	shotgun_skill = 8
+	lmg_skill = 8
+	smg_skill = 8
+	cultist_chance = 0
+	
+	equip(var/mob/living/carbon/human/skitarii/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Skitarii Alpha")
+		H.set_trait(new/datum/trait/death_tolerant()) //They literally open up dead bodies of xenos and humans alike, why would they be disgusted of organs and blood?
+		H.add_stats(rand(18,21), rand(22,24), rand(23,25), rand(12,20)) //just as modified as the magos, if not more.
+		H.add_skills(rand(8,11),rand(9,11),rand(2,10),rand(3,10),rand(1,6)) //melee, ranged, med, eng, surgery
+		H.warfare_language_shit(LANGUAGE_MECHANICUS)
+		H.warfare_faction = IMPERIUM
+		H.verbs += list(
+			/mob/living/carbon/human/skitarii/proc/giveskitstats,
+			)
+		H.witchblood()
+		H.adjustStaminaLoss(-INFINITY)
+		H.bladder = -INFINITY
+		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
+		H.thirst = INFINITY
+		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
+		H.vice = null //off for now
+		H.say(":e Memory cache integrity at 87%... Motive force appeased. Security apparatis functional.")
+		H.get_idcard()?.access = list(access_mechanicus, access_heads, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, access_all_personal_lockers) // this may be unneeded or bloat for mechanicus, needs testing
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Skitarii unit and bear unique levels of intelligence, forged from a deceased and loyal bondsman -- your intelligence and loyal mind preserved by your forger, the Magos Biologis. You are their masterwork -- their magnum opus...</font></b></span>")
+
 
 //Skitarii
 /decl/hierarchy/outfit/job/skitarii

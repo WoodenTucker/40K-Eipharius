@@ -376,7 +376,10 @@
 "bs" = (
 /obj/structure/table/graf/big_wood_table,
 /obj/item/reagent_containers/food/snacks/carrotfries,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "bt" = (
 /obj/structure/table/steel,
@@ -1028,7 +1031,10 @@
 "eH" = (
 /obj/structure/table/graf/big_wood_table,
 /obj/item/reagent_containers/food/snacks/cherrypie,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "eI" = (
 /obj/structure/sign/ship{
@@ -1331,7 +1337,10 @@
 "gh" = (
 /obj/effect/floor_decal/turf/steel,
 /obj/machinery/door/airlock/centcom,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "gi" = (
 /obj/machinery/optable,
@@ -1458,7 +1467,10 @@
 /obj/item/clothing/under/rank/victorian/blackdress,
 /obj/item/clothing/under/dress/dress_cap,
 /obj/structure/closet/crate/xenos,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "gX" = (
 /obj/item/modular_computer/console/preset/civilian,
@@ -3186,22 +3198,25 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "oU" = (
 /obj/effect/shuttle_landmark/ferry/governor_start,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "oV" = (
 /obj/item/modular_computer/console/preset/civilian,
 /turf/simulated/floor,
 /area/space)
-"oW" = (
-/turf/simulated/floor/tiled/freezer,
-/area/cadiaoutpost/oa/shuttle/governor)
 "pb" = (
 /obj/structure/bed/chair/wood/fancy,
 /obj/machinery/light{
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "pc" = (
 /obj/structure/table/steel_reinforced,
@@ -3453,7 +3468,10 @@
 /area/cadiaoutpost/oa/shuttle/station1)
 "qG" = (
 /obj/structure/table/graf/big_wood_table,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "qH" = (
 /obj/item/clothing/head/helmet/mining,
@@ -3592,7 +3610,10 @@
 "rH" = (
 /obj/structure/table/graf/big_wood_table,
 /obj/item/reagent_containers/food/snacks/appletart,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "rI" = (
 /obj/structure/table/steel,
@@ -4125,7 +4146,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/shuttle/inquisition)
 "vu" = (
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "vv" = (
 /obj/effect/wingrille_spawn/reinforced/polarized/full,
@@ -4292,7 +4316,10 @@
 "ww" = (
 /obj/structure/table/steel,
 /obj/item/fluff_items/paperwork,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "wx" = (
 /obj/effect/floor_decal/turf/metal/five,
@@ -4330,7 +4357,10 @@
 /area/centcom)
 "wC" = (
 /obj/structure/curtain/open/shower/security,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "wD" = (
 /obj/structure/window/reinforced{
@@ -4386,7 +4416,10 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/tiled/freezer,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "wT" = (
 /obj/machinery/button/remote/blast_door/id_scan{
@@ -5927,7 +5960,10 @@
 "Fx" = (
 /obj/structure/table/graf/big_wood_table,
 /obj/item/reagent_containers/food/snacks/aesirsalad,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "Fy" = (
 /obj/structure/bed/chair{
@@ -6082,7 +6118,10 @@
 	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
 	name = "Lectitio Divinitatus"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "GH" = (
 /obj/structure/table/graf/polished_table,
@@ -7001,7 +7040,10 @@
 /area/cadiaoutpost/oa/shuttle/station1)
 "Ma" = (
 /obj/machinery/cooker/oven,
-/turf/simulated/floor/tiled/freezer,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "Mf" = (
 /obj/structure/torchwall/service{
@@ -7033,7 +7075,10 @@
 "Mn" = (
 /obj/effect/floor_decal/turf/steel,
 /obj/machinery/door/airlock/glass_command,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "Mr" = (
 /obj/machinery/door/airlock/ancient_ship/command{
@@ -7099,13 +7144,6 @@
 /obj/machinery/atmospherics/pipe/tank/carbon_dioxide,
 /turf/simulated/floor/plating,
 /area/centcom)
-"MM" = (
-/obj/item/fluff_items/alien_blaster,
-/turf/simulated/floor/ship_floor/steel{
-	icon_state = "a7";
-	icon = 'icons/map_project/ship/tilesnovos.dmi'
-	},
-/area/cadiaoutpost/oa/shuttle/station1)
 "MS" = (
 /obj/structure/table/woodentable,
 /obj/machinery/chemical_dispenser/bar_alc/full,
@@ -7525,7 +7563,10 @@
 	icon_state = "tube1";
 	dir = 8
 	},
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "Pp" = (
 /obj/effect/floor_decal/carpet,
@@ -7699,7 +7740,10 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Qr" = (
 /obj/structure/bed/chair/wood/fancy,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "Qs" = (
 /obj/effect/floor_decal/carpet{
@@ -7888,7 +7932,10 @@
 /obj/structure/table/graf/big_wood_table,
 /obj/item/reagent_containers/food/snacks/poo,
 /obj/item/reagent_containers/food/snacks/poo,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "RC" = (
 /obj/structure/torchwall/service{
@@ -7951,14 +7998,20 @@
 	},
 /obj/structure/table/steel,
 /obj/item/fluff_items/paperwork,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "RV" = (
 /obj/item/clothing/suit/armor/governor,
 /obj/item/clothing/under/child_heir,
 /obj/item/clothing/under/security_uniform_barny,
 /obj/structure/closet/crate/xenos,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "Sg" = (
 /turf/unsimulated/oldship{
@@ -7982,9 +8035,6 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/shuttle/station1)
-"Sp" = (
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/shuttle/governor)
 "Sr" = (
 /obj/item/storage/backpack/satchel/warfare/kroot,
 /obj/item/storage/backpack/satchel/warfare/kroot,
@@ -8063,7 +8113,10 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "SI" = (
 /obj/structure/table/standard,
@@ -8500,7 +8553,10 @@
 	name = "comfy bed"
 	},
 /obj/item/bedsheet/rd,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "Vr" = (
 /turf/unsimulated/oldship{
@@ -8822,7 +8878,10 @@
 /area/centcom)
 "Xl" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
-/turf/simulated/floor/tiled/freezer,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "Xr" = (
 /obj/structure/table/woodentable{
@@ -8838,12 +8897,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
 "Xu" = (
-/obj/machinery/light{
-	icon_state = "tube1";
-	dir = 4
-	},
-/turf/simulated/floor/carpet/purple,
-/area/cadiaoutpost/oa/shuttle/governor)
+/obj/effect/floor_decal/turf/metal/five,
+/obj/structure/hivedecor/xenos/autolathe,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "Xx" = (
 /obj/machinery/button/remote/blast_door/id_scan{
 	id = "taudrop";
@@ -8933,7 +8990,10 @@
 	icon = 'icons/map_project/ship/ship_equipment.dmi';
 	icon_state = "1,011"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "Yc" = (
 /obj/structure/sign/poster/poster2,
@@ -8945,7 +9005,10 @@
 /area/centcom)
 "Yh" = (
 /obj/machinery/cooker/grill,
-/turf/simulated/floor/tiled/freezer,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "a7";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
 /area/cadiaoutpost/oa/shuttle/governor)
 "Yl" = (
 /obj/effect/floor_decal/turf/metal/five,
@@ -32588,7 +32651,7 @@ ax
 gk
 ox
 TU
-YX
+Xu
 pY
 YY
 CP
@@ -34857,7 +34920,7 @@ WM
 PE
 us
 lM
-MM
+IC
 IC
 FZ
 yZ
@@ -42927,11 +42990,11 @@ IM
 IM
 FG
 FG
-Sp
-Sp
-Sp
-Sp
-Sp
+vu
+vu
+vu
+vu
+vu
 FG
 Qr
 rH
@@ -43180,22 +43243,22 @@ IM
 Rj
 Ya
 oU
-Sp
-Sp
-Sp
-Sp
+vu
+vu
+vu
+vu
 gh
 vu
 vu
-Xu
-Xu
-Xu
-Xu
+wS
+wS
+wS
+wS
 vu
 vu
-Xu
+wS
 vu
-Xu
+wS
 FG
 dX
 ax
@@ -43431,11 +43494,11 @@ IM
 IM
 FG
 FG
-Sp
-Sp
-Sp
-Sp
-Sp
+vu
+vu
+vu
+vu
+vu
 FG
 FG
 FG
@@ -43695,10 +43758,10 @@ vu
 vu
 RV
 FG
-Sp
+vu
 FG
 Ma
-oW
+vu
 Xl
 FG
 dX
