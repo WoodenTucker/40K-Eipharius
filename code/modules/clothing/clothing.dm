@@ -154,7 +154,7 @@
 		icon = sprite_sheets_obj[target_species]
 	else
 		icon = initial(icon)
-/*
+
 /obj/item/clothing/get_examine_line()
 	. = ..()
 	var/list/ties = list()
@@ -165,7 +165,7 @@
 		.+= " with [english_list(ties)] attached"
 	if(accessories.len > ties.len)
 		.+= ". <a href='?src=\ref[src];list_ungabunga=1'>\[See accessories\]</a>"
-*/
+
 /obj/item/clothing/CanUseTopic(var/user)
 	if(user in view(get_turf(src)))
 		return STATUS_INTERACTIVE

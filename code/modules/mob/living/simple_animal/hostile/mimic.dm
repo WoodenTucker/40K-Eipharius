@@ -30,7 +30,7 @@ var/global/list/protected_objects = list(/obj/structure/table, /obj/structure/ca
 	minbodytemp = 0
 
 	faction = "mimic"
-	move_to_delay = 8
+	move_to_delay = 4
 
 	var/weakref/copy_of
 	var/weakref/creator // the creator

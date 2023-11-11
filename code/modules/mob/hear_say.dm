@@ -45,6 +45,8 @@
 		hear_sleep(message)
 		return
 
+
+
 	//non-verbal languages are garbled if you can't see the speaker. Yes, this includes if they are inside a closet.
 	if (language && (language.flags & NONVERBAL))
 		if (!speaker || (src.sdisabilities & BLIND || src.blinded) || !(speaker in view(src)))
@@ -90,6 +92,9 @@
 			else if(!is_blind())
 				to_chat(src, "<span class='name'>[speaker_name]</span>[alt_name] talks but you cannot hear them.")
 	else
+		if(src.active_ritual != null && src.active_ritual.ritual_active)
+			hear_ritual_responses(message, speaker) //this is where we listen for responses
+
 		if(language)
 			on_hear_say("<span class='game say'><span class='name'>[speaker_name]</span>[alt_name] [track][language.format_message(message, verb)]</span>")
 		else
@@ -314,3 +319,16 @@
 		heard = "<span class = 'game_say'>...<i>You almost hear someone talking</i>...</span>"
 
 	to_chat(src, heard)
+
+/mob/proc/hear_ritual_responses(var/message, var/mob/living/carbon/human/speaker)
+	//pulls our response phrase from the active ritual
+
+
+	var/response_regex = regex("\\b(?:[src.active_ritual.response_phrase])\\b", "i")
+
+
+	if(findtext(message, response_regex))
+		src.active_ritual.correct_responses++
+		//we use an associated list to create or overwrite entries via key its probably the fastest way since |= is just an abstracted find loop
+		//they probably can't change their ckey so we'll use that as the key and assign the value to their whole mob
+		src.active_ritual.ritualists[speaker.ckey] = speaker

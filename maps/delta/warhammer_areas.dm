@@ -7,6 +7,31 @@ GLOBAL_LIST_EMPTY(red_captured_zones) // = list()
 GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 
 
+
+
+/area/cadiaoutpost/new_hive/hive_city
+	name = "Hive City"
+	icon_state = "village"
+	music = 'sound/newmusic/General_Ambient2.ogg'
+	requires_power = FALSE
+	dynamic_lighting = 1
+
+/area/cadiaoutpost/new_hive/caves
+	name = "Hive Depths" // Regular caves - little to no danger. Soft ambience.
+	icon_state = "cave"
+	music = 'sound/newmusic/General_Ambient2.ogg'
+	var/instability = 0
+
+
+
+
+
+
+
+
+
+///////
+
 /area/constructionsite
 	name = "\improper Construction Site"
 	icon_state = "storage"
@@ -338,6 +363,164 @@ Area basic template
 	name = "Arrivals"
 	icon_state = "cryo"
 	requires_power = FALSE
+
+
+// SPACE STUFF
+
+/area/cadiaoutpost/rtship1
+	name = "RT"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+
+/area/cadiaoutpost/rtship2
+	name = "RT"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+
+/area/cadiaoutpost/mechiferry1
+	name = "Mechiferry"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/Outpost1.ogg'
+
+/area/cadiaoutpost/mechiferry2
+	name = "Mechiferry"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/Outpost1.ogg'
+
+/area/cadiaoutpost/govship1
+	name = "Govna"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+
+/area/cadiaoutpost/govship2
+	name = "Govna"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+
+/area/cadiaoutpost/magosship1
+	name = "Magussy"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/General_Ambient2.ogg' // located in city
+
+/area/cadiaoutpost/magosship2
+	name = "Magussy"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+
+////////////////////////////////////////
+//////////DUNGEONS//////////////////
+//////////////////////////////////////
+////////////////////////////////////////
+//////////DUNGEONS//////////////////
+//////////////////////////////////////
+////////////////////////////////////////
+//////////DUNGEONS//////////////////
+//////////////////////////////////////
+////////////////////////////////////////
+//////////DUNGEONS//////////////////
+//////////////////////////////////////
+
+/area/cadiaoutpost/oa/dungeon1
+	name = "Necron Tomb P1"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/Caves_Terror.ogg'
+
+/area/cadiaoutpost/oa/dungeon2
+	name = "Necron Tomb P2 Lower Floor"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/lovecraft2.ogg'
+
+/area/cadiaoutpost/oa/dungeon3
+	name = "Necron Tomb P2 Upper Floor"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/Caves_Terror.ogg'
+
+/area/cadiaoutpost/oa/dungeon4
+	name = "Necron Tomb P3 Finale"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/lovecraft2.ogg'
+
+/area/cadiaoutpost/oa/mechanicusdig
+	name = "Necron Mechanicus Site"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/lovecraft1.ogg'
+
+/area/cadiaoutpost/oa/theforest
+	name = "The Forest"
+	icon_state = "forest"
+	requires_power = TRUE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/Caves_Terror.ogg'
+
+
+/area/cadiaoutpost/oa/dungeon1/Entered(mob/living/L,  atom/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))//Doesn't work but this does stop the lag.
+		L.overlay_fullscreen("fog", /obj/screen/fullscreen/fog)
+
+/area/cadiaoutpost/oa/dungeon2/Entered(mob/living/L,  atom/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))//Doesn't work but this does stop the lag.
+		L.overlay_fullscreen("fog", /obj/screen/fullscreen/fog)
+
+/area/cadiaoutpost/oa/dungeon3/Entered(mob/living/L,  atom/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))//Doesn't work but this does stop the lag.
+		L.overlay_fullscreen("ashfall_light", /obj/screen/fullscreen/storm)
+
+/area/cadiaoutpost/oa/dungeon4/Entered(mob/living/L,  atom/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))//Doesn't work but this does stop the lag.
+		L.overlay_fullscreen("ashfall_heavy", /obj/screen/fullscreen/stormheavy)
+
+/area/cadiaoutpost/oa/theforest/Entered(mob/living/L,  atom/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))//Doesn't work but this does stop the lag.
+		L.overlay_fullscreen("snowfall_heavy_old", /obj/screen/fullscreen/fallout)
+
+/area/cadiaoutpost/oa/theforest/Exited(mob/living/L, area/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))
+		L.clear_fullscreen("snowfall_heavy_old")
+
+/area/cadiaoutpost/oa/village/Entered(mob/living/L,  atom/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/village))//Doesn't work but this does stop the lag.
+		L.overlay_fullscreen("snowfall_heavy_old", /obj/screen/fullscreen/snowstorm)
+
+/area/cadiaoutpost/oa/village/Exited(mob/living/L, area/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/village))
+		L.clear_fullscreen("snowfall_heavy_old")
+
+
+
 //////////////////////////////////////
 ////////////Hallways//////////////////
 //////////////////////////////////////
@@ -388,6 +571,13 @@ Area basic template
 	name = "Inner Hallway"
 	icon_state = "hallC1"
 	requires_power = FALSE
+	music = 'sound/newmusic/Outpost1.ogg'
+
+/area/cadiaoutpost/oa/magistratumpost
+	name = "Forward Magistratum Post"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
 	music = 'sound/newmusic/Outpost1.ogg'
 
 //////////////////////////////////////
@@ -535,7 +725,19 @@ Area basic template
 	music = 'sound/newmusic/Outpost1.ogg'
 	requires_power = FALSE
 
+/area/cadiaoutpost/oa/governor
+	name = "Hangar"
+	icon_state = "red"
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+	requires_power = FALSE
+
 /area/cadiaoutpost/oa/hangarpact
+	name = "Pact Hangar"
+	icon_state = "red"
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+	requires_power = FALSE
+
+/area/cadiaoutpost/oa/hangarpact2
 	name = "Pact Hangar"
 	icon_state = "red"
 	music = 'sound/newmusic/Lab_Experiment.ogg'
@@ -579,6 +781,8 @@ Area basic template
 /area/cadiaoutpost/oa/engineering/engine/enginewaste
 	name = "Engine Waste"
 	icon_state = "engine_waste"
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+	requires_power = 0
 
 /area/cadiaoutpost/oa/engineering/engine/enginesmes
 	name = "Engine Smes"
@@ -829,7 +1033,7 @@ Area basic template
 /area/cadiaoutpost/oa/supply/offices/roguetrader
 	name = "Rogue Trader's Office"
 	icon_state = "rt"
-	music = 'sound/newmusic/Hab.ogg'
+	music = 'sound/newmusic/Inn_Ambient.ogg'
 	requires_power = FALSE
 
 /area/cadiaoutpost/oa/supply
@@ -887,7 +1091,6 @@ Area basic template
 	icon_state = "farm"
 	music = 'sound/newmusic/General_Ambient2.ogg'
 	requires_power = FALSE
-	dynamic_lighting = 1
 
 /area/cadiaoutpost/oa/groxpen
 	name = "groxpen"
@@ -988,14 +1191,14 @@ Area basic template
 	dynamic_lighting = 1
 
 /area/cadiaoutpost/oa/villageinside/lab
-	name = "Village Lab"
-	icon_state = "village"
-	music = 'sound/newmusic/Lab_Loud.ogg'
+	name = "Dungeon"
+	icon_state = "dungeon"
+	music = 'sound/newmusic/Lab_Experiment.ogg'
 
 /area/cadiaoutpost/oa/villageinside/lab/muffled
-	name = "Village Lab Muffled"
-	icon_state = "village"
-	music = 'sound/newmusic/Lab_Quiet.ogg'
+	name = "Mysterious Zone"
+	icon_state = "dungeon"
+	music = 'sound/newmusic/Lab_Experiment.ogg'
 
 /area/cadiaoutpost/oa/gatehouse
 	name = "Gatehouse"
@@ -1038,6 +1241,8 @@ Area basic template
 	music = 'sound/newmusic/Chapel1.ogg'
 	requires_power = FALSE
 
+	var/consecrated = FALSE
+
 /area/cadiaoutpost/oa/service/chapel/chapeloffice
 	name = "Chapel Office"
 	icon_state = "chapeloffice"
@@ -1073,6 +1278,35 @@ Area basic template
 	icon_state = "chapelvault"
 	requires_power = FALSE
 
+
+
+/area/cadiaoutpost/oa/service/chapel/Entered(mob/living/carbon/L, atom/A)
+	. = ..()
+	if(src.consecrated == TRUE)
+		if(L.faction != "Chaos")
+			if(prob(5))
+				to_chat(L, "<span class='flick-holy'>+ I can feel His presence here... +</span>")
+				L.happiness += 3
+		else
+			L.flash_weakest_pain()
+			to_chat(L, "<span class='horror-text'>+ I can feel His presence here... +</span> ")
+			L.happiness -= 3
+			sleep(3 SECONDS)
+			//not going to be fun if they stay
+			L.danger_timer = addtimer(CALLBACK(L, /mob/living/carbon/human/.proc/overstayed), 35 SECONDS, TIMER_STOPPABLE|TIMER_UNIQUE|TIMER_NO_HASH_WAIT|TIMER_OVERRIDE)
+			to_chat(L, "<span class='horror-text'>+ I HAVE TO GET OUT OF HERE +</span> ")
+
+
+
+
+
+/area/cadiaoutpost/oa/service/chapel/Exited(mob/living/L, area/A)
+	. = ..()
+	if(src.consecrated == TRUE)
+		if(L.faction == "Chaos")
+			deltimer(L.danger_timer) //if they leave in time the timer will go away
+
+
 /area/cadiaoutpost/oa/maintenance/department/service/chapel
 	name = "Chapel Maintenance"
 	music = 'sound/newmusic/Chapel1.ogg'
@@ -1092,52 +1326,6 @@ Area basic template
 	name = "Pathfinder's Abode"
 	icon_state = "pathfinder"
 
-////////////////////////////////////////
-//////////FOREST//////////////////
-//////////////////////////////////////
-/area/cadiaoutpost/oa/theforest
-	name = "The Forest"
-	icon_state = "forest"
-	requires_power = TRUE
-	dynamic_lighting = 1
-	music = 'sound/newmusic/General_Ambient2.ogg'
-
-/area/cadiaoutpost/oa/magistratumpost
-	name = "Forward Magistratum Post"
-	icon_state = "forwardpost"
-	requires_power = FALSE
-	dynamic_lighting = 1
-	music = 'sound/newmusic/Outpost1.ogg'
-
-/area/cadiaoutpost/oa/theforest/Entered(mob/living/L,  atom/A)
-	. = ..()
-	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))//Doesn't work but this does stop the lag.
-		L.overlay_fullscreen("snowfall_heavy_old", /obj/screen/fullscreen/snowstorm)
-
-/area/cadiaoutpost/oa/theforest/Exited(mob/living/L, area/A)
-	. = ..()
-	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))
-		L.clear_fullscreen("snowfall_heavy_old")
-
-/area/cadiaoutpost/oa/village/Entered(mob/living/L,  atom/A)
-	. = ..()
-	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/village))//Doesn't work but this does stop the lag.
-		L.overlay_fullscreen("snowfall_heavy_old", /obj/screen/fullscreen/snowstorm)
-
-/area/cadiaoutpost/oa/village/Exited(mob/living/L, area/A)
-	. = ..()
-	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/village))
-		L.clear_fullscreen("snowfall_heavy_old")
-
-/area/cadiaoutpost/oa/farm/Entered(mob/living/L,  atom/A)
-	. = ..()
-	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/farm))//Doesn't work but this does stop the lag.
-		L.overlay_fullscreen("snowfall_heavy_old", /obj/screen/fullscreen/snowstorm)
-
-/area/cadiaoutpost/oa/farm/Exited(mob/living/L, area/A)
-	. = ..()
-	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/farm))
-		L.clear_fullscreen("snowfall_heavy_old")
 
 
 ////////////////////////////////////////
@@ -1559,6 +1747,30 @@ Area basic template
 /area/cadiaoutpost/oa/shuttle/inquisition
 	name = "Inquisition Ship"
 	icon_state = "shuttle"
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+	requires_power = 0
+
+/area/cadiaoutpost/oa/shuttle/station1
+	name = "Station"
+	icon_state = "shuttle"
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+	requires_power = 0
+
+/area/cadiaoutpost/oa/shuttle/station2
+	name = "Station"
+	icon_state = "shuttle"
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+	requires_power = 0
+
+/area/cadiaoutpost/oa/shuttle/roguet
+	name = "roguet"
+	icon_state = "shuttle"
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+	requires_power = 0
+
+/area/cadiaoutpost/oa/shuttle/mechiferry
+	name = "Station"
+	icon_state = "shuttle"
 	music = 'sound/newmusic/Outpost1.ogg'
 	requires_power = 0
 
@@ -1568,8 +1780,20 @@ Area basic template
 	music = 'sound/newmusic/Lab_Experiment.ogg'
 	requires_power = 0
 
+/area/cadiaoutpost/oa/shuttle/governor
+	name = "Governor Ship"
+	icon_state = "shuttle"
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+	requires_power = 0
+
 /area/cadiaoutpost/oa/shuttle/mechanicus
 	name = "Mechanicus Ship"
+	icon_state = "shuttle"
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+	requires_power = 0
+
+/area/cadiaoutpost/oa/shuttle/magos
+	name = "Magos Ship"
 	icon_state = "shuttle"
 	music = 'sound/newmusic/Lab_Experiment.ogg'
 	requires_power = 0

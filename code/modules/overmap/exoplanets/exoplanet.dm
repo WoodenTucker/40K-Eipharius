@@ -384,8 +384,8 @@
 
 /turf/simulated/floor/exoplanet
 	name = "space land"
-	icon = 'icons/turf/desert.dmi'
-	icon_state = "desert"
+	icon = 'icons/turf/jungle.dmi'
+	icon_state = "grass2"
 	has_resources = 1
 	var/diggable = 1
 	var/mudpit = 0	//if pits should not take turf's color

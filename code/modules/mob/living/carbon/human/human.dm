@@ -770,6 +770,16 @@
 		sleep(350)	//wait 35 seconds before next volley
 		lastpuke = 0
 
+//for punishing cultists who remain in a consecrated chapel
+/mob/living/carbon/human/proc/overstayed()
+	src.vomit()
+	src.bowels = 100
+	src.handle_shit()
+	to_chat(src, "<span class='horror-text'>+ HIS GAZE IS ON ME +</span> ")
+	playsound(src, 'sound/voice/scaryspeech.ogg', 50, 0)
+	src.Paralyse(3)
+
+
 /mob/living/carbon/human/proc/morph()
 	set name = "Morph"
 	set category = "Superpower"

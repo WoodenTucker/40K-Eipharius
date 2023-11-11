@@ -7,7 +7,7 @@
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	icon_state = "bone"
 	desc = "It's a fossil."
-	sales_price = 25
+	sales_price = 5
 	var/animal = 1
 
 /obj/item/fossil/base/New()

@@ -3,7 +3,7 @@
 // Accuracy Guide. Accuracy of -4 = Miss 1/3 shots on average. Accuracy of 0 = You never miss. Make sure weapon accuracy is never higher then -1 unless you want perfect accuracy.
 // Skills ONLY effect weapon spread. If the skill of a character is below 6 they'll have a hard time hitting anything.
 
-/obj/item/gun/projectile/shotgun/pump/boltaction
+/obj/item/gun/projectile/shotgun/pump/boltaction // BOLT ACTIONS USE THE PUMP SHOTGUN SLOWDOWN FROM THEIR PARENT. NO NEED TO ADD.
 	name = "\improper Boscelot Pattern Stub Rifle"
 	desc = "The stub rifle is a common weapon seen across the galaxy. Boscelot is a standard rifle pattern, firing large-bore rounds."
 	icon_state = "boltaction"
@@ -14,12 +14,11 @@
 	empty_icon = "boltaction-e"
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	far_fire_sound = "sniper_fire"
-	move_delay = 8
 	one_hand_penalty = 2
-	accuracy = 1
+	accuracy = 0.5
 	fire_delay = 3
 	force = 15
-	sales_price = 10
+	sales_price = 4
 	var/gping = TRUE
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/pump(mob/M as mob, silent = FALSE)
@@ -89,8 +88,8 @@
 	unloaded_icon = "boltactionsharp-e"
 	unwielded_unloaded_icon = "boltactionsharp"
 	wielded_unloaded_icon = "boltaction-wielded"
-	accuracy = 1
-	sales_price = 20
+	accuracy = 0.5
+	sales_price = 10
 
 /*
 /obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter/verb/scope_detach(mob/user)
@@ -130,7 +129,7 @@
 	gun_type = GUN_SNIPER
 	far_fire_sound = "sniper_fire"
 	gping = FALSE
-	sales_price = 43
+	sales_price = 13
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/verb/scope()
 	set category = "Object"
@@ -187,15 +186,14 @@
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered
 	name = "\improper Triangong 4-46"
 	desc = "The stub rifle is a common sight across the galaxy, a hunting rifle firing large-bore rounds. This one is made of quality materials and has been laboured over extensively by expert hands."
-	move_delay = 2.5
 	one_hand_penalty = 1.5
-	accuracy = 1.2
+	accuracy = 1
 	fire_delay = 4
 	sales_price = 23
 	icon_state = "boltactionsharp"
 	item_state = "boltactionsharp"
 	empty_icon = "boltactionsharp-e"
-	sales_price = 30
+	sales_price = 20
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered/verb/scope()
 	set category = "Object"
@@ -235,10 +233,9 @@
 	forwardsound = 'sound/weapons/guns/interact/la_forward.ogg'
 	empty_icon = "brushgun-e"
 	fire_delay = 3.5
-	move_delay = 2.5
 	gping = FALSE
-	sales_price = 15
-	accuracy = 0.8
+	sales_price = 10
+	accuracy = 0.3
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/glory
 	name = "\improper Crucible Pattern Stub Rifle"
@@ -246,8 +243,8 @@
 	icon_state = "oldglory"
 	item_state = "boltactionsharp"
 	empty_icon = "oldglory-e"
-	accuracy = 1.4
-	sales_price = 26
+	accuracy = 1
+	sales_price = 16
 
 //Paryying.
 
@@ -273,13 +270,13 @@
 	fire_delay = 6
 	move_delay= 2.5
 	one_hand_penalty = 1.7
-	accuracy = 1.1
+	accuracy = 0.6
 	force = 30
 	sharp = 1
 	screen_shake = 0.5
 	attack_verb = list ("stabbed", "sliced")
 	hitsound = "stab_sound"
-	sales_price = 30
+	sales_price = 15
 
 //AMMO
 
@@ -363,20 +360,19 @@
 	str_requirement = 8
 	ammo_type = /obj/item/ammo_casing/shotgun
 	empty_icon = "voxlegisnew-e"
-	move_delay = 3
 	one_hand_penalty = 1.4
-	accuracy = 0.5
+	accuracy = 0
 	fire_delay= 3
-	sales_price = 20
+	sales_price = 10 // SHOTGUNS HAVE SLOWDOWN IN THEIR PARENT shotgun/pump -- DO NOT APPLY SLOWDOWN TO SHOTGUNS 
 
 /obj/item/gun/projectile/shotgun/pump/shitty/magrave
 	name = "\improper WTX Belle Magrave"
 	desc = "A rare specialty Magrave shotgun long out of production - this retired veteran has been well maintained over the years by it's previous owners."
 	move_delay= 2.5
 	one_hand_penalty = 1
-	accuracy = 0.8
+	accuracy = 0.3
 	fire_delay = 2
-	sales_price = 25
+	sales_price = 15
 
 /obj/item/gun/projectile/shotgun/pump/shitty/sawn
 	name = "\improper Sawn Off WTX Frontier Special"
@@ -390,9 +386,9 @@
 	empty_icon = "hunting-sawn"
 	one_hand_penalty = 0.4
 	fire_delay = 2
-	accuracy = 0
+	accuracy = -0.5
 	armor_penetration = 0
-	sales_price = 15
+	sales_price = 5
 
 /obj/item/gun/projectile/automatic/flamer
 	name = "Scorcher"
@@ -410,7 +406,6 @@
 	accuracy = 0
 	automatic = 1
 	fire_delay = 16
-	move_delay = 6
 	burst=1
 	magazine_type = /obj/item/ammo_magazine/flamer
 	allowed_magazines = /obj/item/ammo_magazine/flamer
@@ -422,9 +417,17 @@
 	unloaded_icon = "flamer-e"
 	unwielded_unloaded_icon = "flamer-e"
 	wielded_unloaded_icon = "flamer-wielded-e"
-	sales_price = 40
+	sales_price = 20
 
 	gun_type = GUN_LMG //anyone can use this... just not anyone should.
+
+/obj/item/gun/projectile/automatic/flamer/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.2
+	slowdown_per_slot[slot_wear_suit] = 0.3
+	slowdown_per_slot[slot_belt] = 0.3
+	slowdown_per_slot[slot_r_hand] = 0.4
+	slowdown_per_slot[slot_l_hand] = 0.4
 
 /obj/item/gun/projectile/automatic/flamer/update_icon()
     ..()
@@ -433,6 +436,7 @@
     else
         icon_state = "flamer-e"
 
+/*
 /obj/item/gun/projectile/automatic/flamer/pistol
 	name = "Handheld Scorcher"
 	desc = "The handheld, pistol varient of the flamer. It shoots slower than it's larger brother and is more difficult to hold in your single hand."
@@ -449,7 +453,6 @@
 	accuracy = 0
 	automatic = 1
 	fire_delay = 22
-	move_delay = 6
 	burst=1
 	magazine_type = /obj/item/ammo_magazine/flamer
 	allowed_magazines = /obj/item/ammo_magazine/flamer
@@ -461,10 +464,10 @@
 	unloaded_icon = "flamerp-e"
 	unwielded_unloaded_icon = "flamerp-e"
 	wielded_unloaded_icon = "flamer-wielded-e"
-	sales_price = 50
+	sales_price = 30
 
 	gun_type = GUN_LMG //anyone can use this... just not anyone should.
-
+*/ // ABSOLUTELY NO PISTOL FLAMERS.
 
 /obj/item/gun/projectile/automatic/flamer/update_icon()
     ..()
@@ -473,7 +476,7 @@
     else
         icon_state = "flamerp-e"
 
-// Stubber //
+// Stubber // ALL AUTOMATIC WEAPONS HAVE SLOWDOWN APPLIED by 0.2 from their parent. Only add a slowdown if the weapon is heavier then a basic rifle.
 
 /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle
 	name = "Aegis Pattern Rifle"
@@ -487,12 +490,10 @@
 	cock_sound = 'sound/weapons/guns/interact/arm_cock.ogg'
 	fire_delay = 3.5
 	automatic = 0
-	move_delay = 4.2
 	one_hand_penalty = 1.6
-	accuracy = 1
-	sales_price = 26
-
-	caliber = "a763"
+	accuracy = 0.5
+	sales_price = 16
+	caliber = "a762"
 	ammo_type = /obj/item/ammo_casing/a762
 	magazine_type = /obj/item/ammo_magazine/a762
 	allowed_magazines = /obj/item/ammo_magazine/a762
@@ -511,8 +512,8 @@
 	icon_state = "rsc"
 	name = "Armageddon Pattern clip"
 	max_ammo = 5
-	caliber = "763"
-	ammo_type = /obj/item/ammo_casing/brifle
+	caliber = "a762"
+	ammo_type = /obj/item/ammo_casing/a762
 
 /obj/item/gun/projectile/automatic/m22/combatrifle // .45 ammo
 	name = "Scipio Pattern Rifle"
@@ -529,11 +530,10 @@
 	reload_sound = 'sound/weapons/guns/interact/combatrifle_magin.ogg'
 	cock_sound = 'sound/weapons/guns/interact/combatrifle_cock.ogg'
 	fire_delay = 2.5
-	automatic = 0
-	move_delay = 4.2
+	automatic = 0.2
 	one_hand_penalty = 1.4
-	accuracy = 1.5
-	sales_price = 20
+	accuracy = 1
+	sales_price = 10
 
 	loaded_icon = "commando"
 	unloaded_icon = "commando"
@@ -578,14 +578,22 @@
 	gun_type = GUN_LMG
 	move_delay= 5
 	one_hand_penalty = 2.2 //it is a HMG, but its also not a bolter, this is probably enough penalty
-	accuracy = 0.5
+	accuracy = 0
 	fire_delay = 1.6
-	sales_price = 31
+	sales_price = 21
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=1.6, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="4-round bursts", burst=4, fire_delay=3.2, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
+		list(mode_name="4-round bursts", burst=4, fire_delay=4.5, burst_accuracy=list(0.5,-1,-1), dispersion=null, automatic = 0),
 		)
+
+/obj/item/gun/projectile/automatic/heavystubber/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.05
+	slowdown_per_slot[slot_wear_suit] = 0.1
+	slowdown_per_slot[slot_belt] = 0.1
+	slowdown_per_slot[slot_r_hand] = 0.32
+	slowdown_per_slot[slot_l_hand] = 0.32
 
 /obj/item/gun/projectile/automatic/heavystubber/update_icon()
     ..()
@@ -612,11 +620,11 @@
 	burst = 1
 	fire_delay = 1.5
 	one_hand_penalty = 2.6 //by the omnissiah you MUST hold the machine spirit properly
-	sales_price = 25
+	sales_price = 26
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="4-round bursts", burst=4, fire_delay=3, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=1.6, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="5-round bursts", burst=5, fire_delay=4.3, burst_accuracy=list(1,-1,-1), dispersion=null, automatic = 0),
 		)
 
 /obj/item/gun/projectile/automatic/heavystubber/cognis/update_icon()
@@ -632,13 +640,13 @@
 	desc = "A rugged belt-fed stubber that is long out of service. This one seems to have been diligently maintained over the years."
 	move_delay= 4.5
 	one_hand_penalty = 2
-	accuracy = 1
+	accuracy = 0.5
 	fire_delay = 1.5
-	sales_price = 32
+	sales_price = 22
 
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="2-round bursts", burst=2, fire_delay=3.3, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0), // Villiers perform better in semi then burst
+		list(mode_name="semi-automatic", burst=1, fire_delay=1.6, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="2-round bursts", burst=2, fire_delay=3.5, burst_accuracy=list(1,1,1), dispersion=null, automatic = 0), // Villiers perform better in semi then burst
 		)
 
 // stub rifles, mag fed
@@ -650,11 +658,10 @@
 	wielded_item_state = "machinepistol-wielded"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
-	move_delay = 2.2
 	one_hand_penalty = 0.8
-	accuracy = 0.5
+	accuracy = 0
 	fire_delay = 1.7
-	sales_price = 18
+	sales_price = 8
 
 	fire_sound = 'sound/weapons/guns/fire/smg_fire.ogg'
 
@@ -675,16 +682,23 @@
 		list(mode_name="3-round bursts", burst=3, fire_delay=3.4, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
 		)
 
+/obj/item/gun/projectile/automatic/machinepistol/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.05
+	slowdown_per_slot[slot_wear_suit] = 0.1
+	slowdown_per_slot[slot_belt] = 0.1
+	slowdown_per_slot[slot_r_hand] = 0.15
+	slowdown_per_slot[slot_l_hand] = 0.15
+
 /obj/item/gun/projectile/automatic/machinepistol/a80
 	name = "Nachtwey A80 Autogun"
 	desc = "A specialty autogun made by frontier gunsmiths - an improved version of the Mk.22 Autogun with a more stable firing platform."
 	icon_state = "autorifle"
 	item_state = "autorifle"
-	move_delay = 2
 	one_hand_penalty = 0.6
-	accuracy = 0.7
+	accuracy = 0.2
 	fire_delay = 1.6
-	sales_price = 28
+	sales_price = 18
 
 	wielded_item_state = "autorifle-wielded"
 	loaded_icon = "autorifle"
@@ -710,11 +724,10 @@
 	unloaded_icon = "auto_grim-e"
 	loaded_icon = "auto_grim"
 	fire_sound = 'sound/weapons/guns/fire/sfrifle_fire.ogg'
-	move_delay = 2.5
 	one_hand_penalty = 1
-	accuracy = 0.5
+	accuracy = 0
 	fire_delay = 1.6
-	sales_price = 31
+	sales_price = 21
 
 	magazine_type = /obj/item/ammo_magazine/c556
 	allowed_magazines = /obj/item/ammo_magazine/c556
@@ -745,11 +758,10 @@
 	unloaded_icon = "kriegstubber-e"
 	loaded_icon = "kriegstubber"
 	fire_sound = 'sound/weapons/guns/fire/sfrifle_fire.ogg'
-	move_delay = 2.5
 	one_hand_penalty = 1.2
-	accuracy = 0.7
+	accuracy = 0.2
 	fire_delay = 1.5
-	sales_price = 35
+	sales_price = 20
 
 	magazine_type = /obj/item/ammo_magazine/c556
 	allowed_magazines = /obj/item/ammo_magazine/c556
@@ -793,12 +805,11 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
 	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
-	move_delay = 2.3
 	one_hand_penalty = 1.4
-	accuracy = 0.8
+	accuracy = 0.3
 	automatic = 0
 	fire_delay = 4
-	sales_price = 30
+	sales_price = 20
 
 
 	magazine_type = /obj/item/ammo_magazine/c556
@@ -833,12 +844,11 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
 	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
-	move_delay = 7
 	one_hand_penalty = 1.3
-	accuracy = 0.4
+	accuracy = 0
 	automatic = 1
 	fire_delay = 1.5
-	sales_price = 25
+	sales_price = 15
 
 	magazine_type = /obj/item/ammo_magazine/c556
 	allowed_magazines = /obj/item/ammo_magazine/c556
@@ -869,17 +879,17 @@
 	name = "Godwyn Mark Vb Pattern Bolter"
 	desc = "The Adeptus Astartes's legendary and destructive Bolter Rifle, This one is painted in XIIIth Chapter Ultramarines's colour scheme."
 	icon_state = "ultrabolter"
-	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
+	str_requirement = 21
 	w_class = ITEM_SIZE_HUGE
 	force = 30
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	max_shells = 30
-	caliber = ".75"
+	caliber = ".95"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
-	ammo_type = /obj/item/ammo_casing/bolter
+	ammo_type = /obj/item/ammo_casing/bolter/astartes
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
-	allowed_magazines = list(/obj/item/ammo_magazine/bolt_rifle_magazine)
+	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine_astartes
+	allowed_magazines = list(/obj/item/ammo_magazine/bolt_rifle_magazine_astartes)
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
@@ -893,17 +903,24 @@
 	wielded_unloaded_icon = "hbolter-e"
 	fire_delay = 2
 	burst = 1
-	move_delay = 3
 	one_hand_penalty = 2.2
 	firemodes = list()
 	gun_type = GUN_AUTOMATIC
-	accuracy = 1
-	sales_price = 120
+	accuracy = 0.5
+	sales_price = 60
 
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=4, burst_accuracy=list(0,0,-1), dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic", burst=1, fire_delay=2.2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=4.4, burst_accuracy=list(0,0,-1), dispersion=null, automatic = 0),
 		)
+
+/obj/item/gun/projectile/boltrifle/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.1
+	slowdown_per_slot[slot_wear_suit] = 0.2
+	slowdown_per_slot[slot_belt] = 0.2
+	slowdown_per_slot[slot_r_hand] = 0.4
+	slowdown_per_slot[slot_l_hand] = 0.4
 
 /obj/item/gun/projectile/boltrifle/update_icon()
 	..()
@@ -954,7 +971,7 @@
 	else
 		icon_state = "bangbolter-e"
 
-/obj/item/gun/projectile/boltrifle/lockebolter //needs lots of work and love, ok standin for now
+/obj/item/gun/projectile/lockebolter //needs lots of work and love, ok standin for now
 	name = "Locke Pattern bolter"
 	desc = "The Locke Pattern Bolter, designed for Adeptus Arbites personnel when heavier firepower are required. Can also be found in hands of Astra Militarum officers, veterans and Commissar, Though relatively uncommon. It is a human-sized Bolter, Thus it's very popular among the troops and the lucky ones who get their hands on one of these bad boy."
 	icon_state = "lockebolter"
@@ -970,6 +987,10 @@
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
+	caliber = ".75"
+	ammo_type = /obj/item/ammo_casing/bolter
+	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
+	allowed_magazines = list(/obj/item/ammo_magazine/bolt_rifle_magazine)
 	loaded_icon = "lockebolter-30"
 	unloaded_icon = "lockebolter-e"
 	wielded_item_state = "autoshotty"
@@ -980,18 +1001,25 @@
 	wielded_unloaded_icon = "autoshotty-wielded-e"
 	fire_delay = 2.45
 	burst = 1
-	move_delay = 3
 	firemodes = list()
 	gun_type = GUN_AUTOMATIC
-	accuracy = 0
-	sales_price = 80
+	accuracy = -0.5
+	sales_price = 70
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=2.4, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=4.6, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
 		)
 
-/obj/item/gun/projectile/boltrifle/lockebolter/drusian //needs lots of work and love, ok standin for now
+/obj/item/gun/projectile/lockebolter/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.1
+	slowdown_per_slot[slot_wear_suit] = 0.2
+	slowdown_per_slot[slot_belt] = 0.2
+	slowdown_per_slot[slot_r_hand] = 0.4
+	slowdown_per_slot[slot_l_hand] = 0.4
+
+/obj/item/gun/projectile/lockebolter/drusian //needs lots of work and love, ok standin for now
 	name = "Drusian Pattern bolter"
 	desc = "The Drusian Pattern Bolter, designed initially for Adeptus Arbites personnel when heavier firepower are required -- this Pattern is a variant with higher factorum standards and is produced by the Priests of Mars under the greatest of machine scrutiny. Can also be found in hands of Astra Militarum officers, veterans and Commissar, this pattern is incredibly rare."
 	icon_state = "lockebolter"
@@ -1001,6 +1029,10 @@
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
 	load_method = MAGAZINE
 	one_hand_penalty = 2.2 //its a bolter not a toy gun
+	ammo_type = /obj/item/ammo_casing/bolter
+	caliber = ".75"
+	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
+	allowed_magazines = list(/obj/item/ammo_magazine/bolt_rifle_magazine)
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	loaded_icon = "lockebolter-30"
 	unloaded_icon = "lockebolter-e"
@@ -1012,39 +1044,38 @@
 	wielded_unloaded_icon = "autoshotty-wielded-e"
 	fire_delay = 2.15
 	burst = 1
-	move_delay = 3
 	firemodes = list()
 	gun_type = GUN_AUTOMATIC
-	accuracy = 0.5
-	sales_price = 95
+	accuracy = 0
+	sales_price = 85
 
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=2.15, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=4.3, burst_accuracy=list(0,0,-1), dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic", burst=1, fire_delay=2.2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=4.4, burst_accuracy=list(0,0,-1), dispersion=null, automatic = 0),
 		)
 
-/obj/item/gun/projectile/boltrifle/lockebolter/update_icon()
+/obj/item/gun/projectile/lockebolter/update_icon()
 	..()
 	if(ammo_magazine)
 		icon_state = "lockebolter-30"
 	else
 		icon_state = "lockebolter-e"
 
-/obj/item/gun/projectile/boltrifle/lockebolter/infernobolter
+/obj/item/gun/projectile/lockebolter/infernobolter
 	name = "Inferno Bolter"
 	desc = "Corrupted by the warp, this bolter once was owned by a Heretic Astartes. The chaos infused into it made it capable of being fired by a human. But it's capabilities have suffered. Just as planned."
 	icon_state = "1kbolter"
 	loaded_icon = "1kbolter-30"
 	unloaded_icon = "1kbolter-e"
-	accuracy = 1.2
-/obj/item/gun/projectile/boltrifle/lockebolter/infernobolter/update_icon()
+	accuracy = 0.5
+/obj/item/gun/projectile/lockebolter/infernobolter/update_icon()
 	..()
 	if(ammo_magazine)
 		icon_state = "1kbolter-30"
 	else
 		icon_state = "1kbolter-e"
 
-/obj/item/gun/projectile/boltrifle/sisterbolter
+/obj/item/gun/projectile/lockebolter/sisterbolter
 	name = "Godwyn-De'az Pattern Bolter Rifle"
 	desc = "A modified bolter rifle, developed specifically for the Adepta Sororitas. This rifle is almost more scripture than weapon, and is clearly wielded by a devout woman. A large Sarissa is attached to the end of it, useful for carving the Emperor's Mercy from the flesh of those who defy him. <i>She was an angel, pure as righteous destruction. She laid low the twisted and lifted the hearts of the righteous. At her passing, a million voices cried out her name. Shall we ever again see her like? No, not now, nor ever again...</i>"
 	force = 20 //what even is this description?
@@ -1057,6 +1088,10 @@
 	max_shells = 30
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
 	one_hand_penalty = 2 //its still a bolter bro...
+	caliber = ".75"
+	ammo_type = /obj/item/ammo_casing/bolter
+	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine/sister
+	allowed_magazines = list(/obj/item/ammo_magazine/bolt_rifle_magazine, /obj/item/ammo_magazine/bolt_rifle_magazine/sister)
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
@@ -1072,23 +1107,30 @@
 	wielded_unloaded_icon = "autoshotty-wielded-e"
 	fire_delay = 1.9
 	burst = 1
-	move_delay = 3
 	firemodes = list()
-	accuracy = 1.4 //only one gun per round so yeah
+	accuracy = 0.6 //only one gun per round so yeah
 	gun_type = GUN_AUTOMATIC
-	sales_price = 130
+	sales_price = 120
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=1.9, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=3.8, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
 
-/obj/item/gun/projectile/boltrifle/sisterbolter/update_icon()
+/obj/item/gun/projectile/lockebolter/sisterbolter/update_icon()
 	..()
 	if(ammo_magazine)
 		icon_state = "sisterbolter-30"
 	else
 		icon_state = "sisterbolter-30-e"
+
+/obj/item/gun/projectile/lockebolter/sisterbolter/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.1
+	slowdown_per_slot[slot_wear_suit] = 0.2
+	slowdown_per_slot[slot_belt] = 0.2
+	slowdown_per_slot[slot_r_hand] = 0.4
+	slowdown_per_slot[slot_l_hand] = 0.4
 
 //ORKA
 
@@ -1109,9 +1151,8 @@
 	max_shells = 30
 	caliber = ".75"
 	can_jam = TRUE
-	move_delay = 5
 	one_hand_penalty = 1
-	accuracy = -1.5
+	accuracy = -2
 	ammo_type = /obj/item/ammo_casing/ork/shoota
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/ork/shoota
@@ -1120,7 +1161,7 @@
 	gun_type = GUN_AUTOMATIC
 	fire_delay = 3
 	burst = 3
-	sales_price = 15
+	sales_price = 1
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -1149,7 +1190,7 @@
 	max_shells = 30
 	caliber = ".75"
 	one_hand_penalty = 1
-	sales_price = 20
+	sales_price = 1
 
 /obj/item/gun/projectile/ork/automatic/shoota/bladed/update_icon()
 	..()
@@ -1168,11 +1209,10 @@
 	unloaded_icon = "autoshotty-e"
 	unwielded_unloaded_icon = "autoshotty-e"
 	wielded_unloaded_icon = "autoshotty-wielded-e"
-	force = 20
-	move_delay = 1 // smg
+	force = 20 // smg
 	one_hand_penalty = 1
-	accuracy = -1
-	sales_price = 25
+	accuracy = -1.5
+	sales_price = 1
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -1201,18 +1241,25 @@
 	max_shells = 50
 	caliber = ".75"
 	can_jam = TRUE
-	move_delay = 10
 	one_hand_penalty = 2
-	accuracy = -2
+	accuracy = -2.5
 	gun_type = GUN_AUTOMATIC
 	fire_delay = 4
 	burst = 5
 	firemodes = list(
-		list(mode_name="'ORMAL AUTO'", burst=4, fire_delay=4, burst_accuracy=list(-3,-5,-6), dispersion=null, automatic = 0.5),
-		list(mode_name="FULLA AUTO", burst=6, fire_delay=5.5, burst_accuracy=list(-6,-5,-8), dispersion=null, automatic = 0.7),
+		list(mode_name="'ORMAL AUTO'", burst=5, fire_delay=4, burst_accuracy=list(-3,-5,-6), dispersion=null, automatic = 0.5),
+		list(mode_name="FULLA AUTO", burst=7, fire_delay=5.5, burst_accuracy=list(-6,-5,-8), dispersion=null, automatic = 0.7),
 
 	)
-	sales_price = 30
+	sales_price = 1
+
+/obj/item/gun/projectile/ork/automatic/shoota/big/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.2
+	slowdown_per_slot[slot_wear_suit] = 0.3
+	slowdown_per_slot[slot_belt] = 0.3
+	slowdown_per_slot[slot_r_hand] = 0.5
+	slowdown_per_slot[slot_l_hand] = 0.5
 
 /obj/item/gun/projectile/ork/automatic/shoota/big/update_icon()
 	..()
@@ -1233,11 +1280,10 @@
 	unwielded_unloaded_icon = "autoshotty-e"
 	wielded_unloaded_icon = "autoshotty-wielded-e"
 	force = 15
-	move_delay = 8
 	one_hand_penalty = 2
-	accuracy = -0.5
+	accuracy = -1
 	gun_type = GUN_SNIPER
-	sales_price = 50
+	sales_price = 1
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -1286,7 +1332,7 @@
 		list(mode_name="automatic",   	 burst=5, fire_delay=1.5, one_hand_penalty=2, burst_accuracy=list(0,1,1), dispersion=null, automatic = 2)
 		)
 	gun_type = GUN_AUTOMATIC
-	accuracy = 1
+	accuracy = 0.5
 
 /obj/item/gun/projectile/eldar/scatapult/update_icon()
 	..()
@@ -1316,7 +1362,7 @@
 	str_requirement = 11
 	move_delay= 4
 	one_hand_penalty = 4
-	accuracy = 0.5 //Good gun, well maintained by the Mechanicus
+	accuracy = 0.1 //Good gun, well maintained by the Mechanicus
 	fire_delay = 3.5
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	magazine_type = /obj/item/ammo_magazine/radcarbine
@@ -1351,7 +1397,7 @@
 	str_requirement = 11
 	move_delay= 2
 	one_hand_penalty = 1
-	accuracy = 0.6 //Good gun, well maintained by the Mechanicus
+	accuracy = 0.1 //Good gun, well maintained by the Mechanicus
 	fire_delay = 2.5
 	slot_flags = SLOT_BELT|SLOT_S_STORE
 	magazine_type = /obj/item/ammo_magazine/radcarbine/radpistol
@@ -1366,3 +1412,43 @@
 		icon_state = "teslar"
 	else
 		icon_state = "teslar0"
+
+/obj/item/gun/projectile/automatic/gaussrifle
+	name = "Gauss Rifle"
+	desc = "A strange alien weapon which hums with resonant frequencies alien to mankind."
+	icon = 'icons/map_project/port/ds13.dmi'
+	icon_state = "pulserifle"
+	item_state = "pulserifle"
+	wielded_item_state = "pulserifle-wielded"
+	fire_sound = 'sound/weapons/ds/pulse_shot.ogg'
+	loaded_icon = "pulserifle"
+	unwielded_loaded_icon = "pulserifle"
+	wielded_loaded_icon = "pulserifle-wielded"
+	unloaded_icon = "teslar0"
+	unwielded_unloaded_icon = "pulserifle"
+	wielded_unloaded_icon = "pulserifle-wielded"
+	caliber = "pmag"
+	max_shells = 37
+	str_requirement = 10
+	one_hand_penalty = 3.5
+	accuracy = 0.5 //Good gun, well maintained by the Mechanicus
+	fire_delay = 1.5
+	slot_flags = SLOT_BELT|SLOT_S_STORE
+	magazine_type = /obj/item/ammo_magazine/pulsemag
+	allowed_magazines = list(/obj/item/ammo_magazine/pulsemag)
+	w_class = ITEM_SIZE_HUGE
+
+	firemodes = list(
+		list(mode_name="semi-automatic", burst=1, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="5-round bursts", burst=5, fire_delay=4.5, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
+		)
+
+/obj/item/gun/projectile/automatic/gaussrifle/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.15 // Back and wear slowdown is higher due to Xenos tech not being designed for human bodies.
+	slowdown_per_slot[slot_wear_suit] = 0.25
+	slowdown_per_slot[slot_belt] = 0.25
+	slowdown_per_slot[slot_r_hand] = 0.4
+	slowdown_per_slot[slot_l_hand] = 0.4
+
+

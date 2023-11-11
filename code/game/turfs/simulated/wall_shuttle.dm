@@ -11,6 +11,10 @@
 	density = 1
 	blocks_air = 1
 
+/turf/simulated/shuttle/wall/necron
+	icon = 'icons/map_project/tombs.dmi'
+	icon_state = "wall"
+
 /turf/simulated/shuttle/wall/alien
 	name = "alien wall"
 	icon_state = "bog0"

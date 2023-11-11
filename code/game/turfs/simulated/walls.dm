@@ -18,7 +18,7 @@
 	var/active
 	var/can_open = 0
 	var/last_state
-	var/integrity = 2000
+	var/integrity = 500
 	var/construction_stage
 	var/hitsound = 'sound/weapons/Genhit.ogg'
 	var/floor_type = /turf/simulated/floor/plating //turf it leaves after destruction
@@ -78,9 +78,9 @@
 
 	if(is_reinf())
 		if(Proj.damage_type == BURN)
-			proj_damage /= 10
+			proj_damage /= 3
 		else if(Proj.damage_type == BRUTE)
-			proj_damage /= 8
+			proj_damage /= 4
 
 	//cap the amount of damage, so that things like emitters can't destroy walls in one hit.
 	var/damage = min(proj_damage, 100)

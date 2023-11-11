@@ -108,6 +108,32 @@ Template:
 	name = ""
 */
 
+// LATEPARTIES //
+/obj/effect/landmark/start/tau
+	name = "tau"
+	icon_state = "ricehat"
+	invisibility = 0
+
+/obj/effect/landmark/start/ork
+	name = "ork"
+	icon_state = "ricehat"
+	invisibility = 0
+
+/obj/effect/landmark/start/gene
+	name = "gene"
+	icon_state = "ricehat"
+	invisibility = 0
+
+/obj/effect/landmark/start/kroot
+	name = "kroot"
+	icon_state = "ricehat"
+	invisibility = 0
+
+/obj/effect/landmark/start/blood
+	name = "blood"
+	icon_state = "ricehat"
+	invisibility = 0
+
 // Governorship //
 
 /obj/effect/landmark/start/governor
@@ -313,10 +339,61 @@ Template:
 				/obj/item/shield/riot/metal = 1,
 				/obj/item/melee/sword/sabre = 4)
 
+
+/obj/random/loot/tech1
+	name = "LOW TECH SPAWNER"
+	desc = "spawns low tech"
+	icon_state = "armoraccessory"
+
+/obj/random/loot/tech1/spawn_choices()
+	return list(/obj/item/rnd/eng3 = 12,
+				/obj/item/rnd/eng5 = 8,
+				/obj/item/rnd/eng8 = 4,
+				/obj/item/rnd/combat3 = 14,
+				/obj/item/rnd/combat5 = 10,
+				/obj/item/rnd/combat8 = 5,
+				/obj/item/reagent_containers/food/snacks/poo = 6,
+				/obj/item/rnd/power3 = 10,
+				/obj/item/rnd/power5 = 6,
+				/obj/item/rnd/power8 = 3,
+				/obj/item/reagent_containers/food/snacks/poo = 6,
+				/obj/item/rnd/biospace3 = 10,
+				/obj/item/rnd/biospace5 = 6,
+				/obj/item/rnd/biospace8 = 3,
+				/obj/item/reagent_containers/food/snacks/poo = 6,
+				/obj/item/rnd/eng10 = 1)
+
+/obj/random/loot/tech2
+	name = "HIGH TECH SPAWNER"
+	desc = "spawn high tech"
+	icon_state = "armoraccessory"
+
+/obj/random/loot/tech2/spawn_choices()
+	return list(/obj/item/rnd/eng3 = 12,
+				/obj/item/rnd/eng5 = 8,
+				/obj/item/rnd/eng8 = 5,
+				/obj/item/rnd/combat3 = 14,
+				/obj/item/rnd/combat5 = 10,
+				/obj/item/rnd/combat8 = 7,
+				/obj/item/rnd/combat10 = 2,
+				/obj/item/rnd/power3 = 10,
+				/obj/item/rnd/power5 = 6,
+				/obj/item/rnd/power8 = 3,
+				/obj/item/rnd/power10 = 1,
+				/obj/item/rnd/biospace3 = 10,
+				/obj/item/rnd/biospace5 = 6,
+				/obj/item/rnd/biospace8 = 3,
+				/obj/item/rnd/biospace10 = 1,
+				/obj/item/rnd/illegal3 = 12,
+				/obj/item/rnd/illegal5 = 8,
+				/obj/item/rnd/illegal8 = 4,
+				/obj/item/rnd/illegal10 = 2,
+				/obj/item/rnd/eng10 = 1)
+
 /obj/random/loot/meleespawner
 	name = "Random Melee Spawner"
 	desc = "Spawns light and heavy melee.."
-	icon_state = "revolver"
+	icon_state = "heavymelee"
 
 /obj/random/loot/meleespawner/spawn_choices()
 	return list(/obj/item/melee/sword/combat_knife = 1,
@@ -328,6 +405,8 @@ Template:
 				/obj/item/melee/telebaton = 3,
 				/obj/item/melee/trench_axe/glaive = 3,
 				/obj/item/melee/trench_axe/glaive/adamantine = 1,
+				/obj/item/melee/sword/machete/chopper/heavy = 2,
+				/obj/item/melee/sword/machete/chopper/heavy/adamantine = 1,
 				/obj/item/melee/trench_axe/bardiche = 3,
 				/obj/item/melee/trench_axe/lance = 2,
 				/obj/item/melee/trench_axe/lance/adamantine = 1,
@@ -486,7 +565,7 @@ Template:
 
 /obj/random/loot/goodweapon/spawn_choices()
 	return list(
-				/obj/item/gun/projectile/boltrifle/lockebolter = 1,
+				/obj/item/gun/projectile/lockebolter = 1,
 				/obj/item/gun/projectile/bolter_pistol/inquis = 1,
 				/obj/item/gun/energy/pulse/plasma/rifle = 1,
 				/obj/item/gun/energy/pulse/plasma/pistol = 3,
@@ -506,7 +585,7 @@ Template:
 	return list(/obj/item/clothing/suit/armor/militia = 1,
 				/obj/item/clothing/suit/cloak = 1,
 				/obj/item/clothing/suit/armor/brigandine = 1,
-				/obj/item/clothing/suit/armor/slaverobe = 1,
+//				/obj/item/clothing/suit/armor/slaverobe = 1,
 				/obj/item/clothing/suit/armor/templar = 1,
 				/obj/item/clothing/suit/armor/hauberk = 1,
 				/obj/item/clothing/suit/armor/trinet = 1,
@@ -517,17 +596,17 @@ Template:
 				/obj/item/clothing/suit/armor/salvage = 1,
 				/obj/item/clothing/suit/armor/guardsman/mercenary = 1,
 				/obj/item/clothing/suit/armor/slanclothing/maleslan = 1,
-				/obj/item/clothing/suit/armor/necromundaflak1 = 1,
-				/obj/item/clothing/suit/armor/necromundacarapace1 = 1,
+//				/obj/item/clothing/suit/armor/necromundaflak1 = 1,
+//				/obj/item/clothing/suit/armor/necromundacarapace1 = 1,
 				/obj/item/clothing/suit/armor/ranger3 = 1,
 				/obj/item/clothing/suit/armor/ranger2 = 1,
 				/obj/item/clothing/head/helmet/salvage = 1,
 				/obj/item/clothing/head/helmet/mining = 1,
 				/obj/item/clothing/suit/armor/heavyflaksuit = 1,
 				/obj/item/clothing/suit/armor/heavyduster = 1,
-				/obj/item/clothing/suit/armor/goliath2 = 1,
-				/obj/item/clothing/suit/armor/flak1 = 1,
-				/obj/item/clothing/suit/armor/flak2 = 1,
+//				/obj/item/clothing/suit/armor/goliath2 = 1,
+//				/obj/item/clothing/suit/armor/flak1 = 1,
+//				/obj/item/clothing/suit/armor/flak2 = 1,
 				/obj/item/clothing/suit/armor/scum2 = 1,
 				/obj/item/clothing/suit/armor/leather = 1,
 				/obj/item/clothing/suit/armor/hjacket = 1,
@@ -565,16 +644,18 @@ Template:
 	icon_state = "randompilgrim"
 
 /obj/random/loot/randomitemcaves/spawn_choices()
-	return list(/obj/item/shovel = 2,
+	return list(/obj/item/shovel = 3,
 				/obj/item/clothing/glasses/night = 3,
-				/obj/item/pickaxe = 2,
-				/obj/item/storage/firstaid/combat = 1,
-				/obj/item/storage/firstaid/surgery = 1,
-				/obj/item/reagent_containers/hypospray/autoinjector/revive = 2,
-				/obj/item/clothing/accessory/holster/waist = 3,
-				/obj/item/clothing/accessory/storage/webbing = 4,
+				/obj/item/pickaxe = 3,
+				/obj/item/storage/firstaid/combat = 2,
+				/obj/item/storage/firstaid/surgery = 2,
+				/obj/item/reagent_containers/hypospray/autoinjector/revive = 6,
+				/obj/item/clothing/accessory/holster/waist = 6,
+				/obj/item/clothing/accessory/storage/webbing = 8,
+				/obj/item/stack/thrones3/ten = 4,
+				/obj/item/stack/thrones3/twenty = 2,
 				/obj/item/stack/thrones2/ten = 1,
-				/obj/item/grenade/frag/high_yield/homemade = 3,
+				/obj/item/grenade/frag/high_yield/homemade = 1,
 				/obj/item/grenade/frag = 1,
 				/obj/item/grenade/frag/high_yield/krak = 1)
 
@@ -585,11 +666,12 @@ Template:
 
 /obj/random/loot/randomitemtown/spawn_choices()
 	return list(/obj/item/device/binoculars = 2,
-				/obj/item/storage/box/ifak = 3,
+				/obj/item/storage/box/ifak = 5,
 				/obj/item/storage/firstaid/adv = 1,
+				/obj/item/stack/thrones3/ten = 1,
+				/obj/item/stack/thrones3/twenty = 1,
 				/obj/item/clothing/suit/armor/militia = 2,
 				/obj/item/melee/sword/combat_knife = 1,
-				/obj/item/melee/trench_axe = 1,
 				/obj/item/stack/thrones2/ten = 2,
 				/obj/item/clothing/accessory/holster/waist = 3,
 				/obj/item/clothing/accessory/storage/webbing = 5,
@@ -597,6 +679,56 @@ Template:
 				/obj/item/clothing/accessory/legguards = 2,
 				/obj/item/clothing/accessory/armguards/ballistic = 2,
 				/obj/item/grenade/frag/high_yield/homemade = 1)
+
+
+
+/obj/random/exploration
+	name = "random exploration loot"
+	desc = "Low grade loot that is often around 50-100 thrones worth."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "giftpaper"
+
+/obj/random/exploration/spawn_choices()
+	return list(/obj/item/exploration_loot = 3,
+				/obj/item/exploration_loot/cloth_roll = 4,
+				/obj/item/exploration_loot/sealed_enve = 2,
+				/obj/item/exploration_loot/chem_package = 2,
+			    /obj/item/exploration_loot/package = 3,
+				/obj/item/exploration_loot/case = 2,
+				/obj/item/exploration_loot/odd_book = 2,
+				/obj/item/exploration_loot/guard_diary = 1,
+				/obj/item/exploration_loot/shiny_gem = 1,
+				/obj/item/exploration_loot/map = 1,
+                /obj/item/exploration_loot/spicecase = 1,
+                /obj/item/exploration_loot/lootbox = 1,
+                /obj/item/exploration_loot/imperial_book = 1)
+
+/obj/random/exploration/high
+	name = "random high quality exploration loot"
+	desc = "High grade loot that is often around 100-250 thrones worth."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "zrbite"
+
+/obj/random/exploration/high/spawn_choices()
+	return list(/obj/item/exploration_loot/map = 3,
+			    /obj/item/exploration_loot/drugs = 3,
+				/obj/item/exploration_loot/elerium = 1,
+				/obj/item/exploration_loot/guard_diary = 2,
+				/obj/item/exploration_loot/bm_file = 1,
+				/obj/item/exploration_loot/shiny_gem = 2,
+				/obj/item/exploration_loot/zrbite = 1,
+				/obj/item/exploration_loot/elerium = 1,
+				/obj/item/exploration_loot/elerium_ingot = 0.7,
+				/obj/item/exploration_loot/zrbite_ingot = 0.7,
+                /obj/item/exploration_loot/artiaxe = 0.5,
+                /obj/item/exploration_loot/goldbar = 0.5)
+
+
+
+
+
+
+
 
 /// THIS IS THE END OF LOOT SPAWNERS. TO DO: Tech, Xenos Spawners.
 
@@ -607,45 +739,6 @@ Template:
 // Bloodletter = Khorne Demon / Blood Legion Commander. Very high damage and decent HP. Friendly to cultists.
 // Bubbling Mass = Big fat daemon. High HP and damage. Slow.
 // Flesh Beast = Medium daemon. Average HP and damage.
-
-/obj/effect/landmark/animal/horde/New()
-	if (prob(100)) // Difficulty: Impossible. Outpost level threat. Use this to populate very large areas. Never spawn in front of players.
-		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/fleshbeast(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/bloodletter(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/bloodletter(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/bubblingmass(src.loc)
-	if (prob(100))
-		new /obj/effect/decal/cleanable/blood/gibs/up(src.loc)
-	delete_me = 1
-
-/obj/effect/landmark/animal/bloodletter1/New()
-	if (prob(95)) // Difficulty: Very Hard. Squad level threat.
-		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/fleshbeast(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/bloodletter(src.loc)
-	if (prob(100))
-		new /obj/effect/decal/cleanable/blood/gibs/up(src.loc)
-	delete_me = 1
-
-/obj/effect/landmark/animal/bloodletter2/New() // Difficulty: Very Hard. Squad level threat.
-	if (prob(90))
-		new /mob/living/simple_animal/hostile/smalldemon/bloodletter(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/bloodletter(src.loc)
-	if (prob(100))
-		new /obj/effect/decal/cleanable/blood/gibs/up(src.loc)
-	delete_me = 1
-
-/obj/effect/landmark/animal/bubblingmass1/New() // Difficulty: Medium. Guard level threat.
-	if (prob(95))
-		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/fleshbeast(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/bubblingmass(src.loc)
-	if (prob(100))
-		new /obj/effect/decal/cleanable/blood/gibs/up(src.loc)
-	delete_me = 1
 
 /obj/effect/landmark/animal/zygote1/New() // Difficulty: Medium. Guard level threat.
 	if (prob(80))
@@ -910,6 +1003,9 @@ Template:
 
 /obj/effect/landmark/cargospawn
 	name = "cargospawn"
+
+/obj/effect/landmark/cargospawn2
+	name = "cargospawn2"
 
 /obj/effect/landmark/reqspawn
 	name = "reqspawn"

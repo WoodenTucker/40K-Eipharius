@@ -503,7 +503,7 @@ var/const/NO_EMAG_ACT = -50
 /obj/item/card/id/dog_tag/kroot
 	icon_state = "tagred"
 	access = list(access_kroot)
-	sales_price = 30
+	sales_price = 15
 
 
 /obj/item/card/id/dog_tag/skitarii
@@ -532,7 +532,7 @@ var/const/NO_EMAG_ACT = -50
 	name = "golden ring"
 	icon_state = "goldring"
 	desc = "A simple golden ring, can be combined with gems for some BLING BLING!"
-	sales_price = 25
+	sales_price = 20
 
 /obj/item/card/id/ring/disgracedmedicae
 	name = "access card"
@@ -625,7 +625,7 @@ var/const/NO_EMAG_ACT = -50
 	access = list(access_meeting) //changed from 209 to 219, as tau is now 209
 
 /obj/item/card/id/key/super/daemon
-	name = "Daemon Key"
+	name = "Strange Key"
 	desc = "You're unsettled at just thinking about what this may open. Maybe ask your local inquisitor for help? They're nice with this kind of stuff."
 	access = list(access_daemon)
 
@@ -687,7 +687,7 @@ var/const/NO_EMAG_ACT = -50
 /obj/item/card/id/key/grand/monastary/inner
 	name = "Inner Sanctum Key"
 	desc = "Key to the Inner Sactum of His Holyness' Church."
-	access = list(access_monastary)
+	access = list(access_advchapel, access_monastary)
 
 /obj/item/card/id/key/grand/barentry
 	name = "Inn Key"

@@ -10,7 +10,7 @@
 	min_age = 50
 	max_age = 800
 	gluttonous = GLUT_ITEM_NORMAL
-	total_health = 250
+	total_health = 200
 	mob_size = MOB_LARGE
 	strength = STR_VHIGH
 	base_auras = list(
@@ -38,8 +38,8 @@
 //	stomach_capacity = MOB_MEDIUM
 	darksight = 20
 
-	brute_mod = 0.82 // Hardened carapace.
-	burn_mod = 0.81 // Hardened carapace.
+	brute_mod = 0.65 // Hardened carapace.
+	burn_mod = 0.65 // Hardened carapace.
 
 	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_EMBED | SPECIES_FLAG_NO_PAIN
 	appearance_flags = HAS_EYE_COLOR | HAS_SKIN_COLOR
@@ -152,7 +152,7 @@
 				affecting.take_damage(9, 0, DAM_SHARP, "large organic needle")
 				playsound(src, 'sound/effects/lecrunch.ogg', 50, 0, -1)
 
-		if(!do_mob(src, T, 50))
+		if(!do_mob(src, T, 20))
 			to_chat(src, "<span class='warning'>Our conversion of [T] has been interrupted!</span>")
 			isconverting = 0
 			return
@@ -170,12 +170,13 @@
 	src.mind.special_role = "Tyranid"
 	T.AddInfectionImages()
 	src.AddInfectionImages()//likely redundant but sometimes they don't show so better to make it check twice on both parties.
+	T.AddInfectionImages()
 	T.add_language(LANGUAGE_TYRANID)
 	src.dnastore++
-	T.adjustOxyLoss(-1)
-	T.adjustBruteLoss(-1)
-	T.adjustToxLoss(-1)
-	T.adjustBrainLoss(-1)
+	T.adjustOxyLoss(-10)
+	T.adjustBruteLoss(-10)
+	T.adjustToxLoss(-10)
+	T.adjustBrainLoss(-10)
 	T.inject_blood(src, 500)
 	return 1
 
@@ -269,7 +270,7 @@
 	visible_message("[name] listens intently to the will of the hive mind. Now is the time! The fleet is near! Communicate with your hive using ,h")
 	src.AddInfectionImages()
 	src.add_stats(rand(17,18),rand(17,18),rand(13,13),18)
-	src.add_skills(rand(10,11),rand(1,1),rand(1,4),rand(1,4),rand(1,4)) //skills such as melee, ranged, med, eng and surg)
+	src.add_skills(rand(10,11),rand(10,11),rand(1,4),rand(1,4),rand(1,4)) //skills such as melee, ranged, med, eng and surg)
 	src.adjustStaminaLoss(-INFINITY)
 	src.update_eyes() //should fix grey vision
 	src.set_trait(new/datum/trait/death_tolerant())

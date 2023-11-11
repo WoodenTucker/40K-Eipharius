@@ -6,10 +6,10 @@
 	item_state = "candle1"
 	w_class = ITEM_SIZE_TINY
 	light_color = "#e09d37"
-	var/wax = 2000
+	var/wax = 6000
 
 /obj/item/flame/candle/New()
-	wax = rand(800, 1000) // Enough for 27-33 minutes. 30 minutes on average.
+	wax = rand(6000, 7000) // Enough for 27-33 minutes. 30 minutes on average.
 	..()
 
 /obj/item/flame/candle/update_icon()
@@ -82,4 +82,24 @@
 	item_state = "dinner_candle"
 	w_class = ITEM_SIZE_TINY
 	light_color = "#e09d37"
-	wax = 4000
+	wax = 6000
+
+/obj/item/flame/candle/small
+	name = "small candle"
+	desc = "An small candle, it wont last too much."
+	icon = 'icons/obj/candle.dmi'
+	icon_state = "tiny_candle"
+	item_state = "tiny_candle"
+	w_class = ITEM_SIZE_TINY
+	light_color = "#e09d37"
+	wax = 6000
+
+/obj/item/flame/candle/church
+	name = "church candle"
+	desc = "A church candle, mostly used on religious acts and common in shrines and the like."
+	icon = 'icons/obj/candle.dmi'
+	icon_state = "church_candle"
+	item_state = "church_candle"
+	w_class = ITEM_SIZE_TINY
+	light_color = "#e09d37"
+	wax = 6000

@@ -15,9 +15,23 @@
 		var/datum/heretic_deity/nurgle/N = GOD(GOD_NURGLE)
 		N.join_request(target)
 
+/datum/rune_recipe/nurgle/offer_brain
+	ingredients = list(/obj/item/organ/internal/brain)
+	special = TRUE
+
+/datum/rune_recipe/khorne/offer_brain/do_special(var/mob/living/carbon/user, var/obj/effect/cleanable/heretic_rune/rune)
+	SEND_SIGNAL(user, COMSIG_CULT_ADD_FAVOR, 10)
+
+/datum/rune_recipe/nurgle/offer_gem
+	ingredients = list(/obj/item/stack/thrones)
+	special = TRUE
+
+/datum/rune_recipe/nurgle/offer_gem/do_special(var/mob/living/carbon/user, var/obj/effect/cleanable/heretic_rune/rune)
+	SEND_SIGNAL(user, COMSIG_CULT_ADD_FAVOR, 25)
+
 /datum/rune_recipe/nurgle/toughen
 	name = "Toughen Rite"
-	ingredients = list(/mob/living/simple_animal/hostile/retaliate/rat)
+	ingredients = list(/obj/item/newore/gems/quartz)
 	effect_path = /datum/heretic_effect/tough
 
 /datum/rune_recipe/nurgle/nganga
@@ -47,12 +61,12 @@
 
 /datum/rune_recipe/nurgle/blight
 	name = "Blightnade Rite"
-	ingredients = list(/obj/item/grenade/frag/high_yield/krak, /obj/item/organ/external/head, /obj/item/organ/internal/liver)
+	ingredients = list(/obj/item/newore/gems/ruby, /obj/item/organ/internal/liver)
 	product_path = /obj/item/grenade/chem_grenade/blightnade
 
 /datum/rune_recipe/nurgle/nurgling
 	name = "Nurgling Rite"
-	ingredients = list(/obj/item/organ/internal/appendix)
+	ingredients = list(/obj/item/organ/internal/appendix, /obj/item/newore/gems/sapphire)
 	product_path = /mob/living/simple_animal/hostile/nurgling
 
 /datum/rune_recipe/nurgle/offering

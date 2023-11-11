@@ -41,7 +41,7 @@
 /obj/item/ammo_casing/a75
 	desc = "A 20mm bullet casing."
 	caliber = "75"
-	projectile_type = /obj/item/projectile/bullet/gyro
+	projectile_type = /obj/item/projectile/bullet/pistol/strong/kp
 
 /obj/item/ammo_casing/c38
 	desc = "A .38 bullet casing."
@@ -362,6 +362,10 @@
 	caliber = ".75"
 	projectile_type = /obj/item/projectile/bullet/bolterrifle
 
+/obj/item/ammo_casing/bolter/astartes
+	desc = "A .95 bolt rifle casing."
+	caliber = ".95"
+	projectile_type = /obj/item/projectile/bullet/bolterrifle/astartes
 
 /obj/item/ammo_casing/ork
 	desc = "A giant and crude bullet that was made with scrap."
@@ -460,6 +464,14 @@
 	caliber = "galvanic"
 	projectile_type = /obj/item/projectile/bullet/rifle/galvanic/pain
 
+/obj/item/ammo_casing/pmag
+	name = "pulse casing"
+	desc = "pulse casing"
+	icon_state = "fshell"
+	spent_icon = "fshell-spent"
+	caliber = "pmag"
+	projectile_type = /obj/item/projectile/bullet/rifle/pmag
+
 /obj/item/ammo_casing/radcarbine
 	name = "radcarbine casings"
 	desc = "A radcarbine casing"
@@ -475,7 +487,7 @@
 	spent_icon = "fshell-spent"
 	caliber = "rad"
 	projectile_type = /obj/item/projectile/bullet/rifle/radcarbine/radpistol
-/* // commented out until the error is fixed
+
 /obj/item/ammo_casing/exitus
 	name = "exitus shell casing"
 	desc = "An exitus rifle shell."
@@ -511,4 +523,3 @@
 	caliber = "exitus"
 	projectile_type = /obj/item/projectile/bullet/rifle/exitus/fire
 	matter = list(DEFAULT_WALL_MATERIAL = 1250)
-*/

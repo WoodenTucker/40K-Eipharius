@@ -4,7 +4,7 @@
 /obj/item/contraband
 	name = "contraband item"
 	desc = "You probably shouldn't be holding this."
-	icon = 'icons/obj/contraband.dmi'
+	icon = 'icons/map_project/furniture_and_decor.dmi'
 	force = 0
 
 
@@ -80,7 +80,7 @@
 /obj/structure/sign/poster
 	name = "poster"
 	desc = "A large piece of space-resistant printed paper."
-	icon = 'icons/obj/contraband.dmi'
+	icon = 'icons/map_project/furniture_and_decor.dmi'
 	anchored = 1
 	var/serial_number	//Will hold the value of src.loc if nobody initialises it
 	var/poster_type		//So mappers can specify a desired poster
@@ -169,7 +169,7 @@
 
 /obj/structure/poster
 	anchored = TRUE
-	icon = 'icons/obj/contraband.dmi'
+	icon = 'icons/map_project/furniture_and_decor.dmi'
 	icon_state = "red1"
 	desc = "Just a silly little poster. Doesn't look like it'll be coming off any time soon."
 	plane = ABOVE_HUMAN_PLANE

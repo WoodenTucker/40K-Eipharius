@@ -9,7 +9,7 @@
 	species_restricted = list(SPECIES_HUMAN, SPECIES_IPC)
 	camera = /obj/machinery/camera/network/mercenary
 	light_overlay = "helmet_light_green" //todo: species-specific light overlays
-	sales_price = 35
+	sales_price = 15
 
 /obj/item/clothing/suit/space/void/merc
 	icon_state = "rig-syndie"
@@ -24,7 +24,7 @@
 	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/melee/energy/sword,/obj/item/handcuffs)
 	siemens_coefficient = 0.3
 	species_restricted = list(SPECIES_HUMAN, SPECIES_SKRELL, SPECIES_IPC)
-	sales_price = 50
+	sales_price = 20
 
 /obj/item/clothing/suit/space/void/merc/New()
 	..()

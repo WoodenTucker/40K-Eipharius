@@ -8,13 +8,12 @@
 	force = 10
 	accuracy = 0.5
 	one_hand_penalty = 0
-	move_delay = 5
 	fire_delay = 6
 	sales_price = 10
 
 /obj/item/gun/projectile/pistol/pewter
 	name = "Messina Pattern stub pistol"
-	desc = "The locally made pattern is chambered in 9mm and is more reliable in it's handling than other makeshift 9mm stub pistols. "
+	desc = "The locally made pattern is chambered in .45 and is more reliable in it's handling than other makeshift .45 stub pistols. "
 	icon_state = "handgun7"
 	item_state = "pistol"
 	w_class = ITEM_SIZE_NORMAL
@@ -36,7 +35,7 @@
 
 /obj/item/gun/projectile/pistol/kieji
 	name = "Kieji stub pistol"
-	desc = "Barely even a standard template, the 9mm Kieji are manufactured in many different ways. But there are always constants: It will be inaccurate, and unreliable."
+	desc = "Barely even a standard template, the .45 Kieji are manufactured in many different ways. But there are always constants: It will be inaccurate, and unreliable."
 	icon_state = "kieji"
 	item_state = "pistol"
 	ammo_type = /obj/item/ammo_casing/c45
@@ -56,7 +55,7 @@
 
 /obj/item/gun/projectile/pistol/kieji/snub
 	name = "Snub nosed Kieji"
-	desc = "Barely even a standard template, the 9mm Kieji are manufactured in many different ways. But there are always constants: It will be inaccurate, and unreliable. This varient is purposed for a faster firing rate, at the cost of accuracy."
+	desc = "Barely even a standard template, the .45 Kieji are manufactured in many different ways. But there are always constants: It will be inaccurate, and unreliable. This varient is purposed for a faster firing rate, at the cost of accuracy."
 	icon_state = "kiejistub"
 	item_state = "pistol"
 
@@ -84,7 +83,7 @@
 	magazine_type = /obj/item/ammo_magazine/mc45mm
 	allowed_magazines = /obj/item/ammo_magazine/mc45mm
 
-	fire_delay = 7
+	fire_delay = 2
 	screen_shake = 0.2
 	sales_price = 20
 
@@ -96,7 +95,7 @@
 		icon_state = "sheetp-e"
 
 /obj/item/gun/projectile/pistol/villiers
-	name = "Villiers Pattern stub pistol."
+	name = "Villiers Pattern Auto-pistol."
 	desc = "This high quality Villiers is chambered in 9mm, crafted with an off planet wood as it's handle and is capable of burst fire, maintaining a high accuracy while doing so."
 	icon_state = "stub2"
 	item_state = "pistol"
@@ -106,9 +105,9 @@
 	magazine_type = /obj/item/ammo_magazine/mc45mm
 	allowed_magazines = /obj/item/ammo_magazine/mc45mm
 
-	fire_delay = 3
+	fire_delay = 4
 	burst = 2
-	accuracy = 0.7
+	accuracy = 0.4
 	sales_price = 25
 
 
@@ -137,12 +136,13 @@
 	jammed_icon = "talon-j"
 
 /obj/item/gun/projectile/talon/renegade
-	name = "Renegade Pistol"
+	name = "Renegade Auto-Pistol"
 	desc = "A modified slug pistol with a heavy frame and integrated suppressor, forged for the Assassins of the infamous Renegade Navigator Houses."
 	move_delay= 1.3
 	one_hand_penalty = 0
-	accuracy = 1
-	fire_delay = 0.5
+	accuracy = 0.8
+	fire_delay = 2
+	burst = 2
 	silenced = 1
 	force = 20
 	sales_price = 35
@@ -175,7 +175,6 @@
 	can_jam = TRUE //yes it can jam
 	accuracy = -0.5
 	force = 20
-	move_delay = 1.5
 	load_method = MAGAZINE
 
 /obj/item/gun/projectile/ork/slugga/update_icon()
@@ -197,7 +196,6 @@
 	caliber = ".75"
 	accuracy = 0
 	fire_delay = 1.8
-	move_delay = 1.5
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -219,8 +217,7 @@
 	force = 10
 	caliber = ".75"
 	accuracy = -0.4
-	fire_delay = 2
-	move_delay = 5.0 // make it shit and mostly ornamental
+	fire_delay = 2.0 // make it shit and mostly ornamental
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -242,7 +239,6 @@
 	caliber = ".75"
 	accuracy = 0.3 //VERY well maintained--maintened? eh, you get what i mean!
 	fire_delay = 1.5
-	move_delay = 1.3
 	sales_price = 58
 
 /obj/item/gun/projectile/bolter_pistol/inquis/update_icon()
@@ -261,8 +257,7 @@
 	force = 20 //i don't think that De'az bolt pistols can have bayonets attached to them, but, imma leave this in, oh also, the Mars Pattern Mark II Scourge is the one with a bayonet.
 	sharp = 1
 	accuracy = 0.6 //normally only 2 of those spawn on the map, one with the sisters, and one on a room in the caves, and they can't even be fabricated
-	fire_delay = 1.5 //fastaa!
-	move_delay = 1.5 //honestly this is kinda of useless
+	fire_delay = 1.5 //fastaa!.5 //honestly this is kinda of useless
 	attack_verb = list ("stabbed", "sliced")
 	hitsound = "stab_sound"
 	sales_price = 70

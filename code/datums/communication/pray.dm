@@ -1,10 +1,9 @@
 /decl/communication_channel/pray
 	name = "PRAY"
 	expected_communicator_type = /mob
-	config_setting = "pray_allowed"
 	log_proc = /proc/log_say
 	flags = COMMUNICATION_ADMIN_FOLLOW
-	mute_setting = MUTE_PRAY 
+	mute_setting = MUTE_PRAY
 
 /decl/communication_channel/pray/do_communicate(var/mob/communicator, var/message, var/speech_method_type)
 	var/image/cross = image('icons/obj/storage.dmi',"bible")

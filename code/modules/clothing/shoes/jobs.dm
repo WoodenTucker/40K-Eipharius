@@ -335,7 +335,7 @@
 	item_flags = ITEM_FLAG_NOSLIP
 
 /obj/item/clothing/shoes/jackboots/inquisitor/acolyte
-	name = "Reinforced Combat Boots"
+	name = "Mars Pattern Combat Boots"
 	desc = "Reinforced Mars Pattern Combat Boots."
 	icon_state = "jackboots"
 	item_state = "jackboots"

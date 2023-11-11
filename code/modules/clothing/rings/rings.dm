@@ -25,7 +25,7 @@
 	name = "magic ring"
 	desc = "A strange ring with symbols carved on it in some arcane language."
 	icon_state = "magic"
-
+/* THIS RING IS BROKEN
 /obj/item/clothing/ring/magic/equipped(var/mob/living/carbon/human/H, var/slot)
 	..()
 	if(istype(H) && slot == SLOT_GLOVES)
@@ -37,7 +37,7 @@
 
 	if(istype(H))
 		H.remove_cloaking_source(src)
-
+*/
 /////////////////////////////////////////
 //Reagent Rings
 
@@ -71,6 +71,21 @@
 /obj/item/clothing/ring/reagent/sleepy/New()
 	..()
 	reagents.add_reagent(/datum/reagent/chloralhydrate, 15) // Less than a sleepy-pen, but still enough to knock someone out
+
+/obj/item/clothing/ring/reagent/sleepy/nid
+	name = "nid stinger"
+	desc = "A disgusting stinger covered in venom."
+	color = "#292929"
+	origin_tech = list(TECH_MATERIAL = 2, TECH_ILLEGAL = 2)
+
+/obj/item/clothing/ring/reagent/sleepy/nid/New()
+	..()
+	reagents.add_reagent(/datum/reagent/chloralhydrate, 15)
+
+
+/obj/item/clothing/ring/reagent/sleepy/nid/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
 
 /////////////////////////////////////////
 //Seals and Signet Rings

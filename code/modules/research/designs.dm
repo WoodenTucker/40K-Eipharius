@@ -135,10 +135,17 @@ other types of metals and chemistry for reagents).
 
 /datum/design/item/stock_part/pico_mani
 	id = "pico_mani"
-	req_tech = list(TECH_MATERIAL = 5, TECH_DATA = 2)
+	req_tech = list(TECH_MATERIAL = 4, TECH_DATA = 2)
 	materials = list(DEFAULT_WALL_MATERIAL = 30)
 	build_path = /obj/item/stock_parts/manipulator/pico
 	sort_string = "CAABC"
+	
+/datum/design/item/stock_part/femto_mani
+	id = "femto_mani"
+	req_tech = list(TECH_MATERIAL = 5, TECH_DATA = 3)
+	materials = list(DEFAULT_WALL_MATERIAL = 30)
+	build_path = /obj/item/stock_parts/manipulator/femto
+	sort_string = "CAABD"
 
 /datum/design/item/stock_part/basic_matter_bin
 	id = "basic_matter_bin"
@@ -641,13 +648,6 @@ other types of metals and chemistry for reagents).
 	build_path = /obj/item/gun/launcher/pneumatic
 	sort_string = "TAGAB"
 
-
-/datum/design/item/smg
-	id = "smg"
-	req_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
-	materials = list(DEFAULT_WALL_MATERIAL = 8000, "silver" = 2000, "diamond" = 1000)
-	build_path = /obj/item/gun/projectile/automatic
-	sort_string = "TAPAA"
 /*
 /datum/design/item/bullpup
 	id = "bullpup"
@@ -2092,7 +2092,7 @@ CIRCUITS BELOW
 	name = "Garme Pattern Bolt Pistol"
 	id = "bpistol"
 	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 4, TECH_COMBAT = 4)
-	materials = list(DEFAULT_WALL_MATERIAL = 1600, "diamond" = 1800, "phoron" = 60)
+	materials = list(DEFAULT_WALL_MATERIAL = 1600, "diamond" = 2500, "phoron" = 60)
 	build_path = /obj/item/gun/projectile/bolter_pistol
 	sort_string = "ZACG"
 
@@ -2100,7 +2100,7 @@ CIRCUITS BELOW
 	name = "Drusian Pattern Bolt Pistol"
 	id = "bpistold"
 	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 5, TECH_COMBAT = 5)
-	materials = list(DEFAULT_WALL_MATERIAL = 800, "diamond" = 2400, "phoron" = 60)
+	materials = list(DEFAULT_WALL_MATERIAL = 800, "diamond" = 3500, "phoron" = 60)
 	build_path = /obj/item/gun/projectile/bolter_pistol/inquis
 	sort_string = "ZACH"
 
@@ -2196,23 +2196,23 @@ CIRCUITS BELOW
 	name = "Locke Pattern Bolter"
 	id = "bolterlocke"
 	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 5, TECH_COMBAT = 5)
-	materials = list(DEFAULT_WALL_MATERIAL = 5000, "diamond" = 8000, "phoron" = 200)
-	build_path = /obj/item/gun/projectile/boltrifle/lockebolter
+	materials = list(DEFAULT_WALL_MATERIAL = 5000, "diamond" = 12000, "phoron" = 200)
+	build_path = /obj/item/gun/projectile/lockebolter
 	sort_string = "ZACS"
 
 /datum/design/item/bolter/drusian
 	name = "Drusian Pattern Bolter"
 	id = "bolterdrusian"
 	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 6)
-	materials = list("diamond" = 13000, "phoron" = 200)
-	build_path = /obj/item/gun/projectile/boltrifle/lockebolter/drusian
+	materials = list("diamond" = 19000, "phoron" = 200)
+	build_path = /obj/item/gun/projectile/lockebolter/drusian
 	sort_string = "ZACT"
 
 /datum/design/item/bolter/godwyn
 	name = "Godwyn Astartes Pattern Bolter"
 	id = "boltergodwyn"
 	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 5)
-	materials = list("diamond" = 20000, "phoron" = 400)
+	materials = list("diamond" = 22000, "phoron" = 400)
 	build_path = /obj/item/gun/projectile/boltrifle
 	sort_string = "ZACU"
 
@@ -2231,6 +2231,22 @@ CIRCUITS BELOW
 	materials = list(DEFAULT_WALL_MATERIAL = 600, "glass" = 3000, "diamond" = 5000, "phoron" = 600)
 	build_path = /obj/item/gun/projectile/automatic/radcarbine/radpistol
 	sort_string = "ZAAW"
+
+/datum/design/item/ammo_magazine/radcarbine
+	name = "Radium Magazine"
+	id = "radmag"
+	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 4, TECH_POWER = 5, TECH_COMBAT = 2)
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "uranium" = 2000)
+	build_path = /obj/item/ammo_magazine/radcarbine
+	sort_string = "ZAAAV"
+	
+/datum/design/item/ammo_magazine/radcarbine/radpistol
+	name = "Radium Pistol Magazine"
+	id = "radmagp"
+	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 4, TECH_POWER = 5, TECH_COMBAT = 2)
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "uranium" = 2000)
+	build_path = /obj/item/ammo_magazine/radcarbine/radpistol
+	sort_string = "ZAAAY"
 
 /datum/design/item/rclrifle
 	name = "Vraks Pattern Rocket Launcher"
@@ -2348,7 +2364,7 @@ CIRCUITS BELOW
 	name = "Plasma Rifle"
 	id = "plasmarifle"
 	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 5, TECH_POWER = 5, TECH_COMBAT = 5, TECH_PHORON = 5)
-	materials = list(DEFAULT_WALL_MATERIAL = 2000, "glass" = 2000, "diamond" = 12000, "phoron" = 2400)
+	materials = list(DEFAULT_WALL_MATERIAL = 2000, "glass" = 2000, "diamond" = 14000, "phoron" = 2400)
 	build_path = /obj/item/gun/energy/pulse/plasma/rifle
 	sort_string = "ZADG"
 
@@ -2356,7 +2372,7 @@ CIRCUITS BELOW
 	name = "Plasma Pistol"
 	id = "plasmapistol"
 	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 5, TECH_POWER = 5, TECH_COMBAT = 5, TECH_PHORON = 5)
-	materials = list(DEFAULT_WALL_MATERIAL = 1000, "glass" = 1000, "diamond" = 10000, "phoron" = 2000)
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "glass" = 1000, "diamond" = 12000, "phoron" = 2000)
 	build_path = /obj/item/gun/energy/pulse/plasma/pistol
 	sort_string = "ZADH"
 
@@ -2364,7 +2380,7 @@ CIRCUITS BELOW
 	name = "Ryza Plasma Pistol"
 	id = "ryzaplasmapistol"
 	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_POWER = 6, TECH_COMBAT = 6, TECH_PHORON = 6)
-	materials = list("glass" = 1000, "diamond" = 12000, "phoron" = 2400)
+	materials = list("glass" = 1000, "diamond" = 14000, "phoron" = 2400)
 	build_path = /obj/item/gun/energy/pulse/plasma/pistol/mechanicus
 	sort_string = "ZADI"
 
@@ -2372,7 +2388,7 @@ CIRCUITS BELOW
 	name = "Seolite Plasma Pistol"
 	id = "seoliteplasmapistol"
 	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_POWER = 7, TECH_COMBAT = 6, TECH_PHORON = 7, TECH_ILLEGAL = 6)
-	materials = list("glass" = 1000, "diamond" = 12000, "phoron" = 2400)
+	materials = list("glass" = 1000, "diamond" = 14000, "phoron" = 2400)
 	build_path = /obj/item/gun/energy/pulse/plasma/pistol/toaster
 	sort_string = "ZADJ"
 
@@ -2380,7 +2396,7 @@ CIRCUITS BELOW
 	name = "Archeotech Plasma Pistol"
 	id = "archeoplasmapistol"
 	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_POWER = 8, TECH_COMBAT = 7, TECH_PHORON = 8, TECH_ILLEGAL = 6)
-	materials = list("glass" = 200, "diamond" = 14000, "phoron" = 4000)
+	materials = list("glass" = 200, "diamond" = 15000, "phoron" = 4000)
 	build_path = /obj/item/gun/energy/pulse/plasma/pistol/glock
 	sort_string = "ZADK"
 
@@ -2772,6 +2788,22 @@ CIRCUITS BELOW
 	materials = list("diamond" = 4000, "phoron" = 400)
 	build_path = /obj/item/ammo_magazine/bolt_rifle_magazine/kp
 	sort_string = "ZVBI"
+
+/datum/design/item/magpboltp/astartes
+	name = "Bolt Rifle Magazine(KP)"
+	id = "brmkp"
+	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 6, TECH_COMBAT = 5)
+	materials = list("diamond" = 3000, "phoron" = 300)
+	build_path = /obj/item/ammo_magazine/bolt_pistol_magazine/astartes
+	sort_string = "ZVBJ"
+
+/datum/design/item/magbolter/astartes
+	name = "Bolt Rifle Magazine(KP)"
+	id = "brmkp"
+	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 6, TECH_COMBAT = 5)
+	materials = list("diamond" = 6000, "phoron" = 600)
+	build_path = /obj/item/ammo_magazine/bolt_rifle_magazine_astartes
+	sort_string = "ZVBK"
 
 /datum/design/item/lasgunpowerpack
 	name = "Lasgun Power Pack"

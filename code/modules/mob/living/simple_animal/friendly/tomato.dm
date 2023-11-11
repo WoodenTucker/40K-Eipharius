@@ -17,29 +17,6 @@
 	melee_damage_lower = 10
 	attacktext = "mauled"
 
-/mob/living/simple_animal/playerdaemonhost
-	name = "Daemon Host"
-	real_name = "Daemon Host" 
-	desc = "It's a horrifyingly enormous daemon host..."
-	icon = 'icons/mob/Demon.dmi'
-	icon_state = "herald"
-	icon_living = "herald"
-	icon_dead = "herald_dead"
-	speak_chance = 0
-	turns_per_move = 5
-	maxHealth = 1500
-	health = 1500
-	response_help  = "caresses"
-	response_disarm = "slams"
-	response_harm   = "rends"
-	harm_intent_damage = 100
-	melee_damage_upper = 120
-	melee_damage_lower = 90
-	attacktext = "torn"
-	faction = "Nurgle"
-
-	speed = 1.5
-
 /mob/living/simple_animal/playerzombie
 	name = "Plague Beast"
 	real_name = "Plague Beast"
@@ -62,6 +39,6 @@
 	harm_intent_damage = 60
 	melee_damage_upper = 70
 	melee_damage_lower = 50
-	faction = "Nurgle"
+	faction = "Chaos"
 
 	speed = 1.5

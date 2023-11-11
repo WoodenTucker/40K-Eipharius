@@ -862,7 +862,7 @@ kultrinium
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
 				src.whatwemaking = 2
 				src.ismarked = 1
-				src.name = "Kultrinium Ingot (Plasma Flask)"
+				src.name = "Kultrinium Ingot (Strange Alloy)"
 
 	if(isLasercutter(W))
 		if(ismarked == 0)
@@ -888,9 +888,9 @@ kultrinium
 			if(2)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] carefully carves the ingot into a blessed Plasma Flask! Now take the ingot and dip it into the holy oil!")
+					visible_message("[user] carefully carves the ingot into a blessed Strange Alloy! Now take the ingot and dip it into the holy oil!")
 					src.rubtheoils = 1
-					src.name = "Kultrinium Ingot (Strange Alloy)"
+					src.name = "Kultrinium Ingot (Carved Strange Alloy)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 				else
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
@@ -1029,9 +1029,9 @@ kultrinium
 			if(5)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] carefully carves the ingot into blessed Galvanic Rifle Ammo! Now take the ingot and dip it into the holy oil!")
+					visible_message("[user] carefully carves the ingot into blessed Strange Alloy! Now take the ingot and dip it into the holy oil!")
 					src.rubtheoils = 1
-					src.name = "Diamantine Ingot (Strange Alloy)"
+					src.name = "Diamantine Ingot (Carved Strange Alloy)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 				else
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
@@ -1123,7 +1123,7 @@ kultrinium
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] carefully carves the ingot into blessed Strange Alloy! Now take the ingot and dip it into the holy oil!")
 					src.rubtheoils = 1
-					src.name = "Adamantium Ingot (Strange Alloy)"
+					src.name = "Adamantium Ingot (Carved Strange Alloy)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 				else
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)

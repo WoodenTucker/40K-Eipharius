@@ -216,10 +216,10 @@
 
 /obj/item/ammo_magazine/a762
 	name = "magazine (7.62mm)"
-	icon_state = "auto_grim"
+	icon_state = "rsc"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
-	caliber = "763"
+	caliber = "a762"
 	matter = list(DEFAULT_WALL_MATERIAL = 1800)
 	ammo_type = /obj/item/ammo_casing/a762
 	max_ammo = 20 //if we lived in a world where normal mags had 30 rounds, this would be a 20 round mag
@@ -434,6 +434,34 @@
 /obj/item/ammo_magazine/bolt_rifle_magazine/kp/empty
 	initial_ammo = 0
 
+/obj/item/ammo_magazine/bolt_rifle_magazine_astartes
+	name = "Astartes Bolter Magazine"
+	icon_state = "bolty"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	caliber = ".95"
+	w_class = ITEM_SIZE_NORMAL
+	matter = list(DEFAULT_WALL_MATERIAL = 5260)
+	ammo_type = /obj/item/ammo_casing/bolter/astartes
+	max_ammo = 30
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/bolt_rifle_magazine/kp/empty
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/bolt_pistol_magazine/astartes
+	name = "Astartes Boltpistol Magazine"
+	icon_state = "boltyp"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	caliber = ".95"
+	matter = list(DEFAULT_WALL_MATERIAL = 2260)
+	ammo_type = /obj/item/ammo_casing/bolter/astartes
+	max_ammo = 15
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/bolt_pistol_magazine/kp/empty
+	initial_ammo = 0
 
 /obj/item/ammo_magazine/melta
 	name = "Melta Canister"
@@ -443,7 +471,7 @@
 	caliber = "melta"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	ammo_type = /obj/item/ammo_casing/melta
-	max_ammo = 60
+	max_ammo = 100
 	multiple_sprites = 0
 
 /obj/item/ammo_magazine/melta/empty
@@ -501,6 +529,18 @@
 	desc = "An ancient design for loading galvanic rifles. This one seems to have stun rounds loaded."
 	ammo_type = /obj/item/ammo_casing/galvanic/pain
 
+
+/obj/item/ammo_magazine/pulsemag
+	name = "Pulse Matter Cartridge"
+	icon_state = "tinyersatz"
+	origin_tech = list(TECH_COMBAT = 3)
+	mag_type = MAGAZINE
+	caliber = "pmag"
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	ammo_type = /obj/item/ammo_casing/pmag
+	max_ammo = 37
+	multiple_sprites = 1
+
 /obj/item/ammo_magazine/radcarbine
 	name = "Radcarbine Magazine"
 	icon_state = "LMG-mag"
@@ -522,7 +562,7 @@
 	ammo_type = /obj/item/ammo_casing/radcarbine/radpistol
 	max_ammo = 10
 	multiple_sprites = 0
-/*
+
 /obj/item/ammo_magazine/exitus
 	name = "Exitus Rifle Magazine"
 	icon_state = "tinyersatz"
@@ -567,4 +607,4 @@
 	max_ammo = 5
 	multiple_sprites = 1
 
-*/
+

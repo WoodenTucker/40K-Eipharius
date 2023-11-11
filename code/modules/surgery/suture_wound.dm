@@ -5,8 +5,8 @@
 	/obj/item/stack/cable_coil = 60
 	)
 
-	min_duration = 70
-	max_duration = 100
+	min_duration = 40
+	max_duration = 80
 
 	priority = 1
 

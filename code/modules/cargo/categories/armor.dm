@@ -8,32 +8,32 @@
 
 /datum/cargo_entry/armor/webbing
 	name = "Webbing"
-	cost = 7
+	cost = 17
 	item_path = /obj/item/clothing/accessory/storage/webbing
 
 /datum/cargo_entry/armor/holster
 	name = "Holster"
-	cost = 18
+	cost = 28
 	item_path = /obj/item/clothing/accessory/holster/waist
 
 /datum/cargo_entry/armor/armorcoat
 	name = "Armored Coat"
-	cost = 36
+	cost = 46
 	item_path = /obj/item/clothing/suit/armor/militia
 
 /datum/cargo_entry/armor/armorcloak
 	name = "Armored Cloak"
-	cost = 39
+	cost = 49
 	item_path = /obj/item/clothing/suit/cloak
 
 /datum/cargo_entry/armor/explorator
 	name = "Explorator Armor"
-	cost = 43
+	cost = 53
 	item_path = /obj/item/clothing/suit/armor/explorer
 
 /datum/cargo_entry/armor/voidsuit
 	name = "Void Suit"
-	cost = 47
+	cost = 57
 	item_path = /obj/item/clothing/suit/space/void/engineering/salvage
 
 /datum/cargo_entry/armor/voidsuithelm
@@ -43,7 +43,7 @@
 
 /datum/cargo_entry/armor/voidsuitarmor
 	name = "Armored Void Suit"
-	cost = 97
+	cost = 107
 	item_path = /obj/item/clothing/suit/space/void/engineering/salvage
 
 /datum/cargo_entry/armor/voidsuitarmorhelm
@@ -53,47 +53,47 @@
 
 /datum/cargo_entry/armor/heavyduster2
 	name = "Ganger Duster"
-	cost = 38
+	cost = 48
 	item_path = /obj/item/clothing/suit/armor/ranger3
 
 /datum/cargo_entry/armor/heavyduster1
 	name = "Colonial Duster"
-	cost = 41
+	cost = 51
 	item_path = /obj/item/clothing/suit/armor/ranger2
 
 /datum/cargo_entry/armor/necroflakv
 	name = "Necromunda Flak Vest"
-	cost = 42
+	cost = 52
 	item_path = /obj/item/clothing/suit/armor/flak2
 
 /datum/cargo_entry/armor/necroflak
 	name = "Necromunda Flak Armor"
-	cost = 47
+	cost = 57
 	item_path = /obj/item/clothing/suit/armor/flak1
 
 /datum/cargo_entry/armor/necroflakheavy
 	name = "Heavy Flak Armor"
-	cost = 57
+	cost = 67
 	item_path = /obj/item/clothing/suit/armor/necromundaflak1
 
 /datum/cargo_entry/armor/necrocara1
 	name = "Necromunda Carapace Armor"
-	cost = 77
+	cost = 97
 	item_path = /obj/item/clothing/suit/armor/carapace2
 
 /datum/cargo_entry/armor/necrocara2
 	name = "Necromunda Carapace Suit"
-	cost = 77
+	cost = 97
 	item_path = /obj/item/clothing/suit/armor/carapace3
 
 /datum/cargo_entry/armor/necrocaraheavy
 	name = "Heavy Carapace Armor"
-	cost = 86
+	cost = 106
 	item_path = /obj/item/clothing/suit/armor/necromundacarapace1
 
 /datum/cargo_entry/armor/necrocara3
 	name = "Heavy Carapace Suit"
-	cost = 87
+	cost = 107
 	item_path = /obj/item/clothing/suit/armor/carapace4
 
 /datum/cargo_entry/armor/metalhelm
@@ -108,67 +108,67 @@
 
 /datum/cargo_entry/armor/necrophelm
 	name = "Runic Helmet"
-	cost = 39
+	cost = 49
 	item_path = /obj/item/clothing/head/helmet/knighthelm
 
 /datum/cargo_entry/armor/necrophelm
 	name = "Necromunda Power Helmet"
-	cost = 42
+	cost = 52
 	item_path = /obj/item/clothing/head/helmet/lightpahelm
 
 /datum/cargo_entry/armor/necroparmor
 	name = "Necromunda Power Armor"
-	cost = 270
+	cost = 360
 	item_path = /obj/item/clothing/suit/armor/vanpa
 
 /datum/cargo_entry/armor/renpa
 	name = "Renegade Power Armor"
-	cost = 295
+	cost = 405
 	item_path = /obj/item/clothing/suit/armor/rpowerarmor
 
 /datum/cargo_entry/armor/mechpa
 	name = "Runic Power Armor"
-	cost = 315
+	cost = 365
 	item_path = /obj/item/clothing/suit/armor/greypa
 
 /datum/cargo_entry/armor/helmet
 	name = "Guard Flak Helmet"
-	cost = 17
+	cost = 27
 	item_path = /obj/item/clothing/head/helmet/guardhelmet
 
 /datum/cargo_entry/armor/helmetheavy
 	name = "Heavy Flak Helmet"
-	cost = 32
+	cost = 39
 	item_path = /obj/item/clothing/head/helmet/heavyflak
 
 /datum/cargo_entry/armor/garmor
 	name = "Guard Flak Armor"
-	cost = 62
+	cost = 72
 	item_path = /obj/item/clothing/suit/armor/guardsman
 
 /datum/cargo_entry/armor/mercflak
 	name = "Mercenary Flak Armor"
-	cost = 57
+	cost = 67
 	item_path = /obj/item/clothing/suit/armor/guardsman/mercenary
 
 /datum/cargo_entry/armor/mercflak
 	name = "Heavy Flak Suit"
-	cost = 72
+	cost = 82
 	item_path = /obj/item/clothing/suit/armor/heavyflaksuit
 
 /datum/cargo_entry/armor/cara
 	name = "Guard Carapace Armor"
-	cost = 102
+	cost = 122
 	item_path = /obj/item/clothing/suit/armor/guardsman/carapace
 
 /datum/cargo_entry/armor/mercspace
 	name = "Mercenary Carapace Armor"
-	cost = 92
+	cost = 112
 	item_path = /obj/item/clothing/suit/armor/guardsman/mercenary/carapace
 
 /datum/cargo_entry/armor/heavycombatarmor
 	name = "Heavy Combat Armor"
-	cost = 130
+	cost = 145
 	item_path = /obj/item/clothing/suit/storage/vest/merc
 
 /datum/cargo_entry/armor/belt
@@ -178,7 +178,7 @@
 
 /datum/cargo_entry/armor/nvg
 	name = "Night Vision Visor"
-	cost = 52
+	cost = 62
 	item_path = /obj/item/clothing/glasses/night
 
 /datum/cargo_entry/armor/val

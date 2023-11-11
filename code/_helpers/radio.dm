@@ -147,17 +147,17 @@ var/list/radiochannels = list(
 	"Command"		= COMM_FREQ,
 	"Medical"		= MED_FREQ,
 	"Mechanicus"	= ENG_FREQ,
-	"Security" 	    = SEC_FREQ,
-	"Response Team" = ERT_FREQ,
-	"Special Ops" 	= DTH_FREQ,
-	"Exploration"	= EXP_FREQ,
+	"Frateris" 	    = SEC_FREQ,
+	"Violet" = ERT_FREQ,
+	"Explorer" 	= DTH_FREQ,
+	"Secure"	= EXP_FREQ,
 	"Supply" 		= SUP_FREQ,
-	"Guardsmen" 	= SRV_FREQ,
-	"AI Private"	= AI_FREQ,
+	"Militarum" 	= SRV_FREQ,
+	"Omega"	= AI_FREQ,
 	"Entertainment" = ENT_FREQ,
 	"Medical(I)"	= MED_I_FREQ,
 	"Security(I)"	= SEC_I_FREQ,
-	"Inquisition"	= INQ_FREQ,
+	"Vermillion"	= INQ_FREQ,
 	"Red" 	     	= RED_FREQ,//Base red channel
 	"Blue"			= BLUE_FREQ,//Base blue channel
 	"Alpha"     	= RED_ALPHA,//Now begins squad channels
@@ -169,7 +169,7 @@ var/list/radiochannels = list(
 	"Blue Charlie" 	= BLUE_CHARLIE,
 	"Blue Delta" 	= BLUE_DELTA,
 	"Hivemind" 		= HIVE_FREQ,
-	"Inquisition" 	= RED_INQ,
+	"Vermillion" 	= RED_INQ,
 )
 
 // central command channels, i.e deathsquid & response teams
@@ -182,7 +182,7 @@ var/list/HIVE_FREQS = list(HIVE_FREQ)
 
 var/list/INQ_FREQS = list(RED_INQ)
 
-var/list/IMP_FREQS = list(RED_FREQ)
+var/list/IMP_FREQS = list(RED_FREQ, DTH_FREQ)
 
 var/list/ALPHA_FREQS = list(RED_ALPHA)
 
@@ -214,7 +214,7 @@ var/list/DEPT_FREQS = list(AI_FREQ, COMM_FREQ, ENG_FREQ, MED_FREQ, INQ_FREQ, SEC
 		if (AI_FREQ)
 			return "airadio"
 
-		if (SEC_FREQ, RED_INQ,)
+		if (SEC_FREQ, RED_INQ, DTH_FREQ)
 			return "secradio"
 
 		if (ENG_FREQ)

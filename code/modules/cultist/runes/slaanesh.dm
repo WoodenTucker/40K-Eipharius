@@ -9,6 +9,7 @@
 	if(target.stat != DEAD && target.mind)
 		var/datum/heretic_deity/slaanesh/N = GOD(GOD_SLAANESH)
 		N.join_request(target)
+		SEND_SIGNAL(user, COMSIG_CULT_ADD_FAVOR, 60)
 
 /datum/rune_recipe/slaanesh/knife
 	name = "Skinning Knife"

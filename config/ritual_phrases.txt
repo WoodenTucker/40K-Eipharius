@@ -1,0 +1,7 @@
+###############################################################################################
+# Whole phrases that will be used to trigger rituals.  Don't use punctuation!!!                #
+# Case is not important. Commented-out examples are listed below, just remove the "#".        #
+###############################################################################################
+
+Emperor I consecrate this place today anew and without reserve to your righteous fury
+Holy Emperor You have given us your Saints to purge wickedness across the stars I call upon them now to reveal the truth

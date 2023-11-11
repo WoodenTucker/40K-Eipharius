@@ -6,25 +6,26 @@
 	faction = "Chaos"
 	rune_recipes = list(
 						/datum/rune_recipe/khorne/offer_bioprinted,
-						/datum/rune_recipe/khorne/offer_skull,
+						/datum/rune_recipe/khorne/offer_heart,
+						/datum/rune_recipe/khorne/offer_gem,
 						/datum/rune_recipe/khorne/knife_teeth,
 						/datum/rune_recipe/khorne/conversion)
 	possible_blessings = list(
-							/datum/heretic_effect/healing,
 							/datum/heretic_effect/tough_skin,
+							/datum/heretic_effect/healing,
 							/datum/heretic_effect/strength/greater,
 							/datum/heretic_effect/strength/lesser,
 							/datum/heretic_effect/strength)
 
 	inherent_verbs = list(
-			/mob/living/carbon/human/proc/bludforbludguy,
-			/mob/living/carbon/human/proc/letriverflow,
+		//	/mob/living/carbon/human/proc/bludforbludguy,
+	//		/mob/living/carbon/human/proc/letriverflow,
 			/mob/living/carbon/human/proc/moving,
 			/mob/living/carbon/human/proc/overthere,
-			/mob/living/carbon/human/proc/praynslay,
+	//		/mob/living/carbon/human/proc/praynslay,
 			/mob/living/carbon/human/proc/chaaaaaarge,
-			/mob/living/carbon/human/proc/chopdem,
-			/mob/living/carbon/human/proc/bringdeath,
+	//		/mob/living/carbon/human/proc/chopdem,
+	//		/mob/living/carbon/human/proc/bringdeath,
 			/mob/living/carbon/human/proc/advance,
 			/mob/living/carbon/human/proc/aaaaaa,
 			/mob/living/carbon/human/proc/getmanualkhorne,
@@ -45,6 +46,7 @@
 						/datum/heretic_effect/zombie)
 	rune_recipes = list(/datum/rune_recipe/nurgle/deathtolerance,
 						/datum/rune_recipe/nurgle/conversion,
+						/datum/rune_recipe/nurgle/offer_gem,
 						/datum/rune_recipe/nurgle/toughen,
 						/datum/rune_recipe/nurgle/nganga,
 						/datum/rune_recipe/nurgle/uniform,

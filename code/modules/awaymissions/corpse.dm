@@ -102,17 +102,17 @@
 	var/decl/hierarchy/outfit/corpse_outfit = outfit_by_type(pickweight(corpse_outfits))
 	corpse_outfit.equip(M, equip_adjustments = adjustments)
 
-/obj/effect/landmark/corpse/chef
-	name = "Chef"
-	corpse_outfits = list(/decl/hierarchy/outfit/job/service/chef)
+/obj/effect/landmark/corpse/guard
+	name = "Dead Guardsman"
+	corpse_outfits = list(/decl/hierarchy/outfit/job/whiteshield)
 
 /obj/effect/landmark/corpse/doctor
-	name = "Doctor"
-	corpse_outfits = list(/decl/hierarchy/outfit/job/medical/doctor)
+	name = "Dead Medicae"
+	corpse_outfits = list(/decl/hierarchy/outfit/job/medical/paramedic)
 
-/obj/effect/landmark/corpse/engineer
-	name = "Engineer"
-	corpse_outfits = list(/decl/hierarchy/outfit/job/engineering/engineer)
+/obj/effect/landmark/corpse/pilgrim
+	name = "Dead Pilgrim"
+	corpse_outfits = list(/decl/hierarchy/outfit/job/penitent)
 
 /obj/effect/landmark/corpse/scientist
 	name = "Scientist"

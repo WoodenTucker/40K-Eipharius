@@ -168,8 +168,13 @@
 	icon_state = "black"
 	starts_with = list(/datum/reagent/atepoine = 10)
 
+/obj/item/reagent_containers/hypospray/autoinjector/death //this is ateopine in the wiki
+	name = "autoinjector (???)"
+	icon_state = "black"
+	starts_with = list(/datum/reagent/toxin/zombiepowder = 10, /datum/reagent/tramadol = 32)
+
 /obj/item/reagent_containers/hypospray/autoinjector/mindbreaker
-	name = "autoinjector"
+	name = "autoinjector MB"
 	icon_state = "black"
 	starts_with = list(/datum/reagent/mindbreaker = 5)
 
@@ -190,7 +195,7 @@
 /obj/item/reagent_containers/hypospray/autoinjector/morphine
 	name = "morphine syrette"
 	icon_state = "syrette_closed"
-	starts_with = list(/datum/reagent/tramadol/morphine = 10)
+	starts_with = list(/datum/reagent/tramadol/morphine = 20)
 	inject_sound = 'sound/items/syrette_inject.ogg'
 
 /obj/item/reagent_containers/hypospray/autoinjector/morphine/update_icon()
@@ -220,7 +225,7 @@
 	amount_per_transfer_from_this = 10
 	w_class = ITEM_SIZE_SMALL
 	slot_flags = SLOT_EARS
-	volume = 100
+	volume = 50
 	var/closed = 1
 
 /obj/item/reagent_containers/glass/ampule/attack_self()
@@ -239,7 +244,7 @@
 	name = "morphine ampule"
 	New()
 		..()
-		reagents.add_reagent(/datum/reagent/tramadol/morphine, 100)
+		reagents.add_reagent(/datum/reagent/tramadol/morphine, 50)
 
 /obj/item/reagent_containers/glass/ampule/attackby(obj/item/W, mob/user as mob)
 	if(istype(W, /obj/item/reagent_containers/hypospray/autoinjector))

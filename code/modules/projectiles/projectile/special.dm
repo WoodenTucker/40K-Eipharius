@@ -25,6 +25,13 @@
 	armor_penetration = 30 //this is totally not cause its a .75
 	check_armour = "bullet"
 
+/obj/item/projectile/bullet/bolterrifle/astartes
+	name =".95 bolt"  // Will make kraken penetrator variants later.
+	icon_state= "bolter"
+	damage = 90
+	armor_penetration = 35 
+	check_armour = "bullet"
+
 /obj/item/projectile/bullet/bpistol 
 	name =".50 bolt" //.50, human sized bolters and bolt pistols
 	icon_state= "bolter"
@@ -48,20 +55,13 @@
 
 /obj/item/projectile/bullet/bpistol/ms // This is .75 Bolt Pistol Round
 	fire_sound = 'sound/effects/explosion1.ogg'
-	damage = 40
-	armor_penetration = 25
-/obj/item/projectile/bullet/gyro/on_hit(var/atom/target, var/blocked = 0)
-	if(isturf(target))
-		explosion(target, -1, 0, 2)
-	..()
+	damage = 78
+	armor_penetration = 35
 
 /obj/item/projectile/bullet/bolt/ms
 	fire_sound = 'sound/effects/explosion1.ogg'
-	damage = 50
-	armor_penetration = 30
-/obj/item/projectile/bullet/gyro/on_hit(var/atom/target, var/blocked = 0)
-	if(isturf(target))
-		explosion(target, -1, 0, 2)
+	damage = 88
+	armor_penetration = 35
 
 /obj/item/projectile/meteor
 	name = "meteor"
@@ -162,7 +162,7 @@
 		if (ishuman(M))
 			var/mob/living/carbon/human/H = M
 			if (prob (33))
-				playsound(loc, "stab_sound", 50, TRUE)
+				playsound(loc, "stab_sound", 60, TRUE)
 				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
 				if (affecting.status & ORGAN_ROBOT)
 					return
@@ -171,7 +171,7 @@
 				H.updatehealth()
 				to_chat(H, "<span class = 'red'><b>Your [affecting.name] gets bitten by \the [src]!</b></span>")
 			else if (prob (33))
-				playsound(loc, "stab_sound", 50, TRUE)
+				playsound(loc, "stab_sound", 80, TRUE)
 				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
 				if (affecting.status & ORGAN_ROBOT)
 					return
@@ -180,7 +180,7 @@
 				H.updatehealth()
 				to_chat(H, "<span class = 'red'><b>Your [affecting.name] gets bitten by \the [src]!</b></span>")
 			else
-				playsound(loc, "stab_sound", 50, TRUE)
+				playsound(loc, "stab_sound", 100, TRUE)
 				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
 				if (affecting.status & ORGAN_ROBOT)
 					return
@@ -194,14 +194,14 @@
 	if(ismob(AM))
 		var/mob/M = AM
 		if (ishuman(M))
-			if(prob(25))
+			if(prob(75))
 				M.visible_message("<span class='danger'>[M] struggle to free themselves from the barbed teeth!</span>")
 				var/mob/living/carbon/human/H = M
 				playsound(loc, "stab_sound", 50, TRUE)
 				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
 				if (affecting.status & ORGAN_ROBOT)
 					return
-				if (affecting.take_damage(18, FALSE))
+				if (affecting.take_damage(8, FALSE))
 					H.UpdateDamageIcon()
 				H.updatehealth()
 				return FALSE
@@ -210,7 +210,7 @@
 				return TRUE
 	return ..()
 
-/// FLAMER FIRE
+// FLOWER
 
 /// FLAMER FIRE
 
@@ -222,7 +222,7 @@
 	icon = 'icons/effects/fire.dmi'
 	icon_state = "red_2"
 	layer = BELOW_OBJ_LAYER
-	var/firelevel = 4 //Tracks how much "fire" there is. Basically the timer of how long the fire burns
+	var/firelevel = 1 //Tracks how much "fire" there is. Basically the timer of how long the fire burns
 	var/burnlevel = 10 //Tracks how HOT the fire is. This is basically the heat level of the fire and determines the temperature.
 	var/flame_color = "red"
 	var/canSpreadDir = NORTH | SOUTH | EAST | WEST
@@ -333,7 +333,7 @@
 	armor_penetration = 100 //phosphor blasters are incredibly good at penetrating heavy armor
 	range =  6 //extremely close ranged, normal vision is 8 but technically 7 if you don't count your own tile.
 	
-/*
+
 /obj/item/projectile/energy/phosphor/on_hit(var/atom/target, var/blocked = 0)
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
@@ -344,7 +344,7 @@
 		if(H.isChild())
 			var/mob/living/carbon/human/F = firer
 			F.unlock_achievement(new/datum/achievement/child_fire())
-*/
+
 
 /obj/item/projectile/gauss
 	name = "Gauss "

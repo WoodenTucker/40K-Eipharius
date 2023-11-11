@@ -1,6 +1,6 @@
 GLOBAL_LIST_EMPTY(all_observable_events)
 
-GLOBAL_LIST_INIT(font_resources, list('fonts/Shage/Shage.ttf'))
+GLOBAL_LIST_INIT(font_resources, list('fonts/Shage/Shage.ttf', 'fonts/UnifrakturCook/UnifrakturCook.ttf'))
 GLOBAL_LIST_INIT(latepartyoptions, list(""))
 GLOBAL_LIST_EMPTY(daparty) //This holds our late partiers
 
@@ -22,7 +22,7 @@ GLOBAL_VAR_INIT(deployed, 0)
 GLOBAL_VAR_INIT(partygang, 0)
 GLOBAL_VAR_INIT(partydelay, 48000)
 GLOBAL_VAR_INIT(thrones, 0) //used for cargo and reinforcement system, so it carries across computers
-GLOBAL_VAR_INIT(tax_rate, 0.1) //used for taxation
+GLOBAL_VAR_INIT(tax_rate, 0) //used for taxation
 GLOBAL_VAR_INIT(tithe_paid, 0) //did they pay their tithe or not yet?
 GLOBAL_VAR_INIT(partysize, 5)
 

@@ -60,10 +60,10 @@
  * Bomb protection
  */
 /obj/item/clothing/head/bomb_hood
-	name = "bomb hood"
+	name = "Heavy Flak helmet"
 	desc = "Use in case of bomb."
 	icon_state = "bombsuit"
-	armor = list(melee = 70, bullet = 15, laser = 30, energy = 50, bomb = 90, bio = 0, rad = 0)
+	armor = list(melee = 30, bullet = 45, laser = 40, energy = 50, bomb = 50, bio = 0, rad = 0)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EYES
 	siemens_coefficient = 0
@@ -71,13 +71,13 @@
 
 
 /obj/item/clothing/suit/bomb_suit
-	name = "bomb suit"
-	desc = "A suit designed for safety when handling explosives."
+	name = "Heavy Trooper Flak Suit"
+	desc = "A suit designed for the handling of heavy weapons."
 	icon_state = "bombsuit"
 	w_class = ITEM_SIZE_HUGE//bulky item
 	gas_transfer_coefficient = 0.01
 	permeability_coefficient = 0.01
-	armor = list(melee = 20, bullet = 20, laser = 30, energy = 50, bomb = 90, bio = 90, rad = 40)
+	armor = list(melee = 50, bullet = 70, laser = 65, energy = 50, bomb = 60, bio = 90, rad = 40)
 	flags_inv = HIDEJUMPSUIT|HIDETAIL
 	heat_protection = UPPER_TORSO|LOWER_TORSO
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
@@ -86,7 +86,7 @@
 
 /obj/item/clothing/suit/bomb_suit/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 2
+	slowdown_per_slot[slot_wear_suit] = 0.9
 
 /obj/item/clothing/head/bomb_hood/security
 	icon_state = "bombsuitsec"

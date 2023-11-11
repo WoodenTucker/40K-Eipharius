@@ -1,6 +1,5 @@
 /obj/structure/closet/secure_closet/captains
 	name = "locker of the lord"
-	req_access = list(access_captain)
 	icon_state = "capsecure1"
 	icon_closed = "capsecure"
 	icon_locked = "capsecure1"
@@ -25,7 +24,6 @@
 
 /obj/structure/closet/secure_closet/hop
 	name = "Seneschal's locker"
-	req_access = list(access_hop)
 	icon_state = "hopsecure1"
 	icon_closed = "hopsecure"
 	icon_locked = "hopsecure1"
@@ -45,7 +43,6 @@
 
 /obj/structure/closet/secure_closet/hop2
 	name = "Seneschal's attire"
-	req_access = list(access_hop)
 	icon_state = "hopsecure1"
 	icon_closed = "hopsecure"
 	icon_locked = "hopsecure1"
@@ -71,7 +68,6 @@
 
 /obj/structure/closet/secure_closet/hos
 	name = "Commissar's locker"
-	req_access = list(access_hos)
 	icon_state = "hossecure1"
 	icon_closed = "hossecure"
 	icon_locked = "hossecure1"
@@ -89,7 +85,6 @@
 
 /obj/structure/closet/secure_closet/warden
 	name = "veteran sergeant's locker"
-	req_access = list(access_armory)
 	icon_state = "sec1"
 	icon_closed = "sec"
 	icon_locked = "sec1"
@@ -104,7 +99,6 @@
 
 /obj/structure/closet/secure_closet/security
 	name = "security officer's locker"
-	req_access = list(access_magi)
 	icon_state = "sec1"
 	icon_closed = "sec"
 	icon_locked = "sec1"
@@ -151,7 +145,6 @@
 
 /obj/structure/closet/secure_closet/detective
 	name = "detective's cabinet"
-	req_access = list(access_magi)
 	icon_state = "cabinetdetective_locked"
 	icon_closed = "cabinetdetective"
 	icon_locked = "cabinetdetective_locked"
@@ -183,14 +176,12 @@
 
 /obj/structure/closet/secure_closet/injection
 	name = "lethal injections locker"
-	req_access = list(access_captain)
 
 /obj/structure/closet/secure_closet/injection/WillContain()
 	return list(/obj/item/reagent_containers/syringe/ld50_syringe/choral = 2)
 
 /obj/structure/closet/secure_closet/brig
 	name = "brig locker"
-	req_access = list(access_magi)
 	anchored = 1
 	var/id = null
 
@@ -202,7 +193,6 @@
 
 /obj/structure/closet/secure_closet/courtroom
 	name = "courtroom locker"
-	req_access = list(access_village)
 
 /obj/structure/closet/secure_closet/courtroom/WillContain()
 	return list(
@@ -216,7 +206,6 @@
 
 /obj/structure/closet/secure_closet/wall
 	name = "wall locker"
-	req_access = list(access_security)
 	icon_state = "wall-locker1"
 	density = 1
 	icon_closed = "wall-locker"
@@ -230,7 +219,6 @@
 
 /obj/structure/closet/secure_closet/lawyer
 	name = "internal affairs secure closet"
-	req_access = list(access_village)
 
 /obj/structure/closet/secure_closet/lawyer/WillContain()
 	return list(

@@ -1,4 +1,4 @@
-/obj/item/gun/launcher/rcl_rifle
+/obj/item/gun/launcher/rcl_rifle // SLOWDOWN IS APPLIED IN PARENT gun/launcher
         name = "Vraks pattern rocket launcher"
         desc = "A rocket launcher of Vraks pattern, being supplied to Krieg for combat against armoured targets."
         icon_state = "rcl_rifle-e"

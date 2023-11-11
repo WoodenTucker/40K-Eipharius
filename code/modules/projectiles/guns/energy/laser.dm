@@ -177,8 +177,7 @@
 	force = 13
 	one_hand_penalty = 1
 	fire_delay = 3
-	accuracy = 0.5
-	move_delay = 3
+	accuracy = 0
 	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -191,7 +190,16 @@
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
 		list(mode_name="3-round bursts", burst=3, fire_delay=5, burst_accuracy=list(0,0,0),       dispersion=null, automatic = 0, charge_cost=80),
+		list(mode_name="overcharge", fire_delay = 3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=140),
 		)
+
+/obj/item/gun/energy/las/lasgun/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.05
+	slowdown_per_slot[slot_wear_suit] = 0.1
+	slowdown_per_slot[slot_belt] = 0.1
+	slowdown_per_slot[slot_r_hand] = 0.2
+	slowdown_per_slot[slot_l_hand] = 0.2
 
 /obj/item/gun/energy/las/triplex
 	name = "Triplex Pattern Lasgun"
@@ -203,8 +211,7 @@
 	force = 13
 	one_hand_penalty = 1
 	fire_delay = 3
-	accuracy = 0.5
-	move_delay = 3
+	accuracy = 0
 	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -218,7 +225,7 @@
 		list(mode_name="semi-automatic", burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
 		list(mode_name="3-round bursts", burst=3, fire_delay=5, burst_accuracy=list(0,0,0),       dispersion=null, automatic = 0, charge_cost=80),
 		list(mode_name="5-round bursts", burst=5, fire_delay=5, burst_accuracy=list(0,0,0),       dispersion=null, automatic = 0, charge_cost=80),
-		list(mode_name="overcharge", burst=1, fire_delay = 3.5, burst_accuracy=(1), dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=160),
+		list(mode_name="overcharge", burst=1, fire_delay = 3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=140),
 		list(mode_name="undercharge", burst=1, fire_delay = 1, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/undercharge, charge_cost=40),
 		)
 
@@ -232,8 +239,7 @@
 	force = 12
 	one_hand_penalty = 1.5
 	fire_delay = 5
-	accuracy = 0.5
-	move_delay = 5
+	accuracy = 0
 	charge_cost = 130
 	wielded_item_state = "semir"
 	charge_meter = FALSE
@@ -250,17 +256,22 @@
 	w_class = ITEM_SIZE_LARGE
 	force = 15
 	one_hand_penalty = 1.2
-	fire_delay = 4.5
-	accuracy = 0.5
-	move_delay = 3.2
+	fire_delay = 4
+	accuracy = 0
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
-	projectile_type = /obj/item/projectile/energy/las/lasgun/lucius/overcharge
-	charge_cost = 200
+	projectile_type = /obj/item/projectile/energy/las/lasgun/lucius
+	charge_cost = 110
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "luscius-wielded"
-	sales_price = 50
+	sales_price = 40
+
+	firemodes = list(
+		list(mode_name="semi-automatic", fire_delay = 4, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=110),
+		list(mode_name="overcharge", fire_delay = 5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=200),
+		)
+
 
 /obj/item/gun/energy/las/lasgun/catachan
 	name = "Mark IV Lascarbine"
@@ -271,9 +282,8 @@
 	w_class = ITEM_SIZE_LARGE
 	force = 14
 	one_hand_penalty = 0.5
-	fire_delay = 2
-	accuracy = 0.7
-	move_delay = 2.5
+	fire_delay = 2.5
+	accuracy = -0.3
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -286,7 +296,16 @@
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=60),
 		list(mode_name="3-round bursts", burst=3, fire_delay=4, burst_accuracy=list(0,0,0),       dispersion=null, automatic = 0, charge_cost=60),
+		list(mode_name="overcharge",       burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=110),
 		)
+
+/obj/item/gun/energy/las/lasgun/catachan/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.05
+	slowdown_per_slot[slot_wear_suit] = 0.1
+	slowdown_per_slot[slot_belt] = 0.1
+	slowdown_per_slot[slot_r_hand] = 0.15
+	slowdown_per_slot[slot_l_hand] = 0.15
 
 /obj/item/gun/energy/las/lasgun/accatran
 	name = "Accatran Mark VI Pattern Lasgun"
@@ -298,8 +317,7 @@
 	force = 12
 	one_hand_penalty = 0.7
 	fire_delay = 1.5
-	accuracy = 0.6
-	move_delay = 3.2
+	accuracy = 0.1
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/pistol
@@ -322,12 +340,11 @@
 	icon_state = "hotshotgun"
 	item_state = "lascar"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
-	w_class = ITEM_SIZE_LARGE
-	force = 22
+	w_class = ITEM_SIZE_HUGE
+	force = 15
 	one_hand_penalty = 1.5
 	fire_delay = 3.1
-	accuracy = 0.6
-	move_delay = 4
+	accuracy = 0.1
 	self_recharge = 1
 	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -341,8 +358,47 @@
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=3.1, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=240),
-		list(mode_name="burst",       burst=3, fire_delay=5.2, burst_accuracy=list(1,0,0), dispersion=null, automatic = 0, charge_cost=240),
+		list(mode_name="burst",       burst=3, fire_delay=5.9, burst_accuracy=list(1,0,0), dispersion=null, automatic = 0, charge_cost=240),
 		) // Burst speed on hotshot is increased by -0.2(slightly faster then lasgun)
+
+/obj/item/gun/energy/las/hotshot/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.1
+	slowdown_per_slot[slot_wear_suit] = 0.2
+	slowdown_per_slot[slot_belt] = 0.2
+	slowdown_per_slot[slot_r_hand] = 0.25
+	slowdown_per_slot[slot_l_hand] = 0.25
+
+/obj/item/gun/energy/las/hotshot/masterwork
+	name = "Masterwork Hot-Shot Lasgun"
+	desc = "A masterwork hotshot Ryza Pattern crafted by a holy Tech Priest of Mars."
+	icon_state = "hotshotgun"
+	item_state = "lascar"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	force = 21
+	one_hand_penalty = 1.3
+	fire_delay = 2.9
+	accuracy = 0.2
+	self_recharge = 1
+	origin_tech = list(TECH_COMBAT = 6, TECH_MAGNET = 6)
+	charge_cost = 220
+	wielded_item_state = "lascar-wielded"
+	sales_price = 150
+
+
+	firemodes = list(
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2.9, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=220),
+		list(mode_name="burst",       burst=3, fire_delay=5.6, burst_accuracy=list(1,0,0), dispersion=null, automatic = 0, charge_cost=220),
+		) // Burst speed on hotshot is increased by -0.2(slightly faster then lasgun)
+
+/obj/item/gun/energy/las/hotshot/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.08
+	slowdown_per_slot[slot_wear_suit] = 0.18
+	slowdown_per_slot[slot_belt] = 0.18
+	slowdown_per_slot[slot_r_hand] = 0.22
+	slowdown_per_slot[slot_l_hand] = 0.22
 
 /obj/item/gun/energy/las/hotshot/krieg
 	name = "Type XIV Lasgun Heavy"
@@ -350,12 +406,11 @@
 	icon_state = "hotshot_krieg"
 	item_state = "hevluscius"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
-	w_class = ITEM_SIZE_LARGE
-	force = 25
+	w_class = ITEM_SIZE_HUGE
+	force = 17
 	one_hand_penalty = 1.7
 	fire_delay = 3.7
-	accuracy = 0.7
-	move_delay = 4
+	accuracy = 0.2
 	self_recharge = 3
 	recharge_time = 9
 	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
@@ -371,6 +426,30 @@
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=3.7, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=290),
 		list(mode_name="burst",       burst=3, fire_delay=7.2, burst_accuracy=list(1,0,0), dispersion=null, automatic = 0, charge_cost=290),
+		)
+
+/obj/item/gun/energy/las/hotshot/krieg/masterwork
+	name = "Type XIV Lasgun Heavy"
+	desc = "A masterwork hotshot Krieg Pattern crafted by a holy Tech Priest of Mars."
+	icon_state = "hotshot_krieg"
+	item_state = "hevluscius"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	force = 23
+	one_hand_penalty = 1.5
+	fire_delay = 3.5
+	accuracy = 0.3
+	self_recharge = 3
+	recharge_time = 9
+	origin_tech = list(TECH_COMBAT = 6, TECH_MAGNET = 6)
+	charge_cost = 270
+	wielded_item_state = "hevluscius-wielded"
+
+	sales_price = 160
+
+	firemodes = list(
+		list(mode_name="semi-automatic",       burst=1, fire_delay=3.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=270),
+		list(mode_name="burst",       burst=3, fire_delay=6.8, burst_accuracy=list(1,0,0), dispersion=null, automatic = 0, charge_cost=270),
 		)
 
 
@@ -396,9 +475,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	icon_state = "laspistol"
 	slot_flags = SLOT_BELT|SLOT_S_STORE
 	w_class = ITEM_SIZE_NORMAL
-	force = 8
-	accuracy = 0
-	move_delay = 2.5
+	force = 11
+	accuracy = -0.5
 	fire_delay = 1.85
 	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -410,6 +488,13 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	sales_price = 10
 	wielded_item_state = "laspistol"
 
+/obj/item/gun/energy/las/laspistol/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.05
+	slowdown_per_slot[slot_wear_suit] = 0.05
+	slowdown_per_slot[slot_belt] = 0.05
+	slowdown_per_slot[slot_r_hand] = 0.1
+	slowdown_per_slot[slot_l_hand] = 0.1
 
 /obj/item/gun/energy/las/laspistol/accatran
 	name = "Accatran MK II Pattern Laspistol"
@@ -419,9 +504,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	slot_flags = SLOT_BELT|SLOT_S_STORE
 	w_class = ITEM_SIZE_NORMAL
 	force = 10
-	accuracy = 0
+	accuracy = -0.5
 	fire_delay = 1.2
-	move_delay = 2.5
 	charge_cost = 80
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
@@ -433,7 +517,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	desc = "It is magnificant in handling and detail. Larger in size than most las pistols, yet more lightweight and extremely efficient in energy usage. All the luxurious makings of a weapon from Terra itself."
 	icon_state = "lordlaspistol"
 	charge_meter = FALSE //must have, due to having only 1 item state.
-	accuracy = 1
+	accuracy = 0.5
 	fire_delay = 1.5
 	charge_cost = 70
 	firemodes = list(
@@ -458,7 +542,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	name = "Kantrael MG Laspistol"
 	desc = "Kantrael MG is a Heavy Cadian Laspistol used by their shock regiments' NCOs. It is slow firing but pacts a punch for a laspistol. It is also possible to overcharge."
 	icon_state = "laspistol"
-	accuracy = 0.4
+	accuracy = 0
 	charge_cost = 80
 	fire_delay = 1.6
 	cell_type = /obj/item/cell/lasgun
@@ -483,8 +567,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	icon_state = "luciuspistol"
 	force = 10
 	/* one_hand_penalty = 0 */
-	move_delay = 1.5
-	accuracy = 0.4
+	accuracy = 0
 	charge_cost = 100
 	fire_delay = 2
 	cell_type = /obj/item/cell/lasgun
@@ -507,8 +590,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_LARGE
 	force = 15
 	one_hand_penalty = 2.2
-	accuracy = 1
-	move_delay = 5
+	accuracy = 0.5
 	origin_tech = list(TECH_COMBAT = 7, TECH_MAGNET = 7)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/ion
@@ -516,10 +598,19 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	ammoType = /obj/item/cell/ion
 	wielded_item_state = "ionriflet-wielded"
 	sales_price = 100
+	fire_delay = 14
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=8, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=14, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
+
+/obj/item/gun/energy/pulse/ionrifle/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.2
+	slowdown_per_slot[slot_wear_suit] = 0.3
+	slowdown_per_slot[slot_belt] = 0.3
+	slowdown_per_slot[slot_r_hand] = 0.45
+	slowdown_per_slot[slot_l_hand] = 0.45
 
 /obj/item/gun/energy/pulse/pulsepistol
 	name = "pulse pistol"
@@ -530,7 +621,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_NORMAL
 	force = 8
 	accuracy = 0.5
-	move_delay = 2.5
 	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 5)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/pulsepistol
@@ -554,7 +644,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	force = 15
 	one_hand_penalty = 1.8
 	accuracy = 0.5
-	move_delay = 4
 	origin_tech = list(TECH_COMBAT = 6, TECH_MAGNET = 6)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
@@ -569,6 +658,14 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		)
 
 
+/obj/item/gun/energy/pulse/pulserifle/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.05
+	slowdown_per_slot[slot_wear_suit] = 0.15
+	slowdown_per_slot[slot_belt] = 0.15
+	slowdown_per_slot[slot_r_hand] = 0.3
+	slowdown_per_slot[slot_l_hand] = 0.3
+
 /obj/item/gun/energy/pulse/plasma
 	name = "plasma"
 	desc = "If you see this complain that staff used the wrong object"
@@ -579,10 +676,9 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_LARGE
 	force = 15
 	one_hand_penalty = 3 //heavy af fam
-	accuracy = 0
+	accuracy = -0.5
 	self_recharge = 1
-	recharge_time = 14 // With a fire delay of 19. You fire every 2.3 seconds. 1 recharge time is 1 second. Keep recharges to 1/6 and a bit per shot. We want people to NEED to reload in combat.
-	move_delay = 6 //dont want speedy bois
+	recharge_time = 14 // With a fire delay of 19. You fire every 2.3 seconds. 1 recharge time is 1 second. Keep recharges to 1/6 and a bit per shot. We want people to NEED to reload in combat. //dont want speedy bois
 	fire_delay = 15
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -592,8 +688,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	charge_cost = 1800
 	wielded_item_state = "ionrifle-wielded"
 	var/plasma_overheat = 1 // Keeping track on how overheated the gun is
-	var/plasma_overheat_decay = 2 // The cooling of the gun per tick
-	var/plasma_overheat_max = 190 // When the gun exploads
+	var/plasma_overheat_decay = 4 // The cooling of the gun per tick
+	var/plasma_overheat_max = 250 // When the gun exploads
 	Fire(atom/target, mob/living/user)
 		if(plasma_overheat >= 50)
 			to_chat(user, "THE BARREL STARTS TO GLOW.")
@@ -611,7 +707,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 			plasma_overheat = 0 // keepin the gun overheat above -1
 			return
 		if(plasma_overheat > plasma_overheat_max)
-			explosion(src.loc, 0, 1, 2, 3) // explodes u, dealing a lot of damage, still (a little) chance to survive
+			explosion(src.loc, 0, 0, 0, 1) // explodes u, dealing a lot of damage, still (a little) chance to survive
 	//firemodes = list(
 		//list(mode_name="semi-charge", burst=1, fire_delay=19, burst_accuracy=null, dispersion=null, automatic = 0),
 		//list(mode_name="overcharge", burst=1, fire_delay=19, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/pulse/pulserifle, charge_cost=150),
@@ -627,15 +723,27 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_HUGE
 	force = 12
 	one_hand_penalty = 2 //heavy af fam
-	accuracy = 0.8
-	fire_delay = 18
-	move_delay = 6 //dont want speedy bois
+	accuracy = 0.1
+	fire_delay = 16 //dont want speedy bois
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmarifle
-	charge_cost = 700
+	charge_cost = 600
 	wielded_item_state = "plasmarifle-wielded"
-	sales_price = 115 //funilly enough, plasma rifles are considered more common than plasma pistols in the imperial market, even then, they arent very common
+	sales_price = 60 //funilly enough, plasma rifles are considered more common than plasma pistols in the imperial market, even then, they arent very common
+
+	firemodes = list(
+		list(mode_name="ATAP", fire_delay=16, projectile_type=/obj/item/projectile/energy/pulse/plasmarifle, charge_cost=600),
+		list(mode_name="HEDP", fire_delay = 36, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=2000),
+		)
+
+/obj/item/gun/energy/pulse/plasma/rifle/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.1
+	slowdown_per_slot[slot_wear_suit] = 0.2
+	slowdown_per_slot[slot_belt] = 0.2
+	slowdown_per_slot[slot_r_hand] = 0.41
+	slowdown_per_slot[slot_l_hand] = 0.41
 
 /obj/item/gun/energy/pulse/plasma/pistol
 	name = "plasma pistol"
@@ -648,14 +756,51 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	force = 10
 	one_hand_penalty = 1.1
 	fire_delay = 18.5
-	accuracy = 0.5
-	move_delay = 4 //it a pistol, but giga cool plasma
+	accuracy = -0.5 //it a pistol, but giga cool plasma
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	charge_cost = 550
 	wielded_item_state = "plasmapistol"
-	sales_price = 120 //made with adamantium
+	sales_price = 80 //made with adamantium
+
+	firemodes = list(
+		list(mode_name="ATAP", fire_delay=18.5, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol, charge_cost=550),
+		list(mode_name="HEDP", fire_delay = 47, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=2200),
+		)
+
+/obj/item/gun/energy/pulse/plasma/pistol/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.05
+	slowdown_per_slot[slot_wear_suit] = 0.1
+	slowdown_per_slot[slot_belt] = 0.1
+	slowdown_per_slot[slot_r_hand] = 0.3
+	slowdown_per_slot[slot_l_hand] = 0.3
+
+/obj/item/gun/energy/pulse/plasma/pistol/astartes
+	name = "astartes plasma pistol"
+	desc = "A plasma pistol. Great for dealing with threats swiftly. It has an overheat scale and on the end of it is written 'Boom!'."
+	icon = 'icons/obj/weapons/gun/energy.dmi'
+	icon_state = "ppistol"
+	item_state = "plasmapistol"
+	slot_flags = SLOT_BACK|SLOT_S_STORE|SLOT_BELT
+	w_class = ITEM_SIZE_LARGE
+	force = 10
+	one_hand_penalty = 1
+	str_requirement = 20
+	fire_delay = 14.5
+	accuracy = 0.3 //it a pistol, but giga cool plasma
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
+	charge_cost = 350
+	wielded_item_state = "plasmapistol"
+	sales_price = 0 
+	
+	firemodes = list(
+		list(mode_name="ATAP", fire_delay=14.5, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol, charge_cost=350),
+		list(mode_name="HEDP", fire_delay = 36.5, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=1700),
+		)
 
 /obj/item/gun/energy/pulse/plasma/pistol/chaos // want chaos pistol better than normal. as chaos will be worsely equipped, they need their shining weapons to push up the average
 	name = "Chaotic plasma pistol"
@@ -666,8 +811,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	force = 12
 	one_hand_penalty = 1
 	fire_delay = 17.5
-	accuracy = 0.5
-	move_delay = 3.5 //it a pistol
+	accuracy = -0.2 //it a pistol
 	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
@@ -675,6 +819,11 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	charge_meter = FALSE //no ammo icon state currently invisible
 	wielded_item_state = "pulse_pistol"
 	sales_price = 79
+
+	firemodes = list(
+		list(mode_name="ATAP", fire_delay=17.5, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol, charge_cost=600),
+		list(mode_name="HEDP", fire_delay = 45, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=2300),
+		)
 
 /obj/item/gun/energy/pulse/plasma/pistol/mechanicus
 	name = "Ryza Pattern Plasma Pistol"
@@ -684,17 +833,20 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	item_state = "pulse_pistol"
 	force = 10
 	one_hand_penalty = 0.8 //until plasma is better balanced, wield this fancy one.
-	accuracy = 1.1
-	fire_delay = 17
-	move_delay = 3.5
+	accuracy = 0
+	fire_delay = 17.5
 	recharge_time = 10
 	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	charge_cost = 500
 	wielded_item_state = "pulse_pistol"
-	sales_price = 140 //blessed by the omnissiah and made with adamantium
+	sales_price = 100 //blessed by the omnissiah and made with adamantium
 
+	firemodes = list(
+		list(mode_name="ATAP", fire_delay=17, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol, charge_cost=500),
+		list(mode_name="HEDP", fire_delay = 44, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=2100),
+		)
 
 /obj/item/gun/energy/pulse/plasma/pistol/toaster
 	name = "seolite plasma pistol"
@@ -706,16 +858,20 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_NORMAL
 	force = 10
 	one_hand_penalty = 0.6 //change later?
-	accuracy = 1.2
-	fire_delay = 16
-	move_delay = 3 //it a pistol, but giga cool plasma
+	accuracy = 0.1
+	fire_delay = 16 //it a pistol, but giga cool plasma
 	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 5)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	charge_cost = 450
 	wielded_item_state = "pulse_carbine"
-	sales_price = 100
+	sales_price = 120
 	charge_meter = FALSE
+
+	firemodes = list(
+		list(mode_name="ATAP", fire_delay=16, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol, charge_cost=450),
+		list(mode_name="HEDP", fire_delay = 43, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=2000),
+		)
 
 /obj/item/gun/energy/pulse/plasma/pistol/glock
 	name = "archeotech plasma pistol"
@@ -727,16 +883,20 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_NORMAL
 	force = 10
 	one_hand_penalty = 0.7 //change later?
-	accuracy = 1.1
-	fire_delay = 17
-	move_delay = 2 //it a pistol, but giga cool plasma
+	accuracy = 0
+	fire_delay = 17 //it a pistol, but giga cool plasma
 	self_recharge = 9 // very good
 	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 5)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	charge_cost = 600
 	wielded_item_state = "pulse_pistol"
-	sales_price = 160
+	sales_price = 110
 	charge_meter = FALSE
+
+	firemodes = list(
+		list(mode_name="ATAP", fire_delay=17, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol, charge_cost=600),
+		list(mode_name="HEDP", fire_delay = 44, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=2100),
+		)
 
 
 // tinkered lasguns
@@ -752,7 +912,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	force = 12
 	one_hand_penalty = 1.5
 	accuracy = 0.5
-	move_delay = 2.5
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -774,7 +933,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	armor_penetration = 15
 	force = 12
 	one_hand_penalty = 1.8
-	move_delay = 2.5
 	fire_delay = 3.5
 	charge_cost = 110
 	sales_price = 35
@@ -796,7 +954,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	armor_penetration = 8
 	one_hand_penalty = 1.5
 	accuracy = 0
-	move_delay = 2.5
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -819,7 +976,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	one_hand_penalty = 1.2
 	charge_cost = 80
 	fire_delay = 2.3
-	move_delay = 2.5
 	sales_price = 35
 
 	firemodes = list(

@@ -57,7 +57,7 @@
 	item_state = "telebaton_0"
 	slot_flags = SLOT_BELT
 	w_class = ITEM_SIZE_SMALL
-	force = 5
+	force = 15
 	var/on = 0
 
 
@@ -70,7 +70,7 @@
 		icon_state = "telebaton_1"
 		item_state = "nullrod"//was teletbaton_1 but guess what... that icon doesn't exist
 		w_class = ITEM_SIZE_NORMAL
-		force = 24//quite robust
+		force = 26//quite robust
 		attack_verb = list("smacked", "struck", "slapped")
 	else
 		user.visible_message("<span class='notice'>\The [user] collapses their telescopic baton.</span>",\

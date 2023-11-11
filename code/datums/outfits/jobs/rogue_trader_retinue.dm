@@ -7,16 +7,15 @@
 	uniform = /obj/item/clothing/under/rank/roguetrader
 	belt = /obj/item/gun/energy/las/laspistol/lord
 	back = /obj/item/storage/backpack/satchel/warfare
-	l_ear = /obj/item/device/radio/headset/headset_service
+	l_ear = /obj/item/device/radio/headset/ert
 	shoes = /obj/item/clothing/shoes/jackboots/noble
+	r_pocket = /obj/item/storage/box/coin
 	id_type = /obj/item/card/id/gold
 	pda_type = null
 	pda_slot = null
 	backpack_contents = list(
 	/obj/item/storage/box/ids = 1,
 	/obj/item/stack/thrones/ten = 1,
-	/obj/item/stack/thrones2/twenty = 1,
-	/obj/item/stack/thrones3/twenty = 1,
 	/obj/item/reagent_containers/food/snacks/bigbiteburger
 )
 
@@ -32,8 +31,9 @@
 	glasses = /obj/item/clothing/glasses/cadian
 	id = /obj/item/card/id/dog_tag/guardsman
 	l_ear = /obj/item/device/radio/headset/heads/hos
-	r_ear = /obj/item/device/flashlight/lantern
+	r_ear = /obj/item/device/flashlight/
 	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/storage/box/coin
 	r_pocket = null
 	suit_store = /obj/item/gun/energy/las/hotshot
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -51,9 +51,27 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = /obj/item/device/radio/headset/headset_service
 	l_hand = /obj/item/toy/katana/strong
+	r_pocket = /obj/item/storage/box/coin
 	suit_store = /obj/item/gun/energy/las/lasgun
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/stack/thrones3/ten = 1)
+
+/decl/hierarchy/outfit/job/cargo/noble
+	name = OUTFIT_JOB_NAME("Noble")
+	uniform = /obj/item/clothing/under/rank/principalagent
+	suit = null
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	id_type = /obj/item/card/id/key/super/daemon
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	back = /obj/item/storage/backpack/satchel/warfare
+	l_ear = /obj/item/device/radio/headset/ert // work with gangers.
+	l_hand = null
+	r_pocket = /obj/item/storage/box/coin
+	suit_store = null
+	backpack_contents = list(
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/stack/thrones/ten = 1,)

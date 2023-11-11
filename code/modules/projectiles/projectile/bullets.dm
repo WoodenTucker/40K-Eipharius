@@ -111,7 +111,7 @@
 	icon_state = "shot" //TODO: would be nice to have it's own icon state
 	range = 10 	//These disappear after a short distance.
 	var/pellets = 4			//number of pellets
-	var/range_step = 2		//projectile will lose a fragment each time it travels this distance. Can be a non-integer.
+	var/range_step = 3		//projectile will lose a fragment each time it travels this distance. Can be a non-integer.
 	var/base_spread = 40	//lower means the pellets spread more across body parts. If zero then this is considered a shrapnel explosion instead of a shrapnel cone
 	var/spread_step = 10	//higher means the pellets spread more across body parts with distance
 	light_power = 9 //No tracers.
@@ -214,55 +214,55 @@
 
 /obj/item/projectile/bullet/pistol/revolver
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
-	damage = 44 // .357
+	damage = 54 // .357
 	armor_penetration = 15
 
 /obj/item/projectile/bullet/pistol/revolver/ap
-	damage = 48
+	damage = 58
 	armor_penetration = 30
 
 /obj/item/projectile/bullet/pistol/revolver/kp
-	damage = 48
+	damage = 58
 	armor_penetration = 40
 	penetrating = 1
 
 /obj/item/projectile/bullet/pistol/revolver/ms
-	damage = 58
+	damage = 68
 	armor_penetration = 0
 
 /obj/item/projectile/bullet/pistol/medium/revolver
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
-	damage = 44 //.44 magnum or something
+	damage = 54 //.44 magnum or something
 	armor_penetration = 15
 
 /obj/item/projectile/bullet/pistol/medium/revolver/ap
-	damage = 48
+	damage = 58
 	armor_penetration = 30
 
 /obj/item/projectile/bullet/pistol/medium/revolver/kp
-	damage = 48
+	damage = 58
 	armor_penetration = 40
 	penetrating = 1
 
 /obj/item/projectile/bullet/pistol/medium/revolver/ms
-	damage = 58
+	damage = 68
 	armor_penetration = 0
 
 /obj/item/projectile/bullet/pistol/strong/revolver
-	damage = 48
+	damage = 58
 	armor_penetration = 15
 
 /obj/item/projectile/bullet/pistol/strong/revolver/ap
-	damage = 52
+	damage = 62
 	armor_penetration = 30
 
 /obj/item/projectile/bullet/pistol/strong/revolver/kp
-	damage = 52
+	damage = 62
 	armor_penetration = 40
 	penetrating = 1
 
 /obj/item/projectile/bullet/pistol/strong/revolver/ms
-	damage = 62
+	damage = 72
 	armor_penetration = 0
 
 /obj/item/projectile/bullet/pistol/rubber //"rubber" bullets
@@ -374,14 +374,14 @@
 /obj/item/projectile/bullet/rifle/a145
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	damage = 130
-	armor_penetration = 20
+	armor_penetration = 40
 	//hitscan = 1 //so the PTR isn't useless as a sniper weapon
 	penetration_modifier = 1
 	penetrating = 2
 
 /obj/item/projectile/bullet/rifle/a145/apds
-	damage = 100
-	armor_penetration = 45
+	damage = 120
+	armor_penetration = 65
 	penetration_modifier = 1
 	penetrating = 3
 
@@ -389,17 +389,17 @@
 
 /obj/item/projectile/bullet/suffocationbullet//How does this even work?
 	name = "CO2 bullet"
-	damage = 55
+	damage = 65
 	damage_type = OXY
 
 /obj/item/projectile/bullet/cyanideround
 	name = "poison bullet"
-	damage = 55
+	damage = 65
 	damage_type = TOX
 
 /obj/item/projectile/bullet/burstbullet
 	name = "exploding bullet"
-	damage = 35
+	damage = 100
 	embed = 0
 	edge = 1
 
@@ -532,7 +532,14 @@
 	armor_penetration = 50
 	penetration_modifier = 2
 	
-	
+// XENOS
+/obj/item/projectile/bullet/rifle/pmag
+	fire_sound = 'sound/weapons/gunshot/needler.ogg'
+	icon_state = "pulse"
+	damage = 55
+	damage_type = BRUTE
+	armor_penetration = 30
+	penetration_modifier = 1
 	
 //MECHANICUS
 /obj/item/projectile/bullet/rifle/galvanic
@@ -614,12 +621,12 @@
 	icon_state = "lasbolt"
 	damage_type = BURN
 	penetration_modifier = 1
-	armor_penetration = 70
-	damage = 10 //believe me, this is kinda of balanced.
+	armor_penetration = 60
+	damage = 40
 	pellets = 1
-	range_step = 2 //not sure what these two mean, but lets go with it!
+	range_step = 4 // stop fucking with my GOT DAMN CODE. DONT TOUCH IT IF YOU DONT KNOW WHAT IT DOES. Next mofucka who breaks mah game is getting perma'd from the Github.
 	spread_step = 2
-	range = 12
+	range = 16
 
 /obj/item/projectile/bullet/rifle/radcarbine
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
@@ -675,7 +682,7 @@
 /obj/item/projectile/bullet/ork
 	name = "scrap"
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
-	damage = 30
+	damage = 35
 
 /*
 
@@ -727,8 +734,6 @@
 	armor_penetration = 100
 	penetration_modifier = 5
 	
-
-/*
 /obj/item/projectile/bullet/rifle/exitus
 	name = "bullet"
 	icon_state = "bullet"
@@ -748,12 +753,12 @@
 	icon_state = "bullet"
 	damage = 25 //Admin only spawn for now.
 	damage_type = BRUTE
- // commented until no more errors
+
 /obj/item/projectile/bullet/rifle/exitus/explosive/on_hit(var/atom/target)
 	if(istype(target, /mob/living/carbon/human))
-	var/mob/living/carbon/human/M = target
-	M.gib()
-	qdel(M)
+		var/mob/living/carbon/human/M = target
+		M.gib()
+		qdel(M)
 
 /obj/item/projectile/bullet/rifle/exitus/toxin
 	damage_type = TOX
@@ -772,4 +777,4 @@
 		if(H.isChild())
 			var/mob/living/carbon/human/F = firer
 			F.unlock_achievement(new/datum/achievement/child_fire())
-*/
+

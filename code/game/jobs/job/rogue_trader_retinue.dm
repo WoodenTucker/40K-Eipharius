@@ -1,3 +1,6 @@
+// NOBLE HOUSE
+
+
 //  Trader House
 
 /datum/job/roguetrader
@@ -26,18 +29,19 @@
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8
-	cultist_chance = 40
+	cultist_chance = 20
 
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Rogue Trader [current_name]")
+		H.fully_replace_character_name("[current_name]") // No title testing. 
 		H.add_stats(rand(14,18), rand(14,18), rand(14,18), rand(14,18))
 		H.add_skills(rand(6,10),rand(6,10),rand(5,6),rand(1,8),rand(1,8)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.witchblood()
 		H.warfare_faction = IMPERIUM
 		H.verbs += list(/mob/living/carbon/human/proc/hire)
@@ -74,7 +78,7 @@
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8
-	cultist_chance = 20
+	cultist_chance = 5
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -85,6 +89,7 @@
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>Three concepts hold primacy in Vessorine clan society to the exclusion of nearly all else: property, warcraft, and currency. The scarcity of resources and rocky landscape of Vessor made the ownership of arable land and grazing beasts one of the most important aspects of their primitive society. The populace grouped into clans for increased security and resources, and though the leader of a clan holds the title of Clansire, the term refers neither to patrilineal nor matrilineal descent. From an early age, typically after First Bonding, both male and female children begin training as janissaries. They undergo training to enhance their strength, stamina, and agility, sometimes doing so with only the food and water they can find in the wilderness. They also learn the three primary Vessorine battle arts: open-hand, blade, and gun lore. By the time they participate in their first contract, an ascension ritual called Second Bonding, they are formidable warriors equal to any in the Imperium. In preparation for Second Bonding, janissaries receive their first repatriation tattoo, which declares the bond a clan will pay for the return of their soldier if captured.</font></b></span>")
 
@@ -92,13 +97,13 @@
 	title = "Xeno Mercenary"
 	department_flag = SUP
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "The Rogue Trader"
 	selection_color = "#315dd4"
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 5
+	cultist_chance = 0
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -108,6 +113,7 @@
 		H.add_skills(rand(10,12),rand(9,10),rand(3,5),5,rand(2,4)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.assign_random_quirk()
 		H.witchblood()
 		H.stat = UNCONSCIOUS
@@ -132,7 +138,7 @@ Mercenary System
 	if(src.stat == DEAD)
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
-
+	src.verbs -= list(/mob/living/carbon/human/proc/mercenaryclass)
 	var/fates = list("Kroot Shaper", "Ork Freeboota", /*"Eldar Corsair"*/)
 
 

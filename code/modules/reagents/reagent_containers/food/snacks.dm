@@ -677,11 +677,11 @@
 
 /obj/item/reagent_containers/food/snacks/bearmeat
 	name = "bear meat"
-	desc = "A very manly slab of meat, don't eat it raw!"
+	desc = "A prime slab of meat, considered a delicacy by many imperial nobles. The trader will want this."
 	icon_state = "bearmeat"
 	filling_color = "#db0000"
 	center_of_mass = "x=16;y=10"
-	sales_price = 5
+	sales_price = 25
 
 	New()
 		..()
@@ -691,11 +691,11 @@
 
 /obj/item/reagent_containers/food/snacks/shaframeat
 	name = "shafra meat"
-	desc = "A surprisingly tasty cut of lean meat, don't eat it raw!"
+	desc = "A prime slab of meat, considered a delicacy by many imperial nobles. The trader will want this."
 	icon_state = "bearmeat"
 	filling_color = "#08acf8cc"
 	center_of_mass = "x=16;y=10"
-	sales_price = 6
+	sales_price = 25
 
 	New()
 		..()
@@ -709,7 +709,7 @@
 	icon_state = "bearmeat"
 	filling_color = "#08acf8cc"
 	center_of_mass = "x=16;y=10"
-	sales_price = 15
+	sales_price = 30
 
 	New()
 		..()
@@ -961,12 +961,12 @@
 	trash = /obj/item/trash/plate
 	filling_color = "#fff9a8"
 	center_of_mass = "x=16;y=13"
-
-	//var/herp = 0
+	nutriment_desc = list("egg" = 3, "cheese" = 3)
+	nutriment_amt = 2
 	New()
 		..()
-		reagents.add_reagent(/datum/reagent/nutriment/protein, 8)
-		bitesize = 1
+		reagents.add_reagent(/datum/reagent/nutriment/protein, 2)
+		bitesize = 2
 
 /obj/item/reagent_containers/food/snacks/muffin
 	name = "Muffin"
@@ -1978,6 +1978,11 @@
 	New()
 		..()
 		bitesize = 2
+
+/obj/item/reagent_containers/food/snacks/ricepudding/flake
+	name = "Khorne Flakes"
+	desc = "The forbidden breakfast..."
+	nutriment_amt = 8
 
 /obj/item/reagent_containers/food/snacks/pastatomato
 	name = "Spaghetti"

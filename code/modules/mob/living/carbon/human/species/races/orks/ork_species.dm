@@ -14,6 +14,8 @@
 	strength = STR_HIGH
 //	sexybits_location = BP_GROIN
 	species_flags = SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SLIP
+	brute_mod = 0.85
+	burn_mod = 0.85 
 	base_auras = list(
 		/obj/aura/regenerating/human/ork
 		)
@@ -35,7 +37,7 @@
 		H.h_style = "Bald" //never seen an ork wif hair
 	if(H.f_style)//orks dont have beards
 		H.f_style = "shaved"
-			H.update_eyes()	//hacky fix, i don't care and i'll never ever care (this fixs the weird grey vision shit when placing people in a new mob)
+		H.update_eyes()	//hacky fix, i don't care and i'll never ever care (this fixs the weird grey vision shit when placing people in a new mob)
 	return ..()
 
 
@@ -69,6 +71,7 @@
 	. = ..()
 	fully_replace_character_name(random_ork_name(src.gender))
 	warfare_faction = ORKZ
+	faction = "ORKZ"
 	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/ork)
 	outfit.equip(src)
 

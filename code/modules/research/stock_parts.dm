@@ -109,7 +109,15 @@
 	desc = "A tiny little manipulator used in the construction of certain devices."
 	icon_state = "pico_mani"
 	origin_tech = list(TECH_MATERIAL = 3, TECH_DATA = 2)
-	rating = 3
+	rating = 4
+	matter = list(DEFAULT_WALL_MATERIAL = 30)
+	
+/obj/item/stock_parts/manipulator/femto
+	name = "femto-manipulator"
+	desc = "A tiny little manipulator used in the construction of certain devices."
+	icon_state = "femto_mani"
+	origin_tech = list(TECH_MATERIAL = 4, TECH_DATA = 3)
+	rating = 6
 	matter = list(DEFAULT_WALL_MATERIAL = 30)
 
 /obj/item/stock_parts/micro_laser/ultra
@@ -254,7 +262,7 @@
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "datadisk6"
 	origin_tech = list(TECH_MATERIAL = 10, TECH_ENGINEERING = 10)
-	sales_price = 140
+	sales_price = 0
 
 /obj/item/rnd/power3
 	name = "strange chemical canister"
@@ -273,7 +281,7 @@
 	sales_price = 25
 
 /obj/item/rnd/power8
-	name = "plasma drive schematics schematics"
+	name = "plasma drive schematics"
 	desc = "Forgotten starship plasma drive schematics produced by the AdMech from a now forgotten world... The Mechanicus will want to study it."
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "datadisk2"
@@ -286,7 +294,7 @@
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "datadisk6"
 	origin_tech = list(TECH_POWER = 10, TECH_PHORON = 10)
-	sales_price = 165
+	sales_price = 0
 
 
 /obj/item/rnd/biospace3
@@ -305,6 +313,30 @@
 	origin_tech = list(TECH_BIO = 6, TECH_BLUESPACE = 6)
 	sales_price = 20
 
+/obj/item/rnd/biospacesample1
+	name = "tissue sample"
+	desc = "A vial of strange liquid storing organic material."
+	icon = 'icons/obj/xenoarchaeology.dmi'
+	icon_state = "box"
+	origin_tech = list(TECH_BIO = 4, TECH_PHORON = 2, TECH_ILLEGAL = 2)
+	sales_price = 10
+
+/obj/item/rnd/biospacesample2
+	name = "rare tissue sample"
+	desc = "A vial of strange liquid storing organic material."
+	icon = 'icons/obj/xenoarchaeology.dmi'
+	icon_state = "box"
+	origin_tech = list(TECH_BIO = 5, TECH_PHORON = 4, TECH_ILLEGAL = 3)
+	sales_price = 10
+
+/obj/item/rnd/biospacesample3
+	name = "exotic tissue sample"
+	desc = "A vial of strange liquid storing organic material."
+	icon = 'icons/obj/xenoarchaeology.dmi'
+	icon_state = "box"
+	origin_tech = list(TECH_BIO = 8, TECH_PHORON = 7, TECH_ILLEGAL = 6)
+	sales_price = 10
+
 /obj/item/rnd/biospace8
 	name = "xenos autodoc schematics"
 	desc = "Schematics to construct a medical autodoc used by the seolite... The Mechanicus will want to study it."
@@ -319,8 +351,7 @@
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "datadisk6"
 	origin_tech = list(TECH_BIO = 10, TECH_BLUESPACE = 10)
-	sales_price = 120
-
+	sales_price = 0
 
 /obj/item/rnd/combat3
 	name = "seolite firing mechanism"
@@ -352,12 +383,12 @@
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "datadisk5"
 	origin_tech = list(TECH_COMBAT = 10, TECH_MAGNET = 10)
-	sales_price = 170
+	sales_price = 0
 
 
 /obj/item/rnd/illegal3
 	name = "xenos puzzle box"
-	desc = "A seolite firing mechanism used in slug firing projectile weapons. The Mechanicus will want to study it."
+	desc = "A silly little puzzle box! The Mechanicus will want to study it."
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	icon_state = "ano10"
 	origin_tech = list(TECH_DATA = 4, TECH_ILLEGAL = 4)
@@ -381,8 +412,223 @@
 
 /obj/item/rnd/illegal10
 	name = "Glowing STC Fragment"
-	desc = "An STC Fragment with designs for a chaos artifact... The Mechanicus will want to study it."
+	desc = "An STC Fragment with designs for an artifact... The Mechanicus will want to study it."
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "datadisk0"
 	origin_tech = list(TECH_DATA = 10, TECH_ILLEGAL = 10)
-	sales_price = 140
+	sales_price = 60
+
+/*
+/// EXPLORATION REWARDS /// 
+Added items that will be random in most ruins/cave areas, they range from packages, reports, lost clothing rolls, to ingots of expensive minerals
+and the like.
+
+These items are meant to be randomized rewards that people can find on the caves & ruins, this is to balance
+issues such as:
+
+- Bad loot drops (Fighting a cave with 7 mobs to find a lasgun clip)
+- Increase actual economy (No longer the RT would have to buy shit serf clothes, shitty pistols)
+- Allows the RT to gain certain wealth to sell more of his products and not being solely a Fallout-style shop owner which only buys guns, and armors.
+
+This is more RPG-style and i honestly belive this is more fresh and contributes to a more healthy dungeon/exploration style of gameplay.
+
+*/
+
+
+/obj/item/exploration_loot
+	name = "geology report"
+	desc = "A very rough report of a common mineral deposit on Elipharius,the rogue trader would be interested on buying this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "giftpaper"
+	item_state = "giftpaper"
+	w_class = ITEM_SIZE_SMALL
+	sales_price = 15
+
+/obj/item/exploration_loot/map
+	name = "rookie treasure map"
+	desc = "Someone's poor writing and drawing of what appears to be the location of an stash, the rogue trader would be interested on buying this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "oldmap"
+	item_state = "oldmap"
+	w_class = ITEM_SIZE_SMALL
+	sales_price = 52
+
+/obj/item/exploration_loot/cloth_roll
+	name = "cloth roll"
+	desc = "Just some cloth simply rolled and ready to be sold to merchants,the rogue trader would be interested on buying this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "roll"
+	item_state = "roll"
+	w_class = ITEM_SIZE_SMALL
+	sales_price = 5
+
+/obj/item/exploration_loot/sealed_enve
+	name = "sealed envelope"
+	desc = "A sealed envelope, it could be just a note from a guardsman to their mother, or perhaps a more shady discussion,the rogue trader would be interested on buying this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "sealed_envelope"
+	item_state = "sealed_envelope"
+	w_class = ITEM_SIZE_SMALL
+	sales_price = 5
+
+/obj/item/exploration_loot/package
+	name = "unknown package"
+	desc = "This package's destination is possibly lost judging by the missing label, it sounds like there's some mechanical components, rocks or something else inside,the rogue trader would be interested on buying this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "package"
+	item_state = "package"
+	w_class = ITEM_SIZE_LARGE
+	sales_price = 15
+
+/obj/item/exploration_loot/drugs
+	name = "exotic drug cocktail"
+	desc = "A bottle with some unknown liquid, the label seems to imply it's some sort of cocktail of stimulants,the rogue trader would be interested on buying this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "drugs"
+	item_state = "drugs"
+	w_class = ITEM_SIZE_SMALL
+	sales_price = 15
+
+/obj/item/exploration_loot/guard_diary
+	name = "combat diary"
+	desc = "The diary of some hardened guardsmen,it seems to have been through a LOT of battles,the rogue trader would be interested on buying this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "diary"
+	item_state = "diary"
+	w_class = ITEM_SIZE_SMALL
+	sales_price = 11
+
+/obj/item/exploration_loot/map
+	name = "detailed underground map"
+	desc = "Someone had a 'fun' time going through the depths of Elipharius, this map details a few routes and locations of interest,the rogue trader would be interested on buying this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "map"
+	item_state = "map"
+	w_class = ITEM_SIZE_SMALL
+	sales_price = 58
+
+/obj/item/exploration_loot/case
+	name = "unknown case"
+	desc = "An sturdy red metalic case, the contents are unknown but it seems to be of fine quality,the rogue trader would be interested on buying this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "case"
+	item_state = "case"
+	w_class = ITEM_SIZE_SMALL
+	sales_price = 18
+
+/obj/item/exploration_loot/spicecase
+	name = "spice case"
+	desc = "The strong smell of so many different spices leave no doubt this is a case of quality spices for making dishes more delicious,the rogue trader would be interested on buying this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "spice"
+	item_state = "spice"
+	w_class = ITEM_SIZE_SMALL
+	sales_price = 23
+
+/obj/item/exploration_loot/lootbox
+	name = "unknown case"
+	desc = "A finely wrapped box that seems to be filled with something made out of crystal,the rogue trader would be interested on buying this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "package4"
+	item_state = "package4"
+	w_class = ITEM_SIZE_SMALL
+	sales_price = 21
+
+/obj/item/exploration_loot/chem_package
+	name = "chemical package"
+	desc = "A large package containing quite a lot of common chemicals, mostly to refill medical dispensers,the rogue trader would be interested on buying this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "dispenser"
+	item_state = "dispenser"
+	w_class = ITEM_SIZE_LARGE
+	sales_price = 36
+
+/obj/item/exploration_loot/odd_book
+	name = "ancient book"
+	desc = "This appears to be a very old scientific book, who knows how long it's been there,the rogue trader would be interested on buying this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "sh"
+	item_state = "sh"
+	w_class = ITEM_SIZE_SMALL
+	sales_price = 13
+
+/obj/item/exploration_loot/bm_file
+	name = "shady file"
+	desc = "Judging by the contents, it appears to contain information on products in demand on the black market of Elipharius,the rogue trader would be interested on buying this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "file"
+	item_state = "file"
+	w_class = ITEM_SIZE_SMALL
+	sales_price = 75 // Jackpot
+
+/obj/item/exploration_loot/imperial_book
+	name = "imperial book"
+	desc = "An Imperial book that seems to be full of history about the Imperium, there's some interesting marks from whoever was the owner,the rogue trader would be interested on buying this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "imperial"
+	item_state = ""
+	w_class = ITEM_SIZE_SMALL
+	sales_price = 10
+
+/obj/item/exploration_loot/shiny_gem
+	name = "shiny gem"
+	desc = "A crystal-clear gem of sorts, you're not sure if it's a diamond but must fetch some price at least no ?,the rogue trader would be very interested on buying this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "gem1"
+	item_state = "gem1"
+	w_class = ITEM_SIZE_SMALL
+	sales_price = 50 // Jackpot baby
+
+/obj/item/exploration_loot/zrbite
+	name = "zerbite ore"
+	desc = "An small amount of unrefined zerbite, an ore that is very rare to find and used for constructing Gellar fields and other fancy equipment, the rogue trader would be very interested on buying this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "zrbite_ore"
+	item_state = "zrbite_ore"
+	w_class = ITEM_SIZE_SMALL
+	sales_price = 10
+
+/obj/item/exploration_loot/zrbite_ingot
+	name = "zerbite ingot"
+	desc = "A ingot of Zerbite, these are refined on proper Industrial worlds which have the equipment to refine this rare ore,the rogue trader would be interested on buying this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "zrbite"
+	item_state = "zrbite"
+	w_class = ITEM_SIZE_SMALL
+	sales_price = 30 // High Price
+
+/obj/item/exploration_loot/elerium
+	name = "elerium ore"
+	desc = "A chunk of unrefined Elerium, this is an extremly rare mineral currently being used for experimental plasma weaponary prototypes,the rogue trader would be interested on buying this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "elerium_ore"
+	item_state = "elerium_ore"
+	w_class = ITEM_SIZE_SMALL
+	sales_price = 15
+
+/obj/item/exploration_loot/elerium_ingot
+	name = "elerium ingot"
+	desc = "A refined ingot of Elerium,the rogue trader would be interested on buying this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "elerium"
+	item_state = "elerium"
+	w_class = ITEM_SIZE_SMALL
+	sales_price = 40
+
+/obj/item/exploration_loot/artiaxe
+	name = "artifact axe"
+	desc = "A finely crafted axe with a lot of adorments around it that seem to be made out of gold, silver and steel,the rogue trader would be interested on buying this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "artiaxe2"
+	item_state = "artiaxe2"
+	w_class = ITEM_SIZE_SMALL
+	sales_price = 60
+
+/obj/item/exploration_loot/goldbar
+	name = "untraceable gold bar"
+	desc = "Most bars made out of gold, platinum and the like have a serial number engraved to ensure they're not stolen ones, however this one does not have such numbers and it would be no burden to sell it,the rogue trader would be interested on buying this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "gold_ingot_ravenheart"
+	item_state = "gold_ingot_ravenheart"
+	w_class = ITEM_SIZE_SMALL
+	sales_price = 40 // Gold

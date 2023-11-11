@@ -14,7 +14,7 @@
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	body_parts_covered = HEAD
 	armor = list(melee = 20, bullet = 20, laser = 20, energy = 15, bomb = 20, bio = 0, rad = 10)
-	sales_price = 5
+	sales_price = 0
 	flags_inv = BLOCKHEADHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
@@ -46,7 +46,7 @@
 	icon_state = "helmet_tac"
 	armor = list(melee = 30, bullet = 30, laser = 20, energy = 25, bomb = 30, bio = 0, rad = 10)
 	siemens_coefficient = 0.6
-	sales_price = 8
+	sales_price = 1
 
 /obj/item/clothing/head/helmet/preacher
 	name = "tactical helmet"
@@ -54,7 +54,7 @@
 	icon_state = "helmet_tac"
 	armor = list(melee = 30, bullet = 30, laser = 20, energy = 25, bomb = 30, bio = 0, rad = 10)
 	siemens_coefficient = 0.6
-	sales_price = 8
+	sales_price = 1
 
 /obj/item/clothing/head/helmet/merc
 	name = "combat helmet"
@@ -62,13 +62,13 @@
 	icon_state = "helmet_merc"
 	armor = list(melee = 40, bullet = 45, laser = 25, energy = 35, bomb = 30, bio = 0, rad = 10)
 	siemens_coefficient = 0.5
-	sales_price = 15
+	sales_price = 2
 
 /obj/item/clothing/head/helmet/barney_helmet
 	name = "security helmet"
 	icon_state = "helmet_barney"
 	armor = list(melee = 40, bullet = 40, laser = 10, energy = 35, bomb = 30, bio =0, rad = 10)
-	sales_price = 10
+	sales_price = 2
 
 /*
 /obj/item/clothing/head/helmet/riot
@@ -142,29 +142,30 @@
 	name = "flak helmet"
 	desc = "A solid helmet made from several layers of ablative and impact-resistant materials. A good helmet to wear if you're not looking to catch a skull-full of shrapnel."
 	icon_state = "guard"
-	armor = list(melee = 25, bullet = 30, laser = 30, energy = 25, bomb = 25, bio = 0, rad = 10)
+	armor = list(melee = 25, bullet = 40, laser = 40, energy = 25, bomb = 25, bio = 0, rad = 10)
 	siemens_coefficient = 0.6
 
 /obj/item/clothing/head/helmet/scion
 	name = "scion helmet"
 	desc = "A solid helmet made from several layers of ablative and impact-resistant materials. A good helmet to wear if you're not looking to catch a skull-full of shrapnel."
 	icon_state = "helmetNVG"
-	armor = list(melee = 35, bullet = 40, laser = 40, energy = 35, bomb = 35, bio = 0, rad = 10)
+	item_state = "guard"
+	armor = list(melee = 35, bullet = 45, laser = 45, energy = 35, bomb = 35, bio = 0, rad = 10)
 	siemens_coefficient = 0.6
-	sales_price = 25
+	sales_price = 15
 
 /obj/item/clothing/head/helmet/kasrkin
 	name = "kasrkin helmet"
 	desc = "A carapace helmet belonging to the elite stormtroopers of the Kasrkin. Cadia may not be intact, but your brain will when in combat with this on."
-	icon_state = "kasrkinhelmetb"
-	armor = list(melee = 40, bullet = 45, laser = 45, energy = 35, bomb = 50, bio = 0, rad = 10)
+	icon_state = "kasrkinhelmet"
+	armor = list(melee = 40, bullet = 55, laser = 55, energy = 35, bomb = 50, bio = 0, rad = 10)
 	siemens_coefficient = 0.6
-	sales_price = 25
+	sales_price = 15
 
 /obj/item/clothing/head/helmet/genestealer
 	name = "tyranid scale hide"
 	desc = "The hide of a Tyranid Genestealer"
-	armor = list(melee = 40, bullet = 35, laser = 35, energy = 15, bomb = 30, bio = 100, rad = 100)
+	armor = list(melee = 60, bullet = 44, laser = 44, energy = 15, bomb = 30, bio = 100, rad = 100)
 	icon_state = "gsfeet"
 	item_state = "gsfeet"
 	canremove = 0
@@ -174,7 +175,7 @@
 /obj/item/clothing/head/helmet/genestealer/tough
 	name = "tyranid chitin"
 	desc = "The hide of a Tyranid..."
-	armor = list(melee = 50, bullet = 45, laser = 45, energy = 20, bomb = 40, bio = 100, rad = 100)
+	armor = list(melee = 70, bullet = 55, laser = 55, energy = 20, bomb = 40, bio = 100, rad = 100)
 
 /obj/item/clothing/head/helmet/genestealer/epic
 	name = "tyranid chitin"
@@ -261,12 +262,12 @@
 	desc = "A advanced helmet produced for Tau Fire Caste Warriors, made out of...acceptable quality ceramite."
 	icon_state = "fwhelm"
 	item_state = "fwhelm"
-	armor = list(melee = 30, bullet = 30, laser = 30, energy = 35, bomb = 35, bio = 100, rad = 100)
+	armor = list(melee = 40, bullet = 44, laser = 44, energy = 35, bomb = 35, bio = 100, rad = 100)
 	siemens_coefficient = 0.6
 	body_parts_covered = HEAD
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	sales_price = 30
+	sales_price = 5
 
 /obj/item/clothing/head/helmet/fw/breacher
 	name = "fire warrior Helmet"
@@ -279,12 +280,12 @@
 	desc = "A advanced helmet produced for Tau Fire Caste Sharpshooters, its made out of some pretty lightweight ceramite and some bits of steel, its probably able to take a few shots before becoming useless."
 	icon_state = "scout"
 	item_state = "scout"
-	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 40, bio = 100, rad = 100)
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 40, bio = 100, rad = 100)
 	siemens_coefficient = 0.6
 	body_parts_covered = HEAD
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	sales_price = 35
+	sales_price = 7
 
 
 // Eldar
@@ -322,29 +323,38 @@
 
 // NEW HELMETS
 
+/obj/item/clothing/head/helmet/witch
+	name = "Witch Hunter Hat"
+	desc = "An armored hat... how?"
+	armor = list(melee = 30, bullet = 40, laser = 40, energy = 35, bomb = 30, bio = 30, rad = 30)
+	sales_price = 0
+	icon_state = "brim-hat"
+	item_state = "brim-hat"
+	flags_inv = BLOCKHEADHAIR
+
 /obj/item/clothing/head/helmet/soul
 	name = "Seolite Helmet"
 	desc = "A xenos helmet from the seolite forgemasters, remarkbly resistant to thermal damage."
 	icon_state = "soul"
 	item_state = "soul"
-	armor = list(melee = 30, bullet = 30, laser = 48, energy = 35, bomb = 50, bio = 100, rad = 50)
-	sales_price = 11
+	armor = list(melee = 30, bullet = 40, laser = 48, energy = 35, bomb = 50, bio = 100, rad = 50)
+	sales_price = 0
 
 /obj/item/clothing/head/helmet/seolhelm
 	name = "Seolite Power Helmet"
 	desc = "A xenos power helmet from the seolite forgemasters, remarkbly resistant to thermal damage."
 	icon_state = "seolhelm"
 	item_state = "seolhelm"
-	armor = list(melee = 40, bullet = 40, laser = 68, energy = 35, bomb = 50, bio = 100, rad = 50)
-	sales_price = 20
+	armor = list(melee = 40, bullet = 48, laser = 58, energy = 35, bomb = 50, bio = 100, rad = 50)
+	sales_price = 0
 
 /obj/item/clothing/head/helmet/hauberk
 	name = "Chainmail Hood"
 	desc = "A chainmail hood for your noggin."
 	icon_state = "hauberkhood"
 	item_state = "hauberkhood"
-	armor = list(melee = 44, bullet = 10, laser = 25, energy = 35, bomb = 10, bio = 20, rad = 10)
-	sales_price = 4
+	armor = list(melee = 44, bullet = 20, laser = 25, energy = 35, bomb = 10, bio = 20, rad = 10)
+	sales_price = 1
 
 /obj/item/clothing/head/helmet/hevhelm
 	name = "Heavy Metal Helm"
@@ -352,47 +362,56 @@
 	icon_state = "hevhelm"
 	item_state = "hevhelm"
 	armor = list(melee = 58, bullet = 20, laser = 35, energy = 35, bomb = 30, bio = 50, rad = 30)
-	sales_price = 7
+	sales_price = 2
+
+/obj/item/clothing/head/helmet/hevhelm/palace
+	name = "Honour Guard Helm"
+	desc = "A heavy metal helmet for your noggin."
+	icon_state = "hevhelm"
+	item_state = "hevhelm"
+	color = "#ad9b30"
+	armor = list(melee = 45, bullet = 30, laser = 45, energy = 35, bomb = 30, bio = 50, rad = 30)
+	sales_price = 2
 
 /obj/item/clothing/head/helmet/sheriff
 	name = "Dandy Cowboy Hat"
 	desc = "A rootin tootin cowboy hat for your skootin' shootin!"
 	icon_state = "sheriffhat"
 	item_state = "sheriffhat"
-	armor = list(melee = 10, bullet = 35, laser = 10, energy = 35, bomb = 10, bio = 0, rad = 10)
-	sales_price = 4
+	armor = list(melee = 15, bullet = 45, laser = 15, energy = 35, bomb = 10, bio = 0, rad = 10)
+	sales_price = 1
 
 /obj/item/clothing/head/helmet/marinehelm
 	name = "Necromunda Helm"
 	desc = "A tough iron helmet used by the Necromundan Gangers."
 	icon_state = "marinehelm"
 	item_state = "marinehelm"
-	armor = list(melee = 38, bullet = 30, laser = 34, energy = 35, bomb = 20, bio = 10, rad = 10)
-	sales_price = 5
+	armor = list(melee = 38, bullet = 34, laser = 34, energy = 35, bomb = 20, bio = 10, rad = 10)
+	sales_price = 1
 
 /obj/item/clothing/head/helmet/foxhelm
 	name = "Armored Hood"
 	desc = "A sneaky hood with overlaying ceramic plate inserts, entirely impractical but also very cool."
 	icon_state = "foxhelm"
 	item_state = "foxhelm"
-	armor = list(melee = 38, bullet = 38, laser = 38, energy = 35, bomb = 10, bio = 40, rad = 30)
-	sales_price = 7
+	armor = list(melee = 38, bullet = 42, laser = 42, energy = 35, bomb = 10, bio = 40, rad = 30)
+	sales_price = 2
 
 /obj/item/clothing/head/helmet/lightpahelm
 	name = "Van Saar Power Helmet"
 	desc = "A power helmet manufactured by the House of Van Saar, the quality despite it's status as technical power armor is quite poor."
 	icon_state = "lightpahelm"
 	item_state = "lightpahelm"
-	armor = list(melee = 48, bullet = 48, laser = 48, energy = 35, bomb = 50, bio = 50, rad = 30)
-	sales_price = 15
+	armor = list(melee = 54, bullet = 54, laser = 54, energy = 35, bomb = 50, bio = 50, rad = 30)
+	sales_price = 10
 
 /obj/item/clothing/head/helmet/berserkerhelm
 	name = "Berserker Power Helmet"
 	desc = "A power helmet manufactured manufactured by unknown smiths of ruinous origin, it radiates with incredible energy and a wrath that infests your very soul."
 	icon_state = "berserkerhelm"
 	item_state = "berserkerhelm"
-	armor = list(melee = 64, bullet = 40, laser = 84, energy = 45, bomb = 60, bio = 60, rad = 40)
-	sales_price = 20
+	armor = list(melee = 64, bullet = 50, laser = 84, energy = 45, bomb = 60, bio = 60, rad = 40)
+	sales_price = 15
 
 /obj/item/clothing/head/helmet/reconhood
 	name = "Mysterious Hood"
@@ -400,31 +419,31 @@
 	icon_state = "reconhood"
 	item_state = "reconhood"
 	armor = list(melee = 34, bullet = 24, laser = 24, energy = 35, bomb = 10, bio = 30, rad = 20)
-	sales_price = 4
+	sales_price = 1
 
 /obj/item/clothing/head/helmet/metalhelmet
 	name = "Metal Helmet"
 	desc = "A heavy metal helmet that protects you from slashes, stabs and the occassional lasburn."
 	icon_state = "metalhelmet"
 	item_state = "metalhelmet"
-	armor = list(melee = 14, bullet = 14, laser = 14, energy = 10, bomb = 10, bio = 30, rad = 20)
-	sales_price = 7
+	armor = list(melee = 24, bullet = 24, laser = 24, energy = 10, bomb = 10, bio = 30, rad = 20)
+	sales_price = 1
 
 /obj/item/clothing/head/helmet/gangerhelm
 	name = "Metal Helmet"
 	desc = "A heavy metal ganger helmet that protects you from slashes, stabs and the occassional lasburn."
 	icon_state = "raider_combat_helmet"
 	item_state = "raider_combat_helmet"
-	armor = list(melee = 38, bullet = 28, laser = 28, energy = 35, bomb = 50, bio = 70, rad = 50)
-	sales_price = 8
+	armor = list(melee = 38, bullet = 28, laser = 38, energy = 35, bomb = 50, bio = 70, rad = 50)
+	sales_price = 1
 
 /obj/item/clothing/head/helmet/knighthelm
 	name = "Masterwork Helm"
 	desc = "A heavy metal helmet that protects you from slashes, stabs and the occassional lasburn."
 	icon_state = "knighthelm"
 	item_state = "knighthelm"
-	armor = list(melee = 60, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 30, rad = 20)
-	sales_price = 9
+	armor = list(melee = 50, bullet = 35, laser = 35, energy = 15, bomb = 15, bio = 30, rad = 20)
+	sales_price = 2
 
 /obj/item/clothing/head/helmet/dragon
 	name = "Drake Helm"
@@ -432,39 +451,39 @@
 	icon_state = "dragon"
 	item_state = "dragon"
 	armor = list(melee = 45, bullet = 25, laser = 35, energy = 35, bomb = 20, bio = 30, rad = 20)
-	sales_price = 9
+	sales_price = 2
 
 /obj/item/clothing/head/helmet/metalvisor
 	name = "Metal Visor"
 	desc = "A heavy metal visor for protecting your face."
 	icon_state = "leglad"
 	item_state = "leglad"
-	armor = list(melee = 35, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 30, rad = 20)
-	sales_price = 9
+	armor = list(melee = 35, bullet = 30, laser = 30, energy = 10, bomb = 10, bio = 30, rad = 20)
+	sales_price = 1
 
 /obj/item/clothing/head/helmet/stalkerhelm
 	name = "Stalker Helmet"
 	desc = "An old combat helmet, custom fitted with a filtration mask and carapace exterior, the stalker who wore this knew their trade well."
 	icon_state = "ranger_oldup"
 	item_state = "ranger_oldup"
-	armor = list(melee = 31, bullet = 38, laser = 38, energy = 35, bomb = 50, bio = 70, rad = 50)
-	sales_price = 11
+	armor = list(melee = 31, bullet = 48, laser = 48, energy = 35, bomb = 50, bio = 70, rad = 50)
+	sales_price = 2
 
 /obj/item/clothing/head/helmet/stalkerhelm2
 	name = "Stalker Helmet"
 	desc = "An old combat helmet, custom fitted with a filtration mask and carapace exterior, the stalker who wore this knew their trade well."
 	icon_state = "ranger1"
 	item_state = "ranger1"
-	armor = list(melee = 31, bullet = 38, laser = 38, energy = 35, bomb = 50, bio = 70, rad = 50)
-	sales_price = 11
+	armor = list(melee = 31, bullet = 48, laser = 48, energy = 35, bomb = 50, bio = 70, rad = 50)
+	sales_price = 2
 
 /obj/item/clothing/head/helmet/heavyflak
 	name = "Heavy Flak Helmet"
 	desc = "An old flak helmet, custom fitted with a filtration mask and armored exterior."
 	icon_state = "doom"
 	item_state = "doom"
-	armor = list(melee = 31, bullet = 38, laser = 38, energy = 35, bomb = 50, bio = 70, rad = 50)
-	sales_price = 10
+	armor = list(melee = 36, bullet = 44, laser = 44, energy = 35, bomb = 50, bio = 70, rad = 50)
+	sales_price = 2
 
 /obj/item/clothing/head/helmet/vindicare
 	name = "Vindicare helmet"
@@ -485,3 +504,12 @@
 	canremove = 0
 	flags_inv = HIDEEARS|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EYES
+
+/obj/item/clothing/head/helmet/colonel
+	name = "Colonel's Cap"
+	desc = "A protective cap worn by an Imperial Guard Colonel."
+	icon_state = "hoscap"
+	armor = list(melee = 80, bullet = 80, laser = 80, energy = 80, bomb = 80, bio = 100, rad = 100) //Event only.
+	siemens_coefficient = 0
+	flags_inv = BLOCKHAIR
+	body_parts_covered = HEAD|FACE|EYES //For reasons.

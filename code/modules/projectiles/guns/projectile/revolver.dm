@@ -15,7 +15,7 @@
 	reload_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
-	sales_price = 15
+	sales_price = 5
 
 /obj/item/gun/projectile/revolver/attack_self(mob/user)
 	. = ..()
@@ -52,7 +52,7 @@
 	icon_state = "snubby"
 	max_shells = 6
 	caliber = "38"
-	accuracy = 0.7
+	accuracy = 1
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	ammo_type = /obj/item/ammo_casing/c38
 
@@ -66,7 +66,7 @@
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
 	force = 15
-	accuracy = 0.6 //not the best craftsmanship
+	accuracy = 1 //not the best craftsmanship
 	fire_delay= 3
 	ammo_type = /obj/item/ammo_casing/a357
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
@@ -84,23 +84,23 @@
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
 	force = 15
-	accuracy = 0.4 //not the best craftsmanship
-	fire_delay= 10
+	accuracy = 0.8 //not the best craftsmanship
+	fire_delay= 3
 	ammo_type = /obj/item/ammo_casing/a357
 
 /obj/item/gun/projectile/revolver/mateba
-	name = "mateba"
+	name = "Mateba Slug Revolver"
 	desc = "The mateba revolver is commonly used by law enforcement and gangers, what it lacks in accuracy it makes up for in sheer firepower."
 	icon_state = "mateba"
 	caliber = ".50"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	ammo_type = /obj/item/ammo_casing/a50
-	sales_price = 40
-	accuracy = 0.1
+	sales_price = 10
+	accuracy = 0.5
 	fire_delay= 3
 
 /obj/item/gun/projectile/revolver/villiers
-	name = "Villiers Pattern Stub Revolver"
+	name = "Villiers Pattern Auto-Revolver"
 	desc = "This Villiers is as high quality as the rest of them. Their standard burst fire qualities somehow being fit unto a revolver chambered in .357!"
 	icon_state = "slug_revolver"
 	item_state = "crevolver"
@@ -109,11 +109,11 @@
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
 	max_shells = 6
 	force = 20
-	accuracy = 0.5
-	fire_delay= 14
+	accuracy = 0
+	fire_delay= 6
 	burst = 2
 	ammo_type = /obj/item/ammo_casing/a357
-	sales_price = 25
+	sales_price = 5
 
 /obj/item/gun/projectile/necros
 	name = "Necros Revolver"
@@ -125,7 +125,7 @@
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
 	force = 20
-	accuracy = 0.3
+	accuracy = 0.7
 	fire_delay= 2.8
 	ammo_type = /obj/item/ammo_casing/c44
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
@@ -133,7 +133,7 @@
 	reload_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	fire_sound = 'sound/weapons/guns/fire/revolver_fire.ogg'
-	sales_price = 33
+	sales_price = 8
 
 /obj/item/gun/projectile/slugrevolver
 	name = "slug revolver"
@@ -145,7 +145,7 @@
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
 	force = 10
-	accuracy = 0.4
+	accuracy = 0.8
 	fire_delay= 2.7
 	ammo_type = /obj/item/ammo_casing/c44
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
@@ -153,6 +153,12 @@
 	reload_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	fire_sound = 'sound/weapons/guns/fire/revolver_fire.ogg'
-	sales_price = 37
+	sales_price = 7
 
-
+/obj/item/gun/projectile/slugrevolver/penitent
+	name = "eight thousander"
+	desc = "A custom built .44 slug revolver capable of holding up to 8 shells, it's incredibly heavy in the hand."
+	max_shells = 8
+	force = 15
+	accuracy = 1.2
+	fire_delay= 2.4

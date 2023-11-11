@@ -129,8 +129,8 @@
 	name = "Indomitus Pattern Tactical Dreadnought Armour"
 	icon = 'icons/mob/32x40/suits.dmi'
 	item_icons = list(slot_wear_suit_str = 'icons/mob/32x40/suits.dmi')
-	icon_state = "umpowerarmor"
-	item_state = "umpowerarmor"
+	icon_state = "ultracap"
+	item_state = "ultracap"
 	str_requirement = 25
 	canremove = 0
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)

@@ -4,6 +4,7 @@
 	icon_state = "urchin"
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS//So they don't freeze to death with their clothes on.
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	canremove = 0
 
 /obj/item/clothing/under/child_jumpsuit/warfare/red
 	warfare_team = RED_TEAM

@@ -22,7 +22,7 @@
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	gun_type = GUN_SNIPER
 	far_fire_sound = "sniper_fire"
-	sales_price = 50
+	sales_price = 30
 
 /obj/item/gun/projectile/heavysniper/update_icon()
 	..()
@@ -92,7 +92,6 @@
 	one_hand_penalty = 2.1
 	fire_delay = 8
 	accuracy = 1
-	move_delay = 4
 	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 4000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/longlas
@@ -100,7 +99,20 @@
 	cell_type = /obj/item/cell/lasgun/hotshot || /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "longlas-wielded"
-	sales_price = 70
+	sales_price = 50
+
+	firemodes = list(
+		list(mode_name="semi-automatic", move_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=300),
+		list(mode_name="overcharge", move_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=500),
+		)
+
+/obj/item/gun/energy/las/lasgun/longlas/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.05
+	slowdown_per_slot[slot_wear_suit] = 0.1
+	slowdown_per_slot[slot_belt] = 0.1
+	slowdown_per_slot[slot_r_hand] = 0.25
+	slowdown_per_slot[slot_l_hand] = 0.25
 
 /obj/item/gun/energy/las/lasgun/longlas/verb/scope()
 	set category = "Object"
@@ -121,11 +133,6 @@
 	icon_state = "kriegsniper"
 	item_state = "snipeluscius"
 	wielded_item_state = "snipeluscius-wielded"
-
-	firemodes = list(
-		list(mode_name="semi-automatic", move_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=300),
-		list(mode_name="overcharge", fire_delay = 5.5, burst_accuracy=null, dispersion=null, automatic = 0, /obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=500),
-		)
 
 /obj/item/gun/projectile/thrower
 	name = "Lead Thrower"
@@ -218,7 +225,6 @@
 	caliber = "galvanic"
 	max_shells = 7 //Fits seven rounds in the mag, with a revolving cylinder. No room for extra rounds.
 	str_requirement = 17
-	move_delay = 3
 	one_hand_penalty = 2.2
 	accuracy = 1 //extremely accurate
 	fire_delay = 4.9
@@ -321,34 +327,33 @@
 	projectile_type = /obj/item/projectile/bullet/rifle/lp338/needler
 /obj/item/projectile/bullet/rifle/lp338
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
-	damage = 130
-	armor_penetration = 45
+	damage = 145
+	armor_penetration = 65
 	penetration_modifier = 1.5
 	penetrating = TRUE
 
 /obj/item/projectile/bullet/rifle/lp338/jhp
 	name = "JHP bullet"
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
-	damage = 160
-	armor_penetration = 5
+	damage = 170
+	armor_penetration = 25
 
 /obj/item/projectile/bullet/rifle/lp338/needler
 	name = "needler bullet"
 	fire_sound = 'sound/weapons/gunshot/needler.ogg'
-	damage = 90
+	damage = 110
 	damage_type = TOX
 	penetration_modifier = 2
 
 
 
-/*
-/obj/item/gun/projectile/exitus
+/obj/item/gun/projectile/exitus //Don't disable this, it's an admin sniper.
 	name = "Exitus Sniper Rifle"
 	desc = "The Exitus Rifle is a specialised projectile rifle used exclusively by the Imperial Assassins of the Officio Assassinorum's Vindicare Temple. It is purpose-built for each individual Vindicare sniper."
 	icon_state = "slayersniper"
 	item_state = "slayersniper"
 	w_class = ITEM_SIZE_HUGE
-	force = 10 //give it to the assfartes for the funny.
+	force = 10
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 2, TECH_ILLEGAL = 8)
 	caliber = "exitus"
@@ -385,4 +390,3 @@
 	set popup_menu = 1
 
 	toggle_scope(usr, 4)
-*/

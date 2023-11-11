@@ -23,6 +23,7 @@
 	r_pocket = /obj/item/device/flashlight/lantern
 	id_type = null
 	head = /obj/item/clothing/head/hospitallerhelm
+	r_pocket = /obj/item/storage/box/coin
 	backpack_contents = list(
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 		/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
@@ -45,6 +46,7 @@
 	r_pocket = /obj/item/device/flashlight/lantern
 	id_type = /obj/item/card/id/medical
 	head = /obj/item/clothing/head/hospitallerhelm
+	r_pocket = /obj/item/storage/box/coin
 	backpack_contents = list(
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 		/obj/item/ammo_magazine/bolt_pistol_magazine = 1,
@@ -86,6 +88,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots/techpriest
 	l_ear = /obj/item/device/radio/headset/headset_eng
 	l_hand = /decl/hierarchy/supply_pack/security/forensics
+	r_pocket = /obj/item/storage/box/coin
 	r_ear = null
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/biologis
 	backpack_contents = list(

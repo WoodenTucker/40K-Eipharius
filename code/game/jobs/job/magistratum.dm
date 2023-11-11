@@ -1,9 +1,9 @@
 // Enforcers
 
 /datum/job/marshal
-	title = "Planetary Marshal"
+	title = "Planetary Marshal" // Corrupted. Cult. Loyal.
 	head_position = 1
-	supervisors = "the Lord Governor"
+	supervisors = "the Deacon or Inquisition"
 	total_positions = 1
 	spawn_positions = 1
 	social_class = SOCIAL_CLASS_HIGH
@@ -41,7 +41,7 @@
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village)
 
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Marshal appointed by the Magistratum,, your duty is to uphold Imperial law on this planet amongst the Pilgrims and to assist the Rogue Trader where necessary. Your duties involve the investigation of crimes committed on behalf of the magistratum, collection of tithes and the interrogation or execution of criminals apprehended by the Magistratum.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the Marshal appointed by the Magistratum,, your duty is to uphold Imperial law on this planet amongst the Pilgrims and to assist the Deacon where necessary. Your duties involve the investigation of crimes committed on behalf of the magistratum, collection of tithes and the interrogation or execution of criminals apprehended by the Magistratum.</font></b></span>")
 
 /datum/job/investigator
 	title = "Planetary Investigator"
@@ -87,10 +87,10 @@
 		to_chat(H, "<span class='notice'><b><font size=3>You're the local detective, a planetary investigator hired by the Governor to solve crimes. ")
 
 /datum/job/enforcer
-	title = "Enforcer"
-	supervisors = "the Planetary Marshal and Inquisition"
-	total_positions = 3
-	spawn_positions = 3
+	title = "Enforcer" // Cult. Criminal. Loyal.
+	supervisors = "the Planetary Marshal, Deacon and Inquisition"
+	total_positions = 2
+	spawn_positions = 2
 	social_class = SOCIAL_CLASS_MED
 	selection_color = "#f0ac25"
 	outfit_type = /decl/hierarchy/outfit/job/ig/enforcer
@@ -100,7 +100,7 @@
 	shotgun_skill = 9
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 15
+	cultist_chance = 8
 	can_be_in_squad = FALSE
 	open_when_dead = FALSE
 	department_flag = INQ
@@ -123,14 +123,16 @@
 		H.witchblood() //Becoming a psyker can happen at any point of your life bro.
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village,)
-
+		H.verbs += list(
+			/mob/living/carbon/human/proc/enforcerclass)
 		to_chat(H, "<span class='notice'><b><font size=3> An Enforcer in the Magisterium. The Governership order you. Yet the Inquisition can override them. Patrol with the cadets. Make sure they know what they’re doing. Collect taxes and ensure the order of the world is peaceful and good. Be an undercover cop if you’re feeling ballsy.</font></b></span>")
 
 /datum/job/cadet
 	title = "Enforcer Cadet"
-	supervisors = "the Planetary Marshal and Inquisition"
+	supervisors = "the Planetary Marshal, Deacon and Inquisition"
 	total_positions = 0
 	spawn_positions = 0
 	social_class = SOCIAL_CLASS_MED
@@ -142,7 +144,7 @@
 	shotgun_skill = 7
 	lmg_skill = 5
 	smg_skill = 5
-	cultist_chance = 20
+	cultist_chance = 8
 	can_be_in_squad = FALSE
 	open_when_dead = FALSE
 	department_flag = INQ
@@ -166,17 +168,19 @@
 //		H.witchblood() //Psyker Enforcers don't exist
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village,)
-
-		to_chat(H, "<span class='notice'><b><font size=3> (NEW PLAYER ROLE) A cadet in the Magisterium. The Governership order you. Yet the Inquisition can override them. Your job is to assist the other enforcers in punishing crime and collecting taxes. </font></b></span>")
+		H.verbs += list(
+			/mob/living/carbon/human/proc/enforcerclass)
+		to_chat(H, "<span class='notice'><b><font size=3> (NEW PLAYER ROLE) A cadet in the Magisterium. The Deacon order you. Yet the Inquisition can override them. Your job is to assist the other enforcers in punishing crime and collecting taxes. </font></b></span>")
 
 /datum/job/arbitrator
 	title = "Arbitrator"
 	head_position = 1
 	supervisors = "The Adeptus Arbites"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	social_class = SOCIAL_CLASS_HIGH
 	selection_color = "#c9952f"
 	outfit_type = /decl/hierarchy/outfit/job/ig/arbitrator
@@ -213,6 +217,55 @@
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_inquisition)
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are an Arbitrator, in service to the Adeptus Arbites -- after a long journey across the sub-sector, you have arrived planetside and can begin your holy work bringing judgement to this planet. Your ultimate loyalty being to Holy Terra herself and the judiciary arm of the Adeptus Arbites.</font></b></span>")
+// FATES
+/mob/living/carbon/human/proc/enforcerclass()
+	set name = "Select your equipment." // Do not give the Investigate this. They spawn with the Mateba.
+	set category = "CHOOSE YOUR FATE"
+	set desc = "Select your equipment."
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
+		return
+
+	var/mob/living/carbon/human/U = src
+	U.verbs -= list(/mob/living/carbon/human/proc/enforcerclass) //removes verb
+	var/fates = list("Judge Dredd","Bounty Hunter","Messina Detective")
+
+
+	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
+
+
+	switch(classchoice)
+
+		if("Judge Dredd")
+			new /obj/item/gun/projectile/bolter_pistol(src.loc)
+			new /obj/item/ammo_magazine/bolt_pistol_magazine(src.loc)
+			new /obj/item/ammo_magazine/bolt_pistol_magazine/ms(src.loc)
+			new /obj/item/melee/sword/combat_knife/bowie(src.loc)
+		if("Bounty Hunter")
+			new /obj/item/melee/sword/machete/chopper/heavy/adamantine(src.loc)
+			if(prob(50))
+				new /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle(src.loc)
+				new /obj/item/ammo_magazine/a762/ap(src.loc)
+				new /obj/item/ammo_magazine/a762/ap(src.loc)
+				new /obj/item/ammo_magazine/a762/ap(src.loc)
+			else
+				new /obj/item/gun/projectile/automatic/messina(src.loc)
+				new /obj/item/ammo_magazine/c556/ap(src.loc)
+				new /obj/item/ammo_magazine/c556/ap(src.loc)
+				new /obj/item/ammo_magazine/c556/ap(src.loc)
+		if("Messina Detective")
+			new /obj/item/reagent_containers/hypospray/autoinjector/tau(src.loc)
+			new /obj/item/ammo_magazine/mc45mm/kp(src.loc)
+			new /obj/item/ammo_magazine/mc45mm/kp(src.loc)
+			new /obj/item/ammo_magazine/mc45mm/ms(src.loc)
+			new /obj/item/gun/projectile/talon/renegade(src.loc)
+
+
+
+
 
 
 //Outfits
@@ -230,18 +283,18 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	belt = /obj/item/melee/baton/loaded
 	id_type = /obj/item/card/id/dog_tag/guardsman
+	r_pocket = /obj/item/storage/box/coin
 	pda_slot = null
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/headset_cargo
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty/magrave
 	l_hand = /obj/item/device/flashlight/lantern
 	backpack_contents = list(
 	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 1,
 	/obj/item/ammo_box/shotgun = 1,
 	/obj/item/handcuffs = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
+	/obj/item/gun/energy/taser = 1,
 	)
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
@@ -259,13 +312,14 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	belt = /obj/item/gun/projectile/revolver/mateba
 	id_type = /obj/item/card/id/dog_tag/guardsman
+	r_pocket = /obj/item/storage/box/coin
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/entertainment
 	suit_store = null
 	backpack_contents = list(
 	/obj/item/ammo_magazine/c50/ms = 1,
 	/obj/item/handcuffs = 1,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/gun/energy/taser = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,
@@ -283,14 +337,14 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	belt = /obj/item/gun/projectile/revolver/mateba
 	id_type = /obj/item/card/id/dog_tag/guardsman
+	r_pocket = /obj/item/storage/box/coin
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/entertainment
 	suit_store = null
 	backpack_contents = list(
-	/obj/item/ammo_magazine/c50/ms = 1,
+	/obj/item/ammo_magazine/c50/ms = 2,
+	/obj/item/gun/energy/taser = 1,
 	/obj/item/handcuffs = 1,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,
 	)
@@ -307,11 +361,13 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	belt = /obj/item/gun/energy/las/laspistol/shitty
 	id_type = /obj/item/card/id/dog_tag/guardsman
+	r_pocket = /obj/item/storage/box/coin
 	pda_slot = null
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/headset_cargo
 	r_pocket = /obj/item/device/flashlight/lantern
 	suit_store = /obj/item/gun/projectile/shotgun/pump/voxlegis
 	backpack_contents = list(
+	/obj/item/gun/energy/taser = 1,
 	/obj/item/handcuffs = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/ammo_box/shotgun = 1,
@@ -331,6 +387,7 @@
 	r_pocket = /obj/item/device/flashlight/lantern
 	l_hand = null
 	r_hand = /obj/item/melee/powermaul
+	r_pocket = /obj/item/storage/box/coin
 	head = /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator
 	suit = /obj/item/clothing/suit/armor/arbitrator
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
@@ -344,6 +401,7 @@
 	backpack_contents = list( // 1 stun 1 buck box
 	/obj/item/handcuffs = 1,
 	/obj/item/ammo_box/shotgun/msslug = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine/ms = 1,
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 1,
 	/obj/item/stack/thrones2/twenty = 1,
 	)

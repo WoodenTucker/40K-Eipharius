@@ -11,18 +11,18 @@
 	emote_hear = list("rawrs","grumbles","grawls")
 	emote_see = list("stares ferociously", "stomps")
 	speak_chance = 1
-	turns_per_move = 5
-	see_in_dark = 6
+	turns_per_move = 25
+	see_in_dark = 12
 	wander = 1
 	meat_type = /obj/item/reagent_containers/food/snacks/bearmeat
 	response_help  = "pets"
 	response_disarm = "gently pushes aside"
 	response_harm   = "pokes"
 	stop_automated_movement_when_pulled = 0
-	maxHealth = 140
-	health = 140
-	melee_damage_lower = 20
-	melee_damage_upper = 30
+	maxHealth = 450
+	health = 450
+	melee_damage_lower = 30
+	melee_damage_upper = 40
 
 	//Space bears aren't affected by atmos.
 	min_gas = null
@@ -51,7 +51,7 @@
 		if(HOSTILE_STANCE_TIRED)
 			stop_automated_movement = 1
 			stance_step++
-			if(stance_step >= 10) //rests for 10 ticks
+			if(stance_step >= 2) //rests for 10 ticks
 				if(target_mob && target_mob in ListTargets(10))
 					stance = HOSTILE_STANCE_ATTACK //If the mob he was chasing is still nearby, resume the attack, otherwise go idle.
 				else
@@ -76,7 +76,7 @@
 
 			if(stance_step <= -20) //If we have not found a mob for 20-ish ticks, revert to idle mode
 				stance = HOSTILE_STANCE_IDLE
-			if(stance_step >= 7)   //If we have been staring at a mob for 7 ticks,
+			if(stance_step >= 2)   //If we have been staring at a mob for 7 ticks,
 				stance = HOSTILE_STANCE_ATTACK
 
 		if(HOSTILE_STANCE_ATTACKING)

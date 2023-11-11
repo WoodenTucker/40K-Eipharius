@@ -36,7 +36,7 @@
 	minbodytemp = 0
 	var/stance_step = 0
 
-	faction = "Nurgle"
+	faction = "Chaos"
 
 /mob/living/simple_animal/hostile/abomination/Life()
 	. =..()

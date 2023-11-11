@@ -55,3 +55,5 @@
 /obj/structure/table/holo_woodentable
 	icon_state = "holo_preview"
 	material = "holowood"
+
+

@@ -8,7 +8,7 @@
 	var/projectiletype
 	var/projectilesound
 	var/casingtype
-	var/move_to_delay = 4 //delay for the automated movement.
+	var/move_to_delay = 3 //delay for the automated movement.
 	var/attack_delay = DEFAULT_ATTACK_COOLDOWN
 	var/list/friends = list()
 	var/break_stuff_probability = 10
@@ -18,6 +18,7 @@
 
 	var/shuttletarget = null
 	var/enroute = 0
+	environment_smash = 1
 
 	var/damtype = BRUTE
 	var/defense = "melee" //what armor protects against its attacks

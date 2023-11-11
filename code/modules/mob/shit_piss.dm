@@ -28,7 +28,6 @@
 	. = ..()
 	icon_state = pick(src.random_icon_states)
 	create_reagents(5)
-	AddComponent(/datum/component/heretic_item/favor/eaten, "nurgle", 3)
 	reagents.add_reagent(/datum/reagent/poo,5)
 	for(var/obj/effect/decal/cleanable/poo/shit in src.loc)
 		if(shit != src)
@@ -137,7 +136,6 @@
 	..()
 	icon_state = pick("poop1", "poop2", "poop3", "poop4", "poop5", "poop6", "poop7")
 	reagents.add_reagent(/datum/reagent/poo, 10)
-	AddComponent(/datum/component/heretic_item/favor/eaten, "nurgle", 5)
 	bitesize = 3
 
 /obj/item/reagent_containers/food/snacks/poo/throw_impact(atom/hit_atom)
@@ -324,6 +322,6 @@
 				to_chat(src, "<span class='badmood'>+ NOT ON THE FLOOR... +</span>\n")
 				H.happiness -= 3
 
-	bladder -= rand(25,50)
+	bladder -= rand(70,90)
 	visible_message("[message]")
 

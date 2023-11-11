@@ -1,6 +1,6 @@
 /obj/item/stack/logs
     name = "logs"
-    desc = "Usable logs from a cut down tree."
+    desc = "Usable logs from a cut down tree. Can be sold to the trader or made into planks in a log machine."
     singular_name = "Log"
     icon = 'icons/obj/objects.dmi'
     icon_state = "firewood"
@@ -8,7 +8,7 @@
     force = 3.0
     throwforce = 3.0
     max_amount = 10
-    sales_price = 3
+    sales_price = 4
 
 /obj/item/stack/logs/update_icon()
 	if(!amount)//There's no more money here, so delete the handful.

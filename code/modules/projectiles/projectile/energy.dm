@@ -66,6 +66,20 @@
 	//residual illumination
 	new /obj/effect/effect/smoke/illumination(src.loc, rand(190,240) SECONDS, range=8, power=3, color=light_colour) //same lighting power as flare
 
+
+/atom/proc/fragmentates(var/turf/T=get_turf(src), var/fragment_number = 1, var/spreading_range = 5, var/list/fragtypes=list(/obj/item/projectile/energy/pulse/fragment/))
+	set waitfor = 0
+	var/list/target_turfs = getcircle(T, spreading_range)
+
+	playsound(src, 'sound/weapons/grenade_exp.ogg')
+	for(var/turf/O in target_turfs)
+		sleep(0)
+		var/fragment_type = pickweight(fragtypes)
+		var/obj/item/projectile/energy/pulse/fragment/P = new fragment_type(T)
+		P.shot_from = src.name
+
+		P.launch_projectile(O)
+
 /obj/item/projectile/energy/electrode
 	name = "electrode"
 	icon_state = "tracer"
@@ -180,7 +194,7 @@
 	fire_sound='sound/weapons/gunshot/lasgun3.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 68
+	damage = 80
 	armor_penetration = 10
 
 /obj/item/projectile/energy/las/lasgun/longlas
@@ -192,21 +206,12 @@
 	armor_penetration = 10
 	accuracy = 2
 
-/obj/item/projectile/energy/las/lasgun/longlas/krieg
-	name = "lasbolt"
-	fire_sound='sound/weapons/gunshot/lasgun3.ogg'
-	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	icon_state = "lasbolt"
-	damage = 58
-	armor_penetration = 10
-	accuracy = 2
-
 /obj/item/projectile/energy/las/lasgun/longlas/overcharge
 	name = "lasbolt"
 	fire_sound='sound/weapons/gunshot/lasgun4.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 116
+	damage = 130
 	armor_penetration = 10
 
 /obj/item/projectile/energy/las/lasgun/hotshot
@@ -233,7 +238,7 @@
 	damage = 58
 	armor_penetration = 25
 
-	/obj/item/projectile/energy/pulse/pulsepistol
+/obj/item/projectile/energy/pulse/pulsepistol
 	name = "pulse round"
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
@@ -241,30 +246,44 @@
 	damage = 58
 	armor_penetration = 35
 
+/obj/item/projectile/energy/pulse/fragment // fragmentation for pulse explosions
+	name = "pulse round"
+	fire_sound='sound/weapons/lasgun.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "pulse1"
+	damage = 7
+	armor_penetration = 70
+
 /obj/item/projectile/energy/pulse/pulserail
 	name = "pulse round"
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
-	damage = 90
-	armor_penetration = 60
+	damage = 35
+	armor_penetration = 86
+
+	on_hit(var/atom/target, var/blocked = 0)
+		fragmentates(target, 8)
 
 /obj/item/projectile/energy/pulse/ion
 	name = "ION round"
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
-	damage = 80
-	armor_penetration = 100
+	damage = 35
+	armor_penetration = 86
+
+	on_hit(var/atom/target, var/blocked = 0)
+		fragmentates(target, 8)
 
 /obj/item/projectile/energy/pulse/plasmarifle
 	name = "plasma round"
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 100
+	damage = 110
 	weaken = 1
-	armor_penetration = 40
+	armor_penetration = 65
 	light_power = 4
 	light_color = "#2132cf"
 
@@ -274,11 +293,25 @@
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 90
+	damage = 100
 	weaken = 1
-	armor_penetration = 35
+	armor_penetration = 50
 	light_power = 4
 	light_color = "#2132cf"
+
+/obj/item/projectile/energy/pulse/plasmapistol/overcharge
+	name = "giant plasma round"
+	fire_sound='sound/weapons/marauder.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "pulse1_bl"
+	damage = 28
+	weaken = 1
+	armor_penetration = 75
+	light_power = 4
+	light_color = "#2132cf"
+
+	on_hit(var/atom/target, var/blocked = 0)
+		fragmentates(target, 8)
 
 /obj/item/projectile/warpboltcrappy
 	name = "Warp Bolt"

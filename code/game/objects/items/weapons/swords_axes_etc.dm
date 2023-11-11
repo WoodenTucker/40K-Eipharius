@@ -32,6 +32,8 @@
 	drop_sound = 'sound/items/drop_sword.ogg'
 	sales_price = 0
 	var/isblessed = 0
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
+	armor = list(melee = 10, bullet = 15, laser = 15, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/melee/sword/handle_shield(mob/living/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(default_sword_parry(user, damage, damage_source, attacker, def_zone, attack_text))
@@ -113,6 +115,14 @@
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	w_class = ITEM_SIZE_NORMAL
 
+
+
+//////////////
+//AXES/CLUBS//
+/////////////
+
+
+
 /obj/item/melee/sword/commissword //The commissar gets the best aspects of all swords
 	name = "commissar's sword"
 	desc = "An orante officer's sword and the Commissar's prized possession. Used to cut down heretics and cowards alike"
@@ -120,92 +130,17 @@
 	icon_state = "commissword"
 	item_state = "commissword"
 	attack_verb = list("stabbed", "chopped", "cut", "sliced")
-	force = 40
-	force_wielded = 45
+	force = 35
+	force_wielded = 37
 	sharp = 1
-	block_chance = 55
+	block_chance = 45
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
 	sales_price = 0
-	weapon_speed_delay = 7
-
-//////////////
-//AXES/CLUBS//
-/////////////
-
-/obj/item/melee/trench_axe
-	name = "trench axe"
-	desc = "Used mainly for murdering those on the enemy side."
-	icon = 'icons/obj/weapons/melee/misc.dmi'
-	icon_state = "trenchaxe"
-	item_state = "trenchaxe"
-	wielded_icon = "trenchaxe-w"
-	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	force = 31
-	armor_penetration = 10
-	throwforce = 18
-	block_chance = 30
-	sharp = TRUE
-	hitsound = "slash_sound"
-	drop_sound = 'sound/items/handle/axe_drop.ogg'
-	equipsound = 'sound/items/equip/axe_equip.ogg'
-	grab_sound = 'sound/items/handle/axe_grab.ogg'
-	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 8
-	w_class = ITEM_SIZE_HUGE
-
-/obj/item/melee/trench_axe/glaive // glaive, bone spear, lance, bardiche
-	name = "saintie"
-	desc = "A powerful warglave used for singular felling blows against armored opponents(pronounced san-tee)."
-	icon_state = "glaive"
-	item_state = "spear"
-	wielded_icon = "spear-w"
-	force = 37
-	armor_penetration = 10
-	throwforce = 18
-	block_chance = 40
-	weapon_speed_delay = 11
-	w_class = ITEM_SIZE_HUGE
-
-/obj/item/melee/trench_axe/bardiche
-	name = "bardiche"
-	desc = "A powerful polearm used for singular felling blows against armored opponents."
-	icon_state = "bardiche"
-	item_state = "savaxe"
-	wielded_icon = "savaxe"
-	force = 33
-	armor_penetration = 10
-	throwforce = 15
-	block_chance = 40
-	weapon_speed_delay = 8
-	w_class = ITEM_SIZE_HUGE
-
-/obj/item/melee/trench_axe/bspear
-	name = "hunting spear"
-	desc = "An incredibly lightweight and nimble spear used by hunters against large game animals."
-	icon_state = "bone_spear"
-	item_state = "bone_spear"
-	wielded_icon = "bone_spear-w"
-	force = 26
-	armor_penetration = 10
-	throwforce = 22
-	block_chance = 50
-	weapon_speed_delay = 6
-	throw_speed = 4
-	w_class = ITEM_SIZE_LARGE
-
-/obj/item/melee/trench_axe/lance
-	name = "fuscina lance"
-	desc = "A heavy lance used to attack at a distance with maximum power."
-	icon_state = "lance"
-	item_state = "lance"
-	wielded_icon = "lance-w"
-	force = 42
-	armor_penetration = 20
-	block_chance = 30
-	weapon_speed_delay = 14
-	w_class = ITEM_SIZE_HUGE
+	armor = list(melee = 15, bullet = 20, laser = 20, energy = 10, bomb = 10, bio = 0, rad = 0)
+	
 
 /obj/item/melee/sword/commissword/sabre
 	name = "Sabre"
@@ -247,8 +182,8 @@
 	item_state = "mercychainsword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 12
-	force = 31
-	force_wielded = 36
+	force = 32
+	force_wielded = 37
 	armor_penetration = 10
 	block_chance = 15
 	sharp = 1
@@ -261,6 +196,8 @@
 	weapon_speed_delay = 9
 	sales_price = 40
 	w_class = ITEM_SIZE_NORMAL
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
+	armor = list(melee = 10, bullet = 15, laser = 15, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/melee/chain/guard
 	name = "Imperial Guard chainsword"
@@ -308,7 +245,7 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
-	sales_price = 55
+	sales_price = 45
 	w_class = ITEM_SIZE_LARGE
 
 /obj/item/melee/chain/inqcs
@@ -332,7 +269,7 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
-	sales_price = 60
+	sales_price = 50
 	w_class = ITEM_SIZE_LARGE
 
 /obj/item/melee/chain/pcsword
@@ -355,7 +292,7 @@
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 8
-	sales_price = 110 //not common at all
+	sales_price = 100 //not common at all
 	w_class = ITEM_SIZE_HUGE //slow
 
 
@@ -382,7 +319,7 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")
 	weapon_speed_delay = 13
-	sales_price = 70
+	sales_price = 60
 
 /obj/item/melee/chain/pcsword/klaw
 	name = "Power Klaw"
@@ -407,7 +344,7 @@
 	slot_flags = null // change when no longer using backpack to spawn i
 	attack_verb = list("klaw'd", "sawed", "cleaved", "zog'd", "cut")
 	weapon_speed_delay = 12 // its zogging huge
-	sales_price = 70
+	sales_price = 0
 
 /obj/item/melee/chain/pcsword/klaw/dropped() // only way to get it is the backpack currently. And power sword augment. This should be replaced.
 	..()
@@ -450,7 +387,7 @@
 	armor_penetration = 20
 	block_chance = 37
 	weapon_speed_delay = 6
-	sales_price = 19
+	sales_price = 0
 
 /obj/item/melee/sword/broadsword
 	name = "heavy broadsword"
@@ -474,7 +411,7 @@
 	armor_penetration = 15
 	block_chance = 25 
 	weapon_speed_delay = 8
-	sales_price = 25
+	sales_price = 0
 
 /obj/item/melee/sword/machete
 	name = "iron machete"
@@ -528,6 +465,37 @@
 	block_chance = 25
 	weapon_speed_delay = 8
 
+
+/obj/item/melee/sword/machete/chopper/heavy/adamantine
+	name = "heavy iron chopper"
+	desc = "A heavy primitive blade made of adamanantine, a common sight in the underhives of imperial worlds."
+	icon_state = "scrapsabre"
+	item_state = "salvagedmachete"
+	color = "#848484"
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	w_class = ITEM_SIZE_LARGE //if its heavy, its slow!
+	slot_flags = SLOT_BELT
+	force = 31
+	force_wielded = 37
+	armor_penetration = 15
+	block_chance = 30
+	weapon_speed_delay = 8
+
+/obj/item/melee/sword/machete/chopper/heavy/slayer
+	name = "masterwork chopper"
+	desc = "A heavy blessed blade made of xenos alloy, it seems unnaturally heavy."
+	icon_state = "scrapsabre"
+	item_state = "salvagedmachete"
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	w_class = ITEM_SIZE_LARGE //if its heavy, its slow!
+	slot_flags = SLOT_BELT
+	str_requirement = 18
+	force = 32
+	force_wielded = 39
+	armor_penetration = 15
+	block_chance = 35
+	weapon_speed_delay = 8
+
 /obj/item/melee/sword/demon
 	name = "demon sword"
 	desc = "The very sight of this blade makes you sick to your stomach."
@@ -544,7 +512,7 @@
 	sharpness = TRUE
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 8
-	sales_price = 200
+	sales_price = 100
 
 // NON MATERIAL WEAPONS //
 
@@ -560,7 +528,7 @@
 	force_wielded = 36
 	armor_penetration = 12
 	throwforce = 18
-	block_chance = 12
+	block_chance = 25
 	sharp = 1
 	edge = 1
 	hitsound = "slash_sound"
@@ -570,6 +538,8 @@
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 9
 	w_class = ITEM_SIZE_LARGE
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 
 /obj/item/melee/trench_axe/glaive
@@ -585,6 +555,7 @@
 	block_chance = 35
 	weapon_speed_delay = 10
 	w_class = ITEM_SIZE_HUGE
+	armor = list(melee = 10, bullet = 20, laser = 20, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/melee/trench_axe/glaive/adamantine
 	name = "adamantium saintie"
@@ -593,7 +564,7 @@
 	force = 27
 	force_wielded = 41
 	armor_penetration = 45
-	sales_price = 30
+	sales_price = 0
 
 /obj/item/melee/trench_axe/bardiche
 	name = "bardiche"
@@ -607,7 +578,19 @@
 	throwforce = 15
 	block_chance = 20
 	weapon_speed_delay = 9
+	w_class = ITEM_SIZE_LARGE
+
+/obj/item/melee/trench_axe/bardiche/beast
+	name = "beastly axe"
+	desc = "A gigantic, powerful, two handed, sharp polearm used for singular felling blows against armored opponents."
+	force = 30
+	force_wielded = 44
+	armor_penetration = 15
+	throwforce = 22
+	block_chance = 24
+	weapon_speed_delay = 8
 	w_class = ITEM_SIZE_LARGE 
+	armor = list(melee = 10, bullet = 20, laser = 20, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/melee/trench_axe/bspear
 	name = "hunting spear"
@@ -623,6 +606,17 @@
 	weapon_speed_delay = 8
 	edge = 0
 	w_class = ITEM_SIZE_LARGE 
+	armor = list(melee = 10, bullet = 15, laser = 15, energy = 10, bomb = 10, bio = 0, rad = 0)
+
+/obj/item/melee/trench_axe/bspear/hunter
+	name = "fine hunting spear"
+	desc = "An incredibly lightweight and nimble spear used by hunters against large game animals."
+	force = 29
+	force_wielded = 33
+	armor_penetration = 22
+	throwforce = 27
+	block_chance = 25
+	weapon_speed_delay = 7
 
 /obj/item/melee/trench_axe/lance
 	name = "fuscina war spear"
@@ -645,16 +639,7 @@
 	force = 26
 	force_wielded = 39
 	armor_penetration = 25
-	sales_price = 20
-
-/obj/item/melee/sword/commissword/sabre
-	name = "Sabre"
-	desc = "A masteredcrafted sabre of exceptional quality, it has a duelists grip."
-	icon = 'icons/obj/weapons/melee/misc.dmi'
-	icon_state = "sabre"
-	item_state = "sabre"
-	block_chance = 22
-	sales_price = 30
+	sales_price = 0
 
 /obj/item/melee/sword/choppa
 	name = "choppa"
@@ -674,8 +659,10 @@
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
-	sales_price = 15
+	sales_price = 0
 	weapon_speed_delay = 8
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
+	armor = list(melee = 10, bullet = 25, laser = 25, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/melee/classic_baton/daemonhammer
 	name = "Daemonhammer"
@@ -694,6 +681,8 @@
 	weapon_speed_delay = 8
 	edge = TRUE
 	sales_price = 0
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
+	armor = list(melee = 35, bullet = 15, laser = 15, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 // KNIVES AND SMALL WEAPONS //
 // KNIVES AND SMALL WEAPONS //
@@ -718,6 +707,8 @@
 	drop_sound = 'sound/items/knife_drop.ogg'
 	swing_sound = "blunt_swing"
 	armor_penetration = 8
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
+	armor = list(melee = 10, bullet = 15, laser = 15, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/melee/sword/combat_knife/attack(mob/living/carbon/C as mob, mob/living/user as mob)
 	if(user.a_intent == I_HELP && (C.handcuffed) && (istype(C.handcuffed, /obj/item/handcuffs/cable)))
@@ -764,6 +755,16 @@
 	block_chance = 20
 	weapon_speed_delay = 7
 
+/obj/item/melee/sword/combat_knife/glaive/holy
+	name = "ritual dagger"
+	desc = "A gigantic ritual dagger used in combat by the frateris."
+	icon_state = "glaive-dagger"
+	item_state = "salvagedmachete"
+	color = "#5a611e"
+	force = 22
+	force_wielded = 25
+	block_chance = 25
+
 /obj/item/melee/sword/combat_knife/catachan
 	name = "catachan knife"
 	desc = "The legendary blade of the catachan jungle fighters. The balance of the knife is near perfect."
@@ -777,6 +778,7 @@
 	block_chance = 35
 	str_requirement = 12 //i don't want to hear it, anyone below 12 str is supposed to be a child or a old man.
 	weapon_speed_delay = 7
+	armor = list(melee = 15, bullet = 20, laser = 20, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 
 //knife for astartes/ogryn
@@ -807,25 +809,6 @@
 	slot_flags = SLOT_BACK
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	attack_verb = list("chopped", "sliced", "cut", "reaped")
-
-/obj/item/melee/sword/commissword
-	name = "commissar's sword"
-	desc = "An orante officer's sword and the Commissar's prized possession. Used to cut down heretics and cowards alike"
-	icon = 'icons/obj/weapons/melee/misc.dmi'
-	icon_state = "commissword"
-	item_state = "commissword"
-	attack_verb = list("stabbed", "chopped", "cut", "sliced")
-	force = 31
-	force_wielded = 36
-	sharp = 1
-	block_chance = 22
-	w_class = ITEM_SIZE_NORMAL
-	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
-	slot_flags = SLOT_BELT
-	sales_price = 0
-	weapon_speed_delay = 7
-	armor_penetration = 45
-
 
 //knife for astartes/ogryn
 /obj/item/melee/sword/combat_knife/catachan/giant

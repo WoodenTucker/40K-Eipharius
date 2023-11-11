@@ -101,7 +101,7 @@
 	smoke_amt = 5
 	smoke_spread = 1
 
-	possible_transformations = list(/mob/living/simple_animal/hostile/armalis)
+	possible_transformations = list(/mob/living/simple_animal/hostile/smalldemon/bubblingmass)
 
 	hud_state = "wiz_vox"
 
