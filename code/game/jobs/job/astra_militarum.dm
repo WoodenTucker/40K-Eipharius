@@ -370,7 +370,7 @@ datum/job/ig/bullgryn
 	alt_titles = list(
 		"Cadian Medicae" = /decl/hierarchy/outfit/job/medical/paramedic,
 		"Krieg Quartermaster" = /decl/hierarchy/outfit/job/medical/paramedic/krieg,
-		"Valhallan Medicae" = /decl/hierarchy/outfit/job/medical/paramedic/valhallan
+		"Valhallan Medicae" = /decl/hierarchy/outfit/job/medical/paramedic/valhallan,
 		"Maccabian Guardsman" = /decl/hierarchy/outfit/job/medical/paramedic/maccabian,
 		)
 	auto_rifle_skill = 8
