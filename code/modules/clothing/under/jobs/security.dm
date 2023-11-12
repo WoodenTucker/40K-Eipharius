@@ -142,6 +142,26 @@
 
 // ASTRA MILITARUM STUFF
 
+/obj/item/clothing/under/rank/maccabian
+	name = "Maccabian Battle Uniform"
+	desc = "These durable Battle Uniform are used to represent the resilent Krieg Regiment, Though it smells like shit."
+	icon_state = "M_Uniform"
+	item_state = "M_Uniform-Icon"
+	worn_state = "M_Uniform"
+	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 60, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/under/rank/maccabian/medic
+	icon_state = "M_MUniform"
+	item_state = "M_MUniform-Icon"
+	worn_state = "M_MUniform"
+
+/obj/item/clothing/under/rank/maccabian/sergeant
+	icon_state = "M_SUniform"
+	item_state = "M_SUniform-Icon"
+	worn_state = "M_SUniform"
+
 /obj/item/clothing/under/rank/krieg_uniform
 	name = "krieg Battle Uniform"
 	desc = "These durable Battle Uniform are used to represent the resilent Krieg Regiment, Though it smells like shit."
