@@ -828,6 +828,25 @@ obj/item/clothing/suit/armor
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.4
 
+/obj/item/clothing/suit/armor/maccabian
+	name = "Maccabian Armor"
+	desc = "Produced out of thick, durable synthetic fabric, Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks."
+	icon_state = "M_Armor"
+	item_state = "M_Armor-Icon"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 44, bullet = 44, laser = 44, energy = 20, bomb = 40, bio = 50, rad = 50)
+	sales_price = 20
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+
+
+/obj/item/clothing/suit/armor/maccabian/sergeant
+	name = "Maccabian Sergeant Armor"
+	desc = "Produced out of thick, durable synthetic fabric, Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks. It has red markings, denoting the wearer as a Combat Medicae."
+	icon_state = "M_SArmor"
+	item_state = "M_SArmor-Icon"
+
 /obj/item/clothing/suit/armor/cadiansgt
 	name = "Cadian Sergeant's Flak Armour"
 	desc = "The well-worn armor of an Cadian Regiment Sergeant, this one is padded with Caraspace plates, giving it better protection than average Guardsmen. It has the three-chevrons marked on it upper chest."
