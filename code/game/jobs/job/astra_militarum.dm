@@ -897,13 +897,13 @@ datum/job/ig/bullgryn
 
 /decl/hierarchy/outfit/job/guardsman/maccabian
 	name = OUTFIT_JOB_NAME("Maccabian Guardsman")
-	uniform = /obj/item/clothing/under/maccabian_uniform
-	suit = /obj/item/clothing/suit/armor/maccabian_armor
+	uniform = /obj/item/clothing/under/maccabian
+	suit = /obj/item/clothing/suit/armor/maccabian
 	back = /obj/item/storage/backpack/satchel/maccabian
 	belt = null
 	gloves = /obj/item/clothing/gloves/combat/maccabian
 	shoes = /obj/item/clothing/shoes/jackboots/maccabian
-	head = /obj/item/clothing/head/helmet/maccabianhelmet
+	head = /obj/item/clothing/head/helmet/maccabian
 	mask = /obj/item/clothing/mask/gas/maccabian
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/storage/box/coin
@@ -1166,13 +1166,13 @@ datum/job/ig/bullgryn
 
 /decl/hierarchy/outfit/job/medical/paramedic/maccabian
 	name = OUTFIT_JOB_NAME("Maccabian Medicae")
-	uniform = /obj/item/clothing/under/maccabian_uniform
-	suit = /obj/item/clothing/suit/armor/maccabian_armor/medicae
+	uniform = /obj/item/clothing/under/maccabian
+	suit = /obj/item/clothing/suit/armor/maccabian/medicae
 	back = /obj/item/storage/backpack/satchel/maccabian
 	belt = /obj/item/storage/belt/medical/full
 	gloves = /obj/item/clothing/gloves/combat/maccabian
 	shoes = /obj/item/clothing/shoes/jackboots/maccabian
-	head = /obj/item/clothing/head/helmet/maccabianhelmet
+	head = /obj/item/clothing/head/helmet/maccabian
 	mask = /obj/item/clothing/mask/gas/maccabian
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/storage/box/coin
@@ -1378,13 +1378,13 @@ datum/job/ig/bullgryn
 
 /decl/hierarchy/outfit/job/sergeant/maccabian
 	name = OUTFIT_JOB_NAME("Maccabian Sergeant")
-	uniform = /obj/item/clothing/under/maccabian_uniform/sergeant
-	suit = /obj/item/clothing/suit/armor/maccabian_armor/sergeant
+	uniform = /obj/item/clothing/under/maccabian/sergeant
+	suit = /obj/item/clothing/suit/armor/maccabian/sergeant
 	back = /obj/item/storage/backpack/satchel/maccabian/sergeant
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
-	gloves = /obj/item/clothing/gloves/combat/maccabian/sergeant
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/Smaccabian
 	shoes = /obj/item/clothing/shoes/jackboots/maccabian
-	head = /obj/item/clothing/head/helmet/maccabianhelmet/sergeant
+	head = /obj/item/clothing/head/helmet/maccabian/sergeant
 	mask = /obj/item/clothing/mask/gas/maccabian/sergeant
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/storage/box/coin

@@ -242,7 +242,7 @@
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
 	unacidable = 1 //acid proof bitch
 
-/obj/item/clothing/mask/gas/maccabian
+/obj/item/clothing/mask/gas/maccabian/sergeant
 	name = "Mark IXb Gas Mask"
 	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Maccabian Guardsman."
 	icon_state = "M_SMask"
