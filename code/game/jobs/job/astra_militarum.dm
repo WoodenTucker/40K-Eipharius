@@ -897,11 +897,11 @@ datum/job/ig/bullgryn
 
 /decl/hierarchy/outfit/job/guardsman/maccabian
 	name = OUTFIT_JOB_NAME("Maccabian Guardsman")
-	uniform = /obj/item/clothing/under/maccabian
+	uniform = /obj/item/clothing/under/rank/maccabian
 	suit = /obj/item/clothing/suit/armor/maccabian
 	back = /obj/item/storage/backpack/satchel/maccabian
 	belt = null
-	gloves = /obj/item/clothing/gloves/combat/maccabian
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/maccabian
 	shoes = /obj/item/clothing/shoes/jackboots/maccabian
 	head = /obj/item/clothing/head/helmet/maccabian
 	mask = /obj/item/clothing/mask/gas/maccabian
@@ -1166,11 +1166,11 @@ datum/job/ig/bullgryn
 
 /decl/hierarchy/outfit/job/medical/paramedic/maccabian
 	name = OUTFIT_JOB_NAME("Maccabian Medicae")
-	uniform = /obj/item/clothing/under/maccabian
-	suit = /obj/item/clothing/suit/armor/maccabian/medicae
+	uniform = /obj/item/clothing/under/rank/maccabian/medic
+	suit = /obj/item/clothing/suit/armor/maccabian
 	back = /obj/item/storage/backpack/satchel/maccabian
 	belt = /obj/item/storage/belt/medical/full
-	gloves = /obj/item/clothing/gloves/combat/maccabian
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/maccabian
 	shoes = /obj/item/clothing/shoes/jackboots/maccabian
 	head = /obj/item/clothing/head/helmet/maccabian
 	mask = /obj/item/clothing/mask/gas/maccabian
@@ -1378,7 +1378,7 @@ datum/job/ig/bullgryn
 
 /decl/hierarchy/outfit/job/sergeant/maccabian
 	name = OUTFIT_JOB_NAME("Maccabian Sergeant")
-	uniform = /obj/item/clothing/under/maccabian/sergeant
+	uniform = /obj/item/clothing/under/rank/maccabian/sergeant
 	suit = /obj/item/clothing/suit/armor/maccabian/sergeant
 	back = /obj/item/storage/backpack/satchel/maccabian/sergeant
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
