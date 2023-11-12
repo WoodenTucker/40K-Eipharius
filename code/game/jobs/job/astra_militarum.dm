@@ -294,7 +294,7 @@ datum/job/ig/bullgryn
 		"Cadian Sergeant" = /decl/hierarchy/outfit/job/sergeant,
 		"Catachan Sergeant" = /decl/hierarchy/outfit/job/sergeant/catachan,
 		"Krieg Watchmaster" = /decl/hierarchy/outfit/job/sergeant/krieg,
-		"Valhallan Sergeant" = /decl/hierarchy/outfit/job/sergeant/valhallan
+		"Valhallan Sergeant" = /decl/hierarchy/outfit/job/sergeant/valhallan,
 		"Maccabian Sergeant" = /decl/hierarchy/outfit/job/sergeant/maccabian,
 		)
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
