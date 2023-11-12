@@ -901,7 +901,7 @@ datum/job/ig/bullgryn
 	suit = /obj/item/clothing/suit/armor/maccabian
 	back = /obj/item/storage/backpack/satchel/maccabian
 	belt = null
-	gloves = /obj/item/clothing/gloves/combat/maccabian
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/maccabian
 	shoes = /obj/item/clothing/shoes/jackboots/maccabian
 	head = /obj/item/clothing/head/helmet/maccabian
 	mask = /obj/item/clothing/mask/gas/maccabian
@@ -1167,10 +1167,10 @@ datum/job/ig/bullgryn
 /decl/hierarchy/outfit/job/medical/paramedic/maccabian
 	name = OUTFIT_JOB_NAME("Maccabian Medicae")
 	uniform = /obj/item/clothing/under/rank/maccabian/medic
-	suit = /obj/item/clothing/suit/armor/maccabian/medicae
+	suit = /obj/item/clothing/suit/armor/maccabian
 	back = /obj/item/storage/backpack/satchel/maccabian
 	belt = /obj/item/storage/belt/medical/full
-	gloves = /obj/item/clothing/gloves/combat/maccabian
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/maccabian
 	shoes = /obj/item/clothing/shoes/jackboots/maccabian
 	head = /obj/item/clothing/head/helmet/maccabian
 	mask = /obj/item/clothing/mask/gas/maccabian
