@@ -811,7 +811,7 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/krieger/medicae
 	name = "Krieg Medicae Overcoat"
 	desc = "Produced out of thick, durable synthetic fabric, Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks. It has red markings, denoting the wearer as a Combat Medicae."
-	icon_state = "mkriegcoat"
+	icon_state = "kriegcoat"
 
 /obj/item/clothing/suit/armor/krieger/grenadier
 	name = "Krieg Grenadier Overcoat"
@@ -932,8 +932,8 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/kriegsgt
 	name = "Krieg Watchmaster's Overcoat"
 	desc = "An antiquated uniform only seen by the more experienced of Krieg. Worn by the senior-enlisted of the Krieg Regiment, The Watchmaster... It smells of saddeness and blood."
-	icon_state = "watchcoat2"
-	item_state = "watchcoat2"
+	icon_state = "kriegcoat"
+	item_state = "kriegcoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 45, bullet = 55, laser = 45, energy = 25, bomb = 45, bio = 100, rad = 100)
 	sales_price = 25
