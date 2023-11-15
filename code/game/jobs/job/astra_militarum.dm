@@ -71,6 +71,7 @@
 		"Krieg Guardsman" = /decl/hierarchy/outfit/job/guardsman/krieg,
 		"Valhallan Ice Warrior" = /decl/hierarchy/outfit/job/guardsman/valhallan,
 		"Mordian Iron Guard" = /decl/hierarchy/outfit/job/guardsman/mordian,
+		"Maccabian Guardsman" = /decl/hierarchy/outfit/job/guardsman/maccabian,
 		)
 	cultist_chance = 4
 
@@ -293,7 +294,8 @@ datum/job/ig/bullgryn
 		"Cadian Sergeant" = /decl/hierarchy/outfit/job/sergeant,
 		"Catachan Sergeant" = /decl/hierarchy/outfit/job/sergeant/catachan,
 		"Krieg Watchmaster" = /decl/hierarchy/outfit/job/sergeant/krieg,
-		"Valhallan Sergeant" = /decl/hierarchy/outfit/job/sergeant/valhallan
+		"Valhallan Sergeant" = /decl/hierarchy/outfit/job/sergeant/valhallan,
+		"Maccabian Sergeant" = /decl/hierarchy/outfit/job/sergeant/maccabian,
 		)
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
 	access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
@@ -368,7 +370,8 @@ datum/job/ig/bullgryn
 	alt_titles = list(
 		"Cadian Medicae" = /decl/hierarchy/outfit/job/medical/paramedic,
 		"Krieg Quartermaster" = /decl/hierarchy/outfit/job/medical/paramedic/krieg,
-		"Valhallan Medicae" = /decl/hierarchy/outfit/job/medical/paramedic/valhallan
+		"Valhallan Medicae" = /decl/hierarchy/outfit/job/medical/paramedic/valhallan,
+		"Maccabian Guardsman" = /decl/hierarchy/outfit/job/medical/paramedic/maccabian,
 		)
 	auto_rifle_skill = 8
 	semi_rifle_skill = 8
@@ -892,6 +895,29 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones3/five = 1
 	)
 
+/decl/hierarchy/outfit/job/guardsman/maccabian
+	name = OUTFIT_JOB_NAME("Maccabian Guardsman")
+	uniform = /obj/item/clothing/under/rank/maccabian
+	suit = /obj/item/clothing/suit/armor/maccabian
+	back = /obj/item/storage/backpack/satchel/maccabian
+	belt = null
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/maccabian
+	shoes = /obj/item/clothing/shoes/jackboots/maccabian
+	head = /obj/item/clothing/head/helmet/maccabian
+	mask = /obj/item/clothing/mask/gas/maccabian
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/storage/box/coin
+	r_hand = /obj/item/device/flashlight/lantern
+	suit_store = /obj/item/gun/energy/las/lasgun
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/red_team
+	backpack_contents = list(
+	/obj/item/cell/lasgun/hotshot = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/clothing/accessory/holster/waist = 1,
+	/obj/item/stack/thrones3/five = 1
+	)
+
 //Karskin
 /decl/hierarchy/outfit/job/kasrkin
 	name = OUTFIT_JOB_NAME("Kasrkin")
@@ -1023,7 +1049,7 @@ datum/job/ig/bullgryn
 	)
 
 
-// bullgryn
+// Bullgryn
 /decl/hierarchy/outfit/job/bullgryn
 	name = OUTFIT_JOB_NAME("Bullgryn")
 	uniform = /obj/item/clothing/under/ogryn/jumpsuit
@@ -1138,6 +1164,31 @@ datum/job/ig/bullgryn
 	)
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
 
+/decl/hierarchy/outfit/job/medical/paramedic/maccabian
+	name = OUTFIT_JOB_NAME("Maccabian Medicae")
+	uniform = /obj/item/clothing/under/rank/maccabian/medic
+	suit = /obj/item/clothing/suit/armor/maccabian
+	back = /obj/item/storage/backpack/satchel/maccabian
+	belt = /obj/item/storage/belt/medical/full
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/maccabian
+	shoes = /obj/item/clothing/shoes/jackboots/maccabian
+	head = /obj/item/clothing/head/helmet/maccabian
+	mask = /obj/item/clothing/mask/gas/maccabian
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/storage/box/coin
+	r_hand = /obj/item/device/flashlight/lantern
+	suit_store = /obj/item/gun/energy/las/lasgun
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	id_type = /obj/item/card/id/medical/paramedic
+	l_ear = /obj/item/device/radio/headset/red_team
+	backpack_contents = list(
+	/obj/item/cell/lasgun/hotshot = 1,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/handcuffs = 1,
+	/obj/item/stack/thrones3/five = 1
+	)
+	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
 
 
 // Sniper
@@ -1325,6 +1376,26 @@ datum/job/ig/bullgryn
 	/obj/item/handcuffs = 1
 	)
 
+/decl/hierarchy/outfit/job/sergeant/maccabian
+	name = OUTFIT_JOB_NAME("Maccabian Sergeant")
+	uniform = /obj/item/clothing/under/rank/maccabian/sergeant
+	suit = /obj/item/clothing/suit/armor/maccabian/sergeant
+	back = /obj/item/storage/backpack/satchel/maccabian/sergeant
+	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/Smaccabian
+	shoes = /obj/item/clothing/shoes/jackboots/maccabian
+	head = /obj/item/clothing/head/helmet/maccabian/sergeant
+	mask = /obj/item/clothing/mask/gas/maccabian/sergeant
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/storage/box/coin
+	r_hand = /obj/item/device/flashlight/lantern
+	suit_store = /obj/item/gun/energy/las/lasgun
+	l_ear = /obj/item/device/radio/headset/red_team
+	backpack_contents = list(
+	/obj/item/cell/lasgun/hotshot = 2,
+	/obj/item/stack/thrones2 = 4,
+	/obj/item/stack/thrones3/five = 1
+	)
 
 // Commissar
 

@@ -460,6 +460,16 @@
 	icon_state = "grenpack"
 	item_state = "grenpack"
 
+/obj/item/storage/backpack/satchel/maccabian
+	desc = "Field ready kit, tried and tested through countless encounters."
+	icon_state = "M_Backpack"
+	item_state = "M_Backpack-Icon"
+
+/obj/item/storage/backpack/satchel/maccabian/sergeant
+	desc = "Field ready kit, tried and tested through countless encounters."
+	icon_state = "M_SBackpack"
+	item_state = "M_SBackpack-Icon"
+
 /obj/item/storage/backpack/satchel/grey
 	name = "grey satchel"
 
