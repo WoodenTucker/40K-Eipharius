@@ -233,20 +233,20 @@
 	unacidable = 1 //acid proof bitch
 
 /obj/item/clothing/mask/gas/maccabian
-	name = "Mark IXb Gas Mask"
+	name = "Maccabian Metal Mask"
 	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Maccabian Guardsman."
-	icon_state = "M_Mask"
-	item_state = "M_Mask-Icon"
+	icon_state = "M_Mask-Icon"
+	item_state = "M_Mask"
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 95, rad = 0)
 	body_parts_covered = FACE|EYES|HEAD
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
 	unacidable = 1 //acid proof bitch
 
 /obj/item/clothing/mask/gas/maccabian/sergeant
-	name = "Mark IXb Gas Mask"
+	name = "Maccabian Metal Mask"
 	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Maccabian Guardsman."
-	icon_state = "M_SMask"
-	item_state = "M_SMask-Icon"
+	icon_state = "M_SMask-Icon"
+	item_state = "M_SMask"
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 95, rad = 0)
 	body_parts_covered = FACE|EYES|HEAD
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE

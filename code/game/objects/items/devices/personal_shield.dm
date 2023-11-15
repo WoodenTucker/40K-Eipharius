@@ -100,14 +100,14 @@
 	name = "Inquisitorial Rosette"
 	desc = "A handheld amulet which incorporates a powerful force field generator. A rare and highly prized piece of technology and an icon of the Imperial Creed that signifies someones status as a member of the inquisition, being near such an ancient and powerful thing brings great joy to those who are faithful. This one looks particularly old and non-functional."
 	icon = 'icons/obj/device.dmi'
-	icon_state = "rosette"
+	icon_state = "shitty rosette"
 	w_class = ITEM_SIZE_SMALL
 
 /obj/item/clothing/rosette
 	name = "Inquisitorial Rosette"
 	desc = "A handheld amulet which incorporates a powerful force field generator. A rare and highly prized piece of technology and an icon of the Imperial Creed that signifies someones status as a member of the inquisition, being near such an ancient and powerful thing brings great joy to those who are faithful. Can be worn around the neck."
 	icon = 'icons/obj/device.dmi'
-	icon_state = "rosette"
+	icon_state = "shitty rosette"
 	w_class = ITEM_SIZE_SMALL
 	slot_flags = SLOT_TIE
 

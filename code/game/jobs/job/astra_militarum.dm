@@ -294,7 +294,7 @@ datum/job/ig/bullgryn
 		"Cadian Sergeant" = /decl/hierarchy/outfit/job/sergeant,
 		"Catachan Sergeant" = /decl/hierarchy/outfit/job/sergeant/catachan,
 		"Krieg Watchmaster" = /decl/hierarchy/outfit/job/sergeant/krieg,
-		"Valhallan Sergeant" = /decl/hierarchy/outfit/job/sergeant/valhallan
+		"Valhallan Sergeant" = /decl/hierarchy/outfit/job/sergeant/valhallan,
 		"Maccabian Sergeant" = /decl/hierarchy/outfit/job/sergeant/maccabian,
 		)
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
@@ -370,7 +370,7 @@ datum/job/ig/bullgryn
 	alt_titles = list(
 		"Cadian Medicae" = /decl/hierarchy/outfit/job/medical/paramedic,
 		"Krieg Quartermaster" = /decl/hierarchy/outfit/job/medical/paramedic/krieg,
-		"Valhallan Medicae" = /decl/hierarchy/outfit/job/medical/paramedic/valhallan
+		"Valhallan Medicae" = /decl/hierarchy/outfit/job/medical/paramedic/valhallan,
 		"Maccabian Guardsman" = /decl/hierarchy/outfit/job/medical/paramedic/maccabian,
 		)
 	auto_rifle_skill = 8
