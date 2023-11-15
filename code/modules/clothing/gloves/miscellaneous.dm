@@ -160,12 +160,12 @@
 	item_state = "krieggloves"
 
 /obj/item/clothing/gloves/thick/swat/combat/maccabian
-	icon_state = "M_Gloves"
-	item_state = "M_Gloves-Icon"
+	icon_state = "M_Gloves-Icon"
+	item_state = "M_Gloves"
 
 /obj/item/clothing/gloves/thick/swat/combat/Smaccabian
-	icon_state = "M_SGauntlets"
-	item_state = "M_SGauntlets-Icon"
+	icon_state = "M_SGauntlets-Icon"
+	item_state = "M_SGauntlets"
 
 /obj/item/clothing/gloves/prac_gloves
 	name = "practioner gloves"
