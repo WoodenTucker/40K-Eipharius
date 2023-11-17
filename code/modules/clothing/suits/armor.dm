@@ -811,7 +811,7 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/krieger/medicae
 	name = "Krieg Medicae Overcoat"
 	desc = "Produced out of thick, durable synthetic fabric, Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks. It has red markings, denoting the wearer as a Combat Medicae."
-	icon_state = "mkriegcoat"
+	icon_state = "kriegcoat"
 
 /obj/item/clothing/suit/armor/krieger/grenadier
 	name = "Krieg Grenadier Overcoat"
@@ -831,8 +831,8 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/maccabian
 	name = "Maccabian Armor"
 	desc = "Produced out of thick, durable synthetic fabric, Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks."
-	icon_state = "M_Armor"
-	item_state = "M_Armor-Icon"
+	icon_state = "M_Armor-Icon"
+	item_state = "M_Armor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 44, bullet = 44, laser = 44, energy = 20, bomb = 40, bio = 50, rad = 50)
 	sales_price = 20
@@ -844,8 +844,8 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/maccabian/sergeant
 	name = "Maccabian Sergeant Armor"
 	desc = "Produced out of thick, durable synthetic fabric, Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks. It has red markings, denoting the wearer as a Combat Medicae."
-	icon_state = "M_SArmor"
-	item_state = "M_SArmor-Icon"
+	icon_state = "M_SArmor-Icon"
+	item_state = "M_SArmor"
 
 /obj/item/clothing/suit/armor/cadiansgt
 	name = "Cadian Sergeant's Flak Armour"
@@ -932,8 +932,8 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/kriegsgt
 	name = "Krieg Watchmaster's Overcoat"
 	desc = "An antiquated uniform only seen by the more experienced of Krieg. Worn by the senior-enlisted of the Krieg Regiment, The Watchmaster... It smells of saddeness and blood."
-	icon_state = "watchcoat2"
-	item_state = "watchcoat2"
+	icon_state = "kriegcoat"
+	item_state = "kriegcoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 45, bullet = 55, laser = 45, energy = 25, bomb = 45, bio = 100, rad = 100)
 	sales_price = 25

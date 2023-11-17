@@ -160,12 +160,12 @@
 	item_state = "krieggloves"
 
 /obj/item/clothing/gloves/thick/swat/combat/maccabian
-	icon_state = "M_Gloves"
-	item_state = "M_Gloves-Icon"
+	icon_state = "M_Gloves-Icon"
+	item_state = "M_Gloves"
 
 /obj/item/clothing/gloves/thick/swat/combat/Smaccabian
-	icon_state = "M_SGauntlets"
-	item_state = "M_SGauntlets-Icon"
+	icon_state = "M_SGauntlets-Icon"
+	item_state = "M_SGauntlets"
 
 /obj/item/clothing/gloves/prac_gloves
 	name = "practioner gloves"
@@ -204,8 +204,8 @@
 /obj/item/clothing/gloves/combat/krieg/grenadier
 	name = "Krieg Grenadier Pattern Combat Gloves"
 	desc = "The Krieg Grenadier's distinct gloves designed to be resistant against all common chemical and biological attacks, as well as being uparmored for extra protection."
-	icon_state = "grengloves"
-	item_state = "grengloves"
+	icon_state = "krieggloves"
+	item_state = "krieggloves"
 	siemens_coefficient = 0
 	permeability_coefficient = 0.05
 	armor = list(melee = 0, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 30, rad = 0)

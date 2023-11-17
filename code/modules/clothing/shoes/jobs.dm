@@ -210,8 +210,8 @@
 /obj/item/clothing/shoes/jackboots/maccabian
 	name = "Maccabian Pattern Combat Boots"
 	desc = "The Krieg Regiment, unlike most of the Astra Militarum, prefer their less protective but more mobile boots over the standard Mars Pattern used by the Munitorium."
-	icon_state = "M_Boots"
-	item_state = "M_Boots-Icon"
+	icon_state = "M_Boots-Icon"
+	item_state = "M_Boots"
 	armor = list(melee = 20, bullet = 20, laser = 20, energy = 30, bomb = 40, bio = 100, rad = 100)
 	cold_protection = FEET
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
