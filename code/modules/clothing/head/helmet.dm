@@ -149,7 +149,7 @@
 	name = "Maccabian Flak helmet"
 	desc = "A solid helmet made from several layers of ablative and impact-resistant materials. A good helmet to wear if you're not looking to catch a skull-full of shrapnel."
 	icon_state = "M_Helmet-Icon"
-	item_state "M_Helmet"
+	item_state = "M_Helmet"
 	armor = list(melee = 25, bullet = 40, laser = 40, energy = 25, bomb = 25, bio = 0, rad = 10)
 	siemens_coefficient = 0.6
 
