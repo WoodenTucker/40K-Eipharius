@@ -252,12 +252,19 @@
 	w_class = ITEM_SIZE_SMALL
 
 //IMPORTANT - NEEDS TWEAKING DEPENDING ON IF ERTS ARE PLANNED TO BE USED
-/obj/item/device/radio/headset/ert
+/obj/item/device/radio/headset/ert // Nobles
 	name = "Standard Issue Vox"
 	desc = "A sekret headset"
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/secure1
+
+/obj/item/device/radio/headset/ert2 // Ganger and RT
+	name = "Standard Issue Vox"
+	desc = "A sekret headset"
+	icon_state = "com_headset"
+	item_state = "headset"
+	ks2type = /obj/item/device/encryptionkey/secure2
 
 //I have no idea if this is used rn
 /obj/item/device/radio/headset/ia
@@ -480,7 +487,7 @@
 	desc = "A command-level vox with high tiers of encryption."
 	icon_state = "com_headset"
 	item_state = "headset"
-	ks1type = /obj/item/device/encryptionkey/red
+	ks1type = ks2type = /obj/item/device/encryptionkey/secure2
 	ks2type = /obj/item/device/encryptionkey/heads/captain
 	slot_flags = SLOT_EARS
 	w_class = ITEM_SIZE_SMALL

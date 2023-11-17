@@ -750,6 +750,7 @@ Pilgrim Fate System
 	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/storage/backpack/satchel/warfare
 	mask = null
+	l_ear = /obj/item/device/radio/headset/ert2
 	r_pocket = /obj/item/storage/box/coin
 	l_pocket = /obj/item/device/flashlight/lantern
 	belt = /obj/item/gun/projectile/revolver/villiers
@@ -767,7 +768,7 @@ Pilgrim Fate System
 	back = /obj/item/storage/backpack/satchel/warfare/ogryn
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/armor/ogryn/bouncer
-	l_ear = /obj/item/device/radio/headset/ert
+	l_ear = /obj/item/device/radio/headset/ert2
 	r_ear = null
 	l_pocket = /obj/item/device/flashlight/lantern
 	pda_slot = null

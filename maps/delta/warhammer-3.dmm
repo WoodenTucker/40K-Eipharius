@@ -17323,10 +17323,6 @@
 /turf/simulated/floor/trench,
 /area/cadiaoutpost/oa/gatehouse)
 "qlW" = (
-/obj/machinery/door/unpowered/jail_door{
-	name = "Pathfinder Storage";
-	req_one_access = list(253)
-	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/villageinside)
 "qmo" = (
@@ -59138,7 +59134,7 @@ eTh
 oli
 oli
 oli
-oli
+uEM
 oli
 oli
 oli
@@ -59389,7 +59385,7 @@ pNK
 eTh
 eTh
 eTh
-kNU
+eTh
 eTh
 kNU
 eTh

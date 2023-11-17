@@ -259,7 +259,6 @@
 	cultist_chance = 0
 	
 	equip(var/mob/living/carbon/human/skitarii/H)
-		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Skitarii Alpha")
 		H.set_trait(new/datum/trait/death_tolerant()) //They literally open up dead bodies of xenos and humans alike, why would they be disgusted of organs and blood?

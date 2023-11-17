@@ -57,7 +57,7 @@
 /obj/item/device/encryptionkey/red_alpha
 	name = "guardsmen encryption key"
 	icon_state = "cypherkey"
-	channels = list("Militarum" = 1, "Omega" = 1, "Vox" = 1)
+	channels = list("Militarum" = 1, "Vox" = 1)
 	origin_tech = list(TECH_ILLEGAL = 1)
 	syndie = 1
 
@@ -160,11 +160,16 @@
 	channels = list("Vox" = 1, "Secure" = 1)
 	origin_tech = list(TECH_ILLEGAL = 1)
 
+/obj/item/device/encryptionkey/secure2
+	name = "secure vox 2"
+	channels = list("Vox" = 1, "Omega" = 1)
+	origin_tech = list(TECH_ILLEGAL = 1)
+
 //com-linked guardsmen key
 /obj/item/device/encryptionkey/headset_sec
 	name = "guardsmen com-linked encryption key"
 	icon_state = "sec_cypherkey"
-	channels = list("Command" = 1, "Militarum" =1, "Omega" = 1, "Vox" = 1)
+	channels = list("Command" = 1, "Militarum" =1, "Vox" = 1)
 	syndie = 1
 
 //unused
@@ -233,7 +238,7 @@
 /obj/item/device/encryptionkey/heads/hos
 	name = "Commissars encryption key"
 	icon_state = "hos_cypherkey"
-	channels = list("Militarum" = 1, "Omega" = 1, "Command" = 1)
+	channels = list("Militarum" = 1, "Command" = 1)
 	syndie = 1
 
 //magos key
@@ -252,7 +257,7 @@
 /obj/item/device/encryptionkey/heads/hop
 	name = "Steward encryption key"
 	icon_state = "hop_cypherkey"
-	channels = list( "Militarum" = 1, "Omega" = 1, "Command" = 1)
+	channels = list( "Militarum" = 1, "Command" = 1)
 	syndie = 1
 
 /obj/item/device/encryptionkey/headset_cargo
@@ -270,7 +275,7 @@
 /obj/item/device/encryptionkey/headset_inquisition
 	name = "inquisition radio key"
 	icon_state = "hos_cypherkey"
-	channels = list("Vermillion" = 1, "Command" = 1, "Omega" = 1, "Militarum" = 1,)
+	channels = list("Vermillion" = 1, "Command" = 1, "Militarum" = 1,)
 
 //needs fix if usage planned
 /obj/item/device/encryptionkey/ert
