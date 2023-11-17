@@ -1358,20 +1358,20 @@ datum/job/ig/bullgryn
 	name = OUTFIT_JOB_NAME("Valhallan Sergeant")
 	uniform =  /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallasgt
-	belt = null // pistol
+	belt = /obj/item/gun/projectile/slugrevolver
 	head = /obj/item/clothing/head/valushanka
 	mask = null
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
-	suit_store = null // rifle maybe? not sure
+	suit_store = /obj/item/gun/projectile/lockebolter
 	l_ear = /obj/item/device/radio/headset/red_team
 	r_hand = /obj/item/storage/box/coin
 	neck = /obj/item/reagent_containers/food/drinks/canteen/valhallan
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
+	/obj/item/ammo_magazine/c44/ms = 3,
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/handcuffs = 1
 	)

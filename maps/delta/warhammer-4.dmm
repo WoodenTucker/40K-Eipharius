@@ -9331,6 +9331,10 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
+"Xk" = (
+/obj/structure/ladder,
+/turf/simulated/open,
+/area/cadiaoutpost/oa/villageinside)
 "Xl" = (
 /obj/effect/floor_decal/spline/fancy/wood/three_quarters,
 /obj/structure/flora/pottedplant{
@@ -43220,7 +43224,7 @@ gN
 PN
 PN
 PN
-PN
+Xk
 PN
 PN
 PN

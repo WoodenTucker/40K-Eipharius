@@ -2231,6 +2231,9 @@
 /area/cadiaoutpost/oa/medicae)
 "cku" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start{
+	name = "Ganger"
+	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -3506,15 +3509,12 @@
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/farm)
 "dxN" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/start{
-	name = "Ganger"
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 1
 	},
-/turf/simulated/floor/tiled{
-	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
-	icon_state = "white1"
-	},
-/area/cadiaoutpost/oa/service/inn)
+/obj/item/card/id/key/super/pathfinder,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/new_hive/caves)
 "dxO" = (
 /obj/effect/water/bottom,
 /obj/effect/water/top,
@@ -3795,6 +3795,10 @@
 /obj/item/flame/lighter/random,
 /obj/item/forensics/sample_kit,
 /obj/item/storage/briefcase/crimekit,
+/obj/item/card/id/key/middle/jail{
+	access = list(1984,2,3,5,10);
+	name = "marshal's key"
+	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
 "dOG" = (
@@ -4354,6 +4358,10 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"eqV" = (
+/obj/item/card/id/key/super/pathfinder,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/new_hive/caves)
 "ert" = (
 /obj/structure/warfare/barricade/sandbag,
 /obj/structure/warfare/barricade/sandbag{
@@ -7526,7 +7534,8 @@
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 900;
 	name = "Arbites Office";
-	req_one_access = list()
+	req_one_access = list();
+	req_access = list(1984,2,3,5,10)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -10058,7 +10067,7 @@
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 2000;
 	name = "Magistratum Armory";
-	req_one_access = list()
+	req_one_access = list(1984)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -12198,17 +12207,14 @@
 	},
 /obj/random/loot/badweapon,
 /obj/random/loot/badweapon,
-/obj/item/card/id/key{
-	name = "Gang Key";
-	access = list(355)
+/obj/item/card/id/key/middle/ganger{
+	access = list(355,268)
 	},
-/obj/item/card/id/key{
-	name = "Gang Key";
-	access = list(355)
+/obj/item/card/id/key/middle/ganger{
+	access = list(355,268)
 	},
-/obj/item/card/id/key{
-	name = "Gang Key";
-	access = list(355)
+/obj/item/card/id/key/middle/ganger{
+	access = list(355,268)
 	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -12859,7 +12865,7 @@
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 1200;
 	name = "Magistratum Cells";
-	req_one_access = list()
+	req_one_access = list(1984,63,10,331)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -13641,7 +13647,7 @@
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 1200;
 	name = "Magistratum Barracks";
-	req_one_access = list()
+	req_one_access = list(1984,63,10,331)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -13830,7 +13836,8 @@
 "mZt" = (
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 2000;
-	name = "Magistratum Interrogation Room"
+	name = "Magistratum Interrogation Room";
+	req_one_access = list(1984,63,10,331)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -14677,7 +14684,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /obj/machinery/computer/rdconsole/core{
-	req_one_access = list()
+	req_one_access = list();
+	req_access = list()
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
@@ -16098,9 +16106,6 @@
 	armor = list("melee"=40,"bullet"=40,"laser"=40,"energy"=0,"bomb"=0,"bio"=30,"rad"=10)
 	},
 /obj/item/stack/thrones2/ten,
-/obj/item/card/id/key/middle/jail{
-	access = list(1984,2)
-	},
 /obj/item/card/id/key/grand/monastary{
 	access = list(213,211)
 	},
@@ -16450,6 +16455,14 @@
 	icon_state = "wood_1tileendtable";
 	dir = 1
 	},
+/obj/item/card/id/key/middle/jail{
+	access = list(1984,2,3,5,10);
+	name = "marshal's key"
+	},
+/obj/item/card/id/key/middle/jail{
+	access = list(1984,2,3,5,10);
+	name = "marshal's key"
+	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
 "puV" = (
@@ -16530,6 +16543,22 @@
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/villageinside/lab)
+"pzZ" = (
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/obj/random/loot/badweapon,
+/obj/random/loot/badweapon,
+/obj/item/card/id/key/middle/ganger{
+	access = list(355,268)
+	},
+/obj/item/card/id/key/middle/ganger{
+	access = list(355,268)
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/service/inn)
 "pAT" = (
 /obj/machinery/light/purple,
 /obj/effect/floor_decal/newcorner/plating{
@@ -17626,7 +17655,8 @@
 /area/cadiaoutpost/oa/security/armory)
 "qzW" = (
 /obj/item/card/id/key/middle/jail{
-	access = list(1984,2)
+	access = list(1984,2,3,5,10);
+	name = "arbitrator's key"
 	},
 /obj/item/card/id/key/grand/monastary{
 	access = list(213,211)
@@ -17634,6 +17664,10 @@
 /obj/structure/table/graf/reinf_table{
 	icon_state = "table_horizontal2";
 	dir = 4
+	},
+/obj/item/card/id/key/middle/jail{
+	access = list(1984,2,3,5,10);
+	name = "arbitrator's key"
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -20467,6 +20501,15 @@
 "sTT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/spline/plain,
+/obj/item/card/id/key/middle/ganger{
+	access = list(355,268)
+	},
+/obj/item/card/id/key/middle/ganger{
+	access = list(355,268)
+	},
+/obj/item/card/id/key/middle/ganger{
+	access = list(355,268)
+	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -20965,7 +21008,8 @@
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 900;
 	name = "Marshall's Office";
-	req_one_access = list()
+	req_one_access = list();
+	req_access = list(1984,2,3,5,10)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -22848,7 +22892,7 @@
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 1200;
 	name = "Magistratum First Aid Bay";
-	req_one_access = list()
+	req_one_access = list(1984,63,10,331)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -22927,7 +22971,8 @@
 "vrp" = (
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 1200;
-	name = "Magistratum Reception"
+	name = "Magistratum Reception";
+	req_one_access = list(1984,63,10,331)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -23022,11 +23067,12 @@
 	},
 /area/cadiaoutpost/oa/service/inn)
 "vxx" = (
-/obj/effect/floor_decal/turf/grimy,
 /obj/effect/landmark/start{
 	name = "Ganger"
 	},
-/turf/simulated/floor/darkwood/rotten,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/service/inn)
 "vye" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -25618,7 +25664,7 @@
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 1200;
 	name = "Magistratum Evidence Storage";
-	req_one_access = list()
+	req_one_access = list(1984,63,10,331)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -25760,6 +25806,21 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"xJL" = (
+/obj/effect/floor_decal/spline/plain,
+/obj/item/card/id/key/middle/ganger{
+	access = list(355,268)
+	},
+/obj/item/card/id/key/middle/ganger{
+	access = list(355,268)
+	},
+/obj/item/card/id/key/middle/ganger{
+	access = list(355,268)
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/service/inn)
 "xJX" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /obj/structure/reagent_dispensers/acid{
@@ -39716,9 +39777,9 @@ iZm
 iZm
 tpQ
 iMB
-xeQ
-hqB
-hqB
+dxN
+eqV
+eqV
 tpQ
 dZQ
 iZm
@@ -39968,7 +40029,7 @@ byD
 iZm
 tpQ
 pQz
-xeQ
+dxN
 wdi
 xJo
 tpQ
@@ -40220,9 +40281,9 @@ iZm
 iZm
 tpQ
 qZJ
-xeQ
-hqB
-hqB
+dxN
+eqV
+eqV
 hqB
 tpQ
 tpQ
@@ -73957,7 +74018,7 @@ qKy
 ldT
 ldT
 ldT
-lxD
+pzZ
 pWN
 xnK
 aFX
@@ -74211,7 +74272,7 @@ ldT
 ldT
 lxD
 cku
-xnK
+xJL
 aFX
 ldT
 nJP
@@ -74455,14 +74516,14 @@ tpQ
 tpQ
 ldT
 qGZ
-dxN
+vdn
 hhw
 joM
 bXR
 ldT
 ldT
 iae
-daM
+vxx
 sTT
 aFX
 ldT
@@ -76726,7 +76787,7 @@ lHe
 ldT
 sey
 iGb
-vxx
+ncM
 ncM
 ncM
 fwu
