@@ -116,7 +116,7 @@
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1
-	
+	/obj/item/clothing/rosarius
 		)
 
 /decl/hierarchy/outfit/job/preacher
