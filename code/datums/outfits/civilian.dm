@@ -95,6 +95,7 @@
 
 /decl/hierarchy/outfit/job/confessor
 	name = OUTFIT_JOB_NAME("Deacon")
+	head = /obj/item/clothing/head/preacher
 	uniform = /obj/item/clothing/under/rank/chaplain
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/civilian/chaplain
@@ -115,6 +116,7 @@
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1
+	
 		)
 
 /decl/hierarchy/outfit/job/preacher
