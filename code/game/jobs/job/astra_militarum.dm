@@ -1401,7 +1401,7 @@ datum/job/ig/bullgryn
 
 /decl/hierarchy/outfit/job/ig/commissar
 	name = OUTFIT_JOB_NAME("Cadian Commissar")
-	uniform = /obj/item/clothing/under/color/black
+	uniform = /obj/item/clothing/under/hosformalmale
 	suit = /obj/item/clothing/suit/armor/commissar
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/melee/sword/commissword
