@@ -199,3 +199,15 @@
 	icon_state = "timbs"
 	item_state = "timbs"
 */
+
+/obj/item/clothing/shoes/scion
+	name = "Tempestus Scion Boots"
+	desc = "Armoured boots belonging to the elite Tempestus Scions."
+	icon = 'icons/obj/clothing/Tempestus_Scion.dmi'
+	icon_state = "Boots Icon"
+	item_state = "Boots"
+	force = 5
+	armor = list(melee = 60, bullet = 60, laser = 60,energy = 25, bomb = 50, bio = 100, rad = 0)
+	item_flags = ITEM_FLAG_NOSLIP
+	siemens_coefficient = 0.6
+	can_hold_knife = 1
