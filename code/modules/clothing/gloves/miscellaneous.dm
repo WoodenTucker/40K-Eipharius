@@ -255,7 +255,7 @@
 
 /obj/item/clothing/gloves/thick/combat/scion
 	desc = "Armoured gauntlets belonging to the elite Tempestus Scions."
-	name = "Tempestus Gauntlets
+	name = "Tempestus Gauntlets"
 	icon = 'icons/obj/clothing/Tempestus_Scion.dmi'
 	icon_state = "Gloves Icon"
 	item_state = "Gloves"
