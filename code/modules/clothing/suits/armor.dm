@@ -886,9 +886,9 @@ obj/item/clothing/suit/armor
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.1
 
-/obj/item/clothing/suit/armor/scion
-	name = "Tempestus Scion's Carapace Armour"
-	desc = "The black carapace body armor of the Tempestus Scion, this one has scorch marks and nicks covering it like a mural of carnage."
+/obj/item/clothing/suit/armor/stormtrooper
+	name = "Stormtrooper's Carapace Armour"
+	desc = "The black carapace body armor of the Inquisitorial Stomtrooper, this one has scorch marks and nicks covering it like a mural of carnage."
 	icon_state = "storm"
 	item_state = "fharmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -896,7 +896,7 @@ obj/item/clothing/suit/armor
 	sales_price = 40
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-/obj/item/clothing/suit/armor/scion/New()
+/obj/item/clothing/suit/armor/stormtrooper/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.3
 
