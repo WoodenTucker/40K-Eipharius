@@ -691,7 +691,7 @@
 	canremove = FALSE
 	var/can_toggle = 1
 
-/obj/item/storage/backpack/satchel/warfare/sciont/verb/togglelasgun()
+/obj/item/storage/backpack/satchel/warfare/scion/verb/togglelasgun()
 	set name = "Retrieve Hotshot Lasgun"
 	set category = "Lasgun"
 	set src in usr
