@@ -400,6 +400,39 @@
 	slowdown_per_slot[slot_r_hand] = 0.22
 	slowdown_per_slot[slot_l_hand] = 0.22
 
+
+/obj/item/gun/energy/las/hotshot/power_pack
+	name = "Ryza Pattern Hot-Shot Lasgun"
+	desc = "The favored standard weapon of Tempestus Scions, reknowned for its damage and penetration. This one is linked to a backpack Power Pack, providing it with near-unlimited charge."
+	icon_state = "hotshotgun"
+	item_state = "lascar"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_HUGE
+	force = 15
+	one_hand_penalty = 1.5
+	fire_delay = 3.1
+	accuracy = 0.1
+	self_recharge = 1
+	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/las/lasgun/hotshot
+	charge_cost = 0
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	wielded_item_state = "lascar-wielded"
+	sales_price = null
+
+
+	firemodes = list(
+		list(mode_name="semi-automatic",       burst=1, fire_delay=3.1, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=0),
+		list(mode_name="burst",       burst=3, fire_delay=5.9, burst_accuracy=list(1,0,0), dispersion=null, automatic = 0, charge_cost=0),
+		list(mode_name="automatic",       burst=1, fire_delay=0.8, burst_accuracy=null, dispersion=null, automatic = 1, charge_cost=0),
+		)
+
+/obj/item/gun/energy/las/hotshot/power_pack/dropped()
+	..()
+	spawn(1) if(src) qdel(src)
+
 /obj/item/gun/energy/las/hotshot/krieg
 	name = "Type XIV Lasgun Heavy"
 	desc = "The standard Hellgun issued to Grenadiers of the Death Korps of Krieg."
