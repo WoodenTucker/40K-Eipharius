@@ -524,3 +524,14 @@
 	siemens_coefficient = 0
 	flags_inv = BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EYES //For reasons.
+
+/obj/item/clothing/head/helmet/tscion //Make sure to reference tscion, there's an older scion helmet.
+	name = "Tempestus Scion Helmet"
+	desc = "A reinforced helmet and faceplate system designed for the elite Tempestus Scions. Comprised of multiple layers of ceramite, comprising a solid carapace armour system."
+	icon = 'icons/obj/clothing/Tempestus_Scion.dmi'
+	icon_state = "Helmet Icon"
+	item_state = "Helmet"
+	armor = list(melee = 60, bullet = 60, laser = 60, energy = 60, bomb = 60, bio = 100, rad = 60)
+	siemens_coefficient = 0
+	flags_inv = BLOCKHAIR
+	body_parts_covered = HEAD|FACE|EYES
