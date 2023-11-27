@@ -169,12 +169,12 @@
 	strength = STR_HIGH
 	genders = list(MALE)
 	slowdown = -0.2 //Peak physical fitness.
-
+	inherent_verbs = list(
+	/mob/living/carbon/human/scion/proc/setupstart
+		)
 	spawn_flags = null
 	species_flags = SPECIES_FLAG_NO_PAIN //Highly trained and indoctrinated, they have great pain tolerance.
-	inherent_verbs = list(
-	/mob/living/carbon/human/scion/proc/setupstart,
-	)
+
 
 /datum/species/human/scion/handle_post_spawn(var/mob/living/carbon/human/scion/H)
 	. = ..()
