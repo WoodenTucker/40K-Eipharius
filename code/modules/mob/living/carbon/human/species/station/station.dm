@@ -242,7 +242,7 @@
 			equip_to_slot_or_del(new /obj/item/grenade/frag, slot_in_backpack)
 			visible_message("[name] grabs their kit!")
 			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
-			src.add_stats(rand(19,21),rand(19,21),rand(19,21),(19,21)) //gives stats str, dext, end, int
+			src.add_stats(rand(19,21),rand(19,21),rand(19,21),rand(19,21)) //gives stats str, dext, end, int
 			src.add_skills(rand(19,21),rand(19,21),rand(16,18),rand(12,14),rand(12,14)) //melee, ranged, med, eng, surgery
 			src.set_trait(new/datum/trait/death_tolerant())
 			src.update_eyes() //should fix grey vision
