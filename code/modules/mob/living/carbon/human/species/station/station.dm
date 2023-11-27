@@ -227,7 +227,7 @@
 	var/tempclass = input("Select a Class","Class Selection") as null|anything in list("Tempestus Scion Trooper")
 	switch(tempclass)
 		if("Tempestus Scion Trooper")
-			equip_to_slot_or_del(new obj/item/clothing/suit/armor/scion, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/scion, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/glasses/thermal, slot_glasses)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/specops, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/security, slot_wear_mask)
