@@ -186,9 +186,11 @@
 
 /mob/living/carbon/human/scion/Initialize()
 	. = ..()
-	src.rejuvenate()
+	set_species("Tempestus Scion")
+	warfare_faction = IMPERIUM
+	offer_mob()
 
-/mob/living/carbon/human/scion/proc/request_player_s() //reqs the player
+/mob/living/carbon/human/scion/proc/request_player() //reqs the player
 	for(var/mob/observer/ghost/O in GLOB.player_list)
 		if(O.client)
 			question(O.client)
