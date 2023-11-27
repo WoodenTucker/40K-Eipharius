@@ -224,36 +224,39 @@
 		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
 		return
 
-	equip_to_slot_or_del(new obj/item/clothing/suit/armor/scion, slot_wear_suit)
-	equip_to_slot_or_del(new /obj/item/clothing/glasses/thermal, slot_glasses)
-	equip_to_slot_or_del(new /obj/item/device/radio/headset/specops, slot_l_ear)
-	equip_to_slot_or_del(new /obj/item/clothing/mask/gas/security, slot_wear_mask)
-	equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare/scion, slot_back)
-	equip_to_slot_or_del(new /obj/item/clothing/shoes/scion, slot_shoes)
-	equip_to_slot_or_del(new /obj/item/melee/chain/inqcs, slot_s_store)
-	equip_to_slot_or_del(new /obj/item/clothing/head/helmet/tscion, slot_head)
-	equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/combat/scion, slot_gloves)
-	equip_to_slot_or_del(new /obj/item/grenade/frag/high_yield/krak, slot_in_backpack)
-	equip_to_slot_or_del(new /obj/item/grenade/frag/high_yield/krak, slot_in_backpack)
-	equip_to_slot_or_del(new /obj/item/grenade/frag, slot_in_backpack)
-	equip_to_slot_or_del(new /obj/item/grenade/frag, slot_in_backpack)
-	visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
-	playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
-	src.add_stats(rand(19,21),rand(19,21),rand(19,21),(19,21)) //gives stats str, dext, end, int
-	src.add_skills(rand(19,21),rand(19,21),rand(16,18),rand(12,14),rand(12,14)) //melee, ranged, med, eng, surgery
-	src.set_trait(new/datum/trait/death_tolerant())
-	src.update_eyes() //should fix grey vision
-	src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC) //secondary language
-	src.bladder = -INFINITY
-	src.bowels = -INFINITY 
-	src.thirst = INFINITY
-	src.nutrition = INFINITY 
-	src.verbs -= /mob/living/carbon/human/scion/proc/setupstart //removes verb at the end so they can't spam it for whatever reason
-	client?.color = null
+	var/tempclass = input("Select a Class","Class Selection") as null|anything in list("Tempestus Scion Trooper")
+	switch(tempclass)
+		if("Tempestus Scion Trooper")
+			equip_to_slot_or_del(new obj/item/clothing/suit/armor/scion, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/glasses/thermal, slot_glasses)
+			equip_to_slot_or_del(new /obj/item/device/radio/headset/specops, slot_l_ear)
+			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/security, slot_wear_mask)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare/scion, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/scion, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/melee/chain/inqcs, slot_s_store)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/tscion, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/combat/scion, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/grenade/frag/high_yield/krak, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/grenade/frag/high_yield/krak, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/grenade/frag, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/grenade/frag, slot_in_backpack)
+			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
+			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
+			src.add_stats(rand(19,21),rand(19,21),rand(19,21),(19,21)) //gives stats str, dext, end, int
+			src.add_skills(rand(19,21),rand(19,21),rand(16,18),rand(12,14),rand(12,14)) //melee, ranged, med, eng, surgery
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.update_eyes() //should fix grey vision
+			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC) //secondary language
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY 
+			src.thirst = INFINITY
+			src.nutrition = INFINITY 
+			src.verbs -= /mob/living/carbon/human/scion/proc/setupstart //removes verb at the end so they can't spam it for whatever reason
+			client?.color = null
 
-	var/obj/item/card/id/dog_tag/guardsman/W = new
-	W.icon_state = "tagred"
-	W.assignment = "Tempestus Scion"
-	W.registered_name = real_name
-	W.update_label()
-	equip_to_slot_or_del(W, slot_wear_id)
+			var/obj/item/card/id/dog_tag/guardsman/W = new
+			W.icon_state = "tagred"
+			W.assignment = "Tempestus Scion"
+			W.registered_name = real_name
+			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)
