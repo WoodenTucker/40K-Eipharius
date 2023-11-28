@@ -714,5 +714,4 @@
 	desc = "A standardised armoured undersuit worn by Tempestus Scions."
 	icon_state = "ScionUndersuit"
 	item_state = "ScionUndersuit"
-	worn_state = "ScionUndersuit"
 	armor = list(melee = 30, bullet = 40, laser = 20, energy = 20, bomb = 20, bio = 20, rad = 0)
