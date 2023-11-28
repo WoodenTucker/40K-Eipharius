@@ -517,6 +517,14 @@
 		return
 	open(user)//If it's in your pocket then open it.
 
+/obj/item/storage/box/ifak/advanced
+	name = "AIFAK"
+	desc = "An Advanced Individual First Aid Kit, intended for elite forces."
+	icon_state = "ifak"
+	startswith = list(/obj/item/bandage_pack, /obj/item/tourniquet, /obj/item/reagent_containers/hypospray/autoinjector/morphine, /obj/item/suture, /obj/item/wirecutters, /obj/item/reagent_containers/hypospray/autoinjector/blood, /obj/item/reagent_containers/hypospray/autoinjector/revive)
+	w_class = ITEM_SIZE_SMALL
+	max_storage_space = 12
+
 /obj/item/storage/box/coin
 	name = "coin pouch"
 	desc = "A small coin pouch"
