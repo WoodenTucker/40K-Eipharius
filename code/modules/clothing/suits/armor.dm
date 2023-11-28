@@ -1966,6 +1966,7 @@ obj/item/clothing/suit/armor/scion
 	name = "Tempestus Scion Carapace"
 	desc = "Solid Carapace armour, belonging to the elite forces of the Tempestus Scions."
 	icon = 'icons/obj/clothing/Tempestus_Scion.dmi'
+	item_icons = list(slot_wear_suit_str = 'icons/obj/clothing/Tempestus_Scion.dmi')
 	icon_state = "Armor Icon"
 	item_state = "Armor"
 	armor = list(melee = 65, bullet = 65, laser = 58, energy = 65, bomb = 40, bio = 100, rad = 90)
