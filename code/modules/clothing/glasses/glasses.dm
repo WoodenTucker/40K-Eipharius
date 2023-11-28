@@ -682,3 +682,17 @@
 
 /obj/item/clothing/glasses/vindicare/process_hud(var/mob/M)
 	process_med_hud(M, 1)
+
+/obj/item/clothing/glasses/scion
+	name = "Omnishield Visor"
+	desc = "An integrated multi-spectral scanning system."
+	darkness_view = 50
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	flash_protection = FLASH_PROTECTION_MAJOR
+	icon_state = "thermal"
+	item_state = "glasses"
+	body_parts_covered = EYES
+	siemens_coefficient = 0.9
+	unacidable = 1
+	flash_protection =  FLASH_PROTECTION_MAJOR
+	vision_flags = SEE_TURFS|SEE_MOBS
