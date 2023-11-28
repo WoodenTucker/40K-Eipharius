@@ -243,7 +243,7 @@
 			equip_to_slot_or_del(new /obj/item/grenade/frag/high_yield/krak, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/grenade/frag, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/grenade/frag, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
+			equip_to_slot_or_del(new /obj/item/storage/box/ifak/advanced, slot_l_store)
 			visible_message("[name] grabs their kit!")
 			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
 			src.add_stats(rand(19,21),rand(19,21),rand(19,21),rand(19,21)) //gives stats str, dext, end, int
