@@ -168,7 +168,7 @@
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR | HAS_A_SKIN_TONE
 	strength = STR_HIGH
 	genders = list(MALE)
-	slowdown = -0.2 //Peak physical fitness.
+	slowdown = -0.4 //Peak physical fitness.
 	inherent_verbs = list(
 	/mob/living/carbon/human/scion/proc/setupstart
 		)
@@ -243,6 +243,7 @@
 			equip_to_slot_or_del(new /obj/item/grenade/frag/high_yield/krak, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/grenade/frag, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/grenade/frag, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			visible_message("[name] grabs their kit!")
 			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
 			src.add_stats(rand(19,21),rand(19,21),rand(19,21),rand(19,21)) //gives stats str, dext, end, int
