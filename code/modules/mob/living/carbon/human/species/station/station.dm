@@ -230,7 +230,7 @@
 	switch(tempclass)
 		if("Tempestus Scion Trooper")
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/combat/scion, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/clothing/under/guard/scion, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/under/scion, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/scion, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/glasses/scion, slot_glasses)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/specops, slot_l_ear)
