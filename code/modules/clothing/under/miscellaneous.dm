@@ -712,7 +712,6 @@
 /obj/item/clothing/under/guard/scion
 	name = "Tempestus Scion Undersuit"
 	desc = "A standardised armoured undersuit worn by Tempestus Scions."
-	icon = 'icons/obj/clothing/Tempestus_Scion.dmi'
 	icon_state = "ScionUndersuit"
 	item_state = "ScionUndersuit"
 	worn_state = "ScionUndersuit"
