@@ -713,7 +713,7 @@
 	name = "Tempestus Scion Undersuit"
 	desc = "A standardised armoured undersuit worn by Tempestus Scions."
 	icon = 'icons/obj/clothing/Tempestus_Scion.dmi'
-	icon_state = "Undersuit Icon"
-	item_state = "Undersuit"
-	worn_state = "Undersuit"
+	icon_state = "ScionUndersuit"
+	item_state = "ScionUndersuit"
+	worn_state = "ScionUndersuit"
 	armor = list(melee = 30, bullet = 40, laser = 20, energy = 20, bomb = 20, bio = 20, rad = 0)
