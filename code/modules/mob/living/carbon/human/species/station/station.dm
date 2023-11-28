@@ -232,7 +232,7 @@
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/combat/scion, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/clothing/under/guard/scion, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/scion, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/glasses/thermal, slot_glasses)
+			equip_to_slot_or_del(new /obj/item/clothing/glasses/scion, slot_glasses)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/specops, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/security, slot_wear_mask)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare/scion, slot_back)
