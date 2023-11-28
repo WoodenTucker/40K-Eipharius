@@ -685,9 +685,8 @@
 /obj/item/storage/backpack/satchel/warfare/scion
 	name = "Tempestus Scion Power Pack"
 	desc = "Designed to power the armour systems and weapons of a Tempestus Scion near-indefinitely."
-	icon = 'icons/obj/clothing/Tempestus_Scion.dmi'
-	icon_state = "Backpack Icon"
-	item_state = "Backpack"
+	icon_state = "ScionBackpack"
+	item_state = "ScionBackpack"
 	canremove = FALSE
 	var/can_toggle = 1
 
