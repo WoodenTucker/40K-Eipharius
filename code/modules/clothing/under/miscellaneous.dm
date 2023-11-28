@@ -709,7 +709,7 @@
 	icon_state = "rm_uniform"
 	item_state = "rm_uniform_s"
 
-/obj/item/clothing/under/guard/scion
+/obj/item/clothing/under/scion
 	name = "Tempestus Scion Undersuit"
 	desc = "A standardised armoured undersuit worn by Tempestus Scions."
 	icon_state = "ScionUndersuit"
