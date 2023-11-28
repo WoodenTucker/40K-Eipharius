@@ -1965,10 +1965,8 @@ obj/item/clothing/suit/armor
 obj/item/clothing/suit/armor/scion
 	name = "Tempestus Scion Carapace"
 	desc = "Solid Carapace armour, belonging to the elite forces of the Tempestus Scions."
-	icon = 'icons/obj/clothing/Tempestus_Scion.dmi'
-	item = 'icons/obj/clothing/Tempestus_Scion.dmi'
-	icon_state = "Armor Icon"
-	item_state = "Armor"
+	icon_state = "ScionArmour"
+	item_state = "ScionArmour"
 	armor = list(melee = 65, bullet = 65, laser = 58, energy = 65, bomb = 40, bio = 100, rad = 90)
 	allowed = list(/obj/item/gun/energy,/obj/item/device/radio,/obj/item/reagent_containers/spray/pepper,/obj/item/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/handcuffs)
 	cold_protection = UPPER_TORSO|LOWER_TORSO
