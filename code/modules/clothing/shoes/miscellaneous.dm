@@ -203,9 +203,8 @@
 /obj/item/clothing/shoes/scion
 	name = "Tempestus Scion Boots"
 	desc = "Armoured boots belonging to the elite Tempestus Scions."
-	icon = 'icons/obj/clothing/Tempestus_Scion.dmi'
-	icon_state = "Boots Icon"
-	item_state = "Boots"
+	icon_state = "ScionBoots"
+	item_state = "ScionBoots"
 	force = 5
 	armor = list(melee = 60, bullet = 60, laser = 60,energy = 25, bomb = 50, bio = 100, rad = 0)
 	item_flags = ITEM_FLAG_NOSLIP
