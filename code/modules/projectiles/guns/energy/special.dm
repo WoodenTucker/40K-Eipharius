@@ -149,3 +149,21 @@ obj/item/gun/energy/staff/focus
 	projectile_type = /obj/item/projectile/warpboltcrappy
 	max_shots = 15
 	self_recharge = 1
+
+/obj/item/gun/energy/meltagun
+	name = "Meltagun"
+	desc = "An enormously powerful, but short-ranged anti-tank weapon."
+	icon_state = "melta"
+	item_state = "multimelta"
+	wielded_item_state = "multimelta"
+	icon = 'icons/cadia-sprites/migrated2/gun_2.dmi'
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	force = 8
+	str_requirement = 17
+	max_shots = 2
+	w_class = ITEM_SIZE_NORMAL
+	fire_delay = 12
+	charge_cost = 300
+	cell_type = /obj/item/cell/plasma
+	ammoType = /obj/item/cell/plasma
+	projectile_type = /obj/item/projectile/energy/meltagun
