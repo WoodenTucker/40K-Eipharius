@@ -253,3 +253,8 @@
 			var/trans = reagents.trans_to_obj(A, amount_per_transfer_from_this)
 			to_chat(user, "<span class='notice'>[trans] units refilled into \the [A]. [reagents.total_volume] units remaining in \the [src].</span>")
 			A.update_icon()
+
+/obj/item/reagent_containers/hypospray/autoinjector/detox
+	name = "Martyr's Salvation"
+	icon_state = "green"
+	starts_with = list(/datum/reagent/martyr = 5)
