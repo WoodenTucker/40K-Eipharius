@@ -286,5 +286,5 @@
 /obj/item/device/encryptionkey/specops //for events
 	name = "special operations radio encryption key"
 	icon_state = "bin_cypherkey"
-	channels = list("Frateris" = 1)
+	channels = list("Militarum" = 1, "Vox" = 1, "Omega" = 1, "Command" = 1)
 	origin_tech = list(TECH_ILLEGAL = 2)
