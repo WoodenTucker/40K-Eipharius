@@ -436,7 +436,7 @@
 /obj/item/gun/energy/las/hotshot/pistol
 	name = "Hellpistol"
 	desc = "A high-powered pistol favoured by Tempestus Scions, Inquisitorial Agents, and high-ranking Adeptus Militarum officers."
-	icon_state = "laspistolciv
+	icon_state = "laspistolciv"
 	item_state = "lascar"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
