@@ -163,7 +163,7 @@ obj/item/gun/energy/staff/focus
 	max_shots = 2
 	w_class = ITEM_SIZE_NORMAL
 	fire_delay = 12
-	charge_cost = 300
+	charge_cost = 500
 	cell_type = /obj/item/cell/plasma
 	ammoType = /obj/item/cell/plasma
 	projectile_type = /obj/item/projectile/energy/meltagun
