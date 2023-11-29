@@ -159,6 +159,15 @@
 	w_class = ITEM_SIZE_SMALL
 	slot_flags = SLOT_TIE
 
+/obj/item/clothing/rosarius/refractor
+	name = "refractor field"
+	desc = "A handheld amulet which incorporates a powerful force field generator. A rare and highly prized piece of technology. Can be worn around the neck. THis one appears to be especially high-quality"
+	icon = 'icons/obj/device.dmi'
+	icon_state = "motion2"
+	w_class = ITEM_SIZE_SMALL
+	slot_flags = SLOT_TIE
+	shield_count = 20
+
 /obj/item/clothing/accessory/displacer
 	name = "displacer field"
 	desc = "A small device designed to teleport users out of the way of incoming attacks. Highly unpredictable, can be attached to clothing."
