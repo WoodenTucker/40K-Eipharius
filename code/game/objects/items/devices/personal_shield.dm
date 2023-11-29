@@ -159,7 +159,7 @@
 	w_class = ITEM_SIZE_SMALL
 	slot_flags = SLOT_TIE
 
-/obj/item/clothing/rosarius/refractor
+/obj/item/clothing/rosarius/refractor/officer
 	name = "refractor field"
 	desc = "A handheld amulet which incorporates a powerful force field generator. A rare and highly prized piece of technology. Can be worn around the neck. THis one appears to be especially high-quality"
 	icon = 'icons/obj/device.dmi'
