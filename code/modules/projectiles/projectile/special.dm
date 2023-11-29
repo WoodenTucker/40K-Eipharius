@@ -368,12 +368,12 @@
 	damage_type = BURN
 	check_armour = "energy"
 	mob_hit_sound = list('sound/effects/gore/sear.ogg')
-	range =  8
+	range =  5
 	incinerate = 1
 	penetrating = 10
 	armor_penetration = 200
 	var/flash_range = 1
-	var/brightness = 7
+	var/brightness = 10
 	var/light_colour = "#ffffff"
 
 /obj/item/projectile/energy/meltagun/on_impact(var/atom/A)
