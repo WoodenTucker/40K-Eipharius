@@ -433,6 +433,33 @@
 	..()
 	spawn(1) if(src) qdel(src)
 
+/obj/item/gun/energy/las/hotshot/pistol
+	name = "Hellpistol"
+	desc = "A high-powered pistol favoured by Tempestus Scions, Inquisitorial Agents, and high-ranking Adeptus Militarum officers."
+	icon_state = "laspistolciv
+	item_state = "lascar"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_HUGE
+	force = 15
+	charge_meter = FALSE
+	one_hand_penalty = 0.5
+	fire_delay = 3.1
+	accuracy = 0
+	self_recharge = 1
+	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/las/lasgun/hotshot
+	charge_cost = 480 //Higher charge due to fewer focusing arrays, etc.
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	wielded_item_state = "lascar-wielded"
+	sales_price = 100
+
+
+	firemodes = list(
+		list(mode_name="semi-automatic",       burst=1, fire_delay=3.1, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=240),
+		)
+
 /obj/item/gun/energy/las/hotshot/krieg
 	name = "Type XIV Lasgun Heavy"
 	desc = "The standard Hellgun issued to Grenadiers of the Death Korps of Krieg."
