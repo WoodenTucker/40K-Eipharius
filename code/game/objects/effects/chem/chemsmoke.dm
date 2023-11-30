@@ -6,7 +6,7 @@
 	opacity = 0
 	plane = EFFECTS_BELOW_LIGHTING_PLANE
 	layer = ABOVE_PROJECTILE_LAYER
-	time_to_live = 300
+	time_to_live = 5000
 	pass_flags = PASS_FLAG_TABLE | PASS_FLAG_GRILLE | PASS_FLAG_GLASS //PASS_FLAG_GLASS is fine here, it's just so the visual effect can "flow" around glass
 	var/splash_amount = 10 //atoms moving through a smoke cloud get splashed with up to 10 units of reagent
 	var/turf/destination
@@ -181,7 +181,7 @@
 		I = icon('icons/effects/96x96.dmi', "smoke")
 
 	//Calculate smoke duration
-	var/smoke_duration = 300
+	var/smoke_duration = 3000
 
 	var/pressure = 0
 	var/datum/gas_mixture/environment = location.return_air()
