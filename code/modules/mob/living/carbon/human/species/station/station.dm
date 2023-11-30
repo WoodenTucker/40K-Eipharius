@@ -111,7 +111,7 @@
 	blurb = "The Space Marines or Adeptus Astartes are foremost amongst the defenders of Humanity, the greatest of the Emperor of Mankind's Warriors. They are barely human at all, but superhuman; having been made superior in all respects to a normal man by a harsh regime of genetic modification, psycho-conditioning and rigorous training. Untouched by disease and can take a wound that could kill a normal human instantly. Using ancient power armor that can augment their abilities and wielding the best weapons known to man."
 	min_age = 16
 	max_age = 18
-	blood_volume = 450 // how much blood an Sstartes has
+	blood_volume = 450 // how much blood an Astartes has
 	slowdown = -0.25 //Increased move speed
 	gluttonous = GLUT_ITEM_NORMAL
 	total_health = 250 // a normal human has 200 brain health, Sstartes have 250 //P.S this is brain health
@@ -264,3 +264,47 @@
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
+
+/datum/species/human/officer
+	name = SPECIES_OFFICER
+	name_plural = "Imperial Guard Officers"
+	primitive_form = SPECIES_HUMAN
+	brute_mod =      0.8                    // 80% brute damage
+	burn_mod =       0.8                  //  80% burn damage
+	unarmed_types = list(
+		/datum/unarmed_attack/stomp,
+		/datum/unarmed_attack/kick,
+		/datum/unarmed_attack/punch,
+		/datum/unarmed_attack/bite
+		)
+	blurb = "A high-ranking Officer in the Imperial Guard."
+	min_age = 23
+	max_age = 35
+	blood_volume = 450 
+	spawn_flags = null
+	inherent_verbs = list(
+	/mob/living/carbon/human/officer/proc/setupstartofficer
+	)
+
+/mob/living/carbon/human/officer/proc/setupstartofficer()
+	set name = "Setup"
+	set category = "Setup"
+	set desc = "Gives your equipment and stats."
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	warfare_faction = IMPERIUM
+	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/security/colonel)
+	outfit.equip(src)
+	src.add_stats(rand(19,21),rand(19,21),rand(19,21),rand(19,21)) //gives stats str, dext, end, int
+	src.add_skills(rand(19,21),rand(19,21),rand(16,18),rand(12,14),rand(12,14)) //melee, ranged, med, eng, surgery
+	src.set_trait(new/datum/trait/death_tolerant())
+	src.update_eyes() //should fix grey vision
+	src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC) //secondary language
+	src.bladder = -INFINITY
+	src.bowels = -INFINITY 
+	src.thirst = INFINITY
+	src.nutrition = INFINITY 
+	src.verbs -= /mob/living/carbon/human/officer/proc/setupstartofficer //removes verb at the end so they can't spam it for whatever reason
