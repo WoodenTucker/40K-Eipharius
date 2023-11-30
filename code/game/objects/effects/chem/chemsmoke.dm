@@ -181,7 +181,7 @@
 		I = icon('icons/effects/96x96.dmi', "smoke")
 
 	//Calculate smoke duration
-	var/smoke_duration = 150
+	var/smoke_duration = 300
 
 	var/pressure = 0
 	var/datum/gas_mixture/environment = location.return_air()
