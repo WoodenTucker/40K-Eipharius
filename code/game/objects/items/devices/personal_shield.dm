@@ -166,7 +166,7 @@
 	icon_state = "motion2"
 	w_class = ITEM_SIZE_SMALL
 	slot_flags = SLOT_TIE
-	shield_count = 20
+//	shield_count = 20
 
 /obj/item/clothing/accessory/displacer
 	name = "displacer field"
