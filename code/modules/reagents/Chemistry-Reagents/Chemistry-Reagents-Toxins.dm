@@ -678,9 +678,6 @@
 	metabolism = REM * 2
 	overdose = 30
 
-/datum/reagent/toxin/corrupting/affect_touch(var/mob/living/carbon/M, var/alien, var/removed)
-	affect_blood(M,alien,removed*0.5)
-
 /datum/reagent/toxin/corrupting/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	..()
 	if(prob(100))
