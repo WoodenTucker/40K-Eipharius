@@ -538,7 +538,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 
 /obj/item/organ/external/robotic/servitor/arm
 	organ_tag = BP_L_ARM
-	name = "Servitor Left Arm
+	name = "Servitor Left Arm"
 	icon_name = "l_arm"
 	max_damage = 120
 	min_broken_damage = 100
