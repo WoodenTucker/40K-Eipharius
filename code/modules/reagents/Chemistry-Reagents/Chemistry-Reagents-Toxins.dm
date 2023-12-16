@@ -850,7 +850,6 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 	color = "#FFFFFF"
 	strength = 5
 	touch_met = 5
-	chemseverity = 25 //Damage modifier
 	var/meltdose = 4
 
 /datum/reagent/toxin/white_phosphorus/touch_mob(var/mob/living/L, var/amount)
