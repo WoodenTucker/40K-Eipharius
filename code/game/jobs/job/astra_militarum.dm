@@ -844,7 +844,8 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
-	/obj/item/shovel/krieg = 1
+	/obj/item/shovel/krieg = 1,
+	/obj/item/storage/box/kriegration = 1
 	)
 
 /decl/hierarchy/outfit/job/guardsman/catachan
@@ -1017,11 +1018,12 @@ datum/job/ig/bullgryn
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
-	/obj/item/cell/lasgun/hotshot = 1,
+	/obj/item/cell/lasgun/hotshot = 2,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
-	/obj/item/shovel/krieg = 1
+	/obj/item/shovel/krieg = 1,
+	/obj/item/storage/box/kriegration = 1
 	)
 
 /decl/hierarchy/outfit/job/sharpshooter/catachan
@@ -1103,7 +1105,8 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/handcuffs = 1,
-	/obj/item/shovel/krieg = 1
+	/obj/item/shovel/krieg = 1,
+	/obj/item/storage/box/kriegration = 1
 	)
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
 
@@ -1243,7 +1246,8 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/handcuffs = 1,
-	/obj/item/shovel/krieg = 1
+	/obj/item/shovel/krieg = 1,
+	/obj/item/storage/box/kriegration = 1
 	)
 
 /decl/hierarchy/outfit/job/sniper/valhalla
@@ -1327,7 +1331,8 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/handcuffs = 1,
-	/obj/item/shovel/krieg = 1
+	/obj/item/shovel/krieg = 1,
+	/obj/item/storage/box/kriegration = 1
 	)
 
 /decl/hierarchy/outfit/job/sergeant/catachan

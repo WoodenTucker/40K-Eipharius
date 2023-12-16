@@ -257,7 +257,7 @@
 	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Krieg Grenadier, with additional slight armor protection."
 	icon_state = "grenmask"
 	item_state = "grenmask"
-	armor = list(melee = 20, bullet = 20, laser = 20, energy = 20, bomb = 20, bio = 95, rad = 0)
+	armor = list(melee = 20, bullet = 20, laser = 20, energy = 20, bomb = 30, bio = 95, rad = 0)
 	body_parts_covered = FACE|EYES|HEAD
 
 
