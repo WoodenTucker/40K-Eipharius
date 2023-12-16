@@ -889,9 +889,11 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 		if(mask_check(M)) return
 			if(prob(10))
 				to_chat(M, "<span class='danger'>You can't breathe!</span>")
-				for(/obj/item/organ/internal/lungs/l in M.internal_organs)
-				l.take_damage(rand(1, 2) * removed)
-			if(prob(5))
+				M.eye_blurry += (10)
+				M.Weaken(15)
+				M.adjustOxyLoss(rand(5, 15) * removed)
+				M.adjustToxLoss(rand(1, 3) * removed)
+			if(prob(15))
 				M.emote("cough")
 
 
@@ -910,7 +912,9 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 		if(mask_check(M)) return
 			if(prob(10))
 				to_chat(M, "<span class='danger'>You can't breathe!</span>")
-				for(/obj/item/organ/internal/lungs/l in M.internal_organs)
-				l.take_damage(rand(2, 4) * removed)
-			if(prob(5))
+				M.eye_blurry += (20)
+				M.Weaken(30)
+				M.adjustOxyLoss(rand(10, 30) * removed)
+				M.adjustToxLoss(rand(3, 6) * removed)
+			if(prob(25))
 				M.emote("cough")
