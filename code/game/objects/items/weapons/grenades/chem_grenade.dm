@@ -380,7 +380,7 @@
 
 /obj/item/grenade/chem_grenade/gas/phosgene
 	name = "Phosgene gas grenade"
-	desc = "An upgraded version of the Chlorine Gas Grenades, these are highl sought after by Death Korps regiments."
+	desc = "An upgraded version of the Chlorine Gas Grenades, these are highly sought after by Death Korps regiments."
 	stage = 2
 	path = 1
 
