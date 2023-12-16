@@ -758,7 +758,8 @@ datum/job/ig/bullgryn
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/grenade/chem_grenade/gas/xyxl = 2
 	)
 
 	id_type = /obj/item/card/id/dog_tag/guardsman
@@ -787,7 +788,8 @@ datum/job/ig/bullgryn
 	/obj/item/cell/lasgun/hotshot = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/grenade/chem_grenade/gas/xyxl = 2
 	)
 
 	id_type = /obj/item/card/id/dog_tag/guardsman
@@ -816,7 +818,8 @@ datum/job/ig/bullgryn
 	/obj/item/cell/lasgun/hotshot = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/grenade/chem_grenade/gas/xyxl = 2
 	)
 
 	id_type = /obj/item/card/id/dog_tag/guardsman
@@ -844,6 +847,7 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
+	/obj/item/grenade/chem_grenade/gas/chlorine = 2,
 	/obj/item/shovel/krieg = 1
 	)
 
@@ -870,7 +874,9 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/handcuffs = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/grenade/chem_grenade/gas/xyxl = 1,
+	/obj/item/grenade/chem_grenade/gas/phosphorous = 1
 	)
 
 /decl/hierarchy/outfit/job/guardsman/valhallan
@@ -892,7 +898,8 @@ datum/job/ig/bullgryn
 	/obj/item/ammo_magazine/c556/ms = 4,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/grenade/chem_grenade/gas/xyxl = 2
 	)
 
 /decl/hierarchy/outfit/job/guardsman/maccabian
@@ -915,7 +922,8 @@ datum/job/ig/bullgryn
 	/obj/item/cell/lasgun/hotshot = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/grenade/chem_grenade/gas/xyxl = 2
 	)
 
 //Karskin
@@ -941,7 +949,8 @@ datum/job/ig/bullgryn
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/cell/lasgun/hotshot = 3,
-	/obj/item/clothing/accessory/holster/waist = 1
+	/obj/item/clothing/accessory/holster/waist = 1,
+	/obj/item/grenade/chem_grenade/gas/xyxl = 2
 	)
 
 
@@ -1021,6 +1030,8 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
+	/obj/item/grenade/chem_grenade/gas/phosgene = 2,
+	/obj/item/grenade/chem_grenade/gas/phosphorous = 1,
 	/obj/item/shovel/krieg = 1
 	)
 
