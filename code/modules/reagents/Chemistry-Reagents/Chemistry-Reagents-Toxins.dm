@@ -802,7 +802,6 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 			return 2
 		if (11 to INFINITY)
 			return 3*/
-var/severity =  strength //Temp fix
  
 //blue cross
 /datum/reagent/toxin/xylyl_bromide
@@ -814,6 +813,7 @@ var/severity =  strength //Temp fix
 	color = "#ffd700"
 	strength = 30
 	touch_met = 5
+	severity = 5 //Damage modifier
 //	alpha = 51
 //	meltdose = 4
 
@@ -834,6 +834,7 @@ var/severity =  strength //Temp fix
 	color = "#A2CD5A"
 	strength = 10
 	touch_met = 5
+	severity = 15 //Damage modifier
 //	meltdose = 4
 
 /datum/reagent/toxin/mustard_gas/touch_mob(var/mob/living/L, var/amount)
@@ -851,6 +852,7 @@ var/severity =  strength //Temp fix
 	color = "#FFFFFF"
 	strength = 5
 	touch_met = 5
+	severity = 25 //Damage modifier
 	var/meltdose = 4
 
 /datum/reagent/toxin/white_phosphorus/touch_mob(var/mob/living/L, var/amount)
@@ -867,6 +869,7 @@ var/severity =  strength //Temp fix
 	color = "#ffd700"
 	strength = 10
 	touch_met = 5
+	severity = 10 //Damage modifier
 //	alpha = 128
 //	meltdose = 4
 
@@ -883,6 +886,7 @@ var/severity =  strength //Temp fix
 	color = "#eaeaea"
 	strength = 10
 	touch_met = 5
+	severity = 15 //Damage modifier
 //	alpha = 25
 /datum/reagent/toxin/phosgene_gas/touch_mob(var/mob/living/L, var/amount)
 	if (istype(L))
