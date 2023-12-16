@@ -183,7 +183,7 @@
 	//Calculate smoke duration
 	var/smoke_duration = 120
 
-	//var/pressure = 0
+	var/pressure = 0
 	var/datum/gas_mixture/environment = location.return_air()
 	if(environment) pressure = environment.return_pressure()
 	smoke_duration = between(15, 60, smoke_duration)  //Original code: smoke_duration = between(5, smoke_duration*pressure/(ONE_ATMOSPHERE/3), smoke_duration)
