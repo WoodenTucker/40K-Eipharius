@@ -355,7 +355,6 @@
 
 		beakers += B1
 		beakers += B2
-		icon_state = initial(icon_state) +"_locked"
 
 /obj/item/grenade/chem_grenade/gas/mustard
 	name = "Mustard gas grenade"
@@ -378,7 +377,6 @@
 
 		beakers += B1
 		beakers += B2
-		icon_state = initial(icon_state) +"_locked"
 
 /obj/item/grenade/chem_grenade/gas/phosgene
 	name = "Phosgene gas grenade"
@@ -401,7 +399,6 @@
 
 		beakers += B1
 		beakers += B2
-		icon_state = initial(icon_state) +"_locked"
 
 /obj/item/grenade/chem_grenade/gas/xyxl
 	name = "Tear gas grenade"
@@ -424,7 +421,6 @@
 
 		beakers += B1
 		beakers += B2
-		icon_state = initial(icon_state) +"_locked"
 
 /obj/item/grenade/chem_grenade/gas/phosphorous
 	name = "White Phosphorous grenade"
@@ -447,4 +443,3 @@
 
 		beakers += B1
 		beakers += B2
-		icon_state = initial(icon_state) +"_locked"
