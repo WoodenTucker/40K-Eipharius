@@ -837,7 +837,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 
 /datum/reagent/toxin/mustard_gas/touch_mob(var/mob/living/L, var/amount)
 	if (istype(L))
-		eye_damage(L, get_severity(amount / 2)))
+		eye_damage(L, get_severity(amount / 2))
 		external_damage(L, get_severity(amount * 2))
 		internal_damage(L, get_severity(amount / 2))
 		open_wound_damage(L, get_severity(amount))
