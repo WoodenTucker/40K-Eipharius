@@ -811,7 +811,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 	taste_mult = 1.5
 	reagent_state = GAS
 	color = "#ffd700"
-	strength = 30
+	strength = 0.1
 	touch_met = 5
 //	alpha = 51
 //	meltdose = 4
@@ -832,7 +832,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 	reagent_state = GAS
 	color = "#A2CD5A"
 	strength = 10
-	touch_met = 5
+	touch_met = 6
 //	meltdose = 4
 
 /datum/reagent/toxin/mustard_gas/touch_mob(var/mob/living/L, var/amount)
@@ -848,7 +848,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 	description = "A deadly white gas that burns you up like a torch."
 	reagent_state = GAS
 	color = "#FFFFFF"
-	strength = 25
+	strength = 6
 	touch_met = 5
 	var/meltdose = 4
 
@@ -866,6 +866,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 		to_chat(M, "<span class='danger'>The air around you ignites in a burning haze!</span>")
 		M.adjust_fire_stacks(5)
 		M.IgniteMob()
+
 //green cross
 /datum/reagent/toxin/chlorine_gas
 	name = "Chlorine Gas"
@@ -873,7 +874,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 	description = "A deadly gas that destroys your lungs."
 	reagent_state = GAS
 	color = "#ffd700"
-	strength = 10
+	strength = 3
 	touch_met = 5
 //	alpha = 128
 //	meltdose = 4
@@ -889,7 +890,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 	description = "A deadly gas that causes suffocation."
 	reagent_state = GAS
 	color = "#eaeaea"
-	strength = 10
+	strength = 4
 	touch_met = 5
 //	alpha = 25
 /datum/reagent/toxin/phosgene_gas/touch_mob(var/mob/living/L, var/amount)
