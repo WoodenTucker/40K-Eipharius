@@ -723,7 +723,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 
 /datum/reagent/proc/external_damage(var/mob/living/carbon/human/m, var/severity = TRUE) // damage skin
 	if (m && istype(m) && severity)
-		var/base = ((rand(2,3)) * severity)
+		var/base = ((rand(4,6)) * severity)
 		if (base >= 2)
 			if (world.time >= next_gas_skin_message)
 				m << "<span class = 'danger'>The gas burns your skin!</span>"
@@ -755,7 +755,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 /datum/reagent/proc/internal_damage(var/mob/living/carbon/human/m, var/severity = TRUE) // damage things like lungs
 	if (mask_check(m)) return
 	if (m && istype(m) && severity)
-		var/base = ((rand(2,3)) * severity)
+		var/base = ((rand(1,2)) * severity)
 		if (base >= 2)
 			if (world.time >= next_gas_lung_message)
 				m << "<span class = 'danger'>The gas burns your lungs!</span>"
@@ -837,7 +837,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 
 /datum/reagent/toxin/mustard_gas/touch_mob(var/mob/living/L, var/amount)
 	if (istype(L))
-		eye_damage(L, get_severity(amount))
+		eye_damage(L, get_severity(amount / 2)))
 		external_damage(L, get_severity(amount * 2))
 		internal_damage(L, get_severity(amount / 2))
 		open_wound_damage(L, get_severity(amount))
