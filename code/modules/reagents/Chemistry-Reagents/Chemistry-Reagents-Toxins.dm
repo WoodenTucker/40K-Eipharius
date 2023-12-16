@@ -886,8 +886,8 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 
 /datum/reagent/toxin/chlorine_gas/affect_touch(var/mob/living/carbon/human/M, var/alien, var/removed)
 	if(prob(10))
-		to_chat(M, "<span class='danger'>Your skin is burning!</span>")
-		M.adjustOxyLoss(rand(2, 6) * removed)
+		to_chat(M, "<span class='danger'>You can't breathe!</span>")
+		take_damageM.BP_LUNGS(rand(1, 2) * removed)
 
 /datum/reagent/toxin/phosgene_gas
 	name = "Phosgene Gas"
@@ -902,4 +902,4 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 /datum/reagent/toxin/phosgene_gas/affect_touch(var/mob/living/carbon/human/M, var/alien, var/removed)
 	if(prob(10))
 		to_chat(M, "<span class='danger'>You can't breathe!</span>")
-		M.adjustOxyLoss(rand(5, 15) * removed)
+		take_damageM.BP_LUNGS(rand(2, 4) * removed)
