@@ -723,7 +723,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 
 /datum/reagent/proc/external_damage(var/mob/living/carbon/human/m, var/severity = TRUE) // damage skin
 	if (m && istype(m) && severity)
-		var/base = ((rand(4,6)) * severity)
+		var/base = ((rand(6,8)) * severity)
 		if (base >= 2)
 			if (world.time >= next_gas_skin_message)
 				m << "<span class = 'danger'>The gas burns your skin!</span>"
