@@ -802,6 +802,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 			return 2
 		if (11 to INFINITY)
 			return 3*/
+var/severity = 1
  
 //blue cross
 /datum/reagent/toxin/xylyl_bromide
