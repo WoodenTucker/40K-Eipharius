@@ -711,7 +711,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 		if (C.body_parts_covered & EYES)
 			return
 	if (m && istype(m) && severity)
-		var/base = ((rand(2,3)) * (rand(4,5))
+		var/base = ((rand(2,3)) * 5)
 		if (base >= 2)
 			if (world.time >= next_gas_eye_message)
 				m << "<span class = 'danger'>The gas burns your eyes!</span>"
@@ -723,7 +723,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 
 /datum/reagent/proc/external_damage(var/mob/living/carbon/human/m, var/severity = TRUE) // damage skin
 	if (m && istype(m) && severity)
-		var/base = ((rand(2,3)) * (rand(4,5))
+		var/base = ((rand(2,3)) * 5)
 		if (base >= 2)
 			if (world.time >= next_gas_skin_message)
 				m << "<span class = 'danger'>The gas burns your skin!</span>"
@@ -755,7 +755,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 /datum/reagent/proc/internal_damage(var/mob/living/carbon/human/m, var/severity = TRUE) // damage things like lungs
 	if (mask_check(m)) return
 	if (m && istype(m) && severity)
-		var/base = ((rand(2,3)) * (rand(2,3))
+		var/base = ((rand(2,3)) * 3)
 		if (base >= 2)
 			if (world.time >= next_gas_lung_message)
 				m << "<span class = 'danger'>The gas burns your lungs!</span>"
@@ -768,7 +768,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 /datum/reagent/proc/suffocation(var/mob/living/carbon/human/m, var/severity = TRUE)
 	if (mask_check(m)) return
 	if (m && istype(m) && severity)
-		var/base = ((rand(2,3)) * (rand(4,5))
+		var/base = ((rand(2,3)) * 5)
 		if (base >= 2)
 			if (world.time >= next_gas_lung_message)
 				m << "<span class = 'danger'>You can't breathe!</span>"
@@ -780,7 +780,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 
 /datum/reagent/proc/open_wound_damage(var/mob/living/carbon/human/m, var/severity = TRUE) // damage wounded skin
 	if (m && istype(m) && severity)
-		var/base = ((m.getBruteLoss() + m.getFireLoss())/10) * (rand(6,9)
+		var/base = ((m.getBruteLoss() + m.getFireLoss())/10) * 7)
 		base += rand(1,2)
 		base /= 2
 		if (base >= 1)
