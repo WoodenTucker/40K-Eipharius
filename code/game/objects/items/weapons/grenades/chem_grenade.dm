@@ -426,9 +426,9 @@
 		beakers += B2
 		icon_state = initial(icon_state) +"_locked"
 
-/obj/item/grenade/chem_grenade/gas/mustard
+/obj/item/grenade/chem_grenade/gas/phosphorous
 	name = "White Phosphorous grenade"
-	desc = Oficially only to be used for long-range quick cover, these grenades have found enthusiastic deployment across the Astra Militarum for their incendiary effect."
+	desc = "Oficially only to be used for long-range quick cover, these grenades have found enthusiastic deployment across the Astra Militarum for their incendiary effect."
 	stage = 2
 	path = 1
 
