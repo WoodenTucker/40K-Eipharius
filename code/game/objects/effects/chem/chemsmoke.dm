@@ -181,12 +181,12 @@
 		I = icon('icons/effects/96x96.dmi', "smoke")
 
 	//Calculate smoke duration
-	var/smoke_duration = 240
+	var/smoke_duration = 480
 
 	var/pressure = 0
 	var/datum/gas_mixture/environment = location.return_air()
 	if(environment) pressure = environment.return_pressure()
-	smoke_duration = between(60, 300, smoke_duration)  //Original code: smoke_duration = between(5, smoke_duration*pressure/(ONE_ATMOSPHERE/3), smoke_duration)
+	smoke_duration = between(120, 600, smoke_duration)  //Original code: smoke_duration = between(5, smoke_duration*pressure/(ONE_ATMOSPHERE/3), smoke_duration)
 
 	var/const/arcLength = 2.3559 //distance between each smoke cloud
 
@@ -224,7 +224,7 @@
 	if(passed_smoke)
 		smoke = passed_smoke
 	else
-		smoke = new /obj/effect/effect/smoke/chem(location, smoke_duration + rand(20, 60), T, I)
+		smoke = new /obj/effect/effect/smoke/chem(location, smoke_duration + rand(50, 100), T, I)
 
 	if(chemholder.reagents.reagent_list.len)
 		chemholder.reagents.trans_to_obj(smoke, chemholder.reagents.total_volume / dist, copy = 1) //copy reagents to the smoke so mob/breathe() can handle inhaling the reagents
