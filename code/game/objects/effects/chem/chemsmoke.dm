@@ -59,7 +59,7 @@
 		reagents.splash(AM, splash_amount, copy = 1)
 	if(ishuman(loc))
 		var/mob/living/carbon/human/C = loc
-		if !(src == C.wear_mask) //transfer, but only when not disabled
+		if (src == !C.wear_mask) //transfer, but only when not disabled
 			reagents.trans_to_mob(C, REM, CHEM_BLOOD, 0.4) // Only breathing in some of the gas.
 
 /obj/effect/effect/smoke/chem/proc/initial_splash()
@@ -69,7 +69,7 @@
 				reagents.splash(AM, splash_amount, copy = 1)
 	if(ishuman(loc))
 		var/mob/living/carbon/human/C = loc
-		if !(src == C.wear_mask) //transfer, but only when not disabled
+		if (src == !C.wear_mask) //transfer, but only when not disabled
 			reagents.trans_to_mob(C, REM, CHEM_BLOOD, 0.4) // Only breathing in some of the gas.
 
 // Fades out the smoke smoothly using it's alpha variable.
