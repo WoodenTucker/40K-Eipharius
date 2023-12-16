@@ -885,11 +885,11 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 		open_wound_damage(L, get_severity(amount)*1)
 
 /datum/reagent/toxin/chlorine_gas/affect_touch(var/mob/living/carbon/human/M, var/alien, var/removed)
-	if (istype(M))
-		if (mask_check(M)) return
+	if(istype(M))
+		if(mask_check(M)) return
 			if(prob(10))
 				to_chat(M, "<span class='danger'>You can't breathe!</span>")
-				take_damage(M.BP_LUNGS(rand(1, 2) * removed))
+				M.BP_LUNGS(take_damage(rand(1, 2) * removed))
 			if(prob(5))
 				M.emote("cough")
 
@@ -905,10 +905,10 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 //	alpha = 25
 
 /datum/reagent/toxin/phosgene_gas/affect_touch(var/mob/living/carbon/human/M, var/alien, var/removed)
-	if (istype(M))
-		if (mask_check(M)) return
+	if(istype(M))
+		if(mask_check(M)) return
 			if(prob(10))
 				to_chat(M, "<span class='danger'>You can't breathe!</span>")
-				take_damage(M.BP_LUNGS(rand(2, 4) * removed))
+				M.BP_LUNGS(take_damage(rand(2, 4) * removed))
 			if(prob(5))
 				M.emote("cough")
