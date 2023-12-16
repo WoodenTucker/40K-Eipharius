@@ -500,6 +500,11 @@
 		/obj/item/implantcase/imprinting = 3
 		)
 
+/obj/item/storage/box/kriegration
+	name = "Krieg ration box"
+	desc = "A field ration box given out to Kriegsmen on the field, contains two packs of K-Rations. The content section of the package seems to be stamped out."
+	startswith = list(/obj/item/reagent_containers/food/snacks/kriegration = 2)
+
 /obj/item/storage/box/ifak
 	name = "IFAK"
 	desc = "An Individual First Aid Kit, used to keep you alive until a medic can patch you up proper."
