@@ -861,7 +861,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 /datum/reagent/toxin/mustard_gas/white_phosphorus/affect_touch(var/mob/living/carbon/human/M, var/alien, var/removed)
 	if(prob(10))
 		to_chat(M, "<span class='danger'>Your skin is burning!</span>")
-		M.adjustBurnLoss(rand(5, 15) * removed)
+		M.adjustFireLoss(rand(5, 15) * removed)
 	if(prob(2))
 		to_chat(M, "<span class='danger'>The air around you ignites in a burning haze!</span>")
 		M.adjust_fire_stacks(5)
@@ -884,6 +884,11 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 		eye_damage(L, get_severity(amount/1))
 		open_wound_damage(L, get_severity(amount)*1)
 
+/datum/reagent/toxin/chlorine_gas/affect_touch(var/mob/living/carbon/human/M, var/alien, var/removed)
+	if(prob(10))
+		to_chat(M, "<span class='danger'>Your skin is burning!</span>")
+		M.adjustOxyLoss(rand(2, 6) * removed)
+
 /datum/reagent/toxin/phosgene_gas
 	name = "Phosgene Gas"
 	//id = "phosgene_gas"
@@ -893,6 +898,8 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 	strength = 4
 	touch_met = 5
 //	alpha = 25
-/datum/reagent/toxin/phosgene_gas/touch_mob(var/mob/living/L, var/amount)
-	if (istype(L))
-		suffocation(L, get_severity(amount)*1)
+
+/datum/reagent/toxin/phosgene_gas/affect_touch(var/mob/living/carbon/human/M, var/alien, var/removed)
+	if(prob(10))
+		to_chat(M, "<span class='danger'>You can't breathe!</span>")
+		M.adjustOxyLoss(rand(5, 15) * removed)
