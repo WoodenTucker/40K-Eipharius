@@ -155,7 +155,10 @@
 	body_parts_covered = HEAD
 	min_cold_protection_temperature = T0C - 30
 	cold_protection = HEAD
-	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
+	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS|BLOCKHAIR|BLOCKHEADHAIR
+	unacidable = 1
+	armor = list(melee = 50, bullet = 50, laser = 45, energy = 80, bomb = 50, bio = 100, rad = 160)
+	flash_protection = FLASH_PROTECTION_MAJOR
 
 /obj/item/clothing/head/genehood
 	name = "Biologis' hood"
