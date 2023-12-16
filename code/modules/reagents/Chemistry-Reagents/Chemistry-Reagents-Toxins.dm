@@ -848,7 +848,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 	description = "A deadly white gas that burns you up like a torch."
 	reagent_state = GAS
 	color = "#FFFFFF"
-	strength = 5
+	strength = 25
 	touch_met = 5
 	var/meltdose = 4
 
