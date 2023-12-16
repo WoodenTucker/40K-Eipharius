@@ -711,7 +711,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 		if (C.body_parts_covered & EYES)
 			return
 	if (m && istype(m) && severity)
-		var/base = ((rand(2,3)) * chemseverity)
+		var/base = ((rand(2,3)) * (rand(4,5))
 		if (base >= 2)
 			if (world.time >= next_gas_eye_message)
 				m << "<span class = 'danger'>The gas burns your eyes!</span>"
@@ -723,7 +723,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 
 /datum/reagent/proc/external_damage(var/mob/living/carbon/human/m, var/severity = TRUE) // damage skin
 	if (m && istype(m) && severity)
-		var/base = ((rand(2,3)) * chemseverity)
+		var/base = ((rand(2,3)) * (rand(4,5))
 		if (base >= 2)
 			if (world.time >= next_gas_skin_message)
 				m << "<span class = 'danger'>The gas burns your skin!</span>"
@@ -755,7 +755,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 /datum/reagent/proc/internal_damage(var/mob/living/carbon/human/m, var/severity = TRUE) // damage things like lungs
 	if (mask_check(m)) return
 	if (m && istype(m) && severity)
-		var/base = ((rand(2,3)) * chemseverity)
+		var/base = ((rand(2,3)) * (rand(2,3))
 		if (base >= 2)
 			if (world.time >= next_gas_lung_message)
 				m << "<span class = 'danger'>The gas burns your lungs!</span>"
@@ -763,12 +763,12 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 			if (m.stat != DEAD)
 				m.emote("scream")
 			if (prob(70))
-				m.Weaken(rand(3,4))
+				m.Weaken(rand(3,9))
 
 /datum/reagent/proc/suffocation(var/mob/living/carbon/human/m, var/severity = TRUE)
 	if (mask_check(m)) return
 	if (m && istype(m) && severity)
-		var/base = ((rand(2,3)) * chemseverity)
+		var/base = ((rand(2,3)) * (rand(4,5))
 		if (base >= 2)
 			if (world.time >= next_gas_lung_message)
 				m << "<span class = 'danger'>You can't breathe!</span>"
@@ -780,7 +780,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 
 /datum/reagent/proc/open_wound_damage(var/mob/living/carbon/human/m, var/severity = TRUE) // damage wounded skin
 	if (m && istype(m) && severity)
-		var/base = ((m.getBruteLoss() + m.getFireLoss())/10) * severity
+		var/base = ((m.getBruteLoss() + m.getFireLoss())/10) * (rand(6,9)
 		base += rand(1,2)
 		base /= 2
 		if (base >= 1)
@@ -802,7 +802,6 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 			return 2
 		if (11 to INFINITY)
 			return 3*/
-var/chemseverity = 1
  
 //blue cross
 /datum/reagent/toxin/xylyl_bromide
@@ -814,7 +813,6 @@ var/chemseverity = 1
 	color = "#ffd700"
 	strength = 30
 	touch_met = 5
-	chemseverity = 5 //Damage modifier
 //	alpha = 51
 //	meltdose = 4
 
@@ -835,7 +833,6 @@ var/chemseverity = 1
 	color = "#A2CD5A"
 	strength = 10
 	touch_met = 5
-	chemseverity = 15 //Damage modifier
 //	meltdose = 4
 
 /datum/reagent/toxin/mustard_gas/touch_mob(var/mob/living/L, var/amount)
@@ -870,7 +867,6 @@ var/chemseverity = 1
 	color = "#ffd700"
 	strength = 10
 	touch_met = 5
-	chemseverity = 10 //Damage modifier
 //	alpha = 128
 //	meltdose = 4
 
@@ -887,7 +883,6 @@ var/chemseverity = 1
 	color = "#eaeaea"
 	strength = 10
 	touch_met = 5
-	chemseverity = 15 //Damage modifier
 //	alpha = 25
 /datum/reagent/toxin/phosgene_gas/touch_mob(var/mob/living/L, var/amount)
 	if (istype(L))
