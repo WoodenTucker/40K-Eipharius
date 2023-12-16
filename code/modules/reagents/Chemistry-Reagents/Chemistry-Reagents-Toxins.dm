@@ -711,7 +711,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 		if (C.body_parts_covered & EYES)
 			return
 	if (m && istype(m) && severity)
-		var/base = ((rand(2,3)) * severity)
+		var/base = ((rand(2,3)) * chemseverity)
 		if (base >= 2)
 			if (world.time >= next_gas_eye_message)
 				m << "<span class = 'danger'>The gas burns your eyes!</span>"
@@ -723,7 +723,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 
 /datum/reagent/proc/external_damage(var/mob/living/carbon/human/m, var/severity = TRUE) // damage skin
 	if (m && istype(m) && severity)
-		var/base = ((rand(2,3)) * severity)
+		var/base = ((rand(2,3)) * chemseverity)
 		if (base >= 2)
 			if (world.time >= next_gas_skin_message)
 				m << "<span class = 'danger'>The gas burns your skin!</span>"
@@ -755,7 +755,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 /datum/reagent/proc/internal_damage(var/mob/living/carbon/human/m, var/severity = TRUE) // damage things like lungs
 	if (mask_check(m)) return
 	if (m && istype(m) && severity)
-		var/base = ((rand(2,3)) * severity)
+		var/base = ((rand(2,3)) * chemseverity)
 		if (base >= 2)
 			if (world.time >= next_gas_lung_message)
 				m << "<span class = 'danger'>The gas burns your lungs!</span>"
@@ -768,7 +768,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 /datum/reagent/proc/suffocation(var/mob/living/carbon/human/m, var/severity = TRUE)
 	if (mask_check(m)) return
 	if (m && istype(m) && severity)
-		var/base = ((rand(2,3)) * severity)
+		var/base = ((rand(2,3)) * chemseverity)
 		if (base >= 2)
 			if (world.time >= next_gas_lung_message)
 				m << "<span class = 'danger'>You can't breathe!</span>"
@@ -802,7 +802,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 			return 2
 		if (11 to INFINITY)
 			return 3*/
-var/severity = 1
+var/chemseverity = 1
  
 //blue cross
 /datum/reagent/toxin/xylyl_bromide
@@ -814,7 +814,7 @@ var/severity = 1
 	color = "#ffd700"
 	strength = 30
 	touch_met = 5
-	severity = 5 //Damage modifier
+	chemseverity = 5 //Damage modifier
 //	alpha = 51
 //	meltdose = 4
 
@@ -835,7 +835,7 @@ var/severity = 1
 	color = "#A2CD5A"
 	strength = 10
 	touch_met = 5
-	severity = 15 //Damage modifier
+	chemseverity = 15 //Damage modifier
 //	meltdose = 4
 
 /datum/reagent/toxin/mustard_gas/touch_mob(var/mob/living/L, var/amount)
@@ -853,7 +853,7 @@ var/severity = 1
 	color = "#FFFFFF"
 	strength = 5
 	touch_met = 5
-	severity = 25 //Damage modifier
+	chemseverity = 25 //Damage modifier
 	var/meltdose = 4
 
 /datum/reagent/toxin/white_phosphorus/touch_mob(var/mob/living/L, var/amount)
@@ -870,7 +870,7 @@ var/severity = 1
 	color = "#ffd700"
 	strength = 10
 	touch_met = 5
-	severity = 10 //Damage modifier
+	chemseverity = 10 //Damage modifier
 //	alpha = 128
 //	meltdose = 4
 
@@ -887,7 +887,7 @@ var/severity = 1
 	color = "#eaeaea"
 	strength = 10
 	touch_met = 5
-	severity = 15 //Damage modifier
+	chemseverity = 15 //Damage modifier
 //	alpha = 25
 /datum/reagent/toxin/phosgene_gas/touch_mob(var/mob/living/L, var/amount)
 	if (istype(L))
