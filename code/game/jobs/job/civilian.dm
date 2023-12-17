@@ -44,7 +44,7 @@
 		to_chat(H, "<span class='notice'><b><font size=3>You are a servitor, specifically one designed for managing a bar and serving drinks. You are to obey Imperial citizens and serve their every need. You are nearly mindless and will follow any order given to you by a superior.</font></b></span>")
 
 /datum/job/hydro
-	title = "Farmer"
+	title = "House Sondar Servant"
 	department = "Service"
 	department_flag = PIL
 	total_positions = 3
@@ -68,6 +68,8 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
+		H.verbs += list(
+			/mob/living/carbon/human/proc/hsclass)
 		H.fully_replace_character_name("[current_name]")
 		H.add_stats(rand(15,17), rand(14,16), rand(15,16), rand(8,14)) //well fed and robust
 		H.add_skills(rand(7,10),rand(6,10),rand(3,5),rand(2,4),3) //farmers are handy
@@ -78,6 +80,54 @@
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are one of the few skilled hands on this frozen hellscape capable of keeping these apostates from starving in the winter. You work for House Sondar as a penitent worker.</font></b></span>")
 
+
+
+/mob/living/carbon/human/proc/hsclass()
+	set name = "Select your equipment" // INTERROGATORS GEAR
+	set category = "CHOOSE YOUR FATE"
+	set desc = "Roll the dice and discover a new story."
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
+		return
+
+	var/mob/living/carbon/human/U = src
+	U.verbs -= list(/mob/living/carbon/human/proc/hsclass) //removes verb
+	var/fates = list("Life Ward","Overseer")
+
+
+	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
+
+
+	switch(classchoice) // The servant's outfit gives them thrones, backpack -- etc. Make sure to check before editing.
+		if("Life Ward")
+			U.add_stats(rand(15,17), rand(14,17), rand(14,16), rand (13,15)) //
+			U.add_skills(rand(6,8),rand(6,8),rand(4,6),rand(5,6),rand(2,6)) //melee, ranged, med, eng, surgery
+			new /obj/item/clothing/gloves/thick(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
+			new /obj/item/device/flashlight/lantern(src.loc) 
+			new /obj/item/clothing/shoes/jackboots/noble(src.loc)
+			new /obj/item/clothing/head/helmet/seolhelm(src.loc)
+			new /obj/item/clothing/suit/armor/seolarmor(src.loc)
+			new /obj/item/melee/sword/broadsword/adamantine(src.loc)
+			to_chat(U,"<span class='danger'><b><font size=4>THE PROTECTORATE</font></b></span>")
+			to_chat(U,"<span class='goodmood'><b><font size=3>Skilled in the arts of blade and gun lore, you are one of the rare individuals selected by House Sondar to serve as their Life Ward...</font></b></span>")
+		if("Overseer")
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
+			new /obj/item/clothing/suit/farmer(src.loc)
+			new /obj/item/clothing/suit/armor/hauberk(src.loc)
+			new /obj/item/farmshovel(src.loc)
+			new /obj/item/storage/plants(src.loc)
+			new /obj/item/device/flashlight/lantern(src.loc) 
+			new /obj/item/device/analyzer/plant_analyzer(src.loc)
+			new /obj/item/clothing/gloves/thick/botany(src.loc)
+			new /obj/item/melee/classic_baton(src.loc)
+			new /obj/item/gun/energy/taser(src.loc)
+			new /obj/item/gun/energy/las/laspistol/militarum/lucius(src.loc)
+			new /obj/item/handcuffs(src.loc)
+			new /obj/item/stack/thrones2(src.loc)
 
 // Cook
 /*

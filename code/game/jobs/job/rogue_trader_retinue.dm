@@ -12,7 +12,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 0
-	supervisors = "Yourself."
+	supervisors = "House Vane."
 	selection_color = "#315dd4"
 	req_admin_notify = 1
 	access = list() 			//See get_access()
@@ -35,7 +35,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("[current_name]") // No title testing. 
+		H.fully_replace_character_name("[current_name] Vane") // No title testing. 
 		H.add_stats(rand(14,18), rand(14,18), rand(14,18), rand(14,18))
 		H.add_skills(rand(6,10),rand(6,10),rand(5,6),rand(1,8),rand(1,8)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -45,7 +45,7 @@
 		H.witchblood()
 		H.warfare_faction = IMPERIUM
 		H.verbs += list(/mob/living/carbon/human/proc/hire)
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Rogue Trader, taking residence upon this world to gain power and prestige. You have your mercenaries. Your Veteran and your Xeno. Buy and sell well in your Bazaar. Overthrow the Governorship with or without the heir if the opportunity presents itself.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Rogue Trader tied directly to the Vane Dynasty, one of many heirs who might one day inherit a seat of power that would grant dominion over the Segmentum itself, your Warrant of Trade and it's required letters of marque were built upon the industries of war and the conquest of xenos worlds across the fringe. Many of the mercenaries in your employ are turncoats who betrayed the very species you eradicated. The brutal nature of your conquests and of House Vane's... methods in acquiring your letters of marque create the assurance that failure here on Eipharius will lead to your untimely end and that of your children.</font></b></span>")
 
 
 /datum/job/captain/equip(var/mob/living/carbon/human/H)
@@ -61,7 +61,7 @@
 	department_flag = SUP
 	total_positions = 0 // Disabled for now.
 	spawn_positions = 0
-	supervisors = "the Rogue Trader"
+	supervisors = "the Rogue Trader and House Vane"
 	selection_color = "#315dd4"
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MED
@@ -99,7 +99,7 @@
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "The Rogue Trader"
+	supervisors = "The Rogue Trader and House Vane"
 	selection_color = "#315dd4"
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE

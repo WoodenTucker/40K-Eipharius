@@ -2494,11 +2494,11 @@
 /area/cadiaoutpost/oa/security/armory)
 "cxE" = (
 /obj/structure/table/rack/dark,
-/obj/item/storage/box/smokes,
-/obj/item/storage/box/smokes{
-	pixel_y = 8
-	},
 /obj/effect/floor_decal/industrial/outline/red,
+/obj/item/clothing/head/helmet/guardhelmet/enforcer,
+/obj/item/clothing/head/helmet/guardhelmet/enforcer,
+/obj/item/clothing/head/helmet/guardhelmet/enforcer,
+/obj/item/clothing/head/helmet/guardhelmet/enforcer,
 /turf/simulated/floor/darksteel_floor{
 	dir = 1
 	},
@@ -7044,8 +7044,6 @@
 	armor = list("melee"=38,"bullet"=38,"laser"=38,"energy"=0,"bomb"=0,"bio"=30,"rad"=10);
 	name = "colonial enforcer jacket"
 	},
-/obj/item/clothing/suit/armor/enforcer2,
-/obj/item/clothing/head/helmet/guardhelmet/enforcer,
 /obj/effect/floor_decal/spline/plain{
 	dir = 10
 	},
@@ -9353,11 +9351,7 @@
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/medicae)
 "iQO" = (
-/obj/machinery/door/unpowered/inn/room2{
-	maxhealth = 1500;
-	name = "Pathfinder Estate";
-	req_one_access = list(253)
-	},
+/obj/machinery/door/unpowered/inn,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
 "iQW" = (
@@ -10640,6 +10634,11 @@
 	pixel_y = 8
 	},
 /obj/effect/floor_decal/industrial/outline/red,
+/obj/item/storage/box/handcuffs{
+	pixel_y = 8
+	},
+/obj/item/storage/box/handcuffs,
+/obj/item/storage/box/handcuffs,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
 "kai" = (
@@ -12595,6 +12594,14 @@
 /obj/item/storage/box/syndie_kit/imp_explosive,
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tileendtable"
+	},
+/obj/item/card/id/key/middle/jail{
+	access = list(1984,2,3,5,10);
+	name = "marshal's key"
+	},
+/obj/item/card/id/key/middle/jail{
+	access = list(1984,2,3,5,10);
+	name = "marshal's key"
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -15445,15 +15452,19 @@
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "owh" = (
 /obj/structure/table/rack/dark,
-/obj/item/storage/box/handcuffs,
-/obj/item/storage/box/handcuffs{
-	pixel_y = 8
-	},
-/obj/item/storage/box/handcuffs{
-	pixel_y = 8
-	},
-/obj/item/storage/box/handcuffs,
 /obj/effect/floor_decal/industrial/outline/red,
+/obj/item/clothing/suit/armor/enforcer2{
+	armor = list("melee" = 48, "bullet" = 57, "laser" = 54, "energy" = 25, "bomb" = 40, "bio" = 30, "rad" = 30);
+	name = "Patrol Armor - Marshal"
+	},
+/obj/item/clothing/suit/armor/enforcer2{
+	armor = list("melee" = 48, "bullet" = 57, "laser" = 54, "energy" = 25, "bomb" = 40, "bio" = 30, "rad" = 30);
+	name = "Patrol Armor - Marshal"
+	},
+/obj/item/clothing/suit/armor/enforcer2{
+	armor = list("melee" = 48, "bullet" = 57, "laser" = 54, "energy" = 25, "bomb" = 40, "bio" = 30, "rad" = 30);
+	name = "Patrol Armor - Marshal"
+	},
 /turf/simulated/floor/darksteel_floor{
 	dir = 1
 	},
@@ -16455,13 +16466,13 @@
 	icon_state = "wood_1tileendtable";
 	dir = 1
 	},
-/obj/item/card/id/key/middle/jail{
-	access = list(1984,2,3,5,10);
-	name = "marshal's key"
+/obj/item/clothing/suit/armor/enforcer2{
+	armor = list("melee" = 48, "bullet" = 57, "laser" = 54, "energy" = 25, "bomb" = 40, "bio" = 30, "rad" = 30);
+	name = "Patrol Armor - Marshal"
 	},
-/obj/item/card/id/key/middle/jail{
-	access = list(1984,2,3,5,10);
-	name = "marshal's key"
+/obj/item/clothing/head/helmet/guardhelmet/enforcer{
+	name = "Magistratum Marshal Helmet";
+	armor = list("melee" = 48, "bullet" = 50, "laser" = 50, "energy" = 35, "bomb" = 10, "bio" = 10, "rad" = 10)
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -19171,7 +19182,7 @@
 /area/cadiaoutpost/oa/security/armory)
 "rJK" = (
 /obj/machinery/door/unpowered/inn/berryfarm{
-	req_one_access = list(230,211);
+	req_one_access = list(247);
 	name = "the farmhouse"
 	},
 /turf/simulated/floor/darkwood/rotten,
@@ -21596,6 +21607,12 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"tWf" = (
+/obj/machinery/door/unpowered/inn,
+/turf/simulated/floor/factory_floor{
+	dir = 4
+	},
+/area/cadiaoutpost/new_hive/caves)
 "tWh" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -26088,7 +26105,11 @@
 	color = "grey"
 	},
 /obj/item/cell/lasgun/hotshot,
-/obj/item/clothing/head/helmet,
+/obj/item/clothing/suit/armor/scion,
+/obj/item/clothing/head/helmet/tscion,
+/obj/item/clothing/gloves/thick/combat/scion,
+/obj/item/clothing/glasses/scion,
+/obj/item/clothing/shoes/scion,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/armory)
 "xUQ" = (
@@ -38515,7 +38536,7 @@ tpQ
 tpQ
 tpQ
 tpQ
-iKS
+tWf
 tpQ
 tpQ
 tpQ
@@ -39270,11 +39291,11 @@ tOB
 tOB
 tOB
 tpQ
-iKS
+tWf
 tpQ
 tpQ
 tpQ
-iKS
+tWf
 tpQ
 tpQ
 tpQ

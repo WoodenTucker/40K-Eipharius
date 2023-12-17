@@ -848,7 +848,8 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/shovel/krieg = 1,
-	/obj/item/storage/box/kriegration = 1
+	/obj/item/storage/box/kriegration = 1,
+	)
 
 /decl/hierarchy/outfit/job/guardsman/catachan
 	name = OUTFIT_JOB_NAME("Catachan Jungle Fighter")
@@ -1031,6 +1032,7 @@ datum/job/ig/bullgryn
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/shovel/krieg = 1,
 	/obj/item/storage/box/kriegration = 1
+	)
 
 /decl/hierarchy/outfit/job/sharpshooter/catachan
 	name = OUTFIT_JOB_NAME("Catachan Flamer")

@@ -342,7 +342,17 @@ obj/item/clothing/suit/armor
 	icon_state = "lccoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 35, bullet = 45, laser = 45, energy = 25, bomb = 40, bio = 20, rad = 20) //Hidden armoured plates
-	sales_price = 25
+	sales_price = 0
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS |ARMS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/rtcloak2
+	name = "Rogue Trader's Armor"
+	desc = "The distinguished armor of a Rogue Trader"
+	icon_state = "rtarm"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 46, bullet = 52, laser = 52, energy = 35, bomb = 50, bio = 30, rad = 30)
+	sales_price = 0
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS |ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -560,10 +570,10 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/enforcer2// Old enforcer armor for reference.
 	name = "Patrol Armor - Enforcer"
 	desc = "The flak armor worn by a Messina Enforcer. Light and robust in the colour blue, designed to protect against blast and small arms fire."
-	icon_state = "Judge"
-	item_state = "Judge"
+	icon_state = "PalaniteArmour"
+	item_state = "PalaniteArmour"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 40, bullet = 40, laser = 35, energy = 25, bomb = 30, bio = 20, rad = 20)
+	armor = list(melee = 44, bullet = 44, laser = 42, energy = 35, bomb = 40, bio = 40, rad = 40)
 	sales_price = 10
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -925,7 +935,7 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/catachansgt/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = -0.6
+	slowdown_per_slot[slot_wear_suit] = -0.5
 
 /obj/item/clothing/suit/armor/valhallasgt
 	name = "Valhallan Sergeant's Overcoat"
@@ -1984,3 +1994,9 @@ obj/item/clothing/suit/armor/scion
 	allowed = list(/obj/item/gun/energy,/obj/item/device/radio,/obj/item/reagent_containers/spray/pepper,/obj/item/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/handcuffs)
 	cold_protection = UPPER_TORSO|LOWER_TORSO
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
+
+obj/item/clothing/suit/armor/scion/trooper
+	name = "Stormtrooper Carapace"
+	desc = "Solid Carapace armour, belonging to the inquisitorial stormtrooper."
+	icon_state = "i-Stormtrooper Armor"
+	item_state = "i-Stormtrooper Armor"
