@@ -222,6 +222,20 @@
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 95, rad = 0)
 	flags_inv = HIDEFACE
 
+/obj/item/clothing/mask/gas/half/cadianrespirator/rt
+	name = "Archeotech Respirator"
+	desc = "A metal filtration system for protection against common toxic gasses."
+	icon_state = "rtm"
+	item_state = "rtm"
+	armor = list(melee = 25, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 95, rad = 0)
+	flags_inv = HIDEFACE
+
+/obj/item/clothing/mask/gas/half/cadianrespirator/inquis
+	name = "Filtration Mask"
+	desc = "Cadian-pattern Rebreather made for protection against common toxic gasses as well allows Guardsmen to operate in Airless condition for limited period."
+	icon_state = "Stormtrooper Gasmask"
+	item_state = "Stormtrooper Gasmask"
+
 /obj/item/clothing/mask/gas/krieg
 	name = "Mark IXb Gas Mask"
 	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Krieg Guardsman."

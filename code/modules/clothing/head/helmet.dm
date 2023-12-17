@@ -165,6 +165,8 @@
 	siemens_coefficient = 0.6
 	sales_price = 15
 
+
+
 /obj/item/clothing/head/helmet/kasrkin
 	name = "kasrkin helmet"
 	desc = "A carapace helmet belonging to the elite stormtroopers of the Kasrkin. Cadia may not be intact, but your brain will when in combat with this on."
@@ -534,3 +536,9 @@
 	siemens_coefficient = 0
 	flags_inv = BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EYES
+
+/obj/item/clothing/head/helmet/tscion/trooper
+	name = "Stormtrooper Helmet"
+	desc = "A reinforced helmet and faceplate system designed for the elite Inquisitorial Stormtroopers. Comprised of multiple layers of ceramite, comprising a solid carapace armour system."
+	icon_state = "i-stormtrooper helmet"
+	item_state = "i-stormtrooper helmet"

@@ -623,7 +623,7 @@ Pilgrim Fate System
 */
 
 /datum/job/noble
-	title = "Sondar Heir"
+	title = "House Sondar Lord"
 	department_flag = PIL
 	total_positions = 2
 	spawn_positions = 2

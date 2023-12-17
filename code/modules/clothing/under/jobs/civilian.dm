@@ -36,10 +36,10 @@
 
 /obj/item/clothing/under/rank/roguetrader
 	desc = "It's a distinguished jumpsuit with a marvelous sash denoting the rankings of \"The Imperium's Chosen Few\"."
-	name = "Noble's jumpsuit"
-	icon_state = "magistrate"
-	item_state = "magistrate"
-	worn_state = "magistrate"
+	name = "rogue apparel"
+	icon_state = "rtclo"
+	item_state = "rtclo"
+	worn_state = "rtclo"
 
 /obj/item/clothing/under/rank/cargo
 	name = "mechanicus bondsman jumpsuit"

@@ -1197,18 +1197,6 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/villageinside)
-"beL" = (
-/obj/structure/table/rack/shelf{
-	color = "grey"
-	},
-/obj/random/medical/lite,
-/obj/random/medical/lite,
-/obj/random/medical/lite,
-/obj/item/storage/toolbox/syndicate,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
 "bfH" = (
 /obj/structure/stairs/east,
 /turf/simulated/floor/ceramic,
@@ -1270,14 +1258,6 @@
 	},
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/farm)
-"bkc" = (
-/obj/item/storage/box/ifak,
-/obj/item/storage/box/ifak,
-/obj/structure/table/rack/shelf{
-	color = "grey"
-	},
-/turf/simulated/floor/dirty/tough,
-/area/cadiaoutpost/new_hive/hive_city)
 "bkF" = (
 /obj/effect/decal/cleanable/blood/gibs/robot,
 /obj/effect/floor_decal/newcorner/plating/corner{
@@ -1408,17 +1388,6 @@
 	dir = 4
 	},
 /turf/simulated/floor/ceramic,
-/area/cadiaoutpost/new_hive/hive_city)
-"bqJ" = (
-/obj/machinery/door/airlock/virology{
-	color = "grey";
-	maxhealth = 1200;
-	name = "Storage";
-	req_one_access = list(5,10,230,211)
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
 /area/cadiaoutpost/new_hive/hive_city)
 "brb" = (
 /obj/effect/floor_decal/newcorner/red/corner{
@@ -2013,13 +1982,6 @@
 	},
 /turf/simulated/floor/carpet,
 /area/cadiaoutpost/oa/villageinside)
-"bXw" = (
-/obj/item/reagent_containers/ivbag/blood/OMinus,
-/obj/structure/iv_drip,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
 "bXC" = (
 /obj/effect/floor_decal/newcorner/grass{
 	icon_state = "grass7"
@@ -4269,7 +4231,7 @@
 /area/cadiaoutpost/oa/service/chapel)
 "ehe" = (
 /obj/machinery/door/unpowered/inn/berryfarm{
-	req_one_access = list(230,211);
+	req_one_access = list(247);
 	name = "the farmhouse"
 	},
 /obj/structure/banner/blue{
@@ -4656,7 +4618,7 @@
 /area/cadiaoutpost/oa/security/barracks)
 "eAY" = (
 /obj/machinery/door/unpowered/inn/berryfarm{
-	req_one_access = list(272);
+	req_one_access = list(247);
 	name = "the farmhouse"
 	},
 /turf/simulated/floor/darksteel_floor{
@@ -4972,6 +4934,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/new_hive/hive_city)
+"eQt" = (
+/obj/machinery/door/airlock/glass_engineering,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/engineering)
 "eQw" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 4
@@ -5118,12 +5084,6 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel)
-"eYr" = (
-/obj/structure/bed/roller{
-	color = "grey"
-	},
-/turf/simulated/floor/dirty/tough,
-/area/cadiaoutpost/new_hive/hive_city)
 "eYt" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 4;
@@ -5860,17 +5820,17 @@
 	},
 /obj/random/loot/randomitemtown,
 /obj/random/loot/randomitemtown,
-/obj/item/card/id/key/grand{
-	name = "Farming Key";
-	access = list(272)
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
 	},
-/obj/item/card/id/key/grand{
-	name = "Farming Key";
-	access = list(272)
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
 	},
-/obj/item/card/id/key/grand{
-	name = "Farming Key";
-	access = list(272)
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
+	},
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/farm)
@@ -6261,7 +6221,7 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "gbl" = (
 /obj/machinery/door/unpowered/inn/berryfarm{
-	req_one_access = list(272);
+	req_one_access = list(247);
 	name = "the farmhouse"
 	},
 /turf/simulated/floor/factory_floor,
@@ -6750,14 +6710,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"gvx" = (
-/obj/structure/bed/roller{
-	color = "grey"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
 "gvQ" = (
 /obj/machinery/recharger{
 	pixel_y = 32
@@ -6982,11 +6934,6 @@
 	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/tiled/white,
-/area/cadiaoutpost/new_hive/hive_city)
-"gFq" = (
-/obj/item/reagent_containers/ivbag/blood/OMinus,
-/obj/structure/iv_drip,
-/turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/new_hive/hive_city)
 "gFW" = (
 /turf/simulated/floor/factory_floor{
@@ -7396,17 +7343,6 @@
 	icon_state = "dark1"
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
-"gZE" = (
-/obj/structure/table/rack/shelf{
-	color = "grey"
-	},
-/obj/random/firstaid,
-/obj/random/firstaid,
-/obj/random/firstaid,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
 "haa" = (
 /obj/effect/decal/cleanable/cobweb{
 	dir = 4
@@ -9679,12 +9615,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/farm)
-"iZI" = (
-/obj/structure/table/graf/rusty_table,
-/obj/item/reagent_containers/spray/sterilizine,
-/obj/random/soap,
-/turf/simulated/floor/dirty/tough,
-/area/cadiaoutpost/new_hive/hive_city)
 "iZT" = (
 /obj/machinery/door/unpowered/inn{
 	name = "Abandoned Building"
@@ -11521,11 +11451,7 @@
 /turf/simulated/floor/fancyfloor/marble,
 /area/cadiaoutpost/oa/villageinside)
 "kEd" = (
-/obj/machinery/door/unpowered/inn/room2{
-	maxhealth = 1500;
-	name = "Pathfinder Estate";
-	req_one_access = list(253)
-	},
+/obj/machinery/door/unpowered/inn,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/villageinside)
 "kEF" = (
@@ -11674,12 +11600,6 @@
 "kKP" = (
 /obj/effect/floor_decal/newcorner/black/corner,
 /turf/simulated/floor/tiled/white,
-/area/cadiaoutpost/new_hive/hive_city)
-"kKZ" = (
-/obj/machinery/door/airlock/glass{
-	name = "Shoddy Clinic"
-	},
-/turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/hive_city)
 "kLa" = (
 /obj/effect/floor_decal/newcorner/stone{
@@ -13036,21 +12956,17 @@
 	},
 /obj/item/ammo_box/shotgun,
 /obj/item/gun/projectile/shotgun/doublebarrel,
-/obj/item/card/id/key/grand{
-	name = "Farming Key";
-	access = list(272)
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
 	},
-/obj/item/card/id/key/grand{
-	name = "Farming Key";
-	access = list(272)
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
 	},
-/obj/item/card/id/key/grand{
-	name = "Farming Key";
-	access = list(272)
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
 	},
-/obj/item/card/id/key/grand{
-	name = "Farming Key";
-	access = list(272)
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/farm)
@@ -13649,14 +13565,6 @@
 	icon_state = "dark1"
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
-"mzI" = (
-/obj/structure/bed/roller{
-	color = "grey"
-	},
-/turf/simulated/floor/tiled/dark{
-	icon_state = "steel"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
 "mzK" = (
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/new_hive/hive_city)
@@ -14697,15 +14605,6 @@
 /obj/machinery/light/small,
 /turf/simulated/floor/new_wood/six,
 /area/cadiaoutpost/oa/villageinside)
-"nFr" = (
-/obj/machinery/body_scanconsole{
-	color = "grey";
-	dir = 4
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
 "nFC" = (
 /obj/structure/table/rack,
 /obj/item/ingots/coboltingot,
@@ -15214,16 +15113,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/bridge/hallway)
-"ogN" = (
-/obj/structure/table/rack/shelf{
-	color = "grey"
-	},
-/obj/item/reagent_containers/ivbag/blood/OMinus,
-/obj/item/reagent_containers/ivbag/blood/OMinus,
-/turf/simulated/floor/tiled/dark{
-	icon_state = "steel"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
 "ohq" = (
 /obj/machinery/door/unpowered/inn{
 	name = "Hab Block"
@@ -15293,15 +15182,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/medicae)
-"okY" = (
-/obj/structure/sink{
-	dir = 8;
-	icon_state = "sink";
-	pixel_x = -12;
-	color = "grey"
-	},
-/turf/simulated/floor/dirty/tough,
-/area/cadiaoutpost/new_hive/hive_city)
 "okZ" = (
 /obj/effect/floor_decal/turf/barnew,
 /obj/effect/floor_decal/floordetail/edgedrain,
@@ -16115,7 +15995,7 @@
 /area/cadiaoutpost/oa/villageinside)
 "oXl" = (
 /obj/machinery/door/unpowered/inn/berryfarm{
-	req_one_access = list(230,211);
+	req_one_access = list(247);
 	name = "the farmhouse"
 	},
 /turf/simulated/floor/tiled{
@@ -17787,12 +17667,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"qEv" = (
-/obj/machinery/door/unpowered/inn{
-	name = "Bathroom"
-	},
-/turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/farm)
 "qEI" = (
 /obj/structure/table/rack,
 /obj/item/landmine,
@@ -18840,12 +18714,6 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/farm)
-"rCi" = (
-/obj/structure/curtain/medical,
-/turf/simulated/floor/tiled/dark{
-	icon_state = "steel"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
 "rCD" = (
 /obj/item/metal_shiv,
 /obj/structure/bed/chair/wood,
@@ -19050,7 +18918,7 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "rSa" = (
 /obj/machinery/door/unpowered/inn/berryfarm{
-	req_one_access = list(272);
+	req_one_access = list(247);
 	name = "the farmhouse"
 	},
 /turf/simulated/floor/darksteel_floor,
@@ -19129,14 +18997,6 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
-"rWh" = (
-/obj/structure/table/graf/rusty_table,
-/obj/item/storage/firstaid/surgery,
-/obj/item/FixOVein,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
 "rWF" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 8
@@ -20085,15 +19945,6 @@
 /obj/random/junk,
 /turf/simulated/floor/concrete,
 /area/cadiaoutpost/new_hive/hive_city)
-"sNK" = (
-/obj/structure/table/rack/shelf{
-	color = "grey"
-	},
-/obj/item/handcuffs/cable/yellow,
-/turf/simulated/floor/tiled/dark{
-	icon_state = "steel"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
 "sNQ" = (
 /obj/item/reagent_containers/food/drinks/glass2/shake{
 	pixel_y = 6;
@@ -20154,7 +20005,7 @@
 /obj/structure/bed/barrack,
 /obj/structure/bed/barrack1,
 /obj/effect/landmark/start{
-	name = "Farmer"
+	name = "House Sondar Servant"
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/farm)
@@ -20477,15 +20328,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"taT" = (
-/obj/machinery/bodyscanner{
-	color = "grey";
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark{
-	icon_state = "steel"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
 "taW" = (
 /obj/structure/bed/chair/wood/simple{
 	dir = 4
@@ -23771,12 +23613,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/chapel/graveyard)
-"wfQ" = (
-/obj/machinery/optable,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
 "wfU" = (
 /obj/effect/floor_decal/turf/metal/five,
 /obj/machinery/light,
@@ -24888,10 +24724,6 @@
 /obj/effect/decal/cleanable/cobweb2,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
-"xun" = (
-/obj/structure/curtain/medical,
-/turf/simulated/floor/dirty/tough,
-/area/cadiaoutpost/new_hive/hive_city)
 "xus" = (
 /obj/structure/table/rack/dark,
 /obj/random/soap,
@@ -25288,11 +25120,7 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "xPT" = (
-/obj/machinery/door/unpowered/inn/deadwood{
-	maxhealth = 1500;
-	req_one_access = list();
-	name = "Bathroom"
-	},
+/obj/machinery/door/unpowered/inn,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/villageinside)
 "xPX" = (
@@ -25383,14 +25211,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
-"xUY" = (
-/obj/machinery/door/unpowered/inn/room2{
-	maxhealth = 1500;
-	name = "Pathfinder Estate";
-	req_one_access = list(253)
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
 "xVG" = (
 /obj/structure/table/rack/dark,
 /obj/machinery/light/small,
@@ -37586,11 +37406,11 @@ bxO
 cUw
 pLj
 pLj
-xUY
+xPT
 pLj
 pLj
 pLj
-xUY
+xPT
 pLj
 pLj
 vAK
@@ -38342,12 +38162,12 @@ lLF
 pLj
 pLj
 pLj
-xUY
+xPT
 pLj
 pLj
 pLj
 pLj
-xUY
+xPT
 pLj
 pLj
 pLj
@@ -39353,7 +39173,7 @@ pLj
 pLj
 pLj
 pLj
-xUY
+xPT
 pLj
 xPT
 pLj
@@ -63334,13 +63154,13 @@ uNf
 uNf
 uNf
 uNf
-aGo
-aGo
+eQt
+eQt
 uNf
 uNf
 uNf
-aGo
-aGo
+eQt
+eQt
 uNf
 uNf
 uNf
@@ -75147,14 +74967,14 @@ nSI
 nSI
 nSI
 qiL
-iFU
-iFU
-iFU
-iFU
-iFU
-iFU
-iFU
-iFU
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
 qiL
 "}
 (197,1,1) = {"
@@ -75399,14 +75219,14 @@ nSI
 nSI
 qiL
 qiL
-iFU
-beL
-gZE
-iFU
-okY
-wfQ
-rWh
-iFU
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
 qiL
 "}
 (198,1,1) = {"
@@ -75651,14 +75471,14 @@ nSI
 nSI
 qiL
 qiL
-iFU
-jXA
-ogN
-iFU
-bXw
-geo
-iZI
-iFU
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
 qiL
 "}
 (199,1,1) = {"
@@ -75903,14 +75723,14 @@ nSI
 nSI
 qiL
 qiL
-iFU
-bqJ
-iFU
-iFU
-rCi
-rCi
-xun
-iFU
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
 qiL
 "}
 (200,1,1) = {"
@@ -76139,7 +75959,7 @@ lOQ
 pje
 pje
 pje
-gbl
+pcz
 dSx
 wbk
 wOH
@@ -76155,14 +75975,14 @@ nSI
 nSI
 qiL
 qiL
-iFU
-jXA
-geo
-iFU
-bXT
-bXT
-bXT
-iFU
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
 qiL
 "}
 (201,1,1) = {"
@@ -76407,14 +76227,14 @@ nSI
 nSI
 qiL
 qiL
-iFU
-jXA
-geo
-geo
-jXA
-jXA
-jXA
-iFU
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
 qiL
 "}
 (202,1,1) = {"
@@ -76659,14 +76479,14 @@ nSI
 nSI
 qiL
 qiL
-iFU
-iFU
-nFr
-geo
-mzI
-gvx
-jXA
-iFU
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
 qiL
 "}
 (203,1,1) = {"
@@ -76901,7 +76721,7 @@ xGb
 vvz
 sOV
 xGb
-qEv
+mEn
 aLk
 xEK
 lOQ
@@ -76911,14 +76731,14 @@ nSI
 nSI
 qiL
 qiL
-eTh
-iFU
-taT
-jXA
-jXA
-geo
-bXT
-kKZ
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
 qiL
 "}
 (204,1,1) = {"
@@ -77163,14 +76983,14 @@ nyx
 nSI
 qiL
 qiL
-eTh
-iFU
-iFU
-sNK
-bkc
-gFq
-eYr
-iFU
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
 qiL
 "}
 (205,1,1) = {"
@@ -77416,13 +77236,13 @@ nyx
 qiL
 qiL
 eTh
-eTh
-iFU
-iFU
-iFU
-iFU
-iFU
-iFU
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
+qiL
 qiL
 "}
 (206,1,1) = {"

@@ -40,10 +40,10 @@
 
 /decl/hierarchy/outfit/job/service/gardener
 	name = OUTFIT_JOB_NAME("Farmer")
-	uniform = /obj/item/clothing/under/rank/victorian
-	suit = /obj/item/clothing/suit/farmer
-	gloves = /obj/item/clothing/gloves/thick/botany
-	r_pocket = /obj/item/device/analyzer/plant_analyzer
+	uniform = null
+	suit = null
+	gloves = null
+	r_pocket = null
 	id_type = null
 	pda_type = null
 	pda_slot = null
@@ -52,15 +52,10 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_hand = /obj/item/farmshovel
+	l_hand = null
 	r_pocket = /obj/item/storage/box/coin
 	belt = /obj/item/storage/plants
-	backpack_contents = list(/obj/item/seeds/potatoseed = 1,
-	/obj/item/seeds/wheatseed = 1,
-	/obj/item/seeds/cornseed = 1,
-	/obj/item/seeds/random = 1,
-	/obj/item/seeds/tobaccoseed = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 
