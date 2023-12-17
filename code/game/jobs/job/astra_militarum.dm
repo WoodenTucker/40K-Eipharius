@@ -1449,6 +1449,7 @@ datum/job/ig/bullgryn
 	suit = /obj/item/clothing/suit/armor/commissar/krieg
 	head = /obj/item/clothing/head/commissar/krieg
 	mask = /obj/item/clothing/mask/gas/commissar
+	neck = /obj/item/clothing/accessory/kccloak
 	glasses = null
 	l_ear = /obj/item/device/radio/headset/heads/hos
 
