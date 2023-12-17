@@ -983,10 +983,10 @@ obj/item/clothing/suit/armor
 	slowdown_per_slot[slot_wear_suit] = 0.2
 
 /obj/item/clothing/suit/armor/commissar/krieg
-	name = "Commissar's Trenchcoat"
+	name = "Commissar's Breastplate"
 	desc = "The Commissar's iconic coat, this out tailored to match more of the uniform theme of the Officers of Krieg. Though the Krieg Guardsmen don't fear you, the others certainly will."
-	icon_state = "Kriegissar"
-	item_state = "Kriegissar"
+	icon_state = "Kriegissarplate"
+	item_state = "Kriegissarplate"
 	armor = list(melee = 50, bullet = 56, laser = 40, energy = 25, bomb = 45, bio = 100, rad = 100)
 
 /obj/item/clothing/suit/armor/commissar/catachan
