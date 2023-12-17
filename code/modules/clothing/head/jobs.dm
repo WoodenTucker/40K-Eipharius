@@ -197,8 +197,8 @@
 /obj/item/clothing/head/helmet/guardhelmet/enforcer
 	name = "Magistratum Enforcer Helmet"
 	desc = "The Enforcer Helmet, based on the Cadian-pattern helmet, are issued to local planetary enforcers against criminals of the Imperium, It is painted in a dark blue colour."
-	icon_state = "Jhelm2"
-	item_state = "Jhelm2"
+	icon_state = "PalaniteHelmet"
+	item_state = "PalaniteHelmet"
 	armor = list(melee = 38, bullet = 40, laser = 40, energy = 35, bomb = 10, bio = 10, rad = 10)
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -325,7 +325,7 @@
 	desc = "Unlike the more common Cadian-pattern, the Mark IX is made out of durable plasteel, giving it higher defensive capabilities though at the cost of weight and production. This one has a decorated ceramite plate layered on top."
 	icon_state = "krieghelm"
 	item_state = "krieghelm"
-	armor = list(melee = 42, bullet = 55, laser = 46, energy = 35, bomb = 42, bio = 80, rad = 80)
+	armor = list(melee = 55, bullet = 55, laser = 46, energy = 35, bomb = 50, bio = 80, rad = 80)
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 

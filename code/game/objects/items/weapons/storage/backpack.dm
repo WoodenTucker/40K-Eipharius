@@ -682,4 +682,23 @@
 		usr.put_in_hands(new /obj/item/gun/energy/thallax/lightning(usr))
 
 
+/obj/item/storage/backpack/satchel/warfare/scion
+	name = "Tempestus Scion Power Pack"
+	desc = "Designed to power the armour systems and weapons of a Tempestus Scion near-indefinitely."
+	icon_state = "ScionBackpack"
+	item_state = "ScionBackpack"
+	canremove = FALSE
+	var/can_toggle = 1
+
+/obj/item/storage/backpack/satchel/warfare/scion/verb/togglelasgun()
+	set name = "Retrieve Hotshot Lasgun"
+	set category = "Lasgun"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+	else
+		to_chat(usr,"You retrieve your Hotshot Lasgun!")
+		usr.put_in_hands(new /obj/item/gun/energy/las/hotshot/power_pack(usr))
 

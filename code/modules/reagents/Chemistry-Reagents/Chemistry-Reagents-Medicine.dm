@@ -848,3 +848,21 @@
 
 /datum/reagent/aurilium/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 		M.adjustEarDamage(-10, -10) //easy as
+
+/datum/reagent/martyr
+	name = "Martyr's Salvation"
+	description = "Designed to bring individuals back from the brink of death."
+	taste_description = "blood with bubbles"
+	reagent_state = REAGENT_LIQUID
+	color = "#c10158"
+	scannable = 1
+	overdose = 30
+	metabolism = 1
+	flags = IGNORE_MOB_SIZE
+
+/datum/reagent/martyr/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	M.heal_organ_damage(25 * removed, 25 * removed)
+	M.adjustCloneLoss(-20 * removed)
+	M.adjustOxyLoss(-5 * removed)
+	M.adjustToxLoss(-20 * removed)
+	M.add_chemical_effect(CE_STABLE)

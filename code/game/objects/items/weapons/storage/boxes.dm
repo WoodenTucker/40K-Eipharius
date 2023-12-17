@@ -500,6 +500,11 @@
 		/obj/item/implantcase/imprinting = 3
 		)
 
+/obj/item/storage/box/kriegration
+	name = "Krieg ration box"
+	desc = "A field ration box given out to Kriegsmen on the field, contains two packs of K-Rations. The content section of the package seems to be stamped out."
+	startswith = list(/obj/item/reagent_containers/food/snacks/kriegration = 2)
+
 /obj/item/storage/box/ifak
 	name = "IFAK"
 	desc = "An Individual First Aid Kit, used to keep you alive until a medic can patch you up proper."
@@ -516,6 +521,14 @@
 		..()//If it's not in any of these slots then just return normally.
 		return
 	open(user)//If it's in your pocket then open it.
+
+/obj/item/storage/box/ifak/advanced
+	name = "AIFAK"
+	desc = "An Advanced Individual First Aid Kit, intended for elite forces."
+	icon_state = "ifak"
+	startswith = list(/obj/item/bandage_pack, /obj/item/tourniquet, /obj/item/reagent_containers/hypospray/autoinjector/morphine, /obj/item/suture, /obj/item/wirecutters, /obj/item/reagent_containers/hypospray/autoinjector/blood, /obj/item/reagent_containers/hypospray/autoinjector/martyr)
+	w_class = ITEM_SIZE_SMALL
+	max_storage_space = 16
 
 /obj/item/storage/box/coin
 	name = "coin pouch"

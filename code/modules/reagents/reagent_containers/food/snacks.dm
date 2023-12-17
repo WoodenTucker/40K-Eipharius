@@ -3313,6 +3313,20 @@
 		reagents.add_reagent(/datum/reagent/iron, 3)
 		bitesize = 2
 
+/obj/item/reagent_containers/food/snacks/kriegration
+	name = "\improper Krieg Ration"
+	desc = "A mass-produced field ration, formulated to provide a blend of essential nutrients, is designed to meet the nutritional needs of a soldier, ensuring not only survival but also peak physical performance. It is concoction of vitamins, minerals, proteins, and other vital elements essential for sustaining the demands of military life. "
+	icon_state = "kriegration"
+	trash = /obj/item/trash/liquidfood
+	filling_color = "#a8a8a8"
+	center_of_mass = "x=16;y=15"
+	nutriment_desc = list("meat" = 9)
+	nutriment_amt = 18
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/iron, 6)
+		bitesize = 4
+
 /obj/item/reagent_containers/food/snacks/foodtray
 	name = "Food Tray"
 	desc = "Disgusting grey slurry and a side of boiled vegetables."

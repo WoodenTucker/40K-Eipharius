@@ -111,10 +111,10 @@
 	blurb = "The Space Marines or Adeptus Astartes are foremost amongst the defenders of Humanity, the greatest of the Emperor of Mankind's Warriors. They are barely human at all, but superhuman; having been made superior in all respects to a normal man by a harsh regime of genetic modification, psycho-conditioning and rigorous training. Untouched by disease and can take a wound that could kill a normal human instantly. Using ancient power armor that can augment their abilities and wielding the best weapons known to man."
 	min_age = 16
 	max_age = 18
-	blood_volume = 450 // how much blood a retardes has
+	blood_volume = 450 // how much blood an Astartes has
 	slowdown = -0.25 //Increased move speed
 	gluttonous = GLUT_ITEM_NORMAL
-	total_health = 250 // a normal human has 200 brain health, retardes have 250 //P.S this is brain health
+	total_health = 250 // a normal human has 200 brain health, Sstartes have 250 //P.S this is brain health
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR | HAS_A_SKIN_TONE
 	strength = STR_HIGH
 	genders = list(MALE)
@@ -145,3 +145,166 @@
 /mob/living/carbon/human/scout/Initialize()
 	. = ..()
 	src.rejuvenate()
+
+/datum/species/human/scion //This is a temporary thing, until the lateparty section is set up.
+	name = SPECIES_SCION
+	name_plural = "Tempestus Scions"
+	primitive_form = SPECIES_HUMAN
+	brute_mod =      0.9                    // 90% brute damage
+	burn_mod =       0.9                  //  90% burn damage
+	unarmed_types = list(
+		/datum/unarmed_attack/stomp,
+		/datum/unarmed_attack/kick,
+		/datum/unarmed_attack/punch,
+		/datum/unarmed_attack/bite
+		)
+	blurb = "Tempestus Scions, or as they are known in Low Gothic, Storm Troopers, are the elite special forces units of the Astra Militarum and the Inquisition, but officially belong to a subdivision of the Adeptus Administratum known as the Militarum Tempestus."
+	min_age = 18
+	max_age = 26
+	blood_volume = 450
+	slowdown = -0.25 //Increased move speed
+	gluttonous = GLUT_ITEM_NORMAL
+	total_health = 250
+	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR | HAS_A_SKIN_TONE
+	strength = STR_HIGH
+	genders = list(MALE)
+	slowdown = -0.4 //Peak physical fitness.
+	inherent_verbs = list(
+	/mob/living/carbon/human/scion/proc/setupstart
+		)
+	spawn_flags = null
+	species_flags = SPECIES_FLAG_NO_PAIN //Highly trained and indoctrinated, they have great pain tolerance.
+
+
+/datum/species/human/scion/handle_post_spawn(var/mob/living/carbon/human/scion/H)
+	. = ..()
+	H.age = rand(min_age,max_age)
+	to_chat(H, "<big><span class='warning'>You are a highly trained soldier of the Militarum Tempestus!</span></big>")
+
+/mob/living/carbon/human/scion
+	gender = MALE
+
+/mob/living/carbon/human/scion/Initialize()
+	. = ..()
+	set_species("Tempestus Scion")
+	warfare_faction = IMPERIUM
+	offer_mob()
+
+/mob/living/carbon/human/scion/proc/request_player() //reqs the player
+	for(var/mob/observer/ghost/O in GLOB.player_list)
+		if(O.client)
+			question(O.client)
+
+/mob/living/carbon/human/scion/proc/question(var/client/C) //asks the questions
+	if(!C)
+		return FALSE
+	var/response = alert(C, "A Tempestus Scion trooper needs a player. Are you interested?", "Tempestus Scion", "Yes", "No",)
+	if(!C || ckey)
+		return FALSE
+	if(response == "Yes")
+		transfer_personality(C)
+		src.warfare_faction = IMPERIUM
+		return TRUE
+	return FALSE
+
+/mob/living/carbon/human/scion/proc/transfer_personality(var/client/candidate) //puts the player in the mob.
+
+	if(!candidate)
+		return
+
+	src.mind = candidate.mob.mind
+	src.ckey = candidate.ckey
+	if(src.mind)
+		src.mind.assigned_role = "syndicate"
+
+/mob/living/carbon/human/scion/proc/setupstart()
+	set name = "Setup"
+	set category = "Setup"
+	set desc = "Gives your equipment and stats."
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	var/tempclass = input("Select a Class","Class Selection") as null|anything in list("Tempestus Scion Trooper")
+	switch(tempclass)
+		if("Tempestus Scion Trooper")
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/combat/scion, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/clothing/under/guard/uniform/scion, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/scion, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/glasses/scion, slot_glasses)
+			equip_to_slot_or_del(new /obj/item/device/radio/headset/specops, slot_l_ear)
+			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/security, slot_wear_mask)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare/scion, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/scion, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/melee/chain/inqcs, slot_s_store)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/tscion, slot_head)
+			equip_to_slot_or_del(new /obj/item/grenade/frag/high_yield/krak, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/grenade/frag/high_yield/krak, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/grenade/frag, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/grenade/frag, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/storage/box/ifak/advanced, slot_l_store)
+			visible_message("[name] grabs their kit!")
+			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
+			src.add_stats(rand(19,21),rand(19,21),rand(19,21),rand(19,21)) //gives stats str, dext, end, int
+			src.add_skills(rand(19,21),rand(19,21),rand(16,18),rand(12,14),rand(12,14)) //melee, ranged, med, eng, surgery
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.update_eyes() //should fix grey vision
+			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC) //secondary language
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY 
+			src.thirst = INFINITY
+			src.nutrition = INFINITY 
+			src.verbs -= /mob/living/carbon/human/scion/proc/setupstart //removes verb at the end so they can't spam it for whatever reason
+			client?.color = null
+
+			var/obj/item/card/id/dog_tag/guardsman/W = new
+			W.icon_state = "tagred"
+			W.assignment = "Tempestus Scion"
+			W.registered_name = real_name
+			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)
+
+/datum/species/human/officer
+	name = SPECIES_OFFICER
+	name_plural = "Imperial Guard Officers"
+	primitive_form = SPECIES_HUMAN
+	brute_mod =      0.8                    // 80% brute damage
+	burn_mod =       0.8                  //  80% burn damage
+	unarmed_types = list(
+		/datum/unarmed_attack/stomp,
+		/datum/unarmed_attack/kick,
+		/datum/unarmed_attack/punch,
+		/datum/unarmed_attack/bite
+		)
+	blurb = "A high-ranking Officer in the Imperial Guard."
+	min_age = 23
+	max_age = 35
+	blood_volume = 450 
+	spawn_flags = null
+	inherent_verbs = list(
+	/mob/living/carbon/human/officer/proc/setupstartofficer
+	)
+
+/mob/living/carbon/human/officer/proc/setupstartofficer()
+	set name = "Setup"
+	set category = "Setup"
+	set desc = "Gives your equipment and stats."
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	warfare_faction = IMPERIUM
+	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/security/colonel)
+	outfit.equip(src)
+	src.add_stats(rand(19,21),rand(19,21),rand(19,21),rand(19,21)) //gives stats str, dext, end, int
+	src.add_skills(rand(19,21),rand(19,21),rand(16,18),rand(12,14),rand(12,14)) //melee, ranged, med, eng, surgery
+	src.set_trait(new/datum/trait/death_tolerant())
+	src.update_eyes() //should fix grey vision
+	src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC) //secondary language
+	src.bladder = -INFINITY
+	src.bowels = -INFINITY 
+	src.thirst = INFINITY
+	src.nutrition = INFINITY 
+	src.verbs -= /mob/living/carbon/human/officer/proc/setupstartofficer //removes verb at the end so they can't spam it for whatever reason

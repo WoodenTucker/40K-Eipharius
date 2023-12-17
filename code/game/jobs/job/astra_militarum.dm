@@ -758,7 +758,8 @@ datum/job/ig/bullgryn
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/grenade/chem_grenade/gas/xyxl = 2
 	)
 
 	id_type = /obj/item/card/id/dog_tag/guardsman
@@ -787,7 +788,8 @@ datum/job/ig/bullgryn
 	/obj/item/cell/lasgun/hotshot = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/grenade/chem_grenade/gas/xyxl = 2
 	)
 
 	id_type = /obj/item/card/id/dog_tag/guardsman
@@ -816,7 +818,8 @@ datum/job/ig/bullgryn
 	/obj/item/cell/lasgun/hotshot = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/grenade/chem_grenade/gas/xyxl = 2
 	)
 
 	id_type = /obj/item/card/id/dog_tag/guardsman
@@ -844,7 +847,8 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
-	/obj/item/shovel/krieg = 1
+	/obj/item/shovel/krieg = 1,
+	/obj/item/storage/box/kriegration = 1,
 	)
 
 /decl/hierarchy/outfit/job/guardsman/catachan
@@ -870,7 +874,9 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/handcuffs = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/grenade/chem_grenade/gas/xyxl = 1,
+	/obj/item/grenade/chem_grenade/gas/phosphorous = 1
 	)
 
 /decl/hierarchy/outfit/job/guardsman/valhallan
@@ -892,7 +898,8 @@ datum/job/ig/bullgryn
 	/obj/item/ammo_magazine/c556/ms = 4,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/grenade/chem_grenade/gas/xyxl = 2
 	)
 
 /decl/hierarchy/outfit/job/guardsman/maccabian
@@ -915,7 +922,8 @@ datum/job/ig/bullgryn
 	/obj/item/cell/lasgun/hotshot = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/grenade/chem_grenade/gas/xyxl = 2
 	)
 
 //Karskin
@@ -941,7 +949,8 @@ datum/job/ig/bullgryn
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/cell/lasgun/hotshot = 3,
-	/obj/item/clothing/accessory/holster/waist = 1
+	/obj/item/clothing/accessory/holster/waist = 1,
+	/obj/item/grenade/chem_grenade/gas/xyxl = 2
 	)
 
 
@@ -1017,11 +1026,12 @@ datum/job/ig/bullgryn
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
-	/obj/item/cell/lasgun/hotshot = 1,
+	/obj/item/cell/lasgun/hotshot = 2,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
-	/obj/item/shovel/krieg = 1
+	/obj/item/shovel/krieg = 1,
+	/obj/item/storage/box/kriegration = 1
 	)
 
 /decl/hierarchy/outfit/job/sharpshooter/catachan
@@ -1103,7 +1113,8 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/handcuffs = 1,
-	/obj/item/shovel/krieg = 1
+	/obj/item/shovel/krieg = 1,
+	/obj/item/storage/box/kriegration = 1
 	)
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
 
@@ -1243,7 +1254,8 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/handcuffs = 1,
-	/obj/item/shovel/krieg = 1
+	/obj/item/shovel/krieg = 1,
+	/obj/item/storage/box/kriegration = 1
 	)
 
 /decl/hierarchy/outfit/job/sniper/valhalla
@@ -1327,7 +1339,8 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/handcuffs = 1,
-	/obj/item/shovel/krieg = 1
+	/obj/item/shovel/krieg = 1,
+	/obj/item/storage/box/kriegration = 1
 	)
 
 /decl/hierarchy/outfit/job/sergeant/catachan
@@ -1358,20 +1371,20 @@ datum/job/ig/bullgryn
 	name = OUTFIT_JOB_NAME("Valhallan Sergeant")
 	uniform =  /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallasgt
-	belt = null // pistol
+	belt = /obj/item/gun/projectile/slugrevolver
 	head = /obj/item/clothing/head/valushanka
 	mask = null
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
-	suit_store = null // rifle maybe? not sure
+	suit_store = /obj/item/gun/projectile/lockebolter
 	l_ear = /obj/item/device/radio/headset/red_team
 	r_hand = /obj/item/storage/box/coin
 	neck = /obj/item/reagent_containers/food/drinks/canteen/valhallan
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
+	/obj/item/ammo_magazine/c44/ms = 3,
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/handcuffs = 1
 	)
@@ -1401,7 +1414,7 @@ datum/job/ig/bullgryn
 
 /decl/hierarchy/outfit/job/ig/commissar
 	name = OUTFIT_JOB_NAME("Cadian Commissar")
-	uniform = /obj/item/clothing/under/color/black
+	uniform = /obj/item/clothing/under/hosformalmale
 	suit = /obj/item/clothing/suit/armor/commissar
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/melee/sword/commissword

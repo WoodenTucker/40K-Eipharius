@@ -708,3 +708,10 @@
 	desc = "This standard Munitorum-issue uniform has had all imperial markings removed"
 	icon_state = "rm_uniform"
 	item_state = "rm_uniform_s"
+
+/obj/item/clothing/under/guard/uniform/scion
+	name = "Tempestus Scion Undersuit"
+	desc = "A standardised armoured undersuit worn by Tempestus Scions"
+	icon_state = "ScionUndersuit"
+	item_state = "scionundersuit"
+	armor = list(melee = 30, bullet = 40, laser = 20, energy = 20, bomb = 20, bio = 20, rad = 0)

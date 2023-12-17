@@ -252,3 +252,10 @@
 	min_cold_protection_temperature = GLOVES_MIN_COLD_PROTECTION_TEMPERATURE
 	heat_protection = HANDS
 	max_heat_protection_temperature = GLOVES_MAX_HEAT_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/gloves/thick/combat/scion
+	desc = "Armoured gauntlets belonging to the elite Tempestus Scions."
+	name = "Tempestus Gauntlets"
+	icon_state = "ScionGloves"
+	item_state = "ScionGloves"
+	armor = list(melee = 60, bullet = 60, laser = 60, energy = 60, bomb = 60, bio = 100, rad = 0)

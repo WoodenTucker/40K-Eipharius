@@ -319,3 +319,10 @@
 	icon_state = "rail"
 	maxcharge = 1000
 	matter = list(DEFAULT_WALL_MATERIAL = 750, "glass" = 150)
+
+/obj/item/cell/melta
+	name = "Melta power cell"
+	desc = "A heavy-duty power cell for Melta weapons. "
+	icon_state = "plasmaflask"
+	w_class = ITEM_SIZE_NORMAL
+	maxcharge = 10000

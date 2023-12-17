@@ -360,3 +360,37 @@
 	animate_movement = 1
 	penetrating = 10
 	armor_penetration = 200
+
+/obj/item/projectile/energy/meltagun
+	name = "Meltagun beam"
+	icon_state = "spark"
+	damage = 90
+	damage_type = BURN
+	check_armour = "energy"
+	mob_hit_sound = list('sound/effects/gore/sear.ogg')
+	range =  5
+	incinerate = 1
+	penetrating = 10
+	armor_penetration = 200
+	var/flash_range = 1
+	var/brightness = 10
+	var/light_colour = "#ffffff"
+
+/obj/item/projectile/energy/meltagun/on_impact(var/atom/A)
+	var/turf/T = flash_range? src.loc : get_turf(A)
+	if(!istype(T)) return
+
+	//blind and confuse adjacent people
+	for (var/mob/living/carbon/M in viewers(T, flash_range))
+		if(M.eyecheck() < FLASH_PROTECTION_MODERATE)
+			M.flash_eyes()
+			M.eye_blurry += (brightness / 2)
+			M.confused += (brightness / 2)
+
+	//snap pop
+	playsound(src, 'sound/effects/snap.ogg', 50, 1)
+	src.visible_message("<span class='warning'>\The [src] explodes in a bright flash!</span>")
+
+	var/datum/effect/effect/system/spark_spread/sparks = new /datum/effect/effect/system/spark_spread()
+	sparks.set_up(2, 1, T)
+	sparks.start()

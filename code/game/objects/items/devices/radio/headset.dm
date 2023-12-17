@@ -252,12 +252,19 @@
 	w_class = ITEM_SIZE_SMALL
 
 //IMPORTANT - NEEDS TWEAKING DEPENDING ON IF ERTS ARE PLANNED TO BE USED
-/obj/item/device/radio/headset/ert
+/obj/item/device/radio/headset/ert // Nobles
 	name = "Standard Issue Vox"
 	desc = "A sekret headset"
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/secure1
+
+/obj/item/device/radio/headset/ert2 // Ganger and RT
+	name = "Standard Issue Vox"
+	desc = "A sekret headset"
+	icon_state = "com_headset"
+	item_state = "headset"
+	ks2type = /obj/item/device/encryptionkey/secure2
 
 //I have no idea if this is used rn
 /obj/item/device/radio/headset/ia
@@ -480,7 +487,7 @@
 	desc = "A command-level vox with high tiers of encryption."
 	icon_state = "com_headset"
 	item_state = "headset"
-	ks1type = /obj/item/device/encryptionkey/red
+	ks1type = /obj/item/device/encryptionkey/secure2
 	ks2type = /obj/item/device/encryptionkey/heads/captain
 	slot_flags = SLOT_EARS
 	w_class = ITEM_SIZE_SMALL
@@ -495,3 +502,14 @@
 	channels = list("Vox" = 1, "Vermilion" = 1, "Ecclesiarchy" = 1)
 	origin_tech = list(TECH_ILLEGAL = 2)
 	syndie = 1
+
+/obj/item/device/radio/headset/red_team/officer
+	icon = 'icons/obj/radio.dmi'
+	name = "Imperial Guard Officer's Vox"
+	desc = "A high-grade Guard issue Standard Issue Vox. Allows the wearer to communicate with their inferiors brass and pass along orders. Attach it to one of your ears."
+	ks1type = /obj/item/device/encryptionkey/red
+	ks2type = /obj/item/device/encryptionkey/heads/hos
+	icon_state = "sec_headset"
+	item_state = "sec_headset"
+	slot_flags = SLOT_EARS
+	w_class = ITEM_SIZE_SMALL

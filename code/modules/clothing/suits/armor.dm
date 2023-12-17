@@ -342,7 +342,17 @@ obj/item/clothing/suit/armor
 	icon_state = "lccoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 35, bullet = 45, laser = 45, energy = 25, bomb = 40, bio = 20, rad = 20) //Hidden armoured plates
-	sales_price = 25
+	sales_price = 0
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS |ARMS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/rtcloak2
+	name = "Rogue Trader's Armor"
+	desc = "The distinguished armor of a Rogue Trader"
+	icon_state = "rtarm"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 46, bullet = 52, laser = 52, energy = 35, bomb = 50, bio = 30, rad = 30)
+	sales_price = 0
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS |ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -560,10 +570,10 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/enforcer2// Old enforcer armor for reference.
 	name = "Patrol Armor - Enforcer"
 	desc = "The flak armor worn by a Messina Enforcer. Light and robust in the colour blue, designed to protect against blast and small arms fire."
-	icon_state = "Judge"
-	item_state = "Judge"
+	icon_state = "PalaniteArmour"
+	item_state = "PalaniteArmour"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 40, bullet = 40, laser = 35, energy = 25, bomb = 30, bio = 20, rad = 20)
+	armor = list(melee = 44, bullet = 44, laser = 42, energy = 35, bomb = 40, bio = 40, rad = 40)
 	sales_price = 10
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -730,7 +740,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/medicae
 	name = "Cadian Pattern Medicae Flak Armour - Light"
-	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it light configuration, bearing the Red Cross of a Combat Medicae."
+	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it light configuration, bearing the Red Cross of a Combat Medicae. This one is made to be lighter to accomodate movement."
 	icon_state = "medicae"
 	item_state = "medicae"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -739,6 +749,9 @@ obj/item/clothing/suit/armor
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+/obj/item/clothing/suit/armor/medicae/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = -0.1
 
 /obj/item/clothing/suit/armor/whiteshield
 	name = "Cadian Pattern Conscript Flak Armour - Light"
@@ -763,14 +776,17 @@ obj/item/clothing/suit/armor
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-/obj/item/clothing/suit/armor/CatachanVest/New()
+/obj/item/clothing/suit/armor/catachan/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = -0.4
 
 /obj/item/clothing/suit/armor/catachan/medicae
 	name = "Catachan Medicae Flak Vest"
-	desc = "Unlike the common Cadian folks or famous Krieg guardsmen, the Catachans only wear their lightly protected Flak vest to protect their hairy masculine chests against bruises and sharpnels. This one is worn by Catachan Combat Medicae." // Why are you gei?
+	desc = "Unlike the common Cadian folks or famous Krieg guardsmen, the Catachans only wear their lightly protected Flak vest to protect their hairy masculine chests against bruises and sharpnels. This one is worn by Catachan Combat Medicae, being lighter in comparison to it's counterpart." // Why are you gei?
 	icon_state = "mCatachan_Vest"
+/obj/item/clothing/suit/armor/catachan/medicae/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = -0.5
 
 /obj/item/clothing/suit/armor/catachan/flamerspecialist
 	name = "Catachan Flak Vest"
@@ -793,8 +809,11 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/valhallanarmor/medicae
 	name = "Valhallan Medicae Overcoat"
-	desc = "A thick, Fur great coat designed for Valhallan Ice warriors, it is thermally-insulated to protect against extreme cold weather conditions. Bears the red markings of a Combat Medicae."
+	desc = "A thick, Fur great coat designed for Valhallan Ice warriors, it is thermally-insulated to protect against extreme cold weather conditions. Bears the red markings of a Combat Medicae, being easier to move in than the infantry counterpart."
 	icon_state = "mvalarmor"
+/obj/item/clothing/suit/armor/valhallanarmor/medicae/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = -0.1
 
 /obj/item/clothing/suit/armor/krieger
 	name = "Krieg Overcoat"
@@ -810,8 +829,11 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/krieger/medicae
 	name = "Krieg Medicae Overcoat"
-	desc = "Produced out of thick, durable synthetic fabric, Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks. It has red markings, denoting the wearer as a Combat Medicae."
+	desc = "Produced out of thick, durable synthetic fabric, Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks. It has red markings, denoting the wearer as a Combat Medicae, having cutouts to improve flexibility."
 	icon_state = "kriegcoat"
+/obj/item/clothing/suit/armor/krieger/medicae/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = -0.1
 
 /obj/item/clothing/suit/armor/krieger/grenadier
 	name = "Krieg Grenadier Overcoat"
@@ -819,7 +841,7 @@ obj/item/clothing/suit/armor
 	icon_state = "grencoat"
 	item_state = "grencoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 54, bullet = 54, laser = 48, energy = 20, bomb = 50, bio = 80, rad = 80)
+	armor = list(melee = 60, bullet = 54, laser = 48, energy = 20, bomb = 50, bio = 80, rad = 80)
 	sales_price = 30
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -830,7 +852,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/maccabian
 	name = "Maccabian Armor"
-	desc = "Produced out of thick, durable synthetic fabric, Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks."
+	desc = "The standard armour found worn by the zealous Maccabian Jannisaries. It is hardier than other flak armor found used by most regiments."
 	icon_state = "M_Armor-Icon"
 	item_state = "M_Armor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -843,9 +865,10 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/maccabian/sergeant
 	name = "Maccabian Sergeant Armor"
-	desc = "Produced out of thick, durable synthetic fabric, Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks. It has red markings, denoting the wearer as a Combat Medicae."
+	desc = "The well-worn armor of an Maccabian Jannisary Sergeant, this one is padded with Caraspace plates, giving it better protection than the average Jannisary."
 	icon_state = "M_SArmor-Icon"
 	item_state = "M_SArmor"
+	armor = list(melee = 45, bullet = 55, laser = 45, energy = 25, bomb = 45, bio = 100, rad = 100)
 
 /obj/item/clothing/suit/armor/cadiansgt
 	name = "Cadian Sergeant's Flak Armour"
@@ -886,9 +909,9 @@ obj/item/clothing/suit/armor
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.1
 
-/obj/item/clothing/suit/armor/scion
-	name = "Tempestus Scion's Carapace Armour"
-	desc = "The black carapace body armor of the Tempestus Scion, this one has scorch marks and nicks covering it like a mural of carnage."
+/obj/item/clothing/suit/armor/stormtrooper
+	name = "Stormtrooper's Carapace Armour"
+	desc = "The black carapace body armor of the Inquisitorial Stomtrooper, this one has scorch marks and nicks covering it like a mural of carnage."
 	icon_state = "storm"
 	item_state = "fharmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -896,7 +919,7 @@ obj/item/clothing/suit/armor
 	sales_price = 40
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-/obj/item/clothing/suit/armor/scion/New()
+/obj/item/clothing/suit/armor/stormtrooper/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.3
 
@@ -912,7 +935,7 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/catachansgt/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = -0.6
+	slowdown_per_slot[slot_wear_suit] = -0.5
 
 /obj/item/clothing/suit/armor/valhallasgt
 	name = "Valhallan Sergeant's Overcoat"
@@ -1961,3 +1984,19 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	canremove = 0
+
+obj/item/clothing/suit/armor/scion
+	name = "Tempestus Scion Carapace"
+	desc = "Solid Carapace armour, belonging to the elite forces of the Tempestus Scions."
+	icon_state = "ScionArmour"
+	item_state = "ScionArmour"
+	armor = list(melee = 65, bullet = 65, laser = 58, energy = 65, bomb = 40, bio = 100, rad = 90)
+	allowed = list(/obj/item/gun/energy,/obj/item/device/radio,/obj/item/reagent_containers/spray/pepper,/obj/item/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/handcuffs)
+	cold_protection = UPPER_TORSO|LOWER_TORSO
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
+
+obj/item/clothing/suit/armor/scion/trooper
+	name = "Stormtrooper Carapace"
+	desc = "Solid Carapace armour, belonging to the inquisitorial stormtrooper."
+	icon_state = "i-Stormtrooper Armor"
+	item_state = "i-Stormtrooper Armor"

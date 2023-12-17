@@ -13,7 +13,7 @@
 	permeability_coefficient = 0.01
 	siemens_coefficient = 0.9
 	var/gas_filter_strength = 1			//For gas mask filters
-	var/list/filtered_gases = list("phoron", "sleeping_agent", "corrupting", "polyacid")
+	var/list/filtered_gases = list("phoron", "sleeping_agent", "corrupting", "polyacid", "Chlorine Gas")
 	armor = list(melee = 5, bullet = 5, laser = 5, energy = 0, bomb = 0, bio = 75, rad = 0)
 
 /obj/item/clothing/mask/gas/filter_air(datum/gas_mixture/air)
@@ -222,6 +222,20 @@
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 95, rad = 0)
 	flags_inv = HIDEFACE
 
+/obj/item/clothing/mask/gas/half/cadianrespirator/rt
+	name = "Archeotech Respirator"
+	desc = "A metal filtration system for protection against common toxic gasses."
+	icon_state = "rtm"
+	item_state = "rtm"
+	armor = list(melee = 25, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 95, rad = 0)
+	flags_inv = HIDEFACE
+
+/obj/item/clothing/mask/gas/half/cadianrespirator/inquis
+	name = "Filtration Mask"
+	desc = "Cadian-pattern Rebreather made for protection against common toxic gasses as well allows Guardsmen to operate in Airless condition for limited period."
+	icon_state = "Stormtrooper Gasmask"
+	item_state = "Stormtrooper Gasmask"
+
 /obj/item/clothing/mask/gas/krieg
 	name = "Mark IXb Gas Mask"
 	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Krieg Guardsman."
@@ -257,7 +271,7 @@
 	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Krieg Grenadier, with additional slight armor protection."
 	icon_state = "grenmask"
 	item_state = "grenmask"
-	armor = list(melee = 20, bullet = 20, laser = 20, energy = 20, bomb = 20, bio = 95, rad = 0)
+	armor = list(melee = 20, bullet = 20, laser = 20, energy = 20, bomb = 30, bio = 95, rad = 0)
 	body_parts_covered = FACE|EYES|HEAD
 
 

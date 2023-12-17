@@ -2752,11 +2752,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "oG" = (
-/obj/machinery/door/unpowered/inn/room2{
-	maxhealth = 1500;
-	name = "Pathfinder Estate";
-	req_one_access = list(253)
-	},
+/obj/machinery/door/unpowered/inn,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/villageinside)
 "oH" = (
@@ -5238,6 +5234,26 @@
 	icon_state = "r_window"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"BV" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
+	},
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
+	},
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
+	},
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 5
+	},
+/area/cadiaoutpost/oa/farm)
 "BW" = (
 /obj/effect/floor_decal/newcorner/reinforced/corner{
 	dir = 4
@@ -6447,7 +6463,7 @@
 /obj/structure/bed/royal/bottom,
 /obj/structure/curtain/open/bed,
 /obj/effect/landmark/start/village{
-	name = "Sondar Heir"
+	name = "House Sondar Lord"
 	},
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 9
@@ -8079,9 +8095,8 @@
 /obj/item/card/id/key/super/daemon{
 	name = "Strange Key"
 	},
-/obj/item/card/id/key/grand{
-	name = "Farming Key";
-	access = list(272)
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
 	},
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 5
@@ -9331,6 +9346,10 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
+"Xk" = (
+/obj/structure/ladder,
+/turf/simulated/open,
+/area/cadiaoutpost/oa/villageinside)
 "Xl" = (
 /obj/effect/floor_decal/spline/fancy/wood/three_quarters,
 /obj/structure/flora/pottedplant{
@@ -43220,7 +43239,7 @@ gN
 PN
 PN
 PN
-PN
+Xk
 PN
 PN
 PN
@@ -64236,7 +64255,7 @@ vt
 vt
 vt
 tf
-QY
+BV
 HT
 Bq
 Bq

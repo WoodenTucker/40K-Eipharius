@@ -192,6 +192,12 @@
 	desc = "A pair of high quality black leather boots for kicking the filthy peasants and participating in questionable hedonistic activities at the chambers."
 	icon_state = "noble-boots"
 	item_state = "noble-boots"
+
+/obj/item/clothing/shoes/jackboots/noble/rt
+	name = "rogue boots"
+	desc = "A pair of high quality black leather boots for kicking the filthy peasants and participating in questionable hedonistic activities at the chambers."
+	icon_state = "Boots"
+	item_state = "Boots"
 /*
 /obj/item/clothing/shoes/timbs
 	name = "Trench Timbs"
@@ -199,3 +205,14 @@
 	icon_state = "timbs"
 	item_state = "timbs"
 */
+
+/obj/item/clothing/shoes/scion
+	name = "Tempestus Scion Boots"
+	desc = "Armoured boots belonging to the elite Tempestus Scions."
+	icon_state = "ScionBoots"
+	item_state = "ScionBoots"
+	force = 5
+	armor = list(melee = 60, bullet = 60, laser = 60,energy = 25, bomb = 50, bio = 100, rad = 0)
+	item_flags = ITEM_FLAG_NOSLIP
+	siemens_coefficient = 0.6
+	can_hold_knife = 1
