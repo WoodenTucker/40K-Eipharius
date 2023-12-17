@@ -6463,7 +6463,7 @@
 /obj/structure/bed/royal/bottom,
 /obj/structure/curtain/open/bed,
 /obj/effect/landmark/start/village{
-	name = "Sondar Heir"
+	name = "House Sondar Lord"
 	},
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 9

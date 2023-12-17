@@ -20766,11 +20766,7 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
 "thD" = (
-/obj/machinery/door/airlock/glass_engineering{
-	color = null;
-	maxhealth = 900;
-	name = "Misc Storage"
-	},
+/obj/machinery/door/airlock/glass_engineering,
 /turf/simulated/floor/factory_floor{
 	dir = 8
 	},

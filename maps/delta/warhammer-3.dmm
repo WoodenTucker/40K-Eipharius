@@ -4934,6 +4934,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/new_hive/hive_city)
+"eQt" = (
+/obj/machinery/door/airlock/glass_engineering,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/engineering)
 "eQw" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 4
@@ -20001,7 +20005,7 @@
 /obj/structure/bed/barrack,
 /obj/structure/bed/barrack1,
 /obj/effect/landmark/start{
-	name = "Farmer"
+	name = "House Sondar Servant"
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/farm)
@@ -63150,13 +63154,13 @@ uNf
 uNf
 uNf
 uNf
-aGo
-aGo
+eQt
+eQt
 uNf
 uNf
 uNf
-aGo
-aGo
+eQt
+eQt
 uNf
 uNf
 uNf
