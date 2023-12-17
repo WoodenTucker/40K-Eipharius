@@ -3325,6 +3325,7 @@
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/iron, 6)
+		reagents.add_reagent(/datum/reagent/water, 12)
 		bitesize = 4
 
 /obj/item/reagent_containers/food/snacks/foodtray

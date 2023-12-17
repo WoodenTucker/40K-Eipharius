@@ -462,12 +462,12 @@
 
 /obj/item/storage/backpack/satchel/maccabian
 	desc = "Field ready kit, tried and tested through countless encounters."
-	icon_state = "M_Backpack"
+	icon_state = "M_Backpack-Icon"
 	item_state = "M_Backpack-Icon"
 
 /obj/item/storage/backpack/satchel/maccabian/sergeant
 	desc = "Field ready kit, tried and tested through countless encounters."
-	icon_state = "M_SBackpack"
+	icon_state = "M_SBackpack-Icon"
 	item_state = "M_SBackpack-Icon"
 
 /obj/item/storage/backpack/satchel/grey

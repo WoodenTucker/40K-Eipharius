@@ -296,7 +296,7 @@
 /obj/item/clothing/head/helmet/maccabian
 	name = "Maccabian Mark IX Helmet"
 	desc = "Unlike the more common Cadian-pattern, the Mark IX is made out of durable plasteel, giving it higher defensive capabilities though at the cost of weight and production."
-	icon_state = "M_Helmet"
+	icon_state = "M_Helmet-Icon"
 	item_state = "M_Helmet-Icon"
 	armor = list(melee = 32, bullet = 34, laser = 37, energy = 35, bomb = 32, bio = 80, rad = 80)
 	cold_protection = HEAD
@@ -305,7 +305,7 @@
 /obj/item/clothing/head/helmet/maccabian/Sergeant
 	name = "Maccabian Mark IX Helmet"
 	desc = "Unlike the more common Cadian-pattern, the Mark IX is made out of durable plasteel, giving it higher defensive capabilities though at the cost of weight and production."
-	icon_state = "M_SHelmet"
+	icon_state = "M_SHelmet-Icon"
 	item_state = "M_SHelmet-Icon"
 	armor = list(melee = 32, bullet = 34, laser = 37, energy = 35, bomb = 32, bio = 80, rad = 80)
 	cold_protection = HEAD
