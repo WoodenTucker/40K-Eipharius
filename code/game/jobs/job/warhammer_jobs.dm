@@ -31,11 +31,11 @@
 //	/datum/job/cmo,
 	/datum/job/sistersuperior,
 	/datum/job/hospitaller,
+	/datum/job/progena,
 	/datum/job/marshal,
 	/datum/job/investigator,
 	/datum/job/kasrkin,
-	/datum/job/scavenger,
-	/datum/job/progena,/*
+	/datum/job/scavenger,/*
 	/datum/job/preacher, turn preacher into pilgrim fate */
 	/datum/job/innkeeper,
 	/datum/job/underboss,

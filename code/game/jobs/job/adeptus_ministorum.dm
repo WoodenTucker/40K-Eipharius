@@ -275,7 +275,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Sister [current_name]")
+		H.fully_replace_character_name("Sister-Superior [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant)
 		H.set_quirk(new/datum/quirk/dead_inside) // the only thing the sisters of the orders millitant feel is the god emperor's light.
 		//"BUT THEY ARE DIVINE!!!" don't care, Sister superior is human, stop simping, im still giving them very GOOD stats.
@@ -307,7 +307,7 @@
 		H.vice = null
 		H.verbs += list(
 			/mob/living/carbon/human/proc/faithleaderclass)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle belonging to the Order of the Sacred Rose assigned to the Monastary, you serve both the Inquisition and Ecclesiarchy directly, though whom you truly serve is that of The Emperor who stands above all.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle assigned to the Monastary, you serve both the Inquisition and Ecclesiarchy directly, though whom you truly serve is that of The Emperor who stands above all.</font></b></span>")
 
 /datum/job/hospitaller
 	title = "Sister Hospitaller"
@@ -364,7 +364,7 @@
 
 //NOVICE - has not begun their training yet
 /datum/job/progena
-	title = "Progena"
+	title = "Novitiate"
 	department = list("Ministorum", "Medical")
 	department_flag = MED
 	minimal_player_age = 14
@@ -380,6 +380,9 @@
 	access = list(access_advchapel, access_medical, access_village)
 	minimal_access = list(access_advchapel, access_medical, access_village)
 	outfit_type = /decl/hierarchy/outfit/job/novice
+	alt_titles = list(
+	"Novitiate Hospitaller" = /decl/hierarchy/outfit/job/medical/doctor,
+		)
 	auto_rifle_skill = 7
 	semi_rifle_skill = 7
 	sniper_skill = 7
@@ -391,7 +394,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Progena [current_name]")
+		H.fully_replace_character_name("Novitiate Sister [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(12,15), rand(12,15), rand(12,15), rand (12,15)) //Has not begun their training with the sisters yet.
 		H.add_skills(rand(5,7),rand(5,7),rand(5,7),rand(1,3),rand(5,7)) //melee, ranged, med, eng, surgery
@@ -401,12 +404,13 @@
 		H.adjustStaminaLoss(-INFINITY)
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
+		H.gender = FEMALE
 		H.f_style = "shaved"
 		H.h_style = "Bob"
 		H.vice = null
 
 		to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
-		to_chat(H, "<span class='notice'><b><font size=3>You are a recent arrival to the Monastery Scholam... soon you will begin your training with the sisters of the Ordos and the monks of the Ecclesiarchy, you stand at a crossroads where in which your failures and triumphs shall decide who you will become for the rest of your days. Do as you are instructed, learn from your masters and serve the God Emperor of Mankind.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a recent graduate of the Scholam Progeneum, sent to Eipharius to serve alongside the redeemed Sister-Superior as she watched over the Reqliary of the local Monestary. Though you are no longer a Progena, you are not yet done learning. The Sisters and the Holy Deacon of the Adeptus Ministorum will act as your spiritual guides as you march ever further down the righteous path.</font></b></span>")
 
 /datum/job/preacher // DISABLED
 	title = "Preacher"
@@ -477,24 +481,24 @@
 				to_chat(U,"<span class='danger'><b><font size=4>THE HOLY DEACON</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>A loyal servant to the imperium, as Deacon to the flock of the Eipharius colony you are responsible for the survival of faith, to keep the light of holy Terra and the God Emperor shining upon this dark world.</font></b></span>")
 				if(prob(4))
-					new /obj/item/device/radio/headset/headset_eng(src.loc) 
+					new /obj/item/device/radio/headset/headset_eng(src.loc)
 				if(prob(3))
-					new /obj/item/device/radio/headset/headset_sci(src.loc) 
+					new /obj/item/device/radio/headset/headset_sci(src.loc)
 			else
 				to_chat(U,"<span class='danger'><b><font size=4>THE DEACON OF WOUNDS</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>The corruption has spread to your soul, deep within you a resonance -- a repeating vibration calls upon you to betray all that you have built. To reforge and stitch together a new world from the mangled corpses of the faithful. Lead them to the light, show them their new purpose. </font></b></span>")
 				U.add_stats(rand(14,18), rand(14,18), rand(17,21), rand(14,17))
 				if(prob(50))
-					new /obj/item/device/radio/headset/blue_team/all(src.loc) 
-				new /obj/item/reagent_containers/hypospray/autoinjector/tau(src.loc) 
+					new /obj/item/device/radio/headset/blue_team/all(src.loc)
+				new /obj/item/reagent_containers/hypospray/autoinjector/tau(src.loc)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
 				if(prob(8))
-					new /obj/item/device/radio/headset/headset_eng(src.loc) 
+					new /obj/item/device/radio/headset/headset_eng(src.loc)
 				if(prob(2))
-					new /obj/item/device/radio/headset/inquisition(src.loc) 
+					new /obj/item/device/radio/headset/inquisition(src.loc)
 				if(prob(6))
-					new /obj/item/device/radio/headset/headset_sci(src.loc) 
+					new /obj/item/device/radio/headset/headset_sci(src.loc)
 
 /mob/living/carbon/human/proc/faithleaderclass()
 	set name = "Select your faith"
@@ -522,11 +526,11 @@
 			if(prob(80))
 				to_chat(U,"<span class='danger'><b><font size=4>THE SWORD</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are the sword that guards against the warp and seeks out it's destruction. Be wary, for those who battle against the great enemy are cursed to either die... or succumb to it.</font></b></span>")
-				new /obj/item/melee/sword/combat_knife/glaive/holy(src.loc) 
+				new /obj/item/melee/sword/combat_knife/glaive/holy(src.loc)
 			else if(prob(50))
 				to_chat(U,"<span class='danger'><b><font size=4>THE SHIELD</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are the shield that protects the weak and guards the flame of his Divine Emperor.</font></b></span>")
-				new /obj/item/storage/firstaid/combat(src.loc) 
+				new /obj/item/storage/firstaid/combat(src.loc)
 			else
 				to_chat(U,"<span class='danger'><b><font size=4>THE CORRUPTED</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are a traitor to the Imperium and for reasons known only to you now, shall bring corruption to it's fiefdoms. Praise the hivemind/cult/cogitae! </font></b></span>")
@@ -559,11 +563,11 @@
 			if(prob(65))
 				to_chat(U,"<span class='danger'><b><font size=4>THE SWORD</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are the sword that guards against the warp and seeks out it's destruction. Be wary, for those who battle against the great enemy are cursed to either die... or succumb to it.</font></b></span>")
-				new /obj/item/melee/sword/combat_knife/glaive/holy(src.loc) 
+				new /obj/item/melee/sword/combat_knife/glaive/holy(src.loc)
 			else if(prob(25))
 				to_chat(U,"<span class='danger'><b><font size=4>THE SHIELD</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are the shield that protects the weak and guards the flame of his Divine Emperor.</font></b></span>")
-				new /obj/item/storage/firstaid/combat(src.loc) 
+				new /obj/item/storage/firstaid/combat(src.loc)
 			else
 				to_chat(U,"<span class='danger'><b><font size=4>THE CORRUPTED</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are a traitor to the Imperium and for reasons known only to you now, shall bring corruption to it's fiefdoms. Praise the hivemind/cult/cogitae! </font></b></span>")
@@ -700,17 +704,20 @@
 
 
 /decl/hierarchy/outfit/job/novice
-	name = OUTFIT_JOB_NAME("Progena")
-	uniform = /obj/item/clothing/under/rank/medical
-	l_ear  = /obj/item/device/radio/headset/headset_sci
+	name = OUTFIT_JOB_NAME("Novitiate")
+	l_ear = /obj/item/device/radio/headset/headset_sci
+	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
 	neck = /obj/item/reagent_containers/food/drinks/canteen
+	suit = /obj/item/clothing/suit/sisterofbattle/training
+	belt = /obj/item/melee/sword/longsword
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
-	glasses = /obj/item/clothing/glasses/hud/health
+	id_type = /obj/item/card/id/dog_tag
+	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/storage/box/coin
-	l_pocket = /obj/item/device/flashlight/lantern
-	id_type = /obj/item/card/id/medical
+	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
 	backpack_contents = list(
-		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-		/obj/item/stack/thrones2 = 1,
-		/obj/item/stack/thrones3/five = 1,)
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/reagent_containers/food/snacks/warfare = 1,
+	/obj/item/device/flashlight/lantern = 1,
+		)

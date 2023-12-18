@@ -115,6 +115,21 @@
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	w_class = ITEM_SIZE_NORMAL
 
+/obj/item/melee/sword/longsword
+	name = "longsword"
+	desc = "A long, well-balanced blade. Good for keeping enemies at bay."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "longsword"
+	item_state = "longsword"
+	attack_verb = list("slashed")
+	force = 30
+	force_wielded = 35
+	armor_penetration = 15
+	block_chance = 35
+	weapon_speed_delay = 7
+	w_class = ITEM_SIZE_NORMAL
+
+
 
 
 //////////////
@@ -140,7 +155,7 @@
 	sales_price = 0
 	weapon_speed_delay = 8
 	armor = list(melee = 15, bullet = 20, laser = 20, energy = 10, bomb = 10, bio = 0, rad = 0)
-	
+
 
 /obj/item/melee/sword/commissword/sabre
 	name = "Sabre"
@@ -409,7 +424,7 @@
 	force = 30
 	force_wielded = 41
 	armor_penetration = 15
-	block_chance = 25 
+	block_chance = 25
 	weapon_speed_delay = 8
 	sales_price = 0
 
@@ -589,7 +604,7 @@
 	throwforce = 22
 	block_chance = 24
 	weapon_speed_delay = 8
-	w_class = ITEM_SIZE_LARGE 
+	w_class = ITEM_SIZE_LARGE
 	armor = list(melee = 10, bullet = 20, laser = 20, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/melee/trench_axe/bspear
@@ -605,7 +620,7 @@
 	block_chance = 22
 	weapon_speed_delay = 8
 	edge = 0
-	w_class = ITEM_SIZE_LARGE 
+	w_class = ITEM_SIZE_LARGE
 	armor = list(melee = 10, bullet = 15, laser = 15, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/melee/trench_axe/bspear/hunter
@@ -630,7 +645,7 @@
 	block_chance = 24
 	weapon_speed_delay = 10
 	edge = 0
-	w_class = ITEM_SIZE_LARGE 
+	w_class = ITEM_SIZE_LARGE
 
 /obj/item/melee/trench_axe/lance/adamantine
 	name = "adamantine fuscina"

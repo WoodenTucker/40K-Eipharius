@@ -1223,11 +1223,11 @@ obj/item/clothing/suit/armor
 	species_restricted = list(SPECIES_HUMAN)
 
 /obj/item/clothing/suit/sisterofbattle/training
-	name = "Novice Power Armor"
-	desc = "The Ancient and Deconsecrated Power Armour adorned by Novice Militants during their training in Eipharius' Monastarium. Stripped of almost all iconography and with damaged plating, and has scriptures across it's surface speaking of The Beatie and her crusade across the Sabbat worlds."
+	name = "Novice Armor"
+	desc = "The Ancient and Deconsecrated Carapace Armour adorned by Novice Militants during their training in Eipharius' Monastarium. Stripped of almost all iconography and with damaged plating. It has scriptures across it's surface, recounting the triumph and martyrdom of Saint Katherine."
 	icon_state = "ooml"
 	item_state = "ooml"
-	armor = list(melee = 54, bullet = 60, laser = 60, energy = 50, bomb = 60, bio = 80, rad = 70)
+	armor = list(melee = 44, bullet = 44, laser = 44, energy = 20, bomb = 40, bio = 50, rad = 50)
 	sales_price = 20
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
@@ -1235,6 +1235,7 @@ obj/item/clothing/suit/armor
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT
 	species_restricted = list(SPECIES_HUMAN)
+
 /obj/item/clothing/suit/sisterofbattle/training/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.3

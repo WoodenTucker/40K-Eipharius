@@ -7223,6 +7223,13 @@
 	icon_state = "wood_1tileendtable";
 	dir = 4
 	},
+/obj/item/fluff_items/skull{
+	pixel_y = 4
+	},
+/obj/item/flame/candle/church{
+	pixel_y = 7;
+	pixel_x = 8
+	},
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 8
 	},
@@ -21873,6 +21880,12 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"ueA" = (
+/obj/effect/landmark/start/ministorum/novice{
+	name = "Novitiate"
+	},
+/turf/unsimulated/miningtime,
+/area/cadiaoutpost/new_hive/caves)
 "ueY" = (
 /obj/structure/grille/metal_bars/cell,
 /turf/simulated/floor/factory_floor,
@@ -23913,7 +23926,7 @@
 	icon_state = "migbed"
 	},
 /obj/effect/landmark/start/ministorum/novice{
-	name = "Progena"
+	name = "Novitiate"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -40401,7 +40414,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+ueA
 tOB
 tOB
 tOB
