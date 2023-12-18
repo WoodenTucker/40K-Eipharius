@@ -859,17 +859,17 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 		open_wound_damage(L, get_severity(amount)*3)
 
 /datum/reagent/toxin/mustard_gas/white_phosphorus/affect_touch(var/mob/living/carbon/human/M, var/alien, var/removed)
-if(istype(M.wear_suit, /obj/item/clothing/suit/fire) || istype(M.wear_suit, /obj/item/clothing/suit/armor/astartes) || istype(M.wear_suit, /obj/item/clothing/suit/sisterofbattle) || istype(M.wear_suit, /obj/item/clothing/suit/armor/ordohereticus)istype(M.wear_suit, obj/item/clothing/suit/armor/scion))
-	M.show_message(text("Your suit protects you from the flames."),1)
-	continue
-else
-	if(prob(50))
-		to_chat(M, "<span class='danger'>Your skin is burning!</span>")
-		M.adjustFireLoss(rand(5, 15) * removed)
-	if(prob(50))
-		to_chat(M, "<span class='danger'>The air around you ignites in a burning haze!</span>")
-		M.adjust_fire_stacks(2 * removed)
-		M.IgniteMob()
+	if(istype(M.wear_suit, /obj/item/clothing/suit/fire) || istype(M.wear_suit, /obj/item/clothing/suit/armor/astartes) || istype(M.wear_suit, /obj/item/clothing/suit/sisterofbattle) || istype(M.wear_suit, /obj/item/clothing/suit/armor/ordohereticus) || istype(M.wear_suit, obj/item/clothing/suit/armor/scion))
+		M.show_message(text("Your suit protects you from the flames."),1)
+		continue
+	else
+		if(prob(50))
+			to_chat(M, "<span class='danger'>Your skin is burning!</span>")
+			M.adjustFireLoss(rand(5, 15) * removed)
+		if(prob(50))
+			to_chat(M, "<span class='danger'>The air around you ignites in a burning haze!</span>")
+			M.adjust_fire_stacks(2 * removed)
+			M.IgniteMob()
 
 //green cross
 /datum/reagent/toxin/chlorine_gas
