@@ -331,6 +331,7 @@
 	desc = "Favoured by the Death Korps of Krieg, these gas grenades are highly potent."
 	icon = 'icons/obj/grenade.dmi'
 	icon_state = "csmoke"
+	arm_sound = 'sound/weapons/grenade_arm.ogg'
 	stage = 2
 	path = 1
 
