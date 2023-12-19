@@ -502,8 +502,13 @@
 
 /obj/item/storage/box/kriegration
 	name = "Krieg ration box"
-	desc = "A field ration box given out to Kriegsmen on the field, contains two packs of K-Rations. The content section of the package seems to be stamped out."
-	startswith = list(/obj/item/reagent_containers/food/snacks/kriegration = 2)
+	desc = "A field ration box given out to Kriegsmen on the field, contains three packs of K-Rations. The content section of the package seems to be stamped out."
+	startswith = list(/obj/item/reagent_containers/food/snacks/kriegration = 3)
+	w_class = ITEM_SIZE_SMALL
+	max_storage_space = 6
+	can_hold = list(
+		/obj/item/reagent_containers/food/snacks/kriegration,
+	)
 
 /obj/item/storage/box/ifak
 	name = "IFAK"

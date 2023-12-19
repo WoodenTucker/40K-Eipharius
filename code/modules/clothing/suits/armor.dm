@@ -854,7 +854,7 @@ obj/item/clothing/suit/armor
 	name = "Maccabian Armor"
 	desc = "The standard armour found worn by the zealous Maccabian Jannisaries. It is hardier than other flak armor found used by most regiments."
 	icon_state = "M_Armor-Icon"
-	item_state = "M_Armor"
+	item_state = "M_Armor-Icon"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 44, bullet = 44, laser = 44, energy = 20, bomb = 40, bio = 50, rad = 50)
 	sales_price = 20
@@ -867,7 +867,7 @@ obj/item/clothing/suit/armor
 	name = "Maccabian Sergeant Armor"
 	desc = "The well-worn armor of an Maccabian Jannisary Sergeant, this one is padded with Caraspace plates, giving it better protection than the average Jannisary."
 	icon_state = "M_SArmor-Icon"
-	item_state = "M_SArmor"
+	item_state = "M_SArmor-Icon"
 	armor = list(melee = 45, bullet = 55, laser = 45, energy = 25, bomb = 45, bio = 100, rad = 100)
 
 /obj/item/clothing/suit/armor/cadiansgt

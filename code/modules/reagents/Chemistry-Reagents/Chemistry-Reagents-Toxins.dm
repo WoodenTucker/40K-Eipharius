@@ -859,13 +859,14 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 		open_wound_damage(L, get_severity(amount)*3)
 
 /datum/reagent/toxin/mustard_gas/white_phosphorus/affect_touch(var/mob/living/carbon/human/M, var/alien, var/removed)
-	if(prob(10))
+	if(prob(50))
 		to_chat(M, "<span class='danger'>Your skin is burning!</span>")
 		M.adjustFireLoss(rand(5, 15) * removed)
-	if(prob(2))
+	if(prob(50))
 		to_chat(M, "<span class='danger'>The air around you ignites in a burning haze!</span>")
-		M.adjust_fire_stacks(5)
+		M.adjust_fire_stacks(2 * removed)
 		M.IgniteMob()
+		new /obj/flamer_fire(src, 12, 10, "red", 1)
 
 //green cross
 /datum/reagent/toxin/chlorine_gas

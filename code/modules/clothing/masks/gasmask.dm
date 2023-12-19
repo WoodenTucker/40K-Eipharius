@@ -250,7 +250,7 @@
 	name = "Maccabian Metal Mask"
 	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Maccabian Guardsman."
 	icon_state = "M_Mask-Icon"
-	item_state = "M_Mask"
+	item_state = "M_Mask-Icon"
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 95, rad = 0)
 	body_parts_covered = FACE|EYES|HEAD
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
@@ -260,7 +260,7 @@
 	name = "Maccabian Metal Mask"
 	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Maccabian Guardsman."
 	icon_state = "M_SMask-Icon"
-	item_state = "M_SMask"
+	item_state = "M_SMask-Icon"
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 95, rad = 0)
 	body_parts_covered = FACE|EYES|HEAD
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
