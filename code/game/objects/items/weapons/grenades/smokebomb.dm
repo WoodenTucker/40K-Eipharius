@@ -60,7 +60,7 @@
 
 //GAS GRENADES
 
-/obj/item/grenade/smokebomb/chemical
+/*/obj/item/grenade/smokebomb/chemical
 	desc = "It is set to detonate in 5 seconds."
 	name = "chemical grenade"
 	icon = 'icons/obj/grenade.dmi'
@@ -134,4 +134,4 @@
 /obj/item/grenade/smokebomb/chemical/xylyl_bromide/Destroy()
 	qdel(smoke)
 	smoke = null
-	return ..()
+	return ..()*/

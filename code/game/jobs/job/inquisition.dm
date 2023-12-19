@@ -113,7 +113,7 @@
 
 	var/mob/living/carbon/human/U = src
 	U.verbs -= list(/mob/living/carbon/human/proc/inqclass) //removes verb
-	var/fates = list("Blade and Bolter","Mercenary","Assassin","Pariah","Tempestus Scion","Inquisitorial Stormtrooper")
+	var/fates = list("Blade and Bolter","Mercenary","Assassin","Pariah","Inquisitorial Stormtrooper")
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -202,19 +202,6 @@
 				new /obj/item/device/radio/headset/headset_eng(src.loc)
 			if(prob(12))
 				new /obj/item/device/radio/headset/blue_team/all(src.loc)
-		if("Tempestus Scion")
-			new /obj/item/cell/lasgun/hotshot(src.loc)
-			new /obj/item/cell/lasgun/hotshot(src.loc)
-			new /obj/item/cell/lasgun/hotshot(src.loc)
-			new /obj/item/clothing/under/guard/uniform/scion(src.loc)
-			new /obj/item/clothing/glasses/cadian(src.loc)
-			new /obj/item/clothing/shoes/jackboots/cadian(src.loc)
-			new /obj/item/clothing/mask/gas/half/cadianrespirator(src.loc)
-			new /obj/item/gun/energy/las/hotshot(src.loc)
-			new /obj/item/clothing/suit/armor/scion(src.loc)
-			new /obj/item/storage/backpack/satchel/warfare/scion(src.loc)
-			new /obj/item/clothing/head/helmet/tscion(src.loc)
-			new /obj/item/clothing/rosette(src.loc)
 		if("Inquisitorial Stormtrooper")
 			new /obj/item/cell/lasgun/hotshot(src.loc)
 			new /obj/item/cell/lasgun/hotshot(src.loc)
