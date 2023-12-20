@@ -1907,6 +1907,21 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/suit/armor/bondsman
+	name = "Mechanicus Hazard Suit"
+	desc = "A heavy protective suit made from chemically treated fabrics that protect the wearer from toxic death world environment, this particular set is fitted with carapace pauldrons and plate to protect it's wearer from dangers only the Cogboys seem wise enough to prepare for."
+	icon_state = "MineWorkerS"
+	item_state = "MineWorkerS"
+	armor = list(melee = 65, bullet = 44, laser = 51, energy = 25, bomb = 45, bio = 70, rad = 79)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/bondsman/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.4
+
 // admeme only
 
 /obj/item/clothing/suit/armor/ogryn1 // only give this to ogryns. it cannot be removed and has head protection.

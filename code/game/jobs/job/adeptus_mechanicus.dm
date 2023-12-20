@@ -92,10 +92,10 @@
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 		H.vice = null //off for now
 		H.say(":e OMVISS1@H &(47*TECHNICA)B(ADMECH)... transponder signal active.")
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Enginseer resting within a Forge Temple of the Mechanicus constructed by the AdMech. Learn from the Explorator and Biologis. Craft blessed machine spirits in the forge. Teach the Tech Menials the basics. Lead Skitarii if needed.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Enginseer resting within a Forge Temple of the Mechanicus constructed by the AdMech. Learn from the Explorator and Biologis. Craft blessed machine spirits in the forge. Teach the Tech Menials the basics. You are responsible for the bonded workers of the Forge Temple, should they escape the shackles of servitude it is your responsibility to capture them.</font></b></span>")
 
 /datum/job/techmenial
-	title = "Tech Menial"
+	title = "Mechanicus Bondsman"
 	department = "Engineering"
 	department_flag = ENG
 	social_class = SOCIAL_CLASS_MED
@@ -110,7 +110,7 @@
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_all_personal_lockers)
 	minimal_access = list(access_mechanicus, access_village, access_medical, access_all_personal_lockers)
-	outfit_type = /decl/hierarchy/outfit/job/engineering/engineer
+	outfit_type = /decl/hierarchy/outfit/job/engineering/engineer/bondage
 	auto_rifle_skill = 6
 	semi_rifle_skill = 6
 	sniper_skill = 6
@@ -122,22 +122,19 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Tech-Menial [current_name]")
-		H.set_trait(new/datum/trait/death_tolerant()) //no nose + psycho
-		H.add_stats(rand(11,14), rand(11,13), rand(11,14), rand(12,17)) // worse than tech priest
-		H.add_skills(rand(4,6),rand(3,6),rand(4,5),rand(6,8),rand(4,6)) //melee, ranged, med, eng, surgery
+		H.fully_replace_character_name("[current_name]")
+		H.set_trait(new/datum/trait/death_tolerant())
+		H.add_stats(rand(16,18), rand(16,19), rand(12,18), rand (10,17))
+		H.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(2,4),rand(2,6)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
-		H.bladder = -INFINITY
-		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
-		H.thirst = INFINITY
-		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
-		H.vice = null //off for now
+		H.vice = null // Bondsman aren't given the freedom to have vices.
 		H.witchblood()
 		H.say(":e I aspire to the unity of the blessed machine. I crave the strength and certainty of steel...")
 		H.adjustStaminaLoss(-INFINITY) // they aren't cyborg'd enough to not need to drink. The flesh is weak.
-		to_chat(H, "<span class='notice'><b><font size=3> (NEW PLAYER ROLE) You are a Tech-Menial, and you have been blessed with the privilege of serving within a Forge Temple of the Admech. You are inexperienced and learning. Ensure to learn much.</font></b></span>")
-
+		to_chat(H,"<span class='danger'><b><font size=4>THE BONDSMAN</font></b></span>")
+		to_chat(H,"<span class='goodmood'>You are lifebonded to the Magos Explorator of this installation and thereby in the service of the tech priests of the Mechanicus under the Magos's command. Taken by force from your homeworld, you were plucked away from your life and indoctrinated into the cult of the Machine God. Every day is suffering and you are perhaps one of the handful left still alive from your original founding.</font></b></span>")
+			
 // Biologis
 
 // Magos

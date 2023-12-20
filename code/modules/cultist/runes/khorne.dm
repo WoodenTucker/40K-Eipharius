@@ -50,4 +50,3 @@
 	if(target.stat != DEAD && target.mind)
 		var/datum/heretic_deity/khorne/N = GOD(GOD_KHORNE)
 		N.join_request(target)
-		SEND_SIGNAL(user, COMSIG_CULT_ADD_FAVOR, 40)
