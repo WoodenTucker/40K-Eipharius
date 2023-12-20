@@ -75,7 +75,7 @@ Pilgrim Fate System
 
 	var/mob/living/carbon/human/U = src
 	U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,) //removes verb
-	var/fates = list("Mercenary","Scum","Nomad","Primitive","Witch Hunter","Mechanicus Bondsman",)
+	var/fates = list("Mercenary","Scum","Nomad","Primitive","Witch Hunter",)
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -230,23 +230,6 @@ Pilgrim Fate System
 				new /obj/item/clothing/head/plebhood(src.loc)
 				if(prob(25))
 					new /obj/item/device/radio/headset/headset_sci(src.loc)
-		if("Mechanicus Bondsman")
-			U.add_stats(rand(16,18), rand(16,19), rand(12,18), rand (10,17))
-			U.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(2,4),rand(2,6)) //melee, ranged, med, eng, surgery
-			new /obj/item/storage/backpack/satchel/warfare(src.loc)
-			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/cargo, slot_w_uniform)
-			new /obj/item/clothing/suit/armor/bondsman(src.loc)
-			new /obj/item/clothing/head/helmet/bond(src.loc)
-			new /obj/item/device/flashlight/lantern(src.loc) 
-			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc)
-			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
-			U.stat = CONSCIOUS
-			U.sleeping = 0
-			U.add_stats(rand(16,17), rand(14,16), rand(14,16), rand (10,12)) 
-			to_chat(U,"<span class='danger'><b><font size=4>THE BONDSMAN</font></b></span>")
-			to_chat(U,"<span class='goodmood'>You are lifebonded to the Magos Explorator of this installation and thereby in the service of the tech priests of the Mechanicus under the Magos's command. Taken by force from your homeworld, you were plucked away from your life and indoctrinated into the cult of the Machine God. Every day is suffering and you are perhaps one of the handful left still alive from your original founding.</font></b></span>")
-			new /obj/item/device/radio/headset/headset_eng(src.loc)
 		if("Witch Hunter")
 			U.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(2,4),rand(2,6)) //melee, ranged, med, eng, surgery
 			new /obj/item/storage/backpack/satchel/warfare(src.loc)
