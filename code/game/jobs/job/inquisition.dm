@@ -202,18 +202,7 @@
 				new /obj/item/device/radio/headset/headset_eng(src.loc)
 			if(prob(12))
 				new /obj/item/device/radio/headset/blue_team/all(src.loc)
-		if("Inquisitorial Stormtrooper")
-			new /obj/item/cell/lasgun/hotshot(src.loc)
-			new /obj/item/cell/lasgun/hotshot(src.loc)
-			new /obj/item/cell/lasgun/hotshot(src.loc)
-			new /obj/item/clothing/under/guard/uniform/scion(src.loc)
-			new /obj/item/clothing/glasses/cadian(src.loc)
-			new /obj/item/clothing/shoes/jackboots/cadian(src.loc)
-			new /obj/item/clothing/mask/gas/half/cadianrespirator/inquis(src.loc)
-			new /obj/item/gun/energy/las/hotshot(src.loc)
-			new /obj/item/clothing/suit/armor/scion/trooper(src.loc)
-			new /obj/item/storage/backpack/satchel/warfare/scion(src.loc)
-			new /obj/item/clothing/rosette(src.loc)
+
 
 /mob/living/carbon/human/proc/eqclass()
 	set name = "Select your equipment" // INTERROGATORS GEAR
@@ -228,7 +217,7 @@
 
 	var/mob/living/carbon/human/U = src
 	U.verbs -= list(/mob/living/carbon/human/proc/eqclass) //removes verb
-	var/fates = list("Blade and Bolter","Mercenary","Assassin","Pariah","Militarum")
+	var/fates = list("Blade and Bolter","Mercenary","Assassin","Pariah","Militarum","Inquisitorial Stormtrooper")
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -306,6 +295,20 @@
 			new /obj/item/gun/energy/las/laspistol/militarum/lucius(src.loc)
 			new /obj/item/melee/sword/combat_knife/bowie(src.loc)
 			new /obj/item/storage/firstaid/combat(src.loc)
+		if("Inquisitorial Stormtrooper")
+			new /obj/item/cell/lasgun/hotshot(src.loc)
+			new /obj/item/cell/lasgun/hotshot(src.loc)
+			new /obj/item/cell/lasgun/hotshot(src.loc)
+			new /obj/item/clothing/under/guard/uniform/scion(src.loc)
+			new /obj/item/clothing/glasses/cadian(src.loc)
+			new /obj/item/clothing/shoes/jackboots/cadian(src.loc)
+			new /obj/item/clothing/mask/gas/half/cadianrespirator/inquis(src.loc)
+			new /obj/item/gun/energy/las/hotshot(src.loc)
+			new /obj/item/clothing/suit/armor/scion/trooper(src.loc)
+			new /obj/item/storage/backpack/satchel/warfare/scion(src.loc)
+			new /obj/item/clothing/head/helmet/tscion(src.loc)
+			new /obj/item/clothing/rosette(src.loc)
+
 
 // inq outfits
 /decl/hierarchy/outfit/job/interrogator
@@ -337,6 +340,7 @@
 
 	pda_slot = null
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+
 
 /decl/hierarchy/outfit/job/inquisitor
 	name = OUTFIT_JOB_NAME("Inquisitor")
