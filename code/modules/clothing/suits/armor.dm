@@ -1223,11 +1223,11 @@ obj/item/clothing/suit/armor
 	species_restricted = list(SPECIES_HUMAN)
 
 /obj/item/clothing/suit/sisterofbattle/training
-	name = "Novice Armor"
+	name = "Novitae Power Armor"
 	desc = "The Ancient and Deconsecrated Carapace Armour adorned by Novice Militants during their training in Eipharius' Monastarium. Stripped of almost all iconography and with damaged plating. It has scriptures across it's surface, recounting the triumph and martyrdom of Saint Katherine."
 	icon_state = "ooml"
 	item_state = "ooml"
-	armor = list(melee = 44, bullet = 44, laser = 44, energy = 20, bomb = 40, bio = 50, rad = 50)
+	armor = list(melee = 54, bullet = 51, laser = 48, energy = 20, bomb = 40, bio = 50, rad = 50)
 	sales_price = 20
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
