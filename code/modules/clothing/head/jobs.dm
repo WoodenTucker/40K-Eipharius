@@ -194,6 +194,15 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/head/helmet/guardhelmet/enforcer3
+	name = "Magistratum Marshall Helmet"
+	desc = "The Marshall Helmet, based on the Cadian-pattern helmet, are issued to local planetary enforcer officers against criminals of the Imperium, It is painted in a dark blue colour."
+	icon_state = "MarshalHelm"
+	item_state = "MarshalHelm"
+	armor = list(melee = 43, bullet = 45, laser = 45, energy = 35, bomb = 10, bio = 10, rad = 10)
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 /obj/item/clothing/head/helmet/guardhelmet/enforcer
 	name = "Magistratum Enforcer Helmet"
 	desc = "The Enforcer Helmet, based on the Cadian-pattern helmet, are issued to local planetary enforcers against criminals of the Imperium, It is painted in a dark blue colour."
