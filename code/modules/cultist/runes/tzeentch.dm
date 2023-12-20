@@ -5,7 +5,6 @@
 	special 	 = TRUE
 
 /datum/rune_recipe/tzeentch/conversion/do_special(mob/living/carbon/user, obj/effect/cleanable/heretic_rune/rune, list/items)
-	SEND_SIGNAL(user, COMSIG_CULT_ADD_FAVOR, 80)
 	var/mob/living/carbon/human/target = items[1]
 	if(target.stat != DEAD && target.mind)
 		var/datum/heretic_deity/tzeentch/N = GOD(GOD_TZEENTCH)

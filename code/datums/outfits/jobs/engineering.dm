@@ -69,6 +69,7 @@
 	suit = /obj/item/clothing/suit/storage/hazardvest/magos/techpriest
 	gloves = /obj/item/clothing/gloves/thick/techpriest
 	belt = /obj/item/storage/belt/utility/full
+	shoes = /obj/item/clothing/shoes/jackboots/techpriest
 	id_type = /obj/item/card/id/engineering
 	r_pocket = /obj/item/storage/box/coin
 	pda_type = null
@@ -78,6 +79,29 @@
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 		/obj/item/stack/thrones = 1,
 		/obj/item/stack/thrones2 = 1,
+		/obj/item/pickaxe/mechanicus = 1,
+		/obj/item/book/manual/ripley_build_and_repair = 1,
+)
+
+/decl/hierarchy/outfit/job/engineering/engineer/bondage
+	name = OUTFIT_JOB_NAME("Mechanicus Bondsman")
+	head = /obj/item/clothing/head/helmet/bond
+	mask = /obj/item/clothing/mask/gas/explorer
+	l_ear = /obj/item/device/radio/headset/headset_eng
+	shoes = /obj/item/clothing/shoes/jackboots/pilgrim_boots
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	uniform = /obj/item/clothing/under/rank/cargo
+	suit = /obj/item/clothing/suit/armor/bondsman
+	gloves = /obj/item/clothing/gloves/thick
+	belt = /obj/item/storage/belt/utility/full
+	id_type = /obj/item/card/id/engineering
+	r_pocket = /obj/item/storage/box/coin
+	pda_type = null
+	pda_slot = null
+	back = /obj/item/storage/backpack/satchel/warfare
+	backpack_contents = list(
+		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+		/obj/item/stack/thrones = 1,
 		/obj/item/pickaxe/mechanicus = 1,
 		/obj/item/book/manual/ripley_build_and_repair = 1,
 )

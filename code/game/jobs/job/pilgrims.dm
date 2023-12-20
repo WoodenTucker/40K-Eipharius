@@ -235,6 +235,8 @@ Pilgrim Fate System
 			U.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(2,4),rand(2,6)) //melee, ranged, med, eng, surgery
 			new /obj/item/storage/backpack/satchel/warfare(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/cargo, slot_w_uniform)
+			new /obj/item/clothing/suit/armor/bondsman(src.loc)
+			new /obj/item/clothing/head/helmet/bond(src.loc)
 			new /obj/item/device/flashlight/lantern(src.loc) 
 			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)

@@ -488,6 +488,14 @@
 	armor = list(melee = 31, bullet = 48, laser = 48, energy = 35, bomb = 50, bio = 70, rad = 50)
 	sales_price = 2
 
+/obj/item/clothing/head/helmet/bond
+	name = "Hazard Helmet"
+	desc = "A heavy filtration mask fitted with carapace and a heavy hood to protect against burns."
+	icon_state = "MineWorkerH"
+	item_state = "MineWorkerH"
+	armor = list(melee = 52, bullet = 38, laser = 48, energy = 15, bomb = 50, bio = 70, rad = 70)
+	sales_price = 2
+
 /obj/item/clothing/head/helmet/heavyflak
 	name = "Heavy Flak Helmet"
 	desc = "An old flak helmet, custom fitted with a filtration mask and armored exterior."
