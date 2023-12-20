@@ -904,7 +904,7 @@ datum/job/ig/bullgryn
 
 /decl/hierarchy/outfit/job/guardsman/maccabian
 	name = OUTFIT_JOB_NAME("Maccabian Guardsman")
-	uniform = /obj/item/clothing/under/rank/maccabian
+	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/maccabian
 	back = /obj/item/storage/backpack/satchel/maccabian
 	belt = null
@@ -1177,7 +1177,7 @@ datum/job/ig/bullgryn
 
 /decl/hierarchy/outfit/job/medical/paramedic/maccabian
 	name = OUTFIT_JOB_NAME("Maccabian Medicae")
-	uniform = /obj/item/clothing/under/rank/maccabian/medic
+	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/maccabian
 	back = /obj/item/storage/backpack/satchel/maccabian
 	belt = /obj/item/storage/belt/medical/full
@@ -1391,7 +1391,7 @@ datum/job/ig/bullgryn
 
 /decl/hierarchy/outfit/job/sergeant/maccabian
 	name = OUTFIT_JOB_NAME("Maccabian Sergeant")
-	uniform = /obj/item/clothing/under/rank/maccabian/sergeant
+	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/maccabian/sergeant
 	back = /obj/item/storage/backpack/satchel/maccabian/sergeant
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
