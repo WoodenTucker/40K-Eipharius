@@ -203,6 +203,7 @@
 			if(prob(12))
 				new /obj/item/device/radio/headset/blue_team/all(src.loc)
 
+
 /mob/living/carbon/human/proc/eqclass()
 	set name = "Select your equipment" // INTERROGATORS GEAR
 	set category = "CHOOSE YOUR FATE"
