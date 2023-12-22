@@ -301,12 +301,12 @@
 
 /decl/hierarchy/outfit/job/ig/marshal
 	name = OUTFIT_JOB_NAME("Planetary Marshal")
-	head = /obj/item/clothing/head/helmet/guardhelmet/patrol
+	head = /obj/item/clothing/head/helmet/guardhelmet/enforcer3
 	uniform = /obj/item/clothing/under/rank/marshal
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
 	r_pocket = /obj/item/device/flashlight/lantern
-	suit = /obj/item/clothing/suit/armor/enforcer/marshal
+	suit = /obj/item/clothing/suit/armor/enforcer3
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen

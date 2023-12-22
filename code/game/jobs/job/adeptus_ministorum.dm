@@ -709,6 +709,7 @@
 	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/sisterofbattle/training
+	head = /obj/item/clothing/head/hospitallerhelm
 	belt = /obj/item/melee/sword/longsword
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/jackboots

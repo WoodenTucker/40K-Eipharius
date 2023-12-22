@@ -307,7 +307,6 @@
 			new /obj/item/clothing/suit/armor/scion/trooper(src.loc)
 			new /obj/item/storage/backpack/satchel/warfare/scion(src.loc)
 			new /obj/item/clothing/head/helmet/tscion(src.loc)
-			new /obj/item/clothing/rosette(src.loc)
 
 
 // inq outfits
