@@ -152,6 +152,14 @@
 	b_side = pick('sound/music/boombox14.ogg')
 	sound_inside = a_side
 
+/obj/item/device/cassette/fart/New()
+	..()
+	name = "The Great Gatsby"
+	a_side = pick('sound/newmusic/fart.ogg')
+	b_side = pick('sound/newmusic/fart.ogg')
+	sound_inside = a_side
+
+
 /obj/item/device/cassette/titansbane/New()
 	..()
 	name = "Titansbane - Cadia Stands"
