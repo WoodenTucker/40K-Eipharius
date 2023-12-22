@@ -3002,6 +3002,10 @@
 /obj/structure/table/graf/big_wood_table{
 	dir = 1
 	},
+/obj/item/paper_bin{
+	pixel_y = 8
+	},
+/obj/item/pen,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "dwI" = (
@@ -5181,7 +5185,8 @@
 /obj/structure/statue/verina{
 	desc = "A polished and well maintained statue of Saint Celestine of the Order of Our Martyred Lady. Despair, and you give yourself to the shadows. Believe, truly believe in the Emperor of Mankind, and you shall walk in His light no matter how dark the path you tread.";
 	name = "Statue of Saint Celestine";
-	pixel_x = -15
+	pixel_x = -15;
+	density = 0
 	},
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -5675,6 +5680,12 @@
 /turf/simulated/floor/ceramic/surgery2{
 	dir = 6
 	},
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"gsu" = (
+/obj/machinery/door/blast/id_door/open{
+	id = "butt"
+	},
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "gsN" = (
 /obj/structure/table/rack/dark,
@@ -9569,7 +9580,8 @@
 /obj/structure/statue/verina{
 	desc = "A polished and well maintained statue of Saint Celestine of the Order of Our Martyred Lady. Despair, and you give yourself to the shadows. Believe, truly believe in the Emperor of Mankind, and you shall walk in His light no matter how dark the path you tread.";
 	name = "Statue of Saint Celestine";
-	pixel_x = -15
+	pixel_x = -15;
+	density = 0
 	},
 /obj/effect/decal/cleanable/cobweb{
 	dir = 1
@@ -11988,6 +12000,15 @@
 	},
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/farm)
+"mYY" = (
+/obj/machinery/button/remote/blast_door{
+	name = "BAR THE GATES!";
+	req_one_access = list(211);
+	id = "butt";
+	pixel_x = 28
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "mZt" = (
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 2000;
@@ -15309,6 +15330,9 @@
 	name = "Imperialis Doorway - Monasterium";
 	req_one_access = list()
 	},
+/obj/machinery/door/blast/id_door/open{
+	id = "butt"
+	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "qDc" = (
@@ -16382,7 +16406,8 @@
 /obj/structure/statue/verina{
 	desc = "A polished and well maintained statue of Saint Katherine of the Order of Our Martyred Lady. The fire of spirit is a beacon of hope, a sign that even in this time of abounding horror, the Emperor has not abandoned His faithful servants.";
 	name = "Statue of Saint Katherine";
-	pixel_x = -15
+	pixel_x = -15;
+	density = 0
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -17065,6 +17090,20 @@
 /obj/random/loot/randomammo1,
 /turf/simulated/floor/darksteel_floor,
 /area/cadiaoutpost/oa/magistratumpost)
+"soN" = (
+/obj/effect/floor_decal/newcorner/blue/diagonal,
+/obj/structure/bed/roller,
+/obj/machinery/button/remote/blast_door{
+	name = "BAR THE GATES!";
+	req_one_access = list(211);
+	id = "butt";
+	pixel_x = 28
+	},
+/turf/simulated/floor/tiled{
+	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "soT" = (
 /obj/structure/torchwall{
 	dir = 4;
@@ -18897,6 +18936,9 @@
 	maxhealth = 900;
 	name = "Medicae"
 	},
+/obj/machinery/door/blast/id_door/open{
+	id = "butt"
+	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "ugQ" = (
@@ -19533,7 +19575,8 @@
 /obj/structure/statue/verina{
 	desc = "A polished and well maintained statue of Saint Celestine of the Order of Our Martyred Lady. Despair, and you give yourself to the shadows. Believe, truly believe in the Emperor of Mankind, and you shall walk in His light no matter how dark the path you tread.";
 	name = "Statue of Saint Celestine";
-	pixel_x = -15
+	pixel_x = -15;
+	density = 0
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -21771,7 +21814,8 @@
 /obj/structure/statue/verina{
 	desc = "A polished and well maintained statue of Saint Celestine of the Order of Our Martyred Lady. Despair, and you give yourself to the shadows. Believe, truly believe in the Emperor of Mankind, and you shall walk in His light no matter how dark the path you tread.";
 	name = "Statue of Saint Celestine";
-	pixel_x = -15
+	pixel_x = -15;
+	density = 0
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -35758,7 +35802,7 @@ svG
 gXe
 nfI
 qsP
-raU
+soN
 fDz
 fDz
 raU
@@ -36765,7 +36809,7 @@ xgD
 nrA
 nrA
 nrA
-nrA
+mYY
 nrA
 nrA
 nrA
@@ -39275,7 +39319,7 @@ nrA
 nrA
 nrA
 nrA
-nrA
+mYY
 nrA
 bNq
 nrA
@@ -39542,7 +39586,7 @@ bNq
 tWA
 tWA
 bNq
-nrA
+gsu
 bNq
 bNq
 bNq

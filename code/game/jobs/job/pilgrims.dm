@@ -579,7 +579,7 @@ Pilgrim Fate System
 		H.add_stats(rand(20,30), rand(15,18), rand(15,18), rand (2,5)) //ogryn are stronger than astartes or smh i don't remember
 		H.add_skills(rand(10,13),1,1,1,1) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		to_chat(H, "<span class='notice'><b><font size=3>You're an up-and-coming entrepreneur on Eipharius -- the wisest most big brain Ogryn bonehead that ever lived. After securing a hefty loan of 700 thrones from the local gangboss(via decapatation), you now own the local inn and have become the new Mafia King of Messina. You even found another Ogryn living in the slums, gave them a job as a bartender/bouncer in exchange for a lifetime supply of pizza. The world is your oyster.. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You're an up-and-coming entrepreneur on Eipharius -- the wisest most big brain Ogryn bonehead that ever lived. You've taken over a local inn with some cashflow given to you by the Rogue Trader and you owe the big lord lots of thrones. Best you figure out how to square up before they cut a deal with one of your Gangers. </font></b></span>")
 
 /*
 /datum/job/innkeeper
@@ -964,7 +964,7 @@ Pilgrim Fate System
 		H.verbs += list(
 			/mob/living/carbon/human/proc/gangerclass,
 		)
-		to_chat(H, "<span class='notice'><b><font size=3>You left your previous world with a bounty on your head, and now you're in this shit hole with a few like-minded people. The Underboss owes you 700 thrones, see to it that the debt is repaid in full. Mug people, run gambling games, peddle drugs, harvest and sell organs. Get wealth, power and respect at any means necessary or die trying.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You're a ganger raised up in the factorums of the colony ship that brought you and many like you to Eipharius. Upon arrival you were lucky enough to be employed by an Ogryn Gang boss -- a powerful bruiser with ties to the Rogue Trader of all people.'.</font></b></span>")
 
 
 /mob/living/carbon/human/proc/gangerclass()
@@ -1063,7 +1063,7 @@ Pilgrim Fate System
 		H.add_stats(rand(20,30), rand(15,18), rand(15,18), rand (2,5)) //ogryn are stronger than astartes or smh i don't remember
 		H.add_skills(rand(10,13),1,1,1,1) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		to_chat(H, "<span class='notice'><b><font size=3>You're the biggest, baddest muscle on Eipharius. Protect the Underboss and his interests!</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You're the biggest, baddest muscle on Eipharius. Protect the Underboss and his buddy the ROGUE TRADER!</font></b></span>")
 
 
 
