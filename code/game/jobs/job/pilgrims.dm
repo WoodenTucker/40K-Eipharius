@@ -253,6 +253,8 @@ Pilgrim Fate System
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			new /obj/item/device/flashlight/lantern(src.loc) 
 			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc)
+			new /obj/item/clothing/accessory/holster/hip
+			new /obj/item/gun/energy/las/laspistol
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/key/grand/monastary, slot_wear_id)
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
