@@ -581,8 +581,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	fire_delay = 1.5
 	charge_cost = 70
 	firemodes = list(
-		list(mode_name="semi-automatic",   burst=1, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="automatic", 	burst=3, fire_delay=3, burst_accuracy=list(0,-1,0), dispersion=null, automatic = 0.7),
+		list(mode_name="semi-automatic",   burst=2, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="automatic", 	burst=4, fire_delay=3, burst_accuracy=list(0,-1,0), dispersion=null, automatic = 0.7),
 	)
 	sales_price = 80
 
