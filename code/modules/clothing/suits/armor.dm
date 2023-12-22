@@ -570,7 +570,7 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/enforcer3// Marshall's armor
 	name = "Patrol Armor - Marshall"
 	desc = "The flak armor worn by a Messina Enforcer. Light and robust in the colour blue, designed to protect against blast and small arms fire."
-	icon_state = "PalaniteArmour"
+	icon_state = "PalaniteArmor"
 	item_state = "MarshalArmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 50, bullet = 50, laser = 45, energy = 35, bomb = 40, bio = 40, rad = 40)
@@ -582,7 +582,7 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/enforcer2// Old enforcer armor for reference.
 	name = "Patrol Armor - Enforcer"
 	desc = "The flak armor worn by a Messina Enforcer. Light and robust in the colour blue, designed to protect against blast and small arms fire."
-	icon_state = "PalaniteArmour"
+	icon_state = "PalaniteArmor"
 	item_state = "PalaniteArmour"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 44, bullet = 44, laser = 42, energy = 35, bomb = 40, bio = 40, rad = 40)
