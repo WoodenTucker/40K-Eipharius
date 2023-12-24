@@ -8746,6 +8746,17 @@
 /obj/machinery/door/unpowered/newmap/kasr_quarters,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"jzk" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/torchwall{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "jzs" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/standard{
@@ -63561,7 +63572,7 @@ lDW
 xhn
 vce
 tKI
-inE
+jzk
 gDl
 lPf
 lPf
@@ -64319,11 +64330,11 @@ lDW
 eXO
 inE
 gDl
-gDl
-gDl
-gDl
-gDl
-gDl
+lPf
+lPf
+lPf
+lPf
+lPf
 tpQ
 tOB
 tOB
@@ -64571,10 +64582,10 @@ dFD
 tKI
 inE
 gDl
-lPf
-lPf
-lPf
-lPf
+gDl
+gDl
+gDl
+gDl
 gDl
 tpQ
 tpQ
@@ -64823,12 +64834,12 @@ dFD
 tKI
 gDl
 gDl
-lPf
-lPf
-lPf
-lPf
 gDl
-khV
+gDl
+gDl
+gDl
+gDl
+gDl
 khV
 khV
 khV
@@ -65080,7 +65091,7 @@ lPf
 lPf
 lPf
 gDl
-khV
+gDl
 khV
 khV
 khV
@@ -65332,7 +65343,7 @@ lPf
 lPf
 lPf
 gDl
-khV
+gDl
 khV
 khV
 khV
@@ -65579,10 +65590,10 @@ exL
 tKI
 gDl
 gDl
-gDl
-gDl
-gDl
-gDl
+lPf
+lPf
+lPf
+lPf
 gDl
 gDl
 khV
@@ -65835,7 +65846,7 @@ lPf
 lPf
 lPf
 lPf
-lPf
+gDl
 gDl
 khV
 khV
@@ -66082,12 +66093,12 @@ pMz
 dFD
 tKI
 gDl
-gDl
+hjv
 dEu
 lPf
 lPf
 lPf
-lPf
+gDl
 gDl
 tOu
 wcj
@@ -66339,7 +66350,7 @@ tKI
 lPf
 lPf
 lPf
-lPf
+gDl
 gDl
 khV
 wcj
@@ -66591,7 +66602,7 @@ tKI
 lPf
 lPf
 lPf
-lPf
+gDl
 gDl
 khV
 tpQ
@@ -66843,7 +66854,7 @@ tKI
 lPf
 lPf
 lPf
-lPf
+gDl
 gDl
 khV
 tpQ
@@ -67094,7 +67105,7 @@ sKx
 bYK
 khV
 gDl
-gDl
+hjv
 gPx
 gDl
 yhM
