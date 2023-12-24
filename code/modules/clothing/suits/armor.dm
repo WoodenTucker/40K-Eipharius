@@ -350,6 +350,7 @@ obj/item/clothing/suit/armor
 	name = "Rogue Trader's Armor"
 	desc = "The distinguished armor of a Rogue Trader"
 	icon_state = "rtarm"
+	item_state = "rtarm"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 46, bullet = 52, laser = 52, energy = 35, bomb = 50, bio = 30, rad = 30)
 	sales_price = 0

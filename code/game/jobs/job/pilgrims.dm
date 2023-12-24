@@ -897,7 +897,6 @@ Pilgrim Fate System
     cultist_chance = 0
     species_role = "Skaven"
 
-
     equip(var/mob/living/carbon/human/H)
         H.warfare_faction = IMPERIUM
         ..()
@@ -980,7 +979,7 @@ Pilgrim Fate System
 
 	var/mob/living/carbon/human/U = src
 	U.verbs -= list(/mob/living/carbon/human/proc/gangerclass,)
-	var/fates = list("Bruiser","Hitman", "Rogue Doc",)
+	var/fates = list("Bruiser","Assassin", "Rogue Doc",)
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -1005,7 +1004,7 @@ Pilgrim Fate System
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-		if("Hitman")
+		if("Assassin")
 			U.add_stats(rand(14,17), rand(15,17), rand(14,16), rand (14,16)) //ex criminal, not fed very well, but random stats
 			U.add_skills(rand(5,6),rand(9,11),rand(2,4),rand(5,10),rand(2,4)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/penitent, slot_w_uniform)
@@ -1016,7 +1015,7 @@ Pilgrim Fate System
 			new /obj/item/gun/projectile/automatic/machinepistol(src.loc) 
 			new /obj/item/ammo_magazine/mc9mmt/machinepistol(src.loc) 
 			new /obj/item/ammo_magazine/mc9mmt/machinepistol(src.loc)
-			to_chat(U, "<span class='goodmood'><b><font size=3>You're the hitman, the shadow of the gang. Take out any who oppose you.</font></b></span>")
+			to_chat(U, "<span class='goodmood'><b><font size=3>You're the assassin, the shadow of the gang. Take out any who oppose you.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/gangerclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
