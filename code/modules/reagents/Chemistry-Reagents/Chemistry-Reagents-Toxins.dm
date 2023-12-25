@@ -678,7 +678,7 @@
 	metabolism = REM * 2
 	overdose = 30
 
-/datum/reagent/toxin/corrupting/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+/datum/reagent/toxin/corrupting/affect_touch(var/mob/living/carbon/M, var/alien, var/removed)
 	..()
 	if(!(H.wear_mask))
 		if(M.chem_doses[type] < 5)
