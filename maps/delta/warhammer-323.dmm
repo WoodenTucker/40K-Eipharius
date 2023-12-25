@@ -2174,6 +2174,10 @@
 	color = "gray"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"cfN" = (
+/obj/item/device/radio/beacon,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/new_hive/hive_city)
 "cgf" = (
 /obj/structure/table/rack/shelf,
 /obj/item/mop,
@@ -23709,10 +23713,6 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
-"wfY" = (
-/obj/item/device/radio/beacon,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/new_hive/hive_city)
 "wgi" = (
 /turf/simulated/floor/darksteel_floor{
 	dir = 1
@@ -87604,7 +87604,7 @@ nSI
 pRO
 nSI
 nSI
-wfY
+cfN
 oiV
 nSI
 nSI
