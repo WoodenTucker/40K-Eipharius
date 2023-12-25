@@ -538,7 +538,7 @@
 	caliber = "pmag"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	ammo_type = /obj/item/ammo_casing/pmag
-	max_ammo = 37
+	max_ammo = 45
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/radcarbine

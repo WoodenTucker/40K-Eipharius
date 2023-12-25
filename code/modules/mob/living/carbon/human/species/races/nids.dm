@@ -38,8 +38,8 @@
 //	stomach_capacity = MOB_MEDIUM
 	darksight = 20
 
-	brute_mod = 0.65 // Hardened carapace.
-	burn_mod = 0.65 // Hardened carapace.
+	brute_mod = 0.35 // Hardened carapace.
+	burn_mod = 0.35 // Hardened carapace.
 
 	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_EMBED | SPECIES_FLAG_NO_PAIN
 	appearance_flags = HAS_EYE_COLOR | HAS_SKIN_COLOR

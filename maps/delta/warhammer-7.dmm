@@ -947,14 +947,10 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/dungeon3)
 "ga" = (
-/obj/machinery/door/blast/bordergatec{
-	id = "necron2";
-	icon = 'icons/obj/doors/necron_door.dmi';
-	maxhealth = 1200
-	},
-/turf/unsimulated/floor/necron_floor{
-	icon_state = "ofloor"
-	},
+/obj/structure/table/steel_reinforced,
+/obj/item/rnd/biospace5,
+/obj/item/rnd/biospace5,
+/turf/unsimulated/floor/necron_floor,
 /area/cadiaoutpost/oa/dungeon1)
 "gc" = (
 /obj/structure/bed/chair/comfy/captain{
@@ -1570,7 +1566,8 @@
 /area/cadiaoutpost/oa/dungeon1)
 "lo" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/rnd/biospace5,
+/obj/item/ammo_magazine/pulsemag,
+/obj/item/ammo_magazine/pulsemag,
 /turf/unsimulated/floor/necron_floor,
 /area/cadiaoutpost/oa/dungeon1)
 "lp" = (
@@ -3559,9 +3556,7 @@
 /turf/unsimulated/floor/sand,
 /area/cadiaoutpost/oa/dungeon1)
 "Bp" = (
-/obj/effect/landmark{
-	name = "tau2start"
-	},
+/obj/item/plastique,
 /turf/simulated/floor/stone/seabed,
 /area/cadiaoutpost/oa/mechanicusdig)
 "Bs" = (
@@ -3995,6 +3990,7 @@
 "EX" = (
 /obj/structure/closet/excavation,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/plastique,
 /turf/simulated/floor/darkfloor,
 /area/cadiaoutpost/oa/mechanicusdig)
 "Fe" = (
@@ -5502,8 +5498,8 @@
 	},
 /area/cadiaoutpost/oa/dungeon1)
 "TD" = (
-/obj/item/gun/projectile/automatic/gaussrifle,
 /obj/structure/table/steel_reinforced,
+/obj/item/gun/projectile/automatic/gaussrifle,
 /turf/unsimulated/floor/necron_floor,
 /area/cadiaoutpost/oa/dungeon1)
 "TE" = (
@@ -8019,9 +8015,9 @@ Cu
 je
 je
 je
-Bp
 je
-Bp
+je
+je
 je
 je
 je
@@ -8685,9 +8681,9 @@ je
 je
 je
 je
-Bp
 je
-Bp
+je
+je
 je
 je
 je
@@ -16665,7 +16661,7 @@ Vj
 je
 je
 Am
-je
+Bp
 je
 je
 je
@@ -20120,9 +20116,9 @@ AC
 AC
 Rl
 gx
-Pv
-Pv
-Pv
+bF
+bF
+bF
 Sn
 rw
 AC
@@ -31664,9 +31660,9 @@ DI
 AC
 uW
 IT
-ga
-ga
-ga
+bF
+bF
+bF
 VT
 rX
 gL
@@ -32330,9 +32326,9 @@ ah
 KM
 ah
 IT
-ga
-ga
-ga
+bF
+bF
+bF
 VT
 ah
 KM
@@ -37442,7 +37438,7 @@ AC
 AC
 AC
 DI
-lo
+ga
 PG
 eP
 ra

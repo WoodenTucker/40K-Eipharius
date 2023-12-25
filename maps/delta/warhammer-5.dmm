@@ -1476,6 +1476,11 @@
 /obj/item/modular_computer/console/preset/civilian,
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
+"gZ" = (
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/hangarpact2)
 "ha" = (
 /obj/structure/bed/chair/office/dark,
 /turf/simulated/floor/wood,
@@ -2198,6 +2203,7 @@
 /obj/item/reagent_containers/hypospray/autoinjector/tau,
 /obj/item/storage/firstaid/combat,
 /obj/item/storage/firstaid/combat,
+/obj/item/reagent_containers/hypospray/autoinjector/tau,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "kl" = (
@@ -3064,6 +3070,14 @@
 	dir = 8
 	},
 /area/space)
+"oi" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/hangarpact2)
 "oo" = (
 /turf/unsimulated/oldship{
 	icon_state = "rwall9"
@@ -3758,6 +3772,7 @@
 	armor = list("melee"=50,"bullet"=70,"laser"=80,"energy"=25,"bomb"=40,"bio"=100,"rad"=100);
 	name = "Salvaged Anomaly Suit"
 	},
+/obj/item/storage/backpack/holding,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "sO" = (
@@ -4072,6 +4087,14 @@
 /obj/machinery/atmospherics/pipe/tank/oxygen,
 /turf/simulated/floor/plating,
 /area/centcom)
+"uM" = (
+/obj/item/paper/crumpled/bloody{
+	name = "Imperial Contract";
+	desc = "This letter is addressed by Lord General Militant Xivan who states the authority of Tau Merchants to partake in trade with fringe colonies -- so long as the ceasefire is maintained between imperial forces and the Tau Empire.";
+	color = "gold"
+	},
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
 "uQ" = (
 /obj/structure/bed/chair/comfy/captain{
 	desc = "Comfy chair for luxury and piloting.";
@@ -4378,6 +4401,12 @@
 /obj/effect/wingrille_spawn/reinforced/crescent,
 /turf/space,
 /area/space)
+"wK" = (
+/obj/machinery/light/blue,
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/hangarpact2)
 "wL" = (
 /obj/machinery/photocopier,
 /obj/machinery/light{
@@ -6937,8 +6966,6 @@
 /obj/item/reagent_containers/hypospray/autoinjector/tau,
 /obj/item/storage/firstaid/combat,
 /obj/item/storage/firstaid/combat,
-/obj/item/reagent_containers/hypospray/autoinjector/tau,
-/obj/item/reagent_containers/hypospray/autoinjector/tau,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "Ly" = (
@@ -7154,6 +7181,7 @@
 /obj/structure/table/rack,
 /obj/item/clothing/suit/armor/fwarmor/breacher,
 /obj/item/clothing/head/helmet/fw/breacher,
+/obj/item/reagent_containers/hypospray/autoinjector/tau,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "MX" = (
@@ -7414,6 +7442,10 @@
 /obj/item/gun/projectile/eldar/scatapult,
 /obj/item/gun/projectile/eldar/scatapult,
 /turf/simulated/floor,
+/area/space)
+"OC" = (
+/obj/mecha/combat/gygax/xenostank,
+/turf/space,
 /area/space)
 "OD" = (
 /obj/structure/bed/chair/pew,
@@ -8213,6 +8245,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"Ti" = (
+/obj/effect/shuttle_landmark/ferry/bloodpact_end,
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/hangarpact2)
 "Tk" = (
 /obj/structure/table/marble,
 /obj/item/clothing/suit/armor/bulletproof/vest{
@@ -8491,8 +8529,8 @@
 /obj/structure/table/steel,
 /obj/item/storage/belt/medical/full,
 /obj/item/storage/belt/medical/full,
-/obj/item/ammo_magazine/handful/kroot_handful,
-/obj/item/ammo_magazine/handful/kroot_handful,
+/obj/item/reagent_containers/hypospray/autoinjector/tau,
+/obj/item/reagent_containers/hypospray/autoinjector/tau,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "UV" = (
@@ -9052,6 +9090,14 @@
 /obj/structure/closet/crate/xenos/chest3,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/shuttle/inquisition)
+"Yy" = (
+/obj/machinery/light/blue{
+	dir = 1
+	},
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/hangarpact2)
 "YA" = (
 /obj/structure/bed/chair/comfy/black{
 	dir = 8;
@@ -14764,7 +14810,7 @@ Uv
 iu
 gL
 jB
-jB
+uM
 IU
 nv
 jh
@@ -23091,7 +23137,7 @@ ax
 ax
 ax
 ax
-ax
+OC
 ax
 ax
 ax
@@ -35447,17 +35493,17 @@ BZ
 BZ
 BZ
 BZ
-BZ
-BZ
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+oE
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+qJ
 ax
 ax
 ax
@@ -35699,17 +35745,17 @@ Sg
 Sg
 Sg
 qJ
-BZ
-BZ
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FZ
+oi
+oi
+oi
+oi
+oi
+oi
+oi
+oi
+oi
+FZ
 ax
 ax
 ax
@@ -35951,17 +35997,17 @@ CQ
 CQ
 Nj
 FZ
-BZ
-BZ
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+FZ
 ax
 ax
 ax
@@ -36203,17 +36249,17 @@ WM
 WM
 eU
 mv
-BZ
-BZ
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FZ
+gZ
+gZ
+gZ
+gZ
+Ti
+gZ
+gZ
+gZ
+gZ
+FZ
 ax
 ax
 ax
@@ -36455,17 +36501,17 @@ WM
 WM
 Lz
 us
-BZ
-BZ
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FZ
+Yy
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+wK
+FZ
 ax
 ax
 ax
@@ -36707,17 +36753,17 @@ WM
 iV
 ex
 Lb
-BZ
-BZ
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+FZ
 ax
 ax
 ax
@@ -36959,17 +37005,17 @@ WM
 iV
 ex
 hf
-BZ
-BZ
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+FZ
 ax
 ax
 ax
@@ -37211,17 +37257,17 @@ WM
 iV
 ex
 DQ
-BZ
-BZ
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+FZ
 ax
 ax
 ax
@@ -37463,17 +37509,17 @@ WM
 WM
 Nj
 Vr
-BZ
-BZ
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+FZ
 ax
 ax
 ax
@@ -37715,17 +37761,17 @@ WM
 WM
 eU
 mv
-BZ
-BZ
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+FZ
 ax
 ax
 ax
@@ -37967,17 +38013,17 @@ Fn
 Fn
 Lz
 FZ
-BZ
-BZ
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+FZ
 ax
 ax
 ax
@@ -38219,17 +38265,17 @@ Sg
 VQ
 Sg
 oo
-BZ
-BZ
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FZ
+Yy
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+wK
+FZ
 ax
 ax
 ax
@@ -38464,24 +38510,24 @@ WM
 eg
 Sg
 Jh
-oo
-xw
-wp
-jb
+Qj
+Sg
+Sg
+Sg
+qJ
+BZ
+BZ
 FZ
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+FZ
 ax
 ax
 ax
@@ -38716,24 +38762,24 @@ WM
 WM
 WM
 WM
-is
-WD
-Rn
-WD
-FM
+eg
 Sg
 Sg
-qJ
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+Sg
+Sg
+Sg
+Sg
+oo
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+FZ
 ax
 ax
 ax
@@ -38968,24 +39014,24 @@ WM
 WM
 WM
 WM
-AN
-WD
-WD
-WD
-us
-Eg
-ns
+WM
+WM
+CV
+WM
+WM
+WM
+WM
+Td
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
 FZ
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
 ax
 ax
 ax
@@ -39220,24 +39266,24 @@ WM
 WM
 WM
 WM
+WM
+WM
+WM
+WM
+WM
+Ik
+WM
 Td
-WD
-WD
-WD
-Aj
-iQ
-KL
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
 FZ
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
 ax
 ax
 ax
@@ -39472,24 +39518,24 @@ Sg
 qJ
 WM
 WM
-Vr
-WD
-Bc
-KW
-Vr
-iQ
-iQ
-FZ
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+oE
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+VQ
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+Sg
+oo
 ax
 ax
 ax
