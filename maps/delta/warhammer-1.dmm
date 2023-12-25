@@ -1902,6 +1902,17 @@
 	},
 /turf/simulated/wall/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"gZ" = (
+/obj/item/clothing/shoes/jackboots/maccabian,
+/obj/item/clothing/shoes/jackboots/maccabian,
+/obj/item/clothing/shoes/jackboots/maccabian,
+/obj/item/clothing/gloves/thick/swat/combat/maccabian,
+/obj/item/clothing/gloves/thick/swat/combat/maccabian,
+/obj/item/clothing/gloves/thick/swat/combat/maccabian,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/hangarpact)
 "ha" = (
 /obj/structure/table/steel,
 /obj/item/device/boombox,
@@ -6043,12 +6054,16 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "vj" = (
-/mob/living/simple_animal/hostile/giant_spider/flesh,
-/mob/living/simple_animal/hostile/giant_spider/flesh,
-/turf/unsimulated/oldship{
-	icon_state = "rwall1"
+/obj/item/clothing/head/helmet/maccabian,
+/obj/item/clothing/head/helmet/maccabian,
+/obj/item/clothing/head/helmet/maccabian,
+/obj/item/clothing/mask/gas/maccabian,
+/obj/item/clothing/mask/gas/maccabian,
+/obj/item/clothing/mask/gas/maccabian,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/area/cadiaoutpost/oa/engineering/engine/enginewaste)
+/area/cadiaoutpost/oa/hangarpact)
 "vk" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -6324,17 +6339,6 @@
 /obj/effect/floor_decal/turf/basalt9,
 /turf/simulated/floor/airless/lava,
 /area/cadiaoutpost/oa/caves/undercity)
-"ww" = (
-/obj/item/clothing/head/helmet/maccabian,
-/obj/item/clothing/head/helmet/maccabian,
-/obj/item/clothing/head/helmet/maccabian,
-/obj/item/clothing/mask/gas/maccabian,
-/obj/item/clothing/mask/gas/maccabian,
-/obj/item/clothing/mask/gas/maccabian,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/hangarpact)
 "wy" = (
 /obj/machinery/door/airlock/arbiter{
 	color = "grey";
@@ -6468,6 +6472,12 @@
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"xb" = (
+/mob/living/simple_animal/hostile/flesh/stalker2,
+/turf/simulated/floor/plating{
+	icon_state = "evil"
+	},
+/area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "xe" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -6719,6 +6729,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
+"yj" = (
+/obj/item/card/id/syndicate,
+/obj/item/card/id/syndicate,
+/obj/item/card/id/syndicate,
+/obj/item/card/id/syndicate,
+/obj/item/card/id/syndicate,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/hangarpact)
 "yk" = (
 /obj/structure/sewers/pipeflow{
 	color = "grey"
@@ -7341,11 +7361,16 @@
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "An" = (
-/mob/living/simple_animal/hostile/flesh/stalker2,
-/turf/simulated/floor/plating{
-	icon_state = "evil"
+/obj/item/clothing/suit/armor/maccabian,
+/obj/item/clothing/suit/armor/maccabian,
+/obj/item/clothing/suit/armor/maccabian,
+/obj/item/clothing/suit/armor/maccabian,
+/obj/item/clothing/suit/armor/maccabian,
+/obj/item/clothing/suit/armor/maccabian,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/area/cadiaoutpost/oa/engineering/engine/enginewaste)
+/area/cadiaoutpost/oa/hangarpact)
 "Ap" = (
 /obj/structure/table/rack/dark,
 /obj/random/loot/sidearmammo,
@@ -8921,12 +8946,19 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "Fz" = (
-/obj/item/clothing/shoes/jackboots/maccabian,
-/obj/item/clothing/shoes/jackboots/maccabian,
-/obj/item/clothing/shoes/jackboots/maccabian,
-/obj/item/clothing/gloves/thick/swat/combat/maccabian,
-/obj/item/clothing/gloves/thick/swat/combat/maccabian,
-/obj/item/clothing/gloves/thick/swat/combat/maccabian,
+/obj/item/clothing/under/rank/maccabian,
+/obj/item/clothing/under/rank/maccabian,
+/obj/item/clothing/under/rank/maccabian,
+/obj/item/clothing/under/rank/maccabian,
+/obj/item/clothing/under/rank/maccabian,
+/obj/item/clothing/under/rank/maccabian,
+/obj/item/card/id/dog_tag/guardsman,
+/obj/item/card/id/dog_tag/guardsman,
+/obj/item/card/id/dog_tag/guardsman,
+/obj/item/card/id/dog_tag/guardsman,
+/obj/item/card/id/dog_tag/guardsman,
+/obj/item/card/id/dog_tag/guardsman,
+/obj/item/card/id/dog_tag/guardsman,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -12083,6 +12115,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
+"QC" = (
+/mob/living/simple_animal/hostile/giant_spider/flesh,
+/mob/living/simple_animal/hostile/giant_spider/flesh,
+/turf/unsimulated/oldship{
+	icon_state = "rwall1"
+	},
+/area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "QE" = (
 /obj/random/loot/tech1,
 /turf/simulated/floor/stone,
@@ -12709,17 +12748,6 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
-"Tq" = (
-/obj/item/clothing/suit/armor/maccabian,
-/obj/item/clothing/suit/armor/maccabian,
-/obj/item/clothing/suit/armor/maccabian,
-/obj/item/clothing/suit/armor/maccabian,
-/obj/item/clothing/suit/armor/maccabian,
-/obj/item/clothing/suit/armor/maccabian,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/hangarpact)
 "Tr" = (
 /obj/machinery/light{
 	icon_state = "tube1";
@@ -13636,23 +13664,11 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "WE" = (
-/obj/item/clothing/under/rank/maccabian,
-/obj/item/clothing/under/rank/maccabian,
-/obj/item/clothing/under/rank/maccabian,
-/obj/item/clothing/under/rank/maccabian,
-/obj/item/clothing/under/rank/maccabian,
-/obj/item/clothing/under/rank/maccabian,
-/obj/item/card/id/dog_tag/guardsman,
-/obj/item/card/id/dog_tag/guardsman,
-/obj/item/card/id/dog_tag/guardsman,
-/obj/item/card/id/dog_tag/guardsman,
-/obj/item/card/id/dog_tag/guardsman,
-/obj/item/card/id/dog_tag/guardsman,
-/obj/item/card/id/dog_tag/guardsman,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/mob/living/simple_animal/hostile/flesh/stalker,
+/turf/simulated/floor/plating{
+	icon_state = "evil"
 	},
-/area/cadiaoutpost/oa/hangarpact)
+/area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "WF" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 8;
@@ -14376,12 +14392,6 @@
 /turf/simulated/floor/ship_floor/steel{
 	icon_state = "m";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
-	},
-/area/cadiaoutpost/oa/engineering/engine/enginewaste)
-"YR" = (
-/mob/living/simple_animal/hostile/flesh/stalker,
-/turf/simulated/floor/plating{
-	icon_state = "evil"
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "YT" = (
@@ -16449,7 +16459,7 @@ Qp
 Qp
 ez
 Qp
-vj
+QC
 It
 KH
 Qp
@@ -25292,7 +25302,7 @@ Ox
 Os
 hv
 Bm
-YR
+WE
 Bm
 Fe
 KH
@@ -25534,7 +25544,7 @@ Bm
 pt
 pt
 Bm
-An
+xb
 pt
 pt
 Bm
@@ -62917,8 +62927,8 @@ gk
 Mj
 Mj
 Mj
-ww
-Fz
+vj
+gZ
 tF
 tR
 tR
@@ -63168,9 +63178,9 @@ Mk
 Rx
 tR
 pf
-Mj
-ww
-Fz
+yj
+vj
+gZ
 nX
 ub
 tR
@@ -63421,8 +63431,8 @@ pF
 tR
 pf
 Mj
-Tq
-WE
+An
+Fz
 HI
 wT
 tR
