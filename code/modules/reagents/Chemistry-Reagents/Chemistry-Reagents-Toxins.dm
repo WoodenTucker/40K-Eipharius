@@ -686,13 +686,13 @@
 		to_chat(M, "<span class='warning'>You feel funny...</span>")
 	else
 		to_chat(M, "<span class='danger'>You feel like you could die at any moment!</span>")
-			if(istype(M, /mob/living/carbon/human))
-				var/mob/living/carbon/human/H = M
-				H.zombieze()
-				M.adjustOxyLoss(3 * removed)
-				M.Weaken(5)
-				M.silent = max(M.silent, 10)
-				remove_self(volume)
+	if(istype(M, /mob/living/carbon/human))
+		var/mob/living/carbon/human/H = M
+		H.zombieze()
+	M.adjustOxyLoss(3 * removed)
+	M.Weaken(5)
+	M.silent = max(M.silent, 10)
+	remove_self(volume)
 
 
 var/mob/living/carbon/human/next_gas_eye_message = -1
