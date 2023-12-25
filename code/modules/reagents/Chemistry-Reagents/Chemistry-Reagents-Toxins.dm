@@ -680,7 +680,7 @@
 
 /datum/reagent/toxin/corrupting/affect_touch(var/mob/living/carbon/M, var/alien, var/removed)
 	..()
-	if(!(H.wear_mask))
+	if(!(M.wear_mask))
 		if(M.chem_doses[type] < 5)
 			to_chat(M, "<span class='warning'>You feel funny...</span>")
 		else
