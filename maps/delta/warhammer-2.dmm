@@ -137,13 +137,6 @@
 	},
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/farm)
-"alN" = (
-/obj/structure/table/rack/dark,
-/obj/random/exploration,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "amj" = (
 /obj/effect/floor_decal/newcorner/shaft/corner,
 /turf/simulated/floor/factory_floor,
@@ -1856,11 +1849,12 @@
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/farm)
 "cge" = (
-/obj/random/trash,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
+/obj/effect/water/bottom,
+/obj/effect/water/top,
+/turf/simulated/floor/factory_floor{
+	dir = 1
 	},
-/area/cadiaoutpost/oa/engineering/engine/enginewaste)
+/area/cadiaoutpost/new_hive/caves)
 "cgp" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -2309,13 +2303,6 @@
 	},
 /turf/simulated/floor/cult,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"cHf" = (
-/obj/structure/closet/crate/large,
-/obj/random/exploration,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/caves)
 "cHl" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 4
@@ -2686,12 +2673,7 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "daE" = (
-/mob/living/simple_animal/hostile/bear{
-	faction = "ORKZ";
-	name = "hairy ork";
-	color = "green";
-	canmove = 0
-	},
+/obj/item/grenade/frag/high_yield/krak,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
 "daF" = (
@@ -4114,6 +4096,13 @@
 /obj/random/junk,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/new_hive/caves)
+"eGS" = (
+/mob/living/simple_animal/hostile/giant_spider/flesh{
+	faction = "ORKZ";
+	name = "Weird Squig"
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/new_hive/caves)
 "eGY" = (
 /obj/structure/sink{
 	dir = 4;
@@ -5163,11 +5152,6 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"fKI" = (
-/obj/structure/closet/crate,
-/obj/random/exploration,
-/turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/new_hive/caves)
 "fMh" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/airlock/glass_virology{
@@ -6541,7 +6525,6 @@
 /obj/machinery/light/small/red{
 	dir = 4
 	},
-/obj/random/exploration/high,
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/villageinside/lab)
 "hmP" = (
@@ -6598,6 +6581,13 @@
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
+"hrJ" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/simulated/wall/castle,
+/area/cadiaoutpost/new_hive/caves)
 "htc" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 1
@@ -7538,6 +7528,10 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/new_hive/caves)
+"inK" = (
+/obj/mecha/combat/killakan,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/new_hive/caves)
 "inO" = (
 /obj/effect/floor_decal/turf/metal/ten,
 /obj/effect/decal/cleanable/vomit,
@@ -7759,6 +7753,12 @@
 	dir = 1;
 	icon_state = "bulb1"
 	},
+/turf/simulated/floor/factory_floor{
+	dir = 1
+	},
+/area/cadiaoutpost/new_hive/caves)
+"iyz" = (
+/obj/random/trash,
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
@@ -10229,12 +10229,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"lbh" = (
-/mob/living/simple_animal/hostile/smalldemon/zygote,
-/obj/effect/water/bottom,
-/obj/effect/water/top,
-/turf/simulated/floor/exoplanet/water/shallow/lightless,
-/area/cadiaoutpost/new_hive/caves)
 "lbj" = (
 /obj/effect/water/top,
 /obj/effect/water/bottom,
@@ -10686,8 +10680,6 @@
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "lEY" = (
 /obj/structure/closet/crate,
-/obj/random/exploration,
-/obj/random/exploration,
 /obj/effect/water/top,
 /obj/effect/water/bottom,
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
@@ -12750,14 +12742,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/farm)
-"nPN" = (
-/obj/structure/bed/barrack,
-/obj/structure/bed/barrack1,
-/obj/random/exploration,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/villageinside/lab)
 "nPR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/gibs,
@@ -17151,7 +17135,6 @@
 "sqP" = (
 /obj/structure/closet/crate/secure/large,
 /obj/random/exploration,
-/obj/random/exploration,
 /obj/machinery/light/darkblue,
 /turf/unsimulated/floor{
 	icon = 'icons/turf/shuttle.dmi';
@@ -18307,8 +18290,8 @@
 /area/cadiaoutpost/oa/magistratumpost)
 "tzU" = (
 /obj/random/smokes,
-/turf/simulated/floor/tiled/dark{
-	icon_state = "steel"
+/turf/simulated/floor/factory_floor{
+	dir = 1
 	},
 /area/cadiaoutpost/new_hive/caves)
 "tzW" = (
@@ -18986,12 +18969,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
-"uhU" = (
-/obj/random/exploration,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/caves)
 "uiu" = (
 /obj/effect/floor_decal/newcorner/red{
 	dir = 8
@@ -20828,14 +20805,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"wxC" = (
-/obj/random/exploration,
-/obj/random/junk,
-/obj/structure/closet/crate/trashcart,
-/turf/simulated/floor/factory_floor{
-	dir = 1
-	},
-/area/cadiaoutpost/new_hive/caves)
 "wyt" = (
 /obj/machinery/organ_printer/flesh/mapped,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -46328,7 +46297,7 @@ eHq
 xyG
 xyG
 xyG
-nPN
+apB
 apB
 xyG
 gCz
@@ -48380,7 +48349,7 @@ tpQ
 khV
 mMI
 khV
-lbh
+khV
 khV
 tpQ
 tpQ
@@ -48882,7 +48851,7 @@ slE
 tOB
 tpQ
 khV
-lbh
+khV
 khV
 khV
 khV
@@ -49970,10 +49939,10 @@ xLf
 bXi
 eEP
 eEP
-xLf
-xLf
-xLf
-xLf
+oQD
+oQD
+oQD
+oQD
 xLf
 mgn
 mgn
@@ -50222,10 +50191,10 @@ liM
 bXi
 eEP
 eEP
-xLf
+oQD
 fcO
-cge
 fcO
+oQD
 xLf
 xLf
 mgn
@@ -50362,7 +50331,7 @@ slE
 slE
 slE
 cZg
-cZg
+hqB
 cZg
 hqB
 slE
@@ -50614,7 +50583,7 @@ hqB
 slE
 hqB
 rBU
-rBU
+hqB
 qtX
 hqB
 xgu
@@ -51378,7 +51347,7 @@ hqB
 wXG
 hqB
 hqB
-hqB
+inK
 slE
 slE
 tOB
@@ -51628,9 +51597,9 @@ oUG
 gpO
 hqB
 hqB
-hqB
-hqB
 daE
+hqB
+hqB
 hqB
 slE
 slE
@@ -51881,7 +51850,7 @@ sDX
 hqB
 rbD
 hqB
-hqB
+eGS
 hqB
 hqB
 hqB
@@ -52887,9 +52856,9 @@ hqB
 hqB
 hqB
 hqB
-hqB
-hqB
 daE
+eGS
+hqB
 hqB
 hqB
 slE
@@ -52984,7 +52953,7 @@ tOB
 tOB
 tOB
 xLf
-alN
+pQa
 fcO
 blf
 fcO
@@ -54227,11 +54196,11 @@ gYU
 nAd
 liM
 liM
-tOB
-tOB
-tOB
-tOB
-tOB
+kGm
+kGm
+kGm
+kGm
+kGm
 tOB
 tOB
 tOB
@@ -54478,13 +54447,13 @@ gYU
 liM
 liM
 liM
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+kGm
+kGm
+hrJ
+uQT
+uQT
+kGm
+kGm
 tOB
 tOB
 tOB
@@ -54721,7 +54690,7 @@ tOB
 tOB
 tOB
 tOB
-wcj
+kGm
 tuu
 sBg
 sBg
@@ -54731,12 +54700,12 @@ liM
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+kGm
+oCQ
+oCQ
+oCQ
+oCQ
+kGm
 tOB
 tOB
 wcj
@@ -54925,7 +54894,7 @@ tpQ
 tOB
 tpQ
 stz
-wxC
+stz
 stz
 tpQ
 tpQ
@@ -54973,22 +54942,22 @@ tOB
 tOB
 tOB
 tOB
-wcj
-gpl
-gpl
-gpl
-wcj
-wcj
+kGm
+oCQ
+oCQ
+oCQ
+kGm
+kGm
 tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+kGm
+oCQ
+oCQ
+oCQ
+oCQ
+hrJ
 tOB
 tOB
 wcj
@@ -55225,22 +55194,22 @@ tOB
 tOB
 tOB
 tOB
-wcj
-gpl
-gpl
-gpl
-gpl
-wcj
-wcj
+kGm
+oCQ
+oCQ
+oCQ
+oCQ
+kGm
+kGm
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+kGm
+kGm
+oCQ
+oCQ
+oCQ
+oCQ
+kGm
 tOB
 tOB
 wcj
@@ -55413,13 +55382,13 @@ tOB
 tOB
 tOB
 tpQ
-fKI
+dcn
 vNt
 bUB
 vNt
 dfd
 vNt
-fKI
+dcn
 vNt
 tpQ
 lPf
@@ -55477,22 +55446,22 @@ tOB
 tOB
 tOB
 tOB
-wcj
-gpl
-gpl
-gpl
-gpl
-gpl
-wcj
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+kGm
+oCQ
+oCQ
+oCQ
+oCQ
+oCQ
+kGm
+kGm
+hrJ
+oCQ
+oCQ
+oCQ
+oCQ
+oCQ
+oCQ
+oCQ
 tOB
 tOB
 wcj
@@ -55729,23 +55698,23 @@ tOB
 tOB
 tOB
 tOB
-wcj
-gpl
-gpl
-gpl
-gpl
-gpl
-wcj
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+kGm
+oCQ
+oCQ
+oCQ
+oCQ
+oCQ
+kGm
+oCQ
+oCQ
+oCQ
+oCQ
+kGm
+kGm
+kGm
+oCQ
+oCQ
+oCQ
 tOB
 wcj
 wcj
@@ -55981,24 +55950,24 @@ tOB
 tOB
 tOB
 tOB
-wcj
-wcj
-gpl
-gpl
-gpl
-gpl
-gpl
-gpl
+kGm
+kGm
+oCQ
+oCQ
+oCQ
+oCQ
+oCQ
+oCQ
+oCQ
+oCQ
+kGm
+kGm
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+kGm
+hrJ
+oCQ
+oCQ
+oCQ
 tOB
 wcj
 wcj
@@ -56234,24 +56203,24 @@ tOB
 tOB
 tOB
 tOB
-wcj
-gpl
-gpl
+kGm
+oCQ
+oCQ
 khV
 khV
 khV
-gpl
+oCQ
+oCQ
+kGm
+kGm
 tOB
 tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+oCQ
+oCQ
+oCQ
 tOB
 wcj
 wcj
@@ -56292,7 +56261,7 @@ tOB
 tOB
 hqB
 hqB
-cwD
+hqB
 hqB
 hqB
 hqB
@@ -56486,29 +56455,29 @@ tOB
 tOB
 tOB
 tOB
-wcj
-gpl
-gpl
-gpl
+kGm
+oCQ
+oCQ
+oCQ
 khV
 eib
+kGm
+kGm
+kGm
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+oCQ
+oCQ
+oCQ
 wcj
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-wcj
-wcj
-gpl
-dID
-gpl
+oCQ
+iyz
+oCQ
 khV
 khV
 khV
@@ -56738,13 +56707,13 @@ tOB
 tOB
 tOB
 tOB
-wcj
-wcj
-wcj
-gpl
+kGm
+kGm
+kGm
+oCQ
 khV
 khV
-wcj
+kGm
 tOB
 tOB
 tOB
@@ -56755,11 +56724,11 @@ wcj
 wcj
 wcj
 wcj
-wcj
-wcj
+oCQ
+oCQ
 tzU
-gpl
-gpl
+oCQ
+oCQ
 khV
 khV
 khV
@@ -56991,12 +56960,12 @@ tOB
 tOB
 tOB
 tOB
-wcj
-gpl
-gpl
+kGm
+oCQ
+oCQ
 khV
 khV
-wcj
+kGm
 tOB
 tOB
 tOB
@@ -57006,10 +56975,10 @@ wcj
 wcj
 gpl
 khV
-gpl
-dID
-gpl
-gpl
+oCQ
+iyz
+oCQ
+oCQ
 khV
 khV
 khV
@@ -57243,12 +57212,12 @@ tOB
 tOB
 tOB
 tOB
-wcj
-gpl
+kGm
+oCQ
 khV
 khV
 khV
-wcj
+kGm
 tOB
 tOB
 tOB
@@ -57260,9 +57229,9 @@ gpl
 khV
 khV
 khV
-gpl
-gpl
-gpl
+oCQ
+oCQ
+oCQ
 khV
 khV
 khV
@@ -57303,7 +57272,7 @@ wcj
 hqB
 fle
 hqB
-cwD
+hqB
 hqB
 fle
 wcj
@@ -57496,12 +57465,12 @@ tOB
 tOB
 tOB
 wcj
-gpl
+oCQ
 khV
 khV
 khV
+kGm
 wcj
-wcj
 tOB
 tOB
 tOB
@@ -57513,8 +57482,8 @@ gpl
 khV
 khV
 khV
-gpl
-khV
+oCQ
+cge
 gpl
 khV
 khV
@@ -57748,7 +57717,7 @@ tOB
 tOB
 tOB
 wcj
-gpl
+oCQ
 gDl
 gDl
 gDl
@@ -77903,7 +77872,7 @@ wcj
 khV
 wcj
 uhj
-uhU
+iZm
 iZm
 wcj
 tXQ
@@ -80410,7 +80379,7 @@ iZm
 jCe
 tXQ
 iZm
-cHf
+anG
 wcj
 wcj
 tOB

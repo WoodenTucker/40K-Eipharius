@@ -1,4 +1,12 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ac" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "ae" = (
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/rtship1)
@@ -343,6 +351,12 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/service/inn)
+"bp" = (
+/obj/effect/floor_decal/industrial/warning_red,
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "bq" = (
 /obj/structure/sign/portrait_irineu{
 	pixel_x = -32
@@ -396,7 +410,7 @@
 	color = "grey";
 	icon_state = "dark1"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "bA" = (
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tilethick";
@@ -461,6 +475,20 @@
 /obj/structure/catwalk,
 /turf/simulated/open,
 /area/cadiaoutpost/oa/hallway/northern)
+"bM" = (
+/obj/machinery/door/blast/shutters/open{
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 4;
+	icon_state = "plating"
+	},
+/obj/machinery/door/blast/grates{
+	id = "space";
+	name = "Lockdown"
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/shuttle/station1)
 "bN" = (
 /obj/structure/filingcabinet{
 	pixel_x = -8
@@ -671,7 +699,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "cy" = (
 /obj/structure/bed/padded,
 /obj/item/bedsheet/green{
@@ -774,7 +802,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "cO" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -836,7 +864,7 @@
 	color = "grey";
 	icon_state = "wall3"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "de" = (
 /turf/simulated/floor/fancyfloor/carpet/grey{
 	dir = 6
@@ -864,6 +892,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/roguet)
+"dj" = (
+/obj/effect/wingrille_spawn/reinforced{
+	color = "grey"
+	},
+/turf/simulated/floor/factory_floor{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "dk" = (
 /obj/structure/sign/wantedwritten{
 	pixel_x = -32
@@ -891,7 +927,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "dp" = (
 /obj/structure/curtain/open/shower/security{
 	name = "expensive curtain";
@@ -1403,7 +1439,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "fc" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	icon_state = "04";
@@ -1501,6 +1537,15 @@
 	name = "freezer floor"
 	},
 /area/cadiaoutpost/oa/security/armory)
+"fu" = (
+/obj/machinery/door/airlock/multi_tile/metal/imperium{
+	name = "Transport Ship Cockpit";
+	dir = 1
+	},
+/turf/simulated/floor/factory_floor{
+	dir = 4
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "fv" = (
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/farm)
@@ -1556,7 +1601,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "fH" = (
 /obj/effect/floor_decal/newcorner/blue/diagonal,
 /obj/machinery/light/small{
@@ -1597,7 +1642,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "fR" = (
 /obj/machinery/light/blue,
 /obj/effect/floor_decal/newcorner/train{
@@ -1606,7 +1651,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/hangarpact2)
 "fS" = (
 /obj/machinery/body_scanconsole{
 	dir = 4;
@@ -1668,7 +1713,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "ge" = (
 /turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/oa/security/armory)
@@ -1788,6 +1833,14 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
+"gz" = (
+/obj/effect/shuttle_landmark/ferry/bloodpact_start,
+/turf/unsimulated/wall/fakeglass{
+	dir = 10;
+	icon = 'icons/map_project/windows.dmi';
+	icon_state = "r_window"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "gB" = (
 /obj/effect/floor_decal/newcorner/reinforced/corner,
 /obj/machinery/light/small{
@@ -1902,7 +1955,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "gQ" = (
 /obj/structure/table/rack/dark,
 /obj/item/storage/bag/trash,
@@ -2085,7 +2138,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "hC" = (
 /obj/structure/closet/secure_closet/CMO{
 	req_one_access = list()
@@ -2108,6 +2161,18 @@
 /obj/item/device/radio/headset/headset_sci,
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/chapel)
+"hD" = (
+/obj/machinery/light/red{
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/blue{
+	dir = 1
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "t";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "hE" = (
 /obj/structure/hivedecor/bookcase/huge,
 /turf/simulated/floor/darkwood,
@@ -2160,6 +2225,14 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel)
+"hL" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "hN" = (
 /turf/simulated/open,
 /area/cadiaoutpost/oa/farm)
@@ -2330,6 +2403,11 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
+"ip" = (
+/turf/simulated/shuttle/wall/corner/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "ir" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -2358,7 +2436,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "iv" = (
 /obj/machinery/light{
 	dir = 4
@@ -2415,6 +2493,14 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
+"iC" = (
+/obj/machinery/light/red,
+/obj/effect/floor_decal/newcorner/blue,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "t";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "iD" = (
 /obj/effect/floor_decal/industrial/mark,
 /obj/structure/closet/crate/large,
@@ -2456,7 +2542,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "iI" = (
 /obj/structure/railing{
 	dir = 4
@@ -2576,7 +2662,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "je" = (
 /obj/structure/shipdecor{
 	icon_state = "bluedeath"
@@ -2650,7 +2736,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "jm" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 4
@@ -2679,7 +2765,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "jr" = (
 /obj/structure/bed/chair/wood/fancy{
 	dir = 8
@@ -2747,6 +2833,11 @@
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tileendtable";
 	dir = 8
+	},
+/obj/item/paper/crumpled/bloody{
+	name = "Imperial Contract";
+	desc = "This letter is addressed by Lord General Militant Xivan who states the authority of Tau Merchants to partake in trade with fringe colonies -- so long as the ceasefire is maintained between imperial forces and the Tau Empire.";
+	color = "gold"
 	},
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 1
@@ -3007,6 +3098,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"kD" = (
+/turf/simulated/floor/factory_floor{
+	dir = 4
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "kE" = (
 /obj/structure/toilet{
 	dir = 4
@@ -3219,6 +3315,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
+"lv" = (
+/obj/machinery/light/red,
+/obj/effect/floor_decal/turf/metal/seven,
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "ly" = (
 /obj/effect/floor_decal/newcorner/reinforced/corner{
 	dir = 8
@@ -3336,6 +3442,11 @@
 /obj/structure/table/graf/polished_steel,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
+"lN" = (
+/turf/simulated/floor/factory_floor{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "lQ" = (
 /obj/structure/railing,
 /obj/machinery/light/blue{
@@ -3347,7 +3458,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/hangarpact2)
 "lU" = (
 /obj/structure/hivedecor/bookcase/huge{
 	pixel_y = 14;
@@ -3425,6 +3536,16 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel)
+"mk" = (
+/obj/structure/closet/emcloset{
+	color = "grey"
+	},
+/obj/effect/floor_decal/newcorner/blue/solid,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "t";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "ml" = (
 /obj/effect/decal/cleanable/cobweb,
 /turf/simulated/floor/tiled/dark{
@@ -3490,6 +3611,13 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
+"my" = (
+/obj/structure/bed/chair,
+/obj/effect/floor_decal/turf/metal/four,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "mz" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 4
@@ -3700,7 +3828,14 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
+"nr" = (
+/turf/unsimulated/wall/fakeglass{
+	dir = 5;
+	icon = 'icons/map_project/windows.dmi';
+	icon_state = "r_window"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "ns" = (
 /obj/structure/bed/barrack,
 /obj/structure/bed/barrack1,
@@ -3747,7 +3882,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "nz" = (
 /obj/structure/bed/chair,
 /turf/simulated/floor/tiled{
@@ -3765,13 +3900,19 @@
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/hangarpact2)
 "nC" = (
 /obj/structure/bed/chair/wood/simple{
 	dir = 4
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel)
+"nD" = (
+/obj/effect/floor_decal/turf/metal/six,
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/hangarpact2)
 "nE" = (
 /obj/structure/flora/pottedplant{
 	icon = "icons/map_project/furniture_and_decor.dmi";
@@ -3930,6 +4071,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/armory)
+"ol" = (
+/obj/effect/floor_decal/turf/metal/six,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "on" = (
 /obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
@@ -4041,7 +4188,7 @@
 	icon_state = "propulsion"
 	},
 /turf/simulated/floor/plating/reinforced,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "oI" = (
 /obj/structure/bed{
 	icon = "icons/map_project/furniture_and_decor.dmi";
@@ -4094,7 +4241,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "oP" = (
 /obj/item/fluff_items/bfg,
 /obj/structure/table/graf/wood_office_table{
@@ -4109,10 +4256,27 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
+"oS" = (
+/obj/effect/floor_decal/turf/metal/two,
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "oT" = (
 /obj/structure/catwalk,
 /turf/simulated/open,
 /area/cadiaoutpost/oa/villageinside)
+"oU" = (
+/obj/machinery/door/blast/shutters{
+	dir = 8
+	},
+/turf/simulated/floor/factory_floor{
+	dir = 4
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "oV" = (
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/oa/farm)
@@ -4226,7 +4390,7 @@
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "pr" = (
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/villageinside)
@@ -4293,6 +4457,13 @@
 	icon_state = "r_window"
 	},
 /area/cadiaoutpost/oa/shuttle/roguet)
+"pC" = (
+/obj/structure/hivedecor/xenos,
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "pD" = (
 /obj/structure/flora/yes/cross,
 /turf/simulated/floor/stone/old4,
@@ -4321,7 +4492,12 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
+"pO" = (
+/turf/simulated/floor/factory_floor{
+	dir = 4
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "pP" = (
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/armory)
@@ -4534,6 +4710,14 @@
 /obj/effect/water/top,
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/new_hive/hive_city)
+"qI" = (
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "qL" = (
 /obj/structure/hivedecor/statue3{
 	pixel_x = -15
@@ -4724,7 +4908,19 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+"rG" = (
+/obj/machinery/light/red{
+	dir = 1
+	},
+/obj/effect/floor_decal/turf/metal/ten,
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "rI" = (
 /turf/unsimulated/mineral{
 	icon = 'icons/turf/wall.dmi';
@@ -4747,6 +4943,9 @@
 /obj/effect/floor_decal/industrial/mark,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/armory)
+"rL" = (
+/turf/simulated/wall/concrete,
+/area/cadiaoutpost/oa/shuttle/station1)
 "rM" = (
 /obj/effect/floor_decal/turf/metal/five,
 /turf/simulated/floor/tiled/dark{
@@ -4811,6 +5010,16 @@
 /obj/machinery/door/airlock/glass_medical,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/armory)
+"rY" = (
+/obj/structure/bed/chair,
+/obj/machinery/light/red{
+	dir = 1
+	},
+/obj/effect/floor_decal/turf/metal/four,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "rZ" = (
 /turf/unsimulated/mineral{
 	icon = 'icons/turf/wall.dmi';
@@ -4922,6 +5131,12 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/armory)
+"su" = (
+/obj/effect/floor_decal/newcorner/reinforced,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "sv" = (
 /obj/structure/bed/chair{
 	dir = 8;
@@ -5119,6 +5334,10 @@
 /obj/structure/flora/tree/pine,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/villageinside)
+"th" = (
+/obj/structure/table/graf/rich_table,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/hallway/northern)
 "ti" = (
 /obj/structure/lattice,
 /obj/effect/floor_decal/turf/piping{
@@ -5183,7 +5402,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "tq" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1
@@ -5275,7 +5494,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "tL" = (
 /obj/effect/floor_decal/newcorner/polar{
 	dir = 4
@@ -5304,7 +5523,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/hangarpact2)
 "tP" = (
 /turf/simulated/floor/factory_floor{
 	dir = 1
@@ -5342,7 +5561,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "tX" = (
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
@@ -5370,6 +5589,15 @@
 	icon_state = "dark1"
 	},
 /area/cadiaoutpost/oa/shuttle/roguet)
+"ub" = (
+/obj/structure/bed/chair{
+	dir = 1
+	},
+/obj/effect/floor_decal/turf/metal/three,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "ue" = (
 /obj/machinery/computer/planetarytrade,
 /turf/simulated/floor/ship_floor/steel,
@@ -5505,7 +5733,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "uB" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/mark,
@@ -5678,7 +5906,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "vj" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 4
@@ -6349,7 +6577,7 @@
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/hangarpact2)
 "xK" = (
 /obj/structure/sink{
 	dir = 8;
@@ -6592,7 +6820,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "yK" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 6;
@@ -6844,7 +7072,7 @@
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/hangarpact2)
 "zE" = (
 /obj/effect/floor_decal/spline/fancy/wood/corner{
 	dir = 8
@@ -6959,7 +7187,16 @@
 	color = "grey";
 	dir = 8
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+"Af" = (
+/obj/machinery/button/remote/blast_door{
+	name = "LOCKDOWN!!!";
+	pixel_y = 32;
+	req_one_access = list(331);
+	id = "lockdown2"
+	},
+/turf/simulated/wall/concrete/strong,
+/area/cadiaoutpost/oa/hallway/northern)
 "Ag" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -7034,6 +7271,14 @@
 	name = "strange wall"
 	},
 /area/cadiaoutpost/rtship1)
+"At" = (
+/obj/structure/table/steel_reinforced,
+/obj/effect/floor_decal/newcorner/blue/solid,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "t";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Au" = (
 /obj/structure/sink{
 	dir = 8;
@@ -7079,6 +7324,11 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/farm)
+"AG" = (
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "AH" = (
 /obj/machinery/button/remote/blast_door/id_scan{
 	id = "noblepod";
@@ -7165,8 +7415,12 @@
 	dir = 4;
 	icon_state = "plating"
 	},
+/obj/machinery/door/blast/grates{
+	id = "space";
+	name = "Lockdown"
+	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "Ba" = (
 /obj/structure/closet/hive/wood,
 /obj/item/clothing/under/abaya,
@@ -7192,7 +7446,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "Bc" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -7235,7 +7489,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "Bi" = (
 /obj/structure/railing{
 	dir = 8;
@@ -7335,7 +7589,7 @@
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/hangarpact2)
 "BI" = (
 /obj/effect/floor_decal/newcorner/reinforced/corner,
 /turf/simulated/floor/tiled,
@@ -7406,7 +7660,7 @@
 	icon = 'icons/map_project/windows.dmi';
 	icon_state = "r_window"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "BU" = (
 /obj/structure/table/rack,
 /obj/random/loot/goodweapon,
@@ -7578,7 +7832,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "CJ" = (
 /turf/simulated/floor/darkwood{
 	color = "purple"
@@ -7600,7 +7854,7 @@
 	icon = 'icons/map_project/windows.dmi';
 	icon_state = "r_window"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "CN" = (
 /obj/effect/floor_decal/newcorner/plating/quarter{
 	dir = 1
@@ -7632,7 +7886,7 @@
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/hangarpact2)
 "CW" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 6
@@ -7833,7 +8087,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "DM" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 8
@@ -8053,6 +8307,20 @@
 /obj/effect/floor_decal/turf/brick/two,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
+"ED" = (
+/turf/simulated/shuttle/wall/corner/dark{
+	color = "grey";
+	dir = 8
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
+"EE" = (
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "EG" = (
 /obj/effect/floor_decal/newcorner/shaft/corner,
 /turf/simulated/floor/tiled{
@@ -8334,6 +8602,14 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/armory)
+"FH" = (
+/obj/structure/shuttle/engine/propulsion{
+	color = "grey";
+	dir = 4;
+	icon_state = "propulsion"
+	},
+/turf/simulated/floor/plating/reinforced,
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "FJ" = (
 /obj/machinery/door/airlock/cone{
 	name = "Toilet";
@@ -8487,7 +8763,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "Ga" = (
 /obj/structure/table/rack/shelf{
 	color = "grey"
@@ -8698,6 +8974,16 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/villageinside)
+"GH" = (
+/obj/structure/shipdecor{
+	icon_state = "off"
+	},
+/obj/effect/floor_decal/newcorner/blue/solid,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "t";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "GI" = (
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/northern)
@@ -8841,6 +9127,13 @@
 	icon_state = "wood_1tilethick";
 	dir = 8
 	},
+/obj/machinery/button/remote/blast_door{
+	name = "LOCKDOWN!!!";
+	req_one_access = list(331);
+	id = "space'";
+	pixel_x = 30;
+	pixel_y = 22
+	},
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 1
 	},
@@ -8893,7 +9186,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "Hs" = (
 /obj/structure/catwalk,
 /obj/structure/railing{
@@ -9013,7 +9306,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/hangarpact2)
 "HX" = (
 /obj/structure/railing{
 	dir = 1;
@@ -9313,6 +9606,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/armory)
+"Jn" = (
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/hangarpact2)
 "Js" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -9396,7 +9694,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "JH" = (
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/darkwood,
@@ -9844,7 +10142,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "Lt" = (
 /obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/iv_drip,
@@ -10071,6 +10369,11 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"LY" = (
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "LZ" = (
 /obj/structure/table/rack/shelf{
 	color = "grey"
@@ -10460,6 +10763,14 @@
 	icon_state = "r_window"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
+"Nv" = (
+/obj/effect/floor_decal/newcorner/blue/solid,
+/obj/machinery/computer/shuttle_control/ferry/bloodpact,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "t";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "Nw" = (
 /obj/structure/grille/metal_bars,
 /turf/simulated/floor/factory_floor{
@@ -10745,7 +11056,7 @@
 /turf/simulated/shuttle/wall/corner/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "OD" = (
 /obj/structure/curtain/open/shower,
 /turf/simulated/floor/factory_floor,
@@ -10827,6 +11138,15 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel)
+"OR" = (
+/obj/structure/bed/chair/comfy/captain{
+	dir = 8
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "t";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "OS" = (
 /turf/simulated/floor/wood{
 	color = "grey"
@@ -10877,7 +11197,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "Pe" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -11080,6 +11400,16 @@
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/hive_city)
+"Qb" = (
+/obj/structure/bed/chair{
+	dir = 1
+	},
+/obj/machinery/light/red,
+/obj/effect/floor_decal/turf/metal/three,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Qc" = (
 /obj/effect/floor_decal/newcorner/polar{
 	dir = 8
@@ -11129,6 +11459,14 @@
 	},
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/inn)
+"Qp" = (
+/obj/effect/floor_decal/newcorner/train{
+	dir = 8
+	},
+/turf/simulated/floor/factory_floor{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "Qq" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 5
@@ -11227,7 +11565,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "QD" = (
 /obj/structure/closet/hive/wood,
 /obj/effect/decal/cleanable/cobweb,
@@ -11246,7 +11584,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "QJ" = (
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 4
@@ -11360,6 +11698,9 @@
 /obj/effect/floor_decal/newcorner/trench_flooring,
 /turf/simulated/floor/trench,
 /area/cadiaoutpost/new_hive/hive_city)
+"Rd" = (
+/turf/simulated/wall/concrete,
+/area/cadiaoutpost/oa/hangarpact2)
 "Rf" = (
 /obj/structure/flora/pottedplant{
 	icon = "icons/map_project/furniture_and_decor.dmi";
@@ -11394,7 +11735,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "Rm" = (
 /obj/structure/curtain/open/shower/security{
 	name = "expensive curtain";
@@ -11501,7 +11842,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "RC" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -11526,7 +11867,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "RK" = (
 /obj/structure/bed/chair/wood/simple{
 	dir = 1
@@ -11536,6 +11877,13 @@
 	pixel_y = 32;
 	req_one_access = list(331);
 	id = "lockdown2"
+	},
+/obj/machinery/button/remote/blast_door{
+	name = "LOCKDOWN!!!";
+	req_one_access = list(331);
+	id = "space'";
+	pixel_y = 44;
+	pixel_x = -15
 	},
 /turf/simulated/floor/fancyfloor/carpet/middle,
 /area/cadiaoutpost/oa/hallway/northern)
@@ -11640,7 +11988,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "RZ" = (
 /obj/machinery/light/small,
 /obj/effect/floor_decal/newcorner/polar,
@@ -11891,6 +12239,12 @@
 	icon_state = "wall3"
 	},
 /area/cadiaoutpost/oa/farm)
+"ST" = (
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "SU" = (
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/tiled/dark,
@@ -11959,7 +12313,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "Tg" = (
 /obj/machinery/light,
 /obj/effect/floor_decal/newcorner/plating,
@@ -11975,7 +12329,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "Tj" = (
 /obj/structure/torchwall{
 	pixel_y = 30
@@ -12101,6 +12455,14 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/villageinside)
+"TK" = (
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 1
+	},
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "TM" = (
 /turf/simulated/floor/fancyfloor/carpet,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
@@ -12266,7 +12628,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "Uv" = (
 /obj/effect/floor_decal/newcorner/green/quarter{
 	dir = 1
@@ -12370,7 +12732,7 @@
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "UO" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -12445,7 +12807,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/hangarpact2)
 "Vd" = (
 /obj/structure/catwalk,
 /obj/structure/railing{
@@ -12565,7 +12927,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "VC" = (
 /obj/effect/floor_decal/newcorner/polar/quarter{
 	dir = 1
@@ -12597,6 +12959,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/armory)
+"VF" = (
+/obj/effect/floor_decal/newcorner/blue{
+	dir = 4
+	},
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "t";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "VG" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/closet/hive/metal{
@@ -12763,6 +13134,9 @@
 /obj/effect/landmark/costume/butler,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/farm)
+"Wk" = (
+/turf/simulated/open,
+/area/cadiaoutpost/oa/shuttle/station1)
 "Wl" = (
 /obj/effect/floor_decal/newcorner/reinforced/corner{
 	dir = 4
@@ -12875,7 +13249,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "WI" = (
 /obj/item/device/healthanalyzer{
 	pixel_x = 8
@@ -12928,7 +13302,7 @@
 	color = "grey";
 	icon_state = "dark1"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "WT" = (
 /obj/structure/closet/hive/wood,
 /obj/effect/decal/cleanable/cobweb{
@@ -13458,7 +13832,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "YK" = (
 /obj/structure/table/graf/polished_table,
 /turf/simulated/floor/ceramic/old,
@@ -13473,7 +13847,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "YQ" = (
 /obj/structure/curtain/open/shower,
 /turf/simulated/floor/tiled/freezer{
@@ -13752,6 +14126,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"ZM" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "ZO" = (
 /obj/structure/bed/chair/wood/fancy,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -41351,7 +41733,7 @@ vt
 vt
 vt
 vt
-eP
+Rd
 tO
 tO
 tO
@@ -41360,19 +41742,19 @@ tO
 tO
 tO
 tO
-eP
-eP
-eP
-eP
-tO
-tO
-tO
-tO
-tO
-tO
-tO
-tO
-eP
+Rd
+rL
+rL
+rL
+oU
+oU
+oU
+oU
+oU
+oU
+oU
+oU
+rL
 vt
 vt
 vt
@@ -41603,7 +41985,7 @@ vt
 vt
 vt
 vt
-eP
+Rd
 BH
 BH
 BH
@@ -41613,18 +41995,18 @@ BH
 BH
 BH
 lQ
-UB
-UB
+Wk
+Wk
 iu
-BH
-BH
-BH
-BH
-BH
-BH
-BH
-BH
-eP
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+rL
 vt
 vt
 vt
@@ -41855,28 +42237,28 @@ vt
 vt
 vt
 vt
-eP
-fq
+Rd
+Jn
 Ad
-dc
-BT
-CL
-dc
-OC
-fq
+ST
+gz
+nr
+ST
+ip
+Jn
 HU
-UB
-UB
+Wk
+Wk
 RH
-fq
-Ad
+AG
+ED
 dc
 BT
 CL
 dc
 OC
-fq
-eP
+AG
+rL
 vt
 vt
 vt
@@ -42107,28 +42489,28 @@ vt
 vt
 vt
 vt
-eP
-fq
-dc
+Rd
+Jn
+ST
 rF
-tW
-tW
+Nv
+GH
 rF
-dc
-fq
+ST
+Jn
 HU
-UB
-UB
+Wk
+Wk
 RH
-fq
+AG
 dc
-rF
+At
 tW
 tW
-rF
+At
 dc
-fq
-eP
+AG
+rL
 vt
 vt
 vt
@@ -42359,28 +42741,28 @@ vt
 vt
 vt
 vt
-eP
+Rd
 xF
-dc
-WH
+ST
+hD
 jd
 jd
-CI
-dc
-fq
+iC
+ST
+Jn
 HU
-UB
-UB
+Wk
+Wk
 RH
-fq
+AG
 dc
 WH
-jd
-jd
+OR
+OR
 CI
 dc
 UN
-eP
+rL
 vt
 vt
 vt
@@ -42611,28 +42993,28 @@ vt
 vt
 vt
 vt
-eP
+Rd
 Ad
-dc
+ST
 tp
-tK
-tK
+VF
+VF
 tp
-dc
-OC
+ST
+ip
 HU
-UB
-UB
+Wk
+Wk
 RH
-Ad
+ED
 dc
-tp
+mk
 tK
 tK
-tp
+mk
 dc
 OC
-eP
+rL
 vt
 vt
 vt
@@ -42863,28 +43245,28 @@ vt
 vt
 vt
 vt
-eP
-dc
-dc
-dc
-sY
-oO
-dc
-dc
-dc
+Rd
+ST
+ST
+ST
+kD
+fu
+ST
+ST
+ST
 HU
-UB
-UB
+Wk
+Wk
 RH
 dc
+pC
 dc
-dc
-sY
+pO
 oO
 dc
 dc
-dc
-eP
+pC
+rL
 UB
 UB
 UB
@@ -43115,28 +43497,28 @@ vt
 vt
 vt
 vt
-eP
-dc
-dc
+Rd
+ST
+ST
 RX
 Ls
 Ls
 fP
-dc
-dc
+ST
+ST
 HU
-UB
-UB
+Wk
+Wk
 RH
 dc
 dc
-RX
-Ls
-Ls
-fP
+rY
+ol
+ol
+Qb
 dc
 dc
-eP
+rL
 UB
 UB
 UB
@@ -43367,28 +43749,28 @@ vt
 vt
 vt
 vt
-eP
-dc
-dc
-iH
+Rd
+ST
+ST
+my
 Ls
 Ls
-fb
-dc
-dc
+ub
+ST
+ST
 HU
-UB
-UB
+Wk
+Wk
 RH
 dc
-dc
+pC
 iH
-Ls
-Ls
+ol
+ol
 fb
 dc
-dc
-eP
+pC
+rL
 UB
 UB
 UB
@@ -43619,28 +44001,28 @@ vt
 vt
 vt
 vt
-eP
-dc
-dc
-iH
+Rd
+ST
+ST
+my
 Ls
 Ls
-fb
-dc
-dc
+ub
+ST
+ST
 HU
-UB
-UB
+Wk
+Wk
 RH
 dc
 dc
 iH
-Ls
-Ls
+ol
+ol
 fb
 dc
 dc
-eP
+rL
 UB
 UB
 UB
@@ -43871,28 +44253,28 @@ vt
 vt
 vt
 vt
-eP
-oH
-dc
-iH
+Rd
+FH
+ST
+my
 Ls
 Ls
-fb
-dc
-oH
+ub
+ST
+FH
 HU
-UB
-UB
+Wk
+Wk
 RH
 oH
 dc
 iH
-Ls
-Ls
+ol
+ol
 fb
 dc
 oH
-eP
+rL
 UB
 UB
 UB
@@ -44123,28 +44505,28 @@ vt
 vt
 vt
 vt
-eP
+Rd
 xF
-dc
+ST
 fG
 DL
 DL
-RA
-dc
-fq
+lv
+ST
+Jn
 HU
-UB
-UB
+Wk
+Wk
 RH
-fq
+AG
 dc
-fG
-DL
-DL
+rG
+oS
+oS
 RA
 dc
 UN
-eP
+rL
 UB
 UB
 UB
@@ -44375,28 +44757,28 @@ vt
 vt
 vt
 vt
-eP
-fq
-dc
+Rd
+Jn
+ST
 AY
 AY
 AY
 AY
-dc
-fq
+ST
+Jn
 HU
-UB
-UB
+Wk
+Wk
 RH
-fq
+AG
 dc
-AY
-AY
-AY
-AY
+bM
+bM
+bM
+bM
 dc
-fq
-eP
+AG
+rL
 UB
 UB
 UB
@@ -44627,28 +45009,28 @@ vt
 vt
 vt
 vt
-eP
-fq
+Rd
+Jn
 CR
-pq
-pq
-pq
-pq
+nD
+nD
+nD
+nD
 zD
-fq
+Jn
 nA
-UB
-UB
+Wk
+Wk
 VB
-fq
-CR
+AG
+bp
 pq
 pq
 pq
 pq
-zD
-fq
-eP
+TK
+AG
+rL
 UB
 UB
 UB
@@ -44879,7 +45261,7 @@ vt
 vt
 vt
 vt
-eP
+Rd
 Vc
 Vc
 Vc
@@ -44888,19 +45270,19 @@ Vc
 Vc
 Vc
 fR
-eP
+Rd
 Bb
 Bb
-eP
+rL
 Bf
-Vc
-Vc
-Vc
-Vc
-Vc
-Vc
-Vc
-eP
+Qp
+Qp
+Qp
+Qp
+Qp
+Qp
+Qp
+rL
 UB
 UB
 UB
@@ -45131,7 +45513,7 @@ vt
 vt
 vt
 vt
-eP
+rL
 cN
 cN
 cN
@@ -45141,8 +45523,8 @@ cN
 cN
 cN
 Pd
-Xd
-Xd
+LY
+LY
 gP
 cN
 cN
@@ -45152,7 +45534,7 @@ cN
 cN
 cN
 cN
-eP
+rL
 UB
 UB
 UB
@@ -45285,8 +45667,8 @@ cF
 cF
 cF
 jY
-Lm
-Qh
+th
+Af
 Dw
 Ot
 LL
@@ -45383,28 +45765,28 @@ vt
 vt
 vt
 vt
-eP
-Xd
-Xd
-wu
-sx
-sx
-sx
-Ss
-Xd
-wu
-sx
-sx
-Ss
-Xd
-wu
-sx
-sx
-sx
-Ss
-Xd
-Xd
-eP
+rL
+LY
+LY
+EE
+ZM
+ZM
+ZM
+qI
+LY
+EE
+ZM
+ZM
+qI
+LY
+EE
+ZM
+ZM
+ZM
+qI
+LY
+LY
+rL
 PN
 PN
 AN
@@ -45635,28 +46017,28 @@ vt
 vt
 vt
 vt
-eP
-Xd
-Xd
+rL
+LY
+LY
 vi
 Rl
 Rl
 Rl
 cw
-Xd
-Ix
+LY
+su
 yJ
 Rl
-JS
-Xd
+hL
+LY
 vi
 Rl
 Rl
 Rl
 cw
-Xd
-Xd
-eP
+LY
+LY
+rL
 PN
 SD
 Jt
@@ -45887,28 +46269,28 @@ vt
 vt
 vt
 vt
-eP
-Xd
-Xd
-eP
-eP
-eP
-eP
-eP
-tP
+rL
+LY
+LY
+rL
+rL
+rL
+rL
+rL
+lN
 Ti
-eP
-eP
-tP
+rL
+rL
+lN
 Ti
-eP
-eP
-eP
-eP
-eP
-Xd
-Xd
-eP
+rL
+rL
+rL
+rL
+rL
+LY
+LY
+rL
 PN
 Sn
 zN
@@ -46139,13 +46521,13 @@ vt
 vt
 vt
 vt
-eP
-Xd
+rL
+LY
 jq
-eP
-UB
-UB
-eP
+rL
+Wk
+Wk
+rL
 ny
 Hr
 Hr
@@ -46154,13 +46536,13 @@ do
 Hr
 Hr
 np
-eP
-UB
-UB
-eP
+rL
+Wk
+Wk
+rL
 ga
-Xd
-eP
+LY
+rL
 PN
 ZP
 GE
@@ -46391,13 +46773,13 @@ vt
 vt
 vt
 vt
-eP
-Xd
-Xd
-Xd
-Xd
-Xd
-eP
+rL
+LY
+LY
+LY
+LY
+LY
+rL
 hB
 WP
 bz
@@ -46406,13 +46788,13 @@ QI
 WP
 bz
 YI
-eP
-Xd
-Xd
-Xd
-Xd
-Xd
-eP
+rL
+LY
+LY
+LY
+LY
+LY
+rL
 PN
 PN
 PN
@@ -46643,13 +47025,13 @@ vt
 vt
 vt
 vt
-eP
-Xd
-Xd
-Xd
-Xd
-Xd
-eP
+rL
+LY
+LY
+LY
+LY
+LY
+rL
 QC
 WP
 bz
@@ -46658,13 +47040,13 @@ QI
 WP
 bz
 YI
-eP
-Xd
-Xd
-Xd
-Xd
-Xd
-eP
+rL
+LY
+LY
+LY
+LY
+LY
+rL
 PN
 qz
 qz
@@ -46895,13 +47277,13 @@ vt
 vt
 vt
 vt
-eP
-Xd
-Xd
+rL
+LY
+LY
 jl
-Xd
-Xd
-eP
+LY
+LY
+rL
 hB
 WP
 bz
@@ -46910,13 +47292,13 @@ QI
 WP
 bz
 YI
-eP
-Xd
-Xd
+rL
+LY
+LY
 jl
-Xd
-Xd
-eP
+LY
+LY
+rL
 PN
 qz
 qz
@@ -47147,13 +47529,13 @@ vt
 vt
 vt
 vt
-eP
-eP
-eP
-eP
-eP
-eP
-eP
+rL
+rL
+rL
+rL
+rL
+rL
+rL
 Te
 YM
 YM
@@ -47162,13 +47544,13 @@ FZ
 YM
 YM
 uA
-eP
-eP
-eP
-eP
-eP
-eP
-eP
+rL
+rL
+rL
+rL
+rL
+rL
+rL
 PN
 PN
 PN
@@ -47399,28 +47781,28 @@ vt
 vt
 vt
 vt
-UB
-UB
-UB
-UB
-UB
-UB
-eP
-eP
-AN
-AN
-AN
-AN
-AN
-AN
-eP
-eP
-UB
-UB
-UB
-UB
-UB
-UB
+Wk
+Wk
+Wk
+Wk
+Wk
+Wk
+rL
+rL
+dj
+dj
+dj
+dj
+dj
+dj
+rL
+rL
+Wk
+Wk
+Wk
+Wk
+Wk
+Wk
 UB
 UB
 UB

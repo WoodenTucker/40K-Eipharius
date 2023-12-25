@@ -4,7 +4,7 @@
 	icon_state = "tau"
 	initial_icon = "tau"
 	step_in = 4
-	health = 1000
+	health = 2000
 	deflect_chance = 40
 	damage_absorption = list("brute"=1.4,"fire"=1,"bullet"=1.4,"laser"=0.7,"energy"=0.9,"bomb"=0.75)
 	max_temperature = 30000

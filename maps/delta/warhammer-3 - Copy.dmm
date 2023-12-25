@@ -3636,9 +3636,12 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "dCV" = (
-/obj/effect/shuttle_landmark/ferry/bloodpact_end,
-/turf/simulated/floor/plating,
-/area/cadiaoutpost/oa/hangarpact2)
+/obj/structure/hivedecor/xenos,
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
+	},
+/area/cadiaoutpost/oa/villageinside)
 "dDc" = (
 /obj/structure/sign/mechanicus{
 	pixel_x = 32
@@ -9656,8 +9659,11 @@
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/gatehouse)
 "jau" = (
-/turf/simulated/floor/plating,
-/area/cadiaoutpost/oa/hangarpact2)
+/obj/structure/statue/prayer{
+	density = 0
+	},
+/turf/simulated/floor/concrete,
+/area/cadiaoutpost/new_hive/hive_city)
 "jax" = (
 /obj/item/reagent_containers/food/condiment/small/saltshaker,
 /obj/item/reagent_containers/food/condiment/small/peppermill{
@@ -13402,6 +13408,9 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/newcorner/reinforced/corner,
+/obj/structure/sign/imperial{
+	pixel_x = 32
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -14405,6 +14414,9 @@
 	},
 /obj/item/storage/briefcase,
 /obj/effect/floor_decal/turf/splate,
+/obj/structure/sign/imperial{
+	pixel_x = 32
+	},
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
@@ -17413,6 +17425,9 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/turf/splate,
+/obj/structure/sign/imperial{
+	pixel_x = 32
+	},
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
@@ -20287,6 +20302,10 @@
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 4;
 	icon_state = "plating"
+	},
+/obj/machinery/door/blast/grates{
+	id = "space";
+	name = "Lockdown"
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/villageinside)
@@ -23204,7 +23223,7 @@
 /area/cadiaoutpost/oa/bridge/hallway)
 "vGB" = (
 /turf/simulated/floor,
-/area/cadiaoutpost/oa/hangarpact2)
+/area/cadiaoutpost/new_hive/hive_city)
 "vGC" = (
 /obj/item/pyre/self_lit{
 	invisibility = 100;
@@ -23690,6 +23709,10 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
+"wfY" = (
+/obj/item/device/radio/beacon,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/new_hive/hive_city)
 "wgi" = (
 /turf/simulated/floor/darksteel_floor{
 	dir = 1
@@ -24961,8 +24984,20 @@
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/bridge/hallway)
 "xBZ" = (
-/turf/unsimulated/mineral,
-/area/cadiaoutpost/oa/hangarpact2)
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/obj/machinery/button/remote/blast_door{
+	name = "LOCKDOWN!!!";
+	req_one_access = list(331);
+	id = "space'";
+	pixel_y = 44;
+	pixel_x = -15
+	},
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/oa/villageinside)
 "xCq" = (
 /turf/simulated/floor/fancyfloor/carpet,
 /area/cadiaoutpost/oa/bridge/hallway)
@@ -25439,6 +25474,9 @@
 	},
 /obj/effect/floor_decal/newcorner/reinforced/corner{
 	dir = 1
+	},
+/obj/structure/sign/imperial{
+	pixel_x = 32
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -32239,13 +32277,13 @@ bwI
 bwI
 qiL
 qiL
-jau
-jau
-jau
-jau
-jau
-jau
-jau
+bFi
+bFi
+bFi
+bFi
+bFi
+bFi
+bFi
 vGB
 vGB
 vGB
@@ -32491,13 +32529,13 @@ bwI
 bwI
 bwI
 bwI
-jau
-jau
-jau
-jau
-jau
-jau
-jau
+bFi
+bFi
+bFi
+bFi
+bFi
+bFi
+bFi
 vGB
 vGB
 vGB
@@ -32743,13 +32781,13 @@ bwI
 bwI
 bwI
 bwI
-jau
-jau
-jau
-jau
-jau
-jau
-jau
+bFi
+bFi
+bFi
+bFi
+bFi
+bFi
+bFi
 vGB
 vGB
 vGB
@@ -32995,13 +33033,13 @@ bwI
 bwI
 bwI
 bwI
-jau
-jau
-jau
-jau
-jau
-jau
-jau
+bFi
+bFi
+bFi
+bFi
+bFi
+bFi
+bFi
 vGB
 vGB
 vGB
@@ -33247,13 +33285,13 @@ bwI
 bwI
 bwI
 bwI
-jau
-jau
-jau
-dCV
-jau
-jau
-jau
+bFi
+bFi
+bFi
+bFi
+bFi
+bFi
+bFi
 vGB
 vGB
 vGB
@@ -34518,7 +34556,7 @@ qiL
 qiL
 iFU
 qiL
-xBZ
+qiL
 qiL
 eTh
 eTh
@@ -54444,7 +54482,7 @@ nSI
 nSI
 pLj
 bvd
-xov
+dCV
 nDd
 ikK
 ikK
@@ -54702,7 +54740,7 @@ oUm
 yiP
 xov
 xov
-xov
+dCV
 bYb
 qxP
 keE
@@ -54960,7 +54998,7 @@ qxP
 keE
 vzT
 xov
-xov
+dCV
 ata
 rLC
 rLC
@@ -55200,19 +55238,19 @@ nSI
 oiV
 pLj
 xov
-xov
+dCV
 rrz
 rLC
 rLC
 iDK
 xov
-xov
+dCV
 bYb
 qxP
 keE
 vzT
 xov
-xov
+dCV
 rrz
 rLC
 rLC
@@ -55470,7 +55508,7 @@ rLC
 rLC
 iDK
 xov
-xov
+dCV
 pLj
 nSI
 nSI
@@ -56975,7 +57013,7 @@ fqO
 dMa
 ncg
 fqO
-yiD
+xBZ
 yiD
 yiD
 yiD
@@ -57545,8 +57583,8 @@ uPx
 uTV
 bqh
 pLj
-pLj
-pLj
+dqv
+dqv
 pLj
 iqE
 iqE
@@ -57797,9 +57835,9 @@ bqh
 bqh
 bqh
 pLj
-pLj
-pLj
 iqE
+iqE
+jau
 iqE
 iqE
 iqE
@@ -58049,7 +58087,7 @@ pLj
 pLj
 pLj
 pLj
-pLj
+iqE
 iqE
 iqE
 iqE
@@ -74960,11 +74998,11 @@ jXA
 jXA
 iFU
 dqv
-dqv
+eTh
 vJN
 vMj
 iOH
-dqv
+eTh
 eTh
 eTh
 bDp
@@ -75212,7 +75250,7 @@ jXA
 bXT
 iFU
 dqv
-dqv
+eTh
 vJN
 vMj
 pxl
@@ -75954,7 +75992,7 @@ sFI
 quC
 fNi
 eTh
-dqv
+eTh
 dqv
 iFU
 iFU
@@ -75968,7 +76006,7 @@ jXA
 bXT
 iFU
 dqv
-dqv
+eTh
 ivO
 ivO
 bDp
@@ -75978,7 +76016,7 @@ eTh
 eTh
 dqv
 dqv
-dqv
+eTh
 eTh
 eTh
 eTh
@@ -76207,8 +76245,8 @@ fQW
 fNi
 eTh
 eTh
-dqv
-dqv
+eTh
+eTh
 iFU
 dqv
 ydo
@@ -76220,7 +76258,7 @@ owA
 iFU
 iFU
 dqv
-dqv
+eTh
 ivO
 ivO
 ivO
@@ -76229,9 +76267,9 @@ ecF
 eTh
 eTh
 eTh
-dqv
-dqv
-dqv
+eTh
+eTh
+eTh
 eTh
 eTh
 eTh
@@ -76459,8 +76497,8 @@ quC
 mDt
 ivO
 eTh
-dqv
-dqv
+eTh
+eTh
 iFU
 iFU
 jXA
@@ -76472,7 +76510,7 @@ iFU
 iFU
 dqv
 dqv
-dqv
+eTh
 ivO
 ivO
 hXh
@@ -76483,8 +76521,8 @@ lsq
 iFU
 iFU
 iFU
-dqv
-dqv
+eTh
+eTh
 eTh
 eTh
 eTh
@@ -76712,8 +76750,8 @@ fNi
 eTh
 eTh
 eTh
-dqv
-dqv
+eTh
+eTh
 iFU
 mCK
 iFA
@@ -76721,8 +76759,8 @@ iFU
 iFU
 iFU
 iFU
-dqv
-dqv
+eTh
+eTh
 eTh
 eTh
 ivO
@@ -76964,16 +77002,16 @@ eTh
 eTh
 ivO
 eTh
-dqv
-dqv
+eTh
+eTh
 iFU
 iFU
 iFU
 iFU
-dqv
-dqv
-dqv
-dqv
+eTh
+eTh
+eTh
+eTh
 eTh
 eTh
 ivO
@@ -77217,15 +77255,15 @@ eTh
 eTh
 ivO
 ivO
-dqv
-dqv
-dqv
-dqv
-dqv
-dqv
-dqv
-dqv
-dqv
+eTh
+eTh
+eTh
+eTh
+eTh
+eTh
+eTh
+eTh
+eTh
 eTh
 eTh
 ivO
@@ -77469,12 +77507,12 @@ fNi
 fNi
 fNi
 eTh
-dqv
-dqv
-dqv
-dqv
-dqv
-dqv
+eTh
+eTh
+eTh
+eTh
+eTh
+eTh
 eTh
 eTh
 eTh
@@ -77724,7 +77762,7 @@ eTh
 eTh
 eTh
 eTh
-dqv
+eTh
 eTh
 eTh
 eTh
@@ -77975,10 +78013,10 @@ ivO
 eTh
 ivO
 eTh
-dqv
-dqv
-dqv
-dqv
+eTh
+eTh
+eTh
+eTh
 eTh
 bDp
 rqK
@@ -78227,10 +78265,10 @@ eTh
 ivO
 vIo
 vIo
-dqv
-dqv
-dqv
-dqv
+eTh
+eTh
+eTh
+eTh
 vIo
 vIo
 vJN
@@ -78983,10 +79021,10 @@ ivO
 eTh
 dym
 dym
-dqv
-dqv
-dqv
-dqv
+eTh
+eTh
+eTh
+eTh
 dym
 dym
 eTh
@@ -79235,10 +79273,10 @@ eTh
 ivO
 ivO
 eTh
-dqv
-dqv
-dqv
-dqv
+eTh
+eTh
+eTh
+eTh
 eTh
 bDp
 eTh
@@ -87566,7 +87604,7 @@ nSI
 pRO
 nSI
 nSI
-nSI
+wfY
 oiV
 nSI
 nSI

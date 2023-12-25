@@ -12,14 +12,14 @@
 	icon_state = "concrete0"
 	walltype = "concrete"
 	mineral = "rust"
-	integrity = 500 //Tough bois
+	integrity = 800 //Tough bois
 
 /turf/simulated/wall/ancient
 	name = "ancient wall"
 	desc = "An ancient wall of unknown origin."
 	icon_state = "rrwall0"
 	walltype = "rrwall"
-	integrity = 900
+	integrity = 1100
 
 /turf/simulated/wall/seolite
 	name = "Seolite Wall"
@@ -27,51 +27,51 @@
 	icon = 'icons/turf/seolitewall.dmi'
 	icon_state = "rrwall0"
 	walltype = "rrwall"
-	integrity = 1000
+	integrity = 1100
 
 /turf/simulated/wall/concrete/strong
 	desc = "Looks much stronger than a paper sheet."
-	integrity = 700
+	integrity = 1100
 
 /turf/simulated/wall/concrete/strong/chapel
 	name = "monastic stone wall"
 	desc = "Ornate stone packed together in a gothic fashion with various holy scribbles etching the framework. It looks extremely tough."
-	integrity = 900
+	integrity = 1200
 
 /turf/simulated/wall/rust
 	desc = "An old rusty wall. It's definitely seen better days."
 	icon_state = "rust0"
 	walltype = "rust"
 	mineral = "rust"
-	integrity = 400
+	integrity = 600
 
 /turf/simulated/wall/grim
 	name = "grim wall"
 	desc = "A grim looking metal wall"
 	icon_state = "grim0"
 	walltype = "grim"
-	integrity = 400 //Tough bois
+	integrity = 700 //Tough bois
 
 /turf/simulated/wall/techno
 	name = "techno wall"
 	desc = "A techno looking metal wall"
 	icon_state = "techno0"
 	walltype = "techno"
-	integrity = 9000 //Tough bois
+	integrity = 2000 //Tough bois
 
 /turf/simulated/wall/r_wall/containment
 	desc = "A strong containment wall. Used to \"contain\" things"
 	icon_state = "containment0"
 	walltype = "containment"
 	mineral = "containment"
-	integrity = 1000
+	integrity = 2000
 
 /turf/simulated/wall/stone
 	icon = 'icons/turf/stonewalls.dmi'
 	icon_state = "wall15"
 	desc = "A wall made from stone."
 	walltype = "stone"
-	integrity = 400
+	integrity = 600
 
 /turf/simulated/wall/wooden
 	name = "wood wall"
@@ -80,7 +80,7 @@
 	icon_state = "wood1"
 	walltype = "wood"
 	mineral = "wood"
-	integrity = 350
+	integrity = 550
 
 /turf/simulated/wall/snowcave
 	name = "snowy cave wall"
@@ -88,7 +88,7 @@
 	icon_state = "snow0"
 	walltype = "snow"
 	mineral = "stone"
-	integrity = 500
+	integrity = 700
 
 /turf/simulated/wall/cult
 	icon_state = "cult"
