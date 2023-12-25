@@ -3642,9 +3642,9 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "dCV" = (
-/obj/effect/shuttle_landmark/ferry/bloodpact_end,
-/turf/simulated/floor/plating,
-/area/cadiaoutpost/oa/hangarpact2)
+/obj/item/device/radio/beacon,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/new_hive/hive_city)
 "dDc" = (
 /obj/structure/sign/mechanicus{
 	pixel_x = 32
@@ -9668,9 +9668,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/gatehouse)
-"jau" = (
-/turf/simulated/floor/plating,
-/area/cadiaoutpost/oa/hangarpact2)
 "jax" = (
 /obj/item/reagent_containers/food/condiment/small/saltshaker,
 /obj/item/reagent_containers/food/condiment/small/peppermill{
@@ -10468,8 +10465,8 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/hab/inside)
 "jHD" = (
-/obj/structure/sign/double/maltesefalcon/right{
-	pixel_y = -32
+/obj/structure/statue/prayer{
+	density = 0
 	},
 /turf/simulated/floor/concrete,
 /area/cadiaoutpost/new_hive/hive_city)
@@ -23263,7 +23260,7 @@
 /area/cadiaoutpost/oa/bridge/hallway)
 "vGB" = (
 /turf/simulated/floor,
-/area/cadiaoutpost/oa/hangarpact2)
+/area/cadiaoutpost/new_hive/hive_city)
 "vGC" = (
 /obj/item/pyre/self_lit{
 	invisibility = 100;
@@ -24132,13 +24129,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
-"wCp" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/double/maltesefalcon/left{
-	pixel_y = -32
-	},
-/turf/simulated/floor/concrete,
-/area/cadiaoutpost/new_hive/hive_city)
 "wCA" = (
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -25019,9 +25009,6 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/bridge/hallway)
-"xBZ" = (
-/turf/unsimulated/mineral,
-/area/cadiaoutpost/oa/hangarpact2)
 "xCq" = (
 /turf/simulated/floor/fancyfloor/carpet,
 /area/cadiaoutpost/oa/bridge/hallway)
@@ -32301,13 +32288,13 @@ bwI
 bwI
 qiL
 qiL
-jau
-jau
-jau
-jau
-jau
-jau
-jau
+bFi
+bFi
+bFi
+bFi
+bFi
+bFi
+bFi
 vGB
 vGB
 vGB
@@ -32553,13 +32540,13 @@ bwI
 bwI
 bwI
 bwI
-jau
-jau
-jau
-jau
-jau
-jau
-jau
+bFi
+bFi
+bFi
+bFi
+bFi
+bFi
+bFi
 vGB
 vGB
 vGB
@@ -32805,13 +32792,13 @@ bwI
 bwI
 bwI
 bwI
-jau
-jau
-jau
-jau
-jau
-jau
-jau
+bFi
+bFi
+bFi
+bFi
+bFi
+bFi
+bFi
 vGB
 vGB
 vGB
@@ -33057,13 +33044,13 @@ bwI
 bwI
 bwI
 bwI
-jau
-jau
-jau
-jau
-jau
-jau
-jau
+bFi
+bFi
+bFi
+bFi
+bFi
+bFi
+bFi
 vGB
 vGB
 vGB
@@ -33309,13 +33296,13 @@ bwI
 bwI
 bwI
 bwI
-jau
-jau
-jau
-dCV
-jau
-jau
-jau
+bFi
+bFi
+bFi
+bFi
+bFi
+bFi
+bFi
 vGB
 vGB
 vGB
@@ -34580,7 +34567,7 @@ qiL
 qiL
 iFU
 qiL
-xBZ
+qiL
 qiL
 eTh
 eTh
@@ -57607,9 +57594,9 @@ uPx
 uTV
 bqh
 pLj
-pLj
-pLj
-pLj
+dqv
+dqv
+iFU
 iqE
 iqE
 iqE
@@ -57859,9 +57846,9 @@ bqh
 bqh
 bqh
 pLj
-pLj
-pLj
 iqE
+iqE
+jHD
 iqE
 iqE
 iqE
@@ -58111,7 +58098,7 @@ pLj
 pLj
 pLj
 pLj
-pLj
+iqE
 iqE
 iqE
 iqE
@@ -62369,7 +62356,7 @@ cVV
 apQ
 iqE
 iqE
-wCp
+gWn
 pLj
 qox
 pLj
@@ -62621,7 +62608,7 @@ apQ
 apQ
 iqE
 iqE
-jHD
+iqE
 pLj
 qox
 qox
@@ -75022,11 +75009,11 @@ jXA
 jXA
 iFU
 dqv
-dqv
+eTh
 vJN
 vMj
 iOH
-dqv
+eTh
 eTh
 eTh
 bDp
@@ -75274,7 +75261,7 @@ jXA
 bXT
 iFU
 dqv
-dqv
+eTh
 vJN
 vMj
 pxl
@@ -76016,7 +76003,7 @@ sFI
 quC
 fNi
 eTh
-dqv
+eTh
 dqv
 iFU
 iFU
@@ -76030,7 +76017,7 @@ jXA
 bXT
 iFU
 dqv
-dqv
+eTh
 ivO
 ivO
 bDp
@@ -76040,7 +76027,7 @@ eTh
 eTh
 dqv
 dqv
-dqv
+eTh
 eTh
 eTh
 eTh
@@ -76269,8 +76256,8 @@ fQW
 fNi
 eTh
 eTh
-dqv
-dqv
+eTh
+eTh
 iFU
 dqv
 ydo
@@ -76282,7 +76269,7 @@ owA
 iFU
 iFU
 dqv
-dqv
+eTh
 ivO
 ivO
 ivO
@@ -76291,9 +76278,9 @@ ecF
 eTh
 eTh
 eTh
-dqv
-dqv
-dqv
+eTh
+eTh
+eTh
 eTh
 eTh
 eTh
@@ -76521,8 +76508,8 @@ quC
 mDt
 ivO
 eTh
-dqv
-dqv
+eTh
+eTh
 iFU
 iFU
 jXA
@@ -76534,7 +76521,7 @@ iFU
 iFU
 dqv
 dqv
-dqv
+eTh
 ivO
 ivO
 hXh
@@ -76545,8 +76532,8 @@ lsq
 iFU
 iFU
 iFU
-dqv
-dqv
+eTh
+eTh
 eTh
 eTh
 eTh
@@ -76774,8 +76761,8 @@ fNi
 eTh
 eTh
 eTh
-dqv
-dqv
+eTh
+eTh
 iFU
 mCK
 iFA
@@ -76783,8 +76770,8 @@ iFU
 iFU
 iFU
 iFU
-dqv
-dqv
+eTh
+eTh
 eTh
 eTh
 ivO
@@ -77026,16 +77013,16 @@ eTh
 eTh
 ivO
 eTh
-dqv
-dqv
+eTh
+eTh
 iFU
 iFU
 iFU
 iFU
-dqv
-dqv
-dqv
-dqv
+eTh
+eTh
+eTh
+eTh
 eTh
 eTh
 ivO
@@ -77279,15 +77266,15 @@ eTh
 eTh
 ivO
 ivO
-dqv
-dqv
-dqv
-dqv
-dqv
-dqv
-dqv
-dqv
-dqv
+eTh
+eTh
+eTh
+eTh
+eTh
+eTh
+eTh
+eTh
+eTh
 eTh
 eTh
 ivO
@@ -77531,12 +77518,12 @@ fNi
 fNi
 fNi
 eTh
-dqv
-dqv
-dqv
-dqv
-dqv
-dqv
+eTh
+eTh
+eTh
+eTh
+eTh
+eTh
 eTh
 eTh
 eTh
@@ -77786,7 +77773,7 @@ eTh
 eTh
 eTh
 eTh
-dqv
+eTh
 eTh
 eTh
 eTh
@@ -78037,10 +78024,10 @@ ivO
 eTh
 ivO
 eTh
-dqv
-dqv
-dqv
-dqv
+eTh
+eTh
+eTh
+eTh
 eTh
 bDp
 rqK
@@ -78289,10 +78276,10 @@ eTh
 ivO
 vIo
 vIo
-dqv
-dqv
-dqv
-dqv
+eTh
+eTh
+eTh
+eTh
 vIo
 vIo
 vJN
@@ -79045,10 +79032,10 @@ ivO
 eTh
 dym
 dym
-dqv
-dqv
-dqv
-dqv
+eTh
+eTh
+eTh
+eTh
 dym
 dym
 eTh
@@ -79297,10 +79284,10 @@ eTh
 ivO
 ivO
 eTh
-dqv
-dqv
-dqv
-dqv
+eTh
+eTh
+eTh
+eTh
 eTh
 bDp
 eTh
@@ -87628,7 +87615,7 @@ nSI
 pRO
 nSI
 nSI
-nSI
+dCV
 oiV
 nSI
 nSI
