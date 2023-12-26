@@ -610,7 +610,7 @@
 	/obj/item/reagent_containers/food/snacks/warfare = 1,
 	/obj/item/clothing/mask/gas/explorer = 1,
 	/obj/item/device/flashlight/lantern = 1,
-	/obj/item/stack/thrones3/ten = 2
+	/obj/item/stack/thrones2/ten = 1
 	)
 
 /decl/hierarchy/outfit/job/sisterofbattle/repentia // unused atm
@@ -685,7 +685,7 @@
 	/obj/item/reagent_containers/food/snacks/warfare = 1,
 	/obj/item/clothing/mask/gas/explorer = 1,
 	/obj/item/device/flashlight/lantern = 1,
-	/obj/item/stack/thrones3/ten = 2
+	/obj/item/stack/thrones2/ten = 1
 	)
 
 /decl/hierarchy/outfit/job/preacher
