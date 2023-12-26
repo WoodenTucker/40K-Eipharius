@@ -1077,11 +1077,6 @@ var/list/admin_verbs_mentor = list(
 
 			GLOB.latepartyoptions += "Sekites"
 			message_admins("Sekites have been selected as the late party!")
-		if("TauNecron")
-			GLOB.latepartyoptions.Cut()
-
-			GLOB.latepartyoptions += "TauNecron"
-			message_admins("Sekites have been selected as the late party!")
 		if("Genestealers")
 			GLOB.latepartyoptions.Cut()
 
