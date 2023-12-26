@@ -1242,7 +1242,7 @@ obj/item/clothing/suit/armor
 	item_state = "ooml"
 	armor = list(melee = 54, bullet = 51, laser = 48, energy = 20, bomb = 40, bio = 50, rad = 50)
 	sales_price = 20
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|HANDS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
