@@ -4268,9 +4268,6 @@
 /area/cadiaoutpost/new_hive/caves)
 "oR" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark{
-	name = "bloodstart"
-	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -10908,14 +10905,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
-"Mk" = (
-/obj/effect/landmark{
-	name = "bloodstart"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/hangarpact)
 "Mm" = (
 /obj/effect/floor_decal/newcorner/blue/corner{
 	dir = 4
@@ -12836,17 +12825,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/corner/white/diagonal,
 /obj/effect/decal/cleanable/blood/gibs/vomit,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/hangarpact)
-"TK" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 8
-	},
-/obj/effect/landmark{
-	name = "bloodstart"
-	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -62670,7 +62648,7 @@ oR
 Gc
 OK
 rv
-Mk
+Mj
 Ei
 tR
 Mj
@@ -63170,11 +63148,11 @@ hK
 OQ
 jN
 WY
-TK
+RE
 KA
 kL
 WL
-Mk
+Mj
 Rx
 tR
 pf
