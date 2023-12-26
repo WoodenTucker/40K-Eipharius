@@ -161,6 +161,7 @@
 		else
 			M.STAT_LEVEL(dex) += 1
 			M.STAT_LEVEL(str) += 1
+			M.STAT_LEVEL(end) += 2
 			M.isblessed = 1
 			visible_message("[M] inhales the holy incense and is blessed!")
 
