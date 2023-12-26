@@ -236,8 +236,9 @@ Pilgrim Fate System
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			new /obj/item/device/flashlight/lantern(src.loc) 
 			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc)
-			new /obj/item/clothing/accessory/holster/hip
-			new /obj/item/gun/energy/las/laspistol
+			new /obj/item/clothing/accessory/holster/hip(src.loc)
+			new /obj/item/gun/energy/las/laspistol(src.loc)
+			new /obj/item/storage/box/ifak(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/key/grand/monastary, slot_wear_id)
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
@@ -255,6 +256,7 @@ Pilgrim Fate System
 			new /obj/item/device/radio/headset/headset_service(src.loc)
 			new /obj/item/device/flashlight/lantern(src.loc) 
 			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc)
+			new /obj/item/storage/box/ifak(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
@@ -440,6 +442,7 @@ Pilgrim Fate System
 			new /obj/item/clothing/head/helmet/hevhelm/palace(src.loc)
 			new /obj/item/clothing/suit/armor/brigandine/palace(src.loc)
 			new /obj/item/melee/trench_axe/glaive/adamantine(src.loc)
+			new /obj/item/storage/box/ifak(src.loc)
 			to_chat(U,"<span class='danger'><b><font size=4>THE PROTECTORATE</font></b></span>")
 			to_chat(U,"<span class='goodmood'><b><font size=3>Skilled in the arts of blade and gun lore, you are one of the rare individuals selected by EITHER; The Ecclesiarchy or House Sondar(Your Choice) to protect them from the heretic, the alien and worst of all -- the human. Find the Steward/Commissar or Governor for your assignment...</font></b></span>")
 			U.stat = CONSCIOUS
@@ -448,26 +451,39 @@ Pilgrim Fate System
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("PDF")
 			U.add_stats(rand(14,17), rand(12,17), rand(12,17), rand (12,14)) //
-			U.add_skills(rand(5,7),rand(6,8),rand(3,3),rand(4,5),rand(2,2)) //melee, ranged, med, eng, surgery
 			new /obj/item/clothing/gloves/thick(src.loc)
-			new /obj/item/clothing/head/helmet/whiteshield(src.loc)
 			new /obj/item/clothing/mask/gas/half/cadianrespirator(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/cadian_uniform, slot_w_uniform)
 			new /obj/item/storage/backpack/satchel/warfare(src.loc)
 			new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
-			new /obj/item/clothing/suit/armor/whiteshield(src.loc)
 			new /obj/item/clothing/shoes/jackboots/cadian(src.loc)
 			new /obj/item/device/flashlight/lantern(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/dog_tag/guardsman, slot_wear_id)
 			new /obj/item/device/radio/headset/red_team(src.loc)
 			new /obj/item/cell/lasgun(src.loc)
 			new /obj/item/cell/lasgun(src.loc)
-			to_chat(U,"<span class='danger'><b><font size=4>THE ROOKIE</font></b></span>")
-			to_chat(U,"<span class='goodmood'><b><font size=3>Recently enlisted into the Messina PDF, you have yet to be assigned to a unit... still time to run from the Commissar while you can.</font></b></span>")
-			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
-			U.stat = CONSCIOUS
-			U.sleeping = 0
-			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
+			new /obj/item/storage/box/ifak(src.loc)
+			if(prob(10))
+				U.add_skills(rand(6,8),rand(7,8),rand(3,5),rand(4,5),rand(2,3)) //melee, ranged, med, eng, surgery
+				to_chat(U,"<span class='danger'><b><font size=4>THE VETERAN</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>Either a veteran or experienced new recruit of the Messina PDF. You have found yourself awaiting to be assigned to a unit.</font></b></span>")
+				U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
+				new /obj/item/clothing/suit/armor/guardsman(src.loc)
+				new /obj/item/clothing/head/helmet/guardhelmet
+				new /obj/item/gun/energy/las/lasgun(src.loc)
+				U.stat = CONSCIOUS
+				U.sleeping = 0
+				to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
+			else
+				U.add_skills(rand(5,7),rand(6,8),rand(3,3),rand(4,5),rand(2,2)) //melee, ranged, med, eng, surgery
+				to_chat(U,"<span class='danger'><b><font size=4>THE ROOKIE</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>Recently enlisted into the Messina PDF, you have yet to be assigned to a unit... still time to run from the Commissar while you can.</font></b></span>")
+				U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
+				new /obj/item/clothing/suit/armor/whiteshield(src.loc)
+				new /obj/item/clothing/head/helmet/whiteshield(src.loc)
+				U.stat = CONSCIOUS
+				U.sleeping = 0
+				to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Disgraced Noble")
 			U.add_skills(rand(6,8),rand(4,8),rand(2,8),rand(2,8),rand(2,8)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)

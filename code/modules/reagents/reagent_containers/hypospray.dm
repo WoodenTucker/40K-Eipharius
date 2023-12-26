@@ -183,8 +183,8 @@
 	desc = "A blood injector, contained O- blood."
 	icon_state = "n"
 
-	amount_per_transfer_from_this = 50
-	volume = 500
+	amount_per_transfer_from_this = 100
+	volume = 1000
 	var/blood_type = "O-"
 
 /obj/item/reagent_containers/hypospray/autoinjector/blood/New()
