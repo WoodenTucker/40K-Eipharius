@@ -704,27 +704,27 @@ rav to help me code) will reward the player with thrones, aka escort mission wit
 /mob/living/simple_animal/civilians/civ2
 	icon_state = "guard_wounded2"
 	icon_living = "guard_wounded2"
-	icon_dead = "traitorguard1_dead"
+	icon_dead = "guard_wounded2d"
 
 /mob/living/simple_animal/civilians/civ3
 	icon_state = "guard_wounded3"
 	icon_living = "guard_wounded3"
-	icon_dead = "traitorguard1_dead"
+	icon_dead = "guard_wounded3d"
 
 /mob/living/simple_animal/civilians/civ4
 	icon_state = "guard_wounded4"
 	icon_living = "guard_wounded4"
-	icon_dead = "traitorguard1_dead"
+	icon_dead = "guard_wounded4d"
 
 /mob/living/simple_animal/civilians/civ5
 	icon_state = "guard_wounded5"
 	icon_living = "guard_wounded5"
-	icon_dead = "traitorguard1_dead"
+	icon_dead = "guard_wounded5d"
 
 /mob/living/simple_animal/civilians/civ6
 	icon_state = "guard_wounded6"
 	icon_living = "guard_wounded6"
-	icon_dead = "traitorguard1_dead"
+	icon_dead = "guard_wounded6"
 
 /mob/living/simple_animal/civilians/priority
 	name = "Important Civilian"
@@ -732,7 +732,7 @@ rav to help me code) will reward the player with thrones, aka escort mission wit
 	icon = 'icons/map_project/creatures.dmi'
 	icon_state = "civilian_rich"
 	icon_living = "civilian_rich"
-	icon_dead = "traitorguard1_dead"
+	icon_dead = "civilian_richd"
 	speak_chance = 0
 	maxHealth = 75
 	health = 75
@@ -743,7 +743,7 @@ rav to help me code) will reward the player with thrones, aka escort mission wit
 /mob/living/simple_animal/civilians/priority/priority1
 	icon_state = "civilian_rich_f"
 	icon_living = "civilian_rich_f"
-	icon_dead = "traitorguard1_dead"
+	icon_dead = "civilian_rich_fd"
 
 /mob/living/simple_animal/civilians/priority/pilot
 	name = "Stranded Imperial Guard Pilot"
@@ -751,7 +751,7 @@ rav to help me code) will reward the player with thrones, aka escort mission wit
 	icon = 'icons/map_project/creatures.dmi'
 	icon_state = "crashed_pilot"
 	icon_living = "crashed_pilot"
-	icon_dead = "traitorguard1_dead"
+	icon_dead = "crashed_pilotd"
 	speak_chance = 0
 	maxHealth = 75
 	health = 75
@@ -759,6 +759,23 @@ rav to help me code) will reward the player with thrones, aka escort mission wit
 	speak_emote = list("groans in pain")
 	emote_hear = list("grunts in pain")
 
+/mob/living/simple_animal/hostile/pony
+	name = "magical pony"
+	desc = "Friendship is MAGIC, also deadly."
+	icon = 'icons/map_project/creatures.dmi'
+	icon_state = "friendship_is_magical"
+	icon_living = "friendship_is_magical"
+	pass_flags = PASS_FLAG_TABLE
+	health = 255
+	maxHealth = 255
+	melee_damage_lower = 45
+	melee_damage_upper = 45
+	attacktext = "cut"
+	attack_sound = 'sound/weapons/bladeslice.ogg'
+	faction = "chaos"
+	min_gas = null
+	max_gas = null
+	minbodytemp = 0
 /*
 
 All of the content below has been scrapped or going to be unused for a few reasons (not being 'fitting', outright unecessary and tests aswell on
@@ -797,25 +814,6 @@ some stuff - Graf
 	rapid = 1
 	projectilesound = 'sound/weapons/lasgun.ogg'
 	projectiletype = /obj/item/projectile/beam
-
-
-/mob/living/simple_animal/hostile/pony
-	name = "magical pony"
-	desc = "Friendship is MAGIC, also deadly."
-	icon = 'icons/map_project/creatures.dmi'
-	icon_state = "friendship_is_magical"
-	icon_living = "friendship_is_magical"
-	pass_flags = PASS_FLAG_TABLE
-	health = 255
-	maxHealth = 255
-	melee_damage_lower = 45
-	melee_damage_upper = 45
-	attacktext = "cut"
-	attack_sound = 'sound/weapons/bladeslice.ogg'
-	faction = "chaos"
-	min_gas = null
-	max_gas = null
-	minbodytemp = 0
 
 /mob/living/simple_animal/hostile/syndicate/word_bearer
 	name = "Word Bearer"
