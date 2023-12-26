@@ -572,8 +572,7 @@
 /area/cadiaoutpost/oa/security/prison)
 "dW" = (
 /obj/machinery/door/airlock/multi_tile/metal/imperium{
-	req_one_access = list(63,10,331);
-	name = "Fortess Airlock";
+	name = "Abandoned Store";
 	dir = 2
 	},
 /turf/simulated/floor/factory_floor,
@@ -1051,11 +1050,7 @@
 	},
 /area/cadiaoutpost/oa/security/warden)
 "ht" = (
-/obj/machinery/door/airlock/cone{
-	maxhealth = 3000;
-	name = "Strong Guard Airlock";
-	req_one_access = list(63,10,331)
-	},
+/obj/machinery/door/airlock/cone,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/prison)
 "hw" = (
@@ -2667,10 +2662,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/warden)
 "tm" = (
-/obj/machinery/door/airlock/multi_tile/metal/imperium{
-	req_one_access = list(63,10,331);
-	name = "Fortess Airlock"
-	},
+/obj/machinery/door/airlock/multi_tile/metal/imperium,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/warden)
 "tp" = (
@@ -3068,11 +3060,7 @@
 	},
 /area/cadiaoutpost/oa/security/warden)
 "vo" = (
-/obj/machinery/door/airlock/cone{
-	maxhealth = 3000;
-	name = "Strong Guard Airlock";
-	req_one_access = list(63,10,331)
-	},
+/obj/machinery/door/airlock/cone,
 /obj/machinery/door/blast/grates{
 	id = "ammo_storage"
 	},
@@ -3169,11 +3157,7 @@
 	},
 /area/cadiaoutpost/oa/security/prison)
 "wr" = (
-/obj/machinery/door/airlock/cone{
-	maxhealth = 3000;
-	name = "Strong Guard Airlock";
-	req_one_access = list(63,10,331)
-	},
+/obj/machinery/door/airlock/cone,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/warden)
 "ws" = (
@@ -4101,10 +4085,7 @@
 /turf/simulated/floor/trench,
 /area/cadiaoutpost/oa/security/warden)
 "CT" = (
-/obj/machinery/door/airlock/multi_tile/metal/imperium{
-	name = "Transport Ship Cockpit";
-	dir = 1
-	},
+/obj/machinery/door/airlock/multi_tile/metal/imperium,
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
@@ -4217,13 +4198,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/warden)
-"DZ" = (
-/obj/machinery/door/airlock/multi_tile/metal/imperium{
-	req_one_access = list(63,10,331);
-	name = "Fortess Airlock"
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/security/prison)
 "Ed" = (
 /turf/simulated/shuttle/wall/corner/dark{
 	color = "gold";
@@ -4682,10 +4656,7 @@
 	},
 /area/cadiaoutpost/oa/security/warden)
 "Ho" = (
-/obj/machinery/door/airlock/multi_tile/metal/imperium{
-	name = "Transport Ship Cockpit";
-	dir = 1
-	},
+/obj/machinery/door/airlock/multi_tile/metal/imperium,
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
@@ -6361,12 +6332,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/warden)
-"TE" = (
-/obj/machinery/door/airlock/cone{
-	name = "Toilet"
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/security/warden)
 "TI" = (
 /obj/structure/stairs,
 /turf/simulated/floor/factory_floor,
@@ -6377,11 +6342,7 @@
 	},
 /area/cadiaoutpost/oa/security/prison)
 "TN" = (
-/obj/machinery/door/airlock/multi_tile/metal/imperium{
-	req_one_access = list(63,10,331);
-	name = "Fortess Airlock";
-	dir = 2
-	},
+/obj/machinery/door/airlock/multi_tile/metal/imperium,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/prison)
 "TV" = (
@@ -9644,7 +9605,7 @@ RW
 RW
 kM
 qy
-TE
+wr
 wx
 wx
 kM
@@ -9948,10 +9909,10 @@ RW
 RW
 kM
 qy
-TE
+wr
 wx
 wx
-TE
+wr
 mu
 lD
 iN
@@ -10252,7 +10213,7 @@ RW
 RW
 kM
 qy
-TE
+wr
 wx
 wx
 kM
@@ -15139,9 +15100,9 @@ RW
 RW
 kM
 kM
-TE
+wr
 kM
-TE
+wr
 kM
 Sg
 Sg
@@ -15446,7 +15407,7 @@ CV
 CV
 CV
 wx
-TE
+wr
 Sg
 Sg
 Sg
@@ -18767,7 +18728,7 @@ kM
 kM
 kM
 kM
-TE
+wr
 kM
 kM
 kM
@@ -18920,7 +18881,7 @@ cg
 kM
 sv
 wx
-TE
+wr
 lK
 kM
 RW
@@ -19224,7 +19185,7 @@ TW
 kM
 sv
 wx
-TE
+wr
 lK
 kM
 RW
@@ -19528,7 +19489,7 @@ kM
 kM
 sv
 wx
-TE
+wr
 lK
 kM
 RW
@@ -33356,7 +33317,7 @@ xI
 wW
 wW
 KT
-DZ
+TN
 dO
 wW
 YQ
