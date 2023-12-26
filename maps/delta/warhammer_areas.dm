@@ -395,6 +395,20 @@ Area basic template
 	dynamic_lighting = 1
 	music = 'sound/newmusic/Outpost1.ogg'
 
+/area/cadiaoutpost/cha1
+	name = "cha"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/Outpost1.ogg'
+
+/area/cadiaoutpost/cha2
+	name = "cha"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/Outpost1.ogg'
+
 /area/cadiaoutpost/govship1
 	name = "Govna"
 	icon_state = "forwardpost"
@@ -1773,6 +1787,13 @@ Area basic template
 	icon_state = "shuttle"
 	music = 'sound/newmusic/Outpost1.ogg'
 	requires_power = 0
+
+/area/cadiaoutpost/oa/shuttle/chacha
+	name = "Station"
+	icon_state = "shuttle"
+	music = 'sound/newmusic/Outpost1.ogg'
+	requires_power = 0
+
 
 /area/cadiaoutpost/oa/shuttle/inquisitionpact
 	name = "Pact Ship"

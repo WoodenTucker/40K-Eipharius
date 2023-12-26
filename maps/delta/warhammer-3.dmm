@@ -3641,10 +3641,6 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
-"dCV" = (
-/obj/item/device/radio/beacon,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/new_hive/hive_city)
 "dDc" = (
 /obj/structure/sign/mechanicus{
 	pixel_x = 32
@@ -9668,6 +9664,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/gatehouse)
+"jau" = (
+/obj/structure/statue/prayer{
+	density = 0
+	},
+/turf/simulated/floor/concrete,
+/area/cadiaoutpost/new_hive/hive_city)
 "jax" = (
 /obj/item/reagent_containers/food/condiment/small/saltshaker,
 /obj/item/reagent_containers/food/condiment/small/peppermill{
@@ -10464,12 +10466,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/hab/inside)
-"jHD" = (
-/obj/structure/statue/prayer{
-	density = 0
-	},
-/turf/simulated/floor/concrete,
-/area/cadiaoutpost/new_hive/hive_city)
 "jHI" = (
 /obj/structure/sign/poster/poster3{
 	pixel_y = 32
@@ -24129,6 +24125,10 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
+"wCp" = (
+/obj/item/device/radio/beacon,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/new_hive/hive_city)
 "wCA" = (
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -57848,7 +57848,7 @@ bqh
 pLj
 iqE
 iqE
-jHD
+jau
 iqE
 iqE
 iqE
@@ -87615,7 +87615,7 @@ nSI
 pRO
 nSI
 nSI
-dCV
+wCp
 oiV
 nSI
 nSI
