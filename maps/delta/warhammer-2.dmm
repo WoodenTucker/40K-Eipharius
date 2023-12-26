@@ -21388,12 +21388,6 @@
 /obj/random/trash,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/new_hive/caves)
-"xdc" = (
-/obj/effect/landmark{
-	name = "orkstart"
-	},
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/new_hive/caves)
 "xes" = (
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
@@ -51843,7 +51837,7 @@ hqB
 hqB
 sDX
 weX
-xdc
+sDX
 gZd
 sDX
 sDX
