@@ -20,7 +20,7 @@
 	open_when_dead = FALSE
 	department_flag = INQ
 	latejoin_at_spawnpoints = TRUE
-	access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_village, access_administratum, access_change_ids, access_keycard_auth)
+	access = list(1984, 356, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_village, access_administratum, access_change_ids, access_keycard_auth)
 	minimal_access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_village, access_administratum, access_change_ids, access_keycard_auth
 			            )
 
@@ -30,6 +30,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
+		H.get_idcard()?.access = list(1984, 356, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_village, access_administratum, access_change_ids, access_keycard_auth)
 		H.fully_replace_character_name("Marshal [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(16,19), rand(13,17), rand(13,17), rand(10,13)) //meant to be a brute keeping the plebs in line
@@ -39,7 +40,6 @@
 //		H.witchblood() //Psyker Enforcers don't exist
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
-		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village)
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Marshal appointed by the Magistratum,, your duty is to uphold Imperial law on this planet amongst the Pilgrims and to assist the Deacon where necessary. Your duties involve the investigation of crimes committed on behalf of the magistratum, collection of tithes and the interrogation or execution of criminals apprehended by the Magistratum.</font></b></span>")
 
@@ -63,9 +63,7 @@
 	open_when_dead = FALSE
 	department_flag = INQ
 	latejoin_at_spawnpoints = TRUE
-	access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_village, access_administratum, access_change_ids, access_keycard_auth)
-	minimal_access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_village, access_administratum, access_change_ids, access_keycard_auth
-			            )
+	access = list(1984, 356, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village)
 
 
 	announced = FALSE
@@ -73,7 +71,8 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Investigator [current_name]")
+		H.get_idcard()?.access = list(1984, 356, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village)
+		H.fully_replace_character_name("Detective [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(16,19), rand(13,17), rand(13,17), rand(10,13)) //meant to be a brute keeping the plebs in line
 		H.add_skills(rand(9,10),rand(7,10),rand(3,6),3,rand(2,5)) //melee, ranged, med, eng, surgery
@@ -82,7 +81,6 @@
 //		H.witchblood() //Psyker Enforcers don't exist
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
-		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village)
 
 		to_chat(H, "<span class='notice'><b><font size=3>You're the local detective, a planetary investigator hired by the Governor to solve crimes. ")
 
@@ -105,16 +103,14 @@
 	open_when_dead = FALSE
 	department_flag = INQ
 	latejoin_at_spawnpoints = TRUE
-	access = list(access_security, access_guard_common, access_magi,
-			            access_all_personal_lockers, access_village,)
-	minimal_access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village,
-			            )
+	access = list(1984, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village,)
 
 
 	announced = FALSE
 
 	equip(var/mob/living/carbon/human/H)
 		..()
+		H.get_idcard()?.access = list(1984, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village)
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,18), rand(12,16), rand(12,16), rand(10,13)) //meant to be a brute keeping the plebs in line
 		H.add_skills(rand(9,10),rand(7,10),rand(3,5),3,rand(2,4)) //melee, ranged, med, eng, surgery
@@ -125,7 +121,6 @@
 		H.adjustStaminaLoss(-INFINITY)
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
-		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village,)
 		H.verbs += list(
 			/mob/living/carbon/human/proc/enforcerclass)
 		to_chat(H, "<span class='notice'><b><font size=3> An Enforcer in the Magisterium. The Governership order you. Yet the Inquisition can override them. Patrol with the cadets. Make sure they know what they’re doing. Collect taxes and ensure the order of the world is peaceful and good. Be an undercover cop if you’re feeling ballsy.</font></b></span>")
@@ -149,10 +144,7 @@
 	open_when_dead = FALSE
 	department_flag = INQ
 	latejoin_at_spawnpoints = TRUE
-	access = list(access_security, access_guard_common, access_magi,
-			            access_all_personal_lockers, access_village,)
-	minimal_access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village,
-			            )
+	access = list(1984, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village,)
 
 
 	announced = FALSE
@@ -160,6 +152,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
+		H.get_idcard()?.access = list(1984, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village)
 		H.fully_replace_character_name("[current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,18), rand(12,16), rand(12,16), rand(10,13)) //meant to be a brute keeping the plebs in line
@@ -170,7 +163,6 @@
 		H.adjustStaminaLoss(-INFINITY)
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
-		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village,)
 		H.verbs += list(
 			/mob/living/carbon/human/proc/enforcerclass)
 		to_chat(H, "<span class='notice'><b><font size=3> (NEW PLAYER ROLE) A cadet in the Magisterium. The Deacon order you. Yet the Inquisition can override them. Your job is to assist the other enforcers in punishing crime and collecting taxes. </font></b></span>")
@@ -194,9 +186,7 @@
 	open_when_dead = FALSE
 	department_flag = INQ
 	latejoin_at_spawnpoints = TRUE
-	access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_village, access_administratum, access_change_ids, access_keycard_auth)
-	minimal_access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_village, access_administratum, access_change_ids, access_keycard_auth
-			            )
+	access = list(1984, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_village, access_administratum, access_change_ids, access_keycard_auth)
 
 
 	announced = FALSE
@@ -204,6 +194,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
+		H.get_idcard()?.access = list(1984, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_village, access_administratum, access_change_ids, access_keycard_auth)
 		H.fully_replace_character_name("Arbitrator [current_name]")
 		H.add_stats(rand(18,20), rand(18,20), rand(15,19), rand(15,16)) //intelligence only buffs surgery shit, don't buff it
 		H.add_skills(rand(10,11),rand(8,10),rand(3,6),3,rand(2,5)) //melee, ranged, med, eng, surgery
@@ -231,7 +222,7 @@
 
 	var/mob/living/carbon/human/U = src
 	U.verbs -= list(/mob/living/carbon/human/proc/enforcerclass) //removes verb
-	var/fates = list("Judge Dredd","Bounty Hunter","Messina Detective")
+	var/fates = list("Judge Dredd","Bounty Hunter","Major Crimes Unit")
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -244,8 +235,12 @@
 			new /obj/item/ammo_magazine/bolt_pistol_magazine(src.loc)
 			new /obj/item/ammo_magazine/bolt_pistol_magazine/ms(src.loc)
 			new /obj/item/melee/sword/combat_knife/bowie(src.loc)
+			new /obj/item/clothing/suit/armor/enforcer2(src.loc)
+			new /obj/item/clothing/head/helmet/guardhelmet/enforcer(src.loc)
 		if("Bounty Hunter")
 			new /obj/item/melee/sword/machete/chopper/heavy/adamantine(src.loc)
+			new /obj/item/clothing/suit/armor/enforcer2(src.loc)
+			new /obj/item/clothing/head/helmet/guardhelmet/enforcer(src.loc)
 			if(prob(50))
 				new /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle(src.loc)
 				new /obj/item/ammo_magazine/a762/ap(src.loc)
@@ -256,12 +251,13 @@
 				new /obj/item/ammo_magazine/c556/ap(src.loc)
 				new /obj/item/ammo_magazine/c556/ap(src.loc)
 				new /obj/item/ammo_magazine/c556/ap(src.loc)
-		if("Messina Detective")
+		if("Major Crimes Unit")
 			new /obj/item/reagent_containers/hypospray/autoinjector/tau(src.loc)
 			new /obj/item/ammo_magazine/mc45mm/kp(src.loc)
 			new /obj/item/ammo_magazine/mc45mm/kp(src.loc)
 			new /obj/item/ammo_magazine/mc45mm/ms(src.loc)
 			new /obj/item/gun/projectile/talon/renegade(src.loc)
+			new /obj/item/card/id/key/middle/majorcrimes(src.loc)
 
 
 

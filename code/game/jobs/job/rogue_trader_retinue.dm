@@ -15,7 +15,7 @@
 	supervisors = "House Vane."
 	selection_color = "#315dd4"
 	req_admin_notify = 1
-	access = list() 			//See get_access()
+	access = list(355,268,225,267,268,269,270,355,271,272,273) 			//See get_access()
 	minimal_access = list() 	//See get_access()
 	minimal_player_age = 25
 	economic_modifier = 20
@@ -35,7 +35,8 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Rogue Trader [current_name] Vane") // No title testing. 
+		H.fully_replace_character_name("Rogue Trader [current_name]") // No title testing. 
+		H.get_idcard()?.access = list(355,268,225,267,268,269,270,355,271,272,273)
 		H.add_stats(rand(14,18), rand(14,18), rand(14,18), rand(14,18))
 		H.add_skills(rand(6,10),rand(6,10),rand(5,6),rand(1,8),rand(1,8)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -67,7 +68,7 @@
 	social_class = SOCIAL_CLASS_MED
 	announced = 0
 	access = list(access_bar, access_village, access_village, access_administratum, access_change_ids, access_keycard_auth,)
-	minimal_access = list(access_bar, access_village, access_village, access_administratum, access_change_ids, access_keycard_auth,)
+	access = list(355,268,225,267,268,269,270,355,271,272,273) 
 	minimal_player_age = 3
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/cargo/janissary
@@ -102,6 +103,7 @@
 	supervisors = "The Rogue Trader and House Vane"
 	selection_color = "#315dd4"
 	latejoin_at_spawnpoints = TRUE
+	access = list(355,268,225,267,268,269,270,355,271,272,273) 
 	announced = FALSE
 	cultist_chance = 0
 
@@ -109,6 +111,7 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
+		H.get_idcard()?.access = list(355,268,225,267,268,269,270,355,271,272,273)
 		H.add_stats(rand(16,22), rand(16,22), rand(17,20), rand (6,40)) //its a xeno mercenary, random shit.
 		H.add_skills(rand(10,12),rand(9,10),rand(3,5),5,rand(2,4)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
