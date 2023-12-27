@@ -113,10 +113,13 @@
 	r_hand = /obj/item/melee/whip/censer
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones/twenty = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1
-	/obj/item/clothing/rosarius
+	/obj/item/clothing/rosarius = 1
+	/obj/item/clothing/accessory/holster/waist = 1
+	/obj/item/ammo_magazine/c50/ms = 2
+	/obj/item/gun/projectile/revolver/mateba = 1
 		)
 
 /decl/hierarchy/outfit/job/preacher

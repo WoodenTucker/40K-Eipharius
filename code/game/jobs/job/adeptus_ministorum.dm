@@ -161,6 +161,7 @@
 		else
 			M.STAT_LEVEL(dex) += 1
 			M.STAT_LEVEL(str) += 1
+			M.STAT_LEVEL(end) += 2
 			M.isblessed = 1
 			visible_message("[M] inhales the holy incense and is blessed!")
 
@@ -408,7 +409,19 @@
 		H.f_style = "shaved"
 		H.h_style = "Bob"
 		H.vice = null
-
+		H.verbs += list(
+		/mob/living/carbon/human/proc/sobemperorgivesstrenght,
+		/mob/living/carbon/human/proc/sobnotforsakeme,
+		/mob/living/carbon/human/proc/sobpraise,
+		/mob/living/carbon/human/proc/sobsororitas,
+		/mob/living/carbon/human/proc/sobfearthesister,
+		/mob/living/carbon/human/proc/sobfeelwrath,
+		/mob/living/carbon/human/proc/sobfoesapproach,
+		/mob/living/carbon/human/proc/sobnomercy,
+		/mob/living/carbon/human/proc/sobretreat,
+		/mob/living/carbon/human/proc/sobtakingfire,
+		/mob/living/carbon/human/proc/sobweservants,
+		/mob/living/carbon/human/proc/sobtheemperor)
 		to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>You are a recent graduate of the Scholam Progeneum, sent to Eipharius to serve alongside the redeemed Sister-Superior as she watched over the Reqliary of the local Monestary. Though you are no longer a Progena, you are not yet done learning. The Sisters and the Holy Deacon of the Adeptus Ministorum will act as your spiritual guides as you march ever further down the righteous path.</font></b></span>")
 
@@ -598,7 +611,7 @@
 	/obj/item/reagent_containers/food/snacks/warfare = 1,
 	/obj/item/clothing/mask/gas/explorer = 1,
 	/obj/item/device/flashlight/lantern = 1,
-	/obj/item/stack/thrones3/ten = 2
+	/obj/item/stack/thrones2/ten = 1
 	)
 
 /decl/hierarchy/outfit/job/sisterofbattle/repentia // unused atm
@@ -647,7 +660,7 @@
 	/obj/item/reagent_containers/food/snacks/warfare = 1,
 	/obj/item/clothing/mask/gas/explorer = 1,
 	/obj/item/device/flashlight/lantern = 1,
-	/obj/item/stack/thrones3/ten = 2
+	/obj/item/stack/thrones2/ten = 1
 	)
 
 /decl/hierarchy/outfit/job/sisterofbattle/brsister
@@ -673,7 +686,7 @@
 	/obj/item/reagent_containers/food/snacks/warfare = 1,
 	/obj/item/clothing/mask/gas/explorer = 1,
 	/obj/item/device/flashlight/lantern = 1,
-	/obj/item/stack/thrones3/ten = 2
+	/obj/item/stack/thrones2/ten = 1
 	)
 
 /decl/hierarchy/outfit/job/preacher

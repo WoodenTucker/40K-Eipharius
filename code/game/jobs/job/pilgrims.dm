@@ -944,8 +944,7 @@ Pilgrim Fate System
 	open_when_dead = 0
 	supervisors = "yourself and your fellow gangers"
 	selection_color = "#530606"
-	access = list(access_village, access_ganger,)
-	minimal_access = list(access_bar)
+	access = list(access_village, access_ganger,access_bar)
 	outfit_type = /decl/hierarchy/outfit/job/ganger
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
@@ -1052,8 +1051,7 @@ Pilgrim Fate System
 	announced = FALSE
 	cultist_chance = 0 // grog like emperorah :) // bouncer should only be cultist if the innkeeper is. as they would get easily indoctrinated by their dad/boss
 	species_role = "Ogryn"
-	access = list(access_bar, access_ganger)
-	minimal_access = list(access_bar)
+	access = list(access_village, access_ganger,access_bar)
 
 	equip(var/mob/living/carbon/human/H)
 	//theres gonna be some redundencies here but I do not careeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
