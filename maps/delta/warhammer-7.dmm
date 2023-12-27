@@ -122,10 +122,9 @@
 	},
 /area/cadiaoutpost/oa/dungeon1)
 "aF" = (
-/turf/unsimulated/oldship{
-	icon_state = "rwall3"
-	},
-/area/cadiaoutpost/oa/shuttle/magos)
+/obj/effect/shuttle_landmark/ferry/magos_end,
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/magosship1)
 "aH" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/surgicaldrill{
@@ -371,11 +370,6 @@
 /obj/item/clothing/under/rank/roguetrader,
 /turf/unsimulated/floor/necron_floor,
 /area/cadiaoutpost/oa/dungeon1)
-"cg" = (
-/turf/unsimulated/oldship{
-	icon_state = "rwall8"
-	},
-/area/cadiaoutpost/oa/shuttle/magos)
 "cl" = (
 /turf/simulated/floor/fancyfloor/carpet/blue/middle,
 /area/cadiaoutpost/oa/dungeon3)
@@ -701,11 +695,6 @@
 	icon_state = "ofloor"
 	},
 /area/cadiaoutpost/oa/dungeon1)
-"eC" = (
-/turf/unsimulated/oldship{
-	icon_state = "rwall5"
-	},
-/area/cadiaoutpost/oa/shuttle/magos)
 "eE" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 4
@@ -953,17 +942,11 @@
 /turf/unsimulated/floor/necron_floor,
 /area/cadiaoutpost/oa/dungeon1)
 "gc" = (
-/obj/structure/bed/chair/comfy/captain{
-	desc = "Comfy chair for luxury and piloting.";
-	dir = 1;
-	icon_state = "capchair_preview";
-	name = "pilot seat"
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
 	},
-/obj/effect/shuttle_landmark/ferry/magos_start,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/magos)
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/magosship1)
 "gj" = (
 /obj/structure/janitorialcart,
 /turf/simulated/floor/tiled/dark,
@@ -981,13 +964,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/cadiaoutpost/magosship2)
-"gv" = (
-/obj/machinery/computer/shuttle_control/ferry/magos,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/magos)
+/area/cadiaoutpost/oa/mechanicusdig)
 "gw" = (
 /turf/simulated/floor/darkfloor{
 	dir = 8
@@ -1057,14 +1034,6 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/dungeon3)
-"gR" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/magos)
 "gS" = (
 /obj/structure/hivedecor/xenos/artifact/node2,
 /turf/simulated/floor/stone/seabed,
@@ -1206,11 +1175,6 @@
 /obj/structure/hivedecor/xenos/artifact/node3,
 /turf/simulated/floor/stone/seabed,
 /area/cadiaoutpost/oa/mechanicusdig)
-"id" = (
-/turf/unsimulated/oldship{
-	icon_state = "rwall10"
-	},
-/area/cadiaoutpost/oa/shuttle/magos)
 "ih" = (
 /obj/effect/floor_decal/turf/shaft,
 /obj/effect/cleanable/heretic_rune/slaanesh,
@@ -1447,11 +1411,6 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/dungeon3)
-"kl" = (
-/turf/unsimulated/oldship{
-	icon_state = "rwall12"
-	},
-/area/cadiaoutpost/oa/shuttle/magos)
 "km" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -1461,13 +1420,11 @@
 	},
 /area/cadiaoutpost/oa/dungeon3)
 "kn" = (
-/obj/machinery/light/small{
-	dir = 8
+/obj/effect/floor_decal/industrial/warning{
+	dir = 5
 	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/magos)
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/magosship1)
 "ko" = (
 /obj/item/clothing/head/helmet/darkeldar,
 /turf/unsimulated/floor/sand,
@@ -2111,13 +2068,8 @@
 	},
 /area/cadiaoutpost/oa/dungeon1)
 "pA" = (
-/obj/structure/shuttle/engine/propulsion{
-	color = "grey"
-	},
-/turf/simulated/wall/ancient{
-	color = null
-	},
-/area/cadiaoutpost/oa/shuttle/magos)
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/magosship1)
 "pB" = (
 /obj/item/pyre/self_lit{
 	invisibility = 100;
@@ -2385,7 +2337,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/plating,
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/magosship1)
 "rU" = (
 /turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/oa/dungeon3)
@@ -2826,11 +2778,6 @@
 	icon_state = "ofloor"
 	},
 /area/cadiaoutpost/oa/dungeon1)
-"vP" = (
-/turf/unsimulated/oldship{
-	icon_state = "rwall9"
-	},
-/area/cadiaoutpost/oa/shuttle/magos)
 "vR" = (
 /turf/simulated/floor/darkfloor,
 /area/cadiaoutpost/oa/mechanicusdig)
@@ -3111,12 +3058,6 @@
 	color = "#1B8B14"
 	},
 /area/cadiaoutpost/oa/dungeon1)
-"xV" = (
-/obj/machinery/door/airlock/glass,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/magos)
 "ya" = (
 /obj/item/archaeological_find/remains/xeno,
 /obj/item/clothing/suit/armor/orkarmor/warboss,
@@ -3201,7 +3142,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/plating,
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/mechanicusdig)
 "yO" = (
 /obj/structure/hivedecor/xenos/artifact/megaweapon{
 	icon_state = "29"
@@ -3423,14 +3364,6 @@
 	icon_state = "ofloor"
 	},
 /area/cadiaoutpost/oa/dungeon1)
-"Aj" = (
-/obj/structure/bed/chair{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/magos)
 "Am" = (
 /obj/structure/hivedecor/lasplacement{
 	dir = 8
@@ -3495,17 +3428,6 @@
 /obj/machinery/light/small,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/dungeon3)
-"AZ" = (
-/obj/structure/bed/chair{
-	dir = 1
-	},
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/magos)
 "Bc" = (
 /obj/structure/table/rack/dark,
 /obj/item/reagent_containers/glass/bucket{
@@ -3546,11 +3468,6 @@
 	dir = 9
 	},
 /area/cadiaoutpost/oa/dungeon3)
-"Bk" = (
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/magos)
 "Bm" = (
 /obj/item/clothing/head/helmet/orkhelmet/horns,
 /turf/unsimulated/floor/sand,
@@ -4476,9 +4393,6 @@
 	icon_state = "awall12"
 	},
 /area/cadiaoutpost/oa/dungeon1)
-"JH" = (
-/turf/simulated/floor/plating,
-/area/cadiaoutpost/magosship2)
 "JI" = (
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/mechanicusdig)
@@ -4697,14 +4611,6 @@
 	icon_state = "floor3"
 	},
 /area/cadiaoutpost/oa/dungeon1)
-"LB" = (
-/obj/machinery/door/airlock/glass_external{
-	color = null
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/magos)
 "LC" = (
 /obj/structure/table/graf/shrine,
 /obj/item/organ/internal/brain,
@@ -4828,11 +4734,6 @@
 /obj/item/storage/lunchbox/heart/filled,
 /turf/simulated/floor/tiled/freezer,
 /area/cadiaoutpost/oa/dungeon3)
-"MJ" = (
-/turf/unsimulated/oldship{
-	icon_state = "rwall4"
-	},
-/area/cadiaoutpost/oa/shuttle/magos)
 "MK" = (
 /obj/structure/table/graf/shrine,
 /obj/item/organ/internal/heart/vox,
@@ -5306,11 +5207,6 @@
 /obj/structure/closet/crate/trashcart,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/dungeon3)
-"RK" = (
-/turf/unsimulated/oldship{
-	icon_state = "rwall13"
-	},
-/area/cadiaoutpost/oa/shuttle/magos)
 "RL" = (
 /turf/unsimulated/floor/necron_floor{
 	icon_state = "floor10"
@@ -5443,10 +5339,8 @@
 	},
 /area/cadiaoutpost/oa/dungeon1)
 "Tb" = (
-/turf/unsimulated/oldship{
-	icon_state = "rwall6"
-	},
-/area/cadiaoutpost/oa/shuttle/magos)
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/oa/mechanicusdig)
 "Th" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -6041,17 +5935,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/mechanicusdig)
-"Yp" = (
-/obj/structure/bed/chair{
-	dir = 1
-	},
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/magos)
 "Ys" = (
 /obj/effect/floor_decal/turf/bar3{
 	dir = 4
@@ -6708,16 +6591,16 @@ Hi
 Hi
 Hi
 Hi
-Hi
-Hi
-Hi
-Hi
-Hi
-Hi
-Hi
-Hi
-Hi
-Hi
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
 Hi
 "}
 (3,1,1) = {"
@@ -6927,19 +6810,19 @@ Hi
 Hi
 Hi
 Hi
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
+Tb
+Tb
+Tb
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
 Hi
 "}
 (4,1,1) = {"
@@ -7149,19 +7032,19 @@ Hi
 Hi
 Hi
 Hi
-JH
-JH
-JH
-JH
-JH
 Tb
-aF
-aF
-aF
-aF
+Tb
+Tb
+pA
+pA
+pA
+pA
 aF
 pA
-JH
+pA
+pA
+pA
+pA
 Hi
 "}
 (5,1,1) = {"
@@ -7371,19 +7254,19 @@ Hi
 Hi
 Hi
 Hi
-JH
-JH
 Tb
-aF
-aF
-RK
-Bk
-AZ
-Aj
-AZ
-Bk
-kl
-JH
+Tb
+Tb
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
 Hi
 "}
 (6,1,1) = {"
@@ -7593,19 +7476,19 @@ Hi
 Hi
 Hi
 Hi
-JH
 Tb
-vP
-kn
-Bk
-cg
-Bk
-Aj
-Aj
-Aj
-Bk
-cg
-JH
+Tb
+Tb
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
 Hi
 "}
 (7,1,1) = {"
@@ -7815,19 +7698,19 @@ Hi
 Hi
 Hi
 Hi
-JH
-kl
-gv
-gc
-Bk
-xV
-Bk
-Bk
-Bk
-Bk
-Bk
-LB
-JH
+Tb
+Tb
+Tb
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
 Hi
 "}
 (8,1,1) = {"
@@ -8037,19 +7920,19 @@ VE
 VE
 VE
 Hi
-JH
-id
-eC
-gR
-Bk
-MJ
-Bk
-Aj
-Aj
-Aj
-Bk
-MJ
-JH
+Tb
+Tb
+Tb
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
 Hi
 "}
 (9,1,1) = {"
@@ -8260,18 +8143,18 @@ gw
 VE
 VE
 gt
-JH
-id
-aF
-aF
-RK
-Bk
-Yp
-Aj
-Yp
-Bk
-kl
-JH
+Tb
+Tb
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
 Hi
 "}
 (10,1,1) = {"
@@ -8484,16 +8367,16 @@ KD
 fP
 yH
 gt
-JH
-JH
-id
-aF
-aF
-aF
-aF
-aF
+rS
 pA
-JH
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
 Hi
 "}
 (11,1,1) = {"
@@ -8707,15 +8590,15 @@ fP
 fP
 fP
 rS
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
-JH
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
 Hi
 "}
 (12,1,1) = {"
@@ -8928,16 +8811,16 @@ KV
 IS
 sO
 ns
-yH
-gt
-gt
-gt
-gt
-gt
-gt
-VE
-VE
-Hi
+rS
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
 Hi
 "}
 (13,1,1) = {"
@@ -9150,16 +9033,16 @@ VE
 VE
 eJ
 ui
-DQ
-DQ
-DQ
-DQ
-DQ
-CE
-VE
-VE
-Hi
-Hi
+rS
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
 Hi
 "}
 (14,1,1) = {"
@@ -9372,16 +9255,16 @@ VE
 gO
 NH
 fP
-fP
-JN
-JL
-JN
-JL
-ns
-VE
-Hi
-Hi
-Hi
+rS
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
 Hi
 "}
 (15,1,1) = {"
@@ -9594,16 +9477,16 @@ VE
 DM
 fP
 fP
-fP
-fP
-fP
-fP
-fP
-Ky
-VE
-Hi
-Hi
-Hi
+kn
+gc
+gc
+gc
+gc
+gc
+gc
+pA
+pA
+pA
 Hi
 "}
 (16,1,1) = {"
@@ -9816,16 +9699,16 @@ VE
 KV
 IS
 sO
-fP
-JL
-JN
-JN
-JN
-ns
+DQ
+DQ
+DQ
+DQ
+DQ
+CE
 VE
-Hi
-Hi
-Hi
+VE
+VE
+VE
 Hi
 "}
 (17,1,1) = {"
@@ -10039,11 +9922,11 @@ VE
 VE
 KD
 fP
-fP
-fP
-fP
-qM
-Rq
+JN
+JL
+JN
+JL
+ns
 VE
 Hi
 Hi
@@ -10260,12 +10143,12 @@ qA
 JI
 VE
 rP
-IS
-IS
-IS
-aA
-Rq
-VE
+fP
+fP
+fP
+fP
+fP
+Ky
 VE
 Hi
 Hi
@@ -10482,13 +10365,13 @@ qA
 JI
 VE
 VE
-nB
-nB
+fP
+JL
+JN
+JN
+JN
+ns
 VE
-VE
-VE
-VE
-Hi
 Hi
 Hi
 Hi
@@ -10704,13 +10587,13 @@ qA
 JI
 JI
 VE
-MM
-OE
+fP
+fP
+fP
+fP
+qM
+Rq
 VE
-Hi
-Hi
-Hi
-Hi
 Hi
 Hi
 Hi
@@ -10926,13 +10809,13 @@ qA
 JI
 JX
 VE
-Aa
-eL
+IS
+IS
+IS
+aA
+Rq
 VE
-Hi
-Hi
-Hi
-Hi
+VE
 Hi
 Hi
 Hi
@@ -11148,12 +11031,12 @@ qA
 JI
 JI
 VE
-Ws
-eL
+nB
+nB
 VE
-Hi
-Hi
-Hi
+VE
+VE
+VE
 Hi
 Hi
 Hi

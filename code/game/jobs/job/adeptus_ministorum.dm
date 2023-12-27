@@ -13,8 +13,9 @@
 	latejoin_at_spawnpoints = TRUE
 	supervisors = "The Missionarus Galaxia and the Ecclesiarchy"
 	selection_color = "#FCFBFA"
-	access = list(access_heads, access_advchapel)
-	minimal_access = list(access_heads, access_advchapel)
+	access = list(213 , 211, 213, 333, access_medical, access_heads,
+			access_abbess, access_RC_announce,
+			access_keycard_auth, access_guard_common, access_village, access_advchapel)
 	announced = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/confessor
 	auto_rifle_skill = 6
@@ -33,7 +34,7 @@
 		H.fully_replace_character_name("Deacon [current_name]")
 		H.add_stats(rand(12,16), rand(12,16), rand(12,16), rand(14,18)) //frail and holy
 		H.add_skills(rand(5,10),rand(5,6),rand(5,7),3,rand(4,8))
-		H.get_idcard()?.access = list(access_heads, access_security, access_guard_common, access_all_personal_lockers, access_village, access_advchapel,)
+		H.get_idcard()?.access = list(213 , 211, 213, 333, access_heads, access_security, access_guard_common, access_all_personal_lockers, access_village, access_advchapel,)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.set_trait(new/datum/trait/death_tolerant())
@@ -265,6 +266,9 @@
 	"Order of the Bloody Rose" = /decl/hierarchy/outfit/job/sisterofbattle/brsister,
 	"Order of Our Martyred Lady" = /decl/hierarchy/outfit/job/sisterofbattle/mlsister,
 		)
+	access = list(213 , 211, 213, 333, access_medical, access_heads,
+			access_abbess, access_RC_announce,
+			access_keycard_auth, access_guard_common, access_village, access_advchapel)
 	auto_rifle_skill = 10
 	semi_rifle_skill = 10
 	sniper_skill = 10
@@ -282,7 +286,7 @@
 		//"BUT THEY ARE DIVINE!!!" don't care, Sister superior is human, stop simping, im still giving them very GOOD stats.
 		H.add_stats(rand(18,22), rand(18,22), rand(18,20), 16)
 		H.add_skills(rand(9,12),rand(9,12),rand(7,9),rand(4,8),rand(4,7)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = list(access_heads, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_advchapel, access_medical, access_village)
+		H.get_idcard()?.access = list(213 , 211, 213, 333, access_heads, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_advchapel, access_medical, access_village)
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
@@ -324,7 +328,7 @@
 	open_when_dead = FALSE
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_medical, access_heads,
+	access = list(213 , 211, 213, 333, access_medical, access_heads,
 			access_abbess, access_RC_announce,
 			access_keycard_auth, access_guard_common, access_village, access_advchapel)
 	minimal_access = list(access_medical, access_heads,
@@ -346,7 +350,7 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,18), rand(14,18), rand(13,17), rand(17,18)) //nice stats
 		H.add_skills(rand(6,8),rand(6,8),rand(8,10),rand(3,5),rand(9,11)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = list(access_medical, access_village, access_abbess)
+		H.get_idcard()?.access = list(213 , 211, 213, 333, access_medical, access_village, access_abbess)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
@@ -378,7 +382,7 @@
 	open_when_dead = FALSE
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_advchapel, access_medical, access_village)
+	access = list(213 , 211, access_advchapel, access_medical, access_village)
 	minimal_access = list(access_advchapel, access_medical, access_village)
 	outfit_type = /decl/hierarchy/outfit/job/novice
 	alt_titles = list(
@@ -399,7 +403,7 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(12,15), rand(12,15), rand(12,15), rand (12,15)) //Has not begun their training with the sisters yet.
 		H.add_skills(rand(5,7),rand(5,7),rand(5,7),rand(1,3),rand(5,7)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = list(access_medical, access_village)
+		H.get_idcard()?.access = list(213 , 211, access_medical, access_village)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)

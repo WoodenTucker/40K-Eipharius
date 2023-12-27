@@ -660,9 +660,6 @@
 /obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
 /obj/item/storage/firstaid/toxin{
-	pixel_y = -6
-	},
-/obj/item/storage/firstaid/toxin{
 	pixel_y = 6
 	},
 /obj/machinery/light/small{
@@ -2584,7 +2581,6 @@
 	color = "grey";
 	req_one_access = list(10,63,211)
 	},
-/obj/item/storage/belt/medical/full,
 /obj/item/stack/nanopaste,
 /turf/simulated/floor/darkfloor{
 	dir = 4
@@ -3240,8 +3236,8 @@
 	color = "#36261B"
 	},
 /obj/item/clothing/accessory/holster/armpit,
-/obj/item/device/radio/headset/headset_cargo,
 /obj/item/card/id/key/middle/ganger,
+/obj/item/device/radio/headset/heads/rt,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "lo" = (
@@ -4373,9 +4369,6 @@
 "pz" = (
 /obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
-/obj/item/storage/firstaid/fire{
-	pixel_y = -8
-	},
 /obj/item/storage/firstaid/fire{
 	pixel_y = 6
 	},
@@ -5656,7 +5649,6 @@
 	color = "grey";
 	req_one_access = list(10,63,211)
 	},
-/obj/item/storage/belt/medical/full,
 /obj/item/stack/nanopaste,
 /obj/machinery/light/small,
 /turf/simulated/floor/darkfloor{
@@ -6823,11 +6815,11 @@
 /obj/item/clothing/accessory/storage/black_vest,
 /obj/item/clothing/head/bowlerhat,
 /obj/item/card/id/key/grand{
-	access = list(267,268,269,270,355,271,272,273);
+	access = list(355,268,225,267,268,269,270,355,271,272,273);
 	name = "Underboss Key"
 	},
 /obj/item/card/id/key/grand{
-	access = list(267,268,269,270,355,271,272,273);
+	access = list(355,268,225,267,268,269,270,355,271,272,273);
 	name = "Underboss Key"
 	},
 /obj/structure/closet/hive/metal{
@@ -6986,9 +6978,6 @@
 "zO" = (
 /obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
-/obj/item/storage/firstaid/regular{
-	pixel_y = -7
-	},
 /obj/item/storage/firstaid/regular{
 	pixel_y = 7
 	},
@@ -7749,6 +7738,10 @@
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
+/area/cadiaoutpost/oa/hangarpact2)
+"CV" = (
+/obj/structure/sign/directions/evac,
+/turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/hangarpact2)
 "CW" = (
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -9012,7 +9005,7 @@
 	dir = 1
 	},
 /obj/item/card/id/key/grand{
-	access = list(267,268,269,270,355,271,272,273);
+	access = list(355,268,225,267,268,269,270,355,271,272,273);
 	name = "Underboss Key"
 	},
 /turf/simulated/floor/darkwood,
@@ -10375,7 +10368,8 @@
 "MB" = (
 /obj/machinery/computer/shuttle_control/ferry/roguet{
 	icon = 'icons/map_project/ship/ship_equipment.dmi';
-	icon_state = "1,011"
+	icon_state = "1,011";
+	req_one_access = list(225)
 	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -11278,6 +11272,13 @@
 "Qh" = (
 /turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/oa/hallway/northern)
+"Qi" = (
+/obj/structure/sign/directions/evac,
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "Qk" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 4
@@ -13750,6 +13751,10 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
+"Zh" = (
+/obj/structure/sign/directions/security,
+/turf/simulated/wall/concrete,
+/area/cadiaoutpost/oa/shuttle/station1)
 "Zi" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/bed{
@@ -44577,12 +44582,12 @@ vt
 vt
 Rd
 Jn
-ST
+Qi
 AY
 AY
 AY
 AY
-ST
+Qi
 Jn
 HU
 Wk
@@ -45088,10 +45093,10 @@ Vc
 Vc
 Vc
 fR
-Rd
+CV
 Bb
 Bb
-rL
+Zh
 Bf
 Qp
 Qp
@@ -75691,7 +75696,7 @@ vL
 IR
 tX
 PH
-dR
+BF
 dR
 dR
 dR
@@ -75943,7 +75948,7 @@ LC
 Mb
 df
 PH
-dR
+Or
 Or
 PH
 MB

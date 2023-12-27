@@ -620,7 +620,7 @@ Pilgrim Fate System
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MAX
 	announced = 0
-	access = list(access_bar, access_village, access_daemon)
+	access = list(247, access_bar, access_village, access_daemon)
 	minimal_access = list(access_bar, access_village, access_daemon)
 	minimal_player_age = 3
 	ideal_character_age = 40
@@ -631,6 +631,7 @@ Pilgrim Fate System
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
+		H.get_idcard()?.access = list(247, access_bar, access_village, access_daemon)
 		H.fully_replace_character_name("[current_name] Sondar")
 		H.add_stats(rand(14,17), rand(14,17), rand(14,17), rand(12,16)) 
 		H.add_skills(rand(7,11),rand(7,11),rand(2,8),6,rand(2,8)) //melee, ranged, med, eng, surgery
@@ -651,8 +652,8 @@ Pilgrim Fate System
 	open_when_dead = 0
 	supervisors = "Your own morality and ethics."
 	selection_color = "#848484"
-	access = list(access_bar,)
-	minimal_access = list(access_bar)
+	access = list(253)
+	minimal_access = list(253)
 	outfit_type = /decl/hierarchy/outfit/job/administrator
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
@@ -661,6 +662,7 @@ Pilgrim Fate System
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
+		H.get_idcard()?.access = list(253)
 		H.add_stats(rand(15,17), rand(16,17), rand(10,13), rand (16,18)) //strong stats due to their... interesting fame of being cult leaders
 		H.add_skills(rand(7,9),rand(7,10),rand(4,6),4,rand(6,8)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -670,13 +672,13 @@ Pilgrim Fate System
 		to_chat(H, "<span class='notice'><b><font size=3>Having arrived recently from the spires of Necromunda. You, a former courtier, sought to establish something of a collection here with your remaining wealth. For whatever reason the dark, insidious and terrible aspects of this planet intrigued you enough to abandon your world and seek out... Eipharius.</font></b></span>")
 
 /datum/job/villagemedicae
-	title = "Village Medicae"
+	title = "Biologis Medicae"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MED
 	total_positions = 3
 	spawn_positions = 3
 	open_when_dead = 0
-	supervisors = "Your own morality and ethics."
+	supervisors = "The Magos Biologis."
 	selection_color = "#848484"
 	access = list(access_bar,)
 	minimal_access = list(access_bar)
@@ -694,7 +696,7 @@ Pilgrim Fate System
 		H.adjustStaminaLoss(-INFINITY)
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.assign_random_quirk()
-		to_chat(H, "<span class='notice'><b><font size=3>An experienced medicae from your homeworld, you are one of many who booked passage to Eipharius in the hopes of building industries of medicine on a new world.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>An experienced medicae from your homeworld, you are one of many who booked passage to Eipharius in the hopes of building industries of medicine on a new world. You serve directly under the Magos Biologis who commands over the medicae of this world.</font></b></span>")
 
 
 //loadouts below here

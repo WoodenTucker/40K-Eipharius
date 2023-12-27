@@ -18,7 +18,8 @@
 	backpack_contents = list(
 	/obj/item/storage/box/ids = 1,
 	/obj/item/stack/thrones/ten = 1,
-	/obj/item/reagent_containers/food/snacks/bigbiteburger
+	/obj/item/reagent_containers/food/snacks/bigbiteburger,
+	/obj/item/device/flashlight/lantern = 1
 )
 
 /decl/hierarchy/outfit/job/scion
