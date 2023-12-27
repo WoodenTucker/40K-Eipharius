@@ -190,12 +190,7 @@
 
 	amount_per_transfer_from_this = 50
 	volume = 200
-	var/blood_type = "O-"
-
-/obj/item/reagent_containers/hypospray/autoinjector/blood/New()
-	..()
-	if(blood_type)
-		reagents.add_reagent(/datum/reagent/nanoblood)
+	starts_with = list(/datum/reagent/nanoblood = 200)
 
 /obj/item/reagent_containers/hypospray/autoinjector/blood/large
 	name = "large nanoblood injector"
@@ -205,12 +200,7 @@
 
 	amount_per_transfer_from_this = 50
 	volume = 500
-	var/blood_type = "O-"
-
-/obj/item/reagent_containers/hypospray/autoinjector/blood/New()
-	..()
-	if(blood_type)
-		reagents.add_reagent(/datum/reagent/nanoblood)
+	starts_with = list(/datum/reagent/nanoblood = 500)
 
 /obj/item/reagent_containers/hypospray/autoinjector/morphine
 	name = "morphine syrette"
