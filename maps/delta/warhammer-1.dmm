@@ -921,7 +921,7 @@
 	icon_state = "corner_white";
 	dir = 1
 	},
-/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+/area/cadiaoutpost/oa/hangarpact)
 "dI" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -948,9 +948,12 @@
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "dK" = (
-/obj/item/newore/silverore,
-/turf/unsimulated/miningtime,
-/area/cadiaoutpost/new_hive/caves)
+/mob/living/simple_animal/hostile/flesh/abomination,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "m";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "dM" = (
 /obj/machinery/light{
 	icon_state = "tube1";
@@ -1157,8 +1160,9 @@
 /area/cadiaoutpost/oa/hangarpact)
 "es" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/gun/energy/las/hotshot,
 /obj/structure/closet/crate,
+/obj/random/loot/goodweapon,
+/obj/random/loot/goodweapon,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -1899,15 +1903,16 @@
 /turf/simulated/wall/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "gZ" = (
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "scraplock";
-	name = "External Blast Doors";
-	opacity = 0
+/obj/item/clothing/shoes/jackboots/maccabian,
+/obj/item/clothing/shoes/jackboots/maccabian,
+/obj/item/clothing/shoes/jackboots/maccabian,
+/obj/item/clothing/gloves/thick/swat/combat/maccabian,
+/obj/item/clothing/gloves/thick/swat/combat/maccabian,
+/obj/item/clothing/gloves/thick/swat/combat/maccabian,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/turf/simulated/wall,
-/area/cadiaoutpost/oa/hangarpact2)
+/area/cadiaoutpost/oa/hangarpact)
 "ha" = (
 /obj/structure/table/steel,
 /obj/item/device/boombox,
@@ -1952,7 +1957,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+/area/cadiaoutpost/oa/hangarpact)
 "hk" = (
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/tiled{
@@ -2056,7 +2061,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+/area/cadiaoutpost/oa/hangarpact)
 "hC" = (
 /obj/effect/floor_decal/turf/cafe{
 	color = "grey"
@@ -3545,7 +3550,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+/area/cadiaoutpost/oa/hangarpact)
 "mt" = (
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/ship_floor/steel{
@@ -3714,10 +3719,6 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
-"mW" = (
-/obj/structure/lattice,
-/turf/simulated/floor,
-/area/cadiaoutpost/oa/hangarpact2)
 "mY" = (
 /obj/structure/railing{
 	dir = 8
@@ -3865,7 +3866,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/hangarpact2)
+/area/cadiaoutpost/oa/hangarpact)
 "nz" = (
 /obj/machinery/atmospherics/unary/cryo_cell{
 	color = "grey"
@@ -4267,9 +4268,6 @@
 /area/cadiaoutpost/new_hive/caves)
 "oR" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark{
-	name = "bloodstart"
-	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -4907,9 +4905,6 @@
 	},
 /obj/item/handcuffs,
 /obj/item/handcuffs,
-/obj/item/grenade/spawnergrenade/bugs,
-/obj/item/grenade/spawnergrenade/bugs,
-/obj/item/grenade/spawnergrenade/bugs,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -6040,6 +6035,7 @@
 /obj/item/storage/fancy/cigarettes,
 /obj/item/storage/fancy/cigarettes,
 /obj/structure/table/graf/polished_table,
+/obj/random/exploration/high,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "vg" = (
@@ -6055,29 +6051,16 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "vj" = (
-/obj/structure/grille,
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "scraplock";
-	name = "External Blast Doors";
-	opacity = 0
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced,
-/obj/machinery/door/firedoor,
+/obj/item/clothing/head/helmet/maccabian,
+/obj/item/clothing/head/helmet/maccabian,
+/obj/item/clothing/head/helmet/maccabian,
+/obj/item/clothing/mask/gas/maccabian,
+/obj/item/clothing/mask/gas/maccabian,
+/obj/item/clothing/mask/gas/maccabian,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/hangarpact2)
+/area/cadiaoutpost/oa/hangarpact)
 "vk" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -6344,7 +6327,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+/area/cadiaoutpost/oa/hangarpact)
 "wu" = (
 /obj/flamer_fire{
 	burnlevel = 22;
@@ -6353,12 +6336,6 @@
 /obj/effect/floor_decal/turf/basalt9,
 /turf/simulated/floor/airless/lava,
 /area/cadiaoutpost/oa/caves/undercity)
-"ww" = (
-/obj/machinery/computer/shuttle_control/ferry/bloodpact,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "wy" = (
 /obj/machinery/door/airlock/arbiter{
 	color = "grey";
@@ -6493,24 +6470,11 @@
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "xb" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_y = 0
+/mob/living/simple_animal/hostile/flesh/stalker2,
+/turf/simulated/floor/plating{
+	icon_state = "evil"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/item/grenade/frag/high_yield/krak,
-/obj/item/grenade/frag/high_yield/krak,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/hangarpact)
+/area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "xe" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -6763,9 +6727,15 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "yj" = (
-/obj/item/newore/copperore,
-/turf/unsimulated/miningtime,
-/area/cadiaoutpost/new_hive/caves)
+/obj/item/card/id/syndicate,
+/obj/item/card/id/syndicate,
+/obj/item/card/id/syndicate,
+/obj/item/card/id/syndicate,
+/obj/item/card/id/syndicate,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/hangarpact)
 "yk" = (
 /obj/structure/sewers/pipeflow{
 	color = "grey"
@@ -7143,6 +7113,7 @@
 	},
 /obj/item/plastique,
 /obj/item/plastique,
+/obj/item/plastique,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -7387,12 +7358,16 @@
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "An" = (
-/mob/living/simple_animal/hostile/smalldemon/chaos,
-/turf/simulated/floor/ship_floor/steel{
-	icon_state = "m";
-	icon = 'icons/map_project/ship/tilesnovos.dmi'
+/obj/item/clothing/suit/armor/maccabian,
+/obj/item/clothing/suit/armor/maccabian,
+/obj/item/clothing/suit/armor/maccabian,
+/obj/item/clothing/suit/armor/maccabian,
+/obj/item/clothing/suit/armor/maccabian,
+/obj/item/clothing/suit/armor/maccabian,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/area/cadiaoutpost/oa/engineering/engine/enginewaste)
+/area/cadiaoutpost/oa/hangarpact)
 "Ap" = (
 /obj/structure/table/rack/dark,
 /obj/random/loot/sidearmammo,
@@ -7946,7 +7921,7 @@
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "Ci" = (
 /turf/simulated/shuttle/wall/corner/dark/ne,
-/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+/area/cadiaoutpost/oa/hangarpact)
 "Cj" = (
 /obj/structure/shipdecor{
 	icon_state = "off"
@@ -8486,9 +8461,16 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "DX" = (
-/obj/item/ore/diamond,
-/turf/unsimulated/miningtime,
-/area/cadiaoutpost/new_hive/caves)
+/obj/machinery/light/small/red{
+	dir = 8;
+	icon_state = "bulb1"
+	},
+/mob/living/simple_animal/hostile/flesh/abomination,
+/turf/simulated/floor/ship_floor/steel{
+	icon_state = "m";
+	icon = 'icons/map_project/ship/tilesnovos.dmi'
+	},
+/area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "DY" = (
 /obj/machinery/door/airlock/glass_arbiter{
 	color = "grey"
@@ -8961,9 +8943,23 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "Fz" = (
-/obj/item/newore/ironore,
-/turf/unsimulated/miningtime,
-/area/cadiaoutpost/new_hive/caves)
+/obj/item/clothing/under/rank/maccabian,
+/obj/item/clothing/under/rank/maccabian,
+/obj/item/clothing/under/rank/maccabian,
+/obj/item/clothing/under/rank/maccabian,
+/obj/item/clothing/under/rank/maccabian,
+/obj/item/clothing/under/rank/maccabian,
+/obj/item/card/id/dog_tag/guardsman,
+/obj/item/card/id/dog_tag/guardsman,
+/obj/item/card/id/dog_tag/guardsman,
+/obj/item/card/id/dog_tag/guardsman,
+/obj/item/card/id/dog_tag/guardsman,
+/obj/item/card/id/dog_tag/guardsman,
+/obj/item/card/id/dog_tag/guardsman,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/hangarpact)
 "FC" = (
 /obj/machinery/door/blast/bordergatec/closed{
 	id = "pactgate";
@@ -9307,7 +9303,7 @@
 	color = "grey";
 	icon_state = "wall3"
 	},
-/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+/area/cadiaoutpost/oa/hangarpact)
 "GM" = (
 /obj/structure/closet/hive/iron_c{
 	anchored = 1
@@ -9482,7 +9478,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+/area/cadiaoutpost/oa/hangarpact)
 "Ho" = (
 /obj/item/bedsheet/blue,
 /obj/structure/bed,
@@ -9957,11 +9953,10 @@
 	icon_state = "capchair_preview";
 	name = "pilot seat"
 	},
-/obj/effect/shuttle_landmark/ferry/bloodpact_start,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+/area/cadiaoutpost/oa/hangarpact)
 "IS" = (
 /obj/effect/floor_decal/turf/surgery2,
 /obj/structure/table/marble{
@@ -10004,7 +9999,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "Ja" = (
 /turf/simulated/shuttle/wall/corner/dark/nw,
-/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+/area/cadiaoutpost/oa/hangarpact)
 "Jf" = (
 /mob/living/simple_animal/hostile/undead,
 /turf/simulated/floor/plating{
@@ -10366,7 +10361,7 @@
 	icon_state = "corner_white";
 	dir = 6
 	},
-/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+/area/cadiaoutpost/oa/hangarpact)
 "Kl" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/alarm{
@@ -10690,7 +10685,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/hangarpact2)
+/area/cadiaoutpost/oa/hangarpact)
 "Lt" = (
 /obj/effect/floor_decal/turf/cafe{
 	color = "grey"
@@ -10906,14 +10901,6 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "Mj" = (
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/hangarpact)
-"Mk" = (
-/obj/effect/landmark{
-	name = "bloodstart"
-	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -11735,7 +11722,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+/area/cadiaoutpost/oa/hangarpact)
 "Pq" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/item/reagent_containers/food/snacks/soylentgreen{
@@ -12118,8 +12105,12 @@
 	},
 /area/cadiaoutpost/oa/hangarpact)
 "QC" = (
-/turf/simulated/floor,
-/area/cadiaoutpost/oa/hangarpact2)
+/mob/living/simple_animal/hostile/giant_spider/flesh,
+/mob/living/simple_animal/hostile/giant_spider/flesh,
+/turf/unsimulated/oldship{
+	icon_state = "rwall1"
+	},
+/area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "QE" = (
 /obj/random/loot/tech1,
 /turf/simulated/floor/stone,
@@ -12280,6 +12271,7 @@
 "Ru" = (
 /obj/structure/closet/crate/secure/large,
 /obj/random/tech_supply,
+/obj/random/exploration/high,
 /turf/simulated/floor/ship_floor/engines{
 	dir = 5
 	},
@@ -12289,7 +12281,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+/area/cadiaoutpost/oa/hangarpact)
 "Rx" = (
 /obj/structure/closet/crate,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -12581,13 +12573,16 @@
 	},
 /area/cadiaoutpost/oa/shuttle/mechanicus)
 "SN" = (
-/obj/item/grenade/frag/high_yield/krak,
-/obj/item/grenade/frag/high_yield/krak,
-/obj/item/grenade/frag/high_yield/krak,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/crate,
 /obj/item/gun/launcher/rcl_rifle,
 /obj/item/ammo_casing/heat_shell,
+/obj/item/grenade/frag/high_yield/krak2,
+/obj/item/grenade/frag/high_yield/krak2,
+/obj/item/grenade/frag/high_yield/krak2,
+/obj/item/grenade/frag/high_yield/krak2,
+/obj/item/grenade/frag/high_yield/krak2,
+/obj/item/grenade/frag/high_yield/krak2,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -12742,10 +12737,6 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
-"Tq" = (
-/obj/item/newore/gems/quartz,
-/turf/unsimulated/miningtime,
-/area/cadiaoutpost/new_hive/caves)
 "Tr" = (
 /obj/machinery/light{
 	icon_state = "tube1";
@@ -12834,17 +12825,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/corner/white/diagonal,
 /obj/effect/decal/cleanable/blood/gibs/vomit,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/hangarpact)
-"TK" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 8
-	},
-/obj/effect/landmark{
-	name = "bloodstart"
-	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -13405,7 +13385,7 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "VE" = (
-/mob/living/simple_animal/hostile/smalldemon/bubblingmass,
+/mob/living/simple_animal/hostile/flesh/advanced,
 /turf/simulated/floor/plating{
 	icon_state = "evil"
 	},
@@ -13436,7 +13416,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+/area/cadiaoutpost/oa/hangarpact)
 "VJ" = (
 /turf/simulated/floor/stone/seabed,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
@@ -13662,8 +13642,11 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "WE" = (
-/turf/simulated/wall,
-/area/cadiaoutpost/oa/hangarpact2)
+/mob/living/simple_animal/hostile/flesh/stalker,
+/turf/simulated/floor/plating{
+	icon_state = "evil"
+	},
+/area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "WF" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 8;
@@ -14386,17 +14369,6 @@
 	},
 /turf/simulated/floor/ship_floor/steel{
 	icon_state = "m";
-	icon = 'icons/map_project/ship/tilesnovos.dmi'
-	},
-/area/cadiaoutpost/oa/engineering/engine/enginewaste)
-"YR" = (
-/obj/machinery/door/airlock/ancient_ship/command{
-	req_one_access = list();
-	name = "Ancient Door"
-	},
-/mob/living/simple_animal/hostile/nurgling,
-/turf/simulated/floor/ship_floor/steel{
-	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
@@ -16247,7 +16219,7 @@ Ox
 vI
 Ox
 Ox
-Ox
+dK
 Ox
 Ox
 Ap
@@ -16465,7 +16437,7 @@ Qp
 Qp
 ez
 Qp
-ND
+QC
 It
 KH
 Qp
@@ -16494,7 +16466,7 @@ Zs
 Zs
 Os
 Ox
-Ox
+dK
 Ox
 Ox
 Ox
@@ -17253,7 +17225,7 @@ Zs
 bK
 Tu
 Os
-YR
+It
 It
 KH
 et
@@ -17474,7 +17446,7 @@ bc
 Hy
 et
 pN
-An
+Ox
 Ox
 bc
 ER
@@ -17754,7 +17726,7 @@ Hy
 Dy
 Ox
 Ox
-vI
+DX
 Ox
 Ox
 ug
@@ -20278,7 +20250,7 @@ Ox
 Ox
 Nl
 Ox
-Ox
+dK
 Gv
 Xe
 rh
@@ -21296,7 +21268,7 @@ Os
 wR
 rO
 VJ
-rO
+VJ
 rO
 rO
 rO
@@ -21547,7 +21519,7 @@ Qp
 Dy
 wR
 wR
-rO
+VJ
 rO
 rO
 rO
@@ -21799,7 +21771,7 @@ rO
 rO
 rO
 wR
-rO
+VJ
 rO
 rO
 rO
@@ -22051,7 +22023,7 @@ Qp
 Qp
 et
 wR
-rO
+VJ
 rO
 rO
 rO
@@ -22302,8 +22274,8 @@ Mv
 tc
 sH
 Os
-wR
-rO
+VJ
+VJ
 rO
 rO
 rO
@@ -22554,7 +22526,7 @@ oY
 rr
 ly
 Os
-wR
+VJ
 rO
 rO
 rO
@@ -22806,7 +22778,7 @@ xt
 rr
 rr
 Os
-wR
+VJ
 hI
 hI
 hI
@@ -23058,7 +23030,7 @@ eD
 Qp
 Qp
 Dy
-wR
+VJ
 hI
 hI
 hI
@@ -23310,7 +23282,7 @@ Os
 rO
 rO
 rO
-wR
+VJ
 hI
 hI
 hI
@@ -23562,7 +23534,7 @@ Gf
 Qp
 Qp
 et
-wR
+VJ
 hI
 hI
 hI
@@ -23814,7 +23786,7 @@ Mv
 tc
 sH
 Os
-wR
+VJ
 hI
 hI
 hI
@@ -24066,7 +24038,7 @@ oY
 rr
 ly
 Os
-wR
+VJ
 hI
 hI
 hI
@@ -24317,8 +24289,8 @@ Lm
 xt
 rr
 rr
-Os
-wR
+VJ
+VJ
 hI
 hI
 hI
@@ -25308,7 +25280,7 @@ Ox
 Os
 hv
 Bm
-Bm
+WE
 Bm
 Fe
 KH
@@ -25550,7 +25522,7 @@ Bm
 pt
 pt
 Bm
-Bm
+xb
 pt
 pt
 Bm
@@ -59433,7 +59405,7 @@ hI
 cL
 bC
 hI
-DX
+hI
 hI
 hI
 hI
@@ -59687,7 +59659,7 @@ yA
 yA
 yA
 yA
-DX
+hI
 hI
 hI
 hI
@@ -61711,8 +61683,8 @@ hI
 hI
 hI
 hI
-tW
-DX
+hI
+hI
 hI
 hI
 hI
@@ -62673,10 +62645,10 @@ Nk
 jN
 WY
 oR
-xb
+Gc
 OK
 rv
-Mk
+Mj
 Ei
 tR
 Mj
@@ -62930,11 +62902,11 @@ AZ
 ev
 Kz
 gk
-tR
 Mj
 Mj
 Mj
-Mj
+vj
+gZ
 tF
 tR
 tR
@@ -63176,17 +63148,17 @@ hK
 OQ
 jN
 WY
-TK
+RE
 KA
 kL
 WL
-Mk
+Mj
 Rx
 tR
 pf
-Mj
-Mj
-Mj
+yj
+vj
+gZ
 nX
 ub
 tR
@@ -63437,8 +63409,8 @@ pF
 tR
 pf
 Mj
-Mj
-Mj
+An
+Fz
 HI
 wT
 tR
@@ -64166,17 +64138,17 @@ mj
 mj
 jN
 jN
-vj
-WE
-WE
-mW
-WE
-WE
+wl
+jN
+jN
+Nd
+jN
+jN
 ny
 Ls
-WE
-gZ
-gZ
+jN
+fS
+fS
 fS
 jN
 jN
@@ -64245,7 +64217,7 @@ yA
 yA
 yA
 yA
-yj
+hI
 hI
 hI
 hI
@@ -64418,17 +64390,17 @@ Tc
 mj
 mj
 mj
-QC
-QC
-QC
-QC
+mj
+mj
+mj
+mj
 Ja
 GL
 Rv
 GL
 GL
 dH
-mW
+Nd
 Nd
 jN
 jN
@@ -64497,7 +64469,7 @@ yA
 OG
 OG
 yA
-Fz
+hI
 hI
 hI
 hI
@@ -64670,7 +64642,7 @@ Tc
 mj
 mj
 mj
-QC
+mj
 Ja
 GL
 GL
@@ -64680,7 +64652,7 @@ hh
 hh
 VI
 GL
-mW
+Nd
 Nd
 jN
 jN
@@ -64749,7 +64721,7 @@ yA
 yA
 yA
 yA
-dK
+hI
 hI
 hI
 hI
@@ -64922,9 +64894,9 @@ Tc
 mj
 mj
 mj
-QC
+mj
 Hn
-ww
+VI
 IQ
 VI
 Pp
@@ -64932,7 +64904,7 @@ wt
 mr
 VI
 GL
-mW
+Nd
 Nd
 jN
 jN
@@ -65001,7 +64973,7 @@ yA
 yA
 Pj
 yA
-Fz
+hI
 hI
 hI
 hI
@@ -65174,7 +65146,7 @@ Tc
 mj
 mj
 mj
-QC
+mj
 Ci
 GL
 GL
@@ -65184,7 +65156,7 @@ hA
 hA
 VI
 GL
-QC
+mj
 Nd
 jN
 jN
@@ -65426,17 +65398,17 @@ Tc
 mj
 mj
 mj
-QC
-QC
-QC
-QC
+mj
+mj
+mj
+mj
 Ci
 GL
 GL
 GL
 GL
 Kj
-QC
+mj
 mj
 mj
 mj
@@ -65678,17 +65650,17 @@ Tc
 mj
 mj
 mj
-QC
-QC
-QC
-WE
-QC
-QC
-QC
-QC
-QC
-QC
-QC
+mj
+mj
+mj
+jN
+mj
+mj
+mj
+mj
+mj
+mj
+mj
 mj
 mj
 mj
@@ -69533,7 +69505,7 @@ jb
 yA
 yA
 yA
-tW
+hI
 hI
 hI
 jU
@@ -69785,7 +69757,7 @@ jb
 yA
 yA
 yA
-Tq
+hI
 hI
 hI
 hI
@@ -70037,7 +70009,7 @@ jb
 yA
 yA
 yA
-DX
+hI
 hI
 hI
 hI
@@ -75546,8 +75518,8 @@ hI
 hI
 hI
 hI
-tW
-dK
+hI
+hI
 hI
 hI
 hI
@@ -76296,7 +76268,7 @@ kk
 hI
 hI
 hI
-yj
+hI
 yA
 yA
 yA
@@ -76548,7 +76520,7 @@ hI
 hI
 hI
 hI
-tW
+hI
 yA
 PN
 PN
@@ -76800,7 +76772,7 @@ hI
 hI
 jU
 hI
-tW
+hI
 yA
 yA
 yA

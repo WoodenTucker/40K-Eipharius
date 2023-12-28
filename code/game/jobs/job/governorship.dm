@@ -14,7 +14,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	supervisors = "The Golden Throne and the High Lords of Terra."
 	selection_color = "#540c97"
 	req_admin_notify = 1
-	access = list(20, 331, access_RC_announce, access_ai_upload, access_heads) 			//See get_access()
+	access = list(20, 331, 333, 63, access_RC_announce, access_ai_upload, access_heads) 			//See get_access()
 	minimal_access = list(20, 331, access_RC_announce, access_ai_upload, access_heads)
 	minimal_player_age = 65
 	economic_modifier = 20
@@ -28,13 +28,13 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	shotgun_skill = 7
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 5 // we want funny inq vs nonsense
+	cultist_chance = 7 // we want funny inq vs nonsense
 
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Governor [current_name]")
+		H.fully_replace_character_name("Governor [current_name] de Burgen")
 		H.add_stats(rand(14,18), rand(14,18), rand(14,18), rand(14,18))
 		H.add_skills(rand(6,10),rand(6,10),rand(5,6),rand(1,8),rand(1,8)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -75,7 +75,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Lord [current_name]") //
+		H.fully_replace_character_name("Lord [current_name] de Burgen") //
 		H.add_stats(rand(12,16), rand(12,16), rand(13,15), rand(13,17))
 		H.add_skills(rand(5,10),rand(5,10),rand(1,8),rand(1,8),rand(1,6)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
@@ -85,7 +85,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		to_chat(H, "<span class='notice'><b><font size=3>You are still young. Orders probably won’t be taken seriously. The next in line to the throne of Eipharius. Waiting simply takes too long. Why not have the Governor simply… fall down some stairs? Make sure the Enforcers and Inquisition don’t get suspicious and have a stable rise to the throne.</font></b></span>")
 		H.verbs += list(
 			/mob/living/carbon/human/proc/servantclass)
-	access = list(access_security, access_guard_common, access_magi,
+	access = list(20, 331, 333, 63, access_security, access_guard_common, access_magi,
 			            access_medical, access_mechanicus, access_change_ids, access_ai_upload, access_heads,
 			            access_all_personal_lockers, access_village, access_bar, access_janitor,
 			            access_kitchen, access_cargo, access_qm, access_hydroponics,
@@ -253,7 +253,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MED
 	announced = 0
-	access = list(access_security, access_guard_common,
+	access = list(20, 331, 333, 63, access_security, access_guard_common,
 			            access_medical, access_mechanicus, access_ai_upload, access_heads,
 			            access_all_personal_lockers, access_village, access_bar, access_janitor,
 			            access_kitchen, access_cargo, access_qm, access_hydroponics,

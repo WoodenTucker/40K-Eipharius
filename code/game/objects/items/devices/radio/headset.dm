@@ -225,8 +225,8 @@
 	desc = "A headset used by the box pushers."
 	icon_state = "cargo_headset"
 	item_state = "headset"
-	ks1type = /obj/item/device/encryptionkey/headset_cargo
-	ks2type = null
+	ks1type = /obj/item/device/encryptionkey/red
+	ks2type = /obj/item/device/encryptionkey/headset_cargo
 
 //basic 'common' vox
 /obj/item/device/radio/headset/headset_service

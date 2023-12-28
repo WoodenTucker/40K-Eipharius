@@ -14,8 +14,8 @@
 	mob_size = MOB_MEDIUM
 	strength = STR_HIGH
 	sexybits_location = BP_GROIN
-	brute_mod = 0.82 // chaos stuff
-	burn_mod = 0.82 //
+	brute_mod = 0.75 // chaos stuff
+	burn_mod = 0.75 //
 
 	inherent_verbs = list(
 	/mob/living/carbon/human/Bloodpact/proc/givebloodstats,
@@ -51,7 +51,7 @@
 		return
 
 	visible_message("[name] Embraces their blessings from The Anarch...")
-	src.add_stats(rand(17,22),rand(17,22),rand(14,17),rand(14,16))
+	src.add_stats(rand(17,22),rand(17,22),rand(15,17),rand(15,16))
 	src.add_skills(rand(11,14),rand(11,14),rand(2,5),5,4) //skills such as melee, ranged, med, eng and surg
 	src.adjustStaminaLoss(-INFINITY)
 	src.update_eyes() //should fix grey vision
