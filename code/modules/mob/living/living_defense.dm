@@ -58,14 +58,18 @@
 		return 100
 
 	var/damage_breakthrough = ((((armor - armour_pen) + 1) ^ -1) * 100) //This subtracts the armour pen from the armour, adds one to the result, then inverts it and turns it into a percentage.
-	else
+	if(prob(50))
 		if(soften_text)
 			show_message("<span class='warning'>[soften_text]</span>")
 		else
 			show_message("<span class='warning'>Your armor softens the blow!</span>")
 
 		playsound(src, "sound/weapons/armorblock[rand(1,4)].ogg", 50, 1, 1)
-	return damage_breakthrough //This will be proportional to the different in armour class and penetration on the round. Equal armour and peentration gives it 50% damage, one more, 33.3% reoccuring, two more, 25%, etc.
+		return damage_breakthrough //This will be proportional to the different in armour class and penetration on the round. Equal armour and peentration gives it 50% damage, one more, 33.3% reoccuring, two more, 25%, etc.
+	else
+		show_message("<span class='warning'>Your armor blocks the blow!</span>")
+		playsound(src, "sound/weapons/armorblockheavy[rand(1,3)].ogg", 50, 1, 1)
+		return 100
 
 
 //Adds two armor values together.
