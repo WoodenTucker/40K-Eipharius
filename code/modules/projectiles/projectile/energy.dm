@@ -316,7 +316,8 @@
 /obj/item/projectile/warpboltcrappy
 	name = "Warp Bolt"
 	icon_state = "warpboltcrappy"
-	damage = 20
+	damage = 30
+	armor_penetration = 30 //warp magics happen to not care much for armor
 	agony = 15 //Its warp magic it hurts more than it really is damaging.
 	eyeblur = 10 //the warp magic disrupts your eyes for a moment.
 	light_power = 4 //It glows because warp idk.

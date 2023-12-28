@@ -4,8 +4,7 @@
 # Case IS important for the rank. However punctuation/spaces are not #
 # Ranks can be anything defined in admin_ranks.txt           ~Carn   #
 # hey, if nylon removes this file again, kill him, please ~walker9   #
-######################################################################
-#EXAMPLE: 
-#walker9 - Host
+###################################################################### 
+UnitI - Host
 
 

@@ -95,8 +95,8 @@
 		icon_state = "sheetp-e"
 
 /obj/item/gun/projectile/pistol/villiers
-	name = "Villiers Pattern Auto-pistol."
-	desc = "This high quality Villiers is chambered in 9mm, crafted with an off planet wood as it's handle and is capable of burst fire, maintaining a high accuracy while doing so."
+	name = "Villiers Pattern stub pistol."
+	desc = "This high quality revolver is chambered in 45., crafted with an off planet wood as its handle.
 	icon_state = "stub2"
 	item_state = "pistol"
 	ammo_type = /obj/item/ammo_casing/c45
@@ -105,9 +105,9 @@
 	magazine_type = /obj/item/ammo_magazine/mc45mm
 	allowed_magazines = /obj/item/ammo_magazine/mc45mm
 
-	fire_delay = 4
-	burst = 2
-	accuracy = 0.4
+	fire_delay = 3
+	burst = 1
+	accuracy = 2
 	sales_price = 25
 
 

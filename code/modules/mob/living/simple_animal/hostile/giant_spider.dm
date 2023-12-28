@@ -7,7 +7,7 @@
 //basic spider mob, these generally guard nests
 /mob/living/simple_animal/hostile/giant_spider
 	name = "giant spider"
-	desc = "Furry and brown, it makes you shudder to look at it. This one has deep red eyes."
+	desc = "Furry and brown, it makes you shudder to look at it. This one has deep red eyes. It is also somewhat venomous"
 	icon_state = "guard"
 	icon_living = "guard"
 	icon_dead = "guard_dead"
@@ -28,7 +28,7 @@
 	heat_damage_per_tick = 20
 	cold_damage_per_tick = 20
 	var/poison_per_bite = 1
-	var/poison_type = /datum/reagent/toxin
+	var/poison_type = /datum/reagent/spidervenom
 	faction = "spiders"
 	var/busy = 0
 	pass_flags = PASS_FLAG_TABLE
@@ -37,7 +37,7 @@
 
 //nursemaids - these create webs and eggs
 /mob/living/simple_animal/hostile/giant_spider/nurse
-	desc = "Furry and beige, it makes you shudder to look at it. This one has brilliant green eyes."
+	desc = "Furry and beige, it makes you shudder to look at it. This one has brilliant green eyes. It is also quite venomous"
 	icon_state = "nurse"
 	icon_living = "nurse"
 	icon_dead = "nurse_dead"
@@ -47,12 +47,12 @@
 	melee_damage_upper = 10
 	poison_per_bite = 2
 	var/atom/cocoon_target
-	poison_type = /datum/reagent/soporific
+	poison_type = /datum/reagent/spidervenom
 	var/fed = 0
 
 //hunters have the most poison and move the fastest, so they can find prey
 /mob/living/simple_animal/hostile/giant_spider/hunter
-	desc = "Furry and black, it makes you shudder to look at it. This one has sparkling purple eyes."
+	desc = " Furry and black, it makes you shudder to look at it. This one has sparkling purple eyes. It is also extremely venomous"
 	icon_state = "hunter"
 	icon_living = "hunter"
 	icon_dead = "hunter_dead"
@@ -72,10 +72,8 @@
 	if(isliving(.))
 		var/mob/living/L = .
 		if(L.reagents)
-			L.reagents.add_reagent(/datum/reagent/toxin, poison_per_bite)
-			if(prob(poison_per_bite))
-				to_chat(L, "<span class='warning'>You feel a tiny prick.</span>")
-				L.reagents.add_reagent(poison_type, 5)
+			L.reagents.add_reagent(/datum/reagent/spidervenom, poison_per_bite)
+
 /*
 /mob/living/simple_animal/hostile/giant_spider/nurse/AttackingTarget()
 	. = ..()

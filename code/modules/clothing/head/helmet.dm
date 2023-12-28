@@ -197,7 +197,7 @@
 	name = "Sentry Helmet"
 	desc = "Used for taking blows to the noggin without getting hurt."
 	armor = list(melee = 55, bullet = 58, laser = 58, energy = 40, bomb = 50, bio = 5, rad = 5)//proteck ya neck
-	str_requirement = 18
+
 
 // Ork
 
