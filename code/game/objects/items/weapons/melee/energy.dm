@@ -289,7 +289,7 @@
 	active_throwforce = 18
 	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
 	force = 34
-	armor_penetration = 30
+	armor_penetration = 90
 	throwforce = 15
 	throw_speed = 1
 	throw_range = 4
