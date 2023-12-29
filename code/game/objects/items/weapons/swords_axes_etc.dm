@@ -522,7 +522,7 @@
 	str_requirement = 14
 	force = 36
 	force_wielded = 44 //warpsword
-	armor_penetration = 25
+	armor_penetration = 75
 	block_chance = 30
 	sharpness = TRUE
 	grab_sound_is_loud = TRUE
