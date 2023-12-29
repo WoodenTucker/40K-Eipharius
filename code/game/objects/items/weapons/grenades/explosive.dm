@@ -218,12 +218,16 @@ obj/mortar/flare/blue
 	num_fragments = 4
 	w_class = ITEM_SIZE_SMALL
 
+/obj/item/grenade/frag/high_yield/krak/proc/on_explosion(var/turf/O)
+	if(explosion_size)
+		explosion(1, 2, 3, explosion_size, round(explosion_size * 2), 0)
+
 /obj/item/grenade/frag/high_yield/krak2
 	name = "Mechanicus Krak Grenade"
 	desc = "A potent anti armor grenade used by the Imperium of Man, mind the blast radius."
 	icon_state = "krak_grenade"
 	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/strong=1)
-	explosion_size = 5
+	explosion_size = 6
 	num_fragments = 6
 	w_class = ITEM_SIZE_SMALL
 
