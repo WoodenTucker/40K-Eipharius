@@ -199,7 +199,7 @@
 	str_requirement = 12
 	force = 32
 	force_wielded = 37
-	armor_penetration = 10
+	armor_penetration = 50
 	block_chance = 15
 	sharp = 1
 	edge = 1
@@ -224,7 +224,7 @@
 	force = 33
 	force_wielded = 38
 	str_requirement = 13
-	armor_penetration = 15
+	armor_penetration = 55
 	block_chance = 20
 
 /obj/item/melee/chain/gold
@@ -237,7 +237,7 @@
 	force = 29
 	force_wielded = 35
 	str_requirement = 13
-	armor_penetration = 10
+	armor_penetration = 50
 
 /obj/item/melee/chain/mercycs
 	name = "Locke Pattern Double-Edged Chainsword"
@@ -250,7 +250,7 @@
 	str_requirement = 13
 	force = 37
 	force_wielded = 42
-	armor_penetration = 25
+	armor_penetration = 65
 	block_chance = 12
 	weapon_speed_delay = 10
 	sharp = 1
@@ -274,7 +274,7 @@
 	str_requirement = 12
 	force_wielded = 38
 	force = 33
-	armor_penetration = 20
+	armor_penetration = 60
 	weapon_speed_delay = 8
 	block_chance = 20
 	sharp = 1
@@ -298,7 +298,7 @@
 	str_requirement = 18
 	force = 38
 	force_wielded = 44
-	armor_penetration = 25
+	armor_penetration = 75
 	sharp = 1
 	edge = 1
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -321,7 +321,7 @@
 	str_requirement = 14 // It's downsides of size are represented in it's one handed damage.
 	force = 28 // Physically impossible to wield effectively one handed unless Astartes/Ork.
 	force_wielded = 45
-	armor_penetration = 20
+	armor_penetration = 60
 	block_chance = 25
 	sharp = 1
 	edge = 1
@@ -346,7 +346,7 @@
 	str_requirement = 16
 	force = 36
 	force_wielded = 43
-	armor_penetration = 30
+	armor_penetration = 60
 	block_chance = 10
 	sharp = 1
 	edge = 1
