@@ -11,15 +11,15 @@
 	a blocked amount between 0 - 100, representing the success of the armor check.
 */
 /mob/living/proc/run_armor_check(var/def_zone = null, var/attack_flag = "melee", var/armour_pen = 0, var/absorb_text = null, var/soften_text = null)
-	if(armour_pen >= 200)
-		return 0 //might as well just skip the processing //Some Admin Armours might be over 100 protection.
+	if(armour_pen >= 100)
+		return 0 //might as well just skip the processing
 
 	var/armor = getarmor(def_zone, attack_flag)
 
 	if(armour_pen >= armor)
 		return 0 //effective_armor is going to be 0, fullblock is going to be 0, blocked is going to 0, let's save ourselves the trouble
 
-	/*var/effective_armor = (armor - armour_pen)/100 //Old Armour code, preserved in case it needs to be used elsewhere.
+	var/effective_armor = (armor - armour_pen)/100
 	var/fullblock = (effective_armor*effective_armor) * ARMOR_BLOCK_CHANCE_MULT
 
 	if(fullblock >= 1 || prob(fullblock*100))
@@ -46,31 +46,7 @@
 			show_message("<span class='warning'>Your armor softens the blow!</span>")
 
 		playsound(src, "sound/weapons/armorblock[rand(1,4)].ogg", 50, 1, 1)
-	return round(blocked, 1)*/
-
-	if(armor >= (armour_pen * 100)) //No point calculating a fraction of a percent of damage.
-		if(absorb_text)
-			show_message("<span class='warning'>[absorb_text]</span>")
-		else
-			show_message("<span class='warning'>Your armor blocks the blow!</span>")
-
-		playsound(src, "sound/weapons/armorblockheavy[rand(1,3)].ogg", 50, 1, 1)
-		return 100
-
-	var/damage_breakthrough = ((((armor - armour_pen) + 1) ^ -1) * 100) //This subtracts the armour pen from the armour, adds one to the result, then inverts it and turns it into a percentage.
-	if(prob(50))
-		if(soften_text)
-			show_message("<span class='warning'>[soften_text]</span>")
-		else
-			show_message("<span class='warning'>Your armor softens the blow!</span>")
-
-		playsound(src, "sound/weapons/armorblock[rand(1,4)].ogg", 50, 1, 1)
-		return damage_breakthrough //This will be proportional to the different in armour class and penetration on the round. Equal armour and peentration gives it 50% damage, one more, 33.3% reoccuring, two more, 25%, etc.
-	else
-		show_message("<span class='warning'>Your armor blocks the blow!</span>")
-		playsound(src, "sound/weapons/armorblockheavy[rand(1,3)].ogg", 50, 1, 1)
-		return 100
-
+	return round(blocked, 1)
 
 //Adds two armor values together.
 //If armor_a and armor_b are between 0-100 the result will always also be between 0-100.
