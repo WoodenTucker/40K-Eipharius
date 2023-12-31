@@ -2974,14 +2974,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/warden)
-"uN" = (
-/obj/effect/landmark{
-	name = "bloodstart"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/security/warden)
 "uP" = (
 /obj/structure/table/rack,
 /obj/random/loot/randomammosidearm,
@@ -3457,12 +3449,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/warden)
-"xZ" = (
-/obj/effect/landmark{
-	name = "orkstart"
-	},
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/security/prison)
 "yd" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 8
@@ -4807,9 +4793,6 @@
 /area/cadiaoutpost/oa/security/warden)
 "In" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark{
-	name = "bloodstart"
-	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -5609,9 +5592,6 @@
 "Of" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
-	},
-/obj/effect/landmark{
-	name = "bloodstart"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -14163,7 +14143,7 @@ In
 SA
 vn
 hW
-uN
+lD
 wH
 rQ
 lD
@@ -14467,7 +14447,7 @@ Of
 BE
 dc
 Fz
-uN
+lD
 mI
 rQ
 oX
@@ -36146,7 +36126,7 @@ lO
 lO
 Nr
 Ld
-xZ
+Nr
 uA
 Nr
 Nr

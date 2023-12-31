@@ -211,7 +211,7 @@
 	desc = "A concentrated beam of energy in the shape of a blade. Very stylish... and lethal."
 	icon_state = "blade"
 	force = 40 //Normal attacks deal very high damage - about the same as wielded fire axe
-	armor_penetration = 100
+	armor_penetration = 70
 	sharp = 1
 	edge = 1
 	anchored = 1    // Never spawned outside of inventory, should be fine.
@@ -289,7 +289,7 @@
 	active_throwforce = 18
 	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
 	force = 34
-	armor_penetration = 90
+	armor_penetration = 70
 	throwforce = 15
 	throw_speed = 1
 	throw_range = 4
@@ -359,6 +359,7 @@
 	throw_speed = 1
 	throw_range = 1
 	weapon_speed_delay = 8
+	armor_penetration = 65
 	edge = 1
 	sharp = 1
 	block_chance = 15

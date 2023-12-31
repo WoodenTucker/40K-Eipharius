@@ -3,162 +3,162 @@
 
 /datum/cargo_entry/weapon/lasgun
 	name = "Kantrael Lasgun"
-	cost = 70
+	cost = 90
 	item_path = /obj/item/gun/energy/las/lasgun
 
 /datum/cargo_entry/weapon/luclas
 	name = "Lucius Lasgun"
-	cost = 85
+	cost = 110
 	item_path = /obj/item/gun/energy/las/lasgun/lucius
 
 /datum/cargo_entry/weapon/catbine
 	name = "Catachan Carbine"
-	cost = 90
+	cost = 120
 	item_path = /obj/item/gun/energy/las/lasgun/catachan
 
 /datum/cargo_entry/weapon/acca
 	name = "Accatran Carbine"
-	cost = 80
+	cost = 95
 	item_path = /obj/item/gun/energy/las/lasgun/accatran
 
 /datum/cargo_entry/weapon/hotshot
 	name = "Ryza Pattern Hot-Shot Lasgun"
-	cost = 270
+	cost = 290
 	item_path = /obj/item/gun/energy/las/hotshot
 
 /datum/cargo_entry/weapon/hotshot/krieg
 	name = "Type XIV Lasgun Heavy"
-	cost = 280
+	cost = 300
 	item_path = /obj/item/gun/energy/las/hotshot/krieg
 
 /datum/cargo_entry/weapon/longlas
 	name = "M35 Longlas"
-	cost = 200
+	cost = 220
 	item_path = /obj/item/gun/energy/las/lasgun/longlas
 
 /datum/cargo_entry/weapon/longlas
 	name = "Krieg Pattern Longlas"
-	cost = 205
+	cost = 225
 	item_path = /obj/item/gun/energy/las/lasgun/longlas/krieg
 
 /datum/cargo_entry/weapon/stubrifle
 	name = "Stub Rifle"
-	cost = 25
+	cost = 35
 	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction
 
 /datum/cargo_entry/weapon/stubriflescoped
 	name = "Scoped Stub Rifle"
-	cost = 35
+	cost = 45
 	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter
 
 /datum/cargo_entry/weapon/triangong
 	name = "Triangong 4-46"
-	cost = 40
+	cost = 50
 	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered
 
 /datum/cargo_entry/weapon/crucible
 	name = "Crucible Hunting Rifle"
-	cost = 45
+	cost = 60
 	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/glory
 
 /datum/cargo_entry/weapon/sniperrifleheavy
 	name = "Heavy Sniper Rifle"
-	cost = 110
+	cost = 120
 	item_path = /obj/item/gun/projectile/heavysniper
 
 /datum/cargo_entry/weapon/needlerrifle
 	name = "Needler Marksman Rifle"
-	cost = 140
+	cost = 150
 	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/needler
 
 /datum/cargo_entry/weapon/shotgunsawn
 	name = "Sawn-off Shotgun"
-	cost = 20
+	cost = 25
 	item_path = /obj/item/gun/projectile/shotgun/pump/shitty/sawn
 
 /datum/cargo_entry/weapon/shotgun
 	name = "Voxlegis Shotgun"
-	cost = 55
+	cost = 60
 	item_path = /obj/item/gun/projectile/shotgun/pump/voxlegis
 
 /datum/cargo_entry/weapon/shotgun2
 	name = "Belle Magrave Shotgun"
-	cost = 70
+	cost = 75
 	item_path = /obj/item/gun/projectile/shotgun/pump/shitty/magrave
 
 /datum/cargo_entry/weapon/mk22
 	name = "Mk22 Autogun"
-	cost = 46
+	cost = 52
 	item_path = /obj/item/gun/projectile/automatic/machinepistol
 
 /datum/cargo_entry/weapon/a80
 	name = "Nachtwey Autogun"
-	cost = 58
+	cost = 62
 	item_path = /obj/item/gun/projectile/automatic/machinepistol/a80
 
 /datum/cargo_entry/weapon/grim
 	name = "GRIM Autogun"
-	cost = 69
+	cost = 70
 	item_path = /obj/item/gun/projectile/automatic/autogrim
 
 /datum/cargo_entry/weapon/krieg
 	name = "Krieg Pattern Autogun"
-	cost = 85
+	cost = 90
 	item_path = /obj/item/gun/projectile/automatic/autogrim/krieg
 
 /datum/cargo_entry/weapon/scipio
 	name = "Scipio Pattern Rifle"
-	cost = 59
+	cost = 67
 	item_path = /obj/item/gun/projectile/automatic/m22/combatrifle
 
 /datum/cargo_entry/weapon/aegis
 	name = "Aegis Pattern Rifle"
-	cost = 70
+	cost = 81
 	item_path = /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle
 
 /datum/cargo_entry/weapon/messina
 	name = "Messina Pattern Autogun"
-	cost = 73
+	cost = 78
 	item_path = /obj/item/gun/projectile/automatic/messina
 
 /datum/cargo_entry/weapon/agripinaa
 	name = "Agripinaa Autogun"
-	cost = 71
+	cost = 79
 	item_path = /obj/item/gun/projectile/automatic/agripinaaii
 
 /datum/cargo_entry/weapon/stubbervraks
 	name = "Vraks Heavy Stubber"
-	cost = 90
+	cost = 95
 	item_path = /obj/item/gun/projectile/automatic/heavystubber
 
 /datum/cargo_entry/weapon/stubbervilliers
 	name = "Villiers Heavy Stubber"
-	cost = 85
+	cost = 102
 	item_path = /obj/item/gun/projectile/automatic/heavystubber/villiers
 
 /datum/cargo_entry/weapon/lockebolter
 	name = "Locke Bolter"
-	cost = 230
+	cost = 260
 	item_path = /obj/item/gun/projectile/lockebolter
 
 /datum/cargo_entry/weapon/drusianbolter
 	name = "Drusian Bolter"
-	cost = 300
+	cost = 330
 	item_path = /obj/item/gun/projectile/lockebolter/drusian
 
 /datum/cargo_entry/weapon/plasmapistol
 	name = "Plasma Pistol"
-	cost = 282
+	cost = 302
 	item_path = /obj/item/gun/energy/pulse/plasma/pistol
 
 /datum/cargo_entry/weapon/plasmarifle
 	name = "Plasma Rifle"
-	cost = 348
+	cost = 358
 	item_path = /obj/item/gun/energy/pulse/plasma/rifle
 
 /datum/cargo_entry/weapon/meltarifle
 	name = "Melta Gun"
-	cost = 500
+	cost = 510
 	item_path = /obj/item/gun/projectile/meltagun
 
 /datum/cargo_entry/weapon/flamer
@@ -167,38 +167,38 @@
 	item_path = /obj/item/gun/projectile/automatic/flamer
 
 /datum/cargo_entry/weapon/shittylaspistol
-	name = "Portsmith Laspistol"
-	cost = 22
+	name = "Portsmith Laspistol" 
+	cost = 27
 	item_path = /obj/item/gun/energy/las/laspistol/shitty
 
 /datum/cargo_entry/weapon/laspistol
 	name = "Civitas Laspistol"
-	cost = 32
+	cost = 39
 	item_path = /obj/item/gun/energy/las/laspistol
 
 /datum/cargo_entry/weapon/cadlaspistol
 	name = "Heavy Laspistol"
-	cost = 42
+	cost = 48
 	item_path = /obj/item/gun/energy/las/laspistol/militarum
 
 /datum/cargo_entry/weapon/luclaspistol
 	name = "Lucius Laspistol"
-	cost = 55
+	cost = 58
 	item_path = /obj/item/gun/energy/las/laspistol/militarum/lucius
 
 datum/cargo_entry/weapon/accapistol
 	name = "Accatran Laspistol"
-	cost = 50
+	cost = 52
 	item_path = /obj/item/gun/energy/las/laspistol/accatran
 
 /datum/cargo_entry/weapon/renpistolsnub
 	name = "Kieji Snub Pistol"
-	cost = 10
+	cost = 12
 	item_path = /obj/item/gun/projectile/pistol/kieji/snub
 
 /datum/cargo_entry/weapon/renpistol
 	name = "Kieji Pistol"
-	cost = 15
+	cost = 17
 	item_path = /obj/item/gun/projectile/pistol/kieji
 
 /datum/cargo_entry/weapon/vilpistol
@@ -208,70 +208,70 @@ datum/cargo_entry/weapon/accapistol
 
 /datum/cargo_entry/weapon/broomhandle
 	name = "Messina Pattern Stub Pistol"
-	cost = 35
+	cost = 37
 	item_path = /obj/item/gun/projectile/pistol/broomhandle
 
 /datum/cargo_entry/weapon/villerrevolver
 	name = "Villiers Revolver"
-	cost = 50
+	cost = 52
 	item_path = /obj/item/gun/projectile/revolver/villiers
 
 /datum/cargo_entry/weapon/messinarevolver
 	name = "Messina Revolver"
-	cost = 20
+	cost = 23
 	item_path = /obj/item/gun/projectile/revolver/messina
 
 /datum/cargo_entry/weapon/boscrevolver
 	name = "Boscelot Revolver"
-	cost = 30
+	cost = 34
 	item_path = /obj/item/gun/projectile/revolver/detective/boscelot
 
 /datum/cargo_entry/weapon/mervexrevolver
 	name = "Mervex Revolver"
-	cost = 49
+	cost = 52
 	item_path = /obj/item/gun/projectile/mervex
 
 /datum/cargo_entry/weapon/necrevolver
 	name = "Necros Revolver"
-	cost = 51
+	cost = 54
 	item_path = /obj/item/gun/projectile/necros
 
 /datum/cargo_entry/weapon/slugrevolver
 	name = "Masterwork Revolver"
-	cost = 57
+	cost = 61
 	item_path = /obj/item/gun/projectile/slugrevolver
 
 /datum/cargo_entry/weapon/mateba
 	name = "Mateba Revolver"
-	cost = 69
+	cost = 75
 	item_path = /obj/item/gun/projectile/revolver/mateba
 
 /datum/cargo_entry/weapon/reng
 	name = "Renegade Pistol"
-	cost = 61
+	cost = 63
 	item_path = /obj/item/gun/projectile/talon/renegade
 
 /datum/cargo_entry/weapon/bolterpistol
 	name = "Bolter Pistol"
-	cost = 96
+	cost = 116
 	item_path = /obj/item/gun/projectile/bolter_pistol
 
 /datum/cargo_entry/weapon/bolterpistoldrusian
 	name = "Drusian Bolter Pistol"
-	cost = 150
+	cost = 166
 	item_path = /obj/item/gun/projectile/bolter_pistol/inquis
 
 /datum/cargo_entry/weapon/fragg
 	name = "Fragmentation Grenade"
-	cost = 40
+	cost = 38
 	item_path = /obj/item/grenade/frag/high_yield/homemade
 
 /datum/cargo_entry/weapon/incing
 	name = "Incinedary Grenade"
-	cost = 50
+	cost = 44
 	item_path = /obj/item/grenade/fire
 
 /datum/cargo_entry/weapon/krak
 	name = "Krak"
-	cost = 45
+	cost = 42
 	item_path = /obj/item/grenade/frag/high_yield/krak

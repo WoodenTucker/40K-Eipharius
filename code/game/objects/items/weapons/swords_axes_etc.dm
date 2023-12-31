@@ -17,7 +17,7 @@
 	force = 30
 	force_wielded = 40
 	block_chance = 35
-	armor_penetration = 15
+	armor_penetration = 22
 	sharp = 1 //sharp or blunt, blunt causes broken bones, sharp causes organ damage and extra bleeding.
 	edge = 1 //edge or not edged, edged has a higher chance of cutting limbs off, no edge has more chance of breaking limb
 	attack_verb = list("slashed", "sliced")
@@ -109,7 +109,7 @@
 	item_state = "spatha"
 	force = 30
 	force_wielded = 35
-	armor_penetration = 10
+	armor_penetration = 20
 	block_chance = 35 //It's short length does it no favors in this regard
 	weapon_speed_delay = 7
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -124,7 +124,7 @@
 	attack_verb = list("slashed")
 	force = 30
 	force_wielded = 35
-	armor_penetration = 15
+	armor_penetration = 25
 	block_chance = 35
 	weapon_speed_delay = 7
 	w_class = ITEM_SIZE_NORMAL
@@ -165,7 +165,7 @@
 	item_state = "sabre"
 	block_chance = 65
 	sales_price = 0
-	armor_penetration = 5
+	armor_penetration = 15
 
 /obj/item/melee/sword/choppa
 	name = "choppa"
@@ -176,7 +176,7 @@
 	item_state = "choppa"
 	attack_verb = list("stabbed", "chopped", "cut", "sliced")
 	force = 33
-	armor_penetration = 20
+	armor_penetration = 30
 	block_chance = 35
 	sharp = 1
 	hitsound = "slash_sound"
@@ -387,7 +387,7 @@
 	item_state = "spatha"
 	force = 27
 	force_wielded = 29
-	armor_penetration = 15
+	armor_penetration = 25
 	block_chance = 35
 	weapon_speed_delay = 6
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -399,7 +399,7 @@
 	color = "#848484"
 	force = 29
 	force_wielded = 31
-	armor_penetration = 20
+	armor_penetration = 30
 	block_chance = 37
 	weapon_speed_delay = 6
 	sales_price = 0
@@ -411,7 +411,7 @@
 	item_state = "claymore"
 	force = 28
 	force_wielded = 38
-	armor_penetration = 10
+	armor_penetration = 20
 	block_chance = 20
 	weapon_speed_delay = 8
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -423,7 +423,7 @@
 	color = "#848484"
 	force = 30
 	force_wielded = 41
-	armor_penetration = 15
+	armor_penetration = 25
 	block_chance = 25
 	weapon_speed_delay = 8
 	sales_price = 0
@@ -451,7 +451,7 @@
 	slot_flags = SLOT_BELT
 	force = 25
 	force_wielded = 32
-	armor_penetration = 10
+	armor_penetration = 20
 	block_chance = 30
 	weapon_speed_delay = 7
 
@@ -476,7 +476,7 @@
 	slot_flags = SLOT_BELT
 	force = 27
 	force_wielded = 34
-	armor_penetration = 10
+	armor_penetration = 20
 	block_chance = 25
 	weapon_speed_delay = 8
 
@@ -492,7 +492,7 @@
 	slot_flags = SLOT_BELT
 	force = 31
 	force_wielded = 37
-	armor_penetration = 15
+	armor_penetration = 25
 	block_chance = 30
 	weapon_speed_delay = 8
 
@@ -507,7 +507,7 @@
 	str_requirement = 18
 	force = 32
 	force_wielded = 39
-	armor_penetration = 15
+	armor_penetration = 25
 	block_chance = 35
 	weapon_speed_delay = 8
 
@@ -522,7 +522,7 @@
 	str_requirement = 14
 	force = 36
 	force_wielded = 44 //warpsword
-	armor_penetration = 75
+	armor_penetration = 65
 	block_chance = 30
 	sharpness = TRUE
 	grab_sound_is_loud = TRUE
@@ -541,7 +541,7 @@
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	force = 25
 	force_wielded = 36
-	armor_penetration = 12
+	armor_penetration = 22
 	throwforce = 18
 	block_chance = 25
 	sharp = 1
@@ -565,7 +565,7 @@
 	wielded_icon = "spear-w"
 	force = 25
 	force_wielded = 39
-	armor_penetration = 40
+	armor_penetration = 50
 	throwforce = 40
 	block_chance = 35
 	weapon_speed_delay = 10
@@ -578,7 +578,7 @@
 	color = "#848484"
 	force = 27
 	force_wielded = 41
-	armor_penetration = 45
+	armor_penetration = 55
 	sales_price = 0
 
 /obj/item/melee/trench_axe/bardiche
@@ -589,7 +589,7 @@
 	wielded_icon = "savaxe"
 	force = 27
 	force_wielded = 41
-	armor_penetration = 15
+	armor_penetration = 25
 	throwforce = 15
 	block_chance = 20
 	weapon_speed_delay = 9
@@ -600,7 +600,7 @@
 	desc = "A gigantic, powerful, two handed, sharp polearm used for singular felling blows against armored opponents."
 	force = 30
 	force_wielded = 44
-	armor_penetration = 15
+	armor_penetration = 25
 	throwforce = 22
 	block_chance = 24
 	weapon_speed_delay = 8
@@ -615,7 +615,7 @@
 	wielded_icon = "bone_spear-w"
 	force = 27
 	force_wielded = 31
-	armor_penetration = 20
+	armor_penetration = 30
 	throwforce = 25
 	block_chance = 22
 	weapon_speed_delay = 8
@@ -628,7 +628,7 @@
 	desc = "An incredibly lightweight and nimble spear used by hunters against large game animals."
 	force = 29
 	force_wielded = 33
-	armor_penetration = 22
+	armor_penetration = 32
 	throwforce = 27
 	block_chance = 25
 	weapon_speed_delay = 7
@@ -641,7 +641,7 @@
 	wielded_icon = "lance-w"
 	force = 24
 	force_wielded = 37
-	armor_penetration = 20
+	armor_penetration = 30
 	block_chance = 24
 	weapon_speed_delay = 10
 	edge = 0
@@ -653,7 +653,7 @@
 	color = "#848484"
 	force = 26
 	force_wielded = 39
-	armor_penetration = 25
+	armor_penetration = 35
 	sales_price = 0
 
 /obj/item/melee/sword/choppa
@@ -666,7 +666,7 @@
 	attack_verb = list("stabbed", "chopped", "cut", "sliced")
 	force = 35
 	force_wielded = 39
-	armor_penetration = 20
+	armor_penetration = 30
 	block_chance = 25
 	sharp = 1
 	edge = 1
@@ -690,7 +690,7 @@
 	str_requirement = 13
 	force_wielded = 32
 	force = 45
-	armor_penetration = 20
+	armor_penetration = 30
 	block_chance = 40
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 8
@@ -721,7 +721,7 @@
 	weapon_speed_delay = 6
 	drop_sound = 'sound/items/knife_drop.ogg'
 	swing_sound = "blunt_swing"
-	armor_penetration = 8
+	armor_penetration = 18
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
 	armor = list(melee = 10, bullet = 15, laser = 15, energy = 10, bomb = 10, bio = 0, rad = 0)
 
@@ -789,7 +789,7 @@
 	attack_verb = list("slashed")
 	force = 25
 	force_wielded = 28
-	armor_penetration = 20
+	armor_penetration = 30
 	block_chance = 35
 	str_requirement = 12 //i don't want to hear it, anyone below 12 str is supposed to be a child or a old man.
 	weapon_speed_delay = 7
@@ -815,7 +815,7 @@
 	force = 15
 	force_wielded = 22
 	block_chance = 25
-	armor_penetration = 10
+	armor_penetration = 20
 	weapon_speed_delay = 7
 	sharp = 1
 	throw_speed = 1
@@ -844,7 +844,7 @@
 	force = 15
 	force_wielded = 22
 	block_chance = 25
-	armor_penetration = 10
+	armor_penetration = 20
 	weapon_speed_delay = 7
 	sharp = 1
 	throw_speed = 1
