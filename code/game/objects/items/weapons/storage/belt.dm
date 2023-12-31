@@ -119,31 +119,6 @@
 	icon_state = "warfare_belt"
 	item_state = "warfare_belt"
 	max_storage_space = 16
-	can_hold = list(
-		/obj/item/crowbar,
-		/obj/item/grenade,
-		/obj/item/reagent_containers/spray/pepper,
-		/obj/item/handcuffs,
-		/obj/item/device/flash,
-		/obj/item/clothing/glasses,
-		/obj/item/ammo_casing/shotgun,
-		/obj/item/ammo_magazine,
-		/obj/item/reagent_containers/food/snacks/donut/,
-		/obj/item/melee/baton,
-		/obj/item/gun/energy/taser,
-		/obj/item/flame/lighter,
-		/obj/item/clothing/glasses/hud/security,
-		/obj/item/device/flashlight,
-		/obj/item/device/pda,
-		/obj/item/device/radio/headset,
-		/obj/item/device/hailer,
-		/obj/item/device/megaphone,
-		/obj/item/melee,
-		/obj/item/gun/projectile/sec,
-		/obj/item/taperoll,
-		/obj/item/device/holowarrant,
-		/obj/item/magnetic_ammo
-		)
 
 /obj/item/storage/belt/medical/alchemist
 	name = "alchemist belt"
