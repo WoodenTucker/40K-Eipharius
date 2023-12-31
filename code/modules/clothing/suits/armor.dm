@@ -554,7 +554,7 @@ obj/item/clothing/suit/armor
 	name = "bounty hunter's armor"
 	icon_state = "cadianarmor"
 	item_state = "cadianarmor"
-	armor = list(melee = 35, bullet = 30, laser = 30, energy = 25, bomb = 20, bio = 10, rad = 10)
+	armor = list(melee = 38, bullet = 38, laser = 38, energy = 25, bomb = 20, bio = 10, rad = 10)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -563,7 +563,7 @@ obj/item/clothing/suit/armor
 	name = "bounty hunter's armor"
 	icon_state = "valhalla"
 	item_state = "valhalla"
-	armor = list(melee = 35, bullet = 30, laser = 30, energy = 25, bomb = 20, bio = 10, rad = 10)
+	armor = list(melee = 38, bullet = 38, laser = 38, energy = 25, bomb = 20, bio = 10, rad = 10)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

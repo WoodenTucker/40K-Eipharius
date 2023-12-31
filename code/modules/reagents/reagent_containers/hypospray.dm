@@ -189,8 +189,8 @@
 	icon_state = "n"
 
 	amount_per_transfer_from_this = 50
-	volume = 200
-	starts_with = list(/datum/reagent/nanoblood = 200)
+	volume = 210
+	starts_with = list(/datum/reagent/bicaridine =5, /datum/reagent/kelotane = 5, /datum/reagent/nanoblood = 200)
 
 /obj/item/reagent_containers/hypospray/autoinjector/blood/large
 	name = "large nanoblood injector"
@@ -199,8 +199,8 @@
 	w_class = ITEM_SIZE_NORMAL
 
 	amount_per_transfer_from_this = 50
-	volume = 500
-	starts_with = list(/datum/reagent/nanoblood = 500)
+	volume = 524
+	starts_with = list(/datum/reagent/bicaridine =12, /datum/reagent/kelotane = 12, /datum/reagent/nanoblood = 500)
 
 /obj/item/reagent_containers/hypospray/autoinjector/morphine
 	name = "morphine syrette"

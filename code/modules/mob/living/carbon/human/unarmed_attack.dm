@@ -132,7 +132,7 @@ var/global/list/sparring_attack_cache = list()
 	attack_verb = list("bit")
 	attack_sound = 'sound/weapons/bite.ogg'
 	shredding = 1
-	damage = 25
+	damage = 28
 	sharp = 1
 
 /datum/unarmed_attack/punch
@@ -140,7 +140,7 @@ var/global/list/sparring_attack_cache = list()
 	attack_noun = list("fist")
 	eye_attack_text = "fingers"
 	eye_attack_text_victim = "digits"
-	damage = 18
+	damage = 21
 
 /datum/unarmed_attack/punch/show_attack(var/mob/living/carbon/human/user, var/mob/living/carbon/human/target, var/zone, var/attack_damage)
 	var/obj/item/organ/external/affecting = target.get_organ(zone)

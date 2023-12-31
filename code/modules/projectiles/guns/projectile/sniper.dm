@@ -90,7 +90,7 @@
 	w_class = ITEM_SIZE_LARGE
 	force = 15
 	one_hand_penalty = 2.1
-	fire_delay = 8
+	fire_delay = 8.5
 	accuracy = 1
 	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 4000)
@@ -102,8 +102,8 @@
 	sales_price = 50
 
 	firemodes = list(
-		list(mode_name="semi-automatic", move_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=300),
-		list(mode_name="overcharge", move_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=500),
+		list(mode_name="semi-automatic", fire_delay=8.5, move_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=400),
+		list(mode_name="overcharge", fire_delay=9.5, move_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=650),
 		)
 
 /obj/item/gun/energy/las/lasgun/longlas/New()
@@ -328,7 +328,7 @@
 /obj/item/projectile/bullet/rifle/lp338
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	damage = 145
-	armor_penetration = 65
+	armor_penetration = 75
 	penetration_modifier = 1.5
 	penetrating = TRUE
 
@@ -336,7 +336,7 @@
 	name = "JHP bullet"
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	damage = 170
-	armor_penetration = 25
+	armor_penetration = 35
 
 /obj/item/projectile/bullet/rifle/lp338/needler
 	name = "needler bullet"

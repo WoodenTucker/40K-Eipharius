@@ -615,6 +615,9 @@
 /obj/random/ammo,
 /obj/random/ammo,
 /obj/random/ammo,
+/obj/random/ammo,
+/obj/random/ammo,
+/obj/random/ammo,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -1359,6 +1362,7 @@
 	icon_state = "wood_1tileendtable";
 	dir = 1
 	},
+/obj/item/stack/thrones2/twenty,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
 "bpB" = (
@@ -3324,13 +3328,10 @@
 /area/cadiaoutpost/oa/gatehouse)
 "doy" = (
 /obj/effect/floor_decal/newcorner/white/diagonal,
-/obj/structure/bed/chair{
-	dir = 8;
-	icon_state = "chair_preview"
-	},
 /obj/structure/sign/mechanicus{
 	pixel_x = 32
 	},
+/obj/structure/table/rack,
 /turf/simulated/floor/tiled/white{
 	color = "grey"
 	},
@@ -3942,6 +3943,7 @@
 "dMZ" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/table/rack,
+/obj/random/loot/badweapon,
 /obj/random/loot/badweapon,
 /turf/simulated/floor/tiled{
 	color = "grey";
@@ -5670,6 +5672,8 @@
 /obj/structure/table/rack,
 /obj/random/loot/randomlasammo,
 /obj/random/loot/randomlasammo,
+/obj/random/loot/randomlasammo,
+/obj/random/loot/randomlasammo,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -5967,8 +5971,9 @@
 /area/cadiaoutpost/oa/villageinside)
 "fKT" = (
 /obj/effect/floor_decal/newcorner/white/diagonal,
-/obj/structure/bed/chair,
-/obj/item/clothing/suit/armor/hjacket,
+/obj/machinery/vending/fashionvend{
+	color = "grey"
+	},
 /turf/simulated/floor/tiled/white{
 	color = "grey"
 	},
@@ -7096,7 +7101,7 @@
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "cobweb2"
 	},
-/obj/structure/bed/chair,
+/obj/machinery/vending/cigarette,
 /turf/simulated/floor/tiled/white{
 	color = "grey"
 	},
@@ -7707,6 +7712,9 @@
 /obj/item/storage/firstaid/surgery,
 /obj/item/storage/firstaid/surgery,
 /obj/effect/floor_decal/turf/surgery2,
+/obj/item/storage/box/syndie_kit/imp_explosive,
+/obj/item/storage/box/syndie_kit/imp_freedom,
+/obj/item/storage/box/syndie_kit/imp_freedom,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -8126,11 +8134,16 @@
 /area/cadiaoutpost/oa/villageinside)
 "hFe" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/random/accessory,
-/obj/random/accessory,
-/obj/random/accessory,
-/obj/random/accessory,
 /obj/structure/closet/crate/xenos/chest3,
+/obj/item/clothing/accessory/storage/brown_vest,
+/obj/item/clothing/accessory/storage/black_vest,
+/obj/item/clothing/accessory/storage/bandolier,
+/obj/item/clothing/accessory/storage/drop_pouches/black,
+/obj/item/clothing/accessory/storage/knifeharness,
+/obj/item/clothing/accessory/storage/torso/armor,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -8546,6 +8559,7 @@
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/table/rack,
 /obj/random/loot/badweaponlas,
+/obj/random/loot/badweaponlas,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -8608,6 +8622,12 @@
 "icq" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/table/rack,
+/obj/item/storage/belt/medical/full,
+/obj/item/storage/belt/security,
+/obj/item/storage/belt/security,
+/obj/item/storage/belt/utility/full,
+/obj/item/storage/belt/warfare,
+/obj/item/storage/belt/medical/emt,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -10003,6 +10023,7 @@
 /obj/random/loot/sidearms,
 /obj/random/loot/sidearms,
 /obj/random/loot/sidearms,
+/obj/random/loot/sidearms,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -10131,6 +10152,13 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/farm)
+"jsV" = (
+/obj/effect/floor_decal/newcorner/plating,
+/obj/structure/table/rack,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/medicae)
 "jtd" = (
 /obj/effect/floor_decal/turf/metal/five,
 /obj/item/reagent_containers/food/drinks/glass2/shot{
@@ -10655,6 +10683,24 @@
 	},
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/bridge/hallway)
+"jMf" = (
+/obj/effect/floor_decal/turf/surgery2,
+/obj/item/organ/external/robotic/arm,
+/obj/item/organ/external/robotic/arm/right,
+/obj/item/organ/external/robotic/foot,
+/obj/item/organ/external/robotic/foot/right,
+/obj/item/organ/external/robotic/hand,
+/obj/item/organ/external/robotic/hand/right,
+/obj/item/organ/external/robotic/leg,
+/obj/item/organ/external/robotic/leg/right,
+/obj/structure/closet/crate/secure/biohazard{
+	req_one_access = list()
+	},
+/obj/item/organ/external/robotic/hand/advanced,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/medicae)
 "jMu" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 8
@@ -11709,7 +11755,7 @@
 	force = 26;
 	name = "runic axe";
 	force_wielded = 38;
-	armor_penetration = 20
+	armor_penetration = 40
 	},
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/farm)
@@ -12222,6 +12268,9 @@
 /obj/structure/table/rack,
 /obj/random/loot/randomammo1,
 /obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -12322,8 +12371,7 @@
 /obj/structure/sign/medinfo{
 	pixel_y = 30
 	},
-/obj/structure/bed/chair,
-/obj/item/storage/toolbox/syndicate,
+/obj/machinery/vending/coffee,
 /turf/simulated/floor/tiled/white{
 	color = "grey"
 	},
@@ -12609,6 +12657,7 @@
 	icon_state = "plating"
 	},
 /obj/effect/floor_decal/newcorner/plating,
+/obj/structure/table/rack,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -13475,13 +13524,12 @@
 /obj/item/clothing/mask/gas/half/cadianrespirator,
 /obj/item/clothing/mask/gas/half/cadianrespirator,
 /obj/item/clothing/mask/gas/half/cadianrespirator,
-/obj/item/clothing/mask/gas/half/cadianrespirator,
-/obj/item/clothing/mask/gas/half/cadianrespirator,
-/obj/item/clothing/mask/gas/half/cadianrespirator,
-/obj/item/clothing/mask/gas/half/cadianrespirator,
-/obj/item/clothing/mask/gas/half/cadianrespirator,
 /obj/item/rnd/power10,
 /obj/structure/closet/crate/xenos/chest3,
+/obj/item/rnd/illegal3,
+/obj/item/rnd/power3,
+/obj/item/rnd/combat3,
+/obj/item/stack/thrones3/twenty,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -13595,6 +13643,9 @@
 "msk" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/table/rack,
+/obj/random/loot/sidearmammo,
+/obj/random/loot/sidearmammo,
+/obj/random/loot/sidearmammo,
 /obj/random/loot/sidearmammo,
 /obj/random/loot/sidearmammo,
 /obj/random/loot/sidearmammo,
@@ -13803,6 +13854,13 @@
 "mFG" = (
 /turf/simulated/floor/tiled/freezer,
 /area/cadiaoutpost/new_hive/hive_city)
+"mFW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/roller,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/medicae)
 "mGL" = (
 /obj/effect/floor_decal/newcorner/train{
 	dir = 4
@@ -14062,6 +14120,7 @@
 "mSW" = (
 /obj/effect/floor_decal/turf/metal/five,
 /obj/structure/table/graf/shrine,
+/obj/item/storage/backpack/cultpack,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel)
 "mTa" = (
@@ -14342,6 +14401,13 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/bridge/hallway)
+"nki" = (
+/obj/effect/floor_decal/newcorner/white/diagonal,
+/obj/machinery/media/jukebox,
+/turf/simulated/floor/tiled/white{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/medicae)
 "nkw" = (
 /obj/effect/floor_decal/newcorner/grass{
 	icon_state = "glow5"
@@ -15121,6 +15187,13 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
+"nXV" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/bodybag/cryobag,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/medicae)
 "nYs" = (
 /obj/machinery/door/unpowered/inn{
 	req_one_access = list(63)
@@ -15345,10 +15418,7 @@
 "ojW" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/newcorner/white/diagonal,
-/obj/structure/bed/chair{
-	dir = 8;
-	icon_state = "chair_preview"
-	},
+/obj/structure/table/rack,
 /turf/simulated/floor/tiled/white{
 	color = "grey"
 	},
@@ -16711,7 +16781,9 @@
 /area/cadiaoutpost/oa/shuttle/magos)
 "pxa" = (
 /obj/effect/floor_decal/newcorner/white/diagonal,
-/obj/structure/bed/chair,
+/obj/machinery/vending/sovietsoda{
+	color = "grey"
+	},
 /turf/simulated/floor/tiled/white{
 	color = "grey"
 	},
@@ -18614,6 +18686,7 @@
 	icon_state = "bulb1"
 	},
 /obj/structure/table/rack/shelf,
+/obj/item/stack/thrones3/twenty,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
 "rqp" = (
@@ -19677,6 +19750,7 @@
 /obj/structure/table/graf/big_wood_table{
 	dir = 4
 	},
+/obj/item/storage/backpack/satchel/krieger,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "suG" = (
@@ -23866,6 +23940,7 @@
 /area/cadiaoutpost/oa/villageinside)
 "wcq" = (
 /obj/structure/closet/hive/iron_c,
+/obj/item/storage/backpack/satchel/leather/olive,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
 "wcv" = (
@@ -24980,6 +25055,12 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel)
+"xoG" = (
+/obj/item/roller,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/medicae)
 "xoH" = (
 /obj/structure/flora/tree/dead,
 /obj/structure/flora/tree/dead,
@@ -25250,15 +25331,16 @@
 /obj/effect/decal/cleanable/dirt{
 	icon_state = ""
 	},
-/obj/structure/bed/chair{
-	dir = 4;
-	icon_state = "chair_preview"
-	},
 /obj/effect/decal/cleanable/blood/drip,
 /obj/structure/torchwall{
 	dir = 4;
 	icon_state = "torchwall0"
 	},
+/obj/structure/table/standard{
+	color = "grey"
+	},
+/obj/item/storage/toolbox/syndicate,
+/obj/item/clothing/suit/armor/hjacket,
 /turf/simulated/floor/tiled/white{
 	color = "grey"
 	},
@@ -25638,6 +25720,7 @@
 /obj/structure/table/graf/big_wood_table{
 	dir = 1
 	},
+/obj/item/storage/backpack/messenger/sec,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "yay" = (
@@ -67416,7 +67499,7 @@ mrc
 gIV
 pIv
 pIv
-pIv
+nki
 sZY
 pIv
 doy
@@ -68176,7 +68259,7 @@ hrE
 hrE
 hrE
 hrE
-uBR
+jsV
 mrc
 pvi
 eXL
@@ -68425,10 +68508,10 @@ lww
 hrE
 hrE
 hrE
-vxI
-hrE
-hrE
-uBR
+nXV
+xoG
+xoG
+jsV
 mrc
 mrc
 mrc
@@ -68677,9 +68760,9 @@ qME
 hrE
 hrE
 hrE
-vxI
-vxI
-hrE
+nXV
+mFW
+xoG
 uSp
 mrc
 xSl
@@ -69942,7 +70025,7 @@ mrc
 iaf
 aBi
 iWC
-aBi
+jMf
 aBi
 cbW
 mrc

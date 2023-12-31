@@ -373,7 +373,7 @@ This file contains most of the code for the dungeons to work, structures, some i
 	check_armour = "energy"
 	animate_movement = 1
 	penetrating = 55
-	armor_penetration = 55
+	armor_penetration = 65
 
 /obj/machinery/door/unpowered/necron_door1
 	icon = 'icons/obj/doors/necron_door.dmi'

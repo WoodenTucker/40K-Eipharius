@@ -247,6 +247,7 @@ Pilgrim Fate System
 			U.add_stats(rand(16,17), rand(14,16), rand(14,16), rand (10,12)) //veteran mercenary
 			new /obj/item/melee/sword/cane(src.loc)
 			new /obj/item/clothing/head/helmet/witch(src.loc)
+			new /obj/item/clothing/suit/armor/witch(src.loc)
 			new /obj/item/device/radio/headset/headset_sci(src.loc)
 		if("Mercenary")
 			U.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(2,4),rand(2,6)) //melee, ranged, med, eng, surgery
@@ -491,7 +492,7 @@ Pilgrim Fate System
 				new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
-			else if(prob(60))
+			else if(prob(40))
 				to_chat(U,"<span class='danger'><b><font size=4>THE MERCHANT</font></b></span>")
 				to_chat(U,"<span class='goodmood'>Guided by your lust for thrones you smelled opportunity on this newly founded world. You have connectoins to the local gangs and trade guilds, find allies to further your interests in Messina.</font></b></span>")
 				U.add_stats(rand(14,15), rand(14,15), rand(15,17), rand (15,16))
@@ -532,7 +533,7 @@ Pilgrim Fate System
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-			if(prob(15))
+			if(prob(10))
 				to_chat(U,"<span class='danger'><b><font size=4>THE SORCERER</font></b></span>")
 				to_chat(U,"<span class='goodmood'>You're a foul sorcerer of chaos magics -- unless you aren't. In which case you're a crackpot. Or are you? Who knows. Best hide your robes unless you want to be shot to pieces though...</font></b></span>")
 				U.add_stats(rand(15,16), rand(14,16), rand(14,18), rand (12,16)) //
@@ -540,7 +541,7 @@ Pilgrim Fate System
 				new /obj/item/clothing/head/helmet/hauberk(src.loc)
 				new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
 				new /obj/item/device/radio/headset/headset_sci(src.loc)
-				if(prob(10))
+				if(prob(25))
 					new /obj/item/device/radio/headset/blue_team/all(src.loc)
 				new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)

@@ -2705,7 +2705,8 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access = list()
+	req_one_access = list();
+	req_access = list()
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
@@ -2790,7 +2791,8 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access = list()
+	req_one_access = list();
+	req_access = list()
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/recovery)
@@ -7827,7 +7829,8 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access = list()
+	req_one_access = list();
+	req_access = list()
 	},
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/oa/service/chapel/recovery)
@@ -7919,6 +7922,15 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"iAq" = (
+/obj/random/trash,
+/obj/structure/sign/mechanicus{
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "iAP" = (
 /obj/structure/sign/mechanicus{
 	pixel_y = 30
@@ -8635,7 +8647,8 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access = list()
+	req_one_access = list();
+	req_access = list()
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/service/chapel/recovery)
@@ -9031,8 +9044,14 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "jJT" = (
-/obj/structure/closet/crate/secure/biohazard,
+/obj/structure/closet/crate/secure/biohazard{
+	req_one_access = list()
+	},
 /obj/effect/floor_decal/newcorner/plating/quarter,
+/obj/item/reagent_containers/hypospray/autoinjector/tau,
+/obj/item/reagent_containers/hypospray/autoinjector/tau,
+/obj/item/reagent_containers/hypospray/autoinjector/combatpain,
+/obj/item/reagent_containers/hypospray/autoinjector/pain,
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
@@ -10620,7 +10639,8 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access = list()
+	req_one_access = list();
+	req_access = list()
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
@@ -13716,7 +13736,8 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access = list()
+	req_one_access = list();
+	req_access = list()
 	},
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/oa/service/chapel/recovery)
@@ -14311,6 +14332,12 @@
 "phz" = (
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/new_hive/caves)
+"phO" = (
+/obj/effect/landmark{
+	name = "orkstart"
+	},
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/new_hive/caves)
 "phT" = (
 /obj/structure/flora/pottedplant/crystal,
 /obj/machinery/light,
@@ -14393,7 +14420,8 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access = list()
+	req_one_access = list();
+	req_access = list()
 	},
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/oa/service/chapel/recovery)
@@ -14780,7 +14808,9 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "pHr" = (
-/obj/structure/closet/crate/secure/biohazard,
+/obj/structure/closet/crate/secure/biohazard{
+	req_one_access = list()
+	},
 /turf/simulated/floor/greengrid{
 	dir = 4
 	},
@@ -15250,7 +15280,8 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access = list()
+	req_one_access = list();
+	req_access = list()
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 4
@@ -17632,7 +17663,9 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "sBc" = (
-/obj/structure/closet/crate/secure/biohazard,
+/obj/structure/closet/crate/secure/biohazard{
+	req_one_access = list()
+	},
 /obj/item/clothing/glasses/science,
 /obj/random/tech_supply,
 /obj/item/reagent_containers/food/snacks/khornemeat,
@@ -17664,7 +17697,8 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access = list()
+	req_one_access = list();
+	req_access = list()
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 1
@@ -19492,7 +19526,8 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access = list()
+	req_one_access = list();
+	req_access = list()
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
@@ -21479,7 +21514,7 @@
 "wPd" = (
 /obj/structure/closet/secure_closet/guncabinet{
 	name = "secure Sororitas cabinet";
-	req_one_access = list(213)
+	req_access = list()
 	},
 /obj/item/storage/firstaid/regular,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -21582,7 +21617,8 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access = list()
+	req_one_access = list();
+	req_access = list()
 	},
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -21955,7 +21991,8 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access = list()
+	req_one_access = list();
+	req_access = list()
 	},
 /mob/living/simple_animal/hostile/shadow,
 /turf/simulated/floor/stone/old4,
@@ -22545,7 +22582,8 @@
 /obj/machinery/door/unpowered/jail_door{
 	name = "catacomb door";
 	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
-	req_one_access = list()
+	req_one_access = list();
+	req_access = list()
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -51740,7 +51778,7 @@ oUG
 sDX
 eEJ
 sDX
-sDX
+phO
 beA
 hqB
 wXG
@@ -52242,7 +52280,7 @@ hqB
 hqB
 sDX
 weX
-sDX
+phO
 gZd
 sDX
 sDX
@@ -65687,7 +65725,7 @@ kob
 gpl
 lPf
 lPf
-dID
+iAq
 wcj
 tOB
 tOB
@@ -70219,7 +70257,7 @@ lPf
 lPf
 gpl
 lPf
-lPf
+dEu
 hvC
 wcj
 tOB

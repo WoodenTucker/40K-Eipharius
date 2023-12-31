@@ -386,6 +386,14 @@
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"bF" = (
+/obj/effect/landmark{
+	name = "bloodstart"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/hangarpact)
 "bG" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -2101,6 +2109,9 @@
 	d2 = 8;
 	icon_state = "4-8";
 	pixel_y = 0
+	},
+/obj/effect/landmark{
+	name = "bloodstart"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -63143,7 +63154,7 @@ Mj
 pz
 OM
 RE
-Mj
+bF
 hK
 OQ
 jN
