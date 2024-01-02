@@ -270,6 +270,7 @@ obj/item/clothing/suit/armor
 	desc = "The white and bright armor of a Tau Breacher."
 	icon_state = "tbrea"
 	item_state = "tbrea"
+	armor = list(melee = 45, bullet = 60, laser = 65, energy = 45, bomb = 60, bio = 50, rad = 50)
 
 // Ork
 
