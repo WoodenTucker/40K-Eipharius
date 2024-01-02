@@ -28,7 +28,7 @@
 /obj/item/projectile/bullet/bolterrifle/astartes
 	name =".95 bolt"  // Will make kraken penetrator variants later.
 	icon_state= "bolter"
-	damage = 90
+	damage = 85
 	armor_penetration = 45 
 	check_armour = "bullet"
 
@@ -44,13 +44,13 @@
 /obj/item/projectile/bullet/bpistol/kp
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 65
-	armor_penetration = 50
+	armor_penetration = 45
 	penetrating = 2
 
 /obj/item/projectile/bullet/bolt/kp
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 78
-	armor_penetration = 65
+	armor_penetration = 60
 	penetrating = 3
 
 /obj/item/projectile/bullet/bpistol/ms // This is .75 Bolt Pistol Round
