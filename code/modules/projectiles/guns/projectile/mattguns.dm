@@ -306,18 +306,18 @@
 /obj/item/projectile/bullet/rifle/a762/brifle
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	damage = 65
-	armor_penetration = 20
+	armor_penetration = 15
 
 /obj/item/projectile/bullet/rifle/a762/brifle/ap
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	damage = 68
-	armor_penetration = 30
+	armor_penetration = 25
 	penetrating = 1
 
 /obj/item/projectile/bullet/rifle/a762/brifle/kp
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	damage = 68
-	armor_penetration = 45
+	armor_penetration = 40
 	penetrating = 2
 
 /obj/item/projectile/bullet/rifle/a762/brifle/ms
@@ -329,7 +329,7 @@
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	penetrating = TRUE // fuck that shit penetrative rounds
 	damage = 70
-	armor_penetration = 30
+	armor_penetration = 25
 
 /obj/item/ammo_magazine/brifle
 	name = "Rifle Box"

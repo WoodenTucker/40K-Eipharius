@@ -201,7 +201,7 @@
 	str_requirement = 17
 	force = 30
 	force_wielded = 40 //warpsword
-	armor_penetration = 90
+	armor_penetration = 60
 	block_chance = 50 //may the warp guide your hand
 	sharpness = TRUE
 	grab_sound_is_loud = TRUE

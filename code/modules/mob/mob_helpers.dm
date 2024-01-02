@@ -89,7 +89,7 @@ proc/getsensorlevel(A)
 
 //The base miss chance for the different defence zones
 var/list/global/base_miss_chance = list(
-	BP_HEAD = 15,
+	BP_HEAD = 30,
 	BP_CHEST = 5,
 	BP_GROIN = 10,
 	BP_L_LEG = 15,

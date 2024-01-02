@@ -24,7 +24,7 @@
 	sales_price = 1
 	weapon_speed_delay = 6
 	status = 1
-	armor_penetration = 20 //Blunt force transfers through a lot of equipment.
+	armor_penetration = 15 //Blunt force transfers through a lot of equipment.
 
 /obj/item/melee/baton/handle_shield(mob/living/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(default_sword_parry(user, damage, damage_source, attacker, def_zone, attack_text))
@@ -280,7 +280,7 @@
 	atom_flags = ATOM_FLAG_NO_BLOOD
 	origin_tech = list(TECH_MAGNET = 2, TECH_COMBAT = 2)
 	attack_verb = list("beaten", "smashed")
-	armor_penetration = 65 //Power maul
+	armor_penetration = 45 //Power maul
 
 /obj/item/melee/powermaul/apply_hit_effect(mob/living/target, mob/living/user, var/hit_zone)
 	if(isrobot(target))
@@ -329,7 +329,7 @@
 	str_requirement = 1
 	force = 4
 	stunforce = 0
-	agonyforce = 300
+	agonyforce = 350
 	block_chance = 40
 	sales_price = 0
 	weapon_speed_delay = 6
@@ -339,7 +339,7 @@
 	atom_flags = ATOM_FLAG_NO_BLOOD
 	origin_tech = list(TECH_MAGNET = 2, TECH_COMBAT = 2)
 	attack_verb = list("violated", "penetrated", "infested")
-	armor_penetration = 90 //Genestealer magic.
+	armor_penetration = 70 //Genestealer magic.
 no
 /obj/item/melee/baton/nidstun/dropped() //since nodrop is fucked this will deal with it for now.
 	..()

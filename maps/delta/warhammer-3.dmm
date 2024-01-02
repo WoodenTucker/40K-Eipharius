@@ -11752,10 +11752,10 @@
 	block_chance = 35;
 	color = "grey";
 	desc = "A strange alien axe used for unknown purposes, it's construction seems ritualistic in nature.";
-	force = 26;
+	force = 28;
 	name = "runic axe";
 	force_wielded = 38;
-	armor_penetration = 40
+	armor_penetration = 30
 	},
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/farm)

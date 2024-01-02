@@ -107,7 +107,7 @@
 	icon_state = "crozius"
 	item_state = "crozius"
 	force = 30 //in conjunction with ass tardes str this thing is insane
-	armor_penetration = 70
+	armor_penetration = 60
 	throwforce = 1
 	throw_speed = 1
 	throw_range = 1
