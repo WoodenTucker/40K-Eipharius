@@ -1283,12 +1283,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/dungeon3)
-"LM" = (
-/obj/effect/landmark/map_data{
-	height = 8
-	},
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/dungeon3)
 "Mc" = (
 /obj/structure/bed/chair/wood/fancy{
 	dir = 4
@@ -12642,7 +12636,7 @@ PS
 PS
 PS
 Se
-LM
+Se
 GZ
 PS
 Qu

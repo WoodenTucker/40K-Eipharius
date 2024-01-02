@@ -175,7 +175,7 @@ obj/mortar/flare/blue
 
 /obj/item/grenade/frag/proc/on_explosion(var/turf/O)
 	if(explosion_size)
-		explosion(O, -1, -1, explosion_size, round(explosion_size/2), 0)
+		explosion(round(explosion_size / 8), round(explosion_size / 4), round(explosion_size / 2), explosion_size, round(explosion_size * 2), 0)
 
 /obj/item/grenade/frag/warfare
 	desc = "Throw it at THE ENEMEY!"
@@ -214,16 +214,16 @@ obj/mortar/flare/blue
 	desc = "A potent anti armor grenade used by the Imperium of Man, mind the blast radius."
 	icon_state = "krak_grenade"
 	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/strong=1)
-	explosion_size = 4
+	explosion_size = 8
 	num_fragments = 4
 	w_class = ITEM_SIZE_SMALL
 
 /obj/item/grenade/frag/high_yield/krak2
 	name = "Mechanicus Krak Grenade"
-	desc = "A potent anti armor grenade used by the Imperium of Man, mind the blast radius."
+	desc = "An incredibly dangerous and unstable plasma-enchanced Krak Grenade. Stand well clear!"
 	icon_state = "krak_grenade"
 	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/strong=1)
-	explosion_size = 5
+	explosion_size = 16
 	num_fragments = 6
 	w_class = ITEM_SIZE_SMALL
 

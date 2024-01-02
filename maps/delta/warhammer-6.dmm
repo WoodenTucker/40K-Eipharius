@@ -741,12 +741,6 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/dungeon2)
-"ks" = (
-/obj/item/melee/sword/hellblade,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/dungeon4)
 "kx" = (
 /obj/structure/sign/inkvd{
 	color = "grey";
@@ -15354,7 +15348,7 @@ aM
 aM
 yp
 tC
-ks
+tC
 tC
 tC
 Bn

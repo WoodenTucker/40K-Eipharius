@@ -29,9 +29,14 @@
 /datum/reagent/atepoine/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	M.adjustBrainLoss(-5)
 	M.adjustOxyLoss(-200 * removed)
+	M.add_chemical_effect(CE_STABLE)
 	if(istype(M,/mob/living/carbon/human))
 		var/mob/living/carbon/human/H = M
-
+		var/obj/item/organ/internal/eyes/E = H.internal_organs_by_name[BP_EYES]
+		if(E && istype(E))
+			if(E.damage > 0)
+				E.damage = max(E.damage - 5 * removed, 0)
+		
 		//Ports and simplifies defib code
 		if(H.stat != DEAD)
 			//if(H.ssd_check())
@@ -750,7 +755,7 @@
 	reagent_state = REAGENT_LIQUID
 	color = "#c8a5dc"
 	scannable = 1
-	overdose = 20
+	overdose = 30
 	flags = AFFECTS_DEAD //i only noticed this was bugged until now
 	metabolism = 0.1
 
@@ -777,7 +782,7 @@
 	reagent_state = REAGENT_LIQUID
 	color = "#c10158"
 	scannable = 1
-	overdose = 5
+	overdose = 500
 	metabolism = 1
 
 /datum/reagent/nanoblood/affect_blood(var/mob/living/carbon/human/M, var/alien, var/removed)

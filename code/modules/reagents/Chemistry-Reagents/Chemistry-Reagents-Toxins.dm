@@ -678,13 +678,14 @@
 	metabolism = REM * 2
 	overdose = 30
 
-/datum/reagent/toxin/corrupting/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+/datum/reagent/toxin/corrupting/affect_touch(var/mob/living/carbon/M, var/alien, var/removed)
 	..()
-	if(prob(100))
-		if(M.chem_doses[type] < 5)
-			to_chat(M, "<span class='warning'>You feel funny...</span>")
-		else
-			to_chat(M, "<span class='danger'>You feel like you could die at any moment!</span>")
+	if(M.wear_mask)
+		return
+	if(M.chem_doses[type] < 5)
+		to_chat(M, "<span class='warning'>You feel funny...</span>")
+	else
+		to_chat(M, "<span class='danger'>You feel like you could die at any moment!</span>")
 	if(istype(M, /mob/living/carbon/human))
 		var/mob/living/carbon/human/H = M
 		H.zombieze()

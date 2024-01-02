@@ -611,7 +611,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 	firemodes = list(
 		list(mode_name="semi-automatic",   burst=1, fire_delay=1.6, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
-		list(mode_name="overcharge",       burst=1, fire_delay=3.2, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun, charge_cost=150),
+		list(mode_name="overcharge",       burst=1, fire_delay=3.2, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=170),
 		)
 
 /obj/item/gun/energy/las/laspistol/militarum/bloodpact
@@ -635,8 +635,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	sales_price = 25
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=100),
-		list(mode_name="Overcharged", 	fire_delay = 2.5, charge_cost = 180, projectile_type = /obj/item/projectile/energy/las/lasgun),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=1.7, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=100),
+		list(mode_name="Overcharged", 	fire_delay = 3, charge_cost = 145, projectile_type = /obj/item/projectile/energy/las/lasgun/lucius),
 		)
 
 //Tau weapons

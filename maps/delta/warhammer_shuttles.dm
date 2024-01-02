@@ -71,6 +71,31 @@
 	shuttle_tag = "mechiferry"
 //
 
+/datum/shuttle/autodock/ferry/cha
+	name = "cha"
+	warmup_time = 10
+	waypoint_station = "cha_start"
+	waypoint_offsite = "cha_end"
+	shuttle_area = /area/cadiaoutpost/oa/shuttle/chacha
+
+/obj/effect/shuttle_landmark/ferry/cha_end
+	name = "landing pad"
+	landmark_tag = "cha_end"
+	base_area = /area/cadiaoutpost/cha2
+	base_turf = /turf/simulated/floor/plating
+
+/obj/effect/shuttle_landmark/ferry/cha_start
+	name = "cha"
+	landmark_tag = "cha_start"
+	base_area = /area/cadiaoutpost/cha1
+	base_turf = /turf/simulated/floor/plating
+
+/obj/machinery/computer/shuttle_control/ferry/cha
+	name = "Shuttle Control Console"
+	shuttle_tag = "cha"
+//
+
+
 /datum/shuttle/autodock/ferry/governor
 	name = "governor"
 	warmup_time = 20

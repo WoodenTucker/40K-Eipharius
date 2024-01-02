@@ -285,6 +285,7 @@
 	desc = "The white and bright helmet of a Tau Breacher."
 	icon_state = "tbrea"
 	item_state = "tbrea"
+	armor = list(melee = 40, bullet = 54, laser = 55, energy = 45, bomb = 35, bio = 100, rad = 100)
 
 /obj/item/clothing/head/helmet/scout
 	name = "fire warrior scout helmet"

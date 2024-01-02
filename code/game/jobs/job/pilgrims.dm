@@ -247,6 +247,7 @@ Pilgrim Fate System
 			U.add_stats(rand(16,17), rand(14,16), rand(14,16), rand (10,12)) //veteran mercenary
 			new /obj/item/melee/sword/cane(src.loc)
 			new /obj/item/clothing/head/helmet/witch(src.loc)
+			new /obj/item/clothing/suit/armor/witch(src.loc)
 			new /obj/item/device/radio/headset/headset_sci(src.loc)
 		if("Mercenary")
 			U.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(2,4),rand(2,6)) //melee, ranged, med, eng, surgery
@@ -491,7 +492,7 @@ Pilgrim Fate System
 				new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
-			else if(prob(60))
+			else if(prob(40))
 				to_chat(U,"<span class='danger'><b><font size=4>THE MERCHANT</font></b></span>")
 				to_chat(U,"<span class='goodmood'>Guided by your lust for thrones you smelled opportunity on this newly founded world. You have connectoins to the local gangs and trade guilds, find allies to further your interests in Messina.</font></b></span>")
 				U.add_stats(rand(14,15), rand(14,15), rand(15,17), rand (15,16))
@@ -532,7 +533,7 @@ Pilgrim Fate System
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-			if(prob(15))
+			if(prob(10))
 				to_chat(U,"<span class='danger'><b><font size=4>THE SORCERER</font></b></span>")
 				to_chat(U,"<span class='goodmood'>You're a foul sorcerer of chaos magics -- unless you aren't. In which case you're a crackpot. Or are you? Who knows. Best hide your robes unless you want to be shot to pieces though...</font></b></span>")
 				U.add_stats(rand(15,16), rand(14,16), rand(14,18), rand (12,16)) //
@@ -540,7 +541,7 @@ Pilgrim Fate System
 				new /obj/item/clothing/head/helmet/hauberk(src.loc)
 				new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
 				new /obj/item/device/radio/headset/headset_sci(src.loc)
-				if(prob(10))
+				if(prob(25))
 					new /obj/item/device/radio/headset/blue_team/all(src.loc)
 				new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
@@ -620,7 +621,7 @@ Pilgrim Fate System
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MAX
 	announced = 0
-	access = list(access_bar, access_village, access_daemon)
+	access = list(247, access_bar, access_village, access_daemon)
 	minimal_access = list(access_bar, access_village, access_daemon)
 	minimal_player_age = 3
 	ideal_character_age = 40
@@ -631,6 +632,7 @@ Pilgrim Fate System
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
+		H.get_idcard()?.access = list(247, access_bar, access_village, access_daemon)
 		H.fully_replace_character_name("[current_name] Sondar")
 		H.add_stats(rand(14,17), rand(14,17), rand(14,17), rand(12,16)) 
 		H.add_skills(rand(7,11),rand(7,11),rand(2,8),6,rand(2,8)) //melee, ranged, med, eng, surgery
@@ -651,8 +653,8 @@ Pilgrim Fate System
 	open_when_dead = 0
 	supervisors = "Your own morality and ethics."
 	selection_color = "#848484"
-	access = list(access_bar,)
-	minimal_access = list(access_bar)
+	access = list(253)
+	minimal_access = list(253)
 	outfit_type = /decl/hierarchy/outfit/job/administrator
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
@@ -661,6 +663,7 @@ Pilgrim Fate System
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
+		H.get_idcard()?.access = list(253)
 		H.add_stats(rand(15,17), rand(16,17), rand(10,13), rand (16,18)) //strong stats due to their... interesting fame of being cult leaders
 		H.add_skills(rand(7,9),rand(7,10),rand(4,6),4,rand(6,8)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -670,13 +673,13 @@ Pilgrim Fate System
 		to_chat(H, "<span class='notice'><b><font size=3>Having arrived recently from the spires of Necromunda. You, a former courtier, sought to establish something of a collection here with your remaining wealth. For whatever reason the dark, insidious and terrible aspects of this planet intrigued you enough to abandon your world and seek out... Eipharius.</font></b></span>")
 
 /datum/job/villagemedicae
-	title = "Village Medicae"
+	title = "Biologis Medicae"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MED
 	total_positions = 3
 	spawn_positions = 3
 	open_when_dead = 0
-	supervisors = "Your own morality and ethics."
+	supervisors = "The Magos Biologis."
 	selection_color = "#848484"
 	access = list(access_bar,)
 	minimal_access = list(access_bar)
@@ -694,7 +697,7 @@ Pilgrim Fate System
 		H.adjustStaminaLoss(-INFINITY)
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.assign_random_quirk()
-		to_chat(H, "<span class='notice'><b><font size=3>An experienced medicae from your homeworld, you are one of many who booked passage to Eipharius in the hopes of building industries of medicine on a new world.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>An experienced medicae from your homeworld, you are one of many who booked passage to Eipharius in the hopes of building industries of medicine on a new world. You serve directly under the Magos Biologis who commands over the medicae of this world.</font></b></span>")
 
 
 //loadouts below here
@@ -897,7 +900,6 @@ Pilgrim Fate System
     cultist_chance = 0
     species_role = "Skaven"
 
-
     equip(var/mob/living/carbon/human/H)
         H.warfare_faction = IMPERIUM
         ..()
@@ -945,8 +947,7 @@ Pilgrim Fate System
 	open_when_dead = 0
 	supervisors = "yourself and your fellow gangers"
 	selection_color = "#530606"
-	access = list(access_village, access_ganger,)
-	minimal_access = list(access_bar)
+	access = list(access_village, access_ganger,access_bar)
 	outfit_type = /decl/hierarchy/outfit/job/ganger
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
@@ -980,7 +981,7 @@ Pilgrim Fate System
 
 	var/mob/living/carbon/human/U = src
 	U.verbs -= list(/mob/living/carbon/human/proc/gangerclass,)
-	var/fates = list("Bruiser","Hitman", "Rogue Doc",)
+	var/fates = list("Bruiser","Assassin", "Rogue Doc",)
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -1005,7 +1006,7 @@ Pilgrim Fate System
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-		if("Hitman")
+		if("Assassin")
 			U.add_stats(rand(14,17), rand(15,17), rand(14,16), rand (14,16)) //ex criminal, not fed very well, but random stats
 			U.add_skills(rand(5,6),rand(9,11),rand(2,4),rand(5,10),rand(2,4)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/penitent, slot_w_uniform)
@@ -1016,7 +1017,7 @@ Pilgrim Fate System
 			new /obj/item/gun/projectile/automatic/machinepistol(src.loc) 
 			new /obj/item/ammo_magazine/mc9mmt/machinepistol(src.loc) 
 			new /obj/item/ammo_magazine/mc9mmt/machinepistol(src.loc)
-			to_chat(U, "<span class='goodmood'><b><font size=3>You're the hitman, the shadow of the gang. Take out any who oppose you.</font></b></span>")
+			to_chat(U, "<span class='goodmood'><b><font size=3>You're the assassin, the shadow of the gang. Take out any who oppose you.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/gangerclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
@@ -1053,8 +1054,7 @@ Pilgrim Fate System
 	announced = FALSE
 	cultist_chance = 0 // grog like emperorah :) // bouncer should only be cultist if the innkeeper is. as they would get easily indoctrinated by their dad/boss
 	species_role = "Ogryn"
-	access = list(access_bar, access_ganger)
-	minimal_access = list(access_bar)
+	access = list(access_village, access_ganger,access_bar)
 
 	equip(var/mob/living/carbon/human/H)
 	//theres gonna be some redundencies here but I do not careeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee

@@ -306,30 +306,30 @@
 /obj/item/projectile/bullet/rifle/a762/brifle
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	damage = 65
-	armor_penetration = 10
+	armor_penetration = 20
 
 /obj/item/projectile/bullet/rifle/a762/brifle/ap
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	damage = 68
-	armor_penetration = 20
+	armor_penetration = 30
 	penetrating = 1
 
 /obj/item/projectile/bullet/rifle/a762/brifle/kp
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	damage = 68
-	armor_penetration = 35
+	armor_penetration = 45
 	penetrating = 2
 
 /obj/item/projectile/bullet/rifle/a762/brifle/ms
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	damage = 75
-	armor_penetration = -10
+	armor_penetration = 0
 
 /obj/item/projectile/bullet/rifle/kroot
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	penetrating = TRUE // fuck that shit penetrative rounds
 	damage = 70
-	armor_penetration = 20
+	armor_penetration = 30
 
 /obj/item/ammo_magazine/brifle
 	name = "Rifle Box"
@@ -1147,6 +1147,7 @@
 	unwielded_unloaded_icon = "autoshotty-e"
 	wielded_unloaded_icon = "autoshotty-wielded-e"
 	w_class = ITEM_SIZE_LARGE
+	slot_flags = SLOT_BACK|SLOT_S_STORE
 	force = 25
 	max_shells = 30
 	caliber = ".75"
@@ -1428,7 +1429,7 @@
 	unwielded_unloaded_icon = "pulserifle"
 	wielded_unloaded_icon = "pulserifle-wielded"
 	caliber = "pmag"
-	max_shells = 37
+	max_shells = 45
 	str_requirement = 10
 	one_hand_penalty = 3.5
 	accuracy = 0.5 //Good gun, well maintained by the Mechanicus
@@ -1439,8 +1440,8 @@
 	w_class = ITEM_SIZE_HUGE
 
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="5-round bursts", burst=5, fire_delay=4.5, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic", burst=1, fire_delay=1.2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="5-round bursts", burst=5, fire_delay=4, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
 		)
 
 /obj/item/gun/projectile/automatic/gaussrifle/New()

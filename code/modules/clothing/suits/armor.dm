@@ -270,6 +270,7 @@ obj/item/clothing/suit/armor
 	desc = "The white and bright armor of a Tau Breacher."
 	icon_state = "tbrea"
 	item_state = "tbrea"
+	armor = list(melee = 45, bullet = 60, laser = 65, energy = 45, bomb = 60, bio = 50, rad = 50)
 
 // Ork
 
@@ -350,6 +351,7 @@ obj/item/clothing/suit/armor
 	name = "Rogue Trader's Armor"
 	desc = "The distinguished armor of a Rogue Trader"
 	icon_state = "rtarm"
+	item_state = "rtarm"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 46, bullet = 52, laser = 52, energy = 35, bomb = 50, bio = 30, rad = 30)
 	sales_price = 0
@@ -553,7 +555,7 @@ obj/item/clothing/suit/armor
 	name = "bounty hunter's armor"
 	icon_state = "cadianarmor"
 	item_state = "cadianarmor"
-	armor = list(melee = 35, bullet = 30, laser = 30, energy = 25, bomb = 20, bio = 10, rad = 10)
+	armor = list(melee = 38, bullet = 38, laser = 38, energy = 25, bomb = 20, bio = 10, rad = 10)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -562,7 +564,7 @@ obj/item/clothing/suit/armor
 	name = "bounty hunter's armor"
 	icon_state = "valhalla"
 	item_state = "valhalla"
-	armor = list(melee = 35, bullet = 30, laser = 30, energy = 25, bomb = 20, bio = 10, rad = 10)
+	armor = list(melee = 38, bullet = 38, laser = 38, energy = 25, bomb = 20, bio = 10, rad = 10)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -1241,7 +1243,7 @@ obj/item/clothing/suit/armor
 	item_state = "ooml"
 	armor = list(melee = 54, bullet = 51, laser = 48, energy = 20, bomb = 40, bio = 50, rad = 50)
 	sales_price = 20
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|HANDS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE

@@ -13,6 +13,7 @@
 	#include "warhammer-6.dmm"
 	#include "warhammer-7.dmm"
 	#include "warhammer-8.dmm"
+	#include "warhammer-9.dmm"
 
 	#include "../../code/modules/lobby_music/generic_songs.dm"
 

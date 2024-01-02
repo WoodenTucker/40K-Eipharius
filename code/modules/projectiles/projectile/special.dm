@@ -22,14 +22,14 @@
 	name =".75 bolt" //.75, astartes sized bolters or boltpistols
 	icon_state= "bolter"
 	damage = 70
-	armor_penetration = 30 //this is totally not cause its a .75
+	armor_penetration = 40 //this is totally not cause its a .75
 	check_armour = "bullet"
 
 /obj/item/projectile/bullet/bolterrifle/astartes
 	name =".95 bolt"  // Will make kraken penetrator variants later.
 	icon_state= "bolter"
 	damage = 90
-	armor_penetration = 35 
+	armor_penetration = 45 
 	check_armour = "bullet"
 
 /obj/item/projectile/bullet/bpistol 
@@ -37,31 +37,31 @@
 	icon_state= "bolter"
 	damage = 60
 	check_armour = "bullet"
-	armor_penetration = 25
+	armor_penetration = 35
 
 // SPECIAL BOLT ROUNDS
 
 /obj/item/projectile/bullet/bpistol/kp
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 65
-	armor_penetration = 40
+	armor_penetration = 50
 	penetrating = 2
 
 /obj/item/projectile/bullet/bolt/kp
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 78
-	armor_penetration = 55
+	armor_penetration = 65
 	penetrating = 3
 
 /obj/item/projectile/bullet/bpistol/ms // This is .75 Bolt Pistol Round
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 78
-	armor_penetration = 35
+	armor_penetration = 45
 
 /obj/item/projectile/bullet/bolt/ms
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 88
-	armor_penetration = 35
+	armor_penetration = 45
 
 /obj/item/projectile/meteor
 	name = "meteor"
@@ -359,7 +359,7 @@
 	dispersion = 0.0
 	animate_movement = 1
 	penetrating = 10
-	armor_penetration = 200
+	armor_penetration = 100
 
 /obj/item/projectile/energy/meltagun
 	name = "Meltagun beam"
@@ -371,7 +371,7 @@
 	range =  5
 	incinerate = 1
 	penetrating = 10
-	armor_penetration = 200
+	armor_penetration = 120
 	var/flash_range = 1
 	var/brightness = 10
 	var/light_colour = "#ffffff"

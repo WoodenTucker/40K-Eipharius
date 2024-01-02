@@ -253,5 +253,5 @@
 
 /datum/happiness_event/Tzbook/Ext
 	description = "<span class='danger'> MY MIND IS MUSH! MY BRAIN AFLAME! SANITY IS AN ILLUSION, PEACE A MYTH!</span>\n"
-	happiness = -150
+	happiness = -25
 	timeout = 10 MINUTES

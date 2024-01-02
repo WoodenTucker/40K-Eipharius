@@ -586,7 +586,10 @@ var/const/NO_EMAG_ACT = -50
 	desc = "A key that unlocks doors belonging to Ganger dens."
 	access = list(access_ganger)
 
-
+/obj/item/card/id/key/middle/majorcrimes
+	name = "Major Crimes Key"
+	desc = "A key that unlocks doors belonging to Major Crimes."
+	access = list(access_majorcrimes)
 
 // high tier super key, for nobles, mechanicus and other fancy things
 /obj/item/card/id/key/super

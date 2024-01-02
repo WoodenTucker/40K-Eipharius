@@ -639,7 +639,7 @@
 	icon_state = "sister"
 	item_state = "sister"
 	armor = list(melee = 65, bullet = 65, laser = 55, energy = 40, bomb = 40, bio = 0, rad = 40)
-	sales_price = 20
+	sales_price = 50
 
 /obj/item/clothing/head/helmet/sisterofbattle/repentia
 	name = "Cowl of the Repentia"
@@ -656,7 +656,7 @@
 	icon_state = "mlsister"
 	item_state = "mlsister"
 	armor = list(melee = 65, bullet = 65, laser = 55, energy = 40, bomb = 40, bio = 0, rad = 40)
-	sales_price = 20
+	sales_price = 50
 
 /obj/item/clothing/head/helmet/sisterofbattle/brsister
 	name = "Order of the Bloody Rose Power Helmet"
@@ -664,7 +664,7 @@
 	icon_state = "brsister"
 	item_state = "brsister"
 	armor = list(melee = 65, bullet = 65, laser = 55, energy = 40, bomb = 40, bio = 0, rad = 40)
-	sales_price = 20
+	sales_price = 50
 
 /obj/item/clothing/head/preacher
 	name = "Preacher's Crown"
@@ -672,7 +672,7 @@
 	icon_state = "preacherhat"
 	item_state = "preacherhat"
 	armor = list(melee = 30, bullet = 20, laser = 15, energy = 15, bomb = 10, bio = 0, rad = 0)
-	sales_price = 1
+	sales_price = 100
 
 // cultists, pilgrims ect
 /obj/item/clothing/head/ogryn

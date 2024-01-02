@@ -168,7 +168,12 @@
 	icon_state = "black"
 	starts_with = list(/datum/reagent/atepoine = 10)
 
-/obj/item/reagent_containers/hypospray/autoinjector/death //this is ateopine in the wiki
+/obj/item/reagent_containers/hypospray/autoinjector/adrenaline //this is adrenaline
+	name = "autoinjector (adrenaline)"
+	icon_state = "black"
+	starts_with = list(/datum/reagent/adrenaline = 15)
+
+/obj/item/reagent_containers/hypospray/autoinjector/death //death
 	name = "autoinjector (???)"
 	icon_state = "black"
 	starts_with = list(/datum/reagent/toxin/zombiepowder = 10, /datum/reagent/tramadol = 32)
@@ -179,18 +184,23 @@
 	starts_with = list(/datum/reagent/mindbreaker = 5)
 
 /obj/item/reagent_containers/hypospray/autoinjector/blood
-	name = "blood injector"
-	desc = "A blood injector, contained O- blood."
+	name = "nanoblood injector"
+	desc = "A nanoblood injector. Do not use more than 1 injectors in close sucession.."
 	icon_state = "n"
 
 	amount_per_transfer_from_this = 50
-	volume = 500
-	var/blood_type = "O-"
+	volume = 210
+	starts_with = list(/datum/reagent/bicaridine =5, /datum/reagent/kelotane = 5, /datum/reagent/nanoblood = 200)
 
-/obj/item/reagent_containers/hypospray/autoinjector/blood/New()
-	..()
-	if(blood_type)
-		reagents.add_reagent(/datum/reagent/blood, volume, list("donor" = null, "blood_DNA" = null, "blood_type" = blood_type, "trace_chem" = null, "virus2" = list(), "antibodies" = list()))
+/obj/item/reagent_containers/hypospray/autoinjector/blood/large
+	name = "large nanoblood injector"
+	desc = "A large nanoblood injector. Do not use more than half an injector in close sucession."
+	icon_state = "n"
+	w_class = ITEM_SIZE_NORMAL
+
+	amount_per_transfer_from_this = 50
+	volume = 524
+	starts_with = list(/datum/reagent/bicaridine =12, /datum/reagent/kelotane = 12, /datum/reagent/nanoblood = 500)
 
 /obj/item/reagent_containers/hypospray/autoinjector/morphine
 	name = "morphine syrette"
