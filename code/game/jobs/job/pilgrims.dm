@@ -557,13 +557,13 @@ Pilgrim Fate System
 				new /obj/item/device/radio/headset/headset_sci(src.loc)
 
 /datum/job/underboss  //Shrewd businessman
-	title = "Underboss"
+	title = "Tavern Keeper"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MED //he's important to the pilgrims, but not to anyone else
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 0
-	supervisors = "money"
+	supervisors = "HOUSE GOLIATH"
 	selection_color = "#530606"
 	access = list(access_bar, access_ganger)
 	minimal_access = list(access_bar)
@@ -580,7 +580,8 @@ Pilgrim Fate System
 		H.add_stats(rand(20,30), rand(15,18), rand(15,18), rand (2,5)) //ogryn are stronger than astartes or smh i don't remember
 		H.add_skills(rand(10,13),1,1,1,1) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		to_chat(H, "<span class='notice'><b><font size=3>You're an up-and-coming entrepreneur on Eipharius -- the wisest most big brain Ogryn bonehead that ever lived. You've taken over a local inn with some cashflow given to you by the Rogue Trader and you owe the big lord lots of thrones. Best you figure out how to square up before they cut a deal with one of your Gangers. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You're an up-and-coming entrepreneur on Eipharius -- the wisest most big brain Ogryn bonehead that ever lived. You were sent here by House Goliath from Necromunda who supplies most of the sub-sector through the cold-trade, and the Militarum with cheap manufactured autoguns who give it by the freight-load to private armies in the frontier. Goliath expects big things from you, so you best get to grinding Oggy... </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You're an up-and-coming entrepreneur on Eipharius -- the wisest most big brain Ogryn bonehead that ever lived. You were sent here by House Goliath from Necromunda who supplies most of the sub-sector through the cold-trade, and the Militarum with cheap manufactured autoguns who give it by the freight-load to private armies in the frontier. Goliath expects big things from you, so you best get to grinding Oggy... </font></b></span>")
 
 /*
 /datum/job/innkeeper
@@ -768,6 +769,7 @@ Pilgrim Fate System
 	l_hand = /obj/item/melee/sword/machete/chopper/heavy/adamantine
 	r_hand = /obj/item/gun/projectile/ork/automatic/shoota/big
 	backpack_contents = list(
+	/obj/item/card/id/pilgrim/penitent/keeper = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,
 
@@ -860,6 +862,7 @@ Pilgrim Fate System
 	r_hand = /obj/item/gun/projectile/bolter_pistol
 	suit_store = /obj/item/gun/projectile/ork/automatic/shoota/big
 	backpack_contents = list(
+	/obj/item/card/id/pilgrim/penitent/keeper = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,
 
@@ -939,13 +942,13 @@ Pilgrim Fate System
 		)
 
 /datum/job/gangboy
-	title = "Ganger"
+	title = "House Goliath"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MED //better off than your average gross pilgrim
 	total_positions = 2
 	spawn_positions = 2
 	open_when_dead = 0
-	supervisors = "yourself and your fellow gangers"
+	supervisors = "The Tavern Keeper and House Goliath"
 	selection_color = "#530606"
 	access = list(access_village, access_ganger,access_bar)
 	outfit_type = /decl/hierarchy/outfit/job/ganger
@@ -965,7 +968,7 @@ Pilgrim Fate System
 		H.verbs += list(
 			/mob/living/carbon/human/proc/gangerclass,
 		)
-		to_chat(H, "<span class='notice'><b><font size=3>You're a ganger raised up in the factorums of the colony ship that brought you and many like you to Eipharius. Upon arrival you were lucky enough to be employed by an Ogryn Gang boss -- a powerful bruiser with ties to the Rogue Trader of all people.'.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You're a ganger raised up in the factorums of Necromunda -- loyal completely to House Goliath as one of the best and brightest of the lot. You work for the Tavern Keeper, one of the heaviest hitters on Eipharius and are tasked with running the tavern alongside any other shady businesses you can keep afloat. For now the bosses don't want war with the Enforcers, so try to avoid making a mess. Like they say in Necromunda -- don't kill shit where you eat'.</font></b></span>")
 
 
 /mob/living/carbon/human/proc/gangerclass()
@@ -999,7 +1002,7 @@ Pilgrim Fate System
 			new /obj/item/device/radio/headset/ert(src.loc) 
 			new /obj/item/storage/backpack/satchel/warfare(src.loc) 
 			new /obj/item/melee/classic_baton/trench_club(src.loc)
-			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)  
+			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent/keeper, slot_wear_id)  
 			new /obj/item/stack/thrones3/twenty(src.loc) 
 			to_chat(U,"<span class='goodmood'>You're the muscle of the gang. Extract protection money and protect your fellow gang members.<b><font size=3>")
 			U.verbs -= list(/mob/living/carbon/human/proc/gangerclass,)
@@ -1013,7 +1016,7 @@ Pilgrim Fate System
 			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc) 
 			new /obj/item/clothing/suit/storage/vest/tactical(src.loc) 
 			new /obj/item/device/radio/headset/ert(src.loc) 
-			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id) 
+			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent/keeper, slot_wear_id) 
 			new /obj/item/gun/projectile/automatic/machinepistol(src.loc) 
 			new /obj/item/ammo_magazine/mc9mmt/machinepistol(src.loc) 
 			new /obj/item/ammo_magazine/mc9mmt/machinepistol(src.loc)
@@ -1030,7 +1033,7 @@ Pilgrim Fate System
 			new /obj/item/storage/belt/medical/full(src.loc)  
 			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc) 
 			new /obj/item/device/radio/headset/ert(src.loc) 
-			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id) 
+			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent/keeper, slot_wear_id) 
 			new /obj/item/stack/thrones3/twenty(src.loc) 
 			new /obj/item/stack/thrones3/twenty(src.loc) 
 			new /obj/item/clothing/glasses/eyepatch/hud/medical(src.loc) 

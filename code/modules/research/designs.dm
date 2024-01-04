@@ -2423,7 +2423,7 @@ CIRCUITS BELOW
 	name = "Mechanicus Krak Grenade"
 	id = "krak2"
 	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 3, TECH_COMBAT = 3, TECH_PHORON = 4)
-	materials = list("diamond" = 700, "phoron" = 1500)
+	materials = list("diamond" = 600, "phoron" = 1100)
 	build_path = /obj/item/grenade/frag/high_yield/krak2
 	sort_string = "XBAC"
 // AMMO

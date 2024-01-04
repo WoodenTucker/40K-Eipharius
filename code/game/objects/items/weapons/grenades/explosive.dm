@@ -107,6 +107,7 @@
 /obj/mortar/frag/New()
 	..()
 	sleep(0)
+	explosion(get_turf(src), -1, -1, 2, 2, 0)
 	fragmentate(get_turf(src), 72)
 	qdel(src)
 
@@ -223,8 +224,8 @@ obj/mortar/flare/blue
 	desc = "An incredibly dangerous and unstable plasma-enchanced Krak Grenade. Stand well clear!"
 	icon_state = "krak_grenade"
 	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/strong=1)
-	explosion_size = 16
-	num_fragments = 6
+	explosion_size = 12
+	num_fragments = 7
 	w_class = ITEM_SIZE_SMALL
 
 /obj/item/grenade/frag/high_yield/homemade
