@@ -42,18 +42,18 @@
 	},
 /area/cadiaoutpost/oa/security/armory)
 "am" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 6
+/obj/effect/floor_decal/spline/fancy/wood,
+/obj/item/reagent_containers/food/drinks/bottle/amasecpoor{
+	pixel_x = 14;
+	pixel_y = 6
 	},
-/obj/item/paper_bin{
-	pixel_y = 10
-	},
-/obj/item/pen/multi{
-	pixel_y = 4
+/obj/item/reagent_containers/food/drinks/glass2/pint{
+	pixel_y = 6;
+	pixel_x = -2
 	},
 /obj/structure/table/graf/pagan,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/villageinside)
 "an" = (
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 8
@@ -66,10 +66,7 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "ar" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 4
-	},
-/turf/simulated/floor/fancyfloor/coralg,
+/turf/space,
 /area/cadiaoutpost/oa/service/inn)
 "at" = (
 /turf/simulated/floor/fancyfloor/carpet/blue{
@@ -1341,18 +1338,18 @@
 	},
 /area/cadiaoutpost/oa/security/armory)
 "eT" = (
-/obj/effect/floor_decal/spline/fancy/wood,
-/obj/item/reagent_containers/food/drinks/bottle/amasecpoor{
-	pixel_x = 14;
-	pixel_y = 6
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 6
 	},
-/obj/item/reagent_containers/food/drinks/glass2/pint{
-	pixel_y = 6;
-	pixel_x = -2
+/obj/item/paper_bin{
+	pixel_y = 10
+	},
+/obj/item/pen/multi{
+	pixel_y = 4
 	},
 /obj/structure/table/graf/pagan,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/villageinside)
 "eU" = (
 /obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
@@ -1726,10 +1723,9 @@
 	},
 /area/cadiaoutpost/oa/security/armory)
 "gm" = (
-/obj/structure/undies_wardrobe,
-/obj/effect/floor_decal/spline/fancy/wood,
+/obj/structure/bed/chair/wood/fancy,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/villageinside)
 "gn" = (
 /obj/structure/curtain/open/shower/security{
 	name = "expensive curtain";
@@ -4488,6 +4484,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/rtship1)
+"qc" = (
+/obj/effect/floor_decal/newcorner/polar{
+	dir = 4
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/service/inn)
 "qd" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 6
@@ -4753,6 +4758,14 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
+"rp" = (
+/obj/structure/closet/crate,
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 10;
+	icon_state = "spline_fancy"
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/villageinside)
 "rq" = (
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
@@ -9410,6 +9423,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact2)
+"Jo" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 4
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/villageinside)
 "Js" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -10339,12 +10358,13 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/shuttle/roguet)
 "MI" = (
-/obj/structure/closet/crate,
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 10;
-	icon_state = "spline_fancy"
+/obj/effect/floor_decal/newcorner/polar/quarter{
+	dir = 1
 	},
-/turf/simulated/floor/fancyfloor/coralg,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "MJ" = (
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
@@ -12471,7 +12491,7 @@
 /obj/item/device/flashlight/lamp/green,
 /obj/structure/table/graf/pagan,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/villageinside)
 "UL" = (
 /obj/item/paper_bin{
 	pixel_y = 10
@@ -13881,9 +13901,10 @@
 	},
 /area/cadiaoutpost/oa/shuttle/station1)
 "ZO" = (
-/obj/structure/bed/chair/wood/fancy,
+/obj/structure/undies_wardrobe,
+/obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/villageinside)
 "ZP" = (
 /obj/item/reagent_containers/pill/happy{
 	color = "lightblue";
@@ -49353,7 +49374,7 @@ In
 In
 In
 WD
-ZW
+MI
 eK
 IH
 IH
@@ -49861,10 +49882,10 @@ IH
 aO
 xb
 xb
+xb
+xb
+xb
 MW
-xE
-xE
-xE
 xE
 xE
 xE
@@ -50107,24 +50128,24 @@ TV
 Qc
 Qc
 eK
-Ig
-Ig
+IH
+IH
 IH
 aO
 xb
 xb
+IH
+IH
+IH
 fk
 IH
 IH
 IH
-IH
 vD
-IH
-IH
-IH
-UB
-UB
-UB
+ar
+PN
+PN
+PN
 UB
 UB
 UB
@@ -50359,24 +50380,24 @@ RF
 xb
 xb
 fk
-Ig
-Ig
+IH
+IH
 IH
 aO
 xb
 xb
+Ig
+Ig
+IH
 fk
 IH
 vn
 un
 sJ
 FT
-FT
-MI
-IH
-UB
-UB
-UB
+vy
+rp
+PN
 UB
 UB
 UB
@@ -50617,18 +50638,18 @@ IH
 aO
 xb
 xb
+Ig
+Ig
+IH
 RZ
 IH
 gC
 LE
 hq
 kT
-Nn
-gm
-IH
-UB
-UB
-UB
+Hl
+ZO
+PN
 UB
 UB
 UB
@@ -50869,18 +50890,18 @@ Qc
 RF
 xb
 xb
+IH
+IH
+IH
 fk
 IH
 IH
 IH
 IH
 nd
-Nn
+Hl
 UI
-IH
-UB
-UB
-UB
+PN
 UB
 UB
 UB
@@ -51121,18 +51142,18 @@ xE
 xE
 xE
 xE
+qc
+xE
+xE
 Ay
 IH
 jy
 sw
 IH
 tq
-ZO
-eT
-IH
-UB
-UB
-UB
+gm
+am
+PN
 UB
 UB
 UB
@@ -51374,17 +51395,17 @@ IH
 IH
 YW
 IH
+ar
+ar
+ar
 IH
 Vu
 eY
 jx
 hq
-ar
-am
-IH
-UB
-UB
-UB
+Jo
+eT
+PN
 UB
 UB
 UB
@@ -54899,8 +54920,8 @@ Jx
 Qc
 eK
 IH
-Ig
-Ig
+IH
+IH
 IH
 EQ
 EQ
@@ -55151,8 +55172,8 @@ xb
 xb
 RZ
 IH
-Ig
-Ig
+IH
+IH
 IH
 vs
 zG
