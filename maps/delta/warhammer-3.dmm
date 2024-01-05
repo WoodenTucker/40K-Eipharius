@@ -17845,16 +17845,6 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel)
-"qKl" = (
-/obj/machinery/button/remote/blast_door/id_scan{
-	id = "noblepod";
-	req_one_access = list(247)
-	},
-/turf/simulated/shuttle/wall{
-	color = "grey";
-	icon_state = "wall3"
-	},
-/area/cadiaoutpost/oa/service/inn)
 "qKq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/firstaid,
@@ -24365,16 +24355,6 @@
 	dir = 4
 	},
 /area/cadiaoutpost/new_hive/hive_city)
-"wRS" = (
-/obj/machinery/button/remote/blast_door/id_scan{
-	id = "noblepod";
-	req_one_access = list(225)
-	},
-/turf/simulated/shuttle/wall{
-	color = "grey";
-	icon_state = "wall3"
-	},
-/area/cadiaoutpost/oa/service/inn)
 "wRY" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 4;
@@ -24520,9 +24500,7 @@
 /area/cadiaoutpost/oa/villageinside)
 "xdz" = (
 /obj/effect/floor_decal/turf/metal/six,
-/obj/machinery/door/airlock/engineering{
-	req_one_access = list(247)
-	},
+/obj/machinery/door/airlock/external,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -66347,7 +66325,7 @@ geR
 geR
 geR
 geR
-qKl
+geR
 cWU
 cWU
 vgz
@@ -66595,7 +66573,7 @@ dCO
 kOR
 aSb
 geR
-wRS
+geR
 bpr
 bpr
 tGq
@@ -67607,7 +67585,7 @@ geR
 geR
 geR
 geR
-qKl
+geR
 cWU
 cWU
 kOR
