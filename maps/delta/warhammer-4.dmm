@@ -42,9 +42,7 @@
 	},
 /area/cadiaoutpost/oa/security/armory)
 "am" = (
-/obj/effect/floor_decal/spline/fancy/wood,
-/obj/item/device/flashlight/lamp/green,
-/obj/structure/table/graf/pagan,
+/obj/structure/bed/chair/wood/fancy,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/villageinside)
 "an" = (
@@ -59,16 +57,9 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "ar" = (
-/obj/effect/floor_decal/spline/fancy/wood,
-/obj/item/reagent_containers/food/drinks/bottle/amasecpoor{
-	pixel_x = 14;
-	pixel_y = 6
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 4
 	},
-/obj/item/reagent_containers/food/drinks/glass2/pint{
-	pixel_y = 6;
-	pixel_x = -2
-	},
-/obj/structure/table/graf/pagan,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/villageinside)
 "at" = (
@@ -1253,6 +1244,19 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/armory)
+"ez" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 6
+	},
+/obj/item/paper_bin{
+	pixel_y = 10
+	},
+/obj/item/pen/multi{
+	pixel_y = 4
+	},
+/obj/structure/table/graf/pagan,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/villageinside)
 "eA" = (
 /obj/structure/table/rack,
 /obj/item/ammo_magazine/bolt_pistol_magazine,
@@ -1341,8 +1345,10 @@
 	},
 /area/cadiaoutpost/oa/security/armory)
 "eT" = (
-/turf/space,
-/area/cadiaoutpost/oa/service/inn)
+/obj/structure/undies_wardrobe,
+/obj/effect/floor_decal/spline/fancy/wood,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/villageinside)
 "eU" = (
 /obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
@@ -1716,13 +1722,14 @@
 	},
 /area/cadiaoutpost/oa/security/armory)
 "gm" = (
-/obj/structure/closet/crate,
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 10;
-	icon_state = "spline_fancy"
+/obj/effect/floor_decal/newcorner/polar{
+	dir = 4
 	},
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/villageinside)
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/service/inn)
 "gn" = (
 /obj/structure/curtain/open/shower/security{
 	name = "expensive curtain";
@@ -1767,6 +1774,15 @@
 	dir = 5
 	},
 /area/cadiaoutpost/oa/hallway/northern)
+"gt" = (
+/obj/effect/floor_decal/newcorner/polar/quarter{
+	dir = 1
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/service/inn)
 "gw" = (
 /obj/effect/floor_decal/newcorner/blue/diagonal,
 /obj/machinery/light{
@@ -2103,10 +2119,6 @@
 /obj/effect/landmark/start/ministorum/sistersuperior,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/chapel)
-"hA" = (
-/obj/structure/bed/chair/wood/fancy,
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/villageinside)
 "hB" = (
 /obj/effect/floor_decal/newcorner/reinforced,
 /obj/effect/floor_decal/newcorner/grey{
@@ -5059,6 +5071,19 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/farm)
+"sA" = (
+/obj/effect/floor_decal/spline/fancy/wood,
+/obj/item/reagent_containers/food/drinks/bottle/amasecpoor{
+	pixel_x = 14;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/food/drinks/glass2/pint{
+	pixel_y = 6;
+	pixel_x = -2
+	},
+/obj/structure/table/graf/pagan,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/villageinside)
 "sB" = (
 /obj/structure/sign/stainedglass1{
 	pixel_y = 30
@@ -10336,15 +10361,8 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/shuttle/roguet)
 "MI" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 6
-	},
-/obj/item/paper_bin{
-	pixel_y = 10
-	},
-/obj/item/pen/multi{
-	pixel_y = 4
-	},
+/obj/effect/floor_decal/spline/fancy/wood,
+/obj/item/device/flashlight/lamp/green,
 /obj/structure/table/graf/pagan,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/villageinside)
@@ -11503,15 +11521,6 @@
 	dir = 10
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
-"Rj" = (
-/obj/effect/floor_decal/newcorner/polar/quarter{
-	dir = 1
-	},
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/service/inn)
 "Rk" = (
 /obj/structure/railing{
 	dir = 1
@@ -12478,10 +12487,8 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
 "UI" = (
-/obj/structure/undies_wardrobe,
-/obj/effect/floor_decal/spline/fancy/wood,
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/villageinside)
+/turf/space,
+/area/cadiaoutpost/oa/service/inn)
 "UL" = (
 /obj/item/paper_bin{
 	pixel_y = 10
@@ -12680,15 +12687,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
-"Vx" = (
-/obj/effect/floor_decal/newcorner/polar{
-	dir = 4
-	},
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/service/inn)
 "Vz" = (
 /obj/structure/closet/hive/wood{
 	anchored = 1
@@ -13772,7 +13770,7 @@
 	req_one_access = list(269);
 	name = "Backroom"
 	},
-/turf/simulated/wall/concrete/strong,
+/turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
 "Zu" = (
 /turf/simulated/floor/fancyfloor/carpet/blue{
@@ -13900,8 +13898,10 @@
 	},
 /area/cadiaoutpost/oa/shuttle/station1)
 "ZO" = (
+/obj/structure/closet/crate,
 /obj/effect/floor_decal/spline/fancy/wood{
-	dir = 4
+	dir = 10;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/villageinside)
@@ -49374,7 +49374,7 @@ In
 In
 In
 WD
-Rj
+gt
 eK
 IH
 IH
@@ -50142,7 +50142,7 @@ IH
 IH
 IH
 vD
-eT
+UI
 PN
 PN
 PN
@@ -50396,7 +50396,7 @@ un
 sJ
 FT
 vy
-gm
+ZO
 PN
 UB
 UB
@@ -50648,7 +50648,7 @@ LE
 hq
 kT
 Hl
-UI
+eT
 PN
 UB
 UB
@@ -50900,7 +50900,7 @@ IH
 IH
 nd
 Hl
-am
+MI
 PN
 UB
 UB
@@ -51142,7 +51142,7 @@ xE
 xE
 xE
 xE
-Vx
+gm
 xE
 xE
 Ay
@@ -51151,8 +51151,8 @@ jy
 sw
 IH
 tq
-hA
-ar
+am
+sA
 PN
 UB
 UB
@@ -51395,16 +51395,16 @@ IH
 IH
 YW
 IH
-eT
-eT
-eT
+UI
+UI
+UI
 IH
 Vu
 eY
 jx
 hq
-ZO
-MI
+ar
+ez
 PN
 UB
 UB
