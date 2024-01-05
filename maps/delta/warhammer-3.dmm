@@ -9296,6 +9296,7 @@
 /area/cadiaoutpost/oa/engineering)
 "iMG" = (
 /obj/effect/landmark/cargospawn2,
+/obj/structure/cargo_pad,
 /turf/simulated/floor/fancyfloor/coralg,
 /turf/simulated/floor/darkfloor,
 /area/cadiaoutpost/oa/service/inn)
