@@ -484,7 +484,7 @@
 
 
 
-	obj/item/book/manual/guard
+	/obj/item/book/manual/guard
 	name = "Imperial Infantrymans Uplifting Primer"
 	icon = 'icons/obj/items/books.dmi'
 	icon_state = "IIUP"
@@ -564,7 +564,7 @@
     to_chat(user, "<span class='notice'>[pick(iiupfact)]</span>"
 
 
-obj/item/book/manual/inq
+/obj/item/book/manual/inq
 	name = "Inquisitorial Rituals"
 	icon = 'icons/obj/items/books.dmi'
 	icon_state = "IRIT"
@@ -572,7 +572,7 @@ obj/item/book/manual/inq
 	title = "Inquisitorial Rituals"
 	desc = "A tiny handbook containing the descriptions of essential rituals"
 
-obj/item/book/manual/ecc
+/obj/item/book/manual/ecc
 	name = "Ecceliarchy Rituals"
 	icon = 'icons/obj/items/books.dmi'
 	icon_state = "ERIT"
@@ -581,7 +581,7 @@ obj/item/book/manual/ecc
 	desc = "A tiny handbook containing the descriptions of essential rituals"
 
 
-obj/item/book/manual/law
+/obj/item/book/manual/law
 	name = "Lex Imperialis"
 	icon = 'icons/obj/items/books.dmi'
 	icon_state = "LAW"
