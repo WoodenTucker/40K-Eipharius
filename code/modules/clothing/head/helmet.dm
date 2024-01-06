@@ -265,6 +265,15 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 
+/obj/item/clothing/head/helmet/orkhelmet/freeb
+	name = "Pirate 'Elmet"
+	desc = "OI MATES GET ON DA WATA' LETS KRUMP SOME UMIES"
+	icon_state = "freeboota"
+	item_state = "freeboota"
+	cold_protection = HEAD
+	armor = list(melee = 30, bullet = 40, laser = 40, energy = 10, bomb = 20, bio = 0, rad = 0)
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 
 // Tau
 
