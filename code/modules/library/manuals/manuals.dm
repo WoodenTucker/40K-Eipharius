@@ -565,7 +565,7 @@
 
 obj/item/book/manual/inq
 	name = "Inquisitorial Rituals"
-	icon_state = "IIUP"
+	icon_state = "IRIT"
 	author = "Inquisitor Gideon Ravenor"
 	title = "Inquisitorial Rituals"
 	desc = "A tiny handbook containing the descriptions of essential rituals"
