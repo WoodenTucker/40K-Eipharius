@@ -328,7 +328,7 @@
 /obj/item/projectile/bullet/rifle/lp338
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	damage = 145
-	armor_penetration = 75
+	armor_penetration = 70
 	penetration_modifier = 1.5
 	penetrating = TRUE
 
@@ -336,7 +336,7 @@
 	name = "JHP bullet"
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	damage = 170
-	armor_penetration = 35
+	armor_penetration = 30
 
 /obj/item/projectile/bullet/rifle/lp338/needler
 	name = "needler bullet"

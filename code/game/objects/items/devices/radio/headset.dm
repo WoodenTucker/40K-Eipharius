@@ -487,8 +487,7 @@
 	desc = "A command-level vox with high tiers of encryption."
 	icon_state = "com_headset"
 	item_state = "headset"
-	ks1type = /obj/item/device/encryptionkey/secure2
-	ks2type = /obj/item/device/encryptionkey/heads/captain
+	ks1type = /obj/item/device/encryptionkey/heads/captain
 	slot_flags = SLOT_EARS
 	w_class = ITEM_SIZE_SMALL
 	syndie = 1

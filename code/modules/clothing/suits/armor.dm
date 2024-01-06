@@ -572,7 +572,7 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/enforcer3// Marshall's armor
 	name = "Patrol Armor - Marshall"
 	desc = "The flak armor worn by a Messina Enforcer. Light and robust in the colour blue, designed to protect against blast and small arms fire."
-	icon_state = "PalaniteArmor"
+	icon_state = "MarshalArmor"
 	item_state = "MarshalArmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 50, bullet = 50, laser = 45, energy = 35, bomb = 40, bio = 40, rad = 40)
@@ -587,7 +587,7 @@ obj/item/clothing/suit/armor
 	icon_state = "PalaniteArmor"
 	item_state = "PalaniteArmour"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 44, bullet = 44, laser = 42, energy = 35, bomb = 40, bio = 40, rad = 40)
+	armor = list(melee = 52, bullet = 48, laser = 40, energy = 35, bomb = 40, bio = 40, rad = 40)
 	sales_price = 10
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -758,7 +758,7 @@ obj/item/clothing/suit/armor
 	icon_state = "medicae"
 	item_state = "medicae"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 35, bullet = 45, laser = 35, energy = 20, bomb = 30, bio = 40, rad = 30)
+	armor = list(melee = 35, bullet = 41, laser = 41, energy = 20, bomb = 30, bio = 40, rad = 30)
 	sales_price = 20
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -773,11 +773,28 @@ obj/item/clothing/suit/armor
 	icon_state = "fvest"
 	item_state = "fvest"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 38, bullet = 38, laser = 35, energy = 20, bomb = 30, bio = 40, rad = 30)
+	armor = list(melee = 38, bullet = 41, laser = 38, energy = 20, bomb = 30, bio = 40, rad = 30)
 	sales_price = 12
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/whiteshield/pdf
+	name = "Messian Pattern Standard Flak Armour"
+	desc = "The standard pattern flak armour found throughout the planetary defense forces of Greater Messina. Invented and machined by the Magos Explorator of this installation."
+	icon_state = "PDF-T"
+	item_state = "PDF-T"
+	armor = list(melee = 34, bullet = 38, laser = 45, energy = 20, bomb = 30, bio = 40, rad = 30)
+
+/obj/item/clothing/suit/armor/whiteshield/pdf/medic
+	name = "Messian Pattern Medic Flak Armour"
+	icon_state = "PDF-MedicT"
+	item_state = "PDF-MedicT"
+
+/obj/item/clothing/suit/armor/whiteshield/pdf/spec
+	name = "Messian Pattern Specialist Flak Armour"
+	icon_state = "PDF-SpecialT"
+	item_state = "PDF-SpecialT"
 
 /obj/item/clothing/suit/armor/catachan
 	name = "Catachan Flak Vest"
@@ -785,7 +802,7 @@ obj/item/clothing/suit/armor
 	icon_state = "Catachan_Vest"
 	item_state = "Catachan_Vest"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 60, bullet = 30, laser = 30, energy = 30, bomb = 20, bio = 0, rad = 0)
+	armor = list(melee = 55, bullet = 38, laser = 38, energy = 30, bomb = 20, bio = 0, rad = 0)
 	sales_price = 25
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -800,7 +817,7 @@ obj/item/clothing/suit/armor
 	icon_state = "mCatachan_Vest"
 /obj/item/clothing/suit/armor/catachan/medicae/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = -0.5
+	slowdown_per_slot[slot_wear_suit] = -0.4
 
 /obj/item/clothing/suit/armor/catachan/flamerspecialist
 	name = "Catachan Flak Vest"
