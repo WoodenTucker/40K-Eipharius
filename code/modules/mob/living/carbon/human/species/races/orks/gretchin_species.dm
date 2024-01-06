@@ -1,29 +1,29 @@
-/datum/species/ork
-	name = SPECIES_ORK
-	name_plural = "Orkz"
+/datum/species/gret
+	name = SPECIES_GRET
+	name_plural = "Gretchin"
 	secondary_langs = list(LANGUAGE_ORKY)
 	name_language = null // Use the first-name last-name generator rather than a language scrambler
 	icobase = 'icons/mob/human_races/r_ork.dmi'
 	deform = 'icons/mob/human_races/r_def_ork.dmi'
 	min_age = 1
 	max_age = 600
-	total_health = 200
-	var/pain_power = 120
+	total_health = 150
+	var/pain_power = 100
 	gluttonous = GLUT_ITEM_NORMAL
-	mob_size = MOB_LARGE
-	strength = STR_HIGH
+	mob_size = MOB_SMALL
+	strength = STR_LOW
 //	sexybits_location = BP_GROIN
 	species_flags = SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SLIP
-	brute_mod = 0.65
-	burn_mod = 0.65 
+	brute_mod = 1.1
+	burn_mod = 1.1
 	base_auras = list(
 		/obj/aura/regenerating/human/ork
 		)
 	inherent_verbs = list(
 		//mob/living/carbon/human/ork/proc/evolve,
-		/mob/living/carbon/human/ork/proc/scavenge,
+		//mob/living/carbon/human/ork/proc/scavenge,
 		/mob/living/carbon/human/ork/proc/giveorkzstats,
-		/mob/living/carbon/human/ork/proc/warscream,
+		//mob/living/carbon/human/ork/proc/warscream,
 		)
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
@@ -46,9 +46,9 @@
 	if(max_waaagh > 0)
 		stat(null, "Waaagh: [waaagh]/[max_waaagh]")
 
-/mob/living/carbon/human/ork
-	name = "ork"
-	real_name = "ork"
+/mob/living/carbon/human/gret
+	name = "Gretchin"
+	real_name = "Gretchin"
 	gender = MALE
 	status_flags = 0
 	var/isempty = 0
@@ -76,4 +76,4 @@
 	outfit.equip(src)
 
 /mob/living/carbon/human //the most cursed line in all of this code
-	var/new_orkz = SPECIES_ORK
+	var/new_orkz = SPECIES_GRET
