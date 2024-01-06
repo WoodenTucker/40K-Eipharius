@@ -146,7 +146,7 @@
 	name = "Maccabian Battle Uniform"
 	desc = "These durable undersuit are used to represent the zealous, smells like holy oils and other aromatics."
 	icon_state = "maccabian"
-	item_state = maccabian"
+	item_state = "maccabian"
 	worn_state = "maccabian"
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 60, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS

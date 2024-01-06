@@ -61,17 +61,17 @@
 				brute = pure_brute
 
 				if(burn_eligible && burn >= max_damage / DROPLIMB_THRESHOLD_DESTROY)
-					if(prob(burn/5) || force_droplimb)
+					if(prob(burn/8) || force_droplimb)
 						droplimb(0, DROPLIMB_BURN)
 						return
 
 				else if(edge_eligible && brute >= max_damage / DROPLIMB_THRESHOLD_EDGE)
-					if(prob(brute/4) || force_droplimb)
+					if(prob(brute/5) || force_droplimb)
 						droplimb(0, DROPLIMB_EDGE)
 						return
 
 				else if(brute >= max_damage / DROPLIMB_THRESHOLD_DESTROY)
-					if(prob(brute/4) || force_droplimb)
+					if(prob(brute/5) || force_droplimb)
 						droplimb(0, DROPLIMB_BLUNT)
 						return
 				/*

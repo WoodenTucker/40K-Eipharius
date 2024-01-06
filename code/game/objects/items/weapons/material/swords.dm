@@ -172,5 +172,5 @@
 	slot_flags = SLOT_BELT
 	sales_price = 0
 	weapon_speed_delay = 7
-	armor_penetration = 35
+	armor_penetration = 31
 

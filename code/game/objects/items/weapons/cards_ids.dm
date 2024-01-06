@@ -432,6 +432,9 @@ var/const/NO_EMAG_ACT = -50
 /obj/item/card/id/pilgrim/penitent
 	access = list(access_village)
 
+/obj/item/card/id/pilgrim/penitent/keeper
+	access = list(67,268,269,270,271,272,273,access_village)
+
 /obj/item/card/id/pilgrim/innkeeper
 	job_access_type = /datum/job/bartender //TODO tweak to village bar
 	access = list(access_inn1, access_inn2, access_inn3, access_bar) //lets innkeeper access his rented rooms
