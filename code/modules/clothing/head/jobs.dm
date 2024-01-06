@@ -254,6 +254,35 @@
 	item_state = "vraks3"
 	armor = list(melee = 38, bullet = 44, laser = 39, energy = 35, bomb = 20, bio = 50, rad = 50)
 
+
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult1
+	name = "Animal Mask"
+	desc = "A hood with a mask resemling a beaked creature"
+	icon_state = "tzeecult1"
+	item_state = "tzeecult1"
+	armor = list(melee = 35, bullet = 50, laser = 35, energy = 35, bomb = 20, bio = 50, rad = 50)
+
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult2
+	name = "Animal Mask"
+	desc = "A hood with a mask resemling a beaked creature"
+	icon_state = "tzeecult2"
+	item_state = "tzeecult2"
+	armor = list(melee = 35, bullet = 50, laser = 35, energy = 35, bomb = 20, bio = 50, rad = 50)
+
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult3
+	name = "Animal Mask"
+	desc = "A hood with a mask resemling a beaked creature"
+	icon_state = "tzeecult3"
+	item_state = "tzeecult3"
+	armor = list(melee = 35, bullet = 50, laser = 35, energy = 35, bomb = 20, bio = 50, rad = 50)
+
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult4
+	name = "Animal Mask"
+	desc = "A hood with a mask resemling a beaked creature"
+	icon_state = "tzeecult4"
+	item_state = "tzeecult4"
+	armor = list(melee = 35, bullet = 50, laser = 35, energy = 35, bomb = 20, bio = 50, rad = 50)
+
 /obj/item/clothing/head/helmet/guardhelmet
 	name = "Cadian Pattern Flak Helmet"
 	desc = "The most common pattern within in the Atra Militarum, Found throughout Imperial Space, The Cadian Flak Helmet are cheap and easy to produce, at the cost of being nothing but a glorified bucket. This one has the Imperial Aquila engraved on it's forehead."
