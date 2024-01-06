@@ -77,4 +77,4 @@
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/device/flashlight/lantern = 1,
-	/obj/item/stack/thrones/ten = 1,)
+	/obj/item/stack/thrones/ten = 2,)

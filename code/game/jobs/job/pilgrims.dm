@@ -451,12 +451,22 @@ Pilgrim Fate System
 			U.add_stats(rand(14,17), rand(12,17), rand(12,17), rand (12,14)) //
 			U.add_skills(rand(5,7),rand(6,8),rand(3,3),rand(4,5),rand(2,2)) //melee, ranged, med, eng, surgery
 			new /obj/item/clothing/gloves/thick(src.loc)
-			new /obj/item/clothing/head/helmet/whiteshield(src.loc)
 			new /obj/item/clothing/mask/gas/half/cadianrespirator(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/cadian_uniform, slot_w_uniform)
 			new /obj/item/storage/backpack/satchel/warfare(src.loc)
 			new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
-			new /obj/item/clothing/suit/armor/whiteshield(src.loc)
+			if(prob(15))
+					new /obj/item/clothing/suit/armor/whiteshield/pdf(src.loc)
+					new /obj/item/clothing/head/helmet/whiteshield/pdf(src.loc)
+					new /obj/item/gun/projectile/automatic/heavystubber(src.loc)
+			if(prob(45))
+					new /obj/item/clothing/suit/armor/whiteshield/pdf/medic(src.loc)
+					new /obj/item/storage/belt/medical/full(src.loc)
+					new /obj/item/clothing/head/helmet/whiteshield/pdf/medic(src.loc)
+			else
+					new /obj/item/clothing/suit/armor/whiteshield/pdf/spec(src.loc)
+					new /obj/item/clothing/head/helmet/whiteshield/pdf/spec(src.loc)
+					new /obj/item/cell/plasma(src.loc)
 			new /obj/item/clothing/shoes/jackboots/cadian(src.loc)
 			new /obj/item/device/flashlight/lantern(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/dog_tag/guardsman, slot_wear_id)
@@ -464,7 +474,7 @@ Pilgrim Fate System
 			new /obj/item/cell/lasgun(src.loc)
 			new /obj/item/cell/lasgun(src.loc)
 			to_chat(U,"<span class='danger'><b><font size=4>THE ROOKIE</font></b></span>")
-			to_chat(U,"<span class='goodmood'><b><font size=3>Recently enlisted into the Messina PDF, you have yet to be assigned to a unit... still time to run from the Commissar while you can.</font></b></span>")
+			to_chat(U,"<span class='goodmood'><b><font size=3>Recently enlisted into the Messian PDF, you have yet to be assigned to a unit... still time to run from the Commissar while you can.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
@@ -854,7 +864,7 @@ Pilgrim Fate System
 	id_type = /obj/item/card/id/pilgrim/innkeeper
 	r_pocket = /obj/item/storage/box/coin
 	pda_type = /obj/item/device/pda/penitent
-	l_ear = /obj/item/device/radio/headset/ert
+	l_ear = /obj/item/device/radio/headset/ert2
 	r_ear = null
 	belt = /obj/item/device/flashlight/lantern
 	pda_slot = null
@@ -875,7 +885,7 @@ Pilgrim Fate System
 	head = /obj/item/clothing/head/helmet/hauberk
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	shoes = null
-	l_ear = /obj/item/device/radio/headset/ert
+	l_ear = /obj/item/device/radio/headset/ert2
 	r_ear = null
 	id_type = null
 	r_pocket = /obj/item/storage/box/coin
@@ -1048,8 +1058,8 @@ Pilgrim Fate System
 	title = "Bouncer"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "The Underboss"
 	selection_color = "#530606"
 	outfit_type = /decl/hierarchy/outfit/job/bouncer

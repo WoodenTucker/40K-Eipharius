@@ -287,6 +287,23 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/head/helmet/whiteshield/pdf
+	name = "Messian Pattern Flak Helmet"
+	desc = "The most common pattern within the Messian Planetary Defense Forces. It's polish and design is based on the genius of the Magos Explorator of this world -- it's practicality however against measured Cadian Patterns is something to be seen. This helmet is made from expensive and brittle ablative metals."
+	icon_state = "PDF-H"
+	item_state = "PDF-H"
+	armor = list(melee = 30, bullet = 31, laser = 41, energy = 35, bomb = 30, bio = 0, rad = 10)
+
+/obj/item/clothing/head/helmet/whiteshield/pdf/medic
+	name = "Messian Pattern Medicae Flak Helmet"
+	icon_state = "PDF-SpecialH"
+	item_state = "PDF-SpecialH"
+
+/obj/item/clothing/head/helmet/whiteshield/pdf/spec
+	name = "Messian Pattern Specialist Flak Helmet"
+	icon_state = "PDF-MedicH"
+	item_state = "PDF-MedicH"
+
 /obj/item/clothing/head/helmet/guardhelmet/sargecap
 	name = "Cadian Pattern Sergeant's Cap"
 	desc = "Often mistaken for a soft cap, this variation features armor that comes down to protect the face, as well as a vox piece to slide over your ear. Perfect for Senior Enlisted."
