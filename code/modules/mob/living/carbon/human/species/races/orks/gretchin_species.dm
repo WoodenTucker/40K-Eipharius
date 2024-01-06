@@ -3,8 +3,8 @@
 	name_plural = "Gretchin"
 	secondary_langs = list(LANGUAGE_ORKY)
 	name_language = null // Use the first-name last-name generator rather than a language scrambler
-	icobase = 'icons/mob/human_races/r_ork.dmi'
-	deform = 'icons/mob/human_races/r_def_ork.dmi'
+	icobase = 'icons/mob/human_races/r_gretchin.dmi'
+	deform = 'icons/mob/human_races/r_def_gretchin.dmi'
 	min_age = 1
 	max_age = 600
 	total_health = 150
