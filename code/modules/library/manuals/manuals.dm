@@ -556,7 +556,7 @@
 	"Page 87. Litanies and Incantations. TO BE RECITED WHEN PRIMING AN EXPLOSIVE DEVICE - Prayer for Ignition: Spirit of Fire. Prime this weapon. And blast the foe. From the Emperor's sight.",
 	"Page 87. Litanies and Incantations. TO BE RECITED QUIETLY, DURING THE AIM AND BEFORE TAKING THE SHOT - Litany of Accuracy: Grant me the sight of an eagle. The calm of the breeze. The patience of a saint, and the skill to smite the foe from afar.",
 	"Page 87. Litanies and Incantations. TO BE RECITED TO/BY/WITH A SOLDIER IN SEVERE PAIN - Prayer of Relief from Torment: Although my body is broken. Although my blood pours away. Although my time may end. The Immortal Emperor will greet me. And embrace me with His holy aura. If only I remain constant to Him. Through this time of torment."
-	) */
+	) 
 
 /obj/item/book/manual/guard/attack_self(mob/user as mob)
     to_chat(user, "<span class='notice'>You flip past your blank death certificate, reading the following passage</span>")
@@ -588,3 +588,4 @@
 	author = "God Emperor of Mankind"
 	title = "Lex Imperialis"
 	desc = "An old handbook containing some of the Imperiums most important laws."
+*/
