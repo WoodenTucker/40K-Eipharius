@@ -299,6 +299,13 @@ obj/item/clothing/suit/armor
 	item_state = "snazzya"
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 20, bomb = 40, bio = 0, rad = 0)
 
+/obj/item/clothing/suit/armor/orkarmor/freeb
+	name = "Freeboota Coat"
+	desc = "Freeboota Coat of em ranged merc boy types. Gud all rounda. Wat eva dat wurd means..."
+	icon_state = "freeboota"
+	item_state = "freeboota"
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 20, bomb = 40, bio = 0, rad = 0)
+
 /obj/item/clothing/suit/armor/orkarmor/snazzy/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.1
