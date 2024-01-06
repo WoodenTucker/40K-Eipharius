@@ -1437,7 +1437,8 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
-	/obj/item/handcuffs = 1
+	/obj/item/handcuffs = 1,
+	/obj/item/device/whistle = 1,
 	)
 
 	pda_slot = null
