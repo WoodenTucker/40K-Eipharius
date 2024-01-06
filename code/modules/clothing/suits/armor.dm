@@ -1334,6 +1334,17 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 
+/obj/item/clothing/suit/armor/heretcoat/tzeecult
+	name = "Silk Robe"
+	desc = "A robe made out of some strange silk like material"
+	icon_state = "tzeecult"
+	item_state = "tzeecult"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun,/obj/item/gun/projectile)
+	armor = list(melee = 40, bullet = 40, laser = 30, energy = 15, bomb = 35, bio = 50, rad = 50)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+
 // NEW ARMORS
 
 /obj/item/clothing/suit/armor/heavyflaksuit
