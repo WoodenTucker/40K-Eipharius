@@ -486,7 +486,7 @@
 
 	obj/item/book/manual/guard
 	name = "Imperial Infantrymans Uplifting Primer"
-	icon = "icons/obj/items/books.dmi"
+	icon = 'icons/obj/items/books.dmi'
 	icon_state = "IIUP"
 	author = "Lord General Militant Huxlow"
 	title = "Imperial Infantrymans Uplifting Primer"
@@ -566,7 +566,7 @@
 
 obj/item/book/manual/inq
 	name = "Inquisitorial Rituals"
-	icon = "icons/obj/items/books.dmi"
+	icon = 'icons/obj/items/books.dmi'
 	icon_state = "IRIT"
 	author = "Inquisitor Gideon Ravenor"
 	title = "Inquisitorial Rituals"
@@ -574,7 +574,7 @@ obj/item/book/manual/inq
 
 obj/item/book/manual/ecc
 	name = "Ecceliarchy Rituals"
-	icon = "icons/obj/items/books.dmi"
+	icon = 'icons/obj/items/books.dmi'
 	icon_state = "ERIT"
 	author = "Goge Vandire"
 	title = "Ecceliarchy Rituals"
@@ -583,7 +583,7 @@ obj/item/book/manual/ecc
 
 obj/item/book/manual/law
 	name = "Lex Imperialis"
-	icon = "icons/obj/items/books.dmi"
+	icon = 'icons/obj/items/books.dmi'
 	icon_state = "LAW"
 	author = "God Emperor of Mankind"
 	title = "Lex Imperialis"
