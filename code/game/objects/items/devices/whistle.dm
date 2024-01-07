@@ -54,3 +54,21 @@
 		return 1
 	else
 		to_chat(user, "The hailer is fried. You can't even fit the sequencer into the input slot.")
+
+
+
+
+/obj/item/device/whistle
+    name = "trench whistle"
+    desc = "A steel trench whistle, a golden aquila is embossed on the top of it. Can be blown while held."
+    icon = 'icons/obj/items/whistle.dmi'
+    icon_state = "whistle"
+    w_class = ITEM_SIZE_TINY
+    obj_flags = OBJ_FLAG_CONDUCTIBLE
+
+    var/volume = 200
+    var/spamcheck = 0
+
+/obj/item/device/whistle/attack_self(mob/user as mob)
+    to_chat(user, "<span class='notice'>You blow on [src], creating an ear-splitting noise!</span>")
+    playsound(user, 'sound/items/whistle.ogg', 100, 1)

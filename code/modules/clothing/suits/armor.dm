@@ -299,6 +299,13 @@ obj/item/clothing/suit/armor
 	item_state = "snazzya"
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 20, bomb = 40, bio = 0, rad = 0)
 
+/obj/item/clothing/suit/armor/orkarmor/freeb
+	name = "Freeboota Coat"
+	desc = "Freeboota Coat of em ranged merc boy types. Gud all rounda. Wat eva dat wurd means..."
+	icon_state = "freeboota"
+	item_state = "freeboota"
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 20, bomb = 40, bio = 0, rad = 0)
+
 /obj/item/clothing/suit/armor/orkarmor/snazzy/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.1
@@ -1323,6 +1330,17 @@ obj/item/clothing/suit/armor
 	item_state = "heretmil"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun,/obj/item/gun/projectile)
 	armor = list(melee = 40, bullet = 35, laser = 35, energy = 15, bomb = 35, bio = 50, rad = 50)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+
+/obj/item/clothing/suit/armor/heretcoat/tzeecult
+	name = "Silk Robe"
+	desc = "A robe made out of some strange silk like material"
+	icon_state = "tzeecult"
+	item_state = "tzeecult"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun,/obj/item/gun/projectile)
+	armor = list(melee = 40, bullet = 40, laser = 30, energy = 15, bomb = 35, bio = 50, rad = 50)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS

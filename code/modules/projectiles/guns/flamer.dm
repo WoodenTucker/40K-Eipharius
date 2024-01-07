@@ -50,7 +50,7 @@
 
 /obj/item/gun/flamer/proc/unleash_flame(atom/target, mob/living/user)
 	set waitfor = 0
-	var/burnlevel = 50
+	var/burnlevel = 10
 	var/burntime = 40
 	var/fire_color = "red"
 	var/list/turf/turfs = getline2(user,target)
