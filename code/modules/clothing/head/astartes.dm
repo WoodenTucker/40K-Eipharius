@@ -52,7 +52,7 @@
 	item_state = "ultrahelm"
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
 
-/obj/item/clothing/head/helmet/astartes/ultramarine/new
+/obj/item/clothing/head/helmet/astartes/ultramarinenew
 	name = "Astartes Mark VII Helmet"
 	desc = "The daunting helmet of the Emperor's chosen, This one bears the symbol of the XIIIth Chapter, Ultramarines."
 	icon_state = "ultrah"
