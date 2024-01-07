@@ -271,7 +271,7 @@
 	icon_state = "ultrapack"
 	item_state = "ultrapack"
 
-/obj/item/storage/backpack/satchel/astartes/ultramarine/new
+/obj/item/storage/backpack/satchel/astartes/ultramarinenew
 	name = "Astartes Mark VII Powerpack"
 	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the XIIIth Chapter, Ultramarines."
 	icon_state = "ultrab"
