@@ -1767,6 +1767,7 @@
 #include "code\modules\mob\living\carbon\human\species\races\tau.dm"
 #include "code\modules\mob\living\carbon\human\species\races\orks\abilities.dm"
 #include "code\modules\mob\living\carbon\human\species\races\orks\ork_species.dm"
+#include "code\modules\mob\living\carbon\human\species\races\orks\gretchin_species.dm"
 #include "code\modules\mob\living\carbon\human\species\races\orks\orks.dm"
 #include "code\modules\mob\living\carbon\human\species\station\children.dm"
 #include "code\modules\mob\living\carbon\human\species\station\monkey.dm"

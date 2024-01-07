@@ -282,7 +282,7 @@
 #define SPECIES_EGYNO "Egyno"
 #define SPECIES_ELDAR "Eldar"
 #define SPECIES_ORK "Ork"
-#define SPECIES_ORK_GRETCHIN "Gretchin"
+#define SPECIES_GRET "Gretchin"
 #define SPECIES_ORK_NOB "Ork Nob"
 #define SPECIES_ORK_MEK "Mekboy"
 #define SPECIES_ORK_BOSS "Warboss"
