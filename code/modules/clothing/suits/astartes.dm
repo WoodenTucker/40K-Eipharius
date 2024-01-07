@@ -29,6 +29,12 @@
 	icon_state = "bangsuit"
 	item_state = "bangsuit"
 
+/obj/item/clothing/suit/armor/astartes/bloodangel/lamenter
+	name = "Astartes Mark VII Power Armour"
+	desc = "The Holy armour of the sons of the Sanguinius, This one bears the symbol of his position, Tactical Marine of the IXth Chapter, Blood Angel sucessor The Lamenters."
+	icon_state = "lamenterc"
+	item_state = "lamenterc"
+
 /obj/item/clothing/suit/armor/astartes/ravenguard
 	name = "Astartes Mark VII Power Armour"
 	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XIXth Chapter, Raven Guards."
@@ -47,11 +53,29 @@
 	icon_state = "ultrasuit"
 	item_state = "ultrasuit"
 
+/obj/item/clothing/suit/armor/astartes/ultramarine/new
+	name = "Indomitus Pattern Terminator Power Armor"
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XIIIth Chapter, Ultramarines."
+	icon_state = "ultrac"
+	item_state = "ultrac"
+
 /obj/item/clothing/suit/armor/astartes/ultramarine/terminator
 	name = "Astartes Mark VII Power Armour"
 	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XIIIth Chapter, Ultramarines."
 	icon_state = "ultraterm"
 	item_state = "ultraterm"
+
+/obj/item/clothing/suit/armor/astartes/emperorschildren
+	name = "Astartes Mark VII Power Armour"
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the IIIrd Legion, Emperor's Children."
+	icon_state = "emperorscc"
+	item_state = "emperorscc"
+
+/obj/item/clothing/suit/armor/astartes/alphalegion
+	name = "Astartes Mark VII Power Armour"
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XXth Legion, Alpha Legion."
+	icon_state = "alphalegc"
+	item_state = "alphalegc"
 
 // SPESS MUUHREEN SIRGENT
 
