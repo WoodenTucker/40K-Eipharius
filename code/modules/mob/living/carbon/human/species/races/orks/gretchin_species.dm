@@ -76,4 +76,4 @@
 	outfit.equip(src)
 
 /mob/living/carbon/human //the most cursed line in all of this code
-	var/new_orkz = SPECIES_GRET
+	var/new_grotz = SPECIES_GRET
