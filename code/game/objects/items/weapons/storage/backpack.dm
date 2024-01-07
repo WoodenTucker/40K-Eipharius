@@ -271,6 +271,24 @@
 	icon_state = "ultrapack"
 	item_state = "ultrapack"
 
+/obj/item/storage/backpack/satchel/astartes/ultramarine/new
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the XIIIth Chapter, Ultramarines."
+	icon_state = "ultrab"
+	item_state = "ultrab"
+
+/obj/item/storage/backpack/satchel/astartes/emperorschildren
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the IIIrd Legion, Emperor's Children."
+	icon_state = "emperorscb"
+	item_state = "emperorscb"
+
+/obj/item/storage/backpack/satchel/astartes/alphalegion
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the XXth Legion, Alpha Legion."
+	icon_state = "alphalegb"
+	item_state = "alphalegb"
+
 /obj/item/storage/backpack/satchel/astartes/ravenguard
 	name = "Astartes Mark VII Powerpack"
 	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the XIXth Chapter, Raven Guards."
@@ -282,6 +300,12 @@
 	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the IXth Chapter, Blood Angels."
 	icon_state = "bravpack"
 	item_state = "bravpack"
+
+/obj/item/storage/backpack/satchel/astartes/bloodangel/lamenter
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the IXth Chapter, Blood Angels."
+	icon_state = "lamenterb"
+	item_state = "lamenterb"
 
 /obj/item/storage/backpack/satchel/astartes/salamander
 	name = "Astartes Mark VII Powerpack"
