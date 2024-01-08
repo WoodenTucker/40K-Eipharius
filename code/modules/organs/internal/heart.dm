@@ -12,6 +12,7 @@
 	max_damage = 60
 	var/open
 	sales_price = 30
+	var/double_heart = NULL
 
 /obj/item/organ/internal/heart/die()
 	if(dead_icon)
@@ -56,6 +57,8 @@
 
 	//If heart is stopped, it isn't going to restart itself randomly.
 	if(pulse == PULSE_NONE)
+		if(double_heart = TRUE)
+			resuscitate()
 		return
 	else //and if it's beating, let's see if it should
 		var/should_stop = prob(80) && owner.get_blood_circulation() < BLOOD_VOLUME_SURVIVE //cardiovascular shock, not enough liquid to pump
@@ -209,3 +212,14 @@
 /obj/item/organ/internal/heart/chaos/attack_self(mob/user)
 	var/datum/heretic_deity/k = GOD(input(user, "Choose God") in list(GOD_KHORNE, GOD_NURGLE, GOD_SLAANESH))
 	k.join_request(user)
+
+
+
+/obj/item/organ/internal/heart/astartes
+	name = "Astartes Hearts"
+	relative_size = 20
+	double_heart = TRUE
+
+/obj/item/organ/internal/heart/astartes/proc/secondary_heart()
+	if()
+
