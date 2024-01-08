@@ -12,7 +12,7 @@
 	max_damage = 60
 	var/open
 	sales_price = 30
-	var/double_heart == 0
+	var/double_heart = 0
 
 /obj/item/organ/internal/heart/die()
 	if(dead_icon)
@@ -35,7 +35,7 @@
 		handle_blood()
 	..()
 
-/obj/item/organ/internal/heart/proc/handle_pulse()
+/obj/item/organ/internal/heart/H/proc/handle_pulse()
 	if(robotic >= ORGAN_ROBOT)
 		pulse = PULSE_NONE	//that's it, you're dead (or your metal heart is), nothing can influence your pulse
 		return
@@ -57,7 +57,7 @@
 
 	//If heart is stopped, it isn't going to restart itself randomly.
 	if(pulse == PULSE_NONE)
-		if(double_heart = 1)
+		if(H.double_heart = 1)
 			owner.resuscitate()
 		return
 	else //and if it's beating, let's see if it should
