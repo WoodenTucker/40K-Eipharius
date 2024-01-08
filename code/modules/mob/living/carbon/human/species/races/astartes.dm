@@ -74,7 +74,7 @@ Astartes
 		BP_HEART =    /obj/item/organ/internal/heart,
 		BP_BRAIN =    /obj/item/organ/internal/brain,
 		BP_LUNGS =   /obj/item/organ/internal/lungs/astartes,
-		BP_LIVER =     /obj/item/organ/internal/liver/astartes
+		BP_LIVER =     /obj/item/organ/internal/liver/astartes,
 		BP_KIDNEYS =     /obj/item/organ/internal/kidneys
 		)
 
