@@ -12,7 +12,7 @@
 	max_damage = 60
 	var/open
 	sales_price = 30
-	var/double_heart = 0
+	var/double_heart == 0
 
 /obj/item/organ/internal/heart/die()
 	if(dead_icon)
@@ -58,7 +58,7 @@
 	//If heart is stopped, it isn't going to restart itself randomly.
 	if(pulse == PULSE_NONE)
 		if(double_heart = 1)
-			resuscitate()
+			owner.resuscitate()
 		return
 	else //and if it's beating, let's see if it should
 		var/should_stop = prob(80) && owner.get_blood_circulation() < BLOOD_VOLUME_SURVIVE //cardiovascular shock, not enough liquid to pump
