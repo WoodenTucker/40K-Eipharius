@@ -216,6 +216,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	fire_mult = 45
 	tox_mult = 25
 	organheal = 0.3
+	grow_chance = 5
 
 
 /*/obj/aura/regenerating/human/astartes/life_tick()
@@ -257,6 +258,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	external_nutrition_mult = 0 // How much nutrition it takes to regrow a limb
 	can_regenerate_organs = TRUE
 	organheal = 50
+	grow_chance = 90
 
 /mob/living/carbon/human/proc/altresuscitate() //For resuscitating without heart damage or shock.
 	var/obj/item/organ/internal/heart/heart = internal_organs_by_name[BP_HEART]
