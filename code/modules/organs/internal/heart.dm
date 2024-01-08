@@ -209,3 +209,9 @@
 /obj/item/organ/internal/heart/chaos/attack_self(mob/user)
 	var/datum/heretic_deity/k = GOD(input(user, "Choose God") in list(GOD_KHORNE, GOD_NURGLE, GOD_SLAANESH))
 	k.join_request(user)
+
+
+
+/obj/item/organ/internal/heart/astartes
+	name = "Astartes Hearts"
+	relative_size = 20
