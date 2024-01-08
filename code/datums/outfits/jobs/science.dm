@@ -52,7 +52,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots/technoboots
 	uniform = /obj/item/clothing/under/rank/chief_engineer
 	l_ear = /obj/item/device/radio/headset/heads/ce
-	l_hand = /obj/item/gun/energy/phosphor
+	l_hand = /obj/item/gun/energy/pulse/plasma/pistol/glock
 	gloves = /obj/item/clothing/gloves/thick/techpriest
 	id_type = /obj/item/card/id/engineering/head
 	pda_type = null
