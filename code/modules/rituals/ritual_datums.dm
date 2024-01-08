@@ -40,7 +40,7 @@
 	response_required = TRUE
 	response_phrase = "Emperor keep us"
 	min_chants = 15 //requires at least 4 additional ritualist and the response phrase must be uttered 15 times
-	allowed_jobs = list(/datum/job/deacon, /datum/job/sistersuperior, /datum/job/canoness )
+	allowed_jobs = list(/datum/job/deacon, /datum/job/sistersuperior, /datum/job/canoness)
 	success_result = /proc/preservationSuccess
 	fail_result = /proc/preservationFail
 
