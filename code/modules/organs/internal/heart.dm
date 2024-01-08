@@ -34,7 +34,7 @@
 		handle_blood()
 	..()
 
-/obj/item/organ/internal/heart/H/proc/handle_pulse()
+/obj/item/organ/internal/heart/proc/handle_pulse()
 	if(robotic >= ORGAN_ROBOT)
 		pulse = PULSE_NONE	//that's it, you're dead (or your metal heart is), nothing can influence your pulse
 		return
@@ -215,6 +215,3 @@
 /obj/item/organ/internal/heart/astartes
 	name = "Astartes Hearts"
 	relative_size = 20
-
-
-
