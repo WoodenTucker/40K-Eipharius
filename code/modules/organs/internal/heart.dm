@@ -12,7 +12,7 @@
 	max_damage = 60
 	var/open
 	sales_price = 30
-	var/double_heart = NULL
+	var/double_heart = 0
 
 /obj/item/organ/internal/heart/die()
 	if(dead_icon)
@@ -57,7 +57,7 @@
 
 	//If heart is stopped, it isn't going to restart itself randomly.
 	if(pulse == PULSE_NONE)
-		if(double_heart = TRUE)
+		if(double_heart = 1)
 			resuscitate()
 		return
 	else //and if it's beating, let's see if it should
@@ -218,7 +218,7 @@
 /obj/item/organ/internal/heart/astartes
 	name = "Astartes Hearts"
 	relative_size = 20
-	double_heart = TRUE
+	double_heart = 1
 
 /obj/item/organ/internal/heart/astartes/proc/secondary_heart()
 	if()
