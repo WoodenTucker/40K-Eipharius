@@ -69,6 +69,15 @@ Astartes
 		BP_R_FOOT = list("path" = /obj/item/organ/external/foot/right/unbreakable/astartes)
 		)
 
+	has_organ = list(
+		BP_EYES =     /obj/item/organ/internal/eyes/astartes,
+		BP_HEART =    /obj/item/organ/internal/heart,
+		BP_BRAIN =    /obj/item/organ/internal/brain,
+		BP_LUNGS =   /obj/item/organ/internal/lungs/astartes,
+		BP_LIVER =     /obj/item/organ/internal/liver/astartes
+		BP_KIDNEYS =     /obj/item/organ/internal/kidneys
+		)
+
 //gives them the astartes aura
 	base_auras = list(
 		/obj/aura/regenerating/human/astartes
