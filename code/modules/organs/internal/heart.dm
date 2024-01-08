@@ -215,7 +215,6 @@
 /obj/item/organ/internal/heart/astartes
 	name = "Astartes Hearts"
 	relative_size = 20
-	double_heart = 1
 
 /obj/item/organ/internal/heart/astartes/proc/secondary_heart()
 	if(pulse = PULSE_NONE)
