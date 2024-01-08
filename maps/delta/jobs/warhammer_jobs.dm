@@ -26,7 +26,7 @@
 	/datum/job/techmenial,
 	/datum/job/deacon,
 //	/datum/job/cmo,
-	/datum/job/canoness
+	/datum/job/canoness,
 	/datum/job/sistersuperior,
 	/datum/job/hospitaller,
 	/datum/job/marshal,
