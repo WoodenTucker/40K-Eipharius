@@ -364,4 +364,7 @@
 	min_broken_damage = 75
 	max_damage = 90
 	relative_size = 75
-
+	safe_exhaled_max = 60
+	safe_toxins_max = 30
+	SA_para_min = 60
+	SA_sleep_min = 120

@@ -7,7 +7,7 @@
 	str_requirement = 24 // they can get gibbed and their armor stays. helmet has it, so why not armor too
 	canremove = 1
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 90, bullet = 100, laser = 100, energy = 100, bomb = 80, bio = 100, rad = 100)
+	armor = list(melee = 80, bullet = 80, laser = 80, energy = 80, bomb = 60, bio = 100, rad = 80)
 	sales_price = 120
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
@@ -158,7 +158,7 @@
 	str_requirement = 25
 	canremove = 0
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 95, bullet = 85, laser = 85, energy = 85, bomb = 90, bio = 90, rad = 90)
+	armor = list(melee = 90, bullet = 90, laser = 90, energy = 90, bomb = 90, bio = 100, rad = 100)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -177,7 +177,7 @@ var/shield_count = 0
 
 /obj/item/clothing/suit/armor/astartes/terminator/shielded/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(istype(damage_source, /obj/item/projectile))
-		if(shield_count >= 0)
+		if(shield_count > 0)
 			var/obj/item/projectile/P = damage_source
 			//var/reflectchance = 100 //Defined here, for if you want to make it have X percent chance of blocking the shot,
 			var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
