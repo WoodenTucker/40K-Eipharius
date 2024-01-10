@@ -952,7 +952,7 @@ Pilgrim Fate System
 		)
 
 /datum/job/gangboy
-	title = "House Goliath"
+	title = "Tavern Ganger"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MED //better off than your average gross pilgrim
 	total_positions = 2
