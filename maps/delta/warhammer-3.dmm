@@ -18,7 +18,9 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "aaU" = (
-/turf/simulated/floor/tiled/dark,
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/bush,
+/turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/service/chapel/graveyard)
 "abF" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -26,6 +28,16 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/hive_city)
+"abO" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 10
+	},
+/obj/structure/flora/grass/green{
+	pixel_y = 2;
+	pixel_x = 4
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "acl" = (
 /obj/effect/floor_decal/turf/bar3,
 /obj/effect/floor_decal/turf/big_cables2{
@@ -1279,11 +1291,9 @@
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/villageinside)
 "bmh" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/spline/fancy/wood,
-/obj/effect/floor_decal/spline/fancy/wood/corner{
-	dir = 4
-	},
+/obj/effect/floor_decal/turf/brick,
+/obj/effect/floor_decal/newcorner/stone,
+/obj/effect/floor_decal/newcorner/stone,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -1746,11 +1756,8 @@
 	},
 /area/cadiaoutpost/oa/service/hab/inside)
 "bKh" = (
+/obj/structure/bed/chair/pew,
 /obj/effect/floor_decal/turf/brick,
-/obj/structure/bed/chair/wood{
-	dir = 1;
-	icon_state = "wooden_chair_preview"
-	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -2065,6 +2072,9 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/barracks)
+"cdg" = (
+/turf/simulated/floor/fancyfloor/carpet/middle,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "cdn" = (
 /obj/machinery/portable_atmospherics/hydroponics/soil,
 /turf/simulated/floor/dirty,
@@ -2172,6 +2182,12 @@
 /obj/structure/grille/iron_fence,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel)
+"cic" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 6
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "cij" = (
 /obj/item/fluff_items/vietnam{
 	pixel_y = 4;
@@ -2219,6 +2235,12 @@
 /obj/effect/floor_decal/newcorner/white/diagonal,
 /turf/simulated/floor/fancyfloor/marble,
 /area/cadiaoutpost/oa/bridge/hallway)
+"clf" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 9
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "cls" = (
 /obj/machinery/conveyor/centcom_auto{
 	dir = 8
@@ -2239,6 +2261,10 @@
 	color = "gray"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"cmP" = (
+/obj/structure/flora/tree/snowy,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/new_hive/hive_city)
 "cmX" = (
 /obj/effect/floor_decal/newcorner/nbar{
 	dir = 4
@@ -2499,14 +2525,8 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "czY" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 1;
-	icon_state = "spline_fancy"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
+/obj/effect/floor_decal/newcorner/stone,
+/turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/service/chapel/graveyard)
 "cAB" = (
 /obj/effect/floor_decal/newcorner/red/quarter{
@@ -3201,6 +3221,13 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/engineering)
+"dls" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 9
+	},
+/obj/structure/flora/grass/brown,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "dlu" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -3609,10 +3636,9 @@
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "dDF" = (
 /obj/effect/floor_decal/turf/brick,
-/obj/structure/statue/verina{
-	desc = "A polished and well maintained statue of Saint Celestine of the Order of Our Martyred Lady. Despair, and you give yourself to the shadows. Believe, truly believe in the Emperor of Mankind, and you shall walk in His light no matter how dark the path you tread.";
-	name = "Statue of Saint Celestine";
-	pixel_x = -15
+/obj/structure/hivedecor/sarcofagus,
+/obj/structure/hivedecor/statue8{
+	pixel_y = 8
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -3764,6 +3790,15 @@
 	icon_state = "dark1"
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
+"dIx" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 8
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "dIB" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/turf/metal/five,
@@ -4634,6 +4669,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"eDa" = (
+/obj/structure/torchwall/service{
+	dir = 1;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 10
+	},
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "eEw" = (
 /obj/machinery/computer,
 /turf/simulated/floor/tiled/dark{
@@ -4876,6 +4920,14 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/security/barracks)
+"eNu" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/structure/hivedecor/sarcofagus,
+/obj/effect/decal/cleanable/cobweb2{
+	dir = 8
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "eNM" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 8;
@@ -5298,20 +5350,10 @@
 /turf/simulated/floor/concrete,
 /area/cadiaoutpost/new_hive/hive_city)
 "fjz" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 8
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 9
 	},
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/flame/lighter/zippo{
-	pixel_x = 12;
-	pixel_y = 8
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
+/turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/service/chapel/graveyard)
 "fkN" = (
 /obj/effect/floor_decal/newcorner/stone{
@@ -5468,6 +5510,11 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel)
+"fue" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/structure/hivedecor/sarcofagus,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "fuw" = (
 /obj/structure/table/graf/reinf_table{
 	icon_state = "table_horizontal2";
@@ -5640,6 +5687,10 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/bridge/hallway)
+"fAm" = (
+/obj/structure/sign/plate/stoneshrine,
+/turf/simulated/wall/castle,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "fAG" = (
 /obj/machinery/door/unpowered/inn,
 /turf/simulated/floor/tiled{
@@ -5694,10 +5745,37 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "fDp" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/landmark/start/village,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/item/flame/candle/church{
+	pixel_y = 4;
+	pixel_x = -9
+	},
+/obj/item/flame/candle/church{
+	pixel_y = 4;
+	pixel_x = 9
+	},
+/obj/item/flame/candle/church{
+	pixel_y = 4
+	},
+/obj/item/flame/candle/dinner{
+	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
+	name = "wax candle";
+	pixel_x = 15;
+	pixel_y = 5;
+	wax = 40000
+	},
+/obj/item/flame/candle/dinner{
+	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
+	name = "wax candle";
+	pixel_x = -15;
+	pixel_y = 5;
+	wax = 40000
+	},
+/obj/effect/floor_decal/newcorner/stone,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 5
 	},
 /area/cadiaoutpost/oa/service/chapel/graveyard)
 "fDO" = (
@@ -6455,12 +6533,13 @@
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/bridge/hallway)
 "giG" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/closet/coffin,
 /obj/structure/torchwall/service{
 	dir = 8;
 	icon_state = "torchwall0"
 	},
+/obj/effect/floor_decal/turf/brick,
+/obj/structure/grille/iron_fence,
+/obj/structure/sign/aquilalong,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -6615,13 +6694,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "gsr" = (
-/obj/effect/floor_decal/turf/brick,
 /obj/structure/torchwall/service{
 	dir = 1;
 	icon_state = "torchwall0"
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 6
 	},
 /area/cadiaoutpost/oa/service/chapel/graveyard)
 "gst" = (
@@ -6820,6 +6898,15 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
+"gBz" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 5
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "gCE" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
@@ -7040,6 +7127,15 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/service/chapel)
+"gLd" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "gLl" = (
 /obj/structure/table/steel,
 /obj/item/device/hammer,
@@ -7268,6 +7364,11 @@
 "gXQ" = (
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
+"gYi" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/tree/pine,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "gYx" = (
 /obj/machinery/door/airlock/glass_engineering{
 	explosion_resistance = 100;
@@ -7418,12 +7519,13 @@
 	},
 /area/cadiaoutpost/oa/farm)
 "hdd" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/closet/coffin,
 /obj/structure/torchwall/service{
 	dir = 4;
 	icon_state = "torchwall0"
 	},
+/obj/effect/floor_decal/turf/brick,
+/obj/structure/grille/iron_fence,
+/obj/structure/sign/aquilalong,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -7453,7 +7555,7 @@
 /obj/structure/torchwall/service{
 	pixel_y = 32
 	},
-/turf/simulated/floor/dirty,
+/turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/service/chapel/graveyard)
 "heX" = (
 /obj/machinery/door/unpowered/inn{
@@ -7750,6 +7852,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
+"htn" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 10
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "htL" = (
 /obj/effect/decal/mecha_wreckage/gygax/dark{
 	name = "Kastelan Wreckage"
@@ -7901,6 +8012,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
+"hzS" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "hAH" = (
 /obj/effect/floor_decal/newcorner/red{
 	dir = 4
@@ -8070,6 +8187,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"hHZ" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/structure/hivedecor/sarcofagus,
+/obj/effect/decal/cleanable/cobweb2{
+	dir = 4
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "hIk" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -8403,6 +8528,13 @@
 	},
 /turf/simulated/floor/exoplanet/grass,
 /area/cadiaoutpost/oa/bridge/hallway)
+"hXS" = (
+/obj/structure/flora/bush{
+	pixel_x = 10;
+	pixel_y = 5
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "hYs" = (
 /obj/structure/bed/chair/wood/fancy{
 	dir = 1
@@ -8654,14 +8786,19 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/medicae)
+"iiv" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 10
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "ijd" = (
 /obj/effect/landmark/JoinLate,
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/hive_city)
 "ijA" = (
-/obj/structure/sign/art/blindfolds,
-/turf/simulated/wall/castle,
-/area/cadiaoutpost/oa/service/chapel/graveyard)
+/turf/simulated/floor/stone/old4,
+/area/cadiaoutpost/new_hive/hive_city)
 "ijW" = (
 /obj/structure/table/rack,
 /obj/item/stack/cable_coil,
@@ -9354,6 +9491,15 @@
 /obj/effect/decal/cleanable/blood/gibs/robot,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/villageinside)
+"iPM" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 9
+	},
+/obj/item/pyre/self_lit{
+	pixel_y = 6
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "iPR" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 9
@@ -9365,7 +9511,7 @@
 	dir = 1;
 	icon_state = "torchwall0"
 	},
-/turf/simulated/floor/dirty,
+/turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/service/chapel/graveyard)
 "iQm" = (
 /obj/structure/hivedecor/bookcase,
@@ -9942,14 +10088,10 @@
 	},
 /area/cadiaoutpost/oa/engineering)
 "jqh" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 5;
-	icon_state = "spline_fancy"
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 5
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
+/turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/service/chapel/graveyard)
 "jqO" = (
 /obj/item/paper_bin{
@@ -10076,27 +10218,8 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/villageinside)
 "jwJ" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 4
-	},
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/flame/candle/dinner{
-	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
-	name = "wax candle";
-	pixel_x = -5;
-	pixel_y = 5;
-	wax = 40000
-	},
-/obj/item/flame/candle/dinner{
-	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
-	name = "wax candle";
-	pixel_x = 5;
-	pixel_y = 5;
-	wax = 40000
-	},
+/obj/effect/floor_decal/turf/brick,
+/obj/structure/hivedecor/sarcofagus,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -10292,6 +10415,12 @@
 "jDa" = (
 /turf/simulated/floor/ice,
 /area/cadiaoutpost/new_hive/hive_city)
+"jDe" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 8
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "jDR" = (
 /obj/structure/table/rack/dark,
 /obj/random/loot/randomlasammo,
@@ -10645,8 +10774,8 @@
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/new_hive/hive_city)
 "jQi" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/spline/fancy/wood,
+/obj/effect/floor_decal/turf/brick,
+/obj/effect/floor_decal/newcorner/stone,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -10764,6 +10893,10 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/bridge/hallway)
+"jWw" = (
+/obj/structure/hivedecor/statue3,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "jWK" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 8
@@ -11084,14 +11217,14 @@
 /turf/simulated/floor/exoplanet/grass,
 /area/cadiaoutpost/oa/bridge/hallway)
 "klz" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/bed/chair/wood{
-	dir = 1;
-	icon_state = "wooden_chair_preview"
-	},
 /obj/structure/torchwall/service{
 	dir = 4;
 	icon_state = "torchwall0"
+	},
+/obj/effect/floor_decal/turf/brick,
+/obj/effect/floor_decal/turf/brick,
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 4
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -11903,6 +12036,15 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/security/barracks)
+"lcF" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/archaeological_find/bowl/urn{
+	pixel_y = 11
+	},
+/turf/simulated/floor/stone/old4,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "lcY" = (
 /obj/structure/sign/magistrate{
 	pixel_y = -30
@@ -11965,23 +12107,14 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "lfT" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/table/woodentable{
-	color = "#36261B"
+/obj/effect/floor_decal/turf/brick,
+/obj/item/remains/mouse{
+	pixel_y = 8;
+	pixel_x = 9
 	},
-/obj/item/flame/candle/dinner{
-	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
-	name = "wax candle";
-	pixel_x = 5;
-	pixel_y = 5;
-	wax = 40000
-	},
-/obj/item/flame/candle/dinner{
-	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
-	name = "wax candle";
-	pixel_x = -5;
-	pixel_y = 5;
-	wax = 40000
+/obj/effect/floor_decal/plaque{
+	desc = "Crypt de Burgeon";
+	name = "epitaph"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -12079,6 +12212,11 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/engineering)
+"ljq" = (
+/obj/effect/floor_decal/newcorner/stone,
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "lkb" = (
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 5
@@ -13208,9 +13346,24 @@
 	},
 /area/cadiaoutpost/oa/shuttle/station1)
 "mfU" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/spline/fancy/wood/cee{
-	dir = 8
+/obj/item/flame/candle/dinner{
+	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
+	name = "wax candle";
+	pixel_x = -15;
+	pixel_y = 5;
+	wax = 40000
+	},
+/obj/effect/floor_decal/turf/brick,
+/obj/effect/floor_decal/newcorner/stone,
+/obj/item/fluff_items/skull{
+	pixel_y = 4
+	},
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/flame/candle/small{
+	pixel_y = 10;
+	pixel_x = 6
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -13238,6 +13391,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/farm)
+"mhs" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 5
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "mhF" = (
 /obj/structure/flora/yes/erista,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -14385,6 +14544,10 @@
 /obj/effect/floor_decal/newcorner/plating/quarter,
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/villageinside)
+"nvG" = (
+/obj/effect/floor_decal/newcorner/stone,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "nxg" = (
 /obj/structure/sign/poster/poster5{
 	pixel_x = -32
@@ -14690,6 +14853,12 @@
 	},
 /turf/simulated/floor/ceramic/surgery2,
 /area/cadiaoutpost/oa/service/hab/inside)
+"nJr" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 5
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "nJt" = (
 /obj/structure/grille/iron_fence,
 /obj/structure/grille/iron_fence,
@@ -14734,9 +14903,9 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/bridge/hallway)
 "nKC" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/closet/coffin,
-/obj/random/shoes,
+/obj/effect/floor_decal/turf/brick,
+/obj/structure/hivedecor/sarcofagus,
+/obj/effect/decal/cleanable/cobweb2,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -14892,6 +15061,15 @@
 	},
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/hive_city)
+"nTU" = (
+/obj/structure/gravemarker{
+	pixel_x = -9
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 8
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "nUG" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/ceramic,
@@ -15121,6 +15299,12 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/bridge/hallway)
+"ogR" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 10
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "ohD" = (
 /obj/effect/water/bottom{
 	color = "blue"
@@ -15579,6 +15763,13 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/bridge/hallway)
+"oEF" = (
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/hivedecor/statue4{
+	pixel_x = 2
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "oEZ" = (
 /obj/structure/railing{
 	dir = 1
@@ -15674,7 +15865,8 @@
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/new_hive/hive_city)
 "oJW" = (
-/obj/effect/floor_decal/turf/brick/two,
+/obj/effect/floor_decal/turf/brick,
+/obj/structure/grille/iron_fence,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -15821,9 +16013,28 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "oSa" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/spline/fancy/wood/cee{
-	dir = 4
+/obj/item/flame/candle/dinner{
+	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
+	name = "wax candle";
+	pixel_x = 15;
+	pixel_y = 5;
+	wax = 40000
+	},
+/obj/effect/floor_decal/turf/brick,
+/obj/effect/floor_decal/newcorner/stone,
+/obj/item/fluff_items/skull{
+	pixel_y = 4;
+	pixel_x = 1
+	},
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/clothing/head/hairflower{
+	pixel_x = -4
+	},
+/obj/item/flame/candle/small{
+	pixel_y = 10;
+	pixel_x = -6
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -15930,15 +16141,10 @@
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "oVW" = (
 /obj/effect/floor_decal/turf/brick,
-/obj/structure/window/reinforced{
-	color = "grey";
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	color = "grey";
-	dir = 4
-	},
 /obj/item/pyre/self_lit,
+/obj/structure/sign/banner_count/flag{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -16056,10 +16262,9 @@
 	},
 /area/cadiaoutpost/oa/service/inn)
 "oZR" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 4
-	},
+/obj/effect/floor_decal/turf/brick,
+/obj/structure/grille/iron_fence,
+/obj/structure/sign/aquilalong,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -16637,6 +16842,15 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/farm)
+"pBX" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 8
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "pCb" = (
 /obj/effect/floor_decal/newcorner/shaft/corner{
 	dir = 4
@@ -16702,6 +16916,12 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/hab/inside)
+"pFN" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 4
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "pFU" = (
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "thermite"
@@ -16821,6 +17041,10 @@
 "pLj" = (
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/villageinside)
+"pLF" = (
+/obj/structure/statue/prayer,
+/turf/simulated/wall/castle,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "pLX" = (
 /turf/simulated/floor/fancyfloor/carpet/green,
 /area/cadiaoutpost/oa/bridge/hallway)
@@ -17091,9 +17315,7 @@
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
 	name = "Imperialis Doorway - Monasterium"
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/graveyard)
 "qcc" = (
 /obj/effect/floor_decal/newcorner/train{
@@ -17247,23 +17469,11 @@
 /turf/simulated/open,
 /area/cadiaoutpost/new_hive/hive_city)
 "qms" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/flame/candle/dinner{
-	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
-	name = "wax candle";
-	pixel_x = -5;
-	pixel_y = 5;
-	wax = 40000
-	},
-/obj/item/flame/candle/dinner{
-	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
-	name = "wax candle";
-	pixel_x = 5;
-	pixel_y = 5;
-	wax = 40000
+/obj/effect/floor_decal/turf/brick,
+/obj/effect/floor_decal/plaque{
+	desc = "Here lies her ladyship, dutchess of ";
+	pixel_y = -4;
+	name = "epitaph"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -17504,6 +17714,9 @@
 	dir = 6
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"qtS" = (
+/turf/simulated/floor/fancyfloor/carpet,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "quC" = (
 /turf/simulated/floor/ceramic/surgery2{
 	dir = 5
@@ -17638,6 +17851,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
+"qBb" = (
+/obj/structure/flora/bush,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "qBm" = (
 /obj/structure/sign/poster/poster2{
 	pixel_x = 32
@@ -17651,6 +17868,15 @@
 /obj/machinery/door/unpowered/inn,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/hive_city)
+"qBx" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 10
+	},
+/obj/item/pyre/self_lit{
+	pixel_y = 6
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "qBK" = (
 /obj/structure/table/rack/dark,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -17673,14 +17899,10 @@
 /turf/simulated/open,
 /area/cadiaoutpost/oa/farm)
 "qDh" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 9;
-	icon_state = "spline_fancy"
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 6
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
+/turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/service/chapel/graveyard)
 "qDP" = (
 /obj/structure/bed/chair/wood/simple{
@@ -18018,6 +18240,16 @@
 	},
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/farm)
+"qUl" = (
+/obj/item/archaeological_find/bowl/urn{
+	pixel_y = 11
+	},
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/new_hive/hive_city)
+"qUv" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "qUP" = (
 /obj/effect/floor_decal/newcorner/nbar{
 	dir = 6
@@ -18671,6 +18903,13 @@
 /obj/random/gloves,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
+"ryD" = (
+/obj/structure/sign/aquilalong,
+/obj/structure/sign/plate/written{
+	name = "epitaph"
+	},
+/turf/simulated/wall/castle,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "ryY" = (
 /obj/effect/decal/cleanable/vomit,
 /turf/simulated/floor/dirty,
@@ -18925,6 +19164,11 @@
 	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/new_hive/hive_city)
+"rQn" = (
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "rQu" = (
 /obj/structure/barbwire{
 	color = "grey"
@@ -19069,6 +19313,10 @@
 	},
 /turf/simulated/floor/surface_floor,
 /area/cadiaoutpost/new_hive/hive_city)
+"rWt" = (
+/obj/structure/pit/closed/grave,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "rWF" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 8
@@ -19140,13 +19388,7 @@
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "sds" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 8
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
+/turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/service/chapel/graveyard)
 "sdH" = (
 /obj/structure/closet/crate/xenos/cargo8{
@@ -19354,6 +19596,10 @@
 /obj/random/snack,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/villageinside)
+"soC" = (
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "soD" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -20124,14 +20370,13 @@
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/bridge/hallway)
 "sSc" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/bed/chair/wood{
-	dir = 1;
-	icon_state = "wooden_chair_preview"
-	},
 /obj/structure/torchwall/service{
 	dir = 8;
 	icon_state = "torchwall0"
+	},
+/obj/effect/floor_decal/turf/brick,
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 8
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -20396,6 +20641,13 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
+"tbE" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 10
+	},
+/obj/effect/floor_decal/newcorner/stone,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "tcD" = (
 /obj/machinery/r_n_d/server/robotics,
 /obj/effect/floor_decal/turf/plating,
@@ -20732,6 +20984,10 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/shuttle/station1)
+"tqy" = (
+/obj/effect/floor_decal/newcorner/stone,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "tqz" = (
 /obj/effect/floor_decal/turf/metal/six,
 /obj/item/reagent_containers/food/drinks/bottle/small/beer{
@@ -20798,6 +21054,40 @@
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/hab/inside)
+"tul" = (
+/obj/item/flame/candle/church{
+	pixel_y = 4
+	},
+/obj/item/flame/candle/church{
+	pixel_y = 4;
+	pixel_x = 9
+	},
+/obj/item/flame/candle/church{
+	pixel_y = 4;
+	pixel_x = -9
+	},
+/obj/item/flame/candle/dinner{
+	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
+	name = "wax candle";
+	pixel_x = 15;
+	pixel_y = 5;
+	wax = 40000
+	},
+/obj/item/flame/candle/dinner{
+	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
+	name = "wax candle";
+	pixel_x = -15;
+	pixel_y = 5;
+	wax = 40000
+	},
+/obj/effect/floor_decal/newcorner/stone,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 9
+	},
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "tup" = (
 /turf/simulated/floor/new_wood/four,
 /area/cadiaoutpost/oa/villageinside)
@@ -21272,9 +21562,10 @@
 /turf/simulated/floor/surface_floor,
 /area/cadiaoutpost/new_hive/hive_city)
 "tQU" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/spline/fancy/wood,
-/obj/structure/closet/coffin,
+/obj/effect/floor_decal/turf/brick,
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 6
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -21459,6 +21750,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
+"ucu" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/brflowers,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "ucZ" = (
 /obj/item/storage/fancy/cigarettes/cigarello/variety{
 	pixel_x = 8
@@ -21543,6 +21839,40 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel)
+"ugl" = (
+/obj/item/flame/candle/church{
+	pixel_y = 4
+	},
+/obj/item/flame/candle/church{
+	pixel_y = 4;
+	pixel_x = 9
+	},
+/obj/item/flame/candle/church{
+	pixel_y = 4;
+	pixel_x = -9
+	},
+/obj/item/flame/candle/dinner{
+	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
+	name = "wax candle";
+	pixel_x = 15;
+	pixel_y = 5;
+	wax = 40000
+	},
+/obj/item/flame/candle/dinner{
+	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
+	name = "wax candle";
+	pixel_x = -15;
+	pixel_y = 5;
+	wax = 40000
+	},
+/obj/effect/floor_decal/newcorner/stone,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "ugV" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 4
@@ -21588,8 +21918,9 @@
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
 "uki" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/closet/coffin,
+/obj/effect/floor_decal/turf/brick,
+/obj/structure/hivedecor/sarcofagus,
+/obj/effect/decal/cleanable/cobweb,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -22668,6 +22999,11 @@
 	dir = 10
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"viE" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/structure/grille/iron_fence,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "viU" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 8
@@ -23631,6 +23967,11 @@
 /obj/structure/flora/tree/dead,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/gatehouse)
+"wdn" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/structure/grille/iron_fence,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "wdZ" = (
 /obj/effect/floor_decal/newcorner/cafe{
 	dir = 4
@@ -23786,6 +24127,11 @@
 	icon_state = "dark1"
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
+"wlk" = (
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 4
+	},
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "wll" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 10
@@ -24220,14 +24566,13 @@
 /turf/simulated/floor/fancyfloor/marble,
 /area/cadiaoutpost/oa/bridge/hallway)
 "wMN" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/spline/fancy/wood,
-/obj/effect/floor_decal/spline/fancy/wood/corner{
-	dir = 1
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 5
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 6
 	},
+/turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/service/chapel/graveyard)
 "wMO" = (
 /obj/effect/floor_decal/newcorner/shaft/quarter,
@@ -24412,6 +24757,12 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
+"wYz" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 6
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "wYB" = (
 /obj/machinery/computer/message_monitor,
 /obj/effect/floor_decal/newcorner/purple/solid,
@@ -25634,6 +25985,10 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/engineering)
+"ylw" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/service/chapel/graveyard)
 "ylV" = (
 /obj/effect/floor_decal/newcorner/reinforced,
 /turf/simulated/floor/dirty,
@@ -36852,10 +37207,10 @@ xQg
 dTY
 jQF
 dTY
-vvw
-vvw
+jDe
+jDe
 dTY
-dTY
+xQg
 dTY
 dTY
 nNb
@@ -37099,15 +37454,15 @@ dTY
 dTY
 dTY
 dTY
-dTY
-dTY
-dTY
-xQg
-dTY
-dTY
-vvw
-dTY
-dTY
+jDe
+jDe
+jDe
+nTU
+fjz
+sds
+sds
+nJr
+jDe
 dTY
 dTY
 dTY
@@ -37348,19 +37703,19 @@ dUJ
 dTY
 dTY
 dTY
-dTY
 oTR
 dTY
-dTY
-dTY
-dTY
-dTY
-dTY
-dTY
+fjz
+sds
 vvw
-dTY
-dTY
-dTY
+vvw
+sds
+vvw
+vvw
+sds
+sds
+sds
+nvG
 oTR
 dTY
 dTY
@@ -37600,19 +37955,19 @@ nNb
 dTY
 jQF
 dTY
-dTY
 apB
+fjz
+vvw
+sds
 dTY
+sds
+vvw
+vvw
+sds
+ucu
 dTY
-oTR
-dTY
-dTY
-oTR
-dTY
-dTY
-dTY
-dTY
-dTY
+vvw
+nJr
 apB
 dTY
 dTY
@@ -37852,23 +38207,23 @@ dTY
 dTY
 xQg
 dTY
-dTY
-dTY
-dTY
-dTY
-apB
-dTY
-dTY
-apB
-dTY
-oTR
-dTY
+fjz
 vvw
+sds
+vvw
+nNb
+nNb
+nNb
+nNb
+nNb
+vvw
+sds
+vvw
+sds
+nJr
 dTY
 dTY
-dTY
-dTY
-dTY
+rWt
 dTY
 dTY
 dTY
@@ -38100,29 +38455,29 @@ nSI
 eTh
 dUJ
 dTY
+jQF
 dTY
 dTY
-dTY
-dTY
-dTY
-dTY
+hzS
+sds
 vvw
 vvw
-vvw
-dTY
-vvw
-vvw
+nNb
+nNb
+hHZ
+nNb
+fue
+nNb
+nNb
+sds
+sds
+qUv
+sds
+nJr
 dTY
 apB
 dTY
-vvw
 dTY
-dTY
-oTR
-dTY
-jQF
-dTY
-oTR
 dTY
 dTY
 dUJ
@@ -38352,31 +38707,31 @@ eTh
 eTh
 dUJ
 dTY
-dTY
-dTY
-oTR
-dTY
-dTY
-vvw
-nNb
-nNb
-nNb
-nNb
-nNb
-nNb
-nNb
-nNb
-nNb
-vvw
-dTY
-dTY
-apB
-dTY
 xQg
 dTY
-apB
+dTY
+fjz
+vvw
+vvw
+nNb
+nNb
+nNb
+viE
+ryD
+viE
+nNb
+nNb
+nNb
+vvw
+dTY
+sds
+sds
+nJr
 dTY
 dTY
+dTY
+dTY
+jDe
 dUJ
 eTh
 eTh
@@ -38605,30 +38960,30 @@ eTh
 nNb
 dTY
 dTY
-dTY
-apB
-dTY
+oTR
+hzS
 vvw
-dTY
+sds
+nNb
 nNb
 uki
 hdd
 tQU
-bKh
-wft
+gLd
+gLd
 klz
 czY
 nNb
+nNb
+qBx
 vvw
-vvw
-dTY
-dTY
-dTY
-dTY
-dTY
-dTY
-dTY
-dTY
+sds
+sds
+nJr
+jDe
+jDe
+jDe
+czY
 dUJ
 eTh
 eTh
@@ -38857,29 +39212,29 @@ eTh
 dUJ
 dTY
 dTY
-dTY
+apB
+fjz
+sds
 vvw
-vvw
-dTY
-dTY
 nNb
+fAm
 qms
 oJW
 jQi
-bKh
-wft
-bKh
-czY
 nNb
-dTY
+wft
+nNb
+czY
+lcF
+nNb
+oEF
+iiv
+sds
+sds
+sds
+sds
 vvw
-dTY
-dTY
-oTR
-dTY
-dTY
-xQg
-dTY
+sds
 iQe
 nNb
 aMP
@@ -39108,31 +39463,31 @@ eTh
 eTh
 dUJ
 dTY
-jQF
 dTY
+fjz
+sds
 vvw
-dTY
-dTY
-dTY
+cic
+nNb
 nNb
 jwJ
 oZR
-wMN
+jQi
 bKh
 wft
 bKh
 czY
+lcF
 nNb
+hXS
+dls
+vvw
+sds
+vvw
+sds
+sds
 dTY
-vvw
-vvw
-vvw
-apB
-dTY
-vvw
-vvw
-vvw
-vvw
+sds
 vvw
 bwI
 bwI
@@ -39359,31 +39714,31 @@ eTh
 eTh
 eTh
 dUJ
-dTY
-xQg
+jDe
+pBX
 vvw
+sds
 vvw
-dTY
-jQF
-dTY
-ijA
-wft
-wft
+ljq
+qBb
+nNb
+nNb
+pLF
 oSa
 bKh
 wft
 bKh
 jqh
 nNb
-dTY
-dTY
+nNb
+iPM
 vvw
+sds
+sds
+sds
 vvw
-vvw
-vvw
-vvw
-vvw
-vvw
+soC
+sds
 vvw
 vvw
 bwI
@@ -39611,31 +39966,31 @@ eTh
 eTh
 hXh
 nNb
-dTY
-dTY
+sds
 vvw
-dTY
-dTY
-xQg
-dTY
+sds
+vvw
+cic
+aiM
+aaU
 nNb
 oVW
-wft
-fDp
-wft
-wft
-wft
-gsr
+oZR
+tul
+rQn
+rQn
+rQn
+eDa
 nNb
 het
-dTY
+sds
+sds
+sds
+qUv
+sds
+sds
+sds
 vvw
-oTR
-dTY
-oTR
-dTY
-jQF
-dTY
 iQe
 nNb
 aMP
@@ -39858,37 +40213,37 @@ nSI
 nSI
 eTh
 nSI
+ijA
+ijA
+ijA
 bwI
-bwI
-bwI
-bwI
-vvw
-vvw
-vvw
-vvw
+sds
 dTY
-dTY
-dTY
-dTY
+sds
+vvw
+wMN
+aiM
+aiM
+gYi
 nNb
 dDF
-wft
-fDp
-wft
-wft
-wft
-wft
+oJW
+ugl
+cdg
+cdg
+cdg
+qtS
 qbC
-dTY
-dTY
+sds
 vvw
-apB
-dTY
-apB
-dTY
-xQg
-dTY
-dTY
+sds
+vvw
+sds
+wYz
+pFN
+pFN
+ogR
+vvw
 dUJ
 eTh
 eTh
@@ -40112,35 +40467,35 @@ eTh
 pRO
 eTh
 bwI
-bwI
-bwI
-vvw
-vvw
-vvw
-vvw
+ijA
+ijA
+sds
+sds
+sds
 dTY
-dTY
-oTR
-dTY
+sds
+mhs
+aiM
+qBb
 nNb
 oVW
-wft
+oZR
 fDp
-wft
-wft
-wft
+wlk
+wlk
+wlk
 gsr
 nNb
 het
+sds
 vvw
-vvw
+sds
+sds
+nvG
 dTY
 dTY
 dTY
-dTY
-dTY
-dTY
-dTY
+pFN
 dUJ
 eTh
 eTh
@@ -40367,27 +40722,27 @@ nSI
 eTh
 hXh
 nNb
-dTY
-dTY
-vvw
-dTY
-dTY
-apB
-dTY
-ijA
-wft
-wft
+sds
+sds
+sds
+sds
+sds
+tqy
+aaU
+nNb
+nNb
+pLF
 mfU
 bKh
 wft
 bKh
 qDh
 nNb
-dTY
-vvw
-vvw
-jQF
-dTY
+nNb
+qBx
+sds
+sds
+wYz
 dTY
 oTR
 dTY
@@ -40619,27 +40974,27 @@ nSI
 eTh
 eTh
 dUJ
-dTY
-dTY
 vvw
 vvw
-vvw
-dTY
-dTY
-nNb
-fjz
 sds
+vvw
+sds
+mhs
+nNb
+nNb
+jwJ
+oZR
 bmh
 bKh
 wft
 bKh
 czY
+lcF
 nNb
-dTY
-vvw
-vvw
-xQg
-dTY
+jWw
+abO
+sds
+nvG
 dTY
 apB
 nNb
@@ -40871,27 +41226,27 @@ eTh
 eTh
 eTh
 dUJ
-dTY
-dTY
-dTY
+pFN
+pFN
+pFN
+ogR
 vvw
-vvw
-vvw
-dTY
+sds
 nNb
+fAm
 lfT
 oJW
 jQi
-bKh
-wft
-bKh
-czY
 nNb
-dTY
+wft
+nNb
+czY
+lcF
+nNb
+aiM
+clf
 vvw
-dTY
-dTY
-dTY
+nvG
 dTY
 dTY
 dUJ
@@ -40899,8 +41254,8 @@ eTh
 eTh
 eTh
 eTh
-pVR
 eTh
+cmP
 eTh
 apQ
 iqE
@@ -41127,22 +41482,22 @@ dTY
 dTY
 oTR
 dTY
-dTY
+ogR
 vvw
-vvw
+nNb
 nNb
 nKC
 giG
-tQU
-bKh
-wft
+gBz
+dIx
+dIx
 sSc
 czY
 nNb
-dTY
-dTY
-dTY
-dTY
+nNb
+iPM
+sds
+wYz
 jQF
 dTY
 dTY
@@ -41379,22 +41734,22 @@ dTY
 dTY
 apB
 dTY
-dTY
-dTY
-dTY
+hzS
+vvw
+sds
 nNb
 nNb
 nNb
-nNb
-nNb
-nNb
+wdn
+ryD
+wdn
 nNb
 nNb
 nNb
 vvw
+sds
 vvw
-dTY
-dTY
+nvG
 xQg
 dTY
 dTY
@@ -41630,22 +41985,22 @@ dUJ
 dTY
 dTY
 dTY
-dTY
 jQF
 dTY
-dTY
-dTY
-dTY
-dTY
+ogR
+sds
 vvw
+nNb
+nNb
+fue
+nNb
+eNu
+nNb
+nNb
 vvw
-vvw
-vvw
-dTY
-dTY
-vvw
-vvw
-dTY
+sds
+sds
+wYz
 dTY
 dTY
 dTY
@@ -41655,7 +42010,7 @@ eTh
 eTh
 eTh
 eTh
-eTh
+cmP
 eTh
 eTh
 apQ
@@ -41882,23 +42237,23 @@ nNb
 dUJ
 dUJ
 nNb
-dTY
 xQg
-dTY
-dTY
 oTR
-dTY
-dTY
+hzS
 vvw
+sds
 vvw
+nNb
+nNb
+nNb
+nNb
+nNb
 vvw
-vvw
-vvw
-vvw
-dTY
-dTY
+sds
+sds
+sds
+nvG
 jQF
-dTY
 dTY
 oTR
 dTY
@@ -41908,7 +42263,7 @@ eTh
 eTh
 eTh
 eTh
-pVR
+eTh
 eTh
 apQ
 iqE
@@ -42135,22 +42490,22 @@ eTh
 eTh
 dUJ
 dTY
-dTY
-dTY
-dTY
 apB
 dTY
-dTY
-jQF
-dTY
-dTY
-dTY
-dTY
-dTY
+ogR
 vvw
 dTY
-xQg
+vvw
+sds
+vvw
+sds
+sds
+vvw
+sds
+wYz
+pFN
 dTY
+xQg
 dTY
 apB
 dTY
@@ -42390,20 +42745,20 @@ dTY
 dTY
 jQF
 dTY
-dTY
-dTY
+htn
+sds
 ozc
-xQg
+vvw
+tbE
+sds
+sds
+sds
+vvw
+nvG
+dTY
 dTY
 dTY
 oTR
-dTY
-vvw
-vvw
-dTY
-dTY
-dTY
-dTY
 dTY
 dTY
 dUJ
@@ -42647,15 +43002,15 @@ nNb
 nNb
 nNb
 dTY
+ogR
+vvw
+ylw
+sds
+nvG
+dTY
+oTR
 dTY
 apB
-dTY
-vvw
-dTY
-dTY
-dTY
-dTY
-dTY
 dTY
 dTY
 dUJ
@@ -42890,7 +43245,7 @@ eTh
 eTh
 nSI
 dUJ
-aiM
+dTY
 dTY
 dTY
 dTY
@@ -42899,13 +43254,13 @@ myl
 myl
 nNb
 dTY
-dTY
-dTY
+hzS
+sds
 vvw
 vvw
+nJr
 dTY
-dTY
-dTY
+apB
 dTY
 nNb
 sqM
@@ -43151,15 +43506,15 @@ myl
 myl
 nNb
 nNb
-dTY
-dTY
+hzS
+vvw
 vvw
 igR
+vvw
+nvG
 dTY
 dTY
-dTY
-dTY
-aaU
+dUJ
 eTh
 eTh
 eTh
@@ -43407,15 +43762,15 @@ nNb
 nNb
 seC
 nNb
+vvw
+nvG
 dTY
 dTY
-dTY
-dTY
-aaU
+dUJ
 eTh
 eTh
 eTh
-eTh
+cmP
 eTh
 eTh
 apQ
@@ -47408,7 +47763,7 @@ nSI
 nSI
 qiL
 qiL
-nSI
+qUl
 nSI
 nSI
 nSI
