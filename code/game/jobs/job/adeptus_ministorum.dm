@@ -261,7 +261,7 @@
 	selection_color = "#FCFBFA"
 	economic_modifier = 10
 	announced = FALSE
-	outfit_type = /decl/hierarchy/outfit/job/sisterofbattle
+	outfit_type = /decl/hierarchy/outfit/job/canoness
 	access = list(213 , 211, 213, 333, access_medical, access_heads,
 			access_abbess, access_RC_announce,
 			access_keycard_auth, access_guard_common, access_village, access_advchapel)
@@ -663,7 +663,7 @@
 	back = /obj/item/storage/backpack/satchel/warfare/sisterofbattle/mlsister
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_hand = /obj/item/storage/firstaid/adv
-	r_hand = /obj/item/gun/energy/pulse/plasma/pistol
+	r_hand = /obj/item/melee/energy/powersword
 	glasses = /obj/item/clothing/glasses/hud/health
 	belt = /obj/item/storage/belt/medical/apothecary
 	r_pocket = /obj/item/device/flashlight/lantern
@@ -673,7 +673,10 @@
 	backpack_contents = list(
 		/obj/item/reagent_containers/food/snacks/warfare = 1,
 		/obj/item/cell/plasma = 2,
-		/obj/item/stack/thrones2/ten = 1
+		/obj/item/stack/thrones2/ten = 1,
+		/obj/item/gun/projectile/bolter_pistol/sisterofbattle = 1,
+		/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+		/obj/item/clothing/accessory/holster/waist = 1
 		)
 
 /decl/hierarchy/outfit/job/sisterofbattle
