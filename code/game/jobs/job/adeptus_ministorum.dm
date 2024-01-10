@@ -252,8 +252,8 @@
 	title = "Canoness"
 	department = "Ministorum"
 	department_flag = MED
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	open_when_dead = 0
 	social_class = SOCIAL_CLASS_HIGH
 	latejoin_at_spawnpoints = TRUE
