@@ -661,22 +661,22 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/sisterofbattle/mlsister
 	back = /obj/item/storage/backpack/satchel/warfare/sisterofbattle/mlsister
-	shoes = /obj/item/clothing/shoes/jackboots
+	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle/mlsister
 	l_hand = /obj/item/storage/firstaid/adv
 	r_hand = /obj/item/melee/energy/powersword
 	glasses = /obj/item/clothing/glasses/hud/health
 	belt = /obj/item/storage/belt/medical/apothecary
-	r_pocket = /obj/item/device/flashlight/lantern
 	id_type = /obj/item/card/id/dog_tag
 	head = /obj/item/clothing/head/hospitallerhelm
+	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/storage/box/coin
 	backpack_contents = list(
 		/obj/item/reagent_containers/food/snacks/warfare = 1,
-		/obj/item/cell/plasma = 2,
 		/obj/item/stack/thrones2/ten = 1,
 		/obj/item/gun/projectile/bolter_pistol/sisterofbattle = 1,
 		/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
-		/obj/item/clothing/accessory/holster/waist = 1
+		/obj/item/clothing/accessory/holster/waist = 1,
+		/obj/item/device/flashlight/lantern = 1
 		)
 
 /decl/hierarchy/outfit/job/sisterofbattle

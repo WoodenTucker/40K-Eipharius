@@ -221,6 +221,11 @@ Template:
 	name = "Confessor"
 	icon_state = "churchs"
 
+/obj/effect/landmark/start/ministorum/confessor
+
+/obj/effect/landmark/start/ministorum/canoness
+	name = "Canoness"
+
 /obj/effect/landmark/start/ministorum/sistersuperior
 	name = "Sister Superior"
 
