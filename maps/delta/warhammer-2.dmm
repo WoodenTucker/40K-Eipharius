@@ -12052,12 +12052,7 @@
 "mVs" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /obj/structure/table/rack/dark,
-/obj/item/gun/energy/pulse/ionrifle{
-	charge_cost = 25;
-	desc = "The remains of an ancient salvage, close examination reveals the power pack is drained and there are even cracks within the crystal assembly.";
-	name = "Salvaged ION rifle";
-	sales_price = 0
-	},
+/obj/random/loot/goodweapon,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
 "mVO" = (

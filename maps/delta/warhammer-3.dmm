@@ -422,13 +422,6 @@
 /turf/simulated/floor/tiled/freezer,
 /area/cadiaoutpost/oa/villageinside)
 "atS" = (
-/obj/structure/window/reinforced{
-	health = 800;
-	maxhealth = 800;
-	name = "expensive glass";
-	dir = 4;
-	pixel_x = 7
-	},
 /obj/structure/sign/art/statue{
 	pixel_y = 32
 	},
@@ -2672,7 +2665,7 @@
 /area/cadiaoutpost/oa/shuttle/magos)
 "cLV" = (
 /obj/machinery/door/blast/grates{
-	id = "trophy3";
+	id = "trophy4";
 	name = "Trophy Showcase 4"
 	},
 /turf/simulated/floor/factory_floor,
@@ -3159,18 +3152,6 @@
 /obj/random/loot/sidearmammo,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
-"djG" = (
-/obj/structure/window/reinforced{
-	health = 800;
-	maxhealth = 800;
-	name = "expensive glass";
-	dir = 1
-	},
-/obj/effect/floor_decal/spline/fancy/wood/corner{
-	dir = 4
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/bridge/hallway)
 "djM" = (
 /obj/structure/sink{
 	dir = 8;
@@ -4093,7 +4074,11 @@
 /obj/structure/sign/imperial{
 	pixel_y = 32
 	},
-/turf/simulated/wall/concrete/strong,
+/turf/unsimulated/mineral{
+	icon = 'icons/turf/wall.dmi';
+	icon_state = "concrete0";
+	name = "strange wall"
+	},
 /area/cadiaoutpost/oa/security/barracks)
 "dXc" = (
 /obj/effect/floor_decal/industrial/warning/corner{
@@ -9978,9 +9963,15 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security/barracks)
 "jsB" = (
-/obj/machinery/computer/planetarytrade2,
-/turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/farm)
+/obj/item/flame/candle/dinner{
+	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
+	name = "krungsmacka's favorite 'toy'";
+	pixel_x = 5;
+	pixel_y = 5;
+	color = "black"
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue/middle,
+/area/cadiaoutpost/oa/bridge/hallway)
 "jsG" = (
 /obj/structure/railing{
 	dir = 1
@@ -11899,6 +11890,12 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
+/obj/item/grenade/chem_grenade/teargas{
+	name = "Holy Healing Grenade"
+	},
+/obj/item/grenade/chem_grenade/teargas{
+	name = "Holy Healing Grenade"
+	},
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
@@ -12658,13 +12655,12 @@
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel)
 "lHU" = (
-/obj/machinery/door/window/brigdoor/vault{
-	dir = 1;
-	name = "Drinks Showcase";
-	req_one_access = list(331)
+/turf/unsimulated/mineral{
+	icon = 'icons/turf/wall.dmi';
+	icon_state = "concrete0";
+	name = "strange wall"
 	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/bridge/hallway)
+/area/cadiaoutpost/oa/farm)
 "lIa" = (
 /obj/item/tray{
 	pixel_x = -6;
@@ -13739,14 +13735,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "mKR" = (
-/obj/structure/window/reinforced{
-	health = 800;
-	maxhealth = 800;
-	name = "expensive glass";
-	dir = 1
+/turf/unsimulated/mineral{
+	icon = 'icons/turf/wall.dmi';
+	icon_state = "concrete0";
+	name = "strange wall"
 	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/bridge/hallway)
+/area/cadiaoutpost/oa/security/barracks)
 "mLq" = (
 /obj/structure/warfare/barricade/sandbag{
 	dir = 4
@@ -13904,6 +13898,12 @@
 /obj/effect/floor_decal/turf/metal/five,
 /obj/structure/table/graf/shrine,
 /obj/item/storage/backpack/cultpack,
+/obj/item/grenade/flashbang{
+	name = "Holy Healing Grenade"
+	},
+/obj/item/grenade/chem_grenade/teargas{
+	name = "Holy Healing Grenade"
+	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel)
 "mTa" = (
@@ -15110,17 +15110,13 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
 "ogv" = (
-/obj/structure/window/reinforced{
-	health = 800;
-	maxhealth = 800;
-	name = "expensive glass";
-	dir = 1
+/obj/item/grenade/fake{
+	name = "Ultra Blight Grenade"
 	},
-/obj/effect/floor_decal/spline/fancy/wood/corner{
-	dir = 1
+/turf/simulated/floor/tiled/freezer{
+	color = "grey"
 	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/bridge/hallway)
+/area/cadiaoutpost/oa/security/barracks)
 "ohD" = (
 /obj/effect/water/bottom{
 	color = "blue"
@@ -19536,13 +19532,6 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
 "svs" = (
-/obj/structure/window/reinforced{
-	health = 800;
-	maxhealth = 800;
-	name = "expensive glass";
-	dir = 8;
-	pixel_x = -7
-	},
 /obj/structure/sign/art/lordgovenor{
 	pixel_y = 32
 	},
@@ -23866,7 +23855,6 @@
 	pixel_x = 1
 	},
 /turf/simulated/floor/darkwood/rotten,
-/turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/oa/farm)
 "wpO" = (
 /obj/effect/decal/cleanable/dirt,
@@ -52305,7 +52293,7 @@ fkN
 qek
 iDo
 dQa
-mKR
+eOC
 oEz
 ujf
 kwC
@@ -52557,7 +52545,7 @@ fkN
 qek
 iDo
 jhm
-lHU
+eOC
 dQK
 nba
 mNl
@@ -52809,7 +52797,7 @@ uHK
 vKY
 iDo
 fQq
-ogv
+kxL
 aiz
 tTU
 obe
@@ -54069,7 +54057,7 @@ jOc
 yhn
 iDo
 qee
-djG
+jnn
 hHB
 qzE
 czi
@@ -54321,7 +54309,7 @@ cdM
 oOQ
 iDo
 dJL
-lHU
+eOC
 eOC
 eOC
 eOC
@@ -54573,7 +54561,7 @@ cdM
 bSy
 iDo
 aMY
-mKR
+eOC
 oEn
 eOC
 eOC
@@ -56339,7 +56327,7 @@ jya
 drW
 dTf
 dTf
-dTf
+jsB
 dTf
 mgl
 iYV
@@ -63902,9 +63890,9 @@ dlN
 dlN
 dlN
 dlN
-dGW
+mKR
 dWZ
-dGW
+mKR
 qiL
 nSI
 nSI
@@ -64156,7 +64144,7 @@ vaL
 gyH
 qxA
 qxA
-dGW
+mKR
 qiL
 nSI
 nSI
@@ -64408,7 +64396,7 @@ vaL
 gyH
 qxA
 qxA
-dGW
+mKR
 qiL
 nSI
 nSI
@@ -64658,9 +64646,9 @@ xrP
 xrP
 xrP
 xrP
-dGW
+mKR
 dWZ
-dGW
+mKR
 qiL
 nSI
 nSI
@@ -65156,10 +65144,10 @@ dII
 dII
 bZc
 sCO
-dGW
-dGW
-dGW
-dGW
+mKR
+mKR
+mKR
+mKR
 dGW
 dGW
 dGW
@@ -65411,7 +65399,7 @@ fNc
 dNl
 kcO
 kcO
-dGW
+mKR
 dGW
 qiL
 qiL
@@ -65663,7 +65651,7 @@ fNc
 tLO
 kcO
 kcO
-dGW
+mKR
 dGW
 qiL
 qiL
@@ -65912,10 +65900,10 @@ dGW
 dGW
 bZc
 bZc
-dGW
-dGW
-dGW
-dGW
+mKR
+mKR
+mKR
+mKR
 dGW
 dGW
 dGW
@@ -67667,7 +67655,7 @@ oDl
 dGW
 gct
 luM
-cda
+ogv
 cda
 luM
 fNc
@@ -78771,25 +78759,25 @@ lOQ
 dVt
 dVt
 dVt
-mVc
-mVc
-mVc
-mVc
-mVc
-mVc
-mVc
+lHU
+lHU
+lHU
+lHU
+lHU
+lHU
+lHU
 jtg
 jtg
-mVc
-mVc
-mVc
-mVc
-mVc
-mVc
-mVc
-mVc
-mVc
-mVc
+lHU
+lHU
+lHU
+lHU
+lHU
+lHU
+lHU
+lHU
+lHU
+lHU
 nSI
 nSI
 oiV
@@ -79023,7 +79011,7 @@ lOQ
 lOQ
 dVt
 dVt
-mVc
+lHU
 lHA
 ozl
 dsH
@@ -79041,7 +79029,7 @@ bjl
 iQm
 dEG
 haa
-mVc
+lHU
 nSI
 nSI
 nSI
@@ -79275,7 +79263,7 @@ eTh
 lOQ
 dVt
 dVt
-mVc
+lHU
 gEx
 cVs
 cVs
@@ -79525,9 +79513,9 @@ dqv
 dqv
 eTh
 lOQ
-lOQ
-mVc
-mVc
+lHU
+lHU
+lHU
 cVs
 egj
 pzF
@@ -79777,7 +79765,7 @@ dqv
 dqv
 eTh
 eTh
-lOQ
+lHU
 kqe
 rxO
 cVs
@@ -79797,7 +79785,7 @@ chu
 uDe
 xGb
 pvM
-mVc
+lHU
 jDa
 jDa
 jDa
@@ -80049,7 +80037,7 @@ bjl
 uDe
 xGb
 obt
-mVc
+lHU
 srZ
 jDa
 jDa
@@ -80301,7 +80289,7 @@ mVc
 uDe
 xGb
 utl
-mVc
+lHU
 srZ
 srZ
 jDa
@@ -80553,7 +80541,7 @@ mVc
 uDe
 xGb
 obt
-mVc
+lHU
 srZ
 srZ
 jDa
@@ -80785,7 +80773,7 @@ dqv
 dqv
 eTh
 eTh
-lOQ
+lHU
 jYA
 puq
 cVs
@@ -80805,7 +80793,7 @@ mVc
 nGh
 xGb
 pvM
-mVc
+lHU
 srZ
 srZ
 srZ
@@ -81037,9 +81025,9 @@ dqv
 eTh
 eTh
 iFU
-lOQ
-mVc
-mVc
+lHU
+lHU
+lHU
 dji
 oqO
 iZa
@@ -81291,7 +81279,7 @@ iFU
 iFU
 nSI
 nSI
-mVc
+lHU
 olI
 cVs
 ygr
@@ -81543,17 +81531,17 @@ iFU
 nSI
 nSI
 nSI
-mVc
+lHU
 mVc
 mVc
 mVc
 mVc
 pcz
 pcz
-mVc
+lHU
 aYU
 aYU
-mVc
+lHU
 xGb
 xGb
 xGb
@@ -81795,17 +81783,17 @@ iFU
 nSI
 nSI
 nSI
-mVc
+lHU
 qnT
-jsB
 xGb
 xGb
 xGb
 xGb
-mVc
+xGb
+lHU
 cyL
 cyL
-mVc
+lHU
 cVP
 xGb
 xGb
@@ -82047,17 +82035,17 @@ nSI
 nSI
 nSI
 nSI
-mVc
+lHU
 wpw
 xGb
 xGb
 xGb
 xGb
 qlr
-mVc
+lHU
 cyL
 cyL
-mVc
+lHU
 xGb
 xGb
 xGb
@@ -82065,7 +82053,7 @@ mVc
 cbv
 hjt
 ybp
-mVc
+lHU
 srZ
 srZ
 jDa
@@ -82299,25 +82287,25 @@ nSI
 iFU
 iFU
 nSI
-mVc
+lHU
 xGb
 iIb
 xGb
 iIb
 mVc
 mVc
-mVc
-mVc
-mVc
-mVc
+lHU
+lHU
+lHU
+lHU
 pcz
 pcz
 mVc
 mVc
-mVc
-mVc
-mVc
-mVc
+lHU
+lHU
+lHU
+lHU
 srZ
 srZ
 srZ
@@ -82551,7 +82539,7 @@ nSI
 iFU
 nSI
 nSI
-mVc
+lHU
 aPJ
 xGb
 xGb
@@ -82566,7 +82554,7 @@ cVs
 cVs
 cVs
 mBH
-mVc
+lHU
 srZ
 srZ
 srZ
@@ -82803,7 +82791,7 @@ nSI
 nSI
 nSI
 nSI
-mVc
+lHU
 xGb
 xGb
 xGb
@@ -82818,7 +82806,7 @@ pmQ
 jfn
 pmQ
 bRh
-mVc
+lHU
 srZ
 srZ
 srZ
@@ -83055,7 +83043,7 @@ nSI
 nSI
 nSI
 nSI
-mVc
+lHU
 sIz
 xGb
 xGb
@@ -83307,7 +83295,7 @@ nSI
 nSI
 nSI
 nSI
-mVc
+lHU
 xGb
 xGb
 xGb
@@ -83559,10 +83547,10 @@ nyx
 nSI
 nSI
 nSI
-mVc
-mVc
+lHU
+lHU
 jtg
-mVc
+lHU
 sNd
 mVc
 oHC
@@ -83811,10 +83799,10 @@ nSI
 nyx
 nSI
 nSI
-mVc
-mVc
+lHU
+lHU
 wWT
-mVc
+lHU
 mVc
 mVc
 biC
@@ -83826,7 +83814,7 @@ hfl
 kZT
 hfl
 nSw
-mVc
+lHU
 srZ
 srZ
 srZ
@@ -84063,10 +84051,10 @@ nSI
 nSI
 nyx
 nSI
-mVc
-mVc
+lHU
+lHU
 wWT
-mVc
+lHU
 mVc
 mVc
 cVs
@@ -84078,7 +84066,7 @@ cVs
 cVs
 cVs
 mBH
-mVc
+lHU
 jDa
 jDa
 srZ
@@ -84315,10 +84303,10 @@ nSI
 nSI
 nSI
 nyx
-mVc
-mVc
-mVc
-mVc
+lHU
+lHU
+lHU
+lHU
 mVc
 mVc
 gww
@@ -84330,7 +84318,7 @@ cVs
 cVs
 cVs
 cVs
-mVc
+lHU
 nSI
 jDa
 jDa
@@ -84582,7 +84570,7 @@ xXa
 lOm
 ycX
 gJi
-mVc
+lHU
 nSI
 jDa
 jDa
@@ -84834,7 +84822,7 @@ mVc
 mVc
 mVc
 mVc
-mVc
+lHU
 nSI
 jDa
 srZ

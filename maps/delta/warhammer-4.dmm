@@ -833,6 +833,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hallway/northern)
+"dd" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/clothing/under/rank/victorian/black,
+/obj/item/clothing/under/rank/victorian/reddress,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/farm)
 "de" = (
 /turf/simulated/floor/fancyfloor/carpet/grey{
 	dir = 6
@@ -3453,7 +3461,7 @@
 /area/cadiaoutpost/oa/service/chapel)
 "ml" = (
 /obj/effect/landmark/start{
-	name = "House Goliath"
+	name = "Tavern Ganger"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/inn)
@@ -3877,6 +3885,8 @@
 	icon_state = "wood_1tilethick";
 	dir = 4
 	},
+/obj/item/clothing/under/rank/victorian/grey,
+/obj/item/clothing/under/rank/victorian/reddress,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/farm)
 "nV" = (
@@ -13351,6 +13361,25 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/armory)
+"YG" = (
+/obj/structure/closet/cabinet{
+	color = "grey"
+	},
+/obj/item/clothing/accessory/holster/armpit,
+/obj/item/clothing/shoes/jackboots/inquisitor,
+/obj/item/clothing/glasses/monocle,
+/obj/structure/closet/hive/iron_c{
+	anchored = 1
+	},
+/obj/random/loot/sidearms,
+/obj/random/loot/sidearms,
+/obj/random/loot/sidearmammo,
+/obj/random/loot/sidearmammo,
+/obj/random/loot/sidearmammo,
+/obj/random/loot/sidearmammo,
+/obj/item/clothing/under/rank/victorian,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/farm)
 "YI" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 1
@@ -13375,6 +13404,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/station1)
+"YO" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/clothing/under/rank/victorian/blred,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/farm)
 "YQ" = (
 /obj/structure/curtain/open/shower,
 /turf/simulated/floor/tiled/freezer{
@@ -52384,11 +52420,11 @@ UB
 UB
 UB
 UB
-UB
-UB
-UB
-UB
-UB
+IH
+IH
+IH
+IH
+IH
 Uw
 cO
 In
@@ -52637,10 +52673,10 @@ UB
 UB
 UB
 IH
-IH
-IH
-IH
-IH
+cA
+ir
+Lo
+gp
 IH
 mu
 In
@@ -52889,10 +52925,10 @@ UB
 UB
 UB
 IH
-cA
-ir
 Lo
-gp
+Ii
+Lo
+xp
 IH
 IH
 IH
@@ -53141,10 +53177,10 @@ UB
 UB
 UB
 IH
+PV
+VW
+UG
 Lo
-Ii
-Lo
-xp
 IH
 ZW
 Qc
@@ -53393,10 +53429,10 @@ UB
 UB
 UB
 IH
-PV
-VW
-UG
-Lo
+qs
+vc
+zf
+MK
 Zr
 sl
 xE
@@ -53645,10 +53681,10 @@ UB
 UB
 UB
 IH
-qs
-vc
-zf
-MK
+IH
+IH
+IH
+IH
 IH
 AM
 IH
@@ -53896,10 +53932,10 @@ UB
 UB
 UB
 UB
-IH
-IH
-IH
-IH
+UB
+UB
+UB
+UB
 IH
 Em
 gY
@@ -68120,7 +68156,7 @@ BV
 HT
 Bq
 Bq
-Bq
+dd
 Jd
 hN
 hN
@@ -68372,7 +68408,7 @@ Bq
 Bq
 Bq
 Bq
-Bq
+YO
 Jd
 hN
 hN
@@ -69127,7 +69163,7 @@ NL
 Jd
 Jd
 Wh
-vY
+YG
 Bq
 Jd
 hN
