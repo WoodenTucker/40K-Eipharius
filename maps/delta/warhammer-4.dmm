@@ -172,7 +172,8 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "aK" = (
 /obj/machinery/light{
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /turf/simulated/floor/darkfloor,
@@ -433,7 +434,8 @@
 /obj/item/grenade/smokebomb/mortar/fire,
 /obj/effect/floor_decal/industrial/mark,
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/darksteel_floor{
 	dir = 1
@@ -465,7 +467,8 @@
 /area/cadiaoutpost/oa/hallway/northern)
 "bR" = (
 /obj/effect/floor_decal/newcorner/plating{
-	dir = 4
+	dir = 4;
+	icon_state = "plating"
 	},
 /obj/structure/table/graf/reinf_table{
 	icon_state = "reinf_table3";
@@ -497,7 +500,8 @@
 "bZ" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/machinery/light{
-	dir = 1
+	dir = 1;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
@@ -579,7 +583,8 @@
 /area/cadiaoutpost/oa/service/inn)
 "ck" = (
 /obj/machinery/light/small/red{
-	dir = 8
+	dir = 8;
+	icon_state = "bulb1"
 	},
 /turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
@@ -742,7 +747,8 @@
 /area/cadiaoutpost/oa/security/armory)
 "cH" = (
 /obj/structure/bed/chair/comfy/captain{
-	dir = 1
+	dir = 1;
+	icon_state = "capchair_preview"
 	},
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 1
@@ -803,6 +809,7 @@
 /area/cadiaoutpost/oa/farm)
 "cR" = (
 /obj/machinery/door/airlock/glass_command/hospitaller{
+	color = null;
 	maxhealth = 600;
 	req_one_access = list(333)
 	},
@@ -989,7 +996,8 @@
 /obj/item/clothing/gloves/combat/cadian,
 /obj/effect/floor_decal/industrial/mark,
 /obj/machinery/light{
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
@@ -1075,12 +1083,22 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/armory)
+"dY" = (
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb1"
+	},
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/oa/villageinside)
 "ed" = (
 /obj/structure/table/rack,
 /obj/item/gun/projectile/bolter_pistol,
 /obj/effect/floor_decal/industrial/mark,
 /obj/machinery/light{
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -1088,7 +1106,8 @@
 /area/cadiaoutpost/oa/security/armory)
 "ee" = (
 /obj/machinery/light{
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/fancyfloor/marble,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
@@ -1146,7 +1165,8 @@
 /obj/item/clothing/head/legacy/sentryhelm/red,
 /obj/item/remains/human,
 /obj/effect/floor_decal/newcorner/plating{
-	dir = 8
+	dir = 8;
+	icon_state = "plating"
 	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -1168,7 +1188,8 @@
 /area/cadiaoutpost/oa/service/inn)
 "eq" = (
 /obj/structure/torchwall/service{
-	dir = 1
+	dir = 1;
+	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/hive_city)
@@ -1308,7 +1329,8 @@
 	dir = 1
 	},
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey";
@@ -1495,7 +1517,8 @@
 /obj/item/clothing/head/helmet/bluehelmet,
 /obj/item/remains/human,
 /obj/effect/floor_decal/newcorner/plating{
-	dir = 8
+	dir = 8;
+	icon_state = "plating"
 	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -1594,7 +1617,8 @@
 /area/cadiaoutpost/oa/hangarpact2)
 "fS" = (
 /obj/machinery/body_scanconsole{
-	dir = 4
+	dir = 4;
+	icon_state = "body_scannerconsole"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey";
@@ -1604,7 +1628,8 @@
 /area/cadiaoutpost/oa/security/armory)
 "fT" = (
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /obj/item/paper_bin{
 	pixel_y = 8
@@ -1735,6 +1760,7 @@
 /area/cadiaoutpost/oa/service/chapel)
 "gs" = (
 /obj/structure/bed{
+	desc = "This is used to lie in, sleep in or strap on.";
 	icon_state = "bed_padding1";
 	name = "comfy bed"
 	},
@@ -1745,7 +1771,8 @@
 "gw" = (
 /obj/effect/floor_decal/newcorner/blue/diagonal,
 /obj/machinery/light{
-	dir = 8
+	dir = 8;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled{
 	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
@@ -1769,7 +1796,8 @@
 	pixel_y = -32
 	},
 /obj/effect/floor_decal/spline/fancy/wood{
-	dir = 10
+	dir = 10;
+	icon_state = "spline_fancy"
 	},
 /obj/structure/hivedecor/bookcase{
 	pixel_x = -7
@@ -1943,6 +1971,7 @@
 "gV" = (
 /obj/machinery/light/small{
 	dir = 4;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /obj/effect/floor_decal/newcorner/polar{
@@ -2031,6 +2060,7 @@
 "hp" = (
 /obj/structure/bed/chair{
 	dir = 8;
+	icon_state = "chair_preview";
 	pixel_x = 8
 	},
 /obj/structure/bed/chair{
@@ -2084,7 +2114,9 @@
 	},
 /area/cadiaoutpost/oa/shuttle/station1)
 "hC" = (
-/obj/structure/closet/secure_closet/CMO,
+/obj/structure/closet/secure_closet/CMO{
+	req_one_access = list()
+	},
 /obj/item/book/manual{
 	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
 	name = "Lectitio Divinitatus"
@@ -2128,7 +2160,8 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/spline/fancy/wood{
-	dir = 9
+	dir = 9;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/northern)
@@ -2148,7 +2181,8 @@
 /area/cadiaoutpost/oa/security/armory)
 "hJ" = (
 /obj/machinery/light{
-	dir = 1
+	dir = 1;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/inn)
@@ -2187,6 +2221,7 @@
 	},
 /obj/machinery/light/small{
 	dir = 8;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /turf/simulated/floor/tiled{
@@ -2463,6 +2498,7 @@
 "iF" = (
 /obj/machinery/light/small{
 	dir = 8;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /obj/structure/bed{
@@ -2565,6 +2601,7 @@
 "iY" = (
 /obj/machinery/light/small{
 	dir = 4;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /obj/structure/warfare/barricade/sandbag{
@@ -2572,8 +2609,16 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
+"ja" = (
+/obj/machinery/light/small{
+	dir = 1;
+	icon_state = "bulb1"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/villageinside)
 "jb" = (
 /obj/machinery/door/airlock/glass_medical{
+	color = null;
 	maxhealth = 1200;
 	name = "Storage";
 	req_one_access = list(63,10,331)
@@ -2611,7 +2656,8 @@
 /area/cadiaoutpost/oa/security/armory)
 "jg" = (
 /obj/structure/bed/chair{
-	dir = 4
+	dir = 4;
+	icon_state = "chair_preview"
 	},
 /turf/simulated/floor/plating{
 	color = "grey"
@@ -2630,7 +2676,8 @@
 	req_one_access = list()
 	},
 /obj/effect/floor_decal/spline/plain{
-	dir = 9
+	dir = 9;
+	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/security/armory)
@@ -2675,7 +2722,8 @@
 /area/cadiaoutpost/oa/villageinside)
 "jo" = (
 /obj/effect/floor_decal/spline/plain{
-	dir = 1
+	dir = 1;
+	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -2701,6 +2749,7 @@
 "js" = (
 /obj/machinery/light/small{
 	dir = 8;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /turf/simulated/floor/ceramic/old,
@@ -2736,6 +2785,7 @@
 "jy" = (
 /obj/structure/sink{
 	dir = 8;
+	icon_state = "sink";
 	layer = 50;
 	pixel_x = -12
 	},
@@ -2802,6 +2852,7 @@
 	},
 /obj/machinery/light/small{
 	dir = 8;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /turf/simulated/floor/tiled{
@@ -2843,7 +2894,8 @@
 /area/cadiaoutpost/oa/service/chapel)
 "jM" = (
 /obj/structure/torchwall/service{
-	dir = 1
+	dir = 1;
+	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel)
@@ -2978,6 +3030,7 @@
 "ku" = (
 /obj/machinery/light/small{
 	dir = 4;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /turf/simulated/floor/tiled{
@@ -3007,7 +3060,8 @@
 /area/cadiaoutpost/oa/hallway/northern)
 "ky" = (
 /obj/structure/torchwall/service{
-	dir = 8
+	dir = 8;
+	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel)
@@ -3089,7 +3143,8 @@
 /area/cadiaoutpost/oa/security/armory)
 "kQ" = (
 /obj/structure/toilet{
-	dir = 8
+	dir = 8;
+	icon_state = "toilet00"
 	},
 /obj/machinery/button/toggle/door{
 	name = "bathroom privacy 1#";
@@ -3346,6 +3401,7 @@
 "lK" = (
 /obj/structure/sink{
 	dir = 8;
+	icon_state = "sink";
 	layer = 50;
 	pixel_x = -12
 	},
@@ -3401,6 +3457,7 @@
 /area/cadiaoutpost/oa/hallway/northern)
 "lY" = (
 /obj/machinery/door/airlock/glass_medical{
+	color = null;
 	maxhealth = 900;
 	name = "Surgical Suite"
 	},
@@ -3444,6 +3501,7 @@
 "mf" = (
 /obj/machinery/light/small{
 	dir = 8;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /obj/structure/bed/chair/wood/fancy/comfy1,
@@ -3473,7 +3531,8 @@
 /area/cadiaoutpost/oa/security/armory)
 "mo" = (
 /obj/effect/floor_decal/spline/plain{
-	dir = 4
+	dir = 4;
+	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -3493,6 +3552,7 @@
 "mr" = (
 /obj/machinery/light/small{
 	dir = 4;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /obj/structure/table/graf/wood_office_table{
@@ -3537,7 +3597,8 @@
 /area/cadiaoutpost/oa/hallway/northern)
 "mB" = (
 /obj/machinery/light/small/red{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
@@ -3628,6 +3689,7 @@
 /area/cadiaoutpost/oa/security/armory)
 "mT" = (
 /obj/machinery/door/airlock/glass_medical{
+	color = null;
 	maxhealth = 1200;
 	name = "Chemistry Lab";
 	req_one_access = list(63,10,331)
@@ -3666,7 +3728,8 @@
 /area/cadiaoutpost/oa/security/armory)
 "nd" = (
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1
@@ -3699,7 +3762,8 @@
 /area/cadiaoutpost/oa/security/armory)
 "nk" = (
 /obj/machinery/light{
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/inn)
@@ -3835,7 +3899,8 @@
 "nF" = (
 /obj/effect/floor_decal/spline/fancy/wood,
 /obj/structure/torchwall/service{
-	dir = 8
+	dir = 8;
+	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/villageinside)
@@ -3943,6 +4008,7 @@
 "oe" = (
 /obj/structure/sink{
 	dir = 8;
+	icon_state = "sink";
 	layer = 50;
 	pixel_x = -10;
 	pixel_y = 2
@@ -4073,7 +4139,8 @@
 "oF" = (
 /obj/effect/floor_decal/newcorner/blue/diagonal,
 /obj/machinery/light{
-	dir = 1
+	dir = 1;
+	icon_state = "tube1"
 	},
 /obj/machinery/organ_printer,
 /turf/simulated/floor/tiled{
@@ -4096,12 +4163,12 @@
 /obj/effect/landmark/start{
 	name = "Abbess"
 	},
-/obj/effect/landmark/start/ministorum/canoness,
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/chapel)
 "oK" = (
 /obj/machinery/light/small{
 	dir = 4;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
@@ -4161,6 +4228,7 @@
 "oY" = (
 /obj/item/bedsheet/captain,
 /obj/structure/bed{
+	desc = "This is used to lie in, sleep in or strap on.";
 	icon_state = "bed_padding1";
 	name = "comfy bed"
 	},
@@ -4197,7 +4265,8 @@
 "pe" = (
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /obj/machinery/light{
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -4382,6 +4451,7 @@
 "pT" = (
 /obj/machinery/light/small{
 	dir = 4;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /turf/simulated/floor/darkwood,
@@ -4436,6 +4506,7 @@
 "qg" = (
 /obj/machinery/light/small{
 	dir = 4;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /obj/effect/floor_decal/spline/fancy/wood,
@@ -4456,7 +4527,8 @@
 	},
 /obj/item/melee/sword/commissword,
 /obj/machinery/light{
-	dir = 1
+	dir = 1;
+	icon_state = "tube1"
 	},
 /obj/item/card/id/key/grand/master{
 	access = list(333,225,331,63)
@@ -4490,6 +4562,15 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/hangar)
+"qq" = (
+/obj/machinery/light/small{
+	icon_state = "bulb1";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/oa/villageinside)
 "qs" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 5
@@ -4573,7 +4654,8 @@
 /area/cadiaoutpost/oa/villageinside)
 "qM" = (
 /obj/machinery/light{
-	dir = 1
+	dir = 1;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
@@ -4590,6 +4672,7 @@
 /area/cadiaoutpost/oa/security/armory)
 "qP" = (
 /obj/machinery/light/small{
+	icon_state = "bulb1";
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
@@ -4610,7 +4693,8 @@
 /area/cadiaoutpost/oa/villageinside)
 "qY" = (
 /obj/effect/floor_decal/spline/fancy/wood{
-	dir = 9
+	dir = 9;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/new_hive/hive_city)
@@ -4708,7 +4792,8 @@
 /area/cadiaoutpost/oa/hallway/northern)
 "ry" = (
 /obj/machinery/light{
-	dir = 1
+	dir = 1;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
@@ -4729,7 +4814,8 @@
 	dir = 8
 	},
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/snacks/slice/applecake/filled{
@@ -4760,7 +4846,8 @@
 /area/cadiaoutpost/oa/hallway/northern)
 "rJ" = (
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
@@ -4807,10 +4894,12 @@
 /area/cadiaoutpost/oa/security/armory)
 "rU" = (
 /obj/machinery/light{
-	dir = 1
+	dir = 1;
+	icon_state = "tube1"
 	},
 /obj/effect/floor_decal/spline/plain{
-	dir = 1
+	dir = 1;
+	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/security/armory)
@@ -4828,7 +4917,8 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/spline/fancy/wood{
-	dir = 5
+	dir = 5;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/northern)
@@ -4879,7 +4969,8 @@
 /area/cadiaoutpost/oa/security/armory)
 "si" = (
 /obj/structure/bed/chair{
-	dir = 8
+	dir = 8;
+	icon_state = "chair_preview"
 	},
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/inn)
@@ -4908,7 +4999,8 @@
 "ss" = (
 /obj/structure/closet/boxinggloves,
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -4932,7 +5024,8 @@
 /area/cadiaoutpost/oa/shuttle/station1)
 "sv" = (
 /obj/structure/bed/chair{
-	dir = 8
+	dir = 8;
+	icon_state = "chair_preview"
 	},
 /obj/item/beartrap{
 	color = "grey";
@@ -5051,7 +5144,8 @@
 /obj/item/mortar_shell/frag,
 /obj/effect/floor_decal/industrial/mark,
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/darksteel_floor{
 	dir = 1
@@ -5334,7 +5428,8 @@
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "tY" = (
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /obj/effect/floor_decal/newcorner/polar{
 	dir = 1
@@ -5428,7 +5523,8 @@
 /area/cadiaoutpost/oa/service/inn)
 "ur" = (
 /obj/machinery/light/small/red{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/plating{
 	color = "grey"
@@ -5529,7 +5625,8 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/spline/fancy/wood{
-	dir = 5
+	dir = 5;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/northern)
@@ -5682,6 +5779,7 @@
 /area/cadiaoutpost/oa/service/inn)
 "vn" = (
 /obj/structure/bed{
+	desc = "This is used to lie in, sleep in or strap on.";
 	icon_state = "bed_padding1";
 	name = "comfy bed"
 	},
@@ -5759,7 +5857,8 @@
 /area/cadiaoutpost/oa/service/inn)
 "vE" = (
 /obj/structure/torchwall/service{
-	dir = 8
+	dir = 8;
+	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/chapel)
@@ -6018,7 +6117,8 @@
 /area/cadiaoutpost/oa/hallway/northern)
 "ws" = (
 /obj/effect/floor_decal/spline/plain{
-	dir = 9
+	dir = 9;
+	icon_state = "spline_plain"
 	},
 /obj/effect/landmark/start/governor/servant,
 /turf/simulated/floor/darkwood,
@@ -6040,7 +6140,8 @@
 /area/cadiaoutpost/oa/service/chapel)
 "wy" = (
 /obj/effect/floor_decal/spline/plain{
-	dir = 1
+	dir = 1;
+	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/security/armory)
@@ -6067,7 +6168,8 @@
 /area/cadiaoutpost/oa/shuttle/roguet)
 "wH" = (
 /obj/structure/torchwall/service{
-	dir = 8
+	dir = 8;
+	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel)
@@ -6143,7 +6245,8 @@
 "wW" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/light{
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /obj/structure/closet/crate/secure/large{
 	name = "enterprise large crate";
@@ -6295,13 +6398,15 @@
 /area/cadiaoutpost/oa/villageinside)
 "xB" = (
 /obj/effect/floor_decal/spline/plain{
-	dir = 10
+	dir = 10;
+	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/security/armory)
 "xC" = (
 /obj/machinery/light/small{
 	dir = 4;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /turf/simulated/floor/tiled/dark,
@@ -6332,6 +6437,7 @@
 "xK" = (
 /obj/structure/sink{
 	dir = 8;
+	icon_state = "sink";
 	layer = 50;
 	pixel_x = -12
 	},
@@ -6454,7 +6560,8 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "yj" = (
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 1
@@ -6495,7 +6602,8 @@
 /area/cadiaoutpost/oa/farm)
 "yu" = (
 /obj/structure/torchwall{
-	dir = 8
+	dir = 8;
+	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/farm)
@@ -6560,7 +6668,8 @@
 /area/cadiaoutpost/oa/hallway/northern)
 "yJ" = (
 /obj/structure/bed/chair{
-	dir = 8
+	dir = 8;
+	icon_state = "chair_preview"
 	},
 /obj/item/storage/briefcase,
 /obj/effect/floor_decal/turf/splate,
@@ -6570,7 +6679,8 @@
 /area/cadiaoutpost/oa/shuttle/station1)
 "yK" = (
 /obj/effect/floor_decal/spline/plain{
-	dir = 6
+	dir = 6;
+	icon_state = "spline_plain"
 	},
 /obj/structure/bookcase,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -6640,7 +6750,8 @@
 /area/cadiaoutpost/oa/security/armory)
 "za" = (
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/villageinside)
@@ -6672,6 +6783,7 @@
 /obj/effect/floor_decal/spline/fancy/wood,
 /obj/machinery/light/small{
 	dir = 4;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /turf/simulated/floor/darkwood,
@@ -6753,7 +6865,8 @@
 /area/cadiaoutpost/oa/villageinside)
 "zs" = (
 /obj/machinery/light{
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /obj/structure/bed/chair/office/light{
 	dir = 1
@@ -6889,6 +7002,7 @@
 	},
 /obj/machinery/light/small{
 	dir = 4;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /turf/simulated/floor/fancyfloor/gray_white,
@@ -6939,6 +7053,7 @@
 "Ag" = (
 /obj/machinery/light/small{
 	dir = 4;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /turf/simulated/floor/ceramic/old,
@@ -6949,6 +7064,7 @@
 	},
 /obj/machinery/light/small{
 	dir = 4;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /turf/simulated/floor/darkwood,
@@ -6988,7 +7104,8 @@
 	pixel_x = 11
 	},
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/villageinside)
@@ -7010,6 +7127,7 @@
 "Au" = (
 /obj/structure/sink{
 	dir = 8;
+	icon_state = "sink";
 	layer = 50;
 	pixel_x = -12
 	},
@@ -7036,7 +7154,8 @@
 "AB" = (
 /obj/structure/table/rack/dark,
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /obj/effect/decal/cleanable/cobweb{
 	dir = 8
@@ -7045,7 +7164,8 @@
 /area/cadiaoutpost/oa/villageinside)
 "AC" = (
 /obj/structure/torchwall{
-	dir = 8
+	dir = 8;
+	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/farm)
@@ -7143,7 +7263,8 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/newcorner/plating{
-	dir = 4
+	dir = 4;
+	icon_state = "plating"
 	},
 /obj/machinery/door/blast/grates{
 	id = "space";
@@ -7179,10 +7300,12 @@
 /area/cadiaoutpost/oa/shuttle/station1)
 "Bc" = (
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /obj/structure/sink{
 	dir = 8;
+	icon_state = "sink";
 	layer = 50;
 	pixel_x = -12;
 	color = "grey"
@@ -7256,6 +7379,7 @@
 "Bw" = (
 /obj/machinery/light/small{
 	dir = 4;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
@@ -7302,7 +7426,8 @@
 /area/cadiaoutpost/oa/villageinside)
 "BF" = (
 /obj/machinery/light{
-	dir = 1
+	dir = 1;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -7356,6 +7481,7 @@
 "BQ" = (
 /obj/machinery/light/small{
 	dir = 4;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /turf/simulated/floor/darkwood,
@@ -7369,6 +7495,7 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "BS" = (
 /obj/machinery/light/small{
+	icon_state = "bulb1";
 	dir = 4
 	},
 /obj/effect/floor_decal/newcorner/reinforced/corner{
@@ -7389,10 +7516,18 @@
 /obj/structure/table/woodentable{
 	color = "#36261B"
 	},
-/obj/item/card/id/key/super/daemon,
-/obj/item/card/id/key/super/daemon,
-/obj/item/card/id/key/super/daemon,
-/obj/item/card/id/key/super/daemon,
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
+	},
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
+	},
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
+	},
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
+	},
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 5
 	},
@@ -7513,6 +7648,7 @@
 "CH" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/light/small{
+	icon_state = "bulb1";
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
@@ -7542,7 +7678,8 @@
 /area/cadiaoutpost/oa/shuttle/roguet)
 "CP" = (
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/plating{
 	color = "grey"
@@ -7734,7 +7871,8 @@
 /obj/item/gun/energy/las/lasgun/accatran,
 /obj/effect/floor_decal/industrial/mark,
 /obj/machinery/light{
-	dir = 1
+	dir = 1;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -7742,7 +7880,8 @@
 /area/cadiaoutpost/oa/security/armory)
 "DE" = (
 /obj/machinery/light/small{
-	dir = 8
+	dir = 8;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/villageinside)
@@ -7767,7 +7906,8 @@
 	dir = 8
 	},
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
@@ -7816,7 +7956,9 @@
 	},
 /obj/structure/sink{
 	dir = 4;
-	pixel_x = 11
+	icon_state = "sink";
+	pixel_x = 11;
+	pixel_y = 0
 	},
 /turf/simulated/floor/fancyfloor/marble,
 /area/cadiaoutpost/oa/shuttle/roguet)
@@ -7832,7 +7974,8 @@
 /area/cadiaoutpost/oa/villageinside)
 "Ea" = (
 /obj/structure/torchwall/service{
-	dir = 4
+	dir = 4;
+	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/hive_city)
@@ -7893,6 +8036,7 @@
 "Em" = (
 /obj/structure/bed/chair{
 	dir = 8;
+	icon_state = "chair_preview";
 	pixel_x = 8
 	},
 /obj/structure/bed/chair{
@@ -7937,7 +8081,8 @@
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "Es" = (
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/villageinside)
@@ -8003,7 +8148,8 @@
 /area/cadiaoutpost/oa/security/armory)
 "EI" = (
 /obj/structure/bed/chair/office/light{
-	dir = 8
+	dir = 8;
+	icon_state = "officechair_white_preview"
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel)
@@ -8011,7 +8157,8 @@
 /obj/item/trash/warfare_can/sardine,
 /obj/effect/floor_decal/newcorner/plating,
 /obj/structure/torchwall/service{
-	dir = 1
+	dir = 1;
+	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -8019,7 +8166,8 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "EK" = (
 /obj/effect/floor_decal/newcorner/plating{
-	dir = 8
+	dir = 8;
+	icon_state = "plating"
 	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -8098,13 +8246,15 @@
 /area/cadiaoutpost/oa/security/armory)
 "Fb" = (
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
 "Fc" = (
 /obj/structure/table/graf/rusty_table,
 /obj/machinery/door/blast/grates{
+	icon_state = "gshutter1";
 	id = "armoryshutters";
 	maxhealth = 1000;
 	name = "armory reception grate"
@@ -8152,6 +8302,7 @@
 /area/cadiaoutpost/oa/service/inn)
 "Fi" = (
 /obj/machinery/light/small{
+	icon_state = "bulb1";
 	dir = 4
 	},
 /obj/effect/floor_decal/newcorner/reinforced/corner{
@@ -8273,7 +8424,8 @@
 "FH" = (
 /obj/structure/shuttle/engine/propulsion{
 	color = "grey";
-	dir = 4
+	dir = 4;
+	icon_state = "propulsion"
 	},
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/shuttle/inquisitionpact)
@@ -8377,6 +8529,7 @@
 "FS" = (
 /obj/structure/sink{
 	dir = 8;
+	icon_state = "sink";
 	layer = 50;
 	pixel_x = -12
 	},
@@ -8447,7 +8600,8 @@
 /area/cadiaoutpost/oa/service/chapel)
 "Gb" = (
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /obj/structure/table/rack/shelf{
 	color = "grey"
@@ -8512,6 +8666,7 @@
 "Gn" = (
 /obj/machinery/light/small{
 	dir = 4;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /obj/effect/floor_decal/spline/plain{
@@ -8557,6 +8712,7 @@
 "Gu" = (
 /obj/structure/sink{
 	dir = 4;
+	icon_state = "sink";
 	pixel_x = 16;
 	color = "grey"
 	},
@@ -8601,6 +8757,7 @@
 "GB" = (
 /obj/structure/sink{
 	dir = 8;
+	icon_state = "sink";
 	layer = 50;
 	pixel_x = -12
 	},
@@ -8618,7 +8775,8 @@
 /area/cadiaoutpost/oa/farm)
 "GD" = (
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
@@ -8673,7 +8831,8 @@
 /area/cadiaoutpost/oa/villageinside)
 "GT" = (
 /obj/machinery/bodyscanner{
-	dir = 4
+	dir = 4;
+	icon_state = "body_scanner_0"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey";
@@ -8873,7 +9032,8 @@
 "HD" = (
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /obj/machinery/light/small/red{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/darkfloor,
 /area/cadiaoutpost/rtship1)
@@ -8925,6 +9085,7 @@
 /obj/structure/table/graf/rusty_table,
 /obj/structure/table/graf/rusty_table,
 /obj/machinery/door/blast/grates{
+	icon_state = "gshutter1";
 	id = "armoryshutters";
 	maxhealth = 1000;
 	name = "armory reception grate"
@@ -9007,7 +9168,8 @@
 /area/cadiaoutpost/oa/service/inn)
 "Ih" = (
 /obj/structure/torchwall/service{
-	dir = 1
+	dir = 1;
+	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel)
@@ -9038,7 +9200,8 @@
 /obj/item/clothing/head/helmet/flak,
 /obj/effect/floor_decal/industrial/mark,
 /obj/machinery/light{
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
@@ -9054,7 +9217,8 @@
 	pixel_y = 20
 	},
 /obj/effect/floor_decal/spline/plain{
-	dir = 1
+	dir = 1;
+	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/security/armory)
@@ -9142,7 +9306,8 @@
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "IM" = (
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -9206,7 +9371,8 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/spline/fancy/wood{
-	dir = 5
+	dir = 5;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/northern)
@@ -9244,7 +9410,8 @@
 "Jl" = (
 /obj/structure/bed/chair,
 /obj/machinery/light{
-	dir = 1
+	dir = 1;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -9382,6 +9549,7 @@
 "JP" = (
 /obj/machinery/light/small{
 	dir = 8;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /turf/simulated/floor/tiled{
@@ -9522,7 +9690,9 @@
 /turf/simulated/open,
 /area/cadiaoutpost/oa/villageinside)
 "Ks" = (
-/obj/structure/closet/secure_closet/chemical,
+/obj/structure/closet/secure_closet/chemical{
+	req_one_access = list()
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -9653,6 +9823,13 @@
 "KQ" = (
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/service/chapel)
+"KR" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 1;
+	icon_state = "spline_fancy"
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/villageinside)
 "KS" = (
 /obj/effect/decal/cleanable/cobweb{
 	dir = 8
@@ -9740,7 +9917,8 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "Lj" = (
 /obj/structure/torchwall{
-	dir = 4
+	dir = 4;
+	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/farm)
@@ -9917,7 +10095,8 @@
 /area/cadiaoutpost/oa/hallway/northern)
 "LP" = (
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
@@ -9929,6 +10108,7 @@
 /area/cadiaoutpost/oa/hallway/northern)
 "LR" = (
 /obj/structure/bed{
+	desc = "This is used to lie in, sleep in or strap on.";
 	icon_state = "bed_padding1";
 	name = "comfy bed"
 	},
@@ -10043,7 +10223,8 @@
 	dir = 8
 	},
 /obj/structure/torchwall/service{
-	dir = 1
+	dir = 1;
+	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/villageinside)
@@ -10239,7 +10420,8 @@
 /area/cadiaoutpost/oa/villageinside)
 "MT" = (
 /obj/structure/torchwall/service{
-	dir = 8
+	dir = 8;
+	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/chapel)
@@ -10296,7 +10478,8 @@
 /area/cadiaoutpost/oa/security/armory)
 "Na" = (
 /obj/machinery/light{
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/ceramic/surgery,
 /area/cadiaoutpost/oa/security/armory)
@@ -10310,7 +10493,8 @@
 /area/cadiaoutpost/oa/villageinside)
 "Nc" = (
 /obj/structure/torchwall{
-	dir = 1
+	dir = 1;
+	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/farm)
@@ -10320,6 +10504,7 @@
 /area/cadiaoutpost/oa/villageinside)
 "Nf" = (
 /obj/machinery/door/airlock/glass_command/hospitaller{
+	color = null;
 	maxhealth = 600;
 	req_one_access = list(40,213)
 	},
@@ -10371,7 +10556,8 @@
 /obj/item/clothing/mask/gas/krieg,
 /obj/effect/floor_decal/industrial/mark,
 /obj/machinery/light{
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
@@ -10466,7 +10652,8 @@
 /obj/item/trash/warfare_can/rat,
 /obj/effect/floor_decal/newcorner/plating,
 /obj/structure/torchwall/service{
-	dir = 1
+	dir = 1;
+	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -10556,7 +10743,8 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/spline/fancy/wood{
-	dir = 9
+	dir = 9;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/northern)
@@ -10703,7 +10891,8 @@
 "OG" = (
 /obj/machinery/chem_master,
 /obj/machinery/light{
-	dir = 8
+	dir = 8;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -10716,6 +10905,7 @@
 	},
 /obj/machinery/light/small{
 	dir = 8;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /obj/structure/table/graf/reinf_table{
@@ -10774,7 +10964,8 @@
 /area/cadiaoutpost/oa/security/armory)
 "OV" = (
 /obj/structure/toilet{
-	dir = 8
+	dir = 8;
+	icon_state = "toilet00"
 	},
 /turf/simulated/floor/fancyfloor/marble,
 /area/cadiaoutpost/oa/shuttle/roguet)
@@ -10784,7 +10975,8 @@
 /area/cadiaoutpost/oa/farm)
 "Pa" = (
 /obj/structure/toilet{
-	dir = 8
+	dir = 8;
+	icon_state = "toilet00"
 	},
 /turf/simulated/floor/tiled/freezer{
 	color = "grey"
@@ -10887,6 +11079,7 @@
 "Pu" = (
 /obj/machinery/light/small{
 	dir = 4;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /turf/simulated/floor/darkwood,
@@ -10901,7 +11094,8 @@
 	dir = 1
 	},
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
@@ -10915,7 +11109,8 @@
 /area/cadiaoutpost/rtship1)
 "PC" = (
 /obj/structure/torchwall/service{
-	dir = 1
+	dir = 1;
+	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -10989,10 +11184,12 @@
 /area/cadiaoutpost/oa/service/inn)
 "PV" = (
 /obj/effect/floor_decal/spline/plain{
-	dir = 9
+	dir = 9;
+	icon_state = "spline_plain"
 	},
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/lino,
 /area/cadiaoutpost/oa/service/inn)
@@ -11052,6 +11249,13 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/armory)
+"Qo" = (
+/obj/structure/bed/chair{
+	dir = 4;
+	icon_state = "chair_preview"
+	},
+/turf/simulated/floor/ceramic/old,
+/area/cadiaoutpost/oa/service/inn)
 "Qp" = (
 /obj/effect/floor_decal/newcorner/train{
 	dir = 8
@@ -11081,7 +11285,8 @@
 /area/cadiaoutpost/oa/service/inn)
 "Qu" = (
 /obj/effect/floor_decal/newcorner/plating{
-	dir = 4
+	dir = 4;
+	icon_state = "plating"
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/armory)
@@ -11188,7 +11393,8 @@
 "QK" = (
 /obj/structure/table/graf/rich_table,
 /obj/effect/floor_decal/spline/fancy/wood{
-	dir = 5
+	dir = 5;
+	icon_state = "spline_fancy"
 	},
 /obj/item/reagent_containers/food/drinks/bottle/amasecexpensive,
 /obj/item/reagent_containers/food/drinks/glass2/shake{
@@ -11261,9 +11467,15 @@
 /obj/structure/table/woodentable{
 	color = "#36261B"
 	},
-/obj/item/card/id/key/super/daemon,
-/obj/item/card/id/key/super/daemon,
-/obj/item/card/id/key/super/daemon,
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
+	},
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
+	},
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
+	},
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 5
 	},
@@ -11316,7 +11528,8 @@
 /area/cadiaoutpost/oa/villageinside)
 "Rl" = (
 /obj/structure/bed/chair{
-	dir = 8
+	dir = 8;
+	icon_state = "chair_preview"
 	},
 /obj/effect/floor_decal/turf/splate,
 /turf/simulated/floor/tiled/dark{
@@ -11343,6 +11556,7 @@
 /area/cadiaoutpost/oa/security/armory)
 "Ro" = (
 /obj/structure/bed{
+	desc = "This is used to lie in, sleep in or strap on.";
 	icon_state = "bed_padding1";
 	name = "comfy bed"
 	},
@@ -11352,7 +11566,8 @@
 /area/cadiaoutpost/oa/hallway/northern)
 "Rp" = (
 /obj/structure/bed/chair{
-	dir = 4
+	dir = 4;
+	icon_state = "chair_preview"
 	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -11424,6 +11639,7 @@
 "RC" = (
 /obj/machinery/light/small{
 	dir = 4;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /turf/simulated/floor/ceramic/surgery{
@@ -11503,7 +11719,8 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/spline/fancy/wood{
-	dir = 9
+	dir = 9;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/northern)
@@ -11604,6 +11821,7 @@
 "Se" = (
 /obj/machinery/light/small{
 	dir = 8;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
@@ -11778,7 +11996,8 @@
 /area/cadiaoutpost/oa/security/armory)
 "SM" = (
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/tiled/freezer{
 	color = "grey"
@@ -11787,7 +12006,8 @@
 "SN" = (
 /obj/structure/closet/crate,
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/inn)
@@ -11838,7 +12058,8 @@
 /area/cadiaoutpost/oa/shuttle/roguet)
 "SY" = (
 /obj/effect/floor_decal/newcorner/plating{
-	dir = 4
+	dir = 4;
+	icon_state = "plating"
 	},
 /obj/structure/table/graf/reinf_table{
 	icon_state = "reinf_table3";
@@ -12010,6 +12231,7 @@
 "TG" = (
 /obj/machinery/light/small{
 	dir = 4;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /obj/effect/floor_decal/spline/plain{
@@ -12196,7 +12418,8 @@
 	},
 /obj/structure/dogbed,
 /obj/machinery/light{
-	dir = 1
+	dir = 1;
+	icon_state = "tube1"
 	},
 /mob/living/simple_animal/corgi/cpl_buddy,
 /obj/item/device/cassette/dow_spessmuhreen_theme{
@@ -12249,6 +12472,7 @@
 "UF" = (
 /obj/machinery/light/small{
 	dir = 4;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /turf/simulated/floor/tiled/dark{
@@ -12322,7 +12546,8 @@
 "UT" = (
 /obj/structure/shuttle/engine/propulsion{
 	color = "grey";
-	dir = 1
+	dir = 1;
+	icon_state = "propulsion"
 	},
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /obj/item/pyre/self_lit{
@@ -12402,7 +12627,8 @@
 "Vp" = (
 /obj/structure/hivedecor/bookcase/huge,
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/villageinside)
@@ -12600,7 +12826,8 @@
 /area/cadiaoutpost/oa/hallway/northern)
 "VU" = (
 /obj/structure/toilet{
-	dir = 8
+	dir = 8;
+	icon_state = "toilet00"
 	},
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/oa/security/armory)
@@ -12611,7 +12838,8 @@
 /area/cadiaoutpost/oa/security/armory)
 "VW" = (
 /obj/effect/floor_decal/spline/plain{
-	dir = 10
+	dir = 10;
+	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/lino,
 /area/cadiaoutpost/oa/service/inn)
@@ -12716,7 +12944,8 @@
 	anchored = 1
 	},
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /obj/item/card/id/key/super/pathfinder,
 /turf/simulated/floor/darkwood,
@@ -12871,6 +13100,7 @@
 	dir = 8
 	},
 /obj/machinery/light/small{
+	icon_state = "bulb1";
 	dir = 4
 	},
 /turf/simulated/floor/plating{
@@ -12887,7 +13117,8 @@
 /area/cadiaoutpost/oa/service/chapel)
 "WY" = (
 /obj/effect/floor_decal/newcorner/plating{
-	dir = 8
+	dir = 8;
+	icon_state = "plating"
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/armory)
@@ -12990,7 +13221,8 @@
 	dir = 1
 	},
 /obj/machinery/light/small{
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
@@ -13048,7 +13280,8 @@
 /area/cadiaoutpost/oa/security/armory)
 "XB" = (
 /obj/structure/torchwall/service{
-	dir = 1
+	dir = 1;
+	icon_state = "torchwall0"
 	},
 /obj/structure/table/rack/dark,
 /obj/item/clothing/head/senturban,
@@ -13097,7 +13330,8 @@
 "XJ" = (
 /obj/structure/toilet{
 	color = "grey";
-	dir = 4
+	dir = 4;
+	icon_state = "toilet00"
 	},
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/chapel)
@@ -13140,7 +13374,8 @@
 /area/cadiaoutpost/oa/villageinside)
 "XQ" = (
 /obj/machinery/light{
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/inn)
@@ -13162,6 +13397,7 @@
 "XU" = (
 /obj/machinery/light/small{
 	dir = 4;
+	icon_state = "bulb1";
 	light_color = "#234F1E"
 	},
 /turf/simulated/floor/fancyfloor/carpet/grey{
@@ -13177,7 +13413,8 @@
 	name = "golden silk towel"
 	},
 /obj/structure/torchwall{
-	dir = 4
+	dir = 4;
+	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
@@ -13449,7 +13686,8 @@
 /area/cadiaoutpost/oa/service/chapel)
 "Zb" = (
 /obj/structure/toilet{
-	dir = 8
+	dir = 8;
+	icon_state = "toilet00"
 	},
 /obj/machinery/button/toggle/door{
 	name = "bathroom privacy 2#";
@@ -13528,7 +13766,8 @@
 "Zo" = (
 /obj/structure/shuttle/engine/propulsion{
 	color = "grey";
-	dir = 4
+	dir = 4;
+	icon_state = "propulsion"
 	},
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /obj/item/pyre/self_lit{
@@ -13589,14 +13828,16 @@
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "Zy" = (
 /obj/machinery/light{
-	dir = 8
+	dir = 8;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/inn)
 "Zz" = (
 /obj/item/instrument/guitar,
 /obj/structure/torchwall/service{
-	dir = 4
+	dir = 4;
+	icon_state = "torchwall0"
 	},
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tilethick";
@@ -13694,22 +13935,26 @@
 "ZO" = (
 /obj/structure/closet/crate,
 /obj/effect/floor_decal/spline/fancy/wood{
-	dir = 10
+	dir = 10;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/villageinside)
 "ZP" = (
 /obj/item/reagent_containers/pill/happy{
 	color = "lightblue";
-	name = "Joy"
+	name = "Joy";
+	desc = "Produces a pleasant dream-like state which lasts a few hours, but then turns into a deep depression once it wears off unless another dose is taken."
 	},
 /obj/item/reagent_containers/pill/happy{
 	color = "lightblue";
-	name = "Joy"
+	name = "Joy";
+	desc = "Produces a pleasant dream-like state which lasts a few hours, but then turns into a deep depression once it wears off unless another dose is taken."
 	},
 /obj/item/reagent_containers/pill/happy{
 	color = "lightblue";
-	name = "Joy"
+	name = "Joy";
+	desc = "Produces a pleasant dream-like state which lasts a few hours, but then turns into a deep depression once it wears off unless another dose is taken."
 	},
 /obj/structure/table/graf/reinf_table{
 	icon_state = "reinf_table3";
@@ -13762,7 +14007,8 @@
 /area/cadiaoutpost/oa/service/inn)
 "ZZ" = (
 /obj/machinery/shower{
-	dir = 8
+	dir = 8;
+	icon_state = "shower"
 	},
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/oa/security/armory)
@@ -24837,7 +25083,7 @@ Rs
 Ka
 iF
 aS
-vN
+KR
 eP
 UB
 UB
@@ -41108,7 +41354,7 @@ So
 So
 PN
 eP
-qP
+ja
 zC
 zC
 Lk
@@ -42368,14 +42614,14 @@ So
 So
 PN
 eP
-qP
+ja
 zC
 zC
 tR
 pW
 NW
 eP
-qP
+ja
 zC
 zC
 FY
@@ -43376,7 +43622,7 @@ So
 So
 PN
 eP
-qP
+ja
 zC
 zC
 eP
@@ -44889,7 +45135,7 @@ PN
 PN
 eP
 eP
-qP
+ja
 zC
 eV
 pW
@@ -46110,7 +46356,7 @@ Pr
 PN
 zM
 Xd
-Js
+dY
 UB
 PN
 PN
@@ -47191,7 +47437,7 @@ Xd
 Xd
 Xd
 eP
-rJ
+qq
 Xd
 UB
 UB
@@ -48665,7 +48911,7 @@ In
 In
 In
 In
-dB
+Qo
 IH
 In
 In
@@ -51458,7 +51704,7 @@ zC
 zC
 eP
 eP
-qP
+ja
 zC
 zC
 eP
@@ -55737,7 +55983,7 @@ eP
 eP
 eP
 eP
-rJ
+qq
 Xd
 Xd
 Xd
@@ -56725,7 +56971,7 @@ Kg
 ZL
 Lw
 eP
-rJ
+qq
 Xd
 Xd
 Xd
