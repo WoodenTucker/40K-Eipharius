@@ -7,7 +7,7 @@
 	icon_state = "chimeraAC"
 	initial_icon = "chimeraAC"
 	step_in = 3.5 // Quick entrace
-	health = 400
+	health = 2400
 	deflect_chance = 45
 	internal_damage_threshold = 250
 	damage_absorption = list("brute"=0.9,"fire"=0.9,"bullet"=1.1,"laser"=1.2,"energy"=0.4,"bomb"=0.8)

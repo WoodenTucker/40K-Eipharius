@@ -9,7 +9,7 @@
 	icon_state = "vanquisher"
 	initial_icon = "vanquisher"
 	step_in = 2.5 // Quick entrace
-	health = 800
+	health = 2800
 	deflect_chance = 45
 	internal_damage_threshold = 250
 	damage_absorption = list("brute"=0.9,"fire"=0.9,"bullet"=1.1,"laser"=1.2,"energy"=0.4,"bomb"=0.8)

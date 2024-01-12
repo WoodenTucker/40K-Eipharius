@@ -33,7 +33,7 @@
 	sales_price = 0
 	var/isblessed = 0
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
-	armor = list(melee = 10, bullet = 15, laser = 15, energy = 10, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 0, bullet = 5, laser = 5, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/melee/sword/handle_shield(mob/living/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(default_sword_parry(user, damage, damage_source, attacker, def_zone, attack_text))
@@ -154,7 +154,7 @@
 	slot_flags = SLOT_BELT
 	sales_price = 0
 	weapon_speed_delay = 8
-	armor = list(melee = 15, bullet = 20, laser = 20, energy = 10, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 0, bullet = 8, laser = 8, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 
 /obj/item/melee/sword/commissword/sabre
@@ -212,7 +212,7 @@
 	sales_price = 40
 	w_class = ITEM_SIZE_NORMAL
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
-	armor = list(melee = 10, bullet = 15, laser = 15, energy = 10, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 5, bullet = 5, laser = 5, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/melee/chain/guard
 	name = "Imperial Guard chainsword"
@@ -554,7 +554,7 @@
 	weapon_speed_delay = 9
 	w_class = ITEM_SIZE_LARGE
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
-	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 5, bullet = 5, laser = 5, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 
 /obj/item/melee/trench_axe/glaive
@@ -570,7 +570,7 @@
 	block_chance = 35
 	weapon_speed_delay = 10
 	w_class = ITEM_SIZE_HUGE
-	armor = list(melee = 10, bullet = 20, laser = 20, energy = 10, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/melee/trench_axe/glaive/adamantine
 	name = "adamantium saintie"
@@ -605,7 +605,7 @@
 	block_chance = 24
 	weapon_speed_delay = 8
 	w_class = ITEM_SIZE_LARGE
-	armor = list(melee = 10, bullet = 20, laser = 20, energy = 10, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 10, bullet = 5, laser = 5, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/melee/trench_axe/bspear
 	name = "hunting spear"
@@ -621,7 +621,7 @@
 	weapon_speed_delay = 8
 	edge = 0
 	w_class = ITEM_SIZE_LARGE
-	armor = list(melee = 10, bullet = 15, laser = 15, energy = 10, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 10, bullet = 5, laser = 5, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/melee/trench_axe/bspear/hunter
 	name = "fine hunting spear"
@@ -677,7 +677,7 @@
 	sales_price = 0
 	weapon_speed_delay = 8
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
-	armor = list(melee = 10, bullet = 25, laser = 25, energy = 10, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 0, bullet = 5, laser = 5, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/melee/classic_baton/daemonhammer
 	name = "Daemonhammer"
@@ -697,7 +697,7 @@
 	edge = TRUE
 	sales_price = 0
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
-	armor = list(melee = 35, bullet = 15, laser = 15, energy = 10, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 15, bullet = 5, laser = 5, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 // KNIVES AND SMALL WEAPONS //
 // KNIVES AND SMALL WEAPONS //
@@ -721,9 +721,9 @@
 	weapon_speed_delay = 6
 	drop_sound = 'sound/items/knife_drop.ogg'
 	swing_sound = "blunt_swing"
-	armor_penetration = 18
+	armor_penetration = 21
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
-	armor = list(melee = 10, bullet = 15, laser = 15, energy = 10, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 5, bullet = 5, laser = 5, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/melee/sword/combat_knife/attack(mob/living/carbon/C as mob, mob/living/user as mob)
 	if(user.a_intent == I_HELP && (C.handcuffed) && (istype(C.handcuffed, /obj/item/handcuffs/cable)))
@@ -789,11 +789,11 @@
 	attack_verb = list("slashed")
 	force = 25
 	force_wielded = 28
-	armor_penetration = 25
+	armor_penetration = 27
 	block_chance = 35
 	str_requirement = 12 //i don't want to hear it, anyone below 12 str is supposed to be a child or a old man.
 	weapon_speed_delay = 7
-	armor = list(melee = 15, bullet = 20, laser = 20, energy = 10, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 
 //knife for astartes/ogryn

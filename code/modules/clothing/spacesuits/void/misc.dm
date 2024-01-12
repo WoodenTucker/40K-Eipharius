@@ -4,7 +4,7 @@
 	icon_state = "deathsquad"
 
 	body_parts_covered = HEAD
-	armor = list(melee = 80, bullet = 65, laser = 70,energy = 35, bomb = 50, bio = 100, rad = 100)
+	armor = list(melee = 20, bullet = 25, laser = 30,energy = 35, bomb = 50, bio = 100, rad = 100)
 	siemens_coefficient = 0.6
 	sales_price = 30
 
@@ -16,7 +16,7 @@
 	icon_state = "deathsquad"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS
 	allowed = list(/obj/item/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/handcuffs,/obj/item/tank)
-	armor = list(melee = 80, bullet = 65, laser = 70,energy = 35, bomb = 50, bio = 100, rad = 100)
+	armor = list(melee = 20, bullet = 35, laser = 40,energy = 35, bomb = 50, bio = 100, rad = 100)
 	flags_inv = HIDESHOES|HIDEJUMPSUIT
 	siemens_coefficient = 0.6
 	sales_price = 50

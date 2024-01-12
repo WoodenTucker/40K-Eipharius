@@ -629,7 +629,7 @@ This file contains most of the code for the dungeons to work, structures, some i
 	item_state = "fharmor"
 	color = "red"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 60, bullet = 65, laser = 70, energy = 40, bomb = 40, bio = 10, rad = 10)
+	armor = list(melee = 40, bullet = 55, laser = 60, energy = 40, bomb = 40, bio = 10, rad = 10)
 	sales_price = 30
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
