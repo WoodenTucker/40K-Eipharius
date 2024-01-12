@@ -290,7 +290,7 @@
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 110
+	damage = 90
 	weaken = 1
 	armor_penetration = 55
 	light_power = 4
@@ -302,7 +302,7 @@
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 100
+	damage = 80
 	weaken = 1
 	armor_penetration = 55
 	light_power = 4
