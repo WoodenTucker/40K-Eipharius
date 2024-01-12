@@ -920,3 +920,80 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 			M.adjustToxLoss(rand(3, 6) * removed)
 		if(prob(25))
 			M.emote("cough")
+
+//TYRANID TOXINS
+
+
+/datum/reagent/toxin/tyranid
+	name = "Tyranid Venom"
+	description = "A basic tyranid Venom, for categorisation only. Alert a dev if you see this being used."
+	taste_description = "bitterness"
+	metabolism = 0.1
+	//target_organ //Use this to direct where damage should go to, for organ damage.
+	strength = 4 // How much damage it deals per unit
+	var/threshold = 1 //The amount of the reagent for various effects, change this as required for different toxins.
+
+/datum/reagent/toxin/tyranid/acid
+	name = "Tyranid Bio-Acid"
+	description = "A dangerous Tyranid Bio-Acid, beware!"
+	taste_description = "bitterness"
+	metabolism = 0.1
+	strength = 4 // How much damage it deals per unit
+	meltdose = 5
+
+/datum/reagent/toxin/tyranid/hall
+	name = "Tyranid Psychotropic Venom"
+	description = "A psychotropic Tyranid venom, used to confuse and disorient enemies."
+	taste_description = "bitterness"
+	metabolism = 0.05
+	strength = 0.1 // How much damage it deals per unit
+
+/datum/reagent/toxin/tyranid/hall/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien == IS_DIONA)
+		return
+
+	M.druggy = max(M.druggy, 30)
+
+	if(M.chem_doses[type] < 1)
+		M.apply_effect(3, STUTTER)
+		M.make_dizzy(5)
+		if(prob(5))
+			M.emote(pick("twitch", "giggle"))
+	else if(M.chem_doses[type] < 2 * threshold)
+		M.apply_effect(3, STUTTER)
+		M.make_jittery(5)
+		M.make_dizzy(5)
+		M.druggy = max(M.druggy, 35)
+		if(prob(10))
+			M.emote(pick("twitch", "giggle"))
+	else
+		M.add_chemical_effect(CE_MIND, -1)
+		M.apply_effect(3, STUTTER)
+		M.make_jittery(10)
+		M.make_dizzy(10)
+		M.druggy = max(M.druggy, 40)
+		if(prob(15))
+			M.emote(pick("twitch", "giggle"))
+	M.add_event("high", /datum/happiness_event/high)
+
+/datum/reagent/toxin/tyranid/sleep
+	name = "Tyranid Soporific Venom"
+	description = "A soporific Tyranid venom, used to send enemies to sleep."
+	taste_description = "bitterness"
+	metabolism = 0.05
+
+/datum/reagent/toxin/tyranid/sleep/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien == IS_DIONA)
+		return
+
+	if(M.chem_doses[type] == metabolism * 1)
+		M.confused += 2
+		M.drowsyness += 2
+	else if(M.chem_doses[type] < 2 * threshold)
+		M.Weaken(30)
+		M.eye_blurry = max(M.eye_blurry, 10)
+	else
+		M.sleeping = max(M.sleeping, 30)
+
+	if(M.chem_doses[type] > 1 * threshold)
+		M.adjustToxLoss(removed)
