@@ -394,3 +394,87 @@
 	var/datum/effect/effect/system/spark_spread/sparks = new /datum/effect/effect/system/spark_spread()
 	sparks.set_up(2, 1, T)
 	sparks.start()
+
+//TYRANID
+
+/obj/item/projectile/bullet/tyranid
+	name = "Tyranid bullet, just a categorisation object."
+	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
+	damage = 0
+	armor_penetration = 0
+	penetrating = 0
+	stun = 0
+	weaken = 0
+	paralyze = 0
+	irradiate = 0
+	stutter = 0
+	eyeblur = 0
+	drowsy = 0
+	agony = 0
+
+	incinerate = 0
+	embed = 0 // whether or not the projectile can embed itself in the mob
+	is_shrapnel = FALSE
+	//shrapnel_type //type of shrapnel the projectile leaves in its target.
+
+/obj/item/projectile/bullet/tyranid/fleshborer
+	name = "fleshborer beetle"
+	damage = 15
+	armor_penetration = 25
+	stun = 5
+	weaken = 5
+	agony = 25
+	embed = 1 
+/*/obj/item/projectile/bullet/tyranid/fleshborer/on_hit(var/atom/target)
+	if(ishuman(target))
+		if var/fleshborer < 10
+			target.fleshborer =+ 1
+	else return*/ //I'll get this properly set up once I've considered how to implement a scaling damage function and given mobs a fleshborer tracking value.
+
+/obj/item/projectile/bullet/tyranid/spike
+	name = "spike rifle spike"
+	damage = 25
+	armor_penetration = 35
+	agony = 5
+	embed = 1 
+
+/obj/item/projectile/bullet/tyranid/spike/hall
+	name = "spike rifle spike"
+	damage = 25
+	armor_penetration = 35
+	agony = 5
+	embed = 1 
+
+/obj/item/projectile/bullet/tyranid/spike/hall/on_hit(var/atom/target, var/blocked = 0)
+	if(istype(target, /mob/living/carbon/human))
+		var/mob/living/carbon/human/M = target
+		M.add_reagent(/datum/reagent/toxin/tyranid/hall, 15)
+
+/obj/item/projectile/bullet/tyranid/spike/sleepy
+	name = "spike rifle spike"
+	damage = 25
+	armor_penetration = 35
+	agony = 5
+	embed = 1 
+
+/obj/item/projectile/bullet/tyranid/spike/sleepy/on_hit(var/atom/target, var/blocked = 0)
+	if(istype(target, /mob/living/carbon/human))
+		var/mob/living/carbon/human/M = target
+		M.add_reagent(/datum/reagent/toxin/tyranid/sleepy, 5)
+
+
+
+/obj/item/projectile/bullet/tyranid/venomcannon
+	name = "venom cannon shard"
+	damage = 20
+	armor_penetration = 35
+	stun = 5
+	weaken = 5
+	agony = 25
+	embed = 1 
+
+/obj/item/projectile/bullet/tyranid/venomcannon/on_hit(var/atom/target, var/blocked = 0)
+	if(istype(target, /mob/living/carbon/human))
+		var/mob/living/carbon/human/M = target
+		M.add_reagent(/datum/reagent/toxin/tyranid/acid, 5)
+
