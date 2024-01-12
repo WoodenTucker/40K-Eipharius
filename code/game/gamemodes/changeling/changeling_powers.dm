@@ -825,3 +825,28 @@ var/list/datum/absorbed_dna/hivemind_bank = list()
 
 	feedback_add_details("changeling_powers","ED")
 	return 1
+
+/mob/proc/changeling_active_camo()
+	set category = "Changeling"
+	set name = "Active Camo"
+	set desc = "Camouflage yourself"
+	var/stealth_alpha = 10
+
+	if(alpha == stealth_alpha)
+		animate(src, alpha = 255, time = 1.5 SECONDS)
+	else
+		animate(src, alpha = stealth_alpha, time = 1.5 SECONDS)
+
+/mob/proc/changeling_sleepy_sting()
+	set category = "Changeling"
+	set name = "Sleep sting (50)"
+	set desc="Sting target:"
+
+	var/mob/living/carbon/human/T = changeling_sting(5,/mob/proc/changeling_sleep_sting)
+	if(!T)	return 0
+	to_chat(T, "<span class='danger'>Your ears pop and begin ringing loudly!</span>")
+	if(T.reagents)	T.reagents.add_reagent(/datum/reagent/chloralhydrate, 20)
+	if(T.reagents)	T.reagents.add_reagent(/datum/reagent/soporific, 30)
+	feedback_add_details("changeling_powers","SleepS")
+	return 1
+
