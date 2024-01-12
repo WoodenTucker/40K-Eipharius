@@ -939,7 +939,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 	taste_description = "bitterness"
 	metabolism = 0.1
 	strength = 4 // How much damage it deals per unit
-	meltdose = 5
+	var/meltdose = 5
 
 /datum/reagent/toxin/tyranid/hall
 	name = "Tyranid Psychotropic Venom"
