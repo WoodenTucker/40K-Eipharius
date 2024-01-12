@@ -976,13 +976,13 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 			M.emote(pick("twitch", "giggle"))
 	M.add_event("high", /datum/happiness_event/high)
 
-/datum/reagent/toxin/tyranid/sleep
+/datum/reagent/toxin/tyranid/sleepy
 	name = "Tyranid Soporific Venom"
 	description = "A soporific Tyranid venom, used to send enemies to sleep."
 	taste_description = "bitterness"
 	metabolism = 0.05
 
-/datum/reagent/toxin/tyranid/sleep/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+/datum/reagent/toxin/tyranid/sleepy/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	if(alien == IS_DIONA)
 		return
 
