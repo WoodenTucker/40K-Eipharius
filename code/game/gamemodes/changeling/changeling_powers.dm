@@ -842,7 +842,7 @@ var/list/datum/absorbed_dna/hivemind_bank = list()
 	set name = "Sleep sting (50)"
 	set desc="Sting target:"
 
-	var/mob/living/carbon/human/T = changeling_sting(5,/mob/proc/changeling_sleep_sting)
+	var/mob/living/carbon/human/T = changeling_sting(5,/mob/proc/changeling_sleepy_sting)
 	if(!T)	return 0
 	to_chat(T, "<span class='danger'>Your ears pop and begin ringing loudly!</span>")
 	if(T.reagents)	T.reagents.add_reagent(/datum/reagent/chloralhydrate, 20)
