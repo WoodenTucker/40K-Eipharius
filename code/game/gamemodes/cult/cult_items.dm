@@ -52,7 +52,7 @@
 	desc = "A hood worn by the Tech-Guard of the Machine-God."
 	flags_inv = HIDEFACE
 	body_parts_covered = HEAD
-	armor = list(melee = 30, bullet = 10, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 15, bullet = 10, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0.8 //That's a pretty cool opening in the hood. Also: Cloth making physical contact to the skull.
@@ -64,7 +64,7 @@
 	desc = "A helm worn by the followers of Nar-Sie."
 	flags_inv = HIDEFACE | BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EYES
-	armor = list(melee = 50, bullet = 40, laser = 30, energy = 20, bomb = 15, bio = 0, rad = 0)
+	armor = list(melee = 35, bullet = 30, laser = 30, energy = 20, bomb = 15, bio = 0, rad = 0)
 	sales_price = 10
 
 /obj/item/clothing/head/culthood/alt
@@ -76,7 +76,7 @@
 	icon_state = "cultrobes"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	allowed = list(/obj/item/book/tome,/obj/item/melee/cultblade)
-	armor = list(melee = 35, bullet = 30, laser = 25,energy = 20, bomb = 25, bio = 10, rad = 0)
+	armor = list(melee = 15, bullet = 20, laser = 25,energy = 20, bomb = 25, bio = 10, rad = 0)
 	flags_inv = HIDEJUMPSUIT
 	siemens_coefficient = 0.6
 	sales_price = 10
@@ -90,7 +90,7 @@
 	icon_state = "magusred"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
-	armor = list(melee = 75, bullet = 50, laser = 55, energy = 40, bomb = 50, bio = 10, rad = 0)
+	armor = list(melee = 35, bullet = 22, laser = 25, energy = 40, bomb = 50, bio = 10, rad = 0)
 	sales_price = 35
 
 /obj/item/clothing/suit/cultrobes/magusred/New()
@@ -101,7 +101,7 @@
 	name = "cult helmet"
 	desc = "A space worthy helmet used by the followers of Nar-Sie."
 	icon_state = "cult_helmet"
-	armor = list(melee = 60, bullet = 60, laser = 60,energy = 15, bomb = 30, bio = 100, rad = 30) //Real tanky shit.
+	armor = list(melee = 30, bullet = 30, laser = 30,energy = 15, bomb = 30, bio = 100, rad = 30) //Real tanky shit.
 	siemens_coefficient = 0.3 //Bone is not very conducive to electricity.
 	sales_price = 5
 
@@ -110,7 +110,7 @@
 	icon_state = "cult_armour"
 	desc = "A bulky suit of armour, bristling with spikes. It looks space proof."
 	allowed = list(/obj/item/book/tome,/obj/item/melee/cultblade,/obj/item/tank,/obj/item/device/suit_cooling_unit)
-	armor = list(melee = 60, bullet = 50, laser = 60,energy = 15, bomb = 30, bio = 100, rad = 30)
+	armor = list(melee = 30, bullet = 30, laser = 30,energy = 15, bomb = 30, bio = 100, rad = 30)
 	siemens_coefficient = 0.2
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS
 	sales_price = 10
@@ -132,7 +132,7 @@
 /obj/item/clothing/suit/witchhunter
 	name = "Witch Hunter Garments"
 	desc = "A garment worn by the Ordo Hereticus, despite looking like your usual clothes, these have reinforced materials below that protect from most small to medium caliber and sharp weapons."
-	armor = list(melee = 65, bullet = 75, laser = 70, energy = 55, bomb = 55, bio = 85, rad = 100)
+	armor = list(melee = 40, bullet = 65, laser = 60, energy = 55, bomb = 55, bio = 85, rad = 100)
 	icon_state = "femquisitor-armor_worn"
 	item_state = "femquisitor-armor_worn"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
@@ -143,7 +143,7 @@
 	item_state = "femquisitor-hat_worn"
 	desc = "A hat worn by the Ordo Hereticus, or more often called 'Witch Hunters' due the tasks they've got to do."
 	flags_inv = BLOCKHAIR
-	armor = list(melee = 65, bullet = 55, laser = 55, energy = 55, bomb = 75, bio = 55, rad = 100) //We make the hat actually useful for the witch hunters to wear + Actually protects = Fear
+	armor = list(melee = 40, bullet = 40, laser = 42, energy = 55, bomb = 75, bio = 55, rad = 100) //We make the hat actually useful for the witch hunters to wear + Actually protects = Fear
 
 /*
 

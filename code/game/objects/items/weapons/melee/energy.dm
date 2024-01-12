@@ -310,7 +310,7 @@
 	grab_sound = 'sound/items/unholster_sword02.ogg'
 	equipsound = 'sound/items/holster_sword1.ogg'
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
-	armor = list(melee = 10, bullet = 25, laser = 25, energy = 10, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 10, bullet = 12, laser = 12, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/melee/energy/powersword/activate(mob/living/user)
 	..()
@@ -370,7 +370,7 @@
 	origin_tech = list(TECH_MAGNET = 1, TECH_COMBAT = 1)
 	attack_verb = list("mauled", "clawed", "cleaved", "torn", "cut")
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
-	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 10, bullet = 5, laser = 5, energy = 10, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/melee/energy/powersword/claw/integrated/activate(mob/living/user)
 	..()

@@ -4,7 +4,7 @@
 	icon_state = "impknight"
 	initial_icon = "impknight"
 	step_in = 2.5
-	health = 800
+	health = 2400
 	deflect_chance = 45
 	damage_absorption = list("brute"=0.5,"fire"=1,"bullet"=0.5,"laser"=0.7,"energy"=0.9,"bomb"=0.75)
 	max_temperature = 30000
@@ -46,8 +46,8 @@
 	icon_state = "tankcomplete"
 	initial_icon = "tankcomplete"
 	step_in = 2.5
-	health = 1200
-	deflect_chance = 55
+	health = 3000
+	deflect_chance = 45
 	damage_absorption = list("brute"=0.5,"fire"=1,"bullet"=0.5,"laser"=0.7,"energy"=0.9,"bomb"=0.75)
 	max_temperature = 30000
 	infra_luminosity = 8

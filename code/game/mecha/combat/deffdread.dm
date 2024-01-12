@@ -4,7 +4,7 @@
 	icon_state = "deffdreadba"
 	initial_icon = "deffdreadba"
 	step_in = 6 // slower than dreadnought by a bit
-	health = 1000
+	health = 2500
 	deflect_chance = 55
 	internal_damage_threshold = 150
 	damage_absorption = list("brute"=0.6,"fire"=0.7,"bullet"=0.6,"laser"=0.6,"energy"=0.1,"bomb"=0.1) // no idea what to make these, make this shittier than dreadnought though

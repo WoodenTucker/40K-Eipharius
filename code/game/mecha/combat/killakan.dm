@@ -4,7 +4,7 @@
 	icon_state = "killakan"
 	initial_icon = "killakan"
 	step_in = 3
-	health = 600 // smol mech
+	health = 1600 // smol mech
 	deflect_chance = 25
 	damage_absorption = list("brute"=1.4,"fire"=1,"bullet"=1.4,"laser"=1.4,"energy"=0.9,"bomb"=0.75)
 	max_temperature = 30000

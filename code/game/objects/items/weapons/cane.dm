@@ -77,4 +77,3 @@
 	grab_sound_is_loud = TRUE
 	grab_sound = 'sound/items/unholster_sword01.ogg'
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
-	armor = list(melee = 20, bullet = 20, laser = 20, energy = 10, bomb = 10, bio = 0, rad = 0)
