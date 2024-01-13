@@ -191,16 +191,17 @@
 	var/door_breaker = 0 //Special door force opening value for tyranids.
 	var/wall_breaker = 0 //Special wall-flattening ability. This should only be for very large or powerful bioforms.
 
-/obj/item/melee/tyranid/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
-
-	if(istype(target, /obj/machinery/door))
+/obj/item/melee/tyranid/afterattack(atom/A, mob/user, proximity_flag, click_parameters)
+	..(A, user)
+	if(!user)
+		return
+	if(istype(A, /obj/machinery/door))
 		if(door_breaker >= 1)
-			if(target.density && target.operable())
-				target.do_animate("spark")
-				target.sleep(6)
-				target.open()
-				target.operating = -1
-				visible_message("<span class='danger'> The Tyranid tears the door open!.</span>")
+			A.do_animate("spark")
+			A.sleep(6)
+			A.open()
+			A.operating = -1
+			visible_message("<span class='danger'> The Tyranid tears the door open!.</span>")
 
 /obj/item/melee/tyranid/sword
 	name = "Tyranid Bonesword"
