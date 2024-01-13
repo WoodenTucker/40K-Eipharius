@@ -202,11 +202,11 @@
 			tyranid_wall_break(A, user)
 
 /obj/item/melee/tyranid/proc/tyranid_door_break(var/obj/A, var/mob/living/user)
-	if(istype(A, /obj/machinery/door))
-		do_animate("spark")
+	if(istype(A, /obj/machinery/door/D))
+		D.do_animate("spark")
 		sleep(6)
-		open()
-		operating = -1
+		D.open()
+		D.operating = -1
 
 /obj/item/melee/tyranid/sword
 	name = "Tyranid Bonesword"
