@@ -191,16 +191,6 @@
 	var/can_door_force = 0 //Special door force opening value for tyranids.
 	var/wall_breaker = 0 //Special wall-flattening ability. This should only be for very large or powerful bioforms.
 
-/obj/item/melee/tyranid/afterattack(atom/A, mob/user, proximity_flag, click_parameters)
-	..(A, user)
-	if(istype(A, /obj/machinery/door))
-		if(door_breaker >= 1)
-			tyranid_door_break(A, user)
-
-	if(istype(A, /turf/simulated/wall))
-		if(wall_breaker >= 1)
-			tyranid_wall_break(A, user)
-
 /obj/item/melee/tyranid/sword
 	name = "Tyranid Bonesword"
 	desc = "A monomolecular bone spur, grown by the Hive Mind for reckless melee violence."
