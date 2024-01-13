@@ -278,7 +278,7 @@
 		var/obj/item/W = I
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 		if(W.damtype == BRUTE || W.damtype == BURN)
-			if(can_door_force >= 1)
+			if(var/can_door_force >= 1)
 				do_animate("spark")
 				user.visible_message("<span class='danger'>\The [user] begins to pry open \the [src] with \the [W]!</span>")
 				sleep(30)
