@@ -167,3 +167,32 @@ obj/item/gun/energy/staff/focus
 	cell_type = /obj/item/cell/plasma
 	ammoType = /obj/item/cell/plasma
 	projectile_type = /obj/item/projectile/energy/meltagun
+
+//TYRANID WEAPONS
+//These are largely coded as energy guns, because they'll recharge on their own over time.
+
+/obj/item/gun/energy/tyranid
+	name = "Tyranid Projectile Biomorph"
+	desc = "A basic template Biomorph. You shouldn't be seeing this."
+	icon_state = null
+	item_state = null
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_HUGE
+	force = 15
+	one_hand_penalty = 1.5
+	fire_delay = 3.1
+	accuracy = 1
+	self_recharge = 1
+	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/bullet/tyranid
+	charge_cost = 500
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	wielded_item_state = "lascar-wielded"
+	sales_price = null
+
+	firemodes = list(
+		list(mode_name="semi-automatic",       burst=1, fire_delay=3.1, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=0),
+		list(mode_name="automatic",       burst=1, fire_delay=0.8, burst_accuracy=null, dispersion=null, automatic = 1, charge_cost=0),
+		)
