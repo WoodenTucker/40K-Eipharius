@@ -178,10 +178,10 @@
 /obj/item/melee/tyranid
 	name = "Basic Tyranid Weapon Item."
 	desc = "You shouldn't be seeing this, contact a coder."
-	icon_state = NULL
-	item_state = NULL
+	icon_state = null
+	item_state = null
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	slot_flags = NULL
+	slot_flags = null
 	force = 10
 	armor_penetration = 6
 	throwforce = 7
@@ -206,7 +206,6 @@
 	desc = "A monomolecular bone spur, grown by the Hive Mind for reckless melee violence."
 	icon_state = "artknife"
 	item_state = "artknife"
-	applies_material_colour = FALSE
 	attack_verb = list("slashed", "cut", "sliced")
 	force = 35
 	armor_penetration = 20
@@ -219,7 +218,6 @@
 	desc = "A vicious-looking barbed stinger, probably full of something nasty."
 	icon_state = "artknife"
 	item_state = "artknife"
-	applies_material_colour = FALSE
 	attack_verb = list("stung", "injected")
 	armor_penetration = 18
 	sharp = 1
@@ -229,7 +227,6 @@
 	desc = "A large, sharpened talons used to rend enemies of the Hivemind limb from limb."
 	icon_state = "artknife"
 	item_state = "artknife"
-	applies_material_colour = FALSE
 	attack_verb = list("chopped", "sliced", "diced")
 	force = 55
 	armor_penetration = 15
@@ -242,7 +239,6 @@
 	desc = "Enormous bone and chitin claws, capable of crushing a small animal - or a human head - in a single blow."
 	icon_state = "artknife"
 	item_state = "artknife"
-	applies_material_colour = FALSE
 	attack_verb = list("crushed", "smashed", "slammed")
 	force = 35
 	armor_penetration = 25
