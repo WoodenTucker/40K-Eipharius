@@ -188,7 +188,6 @@
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_COMBAT = 1)
 	attack_verb = list("flicked", "whipped", "lashed")
-	var/can_door_force = 0 //Special door force opening value for tyranids.
 	var/wall_breaker = 0 //Special wall-flattening ability. This should only be for very large or powerful bioforms.
 
 /obj/item/melee/tyranid/sword
