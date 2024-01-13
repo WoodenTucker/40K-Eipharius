@@ -188,7 +188,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_COMBAT = 1)
 	attack_verb = list("flicked", "whipped", "lashed")
-	var/door_breaker = 0 //Special door force opening value for tyranids.
+	var/can_door_force = 0 //Special door force opening value for tyranids.
 	var/wall_breaker = 0 //Special wall-flattening ability. This should only be for very large or powerful bioforms.
 
 /obj/item/melee/tyranid/afterattack(atom/A, mob/user, proximity_flag, click_parameters)
@@ -211,7 +211,7 @@
 	armor_penetration = 20
 	sharp = 1
 	edge = 1
-	door_breaker = 1
+	can_door_force = 1
 
 /obj/item/melee/tyranid/stinger
 	name = "Tyranid Stinger"
@@ -232,7 +232,7 @@
 	armor_penetration = 15
 	sharp = 1
 	edge = 1
-	door_breaker = 1
+	can_door_force = 1
 
 /obj/item/melee/tyranid/crushing
 	name = "Tyranid Crushing Claws"
@@ -242,5 +242,5 @@
 	attack_verb = list("crushed", "smashed", "slammed")
 	force = 35
 	armor_penetration = 25
-	door_breaker = 1
+	can_door_force = 1
 	wall_breaker = 1
