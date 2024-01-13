@@ -279,8 +279,12 @@
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 		if(W.damtype == BRUTE || W.damtype == BURN)
 			if(can_door_force >= 1)
-				door_force
+				do_animate("spark")
 				user.visible_message("<span class='danger'>\The [user] begins to pry open \the [src] with \the [W]!</span>")
+				sleep(30)
+				user.visible_message("<span class='danger'>\The [user] pries open \the [src] with \the [W]!</span>")
+				open()
+				operating = -1
 				return
 			else if(W.force < min_force)
 				user.visible_message("<span class='danger'>\The [user] hits \the [src] with \the [W] with no visible effect.</span>")
@@ -326,14 +330,6 @@
 	if(density && operable())
 		do_animate("spark")
 		sleep(6)
-		open()
-		operating = -1
-		return 1
-
-/obj/machinery/door/proc/door_force()
-	if(density && operable())
-		do_animate("spark")
-		sleep(30)
 		open()
 		operating = -1
 		return 1
