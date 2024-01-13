@@ -326,6 +326,14 @@
 		operating = -1
 		return 1
 
+/obj/machinery/door/proc/tyranid_door_break()
+	if(density && operable())
+		do_animate("spark")
+		sleep(6)
+		open()
+		operating = -1
+		return 1
+
 /obj/machinery/door/proc/take_damage(var/damage)
 	var/initialhealth = src.health
 	src.health = max(0, src.health - damage)
