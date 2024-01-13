@@ -176,8 +176,8 @@
 //TYRANID
 
 /obj/item/melee/tyranid
-	name = Basic tyranid weapon item.
-	desc = You shouldn't be seeing this, contact a coder.
+	name = "Basic Tyranid Weapon Item."
+	desc = "You shouldn't be seeing this, contact a coder."
 	icon_state = NULL
 	item_state = NULL
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
