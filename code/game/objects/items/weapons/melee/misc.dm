@@ -201,13 +201,6 @@
 		if(wall_breaker >= 1)
 			tyranid_wall_break(A, user)
 
-/obj/item/melee/tyranid/proc/tyranid_door_break(var/obj/A, var/mob/living/user)
-	if(istype(A, /obj/machinery/door/D))
-		D.do_animate("spark")
-		sleep(6)
-		D.open()
-		D.operating = -1
-
 /obj/item/melee/tyranid/sword
 	name = "Tyranid Bonesword"
 	desc = "A monomolecular bone spur, grown by the Hive Mind for reckless melee violence."
