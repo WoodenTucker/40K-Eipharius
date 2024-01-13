@@ -193,13 +193,13 @@
 
 /obj/item/melee/tyranid/afterattack(atom/A, mob/user, proximity_flag, click_parameters)
 	..(A, user)
-	if(istype(A, /obj/machinery/door/door))
+	if(istype(A, /obj/machinery/door))
 		if(door_breaker >= 1)
-			door.do_animate("spark")
-			door.sleep(6)
-			door.open()
-			door.operating = -1
-			visible_message("<span class='danger'> The Tyranid tears the door open!.</span>")
+			tyranid_door_break(A, user)
+
+	if(istype(A, /turf/simulated/wall))
+		if(wall_breaker >= 1)
+			tyranid_wall_break(A, user)
 
 /obj/item/melee/tyranid/sword
 	name = "Tyranid Bonesword"
