@@ -448,7 +448,7 @@
 /obj/item/projectile/bullet/tyranid/spike/hall/on_hit(var/atom/target, var/blocked = 0)
 	if(istype(target, /mob/living/carbon/human))
 		var/mob/living/carbon/human/M = target
-			M.add_reagent(/datum/reagent/toxin/tyranid/hall, 15)
+		M.reagents.add_reagent(/datum/reagent/toxin/tyranid/hall, 15)
 
 /obj/item/projectile/bullet/tyranid/spike/sleepy
 	name = "spike rifle spike"
@@ -460,7 +460,7 @@
 /obj/item/projectile/bullet/tyranid/spike/sleepy/on_hit(var/atom/target, var/blocked = 0)
 	if(istype(target, /mob/living/carbon/human))
 		var/mob/living/carbon/human/M = target
-			M.add_reagent(/datum/reagent/toxin/tyranid/sleepy, 5)
+		M.reagents.add_reagent(/datum/reagent/toxin/tyranid/sleepy, 5)
 
 
 
@@ -476,5 +476,5 @@
 /obj/item/projectile/bullet/tyranid/venomcannon/on_hit(var/atom/target, var/blocked = 0)
 	if(istype(target, /mob/living/carbon/human))
 		var/mob/living/carbon/human/M = target
-			M.add_reagent(/datum/reagent/toxin/tyranid/acid, 5)
+		M.reagents.add_reagent(/datum/reagent/toxin/tyranid/acid, 5)
 
