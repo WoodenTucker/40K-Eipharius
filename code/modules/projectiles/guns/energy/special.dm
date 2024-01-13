@@ -191,6 +191,7 @@ obj/item/gun/energy/staff/focus
 	ammoType = /obj/item/cell/tyranid
 	wielded_item_state = "lascar-wielded"
 	sales_price = null
+	charge_meter = FALSE
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=3.1, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=0),
