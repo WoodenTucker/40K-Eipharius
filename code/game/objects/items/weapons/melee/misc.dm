@@ -193,14 +193,12 @@
 
 /obj/item/melee/tyranid/afterattack(atom/A, mob/user, proximity_flag, click_parameters)
 	..(A, user)
-	if(!user)
-		return
-	if(istype(A, /obj/machinery/door))
+	if(istype(A, /obj/machinery/door/door))
 		if(door_breaker >= 1)
-			A.do_animate("spark")
-			A.sleep(6)
-			A.open()
-			A.operating = -1
+			door.do_animate("spark")
+			door.sleep(6)
+			door.open()
+			door.operating = -1
 			visible_message("<span class='danger'> The Tyranid tears the door open!.</span>")
 
 /obj/item/melee/tyranid/sword
