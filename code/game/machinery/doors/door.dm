@@ -326,7 +326,7 @@
 		operating = -1
 		return 1
 
-/obj/machinery/door/proc/tyranid_door_break()
+/obj/machinery/door/tyranid_door_break()
 	if(density && operable())
 		do_animate("spark")
 		sleep(6)
