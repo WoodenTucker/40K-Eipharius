@@ -200,6 +200,7 @@
 				target.sleep(6)
 				target.open()
 				target.operating = -1
+				visible_message("<span class='danger'> The Tyranid tears the door open!.</span>")
 
 /obj/item/melee/tyranid/sword
 	name = "Tyranid Bonesword"
