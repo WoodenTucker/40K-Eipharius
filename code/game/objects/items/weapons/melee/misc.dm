@@ -178,8 +178,9 @@
 /obj/item/melee/tyranid
 	name = "Basic Tyranid Weapon Item."
 	desc = "You shouldn't be seeing this, contact a coder."
-	icon_state = null
-	item_state = null
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "artknife"
+	item_state = "artknife"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	force = 10
@@ -205,8 +206,8 @@
 /obj/item/melee/tyranid/stinger
 	name = "Tyranid Stinger"
 	desc = "A vicious-looking barbed stinger, probably full of something nasty."
-	icon_state = "artknife"
-	item_state = "artknife"
+	icon_state = "lash"
+	item_state = "lash"
 	attack_verb = list("stung", "injected")
 	armor_penetration = 18
 	sharp = 1
@@ -214,8 +215,8 @@
 /obj/item/melee/tyranid/talons
 	name = "Tyranid Scything Talons"
 	desc = "A large, sharpened talons used to rend enemies of the Hivemind limb from limb."
-	icon_state = "artknife"
-	item_state = "artknife"
+	icon_state = "clawspear0"
+	item_state = "clawspear0"
 	attack_verb = list("chopped", "sliced", "diced")
 	force = 55
 	armor_penetration = 15
@@ -226,8 +227,8 @@
 /obj/item/melee/tyranid/crushing
 	name = "Tyranid Crushing Claws"
 	desc = "Enormous bone and chitin claws, capable of crushing a small animal - or a human head - in a single blow."
-	icon_state = "artknife"
-	item_state = "artknife"
+	icon_state = "club"
+	item_state = "club"
 	attack_verb = list("crushed", "smashed", "slammed")
 	force = 35
 	armor_penetration = 25
