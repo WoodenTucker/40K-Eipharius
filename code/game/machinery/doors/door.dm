@@ -281,7 +281,7 @@
 			if(can_door_force >= 1)
 				door_force
 				user.visible_message("<span class='danger'>\The [user] begins to pry open \the [src] with \the [W]!</span>")
-					return
+				return
 			else if(W.force < min_force)
 				user.visible_message("<span class='danger'>\The [user] hits \the [src] with \the [W] with no visible effect.</span>")
 			else
@@ -330,7 +330,7 @@
 		operating = -1
 		return 1
 
-/obj/machinery/door/door_force()
+/obj/machinery/door/proc/door_force()
 	if(density && operable())
 		do_animate("spark")
 		sleep(30)
