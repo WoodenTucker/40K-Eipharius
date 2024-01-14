@@ -17,7 +17,7 @@
 	force = 30
 	force_wielded = 40
 	block_chance = 35
-	armor_penetration = 18
+	armor_penetration = 16
 	sharp = 1 //sharp or blunt, blunt causes broken bones, sharp causes organ damage and extra bleeding.
 	edge = 1 //edge or not edged, edged has a higher chance of cutting limbs off, no edge has more chance of breaking limb
 	attack_verb = list("slashed", "sliced")
@@ -109,7 +109,7 @@
 	item_state = "spatha"
 	force = 30
 	force_wielded = 35
-	armor_penetration = 18
+	armor_penetration = 16
 	block_chance = 35 //It's short length does it no favors in this regard
 	weapon_speed_delay = 7
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -124,7 +124,7 @@
 	attack_verb = list("slashed")
 	force = 30
 	force_wielded = 35
-	armor_penetration = 20
+	armor_penetration = 16
 	block_chance = 35
 	weapon_speed_delay = 7
 	w_class = ITEM_SIZE_NORMAL
@@ -165,7 +165,7 @@
 	item_state = "sabre"
 	block_chance = 65
 	sales_price = 0
-	armor_penetration = 15
+	armor_penetration = 16
 
 /obj/item/melee/sword/choppa
 	name = "choppa"
@@ -176,7 +176,7 @@
 	item_state = "choppa"
 	attack_verb = list("stabbed", "chopped", "cut", "sliced")
 	force = 33
-	armor_penetration = 25
+	armor_penetration = 20
 	block_chance = 35
 	sharp = 1
 	hitsound = "slash_sound"
@@ -185,6 +185,7 @@
 	slot_flags = SLOT_BELT
 	sales_price = 0
 	weapon_speed_delay = 9
+	str_requirement = 22
 
 ///////////////
 //CHAINSWORDS//
@@ -199,7 +200,7 @@
 	str_requirement = 12
 	force = 32
 	force_wielded = 37
-	armor_penetration = 40
+	armor_penetration = 20
 	block_chance = 15
 	sharp = 1
 	edge = 1
@@ -224,7 +225,7 @@
 	force = 33
 	force_wielded = 38
 	str_requirement = 13
-	armor_penetration = 42
+	armor_penetration = 21
 	block_chance = 20
 
 /obj/item/melee/chain/gold
@@ -237,7 +238,7 @@
 	force = 29
 	force_wielded = 35
 	str_requirement = 13
-	armor_penetration = 42
+	armor_penetration = 19
 
 /obj/item/melee/chain/mercycs
 	name = "Locke Pattern Double-Edged Chainsword"
@@ -250,7 +251,7 @@
 	str_requirement = 13
 	force = 37
 	force_wielded = 42
-	armor_penetration = 42
+	armor_penetration = 22
 	block_chance = 12
 	weapon_speed_delay = 10
 	sharp = 1
@@ -274,7 +275,7 @@
 	str_requirement = 12
 	force_wielded = 38
 	force = 33
-	armor_penetration = 46
+	armor_penetration = 21
 	weapon_speed_delay = 8
 	block_chance = 20
 	sharp = 1
@@ -298,7 +299,7 @@
 	str_requirement = 18
 	force = 38
 	force_wielded = 44
-	armor_penetration = 52
+	armor_penetration = 22
 	sharp = 1
 	edge = 1
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -321,7 +322,7 @@
 	str_requirement = 14 // It's downsides of size are represented in it's one handed damage.
 	force = 28 // Physically impossible to wield effectively one handed unless Astartes/Ork.
 	force_wielded = 45
-	armor_penetration = 42
+	armor_penetration = 21
 	block_chance = 25
 	sharp = 1
 	edge = 1
@@ -346,7 +347,7 @@
 	str_requirement = 16
 	force = 36
 	force_wielded = 43
-	armor_penetration = 50
+	armor_penetration = 21
 	block_chance = 10
 	sharp = 1
 	edge = 1
@@ -387,7 +388,7 @@
 	item_state = "spatha"
 	force = 27
 	force_wielded = 29
-	armor_penetration = 25
+	armor_penetration = 17
 	block_chance = 35
 	weapon_speed_delay = 6
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -399,7 +400,7 @@
 	color = "#848484"
 	force = 29
 	force_wielded = 31
-	armor_penetration = 30
+	armor_penetration = 18
 	block_chance = 37
 	weapon_speed_delay = 6
 	sales_price = 0
@@ -411,7 +412,7 @@
 	item_state = "claymore"
 	force = 28
 	force_wielded = 38
-	armor_penetration = 20
+	armor_penetration = 17
 	block_chance = 20
 	weapon_speed_delay = 8
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -423,7 +424,7 @@
 	color = "#848484"
 	force = 30
 	force_wielded = 41
-	armor_penetration = 25
+	armor_penetration = 18
 	block_chance = 25
 	weapon_speed_delay = 8
 	sales_price = 0
@@ -440,6 +441,7 @@
 	force_wielded = 29
 	block_chance = 31 //quicker
 	weapon_speed_delay = 6
+	armor_penetration = 15
 
 /obj/item/melee/sword/machete/chopper
 	name = "iron chopper"
@@ -451,7 +453,7 @@
 	slot_flags = SLOT_BELT
 	force = 25
 	force_wielded = 32
-	armor_penetration = 20
+	armor_penetration = 15
 	block_chance = 30
 	weapon_speed_delay = 7
 
@@ -462,7 +464,7 @@
 	slot_flags = null
 	force = 35
 	force_wielded = 10
-	armor_penetration = 40
+	armor_penetration = 18
 	block_chance = 0
 	weapon_speed_delay = 10
 
@@ -476,7 +478,7 @@
 	slot_flags = SLOT_BELT
 	force = 27
 	force_wielded = 34
-	armor_penetration = 20
+	armor_penetration = 16
 	block_chance = 25
 	weapon_speed_delay = 8
 
@@ -492,7 +494,7 @@
 	slot_flags = SLOT_BELT
 	force = 31
 	force_wielded = 37
-	armor_penetration = 25
+	armor_penetration = 17
 	block_chance = 30
 	weapon_speed_delay = 8
 
@@ -507,7 +509,7 @@
 	str_requirement = 18
 	force = 32
 	force_wielded = 39
-	armor_penetration = 25
+	armor_penetration = 17
 	block_chance = 35
 	weapon_speed_delay = 8
 
@@ -522,7 +524,7 @@
 	str_requirement = 14
 	force = 36
 	force_wielded = 44 //warpsword
-	armor_penetration = 55
+	armor_penetration = 21
 	block_chance = 30
 	sharpness = TRUE
 	grab_sound_is_loud = TRUE
@@ -541,7 +543,7 @@
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	force = 25
 	force_wielded = 36
-	armor_penetration = 22
+	armor_penetration = 17
 	throwforce = 18
 	block_chance = 25
 	sharp = 1
@@ -565,7 +567,7 @@
 	wielded_icon = "spear-w"
 	force = 25
 	force_wielded = 39
-	armor_penetration = 45
+	armor_penetration = 19
 	throwforce = 40
 	block_chance = 35
 	weapon_speed_delay = 10
@@ -578,7 +580,7 @@
 	color = "#848484"
 	force = 27
 	force_wielded = 41
-	armor_penetration = 50
+	armor_penetration = 20
 	sales_price = 0
 
 /obj/item/melee/trench_axe/bardiche
@@ -589,7 +591,7 @@
 	wielded_icon = "savaxe"
 	force = 27
 	force_wielded = 41
-	armor_penetration = 25
+	armor_penetration = 18
 	throwforce = 15
 	block_chance = 20
 	weapon_speed_delay = 9
@@ -600,7 +602,7 @@
 	desc = "A gigantic, powerful, two handed, sharp polearm used for singular felling blows against armored opponents."
 	force = 30
 	force_wielded = 44
-	armor_penetration = 25
+	armor_penetration = 19
 	throwforce = 22
 	block_chance = 24
 	weapon_speed_delay = 8
@@ -615,7 +617,7 @@
 	wielded_icon = "bone_spear-w"
 	force = 27
 	force_wielded = 31
-	armor_penetration = 30
+	armor_penetration = 17
 	throwforce = 25
 	block_chance = 22
 	weapon_speed_delay = 8
@@ -628,7 +630,7 @@
 	desc = "An incredibly lightweight and nimble spear used by hunters against large game animals."
 	force = 29
 	force_wielded = 33
-	armor_penetration = 32
+	armor_penetration = 18
 	throwforce = 27
 	block_chance = 25
 	weapon_speed_delay = 7
@@ -641,7 +643,7 @@
 	wielded_icon = "lance-w"
 	force = 24
 	force_wielded = 37
-	armor_penetration = 30
+	armor_penetration = 19
 	block_chance = 24
 	weapon_speed_delay = 10
 	edge = 0
@@ -653,7 +655,7 @@
 	color = "#848484"
 	force = 26
 	force_wielded = 39
-	armor_penetration = 35
+	armor_penetration = 20
 	sales_price = 0
 
 /obj/item/melee/sword/choppa
@@ -666,7 +668,8 @@
 	attack_verb = list("stabbed", "chopped", "cut", "sliced")
 	force = 35
 	force_wielded = 39
-	armor_penetration = 30
+	armor_penetration = 20
+	str_requirement = 22
 	block_chance = 25
 	sharp = 1
 	edge = 1
@@ -690,7 +693,7 @@
 	str_requirement = 13
 	force_wielded = 32
 	force = 45
-	armor_penetration = 30
+	armor_penetration = 24
 	block_chance = 40
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 8
@@ -721,7 +724,7 @@
 	weapon_speed_delay = 6
 	drop_sound = 'sound/items/knife_drop.ogg'
 	swing_sound = "blunt_swing"
-	armor_penetration = 21
+	armor_penetration = 18
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
 	armor = list(melee = 5, bullet = 5, laser = 5, energy = 10, bomb = 10, bio = 0, rad = 0)
 
@@ -789,7 +792,7 @@
 	attack_verb = list("slashed")
 	force = 25
 	force_wielded = 28
-	armor_penetration = 27
+	armor_penetration = 20
 	block_chance = 35
 	str_requirement = 12 //i don't want to hear it, anyone below 12 str is supposed to be a child or a old man.
 	weapon_speed_delay = 7
@@ -803,7 +806,7 @@
 	force = 30
 	force_wielded = 35
 	edge = 1
-	str_requirement = 18 //you really shouldn't be using it if you are below 18
+	str_requirement = 20 //you really shouldn't be using it if you are below 18
 
 
 /obj/item/material/scythe
@@ -815,7 +818,7 @@
 	force = 15
 	force_wielded = 22
 	block_chance = 25
-	armor_penetration = 20
+	armor_penetration = 16
 	weapon_speed_delay = 7
 	sharp = 1
 	throw_speed = 1
@@ -844,7 +847,7 @@
 	force = 15
 	force_wielded = 22
 	block_chance = 25
-	armor_penetration = 20
+	armor_penetration = 16
 	weapon_speed_delay = 7
 	sharp = 1
 	throw_speed = 1

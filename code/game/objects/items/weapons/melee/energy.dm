@@ -5,7 +5,7 @@
 	icon = 'icons/obj/weapons/melee/energy.dmi'
 	sharp = 0
 	edge = 0
-	armor_penetration = 50
+	armor_penetration = 20
 	atom_flags = ATOM_FLAG_NO_BLOOD
 
 /obj/item/melee/energy/proc/activate(mob/living/user)
@@ -211,7 +211,7 @@
 	desc = "A concentrated beam of energy in the shape of a blade. Very stylish... and lethal."
 	icon_state = "blade"
 	force = 40 //Normal attacks deal very high damage - about the same as wielded fire axe
-	armor_penetration = 50
+	armor_penetration = 21
 	sharp = 1
 	edge = 1
 	anchored = 1    // Never spawned outside of inventory, should be fine.
@@ -289,7 +289,7 @@
 	active_throwforce = 18
 	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
 	force = 34
-	armor_penetration = 60
+	armor_penetration = 25
 	throwforce = 15
 	throw_speed = 1
 	throw_range = 4
@@ -359,7 +359,7 @@
 	throw_speed = 1
 	throw_range = 1
 	weapon_speed_delay = 8
-	armor_penetration = 55
+	armor_penetration = 23
 	edge = 1
 	sharp = 1
 	block_chance = 15
@@ -413,7 +413,7 @@
 	str_requirement = 18 //this shouldn't even be here but just in case of someone abusing bugs to get the apothecary's power armor
 	force = 30 //sharp enough to penetrate ceramite and adamantium alike
 	block_chance = 10 //apothecaries are based
-	armor_penetration = 50 //VERY fucking sharp
+	armor_penetration = 20 //VERY fucking sharp
 	sharp = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
 	drop_sound = 'sound/items/handle/axe_drop.ogg'

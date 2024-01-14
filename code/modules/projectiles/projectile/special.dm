@@ -22,14 +22,14 @@
 	name =".75 bolt" //.75, astartes sized bolters or boltpistols
 	icon_state= "bolter"
 	damage = 75
-	armor_penetration = 40 //this is totally not cause its a .75
+	armor_penetration = 44 //this is totally not cause its a .75
 	check_armour = "bullet"
 
 /obj/item/projectile/bullet/bolterrifle/astartes
 	name =".95 bolt"  // Will make kraken penetrator variants later.
 	icon_state= "bolter"
 	damage = 89
-	armor_penetration = 45 
+	armor_penetration = 48
 	check_armour = "bullet"
 
 /obj/item/projectile/bullet/bpistol 
@@ -37,31 +37,31 @@
 	icon_state= "bolter"
 	damage = 68
 	check_armour = "bullet"
-	armor_penetration = 35
+	armor_penetration = 44
 
 // SPECIAL BOLT ROUNDS
 
 /obj/item/projectile/bullet/bpistol/kp
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 73
-	armor_penetration = 45
+	armor_penetration = 48
 	penetrating = 2
 
 /obj/item/projectile/bullet/bolt/kp
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 83
-	armor_penetration = 60
+	armor_penetration = 48
 	penetrating = 2
 
 /obj/item/projectile/bullet/bpistol/ms // This is .75 Bolt Pistol Round
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 79
-	armor_penetration = 35
+	armor_penetration = 44
 
 /obj/item/projectile/bullet/bolt/ms
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 89
-	armor_penetration = 35
+	armor_penetration = 44
 
 /obj/item/projectile/meteor
 	name = "meteor"
@@ -328,9 +328,9 @@
 	name = "phosphor splash"
 	icon_state = "pulse1"
 	fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
-	damage = 65 //phosphor blasters are incredibly powerful weapons, almost never used
+	damage = 35 //phosphor blasters are incredibly powerful weapons, almost never used
 	check_armour = "energy"
-	armor_penetration = 100 //phosphor blasters are incredibly good at penetrating heavy armor
+	armor_penetration = 40 //phosphor blasters are incredibly good at penetrating heavy armor
 	range =  6 //extremely close ranged, normal vision is 8 but technically 7 if you don't count your own tile.
 	
 
@@ -340,7 +340,7 @@
 		if(!istype(H.wear_suit, /obj/item/clothing/suit/armor/seolsuit))
 			H.adjust_fire_stacks(5) //i know this aint lore accurate, but if you want to buff this, nerf pain.
 			H.IgniteMob()
-		new /obj/flamer_fire(H.loc, 120, 500, "red", 1)
+		new /obj/flamer_fire(H.loc, 12, 10, "red", 1)
 		if(H.isChild())
 			var/mob/living/carbon/human/F = firer
 			F.unlock_achievement(new/datum/achievement/child_fire())
@@ -350,7 +350,7 @@
 	name = "Gauss "
 	icon_state = "emitter"
 	fire_sound = 'sound/effects/meteorimpact.ogg' //Bass-y sound of firing
-	damage = 250
+	damage = 100
 	damage_type = BURN
 	agony = 200
 	check_armour = "energy"
@@ -359,7 +359,7 @@
 	dispersion = 0.0
 	animate_movement = 1
 	penetrating = 10
-	armor_penetration = 100
+	armor_penetration = 44
 
 /obj/item/projectile/energy/meltagun
 	name = "Meltagun beam"
@@ -371,7 +371,7 @@
 	range =  5
 	incinerate = 1
 	penetrating = 10
-	armor_penetration = 120
+	armor_penetration = 47
 	var/flash_range = 1
 	var/brightness = 10
 	var/light_colour = "#ffffff"

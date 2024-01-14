@@ -1207,7 +1207,7 @@ obj/item/clothing/suit/armor
 	item_state = "sister"
 	armor = list(melee = 21, bullet = 42, laser = 42, energy = 30, bomb = 60, bio = 60, rad = 90) //its essentially light powerarmor, a bit weaker than assfartez.
 	sales_price = 30
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
@@ -1239,7 +1239,7 @@ obj/item/clothing/suit/armor
 	item_state = "mlsister"
 	armor = list(melee = 21, bullet = 42, laser = 42, energy = 30, bomb = 60, bio = 60, rad = 90) //its essentially light powerarmor, a bit weaker than assfartez.
 	sales_price = 30
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
@@ -1253,7 +1253,7 @@ obj/item/clothing/suit/armor
 	item_state = "brsister"
 	armor = list(melee = 21, bullet = 42, laser = 42, energy = 30, bomb = 60, bio = 60, rad = 90) //its essentially light powerarmor, a bit weaker than assfartez.
 	sales_price = 30
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
