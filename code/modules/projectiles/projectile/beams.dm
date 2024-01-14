@@ -40,7 +40,7 @@
 	icon_state = "heavylaser"
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
 	damage = 60
-	armor_penetration = 30
+	armor_penetration = 40
 
 	muzzle_type = /obj/effect/projectile/laser/heavy/muzzle
 	tracer_type = /obj/effect/projectile/laser/heavy/tracer
@@ -51,7 +51,7 @@
 	icon_state = "heavylaser"
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
 	damage = 200
-	armor_penetration = 30
+	armor_penetration = 40
 
 	muzzle_type = /obj/effect/projectile/laser/heavy/muzzle
 	tracer_type = /obj/effect/projectile/laser/heavy/tracer
@@ -137,7 +137,7 @@
 	icon_state = "xray"
 	fire_sound = 'sound/weapons/marauder.ogg'
 	damage = 50
-	armor_penetration = 10
+	armor_penetration = 40
 	stun = 3
 	weaken = 3
 	stutter = 3

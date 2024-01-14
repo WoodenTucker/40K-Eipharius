@@ -329,6 +329,7 @@
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/ten = 1,
 	/obj/item/stack/thrones3/twenty = 1,
+	/obj/item/book/manual/inq = 1,
 	/obj/item/card/id/syndicate = 1
 	)
 
@@ -357,6 +358,7 @@
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/ten = 1,
+	/obj/item/book/manual/inq = 1,
 	/obj/item/card/id/syndicate = 1
 	)
 

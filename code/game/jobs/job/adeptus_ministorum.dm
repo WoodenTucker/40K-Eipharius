@@ -676,7 +676,8 @@
 		/obj/item/gun/projectile/bolter_pistol/sisterofbattle = 1,
 		/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 		/obj/item/clothing/accessory/holster/waist = 1,
-		/obj/item/device/flashlight/lantern = 1
+		/obj/item/device/flashlight/lantern = 1,
+		/obj/item/book/manual/ecc = 1
 		)
 
 /decl/hierarchy/outfit/job/sisterofbattle
@@ -702,6 +703,7 @@
 	/obj/item/reagent_containers/food/snacks/warfare = 1,
 	/obj/item/clothing/mask/gas/explorer = 1,
 	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/book/manual/ecc = 1,
 	/obj/item/stack/thrones2/ten = 1
 	)
 

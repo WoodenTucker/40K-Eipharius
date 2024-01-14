@@ -67,7 +67,7 @@
 	block_chance = 40
 	force = 31
 	force_wielded = 35
-	armor_penetration = 15
+	armor_penetration = 19
 	weapon_speed_delay = 7
 	sharp = 1
 	w_class = ITEM_SIZE_NORMAL

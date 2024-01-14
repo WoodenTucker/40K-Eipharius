@@ -157,7 +157,7 @@
 	block_chance = 20 //20 block chance, same block chance, force and pen as brutal chainsword but harder to get
 	force = 50
 	force_wielded = 60
-	armor_penetration = 55 //high penetration due to it being a power axe, weaker than power sword due to moderate block chance.
+	armor_penetration = 21 //high penetration due to it being a power axe, weaker than power sword due to moderate block chance.
 	sharp = TRUE
 	edge = TRUE
 //	obj_flags = OBJ_FLAG_CONDUCTIBLE //me on my way to get shocked after flinging a power axe at a power wire cause it somehow is conductible
@@ -266,9 +266,9 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	wielded_icon = "pcsword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 20
-	force = 50
+	force = 42
 	force_wielded = 60
-	armor_penetration = 50
+	armor_penetration = 21
 	block_chance = 45 //apothecary nartheciums can be used for blocking better, due to being essentially a extension of the apothecaries body and being insanely armored.
 
 /obj/item/melee/chain/pcsword/narthecium/apot/dropped() //since nodrop is fucked this will deal with it for now.

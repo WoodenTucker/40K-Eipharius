@@ -13,7 +13,7 @@
 	force = 30
 	force_wielded = 40
 	block_chance = 35
-	armor_penetration = 25
+	armor_penetration = 16
 	// force_divisor = 0.8 // Do not turn this back on.
 	// thrown_force_divisor = 0.2 //
 	sharp = 1 //sharp or blunt, blunt causes broken bones, sharp causes organ damage and extra bleeding.
@@ -148,7 +148,7 @@
 	force = 22
 	force_wielded = 26
 	block_chance = 25
-	armor_penetration = 20
+	armor_penetration = 16
 	weapon_speed_delay = 7
 	sharp = 1
 	throw_speed = 1
@@ -172,5 +172,5 @@
 	slot_flags = SLOT_BELT
 	sales_price = 0
 	weapon_speed_delay = 7
-	armor_penetration = 31
+	armor_penetration = 19
 

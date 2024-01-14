@@ -56,6 +56,7 @@
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
 	/obj/item/clothing/rosarius = 1,
+	/obj/item/book/manual/ecc = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/ammo_magazine/c50/ms = 2,
 	/obj/item/gun/projectile/revolver/mateba = 1
