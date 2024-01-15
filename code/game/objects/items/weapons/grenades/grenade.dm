@@ -55,12 +55,6 @@
 
 /obj/item/grenade/attack_self(mob/user as mob)
 	if(!active)
-		if(ishuman(user))
-			var/mob/living/carbon/human/H = user
-			if(H.isChild())
-				if(!istype(src, /obj/item/grenade/smokebomb))
-					to_chat(H, "<span class='warning'>I'm just not able to pull the pin on \the [name]!</span>")
-					return
 		if(clown_check(user))
 			to_chat(user, "<span class='warning'>You prime \the [name]! [det_time/10] seconds!</span>")
 

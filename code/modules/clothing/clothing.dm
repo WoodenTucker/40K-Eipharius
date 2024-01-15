@@ -79,14 +79,6 @@
 		return 0
 
 	var/wearable = TRUE
-	if(ishuman(M))//hacky kid shit
-		var/mob/living/carbon/human/H = M
-		if(H.isChild())
-			if(!child_exclusive || !can_be_worn_by_child)
-				wearable = FALSE
-		else
-			if(child_exclusive)
-				wearable = FALSE
 
 	if(species_restricted && istype(M,/mob/living/carbon/human))
 		var/exclusive = null

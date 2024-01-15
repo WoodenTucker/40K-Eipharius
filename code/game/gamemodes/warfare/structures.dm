@@ -414,9 +414,6 @@
 
 /obj/structure/landmine/Crossed(var/mob/living/M as mob)
 	if(ishuman(M))
-		var/mob/living/carbon/human/H = M
-		if(H.isChild())//Kids don't set off landmines.
-			return
 		if(!M.throwing && !armed && can_be_armed)
 			to_chat(M, "<span class='danger'>You hear a sickening click!</span>")
 			playsound(src, 'sound/effects/mine_arm.ogg', 100, FALSE)

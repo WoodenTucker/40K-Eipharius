@@ -16,6 +16,15 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/villageinside)
+"abu" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/item/fluff_items/artyshell{
+	name = "Archmagos Favourite Toy"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/research/robotics)
 "abw" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 1
@@ -6251,10 +6260,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"gWb" = (
-/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult4,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/farm)
 "gWn" = (
 /obj/structure/table/rack/dark,
 /obj/item/device/cassette/inqlog1{
@@ -7335,6 +7340,11 @@
 "ibx" = (
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"icy" = (
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult2,
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult2,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/farm)
 "icN" = (
 /obj/machinery/door/airlock/virology{
 	name = "Mines";
@@ -15330,15 +15340,6 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
-"qpo" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/item/fluff_items/artyshell{
-	name = "Archmagos Favourite Toy"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/research/robotics)
 "qpK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/turf/lfloorscorched1,
@@ -16038,11 +16039,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
-"qZD" = (
-/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult2,
-/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult2,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/farm)
 "qZJ" = (
 /obj/structure/closet/crate,
 /obj/item/reagent_containers/hypospray/autoinjector/tau,
@@ -19143,11 +19139,9 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "ueA" = (
-/obj/effect/landmark/start/ministorum/novice{
-	name = "Novitiate"
-	},
-/turf/unsimulated/miningtime,
-/area/cadiaoutpost/new_hive/caves)
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult4,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/farm)
 "ueY" = (
 /obj/structure/grille/metal_bars/cell,
 /turf/simulated/floor/factory_floor,
@@ -36777,7 +36771,7 @@ tOB
 tOB
 tOB
 tOB
-ueA
+tOB
 tOB
 tOB
 tOB
@@ -58890,7 +58884,7 @@ eYA
 mcb
 oYr
 eKm
-qpo
+abu
 vAj
 hIg
 xHL
@@ -84763,7 +84757,7 @@ uru
 hSx
 kcg
 yer
-gWb
+ueA
 wpz
 uru
 jhy
@@ -85015,7 +85009,7 @@ uru
 efD
 ezq
 roL
-qZD
+icy
 uru
 uru
 qEW
