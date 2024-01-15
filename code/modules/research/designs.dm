@@ -2146,7 +2146,7 @@ CIRCUITS BELOW
 
 /datum/design/item/heavystubber/cognis
 	name = "Cognis Pattern Heavy Stubber"
-	id = "messinaheavy"
+	id = "cognisheavy"
 	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 5, TECH_COMBAT = 2)
 	materials = list(DEFAULT_WALL_MATERIAL = 4000, "diamond" = 1700)
 	build_path = /obj/item/gun/projectile/automatic/heavystubber/cognis
@@ -2204,7 +2204,7 @@ CIRCUITS BELOW
 	name = "Drusian Pattern Bolter"
 	id = "bolterdrusian"
 	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 6)
-	materials = list("diamond" = 19000, "phoron" = 200)
+	materials = list("diamond" = 17000, "phoron" = 200)
 	build_path = /obj/item/gun/projectile/lockebolter/drusian
 	sort_string = "ZACT"
 

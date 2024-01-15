@@ -248,6 +248,67 @@
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are the pinnacle of knowledge and piety within The Monastery -- a former sister of battle, organize your sisters and ensure they are doing their duty to both The Deacon and the Codex Sororitas. Ensure your pupils within the Schola are carefully selected for their roles in serving either the military or medical wings of the Sororitas.</font></b></span>")
 
+/datum/job/canoness
+	title = "Canoness"
+	department = "Ministorum"
+	department_flag = MED
+	total_positions = 0
+	spawn_positions = 0
+	open_when_dead = 0
+	social_class = SOCIAL_CLASS_HIGH
+	latejoin_at_spawnpoints = TRUE
+	supervisors = "The Deacon and Inquisition"
+	selection_color = "#FCFBFA"
+	economic_modifier = 10
+	announced = FALSE
+	outfit_type = /decl/hierarchy/outfit/job/canoness
+	access = list(213 , 211, 213, 333, access_medical, access_heads,
+			access_abbess, access_RC_announce,
+			access_keycard_auth, access_guard_common, access_village, access_advchapel)
+	minimal_player_age = 50
+	auto_rifle_skill = 10
+	semi_rifle_skill = 10
+	sniper_skill = 10
+	shotgun_skill = 10
+	lmg_skill = 10
+	smg_skill = 10
+	cultist_chance = 2
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Sister [current_name]")
+		H.set_trait(new/datum/trait/death_tolerant)
+		H.set_quirk(new/datum/quirk/dead_inside) // the only thing the sisters of the orders millitant feel is the god emperor's light.
+		H.add_stats(rand(15,19), rand(17,20), rand(15,18), rand(15,17)) //Slighty better than given Abbess/Hospitaller stats. Namely more ED to take more punishment.
+		H.add_skills(rand(6,8),rand(6,9),rand(10,11),rand(3,5),rand(10,11)) //melee, ranged, med, eng, surgery
+		H.get_idcard()?.access = list(213 , 211, 213, 333, access_heads, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_advchapel, access_medical, access_village)
+		H.get_equipped_item(slot_s_store)
+		H.warfare_faction = IMPERIUM
+		H.gender = FEMALE
+		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+		H.f_style = "shaved"
+		H.verbs += list(
+		/mob/living/carbon/human/proc/sobemperorgivesstrenght,
+		/mob/living/carbon/human/proc/sobnotforsakeme,
+		/mob/living/carbon/human/proc/sobpraise,
+		/mob/living/carbon/human/proc/sobfearthesister,
+		/mob/living/carbon/human/proc/sobfeelwrath,
+		/mob/living/carbon/human/proc/sobfoesapproach,
+		/mob/living/carbon/human/proc/sobnomercy,
+		/mob/living/carbon/human/proc/sobretreat,
+		/mob/living/carbon/human/proc/sobtakingfire,
+		/mob/living/carbon/human/proc/sobweservants,
+		/mob/living/carbon/human/proc/sobtheemperor)
+		H.verbs -= list(/mob/living/carbon/human/verb/emoteemperorprotects)
+		H.vice = null
+		H.verbs += list(
+			/mob/living/carbon/human/proc/faithleaderclass)
+		to_chat(H, "<span class='notice'><b><font size=3>You are the pinnacle of knowledge and piety within The Monastery -- a former sister of battle, organize your sisters and ensure they are doing their duty to both The Deacon and the Codex Sororitas. Ensure your pupils within the Schola are carefully selected for their roles in serving either the military or medical wings of the Sororitas.</font></b></span>")
+
 
 /datum/job/sistersuperior
 	title = "Sister Superior"
@@ -258,7 +319,7 @@
 	open_when_dead = 0
 	social_class = SOCIAL_CLASS_HIGH
 	latejoin_at_spawnpoints = TRUE
-	supervisors = "The Abbess or Deacon"
+	supervisors = "The Canoness or Deacon"
 	selection_color = "#FCFBFA"
 	announced = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sisterofbattle
@@ -592,6 +653,32 @@
 					deity.add_cultist(U)
 
 // sob outfits
+
+/decl/hierarchy/outfit/job/canoness
+	name = OUTFIT_JOB_NAME("Canoness")
+	l_ear  = /obj/item/device/radio/headset/heads/cmo
+	uniform = /obj/item/clothing/under/rank/medical
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	suit = /obj/item/clothing/suit/sisterofbattle/mlsister
+	back = /obj/item/storage/backpack/satchel/warfare/sisterofbattle/mlsister
+	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle/mlsister
+	l_hand = /obj/item/storage/firstaid/adv
+	r_hand = /obj/item/melee/energy/powersword
+	glasses = /obj/item/clothing/glasses/hud/health
+	belt = /obj/item/storage/belt/medical/apothecary
+	id_type = /obj/item/card/id/dog_tag
+	head = /obj/item/clothing/head/hospitallerhelm
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/storage/box/coin
+	backpack_contents = list(
+		/obj/item/reagent_containers/food/snacks/warfare = 1,
+		/obj/item/stack/thrones2/ten = 1,
+		/obj/item/gun/projectile/bolter_pistol/sisterofbattle = 1,
+		/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+		/obj/item/clothing/accessory/holster/waist = 1,
+		/obj/item/device/flashlight/lantern = 1
+		)
+
 /decl/hierarchy/outfit/job/sisterofbattle
 	name = OUTFIT_JOB_NAME("Sister Superior")
 	head = /obj/item/clothing/head/helmet/sisterofbattle
