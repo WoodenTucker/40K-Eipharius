@@ -1,4 +1,5 @@
 //ALL SHIT FOR KIDS IN ONE FILE BECUASE I'M TIRED OF SEARCHING ALL OVER THE PLACE FOR CHILDREN SHIT
+/*
 /datum/species/human/child //Oh lord here we go.
 	name = "Child"
 	name_plural = "Children"
@@ -61,3 +62,4 @@
 /mob/living/carbon/human/child/New(var/new_loc)
 	..(new_loc, "Child")
 
+*/
