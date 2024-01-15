@@ -557,6 +557,42 @@
 	icon = 'icons/turf/flooring/plating.dmi'
 	icon_state = "carpet0"
 
+/turf/simulated/floor/fancyfloor/oldcobble
+	name = "old cobblestone"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "stonefloor4"
+
+/turf/simulated/floor/fancyfloor/ancient_cobble_old
+	name = "dark cobble floor"
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "stone_old"
+
+//broken varients of wood turf
+
+/turf/simulated/floor/fancyfloor/brokenfloor0
+	icon = 'icons/turf/flooring/wood.dmi'
+	icon_state = "wood_broken0"
+
+/turf/simulated/floor/fancyfloor/brokenfloor1
+	icon = 'icons/turf/flooring/wood.dmi'
+	icon_state = "wood_broken1"
+
+/turf/simulated/floor/fancyfloor/brokenfloor2
+	icon = 'icons/turf/flooring/wood.dmi'
+	icon_state = "wood_broken2"
+
+/turf/simulated/floor/fancyfloor/brokenfloor3
+	icon = 'icons/turf/flooring/wood.dmi'
+	icon_state = "wood_broken3"
+
+/turf/simulated/floor/fancyfloor/brokenfloor4
+	icon = 'icons/turf/flooring/wood.dmi'
+	icon_state = "wood_broken4"
+
+/turf/simulated/floor/fancyfloor/brokenfloor5
+	icon = 'icons/turf/flooring/wood.dmi'
+	icon_state = "wood_broken5"
+
 // Stone Flooring here
 
 /turf/simulated/floor/stone/crafted_floor
@@ -646,3 +682,7 @@
 /obj/effect/floor_decal/newcorner/entrace
 	icon = 'icons/map_project/gate.dmi'
 	icon_state = "entrance"
+
+/obj/effect/floor_decal/newcorner/brokenwood
+	icon = 'icons/turf/flooring/wood.dmi'
+	icon_state = "wood_broken0"
