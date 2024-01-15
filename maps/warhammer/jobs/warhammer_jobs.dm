@@ -31,7 +31,6 @@
 	/datum/job/marshal,
 	/datum/job/underboss,
 	/*/datum/job/hydro,*/
-	/datum/job/undertaker,
 	/datum/job/penitent,
 	)
 

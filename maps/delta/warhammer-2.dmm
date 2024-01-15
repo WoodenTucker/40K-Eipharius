@@ -3975,6 +3975,7 @@
 /obj/structure/sign/chaos{
 	pixel_x = 32
 	},
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult3,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/farm)
 "ezO" = (
@@ -5756,7 +5757,7 @@
 /obj/structure/sign/chaos{
 	pixel_x = -32
 	},
-/obj/item/clothing/head/chaossack,
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult2,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/farm)
 "gue" = (
@@ -6250,6 +6251,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"gWb" = (
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult4,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/farm)
 "gWn" = (
 /obj/structure/table/rack/dark,
 /obj/item/device/cassette/inqlog1{
@@ -7195,14 +7200,6 @@
 	armor = list("melee"=35,"bullet"=35,"laser"=35,"energy"=5,"bomb"=0,"bio"=100,"rad"=100)
 	},
 /obj/item/melee/baton,
-/obj/item/clothing/head/helmet/culthelm/alt2,
-/obj/item/clothing/head/helmet/culthelm/alt,
-/obj/item/clothing/head/heretichood/alt2{
-	name = "disgusting hood"
-	},
-/obj/item/clothing/head/heretichood/alt2{
-	name = "disgusting hood"
-	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/farm)
 "hSE" = (
@@ -15333,6 +15330,15 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"qpo" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/item/fluff_items/artyshell{
+	name = "Archmagos Favourite Toy"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/research/robotics)
 "qpK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/turf/lfloorscorched1,
@@ -15508,6 +15514,10 @@
 /area/cadiaoutpost/oa/magistratumpost)
 "qAS" = (
 /obj/effect/decal/cleanable/cobweb,
+/obj/item/clothing/suit/armor/heretcoat/tzeecult,
+/obj/item/clothing/suit/armor/heretcoat/tzeecult,
+/obj/item/clothing/suit/armor/heretcoat/tzeecult,
+/obj/item/clothing/suit/armor/heretcoat/tzeecult,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/farm)
 "qAZ" = (
@@ -16028,6 +16038,11 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
+"qZD" = (
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult2,
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult2,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/farm)
 "qZJ" = (
 /obj/structure/closet/crate,
 /obj/item/reagent_containers/hypospray/autoinjector/tau,
@@ -22592,21 +22607,10 @@
 	},
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "xYM" = (
-/obj/item/clothing/suit/cultrobes/alt,
 /obj/item/melee/baton,
 /obj/item/device/radio/headset/red_team/sl_alpha,
 /obj/item/device/radio/headset/red_team/sl_alpha,
 /obj/item/device/radio/headset/red_team/sl_alpha,
-/obj/item/clothing/suit/armor/guardsman/bloodpact{
-	name = "strange armor";
-	armor = list("melee"=38,"bullet"=38,"laser"=38,"energy"=20,"bomb"=30,"bio"=10,"rad"=20);
-	sales_price = 0
-	},
-/obj/item/clothing/suit/armor/guardsman/bloodpact{
-	name = "strange armor";
-	armor = list("melee"=38,"bullet"=38,"laser"=38,"energy"=20,"bomb"=30,"bio"=10,"rad"=20);
-	sales_price = 0
-	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/farm)
 "xZe" = (
@@ -58886,7 +58890,7 @@ eYA
 mcb
 oYr
 eKm
-oYr
+qpo
 vAj
 hIg
 xHL
@@ -84759,7 +84763,7 @@ uru
 hSx
 kcg
 yer
-qrf
+gWb
 wpz
 uru
 jhy
@@ -85011,7 +85015,7 @@ uru
 efD
 ezq
 roL
-qrf
+qZD
 uru
 uru
 qEW

@@ -9962,16 +9962,6 @@
 "jrI" = (
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security/barracks)
-"jsB" = (
-/obj/item/flame/candle/dinner{
-	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
-	name = "krungsmacka's favorite 'toy'";
-	pixel_x = 5;
-	pixel_y = 5;
-	color = "black"
-	},
-/turf/simulated/floor/fancyfloor/carpet/blue/middle,
-/area/cadiaoutpost/oa/bridge/hallway)
 "jsG" = (
 /obj/structure/railing{
 	dir = 1
@@ -56327,7 +56317,7 @@ jya
 drW
 dTf
 dTf
-jsB
+dTf
 dTf
 mgl
 iYV
