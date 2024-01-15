@@ -139,9 +139,6 @@
 			H.adjust_fire_stacks(10) //note left by walker, any more than 10 is impossibly OP
 			H.IgniteMob()
 		new /obj/flamer_fire(H.loc, 12, 10, "red", 1)
-		if(H.isChild())
-			var/mob/living/carbon/human/F = firer
-			F.unlock_achievement(new/datum/achievement/child_fire())
 
 
 // FLESH MOUTH
@@ -341,9 +338,6 @@
 			H.adjust_fire_stacks(5) //i know this aint lore accurate, but if you want to buff this, nerf pain.
 			H.IgniteMob()
 		new /obj/flamer_fire(H.loc, 12, 10, "red", 1)
-		if(H.isChild())
-			var/mob/living/carbon/human/F = firer
-			F.unlock_achievement(new/datum/achievement/child_fire())
 
 
 /obj/item/projectile/gauss

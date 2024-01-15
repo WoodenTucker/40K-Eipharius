@@ -568,9 +568,6 @@
 			H.adjust_fire_stacks(20)
 			H.IgniteMob()
 		new /obj/flamer_fire(H.loc, 12, 10, "red", 1)
-		if(H.isChild())
-			var/mob/living/carbon/human/F = firer
-			F.unlock_achievement(new/datum/achievement/child_fire())
 
 /obj/item/projectile/bullet/rifle/galvanic/emp
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
@@ -777,7 +774,4 @@
 			H.adjust_fire_stacks(60)
 			H.IgniteMob()
 		new /obj/flamer_fire(H.loc, 15, 14, "red", 1)
-		if(H.isChild())
-			var/mob/living/carbon/human/F = firer
-			F.unlock_achievement(new/datum/achievement/child_fire())
 
