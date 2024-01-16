@@ -415,6 +415,15 @@
   cold_protection = FEET|LEGS
   min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/shoes/eldar/ranger
+  name = "Eldar Ranger Boots"
+  desc = "An Eldar Ranger's set of boots, these appear to be made up of layers of cameoline treated materials, with a termoplas underlayer."
+  icon_state = "eldboots"
+  item_state = "eldboots"
+  armor = list(melee = 35, bullet = 30, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
+  cold_protection = FEET|LEGS
+  min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+
 //Dark Eldar Stuff
 
 /obj/item/clothing/shoes/darkeldar
