@@ -15,9 +15,13 @@ this shit is just the barebones of the race im going to add the verbs later
     additional_langs = LANGUAGE_LOW_GOTHIC
     grab_type = GRAB_TAKEDOWN
     total_health = 250
-    slowdown = -0.25
+    slowdown = -0.50
     gluttonous = GLUT_TINY
     sexybits_location = BP_GROIN
+	inherent_verbs = list(
+	/mob/living/carbon/human/eldar/proc/giveeldarstats,
+		)
+
 /datum/species/eldar/handle_post_spawn(var/mob/living/carbon/human/H)
 	H.age = rand(min_age,max_age)//Random age for kiddos.
 	if(H.f_style)//eldar don't get beards.
