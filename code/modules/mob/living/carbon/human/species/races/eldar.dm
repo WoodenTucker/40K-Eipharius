@@ -74,32 +74,34 @@ this shit is just the barebones of the race im going to add the verbs later
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/heads/rt, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/half, slot_wear_mask)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/skitshoes, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/projectile, slot_s_store)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/eldar, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/eldar, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/eldar/scatapult, slot_s_store)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/galvanic/rifle, slot_s_store)
-			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/catapult_magazine, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/catapult_magazine, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/catapult_magazine, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/eldar/spistol, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/spistol_magazine, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/clothing/accessory/holster, slot_in_backpack)
+			visible_message("[name] meditates for a moment.")
 			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
-			src.add_stats(rand(17,20),rand(15,17),rand(18,19),14) //gives stats str, dext, end, int
-			src.add_skills(rand(6,9),rand(11,12),rand(5,7),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
+			src.add_stats(rand(18,19),rand(20,25),rand(18,19),18) //gives stats str, dext, end, int
+			src.add_skills(rand(6,9),rand(9,11),rand(5,7),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
 			src.set_trait(new/datum/trait/death_tolerant())
 			src.update_eyes() //should fix grey vision
 			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 			src.bladder = -INFINITY
-			src.bowels = -INFINITY //he's too heavily modified to require things like a toilet
+			src.bowels = -INFINITY 
 			src.thirst = INFINITY
-			src.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
-			src.verbs -= /mob/living/carbon/human/skitarii/proc/giveskitstats //removes verb at the end so they can't spam it for whatever reason
+			src.nutrition = INFINITY
+			src.verbs -= /mob/living/carbon/human/eldar/proc/giveeldarstats //removes verb at the end so they can't spam it for whatever reason
 			client?.color = null
 
-			var/obj/item/card/id/dog_tag/skitarii/W = new
+			var/obj/item/card/id/dog_tag/W = new
 			W.icon_state = "tagred"
-			W.assignment = "Skitarii Ranger"
+			W.assignment = "Eldar Guardian"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
