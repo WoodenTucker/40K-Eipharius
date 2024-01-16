@@ -1324,6 +1324,28 @@ obj/item/clothing/suit/armor
   min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
   body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 
+/obj/item/clothing/suit/armor/eldar/ranger/verb/toggle_eldar_camo()
+	set name = "Toggle Eldar Camo"
+	set category = "Eldar"
+	var/stealth_alpha = 15
+	if(alpha == stealth_alpha)
+		to_chat(usr,"You disable your armour's stealth features.")
+		animate(src, alpha = 255, time = 1.5 SECONDS)
+	else
+		to_chat(usr,"You enable your armour's stealth features.")
+		animate(src, alpha = stealth_alpha, time = 1.5 SECONDS)
+
+/mob/living/carbon/human/proc/active_camo()
+	set category = "Abilities"
+	set name = "Active Camo"
+	set desc = "Camouflage yourself"
+	var/stealth_alpha = 15
+
+	if(alpha == stealth_alpha)
+		animate(src, alpha = 255, time = 1.5 SECONDS)
+	else
+		animate(src, alpha = stealth_alpha, time = 1.5 SECONDS)
+
 // Dark Eldar
 /obj/item/clothing/suit/armor/deldar
   name = "Ghost Plate Armor"
