@@ -184,6 +184,39 @@
 	plane = ABOVE_HUMAN_PLANE
 	bound_width = 64
 
+/obj/structure/statue/aphroditestatue1
+	name = "sultry statue"
+	desc = "A statue of a half-nude woman."
+	icon = 'icons/obj/96x96.dmi'
+	icon_state = "aphrodite"
+	anchored = 1
+	density = 1
+	layer = 4
+	plane = ABOVE_HUMAN_PLANE
+	bound_width = 6
+
+/obj/structure/statue/aphroditestatue2
+	name = "sultry statue"
+	desc = "A statue of a half-nude woman."
+	icon = 'icons/obj/96x96.dmi'
+	icon_state = "aphrodite2"
+	anchored = 1
+	density = 1
+	layer = 4
+	plane = ABOVE_HUMAN_PLANE
+	bound_width = 6
+
+/obj/structure/statue/aphroditestatue3
+	name = "sultry statue"
+	desc = "A statue of a half-nude woman."
+	icon = 'icons/obj/96x96.dmi'
+	icon_state = "aphrodite3"
+	anchored = 1
+	density = 1
+	layer = 4
+	plane = ABOVE_HUMAN_PLANE
+	bound_width = 6
+
 
 
 /obj/structure/statue/guardshrine/attackby(obj/item/W as obj, mob/user as mob)
@@ -479,3 +512,10 @@
 	icon = 'icons/cadia-sprites/migrated2/things.dmi'
 	icon_state = "kitten"
 	density = 0
+
+
+/obj/structure/hivedecor/scrapper
+	name = "recycler"
+	desc = "Some kind of recycling maching"
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "recycler"

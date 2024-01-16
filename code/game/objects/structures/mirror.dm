@@ -121,3 +121,13 @@
 		qdel(AC)
 	ui_users.Cut()
 	..()
+
+	//
+
+/obj/structure/mirror/fancy
+	name = "fancy mirror"
+	desc = "A mirror."
+	icon = 'icons/obj/watercloset.dmi'
+	icon_state = "fancymirror"
+	density = 0
+	anchored = 1
