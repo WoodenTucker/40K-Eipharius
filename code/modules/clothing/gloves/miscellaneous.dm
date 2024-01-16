@@ -64,7 +64,7 @@
 	name = "\improper SWAT Gloves"
 	item_state = "swat_gl"
 	force = 5
-	armor = list(melee = 80, bullet = 60, laser = 60,energy = 25, bomb = 50, bio = 10, rad = 0)
+	armor = list(melee = 10, bullet = 10, laser = 10,energy = 25, bomb = 50, bio = 10, rad = 0)
 
 /obj/item/clothing/gloves/thick/combat //Combined effect of SWAT gloves and insulated gloves
 	desc = "These tactical gloves are somewhat fire and impact resistant."
@@ -74,7 +74,7 @@
 	siemens_coefficient = 0
 	permeability_coefficient = 0.05
 	force = 5
-	armor = list(melee = 80, bullet = 60, laser = 60,energy = 25, bomb = 50, bio = 10, rad = 0)
+	armor = list(melee = 10, bullet = 10, laser = 10,energy = 25, bomb = 50, bio = 10, rad = 0)
 	cold_protection = HANDS
 	min_cold_protection_temperature = GLOVES_MIN_COLD_PROTECTION_TEMPERATURE
 	heat_protection = HANDS
@@ -96,7 +96,7 @@
 	canremove = 0
 	siemens_coefficient = 0
 	permeability_coefficient = 0.05
-	armor = list(melee = 40, bullet = 20, laser = 20, energy = 30, bomb = 20, bio = 0, rad = 60)
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 30, bomb = 20, bio = 0, rad = 60)
 	icon_state = "techpriest"
 	item_state = "techpriest"
 	unacidable = 1
@@ -142,7 +142,7 @@
 	force = 5
 	siemens_coefficient = 0.50
 	permeability_coefficient = 0.05
-	armor = list(melee = 30, bullet = 10, laser = 10, energy = 15, bomb = 20, bio = 0, rad = 0)
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 15, bomb = 20, bio = 0, rad = 0)
 
 /obj/item/clothing/gloves/guards
 	desc = "A pair of synthetic gloves and arm pads reinforced with armor plating."
@@ -219,7 +219,7 @@
 	desc = "Gauntlets of the Adepta Sororitas's Order Of Sacred Rose Battle Sisters, Part of their Power Armour System."
 	icon_state = "sister"
 	item_state = "sister"
-	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 40, bomb = 40, bio = 0, rad = 0)
 	canremove = 1
 	species_restricted = list(SPECIES_HUMAN)
 	cold_protection = HANDS
@@ -232,7 +232,7 @@
 	desc = "Gauntlets of a sister belonging to The Order of Our Martyred Lady. Part of their Power Armour System."
 	icon_state = "mlsister"
 	item_state = "mlsister"
-	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 40, bomb = 40, bio = 0, rad = 0)
 	canremove = 1
 	species_restricted = list(SPECIES_HUMAN)
 	cold_protection = HANDS
@@ -245,7 +245,7 @@
 	desc = "Gauntlets of a sister belonging to The Order of the Sacred Rose. Part of their power armor system."
 	icon_state = "brsister"
 	item_state = "brsister"
-	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 40, bomb = 40, bio = 0, rad = 0)
 	canremove = 1
 	species_restricted = list(SPECIES_HUMAN)
 	cold_protection = HANDS
@@ -258,4 +258,4 @@
 	name = "Tempestus Gauntlets"
 	icon_state = "ScionGloves"
 	item_state = "ScionGloves"
-	armor = list(melee = 60, bullet = 60, laser = 60, energy = 60, bomb = 60, bio = 100, rad = 0)
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 60, bomb = 60, bio = 100, rad = 0)

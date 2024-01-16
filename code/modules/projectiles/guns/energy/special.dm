@@ -167,3 +167,86 @@ obj/item/gun/energy/staff/focus
 	cell_type = /obj/item/cell/plasma
 	ammoType = /obj/item/cell/plasma
 	projectile_type = /obj/item/projectile/energy/meltagun
+
+//TYRANID WEAPONS
+//These are largely coded as energy guns, because they'll recharge on their own over time.
+
+/obj/item/gun/energy/tyranid
+	name = "Tyranid Projectile Biomorph"
+	desc = "A basic template Biomorph. You shouldn't be seeing this."
+	icon_state = "xenoheavyr" //Placeholder
+	item_state = "xenoheavyr" //Placeholder
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_HUGE
+	force = 15
+	one_hand_penalty = 1.5
+	fire_delay = 3.1
+	accuracy = 1
+	self_recharge = 1
+	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/bullet/tyranid
+	charge_cost = 500
+	cell_type = /obj/item/cell/tyranid
+	ammoType = /obj/item/cell/tyranid
+	wielded_item_state = "lascar-wielded"
+	sales_price = null
+	charge_meter = FALSE
+
+	firemodes = list(
+		list(mode_name="semi-automatic",       burst=1, fire_delay=3.1, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=0),
+		list(mode_name="automatic",       burst=1, fire_delay=0.8, burst_accuracy=null, dispersion=null, automatic = 1, charge_cost=0),
+		)
+
+/obj/item/gun/energy/tyranid/fleshborer
+	name = "Fleshborer Rifle"
+	desc = "An organic weapon that fires Fleshborers, small creatures that dig into your enemies flesh."
+	icon_state = "xenoheavyr" //Placeholder
+	item_state = "xenoheavyr" //Placeholder
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_HUGE
+	force = 15
+	one_hand_penalty = 0
+	fire_delay = 2
+	accuracy = 0
+	self_recharge = 1
+	projectile_type = /obj/item/projectile/bullet/tyranid/fleshborer
+	charge_cost = 100
+
+/obj/item/gun/energy/tyranid/spike
+	name = "Spike Rifle"
+	desc = "An organic weapon that fires chitinous spines, which may be coated with various toxins."
+	icon_state = "xenoheavyr" //Placeholder
+	item_state = "xenoheavyr" //Placeholder
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_HUGE
+	force = 15
+	one_hand_penalty = 2
+	fire_delay = 3
+	accuracy = 2
+	self_recharge = 1
+	projectile_type = /obj/item/projectile/bullet/tyranid/spike
+	charge_cost = 150
+
+	firemodes = list(
+		list(mode_name="Standard Spikes", fire_delay=2, projectile_type=/obj/item/projectile/bullet/tyranid/spike, charge_cost=150),
+		list(mode_name="Hallucination Spikes", fire_delay = 2, projectile_type=/obj/item/projectile/bullet/tyranid/spike/hall, charge_cost=200),
+		list(mode_name="Sleep Spikes", fire_delay = 2, projectile_type=/obj/item/projectile/bullet/tyranid/spike/sleepy, charge_cost=200),
+		)
+
+/obj/item/gun/energy/tyranid/venomcannon
+	name = "Venom Cannon"
+	desc = "An enormous rifle, firing spines coated with highly toxic tyranid venoms and bio-acids.."
+	icon_state = "xenoheavyr" //Placeholder
+	item_state = "xenoheavyr" //Placeholder
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_HUGE
+	force = 15
+	one_hand_penalty = 3
+	fire_delay = 4
+	accuracy = 1
+	self_recharge = 1
+	cell_type = /obj/item/cell/tyranid/large
+	ammoType = /obj/item/cell/tyranid/large
+	projectile_type = /obj/item/projectile/bullet/tyranid/venomcannon
+	charge_cost = 300

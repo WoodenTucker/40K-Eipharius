@@ -63,7 +63,7 @@
 	name = "Heavy Flak helmet"
 	desc = "Use in case of bomb."
 	icon_state = "bombsuit"
-	armor = list(melee = 30, bullet = 45, laser = 40, energy = 50, bomb = 50, bio = 0, rad = 0)
+	armor = list(melee = 17, bullet = 35, laser = 30, energy = 50, bomb = 50, bio = 0, rad = 0)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EYES
 	siemens_coefficient = 0
@@ -77,7 +77,7 @@
 	w_class = ITEM_SIZE_HUGE//bulky item
 	gas_transfer_coefficient = 0.01
 	permeability_coefficient = 0.01
-	armor = list(melee = 50, bullet = 70, laser = 65, energy = 50, bomb = 60, bio = 90, rad = 40)
+	armor = list(melee = 16, bullet = 40, laser = 25, energy = 50, bomb = 70, bio = 90, rad = 40)
 	flags_inv = HIDEJUMPSUIT|HIDETAIL
 	heat_protection = UPPER_TORSO|LOWER_TORSO
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
@@ -86,7 +86,7 @@
 
 /obj/item/clothing/suit/bomb_suit/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 0.9
+	slowdown_per_slot[slot_wear_suit] = 0.6
 
 /obj/item/clothing/head/bomb_hood/security
 	icon_state = "bombsuitsec"
@@ -122,7 +122,7 @@
 	permeability_coefficient = 0.50
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
 	allowed = list(/obj/item/device/flashlight,/obj/item/tank/emergency,/obj/item/clothing/head/radiation,/obj/item/clothing/mask/gas)
-	armor = list(melee = 5, bullet = 0, laser = 0,energy = 10, bomb = 10, bio = 60, rad = 100)
+	armor = list(melee = 15, bullet = 10, laser = 10,energy = 10, bomb = 10, bio = 60, rad = 100)
 	flags_inv = HIDEJUMPSUIT|HIDETAIL|HIDEGLOVES|HIDESHOES
 
 /obj/item/clothing/suit/radiation/New()

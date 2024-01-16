@@ -3725,6 +3725,7 @@
 /obj/structure/sign/chaos{
 	pixel_x = 32
 	},
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult3,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/farm)
 "ezO" = (
@@ -5448,7 +5449,7 @@
 /obj/structure/sign/chaos{
 	pixel_x = -32
 	},
-/obj/item/clothing/head/chaossack,
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult2,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/farm)
 "gue" = (
@@ -6842,14 +6843,6 @@
 	armor = list("melee"=35,"bullet"=35,"laser"=35,"energy"=5,"bomb"=0,"bio"=100,"rad"=100)
 	},
 /obj/item/melee/baton,
-/obj/item/clothing/head/helmet/culthelm/alt2,
-/obj/item/clothing/head/helmet/culthelm/alt,
-/obj/item/clothing/head/heretichood/alt2{
-	name = "disgusting hood"
-	},
-/obj/item/clothing/head/heretichood/alt2{
-	name = "disgusting hood"
-	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/farm)
 "hSE" = (
@@ -6990,6 +6983,11 @@
 "ibx" = (
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"icy" = (
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult2,
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult2,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/farm)
 "icN" = (
 /obj/machinery/door/airlock/virology{
 	name = "Mines";
@@ -12315,7 +12313,6 @@
 /obj/item/clothing/under/dress/plaid_blue,
 /obj/item/clothing/under/dress/dress_purple,
 /obj/item/clothing/under/det/grey,
-/obj/item/clothing/under/child_heir,
 /obj/item/clothing/under/casual_pants/youngfolksjeans,
 /obj/item/clothing/under/blazer,
 /obj/item/clothing/under/blackskirt,
@@ -14738,6 +14735,10 @@
 /area/cadiaoutpost/oa/magistratumpost)
 "qAS" = (
 /obj/effect/decal/cleanable/cobweb,
+/obj/item/clothing/suit/armor/heretcoat/tzeecult,
+/obj/item/clothing/suit/armor/heretcoat/tzeecult,
+/obj/item/clothing/suit/armor/heretcoat/tzeecult,
+/obj/item/clothing/suit/armor/heretcoat/tzeecult,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/farm)
 "qAZ" = (
@@ -21351,21 +21352,10 @@
 	},
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "xYM" = (
-/obj/item/clothing/suit/cultrobes/alt,
 /obj/item/melee/baton,
 /obj/item/device/radio/headset/red_team/sl_alpha,
 /obj/item/device/radio/headset/red_team/sl_alpha,
 /obj/item/device/radio/headset/red_team/sl_alpha,
-/obj/item/clothing/suit/armor/guardsman/bloodpact{
-	name = "strange armor";
-	armor = list("melee"=38,"bullet"=38,"laser"=38,"energy"=20,"bomb"=30,"bio"=10,"rad"=20);
-	sales_price = 0
-	},
-/obj/item/clothing/suit/armor/guardsman/bloodpact{
-	name = "strange armor";
-	armor = list("melee"=38,"bullet"=38,"laser"=38,"energy"=20,"bomb"=30,"bio"=10,"rad"=20);
-	sales_price = 0
-	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/farm)
 "xZe" = (
@@ -34930,6 +34920,7 @@ slE
 (54,1,1) = {"
 slE
 slE
+tOB
 tOB
 tOB
 tOB
@@ -57627,7 +57618,7 @@ eYA
 mcb
 oYr
 eKm
-oYr
+abu
 vAj
 hIg
 xHL
@@ -83500,7 +83491,7 @@ uru
 hSx
 kcg
 yer
-qrf
+ueA
 wpz
 uru
 jhy
@@ -83752,7 +83743,7 @@ uru
 efD
 ezq
 roL
-qrf
+icy
 uru
 uru
 qEW

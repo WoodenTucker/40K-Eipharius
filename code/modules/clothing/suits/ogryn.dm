@@ -8,7 +8,7 @@
 	canremove = 1
 	desc = "Worn to shreds and covered in spikes."
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 50, bullet = 50, laser = 50, energy = 25, bomb = 30, bio = 30, rad = 20)
+	armor = list(melee = 19, bullet = 31, laser = 31, energy = 25, bomb = 30, bio = 30, rad = 20)
 	sales_price = 60
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS

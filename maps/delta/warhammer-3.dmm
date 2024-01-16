@@ -3941,14 +3941,11 @@
 /obj/random/loot/sidearmammo,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
-<<<<<<< HEAD
 "djr" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/new_hive/hive_city)
-=======
->>>>>>> de3b7f3ea054bb10194718aab81d8598d37582f9
 "djM" = (
 /obj/structure/sink{
 	dir = 8;
@@ -12113,13 +12110,6 @@
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/new_hive/hive_city)
 "jsB" = (
-<<<<<<< HEAD
-/obj/effect/floor_decal/newcorner/reinforced{
-	dir = 9
-	},
-/turf/simulated/floor/ceramic,
-/area/cadiaoutpost/oa/service/inn)
-=======
 /obj/item/flame/candle/dinner{
 	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
 	name = "krungsmacka's favorite 'toy'";
@@ -12129,7 +12119,6 @@
 	},
 /turf/simulated/floor/fancyfloor/carpet/blue/middle,
 /area/cadiaoutpost/oa/bridge/hallway)
->>>>>>> de3b7f3ea054bb10194718aab81d8598d37582f9
 "jsG" = (
 /obj/structure/railing{
 	dir = 1
@@ -16539,7 +16528,6 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/farm)
-<<<<<<< HEAD
 "mSs" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 10
@@ -16549,20 +16537,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/new_hive/hive_city)
-=======
-"mSW" = (
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/table/graf/shrine,
-/obj/item/storage/backpack/cultpack,
-/obj/item/grenade/flashbang{
-	name = "Holy Healing Grenade"
-	},
-/obj/item/grenade/chem_grenade/teargas{
-	name = "Holy Healing Grenade"
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/service/chapel)
->>>>>>> de3b7f3ea054bb10194718aab81d8598d37582f9
 "mTa" = (
 /obj/structure/table/rack,
 /obj/item/storage/belt/warfare,
@@ -17952,7 +17926,6 @@
 /turf/simulated/floor/tiled/freezer{
 	color = "grey"
 	},
-<<<<<<< HEAD
 /area/cadiaoutpost/oa/bridge/hallway)
 "ogF" = (
 /obj/effect/floor_decal/newcorner/stone{
@@ -17972,9 +17945,6 @@
 	},
 /turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/new_hive/hive_city)
-=======
-/area/cadiaoutpost/oa/security/barracks)
->>>>>>> de3b7f3ea054bb10194718aab81d8598d37582f9
 "ohD" = (
 /obj/effect/water/bottom{
 	color = "blue"
@@ -61528,7 +61498,7 @@ jya
 drW
 dTf
 dTf
-jsB
+dTf
 dTf
 mgl
 iYV
@@ -85239,11 +85209,7 @@ uDe
 xGb
 obt
 lHU
-<<<<<<< HEAD
 oHJ
-=======
-srZ
->>>>>>> de3b7f3ea054bb10194718aab81d8598d37582f9
 jDa
 jDa
 nSI
@@ -85495,13 +85461,8 @@ uDe
 xGb
 utl
 lHU
-<<<<<<< HEAD
 oHJ
 oHJ
-=======
-srZ
-srZ
->>>>>>> de3b7f3ea054bb10194718aab81d8598d37582f9
 jDa
 nSI
 oiV
@@ -85752,13 +85713,8 @@ uDe
 xGb
 obt
 lHU
-<<<<<<< HEAD
 oHJ
 oHJ
-=======
-srZ
-srZ
->>>>>>> de3b7f3ea054bb10194718aab81d8598d37582f9
 jDa
 jDa
 nSI
@@ -86009,15 +85965,9 @@ nGh
 xGb
 pvM
 lHU
-<<<<<<< HEAD
 oHJ
 oHJ
 oHJ
-=======
-srZ
-srZ
-srZ
->>>>>>> de3b7f3ea054bb10194718aab81d8598d37582f9
 jDa
 jDa
 jDa
@@ -87275,13 +87225,8 @@ cbv
 hjt
 ybp
 lHU
-<<<<<<< HEAD
 oHJ
 oHJ
-=======
-srZ
-srZ
->>>>>>> de3b7f3ea054bb10194718aab81d8598d37582f9
 jDa
 jDa
 oHJ
@@ -87532,15 +87477,9 @@ lHU
 lHU
 lHU
 lHU
-<<<<<<< HEAD
 oHJ
 oHJ
 oHJ
-=======
-srZ
-srZ
-srZ
->>>>>>> de3b7f3ea054bb10194718aab81d8598d37582f9
 jDa
 jDa
 jDa
@@ -87787,7 +87726,6 @@ cVs
 cVs
 mBH
 lHU
-<<<<<<< HEAD
 oHJ
 oHJ
 oHJ
@@ -87796,16 +87734,6 @@ oHJ
 oHJ
 oHJ
 oHJ
-=======
-srZ
-srZ
-srZ
-srZ
-srZ
-srZ
-srZ
-srZ
->>>>>>> de3b7f3ea054bb10194718aab81d8598d37582f9
 jDa
 jDa
 nSI
@@ -88050,7 +87978,6 @@ jfn
 pmQ
 bRh
 lHU
-<<<<<<< HEAD
 oHJ
 oHJ
 oHJ
@@ -88060,17 +87987,6 @@ oHJ
 oHJ
 oHJ
 oHJ
-=======
-srZ
-srZ
-srZ
-srZ
-srZ
-srZ
-srZ
-srZ
-srZ
->>>>>>> de3b7f3ea054bb10194718aab81d8598d37582f9
 jDa
 nSI
 oiV
@@ -89070,7 +88986,6 @@ kZT
 hfl
 nSw
 lHU
-<<<<<<< HEAD
 oHJ
 oHJ
 oHJ
@@ -89083,20 +88998,6 @@ oHJ
 oHJ
 oHJ
 oHJ
-=======
-srZ
-srZ
-srZ
-srZ
-srZ
-srZ
-srZ
-srZ
-srZ
-srZ
-srZ
-srZ
->>>>>>> de3b7f3ea054bb10194718aab81d8598d37582f9
 oEZ
 lQB
 oHJ

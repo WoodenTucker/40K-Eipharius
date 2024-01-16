@@ -88,6 +88,7 @@
 	faction = "Chaos"
 	rune_recipes = list(/datum/rune_recipe/tzeentch/conversion,
 						/datum/rune_recipe/tzeentch/fool,
+						/datum/rune_recipe/tzeentch/cloth,
 						/datum/rune_recipe/tzeentch/illusion,
 						/datum/rune_recipe/tzeentch/omniscience,
 						/datum/rune_recipe/tzeentch/skinless,

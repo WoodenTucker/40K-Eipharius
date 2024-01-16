@@ -3556,23 +3556,12 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "mj" = (
-<<<<<<< HEAD
 /obj/effect/floor_decal/turf/brothel,
 /obj/structure/poster/red{
 	pixel_x = -32;
 	icon_state = "obscene5";
 	name = "Obscene Poster";
 	desc = "Is this heresy? This is heresy, right?"
-=======
-/obj/structure/sign/stainedglass1{
-	pixel_y = 30
-	},
-/turf/simulated/floor/ceramic,
-/area/cadiaoutpost/oa/service/chapel)
-"ml" = (
-/obj/effect/landmark/start{
-	name = "Tavern Ganger"
->>>>>>> de3b7f3ea054bb10194718aab81d8598d37582f9
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/inn)
@@ -52810,7 +52799,6 @@ UB
 UB
 UB
 UB
-<<<<<<< HEAD
 UB
 UB
 UB
@@ -52858,14 +52846,6 @@ Hl
 kH
 Hl
 IH
-=======
-IH
-IH
-IH
-IH
-IH
-Uw
->>>>>>> de3b7f3ea054bb10194718aab81d8598d37582f9
 cO
 Hl
 xW
@@ -53071,61 +53051,6 @@ UB
 UB
 UB
 UB
-<<<<<<< HEAD
-=======
-IH
-cA
-ir
-Lo
-gp
-IH
-mu
-In
-In
-uq
-IH
-uq
-In
-In
-YK
-IH
-aO
-fk
-IH
-In
-In
-In
-Xa
-Uw
-IH
-IH
-Nn
-Nn
-IK
-NZ
-Nn
-Nn
-Nn
-XD
-KV
-Nn
-Nn
-IH
-IH
-UB
-UB
-UB
-eP
-eP
-eP
-eP
-eP
-eP
-eP
-eP
-pr
-eP
->>>>>>> de3b7f3ea054bb10194718aab81d8598d37582f9
 UB
 UB
 UB
@@ -53411,7 +53336,6 @@ mY
 mY
 mY
 IH
-<<<<<<< HEAD
 IH
 IH
 IH
@@ -53438,12 +53362,6 @@ jA
 jA
 jA
 gp
-=======
-Lo
-Ii
-Lo
-xp
->>>>>>> de3b7f3ea054bb10194718aab81d8598d37582f9
 IH
 IH
 IH
@@ -53637,7 +53555,6 @@ UB
 UB
 UB
 UB
-<<<<<<< HEAD
 UB
 UB
 UB
@@ -53648,47 +53565,6 @@ UB
 UB
 UB
 UB
-=======
-IH
-PV
-VW
-UG
-Lo
-IH
-ZW
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
-Qc
-RF
-fk
-IH
-IH
-IH
-IH
-IH
-IH
-IH
-IH
-Nn
-Nn
-ep
-nx
-Nn
-Nn
-Nn
-rB
-eg
-Nn
-Nn
-IH
-IH
->>>>>>> de3b7f3ea054bb10194718aab81d8598d37582f9
 UB
 UB
 UB
@@ -53967,34 +53843,9 @@ vv
 vv
 vv
 IH
-<<<<<<< HEAD
 Nd
 Nd
 Nd
-=======
-qs
-vc
-zf
-MK
-Zr
-sl
-xE
-rl
-xE
-xE
-xE
-xE
-rl
-xE
-ZI
-xb
-RZ
-IH
-In
-js
-In
-ux
->>>>>>> de3b7f3ea054bb10194718aab81d8598d37582f9
 IH
 IH
 IH
@@ -54208,7 +54059,6 @@ UB
 UB
 UB
 UB
-<<<<<<< HEAD
 UB
 UB
 UB
@@ -54244,15 +54094,6 @@ Fe
 vv
 iP
 OZ
-=======
-IH
-IH
-IH
-IH
-IH
-IH
-AM
->>>>>>> de3b7f3ea054bb10194718aab81d8598d37582f9
 IH
 IH
 IH
@@ -54474,7 +54315,6 @@ UB
 UB
 UB
 UB
-<<<<<<< HEAD
 UB
 UB
 UB
@@ -54537,70 +54377,6 @@ td
 FS
 FS
 Il
-=======
-IH
-Em
-gY
-gY
-Kw
-IH
-uq
-In
-In
-mu
-IH
-aO
-xb
-fk
-ij
-In
-In
-In
-Xa
-Uw
-IH
-IH
-Nn
-Nn
-nk
-Ab
-gR
-rN
-lp
-Du
-XQ
-OF
-Fw
-IH
-IH
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-gN
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
->>>>>>> de3b7f3ea054bb10194718aab81d8598d37582f9
 UB
 UB
 UB
