@@ -56,3 +56,81 @@ this shit is just the barebones of the race im going to add the verbs later
 	warfare_faction = TAU
 	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/corsair)
 	outfit.equip(src)
+
+/*/mob/living/carbon/human/eldar/proc/giveeldarstats() //WIP, adding in Guardian, Ranger, and Corsair stuff.
+	set name = "Recall your training."
+	set category = "Eldar"
+	set desc = "Gives Eldar stats."
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	var/eldarclass = input("Select a Class","Class Selection") as null|anything in list("Guardian")
+	switch(eldarclass)
+		if("Guardian")
+			equip_to_slot_or_del(new /obj/item/clothing/under/syndicate/combat, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/glasses/blacksun, slot_glasses)
+			equip_to_slot_or_del(new /obj/item/device/radio/headset/heads/rt, slot_l_ear)
+			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/half, slot_wear_mask)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/skitshoes, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/gun/projectile, slot_s_store)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/galvanic/rifle, slot_s_store)
+			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
+			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
+			src.add_stats(rand(17,20),rand(15,17),rand(18,19),14) //gives stats str, dext, end, int
+			src.add_skills(rand(6,9),rand(11,12),rand(5,7),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.update_eyes() //should fix grey vision
+			src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //he's too heavily modified to require things like a toilet
+			src.thirst = INFINITY
+			src.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
+			src.verbs -= /mob/living/carbon/human/skitarii/proc/giveskitstats //removes verb at the end so they can't spam it for whatever reason
+			client?.color = null
+
+			var/obj/item/card/id/dog_tag/skitarii/W = new
+			W.icon_state = "tagred"
+			W.assignment = "Skitarii Ranger"
+			W.registered_name = real_name
+			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)
+
+	switch(skitclass)
+		if("Ruststalker")
+			equip_to_slot_or_del(new /obj/item/clothing/suit/storage/hooded/ruststalker, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/glasses/blacksun/skitarii, slot_glasses)
+			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_eng, slot_l_ear)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare/ruststalker, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/skitshoes/ruststalker, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/techpriest/skitarius, slot_wear_mask)
+			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
+			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
+			src.add_stats(rand(19,21),rand(18,19),rand(18,19),14) //gives stats str, dext, end, int //stronger and faster than most skitarii, also more endurant than normal humans.
+			src.add_skills(rand(11,12),rand(1,2),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery //Melee focused only. will redo when PDWs are added.
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.update_eyes() //should fix grey vision
+			src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //he's too heavily modified to require things like a toilet
+			src.thirst = INFINITY
+			src.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
+			src.vice = null //off for now
+			src.verbs += /mob/living/carbon/human/proc/active_camo //Gives them a camo ability.
+			src.verbs -= /mob/living/carbon/human/skitarii/proc/giveskitstats //removes verb at the end so they can't spam it for whatever reason
+			client?.color = null
+
+			var/obj/item/card/id/dog_tag/skitarii/W = new
+			W.icon_state = "tagred"
+			W.assignment = "Skitarii Ruststalker"
+			W.registered_name = real_name
+			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)*/
