@@ -489,15 +489,6 @@
 	basestate = "w"
 	dir = 5
 
-/obj/structure/window/fantasy
-	name = "rusticwindow"
-	desc = "It looks rather strong. Might take a few good hits to shatter it."
-	icon = 'icons/obj/cs.dmi'
-	icon_state = "windowwood1"
-	basestate = "windowwood1"
-	maxhealth = 40
-
-
 /obj/structure/window/reinforced/reliquary
 	name = "reliquary glass"
 	desc = "Ornate and durable fereter glass, it is used to protect the Adeptus Ministorum's most prized possessions, their relics, while still letting them remain proudly on display. A small conversion field runs through it, it doesn't look like you're getting in any time soon."
