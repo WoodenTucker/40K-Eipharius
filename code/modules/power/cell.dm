@@ -340,3 +340,17 @@
 	icon_state = "potato_cell"
 	w_class = ITEM_SIZE_NORMAL
 	maxcharge = 6000
+
+/obj/item/cell/eldar
+	name = "Eldar Power Crystal"
+	desc = "A softly glowing crystal. "
+	icon_state = "ion"
+	w_class = ITEM_SIZE_NORMAL
+	maxcharge = 5000
+
+/obj/item/cell/eldar/large
+	name = "Large Eldar Power Crystal"
+	desc = "A softly glowing crystal. "
+	icon_state = "ion"
+	w_class = ITEM_SIZE_NORMAL
+	maxcharge = 10000
