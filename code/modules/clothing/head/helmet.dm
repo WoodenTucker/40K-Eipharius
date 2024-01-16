@@ -330,6 +330,17 @@
   body_parts_covered = HEAD
   cold_protection = HEAD
   min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/eldar/ranger
+  name = "Ranger's Helmet"
+  desc = "An Eldar Ranger's Helmet, comprised of layers of cameoline treated material with an underlying thermoplas layer.."
+  icon_state = "reconhood"
+  item_state = "reconhood"
+  armor = list(melee = 25, bullet = 40, laser = 40, energy = 70, bomb = 15, bio = 50, rad = 0) //thermoplas and etc
+  body_parts_covered = HEAD
+  cold_protection = HEAD
+  min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
  // Dark Eldar
 
 /obj/item/clothing/head/helmet/darkeldar
