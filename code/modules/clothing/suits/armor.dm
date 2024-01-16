@@ -1335,7 +1335,7 @@ obj/item/clothing/suit/armor
 		to_chat(usr,"You enable your armour's stealth features.")
 		animate(src, alpha = stealth_alpha, time = 1.5 SECONDS)
 
-/mob/living/carbon/human/proc/active_camo()
+/mob/living/carbon/human/proc/eldar_active_camo()
 	set category = "Abilities"
 	set name = "Active Camo"
 	set desc = "Camouflage yourself"
