@@ -755,6 +755,8 @@ Pilgrim Fate System
 	r_pocket = /obj/item/storage/box/coin
 	l_pocket = /obj/item/device/flashlight/lantern
 	belt = /obj/item/gun/projectile/revolver/villiers
+	id_type = /obj/item/card/id/pilgrim/penitent
+	pda_slot = null
 	backpack_contents = list(
 	/obj/item/ammo_magazine/a357 = 2,
 	/obj/item/stack/thrones2 = 1,
@@ -960,7 +962,7 @@ Pilgrim Fate System
 	open_when_dead = 0
 	supervisors = "The Tavern Keeper and House Goliath"
 	selection_color = "#530606"
-	access = list(access_village, access_ganger,access_bar)
+	access = list(access_village, access_ganger, access_bar)
 	outfit_type = /decl/hierarchy/outfit/job/ganger
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
