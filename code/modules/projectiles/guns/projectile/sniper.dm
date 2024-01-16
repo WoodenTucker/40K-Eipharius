@@ -405,7 +405,7 @@
 	accuracy = 5
 	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 4000)
-	projectile_type = /obj/item/projectile/energy/las/lasgun/longlas/overcharged
+	projectile_type = /obj/item/projectile/energy/las/lasgun/longlas/overcharge
 	charge_cost = 300
 	cell_type = /obj/item/cell/eldar
 	ammoType = /obj/item/cell/eldar
