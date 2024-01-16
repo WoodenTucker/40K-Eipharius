@@ -88,7 +88,8 @@ this shit is just the barebones of the race im going to add the verbs later
 			src.add_skills(rand(6,9),rand(11,12),rand(5,7),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
 			src.set_trait(new/datum/trait/death_tolerant())
 			src.update_eyes() //should fix grey vision
-			src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
+			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 			src.bladder = -INFINITY
 			src.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 			src.thirst = INFINITY
@@ -118,7 +119,8 @@ this shit is just the barebones of the race im going to add the verbs later
 			src.add_skills(rand(11,12),rand(1,2),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery //Melee focused only. will redo when PDWs are added.
 			src.set_trait(new/datum/trait/death_tolerant())
 			src.update_eyes() //should fix grey vision
-			src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
+			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 			src.bladder = -INFINITY
 			src.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 			src.thirst = INFINITY
