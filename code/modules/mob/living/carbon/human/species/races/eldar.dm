@@ -19,8 +19,7 @@ this shit is just the barebones of the race im going to add the verbs later
     gluttonous = GLUT_TINY
     sexybits_location = BP_GROIN
 	inherent_verbs = list(
-	/mob/living/carbon/human/eldar/proc/giveeldarstats
-		)
+	/mob/living/carbon/human/eldar/proc/giveeldarstats)
 
 /datum/species/eldar/handle_post_spawn(var/mob/living/carbon/human/H)
 	H.age = rand(min_age,max_age)//Random age for kiddos.
