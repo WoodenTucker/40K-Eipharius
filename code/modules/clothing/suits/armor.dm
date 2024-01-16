@@ -1303,6 +1303,7 @@ obj/item/clothing/suit/armor
   cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET| ARMS | HANDS
   min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
   body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+
 /obj/item/clothing/suit/armor/corsair
   name = "Eldar Corsair Armor"
   desc = "The dark and shadowy armor of a voidscarred Corsair.."
@@ -1312,6 +1313,17 @@ obj/item/clothing/suit/armor
   cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET| ARMS | HANDS
   min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
   body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+
+/obj/item/clothing/suit/armor/eldar/ranger
+  name = "Ranger Cloaked Armor"
+  desc = "An Eldar Ranger's Armour, comprised of many layers of cameoline materials with an underlying thermoplas player.."
+  icon_state = "ranger"
+  item_state = "ranger"
+  armor = list(melee = 19, bullet = 38, laser = 38, energy = 36, bomb = 60, bio = 60, rad = 90) //More protective against ranged, less against melee.
+  cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET| ARMS | HANDS
+  min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+  body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+
 // Dark Eldar
 /obj/item/clothing/suit/armor/deldar
   name = "Ghost Plate Armor"
