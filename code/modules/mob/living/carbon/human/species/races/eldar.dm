@@ -57,7 +57,7 @@ this shit is just the barebones of the race im going to add the verbs later
 	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/corsair)
 	outfit.equip(src)
 
-/*/mob/living/carbon/human/eldar/proc/giveeldarstats() //WIP, adding in Guardian, Ranger, and Corsair stuff.
+/mob/living/carbon/human/eldar/proc/giveeldarstats() //WIP, adding in Guardian, Ranger, and Corsair stuff.
 	set name = "Recall your training."
 	set category = "Eldar"
 	set desc = "Gives Eldar stats."
@@ -78,6 +78,7 @@ this shit is just the barebones of the race im going to add the verbs later
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/eldar, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/eldar/scatapult, slot_s_store)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/eldar, slot_head)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/catapult_magazine, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/catapult_magazine, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/catapult_magazine, slot_in_backpack)
@@ -106,35 +107,38 @@ this shit is just the barebones of the race im going to add the verbs later
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
 
-	switch(skitclass)
-		if("Ruststalker")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/storage/hooded/ruststalker, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/glasses/blacksun/skitarii, slot_glasses)
-			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_eng, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare/ruststalker, slot_back)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/skitshoes/ruststalker, slot_shoes)
+	switch(eldarclass)
+		if("Eldar Ranger")
+			equip_to_slot_or_del(new /obj/item/clothing/under/syndicate/combat, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/glasses/blacksun, slot_glasses)
+			equip_to_slot_or_del(new /obj/item/device/radio/headset/heads/rt, slot_l_ear)
+			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/half, slot_wear_mask)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/eldar/ranger, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/eldar/ranger, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/longlas/eldar, slot_s_store)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/techpriest/skitarius, slot_wear_mask)
+			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/half, slot_wear_mask)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/eldar/ranger, slot_head)
 			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
 			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
-			src.add_stats(rand(19,21),rand(18,19),rand(18,19),14) //gives stats str, dext, end, int //stronger and faster than most skitarii, also more endurant than normal humans.
-			src.add_skills(rand(11,12),rand(1,2),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery //Melee focused only. will redo when PDWs are added.
+			src.add_stats(rand(19,21),rand(21,25),rand(18,19),18) //gives stats str, dext, end, int //stronger and faster than most skitarii, also more endurant than normal humans.
+			src.add_skills(rand(9,10),rand(12,18),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery //Melee focused only. will redo when PDWs are added.
 			src.set_trait(new/datum/trait/death_tolerant())
 			src.update_eyes() //should fix grey vision
 			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 			src.bladder = -INFINITY
-			src.bowels = -INFINITY //he's too heavily modified to require things like a toilet
+			src.bowels = -INFINITY
 			src.thirst = INFINITY
-			src.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
+			src.nutrition = INFINITY
 			src.vice = null //off for now
-			src.verbs += /mob/living/carbon/human/proc/active_camo //Gives them a camo ability.
-			src.verbs -= /mob/living/carbon/human/skitarii/proc/giveskitstats //removes verb at the end so they can't spam it for whatever reason
+			src.verbs -= /mob/living/carbon/human/eldar/proc/giveeldarstats //removes verb at the end so they can't spam it for whatever reason
 			client?.color = null
 
-			var/obj/item/card/id/dog_tag/skitarii/W = new
+			var/obj/item/card/id/dog_tag/W = new
 			W.icon_state = "tagred"
-			W.assignment = "Skitarii Ruststalker"
+			W.assignment = "Eldar Ranger"
 			W.registered_name = real_name
 			W.update_label()
-			equip_to_slot_or_del(W, slot_wear_id)*/
+			equip_to_slot_or_del(W, slot_wear_id)
