@@ -3,7 +3,7 @@ Eldar
 this shit is just the barebones of the race im going to add the verbs later
 */
 
-/datum/species/eldar
+/datum/species/human/eldar
     name = SPECIES_ELDAR
     default_language = LANGUAGE_ELDAR
     language = LANGUAGE_ELDAR
@@ -18,6 +18,7 @@ this shit is just the barebones of the race im going to add the verbs later
     slowdown = -0.50
     gluttonous = GLUT_TINY
     sexybits_location = BP_GROIN
+
 	inherent_verbs = list(
 	/mob/living/carbon/human/eldar/proc/giveeldarstats,
 		)
