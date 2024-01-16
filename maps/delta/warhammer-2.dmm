@@ -15,7 +15,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "abw" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 1
@@ -365,7 +365,7 @@
 	color = "grey";
 	icon_state = "dark1"
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "ayv" = (
 /obj/effect/decal/cleanable/poo,
 /obj/item/reagent_containers/food/snacks/poo,
@@ -492,7 +492,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "aGx" = (
 /obj/structure/torchwall{
 	dir = 8;
@@ -535,8 +535,11 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "aJh" = (
-/turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/obj/machinery/door/unpowered/inn{
+	name = "Library of Knowledge"
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/new_hive/caves)
 "aJl" = (
 /obj/effect/floor_decal/newcorner/nbar/corner,
 /turf/simulated/floor/stone/crafted_floor,
@@ -548,7 +551,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "aKZ" = (
 /obj/item/storage/belt/medical/full,
 /obj/machinery/light{
@@ -587,7 +590,7 @@
 	color = "grey";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "aMs" = (
 /obj/structure/closet/secure_closet/brig,
 /obj/item/clothing/shoes/orange,
@@ -723,7 +726,7 @@
 	name = "Interrogator Equipment"
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "aYe" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/reagent_dispensers/fueltank,
@@ -945,7 +948,7 @@
 	icon_state = "plating"
 	},
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "bkj" = (
 /obj/structure/toilet{
 	dir = 8;
@@ -1049,9 +1052,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"bmy" = (
-/turf/unsimulated/miningtime,
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "bmz" = (
 /obj/structure/torchwall/service{
 	pixel_y = 32
@@ -1230,7 +1230,7 @@
 	icon_state = "shower"
 	},
 /turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "buc" = (
 /obj/effect/floor_decal/newcorner/nbar,
 /turf/simulated/floor/stone/crafted_floor,
@@ -1381,7 +1381,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "bDt" = (
 /obj/machinery/door/blast/id_door{
 	req_one_access = list(302);
@@ -1492,7 +1492,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "bNq" = (
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -1507,13 +1507,13 @@
 	color = "grey";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "bQg" = (
 /obj/structure/bed/chair/wood/fancy/comfy2{
 	dir = 4
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "bQi" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/firecloset/full,
@@ -1591,12 +1591,6 @@
 /obj/random/loot/randomlasammo,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/new_hive/caves)
-"bVj" = (
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
-	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "bVA" = (
 /obj/item/remains/human{
 	color = "grey"
@@ -1626,7 +1620,7 @@
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "bXi" = (
 /turf/simulated/floor/fancyfloor/marble,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "bXj" = (
 /obj/structure/stairs/north,
 /turf/simulated/floor/factory_floor,
@@ -1649,7 +1643,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "bXS" = (
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/caves/dark)
@@ -1773,7 +1767,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "ceG" = (
 /obj/effect/floor_decal/newcorner/plating/corner{
 	dir = 8
@@ -1859,7 +1853,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "cla" = (
 /obj/item/card/id/key/super/newmap/hab1,
 /turf/simulated/floor/seolite,
@@ -1916,7 +1910,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "cpn" = (
 /obj/structure/bed/chair,
 /obj/effect/floor_decal/newcorner/plating{
@@ -1980,7 +1974,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "cuG" = (
 /obj/structure/torchwall{
 	dir = 1;
@@ -2176,7 +2170,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "cFV" = (
 /obj/machinery/door/airlock/glass_medical,
 /turf/simulated/floor/factory_floor,
@@ -2344,7 +2338,7 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "cRK" = (
 /obj/effect/floor_decal/newcorner/plating/quarter{
 	dir = 4
@@ -2447,7 +2441,7 @@
 	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "cWt" = (
 /obj/structure/closet/crate/radiation_gear,
 /turf/simulated/floor/darkwood,
@@ -2529,7 +2523,7 @@
 /obj/item/device/cassette/inn4,
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "dbF" = (
 /obj/item/storage/belt/medical/full,
 /obj/structure/table/rack/dark,
@@ -2538,7 +2532,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "dbJ" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
@@ -2784,7 +2778,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "dtx" = (
 /obj/structure/closet/secure_closet/engineering_electrical,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -2808,7 +2802,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "dwI" = (
 /obj/machinery/conveyor/centcom_auto{
 	dir = 8
@@ -2937,7 +2931,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "dDC" = (
 /obj/item/remains/human{
 	color = "grey"
@@ -2959,9 +2953,6 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"dFi" = (
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
 "dFy" = (
 /obj/structure/torchwall{
 	pixel_y = 16
@@ -3007,7 +2998,10 @@
 /turf/simulated/wall/ancient,
 /area/cadiaoutpost/oa/magistratumpost)
 "dJC" = (
-)
+/turf/simulated/floor/darkfloor{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/service/chapel/recovery)
 "dJO" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 1
@@ -3016,7 +3010,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "dJR" = (
 /obj/item/stamp/ward,
 /obj/structure/table/graf/wood_office_table{
@@ -3180,7 +3174,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "dRd" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/unary/freezer,
@@ -3205,7 +3199,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "dTX" = (
 /obj/structure/table/steel_reinforced,
 /obj/effect/floor_decal/newcorner/reinforced{
@@ -3282,7 +3276,7 @@
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 5
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "dYI" = (
 /obj/structure/table/rack/shelf,
 /obj/item/storage/firstaid/regular{
@@ -3309,7 +3303,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "dZO" = (
 /obj/structure/closet/crate/secure/large,
 /obj/random/loot/randomammo1,
@@ -3416,7 +3410,7 @@
 "eib" = (
 /obj/effect/floor_decal/turf/grimy,
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "eil" = (
 /obj/machinery/door/unpowered/inn{
 	name = "Bathroom"
@@ -3446,7 +3440,7 @@
 /turf/unsimulated/wall{
 	icon_state = "r_wall-2"
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "eli" = (
 /obj/effect/water/bottom{
 	color = "blue"
@@ -3476,7 +3470,7 @@
 /obj/item/grenade/frag,
 /obj/item/grenade/frag,
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "elZ" = (
 /obj/random/junk,
 /obj/structure/closet/crate/trashcart,
@@ -3631,7 +3625,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "evd" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled,
@@ -3655,12 +3649,6 @@
 	dir = 1
 	},
 /area/cadiaoutpost/new_hive/caves)
-"ewz" = (
-/obj/machinery/door/unpowered/inn{
-	name = "Bathroom"
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "exl" = (
 /obj/item/storage/fancy/cigarettes/luckystars,
 /obj/item/reagent_containers/food/drinks/bottle/small/beer,
@@ -3725,7 +3713,7 @@
 	access = list(264)
 	},
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "eze" = (
 /obj/machinery/optable,
 /turf/simulated/floor/tiled{
@@ -3900,7 +3888,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "eHH" = (
 /obj/structure/torchwall{
 	dir = 1;
@@ -3966,9 +3954,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"eKL" = (
-/turf/simulated/wall/castle,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
 "eKN" = (
 /obj/structure/closet/hive/luxury,
 /obj/item/clothing/under/pj/blue,
@@ -3980,7 +3965,7 @@
 	pixel_x = -32
 	},
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "eNk" = (
 /turf/simulated/floor/ship_floor/engines{
 	dir = 8
@@ -4139,9 +4124,6 @@
 	dir = 6
 	},
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
-"eWh" = (
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "eWp" = (
 /obj/item/reagent_containers/food/snacks/sliceable/limecake{
 	pixel_x = 16
@@ -4153,7 +4135,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "eWr" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 1
@@ -4217,7 +4199,7 @@
 	req_one_access = list(302)
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "faJ" = (
 /obj/structure/table/rack/dark,
 /obj/item/book/manual/medical_diagnostics_manual,
@@ -4228,7 +4210,7 @@
 /obj/structure/table/rack/dark,
 /obj/item/melee/chain/pcsword/eviscerator,
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "fbb" = (
 /obj/structure/table/rack,
 /obj/item/clothing/accessory/storage/black_vest,
@@ -4461,7 +4443,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "fnl" = (
 /obj/random/trash,
 /turf/simulated/floor/tiled/dark{
@@ -4506,7 +4488,7 @@
 	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "fqo" = (
 /obj/structure/torchwall/service{
 	dir = 8;
@@ -4575,7 +4557,7 @@
 	pixel_x = -32
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "ftD" = (
 /obj/effect/floor_decal/newcorner/reinforced,
 /turf/simulated/floor/tiled{
@@ -4632,7 +4614,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "fwu" = (
 /obj/structure/table/gamblingtable,
 /obj/item/dice{
@@ -4640,7 +4622,7 @@
 	pixel_x = 10
 	},
 /turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "fwz" = (
 /obj/effect/floor_decal/newcorner/reinforced/corner{
 	dir = 1
@@ -4653,7 +4635,7 @@
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 9
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "fxk" = (
 /obj/structure/table/rack/dark,
 /obj/item/device/flashlight/lantern,
@@ -4792,7 +4774,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "fGS" = (
 /obj/structure/largecrate,
 /turf/simulated/floor/darkwood,
@@ -4921,7 +4903,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "fNc" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 4;
@@ -5086,7 +5068,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/turf/bloodbar/off,
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "gcL" = (
 /obj/random/trash,
 /obj/effect/floor_decal/newcorner/plating{
@@ -5281,7 +5263,7 @@
 	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "glx" = (
 /obj/machinery/light/small/red{
 	dir = 4
@@ -5519,7 +5501,7 @@
 	pixel_y = -4
 	},
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "gAe" = (
 /obj/effect/floor_decal/newcorner/plating/corner{
 	dir = 1
@@ -5612,7 +5594,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "gDl" = (
 /obj/structure/catwalkrust/blocked,
 /turf/simulated/floor/tiled,
@@ -5648,7 +5630,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "gGw" = (
 /obj/structure/curtain/open/shower{
 	icon_state = "closed"
@@ -5781,7 +5763,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "gJR" = (
 /obj/structure/closet/hive/metal{
 	anchored = 1
@@ -6111,7 +6093,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "heO" = (
 /obj/structure/torchwall/service{
 	dir = 4;
@@ -6148,7 +6130,7 @@
 	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "hgE" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/photocopier/faxmachine{
@@ -6159,7 +6141,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "hhl" = (
 /obj/structure/torchwall{
 	pixel_y = 30
@@ -6199,7 +6181,7 @@
 	pixel_x = -32
 	},
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "hiW" = (
 /obj/structure/table/graf/reinf_table{
 	icon_state = "table_horizontal2";
@@ -6337,7 +6319,7 @@
 /obj/effect/floor_decal/newcorner/plating,
 /obj/structure/table/graf/old_table,
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "htc" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 1
@@ -6374,7 +6356,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "hvR" = (
 /obj/structure/stairs/south,
 /turf/simulated/floor/factory_floor{
@@ -6424,7 +6406,7 @@
 "hxd" = (
 /obj/structure/stairs/south,
 /turf/simulated/floor/stone/old4,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "hxD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/turf/lfloorscorched1,
@@ -6575,7 +6557,7 @@
 	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "hED" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 4
@@ -6595,7 +6577,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "hGu" = (
 /obj/structure/undies_wardrobe,
 /obj/item/storage/belt/medical/full,
@@ -6616,7 +6598,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "hGK" = (
 /obj/structure/closet/crate/miner,
 /turf/simulated/floor/darkwood,
@@ -6820,7 +6802,7 @@
 "hQW" = (
 /obj/structure/bed/chair/wood/simple,
 /turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "hRl" = (
 /obj/structure/table/rack/dark,
 /obj/effect/floor_decal/industrial/outline/red,
@@ -6914,7 +6896,7 @@
 	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "hWh" = (
 /obj/machinery/photocopier,
 /obj/item/device/toner,
@@ -6947,7 +6929,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "hYY" = (
 /obj/structure/closet/secure_closet/brig,
 /obj/item/clothing/shoes/orange,
@@ -6987,7 +6969,7 @@
 	color = "grey";
 	icon_state = "dark1"
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "iba" = (
 /obj/structure/sign/plate/written{
 	pixel_y = 32
@@ -7187,7 +7169,7 @@
 	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "ilN" = (
 /obj/machinery/computer/operating,
 /obj/machinery/light/small{
@@ -7237,7 +7219,7 @@
 	access = list(5,63,333,331,230,211,202,302,10,2,1984)
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "inE" = (
 /obj/machinery/door/airlock/glass_cone,
 /turf/simulated/floor/plating{
@@ -7492,7 +7474,7 @@
 /area/cadiaoutpost/oa/hallway/centralhall)
 "iAq" = (
 /turf/simulated/floor/fancyfloor/carpet,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "iAP" = (
 /obj/structure/sign/mechanicus{
 	pixel_y = 30
@@ -7596,7 +7578,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "iHr" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 1
@@ -7605,7 +7587,7 @@
 	color = "grey";
 	icon_state = "dark1"
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "iHY" = (
 /obj/structure/table/rack/dark,
 /obj/item/device/camera,
@@ -7778,7 +7760,7 @@
 	color = "grey";
 	icon_state = "dark1"
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "iQF" = (
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/medicae)
@@ -7957,7 +7939,7 @@
 	pixel_x = -32
 	},
 /turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "iYG" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -8043,7 +8025,7 @@
 	icon_state = "bulb1"
 	},
 /turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "jdP" = (
 /obj/effect/floor_decal/newcorner/white{
 	dir = 8
@@ -8065,7 +8047,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "jeb" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 9
@@ -8079,9 +8061,6 @@
 	},
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"jeJ" = (
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "jfa" = (
 /obj/structure/sink{
 	dir = 4;
@@ -8184,7 +8163,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "jnr" = (
 /obj/effect/decal/cleanable/cobweb2{
 	dir = 4
@@ -8223,7 +8202,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "joQ" = (
 /obj/effect/decal/cleanable/cobweb{
 	dir = 4
@@ -8256,7 +8235,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "jpv" = (
 /obj/structure/bed/barrack,
 /obj/structure/bed/barrack1,
@@ -8268,7 +8247,7 @@
 "jpF" = (
 /obj/structure/bed/chair/wood/fancy/comfy2,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "jqp" = (
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
@@ -8350,7 +8329,7 @@
 	pixel_y = 10
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "jwV" = (
 /obj/effect/floor_decal/newcorner/red{
 	dir = 4
@@ -8721,7 +8700,7 @@
 /obj/item/cell/lasgun,
 /obj/item/cell/lasgun,
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "jQb" = (
 /turf/simulated/floor/factory_floor{
 	dir = 8
@@ -8811,7 +8790,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "jTZ" = (
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/research/robotics)
@@ -8902,7 +8881,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "kbt" = (
 /obj/effect/floor_decal/newcorner/stone,
 /obj/machinery/door/unpowered/jail_door{
@@ -9078,7 +9057,7 @@
 /obj/item/clothing/head/helmet/guardhelmet,
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "kjU" = (
 /obj/item/fluff_items/skull{
 	pixel_x = 13;
@@ -9135,10 +9114,6 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
-"klj" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
 "klz" = (
 /turf/unsimulated/wall/fakeglass{
@@ -9224,7 +9199,7 @@
 /obj/random/loot/tech2,
 /obj/random/loot/guardgear,
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "kpA" = (
 /obj/structure/bed/chair/cage,
 /obj/effect/decal/remains,
@@ -9431,7 +9406,7 @@
 	},
 /obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/stone/old4,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "kCf" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 1
@@ -9589,7 +9564,7 @@
 	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "kMW" = (
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /turf/simulated/floor/tiled{
@@ -9633,7 +9608,7 @@
 	name = "Creative Torture Tools"
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "kPj" = (
 /obj/structure/sign/plate{
 	pixel_y = -32
@@ -9806,7 +9781,7 @@
 /obj/random/loot/badweaponlas,
 /obj/random/loot/badweapon,
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "kXt" = (
 /turf/simulated/floor/ceramic/surgery2{
 	dir = 4
@@ -9841,7 +9816,7 @@
 	access = list(264)
 	},
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "kZh" = (
 /obj/structure/sign/inkvd{
 	color = "grey";
@@ -10271,9 +10246,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
-"lDM" = (
-/turf/simulated/wall/castle,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "lDU" = (
 /obj/machinery/light{
 	dir = 1;
@@ -10312,15 +10284,12 @@
 /obj/item/clothing/head/helmet/hauberk,
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"lEG" = (
-/turf/simulated/floor/stone/old4,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "lEY" = (
 /obj/effect/floor_decal/turf/bar2,
 /obj/effect/floor_decal/turf/big_cables1,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "lFF" = (
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -10359,7 +10328,7 @@
 	color = "grey";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "lHF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/shieldgen,
@@ -10400,9 +10369,6 @@
 /obj/machinery/computer/prisoner,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
-"lLo" = (
-/turf/simulated/floor/tiled,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
 "lLz" = (
 /obj/structure/table/rack/dark,
 /obj/item/reagent_containers/dropper{
@@ -10446,7 +10412,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "lNe" = (
 /obj/structure/hivedecor/sarcofagus{
 	pixel_y = 8
@@ -10682,7 +10648,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/fancyfloor/marble,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "lZD" = (
 /obj/effect/floor_decal/newcorner/step,
 /turf/simulated/floor/ceramic/blackstone,
@@ -10859,7 +10825,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "mmh" = (
 /obj/effect/floor_decal/turf/metal/seven,
 /obj/effect/decal/cleanable/blood,
@@ -10913,7 +10879,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "mpM" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/book/manual/chef_recipes,
@@ -11112,7 +11078,7 @@
 "mDL" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "mEi" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /obj/structure/table/rack/dark,
@@ -11309,7 +11275,7 @@
 	color = "grey";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "mOf" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 5
@@ -11355,7 +11321,7 @@
 	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "mQD" = (
 /obj/effect/floor_decal/newcorner/red/quarter,
 /obj/effect/floor_decal/newcorner/plating/corner{
@@ -11619,13 +11585,13 @@
 /turf/simulated/floor/factory_floor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "ndZ" = (
 /obj/item/card/id/key/grand/inq{
 	access = list(5,63,333,331,230,211,202,302,10,2,1984)
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "nex" = (
 /obj/machinery/floodlight,
 /turf/simulated/floor/stone/old4,
@@ -11802,15 +11768,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
-"nri" = (
-/obj/machinery/light/small/red{
-	dir = 8;
-	icon_state = "bulb1"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
 "nrm" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 8;
@@ -11905,7 +11862,7 @@
 	dir = 9
 	},
 /turf/simulated/floor/tiled,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "nvT" = (
 /obj/machinery/light{
 	dir = 8
@@ -12013,7 +11970,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "nzO" = (
 /obj/structure/bed/chair,
 /turf/simulated/floor/tiled/white,
@@ -12070,7 +12027,7 @@
 /obj/item/soap/syndie,
 /obj/item/plastique,
 /turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "nCl" = (
 /obj/machinery/light/blue,
 /obj/item/reagent_containers/food/drinks/bottle/amasecexpensive{
@@ -12088,7 +12045,7 @@
 	},
 /obj/item/pen,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "nCv" = (
 /obj/machinery/dnaforensics,
 /turf/simulated/floor/tiled{
@@ -12136,7 +12093,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "nEH" = (
 /obj/structure/sink{
 	color = "grey";
@@ -12164,7 +12121,7 @@
 	name = "Monitoring Room"
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "nHh" = (
 /obj/random/junk,
 /turf/simulated/floor/darkwood/rotten,
@@ -12524,7 +12481,7 @@
 	light_color = "#234F1E"
 	},
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "odh" = (
 /obj/effect/floor_decal/spline/fancy/wood/corner{
 	dir = 8
@@ -12601,7 +12558,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "ofN" = (
 /mob/living/simple_animal/hostile/syndicate/ranged/space/cpt{
 	canmove = 0
@@ -12675,7 +12632,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "oll" = (
 /obj/effect/water/top,
 /obj/effect/water/bottom,
@@ -12741,7 +12698,7 @@
 	name = "autoinjector(MB)"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "omD" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 8;
@@ -12788,7 +12745,7 @@
 	},
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/wall/seolite,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "ooD" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -12819,7 +12776,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "opw" = (
 /obj/structure/closet/crate,
 /turf/simulated/floor/tiled{
@@ -12835,7 +12792,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "orJ" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 1;
@@ -13049,7 +13006,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "oER" = (
 /obj/effect/floor_decal/newcorner/shaft{
 	dir = 4
@@ -13162,7 +13119,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "oII" = (
 /obj/structure/hivedecor/sarcofagus2,
 /obj/structure/sign/plate/written{
@@ -13279,7 +13236,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "oQT" = (
 /obj/item/material/ashtray/glass,
 /obj/structure/table/graf/wood_office_table{
@@ -13365,7 +13322,7 @@
 	},
 /obj/machinery/vending/security,
 /turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "oXL" = (
 /obj/effect/floor_decal/newcorner/red/corner{
 	dir = 4
@@ -13633,12 +13590,12 @@
 	desc = "This is a metal pipe.  Can be made into lots of stuff, make sure not to drop it."
 	},
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "pnr" = (
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "pnS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/red,
@@ -13712,7 +13669,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "ptI" = (
 /obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/stone,
@@ -13730,7 +13687,7 @@
 	color = "grey";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "pui" = (
 /obj/machinery/cell_charger{
 	color = "grey"
@@ -13838,7 +13795,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "pAT" = (
 /obj/machinery/light/purple,
 /obj/effect/floor_decal/newcorner/plating{
@@ -13876,7 +13833,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/fancyfloor/marble,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "pDm" = (
 /obj/item/reagent_containers/spray/sterilizine{
 	pixel_x = -6
@@ -13909,7 +13866,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "pEu" = (
 /obj/structure/torchwall/service{
 	dir = 4;
@@ -14044,7 +14001,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "pIb" = (
 /obj/item/melee/sword/broadsword/adamantine{
 	name = "sabbat's flame"
@@ -14219,7 +14176,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "pQa" = (
 /obj/structure/bed/chair/stool2,
 /obj/effect/floor_decal/newcorner/plating{
@@ -14227,7 +14184,7 @@
 	icon_state = "plating"
 	},
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "pQg" = (
 /obj/structure/bed/chair/cage,
 /obj/effect/decal/remains,
@@ -14322,7 +14279,7 @@
 	name = "Storage Room"
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "pUs" = (
 /obj/item/remains/human{
 	color = "grey"
@@ -14354,7 +14311,7 @@
 	maxhealth = 1000
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "pYB" = (
 /obj/effect/floor_decal/newcorner/stone/corner,
 /obj/effect/floor_decal/newcorner/stone/corner{
@@ -14393,7 +14350,7 @@
 	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "qbz" = (
 /obj/item/book/tome,
 /obj/effect/decal/cleanable/cobweb,
@@ -14427,7 +14384,7 @@
 /turf/unsimulated/wall{
 	icon_state = "r_wall-2"
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "qew" = (
 /obj/structure/torchwall/service{
 	dir = 1;
@@ -14458,7 +14415,7 @@
 /obj/item/reagent_containers/food/snacks/foodtray,
 /obj/item/reagent_containers/food/snacks/foodtray,
 /turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "qjY" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /turf/simulated/floor/darkwood/rotten,
@@ -14516,7 +14473,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "qmc" = (
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /obj/structure/table/steel_reinforced,
@@ -14524,7 +14481,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "qmh" = (
 /obj/random/loot/goodweapon,
 /obj/structure/closet/hive/iron_c{
@@ -14695,7 +14652,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "qsP" = (
 /obj/effect/floor_decal/newcorner/blue/diagonal,
 /obj/structure/bed/roller,
@@ -14736,7 +14693,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/stone/old4,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "qxO" = (
 /obj/item/reagent_containers/glass/beaker/large,
 /obj/structure/table/graf/big_wood_table,
@@ -14797,7 +14754,7 @@
 /obj/item/clothing/head/inqhelm,
 /obj/item/clothing/head/inqhelm/rare,
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "qBW" = (
 /obj/item/stool{
 	color = "grey"
@@ -14861,7 +14818,7 @@
 	color = "grey";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "qEB" = (
 /obj/effect/decal/cleanable/cobweb{
 	dir = 8
@@ -15022,7 +14979,7 @@
 "qMB" = (
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "qMW" = (
 /obj/effect/floor_decal/newcorner/blue,
 /turf/simulated/floor/tiled{
@@ -15045,7 +15002,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "qPl" = (
 /obj/structure/warfare/barricade/concrete_barrier{
 	dir = 4
@@ -15069,7 +15026,7 @@
 /obj/effect/floor_decal/turf/grimy,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "qPS" = (
 /obj/machinery/door/blast/id_door/open{
 	id = null
@@ -15129,7 +15086,7 @@
 	armor = list("melee"=45,"bullet"=45,"laser"=45,"energy"=15,"bomb"=10,"bio"=5,"rad"=5)
 	},
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "qRo" = (
 /obj/machinery/light/small/red{
 	dir = 1;
@@ -15500,7 +15457,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "rio" = (
 /obj/structure/torchwall{
 	dir = 8;
@@ -15518,7 +15475,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "rjA" = (
 /obj/structure/table/rack/dark,
 /obj/item/reagent_containers/food/drinks/bottle/amasecpoor{
@@ -15526,7 +15483,7 @@
 	},
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/wall/seolite,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "rjH" = (
 /obj/effect/decal/cleanable/cobweb{
 	dir = 4
@@ -15572,7 +15529,7 @@
 	icon_state = "bulb1"
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "rmT" = (
 /obj/item/reagent_containers/food/drinks/glass2/chaos/slannesh,
 /obj/structure/table/graf/pagan,
@@ -15596,8 +15553,9 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "ros" = (
-/turf/simulated/wall/seolite,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/obj/structure/table/rack/dark,
+/turf/unsimulated/miningtime,
+/area/cadiaoutpost/new_hive/caves)
 "roL" = (
 /obj/effect/decal/cleanable/cobweb{
 	dir = 1
@@ -15728,7 +15686,7 @@
 	color = "grey";
 	icon_state = "dark1"
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "rsj" = (
 /obj/structure/closet/l3closet/virology,
 /turf/simulated/floor/factory_floor,
@@ -15925,7 +15883,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "rEr" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -15966,7 +15924,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "rHa" = (
 /obj/structure/table/rack/dark,
 /obj/random/loot/randomammosidearm,
@@ -15993,7 +15951,7 @@
 	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "rHK" = (
 /obj/machinery/disease2/antibodyanalyser,
 /obj/effect/floor_decal/newcorner/whitegreen/solid,
@@ -16081,7 +16039,7 @@
 "rNj" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "rNx" = (
 /obj/structure/table/rack/dark,
 /obj/item/staff/ministorumstaff{
@@ -16233,7 +16191,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/fancyfloor/marble,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "rYi" = (
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/villageinside/lab)
@@ -16255,7 +16213,7 @@
 	pixel_y = 32
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "sba" = (
 /obj/structure/window/reinforced{
 	color = "grey"
@@ -16305,7 +16263,7 @@
 	},
 /obj/effect/landmark/start/inqmagi,
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "scw" = (
 /obj/machinery/light{
 	dir = 1
@@ -16375,7 +16333,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "skn" = (
 /obj/item/reagent_containers/food/snacks/warfare{
 	pixel_x = 10
@@ -16398,7 +16356,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "skZ" = (
 /obj/effect/landmark/start/inqmagi/enforcercadet,
 /turf/simulated/floor/darkwood,
@@ -16459,14 +16417,14 @@
 	dir = 8
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "sqq" = (
 /obj/effect/floor_decal/turf/bar2,
 /obj/effect/floor_decal/turf/big_cables1{
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "sqt" = (
 /obj/effect/floor_decal/newcorner/train,
 /turf/simulated/floor/darkfloor{
@@ -16479,7 +16437,7 @@
 	icon_state = "plating"
 	},
 /turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "sqP" = (
 /obj/structure/closet/crate/secure/large,
 /obj/random/exploration,
@@ -16675,16 +16633,16 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "sBg" = (
 /obj/machinery/door/unpowered/inn{
 	name = "Interrogation"
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "sBt" = (
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "sCf" = (
 /obj/structure/table/rack/shelf{
 	color = "grey"
@@ -16766,7 +16724,7 @@
 	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "sGn" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 1
@@ -16817,7 +16775,7 @@
 	},
 /obj/structure/table/graf/big_wood_table,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "sIV" = (
 /obj/random/junk,
 /turf/simulated/floor/tiled{
@@ -16900,7 +16858,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "sOL" = (
 /obj/structure/bed/chair{
 	dir = 8
@@ -16944,7 +16902,7 @@
 	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "sQF" = (
 /obj/structure/toilet{
 	dir = 4
@@ -17007,7 +16965,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "sTa" = (
 /obj/structure/closet/crate/secure/weapon,
 /obj/random/loot/badweaponlas,
@@ -17023,7 +16981,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "sTm" = (
 /obj/random/glasses,
 /obj/random/junk,
@@ -17118,11 +17076,11 @@
 	},
 /obj/effect/floor_decal/spline/fancy/wood/three_quarters,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "sYw" = (
 /obj/structure/bed/chair/stool2,
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "sZK" = (
 /obj/effect/floor_decal/newcorner/stone/corner,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -17152,7 +17110,7 @@
 	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "tbI" = (
 /obj/structure/closet/crate/miner,
 /turf/simulated/floor/stone,
@@ -17190,7 +17148,7 @@
 /obj/item/handcuffs,
 /obj/item/gun/energy/taser,
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "tff" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 1
@@ -17264,7 +17222,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "tjw" = (
 /obj/structure/table/graf/pagan,
 /obj/structure/sign/chaos{
@@ -17364,7 +17322,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "trt" = (
 /obj/random/loot/randomammo1,
 /obj/structure/table/rack/dark,
@@ -17465,7 +17423,7 @@
 /obj/item/clothing/under/rank/penitent,
 /obj/item/clothing/under/rank/penitent,
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "tvW" = (
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 900;
@@ -17661,7 +17619,7 @@
 	pixel_y = -4
 	},
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "tFJ" = (
 /obj/item/ammo_box/shotgun/msslug,
 /obj/item/ammo_magazine/c44/ap,
@@ -17681,7 +17639,7 @@
 /obj/item/ammo_box/shotgun/msslug,
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "tFV" = (
 /obj/effect/floor_decal/newcorner/reinforced,
 /turf/simulated/floor/tiled{
@@ -17724,7 +17682,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "tId" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -17740,7 +17698,7 @@
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 10
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "tIO" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -17780,7 +17738,7 @@
 	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "tNS" = (
 /obj/structure/torchwall{
 	dir = 1;
@@ -18123,7 +18081,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "udd" = (
 /obj/structure/hivedecor/sarcofagus2{
 	pixel_y = 8
@@ -18183,7 +18141,7 @@
 	pixel_x = -10
 	},
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "uhe" = (
 /obj/effect/floor_decal/spline/plain,
 /turf/simulated/floor/darkwood,
@@ -18254,7 +18212,7 @@
 	light_color = "#234F1E"
 	},
 /turf/simulated/floor/fancyfloor/marble,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "unN" = (
 /obj/machinery/door/airlock/highsecurity/lord,
 /turf/simulated/floor/factory_floor,
@@ -18270,7 +18228,7 @@
 	maxhealth = 1000
 	},
 /turf/simulated/floor/tiled,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "uru" = (
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/farm)
@@ -18345,7 +18303,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "uwP" = (
 /obj/necrofleshmouth,
 /obj/item/newore/gems/topaz/cut,
@@ -18359,7 +18317,7 @@
 	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/tiled,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "uxy" = (
 /obj/structure/table/rack/shelf,
 /obj/item/newore/coalore,
@@ -18656,12 +18614,6 @@
 /obj/structure/stairs/west,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/caves)
-"uRo" = (
-/obj/random/trash,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
 "uRO" = (
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/villageinside/lab)
@@ -18686,7 +18638,7 @@
 	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "uUK" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 6;
@@ -18783,7 +18735,7 @@
 	pixel_x = -32
 	},
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "vdp" = (
 /obj/machinery/light/small/red,
 /turf/simulated/floor/tiled{
@@ -18808,7 +18760,7 @@
 	icon_state = "bulb1"
 	},
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "vep" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 10
@@ -18909,7 +18861,7 @@
 	color = "grey";
 	icon_state = "dark1"
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "vln" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/device/taperecorder,
@@ -18919,7 +18871,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "vlE" = (
 /obj/machinery/light/small{
 	icon_state = "bulb1";
@@ -18994,7 +18946,7 @@
 	},
 /obj/effect/floor_decal/newcorner/plating,
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "vrp" = (
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 1200;
@@ -19068,11 +19020,11 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "vxx" = (
 /obj/structure/flora/yes/wooden_tv,
 /turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "vye" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 6
@@ -19228,7 +19180,7 @@
 	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "vHc" = (
 /obj/structure/shipdecor{
 	icon_state = "off";
@@ -19266,7 +19218,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "vIq" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 4
@@ -19360,7 +19312,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "vOc" = (
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/tiled{
@@ -19484,7 +19436,7 @@
 "vUf" = (
 /obj/structure/table/gamblingtable,
 /turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "vUl" = (
 /obj/structure/hivedecor/sarcofagus,
 /turf/simulated/floor/ceramic,
@@ -19525,11 +19477,11 @@
 /turf/simulated/floor/factory_floor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "vXb" = (
 /obj/structure/bed/chair/torture,
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "vXL" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -19705,7 +19657,7 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "wkG" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 8;
@@ -19816,7 +19768,7 @@
 	icon_state = "open"
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "wrm" = (
 /obj/effect/decal/cleanable/cobweb{
 	dir = 8
@@ -19884,7 +19836,7 @@
 	maxhealth = 1000
 	},
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "wws" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 1
@@ -20079,7 +20031,7 @@
 	pixel_x = 8
 	},
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "wKF" = (
 /obj/effect/floor_decal/newcorner/stone,
 /obj/effect/floor_decal/newcorner/nbar,
@@ -20111,7 +20063,7 @@
 	color = "grey";
 	icon_state = "white1"
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "wLr" = (
 /obj/structure/sign/plate{
 	pixel_x = -32
@@ -20193,7 +20145,7 @@
 	icon_state = "bulb1"
 	},
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "wOc" = (
 /obj/structure/toilet{
 	color = "grey";
@@ -20318,7 +20270,7 @@
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 6
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "wUD" = (
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -20459,7 +20411,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 8
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "wZD" = (
 /obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
@@ -20585,7 +20537,7 @@
 	maxhealth = 1000
 	},
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "xgu" = (
 /obj/item/pyre/self_lit,
 /turf/simulated/floor/stone,
@@ -20771,13 +20723,13 @@
 	maxhealth = 1000
 	},
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/area/cadiaoutpost/new_hive/caves)
 "xnK" = (
 /obj/machinery/door/unpowered/inn{
 	name = "Interrogator Quarters"
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "xpa" = (
 /obj/structure/table/steel_reinforced,
 /obj/structure/reagent_dispensers/virusfood{
@@ -20903,7 +20855,7 @@
 /turf/unsimulated/wall{
 	icon_state = "r_wall-2"
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/oa/service/chapel/recovery)
 "xwF" = (
 /obj/structure/table/rack,
 /obj/item/ingots/silveringot,
@@ -21002,7 +20954,7 @@
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "xAj" = (
 /obj/item/paper/crumpled{
 	desc = "A standard document to be filled in with details of arrests, executions and incidents in town for the Administratum.";
@@ -21236,8 +21188,10 @@
 /turf/simulated/floor/greengrid,
 /area/cadiaoutpost/oa/caves/dark)
 "xOf" = (
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/farm)
+/turf/unsimulated/wall{
+	icon_state = "r_wall-2"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "xOg" = (
 /obj/effect/floor_decal/newcorner/plating,
 /turf/simulated/floor/darkfloor{
@@ -21262,7 +21216,7 @@
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
 "xQQ" = (
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "xRg" = (
 /obj/effect/floor_decal/newcorner/whitegreen/diagonal,
 /obj/machinery/light{
@@ -21445,7 +21399,7 @@
 	maxhealth = 9000
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "ycd" = (
 /obj/structure/barbwire{
 	color = "grey"
@@ -21500,7 +21454,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "yer" = (
 /obj/item/reagent_containers/food/drinks/glass2/chaos,
 /obj/structure/table/graf/pagan,
@@ -21543,9 +21497,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"ygz" = (
-/turf/unsimulated/mineral,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "ygH" = (
 /obj/effect/water/bottom,
 /obj/effect/water/top,
@@ -21581,7 +21532,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "ylv" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -21591,7 +21542,7 @@
 "ylz" = (
 /obj/item/soap/soapimp,
 /turf/simulated/floor/fancyfloor/gray_white,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/new_hive/caves)
 "ylD" = (
 /obj/structure/toilet{
 	dir = 8;
@@ -21861,7 +21812,6 @@ slE
 slE
 slE
 slE
-dJC
 "}
 (2,1,1) = {"
 slE
@@ -22114,7 +22064,6 @@ slE
 slE
 slE
 slE
-dJC
 "}
 (3,1,1) = {"
 slE
@@ -22367,7 +22316,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (4,1,1) = {"
 slE
@@ -22620,7 +22568,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (5,1,1) = {"
 slE
@@ -22873,7 +22820,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (6,1,1) = {"
 slE
@@ -23126,7 +23072,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (7,1,1) = {"
 slE
@@ -23379,7 +23324,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (8,1,1) = {"
 slE
@@ -23632,7 +23576,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (9,1,1) = {"
 slE
@@ -23885,7 +23828,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (10,1,1) = {"
 slE
@@ -24138,7 +24080,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (11,1,1) = {"
 slE
@@ -24391,7 +24332,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (12,1,1) = {"
 slE
@@ -24644,7 +24584,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (13,1,1) = {"
 slE
@@ -24897,7 +24836,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (14,1,1) = {"
 slE
@@ -25150,7 +25088,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (15,1,1) = {"
 slE
@@ -25403,7 +25340,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (16,1,1) = {"
 slE
@@ -25656,7 +25592,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (17,1,1) = {"
 slE
@@ -25909,7 +25844,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (18,1,1) = {"
 slE
@@ -26162,7 +26096,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (19,1,1) = {"
 slE
@@ -26415,7 +26348,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (20,1,1) = {"
 slE
@@ -26668,7 +26600,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (21,1,1) = {"
 slE
@@ -26921,7 +26852,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (22,1,1) = {"
 slE
@@ -27174,7 +27104,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (23,1,1) = {"
 slE
@@ -27427,7 +27356,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (24,1,1) = {"
 slE
@@ -27680,7 +27608,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (25,1,1) = {"
 slE
@@ -27933,7 +27860,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (26,1,1) = {"
 slE
@@ -28186,7 +28112,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (27,1,1) = {"
 slE
@@ -28439,7 +28364,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (28,1,1) = {"
 slE
@@ -28692,7 +28616,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (29,1,1) = {"
 slE
@@ -28945,7 +28868,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (30,1,1) = {"
 slE
@@ -29198,7 +29120,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (31,1,1) = {"
 slE
@@ -29451,7 +29372,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (32,1,1) = {"
 slE
@@ -29704,7 +29624,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (33,1,1) = {"
 slE
@@ -29957,7 +29876,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (34,1,1) = {"
 slE
@@ -30210,7 +30128,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (35,1,1) = {"
 slE
@@ -30463,7 +30380,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (36,1,1) = {"
 slE
@@ -30716,7 +30632,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (37,1,1) = {"
 slE
@@ -30969,7 +30884,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (38,1,1) = {"
 slE
@@ -31222,7 +31136,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (39,1,1) = {"
 slE
@@ -31475,7 +31388,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (40,1,1) = {"
 slE
@@ -31728,7 +31640,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (41,1,1) = {"
 slE
@@ -31981,7 +31892,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (42,1,1) = {"
 slE
@@ -32234,7 +32144,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (43,1,1) = {"
 slE
@@ -32487,7 +32396,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (44,1,1) = {"
 slE
@@ -32740,7 +32648,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (45,1,1) = {"
 slE
@@ -32993,7 +32900,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (46,1,1) = {"
 slE
@@ -33246,7 +33152,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (47,1,1) = {"
 slE
@@ -33499,7 +33404,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (48,1,1) = {"
 slE
@@ -33752,7 +33656,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (49,1,1) = {"
 slE
@@ -34005,7 +33908,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (50,1,1) = {"
 slE
@@ -34258,7 +34160,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (51,1,1) = {"
 slE
@@ -34511,7 +34412,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (52,1,1) = {"
 slE
@@ -34764,7 +34664,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (53,1,1) = {"
 slE
@@ -35017,7 +34916,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (54,1,1) = {"
 slE
@@ -35523,7 +35421,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (56,1,1) = {"
 slE
@@ -35776,7 +35673,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (57,1,1) = {"
 slE
@@ -36029,7 +35925,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (58,1,1) = {"
 slE
@@ -36282,7 +36177,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (59,1,1) = {"
 slE
@@ -36535,7 +36429,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (60,1,1) = {"
 slE
@@ -36788,7 +36681,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (61,1,1) = {"
 slE
@@ -37041,7 +36933,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (62,1,1) = {"
 slE
@@ -37294,7 +37185,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (63,1,1) = {"
 slE
@@ -37547,7 +37437,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (64,1,1) = {"
 slE
@@ -37800,7 +37689,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (65,1,1) = {"
 slE
@@ -38053,7 +37941,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (66,1,1) = {"
 slE
@@ -38152,27 +38039,27 @@ tOB
 tOB
 tOB
 tOB
-hkY
-hkY
-ygz
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
+tOB
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 slE
 tOB
 tOB
@@ -38306,7 +38193,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (67,1,1) = {"
 slE
@@ -38405,27 +38291,27 @@ tOB
 tOB
 tOB
 tOB
-hkY
-hkY
-ygz
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-xvE
-xvE
-xvE
-xvE
-xvE
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
+tOB
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+xOf
+xOf
+xOf
+xOf
+xOf
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 slE
 tOB
 tOB
@@ -38559,7 +38445,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (68,1,1) = {"
 slE
@@ -38658,27 +38543,27 @@ tOB
 tOB
 tOB
 tOB
-hkY
-hkY
-ygz
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-xvE
+tOB
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+xOf
 sck
-eWh
+hPQ
 teK
-xvE
-xvE
-xvE
-xvE
-xvE
-xvE
-hkY
+xOf
+xOf
+xOf
+xOf
+xOf
+xOf
+tOB
 slE
 tOB
 tOB
@@ -38812,7 +38697,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (69,1,1) = {"
 slE
@@ -38911,27 +38795,27 @@ tOB
 tOB
 tOB
 tOB
-hkY
-hkY
-ygz
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-xvE
+tOB
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+xOf
 rmy
 ndZ
 spl
-xvE
-xvE
+xOf
+xOf
 jPP
 kWK
 gDh
-xvE
-xvE
+xOf
+xOf
 slE
 tOB
 tOB
@@ -39065,7 +38949,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (70,1,1) = {"
 slE
@@ -39164,27 +39047,27 @@ tOB
 tOB
 tOB
 tOB
-hkY
-hkY
-ygz
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-xvE
+tOB
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+xOf
 inu
-eWh
+hPQ
 kpo
-xvE
-xvE
+xOf
+xOf
 yeq
 yeq
 sTb
 tvU
-xvE
+xOf
 slE
 tOB
 tOB
@@ -39318,7 +39201,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (71,1,1) = {"
 slE
@@ -39417,27 +39299,27 @@ tOB
 tOB
 tOB
 slE
-ygz
-ygz
-ygz
-hkY
-hkY
-xvE
-xvE
-xvE
-xvE
-xvE
-xvE
-xvE
+slE
+slE
+slE
+tOB
+tOB
+xOf
+xOf
+xOf
+xOf
+xOf
+xOf
+xOf
 xnK
-xvE
-xvE
-xvE
+xOf
+xOf
+xOf
 pnr
 oQD
 tHC
 qRc
-xvE
+xOf
 slE
 tOB
 tOB
@@ -39571,7 +39453,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (72,1,1) = {"
 slE
@@ -39670,12 +39551,12 @@ tOB
 tOB
 tOB
 slE
-hkY
-xvE
-xvE
-xvE
-xvE
-xvE
+tOB
+xOf
+xOf
+xOf
+xOf
+xOf
 sYv
 pEl
 sBt
@@ -39685,12 +39566,12 @@ sBt
 sBt
 pEl
 sYv
-xvE
+xOf
 pnr
 sBc
 tHC
 wKi
-xvE
+xOf
 slE
 tOB
 tOB
@@ -39824,7 +39705,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (73,1,1) = {"
 slE
@@ -39923,12 +39803,12 @@ tOB
 tOB
 tOB
 slE
-xvE
-xvE
+xOf
+xOf
 jdT
 ncM
 vWA
-xvE
+xOf
 sBt
 sBt
 sBt
@@ -39943,7 +39823,7 @@ pnr
 rGr
 tHC
 elS
-xvE
+xOf
 slE
 tOB
 tOB
@@ -40077,7 +39957,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (74,1,1) = {"
 slE
@@ -40176,27 +40055,27 @@ tOB
 tOB
 tOB
 slE
-xvE
+xOf
 wZA
 pCN
 lZa
 lZa
-jeJ
+lBK
 omu
 sBt
 sBt
 bQg
 bQg
-xvE
-xvE
-xvE
-xvE
-xvE
+xOf
+xOf
+xOf
+xOf
+xOf
 pzZ
 pzZ
 bMN
 kjO
-xvE
+xOf
 slE
 tOB
 tOB
@@ -40330,7 +40209,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (75,1,1) = {"
 slE
@@ -40429,27 +40307,27 @@ tOB
 tOB
 tOB
 slE
-xvE
+xOf
 opq
 rXZ
 ulO
 bXi
-jeJ
+lBK
 sBt
 sBt
 jpF
 eWp
 sHY
-xvE
-xvE
-hkY
-hkY
-xvE
+xOf
+xOf
+tOB
+tOB
+xOf
 tFJ
 ocZ
 qBI
-xvE
-xvE
+xOf
+xOf
 slE
 tOB
 tOB
@@ -40583,7 +40461,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (76,1,1) = {"
 slE
@@ -40682,27 +40559,27 @@ tOB
 tOB
 tOB
 slE
-xvE
-xvE
-xvE
-xvE
-xvE
-xvE
+xOf
+xOf
+xOf
+xOf
+xOf
+xOf
 rZR
 sBt
 jpF
 fGq
 nCl
-xvE
-ygz
-ygz
-hkY
-xvE
-xvE
-xvE
-xvE
-xvE
-xvE
+xOf
+slE
+slE
+tOB
+xOf
+xOf
+xOf
+xOf
+xOf
+xOf
 slE
 tOB
 tOB
@@ -40836,7 +40713,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (77,1,1) = {"
 slE
@@ -40935,27 +40811,27 @@ tOB
 tOB
 tOB
 slE
-hkY
-hkY
-xvE
+tOB
+tOB
+xOf
 iYB
 yku
-xvE
+xOf
 fMr
 fxb
 tIi
 hYy
 hYy
-xvE
+xOf
 qwl
-ygz
-ygz
-xvE
+slE
+slE
+xOf
 ugQ
 wOb
 tFG
-xvE
-hkY
+xOf
+tOB
 slE
 tOB
 tOB
@@ -41089,7 +40965,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (78,1,1) = {"
 slE
@@ -41188,27 +41063,27 @@ tOB
 tOB
 tOB
 slE
-hkY
-hkY
-xvE
+tOB
+tOB
+xOf
 jdh
 ylz
-ewz
+jCJ
 sBt
 xzY
 iAq
 sBt
 sBt
 ybV
-lEG
+xTz
 hxd
-hxd
-xvE
+slE
+xOf
 xQQ
 xQQ
 gyz
-xvE
-hkY
+xOf
+tOB
 slE
 tOB
 tOB
@@ -41342,7 +41217,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (79,1,1) = {"
 slE
@@ -41441,27 +41315,27 @@ tOB
 tOB
 tOB
 slE
-hkY
-hkY
-xvE
+tOB
+tOB
+xOf
 sqJ
 skH
-xvE
+xOf
 sBt
 dXq
 wUj
 sBt
 faj
-xvE
+xOf
 kAX
-ygz
-ygz
-xvE
+slE
+slE
+xOf
 xQQ
 xQQ
 pmn
-xvE
-hkY
+xOf
+tOB
 slE
 tOB
 tOB
@@ -41595,7 +41469,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (80,1,1) = {"
 slE
@@ -41694,27 +41567,27 @@ tOB
 tOB
 tOB
 slE
-hkY
-hkY
-xvE
+tOB
+tOB
+xOf
 btV
 hvG
-xvE
-xvE
+xOf
+xOf
 sYv
 sBt
 jvI
-xvE
-xvE
-ygz
-ygz
-hkY
-xvE
+xOf
+xOf
+slE
+slE
+tOB
+xOf
 xQQ
 dDz
 faW
-xvE
-hkY
+xOf
+tOB
 slE
 tOB
 tOB
@@ -41848,7 +41721,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (81,1,1) = {"
 slE
@@ -41947,27 +41819,27 @@ tOB
 tOB
 tOB
 slE
-xvE
-xvE
-xvE
-xvE
-xvE
-xvE
-xvE
-xvE
+xOf
+xOf
+xOf
+xOf
+xOf
+xOf
+xOf
+xOf
 nGs
-xvE
-xvE
-xvE
-xvE
-hkY
-xvE
-xvE
+xOf
+xOf
+xOf
+xOf
+tOB
+xOf
+xOf
 kPd
-xvE
-xvE
-xvE
-hkY
+xOf
+xOf
+xOf
+tOB
 slE
 tOB
 tOB
@@ -42101,7 +41973,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (82,1,1) = {"
 slE
@@ -42200,27 +42071,27 @@ tOB
 tOB
 tOB
 slE
-xvE
+xOf
 qEy
 vld
 iae
 wLi
-xvE
+xOf
 dbF
 dQV
 rEe
 vln
-xvE
-xvE
-xvE
-xvE
-xvE
+xOf
+xOf
+xOf
+xOf
+xOf
 joM
 pnr
 ptj
-xvE
-xvE
-xvE
+xOf
+xOf
+xOf
 slE
 tOB
 tOB
@@ -42354,7 +42225,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (83,1,1) = {"
 slE
@@ -42453,11 +42323,11 @@ tOB
 tOB
 tOB
 slE
-xvE
+xOf
 mMI
 iHr
 axZ
-bVj
+qEY
 pTN
 rEe
 rEe
@@ -42466,14 +42336,14 @@ rEe
 hgE
 qmc
 duU
-xvE
+xOf
 uwH
 mpJ
 udc
 bDh
 pnr
 dYN
-xvE
+xOf
 slE
 tOB
 tOB
@@ -42607,7 +42477,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (84,1,1) = {"
 slE
@@ -42706,12 +42575,12 @@ tOB
 tOB
 tOB
 slE
-xvE
+xOf
 aMl
 iHr
 axZ
 bPU
-xvE
+xOf
 rEe
 cuC
 cuC
@@ -42719,14 +42588,14 @@ cuC
 cuC
 gFF
 ria
-xvE
+xOf
 qlG
 vNG
 vXb
 iHq
 pnr
 sSO
-xvE
+xOf
 slE
 tOB
 tOB
@@ -42860,7 +42729,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (85,1,1) = {"
 slE
@@ -42959,12 +42827,12 @@ tOB
 tOB
 tOB
 slE
-xvE
+xOf
 lHe
 iQB
 rsi
 ptT
-xvE
+xOf
 rEe
 fvY
 rEe
@@ -42979,7 +42847,7 @@ aKQ
 jTE
 pnr
 pHW
-xvE
+xOf
 slE
 tOB
 tOB
@@ -43113,7 +42981,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (86,1,1) = {"
 slE
@@ -43212,16 +43079,16 @@ tOB
 tOB
 tOB
 slE
-xvE
-xvE
-xvE
-xvE
-xvE
-xvE
+xOf
+xOf
+xOf
+xOf
+xOf
+xOf
 sjk
 hFi
 kam
-xvE
+xOf
 riD
 riD
 riD
@@ -43230,9 +43097,9 @@ pnr
 oEF
 cFB
 pPj
-xvE
-xvE
-xvE
+xOf
+xOf
+xOf
 slE
 tOB
 tOB
@@ -43366,7 +43233,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (87,1,1) = {"
 slE
@@ -43465,27 +43331,27 @@ tOB
 tOB
 tOB
 slE
-ygz
-ygz
-ygz
-hkY
-hkY
-xvE
-xvE
-xvE
-xvE
-xvE
+slE
+slE
+slE
+tOB
+tOB
+xOf
+xOf
+xOf
+xOf
+xOf
 mjH
 mjH
 cku
-xvE
+xOf
 jpu
-xvE
-xvE
-xvE
-xvE
-xvE
-hkY
+xOf
+xOf
+xOf
+xOf
+xOf
+tOB
 slE
 tOB
 tOB
@@ -43619,7 +43485,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (88,1,1) = {"
 slE
@@ -43718,27 +43583,27 @@ tOB
 tOB
 tOB
 tOB
-hkY
-hkY
-ygz
-ygz
-ygz
-ygz
-ygz
-ygz
-ygz
-xvE
+tOB
+tOB
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+xOf
 dRw
 lMZ
 fmR
 ekh
 vIo
 ekh
-hkY
-hkY
-hkY
-hkY
-hkY
+tOB
+tOB
+tOB
+tOB
+tOB
 slE
 tOB
 tOB
@@ -43872,7 +43737,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (89,1,1) = {"
 slE
@@ -43971,27 +43835,27 @@ tOB
 tOB
 tOB
 tOB
-hkY
-hkY
-ygz
-hkY
-hkY
-hkY
-hkY
-hkY
-ygz
-xvE
-xvE
-xvE
-xvE
-xvE
+tOB
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+slE
+xOf
+xOf
+xOf
+xOf
+xOf
 pnr
-xvE
-hkY
-hkY
-hkY
-hkY
-hkY
+xOf
+tOB
+tOB
+tOB
+tOB
+tOB
 slE
 tOB
 tOB
@@ -44125,7 +43989,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (90,1,1) = {"
 slE
@@ -44224,27 +44087,27 @@ tOB
 tOB
 tOB
 tOB
-hkY
-hkY
-ygz
-hkY
-hkY
-hkY
-hkY
-hkY
-ygz
-ygz
-ygz
-ygz
-ygz
-xvE
+tOB
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+slE
+slE
+slE
+slE
+slE
+xOf
 pnr
-xvE
-xvE
-xvE
-hkY
-hkY
-hkY
+xOf
+xOf
+xOf
+tOB
+tOB
+tOB
 slE
 tOB
 tOB
@@ -44378,7 +44241,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (91,1,1) = {"
 slE
@@ -44477,27 +44339,27 @@ tOB
 tOB
 tOB
 tOB
-hkY
-hkY
-ygz
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-xvE
+ros
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+xOf
 pnr
 pnr
 pnr
-xvE
-hkY
-hkY
-hkY
+xOf
+tOB
+tOB
+tOB
 slE
 tOB
 tOB
@@ -44631,7 +44493,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (92,1,1) = {"
 slE
@@ -44730,27 +44591,27 @@ tOB
 tOB
 tOB
 tOB
-hkY
-hkY
-ygz
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-xvE
-xvE
-xvE
+tOB
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+xOf
+xOf
+xOf
 cdS
-xvE
-hkY
-hkY
-hkY
+xOf
+tOB
+tOB
+tOB
 slE
 tOB
 tOB
@@ -44884,7 +44745,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (93,1,1) = {"
 slE
@@ -44983,27 +44843,27 @@ tOB
 tOB
 tOB
 tOB
-hkY
-hkY
-ygz
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-xvE
+tOB
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+xOf
 oqQ
-xvE
-ygz
-ygz
-ygz
+xOf
+slE
+slE
+slE
 slE
 slE
 slE
@@ -45137,7 +44997,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (94,1,1) = {"
 slE
@@ -45236,25 +45095,25 @@ tOB
 tOB
 tOB
 tOB
-hkY
-hkY
-ygz
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-xvE
+tOB
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+xOf
 tif
-xvE
-hDE
+xOf
+slE
 bNq
 bNq
 bNq
@@ -45390,7 +45249,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (95,1,1) = {"
 slE
@@ -45489,25 +45347,25 @@ tOB
 tOB
 tOB
 tOB
-hkY
-hkY
-ygz
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-xvE
-xvE
-xvE
+tOB
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+xOf
+xOf
+xOf
 cdS
-xvE
-hDE
+xOf
+slE
 bNq
 qmq
 cKj
@@ -45643,7 +45501,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (96,1,1) = {"
 slE
@@ -45742,25 +45599,25 @@ tOB
 tOB
 tOB
 tOB
-hkY
-hkY
-ygz
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-xvE
+tOB
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+xOf
 pnr
 pnr
 pnr
-xvE
-hDE
+xOf
+slE
 bNq
 dBi
 gnr
@@ -45896,7 +45753,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (97,1,1) = {"
 slE
@@ -45995,25 +45851,25 @@ tOB
 tOB
 tOB
 tOB
-hkY
-hkY
-ygz
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
+tOB
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 ekh
 pnr
 ekh
-xvE
-xvE
-hDE
+xOf
+xOf
+slE
 bNq
 bNq
 bNq
@@ -46149,7 +46005,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (98,1,1) = {"
 slE
@@ -46248,25 +46103,25 @@ tOB
 tOB
 tOB
 tOB
-hkY
-hkY
-ygz
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-ygz
-ygz
-ygz
-ygz
+tOB
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+slE
+slE
+slE
+slE
 xvE
-pnr
+dJC
 xvE
-ygz
-ygz
-hDE
+slE
+slE
+slE
 bNq
 wjE
 wOF
@@ -46402,7 +46257,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (99,1,1) = {"
 slE
@@ -46501,25 +46355,25 @@ tOB
 tOB
 tOB
 tOB
-hkY
-hkY
-ygz
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-ygz
+tOB
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+slE
 bNq
 bNq
 bNq
 tdP
-pnr
+dJC
 xvE
-bmy
-bmy
-bmy
+tOB
+tOB
+tOB
 bNq
 qDB
 wOF
@@ -46655,7 +46509,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (100,1,1) = {"
 slE
@@ -46754,25 +46607,25 @@ tOB
 tOB
 tOB
 tOB
-hkY
-hkY
-ygz
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-ygz
+tOB
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+slE
 bNq
 vGJ
 dBi
 bNq
-pnr
-lDM
-bNq
-bNq
-bmy
+dJC
+liM
+liM
+liM
+tOB
 bNq
 nXf
 wOF
@@ -46908,7 +46761,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (101,1,1) = {"
 slE
@@ -47007,16 +46859,16 @@ tOB
 tOB
 tOB
 tOB
-hkY
-hkY
-ygz
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-ygz
+tOB
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+slE
 bNq
 ykg
 dBi
@@ -47161,7 +47013,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (102,1,1) = {"
 slE
@@ -47260,16 +47111,16 @@ tOB
 tOB
 tOB
 tOB
-hkY
-hkY
-ygz
-hkY
-hkY
-hkY
-hkY
-hkY
-hkY
-ygz
+tOB
+tOB
+slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+slE
 bNq
 syJ
 dBi
@@ -47414,7 +47265,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (103,1,1) = {"
 slE
@@ -47667,7 +47517,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (104,1,1) = {"
 slE
@@ -47920,7 +47769,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (105,1,1) = {"
 slE
@@ -48173,7 +48021,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (106,1,1) = {"
 slE
@@ -48426,7 +48273,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (107,1,1) = {"
 slE
@@ -48679,7 +48525,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (108,1,1) = {"
 slE
@@ -48932,7 +48777,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (109,1,1) = {"
 slE
@@ -49185,7 +49029,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (110,1,1) = {"
 slE
@@ -49438,7 +49281,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (111,1,1) = {"
 slE
@@ -49691,7 +49533,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (112,1,1) = {"
 slE
@@ -49944,7 +49785,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (113,1,1) = {"
 slE
@@ -50197,7 +50037,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (114,1,1) = {"
 slE
@@ -50450,7 +50289,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (115,1,1) = {"
 slE
@@ -50703,7 +50541,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (116,1,1) = {"
 slE
@@ -50956,7 +50793,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (117,1,1) = {"
 slE
@@ -51209,7 +51045,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (118,1,1) = {"
 slE
@@ -51462,7 +51297,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (119,1,1) = {"
 slE
@@ -51715,7 +51549,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (120,1,1) = {"
 slE
@@ -51814,18 +51647,18 @@ tOB
 tOB
 tOB
 tOB
-ros
-ros
-ros
-ros
-ros
-ros
-ros
-ros
-ros
-ros
-ros
-ros
+jGb
+jGb
+jGb
+jGb
+jGb
+jGb
+jGb
+jGb
+jGb
+jGb
+jGb
+jGb
 tOB
 tOB
 tOB
@@ -51968,7 +51801,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (121,1,1) = {"
 slE
@@ -52067,18 +51899,18 @@ tOB
 tOB
 tOB
 tOB
-ros
-rfN
+jGb
+wcj
 sGf
 qbd
 tbg
-ros
-ros
+jGb
+jGb
 hGy
 nDV
 oIy
 sNY
-ros
+jGb
 tOB
 tOB
 tOB
@@ -52221,7 +52053,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (122,1,1) = {"
 slE
@@ -52320,18 +52151,18 @@ tOB
 tOB
 tOB
 tOB
-ros
+jGb
 kLQ
 fqj
 fqj
 tNJ
 cWq
-ros
+jGb
 gJH
-wbz
+lFF
 evb
 sNY
-ros
+jGb
 tOB
 tOB
 tOB
@@ -52474,7 +52305,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (123,1,1) = {"
 slE
@@ -52573,18 +52403,18 @@ tOB
 tOB
 tOB
 tOB
-ros
+jGb
 vGP
 tNJ
 fqj
 sQp
 uUF
-ros
+jGb
 qsD
-wbz
+lFF
 nzB
 sNY
-ros
+jGb
 tOB
 tOB
 tOB
@@ -52727,7 +52557,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (124,1,1) = {"
 slE
@@ -52826,18 +52655,18 @@ tOB
 tOB
 tOB
 tOB
-ros
+jGb
 rHz
 fqj
 mQi
 fqj
 hgf
-ros
+jGb
 dsC
-wbz
+lFF
 oIy
 sNY
-ros
+jGb
 tOB
 tOB
 tOB
@@ -52980,7 +52809,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (125,1,1) = {"
 slE
@@ -53079,18 +52907,18 @@ tOB
 tOB
 tOB
 tOB
-ros
+jGb
 hEC
 sQp
 tNJ
 hVy
-ros
-ros
-ros
+jGb
+jGb
+jGb
 pWN
-ros
-ros
-ros
+jGb
+jGb
+jGb
 tOB
 tOB
 tOB
@@ -53233,7 +53061,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (126,1,1) = {"
 slE
@@ -53332,18 +53159,18 @@ tOB
 tOB
 tOB
 tOB
-ros
+jGb
 hEC
 fqj
 fqj
 iln
-ros
-lLo
+jGb
+jqp
 sqq
 sqq
-lLo
-klj
-ros
+jqp
+kJP
+jGb
 tOB
 tOB
 tOB
@@ -53486,7 +53313,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (127,1,1) = {"
 slE
@@ -53585,18 +53411,18 @@ tOB
 tOB
 tOB
 tOB
-ros
-ros
-ros
+jGb
+jGb
+jGb
 wqm
-ros
-ros
-lLo
-lLo
+jGb
+jGb
+jqp
+jqp
 uxq
-lLo
+jqp
 sqq
-ros
+jGb
 tOB
 tOB
 tOB
@@ -53739,7 +53565,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (128,1,1) = {"
 slE
@@ -53838,21 +53663,21 @@ slE
 tOB
 tOB
 tOB
-ros
+jGb
 jnb
 lEY
-lLo
-lLo
+jqp
+jqp
 nvP
-klj
-ros
-ros
+kJP
+jGb
+jGb
 pWN
-ros
-ros
-ros
-ros
-ros
+jGb
+jGb
+jGb
+jGb
+jGb
 tOB
 tOB
 tOB
@@ -53992,7 +53817,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (129,1,1) = {"
 slE
@@ -54091,21 +53915,21 @@ tOB
 tOB
 tOB
 tOB
-ros
-lLo
-lLo
+jGb
+jqp
+jqp
 uxq
-lLo
-klj
-ros
-ros
-ros
-dFi
+jqp
+kJP
+jGb
+jGb
+jGb
+xqB
 mDL
-dFi
+xqB
 hQW
 vUf
-ros
+jGb
 tOB
 tOB
 tOB
@@ -54245,7 +54069,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (130,1,1) = {"
 slE
@@ -54344,21 +54167,21 @@ tOB
 tOB
 tOB
 tOB
-ros
+jGb
 uqU
-ros
-ros
-ros
-ros
-ros
-ros
-ros
+jGb
+jGb
+jGb
+jGb
+jGb
+jGb
+jGb
 gkw
-dFi
-dFi
+xqB
+xqB
 hQW
 fwu
-ros
+jGb
 tOB
 tOB
 tOB
@@ -54498,7 +54321,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (131,1,1) = {"
 slE
@@ -54597,21 +54419,21 @@ tOB
 tOB
 tOB
 tOB
-cus
-wbz
-ros
-ros
-ros
-ros
-ros
-ros
-ros
-ros
+tpQ
+lFF
+jGb
+jGb
+jGb
+jGb
+jGb
+jGb
+jGb
+jGb
 nBR
-klj
-dFi
+kJP
+xqB
 bXR
-ros
+jGb
 tOB
 tOB
 tOB
@@ -54751,7 +54573,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (132,1,1) = {"
 slE
@@ -54850,21 +54671,21 @@ tOB
 tOB
 tOB
 tOB
-cus
-uRo
-ros
-ros
+tpQ
+fnl
+jGb
+jGb
 rjA
 eib
 vdP
 qPE
 eib
-ros
+jGb
 daM
-dFi
+xqB
 mDL
 cRw
-ros
+jGb
 tOB
 tOB
 tOB
@@ -55004,7 +54825,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (133,1,1) = {"
 slE
@@ -55095,29 +54915,29 @@ tpQ
 tpQ
 lFF
 fnl
-cus
-cus
-cus
-cus
-cus
-cus
-cus
-cus
-cus
-wbz
-ros
-ros
+tpQ
+tpQ
+tpQ
+tpQ
+tpQ
+tpQ
+tpQ
+tpQ
+tpQ
+lFF
+jGb
+jGb
 oox
 qPE
 eib
 eib
 eib
 pWN
-dFi
+xqB
 gkw
-dFi
-dFi
-ros
+xqB
+xqB
+jGb
 tOB
 tOB
 tOB
@@ -55257,7 +55077,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (134,1,1) = {"
 slE
@@ -55348,29 +55167,29 @@ oCQ
 nSl
 tpQ
 lFF
-wbz
+lFF
 qOn
-wbz
-wbz
-wbz
-uRo
-nri
-wbz
-bup
+lFF
+lFF
+lFF
+fnl
+fSy
+lFF
+oCQ
 abj
-ros
-ros
-ros
+jGb
+jGb
+jGb
 kZd
 eHD
 hdG
 eyV
-ros
-ros
-ros
+jGb
+jGb
+jGb
 oWo
-dFi
-ros
+xqB
+jGb
 tOB
 tOB
 tOB
@@ -55510,7 +55329,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (135,1,1) = {"
 slE
@@ -55601,19 +55419,19 @@ cZy
 oCQ
 oCQ
 tpQ
-cus
-cus
-cus
-cus
-cus
-cus
-cus
-cus
-cus
-cus
-ros
-ros
-ros
+tpQ
+tpQ
+tpQ
+tpQ
+tpQ
+tpQ
+tpQ
+tpQ
+tpQ
+tpQ
+jGb
+jGb
+jGb
 dJO
 bkf
 pQa
@@ -55621,9 +55439,9 @@ pQa
 hiz
 vce
 pWN
-dFi
+xqB
 mDL
-ros
+jGb
 slE
 slE
 slE
@@ -55763,7 +55581,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (136,1,1) = {"
 slE
@@ -55873,10 +55690,10 @@ rNj
 rNj
 qMB
 wkB
-ros
+jGb
 qhW
 vxx
-ros
+jGb
 liM
 liM
 liM
@@ -56016,7 +55833,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (137,1,1) = {"
 slE
@@ -56126,9 +55942,9 @@ fZK
 fZK
 qMB
 hrJ
-ros
-ros
-ros
+jGb
+jGb
+jGb
 liM
 liM
 mgH
@@ -56269,7 +56085,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (138,1,1) = {"
 slE
@@ -56379,9 +56194,9 @@ rNj
 rNj
 qMB
 vqj
-ros
-eKL
-eKL
+jGb
+liM
+liM
 liM
 pMw
 xho
@@ -56522,7 +56337,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (139,1,1) = {"
 slE
@@ -56624,15 +56438,15 @@ gDl
 gDl
 boe
 jGb
-ros
-ros
+jGb
+jGb
 trg
-aJh
+twM
 sYw
 sYw
 hiz
 eMv
-eKL
+liM
 liM
 liM
 lNH
@@ -56775,7 +56589,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (140,1,1) = {"
 slE
@@ -56878,14 +56691,14 @@ gDl
 lPf
 lPf
 lPf
-ros
-ros
-ros
-ros
-ros
-ros
-eKL
-eKL
+jGb
+jGb
+jGb
+jGb
+jGb
+jGb
+liM
+liM
 iNs
 xho
 kAo
@@ -57028,7 +56841,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (141,1,1) = {"
 slE
@@ -57281,7 +57093,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (142,1,1) = {"
 slE
@@ -57534,7 +57345,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (143,1,1) = {"
 slE
@@ -57787,7 +57597,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (144,1,1) = {"
 slE
@@ -57809,6 +57618,7 @@ eYA
 mcb
 oYr
 eKm
+abu
 vAj
 hIg
 xHL
@@ -58039,8 +57849,6 @@ tOB
 tOB
 slE
 slE
-dJC
-dJC
 "}
 (145,1,1) = {"
 slE
@@ -58293,7 +58101,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (146,1,1) = {"
 slE
@@ -58546,7 +58353,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (147,1,1) = {"
 slE
@@ -58799,7 +58605,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (148,1,1) = {"
 slE
@@ -59052,7 +58857,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (149,1,1) = {"
 slE
@@ -59305,7 +59109,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (150,1,1) = {"
 slE
@@ -59558,7 +59361,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (151,1,1) = {"
 slE
@@ -59811,7 +59613,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (152,1,1) = {"
 slE
@@ -60064,7 +59865,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (153,1,1) = {"
 slE
@@ -60317,7 +60117,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (154,1,1) = {"
 slE
@@ -60570,7 +60369,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (155,1,1) = {"
 slE
@@ -60823,7 +60621,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (156,1,1) = {"
 slE
@@ -61076,7 +60873,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (157,1,1) = {"
 slE
@@ -61329,7 +61125,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (158,1,1) = {"
 slE
@@ -61582,7 +61377,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (159,1,1) = {"
 slE
@@ -61835,7 +61629,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (160,1,1) = {"
 slE
@@ -62088,7 +61881,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (161,1,1) = {"
 slE
@@ -62341,7 +62133,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (162,1,1) = {"
 slE
@@ -62594,7 +62385,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (163,1,1) = {"
 slE
@@ -62847,7 +62637,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (164,1,1) = {"
 slE
@@ -63100,7 +62889,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (165,1,1) = {"
 slE
@@ -63353,7 +63141,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (166,1,1) = {"
 slE
@@ -63606,7 +63393,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (167,1,1) = {"
 slE
@@ -63859,7 +63645,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (168,1,1) = {"
 slE
@@ -64112,7 +63897,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (169,1,1) = {"
 slE
@@ -64365,7 +64149,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (170,1,1) = {"
 slE
@@ -64618,7 +64401,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (171,1,1) = {"
 slE
@@ -64871,7 +64653,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (172,1,1) = {"
 slE
@@ -65124,7 +64905,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (173,1,1) = {"
 slE
@@ -65377,7 +65157,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (174,1,1) = {"
 slE
@@ -65630,7 +65409,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (175,1,1) = {"
 slE
@@ -65883,7 +65661,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (176,1,1) = {"
 slE
@@ -66136,7 +65913,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (177,1,1) = {"
 slE
@@ -66389,7 +66165,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (178,1,1) = {"
 slE
@@ -66642,7 +66417,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (179,1,1) = {"
 slE
@@ -66895,7 +66669,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (180,1,1) = {"
 slE
@@ -67148,7 +66921,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (181,1,1) = {"
 slE
@@ -67401,7 +67173,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (182,1,1) = {"
 slE
@@ -67654,7 +67425,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (183,1,1) = {"
 slE
@@ -67907,7 +67677,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (184,1,1) = {"
 slE
@@ -68160,7 +67929,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (185,1,1) = {"
 slE
@@ -68413,7 +68181,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (186,1,1) = {"
 slE
@@ -68666,7 +68433,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (187,1,1) = {"
 slE
@@ -68919,7 +68685,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (188,1,1) = {"
 slE
@@ -69172,7 +68937,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (189,1,1) = {"
 slE
@@ -69425,7 +69189,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (190,1,1) = {"
 slE
@@ -69678,7 +69441,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (191,1,1) = {"
 slE
@@ -69931,7 +69693,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (192,1,1) = {"
 slE
@@ -70184,7 +69945,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (193,1,1) = {"
 slE
@@ -70437,7 +70197,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (194,1,1) = {"
 slE
@@ -70690,7 +70449,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (195,1,1) = {"
 slE
@@ -70943,7 +70701,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (196,1,1) = {"
 slE
@@ -71196,7 +70953,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (197,1,1) = {"
 slE
@@ -71449,7 +71205,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (198,1,1) = {"
 slE
@@ -71702,7 +71457,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (199,1,1) = {"
 slE
@@ -71955,7 +71709,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (200,1,1) = {"
 slE
@@ -72208,7 +71961,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (201,1,1) = {"
 slE
@@ -72461,7 +72213,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (202,1,1) = {"
 slE
@@ -72714,7 +72465,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (203,1,1) = {"
 slE
@@ -72967,7 +72717,6 @@ nma
 nma
 slE
 slE
-dJC
 "}
 (204,1,1) = {"
 slE
@@ -73203,7 +72952,7 @@ slE
 slE
 iGV
 iGV
-iGV
+aJh
 iGV
 iGV
 iGV
@@ -73220,7 +72969,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (205,1,1) = {"
 slE
@@ -73473,7 +73221,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (206,1,1) = {"
 slE
@@ -73726,7 +73473,6 @@ slE
 slE
 slE
 slE
-dJC
 "}
 (207,1,1) = {"
 slE
@@ -73979,7 +73725,6 @@ slE
 tOB
 slE
 slE
-dJC
 "}
 (208,1,1) = {"
 slE
@@ -74232,7 +73977,6 @@ slE
 tOB
 slE
 slE
-dJC
 "}
 (209,1,1) = {"
 slE
@@ -74485,7 +74229,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (210,1,1) = {"
 slE
@@ -74738,7 +74481,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (211,1,1) = {"
 slE
@@ -74991,7 +74733,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (212,1,1) = {"
 slE
@@ -75244,7 +74985,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (213,1,1) = {"
 slE
@@ -75497,7 +75237,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (214,1,1) = {"
 slE
@@ -75750,7 +75489,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (215,1,1) = {"
 slE
@@ -76003,7 +75741,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (216,1,1) = {"
 slE
@@ -76256,7 +75993,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (217,1,1) = {"
 slE
@@ -76509,7 +76245,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (218,1,1) = {"
 slE
@@ -76762,7 +76497,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (219,1,1) = {"
 slE
@@ -77015,7 +76749,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (220,1,1) = {"
 slE
@@ -77268,7 +77001,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (221,1,1) = {"
 slE
@@ -77521,7 +77253,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (222,1,1) = {"
 slE
@@ -77774,7 +77505,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (223,1,1) = {"
 slE
@@ -78027,7 +77757,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (224,1,1) = {"
 slE
@@ -78280,7 +78009,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (225,1,1) = {"
 slE
@@ -78533,7 +78261,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (226,1,1) = {"
 slE
@@ -78786,7 +78513,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (227,1,1) = {"
 slE
@@ -79039,7 +78765,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (228,1,1) = {"
 slE
@@ -79292,7 +79017,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (229,1,1) = {"
 slE
@@ -79545,7 +79269,6 @@ phz
 tOB
 slE
 slE
-dJC
 "}
 (230,1,1) = {"
 slE
@@ -79798,7 +79521,6 @@ phz
 tOB
 slE
 slE
-dJC
 "}
 (231,1,1) = {"
 slE
@@ -80051,7 +79773,6 @@ phz
 tOB
 slE
 slE
-dJC
 "}
 (232,1,1) = {"
 slE
@@ -80304,7 +80025,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (233,1,1) = {"
 slE
@@ -80557,7 +80277,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (234,1,1) = {"
 slE
@@ -80810,7 +80529,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (235,1,1) = {"
 slE
@@ -81063,7 +80781,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (236,1,1) = {"
 slE
@@ -81316,7 +81033,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (237,1,1) = {"
 slE
@@ -81569,7 +81285,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (238,1,1) = {"
 slE
@@ -81822,7 +81537,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (239,1,1) = {"
 slE
@@ -82075,7 +81789,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (240,1,1) = {"
 slE
@@ -82328,7 +82041,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (241,1,1) = {"
 slE
@@ -82581,7 +82293,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (242,1,1) = {"
 slE
@@ -82834,7 +82545,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (243,1,1) = {"
 slE
@@ -83087,7 +82797,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (244,1,1) = {"
 slE
@@ -83340,7 +83049,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (245,1,1) = {"
 slE
@@ -83593,7 +83301,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (246,1,1) = {"
 slE
@@ -83784,7 +83491,7 @@ uru
 hSx
 kcg
 yer
-xOf
+ueA
 wpz
 uru
 jhy
@@ -83846,7 +83553,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (247,1,1) = {"
 slE
@@ -84099,7 +83805,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (248,1,1) = {"
 slE
@@ -84352,7 +84057,6 @@ tOB
 tOB
 slE
 slE
-dJC
 "}
 (249,1,1) = {"
 slE
@@ -84605,7 +84309,6 @@ slE
 slE
 slE
 slE
-dJC
 "}
 (250,1,1) = {"
 slE
@@ -84858,5 +84561,4 @@ slE
 slE
 slE
 slE
-dJC
 "}
