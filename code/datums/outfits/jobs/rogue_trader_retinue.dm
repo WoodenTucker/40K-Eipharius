@@ -6,7 +6,7 @@
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare/rt
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator/rt
 	glasses = /obj/item/clothing/glasses/sunglasses
-	uniform = /obj/item/clothing/under/rank/roguetrader
+	uniform = /obj/item/clothing/under/rank/principalagent
 	belt = /obj/item/gun/energy/las/laspistol/lord
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = /obj/item/device/radio/headset/heads/rt
