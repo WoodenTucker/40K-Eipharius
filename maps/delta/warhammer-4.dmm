@@ -3281,6 +3281,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/armory)
+"ll" = (
+/obj/effect/floor_decal/turf/brothel,
+/obj/structure/bed/chair/cage,
+/obj/item/beartrap{
+	color = "grey";
+	deployed = 1;
+	icon_state = "beartrap1"
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/inn)
 "ln" = (
 /obj/effect/decal/cleanable/blood/gibs/vomit,
 /turf/simulated/floor/darkwood{
@@ -3835,7 +3845,11 @@
 /area/cadiaoutpost/oa/security/armory)
 "nk" = (
 /obj/effect/landmark/start{
-	name = "House Goliath"
+	name = "Tavern Ganger"
+	},
+/obj/item/card/id/key/grand{
+	access = list(267,268,269,270,271,272,273);
+	name = "Innkeeper Key"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/inn)
@@ -4052,6 +4066,13 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel)
+"nX" = (
+/obj/item/card/id/key/grand{
+	access = list(267,268,269,270,271,272,273);
+	name = "Innkeeper Key"
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/inn)
 "nZ" = (
 /obj/effect/floor_decal/newcorner/polar{
 	dir = 1
@@ -5846,9 +5867,6 @@
 	},
 /obj/random/canned_food,
 /obj/random/canned_food,
-/obj/item/card/id/key/middle/ganger,
-/obj/item/card/id/key/middle/ganger,
-/obj/item/card/id/key/middle/ganger,
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
@@ -8459,6 +8477,9 @@
 /obj/effect/floor_decal/turf/brothel,
 /obj/structure/table/rack/shelf,
 /obj/item/melee/whip/lashoftorment,
+/obj/effect/decal/cleanable/flour{
+	name = "weird stain"
+	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/inn)
 "Fx" = (
@@ -9378,6 +9399,14 @@
 "IK" = (
 /obj/structure/table/graf/reinf_table{
 	icon_state = "reinf_table5"
+	},
+/obj/item/card/id/key/grand{
+	access = list(267,268,269,270,271,272,273);
+	name = "Innkeeper Key"
+	},
+/obj/item/card/id/key/grand{
+	access = list(267,268,269,270,271,272,273);
+	name = "Innkeeper Key"
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 4
@@ -10339,9 +10368,6 @@
 	icon_state = "reinf_table5"
 	},
 /obj/item/storage/firstaid/adv,
-/obj/item/card/id/key/middle/ganger,
-/obj/item/card/id/key/middle/ganger,
-/obj/item/card/id/key/middle/ganger,
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
@@ -13502,6 +13528,9 @@
 /obj/effect/overlay/chains,
 /obj/effect/overlay/chains{
 	dir = 5
+	},
+/obj/effect/decal/cleanable/flour{
+	name = "weird stain"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/inn)
@@ -51604,7 +51633,7 @@ IH
 pr
 Hl
 Hl
-nk
+Hl
 Hl
 Hl
 Hl
@@ -53120,7 +53149,7 @@ Hl
 Hl
 Hl
 Hl
-nk
+Hl
 Hl
 Hl
 Hl
@@ -53365,7 +53394,7 @@ gp
 IH
 IH
 IH
-Hl
+nX
 Hl
 KT
 si
@@ -53599,7 +53628,7 @@ IH
 XP
 FO
 Ct
-am
+ll
 gY
 IH
 Hl
