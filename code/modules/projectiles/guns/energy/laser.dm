@@ -513,6 +513,34 @@
 		)
 
 
+/obj/item/gun/energy/las/volkite
+	name = "Mars-Omega Pattern Volkite Caliver"
+	desc = "An exceedingly rare rifle usually only used by the Adeptus Astartes. This rifle might be thousands of years old. It is powered by normal lasgun power packs."
+	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
+	icon_state = "volkite_on"
+	item_state = "hevluscius"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_HUGE
+	force = 15
+	one_hand_penalty = 1.5
+	fire_delay = 3.1
+	accuracy = 0.1
+	self_recharge = 1
+	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/beam/incendiary_laser
+	charge_cost = 240
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	wielded_item_state = "hevluscius-wielded"
+	sales_price = 500
+
+
+	firemodes = list(
+		list(mode_name="semi-automatic",       burst=1, fire_delay=3.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=270),
+		list(mode_name="burst",       burst=3, fire_delay=6.8, burst_accuracy=list(1,0,0), dispersion=null, automatic = 0, charge_cost=270),
+		)
+
 /*
 obj/item/gun/energy/las/hotshot/bloodpact
 	name = "Khornate Lasgun"
@@ -855,8 +883,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	charge_cost = 350
 	wielded_item_state = "plasmapistol"
-	sales_price = 0 
-	
+	sales_price = 0
+
 	firemodes = list(
 		list(mode_name="ATAP", fire_delay=14.5, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol, charge_cost=350),
 		list(mode_name="HEDP", fire_delay = 36.5, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=1700),
@@ -957,6 +985,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		list(mode_name="ATAP", fire_delay=17, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol, charge_cost=600),
 		list(mode_name="HEDP", fire_delay = 44, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=2100),
 		)
+
 
 
 // tinkered lasguns

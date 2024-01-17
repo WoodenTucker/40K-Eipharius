@@ -1996,6 +1996,17 @@
 	icon_state = "ofloor"
 	},
 /area/cadiaoutpost/oa/dungeon1)
+"pi" = (
+/obj/item/clothing/suit/armor/rpowerarmor{
+	icon_state = "necron";
+	icon = 'icons/mob/onmob/suit.dmi';
+	name = "Necrontyr Armor";
+	desc = "An unknown armor made for human hands by the looks of it."
+	},
+/turf/unsimulated/floor/necron_floor{
+	icon_state = "ofloor"
+	},
+/area/cadiaoutpost/oa/dungeon1)
 "pj" = (
 /obj/effect/floor_decal/newcorner/train{
 	dir = 4
@@ -34202,7 +34213,7 @@ bF
 bF
 bF
 bF
-bF
+pi
 bF
 bF
 bF

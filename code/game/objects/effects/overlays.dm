@@ -1,4 +1,4 @@
-/obj/effect/overlay
+ /obj/effect/overlay
 	name = "overlay"
 	unacidable = 1
 	var/i_attached//Added for possible image attachments to objects. For hallucinations and the like.
@@ -34,6 +34,20 @@
 	name = "Coconuts"
 	icon = 'icons/misc/beach.dmi'
 	icon_state = "coconuts"
+
+/obj/effect/overlay/booth
+	name = "booth"
+	icon = 'icons/effects/96x96.dmi'
+	icon_state = "booth"
+	plane = ABOVE_HUMAN_PLANE
+	layer = ABOVE_OBJ_LAYER
+
+/obj/effect/overlay/chains
+	name = "chains"
+	icon = 'icons/effects/64x64.dmi'
+	icon_state = "chains"
+	plane = ABOVE_HUMAN_PLANE
+	layer = ABOVE_OBJ_LAYER
 
 /obj/effect/overlay/bluespacify
 	name = "Bluespace"
