@@ -54,8 +54,8 @@
 
 /datum/job/ig/guardsman
 	title = "Imperial Guardsman"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 5
+	spawn_positions = 5
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	auto_rifle_skill = 8
 	semi_rifle_skill = 8
@@ -110,8 +110,8 @@
 
 /datum/job/ig/whiteshield
 	title = "Imperial Guard Recruit"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	open_when_dead = FALSE
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/whiteshield
@@ -143,8 +143,8 @@
 
 /datum/job/ig/guardsman/sharpshooter // can i be fucked renaming every /sharpshooter into /spec? no. remember to just call /sharpshooter/[regiment] instead
 	title = "Imperial Guard Specialist"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	open_when_dead = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sharpshooter
 	auto_rifle_skill = 10
@@ -227,8 +227,8 @@ datum/job/ig/bullgryn
 
 /datum/job/ig/guardsman/sniper
 	title = "Imperial Guard Sniper"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	open_when_dead = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sniper
 	auto_rifle_skill = 7
@@ -354,8 +354,8 @@ datum/job/ig/bullgryn
 	department_flag = SEC
 	social_class = SOCIAL_CLASS_MED
 	can_be_in_squad = TRUE
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	open_when_dead = FALSE
 	selection_color = "#33813A"
 	economic_modifier = 4
