@@ -1,22 +1,19 @@
 /datum/species/eldar
-    name = SPECIES_ELDAR
-    default_language = LANGUAGE_ELDAR
-    language = LANGUAGE_ELDAR
-    name_language = LANGUAGE_ELDAR
-    icobase = 'icons/mob/human_races/r_def_eldar.dmi'
-    deform = 'icons/mob/human_races/r_def_eldar.dmi'
-    damage_mask = 'icons/mob/human_races/masks/dam_mask_human.dmi'
-    blood_mask = 'icons/mob/human_races/masks/blood_human.dmi'
-    additional_langs = LANGUAGE_LOW_GOTHIC
-    grab_type = GRAB_TAKEDOWN
-    total_health = 250
-    slowdown = -0.50
-    gluttonous = GLUT_TINY
-	unarmed_types = list(
-		/datum/unarmed_attack/stomp,
-		/datum/unarmed_attack/kick,
-		/datum/unarmed_attack/punch,
-		/datum/unarmed_attack/bite
+	name = SPECIES_ELDAR
+	default_language = LANGUAGE_ELDAR
+	language = LANGUAGE_ELDAR
+	name_language = LANGUAGE_ELDAR
+	icobase = 'icons/mob/human_races/r_def_eldar.dmi'
+	deform = 'icons/mob/human_races/r_def_eldar.dmi'
+	damage_mask = 'icons/mob/human_races/masks/dam_mask_human.dmi'
+	blood_mask = 'icons/mob/human_races/masks/blood_human.dmi'
+	additional_langs = LANGUAGE_LOW_GOTHIC
+	grab_type = GRAB_TAKEDOWN
+	total_health = 250
+	slowdown = -0.50
+	gluttonous = GLUT_TINY
+	inherent_verbs = list(
+	/mob/living/carbon/human/eldar/proc/giveeldarstats,
 		)
 
 
