@@ -1,8 +1,3 @@
-/*
-Eldar
-this shit is just the barebones of the race im going to add the verbs later
-*/
-
 /datum/species/eldar
     name = SPECIES_ELDAR
     default_language = LANGUAGE_ELDAR
