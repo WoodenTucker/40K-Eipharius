@@ -9,8 +9,8 @@
 	head_position = 1
 	department_flag = SUP
 	social_class = SOCIAL_CLASS_MAX
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	open_when_dead = 0
 	supervisors = "House Vane."
 	selection_color = "#315dd4"
@@ -98,8 +98,8 @@
 	title = "Xeno Mercenary"
 	department_flag = SUP
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "The Rogue Trader and House Vane"
 	selection_color = "#315dd4"
 	latejoin_at_spawnpoints = TRUE
