@@ -207,3 +207,30 @@
 	if(exposed_temperature > maximal_heat)
 		hit(damage_per_fire_tick, 0)
 	..()
+
+//fantasy window
+
+
+/obj/structure/window_frame/fantasy
+	name = "rustic window"
+	density = 1
+	anchored = 1
+	opacity = 0
+	icon = 'icons/obj/cs.dmi'
+	icon_state = "windowwood1"
+	layer = SIDE_WINDOW_LAYER
+	atmos_canpass = CANPASS_PROC
+
+
+/obj/structure/window_frame/fantasy/update_icon()
+	if(glass)
+		if(health <= HALF_HEALTH)
+			icon_state = "windowwood2"
+		else
+			icon_state = "windowwood1"
+	else
+		if(shattered)
+			icon_state = "windowwood3"
+		else
+			icon_state = "windowood4"
+	return
