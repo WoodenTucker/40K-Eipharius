@@ -1303,6 +1303,7 @@ obj/item/clothing/suit/armor
   cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET| ARMS | HANDS
   min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
   body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+
 /obj/item/clothing/suit/armor/corsair
   name = "Eldar Corsair Armor"
   desc = "The dark and shadowy armor of a voidscarred Corsair.."
@@ -1312,6 +1313,39 @@ obj/item/clothing/suit/armor
   cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET| ARMS | HANDS
   min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
   body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+
+/obj/item/clothing/suit/armor/eldar/ranger
+  name = "Ranger Cloaked Armor"
+  desc = "An Eldar Ranger's Armour, comprised of many layers of cameoline materials with an underlying thermoplas player.."
+  icon_state = "ranger"
+  item_state = "ranger"
+  armor = list(melee = 19, bullet = 38, laser = 38, energy = 36, bomb = 60, bio = 60, rad = 90) //More protective against ranged, less against melee.
+  cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET| ARMS | HANDS
+  min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+  body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+
+/obj/item/clothing/suit/armor/eldar/ranger/verb/toggle_eldar_camo()
+	set name = "Toggle Eldar Camo"
+	set category = "Eldar"
+	var/stealth_alpha = 15
+	if(alpha == stealth_alpha)
+		to_chat(usr,"You disable your armour's stealth features.")
+		animate(src, alpha = 255, time = 1.5 SECONDS)
+	else
+		to_chat(usr,"You enable your armour's stealth features.")
+		animate(src, alpha = stealth_alpha, time = 1.5 SECONDS)
+
+/mob/living/carbon/human/proc/eldar_active_camo()
+	set category = "Abilities"
+	set name = "Active Camo"
+	set desc = "Camouflage yourself"
+	var/stealth_alpha = 15
+
+	if(alpha == stealth_alpha)
+		animate(src, alpha = 255, time = 1.5 SECONDS)
+	else
+		animate(src, alpha = stealth_alpha, time = 1.5 SECONDS)
+
 // Dark Eldar
 /obj/item/clothing/suit/armor/deldar
   name = "Ghost Plate Armor"

@@ -183,18 +183,3 @@
 	light_range = 5
 	light_power = 1
 	light_color = COLOR_MUZZLE_FLASH
-
-//----------------------------
-// volkite laser
-//----------------------------
-/obj/effect/projectile/volkite
-	light_color = COLOR_PALE_ORANGE
-
-/obj/effect/projectile/incen/tracer
-	icon_state = "beam"
-
-/obj/effect/projectile/incen/muzzle
-	icon_state = "muzzle_laser"
-
-/obj/effect/projectile/incen/impact
-	icon_state = "impact_laser"

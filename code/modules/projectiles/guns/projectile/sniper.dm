@@ -390,3 +390,29 @@
 	set popup_menu = 1
 
 	toggle_scope(usr, 4)
+
+/obj/item/gun/energy/las/lasgun/longlas/eldar
+	name = "Ranger Long Rifle"
+	desc = "The Ranger Long Rifle is an Eldar long-barreled Sniper Rifle, favoured by Rangers."
+	icon_state = "longlas"
+	item_state = "longlas"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	force = 15
+	one_hand_penalty = 1.1
+	fire_delay = 5.5
+	self_recharge = 1
+	accuracy = 5
+	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 4000)
+	projectile_type = /obj/item/projectile/energy/las/lasgun/longlas/overcharge
+	charge_cost = 300
+	cell_type = /obj/item/cell/eldar
+	ammoType = /obj/item/cell/eldar
+	wielded_item_state = "longlas-wielded"
+	sales_price = 50
+
+	firemodes = list(
+		list(mode_name="semi-automatic", fire_delay=8.5, move_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=500),
+		)
+
