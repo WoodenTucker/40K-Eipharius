@@ -17,7 +17,6 @@ this shit is just the barebones of the race im going to add the verbs later
     total_health = 250
     slowdown = -0.50
     gluttonous = GLUT_TINY
-    sexybits_location = BP_GROIN
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
 		/datum/unarmed_attack/kick,
@@ -74,7 +73,7 @@ this shit is just the barebones of the race im going to add the verbs later
 		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
 		return
 
-	var/eldarclass = input("Select a Class","Class Selection") as null|anything in list("Guardian")
+	var/eldarclass = input("Select a Class","Class Selection") as null|anything in list("Guardian", "Ranger")
 	switch(eldarclass)
 		if("Guardian")
 			equip_to_slot_or_del(new /obj/item/clothing/under/syndicate/combat, slot_w_uniform)
@@ -116,7 +115,7 @@ this shit is just the barebones of the race im going to add the verbs later
 			equip_to_slot_or_del(W, slot_wear_id)
 
 	switch(eldarclass)
-		if("Eldar Ranger")
+		if("Ranger")
 			equip_to_slot_or_del(new /obj/item/clothing/under/syndicate/combat, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/glasses/blacksun, slot_glasses)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/heads/rt, slot_l_ear)
