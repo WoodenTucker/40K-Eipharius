@@ -4812,9 +4812,7 @@
 /turf/simulated/floor/darksteel_floor,
 /area/cadiaoutpost/oa/security/barracks)
 "dNU" = (
-/obj/effect/floor_decal/newcorner/stone{
-	dir = 9
-	},
+/obj/structure/flora/jungle/trees,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/bridge/hallway)
 "dPb" = (
@@ -8076,9 +8074,6 @@
 /obj/structure/closet/crate/trashcart,
 /obj/random/trash,
 /obj/random/trash,
-/obj/random/trash,
-/obj/random/trash,
-/obj/random/trash,
 /obj/random/loot/lightmelee,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
@@ -10855,10 +10850,15 @@
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/hab/inside)
 "itn" = (
-/obj/random/trash,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/hive_city)
+/obj/structure/table/graf/rusty_table,
+/obj/effect/floor_decal/turf/bar3,
+/obj/machinery/button/remote/blast_door/id_scan{
+	name = "pristine ID lock";
+	id = "inq_interior2";
+	req_one_access = list(302)
+	},
+/turf/simulated/floor/stone/old4,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "ity" = (
 /obj/structure/bed/chair/wood/simple{
 	dir = 8
@@ -12904,8 +12904,8 @@
 /turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/new_hive/hive_city)
 "jUJ" = (
-/obj/structure/flora/tree/snowy,
-/turf/simulated/floor/snow,
+/obj/structure/flora/jungle/trees,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/bridge/hallway)
 "jUV" = (
 /obj/effect/floor_decal/newcorner/black/corner{
@@ -17610,7 +17610,10 @@
 /area/cadiaoutpost/oa/security/barracks)
 "nLS" = (
 /obj/effect/floor_decal/newcorner/stone{
-	dir = 4
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
 	},
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/bridge/hallway)
@@ -20377,11 +20380,18 @@
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/hive_city)
 "pWb" = (
-/obj/effect/floor_decal/newcorner/stone{
-	dir = 10
+/obj/effect/floor_decal/turf/bar3,
+/obj/effect/floor_decal/turf/big_cables1{
+	dir = 4
 	},
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/bridge/hallway)
+/obj/machinery/door/blast/id_door{
+	req_one_access = list(302);
+	name = "Bradigan's Lair";
+	id = "inq_interior2";
+	maxhealth = 9000
+	},
+/turf/simulated/floor/plating/reinforced,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "pWS" = (
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/bridge/hallway)
@@ -21074,11 +21084,16 @@
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/service/inn)
 "qxa" = (
-/obj/effect/floor_decal/newcorner/stone{
-	dir = 8
+/obj/machinery/button/remote/blast_door/id_scan{
+	name = "pristine ID lock";
+	id = "inq_interior2";
+	req_one_access = list(302)
 	},
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/bridge/hallway)
+/obj/structure/table/graf/rusty_table,
+/obj/effect/floor_decal/turf/bar3,
+/obj/effect/floor_decal/turf/metal/six,
+/turf/simulated/floor/stone/old4,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "qxn" = (
 /obj/structure/sign/minesign,
 /turf/simulated/wall/concrete,
@@ -22570,15 +22585,11 @@
 /turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/gatehouse)
 "rLH" = (
-/obj/structure/grille/iron_fence,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/newcorner/stone{
-	dir = 1
-	},
-/obj/effect/floor_decal/newcorner/stone{
-	dir = 8
-	},
-/turf/simulated/floor/fancyfloor/coralg,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/closet/crate/trashcart,
+/obj/random/trash,
+/obj/random/loot/lightmelee,
+/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
 "rMj" = (
 /obj/machinery/door/blast/shutters{
@@ -22750,14 +22761,15 @@
 	},
 /area/cadiaoutpost/oa/farm)
 "rTS" = (
-/obj/effect/floor_decal/newcorner/stone{
-	dir = 8
+/obj/structure/statue/prayer{
+	density = 0
 	},
-/obj/structure/torchwall{
-	pixel_y = 30
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
 	},
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/bridge/hallway)
+/turf/simulated/floor/fancyfloor/oldcobble,
+/area/cadiaoutpost/new_hive/hive_city)
 "rTX" = (
 /turf/simulated/floor/ceramic/blackstone,
 /area/cadiaoutpost/oa/bridge/hallway)
@@ -27877,12 +27889,8 @@
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/hive_city)
 "vIN" = (
-/obj/effect/floor_decal/newcorner/stone{
-	dir = 4
-	},
-/obj/structure/torchwall{
-	pixel_y = 30
-	},
+/obj/structure/anti_tank,
+/obj/structure/flora/jungle/trees,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/bridge/hallway)
 "vJv" = (
@@ -27903,7 +27911,7 @@
 /area/cadiaoutpost/oa/villageinside)
 "vKS" = (
 /obj/random/loot/sidearms,
-/turf/unsimulated/mineral,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/hive_city)
 "vKW" = (
 /obj/effect/floor_decal/newcorner/teal{
@@ -49683,7 +49691,7 @@ cqS
 ppA
 hhy
 hhy
-hhy
+pWb
 ezM
 plF
 hhy
@@ -49934,11 +49942,11 @@ cqS
 cqS
 cqS
 cqS
-cqS
+itn
 lCe
 lCe
 lCe
-yib
+qxa
 hBh
 hBh
 yib
@@ -51263,7 +51271,7 @@ iFU
 bRy
 dSH
 rXx
-gmy
+rLH
 iFU
 wxL
 eTh
@@ -52528,7 +52536,7 @@ uyP
 fho
 sCi
 bwI
-itn
+sCi
 sts
 kQv
 sts
@@ -55833,7 +55841,7 @@ afF
 afF
 afF
 afF
-afF
+dNU
 afF
 afF
 afF
@@ -56092,7 +56100,7 @@ afF
 afF
 afF
 afF
-afF
+dNU
 afF
 afF
 afF
@@ -56829,7 +56837,7 @@ afF
 afF
 afF
 afF
-aVn
+vIN
 afF
 afF
 afF
@@ -57080,7 +57088,7 @@ giD
 afF
 afF
 afF
-jUJ
+afF
 lJy
 xVU
 afF
@@ -57338,7 +57346,7 @@ lJy
 afF
 afF
 afF
-afF
+dNU
 afF
 uXR
 yhn
@@ -57840,7 +57848,7 @@ afF
 afF
 afF
 afF
-bXq
+afF
 afF
 afF
 afF
@@ -58088,8 +58096,8 @@ giD
 afF
 afF
 afF
-bXq
 afF
+dNU
 afF
 afF
 afF
@@ -58592,11 +58600,11 @@ hBM
 afF
 afF
 afF
-spk
-aVn
 afF
 afF
 afF
+afF
+fNt
 afF
 afF
 afF
@@ -59096,8 +59104,8 @@ giD
 afF
 mWB
 spk
-dZl
-aVn
+afF
+afF
 afF
 afF
 afF
@@ -59350,7 +59358,7 @@ spk
 afF
 afF
 lJy
-xVU
+lJy
 afF
 afF
 afF
@@ -59851,12 +59859,12 @@ nJt
 nRP
 afF
 spk
-aVn
+afF
 afF
 sTe
 afF
 dZl
-aVn
+afF
 afF
 afF
 fkN
@@ -60093,8 +60101,8 @@ jBp
 jBp
 tuh
 kHF
-jBp
-bQA
+nSI
+hgY
 kEV
 pQK
 jBp
@@ -60105,11 +60113,11 @@ giD
 giD
 giD
 afF
-fNt
+afF
 lJy
 spk
 eGi
-aVn
+afF
 afF
 jwd
 vKY
@@ -60345,7 +60353,7 @@ jBp
 jBp
 fJp
 kHF
-jBp
+nSI
 nSI
 gie
 xAE
@@ -60579,8 +60587,8 @@ bHe
 jBp
 kUm
 jBp
-jBp
 maC
+nSI
 nSI
 pQK
 jBp
@@ -60597,10 +60605,10 @@ bwI
 kHF
 xOt
 kHF
-jBp
-jqn
+nSI
+nSI
 eFR
-qpq
+xAE
 jBp
 hNK
 giD
@@ -60831,7 +60839,7 @@ bHe
 jBp
 kUm
 jBp
-jBp
+nSI
 nSI
 jeh
 nSI
@@ -60860,10 +60868,10 @@ uDO
 cdM
 pIu
 giD
-qwD
 afF
 afF
-qwD
+afF
+afF
 afF
 afF
 pYx
@@ -61083,8 +61091,8 @@ bHe
 jBp
 jBp
 jBp
-jBp
 atP
+nSI
 nSI
 kFm
 jBp
@@ -61112,13 +61120,13 @@ hJi
 giD
 giD
 giD
-giD
-rTS
-qxa
-qxa
-qxa
-qxa
-dNU
+hJi
+afF
+afF
+afF
+afF
+afF
+cux
 lYY
 tsz
 pPY
@@ -61335,8 +61343,8 @@ mSb
 bHe
 jBp
 jBp
-jBp
 moM
+nSI
 kEV
 rLp
 jBp
@@ -61364,13 +61372,13 @@ uYZ
 jjR
 guL
 vQm
-guL
-guL
-guL
-guL
-guL
-guL
-guL
+afF
+afF
+afF
+afF
+afF
+afF
+cux
 gfT
 tsz
 jkS
@@ -61587,7 +61595,7 @@ mSb
 bHe
 jBp
 jBp
-jBp
+nSI
 nSI
 lqk
 xAE
@@ -61616,13 +61624,13 @@ lYY
 tsz
 tsz
 bEO
-tsz
-tsz
-tsz
-tsz
-tsz
-tsz
-tsz
+afF
+afF
+afF
+afF
+afF
+afF
+nLS
 tsz
 tsz
 jkS
@@ -61839,8 +61847,8 @@ mSb
 bHe
 jBp
 jBp
-jBp
 atP
+nSI
 eFR
 kFm
 jBp
@@ -61868,13 +61876,13 @@ pIC
 xgh
 xgh
 vAy
-xgh
-xgh
-xgh
-xgh
-xgh
-xgh
-xgh
+afF
+afF
+afF
+afF
+afF
+afF
+cux
 nLE
 tsz
 jkS
@@ -62091,8 +62099,8 @@ bHe
 jBp
 jBp
 jBp
-jBp
 atP
+nSI
 nSI
 lRW
 jBp
@@ -62120,13 +62128,13 @@ hJi
 grs
 giD
 giD
-giD
-vIN
-nLS
-nLS
-nLS
-nLS
-pWb
+hJi
+afF
+afF
+afF
+afF
+afF
+cux
 lYY
 tsz
 pPY
@@ -62343,7 +62351,7 @@ bHe
 bwI
 kUm
 jBp
-jBp
+nSI
 nSI
 jeh
 nSI
@@ -62375,7 +62383,7 @@ giD
 qwD
 afF
 afF
-qwD
+afF
 afF
 eGi
 pYx
@@ -62595,8 +62603,8 @@ bHe
 jBp
 kUm
 jBp
-jBp
 jqn
+nSI
 nSI
 qpq
 jBp
@@ -62613,8 +62621,8 @@ eTh
 kHF
 toP
 jBp
-jBp
-bQA
+maC
+hgY
 kEV
 pQK
 jBp
@@ -62865,7 +62873,7 @@ jBp
 jBp
 oLH
 kHF
-jBp
+nSI
 nSI
 gie
 xAE
@@ -62877,7 +62885,7 @@ keG
 cdM
 giD
 afF
-aVn
+afF
 afF
 afF
 afF
@@ -63117,8 +63125,8 @@ rvR
 kHF
 bFo
 kHF
-jBp
 jqn
+nSI
 eFR
 qpq
 jBp
@@ -63636,7 +63644,7 @@ afF
 afF
 afF
 spk
-aVn
+afF
 afF
 afF
 fkN
@@ -64140,7 +64148,7 @@ utU
 gdO
 faj
 dZl
-aVn
+afF
 afF
 afF
 afF
@@ -64393,7 +64401,7 @@ giD
 afF
 afF
 lJy
-xVU
+afF
 afF
 lJy
 fkN
@@ -64893,7 +64901,7 @@ afF
 afF
 lJy
 gis
-afF
+dNU
 afF
 afF
 lJy
@@ -65143,7 +65151,7 @@ giD
 giD
 afF
 afF
-bXq
+afF
 lJy
 afF
 afF
@@ -65353,7 +65361,7 @@ jBp
 bwI
 jBp
 jBp
-jBp
+rTS
 jBp
 bwI
 bTR
@@ -65605,10 +65613,10 @@ rnA
 uee
 uee
 uee
-oli
+iFU
 jBp
-bwI
-bwI
+jBp
+iFU
 dRi
 wlv
 iKx
@@ -65650,7 +65658,7 @@ afF
 afF
 afF
 afF
-jUJ
+afF
 afF
 afF
 afF
@@ -65857,10 +65865,10 @@ fGD
 kYZ
 kYZ
 cFI
-rLH
-jBp
-bwI
-bwI
+iFU
+dqv
+dqv
+iFU
 dRi
 fjl
 iKx
@@ -66158,7 +66166,7 @@ pni
 afF
 afF
 afF
-afF
+dNU
 afF
 fkN
 nEh
@@ -66404,7 +66412,7 @@ giD
 lJy
 afF
 afF
-afF
+dNU
 spk
 lyP
 afF
@@ -66656,7 +66664,7 @@ giD
 afF
 afF
 afF
-bXq
+afF
 afF
 dQV
 afF
@@ -66925,7 +66933,7 @@ nTs
 nTs
 nTs
 nTs
-nTs
+jUJ
 nTs
 nTs
 iDo
@@ -67426,7 +67434,7 @@ afF
 afF
 afF
 afF
-kjj
+afF
 afF
 afF
 afF
