@@ -375,10 +375,10 @@
 /area/cadiaoutpost/oa/hallway/northern)
 "bt" = (
 /obj/effect/water/top{
-	color = "2b5fda"
+	color = "Blue"
 	},
 /obj/effect/water/bottom{
-	color = "2b5fda"
+	color = "blue"
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/inn)
@@ -2367,9 +2367,7 @@
 	},
 /obj/structure/table/graf/rusty_table,
 /obj/item/flame/lighter/zippo,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel)
 "ij" = (
 /turf/simulated/floor/ceramic,
@@ -5915,6 +5913,10 @@
 	pixel_y = 3;
 	pixel_x = -1
 	},
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
 /turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/service/inn)
 "vt" = (
@@ -6548,6 +6550,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/armory)
+"xV" = (
+/obj/effect/decal/cleanable/slaanesh,
+/turf/simulated/floor/darkwood{
+	color = "purple"
+	},
+/area/cadiaoutpost/oa/service/inn)
 "xW" = (
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 1
@@ -7028,6 +7036,10 @@
 /obj/structure/flora/ausbushes/ywflowers{
 	pixel_y = 3;
 	pixel_x = -1
+	},
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
 	},
 /turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/service/inn)
@@ -9335,6 +9347,10 @@
 	pixel_x = 2;
 	pixel_y = 4
 	},
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
 /turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/service/inn)
 "Iw" = (
@@ -11481,10 +11497,10 @@
 /area/cadiaoutpost/oa/shuttle/station1)
 "QD" = (
 /obj/effect/water/top{
-	color = "2b5fda"
+	color = "Blue"
 	},
 /obj/effect/water/bottom{
-	color = "2b5fda"
+	color = "blue"
 	},
 /obj/structure/curtain/open{
 	color = "#aa0000";
@@ -13526,9 +13542,6 @@
 /obj/effect/floor_decal/turf/brothel,
 /obj/structure/statue/tanningrack,
 /obj/effect/overlay/chains,
-/obj/effect/overlay/chains{
-	dir = 5
-	},
 /obj/effect/decal/cleanable/flour{
 	name = "weird stain"
 	},
@@ -55629,7 +55642,7 @@ IH
 DK
 kO
 TQ
-vv
+xV
 vv
 vv
 vv
