@@ -221,6 +221,11 @@ Template:
 	name = "Confessor"
 	icon_state = "churchs"
 
+/obj/effect/landmark/start/ministorum/confessor
+
+/obj/effect/landmark/start/ministorum/canoness
+	name = "Canoness"
+
 /obj/effect/landmark/start/ministorum/sistersuperior
 	name = "Sister Superior"
 
@@ -306,6 +311,7 @@ Template:
 				/obj/item/clothing/accessory/armguards/riot = 6,
 				/obj/item/clothing/glasses/cadiangoggles/elite = 2,
 				/obj/item/clothing/head/helmet/guardhelmet/carapace = 1,
+				/obj/item/storage/backpack/satchel/heavy = 1,
 				/obj/item/clothing/accessory/legguards/riot = 6)
 
 /obj/random/loot/lightmelee
@@ -536,7 +542,8 @@ Template:
 		/obj/item/gun/projectile/automatic/autogrim/krieg = 1,
 		/obj/item/gun/projectile/automatic/agripinaaii = 1,
 		/obj/item/gun/projectile/automatic/messina = 1,
-		/obj/item/gun/projectile/thrower = 4
+		/obj/item/gun/projectile/thrower = 4,
+		/obj/item/storage/backpack/satchel/heavy = 1
 	)
 
 
@@ -636,6 +643,7 @@ Template:
 				/obj/item/storage/pill_bottle/happy = 1,
 				/obj/item/stack/material/silver/ten = 1,
 				/obj/item/stack/material/glass/fifty = 1,
+				/obj/item/clothing/under/rank/victorian = 1,
 				/obj/item/stack/material/steel/fifty = 2)
 
 /obj/random/loot/randomitemcaves // make this a grenade spawn?
@@ -657,6 +665,8 @@ Template:
 				/obj/item/stack/thrones2/ten = 1,
 				/obj/item/grenade/frag/high_yield/homemade = 1,
 				/obj/item/grenade/frag = 1,
+				/obj/item/storage/backpack/satchel/heavy = 1,
+				/obj/item/clothing/under/rank/victorian = 1,
 				/obj/item/grenade/frag/high_yield/krak = 1)
 
 /obj/random/loot/randomitemtown
@@ -673,11 +683,13 @@ Template:
 				/obj/item/clothing/suit/armor/militia = 2,
 				/obj/item/melee/sword/combat_knife = 1,
 				/obj/item/stack/thrones2/ten = 2,
+				/obj/item/storage/backpack/satchel/heavy = 1,
 				/obj/item/clothing/accessory/holster/waist = 3,
 				/obj/item/clothing/accessory/storage/webbing = 5,
 				/obj/item/storage/belt/utility/full = 2,
 				/obj/item/clothing/accessory/legguards = 2,
 				/obj/item/clothing/accessory/armguards/ballistic = 2,
+				/obj/item/clothing/under/rank/victorian = 1,
 				/obj/item/grenade/frag/high_yield/homemade = 1)
 
 

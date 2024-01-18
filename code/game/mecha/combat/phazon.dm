@@ -6,7 +6,7 @@
 	step_in = 1
 	dir_in = 1 //Facing North.
 	step_energy_drain = 100
-	health = 250
+	health = 1550
 	deflect_chance = 30
 	damage_absorption = list("brute"=0.6,"fire"=0.7,"bullet"=0.6,"laser"=0.6,"energy"=0.6,"bomb"=0.6)
 	max_temperature = 25000

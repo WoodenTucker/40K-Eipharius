@@ -91,14 +91,14 @@ proc/getsensorlevel(A)
 var/list/global/base_miss_chance = list(
 	BP_HEAD = 30,
 	BP_THROAT = 35,
-	BP_CHEST = 8,
+	BP_CHEST = 10,
 	BP_GROIN = 10,
 	BP_L_LEG = 12,
 	BP_R_LEG = 12,
 	BP_L_ARM = 12,
 	BP_R_ARM = 12,
-	BP_L_HAND = 15,
-	BP_R_HAND = 15,
+	BP_L_HAND = 35,
+	BP_R_HAND = 35,
 	BP_L_FOOT = 22,
 	BP_R_FOOT = 22,
 )

@@ -423,6 +423,13 @@
 				<h3>A discreet yet powerful magic weapon, perfect for self defense.</h3>
 				Lasgun powercell offered on a rune of Tzeentch.
 
+				<h2>Clothing Rite:</h2>
+				<h3>Summon the garb of Tzeentch, either magical armor(emerald), or one of four masks(ruby, sapphire, quartz or topaz) offered onto the rune.</h3>
+
+				<h2>Coin Rite:</h2>
+				<h3>Convert common gold ore to thrones.</h3>
+				Place a gold ore on rune of Tzeentch.
+
 				</body>
 			</html>
 			"}
@@ -484,11 +491,11 @@
 
 
 
-/*	/obj/item/book/manual/guard
+/obj/item/book/manual/guard
 	name = "Imperial Infantrymans Uplifting Primer"
 	icon = 'icons/obj/items/books.dmi'
 	icon_state = "IIUP"
-	author = "Lord General Militant Huxlow"
+	author = "Warmaster Slado"
 	title = "Imperial Infantrymans Uplifting Primer"
 	desc = "A pocket guide to Policy, Equipment, and Danger. Everything an Imperial Guard could wish for"
 	var/list/iiupfact = list(
@@ -561,16 +568,30 @@
 /obj/item/book/manual/guard/attack_self(mob/user as mob)
     to_chat(user, "<span class='notice'>You flip past your blank death certificate, reading the following passage</span>")
     playsound(user, 'sound/effects/pageturn1.ogg', 10, 1)
-    to_chat(user, "<span class='notice'>[pick(iiupfact)]</span>"
+    icon_state = "IIUP1"
 
 
 /obj/item/book/manual/inq
 	name = "Inquisitorial Rituals"
 	icon = 'icons/obj/items/books.dmi'
 	icon_state = "IRIT"
-	author = "Inquisitor Gideon Ravenor"
+	author = "Inquisitor Amberly Vail"
 	title = "Inquisitorial Rituals"
 	desc = "A tiny handbook containing the descriptions of essential rituals"
+	var/list/IRIT = list(
+	"Page 1. Litany of his imperial preservation. Emperor I consecrate this place today anew and without reserve to your righteous fury. (Dear readers should note that this originally thought to be entirely Sanguinary ritual of a now long excommunicated monk from the world of Marketh does in fact hold power on imperial worlds tainted by Chaos. My research suggests that this is due to the fact... it may be entirely heretical in nature.)",
+	"Page 2. Litany of his imperial preservation. Emperor keep us. Emperor preserve us.(The translation isn't entirely accurate. Either you say.... keep us or preserve us. One of those, or perhaps both. Along with further changing by the ritual leader, with his or her flock until they all explode... or they sanctify the grounds.)",
+	"Page 3. Litany of her martyred exorcism. Holy emperor you have given us your saints to purge wickedness across the stars I call upon them now to reveal the truth.(This one I tested personally on a whim while drunk among the company of one Ciaphas Cain, uniquely... it did work. We tied up the poor heretic in a basement while splashing gin and holy water into their sobbing pleading face while yelling the names of saints. What happened to his eyeballs... was quite messy.)",
+	"Page 4. Litany of her martyred exorcism. Saint Sabbat defend us! Saint Beatie defend us! Saint ephrael and her martyed lady defend us!",
+	"Page 5. There is a drawing of holy water being expeled onto the face of a heretic during the litany of her martyred exorcism.",
+	"Page 6. Stories of Vessorine Blade lore have been uncovered by inquisitorial research, suggesting that the use of the Saintie, Fuscina, Cutro and Power Sword are the most favourable weapons used when combating the arch enemies of man. Vessorine blademasters often employ light arms loaded with manstopper rounds, using both blade and gun together in combating Daemons.",
+	"Page 7. The tales of Interrogator Harland Nale have revealed detailed analytics on the use of conventional weapons against imperial archenemies, including that of Chaos Space Marines and rogue Inquisitorial agents often bearing incredible armor. A shotgun, aegis stub rifle or mateba loaded with armor penetrating rounds... and in a pinch the catachan fang are all proven weapons capable of defeating any armor-systems when used by a stout operative. These tools should always be kept in mind for the traveller in need of sufficient fire-power in a pinch. Personally I prefer the use of a power-blade myself..."
+	) 
+
+/obj/item/book/manual/guard/attack_self(mob/user as mob)
+    to_chat(user, "<span class='notice'>You flip past your blank death certificate, reading the following passage</span>")
+    playsound(user, 'sound/effects/pageturn1.ogg', 10, 1)
+    icon_state = "IRIT1"
 
 /obj/item/book/manual/ecc
 	name = "Ecceliarchy Rituals"
@@ -579,8 +600,21 @@
 	author = "Goge Vandire"
 	title = "Ecceliarchy Rituals"
 	desc = "A tiny handbook containing the descriptions of essential rituals"
+	var/list/ERIT = list(
+	"Page 1. Litany of his imperial preservation. Emperor I consecrate this place today anew and without reserve to your righteous fury.",
+	"Page 2. Litany of his imperial preservation. Emperor keep us. Emperor preserve us.",
+	"Page 3. Litany of her martyred exorcism. Holy emperor you have given us your saints to purge wickedness across the stars I call upon them now to reveal the truth.",
+	"Page 4. Litany of her martyred exorcism. Saint Sabbat defend us! Saint Beatie defend us! Saint ephrael and her martyed lady defend us!",
+	"Page 5. There is a drawing of holy water being expeled onto the face of a heretic during the litany of her martyred exorcism."
+	) 
+
+/obj/item/book/manual/guard/attack_self(mob/user as mob)
+    to_chat(user, "<span class='notice'>You flip past your blank death certificate, reading the following passage</span>")
+    playsound(user, 'sound/effects/pageturn1.ogg', 10, 1)
+    icon_state = "ERIT1"
 
 
+/*
 /obj/item/book/manual/law
 	name = "Lex Imperialis"
 	icon = 'icons/obj/items/books.dmi'
@@ -588,4 +622,16 @@
 	author = "God Emperor of Mankind"
 	title = "Lex Imperialis"
 	desc = "An old handbook containing some of the Imperiums most important laws."
+	var/list/ERIT = list(
+	"Page 1. Litany of his imperial preservation. Emperor I consecrate this place today anew and without reserve to your righteous fury.",
+	"Page 2. Litany of his imperial preservation. Emperor keep us. Emperor preserve us.",
+	"Page 3. Litany of her martyred exorcism. Holy emperor you have given us your saints to purge wickedness across the stars I call upon them now to reveal the truth.",
+	"Page 4. Litany of her martyred exorcism. Saint Sabbat defend us! Saint Beatie defend us! Saint ephrael and her martyed lady defend us!",
+	"Page 5. There is a drawing of holy water being expeled onto the face of a heretic during the litany of her martyred exorcism."
+	) 
+
+/obj/item/book/manual/guard/attack_self(mob/user as mob)
+    to_chat(user, "<span class='notice'>You flip past your blank death certificate, reading the following passage</span>")
+    playsound(user, 'sound/effects/pageturn1.ogg', 10, 1)
+    icon_state = "ERIT1"
 */

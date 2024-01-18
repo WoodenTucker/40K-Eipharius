@@ -714,6 +714,6 @@
 	desc = "A standardised armoured undersuit worn by Tempestus Scions"
 	icon_state = "ScionUndersuit"
 	item_state = "scionundersuit"
-	armor = list(melee = 30, bullet = 40, laser = 20, energy = 20, bomb = 20, bio = 20, rad = 0)
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 20, bomb = 20, bio = 20, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

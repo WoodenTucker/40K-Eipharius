@@ -131,6 +131,65 @@
 //NON DIRT BARRICADES
 
 
+/obj/structure/barricade/wood
+	name = "wood boards"
+	desc = "boards covering a window"
+	icon = 'icons/obj/warfare.dmi'
+	icon_state = "wood"
+	throwpass = FALSE
+	anchored = TRUE
+	density = FALSE
+	plane = ABOVE_OBJ_PLANE
+	layer = BASE_ABOVE_OBJ_LAYER
+	var/health = 100
+
+/obj/structure/barrel1
+	name = "barrels"
+	desc = "An empty metal barrel"
+	icon = 'icons/obj/warfare.dmi'
+	icon_state = "one_b"
+	throwpass = TRUE
+	anchored = TRUE
+	density = FALSE
+	plane = ABOVE_OBJ_PLANE
+	layer = BASE_ABOVE_OBJ_LAYER
+	var/health = 100
+
+/obj/structure/barrel2
+	name = "barrels"
+	desc = "An empty metal barrel"
+	icon = 'icons/obj/warfare.dmi'
+	icon_state = "two_b"
+	throwpass = TRUE
+	anchored = TRUE
+	density = FALSE
+	plane = ABOVE_OBJ_PLANE
+	layer = BASE_ABOVE_OBJ_LAYER
+	var/health = 100
+
+/obj/structure/barrel3
+	name = "barrels"
+	desc = "An empty metal barrel"
+	icon = 'icons/obj/warfare.dmi'
+	icon_state = "three_b"
+	throwpass = TRUE
+	anchored = TRUE
+	density = FALSE
+	plane = ABOVE_OBJ_PLANE
+	layer = BASE_ABOVE_OBJ_LAYER
+	var/health = 100
+
+/obj/structure/barrel4
+	name = "barrels"
+	desc = "An empty metal barrel"
+	icon = 'icons/obj/warfare.dmi'
+	icon_state = "four_b"
+	throwpass = TRUE
+	anchored = TRUE
+	density = FALSE
+	plane = ABOVE_OBJ_PLANE
+	layer = BASE_ABOVE_OBJ_LAYER
+	var/health = 100
 
 //BARBWIRE
 
@@ -414,9 +473,6 @@
 
 /obj/structure/landmine/Crossed(var/mob/living/M as mob)
 	if(ishuman(M))
-		var/mob/living/carbon/human/H = M
-		if(H.isChild())//Kids don't set off landmines.
-			return
 		if(!M.throwing && !armed && can_be_armed)
 			to_chat(M, "<span class='danger'>You hear a sickening click!</span>")
 			playsound(src, 'sound/effects/mine_arm.ogg', 100, FALSE)

@@ -404,7 +404,6 @@
 	suit = /obj/item/clothing/suit/child_coat/blue
 	l_ear = /obj/item/device/radio/headset/blue_team/all
 	uniform = /obj/item/clothing/under/child_jumpsuit/warfare/blue
-	shoes = /obj/item/clothing/shoes/child_shoes
 	gloves = null
 	r_pocket = /obj/item/device/binoculars
 	backpack_contents = list(/obj/item/grenade/smokebomb = 1)

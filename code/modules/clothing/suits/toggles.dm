@@ -71,7 +71,6 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|HANDS|LEGS|FEET
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	action_button_name = "Toggle Winter Hood"
 	hoodtype = /obj/item/clothing/head/winterhood
 	allowed = list (/obj/item/pen, /obj/item/paper, /obj/item/device/flashlight,/obj/item/storage/fancy/cigarettes, /obj/item/storage/box/matches, /obj/item/reagent_containers/food/drinks/flask)
@@ -89,27 +88,22 @@
 /obj/item/clothing/suit/storage/hooded/wintercoat/captain
 	name = "captain's winter coat"
 	icon_state = "coatcaptain"
-	armor = list(melee = 0, bullet = 0, laser = 0, energy =10, bomb = 0, bio = 0, rad = 0)
 
 /obj/item/clothing/suit/storage/hooded/wintercoat/security
 	name = "security winter coat"
 	icon_state = "coatsecurity"
-	armor = list(melee = 10, bullet = 5, laser = 5, energy = 15, bomb = 0, bio = 0, rad = 0)
 
 /obj/item/clothing/suit/storage/hooded/wintercoat/medical
 	name = "medical winter coat"
 	icon_state = "coatmedical"
-	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 30, rad = 0)
 
 /obj/item/clothing/suit/storage/hooded/wintercoat/science
 	name = "science winter coat"
 	icon_state = "coatscience"
-	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 30, rad = 0)
 
 /obj/item/clothing/suit/storage/hooded/wintercoat/engineering
 	name = "engineering winter coat"
 	icon_state = "coatengineer"
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 30)
 
 /obj/item/clothing/suit/storage/hooded/wintercoat/engineering/atmos
 	name = "atmospherics winter coat"
@@ -157,7 +151,7 @@
 	cold_protection = HEAD
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS|BLOCKHAIR|BLOCKHEADHAIR
 	unacidable = 1
-	armor = list(melee = 50, bullet = 50, laser = 45, energy = 80, bomb = 50, bio = 100, rad = 160)
+	armor = list(melee = 17, bullet = 50, laser = 45, energy = 80, bomb = 50, bio = 100, rad = 160)
 	flash_protection = FLASH_PROTECTION_MAJOR
 
 /obj/item/clothing/head/genehood
@@ -167,7 +161,7 @@
 	item_state = "genetor"
 	flags_inv = HIDEEARS | BLOCKHAIR
 	unacidable = 1
-	armor = list(melee = 38, bullet = 30, laser = 40,energy = 40, bomb = 70, bio = 100, rad = 20)
+	armor = list(melee = 18, bullet = 30, laser = 40,energy = 40, bomb = 70, bio = 100, rad = 20)
 	flags_inv = BLOCKHAIR|BLOCKHEADHAIR|HIDEEARS|HIDEEYES
 	flash_protection = FLASH_PROTECTION_MAJOR
 
@@ -190,7 +184,7 @@
 	min_cold_protection_temperature = T0C - 30
 	cold_protection = HEAD
 	flags_inv = HIDEEARS | BLOCKHAIR
-	armor = list(melee = 35, bullet = 35, laser = 35, energy = 40, bomb = 20, bio = 100, rad = 100) //gives ranger the same armor as ruststalker, anyone who wants this shit balanced, ping me with the stats you want it to have
+	armor = list(melee = 18, bullet = 35, laser = 35, energy = 40, bomb = 20, bio = 100, rad = 100) //gives ranger the same armor as ruststalker, anyone who wants this shit balanced, ping me with the stats you want it to have
 
 /obj/item/clothing/head/rusthood
 	name = "ruststalker hood"
@@ -201,7 +195,7 @@
 	min_cold_protection_temperature = T0C - 30
 	cold_protection = HEAD
 	flags_inv = HIDEEARS | BLOCKHAIR
-	armor = list(melee = 45, bullet = 25, laser = 25, energy = 40, bomb = 20, bio = 100, rad = 100)
+	armor = list(melee = 21, bullet = 25, laser = 25, energy = 40, bomb = 20, bio = 100, rad = 100)
 
 /obj/item/clothing/head/vanhelm
 	name = "vanguard helmet"
@@ -212,4 +206,4 @@
 	min_cold_protection_temperature = T0C - 30
 	cold_protection = HEAD
 	flags_inv = HIDEEARS | BLOCKHAIR
-	armor = list(melee = 50, bullet = 50, laser = 45, energy = 80, bomb = 50, bio = 100, rad = 160)
+	armor = list(melee = 20, bullet = 37, laser = 37, energy = 80, bomb = 50, bio = 100, rad = 160)

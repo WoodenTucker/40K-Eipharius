@@ -96,7 +96,6 @@
 	suit = /obj/item/clothing/suit/child_coat/red
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_hand = /obj/item/shovel
-	shoes = /obj/item/clothing/shoes/child_shoes
 	pda_type = null
 	pda_slot = null
 	backpack_contents = list(

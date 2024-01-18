@@ -7,7 +7,7 @@
 	icon_state = "sentinel2"
 	initial_icon = "sentinel2"
 	step_in = 3.5 // Quick entrace
-	health = 300
+	health = 1300
 	deflect_chance = 25
 	internal_damage_threshold = 250
 	damage_absorption = list("brute"=0.5,"fire"=0.7,"bullet"=0.5,"laser"=0.8,"energy"=0.1,"bomb"=0.1)

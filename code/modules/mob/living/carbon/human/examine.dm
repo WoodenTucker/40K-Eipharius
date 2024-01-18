@@ -60,9 +60,6 @@
 
 	msg += "<br>"
 
-	if(isChild())
-		msg += "<b>[T.He] is but a child!</b>\n"
-
 	if((!skipface || wear_id) && src != user)
 		if(ishuman(user))//Social class descriptions. They go at the top they're very important.
 			if(social_class)

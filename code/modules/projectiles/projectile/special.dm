@@ -22,14 +22,14 @@
 	name =".75 bolt" //.75, astartes sized bolters or boltpistols
 	icon_state= "bolter"
 	damage = 75
-	armor_penetration = 40 //this is totally not cause its a .75
+	armor_penetration = 44 //this is totally not cause its a .75
 	check_armour = "bullet"
 
 /obj/item/projectile/bullet/bolterrifle/astartes
 	name =".95 bolt"  // Will make kraken penetrator variants later.
 	icon_state= "bolter"
 	damage = 89
-	armor_penetration = 45 
+	armor_penetration = 48
 	check_armour = "bullet"
 
 /obj/item/projectile/bullet/bpistol 
@@ -37,31 +37,31 @@
 	icon_state= "bolter"
 	damage = 68
 	check_armour = "bullet"
-	armor_penetration = 35
+	armor_penetration = 44
 
 // SPECIAL BOLT ROUNDS
 
 /obj/item/projectile/bullet/bpistol/kp
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 73
-	armor_penetration = 45
+	armor_penetration = 48
 	penetrating = 2
 
 /obj/item/projectile/bullet/bolt/kp
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 83
-	armor_penetration = 60
+	armor_penetration = 48
 	penetrating = 2
 
 /obj/item/projectile/bullet/bpistol/ms // This is .75 Bolt Pistol Round
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 79
-	armor_penetration = 35
+	armor_penetration = 44
 
 /obj/item/projectile/bullet/bolt/ms
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 89
-	armor_penetration = 35
+	armor_penetration = 44
 
 /obj/item/projectile/meteor
 	name = "meteor"
@@ -139,9 +139,6 @@
 			H.adjust_fire_stacks(10) //note left by walker, any more than 10 is impossibly OP
 			H.IgniteMob()
 		new /obj/flamer_fire(H.loc, 12, 10, "red", 1)
-		if(H.isChild())
-			var/mob/living/carbon/human/F = firer
-			F.unlock_achievement(new/datum/achievement/child_fire())
 
 
 // FLESH MOUTH
@@ -328,9 +325,9 @@
 	name = "phosphor splash"
 	icon_state = "pulse1"
 	fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
-	damage = 65 //phosphor blasters are incredibly powerful weapons, almost never used
+	damage = 35 //phosphor blasters are incredibly powerful weapons, almost never used
 	check_armour = "energy"
-	armor_penetration = 100 //phosphor blasters are incredibly good at penetrating heavy armor
+	armor_penetration = 40 //phosphor blasters are incredibly good at penetrating heavy armor
 	range =  6 //extremely close ranged, normal vision is 8 but technically 7 if you don't count your own tile.
 	
 
@@ -340,17 +337,14 @@
 		if(!istype(H.wear_suit, /obj/item/clothing/suit/armor/seolsuit))
 			H.adjust_fire_stacks(5) //i know this aint lore accurate, but if you want to buff this, nerf pain.
 			H.IgniteMob()
-		new /obj/flamer_fire(H.loc, 120, 500, "red", 1)
-		if(H.isChild())
-			var/mob/living/carbon/human/F = firer
-			F.unlock_achievement(new/datum/achievement/child_fire())
+		new /obj/flamer_fire(H.loc, 12, 10, "red", 1)
 
 
 /obj/item/projectile/gauss
 	name = "Gauss "
 	icon_state = "emitter"
 	fire_sound = 'sound/effects/meteorimpact.ogg' //Bass-y sound of firing
-	damage = 250
+	damage = 100
 	damage_type = BURN
 	agony = 200
 	check_armour = "energy"
@@ -359,7 +353,7 @@
 	dispersion = 0.0
 	animate_movement = 1
 	penetrating = 10
-	armor_penetration = 100
+	armor_penetration = 44
 
 /obj/item/projectile/energy/meltagun
 	name = "Meltagun beam"
@@ -371,7 +365,7 @@
 	range =  5
 	incinerate = 1
 	penetrating = 10
-	armor_penetration = 120
+	armor_penetration = 47
 	var/flash_range = 1
 	var/brightness = 10
 	var/light_colour = "#ffffff"
@@ -394,3 +388,87 @@
 	var/datum/effect/effect/system/spark_spread/sparks = new /datum/effect/effect/system/spark_spread()
 	sparks.set_up(2, 1, T)
 	sparks.start()
+
+//TYRANID
+
+/obj/item/projectile/bullet/tyranid
+	name = "Tyranid bullet, just a categorisation object."
+	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
+	damage = 0
+	armor_penetration = 0
+	penetrating = 0
+	stun = 0
+	weaken = 0
+	paralyze = 0
+	irradiate = 0
+	stutter = 0
+	eyeblur = 0
+	drowsy = 0
+	agony = 0
+
+	incinerate = 0
+	embed = 0 // whether or not the projectile can embed itself in the mob
+	is_shrapnel = FALSE
+	//shrapnel_type //type of shrapnel the projectile leaves in its target.
+
+/obj/item/projectile/bullet/tyranid/fleshborer
+	name = "fleshborer beetle"
+	damage = 15
+	armor_penetration = 25
+	stun = 5
+	weaken = 5
+	agony = 25
+	embed = 1 
+/*/obj/item/projectile/bullet/tyranid/fleshborer/on_hit(var/atom/target)
+	if(ishuman(target))
+		if var/fleshborer < 10
+			target.fleshborer =+ 1
+	else return*/ //I'll get this properly set up once I've considered how to implement a scaling damage function and given mobs a fleshborer tracking value.
+
+/obj/item/projectile/bullet/tyranid/spike
+	name = "spike rifle spike"
+	damage = 25
+	armor_penetration = 35
+	agony = 5
+	embed = 1 
+
+/obj/item/projectile/bullet/tyranid/spike/hall
+	name = "spike rifle spike"
+	damage = 25
+	armor_penetration = 35
+	agony = 5
+	embed = 1 
+
+/obj/item/projectile/bullet/tyranid/spike/hall/on_hit(var/atom/target, var/blocked = 0)
+	if(istype(target, /mob/living/carbon/human))
+		var/mob/living/carbon/human/M = target
+		M.reagents.add_reagent(/datum/reagent/toxin/tyranid/hall, 15)
+
+/obj/item/projectile/bullet/tyranid/spike/sleepy
+	name = "spike rifle spike"
+	damage = 25
+	armor_penetration = 35
+	agony = 5
+	embed = 1 
+
+/obj/item/projectile/bullet/tyranid/spike/sleepy/on_hit(var/atom/target, var/blocked = 0)
+	if(istype(target, /mob/living/carbon/human))
+		var/mob/living/carbon/human/M = target
+		M.reagents.add_reagent(/datum/reagent/toxin/tyranid/sleepy, 5)
+
+
+
+/obj/item/projectile/bullet/tyranid/venomcannon
+	name = "venom cannon shard"
+	damage = 20
+	armor_penetration = 35
+	stun = 5
+	weaken = 5
+	agony = 25
+	embed = 1 
+
+/obj/item/projectile/bullet/tyranid/venomcannon/on_hit(var/atom/target, var/blocked = 0)
+	if(istype(target, /mob/living/carbon/human))
+		var/mob/living/carbon/human/M = target
+		M.reagents.add_reagent(/datum/reagent/toxin/tyranid/acid, 5)
+

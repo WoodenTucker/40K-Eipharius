@@ -41,10 +41,6 @@
 		to_chat(user, "Timer set for [timer] seconds.")
 
 /obj/item/plastique/afterattack(atom/movable/target, mob/user, flag)
-	if (!flag)
-		return
-	if(!istype(target, /obj/machinery/door) && !iswall(target))
-		return
 	to_chat(user, "Planting explosives...")
 	user.do_attack_animation(target)
 
@@ -67,21 +63,7 @@
 			explode(get_turf(target))
 
 /obj/item/plastique/proc/explode(var/location)
-	if(!target)
-		target = get_atom_on_turf(src)
-	if(!target)
-		target = src
-	if(location)
-		explosion(location, -1, -1, 3, 5)
-
-	if(target)
-		if (istype(target, /turf/simulated/wall))
-			var/turf/simulated/wall/W = target
-			W.dismantle_wall(1)
-		else
-			target.ex_act(1)
-	if(target)
-		target.overlays -= image_overlay
+	explosion(location, -1, -1, 3, 5)
 	qdel(src)
 
 /obj/item/plastique/attack(mob/M as mob, mob/user as mob, def_zone)

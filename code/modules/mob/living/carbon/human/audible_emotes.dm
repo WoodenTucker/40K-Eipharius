@@ -13,9 +13,6 @@
 			if(H.isMonkey())
 				screamsound = "sound/voice/monkey_pain[rand(1,3)].ogg"
 
-			else if(H.isChild())
-				screamsound = "sound/voice/child_pain[rand(1,2)].ogg"
-
 			else if(src.gender == MALE)
 				if(fire)
 					screamsound = "sound/voice/agony_male[rand(1, 10)].ogg"
@@ -85,8 +82,6 @@
 			if(H.isMonkey())
 				return
 
-			if(H.isChild())
-				moansound = 'sound/voice/child_moan1.ogg'
 
 			else if(src.gender == MALE)
 				moansound = "sound/voice/male_moan[rand(1,3)].ogg"

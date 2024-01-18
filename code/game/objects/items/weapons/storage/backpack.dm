@@ -218,9 +218,29 @@
 	name = "satchel"
 	desc = "A trendy looking satchel."
 	icon_state = "satchel-norm"
+	max_storage_space = DEFAULT_BOX_STORAGE +2
+	slot_flags = SLOT_BACK|SLOT_S_STORE//In your back or your second back slot. Backpacks can only go in the main one though.
+	is_satchel = TRUE
+
+/obj/item/storage/backpack/satchel/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.04
+	slowdown_per_slot[slot_r_hand] = 0.04
+	slowdown_per_slot[slot_l_hand] = 0.04
+
+/obj/item/storage/backpack/satchel/heavy
+	name = "heavy rucksack"
+	desc = "A heavy rucksack."
+	icon_state = "warfare_satchel"
 	max_storage_space = DEFAULT_BOX_STORAGE +4
 	slot_flags = SLOT_BACK|SLOT_S_STORE//In your back or your second back slot. Backpacks can only go in the main one though.
 	is_satchel = TRUE
+
+/obj/item/storage/backpack/satchel/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.08
+	slowdown_per_slot[slot_r_hand] = 0.08
+	slowdown_per_slot[slot_l_hand] = 0.08
 
 /obj/item/storage/backpack/satchel/warfare
 	desc = "Fit for war, and not much else."

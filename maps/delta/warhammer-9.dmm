@@ -7965,15 +7965,6 @@
 	},
 /turf/simulated/floor/carpet,
 /area/centcom)
-"Rz" = (
-/obj/structure/table/graf/big_wood_table,
-/obj/item/reagent_containers/food/snacks/poo,
-/obj/item/reagent_containers/food/snacks/poo,
-/turf/simulated/floor/ship_floor/steel{
-	icon_state = "a7";
-	icon = 'icons/map_project/ship/tilesnovos.dmi'
-	},
-/area/cadiaoutpost/oa/shuttle/governor)
 "RC" = (
 /obj/structure/torchwall/service{
 	dir = 8;
@@ -8042,7 +8033,6 @@
 /area/cadiaoutpost/oa/shuttle/governor)
 "RV" = (
 /obj/item/clothing/suit/armor/governor,
-/obj/item/clothing/under/child_heir,
 /obj/item/clothing/under/security_uniform_barny,
 /obj/structure/closet/crate/xenos,
 /turf/simulated/floor/ship_floor/steel{
@@ -42817,7 +42807,7 @@ GD
 FG
 Qr
 Fx
-Rz
+qG
 eH
 Qr
 vu
