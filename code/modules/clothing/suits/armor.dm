@@ -2099,3 +2099,27 @@ obj/item/clothing/suit/armor/scion/trooper
 	desc = "Solid Carapace armour, belonging to the inquisitorial stormtrooper."
 	icon_state = "i-Stormtrooper Armor"
 	item_state = "i-Stormtrooper Armor"
+
+
+/obj/item/clothing/suit/armor/grot // only give this to gretchin, tiny sprite
+	name = "Tiny plate armor"
+	desc = "A scavenged metal plate made for the training of local children now worn by a grot."
+	icon_state = "Grotarmor"
+	item_state = "Grotarmor"
+	armor = list(melee = 15, bullet = 20, laser = 18, energy = 25, bomb = 30, bio = 30, rad = 20)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+
+/obj/item/clothing/suit/armor/grot/grccooat
+	name = "GRC Coat"
+	desc = "A coat worn by the leaders of the GRC rising up against their ork opressors."
+	icon_state = "GRCcoat"
+	item_state = "GRCcoat"
+
+/obj/item/clothing/suit/armor/grot/grcplate
+	name = "GRC Plate armor"
+	desc = "Suit of a true freedom fighter, fight with your fellow GRC members against your greenskin opressors."
+	icon_state = "GRCarmor"
+	item_state = "GRCarmor"
