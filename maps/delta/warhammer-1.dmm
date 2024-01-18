@@ -1219,6 +1219,16 @@
 	icon_state = "rwall11"
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"eA" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/structure/torchwall{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/undercity)
 "eB" = (
 /obj/structure/closet/crate/solar,
 /obj/random/loot/randomsupply,
@@ -45270,10 +45280,10 @@ zx
 zx
 zx
 Mg
-yx
-yx
-LW
-LW
+Mg
+Mg
+Mg
+Mg
 Mg
 zx
 zx
@@ -45522,10 +45532,10 @@ zx
 zx
 zx
 Mg
-yx
-yx
-LW
-LW
+Mg
+Mg
+Mg
+Mg
 Mg
 zx
 zx
@@ -45774,10 +45784,10 @@ zx
 zx
 zx
 Mg
-yx
-yx
-LW
-LW
+Mg
+Mg
+Mg
+Mg
 Mg
 zx
 zx
@@ -46026,8 +46036,8 @@ zx
 zx
 zx
 Mg
-yx
-yx
+Mg
+Mg
 Mg
 Mg
 Mg
@@ -46278,11 +46288,11 @@ zx
 zx
 zx
 Mg
-yx
-yx
-yx
-yx
-yx
+Mg
+Mg
+Mg
+Mg
+Mg
 Mg
 zx
 zx
@@ -46531,10 +46541,10 @@ zx
 zx
 Mg
 Mg
-yx
-yx
-yx
-yx
+Mg
+Mg
+Mg
+Mg
 Mg
 zx
 zx
@@ -46784,9 +46794,9 @@ zx
 Mg
 Mg
 Mg
-yx
-yx
-yx
+Mg
+Mg
+Mg
 Mg
 zx
 zx
@@ -47038,7 +47048,7 @@ ga
 RO
 yx
 yx
-yx
+Mg
 Mg
 zx
 zx
@@ -49054,7 +49064,7 @@ zx
 zx
 Mg
 yx
-zx
+yx
 Mg
 sp
 sp
@@ -49305,8 +49315,8 @@ zx
 zx
 zx
 Mg
-zx
-zx
+yx
+yx
 Mg
 Mg
 Mg
@@ -49557,8 +49567,8 @@ zx
 dd
 zx
 Mg
-zx
-zx
+yx
+yx
 Mg
 Ih
 Ih
@@ -49810,7 +49820,7 @@ zx
 zx
 Mg
 DB
-zx
+yx
 Mg
 Ih
 yY
@@ -54110,7 +54120,7 @@ ve
 ve
 ve
 Ih
-fi
+eA
 fi
 fi
 fi
@@ -54617,10 +54627,10 @@ Ih
 fi
 fi
 Ih
-yx
-yx
-yx
-yx
+Ih
+Ih
+Ih
+Ih
 Ih
 vn
 yx
@@ -54868,11 +54878,11 @@ IB
 Ih
 fi
 fi
+fi
+fi
+LW
+LW
 Ih
-yx
-yx
-yx
-yx
 Ih
 yx
 yx
@@ -55120,11 +55130,11 @@ Iu
 Ih
 fi
 fi
+fi
+fi
+LW
+LW
 Ih
-yx
-yx
-yx
-yx
 Ih
 yx
 yx
@@ -55372,11 +55382,11 @@ OF
 Ih
 fi
 fi
+Na
+fi
+LW
+LW
 Ih
-dd
-yx
-yx
-yx
 Ih
 yx
 yx
@@ -55624,11 +55634,11 @@ VY
 Ih
 fi
 SB
-dd
-dd
-dd
-yx
-yx
+Ih
+Ih
+Ih
+Ih
+Ih
 Ih
 yx
 yx
