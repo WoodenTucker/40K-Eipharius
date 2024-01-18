@@ -216,3 +216,17 @@
 	item_flags = ITEM_FLAG_NOSLIP
 	siemens_coefficient = 0.6
 	can_hold_knife = 1
+
+
+
+/obj/item/clothing/shoes/jackboots/grot
+	name = "Small shoes"
+	desc = "Handmade small shoes"
+	icon_state = "Grotshoes"
+	item_state = "Grotshoes"
+
+/obj/item/clothing/shoes/jackboots/grot/grc
+	name = "Small combat boots"
+	desc = "A smaller version of the jackboots issued to imperium forces."
+	icon_state = "GRCboots"
+	item_state = "GRCboots"
