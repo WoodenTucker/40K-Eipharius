@@ -193,7 +193,7 @@
 	density = 1
 	layer = 4
 	plane = ABOVE_HUMAN_PLANE
-	bound_width = 6
+	bound_width = 64
 
 /obj/structure/statue/aphroditestatue2
 	name = "sultry statue"
@@ -204,7 +204,7 @@
 	density = 1
 	layer = 4
 	plane = ABOVE_HUMAN_PLANE
-	bound_width = 6
+	bound_width = 64
 
 /obj/structure/statue/aphroditestatue3
 	name = "sultry statue"
@@ -215,7 +215,7 @@
 	density = 1
 	layer = 4
 	plane = ABOVE_HUMAN_PLANE
-	bound_width = 6
+	bound_width = 64
 
 
 
