@@ -632,8 +632,7 @@ Pilgrim Fate System
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MAX
 	announced = 0
-	access = list(247, access_bar, access_village, access_daemon)
-	minimal_access = list(access_bar, access_village, access_daemon)
+	access = list(247,355,268,225,267,268,269,270,355,271,272,273,access_bar,access_village,access_daemon)
 	minimal_player_age = 3
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/cargo/noble
