@@ -20,22 +20,22 @@
 	ingredients = list(/obj/item/newore/gems/emerald)
 	product_path = (/obj/item/clothing/suit/armor/heretcoat/tzeecult)
 
-/datum/rune_recipe/tzeentch/cloth1
+/datum/rune_recipe/tzeentch/clothrub
 	name = "Helmet1 Rite"
 	ingredients = list(/obj/item/newore/gems/ruby)
 	product_path = (/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult1)
 
-/datum/rune_recipe/tzeentch/cloth2
+/datum/rune_recipe/tzeentch/clothsap
 	name = "Helmet2 Rite"
 	ingredients = list(/obj/item/newore/gems/sapphire)
 	product_path = (/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult2)
 
-/datum/rune_recipe/tzeentch/cloth3
+/datum/rune_recipe/tzeentch/clothqua
 	name = "Helmet3 Rite"
 	ingredients = list(/obj/item/newore/gems/quartz)
 	product_path = (/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult3)
 
-/datum/rune_recipe/tzeentch/cloth4
+/datum/rune_recipe/tzeentch/clothtop
 	name = "Helmet4 Rite"
 	ingredients = list(/obj/item/newore/gems/topaz)
 	product_path = (/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult4)
