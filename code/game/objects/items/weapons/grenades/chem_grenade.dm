@@ -316,7 +316,7 @@
 
 		B1.reagents.add_reagent(/datum/reagent/phosphorus, 30)
 		B1.reagents.add_reagent(/datum/reagent/potassium, 30)
-		B1.reagents.add_reagent(/datum/reagent/toxin/corrupting, 40)
+		B1.reagents.add_reagent(/datum/reagent/toxin/corrupting, 60)
 		B2.reagents.add_reagent(/datum/reagent/sugar, 30)
 		B2.reagents.add_reagent(/datum/reagent/acid/polyacid, 0)
 

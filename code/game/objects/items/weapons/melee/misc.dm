@@ -99,7 +99,7 @@
 	attack_verb = list("flicked", "whipped", "lashed")
 	var/slan = 1
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
-	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 1, bullet = 2, laser = 2, energy = 2, bomb = 2, bio = 0, rad = 0)
 
 //code copypasted from the mutated arm
 /obj/item/melee/whip/lashoftorment/attack(mob/living/carbon/C as mob, var/mob/living/carbon/human/user as mob) //

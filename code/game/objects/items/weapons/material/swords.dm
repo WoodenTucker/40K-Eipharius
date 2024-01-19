@@ -10,8 +10,8 @@
 	item_state = "claymore"
 	slot_flags = SLOT_BELT
 	w_class = ITEM_SIZE_LARGE //Weight class, Normal is that of a box. Anyway, this makes swords weaker and slower at attacking, if you set it too high, it will become useless, scale damage with WEIGHT CLASS
-	force = 30
-	force_wielded = 40
+	force = 37
+	force_wielded = 47
 	block_chance = 35
 	armor_penetration = 16
 	// force_divisor = 0.8 // Do not turn this back on.
@@ -145,8 +145,7 @@
 	icon_state = "scythe0"
 	item_state = "scythe"
 	desc = "A sharp and curved blade on a long fibremetal handle, this tool makes it easy to reap what you sow."
-	force = 22
-	force_wielded = 26
+	force_wielded = 22
 	block_chance = 25
 	armor_penetration = 16
 	weapon_speed_delay = 7
@@ -157,20 +156,5 @@
 	slot_flags = SLOT_BACK
 	attack_verb = list("chopped", "sliced", "cut", "reaped")
 
-/obj/item/material/sword/commissword
-	name = "commissar's sword"
-	desc = "An orante officer's sword and the Commissar's prized possession. Used to cut down heretics and cowards alike"
-	icon = 'icons/obj/weapons/melee/misc.dmi'
-	icon_state = "commissword"
-	item_state = "commissword"
-	attack_verb = list("stabbed", "chopped", "cut", "sliced")
-	force = 33
-	force_wielded = 37
-	sharp = 1
-	block_chance = 18
-	w_class = ITEM_SIZE_NORMAL
-	slot_flags = SLOT_BELT
-	sales_price = 0
-	weapon_speed_delay = 7
-	armor_penetration = 19
+
 

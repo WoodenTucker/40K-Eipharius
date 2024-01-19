@@ -78,7 +78,6 @@
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/table/rack,
 /obj/item/clothing/head/helmet/heavyflak,
-/obj/item/clothing/head/helmet/mining,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -203,17 +202,9 @@
 "aK" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/table/rack,
-/obj/random/ammo,
-/obj/random/ammo,
-/obj/random/ammo,
-/obj/random/ammo,
-/obj/random/ammo,
-/obj/random/ammo,
-/obj/random/ammo,
-/obj/random/ammo,
-/obj/random/ammo,
-/obj/random/ammo,
-/obj/random/ammo,
+/obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -494,13 +485,9 @@
 /obj/structure/table/rack,
 /obj/item/clothing/accessory/mfcloak,
 /obj/item/clothing/accessory/pfcloak,
-/obj/item/clothing/suit/armor/trinet,
-/obj/item/clothing/suit/armor/ranger2,
 /obj/item/clothing/suit/armor/ranger3,
 /obj/item/clothing/suit/armor/leather,
-/obj/item/clothing/suit/armor/heretcoat,
 /obj/item/clothing/suit/armor/flak2,
-/obj/item/clothing/suit/armor/bountyhunter2,
 /obj/item/clothing/under/gladiator,
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled{
@@ -642,13 +629,6 @@
 	},
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/new_hive/hive_city)
-"ck" = (
-/obj/machinery/light/small/red{
-	dir = 8;
-	icon_state = "bulb1"
-	},
-/turf/simulated/wall/concrete/strong,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "cl" = (
 /obj/effect/floor_decal/turf/big_cables2{
 	dir = 4
@@ -967,10 +947,6 @@
 	dir = 6
 	},
 /area/cadiaoutpost/oa/security/armory)
-"df" = (
-/obj/machinery/light,
-/turf/simulated/floor/ceramic/old,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "dg" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/closet/hive/metal{
@@ -1147,7 +1123,6 @@
 "dP" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/table/rack,
-/obj/item/clothing/head/helmet/seolhelm,
 /obj/item/clothing/head/helmet/soul,
 /turf/simulated/floor/tiled{
 	color = "grey";
@@ -1390,9 +1365,6 @@
 	},
 /obj/item/plastique,
 /obj/item/plastique,
-/obj/item/grenade/spawnergrenade/manhacks,
-/obj/item/grenade/spawnergrenade/manhacks,
-/obj/item/device/batterer,
 /obj/structure/closet/crate/xenos/chest3,
 /turf/simulated/floor/tiled{
 	color = "grey";
@@ -1728,11 +1700,16 @@
 	},
 /area/cadiaoutpost/oa/security/armory)
 "fI" = (
-/obj/structure/railing{
-	dir = 1
+/obj/structure/sign/portrait_hippocrates{
+	pixel_x = -32
 	},
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/turf/simulated/floor/darkfloor,
+/obj/structure/torchwall{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/ceramic/surgery2{
+	dir = 10
+	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "fM" = (
 /obj/item/device/flashlight/candelabra{
@@ -1940,6 +1917,10 @@
 /obj/item/gun/projectile/ork/automatic/shoota/furtha,
 /obj/item/gun/projectile/ork/automatic/shoota/kustom,
 /obj/item/melee/sword/choppa,
+/obj/item/clothing/head/helmet/orkhelmet/freeb,
+/obj/item/clothing/suit/armor/orkarmor/freeb,
+/obj/item/clothing/head/helmet/orkhelmet/freeb,
+/obj/item/clothing/suit/armor/orkarmor/freeb,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "gy" = (
@@ -3357,6 +3338,13 @@
 /obj/structure/sign/portrait_irineu{
 	pixel_y = 32
 	},
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/machinery/photocopier/faxmachine{
+	department = "Rogue Trader";
+	req_one_access = list()
+	},
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "le" = (
@@ -3640,6 +3628,14 @@
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tilethick";
 	dir = 4
+	},
+/obj/item/book/manual{
+	name = "Blue Love: A Ciaphas Cain Story - Ch.1";
+	desc = "In the grim darkness of the far future, there is only war. But amidst the endless conflict and bloodshed, there are moments of tenderness and love that shine like beacons in the darkness. She was an Imperial Guardswoman, a tough and skilled fighter who had seen more battles than she could count. Her name was Corporal Lyra Valtair, and she had been assigned to the 42nd Cadian Regiment, fighting on the front lines of the war against the Tau Empire. He was a Tau Fire Warrior, a member of the rapidly expanding alien empire that had clashed with the Imperium of Man. His name was Shas'ui Cain, and he had been tasked with leading a strike team to infiltrate the Imperial lines and gather vital intelligence."
+	},
+/obj/item/book/manual{
+	name = "Blue Love: A Ciaphas Cain Story - Ch.2";
+	desc = "Lyra and Kais Cain met on the battlefield, their first encounter a brutal firefight that left both sides battered and bloodied. But as Lyra watched Kais fighting with fierce determination, something stirred within her heart. She couldn't explain it, but there was something about this enemy warrior that drew her to him.Over the course of several skirmishes, Lyra and Kaisaphas Cain found themselves crossing paths again and again. They fought with all their might, but each time they saw each other, there was a glimmer of recognition in their eyes.Finally, during a lull in the fighting, Lyra approached Kais under a flag of truce. She held out her hand, and to her surprise, Kais took it. They spoke for a few minutes, sharing stories of their homeworlds and their families. They both knew that they were supposed to be enemies, but something had changed between them. They both felt a connection, a sense of understanding that went beyond the battle lines. As the days went by, Lyra and Kais continued to meet secretly, stealing moments of peace amidst the chaos of war. They would talk for hours, sharing their hopes and dreams, and as they did, their feelings for each other grew stronger. They knew that they were risking everything by being together, but they couldn't help themselves."
 	},
 /turf/simulated/floor/fancyfloor/carpet/grey/middle,
 /area/cadiaoutpost/oa/security/armory)
@@ -4127,11 +4123,7 @@
 /obj/item/clothing/mask/gas/half/cadianrespirator,
 /obj/item/clothing/mask/gas/half/cadianrespirator,
 /obj/item/clothing/mask/gas/half/cadianrespirator,
-/obj/item/rnd/power10,
 /obj/structure/closet/crate/xenos/chest3,
-/obj/item/rnd/illegal3,
-/obj/item/rnd/power3,
-/obj/item/rnd/combat3,
 /obj/item/stack/thrones3/twenty,
 /turf/simulated/floor/tiled{
 	color = "grey";
@@ -4418,22 +4410,12 @@
 	color = "grey"
 	},
 /obj/item/cell/lasgun/hotshot,
-/obj/item/clothing/suit/armor/scion,
-/obj/item/clothing/head/helmet/tscion,
-/obj/item/clothing/gloves/thick/combat/scion,
 /obj/item/clothing/glasses/scion,
-/obj/item/clothing/shoes/scion,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/armory)
 "oM" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/machinery/photocopier/faxmachine{
-	department = "Rogue Trader";
-	req_one_access = list()
-	},
-/turf/simulated/floor/ceramic/old,
+/obj/structure/hivedecor/vehicle/tau,
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "oP" = (
 /obj/item/fluff_items/bfg,
@@ -4762,12 +4744,6 @@
 	dir = 1;
 	icon_state = "tube1"
 	},
-/obj/item/card/id/key/grand/master{
-	access = list(333,225,331,63)
-	},
-/obj/item/card/id/key/grand/monastary{
-	access = list(213,211)
-	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/armory)
 "qj" = (
@@ -4814,11 +4790,13 @@
 /turf/simulated/floor/lino,
 /area/cadiaoutpost/oa/service/inn)
 "qv" = (
-/obj/structure/banner/red{
-	pixel_x = -32
+/obj/machinery/computer/shuttle_control/ferry/roguet{
+	icon = 'icons/map_project/ship/ship_equipment.dmi';
+	icon_state = "1,011"
 	},
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 10
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "qw" = (
@@ -5030,11 +5008,11 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "ry" = (
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
+/obj/structure/torchwall{
+	dir = 8;
+	icon_state = "torchwall0"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "rB" = (
 /obj/machinery/door/unpowered/inn{
@@ -5604,7 +5582,15 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
 "tG" = (
-/turf/simulated/floor/darkwood/rotten,
+/obj/structure/flora/pottedplant{
+	icon = "icons/map_project/furniture_and_decor.dmi";
+	icon_state = "plant"
+	},
+/obj/effect/floor_decal/spline/fancy/wood/three_quarters,
+/obj/structure/banner/red{
+	pixel_y = 32
+	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "tL" = (
 /obj/structure/window/fantasy,
@@ -5921,19 +5907,20 @@
 	pixel_x = -8;
 	pixel_y = -5
 	},
-/obj/item/device/cassette/dow_cmd_theme{
-	name = "Jeremy Soule - Force Commander Theme";
-	desc = "Where have you heard this before ? It sounds VERY familiar..."
-	},
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tilethick";
 	dir = 4
 	},
+/obj/item/device/cassette/starcraft_1,
+/obj/item/device/cassette/grimdark,
+/obj/item/device/cassette/church1,
+/obj/item/device/boombox,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/armory)
 "uR" = (
-/obj/structure/sign/portrait_hippocrates{
-	pixel_x = -32
+/obj/structure/torchwall{
+	dir = 8;
+	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/ceramic/surgery2{
 	dir = 10
@@ -6264,7 +6251,6 @@
 /obj/structure/closet/hive/iron_c{
 	anchored = 1
 	},
-/obj/random/loot/sidearms,
 /obj/random/loot/sidearms,
 /obj/random/loot/sidearmammo,
 /obj/random/loot/sidearmammo,
@@ -6819,16 +6805,6 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/security/armory)
-"yr" = (
-/obj/structure/torchwall{
-	pixel_y = 30
-	},
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "yu" = (
 /obj/structure/torchwall{
 	dir = 8;
@@ -7100,7 +7076,7 @@
 	name = "The Enterprise - ID lock";
 	id = "enterprise";
 	pixel_x = 32;
-	req_one_access = list(225)
+	req_one_access = list(225,247)
 	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
@@ -7193,7 +7169,6 @@
 "zF" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/table/rack,
-/obj/random/loot/randomammo1,
 /obj/random/loot/randomammo1,
 /obj/random/loot/randomammo1,
 /obj/random/loot/randomammo1,
@@ -7431,7 +7406,6 @@
 "AE" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/table/rack,
-/obj/random/loot/sidearms,
 /obj/random/loot/sidearms,
 /obj/random/loot/sidearms,
 /obj/random/loot/sidearms,
@@ -8105,6 +8079,7 @@
 	},
 /obj/random/canned_food,
 /obj/random/canned_food,
+/obj/item/reagent_containers/hypospray/autoinjector/tau,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/shuttle/roguet)
 "Dp" = (
@@ -8143,8 +8118,7 @@
 /obj/item/storage/belt/security,
 /obj/item/storage/belt/security,
 /obj/item/storage/belt/utility/full,
-/obj/item/storage/belt/warfare,
-/obj/item/storage/belt/medical/emt,
+/obj/item/storage/belt/medical/full,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -8349,8 +8323,8 @@
 /obj/structure/table/rack,
 /obj/item/melee/trench_axe/bspear{
 	name = "the emperor's rod";
-	force = 30;
-	force_wielded = 35;
+	force = 38;
+	force_wielded = 43;
 	throwforce = 30
 	},
 /obj/item/clothing/suit/armor/exile,
@@ -8859,7 +8833,6 @@
 /obj/item/clothing/head/helmet/mining,
 /obj/item/clothing/head/helmet/hard_had,
 /obj/item/clothing/head/helmet/hauberk,
-/obj/item/clothing/head/helmet/culthelm/alt,
 /obj/item/clothing/head/helmet/gangerhelm,
 /obj/item/clothing/head/helmet/gladiator,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -9434,11 +9407,7 @@
 	},
 /area/cadiaoutpost/oa/shuttle/roguet)
 "HD" = (
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/darkwood/rotten,
+/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "HE" = (
 /obj/machinery/light/small{
@@ -9573,7 +9542,7 @@
 /obj/structure/bed/royal/bottom,
 /obj/structure/curtain/open/bed,
 /obj/effect/landmark/start/village{
-	name = "House Sondar Lord"
+	name = "Vane Noble"
 	},
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 9
@@ -11094,10 +11063,11 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "NG" = (
-/obj/structure/banner/red{
-	pixel_y = 32
+/obj/structure/torchwall{
+	dir = 4;
+	icon_state = "torchwall0"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "NH" = (
 /obj/item/reagent_containers/food/drinks/glass2/wine{
@@ -12029,11 +11999,10 @@
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/villageinside)
 "Ri" = (
-/obj/machinery/light,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 10
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
+/obj/structure/table/rack/dark,
+/obj/item/grenade/spawnergrenade/manhacks,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/villageinside)
 "Rk" = (
 /obj/structure/railing{
 	dir = 1
@@ -13064,12 +13033,6 @@
 	},
 /turf/simulated/floor/fancyfloor/brokenfloor2,
 /area/cadiaoutpost/oa/service/inn)
-"UI" = (
-/obj/structure/torchwall{
-	pixel_y = 30
-	},
-/turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "UL" = (
 /obj/item/paper_bin{
 	pixel_y = 10
@@ -14196,7 +14159,6 @@
 /obj/structure/closet/hive/iron_c{
 	anchored = 1
 	},
-/obj/random/loot/sidearms,
 /obj/random/loot/sidearms,
 /obj/random/loot/sidearmammo,
 /obj/random/loot/sidearmammo,
@@ -57580,7 +57542,7 @@ SU
 Wa
 eP
 Mu
-SU
+Ri
 CH
 Mi
 eP
@@ -69491,7 +69453,7 @@ Or
 Or
 Or
 PH
-bX
+oM
 bX
 bX
 PH
@@ -69995,7 +69957,7 @@ Or
 Or
 Or
 PH
-NA
+bX
 bX
 bX
 PH
@@ -70479,15 +70441,15 @@ rZ
 PH
 PH
 PH
+rq
+rq
+rq
+rq
+rq
 PH
-PH
-PH
-PH
-PH
-PH
-tG
-tG
-tG
+bX
+bX
+bX
 PH
 he
 he
@@ -70731,15 +70693,15 @@ xK
 qB
 qB
 PH
-wU
-uR
-uG
-qv
-wU
+rq
+rq
+rq
+rq
+rq
 PH
-HD
-tG
-tG
+bX
+bX
+bX
 iG
 bX
 bX
@@ -70983,15 +70945,15 @@ qB
 qB
 qB
 PH
-NG
-uG
-uG
-uG
-Ri
-UV
-tG
-tG
-tG
+rq
+rq
+rq
+rq
+rq
+rZ
+bX
+bX
+bX
 PH
 bX
 bX
@@ -71003,8 +70965,8 @@ bX
 bX
 bX
 iG
-AC
 bX
+AC
 bX
 PH
 Or
@@ -71235,15 +71197,15 @@ qB
 ee
 qB
 PH
-ry
-uG
-uG
-uG
-uG
+rq
+rq
+rq
+rq
+rq
 PH
-yr
-tG
-tG
+bX
+bX
+bX
 PH
 NA
 bX
@@ -71487,15 +71449,15 @@ PH
 PH
 Hi
 PH
-wU
-uG
-uG
-uG
-uG
+rq
+rq
+rq
+rq
+rq
 PH
-tG
-tG
-tG
+bX
+bX
+bX
 PH
 yW
 bX
@@ -71743,11 +71705,11 @@ PH
 PH
 PH
 PH
-Rr
+rZ
 PH
-tG
-tG
-tG
+AC
+bX
+bX
 PH
 PH
 PH
@@ -71992,10 +71954,10 @@ wc
 wc
 PH
 XX
-oM
+tX
 KE
 tX
-tX
+NG
 PH
 PH
 iG
@@ -72248,11 +72210,11 @@ tX
 Yg
 bh
 tX
-Rr
+PH
 tG
-tG
-tG
-tG
+uG
+fI
+uG
 PH
 nG
 sz
@@ -72261,7 +72223,7 @@ sz
 Un
 Pe
 PH
-sz
+qv
 Bq
 aX
 qb
@@ -72500,11 +72462,11 @@ Kn
 vL
 IR
 tX
-PH
+Rr
 HD
-tG
-tG
-tG
+uG
+uG
+uG
 PH
 ZQ
 dR
@@ -72751,12 +72713,12 @@ mH
 tX
 LC
 Mb
-df
+tX
 PH
-UI
-tG
-tG
-tG
+HD
+uG
+uG
+uG
 PH
 PH
 PH
@@ -73005,10 +72967,10 @@ tX
 tX
 sf
 PH
-tG
-tG
-tG
-tG
+wU
+uR
+uG
+uG
 PH
 dP
 FL
@@ -73251,7 +73213,7 @@ ET
 wc
 wc
 Gz
-tX
+ry
 tX
 nE
 PH
@@ -73507,7 +73469,7 @@ PH
 PH
 PH
 PH
-ck
+PH
 PH
 WT
 Sm
@@ -73522,7 +73484,7 @@ SR
 Ee
 XH
 mC
-fI
+Bq
 qb
 yg
 FB
@@ -73767,7 +73729,7 @@ tw
 KJ
 PH
 Ds
-zF
+aK
 zF
 fh
 AH
@@ -74278,7 +74240,7 @@ AE
 vz
 nw
 mC
-fI
+Bq
 Iz
 qb
 kc
@@ -74530,7 +74492,7 @@ wX
 JW
 wX
 MB
-fI
+Bq
 Iz
 EU
 cg

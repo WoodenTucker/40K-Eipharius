@@ -29,13 +29,13 @@
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8
-	cultist_chance = 20
+	cultist_chance = 40
 
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Rogue Trader [current_name] Sondar") // No title testing. 
+		H.fully_replace_character_name("Rogue Trader [current_name] Vane") // No title testing. 
 		H.get_idcard()?.access = list(247,355,268,225,267,268,269,270,355,271,272,273,access_bar,access_village,access_daemon)
 		H.add_stats(rand(14,18), rand(14,18), rand(14,18), rand(14,18))
 		H.add_skills(rand(6,10),rand(6,10),rand(5,6),rand(1,8),rand(1,8)) //melee, ranged, med, eng, surgery
@@ -46,7 +46,7 @@
 		H.witchblood()
 		H.warfare_faction = IMPERIUM
 		H.verbs += list(/mob/living/carbon/human/proc/hire)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Rogue Trader tied directly to the Sondar Dynasty, one of many heirs who might one day inherit a seat of power that would grant dominion over the Segmentum itself, your Warrant of Trade and it's required letters of marque were built upon the industries of war and the conquest of xenos worlds across the fringe. Many of the mercenaries in your employ are turncoats who betrayed the very species you eradicated. The brutal nature of your conquests and of House Vane's... methods in acquiring your letters of marque create the assurance that failure here on Eipharius will lead to your untimely end and that of your children.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Rogue Trader tied directly to the Vane Dynasty, one of many heirs who might one day inherit a seat of power that would grant dominion over the Segmentum itself, your Warrant of Trade and it's required letters of marque were built upon the industries of war and the conquest of xenos worlds across the fringe. Many of the mercenaries in your employ are turncoats who betrayed the very species you eradicated. The brutal nature of your conquests and of House Vane's... methods in acquiring your letters of marque create the assurance that failure here on Eipharius will lead to your untimely end and that of your children.</font></b></span>")
 
 
 /datum/job/captain/equip(var/mob/living/carbon/human/H)

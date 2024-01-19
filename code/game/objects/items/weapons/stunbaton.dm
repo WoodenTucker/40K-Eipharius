@@ -267,8 +267,8 @@
 	color = "#292929"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 1
-	force = 15
-	force_wielded = 25
+	force = 25
+	force_wielded = 35
 	var/stunforce = 0
 	var/agonyforce = 60
 	block_chance = 40

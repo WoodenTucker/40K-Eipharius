@@ -41,7 +41,7 @@
 	brute_mod = 0.35 // Hardened carapace.
 	burn_mod = 0.35 // Hardened carapace.
 
-	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_EMBED | SPECIES_FLAG_NO_PAIN
+	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_EMBED | SPECIES_FLAG_NO_PAIN
 	appearance_flags = HAS_EYE_COLOR | HAS_SKIN_COLOR
 
 	blood_color = "#05ee05"

@@ -10,7 +10,7 @@
 	belt = /obj/item/gun/energy/las/laspistol/lord
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = /obj/item/device/radio/headset/heads/rt
-	shoes = /obj/item/clothing/shoes/jackboots/noble/rt
+	shoes = /obj/item/clothing/shoes/jackboots/noble
 	r_pocket = /obj/item/storage/box/coin
 	id_type = /obj/item/card/id/gold
 	pda_type = null
@@ -52,7 +52,7 @@
 	id_type = /obj/item/card/id/shared/cargo
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	back = /obj/item/storage/backpack/satchel/warfare
-	l_ear = /obj/item/device/radio/headset/headset_service
+	l_ear = /obj/item/device/radio/headset/heads/rt
 	l_hand = /obj/item/toy/katana/strong
 	r_pocket = /obj/item/storage/box/coin
 	suit_store = /obj/item/gun/energy/las/lasgun
@@ -70,8 +70,8 @@
 	id_type = /obj/item/card/id/key/super/daemon
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	back = /obj/item/storage/backpack/satchel/warfare
-	l_ear = /obj/item/device/radio/headset/ert // work with gangers.
-	l_hand = null
+	l_ear = /obj/item/device/radio/headset/heads/rt
+	l_hand = /obj/item/gun/projectile/talon/renegade
 	r_pocket = /obj/item/storage/box/coin
 	suit_store = null
 	backpack_contents = list(

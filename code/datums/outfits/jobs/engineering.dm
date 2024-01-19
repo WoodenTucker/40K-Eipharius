@@ -100,7 +100,6 @@
 	pda_slot = null
 	back = /obj/item/storage/backpack/satchel/warfare
 	backpack_contents = list(
-		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 		/obj/item/stack/thrones = 1,
 		/obj/item/pickaxe/mechanicus = 1,
 		/obj/item/book/manual/ripley_build_and_repair = 1,

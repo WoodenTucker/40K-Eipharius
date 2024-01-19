@@ -60,7 +60,7 @@
 
 /obj/item/clothing/rosarius/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(istype(damage_source, /obj/item/projectile))
-		if(shield_count > 0)
+		if(shield_count > 0 && prob(70))
 			var/obj/item/projectile/P = damage_source
 			//var/reflectchance = 100 //Defined here, for if you want to make it have X percent chance of blocking the shot,
 			var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
@@ -84,7 +84,7 @@
 
 /obj/item/clothing/rosarius/Process()
 	if(shield_count < 3) //Set this to whatever you want the max number of charges to be.
-		sleep(60) //Timer in between recharge.
+		sleep(160) //Timer in between recharge.
 		shield_count += 1
 		playsound(loc, 'sound/effects/compbeep1.ogg', 50, TRUE)
 	if(shield_count  == 3) //Whatever the max charge is, this plays the sound.
@@ -118,6 +118,7 @@
 /obj/item/clothing/rosette/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(istype(damage_source, /obj/item/projectile))
 		if(shield_count >= 0)
+		if(shield_count >= 0 && prob(80))
 			var/obj/item/projectile/P = damage_source
 			//var/reflectchance = 100 //Defined here, for if you want to make it have X percent chance of blocking the shot,
 			var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
