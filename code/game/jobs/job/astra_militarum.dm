@@ -73,7 +73,7 @@
 		"Mordian Iron Guard" = /decl/hierarchy/outfit/job/guardsman/mordian,
 		"Maccabian Guardsman" = /decl/hierarchy/outfit/job/guardsman/maccabian,
 		)
-	cultist_chance = 4
+	cultist_chance = 7
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -122,7 +122,7 @@
 	shotgun_skill = 6
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 10 // sir what is a heretic
+	cultist_chance = 11 // sir what is a heretic
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -237,7 +237,7 @@ datum/job/ig/bullgryn
 	shotgun_skill = 6
 	lmg_skill = 7
 	smg_skill = 8
-	cultist_chance = 10
+	cultist_chance = 14
 	alt_titles = list(
 		"Cadian Long Las" = /decl/hierarchy/outfit/job/sniper,
 		"Valhallan Scout Sniper" = /decl/hierarchy/outfit/job/sniper/valhalla,
@@ -267,7 +267,7 @@ datum/job/ig/bullgryn
 			H.set_quirk(new/datum/quirk/brave())
 			H.set_trait(new/datum/trait/death_tolerant())
 			H.implant_loyalty(src)
-			cultist_chance = 1
+			cultist_chance = 4
 
 		switch(title)
 			if("Cadian Long Las" || "Valhallan Scout Sniper" || "Krieg Marksman")
@@ -288,7 +288,7 @@ datum/job/ig/bullgryn
 	open_when_dead = FALSE
 	selection_color = "#23742a"
 	department_flag = SEC
-	cultist_chance = 4
+	cultist_chance = 6
 	outfit_type = /decl/hierarchy/outfit/job/sergeant
 	alt_titles = list(
 		"Cadian Sergeant" = /decl/hierarchy/outfit/job/sergeant,
@@ -379,7 +379,7 @@ datum/job/ig/bullgryn
 	shotgun_skill = 9
 	lmg_skill = 8
 	smg_skill = 9
-	cultist_chance = 3
+	cultist_chance = 5
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -396,7 +396,7 @@ datum/job/ig/bullgryn
 			/mob/living/carbon/human/proc/medicclass)
 		if(title == "Krieg Quartermaster")
 			H.implant_loyalty(src)
-			cultist_chance = 1
+			cultist_chance = 2
 		switch(title)
 			if("Cadian Medicae" || "Valhallan Medicae" || "Krieg Quartermaster")
 				if(title == "Cadian Medicae")
@@ -439,7 +439,7 @@ datum/job/ig/bullgryn
 	shotgun_skill = 10
 	lmg_skill = 10
 	smg_skill = 10
-	cultist_chance = 1
+	cultist_chance = 4
 
 	equip(var/mob/living/carbon/human/H)
 		..()
@@ -483,7 +483,7 @@ datum/job/ig/bullgryn
 	smg_skill = 9
 	open_when_dead = FALSE
 	latejoin_at_spawnpoints = TRUE
-	cultist_chance = 1 // 0 fucks stuff allegedly
+	cultist_chance = 4 // 0 fucks stuff allegedly
 	access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
 	minimal_access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory, access_armory )
 
@@ -870,7 +870,6 @@ datum/job/ig/bullgryn
 	r_hand = /obj/item/storage/box/coin
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/handcuffs = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,

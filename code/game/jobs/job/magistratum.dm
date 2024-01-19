@@ -15,7 +15,7 @@
 	shotgun_skill = 10
 	lmg_skill = 9
 	smg_skill = 9
-	cultist_chance = 5
+	cultist_chance = 7
 	can_be_in_squad = FALSE
 	open_when_dead = FALSE
 	department_flag = INQ
@@ -58,7 +58,7 @@
 	shotgun_skill = 10
 	lmg_skill = 9
 	smg_skill = 9
-	cultist_chance = 5
+	cultist_chance = 8
 	can_be_in_squad = FALSE
 	open_when_dead = FALSE
 	department_flag = INQ
@@ -98,7 +98,7 @@
 	shotgun_skill = 9
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 8
+	cultist_chance = 11
 	can_be_in_squad = FALSE
 	open_when_dead = FALSE
 	department_flag = INQ
@@ -139,7 +139,7 @@
 	shotgun_skill = 7
 	lmg_skill = 5
 	smg_skill = 5
-	cultist_chance = 8
+	cultist_chance = 13
 	can_be_in_squad = FALSE
 	open_when_dead = FALSE
 	department_flag = INQ

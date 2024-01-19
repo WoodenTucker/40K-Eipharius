@@ -65,8 +65,8 @@
 	icon_state = "cane_sword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	block_chance = 40
-	force = 31
-	force_wielded = 35
+	force = 41
+	force_wielded = 45
 	armor_penetration = 19
 	weapon_speed_delay = 7
 	sharp = 1

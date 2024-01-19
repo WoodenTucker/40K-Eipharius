@@ -13,9 +13,10 @@
 	mob_size = MOB_SMALL
 	strength = STR_LOW
 //	sexybits_location = BP_GROIN
-	species_flags = SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SLIP
-	brute_mod = 1.1
-	burn_mod = 1.1
+	species_flags = SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SLIP
+	brute_mod = 1
+	burn_mod = 1
+	slowdown = -0.15 //Increased move speed
 	base_auras = list(
 		/obj/aura/regenerating/human/ork
 		)

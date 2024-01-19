@@ -37,7 +37,7 @@
 	latejoin_at_spawnpoints = 1
 	announced = 0
 	species_role = "Astartes"
-	cultist_chance = 1
+	cultist_chance = 0
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name

@@ -776,6 +776,26 @@ rav to help me code) will reward the player with thrones, aka escort mission wit
 	min_gas = null
 	max_gas = null
 	minbodytemp = 0
+
+
+/mob/living/simple_animal/hostile/pony/death()
+	var/obj/O
+
+	//shards
+	O = new /obj/effect/decal/cleanable/poo(src.loc)
+	step_to(O, get_turf(pick(view(7, src))))
+	if(prob(75))
+		O = new /obj/effect/decal/cleanable/flour(src.loc)
+		step_to(O, get_turf(pick(view(7, src))))
+	if(prob(50))
+		O = new /obj/effect/decal/cleanable/flour(src.loc)
+		step_to(O, get_turf(pick(view(7, src))))
+	if(prob(25))
+		O = new /obj/effect/decal/cleanable/poo(src.loc)
+		step_to(O, get_turf(pick(view(7, src))))
+
+
+
 /*
 
 All of the content below has been scrapped or going to be unused for a few reasons (not being 'fitting', outright unecessary and tests aswell on

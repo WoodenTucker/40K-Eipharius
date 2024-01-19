@@ -86,7 +86,7 @@
 	edge = 1
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK
-	force_wielded = 30
+	force_wielded = 44
 	attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut")
 	applies_material_colour = 0
 

@@ -19,7 +19,7 @@
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8
-	cultist_chance = 4
+	cultist_chance = 6
 	ideal_character_age = 70 // most magi are old as fuck, just imagine what it takes to be a robotics nerdexpert in the cult mechanicus
 	outfit_type = /decl/hierarchy/outfit/job/engineering/chief_engineer
 	access = list(access_mechanicus, access_magosd, access_guard_common, access_medical, access_all_personal_lockers)
@@ -73,7 +73,7 @@
 	shotgun_skill = 6
 	lmg_skill = 6
 	smg_skill = 7
-	cultist_chance = 4
+	cultist_chance = 6
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -117,7 +117,7 @@
 	shotgun_skill = 6
 	lmg_skill = 6
 	smg_skill = 6
-	cultist_chance = 8
+	cultist_chance = 11
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -162,7 +162,7 @@
 	shotgun_skill = 6
 	lmg_skill = 6
 	smg_skill = 7
-	cultist_chance = 5
+	cultist_chance = 7
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -208,7 +208,7 @@
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8
-	cultist_chance = 4
+	cultist_chance = 6
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -253,7 +253,7 @@
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8
-	cultist_chance = 0
+	cultist_chance = 2
 	
 	equip(var/mob/living/carbon/human/skitarii/H)
 		..()

@@ -207,7 +207,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 /obj/item/clothing/gloves/thick/narthecium/apot
 	name = "Apothecary's Narthecium"
 	desc = "A giant surgical combi-tool with multiple different tools, it clearly wasnt made for a normal human."
-	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 12, bio = 100, rad = 100)
+	armor = list(melee = 4, bullet = 4, laser = 4, energy = 4, bomb = 12, bio = 100, rad = 100)
 	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
 	icon_state = "hypogauntlet" //gloves.dmi
 	item_state = "sister" //hands.dmi
@@ -281,7 +281,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	desc = "A pair of white, augmented gloves, these have several modifications on them."
 	siemens_coefficient = 0
 	permeability_coefficient = 0.05
-	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 0, rad = 60)
+	armor = list(melee = 3, bullet = 3, laser = 3, energy = 10, bomb = 10, bio = 0, rad = 60)
 	icon_state = "sister" //gloves.dmi
 	item_state = "sister" //hands.dmi
 	var/can_toggle = 1

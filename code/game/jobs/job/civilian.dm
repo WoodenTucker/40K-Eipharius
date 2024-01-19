@@ -44,13 +44,12 @@
 		to_chat(H, "<span class='notice'><b><font size=3>You are a servitor, specifically one designed for managing a bar and serving drinks. You are to obey Imperial citizens and serve their every need. You are nearly mindless and will follow any order given to you by a superior.</font></b></span>")
 
 /datum/job/hydro
-	title = "House Sondar Servant"
-	department = "Service"
-	department_flag = PIL
+	title = "Vane Bondsman"
+	department_flag = SUP
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "House Sondar"
-	selection_color = "#848484"
+	supervisors = "House Vane."
+	selection_color = "#315dd4"
 	latejoin_at_spawnpoints = TRUE
 	access = list(247, access_hydroponics, access_bar, access_kitchen,access_village, access_grox)
 	minimal_access = list(access_hydroponics, access_village, access_kitchen, access_grox)
@@ -79,7 +78,7 @@
 		H.adjustStaminaLoss(-INFINITY)
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are one of the few skilled hands on this frozen hellscape capable of keeping these apostates from starving in the winter. You work for House Sondar as a penitent worker.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You were formely a lowly crew member to the Lord Captain, your freedom being granted by the wisdom of the Lord trader who gave you settling rights upon Eipharius. After a grueling campaign across the fringe, your Lord Captain had finally won both his dynasty and loyal crew the opportunity to finally settle down.. in the ass end of the frontier. </font></b></span>")
 
 
 

@@ -32,7 +32,7 @@ Astartes
 	genders = list(MALE)
 	teeth_type = /obj/item/stack/teeth/human //Teeth
 	//sexybits_location = BP_GROIN //dude, they have no balls - they actually do, it's old myth since they have libido being put down to the rock bottom
-	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_SLIP
+	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_SLIP
 	inherent_verbs = list(
 	/mob/living/carbon/human/astartes/proc/chapterselect,
 	/mob/living/carbon/human/proc/astachaos,

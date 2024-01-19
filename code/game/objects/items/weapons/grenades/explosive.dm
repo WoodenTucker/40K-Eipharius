@@ -134,7 +134,7 @@
 /obj/mortar/gas/blight/New()
 	..()
 	create_reagents(10)
-	reagents.add_reagent(/datum/reagent/toxin/corrupting, 20)
+	reagents.add_reagent(/datum/reagent/toxin/corrupting, 60)
 	var/location = get_turf(src)
 	var/datum/effect/effect/system/smoke_spread/chem/S = new
 	S.attach(location)
