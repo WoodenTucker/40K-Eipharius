@@ -3745,7 +3745,7 @@
 /obj/effect/floor_decal/newcorner/reinforced,
 /obj/structure/lattice,
 /obj/structure/ladder,
-/turf/space,
+/turf/simulated/open,
 /area/cadiaoutpost/new_hive/hive_city)
 "mu" = (
 /obj/effect/floor_decal/newcorner/polar{
@@ -6580,6 +6580,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/chapel)
+"xm" = (
+/obj/effect/gibspawner/nurgle,
+/turf/simulated/floor/fancyfloor/gray_white,
+/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "xo" = (
 /turf/unsimulated/oldship{
 	icon_state = "rwall2"
@@ -9308,6 +9312,12 @@
 	pixel_x = 30;
 	pixel_y = 22
 	},
+/obj/item/reagent_containers/pill/zoom{
+	name = "cyanide pill"
+	},
+/obj/item/reagent_containers/pill/methylphenidate{
+	name = "toxin pill"
+	},
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 1
 	},
@@ -10329,6 +10339,10 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"KZ" = (
+/obj/effect/gibspawner/nurgle,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "La" = (
 /obj/machinery/door/airlock/multi_tile/metal/imperium{
 	name = "Red's Base"
@@ -10662,6 +10676,9 @@
 /obj/item/card/id/key/super/pathfinder,
 /obj/item/card/id/key/super/pathfinder,
 /obj/structure/closet/crate,
+/obj/item/teleportation_scroll,
+/obj/item/teleportation_scroll,
+/obj/item/teleportation_scroll,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/village/pathfinder)
 "Mm" = (
@@ -67941,7 +67958,7 @@ PH
 wc
 wc
 wc
-wc
+KZ
 wc
 wc
 tf
@@ -68188,7 +68205,7 @@ Or
 PH
 PH
 lA
-oV
+xm
 iG
 wc
 wc
@@ -68694,7 +68711,7 @@ PH
 PH
 PH
 PH
-wc
+KZ
 OI
 nT
 wc
