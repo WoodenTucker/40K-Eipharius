@@ -493,6 +493,17 @@
 	syndie = 1
 	origin_tech = list(TECH_ILLEGAL = 2)
 
+/obj/item/device/radio/headset/heads/gov
+	name = "governor's vox"
+	desc = "A command-level vox with high tiers of encryption."
+	icon_state = "com_headset"
+	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/heads/captain2
+	slot_flags = SLOT_EARS
+	w_class = ITEM_SIZE_SMALL
+	syndie = 1
+	origin_tech = list(TECH_ILLEGAL = 2)
+
 /obj/item/device/radio/headset/inquisition/Initialize()
 	. = ..()
 	set_frequency(RED_FREQ)

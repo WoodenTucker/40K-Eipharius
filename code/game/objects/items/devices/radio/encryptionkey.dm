@@ -221,6 +221,12 @@
 	channels = list("Secure" = 1)
 	syndie = 1
 
+/obj/item/device/encryptionkey/heads/captain2
+	name = "Governor's encryption key"
+	icon_state = "cap_cypherkey"
+	channels = list("Command", "Militarum" = 1)
+	syndie = 1
+
 //AI IS FUCKING HERESY
 /obj/item/device/encryptionkey/heads/ai_integrated
 	name = "ai integrated encryption key"

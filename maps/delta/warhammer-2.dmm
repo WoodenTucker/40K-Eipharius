@@ -1147,10 +1147,10 @@
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "bpq" = (
-/obj/item/pyre/self_lit{
-	invisibility = 100;
-	name = "Invisible Light"
+/obj/structure/orkshrine{
+	pixel_y = 14
 	},
+/obj/item/pyre/self_lit,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
 "bpF" = (
@@ -6965,6 +6965,10 @@
 /obj/effect/decal/cleanable/cobweb,
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"ibl" = (
+/obj/structure/orkbanna2,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/new_hive/caves)
 "ibx" = (
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
@@ -16050,7 +16054,8 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
 "rQR" = (
-/turf/space,
+/obj/structure/orkbanna,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
 "rRt" = (
 /obj/structure/table/rack/dark,
@@ -20599,6 +20604,10 @@
 /mob/living/simple_animal/hostile/shadow,
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"xiJ" = (
+/obj/item/gun/launcher/rcl_rifle/ork,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/new_hive/caves)
 "xiT" = (
 /obj/machinery/crystal_static/orange,
 /obj/item/newore/gems/topaz,
@@ -49625,7 +49634,7 @@ slE
 slE
 hqB
 slE
-hqB
+rQR
 rBU
 hqB
 qtX
@@ -49876,7 +49885,7 @@ tOB
 tOB
 slE
 slE
-xgu
+hqB
 hqB
 hqB
 hqB
@@ -50382,7 +50391,7 @@ tOB
 tOB
 slE
 slE
-hqB
+bpq
 hqB
 oUG
 sDX
@@ -50902,7 +50911,7 @@ hqB
 eGS
 hqB
 hqB
-hqB
+ibl
 slE
 slE
 slE
@@ -51150,7 +51159,7 @@ sDX
 sDX
 sDX
 sDX
-hqB
+xiJ
 hqB
 hqB
 hqB
@@ -52152,7 +52161,7 @@ tOB
 tOB
 tOB
 slE
-xgu
+bpq
 hqB
 hqB
 rbD
@@ -52165,7 +52174,7 @@ hqB
 cUo
 hqB
 hqB
-hqB
+ibl
 slE
 slE
 tOB
@@ -52411,7 +52420,7 @@ beA
 hxZ
 hqB
 rbD
-hqB
+rQR
 slE
 slE
 bpq
@@ -57697,6 +57706,7 @@ eYA
 mcb
 oYr
 eKm
+gBj
 vAj
 hIg
 xHL
@@ -57709,7 +57719,6 @@ sqt
 onT
 tUs
 tUs
-kni
 ntH
 tOB
 tOB
@@ -57778,7 +57787,7 @@ tpQ
 stj
 tpQ
 tpQ
-rQR
+tpQ
 mWl
 lqi
 tpQ

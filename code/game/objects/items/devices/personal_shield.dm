@@ -116,8 +116,7 @@
 
 
 /obj/item/clothing/rosette/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
-	if(istype(damage_source, /obj/item/projectile))
-		if(shield_count >= 0)
+	if(istype(damage_source, /obj/item/projectile)) 
 		if(shield_count >= 0 && prob(80))
 			var/obj/item/projectile/P = damage_source
 			//var/reflectchance = 100 //Defined here, for if you want to make it have X percent chance of blocking the shot,
