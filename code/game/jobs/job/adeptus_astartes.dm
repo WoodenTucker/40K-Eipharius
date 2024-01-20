@@ -89,6 +89,7 @@
 			if("Ultramarine Techmarine")
 				H.add_skills(13, 13, 2, 11, 1)*/
 		H.set_trait(new/datum/trait/death_tolerant())
+		H.set_quirk(new/datum/quirk/dead_inside) // Why didn't they have this
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
