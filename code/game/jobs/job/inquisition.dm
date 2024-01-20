@@ -113,7 +113,7 @@
 
 	var/mob/living/carbon/human/U = src
 	U.verbs -= list(/mob/living/carbon/human/proc/inqclass) //removes verb
-	var/fates = list("Blade and Bolter","Mercenary","Assassin","Pariah","Inquisitorial Stormtrooper")
+	var/fates = list("Blade and Bolter","Mercenary","Assassin","Pariah")
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -214,7 +214,7 @@
 
 	var/mob/living/carbon/human/U = src
 	U.verbs -= list(/mob/living/carbon/human/proc/eqclass) //removes verb
-	var/fates = list("Blade and Bolter","Mercenary","Assassin","Pariah","Militarum","Inquisitorial Stormtrooper")
+	var/fates = list("Blade and Bolter","Mercenary","Assassin","Pariah","Militarum")
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -290,7 +290,7 @@
 			new /obj/item/gun/energy/las/laspistol/militarum/lucius(src.loc)
 			new /obj/item/melee/sword/combat_knife/bowie(src.loc)
 			new /obj/item/storage/firstaid/combat(src.loc)
-		if("Inquisitorial Stormtrooper")
+		/*if("Inquisitorial Stormtrooper")
 			new /obj/item/cell/lasgun/hotshot(src.loc)
 			new /obj/item/cell/lasgun/hotshot(src.loc)
 			new /obj/item/cell/lasgun/hotshot(src.loc)
@@ -302,7 +302,7 @@
 			new /obj/item/clothing/suit/armor/scion/trooper(src.loc)
 			new /obj/item/storage/backpack/satchel/warfare/scion(src.loc)
 			new /obj/item/clothing/head/helmet/tscion(src.loc)
-
+*/
 
 // inq outfits
 /decl/hierarchy/outfit/job/interrogator

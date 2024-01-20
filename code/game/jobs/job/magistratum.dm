@@ -3,7 +3,7 @@
 /datum/job/marshal
 	title = "Planetary Marshal" // Corrupted. Cult. Loyal.
 	head_position = 1
-	supervisors = "the Deacon or Inquisition"
+	supervisors = "the Lord Governor and Segmentum Command"
 	total_positions = 1
 	spawn_positions = 1
 	social_class = SOCIAL_CLASS_HIGH
@@ -46,7 +46,7 @@
 /datum/job/investigator
 	title = "Planetary Investigator"
 	head_position = 1
-	supervisors = "the Lord Governor"
+	supervisors = "the Lord Governor and Marshall"
 	total_positions = 1
 	spawn_positions = 1
 	social_class = SOCIAL_CLASS_HIGH
@@ -86,7 +86,7 @@
 
 /datum/job/enforcer
 	title = "Enforcer" // Cult. Criminal. Loyal.
-	supervisors = "the Planetary Marshal, Deacon and Inquisition"
+	supervisors = "the Planetary Marshal"
 	total_positions = 2
 	spawn_positions = 2
 	social_class = SOCIAL_CLASS_MED
@@ -127,7 +127,7 @@
 
 /datum/job/cadet
 	title = "Enforcer Cadet"
-	supervisors = "the Planetary Marshal, Deacon and Inquisition"
+	supervisors = "the Planetary Marshal"
 	total_positions = 0
 	spawn_positions = 0
 	social_class = SOCIAL_CLASS_MED

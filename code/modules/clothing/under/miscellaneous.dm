@@ -717,3 +717,18 @@
 	armor = list(melee = 10, bullet = 10, laser = 10, energy = 20, bomb = 20, bio = 20, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+
+/obj/item/clothing/under/grot
+	name = "Small rags"
+	desc = "What a fool"
+	icon_state = "Grotrags"
+	item_state = "Grotrags"
+	slowdown_general = -20
+
+/obj/item/clothing/under/grot/grc
+	name = "Expensive revolutionary suit"
+	desc = "A true revolutionist"
+	icon_state = "GRCrags"
+	item_state = "GRCrags"
+	slowdown_general = -20

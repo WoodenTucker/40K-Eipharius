@@ -563,3 +563,33 @@
 	siemens_coefficient = 0
 	flags_inv = BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EYES
+
+
+
+/obj/item/clothing/head/helmet/grot
+	name = "Tiny hat"
+	desc = "A comically small leather hat."
+	icon_state = "Grotcap"
+	item_state = "Grotcap"
+	armor = list(melee = 5, bullet = 8, laser = 5, energy = 35, bomb = 0, bio = 0, rad = 0)
+
+/obj/item/clothing/head/helmet/grot/grccap
+	name = "Tiny Commissar's hat"
+	desc = "A comically small hat with the GRCs symbol."
+	icon_state = "GRCcap"
+	item_state = "GRCcap"
+	armor = list(melee = 16, bullet = 31, laser = 30, energy = 35, bomb = 50, bio = 70, rad = 50)
+
+/obj/item/clothing/head/helmet/grot/helmet
+	name = "Tiny metal helm"
+	desc = "A repurposed cooking pot"
+	icon_state = "Grothelm"
+	item_state = "Grothelm"
+	armor = list(melee = 16, bullet = 31, laser = 30, energy = 35, bomb = 50, bio = 70, rad = 50)
+
+/obj/item/clothing/head/helmet/grot/beret
+	name = "GRC beret"
+	desc = "A beret of a GRC operative."
+	icon_state = "Grotcap"
+	item_state = "Grotcap"
+	armor = list(melee = 5, bullet = 8, laser = 5, energy = 35, bomb = 0, bio = 0, rad = 0)
