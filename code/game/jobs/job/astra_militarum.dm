@@ -1065,7 +1065,7 @@ datum/job/ig/bullgryn
 	head = /obj/item/clothing/head/ogryn
 	shoes = /obj/item/clothing/shoes/jackboots/ogryn
 	gloves = null
-	back = /obj/item/storage/backpack/satchel/heavy/ogryn
+	back = /obj/item/storage/backpack/satchel/warfare/ogryn
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/armor/ogryn/two
 	id_type = /obj/item/card/id/pilgrim/innkeeper
