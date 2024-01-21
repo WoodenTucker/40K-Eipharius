@@ -47,6 +47,7 @@
 	rune_recipes = list(/datum/rune_recipe/nurgle/deathtolerance,
 						/datum/rune_recipe/nurgle/conversion,
 						/datum/rune_recipe/nurgle/offer_gem,
+						/datum/rune_recipe/nurgle/offer_brain,
 						/datum/rune_recipe/nurgle/toughen,
 						/datum/rune_recipe/nurgle/nganga,
 						/datum/rune_recipe/nurgle/uniform,
