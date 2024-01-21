@@ -10,15 +10,15 @@
 
 /obj/structure/heavy_bolter_structure //That thing that's created when you place down your weapon, purely for looks.
 	name = "Deployed Astra Militarum Heavy Bolter"
-	//icon = 'icons/obj/items/mortars.dmi'
-	//icon_state = "mortar_tube_structure"
+	icon = 'icons/obj/items/mortars.dmi'
+	icon_state = "mortar_tube_structure"
 	anchored = TRUE 
 
  /obj/item/heavy_bolter/update_icon(var/mob/living/carbon/human/H)
 	if(deployed)
 		item_state = "blank"
 	else
-		//item_state = "mortar_tube"
+		item_state = "mortar_tube"
 
 	if(istype(H))
 		H.regenerate_icons()
