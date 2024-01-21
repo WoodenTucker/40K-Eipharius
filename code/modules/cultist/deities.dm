@@ -55,6 +55,7 @@
 						/datum/rune_recipe/nurgle/nade,
 						/datum/rune_recipe/nurgle/blight,
 						/datum/rune_recipe/nurgle/nurgling,
+						/datum/rune_recipe/nurgle/offering1,
 						/datum/rune_recipe/nurgle/offering)
 	inherent_verbs = list(
 			/mob/living/carbon/human/proc/lordofflies,
@@ -88,6 +89,10 @@
 	faction = "Chaos"
 	rune_recipes = list(/datum/rune_recipe/tzeentch/conversion,
 						/datum/rune_recipe/tzeentch/fool,
+						/datum/rune_recipe/tzeentch/cloth1,
+						/datum/rune_recipe/tzeentch/cloth2,
+						/datum/rune_recipe/tzeentch/cloth3,
+						/datum/rune_recipe/tzeentch/cloth4,
 						/datum/rune_recipe/tzeentch/cloth,
 						/datum/rune_recipe/tzeentch/illusion,
 						/datum/rune_recipe/tzeentch/omniscience,
