@@ -365,7 +365,9 @@
 
 /obj/item/attack_hand(mob/user as mob)
 	if (!user) return
-	if (no_pickup == 0) return
+	if (no_pickup == 1)
+		to_chat(user, "<span class='notice'>The [src] is too big to pick up!</span>")
+		return
 	if (hasorgans(user))
 		var/mob/living/carbon/human/H = user
 		var/obj/item/organ/external/temp = H.organs_by_name[BP_R_HAND]
@@ -636,6 +638,9 @@ var/list/global/slot_flags_enumeration = list(
 		return
 	if(!istype(src.loc, /turf)) //Object is on a turf
 		to_chat(usr, "<span class='warning'>You can't pick that up!</span>")
+		return
+	if (no_pickup == 1)
+		to_chat(user, "<span class='notice'>The [src] is too big to pick up!</span>")
 		return
 	//All checks are done, time to pick it up!
 	usr.UnarmedAttack(src)
