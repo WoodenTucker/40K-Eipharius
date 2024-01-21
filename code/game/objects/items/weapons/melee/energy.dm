@@ -285,10 +285,10 @@
 	item_state = "powersword"
 	icon_state = "powersword"
 	wielded_icon = "powersword-w"
-	active_force = 39 //should be enough to cut off most limbs
+	active_force = 47 //should be enough to cut off most limbs
 	active_throwforce = 18
 	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
-	force = 34
+	force = 42
 	armor_penetration = 25
 	throwforce = 15
 	throw_speed = 1
@@ -328,9 +328,9 @@
 	item_state = "powersword" // There is no on-mob for powersword we must use this. It looks alright.
 	icon_state = "powersword"
 	wielded_icon = "powersword-w"
-	active_force = 39 //should be enough to cut off most limbs
+	active_force = 47 //should be enough to cut off most limbs
 	active_throwforce = 20
-	force = 34 //its just a adamantium sword when offline
+	force = 42 //its just a adamantium sword when offline
 	throwforce = 15
 	throw_speed = 1
 	throw_range = 4
@@ -352,9 +352,9 @@
 	icon_state = "powerclaw-alt_mag"
 	item_state = "none"
 	wielded_icon = "none"
-	active_force = 38
+	active_force = 46
 	active_throwforce = 0
-	force = 33
+	force = 41
 	throwforce = 1
 	throw_speed = 1
 	throw_range = 1

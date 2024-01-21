@@ -688,8 +688,7 @@ Pilgrim Fate System
 	open_when_dead = 0
 	supervisors = "The Magos Biologis."
 	selection_color = "#848484"
-	access = list(access_bar,)
-	minimal_access = list(access_bar)
+	access = list(access_bar)
 	outfit_type = /decl/hierarchy/outfit/job/medicae
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE

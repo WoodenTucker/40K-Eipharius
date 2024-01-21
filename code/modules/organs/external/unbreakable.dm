@@ -1,6 +1,6 @@
 // Slime/xeno limbs.
 /obj/item/organ/external/chest/unbreakable
-	cannot_break = 1
+	cannot_break = 0
 	dislocated = -1
 
 /obj/item/organ/external/groin/unbreakable
@@ -40,5 +40,5 @@
 	dislocated = -1
 
 /obj/item/organ/external/head/unbreakable
-	cannot_break = 1
+	cannot_break = 0
 	dislocated = -1

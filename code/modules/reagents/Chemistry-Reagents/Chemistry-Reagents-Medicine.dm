@@ -45,6 +45,32 @@
 
 			H.resuscitate()
 
+/datum/reagent/spice
+	name = "Spice"
+	description = "Incredibly rare exotic dust."
+	reagent_state = REAGENT_LIQUID
+	color = "#A0522D"
+	metabolism = 0.2
+	overdose = 400
+	scannable = 1
+	flags = AFFECTS_DEAD
+
+/datum/reagent/spice/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien != IS_DIONA)
+		M.add_chemical_effect(CE_PAINKILLER, 30) // Feel less pain.
+		M.add_chemical_effect(CE_SPEEDBOOST, 1) // Speed boost.
+	if(M.chem_doses[type] < 0.2)	//not that effective after initial rush
+		M.emote(pick("twitch", "drool", "moan", "giggle"))
+		sleep(10)
+		M.emote(pick("twitch", "drool", "moan", "giggle"))
+		M.hallucination(25, 30)
+		sleep(10)
+		M.Weaken(5)
+		M.emote(pick("scream"))
+		M.adjustBruteLoss(1)
+		sleep(10)
+		M.emote(pick("scream"))
+
 /datum/reagent/bicaridine
 	name = "Bicaridine"
 	description = "Bicaridine is an analgesic medication and can be used to treat blunt trauma."
