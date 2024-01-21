@@ -1,7 +1,7 @@
 /obj/item/heavy_bolter
 	name = "Astra Militarum Squad Heavy Bolter"
 	desc = "Standard-issue Heavy Bolter of Astra Militarum, designed to assist allied forces via direct fire support and supression of enemy forces."
-	icon = 'icons/obj/items/mortars.dmi' Adding in proper icons shortly
+	icon = 'icons/obj/items/mortars.dmi' //Adding in proper icons shortly
 	icon_state = "mortar_tube"
 	item_state = "mortar_tube"
 	var/loaded = FALSE
