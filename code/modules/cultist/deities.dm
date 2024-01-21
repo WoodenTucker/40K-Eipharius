@@ -47,6 +47,7 @@
 	rune_recipes = list(/datum/rune_recipe/nurgle/deathtolerance,
 						/datum/rune_recipe/nurgle/conversion,
 						/datum/rune_recipe/nurgle/offer_gem,
+						/datum/rune_recipe/nurgle/offer_brain,
 						/datum/rune_recipe/nurgle/toughen,
 						/datum/rune_recipe/nurgle/nganga,
 						/datum/rune_recipe/nurgle/uniform,
@@ -88,6 +89,10 @@
 	faction = "Chaos"
 	rune_recipes = list(/datum/rune_recipe/tzeentch/conversion,
 						/datum/rune_recipe/tzeentch/fool,
+						/datum/rune_recipe/tzeentch/cloth1,
+						/datum/rune_recipe/tzeentch/cloth2,
+						/datum/rune_recipe/tzeentch/cloth3,
+						/datum/rune_recipe/tzeentch/cloth4,
 						/datum/rune_recipe/tzeentch/cloth,
 						/datum/rune_recipe/tzeentch/illusion,
 						/datum/rune_recipe/tzeentch/omniscience,
