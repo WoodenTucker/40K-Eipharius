@@ -19,7 +19,7 @@
 	ingredients = list(/obj/item/organ/internal/brain)
 	special = TRUE
 
-/datum/rune_recipe/nurgle/offer_gem/do_special(var/mob/living/carbon/user, var/obj/effect/cleanable/heretic_rune/rune)
+/datum/rune_recipe/nurgle/offer_brain/do_special(var/mob/living/carbon/user, var/obj/effect/cleanable/heretic_rune/rune)
 	SEND_SIGNAL(user, COMSIG_CULT_ADD_FAVOR, 15)
 
 /datum/rune_recipe/nurgle/offer_gem
