@@ -1468,3 +1468,35 @@ datum/admins/var/obj/item/paper/admin/faxreply // var to hold fax replies in
 		qdel(P)
 		faxreply = null
 	return
+
+/datum/admins/proc/manage_free_slots()
+	if(!check_rights())
+		return
+	var/datum/browser/browser = new(usr, "jobmanagement", "Manage Free Slots", 520)
+	var/list/dat = list()
+	var/count = 0
+
+
+	for(var/j in SSjobs.occupations)
+		var/datum/job/job = j
+		count++
+		var/J_title = html_encode(job.title)
+		var/J_opPos = html_encode(job.total_positions - (job.total_positions - job.current_positions))
+		var/J_totPos = html_encode(job.total_positions)
+		dat += "<tr><td>[J_title]:</td> <td>[J_opPos]/[job.total_positions < 0 ? " (unlimited)" : J_totPos]"
+
+		dat += "</td>"
+		dat += "<td>"
+		if(job.total_positions >= 0)
+			dat += "addjobslot=[job.title]'>Add 1</A> | "
+			if(job.total_positions > job.current_positions)
+				dat += "removejobslot=[job.title]'>Remove</A> | "
+			else
+				dat += "Remove | "
+			dat += "unlimitjobslot=[job.title]'>Unlimit</A></td>"
+		else
+			dat += "limitjobslot=[job.title]'>Limit</A></td>"
+
+	browser.height = min(100 + count * 20, 650)
+	browser.set_content(dat.Join())
+	browser.open()

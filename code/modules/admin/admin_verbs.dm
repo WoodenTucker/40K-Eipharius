@@ -109,6 +109,7 @@ var/list/admin_verbs_admin = list(
 	/client/proc/vice_edit,
 	/client/proc/vicetype_edit,
 	/client/proc/happiness_edit,
+	/client/proc/cmd_admin_list_manage_jobs,
 
 )
 var/list/admin_verbs_ban = list(
