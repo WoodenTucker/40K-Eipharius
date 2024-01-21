@@ -19,6 +19,7 @@
 	reload_sound = 'sound/weapons/guns/interact/smg_magin.ogg'
 	cock_sound 	 = 'sound/weapons/guns/interact/smg_cock.ogg'
 	condition = 10000
+	no_pickup = 1
 
 // /obj/item/heavy_bolter/afterattack(atom/A, mob/living/user)
 
