@@ -180,7 +180,7 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "anI" = (
-/turf/space,
+/turf/simulated/floor/ceramic/surgery2,
 /area/cadiaoutpost/new_hive/caves)
 "aoh" = (
 /obj/structure/table/rack/shelf{
