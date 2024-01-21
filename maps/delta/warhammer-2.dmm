@@ -180,11 +180,8 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "anI" = (
-/obj/effect/floor_decal/newcorner/stone,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/dirty/tough,
-/area/cadiaoutpost/oa/service/chapel/recovery)
+/turf/space,
+/area/cadiaoutpost/new_hive/caves)
 "aoh" = (
 /obj/structure/table/rack/shelf{
 	color = "grey"
@@ -17212,6 +17209,15 @@
 /obj/random/storage,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
+"tlt" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 10
+	},
+/turf/simulated/floor/dirty/tough,
+/area/cadiaoutpost/oa/service/chapel/recovery)
 "tnm" = (
 /obj/effect/floor_decal/newcorner/train2/corner{
 	dir = 10
@@ -55799,7 +55805,7 @@ rAw
 liM
 lNe
 miO
-anI
+hym
 rvv
 gXK
 miO
@@ -57081,7 +57087,7 @@ qmp
 rvv
 rvv
 rvv
-rvv
+avf
 rvv
 liM
 miO
@@ -57790,8 +57796,9 @@ tpQ
 tpQ
 mWl
 lqi
+mWl
 tpQ
-slE
+yfH
 liM
 liM
 liM
@@ -57831,12 +57838,12 @@ liM
 liM
 jSt
 xho
-rvv
-rvv
+tlt
+liM
+yfH
 liM
 liM
-hfp
-rvv
+liM
 liM
 liM
 liM
@@ -57847,14 +57854,13 @@ bvl
 miO
 dEH
 liM
+liM
 nvK
-miO
-nMc
+pHs
 miO
 tPR
-liM
-slE
-tOB
+kGm
+anI
 tOB
 tOB
 tOB
@@ -57897,6 +57903,7 @@ vnW
 vnW
 vnW
 vnW
+vnW
 ojM
 avn
 mEm
@@ -57924,7 +57931,6 @@ fzE
 fNs
 ojM
 cCn
-vnW
 vnW
 vnW
 vnW
@@ -58579,10 +58585,10 @@ rvv
 rvv
 rvv
 rvv
-liM
 rvv
 rvv
 rvv
+avf
 rvv
 liM
 liM
@@ -59097,7 +59103,7 @@ slE
 liM
 liM
 liM
-rvv
+avf
 liM
 yfH
 liM
