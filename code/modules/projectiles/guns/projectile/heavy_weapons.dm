@@ -1,9 +1,9 @@
 /obj/item/heavy_bolter
 	name = "Astra Militarum Squad Heavy Bolter"
 	desc = "Standard-issue Heavy Bolter of Astra Militarum, designed to assist allied forces via direct fire support and supression of enemy forces."
-	//icon = 'icons/obj/items/mortars.dmi' Adding in proper icons shortly
-	//icon_state = "mortar_tube"
-	//item_state = "mortar_tube"
+	icon = 'icons/obj/items/mortars.dmi' Adding in proper icons shortly
+	icon_state = "mortar_tube"
+	item_state = "mortar_tube"
 	var/loaded = FALSE
 	var/deployed = FALSE
 	var/rounds_remaining = 0
@@ -46,7 +46,7 @@
 /obj/item/heavy_bolter/proc/fire_heavy_bolter(atom/A, mob/living/user)
 	user.visible_message("<span class='danger'>[user] fires the [src]!</span>")
 	playsound(src, 'sound/weapons/sound_weapons_guns_fire_30mm.ogg', 100, FALSE)
-	var/obj/item/projectile/P = new /obj/item/projectile/bullet/rifle/a762(user:loc)
+	var/obj/item/projectile/P = new /obj/item/projectile/bullet/bolterrifle(user:loc)
 	var/def_zone = get_exposed_defense_zone(target)
 	P.launch_projectile(target, def_zone)
 
@@ -55,7 +55,7 @@
 	if(deployed)//If there's a heavy bolter deployed, then pack it up again.
 		pack_up_heavy_bolter(user)
 	else
-		deploy_heavy_bolter(user)//Otherwise, deploy that motherfucker.
+		deploy_heavy_bolter(user)//Otherwise, deploy it.
 
 /obj/item/heavy_bolter/proc/deploy_heavy_bolter(mob/user)
 	for(var/obj/structure/heavy_bolter_structure/M in user.loc)//If there's already a mortar there then don't deploy it. Dunno how that's possible but stranger things have happened.
@@ -120,3 +120,16 @@
 	user.visible_message("<span class='danger'>[user] loads the [src] with \the [W]!</span>")
 	qdel(W)
 	update_icon()
+
+/obj/item/heavy_bolter_magazine
+	name = "Heavy Bolter Magazine"
+	desc = "A magazine for a Heavy Bolter"
+	icon_state = "ptsdbox"
+	icon = 'icons/obj/ammo.dmi'
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	slot_flags = SLOT_BELT
+	item_state = "ptsdbox"
+	matter = list(DEFAULT_WALL_MATERIAL = 500)
+	throwforce = 5
+	w_class = ITEM_SIZE_SMALL
+	throw_speed = 4
