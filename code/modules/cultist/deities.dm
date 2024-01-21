@@ -56,7 +56,6 @@
 						/datum/rune_recipe/nurgle/nade,
 						/datum/rune_recipe/nurgle/blight,
 						/datum/rune_recipe/nurgle/nurgling,
-						/datum/rune_recipe/nurgle/offering1,
 						/datum/rune_recipe/nurgle/offering)
 	inherent_verbs = list(
 			/mob/living/carbon/human/proc/lordofflies,
