@@ -6753,6 +6753,7 @@
 /area/cadiaoutpost/oa/villageinside)
 "ya" = (
 /obj/structure/window/fantasy,
+/obj/structure/girder/reinforced,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/inn)
 "yc" = (
@@ -7099,6 +7100,7 @@
 /area/cadiaoutpost/oa/hallway/northern)
 "zr" = (
 /obj/structure/window/fantasy,
+/obj/structure/girder/reinforced,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel)
 "zs" = (
@@ -10463,6 +10465,7 @@
 /area/cadiaoutpost/oa/villageinside)
 "Lz" = (
 /obj/structure/window/fantasy,
+/obj/structure/girder/reinforced,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/hallway/northern)
 "LC" = (
@@ -14128,6 +14131,7 @@
 /area/cadiaoutpost/oa/security/armory)
 "Yx" = (
 /obj/structure/window/fantasy,
+/obj/structure/girder/reinforced,
 /turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/oa/service/inn)
 "Yy" = (
