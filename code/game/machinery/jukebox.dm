@@ -29,21 +29,13 @@ datum/track/New(var/title_name, var/audio)
 
 	var/datum/track/current_track
 	var/list/datum/track/tracks = list(
-		new/datum/track("Flexifunk", 'sound/jukebox/barsong1.ogg'),
-		new/datum/track("Berserk - Forces", 'sound/jukebox/barsong14.ogg'),
-		new/datum/track("Suffer", 'sound/jukebox/barsong2.ogg'),
-		new/datum/track("Cherry", 'sound/jukebox/barsong3.ogg'),
-		new/datum/track("Game", 'sound/jukebox/barsong4.ogg'),
-		new/datum/track("Guru", 'sound/jukebox/barsong5.ogg'),
-		new/datum/track("Beach", 'sound/jukebox/barsong6.ogg'),
-		new/datum/track("Wild", 'sound/jukebox/barsong7.ogg'),
-		new/datum/track("Spiral", 'sound/jukebox/barsong8.ogg'),
-		new/datum/track("Blizzard", 'sound/jukebox/barsong9.ogg'),
-		new/datum/track("Evolution", 'sound/jukebox/barsong10.ogg'),
-		new/datum/track("Sweet", 'sound/jukebox/barsong11.ogg'),
-		new/datum/track("Fight", 'sound/jukebox/barsong12.ogg'),
-		new/datum/track("Russian", 'sound/jukebox/barsong13.ogg'),
-		,
+		new/datum/track("Old Terran Song", 'sound/jukebox/barsong1.ogg'),
+		new/datum/track("Flowers of Cadia", 'sound/jukebox/barsong2.ogg'),
+		new/datum/track("Military Lullaby", 'sound/jukebox/barsong3.ogg'),
+		new/datum/track("Cadian March", 'sound/jukebox/barsong4.ogg'),
+		new/datum/track("Folk Dance", 'sound/jukebox/barsong5.ogg'),
+		new/datum/track("Forgeworld Nocturne", 'sound/jukebox/barsong6.ogg'),
+		new/datum/track("Terran Melody", 'sound/jukebox/barsong7.ogg'),
 	)
 
 /obj/machinery/media/jukebox/New()
