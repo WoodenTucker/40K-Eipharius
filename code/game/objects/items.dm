@@ -640,7 +640,7 @@ var/list/global/slot_flags_enumeration = list(
 		to_chat(usr, "<span class='warning'>You can't pick that up!</span>")
 		return
 	if (no_pickup == 1)
-		to_chat(user, "<span class='notice'>The [src] is too big to pick up!</span>")
+		to_chat(usr, "<span class='notice'>The [src] is too big to pick up!</span>")
 		return
 	//All checks are done, time to pick it up!
 	usr.UnarmedAttack(src)
