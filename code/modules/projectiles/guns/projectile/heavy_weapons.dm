@@ -1,12 +1,10 @@
-/obj/item/heavy_bolter
+/obj/item/gun/projectile/heavy_bolter
 	name = "Astra Militarum Squad Heavy Bolter"
 	desc = "Standard-issue Heavy Bolter of Astra Militarum, designed to assist allied forces via direct fire support and supression of enemy forces."
 	icon = 'icons/obj/items/mortars.dmi' //Adding in proper icons shortly
 	icon_state = "mortar_tube"
 	item_state = "mortar_tube"
-	var/loaded = FALSE
-	var/deployed = FALSE
-	var/rounds_remaining = 0
+	deployable = 1
 
 /obj/structure/heavy_bolter_structure //That thing that's created when you place down your weapon, purely for looks.
 	name = "Deployed Astra Militarum Heavy Bolter"
@@ -40,12 +38,12 @@
 		to_chat(user, "<span class='danger'>The Heavy Bolter clicks empty!.</span>")
 		loaded = FALSE
 		return
-	fire_heavy_bolter(A, user, loaded_with)
+	fire_heavy_bolter(A, user)
 	rounds_remaining -= 1
 
 /obj/item/heavy_bolter/proc/fire_heavy_bolter(atom/A, mob/living/user)
 	user.visible_message("<span class='danger'>[user] fires the [src]!</span>")
-	playsound(src, 'sound/weapons/sound_weapons_guns_fire_30mm.ogg', 100, FALSE)
+	//playsound(src, 'sound/weapons/sound_weapons_guns_fire_30mm.ogg', 100, FALSE)
 	var/obj/item/projectile/P = new /obj/item/projectile/bullet/bolterrifle(user:loc)
 	var/def_zone = get_exposed_defense_zone(target)
 	P.launch_projectile(target, def_zone)
