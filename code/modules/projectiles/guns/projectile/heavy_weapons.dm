@@ -23,17 +23,16 @@
 // /obj/item/heavy_bolter/afterattack(atom/A, mob/living/user)
 
 	//playsound(src, 'sound/weapons/sound_weapons_guns_fire_30mm.ogg', 100, FALSE)
-/obj/item/projectile/bullet/bolterrifle(user:loc)
+// /obj/item/projectile/bullet/bolterrifle
 
-/obj/item/heavy_bolter_magazine
-	name = "Heavy Bolter Magazine"
-	desc = "A magazine for a Heavy Bolter"
-	icon_state = "ptsdbox"
-	icon = 'icons/obj/ammo.dmi'
-	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	slot_flags = SLOT_BELT
-	item_state = "ptsdbox"
-	matter = list(DEFAULT_WALL_MATERIAL = 500)
-	throwforce = 5
-	w_class = ITEM_SIZE_SMALL
-	throw_speed = 4
+/obj/item/ammo_magazine/heavy_weapon
+	name = "Heavy Weapon Magazine"
+	icon_state = "bolty"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	caliber = ".95"
+	w_class = ITEM_SIZE_NORMAL
+	matter = list(DEFAULT_WALL_MATERIAL = 5260)
+	ammo_type = /obj/item/ammo_casing/bolter/astartes
+	max_ammo = 80
+	multiple_sprites = 0
