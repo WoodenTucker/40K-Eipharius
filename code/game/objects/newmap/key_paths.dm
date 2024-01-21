@@ -509,7 +509,7 @@ DOORS HERE
 	name = "Hive City door"
 	icon = 'icons/obj/doors/door_cave2.dmi'
 	icon_state = "door1"
-	autoclose = 0
+	autoclose = 1
 	normalspeed = 0
 	req_one_access = list(access_inn1) //so innkeeper always can get in if needed
 
@@ -519,7 +519,7 @@ DOORS HERE
 	name = "Hab 1 - Room 1"
 	icon = 'icons/obj/doors/door_cave2.dmi'
 	icon_state = "door1"
-	autoclose = 0
+	autoclose = 1
 	normalspeed = 0
 	req_one_access = list(access_hab1_1)
 	maxhealth = 800
@@ -580,7 +580,7 @@ DOORS HERE
 	name = "Hab 2 - Room 1"
 	icon = 'icons/obj/doors/door_cave2.dmi'
 	icon_state = "door1"
-	autoclose = 0
+	autoclose = 1
 	normalspeed = 0
 	req_one_access = list(access_tavroom1)
 	maxhealth = 900
@@ -633,7 +633,7 @@ DOORS HERE
 	name = "Room 1"
 	icon = 'icons/obj/doors/door_cave2.dmi'
 	icon_state = "door1"
-	autoclose = 0
+	autoclose = 1
 	normalspeed = 0
 	req_one_access = list(access_tavroom1)
 	maxhealth = 900
@@ -687,7 +687,7 @@ DOORS HERE
 	name = "Luxury Room"
 	icon = 'icons/obj/doors/door_cave.dmi'
 	icon_state = "door1"
-	autoclose = 0
+	autoclose = 1
 	normalspeed = 0
 	maxhealth = 1500
 	req_one_access = list(access_tavroom11)
@@ -698,7 +698,7 @@ DOORS HERE
 	name = "Guest Room 1"
 	icon = 'icons/obj/doors/door_cave.dmi'
 	icon_state = "door1"
-	autoclose = 0
+	autoclose = 1
 	normalspeed = 0
 	maxhealth = 2000
 	req_one_access = list(access_manor_guest1)
@@ -724,7 +724,7 @@ DOORS HERE
 	name = "Imperial House"
 	icon = 'icons/obj/doors/door_cave.dmi'
 	icon_state = "door1"
-	autoclose = 0
+	autoclose = 1
 	normalspeed = 0
 	maxhealth = 2000
 	req_one_access = list(access_imphouse_1)
@@ -765,7 +765,7 @@ DOORS HERE
 	name = "Kasrkin Quarters"
 	icon = 'icons/obj/doors/door_cave.dmi'
 	icon_state = "door1"
-	autoclose = 0
+	autoclose = 1
 	normalspeed = 0
 	maxhealth = 1500
 	req_one_access = list(access_kasrkin)

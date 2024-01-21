@@ -61,7 +61,7 @@
 		/mob/living/carbon/human/proc/astatoglory,
 		/mob/living/carbon/human/proc/astaxenos)
 		H.verbs -= list(/mob/living/carbon/human/verb/emoteemperorprotects)
-		H.add_stats(28, rand(20,26), rand(22,26), rand(17,24)) //genuinely no idea what to make their stats
+		H.add_stats(28, rand(23,26), rand(23,26), rand(19,24)) //genuinely no idea what to make their stats
 		H.add_skills(11,11,11,11,11)
 /*switch(title) //either you get this to work or you dont change it, ok?
 			if("Blood Angel Tactical Marine")

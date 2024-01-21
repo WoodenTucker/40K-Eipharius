@@ -179,9 +179,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
-"anI" = (
-/turf/simulated/floor/ceramic/surgery2,
-/area/cadiaoutpost/new_hive/caves)
 "aoh" = (
 /obj/structure/table/rack/shelf{
 	color = "grey"
@@ -241,6 +238,7 @@
 /obj/structure/table/graf/big_wood_table{
 	dir = 4
 	},
+/obj/item/reagent_containers/glass/bottle/spice,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "aqp" = (
@@ -1078,7 +1076,7 @@
 /obj/machinery/door/airlock/phoron{
 	color = "grey";
 	name = "Clinic";
-	req_one_access = list(10)
+	req_one_access = list(10,25)
 	},
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
@@ -7596,15 +7594,6 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/new_hive/caves)
-"iJE" = (
-/obj/machinery/door/airlock/virology{
-	name = "Virology";
-	req_one_access = list(10)
-	},
-/turf/simulated/floor/factory_floor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/medicae)
 "iJR" = (
 /obj/random/junk,
 /obj/random/junk,
@@ -7652,14 +7641,9 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "iLV" = (
-/obj/machinery/door/airlock/glass_virology{
-	name = "Quarantine Area";
-	req_one_access = list(10)
-	},
-/turf/simulated/floor/factory_floor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/medicae)
+/obj/structure/grille/iron_fence,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/new_hive/caves)
 "iNb" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -11748,12 +11732,13 @@
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "nsI" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/airlock/phoron{
-	color = "grey";
-	name = "Clinic"
-	},
 /obj/structure/sign/mechanicus{
 	pixel_x = 32
+	},
+/obj/machinery/door/airlock/phoron{
+	color = "grey";
+	name = "Clinic";
+	req_one_access = list(10,25)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey";
@@ -14814,6 +14799,8 @@
 /obj/structure/table/rack/dark,
 /obj/item/cell/pulserifle,
 /obj/item/cell/ion,
+/obj/item/reagent_containers/glass/bottle/spice,
+/obj/item/reagent_containers/glass/bottle/spice,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
 "qEY" = (
@@ -16853,6 +16840,7 @@
 	icon_state = "wood_1tileendtable";
 	dir = 4
 	},
+/obj/item/reagent_containers/glass/bottle/spice,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
 "sQd" = (
@@ -17502,10 +17490,10 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "tAB" = (
-/obj/machinery/door/airlock/mining{
-	maxhealth = 3000;
-	name = "Biomedical Chambers";
-	req_one_access = list(10)
+/obj/machinery/door/airlock/phoron{
+	color = "grey";
+	name = "Clinic";
+	req_one_access = list(10,25)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/medicae)
@@ -18065,8 +18053,12 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "ueA" = (
-/obj/machinery/door/unpowered/simple{
-	req_one_access = list(213,211)
+/obj/machinery/door/unpowered/jail_door{
+	name = "catacomb door";
+	desc = "An ancient metal door, the lock seems to have been rusted and it's now useless.";
+	req_one_access = list();
+	req_access = list();
+	maxhealth = 200
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -19782,6 +19774,7 @@
 /obj/structure/table/graf/big_wood_table{
 	dir = 1
 	},
+/obj/item/reagent_containers/glass/bottle/spice,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "wwc" = (
@@ -20326,7 +20319,7 @@
 /obj/machinery/door/airlock/phoron{
 	color = "grey";
 	name = "Clinic";
-	req_one_access = list(10)
+	req_one_access = list(10,25)
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 8
@@ -57860,7 +57853,7 @@ pHs
 miO
 tPR
 kGm
-anI
+pEh
 tOB
 tOB
 tOB
@@ -66453,7 +66446,7 @@ khV
 gDl
 tKI
 tKI
-iJE
+wYf
 tKI
 tKI
 tKI
@@ -67975,7 +67968,7 @@ rkw
 rkw
 rkw
 rkw
-iLV
+wYf
 fRq
 fRq
 fRq
@@ -73508,7 +73501,7 @@ lPf
 lPf
 lPf
 lPf
-uZu
+iLV
 lPf
 lPf
 lPf
@@ -74014,7 +74007,7 @@ lPf
 lPf
 lPf
 lPf
-uZu
+iLV
 lPf
 lPf
 lPf

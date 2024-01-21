@@ -95,10 +95,6 @@
 	},
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/oa/farm)
-"agW" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/gatehouse)
 "ahr" = (
 /obj/item/flame/lighter/zippo{
 	pixel_x = 10
@@ -203,7 +199,7 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "alF" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1;
@@ -506,10 +502,6 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
-"aye" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/fancyfloor/oldcobble,
-/area/cadiaoutpost/oa/gatehouse)
 "azl" = (
 /obj/structure/table/steel,
 /obj/item/storage/toolbox/mechanical,
@@ -1130,7 +1122,7 @@
 /obj/item/material/shard,
 /obj/item/broken_bottle,
 /turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "aZD" = (
 /obj/machinery/door/blast/bordergater{
 	begins_closed = 0;
@@ -1176,14 +1168,6 @@
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"bbn" = (
-/obj/structure/warfare/barricade/concrete_barrier{
-	dir = 8
-	},
-/obj/structure/warfare/barricade/concrete_barrier,
-/obj/structure/flora/grass/green,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
 "bbL" = (
 /obj/structure/torchwall{
 	pixel_y = 30
@@ -1230,7 +1214,7 @@
 "bea" = (
 /obj/structure/sign/medical1,
 /turf/simulated/wall/concrete/strong,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "beC" = (
 /obj/structure/sink/well,
 /turf/simulated/floor/dirty,
@@ -1441,13 +1425,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"bpJ" = (
-/obj/item/pyre/self_lit{
-	invisibility = 100;
-	name = "Invisible Light"
-	},
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
 "bqh" = (
 /obj/item/flame/candle/church{
 	pixel_y = 4;
@@ -1489,7 +1466,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/flora/ausbushes/pointybush,
 /turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "bqS" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/dirty,
@@ -1591,7 +1568,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "btQ" = (
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/service/hab/inside)
@@ -1880,9 +1857,6 @@
 /obj/structure/table/graf/polished_table,
 /turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/new_hive/hive_city)
-"bFw" = (
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
 "bFD" = (
 /turf/simulated/floor/factory_floor{
 	dir = 8
@@ -1917,17 +1891,6 @@
 	},
 /turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/new_hive/hive_city)
-"bHk" = (
-/obj/structure/filingcabinet/filingcabinet{
-	pixel_x = 8
-	},
-/obj/structure/filingcabinet/filingcabinet{
-	pixel_x = -7
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/gatehouse)
 "bHl" = (
 /obj/effect/floor_decal/newcorner/black{
 	dir = 1
@@ -2396,9 +2359,6 @@
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/hive_city)
-"ccx" = (
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/gatehouse)
 "ccT" = (
 /obj/structure/torchwall{
 	dir = 1;
@@ -3410,7 +3370,7 @@
 /obj/item/pyre/self_lit,
 /obj/effect/floor_decal/newcorner/stone,
 /turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "cSv" = (
 /obj/structure/curtain/open{
 	color = "#5f82d8";
@@ -3428,7 +3388,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "cTr" = (
 /obj/machinery/light/small/red,
 /obj/effect/floor_decal/newcorner/red/quarter,
@@ -3812,15 +3772,6 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/simulated/wall/wooden,
 /area/cadiaoutpost/new_hive/hive_city)
-"dhQ" = (
-/obj/effect/floor_decal/newcorner/stone{
-	dir = 1
-	},
-/obj/effect/floor_decal/newcorner/stone,
-/obj/structure/flora/ausbushes/sparsegrass,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
 "dhR" = (
 /obj/machinery/chem_master/condimaster,
 /obj/effect/floor_decal/newcorner/white/diagonal,
@@ -4460,15 +4411,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"dFV" = (
-/obj/machinery/photocopier,
-/obj/item/device/toner{
-	pixel_y = 2
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/gatehouse)
 "dGG" = (
 /obj/effect/floor_decal/newcorner/shaft/quarter{
 	dir = 4
@@ -4480,7 +4422,7 @@
 "dGH" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/fancyfloor/oldcobble,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "dGK" = (
 /obj/effect/floor_decal/newcorner/train,
 /turf/simulated/floor/tiled{
@@ -4488,12 +4430,6 @@
 	icon_state = "dark1"
 	},
 /area/cadiaoutpost/oa/farm)
-"dGP" = (
-/obj/structure/barbwire{
-	color = "grey"
-	},
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/gatehouse)
 "dGW" = (
 /turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/oa/security/barracks)
@@ -5321,11 +5257,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/new_hive/hive_city)
-"epv" = (
-/obj/structure/flora/ausbushes/ppflowers,
-/obj/structure/flora/ausbushes/ywflowers,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
 "epM" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 1
@@ -5915,7 +5846,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "eML" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/microwave{
@@ -6044,6 +5975,12 @@
 	},
 /area/cadiaoutpost/oa/engineering)
 "eQW" = (
+/obj/machinery/vending/boozeomat{
+	desc = "A refrigerated vending unit housing a particularly small squat servitor that dispenses alcoholic beverages and alcoholic beverage accessories on demand.";
+	vend_delay = 3;
+	req_one_access = list();
+	req_access = list()
+	},
 /turf/simulated/floor/fancyfloor/brokenfloor2{
 	color = "grey"
 	},
@@ -6161,13 +6098,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/station1)
-"eYn" = (
-/obj/structure/table/graf/polished_table,
-/obj/item/device/flashlight/lantern{
-	pixel_y = 10
-	},
-/turf/simulated/floor/fancyfloor/oldcobble,
-/area/cadiaoutpost/oa/service/inn)
 "eYt" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 4;
@@ -6946,7 +6876,7 @@
 	req_one_access = list(63)
 	},
 /turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "fED" = (
 /obj/structure/closet/crate/secure/large,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -8221,10 +8151,6 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
-"gCu" = (
-/obj/structure/anti_tank,
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/gatehouse)
 "gCE" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 1
@@ -8259,7 +8185,7 @@
 /area/cadiaoutpost/oa/engineering)
 "gCR" = (
 /turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "gDo" = (
 /obj/effect/wingrille_spawn/reinforced{
 	color = "grey"
@@ -8701,7 +8627,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "gWn" = (
 /obj/random/trash,
 /turf/simulated/floor/dirty/tough/lightless,
@@ -8907,27 +8833,6 @@
 "hdh" = (
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/farm)
-"hdm" = (
-/turf/simulated/floor/stone/crafted_floor,
-/area/cadiaoutpost/oa/gatehouse)
-"hdN" = (
-/obj/structure/table/graf/rusty_table,
-/obj/item/pen/multi{
-	pixel_y = 6
-	},
-/obj/item/pen/multi{
-	pixel_y = 10
-	},
-/obj/item/pen/multi{
-	pixel_y = 2
-	},
-/obj/item/pen/multi{
-	pixel_y = -2
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/gatehouse)
 "heh" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/animal/rngretaliatespawner{
@@ -9114,13 +9019,6 @@
 	},
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/bridge/hallway)
-"hkH" = (
-/obj/machinery/door/airlock/imperiumdoor{
-	req_one_access = list(63);
-	name = "Imperialis Doorway - Checkpoint Door"
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/gatehouse)
 "hkK" = (
 /obj/machinery/cooker/oven,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -9303,7 +9201,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "hsU" = (
 /obj/structure/table/rack,
 /obj/item/stack/material/diamond,
@@ -9312,17 +9210,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"htz" = (
-/obj/effect/floor_decal/newcorner/stone{
-	dir = 4
-	},
-/obj/effect/floor_decal/newcorner/stone{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/flora/ausbushes/fullgrass,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
 "htL" = (
 /obj/effect/decal/mecha_wreckage/gygax/dark{
 	name = "Kastelan Wreckage"
@@ -9359,7 +9246,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "huU" = (
 /obj/item/campfire,
 /turf/simulated/floor/stone,
@@ -9423,7 +9310,7 @@
 	icon_state = "bulb1"
 	},
 /turf/simulated/floor/fancyfloor/oldcobble,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "hyu" = (
 /obj/structure/urinal{
 	dir = 4;
@@ -9880,13 +9767,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/villageinside)
-"hOL" = (
-/obj/structure/bed/chair/stool2{
-	icon_state = "barstool";
-	color = null
-	},
-/turf/simulated/floor/fancyfloor/oldcobble,
-/area/cadiaoutpost/oa/service/inn)
 "hOP" = (
 /obj/structure/sink{
 	dir = 4;
@@ -9938,7 +9818,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "hRD" = (
 /obj/structure/reagent_dispensers/watertank{
 	color = "grey";
@@ -10261,7 +10141,7 @@
 /obj/effect/floor_decal/newcorner/stone,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "ihd" = (
 /obj/effect/floor_decal/newcorner/crater_small{
 	icon_state = "m1"
@@ -10410,10 +10290,6 @@
 /obj/random/trash,
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/new_hive/hive_city)
-"int" = (
-/obj/structure/flora/grass/both,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
 "inB" = (
 /obj/effect/floor_decal/newcorner/stone,
 /obj/effect/decal/cleanable/dirt,
@@ -10591,7 +10467,7 @@
 "iuc" = (
 /obj/structure/railing,
 /turf/simulated/floor/fancyfloor/oldcobble,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "iuz" = (
 /obj/item/device/boombox,
 /obj/structure/table/graf/wood_office_table{
@@ -10723,14 +10599,6 @@
 	},
 /turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/new_hive/hive_city)
-"izd" = (
-/obj/structure/warfare/barricade/concrete_barrier{
-	dir = 4
-	},
-/obj/structure/warfare/barricade/concrete_barrier,
-/obj/structure/flora/grass/brown,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
 "izk" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/turf/big_cables1{
@@ -11066,7 +10934,12 @@
 	color = "grey";
 	maxhealth = 1500;
 	name = "Interior Clinic";
-	req_one_access = list(5,10,230,211)
+	req_one_access = list()
+	},
+/obj/machinery/door/blast/grates{
+	dir = 8;
+	icon_state = "gshutter1";
+	id = "cliniclockdown"
 	},
 /obj/machinery/door/blast/grates{
 	dir = 8;
@@ -11734,7 +11607,7 @@
 /obj/structure/flora/ausbushes/pointybush,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "jnb" = (
 /obj/structure/stairs/west,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -11825,7 +11698,7 @@
 /obj/structure/flora/bush,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "jqO" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 8
@@ -11954,7 +11827,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "jwI" = (
 /obj/machinery/portable_atmospherics/hydroponics/soil,
 /turf/simulated/floor/dirty,
@@ -12478,13 +12351,6 @@
 	},
 /turf/simulated/floor/fancyfloor/ancient_cobble_old,
 /area/cadiaoutpost/new_hive/hive_city)
-"jPk" = (
-/obj/machinery/door/airlock/highsecurity/imperiumdoor{
-	name = "Imperialis Doorway - Monasterium";
-	req_one_access = list(213)
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/service/chapel)
 "jPv" = (
 /obj/effect/floor_decal/newcorner/plating/corner{
 	dir = 4
@@ -12785,7 +12651,7 @@
 	},
 /obj/structure/table/graf/pagan,
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "kdF" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 1
@@ -13128,7 +12994,7 @@
 	color = null
 	},
 /turf/simulated/floor/fancyfloor/oldcobble,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "kom" = (
 /obj/flamer_fire{
 	burnlevel = 6;
@@ -13251,7 +13117,7 @@
 "kvO" = (
 /obj/structure/railing,
 /turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "kwa" = (
 /obj/effect/floor_decal/turf/barnew,
 /obj/structure/window_frame,
@@ -13319,7 +13185,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/fancyfloor/oldcobble,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "kxu" = (
 /obj/machinery/door/blast/shutters{
 	name = "Planetary Defense Fort Shutters";
@@ -13338,7 +13204,7 @@
 	color = "grey";
 	maxhealth = 900;
 	name = "Surgery";
-	req_one_access = list(5,10,230,211)
+	req_one_access = list(5,10,230,211,25)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -13591,7 +13457,7 @@
 	id = "shutters2"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "kJK" = (
 /obj/effect/floor_decal/newcorner/stone,
 /obj/structure/flora/grass/brown,
@@ -14205,7 +14071,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "lmT" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
@@ -14556,7 +14422,7 @@
 /obj/machinery/light/small,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/fancyfloor/oldcobble,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "lAC" = (
 /obj/structure/table/rack/dark,
 /obj/item/device/flashlight/glowstick/random,
@@ -14827,7 +14693,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "lLt" = (
 /obj/structure/table/graf/reinf_table,
 /turf/simulated/floor/factory_floor,
@@ -14918,12 +14784,6 @@
 "lOQ" = (
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/farm)
-"lOZ" = (
-/obj/structure/barbwire{
-	color = "grey"
-	},
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/gatehouse)
 "lPb" = (
 /obj/structure/sign/magistrate{
 	pixel_y = -30
@@ -15122,7 +14982,7 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "lVm" = (
 /obj/effect/floor_decal/turf/bar3,
 /obj/effect/floor_decal/turf/big_cables1{
@@ -15596,7 +15456,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/flora/ausbushes/pointybush,
 /turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "mpN" = (
 /obj/structure/warfare/barricade/concrete_barrier{
 	dir = 8
@@ -15649,7 +15509,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "msk" = (
 /obj/machinery/light{
 	dir = 4
@@ -16484,20 +16344,6 @@
 /obj/machinery/portable_atmospherics/hydroponics/soil,
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/villageinside)
-"nhj" = (
-/obj/item/folder/yellow{
-	pixel_y = 4;
-	pixel_x = -8
-	},
-/obj/item/folder/red{
-	pixel_x = 8;
-	pixel_y = 4
-	},
-/obj/structure/table/graf/shrine,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/gatehouse)
 "nik" = (
 /obj/effect/floor_decal/turf/metal/five,
 /obj/effect/floor_decal/spline/fancy/wood/cee,
@@ -16716,16 +16562,6 @@
 	},
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/new_hive/hive_city)
-"nwI" = (
-/obj/effect/floor_decal/newcorner/stone{
-	dir = 8
-	},
-/obj/effect/floor_decal/newcorner/stone{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
 "nxg" = (
 /obj/structure/sign/poster/poster5{
 	pixel_x = -32
@@ -16973,7 +16809,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/stone/crafted_floor,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "nFC" = (
 /obj/structure/table/rack,
 /obj/item/ingots/coboltingot,
@@ -17354,10 +17190,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/service/inn)
-"nVH" = (
-/obj/structure/flora/grass/brown,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
 "nWQ" = (
 /obj/effect/decal/cleanable/blood,
 /obj/item/stack/teeth/human{
@@ -17654,7 +17486,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "oli" = (
 /turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/new_hive/hive_city)
@@ -18086,16 +17918,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"oAY" = (
-/obj/structure/warfare/barricade/concrete_barrier{
-	dir = 1
-	},
-/obj/structure/warfare/barricade/concrete_barrier{
-	dir = 8
-	},
-/obj/structure/flora/grass/green,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
 "oAZ" = (
 /obj/structure/sign/neon/shuttle{
 	pixel_x = -32
@@ -18125,9 +17947,6 @@
 	icon_state = "dark1"
 	},
 /area/cadiaoutpost/oa/farm)
-"oDl" = (
-/turf/simulated/wall/concrete/strong,
-/area/cadiaoutpost/oa/gatehouse)
 "oDn" = (
 /obj/structure/barbwire,
 /turf/simulated/floor/dirty,
@@ -18736,9 +18555,6 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"pbP" = (
-/turf/simulated/floor/trenches,
-/area/cadiaoutpost/oa/service/inn)
 "pbU" = (
 /obj/machinery/light/blue{
 	dir = 4
@@ -18915,10 +18731,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/bridge/hallway)
-"pjI" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/gatehouse)
 "pjV" = (
 /obj/machinery/vending/medical{
 	name = "Mechanicus NanoMed Plus";
@@ -19624,15 +19436,6 @@
 "pLX" = (
 /turf/simulated/floor/fancyfloor/carpet/green,
 /area/cadiaoutpost/oa/bridge/hallway)
-"pMf" = (
-/obj/structure/warfare/barricade/concrete_barrier{
-	dir = 1
-	},
-/obj/structure/warfare/barricade/concrete_barrier{
-	dir = 4
-	},
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
 "pMp" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/ceramic/surgery,
@@ -20228,15 +20031,35 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
 "qlw" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/gatehouse)
+/obj/structure/closet/hive/metal{
+	anchored = 1;
+	name = "Inn Keys"
+	},
+/obj/item/card/id/key/super/inn/newmap,
+/obj/item/card/id/key/super/inn/newmap/private_room1,
+/obj/item/card/id/key/super/inn/newmap/private_room2,
+/obj/item/card/id/key/super/inn/newmap/private_room3,
+/obj/item/card/id/key/super/inn/newmap/private_room4,
+/obj/item/card/id/key/super/inn/newmap/private_room10{
+	name = "Boudoir Key"
+	},
+/obj/effect/floor_decal/spline/plain{
+	dir = 6
+	},
+/obj/item/card/id/key/super/inn/newmap/private_room10{
+	name = "Boudoir Key"
+	},
+/obj/item/card/id/key/super/inn/newmap/private_room10{
+	name = "Boudoir Key"
+	},
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/oa/service/inn)
 "qlC" = (
 /obj/structure/warfare/barricade/concrete_barrier{
 	dir = 1
 	},
 /turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "qlW" = (
 /obj/machinery/microwave{
 	pixel_y = 8;
@@ -20868,7 +20691,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "qKq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/firstaid,
@@ -21287,14 +21110,6 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel)
-"raE" = (
-/obj/machinery/vending/boozeomat{
-	desc = "A refrigerated vending unit housing a particularly small squat servitor that dispenses alcoholic beverages and alcoholic beverage accessories on demand.";
-	vend_delay = 3;
-	req_one_access = list()
-	},
-/turf/simulated/floor/wood,
-/area/cadiaoutpost/oa/service/inn)
 "raG" = (
 /obj/machinery/door/unpowered/inn{
 	name = "Waste Collection";
@@ -22078,7 +21893,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/fancyfloor/oldcobble,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "rLH" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/closet/crate/trashcart,
@@ -22177,7 +21992,7 @@
 /obj/effect/floor_decal/newcorner/stone,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "rQC" = (
 /obj/structure/hivedecor/bookcase/huge,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -22293,7 +22108,7 @@
 "rWa" = (
 /obj/structure/barrel1,
 /turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "rWt" = (
 /obj/structure/lattice,
 /turf/simulated/floor/plating/reinforced,
@@ -22316,7 +22131,7 @@
 /obj/structure/railing,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "rXh" = (
 /obj/machinery/smartfridge/seeds,
 /turf/simulated/floor/tiled{
@@ -22402,9 +22217,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
-"sbx" = (
-/turf/simulated/wall/concrete,
-/area/cadiaoutpost/oa/gatehouse)
 "scw" = (
 /obj/machinery/light/red{
 	dir = 8
@@ -23101,7 +22913,7 @@
 "sBk" = (
 /obj/item/pyre/self_lit,
 /turf/simulated/floor/trenches,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "sBB" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/tiled/dark{
@@ -23153,20 +22965,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/hive_city)
-"sCE" = (
-/turf/simulated/floor/fancyfloor/oldcobble,
-/area/cadiaoutpost/oa/gatehouse)
 "sCO" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/barracks)
-"sCU" = (
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/gatehouse)
 "sDc" = (
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
@@ -23301,7 +23105,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/fancyfloor/oldcobble,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "sIe" = (
 /obj/item/reagent_containers/food/condiment/small/saltshaker,
 /obj/item/reagent_containers/food/condiment/small/peppermill{
@@ -24211,10 +24015,6 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/hive_city)
-"ttm" = (
-/obj/random/trash,
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/gatehouse)
 "ttv" = (
 /obj/machinery/light/small/red{
 	dir = 1
@@ -24432,12 +24232,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/service/inn)
-"tBH" = (
-/obj/machinery/light/small,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/gatehouse)
 "tBN" = (
 /obj/item/fluff_items/silvermask{
 	pixel_x = -4
@@ -24689,7 +24483,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/flora/ausbushes/pointybush,
 /turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "tNs" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -24697,7 +24491,7 @@
 	light_color = "#234F1E"
 	},
 /turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "tND" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 8
@@ -24974,7 +24768,7 @@
 	color = "grey";
 	maxhealth = 1200;
 	name = "Storage";
-	req_one_access = list(5,10,230,211)
+	req_one_access = list(5,10,230,211,25)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -25481,7 +25275,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "uyd" = (
 /obj/structure/warfare/barricade/concrete_barrier{
 	dir = 4
@@ -25785,7 +25579,7 @@
 	name = "Invisible Light"
 	},
 /turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "uFx" = (
 /obj/effect/floor_decal/turf/bar2,
 /turf/simulated/floor/tiled/dark{
@@ -26015,9 +25809,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/security/barracks)
-"uOW" = (
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/gatehouse)
 "uPs" = (
 /obj/random/trash,
 /turf/simulated/floor/tiled{
@@ -26609,7 +26400,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/flora/ausbushes/pointybush,
 /turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "vkO" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 8
@@ -27047,7 +26838,7 @@
 	pixel_y = -30
 	},
 /turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "vxT" = (
 /obj/machinery/light/small,
 /obj/structure/table/graf/reinf_table,
@@ -27528,7 +27319,7 @@
 	health = 100
 	},
 /turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "vRt" = (
 /obj/structure/filingcabinet/filingcabinet{
 	pixel_x = 8
@@ -27752,15 +27543,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/farm)
-"wbr" = (
-/obj/structure/table/graf/rusty_table,
-/obj/item/fluff_items/paperwork{
-	pixel_y = 11
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/gatehouse)
 "wbt" = (
 /obj/structure/sign/prices{
 	pixel_y = 32
@@ -27908,7 +27690,7 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "wgE" = (
 /obj/machinery/light/red{
 	dir = 1
@@ -27926,7 +27708,7 @@
 "wgI" = (
 /obj/structure/warfare/barricade/concrete_barrier,
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "wgR" = (
 /obj/effect/floor_decal/newcorner/grey{
 	dir = 1
@@ -27969,6 +27751,7 @@
 	pixel_y = 5;
 	pixel_x = -5
 	},
+/obj/item/reagent_containers/glass/bottle/spice,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/village/pathfinder)
 "wix" = (
@@ -28132,6 +27915,7 @@
 /obj/item/storage/box/beakers,
 /obj/structure/table/steel_reinforced,
 /obj/effect/floor_decal/newcorner/blue/solid,
+/obj/item/reagent_containers/glass/bottle/spice,
 /turf/simulated/floor/tiled{
 	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
 	icon_state = "white1"
@@ -28247,10 +28031,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/barracks)
-"wtz" = (
-/obj/structure/barbwire,
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/gatehouse)
 "wtE" = (
 /obj/structure/statue/verina{
 	desc = "A polished and well maintained statue of Saint Celestine of the Order of Our Martyred Lady. Despair, and you give yourself to the shadows. Believe, truly believe in the Emperor of Mankind, and you shall walk in His light no matter how dark the path you tread.";
@@ -28479,9 +28259,6 @@
 /obj/random/loot/badweapon,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/new_hive/hive_city)
-"wFF" = (
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/gatehouse)
 "wGo" = (
 /obj/machinery/computer/drone_control{
 	dronefab = "Cadia"
@@ -28679,7 +28456,7 @@
 /obj/effect/floor_decal/newcorner/stone,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "wOp" = (
 /obj/structure/table/rack/dark,
 /obj/item/mop,
@@ -28731,7 +28508,7 @@
 	pixel_x = -9
 	},
 /turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "wPC" = (
 /obj/random/trash,
 /turf/simulated/floor/plating,
@@ -29188,7 +28965,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/fancyfloor/oldcobble,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "xrX" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 1
@@ -29968,7 +29745,7 @@
 /obj/structure/railing,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/fancyfloor/oldcobble,
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "yaK" = (
 /obj/structure/torchwall{
 	dir = 8;
@@ -30071,7 +29848,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/gatehouse)
+/area/cadiaoutpost/new_hive/hive_city)
 "yer" = (
 /obj/item/pyre/self_lit{
 	invisibility = 100;
@@ -58971,8 +58748,8 @@ tNI
 tNI
 tNI
 tNI
-jPk
-jPk
+prl
+prl
 tNI
 tNI
 tNI
@@ -67825,10 +67602,10 @@ alz
 wgp
 wgp
 uww
-bBN
+jBp
 ojw
-nwI
-nwI
+sGL
+sGL
 jmQ
 jBp
 jBp
@@ -68073,14 +67850,14 @@ uCZ
 nVE
 pSn
 jLi
-dhQ
-eYn
-hOL
-bBN
-bBN
-bBN
-hOL
-eYn
+epe
+fJp
+kHF
+jBp
+jBp
+jBp
+kHF
+fJp
 hsQ
 jBp
 jBp
@@ -68326,13 +68103,13 @@ uCZ
 hmK
 dJI
 mrY
-hOL
-bBN
-bBN
-bBN
-bBN
-bBN
-hOL
+kHF
+jBp
+jBp
+jBp
+jBp
+jBp
+kHF
 hsQ
 jBp
 jBp
@@ -68578,13 +68355,13 @@ mwi
 gWw
 jLi
 jqt
-bBN
+jBp
 sBk
-pbP
-pbP
-pbP
+mSb
+mSb
+mSb
 sBk
-bBN
+jBp
 bqF
 jBp
 jBp
@@ -68817,7 +68594,7 @@ qgy
 thJ
 gyd
 uTe
-raE
+uTe
 wQo
 pTY
 roY
@@ -68830,14 +68607,14 @@ cqj
 wzT
 wdg
 rQu
-bBN
-pbP
-oAY
-int
-bbn
-pbP
-bBN
-bBN
+jBp
+mSb
+bQA
+kEV
+pQK
+mSb
+jBp
+jBp
 jBp
 jBp
 jBp
@@ -69081,15 +68858,15 @@ fKU
 mwi
 kfi
 jNJ
-bBN
-bBN
-pbP
-bFw
+jBp
+jBp
+mSb
+nSI
 uFu
-nVH
-pbP
-bBN
-bBN
+xAE
+mSb
+jBp
+jBp
 bwI
 jBp
 jBp
@@ -69333,15 +69110,15 @@ ujn
 uCZ
 dgS
 jNJ
-bBN
-bBN
-pbP
-bFw
-bpJ
-bFw
-pbP
-bBN
-bBN
+jBp
+jBp
+mSb
+nSI
+hTd
+nSI
+mSb
+jBp
+jBp
 jBp
 jBp
 jBp
@@ -69586,14 +69363,14 @@ hYm
 wzT
 amx
 cSc
-bBN
-pbP
-pMf
-epv
-izd
-pbP
-bBN
-bBN
+jBp
+mSb
+jqn
+eFR
+qpq
+mSb
+jBp
+jBp
 jBp
 jBp
 jBp
@@ -69838,13 +69615,13 @@ uCZ
 pSn
 dJI
 igR
-bBN
+jBp
 sBk
-pbP
-pbP
-pbP
+mSb
+mSb
+mSb
 sBk
-bBN
+jBp
 mpv
 jBp
 jBp
@@ -70091,12 +69868,12 @@ hcD
 dJI
 wOb
 kof
-bBN
-bBN
-bBN
-bBN
-bBN
-hOL
+jBp
+jBp
+jBp
+jBp
+jBp
+kHF
 hsQ
 jBp
 jBp
@@ -70330,7 +70107,7 @@ rEb
 eQW
 obD
 mwi
-mwi
+qlw
 rEb
 oEF
 sSG
@@ -70342,13 +70119,13 @@ uCZ
 pSn
 nXH
 wOb
-eYn
-hOL
-bBN
-bBN
-bBN
-hOL
-eYn
+fJp
+kHF
+jBp
+jBp
+jBp
+kHF
+fJp
 hsQ
 jBp
 bwI
@@ -70596,11 +70373,11 @@ rEb
 aZy
 lUO
 vkq
-bBN
-bBN
-bBN
+jBp
+jBp
+jBp
 tNi
-htz
+uJv
 gVZ
 jBp
 bwI
@@ -70859,11 +70636,11 @@ bwI
 bwI
 jBp
 rhr
-rhr
 eDb
 eDb
 eDb
-lOZ
+eDb
+jJN
 kJg
 qlC
 gCR
@@ -71111,11 +70888,11 @@ eTh
 jBp
 jBp
 eTh
-bwI
+eDb
 bEN
 eDb
 eDb
-lOZ
+jJN
 kJg
 qlC
 gCR
@@ -71363,11 +71140,11 @@ bwI
 jBp
 jBp
 eTh
-bwI
 eDb
 eDb
 eDb
-lOZ
+eDb
+jJN
 kJg
 qlC
 gCR
@@ -71619,7 +71396,7 @@ eTh
 eDb
 eDb
 eDb
-lOZ
+jJN
 kJg
 fEt
 tNs
@@ -71872,9 +71649,9 @@ rhr
 eDb
 eDb
 vxS
-oDl
-oDl
-oDl
+oli
+oli
+oli
 dGW
 gct
 luM
@@ -72102,31 +71879,31 @@ fgW
 wRY
 wRY
 hrY
-sCE
-sCE
+jBp
+jBp
 bea
-oDl
-oDl
-oDl
-sCE
-sCE
-ccx
-ccx
-sCE
-oDl
-oDl
-oDl
-oDl
-hkH
-oDl
-uOW
-ccx
-ccx
-ccx
+oli
+oli
+oli
+jBp
+jBp
+bwI
+bwI
+jBp
+oli
+oli
+oli
+oli
+nCx
+oli
+eTh
+bwI
+bwI
+bwI
 qJu
-oDl
-oDl
-oDl
+oli
+oli
+oli
 dGW
 dGW
 dGW
@@ -72354,31 +72131,31 @@ mrc
 xEO
 wiO
 nsZ
-oDl
-sCE
-oDl
-oDl
-gCu
-oDl
+oli
+jBp
+oli
+oli
+rPa
+oli
 hye
-ccx
-ccx
-ccx
+bwI
+bwI
+bwI
 dGH
-oDl
+oli
 btP
 ydS
-nhj
-sCU
-oDl
-uOW
-ccx
-ccx
-wFF
+pNx
+vZz
+oli
+eTh
+bwI
+bwI
+nSI
 cTb
-lOZ
-lOZ
-oDl
+jJN
+jJN
+oli
 dGW
 gct
 luM
@@ -72606,31 +72383,31 @@ hVr
 eXL
 jkQ
 mrc
-oDl
+oli
 vRs
-oDl
+oli
 wgI
-uOW
+eTh
 wgI
-sCE
-ccx
-ccx
+jBp
+bwI
+bwI
 kvO
-sCE
+jBp
 kdl
-sCU
-sCU
-sCU
-sCU
-oDl
-uOW
-uOW
-ccx
-ccx
-agW
-wFF
-lOZ
-oDl
+vZz
+vZz
+vZz
+vZz
+oli
+eTh
+eTh
+bwI
+bwI
+bEN
+nSI
+jJN
+oli
 dGW
 dGW
 dGW
@@ -72859,30 +72636,30 @@ gMD
 eXL
 mrc
 rWa
-uOW
-gCu
+eTh
+rPa
 wgI
-gCu
+rPa
 wgI
-sCE
-pjI
-ccx
+jBp
+sCi
+bwI
 kvO
-aye
+uaE
 kdl
 huI
-sCU
-sCU
-sCU
-oDl
-uOW
-uOW
-uOW
-pjI
-agW
-agW
-lOZ
-oDl
+vZz
+vZz
+vZz
+oli
+eTh
+eTh
+eTh
+sCi
+bEN
+bEN
+jJN
+oli
 dGW
 gct
 luM
@@ -73111,30 +72888,30 @@ mrc
 mrc
 mrc
 wPy
-uOW
-uOW
+eTh
+eTh
 wgI
-wtz
+oDn
 wgI
-sCE
+jBp
 lKK
 lKK
 yaA
-aye
+uaE
 kdl
-sCU
+vZz
 jwA
 lmv
-sCU
-oDl
-agW
-uOW
-ccx
-qlw
-agW
-agW
-dGP
-oDl
+vZz
+oli
+bEN
+eTh
+bwI
+wpO
+bEN
+bEN
+nyx
+oli
 dGW
 dGW
 dGW
@@ -73362,31 +73139,31 @@ xSl
 qKq
 xfo
 mrc
-wtz
-uOW
-gCu
+oDn
+eTh
+rPa
 wgI
-uOW
+eTh
 wgI
 iuc
-ccx
-sCE
+bwI
+jBp
 iuc
 lAu
-oDl
+oli
 hRq
-sCU
-sCU
-tBH
-oDl
-agW
-pjI
-ccx
-ccx
-qlw
-agW
+vZz
+vZz
+sBB
+oli
+bEN
+sCi
+bwI
+bwI
+wpO
+bEN
 cTb
-oDl
+oli
 dGW
 dGW
 dGW
@@ -73614,31 +73391,31 @@ nzT
 mhQ
 jSp
 mrc
-uOW
-ttm
-uOW
+eTh
+kNU
+eTh
 wgI
-wtz
+oDn
 wgI
 sHL
 rWK
 lKK
 lKK
 xrR
-hkH
-sCU
-sCU
-sCU
-sCU
-oDl
-wFF
-agW
-pjI
-ccx
-uOW
-uOW
-dGP
-oDl
+nCx
+vZz
+vZz
+vZz
+vZz
+oli
+nSI
+bEN
+sCi
+bwI
+eTh
+eTh
+nyx
+oli
 dGW
 dGW
 dGW
@@ -73866,31 +73643,31 @@ jSh
 nLW
 fzb
 mrc
-uOW
-uOW
-sbx
-oDl
-uOW
-sbx
+eTh
+eTh
+iFU
+oli
+eTh
+iFU
 kxs
 nEZ
 eMG
 rLF
 dGH
-sbx
-hdN
-wbr
-bHk
-dFV
-oDl
-wFF
-agW
-agW
-agW
-uOW
-uOW
-uOW
-dGP
+iFU
+qsn
+jOx
+xxM
+bAZ
+oli
+nSI
+bEN
+bEN
+bEN
+eTh
+eTh
+eTh
+nyx
 nyx
 nyx
 nyx
@@ -74118,23 +73895,23 @@ mrc
 mrc
 mrc
 mrc
-sbx
+iFU
 vRs
-sbx
-sbx
-sbx
-sbx
-sCE
-ccx
-ccx
-hdm
-sCE
-sbx
-sbx
-sbx
-sbx
-sbx
-sbx
+iFU
+iFU
+iFU
+iFU
+jBp
+bwI
+bwI
+ivO
+jBp
+iFU
+iFU
+iFU
+iFU
+iFU
+iFU
 iFU
 iFU
 iFU

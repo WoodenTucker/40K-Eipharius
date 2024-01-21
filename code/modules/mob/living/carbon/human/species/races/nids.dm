@@ -301,6 +301,9 @@
 		src.ear_damage = 0
 		src.inject_blood(src, 560)
 		src.biomass -=10
+		src.adjustBruteLoss(1)
+		src.adjustToxLoss(1)
+		src.adjustFireLoss(1)
 
 /mob/living/carbon/human/genestealer/proc/talon()
 	set name = "Unsheathe Venomous Talon (0)"

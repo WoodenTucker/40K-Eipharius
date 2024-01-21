@@ -157,12 +157,12 @@
 
 /obj/item/device/encryptionkey/secure1
 	name = "secure vox 1"
-	channels = list("Vox" = 1, "Secure" = 1)
+	channels = list("Secure" = 1)
 	origin_tech = list(TECH_ILLEGAL = 1)
 
 /obj/item/device/encryptionkey/secure2
 	name = "secure vox 2"
-	channels = list("Vox" = 1, "Omega" = 1)
+	channels = list("Omega" = 1)
 	origin_tech = list(TECH_ILLEGAL = 1)
 
 //com-linked guardsmen key

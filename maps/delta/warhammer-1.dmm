@@ -9176,6 +9176,7 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
+/obj/item/reagent_containers/glass/bottle/spice,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "Gm" = (
@@ -9590,6 +9591,7 @@
 	icon_state = "torchwall0"
 	},
 /obj/item/rnd/biospace10,
+/obj/item/reagent_containers/glass/bottle/spice,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -13473,6 +13475,17 @@
 /obj/effect/floor_decal/newcorner/entrace,
 /turf/simulated/floor/stone/seabed,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"VQ" = (
+/obj/structure/table/marble{
+	color = "grey"
+	},
+/obj/item/clothing/mask/breath/anesthetic{
+	color = "grey"
+	},
+/obj/item/reagent_containers/syringe/drugs,
+/obj/item/reagent_containers/glass/bottle/spice,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/caves/dark)
 "VS" = (
 /obj/effect/decal/cleanable/blood/gibs/core,
 /turf/simulated/floor/tiled{
@@ -38259,7 +38272,7 @@ pn
 zf
 Jt
 pn
-rj
+VQ
 eS
 lf
 EO

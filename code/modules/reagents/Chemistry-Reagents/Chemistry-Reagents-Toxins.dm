@@ -838,10 +838,10 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 
 /datum/reagent/toxin/mustard_gas/touch_mob(var/mob/living/L, var/amount)
 	if (istype(L))
-		eye_damage(L, get_severity(amount / 2))
-		external_damage(L, get_severity(amount * 2))
+		eye_damage(L, get_severity(amount / 3))
+		external_damage(L, get_severity(amount / 2))
 		internal_damage(L, get_severity(amount / 2))
-		open_wound_damage(L, get_severity(amount))
+		open_wound_damage(L, get_severity(amount / 2))
 
 /datum/reagent/toxin/mustard_gas/white_phosphorus
 	name = "White Phosphorus Gas"
@@ -855,9 +855,9 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 
 /datum/reagent/toxin/white_phosphorus/touch_mob(var/mob/living/L, var/amount)
 	if (istype(L))
-		eye_damage(L, get_severity(amount)*3)
-		external_damage(L, get_severity(amount)*3)
-		open_wound_damage(L, get_severity(amount)*3)
+		eye_damage(L, get_severity(amount)/3)
+		external_damage(L, get_severity(amount)/3)
+		open_wound_damage(L, get_severity(amount)/3)
 
 /datum/reagent/toxin/mustard_gas/white_phosphorus/affect_touch(var/mob/living/carbon/human/M, var/alien, var/removed)
 	if(prob(50))

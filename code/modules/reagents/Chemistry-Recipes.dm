@@ -1593,7 +1593,7 @@
 /datum/chemical_reaction/atepoine
 	name = "Atepoine"
 	result = /datum/reagent/atepoine
-	required_reagents = list(/datum/reagent/tricordrazine = 1, /datum/reagent/tramadol = 1, /datum/reagent/poo = 1) //we'll see if this is tough enough
+	required_reagents = list(/datum/reagent/tricordrazine = 1, /datum/reagent/tramadol = 1) //we'll see if this is tough enough
 	result_amount = 5
 
 /datum/chemical_reaction/trueblood

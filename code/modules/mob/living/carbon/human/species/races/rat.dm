@@ -11,6 +11,7 @@
     max_age = 50
     gluttonous = GLUT_ANYTHING
     total_health = 135
+    slowdown = -0.3 //Increased move speed
     mob_size = MOB_MEDIUM
     strength = STR_MEDIUM
     sexybits_location = BP_GROIN
