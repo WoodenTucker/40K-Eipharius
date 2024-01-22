@@ -2202,7 +2202,7 @@ Mechanicus can't take off their armor at the moment (Only bondsman can so no poi
 	name = "Locke Pattern Bolter"
 	id = "bolterlocke"
 	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 6)
-	materials = list(DEFAULT_WALL_MATERIAL = 5000, "diamond" = 18000, "phoron" = 200)
+	materials = list(DEFAULT_WALL_MATERIAL = 5000, "diamond" = 12000, "phoron" = 200)
 	build_path = /obj/item/gun/projectile/lockebolter
 	sort_string = "ZACS"
 
@@ -2210,7 +2210,7 @@ Mechanicus can't take off their armor at the moment (Only bondsman can so no poi
 	name = "Drusian Pattern Bolter"
 	id = "bolterdrusian"
 	req_tech = list(TECH_MATERIAL = 7, TECH_ENGINEERING = 6, TECH_COMBAT = 6)
-	materials = list("diamond" = 24000, "phoron" = 200)
+	materials = list("diamond" = 17000, "phoron" = 200)
 	build_path = /obj/item/gun/projectile/lockebolter/drusian
 	sort_string = "ZACT"
 
@@ -2218,7 +2218,7 @@ Mechanicus can't take off their armor at the moment (Only bondsman can so no poi
 	name = "Godwyn Astartes Pattern Bolter"
 	id = "boltergodwyn"
 	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 6)
-	materials = list("diamond" = 26000, "phoron" = 400)
+	materials = list("diamond" = 22000, "phoron" = 400)
 	build_path = /obj/item/gun/projectile/boltrifle
 	sort_string = "ZACU"
 
