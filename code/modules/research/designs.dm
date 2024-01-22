@@ -1951,7 +1951,7 @@ A reminder that mechanicus cannot remove their armor for a majority of their rol
 /datum/design/armor/rt
 	name = "Improved RT Cloak"
 	id = "rtcloak"
-	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 5, TECH_ILLEGAL = 6)
+	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 6, TECH_ILLEGAL = 6)
 	materials = list(DEFAULT_WALL_MATERIAL = 4000, "gold" = 4000, "diamond" = 4500)
 	build_path = /obj/item/clothing/suit/armor/rtcloak/mechanicus
 	sort_string = "XCAA"
@@ -1967,7 +1967,7 @@ A reminder that mechanicus cannot remove their armor for a majority of their rol
 /datum/design/armor/mining
 	name = "Improved Mining Suit"
 	id = "miningsuit"
-	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 4, TECH_COMBAT = 3)
+	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 4, TECH_COMBAT = 4)
 	materials = list(DEFAULT_WALL_MATERIAL = 16000, "diamond" = 2000)
 	build_path = /obj/item/clothing/suit/armor/salvage/mechanicus
 	sort_string = "XCAC"
@@ -1975,7 +1975,7 @@ A reminder that mechanicus cannot remove their armor for a majority of their rol
 /datum/design/armor/flak
 	name = "Improved Mercenary Flak Armor"
 	id = "mercflak"
-	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 4, TECH_COMBAT = 4)
+	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 4, TECH_COMBAT = 4)
 	materials = list(DEFAULT_WALL_MATERIAL = 12000, "diamond" = 3000)
 	build_path = /obj/item/clothing/suit/armor/guardsman/mercenary/mechanicus
 	sort_string = "XCAD"
@@ -1983,7 +1983,7 @@ A reminder that mechanicus cannot remove their armor for a majority of their rol
 /datum/design/armor/carapace
 	name = "Improved Mercenary Carapace Armor"
 	id = "merccara"
-	req_tech = list(TECH_MATERIAL = 7, TECH_ENGINEERING = 6, TECH_COMBAT = 6)
+	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 6)
 	materials = list(DEFAULT_WALL_MATERIAL = 14000, "diamond" = 5000)
 	build_path = /obj/item/clothing/suit/armor/guardsman/mercenary/carapace/mechanicus
 	sort_string = "XCAE"
@@ -1991,7 +1991,7 @@ A reminder that mechanicus cannot remove their armor for a majority of their rol
 /datum/design/armor/enforcer
 	name = "Improved Enforcer Armor"
 	id = "enforcer"
-	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 5, TECH_COMBAT = 4)
+	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 4)
 	materials = list(DEFAULT_WALL_MATERIAL = 4000, "diamond" = 3200)
 	build_path = /obj/item/clothing/suit/armor/enforcer/mechanicus
 	sort_string = "XCAF"
@@ -1999,7 +1999,7 @@ A reminder that mechanicus cannot remove their armor for a majority of their rol
 /datum/design/armor/enforcer/marshal
 	name = "Improved Enforcer Marshal Armor"
 	id = "enforcerm"
-	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 5)
+	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 6)
 	materials = list(DEFAULT_WALL_MATERIAL = 5000, "diamond" = 5200)
 	build_path = /obj/item/clothing/suit/armor/enforcer/marshal/mechanicus
 	sort_string = "XCAG"
@@ -2007,7 +2007,7 @@ A reminder that mechanicus cannot remove their armor for a majority of their rol
 /datum/design/armor/flak/guard
 	name = "Improved Cadian Flak Armor"
 	id = "guardflak"
-	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 4, TECH_COMBAT = 5)
+	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 4, TECH_COMBAT = 4)
 	materials = list(DEFAULT_WALL_MATERIAL = 12000, "diamond" = 3000)
 	build_path = /obj/item/clothing/suit/armor/guardsman/mechanicus
 	sort_string = "XCAH"
@@ -2015,7 +2015,7 @@ A reminder that mechanicus cannot remove their armor for a majority of their rol
 /datum/design/armor/carace/guard
 	name = "Improved Cadian Carapace Armor"
 	id = "guardcara"
-	req_tech = list(TECH_MATERIAL = 7, TECH_ENGINEERING = 6, TECH_COMBAT = 7)
+	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 8)
 	materials = list(DEFAULT_WALL_MATERIAL = 12000, "diamond" = 5000)
 	build_path = /obj/item/clothing/suit/armor/guardsman/carapace/mechanicus
 	sort_string = "XCAI"
@@ -2023,7 +2023,7 @@ A reminder that mechanicus cannot remove their armor for a majority of their rol
 /datum/design/helmet/flak
 	name = "Improved Cadian Flak Helmet"
 	id = "guardhelm"
-	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 4, TECH_COMBAT = 5)
+	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 4, TECH_COMBAT = 4)
 	materials = list(DEFAULT_WALL_MATERIAL = 4000, "diamond" = 1000)
 	build_path = /obj/item/clothing/head/helmet/guardhelmet/mechanicus
 	sort_string = "XCBA"
@@ -2031,7 +2031,7 @@ A reminder that mechanicus cannot remove their armor for a majority of their rol
 /datum/design/helmet/carapace
 	name = "Carapace Helmet"
 	id = "carahelm"
-	req_tech = list(TECH_MATERIAL = 7, TECH_ENGINEERING = 6, TECH_COMBAT = 7)
+	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 8)
 	materials = list(DEFAULT_WALL_MATERIAL = 1000, "diamond" = 3000)
 	build_path = /obj/item/clothing/head/helmet/guardhelmet/carapace
 	sort_string = "XCBA"
