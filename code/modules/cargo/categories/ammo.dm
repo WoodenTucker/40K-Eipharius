@@ -38,7 +38,7 @@
 
 /datum/cargo_entry/ammo/rifle5/kp
 	name = "KP Rifle Magazine(5.56mm)"
-	cost = 26
+	cost = 29
 	item_path = /obj/item/ammo_magazine/c556/kp
 
 /datum/cargo_entry/ammo/rifle5/ms
@@ -58,7 +58,7 @@
 
 /datum/cargo_entry/ammo/rifle7/kp
 	name = "KP Rifle Magazine(7.62mm)"
-	cost = 28
+	cost = 31
 	item_path = /obj/item/ammo_magazine/a762/kp
 
 /datum/cargo_entry/ammo/rifle7/ms
@@ -93,7 +93,7 @@
 
 /datum/cargo_entry/ammo/slugbox/kp
 	name = "KP Shotgun Slug Box"
-	cost = 40
+	cost = 43
 	item_path = /obj/item/ammo_box/shotgun/kpslug
 
 /datum/cargo_entry/ammo/riflehandful
@@ -108,7 +108,7 @@
 
 /datum/cargo_entry/ammo/riflehandful/kp
 	name = "KP Rifle Handful"
-	cost = 12
+	cost = 15
 	item_path = /obj/item/ammo_magazine/handful/brifle_handful/kp
 
 /datum/cargo_entry/ammo/riflehandful/ms
@@ -153,7 +153,7 @@
 
 /datum/cargo_entry/ammo/c45/kp
 	name = "KP .45 Pistol Magazine"
-	cost = 14
+	cost = 15
 	item_path = /obj/item/ammo_magazine/mc45mm/kp
 
 /datum/cargo_entry/ammo/c45/ms
@@ -173,7 +173,7 @@
 
 /datum/cargo_entry/ammo/revolver357ammo/kp
 	name = ".357 Speedloader KP"
-	cost = 14
+	cost = 15
 	item_path = /obj/item/ammo_magazine/a357/kp
 
 /datum/cargo_entry/ammo/revolver357ammo/ms
@@ -193,7 +193,7 @@
 
 /datum/cargo_entry/ammo/revolver44ammo/kp
 	name = "KP .44 Speedloader"
-	cost = 14
+	cost = 15
 	item_path = /obj/item/ammo_magazine/c44/kp
 
 /datum/cargo_entry/ammo/revolver44ammo/ms
@@ -243,10 +243,10 @@
 
 /datum/cargo_entry/ammo/boltpistolmagkp
 	name = "KP Bolt Pistol Magazine"
-	cost = 47
+	cost = 50
 	item_path = /obj/item/ammo_magazine/bolt_pistol_magazine/kp
 
 /datum/cargo_entry/ammo/boltriflemagkp
 	name = "KP Bolt Rifle Magazine"
-	cost = 75
+	cost = 78
 	item_path = /obj/item/ammo_magazine/bolt_rifle_magazine/kp

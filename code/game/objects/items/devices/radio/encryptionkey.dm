@@ -157,12 +157,12 @@
 
 /obj/item/device/encryptionkey/secure1
 	name = "secure vox 1"
-	channels = list("Vox" = 1, "Secure" = 1)
+	channels = list("Secure" = 1)
 	origin_tech = list(TECH_ILLEGAL = 1)
 
 /obj/item/device/encryptionkey/secure2
 	name = "secure vox 2"
-	channels = list("Vox" = 1, "Omega" = 1)
+	channels = list("Omega" = 1)
 	origin_tech = list(TECH_ILLEGAL = 1)
 
 //com-linked guardsmen key
@@ -170,6 +170,25 @@
 	name = "guardsmen com-linked encryption key"
 	icon_state = "sec_cypherkey"
 	channels = list("Command" = 1, "Militarum" =1, "Vox" = 1)
+	syndie = 1
+
+/obj/item/device/encryptionkey/headset_sec2
+	name = "guardsmen com-linked encryption key"
+	icon_state = "sec_cypherkey"
+	channels = list("Command" = 1, "Militarum" =1, "Frateris" = 1, "Vox" = 1)
+	syndie = 1
+
+// CULT KEYS
+/obj/item/device/encryptionkey/cult1
+	name = "guardsmen com-linked encryption key"
+	icon_state = "sec_cypherkey"
+	channels = list("Alpha" = 1)
+	syndie = 1
+
+/obj/item/device/encryptionkey/cult2
+	name = "guardsmen com-linked encryption key"
+	icon_state = "sec_cypherkey"
+	channels = list("Medical" = 1)
 	syndie = 1
 
 //unused
@@ -218,7 +237,13 @@
 /obj/item/device/encryptionkey/heads/captain
 	name = "Rogue Traders encryption key"
 	icon_state = "cap_cypherkey"
-	channels = list("Command" = 1, "Militarum" = 1)
+	channels = list("Secure" = 1)
+	syndie = 1
+
+/obj/item/device/encryptionkey/heads/captain2
+	name = "Governor's encryption key"
+	icon_state = "cap_cypherkey"
+	channels = list("Command", "Militarum" = 1)
 	syndie = 1
 
 //AI IS FUCKING HERESY

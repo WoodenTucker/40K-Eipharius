@@ -60,7 +60,6 @@
 	/obj/item/seeds/cornseed = 1,
 	/obj/item/seeds/random = 1,
 	/obj/item/seeds/tobaccoseed = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 

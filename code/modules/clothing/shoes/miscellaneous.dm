@@ -19,7 +19,7 @@
 	desc = "When you want to turn up the heat."
 	icon_state = "swat"
 	force = 3
-	armor = list(melee = 10, bullet = 10, laser = 10,energy = 25, bomb = 50, bio = 10, rad = 0)
+	armor = list(melee = 1, bullet = 2, laser = 2, energy = 2, bomb = 2, bio = 0, rad = 0)
 //	item_flags = ITEM_FLAG_NOSLIP
 	siemens_coefficient = 0.6
 	can_hold_knife = 1
@@ -30,7 +30,7 @@
 	desc = "When you REALLY want to turn up the heat."
 	icon_state = "jungle"
 	force = 5
-	armor = list(melee = 10, bullet = 10, laser = 10,energy = 25, bomb = 50, bio = 10, rad = 0)
+	armor = list(melee = 1, bullet = 2, laser = 2, energy = 2, bomb = 2, bio = 0, rad = 0)
 //	item_flags = ITEM_FLAG_NOSLIP
 	siemens_coefficient = 0.6
 	can_hold_knife = 1

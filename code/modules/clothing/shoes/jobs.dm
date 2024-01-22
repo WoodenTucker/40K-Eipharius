@@ -20,7 +20,7 @@
 	icon_state = "jackboots"
 	item_state = "jackboots"
 	force = 3
-	armor = list(melee = 10, bullet = 10, laser = 10, energy = 15, bomb = 20, bio = 0, rad = 0)
+	armor = list(melee = 1, bullet = 2, laser = 2, energy = 2, bomb = 2, bio = 0, rad = 0)
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
 	cold_protection = FEET

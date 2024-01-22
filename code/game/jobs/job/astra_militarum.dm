@@ -73,7 +73,7 @@
 		"Mordian Iron Guard" = /decl/hierarchy/outfit/job/guardsman/mordian,
 		"Maccabian Guardsman" = /decl/hierarchy/outfit/job/guardsman/maccabian,
 		)
-	cultist_chance = 4
+	cultist_chance = 7
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -122,7 +122,7 @@
 	shotgun_skill = 6
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 10 // sir what is a heretic
+	cultist_chance = 11 // sir what is a heretic
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -237,7 +237,7 @@ datum/job/ig/bullgryn
 	shotgun_skill = 6
 	lmg_skill = 7
 	smg_skill = 8
-	cultist_chance = 10
+	cultist_chance = 14
 	alt_titles = list(
 		"Cadian Long Las" = /decl/hierarchy/outfit/job/sniper,
 		"Valhallan Scout Sniper" = /decl/hierarchy/outfit/job/sniper/valhalla,
@@ -267,7 +267,7 @@ datum/job/ig/bullgryn
 			H.set_quirk(new/datum/quirk/brave())
 			H.set_trait(new/datum/trait/death_tolerant())
 			H.implant_loyalty(src)
-			cultist_chance = 1
+			cultist_chance = 4
 
 		switch(title)
 			if("Cadian Long Las" || "Valhallan Scout Sniper" || "Krieg Marksman")
@@ -288,7 +288,7 @@ datum/job/ig/bullgryn
 	open_when_dead = FALSE
 	selection_color = "#23742a"
 	department_flag = SEC
-	cultist_chance = 4
+	cultist_chance = 6
 	outfit_type = /decl/hierarchy/outfit/job/sergeant
 	alt_titles = list(
 		"Cadian Sergeant" = /decl/hierarchy/outfit/job/sergeant,
@@ -379,7 +379,7 @@ datum/job/ig/bullgryn
 	shotgun_skill = 9
 	lmg_skill = 8
 	smg_skill = 9
-	cultist_chance = 3
+	cultist_chance = 5
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -396,7 +396,7 @@ datum/job/ig/bullgryn
 			/mob/living/carbon/human/proc/medicclass)
 		if(title == "Krieg Quartermaster")
 			H.implant_loyalty(src)
-			cultist_chance = 1
+			cultist_chance = 2
 		switch(title)
 			if("Cadian Medicae" || "Valhallan Medicae" || "Krieg Quartermaster")
 				if(title == "Cadian Medicae")
@@ -439,7 +439,7 @@ datum/job/ig/bullgryn
 	shotgun_skill = 10
 	lmg_skill = 10
 	smg_skill = 10
-	cultist_chance = 1
+	cultist_chance = 4
 
 	equip(var/mob/living/carbon/human/H)
 		..()
@@ -483,7 +483,7 @@ datum/job/ig/bullgryn
 	smg_skill = 9
 	open_when_dead = FALSE
 	latejoin_at_spawnpoints = TRUE
-	cultist_chance = 1 // 0 fucks stuff allegedly
+	cultist_chance = 4 // 0 fucks stuff allegedly
 	access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
 	minimal_access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory, access_armory )
 
@@ -525,7 +525,7 @@ datum/job/ig/bullgryn
 		/mob/living/carbon/human/proc/comsexecute,
 		/mob/living/carbon/human/proc/comsyouwereweak)
 		to_chat(H, "<span class='notice'><b><font size=3>The commissar is empowered to use any means necessary to ensure the loyalty and moral purity of his or her charges, including overriding or even executing a regiment's commanding officer if necessary, and so is regarded with a mixture of fear and admiration by rank-and-file Guardsmen -- and not a few of their officers. Commissars provide the link between regimental officers and the Departmento Munitorum. They are tough, ruthless individuals whose primary responsibilities are to preserve the courage, discipline and loyalty of the regiment. Only a handful of commissars have ever obtained leadership over large Imperial forces as a lord commander, or even a governor militant, such as Yarrick at Armageddon, and only a handful are known to have even retained full command of an entire regiment, such as Colonel-Commissar Ibram Gaunt. All commissars are trained as excellent orators, and often deliver stirring speeches to their regiment or company prior to battle. During battle, the commissar is almost always amongst the front lines, and roars a litany of battle cries and prayers to the Emperor to inspire his troops to battle. </font></b></span>")
-		to_chat(H, "<span class='notice'><b><font size=3>(READ THIS) Your role like any others is to make the round more interesting, you will be punished if you metagame lateparties, murder allied characters without good reason OR force people to stay in trenches all game. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>(READ THIS) Your role like any others is to make the round more interesting, you will be rolebanned if you metagame lateparties, murder allied characters without good reason OR execute pilgrims for walking up to your trench system. Just because there's a trench don't mean people have to die for being near it. </font></b></span>")
 
 // CLASSES
 /mob/living/carbon/human/proc/guardclass()
@@ -744,7 +744,7 @@ datum/job/ig/bullgryn
 	name = OUTFIT_JOB_NAME("Imperial Guard Whiteshield")
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/whiteshield
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/heavy
 	belt = /obj/item/device/flashlight/lantern
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
@@ -771,7 +771,7 @@ datum/job/ig/bullgryn
 	name = OUTFIT_JOB_NAME("Cadian Guardsman")
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/guardsman
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/heavy
 	belt = null
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
@@ -801,7 +801,7 @@ datum/job/ig/bullgryn
 	name = OUTFIT_JOB_NAME("Mordian Iron Guardsman")
 	uniform = /obj/item/clothing/under/color/brown
 	suit = /obj/item/clothing/suit/armor/mordian
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/heavy
 	belt = null
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
@@ -856,7 +856,7 @@ datum/job/ig/bullgryn
 	uniform = /obj/item/clothing/under/casual_pants/catachan
 	suit = /obj/item/clothing/suit/armor/catachan
 	head = /obj/item/clothing/head/catachan
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/heavy
 	belt = null
 	gloves = null
 	shoes = /obj/item/clothing/shoes/jackboots/catachan
@@ -870,7 +870,6 @@ datum/job/ig/bullgryn
 	r_hand = /obj/item/storage/box/coin
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/handcuffs = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
@@ -884,7 +883,7 @@ datum/job/ig/bullgryn
 	uniform = /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallanarmor
 	head = /obj/item/clothing/head/valushanka
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/heavy
 	belt = null
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
@@ -930,7 +929,7 @@ datum/job/ig/bullgryn
 /decl/hierarchy/outfit/job/kasrkin
 	name = OUTFIT_JOB_NAME("Kasrkin")
 	uniform = /obj/item/clothing/under/cadian_uniform
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/heavy
 	belt = /obj/item/device/flashlight/lantern
 	gloves = null
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
@@ -960,7 +959,7 @@ datum/job/ig/bullgryn
 	name = OUTFIT_JOB_NAME("Cadian Plasmagunner")
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/guardsman
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/heavy
 	belt = null
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
@@ -988,7 +987,7 @@ datum/job/ig/bullgryn
 	name = OUTFIT_JOB_NAME("Valhallan Heavy Autogunner")
 	uniform = /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallanarmor
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/heavy
 	belt = /obj/item/device/flashlight/lantern
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
@@ -1039,7 +1038,7 @@ datum/job/ig/bullgryn
 	uniform = /obj/item/clothing/under/casual_pants/catachan
 	suit = /obj/item/clothing/suit/armor/catachan/flamerspecialist
 	head = /obj/item/clothing/head/catachan
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/heavy
 	belt = /obj/item/extinguisher
 	gloves = null
 	shoes = /obj/item/clothing/shoes/jackboots/catachan
@@ -1124,7 +1123,7 @@ datum/job/ig/bullgryn
 	suit = /obj/item/clothing/suit/armor/medicae
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/heavy
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	glasses = /obj/item/clothing/glasses/hud/health
 	belt = /obj/item/storage/belt/medical/full
@@ -1154,7 +1153,7 @@ datum/job/ig/bullgryn
 	suit = /obj/item/clothing/suit/armor/valhallanarmor/medicae
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	gloves = /obj/item/clothing/gloves/combat/cadian
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/heavy
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	glasses = /obj/item/clothing/glasses/hud/health
 	suit_store = /obj/item/gun/projectile/automatic/autogrim
@@ -1208,7 +1207,7 @@ datum/job/ig/bullgryn
 	name = OUTFIT_JOB_NAME("Cadian Sniper")
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/guardsman
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/heavy
 	belt = null
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
@@ -1262,7 +1261,7 @@ datum/job/ig/bullgryn
 	name = OUTFIT_JOB_NAME("Valhallan Scout Sniper")
 	uniform = /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallanarmor
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/heavy
 	belt = /obj/item/device/flashlight/lantern
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
@@ -1290,7 +1289,7 @@ datum/job/ig/bullgryn
 	name = OUTFIT_JOB_NAME("Cadian Sergeant")
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/cadiansgt
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/heavy
 	belt = /obj/item/melee/chain/inqcs
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
@@ -1417,7 +1416,7 @@ datum/job/ig/bullgryn
 	name = OUTFIT_JOB_NAME("Cadian Commissar")
 	uniform = /obj/item/clothing/under/hosformalmale
 	suit = /obj/item/clothing/suit/armor/commissar
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/heavy
 	belt = /obj/item/melee/sword/commissword
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/commissar
@@ -1655,7 +1654,7 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 	uniform = /obj/item/clothing/under/rank/victorian/black
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	shoes = /obj/item/clothing/shoes/jackboots
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/heavy
 	mask = null
 	l_ear = /obj/item/device/radio/headset/blue_team/alpha
 	r_ear = /obj/item/device/radio/headset/red_team
@@ -1671,7 +1670,7 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 /decl/hierarchy/outfit/job/bloodpact2 // Old
 	uniform = /obj/item/clothing/under/guard/renegadeuniform
 	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/heavy
 	belt = /obj/item/melee/chain/pcsword/khorneaxe
 	gloves = /obj/item/clothing/gloves/thick/swat/combat
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
@@ -1695,7 +1694,7 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 /decl/hierarchy/outfit/job/vraks // generic culty boy
 	uniform = /obj/item/clothing/under/guard/renegadeuniform
 	suit = /obj/item/clothing/suit/armor/flak1/renegadearmor
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/heavy
 	belt = /obj/item/melee/sword/combat_knife
 	gloves = /obj/item/clothing/gloves/thick/swat/combat
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
@@ -1721,7 +1720,7 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 	name = OUTFIT_JOB_NAME("Cadian Sergeant")
 	uniform = /obj/item/clothing/under/guard/uniform
 	suit =/obj/item/clothing/suit/armor/guardsman/bloodpact
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/heavy
 	belt = /obj/item/melee/chain/inqcs
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian

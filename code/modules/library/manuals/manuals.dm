@@ -287,6 +287,9 @@
 				<h1>Rites of The Grandfather</h1>
 				The sacred rites and practices of pestilence.
 
+				<h2>Secret Channel</h2>
+				<h3>Alter your radio-headset to use a warp-touched radio channel only accessible to the followers of Khorne and Nurgle. Destroys the original</h3>
+
 				<h2>Pestilent Favour:</h2>
 				<h3>Imbue yourself with the power of the Grandfather.</h3>
 				Place a human brain upon the rune or a single throne coin.
@@ -376,6 +379,9 @@
 				<h1>Rites of Blood God</h1>
 				The sacred rites and practices of slaughter.
 
+				<h2>Secret Channel</h2>
+				<h3>Alter your radio-headset to use a warp-touched radio channel only accessible to the followers of Khorne and Nurgle. Destroys the original</h3>
+
 				<h2>Bloody Favour:</h2>
 				<h3>Imbue yourself with the power of the Blood God.</h3>
 				Hearts or thrones offered on a rune of Khorne. Raise your favour to receive blessings improving your combat prowess.
@@ -410,6 +416,9 @@
 
 				<h1>Rites of The Changer Of Ways</h1>
 				The sacred rites and practices of Change.
+
+				<h2>Secret Channel</h2>
+				<h3>Alter your radio-headset to use a warp-touched radio channel only accessible to the followers of Tzeentch and Slaanesh. Destroys the original</h3>
 
 				<h2>Illusion:</h2>
 				<h3>Change appearance into an object of your surrounding for 1 minute.</h3>
@@ -468,6 +477,9 @@
 				<h2>Tanning Rack:</h2>
 				<h3>Dries parchments of skin for use. Will take some minutes for the skin to be ready.</h3>
 				Ritual Knife used on logs cut from trees.
+
+				<h2>Secret Channel</h2>
+				<h3>Alter your radio-headset to use a warp-touched radio channel only accessible to the followers of Tzeentch and Slaanesh. Destroys the original</h3>
 
 				<h2>Masquerade Of Madness:</h2>
 				<h3>Instill fear into the servants of the Corpse Emperor who dare look into your eyes.</h3>

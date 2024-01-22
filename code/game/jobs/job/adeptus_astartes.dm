@@ -37,12 +37,10 @@
 	latejoin_at_spawnpoints = 1
 	announced = 0
 	species_role = "Astartes"
-	cultist_chance = 1
+	cultist_chance = 0
 
-	equip(var/mob/living/carbon/human/H)
-		var/current_name = H.real_name
+	equip(var/mob/living/carbon/human/astartes/H)
 		..()
-		H.fully_replace_character_name("Brother [current_name]")
 		H.verbs +=  list(
 		/mob/living/carbon/human/proc/astachaos,
 		/mob/living/carbon/human/proc/astacharge,
@@ -61,7 +59,7 @@
 		/mob/living/carbon/human/proc/astatoglory,
 		/mob/living/carbon/human/proc/astaxenos)
 		H.verbs -= list(/mob/living/carbon/human/verb/emoteemperorprotects)
-		H.add_stats(28, rand(20,26), rand(22,26), rand(17,24)) //genuinely no idea what to make their stats
+		H.add_stats(28, rand(23,26), rand(23,26), rand(19,24)) //genuinely no idea what to make their stats
 		H.add_skills(11,11,11,11,11)
 /*switch(title) //either you get this to work or you dont change it, ok?
 			if("Blood Angel Tactical Marine")
@@ -89,6 +87,7 @@
 			if("Ultramarine Techmarine")
 				H.add_skills(13, 13, 2, 11, 1)*/
 		H.set_trait(new/datum/trait/death_tolerant())
+		H.set_quirk(new/datum/quirk/dead_inside) // Why didn't they have this
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
@@ -125,6 +124,61 @@
 
 //assfartes outfits
 
+/decl/hierarchy/outfit/job/astartes/alpha
+	name = OUTFIT_JOB_NAME("Chaos Marine -- Alpha")
+	uniform = /obj/item/clothing/under/astartes/bodysuit
+	suit = /obj/item/clothing/suit/armor/astartes/alphalegion
+	back = /obj/item/storage/backpack/satchel/astartes/alphalegion
+	belt = /obj/item/melee/chain/pcsword
+	shoes = /obj/item/clothing/shoes/jackboots/astartes/raven
+	head = /obj/item/clothing/head/helmet/astartes/alphalegion
+	mask = null
+	l_ear = /obj/item/device/radio/headset/cult1
+	r_ear = /obj/item/device/radio/headset/cult2
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = null
+	suit_store = /obj/item/gun/projectile/boltrifle/raven
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_rifle_magazine_astartes = 3,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/clothing/glasses/astartes/visor = 1
+	)
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+
+	id_type = /obj/item/card/id/dog_tag/guardsman
+
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+
+/decl/hierarchy/outfit/job/astartes/children
+	name = OUTFIT_JOB_NAME("Chaos Marine -- Children")
+	uniform = /obj/item/clothing/under/astartes/bodysuit
+	suit = /obj/item/clothing/suit/armor/astartes/emperorschildren
+	back = /obj/item/storage/backpack/satchel/astartes/emperorschildren
+	belt = /obj/item/melee/chain/pcsword
+	shoes = /obj/item/clothing/shoes/jackboots/astartes/raven
+	head = /obj/item/clothing/head/helmet/astartes/emperorschildren
+	mask = null
+	l_ear = /obj/item/device/radio/headset/cult1
+	r_ear = /obj/item/device/radio/headset/cult2
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = null
+	suit_store = /obj/item/gun/projectile/boltrifle/raven
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_rifle_magazine_astartes = 3,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/clothing/glasses/astartes/visor = 1
+	)
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+
+	id_type = /obj/item/card/id/dog_tag/guardsman
+
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/astartes
 	name = OUTFIT_JOB_NAME("Blood Angels Tactical Marine")

@@ -2195,7 +2195,7 @@ CIRCUITS BELOW
 /datum/design/item/bolter/locke
 	name = "Locke Pattern Bolter"
 	id = "bolterlocke"
-	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 5, TECH_COMBAT = 5)
+	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 6)
 	materials = list(DEFAULT_WALL_MATERIAL = 5000, "diamond" = 12000, "phoron" = 200)
 	build_path = /obj/item/gun/projectile/lockebolter
 	sort_string = "ZACS"
@@ -2203,7 +2203,7 @@ CIRCUITS BELOW
 /datum/design/item/bolter/drusian
 	name = "Drusian Pattern Bolter"
 	id = "bolterdrusian"
-	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 6)
+	req_tech = list(TECH_MATERIAL = 7, TECH_ENGINEERING = 6, TECH_COMBAT = 6)
 	materials = list("diamond" = 17000, "phoron" = 200)
 	build_path = /obj/item/gun/projectile/lockebolter/drusian
 	sort_string = "ZACT"
@@ -2211,7 +2211,7 @@ CIRCUITS BELOW
 /datum/design/item/bolter/godwyn
 	name = "Godwyn Astartes Pattern Bolter"
 	id = "boltergodwyn"
-	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 5)
+	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 6)
 	materials = list("diamond" = 22000, "phoron" = 400)
 	build_path = /obj/item/gun/projectile/boltrifle
 	sort_string = "ZACU"
@@ -2339,7 +2339,7 @@ CIRCUITS BELOW
 /datum/design/item/laspistol/lucius
 	name = "Lucius Pattern Laspistol"
 	id = "luciuslaspistol"
-	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 3, TECH_POWER = 4, TECH_COMBAT = 4)
+	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 3, TECH_POWER = 4, TECH_COMBAT = 5)
 	materials = list("glass" = 200, "diamond" = 1600, "phoron" = 800)
 	build_path = /obj/item/gun/energy/las/laspistol/militarum/lucius
 	sort_string = "ZADH"
@@ -2347,7 +2347,7 @@ CIRCUITS BELOW
 /datum/design/pulserifle
 	name = "Tau Pulse Rifle"
 	id = "taurifle"
-	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 7, TECH_POWER = 7, TECH_COMBAT = 4, TECH_ILLEGAL = 7)
+	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 7, TECH_POWER = 7, TECH_COMBAT = 6, TECH_ILLEGAL = 7)
 	materials = list("glass" = 1200, "diamond" = 6000, "phoron" = 4000)
 	build_path = /obj/item/gun/energy/pulse/pulserifle
 	sort_string = "ZADI"
@@ -2355,7 +2355,7 @@ CIRCUITS BELOW
 /datum/design/pulsepistol
 	name = "Tau Pulse Pistol"
 	id = "taupistol"
-	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 6, TECH_POWER = 6, TECH_COMBAT = 3, TECH_ILLEGAL = 6)
+	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 6, TECH_POWER = 6, TECH_COMBAT = 6, TECH_ILLEGAL = 6)
 	materials = list("glass" = 600, "diamond" = 3000, "phoron" = 3000)
 	build_path = /obj/item/gun/energy/pulse/pulsepistol
 	sort_string = "ZADF"
@@ -2363,7 +2363,7 @@ CIRCUITS BELOW
 /datum/design/plasma/rifle
 	name = "Plasma Rifle"
 	id = "plasmarifle"
-	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 5, TECH_POWER = 5, TECH_COMBAT = 5, TECH_PHORON = 5)
+	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 5, TECH_POWER = 5, TECH_COMBAT = 6, TECH_PHORON = 5)
 	materials = list(DEFAULT_WALL_MATERIAL = 2000, "glass" = 2000, "diamond" = 14000, "phoron" = 2400)
 	build_path = /obj/item/gun/energy/pulse/plasma/rifle
 	sort_string = "ZADG"
@@ -2379,7 +2379,7 @@ CIRCUITS BELOW
 /datum/design/plasma/pistol2
 	name = "Ryza Plasma Pistol"
 	id = "ryzaplasmapistol"
-	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_POWER = 6, TECH_COMBAT = 6, TECH_PHORON = 6)
+	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_POWER = 6, TECH_COMBAT = 7, TECH_PHORON = 6)
 	materials = list("glass" = 1000, "diamond" = 14000, "phoron" = 2400)
 	build_path = /obj/item/gun/energy/pulse/plasma/pistol/mechanicus
 	sort_string = "ZADI"
@@ -2387,7 +2387,7 @@ CIRCUITS BELOW
 /datum/design/plasma/pistol3
 	name = "Seolite Plasma Pistol"
 	id = "seoliteplasmapistol"
-	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_POWER = 7, TECH_COMBAT = 6, TECH_PHORON = 7, TECH_ILLEGAL = 6)
+	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_POWER = 7, TECH_COMBAT = 7, TECH_PHORON = 7, TECH_ILLEGAL = 6)
 	materials = list("glass" = 1000, "diamond" = 14000, "phoron" = 2400)
 	build_path = /obj/item/gun/energy/pulse/plasma/pistol/toaster
 	sort_string = "ZADJ"

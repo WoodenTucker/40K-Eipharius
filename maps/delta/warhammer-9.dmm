@@ -5947,8 +5947,8 @@
 	icon_state = "spline_fancy"
 	},
 /obj/item/melee/sword/broadsword/adamantine{
-	force = 33;
-	force_wielded = 44;
+	force = 40;
+	force_wielded = 48;
 	name = "heavy broadsword";
 	desc = "A heavy iron broadsword blessed by Saint Sabbat."
 	},

@@ -1,6 +1,6 @@
 /obj/effect/gibspawner
 	generic
-		gibtypes = list(/obj/effect/decal/cleanable/blood/gibs,/obj/effect/decal/cleanable/blood/gibs,/obj/effect/decal/cleanable/blood/gibs/core)
+		gibtypes = list(/obj/effect/decal/cleanable/poo,/obj/effect/decal/cleanable/blood/gibs/vomit,/obj/effect/decal/cleanable/flour)
 		gibamounts = list(2,2,1)
 
 		New()

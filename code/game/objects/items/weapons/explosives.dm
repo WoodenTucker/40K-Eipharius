@@ -63,7 +63,22 @@
 			explode(get_turf(target))
 
 /obj/item/plastique/proc/explode(var/location)
-	explosion(location, -1, -1, 3, 5)
+	if(!target)
+		target = get_atom_on_turf(src)
+	if(!target)
+		target = src
+	if(location)
+		explosion(location, -1, -1, 3, 5)
+
+	if(target)
+		if (istype(target, /turf/simulated/wall))
+			var/turf/simulated/wall/W = target
+			W.dismantle_wall(1)
+			explosion(location, -1, -1, 3, 5)
+		else
+			explosion(location, -1, -1, 3, 5)
+	if(target)
+		target.overlays -= image_overlay
 	qdel(src)
 
 /obj/item/plastique/attack(mob/M as mob, mob/user as mob, def_zone)

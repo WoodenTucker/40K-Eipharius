@@ -251,12 +251,36 @@
 	slot_flags = SLOT_EARS
 	w_class = ITEM_SIZE_SMALL
 
+// CULT VOX
+/obj/item/device/radio/headset/cult1
+	icon = 'icons/obj/radio.dmi'
+	name = "Standard Issue Vox"
+	desc = "A stripped down version of the standard Guard issue vox. This one has been upgraded with a com-link"
+	ks1type = /obj/item/device/encryptionkey/red
+	ks2type = /obj/item/device/encryptionkey/cult1
+	icon_state = "sec_headset"
+	item_state = "sec_headset"
+	slot_flags = SLOT_EARS
+	w_class = ITEM_SIZE_SMALL
+
+/obj/item/device/radio/headset/cult2
+	icon = 'icons/obj/radio.dmi'
+	name = "Standard Issue Vox"
+	desc = "A stripped down version of the standard Guard issue vox. This one has been upgraded with a com-link"
+	ks1type = /obj/item/device/encryptionkey/red
+	ks2type = /obj/item/device/encryptionkey/cult2
+	icon_state = "sec_headset"
+	item_state = "sec_headset"
+	slot_flags = SLOT_EARS
+	w_class = ITEM_SIZE_SMALL
+
 //IMPORTANT - NEEDS TWEAKING DEPENDING ON IF ERTS ARE PLANNED TO BE USED
 /obj/item/device/radio/headset/ert // Nobles
 	name = "Standard Issue Vox"
 	desc = "A sekret headset"
 	icon_state = "com_headset"
 	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/red
 	ks2type = /obj/item/device/encryptionkey/secure1
 
 /obj/item/device/radio/headset/ert2 // Ganger and RT
@@ -264,6 +288,7 @@
 	desc = "A sekret headset"
 	icon_state = "com_headset"
 	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/red
 	ks2type = /obj/item/device/encryptionkey/secure2
 
 //I have no idea if this is used rn
@@ -272,6 +297,7 @@
 	desc = "The headset of your worst enemy."
 	icon_state = "com_headset"
 	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/red
 	ks2type = /obj/item/device/encryptionkey/heads/hos
 
 //standard inquisitional vox
@@ -488,6 +514,19 @@
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/heads/captain
+	ks2type = /obj/item/device/encryptionkey/red
+	slot_flags = SLOT_EARS
+	w_class = ITEM_SIZE_SMALL
+	syndie = 1
+	origin_tech = list(TECH_ILLEGAL = 2)
+
+/obj/item/device/radio/headset/heads/gov
+	name = "governor's vox"
+	desc = "A command-level vox with high tiers of encryption."
+	icon_state = "com_headset"
+	item_state = "headset"
+	ks2type = /obj/item/device/encryptionkey/red
+	ks1type = /obj/item/device/encryptionkey/heads/captain2
 	slot_flags = SLOT_EARS
 	w_class = ITEM_SIZE_SMALL
 	syndie = 1

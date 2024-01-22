@@ -776,8 +776,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	charge_cost = 1800
 	wielded_item_state = "ionrifle-wielded"
 	var/plasma_overheat = 1 // Keeping track on how overheated the gun is
-	var/plasma_overheat_decay = 4 // The cooling of the gun per tick
-	var/plasma_overheat_max = 250 // When the gun exploads
+	var/plasma_overheat_decay = 2 // The cooling of the gun per tick
+	var/plasma_overheat_max = 200 // When the gun exploads
 	Fire(atom/target, mob/living/user)
 		if(plasma_overheat >= 50)
 			to_chat(user, "THE BARREL STARTS TO GLOW.")
@@ -822,7 +822,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 	firemodes = list(
 		list(mode_name="ATAP", fire_delay=16, projectile_type=/obj/item/projectile/energy/pulse/plasmarifle, charge_cost=600),
-		list(mode_name="HEDP", fire_delay = 36, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=2000),
+		list(mode_name="HEDP", fire_delay = 36, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=1000),
 		)
 
 /obj/item/gun/energy/pulse/plasma/rifle/New()
@@ -854,7 +854,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 	firemodes = list(
 		list(mode_name="ATAP", fire_delay=18.5, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol, charge_cost=550),
-		list(mode_name="HEDP", fire_delay = 47, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=2200),
+		list(mode_name="HEDP", fire_delay = 47, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=1200),
 		)
 
 /obj/item/gun/energy/pulse/plasma/pistol/New()
@@ -887,7 +887,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 	firemodes = list(
 		list(mode_name="ATAP", fire_delay=14.5, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol, charge_cost=350),
-		list(mode_name="HEDP", fire_delay = 36.5, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=1700),
+		list(mode_name="HEDP", fire_delay = 36.5, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=700),
 		)
 
 /obj/item/gun/energy/pulse/plasma/pistol/chaos // want chaos pistol better than normal. as chaos will be worsely equipped, they need their shining weapons to push up the average
@@ -910,7 +910,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 	firemodes = list(
 		list(mode_name="ATAP", fire_delay=17.5, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol, charge_cost=600),
-		list(mode_name="HEDP", fire_delay = 45, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=2300),
+		list(mode_name="HEDP", fire_delay = 45, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=1000),
 		)
 
 /obj/item/gun/energy/pulse/plasma/pistol/mechanicus
@@ -933,7 +933,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 	firemodes = list(
 		list(mode_name="ATAP", fire_delay=17, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol, charge_cost=500),
-		list(mode_name="HEDP", fire_delay = 44, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=2100),
+		list(mode_name="HEDP", fire_delay = 44, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=1100),
 		)
 
 /obj/item/gun/energy/pulse/plasma/pistol/toaster
@@ -958,7 +958,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 	firemodes = list(
 		list(mode_name="ATAP", fire_delay=16, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol, charge_cost=450),
-		list(mode_name="HEDP", fire_delay = 43, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=2000),
+		list(mode_name="HEDP", fire_delay = 43, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=800),
 		)
 
 /obj/item/gun/energy/pulse/plasma/pistol/glock
@@ -983,7 +983,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 	firemodes = list(
 		list(mode_name="ATAP", fire_delay=17, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol, charge_cost=600),
-		list(mode_name="HEDP", fire_delay = 44, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=2100),
+		list(mode_name="HEDP", fire_delay = 44, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=900),
 		)
 
 

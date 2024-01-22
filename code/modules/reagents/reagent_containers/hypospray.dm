@@ -164,9 +164,9 @@
 	starts_with = list(/datum/reagent/tramadol/oxycodone = 5)
 
 /obj/item/reagent_containers/hypospray/autoinjector/revive //this is ateopine in the wiki
-	name = "autoinjector (atepoine)"
+	name = "autoinjector (atepoine+stim)"
 	icon_state = "black"
-	starts_with = list(/datum/reagent/atepoine = 10)
+	starts_with = list(/datum/reagent/atepoine = 10, /datum/reagent/adrenaline = 2, /datum/reagent/dylovene = 2)
 
 /obj/item/reagent_containers/hypospray/autoinjector/adrenaline //this is adrenaline
 	name = "autoinjector (adrenaline)"

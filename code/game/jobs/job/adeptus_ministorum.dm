@@ -24,7 +24,7 @@
 	shotgun_skill = 6
 	lmg_skill = 6
 	smg_skill = 6
-	cultist_chance = 10
+	cultist_chance = 12
 
 
 
@@ -224,7 +224,7 @@
 	shotgun_skill = 10
 	lmg_skill = 10
 	smg_skill = 10
-	cultist_chance = 2
+	cultist_chance = 4
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -272,7 +272,7 @@
 	shotgun_skill = 10
 	lmg_skill = 10
 	smg_skill = 10
-	cultist_chance = 2
+	cultist_chance = 3
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -336,12 +336,12 @@
 	shotgun_skill = 10
 	lmg_skill = 10
 	smg_skill = 10
-	cultist_chance = 2
+	cultist_chance = 4
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Sister [current_name]")
+		H.fully_replace_character_name("Sister-Superior [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant)
 		H.set_quirk(new/datum/quirk/dead_inside) // the only thing the sisters of the orders millitant feel is the god emperor's light.
 		//"BUT THEY ARE DIVINE!!!" don't care, Sister superior is human, stop simping, im still giving them very GOOD stats.
@@ -373,7 +373,8 @@
 		H.vice = null
 		H.verbs += list(
 			/mob/living/carbon/human/proc/faithleaderclass)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle assigned to the Monastary, you serve both the Inquisition and Ecclesiarchy directly, though whom you truly serve is that of The Emperor who stands above all.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister-Superior of the Adepta Sororitas, charged with the sacred duty of purging alien, mutant, and heretic threats while safeguarding the sanctity of the holy monastery and the revered Deacon. Your formidable arsenal includes a consecrated bolter, a full set of power armor, and the radiant blessing of the Emperor's light. Unyielding in your devotion, you are bound by the orders of the Emperor, the High Lords of Terra, the Deacon, Canoness (if present), and the Holy Inquisition. In the absence of a Canoness, the mantle of leadership falls upon you, requiring you to oversee the training and proficiency of the Novitiates in both the arts of combat and the compassionate care of the faithful. Your vigilant watch extends beyond the battlefield, ensuring the unwavering dedication of your sisters to the righteous cause. May your faith shine as a beacon against the encroaching darkness, and may the Emperor guide your bolter and bless your endeavors in His holy name..</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You will be role-banned if you shoot the faithful for entering the Church. Assist the Deacon and Inquisitor in their ultimate goals. Be the symbol of the Sororitas. The blade in the dark. Inspire the pilgrims.</font></b></span>")
 
 /datum/job/hospitaller
 	title = "Sister Hospitaller"
@@ -402,7 +403,7 @@
 	shotgun_skill = 7
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 8
+	cultist_chance = 9
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -460,7 +461,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Novitae [current_name]")
+		H.fully_replace_character_name("Sister [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(12,15), rand(12,15), rand(12,15), rand (12,15)) //Has not begun their training with the sisters yet.
 		H.add_skills(rand(5,7),rand(5,7),rand(5,7),rand(1,3),rand(5,7)) //melee, ranged, med, eng, surgery

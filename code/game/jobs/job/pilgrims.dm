@@ -9,7 +9,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/penitent
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 70
+	cultist_chance = 80
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -38,7 +38,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/penitent
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 40
+	cultist_chance = 50
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -266,7 +266,6 @@ Pilgrim Fate System
 				to_chat(U,"<span class='goodmood'>A holy warrior of your chosen god, you work on behalf of the Ecclesiarchy(or the cult) as a slayer of the heretical and unfaithful. Face against the dark and protect your flock... for a price.</font></b></span>")
 				U.add_stats(rand(16,18), rand(14,16), rand(16,18), rand (10,12)) //veteran mercenary
 				new /obj/item/melee/trench_axe/glaive/adamantine(src.loc)
-				new /obj/item/reagent_containers/food/snacks/threebread(src.loc)
 				new /obj/item/clothing/suit/armor/brigandine(src.loc)
 				new /obj/item/clothing/head/helmet/hero(src.loc)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
@@ -309,7 +308,6 @@ Pilgrim Fate System
 					new /obj/item/clothing/suit/armor/vanpa(src.loc)
 				else
 					new /obj/item/ammo_magazine/c50(src.loc)
-				new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
 				if(prob(15))
 					new /obj/item/device/radio/headset/red_team(src.loc)
 					new /obj/item/card/id/key/middle/jail(src.loc)
@@ -454,7 +452,6 @@ Pilgrim Fate System
 			new /obj/item/clothing/mask/gas/half/cadianrespirator(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/cadian_uniform, slot_w_uniform)
 			new /obj/item/storage/backpack/satchel/warfare(src.loc)
-			new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
 			if(prob(15))
 				new /obj/item/clothing/suit/armor/whiteshield/pdf(src.loc)
 				new /obj/item/clothing/head/helmet/whiteshield/pdf(src.loc)
@@ -553,7 +550,6 @@ Pilgrim Fate System
 				new /obj/item/device/radio/headset/headset_sci(src.loc)
 				if(prob(25))
 					new /obj/item/device/radio/headset/blue_team/all(src.loc)
-				new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
 			else
@@ -580,7 +576,7 @@ Pilgrim Fate System
 	outfit_type = /decl/hierarchy/outfit/job/underboss
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 100
+	cultist_chance = 35
 	species_role = "Ogryn"
 
 	equip(var/mob/living/carbon/human/H)
@@ -622,29 +618,29 @@ Pilgrim Fate System
 */
 
 /datum/job/noble
-	title = "House Sondar Lord"
-	department_flag = PIL
+	title = "Vane Noble"
+	department_flag = SUP
 	total_positions = 2
 	spawn_positions = 2
 	open_when_dead = 0
 	announced = FALSE
-	supervisors = "House Sondar"
+	supervisors = "House Vane."
+	selection_color = "#315dd4"
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MAX
 	announced = 0
-	access = list(247, access_bar, access_village, access_daemon)
-	minimal_access = list(access_bar, access_village, access_daemon)
+	access = list(225,247,access_village,access_daemon)
 	minimal_player_age = 3
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/cargo/noble
 	latejoin_at_spawnpoints = TRUE
-	cultist_chance = 15
+	cultist_chance = 35
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.get_idcard()?.access = list(247, access_bar, access_village, access_daemon)
-		H.fully_replace_character_name("[current_name] Sondar")
+		H.get_idcard()?.access = list(225,247,access_village,access_daemon)
+		H.fully_replace_character_name("[current_name] Vane")
 		H.add_stats(rand(14,17), rand(14,17), rand(14,17), rand(12,16)) 
 		H.add_skills(rand(7,11),rand(7,11),rand(2,8),6,rand(2,8)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -652,7 +648,7 @@ Pilgrim Fate System
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.assign_random_quirk()
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are a noble to House Sondar and Heir it's estates including the Mansion, Agri-Farm and Trade Fleet, one of the few to survive the very brief and violent civil war that occurred in this city. Much of your family was massacred, some even ripped apart in the streets by mobs who were torn to pieces by artillery guns and lasfire -- all devoured in absolute carnage. Now it is only you left, years later. A new master of the house must be chosen. Will you be the one to bring House Sondar back into the flame?</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a loyal crew member to the Lord Captain and the head of the Vane dynasty, your noble title being granted by a letter of marque given to you by the Lord Trader inducting you into House Vane. You served directly to the Lord Captain years before they settled on Eipharius and helped the Lord Militant conquer the fringe, now your blade is dulled and you no longer find yourself serving on a voidship but instead in this accursed city of Messina.. </font></b></span>")
 
 
 /datum/job/pathfinder
@@ -692,12 +688,11 @@ Pilgrim Fate System
 	open_when_dead = 0
 	supervisors = "The Magos Biologis."
 	selection_color = "#848484"
-	access = list(access_bar,)
-	minimal_access = list(access_bar)
+	access = list(access_bar)
 	outfit_type = /decl/hierarchy/outfit/job/medicae
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 35
+	cultist_chance = 45
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -905,8 +900,8 @@ Pilgrim Fate System
     title = "Scavenger"
     department_flag = PIL
     social_class = SOCIAL_CLASS_MIN //these boys are gross
-    total_positions = 2
-    spawn_positions = 2
+    total_positions = 4
+    spawn_positions = 4
     supervisors = "You-yourself, don't listen-hear to man-things!"
     selection_color = "#848484"
     outfit_type = /decl/hierarchy/outfit/job/scavenger
@@ -966,7 +961,7 @@ Pilgrim Fate System
 	outfit_type = /decl/hierarchy/outfit/job/ganger
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 5
+	cultist_chance = 35
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM

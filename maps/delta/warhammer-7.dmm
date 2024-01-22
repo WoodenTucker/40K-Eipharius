@@ -1242,8 +1242,8 @@
 	icon_state = "paxe_on";
 	name = "power axe";
 	desc = "A massive, heavy power-axe, whoever made this truly intended this weapon to break through armor and cleave limbs with ease.";
-	force = 33;
-	force_wielded = 42
+	force = 40;
+	force_wielded = 48
 	},
 /turf/unsimulated/floor/necron_floor,
 /area/cadiaoutpost/oa/dungeon1)
@@ -4916,7 +4916,7 @@
 	desc = "A set of power claws that were meant to arrive when the General asked, the shipment was lost in the warp and who knows where they arrived.";
 	wielded_icon = "powerclaw-alt_mag";
 	force = 38;
-	force_wielded = 38
+	force_wielded = 47
 	},
 /turf/unsimulated/floor/necron_floor,
 /area/cadiaoutpost/oa/dungeon1)

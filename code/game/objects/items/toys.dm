@@ -327,8 +327,8 @@
 	slot_flags = SLOT_BELT | SLOT_BACK
 	sharp = 1
 	edge = 1
-	force = 25
-	force_wielded = 32
+	force = 35
+	force_wielded = 43
 	block_chance = 14
 	weapon_speed_delay = 8
 	sales_price = 10
@@ -337,8 +337,8 @@
 	name = "noble iron sword"
 	desc = "A mastercrafted iron sword with an incredible edge, a well aimed strike would pierce ceramite with ease."
 	slot_flags = SLOT_BELT | SLOT_BACK
-	force = 27
-	force_wielded = 35
+	force = 37
+	force_wielded = 45
 	block_chance = 18
 	weapon_speed_delay = 8
 	sales_price = 12

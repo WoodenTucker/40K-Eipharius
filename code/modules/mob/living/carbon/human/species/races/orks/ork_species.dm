@@ -7,15 +7,15 @@
 	deform = 'icons/mob/human_races/r_def_ork.dmi'
 	min_age = 1
 	max_age = 600
-	total_health = 200
+	total_health = 150
 	var/pain_power = 120
 	gluttonous = GLUT_ITEM_NORMAL
 	mob_size = MOB_LARGE
 	strength = STR_HIGH
 //	sexybits_location = BP_GROIN
-	species_flags = SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SLIP
-	brute_mod = 0.65
-	burn_mod = 0.65 
+	species_flags = SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SLIP
+	brute_mod = 0.75
+	burn_mod = 0.75 
 	base_auras = list(
 		/obj/aura/regenerating/human/ork
 		)

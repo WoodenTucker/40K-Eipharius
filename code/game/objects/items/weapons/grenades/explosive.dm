@@ -1,5 +1,6 @@
 /obj/item/projectile/bullet/pellet/fragment
 	damage = 45
+	armor_penetration = 44
 	range_step = 3 //controls damage falloff with distance. projectiles lose a "pellet" each time they travel this distance. Can be a non-integer.
 
 	base_spread = 0 //causes it to be treated as a shrapnel explosion instead of cone
@@ -15,10 +16,12 @@
 	damage = 60
 	range_step = 1 //controls damage falloff with distance. projectiles lose a "pellet" each time they travel this distance. Can be a non-integer.
 	range = 5
+	armor_penetration = 46
 
 /obj/item/projectile/bullet/pellet/fragment/weak
 	damage = 40
 	range_step = 3
+	armor_penetration = 40
 
 /obj/item/grenade/frag
 	name = "fragmentation grenade"
@@ -134,7 +137,7 @@
 /obj/mortar/gas/blight/New()
 	..()
 	create_reagents(10)
-	reagents.add_reagent(/datum/reagent/toxin/corrupting, 20)
+	reagents.add_reagent(/datum/reagent/toxin/corrupting, 60)
 	var/location = get_turf(src)
 	var/datum/effect/effect/system/smoke_spread/chem/S = new
 	S.attach(location)

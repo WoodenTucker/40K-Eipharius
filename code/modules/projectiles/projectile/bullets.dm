@@ -520,7 +520,7 @@
 /obj/item/projectile/bullet/rifle/shuriken/catapult
 	fire_sound = 'sound/weapons/gunshot/needler.ogg'
 	icon_state = "ion"
-	damage = 21
+	damage = 14
 	damage_type = BRUTE
 	armor_penetration = 44
 	penetration_modifier = 1
@@ -528,7 +528,7 @@
 /obj/item/projectile/bullet/rifle/shuriken/pistol
 	fire_sound = 'sound/weapons/gunshot/needler.ogg'
 	icon_state = "ion"
-	damage = 21
+	damage = 14
 	damage_type = BRUTE
 	armor_penetration = 44
 	penetration_modifier = 1

@@ -19,8 +19,8 @@
 	ingredients = list(/obj/item/organ/internal/brain)
 	special = TRUE
 
-/datum/rune_recipe/khorne/offer_brain/do_special(var/mob/living/carbon/user, var/obj/effect/cleanable/heretic_rune/rune)
-	SEND_SIGNAL(user, COMSIG_CULT_ADD_FAVOR, 10)
+/datum/rune_recipe/nurgle/offer_brain/do_special(var/mob/living/carbon/user, var/obj/effect/cleanable/heretic_rune/rune)
+	SEND_SIGNAL(user, COMSIG_CULT_ADD_FAVOR, 15)
 
 /datum/rune_recipe/nurgle/offer_gem
 	ingredients = list(/obj/item/stack/thrones)
@@ -38,6 +38,11 @@
 	name = "Nganga Rite"
 	ingredients = list(/obj/item/reagent_containers/food/snacks/meat/rat_meat)
 	product_path = /obj/structure/nganga
+
+/datum/rune_recipe/nurgle/radio
+	name = "Create Radio"
+	ingredients = list(/obj/item/device/radio/headset)
+	product_path = /obj/item/device/radio/headset/cult1
 
 /datum/rune_recipe/nurgle/uniform
 	name = "Uniform Rite"

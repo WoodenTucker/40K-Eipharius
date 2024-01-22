@@ -95,6 +95,17 @@
 	reagents.add_reagent(/datum/reagent/toxin/cyanide, 30) //volume changed to match chloral
 	update_icon()
 
+/obj/item/reagent_containers/glass/bottle/spice
+	name = "rejuv treatment"
+	desc = "A small bottle of spice -- a drug that can never be overdosed. But withdrawl symptoms are less then pleasant."
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "bottle-3"
+
+/obj/item/reagent_containers/glass/bottle/spice/New()
+	..()
+	reagents.add_reagent(/datum/reagent/spice, 100) //volume changed to match chloral
+	update_icon()
+
 
 /obj/item/reagent_containers/glass/bottle/stoxin
 	name = "soporific bottle"

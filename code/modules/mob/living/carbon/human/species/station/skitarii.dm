@@ -12,7 +12,7 @@
 	pixel_offset_y = -4
 	strength = STR_HIGH
 	radiation_mod = 0.01
-	species_flags = SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED
+	species_flags = SPECIES_FLAG_NO_EMBED
 	slowdown = -0.10
 	inherent_verbs = list(
 	/mob/living/carbon/human/skitarii/proc/giveskitstats,

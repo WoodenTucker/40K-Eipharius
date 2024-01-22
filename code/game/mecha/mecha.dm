@@ -1080,7 +1080,7 @@
 	return
 
 
-/obj/mecha/verb/force_eject()
+/* /obj/mecha/verb/force_eject()
 	if(exitable == 1)
 		set category = "Object"
 		set name = "Force Eject"
@@ -1089,7 +1089,7 @@
 		src.go_out()
 		return
 	else
-		to_chat(usr, "You can't exit the exosuit.")
+		to_chat(usr, "You can't exit the exosuit.") */
 
 
 
