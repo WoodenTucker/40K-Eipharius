@@ -6581,7 +6581,7 @@
 	},
 /area/cadiaoutpost/oa/service/chapel)
 "xm" = (
-/obj/effect/gibspawner/nurgle,
+/obj/effect/gibspawner/generic,
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "xo" = (
@@ -10347,7 +10347,7 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "KZ" = (
-/obj/effect/gibspawner/nurgle,
+/obj/effect/gibspawner/generic,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "La" = (
