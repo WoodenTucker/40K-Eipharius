@@ -139,7 +139,7 @@ other types of metals and chemistry for reagents).
 	materials = list(DEFAULT_WALL_MATERIAL = 30)
 	build_path = /obj/item/stock_parts/manipulator/pico
 	sort_string = "CAABC"
-	
+
 /datum/design/item/stock_part/femto_mani
 	id = "femto_mani"
 	req_tech = list(TECH_MATERIAL = 5, TECH_DATA = 3)
@@ -832,8 +832,8 @@ other types of metals and chemistry for reagents).
 	name = "Bag of Holding"
 	desc = "Using localized pockets of bluespace this bag prototype offers incredible storage capacity with the contents weighting nothing. It's a shame the bag itself is pretty heavy."
 	id = "bag_holding"
-	req_tech = list(TECH_BLUESPACE = 4, TECH_MATERIAL = 6)
-	materials = list("gold" = 3000, "diamond" = 1500, "uranium" = 250)
+	req_tech = list(TECH_BLUESPACE = 4, TECH_MATERIAL = 6, TECH_ILLEGAL = 8)
+	materials = list("gold" = 5000, "diamond" = 4500, "uranium" = 1250)
 	build_path = /obj/item/storage/backpack/holding
 	sort_string = "VAFAA"
 
@@ -1942,12 +1942,17 @@ CIRCUITS BELOW
 
 // (TECH_MATERIAL = 2, TECH_ENGINEERING = 2, TECH_PHORON = 1, TECH_POWER = 3, TECH_BLUESPACE = 1, TECH_BIO = 1, TECH_COMBAT = 1, TECH_MAGNET = 4, TECH_DATA = 1, TECH_ILLEGAL = 1)
 
+/*
+Find out the cause of why the armor isn't in-game when able, I'm assuming it's to do with tech levels so relook at it later (remove this message when it's fixed)
+Please also work on allowing armor to be more mass-produced, the mechaincum should be making a majority of their stuff for the guard (armor/weapons/ammo)
+A reminder that mechanicus cannot remove their armor for a majority of their roles, so please do not add armor for them.
+*/
 // ARMOR
 /datum/design/armor/rt
-	name = "Improved RT Cloak" // Mid Level mechanicus armor
+	name = "Improved RT Cloak"
 	id = "rtcloak"
-	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 5)
-	materials = list(DEFAULT_WALL_MATERIAL = 4000, "gold" = 400, "diamond" = 8500)
+	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 5, TECH_ILLEGAL = 6)
+	materials = list(DEFAULT_WALL_MATERIAL = 4000, "gold" = 4000, "diamond" = 4500)
 	build_path = /obj/item/clothing/suit/armor/rtcloak/mechanicus
 	sort_string = "XCAA"
 
@@ -1979,7 +1984,7 @@ CIRCUITS BELOW
 	name = "Improved Mercenary Carapace Armor"
 	id = "merccara"
 	req_tech = list(TECH_MATERIAL = 7, TECH_ENGINEERING = 6, TECH_COMBAT = 6)
-	materials = list(DEFAULT_WALL_MATERIAL = 8000, "diamond" = 7000)
+	materials = list(DEFAULT_WALL_MATERIAL = 14000, "diamond" = 5000)
 	build_path = /obj/item/clothing/suit/armor/guardsman/mercenary/carapace/mechanicus
 	sort_string = "XCAE"
 
@@ -2011,7 +2016,7 @@ CIRCUITS BELOW
 	name = "Improved Cadian Carapace Armor"
 	id = "guardcara"
 	req_tech = list(TECH_MATERIAL = 7, TECH_ENGINEERING = 6, TECH_COMBAT = 7)
-	materials = list(DEFAULT_WALL_MATERIAL = 12000, "diamond" = 7000)
+	materials = list(DEFAULT_WALL_MATERIAL = 12000, "diamond" = 5000)
 	build_path = /obj/item/clothing/suit/armor/guardsman/carapace/mechanicus
 	sort_string = "XCAI"
 
@@ -2031,13 +2036,14 @@ CIRCUITS BELOW
 	build_path = /obj/item/clothing/head/helmet/guardhelmet/carapace
 	sort_string = "XCBA"
 
-/datum/design/armor/teleport
+/* /datum/design/armor/teleport
 	name = "Reactive Teleporter Armor"
 	id = "teleportarmor" // High level mechanicus armor
 	req_tech = list(TECH_DATA = 7, TECH_ENGINEERING = 8, TECH_PHORON = 7, TECH_BLUESPACE = 10)
 	materials = list(DEFAULT_WALL_MATERIAL = 2000, "glass" = 2000, "diamond" = 16000, "phoron" = 6000)
 	build_path = /obj/item/clothing/suit/armor/reactive
 	sort_string = "XCWA"
+Mechanicus can't take off their armor at the moment (Only bondsman can so no point in giving them a unique armor */
 
 // WEAPONS
 /datum/design/item/galvanicrifle
@@ -2068,7 +2074,7 @@ CIRCUITS BELOW
 	name = "Melta Gun"
 	id = "melta"
 	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 4, TECH_POWER = 7, TECH_COMBAT = 5, TECH_PHORON = 5)
-	materials = list(DEFAULT_WALL_MATERIAL = 4000, "glass" = 4000, "diamond" = 16000, "phoron" = 4000)
+	materials = list(DEFAULT_WALL_MATERIAL = 4000, "glass" = 4000, "diamond" = 10000, "phoron" = 8000)
 	build_path = /obj/item/gun/projectile/meltagun
 	sort_string = "ZAAD"
 
@@ -2092,7 +2098,7 @@ CIRCUITS BELOW
 	name = "Garme Pattern Bolt Pistol"
 	id = "bpistol"
 	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 4, TECH_COMBAT = 4)
-	materials = list(DEFAULT_WALL_MATERIAL = 1600, "diamond" = 2500, "phoron" = 60)
+	materials = list(DEFAULT_WALL_MATERIAL = 1600, "diamond" = 3500, "phoron" = 160)
 	build_path = /obj/item/gun/projectile/bolter_pistol
 	sort_string = "ZACG"
 
@@ -2100,7 +2106,7 @@ CIRCUITS BELOW
 	name = "Drusian Pattern Bolt Pistol"
 	id = "bpistold"
 	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 5, TECH_COMBAT = 5)
-	materials = list(DEFAULT_WALL_MATERIAL = 800, "diamond" = 3500, "phoron" = 60)
+	materials = list(DEFAULT_WALL_MATERIAL = 1800, "diamond" = 4500, "phoron" = 260)
 	build_path = /obj/item/gun/projectile/bolter_pistol/inquis
 	sort_string = "ZACH"
 
@@ -2147,8 +2153,8 @@ CIRCUITS BELOW
 /datum/design/item/heavystubber/cognis
 	name = "Cognis Pattern Heavy Stubber"
 	id = "cognisheavy"
-	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 5, TECH_COMBAT = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 4000, "diamond" = 1700)
+	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 6, TECH_COMBAT = 4)
+	materials = list(DEFAULT_WALL_MATERIAL = 4000, "diamond" = 5700)
 	build_path = /obj/item/gun/projectile/automatic/heavystubber/cognis
 	sort_string = "ZACN"
 
@@ -2195,24 +2201,24 @@ CIRCUITS BELOW
 /datum/design/item/bolter/locke
 	name = "Locke Pattern Bolter"
 	id = "bolterlocke"
-	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 5, TECH_COMBAT = 5)
-	materials = list(DEFAULT_WALL_MATERIAL = 5000, "diamond" = 12000, "phoron" = 200)
+	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 5, TECH_COMBAT = 6)
+	materials = list(DEFAULT_WALL_MATERIAL = 5000, "diamond" = 19000, "phoron" = 200)
 	build_path = /obj/item/gun/projectile/lockebolter
 	sort_string = "ZACS"
 
 /datum/design/item/bolter/drusian
 	name = "Drusian Pattern Bolter"
 	id = "bolterdrusian"
-	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 6)
-	materials = list("diamond" = 17000, "phoron" = 200)
+	req_tech = list(TECH_MATERIAL = 8, TECH_ENGINEERING = 6, TECH_COMBAT = 8)
+	materials = list("diamond" = 25000, "phoron" = 200)
 	build_path = /obj/item/gun/projectile/lockebolter/drusian
 	sort_string = "ZACT"
 
 /datum/design/item/bolter/godwyn
 	name = "Godwyn Astartes Pattern Bolter"
 	id = "boltergodwyn"
-	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 5)
-	materials = list("diamond" = 22000, "phoron" = 400)
+	req_tech = list(TECH_MATERIAL = 10, TECH_ENGINEERING = 6, TECH_COMBAT = 10, TECH_PHORON = 8)
+	materials = list("diamond" = 29000, "phoron" = 400)
 	build_path = /obj/item/gun/projectile/boltrifle
 	sort_string = "ZACU"
 
@@ -2239,7 +2245,7 @@ CIRCUITS BELOW
 	materials = list(DEFAULT_WALL_MATERIAL = 1000, "uranium" = 2000)
 	build_path = /obj/item/ammo_magazine/radcarbine
 	sort_string = "ZAAAV"
-	
+
 /datum/design/item/ammo_magazine/radcarbine/radpistol
 	name = "Radium Pistol Magazine"
 	id = "radmagp"
@@ -2251,7 +2257,7 @@ CIRCUITS BELOW
 /datum/design/item/rclrifle
 	name = "Vraks Pattern Rocket Launcher"
 	id = "vrakslauncher"
-	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 4, TECH_COMBAT = 2)
+	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 4, TECH_COMBAT = 5)
 	materials = list(DEFAULT_WALL_MATERIAL = 2000, "diamond" = 3000)
 	build_path = /obj/item/gun/launcher/rcl_rifle
 	sort_string = "ZAAX"
@@ -2316,7 +2322,7 @@ CIRCUITS BELOW
 	name = "Ryza Pattern Hotshot Lasgun"
 	id = "ryza"
 	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 5, TECH_POWER = 6, TECH_COMBAT = 6)
-	materials = list(DEFAULT_WALL_MATERIAL = 1000, "glass" = 2000, "diamond" = 8000, "phoron" = 4000)
+	materials = list(DEFAULT_WALL_MATERIAL = 1500, "glass" = 2500, "diamond" = 9000, "phoron" = 5000)
 	build_path = /obj/item/gun/energy/las/hotshot
 	sort_string = "ZADE"
 
@@ -2344,7 +2350,7 @@ CIRCUITS BELOW
 	build_path = /obj/item/gun/energy/las/laspistol/militarum/lucius
 	sort_string = "ZADH"
 
-/datum/design/pulserifle
+/* /datum/design/pulserifle
 	name = "Tau Pulse Rifle"
 	id = "taurifle"
 	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 7, TECH_POWER = 7, TECH_COMBAT = 4, TECH_ILLEGAL = 7)
@@ -2399,15 +2405,16 @@ CIRCUITS BELOW
 	materials = list("glass" = 200, "diamond" = 15000, "phoron" = 4000)
 	build_path = /obj/item/gun/energy/pulse/plasma/pistol/glock
 	sort_string = "ZADK"
-
-
-// CONSUMABLE
+ */
+// Adding plasma in any function to be mass produced is stupid until plasma is reworked, at the moment plasma weapons on AP rounds can knockdown most mobs straight off the bat. Knockdown in most fights = death.
+// CONSUMABLE / GRENADES
+// Make sure to remember, grenades mass produced and mass detonated can cause lag so try not to make it easy.
 
 /datum/design/grenade/manhack
 	name = "Man Hack Grenade"
 	id = "manhacks"
-	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 7, TECH_POWER = 4, TECH_COMBAT = 6, TECH_BLUESPACE = 4, TECH_ILLEGAL = 3)
-	materials = list(DEFAULT_WALL_MATERIAL = 700, "diamond" = 1800, "phoron" = 1000)
+	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 7, TECH_POWER = 4, TECH_COMBAT = 5, TECH_BLUESPACE = 4, TECH_ILLEGAL = 5)
+	materials = list(DEFAULT_WALL_MATERIAL = 2000, "diamond" = 2000, "phoron" = 1000)
 	build_path = /obj/item/grenade/spawnergrenade/manhacks
 	sort_string = "XBAA"
 
@@ -2415,19 +2422,22 @@ CIRCUITS BELOW
 	name = "Krak Grenade"
 	id = "krak"
 	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 2, TECH_COMBAT = 3, TECH_PHORON = 3)
-	materials = list(DEFAULT_WALL_MATERIAL = 500, "diamond" = 500, "phoron" = 1000)
+	materials = list(DEFAULT_WALL_MATERIAL = 500, "diamond" = 500, "phoron" = 2000)
 	build_path = /obj/item/grenade/frag/high_yield/krak
 	sort_string = "XBAB"
-	
+
 /datum/design/grenade/krak2
 	name = "Mechanicus Krak Grenade"
 	id = "krak2"
-	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 3, TECH_COMBAT = 3, TECH_PHORON = 4)
-	materials = list("diamond" = 600, "phoron" = 1100)
+	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 3, TECH_COMBAT = 3, TECH_PHORON = 3)
+	materials = list(DEFAULT_WALL_MATERIAL = 2000, "diamond" = 1000, "phoron" = 4700)
 	build_path = /obj/item/grenade/frag/high_yield/krak2
 	sort_string = "XBAC"
 // AMMO
 
+// Ammo needs to be hard to produce en-masse if it's KP/AP/MS. Tiers of difficulty to obtain as follows
+// KP > MS > AP > Standard
+// Plasma ammo can be produced for the already existing content.
 /datum/design/item/agrisniperammo
 	name = "Agrinpinaa Sniper Ammo(14.5mm)"
 	id = "14.5mmm"
@@ -2480,7 +2490,7 @@ CIRCUITS BELOW
 	name = "Rifle Magazine(556 MS)"
 	id = "riflemagms"
 	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 4, TECH_COMBAT = 4)
-	materials = list(DEFAULT_WALL_MATERIAL = 400, "diamond" = 750)
+	materials = list(DEFAULT_WALL_MATERIAL = 600, "diamond" = 1250)
 	build_path = /obj/item/ammo_magazine/c556/ms
 	sort_string = "ZVAF"
 
@@ -2496,7 +2506,7 @@ CIRCUITS BELOW
 	name = "Battle Rifle Magazine(762 AP)"
 	id = "riflemag2ap"
 	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 3, TECH_COMBAT = 3)
-	materials = list("diamond" = 1000)
+	materials = list("diamond" = 1500)
 	build_path = /obj/item/ammo_magazine/a762/ap
 	sort_string = "ZVAG"
 
@@ -2504,7 +2514,7 @@ CIRCUITS BELOW
 	name = "Battle Rifle Magazine(762 KP)"
 	id = "riflemag2kp"
 	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 4, TECH_COMBAT = 4)
-	materials = list("diamond" = 2000)
+	materials = list("diamond" = 2500)
 	build_path = /obj/item/ammo_magazine/a762/kp
 	sort_string = "ZVAG"
 
@@ -2512,7 +2522,7 @@ CIRCUITS BELOW
 	name = "Battle Rifle Magazine(762 MS)"
 	id = "riflemag2ms"
 	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 4, TECH_COMBAT = 4)
-	materials = list(DEFAULT_WALL_MATERIAL = 450, "diamond" = 850)
+	materials = list(DEFAULT_WALL_MATERIAL = 750, "diamond" = 1350)
 	build_path = /obj/item/ammo_magazine/a762/ms
 	sort_string = "ZVAI"
 
@@ -2528,7 +2538,7 @@ CIRCUITS BELOW
 	name = "MG08 KP Stubber Magazine Box"
 	id = "mg08kp"
 	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 5, TECH_COMBAT = 5)
-	materials = list("diamond" = 3000)
+	materials = list(DEFAULT_WALL_MATERIAL = 300, "diamond" = 4000, "phoron" = 300)
 	build_path = /obj/item/ammo_magazine/box/a556/mg08/kp
 	sort_string = "ZVAJ"
 
@@ -2536,7 +2546,7 @@ CIRCUITS BELOW
 	name = "MG08 Stubber Magazine Box(MS)"
 	id = "mg08ms"
 	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 4, TECH_COMBAT = 4)
-	materials = list(DEFAULT_WALL_MATERIAL = 500, "diamond" = 1000)
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "diamond" = 2000)
 	build_path = /obj/item/ammo_magazine/box/a556/mg08/ms
 	sort_string = "ZVAK"
 
@@ -2560,7 +2570,7 @@ CIRCUITS BELOW
 	name = "Shotgun MS Slugs"
 	id = "shotgunmsslugs"
 	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 3, TECH_COMBAT = 4)
-	materials = list("diamond" = 850)
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "diamond" = 850)
 	build_path = /obj/item/ammo_box/shotgun/msslug
 	sort_string = "ZVAN"
 
@@ -2568,7 +2578,7 @@ CIRCUITS BELOW
 	name = "Shotgun KP Slugs"
 	id = "shotgunkpslugs"
 	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 4, TECH_COMBAT = 5)
-	materials = list("diamond" = 1700)
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "diamond" = 3700)
 	build_path = /obj/item/ammo_box/shotgun/kpslug
 	sort_string = "ZVAN"
 
@@ -2592,7 +2602,7 @@ CIRCUITS BELOW
 	name = "Rifle Handful(763 AP)"
 	id = "riflehandfulap"
 	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 3, TECH_COMBAT = 2)
-	materials = list("diamond" = 1000)
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "diamond" = 1000)
 	build_path = /obj/item/ammo_magazine/handful/brifle_handful/ap
 	sort_string = "ZVAP"
 
@@ -2600,7 +2610,7 @@ CIRCUITS BELOW
 	name = "Rifle Handful(763 KP)"
 	id = "riflehandfulkp"
 	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 4, TECH_COMBAT = 3)
-	materials = list("diamond" = 2000)
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "diamond" = 1200)
 	build_path = /obj/item/ammo_magazine/handful/brifle_handful/kp
 	sort_string = "ZVAP"
 
@@ -2608,7 +2618,7 @@ CIRCUITS BELOW
 	name = "Rifle Handful(763 MS)"
 	id = "riflehandfulms"
 	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 4, TECH_COMBAT = 3)
-	materials = list(DEFAULT_WALL_MATERIAL = 400, "diamond" = 300)
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "diamond" = 500)
 	build_path = /obj/item/ammo_magazine/handful/brifle_handful/ms
 	sort_string = "ZVAQ"
 
@@ -2744,8 +2754,8 @@ CIRCUITS BELOW
 /datum/design/item/rocket
 	name = "Vraks Pattern Rocket"
 	id = "rocket"
-	req_tech = list(TECH_PHORON = 3, TECH_ENGINEERING = 4, TECH_POWER = 3)
-	materials = list(DEFAULT_WALL_MATERIAL = 4000, "phoron" = 2000, "diamond" = 600)
+	req_tech = list(TECH_PHORON = 3, TECH_ENGINEERING = 4, TECH_POWER = 3, TECH_COMBAT = 5)
+	materials = list(DEFAULT_WALL_MATERIAL = 4000, "phoron" = 2500, "diamond" = 800)
 	build_path = /obj/item/ammo_casing/heat_shell
 	sort_string = "ZVBD"
 
@@ -2769,7 +2779,7 @@ CIRCUITS BELOW
 	name = "Bolt Pistol Magazine(KP)"
 	id = "bpmkp"
 	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 6, TECH_COMBAT = 4)
-	materials = list("diamond" = 1600, "phoron" = 200)
+	materials = list("diamond" = 2000, "phoron" = 300)
 	build_path = /obj/item/ammo_magazine/bolt_pistol_magazine/kp
 	sort_string = "ZVBG"
 
@@ -2777,22 +2787,22 @@ CIRCUITS BELOW
 	name = "Bolt Rifle Magazine"
 	id = "brm"
 	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 5, TECH_COMBAT = 3)
-	materials = list(DEFAULT_WALL_MATERIAL = 1000, "diamond" = 3000, "phoron" = 200)
+	materials = list(DEFAULT_WALL_MATERIAL = 3000, "diamond" = 4000, "phoron" = 500)
 	build_path = /obj/item/ammo_magazine/bolt_rifle_magazine
 	sort_string = "ZVBH"
 
 /datum/design/item/magbolter/kp
 	name = "Bolt Rifle Magazine(KP)"
 	id = "brmkp"
-	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 6, TECH_COMBAT = 5)
+	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 6)
 	materials = list("diamond" = 4000, "phoron" = 400)
 	build_path = /obj/item/ammo_magazine/bolt_rifle_magazine/kp
 	sort_string = "ZVBI"
 
 /datum/design/item/magpboltp/astartes
-	name = "Bolt Rifle Magazine(KP)"
+	name = "Bolt Pistol Magazine(KP)"
 	id = "brmkp"
-	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 6, TECH_COMBAT = 5)
+	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 6)
 	materials = list("diamond" = 3000, "phoron" = 300)
 	build_path = /obj/item/ammo_magazine/bolt_pistol_magazine/astartes
 	sort_string = "ZVBJ"
@@ -2800,7 +2810,7 @@ CIRCUITS BELOW
 /datum/design/item/magbolter/astartes
 	name = "Bolt Rifle Magazine(KP)"
 	id = "brmkp"
-	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 6, TECH_COMBAT = 5)
+	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 6)
 	materials = list("diamond" = 6000, "phoron" = 600)
 	build_path = /obj/item/ammo_magazine/bolt_rifle_magazine_astartes
 	sort_string = "ZVBK"
@@ -2817,7 +2827,7 @@ CIRCUITS BELOW
 	name = "Hotshot Power Pack"
 	id = "hotshotpowerpack"
 	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 4, TECH_POWER = 5)
-	materials = list(DEFAULT_WALL_MATERIAL = 800, "diamond" = 2000, "phoron" = 400)
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "diamond" = 3000, "phoron" = 600)
 	build_path = /obj/item/cell/lasgun/hotshot
 	sort_string = "ZVDB"
 
