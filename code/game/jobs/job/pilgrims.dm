@@ -629,7 +629,7 @@ Pilgrim Fate System
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MAX
 	announced = 0
-	access = list(247,355,268,225,267,268,269,270,355,271,272,273,access_bar,access_village,access_daemon)
+	access = list(225,247,access_village,access_daemon)
 	minimal_player_age = 3
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/cargo/noble
@@ -639,7 +639,7 @@ Pilgrim Fate System
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.get_idcard()?.access = list(247, access_bar, access_village, access_daemon)
+		H.get_idcard()?.access = list(225,247,access_village,access_daemon)
 		H.fully_replace_character_name("[current_name] Vane")
 		H.add_stats(rand(14,17), rand(14,17), rand(14,17), rand(12,16)) 
 		H.add_skills(rand(7,11),rand(7,11),rand(2,8),6,rand(2,8)) //melee, ranged, med, eng, surgery

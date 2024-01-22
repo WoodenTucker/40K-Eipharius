@@ -51,7 +51,7 @@
 	supervisors = "House Vane."
 	selection_color = "#315dd4"
 	latejoin_at_spawnpoints = TRUE
-	access = list(247, access_hydroponics, access_bar, access_kitchen,access_village, access_grox)
+	access = list(225,247,access_village,access_daemon)
 	minimal_access = list(access_hydroponics, access_village, access_kitchen, access_grox)
 //	alt_titles = list("Hydroponicist")
 	outfit_type = /decl/hierarchy/outfit/job/service/gardener
@@ -70,7 +70,7 @@
 		H.verbs += list(
 			/mob/living/carbon/human/proc/hsclass)
 		H.fully_replace_character_name("[current_name]")
-		H.get_idcard()?.access = list(247, access_hydroponics, access_bar, access_kitchen,access_village, access_grox)
+		H.get_idcard()?.access = list(225,247,access_village,access_daemon)
 		H.add_stats(rand(15,17), rand(14,16), rand(15,16), rand(8,14)) //well fed and robust
 		H.add_skills(rand(7,10),rand(6,10),rand(3,5),rand(2,4),3) //farmers are handy
 		H.assign_random_quirk()

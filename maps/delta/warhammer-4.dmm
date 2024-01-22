@@ -7788,16 +7788,20 @@
 	color = "#36261B"
 	},
 /obj/item/card/id/key/super/daemon{
-	name = "Strange Key"
+	name = "Strange Key";
+	access = list(247,355,268,225,267,268,269,270,355,271,272,273)
 	},
 /obj/item/card/id/key/super/daemon{
-	name = "Strange Key"
+	name = "Strange Key";
+	access = list(247,355,268,225,267,268,269,270,355,271,272,273)
 	},
 /obj/item/card/id/key/super/daemon{
-	name = "Strange Key"
+	name = "Strange Key";
+	access = list(247,355,268,225,267,268,269,270,355,271,272,273)
 	},
 /obj/item/card/id/key/super/daemon{
-	name = "Strange Key"
+	name = "Strange Key";
+	access = list(247,355,268,225,267,268,269,270,355,271,272,273)
 	},
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 5
@@ -9429,7 +9433,6 @@
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/inn)
 "HH" = (
-/obj/item/card/id/key/grand/noble,
 /obj/structure/table/woodentable{
 	color = "#36261B"
 	},
@@ -9437,7 +9440,8 @@
 	pixel_y = 30
 	},
 /obj/item/card/id/key/super/daemon{
-	name = "Strange Key"
+	name = "Strange Key";
+	access = list(247,355,268,225,267,268,269,270,355,271,272,273)
 	},
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 5
@@ -11754,13 +11758,17 @@
 	icon_state = "wood_1tilethick";
 	dir = 4
 	},
-/obj/item/card/id/key/grand/noble,
-/obj/item/card/id/key/grand/noble,
-/obj/item/card/id/key/grand/noble,
-/obj/item/card/id/key/grand/noble,
 /obj/item/card/id/key/super/daemon{
-	name = "Strange Key"
+	name = "Strange Key";
+	access = list(247,355,268,225,267,268,269,270,355,271,272,273)
 	},
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key";
+	access = list(247,355,268,225,267,268,269,270,355,271,272,273)
+	},
+/obj/item/device/radio/headset/heads/rt,
+/obj/item/device/radio/headset/heads/rt,
+/obj/item/device/radio/headset/heads/rt,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "Qm" = (
@@ -11975,13 +11983,12 @@
 	color = "#36261B"
 	},
 /obj/item/card/id/key/super/daemon{
-	name = "Strange Key"
+	name = "Strange Key";
+	access = list(247,355,268,225,267,268,269,270,355,271,272,273)
 	},
 /obj/item/card/id/key/super/daemon{
-	name = "Strange Key"
-	},
-/obj/item/card/id/key/super/daemon{
-	name = "Strange Key"
+	name = "Strange Key";
+	access = list(247,355,268,225,267,268,269,270,355,271,272,273)
 	},
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 5
@@ -14218,6 +14225,14 @@
 	color = "#36261B"
 	},
 /obj/item/clothing/under/rank/victorian/blred,
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key";
+	access = list(247,355,268,225,267,268,269,270,355,271,272,273)
+	},
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key";
+	access = list(247,355,268,225,267,268,269,270,355,271,272,273)
+	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "YQ" = (

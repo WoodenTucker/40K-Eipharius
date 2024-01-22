@@ -5079,7 +5079,7 @@
 /area/cadiaoutpost/oa/farm)
 "ehe" = (
 /obj/machinery/door/unpowered/inn/berryfarm{
-	req_one_access = list(247);
+	req_one_access = list(247,225);
 	name = "the farmhouse"
 	},
 /obj/structure/banner/blue{
@@ -5554,7 +5554,7 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "eAY" = (
 /obj/machinery/door/unpowered/inn/berryfarm{
-	req_one_access = list(247);
+	req_one_access = list(247,225);
 	name = "the farmhouse"
 	},
 /turf/simulated/floor/darksteel_floor{
@@ -6919,16 +6919,16 @@
 /obj/random/loot/randomitemtown,
 /obj/random/loot/randomitemtown,
 /obj/item/card/id/key/super/daemon{
-	name = "Strange Key"
+	name = "Strange Key";
+	access = list(247,355,268,225,267,268,269,270,355,271,272,273)
 	},
 /obj/item/card/id/key/super/daemon{
-	name = "Strange Key"
+	name = "Strange Key";
+	access = list(247,355,268,225,267,268,269,270,355,271,272,273)
 	},
 /obj/item/card/id/key/super/daemon{
-	name = "Strange Key"
-	},
-/obj/item/card/id/key/super/daemon{
-	name = "Strange Key"
+	name = "Strange Key";
+	access = list(247,355,268,225,267,268,269,270,355,271,272,273)
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/farm)
@@ -7433,7 +7433,7 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "gbl" = (
 /obj/machinery/door/unpowered/inn/berryfarm{
-	req_one_access = list(247);
+	req_one_access = list(247,225);
 	name = "the farmhouse"
 	},
 /turf/simulated/floor/factory_floor,
@@ -11767,7 +11767,7 @@
 /area/cadiaoutpost/oa/bridge/hallway)
 "jtg" = (
 /obj/machinery/door/unpowered/inn{
-	req_one_access = list(247);
+	req_one_access = list(247,225);
 	name = "House Sondar Door"
 	},
 /turf/simulated/floor/factory_floor,
@@ -14883,9 +14883,6 @@
 	},
 /obj/item/ammo_box/shotgun,
 /obj/item/gun/projectile/shotgun/doublebarrel,
-/obj/item/card/id/key/super/daemon{
-	name = "Strange Key"
-	},
 /obj/item/card/id/key/super/daemon{
 	name = "Strange Key"
 	},
@@ -18448,7 +18445,7 @@
 /area/cadiaoutpost/oa/villageinside)
 "oXl" = (
 /obj/machinery/door/unpowered/inn/berryfarm{
-	req_one_access = list(247);
+	req_one_access = list(247,225);
 	name = "the farmhouse"
 	},
 /turf/simulated/floor/tiled{
@@ -22023,7 +22020,7 @@
 /area/cadiaoutpost/oa/service/chapel)
 "rSa" = (
 /obj/machinery/door/unpowered/inn/berryfarm{
-	req_one_access = list(247);
+	req_one_access = list(247,225);
 	name = "the farmhouse"
 	},
 /turf/simulated/floor/darksteel_floor,
@@ -26621,7 +26618,7 @@
 /obj/machinery/door/unpowered/administratum{
 	maxhealth = 5000;
 	name = "Trader Bazaar";
-	req_one_access = list(225)
+	req_one_access = list(247,225)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/farm)
