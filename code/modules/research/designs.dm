@@ -2203,7 +2203,7 @@ CIRCUITS BELOW
 /datum/design/item/bolter/drusian
 	name = "Drusian Pattern Bolter"
 	id = "bolterdrusian"
-	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 6)
+	req_tech = list(TECH_MATERIAL = 7, TECH_ENGINEERING = 6, TECH_COMBAT = 6)
 	materials = list("diamond" = 17000, "phoron" = 200)
 	build_path = /obj/item/gun/projectile/lockebolter/drusian
 	sort_string = "ZACT"
