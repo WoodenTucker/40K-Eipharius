@@ -582,48 +582,48 @@ DOORS HERE
 	icon_state = "door1"
 	autoclose = 1
 	normalspeed = 0
-	req_one_access = list(access_tavroom1)
+	req_one_access = list(access_hab2_1)
 	maxhealth = 900
 
 /obj/machinery/door/unpowered/newmap/hab2/room2
 	name = "Hab 2 - Room 2"
 	maxhealth = 800
-	req_one_access = list(access_hab1_2)
+	req_one_access = list(access_hab2_2)
 
 /obj/machinery/door/unpowered/newmap/hab2/room3
 	name = "Hab 2 - Room 3"
 	maxhealth = 800
-	req_one_access = list(access_hab1_3)
+	req_one_access = list(access_hab2_3)
 
 /obj/machinery/door/unpowered/newmap/hab2/room4
 	name = "Hab 2 - Room 4"
 	maxhealth = 800
-	req_one_access = list(access_hab1_4)
+	req_one_access = list(access_hab2_4)
 
 /obj/machinery/door/unpowered/newmap/hab2/room5
 	name = "Hab 2 - Room 5"
 	maxhealth = 800
-	req_one_access = list(access_hab1_5)
+	req_one_access = list(access_hab2_5)
 
 /obj/machinery/door/unpowered/newmap/hab2/room6
 	name = "Hab 2 - Room 6"
 	maxhealth = 800
-	req_one_access = list(access_hab1_6)
+	req_one_access = list(access_hab2_6)
 
 /obj/machinery/door/unpowered/newmap/hab2/room7
 	name = "Hab 2 - Room 7"
 	maxhealth = 800
-	req_one_access = list(access_hab1_7)
+	req_one_access = list(access_hab2_7)
 
 /obj/machinery/door/unpowered/newmap/hab2/room8
 	name = "Hab 2 - Room 8"
 	maxhealth = 800
-	req_one_access = list(access_hab1_8)
+	req_one_access = list(access_hab2_8)
 
 /obj/machinery/door/unpowered/newmap/hab2/room9
 	name = "Hab 2 - Room 9"
 	maxhealth = 800
-	req_one_access = list(access_hab1_9)
+	req_one_access = list(access_hab2_9)
 
 
 /////  INN /////

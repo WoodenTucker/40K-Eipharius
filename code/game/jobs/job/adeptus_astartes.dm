@@ -39,10 +39,8 @@
 	species_role = "Astartes"
 	cultist_chance = 0
 
-	equip(var/mob/living/carbon/human/H)
-		var/current_name = H.real_name
+	equip(var/mob/living/carbon/human/astartes/H)
 		..()
-		H.fully_replace_character_name("Brother [current_name]")
 		H.verbs +=  list(
 		/mob/living/carbon/human/proc/astachaos,
 		/mob/living/carbon/human/proc/astacharge,
