@@ -97,8 +97,8 @@
 	title = "Xeno Mercenary"
 	department_flag = SUP
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "The Rogue Trader and House Vane"
 	selection_color = "#315dd4"
 	latejoin_at_spawnpoints = TRUE

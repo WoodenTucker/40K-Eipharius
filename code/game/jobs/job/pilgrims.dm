@@ -900,8 +900,8 @@ Pilgrim Fate System
     title = "Scavenger"
     department_flag = PIL
     social_class = SOCIAL_CLASS_MIN //these boys are gross
-    total_positions = 2
-    spawn_positions = 2
+    total_positions = 4
+    spawn_positions = 4
     supervisors = "You-yourself, don't listen-hear to man-things!"
     selection_color = "#848484"
     outfit_type = /decl/hierarchy/outfit/job/scavenger

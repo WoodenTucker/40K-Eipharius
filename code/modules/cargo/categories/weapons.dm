@@ -3,17 +3,17 @@
 
 /datum/cargo_entry/weapon/lasgun
 	name = "Kantrael Lasgun"
-	cost = 90
+	cost = 95
 	item_path = /obj/item/gun/energy/las/lasgun
 
 /datum/cargo_entry/weapon/luclas
 	name = "Lucius Lasgun"
-	cost = 110
+	cost = 130
 	item_path = /obj/item/gun/energy/las/lasgun/lucius
 
 /datum/cargo_entry/weapon/catbine
 	name = "Catachan Carbine"
-	cost = 120
+	cost = 115
 	item_path = /obj/item/gun/energy/las/lasgun/catachan
 
 /datum/cargo_entry/weapon/acca
@@ -23,22 +23,22 @@
 
 /datum/cargo_entry/weapon/hotshot
 	name = "Ryza Pattern Hot-Shot Lasgun"
-	cost = 290
+	cost = 310
 	item_path = /obj/item/gun/energy/las/hotshot
 
 /datum/cargo_entry/weapon/hotshot/krieg
 	name = "Type XIV Lasgun Heavy"
-	cost = 300
+	cost = 315
 	item_path = /obj/item/gun/energy/las/hotshot/krieg
 
 /datum/cargo_entry/weapon/longlas
 	name = "M35 Longlas"
-	cost = 220
+	cost = 260
 	item_path = /obj/item/gun/energy/las/lasgun/longlas
 
 /datum/cargo_entry/weapon/longlas
 	name = "Krieg Pattern Longlas"
-	cost = 225
+	cost = 265
 	item_path = /obj/item/gun/energy/las/lasgun/longlas/krieg
 
 /datum/cargo_entry/weapon/stubrifle
@@ -138,32 +138,32 @@
 
 /datum/cargo_entry/weapon/lockebolter
 	name = "Locke Bolter"
-	cost = 260
+	cost = 300
 	item_path = /obj/item/gun/projectile/lockebolter
 
 /datum/cargo_entry/weapon/drusianbolter
 	name = "Drusian Bolter"
-	cost = 330
+	cost = 360
 	item_path = /obj/item/gun/projectile/lockebolter/drusian
 
 /datum/cargo_entry/weapon/plasmapistol
 	name = "Plasma Pistol"
-	cost = 302
+	cost = 372
 	item_path = /obj/item/gun/energy/pulse/plasma/pistol
 
 /datum/cargo_entry/weapon/plasmarifle
 	name = "Plasma Rifle"
-	cost = 358
+	cost = 408
 	item_path = /obj/item/gun/energy/pulse/plasma/rifle
 
 /datum/cargo_entry/weapon/meltarifle
 	name = "Melta Gun"
-	cost = 510
+	cost = 560
 	item_path = /obj/item/gun/projectile/meltagun
 
 /datum/cargo_entry/weapon/flamer
 	name = "Flamer"
-	cost = 300
+	cost = 350
 	item_path = /obj/item/gun/projectile/automatic/flamer
 
 /datum/cargo_entry/weapon/shittylaspistol
@@ -253,25 +253,25 @@ datum/cargo_entry/weapon/accapistol
 
 /datum/cargo_entry/weapon/bolterpistol
 	name = "Bolter Pistol"
-	cost = 116
+	cost = 136
 	item_path = /obj/item/gun/projectile/bolter_pistol
 
 /datum/cargo_entry/weapon/bolterpistoldrusian
 	name = "Drusian Bolter Pistol"
-	cost = 166
+	cost = 206
 	item_path = /obj/item/gun/projectile/bolter_pistol/inquis
 
 /datum/cargo_entry/weapon/fragg
 	name = "Fragmentation Grenade"
-	cost = 38
+	cost = 49
 	item_path = /obj/item/grenade/frag/high_yield/homemade
 
 /datum/cargo_entry/weapon/incing
 	name = "Incinedary Grenade"
-	cost = 44
+	cost = 51
 	item_path = /obj/item/grenade/fire
 
 /datum/cargo_entry/weapon/krak
 	name = "Krak"
-	cost = 42
+	cost = 47
 	item_path = /obj/item/grenade/frag/high_yield/krak

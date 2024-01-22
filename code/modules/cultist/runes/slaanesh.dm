@@ -10,6 +10,11 @@
 		var/datum/heretic_deity/slaanesh/N = GOD(GOD_SLAANESH)
 		N.join_request(target)
 
+/datum/rune_recipe/slaanesh/radio
+	name = "Create Radio"
+	ingredients = list(/obj/item/device/radio/headset)
+	product_path = /obj/item/device/radio/headset/cult2
+
 /datum/rune_recipe/slaanesh/knife
 	name = "Skinning Knife"
 	ingredients = list(/obj/item/melee/sword/combat_knife)

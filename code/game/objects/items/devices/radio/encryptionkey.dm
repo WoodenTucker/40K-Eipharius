@@ -172,6 +172,25 @@
 	channels = list("Command" = 1, "Militarum" =1, "Vox" = 1)
 	syndie = 1
 
+/obj/item/device/encryptionkey/headset_sec2
+	name = "guardsmen com-linked encryption key"
+	icon_state = "sec_cypherkey"
+	channels = list("Command" = 1, "Militarum" =1, "Frateris" = 1, "Vox" = 1)
+	syndie = 1
+
+// CULT KEYS
+/obj/item/device/encryptionkey/cult1
+	name = "guardsmen com-linked encryption key"
+	icon_state = "sec_cypherkey"
+	channels = list("Alpha" = 1)
+	syndie = 1
+
+/obj/item/device/encryptionkey/cult2
+	name = "guardsmen com-linked encryption key"
+	icon_state = "sec_cypherkey"
+	channels = list("Medical" = 1)
+	syndie = 1
+
 //unused
 /obj/item/device/encryptionkey/headset_red
 	name = "red radio encryption key"

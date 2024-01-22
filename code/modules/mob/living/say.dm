@@ -11,7 +11,7 @@ var/list/department_radio_keys = list(
 	  ":e" = "Mechanicus", ".e" = "Mechanicus",
 	  ":s" = "Frateris",	".s" = "Frateris",
 	  ":w" = "whisper",		".w" = "whisper",
-	  ":t" = "Mercenary",	".t" = "Mercenary",
+	  ":t" = "Supply",	".t" = "Supply",
 	  ":x" = "Tyranids",		".x" = "Tyranids",
 	  ":u" = "Magistratum",		".u" = "Magistratum",
 	  ":v" = "Militarum",		".v" = "Militarum",

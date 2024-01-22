@@ -15,6 +15,11 @@
 	ingredients = list(/obj/item/organ/internal/eyes/bioprinted, /obj/item/clothing)
 	special = TRUE
 
+/datum/rune_recipe/tzeentch/radio
+	name = "Create Radio"
+	ingredients = list(/obj/item/device/radio/headset)
+	product_path = /obj/item/device/radio/headset/cult2
+
 /datum/rune_recipe/tzeentch/cloth
 	name = "Clothing Rite"
 	ingredients = list(/obj/item/newore/gems/emerald)
