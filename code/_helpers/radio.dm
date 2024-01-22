@@ -220,7 +220,7 @@ var/list/DEPT_FREQS = list(AI_FREQ, COMM_FREQ, ENG_FREQ, MED_FREQ, INQ_FREQ, SEC
 		if (ENG_FREQ)
 			return "engradio"
 
-		if (SCI_FREQ, HIVE_FREQ)
+		if (SCI_FREQ, HIVE_FREQ, SUP_FREQ)
 			return "sciradio"
 
 		if (MED_FREQ)
@@ -228,10 +228,10 @@ var/list/DEPT_FREQS = list(AI_FREQ, COMM_FREQ, ENG_FREQ, MED_FREQ, INQ_FREQ, SEC
 
 		if (EXP_FREQ)
 			return "EXPradio"
-
+/*
 		if (SUP_FREQ)	// cargo/supply
 			return "supradio"
-
+*/
 		if (SRV_FREQ)	// service
 			return "srvradio"
 

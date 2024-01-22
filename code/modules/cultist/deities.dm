@@ -8,6 +8,7 @@
 						/datum/rune_recipe/khorne/offer_bioprinted,
 						/datum/rune_recipe/khorne/offer_heart,
 						/datum/rune_recipe/khorne/offer_gem,
+						/datum/rune_recipe/khorne/radio,
 						/datum/rune_recipe/khorne/knife_teeth,
 						/datum/rune_recipe/khorne/conversion)
 	possible_blessings = list(
@@ -50,6 +51,7 @@
 						/datum/rune_recipe/nurgle/offer_brain,
 						/datum/rune_recipe/nurgle/toughen,
 						/datum/rune_recipe/nurgle/nganga,
+						/datum/rune_recipe/nurgle/radio,
 						/datum/rune_recipe/nurgle/uniform,
 						/datum/rune_recipe/nurgle/plate,
 						/datum/rune_recipe/nurgle/mask,
@@ -72,6 +74,7 @@
 	faction = "Chaos"
 	rune_recipes = list(/datum/rune_recipe/slaanesh/conversion,
 						/datum/rune_recipe/slaanesh/arm,
+						/datum/rune_recipe/slaanesh/radio,
 						/datum/rune_recipe/slaanesh/escape,
 						/datum/rune_recipe/slaanesh/dagger,
 						/datum/rune_recipe/slaanesh/knife)
@@ -94,6 +97,7 @@
 						/datum/rune_recipe/tzeentch/cloth3,
 						/datum/rune_recipe/tzeentch/cloth4,
 						/datum/rune_recipe/tzeentch/cloth,
+						/datum/rune_recipe/tzeentch/radio,
 						/datum/rune_recipe/tzeentch/illusion,
 						/datum/rune_recipe/tzeentch/omniscience,
 						/datum/rune_recipe/tzeentch/skinless,

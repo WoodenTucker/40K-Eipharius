@@ -46,8 +46,8 @@
 /datum/job/hydro
 	title = "Vane Bondsman"
 	department_flag = SUP
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "House Vane."
 	selection_color = "#315dd4"
 	latejoin_at_spawnpoints = TRUE

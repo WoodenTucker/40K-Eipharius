@@ -251,6 +251,29 @@
 	slot_flags = SLOT_EARS
 	w_class = ITEM_SIZE_SMALL
 
+// CULT VOX
+/obj/item/device/radio/headset/cult1
+	icon = 'icons/obj/radio.dmi'
+	name = "Standard Issue Vox"
+	desc = "A stripped down version of the standard Guard issue vox. This one has been upgraded with a com-link"
+	ks1type = /obj/item/device/encryptionkey/red
+	ks2type = /obj/item/device/encryptionkey/cult1
+	icon_state = "sec_headset"
+	item_state = "sec_headset"
+	slot_flags = SLOT_EARS
+	w_class = ITEM_SIZE_SMALL
+
+/obj/item/device/radio/headset/cult2
+	icon = 'icons/obj/radio.dmi'
+	name = "Standard Issue Vox"
+	desc = "A stripped down version of the standard Guard issue vox. This one has been upgraded with a com-link"
+	ks1type = /obj/item/device/encryptionkey/red
+	ks2type = /obj/item/device/encryptionkey/cult2
+	icon_state = "sec_headset"
+	item_state = "sec_headset"
+	slot_flags = SLOT_EARS
+	w_class = ITEM_SIZE_SMALL
+
 //IMPORTANT - NEEDS TWEAKING DEPENDING ON IF ERTS ARE PLANNED TO BE USED
 /obj/item/device/radio/headset/ert // Nobles
 	name = "Standard Issue Vox"

@@ -39,6 +39,11 @@
 	ingredients = list(/obj/item/reagent_containers/food/snacks/meat/rat_meat)
 	product_path = /obj/structure/nganga
 
+/datum/rune_recipe/nurgle/radio
+	name = "Create Radio"
+	ingredients = list(/obj/item/device/radio/headset)
+	product_path = /obj/item/device/radio/headset/cult1
+
 /datum/rune_recipe/nurgle/uniform
 	name = "Uniform Rite"
 	ingredients = list(/obj/item/clothing/under/guard/uniform)

@@ -36,7 +36,11 @@
 			new /obj/item/melee/sword/broadsword/adamantine(get_turf(rune))
 		if(5)
 			new /obj/item/melee/trench_axe/bardiche/beast(get_turf(rune))
-			
+
+/datum/rune_recipe/khorne/radio
+	name = "Create Radio"
+	ingredients = list(/obj/item/device/radio/headset)
+	product_path = /obj/item/device/radio/headset/cult1
 
 /datum/rune_recipe/khorne/conversion
 	name = "Conversion Rite"
