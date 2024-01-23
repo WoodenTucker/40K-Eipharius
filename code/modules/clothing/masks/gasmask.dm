@@ -103,12 +103,14 @@
 	desc = "A half augmented mechanical visage, doesn't make wonders for your charisma, but does help you survive and thrive."
 	icon_state = "techpriest"
 	item_state = "techpriest"
+	down_icon_state = "techpriest"
 	flash_protection = FLASH_PROTECTION_MAJOR
 	siemens_coefficient = 0.7
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
 	body_parts_covered = FACE|EYES|HEAD
 	canremove = 0
 	unacidable = 1
+	pull_mask = 1
 
 /obj/item/clothing/mask/gas/techpriest/skitarius
 	name = "mechanized visage"

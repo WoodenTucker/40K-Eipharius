@@ -135,20 +135,20 @@
 	wielded_item_state = "snipeluscius-wielded"
 
 /obj/item/gun/projectile/thrower
-	name = "Lead Thrower"
-	desc = "The Lead Thrower is a primitive effort in capable calibers on a small scale. It will take forever to reload, but if it hits, it will be devastating. Chambered in Bolter .75"
+	name = "Boscolet Frontiersman"
+	desc = "Boscolet Frontiersman is an incredibly advanced single-shot magrail hunting rifle developed by the local nomadic tribes of Greater Messina. The Messian Tribes developed the weapon after studying Seolite artifacts that over generations were guarded and kept secret, eventually becoming great heirlooms of power. They say there is only a handful of these rifles left..."
 	icon = 'icons/obj/weapons/gun/projectile.dmi'
 	icon_state = "musket"
 	item_state = "musket"
 	w_class = ITEM_SIZE_HUGE
 	force = 10
 	slot_flags = SLOT_BACK
-	caliber = ".75"
+	caliber = "14.5mm"
 	screen_shake = 2.5
 	handle_casings = HOLD_CASINGS
 	load_method = SINGLE_CASING|SINGLE_LOAD
 	max_shells = 1
-	ammo_type = /obj/item/ammo_casing/bolter
+	ammo_type = /obj/item/ammo_casing/a145/apds/bos
 	one_hand_penalty = 1.5
 	accuracy = 1.5
 	var/bolt_open = 0
@@ -156,7 +156,7 @@
 	bulletinsert_sound = 'sound/weapons/guns/interact/arm_cock.ogg'
 	fire_sound = 'sound/weapons/guns/fire/musket_fire.ogg'
 	gun_type = GUN_SNIPER
-	sales_price = 2
+	sales_price = 0
 
 /obj/item/gun/projectile/heavysniper/update_icon()
 	..()

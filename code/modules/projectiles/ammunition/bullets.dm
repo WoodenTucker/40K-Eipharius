@@ -257,6 +257,11 @@
 	desc = "A 14.5mm Armour Piercing Discarding Sabot shell."
 	projectile_type = /obj/item/projectile/bullet/rifle/a145/apds
 
+/obj/item/ammo_casing/a145/apds/bos
+	name = "Boscelot shell casing"
+	desc = "An Armour Piercing Discarding Sabot shell."
+	projectile_type = /obj/item/projectile/bullet/rifle/a145/apds/bos
+
 /obj/item/ammo_casing/a762
 	desc = "A 7.62mm bullet casing."
 	caliber = "a762"
