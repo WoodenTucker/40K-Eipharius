@@ -786,7 +786,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		if(plasma_overheat >= 150)
 			to_chat(user, "CATASTROPHIC FAILURE IMMINENT.")
 		..()
-		plasma_overheat += 15 // adding 15 heat for every pulling of the trigger (learn not to spam the fucking gun)
+		plasma_overheat += 30 // adding 30 heat for every pulling of the trigger (learn not to spam the fucking gun)
 	Process()
 		..()
 		if(plasma_overheat >= 0)
@@ -795,7 +795,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 			plasma_overheat = 0 // keepin the gun overheat above -1
 			return
 		if(plasma_overheat > plasma_overheat_max)
-			new /obj/item/projectile/energy/pulse/pulserail(src) // explodes u, dealing a lot of damage, still (a little) chance to survive
+			explosion(src.loc, -1, -1, 3, 3) // explodes u, dealing a lot of damage, still (a little) chance to survive
 	//firemodes = list(
 		//list(mode_name="semi-charge", burst=1, fire_delay=19, burst_accuracy=null, dispersion=null, automatic = 0),
 		//list(mode_name="overcharge", burst=1, fire_delay=19, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/pulse/pulserifle, charge_cost=150),
