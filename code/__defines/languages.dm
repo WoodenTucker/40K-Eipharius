@@ -28,6 +28,7 @@
 #define LANGUAGE_ORKY "Proppa Orky"
 #define LANGUAGE_ELDAR "Aeldari"
 #define LANGUAGE_DARKTONGUE "Dark Tongue"
+#define LANGUAGE_CULT "Cultian" //For dedfines and various other purposes.
 #define LANGUAGE_CULT_KHORNE "Khornate"
 #define LANGUAGE_CULT_NURGLE "Nurglish"
 #define LANGUAGE_CULT_TZEENTCH "Tzeentchian"
