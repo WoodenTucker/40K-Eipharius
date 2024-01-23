@@ -173,7 +173,11 @@
 
 /obj/item/storage/box/sniperammo/apds
 	name = "box of 14.5mm APDS shells"
-	startswith = list(/obj/item/ammo_casing/a145/apds = 3)
+	startswith = list(/obj/item/ammo_casing/a145/apds = 4)
+
+/obj/item/storage/box/sniperammo/apds/bos
+	name = "munitions rod"
+	startswith = list(/obj/item/ammo_casing/a145/apds/bos = 4)
 
 /obj/item/storage/box/flashbangs
 	name = "box of flashbangs"

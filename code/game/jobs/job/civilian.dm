@@ -123,7 +123,7 @@
 			new /obj/item/device/flashlight/lantern(src.loc) 
 			new /obj/item/device/analyzer/plant_analyzer(src.loc)
 			new /obj/item/clothing/gloves/thick/botany(src.loc)
-			new /obj/item/melee/classic_baton(src.loc)
+			new /obj/item/melee/classic_baton/trench_club(src.loc)
 			new /obj/item/gun/energy/taser(src.loc)
 			new /obj/item/gun/energy/las/laspistol/militarum/lucius(src.loc)
 			new /obj/item/handcuffs(src.loc)

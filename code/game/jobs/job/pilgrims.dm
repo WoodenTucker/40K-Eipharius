@@ -172,12 +172,14 @@ Pilgrim Fate System
 				new /obj/item/clothing/suit/armor/ranger2(src.loc)
 			else
 				to_chat(U,"<span class='danger'><b><font size=4>THE HUNTER</font></b></span>")
-				to_chat(U,"<span class='goodmood'>You once were a traveller and a explorer, born with an innate gift for pathfinding and have worked in the past as a guide on your home planet.</font></b></span>")
+				to_chat(U,"<span class='goodmood'>You once were a traveller and a explorer, born with an innate gift for pathfinding among the Messian folk of the greater region. With the arrival of the Imperial Dogs came the shackling, forced servitude to a cruel governor and now you spend your days killing beasts to feed the fat nobles of the Imperium.</font></b></span>")
 				U.add_stats(rand(12,16), rand(14,17), rand(15,16), rand (12,16))
 				if(prob(40))
 					new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/glory(src.loc)
 				else
-					new /obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter(src.loc)
+					new /obj/item/gun/projectile/thrower(src.loc)
+					new /obj/item/storage/box/sniperammo/apds/bos(src.loc)
+					new /obj/item/storage/box/sniperammo/apds/bos(src.loc)
 				new /obj/item/ammo_magazine/handful/brifle_handful/ms(src.loc)
 				new /obj/item/ammo_magazine/handful/brifle_handful(src.loc)
 				new /obj/item/clothing/suit/sherpa(src.loc)

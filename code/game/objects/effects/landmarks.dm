@@ -542,7 +542,7 @@ Template:
 		/obj/item/gun/projectile/automatic/autogrim/krieg = 1,
 		/obj/item/gun/projectile/automatic/agripinaaii = 1,
 		/obj/item/gun/projectile/automatic/messina = 1,
-		/obj/item/gun/projectile/thrower = 4,
+		/obj/item/gun/projectile/thrower = 1,
 		/obj/item/storage/backpack/satchel/heavy = 1
 	)
 

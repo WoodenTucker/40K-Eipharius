@@ -795,7 +795,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 			plasma_overheat = 0 // keepin the gun overheat above -1
 			return
 		if(plasma_overheat > plasma_overheat_max)
-			explosion(src.loc, 0, 0, 0, 1) // explodes u, dealing a lot of damage, still (a little) chance to survive
+			new /obj/item/projectile/energy/pulse/pulserail(src) // explodes u, dealing a lot of damage, still (a little) chance to survive
 	//firemodes = list(
 		//list(mode_name="semi-charge", burst=1, fire_delay=19, burst_accuracy=null, dispersion=null, automatic = 0),
 		//list(mode_name="overcharge", burst=1, fire_delay=19, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/pulse/pulserifle, charge_cost=150),
