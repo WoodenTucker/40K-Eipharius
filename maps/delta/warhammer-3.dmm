@@ -2155,6 +2155,11 @@
 	basestate = "windowwood2"
 	},
 /obj/structure/girder/reinforced,
+/obj/machinery/door/blast/grates/open{
+	dir = 2;
+	name = "Tavern Gates";
+	id = "TavernLockdown"
+	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
 "bWT" = (
@@ -4491,6 +4496,11 @@
 	basestate = "windowwood2"
 	},
 /obj/structure/girder/reinforced,
+/obj/machinery/door/blast/grates/open{
+	dir = 2;
+	name = "Tavern Gates";
+	id = "TavernLockdown"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "dJL" = (
@@ -6506,6 +6516,20 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/security/barracks)
+"frX" = (
+/obj/structure/window/fantasy{
+	icon_state = "windowwood3";
+	basestate = "windowwood4"
+	},
+/obj/structure/barricade/wood,
+/obj/structure/girder/reinforced,
+/obj/machinery/door/blast/grates/open{
+	dir = 2;
+	name = "Tavern Gates";
+	id = "TavernLockdown"
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/service/inn)
 "fsf" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -8067,8 +8091,8 @@
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/bridge/hallway)
 "gzT" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/newcorner/reinforced,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/inn)
 "gAx" = (
@@ -12168,6 +12192,11 @@
 "jLi" = (
 /obj/structure/window/fantasy,
 /obj/structure/girder/reinforced,
+/obj/machinery/door/blast/grates/open{
+	dir = 2;
+	name = "Tavern Gates";
+	id = "TavernLockdown"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "jLK" = (
@@ -12225,6 +12254,11 @@
 	maxhealth = 1500;
 	req_one_access = list();
 	name = "Bar"
+	},
+/obj/machinery/door/blast/grates/open{
+	dir = 2;
+	name = "Tavern Gates";
+	id = "TavernLockdown"
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
@@ -12414,6 +12448,10 @@
 "jVg" = (
 /obj/structure/flora/pottedplant/dead,
 /obj/effect/decal/cleanable/vomit,
+/obj/structure/curtain/open{
+	color = "#5f82d8";
+	pixel_x = 32
+	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/service/inn)
 "jVs" = (
@@ -16995,6 +17033,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"nRv" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/curtain/open{
+	color = "#5f82d8";
+	pixel_x = 32
+	},
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/oa/service/inn)
 "nRK" = (
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
@@ -17131,6 +17177,11 @@
 	},
 /obj/structure/barricade/wood,
 /obj/structure/girder/reinforced,
+/obj/machinery/door/blast/grates/open{
+	dir = 2;
+	name = "Tavern Gates";
+	id = "TavernLockdown"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "nXN" = (
@@ -17392,6 +17443,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/item/pyre/self_lit,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/new_hive/hive_city)
 "oli" = (
@@ -18203,6 +18255,12 @@
 	dir = 5
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/button/remote/blast_door/lever{
+	name = "Emergency Lockdown Shutter";
+	id = "TavernLockdown";
+	pixel_y = 32;
+	req_one_access = list(355,268)
+	},
 /turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/inn)
 "oTX" = (
@@ -19938,26 +19996,11 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
 "qlw" = (
-/obj/structure/closet/hive/metal{
-	anchored = 1;
-	name = "Inn Keys"
-	},
-/obj/item/card/id/key/super/inn/newmap,
-/obj/item/card/id/key/super/inn/newmap/private_room1,
-/obj/item/card/id/key/super/inn/newmap/private_room2,
-/obj/item/card/id/key/super/inn/newmap/private_room3,
-/obj/item/card/id/key/super/inn/newmap/private_room4,
-/obj/item/card/id/key/super/inn/newmap/private_room10{
-	name = "Boudoir Key"
-	},
-/obj/effect/floor_decal/spline/plain{
-	dir = 6
-	},
-/obj/item/card/id/key/super/inn/newmap/private_room10{
-	name = "Boudoir Key"
-	},
-/obj/item/card/id/key/super/inn/newmap/private_room10{
-	name = "Boudoir Key"
+/obj/machinery/button/remote/blast_door/lever{
+	name = "Emergency Lockdown Shutter";
+	id = "TavernLockdown";
+	pixel_y = -32;
+	req_one_access = list(355,268)
 	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/service/inn)
@@ -20163,6 +20206,11 @@
 /area/cadiaoutpost/oa/engineering)
 "qsj" = (
 /obj/machinery/door/unpowered/inn,
+/obj/machinery/door/blast/grates/open{
+	dir = 2;
+	name = "Tavern Gates";
+	id = "TavernLockdown"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "qsk" = (
@@ -20773,6 +20821,12 @@
 	},
 /obj/structure/barricade/wood,
 /obj/structure/girder/reinforced,
+/obj/structure/window/fantasy,
+/obj/machinery/door/blast/grates/open{
+	dir = 2;
+	name = "Tavern Gates";
+	id = "TavernLockdown"
+	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
 "qRJ" = (
@@ -21714,6 +21768,15 @@
 /obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/new_hive/hive_city)
+"rDt" = (
+/obj/machinery/door/unpowered/inn,
+/obj/machinery/door/blast/grates/open{
+	dir = 2;
+	name = "Tavern Gates";
+	id = "TavernLockdown"
+	},
+/turf/simulated/floor/fancyfloor/oldcobble,
+/area/cadiaoutpost/oa/service/inn)
 "rEb" = (
 /turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/oa/service/inn)
@@ -21890,6 +21953,7 @@
 	},
 /obj/effect/floor_decal/newcorner/stone,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/pyre/self_lit,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/new_hive/hive_city)
 "rQC" = (
@@ -25022,6 +25086,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
+"urG" = (
+/obj/structure/curtain/open{
+	color = "#5f82d8";
+	pixel_x = 32
+	},
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/oa/service/inn)
 "urO" = (
 /obj/machinery/door/unpowered/newmap/inn{
 	req_one_access = list(726);
@@ -25097,13 +25168,7 @@
 /area/cadiaoutpost/oa/bridge/hallway)
 "uuR" = (
 /obj/effect/floor_decal/newcorner/reinforced{
-	dir = 4
-	},
-/obj/effect/floor_decal/newcorner/reinforced{
 	dir = 6
-	},
-/obj/machinery/light/small{
-	dir = 4
 	},
 /turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/inn)
@@ -25159,6 +25224,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/item/pyre/self_lit,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/new_hive/hive_city)
 "uyd" = (
@@ -27275,6 +27341,11 @@
 "vUh" = (
 /obj/structure/window/fantasy,
 /obj/structure/girder/reinforced,
+/obj/machinery/door/blast/grates/open{
+	dir = 2;
+	name = "Tavern Gates";
+	id = "TavernLockdown"
+	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
 "vUp" = (
@@ -27681,6 +27752,17 @@
 	},
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/new_hive/hive_city)
+"wkJ" = (
+/obj/structure/window/fantasy,
+/obj/structure/girder/reinforced,
+/obj/structure/window/fantasy,
+/obj/machinery/door/blast/grates/open{
+	dir = 2;
+	name = "Tavern Gates";
+	id = "TavernLockdown"
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/service/inn)
 "wkQ" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -28454,6 +28536,16 @@
 	icon_state = "r_window"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"wUQ" = (
+/obj/structure/girder/reinforced,
+/obj/structure/window/fantasy,
+/obj/machinery/door/blast/grates/open{
+	dir = 2;
+	name = "Tavern Gates";
+	id = "TavernLockdown"
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/service/inn)
 "wVf" = (
 /obj/effect/floor_decal/turf/big_cables1{
 	dir = 9
@@ -28692,6 +28784,10 @@
 	color = "#36261B"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/item/card/id/key/grand{
+	access = list(267,268,269,270,271,272,273);
+	name = "Innkeeper Key"
+	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/service/inn)
 "xiQ" = (
@@ -29265,14 +29361,12 @@
 	},
 /area/cadiaoutpost/oa/service/hab/inside)
 "xMB" = (
-/obj/machinery/microwave{
-	pixel_y = 8
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
 	},
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/turf/simulated/floor/wood,
-/area/cadiaoutpost/oa/service/inn)
+/turf/simulated/wall/castle,
+/area/cadiaoutpost/oa/service/chapel)
 "xMJ" = (
 /obj/structure/table/rack,
 /obj/item/soap/slannesh,
@@ -59616,13 +59710,13 @@ iFY
 riL
 xdz
 mtY
-iii
-tNI
+xMB
 mjp
+xMB
 iii
+xMB
 iii
-iii
-tNI
+xMB
 mjp
 bHl
 xdz
@@ -61632,13 +61726,13 @@ iFY
 riL
 xdz
 mtY
-iii
-tNI
+xMB
 mjp
+xMB
 iii
+xMB
 iii
-iii
-tNI
+xMB
 mjp
 bHl
 xdz
@@ -62917,10 +63011,10 @@ nJw
 eLQ
 pZh
 pFv
+haT
 jBp
 jBp
-jBp
-jBp
+haT
 ozZ
 vmQ
 ewB
@@ -63166,12 +63260,12 @@ dDC
 dUJ
 ipN
 vUh
-qQA
+frX
 vUh
 uIm
 uIm
-dCO
-dCO
+rDt
+rDt
 ipN
 rEb
 vUh
@@ -63668,7 +63762,7 @@ dRi
 wlv
 iKx
 inD
-qQA
+frX
 uqu
 wsj
 lDR
@@ -64695,7 +64789,7 @@ uCZ
 edb
 crp
 eRu
-vUh
+wkJ
 epe
 jBp
 jBp
@@ -65199,7 +65293,7 @@ ipN
 nvG
 mwi
 bLS
-vUh
+wkJ
 jGd
 jBp
 jBp
@@ -65451,8 +65545,8 @@ anz
 nvG
 hYm
 qnJ
-rEb
-jBp
+amx
+haT
 jBp
 jBp
 jBp
@@ -65703,7 +65797,7 @@ anz
 nvG
 mwi
 sFP
-dCO
+rDt
 jBp
 jBp
 jBp
@@ -65956,7 +66050,7 @@ nvG
 mwi
 suo
 mGC
-jBp
+haT
 jBp
 jBp
 jBp
@@ -66956,9 +67050,9 @@ xSk
 uCZ
 gFn
 xSk
-mwi
-mwi
-uCZ
+urG
+urG
+nRv
 uCZ
 uCZ
 uCZ
@@ -67208,13 +67302,13 @@ ger
 ncX
 rui
 rEb
-rEb
-rEb
-rEb
-rEb
-dCO
-rEb
-rEb
+wUQ
+wUQ
+bWy
+wdg
+rDt
+wdg
+bWy
 wdg
 epe
 jBp
@@ -70220,7 +70314,7 @@ jRK
 sxY
 neA
 oWj
-xMB
+kAI
 kAI
 rEb
 gFq

@@ -2539,6 +2539,11 @@
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/villageinside/lab)
 "cVL" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/obj/structure/sign/aquilalong,
 /obj/structure/sign/plate/written{
 	name = "Inscription";
 	desc = "Through trials, may the God-Emperor make me resolute."
@@ -4764,6 +4769,7 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
 "fqW" = (
+/obj/structure/sign/aquilalong,
 /obj/structure/sign/plate/written{
 	name = "Inscription";
 	desc = "If thou seest a flaw in me - smite me"
@@ -9377,6 +9383,7 @@
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "kgg" = (
+/obj/structure/sign/aquilalong,
 /obj/structure/sign/plate/written{
 	name = "Inscription";
 	desc = "If Thou knowest a fault of mine - burn me"
@@ -12081,6 +12088,11 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "nbA" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/obj/structure/sign/aquilalong,
 /obj/structure/sign/plate/written{
 	name = "Inscription";
 	desc = "Through pain, may the God-Emperor make me worthy."
@@ -12839,6 +12851,11 @@
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
 "nRl" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/obj/structure/sign/aquilalong,
 /obj/structure/sign/plate/written{
 	name = "Inscription";
 	desc = "Through suffering, may the God-Emperor make me strong."
@@ -12912,6 +12929,16 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/turf/big_cables2,
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 8
+	},
+/obj/effect/floor_decal/newcorner/stone,
+/obj/effect/floor_decal/newcorner/stone/corner{
+	dir = 8
+	},
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "nWg" = (
@@ -13961,6 +13988,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
 "oXb" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/obj/structure/sign/aquilalong,
 /obj/structure/sign/plate/written{
 	name = "Inscription";
 	desc = "Through death, may the God-Emperor make me whole."
@@ -14167,6 +14199,10 @@
 	},
 /obj/effect/floor_decal/turf/big_cables1{
 	dir = 5
+	},
+/obj/effect/floor_decal/newcorner/stone,
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 4
 	},
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -16765,6 +16801,7 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
 "rNx" = (
+/obj/structure/sign/aquilalong,
 /obj/structure/sign/plate/written{
 	name = "Inscription";
 	desc = "If Thou seest light in me - grace me"
@@ -20215,6 +20252,7 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
 "vNp" = (
+/obj/structure/sign/aquilalong,
 /obj/structure/sign/plate/written{
 	name = "Inscription";
 	desc = "If Thou hearest a plea of mine - bless me"
