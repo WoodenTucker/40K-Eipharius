@@ -18376,6 +18376,10 @@
 	dir = 6
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"tEU" = (
+/obj/structure/torchwall/service,
+/turf/simulated/wall/castle,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "tFG" = (
 /obj/structure/table/rack/dark,
 /obj/item/reagent_containers/hypospray/autoinjector/morphine{
@@ -47738,7 +47742,7 @@ bNq
 bNq
 bNq
 bNq
-bNq
+tEU
 xgD
 wOF
 dgv
@@ -48504,7 +48508,7 @@ gLm
 gnr
 dBi
 wOF
-wOF
+qew
 bNq
 uRP
 wOF
@@ -49010,7 +49014,7 @@ fCV
 cKj
 dBi
 wOF
-wOF
+qew
 bNq
 uRP
 bkQ
@@ -49762,10 +49766,10 @@ bNq
 bNq
 kGm
 bNq
-bNq
+tEU
 sZK
 wOF
-wOF
+uGJ
 wOF
 wOF
 wOF
