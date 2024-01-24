@@ -3700,7 +3700,7 @@
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "eoq" = (
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
-	name = "Imperialis Doorway - Sacred Altar";
+	name = "Imperialis Doorway - Sacred Reliquary";
 	req_one_access = list(333,213)
 	},
 /turf/simulated/floor/factory_floor,
@@ -6009,7 +6009,7 @@
 "gGP" = (
 /obj/machinery/door/blast/id_door{
 	req_one_access = list(302);
-	name = "Bradigan's Lair";
+	name = "Mysterious Doorway";
 	id = "inqs";
 	maxhealth = 9000
 	},
@@ -10504,6 +10504,13 @@
 	},
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"lnO" = (
+/obj/machinery/door/airlock/highsecurity/imperiumdoor{
+	name = "Imperialis Doorway - Kitchen";
+	req_one_access = list()
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "lpc" = (
 /obj/effect/floor_decal/newcorner/plating/quarter{
 	dir = 4
@@ -10623,7 +10630,7 @@
 /area/cadiaoutpost/oa/magistratumpost)
 "lvD" = (
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
-	name = "Imperialis Doorway - Monasterium";
+	name = "Imperialis Doorway - Freezer";
 	req_one_access = list()
 	},
 /turf/simulated/floor/factory_floor,
@@ -14106,7 +14113,7 @@
 	},
 /obj/machinery/button/remote/blast_door/lever{
 	id = "relics2";
-	req_one_access = list(213);
+	req_one_access = list(213,333);
 	pixel_x = 32;
 	name = "Armory"
 	},
@@ -15482,7 +15489,7 @@
 /area/cadiaoutpost/oa/farm)
 "qCj" = (
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
-	name = "Imperialis Doorway - Monasterium";
+	name = "Imperialis Doorway - Living Quarters";
 	req_one_access = list(333,213)
 	},
 /obj/machinery/door/blast/id_door/open{
@@ -18862,7 +18869,7 @@
 /area/cadiaoutpost/oa/magistratumpost)
 "uep" = (
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
-	name = "Imperialis Doorway - Progenium";
+	name = "Imperialis Doorway - Living Quarters";
 	req_one_access = list(213)
 	},
 /turf/simulated/floor/factory_floor,
@@ -20107,7 +20114,7 @@
 "vIo" = (
 /obj/machinery/door/blast/id_door{
 	req_one_access = list(302);
-	name = "Bradigan's Lair";
+	name = "Mysterious Doorway";
 	id = "inqs";
 	maxhealth = 9000
 	},
@@ -49521,7 +49528,7 @@ kPT
 kYm
 wOF
 wOF
-lvD
+lnO
 wOF
 dgv
 wOF
