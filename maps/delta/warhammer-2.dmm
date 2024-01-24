@@ -20,7 +20,7 @@
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 1
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "adF" = (
 /obj/effect/floor_decal/spline/fancy/wood,
@@ -122,7 +122,7 @@
 /obj/structure/torchwall/service{
 	pixel_y = 32
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "akg" = (
 /obj/structure/bookcase,
@@ -130,7 +130,7 @@
 	desc = "I once walked the same ground as your idol. I breathed the same air as him. And I tell you this, without lie or artifice. He never wanted to become what you have made him. He did not wish to be your god-thing. He abhorred such ideals. The slavery of your crippled, blind Imperium would sicken him, if he had eyes to see it.";
 	name = "Daemonic Tome"
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "akn" = (
 /obj/machinery/button/remote/blast_door/id_scan{
@@ -163,6 +163,17 @@
 /obj/item/device/flashlight/lantern,
 /turf/simulated/floor/ceramic/surgery2,
 /area/cadiaoutpost/new_hive/caves)
+"amK" = (
+/obj/structure/crematorium{
+	id = 2
+	},
+/obj/machinery/button/crematorium{
+	pixel_y = 35;
+	id = 2
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "anh" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 4;
@@ -179,12 +190,44 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
+"anR" = (
+/obj/structure/table/marble{
+	color = "grey"
+	},
+/obj/item/fluff_items/skull{
+	pixel_x = 9;
+	pixel_y = -2
+	},
+/obj/item/fluff_items/skull{
+	pixel_x = 9;
+	pixel_y = 8
+	},
+/obj/item/fluff_items/skull{
+	pixel_y = 8;
+	pixel_x = -9
+	},
+/obj/item/device/flashlight/candelabra{
+	pixel_y = 13;
+	pixel_x = 1
+	},
+/obj/item/fluff_items/skull{
+	pixel_y = -2;
+	pixel_x = -9
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "aoh" = (
 /obj/structure/table/rack/shelf{
 	color = "grey"
 	},
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/farm)
+"aoD" = (
+/obj/structure/sign/ship{
+	icon_state = "trading"
+	},
+/turf/simulated/wall/castle,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "aoI" = (
 /obj/effect/decal/cleanable/cobweb{
 	dir = 8
@@ -296,7 +339,7 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/newcorner/plating,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "atN" = (
 /obj/structure/bed/chair/torture,
@@ -347,15 +390,19 @@
 	dir = 10
 	},
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"axE" = (
-/obj/structure/torchwall/service{
-	dir = 8;
-	icon_state = "torchwall0"
+"avM" = (
+/obj/machinery/button/remote/blast_door/lever{
+	id = "relics";
+	req_one_access = list(333);
+	pixel_x = -32;
+	name = "Relics"
 	},
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"axE" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "axL" = (
 /obj/structure/catwalkrust/blocked,
 /obj/machinery/light/small/red{
@@ -412,7 +459,6 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "aCJ" = (
-/obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
 /obj/item/reagent_containers/spray/sterilizine{
 	pixel_x = 10
@@ -421,9 +467,7 @@
 /obj/item/reagent_containers/spray/sterilizine{
 	pixel_x = -10
 	},
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "aDf" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -619,7 +663,7 @@
 	name = "Keeper of Knowledge";
 	health = 400
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "aOi" = (
 /obj/structure/bed{
@@ -638,18 +682,25 @@
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
 "aOr" = (
-/obj/structure/torchwall/service{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
 /obj/effect/floor_decal/newcorner/stone/corner,
-/turf/simulated/floor/stone/chapel,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"aOR" = (
+/obj/structure/statue/verina{
+	desc = "A polished and well maintained statue of Saint Katherine of the Order of Our Martyred Lady. The fire of spirit is a beacon of hope, a sign that even in this time of abounding horror, the Emperor has not abandoned His faithful servants.";
+	name = "Statue of Saint Arabella";
+	pixel_x = -15;
+	pixel_y = 6
+	},
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "aPi" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/simulated/floor/fancyfloor/gray_white,
+/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/item/reagent_containers/food/condiment/flour,
+/obj/item/reagent_containers/food/condiment/flour,
+/obj/item/storage/fancy/egg_box,
+/obj/item/reagent_containers/food/condiment/sugar,
+/turf/simulated/floor/tiled/freezer,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "aPX" = (
 /obj/effect/floor_decal/newcorner/stone{
@@ -715,7 +766,7 @@
 /area/cadiaoutpost/oa/medicae)
 "aWI" = (
 /obj/item/book/manual/nurgle_recipes,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "aWN" = (
 /obj/effect/decal/remains,
@@ -778,12 +829,7 @@
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
 "bai" = (
-/obj/structure/bed/chair/office/light,
-/obj/effect/floor_decal/newcorner/blue/diagonal,
-/turf/simulated/floor/tiled{
-	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
-	icon_state = "white1"
-	},
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "bax" = (
 /obj/structure/torchwall{
@@ -899,6 +945,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"bhY" = (
+/obj/structure/hivedecor/bookcase/huge,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "biE" = (
 /obj/effect/floor_decal/industrial/warning_red{
 	dir = 1
@@ -941,7 +991,7 @@
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 8
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "bkf" = (
 /obj/effect/floor_decal/newcorner/plating{
@@ -964,6 +1014,16 @@
 	icon_state = "r_window"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"bkQ" = (
+/obj/effect/floor_decal/turf/big_cables1{
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/stone,
+/turf/simulated/floor/plating/reinforced,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "bld" = (
 /obj/random/junk,
 /turf/simulated/floor/plating{
@@ -977,6 +1037,10 @@
 	},
 /turf/simulated/floor/cult,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"blo" = (
+/obj/item/pyre/self_lit/church,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "blr" = (
 /obj/structure/closet/hive/metal{
 	anchored = 1
@@ -1240,14 +1304,12 @@
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "bum" = (
-/obj/machinery/door/airlock/glass_medical{
-	color = null;
-	dir = 2;
-	maxhealth = 900;
-	name = "Medicae Secure";
-	req_one_access = list(211)
+/obj/machinery/shower{
+	dir = 4;
+	icon_state = "shower"
 	},
-/turf/simulated/floor/factory_floor,
+/obj/structure/window/basic,
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "bup" = (
 /turf/simulated/floor/factory_floor{
@@ -1333,7 +1395,7 @@
 	dir = 4;
 	icon_state = "torchwall0"
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "bAu" = (
 /mob/living/simple_animal/hostile/undead,
@@ -1351,6 +1413,21 @@
 /obj/effect/floor_decal/turf/necro1,
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"bAE" = (
+/obj/structure/window_frame{
+	desc = "A brazier whose light will burn eternally, much like the living saint that it so venerates.";
+	light_color = "";
+	light_power = "";
+	light_range = "";
+	maxhealth = 2000;
+	name = "Eternal Brazier"
+	},
+/obj/flamer_fire{
+	burnlevel = 6;
+	firelevel = 1.#INF
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "bAQ" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 8
@@ -1405,6 +1482,12 @@
 	},
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/villageinside/lab)
+"bFE" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 4
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "bIa" = (
 /obj/structure/closet/hive/metal{
 	anchored = 1
@@ -1449,26 +1532,15 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "bKX" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/reagent_containers/food/condiment/barbecue{
-	pixel_x = -7
+/obj/structure/hivedecor/xenos/processor/toggle{
+	name = "innert cogiator"
 	},
-/obj/item/reagent_containers/food/condiment/enzyme{
-	pixel_x = 7
-	},
-/obj/item/reagent_containers/food/condiment/enzyme,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "bLv" = (
-/obj/effect/floor_decal/newcorner/blue/diagonal,
 /obj/structure/iv_drip,
 /obj/item/reagent_containers/ivbag/blood/OMinus,
-/turf/simulated/floor/tiled{
-	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
-	icon_state = "white1"
-	},
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "bLE" = (
 /obj/structure/flora/yes/wooden_tv,
@@ -1476,6 +1548,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
+"bLH" = (
+/obj/structure/statue/prayer{
+	pixel_y = 30;
+	pixel_x = 1
+	},
+/obj/structure/flora/yes/plant,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "bMd" = (
 /obj/structure/table/rack,
 /obj/item/ammo_box/flares,
@@ -1489,6 +1569,14 @@
 /obj/structure/hivedecor/statue1,
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"bMH" = (
+/obj/structure/sign/aquilalong,
+/obj/structure/sign/plate/written{
+	name = "Inscription";
+	desc = "I tread the path of Righteousness. Though it be paved with broken glass, I will walk it barefoot; though it cross rivers of fire, I will pass over them; though it wanders wide, the light of the Emperor guides my step."
+	},
+/turf/simulated/wall/castle,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "bMN" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 6
@@ -1535,6 +1623,24 @@
 	},
 /turf/simulated/floor/ceramic/blackstone,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"bRf" = (
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tilethick";
+	dir = 4
+	},
+/obj/item/clothing/suit/sisterofbattle/training{
+	pixel_y = 6
+	},
+/obj/item/clothing/suit/sisterofbattle/training{
+	pixel_y = 6
+	},
+/obj/item/fluff_items/skull{
+	pixel_x = 16;
+	pixel_y = 12;
+	name = "Martyr"
+	},
+/turf/simulated/floor/fancyfloor/carpet/middle,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "bRl" = (
 /obj/structure/curtain/open/shower/security{
 	pixel_x = 32;
@@ -1558,12 +1664,18 @@
 /obj/machinery/reagentgrinder,
 /obj/item/stack/material/phoron/ten,
 /obj/structure/table/steel_reinforced,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1";
-	name = "freezer floor"
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
+"bSJ" = (
+/obj/effect/floor_decal/newcorner/stone,
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 8
+	},
+/obj/effect/floor_decal/newcorner/stone/corner{
+	dir = 8
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "bSL" = (
 /obj/structure/sign/portrait_antonio{
 	pixel_y = 32
@@ -1588,8 +1700,16 @@
 /obj/effect/floor_decal/newcorner/caveramp{
 	dir = 4
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"bUo" = (
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/obj/effect/floor_decal/newcorner/stone/corner,
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "bUB" = (
 /obj/structure/closet/crate,
 /obj/random/loot/randomlasammo,
@@ -1658,18 +1778,23 @@
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/caves/dark)
 "bYJ" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/reagent_containers/food/condiment/small/peppermill{
-	pixel_x = 7;
-	pixel_y = 3
+/obj/item/tray{
+	pixel_x = -6;
+	pixel_y = -2
 	},
-/obj/item/reagent_containers/food/condiment/small/saltshaker,
-/obj/item/reagent_containers/food/condiment/small/sugar{
-	pixel_y = 12
+/obj/item/material/kitchen/utensil/fork{
+	pixel_x = 6
 	},
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
+/obj/item/material/kitchen/utensil/knife{
+	pixel_x = 3
 	},
+/obj/item/reagent_containers/food/drinks/flask/goblet{
+	pixel_x = -18
+	},
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue/middle,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "bYK" = (
 /obj/structure/sign/mechanicus{
@@ -1786,6 +1911,12 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"cfC" = (
+/obj/machinery/recharger,
+/obj/item/defibrillator/compact/loaded,
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "cfN" = (
 /obj/structure/table/graf/big_wood_table{
 	dir = 8
@@ -1888,17 +2019,13 @@
 /obj/effect/floor_decal/newcorner/nbar{
 	dir = 4
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "cnG" = (
-/obj/structure/torchwall/service{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 8
 	},
-/turf/simulated/floor/stone/chapel,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "cnK" = (
 /obj/item/storage/box/syringes{
@@ -1909,11 +2036,7 @@
 	},
 /obj/machinery/light,
 /obj/structure/table/steel_reinforced,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1";
-	name = "freezer floor"
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "coA" = (
 /obj/effect/floor_decal/newcorner/reinforced/corner,
@@ -1957,7 +2080,11 @@
 /area/cadiaoutpost/oa/caves/dark)
 "csN" = (
 /obj/structure/statue/prayer,
-/turf/simulated/floor/stone/old4,
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/simulated/floor/fancyfloor/ancient_cobble_old,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "cuj" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
@@ -1966,7 +2093,7 @@
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 8
 	},
-/turf/simulated/floor/stone/chapel,
+/turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "cun" = (
 /obj/effect/floor_decal/newcorner/white{
@@ -2067,7 +2194,10 @@
 	pixel_x = -17
 	},
 /obj/effect/floor_decal/newcorner/stone,
-/turf/simulated/floor/fancyfloor/coralg,
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
+	},
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "cyH" = (
 /obj/machinery/door/unpowered/inn{
@@ -2153,8 +2283,10 @@
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cFV" = (
-/obj/machinery/door/airlock/glass_medical,
-/turf/simulated/floor/factory_floor,
+/obj/structure/hivedecor/bookcase{
+	pixel_x = -12
+	},
+/turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "cGI" = (
 /obj/machinery/door/unpowered/newmap/hab1/room2,
@@ -2195,6 +2327,16 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/magistratumpost)
+"cHT" = (
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 4
+	},
+/obj/item/rosarius/broken{
+	pixel_y = 5
+	},
+/turf/simulated/floor/fancyfloor/oldcobble,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "cHW" = (
 /obj/effect/floor_decal/newcorner/plating,
 /turf/simulated/floor/darkfloor{
@@ -2217,16 +2359,13 @@
 /turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/oa/medicae)
 "cKj" = (
-/obj/structure/sink{
-	dir = 8;
-	icon_state = "sink";
-	layer = 50;
-	pixel_x = -12
+/obj/structure/table/woodentable{
+	color = "#36261B"
 	},
-/obj/structure/mirror{
-	pixel_x = -32
+/obj/item/reagent_containers/food/drinks/bottle/wine{
+	pixel_y = 10
 	},
-/turf/simulated/floor/fancyfloor/gray_white,
+/turf/simulated/floor/fancyfloor/carpet/blue/middle,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "cKZ" = (
 /obj/effect/floor_decal/turf/plating,
@@ -2256,24 +2395,18 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "cOw" = (
-/obj/effect/floor_decal/newcorner/blue/solid,
 /obj/machinery/light{
 	dir = 8;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1";
-	name = "freezer floor"
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "cPN" = (
-/obj/machinery/shower{
-	dir = 8;
-	icon_state = "shower"
+/obj/structure/hivedecor/bookcase/huge,
+/obj/structure/hivedecor/bookcase{
+	pixel_x = 20
 	},
-/obj/structure/window/basic,
-/turf/simulated/floor/fancyfloor/gray_white,
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "cQq" = (
 /obj/structure/shipdecor/generator{
@@ -2369,7 +2502,7 @@
 	invisibility = 100;
 	name = "Invisible Light"
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "cTn" = (
 /obj/structure/table/graf/rusty_table,
@@ -2406,14 +2539,11 @@
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/villageinside/lab)
 "cVL" = (
-/obj/structure/table/rack/dark,
-/obj/item/melee/whip/censer,
-/obj/item/storage/fancy/candle_box,
-/obj/item/storage/fancy/candle_box,
-/obj/item/storage/fancy/candle_box,
-/obj/item/storage/fancy/candle_box,
-/obj/item/storage/fancy/candle_box,
-/turf/simulated/floor/ceramic,
+/obj/structure/sign/plate/written{
+	name = "Inscription";
+	desc = "Through trials, may the God-Emperor make me resolute."
+	},
+/turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "cWq" = (
 /obj/structure/table/steel_reinforced,
@@ -2577,10 +2707,11 @@
 /turf/simulated/floor/stone/ancient_stone_old,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "dgv" = (
-/obj/structure/cult/tome,
-/obj/item/melee/sword/broadsword,
-/obj/item/melee/sword/broadsword,
-/turf/simulated/floor/ceramic/old,
+/obj/structure/torchwall/service{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "dhr" = (
 /turf/unsimulated/miningtime,
@@ -2601,11 +2732,18 @@
 /obj/structure/statue/verina/broken{
 	pixel_x = -15
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "djP" = (
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 4
+	},
+/obj/item/melee/whip/censer{
+	pixel_y = 5
+	},
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 8
 	},
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "djS" = (
@@ -2623,7 +2761,7 @@
 /obj/structure/sign/plate/stoneshrine{
 	pixel_y = -32
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "dlB" = (
 /obj/machinery/light{
@@ -2632,16 +2770,14 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/research/robotics)
 "dmN" = (
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+/obj/structure/statue/prayer{
+	dir = 4;
+	pixel_y = 30;
+	pixel_x = -1
 	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1";
-	name = "freezer floor"
-	},
-/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
+/obj/structure/flora/yes/plant,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "dnO" = (
 /obj/structure/torchwall{
 	dir = 1;
@@ -2662,12 +2798,14 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "doC" = (
-/obj/effect/floor_decal/newcorner/blue/diagonal,
 /obj/machinery/light,
-/turf/simulated/floor/tiled{
-	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
-	icon_state = "white1"
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 4
 	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 8
+	},
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "doN" = (
 /obj/structure/hivedecor/sarcofagus,
@@ -2699,6 +2837,12 @@
 /obj/machinery/photocopier,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"dpc" = (
+/obj/effect/floor_decal/newcorner/stone/corner{
+	dir = 1
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "dpv" = (
 /obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/factory_floor{
@@ -2773,6 +2917,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
+"duo" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 8
+	},
+/obj/effect/floor_decal/newcorner/stone,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "dut" = (
 /obj/item/card/id/key/super/newmap/hab1/room2,
 /turf/simulated/floor/seolite,
@@ -2827,7 +2978,7 @@
 /obj/effect/floor_decal/newcorner/nbar{
 	dir = 8
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "dxs" = (
 /obj/structure/closet/emcloset{
@@ -2898,7 +3049,7 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "dBi" = (
-/turf/simulated/floor/fancyfloor/gray_white,
+/turf/simulated/floor/fancyfloor/carpet/blue,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "dCU" = (
 /obj/effect/floor_decal/turf/metal/four,
@@ -2919,6 +3070,15 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
+"dEj" = (
+/obj/structure/closet/crate{
+	anchored = 1
+	},
+/obj/item/gun/projectile/automatic/flamer,
+/obj/item/ammo_magazine/flamer,
+/obj/item/ammo_magazine/flamer,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "dEu" = (
 /obj/effect/water/top,
 /obj/effect/water/bottom,
@@ -3077,7 +3237,7 @@
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 1
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "dOv" = (
 /obj/structure/closet/hive/metal{
@@ -3249,7 +3409,10 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "dWY" = (
-/turf/simulated/floor/stone/chapel,
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 4
+	},
+/turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "dXq" = (
 /turf/simulated/floor/fancyfloor/carpet{
@@ -3270,11 +3433,7 @@
 /obj/item/reagent_containers/hypospray/autoinjector/blood,
 /obj/item/reagent_containers/hypospray/autoinjector/blood,
 /obj/item/reagent_containers/hypospray/autoinjector/blood,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1";
-	name = "freezer floor"
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "dYN" = (
 /obj/structure/table/steel_reinforced,
@@ -3310,11 +3469,29 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "ect" = (
-/obj/item/device/cassette/heresy1,
-/obj/structure/closet/crate{
-	name = "RESTRICTED"
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 8
 	},
-/turf/simulated/floor/ceramic,
+/obj/item/clothing/suit/storage/sistersuit{
+	pixel_y = 6
+	},
+/obj/item/clothing/suit/storage/sistersuit{
+	pixel_y = 6
+	},
+/obj/item/clothing/suit/storage/sistersuit{
+	pixel_y = 6
+	},
+/obj/item/clothing/suit/storage/sistersuit{
+	pixel_y = 6
+	},
+/obj/item/clothing/head/hospitallerhelm{
+	pixel_x = -16;
+	pixel_y = 12
+	},
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 4
+	},
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "eet" = (
 /obj/structure/stairs/north,
@@ -3472,6 +3649,32 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
+"emD" = (
+/obj/structure/table/marble{
+	color = "grey"
+	},
+/obj/item/fluff_items/skull{
+	pixel_y = 8;
+	pixel_x = -9
+	},
+/obj/item/fluff_items/skull{
+	pixel_y = -2;
+	pixel_x = -9
+	},
+/obj/item/device/flashlight/candelabra{
+	pixel_y = 13;
+	pixel_x = 1
+	},
+/obj/item/fluff_items/skull{
+	pixel_x = 9;
+	pixel_y = 8
+	},
+/obj/item/fluff_items/skull{
+	pixel_x = 9;
+	pixel_y = -2
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "enm" = (
 /obj/structure/table/rack/dark,
 /obj/item/reagent_containers/syringe{
@@ -3515,7 +3718,7 @@
 /area/cadiaoutpost/oa/magistratumpost)
 "epa" = (
 /obj/item/book/manual/khorne_recipes,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "eqE" = (
 /obj/effect/floor_decal/newcorner/nbar{
@@ -3617,6 +3820,7 @@
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 1
 	},
+/obj/structure/flora/yes/plant,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "ewh" = (
@@ -3634,6 +3838,23 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"ewC" = (
+/obj/item/tray{
+	pixel_x = 6;
+	pixel_y = 6
+	},
+/obj/item/material/kitchen/utensil/fork{
+	pixel_x = -6
+	},
+/obj/item/material/kitchen/utensil/knife,
+/obj/item/reagent_containers/food/drinks/flask/goblet{
+	pixel_x = 18
+	},
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue/middle,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "exl" = (
 /obj/item/storage/fancy/cigarettes/luckystars,
 /obj/item/reagent_containers/food/drinks/bottle/small/beer,
@@ -3659,6 +3880,13 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
+"exr" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/simulated/wall/castle,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "exB" = (
 /obj/structure/sink{
 	dir = 4;
@@ -3670,19 +3898,44 @@
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "exJ" = (
-/obj/structure/closet/crate{
-	anchored = 1
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 4
 	},
-/obj/item/clothing/suit/sisterofbattle/repentia,
-/obj/item/clothing/shoes/jackboots/sisterofbattle/repentia,
-/obj/item/clothing/head/helmet/sisterofbattle/repentia,
-/obj/item/melee/chain/mercycs{
-	color = "#808080";
-	name = "Order of Our Martyred Lady's Primeval Chainsword";
-	force_wielded = 52;
-	desc = "The Sacred chainsword of the chosen Repentia. Women whom are not Repentia and wield this should be punished."
+/obj/item/clothing/under/guard/uniform/sisterofbattle{
+	pixel_y = 6
 	},
-/turf/simulated/floor/ceramic,
+/obj/item/clothing/under/guard/uniform/sisterofbattle{
+	pixel_y = 6
+	},
+/obj/item/clothing/under/guard/uniform/sisterofbattle{
+	pixel_y = 6
+	},
+/obj/item/clothing/under/guard/uniform/sisterofbattle{
+	pixel_y = 6
+	},
+/obj/item/clothing/under/guard/uniform/sisterofbattle{
+	pixel_y = 6
+	},
+/obj/item/clothing/under/guard/uniform/sisterofbattle{
+	pixel_y = 6
+	},
+/obj/item/fluff_items/skull{
+	pixel_x = 16;
+	pixel_y = 12;
+	name = "Martyr"
+	},
+/obj/item/clothing/head/hospitallerhelm{
+	pixel_x = 16;
+	pixel_y = 12
+	},
+/obj/item/clothing/head/hairflower{
+	pixel_x = 13;
+	pixel_y = 4
+	},
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 8
+	},
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "exL" = (
 /obj/structure/sign/mechanicus,
@@ -3739,7 +3992,6 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "eAa" = (
-/obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
 /obj/item/stack/medical/advanced/bruise_pack{
 	pixel_y = -4
@@ -3765,16 +4017,11 @@
 /obj/item/stack/medical/advanced/ointment{
 	pixel_y = 4
 	},
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "eAr" = (
 /obj/machinery/computer/operating,
-/obj/effect/floor_decal/newcorner/blue/solid,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "eAY" = (
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -3789,13 +4036,14 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "eBq" = (
-/obj/structure/bed/chair{
-	dir = 4
+/obj/effect/floor_decal/newcorner/nbar{
+	dir = 9
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/structure/sign/plate/stoneshrine{
+	pixel_x = -32
 	},
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
+/turf/simulated/floor/fancyfloor/oldcobble,
+/area/cadiaoutpost/oa/service/chapel/recovery)
 "eCC" = (
 /obj/effect/floor_decal/newcorner/nbar/corner{
 	dir = 8
@@ -3969,14 +4217,18 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"eNW" = (
+/obj/effect/floor_decal/newcorner/stone/corner{
+	dir = 8
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "eOM" = (
 /obj/effect/floor_decal/newcorner/nbar{
-	dir = 9
+	dir = 1
 	},
-/obj/structure/sign/plate/stoneshrine{
-	pixel_x = -32
-	},
-/turf/simulated/floor/stone/old4,
+/obj/effect/decal/cleanable/cobweb,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "ePO" = (
 /obj/effect/floor_decal/newcorner/plating/corner{
@@ -4108,7 +4360,7 @@
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 4
 	},
-/turf/simulated/floor/fancyfloor/coralg,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "eVi" = (
 /turf/simulated/floor/tiled{
@@ -4118,9 +4370,7 @@
 "eVr" = (
 /obj/structure/iv_drip,
 /obj/item/reagent_containers/ivbag/blood/OMinus,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "eWh" = (
 /turf/simulated/floor/darkwood,
@@ -4254,15 +4504,12 @@
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
 "fcM" = (
-/obj/effect/floor_decal/newcorner/blue/diagonal,
 /obj/machinery/light{
 	dir = 1;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled{
-	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
-	icon_state = "white1"
-	},
+/obj/effect/floor_decal/newcorner/stone,
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "fcO" = (
 /turf/simulated/floor/tiled/dark{
@@ -4329,14 +4576,14 @@
 	desc = "We are raised to believe that the God Emperor watches over us all. And so we are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none, we beseech thee, destroy them. Even in the face of death, we shall not submit. Suffering is our prayer... faith is our armour.";
 	name = "sister tome"
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "fhy" = (
 /obj/structure/hivedecor/statue5{
 	icon = 'icons/map_project/pillars.dmi';
 	icon_state = "1"
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "fii" = (
 /obj/effect/floor_decal/spline/plain{
@@ -4451,6 +4698,18 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
+"fnG" = (
+/obj/structure/grille/iron_fence{
+	health = 1900
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
+	},
+/obj/structure/statue/prayer{
+	pixel_y = -8
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "fnI" = (
 /obj/effect/floor_decal/newcorner/nbar/corner{
 	dir = 1
@@ -4482,7 +4741,10 @@
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 8
 	},
-/turf/simulated/floor/stone/chapel,
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
+	},
+/turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "fqj" = (
 /turf/simulated/floor/tiled{
@@ -4502,10 +4764,11 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
 "fqW" = (
-/obj/structure/table/rack/dark,
-/obj/item/clothing/suit/sisterofbattle/training,
-/obj/item/clothing/suit/sisterofbattle/training,
-/turf/simulated/floor/ceramic,
+/obj/structure/sign/plate/written{
+	name = "Inscription";
+	desc = "If thou seest a flaw in me - smite me"
+	},
+/turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "fri" = (
 /obj/effect/floor_decal/newcorner/red{
@@ -4551,7 +4814,7 @@
 /obj/effect/floor_decal/newcorner/nbar{
 	dir = 1
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "ftg" = (
 /obj/structure/sign/inkvd{
@@ -4717,8 +4980,13 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "fCV" = (
-/obj/machinery/light/small,
-/turf/simulated/floor/tiled/freezer,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/device/flashlight/candelabra{
+	pixel_y = 13
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue/middle,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "fDk" = (
 /obj/structure/bed/chair/wood/simple{
@@ -4733,11 +5001,10 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "fDz" = (
-/obj/effect/floor_decal/newcorner/blue/diagonal,
-/turf/simulated/floor/tiled{
-	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
-	icon_state = "white1"
+/obj/effect/floor_decal/newcorner/stone/corner{
+	dir = 4
 	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "fED" = (
 /obj/item/hand_labeler{
@@ -4747,12 +5014,8 @@
 /obj/item/reagent_containers/dropper{
 	pixel_y = -4
 	},
-/obj/effect/floor_decal/newcorner/blue/diagonal,
 /obj/structure/table/steel_reinforced,
-/turf/simulated/floor/tiled{
-	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
-	icon_state = "white1"
-	},
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "fEN" = (
 /obj/machinery/door/unpowered/inn{
@@ -4884,13 +5147,7 @@
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "fMn" = (
-/obj/structure/statue/verina{
-	desc = "A polished and well maintained statue of Saint Celestine of the Order of Our Martyred Lady. Despair, and you give yourself to the shadows. Believe, truly believe in the Emperor of Mankind, and you shall walk in His light no matter how dark the path you tread.";
-	name = "Statue of Saint Celestine";
-	pixel_x = -15;
-	density = 0
-	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "fMq" = (
 /obj/structure/closet/crate/large,
@@ -4905,6 +5162,14 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"fML" = (
+/obj/structure/closet/crate{
+	anchored = 1
+	},
+/obj/item/gun/projectile/bolter_pistol/sisterofbattle,
+/obj/item/gun/projectile/bolter_pistol/sisterofbattle,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "fNc" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 4;
@@ -5053,6 +5318,15 @@
 /obj/item/ammo_magazine/mc9mm/ms,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
+"fUV" = (
+/obj/machinery/button/remote/blast_door/lever{
+	id = "butt";
+	req_one_access = list(213);
+	pixel_y = -32;
+	name = "Living Quarters Lockdown"
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "fVB" = (
 /obj/effect/decal/cleanable/cobweb{
 	dir = 1
@@ -5088,15 +5362,12 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "gdp" = (
-/obj/structure/bed/chair/office/light{
-	dir = 1
+/obj/structure/sign/ship{
+	icon_state = "trading";
+	desc = "A small screen, it displays the name of troops that are missing in action."
 	},
-/obj/effect/floor_decal/newcorner/blue/diagonal,
-/turf/simulated/floor/tiled{
-	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
-	icon_state = "white1"
-	},
-/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
+/turf/simulated/wall/castle,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "gdQ" = (
 /obj/structure/table/graf/rusty_table,
 /obj/item/device/chisel,
@@ -5134,7 +5405,7 @@
 	dir = 1;
 	icon_state = "torchwall0"
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "geX" = (
 /obj/machinery/light/small/red{
@@ -5192,6 +5463,21 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"ghr" = (
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tilethick";
+	dir = 8;
+	pixel_y = 2
+	},
+/obj/item/fluff_items/skull{
+	pixel_y = 10
+	},
+/obj/item/clothing/head/hairflower{
+	pixel_x = -4;
+	pixel_y = 4
+	},
+/turf/simulated/floor/fancyfloor/oldcobble,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "ghC" = (
 /obj/machinery/light/small/red{
 	dir = 1
@@ -5241,6 +5527,17 @@
 /obj/effect/floor_decal/newcorner/shaft,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/research/robotics)
+"giL" = (
+/obj/structure/table/graf/polished_table,
+/obj/item/paper_bin{
+	pixel_y = 7
+	},
+/obj/item/pen{
+	pixel_x = -5;
+	pixel_y = 6
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "gjz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/turf/lfloorscorched1,
@@ -5289,23 +5586,58 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
+"gmF" = (
+/obj/item/tray,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/reagent_containers/food/drinks/flask/goblet{
+	pixel_x = 18
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue/middle,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "gni" = (
 /obj/structure/stairs/east,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/caves)
 "gnr" = (
-/obj/machinery/light/small{
-	dir = 4
+/obj/item/reagent_containers/food/drinks/teapot{
+	pixel_y = 14
 	},
-/turf/simulated/floor/fancyfloor/gray_white,
+/obj/item/reagent_containers/food/drinks/tea{
+	pixel_y = 2;
+	pixel_x = -6
+	},
+/obj/item/reagent_containers/food/drinks/tea{
+	pixel_y = 2;
+	pixel_x = 5
+	},
+/obj/item/reagent_containers/food/drinks/tea{
+	pixel_x = 5;
+	pixel_y = -2
+	},
+/obj/item/reagent_containers/food/drinks/tea{
+	pixel_x = -6;
+	pixel_y = -2
+	},
+/obj/item/reagent_containers/food/drinks/tea{
+	pixel_y = 16;
+	pixel_x = 14
+	},
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue/middle,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "gnv" = (
-/obj/structure/table/rack/dark,
-/obj/item/clothing/suit/storage/sistersuit,
-/obj/item/clothing/suit/storage/sistersuit,
-/obj/item/clothing/head/hospitallerhelm,
-/obj/item/clothing/head/hospitallerhelm,
-/turf/simulated/floor/ceramic,
+/obj/machinery/door/blast/grates{
+	id = "relics2";
+	name = "Armory"
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 4
+	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "gnO" = (
 /obj/structure/table/steel_reinforced,
@@ -5382,10 +5714,29 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
 "gqX" = (
-/obj/machinery/cooker/grill,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
+/obj/structure/table/marble{
+	color = "grey"
 	},
+/obj/item/fluff_items/skull{
+	pixel_x = 9;
+	pixel_y = -2
+	},
+/obj/item/fluff_items/skull{
+	pixel_x = 9;
+	pixel_y = 8
+	},
+/obj/item/fluff_items/skull{
+	pixel_y = 8;
+	pixel_x = -9
+	},
+/obj/item/fluff_items/skull{
+	pixel_y = -2;
+	pixel_x = -9
+	},
+/obj/item/rosarius/broken{
+	pixel_y = 5
+	},
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "grg" = (
 /obj/random/trash,
@@ -5399,25 +5750,17 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
 "gsn" = (
-/obj/structure/torchwall/service{
-	dir = 4;
-	icon_state = "torchwall0"
+/obj/structure/table/graf/rusty_table,
+/obj/item/book/manual{
+	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
+	name = "Lectitio Divinitatus";
+	pixel_y = 4
 	},
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "gsu" = (
-/obj/structure/sink{
-	dir = 8;
-	icon_state = "sink";
-	layer = 50;
-	pixel_x = -12;
-	color = "grey"
-	},
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/obj/structure/grille/iron_fence,
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "gsN" = (
 /obj/structure/table/rack/dark,
@@ -5487,7 +5830,7 @@
 /obj/structure/sign/plate/stoneshrine{
 	pixel_y = 32
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "gxt" = (
 /obj/effect/floor_decal/industrial/warning_red{
@@ -5581,7 +5924,7 @@
 /obj/structure/table/graf/big_wood_table{
 	dir = 8
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "gDh" = (
 /obj/item/clothing/shoes/jackboots/cadian,
@@ -5622,6 +5965,19 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/research/robotics)
+"gEU" = (
+/obj/structure/statue/prayer{
+	dir = 4;
+	pixel_y = 30;
+	pixel_x = -1
+	},
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 8;
+	pixel_y = 2
+	},
+/turf/simulated/floor/fancyfloor/oldcobble,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "gFF" = (
 /obj/structure/bed/chair/office/light{
 	dir = 8
@@ -5725,13 +6081,10 @@
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
 "gJq" = (
-/obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/iv_drip,
 /obj/structure/iv_drip,
 /obj/structure/iv_drip,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "gJF" = (
 /obj/structure/table/graf/pagan,
@@ -5745,7 +6098,7 @@
 	},
 /obj/effect/landmark/corpse,
 /obj/effect/floor_decal/turf/necro1,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "gJH" = (
 /obj/structure/closet/hive/metal{
@@ -5803,6 +6156,28 @@
 	icon_state = "floor7"
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
+"gLm" = (
+/obj/item/reagent_containers/food/drinks/tea{
+	pixel_y = 2;
+	pixel_x = -6
+	},
+/obj/item/reagent_containers/food/drinks/tea{
+	pixel_y = 2;
+	pixel_x = 5
+	},
+/obj/item/reagent_containers/food/drinks/tea{
+	pixel_x = -6;
+	pixel_y = -2
+	},
+/obj/item/reagent_containers/food/drinks/tea{
+	pixel_x = 5;
+	pixel_y = -2
+	},
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue/middle,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "gMk" = (
 /obj/machinery/door/airlock/glass_medical{
 	color = null;
@@ -5843,18 +6218,15 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "gPr" = (
-/obj/machinery/recharger,
-/obj/item/defibrillator/compact/loaded,
-/obj/structure/table/steel_reinforced,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1";
-	name = "freezer floor"
-	},
+/obj/effect/floor_decal/newcorner/stone,
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "gPw" = (
-/obj/structure/closet/secure_closet/freezer/meat,
-/turf/simulated/floor/tiled/freezer,
+/obj/structure/table/steel_reinforced,
+/obj/machinery/chemical_dispenser/bar_coffee/full{
+	pixel_y = 2
+	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "gPx" = (
 /obj/structure/catwalkrust/blocked,
@@ -5928,14 +6300,10 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "gWn" = (
-/obj/structure/table/rack/dark,
-/obj/item/device/cassette/inqlog1{
-	pixel_y = -7
+/obj/effect/floor_decal/plaque{
+	desc = "Though the darkness will be rent by noise and flame. Let not men's souls be broken in the crucible of war."
 	},
-/obj/item/device/cassette/brokensaint{
-	pixel_y = 4
-	},
-/turf/simulated/floor/ceramic,
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "gWq" = (
 /obj/structure/table/standard{
@@ -5972,7 +6340,7 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "gYU" = (
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "gZd" = (
 /obj/item/ammo_magazine/ork/slugga,
@@ -6022,11 +6390,23 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "hbk" = (
-/obj/structure/cult/tome,
-/obj/effect/floor_decal/newcorner/stone/corner{
-	dir = 1
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tilethick";
+	dir = 4
 	},
-/turf/simulated/floor/ceramic/old,
+/obj/item/clothing/suit/armor/fraterisarmor{
+	pixel_x = -15;
+	pixel_y = 3
+	},
+/obj/item/clothing/suit/armor/fraterisarmor{
+	pixel_x = -15;
+	pixel_y = 3
+	},
+/obj/item/clothing/suit/armor/knighthosp{
+	pixel_y = 5;
+	pixel_x = 1
+	},
+/turf/simulated/floor/fancyfloor/carpet/middle,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "hbE" = (
 /obj/random/loot/randomammo1,
@@ -6257,6 +6637,23 @@
 /obj/structure/undies_wardrobe,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"hoS" = (
+/obj/item/tray{
+	pixel_x = 6;
+	pixel_y = -2
+	},
+/obj/item/material/kitchen/utensil/fork{
+	pixel_x = -6
+	},
+/obj/item/material/kitchen/utensil/knife,
+/obj/item/reagent_containers/food/drinks/flask/goblet{
+	pixel_x = 18
+	},
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue/middle,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "hpe" = (
 /obj/structure/sign/mailbox0,
 /turf/simulated/wall/seolite,
@@ -6405,7 +6802,7 @@
 /area/cadiaoutpost/new_hive/caves)
 "hxd" = (
 /obj/structure/stairs/south,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "hxD" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6448,6 +6845,20 @@
 /obj/effect/floor_decal/newcorner/stone,
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"hyp" = (
+/obj/structure/closet/crate{
+	anchored = 1
+	},
+/obj/item/card/id/key/grand/monastary{
+	access = list(213,211)
+	},
+/obj/item/card/id/key/grand/monastary{
+	access = list(213,211)
+	},
+/obj/item/card/id/key/grand/monastary/inner,
+/obj/item/card/id/key/grand/monastary/inner,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "hze" = (
 /obj/structure/hivedecor/sarcofagus,
 /obj/structure/sign/plate/written{
@@ -6603,6 +7014,14 @@
 /obj/structure/closet/crate/miner,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/new_hive/caves)
+"hHk" = (
+/obj/structure/bed/chair/wood/fancy{
+	dir = 1
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 10
+	},
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "hIf" = (
 /obj/effect/floor_decal/newcorner/white/solid,
 /obj/effect/wingrille_spawn/reinforced{
@@ -6637,16 +7056,10 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
 "hLg" = (
-/obj/structure/bed/chair{
+/obj/structure/bed/chair/wood/fancy{
 	dir = 4
 	},
-/obj/structure/torchwall/service{
-	dir = 1;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "hLQ" = (
 /obj/structure/bed/chair/wood/simple{
@@ -6720,7 +7133,10 @@
 	pixel_x = -17
 	},
 /obj/effect/floor_decal/newcorner/stone,
-/turf/simulated/floor/fancyfloor/coralg,
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
+	},
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "hOL" = (
 /obj/structure/table/rack/dark,
@@ -6757,18 +7173,10 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "hPs" = (
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
 	},
-/obj/machinery/recharger,
-/obj/item/defibrillator/compact/loaded,
-/obj/structure/table/steel_reinforced,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1";
-	name = "freezer floor"
-	},
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "hPO" = (
 /obj/effect/decal/remains,
@@ -6797,7 +7205,7 @@
 /obj/effect/floor_decal/newcorner/nbar{
 	dir = 8
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "hQW" = (
 /obj/structure/bed/chair/wood/simple,
@@ -7018,7 +7426,7 @@
 /obj/structure/table/graf/big_wood_table{
 	dir = 1
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "ifK" = (
 /obj/random/loot/guardgear,
@@ -7119,6 +7527,16 @@
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/new_hive/caves)
+"ijB" = (
+/obj/structure/closet/crate{
+	anchored = 1
+	},
+/obj/item/grenade/frag/high_yield/krak,
+/obj/item/grenade/frag/high_yield/krak,
+/obj/item/grenade/frag,
+/obj/item/grenade/frag,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "ikr" = (
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /turf/simulated/floor/seolite,
@@ -7177,11 +7595,8 @@
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/new_hive/caves)
 "imP" = (
-/obj/machinery/photocopier,
-/obj/item/device/toner,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "ina" = (
 /obj/item/pickaxe/diamond,
@@ -7230,12 +7645,13 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "ioa" = (
-/obj/machinery/door/window/southleft{
-	name = "Relic Storage";
-	color = "grey";
-	req_one_access = list(333)
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 4
 	},
-/turf/simulated/floor/fancyfloor/coralg,
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
+	},
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "iod" = (
 /obj/effect/floor_decal/newcorner/nbar/corner{
@@ -7317,10 +7733,12 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "iss" = (
-/turf/simulated/floor/ceramic/surgery{
-	dir = 6
+/obj/effect/floor_decal/newcorner/stone/corner{
+	dir = 4
 	},
-/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
+/obj/structure/flora/yes/plant,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "iui" = (
 /obj/structure/table/steel_reinforced,
 /obj/random/loot/randomammo1,
@@ -7332,10 +7750,22 @@
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
 "iun" = (
-/obj/machinery/cooker/oven,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
+/obj/item/tray{
+	pixel_y = 6
 	},
+/obj/item/reagent_containers/food/drinks/flask/goblet{
+	pixel_x = 14
+	},
+/obj/item/material/kitchen/utensil/knife{
+	pixel_x = -6
+	},
+/obj/item/material/kitchen/utensil/fork{
+	pixel_x = -13
+	},
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue/middle,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "iuA" = (
 /obj/machinery/light/small,
@@ -7644,6 +8074,13 @@
 /obj/structure/grille/iron_fence,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/caves)
+"iMT" = (
+/obj/structure/table/steel_reinforced,
+/obj/machinery/microwave{
+	pixel_y = 8
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "iNb" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -7697,11 +8134,12 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "iPP" = (
-/obj/effect/floor_decal/newcorner/blue/solid,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
+/obj/structure/hivedecor/sarcofagus,
+/obj/item/fluff_items/skull{
+	name = "Martyr"
 	},
-/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
+/turf/simulated/floor/fancyfloor/oldcobble,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "iQw" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/tiled{
@@ -7733,11 +8171,12 @@
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 4
 	},
-/turf/simulated/floor/stone/chapel,
+/obj/effect/floor_decal/newcorner/stone,
+/turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "iSn" = (
 /obj/effect/floor_decal/newcorner/plating,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "iTr" = (
 /obj/structure/hivedecor{
@@ -7754,11 +8193,7 @@
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
 "iUc" = (
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1";
-	name = "freezer floor"
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "iUh" = (
 /obj/structure/closet/crate,
@@ -7773,6 +8208,19 @@
 /obj/item/clothing/head/helmet/heavyflak,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
+"iUD" = (
+/obj/structure/grille/iron_fence{
+	health = 1900
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
+	},
+/obj/structure/statue/prayer{
+	dir = 4;
+	pixel_y = -8
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "iVa" = (
 /obj/effect/floor_decal/turf/metal/six,
 /obj/effect/floor_decal/industrial/warning_red{
@@ -7885,7 +8333,7 @@
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 8
 	},
-/turf/simulated/floor/fancyfloor/coralg,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "iYB" = (
 /obj/structure/sink{
@@ -7970,13 +8418,10 @@
 /obj/item/device/healthanalyzer{
 	pixel_x = 8
 	},
-/obj/effect/floor_decal/newcorner/blue/solid,
 /obj/machinery/light,
 /obj/item/FixOVein,
 /obj/structure/table/steel_reinforced,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "jdh" = (
 /obj/machinery/light/small{
@@ -8018,20 +8463,14 @@
 	dir = 1;
 	icon_state = "torchwall0"
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "jeJ" = (
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "jfa" = (
-/obj/structure/sink{
-	dir = 4;
-	pixel_x = 12
-	},
-/obj/structure/mirror{
-	pixel_x = 32
-	},
-/turf/simulated/floor/fancyfloor/gray_white,
+/obj/structure/closet/secure_closet/freezer/meat,
+/turf/simulated/floor/tiled/freezer,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "jfc" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
@@ -8153,7 +8592,7 @@
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
 "jow" = (
 /obj/machinery/light/purple,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "joM" = (
 /obj/machinery/shower{
@@ -8252,9 +8691,8 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "jvj" = (
-/obj/structure/bed/chair{
-	dir = 8;
-	icon_state = "chair_preview"
+/obj/structure/bed/chair/wood/fancy{
+	dir = 8
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -8345,7 +8783,7 @@
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "jzb" = (
 /obj/effect/floor_decal/newcorner/nbar,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "jzg" = (
 /obj/machinery/door/unpowered/newmap/kasr_quarters,
@@ -8374,10 +8812,15 @@
 /area/cadiaoutpost/oa/medicae)
 "jBq" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/reagent_containers/glass/beaker/large,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
+/obj/item/reagent_containers/food/condiment/small/peppermill{
+	pixel_x = 7;
+	pixel_y = 3
 	},
+/obj/item/reagent_containers/food/condiment/small/saltshaker,
+/obj/item/reagent_containers/food/condiment/small/sugar{
+	pixel_y = 12
+	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "jBy" = (
 /obj/structure/closet/crate,
@@ -8426,6 +8869,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
+"jES" = (
+/obj/effect/floor_decal/newcorner/stone/corner,
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
+	},
+/obj/structure/grille/iron_fence,
+/turf/simulated/floor/fancyfloor/oldcobble,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "jFr" = (
 /turf/simulated/floor/darkfloor{
 	dir = 1
@@ -8563,7 +9014,6 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "jMp" = (
-/obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
 /obj/item/suture,
 /obj/item/suture,
@@ -8577,21 +9027,22 @@
 /obj/item/bandage_pack,
 /obj/item/bandage_pack,
 /obj/item/bandage_pack,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "jMq" = (
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
-"jML" = (
-/obj/effect/floor_decal/industrial/hatch/blue,
-/obj/structure/bed/chair/wheelchair,
-/obj/structure/bed/chair/wheelchair,
-/obj/structure/bed/chair/wheelchair,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
+"jME" = (
+/obj/structure/bed/chair/wood/fancy/comfy2,
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 1
 	},
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"jML" = (
+/obj/structure/bed/chair/wheelchair,
+/obj/structure/bed/chair/wheelchair,
+/obj/structure/bed/chair/wheelchair,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "jMT" = (
 /turf/simulated/floor/ceramic/blackstone,
@@ -8648,7 +9099,7 @@
 /area/cadiaoutpost/oa/hallway/centralhall)
 "jPE" = (
 /obj/item/book/manual/tzeentch_recipes,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "jPP" = (
 /obj/structure/table/rack/dark,
@@ -8686,10 +9137,8 @@
 /area/cadiaoutpost/oa/villageinside/lab)
 "jRi" = (
 /obj/machinery/optable,
-/obj/effect/floor_decal/newcorner/blue/solid,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "jSc" = (
 /obj/effect/floor_decal/newcorner/red/quarter{
@@ -8898,9 +9347,7 @@
 /area/cadiaoutpost/oa/magistratumpost)
 "kek" = (
 /obj/machinery/chem_master/condimaster,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "keN" = (
 /obj/structure/closet/secure_closet/hop2{
@@ -8929,6 +9376,13 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"kgg" = (
+/obj/structure/sign/plate/written{
+	name = "Inscription";
+	desc = "If Thou knowest a fault of mine - burn me"
+	},
+/turf/simulated/wall/castle,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "kgH" = (
 /obj/structure/table/rack/dark,
 /obj/item/halter{
@@ -9144,7 +9598,7 @@
 /obj/structure/table/woodentable{
 	color = "#36261B"
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "kpe" = (
 /obj/structure/table/rack/dark,
@@ -9176,6 +9630,13 @@
 /obj/effect/decal/cleanable/cobweb,
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"kqo" = (
+/obj/structure/hivedecor/xenos/powergen/on{
+	name = "machine"
+	},
+/obj/effect/floor_decal/turf/big_cables1,
+/turf/simulated/wall/castle,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "kqF" = (
 /obj/structure/statue/verina{
 	desc = "A polished and well maintained statue of Saint Celestine of the Order of Our Martyred Lady. Despair, and you give yourself to the shadows. Believe, truly believe in the Emperor of Mankind, and you shall walk in His light no matter how dark the path you tread.";
@@ -9203,16 +9664,14 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "krr" = (
-/obj/structure/table/rack/dark,
-/obj/item/clothing/under/guard/uniform/sisterofbattle,
-/obj/item/clothing/under/guard/uniform/sisterofbattle,
-/obj/item/clothing/under/guard/uniform/sisterofbattle,
-/obj/item/clothing/under/guard/uniform/sisterofbattle,
-/obj/structure/torchwall/service{
-	dir = 4;
-	icon_state = "torchwall0"
+/obj/machinery/door/blast/grates{
+	id = "relics";
+	name = "Relics"
 	},
-/turf/simulated/floor/ceramic,
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 8
+	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "krP" = (
 /obj/effect/water/bottom,
@@ -9269,7 +9728,6 @@
 /turf/simulated/floor/fancyfloor/marble,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "kwu" = (
-/obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
 /obj/item/storage/box/freezer{
 	pixel_y = -9
@@ -9277,9 +9735,7 @@
 /obj/item/storage/box/freezer{
 	pixel_y = 2
 	},
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "kwA" = (
 /obj/machinery/optable,
@@ -9301,13 +9757,17 @@
 /obj/item/reagent_containers/food/condiment/flour,
 /obj/item/storage/fancy/egg_box,
 /obj/item/reagent_containers/food/condiment/sugar,
+/obj/machinery/light/small{
+	dir = 1;
+	icon_state = "bulb1"
+	},
 /turf/simulated/floor/tiled/freezer,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "kye" = (
 /obj/effect/decal/cleanable/cobweb{
 	dir = 4
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "kyM" = (
 /obj/effect/floor_decal/newcorner/blue{
@@ -9375,7 +9835,7 @@
 	req_one_access = list(302)
 	},
 /obj/structure/table/graf/rusty_table,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "kCf" = (
 /obj/structure/bed/chair/office/dark{
@@ -9451,10 +9911,18 @@
 	pixel_x = 9
 	},
 /obj/item/flame/candle/church{
-	pixel_y = 8
+	pixel_y = 8;
+	pixel_x = 1
 	},
 /obj/effect/floor_decal/newcorner/stone,
-/turf/simulated/floor/stone/chapel,
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 8
+	},
+/obj/item/flame/candle/dinner{
+	pixel_x = -13;
+	pixel_y = 9
+	},
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "kFN" = (
 /obj/effect/floor_decal/newcorner/plating/quarter{
@@ -9511,16 +9979,11 @@
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
 "kKF" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
-/obj/item/reagent_containers/food/condiment/flour,
-/obj/item/reagent_containers/food/condiment/flour,
-/obj/item/storage/fancy/egg_box,
-/obj/item/reagent_containers/food/condiment/sugar,
-/obj/machinery/light/small{
-	dir = 1;
-	icon_state = "bulb1"
+/obj/structure/toilet{
+	dir = 8;
+	icon_state = "toilet00"
 	},
-/turf/simulated/floor/tiled/freezer,
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "kKI" = (
 /obj/machinery/microwave,
@@ -9554,6 +10017,22 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"kOj" = (
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 8
+	},
+/obj/item/fluff_items/goldsword,
+/obj/item/melee/chain/mercycs{
+	color = "#808080";
+	name = "Order of Our Martyred Lady's Primeval Chainsword";
+	force_wielded = 52;
+	desc = "The Sacred chainsword of the chosen Repentia. Women whom are not Repentia and wield this should be punished.";
+	pixel_x = -13;
+	pixel_y = 2
+	},
+/turf/simulated/floor/fancyfloor/oldcobble,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "kOp" = (
 /obj/item/book/manual{
 	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
@@ -9592,6 +10071,34 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/research/robotics)
+"kPT" = (
+/obj/item/flame/candle/dinner{
+	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
+	name = "wax candle";
+	pixel_x = 10;
+	pixel_y = 5;
+	wax = 40000
+	},
+/obj/item/tray{
+	pixel_x = -6;
+	pixel_y = 6
+	},
+/obj/item/material/kitchen/utensil/fork{
+	pixel_x = 6
+	},
+/obj/item/material/kitchen/utensil/knife{
+	pixel_x = 3
+	},
+/obj/item/reagent_containers/food/drinks/flask/goblet{
+	pixel_x = -18
+	},
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 4
+	},
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "kQX" = (
 /obj/structure/closet/hive/metal{
 	anchored = 1
@@ -9763,6 +10270,14 @@
 	dir = 1
 	},
 /area/cadiaoutpost/new_hive/caves)
+"kYm" = (
+/obj/structure/bed/chair/wood/fancy{
+	dir = 1
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 6
+	},
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "kYY" = (
 /obj/structure/torchwall/service{
 	pixel_y = 32
@@ -9833,7 +10348,6 @@
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/oa/medicae)
 "lbn" = (
-/obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
 /obj/item/clothing/gloves/latex/nitrile,
 /obj/item/clothing/gloves/latex/nitrile,
@@ -9841,15 +10355,13 @@
 /obj/item/clothing/gloves/latex/nitrile,
 /obj/item/storage/box/masks,
 /obj/item/storage/box/masks,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "lbo" = (
 /obj/machinery/light/purple{
 	dir = 1
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "lbv" = (
 /obj/structure/sign/mechanicus{
@@ -9880,12 +10392,22 @@
 	dir = 1;
 	icon_state = "torchwall0"
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "leu" = (
 /obj/structure/flora/pottedplant/minitree,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
+"leF" = (
+/obj/machinery/door/blast/grates{
+	id = "relics";
+	name = "Relics"
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "leG" = (
 /obj/effect/floor_decal/newcorner/red{
 	dir = 4
@@ -9942,12 +10464,19 @@
 "liM" = (
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"ljr" = (
-/obj/structure/cult/tome,
-/obj/item/pen,
-/turf/simulated/floor/tiled{
-	color = "grey"
+"ljo" = (
+/obj/structure/sink{
+	dir = 8;
+	icon_state = "sink";
+	layer = 50;
+	pixel_x = -10;
+	pixel_y = 2
 	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
+"ljr" = (
+/obj/effect/floor_decal/newcorner/stone,
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "ljC" = (
 /obj/structure/torchwall{
@@ -9982,12 +10511,9 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "lpG" = (
-/obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/closet/secure_closet/medical2,
 /obj/item/gun/launcher/syringe/rapid,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "lqi" = (
 /obj/random/junk,
@@ -10029,7 +10555,7 @@
 /area/cadiaoutpost/oa/research/robotics)
 "lrD" = (
 /obj/structure/statue/prayer,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "lsN" = (
 /turf/simulated/floor/tiled/dark{
@@ -10059,7 +10585,7 @@
 /obj/structure/bed/chair{
 	dir = 8
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "luw" = (
 /obj/effect/floor_decal/newcorner/blue/quarter,
@@ -10069,7 +10595,6 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "luy" = (
-/obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
 /obj/item/storage/box/bodybags,
 /obj/item/storage/box/bodybags,
@@ -10078,9 +10603,7 @@
 /obj/item/roller,
 /obj/item/roller,
 /obj/item/roller,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "luE" = (
 /turf/simulated/floor/darksteel_floor,
@@ -10098,6 +10621,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"lvD" = (
+/obj/machinery/door/airlock/highsecurity/imperiumdoor{
+	name = "Imperialis Doorway - Monasterium";
+	req_one_access = list()
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "lvF" = (
 /obj/effect/floor_decal/newcorner/red/quarter{
 	dir = 1
@@ -10232,19 +10762,16 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
 "lEf" = (
-/obj/structure/table/rack/dark,
-/obj/item/clothing/suit/armor/templar,
-/obj/item/clothing/suit/armor/knighthosp,
+/obj/structure/torchwall/service{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/obj/structure/table/graf/pagan,
 /obj/item/clothing/suit/armor/fraterisarmor,
-/obj/item/clothing/suit/armor/fraterisarmor,
-/obj/item/clothing/head/helmet/hauberk,
-/obj/item/clothing/head/helmet/hauberk,
-/obj/item/clothing/head/helmet/hauberk,
-/obj/item/clothing/head/helmet/hauberk,
-/turf/simulated/floor/ceramic,
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
+/turf/simulated/floor/stone/ancient_stone_old,
+/area/cadiaoutpost/oa/service/chapel/recovery)
 "lEG" = (
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "lEY" = (
 /obj/effect/floor_decal/turf/bar2,
@@ -10278,7 +10805,7 @@
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 1
 	},
-/turf/simulated/floor/ceramic,
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "lHe" = (
 /obj/structure/table/rack/dark,
@@ -10455,6 +10982,34 @@
 "lPX" = (
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"lQN" = (
+/obj/item/flame/candle/dinner{
+	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
+	name = "wax candle";
+	pixel_x = 10;
+	pixel_y = 5;
+	wax = 40000
+	},
+/obj/item/tray{
+	pixel_x = -6;
+	pixel_y = -2
+	},
+/obj/item/material/kitchen/utensil/fork{
+	pixel_x = 6
+	},
+/obj/item/material/kitchen/utensil/knife{
+	pixel_x = 3
+	},
+/obj/item/reagent_containers/food/drinks/flask/goblet{
+	pixel_x = -18
+	},
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 4
+	},
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "lQQ" = (
 /obj/structure/sign/mailbox0,
 /turf/simulated/wall/techno,
@@ -10574,7 +11129,7 @@
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "lVZ" = (
 /obj/effect/decal/cleanable/cobweb,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "lXe" = (
 /obj/structure/sign/chaos{
@@ -10683,16 +11238,11 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
 "mfl" = (
-/obj/structure/table/graf/rusty_table,
-/obj/item/book/manual{
-	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
-	name = "Lectitio Divinitatus"
-	},
-/turf/simulated/floor/fancyfloor/coralg,
+/turf/simulated/floor/fancyfloor/carpet/middle,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "mfP" = (
 /obj/structure/statue/prayer,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "mfU" = (
 /obj/structure/table/rack/dark,
@@ -10764,7 +11314,7 @@
 	icon_state = "torchwall0"
 	},
 /obj/effect/floor_decal/newcorner/stone/corner,
-/turf/simulated/floor/ceramic,
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "miO" = (
 /obj/structure/grille/iron_fence,
@@ -10838,9 +11388,7 @@
 /obj/item/clothing/head/chefhat{
 	pixel_y = 12
 	},
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "mpZ" = (
 /obj/structure/table/steel_reinforced,
@@ -10884,7 +11432,7 @@
 /area/cadiaoutpost/oa/magistratumpost)
 "muU" = (
 /obj/structure/hivedecor/defender_statue,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/magistratumpost)
 "mvv" = (
 /obj/structure/table/graf/polished_steel,
@@ -10920,11 +11468,10 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "mwZ" = (
-/obj/structure/table/graf/rusty_table,
-/obj/item/paper_bin,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/effect/floor_decal/plaque{
+	desc = "Give me a gun that never fires! Give me sword that is ever blunt! Give me a weapon that deals no wound as long as it always strikes awe!"
 	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "myc" = (
 /obj/structure/closet/crate/freezer/rations,
@@ -11027,6 +11574,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"mDd" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 8
+	},
+/turf/simulated/floor/dirty/tough,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "mDL" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
@@ -11066,6 +11619,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"mFp" = (
+/obj/machinery/door/airlock/highsecurity/imperiumdoor{
+	name = "Imperialis Doorway - Chapel";
+	req_one_access = list()
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "mFR" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 4
@@ -11132,9 +11692,10 @@
 /obj/structure/torchwall/service{
 	pixel_y = 32
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 8
 	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "mIF" = (
 /obj/structure/table/rack/dark,
@@ -11346,18 +11907,20 @@
 /obj/effect/floor_decal/newcorner/nbar{
 	dir = 1
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "mTf" = (
-/obj/effect/floor_decal/newcorner/blue/diagonal,
 /obj/machinery/sleeper{
 	dir = 4
 	},
-/turf/simulated/floor/tiled{
-	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
-	icon_state = "white1"
-	},
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
+"mTx" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "mTz" = (
 /obj/structure/hivedecor{
 	pixel_x = -15
@@ -11478,14 +12041,11 @@
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/farm)
 "mYY" = (
-/obj/machinery/button/remote/blast_door{
-	name = "BAR THE GATES!";
-	req_one_access = list(211);
-	id = "butt";
-	pixel_x = 28
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 4
 	},
-/turf/simulated/floor/ceramic,
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "mZt" = (
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 2000;
@@ -11513,6 +12073,13 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"nbA" = (
+/obj/structure/sign/plate/written{
+	name = "Inscription";
+	desc = "Through pain, may the God-Emperor make me worthy."
+	},
+/turf/simulated/wall/castle,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "nbX" = (
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /obj/structure/table/rack,
@@ -11537,7 +12104,7 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "nex" = (
 /obj/machinery/floodlight,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "nfI" = (
 /obj/structure/table/rack/shelf,
@@ -11548,11 +12115,7 @@
 /obj/item/suture,
 /obj/item/suture,
 /obj/item/storage/pill_bottle/inaprovaline,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1";
-	name = "freezer floor"
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "ngf" = (
 /turf/simulated/floor/plating,
@@ -11598,7 +12161,7 @@
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 4
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "njV" = (
 /obj/effect/floor_decal/newcorner/red{
@@ -11657,6 +12220,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
+"nnw" = (
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 5
+	},
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "nod" = (
 /obj/structure/table/rack/dark,
 /obj/item/device/lube{
@@ -11827,6 +12395,27 @@
 /obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
+"nwa" = (
+/obj/structure/hivedecor/statue3{
+	pixel_x = -15;
+	desc = "A towering statue of Saint Drusus";
+	pixel_y = 5
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/stone/corner{
+	dir = 4
+	},
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "nwp" = (
 /obj/effect/floor_decal/newcorner/white/solid,
 /obj/effect/floor_decal/newcorner/white/solid,
@@ -11849,6 +12438,10 @@
 	icon_state = "r_wall-2"
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
+"nxh" = (
+/obj/machinery/cooker/oven,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "nxi" = (
 /obj/effect/water/bottom,
 /obj/effect/water/top,
@@ -11906,7 +12499,7 @@
 "nzv" = (
 /obj/item/reagent_containers/food/drinks/glass2/chaos/slannesh,
 /obj/structure/table/graf/pagan,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "nzB" = (
 /obj/effect/decal/cleanable/dirt,
@@ -11932,7 +12525,7 @@
 /obj/effect/decal/cleanable/cobweb{
 	dir = 1
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "nAe" = (
 /turf/simulated/floor/darkfloor{
@@ -12104,7 +12697,7 @@
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 4
 	},
-/turf/simulated/floor/fancyfloor/coralg,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "nIn" = (
 /obj/effect/decal/cleanable/blood/gibs/vomit,
@@ -12125,6 +12718,19 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/medicae)
+"nKz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
+"nKM" = (
+/obj/item/exploration_loot/odd_book,
+/obj/structure/table/graf/polished_table,
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "nLi" = (
 /obj/effect/decal/cleanable/poo,
 /obj/item/reagent_containers/food/snacks/poo,
@@ -12204,6 +12810,13 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
+"nQi" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/ash{
+	pixel_y = 15
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "nQr" = (
 /obj/machinery/light/small/red{
 	dir = 1
@@ -12219,10 +12832,11 @@
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
 "nRl" = (
-/obj/structure/cult/tome,
-/obj/item/ammo_magazine/bolt_pistol_magazine,
-/obj/item/ammo_magazine/bolt_pistol_magazine,
-/turf/simulated/floor/ceramic/old,
+/obj/structure/sign/plate/written{
+	name = "Inscription";
+	desc = "Through suffering, may the God-Emperor make me strong."
+	},
+/turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "nSc" = (
 /obj/structure/table/graf/rusty_table,
@@ -12242,6 +12856,12 @@
 	dir = 1
 	},
 /area/cadiaoutpost/new_hive/caves)
+"nSJ" = (
+/obj/structure/table/rack,
+/obj/item/storage/box/bodybags,
+/obj/item/storage/box/bodybags,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "nTb" = (
 /obj/effect/floor_decal/newcorner/nbar{
 	dir = 8
@@ -12281,9 +12901,11 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "nVK" = (
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
+/obj/effect/floor_decal/newcorner/stone/corner{
+	dir = 4
 	},
+/obj/effect/floor_decal/turf/big_cables2,
+/turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "nWg" = (
 /obj/item/paper_bin,
@@ -12297,7 +12919,6 @@
 /turf/simulated/floor/fancyfloor/carpet/grey,
 /area/cadiaoutpost/oa/magistratumpost)
 "nWu" = (
-/obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/closet/crate/freezer,
 /obj/item/reagent_containers/ivbag/blood/OMinus,
 /obj/item/reagent_containers/ivbag/blood/OMinus,
@@ -12309,9 +12930,7 @@
 /obj/item/reagent_containers/ivbag/blood/OMinus,
 /obj/item/reagent_containers/ivbag/blood/OMinus,
 /obj/item/reagent_containers/ivbag/blood/OMinus,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "nWx" = (
 /obj/machinery/light/small/red{
@@ -12419,6 +13038,14 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"ocB" = (
+/obj/structure/closet/crate{
+	anchored = 1
+	},
+/obj/item/device/cassette/heresy1,
+/obj/item/device/boombox,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "ocZ" = (
 /obj/structure/table/rack/dark,
 /obj/item/clothing/suit/armor/agent/coat,
@@ -12488,21 +13115,16 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "ofo" = (
-/obj/structure/closet/crate{
-	anchored = 1
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 6
 	},
-/obj/item/clothing/suit/sisterofbattle/sobrelic{
-	anchored = 1
-	},
-/obj/item/rosarius/broken,
-/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "ofD" = (
 /obj/structure/hivedecor/statue5{
 	icon = 'icons/map_project/pillars.dmi';
 	icon_state = "1"
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "ofI" = (
 /obj/structure/table/rack/dark,
@@ -12556,7 +13178,7 @@
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 8
 	},
-/turf/simulated/floor/fancyfloor/coralg,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "ojH" = (
 /turf/simulated/floor/wood{
@@ -12652,6 +13274,14 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"omA" = (
+/obj/structure/table/graf/polished_table,
+/obj/item/book/manual{
+	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
+	name = "Lectitio Divinitatus"
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "omD" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 8;
@@ -12700,7 +13330,7 @@
 /turf/simulated/wall/seolite,
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
 "ooD" = (
-/obj/structure/bed/chair{
+/obj/structure/bed/chair/wood/fancy{
 	dir = 4
 	},
 /turf/simulated/floor/fancyfloor/coralg,
@@ -12804,6 +13434,33 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"ouq" = (
+/obj/effect/floor_decal/newcorner/stone,
+/obj/item/flame/candle/church{
+	pixel_y = 8;
+	pixel_x = 1
+	},
+/obj/item/flame/candle/church{
+	pixel_y = 8;
+	pixel_x = 9
+	},
+/obj/item/flame/candle/church{
+	pixel_y = 8;
+	pixel_x = -7
+	},
+/obj/item/flame/candle/dinner{
+	pixel_x = 15;
+	pixel_y = 9
+	},
+/obj/item/flame/candle/dinner{
+	pixel_x = -13;
+	pixel_y = 9
+	},
+/obj/structure/sign/plate/stoneshrine{
+	pixel_y = 32
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "ouu" = (
 /obj/item/reagent_containers/food/drinks/bottle/amasecexpensive{
 	pixel_y = 8;
@@ -12826,18 +13483,9 @@
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
 "ouL" = (
-/obj/structure/closet/crate{
-	anchored = 1
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 10
 	},
-/obj/item/card/id/key/grand/monastary{
-	access = list(213,211)
-	},
-/obj/item/card/id/key/grand/monastary{
-	access = list(213,211)
-	},
-/obj/item/card/id/key/grand/monastary/inner,
-/obj/item/card/id/key/grand/monastary/inner,
-/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "oxY" = (
 /obj/structure/table/graf/rusty_table,
@@ -12882,8 +13530,22 @@
 	},
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"oAx" = (
+/obj/structure/statue/prayer{
+	pixel_y = 30;
+	pixel_x = 1
+	},
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 4;
+	pixel_y = 2
+	},
+/obj/item/exploration_loot/imperial_book{
+	pixel_y = 4
+	},
+/turf/simulated/floor/fancyfloor/oldcobble,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "oAP" = (
-/obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
 /obj/item/soap/soapimp,
 /obj/item/soap/soapimp{
@@ -12892,9 +13554,7 @@
 /obj/item/soap/soapimp{
 	pixel_x = -10
 	},
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "oAQ" = (
 /obj/effect/floor_decal/newcorner/shaft/corner,
@@ -12931,6 +13591,33 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"oEa" = (
+/obj/effect/floor_decal/newcorner/stone,
+/obj/item/flame/candle/church{
+	pixel_y = 8;
+	pixel_x = -1
+	},
+/obj/item/flame/candle/church{
+	pixel_y = 8;
+	pixel_x = 7
+	},
+/obj/item/flame/candle/church{
+	pixel_y = 8;
+	pixel_x = -9
+	},
+/obj/item/flame/candle/dinner{
+	pixel_x = -15;
+	pixel_y = 9
+	},
+/obj/item/flame/candle/dinner{
+	pixel_x = 13;
+	pixel_y = 9
+	},
+/obj/structure/sign/plate/stoneshrine{
+	pixel_y = 32
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "oEe" = (
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 8
@@ -13094,11 +13781,10 @@
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
 "oJA" = (
-/obj/structure/table/steel_reinforced,
-/obj/machinery/reagentgrinder,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
+/obj/structure/toilet{
+	dir = 4
 	},
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "oLp" = (
 /obj/machinery/light/small,
@@ -13127,8 +13813,11 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/magistratumpost)
 "oMR" = (
+/obj/effect/floor_decal/newcorner/trench_flooring{
+	dir = 9
+	},
 /obj/effect/floor_decal/newcorner/stone,
-/turf/simulated/floor/stone/chapel,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "oNi" = (
 /obj/item/storage/box/syringes{
@@ -13142,19 +13831,12 @@
 	icon_state = "tube1"
 	},
 /obj/structure/table/steel_reinforced,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1";
-	name = "freezer floor"
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "oNj" = (
-/obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/closet/secure_closet/medical1,
 /obj/item/gun/launcher/syringe,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "oOh" = (
 /obj/effect/landmark/start/village,
@@ -13181,7 +13863,7 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "oPJ" = (
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "oQD" = (
 /obj/structure/table/rack/dark,
@@ -13259,9 +13941,7 @@
 "oVu" = (
 /obj/item/storage/firstaid/surgery,
 /obj/structure/table/steel_reinforced,
-/turf/simulated/floor/ceramic/surgery{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "oWo" = (
 /obj/machinery/button/remote/blast_door/id_scan{
@@ -13273,6 +13953,13 @@
 /obj/machinery/vending/security,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"oXb" = (
+/obj/structure/sign/plate/written{
+	name = "Inscription";
+	desc = "Through death, may the God-Emperor make me whole."
+	},
+/turf/simulated/wall/castle,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "oXL" = (
 /obj/effect/floor_decal/newcorner/red/corner{
 	dir = 4
@@ -13316,7 +14003,7 @@
 /obj/machinery/light/purple,
 /obj/effect/landmark/corpse,
 /obj/effect/floor_decal/turf/necro1,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "paf" = (
 /obj/structure/table/rack/shelf{
@@ -13412,6 +14099,19 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"pez" = (
+/obj/structure/torchwall/service{
+	dir = 8;
+	icon_state = "torchwall0"
+	},
+/obj/machinery/button/remote/blast_door/lever{
+	id = "relics2";
+	req_one_access = list(213);
+	pixel_x = 32;
+	name = "Armory"
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "pfa" = (
 /obj/effect/decal/cleanable/cobweb,
 /obj/item/clothing/suit/armor/heretcoat/tzeecult,
@@ -13449,11 +14149,20 @@
 /obj/effect/floor_decal/newcorner/plating/corner{
 	dir = 1
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "phz" = (
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/new_hive/caves)
+"phJ" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
+	},
+/obj/effect/floor_decal/turf/big_cables1{
+	dir = 5
+	},
+/turf/simulated/floor/plating/reinforced,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "phO" = (
 /obj/effect/landmark{
 	name = "orkstart"
@@ -13487,7 +14196,7 @@
 /obj/structure/torchwall/service{
 	pixel_y = 32
 	},
-/turf/simulated/floor/ceramic,
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "pjF" = (
 /obj/structure/table/rack/shelf{
@@ -13551,6 +14260,18 @@
 	},
 /turf/simulated/floor/darkfloor,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"pmQ" = (
+/obj/effect/floor_decal/turf/big_cables1{
+	dir = 9
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
+	},
+/turf/simulated/floor/plating/reinforced,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "pnr" = (
 /turf/simulated/floor/darkfloor{
 	dir = 1
@@ -13579,6 +14300,12 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"poN" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 8
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "ppX" = (
 /obj/machinery/light/small/red,
 /turf/simulated/floor/tiled{
@@ -13732,6 +14459,14 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"pyL" = (
+/obj/machinery/shower{
+	dir = 8;
+	icon_state = "shower"
+	},
+/obj/structure/window/basic,
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "pyX" = (
 /obj/effect/floor_decal/newcorner/stone/corner,
 /turf/simulated/floor/ceramic,
@@ -13740,7 +14475,7 @@
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 8
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "pzJ" = (
 /obj/structure/sign/chaos{
@@ -13761,7 +14496,7 @@
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 1
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "pAX" = (
 /obj/effect/floor_decal/newcorner/stone{
@@ -13773,7 +14508,7 @@
 /obj/effect/decal/cleanable/cobweb{
 	dir = 1
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "pCb" = (
 /obj/effect/floor_decal/newcorner/plating/quarter{
@@ -13801,16 +14536,13 @@
 /obj/item/device/healthanalyzer{
 	pixel_x = 8
 	},
-/obj/effect/floor_decal/newcorner/blue/solid,
 /obj/machinery/light{
 	dir = 1;
 	icon_state = "tube1"
 	},
 /obj/structure/table/steel_reinforced,
 /obj/item/FixOVein,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "pDI" = (
 /obj/effect/floor_decal/newcorner/nbar/corner{
@@ -13827,16 +14559,22 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"pEu" = (
-/obj/structure/torchwall/service{
-	dir = 4;
-	icon_state = "torchwall0"
+"pEp" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 8
 	},
-/obj/structure/table/graf/pagan,
-/obj/effect/decal/cleanable/cobweb,
-/obj/item/clothing/suit/armor/fraterisarmor,
-/turf/simulated/floor/stone/ancient_stone_old,
-/area/cadiaoutpost/oa/service/chapel/recovery)
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
+"pEu" = (
+/obj/effect/floor_decal/newcorner/stone/corner{
+	dir = 8
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
+	},
+/obj/structure/grille/iron_fence,
+/turf/simulated/floor/fancyfloor/oldcobble,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "pEB" = (
 /obj/machinery/door/airlock/glass_engineering{
 	color = null;
@@ -13893,7 +14631,7 @@
 "pGc" = (
 /obj/item/reagent_containers/food/drinks/glass2/chaos/tzeench,
 /obj/structure/table/graf/big_wood_table,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "pGG" = (
 /obj/effect/decal/cleanable/dirt,
@@ -14039,11 +14777,7 @@
 	pixel_y = 6
 	},
 /obj/structure/table/steel_reinforced,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1";
-	name = "freezer floor"
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "pKK" = (
 /obj/item/storage/box/bodybags,
@@ -14103,7 +14837,7 @@
 	desc = "I have no more time, and find I cannot leave without knowing. I will give my life, nothing else matters to me now. I was not able to acquire a stronger focusing crystal, so I must be quick. Should I disappear forever behind this wall, then perhaps at least I will be remembered as the good physician, and not the madman.";
 	name = "Research Notes"
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "pOk" = (
 /obj/effect/decal/cleanable/cobweb{
@@ -14188,12 +14922,27 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
+"pRz" = (
+/obj/structure/bed/chair/wood/fancy,
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 5
+	},
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "pSi" = (
 /obj/structure/table/rack/shelf,
 /obj/item/reagent_containers/hypospray/autoinjector/tau,
 /obj/item/reagent_containers/hypospray/autoinjector/tau,
 /turf/simulated/floor/reinforced,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"pSq" = (
+/obj/structure/closet/crate{
+	anchored = 1
+	},
+/obj/item/clothing/suit/sisterofbattle/repentia,
+/obj/item/clothing/shoes/jackboots/sisterofbattle/repentia,
+/obj/item/clothing/head/helmet/sisterofbattle/repentia,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "pSv" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 8
@@ -14257,7 +15006,10 @@
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 1
 	},
-/turf/simulated/floor/stone/chapel,
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 8
+	},
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "pWg" = (
 /obj/structure/closet/secure_closet/brig,
@@ -14279,7 +15031,7 @@
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 8
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "pYM" = (
 /obj/effect/floor_decal/newcorner/reinforced{
@@ -14316,7 +15068,7 @@
 "qbz" = (
 /obj/item/book/tome,
 /obj/effect/decal/cleanable/cobweb,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "qbQ" = (
 /obj/effect/floor_decal/newcorner/stone,
@@ -14352,7 +15104,7 @@
 	dir = 1;
 	icon_state = "torchwall0"
 	},
-/turf/simulated/floor/ceramic,
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "qeC" = (
 /turf/unsimulated/miningtime,
@@ -14459,12 +15211,10 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "qmq" = (
-/obj/machinery/shower{
-	dir = 4;
-	icon_state = "shower"
+/obj/structure/hivedecor/bookcase{
+	pixel_x = 12
 	},
-/obj/structure/window/basic,
-/turf/simulated/floor/fancyfloor/gray_white,
+/turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "qmv" = (
 /obj/machinery/door/unpowered/jail_door{
@@ -14492,15 +15242,12 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "qnw" = (
-/obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
 /obj/item/storage/pill_bottle/tramadol,
 /obj/item/storage/pill_bottle/dylovene,
 /obj/item/storage/pill_bottle/inaprovaline,
 /obj/item/storage/pill_bottle/kelotane,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "qnR" = (
 /obj/machinery/light/small{
@@ -14584,7 +15331,7 @@
 /obj/effect/decal/cleanable/cobweb2{
 	dir = 4
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "qrS" = (
 /obj/structure/sign/plate{
@@ -14616,16 +15363,12 @@
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
 "qsP" = (
-/obj/effect/floor_decal/newcorner/blue/diagonal,
 /obj/structure/bed/roller,
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled{
-	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
-	icon_state = "white1"
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "qtX" = (
 /obj/item/device/cassette/orks1,
@@ -14654,7 +15397,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "qxO" = (
 /obj/item/reagent_containers/glass/beaker/large,
@@ -14740,7 +15483,7 @@
 "qCj" = (
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
 	name = "Imperialis Doorway - Monasterium";
-	req_one_access = list()
+	req_one_access = list(333,213)
 	},
 /obj/machinery/door/blast/id_door/open{
 	id = "butt"
@@ -14791,7 +15534,7 @@
 /obj/effect/decal/cleanable/cobweb{
 	dir = 8
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "qET" = (
 /obj/structure/bookcase,
@@ -14799,7 +15542,7 @@
 	desc = "My people shackled the stars, and broke mortality when the species you sprang from had barely left the slime pools it spawned in. Our wars burned reality, and the dominion of our kings is without limit. The ground you tread on is not yours; it is ours.";
 	name = "necron tome"
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "qEW" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
@@ -14857,7 +15600,7 @@
 /obj/effect/decal/cleanable/cobweb{
 	dir = 4
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "qGU" = (
 /turf/simulated/floor/stone,
@@ -14917,7 +15660,7 @@
 /area/cadiaoutpost/oa/magistratumpost)
 "qKy" = (
 /obj/structure/warfare/barricade/sandbag,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "qLb" = (
 /turf/unsimulated/wall/fakeglass{
@@ -14927,7 +15670,7 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "qLd" = (
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "qLo" = (
 /obj/machinery/light/small{
@@ -14961,7 +15704,7 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "qOn" = (
 /obj/machinery/light/small/red{
@@ -14985,12 +15728,7 @@
 /obj/structure/closet/secure_closet/chemical{
 	req_one_access = list()
 	},
-/obj/effect/floor_decal/newcorner/blue/solid,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1";
-	name = "freezer floor"
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "qPE" = (
 /obj/effect/floor_decal/turf/grimy,
@@ -15013,9 +15751,9 @@
 /obj/structure/closet/chefcloset{
 	color = "grey"
 	},
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/obj/item/material/knife/butch,
+/obj/item/material/kitchen/rollingpin,
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "qRc" = (
 /obj/item/clothing/suit/armor/cuirass{
@@ -15123,6 +15861,28 @@
 /obj/random/junk,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/caves)
+"qUh" = (
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tilethick";
+	dir = 4
+	},
+/obj/item/staff/ministorumstaff{
+	armor = list("melee"=30,"bullet"=30,"laser"=30,"energy"=0,"bomb"=0,"bio"=0,"rad"=0);
+	body_parts_covered = 1656;
+	force = 20;
+	name = "staff of messina";
+	pixel_y = 6;
+	pixel_x = -11
+	},
+/obj/item/newore/gems/ruby/cut{
+	pixel_x = 5;
+	pixel_y = 6
+	},
+/obj/item/newore/gems/diamond/cut{
+	pixel_y = 2
+	},
+/turf/simulated/floor/fancyfloor/carpet/middle,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "qUS" = (
 /obj/structure/sign/plate/stoneshrine{
 	pixel_x = -32
@@ -15213,7 +15973,7 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "qYQ" = (
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/magistratumpost)
 "qYR" = (
 /obj/effect/floor_decal/newcorner/red/quarter{
@@ -15243,29 +16003,24 @@
 	desc = "I am forty-two standard years old, in my prime by Imperial standards, young by those of the Inquisition. All my life, I have had a reputation for being cold, unfeeling. Some have called me heartless, ruthless, even cruel. I am not. I am not beyond emotional response or compassion. But I possess - and my masters count this as perhaps my paramount virtue - a singular force of will. Throughout my career it has served me well to draw on this facility and steel myself, unflinching, at all that this wretched galaxy can throw at me. To feel pain or fear or grief is to allow myself a luxury I cannot afford.";
 	name = "imperial tome"
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "qZX" = (
-/obj/effect/floor_decal/newcorner/blue/diagonal,
 /obj/machinery/bodyscanner{
 	dir = 4;
 	icon_state = "body_scanner_0"
 	},
-/turf/simulated/floor/tiled{
-	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
-	icon_state = "white1"
-	},
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "rae" = (
-/obj/structure/cult/tome,
-/obj/item/pen,
-/obj/item/book/manual{
-	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
-	name = "Lectitio Divinitatus"
+/obj/structure/statue/prayer{
+	dir = 4
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
 	},
+/turf/simulated/floor/fancyfloor/ancient_cobble_old,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "raj" = (
 /obj/structure/table/steel_reinforced,
@@ -15297,12 +16052,8 @@
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/new_hive/caves)
 "raU" = (
-/obj/effect/floor_decal/newcorner/blue/diagonal,
 /obj/structure/bed/roller,
-/turf/simulated/floor/tiled{
-	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
-	icon_state = "white1"
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "rbD" = (
 /obj/item/ammo_magazine/ork/shoota,
@@ -15329,7 +16080,6 @@
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
 "rbW" = (
-/obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
 /obj/item/storage/firstaid/adv{
 	pixel_y = -8
@@ -15337,9 +16087,7 @@
 /obj/item/storage/firstaid/adv{
 	pixel_y = 7
 	},
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "rch" = (
 /obj/structure/table/rack/dark,
@@ -15377,7 +16125,7 @@
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 4
 	},
-/turf/simulated/floor/ceramic,
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "reI" = (
 /obj/random/loot/guardgear,
@@ -15563,7 +16311,6 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "rpL" = (
-/obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
 /obj/item/storage/firstaid/toxin{
 	pixel_y = 6
@@ -15571,9 +16318,7 @@
 /obj/item/storage/firstaid/regular{
 	pixel_y = -7
 	},
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "rqC" = (
 /turf/unsimulated/wall/fakeglass{
@@ -15600,6 +16345,11 @@
 /obj/effect/floor_decal/newcorner/nbar/corner,
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"rrJ" = (
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "rrL" = (
 /obj/machinery/computer/diseasesplicer,
 /obj/effect/floor_decal/newcorner/whitegreen/solid,
@@ -15663,7 +16413,7 @@
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "rsZ" = (
 /obj/structure/bookcase,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "rto" = (
 /obj/effect/floor_decal/newcorner/stone/corner,
@@ -15680,6 +16430,15 @@
 	dir = 1
 	},
 /area/cadiaoutpost/new_hive/caves)
+"rtO" = (
+/obj/effect/floor_decal/newcorner/trench_flooring{
+	dir = 9
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
+	},
+/turf/simulated/floor/dirty/tough,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "rtQ" = (
 /turf/simulated/floor/fancyfloor/carpet/blue/middle,
 /area/cadiaoutpost/oa/hallway/centralhall)
@@ -15711,15 +16470,12 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/caves)
 "rvU" = (
-/obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
 /obj/item/storage/belt/medical/full{
 	pixel_y = 8
 	},
 /obj/item/storage/belt/medical/full,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "rvY" = (
 /obj/machinery/bodyscanner{
@@ -15797,7 +16553,7 @@
 	pixel_x = -15;
 	pixel_y = 6
 	},
-/turf/simulated/floor/fancyfloor/coralg,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "rAe" = (
 /obj/effect/floor_decal/newcorner/train2/corner{
@@ -15858,7 +16614,7 @@
 /obj/structure/table/woodentable{
 	color = "#36261B"
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "rFf" = (
 /obj/structure/torchwall/service{
@@ -16002,14 +16758,11 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
 "rNx" = (
-/obj/structure/table/rack/dark,
-/obj/item/staff/ministorumstaff{
-	armor = list("melee"=30,"bullet"=30,"laser"=30,"energy"=0,"bomb"=0,"bio"=0,"rad"=0);
-	body_parts_covered = 1656;
-	force = 20;
-	name = "staff of messina"
+/obj/structure/sign/plate/written{
+	name = "Inscription";
+	desc = "If Thou seest light in me - grace me"
 	},
-/turf/simulated/floor/ceramic,
+/turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "rPM" = (
 /turf/simulated/floor/stone,
@@ -16027,6 +16780,11 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"rQk" = (
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "rQE" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /obj/machinery/power/port_gen/pacman/super/potato,
@@ -16072,7 +16830,7 @@
 	dir = 1
 	},
 /obj/structure/table/graf/rich_table,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "rSa" = (
 /obj/structure/table/graf/big_wood_table,
@@ -16116,14 +16874,12 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "rWW" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/material/knife/butch,
-/obj/item/material/kitchen/rollingpin,
-/obj/item/material/kitchen/utensil/knife/boot,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
+/obj/machinery/body_scanconsole{
+	dir = 4;
+	icon_state = "body_scannerconsole"
 	},
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "rXt" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/turf/lfloorscorched1,
@@ -16142,11 +16898,8 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "rXW" = (
-/obj/structure/torchwall/service{
-	dir = 1;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/stone/chapel,
+/obj/effect/floor_decal/newcorner/stone,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "rXZ" = (
 /obj/effect/floor_decal/newcorner/shaft{
@@ -16168,7 +16921,7 @@
 	desc = "I have been informed that the acolytes have spies amongst us. Despite our differences I cannot imagine that they're looking to harm us, or even impede our mission here. I cannot in truth see much reason to prevent them from knowing of our progress, I am inclined to just let them get their information rather than waste resources and encourage doubt and suspicion amongst us.";
 	name = "Research Notes"
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "rZR" = (
 /obj/structure/sign/inkvd{
@@ -16177,10 +16930,9 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "sba" = (
-/obj/structure/window/reinforced{
-	color = "grey"
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 4
 	},
-/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "sbi" = (
 /obj/machinery/door/unpowered/jail_door{
@@ -16195,7 +16947,7 @@
 	icon = "icons/map_project/furniture_and_decor.dmi";
 	icon_state = "redebahia"
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "sby" = (
 /obj/item/stack/material/steel/fifty,
@@ -16226,6 +16978,17 @@
 /obj/effect/landmark/start/inqmagi,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"scm" = (
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tilethick";
+	dir = 4
+	},
+/obj/item/clothing/suit/sisterofbattle/sobrelic{
+	anchored = 1;
+	pixel_y = 6
+	},
+/turf/simulated/floor/fancyfloor/oldcobble,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "scw" = (
 /obj/machinery/light{
 	dir = 1
@@ -16352,18 +17115,13 @@
 /turf/simulated/floor/darksteel_floor,
 /area/cadiaoutpost/oa/magistratumpost)
 "soN" = (
-/obj/effect/floor_decal/newcorner/blue/diagonal,
 /obj/structure/bed/roller,
-/obj/machinery/button/remote/blast_door{
-	name = "BAR THE GATES!";
-	req_one_access = list(211);
-	id = "butt";
-	pixel_x = 28
+/obj/machinery/button/remote/blast_door/lever{
+	name = "Medical Lockdown";
+	pixel_x = 32;
+	id = "medical"
 	},
-/turf/simulated/floor/tiled{
-	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
-	icon_state = "white1"
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "soT" = (
 /obj/structure/torchwall{
@@ -16419,7 +17177,7 @@
 /area/cadiaoutpost/oa/magistratumpost)
 "ssi" = (
 /obj/effect/floor_decal/newcorner/stone,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "ssr" = (
 /obj/structure/torchwall{
@@ -16446,7 +17204,7 @@
 /obj/structure/torchwall/service{
 	pixel_y = 32
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "stj" = (
 /obj/machinery/door/unpowered/inn{
@@ -16475,7 +17233,7 @@
 	icon_state = "torchwall0"
 	},
 /obj/effect/floor_decal/newcorner/stone,
-/turf/simulated/floor/ceramic,
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "svm" = (
 /obj/effect/floor_decal/newcorner/train2/corner{
@@ -16493,7 +17251,7 @@
 /obj/item/organ/internal/heart,
 /obj/item/organ/internal/eyes,
 /obj/item/organ/internal/appendix,
-/turf/simulated/floor/ceramic/surgery2,
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "swa" = (
 /obj/structure/table/graf/big_wood_table{
@@ -16509,13 +17267,38 @@
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 1
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"sxv" = (
+/obj/item/flame/candle/dinner{
+	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
+	name = "wax candle";
+	pixel_x = -10;
+	pixel_y = 5
+	},
+/obj/item/tray{
+	pixel_x = 6;
+	pixel_y = 6
+	},
+/obj/item/material/kitchen/utensil/fork{
+	pixel_x = -6
+	},
+/obj/item/material/kitchen/utensil/knife,
+/obj/item/reagent_containers/food/drinks/flask/goblet{
+	pixel_x = 18
+	},
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "sxD" = (
 /obj/effect/floor_decal/newcorner/plating/corner{
 	dir = 8
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "sxK" = (
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
@@ -16541,7 +17324,7 @@
 /obj/structure/mirror{
 	pixel_y = 30
 	},
-/turf/simulated/floor/fancyfloor/gray_white,
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "syQ" = (
 /obj/effect/floor_decal/newcorner/shaft/quarter{
@@ -16581,7 +17364,7 @@
 	pixel_x = -8
 	},
 /obj/item/flame/candle/church,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "sAR" = (
 /obj/effect/floor_decal/newcorner/plating,
@@ -16625,9 +17408,22 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
+"sDG" = (
+/turf/simulated/floor/fancyfloor/carpet,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "sDX" = (
 /turf/simulated/floor/trench,
 /area/cadiaoutpost/new_hive/caves)
+"sEo" = (
+/obj/effect/floor_decal/newcorner/stone/corner{
+	dir = 8
+	},
+/obj/machinery/door/airlock/highsecurity/imperiumdoor{
+	name = "Imperialis Doorway - Monasterium Library";
+	req_one_access = list()
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "sEK" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/taperoll/police,
@@ -16692,7 +17488,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/newcorner/stone/corner,
-/turf/simulated/floor/stone/chapel,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "sGo" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -16780,7 +17576,7 @@
 	desc = "I have a reputation, Modile, a reputation as a fair, honest man who treats his soldiers well and supports them in the face of darkness. Potentially, that reputation makes me soft. It seems I understand failure and forgive it. Some, like Kowle, believe me to be a weak commissar, not prepared to take the action my rank demands. Not prepared to enforce field discipline where I see it failing. I am an Imperial commissar. I will enflame the weak, support the wavering, guide the lost. I will be all things to all men who need me. But I will also punish without hesitation the incompetent, the cowardly, and the treasonous. Choose, for courtesy's sake, summary execution or a firing squad of your own men.";
 	name = "inquisitor tome"
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "sLo" = (
 /obj/structure/reagent_dispensers/watertank,
@@ -16790,16 +17586,11 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "sLw" = (
-/obj/effect/floor_decal/newcorner/blue/diagonal,
-/obj/machinery/body_scanconsole{
-	dir = 4;
-	icon_state = "body_scannerconsole"
+/obj/structure/bed/chair/wood/fancy{
+	dir = 1
 	},
-/turf/simulated/floor/tiled{
-	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
-	icon_state = "white1"
-	},
-/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
+/turf/simulated/floor/fancyfloor/carpet/blue,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "sMl" = (
 /obj/structure/stairs/east,
 /turf/simulated/floor/tiled/dark{
@@ -17000,6 +17791,18 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"sXw" = (
+/obj/structure/sink{
+	dir = 8;
+	icon_state = "sink";
+	layer = 50;
+	pixel_x = -12
+	},
+/obj/structure/mirror{
+	pixel_x = -32
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "sXz" = (
 /obj/effect/water/top,
 /obj/effect/water/bottom,
@@ -17057,11 +17860,7 @@
 /area/cadiaoutpost/oa/magistratumpost)
 "taD" = (
 /obj/machinery/vending/medical,
-/obj/effect/floor_decal/newcorner/blue/diagonal,
-/turf/simulated/floor/tiled{
-	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
-	icon_state = "white1"
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "tbg" = (
 /obj/structure/table/steel_reinforced,
@@ -17237,13 +18036,13 @@
 /turf/simulated/open,
 /area/cadiaoutpost/new_hive/caves)
 "toH" = (
-/obj/structure/table/steel_reinforced,
-/obj/machinery/microwave{
-	pixel_y = 8
+/obj/structure/sink{
+	dir = 4;
+	icon_state = "sink";
+	pixel_x = 16;
+	color = "grey"
 	},
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "toJ" = (
 /obj/effect/landmark/corpse,
@@ -17308,11 +18107,10 @@
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
 "trO" = (
-/obj/structure/toilet{
-	dir = 8;
-	icon_state = "toilet00"
+/obj/structure/bed/chair/wood/fancy/comfy2{
+	dir = 1
 	},
-/turf/simulated/floor/fancyfloor/gray_white,
+/turf/simulated/floor/fancyfloor/carpet/blue,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "tsa" = (
 /obj/structure/bed{
@@ -17342,6 +18140,19 @@
 	dir = 6
 	},
 /area/cadiaoutpost/new_hive/caves)
+"tte" = (
+/obj/machinery/light,
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 8
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "ttL" = (
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/villageinside/lab)
@@ -17611,12 +18422,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "tFZ" = (
 /obj/machinery/chem_master,
-/obj/effect/floor_decal/newcorner/blue/solid,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1";
-	name = "freezer floor"
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "tGc" = (
 /obj/structure/table/graf/rusty_table,
@@ -17796,13 +18602,13 @@
 	dir = 1;
 	icon_state = "torchwall0"
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "tUo" = (
-/obj/structure/toilet{
+/obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/fancyfloor/gray_white,
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "tUs" = (
 /turf/simulated/wall/techno,
@@ -17822,10 +18628,8 @@
 	pixel_x = -10;
 	pixel_y = 2
 	},
-/obj/effect/floor_decal/newcorner/blue/solid,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "tVT" = (
 /obj/effect/floor_decal/newcorner/caveramp{
@@ -17852,7 +18656,7 @@
 	dir = 8;
 	icon_state = "torchwall0"
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "tWA" = (
 /turf/simulated/floor/factory_floor,
@@ -18086,7 +18890,7 @@
 	name = "Medicae"
 	},
 /obj/machinery/door/blast/id_door/open{
-	id = "butt"
+	id = "medical"
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
@@ -18127,6 +18931,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
+"uhP" = (
+/obj/structure/bed/chair/wood/fancy{
+	dir = 8
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "uiu" = (
 /obj/effect/floor_decal/newcorner/red{
 	dir = 8
@@ -18142,6 +18952,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"uju" = (
+/obj/effect/floor_decal/newcorner/stone,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "ujV" = (
 /obj/structure/closet/crate/trashcart,
 /obj/random/junk,
@@ -18177,9 +18991,14 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "upU" = (
-/obj/structure/cult/tome,
-/turf/simulated/floor/ceramic/old,
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 8
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "uqU" = (
 /obj/machinery/door/unpowered/inn/berryfarm{
 	req_one_access = list(264);
@@ -18249,6 +19068,15 @@
 /obj/item/gun/energy/taser,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"uwz" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 4
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "uwF" = (
 /obj/effect/floor_decal/newcorner/plating,
 /obj/effect/decal/cleanable/blood,
@@ -18314,6 +19142,11 @@
 /obj/structure/catwalkrust/blocked,
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
+"uzj" = (
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "uzF" = (
 /obj/item/storage/fancy/cigarettes,
 /obj/structure/table/graf/wood_office_table{
@@ -18367,6 +19200,12 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"uCJ" = (
+/obj/structure/bed/chair/wood/fancy,
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "uCM" = (
 /obj/structure/hivedecor/sarcofagus2,
 /obj/structure/sign/plate/written{
@@ -18384,20 +19223,19 @@
 	},
 /area/cadiaoutpost/oa/shuttle/cargo1)
 "uEu" = (
-/obj/structure/cult/tome,
-/obj/effect/floor_decal/newcorner/stone/corner{
-	dir = 4
+/obj/structure/sign/plate/stoneshrine{
+	pixel_y = 32
 	},
-/turf/simulated/floor/ceramic/old,
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "uFh" = (
-/obj/structure/bed/chair{
-	dir = 8;
-	icon_state = "chair_preview"
+/obj/structure/torchwall/service{
+	pixel_y = 32
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 4
 	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "uFy" = (
 /obj/structure/table/rack/dark,
@@ -18426,6 +19264,13 @@
 /obj/structure/stairs/south,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/caves)
+"uGJ" = (
+/obj/structure/torchwall/service{
+	dir = 8;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "uHY" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 9
@@ -18469,6 +19314,29 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/medicae)
+"uJI" = (
+/obj/effect/floor_decal/newcorner/stone,
+/obj/item/flame/candle/church{
+	pixel_y = 8;
+	pixel_x = 1
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 4
+	},
+/obj/item/flame/candle/church{
+	pixel_y = 8;
+	pixel_x = 9
+	},
+/obj/item/flame/candle/church{
+	pixel_y = 8;
+	pixel_x = -7
+	},
+/obj/item/flame/candle/dinner{
+	pixel_x = 15;
+	pixel_y = 9
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "uJZ" = (
 /turf/simulated/floor/tiled/freezer,
 /area/cadiaoutpost/new_hive/caves)
@@ -18510,7 +19378,7 @@
 /obj/effect/floor_decal/newcorner/nbar/corner{
 	dir = 1
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "uNN" = (
 /obj/structure/closet/secure_closet/medical1{
@@ -18537,7 +19405,7 @@
 /obj/structure/table/graf/big_wood_table{
 	dir = 4
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "uPT" = (
 /obj/structure/warfare/barricade/sandbag{
@@ -18567,7 +19435,7 @@
 /obj/effect/decal/cleanable/cobweb{
 	dir = 8
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "uQT" = (
 /obj/structure/stairs/west,
@@ -18582,6 +19450,10 @@
 "uRO" = (
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/villageinside/lab)
+"uRP" = (
+/obj/structure/flora/yes/plant,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "uRS" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 1
@@ -18677,13 +19549,25 @@
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/magistratumpost)
 "vaT" = (
-/obj/structure/statue/verina{
-	desc = "A polished and well maintained statue of Saint Celestine of the Order of Our Martyred Lady. Despair, and you give yourself to the shadows. Believe, truly believe in the Emperor of Mankind, and you shall walk in His light no matter how dark the path you tread.";
-	name = "Statue of Saint Celestine";
+/obj/structure/hivedecor/statue4{
 	pixel_x = -15;
-	density = 0
+	desc = "A towering statue of Saint Lucius of Agatha";
+	pixel_y = 5
 	},
-/turf/simulated/floor/ceramic,
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 8
+	},
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/stone/corner{
+	dir = 1
+	},
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "vcc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
@@ -18701,6 +19585,29 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"vcD" = (
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 8
+	},
+/obj/item/clothing/suit/ministorumrobes{
+	pixel_y = 5
+	},
+/obj/item/clothing/suit/ministorumrobes{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/food/drinks/flask/goblet/gold{
+	pixel_y = 13;
+	pixel_x = -16
+	},
+/obj/item/reagent_containers/food/drinks/flask/goblet/gold{
+	pixel_y = 3;
+	pixel_x = -16
+	},
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 4
+	},
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "vdp" = (
 /obj/machinery/light/small/red,
 /turf/simulated/floor/tiled{
@@ -18708,7 +19615,7 @@
 	},
 /area/cadiaoutpost/oa/villageinside/lab)
 "vdr" = (
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "vdO" = (
 /obj/structure/table/rack/dark,
@@ -18792,6 +19699,16 @@
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
+"vjo" = (
+/obj/machinery/door/airlock/glass_medical{
+	color = null;
+	dir = 2;
+	maxhealth = 900;
+	name = "Crematorium";
+	req_one_access = list(211)
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "vkl" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -18920,6 +19837,12 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
+"vsd" = (
+/obj/structure/bed/chair/wood/fancy,
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 9
+	},
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "vsH" = (
 /obj/effect/floor_decal/newcorner/blue{
 	dir = 1
@@ -19062,7 +19985,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/newcorner/plating,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "vAE" = (
 /obj/structure/largecrate/animal/cat/bones,
@@ -19134,7 +20057,7 @@
 /obj/structure/window/basic{
 	dir = 4
 	},
-/turf/simulated/floor/fancyfloor/gray_white,
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "vGP" = (
 /obj/structure/table/steel_reinforced,
@@ -19171,6 +20094,12 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
+"vIf" = (
+/obj/effect/floor_decal/plaque{
+	desc = "That which was will be.That which dieth will live. That which falleth will rise up. "
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "vIo" = (
 /obj/machinery/door/blast/id_door{
 	req_one_access = list(302);
@@ -19201,7 +20130,7 @@
 	},
 /obj/effect/floor_decal/newcorner/stone,
 /obj/effect/floor_decal/newcorner/nbar,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "vKj" = (
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -19209,6 +20138,14 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
+"vKI" = (
+/obj/structure/sign/aquilalong,
+/obj/structure/sign/plate/written{
+	name = "Inscription";
+	desc = "Men united in the purpose of the Emperor are blessed in His sight, and shall live forever in his memory."
+	},
+/turf/simulated/wall/castle,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "vKV" = (
 /obj/structure/bed/barrack,
 /obj/structure/bed/barrack1,
@@ -19246,7 +20183,7 @@
 /area/cadiaoutpost/oa/medicae)
 "vMy" = (
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
-	name = "Imperialis Doorway - Sacred Altar";
+	name = "Imperialis Doorway - Sacred Reliquary";
 	req_one_access = list(333)
 	},
 /turf/simulated/floor/factory_floor,
@@ -19266,6 +20203,13 @@
 /obj/item/clothing/accessory/holster/armpit,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
+"vNp" = (
+/obj/structure/sign/plate/written{
+	name = "Inscription";
+	desc = "If Thou hearest a plea of mine - bless me"
+	},
+/turf/simulated/wall/castle,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "vNt" = (
 /obj/structure/bed,
 /turf/simulated/floor/darkwood/rotten,
@@ -19325,7 +20269,7 @@
 	desc = "What is Chaos? Suffering, you might say. Oppression. Deceit. But could not all these things be said of your Imperium? You hunt down the talented and the strong-willed. You break them or sacrifice them. You lie to your citizens and wage war on those who dare speak out. The inquisitors you call masters assume guilt and execute millions on a whim. And why? Why do you do this? Because you know Chaos is there but you do not know how to fight it, so you crush your own citizens for fear that they might aid the Enemy. The Imperium suffers because of Chaos. No matter how hard you fight, that will never change. Chaos exists in a state of permanent victory over you - you dance to our tune, mortal one, you butcher and torture and repress one another because the gods of the warp require you to. The Imperium is founded on Chaos. My lord Tzeentch won your war a long, long time ago.";
 	name = "chaos tome"
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "vPQ" = (
 /turf/unsimulated/mineral,
@@ -19379,7 +20323,7 @@
 	name = "Lectitio Divinitatus";
 	pixel_y = 10
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "vTq" = (
 /obj/effect/floor_decal/newcorner/stone{
@@ -19468,13 +20412,11 @@
 /area/cadiaoutpost/oa/villageinside/lab)
 "vZz" = (
 /obj/structure/closet/secure_closet/medical2,
-/turf/simulated/floor/ceramic/surgery{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "vZD" = (
 /obj/structure/grille/metal_bars,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "waf" = (
 /obj/effect/floor_decal/newcorner/shaft/corner{
@@ -19641,6 +20583,27 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"wmi" = (
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 4
+	},
+/obj/item/clothing/head/helmet/hauberk{
+	pixel_y = 5
+	},
+/obj/item/clothing/head/helmet/hauberk{
+	pixel_y = 5
+	},
+/obj/item/clothing/head/helmet/hauberk{
+	pixel_y = 5
+	},
+/obj/item/clothing/head/helmet/hauberk{
+	pixel_y = 5
+	},
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "wmp" = (
 /obj/structure/sign/chaos{
 	pixel_x = -32
@@ -19732,6 +20695,12 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"wqQ" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 8
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "wrm" = (
 /obj/effect/decal/cleanable/cobweb{
 	dir = 8
@@ -19785,22 +20754,13 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "wwc" = (
-/obj/structure/sign/neon/exit{
-	pixel_x = 32
+/obj/structure/sign/aquilalong,
+/obj/structure/sign/plate/written{
+	name = "Inscription";
+	desc = "No army is big enough to conquer the galaxy. But faith alone can overturn the universe."
 	},
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 1
-	},
-/obj/effect/floor_decal/newcorner/plating/quarter{
-	dir = 1
-	},
-/obj/machinery/door/unpowered/inn/berryfarm{
-	req_one_access = list(264);
-	name = "Gang Den";
-	maxhealth = 1000
-	},
-/turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/turf/simulated/wall/castle,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "wws" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 1
@@ -19820,16 +20780,16 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/new_hive/caves)
 "wwB" = (
-/obj/structure/table/rack/dark,
-/obj/item/clothing/suit/ministorumrobes,
-/obj/item/clothing/suit/ministorumrobes,
-/obj/item/clothing/suit/ministorumrobes,
-/obj/structure/torchwall/service{
-	dir = 8;
-	icon_state = "torchwall0"
+/obj/structure/crematorium{
+	id = 3
 	},
-/turf/simulated/floor/ceramic,
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
+/obj/machinery/button/crematorium{
+	pixel_y = 35;
+	id = 3
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "wwU" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 1
@@ -19856,7 +20816,7 @@
 /obj/effect/floor_decal/newcorner/nbar{
 	dir = 4
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "wzJ" = (
 /obj/effect/floor_decal/newcorner/stone{
@@ -19938,7 +20898,7 @@
 /obj/item/remains/human{
 	color = "grey"
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/farm)
 "wFk" = (
 /obj/structure/flora/yes/wooden_tv,
@@ -19999,7 +20959,7 @@
 "wKF" = (
 /obj/effect/floor_decal/newcorner/stone,
 /obj/effect/floor_decal/newcorner/nbar,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "wLa" = (
 /obj/structure/torchwall/service{
@@ -20059,7 +21019,7 @@
 /obj/effect/floor_decal/newcorner/nbar/corner{
 	dir = 4
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "wMB" = (
 /obj/structure/hivedecor/sarcofagus2,
@@ -20079,10 +21039,14 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "wMH" = (
-/obj/structure/cult/tome,
-/obj/item/gun/projectile/bolter_pistol/sisterofbattle,
-/turf/simulated/floor/ceramic/old,
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
+/obj/effect/floor_decal/newcorner/stone/corner{
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/stone/corner{
+	dir = 1
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "wNy" = (
 /obj/structure/bed/roller,
 /obj/machinery/light/small{
@@ -20145,7 +21109,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "wPM" = (
 /obj/structure/sign/aquilalong,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "wQm" = (
 /obj/effect/decal/cleanable/dirt,
@@ -20235,6 +21199,15 @@
 	dir = 6
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"wUr" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/stone/corner{
+	dir = 4
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "wUD" = (
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -20265,7 +21238,6 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
 "wWd" = (
-/obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
 /obj/item/storage/firstaid/regular{
 	pixel_y = 7
@@ -20273,9 +21245,7 @@
 /obj/item/storage/firstaid/fire{
 	pixel_y = -8
 	},
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "wWe" = (
 /obj/item/reagent_containers/hypospray/autoinjector/tau{
@@ -20293,14 +21263,19 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/farm)
+"wWp" = (
+/obj/structure/crematorium{
+	id = 4
+	},
+/obj/machinery/button/crematorium{
+	pixel_y = 35;
+	id = 4
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "wWM" = (
 /obj/machinery/chemical_dispenser/full,
-/obj/effect/floor_decal/newcorner/blue/solid,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1";
-	name = "freezer floor"
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "wXG" = (
 /obj/structure/table/rack/shelf,
@@ -20377,7 +21352,6 @@
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "wZD" = (
-/obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
 /obj/item/reagent_containers/spray/cleaner/warfare,
 /obj/item/reagent_containers/spray/cleaner/warfare,
@@ -20388,9 +21362,7 @@
 	pixel_x = -10
 	},
 /obj/item/soap/soapimp,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "wZX" = (
 /turf/unsimulated/wall/fakeglass{
@@ -20448,6 +21420,25 @@
 "xes" = (
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
+"xeX" = (
+/obj/item/tray{
+	pixel_x = -6;
+	pixel_y = 6
+	},
+/obj/item/material/kitchen/utensil/fork{
+	pixel_x = 6
+	},
+/obj/item/material/kitchen/utensil/knife{
+	pixel_x = 3
+	},
+/obj/item/reagent_containers/food/drinks/flask/goblet{
+	pixel_x = -18
+	},
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue/middle,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "xfp" = (
 /obj/effect/floor_decal/newcorner/plating/corner{
 	dir = 4
@@ -20489,19 +21480,9 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "xgr" = (
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 1
-	},
-/obj/effect/floor_decal/newcorner/plating/quarter{
-	dir = 1
-	},
-/obj/machinery/door/unpowered/inn/berryfarm{
-	req_one_access = list(264);
-	name = "Gang Den";
-	maxhealth = 1000
-	},
-/turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/villageinside/lab/muffled)
+/obj/structure/sign/medical1,
+/turf/simulated/wall/castle,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "xgu" = (
 /obj/item/pyre/self_lit,
 /turf/simulated/floor/stone,
@@ -20608,7 +21589,7 @@
 	req_access = list()
 	},
 /mob/living/simple_animal/hostile/shadow,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "xiJ" = (
 /obj/item/gun/launcher/rcl_rifle/ork,
@@ -20637,6 +21618,31 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
+"xle" = (
+/obj/item/flame/candle/dinner{
+	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
+	name = "wax candle";
+	pixel_x = -10;
+	pixel_y = 5
+	},
+/obj/item/tray{
+	pixel_x = 6;
+	pixel_y = -2
+	},
+/obj/item/material/kitchen/utensil/fork{
+	pixel_x = -6
+	},
+/obj/item/material/kitchen/utensil/knife,
+/obj/item/reagent_containers/food/drinks/flask/goblet{
+	pixel_x = 18
+	},
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "xll" = (
 /obj/item/gun/launcher/rcl_rifle/ork,
 /obj/item/ammo_casing/heat_shell/orkhe,
@@ -20648,6 +21654,16 @@
 /obj/machinery/r_n_d/circuit_imprinter,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
+"xmy" = (
+/obj/structure/closet/crate{
+	anchored = 1
+	},
+/obj/item/device/cassette/inqlog1,
+/obj/item/device/cassette/brokensaint,
+/obj/item/device/cassette/church1,
+/obj/item/device/boombox,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "xmP" = (
 /obj/structure/table/rack/dark,
 /obj/item/reagent_containers/spray/luminol{
@@ -20670,21 +21686,7 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "xmQ" = (
-/obj/structure/sign/neon/exit{
-	pixel_x = -32
-	},
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 1
-	},
-/obj/effect/floor_decal/newcorner/plating/quarter{
-	dir = 1
-	},
-/obj/machinery/door/unpowered/inn/berryfarm{
-	req_one_access = list(264);
-	name = "Gang Den";
-	maxhealth = 1000
-	},
-/turf/simulated/floor/darkwood/rotten,
+/turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
 "xnK" = (
 /obj/machinery/door/unpowered/inn{
@@ -20794,6 +21796,19 @@
 /obj/item/reagent_containers/food/snacks/vegetablesoup,
 /turf/simulated/floor/tiled/freezer,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"xuf" = (
+/obj/structure/closet/crate{
+	anchored = 1
+	},
+/obj/item/ammo_magazine/bolt_pistol_magazine,
+/obj/item/ammo_magazine/bolt_pistol_magazine,
+/obj/item/ammo_magazine/bolt_pistol_magazine,
+/obj/item/ammo_magazine/bolt_pistol_magazine,
+/obj/item/ammo_magazine/bolt_pistol_magazine,
+/obj/item/ammo_magazine/bolt_rifle_magazine/sister,
+/obj/item/ammo_magazine/bolt_rifle_magazine/sister,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "xuj" = (
 /obj/machinery/computer/bountycogitator,
 /obj/machinery/light/small{
@@ -20881,9 +21896,8 @@
 /turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "xzI" = (
-/obj/structure/cult/tome,
-/obj/item/ammo_magazine/bolt_rifle_magazine/sister,
-/turf/simulated/floor/ceramic/old,
+/obj/structure/bed/chair/wood/simple,
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "xzK" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -20929,12 +21943,17 @@
 /obj/structure/filingcabinet/filingcabinet,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
-"xAt" = (
-/obj/effect/floor_decal/industrial/hatch/blue,
-/obj/structure/closet/secure_closet/medical1,
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
+"xAq" = (
+/obj/effect/floor_decal/newcorner/stone{
+	dir = 4
 	},
+/obj/effect/floor_decal/newcorner/stone,
+/obj/effect/floor_decal/newcorner/stone/corner,
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"xAt" = (
+/obj/structure/closet/secure_closet/medical1,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "xAA" = (
 /obj/machinery/light/small{
@@ -20981,7 +22000,7 @@
 	},
 /obj/effect/landmark/corpse,
 /obj/effect/floor_decal/turf/necro1,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "xCS" = (
 /obj/structure/toilet{
@@ -20999,6 +22018,19 @@
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/new_hive/caves)
+"xEt" = (
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 8
+	},
+/obj/item/clothing/suit/armor/templar{
+	pixel_x = -12;
+	pixel_y = 6
+	},
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 4
+	},
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "xEJ" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 1
@@ -21007,6 +22039,11 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/medicae)
+"xFv" = (
+/turf/simulated/floor/fancyfloor/carpet{
+	dir = 9
+	},
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "xFB" = (
 /obj/item/device/boombox,
 /obj/item/device/cassette/clockwork1,
@@ -21286,7 +22323,6 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "xYI" = (
-/obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
 /obj/item/storage/firstaid/surgery{
 	pixel_y = -8
@@ -21294,9 +22330,7 @@
 /obj/item/storage/firstaid/surgery{
 	pixel_y = 6
 	},
-/turf/simulated/floor/ceramic/surgery2{
-	dir = 6
-	},
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "xYM" = (
 /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult2,
@@ -21311,7 +22345,7 @@
 /area/cadiaoutpost/oa/research/robotics)
 "xZn" = (
 /obj/effect/decal/cleanable/cobweb,
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "xZy" = (
 /turf/simulated/floor/stone/ancient_stone_floor3,
@@ -21327,6 +22361,16 @@
 /obj/structure/closet/hive/fancy,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"ybt" = (
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 12
+	},
+/obj/structure/mirror{
+	pixel_x = 32
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "ybT" = (
 /obj/structure/torchwall{
 	dir = 8;
@@ -21369,6 +22413,17 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"ydq" = (
+/obj/structure/table/steel_reinforced,
+/obj/item/reagent_containers/food/condiment/barbecue{
+	pixel_x = -7
+	},
+/obj/item/reagent_containers/food/condiment/enzyme{
+	pixel_x = 7
+	},
+/obj/item/reagent_containers/food/condiment/enzyme,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "ydt" = (
 /obj/structure/table/graf/reinf_table{
 	icon_state = "table_horizontal2"
@@ -21459,6 +22514,12 @@
 	},
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/new_hive/caves)
+"ygN" = (
+/obj/effect/floor_decal/plaque{
+	desc = "As I have been called to the holy work, so I will call others to me."
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "yhM" = (
 /obj/effect/water/bottom,
 /obj/effect/water/top,
@@ -21476,7 +22537,7 @@
 /obj/structure/toilet{
 	pixel_y = 14
 	},
-/turf/simulated/floor/fancyfloor/gray_white,
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "yku" = (
 /obj/structure/toilet{
@@ -21505,7 +22566,7 @@
 /obj/structure/catwalkrust/blocked{
 	color = "purple"
 	},
-/turf/simulated/floor/stone/old4,
+/turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "ymd" = (
 /obj/item/reagent_containers/hypospray/autoinjector/blood,
@@ -40883,12 +41944,12 @@ slE
 slE
 gXe
 xAt
-fDz
-fDz
-fDz
-fDz
-fDz
-fDz
+uju
+dpc
+pEp
+pEp
+pEp
+pEp
 gXe
 yfH
 dhr
@@ -41125,7 +42186,7 @@ tOB
 tOB
 tOB
 tOB
-slE
+gXe
 gXe
 gXe
 gXe
@@ -41136,8 +42197,8 @@ gXe
 gXe
 gXe
 xAt
-fDz
-fDz
+gPr
+hPs
 rvU
 lbn
 aCJ
@@ -41378,7 +42439,7 @@ tOB
 tOB
 tOB
 tOB
-slE
+gXe
 gXe
 tFZ
 cOw
@@ -41389,12 +42450,12 @@ tFZ
 gXe
 gXe
 oNj
-fDz
-fDz
-fDz
-fDz
-fDz
-doC
+gPr
+wMH
+upU
+upU
+upU
+tte
 gXe
 yfH
 dhr
@@ -41631,19 +42692,19 @@ tOB
 tOB
 tOB
 tOB
-slE
+gXe
 gXe
 wWM
-gdp
-fDz
-fDz
+bai
+bai
+bai
 bai
 wWM
 gXe
 gXe
 gXe
 fcM
-fDz
+hPs
 qnw
 kwu
 jMp
@@ -41880,26 +42941,26 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-slE
+gXe
+gXe
+gXe
+gXe
+gXe
 gXe
 bSw
-fDz
+bai
 fED
 fED
-fDz
+bai
 bSw
 gXe
 gXe
 lpG
-fDz
-fDz
-fDz
-fDz
-fDz
+gPr
+wMH
+upU
+upU
+upU
 doC
 gXe
 yfH
@@ -42133,23 +43194,23 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-slE
+gXe
+amK
+nKz
+iUc
+gXe
 gXe
 pKJ
-fDz
-fDz
-fDz
-fDz
+bai
+bai
+bai
+bai
 pKJ
 gXe
 gXe
 jML
-fDz
-fDz
+gPr
+wUr
 rpL
 wWd
 oAP
@@ -42386,26 +43447,26 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-slE
-slE
+gXe
+wwB
+nQi
+iUc
+gXe
 gXe
 oNi
-fDz
-fDz
-fDz
-fDz
+iUc
+iUc
+iUc
+iUc
 cnK
 gXe
 gXe
 gJq
-fDz
-fDz
-fDz
-fDz
-fDz
+gPr
+wMH
+upU
+upU
+upU
 doC
 gXe
 yfH
@@ -42639,10 +43700,10 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-slE
+gXe
+wWp
+iUc
+axE
 gXe
 gXe
 gXe
@@ -42654,8 +43715,8 @@ gXe
 gXe
 gXe
 gXe
-fcM
-fDz
+bUo
+hPs
 luy
 wZD
 nWu
@@ -42892,27 +43953,27 @@ tOB
 tOB
 tOB
 slE
-slE
-slE
-slE
-slE
-gXe
-gPr
-hPs
+aoD
+nSJ
+iUc
+iUc
+vjo
+iUc
+cOw
 iUc
 iUc
 iUc
 iUc
-dmN
+cOw
 iUc
 gMk
+iUc
+iUc
 fDz
-fDz
-fDz
-fDz
-fDz
-fDz
-fDz
+mYY
+mYY
+mYY
+mYY
 gXe
 yfH
 dhr
@@ -43150,13 +44211,13 @@ gXe
 gXe
 gXe
 gXe
-iUc
-sLw
-fDz
-fDz
-fDz
-fDz
-sLw
+cfC
+bai
+bai
+bai
+bai
+rWW
+rWW
 iUc
 gXe
 gXe
@@ -43164,7 +44225,7 @@ gXe
 gXe
 gXe
 taD
-gXe
+taD
 gXe
 gXe
 yfH
@@ -43403,17 +44464,17 @@ eAr
 tVD
 oVu
 gXe
-iUc
+cfC
+bai
+bai
+mTf
+mTf
 qZX
-fDz
-mTf
-mTf
-fDz
 qZX
 iUc
 gXe
 oVu
-tVD
+ljo
 eAr
 gXe
 gXe
@@ -43653,20 +44714,20 @@ tOB
 slE
 gXe
 jRi
-iPP
-iss
-gXe
 iUc
-fDz
-fDz
-fDz
-fDz
-fDz
-fDz
 iUc
-gXe
-iss
-iPP
+xgr
+iUc
+bai
+bai
+bai
+bai
+bai
+bai
+iUc
+xgr
+iUc
+iUc
 jRi
 gXe
 dhr
@@ -43906,20 +44967,20 @@ tOB
 slE
 gXe
 pDm
-iPP
-iss
+iUc
+iUc
 eFf
 iUc
 bLv
 bLv
-fDz
-fDz
+bai
+bai
 bLv
 bLv
 iUc
 piK
-iss
-iPP
+iUc
+iUc
 jcX
 gXe
 dhr
@@ -44158,36 +45219,36 @@ tOB
 tOB
 slE
 gXe
-iss
-iss
-iss
+iUc
+iUc
+iUc
 gXe
 dYI
-raU
-raU
-fDz
-fDz
-raU
-raU
+bai
+bai
+bai
+bai
+bai
+bai
 dYI
 gXe
-iss
-iss
-iss
+iUc
+iUc
+iUc
 gXe
-dhr
-dhr
 dhr
 dhr
 yfH
-dhr
-dhr
-dhr
-dhr
-dhr
-mgn
-mgn
-mgn
+yfH
+yfH
+yfH
+yfH
+yfH
+yfH
+yfH
+hCZ
+hCZ
+hCZ
 mgn
 lPX
 toJ
@@ -44399,15 +45460,15 @@ pnr
 pnr
 xvE
 hkY
-hkY
-hkY
-slE
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+bNq
+bNq
+bNq
+bNq
+bNq
+bNq
+bNq
+bNq
+bNq
 tOB
 slE
 gXe
@@ -44418,8 +45479,8 @@ gXe
 nfI
 qsP
 soN
-fDz
-fDz
+iUc
+iUc
 raU
 qsP
 nfI
@@ -44430,17 +45491,17 @@ eVr
 gXe
 dhr
 dhr
-dhr
-dhr
 yfH
-yfH
-yfH
-yfH
-yfH
-yfH
-mgn
-mgn
-mgn
+bNq
+bNq
+bNq
+bNq
+bNq
+bNq
+bNq
+bNq
+bNq
+hCZ
 mgn
 lPX
 lPX
@@ -44652,15 +45713,15 @@ xvE
 cdS
 xvE
 hkY
-hkY
-hkY
-slE
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+bNq
+bum
+sXw
+oJA
+bNq
+bum
+sXw
+oJA
+bNq
 tOB
 slE
 gXe
@@ -44673,6 +45734,7 @@ gXe
 gXe
 ufL
 ufL
+xgr
 gXe
 gXe
 gXe
@@ -44680,30 +45742,29 @@ gXe
 gXe
 gXe
 gXe
-gXe
-dhr
-dhr
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
-bNq
 yfH
+yfH
+hDE
+bNq
+ocB
+bNq
+hyp
+bNq
+pSq
+bNq
+xmy
+bNq
 hCZ
-mgn
-mgn
-mgn
-mgn
-mgn
-mgn
-mgn
-mgn
-mgn
-mgn
-mgn
-mgn
+hCZ
+hCZ
+hCZ
+hCZ
+hCZ
+hCZ
+hCZ
+hCZ
+hCZ
+hCZ
 lPX
 lPX
 oPJ
@@ -44905,21 +45966,21 @@ xvE
 oqQ
 xvE
 ygz
-ygz
-ygz
-slE
-slE
-slE
-slE
-slE
-slE
-slE
+bNq
+nrA
+tUo
+nrA
+bNq
+nrA
+tUo
+nrA
+bNq
 slE
 slE
 tOB
 tOB
 bNq
-aPX
+phJ
 wPM
 sAv
 qLd
@@ -44930,18 +45991,23 @@ lGy
 qLd
 sAv
 wPM
-qbQ
+ljr
 bNq
 bNq
 bNq
 bNq
 bNq
 bNq
-vaT
-lEf
+bNq
+krr
 fqW
 krr
-cVL
+exr
+krr
+kgg
+krr
+bNq
+bNq
 bNq
 bNq
 hCZ
@@ -44951,12 +46017,7 @@ mgn
 mgn
 mgn
 mgn
-mgn
-mgn
-mgn
-mgn
-mgn
-mgn
+hCZ
 lPX
 lPX
 oPJ
@@ -45161,25 +46222,25 @@ hDE
 bNq
 bNq
 bNq
+odI
 bNq
 bNq
 bNq
-bNq
-bNq
+odI
 bNq
 tOB
 tOB
 bNq
 bNq
-bNq
-hED
+bKX
+nVK
 reF
 reF
 reF
-pyX
+sZK
 nrA
 nrA
-hED
+bWV
 reF
 reF
 reF
@@ -45187,29 +46248,29 @@ miy
 bNq
 rae
 ljr
-mwZ
-mwZ
-bNq
-nrA
+dgv
 wOF
-wOF
-wOF
-wOF
-nrA
 bNq
+vaT
+wOF
+dgv
+wOF
+avM
+wOF
+dgv
+wOF
+blo
+iUD
+iPP
 bNq
-bNq
+hCZ
 mgn
 mgn
 mgn
 mgn
 mgn
 mgn
-mgn
-mgn
-mgn
-mgn
-mgn
+hCZ
 lPX
 lPX
 fhy
@@ -45412,24 +46473,20 @@ cdS
 xvE
 hDE
 bNq
-qmq
-cKj
-tUo
+wjE
+wOF
+wOF
 bNq
-qmq
-cKj
-tUo
+wjE
+wOF
+wOF
 bNq
 tOB
 tOB
 bNq
 oiV
-xgD
-nrA
-nrA
-nrA
-mYY
-nrA
+pEu
+wOF
 nrA
 nrA
 nrA
@@ -45437,33 +46494,37 @@ nrA
 nrA
 nrA
 nrA
+nrA
+nrA
+nrA
+wOF
 bNq
 uFh
-uFh
-djP
-djP
+pyX
+nrA
+wOF
 bNq
-pji
-wOF
-wOF
-wOF
-wOF
-sba
+ouq
+xFv
+wmi
+rQk
+djP
+rQk
 exJ
 ouL
+wOF
+leF
+cHT
 bNq
+bNq
+hCZ
 mgn
 mgn
 mgn
 mgn
 mgn
-mgn
-mgn
-mgn
-mgn
-mgn
-mgn
-mgn
+hCZ
+hCZ
 lPX
 oPJ
 oPJ
@@ -45665,58 +46726,58 @@ pnr
 xvE
 hDE
 bNq
-dBi
-gnr
-dBi
+qDB
+wOF
+wOF
 bNq
-dBi
-gnr
-dBi
+qDB
+wOF
+wOF
 bNq
 tOB
 tOB
 bNq
-rAb
+aOR
 cxP
+ygN
 nrA
-nrA
+oXb
 bNq
-bNq
+uRP
 wOF
 wOF
 wOF
+bNq
+cVL
+nrA
 wOF
-bNq
-bNq
-nrA
-nrA
 eoq
-djP
-djP
-djP
-djP
-vMy
 wOF
-wOF
-wOF
-mfl
-wOF
-ioa
 nrA
-qew
+nrA
+wOF
+vMy
+vIf
+rrJ
+hbk
+mfl
+qUh
+mfl
+bRf
+sDG
+gWn
+leF
+scm
+bAE
 bNq
+hCZ
 mgn
 mgn
 mgn
 mgn
 mgn
 mgn
-mgn
-mgn
-mgn
-mgn
-mgn
-mgn
+hCZ
 lPX
 sbw
 sbw
@@ -45918,58 +46979,58 @@ xvE
 xvE
 hDE
 bNq
+nXf
+wOF
+ooD
 bNq
-bNq
-odI
-bNq
-bNq
-bNq
-odI
+nXf
+wOF
+ooD
 bNq
 tOB
 tOB
 bNq
 nIf
-sZK
-nrA
+jES
+wOF
 nrA
 bNq
-csN
-oMR
+rae
+uJI
+bFE
 dWY
-dWY
-pVQ
-csN
+uwz
+rae
 bNq
-nrA
-nrA
+uEu
+wOF
 bNq
 mIj
-djP
-djP
-hLg
+eNW
+nrA
+wOF
 bNq
-pji
-wOF
-wOF
-wOF
-wOF
+oEa
+nnw
+xEt
+sba
+vcD
 sba
 ect
 ofo
+wOF
+leF
+kOj
 bNq
+bNq
+hCZ
 mgn
 mgn
 mgn
 mgn
 mgn
 mgn
-mgn
-mgn
-mgn
-mgn
-mgn
-mgn
+hCZ
 lPX
 lPX
 lPX
@@ -46171,13 +47232,13 @@ ygz
 ygz
 hDE
 bNq
-wjE
+wPd
 wOF
-wOF
+cTn
 bNq
-wjE
+wPd
 wOF
-wOF
+cTn
 bNq
 tOB
 tOB
@@ -46186,35 +47247,35 @@ bNq
 bNq
 pji
 nrA
-bWV
+iss
 iRV
 aOr
-dWY
-dWY
+imP
+imP
 cuj
-iRV
+ioa
 sZK
 nrA
-nrA
-bNq
-djP
-djP
-djP
-rae
-bNq
-nrA
 wOF
+bNq
+csN
+ljr
+uGJ
 wOF
+bNq
+nwa
 wOF
+uGJ
 wOF
-nrA
+pez
+wOF
+uGJ
+wOF
+blo
+fnG
+iPP
 bNq
 bNq
-bNq
-hCZ
-liM
-liM
-liM
 hCZ
 hCZ
 mgn
@@ -46422,51 +47483,51 @@ pnr
 xvE
 bmy
 bmy
-bmy
 bNq
-qDB
-wOF
-wOF
 bNq
-qDB
-wOF
-wOF
 bNq
-tOB
+uep
+bNq
+bNq
+bNq
+uep
+bNq
+bNq
+kGm
 tOB
 bNq
 iXD
-xgD
-nrA
+pEu
+wOF
 nrA
 wOF
 rXW
-bNq
+gdp
 bNq
 vVW
 oMR
-dWY
-wOF
+rtO
+gWn
 nrA
 qew
 bNq
-eBq
-eBq
-djP
-imP
 bNq
-vaT
+bNq
+bNq
+bNq
+bNq
+bNq
 gnv
 rNx
-wwB
-gWn
+gnv
+exr
+gnv
+vNp
+gnv
 bNq
 bNq
-slE
-slE
-liM
-liM
-pEu
+bNq
+bNq
 liM
 liM
 hCZ
@@ -46669,44 +47730,39 @@ hkY
 ygz
 bNq
 vGJ
-dBi
+nrA
 bNq
 pnr
 lDM
 bNq
 bNq
-bmy
 bNq
-nXf
+bNq
+bNq
+xgD
 wOF
-ooD
-bNq
-nXf
+dgv
 wOF
-ooD
-bNq
-tOB
+wOF
+wOF
+uRP
+kGm
 tOB
 bNq
 rAb
 hOn
-nrA
+mwZ
 nrA
 ewa
-fpZ
+duo
 cnG
-dWY
-dWY
+imP
+imP
 sGn
 fpZ
 xgD
 nrA
-nrA
-bNq
-bNq
-bNq
-ljr
-rae
+wOF
 bNq
 bNq
 bNq
@@ -46714,13 +47770,18 @@ bNq
 bNq
 bNq
 bNq
-yfH
-liM
-liM
-liM
+fML
+bNq
+xuf
+bNq
+ijB
+bNq
+dEj
+bNq
+bNq
 eOM
-hQU
-qGo
+lEf
+jzb
 liM
 liM
 lPX
@@ -46729,7 +47790,7 @@ hCZ
 liM
 liM
 liM
-eOM
+eBq
 hQU
 qGo
 liM
@@ -46922,53 +47983,53 @@ hkY
 ygz
 bNq
 ykg
-dBi
+nrA
 bNq
 gGP
 bNq
 xwH
 bNq
-bNq
-bNq
-wPd
+exr
+gqX
+gsu
+ljr
+vsd
+xle
+sxv
+hHk
 wOF
-cTn
-bNq
-wPd
 wOF
-cTn
-bNq
-dhr
+liM
 dhr
 bNq
 eUP
-sZK
-nrA
+jES
+wOF
 nrA
 bNq
 csN
 kFv
-dWY
-dWY
+mDd
+poN
 pVQ
 csN
 bNq
-nrA
-nrA
-nrA
-nrA
+uEu
+wOF
+wOF
+wOF
 bNq
 bNq
 bNq
 bNq
-hiy
-wMH
-hbk
 bNq
 bNq
-slE
-slE
-liM
+bNq
+bNq
+bNq
+bNq
+bNq
+bNq
 qrN
 gYU
 mSY
@@ -47175,52 +48236,52 @@ hkY
 ygz
 bNq
 syJ
-dBi
+nrA
 odI
 tKT
 nXg
 tKT
 tKT
-tKT
 bNq
-bNq
-uep
-bNq
-bNq
-bNq
-uep
-bNq
-bNq
-bNq
-bNq
+emD
+gsu
+ljr
+uCJ
+hoS
+ewC
+sLw
+wOF
+fUV
 bNq
 bNq
 bNq
-nrA
-nrA
 bNq
 bNq
 wOF
+nrA
+nbA
+bNq
+uRP
 wOF
 wOF
 wOF
 bNq
-bNq
-nrA
-nrA
-nrA
-nrA
-bNq
-upU
 nRl
-xzI
 nrA
+nrA
+nrA
+wOF
+bNq
+xzI
+hiy
+xzI
+hiy
 uRS
 pAX
 ldH
 liM
 slE
-tOB
+slE
 liM
 gvw
 hQU
@@ -47436,15 +48497,20 @@ gTY
 avA
 tKT
 bNq
-nrA
-nrA
-nrA
-hiy
-nrA
-nrA
-nrA
-nrA
+wwc
+sZK
+uzj
+gLm
+gnr
+dBi
+wOF
+wOF
 bNq
+uRP
+wOF
+dgv
+wOF
+wOF
 nrA
 nrA
 nrA
@@ -47457,20 +48523,15 @@ nrA
 nrA
 nrA
 nrA
-nrA
-nrA
-nrA
-nrA
-nrA
-nrA
+qew
 bNq
+xzI
 nrA
-nrA
-nrA
+xzI
 nrA
 aPX
-qLd
-qLd
+fMn
+fMn
 liM
 slE
 liM
@@ -47689,15 +48750,16 @@ jqC
 iNb
 tKT
 orW
-nrA
-nrA
-nrA
-nrA
-nrA
-nrA
-nrA
-nrA
+wOF
+wOF
+jME
+gmF
+iun
+trO
+wOF
+wOF
 qCj
+wOF
 nrA
 nrA
 nrA
@@ -47714,15 +48776,14 @@ nrA
 nrA
 nrA
 nrA
-nrA
-nrA
-eoq
+wOF
+mFp
 nrA
 nrA
 nrA
 nrA
 aPX
-qLd
+gsn
 fMn
 liM
 slE
@@ -47942,41 +49003,41 @@ mzS
 wRu
 tKT
 bNq
-nrA
-nrA
-nrA
-nrA
-nrA
-nrA
-mYY
-nrA
+vKI
+xgD
+uzj
+fCV
+cKj
+dBi
+wOF
+wOF
 bNq
+uRP
+bkQ
+pmQ
+wOF
+wOF
+wOF
 nrA
-nrA
-fqo
-nrA
-nrA
-nrA
-nrA
-nrA
-fqo
-nrA
-nrA
-fqo
-nrA
-nrA
-nrA
-fqo
-nrA
-nrA
+wOF
+uGJ
+wOF
+wOF
+uGJ
+wOF
+wOF
+wOF
+uGJ
+wOF
+wOF
 bNq
+xzI
 nrA
-nrA
-nrA
+xzI
 nrA
 aPX
-qLd
-qLd
+fMn
+fMn
 liM
 slE
 liM
@@ -48193,39 +49254,39 @@ tKT
 tWh
 tKT
 tKT
-tKT
 bNq
-bNq
-uep
-bNq
-bNq
-bNq
-uep
-bNq
-bNq
-bNq
-bNq
-bNq
+anR
+gsu
+ljr
+uCJ
+bYJ
+xeX
+sLw
+wOF
+wOF
 bNq
 bNq
 bNq
-cFV
+kqo
 bNq
 bNq
-bNq
-tWA
-tWA
-bNq
+uGJ
 nrA
+wOF
 bNq
+tWA
+tWA
+bNq
+wOF
 bNq
 bNq
 bNq
 sYd
 bNq
 bNq
-nRl
-dgv
+xzI
+fqo
+xzI
 fqo
 hED
 vep
@@ -48446,42 +49507,42 @@ bNq
 bNq
 rzv
 bNq
-bNq
-bNq
-wPd
-wOF
-cTn
-bNq
-wPd
-wOF
-cTn
-bNq
-tOB
-tOB
-tOB
-bNq
-oJA
-gsn
-nVK
+exr
+gqX
 gsu
+ljr
+pRz
+lQN
+kPT
+kYm
+wOF
+wOF
+lvD
+wOF
+dgv
+wOF
 qRb
 bNq
+bNq
+sEo
+bNq
+bNq
 tWA
 tWA
 bNq
-nrA
+wOF
 bNq
 efd
 wOF
-nrA
-nrA
-nrA
+wOF
+wOF
 bNq
 bNq
 bNq
 bNq
-wMH
-uEu
+bNq
+bNq
+bNq
 bNq
 liM
 slE
@@ -48699,43 +49760,43 @@ hDE
 bNq
 bNq
 bNq
-slE
+kGm
 bNq
-nXf
+bNq
+sZK
 wOF
-jvj
-bNq
-nXf
 wOF
-jvj
+wOF
+wOF
+wOF
+uRP
 bNq
-tOB
-tOB
-tOB
-bNq
-gqX
-nVK
-nVK
-nVK
-bKX
-bNq
-ivc
-ivc
-bNq
+ydq
+wOF
+wOF
+wOF
+qmq
+dmN
+qbQ
 nrA
+bNq
+ivc
+ivc
+bNq
+wOF
 bNq
 haX
-wOF
-wOF
 nrA
 nrA
+wOF
+wOF
 wOF
 jKy
 bNq
-bNq
-bNq
-bNq
-bNq
+hDE
+hDE
+hDE
+hDE
 slE
 slE
 liM
@@ -48952,37 +50013,37 @@ slE
 slE
 slE
 slE
-slE
+kGm
 bNq
-qDB
-wOF
-wOF
 bNq
-qDB
-wOF
-wOF
+uep
 bNq
-tOB
-tOB
-tOB
 bNq
-iun
-nVK
+bNq
+uep
+bNq
+bNq
+bNq
+gPw
+wOF
 kek
-nVK
-rWW
-bNq
-bNq
-bNq
-bNq
+wOF
+cPN
+wOF
+qbQ
 nrA
+hLg
+bNq
+bNq
+bNq
+wOF
 bNq
 gph
 wOF
-wOF
 nrA
 nrA
-wOF
+nrA
+nrA
 vzr
 bNq
 yfH
@@ -49207,24 +50268,24 @@ tOB
 tOB
 slE
 bNq
-wjE
+wPd
 wOF
-wOF
+cTn
 bNq
-wjE
+wPd
 wOF
+cTn
+bNq
+bNq
+nxh
 wOF
-bNq
-tOB
-tOB
-tOB
-bNq
-iun
-nVK
 jBq
-nVK
-bYJ
-bNq
+wOF
+qmq
+pji
+bSJ
+eNW
+nKM
 bNq
 bNq
 bNq
@@ -49232,10 +50293,10 @@ ueA
 bNq
 bNq
 vdO
-wOF
 nrA
 nrA
-wOF
+nrA
+nrA
 hlT
 bNq
 yfH
@@ -49460,35 +50521,35 @@ tOB
 tOB
 slE
 bNq
+nXf
+wOF
+jvj
+bNq
+nXf
+wOF
+jvj
 bNq
 bNq
-odI
-bNq
-bNq
-bNq
-odI
-bNq
-tOB
-tOB
-tOB
-bNq
-toH
-nVK
+iMT
+wOF
 mpM
-nVK
-nVK
-bNq
-dhr
+wOF
+bhY
+wqQ
+xgD
+qbQ
+uhP
+liM
 liM
 jQo
 nMc
 jQo
 liM
 dKI
-wOF
 nrA
 nrA
-wOF
+nrA
+nrA
 aUT
 bNq
 yfH
@@ -49713,35 +50774,35 @@ tOB
 tOB
 slE
 bNq
-dBi
-aPi
-dBi
+qDB
+wOF
+wOF
 bNq
-dBi
-aPi
-dBi
+qDB
+wOF
+wOF
 bNq
-tOB
-tOB
-tOB
 bNq
+iMT
+wOF
+uGJ
 toH
-nVK
-axE
-nVK
-nVK
-bNq
-dhr
+cFV
+oAx
+ljr
+qbQ
+hLg
+liM
 liM
 kYY
 oUo
 xho
 liM
 fxk
-wOF
-wOF
-wOF
-wOF
+nrA
+nrA
+nrA
+nrA
 mfU
 bNq
 yfH
@@ -49966,25 +51027,25 @@ tOB
 tOB
 slE
 bNq
-cPN
-jfa
-trO
+wjE
+wOF
+wOF
 bNq
-cPN
-jfa
-trO
-bNq
-tOB
-tOB
-tOB
+wjE
+wOF
+wOF
 bNq
 bNq
 bNq
+lvD
 bNq
 bNq
-bum
-bNq
-dhr
+bMH
+ghr
+ljr
+qbQ
+giL
+liM
 liM
 rvv
 rvv
@@ -50221,23 +51282,23 @@ slE
 bNq
 bNq
 bNq
+odI
 bNq
 bNq
 bNq
+odI
 bNq
 bNq
-bNq
-tOB
-tOB
-tOB
-bNq
-gPw
+jfa
 dbZ
-dbZ
-dbZ
-dbZ
+xtU
 bNq
-dhr
+qmq
+gEU
+ljr
+qbQ
+uhP
+liM
 liM
 rvv
 rvv
@@ -50471,26 +51532,26 @@ tOB
 tOB
 tOB
 slE
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
 bNq
-kxV
-dbZ
-dbZ
-dbZ
-fCV
+nrA
+mTx
+nrA
 bNq
-yfH
+nrA
+mTx
+nrA
+bNq
+bNq
+aPi
+dbZ
+xtU
+bNq
+cPN
+reF
+sZK
+qbQ
+hLg
+liM
 liM
 rvv
 rvv
@@ -50724,26 +51785,26 @@ tOB
 tOB
 tOB
 slE
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
 bNq
+pyL
+ybt
 kKF
-dbZ
-dbZ
-dbZ
-dbZ
 bNq
-yfH
+pyL
+ybt
+kKF
+bNq
+bNq
+kxV
+dbZ
+xWr
+bNq
+qmq
+pji
+xAq
+pyX
+omA
+liM
 liM
 hmd
 htc
@@ -50977,26 +52038,26 @@ slE
 slE
 slE
 slE
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
 bNq
-kxV
-dbZ
-dbZ
-dbZ
-dbZ
 bNq
-yfH
+bNq
+bNq
+bNq
+bNq
+bNq
+bNq
+bNq
+bNq
+aPi
+dbZ
+xWr
+bNq
+bhY
+wOF
+qbQ
+nrA
+uhP
+liM
 liM
 jQo
 jHR
@@ -51239,17 +52300,17 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
 bNq
-bNq
-bNq
-xtU
-xtU
-xWr
+dbZ
+dbZ
 xWr
 bNq
-yfH
+cFV
+bLH
+qbQ
+nrA
+bNq
+liM
 liM
 liM
 fij
@@ -51493,16 +52554,16 @@ tOB
 tOB
 tOB
 tOB
-tOB
-liM
-dhr
+bNq
 liM
 liM
 liM
 liM
 liM
 liM
-yfH
+liM
+liM
+liM
 liM
 iNs
 oUo
@@ -56021,7 +57082,7 @@ mWl
 mWl
 mWl
 mWl
-xgr
+xmQ
 olg
 aFX
 qMB
@@ -56274,7 +57335,7 @@ mWl
 mWl
 gDl
 mWl
-wwc
+xmQ
 olg
 aFX
 qMB
