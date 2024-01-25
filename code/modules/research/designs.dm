@@ -2034,7 +2034,7 @@ A reminder that mechanicus cannot remove their armor for a majority of their rol
 	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 8)
 	materials = list(DEFAULT_WALL_MATERIAL = 1000, "diamond" = 3000)
 	build_path = /obj/item/clothing/head/helmet/guardhelmet/carapace
-	sort_string = "XCBA"
+	sort_string = "XCBB"
 
 /* /datum/design/armor/teleport
 	name = "Reactive Teleporter Armor"
