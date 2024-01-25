@@ -363,7 +363,7 @@
 	one_hand_penalty = 1.4
 	accuracy = 0
 	fire_delay= 3
-	sales_price = 10 // SHOTGUNS HAVE SLOWDOWN IN THEIR PARENT shotgun/pump -- DO NOT APPLY SLOWDOWN TO SHOTGUNS 
+	sales_price = 10 // SHOTGUNS HAVE SLOWDOWN IN THEIR PARENT shotgun/pump -- DO NOT APPLY SLOWDOWN TO SHOTGUNS
 
 /obj/item/gun/projectile/shotgun/pump/shitty/magrave
 	name = "\improper WTX Belle Magrave"
@@ -879,7 +879,7 @@
 	name = "Godwyn Mark Vb Pattern Bolter"
 	desc = "The Adeptus Astartes's legendary and destructive Bolter Rifle, This one is painted in XIIIth Chapter Ultramarines's colour scheme."
 	icon_state = "ultrabolter"
-	str_requirement = 21
+	str_requirement = 24
 	w_class = ITEM_SIZE_HUGE
 	force = 30
 	slot_flags = SLOT_BACK|SLOT_S_STORE
