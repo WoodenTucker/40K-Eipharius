@@ -92,7 +92,7 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is in debt to the trader for services rendered that saved the lives of countless brothers, being sent you have been instructed to protect and serve them in every capacity. This is a matter of honor, lives owed to a great Lord whom you have come to know over many decades, your new master on this forsaken world.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Space Marine Envoy of your chosen Chapter. You are his Angel. Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. You are tasked to show the Emperor's light to his followers and his fury to the forces that oppose it. Ensure it remains so.</font></b></span>")
 		H.gender = MALE
 		H.f_style = "shaved"
 		H.h_style = "Bald"
