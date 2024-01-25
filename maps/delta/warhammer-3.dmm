@@ -29282,22 +29282,13 @@
 /obj/structure/table/graf/big_wood_table{
 	dir = 8
 	},
-/obj/item/reagent_containers/pill/happy,
-/obj/item/reagent_containers/pill/happy{
-	pixel_y = 5;
-	pixel_x = -5
-	},
-/obj/item/reagent_containers/pill/happy{
-	pixel_y = 7;
-	pixel_x = 2
-	},
 /obj/item/melee/sword/combat_knife/bowie{
 	pixel_y = -7;
 	pixel_x = 4
 	},
-/obj/item/storage/pill_bottle{
-	pixel_x = -9;
-	pixel_y = -6
+/obj/item/storage/fancy/cigarettes/cigarello/variety{
+	pixel_x = -10;
+	pixel_y = 3
 	},
 /turf/simulated/floor/fancyfloor/carpet/blue/middle,
 /area/cadiaoutpost/oa/service/inn)
