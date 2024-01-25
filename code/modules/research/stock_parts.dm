@@ -111,7 +111,7 @@
 	origin_tech = list(TECH_MATERIAL = 3, TECH_DATA = 2)
 	rating = 4
 	matter = list(DEFAULT_WALL_MATERIAL = 30)
-	
+
 /obj/item/stock_parts/manipulator/femto
 	name = "femto-manipulator"
 	desc = "A tiny little manipulator used in the construction of certain devices."
@@ -232,6 +232,12 @@
 // ARCHEOTECH LOOT
 // ARCHEOTECH LOOT
 
+/* All Archeotech loot to follow form,
+
+Tier 1
+Tier 2
+So on so forth, make sure the tiers are spread far in the map and designed to be hard to obtain. Making them easy to obtain allows for too much gremlin shit*/
+// Material + Engineering, works on armor primarily and some unique weapons
 /obj/item/rnd/eng3
 	name = "xenos alloy"
 	desc = "A xenos alloy forged by means unknown to the AdMech. The Mechanicus will want to study it."
@@ -264,6 +270,7 @@
 	origin_tech = list(TECH_MATERIAL = 10, TECH_ENGINEERING = 10)
 	sales_price = 0
 
+// Power + Phoron Mixture of weaponry, vanilla SS13.
 /obj/item/rnd/power3
 	name = "strange chemical canister"
 	desc = "A xenos forged canister filled with a strange chemical fuel mixture. The Mechanicus will want to study it."
@@ -295,7 +302,7 @@
 	icon_state = "datadisk6"
 	origin_tech = list(TECH_POWER = 10, TECH_PHORON = 10)
 	sales_price = 0
-
+// Bio + Bluespace For bags/misc items, mainly vanilla SS13 Content
 
 /obj/item/rnd/biospace3
 	name = "glowing rock"
@@ -353,12 +360,14 @@
 	origin_tech = list(TECH_BIO = 10, TECH_BLUESPACE = 10)
 	sales_price = 0
 
+// Combat + Magnet, Works on Weapons primarily, armor as well. (combat needed for armor)
+
 /obj/item/rnd/combat3
 	name = "seolite firing mechanism"
 	desc = "A seolite firing mechanism used in slug firing projectile weapons. The Mechanicus will want to study it."
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	icon_state = "anodev"
-	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
+	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 4)
 	sales_price = 6
 
 /obj/item/rnd/combat5
@@ -366,7 +375,7 @@
 	desc = "The remains of an unknown weapon from the dark age of technology. The Mechanicus will want to study it."
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	icon_state = "egun5"
-	origin_tech = list(TECH_COMBAT = 6, TECH_MAGNET = 6)
+	origin_tech = list(TECH_COMBAT = 7, TECH_MAGNET = 6)
 	sales_price = 15
 
 /obj/item/rnd/combat8
@@ -374,7 +383,7 @@
 	desc = "A weapon design for a forgotten archeotech weapon. The Mechanicus will want to study it."
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "datadisk6"
-	origin_tech = list(TECH_COMBAT = 8, TECH_MAGNET = 8)
+	origin_tech = list(TECH_COMBAT = 9, TECH_MAGNET = 8)
 	sales_price = 50
 
 /obj/item/rnd/combat10
@@ -385,6 +394,7 @@
 	origin_tech = list(TECH_COMBAT = 10, TECH_MAGNET = 10)
 	sales_price = 0
 
+// Illegal + Data (works on very unique things, they border heretical and should be assumed to be bordering technoheresy.) Data is vanilla content from what I can see.
 
 /obj/item/rnd/illegal3
 	name = "xenos puzzle box"
@@ -417,9 +427,18 @@
 	icon_state = "datadisk0"
 	origin_tech = list(TECH_DATA = 10, TECH_ILLEGAL = 10)
 	sales_price = 60
+//Debug
+/obj/item/rnd/debugstc
+	name = "DEBUG STC"
+	desc = "If you have this, an admin is testing RnD! That or something is horribly bad!"
+	icon = 'icons/obj/stock_parts.dmi'
+	icon_state = "datadisk3"
+	origin_tech = list(TECH_DATA = 10, TECH_ILLEGAL = 10, TECH_COMBAT = 10, TECH_BIO = 10, TECH_PHORON = 10, TECH_ENGINEERING = 10, TECH_BLUESPACE = 10, TECH_MATERIAL = 10, TECH_MAGNET = 10, TECH_POWER = 10)
+	sales_price = 60
+
 
 /*
-/// EXPLORATION REWARDS /// 
+/// EXPLORATION REWARDS ///
 Added items that will be random in most ruins/cave areas, they range from packages, reports, lost clothing rolls, to ingots of expensive minerals
 and the like.
 
