@@ -357,6 +357,14 @@
 	caliber = "flamer"
 	projectile_type = /obj/item/projectile/flamer
 
+/obj/item/ammo_casing/flamer/salamander
+	name = "promethium"
+	desc = "Fire ammo isn't deleting properly for some reason. Please don't bug Matt about this, he knows."
+	icon_state = "null"
+	spent_icon = "null"
+	caliber = "flamersally"
+	projectile_type = /obj/item/projectile/flamer/salamander
+
 /obj/item/ammo_casing/boltpistol
 	desc = "A .75 bolt pistol casing."
 	caliber = ".75"
