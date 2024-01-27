@@ -4411,6 +4411,13 @@
 	},
 /obj/item/cell/lasgun/hotshot,
 /obj/item/clothing/glasses/scion,
+/obj/item/paper/administratum/weapon5,
+/obj/item/paper/administratum/weapon4,
+/obj/item/paper/administratum/omega,
+/obj/item/paper/administratum/omega,
+/obj/item/paper/administratum/omega,
+/obj/item/paper/administratum/omega,
+/obj/item/paper/administratum/omega,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/armory)
 "oM" = (
@@ -5141,6 +5148,28 @@
 /obj/machinery/door/airlock/glass_medical,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/armory)
+"rY" = (
+/obj/item/paper_bin{
+	pixel_y = 10
+	},
+/obj/item/pen/multi{
+	pixel_y = 6
+	},
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 4
+	},
+/obj/item/paper/administratum/omega,
+/obj/item/paper/administratum/omega,
+/obj/item/paper/administratum/weapon4,
+/obj/item/paper/administratum/weapon4,
+/obj/item/paper/administratum/weapon5,
+/obj/item/paper/administratum/weapon4,
+/obj/item/paper/administratum/theta,
+/obj/item/paper/administratum/theta,
+/obj/item/paper/administratum/mech,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "rZ" = (
 /turf/unsimulated/mineral{
 	icon = 'icons/turf/wall.dmi';
@@ -7077,14 +7106,14 @@
 	},
 /area/cadiaoutpost/oa/service/chapel)
 "zo" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
 /obj/machinery/button/remote/blast_door/id_scan{
 	name = "The Enterprise - ID lock";
 	id = "enterprise";
-	pixel_x = 32;
+	pixel_x = 29;
 	req_one_access = list(225,247)
-	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 4
 	},
 /turf/simulated/floor/plating{
 	color = "grey"
@@ -12310,8 +12339,8 @@
 /obj/machinery/button/remote/blast_door/id_scan{
 	name = "The Enterprise - ID lock";
 	id = "enterprise";
-	pixel_x = 32;
-	req_one_access = list(225)
+	pixel_x = 29;
+	req_one_access = list(225,247)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -72239,7 +72268,7 @@ PH
 wc
 wc
 wc
-iN
+rY
 PH
 ld
 tX

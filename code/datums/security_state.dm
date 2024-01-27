@@ -237,5 +237,5 @@
 	var/static/datum/announcement/priority/security/security_announcement_delta = new(do_log = 0, do_newscast = 1, new_sound = sound('sound/effects/siren.ogg'))
 
 /decl/security_level/default/code_delta/switching_up_to()
-	security_announcement_delta.Announce("In fealty to the God-Emperor, our undying Lord, and by the grace of the Golden Throne, I declare Exterminatus upon Eipharius. I hereby sign the death warrant of an entire world, and consign a million souls to oblivion. May Imperial Justice account in all balance. The Emperor Protects.")
+	security_announcement_delta.Announce("In fealty to the God-Emperor, our undying Lord, and by the grace of the Golden Throne, I declare Exterminatus upon Messina. I hereby sign the death warrant of an entire world, and consign a million souls to oblivion. May Imperial Justice account in all balance. The Emperor Protects.")
 	notify_station()

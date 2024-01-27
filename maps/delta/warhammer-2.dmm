@@ -479,9 +479,12 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
-/obj/effect/floor_decal/turf/plating,
+/obj/effect/floor_decal/industrial/warning,
 /obj/effect/floor_decal/industrial/warning{
-	dir = 1
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -2021,6 +2024,14 @@
 /area/cadiaoutpost/oa/medicae)
 "cku" = (
 /obj/machinery/light/blue,
+/obj/item/paper/administratum/weapon3,
+/obj/item/paper/administratum/weapon4,
+/obj/item/paper/administratum/weapon5,
+/obj/item/paper/administratum/weapon5,
+/obj/item/fluff_items/paperwork{
+	pixel_y = 7
+	},
+/obj/structure/table/graf/reinf_table,
 /turf/simulated/floor/factory_floor{
 	dir = 8
 	},
@@ -2407,7 +2418,8 @@
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/computer/shuttle_control/ferry/mechiferry{
 	icon = 'icons/map_project/port/resources_64x64.dmi';
-	icon_state = "node_on"
+	icon_state = "node_on";
+	req_one_access = list(10,25)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -4877,6 +4889,18 @@
 	icon_state = "tube1"
 	},
 /obj/structure/closet/crate/xenos/chest3,
+/obj/item/paper/administratum/mech,
+/obj/item/paper/administratum/mech,
+/obj/item/paper/administratum/mech,
+/obj/item/paper/administratum/mech,
+/obj/item/paper/administratum/mech,
+/obj/item/paper/administratum/mech,
+/obj/item/paper/administratum/mech,
+/obj/item/paper/administratum/weapon5,
+/obj/item/paper/administratum/weapon5,
+/obj/item/paper/administratum/weapon5,
+/obj/item/paper/administratum/weapon5,
+/obj/item/paper/administratum/weapon5,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -13840,6 +13864,27 @@
 /obj/effect/landmark/start/governor/heir,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"oGI" = (
+/obj/machinery/light/small,
+/obj/item/fluff_items/paperwork{
+	pixel_y = 7
+	},
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 4;
+	pixel_y = -2
+	},
+/obj/item/paper/administratum/theta,
+/obj/item/paper/administratum/theta,
+/obj/item/paper/administratum/theta,
+/obj/item/paper/administratum/theta,
+/obj/item/paper/administratum/theta,
+/obj/item/paper/administratum/omega,
+/obj/item/paper/administratum/omega,
+/obj/item/paper/administratum/omega,
+/obj/item/paper/administratum/mech,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/magistratumpost)
 "oGL" = (
 /obj/structure/stairs/east,
 /turf/simulated/floor/stone,
@@ -20637,11 +20682,12 @@
 /area/cadiaoutpost/new_hive/caves)
 "wdn" = (
 /obj/effect/floor_decal/turf/plating,
+/obj/effect/floor_decal/turf/plating,
 /obj/machinery/computer/shuttle_control/ferry/mechiferry{
 	icon = 'icons/map_project/port/resources_64x64.dmi';
-	icon_state = "node_on"
+	icon_state = "node_on";
+	req_one_access = list(10,25)
 	},
-/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -21493,6 +21539,23 @@
 /obj/machinery/chemical_dispenser/full,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
+"wXl" = (
+/obj/item/paper/administratum/lambda,
+/obj/item/paper/administratum/mech,
+/obj/item/paper/administratum/omega,
+/obj/item/paper/administratum/vermillion,
+/obj/item/paper/administratum/vermillion,
+/obj/item/paper/administratum/vermillion,
+/obj/item/paper/administratum/lambda,
+/obj/item/paper/administratum/lambda,
+/obj/item/fluff_items/paperwork{
+	pixel_y = 7
+	},
+/obj/structure/table/graf/reinf_table,
+/turf/simulated/floor/factory_floor{
+	dir = 8
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "wXG" = (
 /obj/structure/table/rack/shelf,
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/explosive,
@@ -21636,6 +21699,29 @@
 "xes" = (
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
+"xeJ" = (
+/obj/item/paper/administratum/weapon5,
+/obj/item/paper/administratum/weapon5,
+/obj/item/paper/administratum/weapon4,
+/obj/item/paper/administratum/weapon4,
+/obj/item/paper/administratum/weapon4,
+/obj/item/paper/administratum/weapon3,
+/obj/item/paper/administratum/weapon3,
+/obj/item/paper/administratum/weapon3,
+/obj/item/paper/administratum/weapon3,
+/obj/item/paper/administratum/weapon3,
+/obj/item/paper/administratum/weapon3,
+/obj/item/paper/administratum/weapon3,
+/obj/item/fluff_items/paperwork{
+	pixel_y = 7
+	},
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 8;
+	pixel_y = -2
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/magistratumpost)
 "xeX" = (
 /obj/item/tray{
 	pixel_x = -6;
@@ -44663,7 +44749,7 @@ xvE
 xvE
 xvE
 xvE
-mjH
+wXl
 mjH
 cku
 xvE
@@ -58191,7 +58277,7 @@ hcS
 dGx
 jSi
 dGx
-pix
+oGI
 ojM
 cCn
 cCn
@@ -58444,7 +58530,7 @@ dGx
 lPt
 pus
 dGx
-dGx
+xeJ
 ojM
 cCn
 cCn

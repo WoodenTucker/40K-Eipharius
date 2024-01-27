@@ -833,6 +833,29 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	slowdown_per_slot[slot_r_hand] = 0.41
 	slowdown_per_slot[slot_l_hand] = 0.41
 
+/obj/item/gun/energy/pulse/plasma/rifle/custom
+	name = "plasma rifle"
+	desc = "A custom plasma rifle. It has an overheat scale and on the end of it is written 'Boom!'."
+	force = 14
+	one_hand_penalty = 1.8 //heavy af fam
+	accuracy = 0.15
+	fire_delay = 15 //dont want speedy bois
+	charge_cost = 500
+	sales_price = 70 //funilly enough, plasma rifles are considered more common than plasma pistols in the imperial market, even then, they arent very common
+
+	firemodes = list(
+		list(mode_name="ATAP", fire_delay=15, projectile_type=/obj/item/projectile/energy/pulse/plasmarifle, charge_cost=500),
+		list(mode_name="HEDP", fire_delay = 32, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=900),
+		)
+
+/obj/item/gun/energy/pulse/plasma/rifle/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.1
+	slowdown_per_slot[slot_wear_suit] = 0.15
+	slowdown_per_slot[slot_belt] = 0.15
+	slowdown_per_slot[slot_r_hand] = 0.32
+	slowdown_per_slot[slot_l_hand] = 0.32
+
 /obj/item/gun/energy/pulse/plasma/pistol
 	name = "plasma pistol"
 	desc = "A plasma pistol. Great for dealing with threats swiftly.It has an overheat scale and on the end of it is written 'Boom!'."

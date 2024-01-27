@@ -489,7 +489,7 @@
 		/mob/living/carbon/human/proc/sobweservants,
 		/mob/living/carbon/human/proc/sobtheemperor)
 		to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
-		to_chat(H, "<span class='notice'><b><font size=3>You are a recent graduate of the Scholam Progeneum, sent to Eipharius to serve alongside the redeemed Sister-Superior as she watched over the Reqliary of the local Monestary. Though you are no longer a Progena, you are not yet done learning. The Sisters and the Holy Deacon of the Adeptus Ministorum will act as your spiritual guides as you march ever further down the righteous path.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a recent graduate of the Scholam Progeneum, sent to Messina to serve alongside the redeemed Sister-Superior as she watched over the Reqliary of the local Monestary. Though you are no longer a Progena, you are not yet done learning. The Sisters and the Holy Deacon of the Adeptus Ministorum will act as your spiritual guides as you march ever further down the righteous path.</font></b></span>")
 
 /datum/job/preacher // DISABLED
 	title = "Preacher"
@@ -558,7 +558,7 @@
 		if("ROLL THE DICE!")
 			if(prob(91))
 				to_chat(U,"<span class='danger'><b><font size=4>THE HOLY DEACON</font></b></span>")
-				to_chat(U,"<span class='goodmood'><b><font size=3>A loyal servant to the imperium, as Deacon to the flock of the Eipharius colony you are responsible for the survival of faith, to keep the light of holy Terra and the God Emperor shining upon this dark world.</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>A loyal servant to the imperium, as Deacon to the flock of the Messina colony you are responsible for the survival of faith, to keep the light of holy Terra and the God Emperor shining upon this dark world.</font></b></span>")
 				if(prob(4))
 					new /obj/item/device/radio/headset/headset_eng(src.loc)
 				if(prob(3))
@@ -679,6 +679,7 @@
 		/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 		/obj/item/clothing/accessory/holster/waist = 1,
 		/obj/item/device/flashlight/lantern = 1,
+		/obj/item/paper/administratum/vermillion = 1,
 		/obj/item/book/manual/ecc = 1
 		)
 
@@ -706,6 +707,7 @@
 	/obj/item/clothing/mask/gas/explorer = 1,
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/book/manual/ecc = 1,
+	/obj/item/paper/administratum/vermillion = 1,
 	/obj/item/stack/thrones2/ten = 1
 	)
 
@@ -728,6 +730,7 @@
 	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 3,
 	/obj/item/reagent_containers/food/snacks/warfare = 1,
 	/obj/item/clothing/mask/gas/explorer = 1,
+	/obj/item/paper/administratum/vermillion = 1,
 	/obj/item/device/flashlight/lantern = 1,
 	)
 
@@ -755,6 +758,7 @@
 	/obj/item/reagent_containers/food/snacks/warfare = 1,
 	/obj/item/clothing/mask/gas/explorer = 1,
 	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/paper/administratum/vermillion = 1,
 	/obj/item/stack/thrones2/ten = 1
 	)
 
@@ -781,6 +785,7 @@
 	/obj/item/reagent_containers/food/snacks/warfare = 1,
 	/obj/item/clothing/mask/gas/explorer = 1,
 	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/paper/administratum/vermillion = 1,
 	/obj/item/stack/thrones2/ten = 1
 	)
 
@@ -829,4 +834,5 @@
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/warfare = 1,
 	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/paper/administratum/theta = 1,
 		)

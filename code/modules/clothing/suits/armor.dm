@@ -372,7 +372,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/governor
 	name = "Planetary Governor's Mantle"
-	desc = "The extra, extra, extra large exotic mantle of the Governor of Eipharius. Custom tailor made for his superb frame. It is interwoven into his flesh and unremovable"
+	desc = "The extra, extra, extra large exotic mantle of the Governor of Messina. Custom tailor made for his superb frame. It is interwoven into his flesh and unremovable"
 	icon_state = "taxstomach"
 	item_state = "taxstomach"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -384,7 +384,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/governor/mechanicus
 	name = "Planetary Governor's Mantle(M)"
-	desc = "The extra, extra, extra large exotic mantle of the Governor of Eipharius, improved by the Mechanicus. Custom tailor made for his superb frame. It is interwoven into his flesh and unremovable"
+	desc = "The extra, extra, extra large exotic mantle of the Governor of Messina, improved by the Mechanicus. Custom tailor made for his superb frame. It is interwoven into his flesh and unremovable"
 	armor = list(melee = 18, bullet = 41, laser = 43, energy = 25, bomb = 60, bio = 20, rad = 20) //Hidden armoured plates
 
 /obj/item/clothing/suit/armor/rtdrip
@@ -1262,7 +1262,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/sisterofbattle/training
 	name = "Novitae Power Armor"
-	desc = "The Ancient and Deconsecrated Carapace Armour adorned by Novice Militants during their training in Eipharius' Monastarium. Stripped of almost all iconography and with damaged plating. It has scriptures across it's surface, recounting the triumph and martyrdom of Saint Katherine."
+	desc = "The Ancient and Deconsecrated Carapace Armour adorned by Novice Militants during their training in Messina' Monastarium. Stripped of almost all iconography and with damaged plating. It has scriptures across it's surface, recounting the triumph and martyrdom of Saint Katherine."
 	icon_state = "ooml"
 	item_state = "ooml"
 	armor = list(melee = 18, bullet = 36, laser = 36, energy = 30, bomb = 60, bio = 60, rad = 90)
@@ -1421,7 +1421,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/trinet
 	name = "Iron Cuirass"
-	desc = "An iron-alloy breastplate forged by local hands, it's craftsmanship is questionable but the exotic alloy is remarkbly unique to Eipharius."
+	desc = "An iron-alloy breastplate forged by local hands, it's craftsmanship is questionable but the exotic alloy is remarkbly unique to Messina."
 	icon_state = "trinet"
 	item_state = "trinet"
 	armor = list(melee = 21, bullet = 25, laser = 25, energy = 30, bomb = 40, bio = 30, rad = 30)
@@ -1435,7 +1435,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/breastplate
 	name = "Iron Breastplate"
-	desc = "An iron-alloy breastplate forged by local hands, it's craftsmanship is questionable but the exotic alloy is remarkbly unique to Eipharius."
+	desc = "An iron-alloy breastplate forged by local hands, it's craftsmanship is questionable but the exotic alloy is remarkbly unique to Messina."
 	icon_state = "bmerc2"
 	item_state = "bmerc2"
 	armor = list(melee = 21, bullet = 25, laser = 25, energy = 30, bomb = 40, bio = 30, rad = 30)
@@ -1458,7 +1458,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/iplate
 	name = "Heavy Plate Cuirass"
-	desc = "An iron-alloy heavy plate cuirass forged by local hands, it's craftsmanship is remarkable and benefits from the exotic alloy unique to Eipharius."
+	desc = "An iron-alloy heavy plate cuirass forged by local hands, it's craftsmanship is remarkable and benefits from the exotic alloy unique to Messina."
 	icon_state = "iplate"
 	item_state = "iplate"
 	armor = list(melee = 21, bullet = 27, laser = 27, energy = 30, bomb = 40, bio = 30, rad = 30)
@@ -1472,7 +1472,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/templar
 	name = "Full Plate Armor"
-	desc = "An iron-alloy heavy plate cuirass forged by local hands, it's craftsmanship is remarkable and benefits from the exotic alloy unique to Eipharius."
+	desc = "An iron-alloy heavy plate cuirass forged by local hands, it's craftsmanship is remarkable and benefits from the exotic alloy unique to Messina."
 	icon_state = "templar"
 	item_state = "templar"
 	armor = list(melee = 21, bullet = 27, laser = 27, energy = 30, bomb = 40, bio = 30, rad = 30)
@@ -1486,7 +1486,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/knighthosp
 	name = "Frateris Plate"
-	desc = "An iron-alloy heavy plate cuirass forged by local hands, it's craftsmanship is remarkable and benefits from the exotic alloy unique to Eipharius."
+	desc = "An iron-alloy heavy plate cuirass forged by local hands, it's craftsmanship is remarkable and benefits from the exotic alloy unique to Messina."
 	icon_state = "knight_hospitaller"
 	item_state = "knight_hospitaller"
 	armor = list(melee = 21, bullet = 27, laser = 27, energy = 30, bomb = 40, bio = 30, rad = 30)
@@ -1528,7 +1528,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/armoredtrench
 	name = "Armored Trenchcoat"
-	desc = "A heavy armored trenchcoat with carapace plates inserted into the front and back. Attached also are iron-alloy chausses and pauldrons, a true masterwork of Eipharius."
+	desc = "A heavy armored trenchcoat with carapace plates inserted into the front and back. Attached also are iron-alloy chausses and pauldrons, a true masterwork of Messina."
 	icon_state = "towntrench_heavy"
 	item_state = "towntrench_heavy"
 	armor = list(melee = 18, bullet = 32, laser = 32, energy = 30, bomb = 40, bio = 30, rad = 30)
@@ -1728,11 +1728,11 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/greypa
 	name = "Mechanicus Power Armour"
-	desc = "Mechanicus holy power armour, forged by the Tech-priest of Mars and blessed with runes of blankness, a potent tool against the great enemy."
+	desc = "Mechanicus power armour, forged by the Tech-priest of Mars and blessed with runes of blankness, a potent tool against the great enemy."
 	icon_state = "knight_grey"
 	item_state = "knight_grey"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 20, bullet = 42, laser = 42, energy = 30, bomb = 60, bio = 60, rad = 90)
+	armor = list(melee = 20, bullet = 38, laser = 38, energy = 30, bomb = 60, bio = 60, rad = 90)
 	sales_price = 90
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

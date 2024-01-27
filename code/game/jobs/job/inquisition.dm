@@ -330,7 +330,9 @@
 	/obj/item/stack/thrones2/ten = 1,
 	/obj/item/stack/thrones3/twenty = 1,
 	/obj/item/book/manual/inq = 1,
-	/obj/item/card/id/syndicate = 1
+	/obj/item/card/id/syndicate = 1,
+	/obj/item/paper/administratum/weapon5 = 1,
+	/obj/item/paper/administratum/lambda = 1,
 	)
 
 	pda_slot = null
@@ -359,7 +361,9 @@
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/ten = 1,
 	/obj/item/book/manual/inq = 1,
-	/obj/item/card/id/syndicate = 1
+	/obj/item/card/id/syndicate = 1,
+	/obj/item/paper/administratum/weapon5 = 1,
+	/obj/item/paper/administratum/lambda = 1,
 	)
 
 	pda_slot = null

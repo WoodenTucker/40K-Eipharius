@@ -370,6 +370,17 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/engineering)
+"asl" = (
+/obj/structure/closet/crate/secure/large,
+/obj/item/seeds/wheatseed,
+/obj/item/seeds/wheatseed,
+/obj/item/seeds/pumpkinseed,
+/obj/item/seeds/riceseed,
+/obj/item/seeds/riceseed,
+/obj/item/seeds/tomatoseed,
+/obj/item/seeds/tomatoseed,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/farm)
 "asy" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -8969,9 +8980,7 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "hjU" = (
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
+/turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/hangarmech)
 "hko" = (
 /obj/effect/floor_decal/newcorner/nbar{
@@ -10093,9 +10102,7 @@
 /area/cadiaoutpost/oa/villageinside)
 "igo" = (
 /obj/effect/shuttle_landmark/ferry/mechanicus_end,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
+/turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/hangarmech)
 "igL" = (
 /obj/structure/torchwall{
@@ -14560,7 +14567,7 @@
 /obj/machinery/button/remote/blast_door/lever{
 	id = "barshutters";
 	name = "Bar Shutters";
-	pixel_y = -32
+	pixel_y = -20
 	},
 /turf/simulated/floor/fancyfloor/brokenfloor1,
 /area/cadiaoutpost/oa/service/inn)
@@ -17639,6 +17646,10 @@
 /obj/structure/stairs/east,
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/shuttle/station1)
+"oqW" = (
+/obj/item/stack/material/wood/ten,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/farm)
 "ora" = (
 /obj/effect/floor_decal/newcorner/stone,
 /turf/simulated/floor/snow,
@@ -19999,8 +20010,16 @@
 /obj/machinery/button/remote/blast_door/lever{
 	name = "Emergency Lockdown Shutter";
 	id = "TavernLockdown";
-	pixel_y = -32;
-	req_one_access = list(355,268)
+	pixel_y = -20;
+	req_one_access = list(355,268);
+	pixel_x = 10
+	},
+/obj/machinery/button/remote/blast_door/lever{
+	name = "Emergency Lockdown Shutter";
+	id = "TavernLockdown2";
+	pixel_y = -20;
+	req_one_access = list(355,268);
+	pixel_x = -4
 	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/service/inn)
@@ -21773,7 +21792,7 @@
 /obj/machinery/door/blast/grates/open{
 	dir = 2;
 	name = "Tavern Gates";
-	id = "TavernLockdown"
+	id = "TavernLockdown2"
 	},
 /turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/inn)
@@ -28098,6 +28117,18 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/engineering)
+"wAG" = (
+/obj/structure/closet/crate/secure/large,
+/obj/item/seeds/appleseed,
+/obj/item/seeds/appleseed,
+/obj/item/seeds/cornseed,
+/obj/item/seeds/cornseed,
+/obj/item/seeds/pumpkinseed,
+/obj/item/seeds/pumpkinseed,
+/obj/item/seeds/tobaccoseed,
+/obj/item/seeds/tobaccoseed,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/farm)
 "wBe" = (
 /obj/effect/floor_decal/turf/brick,
 /turf/simulated/floor/tiled{
@@ -28719,6 +28750,9 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "xeH" = (
 /obj/machinery/logcutter,
+/obj/item/stack/material/wood/ten,
+/obj/item/stack/material/wood/ten,
+/obj/item/stack/material/wood/ten,
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/farm)
 "xfo" = (
@@ -58695,8 +58729,8 @@ tNI
 tNI
 tNI
 tNI
-prl
-prl
+iii
+iii
 tNI
 tNI
 tNI
@@ -78692,8 +78726,8 @@ aLk
 aLk
 tLe
 aLk
-aLk
-aLk
+oqW
+oqW
 lOQ
 oml
 did
@@ -78944,7 +78978,7 @@ aLk
 aLk
 aLk
 aLk
-aLk
+oqW
 kJY
 gDo
 vjI
@@ -79194,9 +79228,9 @@ aLk
 aLk
 aLk
 aLk
-aLk
-aLk
-aLk
+wAG
+asl
+oqW
 xeH
 gDo
 gmG

@@ -238,21 +238,21 @@
 					<li>Extend and anchor the nuclear device from its interface.</li>
 					<li>Insert the nuclear authorisation disk into the slot.</li>
 					<li>Type the numeric authorisation code into the keypad. This should have been provided.<br>
-					<b>Note</b>: If you make a mistake, press R to reset the device.
+					Note: If you make a mistake, press R to reset the device.
 					<li>Press the E button to log on to the device.</li>
 				</ul><br>
 
 				You now have activated the device. To deactivate the buttons at anytime, for example when you've already prepped the bomb for detonation, remove the authentication disk OR press R on the keypad.<br><br>
 				Now the bomb CAN ONLY be detonated using the timer. Manual detonation is not an option. Toggle off the SAFETY.<br>
-				<b>Note</b>: You wouldn't believe how many Syndicate Operatives with doctorates have forgotten this step.<br><br>
+				Note: You wouldn't believe how many Syndicate Operatives with doctorates have forgotten this step.<br><br>
 
 				So use the - - and + + to set a detonation time between 5 seconds and 10 minutes. Then press the timer toggle button to start the countdown. Now remove the authentication disk so that the buttons deactivate.<br>
-				<b>Note</b>: THE BOMB IS STILL SET AND WILL DETONATE<br><br>
+				Note: THE BOMB IS STILL SET AND WILL DETONATE<br><br>
 
 				Now before you remove the disk, if you need to move the bomb, you can toggle off the anchor, move it, and re-anchor.<br><br>
 
 				Remember the order:<br>
-				<b>Disk, Code, Safety, Timer, Disk, RUN!</b><br><br>
+				Disk, Code, Safety, Timer, Disk, RUN!<br><br>
 				Intelligence Analysts believe that normal corporate procedure is for the Rogue Trader to secure the nuclear authentication disk.<br><br>
 
 				Good luck!
@@ -501,7 +501,336 @@
 			</html>
 			"}
 
+/obj/item/book/manual/slaanesh_recipes
+	name = "Diabolica Delectatio"
+	icon_state ="slaaneshbook"
+	author = "Elephantis Sarcina"
+	title = "Diabolica Delectatio"
 
+	dat = {"<html>
+				<head>
+				<style>
+				h1 {font-size: 18px; margin: 15px 0px 5px;}
+				h2 {font-size: 15px; margin: 15px 0px 5px;}
+				h3 {font-size: 13px; margin: 15px 0px 5px;}
+				li {margin: 2px 0px 2px 15px;}
+				ul {margin: 5px; padding: 0px;}
+				ol {margin: 5px; padding: 0px 15px;}
+				body {font-size: 13px; font-family: Verdana;}
+				</style>
+				</head>
+				<body>
+
+				<h1>Rites of The Dark Prince</h1>
+				The sacred rites and practices of excess.
+
+				<h2>Escape Artist:</h2>
+				<h3>You slip out of handcuffs easily.</h3>
+				Hancuffs offered on a rune of Slaanes.
+
+				<h2>Ritual Knife:</h2>
+				<h3>The tool of an artisan. Use it on dead bodies to obtain skin.</h3>
+				Combat knife offered on a rune of Slaanesh.
+
+				<h2>Tanning Rack:</h2>
+				<h3>Dries parchments of skin for use. Will take some minutes for the skin to be ready.</h3>
+				Ritual Knife used on logs cut from trees.
+
+				<h2>Secret Channel</h2>
+				<h3>Alter your radio-headset to use a warp-touched radio channel only accessible to the followers of Tzeentch and Slaanesh. Destroys the original</h3>
+
+				<h2>Masquerade Of Madness:</h2>
+				<h3>Instill fear into the servants of the Corpse Emperor who dare look into your eyes.</h3>
+				Ritual Knife used on a parchment of tanned skin.
+
+				<h2>Garment Of Excess:</h2>
+				<h3>Drape yourself in the attire worthy of the followers of the prince of excess.</h3>
+				Cloth stack used on a parchment of tanned skin.
+
+				<h2>Lash Of Torment:</h2>
+				<h3>Nothing like a massive dose of pain to keep those beneath you in their place.Use on help intent for pleasure and harm intent for pain</h3>
+				Severed human arm used on a parchment of tanned skin.
+
+				<h2>Forelimb Of Desire:</h2>
+				<h3>Slaanesh blesses your unworthy body with a new powerful arm.</h3>
+				Masquerade Of Madness, Garment Of Excess and Lash Of Torment offered on a rune of Slaanesh.
+
+				</body>
+			</html>
+			"}
+
+/obj/item/book/manual/law
+	name = "Lex Imperialis"
+	icon = 'icons/obj/items/books.dmi'
+	icon_state = "LAW"
+	author = "The Administratum"
+	title = "Lex Imperialis"
+	desc = "An old handbook containing some of the Imperiums most important laws."
+	dat = {"<html>
+				<head>
+				<style>
+				h1 {font-size: 18px; margin: 15px 0px 5px;}
+				h2 {font-size: 15px; margin: 15px 0px 5px;}
+				h3 {font-size: 13px; margin: 15px 0px 5px;}
+				li {margin: 2px 0px 2px 15px;}
+				ul {margin: 5px; padding: 0px;}
+				ol {margin: 5px; padding: 0px 15px;}
+				body {font-size: 13px; font-family: Verdana;}
+				</style>
+				</head>
+				<body>
+
+	            <h1>Dictates Imperialis</h1>
+				Behold the written word of the Emperor of Mankind, for His Word is Law.
+
+				<h3>Lex 1, Chapter 1, Page 1. Heresy:</h3>
+				All shall worship the God Emperor and only the God Emperor for He is the Master of Mankind.
+
+				<h3>Lex 48, Chapter 1, Page 2. Administratum:</h3>
+				As authorised by the Adeptus Terra, the Adeptus Administratum is afforded the power and duty to regulate the Imperium of Mankind through sanctified bureaucracy. All official documentation must be sanctioned by the Adeptus Administratum and any attempt to forge, duplicate, deface or destroy official documentation, without the approval of the Adeptus Administratum, will result in censure or punishment. This includes, but is not limited to; written orders, permits and clearances, acknowledgements, memorandum, reports and any documentation that may bare relevance to the Imperium of Mankind and its continued function.
+
+				<h3>Lex 112, Chapter 4, Page 9. Tithe:</h3>
+				All Imperial Worlds shall be required to pay Tithe to the Imperium of Mankind, as dictated by the Adeptus Administratum. This shall be overseen by the Worlds ruling body.
+
+				<h3>Lex 134, Chapter 4, Page 22, Revision 103. Rulership:</h3>
+				All Imperial Worlds shall be overseen by a ruling body. Typically a Planetary Governor. Who is responsible for the defence and continued production of their World. Who may not be deposed except by their own will, order of the Adeptus Administratum, Holy Ordos of the Inquistion or by ruling of the Adeptus Arbites for a crime against the Lex Imperialis. They shall be known as Imperial Commander and have authority over all Astra Militarum forces on their surface and all Navis Imperialis in their orbit, unless overruled by an authority greater than their own such as an Astra Militarum General, an Navis Imperialis Admiral, an Adeptus Astartes Chapter Master, an Inquisitor or senior Adeptus Administratum official such as Sector or Segmentum Command.
+
+				<h3>Lex 264, Chapter 8, Page 2, Revision 1,004. Technology:</h3>
+				To alter, tamper with or fail to preform proper sanctified rites with technology is to incur the judgement of the Adeptus Mechanicus and be subject to their censure. The use, trade, ownership or study of technology of non-human origin is strictly outlawed.
+
+				<h3>Lex 349, Chapter 11, Page 14, Revision 34. Psychic Mutation:</h3>
+				All unsanctioned individuals bearing the Psyker Gene are to be transfered to the authority of the Holy Ordos of the Inquisition for transport aboard the Blackships. If this is impossible in a reasonable timeframe then the unsanctioned Psyker is to be put to death. To shelter or in any way aid an unsanctioned Psyker is also strictly outlawed.
+
+				<h3>Lex 429, Chapter 42, Page 16, Revision 2. Mutation:</h3>
+				Any individual who shows a degree of mutation greater than 3 in the Godolkin Index is to be considered a mutant and be outlawed unless sanctioned by the Adeptus Administratum.
+				
+				<h3>Lex 592, Chapter 51, Page 1, Revision 10,003. Obedience:</h3>
+				All within the Imperium of Mankind are subject to a Superior above them in some form with the Emperor of Mankind being the Master of all. To disobey a Superior is forbidden.
+
+				<h3>Lex 593, Chapter 51, Page 1, Revision 77. Military Lex:</h3>
+				All who serve the Imperium in a formalised fighting body such as the Adeptus Astartes, Astra Militarum, Navis Imperialis or Adeptus Sororitas will be subject to their own regulation ontop of the Lex Imperialis. These regulations are enforced by their own Superiors and an Arbitrator has no need to intervene unless requested. However should any violate the Lex Imperialis itself punishment must be carried out, overseen or verified by an Arbitrator.
+
+				<h3>Lex 602, Chapter 1, Page 412, Revision 6. Warrant of Trade:</h3>
+				An individual posessing a Warrant of Trade may be excused from the Lex Imperialis as long as their actions do not hinder the Imperium of Mankind, as decreed by the Emperor of Mankind. They may afford protection to resources, be it human, material, xenos or other, within their posession and shall have unrestricted travel within and without of the Imperium. This may be revoked by the High Lords of Terra or an Inquisitor of the Holy Ordos of the Inquisition at any time for any reason they see fit.
+
+				<h3>Lex 799, Chapter 2, Page 1. Inquisition:</h3>
+				An individual posessing an Inquisitorial Rosette is excused from the Lex Imperialis in total and may command any resource in the Imperium of Mankind save that of the Emperor of Mankind and His own forces. They are subject to censure only by another Inquisitor or the Emperor of Mankind.
+
+				<h3>Lex 801, Chapter 1, Page 4, Revision 4. Treaty of Mars:</h3>
+				The Adeptus Mechanicus is excused from the Lex Imperialis in total however must acknowledge that the God Emperor is their Omnissiah and continue to benefit the Imperium of Mankind. They are therefor unable to be Commanded by any outside of the Adeptus Mechanicus, save the God Emperor, but cannot issue Commands to any within the Imperium of Mankind. It shall be the duty of the Adeptus Arbites, Holy Ordos of the Inquisition and Adeptus Mechanicus itself to ensure this Treaty is upheld and respected.
+				
+				<h3>Lex 998, Chapter 1, Page 2. Arbitration:</h3>
+				An Arbitrator of the Adeptus Arbites is to be considered Judge, Jury and Executioner. Whilst they are not immune to the Lex Imperialis it is their duty to uphold it and punish any who would violate it. Any Arbitrator who strays from this duty shall be brought to justice by a fellow Arbitrator or an Inquisitor. To hinder an Arbitrator from their duties, directly or indirectly, willingly or unwillingly, is outlawed.
+				
+				<h3>Lex 0 Chapter 1, Page 0. Malleus:</h3>
+				Knowledge, in all forms, of the Immaterium and the Daemonic is to be restricted and secret.
+
+
+				</body>
+			</html>
+			"}
+
+/obj/item/book/manual/administratum
+	name = "Messian Security Permit"
+	icon = 'icons/obj/device.dmi'
+	icon_state = "rosarius"
+	author = "The Administratum"
+	title = "Messian Security Permit"
+	desc = "An official document bearing the official markings and stamps of the Administratum."
+	dat = {"<html>
+				<head>
+				<style>
+				h1 {font-size: 18px; margin: 15px 0px 5px;}
+				h2 {font-size: 15px; margin: 15px 0px 5px;}
+				h3 {font-size: 13px; margin: 15px 0px 5px;}
+				li {margin: 2px 0px 2px 15px;}
+				ul {margin: 5px; padding: 0px;}
+				ol {margin: 5px; padding: 0px 15px;}
+				body {font-size: 13px; font-family: Verdana;}
+				</style>
+				</head>
+				<body>
+
+				<h1>Messian Security Permit</h1>
+				<h3>As decreed by the Planetary Governor of Messina, undisputed ruler. The owner of this Special Permit is granted the permissions carry and use archeotech of Seolite origin in the pursuit of hunting or salvaging within the territory of Messina to the benefit of mankind, as enforced by the Messian Magistratum through its Enforcers.</h3>
+				<h3>----------------------------</h3>
+				<h3>AUTHORIZED ARMS AND ARMOUR: PRIMITIVE, AUTOGUN, BOLTER, LASGUN, ARCHEOTECH, XENOS, EXPLOSIVE.</h3>
+				<h3>----------------------------</h3>
+				<h3>AUTHORIZING BODY: Messina Magistrate under the authority of the Planetary Governor</h3>
+				<h3>----------------------------</h3>
+				<h3>Woe be upon thee who violates the permissions granted within this Permit. For they have defied the generosity of the Planetary Governor. It shall be the duty of the Magistrate Enforcers to impose this Permit and ensure none stray beyond its confines.</h3>
+				<h3>----------------------------</h3>
+				<h3>STAMP BELOW</h3>
+
+
+				</body>
+			</html>
+			"}
+
+/obj/item/paper/administratum
+	name = "Messian Security Permit"
+	color = "#acaf05ff"
+	desc = "An official document bearing the official markings and stamps of the Administratum."
+	info = "​<p><center><b><large><u>Messina MAGISTRATUM</u><hr></large><u>SPECIAL PERMIT TO SALVAGE AND HUNT</u></b><center>As decreed by the Planetary Governor of Messina, undisputed ruler. The owner of this Special Permit is granted the permissions carry and use archeotech of Seolite origin in the pursuit of hunting or salvaging within the territory of Messina to the benefit of mankind, as enforced by the Messian Magistratum through its Enforcers.</center></center><hr><b></b><b>AUTHORIZED ARMS AND ARMOUR:</b> PRIMITIVE, POWERBLADE, AUTOGUN, BOLTER, LASGUN, ARCHEOTECH, XENOS, EXPLOSIVE.<hr><b>OWNER:</b> <sign><hr><b>AUTHORIZING BODY:</b> Messina Magistrate under the authority of the Planetary Governor<b><hr></b><center><u>Woe be upon thee who violates the permissions granted within this Permit. For they have defied the generosity of the Planetary Governor. It shall be the duty of the Magistrate Enforcers to impose this Permit and ensure none stray beyond its confines.</center><hr><center><b><small>STAMP BELOW LINE<u></b><hr></u></small></p>"
+
+/obj/item/paper/administratum/weapon3
+	name = "Weapons Permit"
+	desc = "An official document bearing the official markings and stamps of the Administratum."
+	info = "​<p><center><b><large><u>ADEPTUS ADMINISTRATUM</u><hr></large><u>CLASS III WEAPONS PERMIT:</u></b><small>This is to certify that the owner of this document is hereby afforded the official rights and permissions to own and utilize legally the outlined weaponry, within and without the Imperium of Mankind, as decreed by the Adeptus Administratum as sanctified by the Adeptus Terra. To be adhered to by all who are subject to the Lex Imperialis.</small></center><hr><b></b><b>WEAPON PERMIT GRADE:</b> III<b>AUTHORIZED WEAPONS:</b> PRIMITIVE, LASGUN, AUTOGUN. MINING EXPLOSIVE<hr><b>OWNER:</b> <sign><hr><b>AUTHORIZING BODY:</b> Adeptus Administratum<b><hr></b><small>This document is considered official and sanctified by the Adeptus Administratum. Any attempts to duplicate, forge, destroy, deface, or deny this document without the duly authorized Adeptus Administratum sanction will result in censure as authorized by the Lex Imperialis under Lex 48 of Chapter 1, Page 2.</small><hr><center><b><small>STAMP BELOW LINE<u></b><hr></u></small></p>"
+
+/obj/item/paper/administratum/weapon4
+	name = "Weapons Permit"
+	desc = "An official document bearing the official markings and stamps of the Administratum."
+	info = "​<p><center><b><large><u>ADEPTUS ADMINISTRATUM</u><hr></large><u>CLASS IV WEAPONS PERMIT:</u></b><small>This is to certify that the owner of this document is hereby afforded the official rights and permissions to own and utilize legally the outlined weaponry, within and without the Imperium of Mankind, as decreed by the Adeptus Administratum as sanctified by the Adeptus Terra. To be adhered to by all who are subject to the Lex Imperialis.</small></center><hr><b></b><b>WEAPON PERMIT GRADE:</b> IV<b>AUTHORIZED WEAPONS:</b> PRIMITIVE, POWERBLADE, AUTOGUN, BOLTER, LASGUN, ARCHEOTECH, EXPLOSIVE.<hr><b>OWNER:</b> <sign><hr><b>AUTHORIZING BODY:</b> Adeptus Administratum<b><hr></b><small>This document is considered official and sanctified by the Adeptus Administratum. Any attempts to duplicate, forge, destroy, deface, or deny this document without the duly authorized Adeptus Administratum sanction will result in censure as authorized by the Lex Imperialis under Lex 48 of Chapter 1, Page 2.</small><hr><center><b><small>STAMP BELOW LINE<u></b><hr></u></small></p>"
+
+/obj/item/paper/administratum/weapon5
+	name = "Weapons Permit"
+	desc = "An official document bearing the official markings and stamps of the Administratum."
+	info = "​<p><center><b><large><u>ADEPTUS ADMINISTRATUM</u><hr></large><u>CLASS V WEAPONS PERMIT:</u></b><small>This is to certify that the owner of this document is hereby afforded the official rights and permissions to own and utilize legally the outlined weaponry, within and without the Imperium of Mankind, as decreed by the Adeptus Administratum as sanctified by the Adeptus Terra. To be adhered to by all who are subject to the Lex Imperialis.</small></center><hr><b></b><b>WEAPON PERMIT GRADE:</b> V<b>AUTHORIZED WEAPONS:</b> RESTRICTED, PRIMITIVE, POWERBLADE, AUTOGUN, BOLTER, LASGUN, ARCHEOTECH, XENOS, EXPLOSIVE.<hr><b>OWNER:</b> <sign><hr><b>AUTHORIZING BODY:</b> Adeptus Administratum<b><hr></b><small>This document is considered official and sanctified by the Adeptus Administratum. Any attempts to duplicate, forge, destroy, deface, or deny this document without the duly authorized Adeptus Administratum sanction will result in censure as authorized by the Lex Imperialis under Lex 48 of Chapter 1, Page 2.</small><hr><center><b><small>STAMP BELOW LINE<u></b><hr></u></small></p>"
+
+/obj/item/paper/administratum/theta
+	name = "Theta Security Permit"
+	desc = "An official document bearing the official markings and stamps of the Administratum."
+	info = "​<p><center><b><large><u>ADEPTUS ADMINISTRATUM</u><hr></large><u>SECURITY CLEARANCE</u></b><small>This is to certify that the owner of this document is hereby afforded the official rights and permissions to observe and use any item, persons, entity, event, document, or lore up to and including the assigned security level, within and without the Imperium of Mankind, as decreed by the Adeptus Administratum as sanctified by the Adeptus Terra. To be adhered to by all who are subject to the Lex Imperialis.</small></center><hr><b></b><b>SECURITY CLEARANCE LEVEL:</b> THETA<b>AUTHORIZED KEYWORDS:</b> MILITARUM, NAVIS, IMPERIALIS, ADMINISTRATUM<hr><b>OWNER:</b> <sign><hr><b>AUTHORIZING BODY:</b> Adeptus Administratum<b><hr></b><small>This document is considered official and sanctified by the Adeptus Administratum. Any attempts to duplicate, forge, destroy, deface, or deny this document without the duly authorized Adeptus Administratum sanction will result in censure as authorized by the Lex Imperialis under Lex 48 of Chapter 1, Page 2.</small><hr><center><b><small>STAMP BELOW LINE<u></b><hr></u></small></p>"
+
+/obj/item/paper/administratum/omega
+	name = "Omega Security Permit"
+	desc = "An official document bearing the official markings and stamps of the Administratum."
+	info = "​<p><center><b><large><u>ADEPTUS ADMINISTRATUM</u><hr></large><u>SECURITY CLEARANCE</u></b><small>This is to certify that the owner of this document is hereby afforded the official rights and permissions to observe and use any item, persons, entity, event, document, or lore up to and including the assigned security level, within and without the Imperium of Mankind, as decreed by the Adeptus Administratum as sanctified by the Adeptus Terra. To be adhered to by all who are subject to the Lex Imperialis.</small></center><hr><b></b><b>SECURITY CLEARANCE LEVEL:</b> OMEGA<b>AUTHORIZED KEYWORDS:</b> XENOS, ARCHEO, ASTARTES, MILITARUM, NAVIS, IMPERIALIS, ADMINISTRATUM<hr><b>OWNER:</b> <sign><hr><b>AUTHORIZING BODY:</b> Adeptus Administratum<b><hr></b><small>This document is considered official and sanctified by the Adeptus Administratum. Any attempts to duplicate, forge, destroy, deface, or deny this document without the duly authorized Adeptus Administratum sanction will result in censure as authorized by the Lex Imperialis under Lex 48 of Chapter 1, Page 2.</small><hr><center><b><small>STAMP BELOW LINE<u></b><hr></u></small></p>"
+
+/obj/item/paper/administratum/vermillion
+	name = "Vermillion Security Permit"
+	desc = "An official document bearing the official markings and stamps of the Administratum."
+	info = "​<p><center><b><large><u>ADEPTUS ADMINISTRATUM</u><hr></large><u>SECURITY CLEARANCE</u></b><small>This is to certify that the owner of this document is hereby afforded the official rights and permissions to observe and use any item, persons, entity, event, document, or lore up to and including the assigned security level, within and without the Imperium of Mankind, as decreed by the Adeptus Administratum as sanctified by the Adeptus Terra. To be adhered to by all who are subject to the Lex Imperialis.</small></center><hr><b></b><b>SECURITY CLEARANCE LEVEL:</b> VERMILLION<b>AUTHORIZED KEYWORDS:</b> INQUISITION, MECHANICUS, XENOS, HERETICUS, ARCHEO, ASTARTES, MILITARUM, NAVIS, IMPERIALIS, ADMINISTRATUM<hr><b>OWNER:</b> <sign><hr><b>AUTHORIZING BODY:</b> Adeptus Administratum<b><hr></b><small>This document is considered official and sanctified by the Adeptus Administratum. Any attempts to duplicate, forge, destroy, deface, or deny this document without the duly authorized Adeptus Administratum sanction will result in censure as authorized by the Lex Imperialis under Lex 48 of Chapter 1, Page 2.</small><hr><center><b><small>STAMP BELOW LINE<u></b><hr></u></small></p>"
+
+/obj/item/paper/administratum/lambda
+	name = "Lambda Security Permit"
+	desc = "An official document bearing the official markings and stamps of the Administratum."
+	info = "​<p><center><b><large><u>ADEPTUS ADMINISTRATUM</u><hr></large><u>SECURITY CLEARANCE</u></b><small>This is to certify that the owner of this document is hereby afforded the official rights and permissions to observe and use any item, persons, entity, event, document, or lore up to and including the assigned security level, within and without the Imperium of Mankind, as decreed by the Adeptus Administratum as sanctified by the Adeptus Terra. To be adhered to by all who are subject to the Lex Imperialis.</small></center><hr><b></b><b>SECURITY CLEARANCE LEVEL:</b> LAMBDA<b>AUTHORIZED KEYWORDS:</b> MALLEUS, INQUISITION, MECHANICUS, XENOS, HERETICUS, ARCHEO, ASTARTES, MILITARUM, NAVIS, IMPERIALIS, ADMINISTRATUM<hr><b>OWNER:</b> <sign><hr><b>AUTHORIZING BODY:</b> Adeptus Administratum<b><hr></b><small>This document is considered official and sanctified by the Adeptus Administratum. Any attempts to duplicate, forge, destroy, deface, or deny this document without the duly authorized Adeptus Administratum sanction will result in censure as authorized by the Lex Imperialis under Lex 48 of Chapter 1, Page 2.</small><hr><center><b><small>STAMP BELOW LINE<u></b><hr></u></small></p>"
+
+/obj/item/paper/administratum/mech
+	name = "Mechanicus  Security Permit"
+	desc = "An official document bearing the official markings and stamps of the Mechanicus."
+	info = "​<p><center><b><large><u>ADEPTUS MECHANICUS</u><hr></large></center><u>SECURITY + ACCESS PERMISSIONS = Messina FORGE</u></b>The owner/user of this permission is granted for view, use, and access of ADEPTUS MECHANICUS assets, facility, and knowledge. Sanctified and decreed by MAGOS EXPLORATOR Messina. Oversight granted by MAGOS EXPLORATOR Messina. Blessed by OMNISSIAH. Defiance equals Termination / Servitorization / Censure. Deus Ex Machina.</center><hr><b></b><b>OWNER:</b> <sign><hr> <small>(KEY = 2DVX84LDTD)</small><hr><b>(AUTHORIZING)</b> Adeptus Mechanicus, Magos Explorator, Messina <small>()KEY = 9NK7FGMJAI)</small><b><hr></b><small> Attempted forgery, falsification, or duplication of this permission is denied and equals termination, servitorization, or censure. Unauthorized user is subject to inquiry by force.</small><hr><center><b><small>STAMP BELOW LINE<u></b><hr></u></small></p>"
+
+
+
+/obj/item/book/manual/administratum/weapon3
+	name = "Weapons Permit"
+	icon = 'icons/obj/device.dmi'
+	icon_state = "rosarius"
+	author = "The Administratum"
+	title = "Class III Weapons Permit"
+	desc = "An official document bearing the official markings and stamps of the Administratum."
+	dat = {"<html>
+				<head>
+				<style>
+				h1 {font-size: 18px; margin: 15px 0px 5px;}
+				h2 {font-size: 15px; margin: 15px 0px 5px;}
+				h3 {font-size: 13px; margin: 15px 0px 5px;}
+				li {margin: 2px 0px 2px 15px;}
+				ul {margin: 5px; padding: 0px;}
+				ol {margin: 5px; padding: 0px 15px;}
+				body {font-size: 13px; font-family: Verdana;}
+				</style>
+				</head>
+				<body>
+
+				<h1>Class III Weapons Permit</h1>
+				<h3>This is to certify that the owner of this document is herby afforded the official rights and permissions to own and utilize legally the outlined weaponry, within and without the Imperium of Mankind, as decreed by the Adeptus Administratum as sanctified by the Adeptus Terra. To be adhered to by all who are subject to the Lex Imperialis.</h3>
+				<h3>----------------------------</h3>
+				<h3>AUTHORIZED ARMS AND ARMOUR: PRIMITIVE, AUTOGUN. MINING EXPLOSIVE.</h3>
+				<h3>----------------------------</h3>
+				<h3>AUTHORIZING BODY: Messina Magistrate under the authority of the Planetary Governor</h3>
+				<h3>----------------------------</h3>
+				<h3>This document is considered official and sanctified by the Adeptus Administratum. Any attempts to duplicate, forge, destroy, deface or deny this document without the duly authorised Adeptus Administratum sanction will result in censure as authorised by the Lex Imperialis under Lex 48 of Chapter 1, Page 2. </h3>
+				<h3>----------------------------</h3>
+				<h3>STAMP BELOW</h3>
+
+
+				</body>
+			</html>
+			"}
+
+
+/obj/item/book/manual/administratum/weapon4
+	name = "Weapons Permit"
+	icon = 'icons/obj/device.dmi'
+	icon_state = "rosarius"
+	author = "The Administratum"
+	title = "Class IV Weapons Permit"
+	desc = "An official document bearing the official markings and stamps of the Administratum."
+	dat = {"<html>
+				<head>
+				<style>
+				h1 {font-size: 18px; margin: 15px 0px 5px;}
+				h2 {font-size: 15px; margin: 15px 0px 5px;}
+				h3 {font-size: 13px; margin: 15px 0px 5px;}
+				li {margin: 2px 0px 2px 15px;}
+				ul {margin: 5px; padding: 0px;}
+				ol {margin: 5px; padding: 0px 15px;}
+				body {font-size: 13px; font-family: Verdana;}
+				</style>
+				</head>
+				<body>
+
+				<h1>Class IV Weapons Permit</h1>
+				<h3>This is to certify that the owner of this document is herby afforded the official rights and permissions to own and utilize legally the outlined weaponry, within and without the Imperium of Mankind, as decreed by the Adeptus Administratum as sanctified by the Adeptus Terra. To be adhered to by all who are subject to the Lex Imperialis.</h3>
+				<h3>----------------------------</h3>
+				<h3>AUTHORIZED ARMS AND ARMOUR: PRIMITIVE, POWER BLADE, AUTOGUN, BOLTER, LASGUN, ARCHEOTECH, EXPLOSIVE.</h3>
+				<h3>----------------------------</h3>
+				<h3>AUTHORIZING BODY: Messina Magistrate under the authority of the Planetary Governor</h3>
+				<h3>----------------------------</h3>
+				<h3>This document is considered official and sanctified by the Adeptus Administratum. Any attempts to duplicate, forge, destroy, deface or deny this document without the duly authorised Adeptus Administratum sanction will result in censure as authorised by the Lex Imperialis under Lex 48 of Chapter 1, Page 2. </h3>
+				<h3>----------------------------</h3>
+				<h3>STAMP BELOW</h3>
+
+
+				</body>
+			</html>
+			"}
+
+/obj/item/book/manual/administratum/weapon5
+	name = "Weapons Permit"
+	icon = 'icons/obj/device.dmi'
+	icon_state = "rosarius"
+	author = "The Administratum"
+	title = "Class V Weapons Permit"
+	desc = "An official document bearing the official markings and stamps of the Administratum."
+	dat = {"<html>
+				<head>
+				<style>
+				h1 {font-size: 18px; margin: 15px 0px 5px;}
+				h2 {font-size: 15px; margin: 15px 0px 5px;}
+				h3 {font-size: 13px; margin: 15px 0px 5px;}
+				li {margin: 2px 0px 2px 15px;}
+				ul {margin: 5px; padding: 0px;}
+				ol {margin: 5px; padding: 0px 15px;}
+				body {font-size: 13px; font-family: Verdana;}
+				</style>
+				</head>
+				<body>
+
+				<h1>Class V Weapons Permit</h1>
+				<h3>This is to certify that the owner of this document is herby afforded the official rights and permissions to own and utilize legally the outlined weaponry, within and without the Imperium of Mankind, as decreed by the Adeptus Administratum as sanctified by the Adeptus Terra. To be adhered to by all who are subject to the Lex Imperialis.</h3>
+				<h3>----------------------------</h3>
+				<h3>AUTHORIZED ARMS AND ARMOUR: MALLEUS, HERETICUS, PRIMITIVE, POWER BLADE, AUTOGUN, BOLTER, LASGUN, ARCHEOTECH, XENOS, EXPLOSIVE.</h3>
+				<h3>----------------------------</h3>
+				<h3>AUTHORIZING BODY: Messina Magistrate under the authority of the Planetary Governor</h3>
+				<h3>----------------------------</h3>
+				<h3>This document is considered official and sanctified by the Adeptus Administratum. Any attempts to duplicate, forge, destroy, deface or deny this document without the duly authorised Adeptus Administratum sanction will result in censure as authorised by the Lex Imperialis under Lex 48 of Chapter 1, Page 2. </h3>
+				<h3>----------------------------</h3>
+				<h3>STAMP BELOW</h3>
+
+
+				</body>
+			</html>
+			"}
+
+
+
+
+// GAY BROKEN BOOKS
 
 /obj/item/book/manual/guard
 	name = "Imperial Infantrymans Uplifting Primer"
@@ -626,24 +955,5 @@
     icon_state = "ERIT1"
 
 
-/*
-/obj/item/book/manual/law
-	name = "Lex Imperialis"
-	icon = 'icons/obj/items/books.dmi'
-	icon_state = "LAW"
-	author = "God Emperor of Mankind"
-	title = "Lex Imperialis"
-	desc = "An old handbook containing some of the Imperiums most important laws."
-	var/list/ERIT = list(
-	"Page 1. Litany of his imperial preservation. Emperor I consecrate this place today anew and without reserve to your righteous fury.",
-	"Page 2. Litany of his imperial preservation. Emperor keep us. Emperor preserve us.",
-	"Page 3. Litany of her martyred exorcism. Holy emperor you have given us your saints to purge wickedness across the stars I call upon them now to reveal the truth.",
-	"Page 4. Litany of her martyred exorcism. Saint Sabbat defend us! Saint Beatie defend us! Saint ephrael and her martyed lady defend us!",
-	"Page 5. There is a drawing of holy water being expeled onto the face of a heretic during the litany of her martyred exorcism."
-	) 
 
-/obj/item/book/manual/guard/attack_self(mob/user as mob)
-    to_chat(user, "<span class='notice'>You flip past your blank death certificate, reading the following passage</span>")
-    playsound(user, 'sound/effects/pageturn1.ogg', 10, 1)
-    icon_state = "ERIT1"
-*/
+
