@@ -2552,6 +2552,7 @@
 	icon_state = "table_horizontal2";
 	dir = 4
 	},
+/obj/item/book/manual/law,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -4197,6 +4198,7 @@
 	icon_state = "reinf_table3";
 	dir = 8
 	},
+/obj/item/book/manual/law,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/armory)
 "nW" = (
@@ -4751,6 +4753,7 @@
 	dir = 1;
 	icon_state = "tube1"
 	},
+/obj/item/book/manual/law,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/armory)
 "qj" = (
@@ -5148,28 +5151,6 @@
 /obj/machinery/door/airlock/glass_medical,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/armory)
-"rY" = (
-/obj/item/paper_bin{
-	pixel_y = 10
-	},
-/obj/item/pen/multi{
-	pixel_y = 6
-	},
-/obj/structure/table/graf/wood_office_table{
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
-/obj/item/paper/administratum/omega,
-/obj/item/paper/administratum/omega,
-/obj/item/paper/administratum/weapon4,
-/obj/item/paper/administratum/weapon4,
-/obj/item/paper/administratum/weapon5,
-/obj/item/paper/administratum/weapon4,
-/obj/item/paper/administratum/theta,
-/obj/item/paper/administratum/theta,
-/obj/item/paper/administratum/mech,
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "rZ" = (
 /turf/unsimulated/mineral{
 	icon = 'icons/turf/wall.dmi';
@@ -9042,6 +9023,7 @@
 	icon_state = "wood_1tileendtable";
 	dir = 4
 	},
+/obj/item/book/manual/law,
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 1
 	},
@@ -13376,6 +13358,28 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/armory)
+"VR" = (
+/obj/item/paper_bin{
+	pixel_y = 10
+	},
+/obj/item/pen/multi{
+	pixel_y = 6
+	},
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 4
+	},
+/obj/item/paper/administratum/omega,
+/obj/item/paper/administratum/omega,
+/obj/item/paper/administratum/weapon4,
+/obj/item/paper/administratum/weapon4,
+/obj/item/paper/administratum/weapon5,
+/obj/item/paper/administratum/weapon4,
+/obj/item/paper/administratum/theta,
+/obj/item/paper/administratum/theta,
+/obj/item/paper/administratum/mech,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "VT" = (
 /obj/structure/closet/crate/trashcart,
 /obj/effect/floor_decal/spline/plain{
@@ -72268,7 +72272,7 @@ PH
 wc
 wc
 wc
-rY
+VR
 PH
 ld
 tX

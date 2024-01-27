@@ -5930,6 +5930,7 @@
 /obj/structure/table/rack/shelf,
 /obj/item/stack/thrones3/twenty,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/book/manual/law,
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/inn)
 "eQt" = (
@@ -9261,6 +9262,7 @@
 "hxG" = (
 /obj/structure/table/steel_reinforced,
 /obj/effect/floor_decal/turf/plating,
+/obj/item/book/manual/law,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -18627,6 +18629,7 @@
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/item/ammo_magazine/mc45mm/kp,
+/obj/item/book/manual/law,
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
@@ -21721,6 +21724,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/villageinside)
+"rAy" = (
+/obj/item/book/manual/law,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/bridge/hallway)
 "rAC" = (
 /obj/structure/bed/chair/wood/fancy{
 	dir = 1
@@ -25481,6 +25488,7 @@
 /obj/random/loot/randomlasammo,
 /obj/random/loot/randomlasammo,
 /obj/random/loot/randomlasammo,
+/obj/item/book/manual/law,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/bridge/hallway)
 "uDU" = (
@@ -61803,7 +61811,7 @@ jBp
 hNK
 giD
 fJe
-cdM
+rAy
 cdM
 nYG
 afF
