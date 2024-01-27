@@ -281,7 +281,7 @@
 		H.set_trait(new/datum/trait/death_tolerant)
 		H.set_quirk(new/datum/quirk/dead_inside) // the only thing the sisters of the orders millitant feel is the god emperor's light.
 		H.add_stats(rand(15,19), rand(17,20), rand(15,18), rand(15,17)) //Slighty better than given Abbess/Hospitaller stats. Namely more ED to take more punishment.
-		H.add_skills(rand(7,9),rand(6,9),rand(10,11),rand(3,5),rand(10,11)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(8,10),rand(6,9),rand(10,11),rand(3,5),rand(10,11)) //melee, ranged, med, eng, surgery
 		H.get_idcard()?.access = list(213 , 211, 213, 333, access_heads, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_advchapel, access_medical, access_village)
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
