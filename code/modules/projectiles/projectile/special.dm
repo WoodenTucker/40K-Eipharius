@@ -143,8 +143,8 @@
 /obj/item/projectile/flamer/salamander
 	name = "fire"
 	icon_state = "flame"
-	damage = 6
-	armor_penetration = 16
+	damage = 22
+	armor_penetration = 44
 	range =  5//Very short range.
 	damage_type = BURN
 	mob_hit_sound = list('sound/effects/fire.ogg')
@@ -154,7 +154,7 @@
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
 		if(!istype(H.wear_suit, /obj/item/clothing/suit/fire))
-			H.adjust_fire_stacks(10) //note left by walker, any more than 10 is impossibly OP
+			H.adjust_fire_stacks(5) //note left by walker, any more than 10 is impossibly OP
 			H.IgniteMob()
 		new /obj/flamer_fire(H.loc, 12, 10, "blue", 1)
 
