@@ -22,7 +22,7 @@
 		H.witchblood()
 		H.stat = UNCONSCIOUS
 		H.sleeping = 500
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Pilgrim. You left your home with little in search of more. Rumors of a holy site drew you to this planet, Eipharius. and now life is in your hands. <br> <span class = 'badmood'> + Go to your pilgrim tab and select your fate. + </span> </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Pilgrim. You left your home with little in search of more. Rumors of a holy site drew you to this planet, Messina. and now life is in your hands. <br> <span class = 'badmood'> + Go to your pilgrim tab and select your fate. + </span> </font></b></span>")
 		H.verbs += list(
 			/mob/living/carbon/human/proc/penitentclass,
 		)
@@ -50,7 +50,7 @@
 		H.assign_random_quirk()
 		H.witchblood()
 		H.get_idcard()?.access = list(access_village) // so they open all 211
-		to_chat(H, "<span class='notice'><b><font size=3>You are an Imperial Citizen local to the planet of Eipharius or at have been living in-system for long enough to become trusted among the locals here. <br> <span class = 'badmood'> + Go to your citizen tab and select your fate. + </span> </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are an Imperial Citizen local to the planet of Messina or at have been living in-system for long enough to become trusted among the locals here. <br> <span class = 'badmood'> + Go to your citizen tab and select your fate. + </span> </font></b></span>")
 
 		H.verbs += list(
 			/mob/living/carbon/human/proc/citizenclass,
@@ -75,7 +75,7 @@ Pilgrim Fate System
 
 	var/mob/living/carbon/human/U = src
 	U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,) //removes verb
-	var/fates = list("Mercenary","Scum","Nomad","Primitive","Witch Hunter",)
+	var/fates = list("Mercenary","Scum","Nomad","Messian Tribal","Witch Hunter",)
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -84,21 +84,21 @@ Pilgrim Fate System
  //skills are between 1-5 for roles that have little to no reason to know something, 5-10 if they are able to naturally learn those skills, 5 is baseline,
 	switch(classchoice)
 
-		if("Primitive")
+		if("Messian Tribal")
 			U.add_skills(rand(5,8),rand(4,6),rand(3,6),rand(2,6),rand(2,6)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			new /obj/item/glass_jar(src.loc)
 			new /obj/item/storage/backpack/satchel/warfare(src.loc)
-			new /obj/item/clothing/head/helmet/hard_had(src.loc)
 			new /obj/item/device/radio/headset/headset_service(src.loc)
 			new /obj/item/device/flashlight/lantern(src.loc)
+			new /obj/item/paper/administratum(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc)
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,) //removes verb
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-			if(prob(35))
+			if(prob(15))
 				to_chat(U,"<span class='danger'><b><font size=4>THE VENATOR</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You have had glimpses of the future, in these waking dreams you see yourself fighting against a terrible foe. A dark and hideous creature, this day will come soon. Train and prepare yourself for this fight, track down the great beasts of the land. You are not hunted. You are the hunter. </font></b></span>")
 				U.add_stats(rand(18,19), rand(14,16), rand(12,18), rand (12,14))
@@ -106,7 +106,7 @@ Pilgrim Fate System
 				new /obj/item/clothing/suit/armor/exile(src.loc)
 				new /obj/item/melee/sword/machete/chopper/heavy/slayer(src.loc) 
 				
-			else if(prob(20))
+			else if(prob(15))
 				to_chat(U,"<span class='danger'><b><font size=4>THE MASTER</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are the master of the sewer, ruler of sin, master of your own kingdom. Embrace the dark and grow evil in the deep dark. </font></b></span>")
 				U.add_stats(rand(16,19), rand(16,19), rand(19,21), rand (14,16)) 
@@ -124,6 +124,20 @@ Pilgrim Fate System
 					new /obj/item/device/radio/headset/headset_sci(src.loc)
 				if(prob(5))
 					new /obj/item/device/radio/headset/blue_team/all(src.loc)
+			else if(prob(35))
+				to_chat(U,"<span class='danger'><b><font size=4>THE HUNTER</font></b></span>")
+				to_chat(U,"<span class='goodmood'>You once were a traveller and a explorer, born with an innate gift for pathfinding among the Messian folk of the greater region. With the arrival of the Imperial Dogs came the shackling, forced servitude to a cruel governor and now you spend your days killing beasts to feed the fat nobles of the Imperium.</font></b></span>")
+				U.add_stats(rand(12,16), rand(14,17), rand(15,16), rand (12,16))
+				if(prob(40))
+					new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/glory(src.loc)
+				else
+					new /obj/item/gun/projectile/thrower(src.loc)
+					new /obj/item/storage/box/sniperammo/apds/bos(src.loc)
+					new /obj/item/storage/box/sniperammo/apds/bos(src.loc)
+				new /obj/item/ammo_magazine/handful/brifle_handful/ms(src.loc)
+				new /obj/item/ammo_magazine/handful/brifle_handful(src.loc)
+				new /obj/item/clothing/suit/sherpa(src.loc)
+				new /obj/item/reagent_containers/food/snacks/threebread(src.loc)
 			else // Add a fate that is high chance, you are a target of a bounty and give them clothing that cannot be removed which is a criminal marker. Criminal Barcode. Penitent Markings. Penitent Tattoo.
 				to_chat(U,"<span class='danger'><b><font size=4>THE TRIBAL</font></b></span>")
 				U.add_stats(rand(14,17), rand(14,17), rand(12,18), rand (12,14))
@@ -131,7 +145,7 @@ Pilgrim Fate System
 				new /obj/item/stack/thrones3/twenty(src.loc) 
 				new /obj/item/melee/trench_axe/bspear/hunter(src.loc) 
 				new /obj/item/clothing/suit/armor/leather(src.loc)
-				to_chat(U,"<span class='goodmood'><b><font size=3>You are a local hunter and tribal from one of the many wandering tribes of Eipharius, you've only recently learned of Low Gothic and are adjusting to imperial rule.. </font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>You are a local hunter and tribal from one of the many wandering tribes of Messina, you've only recently learned of Low Gothic and are adjusting to imperial rule.. </font></b></span>")
 		if("Nomad")
 			U.add_skills(rand(5,8),rand(7,9),rand(5,7),rand(1,3),rand(1,6)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
@@ -157,7 +171,7 @@ Pilgrim Fate System
 				new /obj/item/melee/sword/combat_knife/bowie(src.loc)
 				new /obj/item/clothing/suit/armor/bonearmor(src.loc)
 				new /obj/item/clothing/head/helmet/dragon(src.loc)
-			else if(prob(35))
+			else
 				to_chat(U,"<span class='danger'><b><font size=4>THE EXPLORER</font></b></span>")
 				to_chat(U,"<span class='goodmood'>A skilled explorer of frontier worlds, you've plied your trade aiding the most unsensible of imperials and even xenos survive otherwise suicidal treks into alien worlds. Here you are once again, upon a xenos tainted world likely a few steps from your grave.</font></b></span>")
 				U.add_stats(rand(14,18), rand(15,18), rand(16,17), rand (14,16))
@@ -170,20 +184,8 @@ Pilgrim Fate System
 				else
 					new /obj/item/gun/energy/las/triplex(src.loc)
 				new /obj/item/clothing/suit/armor/ranger2(src.loc)
-			else
-				to_chat(U,"<span class='danger'><b><font size=4>THE HUNTER</font></b></span>")
-				to_chat(U,"<span class='goodmood'>You once were a traveller and a explorer, born with an innate gift for pathfinding among the Messian folk of the greater region. With the arrival of the Imperial Dogs came the shackling, forced servitude to a cruel governor and now you spend your days killing beasts to feed the fat nobles of the Imperium.</font></b></span>")
-				U.add_stats(rand(12,16), rand(14,17), rand(15,16), rand (12,16))
-				if(prob(40))
-					new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/glory(src.loc)
-				else
-					new /obj/item/gun/projectile/thrower(src.loc)
-					new /obj/item/storage/box/sniperammo/apds/bos(src.loc)
-					new /obj/item/storage/box/sniperammo/apds/bos(src.loc)
-				new /obj/item/ammo_magazine/handful/brifle_handful/ms(src.loc)
-				new /obj/item/ammo_magazine/handful/brifle_handful(src.loc)
-				new /obj/item/clothing/suit/sherpa(src.loc)
-				new /obj/item/reagent_containers/food/snacks/threebread(src.loc)
+				new /obj/item/paper/administratum/weapon4(src.loc)
+				new /obj/item/paper/administratum/theta(src.loc)
 		if("Scum") // Pariah story. The magical 357
 			 //ex criminal, not fed very well, but random stats
 			U.add_skills(rand(5,10),rand(5,10),rand(5,10),rand(5,10),rand(5,10)) //melee, ranged, med, eng, surgery
@@ -216,6 +218,7 @@ Pilgrim Fate System
 				new /obj/item/stack/thrones/five(src.loc)
 				new /obj/item/device/flashlight/lantern(src.loc)
 				new /obj/item/reagent_containers/food/snacks/threebread(src.loc)
+				new /obj/item/paper/administratum/weapon3(src.loc)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
 				if(prob(5))
@@ -230,6 +233,7 @@ Pilgrim Fate System
 				new /obj/item/ammo_magazine/c44(src.loc)
 				new /obj/item/clothing/suit/raggedrobe(src.loc)
 				new /obj/item/clothing/head/plebhood(src.loc)
+				new /obj/item/paper/administratum/weapon3(src.loc)
 				if(prob(25))
 					new /obj/item/device/radio/headset/headset_sci(src.loc)
 		if("Witch Hunter")
@@ -251,6 +255,8 @@ Pilgrim Fate System
 			new /obj/item/clothing/head/helmet/witch(src.loc)
 			new /obj/item/clothing/suit/armor/witch(src.loc)
 			new /obj/item/device/radio/headset/headset_sci(src.loc)
+			new /obj/item/paper/administratum/weapon4(src.loc)
+			new /obj/item/paper/administratum/theta(src.loc)
 		if("Mercenary")
 			U.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(2,4),rand(2,6)) //melee, ranged, med, eng, surgery
 			new /obj/item/storage/backpack/satchel/warfare(src.loc)
@@ -270,6 +276,8 @@ Pilgrim Fate System
 				new /obj/item/melee/trench_axe/glaive/adamantine(src.loc)
 				new /obj/item/clothing/suit/armor/brigandine(src.loc)
 				new /obj/item/clothing/head/helmet/hero(src.loc)
+				new /obj/item/paper/administratum/weapon3(src.loc)
+				new /obj/item/paper/administratum/theta(src.loc)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
 				if(prob(45))
@@ -284,6 +292,8 @@ Pilgrim Fate System
 				new /obj/item/grenade/spawnergrenade/manhacks(src.loc)
 				new /obj/item/ammo_casing/c45/ap(src.loc)
 				new /obj/item/ammo_casing/c45/ap(src.loc)
+				new /obj/item/paper/administratum/weapon4(src.loc)
+				new /obj/item/paper/administratum/theta(src.loc)
 				new /obj/item/clothing/suit/armor/armoredtrench(src.loc)
 				if(prob(2))
 					new /obj/item/device/radio/headset/headset_eng(src.loc)
@@ -295,11 +305,13 @@ Pilgrim Fate System
 					new /obj/item/device/radio/headset/blue_team/all(src.loc)
 			else
 				to_chat(U,"<span class='danger'><b><font size=4>THE BOUNTY HUNTER</font></b></span>")
-				to_chat(U,"<span class='goodmood'>A vicious bounty hunter traveling from system to system in search of their next payday, you live luxuriously only for moments before being plunged back into poverty. Hitching a ride to Eipharius with the last of your thrones, you gamble on the hope of finding work out here.(A-Help if nobody is hiring bounty hunters for a bounty target+pay)</font></b></span>")
+				to_chat(U,"<span class='goodmood'>A vicious bounty hunter traveling from system to system in search of their next payday, you live luxuriously only for moments before being plunged back into poverty. Hitching a ride to Messina with the last of your thrones, you gamble on the hope of finding work out here.(A-Help if nobody is hiring bounty hunters for a bounty target+pay)</font></b></span>")
 				U.add_stats(rand(13,17), rand(14,17), rand(14,17), rand (12,15)) //veteran mercenary
 				new /obj/item/gun/projectile/revolver/mateba(src.loc)
 				new /obj/item/ammo_magazine/c50(src.loc)
 				new /obj/item/ammo_magazine/c50(src.loc)
+				new /obj/item/paper/administratum/weapon4(src.loc)
+				new /obj/item/paper/administratum/theta(src.loc)
 				if(prob(60))
 					new /obj/item/clothing/suit/armor/bountyhunter2(src.loc)
 					new /obj/item/clothing/head/bountyhead(src.loc)
@@ -407,6 +419,8 @@ Pilgrim Fate System
 				new /obj/item/storage/fancy/cigarettes/dromedaryco(src.loc)
 				new /obj/item/flame/lighter(src.loc)
 				new /obj/item/clothing/under/det/black(src.loc)
+				new /obj/item/paper/administratum/weapon3(src.loc)
+				new /obj/item/paper/administratum/theta(src.loc)
 		if("Miner")
 			U.add_stats(rand(16,18), rand(14,16), rand(14,18), rand (12,14)) //
 			U.add_skills(rand(6,8),rand(4,7),rand(3,6),rand(5,6),rand(2,6)) //melee, ranged, med, eng, surgery
@@ -421,6 +435,7 @@ Pilgrim Fate System
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/ring/disgracedmedicae, slot_wear_id)
 			new /obj/item/stack/thrones3/twenty(src.loc)
 			new /obj/item/stack/thrones3/twenty(src.loc)
+			new /obj/item/paper/administratum/weapon4(src.loc)
 			to_chat(U,"<span class='danger'><b><font size=4>THE BROKEBACK MINER</font></b></span>")
 			to_chat(U,"<span class='goodmood'><b><font size=3>A veteran of many digsites you travelled the galaxy looking for work.</font></b></span>")
 			U.stat = CONSCIOUS
@@ -441,6 +456,8 @@ Pilgrim Fate System
 			new /obj/item/clothing/head/helmet/hevhelm/palace(src.loc)
 			new /obj/item/clothing/suit/armor/brigandine/palace(src.loc)
 			new /obj/item/melee/trench_axe/glaive/adamantine(src.loc)
+			new /obj/item/paper/administratum/weapon3(src.loc)
+			new /obj/item/paper/administratum/theta(src.loc)
 			to_chat(U,"<span class='danger'><b><font size=4>THE PROTECTORATE</font></b></span>")
 			to_chat(U,"<span class='goodmood'><b><font size=3>Skilled in the arts of blade and gun lore, you are one of the rare individuals selected by EITHER; The Ecclesiarchy or House Sondar(Your Choice) to protect them from the heretic, the alien and worst of all -- the human. Find the Steward/Commissar or Governor for your assignment...</font></b></span>")
 			U.stat = CONSCIOUS
@@ -468,6 +485,8 @@ Pilgrim Fate System
 				new /obj/item/cell/plasma(src.loc)
 			new /obj/item/clothing/shoes/jackboots/cadian(src.loc)
 			new /obj/item/device/flashlight/lantern(src.loc)
+			new /obj/item/paper/administratum/weapon3(src.loc)
+			new /obj/item/paper/administratum/theta(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/dog_tag/guardsman, slot_wear_id)
 			new /obj/item/device/radio/headset/red_team(src.loc)
 			new /obj/item/cell/lasgun(src.loc)
@@ -499,6 +518,8 @@ Pilgrim Fate System
 				if(prob(10))
 					new /obj/item/device/radio/headset/blue_team/all(src.loc)
 				new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
+				new /obj/item/paper/administratum/weapon4(src.loc)
+				new /obj/item/paper/administratum/theta(src.loc)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
 			else if(prob(40))
@@ -509,6 +530,8 @@ Pilgrim Fate System
 				new /obj/item/stack/thrones/five(src.loc) 
 				new /obj/item/stack/thrones2/ten(src.loc) 
 				new /obj/item/stack/thrones3/twenty(src.loc) 
+				new /obj/item/paper/administratum/weapon4(src.loc)
+				new /obj/item/paper/administratum/theta(src.loc)
 				new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
 				if(prob(2))
 					new /obj/item/device/radio/headset/headset_eng(src.loc)
@@ -527,6 +550,7 @@ Pilgrim Fate System
 				new /obj/item/clothing/head/musichat(src.loc)
 				new /obj/item/instrument/guitar(src.loc)
 				new /obj/item/device/violin(src.loc)
+				new /obj/item/paper/administratum/weapon3(src.loc)
 				new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
 		if("Fate Touched")
 			U.add_stats(rand(16,17), rand(15,17), rand(10,16), rand (12,16)) 
@@ -563,6 +587,7 @@ Pilgrim Fate System
 				new /obj/item/clothing/head/helmet/hauberk(src.loc)
 				new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
 				new /obj/item/device/radio/headset/headset_sci(src.loc)
+				new /obj/item/paper/administratum/weapon4(src.loc)
 
 /datum/job/underboss  //Shrewd businessman
 	title = "Tavern Keeper"
@@ -588,8 +613,8 @@ Pilgrim Fate System
 		H.add_stats(rand(20,30), rand(15,18), rand(15,18), rand (2,5)) //ogryn are stronger than astartes or smh i don't remember
 		H.add_skills(rand(10,13),1,1,1,1) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		to_chat(H, "<span class='notice'><b><font size=3>You're an up-and-coming entrepreneur on Eipharius -- the wisest most big brain Ogryn bonehead that ever lived. You were sent here by House Goliath from Necromunda who supplies most of the sub-sector through the cold-trade, and the Militarum with cheap manufactured autoguns who give it by the freight-load to private armies in the frontier. Goliath expects big things from you, so you best get to grinding Oggy... </font></b></span>")
-		to_chat(H, "<span class='notice'><b><font size=3>You're an up-and-coming entrepreneur on Eipharius -- the wisest most big brain Ogryn bonehead that ever lived. You were sent here by House Goliath from Necromunda who supplies most of the sub-sector through the cold-trade, and the Militarum with cheap manufactured autoguns who give it by the freight-load to private armies in the frontier. Goliath expects big things from you, so you best get to grinding Oggy... </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You're an up-and-coming entrepreneur on Messina -- the wisest most big brain Ogryn bonehead that ever lived. You were sent here by House Goliath from Necromunda who supplies most of the sub-sector through the cold-trade, and the Militarum with cheap manufactured autoguns who give it by the freight-load to private armies in the frontier. Goliath expects big things from you, so you best get to grinding Oggy... </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You're an up-and-coming entrepreneur on Messina -- the wisest most big brain Ogryn bonehead that ever lived. You were sent here by House Goliath from Necromunda who supplies most of the sub-sector through the cold-trade, and the Militarum with cheap manufactured autoguns who give it by the freight-load to private armies in the frontier. Goliath expects big things from you, so you best get to grinding Oggy... </font></b></span>")
 
 /*
 /datum/job/innkeeper
@@ -650,7 +675,7 @@ Pilgrim Fate System
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.assign_random_quirk()
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are a loyal crew member to the Lord Captain and the head of the Vane dynasty, your noble title being granted by a letter of marque given to you by the Lord Trader inducting you into House Vane. You served directly to the Lord Captain years before they settled on Eipharius and helped the Lord Militant conquer the fringe, now your blade is dulled and you no longer find yourself serving on a voidship but instead in this accursed city of Messina.. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a loyal crew member to the Lord Captain and the head of the Vane dynasty, your noble title being granted by a letter of marque given to you by the Lord Trader inducting you into House Vane. You served directly to the Lord Captain years before they settled on Messina and helped the Lord Militant conquer the fringe, now your blade is dulled and you no longer find yourself serving on a voidship but instead in this accursed city of Messina.. </font></b></span>")
 
 
 /datum/job/pathfinder
@@ -679,7 +704,7 @@ Pilgrim Fate System
 		H.adjustStaminaLoss(-INFINITY)
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.assign_random_quirk()
-		to_chat(H, "<span class='notice'><b><font size=3>Having arrived recently from the spires of Necromunda. You, a former courtier, sought to establish something of a collection here with your remaining wealth. For whatever reason the dark, insidious and terrible aspects of this planet intrigued you enough to abandon your world and seek out... Eipharius.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>Having arrived recently from the spires of Necromunda. You, a former courtier, sought to establish something of a collection here with your remaining wealth. For whatever reason the dark, insidious and terrible aspects of this planet intrigued you enough to abandon your world and seek out... Messina.</font></b></span>")
 
 /datum/job/villagemedicae
 	title = "Biologis Medicae"
@@ -705,7 +730,7 @@ Pilgrim Fate System
 		H.adjustStaminaLoss(-INFINITY)
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.assign_random_quirk()
-		to_chat(H, "<span class='notice'><b><font size=3>An experienced medicae from your homeworld, you are one of many who booked passage to Eipharius in the hopes of building industries of medicine on a new world. You serve directly under the Magos Biologis who commands over the medicae of this world.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>An experienced medicae from your homeworld, you are one of many who booked passage to Messina in the hopes of building industries of medicine on a new world. You serve directly under the Magos Biologis who commands over the medicae of this world.</font></b></span>")
 
 
 //loadouts below here
@@ -756,6 +781,7 @@ Pilgrim Fate System
 	pda_slot = null
 	backpack_contents = list(
 	/obj/item/ammo_magazine/a357 = 2,
+	/obj/item/paper/administratum/weapon4 = 1,
 	/obj/item/stack/thrones2 = 1,
 	)
 
@@ -781,6 +807,7 @@ Pilgrim Fate System
 	/obj/item/card/id/pilgrim/penitent/keeper = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
 
 	)
 
@@ -800,6 +827,7 @@ Pilgrim Fate System
 	suit_store = null
 	backpack_contents = list(
 	/obj/item/stack/thrones3/twenty = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
     )
 
 //Administrator
@@ -874,6 +902,7 @@ Pilgrim Fate System
 	/obj/item/card/id/pilgrim/penitent/keeper = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
 
 	)
 
@@ -977,7 +1006,7 @@ Pilgrim Fate System
 		H.verbs += list(
 			/mob/living/carbon/human/proc/gangerclass,
 		)
-		to_chat(H, "<span class='notice'><b><font size=3>You're a ganger raised up in the factorums of Necromunda -- loyal completely to House Goliath as one of the best and brightest of the lot. You work for the Tavern Keeper, one of the heaviest hitters on Eipharius and are tasked with running the tavern alongside any other shady businesses you can keep afloat. For now the bosses don't want war with the Enforcers, so try to avoid making a mess. Like they say in Necromunda -- don't kill shit where you eat'.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You're a ganger raised up in the factorums of Necromunda -- loyal completely to House Goliath as one of the best and brightest of the lot. You work for the Tavern Keeper, one of the heaviest hitters on Messina and are tasked with running the tavern alongside any other shady businesses you can keep afloat. For now the bosses don't want war with the Enforcers, so try to avoid making a mess. Like they say in Necromunda -- don't kill shit where you eat'.</font></b></span>")
 
 
 /mob/living/carbon/human/proc/gangerclass()
@@ -1075,7 +1104,7 @@ Pilgrim Fate System
 		H.add_stats(rand(20,30), rand(15,18), rand(15,18), rand (2,5)) //ogryn are stronger than astartes or smh i don't remember
 		H.add_skills(rand(10,13),1,1,1,1) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		to_chat(H, "<span class='notice'><b><font size=3>You're the biggest, baddest muscle on Eipharius. Protect the Underboss and his buddy the ROGUE TRADER!</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You're the biggest, baddest muscle on Messina. Protect the Underboss and his buddy the ROGUE TRADER!</font></b></span>")
 
 
 

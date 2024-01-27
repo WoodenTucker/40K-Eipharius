@@ -479,9 +479,12 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
-/obj/effect/floor_decal/turf/plating,
+/obj/effect/floor_decal/industrial/warning,
 /obj/effect/floor_decal/industrial/warning{
-	dir = 1
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -1539,6 +1542,7 @@
 	access = list(1984,2)
 	},
 /obj/item/device/cassette/the_forest2,
+/obj/item/book/manual/law,
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
@@ -2021,6 +2025,15 @@
 /area/cadiaoutpost/oa/medicae)
 "cku" = (
 /obj/machinery/light/blue,
+/obj/item/paper/administratum/weapon3,
+/obj/item/paper/administratum/weapon4,
+/obj/item/paper/administratum/weapon5,
+/obj/item/paper/administratum/weapon5,
+/obj/item/fluff_items/paperwork{
+	pixel_y = 7
+	},
+/obj/structure/table/graf/reinf_table,
+/obj/item/book/manual/law,
 /turf/simulated/floor/factory_floor{
 	dir = 8
 	},
@@ -2407,7 +2420,8 @@
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/computer/shuttle_control/ferry/mechiferry{
 	icon = 'icons/map_project/port/resources_64x64.dmi';
-	icon_state = "node_on"
+	icon_state = "node_on";
+	req_one_access = list(10,25)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -4877,6 +4891,18 @@
 	icon_state = "tube1"
 	},
 /obj/structure/closet/crate/xenos/chest3,
+/obj/item/paper/administratum/mech,
+/obj/item/paper/administratum/mech,
+/obj/item/paper/administratum/mech,
+/obj/item/paper/administratum/mech,
+/obj/item/paper/administratum/mech,
+/obj/item/paper/administratum/mech,
+/obj/item/paper/administratum/mech,
+/obj/item/paper/administratum/weapon5,
+/obj/item/paper/administratum/weapon5,
+/obj/item/paper/administratum/weapon5,
+/obj/item/paper/administratum/weapon5,
+/obj/item/paper/administratum/weapon5,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -5003,6 +5029,7 @@
 "fzE" = (
 /obj/structure/table/rack/dark,
 /obj/effect/floor_decal/industrial/outline/red,
+/obj/item/book/manual/law,
 /turf/simulated/floor/darksteel_floor{
 	dir = 1
 	},
@@ -5144,6 +5171,7 @@
 /obj/item/card/id/key/middle/jail{
 	access = list(1984,2)
 	},
+/obj/item/book/manual/law,
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
@@ -5599,6 +5627,7 @@
 /obj/item/card/id/key/middle/jail{
 	access = list(1984,2)
 	},
+/obj/item/book/manual/law,
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
@@ -6221,6 +6250,7 @@
 /obj/item/card/id/key/middle/jail{
 	access = list(1984,2)
 	},
+/obj/item/book/manual/law,
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
@@ -6299,6 +6329,7 @@
 /area/cadiaoutpost/new_hive/caves)
 "gOH" = (
 /obj/structure/table/graf/polished_table,
+/obj/item/paper/administratum,
 /turf/simulated/floor/ceramic/surgery2{
 	dir = 6
 	},
@@ -8126,6 +8157,10 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"iKR" = (
+/obj/item/book/manual/law,
+/turf/simulated/floor/dirty/tough,
+/area/cadiaoutpost/new_hive/caves)
 "iLF" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/storage/briefcase/crimekit,
@@ -10206,6 +10241,7 @@
 	access = list(1984,2)
 	},
 /obj/item/device/cassette/the_forest_1,
+/obj/item/book/manual/law,
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
@@ -10932,6 +10968,29 @@
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/new_hive/caves)
+"lIr" = (
+/obj/item/paper/administratum/weapon5,
+/obj/item/paper/administratum/weapon5,
+/obj/item/paper/administratum/weapon4,
+/obj/item/paper/administratum/weapon4,
+/obj/item/paper/administratum/weapon4,
+/obj/item/paper/administratum/weapon3,
+/obj/item/paper/administratum/weapon3,
+/obj/item/paper/administratum/weapon3,
+/obj/item/paper/administratum/weapon3,
+/obj/item/paper/administratum/weapon3,
+/obj/item/paper/administratum/weapon3,
+/obj/item/paper/administratum/weapon3,
+/obj/item/fluff_items/paperwork{
+	pixel_y = 7
+	},
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 8;
+	pixel_y = -2
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/magistratumpost)
 "lJp" = (
 /obj/structure/undies_wardrobe,
 /obj/item/clothing/head/spookyhood{
@@ -11074,6 +11133,7 @@
 	access = list(1984,2,3,5,10);
 	name = "marshal's key"
 	},
+/obj/item/book/manual/law,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
 "lPG" = (
@@ -12184,6 +12244,24 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"nbq" = (
+/obj/item/paper/administratum/lambda,
+/obj/item/paper/administratum/mech,
+/obj/item/paper/administratum/omega,
+/obj/item/paper/administratum/vermillion,
+/obj/item/paper/administratum/vermillion,
+/obj/item/paper/administratum/vermillion,
+/obj/item/paper/administratum/lambda,
+/obj/item/paper/administratum/lambda,
+/obj/item/fluff_items/paperwork{
+	pixel_y = 7
+	},
+/obj/structure/table/graf/reinf_table,
+/obj/item/book/manual/law,
+/turf/simulated/floor/factory_floor{
+	dir = 8
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "nbA" = (
 /obj/item/pyre/self_lit{
 	invisibility = 100;
@@ -16710,6 +16788,11 @@
 /obj/item/reagent_containers/food/drinks/bottle/patron,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"ryz" = (
+/obj/structure/closet/crate/secure/large,
+/obj/item/book/manual/law,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/magistratumpost)
 "ryD" = (
 /obj/structure/table/steel_reinforced,
 /obj/effect/floor_decal/newcorner/reinforced{
@@ -20027,6 +20110,27 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
+"vry" = (
+/obj/machinery/light/small,
+/obj/item/fluff_items/paperwork{
+	pixel_y = 7
+	},
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 4;
+	pixel_y = -2
+	},
+/obj/item/paper/administratum/theta,
+/obj/item/paper/administratum/theta,
+/obj/item/paper/administratum/theta,
+/obj/item/paper/administratum/theta,
+/obj/item/paper/administratum/theta,
+/obj/item/paper/administratum/omega,
+/obj/item/paper/administratum/omega,
+/obj/item/paper/administratum/omega,
+/obj/item/paper/administratum/mech,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/magistratumpost)
 "vsd" = (
 /obj/structure/bed/chair/wood/fancy,
 /turf/simulated/floor/fancyfloor/carpet/blue{
@@ -20443,6 +20547,7 @@
 /obj/item/card/id/key/middle/jail{
 	access = list(1984,2)
 	},
+/obj/item/book/manual/law,
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
@@ -20637,11 +20742,12 @@
 /area/cadiaoutpost/new_hive/caves)
 "wdn" = (
 /obj/effect/floor_decal/turf/plating,
+/obj/effect/floor_decal/turf/plating,
 /obj/machinery/computer/shuttle_control/ferry/mechiferry{
 	icon = 'icons/map_project/port/resources_64x64.dmi';
-	icon_state = "node_on"
+	icon_state = "node_on";
+	req_one_access = list(10,25)
 	},
-/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -20962,6 +21068,14 @@
 /obj/structure/closet/crate/miningcar,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
+"wuD" = (
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tilethick";
+	dir = 8
+	},
+/obj/item/book/manual/law,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/magistratumpost)
 "wvM" = (
 /obj/structure/table/graf/big_wood_table{
 	dir = 1
@@ -21769,6 +21883,7 @@
 /obj/item/card/id/key/middle/jail{
 	access = list(1984,2)
 	},
+/obj/item/book/manual/law,
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
@@ -44663,7 +44778,7 @@ xvE
 xvE
 xvE
 xvE
-mjH
+nbq
 mjH
 cku
 xvE
@@ -58191,7 +58306,7 @@ hcS
 dGx
 jSi
 dGx
-pix
+vry
 ojM
 cCn
 cCn
@@ -58444,7 +58559,7 @@ dGx
 lPt
 pus
 dGx
-dGx
+lIr
 ojM
 cCn
 cCn
@@ -68806,7 +68921,7 @@ tgD
 sPX
 jVp
 ojM
-woU
+ryz
 dGx
 dGx
 dGx
@@ -69063,7 +69178,7 @@ dGx
 dGx
 dGx
 dGx
-pHP
+wuD
 vgD
 dGx
 dGx
@@ -78349,7 +78464,7 @@ pxR
 aIw
 pEh
 pEh
-phz
+iKR
 xKD
 xPH
 xKD

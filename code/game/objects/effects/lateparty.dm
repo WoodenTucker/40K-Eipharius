@@ -79,7 +79,7 @@
 			new_character.key = usr.key //puts ghost in body with new key
 		if("Sekites")
 			message_admins("[attendee] has joined the late party: Sekites.", 0) //msgs jannies
-			to_chat(usr, "<span class='warning'><b><font size=3>You are expected to demand people to join your cult before you kill them, if able. Embrace your Blessings in your Ruinous Powers Tab! Ensure the Commander and Berzerker Chosen armor are donned. Follow their wearers in glorious battle upon the nearby planet of Eipharius. Work alongside your fellow Blood Pact warriors using the Dark Tongue. You may be Khornate, but you are extremely well disciplined. Harvest souls and sacrifice for the Blood God!</b></font size=3>") //tells mob to do thing
+			to_chat(usr, "<span class='warning'><b><font size=3>You are expected to demand people to join your cult before you kill them, if able. Embrace your Blessings in your Ruinous Powers Tab! Ensure the Commander and Berzerker Chosen armor are donned. Follow their wearers in glorious battle upon the nearby planet of Messina. Work alongside your fellow Blood Pact warriors using the Dark Tongue. You may be Khornate, but you are extremely well disciplined. Harvest souls and sacrifice for the Blood God!</b></font size=3>") //tells mob to do thing
 			usr.loc = get_turf(locate("landmark*bloodstart")) //where they spawning
 			var/mob/living/carbon/human/Bloodpact/new_character = new(usr.loc)// da mob
 			new_character.key = attendee //puts ghost in body with new key

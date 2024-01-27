@@ -642,6 +642,18 @@
         icon_state = "cognisLMG-e"
 
 
+/obj/item/gun/projectile/automatic/heavystubber/val
+	name = "Valhallan Heavy Stubber"
+	desc = "A rugged belt-fed stubber custom made for the valhallan guard. This one seems to have been diligently maintained over the years."
+	one_hand_penalty = 1.6
+	accuracy = 1
+	fire_delay = 1.5
+	sales_price = 22
+
+	firemodes = list(
+		list(mode_name="semi-automatic", burst=1, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="4-round bursts", burst=4, fire_delay=4.2, burst_accuracy=list(1,0.5,-1), dispersion=null, automatic = 0),
+		)
 /obj/item/gun/projectile/automatic/heavystubber/villiers
 	name = "Villiers Heavy Stubber"
 	desc = "A rugged belt-fed stubber that is long out of service. This one seems to have been diligently maintained over the years."
@@ -653,7 +665,7 @@
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=1.6, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="2-round bursts", burst=2, fire_delay=3.5, burst_accuracy=list(1,1,1), dispersion=null, automatic = 0), // Villiers perform better in semi then burst
+		list(mode_name="4-round bursts", burst=2, fire_delay=3.5, burst_accuracy=list(1,1,1), dispersion=null, automatic = 0), // Villiers perform better in semi then burst
 		)
 
 // stub rifles, mag fed

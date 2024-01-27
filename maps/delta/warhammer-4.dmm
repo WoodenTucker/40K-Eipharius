@@ -2552,6 +2552,7 @@
 	icon_state = "table_horizontal2";
 	dir = 4
 	},
+/obj/item/book/manual/law,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -4197,6 +4198,7 @@
 	icon_state = "reinf_table3";
 	dir = 8
 	},
+/obj/item/book/manual/law,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/armory)
 "nW" = (
@@ -4411,6 +4413,13 @@
 	},
 /obj/item/cell/lasgun/hotshot,
 /obj/item/clothing/glasses/scion,
+/obj/item/paper/administratum/weapon5,
+/obj/item/paper/administratum/weapon4,
+/obj/item/paper/administratum/omega,
+/obj/item/paper/administratum/omega,
+/obj/item/paper/administratum/omega,
+/obj/item/paper/administratum/omega,
+/obj/item/paper/administratum/omega,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/armory)
 "oM" = (
@@ -4744,6 +4753,7 @@
 	dir = 1;
 	icon_state = "tube1"
 	},
+/obj/item/book/manual/law,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/armory)
 "qj" = (
@@ -7077,14 +7087,14 @@
 	},
 /area/cadiaoutpost/oa/service/chapel)
 "zo" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
 /obj/machinery/button/remote/blast_door/id_scan{
 	name = "The Enterprise - ID lock";
 	id = "enterprise";
-	pixel_x = 32;
+	pixel_x = 29;
 	req_one_access = list(225,247)
-	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 4
 	},
 /turf/simulated/floor/plating{
 	color = "grey"
@@ -9013,6 +9023,7 @@
 	icon_state = "wood_1tileendtable";
 	dir = 4
 	},
+/obj/item/book/manual/law,
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 1
 	},
@@ -12310,8 +12321,8 @@
 /obj/machinery/button/remote/blast_door/id_scan{
 	name = "The Enterprise - ID lock";
 	id = "enterprise";
-	pixel_x = 32;
-	req_one_access = list(225)
+	pixel_x = 29;
+	req_one_access = list(225,247)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -13347,6 +13358,28 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/armory)
+"VR" = (
+/obj/item/paper_bin{
+	pixel_y = 10
+	},
+/obj/item/pen/multi{
+	pixel_y = 6
+	},
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tileendtable";
+	dir = 4
+	},
+/obj/item/paper/administratum/omega,
+/obj/item/paper/administratum/omega,
+/obj/item/paper/administratum/weapon4,
+/obj/item/paper/administratum/weapon4,
+/obj/item/paper/administratum/weapon5,
+/obj/item/paper/administratum/weapon4,
+/obj/item/paper/administratum/theta,
+/obj/item/paper/administratum/theta,
+/obj/item/paper/administratum/mech,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "VT" = (
 /obj/structure/closet/crate/trashcart,
 /obj/effect/floor_decal/spline/plain{
@@ -72239,7 +72272,7 @@ PH
 wc
 wc
 wc
-iN
+VR
 PH
 ld
 tX

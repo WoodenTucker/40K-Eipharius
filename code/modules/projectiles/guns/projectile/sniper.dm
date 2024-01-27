@@ -81,6 +81,11 @@
 
 	toggle_scope(usr, 2)
 
+/obj/item/gun/projectile/heavysniper/equipped(mob/user)
+	..()
+	if(user.zoomed)
+		user.do_zoom()
+
 /obj/item/gun/energy/las/lasgun/longlas
 	name = "M35 'M-Galaxy' Longlas"
 	desc = "The M35 'M-Galaxy' Lasgun outfitted with advanced barrel and scope is one of the most common and less unique sniper weapons that can be found throughout the Imperial Arsenal, used by Astra Militarum Sharpshooters and Ratling Snipers."
@@ -95,7 +100,7 @@
 	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 4000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/longlas
-	charge_cost = 300
+	charge_cost = 400
 	cell_type = /obj/item/cell/lasgun/hotshot || /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "longlas-wielded"
@@ -133,6 +138,26 @@
 	icon_state = "kriegsniper"
 	item_state = "snipeluscius"
 	wielded_item_state = "snipeluscius-wielded"
+	accuracy = 1.3
+
+/obj/item/gun/energy/las/lasgun/longlas/custom
+	name = "Modified M35 Longlas"
+	desc = "The Sniper Pattern Lasgun is outfitted with advanced barrel and scope is one of the most common and less unique sniper weapons that can be found throughout the Imperial Arsenal, this particular pattern has a narlwood stock and utilizes a unique design allowing for greater handling and concealment."
+	icon_state = "longlas"
+	item_state = "longlas"
+	force = 17
+	one_hand_penalty = 1.9
+	fire_delay = 8
+	accuracy = 1.2
+	charge_cost = 400
+	wielded_item_state = "longlas-wielded"
+	sales_price = 80
+	color = "#4d3716b4"
+
+	firemodes = list(
+		list(mode_name="semi-automatic", fire_delay=8, move_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=400),
+		list(mode_name="overcharge", fire_delay=9, move_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=650),
+		)
 
 /obj/item/gun/projectile/thrower
 	name = "Boscolet Frontiersman"
@@ -208,7 +233,6 @@
 		return
 	..()
 
-
 /obj/item/gun/projectile/automatic/galvanic/rifle
 	name = "Mark IV Arkhan Pattern Galvanic Rifle"
 	desc = "A semi automatic rifle, modelled after the martian flintlock weapons of the past, it uses servo-eletric rounds which send a powerful eletric current through the targets body while also tracking them."
@@ -273,6 +297,8 @@
 	set name = "Use Scope"
 	set popup_menu = 1
 	toggle_scope(usr, 2.5)
+
+
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/equipped(mob/user)
 	..()
 	if(user.zoomed)

@@ -290,6 +290,8 @@
 	/obj/item/handcuffs = 2,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
+	/obj/item/paper/administratum/omega = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
 	/obj/item/gun/energy/taser = 1,
 	)
 
@@ -319,6 +321,8 @@
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,
+	/obj/item/paper/administratum/vermillion = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
 	)
 
 /decl/hierarchy/outfit/job/ig/investigator
@@ -343,6 +347,8 @@
 	/obj/item/handcuffs = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,
+	/obj/item/paper/administratum/omega = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
 	)
 
 /decl/hierarchy/outfit/job/ig/cadet
@@ -369,6 +375,8 @@
 	/obj/item/ammo_box/shotgun = 1,
 	/obj/item/ammo_box/shotgun/stunshell = 1,
 	/obj/item/stack/thrones2/five = 1,
+	/obj/item/paper/administratum/theta = 1,
+	/obj/item/paper/administratum/weapon3 = 1,
 	)
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
@@ -399,6 +407,8 @@
 	/obj/item/ammo_box/shotgun/msslug = 2,
 	/obj/item/ammo_magazine/bolt_pistol_magazine/ms = 1,
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 1,
+	/obj/item/paper/administratum/vermillion = 1,
+	/obj/item/paper/administratum/weapon5 = 1,
 	/obj/item/stack/thrones2/twenty = 1,
 	)
 
