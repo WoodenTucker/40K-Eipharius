@@ -393,8 +393,8 @@
 /obj/item/gun/projectile/automatic/flamer
 	name = "Scorcher"
 	desc = "An incredibly dangerous hand-held flamethrower used often in infiltration or siege operations."
-	icon_state = "flamer"
 	item_state = "flamer"
+	icon_state = "flamer"
 	wielded_item_state = "flamer-wielded"
 	caliber = "flamer"
 	one_hand_penalty = 2
@@ -436,6 +436,13 @@
     else
         icon_state = "flamer-e"
 
+/obj/item/gun/projectile/automatic/flamer/salamander
+	name = "Mark VII Salamander Assault Flamer"
+	desc = "An incredibly dangerous hand-held flamethrower. Used by the Salamanders. More elegant and far more potent than the standard Flamer"
+	str_requirement = 24
+	fire_delay = 12
+	caliber = "flamersally"
+
 /*
 /obj/item/gun/projectile/automatic/flamer/pistol
 	name = "Handheld Scorcher"
@@ -469,7 +476,7 @@
 	gun_type = GUN_LMG //anyone can use this... just not anyone should.
 */ // ABSOLUTELY NO PISTOL FLAMERS.
 
-/obj/item/gun/projectile/automatic/flamer/update_icon()
+/obj/item/gun/projectile/automatic/flamer/pistol/update_icon()
     ..()
     if(ammo_magazine)
         icon_state = "flamerp"

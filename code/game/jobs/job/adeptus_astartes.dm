@@ -226,7 +226,7 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/melee/chain/pcsword = 1,
-	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
+	/obj/item/cell/plasma = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -319,7 +319,7 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/melee/chain/pcsword = 1,
-	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
+	/obj/item/cell/plasma = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -368,7 +368,7 @@
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
 	/obj/item/clothing/glasses/astartes/visor = 1,
-	/obj/item/gun/projectile/automatic/flamer = 1
+	/obj/item/gun/projectile/automatic/flamer/salamander = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/salamander/sergeant
@@ -393,7 +393,7 @@
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
 	/obj/item/clothing/glasses/astartes/visor = 1,
-	/obj/item/gun/projectile/automatic/flamer = 1
+	/obj/item/gun/projectile/automatic/flamer/salamander = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/salapoth
@@ -412,7 +412,7 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/melee/chain/pcsword = 1,
-	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
+	/obj/item/cell/plasma = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -507,7 +507,7 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/melee/chain/pcsword = 1,
-	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
+	/obj/item/cell/plasma = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,

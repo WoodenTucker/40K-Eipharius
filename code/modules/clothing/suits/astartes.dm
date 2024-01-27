@@ -46,6 +46,7 @@
 	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XVIIIth Chapter, Salamanders."
 	icon_state = "salsuit"
 	item_state = "salsuit"
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/astartes/ultramarine
 	name = "Indomitus Pattern Terminator Power Armor"
@@ -90,6 +91,7 @@
 	desc = "The Holy armour of the Emperor's chosen, This one is trimmed in golden lining and bears the symbol of his position, Sergeant of the XVIIIth Chapter, Salamanders."
 	icon_state = "salcap"
 	item_state = "salcap"
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/astartes/ultramarine/sergeant
 	name = "Astartes Mark VII Power Armour"
@@ -116,6 +118,7 @@
 	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Apothecary of the XVIIIth Chapter, Salamanders."
 	icon_state = "salapoth"
 	item_state = "salapoth"
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/astartes/apothecary/ultramarine
 	name = "Astartes Mark VII Power Armour"
@@ -148,6 +151,7 @@
 	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Techmarine of the XVIIIth Chapter, Salamanders."
 	icon_state = "saltech"
 	item_state = "saltech"
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/astartes/terminator //FINALLY HERE!
 	name = "Indomitus Pattern Tactical Dreadnought Armour"
