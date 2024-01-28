@@ -761,6 +761,7 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/grenade/chem_grenade/gas/xyxl = 2,
 	/obj/item/paper/administratum/theta = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/weapon3 = 1,
 	)
 
@@ -793,6 +794,7 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/grenade/chem_grenade/gas/xyxl = 2,
 	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/theta = 1
 	)
 
@@ -825,6 +827,7 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/grenade/chem_grenade/gas/xyxl = 2,
 	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/theta = 1
 	)
 
@@ -856,6 +859,7 @@ datum/job/ig/bullgryn
 	/obj/item/shovel/krieg = 1,
 	/obj/item/storage/box/kriegration = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/omega = 1
 	)
 
@@ -885,6 +889,7 @@ datum/job/ig/bullgryn
 	/obj/item/grenade/chem_grenade/gas/xyxl = 1,
 	/obj/item/grenade/chem_grenade/gas/phosphorous = 1, 
 	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/omega = 1
 	)
 
@@ -910,6 +915,7 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/grenade/chem_grenade/gas/xyxl = 2,
 	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/theta = 1
 	)
 
@@ -936,6 +942,7 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/grenade/chem_grenade/gas/xyxl = 2,
 	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/theta = 1
 	)
 
@@ -965,6 +972,7 @@ datum/job/ig/bullgryn
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/grenade/chem_grenade/gas/xyxl = 2,
 	/obj/item/paper/administratum/weapon5 = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/vermillion = 1
 	)
 
@@ -994,6 +1002,7 @@ datum/job/ig/bullgryn
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/paper/administratum/theta = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 
@@ -1024,6 +1033,7 @@ datum/job/ig/bullgryn
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/paper/administratum/theta = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/stack/thrones3/five = 1,
 	)
 
@@ -1052,6 +1062,7 @@ datum/job/ig/bullgryn
 	/obj/item/shovel/krieg = 1,
 	/obj/item/paper/administratum/omega = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/storage/box/kriegration = 1
 	)
 
@@ -1078,6 +1089,7 @@ datum/job/ig/bullgryn
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/paper/administratum/omega = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 
@@ -1104,6 +1116,7 @@ datum/job/ig/bullgryn
 	/obj/item/grenade/frag = 1,
 	/obj/item/shield/buckler = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/theta = 1
 	)
 
@@ -1139,6 +1152,7 @@ datum/job/ig/bullgryn
 	/obj/item/handcuffs = 1,
 	/obj/item/shovel/krieg = 1,
 	/obj/item/paper/administratum/omega = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
 	/obj/item/storage/box/kriegration = 1
 	)
@@ -1201,6 +1215,7 @@ datum/job/ig/bullgryn
 	/obj/item/handcuffs = 1,
 	/obj/item/paper/administratum/theta = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
@@ -1229,6 +1244,7 @@ datum/job/ig/bullgryn
 	/obj/item/handcuffs = 1,
 	/obj/item/paper/administratum/theta = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
@@ -1260,6 +1276,7 @@ datum/job/ig/bullgryn
 	/obj/item/handcuffs = 1,
 	/obj/item/paper/administratum/omega = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 
@@ -1283,14 +1300,12 @@ datum/job/ig/bullgryn
 	suit_store = /obj/item/gun/energy/las/lasgun/longlas/krieg
 	backpack_contents = list(
 	/obj/item/cell/lasgun/hotshot = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
 	/obj/item/handcuffs = 1,
 	/obj/item/shovel/krieg = 1,
 	/obj/item/paper/administratum/omega = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/storage/box/kriegration = 1
 	)
 
@@ -1317,6 +1332,7 @@ datum/job/ig/bullgryn
 	/obj/item/ammo_casing/a145/apds/bos = 1,
 	/obj/item/paper/administratum/omega = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/stack/thrones2/five = 1
 	)
 
@@ -1350,6 +1366,7 @@ datum/job/ig/bullgryn
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/paper/administratum/omega = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/device/whistle = 1
 	)
 
@@ -1384,6 +1401,7 @@ datum/job/ig/bullgryn
 	/obj/item/shovel/krieg = 1,
 	/obj/item/paper/administratum/omega = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/storage/box/kriegration = 1
 	)
 
@@ -1409,6 +1427,7 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/paper/administratum/omega = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
 	/obj/item/handcuffs = 1
 	)
@@ -1433,6 +1452,7 @@ datum/job/ig/bullgryn
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/paper/administratum/omega = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
 	/obj/item/handcuffs = 1
 	)
@@ -1456,6 +1476,7 @@ datum/job/ig/bullgryn
 	/obj/item/cell/lasgun/hotshot = 2,
 	/obj/item/stack/thrones2 = 4,
 	/obj/item/paper/administratum/omega = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
@@ -1489,6 +1510,7 @@ datum/job/ig/bullgryn
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/handcuffs = 1,
 	/obj/item/paper/administratum/vermillion = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/weapon5 = 1,
 	/obj/item/device/whistle = 1,
 	)

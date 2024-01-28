@@ -30,6 +30,7 @@
 		/obj/item/book/manual/ripley_build_and_repair = 1,
 		/obj/item/book/manual/engineering_construction = 1,
 		/obj/item/paper/administratum/mech = 1,
+		/obj/item/pen = 1,
 		/obj/item/stack/thrones3/five = 1,)
 
 
@@ -58,6 +59,7 @@
 		/obj/item/stack/thrones3/five = 1,
 		/obj/item/book/manual/engineering_construction = 1,
 		/obj/item/paper/administratum/mech = 1,
+		/obj/item/pen = 1,
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
 
 /decl/hierarchy/outfit/job/engineering/engineer
@@ -83,6 +85,7 @@
 		/obj/item/stack/thrones2 = 1,
 		/obj/item/pickaxe/mechanicus = 1,
 		/obj/item/paper/administratum/mech = 1,
+		/obj/item/pen = 1,
 		/obj/item/book/manual/ripley_build_and_repair = 1,
 )
 
@@ -106,6 +109,7 @@
 		/obj/item/stack/thrones = 1,
 		/obj/item/pickaxe/mechanicus = 1,
 		/obj/item/paper/administratum/mech = 1,
+		/obj/item/pen = 1,
 		/obj/item/book/manual/ripley_build_and_repair = 1,
 )
 

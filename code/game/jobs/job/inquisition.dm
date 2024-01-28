@@ -332,6 +332,7 @@
 	/obj/item/book/manual/inq = 1,
 	/obj/item/card/id/syndicate = 1,
 	/obj/item/paper/administratum/weapon5 = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/lambda = 1,
 	)
 
@@ -363,6 +364,7 @@
 	/obj/item/book/manual/inq = 1,
 	/obj/item/card/id/syndicate = 1,
 	/obj/item/paper/administratum/weapon5 = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/lambda = 1,
 	)
 
