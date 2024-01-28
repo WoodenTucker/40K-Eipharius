@@ -37,11 +37,9 @@
 	return ..()
 
 /obj/aura/radiant_aura/psyker/bullet_act(var/obj/item/projectile/P, var/def_zone)
-	if(istype(damage_source, /obj/item/projectile))
-		var/obj/item/projectile/P = damage_source
-		if(istype(P, /obj/item/projectile/energy) || istype(P, /obj/item/projectile/beam))
-			user.visible_message("<span class='warning'>\The [P] refracts, bending into \the [user]'s aura.</span>")
-			del(P)
+	if(istype(P, /obj/item/projectile/energy) || istype(P, /obj/item/projectile/beam))
+		user.visible_message("<span class='warning'>\The [P] refracts, bending into \the [user]'s aura.</span>")
+		del(P)
 
 /obj/aura/radiant_aura/psyker/ultimate
 	name = "psyker radiant aura"
@@ -60,7 +58,5 @@
 	return ..()
 
 /obj/aura/radiant_aura/psyker/ultimate/bullet_act(var/obj/item/projectile/P, var/def_zone)
-	if(istype(damage_source, /obj/item/projectile))
-		var/obj/item/projectile/P = damage_source
-		user.visible_message("<span class='warning'>\The [P] vanishes against the [user]'s aura.</span>")
-		del(P)
+	user.visible_message("<span class='warning'>\The [P] vanishes against the [user]'s aura.</span>")
+	del(P)
