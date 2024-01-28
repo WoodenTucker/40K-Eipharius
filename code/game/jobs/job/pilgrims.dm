@@ -92,6 +92,7 @@ Pilgrim Fate System
 			new /obj/item/device/radio/headset/headset_service(src.loc)
 			new /obj/item/device/flashlight/lantern(src.loc)
 			new /obj/item/paper/administratum(src.loc)
+			new /obj/item/pen(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc)
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,) //removes verb
@@ -185,6 +186,7 @@ Pilgrim Fate System
 					new /obj/item/gun/energy/las/triplex(src.loc)
 				new /obj/item/clothing/suit/armor/ranger2(src.loc)
 				new /obj/item/paper/administratum/weapon4(src.loc)
+				new /obj/item/pen(src.loc)
 				new /obj/item/paper/administratum/theta(src.loc)
 		if("Scum") // Pariah story. The magical 357
 			 //ex criminal, not fed very well, but random stats
@@ -219,6 +221,7 @@ Pilgrim Fate System
 				new /obj/item/device/flashlight/lantern(src.loc)
 				new /obj/item/reagent_containers/food/snacks/threebread(src.loc)
 				new /obj/item/paper/administratum/weapon3(src.loc)
+				new /obj/item/pen(src.loc)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
 				if(prob(5))
@@ -234,6 +237,7 @@ Pilgrim Fate System
 				new /obj/item/clothing/suit/raggedrobe(src.loc)
 				new /obj/item/clothing/head/plebhood(src.loc)
 				new /obj/item/paper/administratum/weapon3(src.loc)
+				new /obj/item/pen(src.loc)
 				if(prob(25))
 					new /obj/item/device/radio/headset/headset_sci(src.loc)
 		if("Witch Hunter")
@@ -256,6 +260,7 @@ Pilgrim Fate System
 			new /obj/item/clothing/suit/armor/witch(src.loc)
 			new /obj/item/device/radio/headset/headset_sci(src.loc)
 			new /obj/item/paper/administratum/weapon4(src.loc)
+			new /obj/item/pen(src.loc)
 			new /obj/item/paper/administratum/theta(src.loc)
 		if("Mercenary")
 			U.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(2,4),rand(2,6)) //melee, ranged, med, eng, surgery
@@ -278,6 +283,7 @@ Pilgrim Fate System
 				new /obj/item/clothing/head/helmet/hero(src.loc)
 				new /obj/item/paper/administratum/weapon3(src.loc)
 				new /obj/item/paper/administratum/theta(src.loc)
+				new /obj/item/pen(src.loc)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
 				if(prob(45))
@@ -294,6 +300,7 @@ Pilgrim Fate System
 				new /obj/item/ammo_casing/c45/ap(src.loc)
 				new /obj/item/paper/administratum/weapon4(src.loc)
 				new /obj/item/paper/administratum/theta(src.loc)
+				new /obj/item/pen(src.loc)
 				new /obj/item/clothing/suit/armor/armoredtrench(src.loc)
 				if(prob(2))
 					new /obj/item/device/radio/headset/headset_eng(src.loc)
@@ -312,6 +319,7 @@ Pilgrim Fate System
 				new /obj/item/ammo_magazine/c50(src.loc)
 				new /obj/item/paper/administratum/weapon4(src.loc)
 				new /obj/item/paper/administratum/theta(src.loc)
+				new /obj/item/pen(src.loc)
 				if(prob(60))
 					new /obj/item/clothing/suit/armor/bountyhunter2(src.loc)
 					new /obj/item/clothing/head/bountyhead(src.loc)
@@ -421,6 +429,7 @@ Pilgrim Fate System
 				new /obj/item/clothing/under/det/black(src.loc)
 				new /obj/item/paper/administratum/weapon3(src.loc)
 				new /obj/item/paper/administratum/theta(src.loc)
+				new /obj/item/pen(src.loc)
 		if("Miner")
 			U.add_stats(rand(16,18), rand(14,16), rand(14,18), rand (12,14)) //
 			U.add_skills(rand(6,8),rand(4,7),rand(3,6),rand(5,6),rand(2,6)) //melee, ranged, med, eng, surgery
@@ -436,6 +445,7 @@ Pilgrim Fate System
 			new /obj/item/stack/thrones3/twenty(src.loc)
 			new /obj/item/stack/thrones3/twenty(src.loc)
 			new /obj/item/paper/administratum/weapon4(src.loc)
+			new /obj/item/pen(src.loc)
 			to_chat(U,"<span class='danger'><b><font size=4>THE BROKEBACK MINER</font></b></span>")
 			to_chat(U,"<span class='goodmood'><b><font size=3>A veteran of many digsites you travelled the galaxy looking for work.</font></b></span>")
 			U.stat = CONSCIOUS
@@ -457,6 +467,7 @@ Pilgrim Fate System
 			new /obj/item/clothing/suit/armor/brigandine/palace(src.loc)
 			new /obj/item/melee/trench_axe/glaive/adamantine(src.loc)
 			new /obj/item/paper/administratum/weapon3(src.loc)
+			new /obj/item/pen(src.loc)
 			new /obj/item/paper/administratum/theta(src.loc)
 			to_chat(U,"<span class='danger'><b><font size=4>THE PROTECTORATE</font></b></span>")
 			to_chat(U,"<span class='goodmood'><b><font size=3>Skilled in the arts of blade and gun lore, you are one of the rare individuals selected by EITHER; The Ecclesiarchy or House Sondar(Your Choice) to protect them from the heretic, the alien and worst of all -- the human. Find the Steward/Commissar or Governor for your assignment...</font></b></span>")
@@ -487,6 +498,7 @@ Pilgrim Fate System
 			new /obj/item/device/flashlight/lantern(src.loc)
 			new /obj/item/paper/administratum/weapon3(src.loc)
 			new /obj/item/paper/administratum/theta(src.loc)
+			new /obj/item/pen(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/dog_tag/guardsman, slot_wear_id)
 			new /obj/item/device/radio/headset/red_team(src.loc)
 			new /obj/item/cell/lasgun(src.loc)
@@ -520,6 +532,7 @@ Pilgrim Fate System
 				new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
 				new /obj/item/paper/administratum/weapon4(src.loc)
 				new /obj/item/paper/administratum/theta(src.loc)
+				new /obj/item/pen(src.loc)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
 			else if(prob(40))
@@ -532,6 +545,7 @@ Pilgrim Fate System
 				new /obj/item/stack/thrones3/twenty(src.loc) 
 				new /obj/item/paper/administratum/weapon4(src.loc)
 				new /obj/item/paper/administratum/theta(src.loc)
+				new /obj/item/pen(src.loc)
 				new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
 				if(prob(2))
 					new /obj/item/device/radio/headset/headset_eng(src.loc)
@@ -551,6 +565,7 @@ Pilgrim Fate System
 				new /obj/item/instrument/guitar(src.loc)
 				new /obj/item/device/violin(src.loc)
 				new /obj/item/paper/administratum/weapon3(src.loc)
+				new /obj/item/pen(src.loc)
 				new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
 		if("Fate Touched")
 			U.add_stats(rand(16,17), rand(15,17), rand(10,16), rand (12,16)) 
@@ -588,6 +603,7 @@ Pilgrim Fate System
 				new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
 				new /obj/item/device/radio/headset/headset_sci(src.loc)
 				new /obj/item/paper/administratum/weapon4(src.loc)
+				new /obj/item/pen(src.loc)
 
 /datum/job/underboss  //Shrewd businessman
 	title = "Tavern Keeper"
@@ -781,7 +797,9 @@ Pilgrim Fate System
 	pda_slot = null
 	backpack_contents = list(
 	/obj/item/ammo_magazine/a357 = 2,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/stack/thrones2 = 1,
 	)
 
@@ -807,6 +825,7 @@ Pilgrim Fate System
 	/obj/item/card/id/pilgrim/penitent/keeper = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
 
 	)
@@ -827,6 +846,7 @@ Pilgrim Fate System
 	suit_store = null
 	backpack_contents = list(
 	/obj/item/stack/thrones3/twenty = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
     )
 
@@ -902,6 +922,7 @@ Pilgrim Fate System
 	/obj/item/card/id/pilgrim/penitent/keeper = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
 
 	)

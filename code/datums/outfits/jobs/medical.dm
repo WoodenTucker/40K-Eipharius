@@ -60,6 +60,7 @@
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/ammo_magazine/c50/ms = 2,
 	/obj/item/paper/administratum/vermillion = 1,
+	/obj/item/pen = 1,
 	/obj/item/gun/projectile/revolver/mateba = 1
 		)
 
@@ -83,6 +84,7 @@
 		/obj/item/ammo_magazine/bolt_pistol_magazine = 1,
 		/obj/item/stack/thrones2/five = 1,
 		/obj/item/paper/administratum/omega = 1,
+		/obj/item/pen = 1,
 		/obj/item/stack/thrones3/five = 1,)
 /* // sisterhood chemist
 /decl/hierarchy/outfit/job/medical/chemist

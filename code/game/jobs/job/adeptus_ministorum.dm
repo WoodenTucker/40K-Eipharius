@@ -680,6 +680,7 @@
 		/obj/item/clothing/accessory/holster/waist = 1,
 		/obj/item/device/flashlight/lantern = 1,
 		/obj/item/paper/administratum/vermillion = 1,
+		/obj/item/pen = 1,
 		/obj/item/book/manual/ecc = 1
 		)
 
@@ -708,6 +709,7 @@
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/book/manual/ecc = 1,
 	/obj/item/paper/administratum/vermillion = 1,
+	/obj/item/pen = 1,
 	/obj/item/stack/thrones2/ten = 1
 	)
 
@@ -731,6 +733,7 @@
 	/obj/item/reagent_containers/food/snacks/warfare = 1,
 	/obj/item/clothing/mask/gas/explorer = 1,
 	/obj/item/paper/administratum/vermillion = 1,
+	/obj/item/pen = 1,
 	/obj/item/device/flashlight/lantern = 1,
 	)
 
@@ -759,6 +762,7 @@
 	/obj/item/clothing/mask/gas/explorer = 1,
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/paper/administratum/vermillion = 1,
+	/obj/item/pen = 1,
 	/obj/item/stack/thrones2/ten = 1
 	)
 
@@ -786,6 +790,7 @@
 	/obj/item/clothing/mask/gas/explorer = 1,
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/paper/administratum/vermillion = 1,
+	/obj/item/pen = 1,
 	/obj/item/stack/thrones2/ten = 1
 	)
 
@@ -835,4 +840,5 @@
 	/obj/item/reagent_containers/food/snacks/warfare = 1,
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/paper/administratum/theta = 1,
+	/obj/item/pen = 1,
 		)

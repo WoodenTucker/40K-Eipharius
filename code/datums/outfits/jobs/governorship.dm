@@ -20,6 +20,7 @@
 	/obj/item/stack/thrones3/twenty = 1,
 	/obj/item/paper/administratum/vermillion = 1,
 	/obj/item/paper/administratum/weapon5 = 1,
+	/obj/item/pen = 1,
 	/obj/item/reagent_containers/food/snacks/bigbiteburger
 )
 
@@ -55,6 +56,7 @@
 	/obj/item/stack/thrones2/ten = 1,
 	/obj/item/paper/administratum/omega = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/stack/thrones3/twenty = 1,
 	 )
 /*
