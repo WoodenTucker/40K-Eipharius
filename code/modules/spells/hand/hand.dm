@@ -57,3 +57,58 @@
 	if(casts-- && ..())
 		to_chat(holder, "<span class='notice'>The [name] spell has [casts] out of [max_casts] charges left</span>")
 	return !!casts
+
+
+/spell/hand/charges/lightning
+	name = "Lightning Blast"
+	desc = "Call forth a blast of ethereal lightning."
+
+	spell_flags = 0
+	charge_max = 600
+	invocation = "opens their hand, which bursts into crackling lightning."
+	invocation_type = SpI_EMOTE
+
+	range = 7
+	max_casts = 2
+	compatible_targets = list(/atom)
+	hud_state = "wiz_bshard"
+
+/spell/hand/charges/lightning/cast_hand(var/atom/A,var/mob/user)
+	var/obj/item/projectile/lightning/B = new(get_turf(user))
+	B.firer = user
+	B.launch_projectile(A, BP_CHEST)
+	user.visible_message("<span class='danger'>\The [user] shoots out a crackling blast of lightning from their hand!</span>")
+	return ..()
+
+/obj/item/projectile/lightning
+	name = "lightning"
+	damage = 35
+	check_armour = "energy"
+	armor_penetration = 48
+	icon_state = "stun"
+	damage_type = BURN
+
+/obj/item/projectile/lightning/on_hit(var/atom/movable/target, var/blocked = 0)
+	if(..())
+		if(istype(target, /mob/living/carbon/human))
+			var/mob/living/carbon/human/H = target
+			H.flash_eyes()
+			H.eye_blurry += 4
+			H.Weaken(20)
+			H.visible_message("<span class='danger'>Lightning crackles across \the [H]'s skin!</span>")
+
+/obj/item/projectile/bullet/pellet/lightning
+	name = "lightning spark"
+	damage = 4
+	check_armour = "energy"
+	armor_penetration = 48
+
+
+/obj/item/projectile/bullet/pellet/lightning/on_hit(var/atom/movable/target, var/blocked = 0)
+	if(..())
+		if(istype(target, /mob/living/carbon/human))
+			var/mob/living/carbon/human/H = target
+			H.flash_eyes()
+			H.eye_blurry += 1
+			H.Weaken(5)
+			H.visible_message("<span class='danger'>Lightning crackles across \the [H]'s skin!</span>")
