@@ -515,6 +515,8 @@ Exterminatus
 	round_end_stats += "Number of Slaanesh Cultists:<span class='danger'><B>[GLOB.slaanesh_cult]</B></span>\n"
 	round_end_stats += "Number of Nurgle Cultists:<span class='danger'><B>[GLOB.nurgle_cult]</B></span>\n"
 	round_end_stats += "Number of Tzeentch Cultists:<span class='danger'><B>[GLOB.tzeentch_cult]</B></span>\n"
+	round_end_stats += "Number of Genestaler Cultists:<span class='danger'><B>[GLOB.hivemind_cult]</B></span>\n"
+
 
 
 	round_end_stats += "Total round Length: <span class='danger'><B>[roundduration2text()]</B></span>\n"
