@@ -59,7 +59,7 @@
 	duration = 600 //Lasts 60 seconds.
 	hud_state = "gen_immolate"
 
-/spell/radiant_aura/psyker/ultimatechoose_targets()
+/spell/radiant_aura/psyker/ultimate/choose_targets()
 	return list(holder)
 
 /spell/radiant_aura/psyker/ultimate/cast(var/list/targets, var/mob/user)
