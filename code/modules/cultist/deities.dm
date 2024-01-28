@@ -167,7 +167,7 @@
 		if("Genestealer Cultist")
 			src.set_trait(new/datum/trait/death_tolerant()) //Not bothered by any death in the name of the Four-Armed Emperor
 			src.update_eyes() //should fix grey vision
-			src.warfare_language_shit(LANGUAGE_HIVEMIND) //Gives them access to the hivemind
+			src.warfare_language_shit(LANGUAGE_TYRANID) //Gives them access to the hivemind
 			src.bladder = -INFINITY
 			src.bowels = -INFINITY //Tyranid bioengineering's finest.
 			src.thirst = INFINITY
