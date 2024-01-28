@@ -28,5 +28,6 @@
 				/spell/hand/charges/blood_shard/burning = 					1,
 				/spell/radiant_aura/psyker = 					1,
 				/spell/radiant_aura/psyker/ultimate = 					1,
+				/spell/hand/charges/firebolt = 					1,
 				/spell/targeted/ethereal_jaunt = 					2
 				)
