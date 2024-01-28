@@ -85,7 +85,7 @@
 	damage = 35
 	check_armour = "energy"
 	armor_penetration = 48
-	icon_state = "stun"
+	icon_state = "laser_musket"
 	damage_type = BURN
 
 /obj/item/projectile/lightning/on_hit(var/atom/movable/target, var/blocked = 0)
