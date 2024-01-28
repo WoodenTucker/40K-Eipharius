@@ -760,7 +760,7 @@ Pilgrim Fate System
 	back = /obj/item/storage/backpack/satchel/warfare
 	gloves = /obj/item/clothing/gloves/prac_gloves
 	l_hand = /obj/item/storage/firstaid/adv
-	l_ear = /obj/item/device/radio/headset/headset_sci
+	l_ear = /obj/item/device/radio/headset/headset_eng //Meant to be with the Mechanicus now.
 	l_pocket = /obj/item/device/flashlight/lantern
 	r_hand = /obj/item/storage/box/coin
 	belt = /obj/item/storage/belt/medical/full
