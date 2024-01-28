@@ -125,7 +125,7 @@
 
 /datum/heretic_deity/hivemind
 	name = "Hivemind"
-	status_icon_state = "ngenestealer"
+	status_icon_state = "genestealer"
 	rune_type = /obj/effect/cleanable/heretic_rune/hivemind
 	faction = "alien"
 /*	possible_blessings = list(
