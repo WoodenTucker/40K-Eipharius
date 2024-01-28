@@ -60,3 +60,15 @@
 	layer = 2
 	blood_DNA = list()
 	appearance_flags = NO_CLIENT_COLOR
+
+/obj/effect/cleanable/heretic_rune/hivemind
+	name = "Biomass clump"
+	icon = 'icons/obj/decals.dmi'
+	icon_state = "arthit"
+	desc = "A strange lump of biomass."
+	gender = PLURAL
+	density = 0
+	anchored = 1
+	layer = 2
+	blood_DNA = list()
+	appearance_flags = NO_CLIENT_COLOR
