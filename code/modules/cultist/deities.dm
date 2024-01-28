@@ -146,11 +146,32 @@
 						/datum/rune_recipe/nurgle/nade,
 						/datum/rune_recipe/nurgle/blight,
 						/datum/rune_recipe/nurgle/nurgling,
-						/datum/rune_recipe/nurgle/offering)
+						/datum/rune_recipe/nurgle/offering)*/
 	inherent_verbs = list(
-			/mob/living/carbon/human/proc/lordofflies,
-			/mob/living/carbon/human/proc/draw_rune,
-			/mob/living/carbon/human/proc/getmanualnurgle)*/ //Need to add new verbs
+			/mob/living/carbon/human/proc/givegenestuff)
 
 /datum/heretic_deity/hivemind/post_add(mob/living/carbon/human/NewMember)
 	GLOB.hivemind_cult++
+
+/mob/living/carbon/human/proc/givegenestuff()
+	set name = "Run startup diagnostics"
+	set category = "Genestealer Cultist"
+	set desc = "Genestaler Cultist Setup."
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	var/geneclass = input("Select a Class","Class Selection") as null|anything in list("Genestealer Cultist")
+	switch(geneclass)
+		if("Genestealer Cultist")
+			src.set_trait(new/datum/trait/death_tolerant()) //Not bothered by any death in the name of the Four-Armed Emperor
+			src.update_eyes() //should fix grey vision
+			src.warfare_language_shit(LANGUAGE_HIVEMIND) //Gives them access to the hivemind
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //Tyranid bioengineering's finest.
+			src.thirst = INFINITY
+			src.nutrition = INFINITY
+			src.verbs -= /mob/living/carbon/human/proc/givegenestuff //removes verb at the end so they can't spam it for whatever reason
+			client?.color = null
+			to_chat(src, "<span class='notice'>Check your languages for the Hivemind! The default option is ,h and you can switch it in your IC tab.</span>")
