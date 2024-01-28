@@ -129,33 +129,13 @@
 	status_icon_state = "genestealer"
 	rune_type = /obj/effect/cleanable/heretic_rune/hivemind
 	faction = "Tyranids"
-/*	possible_blessings = list(
-						/datum/heretic_effect/heal,
-						/datum/heretic_effect/painless,
-						/datum/heretic_effect/slow,
-						/datum/heretic_effect/zombie)
-	rune_recipes = list(/datum/rune_recipe/nurgle/deathtolerance,
-						/datum/rune_recipe/nurgle/conversion,
-						/datum/rune_recipe/nurgle/offer_gem,
-						/datum/rune_recipe/nurgle/offer_brain,
-						/datum/rune_recipe/nurgle/toughen,
-						/datum/rune_recipe/nurgle/nganga,
-						/datum/rune_recipe/nurgle/radio,
-						/datum/rune_recipe/nurgle/uniform,
-						/datum/rune_recipe/nurgle/plate,
-						/datum/rune_recipe/nurgle/mask,
-						/datum/rune_recipe/nurgle/nade,
-						/datum/rune_recipe/nurgle/blight,
-						/datum/rune_recipe/nurgle/nurgling,
-						/datum/rune_recipe/nurgle/offering)*/
-	inherent_verbs = list(
-			/mob/living/carbon/human/proc/givegenestuff)
+	inherent_verbs = list(/mob/living/carbon/human/proc/givegenestuff)
 
 /datum/heretic_deity/hivemind/post_add(mob/living/carbon/human/NewMember)
 	GLOB.hivemind_cult++
 
 /mob/living/carbon/human/proc/givegenestuff()
-	set name = "Run startup diagnostics"
+	set name = "Recall your cultist nature."
 	set category = "Genestealer Cultist"
 	set desc = "Genestaler Cultist Setup."
 
@@ -175,4 +155,4 @@
 			src.nutrition = INFINITY
 			src.verbs -= /mob/living/carbon/human/proc/givegenestuff //removes verb at the end so they can't spam it for whatever reason
 			client?.color = null
-			to_chat(src, "<span class='notice'>Check your languages for the Hivemind! The default option is ,h and you can switch it in your IC tab.</span>")
+			to_chat(src, "<span class='notice'>Check your languages for the Hivemind! The default option is .g and you can switch it in your IC tab.</span>")

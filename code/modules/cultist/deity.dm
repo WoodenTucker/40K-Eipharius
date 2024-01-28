@@ -2,7 +2,7 @@
 #define GOD_NURGLE "nurgle"
 #define GOD_SLAANESH "slaanesh"
 #define GOD_TZEENTCH "tzeentch"
-#define GOD_HIVEMIND "Hivemind"
+#define GOD_HIVEMIND "hivemind"
 
 // Singleton.
 /datum/heretic_deity
