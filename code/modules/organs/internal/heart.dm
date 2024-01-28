@@ -207,7 +207,7 @@
 	name = "Le pecho de Chaos"
 
 /obj/item/organ/internal/heart/chaos/attack_self(mob/user)
-	var/datum/heretic_deity/k = GOD(input(user, "Choose God") in list(GOD_TZEENTCH, GOD_KHORNE, GOD_NURGLE, GOD_SLAANESH))
+	var/datum/heretic_deity/k = GOD(input(user, "Choose God") in list(GOD_TZEENTCH, GOD_KHORNE, GOD_NURGLE, GOD_SLAANESH, GOD_HIVEMIND))
 	k.join_request(user)
 
 
