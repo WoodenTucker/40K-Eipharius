@@ -8,7 +8,8 @@
 	title = "The Psyker's Primer"
 	title_desc = "Buy abilities using your available ability slots."
 	book_flags = CAN_MAKE_CONTRACTS|INVESTABLE
-	max_uses = rand (2,6)
+	//max_uses = rand (2,6)
+	max_uses = rand (100)
 
 	spells = list(/spell/targeted/projectile/dumbfire/passage = 	1,
 				/spell/aoe_turf/knock = 							1,
@@ -20,9 +21,12 @@
 				/spell/aoe_turf/conjure/mirage = 					1,
 				/spell/area_teleport = 								2,
 				/spell/radiant_aura =								1,
-        /spell/targeted/subjugation = 						1,
-        /spell/aoe_turf/disable_tech = 						1,
-        /spell/aoe_turf/smoke = 							1,
-        /spell/targeted/genetic/blind = 					1,
-        /spell/targeted/ethereal_jaunt = 					2
-					)
+				/spell/targeted/subjugation = 						1,
+				/spell/aoe_turf/disable_tech = 						1,
+				/spell/aoe_turf/smoke = 							1,
+				/spell/hand/charges/blood_shard = 					1,
+				/spell/hand/charges/blood_shard/burning = 					1,
+				/spell/radiant_aura/psyker = 					1,
+				/spell/radiant_aura/psyker/ultimate = 					1,
+				/spell/targeted/ethereal_jaunt = 					2
+				)
