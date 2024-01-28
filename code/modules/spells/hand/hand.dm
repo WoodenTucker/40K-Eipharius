@@ -143,5 +143,5 @@
 	damage_type = BURN
 
 /obj/item/projectile/firebolt/on_hit(var/atom/A, var/blocked = 0)
-	explosion(A, 1, 2, 2, 2, 0)
-	new /obj/flamer_fire(A.loc, 16, 12, "red", 3)
+	explosion(A, 0, 1, 2, 2, 0)
+	new /obj/flamer_fire(A.loc, 16, 12, "red", 2)
