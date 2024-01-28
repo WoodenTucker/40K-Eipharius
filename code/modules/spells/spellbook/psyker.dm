@@ -9,7 +9,7 @@
 	title_desc = "Buy abilities using your available ability slots."
 	book_flags = CAN_MAKE_CONTRACTS|INVESTABLE
 	//max_uses = rand (2,6)
-	max_uses = rand (100)
+	max_uses = 100
 
 	spells = list(/spell/targeted/projectile/dumbfire/passage = 	1,
 				/spell/aoe_turf/knock = 							1,
