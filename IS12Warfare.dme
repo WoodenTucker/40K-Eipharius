@@ -2369,6 +2369,7 @@
 #include "code\modules\spells\spellbook\battlemage.dm"
 #include "code\modules\spells\spellbook\cleric.dm"
 #include "code\modules\spells\spellbook\druid.dm"
+#include "code\modules\spells\spellbook\psyker.dm"
 #include "code\modules\spells\spellbook\spatial.dm"
 #include "code\modules\spells\spellbook\standard.dm"
 #include "code\modules\spells\spellbook\student.dm"
