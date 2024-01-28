@@ -112,3 +112,36 @@
 			H.eye_blurry += 1
 			H.Weaken(5)
 			H.visible_message("<span class='danger'>Lightning crackles across \the [H]'s skin!</span>")
+
+/spell/hand/charges/firebolt
+	name = "Fire Bolt"
+	desc = "Call forth a blast of flame"
+
+	spell_flags = 0
+	charge_max = 600
+	invocation = "opens their hand, which bursts into flames."
+	invocation_type = SpI_EMOTE
+
+	range = 9
+	max_casts = 1
+	compatible_targets = list(/atom)
+	hud_state = "wiz_bshard"
+
+/spell/hand/charges/firebolt/cast_hand(var/atom/A,var/mob/user)
+	var/obj/item/projectile/firebolt/B = new(get_turf(user))
+	B.firer = user
+	B.launch_projectile(A, BP_CHEST)
+	user.visible_message("<span class='danger'>\The [user] shoots out a sphere of flames from their hand!</span>")
+	return ..()
+
+/obj/item/projectile/firebolt
+	name = "firebolt"
+	damage = 50
+	check_armour = "energy"
+	armor_penetration = 48
+	icon_state = "fireball"
+	damage_type = BURN
+
+/obj/item/projectile/firebolt/on_hit(var/atom/A, var/blocked = 0)
+	explosion(A, 1, 2, 2, 2, 0)
+	new /obj/flamer_fire(A.loc, 16, 12, "red", 3)
