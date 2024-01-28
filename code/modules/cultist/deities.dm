@@ -124,10 +124,11 @@
 	GLOB.tzeentch_cult++
 
 /datum/heretic_deity/hivemind
-	name = "Hivemind"
-	status_icon_state = "ngenestealer"
+	name = "hivemind"
+	join_message = "Glory to the Four-Armed Emperor!"
+	status_icon_state = "genestealer"
 	rune_type = /obj/effect/cleanable/heretic_rune/hivemind
-	faction = "alien"
+	faction = "Tyranids"
 /*	possible_blessings = list(
 						/datum/heretic_effect/heal,
 						/datum/heretic_effect/painless,
