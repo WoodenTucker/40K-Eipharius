@@ -319,10 +319,10 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 				return TOPIC_REFRESH
 
 	else if(href_list["religion"])
-		var/chosen_religion = input(user, "Choose your god:", CHARACTER_PREFERENCE_INPUT_TITLE) as null|anything in list("khorne", "nurgle", "slaanesh", "tzeentch", "None")
+		var/chosen_religion = input(user, "Choose your god:", CHARACTER_PREFERENCE_INPUT_TITLE) as null|anything in list("khorne", "nurgle", "slaanesh", "tzeentch", "hivemind", "None")
 		if(chosen_religion && CanUseTopic(user))
 			if(href_list["religion"] == "Random")
-				pref.cult = pick(list("khorne", "nurgle", "slaanesh", "tzeentch", "Hivemind"))
+				pref.cult = pick(list("khorne", "nurgle", "slaanesh", "tzeentch", "hivemind"))
 				return TOPIC_REFRESH
 			else
 				pref.cult = chosen_religion
@@ -335,7 +335,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 						to_chat(user, "<span class='badmood'>⠀+ Hail to the Prince of Delight! (Cult roles are not guaranteed) +</span>")
 					if("tzeentch")
 						to_chat(user, "<span class='badmood'>⠀+ All according to plan! (Cult roles are not guaranteed) +</span>")
-					if("Hivemind")
+					if("hivemind")
 						to_chat(user, "<span class='badmood'>⠀+ All hail the four-armed Emperor! (Cult roles are not guaranteed) +</span>")
 					if("None")
 						to_chat(user, "<span class='badmood'>⠀+ You have opted out of a cult role. +</span>")
