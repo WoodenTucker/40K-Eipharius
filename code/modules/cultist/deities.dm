@@ -122,3 +122,35 @@
 
 /datum/heretic_deity/tzeentch/post_add(mob/living/carbon/human/NewMember)
 	GLOB.tzeentch_cult++
+
+/datum/heretic_deity/hivemind
+	name = "Hivemind"
+	status_icon_state = "ngenestealer"
+	rune_type = /obj/effect/cleanable/heretic_rune/hivemind
+	faction = "alien"
+/*	possible_blessings = list(
+						/datum/heretic_effect/heal,
+						/datum/heretic_effect/painless,
+						/datum/heretic_effect/slow,
+						/datum/heretic_effect/zombie)
+	rune_recipes = list(/datum/rune_recipe/nurgle/deathtolerance,
+						/datum/rune_recipe/nurgle/conversion,
+						/datum/rune_recipe/nurgle/offer_gem,
+						/datum/rune_recipe/nurgle/offer_brain,
+						/datum/rune_recipe/nurgle/toughen,
+						/datum/rune_recipe/nurgle/nganga,
+						/datum/rune_recipe/nurgle/radio,
+						/datum/rune_recipe/nurgle/uniform,
+						/datum/rune_recipe/nurgle/plate,
+						/datum/rune_recipe/nurgle/mask,
+						/datum/rune_recipe/nurgle/nade,
+						/datum/rune_recipe/nurgle/blight,
+						/datum/rune_recipe/nurgle/nurgling,
+						/datum/rune_recipe/nurgle/offering)
+	inherent_verbs = list(
+			/mob/living/carbon/human/proc/lordofflies,
+			/mob/living/carbon/human/proc/draw_rune,
+			/mob/living/carbon/human/proc/getmanualnurgle)*/ //Need to add new verbs
+
+/datum/heretic_deity/hivemind/post_add(mob/living/carbon/human/NewMember)
+	GLOB.hivemind_cult++
