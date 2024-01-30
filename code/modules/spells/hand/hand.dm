@@ -145,3 +145,69 @@
 /obj/item/projectile/firebolt/on_hit(var/atom/A, var/blocked = 0)
 	explosion(A, 0, 1, 2, 2, 0)
 	new /obj/flamer_fire(A.loc, 16, 12, "red", 2)
+
+/spell/hand/charges/firebolt/strong
+	name = "Enhanced Fire Bolt"
+	desc = "Call forth a blast of hellish flame"
+
+	spell_flags = 0
+	charge_max = 600
+	invocation = "opens their hand, which bursts into flames."
+	invocation_type = SpI_EMOTE
+
+	range = 9
+	max_casts = 1
+	compatible_targets = list(/atom)
+	hud_state = "fireball"
+
+/spell/hand/charges/firebolt/strong/cast_hand(var/atom/A,var/mob/user)
+	var/obj/item/projectile/firebolt/strong/B = new(get_turf(user))
+	B.firer = user
+	B.launch_projectile(A, BP_CHEST)
+	user.visible_message("<span class='danger'>\The [user] shoots out a powerful sphere of flames from their hand!</span>")
+	return ..()
+
+/obj/item/projectile/firebolt/strong
+	name = "firebolt"
+	damage = 75
+	check_armour = "energy"
+	armor_penetration = 55
+	icon_state = "fireball"
+	damage_type = BURN
+
+/obj/item/projectile/firebolt/strong/on_hit(var/atom/A, var/blocked = 0)
+	explosion(A, 1, 2, 3, 4, 5)
+	new /obj/flamer_fire(A.loc, 16, 12, "red", 3)
+
+/spell/hand/charges/firebolt/flame
+	name = "Incendiary Fire Bolt"
+	desc = "Sacrifice some of the detonation force for a wall of flames"
+
+	spell_flags = 0
+	charge_max = 600
+	invocation = "opens their hand, which bursts into flames."
+	invocation_type = SpI_EMOTE
+
+	range = 9
+	max_casts = 1
+	compatible_targets = list(/atom)
+	hud_state = "fireball"
+
+/spell/hand/charges/firebolt/flame/cast_hand(var/atom/A,var/mob/user)
+	var/obj/item/projectile/firebolt/flame/B = new(get_turf(user))
+	B.firer = user
+	B.launch_projectile(A, BP_CHEST)
+	user.visible_message("<span class='danger'>\The [user] shoots out a wall of flames from their hand!</span>")
+	return ..()
+
+/obj/item/projectile/firebolt/flame
+	name = "firebolt"
+	damage = 30
+	check_armour = "energy"
+	armor_penetration = 48
+	icon_state = "fireball"
+	damage_type = BURN
+
+/obj/item/projectile/firebolt/flame/on_hit(var/atom/A, var/blocked = 0)
+	explosion(A, 0, 0, 1, 2, 3)
+	new /obj/flamer_fire(A.loc, 16, 12, "red", 5)
