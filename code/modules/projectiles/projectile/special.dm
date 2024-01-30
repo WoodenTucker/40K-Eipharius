@@ -158,6 +158,23 @@
 			H.IgniteMob()
 		new /obj/flamer_fire(H.loc, 12, 10, "blue", 1)
 
+/obj/item/projectile/flamer/warp
+	name = "warp fire"
+	icon_state = "declone"
+	damage = 15
+	range =  7
+	damage_type = BURN
+	mob_hit_sound = list('sound/effects/fire.ogg')
+	speed = 1
+
+/obj/item/projectile/flamer/warp/on_hit(var/atom/target, var/blocked = 0)
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+		if(!istype(H.wear_suit, /obj/item/clothing/suit/fire))
+			H.adjust_fire_stacks(10)
+			H.IgniteMob()
+		new /obj/flamer_fire(H.loc, 16, 12, "green", 2)
+
 
 // FLESH MOUTH
 /obj/necrofleshmouth
