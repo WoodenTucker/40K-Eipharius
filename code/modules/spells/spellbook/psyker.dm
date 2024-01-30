@@ -13,8 +13,8 @@
 	book_desc = "Learn the basics of your abilities."
 	title = "The Psyker's Primer"
 	title_desc = "Buy abilities using your available ability slots."
-	book_flags = CAN_MAKE_CONTRACTS|INVESTABLE
-	max_uses = 8
+	book_flags = null
+	max_uses = 12
 	spells = list(/spell/targeted/projectile/dumbfire/passage = 	1,
 				/spell/aoe_turf/knock/psyker = 							1,
 				/spell/targeted/equip_item/shield = 				2,
