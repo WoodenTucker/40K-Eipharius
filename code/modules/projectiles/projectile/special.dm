@@ -170,7 +170,7 @@
 /obj/item/projectile/warpfire/on_hit(var/atom/target, var/blocked = 0)
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
-		if(!istype(H.wear_suit, /obj/item/clothing/suit/wizrobe/psypurple)
+		if(!istype(H.wear_suit, /obj/item/clothing/suit/wizrobe/psypurple))
 			H.adjust_fire_stacks(10)
 			H.IgniteMob()
 		new /obj/warpfire(H.loc, 16, 12, "green", 3)
