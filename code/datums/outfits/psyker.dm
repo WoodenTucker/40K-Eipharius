@@ -2,7 +2,7 @@
 	name = "Sanctioned Psyker"
 	l_ear  = /obj/item/device/radio/headset/red_team
 	uniform = /obj/item/clothing/under/psysuit
-	neck = /obj/item/reagent_containers/food/drinks/canteen
+	neck = /obj/item/clothing/rosarius/refractor
 	suit = /obj/item/clothing/suit/wizrobe/psypurple
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
