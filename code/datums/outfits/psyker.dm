@@ -1,4 +1,4 @@
-/decl/hierarchy/outfit/psyker
+/decl/hierarchy/outfit/job/psyker
 	name = OUTFIT_JOB_NAME("Sanctioned Psyker")
 	l_ear  = /obj/item/device/radio/headset/red_team
 	uniform = /obj/item/clothing/under/psysuit
