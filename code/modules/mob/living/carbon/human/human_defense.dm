@@ -15,11 +15,11 @@ meteor_act
 	else
 		return "hits"
 
-/mob/living/carbon/human/bullet_act(var/obj/item/projectile/P, var/def_zone)
+/mob/living/carbon/human/H/bullet_act(var/obj/item/projectile/P, var/def_zone)
 	def_zone = check_zone(def_zone)
 	if(!has_organ(def_zone))
 		return PROJECTILE_FORCE_MISS //if they don't have the organ in question then the projectile just passes by.
-	if(shielded_energy >= 1)
+	if(user.shielded_energy >= 1)
 		if((P.check_armour == "laser") || (P.check_armour == "energy"))
 			var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
 			spark_system.set_up(5, 0, user.loc)
@@ -28,7 +28,7 @@ meteor_act
 			START_PROCESSING(SSobj, src)
 			user.visible_message("<span class='warning'>\The [P] refracts, bending into \the [user]'s field.</span>")
 			del(P)
-	if(shielded_projectile >= 1)
+	if(user/shielded_projectile >= 1)
 		if(istype(P, /obj/item/projectile/bullet)
 			var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
 			spark_system.set_up(5, 0, user.loc)
