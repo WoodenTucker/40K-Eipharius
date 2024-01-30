@@ -38,6 +38,11 @@
 
 /obj/aura/radiant_aura/psyker/bullet_act(var/obj/item/projectile/P, var/def_zone)
 	if(istype(P, /obj/item/projectile/energy) || istype(P, /obj/item/projectile/beam))
+		var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
+		spark_system.set_up(5, 0, user.loc)
+		spark_system.start()
+		playsound(user.loc, "sparks", 50, 1)
+		START_PROCESSING(SSobj, src)
 		user.visible_message("<span class='warning'>\The [P] refracts, bending into \the [user]'s aura.</span>")
 		del(P)
 
@@ -59,4 +64,9 @@
 
 /obj/aura/radiant_aura/psyker/ultimate/bullet_act(var/obj/item/projectile/P, var/def_zone)
 	user.visible_message("<span class='warning'>\The [P] vanishes against the [user]'s aura.</span>")
+	var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
+	spark_system.set_up(5, 0, user.loc)
+	spark_system.start()
+	playsound(user.loc, "sparks", 50, 1)
+	START_PROCESSING(SSobj, src)
 	del(P)
