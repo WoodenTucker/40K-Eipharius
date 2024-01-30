@@ -71,12 +71,7 @@
 		if(istype(target, /mob/living/carbon/human))
 			var/mob/living/carbon/human/H = target
 			H.vessel.remove_reagent(/datum/reagent/blood, 10)
-			H.visible_message("<span class='danger'>Tiny red shards burst from \the [H]'s skin!</span>")
-			fragmentate(get_turf(src), 30, 5, list(/obj/item/projectile/bullet/pellet/blood))
+			H.visible_message("<span class='danger'>Bright streaks of flame burst from \the [H]'s skin!</span>")
 			H.adjust_fire_stacks(5)
 			H.IgniteMob()
-			new /obj/flamer_fire(H.loc, 12, 10, "red", 1)
-
-/obj/item/projectile/bullet/pellet/blood
-	name = "blood fragment"
-	damage = 4
+			new /obj/flamer_fire(H.loc, 12, 10, "red", 2)
