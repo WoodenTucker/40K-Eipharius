@@ -267,7 +267,7 @@
 
 /datum/species/human/officer
 	name = SPECIES_OFFICER
-	name_plural = "Imperial Guard Officers"
+	name_plural = "Officers"
 	primitive_form = SPECIES_HUMAN
 	brute_mod =      0.8                    // 80% brute damage
 	burn_mod =       0.8                  //  80% burn damage
@@ -277,7 +277,7 @@
 		/datum/unarmed_attack/punch,
 		/datum/unarmed_attack/bite
 		)
-	blurb = "A high-ranking Officer in the Imperial Guard."
+	blurb = "A high-ranking Officer."
 	min_age = 23
 	max_age = 35
 	blood_volume = 450 
@@ -295,16 +295,19 @@
 		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
 		return
 
-	warfare_faction = IMPERIUM
-	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/security/colonel)
-	outfit.equip(src)
-	src.add_stats(rand(19,21),rand(19,21),rand(19,21),rand(19,21)) //gives stats str, dext, end, int
-	src.add_skills(rand(19,21),rand(19,21),rand(16,18),rand(12,14),rand(12,14)) //melee, ranged, med, eng, surgery
-	src.set_trait(new/datum/trait/death_tolerant())
-	src.update_eyes() //should fix grey vision
-	src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC) //secondary language
-	src.bladder = -INFINITY
-	src.bowels = -INFINITY 
-	src.thirst = INFINITY
-	src.nutrition = INFINITY 
-	src.verbs -= /mob/living/carbon/human/officer/proc/setupstartofficer //removes verb at the end so they can't spam it for whatever reason
+	var/officerclass = input("Select a Class","Class Selection") as null|anything in list("Colonel")
+	switch(officerclass)
+		if("Colonel")
+			warfare_faction = IMPERIUM
+			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/security/colonel)
+			outfit.equip(src)
+			src.add_stats(rand(19,21),rand(19,21),rand(19,21),rand(19,21)) //gives stats str, dext, end, int
+			src.add_skills(rand(19,21),rand(19,21),rand(16,18),rand(12,14),rand(12,14)) //melee, ranged, med, eng, surgery
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.update_eyes() //should fix grey vision
+			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC) //secondary language
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY 
+			src.thirst = INFINITY
+			src.nutrition = INFINITY 
+			src.verbs -= /mob/living/carbon/human/officer/proc/setupstartofficer //removes verb at the end so they can't spam it for whatever reason
