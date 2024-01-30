@@ -16,7 +16,7 @@ meteor_act
 		return "hits"
 
 /mob/living/carbon/human/bullet_act(var/obj/item/projectile/P, var/def_zone)
-	/mob/living/carbon/human = user
+//	/mob/living/carbon/human = user
 	def_zone = check_zone(def_zone)
 	if(!has_organ(def_zone))
 		return PROJECTILE_FORCE_MISS //if they don't have the organ in question then the projectile just passes by.
