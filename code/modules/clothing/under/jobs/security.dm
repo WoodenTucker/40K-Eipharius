@@ -240,3 +240,12 @@
 	worn_state = "repentia_nude"
 	siemens_coefficient = 0.9
 	species_restricted = list(SPECIES_HUMAN)
+
+/obj/item/clothing/under/administratum
+	name = "administratum underlayers"
+	desc = "voluminous underlayers belonging to an administratum officer."
+	icon_state = "combat"
+	item_state = "bl_suit"
+	worn_state = "combat"
+	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 5, bio = 5, rad = 50)
+	has_sensor = SUIT_HAS_SENSORS
