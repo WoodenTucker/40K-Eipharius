@@ -370,7 +370,7 @@
 	if(istype(M))
 		if(ishuman(M))
 			var/mob/living/carbon/human/H = M
-			ifistype(H.wear_suit, /obj/item/clothing/suit/wizrobe/psypurple)) //It's magic warpfire, so only Psykers (Denoted by the outfit for now) can survive
+			if(istype(H.wear_suit, /obj/item/clothing/suit/wizrobe/psypurple)) //It's magic warpfire, so only Psykers (Denoted by the outfit for now) can survive
 				H.show_message(text("Your psyker powers protect you from the flames."),1)
 				H.adjustFireLoss(burnlevel*0.25) //Does small burn damage to a person wearing one of the suits.
 				return
