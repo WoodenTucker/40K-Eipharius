@@ -191,6 +191,12 @@
 	canremove = 0
 	flash_protection = FLASH_PROTECTION_MAJOR
 
+/obj/item/clothing/glasses/blacksun/skitarii
+	name = "Psyker visual assistance visor"
+	desc = "A visor designed to ensure vision remains uninterrupted, no matter the darkness."
+	vision_flags = SEE_MOBS
+	flash_protection = FLASH_PROTECTION_MAJOR
+
 /obj/item/clothing/glasses/tacgoggles
 	name = "Prototype Photovisor"
 	desc = "Self-polarizing goggles with light amplification for dark environments. Manufactured by the Mechanicus."
