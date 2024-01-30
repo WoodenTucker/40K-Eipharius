@@ -192,8 +192,13 @@
 	flash_protection = FLASH_PROTECTION_MAJOR
 
 /obj/item/clothing/glasses/blacksun/psyker
-	name = "Psyker visual assistance visor"
-	desc = "A visor designed to ensure vision remains uninterrupted, no matter the darkness."
+	name = "Psyker soulsights"
+	desc = "A Psyker's inherent ability to see, no matter the conditions."
+	icon_state = null
+	item_state = null
+	off_state = null
+	toggleable = 1
+	canremove = 0
 	vision_flags = SEE_MOBS
 	flash_protection = FLASH_PROTECTION_MAJOR
 
