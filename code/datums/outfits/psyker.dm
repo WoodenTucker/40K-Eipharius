@@ -9,11 +9,11 @@
 	l_hand = /obj/item/spellbook/psyker
 	r_hand = /obj/item/gun/energy/staff/focus
 	glasses = /obj/item/clothing/glasses/blacksun/psyker
-	belt = /obj/item/storage/belt/medical/apothecary
+	belt = null
 	r_pocket = /obj/item/device/flashlight/lantern
 	id_type = /obj/item/card/id/dog_tag/guardsman
-	head = null
-	l_pocket = /obj/item/storage/firstaid/adv
+	head = /obj/item/clothing/head/wizard/amp
+	l_pocket = /obj/item/storage/box/ifak/advanced
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/clothing/accessory/holster = 1,
