@@ -210,7 +210,7 @@
 
 /obj/item/projectile/firebolt/flame/on_hit(var/atom/A, var/blocked = 0)
 	explosion(A, 0, 0, 1, 2, 3)
-	new /obj/flamer_fire(A.loc, 16, 12, "red", 5)
+	new /obj/flamer_fire(A.loc, 16, 12, "red", 6)
 
 /spell/hand/charges/flames
 	name = "Warpfire Blast"
