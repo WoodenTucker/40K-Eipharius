@@ -363,7 +363,7 @@
 	icon = 'icons/effects/fire.dmi'
 	icon_state = "green_2"
 	layer = BELOW_OBJ_LAYER
-	var/firelevel = 12 //Tracks how much "fire" there is. Basically the timer of how long the fire burns
+	var/firelevel = 18 //Tracks how much "fire" there is. Basically the timer of how long the fire burns
 	var/burnlevel = 15 //Tracks how HOT the fire is. This is basically the heat level of the fire and determines the temperature.
 	var/flame_color = "green"
 	var/canSpreadDir = NORTH | SOUTH | EAST | WEST
