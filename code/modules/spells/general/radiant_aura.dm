@@ -45,8 +45,8 @@
 		qdel(A)
 
 /spell/radiant_aura/psyker/ultimate
-	name = "Radiant aura"
-	desc = "Form a protective layer of light around you, making you immune to weapons fire."
+	name = "Improved Radiant aura"
+	desc = "Form a greater protective layer of light around you, making you immune to weapons fire."
 	school = "transmutation"
 	feedback = "rp"
 	invocation_type = SpI_EMOTE
