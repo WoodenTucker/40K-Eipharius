@@ -408,7 +408,7 @@
 	if(istype(M))
 		if(ishuman(M))
 			var/mob/living/carbon/human/H = M
-			if(istype(istype(H.wear_suit, /obj/item/clothing/suit/wizrobe/psypurple))
+			if(istype(istype(H.wear_suit, /obj/item/clothing/suit/wizrobe/psypurple)))
 				H.show_message(text("Your Psyker powers protect you from the flames."),1)
 				return
 		M.adjust_fire_stacks(burnlevel) //Make it possible to light them on fire later.
