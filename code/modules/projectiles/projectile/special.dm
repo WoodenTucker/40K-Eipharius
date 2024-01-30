@@ -353,6 +353,19 @@
 	return
 
 
+/obj/flamer_fire/warp
+	name = "warp fire"
+	desc = "Run!"
+	anchored = 1
+	mouse_opacity = 0
+	icon = 'icons/effects/fire.dmi'
+	icon_state = "green_2"
+	layer = BELOW_OBJ_LAYER
+	firelevel = 3 //Tracks how much "fire" there is. Basically the timer of how long the fire burns
+	burnlevel = 15 //Tracks how HOT the fire is. This is basically the heat level of the fire and determines the temperature.
+	flame_color = "green"
+	canSpreadDir = NORTH | SOUTH | EAST | WEST
+
 
 
 //this is the PHOSPHOR energy gun, its really fucking OP in lore because it burns through almost anything until they are dead, im not sure why the pain is so huge tho.
