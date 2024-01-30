@@ -227,6 +227,8 @@
 	hud_state = "wiz_bshard"
 
 /spell/hand/charges/flames/cast_hand(var/atom/A,var/mob/user)
-	unleash_flame(A, user)
+	var/obj/item/projectile/flamer/warp/B = new(get_turf(user))
+	B.firer = user
+	B.launch_projectile(A, BP_CHEST)
 	user.visible_message("<span class='danger'>\The [user] unleashes a blast of warp fire!</span>")
 	return ..()
