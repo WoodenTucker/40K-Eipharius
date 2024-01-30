@@ -286,6 +286,11 @@
 	/mob/living/carbon/human/officer/proc/setupstartofficer
 	)
 
+/mob/living/carbon/human/officer/Initialize()
+	. = ..()
+	set_species("Imperial Guard Officer")
+	warfare_faction = IMPERIUM
+
 /mob/living/carbon/human/officer/proc/setupstartofficer()
 	set name = "Setup"
 	set category = "Setup"
