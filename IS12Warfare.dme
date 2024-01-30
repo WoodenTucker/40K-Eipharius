@@ -286,6 +286,7 @@
 #include "code\datums\outfits\nanotrasen.dm"
 #include "code\datums\outfits\outfit.dm"
 #include "code\datums\outfits\pirates.dm"
+#include "code\datums\outfits\psyker.dm"
 #include "code\datums\outfits\spec_op.dm"
 #include "code\datums\outfits\tournament.dm"
 #include "code\datums\outfits\wizardry.dm"
