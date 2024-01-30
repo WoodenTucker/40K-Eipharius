@@ -15,25 +15,26 @@ meteor_act
 	else
 		return "hits"
 
-/mob/living/carbon/human/H/bullet_act(var/obj/item/projectile/P, var/def_zone)
+/mob/living/carbon/human/bullet_act(var/obj/item/projectile/P, var/def_zone)#
+	/mob/living/carbon/human = user
 	def_zone = check_zone(def_zone)
 	if(!has_organ(def_zone))
 		return PROJECTILE_FORCE_MISS //if they don't have the organ in question then the projectile just passes by.
-	if((H.shielded_energy >= 1) && (P.check_armour == "energy"))
+	if((user.shielded_energy >= 1) && (P.check_armour == "energy"))
 		var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
-		spark_system.set_up(5, 0, H.loc)
+		spark_system.set_up(5, 0, user.loc)
 		spark_system.start()
-		playsound(H.loc, "sparks", 50, 1)
+		playsound(user.loc, "sparks", 50, 1)
 		START_PROCESSING(SSobj, src)
-		H.visible_message("<span class='warning'>\The [P] refracts, bending into \the [user]'s field.</span>")
+		user.visible_message("<span class='warning'>\The [P] refracts, bending into \the [user]'s field.</span>")
 		del(P)
-	if((H.shielded_projectile >= 1) && (P.check_armour == "bullet"))
+	if((user.shielded_projectile >= 1) && (P.check_armour == "bullet"))
 		var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
-		spark_system.set_up(5, 0, H.loc)
+		spark_system.set_up(5, 0, user.loc)
 		spark_system.start()
-		playsound(H.loc, "sparks", 50, 1)
+		playsound(user.loc, "sparks", 50, 1)
 		START_PROCESSING(SSobj, src)
-		H.visible_message("<span class='warning'>\The [P] shatters against \the [user]'s field.</span>")
+		user.visible_message("<span class='warning'>\The [P] shatters against \the [user]'s field.</span>")
 		del(P)
 	//Shields
 	var/shield_check = check_shields(P.damage, P, null, def_zone, "the [P.name]")
