@@ -27,6 +27,7 @@
 				/spell/aoe_turf/smoke = 							1,
 				/spell/hand/charges/blood_shard = 					1,
 				/spell/hand/charges/blood_shard/burning = 					1,
+				/spell/hand/charges/lightning = 					1,
 			//	/spell/radiant_aura/psyker = 					1,
 			//	/spell/radiant_aura/psyker/ultimate = 					3,
 				/spell/hand/charges/firebolt = 					3,
