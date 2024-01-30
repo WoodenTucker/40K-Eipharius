@@ -16,13 +16,12 @@
 	book_flags = CAN_MAKE_CONTRACTS|INVESTABLE
 	max_uses = 8
 	spells = list(/spell/targeted/projectile/dumbfire/passage = 	1,
-				/spell/aoe_turf/knock = 							1,
+				/spell/aoe_turf/knock/psyker = 							1,
 				/spell/targeted/equip_item/shield = 				2,
 				/spell/targeted/torment = 							1,
 				/spell/targeted/heal_target = 						2,
 				/spell/aoe_turf/conjure/mirage = 					1,
 				/spell/area_teleport = 								2,
-				/spell/radiant_aura =								1,
 				/spell/targeted/subjugation = 						1,
 				/spell/aoe_turf/disable_tech = 						1,
 				/spell/aoe_turf/smoke = 							1,
