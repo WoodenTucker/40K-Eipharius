@@ -211,3 +211,22 @@
 /obj/item/projectile/firebolt/flame/on_hit(var/atom/A, var/blocked = 0)
 	explosion(A, 0, 0, 1, 2, 3)
 	new /obj/flamer_fire(A.loc, 16, 12, "red", 5)
+
+/spell/hand/charges/flames
+	name = "Warpfire Blast"
+	desc = "Call forth a wave of Warp flame"
+
+	spell_flags = 0
+	charge_max = 600
+	invocation = "opens their hand, which bursts into green fire."
+	invocation_type = SpI_EMOTE
+
+	range = 7
+	max_casts = 1
+	compatible_targets = list(/atom)
+	hud_state = "wiz_bshard"
+
+/spell/hand/charges/flames/cast_hand(var/atom/A,var/mob/user)
+	unleash_flame(A, user)
+	user.visible_message("<span class='danger'>\The [user] unleashes a blast of warp fire!</span>")
+	return ..()
