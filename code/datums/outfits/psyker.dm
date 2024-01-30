@@ -15,7 +15,8 @@
 	head = null
 	l_pocket = /obj/item/storage/firstaid/adv
 	backpack_contents = list(
-		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-		/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
-		/obj/item/gun/energy/las/laspistol = 1,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/clothing/accessory/holster = 1,
+	/obj/item/cell/lasgun/hotshot = 1,
+	/obj/item/gun/energy/las/laspistol = 1
 		)
