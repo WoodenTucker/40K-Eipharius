@@ -97,7 +97,7 @@ obj/item/gun/energy/staff/focus
 		else
 			charge_cost = 200
 			to_chat(user, "<span class='warning'>The [src.name] will now strike only a single person.</span>")
-			projectile_type = /obj/item/projectile/forcebolt"
+			projectile_type = /obj/item/projectile/forcebolt
 
 
 
