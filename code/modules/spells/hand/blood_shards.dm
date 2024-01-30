@@ -44,7 +44,7 @@
 
 	spell_flags = 0
 	charge_max = 600
-	invocation = "opens their hand, which bursts into vicious red light."
+	invocation = "opens their hand, which bursts into vicious red flames."
 	invocation_type = SpI_EMOTE
 
 	range = 9
@@ -64,7 +64,7 @@
 	damage = 8
 	check_armour = "melee"
 	icon_state = "blood"
-	damage_type = BRUTE
+	damage_type = BURN
 
 /obj/item/projectile/blood_shard/burning/on_hit(var/atom/movable/target, var/blocked = 0)
 	if(..())
