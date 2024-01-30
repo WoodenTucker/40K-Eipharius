@@ -50,6 +50,12 @@
 		slot_r_hand_str = "helmet",
 		)
 	siemens_coefficient = 0.8
+	body_parts_covered = HEAD
+	armor = list(melee = 15, bullet = 20, laser = 20, energy = 15, bomb = 20, bio = 0, rad = 10)
+	cold_protection = HEAD
+	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+	heat_protection = HEAD
+	max_heat_protection_temperature = HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/wizard/cap
 	name = "Gentlemans Cap"
