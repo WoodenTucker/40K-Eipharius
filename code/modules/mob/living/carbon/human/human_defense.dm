@@ -19,6 +19,29 @@ meteor_act
 	def_zone = check_zone(def_zone)
 	if(!has_organ(def_zone))
 		return PROJECTILE_FORCE_MISS //if they don't have the organ in question then the projectile just passes by.
+	if(istype(P, /obj/item/projectile/energy) || istype(P, /obj/item/projectile/beam))
+		if shielded_energy >= 1
+			var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
+			spark_system.set_up(5, 0, user.loc)
+			spark_system.start()
+			playsound(user.loc, "sparks", 50, 1)
+			START_PROCESSING(SSobj, src)
+			user.visible_message("<span class='warning'>\The [P] refracts, bending into \the [user]'s field.</span>")
+			del(P)
+	if(istype(P, /obj/item/projectile/bullet)
+		if shielded_projectile >= 1
+			var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
+			spark_system.set_up(5, 0, user.loc)
+			spark_system.start()
+			playsound(user.loc, "sparks", 50, 1)
+			START_PROCESSING(SSobj, src)
+			user.visible_message("<span class='warning'>\The [P] shatters against \the [user]'s field.</span>")
+			del(P)
+
+
+
+
+
 	//Shields
 	var/shield_check = check_shields(P.damage, P, null, def_zone, "the [P.name]")
 	if(shield_check)
