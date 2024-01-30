@@ -29,7 +29,7 @@ meteor_act
 			user.visible_message("<span class='warning'>\The [P] refracts, bending into \the [user]'s field.</span>")
 			del(P)
 	if(user/shielded_projectile >= 1)
-		if(istype(P, /obj/item/projectile/bullet))
+		if(P.check_armour == "bullet")
 			var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
 			spark_system.set_up(5, 0, user.loc)
 			spark_system.start()
