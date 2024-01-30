@@ -173,7 +173,7 @@
 		if(!istype(H.wear_suit, /obj/item/clothing/suit/fire))
 			H.adjust_fire_stacks(10)
 			H.IgniteMob()
-		new /obj/flamer_fire(H.loc, 16, 12, "green", 2)
+		new /obj/flamer_fire/warp(H.loc, 16, 12, "green", 3)
 
 
 // FLESH MOUTH
