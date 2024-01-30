@@ -1,15 +1,19 @@
 //40k Edit: Added in Psyker abilities
 
+/obj/item/spellbook/psyker
+	spellbook_type = /datum/spellbook/psyker
+
 /datum/spellbook/psyker
 	name = "The Psyker's Primer"
 	feedback = "PS"
+	icon = 'icons/obj/library.dmi'
+	icon_state = "book1"
 	desc = "Covered in holy seals."
 	book_desc = "Learn the basics of your abilities."
 	title = "The Psyker's Primer"
 	title_desc = "Buy abilities using your available ability slots."
 	book_flags = CAN_MAKE_CONTRACTS|INVESTABLE
-	//max_uses = rand (2,6)
-	max_uses = 100
+	max_uses = rand (8,16)
 
 	spells = list(/spell/targeted/projectile/dumbfire/passage = 	1,
 				/spell/aoe_turf/knock = 							1,
