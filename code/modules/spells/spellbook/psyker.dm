@@ -14,7 +14,7 @@
 	title = "The Psyker's Primer"
 	title_desc = "Buy abilities using your available ability slots."
 	book_flags = CAN_MAKE_CONTRACTS|INVESTABLE
-	max_uses = rand (8,16)
+	max_uses = rand(8,16)
 	spells = list(/spell/targeted/projectile/dumbfire/passage = 	1,
 				/spell/aoe_turf/knock = 							1,
 				/spell/targeted/equip_item/shield = 				2,
