@@ -125,7 +125,7 @@
 	range = 9
 	max_casts = 1
 	compatible_targets = list(/atom)
-	hud_state = "wiz_bshard"
+	hud_state = "fireball"
 
 /spell/hand/charges/firebolt/cast_hand(var/atom/A,var/mob/user)
 	var/obj/item/projectile/firebolt/B = new(get_turf(user))
