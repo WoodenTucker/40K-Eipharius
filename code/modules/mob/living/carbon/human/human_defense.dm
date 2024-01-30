@@ -20,7 +20,7 @@ meteor_act
 	if(!has_organ(def_zone))
 		return PROJECTILE_FORCE_MISS //if they don't have the organ in question then the projectile just passes by.
 	if(user.shielded_energy >= 1)
-		if((P.check_armour == "laser") || (P.check_armour == "energy"))
+		if(P.check_armour == "energy")
 			var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
 			spark_system.set_up(5, 0, user.loc)
 			spark_system.start()
