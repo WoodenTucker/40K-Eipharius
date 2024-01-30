@@ -94,4 +94,4 @@
 		for(var/mob/M in src)
 			if(ishuman(M))
 				return
-		new /obj/flamer_fire/warp(src, 12, 10, "red", 2)
+		new /obj/flamer_fire/warp(src, 12, 10, "green", 2)
