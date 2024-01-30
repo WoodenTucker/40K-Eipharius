@@ -7,7 +7,7 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_hand = /obj/item/spellbook/psyker
-	r_hand = obj/item/gun/energy/staff/focus
+	r_hand = /obj/item/gun/energy/staff/focus
 	glasses = /obj/item/clothing/glasses/blacksun/psyker
 	belt = /obj/item/storage/belt/medical/apothecary
 	r_pocket = /obj/item/device/flashlight/lantern
