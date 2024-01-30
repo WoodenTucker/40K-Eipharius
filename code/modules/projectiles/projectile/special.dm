@@ -366,6 +366,21 @@
 	flame_color = "green"
 	canSpreadDir = NORTH | SOUTH | EAST | WEST
 
+/obj/flamer_fire/warp/Crossed(mob/living/M) //Only way to get it to reliable do it when you walk into it.
+	if(istype(M))
+		if(ishuman(M))
+			var/mob/living/carbon/human/H = M
+			ifistype(H.wear_suit, /obj/item/clothing/suit/wizrobe/psypurple)) //It's magic warpfire, so only Psykers (Denoted by the outfit for now) can survive
+				H.show_message(text("Your psyker powers protect you from the flames."),1)
+				H.adjustFireLoss(burnlevel*0.25) //Does small burn damage to a person wearing one of the suits.
+				return
+		M.adjust_fire_stacks(burnlevel) //Make it possible to light them on fire later.
+		if (prob(firelevel + 2*M.fire_stacks)) //the more soaked in fire you are, the likelier to be ignited
+			M.IgniteMob()
+
+		M.adjustFireLoss(round(burnlevel*0.5)) //This makes fire stronk.
+		to_chat(M, "<span class='danger'>You are burned!</span>")
+
 
 
 //this is the PHOSPHOR energy gun, its really fucking OP in lore because it burns through almost anything until they are dead, im not sure why the pain is so huge tho.
