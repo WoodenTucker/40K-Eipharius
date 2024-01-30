@@ -11,7 +11,7 @@
 	glasses = /obj/item/clothing/glasses/blacksun/psyker
 	belt = null
 	r_pocket = /obj/item/device/flashlight/lantern
-	id_type = /obj/item/card/id/dog_tag/guardsman
+	id_type = /obj/item/card/id/psyker
 	head = /obj/item/clothing/head/wizard/amp
 	l_pocket = /obj/item/storage/box/ifak/advanced
 	backpack_contents = list(
