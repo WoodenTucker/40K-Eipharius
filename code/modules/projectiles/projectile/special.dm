@@ -448,7 +448,7 @@
 	for(var/mob/living/I in loc)
 		if(istype(I,/mob/living/carbon/human))
 			var/mob/living/carbon/human/M = I
-			if(istype(istype(H.wear_suit, /obj/item/clothing/suit/wizrobe/psypurple))
+			if(istype(istype(H.wear_suit, /obj/item/clothing/suit/wizrobe/psypurple)))
 				H.show_message(text("Your Psyker powers protect you from the flames."),1)
 				return
 		I.adjust_fire_stacks(burnlevel) //If i stand in the fire I deserve all of this. Also warpfire stacks quickly.
