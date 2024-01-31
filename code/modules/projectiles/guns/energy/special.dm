@@ -88,8 +88,8 @@ obj/item/gun/energy/staff/focus
 	slot_flags = SLOT_BELT|SLOT_BACK
 	w_class = ITEM_SIZE_LARGE
 	projectile_type = /obj/item/projectile/forcebolt
-	/*
-	attack_self(mob/living/user as mob)
+
+	obj/item/gun/energy/staff/focus/attack_self(mob/living/user as mob)
 		if(projectile_type == /obj/item/projectile/forcebolt)
 			charge_cost = 400
 			to_chat(user, "<span class='warning'>The [src.name] will now strike a small area.</span>")
@@ -97,8 +97,8 @@ obj/item/gun/energy/staff/focus
 		else
 			charge_cost = 200
 			to_chat(user, "<span class='warning'>The [src.name] will now strike only a single person.</span>")
-			projectile_type = /obj/item/projectile/forcebolt"
-	*/
+			projectile_type = /obj/item/projectile/forcebolt
+
 
 
 /obj/item/gun/energy/phosphor

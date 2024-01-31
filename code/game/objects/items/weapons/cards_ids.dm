@@ -499,6 +499,25 @@ var/const/NO_EMAG_ACT = -50
 		final_name = final_name + " ([assignment])"
 	SetName(final_name)
 
+/obj/item/card/id/psyker
+	name = "Sanctioned Psyker dog tag"
+	desc = "A metal dog tag with the symol of the Adeptus Astra Telepathica engraved on the front, acting as a symbol of a Primaris Psyker's sanctioend nature, and an access tag.."
+	assignment = "Sanctioned Psyker"
+	icon_state = "tagred"
+	item_state = "tagred"
+	access = list(access_security, access_guard_common, access_magi, access_armory,
+			            access_village, access_all_personal_lockers,
+			            access_mechanicus, access_mining, access_medical,
+			            access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway)
+
+/obj/item/card/id/psyker/update_name()
+	var/final_name = "[registered_name]"
+	if(military_rank && military_rank.name_short)
+		final_name = military_rank.name_short + " " + final_name
+	if(assignment)
+		final_name = final_name + " ([assignment])"
+	SetName(final_name)
+
 /obj/item/card/id/commissar/spare
 	name = "commissar's spare dog tag"
 	desc = "A spare dog tag with a winged skull engraved on it's opposite side, representing honor of the Officio Prefectum and Commissar."

@@ -22,7 +22,7 @@ var/datum/antagonist/wizard/wizards
 	..()
 	wizards = src
 
-/datum/antagonist/wizard/create_objectives(var/datum/mind/wizard)
+/*/datum/antagonist/wizard/create_objectives(var/datum/mind/wizard)
 
 	if(!..())
 		return
@@ -63,14 +63,15 @@ var/datum/antagonist/wizard/wizards
 		var/datum/objective/hijack/hijack_objective = new
 		hijack_objective.owner = wizard
 		wizard.objectives |= hijack_objective
-	return
+	return*/
 
 /datum/antagonist/wizard/update_antag_mob(var/datum/mind/wizard)
 	..()
 	wizard.store_memory("<B>Remember:</B> do not forget to prepare your spells.")
-	wizard.current.real_name = "[pick(GLOB.wizard_first)] [pick(GLOB.wizard_second)]"
+	//wizard.current.real_name = "[pick(GLOB.wizard_first)] [pick(GLOB.wizard_second)]"
 	wizard.current.SetName(wizard.current.real_name)
 
+/*
 /datum/antagonist/wizard/equip(var/mob/living/carbon/human/player)
 
 	player.equip_to_slot_or_del(new /obj/item/(src), slot_r_hand)
@@ -86,7 +87,7 @@ var/datum/antagonist/wizard/wizards
 		break
 	if(!survivor)
 		feedback_set_details("round_end_result","loss - psyker killed") ////40k Edit: Corrected name
-		to_world("<span class='danger'><font size = 3>The [(current_antagonists.len>1)?"[role_text_plural] have":"[role_text] has"] been killed by the crew! The Space Wizards Federation has been taught a lesson they will not soon forget!</font></span>")
+		to_world("<span class='danger'><font size = 3>The [(current_antagonists.len>1)?"[role_text_plural] have":"[role_text] has"] been killed by the crew! The Space Wizards Federation has been taught a lesson they will not soon forget!</font></span>")*/
 
 
 /datum/antagonist/wizard/print_player_summary()
