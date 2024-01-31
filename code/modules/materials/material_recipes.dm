@@ -181,7 +181,7 @@
 
 /material/biomass/generate_recipes()
 	..()
-	recipes += new/datum/stack_recipe("Fleshborer Rifle", /obj/item/gun/energy/tyranid/fleshborerr, 12, 1, 1, 10)
+	recipes += new/datum/stack_recipe("Fleshborer Rifle", /obj/item/gun/energy/tyranid/fleshborer, 12, 1, 1, 10)
 	recipes += new/datum/stack_recipe("Bone Sword", /obj/item/melee/tyranid/sword, 8, 1, 1, 10)
 	recipes += new/datum/stack_recipe("Tyranid Sting", /obj/item/melee/tyranid/stinger, 8, 1, 1, 10)
 	recipes += new/datum/stack_recipe("Spike Rifle", /obj/item/gun/energy/tyranid/spike, 20, 1, 1, 10)
