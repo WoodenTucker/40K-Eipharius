@@ -98,8 +98,7 @@
 	bowels = -INFINITY
 	gsc = 1
 	add_stats(rand(6,6),rand(14,16),rand(10,16),20)
-	var/datum/heretic_deity/hivemind/N = GOD(GOD_HIVEMIND)
-		N.join_request(src)
+
 
 
 
@@ -280,6 +279,8 @@
 	src.health = 250
 	src.maxHealth = 250
 	src.warfare_language_shit(LANGUAGE_TYRANID)
+	var/datum/heretic_deity/hivemind/N = GOD(GOD_HIVEMIND)
+		N.join_request(src)
 	src.verbs -= /mob/living/carbon/human/genestealer/proc/givestealerstats //removes verb at the end so they can't spam it for whatever reason
 
 /mob/living/carbon/human/genestealer/proc/gsheal()
