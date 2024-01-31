@@ -179,6 +179,8 @@
 	T.adjustToxLoss(-10)
 	T.adjustBrainLoss(-10)
 	T.inject_blood(src, 500)
+	var/datum/heretic_deity/hivemind/N = GOD(GOD_HIVEMIND)
+		N.join_request(T)
 	return 1
 
 /mob/living/carbon/human/genestealer/proc/ripperswarm() // ok
