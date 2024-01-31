@@ -60,7 +60,7 @@
 
 /obj/item/clothing/rosarius/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(istype(damage_source, /obj/item/projectile))
-		if(shield_count > 0 && prob(70))
+		if(shield_count > 0)
 			var/obj/item/projectile/P = damage_source
 			//var/reflectchance = 100 //Defined here, for if you want to make it have X percent chance of blocking the shot,
 			var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
@@ -117,7 +117,7 @@
 
 /obj/item/clothing/rosette/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(istype(damage_source, /obj/item/projectile)) 
-		if(shield_count >= 0 && prob(80))
+		if(shield_count > 0)
 			var/obj/item/projectile/P = damage_source
 			//var/reflectchance = 100 //Defined here, for if you want to make it have X percent chance of blocking the shot,
 			var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
@@ -200,8 +200,8 @@
 		return PROJECTILE_FORCE_MISS
 	return 0
 
-/*/obj/item/clothing/accessory/displacer/emp_act(mob/user, severity)
-	active = 0
+/*/obj/item/clothing/accessory/displacer/D/emp_act(mob/user, severity)
+	D.active = 0
 	to_chat(user, "<span class='danger'>The displacer field malfunctions, throwing you carelessly through the Warp!.</span>")
 	spark_system.set_up(5, 0, user.loc)
 	spark_system.start()
