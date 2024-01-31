@@ -118,14 +118,14 @@
 			channel_name = "Mining Daily"
 			author = "Reporter Susan Boyle"
 
-			message = {"Recent reports of a mine collapse have resulted in significant drops in share prices for Auramite Mining corpoTations\. Mine representative A. Falston refused to comment. More on this at 6."}
+			message = {"Recent reports of a mine collapse have resulted in significant drops in share prices for Auramite Mining corporations. Mine representative A. Falston refused to comment. More on this at 6."}
 			round_time = 60 * 80
 
 		medical
 			channel_name = "Ferrum News"
 			author = "Reporter UNIT-1821"
 
-			message = {"Men of Iron have been permitted to assist in surgical operations of a number of xenobiological speciments, followign the groundbreaking "Titanium Laws", which permitted a far greater run of freedom.\
+			message = {"Men of Iron have been permitted to assist in surgical operations of a number of xenobiological speciments, followign the groundbreaking "Titanium Laws", which permitted a far greater run of freedom.
 			A spokesperson for the Terran Federation stated that they were "Surprised but pleased" by the recent run of support."}
 			round_time = 60 * 100
 
