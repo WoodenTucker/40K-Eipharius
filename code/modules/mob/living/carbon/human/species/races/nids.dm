@@ -98,6 +98,8 @@
 	bowels = -INFINITY
 	gsc = 1
 	add_stats(rand(6,6),rand(14,16),rand(10,16),20)
+	var/datum/heretic_deity/hivemind/N = GOD(GOD_HIVEMIND)
+		N.join_request(src)
 
 
 
