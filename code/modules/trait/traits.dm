@@ -10,6 +10,15 @@
 	name = "child"
 	description = "I strip corpses faster than the adults, and landmines don't bother me!"
 
+/datum/trait/timestop_immune
+	name = "Immune to Timestop"
+	description = "I am immune to stopped time, through temporal mischief."
+
+/datum/trait/timeslowimmune
+	name = "Immune to Timeslowdown"
+	description = "I am immune to slowed down time, through improved reaction speeds, or temporal mischief."
+
+
 /mob/living/proc/has_trait(var/datum/trait/this_trait)
 	return istype(trait, this_trait)
 
