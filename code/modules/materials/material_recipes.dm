@@ -179,3 +179,11 @@
 	recipes += new/datum/stack_recipe("scrap wall", /turf/simulated/wall/stone, 5, 1, 1, 20, on_floor = 1)
 */
 
+/material/biomass/generate_recipes()
+	..()
+	recipes += new/datum/stack_recipe("Fleshborer Rifle", /obj/item/gun/energy/tyranid/fleshborerr, 12, 1, 1, 10)
+	recipes += new/datum/stack_recipe("Bone Sword", /obj/item/melee/tyranid/sword, 8, 1, 1, 10)
+	recipes += new/datum/stack_recipe("Tyranid Sting", /obj/item/melee/tyranid/stinger, 8, 1, 1, 10)
+	recipes += new/datum/stack_recipe("Spike Rifle", /obj/item/gun/energy/tyranid/spike, 20, 1, 1, 10)
+	recipes += new/datum/stack_recipe("Bio Shield", /obj/item/shield/tyranid, 12, 1, 1, 10)
+
