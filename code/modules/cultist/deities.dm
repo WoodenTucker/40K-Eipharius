@@ -130,6 +130,10 @@
 	rune_type = /obj/effect/cleanable/heretic_rune/hivemind
 	faction = "Tyranids"
 	inherent_verbs = list(/mob/living/carbon/human/proc/givegenestuff)
+	rune_recipes = list(
+						/datum/rune_recipe/hivemind/biomass,
+						/datum/rune_recipe/hivemind/biomass/organ,
+						/datum/rune_recipe/hivemind/biomass/limb)
 
 /datum/heretic_deity/hivemind/post_add(mob/living/carbon/human/NewMember)
 	GLOB.hivemind_cult++
