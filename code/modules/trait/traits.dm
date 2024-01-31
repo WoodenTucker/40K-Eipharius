@@ -14,7 +14,7 @@
 	name = "Immune to Timestop"
 	description = "I am immune to stopped time, through temporal mischief."
 
-/datum/trait/timeslowimmune
+/datum/trait/timeslow_immune
 	name = "Immune to Timeslowdown"
 	description = "I am immune to slowed down time, through improved reaction speeds, or temporal mischief."
 
