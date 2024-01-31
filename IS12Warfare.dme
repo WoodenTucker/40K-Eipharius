@@ -1427,6 +1427,7 @@
 #include "code\modules\cultist\effects\slaanesh.dm"
 #include "code\modules\cultist\effects\slaanesharm.dm"
 #include "code\modules\cultist\effects\tzeentch.dm"
+#include "code\modules\cultist\runes\hivemind.dm"
 #include "code\modules\cultist\runes\illusion.dm"
 #include "code\modules\cultist\runes\khorne.dm"
 #include "code\modules\cultist\runes\nganga.dm"
