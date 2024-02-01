@@ -12660,6 +12660,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/roguet)
+"SY" = (
+/obj/machinery/firealarm,
+/obj/effect/floor_decal/newcorner/mine_walls{
+	icon_state = "02";
+	dir = 6
+	},
+/turf/simulated/wall/concrete,
+/area/cadiaoutpost/oa/service/hab/inside)
 "SZ" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 4
@@ -39914,7 +39922,7 @@ ND
 Jp
 ND
 ND
-yF
+SY
 sa
 Jh
 KD
