@@ -41,11 +41,13 @@
 	name = "ice"
 	icon = 'icons/turf/snow.dmi'
 	icon_state = "ice"
+	movement_delay = 0.8
 
 /turf/simulated/floor/exoplanet/snow
 	name = "snow"
 	icon = 'icons/turf/snow.dmi'
 	icon_state = "snow"
+	movement_delay = 0.07
 
 /turf/simulated/floor/exoplanet/snow/New()
 	icon_state = pick("snow[rand(1,12)]","snow0")
