@@ -2049,6 +2049,8 @@
 	},
 /obj/structure/table/graf/reinf_table,
 /obj/item/book/manual/law,
+/obj/item/paper/administratum/psyker,
+/obj/item/paper/administratum/psyker,
 /turf/simulated/floor/factory_floor{
 	dir = 8
 	},
@@ -3403,12 +3405,12 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "dPN" = (
-/obj/item/stamp/ward,
 /obj/item/stamp/denied{
 	pixel_x = -8
 	},
 /obj/effect/floor_decal/spline/fancy/wood/corner,
 /obj/structure/table/graf/reinf_table,
+/obj/item/stamp/hop,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
 "dQb" = (
@@ -6448,6 +6450,10 @@
 	pixel_y = 7;
 	pixel_x = 8
 	},
+/obj/item/stamp/ward,
+/obj/item/stamp/denied{
+	pixel_y = 10
+	},
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 8
 	},
@@ -8825,6 +8831,9 @@
 	icon_state = "wood_1tilethick";
 	dir = 4
 	},
+/obj/item/fluff_items/paperwork,
+/obj/item/paper/administratum/theta,
+/obj/item/paper/administratum/theta,
 /turf/simulated/floor/fancyfloor/carpet/blue/middle,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "jrA" = (
@@ -12326,6 +12335,10 @@
 	},
 /obj/structure/table/graf/reinf_table,
 /obj/item/book/manual/law,
+/obj/item/paper/administratum/abhuman,
+/obj/item/paper/administratum/abhuman,
+/obj/item/paper/administratum/psyker,
+/obj/item/paper/administratum/psyker,
 /turf/simulated/floor/factory_floor{
 	dir = 8
 	},
@@ -15547,7 +15560,8 @@
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "qmv" = (
 /obj/machinery/door/unpowered/jail_door{
-	req_one_access = list()
+	req_one_access = list(63,10,331,1984);
+	req_access = list()
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -17284,7 +17298,8 @@
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "sbi" = (
 /obj/machinery/door/unpowered/jail_door{
-	req_one_access = list()
+	req_one_access = list(63,10,331,1984);
+	req_access = list()
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 1
@@ -18428,7 +18443,8 @@
 /area/cadiaoutpost/new_hive/caves)
 "tpc" = (
 /obj/machinery/door/unpowered/jail_door{
-	req_one_access = list()
+	req_one_access = list(63,10,331,1984);
+	req_access = list()
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 1

@@ -12,23 +12,23 @@
 	attack_verb = list("stamped")
 
 /obj/item/stamp/captain
-	name = "captain's rubber stamp"
+	name = "Planetary Governor Stamp"
 	icon_state = "stamp-cap"
 
 /obj/item/stamp/hop
-	name = "Seneschal's rubber stamp"
+	name = "Administratum Stamp"
 	icon_state = "stamp-hop"
 
 /obj/item/stamp/hos
-	name = "Commissar's rubber stamp"
+	name = "Commissar's Stamp"
 	icon_state = "stamp-hos"
 
 /obj/item/stamp/ward
-	name = "warden's rubber stamp"
+	name = "Deacon's Stamp"
 	icon_state = "stamp-ward"
 
 /obj/item/stamp/ce
-	name = "Magos's rubber stamp"
+	name = "Magos's Stamp"
 	icon_state = "stamp-ce"
 
 /obj/item/stamp/rd
