@@ -89,3 +89,7 @@
 	ingredients = list(/obj/item/cell/lasgun)
 	product_path =  (/obj/item/gun/energy/WarpLens)
 
+/datum/rune_recipe/tzeentch/tome
+	name = "Tome Refractation"
+	ingredients = list(/obj/item/gun/energy/WarpLens, /obj/item/melee/Tzbook)
+	product_path =  (/obj/item/gun/energy/WarpLens)

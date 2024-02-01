@@ -16,25 +16,51 @@
 
 	var/list/wizardy_spells = list()
 
+/mob/living/simple_animal/familiar/proc/request_player() //reqs the player
+	for(var/mob/observer/ghost/O in GLOB.player_list)
+		if(O.client)
+			question(O.client)
+
+/mob/living/simple_animal/familiar/proc/question(var/client/C) //asks the questions
+	if(!C)
+		return FALSE
+	var/response = alert(C, "A foul familiar from the warp has been summoned. Will you reside within it?", "Familiar", "Yes", "No",)
+	if(!C || ckey)
+		return FALSE
+	if(response == "Yes")
+		transfer_personality(C)
+		return TRUE
+	return FALSE
+
+/mob/living/simple_animal/familiar/proc/transfer_personality(var/client/candidate) //puts the guy in the place
+
+	if(!candidate)
+		return
+
+	src.mind = candidate.mob.mind
+	src.ckey = candidate.ckey
+	if(src.mind)
+
 /mob/living/simple_animal/familiar/New()
 	..()
 	add_language(LANGUAGE_GALCOM)
+	offer_mob()
 	for(var/spell in wizardy_spells)
 		src.add_spell(new spell, "const_spell_ready")
 
 /mob/living/simple_animal/familiar/carcinus
-	name = "carcinus"
-	desc = "A small crab said to be made of stone and starlight."
+	name = "Carcinus"
+	desc = "A small crab said to be made of warpstone and moonlight."
 	icon = 'icons/mob/animal.dmi'
 	icon_state = "evilcrab"
 	icon_living = "evilcrab"
 	icon_dead = "evilcrab_dead"
 
-	speak_emote = list("chitters","clicks")
+	speak_emote = list("chitters","clicks","sizzles")
 
 
-	health = 200
-	maxHealth = 200
+	health = 230
+	maxHealth = 300
 	melee_damage_lower = 10
 	melee_damage_upper = 15
 	attacktext = "pinches"
@@ -44,8 +70,8 @@
 */
 
 /mob/living/simple_animal/familiar/pike
-	name = "space pike"
-	desc = "A bigger, more magical cousin of the space carp."
+	name = "Vol'Thurian"
+	desc = "A warpborn predator known for its Tenacity."
 
 	icon = 'icons/mob/spaceshark.dmi'
 	icon_state = "shark"
@@ -68,7 +94,7 @@
 	return 1	//No drifting in space for space carp!	//original comments do not steal
 
 /mob/living/simple_animal/familiar/horror
-	name = "horror"
+	name = "Rotfloater"
 	desc = "Looking at it fills you with dread."
 	icon = 'icons/mob/mob.dmi'
 	icon_state = "horror"
@@ -95,7 +121,7 @@
 
 
 /mob/living/simple_animal/familiar/minor_amaros
-	name = "minor amaros"
+	name = "Amaros"
 	desc = "A small fluffy alien creature."
 	icon = 'icons/mob/mob.dmi'
 	icon_state = "baby roro"
