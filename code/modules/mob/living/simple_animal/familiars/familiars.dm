@@ -16,12 +16,20 @@
 
 	var/list/wizardy_spells = list()
 
-/mob/living/simple_animal/familiar/proc/request_player() //reqs the player
+
+/mob/living/simple_animal/familiar/New()
+	..()
+	add_language(LANGUAGE_GALCOM)
+	offer_mob()
+	for(var/spell in wizardy_spells)
+		src.add_spell(new spell, "const_spell_ready")
+
+	/mob/living/simple_animal/familiar/proc/request_player() //reqs the player
 	for(var/mob/observer/ghost/O in GLOB.player_list)
 		if(O.client)
 			question(O.client)
 
-/mob/living/simple_animal/familiar/proc/question(var/client/C) //asks the questions
+	/mob/living/simple_animal/familiar/proc/question(var/client/C) //asks the questions
 	if(!C)
 		return FALSE
 	var/response = alert(C, "A foul familiar from the warp has been summoned. Will you reside within it?", "Familiar", "Yes", "No",)
@@ -32,21 +40,13 @@
 		return TRUE
 	return FALSE
 
-/mob/living/simple_animal/familiar/proc/transfer_personality(var/client/candidate) //puts the guy in the place
+	/mob/living/simple_animal/familiar/proc/transfer_personality(var/client/candidate) //puts the guy in the place
 
-	if(!candidate)
-		return
+		if(!candidate)
+			return
 
-	src.mind = candidate.mob.mind
-	src.ckey = candidate.ckey
-	if(src.mind)
-
-/mob/living/simple_animal/familiar/New()
-	..()
-	add_language(LANGUAGE_GALCOM)
-	offer_mob()
-	for(var/spell in wizardy_spells)
-		src.add_spell(new spell, "const_spell_ready")
+		src.mind = candidate.mob.mind
+		src.ckey = candidate.ckey
 
 /mob/living/simple_animal/familiar/carcinus
 	name = "Carcinus"
@@ -56,7 +56,7 @@
 	icon_living = "evilcrab"
 	icon_dead = "evilcrab_dead"
 
-	speak_emote = list("chitters","clicks","sizzles")
+	speak_emote = list("chitters","clicks","resonates")
 
 
 	health = 230
@@ -79,7 +79,7 @@
 	icon_dead = "shark_dead"
 	pixel_x = -16
 
-	speak_emote = list("gnashes")
+	speak_emote = list("gnashes", "growls")
 
 	health = 100
 	maxHealth = 100
@@ -94,7 +94,7 @@
 	return 1	//No drifting in space for space carp!	//original comments do not steal
 
 /mob/living/simple_animal/familiar/horror
-	name = "Rotfloater"
+	name = "Rot Floater"
 	desc = "Looking at it fills you with dread."
 	icon = 'icons/mob/mob.dmi'
 	icon_state = "horror"

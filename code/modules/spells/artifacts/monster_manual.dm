@@ -8,16 +8,12 @@
 	w_class = ITEM_SIZE_SMALL
 	var/uses = 1
 	var/temp = null
-	var/list/monster = list(/mob/living/simple_animal/familiar/pet/cat,
-							/mob/living/simple_animal/familiar/pet/mouse,
-							/mob/living/simple_animal/familiar/carcinus,
+	var/list/monster = list(/mob/living/simple_animal/familiar/carcinus,
 							/mob/living/simple_animal/familiar/horror,
 							/mob/living/simple_animal/familiar/minor_amaros,
 							/mob/living/simple_animal/familiar/pike
 							)
-	var/list/monster_info = list(   "It is well known that the blackest of cats make good familiars.",
-									"Mice are full of mischief and magic. A simple animal, yes, but an excellent spy",
-									"One of many fragments from the original Carcinus Daemon, it is said their shells are near impenetrable and their claws as sharp as knives.",
+	var/list/monster_info = list(   "One of many fragments from the Carcinus Daemon, it is said their shells are near impenetrable and their claws as sharp as knives.",
 									"A Daemon of Rot and Eldrich Magic, it is made from the repurposed flesh of a Poxwalker",
 									"A small daemon known for its healing powers and pacifist ways... perhaps more then meets the eye.",
 									"A warpchanged Predator, known to hunt their prey in the Warp even after death."
