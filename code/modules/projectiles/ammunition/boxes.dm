@@ -8,6 +8,91 @@
 	max_ammo = 6
 	multiple_sprites = 1
 
+/obj/item/ammo_magazine/a357/ap
+	name = "AP speed loader (.357)"
+	desc = "An armor piercing speed loader for revolvers."
+	icon_state = "38"
+	caliber = "357"
+	ammo_type = /obj/item/ammo_casing/a357/ap
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	max_ammo = 6
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/a357/ms
+	name = "MS speed loader (.357)"
+	desc = "A man stopper speed loader for revolvers."
+	icon_state = "38"
+	caliber = "357"
+	ammo_type = /obj/item/ammo_casing/a357/ms
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	max_ammo = 6
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/a357/kp
+	name = "KP speed loader (.357)"
+	desc = "A kraken penetrator speed loader for revolvers."
+	icon_state = "38"
+	caliber = "357"
+	ammo_type = /obj/item/ammo_casing/a357/kp
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	max_ammo = 6
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/c50
+	name = "speed loader (.50)"
+	desc = "A speed loader for revolvers."
+	icon_state = "38"
+	caliber = ".50"
+	ammo_type = /obj/item/ammo_casing/a50
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	max_ammo = 6
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/c50/ap
+	name = "AP speed loader (.50)"
+	desc = "An armor piercing speed loader for revolvers."
+	icon_state = "38"
+	caliber = ".50"
+	ammo_type = /obj/item/ammo_casing/a50/ap
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	max_ammo = 6
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/c50/ms
+	name = "MS speed loader (.50)"
+	desc = "A manstopper speed loader for revolvers."
+	icon_state = "38"
+	caliber = ".50"
+	ammo_type = /obj/item/ammo_casing/a50/ms
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	max_ammo = 6
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/c50/kp
+	name = "KP speed loader (.50)"
+	desc = "A kraken penetrator speed loader for revolvers."
+	icon_state = "38"
+	caliber = ".50"
+	ammo_type = /obj/item/ammo_casing/a50/kp
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	max_ammo = 6
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/c38
+	name = "speed loader (.38)"
+	desc = "A speed loader for revolvers."
+	icon_state = "38"
+	caliber = "38"
+	matter = list(DEFAULT_WALL_MATERIAL = 360)
+	ammo_type = /obj/item/ammo_casing/c38
+	max_ammo = 6
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/c38/rubber
+	name = "speed loader (.38, rubber)"
+	icon_state = "R38"
+	ammo_type = /obj/item/ammo_casing/c38/rubber
+
 /obj/item/ammo_magazine/c44
 	name = "speed loader (.44 magnum)"
 	desc = "A speed loader for revolvers."
@@ -28,6 +113,11 @@
 	desc = "An MS speed loader for revolvers."
 	ammo_type = /obj/item/ammo_casing/c44/ms
 
+/obj/item/ammo_magazine/c44/kp
+	name = "KP speed loader (.44 magnum)"
+	desc = "An KP speed loader for revolvers."
+	ammo_type = /obj/item/ammo_casing/c44/kp
+
 /obj/item/ammo_magazine/c44/rubber
 	name = "speed loader (.44 magnum, rubber)"
 	icon_state = "R38"
@@ -46,6 +136,18 @@
 
 /obj/item/ammo_magazine/mc9mm/empty
 	initial_ammo = 0
+
+/obj/item/ammo_magazine/mc9mm/ap
+	name = "AP magazine (9mm)"
+	ammo_type = /obj/item/ammo_casing/c9mm/ap
+
+/obj/item/ammo_magazine/mc9mm/ms
+	name = "MS magazine (9mm)"
+	ammo_type = /obj/item/ammo_casing/c9mm/ms
+
+/obj/item/ammo_magazine/mc9mm/kp
+	name = "KP magazine (9mm)"
+	ammo_type = /obj/item/ammo_casing/c9mm/kp
 
 /obj/item/ammo_magazine/smgmc9mm
 	name = "SMG magazine (9mm)"
@@ -90,6 +192,21 @@
 	max_ammo = 8
 	multiple_sprites = 1
 
+/obj/item/ammo_magazine/mc45mm/ms
+	name = "MS magazine (.45)"
+	desc = "A manstopper .45 magazine."
+	ammo_type = /obj/item/ammo_casing/c45/ms
+
+/obj/item/ammo_magazine/mc45mm/kp
+	name = "KP magazine (.45)"
+	desc = "A kraken penetrator .45 magazine."
+	ammo_type = /obj/item/ammo_casing/c45/kp
+
+/obj/item/ammo_magazine/mc45mm/ap
+	name = "AP magazine (.45)"
+	desc = "An armor piercing .45 magazine."
+	ammo_type = /obj/item/ammo_casing/c45/ap
+
 /obj/item/ammo_magazine/mc45mm/empty
 	initial_ammo = 0
 	icon_state = "45-0"
@@ -99,15 +216,15 @@
 
 /obj/item/ammo_magazine/a762
 	name = "magazine (7.62mm)"
-	icon_state = "auto_grim"
+	icon_state = "rsc"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
-	caliber = "763"
+	caliber = "a762"
 	matter = list(DEFAULT_WALL_MATERIAL = 1800)
-	ammo_type = /obj/item/ammo_casing/brifle
+	ammo_type = /obj/item/ammo_casing/a762
 	max_ammo = 20 //if we lived in a world where normal mags had 30 rounds, this would be a 20 round mag
 	multiple_sprites = 1
-/*
+
 /obj/item/ammo_magazine/a762/ap
 	name = "AP magazine (7.62mm)"
 	ammo_type = /obj/item/ammo_casing/a762/ap
@@ -115,7 +232,11 @@
 /obj/item/ammo_magazine/a762/ms
 	name = "MS magazine (7.62mm)"
 	ammo_type = /obj/item/ammo_casing/a762/ms
-*/
+
+/obj/item/ammo_magazine/a762/kp
+	name = "KP magazine (7.62mm)"
+	ammo_type = /obj/item/ammo_casing/a762/kp
+
 /obj/item/ammo_magazine/a762/empty
 	initial_ammo = 0
 
@@ -137,6 +258,16 @@
 	name = "LMG mag"
 	icon_state = "hmg"
 
+/obj/item/ammo_magazine/box/a556/mg08/ms
+	name = "MS LMG mag"
+	icon_state = "hmg"
+	ammo_type = /obj/item/ammo_casing/a556/ms
+
+/obj/item/ammo_magazine/box/a556/mg08/kp
+	name = "KP LMG mag"
+	icon_state = "hmg"
+	ammo_type = /obj/item/ammo_casing/a556/kp
+
 /obj/item/ammo_magazine/c556
 	name = "magazine (5.56mm)"
 	icon_state = "5556"
@@ -146,6 +277,18 @@
 	ammo_type = /obj/item/ammo_casing/a556
 	max_ammo = 30
 	multiple_sprites = 1
+
+/obj/item/ammo_magazine/c556/ap
+	name = "AP magazine (5.56mm)"
+	ammo_type = /obj/item/ammo_casing/a556/ap
+
+/obj/item/ammo_magazine/c556/kp
+	name = "KP magazine (5.56mm)"
+	ammo_type = /obj/item/ammo_casing/a556/kp
+
+/obj/item/ammo_magazine/c556/ms
+	name = "MS magazine (5.56mm)"
+	ammo_type = /obj/item/ammo_casing/a556/ms
 
 /obj/item/ammo_magazine/caps
 	name = "speed loader (caps)"
@@ -233,12 +376,12 @@
 /obj/item/ammo_magazine/ork/shoota/empty
 	initial_ammo = 0
 
-/*
+
 //-----SPECIAL BOLTER MAGS-----
 /obj/item/ammo_magazine/bolt_pistol_magazine/ms
 	name = "Metal Storm Boltpistol Magazine"
-	icon_state = "tinyersatz"
-	origin_tech = list(TECH_COMBAT = 4)
+	icon_state = "boltyp"
+	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
@@ -251,8 +394,8 @@
 
 /obj/item/ammo_magazine/bolt_rifle_magazine/ms
 	name = "Metal Storm Bolter Magazine"
-	icon_state = "ersatz"
-	origin_tech = list(TECH_COMBAT = 4)
+	icon_state = "bolty"
+	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
@@ -265,8 +408,8 @@
 
 /obj/item/ammo_magazine/bolt_pistol_magazine/kp
 	name = "Kraken Penetrator Boltpistol Magazine"
-	icon_state = "krakenersatz"
-	origin_tech = list(TECH_COMBAT = 4)
+	icon_state = "boltyp"
+	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
@@ -279,8 +422,8 @@
 
 /obj/item/ammo_magazine/bolt_rifle_magazine/kp
 	name = "Kraken Penetrator Bolter Magazine"
-	icon_state = "krakenersatz"
-	origin_tech = list(TECH_COMBAT = 4)
+	icon_state = "bolty"
+	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
@@ -290,17 +433,45 @@
 
 /obj/item/ammo_magazine/bolt_rifle_magazine/kp/empty
 	initial_ammo = 0
-*/
+
+/obj/item/ammo_magazine/bolt_rifle_magazine_astartes
+	name = "Astartes Bolter Magazine"
+	icon_state = "bolty"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	caliber = ".95"
+	w_class = ITEM_SIZE_NORMAL
+	matter = list(DEFAULT_WALL_MATERIAL = 5260)
+	ammo_type = /obj/item/ammo_casing/bolter/astartes
+	max_ammo = 30
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/bolt_rifle_magazine/kp/empty
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/bolt_pistol_magazine/astartes
+	name = "Astartes Boltpistol Magazine"
+	icon_state = "boltyp"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	caliber = ".95"
+	matter = list(DEFAULT_WALL_MATERIAL = 2260)
+	ammo_type = /obj/item/ammo_casing/bolter/astartes
+	max_ammo = 15
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/bolt_pistol_magazine/kp/empty
+	initial_ammo = 0
 
 /obj/item/ammo_magazine/melta
 	name = "Melta Canister"
 	icon_state = "flamer"
-	origin_tech = list(TECH_COMBAT = 6)
+	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = "melta"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	ammo_type = /obj/item/ammo_casing/melta
-	max_ammo = 5
+	max_ammo = 100
 	multiple_sprites = 0
 
 /obj/item/ammo_magazine/melta/empty
@@ -343,6 +514,33 @@
 	desc = "An ancient design for loading galvanic rifles. This one seems to have incendiary rounds loaded."
 	ammo_type = /obj/item/ammo_casing/galvanic/fire
 
+/obj/item/ammo_magazine/galvanic/emp
+	name = "galvanic rifle EMP loader"
+	desc = "An ancient design for loading galvanic rifles. This one seems to have emp rounds loaded."
+	ammo_type = /obj/item/ammo_casing/galvanic/emp
+
+/obj/item/ammo_magazine/galvanic/airburst
+	name = "galvanic rifle airburst loader"
+	desc = "An ancient design for loading galvanic rifles. This one seems to have airburst rounds loaded."
+	ammo_type = /obj/item/ammo_casing/galvanic/airburst
+
+/obj/item/ammo_magazine/galvanic/pain
+	name = "galvanic rifle stun loader"
+	desc = "An ancient design for loading galvanic rifles. This one seems to have stun rounds loaded."
+	ammo_type = /obj/item/ammo_casing/galvanic/pain
+
+
+/obj/item/ammo_magazine/pulsemag
+	name = "Pulse Matter Cartridge"
+	icon_state = "tinyersatz"
+	origin_tech = list(TECH_COMBAT = 3)
+	mag_type = MAGAZINE
+	caliber = "pmag"
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	ammo_type = /obj/item/ammo_casing/pmag
+	max_ammo = 45
+	multiple_sprites = 1
+
 /obj/item/ammo_magazine/radcarbine
 	name = "Radcarbine Magazine"
 	icon_state = "LMG-mag"
@@ -364,7 +562,7 @@
 	ammo_type = /obj/item/ammo_casing/radcarbine/radpistol
 	max_ammo = 10
 	multiple_sprites = 0
-/*
+
 /obj/item/ammo_magazine/exitus
 	name = "Exitus Rifle Magazine"
 	icon_state = "tinyersatz"
@@ -409,4 +607,4 @@
 	max_ammo = 5
 	multiple_sprites = 1
 
-*/
+

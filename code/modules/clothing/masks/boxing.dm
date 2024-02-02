@@ -37,3 +37,10 @@
 	desc = "Worn by robust fighters who are willing to do anything to win."
 	icon_state = "luchar"
 	item_state = "luchar"
+
+/obj/item/clothing/mask/grotmask
+	name = "Small backlava"
+	desc = "Designed to both hide identities and keep your face comfy and warm."
+	icon_state = "GRCmask"
+	item_state = "GRCmask"
+	pull_mask = 0

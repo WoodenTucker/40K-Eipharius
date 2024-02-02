@@ -31,7 +31,7 @@
 	name = "cluster hard drive"
 	desc = "A large storage cluster consisting of multiple hard drives for usage in high capacity storage systems. Has capacity of 2048 GQ."
 	power_usage = 500
-	origin_tech = list(TECH_DATA = 4, TECH_ENGINEERING = 4)
+	origin_tech = list(TECH_DATA = 3, TECH_ENGINEERING = 3)
 	max_capacity = 2048
 	icon_state = "hdd_cluster"
 	hardware_size = 3

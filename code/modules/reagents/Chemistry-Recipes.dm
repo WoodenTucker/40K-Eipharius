@@ -1452,7 +1452,7 @@
 	result_amount = 2
 
 /datum/chemical_reaction/syndicatebomb
-	name = "Bloodpact Bomb"
+	name = "Strange Bomb"
 	result = /datum/reagent/ethanol/syndicatebomb
 	required_reagents = list(/datum/reagent/ethanol/beer = 1, /datum/reagent/ethanol/whiskey_cola = 1)
 	result_amount = 2
@@ -1593,7 +1593,7 @@
 /datum/chemical_reaction/atepoine
 	name = "Atepoine"
 	result = /datum/reagent/atepoine
-	required_reagents = list(/datum/reagent/tricordrazine = 1, /datum/reagent/tramadol = 1, /datum/reagent/poo = 1) //we'll see if this is tough enough
+	required_reagents = list(/datum/reagent/tricordrazine = 1, /datum/reagent/tramadol = 1) //we'll see if this is tough enough
 	result_amount = 5
 
 /datum/chemical_reaction/trueblood

@@ -5,8 +5,8 @@
 	school = "conjuration"
 	charge_max = 600
 	spell_flags = NEEDSCLOTHES
-	invocation = "Scyar Nila!"
-	invocation_type = SpI_SHOUT
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	cooldown_min = 200 //100 deciseconds reduction per rank
 
 	smoke_spread = 1

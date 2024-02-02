@@ -10,11 +10,11 @@
 	throwforce = 1.0
 	throw_speed = 3
 	throw_range = 5
-	origin_tech = list(TECH_BIO = 3)
+	origin_tech = list(TECH_BIO = 4)
 	attack_verb = list("attacked", "slapped", "whacked")
 	relative_size = 60
-	max_damage = 120
-	sales_price = 20
+	max_damage = 135
+	sales_price = 25
 
 	var/can_use_mmi = TRUE
 	var/mob/living/carbon/brain/brainmob = null

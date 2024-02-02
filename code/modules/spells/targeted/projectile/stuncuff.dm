@@ -17,7 +17,7 @@
 	duration = 20
 	proj_step_delay = 1
 
-	amt_stunned = 6
+	amt_stunned = 1
 
 	hud_state = "wiz_cuff"
 

@@ -1008,3 +1008,7 @@ I said no!
 	items = list(
 	/obj/item/reagent_containers/food/snacks/meat/human)
 	result = /obj/item/reagent_containers/food/snacks/corpsestarch
+
+/datum/recipe/moonshine
+	reagents = list(/datum/reagent/sugar = 10, /datum/reagent/enzyme = 5)
+	result = /obj/item/reagent_containers/food/drinks/bottle/distillery

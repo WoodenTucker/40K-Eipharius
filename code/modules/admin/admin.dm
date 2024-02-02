@@ -1468,3 +1468,14 @@ datum/admins/var/obj/item/paper/admin/faxreply // var to hold fax replies in
 		qdel(P)
 		faxreply = null
 	return
+
+/datum/admins/proc/manage_free_slots()
+	var/list/jobs = list()
+	for (var/datum/job/J in SSjobs.occupations)
+		if (J.current_positions <= J.total_positions)
+			jobs += J.title
+	var/job = input("Please select job slot to free", "Free job slot")  as null|anything in jobs
+	if (job)
+		SSjobs.RemoveRole(job)
+		message_admins("A job slot for [job] has been opened by [key_name_admin(usr)]")
+		return

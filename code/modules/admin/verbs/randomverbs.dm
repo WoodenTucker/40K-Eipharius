@@ -874,3 +874,9 @@ Traitors and the like can also be revived with the previous role mostly intact.
 		src << browse(msg, "window=Player_class_check")
 	else
 		to_chat(src, "No matches for that class found.")
+
+/client/proc/cmd_admin_list_manage_jobs()
+	set category = "Admin"
+	set name = "Manage Job Slots"
+	set desc="manage the roles, add/remove them"
+	holder.manage_free_slots()

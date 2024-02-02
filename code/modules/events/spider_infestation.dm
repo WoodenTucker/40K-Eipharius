@@ -1,3 +1,4 @@
+/*
 /var/global/sent_spiders_to_station = 0
 
 /datum/event/spider_infestation
@@ -25,3 +26,4 @@
 		new /obj/effect/spider/spiderling(vent.loc)
 		vents -= vent
 		spawncount--
+*/

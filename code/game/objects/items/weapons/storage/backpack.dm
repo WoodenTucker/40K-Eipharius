@@ -20,7 +20,7 @@
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK
 	max_w_class = ITEM_SIZE_LARGE
-	max_storage_space = 12
+	max_storage_space = 22
 	var/is_satchel = FALSE //A bit hacky yeah, but satchels carry less so whatever.
 
 /obj/item/storage/backpack/equipped()
@@ -167,9 +167,9 @@
 
 /obj/item/storage/backpack/dufflebag/New()
 	..()
-	slowdown_per_slot[slot_back] = 3
-	slowdown_per_slot[slot_r_hand] = 1
-	slowdown_per_slot[slot_l_hand] = 1
+	slowdown_per_slot[slot_back] = 0.5
+	slowdown_per_slot[slot_r_hand] = 0.5
+	slowdown_per_slot[slot_l_hand] = 0.5
 
 /obj/item/storage/backpack/dufflebag/syndie
 	name = "black dufflebag"
@@ -178,7 +178,7 @@
 
 /obj/item/storage/backpack/dufflebag/syndie/New()
 	..()
-	slowdown_per_slot[slot_back] = 1
+	slowdown_per_slot[slot_back] = 0.4
 
 /obj/item/storage/backpack/dufflebag/syndie/med
 	name = "medical dufflebag"
@@ -218,13 +218,38 @@
 	name = "satchel"
 	desc = "A trendy looking satchel."
 	icon_state = "satchel-norm"
-	max_storage_space = DEFAULT_BOX_STORAGE
+	max_storage_space = DEFAULT_BOX_STORAGE +2
 	slot_flags = SLOT_BACK|SLOT_S_STORE//In your back or your second back slot. Backpacks can only go in the main one though.
 	is_satchel = TRUE
+
+/obj/item/storage/backpack/satchel/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.04
+	slowdown_per_slot[slot_r_hand] = 0.04
+	slowdown_per_slot[slot_l_hand] = 0.04
+
+/obj/item/storage/backpack/satchel/heavy
+	name = "heavy rucksack"
+	desc = "A heavy rucksack."
+	icon_state = "warfare_satchel"
+	max_storage_space = DEFAULT_BOX_STORAGE +4
+	slot_flags = SLOT_BACK|SLOT_S_STORE//In your back or your second back slot. Backpacks can only go in the main one though.
+	is_satchel = TRUE
+
+/obj/item/storage/backpack/satchel/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.08
+	slowdown_per_slot[slot_r_hand] = 0.08
+	slowdown_per_slot[slot_l_hand] = 0.08
 
 /obj/item/storage/backpack/satchel/warfare
 	desc = "Fit for war, and not much else."
 	icon_state = "warfare_satchel"
+
+/obj/item/storage/backpack/satchel/warfare/ogryn
+	name = "Ogryn Rucksack"
+	max_storage_space = DEFAULT_BACKPACK_STORAGE
+	canremove = 0
 
 /obj/item/storage/backpack/satchel/warfare/sisterofbattle
 	name = "Order of the Sacred Rose Powerpack"
@@ -232,7 +257,7 @@
 	icon_state = "sister"
 	item_state = "sister"
 	max_storage_space = DEFAULT_BACKPACK_STORAGE
-	canremove = 0
+	canremove = 1
 
 /obj/item/storage/backpack/satchel/warfare/sisterofbattle/mlsister
 	name = "Order of Our Martyred Lady Powerpack"
@@ -240,7 +265,7 @@
 	icon_state = "mlsister"
 	item_state = "mlsister"
 	max_storage_space = DEFAULT_BACKPACK_STORAGE
-	canremove = 0
+	canremove = 1
 
 
 /obj/item/storage/backpack/satchel/warfare/sisterofbattle/brsister
@@ -249,7 +274,7 @@
 	icon_state = "brsister"
 	item_state = "brsister"
 	max_storage_space = DEFAULT_BACKPACK_STORAGE
-	canremove = 0
+	canremove = 1
 
 /obj/item/storage/backpack/satchel/astartes
 	name = "Astartes Mark VII Powerpack"
@@ -257,7 +282,7 @@
 	item_icons = list(slot_back_str = 'icons/mob/32x40/storage.dmi')
 	icon_state = "ultrapack"
 	item_state = "ultrapack"
-	canremove = 0
+	canremove = 1
 	max_storage_space = DEFAULT_BACKPACK_STORAGE //backpack storage with satchel access.
 
 /obj/item/storage/backpack/satchel/astartes/ultramarine
@@ -265,6 +290,24 @@
 	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the XIIIth Chapter, Ultramarines."
 	icon_state = "ultrapack"
 	item_state = "ultrapack"
+
+/obj/item/storage/backpack/satchel/astartes/ultramarinenew
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the XIIIth Chapter, Ultramarines."
+	icon_state = "ultrab"
+	item_state = "ultrab"
+
+/obj/item/storage/backpack/satchel/astartes/emperorschildren
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the IIIrd Legion, Emperor's Children."
+	icon_state = "emperorscb"
+	item_state = "emperorscb"
+
+/obj/item/storage/backpack/satchel/astartes/alphalegion
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the XXth Legion, Alpha Legion."
+	icon_state = "alphalegb"
+	item_state = "alphalegb"
 
 /obj/item/storage/backpack/satchel/astartes/ravenguard
 	name = "Astartes Mark VII Powerpack"
@@ -277,6 +320,12 @@
 	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the IXth Chapter, Blood Angels."
 	icon_state = "bravpack"
 	item_state = "bravpack"
+
+/obj/item/storage/backpack/satchel/astartes/bloodangel/lamenter
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the IXth Chapter, Blood Angels."
+	icon_state = "lamenterb"
+	item_state = "lamenterb"
 
 /obj/item/storage/backpack/satchel/astartes/salamander
 	name = "Astartes Mark VII Powerpack"
@@ -449,6 +498,21 @@
 	desc = "Field ready kit, tried and tested through countless encounters."
 	icon_state = "kriegpack"
 	item_state = "kriegpack"
+
+/obj/item/storage/backpack/satchel/krieger/grenadier
+	desc = "An assembled kit for air filtration, weapon power supply, and basic storage. Perfect to bring with you into no man's land."
+	icon_state = "grenpack"
+	item_state = "grenpack"
+
+/obj/item/storage/backpack/satchel/maccabian
+	desc = "Field ready kit, tried and tested through countless encounters."
+	icon_state = "M_Backpack-Icon"
+	item_state = "M_Backpack-Icon"
+
+/obj/item/storage/backpack/satchel/maccabian/sergeant
+	desc = "Field ready kit, tried and tested through countless encounters."
+	icon_state = "M_SBackpack-Icon"
+	item_state = "M_SBackpack-Icon"
 
 /obj/item/storage/backpack/satchel/grey
 	name = "grey satchel"
@@ -662,4 +726,23 @@
 		usr.put_in_hands(new /obj/item/gun/energy/thallax/lightning(usr))
 
 
+/obj/item/storage/backpack/satchel/warfare/scion
+	name = "Tempestus Scion Power Pack"
+	desc = "Designed to power the armour systems and weapons of a Tempestus Scion near-indefinitely."
+	icon_state = "ScionBackpack"
+	item_state = "ScionBackpack"
+	canremove = FALSE
+	var/can_toggle = 1
+
+/obj/item/storage/backpack/satchel/warfare/scion/verb/togglelasgun()
+	set name = "Retrieve Hotshot Lasgun"
+	set category = "Lasgun"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+	else
+		to_chat(usr,"You retrieve your Hotshot Lasgun!")
+		usr.put_in_hands(new /obj/item/gun/energy/las/hotshot/power_pack(usr))
 

@@ -21,7 +21,7 @@
 
 		//DESTROYING STUFF AT THE EPICENTER
 		for(var/mob/living/M in orange(1,src))
-			qdel(M)
+		//	qdel(M) ((DISABLED FOR NOW TO PREVENT ACCIDENTAL ADMIN MURDER))
 		for(var/obj/O in orange(1,src))
 			qdel(O)
 		var/base_turf = get_base_turf_by_area(src)
@@ -31,13 +31,13 @@
 			ST.ChangeTurf(base_turf)
 
 		sleep(6)
-		grav(10, 4, 10, 0 )
+		grav(12, 8, 12, 0 )
 		sleep(6)
-		grav( 8, 4, 10, 0 )
+		grav( 16, 14, 20, 0 )
 		sleep(6)
-		grav( 9, 4, 10, 0 )
+		grav( 19, 14, 10, 0 )
 		sleep(6)
-		grav( 7, 3, 40, 1 )
+		grav( 14, 13, 40, 1 )
 		sleep(6)
 		grav( 5, 3, 40, 1 )
 		sleep(6)

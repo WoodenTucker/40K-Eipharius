@@ -326,7 +326,7 @@ obj/structure/closet/crate
 	icon_closed = "biohazard"
 	open_sound = 'sound/items/Deconstruct.ogg'
 	close_sound = 'sound/items/Deconstruct.ogg'
-	req_access = list(access_xenobiology)
+	req_one_access = list(access_xenobiology)
 	storage_types = CLOSET_STORAGE_ITEMS|CLOSET_STORAGE_MOBS
 
 /obj/structure/closet/crate/secure/biohazard/blanks/WillContain()
@@ -457,9 +457,6 @@ obj/structure/closet/crate
 	new /obj/item/pickaxe(src)
 	new /obj/item/grenade/frag/high_yield/homemade(src)
 	new /obj/item/grenade/frag/high_yield/homemade(src)
-	new /obj/item/grenade/frag/high_yield/homemade(src)
-	new /obj/item/grenade/frag/high_yield/homemade(src)
-	new /obj/item/grenade/frag/high_yield/homemade(src)
 
 /// END OF SPECIAL CRATE SECTION
 
@@ -488,9 +485,6 @@ obj/structure/closet/crate
 	icon_closed = "cargo1"
 
 /obj/structure/closet/crate/meat/New()
-	new /obj/item/reagent_containers/food/snacks/meat/rat_meat(src)
-	new /obj/item/reagent_containers/food/snacks/meat/rat_meat(src)
-	new /obj/item/reagent_containers/food/snacks/meat/rat_meat(src)
 	new /obj/item/reagent_containers/food/snacks/meat/grox(src)
 	new /obj/item/reagent_containers/food/snacks/meat/grox(src)
 	new /obj/item/reagent_containers/food/snacks/meat/grox(src)

@@ -191,6 +191,21 @@
 	return src.attack_hand(user)
 
 /obj/machinery/door/attack_hand(mob/user as mob)
+	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+	if (usr.a_intent == I_HURT)
+		playsound(src.loc, "doorknockhard", 80, 0)
+		usr.visible_message("<span class='danger'>\The [usr] bangs against \the [src]!</span>",
+							"<span class='danger'>You bang against \the [src]!</span>",
+							"You hear a banging sound.")
+		src.add_fingerprint(user)
+		return
+	else if (usr.a_intent == I_DISARM)
+		playsound(src.loc, "doorknock", 100, 0)
+		usr.visible_message("[usr.name] knocks on the [src.name].",
+							"You knock on the [src.name].",
+							"You hear a knocking sound.")
+		src.add_fingerprint(user)
+		return
 	return src.attackby(user, user)
 
 /obj/machinery/door/attack_tk(mob/user as mob)
@@ -263,7 +278,15 @@
 		var/obj/item/W = I
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 		if(W.damtype == BRUTE || W.damtype == BURN)
-			if(W.force < min_force)
+			if(W.can_door_force >= 1)
+				do_animate("spark")
+				user.visible_message("<span class='danger'>\The [user] begins to pry open \the [src] with \the [W]!</span>")
+				sleep(30)
+				user.visible_message("<span class='danger'>\The [user] pries open \the [src] with \the [W]!</span>")
+				open()
+				operating = -1
+				return
+			else if(W.force < min_force)
 				user.visible_message("<span class='danger'>\The [user] hits \the [src] with \the [W] with no visible effect.</span>")
 			else
 				user.visible_message("<span class='danger'>\The [user] forcefully strikes \the [src] with \the [W]!</span>")

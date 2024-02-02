@@ -130,103 +130,66 @@
 
 //NON DIRT BARRICADES
 
-/obj/structure/warfare/barricade
-	name = "barricade"
-	desc = "it stops you from moving"
+
+/obj/structure/barricade/wood
+	name = "wood boards"
+	desc = "boards covering a window"
 	icon = 'icons/obj/warfare.dmi'
+	icon_state = "wood"
+	throwpass = FALSE
+	anchored = TRUE
+	density = FALSE
 	plane = ABOVE_OBJ_PLANE
 	layer = BASE_ABOVE_OBJ_LAYER
+	var/health = 100
+
+/obj/structure/barrel1
+	name = "barrels"
+	desc = "An empty metal barrel"
+	icon = 'icons/obj/warfare.dmi'
+	icon_state = "one_b"
+	throwpass = TRUE
 	anchored = TRUE
+	density = FALSE
+	plane = ABOVE_OBJ_PLANE
+	layer = BASE_ABOVE_OBJ_LAYER
+	var/health = 100
 
-/obj/structure/warfare/barricade/concrete_barrier
-	name = "concrete barrier"
-	desc = "Very effective at blocking bullets, but it gets in the way."
-	icon_state = "concrete_block"
+/obj/structure/barrel2
+	name = "barrels"
+	desc = "An empty metal barrel"
+	icon = 'icons/obj/warfare.dmi'
+	icon_state = "two_b"
+	throwpass = TRUE
+	anchored = TRUE
+	density = FALSE
+	plane = ABOVE_OBJ_PLANE
+	layer = BASE_ABOVE_OBJ_LAYER
+	var/health = 100
 
+/obj/structure/barrel3
+	name = "barrels"
+	desc = "An empty metal barrel"
+	icon = 'icons/obj/warfare.dmi'
+	icon_state = "three_b"
+	throwpass = TRUE
+	anchored = TRUE
+	density = FALSE
+	plane = ABOVE_OBJ_PLANE
+	layer = BASE_ABOVE_OBJ_LAYER
+	var/health = 100
 
-/obj/structure/warfare/barricade/New()
-	..()
-	if(dir == SOUTH)
-		plane = ABOVE_HUMAN_PLANE
-
-
-/obj/structure/warfare/barricade/CheckExit(atom/movable/O, turf/target)
-	if(istype(O, /obj/item/projectile))//Blocks bullets unless you're ontop of it.
-		var/obj/item/projectile/proj = O
-		if(proj.firer.resting)//No resting and shooting over these.
-			qdel(proj)
-			return FALSE
-		if(proj.firer && Adjacent(proj.firer))
-			return TRUE
-	if(get_dir(loc, target) & dir)
-		return FALSE
-	else
-		return TRUE
-
-/obj/structure/warfare/barricade/CanPass(atom/movable/mover, turf/target)
-	if(istype(mover, /obj/item/projectile))//Blocks bullets unless you're ontop of it.
-		var/obj/item/projectile/proj = mover
-
-		if(proj.firer.resting)//No resting and shooting over these.
-			return FALSE
-
-		if(proj.firer && Adjacent(proj.firer))
-			return TRUE
-
-		if (get_dist(proj.starting, loc) <= 1)
-			return TRUE
-
-		return FALSE
-
-	var/obj/structure/S = locate(/obj/structure) in get_turf(mover)
-	if(S && !(S.atom_flags & ATOM_FLAG_CHECKS_BORDER) && isliving(mover)) //Climbable objects allow you to universally climb over others
-		return TRUE
-
-	if(get_dir(loc, target) & dir)
-		return FALSE
-	else
-		return TRUE
-
-
-//Bullshit snowflake stuff for climbing over it.
-/obj/structure/warfare/barricade/do_climb(var/mob/living/user)
-	if(!can_climb(user))
-		return
-
-	user.visible_message("<span class='warning'>[user] starts climbing onto \the [src]!</span>")
-	climbers |= user
-
-	if(!do_after(user,(issmall(user) ? 20 : 30)))
-		climbers -= user
-		return
-
-	if(!can_climb(user, post_climb_check=1))
-		climbers -= user
-		return
-
-	if(!neighbor_turf_passable())
-		to_chat(user, "<span class='danger'>You can't climb there, the way is blocked.</span>")
-		climbers -= user
-		return
-
-	if(get_turf(user) == get_turf(src))
-		user.forceMove(get_step(src, src.dir))
-	else
-		user.forceMove(get_turf(src))
-
-	user.visible_message("<span class='warning'>[user] climbed over \the [src]!</span>")
-	climbers -= user
-
-/obj/structure/warfare/barricade/can_climb(var/mob/living/user, post_climb_check=0)
-	if (!(atom_flags & ATOM_FLAG_CLIMBABLE) || !can_touch(user) || (!post_climb_check && (user in climbers)))
-		return FALSE
-
-	if (!user.Adjacent(src))
-		to_chat(user, "<span class='danger'>You can't climb there, the way is blocked.</span>")
-		return FALSE
-
-	return TRUE
-
+/obj/structure/barrel4
+	name = "barrels"
+	desc = "An empty metal barrel"
+	icon = 'icons/obj/warfare.dmi'
+	icon_state = "four_b"
+	throwpass = TRUE
+	anchored = TRUE
+	density = FALSE
+	plane = ABOVE_OBJ_PLANE
+	layer = BASE_ABOVE_OBJ_LAYER
+	var/health = 100
 
 //BARBWIRE
 
@@ -303,7 +266,7 @@
 				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
 				if (affecting.status & ORGAN_ROBOT)
 					return
-				if (affecting.take_damage(18, FALSE))
+				if (affecting.take_damage(15, FALSE))
 					H.UpdateDamageIcon()
 				H.updatehealth()
 				to_chat(H, "<span class = 'red'><b>Your [affecting.name] gets cut by \the [src]!</b></span>")
@@ -312,7 +275,7 @@
 				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
 				if (affecting.status & ORGAN_ROBOT)
 					return
-				if (affecting.take_damage(24, FALSE))
+				if (affecting.take_damage(20, FALSE))
 					H.UpdateDamageIcon()
 				H.updatehealth()
 				to_chat(H, "<span class = 'red'><b>Your [affecting.name] gets torn by \the [src]!</b></span>")
@@ -321,7 +284,7 @@
 				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
 				if (affecting.status & ORGAN_ROBOT)
 					return
-				if (affecting.take_damage(26, FALSE))
+				if (affecting.take_damage(24, FALSE))
 					H.UpdateDamageIcon()
 				H.updatehealth()
 				to_chat(H, "<span class = 'red'><b>Your [affecting.name] gets deeply cut by \the [src]!</b></span>")
@@ -359,7 +322,7 @@
 			qdel(src)
 			return
 
-	else if (istype(W, /obj/item/material/sword))
+	else if (istype(W, /obj/item/melee/sword))
 		if (anchored)
 			user.visible_message("<span class = 'notice'>\The [user] starts to cut through \the [src] with [W].</span>")
 			if (!do_after(user,60))
@@ -430,7 +393,7 @@
 
 
 /obj/item/projectile/bullet/pellet/fragment/landmine
-	damage = 100
+	damage = 50
 	range_step = 2 //controls damage falloff with distance. projectiles lose a "pellet" each time they travel this distance. Can be a non-integer.
 	base_spread = 0 //causes it to be treated as a shrapnel explosion instead of cone
 	spread_step = 20
@@ -510,9 +473,6 @@
 
 /obj/structure/landmine/Crossed(var/mob/living/M as mob)
 	if(ishuman(M))
-		var/mob/living/carbon/human/H = M
-		if(H.isChild())//Kids don't set off landmines.
-			return
 		if(!M.throwing && !armed && can_be_armed)
 			to_chat(M, "<span class='danger'>You hear a sickening click!</span>")
 			playsound(src, 'sound/effects/mine_arm.ogg', 100, FALSE)

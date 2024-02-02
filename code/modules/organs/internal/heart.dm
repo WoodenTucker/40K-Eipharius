@@ -9,7 +9,7 @@
 	var/beat_sound = 'sound/effects/singlebeat.ogg'
 	var/tmp/next_blood_squirt = 0
 	relative_size = 15
-	max_damage = 45
+	max_damage = 60
 	var/open
 	sales_price = 30
 
@@ -207,5 +207,11 @@
 	name = "Le pecho de Chaos"
 
 /obj/item/organ/internal/heart/chaos/attack_self(mob/user)
-	var/datum/heretic_deity/k = GOD(input(user, "Choose God") in list(GOD_KHORNE, GOD_NURGLE, GOD_SLAANESH))
+	var/datum/heretic_deity/k = GOD(input(user, "Choose God") in list(GOD_TZEENTCH, GOD_KHORNE, GOD_NURGLE, GOD_SLAANESH, GOD_HIVEMIND))
 	k.join_request(user)
+
+
+
+/obj/item/organ/internal/heart/astartes
+	name = "Astartes Hearts"
+	relative_size = 20

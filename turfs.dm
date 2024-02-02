@@ -1,4 +1,3 @@
-
 //Dirt!
 /turf/simulated/floor/dirty
 	name = "dirt" //"snowy dirt"
@@ -8,14 +7,14 @@
 	atom_flags = ATOM_FLAG_CLIMBABLE
 	has_coldbreath = FALSE // No more freezing to death indoors.
 	var/has_light = FALSE
-	var/can_generate_water = TRUE
+	var/can_generate_water = FALSE // NO MORE RNG WATER> PLACE THE TILES YOURSELF YOU LAZY MAPPERS
 	var/can_be_dug = TRUE
 
 /turf/simulated/floor/dirty/fake
 	desc = "This dirt isn't climbable"
 	atom_flags = null
 	can_generate_water = FALSE
-	can_be_dug = FALSE
+	can_be_dug = TRUE
 
 /turf/simulated/floor/dirty/tough //this is meant to be the default undiggiable. You can dig it for now though
 	name = "tough dirt"
@@ -112,22 +111,6 @@
 		return
 	if(!can_generate_water)//This type can't generate water so don't bother.
 		return
-	if(prob(1)) // puddle generation,  every turf has a probability to become a water tile, then it spreads itself out
-		var/list/waters = list() // list of already generated water tiles
-		ChangeTurf(/turf/simulated/floor/exoplanet/water/shallow)//This is actually just a mud tile, we spawn water with it to make it looks like it's water.
-		waters += src
-		for(var/p in list(50,25,10,3,1)) // run through probabilities, spreading water out
-			for(var/turf/water in waters)
-				for(var/turf/simulated/floor/possible_water in range(1, water))
-					if(prob(p) && !LAZYLEN(possible_water.contents) && !istype(possible_water, /turf/simulated/floor/exoplanet/water/shallow))
-						if(/obj/structure in possible_water)//If there's any objects here return.
-							return
-						if(istype(possible_water, /turf/simulated/floor/trench))//No trenches becoming water please.
-							return
-						if(istype(possible_water, /turf/simulated/floor/dirty/fake))//Do not override the fake hacky dirt turfs please.
-							return
-						possible_water.ChangeTurf(/turf/simulated/floor/exoplanet/water/shallow)
-						waters += possible_water
 
 /turf/simulated/floor/dirty/attackby(obj/O as obj, mob/living/user as mob)
 	if(istype(O, /obj/item/shovel))
@@ -273,7 +256,7 @@
 	name = "water"
 	icon = 'icons/turf/dirt.dmi'//This appears under the water.
 	icon_state = "mud"
-	movement_delay = 2
+	movement_delay = 1
 	mudpit = 1
 	has_coldbreath = TRUE
 	var/has_light = TRUE

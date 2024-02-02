@@ -2,7 +2,7 @@
 
 /datum/shuttle/autodock/ferry/inquisition
 	name = "Inquisition"
-	warmup_time = 10
+	warmup_time = 20
 	waypoint_station = "inquisition_start"
 	waypoint_offsite = "inquisition_end"
 	shuttle_area = /area/cadiaoutpost/oa/shuttle/inquisition
@@ -17,17 +17,134 @@
 	name = "Messina Landing Pad"
 	landmark_tag = "inquisition_start"
 	base_area = /area/inqmoon
-	base_turf = /turf/simulated/floor/plating/reinforced
+	base_turf = /turf/simulated/floor/plating
 
 /obj/machinery/computer/shuttle_control/ferry/inquisition
 	name = "Shuttle Control Console"
 	shuttle_tag = "Inquisition"
 
+//
+/datum/shuttle/autodock/ferry/roguet
+	name = "roguet"
+	warmup_time = 20
+	waypoint_station = "roguet_start"
+	waypoint_offsite = "roguet_end"
+	shuttle_area = /area/cadiaoutpost/oa/shuttle/roguet
 
+/obj/effect/shuttle_landmark/ferry/roguet_end
+	name = "landing pad"
+	landmark_tag = "roguet_end"
+	base_area = /area/cadiaoutpost/rtship2
+	base_turf = /turf/space
+
+/obj/effect/shuttle_landmark/ferry/roguet_start
+	name = "roguet ship"
+	landmark_tag = "roguet_start"
+	base_area = /area/cadiaoutpost/rtship1
+	base_turf = /turf/simulated/floor/plating
+
+/obj/machinery/computer/shuttle_control/ferry/roguet
+	name = "Shuttle Control Console"
+	shuttle_tag = "roguet"
+//
+/datum/shuttle/autodock/ferry/mechiferry
+	name = "mechiferry"
+	warmup_time = 10
+	waypoint_station = "mechiferry_start"
+	waypoint_offsite = "mechiferry_end"
+	shuttle_area = /area/cadiaoutpost/oa/shuttle/mechiferry
+
+/obj/effect/shuttle_landmark/ferry/mechiferry_end
+	name = "landing pad"
+	landmark_tag = "mechiferry_end"
+	base_area = /area/cadiaoutpost/mechiferry2
+	base_turf = /turf/simulated/floor/plating
+
+/obj/effect/shuttle_landmark/ferry/mechiferry_start
+	name = "mechiferry"
+	landmark_tag = "mechiferry_start"
+	base_area = /area/cadiaoutpost/mechiferry1
+	base_turf = /turf/simulated/floor/plating
+
+/obj/machinery/computer/shuttle_control/ferry/mechiferry
+	name = "Shuttle Control Console"
+	shuttle_tag = "mechiferry"
+//
+
+/datum/shuttle/autodock/ferry/cha
+	name = "cha"
+	warmup_time = 10
+	waypoint_station = "cha_start"
+	waypoint_offsite = "cha_end"
+	shuttle_area = /area/cadiaoutpost/oa/shuttle/chacha
+
+/obj/effect/shuttle_landmark/ferry/cha_end
+	name = "landing pad"
+	landmark_tag = "cha_end"
+	base_area = /area/cadiaoutpost/cha2
+	base_turf = /turf/simulated/floor/plating
+
+/obj/effect/shuttle_landmark/ferry/cha_start
+	name = "cha"
+	landmark_tag = "cha_start"
+	base_area = /area/cadiaoutpost/cha1
+	base_turf = /turf/simulated/floor/plating
+
+/obj/machinery/computer/shuttle_control/ferry/cha
+	name = "Shuttle Control Console"
+	shuttle_tag = "cha"
+//
+
+
+/datum/shuttle/autodock/ferry/governor
+	name = "governor"
+	warmup_time = 20
+	waypoint_station = "governor_start"
+	waypoint_offsite = "governor_end"
+	shuttle_area = /area/cadiaoutpost/oa/shuttle/governor
+
+/obj/effect/shuttle_landmark/ferry/governor_end
+	name = "landing pad"
+	landmark_tag = "governor_end"
+	base_area = /area/cadiaoutpost/govship1
+	base_turf = /turf/simulated/floor/plating
+
+/obj/effect/shuttle_landmark/ferry/governor_start
+	name = "governor ship"
+	landmark_tag = "governor_start"
+	base_area = /area/cadiaoutpost/govship2
+	base_turf = /turf/simulated/floor/plating
+
+/obj/machinery/computer/shuttle_control/ferry/governor
+	name = "Shuttle Control Console"
+	shuttle_tag = "governor"
+
+/datum/shuttle/autodock/ferry/magos
+	name = "magos"
+	warmup_time = 10
+	waypoint_station = "magos_start"
+	waypoint_offsite = "magos_end"
+	shuttle_area = /area/cadiaoutpost/oa/shuttle/magos
+
+/obj/effect/shuttle_landmark/ferry/magos_end
+	name = "landing pad"
+	landmark_tag = "magos_end"
+	base_area = /area/cadiaoutpost/magosship1
+	base_turf = /turf/simulated/floor/plating
+
+/obj/effect/shuttle_landmark/ferry/magos_start
+	name = "magos ship"
+	landmark_tag = "magos_start"
+	base_area = /area/cadiaoutpost/magosship2
+	base_turf = /turf/simulated/floor/plating
+
+/obj/machinery/computer/shuttle_control/ferry/magos
+	name = "Shuttle Control Console"
+	shuttle_tag = "magos"
 
 /datum/shuttle/autodock/ferry/bloodpact
 	name = "Bloodpact"
-	warmup_time = 10
+	warmup_time = 20
 	waypoint_station = "bloodpact_start"
 	waypoint_offsite = "bloodpact_end"
 	shuttle_area = /area/cadiaoutpost/oa/shuttle/inquisitionpact
@@ -35,13 +152,13 @@
 /obj/effect/shuttle_landmark/ferry/bloodpact_end
 	name = "Messina Blood Pact Hanger"
 	landmark_tag = "bloodpact_end"
-	base_area = /area/cadiaoutpost/oa/hangarpact
+	base_area = /area/cadiaoutpost/oa/hangarpact2
 	base_turf = /turf/simulated/floor/plating
 
 /obj/effect/shuttle_landmark/ferry/bloodpact_start
 	name = "Derelict Blood Pact Station"
 	landmark_tag = "bloodpact_start"
-	base_area = /area/cadiaoutpost/oa/hangarpact
+	base_area = /area/cadiaoutpost/oa/hangarpact2
 	base_turf = /turf/simulated/floor/plating
 
 /obj/machinery/computer/shuttle_control/ferry/bloodpact
@@ -79,7 +196,7 @@
 
 /datum/shuttle/autodock/ferry/tau
 	name = "tau1"
-	warmup_time = 10
+	warmup_time = 20
 	waypoint_station = "tau_start"
 	waypoint_offsite = "tau_end"
 	shuttle_area = /area/cadiaoutpost/oa/shuttle/tau1
@@ -102,7 +219,7 @@
 
 /datum/shuttle/autodock/ferry/cargo
 	name = "Cargo1"
-	warmup_time = 10
+	warmup_time = 20
 	waypoint_station = "cargo_start"
 	waypoint_offsite = "cargo_end"
 	shuttle_area = /area/cadiaoutpost/oa/shuttle/cargo1
@@ -111,13 +228,13 @@
 	name = "PlanetCargo"
 	landmark_tag = "cargo_end"
 	base_area = /area/cadiaoutpost/oa/shuttle/cargo2
-	base_turf = /turf/simulated/floor/plating
+	base_turf = /turf/simulated/floor/tiled/dark
 
 /obj/effect/shuttle_landmark/ferry/cargo_start
 	name = "MoonCargo"
 	landmark_tag = "cargo_start"
 	base_area = /area/cadiaoutpost/oa/shuttle/cargo2
-	base_turf = /turf/simulated/floor/plating
+	base_turf = /turf/simulated/floor/tiled/dark
 
 /obj/machinery/computer/shuttle_control/ferry/cargo
 	name = "Cargo Elevator Console"

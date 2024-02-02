@@ -173,7 +173,11 @@
 
 /obj/item/storage/box/sniperammo/apds
 	name = "box of 14.5mm APDS shells"
-	startswith = list(/obj/item/ammo_casing/a145/apds = 3)
+	startswith = list(/obj/item/ammo_casing/a145/apds = 4)
+
+/obj/item/storage/box/sniperammo/apds/bos
+	name = "munitions rod"
+	startswith = list(/obj/item/ammo_casing/a145/apds/bos = 4)
 
 /obj/item/storage/box/flashbangs
 	name = "box of flashbangs"
@@ -500,11 +504,47 @@
 		/obj/item/implantcase/imprinting = 3
 		)
 
+/obj/item/storage/box/kriegration
+	name = "Krieg ration box"
+	desc = "A field ration box given out to Kriegsmen on the field, contains three packs of K-Rations. The content section of the package seems to be stamped out."
+	startswith = list(/obj/item/reagent_containers/food/snacks/kriegration = 3)
+	w_class = ITEM_SIZE_SMALL
+	max_storage_space = 6
+	can_hold = list(
+		/obj/item/reagent_containers/food/snacks/kriegration,
+	)
+
 /obj/item/storage/box/ifak
 	name = "IFAK"
 	desc = "An Individual First Aid Kit, used to keep you alive until a medic can patch you up proper."
 	icon_state = "ifak"
 	startswith = list(/obj/item/bandage_pack, /obj/item/tourniquet, /obj/item/reagent_containers/hypospray/autoinjector/morphine)
+	w_class = ITEM_SIZE_SMALL
+	max_storage_space = 6
+
+/obj/item/storage/box/ifak/attack_hand(var/mob/living/carbon/human/user)
+	if(!istype(user))
+		..()
+		return
+	if((src != user.r_store) && (src != user.l_store) && (src != user.belt) && (src != user.get_inactive_hand()))
+		..()//If it's not in any of these slots then just return normally.
+		return
+	open(user)//If it's in your pocket then open it.
+
+/obj/item/storage/box/ifak/advanced
+	name = "AIFAK"
+	desc = "An Advanced Individual First Aid Kit, intended for elite forces."
+	icon_state = "ifak"
+	startswith = list(/obj/item/bandage_pack, /obj/item/tourniquet, /obj/item/reagent_containers/hypospray/autoinjector/morphine, /obj/item/suture, /obj/item/wirecutters, /obj/item/reagent_containers/hypospray/autoinjector/blood, /obj/item/reagent_containers/hypospray/autoinjector/martyr)
+	w_class = ITEM_SIZE_SMALL
+	max_storage_space = 16
+
+/obj/item/storage/box/coin
+	name = "coin pouch"
+	desc = "A small coin pouch"
+	icon = 'icons/obj/thrones.dmi'
+	icon_state = "coin_bag"
+	startswith = list(/obj/item/stack/thrones3/ten)
 	w_class = ITEM_SIZE_SMALL
 	max_storage_space = 6
 

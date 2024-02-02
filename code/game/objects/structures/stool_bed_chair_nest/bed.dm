@@ -223,7 +223,7 @@
 	icon_state = "folded"
 	item_state = "rbed"
 	slot_flags = SLOT_BACK
-	w_class = ITEM_SIZE_HUGE // Can't be put in backpacks. Oh well. For now.
+	w_class = ITEM_SIZE_NORMAL // Can't be put in backpacks. Oh well. For now.
 
 /obj/item/roller/attack_self(mob/user)
 		var/obj/structure/bed/roller/R = new /obj/structure/bed/roller(user.loc)
@@ -316,3 +316,13 @@
 /obj/structure/bed/krootbed
 	name = "kroot bed"
 	desc = "The bed of a Kroot Hunter"
+
+/obj/structure/bed/barrack
+	name = "bunk bed"
+	desc = "For tired soldiers to rest on, aswell as wounded, deceased, dying, and so on."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "cerb0"
+
+/obj/structure/bed/barrack1
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "cerb1"

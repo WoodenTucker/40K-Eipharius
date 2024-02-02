@@ -5,7 +5,7 @@
 	icon_state = "ultradread"
 	initial_icon = "ultradread"
 	step_in = 5.5 // lower the number, faster they go!
-	health = 1250
+	health = 2250
 	deflect_chance = 55
 	internal_damage_threshold = 250
 	damage_absorption = list("brute"=0.6,"fire"=0.7,"bullet"=0.4,"laser"=0.4,"energy"=0.1,"bomb"=0.1)

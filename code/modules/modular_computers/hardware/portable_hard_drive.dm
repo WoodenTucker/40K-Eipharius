@@ -24,7 +24,7 @@
 	icon_state = "flashdrive_super"
 	hardware_size = 1
 	max_capacity = 256
-	origin_tech = list(TECH_DATA = 4)
+	origin_tech = list(TECH_DATA = 2)
 
 /obj/item/computer_hardware/hard_drive/portable/New()
 	..()

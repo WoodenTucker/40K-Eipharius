@@ -24,12 +24,12 @@
 		else if(istype(object,/turf/simulated/floor))
 			var/turf/T = object
 			Log("Upgraded - [log_info_line(object)]")
-			T.ChangeTurf(/turf/simulated/wall)
+			T.ChangeTurf(/turf/simulated/wall/concrete)
 			return
 		else if(istype(object,/turf/simulated/wall))
 			var/turf/T = object
 			Log("Upgraded - [log_info_line(object)]")
-			T.ChangeTurf(/turf/simulated/wall/r_wall)
+			T.ChangeTurf(/turf/simulated/wall/concrete)
 			return
 	else if(pa["right"])
 		if(istype(object,/turf/simulated/wall))
@@ -42,7 +42,7 @@
 			Log("Downgraded - [log_info_line(object)]")
 			T.ChangeTurf(/turf/space)
 			return
-		else if(istype(object,/turf/simulated/wall/r_wall))
+		else if(istype(object,/turf/simulated/wall/concrete))
 			var/turf/T = object
 			Log("Downgraded - [log_info_line(object)]")
 			T.ChangeTurf(/turf/simulated/wall)

@@ -10,7 +10,7 @@
 	throw_range = 4
 	throwforce = 10
 	w_class = ITEM_SIZE_SMALL
-	armor_penetration = 100 //Magic
+	armor_penetration = 20 //Magic
 
 /obj/item/nullrod/attack(mob/M as mob, mob/living/user as mob) //Paste from old-code to decult with a null rod.
 	admin_attack_log(user, M, "Attacked using \a [src]", "Was attacked with \a [src]", "used \a [src] to attack")
@@ -36,16 +36,6 @@
 	if(cult && iscultist(M))
 		M.visible_message("<span class='notice'>\The [user] waves \the [src] over \the [M]'s head.</span>")
 		cult.offer_uncult(M)
-		return
-
-	if (istype(M, /mob/living/simple_animal/hostile/smalldemon))
-		M.gib()
-		to_chat(user, "<span class='danger'>You banish the Daemon!</span>")
-		return
-
-	if (istype(M, /mob/living/simple_animal/playerdaemonhost))
-		M.gib()
-		to_chat(user, "<span class='danger'>You banish the Daemon!</span>")
 		return
 	..()
 

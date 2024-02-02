@@ -6,7 +6,7 @@
 	load_method = MAGAZINE
 	max_shells = 20
 	caliber = "9mm"
-	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
+	origin_tech = list(TECH_COMBAT = 1, TECH_MATERIAL = 1)
 	slot_flags = SLOT_BELT | SLOT_BACK
 	ammo_type = /obj/item/ammo_casing/c9mm
 	automatic = 1
@@ -27,6 +27,14 @@
 		)
 */
 
+/obj/item/gun/projectile/automatic/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.1
+	slowdown_per_slot[slot_wear_suit] = 0.15
+	slowdown_per_slot[slot_belt] = 0.15
+	slowdown_per_slot[slot_r_hand] = 0.2
+	slowdown_per_slot[slot_l_hand] = 0.2
+
 /obj/item/gun/projectile/automatic/smg
 	name = "template smg"
 	desc = "This shouldnt exist and is bugged or not working. Ahelp immediately."
@@ -41,13 +49,20 @@
 	ammo_type = /obj/item/ammo_casing/c9mm
 	burst_delay = 1
 	automatic = 1
-	accuracy = -1
+	accuracy = -0.5
 	force = 8
 	fire_delay = 1
 	sales_price = 10
 
 	magazine_type = /obj/item/ammo_magazine/smgmc9mm
 	allowed_magazines = /obj/item/ammo_magazine/smgmc9mm
+
+/obj/item/gun/projectile/automatic/smg/boscelot/update_icon()
+    ..()
+    if(ammo_magazine)
+        icon_state = "sten"
+    else
+        icon_state = "sten-e"
 /*
 /obj/item/gun/projectile/automatic/smg/villiers // valhallan
 	name = "Villiers Pattern Stub SMG"
@@ -59,8 +74,7 @@
 	caliber = ".45"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
-	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
-	move_delay = 2.5
+	fire_sound = 'sound/weapons/gunshot/auto2.ogg'.5
 	accuracy = 0
 	fire_delay = 3
 	sales_price = 40

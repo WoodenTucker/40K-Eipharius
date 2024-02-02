@@ -152,6 +152,14 @@
 	b_side = pick('sound/music/boombox14.ogg')
 	sound_inside = a_side
 
+/obj/item/device/cassette/fart/New()
+	..()
+	name = "The Great Gatsby"
+	a_side = pick('sound/newmusic/fart.ogg')
+	b_side = pick('sound/newmusic/fart.ogg')
+	sound_inside = a_side
+
+
 /obj/item/device/cassette/titansbane/New()
 	..()
 	name = "Titansbane - Cadia Stands"
@@ -257,6 +265,13 @@
 	b_side = pick('sound/newmusic/TAPE-INNMED.ogg')
 	sound_inside = a_side
 
+/obj/item/device/cassette/heresy1/New()
+	..()
+	name = "Heretical Tape"
+	a_side = pick('sound/newmusic/TAPE-forbidden.ogg')
+	b_side = pick('sound/newmusic/TAPE-forbidden.ogg')
+	sound_inside = a_side
+
 /obj/item/device/cassette/inn3/New()
 	..()
 	name = "Totally Transcendent"
@@ -284,3 +299,57 @@
 	a_side = pick('sound/newmusic/TAPE-DEMON.ogg')
 	b_side = pick('sound/newmusic/TAPE-DEMON.ogg')
 	sound_inside = a_side
+
+/obj/item/device/cassette/bold_brathas/New()
+	..()
+	name = "Boreale & Diomedes - Bold Brathas"
+	desc = "A very rare imperial collector's edition cassette that only had over 100 copies produced due the expensive price of 9999.9 thrones, the song was performed by Apollo Diomedes and Indrick Boreale."
+	a_side = pick('icons/map_project/sounds/bold_brathas.ogg')
+	b_side = pick('icons/map_project/sounds/bold_brathas.ogg')
+	sound_inside = a_side
+	sales_price = 30 // Very rare and expensive
+
+/obj/item/device/cassette/dow_cmd_theme/New()
+	..()
+	name = "Jeremy Soule - Force Commander Theme"
+	desc = "Where have you heard this before ? It sounds VERY familiar..."
+	a_side = pick('icons/map_project/sounds/dow_commander_theme.ogg')
+	b_side = pick('icons/map_project/sounds/dow_commander_theme.ogg')
+	sound_inside = a_side
+	sales_price = 20 // Very rare and expensive
+
+/obj/item/device/cassette/dow_spessmuhreen_theme/New()
+	..()
+	name = "Inon Zur - Space Marines Theme"
+	desc = "Where have you heard this before ? It sounds VERY familiar..."
+	a_side = pick('icons/map_project/sounds/dow_spessmarine.ogg')
+	b_side = pick('icons/map_project/sounds/dow_spessmarine.ogg')
+	sound_inside = a_side
+	sales_price = 20 // Very rare and expensive
+
+/obj/item/device/cassette/the_forest_1/New()
+    ..()
+    name = "Gabe Castro - Cassette 1"
+    desc = "Where have you heard this before ? It sounds VERY familiar..."
+    a_side = pick('icons/map_project/sounds/cassette_forest1.ogg')
+    b_side = pick('icons/map_project/sounds/cassette_forest1.ogg')
+    sound_inside = a_side
+    sales_price = 20 // Very rare and expensive
+
+/obj/item/device/cassette/the_forest2/New()
+    ..()
+    name = "Gabe Castro - Cassette 6"
+    desc = "Where have you heard this before ? It sounds VERY familiar..."
+    a_side = pick('icons/map_project/sounds/cassette_forest6.ogg')
+    b_side = pick('icons/map_project/sounds/cassette_forest6.ogg')
+    sound_inside = a_side
+    sales_price = 20 // Very rare and expensive
+    
+/obj/item/device/cassette/starcraft_1/New()
+    ..()
+    name = "Glenn Stafford - Terran Theme 1"
+    desc = "You need to build additional supply depots."
+    a_side = pick('icons/map_project/sounds/starcraft_terran1.ogg')
+    b_side = pick('icons/map_project/sounds/starcraft_terran1.ogg')
+    sound_inside = a_side
+    sales_price = 20 // Very rare and expensive

@@ -58,12 +58,12 @@ GLOBAL_LIST_EMPTY(family_blacklist)
 	var/engineering_skill = 5
 	var/melee_skill = 5
 	//Gun skills
-	var/auto_rifle_skill = 5
-	var/semi_rifle_skill = 5
-	var/sniper_skill = 5
-	var/shotgun_skill = 5
-	var/lmg_skill = 5
-	var/smg_skill = 5
+	var/auto_rifle_skill = 6
+	var/semi_rifle_skill = 6
+	var/sniper_skill = 6
+	var/shotgun_skill = 6
+	var/lmg_skill = 6
+	var/smg_skill = 6
 	var/cultist_chance 		// Don't set for zero, 100 for certain chance like for pilgrims.
 
 

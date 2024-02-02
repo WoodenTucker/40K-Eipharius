@@ -12,24 +12,14 @@
 	item_path = /obj/item/melee/baton
 
 /datum/cargo_entry/melee/ckniferare
-	name = "Rare Combat Knife"
-	cost = 25
-	item_path = /obj/item/material/sword/combat_knife/rare
-
-/datum/cargo_entry/melee/ckniferare
 	name = "Catachan Knife"
 	cost = 110
-	item_path = /obj/item/material/sword/combat_knife/catachan
+	item_path = /obj/item/melee/sword/combat_knife/catachan
 
 /datum/cargo_entry/melee/ironsword
 	name = "Iron Sword"
 	cost = 49
 	item_path = /obj/item/toy/katana
-
-/datum/cargo_entry/melee/saber2
-	name = "Officer's Saber"
-	cost = 55
-	item_path = /obj/item/material/sword/commissword/sabre
 
 /datum/cargo_entry/melee/noblesword
 	name = "Noble Sword"
@@ -38,15 +28,15 @@
 
 /datum/cargo_entry/melee/mercy
 	name = "Mercy Chainsword"
-	cost = 84
+	cost = 94
 	item_path = /obj/item/melee/chain/mercycs
 
 /datum/cargo_entry/melee/drusian
 	name = "Drusian Chainsword"
-	cost = 94
+	cost = 114
 	item_path = /obj/item/melee/chain/inqcs
 
 /datum/cargo_entry/melee/powersword
 	name = "Power Blade"
-	cost = 120
+	cost = 150
 	item_path = /obj/item/melee/energy/powersword

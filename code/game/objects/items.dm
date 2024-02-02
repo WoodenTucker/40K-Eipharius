@@ -29,6 +29,8 @@
 	var/list/attack_verb = list("hit") //Used in attackby() to say how something was attacked "[x] has been [z.attack_verb] by [y] with [z]"
 	var/lock_picking_level = 0 //used to determine whether something can pick a lock, and how well.
 	var/force = 0
+	var/can_door_force = 0 //Permits the item to force open doors.
+	var/no_pickup = 0 //Prevents the item from being picked up.
 
 	var/heat_protection = 0 //flags which determine which body parts are protected from heat. Use the HEAD, UPPER_TORSO, LOWER_TORSO, etc. flags. See setup.dm
 	var/cold_protection = 0 //flags which determine which body parts are protected from cold. Use the HEAD, UPPER_TORSO, LOWER_TORSO, etc. flags. See setup.dm
@@ -334,7 +336,7 @@
 	src.loc = T
 
 /obj/item/examine(var/mob/living/carbon/human/user, var/distance = -1)
-	if(user.job == "House Noble")
+	if(user.job == "Rogue Trader")
 		var/priceString = "<span class='rose italic'>[src] appears to be worth [src.sales_price] thrones."
 		if(src.sales_price == 0)
 			priceString += " I don't believe I could sell this on the market.</span>"
@@ -363,6 +365,9 @@
 
 /obj/item/attack_hand(mob/user as mob)
 	if (!user) return
+	if (no_pickup == 1)
+		to_chat(user, "<span class='notice'>The [src] is too big to pick up!</span>")
+		return
 	if (hasorgans(user))
 		var/mob/living/carbon/human/H = user
 		var/obj/item/organ/external/temp = H.organs_by_name[BP_R_HAND]
@@ -633,6 +638,9 @@ var/list/global/slot_flags_enumeration = list(
 		return
 	if(!istype(src.loc, /turf)) //Object is on a turf
 		to_chat(usr, "<span class='warning'>You can't pick that up!</span>")
+		return
+	if (no_pickup == 1)
+		to_chat(usr, "<span class='notice'>The [src] is too big to pick up!</span>")
 		return
 	//All checks are done, time to pick it up!
 	usr.UnarmedAttack(src)

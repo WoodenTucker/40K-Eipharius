@@ -6,8 +6,8 @@
 	charge_max = 150
 	charge_counter = 0
 	spell_flags = 0
-	invocation = "Kn'a Ftaghu, Puck'Bthnk!"
-	invocation_type = SpI_SHOUT
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	range = 7
 	max_targets = 1
 	level_max = list(Sp_TOTAL = 4, Sp_SPEED = 4, Sp_POWER = 1)

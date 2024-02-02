@@ -79,14 +79,6 @@
 		return 0
 
 	var/wearable = TRUE
-	if(ishuman(M))//hacky kid shit
-		var/mob/living/carbon/human/H = M
-		if(H.isChild())
-			if(!child_exclusive || !can_be_worn_by_child)
-				wearable = FALSE
-		else
-			if(child_exclusive)
-				wearable = FALSE
 
 	if(species_restricted && istype(M,/mob/living/carbon/human))
 		var/exclusive = null
@@ -154,7 +146,7 @@
 		icon = sprite_sheets_obj[target_species]
 	else
 		icon = initial(icon)
-/*
+
 /obj/item/clothing/get_examine_line()
 	. = ..()
 	var/list/ties = list()
@@ -165,7 +157,7 @@
 		.+= " with [english_list(ties)] attached"
 	if(accessories.len > ties.len)
 		.+= ". <a href='?src=\ref[src];list_ungabunga=1'>\[See accessories\]</a>"
-*/
+
 /obj/item/clothing/CanUseTopic(var/user)
 	if(user in view(get_turf(src)))
 		return STATUS_INTERACTIVE
@@ -631,7 +623,7 @@ BLIND     // can't see anything
 	var/fire_resist = T0C+100
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	allowed = list(/obj/item/tank/emergency)
-	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 15, bullet = 22, laser = 22, energy = 0, bomb = 0, bio = 5, rad = 0)
 	slot_flags = SLOT_OCLOTHING
 	blood_overlay_type = "suit"
 	siemens_coefficient = 0.9
@@ -640,6 +632,10 @@ BLIND     // can't see anything
 	grab_sound = 'sound/items/handle/clothing_up.ogg'
 	equipsound = 'sound/items/handle/cloth_pickup.ogg'
 	sales_price = 0
+
+/obj/item/clothing/suit/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.4
 
 
 /obj/item/clothing/suit/update_clothing_icon()

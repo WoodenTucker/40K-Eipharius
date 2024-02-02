@@ -6,25 +6,24 @@
 	item_state = "pistol"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	force = 10
-	accuracy = -2.5
-	one_hand_penalty = 5
-	move_delay = 5
+	accuracy = 0.5
+	one_hand_penalty = 0
 	fire_delay = 6
 	sales_price = 10
 
 /obj/item/gun/projectile/pistol/pewter
-	name = "Messina Pattern 'Pewter' stub pistol"
-	desc = "The locally made 'Pewter' pattern is chambered in 9mm and is more reliable in it's handling than other makeshift 9mm stub pistols. "
+	name = "Messina Pattern stub pistol"
+	desc = "The locally made pattern is chambered in .45 and is more reliable in it's handling than other makeshift .45 stub pistols. "
 	icon_state = "handgun7"
 	item_state = "pistol"
 	w_class = ITEM_SIZE_NORMAL
-	caliber = "9mm"
-	ammo_type = /obj/item/ammo_casing/c9mm
+	ammo_type = /obj/item/ammo_casing/c45
+	caliber = ".45"
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/mc9mm
-	allowed_magazines = /obj/item/ammo_magazine/mc9mm
+	magazine_type = /obj/item/ammo_magazine/mc45mm
+	allowed_magazines = /obj/item/ammo_magazine/mc45mm
 
-	accuracy = -1.5
+	accuracy = 0.5
 
 /obj/item/gun/projectile/pistol/pewter/update_icon()
 	..()
@@ -36,16 +35,16 @@
 
 /obj/item/gun/projectile/pistol/kieji
 	name = "Kieji stub pistol"
-	desc = "Barely even a standard template, the 9mm Kieji are manufactured in many different ways. But there are always constants: It will be inaccurate, and unreliable."
+	desc = "Barely even a standard template, the .45 Kieji are manufactured in many different ways. But there are always constants: It will be inaccurate, and unreliable."
 	icon_state = "kieji"
 	item_state = "pistol"
-	caliber = "9mm"
-	ammo_type = /obj/item/ammo_casing/c9mm
+	ammo_type = /obj/item/ammo_casing/c45
+	caliber = ".45"
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/mc9mm
-	allowed_magazines = /obj/item/ammo_magazine/mc9mm
-	sales_price = 5
-	accuracy = -3.5
+	magazine_type = /obj/item/ammo_magazine/mc45mm
+	allowed_magazines = /obj/item/ammo_magazine/mc45mm
+	sales_price = 10
+	accuracy = 0.4
 
 /obj/item/gun/projectile/pistol/kieji/update_icon()
 	..()
@@ -55,14 +54,14 @@
 		icon_state = "kieji-e"
 
 /obj/item/gun/projectile/pistol/kieji/snub
-	name = "Snub nosed Kieji stub pistol"
-	desc = "Barely even a standard template, the 9mm Kieji are manufactured in many different ways. But there are always constants: It will be inaccurate, and unreliable. This varient is purposed for a faster firing rate, at the cost of accuracy."
+	name = "Snub nosed Kieji"
+	desc = "Barely even a standard template, the .45 Kieji are manufactured in many different ways. But there are always constants: It will be inaccurate, and unreliable. This varient is purposed for a faster firing rate, at the cost of accuracy."
 	icon_state = "kiejistub"
 	item_state = "pistol"
 
-	accuracy = -5
+	accuracy = 0
 	fire_delay = 2
-	sales_price = 5
+	sales_price = 12
 
 /obj/item/gun/projectile/pistol/kieji/snub/update_icon()
 	..()
@@ -84,7 +83,7 @@
 	magazine_type = /obj/item/ammo_magazine/mc45mm
 	allowed_magazines = /obj/item/ammo_magazine/mc45mm
 
-	fire_delay = 7
+	fire_delay = 2
 	screen_shake = 0.2
 	sales_price = 20
 
@@ -95,9 +94,8 @@
 	else
 		icon_state = "sheetp-e"
 
-
 /obj/item/gun/projectile/pistol/villiers
-	name = "Villiers Pattern stub pistol."
+	name = "Villiers Pattern Auto-pistol."
 	desc = "This high quality Villiers is chambered in 9mm, crafted with an off planet wood as it's handle and is capable of burst fire, maintaining a high accuracy while doing so."
 	icon_state = "stub2"
 	item_state = "pistol"
@@ -107,9 +105,9 @@
 	magazine_type = /obj/item/ammo_magazine/mc45mm
 	allowed_magazines = /obj/item/ammo_magazine/mc45mm
 
-	fire_delay = 3
+	fire_delay = 4
 	burst = 2
-	accuracy = 1
+	accuracy = 0.4
 	sales_price = 25
 
 
@@ -120,6 +118,52 @@
 	else
 		icon_state = "stub2-e"
 
+/obj/item/gun/projectile/talon
+	name = "chrome stub pistol"
+	desc = "A magnificent chrome stub-pistol."
+	icon_state = "talon"
+	w_class = ITEM_SIZE_SMALL
+	fire_delay = 5
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_ILLEGAL = 2)
+	ammo_type = /obj/item/ammo_casing/c45
+	caliber = ".45"
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/mc45mm
+	allowed_magazines = /obj/item/ammo_magazine/mc45mm
+	auto_eject = 1
+	accuracy = 0.2 //not the best stub pistol but still pretty good
+	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
+	jammed_icon = "talon-j"
+
+/obj/item/gun/projectile/talon/renegade
+	name = "Renegade Auto-Pistol"
+	desc = "A modified slug pistol with a heavy frame and integrated suppressor, forged for the Assassins of the infamous Renegade Navigator Houses."
+	move_delay= 1.3
+	one_hand_penalty = 0
+	accuracy = 0.8
+	fire_delay = 2
+	burst = 2
+	silenced = 1
+	force = 20
+	sales_price = 35
+
+/obj/item/gun/projectile/genmessorp
+	name = "Genmessor stubpistol"
+	icon_state = "sheetp"
+	w_class = ITEM_SIZE_NORMAL
+	ammo_type = /obj/item/ammo_casing/c45
+	caliber = ".45"
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/mc45mm
+	allowed_magazines = /obj/item/ammo_magazine/mc45mm
+
+/obj/item/gun/projectile/genmessorp/update_icon()
+	..()
+	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		icon_state = "sheetp"
+	else
+		icon_state = "sheetp-e"
+
 
 /obj/item/gun/projectile/ork/slugga
 	name = "slugga"
@@ -129,10 +173,16 @@
 	icon_state = "slugga"
 	caliber = ".75"
 	can_jam = TRUE //yes it can jam
-	accuracy = -4
+	accuracy = -0.5
 	force = 20
-	move_delay = 1.5
 	load_method = MAGAZINE
+
+/obj/item/gun/projectile/ork/slugga/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "slugga"
+	else
+		icon_state = "slugga-e"
 
 
 // BOLT PISTOL
@@ -144,9 +194,8 @@
 	item_state = "bpistol"
 	force = 10
 	caliber = ".75"
-	accuracy = -1
+	accuracy = 0
 	fire_delay = 1.8
-	move_delay = 1.5
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -167,9 +216,8 @@
 	item_state = "gpistol"
 	force = 10
 	caliber = ".75"
-	accuracy = -1.2
-	fire_delay = 2
-	move_delay = 5.0 // make it shit and mostly ornamental
+	accuracy = -0.4
+	fire_delay = 2.0 // make it shit and mostly ornamental
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -189,10 +237,17 @@
 	item_state = "bpistol"
 	force = 15
 	caliber = ".75"
-	accuracy = -0.5 //VERY well maintained--maintened? eh, you get what i mean!
-	fire_delay = 1.4
-	move_delay = 1.3
+	accuracy = 0.3 //VERY well maintained--maintened? eh, you get what i mean!
+	fire_delay = 1.5
 	sales_price = 58
+
+/obj/item/gun/projectile/bolter_pistol/inquis/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "bpistol"
+	else
+		icon_state = "bpistol-e"
+
 
 /obj/item/gun/projectile/bolter_pistol/sisterofbattle
 	name = "Godwyn-De'az Pattern Bolter Pistol"
@@ -201,12 +256,11 @@
 	loaded_icon = "sisterbpistol"
 	force = 20 //i don't think that De'az bolt pistols can have bayonets attached to them, but, imma leave this in, oh also, the Mars Pattern Mark II Scourge is the one with a bayonet.
 	sharp = 1
-	accuracy = 2.2 //normally only 2 of those spawn on the map, one with the sisters, and one on a room in the caves, and they can't even be fabricated
-	fire_delay = 1.5 //fastaa!
-	move_delay = 1.5 //honestly this is kinda of useless
+	accuracy = 0.6 //normally only 2 of those spawn on the map, one with the sisters, and one on a room in the caves, and they can't even be fabricated
+	fire_delay = 1.5 //fastaa!.5 //honestly this is kinda of useless
 	attack_verb = list ("stabbed", "sliced")
 	hitsound = "stab_sound"
-	sales_price = 58
+	sales_price = 70
 
 /obj/item/gun/projectile/bolter_pistol/sisterofbattle/update_icon()
 	..()
@@ -225,7 +279,7 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE|SLOT_BELT
 	max_shells = 60
 	caliber = "shuriken"
-	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 5, TECH_ILLEGAL = 3)
+	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3, TECH_ILLEGAL = 3)
 	ammo_type = /obj/item/ammo_casing/shuriken/pistol
 	load_method = MAGAZINE
 	one_hand_penalty = 0 //Eldar magic

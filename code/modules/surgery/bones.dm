@@ -18,7 +18,7 @@
 	can_infect = 1
 	blood_level = 1
 
-	min_duration = 50
+	min_duration = 40
 	max_duration = 60
 	shock_level = 20
 
@@ -59,7 +59,7 @@
 	/obj/item/wrench = 75		\
 	)
 
-	min_duration = 60
+	min_duration = 40
 	max_duration = 70
 	shock_level = 40
 	delicate = 1
@@ -107,7 +107,7 @@
 	/obj/item/wrench = 75		\
 	)
 
-	min_duration = 60
+	min_duration = 40
 	max_duration = 70
 	shock_level = 40
 	delicate = 1
@@ -148,7 +148,7 @@
 	can_infect = 1
 	blood_level = 1
 
-	min_duration = 50
+	min_duration = 40
 	max_duration = 60
 	shock_level = 20
 

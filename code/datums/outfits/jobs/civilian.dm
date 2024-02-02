@@ -40,27 +40,22 @@
 
 /decl/hierarchy/outfit/job/service/gardener
 	name = OUTFIT_JOB_NAME("Farmer")
-	uniform = /obj/item/clothing/under/rank/victorian
-	suit = /obj/item/clothing/suit/farmer
-	gloves = /obj/item/clothing/gloves/thick/botany
-	r_pocket = /obj/item/device/analyzer/plant_analyzer
+	uniform = null
+	suit = null
+	gloves = null
+	r_pocket = null
 	id_type = null
 	pda_type = null
 	pda_slot = null
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/heads/rt
 	r_ear = null
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_hand = /obj/item/farmshovel
+	l_hand = null
+	r_pocket = /obj/item/storage/box/coin
 	belt = /obj/item/storage/plants
-	backpack_contents = list(/obj/item/seeds/potatoseed = 1,
-	/obj/item/seeds/wheatseed = 1,
-	/obj/item/seeds/cornseed = 1,
-	/obj/item/seeds/random = 1,
-	/obj/item/seeds/tobaccoseed = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 
@@ -91,32 +86,9 @@
 	pda_type = null
 	pda_slot = null
 
-/decl/hierarchy/outfit/job/confessor // move to ministorum dm
-	name = OUTFIT_JOB_NAME("Ministorum Confessor")
-	uniform = /obj/item/clothing/under/rank/chaplain
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	id_type = /obj/item/card/id/civilian/confessor
-	pda_type = null
-	pda_slot = null
-	l_ear = /obj/item/device/radio/headset/heads/cmo
-	r_ear = null
-	l_pocket = /obj/item/storage/box/ifak
-	belt = /obj/item/device/flashlight/lantern
-	back = /obj/item/storage/backpack/satchel/warfare
-	shoes = /obj/item/clothing/shoes/jackboots
-	suit = /obj/item/clothing/suit/ministorumrobes
-	l_hand = /obj/item/staff/ministorumstaff
-	r_hand = /obj/item/melee/whip/censer
-	backpack_contents = list(
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/ten = 1
-		)
-
 /decl/hierarchy/outfit/job/service/undertaker
 	name = OUTFIT_JOB_NAME("Undertaker")
-	uniform = /obj/item/clothing/under/child_jumpsuit
+	uniform = /obj/item/clothing/under/child_jumpsuit/warfare
 	id_type = /obj/item/card/id/civilian/bartender
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = null
@@ -124,7 +96,6 @@
 	suit = /obj/item/clothing/suit/child_coat/red
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_hand = /obj/item/shovel
-	shoes = /obj/item/clothing/shoes/child_shoes
 	pda_type = null
 	pda_slot = null
 	backpack_contents = list(

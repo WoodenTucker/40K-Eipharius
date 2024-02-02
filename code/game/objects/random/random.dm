@@ -67,6 +67,16 @@
 				/obj/item/device/radio = 2,
 				/obj/item/device/analyzer = 5)
 
+/obj/random/trap
+	name = "random trap"
+	desc = "This is a random landmine."
+	icon = 'icons/obj/warfare.dmi'
+	icon_state = "mine_item"
+	spawn_nothing_percentage = 50
+
+/obj/random/trap/spawn_choices()
+	return list(/obj/structure/landmine = 50)
+
 /obj/random/powercell
 	name = "random powercell"
 	desc = "This is a random powercell."
@@ -404,7 +414,6 @@
 				/obj/effect/decal/cleanable/blood/gibs/robot,
 				/obj/effect/decal/cleanable/blood/oil,
 				/obj/effect/decal/cleanable/blood/oil/streak,
-				/obj/effect/decal/cleanable/spiderling_remains,
 				/obj/item/remains/mouse,
 				/obj/effect/decal/cleanable/vomit,
 				/obj/effect/decal/cleanable/blood/splatter,
@@ -560,7 +569,7 @@ obj/random/obstruction //Large objects to block things off in maintenance
 	icon_state = "cultgirder"
 
 obj/random/obstruction/spawn_choices()
-	return list(/obj/structure/barricade,
+	return list(/obj/structure/warfare/barricade/concrete_barrier,
 				/obj/structure/girder,
 				/obj/structure/girder/displaced,
 				/obj/structure/girder/reinforced,
@@ -766,66 +775,6 @@ obj/random/obstruction/spawn_choices()
 				/obj/item/clothing/glasses/sunglasses/sechud/goggles = 1,
 				/obj/item/clothing/glasses/tacgoggles = 1)
 
-/obj/random/hat
-	name = "random headgear"
-	desc = "This is a random hat of some kind."
-	icon = 'icons/obj/clothing/hats.dmi'
-	icon_state = "tophat"
-
-/obj/random/hat/spawn_choices()
-	return list(/obj/item/clothing/head/helmet = 2,
-				/obj/item/clothing/head/helmet/tactical = 1,
-				/obj/item/clothing/head/helmet/space/emergency = 1,
-				/obj/item/clothing/head/bio_hood/general = 1,
-				/obj/item/clothing/head/hardhat = 4,
-				/obj/item/clothing/head/hardhat/orange = 4,
-				/obj/item/clothing/head/hardhat/red = 4,
-				/obj/item/clothing/head/hardhat/dblue = 4,
-				/obj/item/clothing/head/ushanka = 3,
-				/obj/item/clothing/head/welding = 2)
-
-/obj/random/suit
-	name = "random suit"
-	desc = "This is a random piece of outerwear."
-	icon = 'icons/obj/clothing/suits.dmi'
-	icon_state = "fire"
-
-/obj/random/suit/spawn_choices()
-	return list(/obj/item/clothing/suit/storage/hazardvest = 4,
-				/obj/item/clothing/suit/storage/toggle/labcoat = 4,
-				/obj/item/clothing/suit/space/emergency = 1,
-				/obj/item/clothing/suit/armor/vest = 4,
-				/obj/item/clothing/suit/storage/vest/tactical = 1,
-				/obj/item/clothing/suit/storage/vest = 3,
-				/obj/item/clothing/suit/storage/toggle/bomber = 3,
-				/obj/item/clothing/suit/chef/classic = 3,
-				/obj/item/clothing/suit/surgicalapron = 2,
-				/obj/item/clothing/suit/apron/overalls = 3,
-				/obj/item/clothing/suit/bio_suit/general = 1,
-				/obj/item/clothing/suit/storage/toggle/hoodie/black = 3,
-				/obj/item/clothing/suit/storage/toggle/brown_jacket = 3,
-				/obj/item/clothing/suit/storage/leather_jacket = 3,
-				/obj/item/clothing/suit/apron = 4)
-
-/obj/random/clothing
-	name = "random clothes"
-	desc = "This is a random piece of clothing."
-	icon = 'icons/obj/clothing/uniforms.dmi'
-	icon_state = "grey"
-
-/obj/random/clothing/spawn_choices()
-	return list(/obj/item/clothing/under/syndicate/tacticool = 2,
-				/obj/item/clothing/under/syndicate/combat = 1,
-				/obj/item/clothing/under/hazard = 4,
-				/obj/item/clothing/under/sterile = 4,
-				/obj/item/clothing/under/casual_pants/camo = 2,
-				/obj/item/clothing/under/frontier = 2,
-				/obj/item/clothing/under/harness = 2,
-				/obj/item/clothing/under/rank/medical/paramedic = 2,
-				/obj/item/clothing/under/overalls = 2,
-				/obj/item/clothing/ears/earmuffs = 2,
-				/obj/item/clothing/under/tactical = 1)
-
 /obj/random/accessory
 	name = "random accessory"
 	desc = "This is a random utility accessory."
@@ -906,9 +855,6 @@ something, make sure it's not in one of the other lists.*/
 				/obj/random/shoes = 20,
 				/obj/random/gloves = 10,
 				/obj/random/glasses = 20,
-				/obj/random/hat = 10,
-				/obj/random/suit = 20,
-				/obj/random/clothing = 30,
 				/obj/random/accessory = 20,
 				/obj/random/cash = 10)
 
@@ -1128,7 +1074,6 @@ var/list/random_useful_
 		if(!random_junk_)
 			random_junk_ = subtypesof(/obj/item/trash)
 			random_junk_ += typesof(/obj/item/cigbutt)
-			random_junk_ += /obj/effect/decal/cleanable/spiderling_remains
 			random_junk_ += /obj/item/remains/mouse
 			random_junk_ += /obj/item/remains/robot
 			random_junk_ += /obj/item/paper/crumpled

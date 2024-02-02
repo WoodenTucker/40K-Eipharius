@@ -2,45 +2,27 @@
 	name = OUTFIT_JOB_NAME("Rogue Trader")
 	head = /obj/item/clothing/head/rt
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	suit = /obj/item/clothing/suit/armor/rtcloak
+	suit = /obj/item/clothing/suit/armor/rtcloak2
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare/rt
+	mask = /obj/item/clothing/mask/gas/half/cadianrespirator/rt
 	glasses = /obj/item/clothing/glasses/sunglasses
-	uniform = /obj/item/clothing/under/rank/roguetrader
+	uniform = /obj/item/clothing/under/rank/principalagent
 	belt = /obj/item/gun/energy/las/laspistol/lord
 	back = /obj/item/storage/backpack/satchel/warfare
-	l_ear = /obj/item/device/radio/headset/headset_cargo
+	l_ear = /obj/item/device/radio/headset/heads/rt
 	shoes = /obj/item/clothing/shoes/jackboots/noble
+	r_pocket = /obj/item/storage/box/coin
 	id_type = /obj/item/card/id/gold
 	pda_type = null
 	pda_slot = null
 	backpack_contents = list(
 	/obj/item/storage/box/ids = 1,
 	/obj/item/stack/thrones/ten = 1,
-	/obj/item/stack/thrones2/twenty = 1,
-	/obj/item/stack/thrones3/twenty = 1,
-	/obj/item/reagent_containers/food/snacks/bigbiteburger
+	/obj/item/reagent_containers/food/snacks/bigbiteburger,
+	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/paper/administratum/lambda = 1,
+	/obj/item/paper/administratum/weapon5 = 1,
 )
-
-/decl/hierarchy/outfit/job/kasrkin
-	name = OUTFIT_JOB_NAME("Veteran Kasrkin")
-	uniform = /obj/item/clothing/under/rank/principalagent
-	suit = /obj/item/clothing/suit/armor/kasrkin
-	back = /obj/item/storage/backpack/satchel/warfare
-	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/helmet/kasrkin
-	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
-	glasses = /obj/item/clothing/glasses/cadian
-	id = /obj/item/card/id/dog_tag/guardsman
-	l_ear = /obj/item/device/radio/headset/headset_cargo
-	r_ear = null
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/device/flashlight/lantern
-	suit_store = /obj/item/gun/energy/las/hotshot
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/cell/lasgun/hotshot = 2,
-	)
 
 /decl/hierarchy/outfit/job/scion
 	name = OUTFIT_JOB_NAME("Tempestus Scion")
@@ -54,15 +36,18 @@
 	glasses = /obj/item/clothing/glasses/cadian
 	id = /obj/item/card/id/dog_tag/guardsman
 	l_ear = /obj/item/device/radio/headset/heads/hos
-	r_ear = /obj/item/device/flashlight/lantern
+	r_ear = /obj/item/device/flashlight/
 	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/storage/box/coin
 	r_pocket = null
 	suit_store = /obj/item/gun/energy/las/hotshot
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/paper/administratum/vermillion = 1,
+	/obj/item/paper/administratum/weapon5 = 1,
 	)
-/*
+
 /decl/hierarchy/outfit/job/cargo/janissary
 	name = OUTFIT_JOB_NAME("Vessorine Janissary")
 	uniform = /obj/item/clothing/under/rank/cargotech
@@ -71,12 +56,31 @@
 	id_type = /obj/item/card/id/shared/cargo
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	back = /obj/item/storage/backpack/satchel/warfare
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/heads/rt
 	l_hand = /obj/item/toy/katana/strong
+	r_pocket = /obj/item/storage/box/coin
 	suit_store = /obj/item/gun/energy/las/lasgun
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/stack/thrones3/ten = 1)
-*/
+
+/decl/hierarchy/outfit/job/cargo/noble
+	name = OUTFIT_JOB_NAME("Noble")
+	uniform = /obj/item/clothing/under/rank/principalagent
+	suit = null
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	id_type = /obj/item/card/id/key/super/daemon
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	back = /obj/item/storage/backpack/satchel/warfare
+	l_ear = /obj/item/device/radio/headset/heads/rt
+	l_hand = /obj/item/gun/projectile/talon/renegade
+	r_pocket = /obj/item/storage/box/coin
+	suit_store = null
+	backpack_contents = list(
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/paper/administratum/omega = 1,
+	/obj/item/paper/administratum/weapon5 = 1,
+	/obj/item/stack/thrones/ten = 2,)

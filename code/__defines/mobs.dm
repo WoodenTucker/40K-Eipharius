@@ -282,18 +282,20 @@
 #define SPECIES_EGYNO "Egyno"
 #define SPECIES_ELDAR "Eldar"
 #define SPECIES_ORK "Ork"
-#define SPECIES_ORK_GRETCHIN "Gretchin"
+#define SPECIES_GRET "Gretchin"
 #define SPECIES_ORK_NOB "Ork Nob"
 #define SPECIES_ORK_MEK "Mekboy"
 #define SPECIES_ORK_BOSS "Warboss"
 #define SPECIES_KROOT "Kroot"
 #define SPECIES_TAU "Tau"
-#define SPECIES_BLOODPACT "Bloodpact"
+#define SPECIES_BLOODPACT "Sekites"
 #define SPECIES_SKITARII "Skitarii"
 #define SPECIES_ASTARTES "Astartes"
 #define SPECIES_TYRANID "Tyranids"
 #define SPECIES_OGRYN "Ogryn"
 #define SPECIES_RAT "Skaven"
+#define SPECIES_SCION "Tempestus Scion"
+#define SPECIES_OFFICER "Imperial Guard Officer"
 
 #define SURGERY_CLOSED 0
 #define SURGERY_OPEN 1

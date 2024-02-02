@@ -3,11 +3,6 @@
 		user.visible_message("<font size=1>[user.name] looks at [src].</font>")
 
 		if(get_dist(user,src) > 7)//Don't get descriptions of things far away.
-			if(ishuman(user))
-				var/mob/living/carbon/human/H = user
-				if(H.warfare_faction != src.warfare_faction)
-					to_chat(user, "<span class='warning'><big><b>They don't seem to be apart of the Imperium</b></big></span>")
-
 			if(crouching)
 				to_chat(user, "<span class='warning'>They are crouching!</span>")
 			to_chat(user, "<span class='info'>It's too far away to see clearly.</span>")
@@ -64,21 +59,6 @@
 	var/is_synth = isSynthetic()
 
 	msg += "<br>"
-
-	if(isChild())
-		msg += "<b>[T.He] is but a child!</b>\n"
-
-	if(ishuman(user))
-		var/mob/living/carbon/human/H = user
-		if(H.warfare_faction != src.warfare_faction)
-			msg += "<span class='warning'><big><b>They don't seem to be apart of the Imperium</b></big></span>\n"
-
-		if(H != src)
-			if(H.warfare_faction == src.warfare_faction)
-				if(istype(H.squad, src.squad))
-					msg += "<b><big>[T.He] is someone I know.</big></b>\n"
-
-
 
 	if((!skipface || wear_id) && src != user)
 		if(ishuman(user))//Social class descriptions. They go at the top they're very important.
@@ -339,7 +319,10 @@
 	if(skinned == 1)
 		msg += "[T.He] [T.is] mangled, someone or something has torn the skin from their corpse!\n"
 	if(user.mind.special_role == "Nurgle Cultist" || user.mind.special_role == "Khorne Cultist" || user.mind.special_role == "Slaanesh Cultist" || user.mind.special_role == "Tzeentch Cultist")
-		msg += "<span class='warning'>[T.He] [T.is] similar to you somehow but you can't quite figure out how...\n</span>"
+		if(prob(8))
+			msg += "<span class='warning'>[T.He] [T.is] similar to you somehow but you can't quite figure out how...\n</span>"
+	if(user.mind.special_role == "Genestealer Cultist")
+		msg += "<span class='warning'>[T.He] [T.is] another servant of the Four-Armed Emperor!\n</span>"
 	if(warfare_faction == TYRANIDS)
 		msg += "A horrifying xeno!\n"
 

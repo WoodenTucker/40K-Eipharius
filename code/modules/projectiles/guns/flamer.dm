@@ -50,7 +50,7 @@
 
 /obj/item/gun/flamer/proc/unleash_flame(atom/target, mob/living/user)
 	set waitfor = 0
-	var/burnlevel = 50
+	var/burnlevel = 10
 	var/burntime = 40
 	var/fire_color = "red"
 	var/list/turf/turfs = getline2(user,target)
@@ -166,7 +166,7 @@
 	icon = 'icons/effects/fire.dmi'
 	icon_state = "red_2"
 	layer = BELOW_OBJ_LAYER
-	var/firelevel = 12 //Tracks how much "fire" there is. Basically the timer of how long the fire burns
+	var/firelevel = 2 //Tracks how much "fire" there is. Basically the timer of how long the fire burns
 	var/burnlevel = 10 //Tracks how HOT the fire is. This is basically the heat level of the fire and determines the temperature.
 	var/flame_color = "red"
 	var/canSpreadDir = NORTH | SOUTH | EAST | WEST

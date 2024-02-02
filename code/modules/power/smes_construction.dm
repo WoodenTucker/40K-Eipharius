@@ -12,7 +12,7 @@
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "smes_coil"			// Just few icons patched together. If someone wants to make better icon, feel free to do so!
 	w_class = ITEM_SIZE_LARGE							// It's LARGE (backpack size)
-	origin_tech = list(TECH_MATERIAL = 7, TECH_POWER = 7, TECH_ENGINEERING = 5)
+	origin_tech = list(TECH_MATERIAL = 4, TECH_POWER = 4, TECH_ENGINEERING = 3)
 	var/ChargeCapacity = 50 KILOWATTS
 	var/IOCapacity = 250 KILOWATTS
 

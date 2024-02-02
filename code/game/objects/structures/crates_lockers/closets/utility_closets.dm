@@ -13,6 +13,70 @@
 /*
  * Emergency Closet
  */
+/obj/structure/closet/hive
+	name = "fancy cabinet"
+	desc = "To store rich and fancy things on it."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "fancyc_closed"
+	icon_opened = "fancyc_open"
+	icon_closed = "fancyc_closed"
+
+/obj/structure/closet/hive/fancy
+	name = "fancy wardrobe"
+	desc = "Store your exotic and unique clothes here."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "fancycloset_closed"
+	icon_opened = "fancycloset_open"
+	icon_closed = "fancycloset_closed"
+
+/obj/structure/closet/hive/luxury
+	name = "luxurious cabinet"
+	desc = "To keep things such as gold bars, exotic drugs and weapons, now in style."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "luxuryc_closed"
+	icon_opened = "luxuryc_open"
+	icon_closed = "luxuryc_closed"
+
+/obj/structure/closet/hive/wood
+	name = "wooden closet"
+	desc = "Although a bit old, it can still store things with no problem."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "woode_closed"
+	icon_opened = "woode_open"
+	icon_closed = "woode_closed"
+
+/obj/structure/closet/hive/narnia
+	name = "polished wood closet"
+	desc = "Store your fuzzy clothes here, or hope you end in a fantasy world when you enter on it, which wont happen."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "narnia_closed"
+	icon_opened = "narnia_open"
+	icon_closed = "narnia_closed"
+
+/obj/structure/closet/hive/iron_c
+	name = "iron cabinet"
+	desc = "A somewhat rusty iron cabinet."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "iron_cabinet_closed"
+	icon_opened = "iron_cabinet_open"
+	icon_closed = "iron_cabinet_closed"
+
+/obj/structure/closet/hive/darkwood
+	name = "darkwood cabinet"
+	desc = "A darkwood cabinet."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "dark_cabinet_closed"
+	icon_opened = "dark_cabinet_open"
+	icon_closed = "dark_cabinet_closed"
+
+/obj/structure/closet/hive/metal
+	name = "metal locker"
+	desc = "A metal locker, seems to be a bit old."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "metal_locker_closed"
+	icon_opened = "metal_locker_open"
+	icon_closed = "metal_locker_closed"
+
 /obj/structure/closet/emcloset
 	name = "emergency closet"
 	desc = "It's a storage unit for emergency breathmasks and o2 tanks."

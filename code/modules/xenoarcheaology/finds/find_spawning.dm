@@ -345,7 +345,7 @@
 	find_type = ARCHAEO_CLAYMORE
 
 /obj/item/archaeological_find/sword/spawn_item()
-	return new /obj/item/material/sword(loc)
+	return new /obj/item/melee/sword(loc)
 
 /obj/item/archaeological_find/robes
 	item_type = "garments"

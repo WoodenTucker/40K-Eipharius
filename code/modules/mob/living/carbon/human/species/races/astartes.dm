@@ -8,8 +8,8 @@ Astartes
 	name = SPECIES_ASTARTES
 	name_plural = "Astartes"
 	primitive_form = SPECIES_HUMAN
-	brute_mod =      0.8                    //
-	burn_mod =       0.8                  //
+	brute_mod =      0.7                   //
+	burn_mod =       0.7                  //
 	unarmed_types = list(/datum/unarmed_attack/stomp/astartes, /datum/unarmed_attack/kick/astartes, /datum/unarmed_attack/punch/astartes, /datum/unarmed_attack/bite/astartes)
 	blurb = "The Space Marines or Adeptus Astartes are foremost amongst the defenders of Humanity, the greatest of the Emperor of Mankind's Warriors. They are barely human at all, but superhuman; having been made superior in all respects to a normal man by a harsh regime of genetic modification, psycho-conditioning and rigorous training. Untouched by disease and can take a wound that could kill a normal human instantly. Using ancient power armor that can augment their abilities and wielding the best weapons known to man."
 	min_age = 25
@@ -20,8 +20,8 @@ Astartes
 	damage_mask = 'icons/mob/human_races/masks/dam_mask_human.dmi'
 	blood_mask = 'icons/mob/human_races/masks/blood_human.dmi'
 	eye_icon_location = 'icons/mob/astartes_face.dmi'
-	blood_volume = 700 // how much blood an Astartes has
-	slowdown = -0.8 //Increased move speed
+	blood_volume = 620 // how much blood an Astartes has
+	slowdown = -0.1 //Increased move speed
 	eye_icon = "eyes_s"
 	gluttonous = GLUT_ITEM_NORMAL
 	total_health = 350 // a normal human has 200 brain health, Astartes have 350 //P.S this is brain health
@@ -32,7 +32,7 @@ Astartes
 	genders = list(MALE)
 	teeth_type = /obj/item/stack/teeth/human //Teeth
 	//sexybits_location = BP_GROIN //dude, they have no balls - they actually do, it's old myth since they have libido being put down to the rock bottom
-	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_SLIP
+	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_SLIP
 	inherent_verbs = list(
 	/mob/living/carbon/human/astartes/proc/chapterselect,
 	/mob/living/carbon/human/proc/astachaos,
@@ -67,6 +67,15 @@ Astartes
 		BP_R_HAND = list("path" = /obj/item/organ/external/hand/right/unbreakable/astartes),
 		BP_L_FOOT = list("path" = /obj/item/organ/external/foot/unbreakable/astartes),
 		BP_R_FOOT = list("path" = /obj/item/organ/external/foot/right/unbreakable/astartes)
+		)
+
+	has_organ = list(
+		BP_EYES =     /obj/item/organ/internal/eyes/astartes,
+		BP_HEART =    /obj/item/organ/internal/heart,
+		BP_BRAIN =    /obj/item/organ/internal/brain,
+		BP_LUNGS =   /obj/item/organ/internal/lungs/astartes,
+		BP_LIVER =     /obj/item/organ/internal/liver/astartes,
+		BP_KIDNEYS =     /obj/item/organ/internal/kidneys
 		)
 
 //gives them the astartes aura
@@ -532,7 +541,7 @@ Astartes
 /obj/item/organ/external/chest/unbreakable/astartes
 	dislocated = -1
 	arterial_bleed_severity = 0.1
-	cannot_break = 1
+	cannot_break = 0
 
 /obj/item/organ/external/groin/unbreakable/astartes
 	dislocated = -1
@@ -594,5 +603,5 @@ Astartes
 /obj/item/organ/external/head/unbreakable/astartes
 	dislocated = -1
 	arterial_bleed_severity = 0.1
-	cannot_break = 1
+	cannot_break = 0
 	gibbable = TRUE

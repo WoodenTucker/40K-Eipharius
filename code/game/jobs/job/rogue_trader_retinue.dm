@@ -1,18 +1,21 @@
+// NOBLE HOUSE
+
+
 //  Trader House
 
 /datum/job/roguetrader
 	title = "Rogue Trader"
 	department = "Rogue Trader"
 	head_position = 1
-	department_flag = CIV
+	department_flag = SUP
 	social_class = SOCIAL_CLASS_MAX
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 0
-	supervisors = "Yourself."
+	supervisors = "House Vane."
 	selection_color = "#315dd4"
 	req_admin_notify = 1
-	access = list() 			//See get_access()
+	access = list(247,355,268,225,267,268,269,270,355,271,272,273,access_bar,access_village,access_daemon)			//See get_access()
 	minimal_access = list() 	//See get_access()
 	minimal_player_age = 25
 	economic_modifier = 20
@@ -26,23 +29,24 @@
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8
-	cultist_chance = 100
+	cultist_chance = 40
 
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Rogue Trader [current_name]")
+		H.fully_replace_character_name("Rogue Trader [current_name] Vane") // No title testing. 
+		H.get_idcard()?.access = list(247,355,268,225,267,268,269,270,355,271,272,273,access_bar,access_village,access_daemon)
 		H.add_stats(rand(14,18), rand(14,18), rand(14,18), rand(14,18))
 		H.add_skills(rand(6,10),rand(6,10),rand(5,6),rand(1,8),rand(1,8)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.witchblood()
 		H.warfare_faction = IMPERIUM
-		H.say(":v [title] reporting for duty!")
 		H.verbs += list(/mob/living/carbon/human/proc/hire)
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Rogue Trader, taking residence upon this world to gain power and prestige. You have your mercenaries. Your Veteran and your Xeno. Buy and sell well in your Bazaar. Overthrow the Governorship with or without the heir if the opportunity presents itself.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Rogue Trader tied directly to the Vane Dynasty, one of many heirs who might one day inherit a seat of power that would grant dominion over the Segmentum itself, your Warrant of Trade and it's required letters of marque were built upon the industries of war and the conquest of xenos worlds across the fringe. Many of the mercenaries in your employ are turncoats who betrayed the very species you eradicated. The brutal nature of your conquests and of House Vane's... methods in acquiring your letters of marque create the assurance that failure here on Messina will lead to your untimely end and that of your children.</font></b></span>")
 
 
 /datum/job/captain/equip(var/mob/living/carbon/human/H)
@@ -53,69 +57,65 @@
 /datum/job/captain/get_access()
 	return get_all_station_access()
 
-/datum/job/vetmerc
-	title = "Veteran Mercenary"
-	department_flag = CIV
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "The Rogue Trader"
+/datum/job/janissary
+	title = "Vessorine Janissary"
+	department_flag = SUP
+	total_positions = 0 // Disabled for now.
+	spawn_positions = 0
+	supervisors = "the Rogue Trader and House Vane"
 	selection_color = "#315dd4"
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MED
 	announced = 0
-	access = list(access_bar, access_village, access_village, access_administratum, access_change_ids, access_keycard_auth,)
-	minimal_access = list(access_bar, access_village, access_village, access_administratum, access_change_ids, access_keycard_auth,)
+	access = list(247,355,268,225,267,268,269,270,355,271,272,273) 
 	minimal_player_age = 3
 	ideal_character_age = 40
-	outfit_type = /decl/hierarchy/outfit/job/kasrkin
-	alt_titles = list(
-		"Veteran Kasrkin" = /decl/hierarchy/outfit/job/kasrkin,/*
-		"Tempestus Scion" = /decl/hierarchy/outfit/job/scion,*/
-
-		)
+	outfit_type = /decl/hierarchy/outfit/job/cargo/janissary
 	latejoin_at_spawnpoints = 1
-	auto_rifle_skill = 10 // veteran
-	semi_rifle_skill = 10
-	sniper_skill = 10
-	shotgun_skill = 10
-	lmg_skill = 10
-	smg_skill = 10
-	cultist_chance = 10
+	auto_rifle_skill = 8
+	semi_rifle_skill = 8
+	sniper_skill = 8
+	shotgun_skill = 8
+	lmg_skill = 8
+	smg_skill = 8
+	cultist_chance = 5
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("[current_name]")
-		H.add_stats(rand(18,20), rand(16,18), rand(18,19), rand(10,15))
-		H.add_skills(rand(10,12),rand(9,10),rand(3,5),5,rand(2,4)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(16,18), rand(16,18), rand(18,19), rand(10,13)) // Vessorine are the strongest, most formidable warriors in The Imperium. On the same level as Cadian Kasrkin.
+		H.add_skills(rand(13,14),rand(9,10),rand(3,5),5,rand(2,4)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
-		H.witchblood()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
-		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Veteran Kasrkin. In service as a Mercenary to the Rogue Trader. Follow their word, and try not to be too racist against their Xeno Mercenary. (OOC: Abandoning the Rogue Trader's Bazaar and commanding the Guardsmen is against server rules. The RT pays your paycheck. Only listen to them)</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>Three concepts hold primacy in Vessorine clan society to the exclusion of nearly all else: property, warcraft, and currency. The scarcity of resources and rocky landscape of Vessor made the ownership of arable land and grazing beasts one of the most important aspects of their primitive society. The populace grouped into clans for increased security and resources, and though the leader of a clan holds the title of Clansire, the term refers neither to patrilineal nor matrilineal descent. From an early age, typically after First Bonding, both male and female children begin training as janissaries. They undergo training to enhance their strength, stamina, and agility, sometimes doing so with only the food and water they can find in the wilderness. They also learn the three primary Vessorine battle arts: open-hand, blade, and gun lore. By the time they participate in their first contract, an ascension ritual called Second Bonding, they are formidable warriors equal to any in the Imperium. In preparation for Second Bonding, janissaries receive their first repatriation tattoo, which declares the bond a clan will pay for the return of their soldier if captured.</font></b></span>")
 
 /datum/job/xenomerc
 	title = "Xeno Mercenary"
-	department_flag = CIV
+	department_flag = SUP
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "The Rogue Trader"
+	supervisors = "The Rogue Trader and House Vane"
 	selection_color = "#315dd4"
 	latejoin_at_spawnpoints = TRUE
+	access = list(247,355,268,225,267,268,269,270,355,271,272,273,access_bar,access_village,access_daemon)
 	announced = FALSE
-	cultist_chance = 5
+	cultist_chance = 0
 
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
+		H.get_idcard()?.access = list(247,355,268,225,267,268,269,270,355,271,272,273,access_bar,access_village,access_daemon)
 		H.add_stats(rand(16,22), rand(16,22), rand(17,20), rand (6,40)) //its a xeno mercenary, random shit.
 		H.add_skills(rand(10,12),rand(9,10),rand(3,5),5,rand(2,4)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.assign_random_quirk()
 		H.witchblood()
 		H.stat = UNCONSCIOUS
@@ -140,7 +140,7 @@ Mercenary System
 	if(src.stat == DEAD)
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
-
+	src.verbs -= list(/mob/living/carbon/human/proc/mercenaryclass)
 	var/fates = list("Kroot Shaper", "Ork Freeboota", /*"Eldar Corsair"*/)
 
 
@@ -363,7 +363,7 @@ Mercenary System
 		H.warfare_faction = IMPERIUM
 		H.adjustStaminaLoss(-INFINITY)
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Tempestus Scion attached to the retinue of the Lord Trader, your services ultimately being in the protection of imperial assets here on Eipharius on behalf of the Astra Militarum. It's barely been a week since leaving your Regiment and you are still adjusting to the new reality of your posting. Loyal to the Emperor above all else, Tempestus Scions provide the Imperial High Command with a core of flexible, nigh-incorruptible soldiers. Deployed sparingly, they can be depended upon to complete any mission, no matter how deadly. Racing into battle aboard armoured transports or plummeting down on Grav-Chutes, the Scions are the sharp edge of the Imperial Guard war machine.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Tempestus Scion attached to the retinue of the Lord Trader, your services ultimately being in the protection of imperial assets here on Messina on behalf of the Astra Militarum. It's barely been a week since leaving your Regiment and you are still adjusting to the new reality of your posting. Loyal to the Emperor above all else, Tempestus Scions provide the Imperial High Command with a core of flexible, nigh-incorruptible soldiers. Deployed sparingly, they can be depended upon to complete any mission, no matter how deadly. Racing into battle aboard armoured transports or plummeting down on Grav-Chutes, the Scions are the sharp edge of the Imperial Guard war machine.</font></b></span>")
 
 
 */

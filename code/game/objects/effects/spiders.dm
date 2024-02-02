@@ -71,7 +71,7 @@
 	else if(istype(mover, /obj/item/projectile))
 		return prob(30)
 	return 1
-
+/*
 /obj/effect/spider/eggcluster
 	name = "egg cluster"
 	desc = "They seem to pulse slightly with an inner life."
@@ -109,7 +109,7 @@
 				O.implants += spiderling
 		qdel(src)
 
-/obj/effect/spider/spiderling
+/obj/effect/spider/spiderling // re-enable spiderling after fixing all the lag it makes
 	name = "spiderling"
 	desc = "It never stays still for long."
 	icon_state = "guard"
@@ -306,3 +306,4 @@
 	for(var/atom/movable/A in contents)
 		A.dropInto(loc)
 	return ..()
+*/

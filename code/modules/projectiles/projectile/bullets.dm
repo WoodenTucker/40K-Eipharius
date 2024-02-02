@@ -111,7 +111,7 @@
 	icon_state = "shot" //TODO: would be nice to have it's own icon state
 	range = 10 	//These disappear after a short distance.
 	var/pellets = 4			//number of pellets
-	var/range_step = 2		//projectile will lose a fragment each time it travels this distance. Can be a non-integer.
+	var/range_step = 3		//projectile will lose a fragment each time it travels this distance. Can be a non-integer.
 	var/base_spread = 40	//lower means the pellets spread more across body parts. If zero then this is considered a shrapnel explosion instead of a shrapnel cone
 	var/spread_step = 10	//higher means the pellets spread more across body parts with distance
 	light_power = 9 //No tracers.
@@ -174,35 +174,96 @@
 /obj/item/projectile/bullet/pistol
 	damage = 30 //9mm
 	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
-	armor_penetration = 0
+	armor_penetration = 24
 
 /obj/item/projectile/bullet/pistol/medium
 	damage = 35 //.45
-	armor_penetration = 10
+	armor_penetration = 26
 	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
 
 /obj/item/projectile/bullet/pistol/medium/ap
-	damage = 40 //.45
-	armor_penetration = 20
-	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
+	damage = 35 //.45
+	armor_penetration = 34
 
 /obj/item/projectile/bullet/pistol/medium/ms
-	damage = 55 //.45
-	armor_penetration = -20
-	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
+	damage = 45 //.45
+	armor_penetration = 24
+
+/obj/item/projectile/bullet/pistol/medium/kp
+	damage = 35 //.45
+	armor_penetration = 38
+	penetrating = 1
+
+/obj/item/projectile/bullet/pistol/strong //matebas
+	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
+	damage = 45 //.50AE
+	armor_penetration = 28
+
+/obj/item/projectile/bullet/pistol/strong/ap
+	damage = 54 //.50AE
+	armor_penetration = 36
+
+/obj/item/projectile/bullet/pistol/strong/kp
+	damage = 54 //.50AE
+	armor_penetration = 40
+	penetrating = 1
+
+/obj/item/projectile/bullet/pistol/strong/ms
+	damage = 55 //.50AE
+	armor_penetration = 28
 
 /obj/item/projectile/bullet/pistol/revolver
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
-	damage = 45 // .357
-	armor_penetration = 25
+	damage = 40 // .357
+	armor_penetration = 28
 
 /obj/item/projectile/bullet/pistol/revolver/ap
-	damage = 50
+	damage = 49
+	armor_penetration = 36
+
+/obj/item/projectile/bullet/pistol/revolver/kp
+	damage = 49
 	armor_penetration = 40
+	penetrating = 1
 
 /obj/item/projectile/bullet/pistol/revolver/ms
-	damage = 70
-	armor_penetration = -20
+	damage = 50
+	armor_penetration = 28
+
+/obj/item/projectile/bullet/pistol/medium/revolver
+	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
+	damage = 40 //.44 magnum or something
+	armor_penetration = 28
+
+/obj/item/projectile/bullet/pistol/medium/revolver/ap
+	damage = 40
+	armor_penetration = 36
+
+/obj/item/projectile/bullet/pistol/medium/revolver/kp
+	damage = 40
+	armor_penetration = 40
+	penetrating = 1
+
+/obj/item/projectile/bullet/pistol/medium/revolver/ms
+	damage = 50
+	armor_penetration = 28
+
+/obj/item/projectile/bullet/pistol/strong/revolver
+	damage = 40
+	armor_penetration = 28
+
+/obj/item/projectile/bullet/pistol/strong/revolver/ap
+	damage = 40
+	armor_penetration = 36
+
+/obj/item/projectile/bullet/pistol/strong/revolver/kp
+	damage = 40
+	armor_penetration = 40
+	penetrating = 1
+
+/obj/item/projectile/bullet/pistol/strong/revolver/ms
+	damage = 50
+	armor_penetration = 28
 
 /obj/item/projectile/bullet/pistol/rubber //"rubber" bullets
 	name = "rubber bullet"
@@ -211,27 +272,34 @@
 	agony = 30
 	embed = 0
 	sharp = 0
-	armor_penetration = 1
+	armor_penetration = 20
 
 /* shotgun projectiles */
 
 /obj/item/projectile/bullet/shotgun
 	name = "slug"
 	fire_sound = 'sound/weapons/gunshot/shotgun3.ogg'
-	damage = 75
-	armor_penetration = 15
+	damage = 65
+	armor_penetration = 35
+
+/obj/item/projectile/bullet/shotgun/kp
+	name = "KP slug"
+	fire_sound = 'sound/weapons/gunshot/shotgun3.ogg'
+	damage = 65
+	armor_penetration = 45
+	penetrating = 1
 
 /obj/item/projectile/bullet/shotgun/ms
 	name = "MS slug"
 	fire_sound = 'sound/weapons/gunshot/shotgun3.ogg'
-	damage = 90
-	armor_penetration = -20
+	damage = 75
+	armor_penetration = 35
 
 /obj/item/projectile/bullet/shotgun/beanbag		//because beanbags are not bullets
 	name = "beanbag"
 	check_armour = "melee"
 	damage = 10
-	armor_penetration = -5
+	armor_penetration = 28
 	agony = 70
 	embed = 0
 	sharp = 0
@@ -242,6 +310,7 @@
 	name = "buckshot"
 	fire_sound = 'sound/weapons/gunshot/shotgun3.ogg'
 	damage = 25
+	armor_penetration = 27
 	pellets = 10
 	range_step = 3
 	spread_step = 8
@@ -252,76 +321,97 @@
 /obj/item/projectile/bullet/rifle/kroot
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	penetrating = TRUE // fuck that shit penetrative rounds
-	damage = 70
-	armor_penetration = 20
+	damage = 50
+	armor_penetration = 45
 
 /obj/item/projectile/bullet/rifle
-	damage = 55
-	armor_penetration = 10
+	damage = 40
+	armor_penetration = 28
 	penetrating = TRUE
 
 /obj/item/projectile/bullet/rifle/a556
-	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
+	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
+	damage = 40
+	armor_penetration = 28
+
+/obj/item/projectile/bullet/rifle/a556/ap
+	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
+	damage = 40
+	armor_penetration = 36
+
+/obj/item/projectile/bullet/rifle/a556/ms
+	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
 	damage = 50
-	armor_penetration = 5
+	armor_penetration = 28
+
+/obj/item/projectile/bullet/rifle/a556/kp
+	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
+	damage = 40
+	armor_penetration = 40
+	penetrating = 1
 
 /obj/item/projectile/bullet/rifle/a762
-	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
-	damage = 65
-	armor_penetration = 20
-	penetrating = TRUE
-/*
+	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
+	damage = 50
+	armor_penetration = 30
+
 /obj/item/projectile/bullet/rifle/a762/ap
-	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
-	damage = 64
-	armor_penetration = 20
-	penetrating = TRUE
+	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
+	damage = 50
+	armor_penetration = 40
+
+/obj/item/projectile/bullet/rifle/a762/kp
+	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
+	damage = 50
+	armor_penetration = 45
+	penetrating = 1
 
 /obj/item/projectile/bullet/rifle/a762/ms
-	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
-	damage = 71
-	armor_penetration = -10
-	penetrating = TRUE
-*/
+	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
+	damage = 60
+	armor_penetration = 40
+
+
 /obj/item/projectile/bullet/rifle/a145
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
-	damage = 130
-	armor_penetration = 20
+	damage = 110
+	armor_penetration = 50
 	//hitscan = 1 //so the PTR isn't useless as a sniper weapon
-	penetration_modifier = 1.25
-	penetrating = 1
+	penetration_modifier = 1
+	penetrating = 2
 
 /obj/item/projectile/bullet/rifle/a145/apds
-	damage = 100
-	armor_penetration = 45
-	penetration_modifier = 1.5
-	penetrating = 1
+	damage = 110
+	armor_penetration = 65
+	penetration_modifier = 1
+	penetrating = 3
+
+/obj/item/projectile/bullet/rifle/a145/apds/bos
+	damage = 140
+	armor_penetration = 65
+	penetration_modifier = 1
+	penetrating = 2
 
 /* Miscellaneous */
 
 /obj/item/projectile/bullet/suffocationbullet//How does this even work?
 	name = "CO2 bullet"
-	damage = 55
+	damage = 65
+	armor_penetration = 35
 	damage_type = OXY
 
 /obj/item/projectile/bullet/cyanideround
 	name = "poison bullet"
-	damage = 55
+	damage = 65
+	armor_penetration = 35
 	damage_type = TOX
 
 /obj/item/projectile/bullet/burstbullet
 	name = "exploding bullet"
-	damage = 35
+	damage = 100
+	armor_penetration = 40
 	embed = 0
 	edge = 1
-
-/obj/item/projectile/bullet/bpistol
-	fire_sound = 'sound/effects/explosion1.ogg'
-
-/obj/item/projectile/bullet/bpistol/on_hit(var/atom/target, var/blocked = 0)
-	if(isturf(target))
-		explosion(target, -1, 0, 2)
-	..()
 
 /obj/item/projectile/bullet/blank
 	invisibility = 101
@@ -393,17 +483,214 @@
 	pixel_y = rand(-10,10)
 	..()
 
+
+
+
+	
+/obj/item/projectile/bullet/rifle/plasma
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	damage = 90
+	damage_type = BURN
+	armor_penetration = 46
+	penetration_modifier = 1.4
+	penetrating = TRUE
+
+
+/obj/item/projectile/bullet/rifle/plasma/pistol
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	damage = 80
+	damage_type = BURN
+	armor_penetration = 44
+	penetration_modifier = 1.2
+
+
+
+/obj/item/projectile/bullet/rifle/plasma/tau //TAU pulse weapons are plasma weapons bro
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	damage = 51
+	damage_type = BURN
+	armor_penetration = 44
+	penetration_modifier = 1.4
+
+
+
+
+
+
+
+
+
+
+//ELDAR
+
+/obj/item/projectile/bullet/rifle/shuriken/catapult
+	fire_sound = 'sound/weapons/gunshot/needler.ogg'
+	icon_state = "ion"
+	damage = 14
+	damage_type = BRUTE
+	armor_penetration = 44
+	penetration_modifier = 1
+
+/obj/item/projectile/bullet/rifle/shuriken/pistol
+	fire_sound = 'sound/weapons/gunshot/needler.ogg'
+	icon_state = "ion"
+	damage = 14
+	damage_type = BRUTE
+	armor_penetration = 44
+	penetration_modifier = 1
+	
+// XENOS
+/obj/item/projectile/bullet/rifle/pmag
+	fire_sound = 'sound/weapons/gunshot/needler.ogg'
+	icon_state = "pulse"
+	damage = 50
+	damage_type = BRUTE
+	armor_penetration = 44
+	penetration_modifier = 1
+	
+//MECHANICUS
+/obj/item/projectile/bullet/rifle/galvanic
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "ion"
+	damage = 55
+	damage_type = BRUTE
+	armor_penetration = 44
+	penetration_modifier = 2
+	var/heavy_effect_range = 1
+	var/light_effect_range = 1
+
+/obj/item/projectile/bullet/rifle/galvanic/fire
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "ion"
+	damage = 35
+	damage_type = BRUTE
+	armor_penetration = 38
+	penetration_modifier = 2
+	
+/obj/item/projectile/bullet/rifle/galvanic/fire/on_hit(var/atom/target, var/blocked = 0)
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+		if(!istype(H.wear_suit, /obj/item/clothing/suit/fire))
+			H.adjust_fire_stacks(20)
+			H.IgniteMob()
+		new /obj/flamer_fire(H.loc, 12, 10, "red", 1)
+
+/obj/item/projectile/bullet/rifle/galvanic/emp
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "ion"
+	damage = 15
+	damage_type = BURN
+	armor_penetration = 38
+	penetration_modifier = 1
+	on_impact(var/atom/A)
+		empulse(A, 1, 2)
+		return 1
+
+/obj/item/projectile/bullet/rifle/galvanic/airburst
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "ion"
+	damage = 40
+	damage_type = BRUTE
+	armor_penetration = 38
+
+/obj/item/projectile/bullet/rifle/galvanic/airburst/on_hit(var/atom/target)
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+		var/obj/item/organ/external/affecting = H.get_organ(pick("l_leg","l_arm","r_leg","r_arm", "head", "l_hand", "r_hand", "l_foot", "r_foot"))
+		affecting.droplimb(0, DROPLIMB_BLUNT)
+		if(prob(25))
+			affecting = H.get_organ(pick("l_leg","l_arm","r_leg","r_arm", "head", "l_hand", "r_hand", "l_foot", "r_foot"))
+			affecting.droplimb(0, DROPLIMB_BLUNT)
+			if(prob(25))
+				affecting = H.get_organ(pick("l_leg","l_arm","r_leg","r_arm", "head", "l_hand", "r_hand", "l_foot", "r_foot"))
+				affecting.droplimb(0, DROPLIMB_BLUNT)
+				return
+			else
+				return
+		else
+			return
+
+/obj/item/projectile/bullet/rifle/galvanic/pain
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "ion"
+	damage = 5
+	damage_type = BURN
+	armor_penetration = 40
+	agony = 150 //Might need reworking
+	taser_effect = 1
+
+/obj/item/projectile/bullet/pellet/shotgun/melta
+	fire_sound = 'sound/weapons/lasgun.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "lasbolt"
+	damage_type = BURN
+	penetration_modifier = 1
+	armor_penetration = 48
+	damage = 35
+	pellets = 1
+	range_step = 4 // do not touch
+	spread_step = 2
+	range = 16
+
+/obj/item/projectile/bullet/rifle/radcarbine
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "shot"
+	damage = 40
+	damage_type = BRUTE //Initial poisoning effect
+	armor_penetration = 44 
+	penetration_modifier = 2
+
+/obj/item/projectile/bullet/rifle/radcarbine/on_hit(var/atom/target, var/blocked = 0)
+	if(istype(target, /mob/living/carbon/human))
+		var/mob/living/carbon/human/M = target
+		M.apply_effect((rand(20,60)),IRRADIATE,0)
+
+/obj/item/projectile/bullet/rifle/radcarbine/radpistol
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "shot"
+	damage = 35
+	damage_type = BRUTE //Initial poisoning effect
+	armor_penetration = 44
+	penetration_modifier = 2
+
+/obj/item/projectile/bullet/rifle/radcarbine/radpistol/on_hit(var/atom/target, var/blocked = 0)
+	if(istype(target, /mob/living/carbon/human))
+		var/mob/living/carbon/human/M = target
+		M.apply_effect((rand(20,50)),IRRADIATE,0)
+	
+
+
+
+
+
+
+
+//UNIMPLEMENTED BELOW, FIX WHEN POSSIBLE
+
+
+/obj/item/projectile/bullet/rifle/plasma/cannon/orkish //three colors of green!
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	damage = 100
+	damage_type = BURN
+	armor_penetration = 44
+	penetration_modifier = 3
+	
+/obj/item/projectile/bullet/rifle/lascannon/melta/inferno
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "lasbolt"
+	damage = 25 //weaker than melta caus its a pistol
+	armor_penetration = 44
+
+
 /* ORKY BULLETS */
 
 /obj/item/projectile/bullet/ork
 	name = "scrap"
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
-	damage = 42
+	damage = 38
+	armor_penetration = 44
 
 /*
-
-
-//-----SPECIAL BOLT ROUNDS-----
 
 /obj/item/projectile/bullet/bpistol/kp
 	fire_sound = 'sound/effects/explosion1.ogg'
@@ -440,147 +727,26 @@
 /obj/item/projectile/bullet/rifle/lascannon
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 100
+	damage = 85
 	damage_type = BURN
-	armor_penetration = 10
+	armor_penetration = 44
 	penetration_modifier = 2
-	penetrating = TRUE
-
-/obj/item/projectile/bullet/rifle/plasma
-	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	damage = 100
-	damage_type = BURN
-	armor_penetration = 90
-	penetration_modifier = 1.4
 	penetrating = TRUE
 
 /obj/item/projectile/bullet/rifle/plasma/cannon //D E A T H
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	damage = 220
+	damage = 120
 	damage_type = BURN
-	armor_penetration = 100
-	penetration_modifier = 5
-
-/obj/item/projectile/bullet/rifle/plasma/cannon/orkish //three colors of green!
-	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	damage = 160
-	damage_type = BURN
-	armor_penetration = 100
+	armor_penetration = 48
 	penetration_modifier = 3
-
-/obj/item/projectile/bullet/rifle/plasma/pistol
-	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	damage = 80
-	damage_type = BURN
-	armor_penetration = 85
-	penetration_modifier = 1.2
-
-/obj/item/projectile/bullet/rifle/plasma/tau //TAU pulse weapons are plasma weapons bro
-	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	damage = 55
-	damage_type = BURN
-	armor_penetration = 10
-	penetration_modifier = 1.4
-
-
-
-/obj/item/projectile/bullet/pellet/shotgun/melta
-	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	icon_state = "lasbolt"
-	damage_type = BURN
-	penetration_modifier = 2
-	armor_penetration = 35//high penetration
-	damage = 60 //believe me, this is kinda of balanced.
-	pellets = 12
-	range_step = 2 //not sure what these two mean, but lets go with it!
-	spread_step = 4
-	range = 6 //short range
-
-
-
-
-
-/obj/item/projectile/bullet/rifle/lascannon/melta/inferno
-	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	icon_state = "lasbolt"
-	damage = 20 //weaker than melta caus its a pistol
-
-
-/obj/item/projectile/bullet/rifle/shuriken/catapult
-	fire_sound = 'sound/weapons/gunshot/needler.ogg'
-	icon_state = "ion"
-	damage = 25
-	damage_type = BRUTE
-	armor_penetration = 25
-	penetration_modifier = 2
-
-/obj/item/projectile/bullet/rifle/shuriken/pistol
-	fire_sound = 'sound/weapons/gunshot/needler.ogg'
-	icon_state = "ion"
-	damage = 20
-	damage_type = BRUTE
-	armor_penetration = 50
-	penetration_modifier = 2
-/obj/item/projectile/bullet/rifle/galvanic
-	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	icon_state = "ion"
-	damage = 80
-	damage_type = BRUTE
-	armor_penetration = 30
-	penetration_modifier = 2
-
-/obj/item/projectile/bullet/rifle/galvanic/fire
-	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	icon_state = "ion"
-	damage = 40
-	damage_type = BRUTE
-	armor_penetration = 30
-	penetration_modifier = 2
-
-/obj/item/projectile/bullet/rifle/galvanic/fire/on_hit(var/atom/target, var/blocked = 0)
-	if(ishuman(target))
-		var/mob/living/carbon/human/H = target
-		if(!istype(H.wear_suit, /obj/item/clothing/suit/fire))
-			H.adjust_fire_stacks(20)
-			H.IgniteMob()
-		new /obj/flamer_fire(H.loc, 12, 10, "red", 1)
-		if(H.isChild())
-			var/mob/living/carbon/human/F = firer
-			F.unlock_achievement(new/datum/achievement/child_fire())
-
-/obj/item/projectile/bullet/rifle/radcarbine
-	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	icon_state = "shot"
-	damage = 40
-	damage_type = TOX //Initial poisoning effect
-	armor_penetration = 75 //Dense, fast-moving round.
-	penetration_modifier = 2
-
-/obj/item/projectile/bullet/rifle/radcarbine/on_hit(var/atom/target, var/blocked = 0)
-	if(istype(target, /mob/living/carbon/human))
-		var/mob/living/carbon/human/M = target
-		M.apply_effect((rand(100,160)),IRRADIATE,0)
-
-/obj/item/projectile/bullet/rifle/radcarbine/radpistol
-	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	icon_state = "shot"
-	damage = 30
-	damage_type = TOX //Initial poisoning effect
-	armor_penetration = 50 //Dense, fast-moving round.
-	penetration_modifier = 2
-
-/obj/item/projectile/bullet/rifle/radcarbine/radpistol/on_hit(var/atom/target, var/blocked = 0)
-	if(istype(target, /mob/living/carbon/human))
-		var/mob/living/carbon/human/M = target
-		M.apply_effect((rand(80,140)),IRRADIATE,0)
-/*
+	
 /obj/item/projectile/bullet/rifle/exitus
 	name = "bullet"
 	icon_state = "bullet"
-	damage = 260 //Admin only spawn for now.
+	damage = 140
 	damage_type = BRUTE
 	check_armour = "bullet"
-	armor_penetration = 40
+	armor_penetration = 50
 	embed = 1
 	sharp = 1
 	light_power = 0
@@ -593,12 +759,12 @@
 	icon_state = "bullet"
 	damage = 25 //Admin only spawn for now.
 	damage_type = BRUTE
- // commented until no more errors
+
 /obj/item/projectile/bullet/rifle/exitus/explosive/on_hit(var/atom/target)
 	if(istype(target, /mob/living/carbon/human))
-	var/mob/living/carbon/human/M = target
-	M.gib()
-	qdel(M)
+		var/mob/living/carbon/human/M = target
+		M.gib()
+		qdel(M)
 
 /obj/item/projectile/bullet/rifle/exitus/toxin
 	damage_type = TOX
@@ -614,7 +780,4 @@
 			H.adjust_fire_stacks(60)
 			H.IgniteMob()
 		new /obj/flamer_fire(H.loc, 15, 14, "red", 1)
-		if(H.isChild())
-			var/mob/living/carbon/human/F = firer
-			F.unlock_achievement(new/datum/achievement/child_fire())
-*/
+

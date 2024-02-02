@@ -10,7 +10,7 @@
 	var/static/list/dust_cache
 
 /turf/space/New()
-	icon_state = "white"
+	icon_state = "fake"
 
 /turf/space/proc/build_dust_cache()
 	LAZYINITLIST(dust_cache)

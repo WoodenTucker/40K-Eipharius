@@ -2,8 +2,8 @@
 	name = "radio headset"
 	desc = "An updated, modular intercom that fits over the head. Takes encryption keys."
 	var/radio_desc = ""
-	icon_state = "headset"
-	item_state = "headset"
+	icon_state = "sec_headset"
+	item_state = "sec_headset"
 	matter = list(DEFAULT_WALL_MATERIAL = 75)
 	subspace_transmission = 1
 	canhear_range = 0 // can't hear headsets from very far away
@@ -219,9 +219,9 @@
 	ks1type = /obj/item/device/encryptionkey/red
 	ks2type = /obj/item/device/encryptionkey/heads/hop
 
-//unused rn
+//MAGISTRATUM
 /obj/item/device/radio/headset/headset_cargo
-	name = "supply radio headset"
+	name = "enforcer radio headset"
 	desc = "A headset used by the box pushers."
 	icon_state = "cargo_headset"
 	item_state = "headset"
@@ -231,7 +231,7 @@
 //basic 'common' vox
 /obj/item/device/radio/headset/headset_service
 	icon = 'icons/obj/radio.dmi'
-	name = "vox-caster headset"
+	name = "Standard Issue Vox"
 	desc = "A stripped down version of the standard Guard issue vox."
 	ks1type = /obj/item/device/encryptionkey/red
 	icon_state = "sec_headset"
@@ -244,20 +244,52 @@
 	icon = 'icons/obj/radio.dmi'
 	name = "Marshal vox"
 	desc = "A stripped down version of the standard Guard issue vox. This one has been upgraded with a com-link"
-	ks1type = /obj/item/device/encryptionkey/headset_sec
-	ks2type = /obj/item/device/encryptionkey/headset_com
+	ks1type = /obj/item/device/encryptionkey/headset_cargo
+	ks2type = /obj/item/device/encryptionkey/headset_sec
+	icon_state = "sec_headset"
+	item_state = "sec_headset"
+	slot_flags = SLOT_EARS
+	w_class = ITEM_SIZE_SMALL
+
+// CULT VOX
+/obj/item/device/radio/headset/cult1
+	icon = 'icons/obj/radio.dmi'
+	name = "Standard Issue Vox"
+	desc = "A stripped down version of the standard Guard issue vox. This one has been upgraded with a com-link"
+	ks1type = /obj/item/device/encryptionkey/red
+	ks2type = /obj/item/device/encryptionkey/cult1
+	icon_state = "sec_headset"
+	item_state = "sec_headset"
+	slot_flags = SLOT_EARS
+	w_class = ITEM_SIZE_SMALL
+
+/obj/item/device/radio/headset/cult2
+	icon = 'icons/obj/radio.dmi'
+	name = "Standard Issue Vox"
+	desc = "A stripped down version of the standard Guard issue vox. This one has been upgraded with a com-link"
+	ks1type = /obj/item/device/encryptionkey/red
+	ks2type = /obj/item/device/encryptionkey/cult2
 	icon_state = "sec_headset"
 	item_state = "sec_headset"
 	slot_flags = SLOT_EARS
 	w_class = ITEM_SIZE_SMALL
 
 //IMPORTANT - NEEDS TWEAKING DEPENDING ON IF ERTS ARE PLANNED TO BE USED
-/obj/item/device/radio/headset/ert
-	name = "emergency response team radio headset"
-	desc = "The headset of the boss's boss."
+/obj/item/device/radio/headset/ert // Nobles
+	name = "Standard Issue Vox"
+	desc = "A sekret headset"
 	icon_state = "com_headset"
 	item_state = "headset"
-	ks2type = /obj/item/device/encryptionkey/ert
+	ks1type = /obj/item/device/encryptionkey/red
+	ks2type = /obj/item/device/encryptionkey/secure1
+
+/obj/item/device/radio/headset/ert2 // Ganger and RT
+	name = "Standard Issue Vox"
+	desc = "A sekret headset"
+	icon_state = "com_headset"
+	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/red
+	ks2type = /obj/item/device/encryptionkey/secure2
 
 //I have no idea if this is used rn
 /obj/item/device/radio/headset/ia
@@ -265,6 +297,7 @@
 	desc = "The headset of your worst enemy."
 	icon_state = "com_headset"
 	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/red
 	ks2type = /obj/item/device/encryptionkey/heads/hos
 
 //standard inquisitional vox
@@ -286,8 +319,8 @@
 /obj/item/device/radio/headset/tau
 	name = "tau headset"
 	desc = "The headset of the greater good."
-	icon_state = "tau_headset"
-	item_state = "t_headset"
+	icon_state = "sec_headset"
+	item_state = "sec_headset"
 	ks2type = null //until there is a tau channel
 
 /obj/item/device/radio/headset/fire_warrior
@@ -307,8 +340,8 @@
 //standard guardsmen vox
 /obj/item/device/radio/headset/red_team
 	icon = 'icons/obj/radio.dmi'
-	name = "vox-caster headset"
-	desc = "A standard Guard issue vox-caster headset. Allows the wearer to communicate with the brass and pass along info/orders to his squadmates. Attach it to one of your ears."
+	name = "Standard Issue Vox"
+	desc = "A standard Guard issue Standard Issue Vox. Allows the wearer to communicate with the brass and pass along info/orders to his squadmates. Attach it to one of your ears."
 	ks1type = /obj/item/device/encryptionkey/red
 	ks2type = /obj/item/device/encryptionkey/red_alpha
 	icon_state = "sec_headset"
@@ -470,7 +503,7 @@
 	syndie = 1
 
 /obj/item/device/radio/headset/inquisition
-	name = "Vox Headset"
+	name = "Standard Issue Vox"
 	origin_tech = list(TECH_ILLEGAL = 2)
 	syndie = 1
 	ks1type = /obj/item/device/encryptionkey/inq
@@ -480,8 +513,20 @@
 	desc = "A command-level vox with high tiers of encryption."
 	icon_state = "com_headset"
 	item_state = "headset"
-	ks1type = /obj/item/device/encryptionkey/red
-	ks2type = /obj/item/device/encryptionkey/heads/captain
+	ks1type = /obj/item/device/encryptionkey/heads/captain
+	ks2type = /obj/item/device/encryptionkey/red
+	slot_flags = SLOT_EARS
+	w_class = ITEM_SIZE_SMALL
+	syndie = 1
+	origin_tech = list(TECH_ILLEGAL = 2)
+
+/obj/item/device/radio/headset/heads/gov
+	name = "governor's vox"
+	desc = "A command-level vox with high tiers of encryption."
+	icon_state = "com_headset"
+	item_state = "headset"
+	ks2type = /obj/item/device/encryptionkey/red
+	ks1type = /obj/item/device/encryptionkey/heads/captain2
 	slot_flags = SLOT_EARS
 	w_class = ITEM_SIZE_SMALL
 	syndie = 1
@@ -492,6 +537,17 @@
 	set_frequency(RED_FREQ)
 /obj/item/device/encryptionkey/inq
 	icon_state = "cypherkey"
-	channels = list("Imperial" = 1, "Inquisition" = 1, "Ecclesiarchy" = 1)
+	channels = list("Vox" = 1, "Vermilion" = 1, "Ecclesiarchy" = 1)
 	origin_tech = list(TECH_ILLEGAL = 2)
 	syndie = 1
+
+/obj/item/device/radio/headset/red_team/officer
+	icon = 'icons/obj/radio.dmi'
+	name = "Imperial Guard Officer's Vox"
+	desc = "A high-grade Guard issue Standard Issue Vox. Allows the wearer to communicate with their inferiors brass and pass along orders. Attach it to one of your ears."
+	ks1type = /obj/item/device/encryptionkey/red
+	ks2type = /obj/item/device/encryptionkey/heads/hos
+	icon_state = "sec_headset"
+	item_state = "sec_headset"
+	slot_flags = SLOT_EARS
+	w_class = ITEM_SIZE_SMALL

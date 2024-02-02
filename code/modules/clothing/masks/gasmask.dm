@@ -13,7 +13,7 @@
 	permeability_coefficient = 0.01
 	siemens_coefficient = 0.9
 	var/gas_filter_strength = 1			//For gas mask filters
-	var/list/filtered_gases = list("phoron", "sleeping_agent")
+	var/list/filtered_gases = list("phoron", "sleeping_agent", "corrupting", "polyacid", "Chlorine Gas")
 	armor = list(melee = 5, bullet = 5, laser = 5, energy = 0, bomb = 0, bio = 75, rad = 0)
 
 /obj/item/clothing/mask/gas/filter_air(datum/gas_mixture/air)
@@ -42,7 +42,7 @@
 	siemens_coefficient = 0.7
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
 	body_parts_covered = FACE|EYES
-	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 75, rad = 0)
+	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 75, rad = 0)
 
 /obj/item/clothing/mask/gas/security/agent
 	name = "inquisition gas mask"
@@ -54,7 +54,6 @@
 	unacidable = 1
 	w_class = ITEM_SIZE_SMALL
 	body_parts_covered = HEAD|FACE|EYES
-	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 75, rad = 0)
 
 /obj/item/clothing/mask/gas/half
 	name = "face mask"
@@ -65,15 +64,13 @@
 	body_parts_covered = FACE
 	flags_inv = HIDEEARS|HIDEFACE
 	w_class = ITEM_SIZE_SMALL
-	armor = list(melee = 10, bullet = 10, laser = 10, energy = 0, bomb = 0, bio = 55, rad = 0)
 
 //Plague Dr suit can be found in clothing/suits/bio.dm
 /obj/item/clothing/mask/gas/plaguedoctor
 	name = "plague doctor mask"
 	desc = "A modernised version of the classic design, this mask will not only filter out phoron but it can also be connected to an air supply."
 	icon_state = "plaguedoctor"
-	item_state = "gas_mask"
-	armor = list(melee = 0, bullet = 0, laser = 2,energy = 2, bomb = 0, bio = 90, rad = 0)
+	item_state = "plaguedoctor"
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
 	body_parts_covered = HEAD|FACE|EYES
 
@@ -81,10 +78,10 @@
 	name = "\improper SWAT mask"
 	desc = "A close-fitting tactical mask that can be connected to an air supply."
 	icon_state = "swat"
+	item_state = "swat"
 	siemens_coefficient = 0.7
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
 	body_parts_covered = FACE|EYES
-	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 75, rad = 0)
 
 /obj/item/clothing/mask/gas/swat/vox
 	name = "alien mask"
@@ -97,21 +94,23 @@
 	name = "tactical mask"
 	desc = "A close-fitting tactical mask that can be connected to an air supply."
 	icon_state = "swat"
+	item_state = "swat"
 	siemens_coefficient = 0.7
-	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 75, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
 
 /obj/item/clothing/mask/gas/techpriest
 	name = "mechanized visage"
-	desc = "Staring into the metallic visage its hard to believe this being is human..."
+	desc = "A half augmented mechanical visage, doesn't make wonders for your charisma, but does help you survive and thrive."
 	icon_state = "techpriest"
 	item_state = "techpriest"
+	down_icon_state = "techpriest"
 	flash_protection = FLASH_PROTECTION_MAJOR
 	siemens_coefficient = 0.7
-	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 95, rad = 40)
-	flags_inv = HIDEEARS|HIDEEYES
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
+	body_parts_covered = FACE|EYES|HEAD
 	canremove = 0
 	unacidable = 1
+	pull_mask = 1
 
 /obj/item/clothing/mask/gas/techpriest/skitarius
 	name = "mechanized visage"
@@ -120,8 +119,6 @@
 	item_state = "skitshoes"
 	flash_protection = FLASH_PROTECTION_MAJOR
 	siemens_coefficient = 0.7
-	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 95, rad = 40)
-	flags_inv = HIDEEARS|HIDEEYES
 	canremove = 0
 	unacidable = 1
 
@@ -217,30 +214,69 @@
 	desc = "Cadian-pattern Rebreather made for protection against common toxic gasses as well allows Guardsmen to operate in Airless condition for limited period."
 	icon_state = "ig_halfgas"
 	item_state = "ig_halfgas"
-	armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 95, rad = 0)
 	flags_inv = HIDEFACE
+
+/obj/item/clothing/mask/gas/half/cadianrespirator/rt
+	name = "Archeotech Respirator"
+	desc = "A metal filtration system for protection against common toxic gasses."
+	icon_state = "rtm"
+	item_state = "rtm"
+	flags_inv = HIDEFACE
+
+/obj/item/clothing/mask/gas/half/cadianrespirator/inquis
+	name = "Filtration Mask"
+	desc = "Cadian-pattern Rebreather made for protection against common toxic gasses as well allows Guardsmen to operate in Airless condition for limited period."
+	icon_state = "Stormtrooper Gasmask"
+	item_state = "Stormtrooper Gasmask"
 
 /obj/item/clothing/mask/gas/krieg
 	name = "Mark IXb Gas Mask"
 	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Krieg Guardsman."
 	icon_state = "kriegmask"
 	item_state = "kriegmask"
-	armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 95, rad = 0)
+	body_parts_covered = FACE|EYES|HEAD
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
 	unacidable = 1 //acid proof bitch
+
+/obj/item/clothing/mask/gas/maccabian
+	name = "Maccabian Metal Mask"
+	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Maccabian Guardsman."
+	icon_state = "M_Mask-Icon"
+	item_state = "M_Mask-Icon"
+	body_parts_covered = FACE|EYES|HEAD
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
+	unacidable = 1 //acid proof bitch
+
+/obj/item/clothing/mask/gas/maccabian/sergeant
+	name = "Maccabian Metal Mask"
+	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Maccabian Guardsman."
+	icon_state = "M_SMask-Icon"
+	item_state = "M_SMask-Icon"
+	body_parts_covered = FACE|EYES|HEAD
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
+	unacidable = 1 //acid proof bitch
+
+/obj/item/clothing/mask/gas/krieg/grenadier
+	name = "Mark IXc Gas Mask"
+	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Krieg Grenadier, with additional slight armor protection."
+	icon_state = "grenmask"
+	item_state = "grenmask"
+	body_parts_covered = FACE|EYES|HEAD
+
 
 /obj/item/clothing/mask/gas/krieg/medicae
 	name = "Mark IXb/M Gas Mask"
 	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Krieg Combat Medicae."
 	icon_state = "mkriegmask"
 	item_state = "mkriegmask"
+	body_parts_covered = FACE|EYES|HEAD
 
 /obj/item/clothing/mask/gas/commissar
 	name = "Mark IXb/C Gas Mask"
 	desc = "Krieg Regiment Commissar are issued with the same pattern of Gas mask like the others, However this one have slight different hue."
 	icon_state = "commask"
 	item_state = "commask"
-	armor = list(melee = 20, bullet = 20, laser = 20, energy = 20, bomb = 15, bio = 95, rad = 0)
+	body_parts_covered = FACE|EYES|HEAD
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
 	unacidable = 1 //acid proof
 
@@ -254,5 +290,3 @@
 	siemens_coefficient = 0
 	unacidable = 1
 	canremove = 0
-	armor = list(melee = 10, bullet = 75, laser = 75, energy = 75, bomb = 0, bio = 100, rad = 100) //Bullet resistant, because, well, sniper. Not designed for melee however.
-

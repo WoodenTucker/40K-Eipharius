@@ -35,17 +35,28 @@
 		return
 	return ..()
 */
+
 /obj/item/melee/classic_baton/trench_club
 	name = "trench club"
 	desc = "A truncheon for beating other people in the same trench as you."
 	icon_state = "trench_club1"
 	item_state = "WU-club"
-	force = 31 //These things pack a punch.
-	block_chance = 20
+	force = 25 //These things pack a punch.
+	block_chance = 25
+	armor_penetration = 20
 
 /obj/item/melee/classic_baton/trench_club/New()
 	..()
 	icon_state = "trench_club[rand(1,3)]"
+
+/obj/item/melee/classic_baton/trench_club/overseer
+	name = "shock club"
+	desc = "A truncheon for beating other people in the same trench as you."
+	icon_state = "trench_club1"
+	item_state = "WU-club"
+	force = 28 //These things pack a punch.
+	block_chance = 25
+	armor_penetration = 22
 
 //Telescopic baton
 /obj/item/melee/telebaton
@@ -56,7 +67,7 @@
 	item_state = "telebaton_0"
 	slot_flags = SLOT_BELT
 	w_class = ITEM_SIZE_SMALL
-	force = 5
+	force = 15
 	var/on = 0
 
 
@@ -69,7 +80,7 @@
 		icon_state = "telebaton_1"
 		item_state = "nullrod"//was teletbaton_1 but guess what... that icon doesn't exist
 		w_class = ITEM_SIZE_NORMAL
-		force = 20//quite robust
+		force = 26//quite robust
 		attack_verb = list("smacked", "struck", "slapped")
 	else
 		user.visible_message("<span class='notice'>\The [user] collapses their telescopic baton.</span>",\
@@ -106,7 +117,7 @@
 	icon_state = "crozius"
 	item_state = "crozius"
 	force = 30 //in conjunction with ass tardes str this thing is insane
-	armor_penetration = 70
+	armor_penetration = 22
 	throwforce = 1
 	throw_speed = 1
 	throw_range = 1

@@ -113,7 +113,7 @@
 /obj/item/mecha_parts/part/gygax_armour
 	name="Gygax Armour Plates"
 	icon_state = "gygax_armour"
-	origin_tech = list(TECH_MATERIAL = 6, TECH_COMBAT = 4, TECH_ENGINEERING = 5)
+	origin_tech = list(TECH_MATERIAL = 5, TECH_COMBAT = 3, TECH_ENGINEERING = 4)
 
 
 //////////// Durand
@@ -158,7 +158,7 @@
 /obj/item/mecha_parts/part/durand_armour
 	name="Dreadnought Armour Plates"
 	icon_state = "durand_armour"
-	origin_tech = list(TECH_MATERIAL = 5, TECH_COMBAT = 4, TECH_ENGINEERING = 5)
+	origin_tech = list(TECH_MATERIAL = 4, TECH_COMBAT = 3, TECH_ENGINEERING = 4)
 
 
 
@@ -196,7 +196,7 @@
 
 /obj/item/mecha_parts/chassis/phazon
 	name = "Phazon Chassis"
-	origin_tech = list(TECH_MATERIAL = 7)
+	origin_tech = list(TECH_MATERIAL = 6)
 
 	New()
 		..()
@@ -207,7 +207,7 @@
 	icon_state = "phazon_harness"
 	//construction_time = 300
 	//construction_cost = list(DEFAULT_WALL_MATERIAL=35000,"glass"=10000,"phoron"=20000)
-	origin_tech = list(TECH_DATA = 5, TECH_MATERIAL = 7, TECH_BLUESPACE = 6, TECH_POWER = 6)
+	origin_tech = list(TECH_DATA = 4, TECH_MATERIAL = 6, TECH_BLUESPACE = 5, TECH_POWER = 5)
 
 /obj/item/mecha_parts/part/phazon_head
 	name="Phazon Head"

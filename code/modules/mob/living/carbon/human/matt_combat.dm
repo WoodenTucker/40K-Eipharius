@@ -9,7 +9,7 @@
 	var/dodge_modifier = 0
 	if(combat_mode && (defense_intent == I_DODGE) && !lying)//Todo, make use of the check_shield_arc proc to make sure you can't dodge from behind.
 		if(atk_intent == I_DEFENSE)//Better chance to dodge
-			dodge_modifier += 30
+			dodge_modifier += 10
 		if(statscheck(STAT_LEVEL(dex) / 2 + 3) >= SUCCESS)
 			do_dodge()
 			return	1

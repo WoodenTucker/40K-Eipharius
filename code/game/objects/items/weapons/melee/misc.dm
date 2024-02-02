@@ -6,10 +6,10 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT
 	force = 10
-	armor_penetration = 6
+	armor_penetration = 16
 	throwforce = 7
 	w_class = ITEM_SIZE_NORMAL
-	origin_tech = list(TECH_COMBAT = 4)
+	origin_tech = list(TECH_COMBAT = 1)
 	attack_verb = list("flicked", "whipped", "lashed")
 
 /obj/item/melee/whip/abyssal
@@ -22,7 +22,7 @@
 	force = 16 //max hit with 60 strength and no equipment. Duel Arena no No forfeit - Snapshot
 	throwforce = 7
 	w_class = ITEM_SIZE_NORMAL
-	origin_tech = list(TECH_COMBAT = 4)
+	origin_tech = list(TECH_COMBAT = 3)
 	attack_verb = list("flicked", "whipped", "lashed")
 
 /obj/item/melee/whip/chainofcommand
@@ -61,11 +61,12 @@
 	name = "scrap mace"
 	desc = "A mace normally used by the ork meks, made of scrap."
 	str_requirement = 13
-	armor_penetration = 35 //Crushing damage
+	armor_penetration = 20 //Crushing damage
 	force = 35
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "mekmace"
 	item_state = "mekmace"
+	str_requirement = 22
 
 /obj/item/material/mekmace/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
 
@@ -89,14 +90,16 @@
 	hitsound = 'sound/weapons/whip.ogg'
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT
-	armor_penetration = 25
-	force = 5
+	armor_penetration = 20
+	force = 12
 	block_chance = 35
 	throwforce = 7
 	w_class = ITEM_SIZE_NORMAL
-	origin_tech = list(TECH_COMBAT = 4)
+	origin_tech = list(TECH_COMBAT = 5)
 	attack_verb = list("flicked", "whipped", "lashed")
 	var/slan = 1
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
+	armor = list(melee = 1, bullet = 2, laser = 2, energy = 2, bomb = 2, bio = 0, rad = 0)
 
 //code copypasted from the mutated arm
 /obj/item/melee/whip/lashoftorment/attack(mob/living/carbon/C as mob, var/mob/living/carbon/human/user as mob) //
@@ -125,3 +128,110 @@
 		to_chat(user, "<span class='warning'>An overwhelming feeling of dread comes over you as you pick up the [src]. It would be wise to be rid of this quickly.</span>")
 		user.make_dizzy(120)
 		playsound(usr, 'sound/effects/whispers1.ogg', 100, 0, -1)
+
+// Tzeentch Mindbreaker Book
+/obj/item/melee/Tzbook
+	name = "Tome Of The Mindshatter"
+	desc = "A sorcerous tome of Tzeentch used for shattering the minds and sometimes skulls of the enemy."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "tzbook"
+	item_state = "tzbook"
+	slot_flags = SLOT_BELT
+	force = 30
+	armor_penetration = 21
+	throwforce = 100 //In warp books hit you
+	w_class = ITEM_SIZE_NORMAL
+	attack_verb = list("bashed", "bonked", "smashed")
+
+		//In theory this is the part that does the mind shattering, but we'll see if I can code it
+/obj/item/melee/Tzbook/afterattack(mob/living/carbon/human/C as mob|obj|turf|area, mob/living/user as mob|obj, proximity)
+	var/mob/living/carbon/human/H = user
+	user.setClickCooldown(50)
+	if(H.mind.special_role == "tzeentch")
+		if(C.happiness <= -14)
+			H.say("CHAR BELOK TEZANIUM!")
+			C.add_event("Tzbook", /datum/happiness_event/Tzbook/Ext)
+			C.happiness -= 1
+			C.hallucination(100, 200)
+			C.confused = 50
+			C.apply_effects( stun = 30, agony = 100,)
+		else
+			if(C.happiness <= -1)
+				H.say("KAILOS ARCTHETH!")
+				C.add_event("Tzbook", /datum/happiness_event/Tzbook/Med)
+				C.hallucination(50,50)
+				C.confused = 10
+				C.apply_effects(agony = 10)
+				C.happiness -= 1
+			else
+				H.say("Yahear Maham. Isophat")
+				C.add_event("Tzbook", /datum/happiness_event/Tzbook/Light)
+				C.apply_effects(agony = 1)
+	else
+		H.apply_effects(stun = 120, agony = 220)
+		to_chat(user, "<span class='phobia'>The words jump off of the page and burrow into your skull!</span>")
+		H.add_event("Tzbook", /datum/happiness_event/Tzbook/Ext)
+		H.hallucination(100, 250)
+		H.confused = 20
+
+//TYRANID
+
+/obj/item/melee/tyranid
+	name = "Basic Tyranid Weapon Item."
+	desc = "You shouldn't be seeing this, contact a coder."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "artknife"
+	item_state = "artknife"
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	slot_flags = null
+	force = 10
+	armor_penetration = 6
+	throwforce = 7
+	w_class = ITEM_SIZE_NORMAL
+	origin_tech = list(TECH_COMBAT = 1)
+	attack_verb = list("flicked", "whipped", "lashed")
+	var/wall_breaker = 0 //Special wall-flattening ability. This should only be for very large or powerful bioforms.
+
+/obj/item/melee/tyranid/sword
+	name = "Tyranid Bonesword"
+	desc = "A monomolecular bone spur, grown by the Hive Mind for reckless melee violence."
+	icon_state = "artknife"
+	item_state = "artknife"
+	attack_verb = list("slashed", "cut", "sliced")
+	force = 35
+	armor_penetration = 20
+	sharp = 1
+	edge = 1
+	can_door_force = 1
+
+/obj/item/melee/tyranid/stinger
+	name = "Tyranid Stinger"
+	desc = "A vicious-looking barbed stinger, probably full of something nasty."
+	icon_state = "lash"
+	item_state = "lash"
+	attack_verb = list("stung", "injected")
+	armor_penetration = 18
+	sharp = 1
+
+/obj/item/melee/tyranid/talons
+	name = "Tyranid Scything Talons"
+	desc = "A large, sharpened talons used to rend enemies of the Hivemind limb from limb."
+	icon_state = "clawspear0"
+	item_state = "clawspear0"
+	attack_verb = list("chopped", "sliced", "diced")
+	force = 55
+	armor_penetration = 15
+	sharp = 1
+	edge = 1
+	can_door_force = 1
+
+/obj/item/melee/tyranid/crushing
+	name = "Tyranid Crushing Claws"
+	desc = "Enormous bone and chitin claws, capable of crushing a small animal - or a human head - in a single blow."
+	icon_state = "club"
+	item_state = "club"
+	attack_verb = list("crushed", "smashed", "slammed")
+	force = 35
+	armor_penetration = 25
+	can_door_force = 1
+	wall_breaker = 1

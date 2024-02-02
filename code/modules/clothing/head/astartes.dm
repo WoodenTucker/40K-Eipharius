@@ -6,7 +6,7 @@
 	item_icons = list(slot_head_str = 'icons/mob/32x40/hats.dmi')
 	icon_state = "ultrahelm"
 	item_state = "ultrahelm"
-	armor = list(melee = 65, bullet = 70, laser = 60, energy = 60, bomb = 60, bio = 100, rad = 100)
+	armor = list(melee = 36, bullet = 44, laser = 44, energy = 50, bomb = 60, bio = 100, rad = 100)
 	str_requirement = 25
 	unacidable = 1
 	body_parts_covered = HEAD|FACE|EYES
@@ -15,13 +15,20 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	species_restricted = list(SPECIES_ASTARTES)
-	sales_price = 70
+	sales_price = 50
 
 /obj/item/clothing/head/helmet/astartes/bloodangel
 	name = "Astartes Mark VII Helmet"
 	desc = "The daunting helmet of the Emperor's chosen, This one bears the symbol of the IXth Chapter, Blood Angels."
 	icon_state = "banghelm"
 	item_state = "banghelm"
+	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
+
+/obj/item/clothing/head/helmet/astartes/bloodangel/lamenter
+	name = "Astartes Mark VII Helmet"
+	desc = "The daunting helmet of the Emperor's chosen, This one bears the symbol of the IXth Chapter, Blood Angels."
+	icon_state = "lamenterh"
+	item_state = "lamenterh"
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
 
 /obj/item/clothing/head/helmet/astartes/ravenguard
@@ -43,6 +50,27 @@
 	desc = "The daunting helmet of the Emperor's chosen, This one bears the symbol of the XIIIth Chapter, Ultramarines."
 	icon_state = "ultrahelm"
 	item_state = "ultrahelm"
+	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
+
+/obj/item/clothing/head/helmet/astartes/ultramarinenew
+	name = "Astartes Mark VII Helmet"
+	desc = "The daunting helmet of the Emperor's chosen, This one bears the symbol of the XIIIth Chapter, Ultramarines."
+	icon_state = "ultrah"
+	item_state = "ultrah"
+	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
+
+/obj/item/clothing/head/helmet/astartes/emperorschildren
+	name = "Astartes Mark VII Helmet"
+	desc = "The daunting helmet of the Emperor's chosen, This one bears the symbol of the IIIth Legion, Emperor's Children."
+	icon_state = "emperorsch"
+	item_state = "emperorsch"
+	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
+
+/obj/item/clothing/head/helmet/astartes/alphalegion
+	name = "Astartes Mark VII Helmet"
+	desc = "The daunting helmet of the Emperor's chosen, This one bears the symbol of the XXth Legion, Alpha Legion."
+	icon_state = "alphalegh"
+	item_state = "alphalegh"
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
 
 /obj/item/clothing/head/helmet/astartes/sergeant

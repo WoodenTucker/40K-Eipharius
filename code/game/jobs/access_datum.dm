@@ -521,10 +521,15 @@
 	id = access_tau
 	desc = "Tau Ship"
 
-/var/const/access_ganger = 210
+/var/const/access_ganger = 355
 /datum/access/ganger
 	id = access_ganger
 	desc = "ganger Access"
+
+/var/const/access_majorcrimes = 356
+/datum/access/majorcrimes
+	id = access_majorcrimes
+	desc = "Major Crimes"
 
 /var/const/access_village = 211 // VILLAGE/PILGRIM COMMON ACCESS! BASICALLY ANYONE WITH ANY TYPE OF ID SHOULD HAVE THIS!!! Don't give to high level guys like rt or inq. they are too fancy to have peasant access
 /datum/access/village

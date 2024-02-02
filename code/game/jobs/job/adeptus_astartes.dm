@@ -2,8 +2,8 @@
 
 /datum/job/envoy
 	title = "Astartes Envoy"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	head_position = 0
 	supervisors = "The Rogue Trader and your Chapter Master"
 	social_class = SOCIAL_CLASS_MAX
@@ -37,12 +37,10 @@
 	latejoin_at_spawnpoints = 1
 	announced = 0
 	species_role = "Astartes"
-	cultist_chance = 1
+	cultist_chance = 0
 
-	equip(var/mob/living/carbon/human/H)
-		var/current_name = H.real_name
+	equip(var/mob/living/carbon/human/astartes/H)
 		..()
-		H.fully_replace_character_name("Brother [current_name]")
 		H.verbs +=  list(
 		/mob/living/carbon/human/proc/astachaos,
 		/mob/living/carbon/human/proc/astacharge,
@@ -61,7 +59,7 @@
 		/mob/living/carbon/human/proc/astatoglory,
 		/mob/living/carbon/human/proc/astaxenos)
 		H.verbs -= list(/mob/living/carbon/human/verb/emoteemperorprotects)
-		H.add_stats(28, rand(20,26), rand(22,26), rand(17,24)) //genuinely no idea what to make their stats
+		H.add_stats(28, rand(23,26), rand(23,26), rand(19,24)) //genuinely no idea what to make their stats
 		H.add_skills(11,11,11,11,11)
 /*switch(title) //either you get this to work or you dont change it, ok?
 			if("Blood Angel Tactical Marine")
@@ -89,12 +87,12 @@
 			if("Ultramarine Techmarine")
 				H.add_skills(13, 13, 2, 11, 1)*/
 		H.set_trait(new/datum/trait/death_tolerant())
+		H.set_quirk(new/datum/quirk/dead_inside) // Why didn't they have this
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
-		H.say(":v [title] reporting for duty!")
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is in debt to the trader for services rendered that saved the lives of countless brothers, being sent you have been instructed to protect and serve them in every capacity. This is a matter of honor, lives owed to a great Lord whom you have come to know over many decades, your new master on this forsaken world.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Space Marine Envoy of your chosen Chapter. You are his Angel. Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. You are tasked to show the Emperor's light to his followers and his fury to the forces that oppose it. Ensure it remains so.</font></b></span>")
 		H.gender = MALE
 		H.f_style = "shaved"
 		H.h_style = "Bald"
@@ -124,14 +122,63 @@
 		"Ultramarine Techmarine" = /decl/hierarchy/outfit/job/astartes/ultratech
 		)
 
-/datum/job/envoy/watchman
-	title = "Chaos Astartes"
-	total_positions = 2
-	spawn_positions = 2
-	selection_color = "#373ab6"
-
 //assfartes outfits
 
+/decl/hierarchy/outfit/job/astartes/alpha
+	name = OUTFIT_JOB_NAME("Chaos Marine -- Alpha")
+	uniform = /obj/item/clothing/under/astartes/bodysuit
+	suit = /obj/item/clothing/suit/armor/astartes/alphalegion
+	back = /obj/item/storage/backpack/satchel/astartes/alphalegion
+	belt = /obj/item/melee/chain/pcsword
+	shoes = /obj/item/clothing/shoes/jackboots/astartes/raven
+	head = /obj/item/clothing/head/helmet/astartes/alphalegion
+	mask = null
+	l_ear = /obj/item/device/radio/headset/cult1
+	r_ear = /obj/item/device/radio/headset/cult2
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = null
+	suit_store = /obj/item/gun/projectile/boltrifle/raven
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_rifle_magazine_astartes = 3,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/clothing/glasses/astartes/visor = 1
+	)
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+
+	id_type = /obj/item/card/id/dog_tag/guardsman
+
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+
+/decl/hierarchy/outfit/job/astartes/children
+	name = OUTFIT_JOB_NAME("Chaos Marine -- Children")
+	uniform = /obj/item/clothing/under/astartes/bodysuit
+	suit = /obj/item/clothing/suit/armor/astartes/emperorschildren
+	back = /obj/item/storage/backpack/satchel/astartes/emperorschildren
+	belt = /obj/item/melee/chain/pcsword
+	shoes = /obj/item/clothing/shoes/jackboots/astartes/raven
+	head = /obj/item/clothing/head/helmet/astartes/emperorschildren
+	mask = null
+	l_ear = /obj/item/device/radio/headset/cult1
+	r_ear = /obj/item/device/radio/headset/cult2
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = null
+	suit_store = /obj/item/gun/projectile/boltrifle/raven
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_rifle_magazine_astartes = 3,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/clothing/glasses/astartes/visor = 1
+	)
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+
+	id_type = /obj/item/card/id/dog_tag/guardsman
+
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/astartes
 	name = OUTFIT_JOB_NAME("Blood Angels Tactical Marine")
@@ -149,7 +196,7 @@
 	suit_store = /obj/item/gun/projectile/boltrifle/bang
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine = 3,
+	/obj/item/ammo_magazine/bolt_rifle_magazine_astartes = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -175,11 +222,11 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
+	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/melee/chain/pcsword = 1,
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/cell/plasma = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -202,7 +249,7 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -224,7 +271,7 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/melee/chain/pcsword = 1,
-	/obj/item/ammo_magazine/bolt_rifle_magazine = 3,
+	/obj/item/ammo_magazine/bolt_rifle_magazine_astartes = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -245,7 +292,7 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/grenade/frag/shell
-	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
+	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/cell/plasma = 4,
@@ -268,11 +315,11 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
+	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/melee/chain/pcsword = 1,
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/cell/plasma = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -295,7 +342,7 @@
 	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -315,13 +362,13 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	suit_store = /obj/item/gun/projectile/boltrifle/sally
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine = 3,
+	/obj/item/ammo_magazine/bolt_rifle_magazine_astartes = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
 	/obj/item/clothing/glasses/astartes/visor = 1,
-	/obj/item/gun/projectile/automatic/flamer = 1
+	/obj/item/gun/projectile/automatic/flamer/salamander = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/salamander/sergeant
@@ -337,7 +384,7 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/grenade/frag/shell
-	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
+	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/cell/plasma = 4,
@@ -346,7 +393,7 @@
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
 	/obj/item/clothing/glasses/astartes/visor = 1,
-	/obj/item/gun/projectile/automatic/flamer = 1
+	/obj/item/gun/projectile/automatic/flamer/salamander = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/salapoth
@@ -361,11 +408,11 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
+	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/melee/chain/pcsword = 1,
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/cell/plasma = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -388,7 +435,7 @@
 	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -411,7 +458,7 @@
 	suit_store = /obj/item/gun/projectile/boltrifle
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine = 3,
+	/obj/item/ammo_magazine/bolt_rifle_magazine_astartes = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -433,7 +480,7 @@
 	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/grenade/frag/shell
-	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
+	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/cell/plasma = 4,
@@ -456,11 +503,11 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
+	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/melee/chain/pcsword = 1,
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/cell/plasma = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -483,7 +530,7 @@
 	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,

@@ -41,10 +41,6 @@
 		to_chat(user, "Timer set for [timer] seconds.")
 
 /obj/item/plastique/afterattack(atom/movable/target, mob/user, flag)
-	if (!flag)
-		return
-	if(!istype(target, /obj/machinery/door) && !iswall(target))
-		return
 	to_chat(user, "Planting explosives...")
 	user.do_attack_animation(target)
 
@@ -72,16 +68,15 @@
 	if(!target)
 		target = src
 	if(location)
-		explosion(location, -1, -1, 2, 3)
+		explosion(location, -1, -1, 3, 5)
 
 	if(target)
 		if (istype(target, /turf/simulated/wall))
 			var/turf/simulated/wall/W = target
 			W.dismantle_wall(1)
-		else if(istype(target, /mob/living))
-			target.ex_act(2) // c4 can't gib mobs anymore.
+			explosion(location, -1, -1, 3, 5)
 		else
-			target.ex_act(1)
+			explosion(location, -1, -1, 3, 5)
 	if(target)
 		target.overlays -= image_overlay
 	qdel(src)

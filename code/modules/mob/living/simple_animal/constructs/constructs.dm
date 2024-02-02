@@ -13,14 +13,14 @@
 	a_intent = I_HURT
 	stop_automated_movement = 1
 	status_flags = CANPUSH
-	universal_speak = 0
+	universal_speak = 1
 	universal_understand = 1
 	attack_sound = 'sound/weapons/spiderlunge.ogg'
 	min_gas = null
 	max_gas = null
 	minbodytemp = 0
 	show_stat_health = 1
-	faction = "cult"
+	faction = "Chaos"
 	supernatural = 1
 	see_in_dark = 8
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
@@ -38,6 +38,7 @@
 	..()
 	name = text("[initial(name)] ([random_id(/mob/living/simple_animal/construct, 1000, 9999)])")
 	real_name = name
+	add_language(LANGUAGE_LOW_GOTHIC, 1)
 	add_language("Cult")
 	add_language("Occult")
 	for(var/spell in construct_spells)
@@ -211,13 +212,79 @@
 	melee_damage_lower = 50
 	melee_damage_upper = 50
 	attacktext = "brutally crushed"
-	speed = 5
+	speed = 3
 	environment_smash = 2
 	attack_sound = 'sound/weapons/heavysmash.ogg'
 	resistance = 10
 	var/energy = 0
 	var/max_energy = 1000
 	construct_spells = list(/spell/aoe_turf/conjure/forcewall/lesser)
+
+
+
+/mob/living/simple_animal/construct/playerdaemonhost
+	name = "Daemon Host"
+	real_name = "Daemon Host" 
+	desc = "It's a horrifyingly enormous daemon host..."
+	icon = 'icons/mob/Demon.dmi'
+	icon_state = "herald"
+	icon_living = "herald"
+	icon_dead = "herald_dead"
+	icon_gib = "syndicate_gib"
+	maxHealth = 1500
+	health = 1500
+	response_help  = "caresses"
+	response_disarm = "slams"
+	response_harm   = "rends"
+	harm_intent_damage = 100
+	melee_damage_upper = 120
+	melee_damage_lower = 90
+	attacktext = "torn"
+	faction = "Chaos"
+	environment_smash = 2
+	var/energy = 0
+	var/max_energy = 1000
+	construct_spells = list(/spell/targeted/projectile/dumbfire/fireball, /spell/targeted/ethereal_jaunt/shift)
+
+	speed = 1.2
+
+/mob/living/simple_animal/construct/playernecronlord
+	name = "NECRON LORD"
+	name = "NECRON LORD"
+	desc = "It's a horrify Necron Lord..."
+	icon = 'icons/cadia-sprites/mob/necronlord.dmi'
+	icon_state = "lord"
+	icon_living = "lord"
+	maxHealth = 1500
+	health = 1500
+	response_help  = "caresses"
+	response_disarm = "slams"
+	response_harm   = "rends"
+	harm_intent_damage = 100
+	melee_damage_upper = 100
+	melee_damage_lower = 60
+	environment_smash = 2
+	attacktext = "torn"
+	faction = "Chaos"
+	var/energy = 0
+	var/max_energy = 1000
+	construct_spells = list(/spell/targeted/projectile/dumbfire/fireball, /spell/targeted/ethereal_jaunt/shift)
+
+
+	speed = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ////////////////////////Harvester////////////////////////////////
 

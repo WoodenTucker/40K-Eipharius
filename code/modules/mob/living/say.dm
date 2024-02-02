@@ -1,67 +1,69 @@
 var/list/department_radio_keys = list(
 	  ":r" = "right ear",	".r" = "right ear",
 	  ":l" = "left ear",	".l" = "left ear",
-	  ":i" = "Inquisition",	".i" = "Inquisition",
+	  ":i" = "Vermillion",	".i" = "Vermillion",
 	  ":h" = "department",	".h" = "department",
 	  ":+" = "special",		".+" = "special", //activate radio-specific special functions
 	  ":c" = "Command",		".c" = "Command",
 	  ":n" = "Ecclesiarchy",".n" = "Ecclesiarchy",
 	  ":m" = "Medical",		".m" = "Medical",
+	  ":d" = "Violet", ".d" = "Violet",
 	  ":e" = "Mechanicus", ".e" = "Mechanicus",
-	  ":s" = "Security",	".s" = "Security",
+	  ":s" = "Frateris",	".s" = "Frateris",
 	  ":w" = "whisper",		".w" = "whisper",
-	  ":t" = "Mercenary",	".t" = "Mercenary",
+	  ":t" = "Supply",	".t" = "Supply",
 	  ":x" = "Tyranids",		".x" = "Tyranids",
-	  ":u" = "Supply",		".u" = "Supply",
-	  ":v" = "Guardsmen",		".v" = "Guardsmen",
+	  ":u" = "Magistratum",		".u" = "Magistratum",
+	  ":v" = "Militarum",		".v" = "Militarum",
 	  ":d" = "Delta",	".d" = "Delta",
-	  ":p" = "AI Private",	".p" = "AI Private",
-	  ":z" = "Entertainment",".z" = "Entertainment",
-	  ":y" = "Exploration",	".y" = "Exploration",
+	  ":p" = "Omega",	".p" = "Omega",
+	  ":z" = "Explorer",".z" = "Explorer",
+	  ":y" = "Secure",	".y" = "Secure",
 	  ":b" = "Blue", 		".b" = "Blue",
-	  ";" = "Imperial", 		".;" = "Imperial",
+	  ";" = "Vox", 		".;" = "Vox",
 	  ":a" = "Alpha", 		".a" = "Alpha",
 	  ":g" = "Bravo", 		".g" = "Bravo",
 	  ":o" = "Charlie",		".o" = "Charlie",
 	  ":d" = "Delta", 		".d" = "Delta",
 	  ":f" = "Blue Alpha", ".f" = "Blue Alpha",
-	  ":i" = "Inquisition", ".i" = "Inquisition",
+	  ":i" = "Vermillion", ".i" = "Vermillion",
 	  ":j" = "Blue Charlie",".j" = "Blue Charlie",
 	  ":k" = "Blue Delta", ".k" = "Blue Delta",
 
 	  ":R" = "right ear",	".R" = "right ear",
 	  ":L" = "left ear",	".L" = "left ear",
-	  ":I" = "Inquisition",	".I" = "Inquisition",
+	  ":I" = "Vermillion",	".I" = "Vermillion",
 	  ":H" = "department",	".H" = "department",
 	  ":C" = "Command",		".C" = "Command",
 	  ":N" = "Ecclesiarchy",".N" = "Ecclesiarchy",
+	  ":D" = "Violet", ".D" = "Violet",
 	  ":M" = "Medical",		".M" = "Medical",
 	  ":E" = "Mechanicus",	".E" = "Mechanicus",
-	  ":S" = "Security",	".S" = "Security",
+	  ":S" = "Frateris",	".S" = "Frateris",
 	  ":W" = "whisper",		".W" = "whisper",
 	  ":T" = "Mercenary",	".T" = "Mercenary",
 	  ":X" = "Tyranids",		".X" = "Tyranids",
-	  ":U" = "Supply",		".U" = "Supply",
-	  ":V" = "Guardsmen",		".V" = "Guardsmen",
+	  ":U" = "Magistratum",		".U" = "Magistratum",
+	  ":V" = "Militarum",		".V" = "Militarum",
 	  ":D" = "Delta",	".D" = "Delta",
-	  ":P" = "AI Private",	".P" = "AI Private",
-	  ":Z" = "Entertainment",".Z" = "Entertainment",
-	  ":Y" = "Exploration",		".Y" = "Exploration",
+	  ":P" = "Omega",	".P" = "Omega",
+	  ":Z" = "Explorer",".Z" = "Explorer",
+	  ":Y" = "Secure",		".Y" = "Secure",
 
 	  //kinda localization -- rastaf0
 	  //same keys as above, but on russian keyboard layout. This file uses cp1251 as encoding.
 	  ":ê" = "right ear",	".ê" = "right ear",
 	  ":ä" = "left ear",	".ä" = "left ear",
-	  ":ø" = "Inquisition",	".ø" = "Inquisition",
+	  ":ø" = "Vermillion",	".ø" = "Vermillion",
 	  ":ð" = "department",	".ð" = "department",
 	  ":ñ" = "Command",		".ñ" = "Command",
 	  ":ò" = "Ecclesiarchy",".ò" = "Ecclesiarchy",
 	  ":ü" = "Medical",		".ü" = "Medical",
 	  ":ó" = "Mechanicus",	".ó" = "Mechanicus",
-	  ":û" = "Security",	".û" = "Security",
+	  ":û" = "Frateris",	".û" = "Frateris",
 	  ":ö" = "whisper",		".ö" = "whisper",
 	  ":å" = "Mercenary",	".å" = "Mercenary",
-	  ":é" = "Supply",		".é" = "Supply",
+	  ":é" = "Magistratum",		".é" = "Magistratum",
 )
 
 
@@ -188,6 +190,16 @@ proc/get_radio_key_from_channel(var/channel)
 			to_chat(src, "[warning_message]&quot;</span>")
 			log_and_message_admins("[src] just tried to say cringe: [cringe]", src)
 			return
+
+	//if there are phrases this runs
+	if(GLOB.ritual_filter.len)
+	//searches the say for a ritual phrase
+		if(findtext(message, config.ritual_filter_regex))
+			find_and_begin_ritual(message, src) //sends our message to begin ritual procs and who is our leader
+
+			//you can remove this log if it gets annoying, its useful for debugging early stages
+			log_and_message_admins("[src] said a ritual phrase: [message]", src)
+
 
 
 	var/prefix = copytext(message,1,2)

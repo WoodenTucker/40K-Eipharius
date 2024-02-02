@@ -4,8 +4,8 @@
 	feedback = "DB"
 	school = "transmutation"
 	charge_max = 600
-	invocation = "whispers something darkly"
 	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	range = 3
 	inner_radius = 0
 

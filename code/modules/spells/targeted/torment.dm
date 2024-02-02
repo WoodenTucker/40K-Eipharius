@@ -5,8 +5,8 @@
 	school = "illusion"
 	charge_max = 150
 	spell_flags = 0
-	invocation = "Rai Di-Kaal!"
-	invocation_type = SpI_SHOUT
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	range = 5
 	level_max = list(Sp_TOTAL = 1, Sp_SPEED = 0, Sp_POWER = 1)
 	cooldown_min = 50

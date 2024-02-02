@@ -8,7 +8,7 @@
 	icon = 'icons/obj/syringe.dmi'
 	item_state = "hypo"
 	icon_state = "hypo"
-	origin_tech = list(TECH_MATERIAL = 4, TECH_BIO = 5)
+	origin_tech = list(TECH_MATERIAL = 2, TECH_BIO = 3)
 	amount_per_transfer_from_this = 5
 	unacidable = 1
 	volume = 30
@@ -164,33 +164,50 @@
 	starts_with = list(/datum/reagent/tramadol/oxycodone = 5)
 
 /obj/item/reagent_containers/hypospray/autoinjector/revive //this is ateopine in the wiki
-	name = "autoinjector (atepoine)"
+	name = "autoinjector (atepoine+stim)"
 	icon_state = "black"
-	starts_with = list(/datum/reagent/atepoine = 10)
+	starts_with = list(/datum/reagent/atepoine = 10, /datum/reagent/adrenaline = 2, /datum/reagent/dylovene = 2)
+
+/obj/item/reagent_containers/hypospray/autoinjector/adrenaline //this is adrenaline
+	name = "autoinjector (adrenaline)"
+	icon_state = "black"
+	starts_with = list(/datum/reagent/adrenaline = 15)
+	amount_per_transfer_from_this = 15
+	volume = 15
+
+/obj/item/reagent_containers/hypospray/autoinjector/death //death
+	name = "autoinjector (???)"
+	icon_state = "black"
+	starts_with = list(/datum/reagent/toxin/zombiepowder = 10, /datum/reagent/tramadol = 32)
 
 /obj/item/reagent_containers/hypospray/autoinjector/mindbreaker
-	name = "autoinjector"
+	name = "autoinjector MB"
 	icon_state = "black"
 	starts_with = list(/datum/reagent/mindbreaker = 5)
 
 /obj/item/reagent_containers/hypospray/autoinjector/blood
-	name = "blood injector"
-	desc = "A blood injector, contained O- blood."
+	name = "nanoblood injector"
+	desc = "A nanoblood injector. Do not use more than 1 injectors in close sucession.."
 	icon_state = "n"
 
 	amount_per_transfer_from_this = 50
-	volume = 500
-	var/blood_type = "O-"
+	volume = 200
+	starts_with = list(/datum/reagent/bicaridine =5, /datum/reagent/kelotane = 5, /datum/reagent/nanoblood = 200)
 
-/obj/item/reagent_containers/hypospray/autoinjector/blood/New()
-	..()
-	if(blood_type)
-		reagents.add_reagent(/datum/reagent/blood, volume, list("donor" = null, "blood_DNA" = null, "blood_type" = blood_type, "trace_chem" = null, "virus2" = list(), "antibodies" = list()))
+/obj/item/reagent_containers/hypospray/autoinjector/blood/large
+	name = "large nanoblood injector"
+	desc = "A large nanoblood injector. Do not use more than half an injector in close sucession."
+	icon_state = "n"
+	w_class = ITEM_SIZE_NORMAL
+
+	amount_per_transfer_from_this = 50
+	volume = 500
+	starts_with = list(/datum/reagent/bicaridine =12, /datum/reagent/kelotane = 12, /datum/reagent/nanoblood = 500)
 
 /obj/item/reagent_containers/hypospray/autoinjector/morphine
 	name = "morphine syrette"
 	icon_state = "syrette_closed"
-	starts_with = list(/datum/reagent/tramadol/morphine = 10)
+	starts_with = list(/datum/reagent/tramadol/morphine = 20)
 	inject_sound = 'sound/items/syrette_inject.ogg'
 
 /obj/item/reagent_containers/hypospray/autoinjector/morphine/update_icon()
@@ -220,7 +237,7 @@
 	amount_per_transfer_from_this = 10
 	w_class = ITEM_SIZE_SMALL
 	slot_flags = SLOT_EARS
-	volume = 100
+	volume = 50
 	var/closed = 1
 
 /obj/item/reagent_containers/glass/ampule/attack_self()
@@ -239,7 +256,7 @@
 	name = "morphine ampule"
 	New()
 		..()
-		reagents.add_reagent(/datum/reagent/tramadol/morphine, 100)
+		reagents.add_reagent(/datum/reagent/tramadol/morphine, 50)
 
 /obj/item/reagent_containers/glass/ampule/attackby(obj/item/W, mob/user as mob)
 	if(istype(W, /obj/item/reagent_containers/hypospray/autoinjector))
@@ -248,3 +265,8 @@
 			var/trans = reagents.trans_to_obj(A, amount_per_transfer_from_this)
 			to_chat(user, "<span class='notice'>[trans] units refilled into \the [A]. [reagents.total_volume] units remaining in \the [src].</span>")
 			A.update_icon()
+
+/obj/item/reagent_containers/hypospray/autoinjector/martyr
+	name = "Martyr's Salvation"
+	icon_state = "green"
+	starts_with = list(/datum/reagent/martyr = 5)

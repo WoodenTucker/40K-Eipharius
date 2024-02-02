@@ -33,18 +33,18 @@
 //NT medals
 
 /obj/item/clothing/accessory/medal/gold/Administratum
-	name = "\improper Administratum command medal"
-	desc = "A gold medal awarded for service as the Rogue Trader of a Administratum facility, station, or vessel."
+	name = "\improper Segmentum Pacificus Honorifica medal"
+	desc = "The bearer of the Segmentum Pacificus is considered a genuine hero and one who's actions contributed greatly to the Astra Militarum's efforts within the Segmentum Pacificus."
 	icon_state = "gold_nt"
 
 /obj/item/clothing/accessory/medal/silver/Administratum
-	name = "\improper Administratum service medal"
-	desc = "A silver medal awarded to Imperial citizens for distinguished service in support of Imperial interests."
+	name = "\improper Winged Skull medal"
+	desc = "A silver medal awarded to those who have demonstrated inspirational leadership in the face of great adversity -- leading to Victory. The medal's design is also often used to denote the rank of a Space Marine Sergeant in many chapters."
 	icon_state = "silver_nt"
 
 /obj/item/clothing/accessory/medal/bronze/Administratum
-	name = "\improper Administratum sciences medal"
-	desc = "A bronze medal awarded to Imperial citizens for signifigant contributions to the fields of science or engineering."
+	name = "\improper Triple Skull medal"
+	desc = "A bronze medal awarded to Militarum soldiers who survive unit losses of 66 percent or more -- often seen as inferior to the Golden Skull which is rewarded posthumurously for such actions."
 	icon_state = "bronze_nt"
 
 /obj/item/clothing/accessory/medal/iron/Administratum

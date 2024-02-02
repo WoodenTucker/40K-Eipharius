@@ -14,7 +14,7 @@
 	speak_emote = list("chitters")
 	emote_hear = list("chitters")
 	speak_chance = 5
-	turns_per_move = 5
+	turns_per_move = 10
 	see_in_dark = 10
 	meat_type = /obj/item/reagent_containers/food/snacks/xenomeat
 	response_help  = "pets"
@@ -27,12 +27,12 @@
 	melee_damage_upper = 20
 	heat_damage_per_tick = 20
 	cold_damage_per_tick = 20
-	var/poison_per_bite = 5
+	var/poison_per_bite = 1
 	var/poison_type = /datum/reagent/toxin
 	faction = "spiders"
 	var/busy = 0
 	pass_flags = PASS_FLAG_TABLE
-	move_to_delay = 6
+	move_to_delay = 4
 	speed = 3
 
 //nursemaids - these create webs and eggs
@@ -41,11 +41,11 @@
 	icon_state = "nurse"
 	icon_living = "nurse"
 	icon_dead = "nurse_dead"
-	maxHealth = 40
-	health = 40
+	maxHealth = 80
+	health = 80
 	melee_damage_lower = 5
 	melee_damage_upper = 10
-	poison_per_bite = 10
+	poison_per_bite = 2
 	var/atom/cocoon_target
 	poison_type = /datum/reagent/soporific
 	var/fed = 0
@@ -56,12 +56,12 @@
 	icon_state = "hunter"
 	icon_living = "hunter"
 	icon_dead = "hunter_dead"
-	maxHealth = 120
-	health = 120
+	maxHealth = 160
+	health = 160
 	melee_damage_lower = 10
 	melee_damage_upper = 20
 	poison_per_bite = 5
-	move_to_delay = 4
+	move_to_delay = 3
 
 /mob/living/simple_animal/hostile/giant_spider/New(var/location, var/atom/parent)
 	get_light_and_color(parent)
@@ -76,7 +76,7 @@
 			if(prob(poison_per_bite))
 				to_chat(L, "<span class='warning'>You feel a tiny prick.</span>")
 				L.reagents.add_reagent(poison_type, 5)
-
+/*
 /mob/living/simple_animal/hostile/giant_spider/nurse/AttackingTarget()
 	. = ..()
 	if(ishuman(.))
@@ -86,13 +86,13 @@
 			if(!(O.robotic >= ORGAN_ROBOT))
 				var/eggs = new /obj/effect/spider/eggcluster(O, src)
 				O.implants += eggs
-
+*/
 /mob/living/simple_animal/hostile/giant_spider/Life()
 	..()
 	if(!stat)
 		if(stance == HOSTILE_STANCE_IDLE)
-			//1% chance to skitter madly away
-			if(!busy && prob(1))
+			//10% chance to skitter madly away
+			if(!busy && prob(10))
 				/*var/list/move_targets = list()
 				for(var/turf/T in orange(20, src))
 					move_targets.Add(T)*/
@@ -101,7 +101,7 @@
 				spawn(50)
 					stop_automated_movement = 0
 					walk(src,0)
-
+/*
 /mob/living/simple_animal/hostile/giant_spider/nurse/proc/GiveUp(var/C)
 	spawn(100)
 		if(busy == MOVING_TO_TARGET)
@@ -109,7 +109,7 @@
 				cocoon_target = null
 			busy = 0
 			stop_automated_movement = 0
-
+*/ /*
 /mob/living/simple_animal/hostile/giant_spider/nurse/Life()
 	..()
 	if(!stat)
@@ -214,3 +214,4 @@
 #undef LAYING_EGGS
 #undef MOVING_TO_TARGET
 #undef SPINNING_COCOON
+*/

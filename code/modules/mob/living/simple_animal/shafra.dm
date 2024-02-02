@@ -120,3 +120,40 @@
 		var/mob/living/L = target_mob
 		L.adjustBruteLoss(damage)
 		return L
+
+
+/mob/living/simple_animal/pig
+	name = "Pig"
+	desc = "The most common animal on any human farm, known to be just fed and then slaughtered for their meat."
+	icon = 'icons/map_project/creatures.dmi'
+	icon_state = "pig"
+	icon_living = "pig"
+	icon_dead = "pig_dead"
+	speak = list("oink?","oink","OOOOOINK!")
+	speak_emote = list("oinks","oinks hauntingly")
+	emote_hear = list("squeals")
+	emote_see = list("shakes its head")
+	speak_chance = 1 // I'll be honest with you, i really gotta check videos or go to a farm to hear the noises of a pig ? Aint got the time
+	turns_per_move = 5
+	see_in_dark = 6
+	meat_type = /obj/item/reagent_containers/food/snacks/meat/pig
+	meat_amount = 6
+	response_help  = "pets"
+	response_disarm = "gently pushes aside"
+	response_harm   = "kicks"
+	attacktext = "kicked"
+	health = 50
+	min_gas = null
+	max_gas = null
+	minbodytemp = 0
+
+/obj/item/reagent_containers/food/snacks/meat/pig
+	name = "slab of pork"
+	desc = "A big chunk of pork coming from a poor pig. Cook first!"
+	sales_price = 8
+
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/toxin/blattedin, 10)
+		reagents.add_reagent(/datum/reagent/nutriment/protein, 11) // Enough to feed 1 human entirely
+		bitesize = 3

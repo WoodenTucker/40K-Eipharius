@@ -3,8 +3,8 @@
 	desc = "Summons the most holy of shields, the riot shield. Commonly used during wizard riots."
 	feedback = "SH"
 	school = "conjuration"
-	invocation = "Sia helda!"
-	invocation_type = SpI_SHOUT
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	spell_flags = INCLUDEUSER | NEEDSCLOTHES
 	range = -1
 	max_targets = 1
@@ -15,10 +15,10 @@
 	charge_type = Sp_RECHARGE
 	charge_max = 900
 	cooldown_min = 300
-	equipped_summons = list("off hand" = /obj/item/shield/)
+	equipped_summons = list("off hand" = /obj/item/shield/energy)
 	duration = 300
 	delete_old = 0
-	var/item_color = "#6666ff"
+	var/item_color = "#6600ff"
 	var/block_chance = 30
 
 	hud_state = "wiz_shield"
@@ -36,6 +36,5 @@
 		return 0
 
 	item_color = "#6600ff"
-	block_chance = 60
 
 	return "Your summoned shields will now block more often."

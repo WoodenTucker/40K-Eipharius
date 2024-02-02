@@ -2030,13 +2030,13 @@
 	glass_desc = "A froofy, fruity, and sweet mixed drink. Understanding the name only brings shame."
 
 /datum/reagent/ethanol/syndicatebomb
-	name = "Bloodpact Bomb"
+	name = "Strange Bomb"
 	description = "Tastes like terrorism!"
 	taste_description = "purified treason"
 	color = "#2e6671"
 	strength = 10
 
-	glass_name = "Bloodpact Bomb"
+	glass_name = "Strange Bomb"
 	glass_desc = "Tastes like terrorism!"
 
 /datum/reagent/ethanol/tequilla_sunrise
@@ -2134,3 +2134,93 @@
 
 	glass_name = "special blend whiskey"
 	glass_desc = "Just when you thought regular agri-whiskey was good... This silky, amber goodness has to come along and ruin everything."
+
+/datum/reagent/ethanol/greenrush
+	name = "Green Rush"
+	description = "An strange mix of alcohol, it was apparently used by ancient tribes of Terra for shamanic rituals and rites for their warriors."
+	taste_description = "an unknown mix you can't even describe with your tongue"
+	color = "#2A871B"
+
+	glass_name = "green rush"
+	glass_desc = "This drink really just makes you want to travel a post-apocalyptic wasteland in search of a briefcase to save your tribe does it ?."
+
+/datum/reagent/ethanol/bluerush
+	name = "Blue Rush"
+	description = "Unlike green rush, this drink has been not forgotten, now simply distilled by more poor hive denizens and praised for it's taste that isnt shit."
+	taste_description = "pure resignation"
+	color = "#1C719E"
+
+	glass_name = "hooch"
+	glass_desc = "It reminds you of the ocean with such blue color."
+
+/datum/reagent/ethanol/oak_scream
+	name = "Oak Scream"
+	description = "The name of this drink comes from the sheer amount of oaks that were cut to produce this somewhat forgotten drink nowadays, and the sounds they produced when they fell onto the ground."
+	taste_description = "liquid..oak ?"
+	color = "#AF8943"
+
+	glass_name = "oak scream"
+	glass_desc = "Relax, the trees around you wont awake and shred you to nothing for drinking this..Right ?"
+
+/datum/reagent/ethanol/southernblood
+	name = "Southern Blood"
+	description = ""
+	taste_description = "pure resignation"
+	color = "#A72929"
+
+	glass_name = "hooch"
+	glass_desc = "You've really hit rock bottom now... your liver packed its bags and left last night."
+
+/datum/reagent/ethanol/ancienteye
+	name = "Ancient Eye"
+	description = "This drink was used mainly by shamans and fortune tellers to see the future of individuals"
+	taste_description = "pure resignation"
+	color = "#29A777"
+
+	glass_name = "hooch"
+	glass_desc = "You've really hit rock bottom now... your liver packed its bags and left last night."
+
+/datum/reagent/ethanol/thymebolt
+	name = "Thyme Bolt"
+	description = "A drink rumored to be a favourite by plasma weapon specialists and people whom are forced to use said weapons, because it numbs the thought of their weapon exploding in their hands at any time with the heating."
+	taste_description = "pure resignation"
+	color = "#47F3F1"
+
+	glass_name = "hooch"
+	glass_desc = "You've really hit rock bottom now... your liver packed its bags and left last night."
+
+/datum/reagent/ethanol/redscore
+	name = "Redscore"
+	description = "A favourite among pirates, gangers and apparently berserks & heretics, but do not allow such baseless rumors to enjoy such a drink!"
+	taste_description = "pure resignation"
+	color = "#F34747"
+
+	glass_name = "hooch"
+	glass_desc = "You've really hit rock bottom now... your liver packed its bags and left last night."
+
+/datum/reagent/ethanol/spiritbear
+	name = "Spirit Bear"
+	description = "Rumored to have been created by a Space Wolf recruit with the blood of a bear-like creature, apparently he managed to survive the trial just drinking the blood of those creatures, but is it true ?"
+	taste_description = "liquid bear and copper, lots of copper"
+	color = "#811515"
+
+	glass_name = "spirit bear"
+	glass_desc = "The drink you just need before embarking to die inside of a cave full of shafras with a lasgun, or beating them up with your fists."
+
+/datum/reagent/ethanol/oldvinland
+	name = "Old Vinland"
+	description = "In the old Terra, there was a place that the sun never arrived, the soil was not fertile and most adventurers died & expeditions unsuccessfully ever arrived, this drink was made to eagerly make men who were forced on such expeditionary feats forget the horrors of such work and land."
+	taste_description = "you taste fear and hunger"
+	color = "#4c3100"
+
+	glass_name = "old vinland"
+	glass_desc = "You've really hit rock bottom now... your liver packed its bags and left last night."
+
+/datum/reagent/ethanol/depressing_flash
+	name = "Depressing Flash"
+	description = "A drink favored by depressed mercenaries, bounty hunters, inquisitors, and some gangers. Generally you dont want to shoot the face of your bounty with a bolter or flamethrower, else the bounty goes to waste most of the times."
+	taste_description = "the tears of a grade one fixer"
+	color = "#4c3100"
+
+	glass_name = "depressing flash"
+	glass_desc = "You know how the head of the city is so strict with these things ?"

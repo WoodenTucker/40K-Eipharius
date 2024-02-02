@@ -34,9 +34,9 @@
 	name = "Sanctuary"
 	desc = "Creates a sanctuary of nature around the wizard as well as creating a healing plant."
 	feedback = "SY"
-	invocation = "Bo K'Iitan!"
-	invocation_type = SpI_SHOUT
-	spell_flags = IGNOREDENSE | IGNORESPACE | NEEDSCLOTHES | Z2NOCAST | IGNOREPREV
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
+	spell_flags = IGNORESPACE | NEEDSCLOTHES | Z2NOCAST | IGNOREPREV
 	cooldown_min = 600
 
 	level_max = list(Sp_TOTAL = 3, Sp_SPEED = 3, Sp_POWER = 1)

@@ -6,7 +6,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	title = "Planetary Governor"
 	department = "Planetary Governor"
 	head_position = 1
-	department_flag = COM|CIV
+	department_flag = COM
 	social_class = SOCIAL_CLASS_MAX
 	total_positions = 1
 	spawn_positions = 1
@@ -14,7 +14,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	supervisors = "The Golden Throne and the High Lords of Terra."
 	selection_color = "#540c97"
 	req_admin_notify = 1
-	access = list(20, 331, access_RC_announce, access_ai_upload, access_heads) 			//See get_access()
+	access = list(20, 331, 333, 63, access_RC_announce, access_ai_upload, access_heads) 			//See get_access()
 	minimal_access = list(20, 331, access_RC_announce, access_ai_upload, access_heads)
 	minimal_player_age = 65
 	economic_modifier = 20
@@ -28,32 +28,33 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	shotgun_skill = 7
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 100 // we want funny inq vs nonsense
+	cultist_chance = 25 // we want funny inq vs nonsense
 
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Governor [current_name]")
+		H.fully_replace_character_name("Governor [current_name] de Burgen")
 		H.add_stats(rand(14,18), rand(14,18), rand(14,18), rand(14,18))
 		H.add_skills(rand(6,10),rand(6,10),rand(5,6),rand(1,8),rand(1,8)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
-		H.say(":v [title] reporting for duty!")
 		H.verbs += list(/mob/living/carbon/human/proc/hire)
-		to_chat(H, "<span class='notice'><b><font size=3> The head honcho of Eipharius, ensure the tithe goes to Holy Terra. You own the Imperial Guard Squad stationed on the planet, as well as the Enforcers of the Magisterium. Hopefully they do the noble family’s bidding. Bathe in the riches of your privilege. Make sure that the inquisition doesn’t find out about any less than legal dealings you do. </font></b></span>")
-
+		to_chat(H, "<span class='notice'><b><font size=3>  </font></b></span>")
 		H.get_idcard()?.access = list(20, 331, access_RC_announce, access_ai_upload, access_heads)
+		H.verbs += list(
+			/mob/living/carbon/human/proc/governorclass)
 
 /datum/job/heir
 	title = "Heir"
 	head_position = 1
-	department_flag = COM|CIV
+	department_flag = COM
 	social_class = SOCIAL_CLASS_HIGH
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	open_when_dead = 0
 	supervisors = "Yourself. Make sure you get that inheritance..."
 	selection_color = "#6220a0"
@@ -69,24 +70,22 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	shotgun_skill = 7
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 50 // lots of delicacies growing up
-
+	cultist_chance = 35 // lots of delicacies growing up
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Lord [current_name]")
-		H.add_stats(rand(10,16), rand(10,16), rand(13,15), rand(13,17)) //
+		H.fully_replace_character_name("Lord [current_name] de Burgen") //
+		H.add_stats(rand(12,16), rand(12,16), rand(13,15), rand(13,17))
 		H.add_skills(rand(5,10),rand(5,10),rand(1,8),rand(1,8),rand(1,6)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.adjustStaminaLoss(-INFINITY)
-		H.say(":v [title] reporting for duty!")
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are still young. Orders probably won’t be taken seriously. The next in line to the throne of Eipharius. Waiting simply takes too long. Why not have the Governor simply… fall down some stairs? Make sure the Enforcers and Inquisition don’t get suspicious and have a stable rise to the throne.</font></b></span>")
-
-
-	access = list(access_security, access_guard_common, access_magi,
+		to_chat(H, "<span class='notice'><b><font size=3>You are still young. Orders probably won’t be taken seriously. The next in line to the throne of Messina. Waiting simply takes too long. Why not have the Governor simply… fall down some stairs? Make sure the Enforcers and Inquisition don’t get suspicious and have a stable rise to the throne.</font></b></span>")
+		H.verbs += list(
+			/mob/living/carbon/human/proc/servantclass)
+	access = list(20, 331, 333, 63, access_security, access_guard_common, access_magi,
 			            access_medical, access_mechanicus, access_change_ids, access_ai_upload, access_heads,
 			            access_all_personal_lockers, access_village, access_bar, access_janitor,
 			            access_kitchen, access_cargo, access_qm, access_hydroponics,
@@ -101,6 +100,93 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 	outfit_type = /decl/hierarchy/outfit/job/heir
 
+
+/mob/living/carbon/human/proc/governorclass()
+	set name = "Select your class"
+	set category = "CHOOSE YOUR FATE"
+	set desc = "Roll the dice and discover a new story."
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
+		return
+
+	var/mob/living/carbon/human/U = src
+	U.verbs -= list(/mob/living/carbon/human/proc/governorclass) //removes verb
+	var/fates = list("ROLL THE DICE!")
+
+
+	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
+
+ //10 is base stat, below 12 is child stat, childs are supposed to be somewhere between 6-14 in stats.
+ //skills are between 1-5 for roles that have little to no reason to know something, 5-10 if they are able to naturally learn those skills, 5 is baseline,
+	switch(classchoice)
+
+		if("ROLL THE DICE!")
+			if(prob(65))
+				to_chat(U,"<span class='danger'><b><font size=4>THE LOYALIST</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>A loyal servant to the imperium, as Governor of the Messina colony and proclaimed master of the xenos city of Messina it is your responsibility to ensure both the continued survival of The Imperium and your family. Resting upon your shoulders is the countless untold billions who might one day spawn from your world, of the countless wars that shall surely be fought in your families name. This is your duty, your curse -- this is how you died.</font></b></span>")
+				equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/bolter_pistol, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/hypospray/autoinjector/tau, slot_in_backpack)
+				if(prob(8))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_eng, slot_in_backpack)
+				if(prob(2))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/inquisition, slot_in_backpack)
+				if(prob(6))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_sci, slot_in_backpack)
+			else
+				to_chat(U,"<span class='danger'><b><font size=4>THE SPY</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>You are a traitor to the Imperium and for reasons known only to you now, shall be it's destruction. Praise the hivemind/cult/cogitae!(A-Help for info on the rounds lateparty and don't RDM plz.) </font></b></span>")
+				U.add_stats(rand(13,17), rand(16,18), rand(16,18), rand (12,20))
+				equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/hypospray/autoinjector/tau, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/bolter_pistol, slot_wear_suit)
+				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
+					deity.add_cultist(U)
+				if(prob(10))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_eng, slot_in_backpack)
+				if(prob(4))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/inquisition, slot_in_backpack)
+				if(prob(12))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_sci, slot_in_backpack)
+
+
+/mob/living/carbon/human/proc/servantclass()
+	set name = "Select your class"
+	set category = "CHOOSE YOUR FATE"
+	set desc = "Roll the dice and discover a new story."
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
+		return
+
+	var/mob/living/carbon/human/U = src
+	U.verbs -= list(/mob/living/carbon/human/proc/servantclass) //removes verb
+	var/fates = list("ROLL THE DICE!")
+
+
+	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
+
+ //10 is base stat, below 12 is child stat, childs are supposed to be somewhere between 6-14 in stats.
+ //skills are between 1-5 for roles that have little to no reason to know something, 5-10 if they are able to naturally learn those skills, 5 is baseline,
+	switch(classchoice)
+
+		if("ROLL THE DICE!")
+			if(prob(50))
+				to_chat(U,"<span class='danger'><b><font size=4>THE LOYALIST</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>A loyal servant to the imperium livin and underling to the master of the xenos city of Messina it is your responsibility to ensure both the continued survival of The Imperium and the Governor's lineage. This is your duty, your curse -- this is how you died.</font></b></span>")
+			else
+				to_chat(U,"<span class='danger'><b><font size=4>THE SPY</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>You are a traitor to the Imperium and for reasons known only to you now, shall be it's destruction. Praise the hivemind/cult/cogitae!(A-Help for info on the rounds lateparty and don't RDM plz.) </font></b></span>")
+				U.add_stats(rand(13,17), rand(16,18), rand(16,18), rand (12,20))
+				if(prob(30))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/hypospray/autoinjector/death, slot_in_backpack)
+				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
+					deity.add_cultist(U)
 
 // Seneschal/steward removed until we need it due to pop
 /*
@@ -138,7 +224,6 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.adjustStaminaLoss(-INFINITY)
-		H.say(":v [title] reporting for duty!")
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Steward and personal aid to the Lord Trader acting as their Major-Domo, you interact with the Administratum and Munitorium on behalf of your Lord while wielding some semblence of the golden writ of authority in their absence.</font></b></span>")
 
@@ -168,7 +253,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MED
 	announced = 0
-	access = list(access_security, access_guard_common,
+	access = list(20, 331, 333, 63, access_security, access_guard_common,
 			            access_medical, access_mechanicus, access_ai_upload, access_heads,
 			            access_all_personal_lockers, access_village, access_bar, access_janitor,
 			            access_kitchen, access_cargo, access_qm, access_hydroponics,
@@ -190,21 +275,22 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	shotgun_skill = 7
 	lmg_skill = 6
 	smg_skill = 7
-	cultist_chance = 20
+	cultist_chance = 35
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Servant [current_name]")
-		H.add_stats(rand(11,15), rand(11,15), rand(11,15), rand(13,16)) //meant to be a brute keeping the plebs in line
+		H.fully_replace_character_name("[current_name]")
+		H.add_stats(rand(13,17), rand(13,18), rand(13,19), rand(13,16)) //meant to be a brute keeping the plebs in line
 		H.add_skills(rand(6,8),rand(6,8),rand(3,6),4,rand(3,6)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
-		H.say(":v [title] reporting for duty!")
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are a servant in direct service to the Governorship, having been in service to their family for generations. They own you. Change that. If you want.</font></b></span>")
+		H.verbs += list(
+			/mob/living/carbon/human/proc/servantclass,)
+		to_chat(H, "<span class='notice'><b><font size=3>You are a servant in direct service to the Governorship, having been in service to their family for generations. They own yoH. Change that. If you want.</font></b></span>")
 
 
 /mob/living/carbon/human/proc/hire(var/mob/living/carbon/human/M in view(src))
@@ -267,7 +353,6 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.say("; [title] reporting for duty!")
 
 
 

@@ -30,7 +30,7 @@
 
 /obj/item/clothing/ring/material/steel/New(var/newloc)
 	..(newloc, "steel")
-	sales_price = 2
+	sales_price = 1
 
 /obj/item/clothing/ring/material/silver/New(var/newloc)
 	..(newloc, "silver")

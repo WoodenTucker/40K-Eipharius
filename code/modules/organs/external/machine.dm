@@ -509,3 +509,42 @@ obj/item/organ/external/robotic/hand/experimental/right
 	body_part = ARM_RIGHT
 	joint = "right elbow"
 	amputation_point = "right shoulder"
+
+/obj/item/organ/external/robotic/servitor
+	organ_tag = null
+	name = "Robotic"
+	brute_mod = 0.5                  // Multiplier for incoming brute damage. //Made of metal, they're harder to damage.
+	burn_mod = 0.1                   // As above for burn. //Mechanical limbs* can* be burned, but they're far more resistant. //These limbs are stronger, but geenrally have downsides.
+	toxins_mod = 0
+	icon_name = null
+	icon = 'icons/mob/human_races/cyberlimbs/nanotrasen/nanotrasen_main.dmi'
+	max_damage = 80
+	min_broken_damage = 55
+	w_class = ITEM_SIZE_HUGE
+	body_part = null
+	parent_organ = null
+	joint = null
+	amputation_point = null
+	can_grasp = 0
+	pain = 0
+	has_tendon = FALSE
+	tendon_name = null
+	artery_name = null
+	arterial_bleed_severity = null
+	gibbable = FALSE
+	robotic = ORGAN_ROBOT
+	can_toggle = 1
+	is_toggled = 1
+
+/obj/item/organ/external/robotic/servitor/arm
+	organ_tag = BP_L_ARM
+	name = "Servitor Left Arm"
+	icon_name = "l_arm"
+	max_damage = 120
+	min_broken_damage = 100
+	w_class = ITEM_SIZE_NORMAL
+	body_part = ARM_LEFT
+	parent_organ = BP_CHEST
+	joint = "left elbow"
+	amputation_point = "left shoulder"
+	can_grasp = 1

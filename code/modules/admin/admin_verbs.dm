@@ -109,6 +109,7 @@ var/list/admin_verbs_admin = list(
 	/client/proc/vice_edit,
 	/client/proc/vicetype_edit,
 	/client/proc/happiness_edit,
+	/client/proc/cmd_admin_list_manage_jobs,
 
 )
 var/list/admin_verbs_ban = list(
@@ -1052,7 +1053,7 @@ var/list/admin_verbs_mentor = list(
 	set name = "Choose Party"
 	set desc = "Picks the party for the round!"
 
-	var/parties = list("Kroot", "Tau", "Bloodpact", "Orkz", "Genestealers",) //lists all possible fates
+	var/parties = list("Kroot", "Tau", "Sekites", "Orkz", "Genestealers", "TauNecron",) //lists all possible fates
 
 	var/chooseaparty = input("Choose a party", "Available parties") as null|anything in parties
 
@@ -1072,11 +1073,11 @@ var/list/admin_verbs_mentor = list(
 
 			GLOB.latepartyoptions += "Tau"
 			message_admins("Tau have been selected as the late party!")
-		if("Bloodpact")
+		if("Sekites")
 			GLOB.latepartyoptions.Cut()
 
-			GLOB.latepartyoptions += "Bloodpact"
-			message_admins("Bloodpact have been selected as the late party!")
+			GLOB.latepartyoptions += "Sekites"
+			message_admins("Sekites have been selected as the late party!")
 		if("Genestealers")
 			GLOB.latepartyoptions.Cut()
 
@@ -1091,7 +1092,7 @@ var/list/admin_verbs_mentor = list(
 	set name = "Choose When Party Arrives"
 	set desc = "Set the timer for the party to arrive."
 
-	var/options = list("Instant", "Default (30 min)", "45", "60", "120", "Never") //lists all possible fates
+	var/options = list("Instant", "30", "45", "60", "120(default)", "Never") //lists all possible fates
 
 	var/chooseaparty = input("Choose when the party arrives", "Options") as null|anything in options
 
@@ -1099,7 +1100,7 @@ var/list/admin_verbs_mentor = list(
 		if("Instant")
 			GLOB.partydelay = 1
 			message_admins("The late party will be able to spawn immediately!")
-		if("Default (30 min)")
+		if("30 min")
 			GLOB.partydelay = 18000
 			message_admins("The party will spawn at the 30 minute mark.")
 		if("45")
@@ -1108,7 +1109,7 @@ var/list/admin_verbs_mentor = list(
 		if("60")
 			GLOB.partydelay = 36000
 			message_admins("The party will spawn at the 60 minute mark.")
-		if("80")
+		if("80(default)")
 			GLOB.partydelay = 48000
 			message_admins("The party will spawn at the 80 minute mark.")
 		if("120")
@@ -1136,7 +1137,7 @@ var/list/admin_verbs_mentor = list(
 		if("2")
 			GLOB.partysize = 2
 			message_admins("The late party will have 2 attendees.")
-		if("(3)")
+		if("3")
 			GLOB.partysize = 3
 			message_admins("The late party will have 3 attendees.")
 		if("4")

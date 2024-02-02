@@ -7,8 +7,8 @@
 	charge_max = 900
 	cooldown_min = 600
 	spell_flags = INCLUDEUSER
-	invocation = "Llet'Su G'iit Rrkned!" //Let's get wrecked.
-	invocation_type = SpI_SHOUT
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	range = 6
 	max_targets = 0
 	level_max = list(Sp_TOTAL = 3, Sp_SPEED = 1, Sp_POWER = 2)

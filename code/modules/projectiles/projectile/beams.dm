@@ -1,11 +1,12 @@
 /obj/item/projectile/beam
 	name = "laser"
 	icon_state = "laser"
-	fire_sound='sound/weapons/Laser.ogg'
+	fire_sound='sound/weapons/gunshot/lasgun2.ogg'
 	mob_hit_sound = list('sound/effects/gore/sear.ogg')
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	pass_flags = PASS_FLAG_TABLE | PASS_FLAG_GLASS | PASS_FLAG_GRILLE
-	damage = 40
+	// pass_flags = PASS_FLAG_TABLE | PASS_FLAG_GLASS | PASS_FLAG_GRILLE // Removing pass flags because only AI mobs use beam weapons now.
+	damage = 20
+	armor_penetration = 10
 	damage_type = BURN
 	sharp = 1 //concentrated burns
 	check_armour = "laser"
@@ -27,6 +28,31 @@
 	check_armour = "laser"
 	eyeblur = 2
 
+/obj/item/projectile/beam/incendiary_laser
+	name = "volkite laser blast"
+	icon_state = "beam_incen"
+	fire_sound='sound/weapons/gunshot/lasgun2.ogg'
+	mob_hit_sound = list('sound/effects/gore/sear.ogg')
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	damage = 70
+	agony = 8
+	eyeblur = 8
+	sharp = FALSE
+	armor_penetration = 50
+
+	muzzle_type = /obj/effect/projectile/incen/muzzle
+	tracer_type = /obj/effect/projectile/incen/tracer
+	impact_type = /obj/effect/projectile/incen/impact
+
+/obj/item/projectile/beam/incendiary_laser/on_hit(atom/target, blocked = 0)
+	..()
+	if(isliving(target))
+		var/mob/living/L = target
+		L.adjust_fire_stacks(rand(2,4))
+		if(L.fire_stacks >= 3)
+			L.IgniteMob()
+
+
 /obj/item/projectile/beam/smalllaser
 	damage = 25
 
@@ -39,7 +65,7 @@
 	icon_state = "heavylaser"
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
 	damage = 60
-	armor_penetration = 30
+	armor_penetration = 40
 
 	muzzle_type = /obj/effect/projectile/laser/heavy/muzzle
 	tracer_type = /obj/effect/projectile/laser/heavy/tracer
@@ -50,7 +76,7 @@
 	icon_state = "heavylaser"
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
 	damage = 200
-	armor_penetration = 30
+	armor_penetration = 40
 
 	muzzle_type = /obj/effect/projectile/laser/heavy/muzzle
 	tracer_type = /obj/effect/projectile/laser/heavy/tracer
@@ -136,7 +162,7 @@
 	icon_state = "xray"
 	fire_sound = 'sound/weapons/marauder.ogg'
 	damage = 50
-	armor_penetration = 10
+	armor_penetration = 40
 	stun = 3
 	weaken = 3
 	stutter = 3
@@ -179,7 +205,7 @@
 	icon_state = "heavylaser"
 	fire_sound='sound/weapons/lasercannonfire.ogg'
 	damage = 400
-	armor_penetration = 100
+	armor_penetration = 60
 	penetrating = 100
 	muzzle_type = /obj/effect/projectile/laser/heavy/muzzle
 	tracer_type = /obj/effect/projectile/laser/heavy/tracer

@@ -23,7 +23,7 @@
 "aE" = (/obj/structure/table/reinforced,/obj/random/loot,/turf/simulated/floor/tiled/airless,/area/djstation)
 "aF" = (/obj/structure/table/reinforced,/turf/simulated/floor/tiled/airless,/area/djstation)
 "aG" = (/obj/random/maintenance,/turf/simulated/floor/tiled/airless,/area/djstation)
-"aH" = (/obj/structure/barricade,/turf/simulated/floor/airless,/area/djstation)
+"aH" = (/obj/structure/warfare/barricade/concrete_barrier,/turf/simulated/floor/airless,/area/djstation)
 "aI" = (/obj/random/closet,/turf/simulated/floor/tiled/airless,/area/djstation)
 "aJ" = (/obj/structure/table,/turf/simulated/floor/tiled/airless,/area/djstation)
 "aK" = (/obj/machinery/door/airlock/maintenance,/turf/simulated/floor/tiled/airless,/area/djstation)

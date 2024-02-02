@@ -15,6 +15,36 @@
 	ingredients = list(/obj/item/organ/internal/eyes/bioprinted, /obj/item/clothing)
 	special = TRUE
 
+/datum/rune_recipe/tzeentch/radio
+	name = "Create Radio"
+	ingredients = list(/obj/item/device/radio/headset)
+	product_path = /obj/item/device/radio/headset/cult2
+
+/datum/rune_recipe/tzeentch/cloth
+	name = "Clothing Rite"
+	ingredients = list(/obj/item/newore/gems/emerald)
+	product_path = (/obj/item/clothing/suit/armor/heretcoat/tzeecult)
+
+/datum/rune_recipe/tzeentch/cloth1
+	name = "Helmet1 Rite"
+	ingredients = list(/obj/item/newore/gems/ruby)
+	product_path = (/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult1)
+
+/datum/rune_recipe/tzeentch/cloth2
+	name = "Helmet2 Rite"
+	ingredients = list(/obj/item/newore/gems/sapphire)
+	product_path = (/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult2)
+
+/datum/rune_recipe/tzeentch/cloth3
+	name = "Helmet3 Rite"
+	ingredients = list(/obj/item/newore/gems/quartz)
+	product_path = (/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult3)
+
+/datum/rune_recipe/tzeentch/cloth4
+	name = "Helmet4 Rite"
+	ingredients = list(/obj/item/newore/gems/topaz)
+	product_path = (/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult4)
+
 
 //Stolen from chamelon projectors
 /datum/rune_recipe/tzeentch/illusion
@@ -60,8 +90,8 @@
 
 /datum/rune_recipe/tzeentch/skinless
 	name = "Skinless Rite"
-	ingredients = list(/obj/item/reagent_containers/food/snacks/poo, /obj/item/flame/candle)
-	product_path = /mob/living/carbon/human/skinless
+	ingredients = list(/mob/living/carbon/human, /obj/item/flame/candle)
+	product_path = /mob/living/carbon/human
 
 /datum/rune_recipe/tzeentch/transmutation
 	name = "Transmutation Rite"
@@ -81,47 +111,18 @@
 
 /datum/rune_recipe/tzeentch/coppercoin
 	name = "Copper to Coin"
-	ingredients = list(/obj/item/stack/thrones)
-	product_path = list(/obj/item/stack/thrones, /obj/item/stack/thrones)
+	ingredients = list(/obj/item/stack/thrones3)
+	product_path = list(/obj/item/reagent_containers/food/snacks/poo)
 
 /datum/rune_recipe/tzeentch/lens
 	name = "Lensmaker's Rite"
 	ingredients = list(/obj/item/cell/lasgun)
 	product_path =  (/obj/item/gun/energy/WarpLens)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/datum/rune_recipe/tzeentch/tzbook
+	name = "Rite of the Mindshatterer"
+	ingredients = list(/obj/item/book/manual)
+	product_path = (/obj/item/melee/Tzbook)
 
 /datum/rune_recipe/tzeentch/tome
 	name = "Tome Refractation"

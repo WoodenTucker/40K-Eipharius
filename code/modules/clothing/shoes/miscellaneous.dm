@@ -19,18 +19,18 @@
 	desc = "When you want to turn up the heat."
 	icon_state = "swat"
 	force = 3
-	armor = list(melee = 80, bullet = 60, laser = 60,energy = 25, bomb = 50, bio = 10, rad = 0)
+	armor = list(melee = 1, bullet = 2, laser = 2, energy = 2, bomb = 2, bio = 0, rad = 0)
 //	item_flags = ITEM_FLAG_NOSLIP
 	siemens_coefficient = 0.6
 	can_hold_knife = 1
-	var/obj/item/material/sword/combat_knife/knife = null
+	var/obj/item/melee/sword/combat_knife/knife = null
 
 /obj/item/clothing/shoes/combat //Basically SWAT shoes combined with galoshes.
 	name = "combat boots"
 	desc = "When you REALLY want to turn up the heat."
 	icon_state = "jungle"
 	force = 5
-	armor = list(melee = 80, bullet = 60, laser = 60,energy = 25, bomb = 50, bio = 10, rad = 0)
+	armor = list(melee = 1, bullet = 2, laser = 2, energy = 2, bomb = 2, bio = 0, rad = 0)
 //	item_flags = ITEM_FLAG_NOSLIP
 	siemens_coefficient = 0.6
 	can_hold_knife = 1
@@ -45,7 +45,7 @@
 	desc = "A pair of durable brown boots. Waterproofed for use planetside."
 	icon_state = "jungle"
 	force = 3
-	armor = list(melee = 30, bullet = 10, laser = 10, energy = 15, bomb = 20, bio = 10, rad = 0)
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 15, bomb = 20, bio = 10, rad = 0)
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
 
@@ -54,7 +54,7 @@
 	desc = "A pair of durable tan boots. Designed for use in hot climates."
 	icon_state = "desert"
 	force = 3
-	armor = list(melee = 30, bullet = 10, laser = 10, energy = 15, bomb = 20, bio = 10, rad = 0)
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 15, bomb = 20, bio = 10, rad = 0)
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
 
@@ -62,7 +62,7 @@
 	name = "duty boots"
 	desc = "A pair of steel-toed synthleather boots with a mirror shine."
 	icon_state = "duty"
-	armor = list(melee = 40, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
+	armor = list(melee = 10, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
 
@@ -71,7 +71,7 @@
 	desc = "Tan boots with extra padding and armor."
 	icon_state = "desert"
 	force = 3
-	armor = list(melee = 40, bullet = 30, laser = 40,energy = 25, bomb = 50, bio = 0, rad = 0)
+	armor = list(melee = 10, bullet = 30, laser = 40,energy = 25, bomb = 50, bio = 0, rad = 0)
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
 
@@ -192,6 +192,12 @@
 	desc = "A pair of high quality black leather boots for kicking the filthy peasants and participating in questionable hedonistic activities at the chambers."
 	icon_state = "noble-boots"
 	item_state = "noble-boots"
+
+/obj/item/clothing/shoes/jackboots/noble/rt
+	name = "rogue boots"
+	desc = "A pair of high quality black leather boots for kicking the filthy peasants and participating in questionable hedonistic activities at the chambers."
+	icon_state = "Boots"
+	item_state = "Boots"
 /*
 /obj/item/clothing/shoes/timbs
 	name = "Trench Timbs"
@@ -199,3 +205,28 @@
 	icon_state = "timbs"
 	item_state = "timbs"
 */
+
+/obj/item/clothing/shoes/scion
+	name = "Tempestus Scion Boots"
+	desc = "Armoured boots belonging to the elite Tempestus Scions."
+	icon_state = "ScionBoots"
+	item_state = "ScionBoots"
+	force = 5
+	armor = list(melee = 20, bullet = 20, laser = 20,energy = 25, bomb = 50, bio = 100, rad = 0)
+	item_flags = ITEM_FLAG_NOSLIP
+	siemens_coefficient = 0.6
+	can_hold_knife = 1
+
+
+
+/obj/item/clothing/shoes/jackboots/grot
+	name = "Small shoes"
+	desc = "Handmade small shoes"
+	icon_state = "Grotshoes"
+	item_state = "Grotshoes"
+
+/obj/item/clothing/shoes/jackboots/grot/grc
+	name = "Small combat boots"
+	desc = "A smaller version of the jackboots issued to imperium forces."
+	icon_state = "GRCboots"
+	item_state = "GRCboots"

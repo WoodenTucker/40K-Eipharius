@@ -5,8 +5,8 @@
 	school = "transmutation"
 	charge_max = 300
 	spell_flags = Z2NOCAST | NEEDSCLOTHES | INCLUDEUSER
-	invocation = "none"
-	invocation_type = SpI_NONE
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	range = -1
 	max_targets = 1
 	level_max = list(Sp_TOTAL = 4, Sp_SPEED = 4, Sp_POWER = 3)

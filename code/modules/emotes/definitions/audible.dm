@@ -158,9 +158,6 @@
 	if(user.isMonkey())
 		return
 
-	else if(user.isChild())
-		emotesound = "sound/voice/emotes/female_cough[rand(1,6)].ogg"
-
 	else if(user.gender == MALE)
 		emotesound = "sound/voice/emotes/male_cough[rand(1,4)].ogg"
 
@@ -181,9 +178,6 @@
 	var/emotesound = null
 	if(user.isMonkey())
 		return
-
-	else if(user.isChild())
-		emotesound = 'sound/voice/emotes/child_cry.ogg'
 
 	else if(user.gender == MALE)
 		emotesound = "sound/voice/emotes/male_cry[rand(1,2)].ogg"
@@ -226,12 +220,6 @@
 	if(user.isMonkey())
 		return
 
-	else if(user.isChild())
-		if(user.gender == MALE)
-			emotesound = "sound/voice/emotes/boy_laugh[rand(1,2)].ogg"
-		else
-			emotesound = 'sound/voice/emotes/girl_laugh1.ogg'
-
 	else if(user.gender == MALE)
 		emotesound = "sound/voice/emotes/male_laugh1.ogg"
 
@@ -251,9 +239,6 @@
 	var/emotesound = null
 	if(user.isMonkey())
 		return
-
-	else if(user.isChild())
-		emotesound = 'sound/voice/emotes/mumble_female.ogg'
 
 	else if(user.gender == MALE)
 		emotesound = 'sound/voice/emotes/mumble_male.ogg'
@@ -305,11 +290,6 @@
 	if(user.isMonkey())
 		return
 
-	else if(user.isChild())
-		if(user.gender == FEMALE)
-			emotesound = "sound/voice/emotes/female_giggle[rand(1,2)].ogg"
-		else if(user.gender == MALE)
-			emotesound = "sound/voice/emotes/male_giggle[rand(1,2)].ogg"
 	else if(user.gender == FEMALE)
 		emotesound = "sound/voice/emotes/female_giggle[rand(1,2)].ogg"
 
@@ -350,9 +330,6 @@
 	var/emotesound = null
 	if(user.isMonkey())
 		return
-
-	else if(user.isChild())
-		emotesound = 'sound/voice/emotes/child_scream.ogg'
 
 	else if(user.gender == MALE)
 		emotesound = "sound/voice/emotes/male_scream[rand(1,2)].ogg"

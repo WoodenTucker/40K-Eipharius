@@ -71,7 +71,7 @@
 
 /obj/structure/catwalkrust
 	name = "Rusty Cat walk"
-	desc = "Old and rusty, this is truely the finest metal craft Eipharius uses to build with. And that says a lot. Often used in the sewer system."
+	desc = "Old and rusty, this is truely the finest metal craft Messina uses to build with. And that says a lot. Often used in the sewer system."
 	icon = 'icons/obj/catwalks.dmi'
 	icon_state = "catwalknew"
 	density = 0

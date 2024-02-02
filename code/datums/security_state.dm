@@ -182,7 +182,7 @@
 	post_status("alert")
 
 /decl/security_level/default/code_green
-	name = "code green"
+	name = "Normal State of Readiness"
 
 	light_range = 2
 	light_power = 1
@@ -193,10 +193,10 @@
 	overlay_alarm = "alarm_green"
 	overlay_status_display = "status_display_green"
 
-	down_description = "All threats to the station have passed. Security may not have weapons visible, privacy laws are once again fully enforced."
+	down_description = "All threats to the city have passed. Workers are to resume normal activities. Planetary Defense and Magistratum personnel are to return to their posts."
 
 /decl/security_level/default/code_blue
-	name = "code blue"
+	name = "Increased Readiness"
 
 	light_range = 2
 	light_power = 1
@@ -206,11 +206,11 @@
 	overlay_alarm = "alarm_blue"
 	overlay_status_display = "status_display_blue"
 
-	up_description = "The station has received reliable information about possible hostile activity on the station. Security staff may have weapons visible, random searches are permitted."
-	down_description = "The immediate threat has passed. Security may no longer have weapons drawn at all times, but may continue to have them visible. Random searches are still allowed."
+	up_description = "The Lord-Governor's Office has received reliable information about possible hostile activity in the city. Planetary Defense and Magistratum personnel may subject any citizens to searches or seizures at random. Resisting lawful orders may be met with summary execution."
+	down_description = "The immediate threat to the city has passed. Planetary Defense and Magistratum personnel may conduct random searches or seize any suspicious goods. Any who do not comply with lawfuly given orders will be subject to action up to and including summary execution."
 
 /decl/security_level/default/code_red
-	name = "code red"
+	name = "State of Emergency"
 
 	light_range = 4
 	light_power = 2
@@ -220,11 +220,11 @@
 	overlay_alarm = "alarm_red"
 	overlay_status_display = "status_display_red"
 
-	up_description = "There is an immediate serious threat to the station. Security may have weapons unholstered at all times. Random searches are allowed and advised."
-	down_description = "The self-destruct mechanism has been deactivated, there is still however an immediate serious threat to the station. Security may have weapons unholstered at all times, random searches are allowed and advised."
+	up_description = "There is an immediate, serious threat to the city. Citzens are advised to shelter-in-place. Planetary Defense and Magistratum personnel may subject any citizens to searches or seizures at random. Resisting lawful orders may be met with summary execution."
+	down_description = "By the grace of the God-Emperor of man, the planet is no longer subject to exterminatus. There is still an immediate, serious threat to the planet and city. All citizens are advised to shelter in place. Resisting lawful orders may be met with summary execution."
 
 /decl/security_level/default/code_delta
-	name = "code delta"
+	name = ""
 
 	light_range = 4
 	light_power = 2
@@ -237,5 +237,5 @@
 	var/static/datum/announcement/priority/security/security_announcement_delta = new(do_log = 0, do_newscast = 1, new_sound = sound('sound/effects/siren.ogg'))
 
 /decl/security_level/default/code_delta/switching_up_to()
-	security_announcement_delta.Announce("The self-destruct mechanism has been engaged. All crew are instructed to obey all instructions given by heads of staff. Any violations of these orders can be punished by death. This is not a drill.", "Attention! Delta security level reached!")
+	security_announcement_delta.Announce("In fealty to the God-Emperor, our undying Lord, and by the grace of the Golden Throne, I declare Exterminatus upon Messina. I hereby sign the death warrant of an entire world, and consign a million souls to oblivion. May Imperial Justice account in all balance. The Emperor Protects.")
 	notify_station()

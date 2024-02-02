@@ -5,9 +5,9 @@
 	icon_state = "umpowerarmor"
 	item_state = "umpowerarmor"
 	str_requirement = 24 // they can get gibbed and their armor stays. helmet has it, so why not armor too
-	canremove = 0
+	canremove = 1
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 140, bullet = 120, laser = 120, energy = 120, bomb = 80, bio = 100, rad = 100)
+	armor = list(melee = 25, bullet = 48, laser = 48, energy = 80, bomb = 60, bio = 100, rad = 80)
 	sales_price = 120
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
@@ -29,6 +29,12 @@
 	icon_state = "bangsuit"
 	item_state = "bangsuit"
 
+/obj/item/clothing/suit/armor/astartes/bloodangel/lamenter
+	name = "Astartes Mark VII Power Armour"
+	desc = "The Holy armour of the sons of the Sanguinius, This one bears the symbol of his position, Tactical Marine of the IXth Chapter, Blood Angel sucessor The Lamenters."
+	icon_state = "lamenterc"
+	item_state = "lamenterc"
+
 /obj/item/clothing/suit/armor/astartes/ravenguard
 	name = "Astartes Mark VII Power Armour"
 	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XIXth Chapter, Raven Guards."
@@ -40,6 +46,7 @@
 	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XVIIIth Chapter, Salamanders."
 	icon_state = "salsuit"
 	item_state = "salsuit"
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/astartes/ultramarine
 	name = "Indomitus Pattern Terminator Power Armor"
@@ -47,11 +54,29 @@
 	icon_state = "ultrasuit"
 	item_state = "ultrasuit"
 
+/obj/item/clothing/suit/armor/astartes/ultramarinenew
+	name = "Indomitus Pattern Terminator Power Armor"
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XIIIth Chapter, Ultramarines."
+	icon_state = "ultrac"
+	item_state = "ultrac"
+
 /obj/item/clothing/suit/armor/astartes/ultramarine/terminator
 	name = "Astartes Mark VII Power Armour"
 	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XIIIth Chapter, Ultramarines."
 	icon_state = "ultraterm"
 	item_state = "ultraterm"
+
+/obj/item/clothing/suit/armor/astartes/emperorschildren
+	name = "Astartes Mark VII Power Armour"
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the IIIrd Legion, Emperor's Children."
+	icon_state = "emperorscc"
+	item_state = "emperorscc"
+
+/obj/item/clothing/suit/armor/astartes/alphalegion
+	name = "Astartes Mark VII Power Armour"
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XXth Legion, Alpha Legion."
+	icon_state = "alphalegc"
+	item_state = "alphalegc"
 
 // SPESS MUUHREEN SIRGENT
 
@@ -66,6 +91,7 @@
 	desc = "The Holy armour of the Emperor's chosen, This one is trimmed in golden lining and bears the symbol of his position, Sergeant of the XVIIIth Chapter, Salamanders."
 	icon_state = "salcap"
 	item_state = "salcap"
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/astartes/ultramarine/sergeant
 	name = "Astartes Mark VII Power Armour"
@@ -92,6 +118,7 @@
 	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Apothecary of the XVIIIth Chapter, Salamanders."
 	icon_state = "salapoth"
 	item_state = "salapoth"
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/astartes/apothecary/ultramarine
 	name = "Astartes Mark VII Power Armour"
@@ -124,17 +151,18 @@
 	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Techmarine of the XVIIIth Chapter, Salamanders."
 	icon_state = "saltech"
 	item_state = "saltech"
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/astartes/terminator //FINALLY HERE!
 	name = "Indomitus Pattern Tactical Dreadnought Armour"
 	icon = 'icons/mob/32x40/suits.dmi'
 	item_icons = list(slot_wear_suit_str = 'icons/mob/32x40/suits.dmi')
-	icon_state = "umpowerarmor"
-	item_state = "umpowerarmor"
+	icon_state = "ultracap"
+	item_state = "ultracap"
 	str_requirement = 25
 	canremove = 0
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 95, bullet = 85, laser = 85, energy = 85, bomb = 90, bio = 90, rad = 90)
+	armor = list(melee = 30, bullet = 55, laser = 55, energy = 90, bomb = 90, bio = 100, rad = 100)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -153,7 +181,7 @@ var/shield_count = 0
 
 /obj/item/clothing/suit/armor/astartes/terminator/shielded/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(istype(damage_source, /obj/item/projectile))
-		if(shield_count >= 0)
+		if(shield_count > 0 && prob(60))
 			var/obj/item/projectile/P = damage_source
 			//var/reflectchance = 100 //Defined here, for if you want to make it have X percent chance of blocking the shot,
 			var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()

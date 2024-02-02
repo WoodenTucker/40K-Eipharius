@@ -7,14 +7,14 @@
 	item_icons = list(slot_shoes_str = 'icons/mob/32x40/feet.dmi')
 	icon_state = "ogryn_boots"
 	item_state = "ogryn_boots"
-	armor = list(melee = 60, bullet = 35, laser = 40, energy = 35, bomb = 35, bio = 0, rad = 0)
+	armor = list(melee = 20, bullet = 25, laser = 20, energy = 35, bomb = 35, bio = 0, rad = 0)
 	//no more ogryn foot pics, remove the 3 lines below to add ogryn foot pics
 	unacidable = 1
-	item_flags = ITEM_FLAG_NOSLIP|ITEM_FLAG_NODROP
-	canremove = FALSE
-	
+	item_flags = ITEM_FLAG_NOSLIP
+	canremove = TRUE
+
 //giant knife
 /obj/item/clothing/shoes/jackboots/ogryn/New()
 	..()
-	knife = new /obj/item/material/sword/combat_knife/catachan/giant
+	knife = new /obj/item/melee/sword/combat_knife/catachan/giant
 	update_icon()

@@ -31,5 +31,5 @@
 				/obj/item/contract/apprentice = 				1
 					)
 
-	sacrifice_objects = list(/obj/item/material/sword,
+	sacrifice_objects = list(/obj/item/melee/sword,
 							/obj/item/material/twohanded/fireaxe)

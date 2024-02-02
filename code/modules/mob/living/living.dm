@@ -212,15 +212,6 @@ default behaviour is:
 
 	return can_move_mob(tmob, 1, 0)
 
-/mob/living/verb/succumb()
-	set name = "Succumb"
-	set category = "IC"
-	if(stat == DEAD)
-		return
-	else
-		death()
-		to_chat(src, "<span class='notice'>You have given up on life and succumbed to the warp.</span>")
-
 /mob/living/proc/updatehealth()
 	if(status_flags & GODMODE)
 		health = 100
@@ -694,8 +685,6 @@ default behaviour is:
 
 	if(staminaloss && !combat_mode)//If we're not doing anything, we're not in combat mode, and we've lost stamina we can wait to gain it back. If youre sad no energy regen
 		var/speed = 0
-		if(is_hellbanned())//SLower recovery if you're hellbanned.
-			speed = 8
 		if(lying)
 			speed += -10
 		else
@@ -716,7 +705,7 @@ default behaviour is:
 	set category = "IC"
 
 	if(!incapacitated(INCAPACITATION_KNOCKOUT) && canClick())
-		setClickCooldown(20)
+		setClickCooldown(10)
 		resist_grab()
 		if(!weakened)
 			process_resist()

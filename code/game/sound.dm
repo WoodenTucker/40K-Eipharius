@@ -107,6 +107,8 @@ GLOBAL_LIST_INIT(far_sniper,list('sound/effects/weapons/gun/rifle_farfire1.ogg',
 GLOBAL_LIST_INIT(far_rifle,list('sound/effects/weapons/gun/semi_farfire1.ogg','sound/effects/weapons/gun/semi_farfire2.ogg','sound/effects/weapons/gun/semi_farfire3.ogg', 'sound/effects/weapons/gun/semi_farfire4.ogg'))
 GLOBAL_LIST_INIT(eat_food, list('sound/effects/eating/eat1.ogg', 'sound/effects/eating/eat2.ogg', 'sound/effects/eating/eat3.ogg', 'sound/effects/eating/eat4.ogg', 'sound/effects/eating/eat5.ogg'))
 GLOBAL_LIST_INIT(drink_sound, list('sound/effects/eating/drink1.ogg','sound/effects/eating/drink2.ogg','sound/effects/eating/drink3.ogg','sound/effects/eating/drink4.ogg','sound/effects/eating/drink5.ogg'))
+GLOBAL_LIST_INIT(doorknock, list('sound/effects/door/doorknock1.ogg','sound/effects/door/doorknock2.ogg'))
+GLOBAL_LIST_INIT(doorknockhard, list('sound/effects/door/doorknockhard1.ogg','sound/effects/door/doorknockhard2.ogg'))
 
 
 //var/list/artillery_out = list( 'sound/weapons/WW2/new_exp_high_1.ogg', 'sound/weapons/WW2/new_exp_high_2.ogg', 'sound/weapons/WW2/new_exp_high_3.ogg')
@@ -288,4 +290,6 @@ var/const/FALLOFF_SOUNDS = 0.5
 			if ("eat") soundin = pick(GLOB.eat_food)
 			if ("drink") soundin = pick(GLOB.drink_sound)
 			if ("artillery_in") soundin = pick(artillery_in)
+			if ("doorknock") soundin = pick(GLOB.doorknock)
+			if ("doorknockhard") soundin = pick(GLOB.doorknockhard)
 	return soundin

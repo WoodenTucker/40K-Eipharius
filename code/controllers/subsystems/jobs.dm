@@ -62,6 +62,8 @@ SUBSYSTEM_DEF(jobs)
 			GLOB.civilian_positions |= job.title
 		if(job.department_flag & MSC)
 			GLOB.nonhuman_positions |= job.title
+		if(job.department_flag & PIL)
+			GLOB.pilgrim_positions |= job.title
 
 		if(job.social_class > SOCIAL_CLASS_MED)
 			GLOB.nobles |= job.title
@@ -123,6 +125,13 @@ SUBSYSTEM_DEF(jobs)
 	var/datum/job/job = GetJob(rank)
 	if(job && job.current_positions >= job.total_positions && job.total_positions != -1)
 		job.total_positions++
+		return 1
+	return 0
+
+/datum/controller/subsystem/jobs/proc/RemoveRole(var/rank)	//making additional slot on the fly
+	var/datum/job/job = GetJob(rank)
+	if(job && job.current_positions <= job.total_positions)
+		job.total_positions = 0
 		return 1
 	return 0
 

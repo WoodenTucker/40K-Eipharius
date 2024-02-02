@@ -6,7 +6,6 @@
 	desc = "A special helmet designed for work in a hazardous, low-pressure environment. Only for the most fashionable of military figureheads."
 	flags_inv = HIDEFACE
 	permeability_coefficient = 0.01
-	armor = list(melee = 48, bullet = 58, laser = 48, energy = 30, bomb = 40, bio = 100, rad = 100)
 
 //Captain's space suit This is not the proper path but I don't currently know enough about how this all works to mess with it.
 /obj/item/clothing/suit/armor/captain
@@ -24,7 +23,6 @@
 	item_flags = ITEM_FLAG_STOPPRESSUREDAMAGE
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS
 	allowed = list(/obj/item/tank/emergency, /obj/item/device/flashlight,/obj/item/gun/energy, /obj/item/gun/projectile, /obj/item/ammo_magazine, /obj/item/ammo_casing, /obj/item/melee/baton,/obj/item/handcuffs)
-	armor = list(melee = 58, bullet = 68, laser = 58, energy = 30, bomb = 60, bio = 100, rad = 100)
 	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT|HIDETAIL
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -43,10 +41,11 @@
 		slot_l_hand_str = "syndicate-helm-black-red",
 		slot_r_hand_str = "syndicate-helm-black-red",
 		)
-	armor = list(melee = 65, bullet = 65, laser = 65, energy = 30, bomb = 65, bio = 100, rad = 100)
+	armor = list(melee = 25, bullet = 45, laser = 45, energy = 30, bomb = 65, bio = 100, rad = 100)
 	item_flags = ITEM_FLAG_STOPPRESSUREDAMAGE | ITEM_FLAG_THICKMATERIAL
 	flags_inv = BLOCKHAIR
 	siemens_coefficient = 0.6
+
 
 //Space santa outfit suit
 /obj/item/clothing/head/helmet/space/santahat

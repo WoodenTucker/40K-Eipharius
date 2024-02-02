@@ -1,7 +1,7 @@
 /obj/item/clothing/glasses/hud
 	name = "HUD"
 	desc = "A heads-up display that provides important info in (almost) real time."
-	origin_tech = list(TECH_MAGNET = 3, TECH_BIO = 2)
+	origin_tech = list(TECH_MAGNET = 2, TECH_BIO = 2)
 	var/list/icon/current = list() //the current hud icons
 	electric = 1
 	gender = NEUTER
@@ -16,7 +16,8 @@
 /obj/item/clothing/glasses/hud/health
 	name = "health scanner HUD"
 	desc = "A heads-up display that scans the humans in view and provides accurate data about their health status."
-	icon_state = "healthhud"
+	icon_state = "thermoncle"
+	item_state = "thermoncle"
 	body_parts_covered = 0
 
 /obj/item/clothing/glasses/hud/health/process_hud(var/mob/M)

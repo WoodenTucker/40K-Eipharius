@@ -91,12 +91,12 @@
 			else
 				charges += 1
 				playsound(src.loc, 'sound/effects/splat.ogg', 50, 1, -3)
-
+/*
 	//use up stored charges
 	if(charges >= 10)
 		charges -= 10
 		new /obj/effect/spider/eggcluster(pick(view(1,src)))
-
+*/
 	if(charges >= 3)
 		if(prob(5))
 			charges -= 1

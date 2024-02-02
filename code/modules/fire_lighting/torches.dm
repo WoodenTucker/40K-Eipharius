@@ -23,7 +23,7 @@
 	if(lit)
 		icon_state = "torch1"
 		item_state = "torch1"
-		set_light(3, 5, "#E38F46")
+		set_light(5, 7, "#E38F46")
 	else
 		icon_state = "torch0"
 		item_state = "torch0"
@@ -121,7 +121,7 @@
 	if(lighttorch)
 		if(lighttorch.lit)
 			icon_state = "torchwall1"
-			set_light(7, 5,"#E38F46")
+			set_light(5, 7,"#E38F46")
 
 		else
 			icon_state = "torchwall0"
@@ -253,39 +253,16 @@
 		light()
 
 /obj/structure/fireplacebl
-	icon = 'icons/obj/objects.dmi'
-	icon_state = "fire_bl"
+	icon = 'icons/obj/structures/fireplacebig.dmi'
+	icon_state = "fireplace"
 	name = "fireplace"
 	desc = "In radiance may we find victory."
 	anchored = 1
 	density = 1
-	pixel_x = 0
-	pixel_y = 0
 	var/lit = FALSE
 	var/self_lighting = 0
 	lit = 1
-
-/obj/structure/fireplacebl/br
-	icon = 'icons/obj/objects.dmi'
-	icon_state = "fire_br"
-	pixel_x = 0
-	pixel_y = 0
-	lit = 1
-
-
-/obj/structure/fireplacebl/r
-	icon = 'icons/obj/objects.dmi'
-	icon_state = "fire_r"
-	pixel_x = 0
-	pixel_y = 0
-	lit = 1
-
-/obj/structure/fireplacebl/l
-	icon = 'icons/obj/objects.dmi'
-	icon_state = "fire_l"
-	pixel_x = 0
-	pixel_y = 0
-	lit = 1
+	bound_width = 64
 
 /obj/item/pyre/Initialize()
 	. = ..()
@@ -321,6 +298,13 @@
 	..()
 	if(isflamesource(W))
 		light()
+
+/obj/item/pyre/self_lit/church // Pyre specially for the catacombs since it looks nicer than the standard one
+	name = "Church pyre"
+	desc = "A pyre mostly used for funerals or to decorate religious sites."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "pyreplace1"
+	item_state = "pyreplace1"
 
 /obj/item/campfire
 	icon = 'icons/obj/firepit.dmi'

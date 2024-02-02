@@ -57,6 +57,7 @@
 /obj/item/organ/external/arm
 	organ_tag = BP_L_ARM
 	name = "left arm"
+	icon = 'icons/mob/human_races/r_human.dmi'
 	icon_name = "l_arm"
 	max_damage = 50
 	min_broken_damage = 30
@@ -103,6 +104,7 @@
 /obj/item/organ/external/leg
 	organ_tag = BP_L_LEG
 	name = "left leg"
+	icon = 'icons/mob/human_races/r_human.dmi'
 	icon_name = "l_leg"
 	max_damage = 100
 	min_broken_damage = 50
@@ -151,6 +153,7 @@
 /obj/item/organ/external/foot
 	organ_tag = BP_L_FOOT
 	name = "left foot"
+	icon = 'icons/mob/human_races/r_human.dmi'
 	icon_name = "l_foot"
 	max_damage = 100
 	min_broken_damage = 50
@@ -202,6 +205,7 @@
 /obj/item/organ/external/hand
 	organ_tag = BP_L_HAND
 	name = "left hand"
+	icon = 'icons/mob/human_races/r_human.dmi'
 	icon_name = "l_hand"
 	max_damage = 100
 	min_broken_damage = 50

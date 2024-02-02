@@ -5,8 +5,8 @@
 	school = "transmutation"
 	charge_max = 600
 	spell_flags = NEEDSCLOTHES | SELECTABLE | IGNOREPREV
-	invocation = "Bu-Ekel'Inas!"
-	invocation_type = SpI_SHOUT
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	range = 3
 	max_casts = 1
 

@@ -345,7 +345,7 @@
 //Hostile NPCs.
 
 //SKINLESS
-/datum/species/human/skinless/handle_npc(var/mob/living/carbon/human/H)//DON'T SPAWN TOO MANY OF THESE PLEASE!
+/datum/species/human/skinless/handle_npc(var/mob/living/carbon/human/H)// SOFT CAP IS 6.
 	H.process()
 
 /mob/living/carbon/human/skinless/ssd_check()
@@ -357,15 +357,15 @@
 	zone_sel = new /obj/screen/zone_sel( null )
 	zone_sel.selecting = pick("chest", "head")
 	warfare_faction = RED_TEAM
+	faction = "Chaos"
 	a_intent = I_HURT
 	npc_attack_sound = list('sound/voice/emotes/skinless1.ogg','sound/voice/emotes/skinless2.ogg','sound/voice/emotes/skinless3.ogg','sound/voice/emotes/skinless4.ogg','sound/voice/emotes/skinless5.ogg',)
 
 	is_npc = 1//Make sure their an NPC so they don't attack each other.
 	hand = 0//Make sure one of their hands is active.
-	var/weapon = pick(/obj/item/crowbar, /obj/item/melee/classic_baton/trench_club, /obj/item/melee/classic_baton)
+	var/weapon = pick(/obj/item/melee/sword/machete/chopper/skinless)
 	put_in_hands(new weapon)//Give them a weapon.
 	combat_mode = 1//Put them in combat mode.
-	STAT_LEVEL(dex) = 1
 
 /datum/species/human/lackey/handle_npc(var/mob/living/carbon/human/H)
 	H.process()

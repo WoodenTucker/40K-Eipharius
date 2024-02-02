@@ -18,7 +18,7 @@
 	throw_speed = 1
 	throw_range = 5
 	w_class = ITEM_SIZE_NORMAL
-	origin_tech = list(TECH_ENGINEERING = 4, TECH_MATERIAL = 2)
+	origin_tech = list(TECH_ENGINEERING = 3, TECH_MATERIAL = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 50000)
 	var/datum/effect/effect/system/spark_spread/spark_system
 	var/stored_matter = 0
@@ -121,7 +121,7 @@
 	desc = "Do not ingest."
 	matter = list(DEFAULT_WALL_MATERIAL = 45000,"glass" = 22500)
 	remaining = 30
-	origin_tech = list(TECH_MATERIAL = 4)
+	origin_tech = list(TECH_MATERIAL = 3)
 
 /obj/item/rcd/borg
 	canRwall = 1

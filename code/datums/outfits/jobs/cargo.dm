@@ -24,11 +24,13 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = /obj/item/device/radio/headset/heads/hop
+	r_pocket = /obj/item/storage/box/coin
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/clothing/under/suit_jacket = 1,
 	/obj/item/clothing/under/suit_jacket/female = 1,
 	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/book/manual/chef_recipes = 1,
 	/obj/item/stack/thrones3/ten = 1)
 
 /decl/hierarchy/outfit/job/cargo/cargo_tech

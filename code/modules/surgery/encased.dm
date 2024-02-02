@@ -33,7 +33,7 @@
 	/obj/item/melee/trench_axe = 85 \
 	)
 
-	min_duration = 50
+	min_duration = 40
 	max_duration = 70
 	shock_level = 60
 

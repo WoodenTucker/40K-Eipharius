@@ -13,6 +13,7 @@
 
 	var/lastKnownIP = null
 	var/computer_id = null
+	var/danger_timer = null //Primarily for ritual stuff but if you ever need to throw a timer id that does bad stuff do so here I guess - wel
 
 	var/stat = 0 //Whether a mob is alive or dead. TODO: Move this to living - Nodrak
 
@@ -32,6 +33,7 @@
 	var/obj/screen/hydration_icon = null
 	var/obj/screen/pressure = null
 	var/obj/screen/pain = null
+	var/obj/screen/emperor = null
 	var/obj/screen/gun/item/item_use_icon = null
 	var/obj/screen/gun/radio/radio_use_icon = null
 	var/obj/screen/gun/move/gun_move_icon = null
@@ -83,6 +85,7 @@
 	var/confused = 0		//Carbon
 	var/sleeping = 0		//Carbon
 	var/resting = 0			//Carbon
+
 	var/lying = 0
 	var/lying_prev = 0
 	var/canmove = 1
@@ -209,3 +212,6 @@
 	var/isblessed = 0 //used with censer blessings
 
 	var/alien_talk_understand = 0
+
+	var/can_lead_ritual = TRUE
+	var/datum/ritual/active_ritual

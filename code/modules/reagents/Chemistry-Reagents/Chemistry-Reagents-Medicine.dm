@@ -29,9 +29,14 @@
 /datum/reagent/atepoine/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	M.adjustBrainLoss(-5)
 	M.adjustOxyLoss(-200 * removed)
+	M.add_chemical_effect(CE_STABLE)
 	if(istype(M,/mob/living/carbon/human))
 		var/mob/living/carbon/human/H = M
-
+		var/obj/item/organ/internal/eyes/E = H.internal_organs_by_name[BP_EYES]
+		if(E && istype(E))
+			if(E.damage > 0)
+				E.damage = max(E.damage - 5 * removed, 0)
+		
 		//Ports and simplifies defib code
 		if(H.stat != DEAD)
 			//if(H.ssd_check())
@@ -39,6 +44,32 @@
 			//	sleep(200)
 
 			H.resuscitate()
+
+/datum/reagent/spice
+	name = "Spice"
+	description = "Incredibly rare exotic dust."
+	reagent_state = REAGENT_LIQUID
+	color = "#A0522D"
+	metabolism = 0.2
+	overdose = 400
+	scannable = 1
+	flags = AFFECTS_DEAD
+
+/datum/reagent/spice/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien != IS_DIONA)
+		M.add_chemical_effect(CE_PAINKILLER, 30) // Feel less pain.
+		M.add_chemical_effect(CE_SPEEDBOOST, 1) // Speed boost.
+	if(M.chem_doses[type] < 0.2)	//not that effective after initial rush
+		M.emote(pick("twitch", "drool", "moan", "giggle"))
+		sleep(10)
+		M.emote(pick("twitch", "drool", "moan", "giggle"))
+		M.hallucination(25, 30)
+		sleep(10)
+		M.Weaken(5)
+		M.emote(pick("scream"))
+		M.adjustBruteLoss(1)
+		sleep(10)
+		M.emote(pick("scream"))
 
 /datum/reagent/bicaridine
 	name = "Bicaridine"
@@ -399,8 +430,8 @@
 		H.update_mutations()
 
 /datum/reagent/hyperzine
-	name = "Hyperzine"
-	description = "Hyperzine is a highly effective, long lasting, muscle stimulant."
+	name = "hyperzine"
+	description = "hyperzine is a highly effective, long lasting, muscle stimulant."
 	taste_description = "acid"
 	reagent_state = REAGENT_LIQUID
 	color = "#ff3300"
@@ -460,7 +491,7 @@
 
 /datum/reagent/arithrazine/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	M.radiation = max(M.radiation - 70 * removed, 0)
-	M.adjustToxLoss(-10 * removed)
+	M.adjustToxLoss(-10 * removed) //this heals 10 organ damage, i won't fix it or remove it cause its funny
 	if(prob(60))
 		M.take_organ_damage(4 * removed, 0)
 
@@ -684,7 +715,7 @@
 
 /datum/reagent/rezadone
 	name = "Rezadone"
-	description = "A powder with almost magical properties, this substance can effectively treat genetic damage in humanoids, though excessive consumption has side effects."
+	description = "A powder with almost magical properties, this substance can effectively treat almost every form of damage and injury, although slowly."
 	taste_description = "sickness"
 	reagent_state = REAGENT_SOLID
 	color = "#669900"
@@ -750,7 +781,8 @@
 	reagent_state = REAGENT_LIQUID
 	color = "#c8a5dc"
 	scannable = 1
-	overdose = 20
+	overdose = 30
+	flags = AFFECTS_DEAD //i only noticed this was bugged until now
 	metabolism = 0.1
 
 /datum/reagent/adrenaline/affect_blood(var/mob/living/carbon/human/M, var/alien, var/removed)
@@ -776,7 +808,7 @@
 	reagent_state = REAGENT_LIQUID
 	color = "#c10158"
 	scannable = 1
-	overdose = 5
+	overdose = 500
 	metabolism = 1
 
 /datum/reagent/nanoblood/affect_blood(var/mob/living/carbon/human/M, var/alien, var/removed)
@@ -787,6 +819,8 @@
 		if(M.chem_doses[type] > M.species.blood_volume/8) //half of blood was replaced with us, rip white bodies
 			M.immunity = max(M.immunity - 0.5, 0)
 
+
+//W40k shit
 /datum/reagent/tr
 	name = "tissue rebuilder"
 	description = "helps to seal the wounds and rejuvenate the blood supply of the user."
@@ -799,5 +833,67 @@
 	flags = IGNORE_MOB_SIZE
 
 /datum/reagent/tr/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
-	if(alien != IS_DIONA)
-		M.heal_organ_damage(300 * removed, 300 * removed)
+	M.heal_organ_damage(10 * removed, 10 * removed)
+
+//WIP
+/datum/reagent/satrophine
+	name = "satrophine"
+	description = "Satrophine is a highly addictive and power stimulant, capable of hiding pain and injury while also highly empowering the user's senses."
+	taste_description = "acid"
+	reagent_state = REAGENT_LIQUID
+	color = "#ff3300"
+	metabolism = REM * 0.5
+	flags = AFFECTS_DEAD
+	overdose = REAGENTS_OVERDOSE * 0.2 //6 OD
+ //High risks High reward
+/datum/reagent/satrophine/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien == IS_DIONA)
+		return
+	M.add_chemical_effect(CE_PAINKILLER, 50) //good painkiller, not the best
+	M.add_chemical_effect(CE_SPEEDBOOST, 3)
+	M.add_chemical_effect(CE_PULSE, 3) //50% chance their entire chest cavity fucking explodes due to their heart
+	if(prob(5))
+		M.emote(pick("twitch", "blink_r", "shiver"))
+
+	if(M.chem_doses[type] > 1) //if the dose is higher than 1, cause the following effects:
+		M.AdjustParalysis(-1) //wake the fuck up marine! we got a fight to win!... atleast until the drugs wear off...
+		M.AdjustStunned(-1)
+		M.AdjustWeakened(-5) //NO MATTER HOW MANY BOMBS! IM NOT GOING DOWN UNLESS ITS FROM MY INJURIES!
+		M.make_dizzy(5)
+		M.make_jittery(5)
+	
+	if(M.chem_doses[type] > 3) //if the dose is higher than 3, cause the following effects:
+		M.add_chemical_effect(CE_PAINKILLER, 200) //oxycodone level bonus, nerfs weapon accuracy by a FUCKLOAD
+
+
+/datum/reagent/aurilium 
+	name = "aurilium"
+	description = "A medication which heals ear damage incredibly quickly, 15u OD"
+	taste_description = "beans and lemons"
+	reagent_state = REAGENT_LIQUID
+	color = "#EEDC82"
+	metabolism = REM * 0.15
+	overdose = REAGENTS_OVERDOSE * 0.5 //i think this should be 15?
+	scannable = 1
+	flags = IGNORE_MOB_SIZE
+
+/datum/reagent/aurilium/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+		M.adjustEarDamage(-10, -10) //easy as
+
+/datum/reagent/martyr
+	name = "Martyr's Salvation"
+	description = "Designed to bring individuals back from the brink of death."
+	taste_description = "blood with bubbles"
+	reagent_state = REAGENT_LIQUID
+	color = "#c10158"
+	scannable = 1
+	overdose = 30
+	metabolism = 1
+	flags = IGNORE_MOB_SIZE
+
+/datum/reagent/martyr/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	M.heal_organ_damage(25 * removed, 25 * removed)
+	M.adjustCloneLoss(-20 * removed)
+	M.adjustOxyLoss(-5 * removed)
+	M.adjustToxLoss(-20 * removed)
+	M.add_chemical_effect(CE_STABLE)

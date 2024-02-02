@@ -34,16 +34,16 @@
 /obj/machinery/door/unpowered/inn/berryfarm
 	name = "goodberry farm"
 	maxhealth = 2500
-	req_access = list(211)
+	req_one_access = list(211)
 
 /obj/machinery/door/unpowered/inn/mine
 	name = "Mining Hamlet"
 	maxhealth = 2500
-	req_access = list(211)
+	req_one_access = list(211)
 
 /obj/machinery/door/unpowered/inn/deadwood
 	name = "deadwood estate"
-	req_access = list(244)
+	req_one_access = list(244)
 
 /obj/machinery/door/unpowered/inn/interior
 	name = "interior inn door"
@@ -51,7 +51,7 @@
 	icon_state = "door1"
 	autoclose = 0
 	normalspeed = 0
-	req_access = list(access_bar)
+	req_one_access = list(access_bar)
 
 /obj/machinery/door/unpowered/inn/magistratum
 	name = "Magistratum door"
@@ -59,7 +59,7 @@
 	icon_state = "door1"
 	autoclose = 1
 	normalspeed = 0
-	req_access = list(access_magi)
+	req_one_access = list(access_magi)
 
 /obj/machinery/door/unpowered/inn/vault
 	name = "Interior Vault"
@@ -67,7 +67,7 @@
 	icon_state = "door1"
 	autoclose = 1
 	normalspeed = 0
-	req_access = list(access_treasury)
+	req_one_access = list(access_treasury)
 
 
 /obj/machinery/door/unpowered/inn/krootdoor
@@ -76,7 +76,7 @@
 	icon_state = "door1"
 	autoclose = 0
 	normalspeed = 0
-	req_access = list(access_kroot)
+	req_one_access = list(access_kroot)
 
 /obj/machinery/door/unpowered/inn/groxpen
 	name = "grox pen"
@@ -84,7 +84,7 @@
 	icon_state = "door1"
 	autoclose = 0
 	normalspeed = 0
-	req_access = list(access_grox)
+	req_one_access = list(access_grox)
 
 
 /obj/machinery/door/unpowered/inn/room1
@@ -93,7 +93,7 @@
 	icon_state = "door1"
 	autoclose = 0
 	normalspeed = 0
-	req_access = list(access_inn1) //so innkeeper always can get in if needed
+	req_one_access = list(access_inn1) //so innkeeper always can get in if needed
 
 /obj/machinery/door/unpowered/inn/room2
 	name = "room 2"
@@ -101,7 +101,7 @@
 	icon_state = "door1"
 	autoclose = 0
 	normalspeed = 0
-	req_access = list(access_inn2) //so innkeeper always can get in if needed
+	req_one_access = list(access_inn2) //so innkeeper always can get in if needed
 
 /obj/machinery/door/unpowered/inn/room3
 	name = "room 3"
@@ -109,7 +109,7 @@
 	icon_state = "door1"
 	autoclose = 0
 	normalspeed = 0
-	req_access = list(access_inn3) //so innkeeper always can get in if needed
+	req_one_access = list(access_inn3) //so innkeeper always can get in if needed
 
 /obj/machinery/door/unpowered/administratum
 	name = "Administratum Door"
@@ -117,7 +117,7 @@
 	icon_state = "door1"
 	autoclose = 1
 	normalspeed = 0
-	req_access = list(access_administratum) //so innkeeper always can get in if needed
+	req_one_access = list(access_administratum) //so innkeeper always can get in if needed
 
 /obj/machinery/door/unpowered/cargo
 	name = "Munitorum Door"
@@ -125,5 +125,11 @@
 	icon_state = "door1"
 	autoclose = 1
 	normalspeed = 0
-	req_access = list(access_cargo) //so innkeeper always can get in if needed
+	req_one_access = list(access_cargo) //so innkeeper always can get in if needed
 
+/obj/machinery/door/unpowered/wattle
+	name = "wattle door"
+	icon = 'icons/obj/doors/door_wattle.dmi'
+	icon_state = "door1"
+	autoclose = 0
+	normalspeed = 0

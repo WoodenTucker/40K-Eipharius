@@ -36,17 +36,18 @@
 
 /obj/item/clothing/under/rank/roguetrader
 	desc = "It's a distinguished jumpsuit with a marvelous sash denoting the rankings of \"The Imperium's Chosen Few\"."
-	name = "Noble's jumpsuit"
-	icon_state = "magistrate"
-	item_state = "magistrate"
-	worn_state = "magistrate"
+	name = "rogue apparel"
+	icon_state = "rtc"
+	item_state = "rtc"
+	worn_state = "rtc"
 
 /obj/item/clothing/under/rank/cargo
-	name = "quartermaster's jumpsuit"
-	desc = "It's a jumpsuit worn by the quartermaster. It's specially designed to prevent back injuries caused by pushing paper."
+	name = "mechanicus bondsman jumpsuit"
+	desc = "It's a jumpsuit worn by a mechanicus bondsman, signifying their life oath to the guild."
 	icon_state = "qm"
 	item_state = "lb_suit"
 	worn_state = "qm"
+	canremove = 0
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -273,7 +274,7 @@
 	icon_state = "scoutoutfit"
 	item_state = "scoutoutfit"
 	worn_state = "scoutoutfit"
-	armor = list(melee = 20, bullet = 20, laser = 20, energy = 25, bomb = 30, bio = 30, rad = 10)
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 25, bomb = 10, bio = 30, rad = 10)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -285,7 +286,7 @@
 	worn_state = "skit"
 	canremove = 0
 	unacidable = 1
-	armor = list(melee = 20, bullet = 20, laser = 20, energy = 25, bomb = 30, bio = 30, rad = 10)
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 25, bomb = 10, bio = 30, rad = 10)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -295,7 +296,7 @@
 	icon_state = "ork_clothes"
 	item_state = "ork_clothes"
 	worn_state = "ork_clothes"
-	armor = list(melee = 20, bullet = 20, laser = 20, energy = 25, bomb = 30, bio = 30, rad = 10)
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 25, bomb = 10, bio = 30, rad = 10)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 

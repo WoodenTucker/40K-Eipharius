@@ -41,7 +41,6 @@
 	down_gas_transfer_coefficient = 1
 	down_body_parts_covered = null
 	down_icon_state = "steriledown"
-	pull_mask = 1
 
 /obj/item/clothing/mask/fakemoustache
 	name = "fake moustache"
@@ -136,7 +135,7 @@
 	flags_inv = HIDEFACE
 	body_parts_covered = FACE|EYES
 	action_button_name = "Toggle MUI"
-	origin_tech = list(TECH_DATA = 5, TECH_ENGINEERING = 5)
+	origin_tech = list(TECH_DATA = 3, TECH_ENGINEERING = 2)
 	var/active = FALSE
 	var/mob/observer/eye/cameranet/eye
 
@@ -260,7 +259,7 @@
 	item_state = "spirit_mask"
 	flags_inv = HIDEFACE
 	body_parts_covered = FACE|EYES
-
+/*
 // Bandanas below
 /obj/item/clothing/mask/bandana
 	name = "black bandana"
@@ -333,7 +332,7 @@
 	desc = "A fine black bandana with nanotech lining and a skull emblem. Can be worn on the head or face."
 	icon_state = "bandskull"
 	item_state = "bandskull"
-
+*/
 /obj/item/clothing/mask/masquerade
 	name = "masquerade mask"
 	desc = "Every face has a different shade..."

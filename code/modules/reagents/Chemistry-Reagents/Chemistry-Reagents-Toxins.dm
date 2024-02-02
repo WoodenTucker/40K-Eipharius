@@ -679,20 +679,18 @@
 	overdose = 30
 
 /datum/reagent/toxin/corrupting/affect_touch(var/mob/living/carbon/M, var/alien, var/removed)
-	affect_blood(M,alien,removed*0.5)
-
-/datum/reagent/toxin/corrupting/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	..()
-	if(prob(100))
-		if(M.chem_doses[type] < 5)
-			to_chat(M, "<span class='warning'>You feel funny...</span>")
-		else
-			to_chat(M, "<span class='danger'>You feel like you could die at any moment!</span>")
+	if(M.wear_mask && prob(40))
+		return
+	if(M.chem_doses[type] < 5)
+		to_chat(M, "<span class='warning'>You feel funny...</span>")
+	else
+		to_chat(M, "<span class='danger'>You feel like you could die at any moment!</span>")
 	if(istype(M, /mob/living/carbon/human))
 		var/mob/living/carbon/human/H = M
 		H.zombieze()
 	M.adjustOxyLoss(3 * removed)
-	M.Weaken(10)
+	M.Weaken(5)
 	M.silent = max(M.silent, 10)
 	remove_self(volume)
 
@@ -726,7 +724,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 
 /datum/reagent/proc/external_damage(var/mob/living/carbon/human/m, var/severity = TRUE) // damage skin
 	if (m && istype(m) && severity)
-		var/base = ((rand(2,3)) * severity)
+		var/base = ((rand(6,8)) * severity)
 		if (base >= 2)
 			if (world.time >= next_gas_skin_message)
 				m << "<span class = 'danger'>The gas burns your skin!</span>"
@@ -758,7 +756,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 /datum/reagent/proc/internal_damage(var/mob/living/carbon/human/m, var/severity = TRUE) // damage things like lungs
 	if (mask_check(m)) return
 	if (m && istype(m) && severity)
-		var/base = ((rand(2,3)) * severity)
+		var/base = ((rand(1,2)) * severity)
 		if (base >= 2)
 			if (world.time >= next_gas_lung_message)
 				m << "<span class = 'danger'>The gas burns your lungs!</span>"
@@ -766,12 +764,12 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 			if (m.stat != DEAD)
 				m.emote("scream")
 			if (prob(70))
-				m.Weaken(rand(3,4))
+				m.Weaken(rand(3,9))
 
 /datum/reagent/proc/suffocation(var/mob/living/carbon/human/m, var/severity = TRUE)
 	if (mask_check(m)) return
 	if (m && istype(m) && severity)
-		var/base = ((rand(2,3)) * severity)
+		var/base = ((rand(2,3)) * 5)
 		if (base >= 2)
 			if (world.time >= next_gas_lung_message)
 				m << "<span class = 'danger'>You can't breathe!</span>"
@@ -783,7 +781,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 
 /datum/reagent/proc/open_wound_damage(var/mob/living/carbon/human/m, var/severity = TRUE) // damage wounded skin
 	if (m && istype(m) && severity)
-		var/base = ((m.getBruteLoss() + m.getFireLoss())/10) * severity
+		var/base = (((m.getBruteLoss() + m.getFireLoss())/10) * severity)
 		base += rand(1,2)
 		base /= 2
 		if (base >= 1)
@@ -805,6 +803,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 			return 2
 		if (11 to INFINITY)
 			return 3*/
+ 
 //blue cross
 /datum/reagent/toxin/xylyl_bromide
 	name = "Xylyl Bromide"
@@ -813,7 +812,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 	taste_mult = 1.5
 	reagent_state = GAS
 	color = "#ffd700"
-	strength = 30
+	strength = 0.1
 	touch_met = 5
 //	alpha = 51
 //	meltdose = 4
@@ -833,31 +832,43 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 	description = "A deadly gas that causes burns inside and out."
 	reagent_state = GAS
 	color = "#A2CD5A"
-	strength = 30
-	touch_met = 5
+	strength = 10
+	touch_met = 6
 //	meltdose = 4
 
 /datum/reagent/toxin/mustard_gas/touch_mob(var/mob/living/L, var/amount)
 	if (istype(L))
-		eye_damage(L, get_severity(amount))
-		external_damage(L, get_severity(amount))
-		internal_damage(L, get_severity(amount))
-		open_wound_damage(L, get_severity(amount))
+		eye_damage(L, get_severity(amount / 3))
+		external_damage(L, get_severity(amount / 2))
+		internal_damage(L, get_severity(amount / 2))
+		open_wound_damage(L, get_severity(amount / 2))
+
 /datum/reagent/toxin/mustard_gas/white_phosphorus
 	name = "White Phosphorus Gas"
 	//id = "white_phosphorus_gas"
 	description = "A deadly white gas that burns you up like a torch."
 	reagent_state = GAS
 	color = "#FFFFFF"
-	strength = 30
+	strength = 6
 	touch_met = 5
 	var/meltdose = 4
 
 /datum/reagent/toxin/white_phosphorus/touch_mob(var/mob/living/L, var/amount)
 	if (istype(L))
-		eye_damage(L, get_severity(amount)*3)
-		external_damage(L, get_severity(amount)*3)
-		open_wound_damage(L, get_severity(amount)*3)
+		eye_damage(L, get_severity(amount)/3)
+		external_damage(L, get_severity(amount)/3)
+		open_wound_damage(L, get_severity(amount)/3)
+
+/datum/reagent/toxin/mustard_gas/white_phosphorus/affect_touch(var/mob/living/carbon/human/M, var/alien, var/removed)
+	if(prob(50))
+		to_chat(M, "<span class='danger'>Your skin is burning!</span>")
+		M.adjustFireLoss(rand(5, 15) * removed)
+	if(prob(50))
+		to_chat(M, "<span class='danger'>The air around you ignites in a burning haze!</span>")
+		M.adjust_fire_stacks(2 * removed)
+		M.IgniteMob()
+		new /obj/flamer_fire(src, 12, 10, "red", 1)
+
 //green cross
 /datum/reagent/toxin/chlorine_gas
 	name = "Chlorine Gas"
@@ -865,15 +876,28 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 	description = "A deadly gas that destroys your lungs."
 	reagent_state = GAS
 	color = "#ffd700"
-	strength = 30
+	strength = 3
 	touch_met = 5
 //	alpha = 128
 //	meltdose = 4
 
 /datum/reagent/toxin/chlorine_gas/touch_mob(var/mob/living/L, var/amount)
 	if (istype(L))
-		eye_damage(L, get_severity(amount/2))
-		internal_damage(L, get_severity(amount)*2)
+		eye_damage(L, get_severity(amount/1))
+		open_wound_damage(L, get_severity(amount)*1)
+
+/datum/reagent/toxin/chlorine_gas/affect_touch(var/mob/living/carbon/human/M, var/alien, var/removed)
+	if(istype(M))
+		if(mask_check(M)) return
+		if(prob(10))
+			to_chat(M, "<span class='danger'>You can't breathe!</span>")
+			M.eye_blurry += (10)
+			M.Weaken(15)
+			M.adjustOxyLoss(rand(5, 15) * removed)
+			M.adjustToxLoss(rand(1, 3) * removed)
+		if(prob(15))
+			M.emote("cough")
+
 
 /datum/reagent/toxin/phosgene_gas
 	name = "Phosgene Gas"
@@ -881,9 +905,95 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 	description = "A deadly gas that causes suffocation."
 	reagent_state = GAS
 	color = "#eaeaea"
-	strength = 30
+	strength = 4
 	touch_met = 5
 //	alpha = 25
-/datum/reagent/toxin/phosgene_gas/touch_mob(var/mob/living/L, var/amount)
-	if (istype(L))
-		suffocation(L, get_severity(amount)*4)
+
+/datum/reagent/toxin/phosgene_gas/affect_touch(var/mob/living/carbon/human/M, var/alien, var/removed)
+	if(istype(M))
+		if(mask_check(M)) return
+		if(prob(10))
+			to_chat(M, "<span class='danger'>You can't breathe!</span>")
+			M.eye_blurry += (20)
+			M.Weaken(30)
+			M.adjustOxyLoss(rand(10, 30) * removed)
+			M.adjustToxLoss(rand(3, 6) * removed)
+		if(prob(25))
+			M.emote("cough")
+
+//TYRANID TOXINS
+
+
+/datum/reagent/toxin/tyranid
+	name = "Tyranid Venom"
+	description = "A basic tyranid Venom, for categorisation only. Alert a dev if you see this being used."
+	taste_description = "bitterness"
+	metabolism = 0.1
+	//target_organ //Use this to direct where damage should go to, for organ damage.
+	strength = 4 // How much damage it deals per unit
+	var/threshold = 1 //The amount of the reagent for various effects, change this as required for different toxins.
+
+/datum/reagent/toxin/tyranid/acid
+	name = "Tyranid Bio-Acid"
+	description = "A dangerous Tyranid Bio-Acid, beware!"
+	taste_description = "bitterness"
+	metabolism = 0.1
+	strength = 4 // How much damage it deals per unit
+	var/meltdose = 5
+
+/datum/reagent/toxin/tyranid/hall
+	name = "Tyranid Psychotropic Venom"
+	description = "A psychotropic Tyranid venom, used to confuse and disorient enemies."
+	taste_description = "bitterness"
+	metabolism = 0.05
+	strength = 0.1 // How much damage it deals per unit
+
+/datum/reagent/toxin/tyranid/hall/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien == IS_DIONA)
+		return
+
+	M.druggy = max(M.druggy, 30)
+
+	if(M.chem_doses[type] < 1)
+		M.apply_effect(3, STUTTER)
+		M.make_dizzy(5)
+		if(prob(5))
+			M.emote(pick("twitch", "giggle"))
+	else if(M.chem_doses[type] < 2 * threshold)
+		M.apply_effect(3, STUTTER)
+		M.make_jittery(5)
+		M.make_dizzy(5)
+		M.druggy = max(M.druggy, 35)
+		if(prob(10))
+			M.emote(pick("twitch", "giggle"))
+	else
+		M.add_chemical_effect(CE_MIND, -1)
+		M.apply_effect(3, STUTTER)
+		M.make_jittery(10)
+		M.make_dizzy(10)
+		M.druggy = max(M.druggy, 40)
+		if(prob(15))
+			M.emote(pick("twitch", "giggle"))
+	M.add_event("high", /datum/happiness_event/high)
+
+/datum/reagent/toxin/tyranid/sleepy
+	name = "Tyranid Soporific Venom"
+	description = "A soporific Tyranid venom, used to send enemies to sleep."
+	taste_description = "bitterness"
+	metabolism = 0.05
+
+/datum/reagent/toxin/tyranid/sleepy/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien == IS_DIONA)
+		return
+
+	if(M.chem_doses[type] == metabolism * 1)
+		M.confused += 2
+		M.drowsyness += 2
+	else if(M.chem_doses[type] < 2 * threshold)
+		M.Weaken(30)
+		M.eye_blurry = max(M.eye_blurry, 10)
+	else
+		M.sleeping = max(M.sleeping, 30)
+
+	if(M.chem_doses[type] > 1 * threshold)
+		M.adjustToxLoss(removed)

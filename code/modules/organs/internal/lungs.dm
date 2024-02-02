@@ -7,9 +7,9 @@
 	w_class = ITEM_SIZE_NORMAL
 	min_bruised_damage = 25
 	min_broken_damage = 45
-	max_damage = 70
+	max_damage = 80
 	relative_size = 60
-	sales_price = 10
+	sales_price = 14
 
 	var/active_breathing = 1
 
@@ -364,4 +364,7 @@
 	min_broken_damage = 75
 	max_damage = 90
 	relative_size = 75
-
+	safe_exhaled_max = 60
+	safe_toxins_max = 30
+	SA_para_min = 60
+	SA_sleep_min = 120

@@ -6,16 +6,18 @@
 	icobase = 'icons/mob/human_races/r_ork.dmi'
 	deform = 'icons/mob/human_races/r_def_ork.dmi'
 	min_age = 1
-	max_age = 65
-	total_health = 200
+	max_age = 600
+	total_health = 150
 	var/pain_power = 120
 	gluttonous = GLUT_ITEM_NORMAL
 	mob_size = MOB_LARGE
 	strength = STR_HIGH
-	sexybits_location = BP_GROIN
-	species_flags = SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SLIP
+//	sexybits_location = BP_GROIN
+	species_flags = SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SLIP
+	brute_mod = 0.75
+	burn_mod = 0.75 
 	base_auras = list(
-		/obj/aura/regenerating/human/astartes
+		/obj/aura/regenerating/human/ork
 		)
 	inherent_verbs = list(
 		//mob/living/carbon/human/ork/proc/evolve,
@@ -35,7 +37,7 @@
 		H.h_style = "Bald" //never seen an ork wif hair
 	if(H.f_style)//orks dont have beards
 		H.f_style = "shaved"
-			H.update_eyes()	//hacky fix, i don't care and i'll never ever care (this fixs the weird grey vision shit when placing people in a new mob)
+		H.update_eyes()	//hacky fix, i don't care and i'll never ever care (this fixs the weird grey vision shit when placing people in a new mob)
 	return ..()
 
 
@@ -69,13 +71,9 @@
 	. = ..()
 	fully_replace_character_name(random_ork_name(src.gender))
 	warfare_faction = ORKZ
+	faction = "ORKZ"
 	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/ork)
 	outfit.equip(src)
 
-	/*
-	hand = 0//Make sure one of their hands is active.
-	put_in_hands(new /obj/item/gun/projectile/ork/automatic/shoota)//Give them a weapon.
-	src.isburied = 1
-	*/ // don't want free shoota no more.
 /mob/living/carbon/human //the most cursed line in all of this code
 	var/new_orkz = SPECIES_ORK

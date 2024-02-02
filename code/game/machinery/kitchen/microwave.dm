@@ -389,3 +389,9 @@
 
 		if ("dispose")
 			dispose()
+
+/obj/machinery/microwave/distillery
+	name = "makeshift distillery"
+	desc = "A makeshift distillery to make your own delicious and questionable alcohol, <span class='danger'>Be aware this works just like a microwave, place the reagents inside and let it work.</span>"
+	icon = 'icons/map_project/farm_content.dmi'
+	icon_state = "samovar_active"

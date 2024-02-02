@@ -59,12 +59,12 @@
 		if("l_hand")
 			usr.put_in_l_hand(src)
 	src.add_fingerprint(usr)
-/*
+
 /obj/item/clothing/examine(var/mob/user)
 	. = ..(user)
 	for(var/obj/item/clothing/accessory/A in accessories)
 		to_chat(user, "\icon[A] \A [A] is attached to it.")
-*/
+
 /obj/item/clothing/proc/update_accessory_slowdown()
 	slowdown_accessory = 0
 	for(var/obj/item/clothing/accessory/A in accessories)
@@ -79,7 +79,7 @@
 /obj/item/clothing/proc/attach_accessory(mob/user, obj/item/clothing/accessory/A)
 	accessories += A
 	A.on_attached(src, user)
-	//src.verbs |= /obj/item/clothing/proc/removetie_verb
+	src.verbs |= /obj/item/clothing/proc/removetie_verb
 	update_accessory_slowdown()
 	update_clothing_icon()
 

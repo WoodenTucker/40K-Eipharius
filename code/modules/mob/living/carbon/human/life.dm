@@ -101,9 +101,9 @@
 		handle_warfare_life()
 
 		handle_gas_mask_sound()//Was in breathing, but people don't breathe anymore.
-
+/*
 		handle_species_regen() //Species specific bonus regen
-
+*/
 		handle_vice()
 
 
@@ -1392,30 +1392,72 @@
 	// runs an update to check if we've become jaundiced, pale or low on oxygen resulting in icon changes
 	if(stat != DEAD && !(life_tick % 15)) // don't want to do this too often. update_body() also won't do anything if nothing has changed
 		update_body()
-
+/* IF YOU RE ENABLE THIS MAKE SURE TO UNDISABLE Line-105 called handle_species_regen
 /mob/living/carbon/human/proc/handle_species_regen()
 	var/obj/item/organ/external/affecting
 	var/list/limbs = BP_ALL_LIMBS //sanity check, can otherwise be shortened to affecting = pick(BP_ALL_LIMBS)
-	if(species.name == "Astartes" || species.name == "Orkz") //Simple way to species check
+	if(species.name == "Astartes") //Simple way to species check
 		shock_stage = 0
 
-		heal_organ_damage(0.2, 0.2)
+		heal_organ_damage(0.1, 0.1)
 		if(src.getBrainLoss() > 0)
-			adjustBrainLoss(-0.2)
+			adjustBrainLoss(-0.1)
 
 		if(src.getBruteLoss() > 0)
 			adjustBruteLoss(-3.8)
 
 		if(src.getToxLoss() > 0)
-			adjustToxLoss(-0.5)
+			adjustToxLoss(-0.2)
 
 		if(src.getFireLoss() > 0)
 			adjustFireLoss(-3.8)
 
 		if(src.getOxyLoss() > 0)
-			adjustOxyLoss(-0.7)
+			adjustOxyLoss(-0.2)
 
-		if(messageTimer > 500)
+		if(messageTimer > 600)
+			messageTimer = 0
+			restore_blood()
+			blinded = 0
+			eye_blind = 0
+			eye_blurry = 0
+			ear_deaf = 0
+			ear_damage = 0
+			if(limbs.len)
+				for(var/limb in limbs)
+					affecting.status &= ~ORGAN_BROKEN
+					affecting.stage = 0
+			if(species.name == "Ork")
+				to_chat(src, "I'ZE FEELIN' BETTA' 'DEN 'EVA!")
+			else
+				to_chat(src, "Your advanced biology pumps fresh blood through your arteries and works to repair any existing damage.")
+
+
+
+
+		messageTimer++
+		return
+
+	if(species.name == "Orkz") //Simple way to species check
+		shock_stage = 0
+
+		heal_organ_damage(0.1, 0.1)
+		if(src.getBrainLoss() > 0)
+			adjustBrainLoss(-0.1)
+
+		if(src.getBruteLoss() > 0)
+			adjustBruteLoss(-3.8)
+
+		if(src.getToxLoss() > 0)
+			adjustToxLoss(-0.2)
+
+		if(src.getFireLoss() > 0)
+			adjustFireLoss(-3.8)
+
+		if(src.getOxyLoss() > 0)
+			adjustOxyLoss(-0.2)
+
+		if(messageTimer > 600)
 			messageTimer = 0
 			restore_blood()
 			blinded = 0
@@ -1441,23 +1483,23 @@
 	if(species.name == "Tyranids") //Simple way to species check
 		shock_stage = 0
 
-		heal_organ_damage(0.4, 0.4)
+		heal_organ_damage(0.2, 0.2)
 		if(src.getBrainLoss() > 0)
-			adjustBrainLoss(-1.0)
+			adjustBrainLoss(-0.4)
 
 		if(src.getBruteLoss() > 0)
 			adjustBruteLoss(-8.5)
 
 		if(src.getToxLoss() > 0)
-			adjustToxLoss(-2.0)
+			adjustToxLoss(-1.0)
 
 		if(src.getFireLoss() > 0)
 			adjustFireLoss(-8.5)
 
 		if(src.getOxyLoss() > 0)
-			adjustOxyLoss(-2.0)
+			adjustOxyLoss(-1.0)
 
-		if(messageTimer > 250)
+		if(messageTimer > 350)
 			messageTimer = 0
 			to_chat(src, "Your stored biomass kicks into overdrive, regenerating damage and filling your arteries with fresh blood.")
 			restore_blood()
@@ -1477,3 +1519,4 @@
 
 		messageTimer++
 		return
+*/

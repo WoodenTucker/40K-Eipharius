@@ -247,7 +247,7 @@
 	name = "cult grille"
 	desc = "A matrice built out of an unknown material, with some sort of force field blocking air around it."
 	icon_state = "grillecult"
-	health = 40 //Make it strong enough to avoid people breaking in too easily
+	health = 250 //Make it strong enough to avoid people breaking in too easily
 
 /obj/structure/grille/cult/CanPass(atom/movable/mover, turf/target, height = 1.5, air_group = 0)
 	if(air_group)
@@ -258,9 +258,37 @@
 	name = "alien grate"
 	desc = "This matrice is fashioned out of some exotic, strange material. Its strength allows it to function as a prison-like walling."
 	icon_state = "alien_grate"
-	health = 150 //hella strong
+	health = 250 //hella strong
 
 /obj/structure/grille/bogani/CanPass(atom/movable/mover, turf/target, height = 1.5, air_group = 0)
 	if(air_group)
 		return 0 //Make sure air doesn't drain
 	..()
+
+/obj/structure/grille/iron_fence
+	name = "iron fence"
+	desc = "An iron fence, to keep people from going inside or outside."
+	icon = 'icons/map_project/fence.dmi'
+	icon_state = "iron"
+	health = 350 // Near the Governor garden, so it should hold at least a bit more
+
+/obj/structure/grille/fence
+	name = "fence"
+	desc = "A fence, to keep people from going inside or outside."
+	icon = 'icons/map_project/fence.dmi'
+	icon_state = "fence1"
+	health = 200 // Standard Fence, cant be crafted sadly, should be on industrial areas & such on the map
+
+/obj/structure/grille/metal_bars
+	name = "metal bars"
+	desc = "A pair of metal bars that allow liquids to go through, but not solid objects, at least big ones"
+	icon = 'icons/map_project/fence.dmi'
+	icon_state = "bars"
+	health = 300 // Metal bars are meant to be strong so..
+
+/obj/structure/grille/metal_bars/cell
+	name = "cell bars"
+	desc = "A pair of metal bars, these seem to be very resistant to stop anyone from going in and out."
+	icon = 'icons/map_project/fence.dmi'
+	icon_state = "bars"
+	health = 1500 // Absolutely STRONG, can be cut easily with wirecutters, but dont want anyone just slamming their fists on it for 20 minutes and breaking it.

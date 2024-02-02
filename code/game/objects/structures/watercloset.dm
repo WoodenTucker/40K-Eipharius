@@ -418,6 +418,11 @@
 		"<span class='notice'>[user] washes \a [I] using \the [src].</span>", \
 		"<span class='notice'>You wash \a [I] using \the [src].</span>")
 
+/obj/structure/sink/well
+	name = "well"
+	desc = "A well that seems to contain fresh water."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "well"
 
 /obj/structure/sink/kitchen
 	name = "kitchen sink"
@@ -437,3 +442,11 @@
 	icon_state = "puddle-splash"
 	..()
 	icon_state = "puddle"
+
+/obj/structure/sink/fountain
+	name = "fountain water"
+	icon = 'icons/obj/structures/fountain.dmi'
+	icon_state = "water"
+	desc = "Fresh water streams from the fountain. Fresh is debatable."
+	layer = 4
+	plane = ABOVE_HUMAN_PLANE

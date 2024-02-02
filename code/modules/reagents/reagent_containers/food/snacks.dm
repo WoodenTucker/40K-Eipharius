@@ -677,11 +677,11 @@
 
 /obj/item/reagent_containers/food/snacks/bearmeat
 	name = "bear meat"
-	desc = "A very manly slab of meat, don't eat it raw!"
+	desc = "A prime slab of meat, considered a delicacy by many imperial nobles. The trader will want this."
 	icon_state = "bearmeat"
 	filling_color = "#db0000"
 	center_of_mass = "x=16;y=10"
-	sales_price = 5
+	sales_price = 25
 
 	New()
 		..()
@@ -691,11 +691,11 @@
 
 /obj/item/reagent_containers/food/snacks/shaframeat
 	name = "shafra meat"
-	desc = "A surprisingly tasty cut of lean meat, don't eat it raw!"
+	desc = "A prime slab of meat, considered a delicacy by many imperial nobles. The trader will want this."
 	icon_state = "bearmeat"
 	filling_color = "#08acf8cc"
 	center_of_mass = "x=16;y=10"
-	sales_price = 6
+	sales_price = 25
 
 	New()
 		..()
@@ -709,7 +709,7 @@
 	icon_state = "bearmeat"
 	filling_color = "#08acf8cc"
 	center_of_mass = "x=16;y=10"
-	sales_price = 15
+	sales_price = 30
 
 	New()
 		..()
@@ -961,12 +961,12 @@
 	trash = /obj/item/trash/plate
 	filling_color = "#fff9a8"
 	center_of_mass = "x=16;y=13"
-
-	//var/herp = 0
+	nutriment_desc = list("egg" = 3, "cheese" = 3)
+	nutriment_amt = 2
 	New()
 		..()
-		reagents.add_reagent(/datum/reagent/nutriment/protein, 8)
-		bitesize = 1
+		reagents.add_reagent(/datum/reagent/nutriment/protein, 2)
+		bitesize = 2
 
 /obj/item/reagent_containers/food/snacks/muffin
 	name = "Muffin"
@@ -1978,6 +1978,11 @@
 	New()
 		..()
 		bitesize = 2
+
+/obj/item/reagent_containers/food/snacks/ricepudding/flake
+	name = "Khorne Flakes"
+	desc = "The forbidden breakfast..."
+	nutriment_amt = 8
 
 /obj/item/reagent_containers/food/snacks/pastatomato
 	name = "Spaghetti"
@@ -3308,6 +3313,21 @@
 		reagents.add_reagent(/datum/reagent/iron, 3)
 		bitesize = 2
 
+/obj/item/reagent_containers/food/snacks/kriegration
+	name = "\improper Krieg Ration"
+	desc = "A mass-produced field ration, formulated to provide a blend of essential nutrients, is designed to meet the nutritional needs of a soldier, ensuring not only survival but also peak physical performance. It is concoction of vitamins, minerals, proteins, and other vital elements essential for sustaining the demands of military life. "
+	icon_state = "kriegration"
+	trash = /obj/item/trash/liquidfood
+	filling_color = "#a8a8a8"
+	center_of_mass = "x=16;y=15"
+	nutriment_desc = list("meat" = 9)
+	nutriment_amt = 18
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/iron, 6)
+		reagents.add_reagent(/datum/reagent/water, 12)
+		bitesize = 4
+
 /obj/item/reagent_containers/food/snacks/foodtray
 	name = "Food Tray"
 	desc = "Disgusting grey slurry and a side of boiled vegetables."
@@ -3398,7 +3418,7 @@
 	return ..()
 
 /obj/item/reagent_containers/food/snacks/warfare/attackby(obj/item/W, mob/user)
-	if(istype(W,/obj/item/material/sword/combat_knife))
+	if(istype(W,/obj/item/melee/sword/combat_knife))
 		open(user)
 		update_icon()
 

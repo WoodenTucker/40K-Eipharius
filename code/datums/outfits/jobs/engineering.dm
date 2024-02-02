@@ -17,6 +17,7 @@
 	suit = /obj/item/clothing/suit/storage/hazardvest/magos
 	shoes = /obj/item/clothing/shoes/jackboots/technoboots
 	uniform = /obj/item/clothing/under/rank/chief_engineer
+	r_pocket = /obj/item/storage/box/coin
 	l_ear = /obj/item/device/radio/headset/heads/ce
 	l_hand = null
 	gloves = /obj/item/clothing/gloves/thick/techpriest
@@ -26,7 +27,40 @@
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos
 	backpack_contents = list(/obj/item/stack/thrones/five = 1,
 		/obj/item/stack/thrones2/five = 3,
+		/obj/item/book/manual/ripley_build_and_repair = 1,
+		/obj/item/book/manual/engineering_construction = 1,
+		/obj/item/paper/administratum/mech = 1,
+		/obj/item/pen = 1,
 		/obj/item/stack/thrones3/five = 1,)
+
+
+/decl/hierarchy/outfit/job/medical/biologis
+	name = OUTFIT_JOB_NAME("Biologis")
+	uniform = /obj/item/clothing/under/rank/geneticist
+	suit = /obj/item/clothing/suit/storage/hooded/genetor
+	mask = /obj/item/clothing/mask/gas/techpriest
+	r_pocket = /obj/item/device/flashlight/pen
+	id_type = /obj/item/card/id/engineering/head
+	pda_type = /obj/item/device/pda/geneticist
+	belt = /obj/item/storage/belt/medical/apothecary
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	gloves = /obj/item/clothing/gloves/thick/techpriest
+	glasses = /obj/item/clothing/glasses/science/magos
+	shoes = /obj/item/clothing/shoes/jackboots/techpriest
+	l_ear = /obj/item/device/radio/headset/headset_eng
+	l_hand = /decl/hierarchy/supply_pack/security/forensics
+	r_pocket = /obj/item/storage/box/coin
+	r_ear = null
+	back = /obj/item/storage/backpack/satchel/warfare/techpriest/biologis
+	backpack_contents = list(
+		/obj/item/gun/energy/pulse/plasma/pistol/mechanicus = 1,
+		/obj/item/stack/thrones = 1,
+		/obj/item/stack/thrones2 = 1,
+		/obj/item/stack/thrones3/five = 1,
+		/obj/item/book/manual/engineering_construction = 1,
+		/obj/item/paper/administratum/mech = 1,
+		/obj/item/pen = 1,
+		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
 
 /decl/hierarchy/outfit/job/engineering/engineer
 	name = OUTFIT_JOB_NAME("Tech Priest")
@@ -39,7 +73,9 @@
 	suit = /obj/item/clothing/suit/storage/hazardvest/magos/techpriest
 	gloves = /obj/item/clothing/gloves/thick/techpriest
 	belt = /obj/item/storage/belt/utility/full
+	shoes = /obj/item/clothing/shoes/jackboots/techpriest
 	id_type = /obj/item/card/id/engineering
+	r_pocket = /obj/item/storage/box/coin
 	pda_type = null
 	pda_slot = null
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest
@@ -47,7 +83,34 @@
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 		/obj/item/stack/thrones = 1,
 		/obj/item/stack/thrones2 = 1,
-		/obj/item/stack/thrones3/five = 1,
+		/obj/item/pickaxe/mechanicus = 1,
+		/obj/item/paper/administratum/mech = 1,
+		/obj/item/pen = 1,
+		/obj/item/book/manual/ripley_build_and_repair = 1,
+)
+
+/decl/hierarchy/outfit/job/engineering/engineer/bondage
+	name = OUTFIT_JOB_NAME("Mechanicus Bondsman")
+	head = /obj/item/clothing/head/helmet/bond
+	mask = /obj/item/clothing/mask/gas/explorer
+	l_ear = /obj/item/device/radio/headset/headset_eng
+	shoes = /obj/item/clothing/shoes/jackboots/pilgrim_boots
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	uniform = /obj/item/clothing/under/rank/cargo
+	suit = /obj/item/clothing/suit/armor/bondsman
+	gloves = /obj/item/clothing/gloves/thick
+	belt = /obj/item/storage/belt/utility/full
+	id_type = /obj/item/card/id/engineering
+	r_pocket = /obj/item/storage/box/coin
+	pda_type = null
+	pda_slot = null
+	back = /obj/item/storage/backpack/satchel/warfare
+	backpack_contents = list(
+		/obj/item/stack/thrones = 1,
+		/obj/item/pickaxe/mechanicus = 1,
+		/obj/item/paper/administratum/mech = 1,
+		/obj/item/pen = 1,
+		/obj/item/book/manual/ripley_build_and_repair = 1,
 )
 
 /decl/hierarchy/outfit/job/engineering/engineer/void

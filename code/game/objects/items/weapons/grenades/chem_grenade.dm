@@ -188,7 +188,7 @@
 	desc = "An oversized grenade that affects a larger area."
 	icon_state = "large_grenade"
 	allowed_containers = list(/obj/item/reagent_containers/glass)
-	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
+	origin_tech = list(TECH_COMBAT = 1, TECH_MATERIAL = 1)
 	affected_area = 4
 
 /obj/item/grenade/chem_grenade/metalfoam
@@ -305,6 +305,7 @@
 	name = "Blight grenade"
 	desc = "Take a deep breath!"
 	icon_state = "blight"
+	arm_sound = 'sound/weapons/grenade_arm.ogg'
 	stage = 2
 	path = 1
 
@@ -315,7 +316,7 @@
 
 		B1.reagents.add_reagent(/datum/reagent/phosphorus, 30)
 		B1.reagents.add_reagent(/datum/reagent/potassium, 30)
-		B1.reagents.add_reagent(/datum/reagent/toxin/corrupting, 40)
+		B1.reagents.add_reagent(/datum/reagent/toxin/corrupting, 60)
 		B2.reagents.add_reagent(/datum/reagent/sugar, 30)
 		B2.reagents.add_reagent(/datum/reagent/acid/polyacid, 0)
 
@@ -324,3 +325,122 @@
 		beakers += B1
 		beakers += B2
 		icon_state = initial(icon_state) +"_locked"
+
+/obj/item/grenade/chem_grenade/gas
+	name = "Basic"
+	desc = "Favoured by the Death Korps of Krieg, these gas grenades are highly potent."
+	icon = 'icons/obj/grenade.dmi'
+	icon_state = "csmoke"
+	arm_sound = 'sound/weapons/grenade_arm.ogg'
+	stage = 2
+	path = 1
+
+/obj/item/grenade/chem_grenade/gas/chlorine
+	name = "Chlorine gas grenade"
+	desc = "Favoured by the Death Korps of Krieg, these gas grenades are highly potent."
+	stage = 2
+	path = 1
+
+	New()
+		..()
+		var/obj/item/reagent_containers/glass/beaker/large/B1 = new(src)
+		var/obj/item/reagent_containers/glass/beaker/large/B2 = new(src)
+
+		B1.reagents.add_reagent(/datum/reagent/phosphorus, 40)
+		B1.reagents.add_reagent(/datum/reagent/potassium, 40)
+		B1.reagents.add_reagent(/datum/reagent/toxin/chlorine_gas, 40)
+		B2.reagents.add_reagent(/datum/reagent/sugar, 40)
+		B2.reagents.add_reagent(/datum/reagent/toxin/chlorine_gas, 80)
+
+		detonator = new/obj/item/device/assembly_holder/timer_igniter(src)
+
+		beakers += B1
+		beakers += B2
+
+/obj/item/grenade/chem_grenade/gas/mustard
+	name = "Mustard gas grenade"
+	desc = "Containing an aerosolised version of the highly toxic Mustard Gas, these gas grenades will burn any exposed skin."
+	stage = 2
+	path = 1
+
+	New()
+		..()
+		var/obj/item/reagent_containers/glass/beaker/large/B1 = new(src)
+		var/obj/item/reagent_containers/glass/beaker/large/B2 = new(src)
+
+		B1.reagents.add_reagent(/datum/reagent/phosphorus, 40)
+		B1.reagents.add_reagent(/datum/reagent/potassium, 40)
+		B1.reagents.add_reagent(/datum/reagent/toxin/mustard_gas, 40)
+		B2.reagents.add_reagent(/datum/reagent/sugar, 40)
+		B2.reagents.add_reagent(/datum/reagent/toxin/mustard_gas, 80)
+
+		detonator = new/obj/item/device/assembly_holder/timer_igniter(src)
+
+		beakers += B1
+		beakers += B2
+
+/obj/item/grenade/chem_grenade/gas/phosgene
+	name = "Phosgene gas grenade"
+	desc = "An upgraded version of the Chlorine Gas Grenades, these are highly sought after by Death Korps regiments."
+	stage = 2
+	path = 1
+
+	New()
+		..()
+		var/obj/item/reagent_containers/glass/beaker/large/B1 = new(src)
+		var/obj/item/reagent_containers/glass/beaker/large/B2 = new(src)
+
+		B1.reagents.add_reagent(/datum/reagent/phosphorus, 40)
+		B1.reagents.add_reagent(/datum/reagent/potassium, 40)
+		B1.reagents.add_reagent(/datum/reagent/toxin/phosgene_gas, 40)
+		B2.reagents.add_reagent(/datum/reagent/sugar, 40)
+		B2.reagents.add_reagent(/datum/reagent/toxin/phosgene_gas, 80)
+
+		detonator = new/obj/item/device/assembly_holder/timer_igniter(src)
+
+		beakers += B1
+		beakers += B2
+
+/obj/item/grenade/chem_grenade/gas/xyxl
+	name = "Tear gas grenade"
+	desc = "These tear gas grenades are highly effective at nonlethal crowd control."
+	stage = 2
+	path = 1
+
+	New()
+		..()
+		var/obj/item/reagent_containers/glass/beaker/large/B1 = new(src)
+		var/obj/item/reagent_containers/glass/beaker/large/B2 = new(src)
+
+		B1.reagents.add_reagent(/datum/reagent/phosphorus, 40)
+		B1.reagents.add_reagent(/datum/reagent/potassium, 40)
+		B1.reagents.add_reagent(/datum/reagent/toxin/xylyl_bromide, 40)
+		B2.reagents.add_reagent(/datum/reagent/sugar, 40)
+		B2.reagents.add_reagent(/datum/reagent/toxin/xylyl_bromide, 80)
+
+		detonator = new/obj/item/device/assembly_holder/timer_igniter(src)
+
+		beakers += B1
+		beakers += B2
+
+/obj/item/grenade/chem_grenade/gas/phosphorous
+	name = "White Phosphorous grenade"
+	desc = "Oficially only to be used for long-range quick cover, these grenades have found enthusiastic deployment across the Astra Militarum for their incendiary effect."
+	stage = 2
+	path = 1
+
+	New()
+		..()
+		var/obj/item/reagent_containers/glass/beaker/large/B1 = new(src)
+		var/obj/item/reagent_containers/glass/beaker/large/B2 = new(src)
+
+		B1.reagents.add_reagent(/datum/reagent/phosphorus, 40)
+		B1.reagents.add_reagent(/datum/reagent/potassium, 40)
+		B1.reagents.add_reagent(/datum/reagent/toxin/mustard_gas/white_phosphorus, 40)
+		B2.reagents.add_reagent(/datum/reagent/sugar, 40)
+		B2.reagents.add_reagent(/datum/reagent/toxin/mustard_gas/white_phosphorus, 80)
+
+		detonator = new/obj/item/device/assembly_holder/timer_igniter(src)
+
+		beakers += B1
+		beakers += B2

@@ -12,8 +12,8 @@
 	pixel_offset_y = -4
 	strength = STR_HIGH
 	radiation_mod = 0.01
-	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED
-	slowdown = -0.30
+	species_flags = SPECIES_FLAG_NO_EMBED
+	slowdown = -0.10
 	inherent_verbs = list(
 	/mob/living/carbon/human/skitarii/proc/giveskitstats,
 		)
@@ -104,6 +104,7 @@
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/galvanic/rifle, slot_s_store)
 			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
 			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
 			src.add_stats(rand(17,20),rand(15,17),rand(18,19),14) //gives stats str, dext, end, int
@@ -175,8 +176,8 @@
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/radcarbine/radpistol, slot_in_backpack)
 			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
 			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
-			src.add_stats(rand(14,20),rand(14,16),rand(20,30),14) //gives stats str, dext, end, int //incredibly mutated and weakened, yet, he endures.
-			src.add_skills(rand(6,10),rand(10,11),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery //weak in most shit cause he gets the OP gun.
+			src.add_stats(rand(17,18),rand(14,16),rand(20,30),14) //gives stats str, dext, end, int //incredibly mutated and weakened, yet, he endures.
+			src.add_skills(rand(6,9),rand(9,11),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery //weak in most shit cause he gets the OP gun.
 			src.set_trait(new/datum/trait/death_tolerant())
 			src.update_eyes() //should fix grey vision
 			src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language

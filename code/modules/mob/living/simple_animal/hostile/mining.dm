@@ -9,14 +9,14 @@
 	emote_hear = list("beeps","grumbles","buzzes")
 	emote_see = list("stares aggresively")
 	speak_chance = 1
-	turns_per_move = 5
+	turns_per_move = 15
 	see_in_dark = 6
 	response_help  = "touches"
 	response_disarm = "shoves aside"
 	response_harm   = "smacks"
 	stop_automated_movement_when_pulled = FALSE
-	maxHealth = 200
-	health = 200
+	maxHealth = 700
+	health = 700
 	melee_damage_lower = 10
 	melee_damage_upper = 25
 	attack_sound = 'sound/weapons/circsawhit.ogg'
@@ -81,13 +81,13 @@
 	rapid = TRUE
 
 /mob/living/simple_animal/hostile/mining_borg/behemoth
-	name = "Rogue Securitron"
+	name = "Man Of Iron"
 	desc = "Once employed by... some sort of corporation, these securitrons have been left to rot here for "
 	icon_state = "behemoth"
 	icon_living = "behemoth"
 	icon_dead = "behemoth_DEAD"
-	maxHealth = 300
-	health = 300
+	maxHealth = 1500
+	health = 1500
 	projectiletype = /obj/item/projectile/energy/laser/powerful //He shoots a big fuck you laser.
 	projectilesound = 'sound/weapons/Laser.ogg'
 	ranged = TRUE
@@ -267,52 +267,52 @@
 	if(spawnees & 1)
 		C = new(src.loc)
 		C.SetName("Drone CPU motherboard")
-		C.origin_tech = list(TECH_DATA = rand(3, 6))
+		C.origin_tech = list(TECH_DATA = rand(2,3))
 
 	if(spawnees & 2)
 		C = new(src.loc)
 		C.SetName("Drone neural interface")
-		C.origin_tech = list(TECH_BIO = rand(3,6))
+		C.origin_tech = list(TECH_BIO = rand(2,3))
 
 	if(spawnees & 4)
 		C = new(src.loc)
 		C.SetName("Drone suspension processor")
-		C.origin_tech = list(TECH_MAGNET = rand(3,6))
+		C.origin_tech = list(TECH_MAGNET = rand(2,3))
 
 	if(spawnees & 8)
 		C = new(src.loc)
 		C.SetName("Drone shielding controller")
-		C.origin_tech = list(TECH_BLUESPACE = rand(3,6))
+		C.origin_tech = list(TECH_BLUESPACE = rand(2,3))
 
 	if(spawnees & 16)
 		C = new(src.loc)
 		C.SetName("Drone power capacitor")
-		C.origin_tech = list(TECH_POWER = rand(3,6))
+		C.origin_tech = list(TECH_POWER = rand(2,3))
 
 	if(spawnees & 32)
 		C = new(src.loc)
 		C.SetName("Drone hull reinforcer")
-		C.origin_tech = list(TECH_MATERIAL = rand(3,6))
+		C.origin_tech = list(TECH_MATERIAL = rand(2,3))
 
 	if(spawnees & 64)
 		C = new(src.loc)
 		C.SetName("Drone auto-repair system")
-		C.origin_tech = list(TECH_ENGINEERING = rand(3,6))
+		C.origin_tech = list(TECH_ENGINEERING = rand(2,3))
 
 	if(spawnees & 128)
 		C = new(src.loc)
 		C.SetName("Drone phoron overcharge counter")
-		C.origin_tech = list(TECH_PHORON = rand(3,6))
+		C.origin_tech = list(TECH_PHORON = rand(2,3))
 
 	if(spawnees & 256)
 		C = new(src.loc)
 		C.SetName("Drone targetting circuitboard")
-		C.origin_tech = list(TECH_COMBAT = rand(3,6))
+		C.origin_tech = list(TECH_COMBAT = rand(2,3))
 
 	if(spawnees & 512)
 		C = new(src.loc)
 		C.SetName("Corrupted drone morality core")
-		C.origin_tech = list(TECH_ILLEGAL = rand(3,6))
+		C.origin_tech = list(TECH_ILLEGAL = rand(2,3))
 
 	visible_message("[user] cuts out some scrap from \the [src]. That might be worth something.")
 	butchered = TRUE

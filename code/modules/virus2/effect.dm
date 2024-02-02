@@ -30,7 +30,7 @@
 	var/oneshot
 	var/delay = 5 SECONDS	//minimal time between activations
 	var/hold_until		//can only fire after this worldtime
-	var/allow_multiple	//allow to have more than 1 effect of this type in the same virus
+	var/allow_multiple = 1	//allow to have more than 1 effect of this type in the same virus
 
 /datum/disease2/effect/proc/fire(var/mob/living/carbon/human/mob,var/current_stage)
 	if(oneshot == -1)
@@ -253,77 +253,78 @@
 	badness = VIRUS_MILD
 	chance_max = 0
 	allow_multiple = 1
+// NEED MORE PLAGUESSSSS
+
+	
 
 /datum/disease2/effect/plague4
-	name = "Nurgle Plague(INSTANT DEATH)"
-	stage = 1
-	badness = VIRUS_EXOTIC
-	chance_max = 99
-	allow_multiple = 1
-	delay = 5 SECONDS
-	activate(var/mob/living/carbon/human/mob,var/multiplier)
-		if (prob(20))
-			new /mob/living/simple_animal/hostile/smalldemon/plague(mob.loc)
-			mob.gib()
-
-/datum/disease2/effect/plague3
-	name = "Nurgle Plague Part 3"
+	name = "Nurgle Rot Plague"
 	stage = 1
 	badness = VIRUS_EXOTIC
 	chance_max = 99
 	allow_multiple = 1
 	delay = 30 SECONDS
 	activate(var/mob/living/carbon/human/mob,var/multiplier)
-		sleep(30)
-		if (prob(50))
-			mob.apply_damage(30, BURN)
-		sleep(50)
-		if (prob(100) && !mob.wear_mask)
-			sleep(100)
-		if (prob(20))
-			new /mob/living/simple_animal/hostile/smalldemon/plague(mob.loc)
-			mob.gib()
-
+		if(mob.species.name == SPECIES_HUMAN)
+			mob.set_species("Zombie")
+			mob.revive()
+			mob.reset_hair()
 
 /datum/disease2/effect/plague2
-	name = "Nurgle Plague Part 2"
-	stage = 1
+	name = "Bubonic Plague"
+	stage = 2
 	badness = VIRUS_EXOTIC
 	chance_max = 99
 	allow_multiple = 1
 	delay = 30 SECONDS
 	activate(var/mob/living/carbon/human/mob,var/multiplier)
-		if (prob(70))
+		if (prob(5))
 			mob.emote("cry")
-			to_chat(mob, "<span class='warning'>Mucous runs down the back of your throat, it feels almost like worms crawling inside your throat.</span>")
-		sleep(30)
-		if (prob(50))
-			mob.apply_damage(5, BURN)
-		sleep(60)
-		if (prob(100) && !mob.wear_mask)
-			sleep(80)
+		sleep(15)
+		if (prob(20))
+			mob.apply_damage(3, BURN)
 		if (prob(10))
-			mob.apply_damage(22, BURN)
+			mob.bowels += rand(0, 200)
+			mob.bladder += rand(0, 200)
+			mob.custom_pain("Your skin hurts a bit.", 20)
+			mob.apply_damage(3, BRUTE)
+		sleep(15)
+		if (prob(1))
+			mob.emote("cough")
+		if (prob(1))
+			mob.emote("sneeze")
+		if (prob(1))
+			mob.emote("collapse")
+		if (prob(1))
+			mob.emote("twitch")
+		if (prob(1))
+			mob.apply_damage(5, BRUTE)
 
 /datum/disease2/effect/plague1
-	name = "Nurgle Plague Part 1"
+	name = "The Pox"
 	stage = 1
 	badness = VIRUS_MILD
 	chance_max = 99
 	allow_multiple = 1
 	delay = 15 SECONDS
 	activate(var/mob/living/carbon/human/mob,var/multiplier)
-		sleep(30)
-		if (prob(100) && !mob.wear_mask)
-			sleep(80)
+		sleep(15)
 		if (prob(10))
-			mob.bowels = rand(0, 900)
-			mob.bladder = rand(0, 900)
+			mob.bowels += rand(0, 150)
+			mob.bladder += rand(0, 150)
 			mob.custom_pain("Your skin hurts a bit.", 20)
-			mob.apply_damage(6, BRUTE)
-		sleep(30)
-		if (prob(20))
-			mob.emote("yawn")
+			mob.apply_damage(2, BRUTE)
+		sleep(15)
+		if (prob(1))
+			mob.emote("cough")
+		if (prob(1))
+			mob.emote("sneeze")
+		if (prob(1))
+			mob.emote("collapse")
+		if (prob(1))
+			mob.emote("twitch")
+		if (prob(1))
+			mob.apply_damage(2, BURN)
 
 // to do; bloodpox(coughing blood). long cycles. brute and tox damage. slow. laughing plague.
 

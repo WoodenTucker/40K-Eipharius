@@ -130,7 +130,7 @@
 	name = "diamond drill"
 	desc = "This is an upgraded version of the drill that'll pierce the heavens! (Can be attached to: Combat and Engineering Exosuits)"
 	icon_state = "mecha_diamond_drill"
-	origin_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 3)
+	origin_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 2)
 	equip_cooldown = 20
 	force = 55
 
@@ -251,7 +251,7 @@
 	name = "mounted RCD"
 	desc = "An exosuit-mounted Rapid Construction Device. (Can be attached to: Any exosuit)"
 	icon_state = "mecha_rcd"
-	origin_tech = list(TECH_MATERIAL = 4, TECH_BLUESPACE = 3, TECH_MAGNET = 4, TECH_POWER = 4)
+	origin_tech = list(TECH_MATERIAL = 3, TECH_BLUESPACE = 3, TECH_MAGNET = 3, TECH_POWER = 3)
 	equip_cooldown = 10
 	energy_drain = 25 KILOWATTS
 	range = MELEE|RANGED
@@ -354,7 +354,7 @@
 	name = "teleporter"
 	desc = "An exosuit module that allows exosuits to teleport to any position in view."
 	icon_state = "mecha_teleport"
-	origin_tech = list(TECH_BLUESPACE = 10)
+	origin_tech = list(TECH_BLUESPACE = 8)
 	equip_cooldown = 150
 	energy_drain = 200 KILOWATTS
 	range = RANGED
@@ -375,7 +375,7 @@
 	name = "wormhole generator"
 	desc = "An exosuit module that allows generating of small quasi-stable wormholes."
 	icon_state = "mecha_wholegen"
-	origin_tech = list(TECH_BLUESPACE = 3)
+	origin_tech = list(TECH_BLUESPACE = 7)
 	equip_cooldown = 50
 	energy_drain = 50 KILOWATTS
 	range = RANGED

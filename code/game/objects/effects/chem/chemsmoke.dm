@@ -6,7 +6,7 @@
 	opacity = 0
 	plane = EFFECTS_BELOW_LIGHTING_PLANE
 	layer = ABOVE_PROJECTILE_LAYER
-	time_to_live = 300
+	time_to_live = 5000
 	pass_flags = PASS_FLAG_TABLE | PASS_FLAG_GRILLE | PASS_FLAG_GLASS //PASS_FLAG_GLASS is fine here, it's just so the visual effect can "flow" around glass
 	var/splash_amount = 10 //atoms moving through a smoke cloud get splashed with up to 10 units of reagent
 	var/turf/destination
@@ -57,12 +57,20 @@
 	..()
 	if(!istype(AM, /obj/effect/effect/smoke/chem))
 		reagents.splash(AM, splash_amount, copy = 1)
+	if(ishuman(loc))
+		var/mob/living/carbon/human/C = loc
+		if (src == !C.wear_mask) //transfer, but only when not disabled
+			reagents.trans_to_mob(C, REM, CHEM_BLOOD, 0.4) // Only breathing in some of the gas.
 
 /obj/effect/effect/smoke/chem/proc/initial_splash()
 	for(var/turf/T in view(1, src))
 		for(var/atom/movable/AM in T)
 			if(!istype(AM, /obj/effect/effect/smoke/chem))
 				reagents.splash(AM, splash_amount, copy = 1)
+	if(ishuman(loc))
+		var/mob/living/carbon/human/C = loc
+		if (src == !C.wear_mask) //transfer, but only when not disabled
+			reagents.trans_to_mob(C, REM, CHEM_BLOOD, 0.4) // Only breathing in some of the gas.
 
 // Fades out the smoke smoothly using it's alpha variable.
 /obj/effect/effect/smoke/chem/proc/fadeOut(var/frames = 16)
@@ -181,12 +189,12 @@
 		I = icon('icons/effects/96x96.dmi', "smoke")
 
 	//Calculate smoke duration
-	var/smoke_duration = 150
+	var/smoke_duration = 600
 
 	var/pressure = 0
 	var/datum/gas_mixture/environment = location.return_air()
 	if(environment) pressure = environment.return_pressure()
-	smoke_duration = between(5, smoke_duration*pressure/(ONE_ATMOSPHERE/3), smoke_duration)
+	smoke_duration = between(180, 900, smoke_duration)  //Original code: smoke_duration = between(5, smoke_duration*pressure/(ONE_ATMOSPHERE/3), smoke_duration)
 
 	var/const/arcLength = 2.3559 //distance between each smoke cloud
 
@@ -224,7 +232,7 @@
 	if(passed_smoke)
 		smoke = passed_smoke
 	else
-		smoke = new /obj/effect/effect/smoke/chem(location, smoke_duration + rand(0, 20), T, I)
+		smoke = new /obj/effect/effect/smoke/chem(location, smoke_duration + rand(200, 250), T, I)
 
 	if(chemholder.reagents.reagent_list.len)
 		chemholder.reagents.trans_to_obj(smoke, chemholder.reagents.total_volume / dist, copy = 1) //copy reagents to the smoke so mob/breathe() can handle inhaling the reagents

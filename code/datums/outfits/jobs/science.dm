@@ -52,12 +52,14 @@
 	shoes = /obj/item/clothing/shoes/jackboots/technoboots
 	uniform = /obj/item/clothing/under/rank/chief_engineer
 	l_ear = /obj/item/device/radio/headset/heads/ce
-	l_hand = /obj/item/gun/energy/phosphor
+	l_hand = /obj/item/gun/energy/pulse/plasma/pistol/glock
 	gloves = /obj/item/clothing/gloves/thick/techpriest
 	id_type = /obj/item/card/id/engineering/head
 	pda_type = null
 	pda_slot = null
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos
-	backpack_contents = list(
-		/obj/item/stack/thrones/five = 1,
-							)
+	backpack_contents = list(/obj/item/stack/thrones/five = 1,
+		/obj/item/stack/thrones2/five = 3,
+		/obj/item/book/manual/ripley_build_and_repair = 1,
+		/obj/item/book/manual/engineering_construction = 1,
+		/obj/item/stack/thrones3/five = 1,)

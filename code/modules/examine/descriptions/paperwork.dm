@@ -4,7 +4,7 @@ Pen and crayon commands
 \[br\] : Creates a linebreak.
 \[center\] - \[/center\] : Centers the text.
 \[h1\] - \[/h1\] : Makes the text a first level heading.
-\[h2\] - \[/h2\] : Makes the text a second level headin.
+\[h2\] - \[/h2\] : Makes the text a second level heading.
 \[h3\] - \[/h3\] : Makes the text a third level heading.
 \[b\] - \[/b\] : Makes the text bold.
 \[i\] - \[/i\] : Makes the text italic.

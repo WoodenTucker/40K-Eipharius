@@ -3,8 +3,13 @@
 
 /datum/cargo_entry/food/meat
 	name = "Meat Crate"
-	cost = 50
+	cost = 55
 	item_path = /obj/structure/closet/crate/meat
+
+/datum/cargo_entry/food/eggs
+	name = "Egg Box"
+	cost = 25
+	item_path = /obj/item/storage/fancy/egg_box
 
 /datum/cargo_entry/food/cheapamasec
 	name = "Cheap Amasec"

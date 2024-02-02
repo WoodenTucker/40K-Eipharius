@@ -142,6 +142,28 @@
 
 // ASTRA MILITARUM STUFF
 
+/obj/item/clothing/under/rank/maccabian
+	name = "Maccabian Battle Uniform"
+	desc = "These durable undersuit are used to represent the zealous, smells like holy oils and other aromatics."
+	icon_state = "maccabian"
+	item_state = "maccabian"
+	worn_state = "maccabian"
+	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 60, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/under/rank/maccabian/medic
+	desc = "These durable undersuit are used to represent the zealous, smells like holy oils and other aromatics. This one is the Medicae Variant"
+	icon_state = "maccabianm"
+	item_state = "maccabianm"
+	worn_state = "maccabianm"
+
+/obj/item/clothing/under/rank/maccabian/sergeant
+	desc = "These durable undersuit are used to represent the zealous, smells like holy oils and other aromatics. This one is the Sergeant Variant"
+	icon_state = "maccabians"
+	item_state = "maccabians"
+	worn_state = "maccabians"
+
 /obj/item/clothing/under/rank/krieg_uniform
 	name = "krieg Battle Uniform"
 	desc = "These durable Battle Uniform are used to represent the resilent Krieg Regiment, Though it smells like shit."
@@ -218,3 +240,12 @@
 	worn_state = "repentia_nude"
 	siemens_coefficient = 0.9
 	species_restricted = list(SPECIES_HUMAN)
+
+/obj/item/clothing/under/administratum
+	name = "administratum underlayers"
+	desc = "voluminous underlayers belonging to an administratum officer."
+	icon_state = "combat"
+	item_state = "bl_suit"
+	worn_state = "combat"
+	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 5, bio = 5, rad = 50)
+	has_sensor = SUIT_HAS_SENSORS

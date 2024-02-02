@@ -66,10 +66,6 @@
 				new /obj/effect/decal/cleanable/cobweb(T)
 			if(dir == EAST)
 				new /obj/effect/decal/cleanable/cobweb2(T)
-			if(prob(web_probability))
-				var/obj/effect/spider/spiderling/spiderling = new /obj/effect/spider/spiderling/mundane/dormant(T)
-				spiderling.pixel_y = spiderling.shift_range
-				spiderling.pixel_x = dir == WEST ? -spiderling.shift_range : spiderling.shift_range
 
 /decl/turf_initializer/maintenance/proc/get_dirt_amount()
 	return rand(10, 50) + rand(0, 50)

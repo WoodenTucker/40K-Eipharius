@@ -5,7 +5,7 @@
 	icon_state = "railgun"
 	removable_components = FALSE
 	load_type = /obj/item/rcd_ammo
-	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 4, TECH_MAGNET = 4)
+	origin_tech = list(TECH_COMBAT = 1, TECH_MATERIAL = 1, TECH_MAGNET = 1)
 	projectile_type = /obj/item/projectile/bullet/magnetic/slug
 	power_cost = 300
 	w_class = ITEM_SIZE_HUGE

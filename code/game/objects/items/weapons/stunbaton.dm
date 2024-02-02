@@ -6,7 +6,7 @@
 	icon_state = "telebaton_1"
 	item_state = "baton"
 	slot_flags = SLOT_BELT
-	force = 5
+	force = 15
 	sharp = 0
 	edge = 0
 	throwforce = 7
@@ -14,17 +14,17 @@
 	origin_tech = list(TECH_COMBAT = 2)
 	attack_verb = list("beaten")
 	var/stunforce = 0
-	var/agonyforce = 65
+	var/agonyforce = 70
 	var/status = 0		//whether the thing is on or not
 	var/obj/item/cell/bcell
 	var/hitcost = 0
 	block_chance = 15
 	stunforce = 0
-	agonyforce = 65
-	sales_price = 8
+	agonyforce = 70
+	sales_price = 1
 	weapon_speed_delay = 6
 	status = 1
-	armor_penetration = 30 //Blunt force transfers through a lot of equipment.
+	armor_penetration = 17 //Blunt force transfers through a lot of equipment.
 
 /obj/item/melee/baton/handle_shield(mob/living/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(default_sword_parry(user, damage, damage_source, attacker, def_zone, attack_text))
@@ -258,7 +258,7 @@
 	attack_verb = list("poked")
 	slot_flags = null
 
-/obj/item/melee/baton/powermaul
+/obj/item/melee/powermaul
 	name = "Power Maul"
 	desc = "The Power Maul commonly used by members of the Adeptus Arbites. It is good for stunning victims."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -268,21 +268,57 @@
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 1
 	force = 25
-	stunforce = 0
-	agonyforce = 25
-	status = 1
-	block_chance = 60
-	sales_price = 20
-	weapon_speed_delay = 5
+	force_wielded = 35
+	var/stunforce = 0
+	var/agonyforce = 60
+	block_chance = 40
+	sales_price = 30
+	weapon_speed_delay = 6
 	sharp = FALSE
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_HUGE
 	atom_flags = ATOM_FLAG_NO_BLOOD
-	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
+	origin_tech = list(TECH_MAGNET = 2, TECH_COMBAT = 2)
 	attack_verb = list("beaten", "smashed")
-	armor_penetration = 65 //Power maul
+	armor_penetration = 19 //Power maul
 
-/obj/item/melee/baton/nidstun
+/obj/item/melee/powermaul/apply_hit_effect(mob/living/target, mob/living/user, var/hit_zone)
+	if(isrobot(target))
+		return ..()
+
+	var/agony = agonyforce
+	var/stun = stunforce
+	var/obj/item/organ/external/affecting = null
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+		affecting = H.get_organ(hit_zone)
+
+	if(user.a_intent == I_HURT)
+		. = ..()
+		if (!.)	//item/attack() does it's own messaging and logs
+			return 0	// item/attack() will return 1 if they hit, 0 if they missed.
+
+		//whacking someone causes a much poorer electrical contact than deliberately prodding them.
+		stun *= 0.5
+		agony = 1	//fuck it.
+		//we can't really extract the actual hit zone from ..(), unfortunately. Just act like they attacked the area they intended to.
+	else
+		if(affecting)
+			target.visible_message("<span class='danger'>[target] has been prodded in the [affecting.name] with [src] by [user]!</span>")
+		else
+			target.visible_message("<span class='danger'>[target] has been prodded with [src] by [user]!</span>")
+
+	//stun effects
+	target.stun_effect_act(stun, agony, hit_zone, src)
+	msg_admin_attack("[key_name(user)] stunned [key_name(target)] with the [src].")
+
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+		H.forcesay(GLOB.hit_appends)
+
+	return 0
+
+/obj/item/melee/powermaul/nidstun
 	name = "Venomous Talon"
 	desc = "The talon is coated in a paralytic agonizing poison, best used on single targets for conversion."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -291,20 +327,19 @@
 	color = "#292929"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 1
-	force = 2
+	force = 4
 	stunforce = 0
-	agonyforce = 165
-	status = 1
-	block_chance = 60
-	sales_price = 20
-	weapon_speed_delay = 5
+	agonyforce = 350
+	block_chance = 40
+	sales_price = 0
+	weapon_speed_delay = 6
 	sharp = TRUE
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_HUGE
 	atom_flags = ATOM_FLAG_NO_BLOOD
-	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
+	origin_tech = list(TECH_MAGNET = 2, TECH_COMBAT = 2)
 	attack_verb = list("violated", "penetrated", "infested")
-	armor_penetration = 90 //Genestealer magic.
+	armor_penetration = 19 //Genestealer magic.
 no
 /obj/item/melee/baton/nidstun/dropped() //since nodrop is fucked this will deal with it for now.
 	..()

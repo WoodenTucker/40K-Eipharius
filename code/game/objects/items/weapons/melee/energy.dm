@@ -5,7 +5,7 @@
 	icon = 'icons/obj/weapons/melee/energy.dmi'
 	sharp = 0
 	edge = 0
-	armor_penetration = 50
+	armor_penetration = 20
 	atom_flags = ATOM_FLAG_NO_BLOOD
 
 /obj/item/melee/energy/proc/activate(mob/living/user)
@@ -211,7 +211,7 @@
 	desc = "A concentrated beam of energy in the shape of a blade. Very stylish... and lethal."
 	icon_state = "blade"
 	force = 40 //Normal attacks deal very high damage - about the same as wielded fire axe
-	armor_penetration = 100
+	armor_penetration = 21
 	sharp = 1
 	edge = 1
 	anchored = 1    // Never spawned outside of inventory, should be fine.
@@ -277,7 +277,6 @@
 
 
 //WARHAMMER 40 THOUSAND IMPERIAL BITCHES WITH BOLTERS!
-//Last time modified by: Walker9
 
 
 /obj/item/melee/energy/powersword //basis for other power weapons
@@ -286,30 +285,33 @@
 	item_state = "powersword"
 	icon_state = "powersword"
 	wielded_icon = "powersword-w"
-	active_force = 50 //should be enough to cut off most limbs
+	active_force = 47 //should be enough to cut off most limbs
 	active_throwforce = 18
 	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
-	force = 40 //its just a adamantium sword when offline
-	armor_penetration = 100
+	force = 42
+	armor_penetration = 25
 	throwforce = 15
 	throw_speed = 1
 	throw_range = 4
-	block_chance = 15
-	sales_price = 90
-	weapon_speed_delay = 14 //2 seconds
+	block_chance = 30
+	sales_price = 0
+	weapon_speed_delay = 9 //2 seconds
 	edge = 1
 	sharp = 1
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	atom_flags = 0
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
+	origin_tech = list(TECH_MAGNET = 6, TECH_COMBAT = 6)
 	attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut", "slashed", "sliced")
 	hitsound = "slash_sound"
 	parry_sounds = list('sound/weapons/bladeparry1.ogg', 'sound/weapons/bladeparry2.ogg', 'sound/weapons/bladeparry3.ogg', 'sound/weapons/bladeparry4.ogg')
 	drop_sound = 'sound/items/drop_sword.ogg'
 	grab_sound = 'sound/items/unholster_sword02.ogg'
 	equipsound = 'sound/items/holster_sword1.ogg'
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
+	armor = list(melee = 3, bullet = 3, laser = 3, energy = 3, bomb = 3, bio = 0, rad = 0)
+
 /obj/item/melee/energy/powersword/activate(mob/living/user)
 	..()
 	icon_state = "powersword_on"
@@ -326,16 +328,16 @@
 	item_state = "powersword" // There is no on-mob for powersword we must use this. It looks alright.
 	icon_state = "powersword"
 	wielded_icon = "powersword-w"
-	active_force = 55 //should be enough to cut off most limbs
+	active_force = 47 //should be enough to cut off most limbs
 	active_throwforce = 20
-	force = 45 //its just a adamantium sword when offline
+	force = 42 //its just a adamantium sword when offline
 	throwforce = 15
 	throw_speed = 1
 	throw_range = 4
 	sharp = TRUE
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE //we have a power sword belt sprite, but im not going to code it in just yet, alright? enough codin' today
-	block_chance = 30
-	sales_price = 120
+	block_chance = 33
+	sales_price = 0
 	w_class = ITEM_SIZE_HUGE
 	atom_flags = 0
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
@@ -350,22 +352,25 @@
 	icon_state = "powerclaw-alt_mag"
 	item_state = "none"
 	wielded_icon = "none"
-	active_force = 45 //This should be enough to cut off most limbs in a few hits
+	active_force = 46
 	active_throwforce = 0
-	force = 35
+	force = 41
 	throwforce = 1
 	throw_speed = 1
 	throw_range = 1
-	weapon_speed_delay = 7
+	weapon_speed_delay = 8
+	armor_penetration = 23
 	edge = 1
 	sharp = 1
-	block_chance = 40 //not the best block chance, but, you can have two of them!
-	sales_price = 80
+	block_chance = 15
+	sales_price = 0
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	w_class = ITEM_SIZE_SMALL //quick attacks
+	w_class = ITEM_SIZE_LARGE
 	atom_flags = 0
-	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
+	origin_tech = list(TECH_MAGNET = 1, TECH_COMBAT = 1)
 	attack_verb = list("mauled", "clawed", "cleaved", "torn", "cut")
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
+	armor = list(melee = 1, bullet = 2, laser = 2, energy = 2, bomb = 2, bio = 0, rad = 0)
 
 /obj/item/melee/energy/powersword/claw/integrated/activate(mob/living/user)
 	..()
@@ -408,7 +413,7 @@
 	str_requirement = 18 //this shouldn't even be here but just in case of someone abusing bugs to get the apothecary's power armor
 	force = 30 //sharp enough to penetrate ceramite and adamantium alike
 	block_chance = 10 //apothecaries are based
-	armor_penetration = 50 //VERY fucking sharp
+	armor_penetration = 20 //VERY fucking sharp
 	sharp = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
 	drop_sound = 'sound/items/handle/axe_drop.ogg'

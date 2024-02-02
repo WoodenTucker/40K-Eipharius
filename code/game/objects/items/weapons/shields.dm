@@ -62,10 +62,10 @@
 	desc = "A shield adept at blocking blunt objects from connecting with the torso of the shield wielder."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "riot"
-	base_block_chance = 70
+	base_block_chance = 35
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BACK
-	force = 5.0
+	force = 9.0
 	throwforce = 5.0
 	throw_speed = 1
 	throw_range = 4
@@ -122,12 +122,12 @@
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "buckler"
 	slot_flags = SLOT_BACK
-	force = 18
-	throwforce = 10
-	base_block_chance = 40
+	force = 21
+	throwforce = 20
+	base_block_chance = 30
 	throw_speed = 10
 	throw_range = 20
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 1)
 	matter = list(DEFAULT_WALL_MATERIAL = 1000, "Wood" = 1000)
 	attack_verb = list("shoved", "bashed")
@@ -156,7 +156,7 @@
 	throw_speed = 1
 	throw_range = 4
 	w_class = ITEM_SIZE_SMALL
-	origin_tech = list(TECH_MATERIAL = 4, TECH_MAGNET = 3, TECH_ILLEGAL = 4)
+	origin_tech = list(TECH_MATERIAL = 5, TECH_MAGNET = 5, TECH_ILLEGAL = 5)
 	attack_verb = list("shoved", "bashed")
 	var/active = 0
 
@@ -212,3 +212,32 @@
 	else
 		set_light(0)
 
+/obj/item/shield/tyranid
+	name = "bio shield"
+	desc = "A strange shield, coated with layers of flesh and chitin, it seems to almost move to block attacks on its own."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "tyranid_shield"
+	base_block_chance = 75 //Big, bulky, and takes up one item.
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	slot_flags = SLOT_BACK
+	force = 25
+	throwforce = 5.0
+	throw_speed = 1
+	throw_range = 4
+	w_class = ITEM_SIZE_HUGE
+	origin_tech = list(TECH_MATERIAL = 2)
+	matter = list("glass" = 7500, DEFAULT_WALL_MATERIAL = 1000)
+	attack_verb = list("shoved", "bashed")
+	var/cooldown = 0 //shield bash cooldown. based on world.time
+
+/obj/item/shield/tyranid/handle_shield(mob/living/user)
+	. = ..()
+	if(.) playsound(user.loc, 'sound/effects/shieldhitmetal.ogg', 50, 1)
+
+/obj/item/shield/tyranid/get_block_chance(mob/user, var/damage, atom/damage_source = null, mob/attacker = null)
+	if(istype(damage_source, /obj/item/projectile))
+		var/obj/item/projectile/P = damage_source
+		//metal shields do not stop bullets or lasers, even in space. Will block beanbags, rubber bullets, and stunshots just fine though.
+		if((is_sharp(P) && armor_penetration >= 30)) //Won't block anything designed to penetrate heavy armour, but it takes up a hand slot, and is a bulky item, so it's pretty good.
+			return 0
+	return base_block_chance

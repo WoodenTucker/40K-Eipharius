@@ -14,11 +14,8 @@
 	can_buckle = 0 //disallow manual un/buckling
 	var/deployed = 0
 
-/obj/item/beartrap/proc/can_use(mob/user)
-	return (user.IsAdvancedToolUser() && !issilicon(user) && !user.stat && !user.restrained())
-
 /obj/item/beartrap/user_unbuckle_mob(mob/user as mob)
-	if(buckled_mob && can_use(user))
+	if(buckled_mob)
 		user.visible_message(
 			"<span class='notice'>\The [user] begins freeing \the [buckled_mob] from \the [src].</span>",
 			"<span class='notice'>You carefully begin to free \the [buckled_mob] from \the [src].</span>",
@@ -31,7 +28,7 @@
 
 /obj/item/beartrap/attack_self(mob/user as mob)
 	..()
-	if(!deployed && can_use(user))
+	if(!deployed)
 		user.visible_message(
 			"<span class='danger'>[user] starts to deploy \the [src].</span>",
 			"<span class='danger'>You begin deploying \the [src]!</span>",
@@ -53,7 +50,7 @@
 /obj/item/beartrap/attack_hand(mob/user as mob)
 	if(buckled_mob)
 		user_unbuckle_mob(user)
-	else if(deployed && can_use(user))
+	else if(deployed)
 		user.visible_message(
 			"<span class='danger'>[user] starts to disarm \the [src].</span>",
 			"<span class='notice'>You begin disarming \the [src]!</span>",
@@ -84,7 +81,7 @@
 	if(blocked >= 100)
 		return
 
-	if(!L.apply_damage(30, BRUTE, target_zone, blocked, used_weapon=src))
+	if(!L.apply_damage(45, BRUTE, target_zone, blocked, used_weapon=src))
 		return 0
 
 	//trap the victim in place
@@ -92,6 +89,7 @@
 	buckle_mob(L)
 	to_chat(L, "<span class='danger'>The steel jaws of \the [src] bite into you, trapping you in place!</span>")
 	deployed = 0
+	anchored = 0
 
 /obj/item/beartrap/Crossed(AM as mob|obj)
 	if(deployed && isliving(AM))

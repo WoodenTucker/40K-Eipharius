@@ -5,7 +5,7 @@
 	initial_icon = "gygax"
 	step_in = 3
 	dir_in = 1 //Facing North.
-	health = 500
+	health = 1500
 	deflect_chance = 15
 	damage_absorption = list("brute"=0.6,"fire"=1,"bullet"=0.7,"laser"=0.65,"energy"=0.85,"bomb"=0.85)
 	max_temperature = 25000

@@ -833,7 +833,21 @@ var/list/floor_decals = list()
 /obj/effect/floor_decal/turf/steel
 	icon_state = "steel"
 
+/obj/effect/floor_decal/turf/piping
+	icon = 'icons/map_project/piping.dmi'
+	icon_state = "trubas"
 
+/obj/effect/floor_decal/turf/big_cables1
+	icon = 'icons/map_project/piping.dmi'
+	icon_state = "cable0"
+
+/obj/effect/floor_decal/turf/big_cables2
+	icon = 'icons/map_project/piping.dmi'
+	icon_state = "cable1"
+
+/obj/effect/floor_decal/turf/armory
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "arm1"
 //////////////////////////////////
 ////////// NEW FLOORING //////////
 //////////////////////////////////
@@ -878,11 +892,11 @@ var/list/floor_decals = list()
 /obj/effect/floor_decal/turf/necro1
 	name = "infestation"
 	icon_state = "necro1"
-
+/*
 /obj/effect/floor_decal/turf/necro2
 	name = "horrific infestation"
 	desc = "You notice sharp teeth beneath it's flesh."
-	icon_state = "necro2"
+	icon_state = "necro2" */
 
 /obj/effect/floor_decal/turf/oldsmoothdirt
 	name = "dirt floor"

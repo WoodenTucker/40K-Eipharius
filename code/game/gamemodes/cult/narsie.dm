@@ -5,7 +5,7 @@ var/global/list/narsie_list = list()
 	name = "Nar-Sie"
 	desc = "Your mind begins to bubble and ooze as it tries to comprehend what it sees."
 	icon = 'icons/obj/narsie.dmi'
-	icon_state = "narsie-small"
+	icon_state = "perry"
 	pixel_x = -236
 	pixel_y = -256
 

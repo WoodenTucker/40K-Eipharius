@@ -119,7 +119,7 @@
 	amount = 50
 
 /obj/item/stack/material/diamond
-	name = "diamond"
+	name = "strange alloy"
 	icon_state = "sheet-diamond"
 	default_type = "diamond"
 	icon = 'icons/obj/items.dmi'
@@ -418,4 +418,21 @@
 	amount = 10
 
 /obj/item/stack/material/scrap/fifty
+	amount = 50
+
+/obj/item/stack/material/biomass
+	name = "biomass"
+	desc = "A wriggling lump of biomass."
+	singular_name = "biomass clump"
+	icon_state = "sheet-hide"
+	default_type = "biomass"
+	icon = 'icons/obj/items.dmi'
+
+/obj/item/stack/material/biomass/five
+	amount = 5
+
+/obj/item/stack/material/biomass/ten
+	amount = 10
+
+/obj/item/stack/material/biomass/fifty
 	amount = 50

@@ -155,6 +155,9 @@
 	item_state = "bl_suit"
 	worn_state = "psysuit"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 20, bio = 20, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/gentlesuit
 	name = "gentlemans suit"
@@ -708,3 +711,27 @@
 	desc = "This standard Munitorum-issue uniform has had all imperial markings removed"
 	icon_state = "rm_uniform"
 	item_state = "rm_uniform_s"
+
+/obj/item/clothing/under/guard/uniform/scion
+	name = "Tempestus Scion Undersuit"
+	desc = "A standardised armoured undersuit worn by Tempestus Scions"
+	icon_state = "ScionUndersuit"
+	item_state = "scionundersuit"
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 20, bomb = 20, bio = 20, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+
+/obj/item/clothing/under/grot
+	name = "Small rags"
+	desc = "What a fool"
+	icon_state = "Grotrags"
+	item_state = "Grotrags"
+	slowdown_general = -20
+
+/obj/item/clothing/under/grot/grc
+	name = "Expensive revolutionary suit"
+	desc = "A true revolutionist"
+	icon_state = "GRCrags"
+	item_state = "GRCrags"
+	slowdown_general = -20

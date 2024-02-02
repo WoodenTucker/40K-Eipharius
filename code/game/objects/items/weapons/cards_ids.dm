@@ -427,10 +427,13 @@ var/const/NO_EMAG_ACT = -50
 	SetName(final_name)
 
 /obj/item/card/id/civilian/confessor
-	job_access_type = /datum/job/confessor
+	job_access_type = /datum/job/deacon
 
 /obj/item/card/id/pilgrim/penitent
 	access = list(access_village)
+
+/obj/item/card/id/pilgrim/penitent/keeper
+	access = list(67,268,269,270,271,272,273,access_village)
 
 /obj/item/card/id/pilgrim/innkeeper
 	job_access_type = /datum/job/bartender //TODO tweak to village bar
@@ -496,6 +499,25 @@ var/const/NO_EMAG_ACT = -50
 		final_name = final_name + " ([assignment])"
 	SetName(final_name)
 
+/obj/item/card/id/psyker
+	name = "Sanctioned Psyker dog tag"
+	desc = "A metal dog tag with the symol of the Adeptus Astra Telepathica engraved on the front, acting as a symbol of a Primaris Psyker's sanctioend nature, and an access tag.."
+	assignment = "Sanctioned Psyker"
+	icon_state = "tagred"
+	item_state = "tagred"
+	access = list(access_security, access_guard_common, access_magi, access_armory,
+			            access_village, access_all_personal_lockers,
+			            access_mechanicus, access_mining, access_medical,
+			            access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway)
+
+/obj/item/card/id/psyker/update_name()
+	var/final_name = "[registered_name]"
+	if(military_rank && military_rank.name_short)
+		final_name = military_rank.name_short + " " + final_name
+	if(assignment)
+		final_name = final_name + " ([assignment])"
+	SetName(final_name)
+
 /obj/item/card/id/commissar/spare
 	name = "commissar's spare dog tag"
 	desc = "A spare dog tag with a winged skull engraved on it's opposite side, representing honor of the Officio Prefectum and Commissar."
@@ -503,7 +525,7 @@ var/const/NO_EMAG_ACT = -50
 /obj/item/card/id/dog_tag/kroot
 	icon_state = "tagred"
 	access = list(access_kroot)
-	sales_price = 30
+	sales_price = 15
 
 
 /obj/item/card/id/dog_tag/skitarii
@@ -520,7 +542,7 @@ var/const/NO_EMAG_ACT = -50
 	icon_state = "tau"
 	access = list(access_tau)
 	desc = "An ornate ring forged by Tau craftsmen. Functions like an ID."
-	sales_price = 40
+	sales_price = 20
 
 
 /obj/item/card/id/ring/administrator
@@ -532,7 +554,7 @@ var/const/NO_EMAG_ACT = -50
 	name = "golden ring"
 	icon_state = "goldring"
 	desc = "A simple golden ring, can be combined with gems for some BLING BLING!"
-	sales_price = 30
+	sales_price = 20
 
 /obj/item/card/id/ring/disgracedmedicae
 	name = "access card"
@@ -586,7 +608,10 @@ var/const/NO_EMAG_ACT = -50
 	desc = "A key that unlocks doors belonging to Ganger dens."
 	access = list(access_ganger)
 
-
+/obj/item/card/id/key/middle/majorcrimes
+	name = "Major Crimes Key"
+	desc = "A key that unlocks doors belonging to Major Crimes."
+	access = list(access_majorcrimes)
 
 // high tier super key, for nobles, mechanicus and other fancy things
 /obj/item/card/id/key/super
@@ -625,7 +650,7 @@ var/const/NO_EMAG_ACT = -50
 	access = list(access_meeting) //changed from 209 to 219, as tau is now 209
 
 /obj/item/card/id/key/super/daemon
-	name = "Daemon Key"
+	name = "Strange Key"
 	desc = "You're unsettled at just thinking about what this may open. Maybe ask your local inquisitor for help? They're nice with this kind of stuff."
 	access = list(access_daemon)
 
@@ -687,7 +712,7 @@ var/const/NO_EMAG_ACT = -50
 /obj/item/card/id/key/grand/monastary/inner
 	name = "Inner Sanctum Key"
 	desc = "Key to the Inner Sactum of His Holyness' Church."
-	access = list(access_monastary)
+	access = list(access_advchapel, access_monastary)
 
 /obj/item/card/id/key/grand/barentry
 	name = "Inn Key"

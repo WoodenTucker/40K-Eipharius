@@ -5,8 +5,8 @@
 	feedback = "su"
 	range = 5
 	spell_flags = 0
-	invocation_type = SpI_NONE
-	show_message = " snaps their fingers."
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	spell_delay = 50
 	hud_state = "gen_ice"
 

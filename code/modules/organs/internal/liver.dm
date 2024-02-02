@@ -7,9 +7,11 @@
 	parent_organ = BP_GROIN
 	min_bruised_damage = 25
 	min_broken_damage = 45
-	max_damage = 70
+	max_damage = 80
 	relative_size = 60
-	sales_price = 10
+	sales_price = 14
+	var/blood_regen = 0.1 //The number of points of blood it regenerates per tick, when applicable.
+	var/organ_filter_mod = 3 //The filtering strength of the organ. Default is 3
 
 /obj/item/organ/internal/liver/robotize()
 	. = ..()
@@ -35,7 +37,7 @@
 		heal_damage(0.2 * owner.chem_effects[CE_ANTITOX])
 
 	// Get the effectiveness of the liver.
-	var/filter_effect = 3
+	var/filter_effect = organ_filter_mod
 	if(is_bruised())
 		filter_effect -= 1
 	if(is_broken())
@@ -60,7 +62,7 @@
 			heal_damage(0.3)
 
 	//Blood regeneration if there is some space
-	owner.regenerate_blood(0.1 + owner.chem_effects[CE_BLOODRESTORE])
+	owner.regenerate_blood(blood_regen + owner.chem_effects[CE_BLOODRESTORE])
 
 	// Blood loss or liver damage make you lose nutriments
 	var/blood_volume = owner.get_blood_volume()
@@ -107,12 +109,5 @@
 	min_broken_damage = 85
 	max_damage = 100
 	relative_size = 85
-
-/*/obj/item/organ/internal/liver/astartes/Process()
-
-	..()
-	if(!owner)
-		return
-
-	filter_effect = 8
-	owner.regenerate_blood(1 + owner.chem_effects[CE_BLOODRESTORE])*/
+	blood_regen = 0.5
+	organ_filter_mod = 12

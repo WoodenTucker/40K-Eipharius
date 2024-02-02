@@ -1,7 +1,8 @@
 /mob/living/carbon/human/proc/handle_vice()
 	if(vice)
+	/*
 		if(vice == "Parental Instincts") return //They have events that handle their happiness, no timer needed
-
+	*/
 		if (viceneed < 0)
 			viceneed = 0 //no banking need by afking in da chapel
 
@@ -36,13 +37,13 @@
 				if(src.vice == "Alcohol")
 					var/textSlice = copytext("[drug]",1,23) //this is incredibly fucking hacky but drug is an associated array and the key is an obj for some fucking reason
 					if(textSlice == "/datum/reagent/ethanol")
-						src.viceneed -= rand(3,6)
+						src.viceneed -= rand(6,9)
 						if(prob(2))
 							to_chat(src, "<span class='goodmood'>+ Now I'm buzzing... +</span>\n")
 				if(src.vice == "Obscura")
 					var/textSlice = copytext("[drug]",1,0) //this is incredibly fucking hacky but drug is an associated array and the key is an obj for some fucking reason
 					if(textSlice == "/datum/reagent/space_drugs")
-						src.viceneed -= rand(3,6)
+						src.viceneed -= rand(6,9)
 						if(prob(2))
 							to_chat(src, "<span class='goodmood'>+ I finally feel human again... +</span>\n")
 
@@ -51,12 +52,12 @@
 
 		if(viceneed < 1000 && vice != "Glutton")
 			spawn(10)
-				viceneed += 1
+				viceneed += rand(0,1)
 				clear_event("vice")
 
 		else if(viceneed < 1000 && vice == "Glutton" && nutrition < 375)
 			spawn(10)
-				viceneed += 1
+				viceneed += rand(0,1)
 				clear_event("vice")
 
 		else if(viceneed <= 1000 && vice == "Glutton" && nutrition >= 375)

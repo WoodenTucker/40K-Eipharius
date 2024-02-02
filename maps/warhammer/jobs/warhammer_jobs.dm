@@ -29,9 +29,8 @@
 	/datum/job/qm2,
 	/datum/job/enforcer,
 	/datum/job/marshal,
-	/datum/job/innkeeper,
+	/datum/job/underboss,
 	/*/datum/job/hydro,*/
-	/datum/job/undertaker,
 	/datum/job/penitent,
 	)
 

@@ -12,7 +12,7 @@
 
 	action_button_name = "Toggle Flashlight"
 	var/on = 0
-	var/brightness_on = 4 //range of light when on
+	var/brightness_on = 6 //range of light when on
 	var/activation_sound = 'sound/effects/flashlight.ogg'
 	var/flashlight_power //luminosity of light when on, can be negative
 
@@ -329,3 +329,13 @@
 /obj/item/device/flashlight/glowstick/random/New()
 	color = rgb(rand(50,255),rand(50,255),rand(50,255))
 	..()
+
+/obj/item/device/flashlight/candelabra
+	name = "candelabra"
+	desc = "A candle holder with multiple arms. While there's flashlights some nobles prefer this."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "candelabrum3"
+	item_state = "candelabrum3"
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	brightness_on = 4
+	w_class = ITEM_SIZE_NORMAL

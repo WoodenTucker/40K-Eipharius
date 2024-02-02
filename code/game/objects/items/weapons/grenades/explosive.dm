@@ -1,5 +1,6 @@
 /obj/item/projectile/bullet/pellet/fragment
-	damage = 60
+	damage = 45
+	armor_penetration = 44
 	range_step = 3 //controls damage falloff with distance. projectiles lose a "pellet" each time they travel this distance. Can be a non-integer.
 
 	base_spread = 0 //causes it to be treated as a shrapnel explosion instead of cone
@@ -12,13 +13,15 @@
 	do_not_pass_trench = TRUE
 
 /obj/item/projectile/bullet/pellet/fragment/strong
-	damage = 70
+	damage = 60
 	range_step = 1 //controls damage falloff with distance. projectiles lose a "pellet" each time they travel this distance. Can be a non-integer.
 	range = 5
+	armor_penetration = 46
 
 /obj/item/projectile/bullet/pellet/fragment/weak
-	damage = 60
+	damage = 40
 	range_step = 3
+	armor_penetration = 40
 
 /obj/item/grenade/frag
 	name = "fragmentation grenade"
@@ -106,8 +109,8 @@
 
 /obj/mortar/frag/New()
 	..()
-	explosion(get_turf(src), -1, -1, 6, 3, 0)
 	sleep(0)
+	explosion(get_turf(src), -1, -1, 2, 2, 0)
 	fragmentate(get_turf(src), 72)
 	qdel(src)
 
@@ -116,15 +119,33 @@
 
 /obj/mortar/gas/New()
 	..()
-	create_reagents(100)
-	reagents.add_reagent(/datum/reagent/toxin/mustard_gas, 50)
+	create_reagents(10)
+	reagents.add_reagent(/datum/reagent/toxin/mustard_gas, 20)
 	var/location = get_turf(src)
 	var/datum/effect/effect/system/smoke_spread/chem/S = new
 	S.attach(location)
-	S.set_up(reagents, 50, 0, location)
+	S.set_up(reagents, 10, 0, location)
 	spawn(0)
 		S.start()
 	qdel(src)
+
+
+
+/obj/mortar/gas/blight
+	name = "blight mortar"
+
+/obj/mortar/gas/blight/New()
+	..()
+	create_reagents(10)
+	reagents.add_reagent(/datum/reagent/toxin/corrupting, 60)
+	var/location = get_turf(src)
+	var/datum/effect/effect/system/smoke_spread/chem/S = new
+	S.attach(location)
+	S.set_up(reagents, 10, 0, location)
+	spawn(0)
+		S.start()
+	qdel(src)
+
 
 /obj/mortar/fire
 	name = "fire mortar"
@@ -152,14 +173,13 @@ obj/mortar/flare/blue
 
 /obj/mortar/arty/New()
 	..()
-	explosion(get_turf(src), -1, -1, 10, 5, 0)
 	sleep(0)
 	fragmentate(get_turf(src), 84)
 	qdel(src)
 
 /obj/item/grenade/frag/proc/on_explosion(var/turf/O)
 	if(explosion_size)
-		explosion(O, -1, -1, explosion_size, round(explosion_size/2), 0)
+		explosion(round(explosion_size / 8), round(explosion_size / 4), round(explosion_size / 2), explosion_size, round(explosion_size * 2), 0)
 
 /obj/item/grenade/frag/warfare
 	desc = "Throw it at THE ENEMEY!"
@@ -185,7 +205,7 @@ obj/mortar/flare/blue
 	desc = "Larger and heavier than a standard fragmentation grenade, this device is extremely dangerous. It cannot be thrown as far because of its weight."
 	icon_state = "frag"
 
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_SMALL
 	throw_speed = 2
 	throw_range = 6 //heavy, can't be thrown as far
 
@@ -198,8 +218,18 @@ obj/mortar/flare/blue
 	desc = "A potent anti armor grenade used by the Imperium of Man, mind the blast radius."
 	icon_state = "krak_grenade"
 	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/strong=1)
-	explosion_size = 4
+	explosion_size = 8
 	num_fragments = 4
+	w_class = ITEM_SIZE_SMALL
+
+/obj/item/grenade/frag/high_yield/krak2
+	name = "Mechanicus Krak Grenade"
+	desc = "An incredibly dangerous and unstable plasma-enchanced Krak Grenade. Stand well clear!"
+	icon_state = "krak_grenade"
+	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/strong=1)
+	explosion_size = 12
+	num_fragments = 7
+	w_class = ITEM_SIZE_SMALL
 
 /obj/item/grenade/frag/high_yield/homemade
 	name = "Pipe Grenade"
@@ -210,6 +240,7 @@ obj/mortar/flare/blue
 	num_fragments = 3
 	throw_speed = 1.5
 	throw_range = 8
+	w_class = ITEM_SIZE_SMALL
 
 /obj/item/grenade/frag/high_yield/krak/prime()
 	update_mob()

@@ -7,8 +7,9 @@
 	uniform = /obj/item/clothing/under/rank/roguetrader
 	belt = /obj/item/gun/energy/las/laspistol/lord
 	back = /obj/item/storage/backpack/satchel/warfare
-	l_ear = /obj/item/device/radio/headset/heads/rt
+	l_ear = /obj/item/device/radio/headset/heads/gov
 	shoes = /obj/item/clothing/shoes/jackboots/noble
+	r_pocket = /obj/item/storage/box/coin
 	id_type = /obj/item/card/id/gold
 	pda_type = null
 	pda_slot = null
@@ -17,6 +18,9 @@
 	/obj/item/stack/thrones/ten = 1,
 	/obj/item/stack/thrones2/twenty = 1,
 	/obj/item/stack/thrones3/twenty = 1,
+	/obj/item/paper/administratum/vermillion = 1,
+	/obj/item/paper/administratum/weapon5 = 1,
+	/obj/item/pen = 1,
 	/obj/item/reagent_containers/food/snacks/bigbiteburger
 )
 
@@ -27,7 +31,7 @@
 		// point, check if we can actually attach the medal
 		var/obj/item/clothing/uniform = H.w_uniform
 		if(uniform)
-			var/obj/item/clothing/accessory/medal/gold/Administratum/medal = new()
+			var/obj/item/clothing/accessory/medal/gold/medal = new()
 			if(uniform.can_attach_accessory(medal))
 				uniform.attach_accessory(null, medal)
 			else
@@ -43,13 +47,16 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/toy/katana/strong
 	shoes = /obj/item/clothing/shoes/jackboots/noble
+	r_pocket = /obj/item/storage/box/coin
 	id_type = /obj/item/card/id/gold
 	pda_type = null
 	pda_slot = null
 	backpack_contents = list(
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/ten = 1,
+	/obj/item/paper/administratum/omega = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/stack/thrones3/twenty = 1,
 	 )
 /*

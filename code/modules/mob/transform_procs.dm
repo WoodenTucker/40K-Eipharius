@@ -305,7 +305,7 @@
 	verbs += /mob/living/proc/zombie_eat
 /*	verbs += /mob/living/proc/claws */
 	src.species.species_flags += SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_SLIP
-	src.species.slowdown += 1.5
+	/* src.species.slowdown += 1.5 */
 
 	if (r_hand)
 		drop_from_inventory(r_hand)
@@ -322,7 +322,6 @@
 	if (glasses)
 		drop_from_inventory(glasses)
 
-	equip_to_slot(new /obj/item/material/sword/zombie_claw/zombie_clawr, slot_l_hand)
-	equip_to_slot(new /obj/item/material/sword/zombie_claw, slot_r_hand)
+	equip_to_slot(new /obj/item/melee/sword/zombie_claw, slot_r_hand)
 	src.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 	return

@@ -101,8 +101,8 @@
 	possible_transformations = list(/mob/living/simple_animal/lizard,/mob/living/simple_animal/mouse,/mob/living/simple_animal/corgi)
 
 	share_damage = 0
-	invocation = "Yo'balada!"
-	invocation_type = SpI_SHOUT
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	spell_flags = NEEDSCLOTHES | SELECTABLE
 	range = 3
 	duration = 150 //15 seconds.
@@ -131,8 +131,8 @@
 
 	drop_items = 0
 	share_damage = 0
-	invocation = "Poli'crakata!"
-	invocation_type = SpI_SHOUT
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	spell_flags = INCLUDEUSER
 	range = -1
 	duration = 150
@@ -147,8 +147,8 @@
 	feedback = "CF"
 	possible_transformations = list(/mob/living/simple_animal/hostile/faithless)
 
-	invocation = "mutters something dark and twisted as their form begins to twist..."
 	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	spell_flags = INCLUDEUSER
 	range = -1
 	duration = 150

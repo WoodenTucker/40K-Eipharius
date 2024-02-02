@@ -2,7 +2,7 @@
 	title = "Magos Dominus"
 	department = "Adeptus Mechanicus"
 	head_position = 1
-	department_flag = ENG|COM|SCI
+	department_flag = ENG
 	social_class = SOCIAL_CLASS_HIGH
 	total_positions = 0
 	spawn_positions = 0
@@ -19,7 +19,7 @@
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8
-	cultist_chance = 20
+	cultist_chance = 6
 	ideal_character_age = 70 // most magi are old as fuck, just imagine what it takes to be a robotics nerdexpert in the cult mechanicus
 	outfit_type = /decl/hierarchy/outfit/job/engineering/chief_engineer
 	access = list(access_mechanicus, access_magosd, access_guard_common, access_medical, access_all_personal_lockers)
@@ -45,6 +45,7 @@
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 		H.vice = null //off for now
+		H.say(":e The crude biomass they call a temple will eventually fail... and they will beg our kind to save them. But we are already saved. For the machine is immortal.")
 
 
 
@@ -72,7 +73,7 @@
 	shotgun_skill = 6
 	lmg_skill = 6
 	smg_skill = 7
-	cultist_chance = 35
+	cultist_chance = 6
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -90,16 +91,16 @@
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 		H.vice = null //off for now
-		H.say(":e [title] reporting for duty!")
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Enginseer upon the Soul of Reason, An Ark Cruiser of the Mechanicus.  Learn from the Explorator and Biologis. Craft blessed machine spirits in the forge. Teach the Tech Menials the basics. Lead Skitarii if needed.</font></b></span>")
+		H.say(":e OMVISS1@H &(47*TECHNICA)B(ADMECH)... transponder signal active.")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Enginseer resting within a Forge Temple of the Mechanicus constructed by the AdMech. Learn from the Explorator and Biologis. Craft blessed machine spirits in the forge. Teach the Tech Menials the basics. You are responsible for the bonded workers of the Forge Temple, should they escape the shackles of servitude it is your responsibility to capture them.</font></b></span>")
 
 /datum/job/techmenial
-	title = "Tech Menial"
+	title = "Mechanicus Bondsman"
 	department = "Engineering"
 	department_flag = ENG
 	social_class = SOCIAL_CLASS_MED
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	supervisors = "You obey the Biologis and Explorator, as well as the Tech Priests."
 	selection_color = "#FF3A3A"
 	economic_modifier = 5
@@ -109,34 +110,31 @@
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_all_personal_lockers)
 	minimal_access = list(access_mechanicus, access_village, access_medical, access_all_personal_lockers)
-	outfit_type = /decl/hierarchy/outfit/job/engineering/engineer
+	outfit_type = /decl/hierarchy/outfit/job/engineering/engineer/bondage
 	auto_rifle_skill = 6
 	semi_rifle_skill = 6
 	sniper_skill = 6
 	shotgun_skill = 6
 	lmg_skill = 6
 	smg_skill = 6
-	cultist_chance = 35
+	cultist_chance = 11
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Tech-Menial [current_name]")
-		H.set_trait(new/datum/trait/death_tolerant()) //no nose + psycho
-		H.add_stats(rand(11,14), rand(11,13), rand(11,14), rand(12,17)) // worse than tech priest
-		H.add_skills(rand(4,6),rand(3,6),rand(4,5),rand(6,8),rand(4,6)) //melee, ranged, med, eng, surgery
+		H.fully_replace_character_name("[current_name]")
+		H.set_trait(new/datum/trait/death_tolerant())
+		H.add_stats(rand(16,18), rand(16,19), rand(12,18), rand (10,17))
+		H.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(2,4),rand(2,6)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
-		H.bladder = -INFINITY
-		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
-		H.thirst = INFINITY
-		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
-		H.vice = null //off for now
+		H.vice = null // Bondsman aren't given the freedom to have vices.
 		H.witchblood()
-		H.say(":e [title] reporting for duty!")
+		H.say(":e I aspire to the unity of the blessed machine. I crave the strength and certainty of steel...")
 		H.adjustStaminaLoss(-INFINITY) // they aren't cyborg'd enough to not need to drink. The flesh is weak.
-		to_chat(H, "<span class='notice'><b><font size=3> (NEW PLAYER ROLE) You are a Tech-Menial, and you have been blessed with the privilege of serving upon the Ark Cruiser, The Soul of Reason and the Tech-Priests aboard. You are inexperienced and learning. Ensure to learn much.</font></b></span>")
-
+		to_chat(H,"<span class='danger'><b><font size=4>THE BONDSMAN</font></b></span>")
+		to_chat(H,"<span class='goodmood'>You are lifebonded to the Magos Explorator of this installation and thereby in the service of the tech priests of the Mechanicus under the Magos's command. Taken by force from your homeworld, you were plucked away from your life and indoctrinated into the cult of the Machine God. Every day is suffering and you are perhaps one of the handful left still alive from your original founding.</font></b></span>")
+			
 // Biologis
 
 // Magos
@@ -144,7 +142,7 @@
 /datum/job/biologis
 	title = "Magos Biologis"
 	department = "Engineering"
-	department_flag = SCI|ENG
+	department_flag = ENG
 	total_positions = 1
 	spawn_positions = 1
 	minimal_player_age = 7
@@ -158,21 +156,21 @@
 	access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, 56, access_heads, access_all_personal_lockers)
 	minimal_access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, 56, access_heads, access_all_personal_lockers)
 	outfit_type = /decl/hierarchy/outfit/job/medical/biologis
-	auto_rifle_skill = 6
-	semi_rifle_skill = 6
+	auto_rifle_skill = 7
+	semi_rifle_skill = 7
 	sniper_skill = 8 //sometimes this motherfucker has to get his research material by himself
 	shotgun_skill = 6
 	lmg_skill = 6
 	smg_skill = 7
-	cultist_chance = 30
+	cultist_chance = 7
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Biologis [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant()) //They literally open up dead bodies of xenos and humans alike, why would they be disgusted of organs and blood?
-		H.add_stats(rand(13,18), rand(13,18), rand(14,17), rand(20,30)) //just as modified as the magos, if not more.
-		H.add_skills(rand(7,10),rand(7,10),rand(9,11),rand(9,10),rand(10,12)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(13,18), rand(13,18), rand(20,24), rand(20,30)) //just as modified as the magos, if not more.
+		H.add_skills(rand(9,13),rand(7,10),rand(9,11),rand(9,10),rand(10,12)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
 		H.bladder = -INFINITY
@@ -183,29 +181,8 @@
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 		H.get_idcard()?.access = list(access_mechanicus, access_heads, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, access_all_personal_lockers) // this may be unneeded or bloat for mechanicus, needs testing
 		H.vice = null //off for now
-		H.say(":e [title] reporting for duty!")
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Magos Biologis, upon the Soul of Reason, An Ark Cruiser of the Mechanicus. You are an expert on xenos and biological research, your primary duty is to oversee the construction of Skitarii. You have equal power alongside the Explorator. Ensure the Menials and Techpriests are properly trained in your craft.</font></b></span>")
-
-
-//Walker here, why the fuck does this even exist? all Genetors research aliens, thats like, their speciality, who added this in? im not going to remove it for now but, idk why its here.
-// Magos Biologis Xenobiologist
-/*
-/datum/job/xenobiologist
-	title = "Magos Xenologist"
-	department = "Science"
-	department_flag = SCI
-
-	total_positions = 3
-	spawn_positions = 2
-	supervisors = "the Magos Dominus"
-	selection_color = "#633d63"
-	economic_modifier = 7
-	access = list(access_mechanicus, access_tox, access_tox_storage, access_xenobiology, access_hydroponics)
-	minimal_access = list(access_xenobiology, access_hydroponics)
-//	alt_titles = list("Xenobotanist")
-	minimal_player_age = 7
-	outfit_type = /decl/hierarchy/outfit/job/science/xenobiologist
-*/
+		H.say(":e The crude biomass they call a temple will eventually fail... and they will beg our kind to save them. But we are already saved. For the machine is immortal.")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the Magos Biologis, resting within a Forge Temple of the Mechanicus constructed by the AdMech. You are an expert on xenos and biological research, your primary duty is to oversee the construction of Skitarii. You have equal power alongside the Explorator. Ensure the Menials and Techpriests are properly trained in your craft.</font></b></span>")
 
 
 /datum/job/explorer
@@ -231,7 +208,7 @@
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8
-	cultist_chance = 30
+	cultist_chance = 6
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -239,7 +216,7 @@
 		H.fully_replace_character_name("Explorator [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant()) //They literally open up dead bodies of xenos and humans alike, why would they be disgusted of organs and blood?
 		H.add_stats(rand(15,18), rand(15,18), rand(18,20), rand(20,30)) //just as modified as the magos, if not more.
-		H.add_skills(rand(8,11),rand(7,9),rand(8,10),rand(9,10),rand(8,10)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(8,11),rand(9,11),rand(8,10),rand(9,10),rand(8,10)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
 
@@ -250,9 +227,55 @@
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 		H.vice = null //off for now
-		H.say(":e [title] reporting for duty!")
+		H.say(":e Memory cache integrity at 87%... Motive force appeased. Security apparatis functional. Non organics uncorrupted.")
 		H.get_idcard()?.access = list(access_mechanicus, access_heads, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, access_all_personal_lockers) // this may be unneeded or bloat for mechanicus, needs testing
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Magos Explorator, upon the Soul of Reason, An Ark Cruiser of the Mechanicus. Your primary duty is to explore the planet and locate relics and research items. You have equal power alongside the Biologis. Ensure the Menials and Techpriests are properly trained in your craft.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the Magos Explorator, resting within a Forge Temple of the Mechanicus constructed by the AdMech. Your primary duty is to explore the planet and locate relics and research items. You have equal power alongside the Biologis. Ensure the Menials and Techpriests are properly trained in your craft.</font></b></span>")
+
+/datum/job/skitarii
+	title = "Skitarii"
+	department = "Science"
+	department_flag = SCI|ENG
+	total_positions = 1
+	spawn_positions = 1
+	minimal_player_age = 7
+	open_when_dead = 0
+	supervisors = "the Adeptus Mechanicus and Magos Biologis."
+	selection_color = "#d82424"
+	economic_modifier = 7
+	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
+	access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, 56, access_heads, access_all_personal_lockers)
+	minimal_access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, 56, access_heads, access_all_personal_lockers)
+	outfit_type = /decl/hierarchy/outfit/job/skitarii/basic
+	auto_rifle_skill = 8 
+	semi_rifle_skill = 8
+	sniper_skill = 8
+	shotgun_skill = 8
+	lmg_skill = 8
+	smg_skill = 8
+	cultist_chance = 2
+	
+	equip(var/mob/living/carbon/human/skitarii/H)
+		..()
+		H.fully_replace_character_name("Skitarii Alpha")
+		H.set_trait(new/datum/trait/death_tolerant()) //They literally open up dead bodies of xenos and humans alike, why would they be disgusted of organs and blood?
+		H.add_stats(rand(18,21), rand(22,24), rand(23,25), rand(12,20)) //just as modified as the magos, if not more.
+		H.add_skills(rand(8,11),rand(9,11),rand(2,10),rand(3,10),rand(1,6)) //melee, ranged, med, eng, surgery
+		H.warfare_language_shit(LANGUAGE_MECHANICUS)
+		H.warfare_faction = IMPERIUM
+		H.verbs += list(
+			/mob/living/carbon/human/skitarii/proc/giveskitstats,
+			)
+		H.witchblood()
+		H.adjustStaminaLoss(-INFINITY)
+		H.bladder = -INFINITY
+		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
+		H.thirst = INFINITY
+		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
+		H.vice = null //off for now
+		H.say(":e Memory cache integrity at 87%... Motive force appeased. Security apparatis functional.")
+		H.get_idcard()?.access = list(access_mechanicus, access_heads, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, access_all_personal_lockers) // this may be unneeded or bloat for mechanicus, needs testing
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Skitarii unit and bear unique levels of intelligence, forged from a deceased and loyal bondsman -- your intelligence and loyal mind preserved by your forger, the Magos Biologis. You are their masterwork -- their magnum opus...</font></b></span>")
 
 
 //Skitarii
@@ -284,19 +307,4 @@
 	id = null
 	id_slot = null
 
-/* // keep if you need ref for any old stuff
-/datum/job/atmos
-	title = "Atmospheric Technician"
-	department = "Engineering"
-	department_flag = ENG
 
-	total_positions = 0
-	spawn_positions = 0
-	supervisors = "the Magos"
-	selection_color = "#5b4d20"
-	economic_modifier = 5
-	minimal_player_age = 7
-	access = list(access_engine, access_engine_equip, access_tech_storage, access_village, access_external_airlocks)
-	minimal_access = list(access_engine, access_engine_equip, access_tech_storage, access_village, access_external_airlocks)
-	outfit_type = /decl/hierarchy/outfit/job/engineering/atmos
-*/ //we dont use atmos here

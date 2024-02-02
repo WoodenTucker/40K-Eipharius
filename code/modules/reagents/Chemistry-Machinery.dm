@@ -313,9 +313,11 @@
 		/obj/item/stack/material/iron = /datum/reagent/iron,
 
 		/obj/item/stack/material/uranium = /datum/reagent/uranium,
+		/obj/item/stack/material/uranium/one = /datum/reagent/uranium,
 		/obj/item/stack/material/uranium/ten = /datum/reagent/uranium,
 
 		/obj/item/stack/material/phoron = /datum/reagent/toxin/phoron,
+		/obj/item/stack/material/phoron/one = /datum/reagent/toxin/phoron,
 		/obj/item/stack/material/phoron/ten = /datum/reagent/toxin/phoron,
 		/obj/item/stack/material/phoron/fifty = /datum/reagent/toxin/phoron,
 

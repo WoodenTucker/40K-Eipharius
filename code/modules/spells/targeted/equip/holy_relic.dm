@@ -6,8 +6,8 @@
 	charge_type = Sp_RECHARGE
 	charge_max = 600
 	spell_flags = NEEDSCLOTHES | INCLUDEUSER
-	invocation = "Yee'Ro Su!"
-	invocation_type = SpI_SHOUT
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	range = -1
 	max_targets = 1
 	level_max = list(Sp_TOTAL = 2, Sp_SPEED = 1, Sp_POWER = 1)

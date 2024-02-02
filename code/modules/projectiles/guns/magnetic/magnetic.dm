@@ -5,7 +5,7 @@
 	item_state = "coilgun"
 	icon = 'icons/obj/railgun.dmi'
 	one_hand_penalty = 1
-	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 4, TECH_ILLEGAL = 2, TECH_MAGNET = 4)
+	origin_tech = list(TECH_COMBAT = 1, TECH_MATERIAL = 1, TECH_ILLEGAL = 1, TECH_MAGNET = 1)
 	w_class = ITEM_SIZE_LARGE
 	combustion = 1
 

@@ -76,12 +76,12 @@
 		switch(reagents.get_master_reagent_type())
 			if(/datum/reagent/nutriment/ketchup)
 				name = "Ketchup"
-				desc = "You feel more American already."
+				desc = "Crushed tomatoes. They had it coming."
 				icon_state = "ketchup"
 				center_of_mass = "x=16;y=6"
 			if(/datum/reagent/nutriment/barbecue)
 				name = "Barbecue Sauce"
-				desc = "Barbecue sauce, it's labeled 'sweet and spicy'"
+				desc = "It's labeled 'sweet and spicy'"
 				icon_state = "barbecue"
 				center_of_mass = "x=16;y=6"
 			if(/datum/reagent/capsaicin)
@@ -106,7 +106,7 @@
 				center_of_mass = "x=16;y=6"
 			if(/datum/reagent/sodiumchloride)
 				name = "Salt Shaker"
-				desc = "Salt. From space oceans, presumably."
+				desc = "It makes everything taste better."
 				icon_state = "saltshaker"
 				center_of_mass = "x=16;y=10"
 			if(/datum/reagent/blackpepper)
@@ -121,7 +121,7 @@
 				center_of_mass = "x=16;y=6"
 			if(/datum/reagent/sugar)
 				name = "Sugar"
-				desc = "Tastey space sugar!"
+				desc = "Crystallized sucrose. Pure energy without nutrition."
 				center_of_mass = "x=16;y=6"
 			else
 				name = "Misc Condiment Bottle"
@@ -152,7 +152,7 @@
 
 /obj/item/reagent_containers/food/condiment/barbecue
 	name = "Barbecue Sauce"
-	desc = "Barbecue sauce, it's labeled 'sweet and spicy'"
+	desc = "It's labeled 'sweet and spicy"
 	icon_state = "barbecue"
 
 /obj/item/reagent_containers/food/condiment/barbecue/New()
@@ -173,7 +173,7 @@
 
 /obj/item/reagent_containers/food/condiment/small/saltshaker
 	name = "salt shaker"
-	desc = "Salt. From space oceans, presumably."
+	desc = "It makes everything taste better."
 	icon_state = "saltshakersmall"
 	center_of_mass = "x=16;y=9"
 
@@ -193,7 +193,7 @@
 
 /obj/item/reagent_containers/food/condiment/small/sugar
 	name = "sugar"
-	desc = "Sweetness in a bottle"
+	desc = "Crystallized sucrose. Pure energy without nutrition."
 	icon_state = "sugarsmall"
 	center_of_mass = "x=17;y=9"
 
@@ -214,4 +214,4 @@
 
 /obj/item/reagent_containers/food/condiment/flour/New()
 	..()
-	reagents.add_reagent(/datum/reagent/nutriment/flour, 30)
+	reagents.add_reagent(/datum/reagent/nutriment/flour, 50)

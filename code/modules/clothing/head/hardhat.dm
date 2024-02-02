@@ -6,7 +6,7 @@
 	brightness_on = 4 //luminosity when on
 	light_overlay = "hardhat_light"
 	w_class = ITEM_SIZE_NORMAL
-	armor = list(melee = 30, bullet = 5, laser = 20,energy = 10, bomb = 20, bio = 10, rad = 20)
+	armor = list(melee = 20, bullet = 25, laser = 20,energy = 10, bomb = 20, bio = 10, rad = 20)
 	flags_inv = 0
 	siemens_coefficient = 0.9
 	heat_protection = HEAD
@@ -42,7 +42,7 @@
 	brightness_on = 6
 	unacidable = 1
 	canremove = 0
-	armor = list(melee = 40, bullet = 15, laser = 30,energy = 20, bomb = 50, bio = 50, rad = 20)
+	armor = list(melee = 30, bullet = 25, laser = 35,energy = 20, bomb = 50, bio = 50, rad = 20)
 	flags_inv = BLOCKHAIR|BLOCKHEADHAIR|HIDEEARS|HIDEEYES
 	flash_protection = FLASH_PROTECTION_MAJOR
 
@@ -51,4 +51,4 @@
 	item_state = "magoshelm"
 	brightness_on = 8
 	unacidable = 1
-	armor = list(melee = 50, bullet = 30, laser = 40,energy = 40, bomb = 70, bio = 100, rad = 20)
+	armor = list(melee = 37, bullet = 30, laser = 40,energy = 40, bomb = 70, bio = 100, rad = 20)

@@ -20,8 +20,8 @@
 	response_help  = "licks"
 	response_disarm = "struggles against the mass of"
 	response_harm   = "slaps"
-	maxHealth = 4000
-	health = 4000
+	maxHealth = 2500
+	health = 2500
 	stop_automated_movement_when_pulled = 1 //lets you pull and release your new friend
 	melee_damage_lower = 60 // This value does nothing
 	melee_damage_upper = 80 // This value does nothing
@@ -115,7 +115,7 @@
 		return
 	custom_emote(1, pick( list("cleaves [target_mob]") ) )
 
-	var/damage = rand(60,80)
+	var/damage = rand(70,100)
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob

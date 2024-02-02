@@ -18,6 +18,9 @@
 	var/focus = 50
 	var/max_focus = 100
 	var/isdrawing = 0
+	var/shielded_energy = 0
+	var/shielded_projectile = 0
+	var/shielded_melee = 0
 
 /mob/living/carbon/human/New(var/new_loc, var/new_species = null)
 
@@ -769,6 +772,16 @@
 					nutrition -= 30
 		sleep(350)	//wait 35 seconds before next volley
 		lastpuke = 0
+
+//for punishing cultists who remain in a consecrated chapel
+/mob/living/carbon/human/proc/overstayed()
+	src.vomit()
+	src.bowels = 100
+	src.handle_shit()
+	to_chat(src, "<span class='horror-text'>+ HIS GAZE IS ON ME +</span> ")
+	playsound(src, 'sound/voice/scaryspeech.ogg', 50, 0)
+	src.Paralyse(3)
+
 
 /mob/living/carbon/human/proc/morph()
 	set name = "Morph"

@@ -17,7 +17,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	canremove = FALSE
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_LARGE
 	var/constructionsystem = 0
 	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")
 
@@ -62,7 +62,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	canremove = FALSE
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_LARGE
 	var/constructionsystem = 0
 	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")
 
@@ -85,7 +85,7 @@
 	icon = 'icons/obj/items/lube.dmi'
 	icon_state = "lube"
 	item_state = "lube"
-
+	w_class = ITEM_SIZE_LARGE
 
 /obj/item/device/autochisel
 	name = "Auto-Chisel"
@@ -96,7 +96,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	canremove = FALSE
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_LARGE
 	var/constructionsystem = 0
 	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")
 
@@ -110,6 +110,7 @@
 	icon = 'icons/obj/items/chisel.dmi'
 	icon_state = "chisel"
 	item_state = "chisel"
+	w_class = ITEM_SIZE_LARGE
 
 /obj/item/device/lasercutter
 	name = "Laser Cutter"
@@ -120,7 +121,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	canremove = FALSE
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_LARGE
 	var/constructionsystem = 0
 	attack_verb = list("singed", "charred", "burned", "sizzled", "cooked",)
 
@@ -141,7 +142,7 @@
 	icon_state = "hammer"
 	item_state = "hammer"
 	slot_flags = null
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_LARGE
 	var/constructionsystem = 0
 
 
@@ -153,13 +154,15 @@
 	icon_state = "Whistle_InHand_R"
 	item_state = "Whistle_InHand"
 	wielded_icon = "Whistle_InHand_W"
-	force = 45
-	block_chance = 50
+	block_chance = 20 //20 block chance, same block chance, force and pen as brutal chainsword but harder to get
+	force = 50
+	force_wielded = 60
+	armor_penetration = 21 //high penetration due to it being a power axe, weaker than power sword due to moderate block chance.
 	sharp = TRUE
 	edge = TRUE
-	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	w_class = ITEM_SIZE_SMALL //makes it actually fast and pretty usable, magi ALWAYS carry it around, no reason for it to weight anything.
-	weapon_speed_delay = 7
+//	obj_flags = OBJ_FLAG_CONDUCTIBLE //me on my way to get shocked after flinging a power axe at a power wire cause it somehow is conductible
+	w_class = ITEM_SIZE_LARGE //makes it actually fast and pretty usable, magi ALWAYS carry it around, no reason for it to weight anything.
+	weapon_speed_delay = 12
 	sales_price = 0
 
 /obj/item/melee/omnissiah_axe/dropped() //since nodrop is fucked this will deal with it for now.
@@ -176,7 +179,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	canremove = FALSE
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_LARGE
 	var/constructionsystem = 0
 	attack_verb = list("singed", "charred", "burned", "sizzled", "cooked",)
 
@@ -190,7 +193,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	if(istype(C))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 		playsound(src, 'sound/effects/adapter.ogg', 100, 1, 1)
-		visible_message("<span class='notice'>The base of [C]'s skull is suddenly pierced with the neural adapter by [user], performing neural stimulation procedure! It will help skitarii to awake faster, but not sure.</span>")
+		visible_message("<span class='notice'>[user] stimulates [C]'s brain,  It will probably help them to to wake up faster.</span>")
 		C.request_player()
 	..()
 
@@ -204,7 +207,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 /obj/item/clothing/gloves/thick/narthecium/apot
 	name = "Apothecary's Narthecium"
 	desc = "A giant surgical combi-tool with multiple different tools, it clearly wasnt made for a normal human."
-	armor = list(melee = 80, bullet = 40, laser = 20, energy = 30, bomb = 70, bio = 100, rad = 100)
+	armor = list(melee = 4, bullet = 4, laser = 4, energy = 4, bomb = 12, bio = 100, rad = 100)
 	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
 	icon_state = "hypogauntlet" //gloves.dmi
 	item_state = "sister" //hands.dmi
@@ -263,9 +266,9 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	wielded_icon = "pcsword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 20
-	force = 50
+	force = 42
 	force_wielded = 60
-	armor_penetration = 60
+	armor_penetration = 21
 	block_chance = 45 //apothecary nartheciums can be used for blocking better, due to being essentially a extension of the apothecaries body and being insanely armored.
 
 /obj/item/melee/chain/pcsword/narthecium/apot/dropped() //since nodrop is fucked this will deal with it for now.
@@ -278,7 +281,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	desc = "A pair of white, augmented gloves, these have several modifications on them."
 	siemens_coefficient = 0
 	permeability_coefficient = 0.05
-	armor = list(melee = 40, bullet = 20, laser = 20, energy = 30, bomb = 20, bio = 0, rad = 60)
+	armor = list(melee = 3, bullet = 3, laser = 3, energy = 10, bomb = 10, bio = 0, rad = 60)
 	icon_state = "sister" //gloves.dmi
 	item_state = "sister" //hands.dmi
 	var/can_toggle = 1
@@ -529,7 +532,6 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	accuracy = 0
 	automatic = 1
 	fire_delay = 8
-	move_delay = 5
 	burst=1
 	magazine_type = /obj/item/ammo_magazine/flamer
 	allowed_magazines = /obj/item/ammo_magazine/flamer
@@ -553,18 +555,16 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	desc = "A specialised mounted heavy bolter, designed for use on combat platforms."
 	icon_state = "ultrabolter"
 	w_class = ITEM_SIZE_HUGE
-	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
+	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	wielded_item_state = "autoshotty" // Do not remove this. We do not have any sprites for Bolters on-mob beyond this, it is perfect.
 	fire_delay = 2
 	burst = 1
-	move_delay = 3
 	automatic = 1
 	firemodes = list()
-	accuracy = 2
+	accuracy = 1
 	max_shots = 60
 	projectile_type = /obj/item/projectile/bullet/bolterrifle
-	origin_tech = null
 	self_recharge = 1
 	charge_meter = 0
 	charge_cost = 20
@@ -654,7 +654,6 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	w_class = ITEM_SIZE_NORMAL
 	force = 8
 	accuracy = -2
-	move_delay = 2
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
@@ -677,7 +676,6 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	w_class = ITEM_SIZE_HUGE
 	force = 8
 	accuracy = -2
-	move_delay = 2
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmarifle
@@ -699,7 +697,6 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	w_class = ITEM_SIZE_NORMAL
 	force = 8
 	accuracy = 2
-	move_delay = 2
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/neurotoxin
@@ -725,7 +722,6 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	sharp = 1
 	edge = 1
 	accuracy = 1
-	move_delay = 2
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/thallax/lightning

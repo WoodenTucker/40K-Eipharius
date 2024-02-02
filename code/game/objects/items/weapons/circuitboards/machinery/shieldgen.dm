@@ -6,7 +6,7 @@
 	name = T_BOARD("advanced shield generator")
 	board_type = "machine"
 	build_path = /obj/machinery/power/shield_generator
-	origin_tech = list(TECH_MAGNET = 3, TECH_POWER = 4)
+	origin_tech = list(TECH_MAGNET = 2, TECH_POWER = 3)
 	req_components = list(
 							/obj/item/stock_parts/capacitor = 1,
 							/obj/item/stock_parts/micro_laser = 1,
@@ -17,7 +17,7 @@
 	name = T_BOARD("shield diffuser")
 	board_type = "machine"
 	build_path = /obj/machinery/shield_diffuser
-	origin_tech = list(TECH_MAGNET = 4, TECH_POWER = 2)
+	origin_tech = list(TECH_MAGNET = 2, TECH_POWER = 2)
 	req_components = list(
 							/obj/item/stock_parts/capacitor = 1,
 							/obj/item/stock_parts/micro_laser = 1)

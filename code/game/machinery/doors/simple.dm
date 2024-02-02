@@ -239,3 +239,11 @@
 	..(newloc, "cult", complexity)
 
 
+/obj/machinery/door/unpowered/jail_door
+	icon = 'icons/obj/doors/door_prison.dmi'
+	name = "jail door"
+	desc = "An strong metal door, used to keep criminals behind them and prisoners aswell."
+	icon_state = "door1"
+	maxhealth = 5000 // I wish anyone trying to bash this door a pleasant FUCK YOU.
+	opacity = 1
+	req_access = list(access_prison)
