@@ -786,7 +786,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		if(plasma_overheat >= 150)
 			to_chat(user, "CATASTROPHIC FAILURE IMMINENT.")
 		..()
-		plasma_overheat += 15 // adding 15 heat for every pulling of the trigger (learn not to spam the fucking gun)
+		plasma_overheat += 30 // adding 30 heat for every pulling of the trigger (learn not to spam the fucking gun)
 	Process()
 		..()
 		if(plasma_overheat >= 0)
@@ -795,7 +795,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 			plasma_overheat = 0 // keepin the gun overheat above -1
 			return
 		if(plasma_overheat > plasma_overheat_max)
-			explosion(src.loc, 0, 0, 0, 1) // explodes u, dealing a lot of damage, still (a little) chance to survive
+			explosion(src.loc, -1, -1, 3, 3) // explodes u, dealing a lot of damage, still (a little) chance to survive
 	//firemodes = list(
 		//list(mode_name="semi-charge", burst=1, fire_delay=19, burst_accuracy=null, dispersion=null, automatic = 0),
 		//list(mode_name="overcharge", burst=1, fire_delay=19, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/pulse/pulserifle, charge_cost=150),
@@ -833,6 +833,29 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	slowdown_per_slot[slot_r_hand] = 0.41
 	slowdown_per_slot[slot_l_hand] = 0.41
 
+/obj/item/gun/energy/pulse/plasma/rifle/custom
+	name = "plasma rifle"
+	desc = "A custom plasma rifle. It has an overheat scale and on the end of it is written 'Boom!'."
+	force = 14
+	one_hand_penalty = 1.8 //heavy af fam
+	accuracy = 0.15
+	fire_delay = 15 //dont want speedy bois
+	charge_cost = 500
+	sales_price = 70 //funilly enough, plasma rifles are considered more common than plasma pistols in the imperial market, even then, they arent very common
+
+	firemodes = list(
+		list(mode_name="ATAP", fire_delay=15, projectile_type=/obj/item/projectile/energy/pulse/plasmarifle, charge_cost=500),
+		list(mode_name="HEDP", fire_delay = 32, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=900),
+		)
+
+/obj/item/gun/energy/pulse/plasma/rifle/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.1
+	slowdown_per_slot[slot_wear_suit] = 0.15
+	slowdown_per_slot[slot_belt] = 0.15
+	slowdown_per_slot[slot_r_hand] = 0.32
+	slowdown_per_slot[slot_l_hand] = 0.32
+
 /obj/item/gun/energy/pulse/plasma/pistol
 	name = "plasma pistol"
 	desc = "A plasma pistol. Great for dealing with threats swiftly.It has an overheat scale and on the end of it is written 'Boom!'."
@@ -867,7 +890,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	name = "astartes plasma pistol"
-	desc = "A plasma pistol. Great for dealing with threats swiftly. It has an overheat scale and on the end of it is written 'Boom!'."
+	desc = "An oversized plasma pistol. Great for dealing with threats swiftly. It has an overheat scale. It has improved vents and capacitors. "
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "ppistol"
 	item_state = "plasmapistol"
@@ -883,7 +906,9 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	charge_cost = 350
 	wielded_item_state = "plasmapistol"
-	sales_price = 0
+	plasma_overheat_decay = 4 // The cooling of the gun per tick
+	plasma_overheat_max = 250 // When the gun exploads
+	sales_price = 100
 
 	firemodes = list(
 		list(mode_name="ATAP", fire_delay=14.5, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol, charge_cost=350),

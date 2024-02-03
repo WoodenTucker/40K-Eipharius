@@ -19,7 +19,10 @@
 	/obj/item/storage/box/ids = 1,
 	/obj/item/stack/thrones/ten = 1,
 	/obj/item/reagent_containers/food/snacks/bigbiteburger,
-	/obj/item/device/flashlight/lantern = 1
+	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/paper/administratum/lambda = 1,
+	/obj/item/pen = 1,
+	/obj/item/paper/administratum/weapon5 = 1,
 )
 
 /decl/hierarchy/outfit/job/scion
@@ -42,6 +45,9 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/paper/administratum/vermillion = 1,
+	/obj/item/pen = 1,
+	/obj/item/paper/administratum/weapon5 = 1,
 	)
 
 /decl/hierarchy/outfit/job/cargo/janissary
@@ -77,4 +83,7 @@
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/paper/administratum/omega = 1,
+	/obj/item/pen = 1,
+	/obj/item/paper/administratum/weapon5 = 1,
 	/obj/item/stack/thrones/ten = 2,)

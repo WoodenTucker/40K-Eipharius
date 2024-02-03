@@ -92,7 +92,7 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is in debt to the trader for services rendered that saved the lives of countless brothers, being sent you have been instructed to protect and serve them in every capacity. This is a matter of honor, lives owed to a great Lord whom you have come to know over many decades, your new master on this forsaken world.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Space Marine Envoy of your chosen Chapter. You are his Angel. Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. You are tasked to show the Emperor's light to his followers and his fury to the forces that oppose it. Ensure it remains so.</font></b></span>")
 		H.gender = MALE
 		H.f_style = "shaved"
 		H.h_style = "Bald"
@@ -136,7 +136,7 @@
 	l_ear = /obj/item/device/radio/headset/cult1
 	r_ear = /obj/item/device/radio/headset/cult2
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
-	l_pocket = /obj/item/storage/box/ifak
+	l_pocket = /obj/item/storage/box/ifak/advanced/astartes
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/boltrifle/raven
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -164,7 +164,7 @@
 	l_ear = /obj/item/device/radio/headset/cult1
 	r_ear = /obj/item/device/radio/headset/cult2
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
-	l_pocket = /obj/item/storage/box/ifak
+	l_pocket = /obj/item/storage/box/ifak/advanced/astartes
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/boltrifle/raven
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -191,7 +191,7 @@
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
-	l_pocket = /obj/item/storage/box/ifak
+	l_pocket = /obj/item/storage/box/ifak/advanced/astartes
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/boltrifle/bang
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -220,13 +220,12 @@
 	head = /obj/item/clothing/head/helmet/astartes/apothecary
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
-	l_pocket = /obj/item/storage/box/ifak
+	l_pocket = /obj/item/storage/box/ifak/advanced/astartes
 	r_pocket = null
 	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/melee/chain/pcsword = 1,
-	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
+	/obj/item/cell/plasma = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -243,7 +242,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots/astartes/bloodangel
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
 	mask = null
-	l_pocket = /obj/item/storage/box/ifak
+	l_pocket = /obj/item/storage/box/ifak/advanced/astartes
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -290,7 +289,7 @@
 	head = /obj/item/clothing/head/helmet/astartes/sergeant/ravenguard
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
-	l_pocket = /obj/item/storage/box/ifak
+	l_pocket = /obj/item/storage/box/ifak/advanced/astartes
 	r_pocket = /obj/item/grenade/frag/shell
 	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -313,13 +312,12 @@
 	head = /obj/item/clothing/head/helmet/astartes/apothecary/ravenguard
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
-	l_pocket = /obj/item/storage/box/ifak
+	l_pocket = /obj/item/storage/box/ifak/advanced/astartes
 	r_pocket = null
 	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/melee/chain/pcsword = 1,
-	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
+	/obj/item/cell/plasma = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -337,7 +335,7 @@
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
-	l_pocket = /obj/item/storage/box/ifak
+	l_pocket = /obj/item/storage/box/ifak/advanced/astartes
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -368,7 +366,7 @@
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
 	/obj/item/clothing/glasses/astartes/visor = 1,
-	/obj/item/gun/projectile/automatic/flamer = 1
+	/obj/item/gun/projectile/automatic/flamer/salamander = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/salamander/sergeant
@@ -382,7 +380,7 @@
 	head = /obj/item/clothing/head/helmet/astartes/sergeant/salamander
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
-	l_pocket = /obj/item/storage/box/ifak
+	l_pocket = /obj/item/storage/box/ifak/advanced/astartes
 	r_pocket = /obj/item/grenade/frag/shell
 	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -393,7 +391,7 @@
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
 	/obj/item/clothing/glasses/astartes/visor = 1,
-	/obj/item/gun/projectile/automatic/flamer = 1
+	/obj/item/gun/projectile/automatic/flamer/salamander = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/salapoth
@@ -406,13 +404,12 @@
 	head = /obj/item/clothing/head/helmet/astartes/apothecary
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
-	l_pocket = /obj/item/storage/box/ifak
+	l_pocket = /obj/item/storage/box/ifak/advanced/astartes
 	r_pocket = null
 	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/melee/chain/pcsword = 1,
-	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
+	/obj/item/cell/plasma = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -430,7 +427,7 @@
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
-	l_pocket = /obj/item/storage/box/ifak
+	l_pocket = /obj/item/storage/box/ifak/advanced/astartes
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -453,7 +450,7 @@
 	head = /obj/item/clothing/head/helmet/astartes/ultramarine
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
-	l_pocket = /obj/item/storage/box/ifak
+	l_pocket = /obj/item/storage/box/ifak/advanced/astartes
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/boltrifle
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
@@ -478,7 +475,7 @@
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	glasses = /obj/item/clothing/glasses/astartes/visor
-	l_pocket = /obj/item/storage/box/ifak
+	l_pocket = /obj/item/storage/box/ifak/advanced/astartes
 	r_pocket = /obj/item/grenade/frag/shell
 	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -501,13 +498,12 @@
 	head = /obj/item/clothing/head/helmet/astartes/apothecary
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
-	l_pocket = /obj/item/storage/box/ifak
+	l_pocket = /obj/item/storage/box/ifak/advanced/astartes
 	r_pocket = null
 	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/melee/chain/pcsword = 1,
-	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
+	/obj/item/cell/plasma = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -525,7 +521,7 @@
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
-	l_pocket = /obj/item/storage/box/ifak
+	l_pocket = /obj/item/storage/box/ifak/advanced/astartes
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen

@@ -101,6 +101,7 @@
 
 
 
+
 	hand = 0//Make sure one of their hands is active.
 
 
@@ -178,6 +179,8 @@
 	T.adjustToxLoss(-10)
 	T.adjustBrainLoss(-10)
 	T.inject_blood(src, 500)
+	var/datum/heretic_deity/hivemind/N = GOD(GOD_HIVEMIND)
+		N.join_forced(T)
 	return 1
 
 /mob/living/carbon/human/genestealer/proc/ripperswarm() // ok
@@ -278,6 +281,8 @@
 	src.health = 250
 	src.maxHealth = 250
 	src.warfare_language_shit(LANGUAGE_TYRANID)
+	var/datum/heretic_deity/hivemind/N = GOD(GOD_HIVEMIND)
+		N.join_forced(src)
 	src.verbs -= /mob/living/carbon/human/genestealer/proc/givestealerstats //removes verb at the end so they can't spam it for whatever reason
 
 /mob/living/carbon/human/genestealer/proc/gsheal()

@@ -5,8 +5,8 @@
 	/datum/job/governor,
 	/datum/job/heir,
 	/datum/job/servant,
-	/datum/job/envoy,
 	/datum/job/inquisitor,
+	/datum/job/ordinate,
 	/datum/job/acolyte,
 	/*/datum/job/cadet,*/
 	/datum/job/ig/commissar,

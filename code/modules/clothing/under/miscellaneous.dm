@@ -155,6 +155,9 @@
 	item_state = "bl_suit"
 	worn_state = "psysuit"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 20, bio = 20, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/gentlesuit
 	name = "gentlemans suit"

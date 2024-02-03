@@ -321,8 +321,8 @@
 	if(user.mind.special_role == "Nurgle Cultist" || user.mind.special_role == "Khorne Cultist" || user.mind.special_role == "Slaanesh Cultist" || user.mind.special_role == "Tzeentch Cultist")
 		if(prob(8))
 			msg += "<span class='warning'>[T.He] [T.is] similar to you somehow but you can't quite figure out how...\n</span>"
-		else
-			return
+	if(user.mind.special_role == "Genestealer Cultist")
+		msg += "<span class='warning'>[T.He] [T.is] another servant of the Four-Armed Emperor!\n</span>"
 	if(warfare_faction == TYRANIDS)
 		msg += "A horrifying xeno!\n"
 

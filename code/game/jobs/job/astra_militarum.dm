@@ -759,7 +759,10 @@ datum/job/ig/bullgryn
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 1,
 	/obj/item/stack/thrones3/five = 1,
-	/obj/item/grenade/chem_grenade/gas/xyxl = 2
+	/obj/item/grenade/chem_grenade/gas/xyxl = 2,
+	/obj/item/paper/administratum/theta = 1,
+	/obj/item/pen = 1,
+	/obj/item/paper/administratum/weapon3 = 1,
 	)
 
 	id_type = /obj/item/card/id/dog_tag/guardsman
@@ -789,7 +792,10 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/stack/thrones3/five = 1,
-	/obj/item/grenade/chem_grenade/gas/xyxl = 2
+	/obj/item/grenade/chem_grenade/gas/xyxl = 2,
+	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
+	/obj/item/paper/administratum/theta = 1
 	)
 
 	id_type = /obj/item/card/id/dog_tag/guardsman
@@ -819,7 +825,10 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/stack/thrones3/five = 1,
-	/obj/item/grenade/chem_grenade/gas/xyxl = 2
+	/obj/item/grenade/chem_grenade/gas/xyxl = 2,
+	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
+	/obj/item/paper/administratum/theta = 1
 	)
 
 	id_type = /obj/item/card/id/dog_tag/guardsman
@@ -849,6 +858,9 @@ datum/job/ig/bullgryn
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/shovel/krieg = 1,
 	/obj/item/storage/box/kriegration = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
+	/obj/item/paper/administratum/omega = 1
 	)
 
 /decl/hierarchy/outfit/job/guardsman/catachan
@@ -875,7 +887,10 @@ datum/job/ig/bullgryn
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/grenade/chem_grenade/gas/xyxl = 1,
-	/obj/item/grenade/chem_grenade/gas/phosphorous = 1
+	/obj/item/grenade/chem_grenade/gas/phosphorous = 1, 
+	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
+	/obj/item/paper/administratum/omega = 1
 	)
 
 /decl/hierarchy/outfit/job/guardsman/valhallan
@@ -898,12 +913,15 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/stack/thrones3/five = 1,
-	/obj/item/grenade/chem_grenade/gas/xyxl = 2
+	/obj/item/grenade/chem_grenade/gas/xyxl = 2,
+	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
+	/obj/item/paper/administratum/theta = 1
 	)
 
 /decl/hierarchy/outfit/job/guardsman/maccabian
 	name = OUTFIT_JOB_NAME("Maccabian Guardsman")
-	uniform = /obj/item/clothing/under/cadian_uniform
+	uniform = /obj/item/clothing/under/rank/maccabian
 	suit = /obj/item/clothing/suit/armor/maccabian
 	back = /obj/item/storage/backpack/satchel/maccabian
 	belt = null
@@ -922,7 +940,10 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/stack/thrones3/five = 1,
-	/obj/item/grenade/chem_grenade/gas/xyxl = 2
+	/obj/item/grenade/chem_grenade/gas/xyxl = 2,
+	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
+	/obj/item/paper/administratum/theta = 1
 	)
 
 //Karskin
@@ -949,7 +970,10 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones = 1,
 	/obj/item/cell/lasgun/hotshot = 3,
 	/obj/item/clothing/accessory/holster/waist = 1,
-	/obj/item/grenade/chem_grenade/gas/xyxl = 2
+	/obj/item/grenade/chem_grenade/gas/xyxl = 2,
+	/obj/item/paper/administratum/weapon5 = 1,
+	/obj/item/pen = 1,
+	/obj/item/paper/administratum/vermillion = 1
 	)
 
 
@@ -970,12 +994,15 @@ datum/job/ig/bullgryn
 	r_pocket = /obj/item/device/flashlight/lantern
 	r_hand = /obj/item/storage/box/coin
 	l_ear = /obj/item/device/radio/headset/red_team
-	suit_store = /obj/item/gun/energy/pulse/plasma/rifle
+	suit_store = /obj/item/gun/energy/pulse/plasma/rifle/custom
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/cell/plasma = 2,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
+	/obj/item/paper/administratum/theta = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 
@@ -997,13 +1024,16 @@ datum/job/ig/bullgryn
 	l_pocket = /obj/item/storage/box/ifak
 	r_hand = /obj/item/storage/box/coin
 	r_pocket =  /obj/item/ammo_magazine/box/a556/mg08/ms
-	suit_store = /obj/item/gun/projectile/automatic/heavystubber
+	suit_store = /obj/item/gun/projectile/automatic/heavystubber/val
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/ammo_magazine/box/a556/mg08/ms = 2,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
+	/obj/item/paper/administratum/theta = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/stack/thrones3/five = 1,
 	)
 
@@ -1030,6 +1060,9 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/shovel/krieg = 1,
+	/obj/item/paper/administratum/omega = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/storage/box/kriegration = 1
 	)
 
@@ -1054,6 +1087,9 @@ datum/job/ig/bullgryn
 	/obj/item/ammo_magazine/flamer = 3,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
+	/obj/item/paper/administratum/omega = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 
@@ -1080,6 +1116,8 @@ datum/job/ig/bullgryn
 	/obj/item/grenade/frag = 1,
 	/obj/item/shield/buckler = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
+	/obj/item/pen = 1,
+	/obj/item/paper/administratum/theta = 1
 	)
 
 
@@ -1113,6 +1151,9 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/handcuffs = 1,
 	/obj/item/shovel/krieg = 1,
+	/obj/item/paper/administratum/omega = 1,
+	/obj/item/pen = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
 	/obj/item/storage/box/kriegration = 1
 	)
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
@@ -1141,6 +1182,8 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/clothing/mask/gas/half/cadianrespirator = 1,
 	/obj/item/handcuffs = 1,
+	/obj/item/paper/administratum/theta = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
 	/obj/item/clothing/glasses/cadiangoggles = 1
 	)
 	suit_store = /obj/item/gun/energy/las/lasgun
@@ -1170,13 +1213,16 @@ datum/job/ig/bullgryn
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/handcuffs = 1,
+	/obj/item/paper/administratum/theta = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
 
 /decl/hierarchy/outfit/job/medical/paramedic/maccabian
 	name = OUTFIT_JOB_NAME("Maccabian Medicae")
-	uniform = /obj/item/clothing/under/cadian_uniform
+	uniform = /obj/item/clothing/under/rank/maccabian/medic
 	suit = /obj/item/clothing/suit/armor/maccabian
 	back = /obj/item/storage/backpack/satchel/maccabian
 	belt = /obj/item/storage/belt/medical/full
@@ -1196,6 +1242,9 @@ datum/job/ig/bullgryn
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/handcuffs = 1,
+	/obj/item/paper/administratum/theta = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
@@ -1217,7 +1266,7 @@ datum/job/ig/bullgryn
 	l_pocket = /obj/item/storage/box/ifak
 	r_hand = /obj/item/storage/box/coin
 	r_pocket = /obj/item/device/flashlight/lantern
-	suit_store = /obj/item/gun/energy/las/lasgun/longlas
+	suit_store = /obj/item/gun/energy/las/lasgun/longlas/custom
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/cell/lasgun/hotshot = 2,
@@ -1225,6 +1274,9 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/handcuffs = 1,
+	/obj/item/paper/administratum/omega = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 
@@ -1248,12 +1300,12 @@ datum/job/ig/bullgryn
 	suit_store = /obj/item/gun/energy/las/lasgun/longlas/krieg
 	backpack_contents = list(
 	/obj/item/cell/lasgun/hotshot = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
 	/obj/item/handcuffs = 1,
 	/obj/item/shovel/krieg = 1,
+	/obj/item/paper/administratum/omega = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/storage/box/kriegration = 1
 	)
 
@@ -1269,7 +1321,7 @@ datum/job/ig/bullgryn
 	mask = null
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
-	r_hand = /obj/item/storage/box/coin
+	r_hand = /obj/item/gun/projectile/thrower
 	l_hand = /obj/item/device/binoculars
 	r_pocket =  /obj/item/ammo_casing/a145/apds
 	suit_store = /obj/item/gun/projectile/heavysniper
@@ -1277,6 +1329,10 @@ datum/job/ig/bullgryn
 	backpack_contents = list(
 	/obj/item/storage/box/sniperammo/apds = 4,
 	/obj/item/handcuffs = 1,
+	/obj/item/ammo_casing/a145/apds/bos = 1,
+	/obj/item/paper/administratum/omega = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/stack/thrones2/five = 1
 	)
 
@@ -1308,7 +1364,10 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
-	/obj/item/device/whistle = 1,
+	/obj/item/paper/administratum/omega = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
+	/obj/item/device/whistle = 1
 	)
 
 	id_type = /obj/item/card/id/dog_tag/guardsman
@@ -1340,6 +1399,9 @@ datum/job/ig/bullgryn
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/handcuffs = 1,
 	/obj/item/shovel/krieg = 1,
+	/obj/item/paper/administratum/omega = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/pen = 1,
 	/obj/item/storage/box/kriegration = 1
 	)
 
@@ -1364,6 +1426,9 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
+	/obj/item/paper/administratum/omega = 1,
+	/obj/item/pen = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
 	/obj/item/handcuffs = 1
 	)
 
@@ -1386,12 +1451,15 @@ datum/job/ig/bullgryn
 	/obj/item/ammo_magazine/c44/ms = 3,
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/clothing/accessory/holster/waist = 1,
+	/obj/item/paper/administratum/omega = 1,
+	/obj/item/pen = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
 	/obj/item/handcuffs = 1
 	)
 
 /decl/hierarchy/outfit/job/sergeant/maccabian
 	name = OUTFIT_JOB_NAME("Maccabian Sergeant")
-	uniform = /obj/item/clothing/under/cadian_uniform
+	uniform = /obj/item/clothing/under/rank/maccabian/sergeant
 	suit = /obj/item/clothing/suit/armor/maccabian/sergeant
 	back = /obj/item/storage/backpack/satchel/maccabian/sergeant
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
@@ -1407,6 +1475,9 @@ datum/job/ig/bullgryn
 	backpack_contents = list(
 	/obj/item/cell/lasgun/hotshot = 2,
 	/obj/item/stack/thrones2 = 4,
+	/obj/item/paper/administratum/omega = 1,
+	/obj/item/pen = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 
@@ -1438,6 +1509,9 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/handcuffs = 1,
+	/obj/item/paper/administratum/vermillion = 1,
+	/obj/item/pen = 1,
+	/obj/item/paper/administratum/weapon5 = 1,
 	/obj/item/device/whistle = 1,
 	)
 
@@ -1601,20 +1675,20 @@ datum/job/ig/bullgryn
 
 GLOBAL_LIST_INIT(lone_thoughts, list(
 		"Why are we still here... just to suffer?",
-		"We fight to win, and that's all that matters.",
+		"We fight our fabulous queen KARL, and that's all that matters.",
 		"Why we don't get any more reinforcements?",
-		"We have not gotten any orders from segmentum command in months...",
-		"Did something happen while we were holding this outpost?",
+		"LENNEEEEEEEEH! WHERE ARE YOU LENNY?",
+		"What do you call an arsonist? A flamer enthusiast -- ehey!",
 		"Is there any reason to keep fighting?",
-		"It's middle of summer... Why it's so cold?",
+		"It's middle of winter... why is Inquisitor Rex unclothed?",
 		"Greg died last night.",
-		"I do not want to die.",
+		"The british are coming...",
 		"There is no hope... anymore...",
 		"Is any of this real?",
-		"My teeth hurt.",
-		"I am not ready to die.",
+		"My teeth hurt. Should sell them to an ork...",
+		"I hear the Governor has a 'diplomatic' relationship with the Tau...",
 		"I don't remember joining the military...",
-		"Does the Emperor truly protect?",
+		"Does the Emperor truly protect papa Grue?",
 		"I hope the Inquisitor doesn't find my Eldar Mommy fan-fiction",))
 
 /mob/living/proc/assign_random_quirk()

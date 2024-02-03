@@ -81,6 +81,11 @@
 
 	toggle_scope(usr, 2)
 
+/obj/item/gun/projectile/heavysniper/equipped(mob/user)
+	..()
+	if(user.zoomed)
+		user.do_zoom()
+
 /obj/item/gun/energy/las/lasgun/longlas
 	name = "M35 'M-Galaxy' Longlas"
 	desc = "The M35 'M-Galaxy' Lasgun outfitted with advanced barrel and scope is one of the most common and less unique sniper weapons that can be found throughout the Imperial Arsenal, used by Astra Militarum Sharpshooters and Ratling Snipers."
@@ -95,7 +100,7 @@
 	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 4000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/longlas
-	charge_cost = 300
+	charge_cost = 400
 	cell_type = /obj/item/cell/lasgun/hotshot || /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "longlas-wielded"
@@ -133,22 +138,42 @@
 	icon_state = "kriegsniper"
 	item_state = "snipeluscius"
 	wielded_item_state = "snipeluscius-wielded"
+	accuracy = 1.3
+
+/obj/item/gun/energy/las/lasgun/longlas/custom
+	name = "Modified M35 Longlas"
+	desc = "The Sniper Pattern Lasgun is outfitted with advanced barrel and scope is one of the most common and less unique sniper weapons that can be found throughout the Imperial Arsenal, this particular pattern has a narlwood stock and utilizes a unique design allowing for greater handling and concealment."
+	icon_state = "longlas"
+	item_state = "longlas"
+	force = 17
+	one_hand_penalty = 1.9
+	fire_delay = 8
+	accuracy = 1.2
+	charge_cost = 400
+	wielded_item_state = "longlas-wielded"
+	sales_price = 80
+	color = "#4d3716b4"
+
+	firemodes = list(
+		list(mode_name="semi-automatic", fire_delay=8, move_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=400),
+		list(mode_name="overcharge", fire_delay=9, move_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=650),
+		)
 
 /obj/item/gun/projectile/thrower
-	name = "Lead Thrower"
-	desc = "The Lead Thrower is a primitive effort in capable calibers on a small scale. It will take forever to reload, but if it hits, it will be devastating. Chambered in Bolter .75"
+	name = "Boscolet Frontiersman"
+	desc = "Boscolet Frontiersman is an incredibly advanced single-shot magrail hunting rifle developed by the local nomadic tribes of Greater Messina. The Messian Tribes developed the weapon after studying Seolite artifacts that over generations were guarded and kept secret, eventually becoming great heirlooms of power. They say there is only a handful of these rifles left..."
 	icon = 'icons/obj/weapons/gun/projectile.dmi'
 	icon_state = "musket"
 	item_state = "musket"
 	w_class = ITEM_SIZE_HUGE
 	force = 10
 	slot_flags = SLOT_BACK
-	caliber = ".75"
+	caliber = "14.5mm"
 	screen_shake = 2.5
 	handle_casings = HOLD_CASINGS
 	load_method = SINGLE_CASING|SINGLE_LOAD
 	max_shells = 1
-	ammo_type = /obj/item/ammo_casing/bolter
+	ammo_type = /obj/item/ammo_casing/a145/apds/bos
 	one_hand_penalty = 1.5
 	accuracy = 1.5
 	var/bolt_open = 0
@@ -156,7 +181,7 @@
 	bulletinsert_sound = 'sound/weapons/guns/interact/arm_cock.ogg'
 	fire_sound = 'sound/weapons/guns/fire/musket_fire.ogg'
 	gun_type = GUN_SNIPER
-	sales_price = 2
+	sales_price = 0
 
 /obj/item/gun/projectile/heavysniper/update_icon()
 	..()
@@ -207,7 +232,6 @@
 	if(!bolt_open)
 		return
 	..()
-
 
 /obj/item/gun/projectile/automatic/galvanic/rifle
 	name = "Mark IV Arkhan Pattern Galvanic Rifle"
@@ -273,6 +297,8 @@
 	set name = "Use Scope"
 	set popup_menu = 1
 	toggle_scope(usr, 2.5)
+
+
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/equipped(mob/user)
 	..()
 	if(user.zoomed)

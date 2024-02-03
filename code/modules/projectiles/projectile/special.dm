@@ -140,6 +140,41 @@
 			H.IgniteMob()
 		new /obj/flamer_fire(H.loc, 12, 10, "red", 1)
 
+/obj/item/projectile/flamer/salamander
+	name = "fire"
+	icon_state = "flame"
+	damage = 22
+	armor_penetration = 44
+	range =  5//Very short range.
+	damage_type = BURN
+	mob_hit_sound = list('sound/effects/fire.ogg')
+	speed = 0.8
+
+/obj/item/projectile/flamer/salamander/on_hit(var/atom/target, var/blocked = 0)
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+		if(!istype(H.wear_suit, /obj/item/clothing/suit/fire))
+			H.adjust_fire_stacks(5) //note left by walker, any more than 10 is impossibly OP
+			H.IgniteMob()
+		new /obj/flamer_fire(H.loc, 12, 10, "blue", 1)
+
+/obj/item/projectile/warpfire
+	name = "warp fire"
+	icon_state = "declone"
+	damage = 15
+	range =  7
+	damage_type = BURN
+	mob_hit_sound = list('sound/effects/fire.ogg')
+	speed = 1
+
+/obj/item/projectile/warpfire/on_hit(var/atom/target, var/blocked = 0)
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+		if(!istype(H.wear_suit, /obj/item/clothing/suit/wizrobe/psypurple))
+			H.adjust_fire_stacks(10)
+			H.IgniteMob()
+		new /obj/warpfire(H.loc, 16, 12, "green", 3)
+
 
 // FLESH MOUTH
 /obj/necrofleshmouth
@@ -264,7 +299,7 @@
 	if(istype(M))
 		if(ishuman(M))
 			var/mob/living/carbon/human/H = M
-			if(istype(H.wear_suit, /obj/item/clothing/suit/fire) || istype(H.wear_suit, /obj/item/clothing/suit/armor/astartes) || istype(H.wear_suit, /obj/item/clothing/suit/sisterofbattle) || istype(H.wear_suit, /obj/item/clothing/suit/armor/ordohereticus))
+			if(istype(H.wear_suit, /obj/item/clothing/suit/fire) || istype(H.wear_suit, /obj/item/clothing/suit/armor/astartes) || istype(H.wear_suit, /obj/item/clothing/suit/sisterofbattle) ||  istype(H.wear_suit, /obj/item/clothing/suit/wizrobe/psypurple) || istype(H.wear_suit, /obj/item/clothing/suit/armor/ordohereticus))
 				H.show_message(text("Your suit protects you from the flames."),1)
 				H.adjustFireLoss(burnlevel*0.25) //Does small burn damage to a person wearing one of the suits.
 				return
@@ -317,6 +352,127 @@
 	firelevel -= 2 //reduce the intensity by 2 per tick
 	return
 
+
+//WARPFIRE (And potentially other warp based effects later on)
+
+/obj/warpfire
+	name = "warp fire"
+	desc = "Run!"
+	anchored = 1
+	mouse_opacity = 0
+	icon = 'icons/effects/fire.dmi'
+	icon_state = "green_2"
+	layer = BELOW_OBJ_LAYER
+	var/firelevel = 18 //Tracks how much "fire" there is. Basically the timer of how long the fire burns
+	var/burnlevel = 15 //Tracks how HOT the fire is. This is basically the heat level of the fire and determines the temperature.
+	var/flame_color = "green"
+	var/canSpreadDir = NORTH | SOUTH | EAST | WEST
+
+/obj/warpfire/New(loc, fire_lvl, burn_lvl, f_color, fire_spread_amount, BlockedDirs)
+	..()
+	if (f_color)
+		flame_color = f_color
+
+	icon_state = "[flame_color]_2"
+	if(fire_lvl) firelevel = fire_lvl
+	if(burn_lvl) burnlevel = burn_lvl
+	if(BlockedDirs)
+		canSpreadDir &= ~BlockedDirs
+	START_PROCESSING(SSobj,src)
+
+	if(fire_spread_amount > 0)
+		var/turf/T
+		for(var/dirn in GLOB.cardinal)
+			if(!(dirn & canSpreadDir))
+				continue
+			T = get_step(loc, dirn)
+			if(istype(T,/turf/simulated/open)) continue
+			if(locate(/obj/warpfire) in T) continue //No stacking
+			var/new_spread_amt = T.density ? 0 : fire_spread_amount - 1 //walls stop the spread
+			if(new_spread_amt)
+				for(var/obj/O in T)
+					if(!O.CanPass(src, loc))
+						new_spread_amt = 0
+						break
+			addtimer(CALLBACK(src, .proc/make_more_fire,T, fire_lvl, burn_lvl, f_color, new_spread_amt, ~canSpreadDir), 0) //Do not put spawns in recursive things.
+
+/obj/warpfire/proc/make_more_fire(var/T, var/f_level, var/b_level, var/fcolor, var/new_spread, var/blockedDirs)
+	new /obj/warpfire(T, f_level, b_level, fcolor, new_spread, blockedDirs)
+
+/obj/warpfire/Destroy()
+	set_light(0)
+	STOP_PROCESSING(SSobj,src)
+	. = ..()
+
+/obj/warpfire/Crossed(mob/living/M) //Only way to get it to reliable do it when you walk into it.
+	if(istype(M))
+		if(ishuman(M))
+			var/mob/living/carbon/human/H = M
+			if(istype(H.wear_suit, /obj/item/clothing/suit/wizrobe/psypurple))
+				H.show_message(text("Your Psyker powers protect you from the flames."),1)
+				return
+		M.adjust_fire_stacks(burnlevel) //Make it possible to light them on fire later.
+		if (prob(firelevel + 2*M.fire_stacks)) //the more soaked in fire you are, the likelier to be ignited
+			M.IgniteMob()
+
+		M.adjustFireLoss(round(burnlevel*0.5)) //This makes fire stronk.
+		to_chat(M, "<span class='danger'>You are burned!</span>")
+
+/obj/warpfire/proc/updateicon()
+	if(burnlevel < 15)
+		color = "#c1c1c1" //make it darker to make show its weaker.
+	switch(firelevel)
+		if(1 to 9)
+			icon_state = "[flame_color]_1"
+			set_light(2, l_color = "#E38F46")
+		if(10 to 25)
+			icon_state = "[flame_color]_2"
+			set_light(4, l_color = "#E38F46")
+		if(25 to INFINITY) //Change the icons and luminosity based on the fire's intensity
+			icon_state = "[flame_color]_3"
+			set_light(6, l_color = "#E38F46")
+
+/obj/warpfire/Process()
+	var/turf/T = loc
+	firelevel = max(0, firelevel)
+	if(!istype(T)) //Is it a valid turf? Has to be on a floor
+		qdel(src)
+		return
+
+	updateicon()
+
+	if(!firelevel)
+		qdel(src)
+		return
+
+	for(var/mob/living/I in loc)
+		if(istype(I,/mob/living/carbon/human))
+			var/mob/living/carbon/human/M = I
+			if(istype(M.wear_suit, /obj/item/clothing/suit/wizrobe/psypurple))
+				M.show_message(text("Your Psyker powers protect you from the flames."),1)
+				return
+		I.adjust_fire_stacks(burnlevel) //If i stand in the fire I deserve all of this. Also warpfire stacks quickly.
+		if(prob(firelevel)) I.IgniteMob()
+		I.show_message(text("<span class='warning'>You are burned!</span>"),1)
+
+	//This has been made a simple loop, for the most part flamer_fire_act() just does return, but for specific items it'll cause other effects.
+	firelevel -= 2 //reduce the intensity by 2 per tick
+	return
+
+/obj/warpfire/warp/Crossed(mob/living/M) //Only way to get it to reliable do it when you walk into it.
+	if(istype(M))
+		if(ishuman(M))
+			var/mob/living/carbon/human/H = M
+			if(istype(H.wear_suit, /obj/item/clothing/suit/wizrobe/psypurple)) //It's magic warpfire, so only Psykers (Denoted by the outfit for now) can survive
+				H.show_message(text("Your psyker powers protect you from the flames."),1)
+				H.adjustFireLoss(burnlevel*0.25) //Does small burn damage to a person wearing one of the suits.
+				return
+		M.adjust_fire_stacks(burnlevel) //Make it possible to light them on fire later.
+		if (prob(firelevel + 2*M.fire_stacks)) //the more soaked in fire you are, the likelier to be ignited
+			M.IgniteMob()
+
+		M.adjustFireLoss(round(burnlevel*0.5)) //This makes fire stronk.
+		to_chat(M, "<span class='danger'>You are burned!</span>")
 
 
 

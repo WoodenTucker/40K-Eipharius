@@ -45,6 +45,19 @@
 
 			H.resuscitate()
 
+/datum/reagent/bloodclot
+	name = "Anohemolytite"
+	description = "A medicine that was stumbled upon by accident, anohemolytite encourages blood to clot and slow down bleeding."
+	reagent_state = REAGENT_LIQUID
+	scannable = 1
+	color = "#bd5eb5"
+	overdose = 11
+	metabolism = REM / 3.33
+	taste_description = "throat-clenching sourness"
+
+/datum/reagent/coagzolug/affect_blood(mob/living/carbon/M, alien, removed)
+	M.add_chemical_effect(CE_BLOODCLOT)
+
 /datum/reagent/spice
 	name = "Spice"
 	description = "Incredibly rare exotic dust."
@@ -78,7 +91,7 @@
 	taste_mult = 3
 	reagent_state = REAGENT_LIQUID
 	color = "#bf0000"
-	overdose = REAGENTS_OVERDOSE
+	overdose = REAGENTS_OVERDOSE //30
 	scannable = 1
 	flags = IGNORE_MOB_SIZE
 
@@ -92,7 +105,7 @@
 	taste_description = "bitterness"
 	reagent_state = REAGENT_LIQUID
 	color = "#ffa800"
-	overdose = REAGENTS_OVERDOSE
+	overdose = REAGENTS_OVERDOSE //30
 	scannable = 1
 	flags = IGNORE_MOB_SIZE
 
@@ -107,7 +120,7 @@
 	taste_mult = 1.5
 	reagent_state = REAGENT_LIQUID
 	color = "#ff8000"
-	overdose = REAGENTS_OVERDOSE * 0.5
+	overdose = REAGENTS_OVERDOSE * 0.5 //15
 	scannable = 1
 	flags = IGNORE_MOB_SIZE
 
@@ -343,6 +356,19 @@
 	M.add_chemical_effect(CE_MIND, 2)
 	M.adjustToxLoss(5 * removed) // It used to be incredibly deadly due to an oversight. Not anymore!
 	M.add_chemical_effect(CE_PAINKILLER, 20)
+
+/datum/reagent/mutetoxin
+	name = "Nulloratotoxin"
+	description = "A thick neurotoxin which paralyzes the vocal chords"
+	taste_description = "tar"
+	reagent_state = REAGENT_LIQUID
+	color = "521152"
+	metabolism = REM
+	overdose = REAGENTS_OVERDOSE
+	scannable = 1
+	
+/datum/reagent/mutetoxin/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	M.silent = max(M.silent, 5)
 
 /datum/reagent/alkysine
 	name = "Alkysine"

@@ -78,7 +78,7 @@
 		H.adjustStaminaLoss(-INFINITY)
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You were formely a lowly crew member to the Lord Captain, your freedom being granted by the wisdom of the Lord trader who gave you settling rights upon Eipharius. After a grueling campaign across the fringe, your Lord Captain had finally won both his dynasty and loyal crew the opportunity to finally settle down.. in the ass end of the frontier. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You were formely a lowly crew member to the Lord Captain, your freedom being granted by the wisdom of the Lord trader who gave you settling rights upon Messina. After a grueling campaign across the fringe, your Lord Captain had finally won both his dynasty and loyal crew the opportunity to finally settle down.. in the ass end of the frontier. </font></b></span>")
 
 
 
@@ -123,7 +123,7 @@
 			new /obj/item/device/flashlight/lantern(src.loc) 
 			new /obj/item/device/analyzer/plant_analyzer(src.loc)
 			new /obj/item/clothing/gloves/thick/botany(src.loc)
-			new /obj/item/melee/classic_baton(src.loc)
+			new /obj/item/melee/classic_baton/trench_club/overseer(src.loc)
 			new /obj/item/gun/energy/taser(src.loc)
 			new /obj/item/gun/energy/las/laspistol/militarum/lucius(src.loc)
 			new /obj/item/handcuffs(src.loc)

@@ -15,6 +15,7 @@
 	"Nurgle",
 	"Slaanesh",
 	"Tzeentch",
+	"Hivemind",
 	"C'tan",
 	"Malice",
 	"Ans'l",

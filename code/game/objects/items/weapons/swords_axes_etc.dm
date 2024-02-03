@@ -208,7 +208,7 @@
 
 /obj/item/melee/chain
 	name = "Messina Pattern Chainsword"
-	desc = "A basic chainsword constructed in the small scale forges of Eipharius itself. Cheaped out on quality, at least its still a chainsword!"
+	desc = "A basic chainsword constructed in the small scale forges of Messina itself. Cheaped out on quality, at least its still a chainsword!"
 	icon_state = "mercychainsword"
 	item_state = "mercychainsword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE

@@ -62,6 +62,49 @@
 	else
 		to_chat(user, "You're already trying to suture them.")
 
+/obj/item/tourniquet/advanced
+	name = "Hemostop Band"
+	desc = "An advanced tourniquet. Smaller in size, yet keeps it's effectiveness."
+	icon = 'icons/obj/items.dmi'//TODO: MOVE THIS INTO ANOTHER DMI!
+	icon_state = "tourniquet_adv"
+	w_class = ITEM_SIZE_TINY
+
+/obj/item/tourniquet/advanced/attack(mob/living/carbon/human/H as mob, mob/living/userr, var/target_zone)//All of this is snowflake and copied and pasted from sutures.
+	//Checks if they're human, have a limb, and have the skill to fix it.
+	if(!ishuman(H))
+		return ..()
+	if(!ishuman(userr))
+		return ..()
+
+	var/mob/living/carbon/human/user = userr
+	var/obj/item/organ/external/affected = H.get_organ(target_zone)
+
+	if(!affected)
+		return ..()
+
+
+	if(!(affected.status & ORGAN_ARTERY_CUT))//There is nothing to fix don't fix anything.
+		return
+
+	//Ok all the checks are over let's do the quick fix.
+	if(!user.doing_something)
+		user.doing_something = TRUE
+		if(affected.status & ORGAN_ARTERY_CUT)//Fix arteries.
+			user.visible_message("<span class='notice'>[user] to apply the Hemostop band to their [affected.name].")
+			if(do_mob(user, H, (backwards_skill_scale(user.SKILL_LEVEL(medical)) * 5)))
+				user.visible_message("<span class='notice'>[user] has patched the [affected.artery_name] in [H]'s [affected.name] with \the [src.name].</span>", \
+				"<span class='notice'>You have patched the [affected.artery_name] in [H]'s [affected.name] with \the [src.name].</span>")
+				affected.status &= ~ORGAN_ARTERY_CUT
+				playsound(src, 'sound/items/tourniquet.ogg', 70, FALSE)
+				qdel(src)
+			else
+				user.doing_something = FALSE
+
+		affected.update_damages()
+		user.doing_something = FALSE
+	else
+		to_chat(user, "You're already trying to suture them.")
+
 
 /obj/item/grenade_dud
 	name = "Dud"

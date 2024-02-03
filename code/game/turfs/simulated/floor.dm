@@ -90,3 +90,8 @@
 			if(ishuman(M))
 				return
 		new /obj/flamer_fire(src, 12, 10, "red", 1)
+	if(istype(A, /obj/item/projectile/warpfire))
+		for(var/mob/M in src)
+			if(ishuman(M))
+				return
+		new /obj/warpfire(src, 12, 10, "green", 2)

@@ -122,3 +122,43 @@
 
 /datum/heretic_deity/tzeentch/post_add(mob/living/carbon/human/NewMember)
 	GLOB.tzeentch_cult++
+
+/datum/heretic_deity/hivemind
+	name = "hivemind"
+	join_message = "Glory to the Four-Armed Emperor!"
+	status_icon_state = "genestealer"
+	rune_type = /obj/effect/cleanable/heretic_rune/hivemind
+	faction = "Tyranids"
+	inherent_verbs = list(
+	/mob/living/carbon/human/proc/draw_rune,
+	/mob/living/carbon/human/proc/getmanualtyranid,
+	/mob/living/carbon/human/proc/givegenestuff)
+	rune_recipes = list(
+						/datum/rune_recipe/hivemind/biomass,
+						/datum/rune_recipe/hivemind/biomass/organ,
+						/datum/rune_recipe/hivemind/biomass/limb)
+
+/datum/heretic_deity/hivemind/post_add(mob/living/carbon/human/NewMember)
+	GLOB.hivemind_cult++
+
+/mob/living/carbon/human/proc/givegenestuff()
+	set name = "Recall your cultist nature."
+	set category = "Genestealer Cultist"
+	set desc = "Genestaler Cultist Setup."
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	var/geneclass = input("Select a Class","Class Selection") as null|anything in list("Genestealer Cultist")
+	switch(geneclass)
+		if("Genestealer Cultist")
+			src.set_trait(new/datum/trait/death_tolerant()) //Not bothered by any death in the name of the Four-Armed Emperor
+			src.update_eyes() //should fix grey vision
+			src.warfare_language_shit(LANGUAGE_TYRANID) //Gives them access to the hivemind
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //Tyranid bioengineering's finest.
+			src.thirst = INFINITY
+			src.verbs -= /mob/living/carbon/human/proc/givegenestuff //removes verb at the end so they can't spam it for whatever reason
+			client?.color = null
+			to_chat(src, "<span class='notice'>Check your languages for the Hivemind! The default option is .g and you can switch it in your IC tab.</span>")

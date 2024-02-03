@@ -57,3 +57,178 @@
 	if(casts-- && ..())
 		to_chat(holder, "<span class='notice'>The [name] spell has [casts] out of [max_casts] charges left</span>")
 	return !!casts
+
+
+/spell/hand/charges/lightning
+	name = "Lightning Blast"
+	desc = "Call forth a blast of ethereal lightning."
+
+	spell_flags = 0
+	charge_max = 600
+	invocation = "opens their hand, which bursts into crackling lightning."
+	invocation_type = SpI_EMOTE
+
+	range = 7
+	max_casts = 2
+	compatible_targets = list(/atom)
+	hud_state = "wiz_bshard"
+
+/spell/hand/charges/lightning/cast_hand(var/atom/A,var/mob/user)
+	var/obj/item/projectile/lightning/B = new(get_turf(user))
+	B.firer = user
+	B.launch_projectile(A, BP_CHEST)
+	user.visible_message("<span class='danger'>\The [user] shoots out a crackling blast of lightning from their hand!</span>")
+	return ..()
+
+/obj/item/projectile/lightning
+	name = "lightning"
+	damage = 35
+	check_armour = "energy"
+	armor_penetration = 48
+	icon_state = "laser_musket"
+	damage_type = BURN
+
+/obj/item/projectile/lightning/on_hit(var/atom/movable/target, var/blocked = 0)
+	if(..())
+		if(istype(target, /mob/living/carbon/human))
+			var/mob/living/carbon/human/H = target
+			H.flash_eyes()
+			H.eye_blurry += 4
+			H.Weaken(20)
+			H.visible_message("<span class='danger'>Lightning crackles across \the [H]'s skin!</span>")
+
+/obj/item/projectile/bullet/pellet/lightning
+	name = "lightning spark"
+	damage = 4
+	check_armour = "energy"
+	armor_penetration = 48
+
+
+/obj/item/projectile/bullet/pellet/lightning/on_hit(var/atom/movable/target, var/blocked = 0)
+	if(..())
+		if(istype(target, /mob/living/carbon/human))
+			var/mob/living/carbon/human/H = target
+			H.flash_eyes()
+			H.eye_blurry += 1
+			H.Weaken(5)
+			H.visible_message("<span class='danger'>Lightning crackles across \the [H]'s skin!</span>")
+
+/spell/hand/charges/firebolt
+	name = "Fire Bolt"
+	desc = "Call forth a blast of flame"
+
+	spell_flags = 0
+	charge_max = 600
+	invocation = "opens their hand, which bursts into flames."
+	invocation_type = SpI_EMOTE
+
+	range = 9
+	max_casts = 1
+	compatible_targets = list(/atom)
+	hud_state = "fireball"
+
+/spell/hand/charges/firebolt/cast_hand(var/atom/A,var/mob/user)
+	var/obj/item/projectile/firebolt/B = new(get_turf(user))
+	B.firer = user
+	B.launch_projectile(A, BP_CHEST)
+	user.visible_message("<span class='danger'>\The [user] shoots out a sphere of flames from their hand!</span>")
+	return ..()
+
+/obj/item/projectile/firebolt
+	name = "firebolt"
+	damage = 50
+	check_armour = "energy"
+	armor_penetration = 48
+	icon_state = "fireball"
+	damage_type = BURN
+
+/obj/item/projectile/firebolt/on_hit(var/atom/A, var/blocked = 0)
+	explosion(A, 0, 1, 2, 2, 0)
+	new /obj/flamer_fire(A.loc, 16, 12, "red", 2)
+
+/spell/hand/charges/firebolt/strong
+	name = "Enhanced Fire Bolt"
+	desc = "Call forth a blast of hellish flame"
+
+	spell_flags = 0
+	charge_max = 600
+	invocation = "opens their hand, which bursts into flames."
+	invocation_type = SpI_EMOTE
+
+	range = 9
+	max_casts = 1
+	compatible_targets = list(/atom)
+	hud_state = "fireball"
+
+/spell/hand/charges/firebolt/strong/cast_hand(var/atom/A,var/mob/user)
+	var/obj/item/projectile/firebolt/strong/B = new(get_turf(user))
+	B.firer = user
+	B.launch_projectile(A, BP_CHEST)
+	user.visible_message("<span class='danger'>\The [user] shoots out a powerful sphere of flames from their hand!</span>")
+	return ..()
+
+/obj/item/projectile/firebolt/strong
+	name = "firebolt"
+	damage = 75
+	check_armour = "energy"
+	armor_penetration = 55
+	icon_state = "fireball"
+	damage_type = BURN
+
+/obj/item/projectile/firebolt/strong/on_hit(var/atom/A, var/blocked = 0)
+	explosion(A, 1, 2, 3, 4, 5)
+	new /obj/flamer_fire(A.loc, 16, 12, "red", 3)
+
+/spell/hand/charges/firebolt/flame
+	name = "Incendiary Fire Bolt"
+	desc = "Sacrifice some of the detonation force for a wall of flames"
+
+	spell_flags = 0
+	charge_max = 600
+	invocation = "opens their hand, which bursts into flames."
+	invocation_type = SpI_EMOTE
+
+	range = 9
+	max_casts = 1
+	compatible_targets = list(/atom)
+	hud_state = "fireball"
+
+/spell/hand/charges/firebolt/flame/cast_hand(var/atom/A,var/mob/user)
+	var/obj/item/projectile/firebolt/flame/B = new(get_turf(user))
+	B.firer = user
+	B.launch_projectile(A, BP_CHEST)
+	user.visible_message("<span class='danger'>\The [user] shoots out a wall of flames from their hand!</span>")
+	return ..()
+
+/obj/item/projectile/firebolt/flame
+	name = "firebolt"
+	damage = 30
+	check_armour = "energy"
+	armor_penetration = 48
+	icon_state = "fireball"
+	damage_type = BURN
+
+/obj/item/projectile/firebolt/flame/on_hit(var/atom/A, var/blocked = 0)
+	explosion(A, 0, 0, 1, 2, 3)
+	new /obj/flamer_fire(A.loc, 16, 12, "red", 6)
+
+/spell/hand/charges/flames
+	name = "Warpfire Blast"
+	desc = "Call forth a wave of Warp flame"
+
+	spell_flags = 0
+	charge_max = 600
+	invocation = "opens their hand, which bursts into green fire."
+	invocation_type = SpI_EMOTE
+
+	range = 7
+	max_casts = 1
+	compatible_targets = list(/atom)
+	hud_state = "wiz_bshard"
+
+/spell/hand/charges/flames/cast_hand(var/atom/A,var/mob/user)
+	var/obj/item/projectile/warpfire/B = new(get_turf(user))
+	B.firer = user
+	B.launch_projectile(A, BP_CHEST)
+	user.visible_message("<span class='danger'>\The [user] unleashes a blast of warp fire!</span>")
+	return ..()

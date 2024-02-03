@@ -75,10 +75,21 @@
 	desc = "it stops you from moving"
 	icon = 'icons/obj/warfare.dmi'
 	plane = ABOVE_OBJ_PLANE
-	layer = BASE_ABOVE_OBJ_LAYER
 	anchored = TRUE
+	layer = BASE_ABOVE_OBJ_LAYER
 	var/health = 100
 
+/obj/structure/warfare/barricade/ex_act(severity)
+	switch(severity)
+		if(1.0)
+			qdel(src)
+			return
+		if(2.0)
+			qdel(src)
+			return
+		if(3.0)
+			if(prob(50))
+				qdel(src)
 
 /obj/structure/warfare/barricade/New()
 	..()

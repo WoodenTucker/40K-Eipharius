@@ -2,6 +2,7 @@
 #define GOD_NURGLE "nurgle"
 #define GOD_SLAANESH "slaanesh"
 #define GOD_TZEENTCH "tzeentch"
+#define GOD_HIVEMIND "hivemind"
 
 // Singleton.
 /datum/heretic_deity
@@ -79,6 +80,20 @@
 	visible_message("[name] takes out a sensual tome from inside their clothes.")
 	src.verbs -= /mob/living/carbon/human/proc/getmanualslaanesh
 	src.put_in_hands(new /obj/item/book/manual/slaanesh_recipes, slot_r_hand)
+
+/mob/living/carbon/human/proc/getmanualtyranid()
+	set name = "Produce Synapse Creature"
+	set category = "Genestealer Cultist"
+	set desc = "Gives Genestealer manual."
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	visible_message("[name] takes out a writhing worm from inside their clothes.")
+	src.verbs -= /mob/living/carbon/human/proc/getmanualtyranid
+	src.put_in_hands(new /obj/item/book/manual/tyranid_recipes, slot_r_hand)
+	
 /*
 Most blessings and curses should be permanent.
 */
@@ -128,12 +143,12 @@ Most blessings and curses should be permanent.
 		message_admins("[usr.key] [usr.name] has reached Favor 60 || Strong Cultist")
 	if(favor >= 100 && favor <= 139)
 		message_admins("[usr.key] [usr.name] has reached Favor 100 || Master Cultist")
-		message_admins("[usr.key] [usr.name] has reached Favor 100 || Master Cultist")
+		//message_admins("[usr.key] [usr.name] has reached Favor 100 || Master Cultist") //Why are these listed multiple times?
 		SEND_SIGNAL(CultMember, COMSIG_CULT_ADD_EFFECT, pick(possible_blessings))
 	if(favor >= 140)
 		message_admins("[usr.key] [usr.name] has reached Favor 140 || Legendary Cultist")
-		message_admins("[usr.key] [usr.name] has reached Favor 140 || Legendary Cultist")
-		message_admins("[usr.key] [usr.name] has reached Favor 140 || Legendary Cultist")
+		//message_admins("[usr.key] [usr.name] has reached Favor 140 || Legendary Cultist")
+		//message_admins("[usr.key] [usr.name] has reached Favor 140 || Legendary Cultist")
 		SEND_SIGNAL(CultMember, COMSIG_CULT_ADD_EFFECT, pick(possible_blessings))
 
 

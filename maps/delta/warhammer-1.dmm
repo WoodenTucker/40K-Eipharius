@@ -591,7 +591,12 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "ck" = (
 /obj/structure/closet/cabinet,
-/obj/item/grenade/spawnergrenade/manhacks,
+/obj/item/grenade/spawnergrenade/manhacks{
+	name = "mysterious grenade"
+	},
+/obj/item/grenade/spawnergrenade/manhacks{
+	name = "mysterious grenade"
+	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
 "cn" = (
@@ -695,10 +700,16 @@
 	job_access_type = null;
 	name = "L1 Access Card"
 	},
-/obj/item/ammo_magazine/handful/shotgun/shotgun_handful,
-/obj/item/ammo_magazine/handful/shotgun/shotgun_handful,
 /obj/item/trash/warfare_can/rat,
 /obj/item/trash/warfare_can/rat,
+/obj/item/gun/projectile/shotgun/doublebarrel{
+	name = "MS Doom";
+	max_shells = 4;
+	desc = "This infernal shotgun seems to hold FOUR shells!";
+	accuracy = 0.5
+	},
+/obj/item/ammo_magazine/handful/shotgun/slug_handful/ms,
+/obj/item/ammo_magazine/handful/shotgun/slug_handful/ms,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -2938,6 +2949,13 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
+/obj/effect/floor_decal/industrial/warning,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -3388,6 +3406,7 @@
 /obj/item/material/shard{
 	color = "grey"
 	},
+/mob/living/simple_animal/hostile/smalldemon/zygote,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -4736,9 +4755,15 @@
 /area/cadiaoutpost/oa/caves/dark)
 "qJ" = (
 /obj/effect/floor_decal/turf/plating,
-/mob/living/simple_animal/hostile/mining_borg/behemoth,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves/undercity)
+/obj/machinery/door/airlock/arbiter{
+	color = "grey";
+	maxhealth = 3000;
+	name = "Groomlake Facility";
+	req_one_access = list()
+	},
+/mob/living/simple_animal/hostile/smalldemon/zygote,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/caves/dark)
 "qK" = (
 /obj/structure/bed/chair{
 	desc = "The faint imprint of a butt can be seen on it's evil surface.";
@@ -5831,8 +5856,9 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
 "ur" = (
-/obj/effect/landmark/start/village/pathfinder{
-	name = "Scavenger"
+/obj/structure/torchwall{
+	dir = 4;
+	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -13885,6 +13911,9 @@
 	},
 /obj/item/archaeological_find/remains/xeno{
 	color = "grey"
+	},
+/obj/effect/landmark/start/village/pathfinder{
+	name = "Scavenger"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -39547,7 +39576,7 @@ MU
 MU
 MU
 MU
-qJ
+MU
 MU
 MU
 MU
@@ -43066,7 +43095,7 @@ XG
 IO
 IO
 IO
-XG
+qJ
 MU
 Wl
 MU
@@ -54646,7 +54675,7 @@ Ih
 Ih
 Ih
 vn
-yx
+ur
 vd
 yx
 Ih
@@ -56891,7 +56920,7 @@ Oe
 AM
 dd
 AM
-ur
+yx
 mN
 yx
 Ih

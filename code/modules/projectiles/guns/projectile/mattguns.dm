@@ -393,8 +393,8 @@
 /obj/item/gun/projectile/automatic/flamer
 	name = "Scorcher"
 	desc = "An incredibly dangerous hand-held flamethrower used often in infiltration or siege operations."
-	icon_state = "flamer"
 	item_state = "flamer"
+	icon_state = "flamer"
 	wielded_item_state = "flamer-wielded"
 	caliber = "flamer"
 	one_hand_penalty = 2
@@ -436,6 +436,13 @@
     else
         icon_state = "flamer-e"
 
+/obj/item/gun/projectile/automatic/flamer/salamander
+	name = "Mark VII Salamander Assault Flamer"
+	desc = "An incredibly dangerous hand-held flamethrower. Used by the Salamanders. More elegant and far more potent than the standard Flamer"
+	str_requirement = 24
+	fire_delay = 12
+	caliber = "flamersally"
+
 /*
 /obj/item/gun/projectile/automatic/flamer/pistol
 	name = "Handheld Scorcher"
@@ -469,7 +476,7 @@
 	gun_type = GUN_LMG //anyone can use this... just not anyone should.
 */ // ABSOLUTELY NO PISTOL FLAMERS.
 
-/obj/item/gun/projectile/automatic/flamer/update_icon()
+/obj/item/gun/projectile/automatic/flamer/pistol/update_icon()
     ..()
     if(ammo_magazine)
         icon_state = "flamerp"
@@ -635,6 +642,18 @@
         icon_state = "cognisLMG-e"
 
 
+/obj/item/gun/projectile/automatic/heavystubber/val
+	name = "Valhallan Heavy Stubber"
+	desc = "A rugged belt-fed stubber custom made for the valhallan guard. This one seems to have been diligently maintained over the years."
+	one_hand_penalty = 1.6
+	accuracy = 1
+	fire_delay = 1.5
+	sales_price = 22
+
+	firemodes = list(
+		list(mode_name="semi-automatic", burst=1, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="4-round bursts", burst=4, fire_delay=4.2, burst_accuracy=list(1,0.5,-1), dispersion=null, automatic = 0),
+		)
 /obj/item/gun/projectile/automatic/heavystubber/villiers
 	name = "Villiers Heavy Stubber"
 	desc = "A rugged belt-fed stubber that is long out of service. This one seems to have been diligently maintained over the years."
@@ -646,7 +665,7 @@
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=1.6, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="2-round bursts", burst=2, fire_delay=3.5, burst_accuracy=list(1,1,1), dispersion=null, automatic = 0), // Villiers perform better in semi then burst
+		list(mode_name="4-round bursts", burst=2, fire_delay=3.5, burst_accuracy=list(1,1,1), dispersion=null, automatic = 0), // Villiers perform better in semi then burst
 		)
 
 // stub rifles, mag fed
@@ -879,7 +898,7 @@
 	name = "Godwyn Mark Vb Pattern Bolter"
 	desc = "The Adeptus Astartes's legendary and destructive Bolter Rifle, This one is painted in XIIIth Chapter Ultramarines's colour scheme."
 	icon_state = "ultrabolter"
-	str_requirement = 21
+	str_requirement = 24
 	w_class = ITEM_SIZE_HUGE
 	force = 30
 	slot_flags = SLOT_BACK|SLOT_S_STORE

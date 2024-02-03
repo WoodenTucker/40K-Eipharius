@@ -257,6 +257,11 @@
 	desc = "A 14.5mm Armour Piercing Discarding Sabot shell."
 	projectile_type = /obj/item/projectile/bullet/rifle/a145/apds
 
+/obj/item/ammo_casing/a145/apds/bos
+	name = "Boscelot shell casing"
+	desc = "An Armour Piercing Discarding Sabot shell."
+	projectile_type = /obj/item/projectile/bullet/rifle/a145/apds/bos
+
 /obj/item/ammo_casing/a762
 	desc = "A 7.62mm bullet casing."
 	caliber = "a762"
@@ -351,6 +356,14 @@
 	spent_icon = "null"
 	caliber = "flamer"
 	projectile_type = /obj/item/projectile/flamer
+
+/obj/item/ammo_casing/flamer/salamander
+	name = "promethium"
+	desc = "Fire ammo isn't deleting properly for some reason. Please don't bug Matt about this, he knows."
+	icon_state = "null"
+	spent_icon = "null"
+	caliber = "flamersally"
+	projectile_type = /obj/item/projectile/flamer/salamander
 
 /obj/item/ammo_casing/boltpistol
 	desc = "A .75 bolt pistol casing."

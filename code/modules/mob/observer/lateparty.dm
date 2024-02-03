@@ -60,7 +60,7 @@
 						new_character.key = attendee //puts ghost in body with new key
 					if("Sekites")
 						message_admins("[attendee] has joined the late party: Sekites.", 0) //msgs jannies
-						to_chat(usr, "<span class='warning'>You are veterans of the chaos warband known commonly referred to as the Sekites or Sons of Sek who serve the Immortal Anarch... Anakwanar Sek. Sent to Eipharius you have been tasked with undermining imperial rule and spreading fear throughout the planet. Find and co-ordinate with the local followers of the ruinous powers and plot an uprising to rival old Horus himself. Do not waste your lives, instead spend the lives of your followers whom you recruit from the planet.</b></font size=3>")
+						to_chat(usr, "<span class='warning'>You are veterans of the chaos warband known commonly referred to as the Sekites or Sons of Sek who serve the Immortal Anarch... Anakwanar Sek. Sent to Messina you have been tasked with undermining imperial rule and spreading fear throughout the planet. Find and co-ordinate with the local followers of the ruinous powers and plot an uprising to rival old Horus himself. Do not waste your lives, instead spend the lives of your followers whom you recruit from the planet.</b></font size=3>")
 						usr.loc = get_turf(locate("landmark*bloodstart")) //where they spawning
 						var/mob/living/carbon/human/Bloodpact/new_character = new(usr.loc)// da mob
 						new_character.key = attendee //puts ghost in body with new key

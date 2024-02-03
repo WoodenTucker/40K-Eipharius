@@ -522,7 +522,7 @@ Area basic template
 	. = ..()
 	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))
 		L.clear_fullscreen("snowfall_heavy_old")
-
+/*
 /area/cadiaoutpost/oa/village/Entered(mob/living/L,  atom/A)
 	. = ..()
 	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/village))//Doesn't work but this does stop the lag.
@@ -532,7 +532,7 @@ Area basic template
 	. = ..()
 	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/village))
 		L.clear_fullscreen("snowfall_heavy_old")
-
+*/
 
 
 //////////////////////////////////////

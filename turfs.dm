@@ -256,7 +256,7 @@
 	name = "water"
 	icon = 'icons/turf/dirt.dmi'//This appears under the water.
 	icon_state = "mud"
-	movement_delay = 2
+	movement_delay = 1
 	mudpit = 1
 	has_coldbreath = TRUE
 	var/has_light = TRUE

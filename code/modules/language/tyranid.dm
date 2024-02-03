@@ -4,6 +4,6 @@
 	speech_verb = "vibrates"
 	colour = "changeling"
 	exclaim_verb = "chatters"
-	key = "h"
+	key = "g"
 	machine_understands = 0
 	flags = RESTRICTED  | NO_STUTTER | HIVEMIND

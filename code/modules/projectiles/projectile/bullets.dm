@@ -386,6 +386,12 @@
 	penetration_modifier = 1
 	penetrating = 3
 
+/obj/item/projectile/bullet/rifle/a145/apds/bos
+	damage = 140
+	armor_penetration = 65
+	penetration_modifier = 1
+	penetrating = 2
+
 /* Miscellaneous */
 
 /obj/item/projectile/bullet/suffocationbullet//How does this even work?

@@ -124,3 +124,7 @@
 	ingredients = list(/obj/item/book/manual)
 	product_path = (/obj/item/melee/Tzbook)
 
+/datum/rune_recipe/tzeentch/tome
+	name = "Tome Refractation"
+	ingredients = list(/obj/item/gun/energy/WarpLens, /obj/item/melee/Tzbook)
+	product_path =  (/obj/item/monster_manual)

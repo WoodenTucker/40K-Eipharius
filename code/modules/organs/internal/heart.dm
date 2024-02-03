@@ -131,6 +131,8 @@
 			if(temp.status & ORGAN_ARTERY_CUT)
 				var/bleed_amount = Floor((owner.vessel.total_volume / (temp.applied_pressure || !open_wound ? 400 : 250))*temp.arterial_bleed_severity)
 				if(bleed_amount)
+					if(CE_BLOODCLOT in owner.chem_effects)
+						bleed_amount *= 0.8 // won't do much, but it'll help
 					if(open_wound)
 						blood_max += bleed_amount
 						do_spray += "the [temp.artery_name] in \the [owner]'s [temp.name]"
@@ -145,6 +147,8 @@
 			if(PULSE_2FAST, PULSE_THREADY)
 				blood_max *= 1.5
 
+		if(CE_BLOODCLOT in owner.chem_effects)
+			blood_max *= 0.7
 		if(CE_STABLE in owner.chem_effects) // inaprovaline
 			blood_max *= 0.8
 
@@ -207,7 +211,7 @@
 	name = "Le pecho de Chaos"
 
 /obj/item/organ/internal/heart/chaos/attack_self(mob/user)
-	var/datum/heretic_deity/k = GOD(input(user, "Choose God") in list(GOD_TZEENTCH, GOD_KHORNE, GOD_NURGLE, GOD_SLAANESH))
+	var/datum/heretic_deity/k = GOD(input(user, "Choose God") in list(GOD_TZEENTCH, GOD_KHORNE, GOD_NURGLE, GOD_SLAANESH, GOD_HIVEMIND))
 	k.join_request(user)
 
 

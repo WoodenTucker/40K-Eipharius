@@ -16,9 +16,26 @@ meteor_act
 		return "hits"
 
 /mob/living/carbon/human/bullet_act(var/obj/item/projectile/P, var/def_zone)
+//	/mob/living/carbon/human = user
 	def_zone = check_zone(def_zone)
 	if(!has_organ(def_zone))
 		return PROJECTILE_FORCE_MISS //if they don't have the organ in question then the projectile just passes by.
+	/*if((user.shielded_energy >= 1) && (P.check_armour == "energy"))
+		var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
+		spark_system.set_up(5, 0, user.loc)
+		spark_system.start()
+		playsound(user.loc, "sparks", 50, 1)
+		START_PROCESSING(SSobj, src)
+		user.visible_message("<span class='warning'>\The [P] refracts, bending into \the [user]'s field.</span>")
+		del(P)
+	if((user.shielded_projectile >= 1) && (P.check_armour == "bullet"))
+		var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
+		spark_system.set_up(5, 0, user.loc)
+		spark_system.start()
+		playsound(user.loc, "sparks", 50, 1)
+		START_PROCESSING(SSobj, src)
+		user.visible_message("<span class='warning'>\The [P] shatters against \the [user]'s field.</span>")
+		del(P)*/
 	//Shields
 	var/shield_check = check_shields(P.damage, P, null, def_zone, "the [P.name]")
 	if(shield_check)
@@ -51,7 +68,7 @@ meteor_act
 
 
 	//Embed or sever artery
-	if(P.can_embed() && !(species.species_flags & SPECIES_FLAG_NO_EMBED) && prob(22.5 + max(penetrating_damage, -10)) && !(prob(50) && (organ.sever_artery())))
+	if(P.can_embed() && !(species.species_flags & SPECIES_FLAG_NO_EMBED) && prob(5.5 + max(penetrating_damage, -10)) && !(prob(20) && (organ.sever_artery())))
 		var/obj/item/material/shard/shrapnel/SP = new()
 		SP.SetName((P.name != "shrapnel")? "[P.name] shrapnel" : "shrapnel")
 		SP.desc = "[SP.desc] It looks like it was fired from [P.shot_from]."

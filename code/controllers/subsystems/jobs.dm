@@ -128,6 +128,13 @@ SUBSYSTEM_DEF(jobs)
 		return 1
 	return 0
 
+/datum/controller/subsystem/jobs/proc/RemoveRole(var/rank)	//making additional slot on the fly
+	var/datum/job/job = GetJob(rank)
+	if(job && job.current_positions <= job.total_positions)
+		job.total_positions = 0
+		return 1
+	return 0
+
 /datum/controller/subsystem/jobs/proc/allow_one_more(var/rank)	//making additional slot on the fly regardless of whether or not the current slots are full.
 	var/datum/job/job = GetJob(rank)
 	if(job)
