@@ -34,4 +34,5 @@
 			playsound(src, 'sound/effects/supermatter.ogg', 100)
 	if(world.time > implode_at)
 		explosion(loc, 0, 1, 3, 4)
+		new /turf/unsimulated/wall/supermatter(get_turf(src))
 		qdel(src)
