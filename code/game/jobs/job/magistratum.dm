@@ -421,6 +421,7 @@
 	/obj/item/paper/administratum/omega = 1,
 	/obj/item/pen = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
+	/obj/item/clothing/accessory/ordinate = 1,
 	)
 
 
