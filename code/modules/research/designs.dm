@@ -832,7 +832,7 @@ other types of metals and chemistry for reagents).
 	name = "Bag of Holding"
 	desc = "Using localized pockets of bluespace this bag prototype offers incredible storage capacity with the contents weighting nothing. It's a shame the bag itself is pretty heavy."
 	id = "bag_holding"
-	req_tech = list(TECH_BLUESPACE = 4, TECH_MATERIAL = 6, TECH_ILLEGAL = 8)
+	req_tech = list(TECH_BLUESPACE = 4, TECH_MATERIAL = 6, TECH_ILLEGAL = 4)
 	materials = list("gold" = 5000, "diamond" = 4500, "uranium" = 1250)
 	build_path = /obj/item/storage/backpack/holding
 	sort_string = "VAFAA"

@@ -928,10 +928,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/ceramic/surgery2,
 /area/cadiaoutpost/oa/medicae)
-"beA" = (
-/obj/item/melee/sword/choppa,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
 "beX" = (
 /obj/structure/table/rack/dark,
 /obj/effect/floor_decal/industrial/outline/red,
@@ -1235,11 +1231,12 @@
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "bpq" = (
-/obj/structure/orkshrine{
-	pixel_y = 14
+/obj/effect/landmark{
+	name = "genestart"
 	},
-/obj/item/pyre/self_lit,
-/turf/simulated/floor/stone,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
 /area/cadiaoutpost/new_hive/caves)
 "bpF" = (
 /obj/effect/floor_decal/newcorner/plating/quarter{
@@ -2586,14 +2583,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
-"cUo" = (
-/obj/item/mecha_parts/mecha_equipment/tool/drill,
-/obj/item/mecha_parts/mecha_equipment/tool/drill,
-/obj/item/mecha_parts/mecha_equipment/tool/drill,
-/obj/structure/table/rack/shelf,
-/obj/item/mecha_parts/mecha_equipment/tool/drill,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
 "cUF" = (
 /obj/machinery/artifact_analyser,
 /obj/effect/decal/cleanable/dirt,
@@ -2676,10 +2665,6 @@
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/new_hive/caves)
-"cZg" = (
-/obj/item/device/boombox,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
 "cZy" = (
 /obj/structure/railing{
 	dir = 4;
@@ -2689,10 +2674,6 @@
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/new_hive/caves)
-"daE" = (
-/obj/item/grenade/frag/high_yield/krak,
-/turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
 "daF" = (
 /obj/machinery/door/unpowered/jail_door{
@@ -4176,11 +4157,6 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"eEJ" = (
-/obj/item/ammo_casing/heat_shell/orkhe,
-/obj/item/gun/launcher/rcl_rifle/ork,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/new_hive/caves)
 "eFc" = (
 /obj/effect/floor_decal/newcorner/purple/corner{
 	dir = 1
@@ -4227,13 +4203,6 @@
 	},
 /obj/random/junk,
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/new_hive/caves)
-"eGS" = (
-/mob/living/simple_animal/hostile/giant_spider/flesh{
-	faction = "ORKZ";
-	name = "Weird Squig"
-	},
-/turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
 "eGY" = (
 /obj/structure/sink{
@@ -4882,10 +4851,6 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"fqC" = (
-/obj/item/pickaxe,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
 "fqW" = (
 /obj/structure/sign/aquilalong,
 /obj/structure/sign/plate/written{
@@ -5861,10 +5826,6 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/new_hive/caves)
-"gpO" = (
-/obj/item/ammo_magazine/flamer,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
 "gqX" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -6510,10 +6471,6 @@
 "gYU" = (
 /turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"gZd" = (
-/obj/item/ammo_magazine/ork/slugga,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/new_hive/caves)
 "gZP" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -7013,10 +6970,6 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"hxZ" = (
-/obj/item/ammo_magazine/ork/slugga,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
 "hym" = (
 /obj/effect/floor_decal/newcorner/stone,
 /turf/simulated/floor/dirty/tough,
@@ -7544,10 +7497,6 @@
 /obj/effect/decal/cleanable/cobweb,
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"ibl" = (
-/obj/structure/orkbanna2,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
 "ibx" = (
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
@@ -7774,10 +7723,6 @@
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"ina" = (
-/obj/item/pickaxe/diamond,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
 "inu" = (
 /obj/structure/closet/hive/iron_c{
 	anchored = 1
@@ -7800,10 +7745,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/medicae)
-"inK" = (
-/obj/mecha/combat/killakan,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
 "inO" = (
 /obj/effect/floor_decal/turf/metal/ten,
 /obj/effect/decal/cleanable/vomit,
@@ -8206,10 +8147,6 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/new_hive/caves)
-"iKc" = (
-/obj/item/ammo_magazine/flamer,
-/turf/simulated/floor/trench,
 /area/cadiaoutpost/new_hive/caves)
 "iKE" = (
 /obj/structure/flora/pottedplant{
@@ -13705,14 +13642,6 @@
 	icon_state = "dark1"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"osP" = (
-/obj/item/melee/sword/choppa{
-	color = "red";
-	name = "fast choppa";
-	weapon_speed_delay = 6
-	},
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/new_hive/caves)
 "osQ" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 4
@@ -14238,12 +14167,6 @@
 /obj/item/reagent_containers/food/drinks/glass2/wine,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
-"oUG" = (
-/obj/item/reagent_containers/hypospray/autoinjector/revive{
-	name = "humie medicines"
-	},
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/new_hive/caves)
 "oVn" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 4
@@ -14484,12 +14407,6 @@
 	},
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"phO" = (
-/obj/effect/landmark{
-	name = "orkstart"
-	},
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/new_hive/caves)
 "phT" = (
 /obj/structure/flora/pottedplant/crystal,
 /obj/machinery/light,
@@ -15627,10 +15544,6 @@
 /obj/machinery/integrated_circuit_printer,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/farm)
-"qqh" = (
-/obj/item/ammo_magazine/ork/shoota,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/new_hive/caves)
 "qqo" = (
 /obj/item/storage/firstaid/surgery,
 /obj/structure/table/steel_reinforced,
@@ -15711,10 +15624,6 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
-"qtX" = (
-/obj/item/device/cassette/orks1,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/new_hive/caves)
 "quu" = (
 /obj/structure/torchwall{
 	dir = 8;
@@ -16392,10 +16301,6 @@
 /obj/structure/bed/roller,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
-"rbD" = (
-/obj/item/ammo_magazine/ork/shoota,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
 "rbF" = (
 /obj/structure/barbwire,
 /turf/simulated/floor/stone,
@@ -16935,10 +16840,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"rBU" = (
-/obj/item/device/cassette/orks1,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
 "rCt" = (
 /obj/effect/floor_decal/newcorner/plating/corner{
 	dir = 4
@@ -17159,10 +17060,6 @@
 /obj/structure/closet/crate,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
-"rQR" = (
-/obj/structure/orkbanna,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
 "rRt" = (
 /obj/structure/table/rack/dark,
 /obj/item/stack/material/steel/ten,
@@ -17783,9 +17680,6 @@
 "sDG" = (
 /turf/simulated/floor/fancyfloor/carpet,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"sDX" = (
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/new_hive/caves)
 "sEo" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 8
@@ -18137,10 +18031,6 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
-"sUH" = (
-/obj/mecha/combat/deffdread,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
 "sUV" = (
 /turf/simulated/floor/fancyfloor/carpet/grey{
 	dir = 5
@@ -18718,13 +18608,6 @@
 /obj/structure/bed/chair,
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"tBU" = (
-/obj/effect/landmark{
-	name = "genestart"
-	},
-/obj/structure/catwalkrust/blocked,
-/turf/simulated/floor/exoplanet/water/shallow/lightless,
-/area/cadiaoutpost/new_hive/caves)
 "tBY" = (
 /obj/structure/bed{
 	desc = "A mass produced sleeping mat, now with actual cloth!";
@@ -19544,13 +19427,6 @@
 /obj/random/maintenance/clean,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
-"uyR" = (
-/obj/effect/landmark{
-	name = "genestart"
-	},
-/obj/structure/catwalkrust/blocked,
-/turf/simulated/floor/tiled,
-/area/cadiaoutpost/new_hive/caves)
 "uzj" = (
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 1
@@ -20893,13 +20769,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"weX" = (
-/obj/item/pyre/self_lit{
-	invisibility = 100;
-	name = "Invisible Light"
-	},
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/new_hive/caves)
 "wfW" = (
 /obj/structure/table/rack/dark,
 /obj/item/clothing/accessory/storage/bandolier,
@@ -21722,11 +21591,6 @@
 /obj/machinery/chemical_dispenser/full,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
-"wXG" = (
-/obj/structure/table/rack/shelf,
-/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/explosive,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
 "wXM" = (
 /obj/item/paper_bin,
 /obj/item/pen,
@@ -21935,10 +21799,6 @@
 /obj/structure/sign/medical1,
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
-"xgu" = (
-/obj/item/pyre/self_lit,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
 "xgA" = (
 /obj/structure/table/rack/dark,
 /obj/item/reagent_containers/food/drinks/bottle/caddis/supreme,
@@ -22044,10 +21904,6 @@
 /mob/living/simple_animal/hostile/shadow,
 /turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
-"xiJ" = (
-/obj/item/gun/launcher/rcl_rifle/ork,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/new_hive/caves)
 "xiT" = (
 /obj/machinery/crystal_static/orange,
 /obj/item/newore/gems/topaz,
@@ -22096,11 +21952,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"xll" = (
-/obj/item/gun/launcher/rcl_rifle/ork,
-/obj/item/ammo_casing/heat_shell/orkhe,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/new_hive/caves)
 "xlm" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/turf/lfloorscorched1,
@@ -23026,10 +22877,6 @@
 	},
 /turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
-"ymd" = (
-/obj/item/reagent_containers/hypospray/autoinjector/blood,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/new_hive/caves)
 
 (1,1,1) = {"
 slE
@@ -50653,12 +50500,12 @@ tOB
 tOB
 tOB
 tOB
-slE
-slE
-slE
-slE
-slE
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -50902,16 +50749,16 @@ tOB
 tOB
 tOB
 tOB
-slE
-slE
-slE
-slE
-slE
-cZg
-hqB
-cZg
-hqB
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -51155,17 +51002,17 @@ tOB
 tOB
 tOB
 tOB
-slE
-slE
-hqB
-slE
-rQR
-rBU
-hqB
-qtX
-hqB
-xgu
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -51408,18 +51255,18 @@ tOB
 tOB
 tOB
 tOB
-slE
-slE
-hqB
-hqB
-hqB
-hqB
-ymd
-sDX
-sDX
-hqB
-hqB
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -51661,21 +51508,21 @@ tOB
 tOB
 tOB
 tOB
-slE
-slE
-slE
-gpO
-hqB
-sDX
-sDX
-oUG
-sDX
-hqB
-slE
-slE
-slE
-slE
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -51914,23 +51761,23 @@ tOB
 tOB
 tOB
 tOB
-slE
-slE
-bpq
-hqB
-oUG
-sDX
-eEJ
-sDX
-phO
-beA
-hqB
-wXG
-hqB
-hqB
-inK
-slE
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -52167,24 +52014,24 @@ tOB
 tOB
 tOB
 tOB
-slE
-slE
-hqB
-qqh
-sDX
-sDX
-qqh
-sDX
-oUG
-gpO
-hqB
-hqB
-daE
-hqB
-hqB
-hqB
-slE
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -52420,25 +52267,25 @@ tOB
 tOB
 tOB
 tOB
-slE
-hqB
-hqB
-hqB
-sDX
-weX
-phO
-gZd
-sDX
-sDX
-hqB
-rbD
-hqB
-eGS
-hqB
-hqB
-ibl
-slE
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 slE
 slE
 tOB
@@ -52673,25 +52520,25 @@ tOB
 tOB
 tOB
 tOB
-slE
-hxZ
-sDX
-sDX
-xll
-ymd
-iKc
-sDX
-sDX
-sDX
-sDX
-xiJ
-hqB
-hqB
-hqB
-sUH
-hqB
-hqB
-ina
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 slE
 slE
@@ -52926,25 +52773,25 @@ tOB
 tOB
 tOB
 tOB
-slE
-rbD
-sDX
-sDX
-sDX
-qqh
-sDX
-sDX
-oUG
-sDX
-rbD
-hqB
-hxZ
-hqB
-hqB
-hqB
-hqB
-hqB
-ina
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -53179,25 +53026,25 @@ tOB
 tOB
 tOB
 tOB
-slE
-hqB
-oUG
-sDX
-oUG
-osP
-ymd
-sDX
-eEJ
-hqB
-hqB
-hqB
-hqB
-hqB
-hqB
-hqB
-hqB
-hqB
-ina
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -53432,25 +53279,25 @@ tOB
 tOB
 tOB
 tOB
-slE
-hqB
-hqB
-iKc
-gZd
-sDX
-hqB
-hqB
-hqB
-hqB
-hqB
-daE
-eGS
-hqB
-hqB
-hqB
-slE
-slE
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 slE
 slE
 tOB
@@ -53685,23 +53532,23 @@ tOB
 tOB
 tOB
 tOB
-slE
-bpq
-hqB
-hqB
-rbD
-hxZ
-hqB
-fqC
-slE
-hqB
-hqB
-cUo
-hqB
-hqB
-ibl
-slE
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -53938,21 +53785,21 @@ tOB
 tOB
 tOB
 tOB
-slE
-slE
-slE
-beA
-hxZ
-hqB
-rbD
-rQR
-slE
-slE
-bpq
-slE
-slE
-slE
-slE
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -54194,8 +54041,8 @@ tOB
 tOB
 tOB
 tOB
-slE
-slE
+tOB
+tOB
 slE
 slE
 slE
@@ -56764,7 +56611,7 @@ tpQ
 nSl
 oCQ
 gDl
-uyR
+gDl
 gDl
 oCQ
 nSl
@@ -58024,7 +57871,7 @@ lPf
 lPf
 lPf
 lPf
-tBU
+lSR
 xtA
 top
 top
@@ -59293,7 +59140,7 @@ tpQ
 ljC
 oCQ
 gDl
-uyR
+gDl
 gDl
 oCQ
 ljC
@@ -74817,7 +74664,7 @@ jGb
 jGb
 jGb
 jGb
-iZm
+bpq
 iZm
 iZm
 jGb
@@ -76336,7 +76183,7 @@ jGb
 mWl
 jGb
 geu
-iZm
+bpq
 jGb
 tOB
 jGb

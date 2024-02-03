@@ -898,7 +898,7 @@
 	name = "Godwyn Mark Vb Pattern Bolter"
 	desc = "The Adeptus Astartes's legendary and destructive Bolter Rifle, This one is painted in XIIIth Chapter Ultramarines's colour scheme."
 	icon_state = "ultrabolter"
-	str_requirement = 21
+	str_requirement = 24
 	w_class = ITEM_SIZE_HUGE
 	force = 30
 	slot_flags = SLOT_BACK|SLOT_S_STORE

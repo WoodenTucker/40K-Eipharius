@@ -122,7 +122,7 @@
 //		H.witchblood() //Psyker Enforcers don't exist
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You're the local administrative ordinate, enforce the laws and mandates of the Administratum. ")
+		to_chat(H, "<span class='notice'><b><font size=3>You're the local administrative ordinate, enforce the laws and mandates of the Administratum. Hired on personally by Prefectus Cornelius Decker who mentored you in the ways of the Adeptus Adminstratum. 'We do not traffic in the treachery of speech Scribe! Only bonds! Bonds! Chains of ink and parchment, unbreakable... we shackle The Imperium of Man to it's glorious purpose. Purity through procedure.")
 
 
 /datum/job/enforcer
