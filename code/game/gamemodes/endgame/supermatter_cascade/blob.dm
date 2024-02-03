@@ -112,4 +112,8 @@
 	if(MayConsume(AM))
 		qdel(AM)
 
+/turf/unsimulated/wall/supermatter/warp
+	name = "Warp Rift"
+	desc = "Run."
+
 #undef MayConsume
