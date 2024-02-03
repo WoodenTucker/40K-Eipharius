@@ -1580,7 +1580,7 @@
 /area/cadiaoutpost/new_hive/caves)
 "bLH" = (
 /obj/structure/statue/prayer{
-	pixel_y = 30;
+	pixel_y = 31;
 	pixel_x = 1
 	},
 /obj/structure/flora/yes/plant,
@@ -2891,7 +2891,7 @@
 "dmN" = (
 /obj/structure/statue/prayer{
 	dir = 4;
-	pixel_y = 30;
+	pixel_y = 31;
 	pixel_x = -1
 	},
 /obj/structure/flora/yes/plant,
@@ -6130,7 +6130,7 @@
 "gEU" = (
 /obj/structure/statue/prayer{
 	dir = 4;
-	pixel_y = 30;
+	pixel_y = 31;
 	pixel_x = -1
 	},
 /obj/structure/table/graf/wood_office_table{
@@ -13007,8 +13007,10 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "nKM" = (
-/obj/item/exploration_loot/odd_book,
 /obj/structure/table/graf/polished_table,
+/obj/item/book/manual/ministorum/orders{
+	pixel_y = 5
+	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "nLi" = (
@@ -13265,7 +13267,7 @@
 /obj/item/card/id/key/grand/monastary{
 	access = list(213,211)
 	},
-/obj/item/book/manual/medical_diagnostics_manual,
+/obj/item/book/manual/ministorum/prayers,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "nXg" = (
@@ -13577,10 +13579,7 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "omA" = (
 /obj/structure/table/graf/polished_table,
-/obj/item/book/manual{
-	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
-	name = "Lectitio Divinitatus"
-	},
+/obj/item/book/manual/ministorum/celestine,
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "omD" = (
@@ -13831,7 +13830,7 @@
 /area/cadiaoutpost/oa/service/chapel/recovery)
 "oAx" = (
 /obj/structure/statue/prayer{
-	pixel_y = 30;
+	pixel_y = 31;
 	pixel_x = 1
 	},
 /obj/structure/table/graf/wood_office_table{
@@ -13839,8 +13838,9 @@
 	dir = 4;
 	pixel_y = 2
 	},
-/obj/item/exploration_loot/imperial_book{
-	pixel_y = 4
+/obj/item/book/manual/ministorum/prayers{
+	pixel_y = 5;
+	pixel_x = 12
 	},
 /turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
