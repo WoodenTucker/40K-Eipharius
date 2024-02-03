@@ -14,7 +14,7 @@
 /obj/item/grenade/vortex/detonate()
 	..()
 	START_PROCESSING(SSobj, src)
-	implode_at = world.time + 12 SECONDS
+	implode_at = world.time + 14 SECONDS
 	update_icon()
 	playsound(src, 'sound/weapons/wave.ogg', 100)
 
@@ -30,8 +30,8 @@
 				var/mob/M = loc
 				M.drop_from_inventory(src)
 			forceMove(get_turf(src))
-	playsound(src, 'sound/effects/supermatter.ogg', 100)
-	supermatter_pull(src, world.view, STAGE_FIVE)
+			supermatter_pull(src, world.view, STAGE_FIVE)
+			playsound(src, 'sound/effects/supermatter.ogg', 100)
 	if(world.time > implode_at)
 		explosion(loc, 0, 1, 3, 4)
 		qdel(src)
