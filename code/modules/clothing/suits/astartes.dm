@@ -49,19 +49,19 @@
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/astartes/ultramarine
-	name = "Indomitus Pattern Terminator Power Armor"
+	name = "Astartes Mark VII Power Armour"
 	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XIIIth Chapter, Ultramarines."
 	icon_state = "ultrasuit"
 	item_state = "ultrasuit"
 
 /obj/item/clothing/suit/armor/astartes/ultramarinenew
-	name = "Indomitus Pattern Terminator Power Armor"
+	name = "Astartes Mark VII Power Armour"
 	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XIIIth Chapter, Ultramarines."
 	icon_state = "ultrac"
 	item_state = "ultrac"
 
 /obj/item/clothing/suit/armor/astartes/ultramarine/terminator
-	name = "Astartes Mark VII Power Armour"
+	name = "Indomitus Pattern Terminator Power Armor"
 	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XIIIth Chapter, Ultramarines."
 	icon_state = "ultraterm"
 	item_state = "ultraterm"
