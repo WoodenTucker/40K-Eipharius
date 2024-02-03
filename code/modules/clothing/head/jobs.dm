@@ -222,6 +222,16 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/head/helmet/guardhelmet/patrol/ordinate
+	name = "Ordinate Hat"
+	desc = "A humble hat for the administratum ordinate."
+	icon_state = "ordinate"
+	item_state = "ordinate"
+	armor = list(melee = 20, bullet = 27, laser = 27, energy = 35, bomb = 35, bio = 50, rad = 50)
+	siemens_coefficient = 0.6
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 /obj/item/clothing/head/helmet/guardhelmet/mordian
 	name = "Mordian Cap"
 	desc = "A patrol cap worn by Mordian Iron Guardsman."

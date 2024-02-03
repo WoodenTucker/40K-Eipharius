@@ -84,6 +84,47 @@
 
 		to_chat(H, "<span class='notice'><b><font size=3>You're the local detective, a planetary investigator hired by the Governor to solve crimes. ")
 
+/datum/job/ordinate
+	title = "Administratum Ordinate"
+	head_position = 1
+	supervisors = "The Administratum"
+	total_positions = 1
+	spawn_positions = 1
+	social_class = SOCIAL_CLASS_HIGH
+	selection_color = "#f0ac25"
+	outfit_type = /decl/hierarchy/outfit/job/ig/ordinate
+	auto_rifle_skill = 9
+	semi_rifle_skill = 9
+	sniper_skill = 9
+	shotgun_skill = 10
+	lmg_skill = 9
+	smg_skill = 9
+	cultist_chance = 8
+	can_be_in_squad = FALSE
+	open_when_dead = FALSE
+	department_flag = INQ
+	latejoin_at_spawnpoints = TRUE
+	access = list(1984, 356, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village)
+
+
+	announced = FALSE
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.get_idcard()?.access = list(1984, 356, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village)
+		H.fully_replace_character_name("Ordinate [current_name]")
+		H.set_trait(new/datum/trait/death_tolerant())
+		H.add_stats(rand(16,19), rand(13,17), rand(13,17), rand(10,13)) //meant to be a brute keeping the plebs in line
+		H.add_skills(rand(9,10),rand(7,10),rand(3,6),3,rand(2,5)) //melee, ranged, med, eng, surgery
+		H.assign_random_quirk()
+		H.set_trait(new/datum/trait/death_tolerant())
+//		H.witchblood() //Psyker Enforcers don't exist
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
+		H.warfare_faction = IMPERIUM
+		to_chat(H, "<span class='notice'><b><font size=3>You're the local administrative ordinate, enforce the laws and mandates of the Administratum. ")
+
+
 /datum/job/enforcer
 	title = "Enforcer" // Cult. Criminal. Loyal.
 	supervisors = "the Planetary Marshal"
@@ -291,6 +332,7 @@
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/paper/administratum/omega = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
 	/obj/item/gun/energy/taser = 1,
 	)
@@ -322,6 +364,7 @@
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,
 	/obj/item/paper/administratum/vermillion = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
 	)
 
@@ -339,6 +382,7 @@
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	r_pocket = /obj/item/storage/box/coin
 	pda_slot = null
+	head = /obj/item/clothing/head/helmet/guardhelmet/patrol
 	l_ear = /obj/item/device/radio/headset/entertainment
 	suit_store = null
 	backpack_contents = list(
@@ -348,8 +392,37 @@
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,
 	/obj/item/paper/administratum/omega = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
 	)
+
+/decl/hierarchy/outfit/job/ig/ordinate
+	name = OUTFIT_JOB_NAME("Administratum Ordinate")
+	uniform = /obj/item/clothing/under/rank/marshal
+	head = /obj/item/clothing/head/helmet/guardhelmet/patrol/ordinate
+	shoes = /obj/item/clothing/shoes/prac_boots
+	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
+	r_pocket = /obj/item/device/flashlight/lantern
+	suit = /obj/item/clothing/suit/storage/det_trench/administratum
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
+	back = /obj/item/storage/backpack/satchel/warfare
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	belt = /obj/item/gun/energy/las/laspistol/militarum/lucius
+	id_type = /obj/item/card/id/dog_tag/guardsman
+	r_pocket = /obj/item/storage/box/coin
+	pda_slot = null
+	l_ear = /obj/item/device/radio/headset/entertainment
+	suit_store = null
+	backpack_contents = list(
+	/obj/item/gun/energy/taser = 1,
+	/obj/item/handcuffs = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/twenty = 1,
+	/obj/item/paper/administratum/omega = 1,
+	/obj/item/pen = 1,
+	/obj/item/paper/administratum/weapon4 = 1,
+	)
+
 
 /decl/hierarchy/outfit/job/ig/cadet
 	name = OUTFIT_JOB_NAME("Enforcer Cadet")
@@ -376,6 +449,7 @@
 	/obj/item/ammo_box/shotgun/stunshell = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/paper/administratum/theta = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/weapon3 = 1,
 	)
 
@@ -408,6 +482,7 @@
 	/obj/item/ammo_magazine/bolt_pistol_magazine/ms = 1,
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 1,
 	/obj/item/paper/administratum/vermillion = 1,
+	/obj/item/pen = 1,
 	/obj/item/paper/administratum/weapon5 = 1,
 	/obj/item/stack/thrones2/twenty = 1,
 	)
