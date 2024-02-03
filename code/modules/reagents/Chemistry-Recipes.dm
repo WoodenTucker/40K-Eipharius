@@ -1595,6 +1595,18 @@
 	result = /datum/reagent/atepoine
 	required_reagents = list(/datum/reagent/tricordrazine = 1, /datum/reagent/tramadol = 1) //we'll see if this is tough enough
 	result_amount = 5
+	
+/datum/chemical_reaction/bloodclot
+	name = "Anohemolytite"
+	result = /datum/reagent/dexalin
+	required_reagents = list (/datum/reagent/inaprovaline = 1, /datum/reagent/bicaridine = 1, /datum/reagent/iron = 1)
+	result_amount = 3
+
+/datum/chemical_reaction/mutetoxin
+	name = "Nulloratotoxin"
+	result = /datum/reagent/mutetoxin
+	required_reagents = list(/datum/reagent/mercury = 1, /datum/reagent/cryptobiolin = 1, /datum/reagent/carbon = 1)
+	result_amount = 3
 
 /datum/chemical_reaction/trueblood
 	name = "True Blood"

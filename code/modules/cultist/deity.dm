@@ -80,6 +80,20 @@
 	visible_message("[name] takes out a sensual tome from inside their clothes.")
 	src.verbs -= /mob/living/carbon/human/proc/getmanualslaanesh
 	src.put_in_hands(new /obj/item/book/manual/slaanesh_recipes, slot_r_hand)
+
+/mob/living/carbon/human/proc/getmanualtyranid()
+	set name = "Produce Synapse Creature"
+	set category = "Genestealer Cultist"
+	set desc = "Gives Genestealer manual."
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	visible_message("[name] takes out a writhing worm from inside their clothes.")
+	src.verbs -= /mob/living/carbon/human/proc/getmanualtyranid
+	src.put_in_hands(new /obj/item/book/manual/tyranid_recipes, slot_r_hand)
+	
 /*
 Most blessings and curses should be permanent.
 */

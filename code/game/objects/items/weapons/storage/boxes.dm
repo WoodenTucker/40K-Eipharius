@@ -534,10 +534,18 @@
 /obj/item/storage/box/ifak/advanced
 	name = "AIFAK"
 	desc = "An Advanced Individual First Aid Kit, intended for elite forces."
-	icon_state = "ifak"
+	icon_state = "aifak"
 	startswith = list(/obj/item/bandage_pack, /obj/item/tourniquet, /obj/item/reagent_containers/hypospray/autoinjector/morphine, /obj/item/suture, /obj/item/wirecutters, /obj/item/reagent_containers/hypospray/autoinjector/blood, /obj/item/reagent_containers/hypospray/autoinjector/martyr)
 	w_class = ITEM_SIZE_SMALL
 	max_storage_space = 16
+
+/obj/item/storage/box/ifak/advanced/astartes
+	name = "AIFAK"
+	desc = "An Advanced Individual First Aid Kit, intended for the Adeptus Astartes."
+	icon_state = "aifak"
+	startswith = list(/obj/item/stack/medical/advanced/bruise_pack, /obj/item/tourniquet/advanced = 2, /obj/item/reagent_containers/hypospray/autoinjector/astartes = 2)
+	w_class = ITEM_SIZE_SMALL
+	max_storage_space = 6
 
 /obj/item/storage/box/coin
 	name = "coin pouch"

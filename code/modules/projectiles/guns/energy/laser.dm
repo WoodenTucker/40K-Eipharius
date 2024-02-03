@@ -890,7 +890,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	name = "astartes plasma pistol"
-	desc = "A plasma pistol. Great for dealing with threats swiftly. It has an overheat scale and on the end of it is written 'Boom!'."
+	desc = "An oversized plasma pistol. Great for dealing with threats swiftly. It has an overheat scale. It has improved vents and capacitors. "
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "ppistol"
 	item_state = "plasmapistol"
@@ -906,7 +906,9 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	charge_cost = 350
 	wielded_item_state = "plasmapistol"
-	sales_price = 0
+	plasma_overheat_decay = 4 // The cooling of the gun per tick
+	plasma_overheat_max = 250 // When the gun exploads
+	sales_price = 100
 
 	firemodes = list(
 		list(mode_name="ATAP", fire_delay=14.5, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol, charge_cost=350),

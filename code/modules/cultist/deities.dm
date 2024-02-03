@@ -129,7 +129,10 @@
 	status_icon_state = "genestealer"
 	rune_type = /obj/effect/cleanable/heretic_rune/hivemind
 	faction = "Tyranids"
-	inherent_verbs = list(/mob/living/carbon/human/proc/givegenestuff)
+	inherent_verbs = list(
+	/mob/living/carbon/human/proc/draw_rune,
+	/mob/living/carbon/human/proc/getmanualtyranid,
+	/mob/living/carbon/human/proc/givegenestuff)
 	rune_recipes = list(
 						/datum/rune_recipe/hivemind/biomass,
 						/datum/rune_recipe/hivemind/biomass/organ,
@@ -156,7 +159,6 @@
 			src.bladder = -INFINITY
 			src.bowels = -INFINITY //Tyranid bioengineering's finest.
 			src.thirst = INFINITY
-			src.nutrition = INFINITY
 			src.verbs -= /mob/living/carbon/human/proc/givegenestuff //removes verb at the end so they can't spam it for whatever reason
 			client?.color = null
 			to_chat(src, "<span class='notice'>Check your languages for the Hivemind! The default option is .g and you can switch it in your IC tab.</span>")

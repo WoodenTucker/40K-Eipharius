@@ -190,8 +190,8 @@
 	desc = "A nanoblood injector. Do not use more than 1 injectors in close sucession.."
 	icon_state = "n"
 
-	amount_per_transfer_from_this = 50
-	volume = 200
+	amount_per_transfer_from_this = 52 // 5 Uses
+	volume = 210
 	starts_with = list(/datum/reagent/bicaridine =5, /datum/reagent/kelotane = 5, /datum/reagent/nanoblood = 200)
 
 /obj/item/reagent_containers/hypospray/autoinjector/blood/large
@@ -200,9 +200,9 @@
 	icon_state = "n"
 	w_class = ITEM_SIZE_NORMAL
 
-	amount_per_transfer_from_this = 50
-	volume = 500
-	starts_with = list(/datum/reagent/bicaridine =12, /datum/reagent/kelotane = 12, /datum/reagent/nanoblood = 500)
+	amount_per_transfer_from_this = 53 // 10 Uses
+	volume = 530
+	starts_with = list(/datum/reagent/bicaridine =15, /datum/reagent/kelotane = 15, /datum/reagent/nanoblood = 500)
 
 /obj/item/reagent_containers/hypospray/autoinjector/morphine
 	name = "morphine syrette"
@@ -220,6 +220,8 @@
 	name = "Tissue Rebuilder syrette"
 	icon_state = "tau_closed"
 	starts_with = list(/datum/reagent/tr = 10)
+	amount_per_transfer_from_this = 10
+	volume = 10
 	inject_sound = 'sound/items/syrette_inject.ogg'
 
 /obj/item/reagent_containers/hypospray/autoinjector/tau/update_icon()
@@ -227,6 +229,22 @@
 		icon_state = "tau_closed"
 	else
 		icon_state = "tau_open"
+
+/obj/item/reagent_containers/hypospray/autoinjector/astartes
+	name = "Biomend Injector"
+	desc = "A highly advanced injector used by the Adeptus Astartes in battle. Contains a healing mix, painkillers, and nanoblood to ensure survival in the harshest of conditions."
+	icon_state = "borghypo"
+	starts_with = list(/datum/reagent/bicaridine = 15, /datum/reagent/dermaline = 10, /datum/reagent/tramadol/oxycodone = 15, /datum/reagent/nanoblood = 200, /datum/reagent/bloodclot = 10)
+	amount_per_transfer_from_this = 250
+	volume = 250
+	inject_sound = 'sound/items/syrette_inject.ogg'
+	w_class = ITEM_SIZE_TINY
+
+/obj/item/reagent_containers/hypospray/autoinjector/astartes/update_icon()
+	if(reagents.total_volume > 0)
+		icon_state = "borghypo"
+	else
+		icon_state = "borghypo_closed"
 
 /obj/item/reagent_containers/glass/ampule
 	name = "ampule"
