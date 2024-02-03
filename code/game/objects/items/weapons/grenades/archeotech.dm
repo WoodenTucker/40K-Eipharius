@@ -28,8 +28,8 @@
 		if(!isturf(loc))
 			if(ismob(loc))
 	 			var/mob/M = loc
-	 				M.drop_from_inventory(src)
-	 			forceMove(get_turf(src))
+	 			M.drop_from_inventory(src)
+	 		forceMove(get_turf(src))
 		/turf/unsimulated/wall/supermatter/warp/W = get_turf(src)
 		supermatter_pull(src, world.view, STAGE_FIVE)
 		playsound(src, 'sound/effects/supermatter.ogg', 100)
