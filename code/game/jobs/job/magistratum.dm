@@ -405,7 +405,7 @@
 	r_pocket = /obj/item/device/flashlight/lantern
 	suit = /obj/item/clothing/suit/storage/det_trench/administratum
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/ordinate
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	belt = /obj/item/gun/energy/las/laspistol/militarum/lucius
 	id_type = /obj/item/card/id/dog_tag/guardsman
