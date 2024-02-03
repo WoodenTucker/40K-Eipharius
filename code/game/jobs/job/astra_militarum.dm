@@ -1675,20 +1675,20 @@ datum/job/ig/bullgryn
 
 GLOBAL_LIST_INIT(lone_thoughts, list(
 		"Why are we still here... just to suffer?",
-		"We fight to win, and that's all that matters.",
+		"We fight our fabulous queen KARL, and that's all that matters.",
 		"Why we don't get any more reinforcements?",
-		"We have not gotten any orders from segmentum command in months...",
-		"Did something happen while we were holding this outpost?",
+		"LENNEEEEEEEEH! WHERE ARE YOU LENNY?",
+		"What do you call an arsonist? A flamer enthusiast -- ehey!",
 		"Is there any reason to keep fighting?",
-		"It's middle of summer... Why it's so cold?",
+		"It's middle of winter... why is Inquisitor Rex unclothed?",
 		"Greg died last night.",
-		"I do not want to die.",
+		"The british are coming...",
 		"There is no hope... anymore...",
 		"Is any of this real?",
-		"My teeth hurt.",
-		"I am not ready to die.",
+		"My teeth hurt. Should sell them to an ork...",
+		"I hear the Governor has a 'diplomatic' relationship with the Tau...",
 		"I don't remember joining the military...",
-		"Does the Emperor truly protect?",
+		"Does the Emperor truly protect papa Grue?",
 		"I hope the Inquisitor doesn't find my Eldar Mommy fan-fiction",))
 
 /mob/living/proc/assign_random_quirk()

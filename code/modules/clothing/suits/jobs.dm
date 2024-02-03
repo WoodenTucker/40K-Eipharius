@@ -142,6 +142,14 @@
 	allowed = list(/obj/item/paper,/obj/item/paper_bundle,/obj/item/pen,/obj/item/device/taperecorder)
 	armor = list(melee = 17, bullet = 25, laser = 25, energy = 5, bomb = 10, bio = 10, rad = 10)
 
+/obj/item/clothing/suit/storage/det_trench/administratum
+	name = "Administratum Robes"
+	icon_state = "ordinate"
+	desc = "Bulky layered robes, belonging to a high-ranking member of the Adpetus Administratum."
+	allowed = list(/obj/item/paper,/obj/item/paper_bundle,/obj/item/pen,/obj/item/device/taperecorder)
+	armor = list(melee = 17, bullet = 25, laser = 25, energy = 5, bomb = 10, bio = 10, rad = 10)
+
+
 //Forensics
 /obj/item/clothing/suit/storage/forensics
 	name = "jacket"

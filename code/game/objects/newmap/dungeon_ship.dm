@@ -213,7 +213,7 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	desc = "<span class='danger'>An ancient grimorie, it's surface is made out of human skin and the words are written in human blood, the knowledge this book has is from millenia ago, right from the dark age of technology , is it really worth it to study such cursed artifact ?</span>"
 	icon = 'icons/map_project/fluff_items.dmi'
 	icon_state = "grimoire1"
-	origin_tech = list(TECH_MATERIAL = 7, TECH_ENGINEERING = 7, TECH_PHORON = 7, TECH_POWER = 7, TECH_BLUESPACE = 7, TECH_BIO = 7, TECH_COMBAT = 7, TECH_MAGNET = 7, TECH_DATA = 7, TECH_ILLEGAL = 9, TECH_ARCANE = 9)
+	origin_tech = list(TECH_MATERIAL = 5, TECH_ILLEGAL = 9, TECH_ARCANE = 9)
 	sales_price = 300 // The price for knowledge
 
 
