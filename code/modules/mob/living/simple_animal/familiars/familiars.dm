@@ -16,37 +16,11 @@
 
 	var/list/wizardy_spells = list()
 
-
 /mob/living/simple_animal/familiar/New()
 	..()
-	add_language(LANGUAGE_GALCOM)
-	offer_mob()
+	add_language(LANGUAGE_LOW_GOTHIC)
 	for(var/spell in wizardy_spells)
 		src.add_spell(new spell, "const_spell_ready")
-
-	/mob/living/simple_animal/familiar/proc/request_player() //reqs the player
-	for(var/mob/observer/ghost/O in GLOB.player_list)
-		if(O.client)
-			question(O.client)
-
-	/mob/living/simple_animal/familiar/proc/question(var/client/C) //asks the questions
-	if(!C)
-		return FALSE
-	var/response = alert(C, "A foul familiar from the warp has been summoned. Will you reside within it?", "Familiar", "Yes", "No",)
-	if(!C || ckey)
-		return FALSE
-	if(response == "Yes")
-		transfer_personality(C)
-		return TRUE
-	return FALSE
-
-	/mob/living/simple_animal/familiar/proc/transfer_personality(var/client/candidate) //puts the guy in the place
-
-		if(!candidate)
-			return
-
-		src.mind = candidate.mob.mind
-		src.ckey = candidate.ckey
 
 /mob/living/simple_animal/familiar/carcinus
 	name = "Carcinus"
