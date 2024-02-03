@@ -32,7 +32,7 @@
 			forceMove(get_turf(src))
 			supermatter_pull(src, world.view, STAGE_FIVE)
 			playsound(src, 'sound/effects/supermatter.ogg', 100)
+			new /turf/unsimulated/wall/supermatter/warp/W(get_turf(src))
 	if(world.time > implode_at)
 		explosion(loc, 0, 1, 3, 4)
-		new /turf/unsimulated/wall/supermatter(get_turf(src))
 		qdel(src)
