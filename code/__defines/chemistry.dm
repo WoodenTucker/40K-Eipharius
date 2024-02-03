@@ -33,6 +33,7 @@
 #define CE_ALCOHOL_TOXIC "alcotoxic"    // Liver damage
 #define CE_SPEEDBOOST    "gofast"       // Hyperzine
 #define CE_SLOWDOWN      "goslow"       // Slowdown
+#define CE_BLOODCLOT     "bloodclot"	// Slows bloodloss
 #define CE_PULSE         "xcardic"      // increases or decreases heart rate
 #define CE_NOPULSE       "heartstop"    // stops heartbeat
 #define CE_ANTITOX       "antitox"      // Dylovene

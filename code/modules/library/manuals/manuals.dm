@@ -501,6 +501,38 @@
 			</html>
 			"}
 
+/obj/item/book/manual/tyranid_recipes
+	name = "Synapse Worm"
+	icon_state ="tyranidbook"
+
+	dat = {"<html>
+				<head>
+				<style>
+				h1 {font-size: 18px; margin: 15px 0px 5px;}
+				h2 {font-size: 15px; margin: 15px 0px 5px;}
+				h3 {font-size: 13px; margin: 15px 0px 5px;}
+				li {margin: 2px 0px 2px 15px;}
+				ul {margin: 5px; padding: 0px;}
+				ol {margin: 5px; padding: 0px 15px;}
+				body {font-size: 13px; font-family: Verdana;}
+				</style>
+				</head>
+				<body>
+
+				<h1>Rites of The Star Children</h1>
+				The sacred rites and practices of the devoted followers of the Star Children.
+
+				<h2>Biomass Conversion:</h2>
+				<h3>Reshape the pitiful flesh of this planet into raw biomass.</h3>
+				Ratmeat, limbs, or organs offered on a rune
+				
+				
+
+				</body>
+			</html>
+			"}
+
+
 /obj/item/book/manual/law
 	name = "Lex Imperialis"
 	icon = 'icons/obj/items/books.dmi'

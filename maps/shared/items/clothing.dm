@@ -5,6 +5,8 @@
 	icon_state = "undertaker"
 	worn_state = "undertaker"
 	item_state = "undertaker"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 
 /obj/item/clothing/suit/undertaker

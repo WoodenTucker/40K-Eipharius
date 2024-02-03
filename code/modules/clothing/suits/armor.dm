@@ -1261,7 +1261,7 @@ obj/item/clothing/suit/armor
 	species_restricted = list(SPECIES_HUMAN)
 
 /obj/item/clothing/suit/sisterofbattle/training
-	name = "Novitae Power Armor"
+	name = "Novitae Carapace Armor"
 	desc = "The Ancient and Deconsecrated Carapace Armour adorned by Novice Militants during their training in Messina' Monastarium. Stripped of almost all iconography and with damaged plating. It has scriptures across it's surface, recounting the triumph and martyrdom of Saint Katherine."
 	icon_state = "ooml"
 	item_state = "ooml"
