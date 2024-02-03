@@ -999,3 +999,7 @@ var/list/floor_decals = list()
 
 /obj/effect/floor_decal/turf/metal/ten
 	icon_state = "metal10"
+
+/obj/effect/floor_decal/turf/metal/metal_wall
+	name = "metal wall"
+	icon_state = "2"
