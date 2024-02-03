@@ -26,12 +26,11 @@
 /obj/item/grenade/vortex/Process()
 	if(!isturf(loc))
 		if(ismob(loc))
-	 		var/mob/M = loc
-	 		M.drop_from_inventory(src)
-	 	forceMove(get_turf(src))
-	/turf/unsimulated/wall/supermatter/warp/W = get_turf(src)
-	supermatter_pull(src, world.view, STAGE_FIVE)
+			var/mob/M = loc
+			M.drop_from_inventory(src)
+		forceMove(get_turf(src))
 	playsound(src, 'sound/effects/supermatter.ogg', 100)
+	supermatter_pull(src, world.view, STAGE_FIVE)
 	if(world.time > implode_at)
-		explosion(loc, 1, 2, 4, 5)
+		explosion(loc, 0, 1, 3, 4)
 		qdel(src)
