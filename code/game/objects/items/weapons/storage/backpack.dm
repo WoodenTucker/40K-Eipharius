@@ -514,6 +514,13 @@
 	icon_state = "M_SBackpack-Icon"
 	item_state = "M_SBackpack-Icon"
 
+
+/obj/item/storage/backpack/satchel/ordinate
+	name = "Administratum Ink Pack"
+	desc = "Burocracy on the go"
+	icon_state = "ordinate"
+	item_state = "ordinate"
+
 /obj/item/storage/backpack/satchel/grey
 	name = "grey satchel"
 
