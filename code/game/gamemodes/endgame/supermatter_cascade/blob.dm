@@ -115,5 +115,14 @@
 /turf/unsimulated/wall/supermatter/warp
 	name = "Warp Rift"
 	desc = "Run."
+	var/rift_collapse
+
+/turf/unsimulated/wall/supermatter/warp/New()
+	..()
+	START_PROCESSING(SSslowprocess, src)
+	next_check = world.time + 5 SECONDS
+	rift_collapse = world.time + rand(10,60) SECONDS
+
+
 
 #undef MayConsume
