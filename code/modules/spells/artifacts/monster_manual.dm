@@ -36,32 +36,4 @@
 	user << browse(dat,"window=monstermanual")
 	onclose(user,"monstermanual")
 
-/obj/item/monster_manual/OnTopic(user, href_list, state)
-	if(href_list["temp"])
-		temp = null
-		. = TOPIC_REFRESH
-	else if(href_list["path"])
-		if(uses == 0)
-			to_chat(user, "This book is out of uses.")
-			return TOPIC_HANDLED
-
-		var/mob/living/simple_animal/familiar/F = new path(get_turf(src))
-		temp = "You have attempted summoning \the [F]"
-		spawn(600)
-			if(F)
-				if(!F.ckey || !F.client)
-					F.visible_message("With no soul to keep \the [F] linked to this plane, it fades away.")
-					qdel(F)
-				else
-					F.faction = usr.faction
-					F.add_spell(new /spell/contract/return_master(usr), "const_spell_ready")
-					to_chat(F, "<span class='notice'>You are a familiar.</span>")
-					to_chat(F, "<b>You have been summoned by the cultist [usr] to assist in all matters magical and not.</b>")
-					to_chat(F, "<b>Do their bidding and help them with their goals.</b>")
-					uses--
-		. = TOPIC_REFRESH
-
-	if(. == TOPIC_REFRESH)
-		interact(user)
-
 
