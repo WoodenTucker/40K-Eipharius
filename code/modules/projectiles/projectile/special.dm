@@ -628,3 +628,44 @@
 		var/mob/living/carbon/human/M = target
 		M.reagents.add_reagent(/datum/reagent/toxin/tyranid/acid, 5)
 
+/obj/item/projectile/energy/grav
+	name = "grav bolt"
+	icon_state = "ion"
+	fire_sound = 'sound/weapons/Laser.ogg'
+	damage = 0
+	damage_type = BURN
+	nodamage = 1
+	check_armour = "energy"
+
+/obj/item/projectile/energy/grav/on_hit(var/atom/target, var/blocked = 0)
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+			H.flash_eyes()
+			H.eye_blurry += flash_time
+			H.confused += (flash_time + 2)
+			H.Stun(flash_time / 2)
+			H.Weaken(3)
+	if(istype(target, /turf/simulated/wall))
+		var/turf/simulated/wall/W = target
+			W.dismantle_wall(1)
+			explosion(location, -1, -1, 1, 2)
+			visible_message("<span class='danger'>The [src] falls apart unders its own weight!</span>")
+
+/obj/item/projectile/energy/grav/strong
+	name = "grav bolt"
+	icon_state = "ion"
+	fire_sound = 'sound/weapons/Laser.ogg'
+	damage = 0
+	damage_type = BURN
+	check_armour = "energy"
+
+/obj/item/projectile/energy/grav/strong/on_hit(var/atom/target, var/blocked = 0)
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+			H.gib
+			visible_message("<span class='danger'>[H] is torn apart by their own weight!</span>")
+	if(istype(target, /turf/simulated/wall))
+		var/turf/simulated/wall/W = target
+			W.dismantle_wall(1)
+			explosion(location, -1, -1, 1, 2)
+			visible_message("<span class='danger'>The [src] falls apart unders its own weight!</span>")
