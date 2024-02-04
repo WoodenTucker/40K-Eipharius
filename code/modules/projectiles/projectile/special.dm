@@ -641,9 +641,9 @@
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
 			H.flash_eyes()
-			H.eye_blurry += flash_time
-			H.confused += (flash_time + 2)
-			H.Stun(flash_time / 2)
+			H.eye_blurry(5)
+			H.confused(5)
+			H.Stun(5)
 			H.Weaken(3)
 	if(istype(target, /turf/simulated/wall))
 		var/turf/simulated/wall/W = target
