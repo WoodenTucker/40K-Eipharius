@@ -1,5 +1,6 @@
 /obj/item/grenade/vortex
 	name = "Vortex Grenade"
+	desc = "The Phobos Pattern Vortex Grenade is a highly dangerous Warp-based weapon. "
 	icon_state = "emp"
 	item_state = "emp"
 	origin_tech = list(TECH_BLUESPACE = 5, TECH_MAGNET = 4, TECH_ENGINEERING = 5)
