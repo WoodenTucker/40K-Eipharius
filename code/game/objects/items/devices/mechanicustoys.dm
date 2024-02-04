@@ -151,7 +151,7 @@
 	name = "Omnissiah`s axe"
 	desc = "The Blessed Power Axe of any respectable techpriest, these arent very common here... Its decorated with holy symbols of the Adeptus Mechanicus"
 	icon = 'icons/obj/items/oma.dmi'
-	icon_state = "Whistle_InHand_R"
+	icon_state = "Whistle"
 	item_state = "Whistle_InHand"
 	wielded_icon = "Whistle_InHand_W"
 	block_chance = 20 //20 block chance, same block chance, force and pen as brutal chainsword but harder to get
@@ -166,6 +166,17 @@
 	sales_price = 0
 
 /obj/item/melee/omnissiah_axe/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+
+/obj/item/melee/omnissiah_axe/astartes
+	name = "Oversized Omnissiah`s axe"
+	desc = "The Blessed Power Axe of a techpriest. This one is oversized and meant to be beared by a Techmarine. Its decorated with holy symbols of the Adeptus Mechanicus"
+	block_chance = 25 //Bit better
+	armor_penetration = 26 //Meant to fight proper power armor
+	weapon_speed_delay = 14 // slightly more delay
+
+/obj/item/melee/omnissiah_axe/astartes/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
 	spawn(1) if(src) qdel(src)
 

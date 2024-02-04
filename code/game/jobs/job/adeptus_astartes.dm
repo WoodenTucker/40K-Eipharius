@@ -237,23 +237,23 @@
 	name = OUTFIT_JOB_NAME("Blood Angels Tech-Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/bloodangel
-	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos/techpack
+	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techmarine
 	belt = /obj/item/storage/belt/utility/full
 	shoes = /obj/item/clothing/shoes/jackboots/astartes/bloodangel
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak/advanced/astartes
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/bolter_pistol
+	suit_store = /obj/item/gun/projectile/bolter_pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
-	/obj/item/clothing/glasses/astartes/visor = 1
+	/obj/item/clothing/glasses/astartes/visor/techmarine = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/ravenguard
@@ -329,7 +329,7 @@
 	name = OUTFIT_JOB_NAME("Ravenguard Tech-Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/ravenguard
-	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos/techpack
+	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techmarine
 	belt = /obj/item/storage/belt/utility/full
 	shoes = /obj/item/clothing/shoes/jackboots/astartes/raven
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
@@ -337,15 +337,15 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak/advanced/astartes
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/bolter_pistol
+	suit_store = /obj/item/gun/projectile/bolter_pistol/astartes/raven
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
-	/obj/item/clothing/glasses/astartes/visor = 1
+	/obj/item/clothing/glasses/astartes/visor/techmarine = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/salamander
@@ -421,7 +421,7 @@
 	name = OUTFIT_JOB_NAME("Salamanders Tech-Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/salamander
-	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos/techpack
+	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techmarine
 	belt = /obj/item/storage/belt/utility/full
 	shoes = /obj/item/clothing/shoes/jackboots/astartes/sallys
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
@@ -429,15 +429,15 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak/advanced/astartes
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/bolter_pistol
+	suit_store = /obj/item/gun/projectile/bolter_pistol/astartes/sally
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
-	/obj/item/clothing/glasses/astartes/visor = 1
+	/obj/item/clothing/glasses/astartes/visor/techmarine = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/ultramarine
@@ -515,7 +515,7 @@
 	name = OUTFIT_JOB_NAME("Ultramarines Tech-Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/ultramarine
-	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos/techpack
+	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techmarine
 	belt = /obj/item/storage/belt/utility/full
 	shoes = /obj/item/clothing/shoes/jackboots/astartes/smurfs
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
@@ -523,13 +523,13 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak/advanced/astartes
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/bolter_pistol
+	suit_store = /obj/item/gun/projectile/bolter_pistol/astartes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
-	/obj/item/clothing/glasses/astartes/visor = 1
+	/obj/item/clothing/glasses/astartes/visor/techmarine = 1
 	)

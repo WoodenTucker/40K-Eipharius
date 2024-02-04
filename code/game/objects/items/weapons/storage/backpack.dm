@@ -339,7 +339,7 @@
 	icon_state = "salpack"
 	item_state = "salpack"
 
-/obj/item/storage/backpack/satchel/warfare/techpriest/magos/techpack //because it uses techpriest stuff.
+/obj/item/storage/backpack/satchel/warfare/techpriest/techmarine //because it uses techpriest stuff.
 	name = "Astartes Mark VII Servo-Harness"
 	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This Powerpack has been equipped with additional Servo-Arms to serve engineering purposes."
 	item_icons = list(slot_back_str = 'icons/mob/32x40/storage.dmi')
@@ -431,7 +431,6 @@
 		usr.put_in_hands(new /obj/item/device/lasercutter(usr))
 
 
-
 /obj/item/storage/backpack/satchel/warfare/techpriest/magos
 	name = "Combat Servo-Satchel"
 
@@ -447,6 +446,21 @@
 		to_chat(usr,"You pull out giant power axe from under your robes and activate it! For the omnissiah!.")
 		usr.put_in_hands(new /obj/item/melee/omnissiah_axe(usr))
 
+
+/obj/item/storage/backpack/satchel/warfare/techpriest/techmarine
+	name = "Combat Servo-Satchel"
+
+/obj/item/storage/backpack/satchel/warfare/techpriest/techmarine/verb/toggle_aaxe()
+	set name = "Pull Out Omnissian Axe"
+	set category = "Tools"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+	else
+		to_chat(usr,"You pull out giant power axe from under your robes and activate it! For the Emperor!")
+		usr.put_in_hands(new /obj/item/melee/omnissiah_axe/astartes(usr))
 
 
 /obj/item/storage/backpack/satchel/warfare/techpriest/biologis
