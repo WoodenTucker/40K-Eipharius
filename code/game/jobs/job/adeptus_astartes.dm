@@ -230,7 +230,8 @@
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
-	/obj/item/clothing/glasses/astartes/visor/apoth = 1
+	/obj/item/clothing/glasses/astartes/visor/apoth = 1,
+	/obj/item/reagent_containers/hypospray/autoinjector/astartes/apothecary = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/bangtech
@@ -322,7 +323,8 @@
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
-	/obj/item/clothing/glasses/astartes/visor/apoth = 1
+	/obj/item/clothing/glasses/astartes/visor/apoth = 1,
+	/obj/item/reagent_containers/hypospray/autoinjector/astartes/apothecary = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/raventech
@@ -414,7 +416,8 @@
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
-	/obj/item/clothing/glasses/astartes/visor/apoth = 1
+	/obj/item/clothing/glasses/astartes/visor/apoth = 1,
+	/obj/item/reagent_containers/hypospray/autoinjector/astartes/apothecary = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/saltech
@@ -508,7 +511,8 @@
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
-	/obj/item/clothing/glasses/astartes/visor/apoth = 1
+	/obj/item/clothing/glasses/astartes/visor/apoth = 1,
+	/obj/item/reagent_containers/hypospray/autoinjector/astartes/apothecary = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/ultratech

@@ -190,7 +190,7 @@
 	desc = "A nanoblood injector. Do not use more than 1 injectors in close sucession.."
 	icon_state = "n"
 
-	amount_per_transfer_from_this = 52 // 5 Uses
+	amount_per_transfer_from_this = 42 // 5 Uses
 	volume = 210
 	starts_with = list(/datum/reagent/bicaridine =5, /datum/reagent/kelotane = 5, /datum/reagent/nanoblood = 200)
 
@@ -245,6 +245,22 @@
 		icon_state = "borghypo"
 	else
 		icon_state = "borghypo_closed"
+
+/obj/item/reagent_containers/hypospray/autoinjector/astartes/apothecary
+	name = "Serinite Compound Injector"
+	desc = "A highly advanced injector used by the Adeptus Astartes in battle. This one is made for the Apothecaries of the various chapters. It contains  spaceacillin, adrenaline, alkysine, and peridaxon. It used for healing the injured out of combat. Do not use more than twice in quick succession."
+	icon_state = "serinite_open"
+	starts_with = list(/datum/reagent/spaceacillin = 50, /datum/reagent/adrenaline = 50, /datum/reagent/alkysine = 50, /datum/reagent/peridaxon = 50)
+	amount_per_transfer_from_this = 20
+	volume = 200
+	inject_sound = 'sound/items/syrette_inject.ogg'
+	w_class = ITEM_SIZE_SMALL
+
+/obj/item/reagent_containers/hypospray/autoinjector/astartes/update_icon()
+	if(reagents.total_volume > 0)
+		icon_state = "serinite_open"
+	else
+		icon_state = "serinite_closed"
 
 /obj/item/reagent_containers/glass/ampule
 	name = "ampule"
