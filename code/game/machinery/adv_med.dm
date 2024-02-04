@@ -421,7 +421,7 @@
 		O.forceMove(loc)
 	src.add_fingerprint(user)
 
-/obj/machinery/bodyscanner/stasis/process() //not really used right now
+/obj/machinery/bodyscanner/stasis/Process() //not really used right now
 	if(stat & (NOPOWER|BROKEN))
 		return
 	if(iscarbon(occupant))
