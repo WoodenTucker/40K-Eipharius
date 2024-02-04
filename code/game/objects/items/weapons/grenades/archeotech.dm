@@ -25,7 +25,7 @@
 		overlays += image(icon = 'icons/obj/machines/power/fusion.dmi', icon_state = "emfield_s1")
 
 /obj/item/grenade/vortex/Process()
-	if(world.time > implode_at + 4)
+	if(world.time > implode_at - 10)
 		if(!isturf(loc))
 			if(ismob(loc))
 				var/mob/M = loc
