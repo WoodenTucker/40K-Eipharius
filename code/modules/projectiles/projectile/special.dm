@@ -628,7 +628,7 @@
 		var/mob/living/carbon/human/M = target
 		M.reagents.add_reagent(/datum/reagent/toxin/tyranid/acid, 5)
 
-/obj/item/projectile/energy/grav
+/*/obj/item/projectile/energy/grav
 	name = "grav bolt"
 	icon_state = "ion"
 	fire_sound = 'sound/weapons/Laser.ogg'
@@ -664,4 +664,4 @@
 		var/turf/simulated/wall/W = target
 			W.dismantle_wall(1)
 			explosion(location, -1, -1, 1, 2)
-			visible_message("<span class='danger'>The [src] falls apart unders its own weight!</span>")
+			visible_message("<span class='danger'>The [src] falls apart unders its own weight!</span>")*/
