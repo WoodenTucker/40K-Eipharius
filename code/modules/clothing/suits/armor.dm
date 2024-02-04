@@ -937,7 +937,8 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/colonel
 	name = "Colonel's Jacket"
 	desc = "A distive formal jacket worn by Colonels of the Imperial Guard, this one has had carapace and armourplas plates subtly integrated into it."
-	icon_state = "wardentanjacket"
+	icon_state = "officertanjacket"
+	item_state = "officertanjacket"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun)
 	armor = list(melee = 22, bullet = 40, laser = 40, energy = 80, bomb = 80, bio = 80, rad = 80) //Special admin event armour, shouldn't be used in normal fighting.
 	sales_price = 0 //Event armour
