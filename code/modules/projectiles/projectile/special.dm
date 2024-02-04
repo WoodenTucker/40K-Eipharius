@@ -640,11 +640,7 @@
 /obj/item/projectile/energy/grav/on_hit(var/atom/target, var/blocked = 0)
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
-			H.flash_eyes()
-			H.eye_blurry(5)
-			H.confused(5)
-			H.Stun(5)
-			H.Weaken(3)
+			H.Weaken(15)
 	if(istype(target, /turf/simulated/wall))
 		var/turf/simulated/wall/W = target
 			W.dismantle_wall(1)
