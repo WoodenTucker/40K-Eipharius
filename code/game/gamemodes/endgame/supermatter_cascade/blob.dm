@@ -123,6 +123,9 @@
 	next_check = world.time + 5 SECONDS
 	rift_collapse = world.time + rand(10,60) SECONDS
 
+/turf/unsimulated/wall/supermatter/warp/Process()
+	if(world.time > rift_collapse)
+		qdel(src)
 
 
 #undef MayConsume
