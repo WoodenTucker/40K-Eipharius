@@ -427,6 +427,36 @@
 	if(iscarbon(occupant))
 		occupant.SetStasis(stasis)
 
+/obj/machinery/bodyscanner/stasis/proc/go_out_stasis()
+	if ((!( src.occupant ) || src.locked))
+		return
+	for(var/obj/O in src)
+		O.dropInto(loc)
+		//Foreach goto(30)
+	if (src.occupant.client)
+		src.occupant.client.eye = src.occupant.client.mob
+		src.occupant.client.perspective = MOB_PERSPECTIVE
+	src.occupant.dropInto(loc)
+	src.occupant = null
+	update_use_power(1)
+	src.icon_state = "cellold0"
+	return
+
+/obj/machinery/bodyscanner/stasis/proc/eject_stasis()
+	set category = "Object"
+	set name = "Eject Stasis Chamber"
+
+	if (usr.stat != 0)
+		return
+	src.go_out_stasis()
+	add_fingerprint(usr)
+	return
+
+/obj/machinery/bodyscanner/stasis/RightClick(mob/user)
+	if(CanPhysicallyInteract(user))
+		eject_stasis()
+
+
 /obj/machinery/body_scanconsole/stasis
 	name = "Body Scanner Console"
 	icon = 'icons/obj/Cryogenic2.dmi'
