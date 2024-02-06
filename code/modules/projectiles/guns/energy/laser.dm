@@ -890,7 +890,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	name = "astartes plasma pistol"
-	desc = "An oversized plasma pistol. Great for dealing with threats swiftly. It has an overheat scale. It has improved vents and capacitors. "
+	desc = "An oversized plasma pistol. Built for an Astartes. Great for dealing with threats swiftly. It has an overheat scale. It has improved vents and capacitors. "
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "ppistol"
 	item_state = "plasmapistol"

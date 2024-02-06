@@ -659,6 +659,22 @@
 	species_restricted = list(SPECIES_ASTARTES)
 	sales_price = 40
 
+/obj/item/clothing/glasses/astartes/visor/techmarine
+	name = "Mark VII Techmarine Visor"
+	desc = "The support system of Astartes helmet."
+	hud = /obj/item/clothing/glasses/meson
+	darkness_view = 50 //in case we got a snaiper
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	flash_protection = FLASH_PROTECTION_MAJOR
+	icon_state = "thermal"
+	item_state = "glasses"
+	body_parts_covered = EYES
+	siemens_coefficient = 0.9
+	unacidable = 1
+	species_restricted = list(SPECIES_ASTARTES)
+	sales_price = 30
+	flash_protection =  FLASH_PROTECTION_MAJOR
+
 /obj/item/clothing/glasses/cadian
 	name = "Mark XIIc Visor"
 	desc = "The Mark XIIc sniper variant night vision visor are special night vision goggles which make a much larger area visible to the user without adding any negative effects to their vision."

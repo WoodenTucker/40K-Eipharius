@@ -387,3 +387,79 @@
 		dat += text("Retinal misalignment detected.")
 
 	. = jointext(dat,"<br>")
+
+/obj/machinery/bodyscanner/stasis
+	name = "Stasis Chamber"
+	icon = 'icons/obj/cryogenics.dmi'
+	icon_state = "cellold0"
+	density = 1
+	anchored = 1
+
+	use_power = 1
+	idle_power_usage = 60
+	active_power_usage = 10000	//10 kW. It's a big all-body stasis field.
+	var/stasis = 1000000000000
+
+/obj/machinery/bodyscanner/stasis/MouseDrop_T(mob/target, mob/user)
+	if(!istype(target))
+		return
+	if (!CanMouseDrop(target, user))
+		return
+	if(!can_enter(target))
+		return
+	user.visible_message("<span class='notice'>\The [user] begins placing \the [target] into \the [src].</span>", "<span class='notice'>You start placing \the [target] into \the [src].</span>")
+	if(!do_after(user, 30, src))
+		return
+	if(!can_enter(target))
+		return
+	var/mob/M = target
+	M.forceMove(src)
+	src.occupant = M
+	update_use_power(2)
+	src.icon_state = "cellold1"
+	for(var/obj/O in src)
+		O.forceMove(loc)
+	src.add_fingerprint(user)
+
+/obj/machinery/bodyscanner/stasis/Process() //not really used right now
+	if(stat & (NOPOWER|BROKEN))
+		return
+	if(iscarbon(occupant))
+		occupant.SetStasis(stasis)
+
+/obj/machinery/bodyscanner/stasis/proc/go_out_stasis()
+	if ((!( src.occupant ) || src.locked))
+		return
+	for(var/obj/O in src)
+		O.dropInto(loc)
+		//Foreach goto(30)
+	if (src.occupant.client)
+		src.occupant.client.eye = src.occupant.client.mob
+		src.occupant.client.perspective = MOB_PERSPECTIVE
+	src.occupant.dropInto(loc)
+	src.occupant = null
+	update_use_power(1)
+	src.icon_state = "cellold0"
+	return
+
+/obj/machinery/bodyscanner/stasis/proc/eject_stasis()
+	set category = "Object"
+	set name = "Eject Stasis Chamber"
+
+	if (usr.stat != 0)
+		return
+	src.go_out_stasis()
+	add_fingerprint(usr)
+	return
+
+/obj/machinery/bodyscanner/stasis/RightClick(mob/user)
+	if(CanPhysicallyInteract(user))
+		eject_stasis()
+
+
+/obj/machinery/body_scanconsole/stasis
+	name = "Body Scanner Console"
+	icon = 'icons/obj/Cryogenic2.dmi'
+	icon_state = "body_scannerconsole"
+	density = 0
+	anchored = 1

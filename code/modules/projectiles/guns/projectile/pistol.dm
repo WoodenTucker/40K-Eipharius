@@ -207,7 +207,7 @@
 	if(ammo_magazine)
 		icon_state = "bpistol-10"
 	else
-		icon_state = "bpistol-10-e"
+		icon_state = "bpistol-e"
 
 /obj/item/gun/projectile/bolter_pistol/gold
 	name = "Gold Bolt Pistol"
@@ -244,10 +244,9 @@
 /obj/item/gun/projectile/bolter_pistol/inquis/update_icon()
 	..()
 	if(ammo_magazine)
-		icon_state = "bpistol"
+		icon_state = "bpistol-10"
 	else
 		icon_state = "bpistol-e"
-
 
 /obj/item/gun/projectile/bolter_pistol/sisterofbattle
 	name = "Godwyn-De'az Pattern Bolter Pistol"
@@ -268,6 +267,50 @@
 		icon_state = "sisterbpistol"
 	else
 		icon_state = "sisterbpistol-e"
+
+/obj/item/gun/projectile/bolter_pistol/astartes
+	name = "Mark III Pattern Bolt Pistol"
+	desc = "Mark III Pattern Bolt Pistol is the pattern of the weapon most commonly employed by the majority of Loyalist Space Marine Chapters in the Imperium, This one is painted in XIIIth Chapter Ultramarines's colour scheme."
+	icon_state = "ultrabpistol-10"
+	item_state = "ultrabpistol-10"
+	str_requirement = 19
+	force = 15
+	caliber = ".95"
+	accuracy = 0.7
+	fire_delay = 1.4
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine/astartes
+	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine/astartes
+	slot_flags = SLOT_BELT|SLOT_S_STORE
+	sales_price = 95
+
+/obj/item/gun/projectile/bolter_pistol/astartes/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "ultrabpistol-10"
+	else
+		icon_state = "ultrabpistol-e"
+
+/obj/item/gun/projectile/bolter_pistol/astartes/sally
+	desc = "Mark III Pattern Bolt Pistol is the pattern of the weapon most commonly employed by the majority of Loyalist Space Marine Chapters in the Imperium, This one is painted in XVIIIth Chapter Salamanders's colour scheme."
+
+/obj/item/gun/projectile/bolter_pistol/astartes/sally/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "sallybpistol-10"
+	else
+		icon_state = "sallybpistol-e"
+
+/obj/item/gun/projectile/bolter_pistol/astartes/raven
+	desc = "Mark III Pattern Bolt Pistol is the pattern of the weapon most commonly employed by the majority of Loyalist Space Marine Chapters in the Imperium, This one is painted in XIXth Chapter Raven Guards's colour scheme."
+
+/obj/item/gun/projectile/bolter_pistol/astartes/raven/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "ravenbpistol-10"
+	else
+		icon_state = "ravenbpistol-e"
+
 
 /obj/item/gun/projectile/eldar/spistol
 	name = "Shuriken pistol"
