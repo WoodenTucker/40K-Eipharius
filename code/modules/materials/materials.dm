@@ -373,6 +373,13 @@ var/list/name_to_material
 	hitsound = 'sound/weapons/smash.ogg'
 	apply_icon_colour_to_walls = FALSE
 
+/material/biomass //Tyranid
+	name = "biomass"
+	display_name = "biomass"
+	use_name = "biomass"
+	sheet_singular_name = "biomass clump"
+	sheet_plural_name = "biomass tumor"
+
 /material/diona
 	name = "biomass"
 	icon_colour = null

@@ -1598,7 +1598,7 @@
 	
 /datum/chemical_reaction/bloodclot
 	name = "Anohemolytite"
-	result = /datum/reagent/dexalin
+	result = /datum/reagent/bloodclot
 	required_reagents = list (/datum/reagent/inaprovaline = 1, /datum/reagent/bicaridine = 1, /datum/reagent/iron = 1)
 	result_amount = 3
 
