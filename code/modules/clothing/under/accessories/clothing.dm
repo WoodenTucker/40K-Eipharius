@@ -49,6 +49,14 @@
 	icon_state = "commander"
 	item_state = "commander"
 
+
+/obj/item/clothing/accessory/ordinate
+	name = "Administratum cloak"
+	desc = "A heavy administratory."
+	icon_state = "ordinate"
+	item_state = "ordinate"
+
+
 /obj/item/clothing/accessory/kccloak
 	name = "Commissar's Cloak"
 	desc = "A krieg commissar's cloak."
