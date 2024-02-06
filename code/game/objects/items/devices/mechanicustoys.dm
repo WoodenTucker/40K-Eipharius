@@ -174,7 +174,7 @@
 	desc = "The Blessed Power Axe of a techpriest. This one is oversized and meant to be beared by a Techmarine. Its decorated with holy symbols of the Adeptus Mechanicus"
 	block_chance = 25 //Bit better
 	armor_penetration = 26 //Meant to fight proper power armor
-	weapon_speed_delay = 14 // slightly more delay
+	weapon_speed_delay = 11
 
 /obj/item/melee/omnissiah_axe/astartes/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
