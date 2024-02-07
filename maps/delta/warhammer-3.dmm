@@ -1764,6 +1764,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"bwd" = (
+/obj/machinery/photocopier,
+/obj/item/device/toner,
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/security/barracks)
 "bwr" = (
 /obj/structure/table/graf/reinf_table{
 	icon_state = "reinf_table5"
@@ -29846,13 +29851,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/farm)
-"wld" = (
-/obj/structure/hivedecor/defender_statue{
-	pixel_y = -16;
-	pixel_x = -10
-	},
-/turf/unsimulated/mineral,
-/area/cadiaoutpost/new_hive/hive_city)
 "wlk" = (
 /obj/structure/closet/hive/wood{
 	anchored = 1
@@ -67474,12 +67472,12 @@ nSI
 nSI
 nSI
 nSI
+nSI
 bEN
 bEN
-bEN
-bEN
-bEN
-bEN
+nSI
+nSI
+nSI
 bEN
 bEN
 bEN
@@ -67726,13 +67724,13 @@ nSI
 nSI
 nSI
 nSI
-nSI
 bEN
 bEN
-gaw
+bEN
+bEN
 nSI
 nSI
-gaw
+bEN
 bEN
 bEN
 bEN
@@ -69486,10 +69484,10 @@ jBp
 jBp
 bwI
 bwI
-nSI
-nSI
-nSI
-nSI
+jBp
+jBp
+bwI
+bwI
 bwI
 lbc
 qiL
@@ -69735,9 +69733,9 @@ jBp
 bwI
 jBp
 jBp
+jBp
 bwI
-nSI
-nSI
+bwI
 nSI
 nSI
 oiV
@@ -69745,7 +69743,7 @@ nSI
 jBp
 dJm
 qiL
-wld
+qiL
 jBp
 jBp
 lbc
@@ -71125,7 +71123,7 @@ mdu
 mKR
 beF
 xkb
-xkb
+bwd
 bmd
 fDO
 xkb
@@ -72889,7 +72887,7 @@ mdu
 mKR
 beF
 xkb
-xkb
+bwd
 bmd
 qsP
 xkb

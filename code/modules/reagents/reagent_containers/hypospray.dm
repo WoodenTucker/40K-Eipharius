@@ -256,7 +256,7 @@
 	inject_sound = 'sound/items/syrette_inject.ogg'
 	w_class = ITEM_SIZE_SMALL
 
-/obj/item/reagent_containers/hypospray/autoinjector/astartes/update_icon()
+/obj/item/reagent_containers/hypospray/autoinjector/astartes/apothecary/update_icon()
 	if(reagents.total_volume > 0)
 		icon_state = "serinite_open"
 	else

@@ -70,13 +70,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/hallway/northern)
-"ao" = (
-/turf/unsimulated/mineral{
-	icon = 'icons/turf/wall.dmi';
-	icon_state = "concrete0";
-	name = "strange wall"
-	},
-/area/cadiaoutpost/oa/service/inn)
 "ap" = (
 /obj/structure/closet/crate,
 /turf/simulated/floor/fancyfloor/carpet{
@@ -2657,14 +2650,6 @@
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
-"jl" = (
-/obj/machinery/light/blue{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark{
-	icon_state = "steel"
-	},
-/area/cadiaoutpost/oa/shuttle/station1)
 "jm" = (
 /obj/structure/warfare/barricade/concrete_barrier{
 	dir = 1
@@ -3025,7 +3010,6 @@
 /obj/structure/closet/hive/metal{
 	anchored = 1
 	},
-/obj/item/reagent_containers/food/snacks/poo,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -3232,9 +3216,6 @@
 /obj/machinery/door/airlock/glass_medical,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/armory)
-"kY" = (
-/turf/space,
-/area/cadiaoutpost/oa/shuttle/station1)
 "lb" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 8;
@@ -4112,25 +4093,14 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel)
-"ox" = (
-/obj/effect/floor_decal/newcorner/reinforced,
-/obj/effect/floor_decal/newcorner/reinforced{
+"oy" = (
+/obj/machinery/light/blue{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/poo,
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/security/armory)
-"oy" = (
-/obj/item/pyre/self_lit{
-	invisibility = 100;
-	name = "Invisible Light"
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
 	},
-/turf/unsimulated/mineral{
-	icon = 'icons/turf/wall.dmi';
-	icon_state = "concrete0";
-	name = "strange wall"
-	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "oz" = (
 /obj/item/clothing/suit/armor/redcoat/medic,
 /obj/item/clothing/head/helmet/redhelmet/medic,
@@ -4369,7 +4339,6 @@
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/poo,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/armory)
 "pq" = (
@@ -4474,14 +4443,11 @@
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel)
 "pX" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/effect/floor_decal/newcorner/blue/solid,
+/obj/machinery/light/blue,
 /turf/simulated/floor/tiled/dark{
-	color = "grey"
+	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "pY" = (
 /obj/structure/flora/yes/shroomlog5{
 	pixel_y = -8;
@@ -4986,13 +4952,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/armory)
-"rI" = (
-/turf/unsimulated/mineral{
-	icon = 'icons/turf/wall.dmi';
-	icon_state = "concrete0";
-	name = "strange wall"
-	},
-/area/cadiaoutpost/oa/hallway/northern)
 "rJ" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -5090,13 +5049,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/armory)
-"rZ" = (
-/turf/unsimulated/mineral{
-	icon = 'icons/turf/wall.dmi';
-	icon_state = "concrete0";
-	name = "strange wall"
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "sa" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 1
@@ -6894,13 +6846,6 @@
 /obj/effect/decal/cleanable/generic,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/hab/inside)
-"yZ" = (
-/turf/unsimulated/mineral{
-	icon = 'icons/turf/wall.dmi';
-	icon_state = "concrete0";
-	name = "strange wall"
-	},
-/area/cadiaoutpost/oa/security/armory)
 "za" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 4;
@@ -7146,7 +7091,6 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/newcorner/reinforced,
-/obj/item/reagent_containers/food/snacks/poo,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/armory)
 "zP" = (
@@ -7312,13 +7256,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/chapel)
-"As" = (
-/turf/unsimulated/mineral{
-	icon = 'icons/turf/wall.dmi';
-	icon_state = "concrete0";
-	name = "strange wall"
-	},
-/area/cadiaoutpost/rtship1)
 "At" = (
 /obj/item/trash/warfare_can/rat,
 /turf/simulated/floor/tiled/dark{
@@ -8089,7 +8026,6 @@
 /obj/structure/closet/hive/metal{
 	anchored = 1
 	},
-/obj/item/reagent_containers/food/snacks/poo,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -9548,11 +9484,7 @@
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "HI" = (
-/turf/unsimulated/mineral{
-	icon = 'icons/turf/wall.dmi';
-	icon_state = "concrete0";
-	name = "strange wall"
-	},
+/turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/oa/governor)
 "HO" = (
 /obj/effect/floor_decal/spline/fancy/wood,
@@ -10907,12 +10839,13 @@
 	},
 /area/cadiaoutpost/oa/hallway/northern)
 "MP" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/item/reagent_containers/food/snacks/poo,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/machinery/light/blue{
+	dir = 8
 	},
-/area/cadiaoutpost/oa/security/armory)
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/hive_city)
 "MQ" = (
 /obj/structure/curtain/open/shower/security{
 	name = "expensive curtain";
@@ -12596,11 +12529,7 @@
 /obj/structure/sign/imperial{
 	pixel_y = 32
 	},
-/turf/unsimulated/mineral{
-	icon = 'icons/turf/wall.dmi';
-	icon_state = "concrete0";
-	name = "strange wall"
-	},
+/turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/oa/security/armory)
 "Sx" = (
 /obj/machinery/light/small{
@@ -12856,14 +12785,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
-"Tm" = (
-/obj/effect/floor_decal/newcorner/reinforced,
-/obj/effect/floor_decal/newcorner/reinforced{
-	dir = 1
-	},
-/obj/item/reagent_containers/food/snacks/poo,
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/security/armory)
 "Tp" = (
 /obj/effect/floor_decal/newcorner/polar{
 	dir = 4
@@ -45758,10 +45679,10 @@ oH
 RE
 ge
 OU
+TL
 Tk
 oX
 fR
-oQ
 TL
 dl
 dl
@@ -46010,10 +45931,10 @@ kk
 oH
 oo
 TL
+TL
 oQ
 fR
-pX
-fR
+oQ
 TL
 dl
 dl
@@ -47016,9 +46937,9 @@ uj
 ge
 kk
 oH
-yZ
-yZ
-yZ
+ge
+ge
+ge
 GZ
 ge
 Da
@@ -47236,10 +47157,10 @@ Wk
 Wk
 rL
 LY
-jq
+LY
 rL
-Wk
-Wk
+rL
+rL
 rL
 ny
 Hr
@@ -47250,10 +47171,10 @@ Hr
 Hr
 np
 rL
-Wk
-Wk
 rL
-ga
+rL
+rL
+LY
 rL
 kV
 EQ
@@ -47268,7 +47189,7 @@ qc
 ge
 FG
 oH
-yZ
+ge
 pF
 pF
 XA
@@ -47489,9 +47410,9 @@ Wk
 rL
 LY
 LY
-LY
-LY
-LY
+rL
+rL
+rL
 rL
 hB
 WP
@@ -47502,9 +47423,9 @@ WP
 bz
 YI
 rL
-LY
-LY
-LY
+rL
+rL
+rL
 LY
 rL
 qK
@@ -47520,7 +47441,7 @@ sn
 Th
 oH
 oH
-yZ
+ge
 pF
 Mk
 XE
@@ -47739,11 +47660,11 @@ vt
 Wk
 Wk
 rL
+oy
 LY
-LY
-LY
-LY
-LY
+rL
+rL
+rL
 rL
 QC
 WP
@@ -47754,10 +47675,10 @@ WP
 bz
 YI
 rL
-LY
-LY
-LY
-LY
+rL
+rL
+rL
+pX
 rL
 gt
 CV
@@ -47993,9 +47914,9 @@ Wk
 rL
 LY
 LY
-jl
-LY
-LY
+rL
+rL
+rL
 rL
 hB
 WP
@@ -48006,9 +47927,9 @@ WP
 bz
 YI
 rL
-LY
-LY
-jl
+rL
+rL
+rL
 LY
 rL
 kh
@@ -48243,8 +48164,8 @@ vt
 Wk
 Wk
 rL
-rL
-rL
+LY
+LY
 rL
 rL
 rL
@@ -48261,7 +48182,7 @@ rL
 rL
 rL
 rL
-rL
+LY
 rL
 Wq
 CV
@@ -48494,26 +48415,26 @@ vt
 vt
 Wk
 Wk
-Wk
-Wk
-Wk
-Wk
-kY
 rL
-rL
-dj
-dj
-dj
-dj
-dj
-dj
-rL
+LY
+jq
 rL
 Wk
 Wk
+rL
+dj
+dj
+dj
+dj
+dj
+dj
+rL
+rL
+rL
 Wk
 Wk
-Wk
+rL
+ga
 wL
 ge
 ge
@@ -48746,26 +48667,26 @@ vt
 vt
 vt
 vt
+IG
+Au
+Au
+MP
+Au
+Au
+IG
 vt
 vt
 vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-UB
+IG
+IG
+IG
+Au
+Au
+MP
+Xd
 VC
 ge
 ge
@@ -48998,26 +48919,26 @@ vt
 vt
 vt
 vt
+IG
+IG
+IG
+IG
+IG
+IG
+IG
 vt
 vt
 vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-UB
+IG
+IG
+IG
+IG
+IG
+IG
+eP
 VC
 ge
 ge
@@ -49250,26 +49171,26 @@ vt
 vt
 vt
 vt
+IG
+IG
+IG
+IG
+IG
+IG
+IG
 vt
 vt
 vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-UB
+IG
+IG
+IG
+IG
+IG
+IG
+eP
 VC
 ge
 ge
@@ -49392,7 +49313,7 @@ pF
 pF
 pF
 pF
-rI
+Qh
 Hu
 Dj
 cF
@@ -49644,7 +49565,7 @@ pF
 pF
 pF
 pF
-rI
+Qh
 nM
 Dj
 cF
@@ -49794,7 +49715,7 @@ SI
 ge
 ge
 Ts
-MP
+EZ
 EZ
 EZ
 ge
@@ -49896,7 +49817,7 @@ pF
 pF
 pF
 pF
-rI
+Qh
 Xv
 Dj
 cF
@@ -50148,7 +50069,7 @@ pF
 pF
 pF
 pF
-rI
+Qh
 Hu
 hY
 Fj
@@ -50400,7 +50321,7 @@ pF
 pF
 pF
 pF
-rI
+Qh
 oD
 Ah
 Lm
@@ -50652,13 +50573,13 @@ pF
 pF
 pF
 pF
-rI
 Qh
 Qh
-rI
-rI
-rI
-rI
+Qh
+Qh
+Qh
+Qh
+Qh
 Qh
 Qh
 Qh
@@ -50803,7 +50724,7 @@ ge
 jP
 SA
 WV
-ox
+SA
 BB
 ge
 pF
@@ -50914,7 +50835,7 @@ pF
 pF
 pF
 pF
-rI
+Qh
 Qh
 Qh
 Lz
@@ -51305,9 +51226,9 @@ ge
 ge
 ge
 cj
-ox
+SA
 XT
-Tm
+SA
 cj
 ge
 pF
@@ -52669,7 +52590,7 @@ dN
 dN
 dN
 dN
-yZ
+ge
 dN
 dN
 dN
@@ -52927,9 +52848,9 @@ dN
 dN
 dN
 dN
-yZ
+ge
 Sw
-yZ
+ge
 pF
 pF
 pF
@@ -53179,9 +53100,9 @@ dN
 dN
 dN
 dN
-yZ
-yZ
-yZ
+ge
+ge
+ge
 pF
 pF
 pF
@@ -53431,9 +53352,9 @@ dN
 dN
 dN
 dN
-yZ
-yZ
-yZ
+ge
+ge
+ge
 pF
 pF
 pF
@@ -53677,15 +53598,15 @@ dN
 dN
 dN
 dN
-yZ
+ge
 dN
 dN
 dN
 dN
 dN
-yZ
+ge
 Sw
-yZ
+ge
 pF
 pF
 pF
@@ -53929,10 +53850,10 @@ dN
 dN
 dN
 dN
-oy
-yZ
-yZ
-yZ
+ve
+ge
+ge
+ge
 dN
 dN
 ge
@@ -54686,11 +54607,11 @@ dN
 dN
 dN
 ve
-yZ
-yZ
-yZ
-yZ
-yZ
+ge
+ge
+ge
+ge
+ge
 ge
 pF
 pF
@@ -54937,7 +54858,7 @@ dN
 dN
 dN
 dN
-yZ
+ge
 dN
 dN
 dN
@@ -55868,7 +55789,7 @@ mY
 mY
 mY
 mY
-ao
+IH
 Km
 tR
 nQ
@@ -55945,7 +55866,7 @@ dN
 dN
 dN
 dN
-yZ
+ge
 dN
 dN
 dN
@@ -56145,22 +56066,22 @@ Vp
 Vp
 jV
 kt
-ao
-ao
-ao
-ao
-ao
-ao
-ao
+IH
+IH
+IH
+IH
+IH
+IH
+IH
 Qo
-ao
-ao
-ao
-ao
-ao
-ao
-ao
-ao
+IH
+IH
+IH
+IH
+IH
+IH
+IH
+IH
 eP
 IM
 mY
@@ -56187,17 +56108,17 @@ ce
 Ck
 ge
 ge
-yZ
+ge
 dN
 dN
 dN
-yZ
-yZ
+ge
+ge
 dN
 dN
 dN
-yZ
-yZ
+ge
+ge
 dN
 dN
 dN
@@ -70566,9 +70487,9 @@ rq
 rq
 rq
 rq
-rZ
-rZ
-rZ
+PH
+PH
+PH
 PH
 PH
 Tj
@@ -70809,9 +70730,9 @@ Sb
 Sb
 Sb
 rq
-rZ
-rZ
-rZ
+PH
+PH
+PH
 PH
 PH
 PH
@@ -71324,7 +71245,7 @@ rq
 rq
 rq
 rq
-rZ
+PH
 bX
 bX
 bX
@@ -72079,7 +72000,7 @@ PH
 PH
 PH
 PH
-rZ
+PH
 PH
 AC
 bX
@@ -72094,25 +72015,25 @@ PH
 PH
 PH
 PH
-rZ
-As
-As
-As
-As
-As
-As
-As
-As
-As
-As
-As
-As
-As
-As
-As
-As
-As
-As
+PH
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
+FC
 ae
 vt
 uU
@@ -72338,8 +72259,8 @@ iG
 PH
 PH
 PH
-rZ
-rZ
+PH
+PH
 eB
 sz
 Un
@@ -73592,12 +73513,12 @@ tX
 nE
 PH
 PH
-rZ
-rZ
-rZ
+PH
+PH
+PH
 UV
-rZ
-rZ
+PH
+PH
 lz
 bC
 bC
