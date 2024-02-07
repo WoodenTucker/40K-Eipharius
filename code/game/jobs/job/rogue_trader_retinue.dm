@@ -9,13 +9,13 @@
 	head_position = 1
 	department_flag = SUP
 	social_class = SOCIAL_CLASS_MAX
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	open_when_dead = 0
 	supervisors = "House Vane."
 	selection_color = "#315dd4"
 	req_admin_notify = 1
-	access = list(247,355,268,225,267,268,269,270,355,271,272,273,access_bar,access_village,access_daemon)			//See get_access()
+	access = list(355,268,225,267,268,269,270,355,271,272,273) 			//See get_access()
 	minimal_access = list() 	//See get_access()
 	minimal_player_age = 25
 	economic_modifier = 20
@@ -29,14 +29,14 @@
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8
-	cultist_chance = 40
+	cultist_chance = 20
 
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Rogue Trader [current_name] Vane") // No title testing. 
-		H.get_idcard()?.access = list(247,355,268,225,267,268,269,270,355,271,272,273,access_bar,access_village,access_daemon)
+		H.fully_replace_character_name("Rogue Trader [current_name]") // No title testing. 
+		H.get_idcard()?.access = list(355,268,225,267,268,269,270,355,271,272,273)
 		H.add_stats(rand(14,18), rand(14,18), rand(14,18), rand(14,18))
 		H.add_skills(rand(6,10),rand(6,10),rand(5,6),rand(1,8),rand(1,8)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -46,7 +46,7 @@
 		H.witchblood()
 		H.warfare_faction = IMPERIUM
 		H.verbs += list(/mob/living/carbon/human/proc/hire)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Rogue Trader tied directly to the Vane Dynasty, one of many heirs who might one day inherit a seat of power that would grant dominion over the Segmentum itself, your Warrant of Trade and it's required letters of marque were built upon the industries of war and the conquest of xenos worlds across the fringe. Many of the mercenaries in your employ are turncoats who betrayed the very species you eradicated. The brutal nature of your conquests and of House Vane's... methods in acquiring your letters of marque create the assurance that failure here on Messina will lead to your untimely end and that of your children.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Rogue Trader tied directly to the Vane Dynasty, one of many heirs who might one day inherit a seat of power that would grant dominion over the Segmentum itself, your Warrant of Trade and it's required letters of marque were built upon the industries of war and the conquest of xenos worlds across the fringe. Many of the mercenaries in your employ are turncoats who betrayed the very species you eradicated. The brutal nature of your conquests and of House Vane's... methods in acquiring your letters of marque create the assurance that failure here on Eipharius will lead to your untimely end and that of your children.</font></b></span>")
 
 
 /datum/job/captain/equip(var/mob/living/carbon/human/H)
@@ -67,7 +67,8 @@
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MED
 	announced = 0
-	access = list(247,355,268,225,267,268,269,270,355,271,272,273) 
+	access = list(access_bar, access_village, access_village, access_administratum, access_change_ids, access_keycard_auth,)
+	access = list(355,268,225,267,268,269,270,355,271,272,273) 
 	minimal_player_age = 3
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/cargo/janissary
@@ -97,12 +98,12 @@
 	title = "Xeno Mercenary"
 	department_flag = SUP
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Rogue Trader and House Vane"
 	selection_color = "#315dd4"
 	latejoin_at_spawnpoints = TRUE
-	access = list(247,355,268,225,267,268,269,270,355,271,272,273,access_bar,access_village,access_daemon)
+	access = list(355,268,225,267,268,269,270,355,271,272,273) 
 	announced = FALSE
 	cultist_chance = 0
 
@@ -110,7 +111,7 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.get_idcard()?.access = list(247,355,268,225,267,268,269,270,355,271,272,273,access_bar,access_village,access_daemon)
+		H.get_idcard()?.access = list(355,268,225,267,268,269,270,355,271,272,273)
 		H.add_stats(rand(16,22), rand(16,22), rand(17,20), rand (6,40)) //its a xeno mercenary, random shit.
 		H.add_skills(rand(10,12),rand(9,10),rand(3,5),5,rand(2,4)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -363,7 +364,7 @@ Mercenary System
 		H.warfare_faction = IMPERIUM
 		H.adjustStaminaLoss(-INFINITY)
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Tempestus Scion attached to the retinue of the Lord Trader, your services ultimately being in the protection of imperial assets here on Messina on behalf of the Astra Militarum. It's barely been a week since leaving your Regiment and you are still adjusting to the new reality of your posting. Loyal to the Emperor above all else, Tempestus Scions provide the Imperial High Command with a core of flexible, nigh-incorruptible soldiers. Deployed sparingly, they can be depended upon to complete any mission, no matter how deadly. Racing into battle aboard armoured transports or plummeting down on Grav-Chutes, the Scions are the sharp edge of the Imperial Guard war machine.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Tempestus Scion attached to the retinue of the Lord Trader, your services ultimately being in the protection of imperial assets here on Eipharius on behalf of the Astra Militarum. It's barely been a week since leaving your Regiment and you are still adjusting to the new reality of your posting. Loyal to the Emperor above all else, Tempestus Scions provide the Imperial High Command with a core of flexible, nigh-incorruptible soldiers. Deployed sparingly, they can be depended upon to complete any mission, no matter how deadly. Racing into battle aboard armoured transports or plummeting down on Grav-Chutes, the Scions are the sharp edge of the Imperial Guard war machine.</font></b></span>")
 
 
 */
