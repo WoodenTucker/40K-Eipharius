@@ -197,16 +197,16 @@
 			pulsesound = "extremely fast and faint"
 
 	. = "[pulsesound] pulse"
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
 /obj/item/organ/internal/heart/bioprinted
-	
-	
-	
+
+
+
 /obj/item/organ/internal/heart/chaos
 	name = "Le pecho de Chaos"
 
@@ -219,3 +219,9 @@
 /obj/item/organ/internal/heart/astartes
 	name = "Astartes Hearts"
 	relative_size = 20
+
+/obj/item/organ/internal/heart/necron //Gotta make it  for some reason or another
+	name = "Energy Managment System"
+	icon_state = "heart-prosthetic"
+	relative_size = 20
+	

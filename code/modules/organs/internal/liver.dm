@@ -97,8 +97,8 @@
 			if(prob(5))
 				to_chat(owner, "<span class='warning'>You lick around your mouth as a craving for water sets in.</span>")
 				take_damage(1)
-		
-		
+
+
 /obj/item/organ/internal/liver/astartes
 	name = "oolitic system"
 	icon_state = "liver"
@@ -111,3 +111,17 @@
 	relative_size = 85
 	blood_regen = 0.5
 	organ_filter_mod = 12
+
+/obj/item/organ/internal/liver/necron
+	name = "coolant processor"
+	icon_state = "liver-prosthetic"
+	w_class = ITEM_SIZE_NORMAL
+	organ_tag = BP_LIVER
+	parent_organ = BP_GROIN
+	min_bruised_damage = 150
+	min_broken_damage = 200
+	max_damage = 200
+	relative_size = 85
+	blood_regen = 20
+	organ_filter_mod = 12
+	
