@@ -124,18 +124,17 @@ obj/item/gun/energy/staff/focus
 /obj/item/gun/energy/gauss
 	name = "Gauss Rifle"
 	desc = "A deadly weapon wielded by Necron Warriors"
-	icon_state = "ns"
-	item_state = "ns"
-	origin_tech = list(TECH_COMBAT = 6, TECH_MAGNET = 6)
+	icon_state = "gaussflayer"
+	item_state = "gaussflayer"
+	origin_tech = list(TECH_COMBAT = 9, TECH_MAGNET = 9)
 	w_class = ITEM_SIZE_NORMAL
 	force = 5
 	slot_flags = SLOT_BELT|SLOT_BACK
 	one_hand_penalty = 0
 	charge_cost = 20
-	max_shots = 6
+	max_shots = 10
 	projectile_type = /obj/item/projectile/gauss
 	self_recharge = 1
-	charge_meter = FALSE
 
 /obj/item/gun/energy/WarpLens
 	name = "Warp Lens"
