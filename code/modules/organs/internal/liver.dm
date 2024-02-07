@@ -124,4 +124,3 @@
 	relative_size = 85
 	blood_regen = 20
 	organ_filter_mod = 12
-	
