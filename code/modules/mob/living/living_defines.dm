@@ -76,3 +76,5 @@
 	var/obj/screen/plane_master/blur/effects_blur/EB = new
 	var/obj/screen/plane_master/blur/plating_blur/plating_blur = new
 	var/obj/screen/plane_master/blur/above_obj_blur/AOB = new
+
+	var/jaunting = 0 //Is the mob already Jaunting?
