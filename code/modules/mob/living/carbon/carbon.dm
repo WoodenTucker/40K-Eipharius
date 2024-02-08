@@ -22,9 +22,9 @@
 	bloodstr.clear_reagents()
 	ingested.clear_reagents()
 	touching.clear_reagents()
-	if(M.nutrition < 600)
+	if(src.nutrition < 600)
 		src.nutrition = 600
-	if(M.thirst < 600)
+	if(src.thirst < 600)
 		src.thirst = 600
 	..()
 
