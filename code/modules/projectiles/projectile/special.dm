@@ -511,21 +511,6 @@
 	penetrating = 2 //10 was a bit much
 	armor_penetration = 44 //this shit tears down individual atoms.. what do you expect?
 
-/obj/item/projectile/gauss/heavy
-	name = "Gauss "
-	icon_state = "emitter"
-	fire_sound = 'sound/weapons/emitter.ogg' //P e w
-	damage = 175
-	damage_type = BURN
-	agony = 200
-	check_armour = "energy"
-	speed = 0.05
-	incinerate = 1
-	dispersion = 0.0
-	animate_movement = 1
-	penetrating = 4 //more since the whole... blaster part
-	armor_penetration = 70 //even more so since theres two barrels
-
 /obj/item/projectile/energy/meltagun
 	name = "Meltagun beam"
 	icon_state = "spark"
