@@ -219,3 +219,20 @@
 /obj/item/organ/internal/heart/astartes
 	name = "Astartes Hearts"
 	relative_size = 20
+	max_damage = 90
+
+/obj/item/organ/internal/heart/astartes/Process()
+	if(owner)
+		handle_pulse()
+		if(pulse)
+			handle_heartbeat()
+			if(pulse == PULSE_2FAST && prob(1))
+				take_damage(0.5)
+			if(pulse == PULSE_THREADY && prob(5))
+				take_damage(0.5)
+		if(owner.stat != DEAD && !pulse)
+			owner.resuscitate()
+			owner.add_chemical_effect(CE_STABLE)
+			to_chat(owner, "<span class='warning'>You can feel your second heart beat hard, supporting your circulatory system!</span>")
+		handle_blood()
+	..()
