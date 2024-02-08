@@ -226,6 +226,6 @@
 	relative_size = 10
 	innate_flash_protection = FLASH_PROTECTION_MAJOR
 	max_damage = 65
-	vision_flags = SEE_TURFS|SEE_MOBS|SEE_OBJS|SEE_SELF
+	var/vision_flags = SEE_TURFS|SEE_MOBS|SEE_OBJS|SEE_SELF
 
 
