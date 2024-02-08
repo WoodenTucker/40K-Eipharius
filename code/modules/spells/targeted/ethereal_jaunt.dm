@@ -114,3 +114,78 @@
 	return
 /obj/effect/dummy/spell_jaunt/bullet_act(blah)
 	return
+
+/spell/targeted/necron_jaunt
+	name = "Dimensional Shift"
+	desc = "Slip between the boundaries of dimensions, and become intangible."
+	feedback = "DS"
+	school = "transmutation"
+	charge_max = 300
+	spell_flags = Z2NOCAST | INCLUDEUSER
+	invocation_type = SpI_EMOTE
+	invocation = "fades silently into shadows."
+	range = -1
+	max_targets = 1
+	level_max = list(Sp_TOTAL = 1, Sp_SPEED = 1, Sp_POWER = 1)
+	cooldown_min = 100 //50 deciseconds reduction per rank
+
+	hud_state = "wiz_jaunt"
+
+/spell/targeted/necron_jaunt/cast(list/targets)
+	for(var/mob/living/target in targets)
+		if(target.jaunting = 0)
+			target.transforming = 1 //protects the mob from being transformed (replaced) midjaunt and getting stuck in bluespace
+			if(target.buckled)
+				target.buckled.unbuckle_mob()
+			spawn(0)
+				var/mobloc = get_turf(target.loc)
+				var/obj/effect/dummy/spell_jaunt/holder = new /obj/effect/dummy/spell_jaunt( mobloc )
+				var/atom/movable/overlay/animation = new /atom/movable/overlay( mobloc )
+				animation.SetName("water")
+				animation.set_density(0)
+				animation.anchored = 1
+				animation.icon = 'icons/mob/mob.dmi'
+				animation.layer = 5
+				animation.master = holder
+				target.ExtinguishMob()
+				if(target.buckled)
+				target.buckled = null
+				jaunt_disappear(animation, target)
+				target.loc = holder
+				target.transforming=0 //mob is safely inside holder now, no need for protection.
+				jaunt_steam(mobloc)
+				target.jaunting = 1
+		else
+			mobloc = holder.last_valid_turf
+			animation.loc = mobloc
+			jaunt_steam(mobloc)
+			target.canmove = 0
+			holder.reappearing = 1
+			sleep(20)
+			jaunt_reappear(animation, target)
+			sleep(5)
+			if(!target.forceMove(mobloc))
+				for(var/direction in list(1,2,4,8,5,6,9,10))
+					var/turf/T = get_step(mobloc, direction)
+					if(T)
+						if(target.forceMove(T))
+							break
+			target.canmove = 1
+			target.client.eye = target
+			target.jaunting = 0
+			qdel(animation)
+			qdel(holder)
+
+
+
+/spell/targeted/necron_jaunt/proc/jaunt_disappear(var/atom/movable/overlay/animation, var/mob/living/target)
+	animation.icon_state = "liquify"
+	flick("liquify",animation)
+
+/spell/targeted/necron_jauntt/proc/jaunt_reappear(var/atom/movable/overlay/animation, var/mob/living/target)
+	flick("reappear",animation)
+
+/spell/targeted/necron_jaunt/proc/jaunt_steam(var/mobloc)
+	var/datum/effect/effect/system/steam_spread/steam = new /datum/effect/effect/system/steam_spread()
+	steam.set_up(10, 0, mobloc)
+	steam.start()
