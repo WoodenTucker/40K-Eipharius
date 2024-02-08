@@ -66,7 +66,7 @@
 		if(damage_breakthrough < 0)
 			damage_breakthrough == 0
 		playsound(src, "sound/weapons/armorblock[rand(1,4)].ogg", 50, 1, 1)
-		return damage_breakthrough
+	return damage_breakthrough
 
 
 //Adds two armor values together.
