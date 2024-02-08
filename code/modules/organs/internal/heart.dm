@@ -237,15 +237,12 @@
 		handle_blood()
 	..()
 
-/obj/item/organ/internal/heart/necron
+/obj/item/organ/internal/necron
 	name = "Power Core"
 	icon_state = "adamantine-voicebox"
-	organ_tag = "heart"
+	organ_tag = BP_CELL
 	parent_organ = BP_CHEST
 	dead_icon = "adamantine-voicebox"
-	pulse = PULSE_NORM
-	heartbeat = 0
-	next_blood_squirt = 0
 	relative_size = 15
 	max_damage = 60
 	open
