@@ -22,7 +22,8 @@
 	bloodstr.clear_reagents()
 	ingested.clear_reagents()
 	touching.clear_reagents()
-	nutrition = 400
+	if src.nutrition < 600
+		src.nutrition = 600
 	..()
 
 /mob/living/carbon/Move(NewLoc, direct)
