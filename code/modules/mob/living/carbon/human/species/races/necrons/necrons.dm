@@ -46,7 +46,7 @@
 	//	BP_LIVER =    /obj/item/organ/internal/liver/necron,
 	//	BP_KIDNEYS =    /obj/item/organ/internal/kidneys
 		)
-///datum/species/human/skitarii/handle_post_spawn(var/mob/living/carbon/human/H)
+///datum/species/human/necron/handle_post_spawn(var/mob/living/carbon/human/H)
 //	H.age = rand(min_age,max_age)//Random age doesn't quite matter I suppose
 //	if(H.f_style)//BALD
 //		H.f_style = "Shaved"
@@ -58,6 +58,12 @@
 // /mob/living/carbon/human/necron/Initialize()
 	// set_species("Necron")
 	// warfare_faction = IMPERIUM
+
+/mob/living/carbon/human/necron/New()
+
+	..()
+	species = all_species[SPECIES_NECRON]
+
 
 mob/living/carbon/human/necron/proc/givenecronstats()
 	set name = "Initialize Restoration Protocol"
