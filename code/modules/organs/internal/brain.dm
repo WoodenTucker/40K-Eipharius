@@ -224,3 +224,48 @@
 					if(prob(damprob))
 						take_damage(1)
 	..()
+
+/obj/item/organ/internal/brain/necron
+	name = "Necron Primary Control Unit"
+	desc = "A large chunk of some unknown material, it seems to house most of a Necron's functions."
+	organ_tag = BP_BRAIN
+	parent_organ = BP_HEAD
+	vital = 1
+	icon_state = "adamantine-resonator"
+	force = 1.0
+	w_class = ITEM_SIZE_SMALL
+	throwforce = 1.0
+	throw_speed = 3
+	throw_range = 5
+	origin_tech = list(TECH_DATA = 9, TECH_MATERIAL = 9, TECH_ENGINEERING = 9, TECH_COMBAT = 9)
+	attack_verb = list("attacked", "slapped", "whacked")
+	relative_size = 60
+	max_damage = 250
+	sales_price = 550 //If you can *get* one of these, it's ludicrously valuable.
+
+	var/can_use_mmi = FALSE
+
+/obj/item/organ/internal/brain/necron/Process()
+	if(owner)
+		if(damage > max_damage / 2 && healed_threshold)
+			healed_threshold = 0
+
+		if(damage < (max_damage / 4))
+			healed_threshold = 1
+
+		if(owner.paralysis < 50) //It's *possible* to paralyse them, but HARD
+
+			if(owner.stat == CONSCIOUS)
+				if(damage > 0 && prob(1))
+					owner.custom_pain("DAMAGE SUSTAINED TO CONTROL UNIT.",10)
+				if(is_bruised() && prob(1) && owner.eye_blurry <= 0)
+					to_chat(owner, "<span class='warning'>CONTROL UNIT VISUAL PROCESSING CENTRES DAMAGED.</span>")
+					owner.eye_blurry = 10
+				if(is_broken() && prob(1) && owner.get_active_hand())
+					to_chat(owner, "<span class='danger'>CONTROL UNIT MOTOR CONTROL SYSTEMS DAMAGED.</span>")
+					owner.drop_item()
+				if((damage >= (max_damage * 0.75)))
+					if(!owner.lying)
+						to_chat(owner, "<span class='danger'>SYSTEM ERROR, REBOOTING.</span>")
+					owner.Paralyse(75)
+	..()
