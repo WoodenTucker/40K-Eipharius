@@ -741,6 +741,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 
 /obj/item/organ/external/head/necron //Yes, it's done differently, this saves repeating about two and a half thousand lines of code.
 	organ_tag = BP_HEAD
+	icon = 'icons/mob/human_races/r_necron.dmi'
 	icon_name = "head_m"
 	name = "Necron head"
 	slot_flags = SLOT_BELT
