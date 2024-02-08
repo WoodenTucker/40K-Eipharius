@@ -14,7 +14,7 @@
 	radiation_mod = 0
 	brute_mod =      0.2
 	burn_mod =       0.2   
-	species_flags = SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_SLIP|SPECIES_FLAG_NO_POISON
+	species_flags = SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_SLIP|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_SCAN 
 	inherent_verbs = list(
 	/mob/living/carbon/human/necron/proc/necronsetup,
 		)
