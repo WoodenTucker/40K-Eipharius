@@ -38,7 +38,7 @@
 
 /datum/noble_entry/melee/powersword
 	name = "Power Blade"
-	cost = 150
+	cost = 350
 	item_path = /obj/item/melee/energy/powersword
 
 /datum/noble_entry/melee/glaive
