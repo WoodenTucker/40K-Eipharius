@@ -1434,7 +1434,7 @@
 		icon_state = "teslar0"
 
 /obj/item/gun/projectile/automatic/gaussrifle
-	name = "Magnetic Rifle"
+	name ="Gauss Rifle"
 	desc = "A strange alien weapon which hums with resonant frequencies alien to mankind."
 	icon = 'icons/map_project/port/ds13.dmi'
 	icon_state = "pulserifle"
