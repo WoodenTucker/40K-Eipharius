@@ -115,7 +115,7 @@
 /obj/effect/dummy/spell_jaunt/bullet_act(blah)
 	return
 
-/spell/targeted/necron_jaunt
+/*/spell/targeted/necron_jaunt
 	name = "Dimensional Shift"
 	desc = "Slip between the boundaries of dimensions, and become intangible."
 	feedback = "DS"
@@ -182,10 +182,10 @@
 	animation.icon_state = "liquify"
 	flick("liquify",animation)
 
-/spell/targeted/necron_jauntt/proc/jaunt_reappear(var/atom/movable/overlay/animation, var/mob/living/target)
+/spell/targeted/necron_jaunt/proc/jaunt_reappear(var/atom/movable/overlay/animation, var/mob/living/target)
 	flick("reappear",animation)
 
 /spell/targeted/necron_jaunt/proc/jaunt_steam(var/mobloc)
 	var/datum/effect/effect/system/steam_spread/steam = new /datum/effect/effect/system/steam_spread()
 	steam.set_up(10, 0, mobloc)
-	steam.start()
+	steam.start()*/
