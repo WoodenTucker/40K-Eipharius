@@ -1,7 +1,7 @@
 /
 
 /datum/species/human/necron
-	name = SPECIES_NECRON
+	name = "Necron"
 	brute_mod =      0.1                   //Why are you trying to punch a metal robot to death
 	burn_mod =       0.2                  //Once more, they are metal. The armor values compensate for the fact that they lack any armor as of now and I cant sprite shit
 	blurb = "A Hulking Necron Warrior, consisting of cold metal and malice."
@@ -46,9 +46,19 @@
 		BP_LIVER =    /obj/item/organ/internal/liver/necron,
 		BP_KIDNEYS =    /obj/item/organ/internal/kidneys
 		)
-/mob/living/carbon/human/necron/New(var/new_loc)
-	h_style = "Bald"
-	..(new_loc, new_necron)
+/datum/species/human/skitarii/handle_post_spawn(var/mob/living/carbon/human/H)
+	H.age = rand(min_age,max_age)//Random age doesn't quite matter I suppose
+	if(H.f_style)//BALD
+		H.f_style = "Shaved"
+	if(H.h_style)//SHAVED
+		H.h_style = "Bald"
+	to_chat(H, "<big><span class='warning'>You are a mindless and souless necron, do as you are commanded by your Necron Lord or Crypteck. /span></big>")
+	return ..()
+
+/mob/living/carbon/human/officer/Initialize()
+	. = ..()
+	set_species("Necron")
+	warfare_faction = IMPERIUM
 
 /mob/living/carbon/human/necron/proc/givenecronstats()
 	set name = "Initialize Restoration Protocol"

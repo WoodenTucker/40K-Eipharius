@@ -296,7 +296,7 @@
 #define SPECIES_RAT "Skaven"
 #define SPECIES_SCION "Tempestus Scion"
 #define SPECIES_OFFICER "Imperial Guard Officer"
-#define SPECIES_NECRON "Necron Warrior"
+#define SPECIES_NECRON "Necron"
 
 #define SURGERY_CLOSED 0
 #define SURGERY_OPEN 1
