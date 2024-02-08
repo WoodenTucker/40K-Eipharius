@@ -23,8 +23,11 @@
 /datum/noble_category/armor
 	name = "Armours"
 
-/datum/noble_category/supply
-	name = "Supplies"
+/datum/noble_category/clothing
+	name = "Clothing"
+
+//datum/noble_category/supply
+//	name = "Supplies"
 
 /datum/noble_category/bmarket
 	name = "Black Market"

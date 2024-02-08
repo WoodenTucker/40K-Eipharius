@@ -36,6 +36,9 @@
 		H.add_stats(rand(16,19), rand(13,17), rand(13,17), rand(10,13)) //meant to be a brute keeping the plebs in line
 		H.add_skills(rand(9,10),rand(7,10),rand(3,6),3,rand(2,5)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
+		H.verbs += list(
+			/mob/living/carbon/human/proc/ideology,
+		)
 		H.set_trait(new/datum/trait/death_tolerant())
 //		H.witchblood() //Psyker Enforcers don't exist
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
@@ -77,6 +80,9 @@
 		H.add_stats(rand(16,19), rand(13,17), rand(13,17), rand(10,13)) //meant to be a brute keeping the plebs in line
 		H.add_skills(rand(9,10),rand(7,10),rand(3,6),3,rand(2,5)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
+		H.verbs += list(
+			/mob/living/carbon/human/proc/ideology,
+		)
 		H.set_trait(new/datum/trait/death_tolerant())
 //		H.witchblood() //Psyker Enforcers don't exist
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
@@ -114,6 +120,9 @@
 		..()
 		H.get_idcard()?.access = list(1984, 356, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village)
 		H.fully_replace_character_name("Ordinate [current_name]")
+		H.verbs += list(
+			/mob/living/carbon/human/proc/ideology,
+		)
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(16,19), rand(13,17), rand(13,17), rand(10,13)) //meant to be a brute keeping the plebs in line
 		H.add_skills(rand(9,10),rand(7,10),rand(3,6),3,rand(2,5)) //melee, ranged, med, eng, surgery
@@ -163,7 +172,9 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
 		H.verbs += list(
-			/mob/living/carbon/human/proc/enforcerclass)
+			/mob/living/carbon/human/proc/enforcerclass,
+			/mob/living/carbon/human/proc/ideology,
+		)
 		to_chat(H, "<span class='notice'><b><font size=3> An Enforcer in the Magisterium. The Governership order you. Yet the Inquisition can override them. Patrol with the cadets. Make sure they know what they’re doing. Collect taxes and ensure the order of the world is peaceful and good. Be an undercover cop if you’re feeling ballsy.</font></b></span>")
 
 /datum/job/cadet
@@ -205,7 +216,9 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
 		H.verbs += list(
-			/mob/living/carbon/human/proc/enforcerclass)
+			/mob/living/carbon/human/proc/enforcerclass,
+			/mob/living/carbon/human/proc/ideology,
+		)
 		to_chat(H, "<span class='notice'><b><font size=3> (NEW PLAYER ROLE) A cadet in the Magisterium. The Deacon order you. Yet the Inquisition can override them. Your job is to assist the other enforcers in punishing crime and collecting taxes. </font></b></span>")
 
 /datum/job/arbitrator
@@ -246,6 +259,9 @@
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.warfare_faction = IMPERIUM
+		H.verbs += list(
+			/mob/living/carbon/human/proc/ideology,
+		)
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_inquisition)
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are an Arbitrator, in service to the Adeptus Arbites -- after a long journey across the sub-sector, you have arrived planetside and can begin your holy work bringing judgement to this planet. Your ultimate loyalty being to Holy Terra herself and the judiciary arm of the Adeptus Arbites.</font></b></span>")

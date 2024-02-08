@@ -296,6 +296,7 @@
 #define SPECIES_RAT "Skaven"
 #define SPECIES_SCION "Tempestus Scion"
 #define SPECIES_OFFICER "Imperial Guard Officer"
+#define SPECIES_NECRON "Necron"
 
 #define SURGERY_CLOSED 0
 #define SURGERY_OPEN 1
@@ -397,6 +398,7 @@
 #define NURGLE "Nurgle"
 #define TAU "Tau"
 #define TYRANIDS "Tyranids"
+#define NECRON "Necron"
 
 /*
 #define SKILL_LOW(x) x<=4

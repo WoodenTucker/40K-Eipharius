@@ -170,23 +170,79 @@ obj/item/gun/energy/staff/focus
 	max_shots = 15
 	self_recharge = 1
 
-/obj/item/gun/energy/meltagun
-	name = "Meltagun"
+/obj/item/gun/energy/melta
+	name = "melta"
+	desc = "If you see this complain that staff used the wrong object"
+	icon = 'icons/obj/weapons/gun/energy.dmi'
+	icon_state = "prifle"
+	item_state = "ionrifle"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	force = 15
+	one_hand_penalty = 3 //heavy af fam
+	accuracy = -0.5
+	self_recharge = 1
+	recharge_time = 14 // With a fire delay of 19. You fire every 2.3 seconds. 1 recharge time is 1 second. Keep recharges to 1/6 and a bit per shot. We want people to NEED to reload in combat. //dont want speedy bois
+	fire_delay = 15
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
+	cell_type = /obj/item/cell/plasma
+	ammoType =/obj/item/cell/plasma
+	charge_cost = 1800
+	wielded_item_state = "ionrifle-wielded"
+	var/plasma_overheat = 1 // Keeping track on how overheated the gun is
+	var/plasma_overheat_decay = 2 // The cooling of the gun per tick
+	var/plasma_overheat_max = 200 // When the gun exploads
+	Fire(atom/target, mob/living/user)
+		if(plasma_overheat >= 50)
+			to_chat(user, "<span class='warning'><b><font size=3>THE BARREL STARTS TO GLOW.</font></b></span>")
+		if(plasma_overheat >= 90)
+			to_chat(user, "<span class='warning'><b><font size=3>OVERHEAT WARNING.</font></b></span>")
+		if(plasma_overheat >= 150)
+			to_chat(user, "<span class='warning'><b><font size=3>CATASTROPHIC FAILURE IMMINENT.</font></b></span>")
+		..()
+		plasma_overheat += 30 // adding 30 heat for every pulling of the trigger (learn not to spam the fucking gun)
+	Process()
+		..()
+		if(plasma_overheat >= 0)
+			plasma_overheat -= plasma_overheat_decay // so the gun actually cools down
+		else
+			plasma_overheat = 0 // keepin the gun overheat above -1
+			return
+		if(plasma_overheat > plasma_overheat_max)
+			explosion(src.loc, -1, -1, 3, 3) // explodes u, dealing a lot of damage, still (a little) chance to survive
+
+
+/obj/item/gun/energy/melta/handheld
+	name = "Melta"
 	desc = "An enormously powerful, but short-ranged anti-tank weapon."
-	icon_state = "melta"
+	icon_state = "meltagun"
 	item_state = "multimelta"
 	wielded_item_state = "multimelta"
+	fire_sound = 'sound/weapons/guns/fire/melta.ogg'
 	icon = 'icons/cadia-sprites/migrated2/gun_2.dmi'
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	force = 8
 	str_requirement = 17
 	max_shots = 2
 	w_class = ITEM_SIZE_NORMAL
-	fire_delay = 12
-	charge_cost = 500
+	fire_delay = 16
+	charge_cost = 2000
 	cell_type = /obj/item/cell/plasma
 	ammoType = /obj/item/cell/plasma
 	projectile_type = /obj/item/projectile/energy/meltagun
+	plasma_overheat = 1 // Keeping track on how overheated the gun is
+	plasma_overheat_decay = 3 // The cooling of the gun per tick
+	plasma_overheat_max = 220 // When the gun exploads
+
+/obj/item/gun/energy/melta/handheld/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.2
+	slowdown_per_slot[slot_wear_suit] = 0.3
+	slowdown_per_slot[slot_belt] = 0.3
+	slowdown_per_slot[slot_r_hand] = 0.55
+	slowdown_per_slot[slot_l_hand] = 0.55
 
 //TYRANID WEAPONS
 //These are largely coded as energy guns, because they'll recharge on their own over time.

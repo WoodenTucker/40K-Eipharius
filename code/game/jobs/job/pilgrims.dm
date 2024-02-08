@@ -25,6 +25,7 @@
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Pilgrim. You left your home with little in search of more. Rumors of a holy site drew you to this planet, Messina. and now life is in your hands. <br> <span class = 'badmood'> + Go to your pilgrim tab and select your fate. + </span> </font></b></span>")
 		H.verbs += list(
 			/mob/living/carbon/human/proc/penitentclass,
+			/mob/living/carbon/human/proc/ideology,
 		)
 
 /datum/job/citizen //the plan is to have penitent be a default landing job, I will eventually add a randomized system that gives different loadouts much like the migrant system of lifeweb
@@ -54,8 +55,60 @@
 
 		H.verbs += list(
 			/mob/living/carbon/human/proc/citizenclass,
+			/mob/living/carbon/human/proc/ideology,
 		)
 
+
+//mob/living/carbon/human/proc/penitentclass(var/mob/living/carbon/human/M)
+/mob/living/carbon/human/proc/ideology()
+	set name = "Select your ideology"
+	set category = "CHOOSE YOUR FATE"
+	set desc = "Choose your character's ideology."
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
+		return
+
+	var/mob/living/carbon/human/U = src
+	U.verbs -= list(/mob/living/carbon/human/proc/ideology,) //removes verb
+	var/fates = list("OTHER","Puritan - Amalathian","Puritan - Ardentite","Puritan - Monodominant","Radical - Istvaanian","Radical - Oblationist","Radical - Cognitae","Radical - Recongrigator","Radical - Xanthite",)
+
+
+	var/classchoice = input("Choose your ideology", "Available ideologies") as anything in fates
+
+ //10 is base stat, below 12 is child stat, childs are supposed to be somewhere between 6-14 in stats.
+ //skills are between 1-5 for roles that have little to no reason to know something, 5-10 if they are able to naturally learn those skills, 5 is baseline,
+	switch(classchoice)
+
+		if("OTHER")
+			to_chat(U,"<span class='danger'><b><font size=4>CUSTOM IDEOLOGY</font></b></span>")
+			to_chat(U,"<span class='goodmood'><b><font size=3>Your beliefs and faith are unique to your character, specific to a unique story not commonly found amongst mankind. Following either an extreme heretical, xenos or puritan ideology such as the ways of Chaos Undivided or the Cult Mechanicus.</font></b></span>")
+		if("Puritan - Amalathian")
+			to_chat(U,"<span class='danger'><b><font size=4>THE AMALATHIAN</font></b></span>")
+			to_chat(U,"<span class='goodmood'><b><font size=3>The Amalathians believe that the Emperor has a grand plan and that it is unfolding as it should. They are therefore concerned with maintaining the status quo and react vehemently against change. They are less concerned about the threat of mutation, witchery and the like, and more active in ensuring there is harmony within the vast Imperial organizations, that any rivalries and discord are dealt with and kept to a minimum. It is the code of the Amalathian that strength is achieved through unity, and politicking and change will serve only to destabilize the Imperium. Noted amongst the many allies of the Amalathian are the Adeptus Arbites and local security forces. The mandate of such organizations being the upholding of Imperial law and order thus maintaining the status quo and, in the eyes of the Amalathian, the strength inherent in the Imperium and the Emperor's design for it. The ideologies of Istvaanism and Recongregation being polar opposites, they are considered the ultimate enemies of the Amalathian.</font></b></span>")
+		if("Puritan - Ardentite")
+			to_chat(U,"<span class='danger'><b><font size=4>THE ARDENTITE</font></b></span>")
+			to_chat(U,"<span class='goodmood'><b><font size=3>Ardentites are centered around the concept of the Emperor Incarnate but instead of believing in a single Divine Avatar, the Ardentities feel that the power of the God-Emperor is manifest either through the entirety of Mankind itself. Many feel that as Humanity evolves into becoming a psychic race, which is evidenced by the gradual rise in mutation and rise of psychic abilities, that the ultimate aim of the Emperor is to protect Mankind in this vulnerable state by disseminating his power throughout Humanity.</font></b></span>")
+		if("Puritan - Monodominant")
+			to_chat(U,"<span class='danger'><b><font size=4>THE MONODOMINANT</font></b></span>")
+			to_chat(U,"<span class='goodmood'><b><font size=3>Monodominants are an extremist faction known for their uncompromising prosecution of perceived enemies of the Imperium. As their name implies, they are of the firm belief that the Imperium, and only the Imperium, should be allowed to exist. They are zealous supporters of the concept of manifest destiny, and believe that this is only achievable by the extermination of all threats and impurities. Xenos, witchcraft, heresy, blasphemy, mutation and civil disobedience are crimes punishable by death in the eyes of a Monodominant and those accused of such crimes can expect no reprieve. They see the Imperium's war as a racial struggle of survival, and hope to kill enough aliens, mutants, psykers, and other 'inhuman' beings that natural selection will be allowed to take its course and Humanity will rise to the position of ultimate power.</font></b></span>")
+		if("Radical - Istvaanian")
+			to_chat(U,"<span class='danger'><b><font size=4>THE ISTVAANIAN</font></b></span>")
+			to_chat(U,"<span class='goodmood'><b><font size=3>To adherents of this ideology, conflict is desirable to further progress through strife. It holds that mankind has made its greatest achievements after periods of conflict, such as the Horus Heresy, or Age of Apostasy. It is the place of the Istvaanians to strengthen mankind through adversity, and so follow a 'survival of the fittest' doctrine. The philosophy is named after the Isstvan III virus-bombings that initiated the Horus Heresy. A secretive group of Istvaanians took on the name Elucidium to hide the true nature of the activities. The chief concern of Istvaanians is engendering and managing vital conflict. Though all conflict of any type interests them, raw warfare on a massive scale is what concerns them the most. The Istvaanians hold Sebastian Thor in particularly high regard, for his sweeping reforms were made possible only due to the bloodshed of the Age of Apostasy. Istvaanians' interventions are always a matter of judgement and wisdom, as above all they wish to strengthen the Imperium, not destroy it. It is those who are perceived as weak in their eyes that are the most likely to be subjected to their attentions.</font></b></span>")
+		if("Radical - Oblationist")
+			to_chat(U,"<span class='danger'><b><font size=4>THE OBLATIONIST</font></b></span>")
+			to_chat(U,"<span class='goodmood'><b><font size=3>Oblationists believe that the Warp, the xenos and the unclean are utterly damning and those who utilise them must face the ultimate sanction. Yet they also believe their use is necessary to overcome mankind's enemies. Therefore the righteous must sacrifice themselves and embrace damnation in order for humanity to survive. They hold an intolerance of all other radical factions in a manner similar to the most Puritanical factions, believing that only they have the right to battle against the great enemy. For it is their duty and honour to embrace the sins of the warp on behalf of all mankind.</font></b></span>")
+		if("Radical - Cognitae")
+			to_chat(U,"<span class='danger'><b><font size=4>THE COGNITAE</font></b></span>")
+			to_chat(U,"<span class='goodmood'><b><font size=3>The goal of the Cognitae is to 'liberate' Humanity from what it sees as the dogmatic oppression of the Imperium, using the powers of Chaos to achieve this. According to Inquisitor Gideon Ravenor, the Cognitae's aim was to develop, 'by means psychic, eugenic and noetic,' a generation of individuals who would work to further the aims of Chaos in the Scarus Sector. The Cognitae operates a network of 'academies' which engage in psychic training, eugenics, cloning, and forbidden sciences. The Cognitae is associated with the mysterious King in Yellow, though if he controls them or they control him is unclear.</font></b></span>")
+		if("Radical - Recongrigator")
+			to_chat(U,"<span class='danger'><b><font size=4>THE RECONGREGATOR</font></b></span>")
+			to_chat(U,"<span class='goodmood'><b><font size=3>Recongregationists hold that the Imperium, after millennia, has become decadent and corrupt. To remedy this, Recongregators consider that the Imperium should be rebuilt, lest it stagnate further and collapse under the pressure of countless threats from both without and within. The main issue within the Recongregators themselves is if this change to the Imperium should be sudden or gradual. They often help anti-Imperial sects and covens, even altering the cult's philosophies to match their own if possible. They are not above extreme action when necessary.</font></b></span>")
+		if("Radical - Xanthite")
+			to_chat(U,"<span class='danger'><b><font size=4>THE XANTHITE</font></b></span>")
+			to_chat(U,"<span class='goodmood'><b><font size=3>Xanthites do not advocate giving in to Chaos, bur rather wish to capture its essence and turn it to useful rather than destructive purposes. In the same way the Imperium uses the Warp for travel, Xanthites believe that other facets of Chaos can be controlled and tamed to benefit mankind. Thus these agents of radical heresy investigate all aspects of the Warp and Chaos often spending lifetimes in search of heretical knowledge, imbuing its power into themselves whenever possible. Xanthites have even been known to establish their own Chaos Cults, using the sect to unravel ancient mysteries and lore. Most though a Xanthite is a member of the artisan or noble classes of Imperial Society obsessed wiht forbidden lore.</font></b></span>")
 
 /*
 Pilgrim Fate System
@@ -629,6 +682,9 @@ Pilgrim Fate System
 		H.add_stats(rand(20,30), rand(15,18), rand(15,18), rand (2,5)) //ogryn are stronger than astartes or smh i don't remember
 		H.add_skills(rand(10,13),1,1,1,1) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.verbs += list(
+			/mob/living/carbon/human/proc/ideology,
+		)
 		to_chat(H, "<span class='notice'><b><font size=3>You're an up-and-coming entrepreneur on Messina -- the wisest most big brain Ogryn bonehead that ever lived. You were sent here by House Goliath from Necromunda who supplies most of the sub-sector through the cold-trade, and the Militarum with cheap manufactured autoguns who give it by the freight-load to private armies in the frontier. Goliath expects big things from you, so you best get to grinding Oggy... </font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>You're an up-and-coming entrepreneur on Messina -- the wisest most big brain Ogryn bonehead that ever lived. You were sent here by House Goliath from Necromunda who supplies most of the sub-sector through the cold-trade, and the Militarum with cheap manufactured autoguns who give it by the freight-load to private armies in the frontier. Goliath expects big things from you, so you best get to grinding Oggy... </font></b></span>")
 
@@ -684,6 +740,9 @@ Pilgrim Fate System
 		..()
 		H.get_idcard()?.access = list(225,247,access_village,access_daemon)
 		H.fully_replace_character_name("[current_name] Vane")
+		H.verbs += list(
+			/mob/living/carbon/human/proc/ideology,
+		)
 		H.add_stats(rand(14,17), rand(14,17), rand(14,17), rand(12,16)) 
 		H.add_skills(rand(7,11),rand(7,11),rand(2,8),6,rand(2,8)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -720,6 +779,9 @@ Pilgrim Fate System
 		H.adjustStaminaLoss(-INFINITY)
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.assign_random_quirk()
+		H.verbs += list(
+			/mob/living/carbon/human/proc/ideology,
+		)
 		to_chat(H, "<span class='notice'><b><font size=3>Having arrived recently from the spires of Necromunda. You, a former courtier, sought to establish something of a collection here with your remaining wealth. For whatever reason the dark, insidious and terrible aspects of this planet intrigued you enough to abandon your world and seek out... Messina.</font></b></span>")
 
 /datum/job/villagemedicae
@@ -746,6 +808,9 @@ Pilgrim Fate System
 		H.adjustStaminaLoss(-INFINITY)
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.assign_random_quirk()
+		H.verbs += list(
+			/mob/living/carbon/human/proc/ideology,
+		)
 		to_chat(H, "<span class='notice'><b><font size=3>An experienced medicae from your homeworld, you are one of many who booked passage to Messina in the hopes of building industries of medicine on a new world. You serve directly under the Magos Biologis who commands over the medicae of this world.</font></b></span>")
 
 
@@ -998,6 +1063,7 @@ Pilgrim Fate System
 
 		H.verbs += list(
 			/mob/living/carbon/human/proc/penitentclass,
+			/mob/living/carbon/human/proc/ideology,
 		)
 
 /datum/job/gangboy
@@ -1026,6 +1092,7 @@ Pilgrim Fate System
 		H.assign_random_quirk()
 		H.verbs += list(
 			/mob/living/carbon/human/proc/gangerclass,
+			/mob/living/carbon/human/proc/ideology,
 		)
 		to_chat(H, "<span class='notice'><b><font size=3>You're a ganger raised up in the factorums of Necromunda -- loyal completely to House Goliath as one of the best and brightest of the lot. You work for the Tavern Keeper, one of the heaviest hitters on Messina and are tasked with running the tavern alongside any other shady businesses you can keep afloat. For now the bosses don't want war with the Enforcers, so try to avoid making a mess. Like they say in Necromunda -- don't kill shit where you eat'.</font></b></span>")
 
