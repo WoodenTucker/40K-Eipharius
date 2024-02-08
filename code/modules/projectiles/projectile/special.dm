@@ -513,7 +513,7 @@
 
 /obj/item/projectile/energy/meltagun
 	name = "Meltagun beam"
-	icon_state = "spark"
+	icon_state = "melta"
 	damage = 90
 	damage_type = BURN
 	check_armour = "energy"
