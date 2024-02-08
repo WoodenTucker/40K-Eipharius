@@ -12,6 +12,7 @@
 	total_health = 250
 	mob_size = MOB_MEDIUM
 	strength = STR_VHIGH
+	blood_volume = 0
 	inherent_verbs = list(
 	/mob/living/carbon/human/necron/proc/necronsetup,
 		)
@@ -23,29 +24,43 @@
 
 	blood_color = "#4c0377"
 
+
+	has_limbs = list(
+		BP_CHEST =  list("path" = /obj/item/organ/external/robotic/chest/necron),
+		BP_GROIN =  list("path" = /obj/item/organ/external/robotic/groin/necron),
+		BP_HEAD =   list("path" = /obj/item/organ/external/head/necron),
+		BP_L_ARM =  list("path" = /obj/item/organ/external/robotic/arm/necron),
+		BP_R_ARM =  list("path" = /obj/item/organ/external/robotic/arm/right/necron),
+		BP_L_LEG =  list("path" = /obj/item/organ/external/robotic/leg/necron),
+		BP_R_LEG =  list("path" = /obj/item/organ/external/robotic/leg/right/necron),
+		BP_L_HAND = list("path" = /obj/item/organ/external/robotic/hand/necron),
+		BP_R_HAND = list("path" = /obj/item/organ/external/robotic/hand/right/necron),
+		BP_L_FOOT = list("path" = /obj/item/organ/external/robotic/foot/necron),
+		BP_R_FOOT = list("path" = /obj/item/organ/external/foot/robotic/right/necron)
+		)
+
+	has_organ = list(
+		BP_EYES =     /obj/item/organ/internal/eyes/necron,
+		BP_HEART =    /obj/item/organ/internal/heart/necron,
+		BP_BRAIN =    /obj/item/organ/internal/brain/necron
+		)
+
 /datum/species/necron/handle_post_spawn(var/mob/living/carbon/human/H)
-	H.age = rand(20,35)//Random age for kiddos.
-	if(H.f_style)//tau don't get beards.
+	if(H.f_style)
 		H.f_style = "Shaved"
-	to_chat(H, "<big><span class='warning'>For the Greater Good! Our warship has arrived in orbital range to convert this world to the greater good. We must first try diplomacy, see if a water caste awakes so that we can trade and convince the humans that we are not the true enemy. In time they may learn to convert to the Greater Good..</span></big>")
+	to_chat(H, "<big><span class='warning'>SYSTEMS BOOTING... YOU HAVE AWAKENED. SERVE YOUR LORD. PURGE THE PRIMITIVES INFESTING YOUR PLANET.</span></big>")
 	H.update_eyes()
 	return ..()
-/mob/living/carbon/human
-	var/new_tau = SPECIES_TAU
 
 /mob/living/carbon/human/necron
 	gender = MALE
 
 /mob/living/carbon/human/necron/New(var/new_loc)
 	h_style = "Bald"
-	..(new_loc, new_tau)
+	return ..()
 
 /mob/living/carbon/human/necron/Initialize()
 	. = ..()
 	warfare_faction = NECRON
-	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/tau)
-	outfit.equip(src)
-	isburied = 1
-
-	hand = 0//Make sure one of their hands is active.
+	src.rejuvenate()
 
