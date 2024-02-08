@@ -77,6 +77,9 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.set_trait(new/datum/trait/death_tolerant())
+		H.verbs += list(
+			/mob/living/carbon/human/proc/ideology,
+		)
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You were formely a lowly crew member to the Lord Captain, your freedom being granted by the wisdom of the Lord trader who gave you settling rights upon Messina. After a grueling campaign across the fringe, your Lord Captain had finally won both his dynasty and loyal crew the opportunity to finally settle down.. in the ass end of the frontier. </font></b></span>")
 
