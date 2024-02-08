@@ -80,6 +80,3 @@
 /mob/living/carbon/human/lackey/New(var/new_loc)
 	..(new_loc, "Lackey")
 
-/mob/living/carbon/human/necron/New(var/new_loc)
-	..(new_loc, SPECIES_NECRON)
-

@@ -368,19 +368,3 @@
 	safe_toxins_max = 30
 	SA_para_min = 60
 	SA_sleep_min = 120
-
-/obj/item/organ/internal/lungs/necron
-	name = "Synthesized Lungs" //I hate that I cant just easily remove bleeding, but this is the second best thing
-	icon_state = "lungs-prosthetic"
-	gender = PLURAL
-	organ_tag = BP_LUNGS
-	parent_organ = BP_CHEST
-	active_breathing = 0
-	min_bruised_damage = 150
-	min_broken_damage = 200
-	max_damage = 200
-	relative_size = 75
-	safe_exhaled_max = 60
-	safe_toxins_max = 30
-	SA_para_min = 60
-	SA_sleep_min = 120
