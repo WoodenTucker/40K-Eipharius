@@ -242,8 +242,7 @@
 	relative_size = 60
 	max_damage = 250
 	sales_price = 550 //If you can *get* one of these, it's ludicrously valuable.
-
-	var/can_use_mmi = FALSE
+	can_use_mmi = FALSE
 
 /obj/item/organ/internal/brain/necron/Process()
 	if(owner)
@@ -267,5 +266,5 @@
 				if((damage >= (max_damage * 0.75)))
 					if(!owner.lying)
 						to_chat(owner, "<span class='danger'>SYSTEM ERROR, REBOOTING.</span>")
-					owner.Paralyse(75)
+					owner.Paralyse(65)
 	..()
