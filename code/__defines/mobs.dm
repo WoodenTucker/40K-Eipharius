@@ -397,6 +397,7 @@
 #define NURGLE "Nurgle"
 #define TAU "Tau"
 #define TYRANIDS "Tyranids"
+#define NECRON "Necron"
 
 /*
 #define SKILL_LOW(x) x<=4
