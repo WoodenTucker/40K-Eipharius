@@ -26,6 +26,10 @@
 		src.nutrition = 600
 	if(src.thirst < 600)
 		src.thirst = 600
+	if(src.bowels > 0)
+		src.bowels = 0
+	if(src.bladder > 0)
+		src.bladder = 0
 	..()
 
 /mob/living/carbon/Move(NewLoc, direct)
