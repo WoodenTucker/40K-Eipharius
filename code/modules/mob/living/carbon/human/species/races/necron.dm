@@ -1,4 +1,4 @@
-/datum/species/necron //VERY WIP, DO NOT ADD INTO .DME YET.
+/datum/species/necron
 	name = SPECIES_NECRON
 	name_plural = "Necrons"
 	secondary_langs = list(LANGUAGE_NECRON)
@@ -13,6 +13,10 @@
 	mob_size = MOB_MEDIUM
 	strength = STR_VHIGH
 	blood_volume = 0
+	radiation_mod = 0
+	brute_mod =      0.2
+	burn_mod =       0.2   
+	species_flags = SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_SLIP|SPECIES_FLAG_NO_POISON
 	inherent_verbs = list(
 	/mob/living/carbon/human/necron/proc/necronsetup,
 		)
@@ -64,3 +68,30 @@
 	warfare_faction = NECRON
 	src.rejuvenate()
 
+/mob/living/carbon/human/necron/proc/necronsetup()
+	set name = "AWAKEN"
+	set category = "AWAKEN"
+	set desc = "Gives your equipment and stats."
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	var/necronclass = input("Select a Class","Class Selection") as null|anything in list("Necron Warrior")
+	switch(necronclass)
+		if("Necron Warrior")
+			warfare_faction = NECRON
+			//var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/security/colonel) //Add in Necron outfit when it's finished
+			outfit.equip(src)
+			src.add_stats(rand(25,30),rand(12,15),rand(25,30),rand(10,11)) //gives stats str, dext, end, int
+			src.add_skills(rand(14,18),rand(19,21),rand(3,5),rand(12,14),rand(3,5)) //melee, ranged, med, eng, surgery
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.set_quirk(new/datum/quirk/dead_inside())
+			src.update_eyes() //should fix grey vision
+			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC) //secondary language
+			src.warfare_language_shit(LANGUAGE_MECHANICUS)
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY 
+			src.thirst = INFINITY
+			src.nutrition = INFINITY 
+			src.verbs -= /mob/living/carbon/human/necron/proc/necronsetup //removes verb at the end so they can't spam it for whatever reason
