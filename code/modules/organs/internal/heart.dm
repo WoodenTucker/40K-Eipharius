@@ -219,9 +219,3 @@
 /obj/item/organ/internal/heart/astartes
 	name = "Astartes Hearts"
 	relative_size = 20
-
-/obj/item/organ/internal/heart/necron //Gotta make it  for some reason or another
-	name = "Energy Managment System"
-	icon_state = "heart-prosthetic"
-	relative_size = 20
-	
