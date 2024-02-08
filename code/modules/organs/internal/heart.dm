@@ -197,16 +197,16 @@
 			pulsesound = "extremely fast and faint"
 
 	. = "[pulsesound] pulse"
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
 /obj/item/organ/internal/heart/bioprinted
-	
-	
-	
+
+
+
 /obj/item/organ/internal/heart/chaos
 	name = "Le pecho de Chaos"
 
