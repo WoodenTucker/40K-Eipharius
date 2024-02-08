@@ -4,8 +4,6 @@
 	secondary_langs = list(LANGUAGE_NECRON)
 	name_language = null // Use the first-name last-name generator rather than a language scrambler
 	icobase = 'icons/mob/human_races/r_necron.dmi'
-	damage_mask = 'icons/mob/human_races/masks/dam_mask_human.dmi'
-	blood_mask = 'icons/mob/human_races/masks/blood_human.dmi'
 	min_age = 60000000
 	max_age = 120000000
 	gluttonous = GLUT_ITEM_NORMAL
