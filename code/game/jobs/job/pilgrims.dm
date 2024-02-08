@@ -73,7 +73,7 @@
 
 	var/mob/living/carbon/human/U = src
 	U.verbs -= list(/mob/living/carbon/human/proc/ideology,) //removes verb
-	var/fates = list("Mercenary","Scum","Nomad","Messian Tribal","Witch Hunter",)
+	var/fates = list("OTHER","Puritan - Amalathian","Puritan - Ardentite","Puritan - Monodominant","Radical - Istvaanian","Radical - Oblationist","Radical - Cognitae","Radical - Recongrigator","Radical - Xanthite",)
 
 
 	var/classchoice = input("Choose your ideology", "Available ideologies") as anything in fates
