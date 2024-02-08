@@ -551,6 +551,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 
 /obj/item/organ/external/robotic/arm/necron
 	organ_tag = BP_L_ARM
+	icon = 'icons/mob/human_races/r_necron.dmi'
 	name = "Necron left arm"
 	icon_name = "l_arm"
 	max_damage = 120
@@ -561,19 +562,30 @@ obj/item/organ/external/robotic/hand/experimental/right
 	joint = "left elbow"
 	amputation_point = "left shoulder"
 	can_grasp = 1
+	dislocated = -1
+	cannot_break = 1
+	cannot_amputate = 1
 
-/obj/item/organ/external/robotic/hand/right/necron
-	organ_tag = BP_R_HAND
-	name = "Necron right hand"
-	icon_name = "r_hand"
-	body_part = HAND_RIGHT
-	parent_organ = BP_R_ARM
-	joint = "right wrist"
-	amputation_point = "right wrist"
+/obj/item/organ/external/robotic/arm/right/necron
+	organ_tag = BP_R_ARM
+	icon = 'icons/mob/human_races/r_necron.dmi'
+	name = "Necron right arm"
+	icon_name = "r_arm"
+	max_damage = 120
+	min_broken_damage = 90
+	w_class = ITEM_SIZE_NORMAL
+	body_part = ARM_RIGHT
+	parent_organ = BP_CHEST
+	joint = "right elbow"
+	amputation_point = "right shoulder"
 	can_grasp = 1
+	dislocated = -1
+	cannot_break = 1
+	cannot_amputate = 1
 
 /obj/item/organ/external/robotic/hand/necron
 	organ_tag = BP_L_HAND
+	icon = 'icons/mob/human_races/r_necron.dmi'
 	name = "Necron left hand"
 	icon_name = "l_hand"
 	max_damage = 90
@@ -584,9 +596,13 @@ obj/item/organ/external/robotic/hand/experimental/right
 	joint = "left wrist"
 	amputation_point = "left wrist"
 	can_grasp = 1
+	dislocated = -1
+	cannot_break = 1
+	cannot_amputate = 1
 
 /obj/item/organ/external/robotic/hand/right/necron
 	organ_tag = BP_R_HAND
+	icon = 'icons/mob/human_races/r_necron.dmi'
 	name = "Necron right hand"
 	icon_name = "r_hand"
 	body_part = HAND_RIGHT
@@ -594,3 +610,156 @@ obj/item/organ/external/robotic/hand/experimental/right
 	joint = "right wrist"
 	amputation_point = "right wrist"
 	can_grasp = 1
+	dislocated = -1
+	cannot_break = 1
+	cannot_amputate = 1
+
+/obj/item/organ/external/robotic/chest/necron
+	name = "Necron upper body"
+	icon = 'icons/mob/human_races/r_necron.dmi'
+	organ_tag = BP_CHEST
+	icon_name = "torso"
+	max_damage = 300
+	min_broken_damage = 250
+	w_class = ITEM_SIZE_HUGE //Used for dismembering thresholds, in addition to storage. Humans are w_class 6, so it makes sense that chest is w_class 5.
+	body_part = UPPER_TORSO
+	vital = 1
+	amputation_point = "spine"
+	joint = "neck"
+	dislocated = -1
+	gendered_icon = 1
+	cannot_amputate = 1
+	parent_organ = null
+	encased = "ribcage"
+	artery_name = "aorta"
+	cavity_name = "thoracic"
+
+/obj/item/organ/external/robotic/groin/necron
+	name = "Necron lower body"
+	icon = 'icons/mob/human_races/r_necron.dmi'
+	organ_tag = BP_GROIN
+	icon_name = "groin"
+	max_damage = 250
+	min_broken_damage = 200
+	w_class = ITEM_SIZE_LARGE
+	body_part = LOWER_TORSO
+	vital = TRUE
+	parent_organ = BP_CHEST
+	amputation_point = "lumbar"
+	joint = "hip"
+	dislocated = -1
+	cannot_break = 1
+	cannot_amputate = 1
+	gendered_icon = 1
+	artery_name = "iliac artery"
+	cavity_name = "abdominal"
+
+/obj/item/organ/external/robotic/leg/necron
+	organ_tag = BP_L_LEG
+	name = "Necron left leg"
+	icon = 'icons/mob/human_races/r_necron.dmi'
+	icon_name = "l_leg"
+	max_damage = 150
+	min_broken_damage = 120
+	w_class = ITEM_SIZE_NORMAL
+	body_part = LEG_LEFT
+	icon_position = LEFT
+	parent_organ = BP_GROIN
+	joint = "left knee"
+	amputation_point = "left hip"
+	can_stand = 1
+	has_tendon = FALSE
+	artery_name = "femoral artery"
+	arterial_bleed_severity = 0
+	gibbable = FALSE
+	cannot_break = 1
+	cannot_amputate = 1
+	dislocated = -1
+
+/obj/item/organ/external/robotic/leg/right/necron
+	organ_tag = BP_R_LEG
+	name = "Necron right leg"
+	icon = 'icons/mob/human_races/r_necron.dmi'
+	icon_name = "r_leg"
+	max_damage = 150
+	min_broken_damage = 120
+	w_class = ITEM_SIZE_NORMAL
+	body_part = LEG_RIGHT
+	icon_position = RIGHT
+	parent_organ = BP_GROIN
+	joint = "right knee"
+	amputation_point = "right hip"
+	can_stand = 1
+	has_tendon = FALSE
+	artery_name = "femoral artery"
+	arterial_bleed_severity = 0
+	gibbable = FALSE
+	cannot_break = 1
+	cannot_amputate = 1
+	dislocated = -1
+
+/obj/item/organ/external/robotic/foot/necron
+	organ_tag = BP_L_FOOT
+	name = "Necron left foot"
+	icon = 'icons/mob/human_races/r_necron.dmi'
+	icon_name = "l_foot"
+	max_damage = 100
+	min_broken_damage = 50
+	w_class = ITEM_SIZE_SMALL
+	body_part = FOOT_LEFT
+	icon_position = LEFT
+	parent_organ = BP_L_LEG
+	joint = "left ankle"
+	amputation_point = "left ankle"
+	can_stand = 1
+	has_tendon = FALSE
+	arterial_bleed_severity = 0
+	gibbable = FALSE
+	cannot_break = 1
+	cannot_amputate = 1
+	dislocated = -1
+
+/obj/item/organ/external/foot/robotic/right/necron
+	organ_tag = BP_R_FOOT
+	name = "Necron right foot"
+	icon = 'icons/mob/human_races/r_necron.dmi'
+	icon_name = "r_foot"
+	max_damage = 100
+	min_broken_damage = 50
+	w_class = ITEM_SIZE_SMALL
+	body_part = FOOT_RIGHT
+	icon_position = RIGHT
+	parent_organ = BP_R_LEG
+	joint = "right ankle"
+	amputation_point = "right ankle"
+	can_stand = 1
+	has_tendon = FALSE
+	arterial_bleed_severity = 0
+	gibbable = FALSE
+	cannot_break = 1
+	cannot_amputate = 1
+
+/obj/item/organ/external/head/necron //Yes, it's done differently, this saves repeating about two and a half thousand lines of code.
+	organ_tag = BP_HEAD
+	icon_name = "head_m"
+	name = "Necron head"
+	slot_flags = SLOT_BELT
+	max_damage = 200
+	min_broken_damage = 200
+	w_class = ITEM_SIZE_NORMAL
+	body_part = HEAD
+	vital = 1
+	parent_organ = BP_CHEST
+	joint = "jaw"
+	amputation_point = "neck"
+	gendered_icon = 1
+	encased = "skull"
+	cavity_name = "cranial"
+	arterial_bleed_severity = 0
+	gibbable = FALSE
+	cannot_break = 1
+	cannot_amputate = 1
+	dislocated = -1
+	brute_mod = 0.7                  // Multiplier for incoming brute damage. //Made of metal, they're harder to damage.
+	burn_mod = 0.2                   // As above for burn. //Mechanical limbs* can* be burned, but they're far more resistant.
+	var/toxins_mod = 0
