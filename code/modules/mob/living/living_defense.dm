@@ -54,19 +54,19 @@
 		if(absorb_text)
 			show_message("<span class='warning'>[absorb_text]</span>")
 		else
-			show_message("<span class='warning'>Your armor blocks the blow!</span>")
+			show_message("<span class='warning'>Your armour blocks the blow!</span>")
 		playsound(src, "sound/weapons/armorblockheavy[rand(1,3)].ogg", 50, 1, 1)
 		return 100
 
-	var/damage_breakthrough = (100 - ((armor - armour_pen) * 5)) //This takes the armour, subtracts armour pen, and getsa percentage between 0 and 100, depending on the difference between them, with 20 points of armour above AP being 100% block.
-		if(soften_text)
-			show_message("<span class='warning'>[soften_text]</span>")
-		else
-			show_message("<span class='warning'>Your armor softens the blow!</span>")
-		if(damage_breakthrough < 0)
-			damage_breakthrough == 0
-		playsound(src, "sound/weapons/armorblock[rand(1,4)].ogg", 50, 1, 1)
-		return damage_breakthrough
+	var/damage_breakthrough = (100 - ((armor - armour_pen) * 5)) //This takes the armour, subtracts armour pen, and gets a percentage between 0 and 100, depending on the difference between them, with 20 points of armour above AP being 100% block.
+	if(soften_text)
+		show_message("<span class='warning'>[soften_text]</span>")
+	else
+		show_message("<span class='warning'>Your armor softens the blow!</span>")
+	if(damage_breakthrough < 0)
+		damage_breakthrough = 0
+	playsound(src, "sound/weapons/armorblock[rand(1,4)].ogg", 50, 1, 1)
+	return damage_breakthrough
 
 
 //Adds two armor values together.

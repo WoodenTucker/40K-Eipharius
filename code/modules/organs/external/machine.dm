@@ -548,3 +548,49 @@ obj/item/organ/external/robotic/hand/experimental/right
 	joint = "left elbow"
 	amputation_point = "left shoulder"
 	can_grasp = 1
+
+/obj/item/organ/external/robotic/arm/necron
+	organ_tag = BP_L_ARM
+	name = "Necron left arm"
+	icon_name = "l_arm"
+	max_damage = 120
+	min_broken_damage = 90
+	w_class = ITEM_SIZE_NORMAL
+	body_part = ARM_LEFT
+	parent_organ = BP_CHEST
+	joint = "left elbow"
+	amputation_point = "left shoulder"
+	can_grasp = 1
+
+/obj/item/organ/external/robotic/hand/right/necron
+	organ_tag = BP_R_HAND
+	name = "Necron right hand"
+	icon_name = "r_hand"
+	body_part = HAND_RIGHT
+	parent_organ = BP_R_ARM
+	joint = "right wrist"
+	amputation_point = "right wrist"
+	can_grasp = 1
+
+/obj/item/organ/external/robotic/hand/necron
+	organ_tag = BP_L_HAND
+	name = "Necron left hand"
+	icon_name = "l_hand"
+	max_damage = 90
+	min_broken_damage = 70
+	w_class = ITEM_SIZE_SMALL
+	body_part = HAND_LEFT
+	parent_organ = BP_L_ARM
+	joint = "left wrist"
+	amputation_point = "left wrist"
+	can_grasp = 1
+
+/obj/item/organ/external/robotic/hand/right/necron
+	organ_tag = BP_R_HAND
+	name = "Necron right hand"
+	icon_name = "r_hand"
+	body_part = HAND_RIGHT
+	parent_organ = BP_R_ARM
+	joint = "right wrist"
+	amputation_point = "right wrist"
+	can_grasp = 1
