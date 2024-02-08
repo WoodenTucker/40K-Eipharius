@@ -226,7 +226,6 @@
 	relative_size = 10
 	innate_flash_protection = FLASH_PROTECTION_MAJOR
 	max_damage = 65
-	sales_price = 15
-	darkness_view = 50
-	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	vision_flags = SEE_TURFS|SEE_MOBS|SEE_OBJS|SEE_SELF
+
 
