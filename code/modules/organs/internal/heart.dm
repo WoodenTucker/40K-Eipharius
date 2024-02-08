@@ -236,3 +236,23 @@
 			to_chat(owner, "<span class='warning'>You can feel your second heart beat hard, supporting your circulatory system!</span>")
 		handle_blood()
 	..()
+
+/obj/item/organ/internal/heart/necron
+	name = "Power Core"
+	icon_state = "adamantine-voicebox"
+	organ_tag = "heart"
+	parent_organ = BP_CHEST
+	dead_icon = "adamantine-voicebox"
+	pulse = PULSE_NORM
+	heartbeat = 0
+	beat_sound = '/sound/effects/scan_beep.ogg'
+	next_blood_squirt = 0
+	relative_size = 15
+	max_damage = 60
+	open
+	sales_price = 300
+
+/obj/item/organ/internal/heart/necron/Process()
+	..()
+
+//Not much for it to do, it exists mostly to maintain the Brain
