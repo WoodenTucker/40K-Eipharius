@@ -1,4 +1,4 @@
-/datum/species/necron //VERY WIP, DO NOT MERGE
+/datum/species/necron //VERY WIP, DO NOT ADD INTO .DME YET.
 	name = SPECIES_NECRON
 	name_plural = "Necrons"
 	secondary_langs = list(LANGUAGE_NECRON)
