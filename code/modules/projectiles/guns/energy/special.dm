@@ -121,18 +121,37 @@ obj/item/gun/energy/staff/focus
 	self_recharge = 1
 
 
-/obj/item/gun/energy/gauss
+/obj/item/gun/energy/gaussflayer
 	name = "Gauss Flayer"
 	desc = "A deadly weapon wielded by Necron Warriors"
 	icon_state = "gaussflayer"
 	item_state = "gaussflayer"
 	origin_tech = list(TECH_COMBAT = 9, TECH_MAGNET = 9)
 	w_class = ITEM_SIZE_NORMAL
-	force = 5
+	fire_delay = 2 //Gotta balance the whole infinite ammo a little
+	force = 20 //it has a giant spike on the end of it
 	slot_flags = SLOT_BELT|SLOT_BACK
+	str_requirement = 20
 	one_hand_penalty = 0
 	charge_cost = 20
 	max_shots = 10
+	projectile_type = /obj/item/projectile/gauss
+	self_recharge = 1
+
+/obj/item/gun/energy/gaussblaster
+	name = "Gauss Blaster"
+	desc = "A double barreled gauss weapon with green energy coursing through it."
+	icon_state = "gaussblaster"
+	item_state = "gaussblaster"
+	origin_tech = list(TECH_COMBAT = 9, TECH_MAGNET = 9)
+	w_class = ITEM_SIZE_NORMAL
+	burst_delay = 1
+	force = 25 //Larger and it ALSO has a giant spike
+	slot_flags = SLOT_BELT|SLOT_BACK
+	str_requirement = 20 //random pilgrims will NOT be using this
+	one_hand_penalty = 0
+	charge_cost = 20
+	max_shots = 6
 	projectile_type = /obj/item/projectile/gauss
 	self_recharge = 1
 
