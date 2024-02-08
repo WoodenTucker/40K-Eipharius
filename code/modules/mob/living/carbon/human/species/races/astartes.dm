@@ -2,8 +2,6 @@
 Astartes
 */
 
-//adminspawning these in still doesn't work, need to be rejuvenated
-
 /datum/species/human/astartes
 	name = SPECIES_ASTARTES
 	name_plural = "Astartes"
@@ -20,8 +18,8 @@ Astartes
 	damage_mask = 'icons/mob/human_races/masks/dam_mask_human.dmi'
 	blood_mask = 'icons/mob/human_races/masks/blood_human.dmi'
 	eye_icon_location = 'icons/mob/astartes_face.dmi'
-	blood_volume = 620 // how much blood an Astartes has
-	slowdown = -0.1 //Increased move speed
+	blood_volume = 820 // how much blood an Astartes has
+	slowdown = -0.3 //Increased move speed
 	eye_icon = "eyes_s"
 	gluttonous = GLUT_ITEM_NORMAL
 	total_health = 350 // a normal human has 200 brain health, Astartes have 350 //P.S this is brain health
@@ -75,7 +73,7 @@ Astartes
 		BP_BRAIN =    /obj/item/organ/internal/brain,
 		BP_LUNGS =   /obj/item/organ/internal/lungs/astartes,
 		BP_LIVER =     /obj/item/organ/internal/liver/astartes,
-		BP_KIDNEYS =     /obj/item/organ/internal/kidneys
+		BP_KIDNEYS =     /obj/item/organ/internal/kidneys/astartes
 		)
 
 //gives them the astartes aura
@@ -172,6 +170,8 @@ Astartes
 			src.h_style = "Bald"
 			src.bladder = -INFINITY
 			src.bowels = -INFINITY //integrated shitter
+			src.thirst = INFINITY
+			src.nutrition = INFINITY
 			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
 			src.vice = null //off for now
 			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
@@ -195,6 +195,8 @@ Astartes
 			src.h_style = "Bald"
 			src.bladder = -INFINITY
 			src.bowels = -INFINITY //integrated shitter
+			src.thirst = INFINITY
+			src.nutrition = INFINITY
 			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
 			src.vice = null //off for now
 			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
@@ -218,6 +220,8 @@ Astartes
 			src.h_style = "Bald"
 			src.bladder = -INFINITY
 			src.bowels = -INFINITY //integrated shitter
+			src.thirst = INFINITY
+			src.nutrition = INFINITY
 			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
 			src.vice = null //off for now
 			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
@@ -241,6 +245,8 @@ Astartes
 			src.h_style = "Bald"
 			src.bladder = -INFINITY
 			src.bowels = -INFINITY //integrated shitter
+			src.thirst = INFINITY
+			src.nutrition = INFINITY
 			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
 			src.vice = null //off for now
 			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
