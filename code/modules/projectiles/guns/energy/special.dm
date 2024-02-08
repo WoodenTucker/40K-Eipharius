@@ -124,6 +124,7 @@ obj/item/gun/energy/staff/focus
 /obj/item/gun/energy/gauss
 	name = "Gauss Flayer"
 	desc = "A deadly weapon wielded by Necron Warriors"
+	item_icons = 'gauss_flayer'
 	icon_state = "gauss_flayer"
 	item_state = "gaussflayer"
 	origin_tech = list(TECH_COMBAT = 9, TECH_MAGNET = 9)

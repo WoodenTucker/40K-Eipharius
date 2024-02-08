@@ -24,43 +24,42 @@
 	)
 	radiation_mod = 0
 
-	has_limbs = list(
-		BP_CHEST =  list("path" = /obj/item/organ/external/chest/unbreakable/necron),
-		BP_GROIN =  list("path" = /obj/item/organ/external/groin/unbreakable/necron),
-		BP_HEAD =   list("path" = /obj/item/organ/external/head/unbreakable/necron),
-		BP_L_ARM =  list("path" = /obj/item/organ/external/arm/unbreakable/necron),
-		BP_R_ARM =  list("path" = /obj/item/organ/external/arm/right/unbreakable/necron),
-		BP_L_LEG =  list("path" = /obj/item/organ/external/leg/unbreakable/necron),
-		BP_R_LEG =  list("path" = /obj/item/organ/external/leg/right/unbreakable/necron),
-		BP_L_HAND = list("path" = /obj/item/organ/external/hand/unbreakable/necron),
-		BP_R_HAND = list("path" = /obj/item/organ/external/hand/right/unbreakable/necron),
-		BP_L_FOOT = list("path" = /obj/item/organ/external/foot/unbreakable/necron),
-		BP_R_FOOT = list("path" = /obj/item/organ/external/foot/right/unbreakable/necron)
+//	//has_limbs = list(
+		//BP_CHEST =  list("path" = /obj/item/organ/external/chest/unbreakable/necron),
+		//BP_GROIN =  list("path" = /obj/item/organ/external/groin/unbreakable/necron),
+		//BP_HEAD =   list("path" = /obj/item/organ/external/head/unbreakable/necron),
+		//BP_L_ARM =  list("path" = /obj/item/organ/external/arm/unbreakable/necron),
+		//BP_R_ARM =  list("path" = /obj/item/organ/external/arm/right/unbreakable/necron),
+		//BP_L_LEG =  list("path" = /obj/item/organ/external/leg/unbreakable/necron),
+		//BP_R_LEG =  list("path" = /obj/item/organ/external/leg/right/unbreakable/necron),
+		//BP_L_HAND = list("path" = /obj/item/organ/external/hand/unbreakable/necron),
+	//	BP_R_HAND = list("path" = /obj/item/organ/external/hand/right/unbreakable/necron),
+	//	BP_L_FOOT = list("path" = /obj/item/organ/external/foot/unbreakable/necron),
+	//	BP_R_FOOT = list("path" = /obj/item/organ/external/foot/right/unbreakable/necron)
 		)
 
-	has_organ = list(
-		BP_EYES =     /obj/item/organ/internal/eyes/augmetic/advanced/upgraded,
-		BP_HEART =    /obj/item/organ/internal/heart/necron,
-		BP_BRAIN =    /obj/item/organ/internal/brain,
-		BP_LUNGS =   /obj/item/organ/internal/lungs/necron,
-		BP_LIVER =    /obj/item/organ/internal/liver/necron,
-		BP_KIDNEYS =    /obj/item/organ/internal/kidneys
+//	has_organ = list(
+//		BP_EYES =     /obj/item/organ/internal/eyes/augmetic/advanced/upgraded,
+//		BP_HEART =    /obj/item/organ/internal/heart/necron,
+	//	BP_BRAIN =    /obj/item/organ/internal/brain,
+	//	BP_LUNGS =   /obj/item/organ/internal/lungs/necron,
+	//	BP_LIVER =    /obj/item/organ/internal/liver/necron,
+	//	BP_KIDNEYS =    /obj/item/organ/internal/kidneys
 		)
-/datum/species/human/skitarii/handle_post_spawn(var/mob/living/carbon/human/H)
-	H.age = rand(min_age,max_age)//Random age doesn't quite matter I suppose
-	if(H.f_style)//BALD
-		H.f_style = "Shaved"
-	if(H.h_style)//SHAVED
-		H.h_style = "Bald"
-	to_chat(H, "<big><span class='warning'>You are a mindless and souless necron, do as you are commanded by your Necron Lord or Crypteck. /span></big>")
-	return ..()
+///datum/species/human/skitarii/handle_post_spawn(var/mob/living/carbon/human/H)
+//	H.age = rand(min_age,max_age)//Random age doesn't quite matter I suppose
+//	if(H.f_style)//BALD
+//		H.f_style = "Shaved"
+	//if(H.h_style)//SHAVED
+//		H.h_style = "Bald"
+	//to_chat(H, "<big><span class='warning'>You are a mindless and souless necron, do as you are commanded by your Necron Lord or Crypteck. /span></big>")
+	//return ..()
 
-/mob/living/carbon/human/officer/Initialize()
-	. = ..()
-	set_species("Necron")
-	warfare_faction = IMPERIUM
+// /mob/living/carbon/human/necron/Initialize()
+	// set_species("Necron")
+	// warfare_faction = IMPERIUM
 
-/mob/living/carbon/human/necron/proc/givenecronstats()
+mob/living/carbon/human/necron/proc/givenecronstats()
 	set name = "Initialize Restoration Protocol"
 	set category = "Necron"
 	set desc = "Gives necron stats because shitcode"
