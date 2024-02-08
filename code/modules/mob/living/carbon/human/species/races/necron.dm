@@ -28,17 +28,17 @@
 
 
 	has_limbs = list(
-		BP_CHEST =  list("path" = /obj/item/organ/external/robotic/chest/necron),
-		BP_GROIN =  list("path" = /obj/item/organ/external/robotic/groin/necron),
+		BP_CHEST =  list("path" = /obj/item/organ/external/chest/necron),
+		BP_GROIN =  list("path" = /obj/item/organ/external/groin/necron),
 		BP_HEAD =   list("path" = /obj/item/organ/external/head/necron),
-		BP_L_ARM =  list("path" = /obj/item/organ/external/robotic/arm/necron),
-		BP_R_ARM =  list("path" = /obj/item/organ/external/robotic/arm/right/necron),
-		BP_L_LEG =  list("path" = /obj/item/organ/external/robotic/leg/necron),
-		BP_R_LEG =  list("path" = /obj/item/organ/external/robotic/leg/right/necron),
-		BP_L_HAND = list("path" = /obj/item/organ/external/robotic/hand/necron),
-		BP_R_HAND = list("path" = /obj/item/organ/external/robotic/hand/right/necron),
-		BP_L_FOOT = list("path" = /obj/item/organ/external/robotic/foot/necron),
-		BP_R_FOOT = list("path" = /obj/item/organ/external/foot/robotic/right/necron)
+		BP_L_ARM =  list("path" = /obj/item/organ/external/arm/necron),
+		BP_R_ARM =  list("path" = /obj/item/organ/external/arm/right/necron),
+		BP_L_LEG =  list("path" = /obj/item/organ/external/leg/necron),
+		BP_R_LEG =  list("path" = /obj/item/organ/external/leg/right/necron),
+		BP_L_HAND = list("path" = /obj/item/organ/external/hand/necron),
+		BP_R_HAND = list("path" = /obj/item/organ/external/hand/right/necron),
+		BP_L_FOOT = list("path" = /obj/item/organ/external/foot/necron),
+		BP_R_FOOT = list("path" = /obj/item/organ/external/foot/right/necron)
 		)
 
 	has_organ = list(
