@@ -245,7 +245,6 @@
 	dead_icon = "adamantine-voicebox"
 	pulse = PULSE_NORM
 	heartbeat = 0
-	beat_sound = '/sound/effects/scan_beep.ogg'
 	next_blood_squirt = 0
 	relative_size = 15
 	max_damage = 60
