@@ -43,7 +43,7 @@
 
 	has_organ = list(
 		BP_EYES =     /obj/item/organ/internal/eyes/necron,
-		BP_HEART =    /obj/item/organ/internal/heart/necron,
+		BP_CELL =    /obj/item/organ/internal/necron,
 		BP_BRAIN =    /obj/item/organ/internal/brain/necron
 		)
 
