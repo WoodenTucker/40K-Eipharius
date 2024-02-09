@@ -170,19 +170,9 @@ obj/item/gun/energy/staff/focus
 	str_requirement = 20
 	one_hand_penalty = 0
 	charge_cost = 20
-	max_shots = 1
+	max_shots = 4
 	projectile_type = /obj/item/projectile/gauss
 	self_recharge = 1
-	/obj/item/gun/energy/synapticdis/verb/scope()
-		set category = "Object"
-		set name = "Use Scope"
-		set popup_menu = 1
-		toggle_scope(usr, 4)
-
-/obj/item/gun/energy/synapticdis/equipped(mob/user)
-	..()
-	if(user.zoomed)
-		user.do_zoom()
 
 /obj/item/gun/energy/WarpLens
 	name = "Warp Lens"
