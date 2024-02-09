@@ -535,6 +535,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 	robotic = ORGAN_ROBOT
 	can_toggle = 1
 	is_toggled = 1
+	arterial_bleed_severity = 0
 
 /obj/item/organ/external/robotic/servitor/arm
 	organ_tag = BP_L_ARM
@@ -548,8 +549,9 @@ obj/item/organ/external/robotic/hand/experimental/right
 	joint = "left elbow"
 	amputation_point = "left shoulder"
 	can_grasp = 1
+	arterial_bleed_severity = 0
 
-/obj/item/organ/external/robotic/arm/necron
+/obj/item/organ/external/arm/necron
 	organ_tag = BP_L_ARM
 	icon = 'icons/mob/human_races/r_necron.dmi'
 	name = "Necron left arm"
@@ -565,8 +567,9 @@ obj/item/organ/external/robotic/hand/experimental/right
 	dislocated = -1
 	cannot_break = 1
 	cannot_amputate = 1
+	arterial_bleed_severity = 0
 
-/obj/item/organ/external/robotic/arm/right/necron
+/obj/item/organ/external/arm/right/necron
 	organ_tag = BP_R_ARM
 	icon = 'icons/mob/human_races/r_necron.dmi'
 	name = "Necron right arm"
@@ -582,8 +585,9 @@ obj/item/organ/external/robotic/hand/experimental/right
 	dislocated = -1
 	cannot_break = 1
 	cannot_amputate = 1
+	arterial_bleed_severity = 0
 
-/obj/item/organ/external/robotic/hand/necron
+/obj/item/organ/external/hand/necron
 	organ_tag = BP_L_HAND
 	icon = 'icons/mob/human_races/r_necron.dmi'
 	name = "Necron left hand"
@@ -599,8 +603,9 @@ obj/item/organ/external/robotic/hand/experimental/right
 	dislocated = -1
 	cannot_break = 1
 	cannot_amputate = 1
+	arterial_bleed_severity = 0
 
-/obj/item/organ/external/robotic/hand/right/necron
+/obj/item/organ/external/hand/right/necron
 	organ_tag = BP_R_HAND
 	icon = 'icons/mob/human_races/r_necron.dmi'
 	name = "Necron right hand"
@@ -613,12 +618,13 @@ obj/item/organ/external/robotic/hand/experimental/right
 	dislocated = -1
 	cannot_break = 1
 	cannot_amputate = 1
+	arterial_bleed_severity = 0
 
-/obj/item/organ/external/robotic/chest/necron
+/obj/item/organ/external/chest/necron
 	name = "Necron upper body"
 	icon = 'icons/mob/human_races/r_necron.dmi'
 	organ_tag = BP_CHEST
-	icon_name = "torso"
+	icon_name = "torso_m"
 	max_damage = 300
 	min_broken_damage = 250
 	w_class = ITEM_SIZE_HUGE //Used for dismembering thresholds, in addition to storage. Humans are w_class 6, so it makes sense that chest is w_class 5.
@@ -633,8 +639,9 @@ obj/item/organ/external/robotic/hand/experimental/right
 	encased = "ribcage"
 	artery_name = "aorta"
 	cavity_name = "thoracic"
+	arterial_bleed_severity = 0
 
-/obj/item/organ/external/robotic/groin/necron
+/obj/item/organ/external/groin/necron
 	name = "Necron lower body"
 	icon = 'icons/mob/human_races/r_necron.dmi'
 	organ_tag = BP_GROIN
@@ -647,6 +654,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 	parent_organ = BP_CHEST
 	amputation_point = "lumbar"
 	joint = "hip"
+	arterial_bleed_severity = 0
 	dislocated = -1
 	cannot_break = 1
 	cannot_amputate = 1
@@ -654,7 +662,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 	artery_name = "iliac artery"
 	cavity_name = "abdominal"
 
-/obj/item/organ/external/robotic/leg/necron
+/obj/item/organ/external/leg/necron
 	organ_tag = BP_L_LEG
 	name = "Necron left leg"
 	icon = 'icons/mob/human_races/r_necron.dmi'
@@ -676,7 +684,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 	cannot_amputate = 1
 	dislocated = -1
 
-/obj/item/organ/external/robotic/leg/right/necron
+/obj/item/organ/external/leg/right/necron
 	organ_tag = BP_R_LEG
 	name = "Necron right leg"
 	icon = 'icons/mob/human_races/r_necron.dmi'
@@ -698,7 +706,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 	cannot_amputate = 1
 	dislocated = -1
 
-/obj/item/organ/external/robotic/foot/necron
+/obj/item/organ/external/foot/necron
 	organ_tag = BP_L_FOOT
 	name = "Necron left foot"
 	icon = 'icons/mob/human_races/r_necron.dmi'
@@ -719,7 +727,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 	cannot_amputate = 1
 	dislocated = -1
 
-/obj/item/organ/external/foot/robotic/right/necron
+/obj/item/organ/external/foot/right/necron
 	organ_tag = BP_R_FOOT
 	name = "Necron right foot"
 	icon = 'icons/mob/human_races/r_necron.dmi'
@@ -739,7 +747,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 	cannot_break = 1
 	cannot_amputate = 1
 
-/obj/item/organ/external/head/necron //Yes, it's done differently, this saves repeating about two and a half thousand lines of code.
+/obj/item/organ/external/head/necron
 	organ_tag = BP_HEAD
 	icon = 'icons/mob/human_races/r_necron.dmi'
 	icon_name = "head_m"
