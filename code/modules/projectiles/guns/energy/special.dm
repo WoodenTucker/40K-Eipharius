@@ -157,6 +157,33 @@ obj/item/gun/energy/staff/focus
 	projectile_type = /obj/item/projectile/gauss
 	self_recharge = 1
 
+	/obj/item/gun/energy/synapticdis
+	name = "Synaptic Disintegrator"
+	desc = "A long ranged rifle favored by Deathmark Assasains for its ability to disintigrate the synapses of brey"
+	icon_state = "synapticdis"
+	item_state = "synapticdis"
+	origin_tech = list(TECH_COMBAT = 9, TECH_MAGNET = 9)
+	w_class = ITEM_SIZE_NORMAL
+	fire_delay = 5 //Gotta balance the whole infinite ammo a little
+	force = 2 //it has a giant spike on the end of it
+	slot_flags = SLOT_BACK
+	str_requirement = 20
+	one_hand_penalty = 0
+	charge_cost = 20
+	max_shots = 1
+	projectile_type = /obj/item/projectile/gauss
+	self_recharge = 1
+	/obj/item/gun/energy/synapticdis/verb/scope()
+		set category = "Object"
+		set name = "Use Scope"
+		set popup_menu = 1
+		toggle_scope(usr, 4)
+
+/obj/item/gun/energy/synapticdis/equipped(mob/user)
+	..()
+	if(user.zoomed)
+		user.do_zoom()
+
 /obj/item/gun/energy/WarpLens
 	name = "Warp Lens"
 	desc = "A lens used to direct bolts of warp energy"
