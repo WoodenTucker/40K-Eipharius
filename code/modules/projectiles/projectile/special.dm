@@ -514,14 +514,15 @@
 /obj/item/projectile/energy/meltagun
 	name = "Meltagun beam"
 	icon_state = "melta"
-	damage = 90
+	damage = 95
+	agony = 90
 	damage_type = BURN
 	check_armour = "energy"
 	mob_hit_sound = list('sound/effects/gore/sear.ogg')
 	range =  5
 	incinerate = 1
-	penetrating = 10
-	armor_penetration = 47
+	penetrating = 3
+	armor_penetration = 50
 	var/flash_range = 1
 	var/brightness = 10
 	var/light_colour = "#ffffff"

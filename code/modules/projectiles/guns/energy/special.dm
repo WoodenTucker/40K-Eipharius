@@ -204,9 +204,9 @@ obj/item/gun/energy/staff/focus
 	icon = 'icons/cadia-sprites/migrated2/gun_2.dmi'
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	force = 8
-	str_requirement = 17
+	str_requirement = 15
 	max_shots = 2
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_HUGE
 	fire_delay = 16
 	charge_cost = 2000
 	cell_type = /obj/item/cell/plasma
