@@ -157,7 +157,7 @@ obj/item/gun/energy/staff/focus
 	projectile_type = /obj/item/projectile/gauss
 	self_recharge = 1
 
-	/obj/item/gun/energy/synapticdis
+/obj/item/gun/energy/synapticdis
 	name = "Synaptic Disintegrator"
 	desc = "A long ranged rifle favored by Deathmark Assasains for its ability to disintigrate the synapses of brey"
 	icon_state = "synapticdis"
@@ -173,6 +173,11 @@ obj/item/gun/energy/staff/focus
 	max_shots = 4
 	projectile_type = /obj/item/projectile/gauss
 	self_recharge = 1
+/obj/item/gun/energy/synapticdis/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+	toggle_scope(usr, 4)
 
 /obj/item/gun/energy/WarpLens
 	name = "Warp Lens"
