@@ -129,6 +129,19 @@
 	weaken = 30
 	stun = 30
 
+/obj/item/projectile/energy/synapticdis
+	name = "Synapse-Killer Shot"
+	icon_state = "neurotoxin"
+	damage = 5
+	damage_type = TOX
+	stun = 30
+	stutter = 100
+
+/obj/item/projectile/energy/synapticdis/on_hit(var/atom/target, var/blocked = 0)
+	if(istype(target, /mob/living/carbon/human))
+		var/mob/living/carbon/human/M = target
+		adjustBrainLoss(100)
+
 /obj/item/projectile/energy/las
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	damage_type = BURN

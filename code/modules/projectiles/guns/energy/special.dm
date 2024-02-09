@@ -171,8 +171,9 @@ obj/item/gun/energy/staff/focus
 	one_hand_penalty = 0
 	charge_cost = 20
 	max_shots = 4
-	projectile_type = /obj/item/projectile/gauss
+	projectile_type = /obj/item/projectile/energy/synapticdis
 	self_recharge = 1
+
 /obj/item/gun/energy/synapticdis/verb/scope()
 	set category = "Object"
 	set name = "Use Scope"
