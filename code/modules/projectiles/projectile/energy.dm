@@ -140,7 +140,7 @@
 /obj/item/projectile/energy/synapticdis/on_hit(var/atom/target, var/blocked = 0)
 	if(istype(target, /mob/living/carbon/human))
 		var/mob/living/carbon/human/M = target
-		T.adjustBrainLoss(100)
+		target.adjustBrainLoss(100)
 
 /obj/item/projectile/energy/las
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
