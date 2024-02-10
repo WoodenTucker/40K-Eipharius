@@ -16,7 +16,6 @@
 	slowdown = -0.10
 	inherent_verbs = list(
 	/mob/living/carbon/human/skitarii/proc/giveskitstats,
-
 		)
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
