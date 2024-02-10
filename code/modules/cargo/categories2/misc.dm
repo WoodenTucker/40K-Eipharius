@@ -21,6 +21,16 @@
 	cost = 10
 	item_path = /obj/item/storage/fancy/cigarettes/dromedaryco
 
+/datum/noble_entry/misc/landmine
+	name = "Landmine"
+	cost = 33
+	item_path = /obj/item/landmine
+
+/datum/noble_entry/misc/pexplosives
+	name = "Plastic Explosives"
+	cost = 25
+	item_path = /obj/item/plastique
+
 /datum/noble_entry/misc/lighter
 	name = "Zippo Lighter"
 	cost = 3

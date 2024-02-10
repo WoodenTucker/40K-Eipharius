@@ -1,86 +1,6 @@
 /datum/cargo_entry/ammo
 	category = "Ammo"
 
-/datum/cargo_entry/ammo/c45
-	name = ".45 Pistol Magazine"
-	cost = 3
-	item_path = /obj/item/ammo_magazine/mc45mm
-
-/datum/cargo_entry/ammo/c45/ap
-	name = "AP .45 Pistol Magazine"
-	cost = 6
-	item_path = /obj/item/ammo_magazine/mc45mm/ap
-
-/datum/cargo_entry/ammo/c45/kp
-	name = "KP .45 Pistol Magazine"
-	cost = 15
-	item_path = /obj/item/ammo_magazine/mc45mm/kp
-
-/datum/cargo_entry/ammo/c45/ms
-	name = "MS .45 Pistol Magazine"
-	cost = 5
-	item_path = /obj/item/ammo_magazine/mc45mm/ms
-
-/datum/cargo_entry/ammo/revolver357ammo
-	name = ".357 Speedloader"
-	cost = 3
-	item_path = /obj/item/ammo_magazine/a357
-
-/datum/cargo_entry/ammo/revolver357ammo/ap
-	name = ".357 Speedloader AP"
-	cost = 7
-	item_path = /obj/item/ammo_magazine/a357/ap
-
-/datum/cargo_entry/ammo/revolver357ammo/kp
-	name = ".357 Speedloader KP"
-	cost = 15
-	item_path = /obj/item/ammo_magazine/a357/kp
-
-/datum/cargo_entry/ammo/revolver357ammo/ms
-	name = ".357 Speedloader MS"
-	cost = 6
-	item_path = /obj/item/ammo_magazine/a357/ms
-
-/datum/cargo_entry/ammo/revolver44ammo
-	name = ".44 Speedloader"
-	cost = 3
-	item_path = /obj/item/ammo_magazine/c44
-
-/datum/cargo_entry/ammo/revolver44ammo/ap
-	name = "AP .44 Speedloader"
-	cost = 7
-	item_path = /obj/item/ammo_magazine/c44/ap
-
-/datum/cargo_entry/ammo/revolver44ammo/kp
-	name = "KP .44 Speedloader"
-	cost = 15
-	item_path = /obj/item/ammo_magazine/c44/kp
-
-/datum/cargo_entry/ammo/revolver44ammo/ms
-	name = "MS .44 Speedloader"
-	cost = 6
-	item_path = /obj/item/ammo_magazine/c44/ms
-
-/datum/cargo_entry/ammo/revolver50ammo
-	name = ".50 Speedloader"
-	cost = 5
-	item_path = /obj/item/ammo_magazine/c50
-
-/datum/cargo_entry/ammo/revolver50ammo/ap
-	name = "AP .50 Speedloader"
-	cost = 9
-	item_path = /obj/item/ammo_magazine/c50/ap
-
-/datum/cargo_entry/ammo/revolver50ammo/kp
-	name = "KP .50 Speedloader"
-	cost = 18
-	item_path = /obj/item/ammo_magazine/c50/kp
-
-/datum/cargo_entry/ammo/revolver50ammo/ms
-	name = "MS .50 Speedloader"
-	cost = 7
-	item_path = /obj/item/ammo_magazine/handful/a50/ms
-
 /datum/cargo_entry/ammo/lasmagsmall
 	name = "Inferior Lasgun Power Pack"
 	cost = 4
@@ -221,10 +141,95 @@
 	cost = 45
 	item_path = /obj/item/ammo_magazine/lp338/needler
 
+/datum/cargo_entry/ammo/c45
+	name = ".45 Pistol Magazine"
+	cost = 3
+	item_path = /obj/item/ammo_magazine/mc45mm
+
+/datum/cargo_entry/ammo/c45/ap
+	name = "AP .45 Pistol Magazine"
+	cost = 6
+	item_path = /obj/item/ammo_magazine/mc45mm/ap
+
+/datum/cargo_entry/ammo/c45/kp
+	name = "KP .45 Pistol Magazine"
+	cost = 15
+	item_path = /obj/item/ammo_magazine/mc45mm/kp
+
+/datum/cargo_entry/ammo/c45/ms
+	name = "MS .45 Pistol Magazine"
+	cost = 5
+	item_path = /obj/item/ammo_magazine/mc45mm/ms
+
+/datum/cargo_entry/ammo/revolver357ammo
+	name = ".357 Speedloader"
+	cost = 3
+	item_path = /obj/item/ammo_magazine/a357
+
+/datum/cargo_entry/ammo/revolver357ammo/ap
+	name = ".357 Speedloader AP"
+	cost = 7
+	item_path = /obj/item/ammo_magazine/a357/ap
+
+/datum/cargo_entry/ammo/revolver357ammo/kp
+	name = ".357 Speedloader KP"
+	cost = 15
+	item_path = /obj/item/ammo_magazine/a357/kp
+
+/datum/cargo_entry/ammo/revolver357ammo/ms
+	name = ".357 Speedloader MS"
+	cost = 6
+	item_path = /obj/item/ammo_magazine/a357/ms
+
+/datum/cargo_entry/ammo/revolver44ammo
+	name = ".44 Speedloader"
+	cost = 3
+	item_path = /obj/item/ammo_magazine/c44
+
+/datum/cargo_entry/ammo/revolver44ammo/ap
+	name = "AP .44 Speedloader"
+	cost = 7
+	item_path = /obj/item/ammo_magazine/c44/ap
+
+/datum/cargo_entry/ammo/revolver44ammo/kp
+	name = "KP .44 Speedloader"
+	cost = 15
+	item_path = /obj/item/ammo_magazine/c44/kp
+
+/datum/cargo_entry/ammo/revolver44ammo/ms
+	name = "MS .44 Speedloader"
+	cost = 6
+	item_path = /obj/item/ammo_magazine/c44/ms
+
+/datum/cargo_entry/ammo/revolver50ammo
+	name = ".50 Speedloader"
+	cost = 5
+	item_path = /obj/item/ammo_magazine/c50
+
+/datum/cargo_entry/ammo/revolver50ammo/ap
+	name = "AP .50 Speedloader"
+	cost = 9
+	item_path = /obj/item/ammo_magazine/c50/ap
+
+/datum/cargo_entry/ammo/revolver50ammo/kp
+	name = "KP .50 Speedloader"
+	cost = 18
+	item_path = /obj/item/ammo_magazine/c50/kp
+
+/datum/cargo_entry/ammo/revolver50ammo/ms
+	name = "MS .50 Speedloader"
+	cost = 7
+	item_path = /obj/item/ammo_magazine/handful/a50/ms
+
 /datum/cargo_entry/ammo/heatshell
 	name = "Vraks Pattern Rocket"
 	cost = 35
 	item_path = /obj/item/ammo_casing/heat_shell
+
+/datum/cargo_entry/ammo/meltamag
+	name = "Melta Ammo"
+	cost = 35
+	item_path = /obj/item/ammo_magazine/melta
 
 /datum/cargo_entry/ammo/boltpistolmag
 	name = "Bolt Pistol Magazine"
@@ -245,8 +250,3 @@
 	name = "KP Bolt Rifle Magazine"
 	cost = 78
 	item_path = /obj/item/ammo_magazine/bolt_rifle_magazine/kp
-
-/datum/cargo_entry/ammo/meltamag
-	name = "Melta Ammo"
-	cost = 35
-	item_path = /obj/item/ammo_magazine/melta
