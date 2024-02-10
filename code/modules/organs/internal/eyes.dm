@@ -216,3 +216,16 @@
 	//darkness_view = 20
 	//see_invisible = SEE_INVISIBLE_NOLIGHTING
 
+/obj/item/organ/internal/eyes/necron
+	name = "Visual sensors"
+	icon_state = "eyes"
+	gender = PLURAL
+	organ_tag = BP_EYES
+	parent_organ = BP_HEAD
+	surface_accessible = TRUE
+	relative_size = 10
+	innate_flash_protection = FLASH_PROTECTION_MAJOR
+	max_damage = 65
+	var/vision_flags = SEE_TURFS|SEE_MOBS|SEE_OBJS|SEE_SELF
+
+

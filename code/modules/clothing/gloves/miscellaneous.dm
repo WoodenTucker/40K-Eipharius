@@ -259,16 +259,3 @@
 	icon_state = "ScionGloves"
 	item_state = "ScionGloves"
 	armor = list(melee = 1, bullet = 2, laser = 2, energy = 2, bomb = 2, bio = 0, rad = 0)
-
-/obj/item/clothing/gloves/combat/cadianreplica
-	name = "Combat Gloves"
-	desc = "A replica of the The Astra Militarum standard issued gloves. Protects against most weather conditions and light bruises."
-	icon_state = "work"
-	item_state = "wgloves"
-	siemens_coefficient = 0
-	permeability_coefficient = 0.05
-	armor = list(melee = 2, bullet = 2, laser = 2,energy = 2, bomb = 0, bio = 0, rad = 0)
-	cold_protection = HANDS
-	min_cold_protection_temperature = GLOVES_MIN_COLD_PROTECTION_TEMPERATURE
-	heat_protection = HANDS
-	max_heat_protection_temperature = GLOVES_MAX_HEAT_PROTECTION_TEMPERATURE

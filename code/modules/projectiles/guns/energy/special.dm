@@ -121,21 +121,65 @@ obj/item/gun/energy/staff/focus
 	self_recharge = 1
 
 
-/obj/item/gun/energy/gauss
-	name = "Gauss Rifle"
+/obj/item/gun/energy/gaussflayer
+	name = "Gauss Flayer"
 	desc = "A deadly weapon wielded by Necron Warriors"
-	icon_state = "ns"
-	item_state = "ns"
-	origin_tech = list(TECH_COMBAT = 6, TECH_MAGNET = 6)
+	icon_state = "gaussflayer"
+	item_state = "gaussflayer"
+	origin_tech = list(TECH_COMBAT = 9, TECH_MAGNET = 9)
 	w_class = ITEM_SIZE_NORMAL
-	force = 5
+	fire_delay = 5 //Gotta balance the whole infinite ammo a little
+	force = 2 //it has a giant spike on the end of it
 	slot_flags = SLOT_BELT|SLOT_BACK
+	str_requirement = 20
+	one_hand_penalty = 0
+	charge_cost = 20
+	max_shots = 10
+	projectile_type = /obj/item/projectile/gauss
+	self_recharge = 1
+
+/obj/item/gun/energy/gaussblaster
+	name = "Gauss Blaster"
+	desc = "A double barreled gauss weapon with green energy coursing through it."
+	icon_state = "gaussblaster"
+	item_state = "gaussblaster"
+	origin_tech = list(TECH_COMBAT = 9, TECH_MAGNET = 9)
+	w_class = ITEM_SIZE_NORMAL
+	fire_delay = 20
+	burst = 2
+	burst_delay = 3
+	force = 25 //Larger and it ALSO has a giant spike
+	slot_flags = SLOT_BELT|SLOT_BACK
+	str_requirement = 20 //random pilgrims will NOT be using this
 	one_hand_penalty = 0
 	charge_cost = 20
 	max_shots = 6
 	projectile_type = /obj/item/projectile/gauss
 	self_recharge = 1
-	charge_meter = FALSE
+
+/obj/item/gun/energy/synapticdis
+	name = "Synaptic Disintegrator"
+	desc = "A long ranged rifle favored by Deathmark Assasains for its ability to disintigrate the synapses of brey"
+	icon_state = "synapticdis"
+	item_state = "synapticdis"
+	origin_tech = list(TECH_COMBAT = 9, TECH_MAGNET = 9)
+	w_class = ITEM_SIZE_NORMAL
+	fire_delay = 80 //what the hell do you expect, its a 2 shot basically true damage sniper
+	force = 2
+	slot_flags = SLOT_BACK
+	str_requirement = 20
+	one_hand_penalty = 2
+	scoped_accuracy = 50 //the proper scope for this is meant to offscreen some poor fuck from MILES away, they will NEED this
+	charge_cost = 20
+	max_shots = 4 //incase some janny wants to varedit the firing delay, they can see my nice animated empty sprite :))
+	projectile_type = /obj/item/projectile/energy/synapticdis
+	self_recharge = 1
+
+/obj/item/gun/energy/synapticdis/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+	toggle_scope(usr, 4)
 
 /obj/item/gun/energy/WarpLens
 	name = "Warp Lens"
@@ -204,9 +248,9 @@ obj/item/gun/energy/staff/focus
 	icon = 'icons/cadia-sprites/migrated2/gun_2.dmi'
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	force = 8
-	str_requirement = 17
+	str_requirement = 15
 	max_shots = 2
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_HUGE
 	fire_delay = 16
 	charge_cost = 2000
 	cell_type = /obj/item/cell/plasma
