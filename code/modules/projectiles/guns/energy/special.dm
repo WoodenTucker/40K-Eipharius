@@ -157,6 +157,30 @@ obj/item/gun/energy/staff/focus
 	projectile_type = /obj/item/projectile/gauss
 	self_recharge = 1
 
+/obj/item/gun/energy/synapticdis
+	name = "Synaptic Disintegrator"
+	desc = "A long ranged rifle favored by Deathmark Assasains for its ability to disintigrate the synapses of brey"
+	icon_state = "synapticdis"
+	item_state = "synapticdis"
+	origin_tech = list(TECH_COMBAT = 9, TECH_MAGNET = 9)
+	w_class = ITEM_SIZE_NORMAL
+	fire_delay = 80 //what the hell do you expect, its a 2 shot basically true damage sniper
+	force = 2
+	slot_flags = SLOT_BACK
+	str_requirement = 20
+	one_hand_penalty = 2
+	scoped_accuracy = 50 //the proper scope for this is meant to offscreen some poor fuck from MILES away, they will NEED this
+	charge_cost = 20
+	max_shots = 4 //incase some janny wants to varedit the firing delay, they can see my nice animated empty sprite :))
+	projectile_type = /obj/item/projectile/energy/synapticdis
+	self_recharge = 1
+
+/obj/item/gun/energy/synapticdis/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+	toggle_scope(usr, 4)
+
 /obj/item/gun/energy/WarpLens
 	name = "Warp Lens"
 	desc = "A lens used to direct bolts of warp energy"
