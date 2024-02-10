@@ -1,17 +1,20 @@
-/datum/species/necron //VERY WIP, DO NOT ADD INTO .DME YET.
+/datum/species/necron
 	name = SPECIES_NECRON
 	name_plural = "Necrons"
 	secondary_langs = list(LANGUAGE_NECRON)
 	name_language = null // Use the first-name last-name generator rather than a language scrambler
 	icobase = 'icons/mob/human_races/r_necron.dmi'
-	damage_mask = 'icons/mob/human_races/masks/dam_mask_human.dmi'
-	blood_mask = 'icons/mob/human_races/masks/blood_human.dmi'
 	min_age = 60000000
 	max_age = 120000000
 	gluttonous = GLUT_ITEM_NORMAL
 	total_health = 250
 	mob_size = MOB_MEDIUM
 	strength = STR_VHIGH
+	blood_volume = 0
+	radiation_mod = 0
+	brute_mod =      0.2
+	burn_mod =       0.2   
+	species_flags = SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_SLIP|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_SCAN 
 	inherent_verbs = list(
 	/mob/living/carbon/human/necron/proc/necronsetup,
 		)
@@ -23,29 +26,70 @@
 
 	blood_color = "#4c0377"
 
+
+	has_limbs = list(
+		BP_CHEST =  list("path" = /obj/item/organ/external/chest/necron),
+		BP_GROIN =  list("path" = /obj/item/organ/external/groin/necron),
+		BP_HEAD =   list("path" = /obj/item/organ/external/head/necron),
+		BP_L_ARM =  list("path" = /obj/item/organ/external/arm/necron),
+		BP_R_ARM =  list("path" = /obj/item/organ/external/arm/right/necron),
+		BP_L_LEG =  list("path" = /obj/item/organ/external/leg/necron),
+		BP_R_LEG =  list("path" = /obj/item/organ/external/leg/right/necron),
+		BP_L_HAND = list("path" = /obj/item/organ/external/hand/necron),
+		BP_R_HAND = list("path" = /obj/item/organ/external/hand/right/necron),
+		BP_L_FOOT = list("path" = /obj/item/organ/external/foot/necron),
+		BP_R_FOOT = list("path" = /obj/item/organ/external/foot/right/necron)
+		)
+
+	has_organ = list(
+		BP_EYES =     /obj/item/organ/internal/eyes/necron,
+		BP_CELL =    /obj/item/organ/internal/necron,
+		BP_BRAIN =    /obj/item/organ/internal/brain/necron
+		)
+
 /datum/species/necron/handle_post_spawn(var/mob/living/carbon/human/H)
-	H.age = rand(20,35)//Random age for kiddos.
-	if(H.f_style)//tau don't get beards.
+	if(H.f_style)
 		H.f_style = "Shaved"
-	to_chat(H, "<big><span class='warning'>For the Greater Good! Our warship has arrived in orbital range to convert this world to the greater good. We must first try diplomacy, see if a water caste awakes so that we can trade and convince the humans that we are not the true enemy. In time they may learn to convert to the Greater Good..</span></big>")
+	to_chat(H, "<big><span class='warning'>SYSTEMS BOOTING... YOU HAVE AWAKENED. SERVE YOUR LORD. PURGE THE PRIMITIVES INFESTING YOUR PLANET.</span></big>")
 	H.update_eyes()
 	return ..()
-/mob/living/carbon/human
-	var/new_tau = SPECIES_TAU
 
 /mob/living/carbon/human/necron
 	gender = MALE
 
 /mob/living/carbon/human/necron/New(var/new_loc)
 	h_style = "Bald"
-	..(new_loc, new_tau)
+	return ..()
 
 /mob/living/carbon/human/necron/Initialize()
 	. = ..()
 	warfare_faction = NECRON
-	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/tau)
-	outfit.equip(src)
-	isburied = 1
+	src.rejuvenate()
 
-	hand = 0//Make sure one of their hands is active.
+/mob/living/carbon/human/necron/proc/necronsetup()
+	set name = "AWAKEN"
+	set category = "AWAKEN"
+	set desc = "Gives your equipment and stats."
 
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	var/necronclass = input("Select a Class","Class Selection") as null|anything in list("Necron Warrior")
+	switch(necronclass)
+		if("Necron Warrior")
+			warfare_faction = NECRON
+			//var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/security/colonel) //Add in Necron outfit when it's finished
+			//outfit.equip(src)
+			src.add_stats(rand(25,30),rand(12,15),rand(25,30),rand(10,11)) //gives stats str, dext, end, int
+			src.add_skills(rand(14,18),rand(19,21),rand(3,5),rand(12,14),rand(3,5)) //melee, ranged, med, eng, surgery
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.set_quirk(new/datum/quirk/dead_inside())
+			src.update_eyes() //should fix grey vision
+			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC) //secondary language
+			src.warfare_language_shit(LANGUAGE_MECHANICUS)
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY 
+			src.thirst = INFINITY
+			src.nutrition = INFINITY 
+			src.verbs -= /mob/living/carbon/human/necron/proc/necronsetup //removes verb at the end so they can't spam it for whatever reason

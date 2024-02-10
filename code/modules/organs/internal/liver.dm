@@ -97,8 +97,8 @@
 			if(prob(5))
 				to_chat(owner, "<span class='warning'>You lick around your mouth as a craving for water sets in.</span>")
 				take_damage(1)
-		
-		
+
+
 /obj/item/organ/internal/liver/astartes
 	name = "oolitic system"
 	icon_state = "liver"

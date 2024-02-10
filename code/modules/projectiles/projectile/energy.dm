@@ -129,6 +129,26 @@
 	weaken = 30
 	stun = 30
 
+/obj/item/projectile/energy/synapticdis
+	name = "Synapse-Killer Shot"
+	icon_state = "neurotoxin"
+	fire_sound = 'sound/weapons/Laser.ogg'
+	damage = 5
+	damage_type = TOX
+	//penetrating = 1 I REALLY want to, but multikilling with this shit would be cancer to fight
+	stun = 100
+	stutter = 100
+	agony = 200
+
+/obj/item/projectile/energy/synapticdis/on_hit(var/atom/target, var/blocked = 0)
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+		H.adjustBrainLoss(100)
+		to_chat(H, "<span class='danger'>You feel your nerves burning up!</span>")
+		playsound(H, 'sound/effects/supermatter.ogg', 100) //so the poor fuck finds out what happens
+		visible_message("<span class='danger'>[H]'s body illuminates as green energy courses through their body!</span>") //so the poor saps near the victim know whats up
+		playsound(src, 'sound/effects/supermatter.ogg', 100) //feedback on hitting shots good, give funny robot dopamine
+
 /obj/item/projectile/energy/las
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	damage_type = BURN

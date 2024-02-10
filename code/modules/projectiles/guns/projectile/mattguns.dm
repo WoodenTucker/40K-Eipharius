@@ -363,7 +363,7 @@
 	one_hand_penalty = 1.4
 	accuracy = 0
 	fire_delay= 3
-	sales_price = 10 // SHOTGUNS HAVE SLOWDOWN IN THEIR PARENT shotgun/pump -- DO NOT APPLY SLOWDOWN TO SHOTGUNS 
+	sales_price = 10 // SHOTGUNS HAVE SLOWDOWN IN THEIR PARENT shotgun/pump -- DO NOT APPLY SLOWDOWN TO SHOTGUNS
 
 /obj/item/gun/projectile/shotgun/pump/shitty/magrave
 	name = "\improper WTX Belle Magrave"
@@ -1434,7 +1434,7 @@
 		icon_state = "teslar0"
 
 /obj/item/gun/projectile/automatic/gaussrifle
-	name = "Gauss Rifle"
+	name ="Gauss Rifle"
 	desc = "A strange alien weapon which hums with resonant frequencies alien to mankind."
 	icon = 'icons/map_project/port/ds13.dmi'
 	icon_state = "pulserifle"

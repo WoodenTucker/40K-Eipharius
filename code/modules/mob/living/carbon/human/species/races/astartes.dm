@@ -69,7 +69,7 @@ Astartes
 
 	has_organ = list(
 		BP_EYES =     /obj/item/organ/internal/eyes/astartes,
-		BP_HEART =    /obj/item/organ/internal/heart,
+		BP_HEART =    /obj/item/organ/internal/heart/astartes,
 		BP_BRAIN =    /obj/item/organ/internal/brain,
 		BP_LUNGS =   /obj/item/organ/internal/lungs/astartes,
 		BP_LIVER =     /obj/item/organ/internal/liver/astartes,

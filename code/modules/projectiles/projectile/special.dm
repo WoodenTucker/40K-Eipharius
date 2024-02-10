@@ -18,7 +18,7 @@
 	heavy_effect_range = 0
 	light_effect_range = 1
 
-/obj/item/projectile/bullet/bolterrifle 
+/obj/item/projectile/bullet/bolterrifle
 	name =".75 bolt" //.75, astartes sized bolters or boltpistols
 	icon_state= "bolter"
 	damage = 75
@@ -32,7 +32,7 @@
 	armor_penetration = 48
 	check_armour = "bullet"
 
-/obj/item/projectile/bullet/bpistol 
+/obj/item/projectile/bullet/bpistol
 	name =".50 bolt" //.50, human sized bolters and bolt pistols
 	icon_state= "bolter"
 	damage = 68
@@ -485,7 +485,7 @@
 	check_armour = "energy"
 	armor_penetration = 40 //phosphor blasters are incredibly good at penetrating heavy armor
 	range =  6 //extremely close ranged, normal vision is 8 but technically 7 if you don't count your own tile.
-	
+
 
 /obj/item/projectile/energy/phosphor/on_hit(var/atom/target, var/blocked = 0)
 	if(ishuman(target))
@@ -499,7 +499,7 @@
 /obj/item/projectile/gauss
 	name = "Gauss "
 	icon_state = "emitter"
-	fire_sound = 'sound/effects/meteorimpact.ogg' //Bass-y sound of firing
+	fire_sound = 'sound/weapons/emitter.ogg' //P e w
 	damage = 100
 	damage_type = BURN
 	agony = 200
@@ -508,20 +508,21 @@
 	incinerate = 1
 	dispersion = 0.0
 	animate_movement = 1
-	penetrating = 10
-	armor_penetration = 44
+	penetrating = 2 //10 was a bit much
+	armor_penetration = 44 //this shit tears down individual atoms.. what do you expect?
 
 /obj/item/projectile/energy/meltagun
 	name = "Meltagun beam"
 	icon_state = "melta"
-	damage = 90
+	damage = 135
+	agony = 35
 	damage_type = BURN
 	check_armour = "energy"
 	mob_hit_sound = list('sound/effects/gore/sear.ogg')
 	range =  5
 	incinerate = 1
-	penetrating = 10
-	armor_penetration = 47
+	penetrating = 2
+	armor_penetration = 50
 	var/flash_range = 1
 	var/brightness = 10
 	var/light_colour = "#ffffff"
@@ -574,7 +575,7 @@
 	stun = 5
 	weaken = 5
 	agony = 25
-	embed = 1 
+	embed = 1
 /*/obj/item/projectile/bullet/tyranid/fleshborer/on_hit(var/atom/target)
 	if(ishuman(target))
 		if var/fleshborer < 10
@@ -586,14 +587,14 @@
 	damage = 25
 	armor_penetration = 35
 	agony = 5
-	embed = 1 
+	embed = 1
 
 /obj/item/projectile/bullet/tyranid/spike/hall
 	name = "spike rifle spike"
 	damage = 25
 	armor_penetration = 35
 	agony = 5
-	embed = 1 
+	embed = 1
 
 /obj/item/projectile/bullet/tyranid/spike/hall/on_hit(var/atom/target, var/blocked = 0)
 	if(istype(target, /mob/living/carbon/human))
@@ -605,7 +606,7 @@
 	damage = 25
 	armor_penetration = 35
 	agony = 5
-	embed = 1 
+	embed = 1
 
 /obj/item/projectile/bullet/tyranid/spike/sleepy/on_hit(var/atom/target, var/blocked = 0)
 	if(istype(target, /mob/living/carbon/human))
@@ -621,7 +622,7 @@
 	stun = 5
 	weaken = 5
 	agony = 25
-	embed = 1 
+	embed = 1
 
 /obj/item/projectile/bullet/tyranid/venomcannon/on_hit(var/atom/target, var/blocked = 0)
 	if(istype(target, /mob/living/carbon/human))

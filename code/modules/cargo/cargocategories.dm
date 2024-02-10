@@ -11,14 +11,8 @@
 /datum/cargo_category/melee
 	name = "Melee"
 
-/datum/cargo_category/ballistics
-	name = "Ballistics"
-
-/datum/cargo_category/energy
-	name = "Energy"
-
-/datum/cargo_category/grenades
-	name = "Grenades"
+/datum/cargo_category/weapon
+	name = "Weapons"
 
 /datum/cargo_category/misc
 	name = "Misc"
@@ -28,9 +22,6 @@
 
 /datum/cargo_category/armor
 	name = "Armours"
-
-/datum/cargo_category/clothing
-	name = "Clothing"
 
 /datum/cargo_category/supply
 	name = "Supplies"
