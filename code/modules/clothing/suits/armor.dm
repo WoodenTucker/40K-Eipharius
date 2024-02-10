@@ -1035,6 +1035,14 @@ obj/item/clothing/suit/armor
 	item_state = "catacommissar"
 	armor = list(melee = 21, bullet = 31, laser = 31, energy = 30, bomb = 40, bio = 30, rad = 30)
 
+/obj/item/clothing/suit/armor/commissar/mordian
+	name = "Commissar's Dress Formals"
+	desc = "A Mordian Commissar's formal uniform, tailored to specifically meet regulation standards. The wearer shall make guardsman follow orders to the letter."
+	icon_state = "MordianC"
+	item_state = "MordianC"
+	armor = list(melee = 18, bullet = 34, laser = 35, energy = 30, bomb = 40, bio = 30, rad = 30)
+
+
 // INQUISITION
 
 /obj/item/clothing/suit/armor/agent/caraspace

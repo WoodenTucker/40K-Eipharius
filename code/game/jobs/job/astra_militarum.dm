@@ -481,7 +481,8 @@ datum/job/ig/bullgryn
 	outfit_type = /decl/hierarchy/outfit/job/ig/commissar
 	alt_titles = list(
 		"Krieg Commissar" = /decl/hierarchy/outfit/job/ig/commissar/krieg,
-		"Catachan Commissar" = /decl/hierarchy/outfit/job/ig/commissar/catachan
+		"Catachan Commissar" = /decl/hierarchy/outfit/job/ig/commissar/catachan,
+		"Mordian Commissar" = /decl/hierarchy/outfit/job/ig/commissar/mordian,
 		)
 	can_be_in_squad = FALSE
 	economic_modifier = 9
@@ -567,46 +568,46 @@ datum/job/ig/bullgryn
 				to_chat(U,"<span class='danger'><b><font size=4>THE VETERAN</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>A veteran of many campaigns, you've experienced the horrors of the warp and the alien.</font></b></span>")
 				U.add_stats(rand(16,18), rand(16,18), rand(13,17), rand (12,16))
-				new /obj/item/gun/projectile/bolter_pistol(src.loc) 
-				new /obj/item/clothing/accessory/medal/silver/Administratum(src.loc) 
-				
+				new /obj/item/gun/projectile/bolter_pistol(src.loc)
+				new /obj/item/clothing/accessory/medal/silver/Administratum(src.loc)
+
 			else if(prob(8))
 				to_chat(U,"<span class='danger'><b><font size=4>THE TRAITOR</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are a traitor to the Imperium and for reasons unknown to you now, shall be it's destruction. Praise the hivemind/cult/cogitae!</font></b></span>")
 				U.add_stats(rand(13,17), rand(16,18), rand(16,18), rand (12,20))
 				if(prob(30))
-					new /obj/item/device/radio/headset/blue_team/alpha(src.loc) 
+					new /obj/item/device/radio/headset/blue_team/alpha(src.loc)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
-				new /obj/item/stack/thrones3/twenty(src.loc)  
-				new /obj/item/stack/thrones3/twenty(src.loc)  
-				new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc) 
+				new /obj/item/stack/thrones3/twenty(src.loc)
+				new /obj/item/stack/thrones3/twenty(src.loc)
+				new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc)
 				if(prob(15))
-					new /obj/item/clothing/suit/armor/hjacket(src.loc) 
+					new /obj/item/clothing/suit/armor/hjacket(src.loc)
 				else
-					new /obj/item/clothing/suit/armor/towntrench(src.loc) 
+					new /obj/item/clothing/suit/armor/towntrench(src.loc)
 				if(prob(5))
-					new /obj/item/clothing/accessory/medal/bronze/Administratum(src.loc) 
+					new /obj/item/clothing/accessory/medal/bronze/Administratum(src.loc)
 				if(prob(10))
-					new /obj/item/device/multitool/hacktool(src.loc) 
-					new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc) 
-					new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc) 
+					new /obj/item/device/multitool/hacktool(src.loc)
+					new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc)
+					new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc)
 			else
-				to_chat(U,"<span class='danger'><b><font size=4>THE FORSAKEN</font></b></span>") 
+				to_chat(U,"<span class='danger'><b><font size=4>THE FORSAKEN</font></b></span>")
 				U.add_stats(rand(15,18), rand(15,18), rand(15,18), rand (12,16))
-				new /obj/item/stack/thrones3/twenty(src.loc)  
-				new /obj/item/stack/thrones3/twenty(src.loc)  
-				new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc) 
+				new /obj/item/stack/thrones3/twenty(src.loc)
+				new /obj/item/stack/thrones3/twenty(src.loc)
+				new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc)
 				if(prob(35))
-					new /obj/item/clothing/suit/armor/hjacket(src.loc) 
+					new /obj/item/clothing/suit/armor/hjacket(src.loc)
 				else
-					new /obj/item/clothing/suit/armor/towntrench(src.loc) 
+					new /obj/item/clothing/suit/armor/towntrench(src.loc)
 				if(prob(15))
-					new /obj/item/clothing/accessory/medal/bronze/Administratum(src.loc) 
+					new /obj/item/clothing/accessory/medal/bronze/Administratum(src.loc)
 				if(prob(30))
-					new /obj/item/device/multitool/hacktool(src.loc) 
-					new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc) 
-					new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc) 
+					new /obj/item/device/multitool/hacktool(src.loc)
+					new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc)
+					new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc)
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are one of many untold trillions of Guardsmen taken from your homeworld and pressed into service to the meatgrinder that is the Astra Militarum. As a result of the mind numbing horrors of war, you have taken to... interesting vices to survive your many years of service.</font></b></span>")
 
 
@@ -637,56 +638,56 @@ datum/job/ig/bullgryn
 				to_chat(U,"<span class='danger'><b><font size=4>HERO OF THE IMPERIUM</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>A veteran of many campaigns, you've experienced the horrors of the warp and the alien.</font></b></span>")
 				if(prob(60))
-					new /obj/item/gun/projectile/revolver/mateba(src.loc) 
-					new /obj/item/ammo_magazine/c50/ap(src.loc) 
+					new /obj/item/gun/projectile/revolver/mateba(src.loc)
+					new /obj/item/ammo_magazine/c50/ap(src.loc)
 				if(prob(60))
-					new /obj/item/clothing/accessory/medal/gold/Administratum(src.loc) 
-					new /obj/item/clothing/accessory/medal/silver/Administratum(src.loc) 
-				
+					new /obj/item/clothing/accessory/medal/gold/Administratum(src.loc)
+					new /obj/item/clothing/accessory/medal/silver/Administratum(src.loc)
+
 			else if(prob(6))
 				to_chat(U,"<span class='danger'><b><font size=4>THE TRAITOR</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are a traitor to the Imperium and for reasons unknown to you now, shall be it's destruction. Praise the hivemind/cult/cogitae!</font></b></span>")
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
 				if(prob(50))
-					new /obj/item/device/radio/headset/blue_team/alpha(src.loc) 
+					new /obj/item/device/radio/headset/blue_team/alpha(src.loc)
 				if(prob(10))
-					new /obj/item/storage/pill_bottle/happy(src.loc)  
+					new /obj/item/storage/pill_bottle/happy(src.loc)
 				if(prob(10))
-					new /obj/item/clothing/suit/armor/ranger2(src.loc) 
+					new /obj/item/clothing/suit/armor/ranger2(src.loc)
 				if(prob(10))
-					new /obj/item/clothing/suit/armor/towntrench(src.loc) 
+					new /obj/item/clothing/suit/armor/towntrench(src.loc)
 				if(prob(10))
-					new /obj/item/clothing/accessory/medal/silver/Administratum(src.loc) 
-					new /obj/item/clothing/accessory/medal/bronze/Administratum(src.loc) 
+					new /obj/item/clothing/accessory/medal/silver/Administratum(src.loc)
+					new /obj/item/clothing/accessory/medal/bronze/Administratum(src.loc)
 				if(prob(15))
-					new /obj/item/device/multitool/hacktool(src.loc) 
+					new /obj/item/device/multitool/hacktool(src.loc)
 				if(prob(15))
-					new /obj/item/plastique(src.loc) 
+					new /obj/item/plastique(src.loc)
 				if(prob(15))
-					new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc) 
-			else 
-				to_chat(U,"<span class='danger'><b><font size=4>THE SURVIVOR</font></b></span>") 
+					new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc)
+			else
+				to_chat(U,"<span class='danger'><b><font size=4>THE SURVIVOR</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are one of many untold trillions of Guardsmen taken from your homeworld and pressed into service to the meatgrinder that is the Astra Militarum. As a result of the mind numbing horrors of war, you have taken to... interesting vices to survive your many years of service.</font></b></span>")
-				new /obj/item/stack/thrones2/twenty(src.loc)  
-				new /obj/item/stack/thrones3/twenty(src.loc)  
-				new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc)  
+				new /obj/item/stack/thrones2/twenty(src.loc)
+				new /obj/item/stack/thrones3/twenty(src.loc)
+				new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc)
 				if(prob(40))
-					new /obj/item/storage/pill_bottle/happy(src.loc)  
+					new /obj/item/storage/pill_bottle/happy(src.loc)
 				if(prob(10))
-					new /obj/item/clothing/suit/armor/ranger2(src.loc) 
+					new /obj/item/clothing/suit/armor/ranger2(src.loc)
 				if(prob(10))
-					new /obj/item/clothing/suit/armor/towntrench(src.loc) 
+					new /obj/item/clothing/suit/armor/towntrench(src.loc)
 				if(prob(30))
-					new /obj/item/clothing/accessory/medal/silver/Administratum(src.loc) 
-					new /obj/item/clothing/accessory/medal/bronze/Administratum(src.loc) 
+					new /obj/item/clothing/accessory/medal/silver/Administratum(src.loc)
+					new /obj/item/clothing/accessory/medal/bronze/Administratum(src.loc)
 				if(prob(45))
-					new /obj/item/device/multitool/hacktool(src.loc) 
+					new /obj/item/device/multitool/hacktool(src.loc)
 				if(prob(45))
-					new /obj/item/plastique(src.loc) 
+					new /obj/item/plastique(src.loc)
 				if(prob(35))
-					new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc) 
-				
+					new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc)
+
 
 
 /mob/living/carbon/human/proc/medicclass()
@@ -714,42 +715,42 @@ datum/job/ig/bullgryn
 			if(prob(87))
 				to_chat(U,"<span class='danger'><b><font size=4>THE MEDICAE</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>An experienced medicae practitioner you were selected from your homeworld to serve as the very lifeblood of the guard.</font></b></span>")
-				new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc) 
-				new /obj/item/reagent_containers/hypospray/autoinjector/combatpain(src.loc) 
+				new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc)
+				new /obj/item/reagent_containers/hypospray/autoinjector/combatpain(src.loc)
 				if(prob(13))
-					new /obj/item/clothing/suit/armor/scum2(src.loc) 
+					new /obj/item/clothing/suit/armor/scum2(src.loc)
 				if(prob(14))
-					new /obj/item/clothing/suit/armor/slumcoat(src.loc) 
+					new /obj/item/clothing/suit/armor/slumcoat(src.loc)
 			else if(prob(6))
 				to_chat(U,"<span class='danger'><b><font size=4>THE TRAITOR</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are a traitor to the Imperium and for reasons unknown to you now, shall be it's destruction. Praise the hivemind/cult/cogitae!</font></b></span>")
 				U.add_stats(rand(13,17), rand(16,18), rand(16,18), rand (12,20))
 				if(prob(30))
-					new /obj/item/device/radio/headset/blue_team/alpha(src.loc) 
-				new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc) 
-				new /obj/item/reagent_containers/hypospray/autoinjector/combatpain(src.loc) 
-				new /obj/item/reagent_containers/hypospray/autoinjector/death(src.loc) 
+					new /obj/item/device/radio/headset/blue_team/alpha(src.loc)
+				new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc)
+				new /obj/item/reagent_containers/hypospray/autoinjector/combatpain(src.loc)
+				new /obj/item/reagent_containers/hypospray/autoinjector/death(src.loc)
 				if(prob(15))
-					new /obj/item/clothing/suit/armor/scum2(src.loc) 
+					new /obj/item/clothing/suit/armor/scum2(src.loc)
 				if(prob(15))
-					new /obj/item/clothing/suit/armor/slumcoat(src.loc) 
+					new /obj/item/clothing/suit/armor/slumcoat(src.loc)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
-			else 
-				to_chat(U,"<span class='danger'><b><font size=4>THE TROUBLED DOCTOR</font></b></span>") 
+			else
+				to_chat(U,"<span class='danger'><b><font size=4>THE TROUBLED DOCTOR</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>Years of exposure to the practices of medicine, the horrors of chaos plagues and the concoctions of the sanguinary worlds has driven you mad. Express your madness, let the world know what the rot has done to you!</font></b></span>")
-				new /obj/item/stack/thrones3/twenty(src.loc)  
-				new /obj/item/stack/thrones3/twenty(src.loc)  
-				new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc)  
+				new /obj/item/stack/thrones3/twenty(src.loc)
+				new /obj/item/stack/thrones3/twenty(src.loc)
+				new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc)
 				if(prob(35))
-					new /obj/item/clothing/suit/armor/scum2(src.loc) 
+					new /obj/item/clothing/suit/armor/scum2(src.loc)
 				else
-					new /obj/item/clothing/suit/armor/slumcoat(src.loc) 
+					new /obj/item/clothing/suit/armor/slumcoat(src.loc)
 				if(prob(100))
-					new /obj/item/reagent_containers/hypospray/autoinjector/mindbreaker(src.loc) 
-					new /obj/item/reagent_containers/hypospray/autoinjector/death(src.loc) 
-					new /obj/item/reagent_containers/hypospray/autoinjector/tau(src.loc) 
-					new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc) 
+					new /obj/item/reagent_containers/hypospray/autoinjector/mindbreaker(src.loc)
+					new /obj/item/reagent_containers/hypospray/autoinjector/death(src.loc)
+					new /obj/item/reagent_containers/hypospray/autoinjector/tau(src.loc)
+					new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc)
 
 // Outfits
 
@@ -900,7 +901,7 @@ datum/job/ig/bullgryn
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/grenade/chem_grenade/gas/xyxl = 1,
-	/obj/item/grenade/chem_grenade/gas/phosphorous = 1, 
+	/obj/item/grenade/chem_grenade/gas/phosphorous = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
 	/obj/item/pen = 1,
 	/obj/item/paper/administratum/omega = 1
@@ -1548,6 +1549,16 @@ datum/job/ig/bullgryn
 	belt = /obj/item/melee/chain/pcsword
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/commissar/catachan
+	mask = null
+	glasses = null
+	l_ear = /obj/item/device/radio/headset/heads/hos
+
+/decl/hierarchy/outfit/job/ig/commissar/mordian
+	uniform =  /obj/item/clothing/under/hosformalmale
+	suit = /obj/item/clothing/suit/armor/commissar/mordian
+	belt = /obj/item/melee/energy/powersword
+	shoes = /obj/item/clothing/shoes/jackboots/mordian
+	head = /obj/item/clothing/head/commissar/Mordian
 	mask = null
 	glasses = null
 	l_ear = /obj/item/device/radio/headset/heads/hos
