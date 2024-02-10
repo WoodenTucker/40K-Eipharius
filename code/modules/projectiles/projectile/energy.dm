@@ -136,8 +136,9 @@
 	damage = 5
 	damage_type = TOX
 	//penetrating = 1 I REALLY want to, but multikilling with this shit would be cancer to fight
-	stun = 30
+	stun = 100
 	stutter = 100
+	agony = 200
 
 /obj/item/projectile/energy/synapticdis/on_hit(var/atom/target, var/blocked = 0)
 	if(ishuman(target))
