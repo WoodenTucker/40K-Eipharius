@@ -16,6 +16,7 @@
 	slowdown = -0.10
 	inherent_verbs = list(
 	/mob/living/carbon/human/skitarii/proc/giveskitstats,
+
 		)
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
@@ -148,6 +149,19 @@
 			src.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 			src.vice = null //off for now
 			src.verbs += /mob/living/carbon/human/proc/active_camo //Gives them a camo ability.
+			src.verbs += /mob/living/carbon/human/proc/skitaloyal
+			src.verbs += /mob/living/carbon/human/proc/skitadevotees
+			src.verbs += /mob/living/carbon/human/proc/skitaexterminate
+			src.verbs += /mob/living/carbon/human/proc/skitaforgeworld
+			src.verbs += /mob/living/carbon/human/proc/skitahailomnissiah
+			src.verbs += /mob/living/carbon/human/proc/skitaletminions
+			src.verbs += /mob/living/carbon/human/proc/skitamachinemercy
+			src.verbs += /mob/living/carbon/human/proc/skitamachinestrong
+			src.verbs += /mob/living/carbon/human/proc/skitamanmachine
+			src.verbs += /mob/living/carbon/human/proc/skitaorganic
+			src.verbs += /mob/living/carbon/human/proc/skitaskitarii
+			src.verbs += /mob/living/carbon/human/proc/skitayourpurpose
+			src.verbs += /mob/living/carbon/human/proc/skitataskcompl
 			src.verbs -= /mob/living/carbon/human/skitarii/proc/giveskitstats //removes verb at the end so they can't spam it for whatever reason
 			client?.color = null
 
@@ -186,6 +200,19 @@
 			src.thirst = INFINITY
 			src.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 			src.vice = null //off for now
+			src.verbs += /mob/living/carbon/human/proc/skitaloyal
+			src.verbs += /mob/living/carbon/human/proc/skitadevotees
+			src.verbs += /mob/living/carbon/human/proc/skitaexterminate
+			src.verbs += /mob/living/carbon/human/proc/skitaforgeworld
+			src.verbs += /mob/living/carbon/human/proc/skitahailomnissiah
+			src.verbs += /mob/living/carbon/human/proc/skitaletminions
+			src.verbs += /mob/living/carbon/human/proc/skitamachinemercy
+			src.verbs += /mob/living/carbon/human/proc/skitamachinestrong
+			src.verbs += /mob/living/carbon/human/proc/skitamanmachine
+			src.verbs += /mob/living/carbon/human/proc/skitaorganic
+			src.verbs += /mob/living/carbon/human/proc/skitaskitarii
+			src.verbs += /mob/living/carbon/human/proc/skitayourpurpose
+			src.verbs += /mob/living/carbon/human/proc/skitataskcompl
 			src.verbs -= /mob/living/carbon/human/skitarii/proc/giveskitstats //removes verb at the end so they can't spam it for whatever reason
 			client?.color = null
 
@@ -253,6 +280,19 @@
 			src.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 			src.thirst = INFINITY
 			src.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
+			src.verbs += /mob/living/carbon/human/proc/skitaloyal
+			src.verbs += /mob/living/carbon/human/proc/skitadevotees
+			src.verbs += /mob/living/carbon/human/proc/skitaexterminate
+			src.verbs += /mob/living/carbon/human/proc/skitaforgeworld
+			src.verbs += /mob/living/carbon/human/proc/skitahailomnissiah
+			src.verbs += /mob/living/carbon/human/proc/skitaletminions
+			src.verbs += /mob/living/carbon/human/proc/skitamachinemercy
+			src.verbs += /mob/living/carbon/human/proc/skitamachinestrong
+			src.verbs += /mob/living/carbon/human/proc/skitamanmachine
+			src.verbs += /mob/living/carbon/human/proc/skitaorganic
+			src.verbs += /mob/living/carbon/human/proc/skitaskitarii
+			src.verbs += /mob/living/carbon/human/proc/skitayourpurpose
+			src.verbs += /mob/living/carbon/human/proc/skitataskcompl
 			src.verbs -= /mob/living/carbon/human/skitarii/thallax/proc/givethallaxstats //removes verb at the end so they can't spam it for whatever reason
 			client?.color = null
 
