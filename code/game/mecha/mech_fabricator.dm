@@ -8,7 +8,7 @@
 	use_power = 1
 	idle_power_usage = 20
 	active_power_usage = 5000
-	req_access = list(access_mechanicus)
+	req_one_access = list(access_mechanicus, access_daemon)
 
 	var/speed = 1
 	var/mat_efficiency = 1
@@ -205,7 +205,7 @@
 			visible_message("\icon[src] <b>[src]</b> beeps: \"User DB corrupted \[Code 0x00FA\]. Truncating data structure...\"")
 			sleep(30)
 			visible_message("\icon[src] <b>[src]</b> beeps: \"User DB truncated. Please contact your [GLOB.using_map.company_name] system operator for future assistance.\"")
-			req_access = null
+			req_one_access = null
 			emagged = 1
 			return 1
 		if(0.5)
