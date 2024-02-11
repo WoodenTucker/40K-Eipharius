@@ -60,14 +60,14 @@
 	name = "combat helmet"
 	desc = "A heavily reinforced helmet painted with red markings. Feels like it could take a lot of punishment."
 	icon_state = "helmet_merc"
-	armor = list(melee = 15, bullet = 45, laser = 25, energy = 35, bomb = 30, bio = 0, rad = 10)
+	armor = list(melee = 15, bullet = 35, laser = 25, energy = 35, bomb = 30, bio = 0, rad = 10)
 	siemens_coefficient = 0.5
 	sales_price = 2
 
 /obj/item/clothing/head/helmet/barney_helmet
 	name = "security helmet"
 	icon_state = "helmet_barney"
-	armor = list(melee = 15, bullet = 40, laser = 10, energy = 35, bomb = 30, bio =0, rad = 10)
+	armor = list(melee = 15, bullet = 30, laser = 10, energy = 35, bomb = 30, bio =0, rad = 10)
 	sales_price = 2
 
 /*
@@ -196,7 +196,7 @@
 /obj/item/clothing/head/helmet/sentryhelm
 	name = "Sentry Helmet"
 	desc = "Used for taking blows to the noggin without getting hurt."
-	armor = list(melee = 25, bullet = 38, laser = 38, energy = 40, bomb = 50, bio = 5, rad = 5)//proteck ya neck
+	armor = list(melee = 25, bullet = 38, laser = 38, energy = 30, bomb = 50, bio = 5, rad = 5)//proteck ya neck
 	str_requirement = 18
 
 // Ork
@@ -294,7 +294,7 @@
 	desc = "The white and bright helmet of a Tau Breacher."
 	icon_state = "tbrea"
 	item_state = "tbrea"
-	armor = list(melee = 20, bullet = 39, laser = 39, energy = 45, bomb = 35, bio = 100, rad = 100)
+	armor = list(melee = 20, bullet = 39, laser = 39, energy = 30, bomb = 35, bio = 100, rad = 100)
 
 /obj/item/clothing/head/helmet/scout
 	name = "fire warrior scout helmet"
@@ -316,7 +316,7 @@
   desc = "A ancient helmet. It looks like it's made from Thermoplas in a scale like pattern."
   icon_state = "eldhelmet"
   item_state = "eldhelmet"
-  armor = list(melee = 25, bullet = 40, laser = 40, energy = 70, bomb = 15, bio = 50, rad = 0) //thermoplas and etc
+  armor = list(melee = 25, bullet = 40, laser = 43 35, bomb = 15, bio = 50, rad = 0) //thermoplas and etc
   body_parts_covered = HEAD
   cold_protection = HEAD
   min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -326,7 +326,7 @@
   desc = "The dark and shadowy helmet of a voidscarred Corsair."
   icon_state = "aeldar_mask"
   item_state = "aeldar_mask"
-  armor = list(melee = 25, bullet = 40, laser = 40, energy = 70, bomb = 15, bio = 50, rad = 0) //thermoplas and etc
+  armor = list(melee = 25, bullet = 40, laser = 40, energy = 35, bomb = 15, bio = 50, rad = 0) //thermoplas and etc
   body_parts_covered = HEAD
   cold_protection = HEAD
   min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -336,7 +336,7 @@
   desc = "An Eldar Ranger's Helmet, comprised of layers of cameoline treated material with an underlying thermoplas layer.."
   icon_state = "reconhood"
   item_state = "reconhood"
-  armor = list(melee = 25, bullet = 40, laser = 40, energy = 70, bomb = 15, bio = 50, rad = 0) //thermoplas and etc
+  armor = list(melee = 25, bullet = 40, laser = 40, energy = 35, bomb = 15, bio = 50, rad = 0) //thermoplas and etc
   body_parts_covered = HEAD
   cold_protection = HEAD
   min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -348,7 +348,7 @@
   desc = "A ancient helmet. It looks like it's made from hardened resin in a thin-scale like pattern."
   icon_state = "deldhelmet"
   item_state = "deldhelmet"
-  armor = list(melee = 25, bullet = 40, laser = 40, energy = 45, bomb = 15, bio = 40, rad = 0)
+  armor = list(melee = 25, bullet = 40, laser = 40, energy = 30, bomb = 15, bio = 40, rad = 0)
   body_parts_covered = HEAD
   cold_protection = HEAD
   min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -442,7 +442,7 @@
 	desc = "A power helmet manufactured manufactured by unknown smiths of ruinous origin, it radiates with incredible energy and a wrath that infests your very soul."
 	icon_state = "berserkerhelm"
 	item_state = "berserkerhelm"
-	armor = list(melee = 34, bullet = 34, laser = 34, energy = 45, bomb = 60, bio = 60, rad = 40)
+	armor = list(melee = 34, bullet = 34, laser = 34, energy = 30, bomb = 60, bio = 60, rad = 40)
 	sales_price = 15
 
 /obj/item/clothing/head/helmet/reconhood
@@ -537,7 +537,7 @@
 	name = "Vindicare helmet"
 	desc = "The menacing helm of a Vindicare."
 	icon_state = "s-ninja"
-	armor = list(melee = 35, bullet = 40, laser = 40, energy = 80, bomb = 30, bio = 100, rad = 10)//Bulletproof, because, well, sniper.
+	armor = list(melee = 35, bullet = 40, laser = 40, energy = 44, bomb = 30, bio = 100, rad = 10)//Bulletproof, because, well, sniper.
 	siemens_coefficient = 0
 	canremove = 0
 	flags_inv = HIDEEARS|BLOCKHAIR
@@ -547,7 +547,7 @@
 	name = "Vindicare helmet"
 	desc = "The armoured helmet of a Thallax Warrior."
 	icon_state = "vox-stealth"
-	armor = list(melee = 30, bullet = 40, laser = 40, energy = 70, bomb = 70, bio = 100, rad = 100)
+	armor = list(melee = 30, bullet = 40, laser = 40, energy = 35, bomb = 70, bio = 100, rad = 100)
 	siemens_coefficient = 0
 	canremove = 0
 	flags_inv = HIDEEARS|BLOCKHAIR
@@ -557,7 +557,7 @@
 	name = "Colonel's Cap"
 	desc = "A protective cap worn by an Imperial Guard Colonel."
 	icon_state = "hoscap"
-	armor = list(melee = 20, bullet = 30, laser = 30, energy = 40, bomb = 40, bio = 100, rad = 100) //Event only.
+	armor = list(melee = 20, bullet = 30, laser = 30, energy = 30, bomb = 40, bio = 100, rad = 100) //Event only.
 	siemens_coefficient = 0
 	flags_inv = BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EYES //For reasons.
@@ -567,7 +567,7 @@
 	desc = "A reinforced helmet and faceplate system designed for the elite Tempestus Scions. Comprised of multiple layers of ceramite, comprising a solid carapace armour system."
 	icon_state = "ScionHelmet"
 	item_state = "ScionHelmet"
-	armor = list(melee = 30, bullet = 40, laser = 40, energy = 60, bomb = 60, bio = 100, rad = 60)
+	armor = list(melee = 30, bullet = 40, laser = 40, energy = 35, bomb = 60, bio = 100, rad = 60)
 	siemens_coefficient = 0
 	flags_inv = BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EYES

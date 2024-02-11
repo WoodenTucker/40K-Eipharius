@@ -109,7 +109,7 @@
 	icon_state = "skitshoes"
 	item_state = "skitshoes"
 	siemens_coefficient = 1
-	armor = list(melee = 30, bullet = 30, laser = 30, energy = 60, bomb = 60, bio = 0, rad = 160)//Heavily armoured, but very heavy.
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 44, bomb = 60, bio = 0, rad = 160)//Heavily armoured, but very heavy.
 	unacidable = 1
 	item_flags = ITEM_FLAG_NOSLIP|ITEM_FLAG_NODROP
 	canremove = FALSE
@@ -238,7 +238,7 @@
 	str_requirement = 25
 	canremove = 1
 	unacidable = 1
-	armor = list(melee = 30, bullet = 30, laser = 30, energy = 90, bomb = 90, bio = 50, rad = 50)
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 30, bomb = 90, bio = 50, rad = 50)
 	cold_protection = FEET|LEGS
 	item_flags = ITEM_FLAG_NOSLIP
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
@@ -337,7 +337,7 @@
 	icon_state = "inqshoes"
 	item_state = "inqshoes"
 	force = 3
-	armor = list(melee = 20, bullet = 20, laser = 20, energy = 60, bomb = 50, bio = 100, rad = 100)
+	armor = list(melee = 20, bullet = 20, laser = 20, energy = 44, bomb = 50, bio = 100, rad = 100)
 	siemens_coefficient = 0.7
 	cold_protection = FEET
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE

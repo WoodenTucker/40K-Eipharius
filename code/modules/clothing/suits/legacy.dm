@@ -5,7 +5,7 @@
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	armor = list(melee = 35, bullet = 80, laser = 80, energy = 70, bomb = 70, bio = 20, rad = 20)
+	armor = list(melee = 35, bullet = 80, laser = 80, energy = 35, bomb = 70, bio = 20, rad = 20)
 	species_restricted = list("Child")
 	canremove = 0
 

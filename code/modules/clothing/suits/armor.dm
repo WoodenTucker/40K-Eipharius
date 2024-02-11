@@ -25,7 +25,7 @@ obj/item/clothing/suit/armor
 	name = "webbed armor vest"
 	desc = "A synthetic armor vest. This one has extra webbing and flak plates."
 	icon_state = "webvest"
-	armor = list(melee = 10, bullet = 30, laser = 30, energy = 40, bomb = 40, bio = 0, rad = 5)
+	armor = list(melee = 10, bullet = 30, laser = 30, energy = 30, bomb = 40, bio = 0, rad = 5)
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
 	allowed = list(/obj/item/gun/energy,/obj/item/device/radio,/obj/item/reagent_containers/spray/pepper,/obj/item/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/handcuffs)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
@@ -42,7 +42,7 @@ obj/item/clothing/suit/armor
 	desc = "A heavy armored vest in a fetching tan. It is surprisingly flexible and light, even with the extra webbing and advanced ceramic plates."
 	icon_state = "tacwebvest"
 	item_state = "tacwebvest"
-	armor = list(melee = 5, bullet = 25, laser = 26, energy = 40, bomb = 60, bio = 0, rad = 5)
+	armor = list(melee = 5, bullet = 25, laser = 26, energy = 30, bomb = 60, bio = 0, rad = 5)
 	sales_price = 0
 
 /obj/item/clothing/suit/storage/vest/merc
@@ -150,7 +150,7 @@ obj/item/clothing/suit/armor
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_A, ACCESSORY_SLOT_ARMOR_L)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_A, ACCESSORY_SLOT_ARMOR_L)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
-	armor = list(melee = 10, bullet = 20, laser = 35, energy = 50, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 10, bullet = 20, laser = 35, energy = 35, bomb = 0, bio = 0, rad = 0)
 	sales_price = 0
 	siemens_coefficient = 0
 	starting_accessories = list(/obj/item/clothing/accessory/armguards/ablative, /obj/item/clothing/accessory/legguards/ablative)
@@ -270,7 +270,7 @@ obj/item/clothing/suit/armor
 	desc = "The white and bright armor of a Tau Breacher."
 	icon_state = "tbrea"
 	item_state = "tbrea"
-	armor = list(melee = 20, bullet = 42, laser = 42, energy = 45, bomb = 60, bio = 50, rad = 50)
+	armor = list(melee = 20, bullet = 42, laser = 42, energy = 30, bomb = 60, bio = 50, rad = 50)
 
 // Ork
 
@@ -417,7 +417,7 @@ obj/item/clothing/suit/armor
 	icon_state = "mortician"
 	item_state = "mortician"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun, /obj/item/pickaxe)
-	armor = list(melee = 20, bullet = 25, laser = 25, energy = 5, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 20, bullet = 25, laser = 25, energy = 30, bomb = 0, bio = 0, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -550,7 +550,7 @@ obj/item/clothing/suit/armor
 	icon_state = "fharmor"
 	item_state = "fharmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 31, bullet = 41, laser = 41, energy = 40, bomb = 40, bio = 10, rad = 10)
+	armor = list(melee = 31, bullet = 41, laser = 41, energy = 30, bomb = 40, bio = 10, rad = 10)
 	sales_price = 30
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -879,7 +879,7 @@ obj/item/clothing/suit/armor
 	icon_state = "grencoat"
 	item_state = "grencoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 18, bullet = 38, laser = 38, energy = 40, bomb = 60, bio = 40, rad = 50)
+	armor = list(melee = 18, bullet = 38, laser = 38, energy = 30, bomb = 60, bio = 40, rad = 50)
 	sales_price = 30
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -940,7 +940,7 @@ obj/item/clothing/suit/armor
 	icon_state = "officertanjacket"
 	item_state = "officertanjacket"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun)
-	armor = list(melee = 22, bullet = 40, laser = 40, energy = 80, bomb = 80, bio = 80, rad = 80) //Special admin event armour, shouldn't be used in normal fighting.
+	armor = list(melee = 22, bullet = 40, laser = 40, energy = 44, bomb = 80, bio = 80, rad = 80) //Special admin event armour, shouldn't be used in normal fighting.
 	sales_price = 0 //Event armour
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -2047,7 +2047,7 @@ obj/item/clothing/suit/armor
 	desc = "DO YOU SEE ME."
 	icon_state = "shadow"
 	item_state = "shadow"
-	armor = list(melee = 25, bullet = 49, laser = 49, energy = 49, bomb = 50, bio = 100, rad = 100)
+	armor = list(melee = 25, bullet = 49, laser = 49, energy = 309, bomb = 50, bio = 100, rad = 100)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|HANDS|FEET|HEAD
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
