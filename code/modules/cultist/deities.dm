@@ -9,6 +9,7 @@
 						/datum/rune_recipe/khorne/offer_heart,
 						/datum/rune_recipe/khorne/offer_gem,
 						/datum/rune_recipe/khorne/radio,
+						/datum/rune_recipe/khorne/armor,
 						/datum/rune_recipe/khorne/knife_teeth,
 						/datum/rune_recipe/khorne/conversion)
 	possible_blessings = list(

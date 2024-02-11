@@ -84,7 +84,7 @@
 	name = "lightning"
 	damage = 35
 	check_armour = "energy"
-	armor_penetration = 48
+	armor_penetration = 36
 	icon_state = "laser_musket"
 	damage_type = BURN
 
@@ -101,7 +101,7 @@
 	name = "lightning spark"
 	damage = 4
 	check_armour = "energy"
-	armor_penetration = 48
+	armor_penetration = 36
 
 
 /obj/item/projectile/bullet/pellet/lightning/on_hit(var/atom/movable/target, var/blocked = 0)
@@ -138,7 +138,7 @@
 	name = "firebolt"
 	damage = 50
 	check_armour = "energy"
-	armor_penetration = 48
+	armor_penetration = 36
 	icon_state = "fireball"
 	damage_type = BURN
 
@@ -171,7 +171,7 @@
 	name = "firebolt"
 	damage = 75
 	check_armour = "energy"
-	armor_penetration = 55
+	armor_penetration = 38
 	icon_state = "fireball"
 	damage_type = BURN
 
@@ -204,7 +204,7 @@
 	name = "firebolt"
 	damage = 30
 	check_armour = "energy"
-	armor_penetration = 48
+	armor_penetration = 38
 	icon_state = "fireball"
 	damage_type = BURN
 

@@ -95,7 +95,7 @@
 	damage = 15
 	agony = 90
 	damage_type = BURN
-	armor_penetration = 30
+	armor_penetration = 28
 
 /obj/item/projectile/energy/dart
 	name = "dart"
@@ -184,7 +184,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 40
-	armor_penetration = 38
+	armor_penetration = 34
 
 /obj/item/projectile/energy/las/lasgun/overcharge
 	name = "lasbolt"
@@ -192,7 +192,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 54
-	armor_penetration = 38
+	armor_penetration = 35
 
 /obj/item/projectile/energy/las/lasgun/undercharge
 	name = "lasbolt"
@@ -208,7 +208,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 90
-	armor_penetration = 45
+	armor_penetration = 37
 
 /obj/item/projectile/energy/las/lasgun/lucius
 	name = "lasbolt"
@@ -216,7 +216,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 48
-	armor_penetration = 35
+	armor_penetration = 32
 
 /obj/item/projectile/energy/las/lasgun/lucius/overcharge
 	name = "lasbolt"
@@ -224,7 +224,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 62
-	armor_penetration = 43
+	armor_penetration = 37
 
 /obj/item/projectile/energy/las/lasgun/longlas
 	name = "lasbolt"
@@ -232,7 +232,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 75
-	armor_penetration = 43
+	armor_penetration = 35
 	accuracy = 2
 
 /obj/item/projectile/energy/las/lasgun/longlas/overcharge
@@ -241,7 +241,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 90
-	armor_penetration = 50
+	armor_penetration = 40
 
 /obj/item/projectile/energy/las/lasgun/hotshot
 	name = "lasbolt"
@@ -249,7 +249,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 55
-	armor_penetration = 43
+	armor_penetration = 33
 
 /obj/item/projectile/energy/las/lasgun/hotshot/krieg
 	name = "lasbolt"
@@ -257,7 +257,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 58
-	armor_penetration = 44
+	armor_penetration = 34
 
 /obj/item/projectile/energy/pulse/pulserifle
 	name = "pulse round"
@@ -265,7 +265,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
 	damage = 55
-	armor_penetration = 43
+	armor_penetration = 35
 
 /obj/item/projectile/energy/pulse/pulsepistol
 	name = "pulse round"
@@ -273,7 +273,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
 	damage = 55
-	armor_penetration = 43
+	armor_penetration = 35
 
 /obj/item/projectile/energy/pulse/fragment // fragmentation for pulse explosions
 	name = "pulse round"
@@ -281,7 +281,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
 	damage = 7
-	armor_penetration = 40
+	armor_penetration = 30
 
 /obj/item/projectile/energy/pulse/pulserail
 	name = "pulse round"
@@ -289,7 +289,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
 	damage = 32
-	armor_penetration = 50
+	armor_penetration = 41
 
 	on_hit(var/atom/target, var/blocked = 0)
 		fragmentates(target, 8)
@@ -300,7 +300,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
 	damage = 35
-	armor_penetration = 50
+	armor_penetration = 41
 
 	on_hit(var/atom/target, var/blocked = 0)
 		fragmentates(target, 8)
@@ -312,7 +312,7 @@
 	icon_state = "pulse1_bl"
 	damage = 90
 	weaken = 1
-	armor_penetration = 50
+	armor_penetration = 39
 	light_power = 4
 	light_color = "#2132cf"
 
@@ -324,7 +324,7 @@
 	icon_state = "pulse1_bl"
 	damage = 80
 	weaken = 1
-	armor_penetration = 48
+	armor_penetration = 38
 	light_power = 4
 	light_color = "#2132cf"
 
@@ -335,7 +335,7 @@
 	icon_state = "pulse1_bl"
 	damage = 28
 	weaken = 1
-	armor_penetration = 52
+	armor_penetration = 42
 	light_power = 4
 	light_color = "#2132cf"
 
@@ -346,7 +346,7 @@
 	name = "Warp Bolt"
 	icon_state = "warpboltcrappy"
 	damage = 20
-	armor_penetration = 50
+	armor_penetration = 37
 	agony = 15 //Its warp magic it hurts more than it really is damaging.
 	eyeblur = 10 //the warp magic disrupts your eyes for a moment.
 	light_power = 4 //It glows because warp idk.
@@ -359,7 +359,7 @@
 	name = "lightning"
 	icon_state = "stun"
 	damage = 75
-	armor_penetration = 50
+	armor_penetration = 39
 	agony = 35
 	damage_type = BURN
 	check_armour = "energy"

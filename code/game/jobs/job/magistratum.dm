@@ -80,6 +80,7 @@
 		H.add_stats(rand(16,19), rand(13,17), rand(13,17), rand(10,13)) //meant to be a brute keeping the plebs in line
 		H.add_skills(rand(9,10),rand(7,10),rand(3,6),3,rand(2,5)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.verbs += list(
 			/mob/living/carbon/human/proc/ideology,
 		)
@@ -124,6 +125,7 @@
 			/mob/living/carbon/human/proc/ideology,
 		)
 		H.set_trait(new/datum/trait/death_tolerant())
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.add_stats(rand(16,19), rand(13,17), rand(13,17), rand(10,13)) //meant to be a brute keeping the plebs in line
 		H.add_skills(rand(9,10),rand(7,10),rand(3,6),3,rand(2,5)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
@@ -166,6 +168,7 @@
 		H.add_skills(rand(9,10),rand(7,10),rand(3,5),3,rand(2,4)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.set_trait(new/datum/trait/death_tolerant())
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.witchblood() //Becoming a psyker can happen at any point of your life bro.
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.adjustStaminaLoss(-INFINITY)

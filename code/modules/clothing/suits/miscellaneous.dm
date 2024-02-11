@@ -545,7 +545,7 @@
 	item_state = "coat-church"
 	body_parts_covered = UPPER_TORSO|ARMS|LOWER_TORSO|LEGS
 	allowed = list(/obj/item/nullrod, /obj/item/storage/bible)
-	armor = list(melee = 18, bullet = 33, laser = 33, energy = 70, bomb = 40, bio = 70, rad = 70)
+	armor = list(melee = 18, bullet = 33, laser = 33, energy = 35, bomb = 40, bio = 70, rad = 70)
 	sales_price = 40
 
 /obj/item/clothing/suit/watercaste
@@ -556,7 +556,7 @@
 	blood_overlay_type = "armor"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	allowed = list(/obj/item/gun/energy/pulse/pulsepistol, /obj/item/cell/pulserifle)
-	armor = list(melee = 15, bullet = 33, laser = 33, energy = 5, bomb = 5, bio = 5, rad = 5)
+	armor = list(melee = 15, bullet = 33, laser = 33, energy = 30, bomb = 5, bio = 5, rad = 5)
 	siemens_coefficient = 3.0
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

@@ -63,7 +63,7 @@
 	name = "Heavy Flak helmet"
 	desc = "Use in case of bomb."
 	icon_state = "bombsuit"
-	armor = list(melee = 17, bullet = 35, laser = 30, energy = 50, bomb = 50, bio = 0, rad = 0)
+	armor = list(melee = 17, bullet = 35, laser = 30, energy = 35, bomb = 50, bio = 0, rad = 0)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EYES
 	siemens_coefficient = 0
@@ -77,7 +77,7 @@
 	w_class = ITEM_SIZE_HUGE//bulky item
 	gas_transfer_coefficient = 0.01
 	permeability_coefficient = 0.01
-	armor = list(melee = 16, bullet = 40, laser = 25, energy = 50, bomb = 70, bio = 90, rad = 40)
+	armor = list(melee = 16, bullet = 40, laser = 25, energy = 35, bomb = 70, bio = 90, rad = 40)
 	flags_inv = HIDEJUMPSUIT|HIDETAIL
 	heat_protection = UPPER_TORSO|LOWER_TORSO
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE

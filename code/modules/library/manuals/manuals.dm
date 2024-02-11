@@ -386,6 +386,10 @@
 				<h3>Imbue yourself with the power of the Blood God.</h3>
 				Hearts or thrones offered on a rune of Khorne. Raise your favour to receive blessings improving your combat prowess.
 
+				<h2>Armor Of War:</h2>
+				<h3>Bless an armor and receive the garb of the Bloodpact.</h3>
+				Place a single emerald and any armor onto the rune of Khorne(Roleplay that you scavenged the armor I dunno).
+
 				<h2>Tools Of Carnage:</h2>
 				<h3>Bless a weapon of slaughter via offerings.</h3>
 				A cut ruby and a combat knife offered on a rune of Khorne. The blade it provides thirsts for blood. 

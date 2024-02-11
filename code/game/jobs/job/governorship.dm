@@ -286,6 +286,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("[current_name]")
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.add_stats(rand(13,17), rand(13,18), rand(13,19), rand(13,16)) //meant to be a brute keeping the plebs in line
 		H.add_skills(rand(6,8),rand(6,8),rand(3,6),4,rand(3,6)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()

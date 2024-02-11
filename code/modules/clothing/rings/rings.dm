@@ -160,7 +160,7 @@
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/hotshot
 	charge_cost = 0
-	armor_penetration = 0
+	armor_penetration = 12
 	cell_type = /obj/item/cell/device
 	ammoType = /obj/item/cell/device
 	fire_delay = 60 //about 15 seconds
@@ -198,7 +198,7 @@
 	icon_state = "blade"
 	force = 40 //bit weaker than normal power sword
 	weapon_speed_delay = 8 //2 secs or so
-//	armor_penetration = 10 //add this if you want it to penetrate armor, ya nerds!
+	armor_penetration = 17 //add this if you want it to penetrate armor, ya nerds!
 	block_chance = 35 //good at blocking
 	edge = 0 //i don't want this to end badly
 	w_class = ITEM_SIZE_HUGE //slow attacking

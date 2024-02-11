@@ -34,7 +34,7 @@
 	name = "lantern"
 	icon_state = "lantern"
 	desc = "A mining lantern."
-	brightness_on = 8			// luminosity when on
+	brightness_on = 9			// luminosity when on
 
 /*****************************Pickaxe********************************/
 
@@ -45,6 +45,7 @@
 	icon = 'icons/obj/mining.dmi'
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_ICLOTHING
 	force = 25
+	armor_penetration = 14
 	throwforce = 15
 	icon_state = "pickaxe"
 	item_state = "spickaxe"
@@ -149,6 +150,7 @@
 	slot_flags = SLOT_BELT
 	force = 15
 	throwforce = 10
+	armor_penetration = 13
 	item_state = "shovel"
 	w_class = ITEM_SIZE_SMALL
 	origin_tech = list(TECH_MATERIAL = 1, TECH_ENGINEERING = 1)
@@ -176,6 +178,7 @@
 	item_state = "trench"
 	force = 28
 	sharp = 1
+	armor_penetration = 15
 	throwforce = 25
 	block_chance = 25
 	weapon_speed_delay = 8

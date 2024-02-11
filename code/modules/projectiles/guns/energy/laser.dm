@@ -188,9 +188,9 @@
 	sales_price = 35
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
-		list(mode_name="3-round bursts", burst=3, fire_delay=5, burst_accuracy=list(0,0,0),       dispersion=null, automatic = 0, charge_cost=80),
-		list(mode_name="overcharge", fire_delay = 3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=140),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun, charge_cost=80),
+		list(mode_name="3-round bursts", burst=3, fire_delay=5, burst_accuracy=list(0,0,0),       dispersion=null, projectile_type=/obj/item/projectile/energy/las/lasgun, automatic = 0, charge_cost=80),
+		list(mode_name="overcharge", burst=1, fire_delay = 3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=140),
 		)
 
 /obj/item/gun/energy/las/lasgun/New()
@@ -570,7 +570,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/pistol
 	charge_cost = 100
-	armor_penetration = 0
+	armor_penetration = 11
 	cell_type = /obj/item/cell/lasgun/small || /obj/item/cell/lasgun
 	ammoType =  /obj/item/cell/lasgun
 	sales_price = 10
@@ -663,8 +663,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	sales_price = 25
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=1.7, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=100),
-		list(mode_name="Overcharged", 	fire_delay = 3, charge_cost = 145, projectile_type = /obj/item/projectile/energy/las/lasgun/lucius),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=1.7, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=100, projectile_type = /obj/item/projectile/energy/las/lasgun/lucius),
+		list(mode_name="Overcharged", 	fire_delay = 3, charge_cost = 145, projectile_type = /obj/item/projectile/energy/las/lasgun/lucius/overcharge),
 		)
 
 //Tau weapons

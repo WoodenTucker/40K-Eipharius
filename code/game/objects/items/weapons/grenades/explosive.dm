@@ -1,6 +1,6 @@
 /obj/item/projectile/bullet/pellet/fragment
-	damage = 45
-	armor_penetration = 44
+	damage = 25
+	armor_penetration = 24
 	range_step = 3 //controls damage falloff with distance. projectiles lose a "pellet" each time they travel this distance. Can be a non-integer.
 
 	base_spread = 0 //causes it to be treated as a shrapnel explosion instead of cone
@@ -13,15 +13,15 @@
 	do_not_pass_trench = TRUE
 
 /obj/item/projectile/bullet/pellet/fragment/strong
-	damage = 60
+	damage = 40
 	range_step = 1 //controls damage falloff with distance. projectiles lose a "pellet" each time they travel this distance. Can be a non-integer.
 	range = 5
-	armor_penetration = 46
+	armor_penetration = 26
 
 /obj/item/projectile/bullet/pellet/fragment/weak
-	damage = 40
+	damage = 20
 	range_step = 3
-	armor_penetration = 40
+	armor_penetration = 20
 
 /obj/item/grenade/frag
 	name = "fragmentation grenade"
@@ -32,7 +32,7 @@
 	icon = 'icons/obj/grenade.dmi'
 
 	var/list/fragment_types = list(/obj/item/projectile/bullet/pellet/fragment = 1)
-	var/num_fragments = 16  //total number of fragments produced by the grenade (nerfed by x4. 72 / 4 = 18 let's see if this is too little -plinypotter)
+	var/num_fragments = 12  //total number of fragments produced by the grenade (nerfed by x4. 72 / 4 = 18 let's see if this is too little -plinypotter)
 	var/explosion_size = 1   //size of the center explosion
 
 	//The radius of the circle used to launch projectiles. Lower values mean less projectiles are used but if set too low gaps may appear in the spread pattern

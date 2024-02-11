@@ -151,7 +151,7 @@
 	cold_protection = HEAD
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS|BLOCKHAIR|BLOCKHEADHAIR
 	unacidable = 1
-	armor = list(melee = 17, bullet = 50, laser = 45, energy = 80, bomb = 50, bio = 100, rad = 160)
+	armor = list(melee = 17, bullet = 50, laser = 45, energy = 44, bomb = 50, bio = 100, rad = 160)
 	flash_protection = FLASH_PROTECTION_MAJOR
 
 /obj/item/clothing/head/genehood
@@ -161,7 +161,7 @@
 	item_state = "genetor"
 	flags_inv = HIDEEARS | BLOCKHAIR
 	unacidable = 1
-	armor = list(melee = 18, bullet = 30, laser = 40,energy = 40, bomb = 70, bio = 100, rad = 20)
+	armor = list(melee = 18, bullet = 30, laser = 40,energy = 30, bomb = 70, bio = 100, rad = 20)
 	flags_inv = BLOCKHAIR|BLOCKHEADHAIR|HIDEEARS|HIDEEYES
 	flash_protection = FLASH_PROTECTION_MAJOR
 
@@ -184,7 +184,7 @@
 	min_cold_protection_temperature = T0C - 30
 	cold_protection = HEAD
 	flags_inv = HIDEEARS | BLOCKHAIR
-	armor = list(melee = 18, bullet = 35, laser = 35, energy = 40, bomb = 20, bio = 100, rad = 100) //gives ranger the same armor as ruststalker, anyone who wants this shit balanced, ping me with the stats you want it to have
+	armor = list(melee = 18, bullet = 35, laser = 35, energy = 30, bomb = 20, bio = 100, rad = 100) //gives ranger the same armor as ruststalker, anyone who wants this shit balanced, ping me with the stats you want it to have
 
 /obj/item/clothing/head/rusthood
 	name = "ruststalker hood"
@@ -195,7 +195,7 @@
 	min_cold_protection_temperature = T0C - 30
 	cold_protection = HEAD
 	flags_inv = HIDEEARS | BLOCKHAIR
-	armor = list(melee = 21, bullet = 25, laser = 25, energy = 40, bomb = 20, bio = 100, rad = 100)
+	armor = list(melee = 21, bullet = 25, laser = 25, energy = 30, bomb = 20, bio = 100, rad = 100)
 
 /obj/item/clothing/head/vanhelm
 	name = "vanguard helmet"
@@ -206,4 +206,4 @@
 	min_cold_protection_temperature = T0C - 30
 	cold_protection = HEAD
 	flags_inv = HIDEEARS | BLOCKHAIR
-	armor = list(melee = 20, bullet = 37, laser = 37, energy = 80, bomb = 50, bio = 100, rad = 160)
+	armor = list(melee = 20, bullet = 37, laser = 37, energy = 44, bomb = 50, bio = 100, rad = 160)

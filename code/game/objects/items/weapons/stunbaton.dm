@@ -24,7 +24,7 @@
 	sales_price = 1
 	weapon_speed_delay = 6
 	status = 1
-	armor_penetration = 17 //Blunt force transfers through a lot of equipment.
+	armor_penetration = 12 // 60% vs SOB armor. 90 percent on Flak.
 
 /obj/item/melee/baton/handle_shield(mob/living/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(default_sword_parry(user, damage, damage_source, attacker, def_zone, attack_text))
@@ -280,7 +280,7 @@
 	atom_flags = ATOM_FLAG_NO_BLOOD
 	origin_tech = list(TECH_MAGNET = 2, TECH_COMBAT = 2)
 	attack_verb = list("beaten", "smashed")
-	armor_penetration = 19 //Power maul
+	armor_penetration = 14 // 70% vs SOB Power Armor. 95% vs Flak.
 
 /obj/item/melee/powermaul/apply_hit_effect(mob/living/target, mob/living/user, var/hit_zone)
 	if(isrobot(target))
@@ -339,7 +339,7 @@
 	atom_flags = ATOM_FLAG_NO_BLOOD
 	origin_tech = list(TECH_MAGNET = 2, TECH_COMBAT = 2)
 	attack_verb = list("violated", "penetrated", "infested")
-	armor_penetration = 19 //Genestealer magic.
+	armor_penetration = 18 // 70% vs SM Chestpiece
 no
 /obj/item/melee/baton/nidstun/dropped() //since nodrop is fucked this will deal with it for now.
 	..()

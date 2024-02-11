@@ -702,7 +702,7 @@
 	desc = "An helmet issued to the Battle Sister of the Adepta Sororitas Militant Wing, This one bears the Sigil of the Order of The Sacred Rose, If you looks closely, you can see it's omits holy power, making you feels safer and secure.</i>"
 	icon_state = "sister"
 	item_state = "sister"
-	armor = list(melee = 35, bullet = 44, laser = 44, energy = 40, bomb = 40, bio = 100, rad = 100)
+	armor = list(melee = 19, bullet = 44, laser = 44, energy = 30, bomb = 40, bio = 100, rad = 100)
 	sales_price = 50
 
 /obj/item/clothing/head/helmet/sisterofbattle/repentia
@@ -710,7 +710,7 @@
 	desc = "The gloomy cowl of a penitent sister of battle. It is covered in faded bloodstains and worn at the edges. This one has a purity seal and the mark of the Holy Inquisition."
 	icon_state = "repentia_hood"
 	item_state = "repentia_hood"
-	armor = list(melee = 38, bullet = 35, laser = 35, energy = 40, bomb = 40, bio = 40, rad = 40)
+	armor = list(melee = 18, bullet = 35, laser = 35, energy = 30, bomb = 40, bio = 40, rad = 40)
 	flags_inv = HIDEMASK|HIDEEARS|BLOCKHAIR
 	sales_price = 20
 
@@ -719,7 +719,7 @@
 	desc = "An helmet issued to the Sisters of Battle. This one bears the Sigil of the Order of Our Martyred Lady. Somehow you can feel His influence radiating from it, warm like sunshine.</i>"
 	icon_state = "mlsister"
 	item_state = "mlsister"
-	armor = list(melee = 35, bullet = 44, laser = 44, energy = 40, bomb = 40, bio = 100, rad = 100)
+	armor = list(melee = 19, bullet = 44, laser = 44, energy = 30, bomb = 40, bio = 100, rad = 100)
 	sales_price = 50
 
 /obj/item/clothing/head/helmet/sisterofbattle/brsister
@@ -727,7 +727,7 @@
 	desc = "A power armor helmet belonging to a sister of battle. This one is marked with the colors of the Order of the Bloody Rose.</i>"
 	icon_state = "brsister"
 	item_state = "brsister"
-	armor = list(melee = 35, bullet = 44, laser = 44, energy = 40, bomb = 40, bio = 100, rad = 100)
+	armor = list(melee = 19, bullet = 44, laser = 44, energy = 30, bomb = 40, bio = 100, rad = 100)
 	sales_price = 50
 
 /obj/item/clothing/head/preacher
@@ -742,7 +742,7 @@
 /obj/item/clothing/head/ogryn
 	name = "ogryn head"
 	desc = "UH OH"
-	armor = list(melee = 30, bullet = 30, laser = 30, energy = 40, bomb = 40, bio = 40, rad = 40)
+	armor = list(melee = 10, bullet = 30, laser = 30, energy = 30, bomb = 40, bio = 40, rad = 40)
 	icon = 'icons/mob/32x40/feet.dmi'
 	item_icons = list(slot_shoes_str = 'icons/mob/32x40/feet.dmi')
 	icon_state = "ogryn_boots"
@@ -816,6 +816,6 @@
 	desc = "The Exquisite Helm of the Border Prince"
 	icon_state = "prince"
 	item_state = "prince"
-	armor = list(melee = 25, bullet = 31, laser = 31, energy = 40, bomb = 40, bio = 0, rad = 40)
+	armor = list(melee = 25, bullet = 31, laser = 31, energy = 30, bomb = 40, bio = 0, rad = 40)
 	flags_inv = HIDEMASK|HIDEEARS|BLOCKHAIR
 	sales_price = 10
