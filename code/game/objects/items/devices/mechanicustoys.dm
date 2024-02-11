@@ -157,7 +157,7 @@
 	block_chance = 20 //20 block chance, same block chance, force and pen as brutal chainsword but harder to get
 	force = 50
 	force_wielded = 60
-	armor_penetration = 21 //high penetration due to it being a power axe, weaker than power sword due to moderate block chance.
+	armor_penetration = 15 // Penetration 60% Versus Marine Power Armor.
 	sharp = TRUE
 	edge = TRUE
 //	obj_flags = OBJ_FLAG_CONDUCTIBLE //me on my way to get shocked after flinging a power axe at a power wire cause it somehow is conductible
@@ -173,7 +173,7 @@
 	name = "Oversized Omnissiah`s axe"
 	desc = "The Blessed Power Axe of a techpriest. This one is oversized and meant to be beared by a Techmarine. Its decorated with holy symbols of the Adeptus Mechanicus"
 	block_chance = 25 //Bit better
-	armor_penetration = 26 //Meant to fight proper power armor
+	armor_penetration = 19 // Penetration 75% Versus Marine Power Armor.
 	weapon_speed_delay = 11
 
 /obj/item/melee/omnissiah_axe/astartes/dropped() //since nodrop is fucked this will deal with it for now.
@@ -279,7 +279,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	str_requirement = 20
 	force = 42
 	force_wielded = 60
-	armor_penetration = 21
+	armor_penetration = 20 // Pen 80 vs SM Chestpiece
 	block_chance = 45 //apothecary nartheciums can be used for blocking better, due to being essentially a extension of the apothecaries body and being insanely armored.
 
 /obj/item/melee/chain/pcsword/narthecium/apot/dropped() //since nodrop is fucked this will deal with it for now.
@@ -292,7 +292,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	desc = "A pair of white, augmented gloves, these have several modifications on them."
 	siemens_coefficient = 0
 	permeability_coefficient = 0.05
-	armor = list(melee = 3, bullet = 3, laser = 3, energy = 10, bomb = 10, bio = 0, rad = 60)
+	armor = list(melee = 1, bullet = 3, laser = 3, energy = 10, bomb = 10, bio = 0, rad = 60)
 	icon_state = "sister" //gloves.dmi
 	item_state = "sister" //hands.dmi
 	var/can_toggle = 1
@@ -602,7 +602,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	projectile_type = /obj/item/projectile/energy/las/lasgun
 	charge_cost = 600
 	self_recharge = 1
-	armor_penetration = 5
+	armor_penetration = 12 // This is melee
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
@@ -625,7 +625,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	projectile_type = /obj/item/projectile/energy/las/lasgun/overcharge
 	charge_cost = 300
 	self_recharge = 1
-	armor_penetration = 5
+	armor_penetration = 12 // Melee
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
