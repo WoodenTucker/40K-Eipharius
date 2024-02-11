@@ -11,8 +11,17 @@
 /datum/cargo_category/melee
 	name = "Melee"
 
-/datum/cargo_category/weapon
-	name = "Weapons"
+/datum/cargo_category/ballistics
+	name = "Ballistics"
+
+/datum/cargo_category/energy
+	name = "Energy"
+
+/datum/cargo_category/explosives
+	name = "Explosives"
+
+/datum/cargo_category/clothing
+	name = "Clothing"
 
 /datum/cargo_category/misc
 	name = "Misc"
@@ -28,3 +37,6 @@
 
 /datum/cargo_category/bmarket
 	name = "Black Market"
+
+//datum/cargo_category/weapon // separated into ballistics, energy, grenades
+//	name = "Weapons"

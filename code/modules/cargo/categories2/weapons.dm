@@ -142,7 +142,7 @@
 	item_path = /obj/item/gun/projectile/automatic/flamer
 
 /datum/noble_entry/weapon/shittylaspistol
-	name = "Portsmith Laspistol" 
+	name = "Portsmith Laspistol"
 	cost = 27
 	item_path = /obj/item/gun/energy/las/laspistol/shitty
 
