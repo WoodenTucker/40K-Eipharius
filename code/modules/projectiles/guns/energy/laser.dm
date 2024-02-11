@@ -190,7 +190,7 @@
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
 		list(mode_name="3-round bursts", burst=3, fire_delay=5, burst_accuracy=list(0,0,0),       dispersion=null, automatic = 0, charge_cost=80),
-		list(mode_name="overcharge", fire_delay = 3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=140),
+		list(mode_name="overcharge", burst=1, fire_delay = 3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=140),
 		)
 
 /obj/item/gun/energy/las/lasgun/New()
