@@ -17,7 +17,7 @@
 /datum/noble_category/energy
 	name = "Energy"
 
-	/datum/noble_category/explosives
+/datum/noble_category/explosives
 	name = "Explosives"
 
 /datum/noble_category/clothing

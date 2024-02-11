@@ -11,7 +11,7 @@
 	cost = 30
 	item_path = /obj/item/rnd/illegal3
 
-/datum/cargo_entry/bmarket/batterer
+/datum/cargo_entry/bmarket/metalfoam
 	name = "Xenos Metal Foam Grenade"
 	cost = 31
 	item_path = /obj/item/grenade/chem_grenade/metalfoam
