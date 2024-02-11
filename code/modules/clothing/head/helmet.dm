@@ -316,7 +316,7 @@
   desc = "A ancient helmet. It looks like it's made from Thermoplas in a scale like pattern."
   icon_state = "eldhelmet"
   item_state = "eldhelmet"
-  armor = list(melee = 25, bullet = 40, laser = 43 35, bomb = 15, bio = 50, rad = 0) //thermoplas and etc
+  armor = list(melee = 25, bullet = 40, laser = 43, bomb = 15, bio = 50, rad = 0) //thermoplas and etc
   body_parts_covered = HEAD
   cold_protection = HEAD
   min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
