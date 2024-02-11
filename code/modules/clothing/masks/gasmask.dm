@@ -44,6 +44,13 @@
 	body_parts_covered = FACE|EYES
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 75, rad = 0)
 
+/obj/item/clothing/mask/gas/security/bloodpact
+	name = "grotesque mask"
+	desc = "The scars of your past become a haze of rage and frenzy as you stare into the mask."
+	icon_state = "Grotesque_Mask"
+	item_state = "Grotesque_Mask"
+
+
 /obj/item/clothing/mask/gas/security/agent
 	name = "inquisition gas mask"
 	icon_state = "agent_mask"

@@ -80,6 +80,7 @@
 		..()
 		H.add_skills(rand(6,10),rand(6,10),rand(3,6),rand(4,6),rand(1,6)) //melee, ranged, med, eng, surgery
 		H.add_stats(rand(15,18), rand(15,18), rand(15,18), rand (12,16))
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
@@ -135,6 +136,7 @@
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
 		H.assign_random_quirk()
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
 		H.verbs += list(
@@ -171,6 +173,7 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
 		H.assign_random_quirk()
@@ -261,6 +264,7 @@ datum/job/ig/bullgryn
 		H.assign_random_quirk()
 		H.witchblood()
 		H.vice = null
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
 		H.verbs += list(
 			/mob/living/carbon/human/proc/veteranclass,
@@ -326,18 +330,19 @@ datum/job/ig/bullgryn
 		H.add_skills(rand(9,10),rand(9,10),rand(5,7),5,rand(4,6)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.witchblood()
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.verbs += list(
 			/mob/living/carbon/human/proc/veteranclass,
 			/mob/living/carbon/human/proc/ideology,
 		)
 		H.set_quirk(new/datum/quirk/tough())
+		H.vice = null
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
-//		H.vice = null //sarges seen some shit
 
 		switch(title) //DO NOT TOUCH THIS, IT PROBABLY WORKS
 			if("Cadian Sergeant" || "Valhallan Sergeant" || "Catachan Sergeant" || "Krieg Watchmaster")
@@ -399,7 +404,9 @@ datum/job/ig/bullgryn
 		H.add_stats(rand(15,17), rand(15,17), rand(15,17), rand (14,18)) //same stats as normal guard but better int, med and surgery
 		H.add_skills(rand(6,10),rand(6,10),rand(8,10),rand(5,6),rand(9,11)) //melee, ranged, med, eng, surgery
 		H.get_equipped_item(slot_s_store)
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.assign_random_quirk()
+		H.vice = null
 		H.verbs += list(
 			/mob/living/carbon/human/proc/medicclass,
 			/mob/living/carbon/human/proc/ideology,
@@ -510,6 +517,7 @@ datum/job/ig/bullgryn
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.fully_replace_character_name("Commissar [current_name]")
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
@@ -1698,21 +1706,18 @@ datum/job/ig/bullgryn
 	to_chat(src, "<i>...[message]</i>")
 
 GLOBAL_LIST_INIT(lone_thoughts, list(
-		"Why are we still here... just to suffer?",
-		"We fight our fabulous queen KARL, and that's all that matters.",
-		"Why we don't get any more reinforcements?",
-		"LENNEEEEEEEEH! WHERE ARE YOU LENNY?",
-		"What do you call an arsonist? A flamer enthusiast -- ehey!",
-		"Is there any reason to keep fighting?",
-		"It's middle of winter... why is Inquisitor Rex unclothed?",
-		"Greg died last night.",
-		"The british are coming...",
-		"There is no hope... anymore...",
-		"Is any of this real?",
-		"My teeth hurt. Should sell them to an ork...",
-		"I hear the Governor has a 'diplomatic' relationship with the Tau...",
-		"I don't remember joining the military...",
-		"Does the Emperor truly protect papa Grue?",
+		"Subdue the regret. Dust yourself off. Proceed. You'll get it in the next life. Do what you can with this one.",
+		"You do have something better to do. Stay strong. You don't need to keep doing this to yourself.",
+		"This is somewhere to be. This is all you have, but it's still something. Streets and sodium lights. The sky, the world. You're still alive.",
+		"The road to healing will be a long one. Stay the course. You will make it. Someday.",
+		"Just remember that you've made it this far. And it's just a bit farther now. Let's finish this.",
+		"Your heart is broken, bratushka. And it cannot be mended. Believe me, I've tried.",
+		"A hug a day keeps the bourgeoisie away.",
+		"Your mangled brain would like you to know there is a boxer called Contact Mike.",
+		"A tremendous loneliness comes over you. Everybody in the world is doing something without you.",
+		"All the gifts your parents gave you, all the love and patience of your friends, you drowned in a neurotoxin. You let misery win. And it will keep on winning till you die -- or overcome it.",
+		"You are a violent and irrepressible miracle. The vacuum of cosmos and the stars burning in it are afraid of you. Given enough time you would wipe us all out and replace us with nothing -- just by accident.",
+		"There is a giant ball there. And evil apes. And the evil apes are dukin' it out on the ball. You're one of them. It's basically all just evil apes dukin' it out on a giant ball.",
 		"I hope the Inquisitor doesn't find my Eldar Mommy fan-fiction",))
 
 /mob/living/proc/assign_random_quirk()

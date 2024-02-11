@@ -644,8 +644,8 @@
 /obj/item/melee/trench_axe/bspear/hunter
 	name = "fine hunting spear"
 	desc = "An incredibly lightweight and nimble spear used by hunters against large game animals."
-	force = 37
-	force_wielded = 41
+	force = 38
+	force_wielded = 40
 	armor_penetration = 18
 	throwforce = 27
 	block_chance = 25

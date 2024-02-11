@@ -51,4 +51,4 @@
 	item_state = "magoshelm"
 	brightness_on = 8
 	unacidable = 1
-	armor = list(melee = 37, bullet = 30, laser = 40,energy = 40, bomb = 70, bio = 100, rad = 20)
+	armor = list(melee = 37, bullet = 30, laser = 40,energy = 30, bomb = 70, bio = 100, rad = 20)

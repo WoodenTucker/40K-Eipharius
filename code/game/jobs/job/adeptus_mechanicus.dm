@@ -131,6 +131,7 @@
 		H.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(2,4),rand(2,6)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.vice = null // Bondsman aren't given the freedom to have vices.
 		H.witchblood()
 		H.say(":e I aspire to the unity of the blessed machine. I crave the strength and certainty of steel...")

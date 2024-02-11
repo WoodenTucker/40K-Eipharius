@@ -129,7 +129,7 @@
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO|ARMS
 	allowed = list(/obj/item/tank/emergency,/obj/item/device/flashlight,/obj/item/gun/energy,/obj/item/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/handcuffs,/obj/item/storage/fancy/cigarettes,/obj/item/flame/lighter,/obj/item/device/taperecorder)
-	armor = list(melee = 17, bullet = 25, laser = 25, energy = 5, bomb = 10, bio = 10, rad = 10)
+	armor = list(melee = 17, bullet = 25, laser = 25, energy = 30, bomb = 10, bio = 10, rad = 10)
 
 /obj/item/clothing/suit/storage/det_trench/grey
 	name = "grey trenchcoat"
@@ -140,14 +140,14 @@
 	icon_state = "detective2"
 	desc = "Bulky layered robes, belonging to a high-ranking member of the Adpetus Administratum."
 	allowed = list(/obj/item/paper,/obj/item/paper_bundle,/obj/item/pen,/obj/item/device/taperecorder)
-	armor = list(melee = 17, bullet = 25, laser = 25, energy = 5, bomb = 10, bio = 10, rad = 10)
+	armor = list(melee = 17, bullet = 25, laser = 25, energy = 30, bomb = 10, bio = 10, rad = 10)
 
 /obj/item/clothing/suit/storage/det_trench/administratum
 	name = "Administratum Robes"
 	icon_state = "ordinate"
 	desc = "Bulky layered robes, belonging to a high-ranking member of the Adpetus Administratum."
 	allowed = list(/obj/item/paper,/obj/item/paper_bundle,/obj/item/pen,/obj/item/device/taperecorder)
-	armor = list(melee = 17, bullet = 25, laser = 25, energy = 5, bomb = 10, bio = 10, rad = 10)
+	armor = list(melee = 17, bullet = 25, laser = 25, energy = 30, bomb = 10, bio = 10, rad = 10)
 
 
 //Forensics
@@ -157,7 +157,7 @@
 	item_state = "det_suit"
 	body_parts_covered = UPPER_TORSO|ARMS
 	allowed = list(/obj/item/tank/emergency,/obj/item/device/flashlight,/obj/item/gun/energy,/obj/item/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/handcuffs,/obj/item/device/taperecorder)
-	armor = list(melee = 10, bullet = 30, laser = 25, energy = 5, bomb = 10, bio = 10, rad = 10)
+	armor = list(melee = 10, bullet = 30, laser = 25, energy = 30, bomb = 10, bio = 10, rad = 10)
 
 /obj/item/clothing/suit/storage/forensics/red
 	name = "red jacket"
@@ -301,7 +301,7 @@
 	desc = "Elegant clothing for a wealthy administrator, this one seems to have a hidden carapace armor plate in it... the plate seems to be of a cheap quality..."
 	icon_state = "robes"
 	item_state = "robes_item"
-	armor = list(melee = 15, bullet = 30, laser = 25, energy = 5, bomb = 10, bio = 10, rad = 10) //reinforced in case of a bombing
+	armor = list(melee = 15, bullet = 30, laser = 25, energy = 30, bomb = 10, bio = 10, rad = 10) //reinforced in case of a bombing
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -438,7 +438,7 @@
 	desc = "The holy garments marking the wearer as sister hospitaller"
 	icon_state = "hospitaller"
 	item_state = "hospitaller"
-	armor = list(melee = 17, bullet = 35, laser = 35, energy = 45, bomb = 35, bio = 100, rad = 100)
+	armor = list(melee = 17, bullet = 35, laser = 35, energy = 30, bomb = 35, bio = 100, rad = 100)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun, /obj/item/storage/firstaid/adv) //i'll figure out what can go in here idk
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -450,7 +450,7 @@
 	desc = "The holy garments marking the wearer as a discipulus hospitaller"
 	icon_state = "hospitallerold"
 	item_state = "hospitallerold"
-	armor = list(melee = 15, bullet = 31, laser = 31, energy = 45, bomb = 35, bio = 100, rad = 100)
+	armor = list(melee = 15, bullet = 31, laser = 31, energy = 30, bomb = 35, bio = 100, rad = 100)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	sales_price = 25
@@ -490,7 +490,7 @@
 	icon = 'icons/mob/onmob/suit.dmi'
 	icon_state = "tailcoatgirlblack"
 	item_state = "tailcoatgirlblack"
-	armor = list(MELEE = 15, BULLET = 30, LASER = 22, ENERGY = 5, BOMB = 15, BIO = 0, FIRE = 10, ACID = 5)
+	armor = list(MELEE = 15, BULLET = 30, LASER = 22, energy = 30, BOMB = 15, BIO = 0, FIRE = 10, ACID = 5)
 
 /obj/item/clothing/suit/armor/vest/leather/tailcoat/ladycoat/red
 	icon_state = "tailcoatladiesred"
