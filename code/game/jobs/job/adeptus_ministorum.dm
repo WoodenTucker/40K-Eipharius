@@ -422,6 +422,7 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.get_equipped_item(slot_s_store)
 		H.gender = FEMALE

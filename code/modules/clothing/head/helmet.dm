@@ -525,6 +525,14 @@
 	armor = list(melee = 16, bullet = 31, laser = 30, energy = 35, bomb = 50, bio = 70, rad = 50)
 	sales_price = 2
 
+/obj/item/clothing/head/helmet/heavyflak/bloodpact
+	name = "Heavy Flak Helmet"
+	desc = "A carapace helmet forged for the Bloodpact Warriors of the sanguinary warlord of Chaos -- Sek."
+	icon_state = "BP_Helmet"
+	item_state = "BP_Helmet"
+	armor = list(melee = 18, bullet = 32, laser = 33, energy = 35, bomb = 50, bio = 70, rad = 50)
+	sales_price = 2
+
 /obj/item/clothing/head/helmet/vindicare
 	name = "Vindicare helmet"
 	desc = "The menacing helm of a Vindicare."

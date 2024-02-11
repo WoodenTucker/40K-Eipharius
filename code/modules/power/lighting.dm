@@ -750,4 +750,5 @@
 	idle_power_usage = 0
 	active_power_usage = 0
 	bound_width = 32
+	on = 1
 	density = 1

@@ -20,6 +20,7 @@
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
 		H.witchblood()
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.stat = UNCONSCIOUS
 		H.sleeping = 500
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Pilgrim. You left your home with little in search of more. Rumors of a holy site drew you to this planet, Messina. and now life is in your hands. <br> <span class = 'badmood'> + Go to your pilgrim tab and select your fate. + </span> </font></b></span>")
@@ -50,6 +51,7 @@
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
 		H.witchblood()
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.get_idcard()?.access = list(access_village) // so they open all 211
 		to_chat(H, "<span class='notice'><b><font size=3>You are an Imperial Citizen local to the planet of Messina or at have been living in-system for long enough to become trusted among the locals here. <br> <span class = 'badmood'> + Go to your citizen tab and select your fate. + </span> </font></b></span>")
 
@@ -808,6 +810,7 @@ Pilgrim Fate System
 		H.adjustStaminaLoss(-INFINITY)
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.assign_random_quirk()
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.verbs += list(
 			/mob/living/carbon/human/proc/ideology,
 		)
@@ -981,7 +984,7 @@ Pilgrim Fate System
 	belt = /obj/item/device/flashlight/lantern
 	pda_slot = null
 	l_hand = /obj/item/melee/trench_axe/bardiche
-	r_hand = /obj/item/gun/projectile/bolter_pistol
+	r_hand = /obj/item/shield/riot/metal
 	suit_store = /obj/item/gun/projectile/ork/automatic/shoota/big
 	backpack_contents = list(
 	/obj/item/card/id/pilgrim/penitent/keeper = 1,
@@ -1006,7 +1009,7 @@ Pilgrim Fate System
 	gloves = null
 	glasses = /obj/item/clothing/glasses/science/rat
 	pda_slot = null
-	l_hand = /obj/item/storage/toolbox/mechanical
+	l_hand = /obj/item/shield/riot/metal
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = /obj/item/device/radio/headset/headset_service
 	belt = /obj/item/device/flashlight/lantern

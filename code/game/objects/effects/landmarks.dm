@@ -342,7 +342,7 @@ Template:
 				/obj/item/melee/trench_axe/lance = 4,
 				/obj/item/melee/trench_axe/bspear = 6,
 				/obj/item/shield/riot = 2,
-				/obj/item/shield/riot/metal = 1,
+				/obj/item/shield/riot/metal = 4,
 				/obj/item/melee/sword/sabre = 4)
 
 

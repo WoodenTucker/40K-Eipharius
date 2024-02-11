@@ -37,6 +37,23 @@
 		if(5)
 			new /obj/item/melee/trench_axe/bardiche/beast(get_turf(rune))
 
+/datum/rune_recipe/khorne/armor
+	name = "Forge Bloodpact Armor"
+	ingredients = list(/obj/item/stack/thrones, /obj/item/clothing/suit/armor)
+	special = TRUE
+
+/datum/rune_recipe/khorne/armor/do_special(var/mob/living/carbon/user, var/obj/effect/cleanable/heretic_rune/rune)
+	switch(rand(1,2))
+		if(1)
+			new /obj/item/clothing/suit/armor/flak1/renegadearmor/bloodpact(get_turf(rune))
+			new /obj/item/clothing/head/helmet/heavyflak/bloodpact(get_turf(rune))
+			new /obj/item/clothing/mask/gas/security/bloodpact(get_turf(rune))
+		if(2)
+			new /obj/item/clothing/suit/armor/flak1/renegadearmor/bloodpact(get_turf(rune))
+			new /obj/item/clothing/head/helmet/heavyflak/bloodpact(get_turf(rune))
+			new /obj/item/clothing/mask/gas/security/bloodpact(get_turf(rune))
+			new /obj/item/shield/riot/metal(get_turf(rune))
+
 /datum/rune_recipe/khorne/radio
 	name = "Create Radio"
 	ingredients = list(/obj/item/device/radio/headset)
