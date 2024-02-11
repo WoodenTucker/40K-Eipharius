@@ -462,6 +462,14 @@
 	item_state = "KriegissarHat"
 	armor = list(melee = 19, bullet = 33, laser = 33, energy = 35, bomb = 35, bio = 50, rad = 50)
 
+
+/obj/item/clothing/head/commissar/Mordian
+	name = "Commissar's Peaked Cap"
+	desc = "The fearsome and charismatic peaked cap of a Imperial Guard Commissar, Striking dreads to the lowly Guardsmen and the ever-watching heretics."
+	icon_state = "MordianHat"
+	item_state = "MordianHat"
+	armor = list(melee = 19, bullet = 33, laser = 33, energy = 35, bomb = 35, bio = 50, rad = 50)
+
 /obj/item/clothing/head/commissar/catachan
 	name = "Commissar's Peaked Cap"
 	desc = "The fearsome and charismatic peaked cap of a Imperial Guard Commissar, Striking dreads to the lowly Guardsmen and the ever-watching heretics."
