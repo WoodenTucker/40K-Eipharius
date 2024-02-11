@@ -39,7 +39,7 @@
 
 /datum/rune_recipe/khorne/armor
 	name = "Forge Bloodpact Armor"
-	ingredients = list(/obj/item/stack/thrones, /obj/item/clothing/suit/armor)
+	ingredients = list(/obj/item/newore/gems/emerald, /obj/item/clothing/suit/armor)
 	special = TRUE
 
 /datum/rune_recipe/khorne/armor/do_special(var/mob/living/carbon/user, var/obj/effect/cleanable/heretic_rune/rune)

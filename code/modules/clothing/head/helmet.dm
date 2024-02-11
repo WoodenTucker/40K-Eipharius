@@ -96,7 +96,7 @@
 	desc = "<i>'Let the battle commence!'</i>"
 	icon_state = "thunderdome"
 	valid_accessory_slots = null
-	armor = list(melee = 30, bullet = 30, laser = 30,energy = 10, bomb = 25, bio = 10, rad = 0)
+	armor = list(melee = 10, bullet = 30, laser = 30,energy = 10, bomb = 25, bio = 10, rad = 0)
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	siemens_coefficient = 1
@@ -186,12 +186,12 @@
 /obj/item/clothing/head/helmet/genestealer/tough
 	name = "tyranid chitin"
 	desc = "The hide of a Tyranid..."
-	armor = list(melee = 30, bullet = 45, laser = 45, energy = 20, bomb = 40, bio = 100, rad = 100)
+	armor = list(melee = 10, bullet = 45, laser = 45, energy = 20, bomb = 40, bio = 100, rad = 100)
 
 /obj/item/clothing/head/helmet/genestealer/epic
 	name = "tyranid chitin"
 	desc = "The hide of a Tyranid..."
-	armor = list(melee = 35, bullet = 50, laser = 50, energy = 20, bomb = 50, bio = 100, rad = 100)
+	armor = list(melee = 15, bullet = 50, laser = 50, energy = 20, bomb = 50, bio = 100, rad = 100)
 
 /obj/item/clothing/head/helmet/sentryhelm
 	name = "Sentry Helmet"
@@ -442,7 +442,7 @@
 	desc = "A power helmet manufactured manufactured by unknown smiths of ruinous origin, it radiates with incredible energy and a wrath that infests your very soul."
 	icon_state = "berserkerhelm"
 	item_state = "berserkerhelm"
-	armor = list(melee = 34, bullet = 34, laser = 34, energy = 30, bomb = 60, bio = 60, rad = 40)
+	armor = list(melee = 14, bullet = 34, laser = 34, energy = 30, bomb = 60, bio = 60, rad = 40)
 	sales_price = 15
 
 /obj/item/clothing/head/helmet/reconhood
@@ -474,7 +474,7 @@
 	desc = "A heavy metal helmet that protects you from slashes, stabs and the occassional lasburn."
 	icon_state = "knighthelm"
 	item_state = "knighthelm"
-	armor = list(melee = 30, bullet = 21, laser = 24, energy = 15, bomb = 15, bio = 30, rad = 20)
+	armor = list(melee = 10, bullet = 21, laser = 24, energy = 15, bomb = 15, bio = 30, rad = 20)
 	sales_price = 2
 
 /obj/item/clothing/head/helmet/dragon
@@ -482,7 +482,7 @@
 	desc = "A heavy bone helmet forged from the carcass of a giant reptilian native to Samara."
 	icon_state = "dragon"
 	item_state = "dragon"
-	armor = list(melee = 31, bullet = 25, laser = 25, energy = 35, bomb = 20, bio = 30, rad = 20)
+	armor = list(melee = 11, bullet = 25, laser = 25, energy = 35, bomb = 20, bio = 30, rad = 20)
 	sales_price = 2
 
 /obj/item/clothing/head/helmet/metalvisor
@@ -537,7 +537,7 @@
 	name = "Vindicare helmet"
 	desc = "The menacing helm of a Vindicare."
 	icon_state = "s-ninja"
-	armor = list(melee = 35, bullet = 40, laser = 40, energy = 44, bomb = 30, bio = 100, rad = 10)//Bulletproof, because, well, sniper.
+	armor = list(melee = 15, bullet = 40, laser = 40, energy = 44, bomb = 30, bio = 100, rad = 10)//Bulletproof, because, well, sniper.
 	siemens_coefficient = 0
 	canremove = 0
 	flags_inv = HIDEEARS|BLOCKHAIR
@@ -547,7 +547,7 @@
 	name = "Vindicare helmet"
 	desc = "The armoured helmet of a Thallax Warrior."
 	icon_state = "vox-stealth"
-	armor = list(melee = 30, bullet = 40, laser = 40, energy = 35, bomb = 70, bio = 100, rad = 100)
+	armor = list(melee = 10, bullet = 40, laser = 40, energy = 35, bomb = 70, bio = 100, rad = 100)
 	siemens_coefficient = 0
 	canremove = 0
 	flags_inv = HIDEEARS|BLOCKHAIR
@@ -567,7 +567,7 @@
 	desc = "A reinforced helmet and faceplate system designed for the elite Tempestus Scions. Comprised of multiple layers of ceramite, comprising a solid carapace armour system."
 	icon_state = "ScionHelmet"
 	item_state = "ScionHelmet"
-	armor = list(melee = 30, bullet = 40, laser = 40, energy = 35, bomb = 60, bio = 100, rad = 60)
+	armor = list(melee = 10, bullet = 40, laser = 40, energy = 35, bomb = 60, bio = 100, rad = 60)
 	siemens_coefficient = 0
 	flags_inv = BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EYES

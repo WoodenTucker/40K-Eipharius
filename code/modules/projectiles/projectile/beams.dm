@@ -6,7 +6,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	// pass_flags = PASS_FLAG_TABLE | PASS_FLAG_GLASS | PASS_FLAG_GRILLE // Removing pass flags because only AI mobs use beam weapons now.
 	damage = 20
-	armor_penetration = 10
+	armor_penetration = 20
 	damage_type = BURN
 	sharp = 1 //concentrated burns
 	check_armour = "laser"
@@ -38,7 +38,7 @@
 	agony = 8
 	eyeblur = 8
 	sharp = FALSE
-	armor_penetration = 50
+	armor_penetration = 40
 
 	muzzle_type = /obj/effect/projectile/incen/muzzle
 	tracer_type = /obj/effect/projectile/incen/tracer
@@ -58,14 +58,14 @@
 
 /obj/item/projectile/beam/midlaser
 	damage = 50
-	armor_penetration = 10
+	armor_penetration = 20
 
 /obj/item/projectile/beam/heavylaser
 	name = "heavy laser"
 	icon_state = "heavylaser"
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
 	damage = 60
-	armor_penetration = 40
+	armor_penetration = 30
 
 	muzzle_type = /obj/effect/projectile/laser/heavy/muzzle
 	tracer_type = /obj/effect/projectile/laser/heavy/tracer
@@ -205,7 +205,7 @@
 	icon_state = "heavylaser"
 	fire_sound='sound/weapons/lasercannonfire.ogg'
 	damage = 400
-	armor_penetration = 60
+	armor_penetration = 40
 	penetrating = 100
 	muzzle_type = /obj/effect/projectile/laser/heavy/muzzle
 	tracer_type = /obj/effect/projectile/laser/heavy/tracer

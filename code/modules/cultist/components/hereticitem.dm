@@ -104,7 +104,7 @@
 	attack_verb = list("slashed")
 	force = 31
 	force_wielded = 33
-	armor_penetration = 20
+	armor_penetration = 16
 	block_chance = 20
 	sales_price = 39
 	weapon_speed_delay = 5
@@ -144,7 +144,7 @@
 	attack_verb = list("slashed")
 	force = 31
 	force_wielded = 33
-	armor_penetration = 21
+	armor_penetration = 17
 	block_chance = 10
 	sales_price = 39
 	weapon_speed_delay = 8
@@ -175,7 +175,7 @@
 	str_requirement = 13
 	force = 40 // blood for the blood god. its strong,  but the shit block chance makes it balanced
 	force_wielded = 48
-	armor_penetration = 22
+	armor_penetration = 17
 	block_chance = 15
 	sharp = TRUE
 	w_class = ITEM_SIZE_HUGE
@@ -201,7 +201,7 @@
 	str_requirement = 17
 	force = 38
 	force_wielded = 48 //warpsword
-	armor_penetration = 21
+	armor_penetration = 18
 	block_chance = 40 //may the warp guide your hand
 	sharpness = TRUE
 	grab_sound_is_loud = TRUE
@@ -299,7 +299,7 @@
 	attack_verb = list("slashed")
 	force = 31
 	force_wielded = 33
-	armor_penetration = 20
+	armor_penetration = 16
 	block_chance = 20
 	sales_price = 39
 	weapon_speed_delay = 5

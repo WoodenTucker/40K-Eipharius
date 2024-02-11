@@ -42,7 +42,7 @@
 	brightness_on = 6
 	unacidable = 1
 	canremove = 0
-	armor = list(melee = 30, bullet = 25, laser = 35,energy = 20, bomb = 50, bio = 50, rad = 20)
+	armor = list(melee = 10, bullet = 25, laser = 35,energy = 20, bomb = 50, bio = 50, rad = 20)
 	flags_inv = BLOCKHAIR|BLOCKHEADHAIR|HIDEEARS|HIDEEYES
 	flash_protection = FLASH_PROTECTION_MAJOR
 
@@ -51,4 +51,4 @@
 	item_state = "magoshelm"
 	brightness_on = 8
 	unacidable = 1
-	armor = list(melee = 37, bullet = 30, laser = 40,energy = 30, bomb = 70, bio = 100, rad = 20)
+	armor = list(melee = 17, bullet = 30, laser = 40,energy = 30, bomb = 70, bio = 100, rad = 20)

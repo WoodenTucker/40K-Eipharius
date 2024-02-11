@@ -388,7 +388,7 @@
 
 				<h2>Armor Of War:</h2>
 				<h3>Bless an armor and receive the garb of the Bloodpact.</h3>
-				Place a single imperial throne and any armor onto the rune of Khorne(Roleplay that you scavenged the armor I dunno).
+				Place a single emerald and any armor onto the rune of Khorne(Roleplay that you scavenged the armor I dunno).
 
 				<h2>Tools Of Carnage:</h2>
 				<h3>Bless a weapon of slaughter via offerings.</h3>

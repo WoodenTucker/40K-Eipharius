@@ -1,6 +1,6 @@
 /obj/item/projectile/bullet/pellet/fragment
 	damage = 25
-	armor_penetration = 44
+	armor_penetration = 24
 	range_step = 3 //controls damage falloff with distance. projectiles lose a "pellet" each time they travel this distance. Can be a non-integer.
 
 	base_spread = 0 //causes it to be treated as a shrapnel explosion instead of cone
@@ -16,12 +16,12 @@
 	damage = 40
 	range_step = 1 //controls damage falloff with distance. projectiles lose a "pellet" each time they travel this distance. Can be a non-integer.
 	range = 5
-	armor_penetration = 46
+	armor_penetration = 26
 
 /obj/item/projectile/bullet/pellet/fragment/weak
 	damage = 20
 	range_step = 3
-	armor_penetration = 40
+	armor_penetration = 20
 
 /obj/item/grenade/frag
 	name = "fragmentation grenade"

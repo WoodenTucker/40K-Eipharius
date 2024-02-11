@@ -306,30 +306,30 @@
 /obj/item/projectile/bullet/rifle/a762/brifle
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	damage = 50
-	armor_penetration = 30
+	armor_penetration = 20
 
 /obj/item/projectile/bullet/rifle/a762/brifle/ap
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	damage = 50
-	armor_penetration = 40
+	armor_penetration = 30
 	penetrating = 1
 
 /obj/item/projectile/bullet/rifle/a762/brifle/kp
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	damage = 50
-	armor_penetration = 45
+	armor_penetration = 35 // 75% vs Astartes Chest
 	penetrating = 2
 
 /obj/item/projectile/bullet/rifle/a762/brifle/ms
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	damage = 65
-	armor_penetration = 30
+	armor_penetration = 15
 
 /obj/item/projectile/bullet/rifle/kroot
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	penetrating = TRUE // fuck that shit penetrative rounds
 	damage = 50
-	armor_penetration = 45
+	armor_penetration = 30
 
 /obj/item/ammo_magazine/brifle
 	name = "Rifle Box"
@@ -387,7 +387,7 @@
 	one_hand_penalty = 0.4
 	fire_delay = 2
 	accuracy = -0.5
-	armor_penetration = 0
+	armor_penetration = 12
 	sales_price = 5
 
 /obj/item/gun/projectile/automatic/flamer

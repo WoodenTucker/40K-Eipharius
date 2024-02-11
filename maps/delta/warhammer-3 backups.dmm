@@ -14546,7 +14546,7 @@
 	force = 34;
 	name = "runic axe";
 	force_wielded = 45;
-	armor_penetration = 30
+	armor_penetration = 20
 	},
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/farm)

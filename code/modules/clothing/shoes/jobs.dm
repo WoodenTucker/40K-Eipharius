@@ -98,7 +98,7 @@
 	icon_state = "skitshoes"
 	item_state = "skitshoes"
 	siemens_coefficient = 1
-	armor = list(melee = 30, bullet = 30, laser = 30, energy = 50, bomb = 20, bio = 0, rad = 100) //Slightly changed defensive values.
+	armor = list(melee = 10, bullet = 30, laser = 30, energy = 50, bomb = 20, bio = 0, rad = 100) //Slightly changed defensive values.
 	unacidable = 1
 	item_flags = ITEM_FLAG_NOSLIP|ITEM_FLAG_NODROP
 	canremove = FALSE
@@ -109,7 +109,7 @@
 	icon_state = "skitshoes"
 	item_state = "skitshoes"
 	siemens_coefficient = 1
-	armor = list(melee = 30, bullet = 30, laser = 30, energy = 44, bomb = 60, bio = 0, rad = 160)//Heavily armoured, but very heavy.
+	armor = list(melee = 10, bullet = 30, laser = 30, energy = 44, bomb = 60, bio = 0, rad = 160)//Heavily armoured, but very heavy.
 	unacidable = 1
 	item_flags = ITEM_FLAG_NOSLIP|ITEM_FLAG_NODROP
 	canremove = FALSE
@@ -238,7 +238,7 @@
 	str_requirement = 25
 	canremove = 1
 	unacidable = 1
-	armor = list(melee = 30, bullet = 30, laser = 30, energy = 30, bomb = 90, bio = 50, rad = 50)
+	armor = list(melee = 10, bullet = 30, laser = 30, energy = 30, bomb = 90, bio = 50, rad = 50)
 	cold_protection = FEET|LEGS
 	item_flags = ITEM_FLAG_NOSLIP
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
@@ -300,7 +300,7 @@
 	canremove = 1
 	unacidable = 1
 	item_flags = ITEM_FLAG_NOSLIP
-	armor = list(melee = 30, bullet = 10, laser = 10, energy = 40, bomb = 40, bio = 0, rad = 0)
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 40, bomb = 40, bio = 0, rad = 0)
 	species_restricted = list(SPECIES_HUMAN)
 
 /obj/item/clothing/shoes/jackboots/sisterofbattle/mlsister
@@ -376,7 +376,7 @@
 	item_state = "None"
 	canremove = 0
 	unacidable = 1
-	armor = list(melee = 35, bullet = 30, laser = 35, energy = 45, bomb = 15, bio = 40, rad = 0)
+	armor = list(melee = 15, bullet = 30, laser = 35, energy = 45, bomb = 15, bio = 40, rad = 0)
 	item_flags = ITEM_FLAG_NOSLIP
 
 // Genestealer
@@ -389,7 +389,7 @@
 	canremove = 0
 	unacidable = 1
 	item_flags = ITEM_FLAG_NOSLIP
-	armor = list(melee = 35, bullet = 30, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
+	armor = list(melee = 15, bullet = 30, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
 	species_restricted = list(SPECIES_TYRANID)
 
 // Ork
@@ -400,7 +400,7 @@
 	icon_state = "ork_boots"
 	item_state = "ork_boots"
 	species_restricted = list(SPECIES_ORK)
-	armor = list(melee = 35, bullet = 30, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
+	armor = list(melee = 15, bullet = 30, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
 	canremove = 0
 	item_flags = ITEM_FLAG_NOSLIP
 
@@ -411,7 +411,7 @@
   desc = "A ancient set of boots. It looks like it's made out of thermoplas in a scale like pattern. It has extra cushion to protect the wearers feet."
   icon_state = "eldboots"
   item_state = "eldboots"
-  armor = list(melee = 35, bullet = 30, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
+  armor = list(melee = 15, bullet = 30, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
   cold_protection = FEET|LEGS
   min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -420,7 +420,7 @@
   desc = "An Eldar Ranger's set of boots, these appear to be made up of layers of cameoline treated materials, with a termoplas underlayer."
   icon_state = "eldboots"
   item_state = "eldboots"
-  armor = list(melee = 35, bullet = 30, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
+  armor = list(melee = 15, bullet = 30, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
   cold_protection = FEET|LEGS
   min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -431,7 +431,7 @@
   desc = "A ancient set of boots. It looks like it's made out of hardened resin in a thin-scale like pattern. It has extra cushion to protect the wearers feet."
   icon_state = "deldboots"
   item_state = "deldboots"
-  armor = list(melee = 35, bullet = 50, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
+  armor = list(melee = 15, bullet = 50, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
   cold_protection = FEET|LEGS
   min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
