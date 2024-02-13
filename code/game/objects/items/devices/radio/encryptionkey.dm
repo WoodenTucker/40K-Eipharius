@@ -213,37 +213,37 @@
 /obj/item/device/encryptionkey/headset_med
 	name = "medical radio encryption key"
 	icon_state = "med_cypherkey"
-	channels = list("Medical" = 1)
+	channels = list("Vox" = 1, "Medical" = 1)
 
 //ecclesiarchy key
 /obj/item/device/encryptionkey/headset_sci
 	name = "ecclesiarchy encryption key"
 	icon_state = "sci_cypherkey"
-	channels = list("Ecclesiarchy" = 1, "Frateris" = 1)
+	channels = list("Vox" = 1, "Ecclesiarchy" = 1, "Frateris" = 1)
 
 //not used
 /obj/item/device/encryptionkey/headset_medsci
 	name = "medical research radio encryption key"
 	icon_state = "medsci_cypherkey"
-	channels = list("Medical" = 1, "Science" = 1)
+	channels = list("Vox" = 1, "Medical" = 1, "Science" = 1)
 
 //command key
 /obj/item/device/encryptionkey/headset_com
 	name = "command encryption key"
 	icon_state = "com_cypherkey"
-	channels = list("Command" = 1)
+	channels = list("Vox" = 1, "Command" = 1)
 
 //RT key
 /obj/item/device/encryptionkey/heads/captain
 	name = "Rogue Traders encryption key"
 	icon_state = "cap_cypherkey"
-	channels = list("Secure" = 1)
+	channels = list("Vox" = 1, "Secure" = 1)
 	syndie = 1
 
 /obj/item/device/encryptionkey/heads/captain2
 	name = "Governor's encryption key"
 	icon_state = "cap_cypherkey"
-	channels = list("Command", "Militarum" = 1)
+	channels = list("Command" = 1, "Militarum" = 1)
 	syndie = 1
 
 //AI IS FUCKING HERESY
@@ -270,13 +270,13 @@
 /obj/item/device/encryptionkey/heads/ce
 	name = "Magos encryption key"
 	icon_state = "ce_cypherkey"
-	channels = list("Command" = 1, "Mechanicus" = 1, "Militarum" = 1)
+	channels = list("Vox" = 1, "Command" = 1, "Mechanicus" = 1, "Militarum" = 1)
 
 //ecclesiarchy-command key
 /obj/item/device/encryptionkey/heads/cmo
 	name = "ecclesiarchy com-linked encryption key"
 	icon_state = "cmo_cypherkey"
-	channels = list("Command" = 1, "Ecclesiarchy" = 1,  "Frateris" = 1)
+	channels = list("Vox" = 1, "Command" = 1, "Ecclesiarchy" = 1,  "Frateris" = 1)
 
 //Stewards key
 /obj/item/device/encryptionkey/heads/hop
@@ -288,7 +288,7 @@
 /obj/item/device/encryptionkey/headset_cargo
 	name = "Magistratum radio encryption key"
 	icon_state = "cargo_cypherkey"
-	channels = list("Militarum" = 1, "Violet" = 1, "Ecclesiarchy" = 1)
+	channels = list("Vox" = 1, "Militarum" = 1, "Violet" = 1, "Magistratum" = 1)
 
 //not used rn
 /obj/item/device/encryptionkey/headset_service
@@ -300,7 +300,7 @@
 /obj/item/device/encryptionkey/headset_inquisition
 	name = "inquisition radio key"
 	icon_state = "hos_cypherkey"
-	channels = list("Vermillion" = 1, "Command" = 1, "Militarum" = 1,)
+	channels = list("Vox" = 1, "Vermillion" = 1, "Command" = 1, "Militarum" = 1,)
 
 //needs fix if usage planned
 /obj/item/device/encryptionkey/ert

@@ -211,8 +211,8 @@ obj/item/gun/energy/staff/focus
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
-	cell_type = /obj/item/cell/plasma
-	ammoType =/obj/item/cell/plasma
+	cell_type = /obj/item/cell/melta
+	ammoType = /obj/item/cell/melta
 	charge_cost = 1800
 	wielded_item_state = "ionrifle-wielded"
 	var/plasma_overheat = 1 // Keeping track on how overheated the gun is
@@ -240,7 +240,7 @@ obj/item/gun/energy/staff/focus
 
 /obj/item/gun/energy/melta/handheld
 	name = "Melta"
-	desc = "An enormously powerful, but short-ranged anti-tank weapon."
+	desc = "Is a powerful, short-ranged anti-armour weapon that produces an intense, energetic beam of heat in the tens of thousands of degrees Centigrade."
 	icon_state = "meltagun"
 	item_state = "multimelta"
 	wielded_item_state = "multimelta"
@@ -249,12 +249,12 @@ obj/item/gun/energy/staff/focus
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	force = 8
 	str_requirement = 15
-	max_shots = 2
+	max_shots = 5
 	w_class = ITEM_SIZE_HUGE
 	fire_delay = 16
 	charge_cost = 2000
-	cell_type = /obj/item/cell/plasma
-	ammoType = /obj/item/cell/plasma
+	cell_type = /obj/item/cell/melta
+	ammoType = /obj/item/cell/melta
 	projectile_type = /obj/item/projectile/energy/meltagun
 	plasma_overheat = 1 // Keeping track on how overheated the gun is
 	plasma_overheat_decay = 3 // The cooling of the gun per tick
@@ -267,6 +267,37 @@ obj/item/gun/energy/staff/focus
 	slowdown_per_slot[slot_belt] = 0.3
 	slowdown_per_slot[slot_r_hand] = 0.55
 	slowdown_per_slot[slot_l_hand] = 0.55
+
+/obj/item/gun/energy/melta/multimelta //Need to convert this melta and the other melta into projectile based, testing the new melta atm.
+	name = "Multi-Melta"
+	desc = "is a heavier version of the standard Imperial Meltagun thermal ray weapon that is composed of multiple Meltagun barrels."
+	icon_state = "multimelta"
+	item_state = "multimelta"
+	wielded_item_state = "multimelta"
+	fire_sound = 'sound/weapons/guns/fire/melta.ogg'
+	icon = 'icons/cadia-sprites/migrated2/gun_2.dmi'
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	force = 8
+	str_requirement = 18
+	max_shots = 2
+	w_class = ITEM_SIZE_HUGE
+	fire_delay = 16
+	charge_cost = 5000
+	cell_type = /obj/item/cell/melta
+	ammoType = /obj/item/cell/melta
+	projectile_type = /obj/item/projectile/energy/meltagun
+	plasma_overheat = 1 // Keeping track on how overheated the gun is
+	plasma_overheat_decay = 3 // The cooling of the gun per tick
+	plasma_overheat_max = 220 // When the gun exploads
+
+/obj/item/gun/energy/melta/handheld/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.2
+	slowdown_per_slot[slot_wear_suit] = 0.3
+	slowdown_per_slot[slot_belt] = 0.3
+	slowdown_per_slot[slot_r_hand] = 0.55
+	slowdown_per_slot[slot_l_hand] = 0.55
+
 
 //TYRANID WEAPONS
 //These are largely coded as energy guns, because they'll recharge on their own over time.

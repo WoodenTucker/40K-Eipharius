@@ -235,6 +235,7 @@ em						{font-style: normal;font-weight: bold;}
 .srvradio				{color: #6eaa2c;}
 .expradio				{color: #a3a332;}
 .inqradio				{color: #707070;}
+.magradio				{color: #e20000;}
 
 /* Miscellaneous */
 .name					{font-weight: bold;}

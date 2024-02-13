@@ -258,6 +258,58 @@
 	attack_verb = list("poked")
 	slot_flags = null
 
+
+/obj/item/melee/baton/shockmaul
+	name = "Shock Maul"
+	desc = "The Shock Maul commonly used by members of the Adeptus Arbites. It is good for incapacitating victims, not being as efficient as a power maul."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "shockmaul"
+	item_state = "baton"
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
+	force = 15
+	sharp = 0
+	edge = 0
+	throwforce = 7
+	w_class = ITEM_SIZE_NORMAL
+	origin_tech = list(TECH_COMBAT = 2)
+	attack_verb = list("beaten")
+	stunforce = 0
+	agonyforce = 70
+	status = 0		//whether the thing is on or not
+	/obj/item/cell/bcell
+	hitcost = 0
+	block_chance = 30
+	stunforce = 0
+	agonyforce = 90
+	sales_price = 1
+	weapon_speed_delay = 6
+	status = 1
+	armor_penetration = 14 // 70% vs SOB Power Armor. 95% vs Flak.
+
+/obj/item/melee/baton/shockmaul/update_icon()
+	if(status)
+		icon_state = "shockmaul_active"
+	else if(!bcell)
+		icon_state = "shockmaul_nocell"
+	else
+		icon_state = "shockmaul"
+
+	if(icon_state == "shockmaul_active")
+		set_light(2, 2, "#D9E9FF")
+	else
+		set_light(0)
+
+/obj/item/melee/baton/shockmaul/loaded
+	bcell = /obj/item/cell/device/high
+
+/obj/item/melee/baton/New()
+	if(ispath(bcell))
+		bcell = new bcell(src)
+		update_icon()
+	..()
+
+
+
 /obj/item/melee/powermaul
 	name = "Power Maul"
 	desc = "The Power Maul commonly used by members of the Adeptus Arbites. It is good for stunning victims."
