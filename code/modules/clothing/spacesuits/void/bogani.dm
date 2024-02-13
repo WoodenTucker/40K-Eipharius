@@ -3,7 +3,7 @@
 	desc = "An unusual hardsuit helmet."
 	icon = 'icons/obj/clothing/species/bogani/hats.dmi'
 	icon_state = "boghelm"
-	armor = list(melee = 60, bullet = 20, laser = 40,energy = 15, bomb = 50, bio = 70, rad = 70)
+	armor = list(melee = 12, bullet = 20, laser = 40,energy = 15, bomb = 50, bio = 70, rad = 70)
 	siemens_coefficient = 0.6
 	species_restricted = list(SPECIES_BOGANI, SPECIES_EGYNO)
 
@@ -16,7 +16,7 @@
 	desc = "An unusual hardsuit."
 	icon = 'icons/obj/clothing/species/bogani/suits.dmi'
 	icon_state = "bogsuit"
-	armor = list(melee = 60, bullet = 25, laser = 30,energy = 15, bomb = 50, bio = 70, rad = 70)
+	armor = list(melee = 12, bullet = 25, laser = 30,energy = 15, bomb = 50, bio = 70, rad = 70)
 	siemens_coefficient = 0.6
 	species_restricted = list(SPECIES_BOGANI, SPECIES_EGYNO)
 
@@ -33,13 +33,13 @@
 	name = "advanced strange hardsuit helmet"
 	desc = "An unusual hardsuit helmet. This one seems to have more advanced technology installed."
 	icon_state = "highboghelm"
-	armor = list(melee = 22, bullet = 30, laser = 30,energy = 30, bomb = 70, bio = 100, rad = 100)
+	armor = list(melee = 12, bullet = 30, laser = 30,energy = 30, bomb = 70, bio = 100, rad = 100)
 
 /obj/item/clothing/suit/space/void/bogani/advanced
 	name = "advanced strange hardsuit"
 	desc = "An unusual hardsuit. This one seems to have more advanced technology installed."
 	icon_state = "highbogsuit"
-	armor = list(melee = 22, bullet = 33, laser = 30,energy = 30, bomb = 70, bio = 100, rad = 100)
+	armor = list(melee = 12, bullet = 33, laser = 30,energy = 30, bomb = 70, bio = 100, rad = 100)
 
 /obj/item/clothing/suit/space/void/bogani/advanced/prepared/New()
 	..()
@@ -50,7 +50,7 @@
 	name = "strange armored hardsuit"
 	desc = "An unusual hardsuit. This one seems to have a considerable amount of armoring."
 	icon_state = "bogarmor"
-	armor = list(melee = 20, bullet = 40, laser = 40,energy = 30, bomb = 90, bio = 120, rad = 120)
+	armor = list(melee = 10, bullet = 40, laser = 40,energy = 30, bomb = 90, bio = 120, rad = 120)
 
 /obj/item/clothing/suit/space/void/bogani/armored/prepared/New()
 	..()
@@ -61,7 +61,7 @@
 	name = "strange advanced armored hardsuit"
 	desc = "An unusual hardsuit. This one seems to have a considerable amount of advanced technology installed, as well as layers of armor."
 	icon_state = "highbogarmor"
-	armor = list(melee = 20, bullet = 30, laser = 30,energy = 35, bomb = 100, bio = 140, rad = 140)
+	armor = list(melee = 10, bullet = 30, laser = 30,energy = 35, bomb = 100, bio = 140, rad = 140)
 
 /obj/item/clothing/suit/space/void/bogani/ultimate/prepared/New()
 	..()

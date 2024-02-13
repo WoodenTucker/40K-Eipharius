@@ -6,7 +6,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT
 	force = 10
-	armor_penetration = 13
+	armor_penetration = 3
 	throwforce = 7
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_COMBAT = 1)
@@ -61,7 +61,7 @@
 	name = "scrap mace"
 	desc = "A mace normally used by the ork meks, made of scrap."
 	str_requirement = 13
-	armor_penetration = 16 //Crushing damage
+	armor_penetration = 6 //Crushing damage
 	force = 35
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "mekmace"
@@ -90,7 +90,7 @@
 	hitsound = 'sound/weapons/whip.ogg'
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT
-	armor_penetration = 16
+	armor_penetration = 6
 	force = 12
 	block_chance = 35
 	throwforce = 7
@@ -138,7 +138,7 @@
 	item_state = "tzbook"
 	slot_flags = SLOT_BELT
 	force = 30
-	armor_penetration = 17
+	armor_penetration = 7
 	throwforce = 100 //In warp books hit you
 	w_class = ITEM_SIZE_NORMAL
 	attack_verb = list("bashed", "bonked", "smashed")
@@ -185,7 +185,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	force = 10
-	armor_penetration = 14
+	armor_penetration = 4
 	throwforce = 7
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_COMBAT = 1)
@@ -199,7 +199,7 @@
 	item_state = "artknife"
 	attack_verb = list("slashed", "cut", "sliced")
 	force = 35
-	armor_penetration = 16
+	armor_penetration = 6
 	sharp = 1
 	edge = 1
 	can_door_force = 1
@@ -210,7 +210,7 @@
 	icon_state = "lash"
 	item_state = "lash"
 	attack_verb = list("stung", "injected")
-	armor_penetration = 17
+	armor_penetration = 7
 	sharp = 1
 
 /obj/item/melee/tyranid/talons
@@ -220,7 +220,7 @@
 	item_state = "clawspear0"
 	attack_verb = list("chopped", "sliced", "diced")
 	force = 55
-	armor_penetration = 16
+	armor_penetration = 6
 	sharp = 1
 	edge = 1
 	can_door_force = 1
@@ -232,6 +232,6 @@
 	item_state = "club"
 	attack_verb = list("crushed", "smashed", "slammed")
 	force = 39
-	armor_penetration = 17
+	armor_penetration = 7
 	can_door_force = 1
 	wall_breaker = 1

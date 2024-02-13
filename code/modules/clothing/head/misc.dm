@@ -308,7 +308,7 @@
 	icon_state = "tank"
 	flags_inv = BLOCKHEADHAIR
 	color = "#5f5f5f"
-	armor = list(melee = 20)
+	armor = list(melee = 4)
 
 /obj/item/clothing/head/tank/olive
 	color = "#727c58"
@@ -331,12 +331,12 @@
 	icon_state = "brim-hat"
 	item_state = "brim-hat"
 	flags_inv = BLOCKHEADHAIR
-	armor = list(melee = 22, bullet = 38, laser = 38, energy = 35, bomb = 35, bio = 50, rad = 50)
+	armor = list(melee = 12, bullet = 38, laser = 38, energy = 35, bomb = 35, bio = 50, rad = 50)
 
 /obj/item/clothing/head/hospitallerhelm
 	name = "blessed head garments"
 	desc = "The holy garments marking the wearer as a member of the Adeptus Sororitas"
-	armor = list(melee = 19, bullet = 34, laser = 34, energy = 35, bomb = 35, bio = 50, rad = 50) //essentially power armor but without the front cover so that the hospitaller can speak with the dead easily
+	armor = list(melee = 9, bullet = 34, laser = 34, energy = 35, bomb = 35, bio = 50, rad = 50) //essentially power armor but without the front cover so that the hospitaller can speak with the dead easily
 	icon_state = "medical_rig"
 	item_state = "medical_rig"
 	cold_protection = HEAD

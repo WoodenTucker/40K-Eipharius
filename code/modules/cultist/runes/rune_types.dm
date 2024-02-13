@@ -13,10 +13,10 @@
 	diety = "slaanesh"
 
 /obj/effect/cleanable/heretic_rune/khorne
-	name = "mark of khorne"
-	icon = 'icons/obj/decals.dmi'
+	name = "strange marking"
+	icon = 'icons/map_project/eldritch/Zizo_Rite.dmi'
 	icon_state = "angry"
-	desc = "A horrifying rune drawn in blood."
+	desc = "..."
 	gender = PLURAL
 	density = 0
 	anchored = 1
@@ -25,23 +25,31 @@
 	blood_DNA = list()
 	appearance_flags = NO_CLIENT_COLOR
 
+/obj/effect/cleanable/heretic_rune/khorne/New()
+	..()
+	icon_state = pick("1", "2", "3")
+
 /obj/effect/cleanable/heretic_rune/slaanesh
-	name = "mark of slaanesh"
-	icon = 'icons/obj/decals.dmi'
-	icon_state = "lewd"
-	desc = "A horrifying rune drawn in spice."
+	name = "strange marking"
+	icon = 'icons/map_project/eldritch/Zizo_Rite.dmi'
+	icon_state = "7"
+	desc = "..."
 	gender = PLURAL
 	density = 0
 	anchored = 1
 	layer = 2
 	blood_DNA = list()
 	appearance_flags = NO_CLIENT_COLOR
+
+/obj/effect/cleanable/heretic_rune/slaanesh/New()
+	..()
+	icon_state = pick("7", "8", "9")
 
 /obj/effect/cleanable/heretic_rune/tzeentch
-	name = "mark of tzeentch"
-	icon = 'icons/obj/decals.dmi'
-	icon_state = "smart"
-	desc = "A horrifying rune drawn in ash."
+	name = "strange marking"
+	icon = 'icons/map_project/eldritch/Zizo_Rite.dmi'
+	icon_state = "18"
+	desc = "..."
 	gender = PLURAL
 	density = 0
 	anchored = 1
@@ -49,17 +57,25 @@
 	blood_DNA = list()
 	appearance_flags = NO_CLIENT_COLOR
 
+/obj/effect/cleanable/heretic_rune/tzeentch/New()
+	..()
+	icon_state = pick("14", "15", "16", "17", "18")
+
 /obj/effect/cleanable/heretic_rune/nurgle
-	name = "mark of nurgle"
-	icon = 'icons/obj/decals.dmi'
-	icon_state = "nasty"
-	desc = "A horrifying rune drawn in filth."
+	name = "strange marking"
+	icon = 'icons/map_project/eldritch/Zizo_Rite.dmi'
+	icon_state = "5"
+	desc = "..."
 	gender = PLURAL
 	density = 0
 	anchored = 1
 	layer = 2
 	blood_DNA = list()
 	appearance_flags = NO_CLIENT_COLOR
+
+/obj/effect/cleanable/heretic_rune/nurgle/New()
+	..()
+	icon_state = pick("5", "6", "10")
 
 /obj/effect/cleanable/heretic_rune/hivemind
 	name = "Biomass clump"
