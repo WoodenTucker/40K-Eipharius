@@ -392,6 +392,12 @@
 	penetration_modifier = 1
 	penetrating = 2
 
+/obj/item/projectile/bullet/rifle/railrifle //Used KP ammo as baseline.
+	damage = 90
+	armor_penetration = 41
+	penetration_modifier = 1.4
+	penetrating = 2
+
 /* Miscellaneous */
 
 /obj/item/projectile/bullet/suffocationbullet//How does this even work?

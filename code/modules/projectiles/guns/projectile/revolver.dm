@@ -162,3 +162,24 @@
 	force = 15
 	accuracy = 1.2
 	fire_delay= 2.4
+
+/obj/item/gun/projectile/marshal/gavel
+	name = "Gavel of authority"
+	desc = "The personal custom lawbringer of the Planetary Marshal. Chambered in shotgun shells, it will enforce the laws with the force necessary." 
+	icon_state = "mrevolver"
+	item_state = "crevolver"
+	caliber = "shotgun"
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
+	handle_casings = CYCLE_CASINGS
+	max_shells = 6
+	force = 20
+	accuracy = 1
+	fire_delay= 2.8
+	one_hand_penalty = 1
+	ammo_type = /obj/item/ammo_casing/shotgun
+	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
+	unload_sound 	= 'sound/weapons/guns/interact/rev_magout.ogg'
+	reload_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
+	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
+	fire_sound = 'sound/weapons/guns/fire/fal_fire.ogg'
+	sales_price = 40

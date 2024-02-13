@@ -270,6 +270,45 @@
 	if(user.zoomed)
 		user.do_zoom()
 
+// If we could make it require to be deployed first, it would be best
+/obj/item/gun/projectile/automatic/tau/railrifle
+	name = "Rail Rifle"
+	desc = "A potent weapon, possessing an impressive long range and ability to deal great damage, its true strength lies in its armour penetration capabilities. Issued to frontline Tau Pathfinder units heavy weapons support"
+	icon_state = "railgun"
+	item_state = "railgun"
+	loaded_icon = "railgun"
+	unloaded_icon = "railgun"
+	fire_sound = 'sound/weapons/railgun.ogg'
+	wielded_item_state = "railgun"
+	unwielded_loaded_icon = "railgun"
+	wielded_loaded_icon = "railgun"
+	unwielded_unloaded_icon = "railgun"
+	wielded_unloaded_icon = "railgun"
+	caliber = "railrifle"
+	str_requirement = 13
+	one_hand_penalty = 2.5
+	accuracy = 1 //extremely accurate
+	fire_delay = 8
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	magazine_type = /obj/item/ammo_magazine/railrifle
+	allowed_magazines = list(/obj/item/ammo_magazine/railrifle)
+	firemodes = list()
+	w_class = ITEM_SIZE_LARGE
+
+/obj/item/gun/projectile/automatic/tau/railrifle/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+
+	toggle_scope(usr, 2)
+
+/obj/item/gun/projectile/automatic/tau/railrifle/equipped(mob/user)
+	..()
+	if(user.zoomed)
+		user.do_zoom()
+
+
+
 //needs sorting when im done doing this, i have not balanced it in any way whatsoever, just brought it from deleted code
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338

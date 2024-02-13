@@ -477,6 +477,14 @@
 	caliber = "galvanic"
 	projectile_type = /obj/item/projectile/bullet/rifle/galvanic/pain
 
+/obj/item/ammo_casing/railrifle
+	name = "railgun sabot casing"
+	desc = "A subcaliber munition cased in a sabot casing."
+	icon_state = "rail"
+	spent_icon = "lcasing-spent"
+	caliber = "railrifle"
+	projectile_type = /obj/item/projectile/bullet/rifle/railrifle
+
 /obj/item/ammo_casing/pmag
 	name = "pulse casing"
 	desc = "pulse casing"
