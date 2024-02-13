@@ -36,7 +36,7 @@
 	desc = "A pair of black gloves, upon closer inspection you notice small modifications to the gloves and some kind of modified lasercutter attached to the gloves, theres also a weird bottle inside of the glove."
 	siemens_coefficient = 0
 	permeability_coefficient = 0.05
-	armor = list(melee = 40, bullet = 20, laser = 20, energy = 30, bomb = 20, bio = 0, rad = 60)
+	armor = list(melee = 12, bullet = 20, laser = 20, energy = 30, bomb = 20, bio = 0, rad = 60)
 	icon_state = "black"
 	item_state = "bgloves"
 	unacidable = 1
@@ -104,7 +104,7 @@
 	attack_verb = list("slashed")
 	force = 31
 	force_wielded = 33
-	armor_penetration = 16
+	armor_penetration = 6
 	block_chance = 20
 	sales_price = 39
 	weapon_speed_delay = 5
@@ -144,7 +144,7 @@
 	attack_verb = list("slashed")
 	force = 31
 	force_wielded = 33
-	armor_penetration = 17
+	armor_penetration = 7
 	block_chance = 10
 	sales_price = 39
 	weapon_speed_delay = 8
@@ -175,7 +175,7 @@
 	str_requirement = 13
 	force = 40 // blood for the blood god. its strong,  but the shit block chance makes it balanced
 	force_wielded = 48
-	armor_penetration = 17
+	armor_penetration = 7
 	block_chance = 15
 	sharp = TRUE
 	w_class = ITEM_SIZE_HUGE
@@ -201,7 +201,7 @@
 	str_requirement = 17
 	force = 38
 	force_wielded = 48 //warpsword
-	armor_penetration = 18
+	armor_penetration = 8
 	block_chance = 40 //may the warp guide your hand
 	sharpness = TRUE
 	grab_sound_is_loud = TRUE
@@ -299,7 +299,7 @@
 	attack_verb = list("slashed")
 	force = 31
 	force_wielded = 33
-	armor_penetration = 16
+	armor_penetration = 6
 	block_chance = 20
 	sales_price = 39
 	weapon_speed_delay = 5

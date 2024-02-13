@@ -2,7 +2,7 @@
 /obj/item/clothing/head/helmet/space/skrell
 	name = "Skrellian helmet"
 	desc = "Smoothly contoured and polished to a shine. Still looks like a fishbowl."
-	armor = list(melee = 20, bullet = 20, laser = 50,energy = 35, bomb = 50, bio = 100, rad = 100)
+	armor = list(melee = 10, bullet = 20, laser = 50,energy = 35, bomb = 50, bio = 100, rad = 100)
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	species_restricted = list(SPECIES_SKRELL,SPECIES_HUMAN)
 
@@ -15,7 +15,7 @@
 /obj/item/clothing/suit/space/skrell
 	name = "Skrellian voidsuit"
 	desc = "Seems like a wetsuit with reinforced plating seamlessly attached to it. Very chic."
-	armor = list(melee = 20, bullet = 20, laser = 50,energy = 35, bomb = 50, bio = 100, rad = 100)
+	armor = list(melee = 10, bullet = 20, laser = 50,energy = 35, bomb = 50, bio = 100, rad = 100)
 	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/storage/ore,/obj/item/device/t_scanner,/obj/item/pickaxe, /obj/item/rcd)
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
@@ -32,7 +32,7 @@
 /obj/item/clothing/suit/space/vox
 	w_class = ITEM_SIZE_NORMAL
 	allowed = list(/obj/item/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/melee/energy/sword,/obj/item/handcuffs,/obj/item/tank)
-	armor = list(melee = 60, bullet = 50, laser = 40,energy = 15, bomb = 30, bio = 30, rad = 30)
+	armor = list(melee = 12, bullet = 50, laser = 40,energy = 15, bomb = 30, bio = 30, rad = 30)
 	siemens_coefficient = 0.6
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
@@ -43,7 +43,7 @@
 	slowdown_per_slot[slot_wear_suit] = 2
 
 /obj/item/clothing/head/helmet/space/vox
-	armor = list(melee = 60, bullet = 50, laser = 40, energy = 15, bomb = 30, bio = 30, rad = 30)
+	armor = list(melee = 12, bullet = 50, laser = 40, energy = 15, bomb = 30, bio = 30, rad = 30)
 	siemens_coefficient = 0.6
 	item_flags = ITEM_FLAG_STOPPRESSUREDAMAGE
 	flags_inv = 0

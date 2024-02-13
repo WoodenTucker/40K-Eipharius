@@ -8,7 +8,7 @@
 	canremove = 1
 	desc = "Worn to shreds and covered in spikes."
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 19, bullet = 31, laser = 31, energy = 25, bomb = 30, bio = 30, rad = 20)
+	armor = list(melee = 9, bullet = 31, laser = 31, energy = 25, bomb = 30, bio = 30, rad = 20)
 	sales_price = 60
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
@@ -38,4 +38,4 @@
 
 /obj/item/clothing/suit/armor/ogryn/bouncer
 	name = "Ogryn Bouncer Armor"
-	armor = list(melee = 20, bullet = 35, laser = 35, energy = 35, bomb = 50, bio = 100, rad = 100) //I just took 20% off of the main armor types and 10% off bomb. It ended up being pretty similar to skitarii vanguard armor, so it should still be pretty durable.
+	armor = list(melee = 10, bullet = 35, laser = 35, energy = 35, bomb = 50, bio = 100, rad = 100) //I just took 20% off of the main armor types and 10% off bomb. It ended up being pretty similar to skitarii vanguard armor, so it should still be pretty durable.

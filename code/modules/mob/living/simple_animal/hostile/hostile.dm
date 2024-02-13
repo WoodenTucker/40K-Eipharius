@@ -100,18 +100,22 @@
 		return 1
 
 /mob/living/simple_animal/hostile/proc/AttackingTarget()
-	setClickCooldown(attack_delay)
 	if(!Adjacent(target_mob))
 		return
-	playsound(loc, attack_sound, 50, 1, 1)
-	if(isliving(target_mob))
+	custom_emote(1, pick( list("slashes at [target_mob]", "bites [target_mob]") ) )
+
+	var/damage = rand(melee_damage_lower,melee_damage_upper)
+
+	if(ishuman(target_mob))
+		var/mob/living/carbon/human/H = target_mob
+		var/dam_zone = pick(BP_HEAD, BP_CHEST, BP_L_HAND, BP_R_HAND, BP_L_LEG, BP_R_LEG)
+		var/obj/item/organ/external/affecting = H.get_organ(ran_zone(dam_zone))
+		H.apply_damage(damage, BRUTE, affecting, H.run_armor_check(affecting, "melee"), DAM_SHARP)
+		return H
+	else if(isliving(target_mob))
 		var/mob/living/L = target_mob
-		L.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),attacktext,damtype,defense)
+		L.adjustBruteLoss(damage)
 		return L
-	if(istype(target_mob,/obj/mecha))
-		var/obj/mecha/M = target_mob
-		M.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),attacktext)
-		return M
 
 /mob/living/simple_animal/hostile/proc/LoseTarget()
 	stance = HOSTILE_STANCE_IDLE

@@ -207,7 +207,7 @@
 				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
 				if (affecting.status & ORGAN_ROBOT)
 					return
-				if (affecting.take_damage(49, FALSE))
+				if (affecting.take_damage(45, FALSE))
 					H.UpdateDamageIcon()
 				H.updatehealth()
 				to_chat(H, "<span class = 'red'><b>Your [affecting.name] gets bitten by \the [src]!</b></span>")
@@ -216,7 +216,7 @@
 				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
 				if (affecting.status & ORGAN_ROBOT)
 					return
-				if (affecting.take_damage(59, FALSE))
+				if (affecting.take_damage(50, FALSE))
 					H.UpdateDamageIcon()
 				H.updatehealth()
 				to_chat(H, "<span class = 'red'><b>Your [affecting.name] gets chomped by \the [src]!</b></span>")
@@ -242,6 +242,14 @@
 				return TRUE
 	return ..()
 
+
+/obj/necrofleshmouth/blood
+	name = "infester mouth"
+	icon = 'icons/map_project/eldritch/Flesh_Ground.dmi'
+	icon_state = "flesh_floor-4"
+	anchored = 1
+	mouse_opacity = 0
+	layer = BELOW_OBJ_LAYER
 // FLOWER
 
 /// FLAMER FIRE

@@ -39,7 +39,7 @@
 	desc = "It provides some armor and some storage. Not really the best at either though."
 	icon_state = "opvest"
 	item_state = "opvest"
-	armor = list(melee = 10, bullet = 35, laser = 20, energy = 35, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 2, bullet = 35, laser = 20, energy = 35, bomb = 30, bio = 0, rad = 0)
 
 
 /obj/item/clothing/suit/armor/vest/opvest/norifle
@@ -50,35 +50,35 @@
 	desc = "Better than a baseball cap. But not by much."
 	icon_state = "siege_helmet"
 	item_state = "siege_helmet"
-	armor = list(melee = 10, bullet = 25, laser = 35, energy = 35, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 2, bullet = 25, laser = 35, energy = 35, bomb = 30, bio = 0, rad = 0)
 
 /obj/item/clothing/head/helmet/newopen
 	name = "helmet"
 	desc = "Better than a baseball cap. But not by much."
 	icon_state = "newopen"
 	item_state = "newopen"
-	armor = list(melee = 10, bullet = 25, laser = 35, energy = 35, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 2, bullet = 25, laser = 35, energy = 35, bomb = 30, bio = 0, rad = 0)
 
 /obj/item/clothing/head/helmet/combat
 	name = "combat helmet"
 	desc = "Better than a baseball cap. But not by much."
 	icon_state = "combat"
 	item_state = "combat"
-	armor = list(melee = 10, bullet = 25, laser = 35, energy = 35, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 2, bullet = 25, laser = 35, energy = 35, bomb = 30, bio = 0, rad = 0)
 
 /obj/item/clothing/head/helmet/hero
 	name = "closed helmet"
 	desc = "Better than a baseball cap. But not by much."
 	icon_state = "hero0"
 	item_state = "hero0"
-	armor = list(melee = 10, bullet = 25, laser = 35, energy = 35, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 2, bullet = 25, laser = 35, energy = 35, bomb = 30, bio = 0, rad = 0)
 
 /obj/item/clothing/head/helmet/zealot
 	name = "closed helmet"
 	desc = "Mainly made for melee protection."
 	icon_state = "zealot"
 	item_state = "zealot"
-	armor = list(melee = 10, bullet = 30, laser = 35, energy = 35, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 2, bullet = 30, laser = 35, energy = 35, bomb = 30, bio = 0, rad = 0)
 
 /obj/item/clothing/under/syndicate/soldier
 	name = "underclothing"

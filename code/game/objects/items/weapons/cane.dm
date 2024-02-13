@@ -67,7 +67,7 @@
 	block_chance = 40
 	force = 41
 	force_wielded = 45
-	armor_penetration = 12 // 60% damage versus SOB chestpiece.
+	armor_penetration = 2 // 60% damage versus SOB chestpiece.
 	weapon_speed_delay = 7
 	sharp = 1
 	w_class = ITEM_SIZE_NORMAL
