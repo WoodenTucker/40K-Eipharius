@@ -12,6 +12,7 @@
 /obj/item/organ/internal/kidneys/robotize()
 	. = ..()
 	icon_state = "kidneys-prosthetic"
+	sales_price = 0
 
 /obj/item/organ/internal/kidneys/Process()
 	..()

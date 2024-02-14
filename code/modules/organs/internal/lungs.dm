@@ -47,6 +47,7 @@
 /obj/item/organ/internal/lungs/robotize()
 	. = ..()
 	icon_state = "lungs-prosthetic"
+	sales_price = 0
 
 /obj/item/organ/internal/lungs/set_dna(var/datum/dna/new_dna)
 	..()

@@ -27,6 +27,7 @@
 	icon = 'icons/obj/robot_component.dmi'
 	icon_state = "camera"
 	dead_icon = "camera_broken"
+	sales_price = 0
 	update_colour()
 
 /obj/item/organ/internal/eyes/robot
