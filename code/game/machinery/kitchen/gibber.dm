@@ -122,10 +122,6 @@
 		to_chat(user, "<span class='danger'>This is not suitable for \the [src]!</span>")
 		return
 
-	if(istype(victim,/mob/living/carbon/human) && !emagged)
-		to_chat(user, "<span class='danger'>\The [src] safety guard is engaged!</span>")
-		return
-
 
 	if(victim.abiotic(1))
 		to_chat(user, "<span class='danger'>\The [victim] may not have any abiotic items on.</span>")
