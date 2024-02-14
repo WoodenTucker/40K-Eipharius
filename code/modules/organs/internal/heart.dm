@@ -21,6 +21,7 @@
 /obj/item/organ/internal/heart/robotize()
 	. = ..()
 	icon_state = "heart-prosthetic"
+	sales_price = 0
 
 /obj/item/organ/internal/heart/Process()
 	if(owner)

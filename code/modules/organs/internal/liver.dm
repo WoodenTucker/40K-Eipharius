@@ -16,6 +16,7 @@
 /obj/item/organ/internal/liver/robotize()
 	. = ..()
 	icon_state = "liver-prosthetic"
+	sales_price = 0
 
 /obj/item/organ/internal/liver/Process()
 
