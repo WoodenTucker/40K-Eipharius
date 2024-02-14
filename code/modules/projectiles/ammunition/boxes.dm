@@ -532,7 +532,7 @@
 /obj/item/ammo_magazine/railrifle
 	name = "Rail Rifle Cartridge"
 	desc = "A small box containing small sub-projectiles for the Tau Rail Rifle"
-	icon_state = "pmag"
+	icon_state = "rcd"
 	caliber = "railrifle"
 	matter = list(DEFAULT_WALL_MATERIAL = 360)
 	ammo_type = /obj/item/ammo_casing/railrifle
