@@ -274,6 +274,7 @@
 /obj/item/gun/projectile/automatic/tau/railrifle
 	name = "Rail Rifle"
 	desc = "A potent weapon, possessing an impressive long range and ability to deal great damage, its true strength lies in its armour penetration capabilities. Issued to frontline Tau Pathfinder units heavy weapons support"
+	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "railgun"
 	item_state = "railgun"
 	loaded_icon = "railgun"
@@ -285,10 +286,10 @@
 	unwielded_unloaded_icon = "railgun"
 	wielded_unloaded_icon = "railgun"
 	caliber = "railrifle"
-	str_requirement = 13
+	str_requirement = 10 //Tau are so weak.
 	one_hand_penalty = 2.5
 	accuracy = 1 //extremely accurate
-	fire_delay = 8
+	fire_delay = 18
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	magazine_type = /obj/item/ammo_magazine/railrifle
 	allowed_magazines = list(/obj/item/ammo_magazine/railrifle)
