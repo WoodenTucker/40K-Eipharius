@@ -234,7 +234,7 @@
 /obj/item/clothing/ring/halodevice
 	//doing this shit dead-space style, only real option for killing the user is burning or full delimbing which even then might not last
 	name = "Strange Ring"
-	desc = "A ring made of an unknown xenos material"
+	desc = "Artifaci Xenos Horrificus, possesion or knowlege of this item is grounds for entire houses to be purged by the Ordos Xenos of the Inquisition"
 	icon_state = "mariner-grad"
 	canremove = FALSE
 	var/can_toggle = 1
