@@ -221,14 +221,14 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 
 /obj/aura/regenerating/human/halo
 	name = "Inhuman Regeneration"
-	brute_mult = 75    //brute damage healed per tick
-	fire_mult = 40    //burn damage healed per tick
+	brute_mult = 45    //brute damage healed per tick
+	fire_mult = 30    //burn damage healed per tick
 	tox_mult = 10 //organ damage healed per tick
 	innate_heal = TRUE // Whether the aura is on, basically.
-	nutrition_damage_mult = 0 //How much nutrition it takes to heal regular damage
-	external_nutrition_mult = 0 // How much nutrition it takes to regrow a limb
+	nutrition_damage_mult = 0.9 //you can starve them out atleast 
+	external_nutrition_mult = 0.75 // How much nutrition it takes to regrow a limb
 	can_regenerate_organs = TRUE
-	organheal = 30
+	organheal = 25
 	grow_chance = 60
 
 	/obj/aura/regenerating/human/halo/bond
