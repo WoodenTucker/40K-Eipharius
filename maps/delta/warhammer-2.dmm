@@ -9101,8 +9101,8 @@
 /obj/item/stack/thrones,
 /obj/item/stack/thrones,
 /obj/item/stack/thrones,
-/obj/item/ammo_magazine/melta,
-/obj/item/ammo_magazine/melta,
+/obj/item/cell/melta,
+/obj/item/cell/melta,
 /obj/effect/floor_decal/turf/plating,
 /obj/item/cell/lasgun,
 /obj/item/cell/lasgun,
@@ -17642,7 +17642,7 @@
 "sBc" = (
 /obj/structure/table/rack/dark,
 /obj/random/loot/goodweapon,
-/obj/item/ammo_magazine/melta,
+/obj/item/cell/melta,
 /obj/item/cell/plasma,
 /turf/simulated/floor/darkfloor{
 	dir = 1

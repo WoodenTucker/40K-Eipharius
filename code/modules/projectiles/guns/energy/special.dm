@@ -239,7 +239,7 @@ obj/item/gun/energy/staff/focus
 
 
 /obj/item/gun/energy/melta/handheld
-	name = "Melta"
+	name = "Melta Gun"
 	desc = "Is a powerful, short-ranged anti-armour weapon that produces an intense, energetic beam of heat in the tens of thousands of degrees Centigrade."
 	icon_state = "meltagun"
 	item_state = "multimelta"

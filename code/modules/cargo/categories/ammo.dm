@@ -234,9 +234,9 @@
 	item_path = /obj/item/ammo_casing/heat_shell
 
 /datum/cargo_entry/ammo/meltamag
-	name = "Melta Ammo"
+	name = "Melta Canister"
 	cost = 35
-	item_path = /obj/item/ammo_magazine/melta
+	item_path = /obj/item/cell/melta
 
 /datum/cargo_entry/ammo/boltpistolmag
 	name = "Bolt Pistol Magazine"

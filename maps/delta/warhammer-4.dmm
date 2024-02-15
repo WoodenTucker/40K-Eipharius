@@ -2311,7 +2311,7 @@
 /obj/item/ammo_magazine/a762/ap,
 /obj/item/ammo_magazine/a762/ap,
 /obj/item/cell/plasma,
-/obj/item/ammo_magazine/melta,
+/obj/item/cell/melta,
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
