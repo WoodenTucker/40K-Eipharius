@@ -818,7 +818,7 @@
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 
 
-	if(isHolyoils(W))
+	if(isHolyoils(W)||isLube(W))
 		if(rubtheoils == 0)
 			visible_message("Use your laser cutter first!")
 			return
