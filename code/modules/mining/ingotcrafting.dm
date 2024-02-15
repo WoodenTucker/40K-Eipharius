@@ -654,24 +654,36 @@
 					src.rubtheoils = 1
 					src.name = "Silver Ingot (Carved Machine Silver)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
-			if(3)
-				if(prob(15))
+				else
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] carefully carves the ingot into a blessed unit of Silver! Now take the ingot and dip it into the holy oil!")
+					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(3)
+				if(prob(18))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into a pair of blessed Silver Earrings! Now take the ingot and dip it into the holy oil!")
 					src.rubtheoils = 1
 					src.name = "Silver Ingot (Carved Silver Earrings)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
-			if(4)
-				if(prob(10))
+				else
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] carefully carves the ingot into a blessed unit of Silver! Now take the ingot and dip it into the holy oil!")
+					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(4)
+				if(prob(15))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into a blessed Silver Candelabra Now take the ingot and dip it into the holy oil!")
 					src.rubtheoils = 1
 					src.name = "Silver Ingot (Carved Candelabra)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
-			if(5)
-				if(prob(5))
+				else
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] carefully carves the ingot into a blessed unit of Silver! Now take the ingot and dip it into the holy oil!")
+					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(5)
+				if(prob(12))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into a blessed Silver Goblet! Now take the ingot and dip it into the holy oil!")
 					src.rubtheoils = 1
 					src.name = "Silver Ingot (Carved Goblet)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
@@ -772,7 +784,7 @@
 		switch(whatwemaking)
 
 			if(1)
-				if(prob(16))
+				if(prob(20))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] carefully carves the ingot into a blessed Golden Ring! Now take the ingot and dip it into the holy oil!")
 					src.rubtheoils = 1
@@ -789,9 +801,14 @@
 					src.rubtheoils = 1
 					src.name = "Gold Ingot (Carved Machine Gold)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
-				if(prob(8))
+				else
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] carefully carves the ingot into a blessed unit of Gold! Now take the ingot and dip it into the holy oil!")
+					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(3)
+				if(prob(15))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into a blessed Golden Goblet! Now take the ingot and dip it into the holy oil!")
 					src.rubtheoils = 1
 					src.name = "Gold Ingot (Carved Goblet)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
