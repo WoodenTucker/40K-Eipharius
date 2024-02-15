@@ -250,7 +250,7 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
-	armor = list(melee = 25, bullet = 46, laser = 46, energy = 30, bomb = 40, bio = 90, rad = 90)
+	armor = list(melee = 10, bullet = 46, laser = 46, energy = 30, bomb = 40, bio = 90, rad = 90)
 	sales_price = 0 // Only 1 in the map
 	weight = 10
 
