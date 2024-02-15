@@ -272,6 +272,14 @@ obj/item/clothing/suit/armor
 	item_state = "tbrea"
 	armor = list(melee = 10, bullet = 42, laser = 42, energy = 30, bomb = 60, bio = 50, rad = 50)
 
+/obj/item/clothing/suit/armor/fwarmor/scout
+	name = "fire warrior scout armor"
+	desc = "The impeccable yellow and brown armor of the Tau warrior caste. This one is specially modified for use by recon elements of the Tau warriors."
+
+/obj/item/clothing/suit/armor/fwarmor/scout/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = -0.2
+
 // Ork
 
 /obj/item/clothing/suit/armor/orkarmor
