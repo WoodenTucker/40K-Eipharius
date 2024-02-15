@@ -85,3 +85,8 @@
 	name = "Mind Batterer"
 	cost = 500
 	item_path = /obj/item/device/batterer
+
+/datum/cargo_entry/bmarket/halo
+	name = "Vetitum Caelestis Artificium"
+	cost = 100000 //anyone who manages to buy this is 100% duping
+	item_path = /obj/item/clothing/ring/halodevice
