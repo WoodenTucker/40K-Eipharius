@@ -48,6 +48,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		H.verbs += list(
 			/mob/living/carbon/human/proc/governorclass,
 			/mob/living/carbon/human/proc/ideology,
+			/mob/living/carbon/human/proc/objective,
 		)
 
 /datum/job/heir
