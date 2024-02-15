@@ -87,4 +87,4 @@
 /obj/item/clothing/gloves/thick/swat/combat
 	name = "combat gloves"
 	desc = "Thick black gloves that make you feel empowered."
-	armor = list(melee = 5, bullet = 5, laser = 5,energy = 25, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 1, bullet = 5, laser = 5,energy = 25, bomb = 30, bio = 0, rad = 0)

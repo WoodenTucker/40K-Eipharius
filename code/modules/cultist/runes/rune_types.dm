@@ -24,6 +24,8 @@
 	var/list/existing_dirs = list()
 	blood_DNA = list()
 	appearance_flags = NO_CLIENT_COLOR
+	pixel_x = -32
+	pixel_y = -32
 
 /obj/effect/cleanable/heretic_rune/khorne/New()
 	..()
@@ -40,6 +42,8 @@
 	layer = 2
 	blood_DNA = list()
 	appearance_flags = NO_CLIENT_COLOR
+	pixel_x = -32
+	pixel_y = -32
 
 /obj/effect/cleanable/heretic_rune/slaanesh/New()
 	..()
@@ -56,6 +60,8 @@
 	layer = 2
 	blood_DNA = list()
 	appearance_flags = NO_CLIENT_COLOR
+	pixel_x = -32
+	pixel_y = -32
 
 /obj/effect/cleanable/heretic_rune/tzeentch/New()
 	..()
@@ -72,6 +78,8 @@
 	layer = 2
 	blood_DNA = list()
 	appearance_flags = NO_CLIENT_COLOR
+	pixel_x = -32
+	pixel_y = -32
 
 /obj/effect/cleanable/heretic_rune/nurgle/New()
 	..()
