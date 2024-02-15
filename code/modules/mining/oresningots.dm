@@ -150,7 +150,7 @@
 	icon_state = "adamantine_ingot"
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
-	sales_price = 6
+	sales_price = 12
 
 /obj/item/ingots/goldingot
 	name = "gold ingot"
@@ -177,7 +177,7 @@
 	icon_state = "titanium_ingot"
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
-	sales_price = 7
+	sales_price = 6
 
 /obj/item/ingots/diamantineingot
 	name = "diamantine ingot"
