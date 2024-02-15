@@ -339,3 +339,4 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	brightness_on = 4
 	w_class = ITEM_SIZE_NORMAL
+	sales_price = 15
