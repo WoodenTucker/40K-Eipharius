@@ -225,7 +225,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	fire_mult = 30    //burn damage healed per tick
 	tox_mult = 10 //organ damage healed per tick
 	innate_heal = TRUE // Whether the aura is on, basically.
-	nutrition_damage_mult = 0.9 //you can starve them out atleast 
+	nutrition_damage_mult = 1.5 //you can starve them out atleast 
 	external_nutrition_mult = 0.75 // How much nutrition it takes to regrow a limb
 	can_regenerate_organs = TRUE
 	organheal = 25
