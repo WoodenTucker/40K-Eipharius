@@ -6,7 +6,7 @@
 	icon_state = "telebaton_1"
 	item_state = "baton"
 	slot_flags = SLOT_BELT
-	force = 15
+	force = 10
 	sharp = 0
 	edge = 0
 	throwforce = 7
@@ -14,13 +14,13 @@
 	origin_tech = list(TECH_COMBAT = 2)
 	attack_verb = list("beaten")
 	var/stunforce = 0
-	var/agonyforce = 70
+	var/agonyforce = 90
 	var/status = 0		//whether the thing is on or not
 	var/obj/item/cell/bcell
 	var/hitcost = 0
 	block_chance = 15
 	stunforce = 0
-	agonyforce = 70
+	agonyforce = 90
 	sharpness = 0
 	sales_price = 1
 	weapon_speed_delay = 6
@@ -267,7 +267,7 @@
 	icon_state = "shockmaul"
 	item_state = "baton"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	force = 15
+	force = 10
 	sharp = 0
 	edge = 0
 	throwforce = 7
@@ -275,14 +275,14 @@
 	origin_tech = list(TECH_COMBAT = 2)
 	attack_verb = list("beaten")
 	stunforce = 0
-	agonyforce = 70
+	agonyforce = 120
 	status = 0		//whether the thing is on or not
 	/obj/item/cell/bcell
 	hitcost = 0
 	block_chance = 30
 	sharpness = 0
 	stunforce = 0
-	agonyforce = 90
+	agonyforce = 120
 	sales_price = 1
 	weapon_speed_delay = 6
 	status = 1
