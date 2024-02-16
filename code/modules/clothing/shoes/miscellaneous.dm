@@ -247,3 +247,5 @@
 	unacidable = 1
 	canremove = 0
 	armor = list(melee = 25, bullet = 25, laser = 25,energy = 25, bomb = 50, bio = 100, rad = 100)
+	body_parts_covered = FEET
+	species_restricted = list(SPECIES_NECRON)
