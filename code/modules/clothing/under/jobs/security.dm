@@ -249,3 +249,17 @@
 	worn_state = "combat"
 	armor = list(melee = 1, bullet = 5, laser = 5,energy = 5, bomb = 5, bio = 5, rad = 50)
 	has_sensor = SUIT_HAS_SENSORS
+
+/obj/item/clothing/under/necron
+	name = "Necrodermis Skin"
+	desc = "A thin layer of Necrodermis making up the skin of a Necron."
+	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 100, rad = 100)
+	icon_state = null
+	worn_state = null
+	siemens_coefficient = 0.1
+	species_restricted = list(SPECIES_NECRON)
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	unacidable = 1
+	canremove = 0
