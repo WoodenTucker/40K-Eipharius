@@ -21,6 +21,7 @@
 	block_chance = 15
 	stunforce = 0
 	agonyforce = 70
+	sharpness = 0
 	sales_price = 1
 	weapon_speed_delay = 6
 	status = 1
@@ -279,6 +280,7 @@
 	/obj/item/cell/bcell
 	hitcost = 0
 	block_chance = 30
+	sharpness = 0
 	stunforce = 0
 	agonyforce = 90
 	sales_price = 1
@@ -326,6 +328,7 @@
 	block_chance = 40
 	sales_price = 30
 	weapon_speed_delay = 6
+	sharpness = 0
 	sharp = FALSE
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_HUGE
