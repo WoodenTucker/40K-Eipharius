@@ -259,3 +259,19 @@
 	icon_state = "ScionGloves"
 	item_state = "ScionGloves"
 	armor = list(melee = 1, bullet = 2, laser = 2, energy = 2, bomb = 2, bio = 0, rad = 0)
+
+/obj/item/clothing/gloves/necron
+	name = "Necron Hands"
+	desc = "Powerful necrodermis hads, belonging to a Necron."
+	icon_state = null
+	item_state = null
+	armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 2, bio = 100, rad = 100)
+	siemens_coefficient = 0
+	unacidable = 1
+	canremove = 0
+	species_restricted = list(SPECIES_NECRON)
+	cold_protection = HANDS
+	min_cold_protection_temperature = GLOVES_MIN_COLD_PROTECTION_TEMPERATURE
+	heat_protection = HANDS
+	max_heat_protection_temperature = GLOVES_MAX_HEAT_PROTECTION_TEMPERATURE
+	body_parts_covered = HANDS|ARMS
