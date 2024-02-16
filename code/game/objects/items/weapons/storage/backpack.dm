@@ -767,3 +767,25 @@
 		to_chat(usr,"You retrieve your Hotshot Lasgun!")
 		usr.put_in_hands(new /obj/item/gun/energy/las/hotshot/power_pack(usr))
 
+/obj/item/storage/backpack/satchel/warfare/necron
+	name = "Necron Power System"
+	desc = "An ancient power system, capable of near-indefinite operation, although it lacks storage capabilities."
+	icon_state = null
+	item_state = null
+	unacidable = 1
+	canremove = 0
+	species_restricted = list(SPECIES_NECRON)
+	var/can_toggle = 1
+
+/obj/item/storage/backpack/satchel/warfare/necron/verb/togglegaussgun()
+	set name = "Retrieve Gauss Flayer"
+	set category = "Necron"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+	else
+		to_chat(usr,"You retrieve your Gauss Flayer!")
+		usr.put_in_hands(new /obj/item/gun/energy/gaussflayer(usr))
+
