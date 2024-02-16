@@ -728,3 +728,8 @@ var/const/NO_EMAG_ACT = -50
 	name = "Royal Master Key"
 	desc = "The Royal Key for the Rogue Trader Themselves, or for people belonging to their retinue. It ONLY has access to the most expensive rooms and treasure this entire planet has. Except for the toaster people's building."
 	access = list(access_monastary, access_noble, 331) //331 is rt vault
+
+/obj/item/card/id/key/super/necron
+	name = "Necron Access System"
+	desc = "An odd device, seemingly able to crack almost any electronic lock."
+	access = list(access_daemon)
