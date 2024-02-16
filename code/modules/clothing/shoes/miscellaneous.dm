@@ -236,3 +236,14 @@
 	desc = "A smaller version of the jackboots issued to imperium forces."
 	icon_state = "GRCboots"
 	item_state = "GRCboots"
+
+/obj/item/clothing/shoes/necron
+	name = "Necron Feet"
+	desc = "A set of heavy duty necrodermis feet, designed for all terrains."
+	icon_state = null
+	item_state = null
+	item_flags = ITEM_FLAG_NOSLIP
+	siemens_coefficient = 0
+	unacidable = 1
+	canremove = 0
+	armor = list(melee = 25, bullet = 25, laser = 25,energy = 25, bomb = 50, bio = 100, rad = 100)
