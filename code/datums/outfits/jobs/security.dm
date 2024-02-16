@@ -31,7 +31,7 @@
 	name = OUTFIT_JOB_NAME("Necron Warrior")
 	uniform = /obj/item/clothing/under/necron
 	glasses = /obj/item/clothing/glasses/necron
-	id_type = /obj/item/card/id/security/necron
+	id_type = /obj/item/card/id/key/super/necron
 	mask = /obj/item/clothing/mask/gas/necron
 	gloves = /obj/item/clothing/gloves/necron
 	suit = /obj/item/clothing/suit/armor/necron
