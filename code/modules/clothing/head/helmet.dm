@@ -601,3 +601,16 @@
 	icon_state = "Grotcap"
 	item_state = "Grotcap"
 	armor = list(melee = 5, bullet = 8, laser = 5, energy = 35, bomb = 0, bio = 0, rad = 0)
+
+/obj/item/clothing/head/helmet/necron
+	name = Necron Head"
+	desc = "The eerie necrodermis skull of a Necron Warrior."
+	icon_state = null
+	armor = list(melee = 12, bullet = 40, laser = 40, energy = 44, bomb = 30, bio = 100, rad = 10)
+	siemens_coefficient = 0
+	canremove = 0
+	siemens_coefficient = 0
+	unacidable = 1
+	canremove = 0
+	body_parts_covered = HEAD|FACE|EYES
+	species_restricted = list(SPECIES_NECRON)
