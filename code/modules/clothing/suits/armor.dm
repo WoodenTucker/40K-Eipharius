@@ -2140,3 +2140,17 @@ obj/item/clothing/suit/armor/scion/trooper
 	desc = "Suit of a true freedom fighter, fight with your fellow GRC members against your greenskin opressors."
 	icon_state = "GRCarmor"
 	item_state = "GRCarmor"
+
+/obj/item/clothing/suit/armor/necron
+	name = "Necron Armour"
+	desc = "The main armoured body of a Necron."
+	armor = list(melee = 12, bullet = 49, laser = 49, energy = 49, bomb = 20, bio = 100, rad = 100)
+	icon_state = null
+	item_state = null
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	canremove = 0
+	unacidable = 1
+	siemens_coefficient = 0
+	species_restricted = list(SPECIES_NECRON)
