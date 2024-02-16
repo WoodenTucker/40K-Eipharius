@@ -536,6 +536,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 	can_toggle = 1
 	is_toggled = 1
 	arterial_bleed_severity = 0
+	robotic = ORGAN_ROBOT
 
 /obj/item/organ/external/robotic/servitor/arm
 	organ_tag = BP_L_ARM
@@ -550,6 +551,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 	amputation_point = "left shoulder"
 	can_grasp = 1
 	arterial_bleed_severity = 0
+	robotic = ORGAN_ROBOT
 
 /obj/item/organ/external/arm/necron
 	organ_tag = BP_L_ARM
@@ -568,6 +570,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 	cannot_break = 1
 	cannot_amputate = 1
 	arterial_bleed_severity = 0
+	robotic = ORGAN_ROBOT
 
 /obj/item/organ/external/arm/right/necron
 	organ_tag = BP_R_ARM
@@ -586,6 +589,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 	cannot_break = 1
 	cannot_amputate = 1
 	arterial_bleed_severity = 0
+	robotic = ORGAN_ROBOT
 
 /obj/item/organ/external/hand/necron
 	organ_tag = BP_L_HAND
@@ -604,6 +608,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 	cannot_break = 1
 	cannot_amputate = 1
 	arterial_bleed_severity = 0
+	robotic = ORGAN_ROBOT
 
 /obj/item/organ/external/hand/right/necron
 	organ_tag = BP_R_HAND
@@ -619,6 +624,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 	cannot_break = 1
 	cannot_amputate = 1
 	arterial_bleed_severity = 0
+	robotic = ORGAN_ROBOT
 
 /obj/item/organ/external/chest/necron
 	name = "Necron upper body"
@@ -640,6 +646,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 	artery_name = "aorta"
 	cavity_name = "thoracic"
 	arterial_bleed_severity = 0
+	robotic = ORGAN_ROBOT
 
 /obj/item/organ/external/groin/necron
 	name = "Necron lower body"
@@ -661,6 +668,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 	gendered_icon = 1
 	artery_name = "iliac artery"
 	cavity_name = "abdominal"
+	robotic = ORGAN_ROBOT
 
 /obj/item/organ/external/leg/necron
 	organ_tag = BP_L_LEG
@@ -683,6 +691,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 	cannot_break = 1
 	cannot_amputate = 1
 	dislocated = -1
+	robotic = ORGAN_ROBOT
 
 /obj/item/organ/external/leg/right/necron
 	organ_tag = BP_R_LEG
@@ -705,6 +714,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 	cannot_break = 1
 	cannot_amputate = 1
 	dislocated = -1
+	robotic = ORGAN_ROBOT
 
 /obj/item/organ/external/foot/necron
 	organ_tag = BP_L_FOOT
@@ -726,6 +736,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 	cannot_break = 1
 	cannot_amputate = 1
 	dislocated = -1
+	robotic = ORGAN_ROBOT
 
 /obj/item/organ/external/foot/right/necron
 	organ_tag = BP_R_FOOT
@@ -746,6 +757,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 	gibbable = FALSE
 	cannot_break = 1
 	cannot_amputate = 1
+	robotic = ORGAN_ROBOT
 
 /obj/item/organ/external/head/necron
 	organ_tag = BP_HEAD
@@ -772,3 +784,4 @@ obj/item/organ/external/robotic/hand/experimental/right
 	brute_mod = 0.7                  // Multiplier for incoming brute damage. //Made of metal, they're harder to damage.
 	burn_mod = 0.2                   // As above for burn. //Mechanical limbs* can* be burned, but they're far more resistant.
 	var/toxins_mod = 0
+	robotic = ORGAN_ROBOT
