@@ -295,5 +295,20 @@
 	gas_transfer_coefficient = 0.001
 	permeability_coefficient = 0.001
 	siemens_coefficient = 0
+	body_parts_covered = FACE|EYES|HEAD
 	unacidable = 1
 	canremove = 0
+
+/obj/item/clothing/mask/gas/necron
+	name = "Necron Face"
+	desc = "A menacing visage, belonging to an ancient terror. Made out of necrodermis."
+	icon_state = null
+	item_state = null
+	gas_transfer_coefficient = 0
+	permeability_coefficient = 0
+	siemens_coefficient = 0
+	body_parts_covered = FACE|EYES|HEAD
+	unacidable = 1
+	canremove = 0
+	species_restricted = list(SPECIES_NECRON)
+	armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 0, bio = 100, rad = 100)
