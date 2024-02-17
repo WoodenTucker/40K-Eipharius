@@ -815,7 +815,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	H.species.burn_mod = 0.85
 	sleep(rand(400,1200))
 	to_chat(H, "<span class='danger'>Your body grows ever more strange, limbs twisting and bending in ways they should not be able to.</span>")
-	H.add_aura(var/obj/aura/regenerating/human/nid)
+	H.add_aura(/obj/aura/regenerating/human/nid)
 	H.species.slowdown = -0.5
 	sleep(rand(400,1200))
 	H.visible_message("<span class='warning'>IT'S NOT ENOUGH. NOTHING IS ENOUGH.")
