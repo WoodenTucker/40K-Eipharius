@@ -263,8 +263,8 @@
 /obj/item/clothing/gloves/necron
 	name = "Necron Hands"
 	desc = "Powerful necrodermis hads, belonging to a Necron."
-	icon_state = null
-	item_state = null
+	icon_state = "techpriest"
+	item_state = "techpriest"
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 2, bio = 100, rad = 100)
 	siemens_coefficient = 0
 	unacidable = 1
