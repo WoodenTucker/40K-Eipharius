@@ -614,3 +614,19 @@
 	canremove = 0
 	body_parts_covered = HEAD|FACE|EYES
 	species_restricted = list(SPECIES_NECRON)
+
+
+
+/obj/item/clothing/head/helmet/deathmark
+	name = "Deathmark Head"
+	desc = "The eerie necrodermis skull of a Necron Warrior."
+	icon_state = null
+	item_state = "Deathmark"
+	armor = list(melee = 12, bullet = 40, laser = 40, energy = 44, bomb = 30, bio = 100, rad = 10)
+	siemens_coefficient = 0
+	canremove = 0
+	siemens_coefficient = 0
+	unacidable = 1
+	canremove = 0
+	body_parts_covered = HEAD|FACE|EYES
+	species_restricted = list(SPECIES_NECRON)
