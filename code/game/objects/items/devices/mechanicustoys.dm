@@ -783,8 +783,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	visible_message("<span class='warning'>The device fully merges with [user]'s flesh!")
 	H.set_trait(new/datum/trait/death_tolerant())
 	H.visible_message("<span class='warning'>As the device sinks below your skin, you feel an alien presence brush at the edges of your mind. Was this a wise choice?")
-	possess_stage = 1
-	possess1(user)
+	H.possess1()
 	qdel(src)
 
 /obj/item/device/xenotech/halo_device/proc/possess1(var/mob/living/carbon/human/H)
@@ -806,8 +805,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	H.visible_message("<span class='warning'>Once again, an alien presence brushes the edge of your mind. You feel... empty, as normal pleasures no longer satiate your appetites.")
 	H.vice = "Glutton"
 	sleep(rand(1800,5000))
-	H.possess_stage = 2
-	H.possess2
+	H.possess2()
 
 /obj/item/device/xenotech/halo_device/proc/possess2(var/mob/living/carbon/human/H)
 	H.visible_message("<span class='warning'>You can feel your CARAPACE; no, skin, begin to harden and clump strangely.")
