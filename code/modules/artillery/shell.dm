@@ -120,7 +120,7 @@
 /obj/item/cannon_ball/shell/tank/HE76
 	atype = "HE"
 	caliber = 76.2
-	//heavy_armor_penetration = 16
+	//heavy_armor_penetration = 6
 	damage = 250
 
 /obj/item/cannon_ball/shell/tank/AP76

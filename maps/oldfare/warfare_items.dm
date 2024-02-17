@@ -7,14 +7,14 @@
 /obj/item/clothing/head/helmet/sentryhelm
 	name = "Sentry Helmet"
 	desc = "Used for taking blows to the noggin without getting hurt."
-	armor = list(melee = 15, bullet = 35, laser = 25, energy = 30, bomb = 50, bio = 10, rad = 0)//proteck ya neck
+	armor = list(melee = 5, bullet = 35, laser = 25, energy = 30, bomb = 50, bio = 10, rad = 0)//proteck ya neck
 	str_requirement = 18
 
 
 /obj/item/clothing/suit/armor/sentry
 	name = "Sentry Armor"
 	desc = "Protects you very well from getting smacked, and decently well from getting shot."
-	armor = list(melee = 15, bullet = 35, laser = 25, energy = 30, bomb = 50, bio = 10, rad = 0)//Beefy boys.
+	armor = list(melee = 5, bullet = 35, laser = 25, energy = 30, bomb = 50, bio = 10, rad = 0)//Beefy boys.
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

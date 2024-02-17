@@ -20,8 +20,8 @@
 	open_when_dead = FALSE
 	department_flag = INQ
 	latejoin_at_spawnpoints = TRUE
-	access = list(1984, 356, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_village, access_administratum, access_change_ids, access_keycard_auth)
-	minimal_access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_village, access_administratum, access_change_ids, access_keycard_auth
+	access = list(1984, 356, access_armory, access_security, access_mechanicus, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_village, access_administratum, access_change_ids, access_keycard_auth)
+	minimal_access = list(access_armory, access_security, access_mechanicus, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_village, access_administratum, access_change_ids, access_keycard_auth
 			            )
 
 
@@ -30,7 +30,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.get_idcard()?.access = list(1984, 356, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_village, access_administratum, access_change_ids, access_keycard_auth)
+		H.get_idcard()?.access = list(1984, 356, access_armory, access_security, access_mechanicus, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_village, access_administratum, access_change_ids, access_keycard_auth)
 		H.fully_replace_character_name("Marshal [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(16,19), rand(13,17), rand(13,17), rand(10,13)) //meant to be a brute keeping the plebs in line
@@ -49,7 +49,7 @@
 /datum/job/investigator
 	title = "Planetary Investigator"
 	head_position = 1
-	supervisors = "the Lord Governor and Marshall"
+	supervisors = "the Lord Governor and Marshal"
 	total_positions = 1
 	spawn_positions = 1
 	social_class = SOCIAL_CLASS_HIGH
@@ -369,16 +369,17 @@
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	belt = /obj/item/gun/projectile/revolver/mateba
+	belt = /obj/item/gun/projectile/marshal/gavel
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	r_pocket = /obj/item/storage/box/coin
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/entertainment
 	suit_store = null
 	backpack_contents = list(
-	/obj/item/ammo_magazine/c50/ms = 1,
+	/obj/item/ammo_box/shotgun/kpslug = 2,
 	/obj/item/handcuffs = 1,
 	/obj/item/gun/energy/taser = 1,
+	/obj/item/melee/baton/shockmaul/loaded = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,

@@ -529,6 +529,16 @@
 	desc = "An ancient design for loading galvanic rifles. This one seems to have stun rounds loaded."
 	ammo_type = /obj/item/ammo_casing/galvanic/pain
 
+/obj/item/ammo_magazine/railrifle
+	name = "Rail Rifle Cartridge"
+	desc = "A small box containing small sub-projectiles for the Tau Rail Rifle"
+	icon_state = "rcd"
+	caliber = "railrifle"
+	matter = list(DEFAULT_WALL_MATERIAL = 360)
+	ammo_type = /obj/item/ammo_casing/railrifle
+	mag_type = MAGAZINE
+	max_ammo = 5
+	multiple_sprites = 0
 
 /obj/item/ammo_magazine/pulsemag
 	name = "Pulse Matter Cartridge"

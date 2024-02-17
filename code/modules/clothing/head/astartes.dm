@@ -6,7 +6,7 @@
 	item_icons = list(slot_head_str = 'icons/mob/32x40/hats.dmi')
 	icon_state = "ultrahelm"
 	item_state = "ultrahelm"
-	armor = list(melee = 19, bullet = 44, laser = 44, energy = 44, bomb = 60, bio = 100, rad = 100)
+	armor = list(melee = 9, bullet = 44, laser = 44, energy = 44, bomb = 60, bio = 100, rad = 100)
 	str_requirement = 25
 	unacidable = 1
 	body_parts_covered = HEAD|FACE|EYES

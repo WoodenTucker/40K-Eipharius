@@ -79,8 +79,8 @@
 	switch(necronclass)
 		if("Necron Warrior")
 			warfare_faction = NECRON
-			//var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/security/colonel) //Add in Necron outfit when it's finished
-			//outfit.equip(src)
+			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/security/necron)
+			outfit.equip(src)
 			src.add_stats(rand(25,30),rand(12,15),rand(25,30),rand(10,11)) //gives stats str, dext, end, int
 			src.add_skills(rand(14,18),rand(19,21),rand(3,5),rand(12,14),rand(3,5)) //melee, ranged, med, eng, surgery
 			src.set_trait(new/datum/trait/death_tolerant())

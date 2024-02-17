@@ -14,7 +14,7 @@
 	siemens_coefficient = 0.9
 	var/gas_filter_strength = 1			//For gas mask filters
 	var/list/filtered_gases = list("phoron", "sleeping_agent", "corrupting", "polyacid", "Chlorine Gas")
-	armor = list(melee = 5, bullet = 5, laser = 5, energy = 0, bomb = 0, bio = 75, rad = 0)
+	armor = list(melee = 1, bullet = 5, laser = 5, energy = 0, bomb = 0, bio = 75, rad = 0)
 
 /obj/item/clothing/mask/gas/filter_air(datum/gas_mixture/air)
 	var/datum/gas_mixture/filtered = new
@@ -295,5 +295,20 @@
 	gas_transfer_coefficient = 0.001
 	permeability_coefficient = 0.001
 	siemens_coefficient = 0
+	body_parts_covered = FACE|EYES|HEAD
 	unacidable = 1
 	canremove = 0
+
+/obj/item/clothing/mask/gas/necron
+	name = "Necron Face"
+	desc = "A menacing visage, belonging to an ancient terror. Made out of necrodermis."
+	icon_state = null
+	item_state = null
+	gas_transfer_coefficient = 0
+	permeability_coefficient = 0
+	siemens_coefficient = 0
+	body_parts_covered = FACE|EYES|HEAD
+	unacidable = 1
+	canremove = 0
+	species_restricted = list(SPECIES_NECRON)
+	armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 0, bio = 100, rad = 100)

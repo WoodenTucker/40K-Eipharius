@@ -570,7 +570,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/pistol
 	charge_cost = 100
-	armor_penetration = 11
+	armor_penetration = 1
 	cell_type = /obj/item/cell/lasgun/small || /obj/item/cell/lasgun
 	ammoType =  /obj/item/cell/lasgun
 	sales_price = 10
@@ -1044,7 +1044,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 /obj/item/gun/energy/las/lasgun/lucius/tinkered
 	name = "Lucius No.98 'Veteran Configuration' Lasgun"
 	desc = "A Lucius-pattern lasgun No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot than Kantrael and many other lasgun patterns but causing it to be more likely to overheat. This variant has a modified heatsink and crystal assembly, the frame has also been replaced with a light polymer."
-	armor_penetration = 15
+	armor_penetration = 1
 	force = 12
 	one_hand_penalty = 1.8
 	fire_delay = 3.5
@@ -1065,7 +1065,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
 	force = 22
-	armor_penetration = 8
+	armor_penetration = 1
 	one_hand_penalty = 1.5
 	accuracy = 0
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)

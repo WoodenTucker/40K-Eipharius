@@ -615,6 +615,7 @@
 	icon = 'icons/map_project/fluff_items.dmi'
 	icon_state = "goblet_silver"
 	volume = 60
+	sales_price = 20
 	center_of_mass = "x=17;y=7"
 
 /obj/item/reagent_containers/food/drinks/flask/goblet/gold
@@ -623,6 +624,7 @@
 	icon = 'icons/map_project/fluff_items.dmi'
 	icon_state = "goblet_gold"
 	volume = 60
+	sales_price = 30
 	center_of_mass = "x=17;y=7"
 
 

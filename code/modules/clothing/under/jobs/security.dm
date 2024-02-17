@@ -219,7 +219,7 @@
 	desc = "The bodysuit worn by Astartes underneath their Power Armour."
 	icon_state = "swatunder"
 	worn_state = "swatunder"
-	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 1, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 
 // Adepta Sororitas
@@ -227,7 +227,7 @@
 /obj/item/clothing/under/guard/uniform/sisterofbattle
 	name = "Adepta Sororitas Bodysuit"
 	desc = "The bodysuit worn by Adepta Sororitas underneath their Power Armour."
-	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 1, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 	species_restricted = list(SPECIES_HUMAN)
 
@@ -235,7 +235,7 @@
 /obj/item/clothing/under/guard/uniform/sisterofbattle/repentia
 	name = "Faith of the Repentia"
 	desc = "When there is no armor to defend from heretics, the Emperor protects."
-	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 1, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
 	icon_state = "repentia_nude"
 	worn_state = "repentia_nude"
 	siemens_coefficient = 0.9
@@ -247,5 +247,19 @@
 	icon_state = "combat"
 	item_state = "bl_suit"
 	worn_state = "combat"
-	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 5, bio = 5, rad = 50)
+	armor = list(melee = 1, bullet = 5, laser = 5,energy = 5, bomb = 5, bio = 5, rad = 50)
 	has_sensor = SUIT_HAS_SENSORS
+
+/obj/item/clothing/under/necron
+	name = "Necrodermis Skin"
+	desc = "A thin layer of Necrodermis making up the skin of a Necron."
+	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 100, rad = 100)
+	icon_state = null
+	worn_state = null
+	siemens_coefficient = 0.1
+	species_restricted = list(SPECIES_NECRON)
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	unacidable = 1
+	canremove = 0

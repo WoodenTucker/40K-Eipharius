@@ -296,6 +296,14 @@
 	maxcharge = 10000
 	sales_price = 25
 
+/obj/item/cell/melta
+	name = "Melta fuel flask"
+	desc = "A highly-pressurised pyrum-petrol fuel mix within an sealed canister. Very dangerous. It has prayers of maintenance on it."
+	icon_state = "melta"
+	w_class = ITEM_SIZE_NORMAL
+	maxcharge = 10000
+	sales_price = 25
+
 /obj/item/cell/pulserifle
 	name = "Tau pulse weapon magazine"
 	desc = "A small, portable magazine for various Tau weaponry."

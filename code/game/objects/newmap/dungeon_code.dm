@@ -488,6 +488,37 @@ This file contains most of the code for the dungeons to work, structures, some i
 	icon_state = "dev181"
 	w_class = ITEM_SIZE_HUGE
 	sales_price = 85
+// HORRORS OF THE WARP
+// HORRORS OF THE WARP
+// HORRORS OF THE WARP
+
+
+/obj/structure/hivedecor/flesh
+	name = "flesh"
+	desc = "A very old skull, who knows how long it's been there."
+	icon = 'icons/cadia-sprites/migrated2/things2.dmi'
+	icon_state = "2"
+	density = 0
+
+/obj/structure/hivedecor/kitten
+	name = "kitten"
+	desc = "A very old skull, who knows how long it's been there."
+	icon = 'icons/cadia-sprites/migrated2/things.dmi'
+	icon_state = "kitten"
+	density = 0
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // CONTESTED FORTRESS - A fortress in the east of the planet, under siege from Chaos and the guard trying to retake it.
 
@@ -629,7 +660,7 @@ This file contains most of the code for the dungeons to work, structures, some i
 	item_state = "fharmor"
 	color = "red"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 40, bullet = 55, laser = 60, energy = 30, bomb = 40, bio = 10, rad = 10)
+	armor = list(melee = 12, bullet = 55, laser = 60, energy = 30, bomb = 40, bio = 10, rad = 10)
 	sales_price = 30
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -777,22 +808,6 @@ rav to help me code) will reward the player with thrones, aka escort mission wit
 	max_gas = null
 	minbodytemp = 0
 
-
-/mob/living/simple_animal/hostile/pony/death()
-	var/obj/O
-
-	//shards
-	O = new /obj/effect/decal/cleanable/poo(src.loc)
-	step_to(O, get_turf(pick(view(7, src))))
-	if(prob(75))
-		O = new /obj/effect/decal/cleanable/flour(src.loc)
-		step_to(O, get_turf(pick(view(7, src))))
-	if(prob(50))
-		O = new /obj/effect/decal/cleanable/flour(src.loc)
-		step_to(O, get_turf(pick(view(7, src))))
-	if(prob(25))
-		O = new /obj/effect/decal/cleanable/poo(src.loc)
-		step_to(O, get_turf(pick(view(7, src))))
 
 
 

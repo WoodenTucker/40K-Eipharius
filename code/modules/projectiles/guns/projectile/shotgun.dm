@@ -43,7 +43,6 @@
 	one_hand_penalty = 1.5
 	accuracy = 0.5
 	fire_delay= 3
-	armor_penetration = 12 //melee???
 	sales_price = 5
 
 /obj/item/gun/projectile/shotgun/pump/New()

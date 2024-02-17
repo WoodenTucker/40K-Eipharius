@@ -45,7 +45,7 @@
 	desc = "A pair of durable brown boots. Waterproofed for use planetside."
 	icon_state = "jungle"
 	force = 3
-	armor = list(melee = 10, bullet = 10, laser = 10, energy = 15, bomb = 20, bio = 10, rad = 0)
+	armor = list(melee = 2, bullet = 10, laser = 10, energy = 15, bomb = 20, bio = 10, rad = 0)
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
 
@@ -54,7 +54,7 @@
 	desc = "A pair of durable tan boots. Designed for use in hot climates."
 	icon_state = "desert"
 	force = 3
-	armor = list(melee = 10, bullet = 10, laser = 10, energy = 15, bomb = 20, bio = 10, rad = 0)
+	armor = list(melee = 2, bullet = 10, laser = 10, energy = 15, bomb = 20, bio = 10, rad = 0)
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
 
@@ -62,7 +62,7 @@
 	name = "duty boots"
 	desc = "A pair of steel-toed synthleather boots with a mirror shine."
 	icon_state = "duty"
-	armor = list(melee = 10, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
+	armor = list(melee = 2, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
 
@@ -71,7 +71,7 @@
 	desc = "Tan boots with extra padding and armor."
 	icon_state = "desert"
 	force = 3
-	armor = list(melee = 10, bullet = 30, laser = 40,energy = 25, bomb = 50, bio = 0, rad = 0)
+	armor = list(melee = 2, bullet = 30, laser = 40,energy = 25, bomb = 50, bio = 0, rad = 0)
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
 
@@ -218,7 +218,7 @@
 	icon_state = "ScionBoots"
 	item_state = "ScionBoots"
 	force = 5
-	armor = list(melee = 20, bullet = 20, laser = 20,energy = 25, bomb = 50, bio = 100, rad = 0)
+	armor = list(melee = 10, bullet = 20, laser = 20,energy = 25, bomb = 50, bio = 100, rad = 0)
 	item_flags = ITEM_FLAG_NOSLIP
 	siemens_coefficient = 0.6
 	can_hold_knife = 1
@@ -236,3 +236,16 @@
 	desc = "A smaller version of the jackboots issued to imperium forces."
 	icon_state = "GRCboots"
 	item_state = "GRCboots"
+
+/obj/item/clothing/shoes/necron
+	name = "Necron Feet"
+	desc = "A set of heavy duty necrodermis feet, designed for all terrains."
+	icon_state = null
+	item_state = null
+	item_flags = ITEM_FLAG_NOSLIP
+	siemens_coefficient = 0
+	unacidable = 1
+	canremove = 0
+	armor = list(melee = 25, bullet = 25, laser = 25,energy = 25, bomb = 50, bio = 100, rad = 100)
+	body_parts_covered = FEET
+	species_restricted = list(SPECIES_NECRON)

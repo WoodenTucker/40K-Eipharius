@@ -226,7 +226,7 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
-	armor = list(melee = 15, bullet = 40, laser = 40, energy = 30, bomb = 40, bio = 90, rad = 90) // For skirmish combat, player is fast and can endure shots, but at CQC he's fucked, hit and run is more fitting for the armor user.
+	armor = list(melee = 5, bullet = 40, laser = 40, energy = 30, bomb = 40, bio = 90, rad = 90) // For skirmish combat, player is fast and can endure shots, but at CQC he's fucked, hit and run is more fitting for the armor user.
 	sales_price = 0 // Only 1 in the map
 	weight = 10
 
@@ -238,7 +238,7 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	flags_inv = BLOCKHAIR
-	armor = list(melee = 15, bullet = 40, laser = 40, energy = 30, bomb = 90, rad = 100) // It's to prevent the user being brutally hit on the head and making the armor worthless.
+	armor = list(melee = 5, bullet = 40, laser = 40, energy = 30, bomb = 90, rad = 100) // It's to prevent the user being brutally hit on the head and making the armor worthless.
 	sales_price = 0 // Only 1 in the map
 
 /obj/item/clothing/suit/armor/cerb
@@ -250,7 +250,7 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
-	armor = list(melee = 25, bullet = 46, laser = 46, energy = 30, bomb = 40, bio = 90, rad = 90)
+	armor = list(melee = 10, bullet = 46, laser = 46, energy = 30, bomb = 40, bio = 90, rad = 90)
 	sales_price = 0 // Only 1 in the map
 	weight = 10
 
@@ -262,7 +262,7 @@ NOTE: This dungeon is made to be unforgiving, brutal and merciless, but giving e
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	flags_inv = BLOCKHAIR
-	armor = list(melee = 20, bullet = 46, laser = 46, energy = 30, bomb = 90, rad = 100) // It's to prevent the user being brutally hit on the head and making the armor worthless.
+	armor = list(melee = 10, bullet = 46, laser = 46, energy = 30, bomb = 90, rad = 100) // It's to prevent the user being brutally hit on the head and making the armor worthless.
 	sales_price = 0 // Only 1 in the map
 
 /obj/item/paper/cpt_diary // Lore about the ship's demise, obtained only when the boss dies, as i thought it would be more proper.

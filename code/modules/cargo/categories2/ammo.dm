@@ -1,6 +1,11 @@
 /datum/noble_entry/ammo
 	category = "Ammo"
 
+/datum/noble_entry/ammo/flamer_canister
+	name = "Flamer canister"
+	cost = 40
+	item_path = /obj/item/ammo_magazine/flamer
+
 /datum/noble_entry/ammo/lasmagsmall
 	name = "Inferior Lasgun Power Pack"
 	cost = 4

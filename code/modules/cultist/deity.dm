@@ -143,12 +143,11 @@ Most blessings and curses should be permanent.
 		message_admins("[usr.key] [usr.name] has reached Favor 60 || Strong Cultist")
 	if(favor >= 100 && favor <= 139)
 		message_admins("[usr.key] [usr.name] has reached Favor 100 || Master Cultist")
-		//message_admins("[usr.key] [usr.name] has reached Favor 100 || Master Cultist") //Why are these listed multiple times?
+		message_admins("[usr.key] [usr.name] has reached Favor 100 || Master Cultist") 
 		SEND_SIGNAL(CultMember, COMSIG_CULT_ADD_EFFECT, pick(possible_blessings))
 	if(favor >= 140)
 		message_admins("[usr.key] [usr.name] has reached Favor 140 || Legendary Cultist")
-		//message_admins("[usr.key] [usr.name] has reached Favor 140 || Legendary Cultist")
-		//message_admins("[usr.key] [usr.name] has reached Favor 140 || Legendary Cultist")
+		message_admins("[usr.key] [usr.name] has reached Favor 140 || Legendary Cultist")
 		SEND_SIGNAL(CultMember, COMSIG_CULT_ADD_EFFECT, pick(possible_blessings))
 
 

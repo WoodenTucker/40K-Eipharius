@@ -892,6 +892,22 @@ var/list/floor_decals = list()
 /obj/effect/floor_decal/turf/necro1
 	name = "infestation"
 	icon_state = "necro1"
+
+/obj/effect/floor_decal/turf/necro2
+	name = "infestation"
+	icon = 'icons/map_project/eldritch/Flesh_Ground.dmi'
+	icon_state = "flesh_floor-1"
+
+/obj/effect/floor_decal/turf/necro3
+	name = "infestation"
+	icon = 'icons/map_project/eldritch/Flesh_Ground.dmi'
+	icon_state = "flesh_floor-2"
+
+/obj/effect/floor_decal/turf/necro4
+	name = "infestation"
+	icon = 'icons/map_project/eldritch/Flesh_Ground.dmi'
+	icon_state = "flesh_floor-3"
+
 /*
 /obj/effect/floor_decal/turf/necro2
 	name = "horrific infestation"

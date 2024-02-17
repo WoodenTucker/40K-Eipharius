@@ -29,6 +29,8 @@
 		freq_text = "Charlie"
 	else if(display_freq in INQ_FREQS)
 		freq_text = "Vermillion"
+	else if(display_freq in MAG_FREQ)
+		freq_text = "Magistratum"
 	else if(display_freq in ANTAG_FREQS)
 		freq_text = "#unkn"
 	else
