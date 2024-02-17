@@ -775,7 +775,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 
 /obj/item/device/xenotech/halo_device/proc/possess(mob/user)
 	if(istype(user,/mob/living/carbon/human))
-		var/mob/living/carbon//human/H = user
+		var/mob/living/carbon/human/H = user
 		visible_message("<span class='warning'>The device vibrates then falls still, and begins to sink into [user]'s flesh!")
 		playsound(src, 'sound/items/tourniquet.ogg', 70, FALSE)
 		sleep(100)
