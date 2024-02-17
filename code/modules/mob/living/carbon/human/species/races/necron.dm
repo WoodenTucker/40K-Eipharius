@@ -65,6 +65,7 @@
 	. = ..()
 	set_species(SPECIES_NECRON)
 	warfare_faction = NECRON
+	fully_replace_character_name(random_necron_warrior_name(src.gender))
 	src.rejuvenate()
 
 /mob/living/carbon/human/necron/proc/necronsetup()
