@@ -767,7 +767,6 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	throwforce = 5.0
 	throw_range = 8
 	throw_speed = 3
-	var/possess_stage = 0
 
 
 /obj/item/device/xenotech/halo_device/attack_self(mob/user)
@@ -782,10 +781,11 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	sleep(100)
 	visible_message("<span class='warning'>The device fully merges with [user]'s flesh!")
 	to_chat(H, "<span class='danger'>As the device sinks below your skin, you feel an alien presence brush at the edges of your mind. Was this a wise choice?</span>")
-	user.possess1()
+	H.possess_stage = 1
 	qdel(src)
 
 /mob/living/carbon/human/proc/possess1(var/mob/living/carbon/human/H)
+	H.possess_stage = 0
 	sleep(rand(200,600))
 	H.visible_message("<span class='warning'>You feel your skin shift and ripple, newly formed muscles bulging below the surface!")
 	H.STAT_LEVEL(str) += 4
