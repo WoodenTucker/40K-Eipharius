@@ -1311,8 +1311,13 @@
 	},
 /area/cadiaoutpost/oa/security/armory)
 "eI" = (
-/obj/structure/iv_drip,
-/obj/item/reagent_containers/ivbag/blood/OMinus,
+/obj/structure/closet/crate/freezer,
+/obj/item/organ/internal/lungs,
+/obj/item/organ/internal/liver,
+/obj/item/organ/internal/kidneys,
+/obj/item/organ/internal/heart,
+/obj/item/organ/internal/eyes,
+/obj/item/organ/internal/appendix,
 /obj/effect/floor_decal/newcorner/blue/solid,
 /turf/simulated/floor/ceramic/surgery2,
 /area/cadiaoutpost/oa/security/armory)
@@ -3441,7 +3446,6 @@
 /obj/item/ammo_magazine/a762/ap,
 /obj/item/ammo_magazine/a762/ap,
 /obj/item/cell/plasma,
-/obj/item/ammo_magazine/melta,
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
@@ -6119,6 +6123,9 @@
 "ww" = (
 /obj/machinery/optable,
 /obj/effect/floor_decal/newcorner/blue/solid,
+/obj/structure/sink/kitchen{
+	pixel_y = 32
+	},
 /turf/simulated/floor/ceramic/surgery2,
 /area/cadiaoutpost/oa/villageinside)
 "wz" = (
@@ -8914,6 +8921,9 @@
 "Gl" = (
 /obj/machinery/optable,
 /obj/effect/floor_decal/newcorner/blue/solid,
+/obj/structure/sink/kitchen{
+	pixel_y = 32
+	},
 /turf/simulated/floor/ceramic/surgery2,
 /area/cadiaoutpost/oa/security/armory)
 "Gm" = (
@@ -50874,8 +50884,8 @@ pF
 pF
 pF
 ge
-eI
 zS
+eI
 ge
 Ch
 Tt
@@ -51631,7 +51641,7 @@ UB
 UB
 PN
 GZ
-Lx
+FZ
 FY
 su
 vx

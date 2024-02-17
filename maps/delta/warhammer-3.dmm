@@ -819,6 +819,13 @@
 	},
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/farm)
+"aIb" = (
+/obj/random/trash,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/dirty/tough/lightless,
+/area/cadiaoutpost/new_hive/hive_city)
 "aIn" = (
 /obj/structure/table/rack,
 /obj/item/stack/material/glass/ten,
@@ -1648,6 +1655,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"bsE" = (
+/obj/machinery/light/small{
+	dir = 1;
+	icon_state = "bulb1"
+	},
+/turf/simulated/floor/fancyfloor/oldcobble,
+/area/cadiaoutpost/oa/farm)
 "bsG" = (
 /obj/item/reagent_containers/hypospray/autoinjector/revive{
 	name = "humie medicines"
@@ -7319,6 +7333,12 @@
 	icon_state = "dark1"
 	},
 /area/cadiaoutpost/oa/farm)
+"fxT" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/new_hive/hive_city)
 "fyz" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 8
@@ -8673,6 +8693,14 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security/armory)
+"gtX" = (
+/mob/living/simple_animal/hostile/retaliate/rat,
+/obj/machinery/light/small{
+	dir = 1;
+	icon_state = "bulb1"
+	},
+/turf/simulated/floor/plating/reinforced,
+/area/cadiaoutpost/oa/villageinside/lab/muffled)
 "gum" = (
 /obj/structure/flora/ausbushes/stalkybush,
 /obj/effect/decal/cleanable/dirt,
@@ -8983,6 +9011,13 @@
 	},
 /obj/effect/floor_decal/newcorner/stone/corner,
 /turf/simulated/floor/snow,
+/area/cadiaoutpost/new_hive/hive_city)
+"gFV" = (
+/obj/machinery/light/small{
+	dir = 1;
+	icon_state = "bulb1"
+	},
+/turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/hive_city)
 "gFW" = (
 /obj/effect/floor_decal/newcorner/plating{
@@ -15263,6 +15298,10 @@
 /area/cadiaoutpost/oa/service/chapel)
 "lcN" = (
 /obj/structure/closet,
+/obj/machinery/light/small{
+	dir = 1;
+	icon_state = "bulb1"
+	},
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -15927,6 +15966,7 @@
 	maxhealth = 700
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/floodlight,
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
@@ -17890,6 +17930,7 @@
 	health = 700;
 	maxhealth = 700
 	},
+/obj/machinery/floodlight,
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
@@ -23531,6 +23572,13 @@
 /obj/machinery/door/unpowered/newmap/hab1/room6,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/hab/inside)
+"rbO" = (
+/obj/machinery/light/small{
+	dir = 1;
+	icon_state = "bulb1"
+	},
+/turf/simulated/floor/plating/reinforced,
+/area/cadiaoutpost/oa/villageinside/lab/muffled)
 "rcO" = (
 /obj/effect/floor_decal/newcorner/grass{
 	icon_state = "grass3"
@@ -26261,6 +26309,13 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/villageinside)
+"sYt" = (
+/obj/machinery/light/small,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
+/area/cadiaoutpost/oa/farm)
 "sYu" = (
 /obj/structure/torchwall{
 	dir = 8;
@@ -67006,7 +67061,7 @@ cRJ
 ubs
 ubs
 ubs
-nSI
+jBp
 bwI
 jBp
 bwI
@@ -68265,7 +68320,7 @@ fHh
 jBp
 jBp
 jBp
-ubs
+aGo
 nSI
 cMF
 lWh
@@ -69266,7 +69321,7 @@ jBp
 jBp
 uaE
 jBp
-bwI
+jkV
 bwI
 bwI
 jBp
@@ -69514,10 +69569,10 @@ jBp
 knk
 jBp
 jBp
-bwI
+jkV
 jBp
 jBp
-jBp
+lbe
 ubs
 ubs
 lAC
@@ -70521,7 +70576,7 @@ dvP
 dvP
 hsB
 pON
-pON
+fxT
 hfK
 jBp
 jBp
@@ -72614,7 +72669,7 @@ jBp
 jBp
 jBp
 jBp
-xee
+aGo
 eDb
 jBp
 mKR
@@ -73874,7 +73929,7 @@ bwI
 jBp
 jBp
 jBp
-eDb
+aGo
 eDb
 jBp
 mKR
@@ -76132,9 +76187,9 @@ wgI
 rPa
 wgI
 jBp
-sCi
-bwI
-bwI
+imv
+imv
+imv
 uaE
 cCJ
 huI
@@ -76384,9 +76439,9 @@ wgI
 oDn
 wgI
 jBp
-bwI
-bwI
-uaE
+imv
+aGo
+imv
 uaE
 kdl
 lEv
@@ -76636,10 +76691,10 @@ wgI
 eTh
 wgI
 jBp
-bwI
+imv
+imv
+imv
 uaE
-uaE
-lAu
 oli
 hRq
 vZz
@@ -82463,7 +82518,7 @@ lOQ
 lOQ
 lOQ
 lOQ
-pvL
+bsE
 pvL
 pvL
 pvL
@@ -82720,7 +82775,7 @@ osx
 pvL
 pvL
 pvL
-dVt
+uzb
 dVt
 dVt
 dVt
@@ -82973,16 +83028,16 @@ qXc
 pvL
 pvL
 pvL
-dVt
-dVt
-dVt
-dVt
-dVt
-dVt
-dVt
-dVt
-dVt
-dVt
+pvL
+pvL
+pvL
+pvL
+pvL
+qXc
+pvL
+pvL
+pvL
+pvL
 pvL
 hdh
 aLk
@@ -83191,7 +83246,7 @@ iFU
 iFU
 iFU
 iFU
-iFU
+sVn
 aSt
 eTh
 iFU
@@ -83219,7 +83274,7 @@ fba
 vaW
 lOQ
 lOQ
-pvL
+bsE
 pvL
 pvL
 pvL
@@ -83469,7 +83524,7 @@ iFU
 rrT
 bNH
 eJm
-eJm
+sYt
 lOQ
 pvL
 pvL
@@ -83484,7 +83539,7 @@ env
 qXc
 pvL
 mWN
-pvL
+osx
 pvL
 pvL
 pvL
@@ -83737,7 +83792,7 @@ env
 pvL
 env
 pvL
-pvL
+qXc
 pvL
 pvL
 hdh
@@ -83889,7 +83944,7 @@ ujj
 fSH
 kah
 kah
-qpe
+vsi
 fSH
 vWa
 eAF
@@ -83900,9 +83955,9 @@ hle
 vWa
 wzm
 fSH
+vsi
+fOg
 kah
-kah
-qpe
 fSH
 eTh
 eTh
@@ -83987,10 +84042,10 @@ pvL
 pvL
 pvL
 pvL
-dVt
-dVt
-dVt
-dVt
+pvL
+pvL
+pvL
+pvL
 pvL
 hdh
 aLk
@@ -84139,8 +84194,8 @@ ujj
 ujj
 ujj
 fSH
-qpe
-uPs
+rbO
+hhE
 kah
 ujj
 hle
@@ -84152,9 +84207,9 @@ kah
 hle
 hle
 fSH
-qpe
-uPs
-kah
+gtX
+hhE
+hhE
 fSH
 eTh
 eTh
@@ -84192,10 +84247,10 @@ uaE
 sCi
 bwI
 jBp
-eTh
+fZM
 dJm
 dJm
-sQb
+aIb
 rhr
 dPF
 ctt
@@ -84232,13 +84287,13 @@ pEw
 env
 pvL
 pvL
+uzb
 dVt
-dVt
 pvL
 pvL
 pvL
 pvL
-dVt
+pvL
 dVt
 dVt
 dVt
@@ -84391,8 +84446,8 @@ ujj
 ujj
 ujj
 fSH
-kah
-qpe
+vsi
+hhE
 qpe
 ujj
 hle
@@ -84405,8 +84460,8 @@ hle
 hle
 fSH
 kah
-qpe
-qpe
+vsi
+hhE
 fSH
 sWL
 fSH
@@ -85712,7 +85767,7 @@ vZz
 jXA
 oAk
 iFU
-eTh
+gFV
 eTh
 ivO
 ubs
