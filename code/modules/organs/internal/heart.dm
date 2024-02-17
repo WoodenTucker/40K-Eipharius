@@ -250,6 +250,8 @@
 	sales_price = 300
 
 /obj/item/organ/internal/heart/necron/Process()
+	if(H.bodytemperature >= 250
+		H.bodytemperature -= 15
 	..()
 
-//Not much for it to do, it exists mostly to maintain the Brain
+//Not much for it to do, it exists mostly to maintain the Brain and keep the body cool
