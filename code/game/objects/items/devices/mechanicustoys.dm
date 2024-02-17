@@ -774,17 +774,16 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 
 
 /obj/item/device/xenotech/halo_device/proc/possess(mob/user)
-	if(ishuman(user))
-		var/mob/living/carbon/human/H = user
-	visible_message("<span class='warning'>The device vibrates then falls still, and begins to sink into [user]'s flesh!")
-	playsound(src, 'sound/items/tourniquet.ogg', 70, FALSE)
-	sleep(100)
-	visible_message("<span class='warning'>The device fully merges with [user]'s flesh!")
-	to_chat(H, "<span class='danger'>As the device sinks below your skin, you feel an alien presence brush at the edges of your mind. Was this a wise choice?</span>")
-	user.possess_stage = 1
-	user.nutrition = 120
-	user.bowel = 600
-	qdel(src)
+	if(istype(user,/mob/living/carbon/human))
+		var/mob/living/carbon//human/H = user
+		visible_message("<span class='warning'>The device vibrates then falls still, and begins to sink into [user]'s flesh!")
+		playsound(src, 'sound/items/tourniquet.ogg', 70, FALSE)
+		sleep(100)
+		visible_message("<span class='warning'>The device fully merges with [user]'s flesh!")
+		to_chat(H, "<span class='danger'>As the device sinks below your skin, you feel an alien presence brush at the edges of your mind. Was this a wise choice?</span>")
+		H.possess_stage = 1
+		H.vomit()
+		qdel(src)
 
 /mob/living/carbon/human/proc/possess1(var/mob/living/carbon/human/H)
 	H.possess_stage = 0
