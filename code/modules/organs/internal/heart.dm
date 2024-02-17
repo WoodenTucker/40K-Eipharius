@@ -250,7 +250,7 @@
 	sales_price = 300
 
 /obj/item/organ/internal/heart/necron/Process()
-	if(H.bodytemperature >= 250
+	if(H.bodytemperature >= 250)
 		H.bodytemperature -= 15
 	..()
 
