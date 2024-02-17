@@ -243,7 +243,7 @@
 /obj/item/device/encryptionkey/heads/captain2
 	name = "Governor's encryption key"
 	icon_state = "cap_cypherkey"
-	channels = list("Command" = 1, "Militarum" = 1)
+	channels = list("Vox" = 1, "Command" = 1, "Militarum" = 1, "Magistratum" = 1)
 	syndie = 1
 
 //AI IS FUCKING HERESY
@@ -282,13 +282,13 @@
 /obj/item/device/encryptionkey/heads/hop
 	name = "Steward encryption key"
 	icon_state = "hop_cypherkey"
-	channels = list( "Militarum" = 1, "Command" = 1)
+	channels = list( "Militarum" = 1, "Command" = 1, "Magistratum" = 1)
 	syndie = 1
 
 /obj/item/device/encryptionkey/headset_cargo
 	name = "Magistratum radio encryption key"
 	icon_state = "cargo_cypherkey"
-	channels = list("Vox" = 1, "Militarum" = 1, "Violet" = 1, "Magistratum" = 1)
+	channels = list("Vox" = 1, "Militarum" = 1, "Magistratum" = 1)
 
 //not used rn
 /obj/item/device/encryptionkey/headset_service

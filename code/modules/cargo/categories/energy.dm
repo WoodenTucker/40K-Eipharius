@@ -84,4 +84,4 @@ datum/cargo_entry/energy/accapistol
 /datum/cargo_entry/energy/meltarifle
 	name = "Melta Gun"
 	cost = 560
-	item_path = /obj/item/gun/projectile/meltagun
+	item_path = /obj/item/gun/energy/melta/handheld
