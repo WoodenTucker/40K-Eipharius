@@ -782,6 +782,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	visible_message("<span class='warning'>The device fully merges with [user]'s flesh!")
 	to_chat(H, "<span class='danger'>As the device sinks below your skin, you feel an alien presence brush at the edges of your mind. Was this a wise choice?</span>")
 	H.possess_stage = 1
+	H.vomit()
 	qdel(src)
 
 /mob/living/carbon/human/proc/possess1(var/mob/living/carbon/human/H)
