@@ -21,6 +21,7 @@
 	var/shielded_energy = 0
 	var/shielded_projectile = 0
 	var/shielded_melee = 0
+	var/possess_stage = 0
 
 /mob/living/carbon/human/New(var/new_loc, var/new_species = null)
 
