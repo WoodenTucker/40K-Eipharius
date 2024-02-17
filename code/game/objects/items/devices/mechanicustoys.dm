@@ -745,3 +745,83 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 /obj/item/gun/energy/thallax/lightning/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
 	spawn(1) if(src) qdel(src)
+
+//XENOTECH 
+
+//Putting any weird Xenotech devices here.
+
+/obj/item/device/xenotech
+
+	name = "Xenotech"
+	desc = "If you can see this, something is broken. Ping the Devs, or Magisterium"
+	icon_state = "shield0"
+
+/obj/item/device/xenotech/halo_device
+	name = "Halo Device"
+	desc = "A strange Xenotech object, softly humming"
+	icon_state = "shield0"
+
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	force = 5.0
+	w_class = ITEM_SIZE_SMALL
+	throwforce = 5.0
+	throw_range = 8
+	throw_speed = 3
+	var/possess_stage = 0
+
+
+/obj/item/device/xenotech/halo_device/attack_self(mob/user)
+	possess(user)
+
+
+/obj/item/device/xenotech/halo_device/proc/possess(mob/user)
+	visible_message("<span class='warning'>The device vibrates then falls still, and begins to sink into [user]'s flesh!")
+	playsound(src, 'sound/items/tourniquet.ogg', 70, FALSE)
+	sleep(100)
+	visible_message("<span class='warning'>The device fully merges with [user]'s flesh!")
+	user.set_trait(new/datum/trait/death_tolerant())
+	user.visible_message("<span class='warning'>As the device sinks below your skin, you feel an alien presence brush at the edges of your mind. Was this a wise choice?")
+	possess_stage = 1
+	possess1(user)
+	qdel(src)
+
+/obj/item/device/xenotech/halo_device/proc/possess1(/mob/living/carbon/human/H)
+	sleep(rand(200,600))
+	src.visible_message("<span class='warning'>You feel your skin shift and ripple, newly formed muscles bulging below the surface!")
+	src.STAT_LEVEL(str) += 4
+	sleep(rand(200,600))
+	H.visible_message("<span class='warning'>Your bones shift and grind, your whole body shifting slightly.")
+	H.STAT_LEVEL(end) += 4
+	var/obj/aura/regenerating/human/A = new(H)
+	sleep(rand(200,600))
+	H.visible_message("<span class='warning'>Your bones shift and grind, your whole body shifting slightly.")
+	H.STAT_LEVEL(dex) += 4
+	sleep(rand(200,600))
+	H.visible_message("<span class='warning'>Your bones shift and grind, your whole body shifting slightly.")
+	H.STAT_LEVEL(int) += 4
+	sleep(rand(200,600))
+	H.set_trait(new/datum/trait/hypersensitive())
+	H.visible_message("<span class='warning'>Once again, an alien presence brushes the edge of your mind. You feel... empty, as normal pleasures no longer satiate your appetites.")
+	H.vice = "Glutton"
+	sleep(rand(1800,5000))
+	H.possess_stage = 2
+	H.possess2
+
+/obj/item/device/xenotech/halo_device/proc/possess2()
+	H.visible_message("<span class='warning'>You can feel your CARAPACE; no, skin, begin to harden and clump strangely.")
+	H.STAT_LEVEL(end) += 4
+	H.species.brute_mod = 0.85
+	H.species.burn_mod = 0.85
+	sleep(rand(400,1200))
+	H.visible_message("<span class='warning'>Your body grows ever more strange, limbs twisting and bending in ways they should not be able to.")
+	var/obj/aura/regenerating/human/nid/A = new(H)
+	H.species.slowdown = -0.5
+	sleep(rand(400,1200))
+	H.visible_message("<span class='warning'>IT'S NOT ENOUGH. NOTHING IS ENOUGH.")
+	sleep(rand(100,300))
+	H.visible_message("<span class='warning'>Again, the alien presence brushes against your mind. You sense a comradeship, a similarity between you. Are you even human any more?")
+	sleep(rand(100,300))
+	H.visible_message("<span class='warning'>No. You are something more, now. Humans are but prey, to feast upon. EAT OF THEIR FLESH. BECOME GREATER STILL.")
+	H.STAT_LEVEL(str) += 6
+	H.STAT_LEVEL(dex) += 4
+	H.STAT_LEVEL(int) += 4
