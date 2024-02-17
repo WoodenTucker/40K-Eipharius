@@ -37,4 +37,4 @@
 	suit = /obj/item/clothing/suit/armor/necron
 	head = /obj/item/clothing/head/helmet/necron
 	shoes = /obj/item/clothing/shoes/necron
-	back = /obj/item/storage/backpack/satchel/necron
+	back = /obj/item/storage/backpack/satchel/warfare/necron
