@@ -787,7 +787,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	possess1(user)
 	qdel(src)
 
-/obj/item/device/xenotech/halo_device/proc/possess1(/mob/living/carbon/human/H)
+/obj/item/device/xenotech/halo_device/proc/possess1(var/mob/living/carbon/human/H)
 	sleep(rand(200,600))
 	H.visible_message("<span class='warning'>You feel your skin shift and ripple, newly formed muscles bulging below the surface!")
 	H.STAT_LEVEL(str) += 4
@@ -809,7 +809,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	H.possess_stage = 2
 	H.possess2
 
-/obj/item/device/xenotech/halo_device/proc/possess2()
+/obj/item/device/xenotech/halo_device/proc/possess2(var/mob/living/carbon/human/H))
 	H.visible_message("<span class='warning'>You can feel your CARAPACE; no, skin, begin to harden and clump strangely.")
 	H.STAT_LEVEL(end) += 4
 	H.species.brute_mod = 0.85
