@@ -774,7 +774,6 @@
 	item_state = null
 	unacidable = 1
 	canremove = 0
-	species_restricted = list(SPECIES_NECRON)
 	var/can_toggle = 1
 
 /obj/item/storage/backpack/satchel/warfare/necron/verb/togglegaussgun()

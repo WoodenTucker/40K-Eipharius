@@ -369,7 +369,7 @@
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	belt = /obj/item/gun/projectile/marshal/gavel
+	belt = /obj/item/gun/projectile/revolver/marshal/gavel
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	r_pocket = /obj/item/storage/box/coin
 	pda_slot = null

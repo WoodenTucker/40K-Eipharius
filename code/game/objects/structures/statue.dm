@@ -505,3 +505,33 @@
 	desc = "Some kind of recycling maching"
 	icon = 'icons/map_project/furniture_and_decor.dmi'
 	icon_state = "recycler"
+
+/obj/structure/hivedecor/watertreatment
+	name = "water treatement equipment"
+	desc = "Uh oh! Stinky!"
+	icon = 'icons/obj/32x64.dmi'
+	icon_state = "water"
+
+/obj/structure/hivedecor/watertreatment2
+	name = "water treatement equipment"
+	desc = "Uh oh! Stinky!"
+	icon = 'icons/obj/32x64.dmi'
+	icon_state = "dity"
+
+/obj/structure/hivedecor/watertreatment3
+	name = "water treatement equipment"
+	desc = "Uh oh! Stinky!"
+	icon = 'icons/obj/32x64.dmi'
+	icon_state = "empty"
+
+/obj/structure/hivedecor/watertreatment5
+	name = "water treatement equipment"
+	desc = "Uh oh! Stinky!"
+	icon = 'icons/obj/96x96.dmi'
+	icon_state = "filtration2"
+
+/obj/structure/hivedecor/watertreatment6
+	name = "water treatement equipment"
+	desc = "Uh oh! Stinky!"
+	icon = 'icons/obj/96x96.dmi'
+	icon_state = "disinfection"

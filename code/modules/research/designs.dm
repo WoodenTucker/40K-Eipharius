@@ -2080,7 +2080,7 @@ Mechanicus can't take off their armor at the moment (Only bondsman can so no poi
 	id = "melta"
 	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 4, TECH_POWER = 7, TECH_COMBAT = 5, TECH_PHORON = 5)
 	materials = list(DEFAULT_WALL_MATERIAL = 4000, "glass" = 4000, "diamond" = 10000, "phoron" = 8000)
-	build_path = /obj/item/gun/projectile/meltagun
+	build_path = /obj/item/gun/energy/melta/handheld
 	sort_string = "ZAAD"
 
 /datum/design/item/villiers
@@ -2765,11 +2765,11 @@ Mechanicus can't take off their armor at the moment (Only bondsman can so no poi
 	sort_string = "ZVBD"
 
 /datum/design/item/meltapack
-	name = "Melta Pack"
+	name = "Melta Canister"
 	id = "meltap"
 	req_tech = list(TECH_PHORON = 4, TECH_ENGINEERING = 4, TECH_POWER = 4, TECH_PHORON = 4)
 	materials = list(DEFAULT_WALL_MATERIAL = 1200, "diamond" = 800, "phoron" = 4000)
-	build_path = /obj/item/ammo_magazine/melta
+	build_path = /obj/item/cell/melta
 	sort_string = "ZVBE"
 
 /datum/design/item/magboltp

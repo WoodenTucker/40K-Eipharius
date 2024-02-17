@@ -210,10 +210,10 @@
 	ks1type = /obj/item/device/encryptionkey/red
 	ks2type = /obj/item/device/encryptionkey/heads/cmo
 
-//Steward vox
+//Steward vox //Heir/Servant Vox apparently
 /obj/item/device/radio/headset/heads/hop
 	name = "Steward vox"
-	desc = "The headset of the right hand of the Rogue Trader."
+	desc = "The headset of the ruling nobles of Messina, House de Burgen."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/red
@@ -524,7 +524,7 @@
 	desc = "A command-level vox with high tiers of encryption."
 	icon_state = "com_headset"
 	item_state = "headset"
-	ks2type = /obj/item/device/encryptionkey/red
+	ks2type = null
 	ks1type = /obj/item/device/encryptionkey/heads/captain2
 	slot_flags = SLOT_EARS
 	w_class = ITEM_SIZE_SMALL

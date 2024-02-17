@@ -316,3 +316,112 @@
 			src.thirst = INFINITY
 			src.nutrition = INFINITY 
 			src.verbs -= /mob/living/carbon/human/officer/proc/setupstartofficer //removes verb at the end so they can't spam it for whatever reason
+
+/datum/species/human/halo
+	name = SPECIES_HALO
+	name_plural = "Halo Star Entities"
+	primitive_form = SPECIES_HUMAN
+	icobase = 'icons/mob/human_races/r_halo_star_entity.dmi'
+	brute_mod =      0.6                    // 60% brute damage
+	burn_mod =       0.6                  //  60% burn damage
+	unarmed_types = list(
+		/datum/unarmed_attack/stomp,
+		/datum/unarmed_attack/rendingclaws
+		)
+	blurb = "A hideous alien monster."
+	min_age = 18
+	max_age = 350
+	blood_volume = 450
+	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED
+	slowdown = -0.6 //Incredibly fast.
+
+	has_organ = list(
+		BP_EYES =     /obj/item/organ/internal/eyes/nabber,
+		BP_HEART =    /obj/item/organ/internal/heart/nabber,
+		BP_BRAIN =    /obj/item/organ/internal/brain/nabber,
+		BP_LUNGS =   /obj/item/organ/internal/lungs/nabber,
+		BP_LIVER =     /obj/item/organ/internal/liver/nabber
+		)
+
+/obj/item/organ/external/chest/halo
+	name = "thorax"
+	arterial_bleed_severity = 0
+	dislocated = -1
+	cannot_amputate = 1
+
+/obj/item/organ/external/groin/halo
+	name = "abdomen"
+	icon_position = UNDER
+	arterial_bleed_severity = 0
+	dislocated = -1
+	cannot_amputate = 1
+
+/obj/item/organ/external/arm/halo
+	name = "left arm"
+	amputation_point = "coxa"
+	icon_position = LEFT
+	arterial_bleed_severity = 0
+	dislocated = -1
+	cannot_amputate = 1
+
+/obj/item/organ/external/arm/right/halo
+	name = "right arm"
+	amputation_point = "coxa"
+	icon_position = RIGHT
+	arterial_bleed_severity = 0
+	dislocated = -1
+	cannot_amputate = 1
+
+/obj/item/organ/external/leg/halo
+	name = "left leg"
+	icon_position = LEFT
+	arterial_bleed_severity = 0
+	dislocated = -1
+	cannot_amputate = 1
+
+/obj/item/organ/external/leg/right/halo
+	name = "right leg"
+	arterial_bleed_severity = 0
+	dislocated = -1
+	cannot_amputate = 1
+
+/obj/item/organ/external/foot/halo
+	name = "left foot"
+	icon_position = LEFT
+	arterial_bleed_severity = 0
+	dislocated = -1
+	cannot_amputate = 1
+
+/obj/item/organ/external/foot/right/halo
+	name = "right foot"
+	icon_position = RIGHT
+	arterial_bleed_severity = 0
+	dislocated = -1
+	cannot_amputate = 1
+
+/obj/item/organ/external/hand/halo
+	name = "left grasper"
+	icon_position = LEFT
+	arterial_bleed_severity = 0
+	dislocated = -1
+	cannot_amputate = 1
+
+/obj/item/organ/external/hand/right/halo
+	name = "right grasper"
+	icon_position = RIGHT
+	arterial_bleed_severity = 0
+	dislocated = -1
+	cannot_amputate = 1
+
+/obj/item/organ/external/head/halo
+	name = "head"
+	vital = 0
+	has_lips = 0
+	arterial_bleed_severity = 0
+	dislocated = -1
+	cannot_amputate = 1
+
+/mob/living/carbon/human/halo/Initialize()
+	. = ..()
+	set_species("Halo Star Entity")
+	warfare_faction = IMPERIUM
