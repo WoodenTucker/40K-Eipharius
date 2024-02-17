@@ -619,7 +619,7 @@
 
 /obj/item/clothing/head/helmet/deathmark
 	name = "Deathmark Head"
-	desc = "The eerie necrodermis skull of a Necron Warrior."
+	desc = "The eerie necrodermis skull of a Deathmark Assasain."
 	icon_state = null
 	item_state = "Deathmark"
 	armor = list(melee = 12, bullet = 40, laser = 40, energy = 44, bomb = 30, bio = 100, rad = 10)
