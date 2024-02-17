@@ -787,8 +787,8 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 
 /obj/item/device/xenotech/halo_device/proc/possess1(/mob/living/carbon/human/H)
 	sleep(rand(200,600))
-	src.visible_message("<span class='warning'>You feel your skin shift and ripple, newly formed muscles bulging below the surface!")
-	src.STAT_LEVEL(str) += 4
+	H.visible_message("<span class='warning'>You feel your skin shift and ripple, newly formed muscles bulging below the surface!")
+	H.STAT_LEVEL(str) += 4
 	sleep(rand(200,600))
 	H.visible_message("<span class='warning'>Your bones shift and grind, your whole body shifting slightly.")
 	H.STAT_LEVEL(end) += 4
