@@ -421,7 +421,7 @@
 	dislocated = -1
 	cannot_amputate = 1
 
-/datum/species/human/halo/Initialize()
+/mob/living/carbon/human/halo/Initialize()
 	. = ..()
 	set_species("Halo Star Entity")
 	warfare_faction = IMPERIUM
