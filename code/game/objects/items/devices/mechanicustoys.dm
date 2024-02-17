@@ -781,12 +781,11 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	playsound(src, 'sound/items/tourniquet.ogg', 70, FALSE)
 	sleep(100)
 	visible_message("<span class='warning'>The device fully merges with [user]'s flesh!")
-	H.set_trait(new/datum/trait/death_tolerant())
 	to_chat(H, "<span class='danger'>As the device sinks below your skin, you feel an alien presence brush at the edges of your mind. Was this a wise choice?</span>")
-	H.possess1()
+	user.possess1()
 	qdel(src)
 
-/obj/item/device/xenotech/halo_device/proc/possess1(var/mob/living/carbon/human/H)
+/mob/living/carbon/human/proc/possess1(var/mob/living/carbon/human/H)
 	sleep(rand(200,600))
 	H.visible_message("<span class='warning'>You feel your skin shift and ripple, newly formed muscles bulging below the surface!")
 	H.STAT_LEVEL(str) += 4
@@ -800,14 +799,14 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	to_chat(H, "<span class='danger'>Your bones shift and grind, your whole body shifting slightly.</span>")
 	H.STAT_LEVEL(int) += 4
 	sleep(rand(200,600))
-	H.set_quirk(new/datum/quirk/hypersensitive())
 	H.set_trait(new/datum/trait/death_tolerant())
+	H.set_quirk(new/datum/quirk/hypersensitive())
 	to_chat(H, "<span class='danger'>Once again, an alien presence brushes the edge of your mind. You feel... empty, as normal pleasures no longer satiate your appetites.</span>")
 	H.vice = "Glutton"
 	sleep(rand(1800,5000))
 	H.possess2()
 
-/obj/item/device/xenotech/halo_device/proc/possess2(var/mob/living/carbon/human/H)
+/mob/living/carbon/human/proc/possess2(var/mob/living/carbon/human/H)
 	to_chat(H, "<span class='danger'>You can feel your CARAPACE; no, skin, begin to harden and clump strangely.</span>")
 	H.STAT_LEVEL(end) += 4
 	H.species.brute_mod = 0.85
