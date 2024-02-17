@@ -177,7 +177,7 @@
 	fire_delay= 2.8
 	one_hand_penalty = 1
 	ammo_type = /obj/item/ammo_casing/shotgun
-	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
+	chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
 	unload_sound 	= 'sound/weapons/guns/interact/rev_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
