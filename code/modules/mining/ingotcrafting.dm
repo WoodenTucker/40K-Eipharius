@@ -631,7 +631,7 @@
 			visible_message("Use your auto-chisel first!")
 			return
 		if(src.rubtheoils == 1)
-			visible_message("It's been carved! Use your holy oils!")
+			visible_message("It's been carved! The Mechanicus must bless it!")
 			return
 
 		switch(whatwemaking)
@@ -693,7 +693,7 @@
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 
 
-	if(isHolyoils(W)||isLube(W))
+	if(isHolyoils(W))
 		if(rubtheoils == 0)
 			visible_message("Use your laser cutter first!")
 			return
@@ -778,7 +778,7 @@
 			visible_message("Use your auto-chisel first!")
 			return
 		if(src.rubtheoils == 1)
-			visible_message("It's been carved! Use your holy oils!")
+			visible_message("It's been carved! The Mechanicus must bless it!")
 			return
 
 		switch(whatwemaking)
