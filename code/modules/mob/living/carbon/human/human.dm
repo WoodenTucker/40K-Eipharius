@@ -738,8 +738,6 @@
 	set waitfor = 0
 	if(!check_has_mouth() || isSynthetic() || !timevomit || !level)
 		return
-	if(possess_stage = 1)
-		src.possess1()
 	level = Clamp(level, 1, 3)
 	timevomit = Clamp(timevomit, 1, 10)
 	if(stat == DEAD)
