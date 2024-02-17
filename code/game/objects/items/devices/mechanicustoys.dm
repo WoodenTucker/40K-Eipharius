@@ -819,7 +819,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	sleep(rand(400,1200))
 	H.visible_message("<span class='warning'>IT'S NOT ENOUGH. NOTHING IS ENOUGH.")
 	sleep(rand(100,300))
-	to_chat(H, "<span class='danger'>Again, the alien presence brushes against your mind. You sense a comradeship, a similarity between you. Are you even human any more?"</span>")
+	to_chat(H, "<span class='danger'>Again, the alien presence brushes against your mind. You sense a comradeship, a similarity between you. Are you even human any more?</span>")
 	sleep(rand(100,300))
 	to_chat(H, "<span class='danger'>No. You are something more, now. Humans are but prey, to feast upon. EAT OF THEIR FLESH. BECOME GREATER STILL.</span>")
 	H.STAT_LEVEL(str) += 6
