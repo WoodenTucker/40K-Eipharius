@@ -285,6 +285,12 @@ Astartes
 			src.gender = MALE
 			src.f_style = "shaved"
 			src.h_style = "Bald"
+			src.r_skin = 220
+			src.g_skin = 220
+			src.b_skin = 220
+			src.r_eyes = 220
+			src.g_eyes = 0
+			src.b_eyes = 0
 			src.bladder = -INFINITY
 			src.bowels = -INFINITY //integrated shitter
 			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
