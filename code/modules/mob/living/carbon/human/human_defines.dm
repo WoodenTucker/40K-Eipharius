@@ -132,4 +132,3 @@
 	var/viceneed = 0 //tracks vice need amount
 	var/time_alive = 0 //for tracking played time
 	var/messageTimer = 0 //species based regen in life
-	var/possess_stage = 0 //Stage of possession, for Halo Devices
