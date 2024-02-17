@@ -63,6 +63,7 @@
 
 /mob/living/carbon/human/necron/Initialize()
 	. = ..()
+	set_species(SPECIES_NECRON)
 	warfare_faction = NECRON
 	src.rejuvenate()
 
