@@ -130,6 +130,7 @@ Astartes
 			src.r_eyes = 250
 			src.g_eyes = 0
 			src.b_eyes = 0
+			src.rejuvenate()
 			src.verbs += /mob/living/carbon/human/astartes/proc/astartesequips
 			client?.color = null
 
