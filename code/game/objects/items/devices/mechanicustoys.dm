@@ -782,7 +782,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	sleep(100)
 	visible_message("<span class='warning'>The device fully merges with [user]'s flesh!")
 	H.set_trait(new/datum/trait/death_tolerant())
-	H.visible_message("<span class='warning'>As the device sinks below your skin, you feel an alien presence brush at the edges of your mind. Was this a wise choice?")
+	to_chat(H, "<span class='danger'>As the device sinks below your skin, you feel an alien presence brush at the edges of your mind. Was this a wise choice?</span>")
 	H.possess1()
 	qdel(src)
 
@@ -791,37 +791,37 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	H.visible_message("<span class='warning'>You feel your skin shift and ripple, newly formed muscles bulging below the surface!")
 	H.STAT_LEVEL(str) += 4
 	sleep(rand(200,600))
-	H.visible_message("<span class='warning'>Your bones shift and grind, your whole body shifting slightly.")
+	to_chat(H, "<span class='danger'>Your bones shift and grind, your whole body shifting slightly.</span>")
 	H.STAT_LEVEL(end) += 4
-	var/obj/aura/regenerating/human/A = new(H)
 	sleep(rand(200,600))
-	H.visible_message("<span class='warning'>Your bones shift and grind, your whole body shifting slightly.")
+	to_chat(H, "<span class='danger'>Your bones shift and grind, your whole body shifting slightly.</span>")
 	H.STAT_LEVEL(dex) += 4
 	sleep(rand(200,600))
-	H.visible_message("<span class='warning'>Your bones shift and grind, your whole body shifting slightly.")
+	to_chat(H, "<span class='danger'>Your bones shift and grind, your whole body shifting slightly.</span>")
 	H.STAT_LEVEL(int) += 4
 	sleep(rand(200,600))
-	H.set_trait(new/datum/trait/hypersensitive())
-	H.visible_message("<span class='warning'>Once again, an alien presence brushes the edge of your mind. You feel... empty, as normal pleasures no longer satiate your appetites.")
+	H.set_quirk(new/datum/quirk/hypersensitive())
+	H.set_trait(new/datum/trait/death_tolerant())
+	to_chat(H, "<span class='danger'>Once again, an alien presence brushes the edge of your mind. You feel... empty, as normal pleasures no longer satiate your appetites.</span>")
 	H.vice = "Glutton"
 	sleep(rand(1800,5000))
 	H.possess2()
 
 /obj/item/device/xenotech/halo_device/proc/possess2(var/mob/living/carbon/human/H)
-	H.visible_message("<span class='warning'>You can feel your CARAPACE; no, skin, begin to harden and clump strangely.")
+	to_chat(H, "<span class='danger'>You can feel your CARAPACE; no, skin, begin to harden and clump strangely.</span>")
 	H.STAT_LEVEL(end) += 4
 	H.species.brute_mod = 0.85
 	H.species.burn_mod = 0.85
 	sleep(rand(400,1200))
-	H.visible_message("<span class='warning'>Your body grows ever more strange, limbs twisting and bending in ways they should not be able to.")
+	to_chat(H, "<span class='danger'>Your body grows ever more strange, limbs twisting and bending in ways they should not be able to.</span>")
 	var/obj/aura/regenerating/human/nid/A = new(H)
 	H.species.slowdown = -0.5
 	sleep(rand(400,1200))
 	H.visible_message("<span class='warning'>IT'S NOT ENOUGH. NOTHING IS ENOUGH.")
 	sleep(rand(100,300))
-	H.visible_message("<span class='warning'>Again, the alien presence brushes against your mind. You sense a comradeship, a similarity between you. Are you even human any more?")
+	to_chat(H, "<span class='danger'>Again, the alien presence brushes against your mind. You sense a comradeship, a similarity between you. Are you even human any more?")</span>")
 	sleep(rand(100,300))
-	H.visible_message("<span class='warning'>No. You are something more, now. Humans are but prey, to feast upon. EAT OF THEIR FLESH. BECOME GREATER STILL.")
+	to_chat(H, "<span class='danger'>No. You are something more, now. Humans are but prey, to feast upon. EAT OF THEIR FLESH. BECOME GREATER STILL.</span>")
 	H.STAT_LEVEL(str) += 6
 	H.STAT_LEVEL(dex) += 4
 	H.STAT_LEVEL(int) += 4
