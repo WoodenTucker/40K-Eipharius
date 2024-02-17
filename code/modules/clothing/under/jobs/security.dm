@@ -254,8 +254,8 @@
 	name = "Necrodermis Skin"
 	desc = "A thin layer of Necrodermis making up the skin of a Necron."
 	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 100, rad = 100)
-	icon_state = null
-	worn_state = null
+	icon_state = "golem"
+	worn_state = "golem"
 	siemens_coefficient = 0.1
 	species_restricted = list(SPECIES_NECRON)
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
