@@ -825,3 +825,4 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	H.STAT_LEVEL(str) += 6
 	H.STAT_LEVEL(dex) += 4
 	H.STAT_LEVEL(int) += 4
+	H.set_species(SPECIES_HALO)//Actually makes them a child.
