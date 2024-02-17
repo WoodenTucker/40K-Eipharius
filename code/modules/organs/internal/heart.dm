@@ -251,7 +251,7 @@
 
 /obj/item/organ/internal/heart/necron/Process()
 	if(owner.bodytemperature >= 250)
-		owner.bodytemperature -= 15
+		owner.bodytemperature = 250
 	..()
 
 //Not much for it to do, it exists mostly to maintain the Brain and keep the body cool
