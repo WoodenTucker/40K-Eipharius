@@ -775,12 +775,14 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 
 
 /obj/item/device/xenotech/halo_device/proc/possess(mob/user)
+	if(ishuman(user))
+		var/mob/living/carbon/human/H = user
 	visible_message("<span class='warning'>The device vibrates then falls still, and begins to sink into [user]'s flesh!")
 	playsound(src, 'sound/items/tourniquet.ogg', 70, FALSE)
 	sleep(100)
 	visible_message("<span class='warning'>The device fully merges with [user]'s flesh!")
-	user.set_trait(new/datum/trait/death_tolerant())
-	user.visible_message("<span class='warning'>As the device sinks below your skin, you feel an alien presence brush at the edges of your mind. Was this a wise choice?")
+	H.set_trait(new/datum/trait/death_tolerant())
+	H.visible_message("<span class='warning'>As the device sinks below your skin, you feel an alien presence brush at the edges of your mind. Was this a wise choice?")
 	possess_stage = 1
 	possess1(user)
 	qdel(src)
