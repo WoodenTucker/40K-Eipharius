@@ -172,7 +172,7 @@
 /obj/item/gun/energy/las/laspistol/digit/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
 	spawn(1) if(src) qdel(src)
-	
+
 /obj/item/clothing/ring/PowerBlade
 	name = "Ring"
 	desc = "A silver ring with a cutten emerald on it."
@@ -190,7 +190,7 @@
 	else
 		to_chat(usr,"Your ring suddenly extends a small pointed iron stick, which suddenly begins glowing in blazing green energy!")
 		usr.put_in_hands(new /obj/item/material/sword/PowerBlade(usr))
-		
+
 /obj/item/material/sword/PowerBlade
 	name = "Power Blade"
 	desc = "A weird glowing stick of green energy!"
@@ -206,7 +206,7 @@
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 
 // omnissiah, delete this mfer!
-/obj/item/material/sword/PowerBlade/dropped() 
+/obj/item/material/sword/PowerBlade/dropped()
 	..()
 	spawn(1) if(src) qdel(src)
 
@@ -229,3 +229,17 @@
 	else
 		to_chat(usr,"Your ring suddenly gets open and prepares to open fire on the enemy-- then, suddenly, a british lollipop jumps out of the ring")
 		usr.put_in_hands(new /obj/item/reagent_containers/food/snacks/variable/sucker(usr))
+
+
+/obj/item/clothing/ring/halodevice
+	//doing this shit dead-space style, only real option for killing the user is burning or full delimbing which even then might not last
+	name = "Strange Ring"
+	desc = "Artifaci Xenos Horrificus, possesion or knowlege of this item is grounds for entire houses to be purged by the Ordos Xenos of the Inquisition"
+	icon_state = "mariner-grad"
+	canremove = FALSE
+	var/can_toggle = 1
+	var/obj/aura/regenerating/human/halo/bond
+
+/obj/item/clothing/ring/halodevice/attack_self(var/mob/living/user)
+	bond = new(user,src)
+	user.equip_to_slot_or_del(/obj/item/clothing/ring/halodevice, slot_gloves)
