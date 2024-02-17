@@ -163,7 +163,7 @@
 	accuracy = 1.2
 	fire_delay= 2.4
 
-/obj/item/gun/projectile/marshal/gavel
+/obj/item/gun/projectile/revolver/marshal/gavel
 	name = "Gavel of authority"
 	desc = "The personal custom lawbringer of the Planetary Marshal. Chambered in shotgun shells, it will enforce the laws with the force necessary." 
 	icon_state = "mrevolver"
