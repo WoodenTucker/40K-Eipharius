@@ -314,6 +314,16 @@
 /obj/item/ammo_magazine/flamer/attack_self(mob/user) //Don't empty ur ammo
 	return
 
+/obj/item/ammo_magazine/flamer/salamander
+	name = "promethium fuel tank"
+	desc = "Put it in your flamer and roast those you don't like."
+	icon_state = "flamer"
+	caliber = "flamersally"
+	mag_type = MAGAZINE
+	ammo_type = /obj/item/ammo_casing/flamer/salamander
+	max_ammo = 30
+	multiple_sprites = FALSE
+
 /obj/item/ammo_magazine/bolt_pistol_magazine
 	name = "Boltpistol Magazine"
 	icon_state = "boltyp"

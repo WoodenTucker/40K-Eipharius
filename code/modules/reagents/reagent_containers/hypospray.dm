@@ -234,9 +234,9 @@
 	name = "Biomend Injector"
 	desc = "A highly advanced injector used by the Adeptus Astartes in battle. Contains a healing mix, painkillers, and nanoblood to ensure survival in the harshest of conditions."
 	icon_state = "borghypo"
-	starts_with = list(/datum/reagent/bicaridine = 15, /datum/reagent/dermaline = 10, /datum/reagent/tramadol/oxycodone = 15, /datum/reagent/nanoblood = 200, /datum/reagent/bloodclot = 10)
-	amount_per_transfer_from_this = 250
-	volume = 250
+	starts_with = list(/datum/reagent/mendroxine = 30, /datum/reagent/tramadol/oxycodone = 15, /datum/reagent/nanoblood = 200)
+	amount_per_transfer_from_this = 245
+	volume = 255
 	inject_sound = 'sound/items/syrette_inject.ogg'
 	w_class = ITEM_SIZE_TINY
 

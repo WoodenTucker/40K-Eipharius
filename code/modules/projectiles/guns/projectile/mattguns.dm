@@ -440,8 +440,16 @@
 	name = "Mark VII Salamander Assault Flamer"
 	desc = "An incredibly dangerous hand-held flamethrower. Used by the Salamanders. More elegant and far more potent than the standard Flamer"
 	str_requirement = 24
+	automatic = 1
 	fire_delay = 12
 	caliber = "flamersally"
+	magazine_type = /obj/item/ammo_magazine/flamer/salamander
+	allowed_magazines = /obj/item/ammo_magazine/flamer/salamander
+	burst=1
+	firemodes = list(
+		list(mode_name="semi-automatic", burst=1, fire_delay=1.6, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=4.5, burst_accuracy=list(0.5,-1,-1), dispersion=null, automatic = 0),
+		)
 
 /*
 /obj/item/gun/projectile/automatic/flamer/pistol

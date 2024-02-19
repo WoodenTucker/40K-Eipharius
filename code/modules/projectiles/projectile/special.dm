@@ -143,7 +143,7 @@
 /obj/item/projectile/flamer/salamander
 	name = "fire"
 	icon_state = "flame"
-	damage = 22
+	damage = 30
 	armor_penetration = 35
 	range =  5//Very short range.
 	damage_type = BURN
