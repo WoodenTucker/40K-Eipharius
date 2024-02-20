@@ -36,7 +36,7 @@ meteor_act
 		src.visible_message("<span class='warning'>\The [P] shatters against \the [src]'s field.</span>")
 		del(P)
 	if((src.can_bullet_dodge >= 1) && (prob(bullet_dodge_probability)))
-		PROJECTILE_FORCE_MISS //if they don't have the organ in question then the projectile just passes by.
+		return PROJECTILE_FORCE_MISS
 	//Shields
 	var/shield_check = check_shields(P.damage, P, null, def_zone, "the [P.name]")
 	if(shield_check)
