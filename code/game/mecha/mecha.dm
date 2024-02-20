@@ -38,6 +38,10 @@
 	var/rhit_power_use = 0
 	var/mhit_power_use = 0
 	var/exitable = 1 // 1 for yes, 0 for no
+	var/bullet_armour = 0
+	var/energy_armour = 0
+	var/laser_armour = 0
+	var/melee_armour = 0
 
 	//the values in this list show how much damage will pass through, not how much will be absorbed.
 	var/list/damage_absorption = list("brute"=0.7,"fire"=1.2,"bullet"=0.9,"laser"=0.8,"energy"=1,"bomb"=0.9)
