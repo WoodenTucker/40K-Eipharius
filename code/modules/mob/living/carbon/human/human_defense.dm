@@ -33,8 +33,11 @@ meteor_act
 		spark_system.start()
 		playsound(src.loc, "sparks", 50, 1)
 		START_PROCESSING(SSobj, src)
-		src.visible_message("<span class='warning'>\The [P] shatters against \the [user]'s field.</span>")
+		src.visible_message("<span class='warning'>\The [P] shatters against \the [src]'s field.</span>")
 		del(P)
+	if(src.can_bullet_dodge >= 1)
+		if(prob(bullet_dodge_probability)
+			PROJECTILE_FORCE_MISS //if they don't have the organ in question then the projectile just passes by.
 	//Shields
 	var/shield_check = check_shields(P.damage, P, null, def_zone, "the [P.name]")
 	if(shield_check)
