@@ -267,28 +267,28 @@
 
 /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult1
 	name = "Animal Mask"
-	desc = "A hood with a mask resemling a beaked creature"
+	desc = "A hood with a mask resemling a beaked creature. It is stuffed internally with crude runes and markings, alongside odd symbolisms. You feel a sense of being watched being near it."
 	icon_state = "tzeecult1"
 	item_state = "tzeecult1"
 	armor = list(melee = 10, bullet = 33, laser = 33, energy = 35, bomb = 35, bio = 50, rad = 50)
 
 /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult2
 	name = "Animal Mask"
-	desc = "A hood with a mask resemling a beaked creature"
+	desc = "A hood with a mask resemling a beaked creature. It is stuffed internally with crude runes and markings, alongside odd symbolisms. You feel a sense of being watched being near it."
 	icon_state = "tzeecult2"
 	item_state = "tzeecult2"
 	armor = list(melee = 10, bullet = 33, laser = 33, energy = 35, bomb = 35, bio = 50, rad = 50)
 
 /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult3
 	name = "Animal Mask"
-	desc = "A hood with a mask resemling a beaked creature"
+	desc = "A hood with a mask resemling a beaked creature. It is stuffed internally with crude runes and markings, alongside odd symbolisms. You feel a sense of being watched being near it."
 	icon_state = "tzeecult3"
 	item_state = "tzeecult3"
 	armor = list(melee = 10, bullet = 33, laser = 33, energy = 35, bomb = 35, bio = 50, rad = 50)
 
 /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/tzeecult4
 	name = "Animal Mask"
-	desc = "A hood with a mask resemling a beaked creature"
+	desc = "A hood with a mask resemling a beaked creature. It is stuffed internally with crude runes and markings, alongside odd symbolisms. You feel a sense of being watched being near it."
 	icon_state = "tzeecult4"
 	item_state = "tzeecult4"
 	armor = list(melee = 10, bullet = 33, laser = 33, energy = 35, bomb = 35, bio = 50, rad = 50)

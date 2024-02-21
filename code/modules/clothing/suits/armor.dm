@@ -1387,7 +1387,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/heretcoat/tzeecult
 	name = "Silk Robe"
-	desc = "A robe made out of some strange silk like material"
+	desc = "A robe made out of some strange silk like material. It has crude drawings on the inner coat, odd runes and symbolisms on it. You feel a sense of being watched being near it."
 	icon_state = "tzeecult"
 	item_state = "tzeecult"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun,/obj/item/gun/projectile)
