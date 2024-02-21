@@ -68,3 +68,16 @@
 
 	//return (!density || !height || air_group)
 	return !density
+
+/obj/effect/energy_field/voidshield
+	name = "Void Shield"
+	desc = "Impenetrable field of energy, capable of blocking anything as long as it's active."
+	icon = 'icons/obj/machines/shielding.dmi'
+	icon_state = "shield_normal"
+	anchored = 1
+	plane = EFFECTS_BELOW_LIGHTING_PLANE
+	layer = PROJECTILE_LAYER
+	density = 0
+	invisibility = 101
+	strength = 0
+	ticks_recovering = 10
