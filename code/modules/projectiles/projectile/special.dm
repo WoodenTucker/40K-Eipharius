@@ -580,8 +580,6 @@
 	name = "fleshborer beetle"
 	damage = 15
 	armor_penetration = 25
-	stun = 5
-	weaken = 5
 	agony = 25
 	embed = 1
 /*/obj/item/projectile/bullet/tyranid/fleshborer/on_hit(var/atom/target)
