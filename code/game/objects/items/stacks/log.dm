@@ -8,7 +8,7 @@
     force = 3.0
     throwforce = 3.0
     max_amount = 10
-    sales_price = 4
+    sales_price = 0
 
 /obj/item/stack/logs/update_icon()
 	if(!amount)//There's no more money here, so delete the handful.
@@ -19,8 +19,8 @@
 /obj/item/stack/logs/attackby(obj/item/W as obj, mob/user as mob)
 	if(istype(W,/obj/item/melee/sword/combat_knife|| istype(W.sharp)|| istype(W.edge)))
 		(do_after(user,30,src))
-		new /obj/item/torch/self_lit(get_turf(src))
-		to_chat(user, "You carve the log into a usable torch.")
+		new /obj/item/stack/material/wood/ten(get_turf(src))
+		to_chat(user, "You carve the log into a wooden plank.")
 		qdel(src)
 	else if(istype(W, /obj/item/melee/sword/skinning_knife))
 		playsound(src, 'sound/effects/ash_chop.ogg', 80, TRUE)

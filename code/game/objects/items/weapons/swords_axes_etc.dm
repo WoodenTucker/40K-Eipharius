@@ -689,9 +689,9 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
 	str_requirement = 13
-	force_wielded = 40
-	force = 53
-	armor_penetration = 9 // 75% vs SM Chestpiece. The Daemonhammer's base damage is incredibly high so we can't raise it's AP further.
+	force_wielded = 53
+	force = 40
+	armor_penetration = 8 // 75% vs SM Chestpiece. The Daemonhammer's base damage is incredibly high so we can't raise it's AP further.
 	block_chance = 40
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 8
