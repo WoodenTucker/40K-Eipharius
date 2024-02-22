@@ -59,20 +59,20 @@
 	M.add_chemical_effect(CE_BLOODCLOT)
 
 /datum/reagent/mendroxine
-	name = "mendroxine"
+	name = "Mendroxine"
 	description = "A concoction of chemicals specifically made to be used by the Adeptus Astartes in combat."
 	reagent_state = REAGENT_LIQUID
 	scannable = 1
 	color = "#bd5eb5"
 	overdose = 40
-	metabolism = REM / 3.33
+	metabolism = 0.5
 	taste_description = "a vile and pungent chemical taste"
 
 /datum/reagent/mendroxine/affect_blood(mob/living/carbon/M, alien, removed)
 	M.add_chemical_effect(CE_BLOODCLOT) //Bloodclot
-	M.heal_organ_damage(0, 12 * removed) //Dermaline
+	M.heal_organ_damage(0, 14 * removed) //Buffed Dermaline
 	M.add_chemical_effect(CE_STABLE) //Inaprovaline
-	M.heal_organ_damage(6 * removed, 0) //Bicaridine
+	M.heal_organ_damage(8 * removed, 0) //Buffed Bicaridine
 
 /datum/reagent/spice
 	name = "Spice"
