@@ -307,7 +307,7 @@
 	a_side = pick('icons/map_project/sounds/bold_brathas.ogg')
 	b_side = pick('icons/map_project/sounds/bold_brathas.ogg')
 	sound_inside = a_side
-	sales_price = 30 // Very rare and expensive
+	sales_price = 20 // Very rare and expensive
 
 /obj/item/device/cassette/dow_cmd_theme/New()
 	..()
@@ -316,7 +316,7 @@
 	a_side = pick('icons/map_project/sounds/dow_commander_theme.ogg')
 	b_side = pick('icons/map_project/sounds/dow_commander_theme.ogg')
 	sound_inside = a_side
-	sales_price = 20 // Very rare and expensive
+	sales_price = 10 // Very rare and expensive
 
 /obj/item/device/cassette/dow_spessmuhreen_theme/New()
 	..()
@@ -325,7 +325,7 @@
 	a_side = pick('icons/map_project/sounds/dow_spessmarine.ogg')
 	b_side = pick('icons/map_project/sounds/dow_spessmarine.ogg')
 	sound_inside = a_side
-	sales_price = 20 // Very rare and expensive
+	sales_price = 10 // Very rare and expensive
 
 /obj/item/device/cassette/the_forest_1/New()
     ..()
@@ -334,7 +334,7 @@
     a_side = pick('icons/map_project/sounds/cassette_forest1.ogg')
     b_side = pick('icons/map_project/sounds/cassette_forest1.ogg')
     sound_inside = a_side
-    sales_price = 20 // Very rare and expensive
+    sales_price = 10 // Very rare and expensive
 
 /obj/item/device/cassette/the_forest2/New()
     ..()
@@ -343,7 +343,7 @@
     a_side = pick('icons/map_project/sounds/cassette_forest6.ogg')
     b_side = pick('icons/map_project/sounds/cassette_forest6.ogg')
     sound_inside = a_side
-    sales_price = 20 // Very rare and expensive
+    sales_price = 10 // Very rare and expensive
     
 /obj/item/device/cassette/starcraft_1/New()
     ..()
@@ -352,4 +352,4 @@
     a_side = pick('icons/map_project/sounds/starcraft_terran1.ogg')
     b_side = pick('icons/map_project/sounds/starcraft_terran1.ogg')
     sound_inside = a_side
-    sales_price = 20 // Very rare and expensive
+    sales_price = 10 // Very rare and expensive

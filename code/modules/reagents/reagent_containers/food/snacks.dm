@@ -15,6 +15,7 @@
 	center_of_mass = "x=16;y=16"
 	w_class = ITEM_SIZE_SMALL
 	var/iscooked = 0
+	sales_price = 1
 
 /obj/item/reagent_containers/food/snacks/New()
 	..()
@@ -595,6 +596,7 @@
 	filling_color = "#fffee0"
 	center_of_mass = "x=17;y=10"
 	nutriment_amt = 3
+	sales_price = 2
 	nutriment_desc = list("tofu" = 3, "goeyness" = 3)
 	New()
 		..()
@@ -607,6 +609,7 @@
 	filling_color = "#fffee0"
 	center_of_mass = "x=16;y=8"
 	nutriment_amt = 12
+	sales_price = 2
 	nutriment_desc = list("turkey" = 3, "tofu" = 5, "goeyness" = 4)
 
 	New()
@@ -644,6 +647,7 @@
 	icon_state = "fishfingers"
 	filling_color = "#ffdefe"
 	center_of_mass = "x=16;y=13"
+	sales_price = 2
 
 	New()
 		..()
@@ -681,7 +685,7 @@
 	icon_state = "bearmeat"
 	filling_color = "#db0000"
 	center_of_mass = "x=16;y=10"
-	sales_price = 25
+	sales_price = 6
 
 	New()
 		..()
@@ -695,7 +699,7 @@
 	icon_state = "bearmeat"
 	filling_color = "#08acf8cc"
 	center_of_mass = "x=16;y=10"
-	sales_price = 25
+	sales_price = 5
 
 	New()
 		..()
@@ -709,7 +713,7 @@
 	icon_state = "bearmeat"
 	filling_color = "#08acf8cc"
 	center_of_mass = "x=16;y=10"
-	sales_price = 30
+	sales_price = 10
 
 	New()
 		..()
@@ -736,6 +740,7 @@
 	icon_state = "meatball"
 	filling_color = "#db0000"
 	center_of_mass = "x=16;y=16"
+	sales_price = 2
 
 	New()
 		..()
@@ -808,6 +813,7 @@
 	icon_state = "brainburger"
 	filling_color = "#f2b6ea"
 	center_of_mass = "x=15;y=11"
+	sales_price = 3
 
 	New()
 		..()
@@ -823,6 +829,7 @@
 	center_of_mass = "x=16;y=11"
 	nutriment_desc = list("buns" = 3, "spookiness" = 3)
 	nutriment_amt = 2
+	sales_price = 2
 	New()
 		..()
 		bitesize = 2
@@ -850,6 +857,7 @@
 	center_of_mass = "x=16;y=11"
 	nutriment_desc = list("cheese" = 2, "bun" = 2)
 	nutriment_amt = 2
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 2)
@@ -862,6 +870,7 @@
 	center_of_mass = "x=16;y=11"
 	nutriment_desc = list("bun" = 2)
 	nutriment_amt = 3
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 3)
@@ -873,6 +882,7 @@
 	icon_state = "fishburger"
 	filling_color = "#ffdefe"
 	center_of_mass = "x=16;y=10"
+	sales_price = 2
 
 	New()
 		..()
@@ -887,6 +897,7 @@
 	center_of_mass = "x=16;y=10"
 	nutriment_desc = list("bun" = 2, "pseudo-soy meat" = 3)
 	nutriment_amt = 6
+	sales_price = 2
 	New()
 		..()
 		bitesize = 2
@@ -924,6 +935,7 @@
 	icon_state = "xburger"
 	filling_color = "#43de18"
 	center_of_mass = "x=16;y=11"
+	sales_price = 3
 
 	New()
 		..()
@@ -938,6 +950,7 @@
 	center_of_mass = "x=17;y=12"
 	nutriment_desc = list("bun" = 2, "clown shoe" = 3)
 	nutriment_amt = 6
+	sales_price = 2
 	New()
 		..()
 		bitesize = 2
@@ -950,6 +963,7 @@
 	center_of_mass = "x=16;y=11"
 	nutriment_desc = list("bun" = 2, "mime paint" = 3)
 	nutriment_amt = 6
+	sales_price = 2
 	New()
 		..()
 		bitesize = 2
@@ -963,6 +977,7 @@
 	center_of_mass = "x=16;y=13"
 	nutriment_desc = list("egg" = 3, "cheese" = 3)
 	nutriment_amt = 2
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 2)
@@ -976,6 +991,7 @@
 	center_of_mass = "x=17;y=4"
 	nutriment_desc = list("sweetness" = 3, "muffin" = 3)
 	nutriment_amt = 6
+	sales_price = 2
 	New()
 		..()
 		bitesize = 2
@@ -989,6 +1005,7 @@
 	center_of_mass = "x=16;y=13"
 	nutriment_desc = list("pie" = 3, "cream" = 2)
 	nutriment_amt = 4
+	sales_price = 3
 
 /obj/item/reagent_containers/food/snacks/pie/New()
 	..()
@@ -1009,6 +1026,7 @@
 	center_of_mass = "x=16;y=13"
 	nutriment_desc = list("sweetness" = 2, "pie" = 3)
 	nutriment_amt = 4
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/drink/juice/berry, 5)
@@ -1023,6 +1041,7 @@
 	center_of_mass = "x=15;y=11"
 	nutriment_desc = list("waffle" = 8)
 	nutriment_amt = 8
+	sales_price = 2
 	New()
 		..()
 		bitesize = 2
@@ -1035,6 +1054,7 @@
 	center_of_mass = "x=15;y=11"
 	nutriment_desc = list("pancake" = 8)
 	nutriment_amt = 8
+	sales_price = 2
 	New()
 		..()
 		bitesize = 2
@@ -1048,6 +1068,7 @@
 	center_of_mass = "x=16;y=11"
 	nutriment_desc = list("cheese" = 3, "eggplant" = 3)
 	nutriment_amt = 6
+	sales_price = 2
 	New()
 		..()
 		bitesize = 2
@@ -1059,6 +1080,7 @@
 	trash = /obj/item/trash/waffles
 	filling_color = "#b8e6b5"
 	center_of_mass = "x=15;y=11"
+	sales_price = 3
 
 	New()
 		..()
@@ -1072,6 +1094,7 @@
 	trash = /obj/item/trash/waffles
 	filling_color = "#e6fa61"
 	center_of_mass = "x=15;y=11"
+	sales_price = 2
 
 	nutriment_desc = list("some sort of protein" = 10) //seasoned VERY well.
 	nutriment_amt = 10
@@ -1087,6 +1110,7 @@
 	trash = /obj/item/trash/plate
 	filling_color = "#948051"
 	center_of_mass = "x=16;y=13"
+	sales_price = 2
 
 	New()
 		..()
@@ -1102,6 +1126,7 @@
 	center_of_mass = "x=16;y=13"
 	nutriment_desc = list("tofu" = 2, "pie" = 8)
 	nutriment_amt = 10
+	sales_price = 2
 	New()
 		..()
 		bitesize = 2
@@ -1114,6 +1139,7 @@
 	center_of_mass = "x=17;y=9"
 	nutriment_desc = list("sweetness" = 3, "mushroom" = 3, "pie" = 2)
 	nutriment_amt = 5
+	sales_price = 3
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/toxin/amatoxin, 3)
@@ -1128,6 +1154,7 @@
 	center_of_mass = "x=17;y=9"
 	nutriment_desc = list("heartiness" = 2, "mushroom" = 3, "pie" = 3)
 	nutriment_amt = 8
+	sales_price = 2
 	New()
 		..()
 		if(prob(10))
@@ -1143,6 +1170,7 @@
 	trash = /obj/item/trash/plate
 	filling_color = "#43de18"
 	center_of_mass = "x=16;y=13"
+	sales_price = 3
 
 	New()
 		..()
@@ -1156,6 +1184,7 @@
 	trash = /obj/item/trash/snack_bowl
 	filling_color = "#43de18"
 	center_of_mass = "x=17;y=9"
+	sales_price = 2
 
 	New()
 		..()
@@ -1198,6 +1227,7 @@
 	center_of_mass = "x=12;y=5"
 	nutriment_desc = list("toasted bread" = 3)
 	nutriment_amt = 3
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 3)
@@ -1274,7 +1304,7 @@
 		bitesize = 2
 
 /obj/item/reagent_containers/food/snacks/syndicake
-	name = "Syndi-Cakes"
+	name = "Tzeenie-Cakes"
 	icon_state = "syndi_cakes"
 	desc = "An extremely moist snack cake that tastes just as good after being nuked."
 	filling_color = "#ff5d05"
@@ -1295,6 +1325,7 @@
 	center_of_mass = "x=16;y=10"
 	nutriment_desc = list("baked potato" = 3)
 	nutriment_amt = 3
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 3)
@@ -1348,6 +1379,7 @@
 	center_of_mass = "x=16;y=16"
 	nutriment_desc = list("noodles" = 2)
 	nutriment_amt = 1
+	sales_price = 3
 	New()
 		..()
 		bitesize = 1
@@ -1384,6 +1416,7 @@
 	icon_state = "badrecipe"
 	filling_color = "#211f02"
 	center_of_mass = "x=16;y=12"
+	sales_price = 0
 
 	New()
 		..()
@@ -1398,6 +1431,7 @@
 	trash = /obj/item/trash/plate
 	filling_color = "#7a3d11"
 	center_of_mass = "x=16;y=13"
+	sales_price = 2
 
 	New()
 		..()
@@ -1413,6 +1447,7 @@
 	trash = /obj/item/trash/plate
 	filling_color = "#7a3d11"
 	center_of_mass = "x=16;y=13"
+	sales_price = 3
 
 	nutriment_desc = list("onion" = 2, "mushroom" = 2)
 	nutriment_amt = 4
@@ -1432,6 +1467,7 @@
 	center_of_mass = "x=16;y=8"
 	nutriment_desc = list("mushroom" = 6)
 	nutriment_amt = 6
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/psilocybin, 6)
@@ -1473,6 +1509,7 @@
 	trash = /obj/item/trash/snack_bowl
 	filling_color = "#785210"
 	center_of_mass = "x=16;y=8"
+	sales_price = 2
 
 	New()
 		..()
@@ -1517,6 +1554,7 @@
 	center_of_mass = "x=16;y=8"
 	nutriment_desc = list("carrot" = 2, "corn" = 2, "eggplant" = 2, "potato" = 2)
 	nutriment_amt = 8
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/water, 5)
@@ -1594,6 +1632,7 @@
 	trash = /obj/item/trash/snack_bowl
 	filling_color = "#d1f4ff"
 	center_of_mass = "x=16;y=11"
+	sales_price = 0
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/water, 10)
@@ -1611,6 +1650,7 @@
 	center_of_mass = "x=15;y=9"
 	nutriment_desc = list("chilli peppers" = 3)
 	nutriment_amt = 3
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 3)
@@ -1628,6 +1668,7 @@
 	nutriment_desc = list("ice peppers" = 3)
 	nutriment_amt = 3
 	trash = /obj/item/trash/snack_bowl
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 3)
@@ -1719,6 +1760,7 @@
 	filling_color = "#d505ff"
 	nutriment_desc = list("magic" = 3, "buns" = 3)
 	nutriment_amt = 6
+	sales_price = 3
 	New()
 		..()
 		bitesize = 2
@@ -1731,6 +1773,7 @@
 	center_of_mass = "x=16;y=11"
 	nutriment_desc = list("buns" = 4)
 	nutriment_amt = 4
+	sales_price = 5
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 10)
@@ -1745,6 +1788,7 @@
 	center_of_mass = "x=16;y=13"
 	nutriment_desc = list("tortilla" = 3, "corn" = 3)
 	nutriment_amt = 2
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 6)
@@ -1758,6 +1802,7 @@
 	trash = /obj/item/trash/tray
 	filling_color = "#5c3c11"
 	center_of_mass = "x=16;y=13"
+	sales_price = 3
 
 	New()
 		..()
@@ -1789,6 +1834,7 @@
 	center_of_mass = "x=16;y=16"
 	nutriment_desc = list("salt" = 1, "chips" = 3)
 	nutriment_amt = 3
+	sales_price = 3
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 3)
@@ -1803,6 +1849,7 @@
 	center_of_mass = "x=16;y=4"
 	nutriment_desc = list("bread" = 3, "cheese" = 3)
 	nutriment_amt = 3
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 3)
@@ -1817,6 +1864,7 @@
 	center_of_mass = "x=16;y=4"
 	nutriment_desc = list("toasted bread" = 3, "cheese" = 3)
 	nutriment_amt = 3
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 3)
@@ -1831,6 +1879,7 @@
 	filling_color = "#d9be29"
 	nutriment_desc = list("toasted bread" = 3, "cheese" = 3)
 	nutriment_amt = 3
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 4)
@@ -1859,6 +1908,7 @@
 	center_of_mass = "x=15;y=11"
 	nutriment_desc = list("waffle" = 7, "sweetness" = 1)
 	nutriment_amt = 8
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/psilocybin, 8)
@@ -1872,6 +1922,7 @@
 	center_of_mass = "x=16;y=5"
 	nutriment_desc = list("tomato" = 2, "potato" = 2, "carrot" = 2, "eggplant" = 2, "mushroom" = 2)
 	nutriment_amt = 6
+	sales_price = 4
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 4)
@@ -1906,6 +1957,7 @@
 	center_of_mass = "x=16;y=11"
 	nutriment_desc = list("buns" = 5)
 	nutriment_amt = 5
+	sales_price = 2
 	New()
 		..()
 		bitesize = 2
@@ -1936,6 +1988,7 @@
 	center_of_mass = "x=16;y=10"
 	nutriment_desc = list("soy" = 4, "tomato" = 4)
 	nutriment_amt = 8
+	sales_price = 2
 	New()
 		..()
 		bitesize = 2
@@ -1975,6 +2028,7 @@
 	center_of_mass = "x=17;y=11"
 	nutriment_desc = list("rice" = 2)
 	nutriment_amt = 4
+	sales_price = 2
 	New()
 		..()
 		bitesize = 2
@@ -1982,7 +2036,8 @@
 /obj/item/reagent_containers/food/snacks/ricepudding/flake
 	name = "Khorne Flakes"
 	desc = "The forbidden breakfast..."
-	nutriment_amt = 8
+	nutriment_amt = 12
+	sales_price = 3
 
 /obj/item/reagent_containers/food/snacks/pastatomato
 	name = "Spaghetti"
@@ -1993,6 +2048,7 @@
 	center_of_mass = "x=16;y=10"
 	nutriment_desc = list("tomato" = 3, "noodles" = 3)
 	nutriment_amt = 6
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/drink/juice/tomato, 10)
@@ -2007,6 +2063,7 @@
 	center_of_mass = "x=16;y=10"
 	nutriment_desc = list("noodles" = 4)
 	nutriment_amt = 4
+	sales_price = 3
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 4)
@@ -2047,6 +2104,7 @@
 	center_of_mass = "x=16;y=3"
 	nutriment_desc = list("buns" = 25)
 	nutriment_amt = 25
+	sales_price = 6
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 25)
@@ -2072,6 +2130,7 @@
 	center_of_mass = "x=16;y=13"
 	nutriment_desc = list("sweetness" = 2, "apple" = 2, "pie" = 2)
 	nutriment_amt = 4
+	sales_price = 3
 	New()
 		..()
 		bitesize = 3
@@ -2085,6 +2144,7 @@
 	center_of_mass = "x=16;y=11"
 	nutriment_desc = list("sweetness" = 2, "cherry" = 2, "pie" = 2)
 	nutriment_amt = 4
+	sales_price = 2
 	New()
 		..()
 		bitesize = 3
@@ -2109,6 +2169,7 @@
 	center_of_mass = "x=15;y=12"
 	nutriment_desc = list("sourness" = 2, "bread" = 3)
 	nutriment_amt = 3
+	sales_price = 2
 	New()
 		..()
 		bitesize = 4
@@ -2122,6 +2183,7 @@
 	center_of_mass = "x=16;y=8"
 	nutriment_desc = list("bread" = 2)
 	nutriment_amt = 2
+	sales_price = 2
 	New()
 		..()
 		bitesize = 3
@@ -2222,6 +2284,7 @@
 	center_of_mass = "x=17;y=11"
 	nutriment_desc = list("100% real salad")
 	nutriment_amt = 6
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 2)
@@ -2236,6 +2299,7 @@
 	center_of_mass = "x=16;y=18"
 	nutriment_desc = list("apple" = 8)
 	nutriment_amt = 8
+	sales_price = 6
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/gold, 5)
@@ -2247,6 +2311,7 @@
 // sliceable is just an organization type path, it doesn't have any additional code or variables tied to it.
 
 /obj/item/reagent_containers/food/snacks/sliceable
+	sales_price = 0
 	w_class = ITEM_SIZE_NORMAL //Whole pizzas and cakes shouldn't fit in a pocket, you can slice them if you want to do that.
 
 /**
@@ -2259,6 +2324,7 @@
 	name = "slice of... something"
 	var/whole_path  // path for the item from which this slice comes
 	var/filled = FALSE  // should the slice spawn with any reagents
+	sales_price = 0
 
 /**
  *  Spawn a new slice of food
@@ -2288,6 +2354,7 @@
 	center_of_mass = "x=19;y=9"
 	nutriment_desc = list("bread" = 10)
 	nutriment_amt = 10
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 20)
@@ -2301,6 +2368,7 @@
 	filling_color = "#ff7575"
 	bitesize = 2
 	center_of_mass = "x=16;y=13"
+	sales_price = 0
 	whole_path = /obj/item/reagent_containers/food/snacks/sliceable/meatbread
 
 /obj/item/reagent_containers/food/snacks/slice/meatbread/filled
@@ -2316,6 +2384,7 @@
 	center_of_mass = "x=16;y=9"
 	nutriment_desc = list("bread" = 10)
 	nutriment_amt = 10
+	sales_price = 3
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 20)
@@ -2329,6 +2398,7 @@
 	filling_color = "#8aff75"
 	bitesize = 2
 	center_of_mass = "x=16;y=13"
+	sales_price = 0
 	whole_path = /obj/item/reagent_containers/food/snacks/sliceable/xenomeatbread
 
 
@@ -2345,6 +2415,7 @@
 	center_of_mass = "x=16;y=9"
 	nutriment_desc = list("bread" = 10)
 	nutriment_amt = 10
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/drink/juice/banana, 20)
@@ -2358,6 +2429,7 @@
 	filling_color = "#ede5ad"
 	bitesize = 2
 	center_of_mass = "x=16;y=8"
+	sales_price = 0
 	whole_path = /obj/item/reagent_containers/food/snacks/sliceable/bananabread
 
 /obj/item/reagent_containers/food/snacks/slice/bananabread/filled
@@ -2373,6 +2445,7 @@
 	center_of_mass = "x=16;y=9"
 	nutriment_desc = list("tofu" = 10)
 	nutriment_amt = 10
+	sales_price = 2
 	New()
 		..()
 		bitesize = 2
@@ -2385,6 +2458,7 @@
 	filling_color = "#f7ffe0"
 	bitesize = 2
 	center_of_mass = "x=16;y=13"
+	sales_price = 0
 	whole_path = /obj/item/reagent_containers/food/snacks/sliceable/tofubread
 
 /obj/item/reagent_containers/food/snacks/slice/tofubread/filled
@@ -2401,6 +2475,7 @@
 	center_of_mass = "x=16;y=10"
 	nutriment_desc = list("cake" = 10, "sweetness" = 10, "carrot" = 15)
 	nutriment_amt = 25
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/imidazoline, 10)
@@ -2414,6 +2489,7 @@
 	filling_color = "#ffd675"
 	bitesize = 2
 	center_of_mass = "x=16;y=14"
+	sales_price = 0
 	whole_path = /obj/item/reagent_containers/food/snacks/sliceable/carrotcake
 
 /obj/item/reagent_containers/food/snacks/slice/carrotcake/filled
@@ -2429,6 +2505,7 @@
 	center_of_mass = "x=16;y=10"
 	nutriment_desc = list("cake" = 10, "sweetness" = 10, "slime" = 15)
 	nutriment_amt = 5
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 25)
@@ -2443,6 +2520,7 @@
 	filling_color = "#e6aedb"
 	bitesize = 2
 	center_of_mass = "x=16;y=12"
+	sales_price = 0
 	whole_path = /obj/item/reagent_containers/food/snacks/sliceable/braincake
 
 /obj/item/reagent_containers/food/snacks/slice/braincake/filled
@@ -2458,6 +2536,7 @@
 	center_of_mass = "x=16;y=10"
 	nutriment_desc = list("cake" = 10, "cream" = 10, "cheese" = 15)
 	nutriment_amt = 10
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 15)
@@ -2471,6 +2550,7 @@
 	filling_color = "#faf7af"
 	bitesize = 2
 	center_of_mass = "x=16;y=14"
+	sales_price = 0
 	whole_path = /obj/item/reagent_containers/food/snacks/sliceable/cheesecake
 
 /obj/item/reagent_containers/food/snacks/slice/cheesecake/filled
@@ -2488,6 +2568,7 @@
 	center_of_mass = "x=16;y=10"
 	nutriment_desc = list("cake" = 10, "sweetness" = 10, "vanilla" = 15)
 	nutriment_amt = 20
+	sales_price = 2
 
 /obj/item/reagent_containers/food/snacks/slice/plaincake
 	name = "Vanilla Cake slice"
@@ -2497,6 +2578,7 @@
 	filling_color = "#f7edd5"
 	bitesize = 2
 	center_of_mass = "x=16;y=14"
+	sales_price = 0
 	whole_path = /obj/item/reagent_containers/food/snacks/sliceable/plaincake
 
 /obj/item/reagent_containers/food/snacks/slice/plaincake/filled
@@ -2510,6 +2592,7 @@
 	slices_num = 5
 	filling_color = "#fada8e"
 	center_of_mass = "x=16;y=10"
+	sales_price = 2
 	nutriment_desc = list("cake" = 10, "sweetness" = 10, "orange" = 15)
 	nutriment_amt = 20
 
@@ -2521,6 +2604,7 @@
 	filling_color = "#fada8e"
 	bitesize = 2
 	center_of_mass = "x=16;y=14"
+	sales_price = 0
 	whole_path = /obj/item/reagent_containers/food/snacks/sliceable/orangecake
 
 /obj/item/reagent_containers/food/snacks/slice/orangecake/filled
@@ -2535,6 +2619,7 @@
 	slices_num = 5
 	filling_color = "#cbfa8e"
 	center_of_mass = "x=16;y=10"
+	sales_price = 2
 	nutriment_desc = list("cake" = 10, "sweetness" = 10, "lime" = 15)
 	nutriment_amt = 20
 
@@ -2547,6 +2632,7 @@
 	filling_color = "#cbfa8e"
 	bitesize = 2
 	center_of_mass = "x=16;y=14"
+	sales_price = 0
 	whole_path = /obj/item/reagent_containers/food/snacks/sliceable/limecake
 
 /obj/item/reagent_containers/food/snacks/slice/limecake/filled
@@ -2560,6 +2646,7 @@
 	slices_num = 5
 	filling_color = "#fafa8e"
 	center_of_mass = "x=16;y=10"
+	sales_price = 2
 	nutriment_desc = list("cake" = 10, "sweetness" = 10, "lemon" = 15)
 	nutriment_amt = 20
 
@@ -2572,6 +2659,7 @@
 	filling_color = "#fafa8e"
 	bitesize = 2
 	center_of_mass = "x=16;y=14"
+	sales_price = 0
 	whole_path = /obj/item/reagent_containers/food/snacks/sliceable/lemoncake
 
 /obj/item/reagent_containers/food/snacks/slice/lemoncake/filled
@@ -2585,6 +2673,7 @@
 	slices_num = 5
 	filling_color = "#805930"
 	center_of_mass = "x=16;y=10"
+	sales_price = 2
 	nutriment_desc = list("cake" = 10, "sweetness" = 10, "chocolate" = 15)
 	nutriment_amt = 20
 
@@ -2596,6 +2685,7 @@
 	filling_color = "#805930"
 	bitesize = 2
 	center_of_mass = "x=16;y=14"
+	sales_price = 0
 	whole_path = /obj/item/reagent_containers/food/snacks/sliceable/chocolatecake
 
 /obj/item/reagent_containers/food/snacks/slice/chocolatecake/filled
@@ -2610,6 +2700,7 @@
 	filling_color = "#fff700"
 	center_of_mass = "x=16;y=10"
 	nutriment_desc = list("cheese" = 10)
+	sales_price = 4
 	nutriment_amt = 10
 	New()
 		..()
@@ -2623,6 +2714,7 @@
 	filling_color = "#fff700"
 	bitesize = 2
 	center_of_mass = "x=16;y=10"
+	sales_price = 0
 
 /obj/item/reagent_containers/food/snacks/sliceable/birthdaycake
 	name = "Birthday Cake"
@@ -2634,6 +2726,7 @@
 	center_of_mass = "x=16;y=10"
 	nutriment_desc = list("cake" = 10, "sweetness" = 10)
 	nutriment_amt = 20
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/sprinkles, 10)
@@ -2647,6 +2740,7 @@
 	filling_color = "#ffd6d6"
 	bitesize = 2
 	center_of_mass = "x=16;y=14"
+	sales_price = 0
 	whole_path = /obj/item/reagent_containers/food/snacks/sliceable/birthdaycake
 
 /obj/item/reagent_containers/food/snacks/slice/birthdaycake/filled
@@ -2662,6 +2756,7 @@
 	center_of_mass = "x=16;y=9"
 	nutriment_desc = list("bread" = 6)
 	nutriment_amt = 6
+	sales_price = 1
 	New()
 		..()
 		bitesize = 2
@@ -2674,6 +2769,7 @@
 	filling_color = "#d27332"
 	bitesize = 2
 	center_of_mass = "x=16;y=4"
+	sales_price = 0
 	whole_path = /obj/item/reagent_containers/food/snacks/sliceable/bread
 
 /obj/item/reagent_containers/food/snacks/slice/bread/filled
@@ -2703,6 +2799,7 @@
 	filling_color = "#fff896"
 	bitesize = 2
 	center_of_mass = "x=16;y=13"
+	sales_price = 0
 	whole_path = /obj/item/reagent_containers/food/snacks/sliceable/creamcheesebread
 
 
@@ -2717,6 +2814,7 @@
 	filling_color = "#ff3867"
 	bitesize = 2
 	center_of_mass = "x=16;y=10"
+	sales_price = 0
 
 
 /obj/item/reagent_containers/food/snacks/sliceable/applecake
@@ -2738,6 +2836,7 @@
 	filling_color = "#ebf5b8"
 	bitesize = 2
 	center_of_mass = "x=16;y=14"
+	sales_price = 0
 	whole_path = /obj/item/reagent_containers/food/snacks/sliceable/applecake
 
 /obj/item/reagent_containers/food/snacks/slice/applecake/filled
@@ -2753,6 +2852,7 @@
 	center_of_mass = "x=16;y=10"
 	nutriment_desc = list("pie" = 5, "cream" = 5, "pumpkin" = 5)
 	nutriment_amt = 15
+	sales_price = 2
 
 /obj/item/reagent_containers/food/snacks/slice/pumpkinpie
 	name = "Pumpkin Pie slice"
@@ -2762,6 +2862,7 @@
 	filling_color = "#f5b951"
 	bitesize = 2
 	center_of_mass = "x=16;y=12"
+	sales_price = 0
 	whole_path = /obj/item/reagent_containers/food/snacks/sliceable/pumpkinpie
 
 /obj/item/reagent_containers/food/snacks/slice/pumpkinpie/filled
@@ -2775,6 +2876,7 @@
 	center_of_mass = "x=17;y=6"
 	nutriment_desc = list("salt" = 1, "cracker" = 2)
 	nutriment_amt = 1
+	sales_price = 0
 
 
 
@@ -2783,6 +2885,7 @@
 /obj/item/reagent_containers/food/snacks/sliceable/pizza
 	slices_num = 6
 	filling_color = "#baa14c"
+	sales_price = 0
 
 /obj/item/reagent_containers/food/snacks/sliceable/pizza/margherita
 	name = "Margherita"
@@ -2792,7 +2895,8 @@
 	slices_num = 6
 	center_of_mass = "x=16;y=11"
 	nutriment_desc = list("pizza crust" = 10, "tomato" = 10, "cheese" = 15)
-	nutriment_amt = 35
+	nutriment_amt = 20
+	sales_price = 4
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 5)
@@ -2820,6 +2924,7 @@
 	center_of_mass = "x=16;y=11"
 	nutriment_desc = list("pizza crust" = 10, "tomato" = 10, "cheese" = 15)
 	nutriment_amt = 10
+	sales_price = 5
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 34)
@@ -2847,6 +2952,7 @@
 	center_of_mass = "x=16;y=11"
 	nutriment_desc = list("pizza crust" = 10, "tomato" = 10, "cheese" = 5, "mushroom" = 10)
 	nutriment_amt = 35
+	sales_price = 4
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 5)
@@ -2873,6 +2979,7 @@
 	center_of_mass = "x=16;y=11"
 	nutriment_desc = list("pizza crust" = 10, "tomato" = 10, "cheese" = 5, "eggplant" = 5, "carrot" = 5, "corn" = 5)
 	nutriment_amt = 25
+	sales_price = 4
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 5)
@@ -3199,6 +3306,7 @@
 	center_of_mass = list("x"=16, "y"=8)
 	nutriment_desc = list("bun" = 8)
 	nutriment_amt = 8
+	sales_price = 0
 
 /obj/item/reagent_containers/food/snacks/taco
 	name = "taco"
@@ -3208,6 +3316,7 @@
 	center_of_mass = "x=21;y=12"
 	nutriment_desc = list("cheese" = 2,"taco shell" = 2)
 	nutriment_amt = 4
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 3)
@@ -3307,7 +3416,8 @@
 	filling_color = "#a8a8a8"
 	center_of_mass = "x=16;y=15"
 	nutriment_desc = list("meat" = 6)
-	nutriment_amt = 9
+	nutriment_amt = 17
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/iron, 3)
@@ -3321,7 +3431,8 @@
 	filling_color = "#a8a8a8"
 	center_of_mass = "x=16;y=15"
 	nutriment_desc = list("meat" = 9)
-	nutriment_amt = 18
+	nutriment_amt = 19
+	sales_price = 3
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/iron, 6)
@@ -3335,6 +3446,7 @@
 	trash = /obj/item/trash/foodtray
 	nutriment_desc = list("protein" =3, "taters" =1, "greens" = 1)
 	nutriment_amt = 10
+	sales_price = 2
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/iron, 1)

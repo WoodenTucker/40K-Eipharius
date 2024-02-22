@@ -1554,7 +1554,7 @@ datum/job/ig/bullgryn
 	name = OUTFIT_JOB_NAME("Catachan Commissar")
 	uniform =  /obj/item/clothing/under/rank/catachancommissar
 	suit = /obj/item/clothing/suit/armor/commissar/catachan
-	belt = /obj/item/melee/chain/pcsword
+	belt = /obj/item/melee/chain/guard
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/commissar/catachan
 	mask = null

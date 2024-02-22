@@ -263,6 +263,7 @@
 	icon_living = "star_gazer"
 	icon_dead = "star_gazer"
 	icon_gib = "syndicate_gib"
+	pixel_x = -32
 	maxHealth = 2500
 	health = 2500
 	response_help  = "caresses"
@@ -295,6 +296,7 @@
 	attacktext = "torn"
 	faction = "Chaos"
 	environment_smash = 2
+	pixel_x = -32
 	construct_spells = list(/spell/targeted/projectile/dumbfire/fireball, /spell/targeted/ethereal_jaunt)
 
 	speed = 1.2
@@ -315,6 +317,7 @@
 	melee_damage_lower = 80
 	attacktext = "torn"
 	faction = "Chaos"
+	pixel_x = -32
 	environment_smash = 2
 	construct_spells = list(/spell/targeted/projectile/dumbfire/fireball, /spell/targeted/ethereal_jaunt)
 	speed = 1.5
@@ -341,6 +344,7 @@
 	melee_damage_lower = 80
 	attacktext = "torn"
 	faction = "Chaos"
+	pixel_x = -32
 	environment_smash = 2
 	construct_spells = list(/spell/targeted/projectile/dumbfire/fireball, /spell/targeted/ethereal_jaunt/shift)
 	speed = 1.8

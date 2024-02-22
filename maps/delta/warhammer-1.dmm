@@ -661,6 +661,12 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"cA" = (
+/mob/living/simple_animal/hostile/giant_spider/flesh,
+/turf/simulated/wall/concrete{
+	integrity = 1500
+	},
+/area/cadiaoutpost/oa/caves/undercity)
 "cD" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -1331,7 +1337,7 @@
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/decal/cleanable/blood,
 /obj/structure/anti_tank,
-/obj/effect/landmark/animal/zygote1,
+/mob/living/simple_animal/hostile/flesh/abomination,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
 "eQ" = (
@@ -2277,7 +2283,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "ix" = (
 /obj/effect/floor_decal/turf/necro1,
-/mob/living/simple_animal/hostile/smalldemon/bubblingmass,
+/mob/living/simple_animal/hostile/flesh,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
 "iy" = (
@@ -9723,6 +9729,10 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"In" = (
+/mob/living/simple_animal/hostile/flesh,
+/turf/simulated/wall/seolite,
+/area/cadiaoutpost/oa/caves/dark)
 "Io" = (
 /obj/item/campfire/self_lit{
 	desc = "A campfire.";
@@ -12514,6 +12524,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
+"Sk" = (
+/obj/effect/floor_decal/turf/necro1,
+/mob/living/simple_animal/hostile/flesh,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/dark)
 "So" = (
 /obj/structure/iv_drip,
 /turf/simulated/floor/plating{
@@ -47080,12 +47097,12 @@ Tk
 Yd
 yT
 Yd
-eS
+In
 ho
 ho
 ho
 xS
-xS
+ix
 xS
 xS
 eS
@@ -47336,7 +47353,7 @@ eS
 ho
 ho
 ho
-ix
+xS
 xS
 xS
 xS
@@ -47586,7 +47603,7 @@ Yd
 Ft
 eS
 ho
-ho
+Sk
 ho
 ho
 kp
@@ -48129,7 +48146,7 @@ If
 MU
 MU
 MU
-wq
+eO
 MU
 MU
 MU
@@ -52607,7 +52624,7 @@ AM
 AM
 jw
 jw
-AM
+cA
 yx
 yx
 Sc

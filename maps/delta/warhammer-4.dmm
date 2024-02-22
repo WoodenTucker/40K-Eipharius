@@ -5,9 +5,12 @@
 	dir = 1
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "ac" = (
-/turf/simulated/open,
+/obj/effect/floor_decal/turf/metal/six,
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
 /area/cadiaoutpost/cha1)
 "ad" = (
 /obj/item/trash/warfare_can/flower,
@@ -41,7 +44,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "al" = (
 /obj/structure/table/rack,
 /obj/item/grenade/fire,
@@ -52,7 +55,7 @@
 /turf/simulated/floor/darksteel_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "am" = (
 /obj/effect/floor_decal/turf/brothel,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -200,7 +203,7 @@
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 10
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "aM" = (
 /obj/structure/bed/chair,
 /obj/effect/decal/cleanable/dirt,
@@ -251,7 +254,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "aX" = (
 /turf/simulated/floor/plating{
 	color = "grey"
@@ -350,7 +353,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "bq" = (
 /obj/structure/sign/portrait_irineu{
 	pixel_x = -32
@@ -386,7 +389,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "bx" = (
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/new_hive/hive_city)
@@ -399,7 +402,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "bB" = (
 /obj/effect/floor_decal/newcorner/stone/corner,
 /turf/simulated/floor/wood{
@@ -612,7 +615,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "ci" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	icon_state = "4";
@@ -620,14 +623,6 @@
 	},
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/new_hive/hive_city)
-"cj" = (
-/obj/machinery/sleeper{
-	dir = 4
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/villageinside)
 "cl" = (
 /obj/effect/floor_decal/turf/big_cables2{
 	dir = 4
@@ -701,7 +696,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "cw" = (
 /obj/effect/floor_decal/newcorner/blue{
 	dir = 4
@@ -710,7 +705,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "cz" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4
@@ -783,7 +778,7 @@
 /turf/simulated/floor/tiled/freezer{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "cN" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -793,7 +788,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "cO" = (
 /obj/structure/table/graf/polished_steel{
 	pixel_y = 6
@@ -892,7 +887,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/security/armory)
 "cZ" = (
 /obj/structure/shipdecor/generator{
 	icon_state = "gen0"
@@ -927,7 +922,7 @@
 "dh" = (
 /obj/machinery/light,
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "di" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 1
@@ -945,7 +940,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "dl" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 8
@@ -953,7 +948,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "do" = (
 /obj/structure/table/rack,
 /obj/item/clothing/mask/gas/krieg,
@@ -970,7 +965,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/security/armory)
 "dp" = (
 /obj/structure/curtain/open/shower/security{
 	name = "expensive curtain";
@@ -1010,15 +1005,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
-"dv" = (
-/obj/machinery/computer/operating,
-/obj/effect/floor_decal/newcorner/blue/solid,
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/simulated/floor/ceramic/surgery2,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "dB" = (
 /obj/structure/closet/hive/wood,
 /turf/simulated/floor/ceramic/surgery{
@@ -1060,7 +1047,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "dP" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/table/rack,
@@ -1138,7 +1125,7 @@
 /turf/simulated/floor/darksteel_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "ec" = (
 /obj/effect/floor_decal/newcorner/plating,
 /obj/effect/decal/cleanable/dirt,
@@ -1193,7 +1180,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/security/armory)
 "em" = (
 /obj/item/melee/sword/machete/chopper/heavy,
 /turf/simulated/floor/tiled/dark{
@@ -1309,7 +1296,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "eI" = (
 /obj/structure/closet/crate/freezer,
 /obj/item/organ/internal/lungs,
@@ -1338,7 +1325,7 @@
 	name = "Chad"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "eO" = (
 /obj/effect/floor_decal/industrial/mark,
 /obj/structure/closet/crate/large,
@@ -1349,7 +1336,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "eP" = (
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/villageinside)
@@ -1361,7 +1348,7 @@
 	health = 200
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "eS" = (
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tilethick";
@@ -1440,7 +1427,7 @@
 /turf/simulated/floor/tiled/freezer{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "fj" = (
 /obj/structure/torchwall{
 	pixel_y = 30
@@ -1466,7 +1453,7 @@
 	color = "grey";
 	icon_state = "dark1"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "fq" = (
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tilethick";
@@ -1498,7 +1485,7 @@
 /area/cadiaoutpost/oa/service/chapel)
 "fu" = (
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "fv" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4
@@ -1557,7 +1544,7 @@
 	icon_state = "bulb1"
 	},
 /turf/simulated/floor/wood,
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/villageinside)
 "fF" = (
 /obj/machinery/light/blue,
 /obj/effect/floor_decal/newcorner/train{
@@ -1566,7 +1553,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "fG" = (
 /obj/structure/table/graf/rusty_table,
 /obj/machinery/photocopier/faxmachine{
@@ -1578,7 +1565,7 @@
 	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "fI" = (
 /obj/structure/sign/portrait_hippocrates{
 	pixel_x = -32
@@ -1633,7 +1620,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "fQ" = (
 /obj/machinery/button/remote/blast_door/lever{
 	pixel_x = -32;
@@ -1654,7 +1641,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "fT" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -1721,7 +1708,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "gb" = (
 /obj/effect/floor_decal/newcorner/plating,
 /obj/effect/decal/cleanable/dirt,
@@ -1786,13 +1773,13 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "gv" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 8
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "gx" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/rack/shelf,
@@ -1829,7 +1816,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "gB" = (
 /obj/structure/bed/chair/wood/simple,
 /turf/simulated/floor/fancyfloor/carpet/blue{
@@ -1867,7 +1854,7 @@
 /turf/simulated/floor/tiled/freezer{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "gJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/newcorner/plating,
@@ -1895,7 +1882,7 @@
 	req_one_access = list(63,331,10)
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "gQ" = (
 /obj/structure/table/rack/dark,
 /obj/item/storage/bag/trash,
@@ -2009,7 +1996,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "hm" = (
 /obj/structure/curtain/open/shower/security{
 	name = "expensive curtain";
@@ -2063,7 +2050,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "hu" = (
 /obj/effect/decal/cleanable/flour{
 	name = "snow";
@@ -2104,7 +2091,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "hC" = (
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
 	maxhealth = 15000;
@@ -2120,7 +2107,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "hE" = (
 /obj/structure/hivedecor/bookcase/huge,
 /turf/simulated/floor/darkwood,
@@ -2147,7 +2134,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "hK" = (
 /obj/effect/floor_decal/turf/metal/five,
 /turf/simulated/floor/tiled/dark{
@@ -2161,7 +2148,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "hN" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/table/rack,
@@ -2261,7 +2248,7 @@
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 5
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "ih" = (
 /obj/item/book/manual{
 	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
@@ -2280,7 +2267,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/security/armory)
 "im" = (
 /obj/structure/sink/kitchen{
 	pixel_y = -10
@@ -2299,7 +2286,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "ir" = (
 /obj/item/ammo_magazine/ork/shoota{
 	pixel_y = 9;
@@ -2319,7 +2306,7 @@
 "is" = (
 /obj/random/trash,
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/new_hive/hive_city)
+/area/cadiaoutpost/oa/service/hab/inside)
 "it" = (
 /turf/simulated/floor/darksteel_floor{
 	dir = 6
@@ -2337,7 +2324,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "iv" = (
 /obj/machinery/light{
 	dir = 4
@@ -2398,7 +2385,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "iD" = (
 /obj/effect/floor_decal/turf/metal/metal_wall{
 	dir = 4;
@@ -2598,7 +2585,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "jn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood,
@@ -2621,7 +2608,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "jr" = (
 /obj/structure/bed/chair/wood/fancy{
 	dir = 8
@@ -2649,7 +2636,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "jx" = (
 /obj/effect/floor_decal/newcorner/polar/quarter{
 	dir = 8
@@ -2693,7 +2680,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "jC" = (
 /obj/effect/floor_decal/newcorner/trench_flooring{
 	dir = 8
@@ -2803,7 +2790,7 @@
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 9
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "jO" = (
 /obj/structure/curtain/open/shower,
 /turf/simulated/floor/factory_floor,
@@ -2815,7 +2802,7 @@
 /turf/simulated/floor/tiled/freezer{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "jR" = (
 /obj/structure/table/rack/dark,
 /obj/item/bedsheet/brown,
@@ -2837,7 +2824,7 @@
 	color = "#acd1e9"
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "jV" = (
 /obj/structure/grille/iron_fence,
 /turf/simulated/floor/factory_floor{
@@ -2868,7 +2855,7 @@
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/cha1)
 "ka" = (
 /obj/structure/sign/deck2{
 	pixel_y = 32
@@ -2876,7 +2863,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "kb" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/fireplacebl,
@@ -2910,7 +2897,7 @@
 	health = 150
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "kh" = (
 /obj/item/clothing/head/servicesgt{
 	pixel_x = -6;
@@ -2934,13 +2921,13 @@
 	dir = 1
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "ki" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 4
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "kj" = (
 /obj/machinery/light/blue{
 	dir = 1
@@ -2948,11 +2935,11 @@
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/hangarpact2)
 "kk" = (
 /obj/structure/sign/directions/security,
 /turf/simulated/wall/concrete,
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "kl" = (
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tilethick";
@@ -3028,7 +3015,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "kB" = (
 /obj/effect/floor_decal/newcorner/step{
 	pixel_y = 25
@@ -3103,7 +3090,7 @@
 /turf/simulated/floor/fancyfloor/carpet/grey{
 	dir = 8
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "kO" = (
 /obj/structure/table/rack,
 /obj/item/ammo_magazine/bolt_pistol_magazine,
@@ -3117,7 +3104,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/security/armory)
 "kR" = (
 /turf/simulated/floor/fancyfloor/carpet/grey{
 	dir = 5
@@ -3142,15 +3129,6 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/security/armory)
-"kW" = (
-/obj/effect/floor_decal/newcorner/blue/solid,
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/villageinside)
 "kX" = (
 /obj/machinery/door/airlock/glass_medical,
 /turf/simulated/floor/factory_floor,
@@ -3269,7 +3247,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "ly" = (
 /obj/effect/floor_decal/newcorner/reinforced/corner{
 	dir = 8
@@ -3381,7 +3359,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "lO" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 8;
@@ -3394,7 +3372,7 @@
 /obj/random/loot/goodweapon,
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "lQ" = (
 /obj/structure/warfare/barricade/concrete_barrier{
 	dir = 1
@@ -3404,7 +3382,7 @@
 	dir = 8
 	},
 /turf/simulated/wall/wooden,
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/villageinside)
 "lU" = (
 /obj/structure/hivedecor/bookcase/huge{
 	pixel_y = 14;
@@ -3422,7 +3400,7 @@
 /turf/simulated/floor/darksteel_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "lX" = (
 /obj/structure/table/rack/dark,
 /obj/item/reagent_containers/glass/bucket,
@@ -3449,7 +3427,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "mc" = (
 /obj/item/stamp/denied,
 /obj/structure/table/graf/wood_office_table{
@@ -3461,11 +3439,11 @@
 	},
 /area/cadiaoutpost/oa/service/chapel)
 "mf" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/turf/simulated/floor/tiled{
+/obj/effect/floor_decal/industrial/warning_red,
+/turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/cha1)
 "mh" = (
 /obj/effect/floor_decal/spline/fancy/wood/corner,
 /turf/simulated/floor/darkwood,
@@ -3494,7 +3472,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "mr" = (
 /turf/simulated/floor/fancyfloor/carpet/grey{
 	dir = 5
@@ -3540,7 +3518,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "mz" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 4
@@ -3615,7 +3593,7 @@
 	color = "grey";
 	dir = 8
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "mX" = (
 /obj/item/reagent_containers/pill/happy{
 	pixel_y = 10
@@ -3664,7 +3642,7 @@
 	req_one_access = list(63,10,331)
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "nk" = (
 /obj/effect/landmark/start{
 	name = "Tavern Ganger"
@@ -3721,13 +3699,13 @@
 	},
 /obj/item/cell/lasgun/hotshot,
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "nr" = (
 /obj/machinery/door/airlock/multi_tile/glass,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "nu" = (
 /obj/machinery/shower{
 	pixel_y = 20
@@ -3771,7 +3749,7 @@
 	},
 /obj/structure/bookcase,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "nz" = (
 /obj/structure/bed/chair,
 /turf/simulated/floor/tiled{
@@ -3814,7 +3792,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "nE" = (
 /obj/structure/flora/pottedplant{
 	icon = "icons/map_project/furniture_and_decor.dmi";
@@ -3992,7 +3970,7 @@
 	},
 /obj/effect/landmark/start/imperialguard,
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "oq" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	icon_state = "4";
@@ -4033,7 +4011,7 @@
 	dir = 4
 	},
 /turf/simulated/wall/wooden,
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/villageinside)
 "oz" = (
 /obj/item/clothing/suit/armor/redcoat/medic,
 /obj/item/clothing/head/helmet/redhelmet/medic,
@@ -4056,7 +4034,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "oD" = (
 /obj/machinery/photocopier,
 /obj/item/device/toner{
@@ -4092,7 +4070,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "oI" = (
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 9
@@ -4141,7 +4119,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "oR" = (
 /obj/structure/railing{
 	dir = 4
@@ -4161,7 +4139,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "oT" = (
 /turf/simulated/floor/fancyfloor/carpet,
 /area/cadiaoutpost/oa/service/inn)
@@ -4185,7 +4163,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "oV" = (
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
@@ -4193,7 +4171,7 @@
 /turf/simulated/floor/fancyfloor/carpet/grey{
 	dir = 9
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "oY" = (
 /obj/item/bedsheet/captain,
 /obj/structure/bed{
@@ -4211,7 +4189,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "pb" = (
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/oa/service/inn)
@@ -4267,7 +4245,7 @@
 /obj/effect/decal/remains,
 /obj/effect/decal/cleanable/nurgle,
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/new_hive/hive_city)
+/area/cadiaoutpost/oa/service/hab/inside)
 "po" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
@@ -4279,7 +4257,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "pq" = (
 /obj/item/clothing/mask/gas/commissar{
 	pixel_y = -1
@@ -4292,7 +4270,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "pr" = (
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/inn)
@@ -4339,7 +4317,7 @@
 /obj/machinery/light,
 /obj/effect/floor_decal/spline/plain,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "pE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/newcorner/plating/corner{
@@ -4358,7 +4336,7 @@
 	icon = 'icons/map_project/windows.dmi';
 	icon_state = "r_window"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "pR" = (
 /obj/machinery/light/small,
 /obj/effect/floor_decal/newcorner/polar,
@@ -4387,7 +4365,7 @@
 /obj/item/mortar_launcher,
 /obj/effect/floor_decal/industrial/mark,
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "pY" = (
 /obj/structure/flora/yes/shroomlog5{
 	pixel_y = -8;
@@ -4410,7 +4388,7 @@
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/cha1)
 "qb" = (
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/plating{
@@ -4427,7 +4405,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "qd" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 6
@@ -4449,7 +4427,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "qg" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -4486,7 +4464,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "ql" = (
 /obj/structure/bed/chair{
 	dir = 8;
@@ -4497,7 +4475,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "qm" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 1
@@ -4519,7 +4497,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "qq" = (
 /obj/machinery/light/small{
 	icon_state = "bulb1";
@@ -4615,7 +4593,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "qE" = (
 /obj/structure/closet/hive/wood{
 	anchored = 1
@@ -4650,7 +4628,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "qJ" = (
 /obj/structure/lattice,
 /obj/structure/lattice,
@@ -4658,9 +4636,6 @@
 	dir = 8
 	},
 /turf/simulated/open,
-/area/cadiaoutpost/oa/villageinside)
-"qK" = (
-/turf/simulated/floor/darksteel_floor,
 /area/cadiaoutpost/oa/villageinside)
 "qL" = (
 /obj/structure/table/graf/wood_office_table{
@@ -4776,7 +4751,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "rk" = (
 /obj/structure/table/graf/rusty_table,
 /obj/item/device/cassette/grimdark,
@@ -4786,7 +4761,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "rl" = (
 /obj/random/loot/tech1,
 /obj/structure/table/graf/reinf_table{
@@ -4812,7 +4787,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "rq" = (
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
@@ -4866,7 +4841,7 @@
 /turf/simulated/floor/tiled/freezer{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "rB" = (
 /obj/machinery/door/unpowered/inn{
 	name = "Storage"
@@ -4911,7 +4886,7 @@
 /turf/simulated/floor/fancyfloor/carpet/grey{
 	dir = 4
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "rG" = (
 /obj/structure/table/rack,
 /obj/item/gun/energy/las/lasgun{
@@ -4925,7 +4900,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "rJ" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -4971,7 +4946,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "rV" = (
 /obj/structure/table/rack,
 /obj/item/clothing/shoes/jackboots/cadian,
@@ -4982,7 +4957,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "rW" = (
 /obj/structure/window/reinforced{
 	health = 800;
@@ -5076,7 +5051,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "so" = (
 /obj/random/trash,
 /turf/simulated/floor/concrete,
@@ -5092,11 +5067,12 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/hab/inside)
 "su" = (
-/obj/effect/floor_decal/newcorner/blue/solid,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/turf/unsimulated/mineral{
+	icon = 'icons/turf/wall.dmi';
+	icon_state = "concrete0";
+	name = "strange wall"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "sv" = (
 /obj/machinery/shower{
 	desc = "A Golden Shower";
@@ -5105,7 +5081,7 @@
 /turf/simulated/floor/tiled/freezer{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "sw" = (
 /obj/item/broken_bottle,
 /obj/structure/table/graf/reinf_table{
@@ -5135,7 +5111,7 @@
 "sC" = (
 /obj/structure/sign/directions/evac,
 /turf/simulated/wall/concrete,
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "sE" = (
 /obj/structure/hivedecor/bookcase/huge,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -5297,10 +5273,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
-"tp" = (
-/turf/simulated/open,
-/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+/area/cadiaoutpost/oa/security/armory)
 "tq" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -5315,7 +5288,7 @@
 /obj/structure/closet,
 /obj/item/card/id/key/super/newmap/hab2/room7,
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/new_hive/hive_city)
+/area/cadiaoutpost/oa/service/hab/inside)
 "tw" = (
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 10
@@ -5371,7 +5344,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "tJ" = (
 /obj/structure/table/rack,
 /obj/item/gun/energy/las/lasgun/accatran,
@@ -5383,7 +5356,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "tL" = (
 /obj/structure/window/fantasy,
 /turf/simulated/floor/factory_floor{
@@ -5408,7 +5381,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/security/armory)
 "tP" = (
 /turf/simulated/floor/factory_floor{
 	dir = 1
@@ -5421,7 +5394,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "tR" = (
 /obj/effect/decal/cleanable/vomit,
 /turf/simulated/floor/darkwood{
@@ -5451,9 +5424,6 @@
 /obj/structure/bed/chair/wood/fancy/comfy1,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/village/pathfinder)
-"tW" = (
-/turf/simulated/open,
-/area/cadiaoutpost/oa/hangarpact2)
 "tX" = (
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
@@ -5489,7 +5459,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "ud" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 8
@@ -5513,7 +5483,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "ug" = (
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/hab/inside)
@@ -5641,7 +5611,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "uE" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -5650,7 +5620,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "uF" = (
 /obj/machinery/light/red,
 /obj/effect/floor_decal/turf/metal/seven,
@@ -5660,7 +5630,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "uG" = (
 /turf/simulated/floor/ceramic/surgery2{
 	dir = 10
@@ -5721,7 +5691,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "va" = (
 /obj/structure/torchwall{
 	pixel_y = 30
@@ -5759,7 +5729,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "vj" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 4
@@ -5779,7 +5749,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "vn" = (
 /obj/structure/table/graf/reinf_table{
 	icon_state = "reinf_table4"
@@ -5867,7 +5837,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "vv" = (
 /turf/simulated/floor/darkwood{
 	color = "purple"
@@ -5883,7 +5853,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "vy" = (
 /obj/structure/hivedecor/bookcase/huge,
 /obj/machinery/light/small,
@@ -6120,14 +6090,6 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"ww" = (
-/obj/machinery/optable,
-/obj/effect/floor_decal/newcorner/blue/solid,
-/obj/structure/sink/kitchen{
-	pixel_y = 32
-	},
-/turf/simulated/floor/ceramic/surgery2,
-/area/cadiaoutpost/oa/villageinside)
 "wz" = (
 /obj/effect/floor_decal/turf/metal/metal_wall{
 	dir = 1
@@ -6191,7 +6153,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "wM" = (
 /obj/structure/toilet{
 	color = "gold";
@@ -6215,15 +6177,10 @@
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "wR" = (
-/obj/effect/floor_decal/newcorner/blue/solid,
-/obj/effect/floor_decal/newcorner/step_i{
-	dir = 1;
-	pixel_y = -16
+/turf/simulated/floor/factory_floor{
+	dir = 1
 	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/village/pathfinder)
+/area/cadiaoutpost/oa/shuttle/station1)
 "wS" = (
 /obj/structure/closet/hive/metal{
 	anchored = 1
@@ -6297,7 +6254,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "xb" = (
 /obj/structure/closet/crate,
 /obj/machinery/light/small{
@@ -6374,7 +6331,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "xw" = (
 /obj/structure/bed/chair/wood/simple{
 	dir = 4
@@ -6420,18 +6377,12 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
-"xG" = (
-/obj/machinery/computer/shuttle_control/ferry/cha,
-/turf/simulated/floor/tiled/dark{
-	icon_state = "steel"
-	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "xI" = (
 /turf/simulated/floor/fancyfloor/carpet/grey{
 	dir = 10
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "xJ" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 9
@@ -6453,11 +6404,6 @@
 	},
 /turf/simulated/floor/fancyfloor/marble,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
-"xL" = (
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/service/inn)
 "xN" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 4
@@ -6530,7 +6476,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/security/armory)
 "xW" = (
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 1
@@ -6546,7 +6492,7 @@
 /turf/simulated/floor/darksteel_floor{
 	dir = 4
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "ya" = (
 /obj/structure/window/fantasy,
 /obj/structure/girder/reinforced,
@@ -6611,7 +6557,7 @@
 	req_one_access = list(67,331)
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "yq" = (
 /obj/structure/bed/barrack,
 /obj/structure/bed/barrack1,
@@ -6636,7 +6582,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "yu" = (
 /obj/structure/torchwall{
 	dir = 8;
@@ -6649,7 +6595,7 @@
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/hangarpact2)
 "yw" = (
 /obj/structure/bed/chair{
 	dir = 4;
@@ -6700,7 +6646,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "yD" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 8
@@ -6727,7 +6673,7 @@
 	name = "armory reception grate"
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "yN" = (
 /obj/item/fluff_items/alien_blaster,
 /obj/structure/table/graf/wood_office_table{
@@ -6766,7 +6712,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "yW" = (
 /obj/structure/table/graf/rich_table,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -6804,7 +6750,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "ze" = (
 /obj/effect/floor_decal/spline/fancy/wood,
 /obj/machinery/light/small{
@@ -6833,7 +6779,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "zm" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/table/rack,
@@ -6900,7 +6846,7 @@
 	icon = 'icons/map_project/windows.dmi';
 	icon_state = "r_window"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "zv" = (
 /obj/structure/curtain/open/privacy{
 	pixel_y = 32;
@@ -6948,7 +6894,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/wood,
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/villageinside)
 "zA" = (
 /obj/structure/table/graf/reinf_table{
 	icon_state = "reinf_table5"
@@ -6974,7 +6920,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "zE" = (
 /obj/effect/floor_decal/spline/fancy/wood/corner{
 	dir = 8
@@ -7013,7 +6959,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/security/armory)
 "zL" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -7047,7 +6993,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "zP" = (
 /obj/effect/floor_decal/spline/fancy/wood/corner,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -7077,7 +7023,7 @@
 /obj/item/mortar_shell/flare/blue,
 /obj/effect/floor_decal/industrial/mark,
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "zU" = (
 /obj/effect/floor_decal/newcorner/nbar,
 /obj/structure/flora/ausbushes/ywflowers{
@@ -7118,7 +7064,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/security/armory)
 "zZ" = (
 /obj/effect/floor_decal/turf/armory{
 	icon_state = "arm2"
@@ -7126,7 +7072,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Ab" = (
 /obj/structure/bed/chair/wood/fancy/comfy1{
 	dir = 1
@@ -7147,7 +7093,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "Af" = (
 /obj/machinery/button/remote/blast_door{
 	name = "LOCKDOWN!!!";
@@ -7185,14 +7131,14 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Al" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 4
 	},
 /obj/machinery/papershredder,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Am" = (
 /obj/structure/railing{
 	dir = 8;
@@ -7210,13 +7156,13 @@
 	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Ap" = (
 /obj/effect/floor_decal/turf/metal/six,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "Aq" = (
 /turf/simulated/floor/wood{
 	color = "grey"
@@ -7290,7 +7236,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "AH" = (
 /obj/item/device/cassette/titansbane,
 /obj/item/device/cassette/unknownsoldier,
@@ -7339,7 +7285,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "AT" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 6;
@@ -7375,7 +7321,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "AX" = (
 /obj/structure/curtain/open{
 	color = "#5f82d8";
@@ -7394,7 +7340,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "Ba" = (
 /obj/structure/closet/hive/wood,
 /obj/item/clothing/under/abaya,
@@ -7416,7 +7362,7 @@
 	name = "Toilet"
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Bd" = (
 /obj/structure/flora/pottedplant{
 	icon = "icons/map_project/furniture_and_decor.dmi";
@@ -7437,7 +7383,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Bi" = (
 /obj/structure/railing{
 	dir = 8;
@@ -7543,7 +7489,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "BB" = (
 /obj/structure/curtain/open/shower/security{
 	name = "privacy curtain";
@@ -7572,7 +7518,7 @@
 	},
 /obj/structure/table/graf/rich_table,
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "BD" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 8
@@ -7608,7 +7554,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "BH" = (
 /obj/structure/railing{
 	dir = 1
@@ -7676,7 +7622,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "BV" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -7751,7 +7697,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/security/armory)
 "Cm" = (
 /obj/effect/floor_decal/newcorner/reinforced/corner{
 	dir = 4
@@ -7765,7 +7711,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Co" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/darkwood/rotten,
@@ -7851,10 +7797,13 @@
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/hangarpact2)
 "CE" = (
-/turf/simulated/wall/concrete,
-/area/cadiaoutpost/cha1)
+/obj/machinery/computer/shuttle_control/ferry/cha,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "CH" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/light/small{
@@ -7935,13 +7884,13 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "CV" = (
 /obj/structure/bed/chair{
 	dir = 1
 	},
 /turf/simulated/floor/fancyfloor/carpet/grey,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "CW" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 6
@@ -7973,7 +7922,7 @@
 /turf/simulated/floor/tiled/freezer{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Db" = (
 /obj/machinery/light,
 /turf/simulated/floor/fancyfloor/gray_white,
@@ -7985,7 +7934,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "De" = (
 /obj/effect/floor_decal/newcorner/reinforced/corner{
 	dir = 8
@@ -7993,7 +7942,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "Df" = (
 /obj/machinery/door/blast/shutters{
 	dir = 8
@@ -8001,7 +7950,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "Dh" = (
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -8117,7 +8066,7 @@
 	color = "grey";
 	icon_state = "wall3"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "Dy" = (
 /obj/machinery/firealarm,
 /obj/effect/floor_decal/turf/metal/metal_wall{
@@ -8131,7 +8080,7 @@
 	icon_state = "04"
 	},
 /turf/simulated/wall/concrete,
-/area/cadiaoutpost/new_hive/hive_city)
+/area/cadiaoutpost/oa/service/hab/inside)
 "DB" = (
 /obj/structure/railing{
 	dir = 8
@@ -8186,7 +8135,7 @@
 /turf/simulated/floor/tiled/freezer{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "DK" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 1
@@ -8194,7 +8143,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "DL" = (
 /obj/structure/curtain/open/shower/security{
 	name = "privacy curtain";
@@ -8203,7 +8152,7 @@
 /mob/living/simple_animal/corgi/cpl_buddy,
 /obj/structure/dogbed,
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "DM" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 8
@@ -8241,7 +8190,7 @@
 	icon_state = "tube1"
 	},
 /turf/simulated/open,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "DS" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -8342,7 +8291,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Eg" = (
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/service/chapel)
@@ -8461,7 +8410,7 @@
 	desc = "Lyra and Kais Cain met on the battlefield, their first encounter a brutal firefight that left both sides battered and bloodied. But as Lyra watched Kais fighting with fierce determination, something stirred within her heart. She couldn't explain it, but there was something about this enemy warrior that drew her to him.Over the course of several skirmishes, Lyra and Kaisaphas Cain found themselves crossing paths again and again. They fought with all their might, but each time they saw each other, there was a glimmer of recognition in their eyes.Finally, during a lull in the fighting, Lyra approached Kais under a flag of truce. She held out her hand, and to her surprise, Kais took it. They spoke for a few minutes, sharing stories of their homeworlds and their families. They both knew that they were supposed to be enemies, but something had changed between them. They both felt a connection, a sense of understanding that went beyond the battle lines. As the days went by, Lyra and Kais continued to meet secretly, stealing moments of peace amidst the chaos of war. They would talk for hours, sharing their hopes and dreams, and as they did, their feelings for each other grew stronger. They knew that they were risking everything by being together, but they couldn't help themselves."
 	},
 /turf/simulated/floor/fancyfloor/carpet/grey/middle,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Ex" = (
 /obj/machinery/door/unpowered/inn/berryfarm{
 	req_one_access = list(355,268);
@@ -8505,7 +8454,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "EI" = (
 /obj/structure/bed/chair/wood/fancy/comfy1{
 	dir = 8
@@ -8556,7 +8505,7 @@
 	icon_state = "tube1"
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "ET" = (
 /obj/structure/closet/cabinet{
 	color = "grey"
@@ -8593,7 +8542,7 @@
 "EZ" = (
 /obj/structure/bed/chair,
 /turf/simulated/floor/wood,
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/villageinside)
 "Fb" = (
 /obj/structure/toilet{
 	dir = 4
@@ -8666,7 +8615,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Fq" = (
 /obj/item/storage/firstaid/adv,
 /obj/effect/floor_decal/newcorner/blue/solid,
@@ -8674,7 +8623,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Fu" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	icon_state = "02"
@@ -8714,12 +8663,12 @@
 	pixel_y = 11
 	},
 /turf/simulated/floor/ceramic/surgery2,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "FA" = (
 /turf/simulated/floor/fancyfloor/carpet/grey{
 	dir = 6
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "FB" = (
 /obj/structure/shipdecor{
 	icon_state = "tncB0"
@@ -8752,7 +8701,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "FH" = (
 /obj/effect/floor_decal/industrial/mark,
 /obj/structure/closet/crate/large,
@@ -8776,11 +8725,15 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "FI" = (
-/obj/machinery/door/airlock/glass_medical,
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 1
+	},
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/cha1)
 "FL" = (
 /obj/structure/table/rack,
 /obj/item/clothing/head/helmet/mining,
@@ -8836,14 +8789,16 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/villageinside)
 "FZ" = (
-/obj/effect/floor_decal/newcorner/blue/solid,
-/turf/simulated/floor/ceramic/surgery2,
-/area/cadiaoutpost/oa/villageinside)
+/obj/effect/wingrille_spawn/reinforced{
+	color = "grey"
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/security/armory)
 "Gb" = (
 /turf/simulated/shuttle/wall/corner/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "Gc" = (
 /obj/effect/floor_decal/newcorner/polar/corner,
 /obj/effect/decal/cleanable/dirt,
@@ -8877,7 +8832,7 @@
 /turf/simulated/floor/darksteel_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Gg" = (
 /obj/structure/bed/chair/wood/fancy,
 /turf/simulated/floor/darkwood,
@@ -8953,7 +8908,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/security/armory)
 "Gr" = (
 /obj/item/reagent_containers/food/drinks/bottle/amasecexpensive{
 	pixel_y = 8;
@@ -9052,7 +9007,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/security/armory)
 "GD" = (
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/villageinside)
@@ -9078,7 +9033,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "GI" = (
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/northern)
@@ -9096,7 +9051,7 @@
 /obj/item/mortar_shell/flare,
 /obj/effect/floor_decal/industrial/mark,
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "GM" = (
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/villageinside)
@@ -9140,7 +9095,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "GU" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
@@ -9191,7 +9146,7 @@
 /obj/item/FixOVein,
 /obj/effect/floor_decal/newcorner/blue/solid,
 /turf/simulated/floor/ceramic/surgery2,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Ha" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 8
@@ -9201,7 +9156,7 @@
 "Hd" = (
 /obj/machinery/smartfridge/chemistry,
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "He" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4
@@ -9228,11 +9183,10 @@
 /turf/simulated/open,
 /area/cadiaoutpost/oa/villageinside)
 "Hh" = (
-/obj/effect/floor_decal/turf/metal/metal_wall{
-	dir = 5
+/turf/simulated/floor/plating{
+	color = "grey"
 	},
-/turf/simulated/wall/concrete,
-/area/cadiaoutpost/new_hive/hive_city)
+/area/cadiaoutpost/oa/hangarpact2)
 "Hi" = (
 /obj/structure/curtain/open/privacy,
 /turf/simulated/floor/factory_floor,
@@ -9247,7 +9201,7 @@
 	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Hk" = (
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tilethick";
@@ -9317,7 +9271,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Hr" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -9325,7 +9279,7 @@
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/hangarpact2)
 "Hs" = (
 /obj/structure/catwalk,
 /obj/structure/railing{
@@ -9348,7 +9302,7 @@
 	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Hw" = (
 /obj/item/book/manual{
 	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
@@ -9399,7 +9353,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "HC" = (
 /obj/effect/floor_decal/newcorner/plating/quarter{
 	dir = 8
@@ -9461,7 +9415,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "HT" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/table/rack,
@@ -9479,7 +9433,7 @@
 "HV" = (
 /obj/structure/ladder,
 /turf/simulated/open,
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/villageinside)
 "HW" = (
 /obj/structure/bed/barrack,
 /obj/structure/bed/barrack1,
@@ -9490,7 +9444,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "HX" = (
 /obj/structure/railing{
 	dir = 1;
@@ -9559,7 +9513,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "In" = (
 /obj/structure/warfare/barricade/concrete_barrier{
 	dir = 1
@@ -9604,7 +9558,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "Iw" = (
 /obj/effect/landmark/start{
 	name = "Pathfinder"
@@ -9626,7 +9580,7 @@
 	req_one_access = list(67,331)
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Iz" = (
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /turf/simulated/floor/darkfloor,
@@ -9651,7 +9605,7 @@
 	},
 /obj/item/book/manual/law,
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "ID" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/darkwood,
@@ -9726,7 +9680,7 @@
 /turf/simulated/floor/tiled/freezer{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "IQ" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -9749,7 +9703,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "IU" = (
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -9840,7 +9794,7 @@
 	pixel_x = -32
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Jp" = (
 /obj/machinery/door/unpowered/newmap/hab2/room2,
 /turf/simulated/floor/factory_floor,
@@ -9890,7 +9844,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Jz" = (
 /obj/random/loot/badweaponlas,
 /obj/structure/table/graf/reinf_table{
@@ -9904,10 +9858,10 @@
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 6
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "JE" = (
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "JG" = (
 /obj/structure/table/rack,
 /obj/item/grenade/frag/high_yield/krak,
@@ -9916,7 +9870,7 @@
 /turf/simulated/floor/darksteel_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "JH" = (
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/darkwood,
@@ -10016,7 +9970,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Kd" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4
@@ -10033,7 +9987,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Kg" = (
 /obj/effect/floor_decal/newcorner/plating/quarter{
 	dir = 8
@@ -10041,13 +9995,13 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Kh" = (
 /obj/structure/bed/chair/wood/simple{
 	dir = 1
 	},
 /turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/new_hive/hive_city)
+/area/cadiaoutpost/oa/service/hab/inside)
 "Ki" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/mark,
@@ -10064,7 +10018,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Km" = (
 /obj/structure/closet/hive/wood{
 	anchored = 1
@@ -10161,7 +10115,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "KG" = (
 /obj/structure/warfare/barricade/concrete_barrier{
 	dir = 8
@@ -10171,7 +10125,7 @@
 	icon_state = "bulb1"
 	},
 /turf/simulated/floor/wood,
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/villageinside)
 "KH" = (
 /obj/item/storage/pill_bottle/inaprovaline,
 /obj/item/storage/pill_bottle/dylovene,
@@ -10181,7 +10135,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "KJ" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/sign/wantedruined{
@@ -10254,7 +10208,7 @@
 /obj/item/paper/administratum/omega,
 /obj/item/paper/administratum/omega,
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "KT" = (
 /obj/machinery/light{
 	dir = 4;
@@ -10380,7 +10334,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Lu" = (
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/shuttle/roguet)
@@ -10394,18 +10348,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
-"Lx" = (
-/obj/structure/closet/crate/freezer,
-/obj/item/organ/internal/lungs,
-/obj/item/organ/internal/liver,
-/obj/item/organ/internal/kidneys,
-/obj/item/organ/internal/heart,
-/obj/item/organ/internal/eyes,
-/obj/item/organ/internal/appendix,
-/obj/effect/floor_decal/newcorner/blue/solid,
-/turf/simulated/floor/ceramic/surgery2,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Ly" = (
 /obj/structure/lattice,
 /obj/effect/floor_decal/turf/piping{
@@ -10524,7 +10467,7 @@
 "LY" = (
 /obj/structure/closet/secure_closet/warden,
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Ma" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 10
@@ -10544,7 +10487,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "Mf" = (
 /turf/simulated/wall/r_wall,
 /turf/simulated/wall/concrete/strong,
@@ -10565,7 +10508,7 @@
 	color = "grey";
 	icon_state = "dark1"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "Mi" = (
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/tiled/dark,
@@ -10576,7 +10519,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Mk" = (
 /obj/structure/table/rack,
 /obj/item/stack/material/glass/fifty,
@@ -10586,7 +10529,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Ml" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -10660,7 +10603,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Mu" = (
 /obj/structure/table/rack/dark,
 /obj/random/loot/tech1,
@@ -10709,7 +10652,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "My" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1
@@ -10735,7 +10678,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "MB" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 1
@@ -10814,7 +10757,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "MQ" = (
 /obj/structure/curtain/open/shower/security{
 	name = "expensive curtain";
@@ -10900,7 +10843,7 @@
 /turf/simulated/floor/fancyfloor/carpet/grey{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Ng" = (
 /obj/structure/hivedecor/bookcase/huge{
 	pixel_x = -7
@@ -10922,7 +10865,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Np" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 1
@@ -10977,7 +10920,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Nw" = (
 /obj/structure/grille/metal_bars,
 /turf/simulated/floor/factory_floor{
@@ -11003,7 +10946,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "NA" = (
 /obj/structure/torchwall{
 	pixel_y = 30
@@ -11021,7 +10964,7 @@
 /turf/simulated/floor/tiled/freezer{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "NE" = (
 /obj/structure/statue/verina{
 	desc = "A polished and well maintained statue of Saint Katherine of the Order of Our Martyred Lady. The fire of spirit is a beacon of hope, a sign that even in this time of abounding horror, the Emperor has not abandoned His faithful servants.";
@@ -11071,7 +11014,7 @@
 	name = "Lockdown"
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "NK" = (
 /obj/item/trash/warfare_can/rat,
 /obj/effect/floor_decal/newcorner/plating,
@@ -11108,7 +11051,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/security/armory)
 "NR" = (
 /obj/machinery/door/blast/id_door{
 	id = "escapedoor"
@@ -11129,7 +11072,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/wood,
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/villageinside)
 "NW" = (
 /obj/structure/warfare/barricade/concrete_barrier{
 	dir = 4
@@ -11199,7 +11142,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Ol" = (
 /obj/structure/window/reinforced{
 	health = 800;
@@ -11337,7 +11280,7 @@
 /turf/simulated/floor/fancyfloor/carpet/grey{
 	dir = 5
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "ON" = (
 /obj/effect/floor_decal/newcorner/stone/corner,
 /obj/effect/floor_decal/newcorner/reinforced,
@@ -11361,7 +11304,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "OQ" = (
 /obj/effect/floor_decal/newcorner/polar/quarter,
 /obj/structure/flora/pottedplant,
@@ -11380,7 +11323,7 @@
 	name = "Commissar"
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "OV" = (
 /obj/structure/toilet{
 	dir = 8;
@@ -11396,7 +11339,7 @@
 /turf/simulated/floor/tiled/freezer{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "OX" = (
 /turf/simulated/wall/concrete/strong,
 /turf/simulated/wall/concrete/strong,
@@ -11452,7 +11395,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Pe" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/table/rack,
@@ -11528,7 +11471,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/security/armory)
 "Pl" = (
 /obj/structure/railing{
 	dir = 1;
@@ -11550,7 +11493,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Po" = (
 /obj/structure/bed/royal/bottom,
 /obj/effect/landmark/start/roguetrader,
@@ -11585,7 +11528,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Pr" = (
 /obj/item/reagent_containers/pill/happy{
 	pixel_y = 11
@@ -11605,7 +11548,7 @@
 /obj/effect/floor_decal/newcorner/plating,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/hive_city)
+/area/cadiaoutpost/oa/service/hab/inside)
 "Pt" = (
 /obj/structure/catwalk,
 /obj/structure/catwalk,
@@ -11706,7 +11649,7 @@
 /obj/item/device/cassette/church1,
 /obj/item/device/boombox,
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "PV" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 9;
@@ -11769,7 +11712,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Ql" = (
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tilethick";
@@ -11809,7 +11752,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Qs" = (
 /obj/structure/table/graf/reinf_table{
 	icon_state = "reinf_table4"
@@ -11889,7 +11832,7 @@
 /obj/item/device/radio/headset/red_team/all,
 /obj/item/device/radio/headset/red_team/all,
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "QD" = (
 /obj/effect/water/top{
 	color = "Blue"
@@ -11929,7 +11872,7 @@
 /turf/simulated/floor/darksteel_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "QJ" = (
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 4
@@ -11959,7 +11902,7 @@
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/cha1)
 "QP" = (
 /obj/structure/table/rack,
 /obj/item/landmine,
@@ -11970,7 +11913,7 @@
 /obj/item/landmine,
 /obj/effect/floor_decal/industrial/mark,
 /turf/simulated/floor/darksteel_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "QQ" = (
 /obj/machinery/light/blue{
 	dir = 4
@@ -11979,7 +11922,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "QR" = (
 /obj/structure/curtain/open/shower/security{
 	name = "expensive curtain";
@@ -12002,7 +11945,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/security/armory)
 "QX" = (
 /obj/machinery/shower{
 	desc = "A Golden Shower";
@@ -12059,14 +12002,7 @@
 	},
 /obj/item/book/manual/law,
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
-"Re" = (
-/obj/structure/bed/roller,
-/obj/effect/floor_decal/industrial/hatch/blue,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Rf" = (
 /obj/structure/flora/pottedplant{
 	icon = "icons/map_project/furniture_and_decor.dmi";
@@ -12109,7 +12045,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Rm" = (
 /obj/structure/curtain/open/shower/security{
 	name = "expensive curtain";
@@ -12207,7 +12143,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "RC" = (
 /obj/item/handcuffs{
 	pixel_y = -6
@@ -12220,10 +12156,13 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
 "RE" = (
-/turf/simulated/floor/darksteel_floor{
-	dir = 4
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
 	},
-/area/cadiaoutpost/oa/villageinside)
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/cha1)
 "RF" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/fancyfloor/brokenfloor3,
@@ -12235,7 +12174,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/security/armory)
 "RH" = (
 /obj/structure/bed/chair/holochair{
 	dir = 1
@@ -12244,7 +12183,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "RI" = (
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tileendtable";
@@ -12284,12 +12223,6 @@
 	},
 /turf/simulated/floor/fancyfloor/carpet/middle,
 /area/cadiaoutpost/oa/hallway/northern)
-"RL" = (
-/obj/effect/wingrille_spawn/reinforced{
-	color = "grey"
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/new_hive/hive_city)
 "RM" = (
 /obj/structure/banner/red{
 	pixel_x = -32
@@ -12357,7 +12290,7 @@
 /area/cadiaoutpost/oa/shuttle/roguet)
 "RX" = (
 /turf/simulated/floor/trenches,
-/area/cadiaoutpost/oa/village/pathfinder)
+/area/cadiaoutpost/oa/security/armory)
 "RZ" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 1
@@ -12366,7 +12299,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Sb" = (
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/new_hive/hive_city)
@@ -12478,7 +12411,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Sw" = (
 /obj/structure/sign/imperial{
 	pixel_y = 32
@@ -12513,7 +12446,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "SB" = (
 /turf/simulated/floor/fancyfloor/marble,
 /area/cadiaoutpost/oa/shuttle/roguet)
@@ -12532,7 +12465,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "SH" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	icon_state = "02"
@@ -12565,7 +12498,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "SK" = (
 /obj/effect/floor_decal/newcorner/stone,
 /obj/structure/bed/chair/stool2{
@@ -12597,7 +12530,7 @@
 	name = "armory reception grate"
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "SP" = (
 /obj/item/clothing/suit/armor/sentry/blue,
 /obj/item/clothing/head/helmet/sentryhelm/blue,
@@ -12630,14 +12563,14 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "ST" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 1
 	},
 /obj/effect/floor_decal/newcorner/reinforced,
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "SU" = (
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/tiled/dark,
@@ -12678,7 +12611,7 @@
 "Tb" = (
 /obj/effect/floor_decal/spline/plain,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Tc" = (
 /obj/structure/fireplacebl,
 /turf/simulated/floor/factory_floor,
@@ -12699,7 +12632,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "Tf" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 8
@@ -12720,7 +12653,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "Ti" = (
 /obj/machinery/door/airlock/multi_tile/metal/imperium{
 	name = "Transport Ship Cockpit";
@@ -12729,7 +12662,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "Tj" = (
 /obj/structure/torchwall{
 	pixel_y = 30
@@ -12745,7 +12678,7 @@
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/hangarpact2)
 "Tl" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 1
@@ -12803,7 +12736,7 @@
 /turf/simulated/floor/tiled/freezer{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Tt" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/machinery/vending/medical,
@@ -12881,7 +12814,7 @@
 	name = "deserter pie"
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "TF" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/dirt,
@@ -12937,7 +12870,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "TL" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 4
@@ -12945,7 +12878,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "TM" = (
 /turf/simulated/floor/fancyfloor/carpet,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
@@ -12985,7 +12918,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/security/armory)
 "TR" = (
 /obj/effect/floor_decal/newcorner/polar/corner{
 	dir = 8
@@ -13036,7 +12969,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Ua" = (
 /obj/structure/filingcabinet{
 	pixel_y = 20;
@@ -13051,7 +12984,7 @@
 	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Ub" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 8
@@ -13070,7 +13003,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/security/armory)
 "Uf" = (
 /obj/structure/bed/chair{
 	dir = 8;
@@ -13094,7 +13027,7 @@
 	},
 /obj/effect/floor_decal/newcorner/plating,
 /turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/hive_city)
+/area/cadiaoutpost/oa/service/hab/inside)
 "Uj" = (
 /obj/structure/table/graf/butcher_table,
 /obj/item/device/binoculars{
@@ -13110,7 +13043,7 @@
 	pixel_x = -5
 	},
 /turf/simulated/floor/wood,
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/villageinside)
 "Uk" = (
 /obj/structure/fireplacebl,
 /turf/simulated/floor/darkwood,
@@ -13151,13 +13084,13 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Uu" = (
 /turf/simulated/shuttle/wall{
 	color = "grey";
 	icon_state = "wall3"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "Uw" = (
 /obj/effect/floor_decal/newcorner/polar/corner{
 	dir = 1
@@ -13233,7 +13166,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "UG" = (
 /obj/machinery/door/unpowered/newmap/inn/room4,
 /turf/simulated/floor/factory_floor,
@@ -13275,14 +13208,8 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "UN" = (
-/obj/machinery/bodyscanner{
-	dir = 4;
-	icon_state = "body_scanner_0"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/villageinside)
+/turf/simulated/wall/concrete/strong,
+/area/cadiaoutpost/oa/shuttle/station1)
 "UP" = (
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/service/hab/inside)
@@ -13346,7 +13273,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Vd" = (
 /obj/structure/catwalk,
 /obj/structure/railing{
@@ -13361,7 +13288,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "Vi" = (
 /obj/structure/bed/chair{
 	dir = 4;
@@ -13377,7 +13304,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "Vp" = (
 /obj/structure/lattice,
 /turf/simulated/floor/plating/reinforced,
@@ -13446,7 +13373,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "VC" = (
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/security/armory)
@@ -13455,8 +13382,14 @@
 /turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/oa/service/inn)
 "VF" = (
-/turf/simulated/floor/trenches,
-/area/cadiaoutpost/oa/villageinside)
+/obj/machinery/light/small{
+	dir = 1;
+	icon_state = "bulb1"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security/armory)
 "VI" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -13487,7 +13420,7 @@
 	icon_state = "propulsion"
 	},
 /turf/simulated/floor/plating/reinforced,
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "VL" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -13502,7 +13435,7 @@
 	name = "Guardsmen Bunks"
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "VP" = (
 /obj/effect/floor_decal/turf/metal/metal_wall{
 	dir = 9;
@@ -13704,7 +13637,7 @@
 /turf/simulated/floor/darksteel_floor{
 	dir = 1
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Wr" = (
 /obj/structure/bed/roller,
 /obj/effect/floor_decal/industrial/hatch/blue,
@@ -13720,7 +13653,7 @@
 	req_one_access = list(63,10,331)
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Wv" = (
 /obj/effect/decal/cleanable/flour{
 	name = "snow";
@@ -13761,7 +13694,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "WD" = (
 /obj/machinery/light{
 	dir = 8;
@@ -13816,7 +13749,7 @@
 	req_one_access = list(63,10,331)
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "WQ" = (
 /obj/structure/railing,
 /obj/effect/floor_decal/newcorner/train{
@@ -13854,7 +13787,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "WW" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -13893,7 +13826,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "Xd" = (
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
@@ -14084,7 +14017,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "XO" = (
 /obj/structure/barbwire,
 /turf/simulated/floor/dirty,
@@ -14133,7 +14066,7 @@
 /turf/simulated/floor/tiled/freezer{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "XU" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -14226,7 +14159,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "Yd" = (
 /obj/effect/floor_decal/newcorner/nbar/corner{
 	dir = 8
@@ -14241,7 +14174,7 @@
 /obj/item/grenade/frag/warfare,
 /obj/effect/floor_decal/industrial/mark,
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Yf" = (
 /obj/structure/curtain/open/shower,
 /turf/simulated/floor/factory_floor,
@@ -14260,7 +14193,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Yi" = (
 /obj/structure/table/graf/reinf_table,
 /obj/effect/decal/cleanable/cobweb{
@@ -14351,7 +14284,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "YE" = (
 /obj/structure/curtain/open{
 	color = "#aa0000";
@@ -14387,7 +14320,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "YK" = (
 /obj/machinery/light,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -14399,7 +14332,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/shuttle/station1)
 "YM" = (
 /obj/structure/table/rack,
 /obj/item/cell/lasgun{
@@ -14413,7 +14346,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "YO" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -14436,7 +14369,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "YS" = (
 /obj/machinery/shower{
 	pixel_y = 20
@@ -14485,7 +14418,7 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Zg" = (
 /obj/machinery/photocopier{
 	color = "grey"
@@ -14502,7 +14435,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "Zi" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/bed{
@@ -14546,7 +14479,7 @@
 	icon_state = "centers"
 	},
 /turf/simulated/wall/wooden,
-/area/cadiaoutpost/oa/security/armory)
+/area/cadiaoutpost/oa/villageinside)
 "Zr" = (
 /obj/effect/floor_decal/newcorner/polar{
 	dir = 4
@@ -14661,7 +14594,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "ZK" = (
 /obj/structure/grille/iron_fence,
 /obj/structure/grille/iron_fence,
@@ -14676,7 +14609,7 @@
 	req_one_access = list(63,67,331,10)
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "ZN" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/machinery/light/small{
@@ -14686,7 +14619,7 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/security/armory)
 "ZO" = (
 /obj/structure/new_ore_box,
 /turf/simulated/floor/ceramic/surgery{
@@ -38865,8 +38798,8 @@ Gj
 Gj
 py
 py
-RL
-IG
+py
+UP
 vt
 vt
 vt
@@ -39370,7 +39303,7 @@ ug
 GY
 TX
 is
-RL
+py
 vt
 vt
 vt
@@ -39621,8 +39554,8 @@ gb
 ug
 ug
 ug
-Fv
-RL
+ug
+py
 vt
 vt
 vt
@@ -39874,7 +39807,7 @@ wC
 Tf
 wC
 Ug
-RL
+py
 vt
 vt
 vt
@@ -40377,7 +40310,7 @@ PX
 AI
 qz
 qz
-vt
+qz
 DA
 vt
 vt
@@ -40629,8 +40562,8 @@ PD
 VP
 CY
 CY
-Hh
-IG
+CY
+UP
 vt
 vt
 vt
@@ -40882,7 +40815,7 @@ yh
 sr
 yw
 pm
-IG
+UP
 vt
 vt
 vt
@@ -41134,7 +41067,7 @@ iD
 Di
 Rx
 tt
-IG
+UP
 vt
 vt
 vt
@@ -42271,28 +42204,28 @@ vt
 vt
 vt
 vt
-tW
-tW
-tW
-tW
-tW
-tW
-tW
-tW
-tW
-tW
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 rL
 Df
 Df
@@ -42302,10 +42235,10 @@ Df
 Df
 Df
 Df
-VC
-VC
-VC
-VC
+rL
+rL
+rL
+rL
 Df
 Df
 Df
@@ -42314,18 +42247,18 @@ Df
 Df
 Df
 Df
-ge
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-vt
-vt
-vt
-vt
+UN
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 vt
 bx
 bx
@@ -42523,29 +42456,29 @@ vt
 vt
 vt
 vt
-tW
-tW
-tW
-tW
-tW
-tW
-tW
-tW
-tW
-tW
-Wk
-Wk
-Wk
-Wk
-Wk
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-CE
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+rL
 Hr
 Hr
 Hr
@@ -42558,26 +42491,26 @@ kV
 pF
 pF
 kD
-Hr
-Hr
-Hr
-Hr
-Hr
-Hr
-Hr
-Hr
-ge
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-vt
-vt
-vt
-vt
+RE
+RE
+RE
+RE
+RE
+RE
+RE
+RE
+UN
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 vt
 bx
 bx
@@ -42775,37 +42708,37 @@ vt
 vt
 vt
 vt
-tW
-tW
-tW
-tW
-tp
-tp
-tp
-tp
-tp
-tp
-Wk
-Wk
-Wk
-Wk
-Wk
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-CE
-jZ
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+rL
+Hh
 mV
 Uu
 pM
 zu
 Uu
 Gb
-jZ
+Hh
 WQ
 pF
 pF
@@ -42818,18 +42751,18 @@ jZ
 jZ
 jZ
 jZ
-VC
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-vt
-vt
-vt
-vt
+rL
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 vt
 bx
 bx
@@ -43027,37 +42960,37 @@ vt
 vt
 vt
 vt
-tW
-tW
-tW
-tW
-tp
-tp
-tp
-tp
-tp
-tp
-Wk
-Wk
-Wk
-Wk
-Wk
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-CE
-jZ
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+rL
+Hh
 Uu
 hD
 wL
 Te
 hD
 Uu
-jZ
+Hh
 WQ
 pF
 pF
@@ -43070,18 +43003,18 @@ jZ
 jZ
 jZ
 jZ
-ge
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-vt
-vt
-vt
-vt
+UN
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 vt
 vt
 vt
@@ -43279,29 +43212,29 @@ vt
 vt
 vt
 vt
-tW
-tW
-tW
-tW
-tp
-tp
-tp
-tp
-tp
-tp
-Wk
-Wk
-Wk
-Wk
-Wk
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-CE
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+rL
 kj
 Uu
 eG
@@ -43309,7 +43242,7 @@ zO
 zO
 tQ
 Uu
-jZ
+Hh
 WQ
 pF
 pF
@@ -43322,18 +43255,18 @@ jZ
 jZ
 jZ
 qa
-ge
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-vt
-vt
-vt
-vt
+UN
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 vt
 vt
 vt
@@ -43531,29 +43464,29 @@ vt
 vt
 vt
 vt
-tW
-tW
-tW
-tp
-tp
-tp
-tp
-tp
-tp
-tp
-tp
-Wk
-Wk
-Wk
-Wk
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-CE
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+rL
 mV
 Uu
 vu
@@ -43574,18 +43507,18 @@ jZ
 jZ
 jZ
 jZ
-VC
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-vt
-vt
-vt
-vt
+rL
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 vt
 vt
 vt
@@ -43783,29 +43716,29 @@ vt
 vt
 vt
 vt
-tW
-tW
-tW
-tp
-tp
-tp
-tp
-tp
-tp
-tp
-tp
-Wk
-Wk
-Wk
-Wk
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-CE
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+rL
 Uu
 Uu
 Uu
@@ -43826,18 +43759,18 @@ jZ
 jZ
 jZ
 jZ
-ge
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-vt
-vt
-vt
-vt
+UN
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 vt
 vt
 bx
@@ -44035,29 +43968,29 @@ vt
 vt
 vt
 vt
-tW
-tW
-tW
-tp
-tp
-tp
-tp
-tp
-tp
-tp
-tp
-Wk
-Wk
-Wk
-Wk
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-CE
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+rL
 Uu
 Uu
 AY
@@ -44078,18 +44011,18 @@ jZ
 jZ
 jZ
 jZ
-VC
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-vt
-vt
-vt
-vt
+rL
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 vt
 vt
 bx
@@ -44287,29 +44220,29 @@ vt
 vt
 vt
 vt
-tW
-tW
-tW
-tp
-tp
-tp
-tp
-tp
-tp
-tp
-tp
-Wk
-Wk
-Wk
-Wk
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-CE
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+rL
 Uu
 Uu
 fR
@@ -44330,18 +44263,18 @@ jZ
 jZ
 jZ
 jZ
-ge
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-vt
-vt
-vt
-vt
+UN
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 vt
 vt
 bx
@@ -44539,29 +44472,29 @@ vt
 vt
 vt
 vt
-tW
-tW
-tW
-tp
-tp
-tp
-tp
-tp
-tp
-tp
-tp
-Wk
-Wk
-Wk
-Wk
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-CE
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+rL
 Uu
 Uu
 fR
@@ -44582,18 +44515,18 @@ jZ
 jZ
 jZ
 jZ
-ge
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-vt
-vt
-vt
-vt
+UN
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 vt
 vt
 bx
@@ -44791,29 +44724,29 @@ vt
 vt
 vt
 vt
-tW
-tW
-tW
-tp
-tp
-tp
-tp
-tp
-tp
-tp
-tp
-Wk
-Wk
-Wk
-Wk
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-CE
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+rL
 VK
 Uu
 fR
@@ -44834,18 +44767,18 @@ jZ
 jZ
 jZ
 jZ
-VC
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-vt
-vt
-vt
-vt
+rL
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 vt
 vt
 bx
@@ -45043,29 +44976,29 @@ vt
 vt
 vt
 vt
-tW
-tW
-tW
-tW
-tp
-tp
-tp
-tp
-tp
-tp
-Wk
-Wk
-Wk
-Wk
-Wk
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-CE
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+rL
 kj
 Uu
 GS
@@ -45073,7 +45006,7 @@ pa
 pa
 uF
 Uu
-jZ
+Hh
 WQ
 pF
 pF
@@ -45086,18 +45019,18 @@ jZ
 jZ
 jZ
 qa
-ge
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-vt
-vt
-vt
-vt
+UN
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 vt
 vt
 bx
@@ -45295,37 +45228,37 @@ vt
 vt
 vt
 vt
-tW
-tW
-tW
-tW
-tp
-tp
-tp
-tp
-tp
-tp
-Wk
-Wk
-Wk
-Wk
-Wk
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-CE
-jZ
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+rL
+Hh
 Dx
 NI
 NI
 NI
 NI
 Dx
-jZ
+Hh
 WQ
 pF
 pF
@@ -45338,18 +45271,18 @@ jZ
 jZ
 jZ
 jZ
-VC
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-vt
-vt
-vt
-vt
+rL
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 vt
 vt
 bx
@@ -45547,59 +45480,59 @@ vt
 vt
 vt
 vt
-tW
-tW
-tW
-tW
-tW
-tW
-tW
-tW
-tW
-tW
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 rL
-jZ
+Hh
 yv
 Tk
 Tk
 Tk
 Tk
 CD
-jZ
+Hh
 Et
 pF
 pF
 BH
 jZ
-yv
-Tk
-Tk
-Tk
-Tk
-CD
+mf
+ac
+ac
+ac
+ac
+FI
 jZ
-ge
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
+UN
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 UB
 UB
 UB
@@ -45799,28 +45732,28 @@ vt
 vt
 vt
 vt
-tW
-tW
-tW
-tW
-tW
-tW
-tW
-tW
-tW
-tW
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 rL
 oQ
 oQ
@@ -45842,16 +45775,16 @@ oQ
 oQ
 oQ
 oQ
-VC
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
+rL
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 UB
 UB
 rR
@@ -46051,28 +45984,28 @@ vt
 vt
 vt
 vt
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 rL
 jB
 jB
@@ -46094,16 +46027,16 @@ jB
 jB
 jB
 jB
-ge
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
+UN
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 UB
 UB
 rR
@@ -46303,28 +46236,28 @@ vt
 vt
 vt
 vt
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 rL
 uZ
 uZ
@@ -46345,17 +46278,17 @@ TL
 TL
 Mc
 uZ
-VC
-li
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
+rL
+CE
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 UB
 UB
 rR
@@ -46555,28 +46488,28 @@ vt
 vt
 vt
 vt
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 rL
 uZ
 uZ
@@ -46597,17 +46530,17 @@ qo
 qo
 BA
 uZ
-VC
-ge
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
+rL
+UN
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 UB
 UB
 rR
@@ -46807,59 +46740,59 @@ vt
 vt
 vt
 vt
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 rL
 uZ
 uZ
-VC
-VC
-VC
-VC
-VC
-lJ
+rL
+rL
+rL
+rL
+rL
+wR
 Vj
-VC
-VC
-lJ
+rL
+rL
+wR
 Vj
-VC
-VC
-VC
-VC
-VC
+rL
+rL
+rL
+rL
+rL
 uZ
-VC
-ge
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
+rL
+UN
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 UB
 UB
 rR
@@ -47059,35 +46992,35 @@ vt
 vt
 vt
 vt
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 rL
 uZ
 uZ
-VC
-VC
-VC
-VC
+rL
+rL
+rL
+rL
 qf
 FG
 FG
@@ -47096,22 +47029,22 @@ cv
 FG
 FG
 zi
-VC
-VC
-VC
-VC
+rL
+rL
+rL
+rL
 uZ
-VC
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
+rL
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 UB
 UB
 rR
@@ -47311,35 +47244,35 @@ vt
 vt
 vt
 vt
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 rL
 uZ
 uZ
-VC
-VC
-VC
-VC
+rL
+rL
+rL
+rL
 Xb
 fo
 Mh
@@ -47348,22 +47281,22 @@ Th
 fo
 Mh
 du
-VC
-VC
-VC
-VC
+rL
+rL
+rL
+rL
 uZ
-VC
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
+rL
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 UB
 UB
 UB
@@ -47563,35 +47496,35 @@ vt
 vt
 vt
 vt
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 rL
 gt
 uZ
-VC
-VC
-VC
-VC
+rL
+rL
+rL
+rL
 Yc
 fo
 Mh
@@ -47600,22 +47533,22 @@ Th
 fo
 Mh
 du
-VC
-VC
-VC
-VC
+rL
+rL
+rL
+rL
 wZ
-VC
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
+rL
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 UB
 UB
 UB
@@ -47815,35 +47748,35 @@ vt
 vt
 vt
 vt
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 rL
 uZ
 uZ
-VC
-VC
-VC
-VC
+rL
+rL
+rL
+rL
 Xb
 fo
 Mh
@@ -47852,22 +47785,22 @@ Th
 fo
 Mh
 du
-VC
-VC
-VC
-VC
+rL
+rL
+rL
+rL
 uZ
-ge
-ge
-ge
-ge
-ge
-ge
-ge
-ge
-ge
-ge
-ge
+UN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
 PN
 PN
 PN
@@ -48067,35 +48000,35 @@ vt
 vt
 vt
 vt
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 rL
 uZ
 uZ
-VC
-VC
-VC
-VC
+rL
+rL
+rL
+rL
 zc
 HS
 HS
@@ -48104,22 +48037,22 @@ xF
 HS
 HS
 qk
-VC
-VC
-VC
-VC
+rL
+rL
+rL
+rL
 uZ
-ge
-ge
-ge
-ge
-ge
-ge
-pF
-pF
-pF
-pF
-pF
+UN
+PN
+PN
+PN
+PN
+PN
+UB
+UB
+UB
+UB
+UB
 UB
 UB
 UB
@@ -48319,57 +48252,57 @@ vt
 vt
 vt
 vt
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
-Wk
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 rL
 uZ
 YL
-VC
-pF
-pF
-VC
+rL
+Wk
+Wk
+rL
 Iv
 Iv
 Iv
 Iv
 Iv
 Iv
-VC
-VC
-VC
-pF
-pF
-VC
+rL
+rL
+rL
+Wk
+Wk
+rL
 ka
-ge
-ge
-ge
-ge
-ge
-ge
-pF
-pF
-VC
+UN
+PN
+PN
+PN
+PN
+PN
+UB
+UB
+eP
 KG
 zz
 uj
@@ -48571,56 +48504,56 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
 UB
-VC
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+rL
 uZ
 uZ
 GH
 uZ
 uZ
-VC
-pF
-pF
-pF
-pF
-pF
-pF
-VC
-VC
-VC
+rL
+UB
+UB
+UB
+UB
+UB
+UB
+rL
+rL
+rL
 uZ
 uZ
 GH
 uZ
-VC
-ge
-ge
-ge
-ge
-ge
-pF
-pF
+rL
+PN
+PN
+PN
+PN
+PN
+UB
+UB
 lQ
 EZ
 Uj
@@ -48823,58 +48756,58 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
 UB
-VC
-VC
-VC
-VC
-VC
-VC
-VC
-pF
-pF
-pF
-pF
-pF
-pF
-VC
-VC
-VC
-VC
-VC
-VC
-VC
-VC
-ge
-ge
-ge
-ge
-ge
-pF
-pF
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+rL
+rL
+rL
+rL
+rL
+rL
+rL
+UB
+UB
+UB
+UB
+UB
+UB
+rL
+rL
+rL
+rL
+rL
+rL
+rL
+rL
+PN
+PN
+PN
+PN
+PN
+UB
+UB
 Zq
-RT
+YF
 HV
 YF
 FT
@@ -49075,59 +49008,59 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
 UB
-VC
-VC
-VC
-VC
-VC
-VC
-VC
-pF
-pF
-pF
-pF
-pF
-pF
-VC
-VC
-VC
-VC
-VC
-VC
-VC
-VC
-ge
-ge
-ge
-ge
-ge
-pF
-pF
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+rL
+rL
+rL
+rL
+rL
+rL
+rL
+UB
+UB
+UB
+UB
+UB
+UB
+rL
+rL
+rL
+rL
+rL
+rL
+rL
+rL
+PN
+PN
+PN
+PN
+PN
+UB
+UB
 oy
-RT
-RT
+YF
+YF
 YF
 FT
 UB
@@ -49327,57 +49260,57 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
 UB
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-VC
-ge
-ge
-ge
-ge
-ge
-pF
-pF
-VC
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+eP
+PN
+PN
+PN
+PN
+PN
+UB
+UB
+eP
 fE
 NU
 wG
@@ -49579,59 +49512,59 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
 UB
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-VC
-ge
-ge
-ge
-ge
-ge
-pF
-pF
-pF
-pF
-pF
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+eP
+PN
+PN
+PN
+PN
+PN
+UB
+UB
+UB
+UB
+UB
 UB
 UB
 UB
@@ -49831,59 +49764,59 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
 UB
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-VC
-ge
-ge
-ge
-ge
-ge
-pF
-pF
-pF
-pF
-pF
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+eP
+PN
+PN
+PN
+PN
+PN
+UB
+UB
+UB
+UB
+UB
 UB
 UB
 UB
@@ -50083,59 +50016,59 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
 UB
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-VC
-ge
-ge
-ge
-ge
-ge
-pF
-pF
-pF
-pF
-pF
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+eP
+PN
+PN
+PN
+PN
+PN
+UB
+UB
+UB
+UB
+UB
 UB
 UB
 UB
@@ -50335,59 +50268,59 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
 UB
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-VC
-VC
-ge
-ge
-ge
-ge
-pF
-pF
-pF
-pF
-pF
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+eP
+eP
+PN
+PN
+PN
+PN
+UB
+UB
+UB
+UB
+UB
 UB
 UB
 UB
@@ -50587,59 +50520,59 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-ge
-ge
-ge
-ge
-ge
-ge
-ge
-ge
-ge
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
+PN
 PN
 PN
 UB
@@ -50857,32 +50790,32 @@ uU
 uU
 vt
 vt
-vt
-vt
-vt
-vt
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 ge
 zS
 eI
@@ -50893,13 +50826,13 @@ ta
 CO
 rY
 yr
-PN
-PN
-PN
-PN
-PN
-PN
-UB
+ge
+ge
+ge
+ge
+ge
+ge
+pF
 UB
 UB
 lZ
@@ -51109,32 +51042,32 @@ uU
 uU
 uU
 uU
-vt
-vt
-vt
-vt
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 VC
 Gl
 Vx
@@ -51145,13 +51078,13 @@ HU
 HU
 Xp
 oB
-PN
-IU
+ge
+HU
 YP
 Ef
 zD
-PN
-UB
+ge
+pF
 UB
 UB
 UB
@@ -51361,32 +51294,32 @@ uU
 uU
 uU
 uU
-uU
-vt
-vt
-vt
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
-pF
+XG
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
 ge
 Rt
 Vx
@@ -51396,14 +51329,14 @@ Wr
 Wr
 Rg
 Yj
-su
+wk
 Ws
-IU
+HU
 RB
 dl
 iu
-PN
-UB
+ge
+pF
 UB
 UB
 UB
@@ -51613,20 +51546,8 @@ uU
 uU
 uU
 uU
-uU
-uU
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+XG
+XG
 UB
 UB
 UB
@@ -51639,23 +51560,35 @@ UB
 UB
 UB
 UB
-PN
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+ge
 GZ
+Vx
 FZ
-FY
-su
+wk
 vx
 vx
 my
 my
-su
-PN
+wk
+ge
 YI
 mq
-IU
+HU
 Ok
-PN
-UB
+ge
+pF
 UB
 UB
 UB
@@ -51865,20 +51798,8 @@ uU
 uU
 uU
 uU
-uU
-uU
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
-vt
+XG
+XG
 UB
 UB
 UB
@@ -51891,23 +51812,35 @@ UB
 UB
 UB
 UB
-eP
-ww
-FZ
-FI
-su
-IU
-IU
-IU
-IU
-su
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+UB
+VC
+Gl
+Vx
+kX
+wk
+HU
+HU
+HU
+HU
+wk
 Hd
-IU
-IU
+HU
+HU
 rj
 Ok
-PN
-UB
+ge
+pF
 UB
 UB
 UB
@@ -52143,23 +52076,23 @@ UB
 UB
 UB
 UB
-PN
-dv
-FZ
-PN
-kW
-Re
-Re
-cj
-UN
+ge
+Rt
+Vx
+ge
+eF
+Wr
+Wr
+Rg
+Yj
 oB
-PN
-PN
+ge
+ge
 Ws
-PN
-PN
-PN
-UB
+ge
+ge
+ge
+pF
 UB
 UB
 UB
@@ -52395,23 +52328,23 @@ UB
 UB
 UB
 UB
-eP
+VC
 Fz
-Lx
-PN
-su
+eI
+ge
+wk
 vx
 vx
 my
 my
-su
-FI
+wk
+kX
 Lw
 Lw
 RH
-PN
-PN
-UB
+ge
+ge
+pF
 UB
 UB
 UB
@@ -52647,23 +52580,23 @@ UB
 UB
 UB
 UB
-PN
-eP
-PN
-PN
-PN
-IM
-IU
-IU
-IU
-su
-FY
+ge
+VC
+ge
+ge
+ge
+VF
+HU
+HU
+HU
+wk
+FZ
 Lw
 Lw
 hB
-PN
-UB
-UB
+ge
+pF
+pF
 UB
 UB
 UB
@@ -52899,23 +52832,23 @@ UB
 UB
 UB
 UB
-PN
-eP
-eP
+ge
+VC
+VC
 rA
-PN
+ge
 No
 KH
 Zh
 Fq
 ZN
-FI
+kX
 Lw
 Lw
 RH
-PN
-UB
-UB
+ge
+pF
+pF
 UB
 UB
 UB
@@ -53151,23 +53084,23 @@ UB
 UB
 UB
 UB
-eP
+VC
 DJ
 Rl
 fi
-PN
-PN
-PN
-PN
-PN
-PN
-PN
+ge
+ge
+ge
+ge
+ge
+ge
+ge
 Lw
 Lw
-PN
-PN
-UB
-UB
+ge
+ge
+pF
+pF
 UB
 UB
 UB
@@ -53403,29 +53336,29 @@ UB
 UB
 UB
 UB
-PN
-eP
-eP
+ge
+VC
+VC
 jP
-PN
+ge
 Qp
 aV
 TK
 HW
 uA
-PN
+ge
 Lw
 Lw
-PN
-PN
-PN
-PN
-PN
-PN
-PN
-ew
-ew
-ew
+ge
+ge
+ge
+ge
+su
+su
+su
+su
+su
+su
 ew
 lZ
 lZ
@@ -53655,7 +53588,7 @@ UB
 UB
 UB
 UB
-eP
+VC
 DJ
 Rl
 fi
@@ -53665,19 +53598,19 @@ Pn
 Pn
 Pn
 Pn
-PN
+ge
 yV
 Lw
-PN
-PN
+ge
+ge
 vi
 IT
 vi
 vi
 uf
-wR
+Kc
 RX
-ew
+su
 ew
 lZ
 lZ
@@ -53907,29 +53840,29 @@ UB
 UB
 UB
 UB
-PN
-eP
-eP
+ge
+VC
+VC
 jS
-PN
+ge
 jm
 ZJ
 CR
-IU
-IU
+HU
+HU
 VO
 Lw
 lv
-PN
+ge
 Nv
 vi
 bz
 cN
 ga
 vi
-VF
-VF
-PN
+RX
+RX
+su
 mY
 mY
 mY
@@ -54159,17 +54092,17 @@ UB
 UB
 UB
 UB
-eP
-eP
+VC
+VC
 gF
 fi
-PN
+ge
 dO
 hL
 hL
 hL
 ah
-PN
+ge
 yV
 Lw
 nr
@@ -54179,9 +54112,9 @@ TZ
 ga
 TZ
 vi
-VF
-VF
-PN
+RX
+RX
+su
 mY
 mY
 mY
@@ -54411,17 +54344,17 @@ UB
 UB
 UB
 eP
-PN
-eP
+ge
+VC
 NC
 sv
-PN
+ge
 gz
 rk
 VB
 bp
 Cn
-PN
+ge
 Lw
 Lw
 Lw
@@ -54432,8 +54365,8 @@ vi
 vi
 vi
 Kc
-VF
-PN
+RX
+su
 mY
 mY
 mY
@@ -54663,29 +54596,29 @@ UB
 UB
 UB
 eP
-xG
-PN
-PN
-PN
-PN
-PN
-FY
-FY
-FY
-FY
-PN
+li
+ge
+ge
+ge
+ge
+ge
+FZ
+FZ
+FZ
+FZ
+ge
 Lw
 lv
-PN
-PN
+ge
+ge
 vi
 vi
 UF
-PN
-PN
-PN
-PN
-PN
+ge
+ge
+ge
+ge
+su
 mY
 mY
 mY
@@ -54915,36 +54848,36 @@ UB
 UB
 UB
 eP
-PN
+ge
 OW
 Da
 Ts
-PN
-PN
+ge
+ge
 BB
 Jn
 kf
 Jn
-PN
+ge
 Lw
 Lw
-PN
-PN
-PN
+ge
+ge
+ge
 JE
-PN
-PN
-PN
-PN
-PN
-PN
-PN
-PN
-PN
-PN
-PN
-PN
-PN
+ge
+ge
+ge
+ge
+ge
+su
+su
+su
+su
+su
+su
+su
+su
 IH
 Cp
 Km
@@ -55167,36 +55100,36 @@ UB
 UB
 UB
 eP
-PN
-PN
+ge
+ge
 jS
-PN
-PN
+ge
+ge
 fG
 ju
 ju
 ju
 Hv
-PN
+ge
 yV
 Lw
-PN
-UB
-UB
-qK
-PN
+ge
+pF
+pF
+XA
+ge
 eO
 KF
 XN
-mf
+GC
 Zf
 FH
 tI
-mf
+GC
 iC
 Sv
 Sv
-IH
+su
 IH
 IH
 IH
@@ -55423,32 +55356,32 @@ jN
 aL
 fu
 pq
-PN
+ge
 Ua
 oX
 kN
 xI
 pD
-PN
+ge
 hk
 Lw
-PN
-UB
+ge
+pF
 DR
-RE
-PN
-mf
-mf
-mf
-mf
-mf
-mf
+XE
+ge
 GC
 GC
 GC
 GC
 GC
-IH
+GC
+GC
+GC
+GC
+GC
+GC
+su
 IH
 vv
 IH
@@ -55675,7 +55608,7 @@ ig
 JA
 gv
 PU
-PN
+ge
 Hj
 Ne
 Ew
@@ -55684,15 +55617,15 @@ Tb
 yn
 Lw
 Lw
-PN
-PN
-PN
-PN
-PN
+ge
+ge
+ge
+ge
+ge
 ch
 Fp
 AW
-mf
+GC
 rV
 BT
 Pk
@@ -55700,7 +55633,7 @@ GC
 zY
 do
 zH
-IH
+su
 tR
 vv
 dZ
@@ -55927,32 +55860,32 @@ Rd
 fu
 OU
 nD
-PN
+ge
 Ao
 OM
 rF
 FA
 Tb
-PN
+ge
 hk
 Lw
-PN
-PN
-PN
-PN
-PN
-PN
-PN
-PN
-mf
-PN
-PN
-IH
+ge
+ge
+ge
+ge
+ge
+ge
+ge
+ge
 GC
-IH
-IH
-IH
-IH
+ge
+ge
+ge
+GC
+ge
+ge
+ge
+su
 iP
 tR
 IH
@@ -56179,24 +56112,24 @@ KS
 fu
 fu
 TE
-PN
+ge
 Ao
-rR
+dN
 eN
-rR
+dN
 Tb
-PN
+ge
 yV
 HA
-PN
+ge
 fP
 Pq
 Yh
-PN
+ge
 Ms
 rG
 rG
-mf
+GC
 ma
 yA
 cY
@@ -56204,7 +56137,7 @@ GC
 kO
 TQ
 xV
-IH
+su
 vv
 vv
 Pr
@@ -56437,26 +56370,26 @@ eR
 AP
 Al
 ny
-PN
+ge
 Im
 Lw
 SO
 MA
 Lw
 WV
-PN
-mf
-mf
-mf
-mf
-mf
-mf
+ge
 GC
 GC
 GC
 GC
 GC
-IH
+GC
+GC
+GC
+GC
+GC
+GC
+su
 nQ
 KA
 GR
@@ -56679,36 +56612,36 @@ UB
 UB
 UB
 eP
-PN
-PN
-PN
-PN
-PN
-PN
-PN
-eP
-PN
-PN
-PN
+ge
+ge
+ge
+ge
+ge
+ge
+ge
+VC
+ge
+ge
+ge
 Im
 Lw
 yJ
 qD
 Hq
 OO
-PN
+ge
 hJ
-mf
-mf
-PN
+GC
+GC
+ge
 Ke
-mf
+GC
 tO
-IH
-xL
+ge
+HU
 il
 RG
-IH
+su
 vv
 ln
 IH
@@ -56931,36 +56864,36 @@ UB
 UB
 UB
 eP
-PN
-PN
-PN
-PN
-PN
-PN
-PN
-eP
-eP
+ge
+ge
+ge
+ge
+ge
+ge
+ge
+VC
+VC
 rA
-PN
+ge
 Im
 ht
 SO
 MA
 zZ
 SA
-PN
+ge
 oS
-mf
-mf
+GC
+GC
 kz
 Qi
-mf
+GC
 QV
 Gq
 GC
 GC
 GC
-IH
+su
 Ru
 cd
 IH
@@ -57183,36 +57116,36 @@ UB
 UB
 UB
 eP
-PN
-PN
-PN
-PN
-PN
-PN
-eP
+ge
+ge
+ge
+ge
+ge
+ge
+VC
 DJ
 Rl
 fi
-PN
+ge
 yV
 lv
-PN
+ge
 ub
 Dd
 Mj
-PN
+ge
 tJ
-mf
-mf
+GC
+GC
 vm
 oU
-mf
+GC
 Cl
 NQ
 GC
 el
 Uc
-IH
+su
 IH
 IH
 IH
@@ -57435,15 +57368,15 @@ UB
 UB
 UB
 eP
-PN
-PN
-PN
-PN
-PN
-PN
-PN
-eP
-eP
+ge
+ge
+ge
+ge
+ge
+ge
+ge
+VC
+VC
 jP
 Bb
 Lw
@@ -57452,19 +57385,19 @@ WP
 MA
 Lw
 BG
-PN
+ge
 Ls
-mf
-mf
+GC
+GC
 bv
 SI
-mf
+GC
 to
 Ki
-mf
-mf
-mf
-PN
+GC
+GC
+GC
+su
 IU
 IU
 IU
@@ -57687,12 +57620,12 @@ UB
 UB
 UB
 PN
-PN
-PN
-PN
-PN
-PN
-PN
+ge
+ge
+ge
+ge
+ge
+ge
 IN
 fi
 cJ
@@ -57700,14 +57633,14 @@ fi
 Bb
 yV
 HA
-PN
+ge
 EE
 Ut
 Kg
 ZL
-mf
-mf
-mf
+GC
+GC
+GC
 YM
 Pd
 SS
@@ -57716,7 +57649,7 @@ Ak
 SS
 Jy
 po
-PN
+su
 IU
 IU
 IU
@@ -57939,36 +57872,36 @@ UB
 UB
 UB
 UB
-PN
-PN
-PN
-PN
-eP
+ge
+ge
+ge
+ge
+VC
 gF
 XT
 fi
 cJ
 fi
-PN
+ge
 Iy
-FY
-PN
-PN
+FZ
+ge
+ge
 gP
-PN
-PN
+ge
+ge
 Mx
-mf
-mf
-mf
-PN
-PN
-PN
-PN
-PN
-PN
-PN
-PN
+GC
+GC
+GC
+su
+su
+su
+su
+su
+su
+su
+su
 eP
 eP
 eP
@@ -58191,29 +58124,29 @@ UB
 UB
 UB
 UB
-PN
-PN
-PN
-PN
-eP
-PN
+ge
+ge
+ge
+ge
+VC
+ge
 sv
-PN
-PN
-PN
-PN
+ge
+ge
+ge
+ge
 fu
 DL
-PN
+ge
 Vc
 Bf
-PN
-PN
-PN
+ge
+ge
+ge
 nj
-PN
-PN
-PN
+ge
+ge
+su
 IV
 FE
 fX
@@ -58443,29 +58376,29 @@ UB
 UB
 UB
 UB
-PN
-PN
-PN
-PN
-PN
-PN
-PN
-PN
+ge
+ge
+ge
+ge
+ge
+ge
+ge
+ge
 kh
 qI
 IB
 fu
 dh
-PN
+ge
 MP
 Bf
-PN
+ge
 QI
 RZ
 ki
 YB
 al
-PN
+su
 eP
 WO
 KY
@@ -58695,29 +58628,29 @@ UB
 UB
 UB
 UB
-eP
-PN
-PN
-PN
-PN
-PN
-PN
-PN
+VC
+ge
+ge
+ge
+ge
+ge
+ge
+ge
 nq
 gv
 fu
 fu
 fu
-PN
+ge
 dj
 Bf
-PN
+ge
 JG
 ST
 Ye
 aa
 Wq
-PN
+su
 jV
 Xd
 Xd
@@ -58947,29 +58880,29 @@ UB
 UB
 UB
 UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-PN
+pF
+pF
+pF
+pF
+pF
+pF
+pF
+ge
 lP
 oo
 EQ
 fu
 LY
-PN
+ge
 AG
 ip
-PN
+ge
 QP
 aa
 pX
 aa
 lW
-PN
+su
 jV
 Xd
 Xd
@@ -59199,29 +59132,29 @@ UB
 UB
 UB
 UB
-UB
-UB
-UB
-UB
-UB
-UB
-UB
-PN
-PN
-PN
-PN
-PN
-PN
-PN
+pF
+pF
+pF
+pF
+pF
+pF
+pF
+ge
+ge
+ge
+ge
+ge
+ge
+ge
 lN
 jq
-PN
+ge
 eb
 aa
 GL
 aa
 Ge
-PN
+su
 jV
 jV
 jV
@@ -59467,13 +59400,13 @@ UB
 PN
 PN
 PN
-PN
+ge
 xY
 aa
 zT
 aa
 xY
-PN
+su
 UB
 UB
 UB
@@ -59719,13 +59652,13 @@ UB
 UB
 UB
 UB
-PN
-PN
-PN
-PN
-PN
-PN
-PN
+ge
+ge
+ge
+ge
+ge
+ge
+su
 UB
 UB
 UB

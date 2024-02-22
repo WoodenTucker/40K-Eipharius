@@ -38,7 +38,7 @@
 	supervisors = "The God Emperor of Mankind"
 	selection_color = "#848484"
 	outfit_type = /decl/hierarchy/outfit/job/penitent
-	latejoin_at_spawnpoints = TRUE
+	latejoin_at_spawnpoints = FALSE
 	announced = FALSE
 	cultist_chance = 50
 
