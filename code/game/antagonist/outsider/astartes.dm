@@ -60,9 +60,7 @@ var/datum/antagonist/ert/astartes
 		/mob/living/carbon/human/proc/astaready,
 		/mob/living/carbon/human/proc/astatoglory,
 		/mob/living/carbon/human/proc/astaxenos)
-		H.verbs -= list(/mob/living/carbon/human/verb/emoteemperorprotects)
-		H.add_stats(28, rand(20,26), rand(22,26), rand(17,24)) //genuinely no idea what to make their stats
-		H.add_skills(11,11,11,11,11)
+
 /*switch(title) //either you get this to work or you dont change it, ok?
 			if("Blood Angel Tactical Marine")
 				H.add_skills(rand(13,15),rand(11,13),5,5,5)
@@ -106,34 +104,9 @@ var/datum/antagonist/ert/astartes
 /datum/antagonist/ert/astartes/New()
 	..()
 	leader_welcome_text = "As leader of the Emergency Response Team, you answer only to [GLOB.using_map.boss_name], and have authority to override the Rogue Trader where it is necessary to achieve your mission goals. It is recommended that you attempt to cooperate with the Rogue Trader where possible, however."
-	ert = src
+	astartesert = src
 
-/datum/antagonist/ert/greet(var/datum/mind/player)
+/datum/antagonist/ert/astartes/greet(var/datum/mind/player)
 	if(!..())
 		return
 	to_chat(player.current, "As a member of the Adeptus Astartes, you represent the best of the best of humanity, and serve as the final bulwark against the endless night. Listen to your squad lead and Segmentum Command.")
-
-/datum/antagonist/ert/equip(var/mob/living/carbon/human/astartes/player)
-
-	//Special radio setup
-
-	player.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/ultramarine(src), slot_wear_suit)
-	player.equip_to_slot_or_del(new /obj/item/clothing/under/astartes/bodysuit(src), slot_w_uniform)
-	player.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/astartes/smurfs(src), slot_shoes)
-	player.equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat(src), slot_gloves)
-	player.equip_to_slot_or_del(new /obj/item/clothing/glasses/cadian(src), slot_glasses)
-	player.equip_to_slot_or_del(new /obj/item/device/radio/headset/heads/hos(src), slot_l_ear)
-	player.equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team(src), slot_r_ear)
-	player.equip_to_slot_or_del(new /obj/item/storage/box/ifak(src), slot_l_store)
-	player.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/half/cadianrespirator(src), slot_wear_mask)
-	player.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/ultramarine(src), slot_head)
-	player.equip_to_slot_or_del(new /obj/item/gun/projectile/bolter(src), slot_s_store)
-	player.equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/astartes/ultramarine(src), slot_back)
-	player.equip_to_slot_or_del(new /obj/item/reagent_containers/food/drinks/canteen(src), slot_tie)
-	player.equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat(src), slot_in_backpack)
-  player.equip_to_slot_or_del(new /obj/item/clothing/glasses/astartes/visor(src), slot_in_backpack)
-  player.equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine(src), slot_in_backpack)
-  player.equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine(src), slot_in_backpack)
-  player.equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine(src), slot_in_backpack)
- 	player.equip_to_slot_or_del(new /obj/item/melee/energy/powersword/astartes/ingelldina(src), slot_belt)
-
