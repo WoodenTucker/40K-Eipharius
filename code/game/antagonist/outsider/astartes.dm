@@ -16,6 +16,7 @@ var/datum/antagonist/ert/astartes
 	id_type = obj/item/card/id/dog_tag/guardsman
  	social_class = SOCIAL_CLASS_MAX
 
+	flags = ANTAG_OVERRIDE_JOB | ANTAG_HAS_LEADER | ANTAG_CHOOSE_NAME | ANTAG_RANDOM_EXCEPTED
 	antaghud_indicator = "hudloyalist"
 
 	hard_cap = 5
