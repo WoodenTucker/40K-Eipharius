@@ -10,7 +10,7 @@ var/datum/antagonist/ert/astartes
 		Try to make sure other players have <i>fun</i>! If you are confused or at a loss, always adminhelp, \
 		and before taking extreme actions, please try to also contact the administration! \
 		Think through your actions and make the roleplay immersive! <b>Please remember all \
-		rules aside from those without explicit exceptions apply to the team.
+		rules aside from those without explicit exceptions apply to the team.</b>"
 	leader_welcome_text = "You lead a highly elite squad of the Adeptus Astartes. You report only to Segmentum Command and your Chapter Master. SERVE THE EMPEROR!"
 	landmark_id = "Response Team"
 	id_type = obj/item/card/id/dog_tag/guardsman
