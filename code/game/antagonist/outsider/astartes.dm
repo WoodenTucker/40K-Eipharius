@@ -13,16 +13,14 @@ var/datum/antagonist/ert/astartes
 		rules aside from those without explicit exceptions apply to the team.</b>"
 	leader_welcome_text = "You lead a highly elite squad of the Adeptus Astartes. You report only to Segmentum Command and your Chapter Master. SERVE THE EMPEROR!"
 	landmark_id = "Response Team"
-	id_type = obj/item/card/id/dog_tag/guardsman
- 	social_class = SOCIAL_CLASS_MAX
 
 	flags = ANTAG_OVERRIDE_JOB | ANTAG_HAS_LEADER | ANTAG_CHOOSE_NAME | ANTAG_RANDOM_EXCEPTED
 	antaghud_indicator = "hudloyalist"
 
 	hard_cap = 5
 	hard_cap_round = 7
-	initial_spawn_req = 5
-	initial_spawn_target = 7
+	initial_spawn_req = 3
+	initial_spawn_target = 5
 	show_objectives_on_creation = 0 //we are not antagonists, we do not need the antagonist shpiel/objectives
 	landmark_id = "ERT"
 	department_flag = SEC|COM
