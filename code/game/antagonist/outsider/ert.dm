@@ -65,8 +65,6 @@ var/datum/antagonist/ert/ert
 	create_id(role_text, player)
 	return 1
 
-var/datum/antagonist/ert/ert
-
 /datum/antagonist/ert/astartes
 	id = MODE_ERT
 	role_text = "Astartes"
