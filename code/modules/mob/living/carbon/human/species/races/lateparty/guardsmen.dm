@@ -107,7 +107,7 @@
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite)
 	blurb = "A specialist soldier of the Imperial Guard, or Astra Militarum, the primary fighting force of Humanity."
 	inherent_verbs = list(
-	/mob/living/carbon/human/lateparty/guardsman/proc/regimentselectspec,
+	/mob/living/carbon/human/lateparty/guardsman/specialist/proc/regimentselectspec,
 	/mob/living/carbon/human/proc/igattack,
 	/mob/living/carbon/human/proc/igcanthold,
 	/mob/living/carbon/human/proc/igcharge,
