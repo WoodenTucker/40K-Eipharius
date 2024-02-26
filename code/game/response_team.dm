@@ -112,13 +112,13 @@ proc/trigger_armed_response_team(var/force = 0)
 	// there's only a certain chance a team will be sent
 	if(!prob(send_team_chance))
 		command_announcement.Announce("Emergency distress beacon logged from Eipharius III. No forces available for intervention at this time.")
-		can_call_ert = 0 // Only one call per round, ladies.
+		//can_call_ert = 0 // Only one call per round, ladies.
 		return
 
 	command_announcement.Announce("Emergency distress beacon logged from Eipharius III. Intervention forces inbound.")
 	evacuation_controller.add_can_call_predicate(new/datum/evacuation_predicate/ert())
 
-	can_call_ert = 0 // Only one call per round, gentleman.
+	//can_call_ert = 0 // Only one call per round, gentleman.
 	send_emergency_team = 1
 
 	sleep(600 * 5)
