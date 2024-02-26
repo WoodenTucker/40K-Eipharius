@@ -24,13 +24,10 @@ var/datum/antagonist/ert/astartes
 	show_objectives_on_creation = 0 //we are not antagonists, we do not need the antagonist shpiel/objectives
 	landmark_id = "ERT"
 
-/datum/antagonist/ert/astartes/create_default(var/mob/source)
-	var/mob/living/carbon/human/astartes/M = ..()
-
 /datum/antagonist/ert/astartes/New()
 	..()
 	leader_welcome_text = "As leader of the Emergency Response Team, you answer only to [GLOB.using_map.boss_name], and have authority to override the Rogue Trader where it is necessary to achieve your mission goals. It is recommended that you attempt to cooperate with the Rogue Trader where possible, however."
-	astartesert = src
+	//astartesert = src
 
 /datum/antagonist/ert/astartes/greet(var/datum/mind/player)
 	if(!..())
