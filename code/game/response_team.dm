@@ -142,7 +142,7 @@ proc/trigger_armed_response_team(var/force = 0)
 
 
 //ASTARTES ERT
-
+/*
 /client/proc/response_team_astartes()
 	set name = "Dispatch Astartes Emergency Response Team"
 	set category = "Special Verbs"
@@ -251,3 +251,4 @@ proc/trigger_armed_response_team(var/force = 0)
 		return TRUE
 	to_chat(user, "<span class='warning'>An emergency response team has been dispatched.</span>")
 	return FALSE
+*/
