@@ -301,6 +301,8 @@
 #define SPECIES_HALO "Halo Star Entity"
 #define SPECIES_LATEPARTY "Latepartyites"
 #define SPECIES_GUARDSMEN "Guardsmen"
+#define SPECIES_GUARDSMEN_SPECIALIST "Guardsmen Specialist"
+#define SPECIES_GUARDSMEN_OFFICER "Guardsmen Officer"
 
 #define SURGERY_CLOSED 0
 #define SURGERY_OPEN 1
