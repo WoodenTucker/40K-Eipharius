@@ -299,6 +299,8 @@
 #define SPECIES_NECRON "Necron"
 #define SPECIES_CUSTODES "Custodes"
 #define SPECIES_HALO "Halo Star Entity"
+#define SPECIES_LATEPARTY "Latepartyites"
+#define SPECIES_GUARDSMEN "Guardsmen"
 
 #define SURGERY_CLOSED 0
 #define SURGERY_OPEN 1
