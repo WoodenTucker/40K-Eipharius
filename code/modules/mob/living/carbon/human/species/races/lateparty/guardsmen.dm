@@ -127,7 +127,7 @@
 	H.regimentselectspec()
 	return ..()
 
-/mob/living/carbon/human/lateparty/specialist/guardsman/proc/regimentselectspec()
+/mob/living/carbon/human/lateparty/guardsman/specialist/proc/regimentselectspec()
 	set name = "Select your Regiment"
 	set category = "Setup"
 	set desc = "Sets up regiment."
@@ -140,7 +140,7 @@
 	switch(regiment)
 		if("Valhallan Autogunner")
 			fully_replace_character_name("Valhallan Autogunner [real_name]")
-			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/sharpshooter/valhallan)
+			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/sharpshooter/valhalla)
 			outfit.equip(src)
 			src.set_trait(new/datum/trait/death_tolerant())
 			src.get_idcard()?.access = get_all_accesses()
