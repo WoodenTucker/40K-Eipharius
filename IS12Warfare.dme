@@ -411,6 +411,7 @@
 #include "code\game\antagonist\alien\borer.dm"
 #include "code\game\antagonist\alien\xenomorph.dm"
 #include "code\game\antagonist\outsider\actors.dm"
+#include "code\game\antagonist\outsider\astartes.dm"
 #include "code\game\antagonist\outsider\commando.dm"
 #include "code\game\antagonist\outsider\deathsquad.dm"
 #include "code\game\antagonist\outsider\ert.dm"
