@@ -9,7 +9,7 @@
 	slowdown = -0.1 //slightly fitter than than usual people.
 	appearance_flags = HAS_HAIR_COLOR | HAS_SKIN_TONE_NORMAL | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR
 	inherent_verbs = list(
-	/mob/living/carbon/human/guardsman/proc/regimentselect,
+	/mob/living/carbon/human/lateparty/guardsman/proc/regimentselect,
 	/mob/living/carbon/human/proc/igattack,
 	/mob/living/carbon/human/proc/igcanthold,
 	/mob/living/carbon/human/proc/igcharge,
@@ -20,7 +20,7 @@
 	/mob/living/carbon/human/proc/igrunforlifes,
 	/mob/living/carbon/human/proc/igyessir)
 
-/datum/species/lateparty/guardsmen/handle_post_spawn(var/mob/living/carbon/human/H)
+/datum/species/lateparty/guardsmen/handle_post_spawn(var/mob/living/carbon/human/lateparty/guardsman/H)
 	H.age = rand(min_age,max_age)
 	if(H.f_style)
 		H.f_style = "Shaved"
@@ -29,7 +29,7 @@
 	H.regimentselect()
 	return ..()
 
-/mob/living/carbon/human/guardsman/proc/regimentselect()
+/mob/living/carbon/human/lateparty/guardsman/proc/regimentselect()
 	set name = "Select your Regiment"
 	set category = "Setup"
 	set desc = "Sets up regiment."
@@ -54,7 +54,7 @@
 			src.f_style = "shaved"
 			src.add_stats(rand(15,18), rand(15,18), rand(15,18), rand (12,16))) //gives stats str, dext, end, int
 			src.add_skills(rand(6,10),rand(6,10),rand(3,6),rand(4,6),rand(1,6)) //melee, ranged, med, eng, surgery
-			src.verbs -= /mob/living/carbon/human/guardsman/proc/regimentselect
+			src.verbs -= /mob/living/carbon/human/lateparty/guardsman/proc/regimentselect
 
 		if("Cadian")
 			fully_replace_character_name("Cadian Guardsman [real_name]")
@@ -70,7 +70,7 @@
 			src.f_style = "shaved"
 			src.add_stats(rand(15,18), rand(15,18), rand(15,18), rand (12,16)) //gives stats str, dext, end, int
 			src.add_skills(rand(6,10),rand(6,10),rand(3,6),rand(4,6),rand(1,6)) //melee, ranged, med, eng, surgery
-			src.verbs -= /mob/living/carbon/human/guardsman/proc/regimentselect
+			src.verbs -= /mob/living/carbon/human/lateparty/guardsman/proc/regimentselect
 
 		if("Krieg")
 			fully_replace_character_name("Krieg Guardsman [rand(1,100000)]")
@@ -88,7 +88,7 @@
 			src.f_style = "shaved"
 			src.add_stats(rand(15,18), rand(15,18), rand(15,18), rand (12,16)) //gives stats str, dext, end, int
 			src.add_skills(rand(6,10),rand(6,10),rand(3,6),rand(4,6),rand(1,6)) //melee, ranged, med, eng, surgery
-			src.verbs -= /mob/living/carbon/human/guardsman/proc/regimentselect
+			src.verbs -= /mob/living/carbon/human/lateparty/guardsman/proc/regimentselect
 
 		if("Catachan")
 			fully_replace_character_name("Catachan Guardsman [real_name]")
@@ -104,4 +104,4 @@
 			src.f_style = "shaved"
 			src.add_stats(rand(15,18), rand(15,18), rand(15,18), rand (12,16)) //gives stats str, dext, end, int
 			src.add_skills(rand(6,10),rand(6,10),rand(3,6),rand(4,6),rand(1,6)) //melee, ranged, med, eng, surgery
-			src.verbs -= /mob/living/carbon/human/guardsman/proc/regimentselect
+			src.verbs -= /mob/living/carbon/human/lateparty/guardsman/proc/regimentselect
