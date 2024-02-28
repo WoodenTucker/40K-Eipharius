@@ -18,14 +18,16 @@
 	var/focus = 50
 	var/max_focus = 100
 	var/isdrawing = 0
-	var/shielded_energy = 0
-	var/shielded_projectile = 0
-	var/shielded_melee = 0
+	shielded_energy = 0
+	shielded_projectile = 0
+	shielded_melee = 0
 	var/possess_stage = 0
 	can_bullet_dodge = 0 //Whether or not the mob can typically dodge bullets.
 	bullet_dodge_probability = 0 //The probability of dodging the bullet.
 	can_melee_dodge = 0 //Whether or not the mob can dodge most melee attacks.
 	melee_dodge_probability = 0 //The probability of dodging.
+	can_melee_block = 0 //Whether or not the mob can automatically block most melee attacks.
+	melee_block_probability = 0 //The probability of blocking.
 
 /mob/living/carbon/human/New(var/new_loc, var/new_species = null)
 
