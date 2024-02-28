@@ -101,7 +101,7 @@
 	return
 
 /proc/Get_Party() //dis is the proc that actually selects the party
-	GLOB.latepartyoptions += pick("Orkz", "Tau",)
+	GLOB.latepartyoptions += pick("Orkz", "Tau", "Imperial Guard",)
 
 	//note for myself, make procs to spawn as group if you ever wanna switch to that.
 	//Something like the new_character key that uses an if isreadied to pull them all at once. You could make like beKroot() that contains everything under if("kroot")
