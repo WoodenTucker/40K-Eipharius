@@ -77,4 +77,9 @@
 	var/obj/screen/plane_master/blur/plating_blur/plating_blur = new
 	var/obj/screen/plane_master/blur/above_obj_blur/AOB = new
 
+	var/can_bullet_dodge = 0 //Whether or not the mob can typically dodge bullets.
+	var/bullet_dodge_probability = 0 //The probability of dodging the bullet.
+	var/can_melee_dodge = 0 //Whether or not the mob can dodge most melee attacks.
+	var/melee_dodge_probability = 0 //The probability of dodging.
+
 	var/jaunting = 0 //Is the mob already Jaunting?
