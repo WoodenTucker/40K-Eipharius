@@ -20,6 +20,7 @@
 	/mob/living/carbon/human/proc/igyessir)
 
 /datum/species/lateparty/guardsmen/handle_post_spawn(var/mob/living/carbon/human/lateparty/guardsman/H)
+	set_species("Guardsmen")
 	H.age = rand(min_age,max_age)
 	if(H.f_style)
 		H.f_style = "Shaved"
@@ -119,6 +120,7 @@
 	/mob/living/carbon/human/proc/igyessir)
 
 /datum/species/lateparty/guardsmen/specialist/handle_post_spawn(var/mob/living/carbon/human/lateparty/guardsman/specialist/H)
+	set_species("Guardsmen Specialist")
 	H.age = rand(min_age,max_age)
 	if(H.f_style)
 		H.f_style = "Shaved"
