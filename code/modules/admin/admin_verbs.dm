@@ -1053,7 +1053,7 @@ var/list/admin_verbs_mentor = list(
 	set name = "Choose Party"
 	set desc = "Picks the party for the round!"
 
-	var/parties = list("Kroot", "Tau", "Sekites", "Orkz", "Genestealers", "TauNecron",) //lists all possible fates
+	var/parties = list("Kroot", "Tau", "Sekites", "Orkz", "Genestealers", "TauNecron", "Imperial Guard",) //lists all possible fates
 
 	var/chooseaparty = input("Choose a party", "Available parties") as null|anything in parties
 
@@ -1083,6 +1083,11 @@ var/list/admin_verbs_mentor = list(
 
 			GLOB.latepartyoptions += "Genestealers"
 			message_admins("Genestealers have been selected as the late party!")
+		if("Imperial Guard")
+			GLOB.latepartyoptions.Cut()
+
+			GLOB.latepartyoptions += "Imperial Guard"
+			message_admins("Imperial Guard have been selected as the late party!")
 
 	feedback_add_details("admin_verb","XP") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
