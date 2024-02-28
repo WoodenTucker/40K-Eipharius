@@ -22,10 +22,10 @@
 	var/shielded_projectile = 0
 	var/shielded_melee = 0
 	var/possess_stage = 0
-	var/can_bullet_dodge = 0 //Whether or not the mob can typically dodge bullets.
-	var/bullet_dodge_probability = 0 //The probability of dodging the bullet.
-	var/can_melee_dodge = 0 //Whether or not the mob can dodge most melee attacks.
-	var/melee_dodge_probability = 0 //The probability of dodging.
+	can_bullet_dodge = 0 //Whether or not the mob can typically dodge bullets.
+	bullet_dodge_probability = 0 //The probability of dodging the bullet.
+	can_melee_dodge = 0 //Whether or not the mob can dodge most melee attacks.
+	melee_dodge_probability = 0 //The probability of dodging.
 
 /mob/living/carbon/human/New(var/new_loc, var/new_species = null)
 
