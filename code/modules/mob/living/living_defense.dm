@@ -193,9 +193,9 @@
 	var/blocked = run_armor_check(hit_zone, "melee")
 	standard_weapon_hit_effects(I, user, effective_force, blocked, hit_zone)
 
-	if(I.damtype == BRUTE && prob(33)) // Added blood for whacking non-humans too
+	/*if(I.damtype == BRUTE && prob(33)) // Added blood for whacking non-humans too
 		var/turf/simulated/location = get_turf(src)
-		if(istype(location)) location.add_blood_floor(src)
+		if(istype(location)) location.add_blood_floor(src)*/ //Removed to avoid necrons and other robots bleeding.
 
 	return blocked
 
@@ -207,6 +207,14 @@
 	//Hulk modifier
 	if(HULK in user.mutations)
 		effective_force *= 2
+
+	if((can_melee_dodge >= 1) && prob(melee_dodge_probability))
+		visible_message("<b><big>[src.name] dodges out of the way!!</big></b>")//send a message
+		return 0
+
+	if((can_melee_block >= 1) && prob(melee_block_probability))
+		visible_message("<b><big>[src.name] parries the attack!!</big></b>")//send a message
+		return 0
 
 	//Apply weapon damage
 	var/damage_flags = I.damage_flags()
