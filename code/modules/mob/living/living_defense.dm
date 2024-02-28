@@ -208,6 +208,14 @@
 	if(HULK in user.mutations)
 		effective_force *= 2
 
+	if(shielded_melee = 0)
+		visible_message("<b><big>[src.name]'s shield deflects the attack!!</big></b>")//send a message
+		var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
+		spark_system.set_up(5, 0, src.loc)
+		spark_system.start()
+		playsound(src.loc, "sparks", 50, 1)
+		return 0
+
 	if((can_melee_dodge >= 1) && prob(melee_dodge_probability))
 		visible_message("<b><big>[src.name] dodges out of the way!!</big></b>")//send a message
 		return 0
