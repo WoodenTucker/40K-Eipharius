@@ -208,7 +208,7 @@
 	if(HULK in user.mutations)
 		effective_force *= 2
 
-	if(shielded_melee >= 0)
+	/*if(shielded_melee >= 0)
 		visible_message("<b><big>[src.name]'s shield deflects the attack!!</big></b>")//send a message
 		var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
 		spark_system.set_up(5, 0, src.loc)
@@ -222,7 +222,7 @@
 
 	if((can_melee_block >= 1) && prob(melee_block_probability))
 		visible_message("<b><big>[src.name] parries the attack!!</big></b>")//send a message
-		return 0
+		return 0*/
 
 	//Apply weapon damage
 	var/damage_flags = I.damage_flags()
