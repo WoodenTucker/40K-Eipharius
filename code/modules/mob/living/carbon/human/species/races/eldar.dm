@@ -15,6 +15,12 @@
 	inherent_verbs = list(
 	/mob/living/carbon/human/eldar/proc/giveeldarstats,
 		)
+	can_bullet_dodge = 1 //Whether or not the mob can typically dodge bullets.
+	bullet_dodge_probability = 60 //The probability of dodging the bullet.
+	can_melee_dodge = 1 //Whether or not the mob can dodge most melee attacks.
+	melee_dodge_probability = 60 //The probability of dodging.
+	can_melee_block = 1 //Whether or not the mob can automatically block most melee attacks.
+	melee_block_probability = 20 //The probability of blocking.
 
 
 
