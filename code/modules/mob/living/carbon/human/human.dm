@@ -18,9 +18,7 @@
 	var/focus = 50
 	var/max_focus = 100
 	var/isdrawing = 0
-	shielded_energy = 0
-	shielded_projectile = 0
-	shielded_melee = 0
+
 	var/possess_stage = 0
 	var/shielded_energy = 0
 	var/shielded_projectile = 0
