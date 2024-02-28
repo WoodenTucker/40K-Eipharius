@@ -89,6 +89,16 @@
 			usr.loc = get_turf(locate("landmark*genestart")) //where they spawning
 			var/mob/living/carbon/human/genestealer/new_character = new(usr.loc)// da mob
 			new_character.key = usr.key //puts ghost in body with new key
+		if("Imperial Guard")
+			message_admins("[attendee] has joined the late party: Imperial Guard.", 0) //msgs jannies
+			to_chat(usr, "<span class='warning'><b><font size=3>You are an Imperial Guardsman, dispatched to Eipharius III. Obey the orders of your superior officer!.</b></font size=3>") //tells mob to do thing
+			usr.loc = get_turf(locate("landmark*Imperial Guardsman")) //where they spawning
+			if(prob(75))
+				var/mob/living/carbon/human/lateparty/guardsman/new_character = new(usr.loc)// da mob
+				new_character.key = attendee //puts ghost in body with new key
+			else
+				var/mob/living/carbon/human/lateparty/guardsman/specialist/new_character = new(usr.loc)// da mob
+				new_character.key = attendee //puts ghost in body with new key
 
 
 /hook/startup/proc/chooseparty() //chooses one party on startup
