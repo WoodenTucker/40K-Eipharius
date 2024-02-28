@@ -184,6 +184,22 @@ meteor_act
 	if(user == src) // Attacking yourself can't miss
 		return target_zone
 
+	if(src.shielded_melee >= 0)
+		visible_message("<b><big>[src.name]'s shield deflects the attack!!</big></b>")//send a message
+		var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
+		spark_system.set_up(5, 0, src.loc)
+		spark_system.start()
+		playsound(src.loc, "sparks", 50, 1)
+		return null
+
+	if((src.can_melee_dodge >= 1) && prob(melee_dodge_probability))
+		visible_message("<b><big>[src.name] dodges out of the way!!</big></b>")//send a message
+		return null
+
+	if((src.can_melee_block >= 1) && prob(melee_block_probability))
+		visible_message("<b><big>[src.name] parries the attack!!</big></b>")//send a message
+		return null
+
 	var/accuracy_penalty = user.melee_accuracy_mods()
 
 	if(special)
@@ -471,6 +487,10 @@ meteor_act
 
 		var/dtype = O.damtype
 		var/throw_damage = O.throwforce*(speed/THROWFORCE_SPEED_DIVISOR)
+
+		if((src.can_bullet_dodge >= 1) && (prob(bullet_dodge_probability * 1.5))) //It's easier to dodge slower moving projectiles.
+			playsound(loc, 'sound/weapons/punchmiss.ogg', 50, 1)
+			return
 
 		var/zone
 		if (istype(O.thrower, /mob/living))
