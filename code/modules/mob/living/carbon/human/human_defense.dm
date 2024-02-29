@@ -184,7 +184,7 @@ meteor_act
 	if(user == src) // Attacking yourself can't miss
 		return target_zone
 
-	if(src.shielded_melee >= 0)
+	if(src.shielded_melee >= 1)
 		visible_message("<b><big>[src.name]'s shield deflects the attack!!</big></b>")//send a message
 		var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
 		spark_system.set_up(5, 0, src.loc)
