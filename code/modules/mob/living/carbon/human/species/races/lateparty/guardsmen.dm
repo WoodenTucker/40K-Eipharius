@@ -20,7 +20,6 @@
 	/mob/living/carbon/human/proc/igyessir)
 
 /datum/species/lateparty/guardsmen/handle_post_spawn(var/mob/living/carbon/human/lateparty/guardsman/H)
-	H.set_species("Guardsmen")
 	H.age = rand(min_age,max_age)
 	if(H.f_style)
 		H.f_style = "Shaved"
@@ -28,6 +27,13 @@
 	H.update_eyes()
 	H.regimentselect()
 	return ..()
+
+/mob/living/carbon/human/lateparty/guardsmen/Initialize()
+	. = ..()
+	set_species("Guardsmen")
+	warfare_faction = IMPERIUM
+	hand = 0//Make sure one of their hands is active.
+	isburied = 1
 
 /mob/living/carbon/human/lateparty/guardsman/proc/regimentselect()
 	set name = "Select your Regiment"
@@ -120,7 +126,6 @@
 	/mob/living/carbon/human/proc/igyessir)
 
 /datum/species/lateparty/guardsmen/specialist/handle_post_spawn(var/mob/living/carbon/human/lateparty/guardsman/specialist/H)
-	H.set_species("Guardsmen Specialist")
 	H.age = rand(min_age,max_age)
 	if(H.f_style)
 		H.f_style = "Shaved"
@@ -128,6 +133,13 @@
 	H.update_eyes()	//hacky fix, i don't care and i'll never ever care
 	H.regimentselectspec()
 	return ..()
+
+/mob/living/carbon/human/lateparty/guardsmen/specialist/Initialize()
+	. = ..()
+	set_species("Guardsmen Specialist")
+	warfare_faction = IMPERIUM
+	hand = 0//Make sure one of their hands is active.
+	isburied = 1
 
 /mob/living/carbon/human/lateparty/guardsman/specialist/proc/regimentselectspec()
 	set name = "Select your Regiment"
