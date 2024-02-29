@@ -157,6 +157,10 @@ obj/item/gun/energy/staff/focus
 	projectile_type = /obj/item/projectile/gauss
 	self_recharge = 1
 
+/obj/item/gun/energy/gaussblaster/dropped()
+	..()
+	spawn(1) if(src) qdel(src)
+
 /obj/item/gun/energy/synapticdis
 	name = "Synaptic Disintegrator"
 	desc = "A long ranged rifle favored by Deathmark Assasains for its ability to disintigrate the synapses of brey"
