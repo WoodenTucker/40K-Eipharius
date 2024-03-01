@@ -18,6 +18,14 @@
 	name = "Immune to Timeslowdown"
 	description = "I am immune to slowed down time, through improved reaction speeds, or temporal mischief."
 
+/datum/trait/timestopped
+	name = "Timestopped"
+	description = "I have been stopped in time, via temporal mischief."
+
+/datum/trait/timeslowed
+	name = "Timeslowed"
+	description = "I have been slowed in time, through reaction speeds, or temporal mischief."
+
 
 /mob/living/proc/has_trait(var/datum/trait/this_trait)
 	return istype(trait, this_trait)
