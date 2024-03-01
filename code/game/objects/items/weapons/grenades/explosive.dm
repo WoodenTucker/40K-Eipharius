@@ -254,7 +254,7 @@ obj/mortar/flare/blue
 		var/mob/M = loc
 		M.unEquip(src)
 
-/obj/item/grenade/plasma
+/obj/item/grenade/frag/plasma
 	name = "Plasma Grenade"
 	desc = "A highly lethal plasma grenade, which fires a burst of high-energy plasma when detonating."
 	icon_state = "smoke1"
