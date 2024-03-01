@@ -399,6 +399,37 @@
 	spread_step = 20
 	range =  3 //dont kill everyone on the screen
 
+/obj/item/projectile/energy/pulse/landmine
+	damage = 80
+	weaken = 1
+	armor_penetration = 39
+	range_step = 2 //controls damage falloff with distance. projectiles lose a "pellet" each time they travel this distance. Can be a non-integer.
+	base_spread = 0 //causes it to be treated as a shrapnel explosion instead of cone
+	spread_step = 20
+	range =  3 //dont kill everyone on the screen
+
+/obj/item/projectile/flamer/landmine
+	name = "fire"
+	icon_state = "flame"
+	damage = 3
+	damage_type = BURN
+	mob_hit_sound = list('sound/effects/fire.ogg')
+	speed = 0.8
+	range_step = 2 //controls damage falloff with distance. projectiles lose a "pellet" each time they travel this distance. Can be a non-integer.
+	base_spread = 0 //causes it to be treated as a shrapnel explosion instead of cone
+	spread_step = 20
+	range =  3 //dont kill everyone on the screen
+
+/obj/item/projectile/flamer/landmine/on_hit(var/atom/target, var/blocked = 0)
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+		if(!istype(H.wear_suit, /obj/item/clothing/suit/fire))
+			H.adjust_fire_stacks(10) //note left by walker, any more than 10 is impossibly OP
+			H.IgniteMob()
+		new /obj/flamer_fire(H.loc, 12, 10, "red", 1)
+
+
+
 /obj/item/landmine
 	name = "landmine"
 	desc = "Use it to place a landmine in front of you. Beee careful..."
@@ -415,6 +446,18 @@
 		if(do_after(user, 20))
 			qdel(src)
 			new /obj/structure/landmine(T)
+
+/obj/item/landmine/plasma
+	name = "plasma landmine"
+	desc = "Use it to place a landmine in front of you. Beee careful..."
+	icon = 'icons/obj/warfare.dmi'
+	icon_state = "mine_item"
+
+/obj/item/landmine/flame
+	name = "incendiary landmine"
+	desc = "Use it to place a landmine in front of you. Beee careful..."
+	icon = 'icons/obj/warfare.dmi'
+	icon_state = "mine_item"
 
 
 /obj/structure/landmine
@@ -443,6 +486,57 @@
 	if(!can_be_armed)
 		icon_state = "mine_disarmed"
 
+/obj/structure/landmine/plasma
+	name = "plasma landmine"
+	desc = "You'd need a shovel or wirecutter to disable this explosive trap."
+	icon = 'icons/obj/warfare.dmi'
+	icon_state = "mine"
+	anchored = TRUE
+	density = FALSE
+	var/armed = FALSE//Whether or not it will blow up.
+	var/can_be_armed = TRUE//Whether or not it can be armed to blow up. Disarmed mines won't blow.
+
+/obj/structure/landmine/plasma/New()
+	..()
+	if(prob(15))
+		desc = "This mushroom is not for picking."
+
+/obj/structure/landmine/plasma/proc/blow()
+	GLOB.mines_tripped++
+	fragmentate(get_turf(src), 20, 2, list(/obj/item/projectile/energy/pulse/landmine))
+	explosion(loc, 1, 1, 1, 1)
+	qdel(src)
+
+
+/obj/structure/landmine/plasma/update_icon()
+	if(!can_be_armed)
+		icon_state = "mine_disarmed"
+
+/obj/structure/landmine/flame
+	name = "incendiary landmine"
+	desc = "You'd need a shovel or wirecutter to disable this explosive trap."
+	icon = 'icons/obj/warfare.dmi'
+	icon_state = "mine"
+	anchored = TRUE
+	density = FALSE
+	var/armed = FALSE//Whether or not it will blow up.
+	var/can_be_armed = TRUE//Whether or not it can be armed to blow up. Disarmed mines won't blow.
+
+/obj/structure/landmine/flame/New()
+	..()
+	if(prob(15))
+		desc = "This mushroom is not for picking."
+
+/obj/structure/landmine/flame/proc/blow()
+	GLOB.mines_tripped++
+	fragmentate(get_turf(src), 20, 2, list(/obj/item/projectile/flamer/landmine))
+	explosion(loc, 1, 1, 1, 1)
+	qdel(src)
+
+
+/obj/structure/landmine/update_icon()
+	if(!can_be_armed)
+		icon_state = "mine_disarmed"
 
 /obj/structure/landmine/attackby(obj/item/W as obj, mob/user as mob)
 	if(!ishuman(user))
