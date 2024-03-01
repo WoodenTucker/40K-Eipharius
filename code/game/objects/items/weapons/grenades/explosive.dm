@@ -253,3 +253,15 @@ obj/mortar/flare/blue
 	if(ismob(loc))
 		var/mob/M = loc
 		M.unEquip(src)
+
+/obj/item/grenade/plasma
+	name = "Plasma Grenade"
+	desc = "A highly lethal plasma grenade, which fires a burst of high-energy plasma when detonating."
+	icon_state = "smoke1"
+	fragment_types = list(/obj/item/projectile/energy/pulse/pulserifle=3)
+	explosion_size = 5
+	num_fragments = 9
+	throw_speed = 2
+	throw_range = 8
+	w_class = ITEM_SIZE_SMALL
+
