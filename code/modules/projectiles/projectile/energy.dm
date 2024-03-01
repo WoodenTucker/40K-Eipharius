@@ -137,13 +137,14 @@
 	damage_type = TOX
 	//penetrating = 1 I REALLY want to, but multikilling with this shit would be cancer to fight
 	stun = 100
+	weaken = 5
 	stutter = 100
 	agony = 200
 
 /obj/item/projectile/energy/synapticdis/on_hit(var/atom/target, var/blocked = 0)
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
-		H.adjustBrainLoss(100)
+		H.adjustBrainLoss(175)
 		to_chat(H, "<span class='danger'>You feel your nerves burning up!</span>")
 		playsound(H, 'sound/effects/supermatter.ogg', 100) //so the poor fuck finds out what happens
 		visible_message("<span class='danger'>[H]'s body illuminates as green energy courses through their body!</span>") //so the poor saps near the victim know whats up
