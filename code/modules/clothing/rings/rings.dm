@@ -237,9 +237,17 @@
 	desc = "Artifaci Xenos Horrificus, possesion or knowlege of this item is grounds for entire houses to be purged by the Ordos Xenos of the Inquisition"
 	icon_state = "mariner-grad"
 	canremove = FALSE
-	var/can_toggle = 1
 	var/obj/aura/regenerating/human/halo/bond
 
-/obj/item/clothing/ring/halodevice/attack_self(var/mob/living/user)
-	bond = new(user,src)
-	user.equip_to_slot_or_del(/obj/item/clothing/ring/halodevice, slot_gloves)
+/obj/item/clothing/ring/halodevice/Destroy()
+	QDEL_NULL(bond)
+	return ..()
+
+/obj/item/clothing/ring/halodevice/dropped(var/mob/living/carbon/human/wielder)
+	QDEL_NULL(bond)
+	return ..()
+
+/obj/item/clothing/ring/halodevice/equipped(var/mob/living/carbon/human/wielder, slot)
+	. = ..()
+	if(slot == 10 && !bond) // 10 is the number for slot_gloves, idk why SLOT_GLOVES is a bitflag
+		bond = new(wielder,src)
