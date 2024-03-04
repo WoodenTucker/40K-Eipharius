@@ -8,7 +8,7 @@
 
 **Website:** http://is12wiki.xyz/index.php/Main_Page
 
-**Main source code:** https://github.com/mattroks101/IS12-Warfare
+**Main source code:** [https://github.com/mattroks101/IS12-Warfare](https://github.com/Project-IS12/IS12-Warfare)
 
 **Discord:**  https://discord.gg/FVRctMD
 
