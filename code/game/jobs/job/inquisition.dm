@@ -340,6 +340,7 @@
 	/obj/item/paper/administratum/weapon5 = 1,
 	/obj/item/pen = 1,
 	/obj/item/paper/administratum/lambda = 1,
+	/obj/item/device/cassette/inquisitor = 1,
 	)
 
 	pda_slot = null
@@ -372,6 +373,7 @@
 	/obj/item/paper/administratum/weapon5 = 1,
 	/obj/item/pen = 1,
 	/obj/item/paper/administratum/lambda = 1,
+	/obj/item/device/cassette/inquisitor = 1,
 	)
 
 	pda_slot = null
