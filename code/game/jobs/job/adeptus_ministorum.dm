@@ -690,7 +690,8 @@
 		/obj/item/device/flashlight/lantern = 1,
 		/obj/item/paper/administratum/vermillion = 1,
 		/obj/item/pen = 1,
-		/obj/item/book/manual/ecc = 1
+		/obj/item/book/manual/ecc = 1,
+		/obj/item/device/cassette/adepta_sororitas = 1
 		)
 
 /decl/hierarchy/outfit/job/sisterofbattle
@@ -719,7 +720,8 @@
 	/obj/item/book/manual/ecc = 1,
 	/obj/item/paper/administratum/vermillion = 1,
 	/obj/item/pen = 1,
-	/obj/item/stack/thrones2/ten = 1
+	/obj/item/stack/thrones2/ten = 1,
+	/obj/item/device/cassette/adepta_sororitas = 1
 	)
 
 /decl/hierarchy/outfit/job/sisterofbattle/repentia // unused atm
@@ -744,6 +746,7 @@
 	/obj/item/paper/administratum/vermillion = 1,
 	/obj/item/pen = 1,
 	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/device/cassette/adepta_sororitas = 1
 	)
 
 
@@ -772,7 +775,8 @@
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/paper/administratum/vermillion = 1,
 	/obj/item/pen = 1,
-	/obj/item/stack/thrones2/ten = 1
+	/obj/item/stack/thrones2/ten = 1,
+	/obj/item/device/cassette/adepta_sororitas = 1
 	)
 
 /decl/hierarchy/outfit/job/sisterofbattle/brsister
@@ -800,7 +804,8 @@
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/paper/administratum/vermillion = 1,
 	/obj/item/pen = 1,
-	/obj/item/stack/thrones2/ten = 1
+	/obj/item/stack/thrones2/ten = 1,
+	/obj/item/device/cassette/adepta_sororitas = 1
 	)
 
 /decl/hierarchy/outfit/job/preacher
