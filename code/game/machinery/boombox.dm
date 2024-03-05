@@ -373,7 +373,7 @@
 /obj/item/device/cassette/commissar/New()
 	..()
 	name = "Damaged Astra Militarum Tape."
-	desc = "A damaged official Astra Militarum tape, this has the word "COMMISSAR" scrolled across the front."
+	desc = "A damaged official Astra Militarum tape, this has the word \"COMMISSAR\" scrolled across the front."
 	a_side = pick('sound/music/Commissar.ogg')
 	b_side = pick('sound/music/Guardsman.ogg')
 	sound_inside = a_side
