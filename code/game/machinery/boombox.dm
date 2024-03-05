@@ -377,3 +377,27 @@
 	a_side = pick('sound/music/Commissar.ogg')
 	b_side = pick('sound/music/Guardsman.ogg')
 	sound_inside = a_side
+
+/obj/item/device/cassette/inquisitor/New()
+	..()
+	name = "Inquisitorial Morale Tapes."
+	desc = "An official looking tape with the Inquisitorial Rosette on the front."
+	a_side = pick('sound/music/Inquisitor_Song1.ogg')
+	b_side = pick('sound/music/Inquisitor_Song2.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/space_marine/New()
+	..()
+	name = "Adeptus Astartes Audioslates"
+	desc = "An official looking tape with the winged skull and blade of the Adeptus Astartes."
+	a_side = pick('sound/music/Space_Marine_Standing.ogg')
+	b_side = pick('sound/music/Space_Marine_Dynamite.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/space_marine_alt/New()
+	..()
+	name = "Odd Adeptus Astartes Audioslates"
+	desc = "An official looking tape with the winged skull and blade of the Adeptus Astartes. This one looks different, somehow."
+	a_side = pick('sound/music/Space_Marine_Meme1.ogg')
+	b_side = pick('sound/music/Space_Marine_Meme2.ogg')
+	sound_inside = a_side
