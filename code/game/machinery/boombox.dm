@@ -401,3 +401,19 @@
 	a_side = pick('sound/music/Space_Marine_Meme1.ogg')
 	b_side = pick('sound/music/Space_Marine_Meme2.ogg')
 	sound_inside = a_side
+
+/obj/item/device/cassette/mechanicus_warchant/New()
+	..()
+	name = "Adeptus Mechanicus War-Chants"
+	desc = "An official looking tape with the cog and skull of the Adeptus Mechanicus."
+	a_side = pick('sound/music/Mechanicus_War_Cant.ogg')
+	b_side = pick('sound/music/Mechanicus_Tune.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/mechanicus_warchant_alt/New()
+	..()
+	name = "Damaged Adeptus Mechanicus War-Chants"
+	desc = "An official looking tape with the cog and skull of the Adeptus Mechanicus. This tape is sparking, and seems damaged."
+	a_side = pick('sound/music/Mechanicus_Meme1.ogg')
+	b_side = pick('sound/music/Mechanicus_Meme2.ogg')
+	sound_inside = a_side
