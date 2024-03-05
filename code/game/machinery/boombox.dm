@@ -425,3 +425,11 @@
 	a_side = pick('sound/music/Sororitas1.ogg')
 	b_side = pick('sound/music/Sororitas2.ogg')
 	sound_inside = a_side
+
+/obj/item/device/cassette/astra_militarum_alt/New()
+	..()
+	name = "Astra Militarum Relaxation Tape."
+	desc = "An official tape from the Astra Militarum, intended to promote calm and relaxation among Militarum personnel."
+	a_side = pick('sound/music/Imperial_Guard_Meme1.ogg')
+	b_side = pick('sound/music/Imperial_Guard_Meme2.ogg')
+	sound_inside = a_side
