@@ -417,3 +417,11 @@
 	a_side = pick('sound/music/Mechanicus_Meme1.ogg')
 	b_side = pick('sound/music/Mechanicus_Meme2.ogg')
 	sound_inside = a_side
+
+/obj/item/device/cassette/adepta_sororitas/New()
+	..()
+	name = "Adepta Sororitas Morale Tapes"
+	desc = "An experiment in boosting morale of units with an attached Adeptua Sororitas unit."
+	a_side = pick('sound/music/Sororitas1.ogg')
+	b_side = pick('sound/music/Sororitas2.ogg')
+	sound_inside = a_side
