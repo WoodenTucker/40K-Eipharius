@@ -353,3 +353,19 @@
     b_side = pick('icons/map_project/sounds/starcraft_terran1.ogg')
     sound_inside = a_side
     sales_price = 10 // Very rare and expensive
+
+/obj/item/device/cassette/astra_militarum/New()
+	..()
+	name = "\"The Officio Prefectus-Approved Morale Boosting Chants\" volume two magn-o-tape"
+	desc = "A second volume of the popular tape."
+	a_side = pick('sound/music/Astra_Militarum_Theme.ogg')
+	b_side = pick('sound/music/Bomber.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/necron/New()
+	..()
+	name = "Strange Tape"
+	desc = "A strange tape, this seems to have a drawing of a skull with growing green eyes on it. How odd."
+	a_side = pick('sound/music/Cryptek.ogg')
+	b_side = pick('sound/music/Necrons_Theme.ogg')
+	sound_inside = a_side
