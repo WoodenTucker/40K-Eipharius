@@ -127,6 +127,23 @@ proc/random_nid_name(gender)
 proc/random_lackey_name()
 	return "Worthless Lackey" + " " + capitalize(pick(GLOB.last_names))
 
+proc/random_necron_warrior_name(gender)
+	var/necronwarriornames = list("Warrior")
+	var/necronwarriornum = rand(1,1000)
+	if(gender==FEMALE)
+		return capitalize(pick(necronwarriornames)) + " " + "[necronwarriornum]"
+	else
+		return capitalize(pick(necronwarriornames)) + " "  + "[necronwarriornum]"
+
+proc/random_necron_name(gender)
+	var/necronfirstnamepart = list("Ill","Zara","Meso","Anu","Oby","Sza","Ahho","Rak","Driz","Malto","Khate","Ori","Task",)
+	var/necronsecondnamepart = list("mahnok","thusa","phet","xor","ron","rekh","tekh","hazar","yan","phet","por","cazar","atar",)
+	var/necrontitles = list("The Mighty","The Undefeated","The Wise","The Noble","The Warrior","The Scholar","The Unknowable","The Conqueror","The Explorer",)
+	if(gender==FEMALE)
+		return pick(necronfirstnamepart + necronsecondnamepart) + " " + "[necrontitles]"
+	else
+		return pick(necronfirstnamepart + necronsecondnamepart) + " " + "[necrontitles]"
+
 proc/random_skin_tone(var/datum/species/current_species)
 	var/species_tone = current_species ? 35 - current_species.max_skin_tone() : -185
 	switch(pick(60;"caucasian", 15;"afroamerican", 10;"african", 10;"latino", 5;"albino"))

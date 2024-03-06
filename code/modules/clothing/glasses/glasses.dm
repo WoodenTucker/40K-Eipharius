@@ -723,3 +723,19 @@
 	unacidable = 1
 	flash_protection =  FLASH_PROTECTION_MAJOR
 	vision_flags = SEE_TURFS|SEE_MOBS
+
+/obj/item/clothing/glasses/necron
+	name = "Necron Visual Suite"
+	desc = "A complex system of scanners, which make up the primary visual systems for a Necron."
+	darkness_view = 50
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	flash_protection = FLASH_PROTECTION_MAJOR
+	icon_state = null
+	item_state = null
+	body_parts_covered = EYES
+	siemens_coefficient = 0
+	canremove = 0
+	unacidable = 1
+	flash_protection =  FLASH_PROTECTION_MAJOR
+	vision_flags = SEE_TURFS|SEE_MOBS
+	species_restricted = list(SPECIES_NECRON)

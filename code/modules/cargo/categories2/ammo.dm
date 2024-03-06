@@ -1,6 +1,11 @@
 /datum/noble_entry/ammo
 	category = "Ammo"
 
+/datum/noble_entry/ammo/flamer_canister
+	name = "Flamer canister"
+	cost = 40
+	item_path = /obj/item/ammo_magazine/flamer
+
 /datum/noble_entry/ammo/lasmagsmall
 	name = "Inferior Lasgun Power Pack"
 	cost = 4
@@ -227,9 +232,9 @@
 	item_path = /obj/item/ammo_casing/heat_shell
 
 /datum/noble_entry/ammo/meltamag
-	name = "Melta Ammo"
+	name = "Melta Canister"
 	cost = 39
-	item_path = /obj/item/ammo_magazine/melta
+	item_path = /obj/item/cell/melta
 
 /datum/noble_entry/ammo/boltpistolmag
 	name = "Bolt Pistol Magazine"

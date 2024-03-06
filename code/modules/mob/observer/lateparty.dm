@@ -70,6 +70,16 @@
 						usr.loc = get_turf(locate("landmark*genestart")) //where they spawning
 						var/mob/living/carbon/human/genestealer/new_character = new(usr.loc)// da mob
 						new_character.key = attendee //puts ghost in body with new key
+					if("Imperial Guard")
+						message_admins("[attendee] has joined the late party: Imperial Guard.", 0) //msgs jannies
+						to_chat(usr, "<span class='warning'><b><font size=3>You are an Imperial Guardsman, dispatched to Eipharius III. Obey the orders of your superior officer!.</b></font size=3>") //tells mob to do thing
+						usr.loc = get_turf(locate("landmark*Imperial Guardsman")) //where they spawning
+						if(prob(75))
+							var/mob/living/carbon/human/lateparty/guardsman/new_character = new(usr.loc)// da mob
+							new_character.key = attendee //puts ghost in body with new key
+						else
+							var/mob/living/carbon/human/lateparty/guardsman/specialist/new_character = new(usr.loc)// da mob
+							new_character.key = attendee //puts ghost in body with new key
 			GLOB.daparty.Cut() //CLears our list after the loop completes
 		else
 			src.say("I'm joining the late party [GLOB.daparty.len]/[GLOB.partysize] are ready!")
@@ -91,7 +101,7 @@
 	return
 
 /proc/Get_Party() //dis is the proc that actually selects the party
-	GLOB.latepartyoptions += pick("Orkz", "Tau",)
+	GLOB.latepartyoptions += pick("Orkz", "Tau", "Imperial Guard",)
 
 	//note for myself, make procs to spawn as group if you ever wanna switch to that.
 	//Something like the new_character key that uses an if isreadied to pull them all at once. You could make like beKroot() that contains everything under if("kroot")

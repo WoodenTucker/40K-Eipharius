@@ -10,7 +10,7 @@
 	throw_range = 4
 	throwforce = 10
 	w_class = ITEM_SIZE_SMALL
-	armor_penetration = 20 //Magic
+	armor_penetration = 8 //Magic
 
 /obj/item/nullrod/attack(mob/M as mob, mob/living/user as mob) //Paste from old-code to decult with a null rod.
 	admin_attack_log(user, M, "Attacked using \a [src]", "Was attacked with \a [src]", "used \a [src] to attack")

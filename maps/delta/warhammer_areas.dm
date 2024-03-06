@@ -368,14 +368,14 @@ Area basic template
 // SPACE STUFF
 
 /area/cadiaoutpost/rtship1
-	name = "RT"
+	name = "RT ship"
 	icon_state = "forwardpost"
 	requires_power = FALSE
 	dynamic_lighting = 1
 	music = 'sound/newmusic/Lab_Experiment.ogg'
 
 /area/cadiaoutpost/rtship2
-	name = "RT"
+	name = "RT ship"
 	icon_state = "forwardpost"
 	requires_power = FALSE
 	dynamic_lighting = 1
@@ -396,42 +396,42 @@ Area basic template
 	music = 'sound/newmusic/Outpost1.ogg'
 
 /area/cadiaoutpost/cha1
-	name = "cha"
+	name = "cha ship"
 	icon_state = "forwardpost"
 	requires_power = FALSE
 	dynamic_lighting = 1
 	music = 'sound/newmusic/Outpost1.ogg'
 
 /area/cadiaoutpost/cha2
-	name = "cha"
+	name = "cha ship"
 	icon_state = "forwardpost"
 	requires_power = FALSE
 	dynamic_lighting = 1
 	music = 'sound/newmusic/Outpost1.ogg'
 
 /area/cadiaoutpost/govship1
-	name = "Govna"
+	name = "Govna Ship"
 	icon_state = "forwardpost"
 	requires_power = FALSE
 	dynamic_lighting = 1
 	music = 'sound/newmusic/Lab_Experiment.ogg'
 
 /area/cadiaoutpost/govship2
-	name = "Govna"
+	name = "Govna Ship"
 	icon_state = "forwardpost"
 	requires_power = FALSE
 	dynamic_lighting = 1
 	music = 'sound/newmusic/Lab_Experiment.ogg'
 
 /area/cadiaoutpost/magosship1
-	name = "Magussy"
+	name = "Magussy Ship"
 	icon_state = "forwardpost"
 	requires_power = FALSE
 	dynamic_lighting = 1
 	music = 'sound/newmusic/General_Ambient2.ogg' // located in city
 
 /area/cadiaoutpost/magosship2
-	name = "Magussy"
+	name = "Magussy Ship"
 	icon_state = "forwardpost"
 	requires_power = FALSE
 	dynamic_lighting = 1

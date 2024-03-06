@@ -9,6 +9,7 @@
 						/datum/rune_recipe/khorne/offer_heart,
 						/datum/rune_recipe/khorne/offer_gem,
 						/datum/rune_recipe/khorne/radio,
+						/datum/rune_recipe/khorne/armor,
 						/datum/rune_recipe/khorne/knife_teeth,
 						/datum/rune_recipe/khorne/conversion)
 	possible_blessings = list(
@@ -56,7 +57,6 @@
 						/datum/rune_recipe/nurgle/plate,
 						/datum/rune_recipe/nurgle/mask,
 						/datum/rune_recipe/nurgle/nade,
-						/datum/rune_recipe/nurgle/blight,
 						/datum/rune_recipe/nurgle/nurgling,
 						/datum/rune_recipe/nurgle/offering)
 	inherent_verbs = list(

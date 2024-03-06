@@ -2,8 +2,6 @@
 Astartes
 */
 
-//adminspawning these in still doesn't work, need to be rejuvenated
-
 /datum/species/human/astartes
 	name = SPECIES_ASTARTES
 	name_plural = "Astartes"
@@ -20,8 +18,8 @@ Astartes
 	damage_mask = 'icons/mob/human_races/masks/dam_mask_human.dmi'
 	blood_mask = 'icons/mob/human_races/masks/blood_human.dmi'
 	eye_icon_location = 'icons/mob/astartes_face.dmi'
-	blood_volume = 620 // how much blood an Astartes has
-	slowdown = -0.1 //Increased move speed
+	blood_volume = 820 // how much blood an Astartes has
+	slowdown = -0.3 //Increased move speed
 	eye_icon = "eyes_s"
 	gluttonous = GLUT_ITEM_NORMAL
 	total_health = 350 // a normal human has 200 brain health, Astartes have 350 //P.S this is brain health
@@ -55,6 +53,7 @@ Astartes
 	radiation_mod = 0.7
 
 
+
 	has_limbs = list(
 		BP_CHEST =  list("path" = /obj/item/organ/external/chest/unbreakable/astartes),
 		BP_GROIN =  list("path" = /obj/item/organ/external/groin/unbreakable/astartes),
@@ -71,11 +70,11 @@ Astartes
 
 	has_organ = list(
 		BP_EYES =     /obj/item/organ/internal/eyes/astartes,
-		BP_HEART =    /obj/item/organ/internal/heart,
+		BP_HEART =    /obj/item/organ/internal/heart/astartes,
 		BP_BRAIN =    /obj/item/organ/internal/brain,
 		BP_LUNGS =   /obj/item/organ/internal/lungs/astartes,
 		BP_LIVER =     /obj/item/organ/internal/liver/astartes,
-		BP_KIDNEYS =     /obj/item/organ/internal/kidneys
+		BP_KIDNEYS =     /obj/item/organ/internal/kidneys/astartes
 		)
 
 //gives them the astartes aura
@@ -98,6 +97,12 @@ Astartes
 
 /mob/living/carbon/human/astartes
 	gender = MALE
+	can_bullet_dodge = 1 //Whether or not the mob can typically dodge bullets.
+	bullet_dodge_probability = 20 //The probability of dodging the bullet.
+	can_melee_dodge = 1 //Whether or not the mob can dodge most melee attacks.
+	melee_dodge_probability = 20 //The probability of dodging.
+	can_melee_block = 1 //Whether or not the mob can automatically block most melee attacks.
+	melee_block_probability = 60 //The probability of blocking.
 
 /mob/living/carbon/human/astartes/New(var/new_loc,var/new_astartes = SPECIES_ASTARTES)
 	. = ..()
@@ -128,6 +133,11 @@ Astartes
 	switch(astarteschapter)
 		if("Salamander")
 			src.verbs -= /mob/living/carbon/human/astartes/proc/chapterselect
+			src.s_tone = -250
+			src.r_eyes = 250
+			src.g_eyes = 0
+			src.b_eyes = 0
+			src.rejuvenate()
 			src.verbs += /mob/living/carbon/human/astartes/proc/astartesequips
 			client?.color = null
 
@@ -162,6 +172,7 @@ Astartes
 			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ultramarine)
 			outfit.equip(src)
 			src.set_trait(new/datum/trait/death_tolerant())
+			src.set_quirk(new/datum/quirk/dead_inside) 
 			src.get_idcard()?.access = get_all_accesses()
 			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
@@ -172,6 +183,8 @@ Astartes
 			src.h_style = "Bald"
 			src.bladder = -INFINITY
 			src.bowels = -INFINITY //integrated shitter
+			src.thirst = INFINITY
+			src.nutrition = INFINITY
 			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
 			src.vice = null //off for now
 			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
@@ -185,6 +198,7 @@ Astartes
 			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ultrapoth)
 			outfit.equip(src)
 			src.set_trait(new/datum/trait/death_tolerant())
+			src.set_quirk(new/datum/quirk/dead_inside)
 			src.get_idcard()?.access = get_all_accesses()
 			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
@@ -195,6 +209,8 @@ Astartes
 			src.h_style = "Bald"
 			src.bladder = -INFINITY
 			src.bowels = -INFINITY //integrated shitter
+			src.thirst = INFINITY
+			src.nutrition = INFINITY
 			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
 			src.vice = null //off for now
 			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
@@ -208,6 +224,7 @@ Astartes
 			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ultratech)
 			outfit.equip(src)
 			src.set_trait(new/datum/trait/death_tolerant())
+			src.set_quirk(new/datum/quirk/dead_inside)
 			src.get_idcard()?.access = get_all_accesses()
 			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
@@ -218,6 +235,8 @@ Astartes
 			src.h_style = "Bald"
 			src.bladder = -INFINITY
 			src.bowels = -INFINITY //integrated shitter
+			src.thirst = INFINITY
+			src.nutrition = INFINITY
 			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
 			src.vice = null //off for now
 			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
@@ -231,6 +250,7 @@ Astartes
 			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ultramarine/sergeant)
 			outfit.equip(src)
 			src.set_trait(new/datum/trait/death_tolerant())
+			src.set_quirk(new/datum/quirk/dead_inside)
 			src.get_idcard()?.access = get_all_accesses()
 			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
@@ -241,6 +261,8 @@ Astartes
 			src.h_style = "Bald"
 			src.bladder = -INFINITY
 			src.bowels = -INFINITY //integrated shitter
+			src.thirst = INFINITY
+			src.nutrition = INFINITY
 			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
 			src.vice = null //off for now
 			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
@@ -266,6 +288,7 @@ Astartes
 			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/salamander)
 			outfit.equip(src)
 			src.set_trait(new/datum/trait/death_tolerant())
+			src.set_quirk(new/datum/quirk/dead_inside)
 			src.get_idcard()?.access = get_all_accesses()
 			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
@@ -289,6 +312,7 @@ Astartes
 			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/salapoth)
 			outfit.equip(src)
 			src.set_trait(new/datum/trait/death_tolerant())
+			src.set_quirk(new/datum/quirk/dead_inside)
 			src.get_idcard()?.access = get_all_accesses()
 			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
@@ -312,6 +336,7 @@ Astartes
 			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/saltech)
 			outfit.equip(src)
 			src.set_trait(new/datum/trait/death_tolerant())
+			src.set_quirk(new/datum/quirk/dead_inside)
 			src.get_idcard()?.access = get_all_accesses()
 			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
@@ -335,6 +360,7 @@ Astartes
 			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/salamander/sergeant)
 			outfit.equip(src)
 			src.set_trait(new/datum/trait/death_tolerant())
+			src.set_quirk(new/datum/quirk/dead_inside)
 			src.get_idcard()?.access = get_all_accesses()
 			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
@@ -370,6 +396,7 @@ Astartes
 			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes)
 			outfit.equip(src)
 			src.set_trait(new/datum/trait/death_tolerant())
+			src.set_quirk(new/datum/quirk/dead_inside)
 			src.get_idcard()?.access = get_all_accesses()
 			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
@@ -393,6 +420,7 @@ Astartes
 			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/bangapoth)
 			outfit.equip(src)
 			src.set_trait(new/datum/trait/death_tolerant())
+			src.set_quirk(new/datum/quirk/dead_inside)
 			src.get_idcard()?.access = get_all_accesses()
 			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
@@ -416,6 +444,7 @@ Astartes
 			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/bangtech)
 			outfit.equip(src)
 			src.set_trait(new/datum/trait/death_tolerant())
+			src.set_quirk(new/datum/quirk/dead_inside)
 			src.get_idcard()?.access = get_all_accesses()
 			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
@@ -451,6 +480,7 @@ Astartes
 			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ravenguard)
 			outfit.equip(src)
 			src.set_trait(new/datum/trait/death_tolerant())
+			src.set_quirk(new/datum/quirk/dead_inside)
 			src.get_idcard()?.access = get_all_accesses()
 			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
@@ -474,6 +504,7 @@ Astartes
 			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ravapoth)
 			outfit.equip(src)
 			src.set_trait(new/datum/trait/death_tolerant())
+			src.set_quirk(new/datum/quirk/dead_inside)
 			src.get_idcard()?.access = get_all_accesses()
 			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
@@ -497,6 +528,7 @@ Astartes
 			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/raventech)
 			outfit.equip(src)
 			src.set_trait(new/datum/trait/death_tolerant())
+			src.set_quirk(new/datum/quirk/dead_inside)
 			src.get_idcard()?.access = get_all_accesses()
 			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
@@ -520,6 +552,7 @@ Astartes
 			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ravenguard/Sergeant)
 			outfit.equip(src)
 			src.set_trait(new/datum/trait/death_tolerant())
+			src.set_quirk(new/datum/quirk/dead_inside)
 			src.get_idcard()?.access = get_all_accesses()
 			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)

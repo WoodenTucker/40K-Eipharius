@@ -306,30 +306,30 @@
 /obj/item/projectile/bullet/rifle/a762/brifle
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	damage = 50
-	armor_penetration = 30
+	armor_penetration = 20
 
 /obj/item/projectile/bullet/rifle/a762/brifle/ap
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	damage = 50
-	armor_penetration = 40
+	armor_penetration = 30
 	penetrating = 1
 
 /obj/item/projectile/bullet/rifle/a762/brifle/kp
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	damage = 50
-	armor_penetration = 45
+	armor_penetration = 35 // 75% vs Astartes Chest
 	penetrating = 2
 
 /obj/item/projectile/bullet/rifle/a762/brifle/ms
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	damage = 65
-	armor_penetration = 30
+	armor_penetration = 15
 
 /obj/item/projectile/bullet/rifle/kroot
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	penetrating = TRUE // fuck that shit penetrative rounds
 	damage = 50
-	armor_penetration = 45
+	armor_penetration = 30
 
 /obj/item/ammo_magazine/brifle
 	name = "Rifle Box"
@@ -363,7 +363,7 @@
 	one_hand_penalty = 1.4
 	accuracy = 0
 	fire_delay= 3
-	sales_price = 10 // SHOTGUNS HAVE SLOWDOWN IN THEIR PARENT shotgun/pump -- DO NOT APPLY SLOWDOWN TO SHOTGUNS 
+	sales_price = 10 // SHOTGUNS HAVE SLOWDOWN IN THEIR PARENT shotgun/pump -- DO NOT APPLY SLOWDOWN TO SHOTGUNS
 
 /obj/item/gun/projectile/shotgun/pump/shitty/magrave
 	name = "\improper WTX Belle Magrave"
@@ -387,7 +387,7 @@
 	one_hand_penalty = 0.4
 	fire_delay = 2
 	accuracy = -0.5
-	armor_penetration = 0
+	armor_penetration = 12
 	sales_price = 5
 
 /obj/item/gun/projectile/automatic/flamer
@@ -440,8 +440,17 @@
 	name = "Mark VII Salamander Assault Flamer"
 	desc = "An incredibly dangerous hand-held flamethrower. Used by the Salamanders. More elegant and far more potent than the standard Flamer"
 	str_requirement = 24
-	fire_delay = 12
+	automatic = 1
+	fire_delay = 14
 	caliber = "flamersally"
+	magazine_type = /obj/item/ammo_magazine/flamer/salamander
+	allowed_magazines = /obj/item/ammo_magazine/flamer/salamander
+	burst=1
+	burst_delay = 2
+	firemodes = list(
+		list(mode_name="semi-automatic", burst=1, fire_delay=14, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="2-round burst", burst=2, fire_delay=16, burst_accuracy=list(0.5,-1,-1), dispersion=null, automatic = 0),
+		)
 
 /*
 /obj/item/gun/projectile/automatic/flamer/pistol
@@ -1434,7 +1443,7 @@
 		icon_state = "teslar0"
 
 /obj/item/gun/projectile/automatic/gaussrifle
-	name = "Gauss Rifle"
+	name ="Gauss Rifle"
 	desc = "A strange alien weapon which hums with resonant frequencies alien to mankind."
 	icon = 'icons/map_project/port/ds13.dmi'
 	icon_state = "pulserifle"

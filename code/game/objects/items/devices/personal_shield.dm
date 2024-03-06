@@ -71,11 +71,11 @@
 			shield_count -= 1
 			START_PROCESSING(SSobj, src)
 			del(P)
+			return 1
 		else
 			user.visible_message("<span class='warning'>[user]'s Rosarius overloads!</span>")
 			user.update_inv_wear_suit()
-		return 1
-	return 0
+			return 0
 
 
 /obj/item/clothing/rosarius/Destroy()
@@ -128,11 +128,11 @@
 			shield_count -= 1
 			START_PROCESSING(SSobj, src)
 			del(P)
+			return 1
 		else
 			user.visible_message("<span class='warning'>[user]'s Rosarius overloads!</span>")
 			user.update_inv_wear_suit()
-		return 1
-	return 0
+			return 0
 
 
 /obj/item/clothing/rosette/Destroy()

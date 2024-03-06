@@ -160,7 +160,7 @@
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/hotshot
 	charge_cost = 0
-	armor_penetration = 0
+	armor_penetration = 2
 	cell_type = /obj/item/cell/device
 	ammoType = /obj/item/cell/device
 	fire_delay = 60 //about 15 seconds
@@ -172,7 +172,7 @@
 /obj/item/gun/energy/las/laspistol/digit/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
 	spawn(1) if(src) qdel(src)
-	
+
 /obj/item/clothing/ring/PowerBlade
 	name = "Ring"
 	desc = "A silver ring with a cutten emerald on it."
@@ -190,7 +190,7 @@
 	else
 		to_chat(usr,"Your ring suddenly extends a small pointed iron stick, which suddenly begins glowing in blazing green energy!")
 		usr.put_in_hands(new /obj/item/material/sword/PowerBlade(usr))
-		
+
 /obj/item/material/sword/PowerBlade
 	name = "Power Blade"
 	desc = "A weird glowing stick of green energy!"
@@ -198,7 +198,7 @@
 	icon_state = "blade"
 	force = 40 //bit weaker than normal power sword
 	weapon_speed_delay = 8 //2 secs or so
-//	armor_penetration = 10 //add this if you want it to penetrate armor, ya nerds!
+	armor_penetration = 7 //add this if you want it to penetrate armor, ya nerds!
 	block_chance = 35 //good at blocking
 	edge = 0 //i don't want this to end badly
 	w_class = ITEM_SIZE_HUGE //slow attacking
@@ -206,7 +206,7 @@
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 
 // omnissiah, delete this mfer!
-/obj/item/material/sword/PowerBlade/dropped() 
+/obj/item/material/sword/PowerBlade/dropped()
 	..()
 	spawn(1) if(src) qdel(src)
 
@@ -229,3 +229,25 @@
 	else
 		to_chat(usr,"Your ring suddenly gets open and prepares to open fire on the enemy-- then, suddenly, a british lollipop jumps out of the ring")
 		usr.put_in_hands(new /obj/item/reagent_containers/food/snacks/variable/sucker(usr))
+
+
+/obj/item/clothing/ring/halodevice
+	//doing this shit dead-space style, only real option for killing the user is burning or full delimbing which even then might not last
+	name = "Strange Ring"
+	desc = "Artifaci Xenos Horrificus, possesion or knowlege of this item is grounds for entire houses to be purged by the Ordos Xenos of the Inquisition"
+	icon_state = "mariner-grad"
+	canremove = FALSE
+	var/obj/aura/regenerating/human/halo/bond
+
+/obj/item/clothing/ring/halodevice/Destroy()
+	QDEL_NULL(bond)
+	return ..()
+
+/obj/item/clothing/ring/halodevice/dropped(var/mob/living/carbon/human/wielder)
+	QDEL_NULL(bond)
+	return ..()
+
+/obj/item/clothing/ring/halodevice/equipped(var/mob/living/carbon/human/wielder, slot)
+	. = ..()
+	if(slot == 10 && !bond) // 10 is the number for slot_gloves, idk why SLOT_GLOVES is a bitflag
+		bond = new(wielder,src)

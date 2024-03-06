@@ -6,7 +6,7 @@
 	icon_state = "telebaton_1"
 	item_state = "baton"
 	slot_flags = SLOT_BELT
-	force = 15
+	force = 10
 	sharp = 0
 	edge = 0
 	throwforce = 7
@@ -14,17 +14,18 @@
 	origin_tech = list(TECH_COMBAT = 2)
 	attack_verb = list("beaten")
 	var/stunforce = 0
-	var/agonyforce = 70
+	var/agonyforce = 90
 	var/status = 0		//whether the thing is on or not
 	var/obj/item/cell/bcell
 	var/hitcost = 0
 	block_chance = 15
 	stunforce = 0
-	agonyforce = 70
+	agonyforce = 90
+	sharpness = 0
 	sales_price = 1
 	weapon_speed_delay = 6
 	status = 1
-	armor_penetration = 17 //Blunt force transfers through a lot of equipment.
+	armor_penetration = 2 // 60% vs SOB armor. 90 percent on Flak.
 
 /obj/item/melee/baton/handle_shield(mob/living/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(default_sword_parry(user, damage, damage_source, attacker, def_zone, attack_text))
@@ -258,6 +259,59 @@
 	attack_verb = list("poked")
 	slot_flags = null
 
+
+/obj/item/melee/baton/shockmaul
+	name = "Shock Maul"
+	desc = "The Shock Maul commonly used by members of the Adeptus Arbites. It is good for incapacitating victims, not being as efficient as a power maul."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "shockmaul"
+	item_state = "baton"
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
+	force = 10
+	sharp = 0
+	edge = 0
+	throwforce = 7
+	w_class = ITEM_SIZE_NORMAL
+	origin_tech = list(TECH_COMBAT = 2)
+	attack_verb = list("beaten")
+	stunforce = 0
+	agonyforce = 120
+	status = 0		//whether the thing is on or not
+	/obj/item/cell/bcell
+	hitcost = 0
+	block_chance = 30
+	sharpness = 0
+	stunforce = 0
+	agonyforce = 120
+	sales_price = 1
+	weapon_speed_delay = 6
+	status = 1
+	armor_penetration = 4 // 70% vs SOB Power Armor. 95% vs Flak.
+
+/obj/item/melee/baton/shockmaul/update_icon()
+	if(status)
+		icon_state = "shockmaul_active"
+	else if(!bcell)
+		icon_state = "shockmaul_nocell"
+	else
+		icon_state = "shockmaul"
+
+	if(icon_state == "shockmaul_active")
+		set_light(2, 2, "#D9E9FF")
+	else
+		set_light(0)
+
+/obj/item/melee/baton/shockmaul/loaded
+	bcell = /obj/item/cell/device/high
+
+/obj/item/melee/baton/New()
+	if(ispath(bcell))
+		bcell = new bcell(src)
+		update_icon()
+	..()
+
+
+
 /obj/item/melee/powermaul
 	name = "Power Maul"
 	desc = "The Power Maul commonly used by members of the Adeptus Arbites. It is good for stunning victims."
@@ -274,13 +328,14 @@
 	block_chance = 40
 	sales_price = 30
 	weapon_speed_delay = 6
+	sharpness = 0
 	sharp = FALSE
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_HUGE
 	atom_flags = ATOM_FLAG_NO_BLOOD
 	origin_tech = list(TECH_MAGNET = 2, TECH_COMBAT = 2)
 	attack_verb = list("beaten", "smashed")
-	armor_penetration = 19 //Power maul
+	armor_penetration = 4 // 70% vs SOB Power Armor. 95% vs Flak.
 
 /obj/item/melee/powermaul/apply_hit_effect(mob/living/target, mob/living/user, var/hit_zone)
 	if(isrobot(target))
@@ -339,7 +394,7 @@
 	atom_flags = ATOM_FLAG_NO_BLOOD
 	origin_tech = list(TECH_MAGNET = 2, TECH_COMBAT = 2)
 	attack_verb = list("violated", "penetrated", "infested")
-	armor_penetration = 19 //Genestealer magic.
+	armor_penetration = 8 // 70% vs SM Chestpiece
 no
 /obj/item/melee/baton/nidstun/dropped() //since nodrop is fucked this will deal with it for now.
 	..()

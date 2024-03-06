@@ -76,3 +76,17 @@
 	var/obj/screen/plane_master/blur/effects_blur/EB = new
 	var/obj/screen/plane_master/blur/plating_blur/plating_blur = new
 	var/obj/screen/plane_master/blur/above_obj_blur/AOB = new
+
+/*	var/shielded_energy = 0
+	var/shielded_projectile = 0
+	var/shielded_melee = 0
+
+	var/can_bullet_dodge = 0 //Whether or not the mob can typically dodge bullets.
+	var/bullet_dodge_probability = 0 //The probability of dodging the bullet.
+	var/can_melee_dodge = 0 //Whether or not the mob can dodge most melee attacks.
+	var/melee_dodge_probability = 0 //The probability of dodging.
+	var/can_melee_block = 0 //Whether or not the mob can automatically block most melee attacks.
+	var/melee_block_probability = 0 //The probability of blocking.
+*/
+
+	var/jaunting = 0 //Is the mob already Jaunting?

@@ -44,9 +44,9 @@ client/verb/JoinResponseTeam()
 	set name = "Join Response Team"
 	set category = "IC"
 
-	if(!MayRespawn(1))
+	/*if(!MayRespawn(1))
 		to_chat(usr, "<span class='warning'>You cannot join the response team at this time.</span>")
-		return
+		return*/
 
 	if(isghost(usr) || isnewplayer(usr))
 		if(!send_emergency_team)
@@ -111,14 +111,14 @@ proc/trigger_armed_response_team(var/force = 0)
 
 	// there's only a certain chance a team will be sent
 	if(!prob(send_team_chance))
-		command_announcement.Announce("It would appear that an emergency response team was requested for [station_name()]. Unfortunately, we were unable to send one at this time.", "[GLOB.using_map.boss_name]")
-		can_call_ert = 0 // Only one call per round, ladies.
+		command_announcement.Announce("Emergency distress beacon logged from Eipharius III. No forces available for intervention at this time.")
+		//can_call_ert = 0 // Only one call per round, ladies.
 		return
 
-	command_announcement.Announce("It would appear that an emergency response team was requested for [station_name()]. We will prepare and send one as soon as possible.", "[GLOB.using_map.boss_name]")
+	command_announcement.Announce("Emergency distress beacon logged from Eipharius III. Intervention forces inbound.")
 	evacuation_controller.add_can_call_predicate(new/datum/evacuation_predicate/ert())
 
-	can_call_ert = 0 // Only one call per round, gentleman.
+	//can_call_ert = 0 // Only one call per round, gentleman.
 	send_emergency_team = 1
 
 	sleep(600 * 5)
@@ -137,5 +137,118 @@ proc/trigger_armed_response_team(var/force = 0)
 /datum/evacuation_predicate/ert/can_call(var/user)
 	if(world.time >= prevent_until)
 		return TRUE
-	to_chat(user, "<span class='warning'>An emergency response team has been dispatched. Evacuation requests will be denied until [duration2stationtime(prevent_until - world.time)].</span>")
+	to_chat(user, "<span class='warning'>An emergency response team has been dispatched.</span>")
 	return FALSE
+
+
+//ASTARTES ERT
+/*
+/client/proc/response_team_astartes()
+	set name = "Dispatch Astartes Emergency Response Team"
+	set category = "Special Verbs"
+	set desc = "Send an astartes emergency response team"
+
+	if(!holder)
+		to_chat(usr, "<span class='danger'>Only administrators may use this command.</span>")
+		return
+	if(!ticker)
+		to_chat(usr, "<span class='danger'>The game hasn't started yet!</span>")
+		return
+	if(ticker.current_state == 1)
+		to_chat(usr, "<span class='danger'>The round hasn't started yet!</span>")
+		return
+	if(send_emergency_team)
+		to_chat(usr, "<span class='danger'>[GLOB.using_map.boss_name] has already dispatched an astartes emergency response team!</span>")
+		return
+	if(alert("Do you want to dispatch an Astartes Emergency Response Team?",,"Yes","No") != "Yes")
+		return
+
+	var/decl/security_state/security_state = decls_repository.get_decl(GLOB.using_map.security_state)
+	if(security_state.current_security_level_is_lower_than(security_state.high_security_level)) // Allow admins to reconsider if the alert level is below High
+		switch(alert("Current security level lower than [security_state.high_security_level.name]. Do you still want to dispatch a response team?",,"Yes","No"))
+			if("No")
+				return
+	if(send_emergency_team)
+		to_chat(usr, "<span class='danger'>Looks like somebody beat you to it!</span>")
+		return
+
+	message_admins("[key_name_admin(usr)] is dispatching an Astartes Emergency Response Team.", 1)
+	log_admin("[key_name(usr)] used Dispatch Astartes Response Team.")
+	trigger_armed_response_team(1)
+
+client/verb/JoinResponseTeamAstartes()
+
+	set name = "Join Astartes Response Team"
+	set category = "IC"
+
+	/*if(!MayRespawn(1))
+		to_chat(usr, "<span class='warning'>You cannot join the response team at this time.</span>")
+		return*/
+
+	if(isghost(usr) || isnewplayer(usr))
+		if(!send_emergency_team)
+			to_chat(usr, "No emergency response team is currently being sent.")
+			return
+		if(jobban_isbanned(usr, MODE_ERT) || jobban_isbanned(usr, "Security Officer"))
+			to_chat(usr, "<span class='danger'>You are jobbanned from the emergency reponse team!</span>")
+			return
+		if(astartesert.current_antagonists.len >= astartesert.hard_cap)
+			to_chat(usr, "The emergency response team is already full!")
+			return
+		astartesert.create_default(usr)
+	else
+		to_chat(usr, "You need to be an observer or new player to use this.")
+
+// returns a number of dead players in %
+proc/percentage_dead()
+	var/total = 0
+	var/deadcount = 0
+	for(var/mob/living/carbon/human/H in SSmobs.mob_list)
+		if(H.client) // Monkeys and mice don't have a client, amirite?
+			if(H.stat == 2) deadcount++
+			total++
+
+	if(total == 0) return 0
+	else return round(100 * deadcount / total)
+
+// counts the number of antagonists in %
+proc/percentage_antagonists()
+	var/total = 0
+	var/antagonists = 0
+	for(var/mob/living/carbon/human/astartes/H in SSmobs.mob_list)
+		if(is_special_character(H) >= 1)
+			antagonists++
+		total++
+
+	if(total == 0) return 0
+	else return round(100 * antagonists / total)
+
+
+proc/trigger_armed_response_team(var/force = 0)
+	if(!can_call_ert && !force)
+		return
+	if(send_emergency_team)
+		return
+
+	if(force) send_team_chance = 100
+
+	// there's only a certain chance a team will be sent
+	if(!prob(send_team_chance))
+		command_announcement.Announce("Request for Adeptus Astartes intervention forces logged from Eipharius III. No forces available for intervention at this time.")
+		//can_call_ert = 0 // Only one call per round, ladies.
+		return
+
+	command_announcement.Announce("Request for Adeptus Astartes intervention forces logged from Eipharius III. Intervention forces inbound.")
+
+	//can_call_ert = 0 // Only one call per round, gentleman.
+	send_emergency_team = 1
+
+	sleep(600 * 5)
+	send_emergency_team = 0 // Can no longer join the ERT.
+
+/datum/evacuation_predicate/ert/can_call(var/user)
+	if(world.time >= prevent_until)
+		return TRUE
+	to_chat(user, "<span class='warning'>An emergency response team has been dispatched.</span>")
+	return FALSE
+*/

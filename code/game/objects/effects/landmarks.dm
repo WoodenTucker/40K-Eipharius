@@ -342,7 +342,7 @@ Template:
 				/obj/item/melee/trench_axe/lance = 4,
 				/obj/item/melee/trench_axe/bspear = 6,
 				/obj/item/shield/riot = 2,
-				/obj/item/shield/riot/metal = 1,
+				/obj/item/shield/riot/metal = 4,
 				/obj/item/melee/sword/sabre = 4)
 
 
@@ -577,7 +577,7 @@ Template:
 				/obj/item/gun/energy/pulse/plasma/rifle = 1,
 				/obj/item/gun/energy/pulse/plasma/pistol = 3,
 				/obj/item/gun/energy/las/hotshot = 2,
-				/obj/item/gun/projectile/meltagun = 1,
+				/obj/item/gun/energy/melta/handheld = 1,
 				/obj/item/gun/energy/las/lasgun/longlas = 2,
 				/obj/item/gun/energy/las/lasgun/longlas/krieg = 2,
 				/obj/item/gun/projectile/heavysniper = 2

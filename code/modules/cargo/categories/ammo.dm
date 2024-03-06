@@ -6,6 +6,13 @@
 	cost = 4
 	item_path = /obj/item/cell/lasgun/small
 
+
+
+/datum/cargo_entry/ammo/flamer_canister
+	name = "Flamer canister"
+	cost = 40
+	item_path = /obj/item/ammo_magazine/flamer
+
 /datum/cargo_entry/ammo/lasmag
 	name = "Lasgun Power Pack"
 	cost = 10
@@ -227,9 +234,9 @@
 	item_path = /obj/item/ammo_casing/heat_shell
 
 /datum/cargo_entry/ammo/meltamag
-	name = "Melta Ammo"
+	name = "Melta Canister"
 	cost = 35
-	item_path = /obj/item/ammo_magazine/melta
+	item_path = /obj/item/cell/melta
 
 /datum/cargo_entry/ammo/boltpistolmag
 	name = "Bolt Pistol Magazine"

@@ -499,23 +499,39 @@
 	w_class = ITEM_SIZE_SMALL
 	sales_price = 1
 
-/obj/structure/hivedecor/flesh
-	name = "flesh"
-	desc = "A very old skull, who knows how long it's been there."
-	icon = 'icons/cadia-sprites/migrated2/things2.dmi'
-	icon_state = "2"
-	density = 0
-
-/obj/structure/hivedecor/kitten
-	name = "kitten"
-	desc = "A very old skull, who knows how long it's been there."
-	icon = 'icons/cadia-sprites/migrated2/things.dmi'
-	icon_state = "kitten"
-	density = 0
-
 
 /obj/structure/hivedecor/scrapper
 	name = "recycler"
 	desc = "Some kind of recycling maching"
 	icon = 'icons/map_project/furniture_and_decor.dmi'
 	icon_state = "recycler"
+
+/obj/structure/hivedecor/watertreatment
+	name = "water treatement equipment"
+	desc = "Uh oh! Stinky!"
+	icon = 'icons/obj/32x64.dmi'
+	icon_state = "water"
+
+/obj/structure/hivedecor/watertreatment2
+	name = "water treatement equipment"
+	desc = "Uh oh! Stinky!"
+	icon = 'icons/obj/32x64.dmi'
+	icon_state = "dity"
+
+/obj/structure/hivedecor/watertreatment3
+	name = "water treatement equipment"
+	desc = "Uh oh! Stinky!"
+	icon = 'icons/obj/32x64.dmi'
+	icon_state = "empty"
+
+/obj/structure/hivedecor/watertreatment5
+	name = "water treatement equipment"
+	desc = "Uh oh! Stinky!"
+	icon = 'icons/obj/96x96.dmi'
+	icon_state = "filtration2"
+
+/obj/structure/hivedecor/watertreatment6
+	name = "water treatement equipment"
+	desc = "Uh oh! Stinky!"
+	icon = 'icons/obj/96x96.dmi'
+	icon_state = "disinfection"

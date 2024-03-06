@@ -43,7 +43,7 @@
 	item_state = "WU-club"
 	force = 25 //These things pack a punch.
 	block_chance = 25
-	armor_penetration = 20
+	armor_penetration = 2 // 60% damage vs SOB Chestpiece 80% vs Flak
 
 /obj/item/melee/classic_baton/trench_club/New()
 	..()
@@ -56,7 +56,7 @@
 	item_state = "WU-club"
 	force = 28 //These things pack a punch.
 	block_chance = 25
-	armor_penetration = 22
+	armor_penetration = 3 
 
 //Telescopic baton
 /obj/item/melee/telebaton
@@ -117,7 +117,7 @@
 	icon_state = "crozius"
 	item_state = "crozius"
 	force = 30 //in conjunction with ass tardes str this thing is insane
-	armor_penetration = 22
+	armor_penetration = 11
 	throwforce = 1
 	throw_speed = 1
 	throw_range = 1

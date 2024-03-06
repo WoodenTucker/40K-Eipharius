@@ -124,6 +124,12 @@
 	rift_collapse = world.time + rand(10,60) SECONDS
 
 /turf/unsimulated/wall/supermatter/warp/Process()
+	if(!isturf(loc))
+		if(ismob(loc))
+			var/mob/M = loc
+			M.drop_from_inventory(src)
+	playsound(src, 'sound/effects/supermatter.ogg', 100)
+	supermatter_pull(src, world.view, STAGE_THREE)
 	if(world.time > rift_collapse)
 		qdel(src)
 

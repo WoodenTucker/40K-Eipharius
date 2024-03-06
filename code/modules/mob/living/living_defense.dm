@@ -19,6 +19,7 @@
 	if(armour_pen >= armor)
 		return 0 //effective_armor is going to be 0, fullblock is going to be 0, blocked is going to 0, let's save ourselves the trouble
 
+
 	/*var/effective_armor = (armor - armour_pen)/100 //Old Armour code, preserved in case it needs to be used elsewhere.
 	var/fullblock = (effective_armor*effective_armor) * ARMOR_BLOCK_CHANCE_MULT
 
@@ -48,6 +49,7 @@
 		playsound(src, "sound/weapons/armorblock[rand(1,4)].ogg", 50, 1, 1)
 	return round(blocked, 1)*/
 
+/*  SAVING THIS CODE HERE TO BE FIXED LATER
 	if(armor >= (armour_pen * 100)) //No point calculating a fraction of a percent of damage.
 		if(absorb_text)
 			show_message("<span class='warning'>[absorb_text]</span>")
@@ -70,7 +72,28 @@
 		show_message("<span class='warning'>Your armor blocks the blow!</span>")
 		playsound(src, "sound/weapons/armorblockheavy[rand(1,3)].ogg", 50, 1, 1)
 		return 100
+*/
 
+	if(armor > armour_pen + 25 && !istype(usr, /mob/living/carbon)) //No point calculating this, it'll be 100%  block anyway.
+		if(absorb_text)
+			show_message("<span class='warning'>[absorb_text]</span>")
+		else
+			show_message("<span class='warning'>Your armour blocks the blow!</span>")
+		playsound(src, "sound/weapons/armorblockheavy[rand(1,3)].ogg", 50, 1, 1)
+		return 100
+
+	if(armour_pen > armor && !istype(usr, /mob/living/carbon)) //No point calculating this, it'll be 100%  pen anyway.
+		return 0
+
+	var/damage_breakthrough = ((((armor - armour_pen) / 20) * 100)) //This takes the armour, subtracts armour pen, and gets a percentage between 0 and 100, depending on the difference between them, with 20 points of armour above AP being 100% block.
+	if(soften_text)
+		show_message("<span class='warning'>[soften_text]</span>")
+	else
+		show_message("<span class='warning'>Your armor softens the blow!</span>")
+	if(damage_breakthrough < 0)
+		damage_breakthrough = 0
+	playsound(src, "sound/weapons/armorblock[rand(1,4)].ogg", 50, 1, 1)
+	return damage_breakthrough
 
 //Adds two armor values together.
 //If armor_a and armor_b are between 0-100 the result will always also be between 0-100.
@@ -101,7 +124,7 @@
 	var/flags = P.damage_flags()
 	var/absorb = run_armor_check(def_zone, P.check_armour, P.armor_penetration)
 	if (prob(absorb))
-		if(flags & DAM_LASER)
+		if(prob (50(flags & DAM_LASER)))
 			//the armour causes the heat energy to spread out, which reduces the damage (and the blood loss)
 			//this is mostly so that armour doesn't cause people to lose MORE fluid from lasers than they would otherwise
 			damage *= FLUIDLOSS_CONC_BURN/FLUIDLOSS_WIDE_BURN
@@ -170,9 +193,9 @@
 	var/blocked = run_armor_check(hit_zone, "melee")
 	standard_weapon_hit_effects(I, user, effective_force, blocked, hit_zone)
 
-	if(I.damtype == BRUTE && prob(33)) // Added blood for whacking non-humans too
+	/*if(I.damtype == BRUTE && prob(33)) // Added blood for whacking non-humans too
 		var/turf/simulated/location = get_turf(src)
-		if(istype(location)) location.add_blood_floor(src)
+		if(istype(location)) location.add_blood_floor(src)*/ //Removed to avoid necrons and other robots bleeding.
 
 	return blocked
 
@@ -184,6 +207,22 @@
 	//Hulk modifier
 	if(HULK in user.mutations)
 		effective_force *= 2
+
+	/*if(shielded_melee >= 0)
+		visible_message("<b><big>[src.name]'s shield deflects the attack!!</big></b>")//send a message
+		var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
+		spark_system.set_up(5, 0, src.loc)
+		spark_system.start()
+		playsound(src.loc, "sparks", 50, 1)
+		return 0
+
+	if((can_melee_dodge >= 1) && prob(melee_dodge_probability))
+		visible_message("<b><big>[src.name] dodges out of the way!!</big></b>")//send a message
+		return 0
+
+	if((can_melee_block >= 1) && prob(melee_block_probability))
+		visible_message("<b><big>[src.name] parries the attack!!</big></b>")//send a message
+		return 0*/
 
 	//Apply weapon damage
 	var/damage_flags = I.damage_flags()

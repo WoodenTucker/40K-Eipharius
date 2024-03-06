@@ -157,7 +157,7 @@
 	block_chance = 20 //20 block chance, same block chance, force and pen as brutal chainsword but harder to get
 	force = 50
 	force_wielded = 60
-	armor_penetration = 21 //high penetration due to it being a power axe, weaker than power sword due to moderate block chance.
+	armor_penetration = 5 // Penetration 60% Versus Marine Power Armor.
 	sharp = TRUE
 	edge = TRUE
 //	obj_flags = OBJ_FLAG_CONDUCTIBLE //me on my way to get shocked after flinging a power axe at a power wire cause it somehow is conductible
@@ -173,7 +173,7 @@
 	name = "Oversized Omnissiah`s axe"
 	desc = "The Blessed Power Axe of a techpriest. This one is oversized and meant to be beared by a Techmarine. Its decorated with holy symbols of the Adeptus Mechanicus"
 	block_chance = 25 //Bit better
-	armor_penetration = 26 //Meant to fight proper power armor
+	armor_penetration = 9 // Penetration 75% Versus Marine Power Armor.
 	weapon_speed_delay = 11
 
 /obj/item/melee/omnissiah_axe/astartes/dropped() //since nodrop is fucked this will deal with it for now.
@@ -218,7 +218,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 /obj/item/clothing/gloves/thick/narthecium/apot
 	name = "Apothecary's Narthecium"
 	desc = "A giant surgical combi-tool with multiple different tools, it clearly wasnt made for a normal human."
-	armor = list(melee = 4, bullet = 4, laser = 4, energy = 4, bomb = 12, bio = 100, rad = 100)
+	armor = list(melee = 2, bullet = 4, laser = 4, energy = 4, bomb = 12, bio = 100, rad = 100)
 	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
 	icon_state = "hypogauntlet" //gloves.dmi
 	item_state = "sister" //hands.dmi
@@ -279,7 +279,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	str_requirement = 20
 	force = 42
 	force_wielded = 60
-	armor_penetration = 21
+	armor_penetration = 10 // Pen 80 vs SM Chestpiece
 	block_chance = 45 //apothecary nartheciums can be used for blocking better, due to being essentially a extension of the apothecaries body and being insanely armored.
 
 /obj/item/melee/chain/pcsword/narthecium/apot/dropped() //since nodrop is fucked this will deal with it for now.
@@ -292,7 +292,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	desc = "A pair of white, augmented gloves, these have several modifications on them."
 	siemens_coefficient = 0
 	permeability_coefficient = 0.05
-	armor = list(melee = 3, bullet = 3, laser = 3, energy = 10, bomb = 10, bio = 0, rad = 60)
+	armor = list(melee = 1, bullet = 3, laser = 3, energy = 10, bomb = 10, bio = 0, rad = 60)
 	icon_state = "sister" //gloves.dmi
 	item_state = "sister" //hands.dmi
 	var/can_toggle = 1
@@ -602,7 +602,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	projectile_type = /obj/item/projectile/energy/las/lasgun
 	charge_cost = 600
 	self_recharge = 1
-	armor_penetration = 5
+	armor_penetration = 2 // This is melee
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
@@ -625,7 +625,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	projectile_type = /obj/item/projectile/energy/las/lasgun/overcharge
 	charge_cost = 300
 	self_recharge = 1
-	armor_penetration = 5
+	armor_penetration = 2 // Melee
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
@@ -745,3 +745,85 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 /obj/item/gun/energy/thallax/lightning/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
 	spawn(1) if(src) qdel(src)
+
+//XENOTECH 
+
+//Putting any weird Xenotech devices here.
+
+/obj/item/device/xenotech
+
+	name = "Xenotech"
+	desc = "If you can see this, something is broken. Ping the Devs, or Magisterium"
+	icon_state = "shield0"
+
+/obj/item/device/xenotech/halo_device
+	name = "Halo Device"
+	desc = "A strange Xenotech object, softly humming"
+	icon_state = "shield0"
+
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	force = 5.0
+	w_class = ITEM_SIZE_SMALL
+	throwforce = 5.0
+	throw_range = 8
+	throw_speed = 3
+
+
+/obj/item/device/xenotech/halo_device/attack_self(mob/user)
+	possess(user)
+
+
+/obj/item/device/xenotech/halo_device/proc/possess(mob/user)
+	if(istype(user,/mob/living/carbon/human))
+		var/mob/living/carbon/human/H = user
+		visible_message("<span class='warning'>The device vibrates then falls still, and begins to sink into [user]'s flesh!")
+		playsound(src, 'sound/items/tourniquet.ogg', 70, FALSE)
+		sleep(100)
+		visible_message("<span class='warning'>The device fully merges with [user]'s flesh!")
+		to_chat(H, "<span class='danger'>As the device sinks below your skin, you feel an alien presence brush at the edges of your mind. Was this a wise choice?</span>")
+		H.possess_stage = 1
+		H.vomit()
+		H.possess1()
+		qdel(src)
+
+/mob/living/carbon/human/proc/possess1(var/mob/living/carbon/human/H)
+	H.possess_stage = 0
+	sleep(rand(200,600))
+	H.visible_message("<span class='warning'>You feel your skin shift and ripple, newly formed muscles bulging below the surface!")
+	H.STAT_LEVEL(str) += 4
+	sleep(rand(200,600))
+	to_chat(H, "<span class='danger'>Your bones shift and grind, your whole body shifting slightly.</span>")
+	H.STAT_LEVEL(end) += 4
+	sleep(rand(200,600))
+	to_chat(H, "<span class='danger'>Your bones shift and grind, your whole body shifting slightly.</span>")
+	H.STAT_LEVEL(dex) += 4
+	sleep(rand(200,600))
+	to_chat(H, "<span class='danger'>Your bones shift and grind, your whole body shifting slightly.</span>")
+	H.STAT_LEVEL(int) += 4
+	sleep(rand(200,600))
+	H.set_trait(new/datum/trait/death_tolerant())
+	H.set_quirk(new/datum/quirk/hypersensitive())
+	to_chat(H, "<span class='danger'>Once again, an alien presence brushes the edge of your mind. You feel... empty, as normal pleasures no longer satiate your appetites.</span>")
+	H.vice = "Glutton"
+	sleep(rand(1800,5000))
+	H.possess2()
+
+/mob/living/carbon/human/proc/possess2(var/mob/living/carbon/human/H)
+	to_chat(H, "<span class='danger'>You can feel your CARAPACE; no, skin, begin to harden and clump strangely.</span>")
+	H.STAT_LEVEL(end) += 4
+	H.species.brute_mod = 0.85
+	H.species.burn_mod = 0.85
+	sleep(rand(400,1200))
+	to_chat(H, "<span class='danger'>Your body grows ever more strange, limbs twisting and bending in ways they should not be able to.</span>")
+	H.add_aura(/obj/aura/regenerating/human/nid)
+	H.species.slowdown = -0.5
+	sleep(rand(400,1200))
+	H.visible_message("<span class='warning'>IT'S NOT ENOUGH. NOTHING IS ENOUGH.")
+	sleep(rand(100,300))
+	to_chat(H, "<span class='danger'>Again, the alien presence brushes against your mind. You sense a comradeship, a similarity between you. Are you even human any more?</span>")
+	sleep(rand(100,300))
+	to_chat(H, "<span class='danger'>No. You are something more, now. Humans are but prey, to feast upon. EAT OF THEIR FLESH. BECOME GREATER STILL.</span>")
+	H.STAT_LEVEL(str) += 6
+	H.STAT_LEVEL(dex) += 4
+	H.STAT_LEVEL(int) += 4
+	H.set_species(SPECIES_HALO) //Makes them into a new species.

@@ -18,9 +18,18 @@
 	var/focus = 50
 	var/max_focus = 100
 	var/isdrawing = 0
+
+	var/possess_stage = 0
 	var/shielded_energy = 0
 	var/shielded_projectile = 0
 	var/shielded_melee = 0
+
+	var/can_bullet_dodge = 0 //Whether or not the mob can typically dodge bullets.
+	var/bullet_dodge_probability = 0 //The probability of dodging the bullet.
+	var/can_melee_dodge = 0 //Whether or not the mob can dodge most melee attacks.
+	var/melee_dodge_probability = 0 //The probability of dodging.
+	var/can_melee_block = 0 //Whether or not the mob can automatically block most melee attacks.
+	var/melee_block_probability = 0 //The probability of blocking.
 
 /mob/living/carbon/human/New(var/new_loc, var/new_species = null)
 
@@ -769,7 +778,7 @@
 					if (istype(location, /turf/simulated))
 						location.add_vomit_floor(src, toxvomit)
 					ingested.remove_any(5)
-					nutrition -= 30
+					nutrition -= 20
 		sleep(350)	//wait 35 seconds before next volley
 		lastpuke = 0
 

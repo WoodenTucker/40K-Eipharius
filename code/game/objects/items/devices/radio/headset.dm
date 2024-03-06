@@ -93,8 +93,8 @@
 	desc = "The vox of an elite space marine."
 	icon_state = "sec_headset"
 	item_state = "headset"
-	ks1type = /obj/item/device/encryptionkey/red
-	ks2type = /obj/item/device/encryptionkey/headset_sec
+	ks1type = /obj/item/device/encryptionkey/headset_sec
+	ks2type = null
 
 //standard Mechanicus vox
 /obj/item/device/radio/headset/headset_eng
@@ -102,8 +102,8 @@
 	desc = "Keep that toaster-speak to yourselves."
 	icon_state = "eng_headset"
 	item_state = "headset"
-	ks1type = /obj/item/device/encryptionkey/red
-	ks2type = /obj/item/device/encryptionkey/headset_eng
+	ks1type = /obj/item/device/encryptionkey/headset_eng
+	ks2type = null
 
 //not used rn
 /obj/item/device/radio/headset/headset_rob
@@ -210,10 +210,10 @@
 	ks1type = /obj/item/device/encryptionkey/red
 	ks2type = /obj/item/device/encryptionkey/heads/cmo
 
-//Steward vox
+//Steward vox //Heir/Servant Vox apparently
 /obj/item/device/radio/headset/heads/hop
 	name = "Steward vox"
-	desc = "The headset of the right hand of the Rogue Trader."
+	desc = "The headset of the ruling nobles of Messina, House de Burgen."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/red
@@ -225,9 +225,8 @@
 	desc = "A headset used by the box pushers."
 	icon_state = "cargo_headset"
 	item_state = "headset"
-	ks1type = /obj/item/device/encryptionkey/red
-	ks2type = /obj/item/device/encryptionkey/headset_cargo
-
+	ks1type = /obj/item/device/encryptionkey/headset_cargo
+	ks2type = null
 //basic 'common' vox
 /obj/item/device/radio/headset/headset_service
 	icon = 'icons/obj/radio.dmi'
@@ -525,7 +524,7 @@
 	desc = "A command-level vox with high tiers of encryption."
 	icon_state = "com_headset"
 	item_state = "headset"
-	ks2type = /obj/item/device/encryptionkey/red
+	ks2type = null
 	ks1type = /obj/item/device/encryptionkey/heads/captain2
 	slot_flags = SLOT_EARS
 	w_class = ITEM_SIZE_SMALL

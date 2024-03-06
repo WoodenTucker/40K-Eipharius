@@ -121,21 +121,69 @@ obj/item/gun/energy/staff/focus
 	self_recharge = 1
 
 
-/obj/item/gun/energy/gauss
-	name = "Gauss Rifle"
+/obj/item/gun/energy/gaussflayer
+	name = "Gauss Flayer"
 	desc = "A deadly weapon wielded by Necron Warriors"
-	icon_state = "ns"
-	item_state = "ns"
-	origin_tech = list(TECH_COMBAT = 6, TECH_MAGNET = 6)
+	icon_state = "gaussflayer"
+	item_state = "gaussflayer"
+	origin_tech = list(TECH_COMBAT = 9, TECH_MAGNET = 9)
 	w_class = ITEM_SIZE_NORMAL
-	force = 5
+	fire_delay = 5 //Gotta balance the whole infinite ammo a little
+	force = 2 //it has a giant spike on the end of it
 	slot_flags = SLOT_BELT|SLOT_BACK
+	str_requirement = 20
+	one_hand_penalty = 0
+	charge_cost = 20
+	max_shots = 10
+	projectile_type = /obj/item/projectile/gauss
+	self_recharge = 1
+
+/obj/item/gun/energy/gaussblaster
+	name = "Gauss Blaster"
+	desc = "A double barreled gauss weapon with green energy coursing through it."
+	icon_state = "gaussblaster"
+	item_state = "gaussblaster"
+	origin_tech = list(TECH_COMBAT = 9, TECH_MAGNET = 9)
+	w_class = ITEM_SIZE_NORMAL
+	fire_delay = 20
+	burst = 2
+	burst_delay = 3
+	force = 25 //Larger and it ALSO has a giant spike
+	slot_flags = SLOT_BELT|SLOT_BACK
+	str_requirement = 20 //random pilgrims will NOT be using this
 	one_hand_penalty = 0
 	charge_cost = 20
 	max_shots = 6
 	projectile_type = /obj/item/projectile/gauss
 	self_recharge = 1
-	charge_meter = FALSE
+
+/obj/item/gun/energy/gaussblaster/dropped()
+	..()
+	spawn(1) if(src) qdel(src)
+
+/obj/item/gun/energy/synapticdis
+	name = "Synaptic Disintegrator"
+	desc = "A long ranged rifle favored by Deathmark Assasains for its ability to disintigrate the synapses of brey"
+	icon_state = "synapticdis"
+	item_state = "synapticdis"
+	origin_tech = list(TECH_COMBAT = 9, TECH_MAGNET = 9)
+	w_class = ITEM_SIZE_NORMAL
+	fire_delay = 80 //what the hell do you expect, its a 2 shot basically true damage sniper
+	force = 2
+	slot_flags = SLOT_BACK
+	str_requirement = 20
+	one_hand_penalty = 2
+	scoped_accuracy = 50 //the proper scope for this is meant to offscreen some poor fuck from MILES away, they will NEED this
+	charge_cost = 20
+	max_shots = 4 //incase some janny wants to varedit the firing delay, they can see my nice animated empty sprite :))
+	projectile_type = /obj/item/projectile/energy/synapticdis
+	self_recharge = 1
+
+/obj/item/gun/energy/synapticdis/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+	toggle_scope(usr, 4)
 
 /obj/item/gun/energy/WarpLens
 	name = "Warp Lens"
@@ -150,23 +198,110 @@ obj/item/gun/energy/staff/focus
 	max_shots = 15
 	self_recharge = 1
 
-/obj/item/gun/energy/meltagun
-	name = "Meltagun"
-	desc = "An enormously powerful, but short-ranged anti-tank weapon."
-	icon_state = "melta"
+/obj/item/gun/energy/melta
+	name = "melta"
+	desc = "If you see this complain that staff used the wrong object"
+	icon = 'icons/obj/weapons/gun/energy.dmi'
+	icon_state = "prifle"
+	item_state = "ionrifle"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	force = 15
+	one_hand_penalty = 3 //heavy af fam
+	accuracy = -0.5
+	self_recharge = 1
+	recharge_time = 14 // With a fire delay of 19. You fire every 2.3 seconds. 1 recharge time is 1 second. Keep recharges to 1/6 and a bit per shot. We want people to NEED to reload in combat. //dont want speedy bois
+	fire_delay = 15
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
+	cell_type = /obj/item/cell/melta
+	ammoType = /obj/item/cell/melta
+	charge_cost = 1800
+	wielded_item_state = "ionrifle-wielded"
+	var/plasma_overheat = 1 // Keeping track on how overheated the gun is
+	var/plasma_overheat_decay = 2 // The cooling of the gun per tick
+	var/plasma_overheat_max = 200 // When the gun exploads
+	Fire(atom/target, mob/living/user)
+		if(plasma_overheat >= 50)
+			to_chat(user, "<span class='warning'><b><font size=3>THE BARREL STARTS TO GLOW.</font></b></span>")
+		if(plasma_overheat >= 90)
+			to_chat(user, "<span class='warning'><b><font size=3>OVERHEAT WARNING.</font></b></span>")
+		if(plasma_overheat >= 150)
+			to_chat(user, "<span class='warning'><b><font size=3>CATASTROPHIC FAILURE IMMINENT.</font></b></span>")
+		..()
+		plasma_overheat += 30 // adding 30 heat for every pulling of the trigger (learn not to spam the fucking gun)
+	Process()
+		..()
+		if(plasma_overheat >= 0)
+			plasma_overheat -= plasma_overheat_decay // so the gun actually cools down
+		else
+			plasma_overheat = 0 // keepin the gun overheat above -1
+			return
+		if(plasma_overheat > plasma_overheat_max)
+			explosion(src.loc, -1, -1, 3, 3) // explodes u, dealing a lot of damage, still (a little) chance to survive
+
+
+/obj/item/gun/energy/melta/handheld
+	name = "Melta Gun"
+	desc = "Is a powerful, short-ranged anti-armour weapon that produces an intense, energetic beam of heat in the tens of thousands of degrees Centigrade."
+	icon_state = "meltagun"
 	item_state = "multimelta"
 	wielded_item_state = "multimelta"
+	fire_sound = 'sound/weapons/guns/fire/melta.ogg'
 	icon = 'icons/cadia-sprites/migrated2/gun_2.dmi'
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	force = 8
-	str_requirement = 17
-	max_shots = 2
-	w_class = ITEM_SIZE_NORMAL
-	fire_delay = 12
-	charge_cost = 500
-	cell_type = /obj/item/cell/plasma
-	ammoType = /obj/item/cell/plasma
+	str_requirement = 15
+	max_shots = 5
+	w_class = ITEM_SIZE_HUGE
+	fire_delay = 16
+	charge_cost = 2000
+	cell_type = /obj/item/cell/melta
+	ammoType = /obj/item/cell/melta
 	projectile_type = /obj/item/projectile/energy/meltagun
+	plasma_overheat = 1 // Keeping track on how overheated the gun is
+	plasma_overheat_decay = 3 // The cooling of the gun per tick
+	plasma_overheat_max = 220 // When the gun exploads
+
+/obj/item/gun/energy/melta/handheld/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.2
+	slowdown_per_slot[slot_wear_suit] = 0.3
+	slowdown_per_slot[slot_belt] = 0.3
+	slowdown_per_slot[slot_r_hand] = 0.55
+	slowdown_per_slot[slot_l_hand] = 0.55
+
+/obj/item/gun/energy/melta/multimelta //Need to convert this melta and the other melta into projectile based, testing the new melta atm.
+	name = "Multi-Melta"
+	desc = "is a heavier version of the standard Imperial Meltagun thermal ray weapon that is composed of multiple Meltagun barrels."
+	icon_state = "multimelta"
+	item_state = "multimelta"
+	wielded_item_state = "multimelta"
+	fire_sound = 'sound/weapons/guns/fire/melta.ogg'
+	icon = 'icons/cadia-sprites/migrated2/gun_2.dmi'
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	force = 8
+	str_requirement = 18
+	max_shots = 2
+	w_class = ITEM_SIZE_HUGE
+	fire_delay = 16
+	charge_cost = 5000
+	cell_type = /obj/item/cell/melta
+	ammoType = /obj/item/cell/melta
+	projectile_type = /obj/item/projectile/energy/meltagun
+	plasma_overheat = 1 // Keeping track on how overheated the gun is
+	plasma_overheat_decay = 3 // The cooling of the gun per tick
+	plasma_overheat_max = 220 // When the gun exploads
+
+/obj/item/gun/energy/melta/handheld/New()
+	..()
+	slowdown_per_slot[slot_back] = 0.2
+	slowdown_per_slot[slot_wear_suit] = 0.3
+	slowdown_per_slot[slot_belt] = 0.3
+	slowdown_per_slot[slot_r_hand] = 0.55
+	slowdown_per_slot[slot_l_hand] = 0.55
+
 
 //TYRANID WEAPONS
 //These are largely coded as energy guns, because they'll recharge on their own over time.

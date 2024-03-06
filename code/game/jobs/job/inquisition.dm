@@ -38,6 +38,9 @@
 		H.adjustStaminaLoss(-INFINITY)
 		H.vice = null
 		H.verbs += list(
+			/mob/living/carbon/human/proc/ideology,
+		)
+		H.verbs += list(
 			/mob/living/carbon/human/proc/eqclass)
 		H.say(":i [title] &(47*TECHNICA)Z(INQ)... transponder signal active.")
 		to_chat(H, "<span class='notice'><b><font size=3> You are an interrogator, the apprentice of, the Lord Inquisitor. It is not uncommon for Interrogators' to work undercover or incognito. Your task is to assist the Lord Inquisitor in investigating, neutralizing and erasing traces of heresy, chaos, xenos and daemons. Now more then ever your actions are being weighed by not only your master, but the inquisition - this mission is the last opportunity to clear the names of not only the Lord Inquisitor but that of his entire retinue...</font></b></span>")
@@ -83,6 +86,9 @@
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
+		H.verbs += list(
+			/mob/living/carbon/human/proc/ideology,
+		)
 		H.witchblood()
 		/*H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_advchapel, access_inquisition, access_inquisition_fancy)*/
 		H.inquisitor = 1
@@ -334,6 +340,7 @@
 	/obj/item/paper/administratum/weapon5 = 1,
 	/obj/item/pen = 1,
 	/obj/item/paper/administratum/lambda = 1,
+	/obj/item/device/cassette/inquisitor = 1,
 	)
 
 	pda_slot = null
@@ -366,6 +373,7 @@
 	/obj/item/paper/administratum/weapon5 = 1,
 	/obj/item/pen = 1,
 	/obj/item/paper/administratum/lambda = 1,
+	/obj/item/device/cassette/inquisitor = 1,
 	)
 
 	pda_slot = null

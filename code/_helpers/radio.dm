@@ -77,6 +77,7 @@ Radio:
 1347 - Cargo techs
 1349 - Service people
 1354 - Inquisition
+1367 - Magistratum
 
 Devices:
 1451 - tracking implant
@@ -136,6 +137,7 @@ var/const/SRV_FREQ = 1349
 var/const/SUP_FREQ = 1347
 var/const/EXP_FREQ = 1361
 var/const/INQ_FREQ = 1354
+var/const/MAG_FREQ = 1367
 
 // internal department channels
 var/const/MED_I_FREQ = 1485
@@ -157,6 +159,7 @@ var/list/radiochannels = list(
 	"Entertainment" = ENT_FREQ,
 	"Medical(I)"	= MED_I_FREQ,
 	"Security(I)"	= SEC_I_FREQ,
+	"Magistratum"	= MAG_FREQ,
 	"Vermillion"	= INQ_FREQ,
 	"Red" 	     	= RED_FREQ,//Base red channel
 	"Blue"			= BLUE_FREQ,//Base blue channel
@@ -194,7 +197,7 @@ var/list/VILL_FREQS = list(RED_DELTA)
 
 
 //Department channels, arranged lexically
-var/list/DEPT_FREQS = list(AI_FREQ, COMM_FREQ, ENG_FREQ, MED_FREQ, INQ_FREQ, SEC_FREQ, SCI_FREQ, SRV_FREQ, SUP_FREQ, EXP_FREQ, ENT_FREQ)
+var/list/DEPT_FREQS = list(AI_FREQ, COMM_FREQ, ENG_FREQ, MED_FREQ, MAG_FREQ, INQ_FREQ, SEC_FREQ, SCI_FREQ, SRV_FREQ, SUP_FREQ, EXP_FREQ, ENT_FREQ)
 
 #define TRANSMISSION_WIRE	0
 #define TRANSMISSION_RADIO	1
@@ -241,6 +244,8 @@ var/list/DEPT_FREQS = list(AI_FREQ, COMM_FREQ, ENG_FREQ, MED_FREQ, INQ_FREQ, SEC
 		if (INQ_FREQ)	// inquisition
 			return "inqradio"
 
+		if (MAG_FREQ)	// enforcers/Magistratum
+			return "magradio"
 
 	if (frequency in CENT_FREQS)
 		return "centradio"

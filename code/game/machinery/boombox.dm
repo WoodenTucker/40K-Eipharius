@@ -307,7 +307,7 @@
 	a_side = pick('icons/map_project/sounds/bold_brathas.ogg')
 	b_side = pick('icons/map_project/sounds/bold_brathas.ogg')
 	sound_inside = a_side
-	sales_price = 30 // Very rare and expensive
+	sales_price = 20 // Very rare and expensive
 
 /obj/item/device/cassette/dow_cmd_theme/New()
 	..()
@@ -316,7 +316,7 @@
 	a_side = pick('icons/map_project/sounds/dow_commander_theme.ogg')
 	b_side = pick('icons/map_project/sounds/dow_commander_theme.ogg')
 	sound_inside = a_side
-	sales_price = 20 // Very rare and expensive
+	sales_price = 10 // Very rare and expensive
 
 /obj/item/device/cassette/dow_spessmuhreen_theme/New()
 	..()
@@ -325,7 +325,7 @@
 	a_side = pick('icons/map_project/sounds/dow_spessmarine.ogg')
 	b_side = pick('icons/map_project/sounds/dow_spessmarine.ogg')
 	sound_inside = a_side
-	sales_price = 20 // Very rare and expensive
+	sales_price = 10 // Very rare and expensive
 
 /obj/item/device/cassette/the_forest_1/New()
     ..()
@@ -334,7 +334,7 @@
     a_side = pick('icons/map_project/sounds/cassette_forest1.ogg')
     b_side = pick('icons/map_project/sounds/cassette_forest1.ogg')
     sound_inside = a_side
-    sales_price = 20 // Very rare and expensive
+    sales_price = 10 // Very rare and expensive
 
 /obj/item/device/cassette/the_forest2/New()
     ..()
@@ -343,7 +343,7 @@
     a_side = pick('icons/map_project/sounds/cassette_forest6.ogg')
     b_side = pick('icons/map_project/sounds/cassette_forest6.ogg')
     sound_inside = a_side
-    sales_price = 20 // Very rare and expensive
+    sales_price = 10 // Very rare and expensive
     
 /obj/item/device/cassette/starcraft_1/New()
     ..()
@@ -352,4 +352,84 @@
     a_side = pick('icons/map_project/sounds/starcraft_terran1.ogg')
     b_side = pick('icons/map_project/sounds/starcraft_terran1.ogg')
     sound_inside = a_side
-    sales_price = 20 // Very rare and expensive
+    sales_price = 10 // Very rare and expensive
+
+/obj/item/device/cassette/astra_militarum/New()
+	..()
+	name = "\"The Officio Prefectus-Approved Morale Boosting Chants\" volume two magn-o-tape"
+	desc = "A second volume of the popular tape."
+	a_side = pick('sound/music/Astra_Militarum_Theme.ogg')
+	b_side = pick('sound/music/Bomber.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/necron/New()
+	..()
+	name = "Strange Tape"
+	desc = "A strange tape, this seems to have a drawing of a skull with growing green eyes on it. How odd."
+	a_side = pick('sound/music/Cryptek.ogg')
+	b_side = pick('sound/music/Necrons_Theme.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/commissar/New()
+	..()
+	name = "Damaged Astra Militarum Tape."
+	desc = "A damaged official Astra Militarum tape, this has the word \"COMMISSAR\" scrolled across the front."
+	a_side = pick('sound/music/Commissar.ogg')
+	b_side = pick('sound/music/Guardsman.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/inquisitor/New()
+	..()
+	name = "Inquisitorial Morale Tapes."
+	desc = "An official looking tape with the Inquisitorial Rosette on the front."
+	a_side = pick('sound/music/Inquisitor_Song1.ogg')
+	b_side = pick('sound/music/Inquisitor_Song2.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/space_marine/New()
+	..()
+	name = "Adeptus Astartes Audioslates"
+	desc = "An official looking tape with the winged skull and blade of the Adeptus Astartes."
+	a_side = pick('sound/music/Space_Marine_Standing.ogg')
+	b_side = pick('sound/music/Space_Marine_Dynamite.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/space_marine_alt/New()
+	..()
+	name = "Odd Adeptus Astartes Audioslates"
+	desc = "An official looking tape with the winged skull and blade of the Adeptus Astartes. This one looks different, somehow."
+	a_side = pick('sound/music/Space_Marine_Meme1.ogg')
+	b_side = pick('sound/music/Space_Marine_Meme2.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/mechanicus_warchant/New()
+	..()
+	name = "Adeptus Mechanicus War-Chants"
+	desc = "An official looking tape with the cog and skull of the Adeptus Mechanicus."
+	a_side = pick('sound/music/Mechanicus_War_Cant.ogg')
+	b_side = pick('sound/music/Mechanicus_Tune.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/mechanicus_warchant_alt/New()
+	..()
+	name = "Damaged Adeptus Mechanicus War-Chants"
+	desc = "An official looking tape with the cog and skull of the Adeptus Mechanicus. This tape is sparking, and seems damaged."
+	a_side = pick('sound/music/Mechanicus_Meme1.ogg')
+	b_side = pick('sound/music/Mechanicus_Meme2.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/adepta_sororitas/New()
+	..()
+	name = "Adepta Sororitas Morale Tapes"
+	desc = "An experiment in boosting morale of units with an attached Adeptua Sororitas unit."
+	a_side = pick('sound/music/Sororitas1.ogg')
+	b_side = pick('sound/music/Sororitas2.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/astra_militarum_alt/New()
+	..()
+	name = "Astra Militarum Relaxation Tape."
+	desc = "An official tape from the Astra Militarum, intended to promote calm and relaxation among Militarum personnel."
+	a_side = pick('sound/music/Imperial_Guard_Meme1.ogg')
+	b_side = pick('sound/music/Imperial_Guard_Meme2.ogg')
+	sound_inside = a_side

@@ -21,6 +21,7 @@
 /obj/item/organ/internal/heart/robotize()
 	. = ..()
 	icon_state = "heart-prosthetic"
+	sales_price = 0
 
 /obj/item/organ/internal/heart/Process()
 	if(owner)
@@ -197,16 +198,16 @@
 			pulsesound = "extremely fast and faint"
 
 	. = "[pulsesound] pulse"
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
 /obj/item/organ/internal/heart/bioprinted
-	
-	
-	
+
+
+
 /obj/item/organ/internal/heart/chaos
 	name = "Le pecho de Chaos"
 
@@ -219,3 +220,38 @@
 /obj/item/organ/internal/heart/astartes
 	name = "Astartes Hearts"
 	relative_size = 20
+	max_damage = 90
+
+/obj/item/organ/internal/heart/astartes/Process()
+	if(owner)
+		handle_pulse()
+		if(pulse)
+			handle_heartbeat()
+			if(pulse == PULSE_2FAST && prob(1))
+				take_damage(0.5)
+			if(pulse == PULSE_THREADY && prob(5))
+				take_damage(0.5)
+		if(owner.stat != DEAD && !pulse)
+			owner.resuscitate()
+			owner.add_chemical_effect(CE_STABLE)
+			to_chat(owner, "<span class='warning'>You can feel your second heart beat hard, supporting your circulatory system!</span>")
+		handle_blood()
+	..()
+
+/obj/item/organ/internal/necron
+	name = "Power Core"
+	icon_state = "adamantine-voicebox"
+	organ_tag = BP_CELL
+	parent_organ = BP_CHEST
+	dead_icon = "adamantine-voicebox"
+	relative_size = 15
+	max_damage = 60
+	open
+	sales_price = 300
+
+/obj/item/organ/internal/heart/necron/Process()
+	if(owner.bodytemperature >= 250)
+		owner.bodytemperature = 250
+	..()
+
+//Not much for it to do, it exists mostly to maintain the Brain and keep the body cool

@@ -231,8 +231,8 @@
 	icon_living = "herald"
 	icon_dead = "herald_dead"
 	icon_gib = "syndicate_gib"
-	maxHealth = 1500
-	health = 1500
+	maxHealth = 2500
+	health = 2500
 	response_help  = "caresses"
 	response_disarm = "slams"
 	response_harm   = "rends"
@@ -246,7 +246,135 @@
 	var/max_energy = 1000
 	construct_spells = list(/spell/targeted/projectile/dumbfire/fireball, /spell/targeted/ethereal_jaunt/shift)
 
+	speed = 1.1
+
+/mob/living/simple_animal/construct/playerdaemonhost/death()
+	new /obj/item/ectoplasm (get_turf(src))
+	..(null, "disappears!")
+	explosion(src, -1, -1, 0, 0)
+	qdel(src)
+
+/mob/living/simple_animal/construct/playerdaemonhost/tzeentch
+	name = "The Herald"
+	real_name = "The Herald" 
+	desc = "It's a horrifyingly enormous daemon host..."
+	icon = 'icons/map_project/eldritch/96x96eldritch_mobs.dmi'
+	icon_state = "star_gazer"
+	icon_living = "star_gazer"
+	icon_dead = "star_gazer"
+	icon_gib = "syndicate_gib"
+	pixel_x = -32
+	maxHealth = 2500
+	health = 2500
+	response_help  = "caresses"
+	response_disarm = "slams"
+	response_harm   = "rends"
+	harm_intent_damage = 60
+	melee_damage_upper = 80
+	melee_damage_lower = 60
+	attacktext = "torn"
+	faction = "Chaos"
+	environment_smash = 2
+	construct_spells = list(/spell/targeted/projectile/dumbfire/fireball, /spell/targeted/ethereal_jaunt/shift)
+
+	speed = 1.3
+
+/mob/living/simple_animal/construct/playerdaemonhost/greater
+	name = "Greater Daemon"
+	real_name = "Greater Daemon" 
+	desc = "It's a horrifyingly enormous daemon host..."
+	icon = 'icons/map_project/eldritch/96x96megafauna.dmi'
+	icon_state = "eva"
+	icon_living = "eva"
+	icon_dead = "eva"
+	icon_gib = "syndicate_gib"
+	maxHealth = 3500
+	health = 3500
+	harm_intent_damage = 60
+	melee_damage_upper = 80
+	melee_damage_lower = 60
+	attacktext = "torn"
+	faction = "Chaos"
+	environment_smash = 2
+	pixel_x = -32
+	construct_spells = list(/spell/targeted/projectile/dumbfire/fireball, /spell/targeted/ethereal_jaunt)
+
 	speed = 1.2
+
+/mob/living/simple_animal/construct/playerdaemonhost/dragon
+	name = "Red Drake"
+	real_name = "Red Drake" 
+	desc = "It's a horrifyingly enormous daemon..."
+	icon = 'icons/map_project/eldritch/96x96megafauna.dmi'
+	icon_state = "dragon"
+	icon_living = "dragon"
+	icon_dead = "dragon_dead"
+	icon_gib = "syndicate_gib"
+	maxHealth = 4000
+	health = 4000
+	harm_intent_damage = 80
+	melee_damage_upper = 100
+	melee_damage_lower = 80
+	attacktext = "torn"
+	faction = "Chaos"
+	pixel_x = -32
+	environment_smash = 2
+	construct_spells = list(/spell/targeted/projectile/dumbfire/fireball, /spell/targeted/ethereal_jaunt)
+	speed = 1.5
+
+/mob/living/simple_animal/construct/playerdaemonhost/dragon/death()
+	new /obj/item/ectoplasm (get_turf(src))
+	..(null, "disappears!")
+	qdel(src)
+
+
+/mob/living/simple_animal/construct/playerdaemonhost/elderthing
+	name = "Elder Thing"
+	real_name = "Elder Thing" 
+	desc = "It's a horrifyingly enormous spawn of the deep warp..."
+	icon = 'icons/map_project/eldritch/96x96megafauna.dmi'
+	icon_state = "mega_legion"
+	icon_living = "mega_legion"
+	icon_dead = "mega_legion"
+	icon_gib = "syndicate_gib"
+	maxHealth = 7000
+	health = 7000
+	harm_intent_damage = 80
+	melee_damage_upper = 100
+	melee_damage_lower = 80
+	attacktext = "torn"
+	faction = "Chaos"
+	pixel_x = -32
+	environment_smash = 2
+	construct_spells = list(/spell/targeted/projectile/dumbfire/fireball, /spell/targeted/ethereal_jaunt/shift)
+	speed = 1.8
+
+
+/mob/living/simple_animal/construct/playerdaemonhost/elderthing/death()
+	new /obj/item/ectoplasm (get_turf(src))
+	..(null, "disappears!")
+	qdel(src)
+	new /obj/effect/bhole (get_turf(src))
+
+/mob/living/simple_animal/construct/playerdaemonhost/elderthing/bubble
+	name = "Greater Daemon"
+	real_name = "Greater Daemon" 
+	desc = "It's a horrifyingly enormous spawn of the deep warp..."
+	icon = 'icons/map_project/eldritch/96x96megafauna.dmi'
+	icon_state = "bubblegum"
+	icon_living = "bubblegum"
+	icon_dead = "bubblegum"
+	icon_gib = "syndicate_gib"
+	maxHealth = 5000
+	health = 5000
+	harm_intent_damage = 80
+	melee_damage_upper = 100
+	melee_damage_lower = 80
+	attacktext = "torn"
+	faction = "Chaos"
+	environment_smash = 2
+	construct_spells = list(/spell/targeted/projectile/dumbfire/fireball, /spell/targeted/ethereal_jaunt/shift)
+	speed = 1.4
 
 /mob/living/simple_animal/construct/playernecronlord
 	name = "NECRON LORD"
@@ -255,6 +383,7 @@
 	icon = 'icons/cadia-sprites/mob/necronlord.dmi'
 	icon_state = "lord"
 	icon_living = "lord"
+	icon_dead = "lord"
 	maxHealth = 1500
 	health = 1500
 	response_help  = "caresses"
@@ -273,6 +402,10 @@
 
 	speed = 1
 
+/mob/living/simple_animal/construct/playernecronlord/death()
+	new /obj/item/ectoplasm (get_turf(src))
+	..(null, "disappears!")
+	qdel(src)
 
 
 

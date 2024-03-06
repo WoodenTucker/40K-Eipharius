@@ -153,7 +153,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	siemens_coefficient = 0.7
 	permeability_coefficient = 0.03
-	armor = list(melee = 5, bullet = 5, laser = 5, energy = 25, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 1, bullet = 5, laser = 5, energy = 25, bomb = 30, bio = 0, rad = 0)
 
 /obj/item/clothing/gloves/thick/swat/combat/krieg
 	icon_state = "krieggloves"
@@ -182,7 +182,7 @@
 	item_state = "wgloves"
 	siemens_coefficient = 0
 	permeability_coefficient = 0.05
-	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 1, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
 	cold_protection = HANDS
 	min_cold_protection_temperature = GLOVES_MIN_COLD_PROTECTION_TEMPERATURE
 	heat_protection = HANDS
@@ -259,3 +259,19 @@
 	icon_state = "ScionGloves"
 	item_state = "ScionGloves"
 	armor = list(melee = 1, bullet = 2, laser = 2, energy = 2, bomb = 2, bio = 0, rad = 0)
+
+/obj/item/clothing/gloves/necron
+	name = "Necron Hands"
+	desc = "Powerful necrodermis hads, belonging to a Necron."
+	icon_state = "techpriest"
+	item_state = "techpriest"
+	armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 2, bio = 100, rad = 100)
+	siemens_coefficient = 0
+	unacidable = 1
+	canremove = 0
+	species_restricted = list(SPECIES_NECRON)
+	cold_protection = HANDS
+	min_cold_protection_temperature = GLOVES_MIN_COLD_PROTECTION_TEMPERATURE
+	heat_protection = HANDS
+	max_heat_protection_temperature = GLOVES_MAX_HEAT_PROTECTION_TEMPERATURE
+	body_parts_covered = HANDS|ARMS

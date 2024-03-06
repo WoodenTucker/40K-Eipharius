@@ -51,7 +51,7 @@
 		)
 	siemens_coefficient = 0.8
 	body_parts_covered = HEAD
-	armor = list(melee = 15, bullet = 20, laser = 20, energy = 15, bomb = 20, bio = 0, rad = 10)
+	armor = list(melee = 5, bullet = 20, laser = 20, energy = 15, bomb = 20, bio = 0, rad = 10)
 	cold_protection = HEAD
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	heat_protection = HEAD
@@ -74,7 +74,7 @@
 	item_state = "wizrobe"
 	gas_transfer_coefficient = 0.01 // IT'S MAGICAL OKAY JEEZ +1 TO NOT DIE
 	permeability_coefficient = 0.01
-	armor = list(melee = 30, bullet = 20, laser = 20,energy = 20, bomb = 20, bio = 20, rad = 20)
+	armor = list(melee = 2, bullet = 20, laser = 20,energy = 20, bomb = 20, bio = 20, rad = 20)
 	allowed = list(/obj/item/teleportation_scroll)
 	siemens_coefficient = 0.8
 	//wizard_garb = 1 40k Edit: Commented out unecessary proc

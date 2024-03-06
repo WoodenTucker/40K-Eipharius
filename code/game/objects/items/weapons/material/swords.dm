@@ -13,7 +13,7 @@
 	force = 37
 	force_wielded = 47
 	block_chance = 35
-	armor_penetration = 16
+	armor_penetration = 14
 	// force_divisor = 0.8 // Do not turn this back on.
 	// thrown_force_divisor = 0.2 //
 	sharp = 1 //sharp or blunt, blunt causes broken bones, sharp causes organ damage and extra bleeding.
@@ -71,15 +71,20 @@
 		return 1
 
 /obj/item/proc/disarm(mob/living/user)
-	user.visible_message("<span class='danger'>\The [src] flies out of \the [user]'s hand!</span>")
-	user.drop_from_inventory(src)
-	throw_at(get_edge_target_turf(src, pick(GLOB.alldirs)), rand(1,3), throw_speed)//Throw that sheesh away
+	if((user.can_melee_block = 0) && (user.can_melee_dodge = 0))
+		user.visible_message("<span class='danger'>\The [src] flies out of \the [user]'s hand!</span>")
+		user.drop_from_inventory(src)
+		throw_at(get_edge_target_turf(src, pick(GLOB.alldirs)), rand(1,3), throw_speed)//Throw that sheesh away'
+	else
+		return
 
 /mob/proc/item_disarm()
-	var/obj/item/I = get_active_hand()
-	if(I)
-		I.disarm(src)
-
+	if((user.can_melee_block = 0) && (user.can_melee_dodge = 0))
+		var/obj/item/I = get_active_hand()
+		if(I)
+			I.disarm(src)
+	else
+		return
 
 /obj/item/material/sword/attack_self(mob/user)
 	..()
@@ -147,7 +152,7 @@
 	desc = "A sharp and curved blade on a long fibremetal handle, this tool makes it easy to reap what you sow."
 	force_wielded = 22
 	block_chance = 25
-	armor_penetration = 16
+	armor_penetration = 13
 	weapon_speed_delay = 7
 	sharp = 1
 	throw_speed = 1

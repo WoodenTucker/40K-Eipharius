@@ -4,8 +4,6 @@
 	primitive_form = "Monkey"
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite)
 	blurb = "Humanity originated in the Solar System, and over the last five centuries has spread colonies across a wide swathe of space. They hold a wide range of forms and creeds."
-	num_alternate_languages = 2
-	secondary_langs = list(LANGUAGE_SOL_COMMON)
 	name_language = null // Use the first-name last-name generator rather than a language scrambler
 	min_age = 18 //no underage people
 	max_age = 130
@@ -16,7 +14,7 @@
 	teeth_type = /obj/item/stack/teeth/human //Teeth
 	sexybits_location = BP_GROIN
 
-/datum/species/lateparty/get_bodytype(var/mob/living/carbon/human/H)
+/datum/species/lateparty/get_bodytype(var/mob/living/carbon/human/lateparty/H)
 	return SPECIES_LATEPARTY
 
 /datum/species/lateparty/sanitize_name(var/name)
@@ -28,7 +26,7 @@
 
 	return sanitized_name
 
-/datum/species/lateparty/handle_npc(var/mob/living/carbon/human/H)
+/datum/species/lateparty/handle_npc(var/mob/living/carbon/human/lateparty/H)
 	if(H.stat != CONSCIOUS)
 		return
 

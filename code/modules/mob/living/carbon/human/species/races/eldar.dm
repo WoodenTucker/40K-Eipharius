@@ -18,6 +18,7 @@
 
 
 
+
 /datum/species/eldar/handle_post_spawn(var/mob/living/carbon/human/H)
 	H.age = rand(min_age,max_age)//Random age for kiddos.
 	if(H.f_style)//eldar don't get beards.
@@ -34,6 +35,12 @@
 /mob/living/carbon/human/eldar
 	var/isempty = 0
 	var/iseating = 0
+	can_bullet_dodge = 1 //Whether or not the mob can typically dodge bullets.
+	bullet_dodge_probability = 60 //The probability of dodging the bullet.
+	can_melee_dodge = 1 //Whether or not the mob can dodge most melee attacks.
+	melee_dodge_probability = 60 //The probability of dodging.
+	can_melee_block = 1 //Whether or not the mob can automatically block most melee attacks.
+	melee_block_probability = 20 //The probability of blocking.
 
 /datum/species/eldar/corsair
     name = SPECIES_ELDAR

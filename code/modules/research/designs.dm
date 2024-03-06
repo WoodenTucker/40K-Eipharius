@@ -1943,11 +1943,16 @@ CIRCUITS BELOW
 // (TECH_MATERIAL = 2, TECH_ENGINEERING = 2, TECH_PHORON = 1, TECH_POWER = 3, TECH_BLUESPACE = 1, TECH_BIO = 1, TECH_COMBAT = 1, TECH_MAGNET = 4, TECH_DATA = 1, TECH_ILLEGAL = 1)
 
 /*
-Find out the cause of why the armor isn't in-game when able, I'm assuming it's to do with tech levels so relook at it later (remove this message when it's fixed)
-Please also work on allowing armor to be more mass-produced, the mechaincum should be making a majority of their stuff for the guard (armor/weapons/ammo)
 A reminder that mechanicus cannot remove their armor for a majority of their roles, so please do not add armor for them.
 */
 // ARMOR
+/datum/design/armor
+	build_type = PROTOLATHE
+
+/datum/design/armor/AssembleDesignName()
+	..()
+	name = "Armor design ([item_name])"
+
 /datum/design/armor/rt
 	name = "Improved RT Cloak"
 	id = "rtcloak"
@@ -2012,7 +2017,7 @@ A reminder that mechanicus cannot remove their armor for a majority of their rol
 	build_path = /obj/item/clothing/suit/armor/guardsman/mechanicus
 	sort_string = "XCAH"
 
-/datum/design/armor/carace/guard
+/datum/design/armor/carapace/guard
 	name = "Improved Cadian Carapace Armor"
 	id = "guardcara"
 	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 8)
@@ -2075,7 +2080,7 @@ Mechanicus can't take off their armor at the moment (Only bondsman can so no poi
 	id = "melta"
 	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 4, TECH_POWER = 7, TECH_COMBAT = 5, TECH_PHORON = 5)
 	materials = list(DEFAULT_WALL_MATERIAL = 4000, "glass" = 4000, "diamond" = 10000, "phoron" = 8000)
-	build_path = /obj/item/gun/projectile/meltagun
+	build_path = /obj/item/gun/energy/melta/handheld
 	sort_string = "ZAAD"
 
 /datum/design/item/villiers
@@ -2760,11 +2765,11 @@ Mechanicus can't take off their armor at the moment (Only bondsman can so no poi
 	sort_string = "ZVBD"
 
 /datum/design/item/meltapack
-	name = "Melta Pack"
+	name = "Melta Canister"
 	id = "meltap"
 	req_tech = list(TECH_PHORON = 4, TECH_ENGINEERING = 4, TECH_POWER = 4, TECH_PHORON = 4)
 	materials = list(DEFAULT_WALL_MATERIAL = 1200, "diamond" = 800, "phoron" = 4000)
-	build_path = /obj/item/ammo_magazine/melta
+	build_path = /obj/item/cell/melta
 	sort_string = "ZVBE"
 
 /datum/design/item/magboltp

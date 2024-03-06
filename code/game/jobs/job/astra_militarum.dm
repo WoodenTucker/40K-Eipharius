@@ -80,6 +80,7 @@
 		..()
 		H.add_skills(rand(6,10),rand(6,10),rand(3,6),rand(4,6),rand(1,6)) //melee, ranged, med, eng, surgery
 		H.add_stats(rand(15,18), rand(15,18), rand(15,18), rand (12,16))
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
@@ -93,7 +94,9 @@
 		H.assign_random_quirk()
 		H.witchblood()
 		H.verbs += list(
-			/mob/living/carbon/human/proc/guardclass,)
+			/mob/living/carbon/human/proc/guardclass,
+			/mob/living/carbon/human/proc/ideology,
+		)
 		H.get_idcard()?.access = list(access_security, access_all_personal_lockers, access_village)
 		to_chat(H, "<span class='notice'><b><font size=3>   You are an Imperial Guardsmen selected personally by the Lord Trader to serve as the primary source of manpower and security within their retinue, your services go beyond the wielding of your lasgun and may involve tasks varying from hard labour, exploration and peacekeeping -- up until the point in which it is decided you must lay down your life to protect the citizens of The Imperium. </font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>   The Astra Militarum, also known as the Imperial Guard in colloquial Low Gothic, is the largest coherent fighting force in the galaxy. They serve as the Imperium of Man's primary combat force and first line of defence from the myriad threats which endanger the existence of the Human race in the 41st Millennium. </font></b></span>")
@@ -133,6 +136,7 @@
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
 		H.assign_random_quirk()
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
 		H.verbs += list(
@@ -169,6 +173,7 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
 		H.assign_random_quirk()
@@ -178,7 +183,9 @@
 		to_chat(H, "<span class='notice'><b><font size=3>   There is no universal uniform or regimental command hierarchy in the Astra Militarum, although it is compulsory for every regiment to have at least one commissar to maintain the discipline and morale of the troops while watching for any signs of corruption or heretical taint in the ranks. </font></b></span>")
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
 		H.verbs += list(
-			/mob/living/carbon/human/proc/veteranclass,)
+			/mob/living/carbon/human/proc/veteranclass,
+			/mob/living/carbon/human/proc/ideology,
+		)
 		if(title == "Krieg Grenadier")
 			H.set_quirk(new/datum/quirk/brave())
 			H.set_trait(new/datum/trait/death_tolerant())
@@ -257,9 +264,12 @@ datum/job/ig/bullgryn
 		H.assign_random_quirk()
 		H.witchblood()
 		H.vice = null
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
 		H.verbs += list(
-			/mob/living/carbon/human/proc/veteranclass,)
+			/mob/living/carbon/human/proc/veteranclass,
+			/mob/living/carbon/human/proc/ideology,
+		)
 		to_chat(H, "<span class='notice'><b><font size=3>   You are an Imperial Guardsmen selected personally by the Lord Trader to serve as the primary source of manpower and security within their retinue, your services go beyond the wielding of your lasgun and may involve tasks varying from hard labour, exploration and peacekeeping -- up until the point in which it is decided you must lay down your life to protect the citizens of The Imperium. </font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>   The Astra Militarum, also known as the Imperial Guard in colloquial Low Gothic, is the largest coherent fighting force in the galaxy. They serve as the Imperium of Man's primary combat force and first line of defence from the myriad threats which endanger the existence of the Human race in the 41st Millennium. </font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>   There is no universal uniform or regimental command hierarchy in the Astra Militarum, although it is compulsory for every regiment to have at least one commissar to maintain the discipline and morale of the troops while watching for any signs of corruption or heretical taint in the ranks. </font></b></span>")
@@ -320,16 +330,19 @@ datum/job/ig/bullgryn
 		H.add_skills(rand(9,10),rand(9,10),rand(5,7),5,rand(4,6)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.witchblood()
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.verbs += list(
-			/mob/living/carbon/human/proc/veteranclass)
+			/mob/living/carbon/human/proc/veteranclass,
+			/mob/living/carbon/human/proc/ideology,
+		)
 		H.set_quirk(new/datum/quirk/tough())
+		H.vice = null
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
-//		H.vice = null //sarges seen some shit
 
 		switch(title) //DO NOT TOUCH THIS, IT PROBABLY WORKS
 			if("Cadian Sergeant" || "Valhallan Sergeant" || "Catachan Sergeant" || "Krieg Watchmaster")
@@ -391,9 +404,13 @@ datum/job/ig/bullgryn
 		H.add_stats(rand(15,17), rand(15,17), rand(15,17), rand (14,18)) //same stats as normal guard but better int, med and surgery
 		H.add_skills(rand(6,10),rand(6,10),rand(8,10),rand(5,6),rand(9,11)) //melee, ranged, med, eng, surgery
 		H.get_equipped_item(slot_s_store)
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.assign_random_quirk()
+		H.vice = null
 		H.verbs += list(
-			/mob/living/carbon/human/proc/medicclass)
+			/mob/living/carbon/human/proc/medicclass,
+			/mob/living/carbon/human/proc/ideology,
+		)
 		if(title == "Krieg Quartermaster")
 			H.implant_loyalty(src)
 			cultist_chance = 2
@@ -471,7 +488,8 @@ datum/job/ig/bullgryn
 	outfit_type = /decl/hierarchy/outfit/job/ig/commissar
 	alt_titles = list(
 		"Krieg Commissar" = /decl/hierarchy/outfit/job/ig/commissar/krieg,
-		"Catachan Commissar" = /decl/hierarchy/outfit/job/ig/commissar/catachan
+		"Catachan Commissar" = /decl/hierarchy/outfit/job/ig/commissar/catachan,
+		"Mordian Commissar" = /decl/hierarchy/outfit/job/ig/commissar/mordian,
 		)
 	can_be_in_squad = FALSE
 	economic_modifier = 9
@@ -499,6 +517,7 @@ datum/job/ig/bullgryn
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.fully_replace_character_name("Commissar [current_name]")
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
@@ -524,6 +543,9 @@ datum/job/ig/bullgryn
 		/mob/living/carbon/human/proc/comsyoucannotstand,
 		/mob/living/carbon/human/proc/comsexecute,
 		/mob/living/carbon/human/proc/comsyouwereweak)
+		H.verbs += list(
+			/mob/living/carbon/human/proc/ideology,
+		)
 		to_chat(H, "<span class='notice'><b><font size=3>The commissar is empowered to use any means necessary to ensure the loyalty and moral purity of his or her charges, including overriding or even executing a regiment's commanding officer if necessary, and so is regarded with a mixture of fear and admiration by rank-and-file Guardsmen -- and not a few of their officers. Commissars provide the link between regimental officers and the Departmento Munitorum. They are tough, ruthless individuals whose primary responsibilities are to preserve the courage, discipline and loyalty of the regiment. Only a handful of commissars have ever obtained leadership over large Imperial forces as a lord commander, or even a governor militant, such as Yarrick at Armageddon, and only a handful are known to have even retained full command of an entire regiment, such as Colonel-Commissar Ibram Gaunt. All commissars are trained as excellent orators, and often deliver stirring speeches to their regiment or company prior to battle. During battle, the commissar is almost always amongst the front lines, and roars a litany of battle cries and prayers to the Emperor to inspire his troops to battle. </font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>(READ THIS) Your role like any others is to make the round more interesting, you will be rolebanned if you metagame lateparties, murder allied characters without good reason OR execute pilgrims for walking up to your trench system. Just because there's a trench don't mean people have to die for being near it. </font></b></span>")
 
@@ -554,46 +576,46 @@ datum/job/ig/bullgryn
 				to_chat(U,"<span class='danger'><b><font size=4>THE VETERAN</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>A veteran of many campaigns, you've experienced the horrors of the warp and the alien.</font></b></span>")
 				U.add_stats(rand(16,18), rand(16,18), rand(13,17), rand (12,16))
-				new /obj/item/gun/projectile/bolter_pistol(src.loc) 
-				new /obj/item/clothing/accessory/medal/silver/Administratum(src.loc) 
-				
+				new /obj/item/gun/projectile/bolter_pistol(src.loc)
+				new /obj/item/clothing/accessory/medal/silver/Administratum(src.loc)
+
 			else if(prob(8))
 				to_chat(U,"<span class='danger'><b><font size=4>THE TRAITOR</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are a traitor to the Imperium and for reasons unknown to you now, shall be it's destruction. Praise the hivemind/cult/cogitae!</font></b></span>")
 				U.add_stats(rand(13,17), rand(16,18), rand(16,18), rand (12,20))
 				if(prob(30))
-					new /obj/item/device/radio/headset/blue_team/alpha(src.loc) 
+					new /obj/item/device/radio/headset/blue_team/alpha(src.loc)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
-				new /obj/item/stack/thrones3/twenty(src.loc)  
-				new /obj/item/stack/thrones3/twenty(src.loc)  
-				new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc) 
+				new /obj/item/stack/thrones3/twenty(src.loc)
+				new /obj/item/stack/thrones3/twenty(src.loc)
+				new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc)
 				if(prob(15))
-					new /obj/item/clothing/suit/armor/hjacket(src.loc) 
+					new /obj/item/clothing/suit/armor/hjacket(src.loc)
 				else
-					new /obj/item/clothing/suit/armor/towntrench(src.loc) 
+					new /obj/item/clothing/suit/armor/towntrench(src.loc)
 				if(prob(5))
-					new /obj/item/clothing/accessory/medal/bronze/Administratum(src.loc) 
+					new /obj/item/clothing/accessory/medal/bronze/Administratum(src.loc)
 				if(prob(10))
-					new /obj/item/device/multitool/hacktool(src.loc) 
-					new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc) 
-					new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc) 
+					new /obj/item/device/multitool/hacktool(src.loc)
+					new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc)
+					new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc)
 			else
-				to_chat(U,"<span class='danger'><b><font size=4>THE FORSAKEN</font></b></span>") 
+				to_chat(U,"<span class='danger'><b><font size=4>THE FORSAKEN</font></b></span>")
 				U.add_stats(rand(15,18), rand(15,18), rand(15,18), rand (12,16))
-				new /obj/item/stack/thrones3/twenty(src.loc)  
-				new /obj/item/stack/thrones3/twenty(src.loc)  
-				new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc) 
+				new /obj/item/stack/thrones3/twenty(src.loc)
+				new /obj/item/stack/thrones3/twenty(src.loc)
+				new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc)
 				if(prob(35))
-					new /obj/item/clothing/suit/armor/hjacket(src.loc) 
+					new /obj/item/clothing/suit/armor/hjacket(src.loc)
 				else
-					new /obj/item/clothing/suit/armor/towntrench(src.loc) 
+					new /obj/item/clothing/suit/armor/towntrench(src.loc)
 				if(prob(15))
-					new /obj/item/clothing/accessory/medal/bronze/Administratum(src.loc) 
+					new /obj/item/clothing/accessory/medal/bronze/Administratum(src.loc)
 				if(prob(30))
-					new /obj/item/device/multitool/hacktool(src.loc) 
-					new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc) 
-					new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc) 
+					new /obj/item/device/multitool/hacktool(src.loc)
+					new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc)
+					new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc)
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are one of many untold trillions of Guardsmen taken from your homeworld and pressed into service to the meatgrinder that is the Astra Militarum. As a result of the mind numbing horrors of war, you have taken to... interesting vices to survive your many years of service.</font></b></span>")
 
 
@@ -624,56 +646,56 @@ datum/job/ig/bullgryn
 				to_chat(U,"<span class='danger'><b><font size=4>HERO OF THE IMPERIUM</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>A veteran of many campaigns, you've experienced the horrors of the warp and the alien.</font></b></span>")
 				if(prob(60))
-					new /obj/item/gun/projectile/revolver/mateba(src.loc) 
-					new /obj/item/ammo_magazine/c50/ap(src.loc) 
+					new /obj/item/gun/projectile/revolver/mateba(src.loc)
+					new /obj/item/ammo_magazine/c50/ap(src.loc)
 				if(prob(60))
-					new /obj/item/clothing/accessory/medal/gold/Administratum(src.loc) 
-					new /obj/item/clothing/accessory/medal/silver/Administratum(src.loc) 
-				
+					new /obj/item/clothing/accessory/medal/gold/Administratum(src.loc)
+					new /obj/item/clothing/accessory/medal/silver/Administratum(src.loc)
+
 			else if(prob(6))
 				to_chat(U,"<span class='danger'><b><font size=4>THE TRAITOR</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are a traitor to the Imperium and for reasons unknown to you now, shall be it's destruction. Praise the hivemind/cult/cogitae!</font></b></span>")
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
 				if(prob(50))
-					new /obj/item/device/radio/headset/blue_team/alpha(src.loc) 
+					new /obj/item/device/radio/headset/blue_team/alpha(src.loc)
 				if(prob(10))
-					new /obj/item/storage/pill_bottle/happy(src.loc)  
+					new /obj/item/storage/pill_bottle/happy(src.loc)
 				if(prob(10))
-					new /obj/item/clothing/suit/armor/ranger2(src.loc) 
+					new /obj/item/clothing/suit/armor/ranger2(src.loc)
 				if(prob(10))
-					new /obj/item/clothing/suit/armor/towntrench(src.loc) 
+					new /obj/item/clothing/suit/armor/towntrench(src.loc)
 				if(prob(10))
-					new /obj/item/clothing/accessory/medal/silver/Administratum(src.loc) 
-					new /obj/item/clothing/accessory/medal/bronze/Administratum(src.loc) 
+					new /obj/item/clothing/accessory/medal/silver/Administratum(src.loc)
+					new /obj/item/clothing/accessory/medal/bronze/Administratum(src.loc)
 				if(prob(15))
-					new /obj/item/device/multitool/hacktool(src.loc) 
+					new /obj/item/device/multitool/hacktool(src.loc)
 				if(prob(15))
-					new /obj/item/plastique(src.loc) 
+					new /obj/item/plastique(src.loc)
 				if(prob(15))
-					new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc) 
-			else 
-				to_chat(U,"<span class='danger'><b><font size=4>THE SURVIVOR</font></b></span>") 
+					new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc)
+			else
+				to_chat(U,"<span class='danger'><b><font size=4>THE SURVIVOR</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are one of many untold trillions of Guardsmen taken from your homeworld and pressed into service to the meatgrinder that is the Astra Militarum. As a result of the mind numbing horrors of war, you have taken to... interesting vices to survive your many years of service.</font></b></span>")
-				new /obj/item/stack/thrones2/twenty(src.loc)  
-				new /obj/item/stack/thrones3/twenty(src.loc)  
-				new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc)  
+				new /obj/item/stack/thrones2/twenty(src.loc)
+				new /obj/item/stack/thrones3/twenty(src.loc)
+				new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc)
 				if(prob(40))
-					new /obj/item/storage/pill_bottle/happy(src.loc)  
+					new /obj/item/storage/pill_bottle/happy(src.loc)
 				if(prob(10))
-					new /obj/item/clothing/suit/armor/ranger2(src.loc) 
+					new /obj/item/clothing/suit/armor/ranger2(src.loc)
 				if(prob(10))
-					new /obj/item/clothing/suit/armor/towntrench(src.loc) 
+					new /obj/item/clothing/suit/armor/towntrench(src.loc)
 				if(prob(30))
-					new /obj/item/clothing/accessory/medal/silver/Administratum(src.loc) 
-					new /obj/item/clothing/accessory/medal/bronze/Administratum(src.loc) 
+					new /obj/item/clothing/accessory/medal/silver/Administratum(src.loc)
+					new /obj/item/clothing/accessory/medal/bronze/Administratum(src.loc)
 				if(prob(45))
-					new /obj/item/device/multitool/hacktool(src.loc) 
+					new /obj/item/device/multitool/hacktool(src.loc)
 				if(prob(45))
-					new /obj/item/plastique(src.loc) 
+					new /obj/item/plastique(src.loc)
 				if(prob(35))
-					new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc) 
-				
+					new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc)
+
 
 
 /mob/living/carbon/human/proc/medicclass()
@@ -701,42 +723,42 @@ datum/job/ig/bullgryn
 			if(prob(87))
 				to_chat(U,"<span class='danger'><b><font size=4>THE MEDICAE</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>An experienced medicae practitioner you were selected from your homeworld to serve as the very lifeblood of the guard.</font></b></span>")
-				new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc) 
-				new /obj/item/reagent_containers/hypospray/autoinjector/combatpain(src.loc) 
+				new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc)
+				new /obj/item/reagent_containers/hypospray/autoinjector/combatpain(src.loc)
 				if(prob(13))
-					new /obj/item/clothing/suit/armor/scum2(src.loc) 
+					new /obj/item/clothing/suit/armor/scum2(src.loc)
 				if(prob(14))
-					new /obj/item/clothing/suit/armor/slumcoat(src.loc) 
+					new /obj/item/clothing/suit/armor/slumcoat(src.loc)
 			else if(prob(6))
 				to_chat(U,"<span class='danger'><b><font size=4>THE TRAITOR</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are a traitor to the Imperium and for reasons unknown to you now, shall be it's destruction. Praise the hivemind/cult/cogitae!</font></b></span>")
 				U.add_stats(rand(13,17), rand(16,18), rand(16,18), rand (12,20))
 				if(prob(30))
-					new /obj/item/device/radio/headset/blue_team/alpha(src.loc) 
-				new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc) 
-				new /obj/item/reagent_containers/hypospray/autoinjector/combatpain(src.loc) 
-				new /obj/item/reagent_containers/hypospray/autoinjector/death(src.loc) 
+					new /obj/item/device/radio/headset/blue_team/alpha(src.loc)
+				new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc)
+				new /obj/item/reagent_containers/hypospray/autoinjector/combatpain(src.loc)
+				new /obj/item/reagent_containers/hypospray/autoinjector/death(src.loc)
 				if(prob(15))
-					new /obj/item/clothing/suit/armor/scum2(src.loc) 
+					new /obj/item/clothing/suit/armor/scum2(src.loc)
 				if(prob(15))
-					new /obj/item/clothing/suit/armor/slumcoat(src.loc) 
+					new /obj/item/clothing/suit/armor/slumcoat(src.loc)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
-			else 
-				to_chat(U,"<span class='danger'><b><font size=4>THE TROUBLED DOCTOR</font></b></span>") 
+			else
+				to_chat(U,"<span class='danger'><b><font size=4>THE TROUBLED DOCTOR</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>Years of exposure to the practices of medicine, the horrors of chaos plagues and the concoctions of the sanguinary worlds has driven you mad. Express your madness, let the world know what the rot has done to you!</font></b></span>")
-				new /obj/item/stack/thrones3/twenty(src.loc)  
-				new /obj/item/stack/thrones3/twenty(src.loc)  
-				new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc)  
+				new /obj/item/stack/thrones3/twenty(src.loc)
+				new /obj/item/stack/thrones3/twenty(src.loc)
+				new /obj/item/clothing/mask/smokable/cigarette/cigar(src.loc)
 				if(prob(35))
-					new /obj/item/clothing/suit/armor/scum2(src.loc) 
+					new /obj/item/clothing/suit/armor/scum2(src.loc)
 				else
-					new /obj/item/clothing/suit/armor/slumcoat(src.loc) 
+					new /obj/item/clothing/suit/armor/slumcoat(src.loc)
 				if(prob(100))
-					new /obj/item/reagent_containers/hypospray/autoinjector/mindbreaker(src.loc) 
-					new /obj/item/reagent_containers/hypospray/autoinjector/death(src.loc) 
-					new /obj/item/reagent_containers/hypospray/autoinjector/tau(src.loc) 
-					new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc) 
+					new /obj/item/reagent_containers/hypospray/autoinjector/mindbreaker(src.loc)
+					new /obj/item/reagent_containers/hypospray/autoinjector/death(src.loc)
+					new /obj/item/reagent_containers/hypospray/autoinjector/tau(src.loc)
+					new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey(src.loc)
 
 // Outfits
 
@@ -887,7 +909,7 @@ datum/job/ig/bullgryn
 	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/grenade/chem_grenade/gas/xyxl = 1,
-	/obj/item/grenade/chem_grenade/gas/phosphorous = 1, 
+	/obj/item/grenade/chem_grenade/gas/phosphorous = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
 	/obj/item/pen = 1,
 	/obj/item/paper/administratum/omega = 1
@@ -1532,9 +1554,19 @@ datum/job/ig/bullgryn
 	name = OUTFIT_JOB_NAME("Catachan Commissar")
 	uniform =  /obj/item/clothing/under/rank/catachancommissar
 	suit = /obj/item/clothing/suit/armor/commissar/catachan
-	belt = /obj/item/melee/chain/pcsword
+	belt = /obj/item/melee/chain/guard
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/commissar/catachan
+	mask = null
+	glasses = null
+	l_ear = /obj/item/device/radio/headset/heads/hos
+
+/decl/hierarchy/outfit/job/ig/commissar/mordian
+	uniform =  /obj/item/clothing/under/hosformalmale
+	suit = /obj/item/clothing/suit/armor/commissar/mordian
+	belt = /obj/item/melee/energy/powersword
+	shoes = /obj/item/clothing/shoes/jackboots/mordian
+	head = /obj/item/clothing/head/commissar/Mordian
 	mask = null
 	glasses = null
 	l_ear = /obj/item/device/radio/headset/heads/hos
@@ -1674,21 +1706,18 @@ datum/job/ig/bullgryn
 	to_chat(src, "<i>...[message]</i>")
 
 GLOBAL_LIST_INIT(lone_thoughts, list(
-		"Why are we still here... just to suffer?",
-		"We fight our fabulous queen KARL, and that's all that matters.",
-		"Why we don't get any more reinforcements?",
-		"LENNEEEEEEEEH! WHERE ARE YOU LENNY?",
-		"What do you call an arsonist? A flamer enthusiast -- ehey!",
-		"Is there any reason to keep fighting?",
-		"It's middle of winter... why is Inquisitor Rex unclothed?",
-		"Greg died last night.",
-		"The british are coming...",
-		"There is no hope... anymore...",
-		"Is any of this real?",
-		"My teeth hurt. Should sell them to an ork...",
-		"I hear the Governor has a 'diplomatic' relationship with the Tau...",
-		"I don't remember joining the military...",
-		"Does the Emperor truly protect papa Grue?",
+		"Subdue the regret. Dust yourself off. Proceed. You'll get it in the next life. Do what you can with this one.",
+		"You do have something better to do. Stay strong. You don't need to keep doing this to yourself.",
+		"This is somewhere to be. This is all you have, but it's still something. Streets and sodium lights. The sky, the world. You're still alive.",
+		"The road to healing will be a long one. Stay the course. You will make it. Someday.",
+		"Just remember that you've made it this far. And it's just a bit farther now. Let's finish this.",
+		"Your heart is broken, bratushka. And it cannot be mended. Believe me, I've tried.",
+		"A hug a day keeps the bourgeoisie away.",
+		"Your mangled brain would like you to know there is a boxer called Contact Mike.",
+		"A tremendous loneliness comes over you. Everybody in the world is doing something without you.",
+		"All the gifts your parents gave you, all the love and patience of your friends, you drowned in a neurotoxin. You let misery win. And it will keep on winning till you die -- or overcome it.",
+		"You are a violent and irrepressible miracle. The vacuum of cosmos and the stars burning in it are afraid of you. Given enough time you would wipe us all out and replace us with nothing -- just by accident.",
+		"There is a giant ball there. And evil apes. And the evil apes are dukin' it out on the ball. You're one of them. It's basically all just evil apes dukin' it out on a giant ball.",
 		"I hope the Inquisitor doesn't find my Eldar Mommy fan-fiction",))
 
 /mob/living/proc/assign_random_quirk()

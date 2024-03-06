@@ -93,7 +93,7 @@
 	icon_state = "ert_uniform"
 	item_state = "bl_suit"
 	worn_state = "ert_uniform"
-	armor = list(melee = 10, bullet = 5, laser = 5,energy = 0, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 2, bullet = 5, laser = 5,energy = 0, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/under/space
@@ -155,7 +155,7 @@
 	item_state = "bl_suit"
 	worn_state = "psysuit"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
-	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 20, bio = 20, rad = 0)
+	armor = list(melee = 1, bullet = 10, laser = 10, energy = 10, bomb = 20, bio = 20, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -717,7 +717,7 @@
 	desc = "A standardised armoured undersuit worn by Tempestus Scions"
 	icon_state = "ScionUndersuit"
 	item_state = "scionundersuit"
-	armor = list(melee = 10, bullet = 10, laser = 10, energy = 20, bomb = 20, bio = 20, rad = 0)
+	armor = list(melee = 1, bullet = 1, laser = 1, energy = 20, bomb = 20, bio = 20, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 

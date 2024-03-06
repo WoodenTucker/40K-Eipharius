@@ -455,7 +455,7 @@
 
 	if(bodytemperature < species.cold_level_1) //260.15 is 310.15 - 50, the temperature where you start to feel effects.
 		if(nutrition >= 2) //If we are very, very cold we'll use up quite a bit of nutriment to heat us up.
-			nutrition -= 2
+			nutrition -= 1
 		var/recovery_amt = max((body_temperature_difference / BODYTEMP_AUTORECOVERY_DIVISOR), BODYTEMP_AUTORECOVERY_MINIMUM)
 //		log_debug("Cold. Difference = [body_temperature_difference]. Recovering [recovery_amt]")
 		bodytemperature += recovery_amt
@@ -1055,6 +1055,7 @@
 		if (prob(2))
 			custom_pain("[pick("The pain is excruciating", "Please, just end the pain")]!", shock_stage, nohalloss = 0)
 			adjustStaminaLoss(20)
+			nutrition -= 1
 		//	flash_weak_pain()
 		//	stuttering = max(stuttering, 5)
 
@@ -1062,6 +1063,7 @@
 		if (prob(5))
 			custom_pain("[pick("The pain is excruciating", "Please, just end the pain")]!", shock_stage, nohalloss = 0)
 			adjustStaminaLoss(20)
+			nutrition -= 1
 		//	flash_weak_pain()
 		//	stuttering = max(stuttering, 5)
 
@@ -1069,6 +1071,7 @@
 		if (prob(2))
 			custom_pain("You feel like you could die any moment now", shock_stage, nohalloss = 0)
 			adjustStaminaLoss(20)
+			nutrition -= 1
 		//	flash_pain()
 		//	stuttering = max(stuttering, 5)
 

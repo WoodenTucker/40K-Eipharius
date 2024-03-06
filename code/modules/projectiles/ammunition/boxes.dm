@@ -314,6 +314,16 @@
 /obj/item/ammo_magazine/flamer/attack_self(mob/user) //Don't empty ur ammo
 	return
 
+/obj/item/ammo_magazine/flamer/salamander
+	name = "promethium fuel tank"
+	desc = "Put it in your flamer and roast those you don't like."
+	icon_state = "flamer"
+	caliber = "flamersally"
+	mag_type = MAGAZINE
+	ammo_type = /obj/item/ammo_casing/flamer/salamander
+	max_ammo = 30
+	multiple_sprites = FALSE
+
 /obj/item/ammo_magazine/bolt_pistol_magazine
 	name = "Boltpistol Magazine"
 	icon_state = "boltyp"
@@ -463,7 +473,7 @@
 /obj/item/ammo_magazine/bolt_pistol_magazine/kp/empty
 	initial_ammo = 0
 
-/obj/item/ammo_magazine/melta
+ /obj/item/ammo_magazine/melta  //Not being used at the moemnt //CHECK IF IT'S BEEN MAPPED IN BEFORE DELETING THINGS.
 	name = "Melta Canister"
 	icon_state = "flamer"
 	origin_tech = list(TECH_COMBAT = 2)
@@ -474,7 +484,7 @@
 	max_ammo = 100
 	multiple_sprites = 0
 
-/obj/item/ammo_magazine/melta/empty
+ /obj/item/ammo_magazine/melta/empty
 	initial_ammo = 0
 
 /obj/item/ammo_magazine/catapult_magazine
@@ -529,6 +539,16 @@
 	desc = "An ancient design for loading galvanic rifles. This one seems to have stun rounds loaded."
 	ammo_type = /obj/item/ammo_casing/galvanic/pain
 
+/obj/item/ammo_magazine/railrifle
+	name = "Rail Rifle Cartridge"
+	desc = "A small box containing small sub-projectiles for the Tau Rail Rifle"
+	icon_state = "rcd"
+	caliber = "railrifle"
+	matter = list(DEFAULT_WALL_MATERIAL = 360)
+	ammo_type = /obj/item/ammo_casing/railrifle
+	mag_type = MAGAZINE
+	max_ammo = 5
+	multiple_sprites = 0
 
 /obj/item/ammo_magazine/pulsemag
 	name = "Pulse Matter Cartridge"

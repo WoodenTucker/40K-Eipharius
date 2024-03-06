@@ -65,10 +65,12 @@
 
 /obj/item/clothing/ears/earring/dangle/silver
 	name = "silver dangle earrings"
+	sales_price = 10
 	color = "#d1e6e3"
 
 /obj/item/clothing/ears/earring/dangle/gold
 	name = "gold dangle earrings"
+	sales_price = 15
 	color = "#edd12f"
 
 /obj/item/clothing/ears/earring/dangle/platinum

@@ -188,9 +188,9 @@
 	sales_price = 35
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
-		list(mode_name="3-round bursts", burst=3, fire_delay=5, burst_accuracy=list(0,0,0),       dispersion=null, automatic = 0, charge_cost=80),
-		list(mode_name="overcharge", fire_delay = 3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=140),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun, charge_cost=80),
+		list(mode_name="3-round bursts", burst=3, fire_delay=5, burst_accuracy=list(0,0,0),       dispersion=null, projectile_type=/obj/item/projectile/energy/las/lasgun, automatic = 0, charge_cost=80),
+		list(mode_name="overcharge", burst=1, fire_delay = 3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=140),
 		)
 
 /obj/item/gun/energy/las/lasgun/New()
@@ -570,7 +570,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/pistol
 	charge_cost = 100
-	armor_penetration = 0
+	armor_penetration = 1
 	cell_type = /obj/item/cell/lasgun/small || /obj/item/cell/lasgun
 	ammoType =  /obj/item/cell/lasgun
 	sales_price = 10
@@ -663,8 +663,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	sales_price = 25
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=1.7, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=100),
-		list(mode_name="Overcharged", 	fire_delay = 3, charge_cost = 145, projectile_type = /obj/item/projectile/energy/las/lasgun/lucius),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=1.7, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=100, projectile_type = /obj/item/projectile/energy/las/lasgun/lucius),
+		list(mode_name="Overcharged", 	fire_delay = 3, charge_cost = 145, projectile_type = /obj/item/projectile/energy/las/lasgun/lucius/overcharge),
 		)
 
 //Tau weapons
@@ -780,11 +780,11 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	var/plasma_overheat_max = 200 // When the gun exploads
 	Fire(atom/target, mob/living/user)
 		if(plasma_overheat >= 50)
-			to_chat(user, "THE BARREL STARTS TO GLOW.")
+			to_chat(user, "<span class='warning'><b><font size=3>THE BARREL STARTS TO GLOW.</font></b></span>")
 		if(plasma_overheat >= 90)
-			to_chat(user, "OVERHEAT WARNING.")
+			to_chat(user, "<span class='warning'><b><font size=3>OVERHEAT WARNING.</font></b></span>")
 		if(plasma_overheat >= 150)
-			to_chat(user, "CATASTROPHIC FAILURE IMMINENT.")
+			to_chat(user, "<span class='warning'><b><font size=3>CATASTROPHIC FAILURE IMMINENT.</font></b></span>")
 		..()
 		plasma_overheat += 30 // adding 30 heat for every pulling of the trigger (learn not to spam the fucking gun)
 	Process()
@@ -1044,7 +1044,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 /obj/item/gun/energy/las/lasgun/lucius/tinkered
 	name = "Lucius No.98 'Veteran Configuration' Lasgun"
 	desc = "A Lucius-pattern lasgun No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot than Kantrael and many other lasgun patterns but causing it to be more likely to overheat. This variant has a modified heatsink and crystal assembly, the frame has also been replaced with a light polymer."
-	armor_penetration = 15
+	armor_penetration = 1
 	force = 12
 	one_hand_penalty = 1.8
 	fire_delay = 3.5
@@ -1065,7 +1065,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
 	force = 22
-	armor_penetration = 8
+	armor_penetration = 1
 	one_hand_penalty = 1.5
 	accuracy = 0
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)

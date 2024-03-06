@@ -274,7 +274,6 @@
 	icon_state = "scoutoutfit"
 	item_state = "scoutoutfit"
 	worn_state = "scoutoutfit"
-	armor = list(melee = 10, bullet = 10, laser = 10, energy = 25, bomb = 10, bio = 30, rad = 10)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -286,7 +285,6 @@
 	worn_state = "skit"
 	canremove = 0
 	unacidable = 1
-	armor = list(melee = 10, bullet = 10, laser = 10, energy = 25, bomb = 10, bio = 30, rad = 10)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -296,7 +294,7 @@
 	icon_state = "ork_clothes"
 	item_state = "ork_clothes"
 	worn_state = "ork_clothes"
-	armor = list(melee = 10, bullet = 10, laser = 10, energy = 25, bomb = 10, bio = 30, rad = 10)
+
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 

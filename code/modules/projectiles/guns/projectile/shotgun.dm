@@ -43,7 +43,6 @@
 	one_hand_penalty = 1.5
 	accuracy = 0.5
 	fire_delay= 3
-	armor_penetration = 1 //melee???
 	sales_price = 5
 
 /obj/item/gun/projectile/shotgun/pump/New()
@@ -225,7 +224,7 @@
 	force = 5
 	one_hand_penalty = 0
 
-/obj/item/gun/projectile/meltagun
+// /obj/item/gun/projectile/meltagun //Old version of melta
 	name = "Melta Gun"
 	desc = "Melta Weapons are extremely dangerous weapons which can melt heavy armor in a few shots, this one is a melta rifle and should be used with both hands."
 	icon_state = "melta"
@@ -237,8 +236,8 @@
 	ammo_type = /obj/item/ammo_casing/melta
 	caliber = "melta"
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/melta
-	allowed_magazines = /obj/item/ammo_magazine/melta
+	// magazine_type = /obj/item/ammo_magazine/melta // Had to code this out because it was giving me errors otherwise
+	// allowed_magazines = /obj/item/ammo_magazine/melta
 	w_class = ITEM_SIZE_HUGE
 	force = 14
 	one_hand_penalty = 8

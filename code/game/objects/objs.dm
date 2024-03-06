@@ -14,7 +14,7 @@
 	var/in_use = 0 // If we have a user using us, this will be set on. We will check if the user has stopped using us, and thus stop updating and LAGGING EVERYTHING!
 	var/damtype = BRUTE
 	var/damage_type = BRUTE //things start using this later instead of damtype for whatever reason, first was declared in projectiles_new.dm
-	var/armor_penetration = 0
+	var/armor_penetration = 1
 	var/anchor_fall = FALSE
 
 /obj/Destroy()

@@ -661,6 +661,12 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"cA" = (
+/mob/living/simple_animal/hostile/giant_spider/flesh,
+/turf/simulated/wall/concrete{
+	integrity = 1500
+	},
+/area/cadiaoutpost/oa/caves/undercity)
 "cD" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -750,16 +756,6 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
-"cQ" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/machinery/computer/shuttle_control/ferry/mechanicus{
-	icon = 'icons/map_project/port/resources_64x64.dmi';
-	icon_state = "node_on"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/caves/dark)
 "cR" = (
 /obj/structure/iv_drip,
 /obj/structure/closet/medical_wall{
@@ -940,7 +936,7 @@
 	icon_state = "corner_white";
 	dir = 1
 	},
-/area/cadiaoutpost/oa/hangarpact)
+/area/cadiaoutpost/oa/shuttle/mechanicus)
 "dI" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -1341,7 +1337,7 @@
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/decal/cleanable/blood,
 /obj/structure/anti_tank,
-/obj/effect/landmark/animal/zygote1,
+/mob/living/simple_animal/hostile/flesh/abomination,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
 "eQ" = (
@@ -1986,7 +1982,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/hangarpact)
+/area/cadiaoutpost/oa/shuttle/mechanicus)
 "hk" = (
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/tiled{
@@ -2090,7 +2086,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/hangarpact)
+/area/cadiaoutpost/oa/shuttle/mechanicus)
 "hC" = (
 /obj/effect/floor_decal/turf/cafe{
 	color = "grey"
@@ -2173,14 +2169,6 @@
 /obj/machinery/light,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
-"hV" = (
-/obj/machinery/door/blast/id_door/open{
-	id = null
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/mechanicus)
 "hZ" = (
 /obj/machinery/light/small/red{
 	dir = 4
@@ -2295,7 +2283,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "ix" = (
 /obj/effect/floor_decal/turf/necro1,
-/mob/living/simple_animal/hostile/smalldemon/bubblingmass,
+/mob/living/simple_animal/hostile/flesh,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
 "iy" = (
@@ -2945,21 +2933,6 @@
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
-"kC" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1
-	},
-/obj/effect/floor_decal/industrial/warning,
-/obj/effect/floor_decal/industrial/warning{
-	dir = 4
-	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 8
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/caves)
 "kD" = (
 /obj/structure/table/graf/rusty_table,
 /obj/machinery/microwave{
@@ -3590,7 +3563,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/hangarpact)
+/area/cadiaoutpost/oa/shuttle/mechanicus)
 "mt" = (
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/ship_floor/steel{
@@ -5249,7 +5222,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/shuttle/mechanicus)
+/area/cadiaoutpost/new_hive/caves)
 "sC" = (
 /obj/item/archaeological_find/remains/xeno{
 	color = "grey"
@@ -6374,7 +6347,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/hangarpact)
+/area/cadiaoutpost/oa/shuttle/mechanicus)
 "wu" = (
 /obj/flamer_fire{
 	burnlevel = 22;
@@ -7968,7 +7941,7 @@
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "Ci" = (
 /turf/simulated/shuttle/wall/corner/dark/ne,
-/area/cadiaoutpost/oa/hangarpact)
+/area/cadiaoutpost/oa/shuttle/mechanicus)
 "Cj" = (
 /obj/structure/shipdecor{
 	icon_state = "off"
@@ -9351,7 +9324,7 @@
 	color = "grey";
 	icon_state = "wall3"
 	},
-/area/cadiaoutpost/oa/hangarpact)
+/area/cadiaoutpost/oa/shuttle/mechanicus)
 "GM" = (
 /obj/structure/closet/hive/iron_c{
 	anchored = 1
@@ -9526,7 +9499,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/hangarpact)
+/area/cadiaoutpost/oa/shuttle/mechanicus)
 "Ho" = (
 /obj/item/bedsheet/blue,
 /obj/structure/bed,
@@ -9756,6 +9729,10 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"In" = (
+/mob/living/simple_animal/hostile/flesh,
+/turf/simulated/wall/seolite,
+/area/cadiaoutpost/oa/caves/dark)
 "Io" = (
 /obj/item/campfire/self_lit{
 	desc = "A campfire.";
@@ -10005,7 +9982,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/hangarpact)
+/area/cadiaoutpost/oa/shuttle/mechanicus)
 "IS" = (
 /obj/effect/floor_decal/turf/surgery2,
 /obj/structure/table/marble{
@@ -10048,7 +10025,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "Ja" = (
 /turf/simulated/shuttle/wall/corner/dark/nw,
-/area/cadiaoutpost/oa/hangarpact)
+/area/cadiaoutpost/oa/shuttle/mechanicus)
 "Jf" = (
 /mob/living/simple_animal/hostile/undead,
 /turf/simulated/floor/plating{
@@ -10225,6 +10202,10 @@
 	},
 /obj/structure/sign/warning/vacuum{
 	pixel_x = 35
+	},
+/obj/machinery/computer/shuttle_control/ferry/mechanicus{
+	icon = 'icons/map_project/ship/ship_equipment.dmi';
+	icon_state = "1,011"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -10410,7 +10391,7 @@
 	icon_state = "corner_white";
 	dir = 6
 	},
-/area/cadiaoutpost/oa/hangarpact)
+/area/cadiaoutpost/oa/shuttle/mechanicus)
 "Kl" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/alarm{
@@ -11771,7 +11752,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/hangarpact)
+/area/cadiaoutpost/oa/shuttle/mechanicus)
 "Pq" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/item/reagent_containers/food/snacks/soylentgreen{
@@ -12330,7 +12311,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/hangarpact)
+/area/cadiaoutpost/oa/shuttle/mechanicus)
 "Rx" = (
 /obj/structure/closet/crate,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -12543,6 +12524,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
+"Sk" = (
+/obj/effect/floor_decal/turf/necro1,
+/mob/living/simple_animal/hostile/flesh,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/dark)
 "So" = (
 /obj/structure/iv_drip,
 /turf/simulated/floor/plating{
@@ -13462,10 +13450,15 @@
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/hangarpact)
 "VI" = (
+/obj/machinery/computer/shuttle_control/ferry/mechanicus{
+	icon = 'icons/map_project/ship/ship_equipment.dmi';
+	icon_state = "1,011"
+	},
+/obj/effect/shuttle_landmark/ferry/mechanicus_start,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/hangarpact)
+/area/cadiaoutpost/oa/shuttle/mechanicus)
 "VJ" = (
 /turf/simulated/floor/stone/seabed,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
@@ -13634,11 +13627,10 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "Wq" = (
-/obj/effect/shuttle_landmark/ferry/mechanicus_start,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/shuttle/mechanicus)
+/area/cadiaoutpost/new_hive/caves)
 "Wr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 10;
@@ -14285,7 +14277,6 @@
 	icon_state = "alarm0";
 	pixel_x = -24
 	},
-/obj/machinery/computer/shuttle_control/ferry/bloodpact,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -47106,12 +47097,12 @@ Tk
 Yd
 yT
 Yd
-eS
+In
 ho
 ho
 ho
 xS
-xS
+ix
 xS
 xS
 eS
@@ -47362,7 +47353,7 @@ eS
 ho
 ho
 ho
-ix
+xS
 xS
 xS
 xS
@@ -47612,7 +47603,7 @@ Yd
 Ft
 eS
 ho
-ho
+Sk
 ho
 ho
 kp
@@ -48155,7 +48146,7 @@ If
 MU
 MU
 MU
-wq
+eO
 MU
 MU
 MU
@@ -52633,7 +52624,7 @@ AM
 AM
 jw
 jw
-AM
+cA
 yx
 yx
 Sc
@@ -64713,7 +64704,7 @@ GL
 hh
 hh
 hh
-VI
+SI
 GL
 Nd
 Nd
@@ -64961,11 +64952,11 @@ mj
 Hn
 VI
 IQ
-VI
+SI
 Pp
 wt
 mr
-VI
+SI
 GL
 Nd
 Nd
@@ -65217,7 +65208,7 @@ GL
 hA
 hA
 hA
-VI
+SI
 GL
 mj
 Nd
@@ -71805,11 +71796,11 @@ hI
 hI
 Rq
 Wx
-SI
+Wq
 sA
-SI
-hV
-kC
+Wq
+Wx
+jT
 jT
 ZG
 jT
@@ -72057,11 +72048,11 @@ hI
 hI
 Rq
 Wx
-SI
 Wq
-SI
-hV
-kC
+Wq
+Wq
+Wx
+jT
 jT
 jT
 LF
@@ -72309,11 +72300,11 @@ hI
 hI
 Rq
 Wx
-SI
-SI
-SI
-hV
-kC
+Wq
+Wq
+Wq
+Wx
+jT
 jT
 jT
 rc
@@ -72561,11 +72552,11 @@ hI
 hI
 Rq
 Wx
-SI
-SI
-SI
-hV
-kC
+Wq
+Wq
+Wq
+Wx
+jT
 jT
 jT
 he
@@ -73067,7 +73058,7 @@ Rq
 Wx
 Wx
 Wx
-cQ
+Wx
 jT
 jT
 Wx

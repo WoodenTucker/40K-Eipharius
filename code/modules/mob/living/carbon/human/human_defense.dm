@@ -16,26 +16,27 @@ meteor_act
 		return "hits"
 
 /mob/living/carbon/human/bullet_act(var/obj/item/projectile/P, var/def_zone)
-//	/mob/living/carbon/human = user
 	def_zone = check_zone(def_zone)
 	if(!has_organ(def_zone))
 		return PROJECTILE_FORCE_MISS //if they don't have the organ in question then the projectile just passes by.
-	/*if((user.shielded_energy >= 1) && (P.check_armour == "energy"))
+	if((src.shielded_energy >= 1) && (P.check_armour == "energy"))
 		var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
-		spark_system.set_up(5, 0, user.loc)
+		spark_system.set_up(5, 0, src.loc)
 		spark_system.start()
-		playsound(user.loc, "sparks", 50, 1)
+		playsound(src.loc, "sparks", 50, 1)
 		START_PROCESSING(SSobj, src)
-		user.visible_message("<span class='warning'>\The [P] refracts, bending into \the [user]'s field.</span>")
+		src.visible_message("<span class='warning'>\The [P] refracts, bending into \the [src]'s field.</span>")
 		del(P)
-	if((user.shielded_projectile >= 1) && (P.check_armour == "bullet"))
+	if((src.shielded_projectile >= 1) && (P.check_armour == "bullet"))
 		var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
-		spark_system.set_up(5, 0, user.loc)
+		spark_system.set_up(5, 0, src.loc)
 		spark_system.start()
-		playsound(user.loc, "sparks", 50, 1)
+		playsound(src.loc, "sparks", 50, 1)
 		START_PROCESSING(SSobj, src)
-		user.visible_message("<span class='warning'>\The [P] shatters against \the [user]'s field.</span>")
-		del(P)*/
+		src.visible_message("<span class='warning'>\The [P] shatters against \the [src]'s field.</span>")
+		del(P)
+	if((src.can_bullet_dodge >= 1) && (prob(bullet_dodge_probability)))
+		return PROJECTILE_FORCE_MISS
 	//Shields
 	var/shield_check = check_shields(P.damage, P, null, def_zone, "the [P.name]")
 	if(shield_check)
@@ -182,6 +183,22 @@ meteor_act
 
 	if(user == src) // Attacking yourself can't miss
 		return target_zone
+
+	if(src.shielded_melee >= 1)
+		visible_message("<b><big>[src.name]'s shield deflects the attack!!</big></b>")//send a message
+		var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
+		spark_system.set_up(5, 0, src.loc)
+		spark_system.start()
+		playsound(src.loc, "sparks", 50, 1)
+		return null
+
+	if((src.can_melee_dodge >= 1) && prob(melee_dodge_probability))
+		visible_message("<b><big>[src.name] dodges out of the way!!</big></b>")//send a message
+		return null
+
+	if((src.can_melee_block >= 1) && prob(melee_block_probability))
+		visible_message("<b><big>[src.name] parries the attack!!</big></b>")//send a message
+		return null
 
 	var/accuracy_penalty = user.melee_accuracy_mods()
 
@@ -470,6 +487,10 @@ meteor_act
 
 		var/dtype = O.damtype
 		var/throw_damage = O.throwforce*(speed/THROWFORCE_SPEED_DIVISOR)
+
+		if((src.can_bullet_dodge >= 1) && (prob(bullet_dodge_probability * 1.5))) //It's easier to dodge slower moving projectiles.
+			playsound(loc, 'sound/weapons/punchmiss.ogg', 50, 1)
+			return
 
 		var/zone
 		if (istype(O.thrower, /mob/living))

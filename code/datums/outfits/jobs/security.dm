@@ -26,3 +26,15 @@
 	/obj/item/gun/projectile/bolter_pistol  = 1,
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 3
 	)
+
+/decl/hierarchy/outfit/job/security/necron
+	name = OUTFIT_JOB_NAME("Necron Warrior")
+	uniform = /obj/item/clothing/under/necron
+	glasses = /obj/item/clothing/glasses/necron
+	id_type = /obj/item/card/id/key/super/necron
+	mask = /obj/item/clothing/mask/gas/necron
+	gloves = /obj/item/clothing/gloves/necron
+	suit = /obj/item/clothing/suit/armor/necron
+	head = /obj/item/clothing/head/helmet/necron
+	shoes = /obj/item/clothing/shoes/necron
+	back = /obj/item/storage/backpack/satchel/warfare/necron

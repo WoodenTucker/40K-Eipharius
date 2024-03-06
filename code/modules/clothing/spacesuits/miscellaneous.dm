@@ -41,7 +41,7 @@
 		slot_l_hand_str = "syndicate-helm-black-red",
 		slot_r_hand_str = "syndicate-helm-black-red",
 		)
-	armor = list(melee = 25, bullet = 45, laser = 45, energy = 30, bomb = 65, bio = 100, rad = 100)
+	armor = list(melee = 10, bullet = 45, laser = 45, energy = 30, bomb = 65, bio = 100, rad = 100)
 	item_flags = ITEM_FLAG_STOPPRESSUREDAMAGE | ITEM_FLAG_THICKMATERIAL
 	flags_inv = BLOCKHAIR
 	siemens_coefficient = 0.6
@@ -74,7 +74,7 @@
 	desc = "Yarr."
 	icon_state = "pirate"
 	item_state = "pirate"
-	armor = list(melee = 25, bullet = 25, laser = 35, energy = 20, bomb = 30, bio = 10, rad = 20)
+	armor = list(melee = 10, bullet = 25, laser = 35, energy = 20, bomb = 30, bio = 10, rad = 20)
 	flags_inv = BLOCKHAIR
 	body_parts_covered = 0
 	siemens_coefficient = 0.9
@@ -85,7 +85,7 @@
 	icon_state = "pirate"
 	w_class = ITEM_SIZE_NORMAL
 	allowed = list(/obj/item/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/handcuffs,/obj/item/tank/emergency)
-	armor = list(melee = 25, bullet = 25, laser = 35, energy = 20, bomb = 30, bio = 10, rad = 20)
+	armor = list(melee = 10, bullet = 25, laser = 35, energy = 20, bomb = 30, bio = 10, rad = 20)
 	siemens_coefficient = 0.9
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
