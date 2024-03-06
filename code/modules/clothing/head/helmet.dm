@@ -173,6 +173,15 @@
 	siemens_coefficient = 0.6
 	sales_price = 15
 
+/obj/item/clothing/head/helmet/royalguard
+	name = "Ceremonial Helmet"
+	desc = "A black painted carapace helmet cleverly covered up by the beret with the symbol of the de Burgen family on it"
+	icon_state = "royalgh"
+	item_state = "royalgh"
+	armor = list(melee = 8, bullet = 35, laser = 35, energy = 35, bomb = 50, bio = 0, rad = 10)
+	siemens_coefficient = 0.6
+	sales_price = 15
+
 /obj/item/clothing/head/helmet/genestealer
 	name = "tyranid scale hide"
 	desc = "The hide of a Tyranid Genestealer"
@@ -466,6 +475,14 @@
 	desc = "A heavy metal ganger helmet that protects you from slashes, stabs and the occassional lasburn."
 	icon_state = "raider_combat_helmet"
 	item_state = "raider_combat_helmet"
+	armor = list(melee = 8, bullet = 25, laser = 25, energy = 35, bomb = 50, bio = 70, rad = 50)
+	sales_price = 1
+
+/obj/item/clothing/head/helmet/nurgcult
+	name = "Rotting Hood"
+	desc = "A hood covered by all sorts of weird symbols with holes in it green from the mold on it...and that smell, you just can't take it"
+	icon_state = "nurgh"
+	item_state = "nurgh"
 	armor = list(melee = 8, bullet = 25, laser = 25, energy = 35, bomb = 50, bio = 70, rad = 50)
 	sales_price = 1
 

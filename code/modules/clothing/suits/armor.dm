@@ -1396,6 +1396,17 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 
+/obj/item/clothing/suit/armor/heretcoat/ncult
+	name = "Filthy Coat"
+	desc = "An old leather coat covered in some strange substance smelling foul, like a mix of human feces, vomit and rotten guts...do you really want to go near them?"
+	icon_state = "nurgc"
+	item_state = "nurgc"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun,/obj/item/gun/projectile)
+	armor = list(melee = 8, bullet = 34, laser = 34, energy = 30, bomb = 40, bio = 30, rad = 30)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+
 // NEW ARMORS
 
 /obj/item/clothing/suit/armor/heavyflaksuit
@@ -1930,6 +1941,18 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	sales_price = 40
+
+/obj/item/clothing/suit/armor/royalguard
+	name = "Fancy Carapace"
+	desc = "The Carapace Armor of a local mercenary hired by the de Burgen family."
+	icon_state = "royalgc"
+	item_state = "royalgc"
+	armor = list(melee = 9, bullet = 38, laser = 38, energy = 30, bomb = 40, bio = 30, rad = 50)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 60
 
 /obj/item/clothing/suit/armor/tduster
 	name = "Armored Duster"
