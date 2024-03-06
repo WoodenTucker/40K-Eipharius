@@ -144,6 +144,16 @@
 	permeability_coefficient = 0.05
 	armor = list(melee = 1, bullet = 2, laser = 2, energy = 2, bomb = 2, bio = 0, rad = 0)
 
+/obj/item/clothing/gloves/royalguard
+	desc = "These black leather gloves are made from the finest grox leather sourced locally, and have hardened knuckles."
+	name = "tactical gloves"
+	icon_state = "royalgg"
+	item_state = "royalgg"
+	force = 8
+	siemens_coefficient = 0.50
+	permeability_coefficient = 0.05
+	armor = list(melee = 1, bullet = 2, laser = 2, energy = 2, bomb = 2, bio = 0, rad = 0)
+
 /obj/item/clothing/gloves/guards
 	desc = "A pair of synthetic gloves and arm pads reinforced with armor plating."
 	name = "arm guards"
