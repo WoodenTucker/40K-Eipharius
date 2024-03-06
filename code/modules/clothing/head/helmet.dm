@@ -469,6 +469,14 @@
 	armor = list(melee = 8, bullet = 25, laser = 25, energy = 35, bomb = 50, bio = 70, rad = 50)
 	sales_price = 1
 
+/obj/item/clothing/head/helmet/nurgcult
+	name = "Rotting Hood"
+	desc = "A hood covered by all sorts of weird symbols with holes in it green from the mold on it...and that smell, you just can't take it"
+	icon_state = "nurgh"
+	item_state = "nurgh"
+	armor = list(melee = 8, bullet = 25, laser = 25, energy = 35, bomb = 50, bio = 70, rad = 50)
+	sales_price = 1
+
 /obj/item/clothing/head/helmet/knighthelm
 	name = "Masterwork Helm"
 	desc = "A heavy metal helmet that protects you from slashes, stabs and the occassional lasburn."
