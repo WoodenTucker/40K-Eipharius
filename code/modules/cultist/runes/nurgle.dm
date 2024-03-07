@@ -52,12 +52,12 @@
 /datum/rune_recipe/nurgle/plate
 	name = "Plate Rite"
 	ingredients = list(/obj/item/stack/material/cloth)
-	product_path = /obj/item/clothing/suit/armor/flak1/renegadearmor
+	product_path = /obj/item/clothing/suit/armor/heretcoat/nurgcult
 
 /datum/rune_recipe/nurgle/mask
 	name = "Mask Rite"
 	ingredients = list(/obj/item/clothing/mask/gas)
-	product_path = /obj/item/clothing/head/helmet/culthelm/gas
+	product_path = /obj/item/clothing/head/helmet/nurgcult
 
 /datum/rune_recipe/nurgle/nade
 	name = "Nade Rite"
