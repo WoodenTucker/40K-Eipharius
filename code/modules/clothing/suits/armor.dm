@@ -1396,7 +1396,7 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 
-/obj/item/clothing/suit/armor/heretcoat/ncult
+/obj/item/clothing/suit/armor/heretcoat/nurgcult
 	name = "Filthy Coat"
 	desc = "An old leather coat covered in some strange substance smelling foul, like a mix of human feces, vomit and rotten guts...do you really want to go near them?"
 	icon_state = "nurgc"
