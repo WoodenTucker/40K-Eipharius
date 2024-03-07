@@ -430,7 +430,7 @@ datum/job/ig/bullgryn
 					to_chat(H, "<span class='notice'><b><font size=3>You are a Combat Medicae. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
-
+/*
 /datum/job/kasrkin
 	title = "Kasrkin"
 	supervisors = "The Governor and The Inquisition."
@@ -472,7 +472,7 @@ datum/job/ig/bullgryn
 		H.warfare_faction = IMPERIUM
 //		H.vice = null //THE VETERAN HAS SEEN SOME SHIT BRO
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Kasrkin serving as an agent to the Governor on behalf of your regiment, while expected to follow orders you ultimately serve the memory of Cadia to whom you are loyal above all else. You unlike most veterans of the Astra Militarum are likely experienced and knowledgeable enough about Chaos to not be drinking the kool aid the Imperium gives to it's soldiers and instead serve because of your true understanding of what The God Emperor and all humanity stand against...</font></b></span>")
-
+*/
 
 // Commissar
 
