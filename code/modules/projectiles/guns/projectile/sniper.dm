@@ -167,7 +167,7 @@
 	item_state = "musket"
 	w_class = ITEM_SIZE_HUGE
 	force = 10
-	slot_flags = SLOT_BACK
+	slot_flags = SLOT_BACK|SLOT_S_STORE
 	caliber = "14.5mm"
 	screen_shake = 2.5
 	handle_casings = HOLD_CASINGS
