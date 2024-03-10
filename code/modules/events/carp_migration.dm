@@ -28,7 +28,7 @@
 	var/list/spawn_locations = list()
 
 	for(/area/cadiaoutpost/new_hive/hive_city/H)
-			spawn_locations.Add(H.loc)
+		spawn_locations.Add(H.loc)
 	spawn_locations = shuffle(spawn_locations)
 	num_groups = min(num_groups, spawn_locations.len)
 
