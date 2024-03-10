@@ -275,8 +275,8 @@ obj/mortar/flare/blue
 	fragmentate(get_turf(src), 240)
 	qdel(src)
 
-/obj/mortar/deathstrike/vortex //More or less a nuke. Don't misuse this.
-	name = "Deathstrike Missile"
+/*/obj/mortar/deathstrike/vortex //More or less a nuke. Don't misuse this. //WIP until I add a way to get larger warp rifts. 
+	name = "Deathstrike Vortex Missile"
 	desc = "You'll never see this it just explodes."
 
 /obj/mortar/deathstrike/vortex/New()
@@ -284,8 +284,8 @@ obj/mortar/flare/blue
 	playsound(source, 'sound/effects/siren.ogg', 100, TRUE)
 	command_announcement.Announce("Warning. Deathstrike vortex missile launch detected.")
 	sleep(120)
-	new /turf/unsimulated/wall/supermatter/warp(loc, 6)
-	qdel(src)
+	new /turf/unsimulated/wall/supermatter/warp
+	qdel(src)*/
 
 
 /obj/item/grenade/frag/proc/on_explosion(var/turf/O)
