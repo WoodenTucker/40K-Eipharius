@@ -1,10 +1,10 @@
 /datum/event/mortar
 	announceWhen = 0
 	startWhen = 30
-	endWhen = 150
+	endWhen = 45 //Servers slows right down when this starts.
 
 /datum/event/mortar/setup()
-	endWhen = 150
+	endWhen = 45
 
 /datum/event/mortar/announce()
 	command_announcement.Announce("PDF Outposts are reporting incoming indirect fire from Heretical forces. All citizens should take cover within a secure building.")
@@ -15,8 +15,6 @@
 /datum/event/mortar/tick()
 	var/mortar_type = pick("frag", "fire", "arty")
 	for(var/i = 1, i<4, i++)
-	if(activeFor >= 150)
-		kill()
 	sound_to(world, 'sound/effects/arty_distant.ogg')
 	sleep(30)
 
@@ -26,8 +24,8 @@
 			sound_to(world, 'sound/weapons/new_artillery_incoming01.ogg')
 			sleep(2)
 			for(var/i = 1, i<21, i++)//No man's land is a big area so drop a lot of shells.
+
 				var/turf/T = pick(get_area_turfs(/area/cadiaoutpost/new_hive/hive_city))
-				command_announcement.Announce("activeFor value is [activeFor]")
 				drop_mortar(T, mortar_type)
 				sleep(10)
 
@@ -37,7 +35,7 @@
 			sleep(2)
 			for(var/i = 1, i<3, i++)//Only do this three times to reduce lag.
 				var/turf/T = pick(get_area_turfs(/area/cadiaoutpost/new_hive/hive_city))
-				command_announcement.Announce("activeFor value is [activeFor]")
+
 				drop_mortar(T, mortar_type)
 				sleep(10)*/
 
@@ -47,7 +45,7 @@
 			sleep(2)
 			for(var/i = 1, i<15, i++)//5 fire shells, going hot!
 				var/turf/T = pick(get_area_turfs(/area/cadiaoutpost/new_hive/hive_city))
-				command_announcement.Announce("activeFor value is [activeFor]")
+
 				drop_mortar(T, mortar_type)
 				sleep(10)
 
@@ -57,7 +55,7 @@
 			sleep(2)
 			for(var/i = 1, i<12, i++)
 				var/turf/T = pick(get_area_turfs(/area/cadiaoutpost/new_hive/hive_city))
-				command_announcement.Announce("activeFor value is [activeFor]")
+
 				drop_mortar(T, mortar_type)
 				sleep(10)
 
