@@ -3,7 +3,7 @@
 	startWhen	= 30
 
 /datum/event/gravity/setup()
-	endWhen = rand(90, 150)
+	endWhen = 150
 
 /datum/event/mortar/announce()
 	command_announcement.Announce("PDF Outposts are reporting incoming indirect fire from Heretical forces. All citizens should take cover within a secure building.")
