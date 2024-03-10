@@ -2,7 +2,7 @@
 	announceWhen = 0
 	startWhen	= 30
 
-/datum/event/gravity/setup()
+/datum/event/mortar/setup()
 	endWhen = 150
 
 /datum/event/mortar/announce()
