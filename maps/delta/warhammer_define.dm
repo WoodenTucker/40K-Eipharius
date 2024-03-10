@@ -37,7 +37,7 @@
 /datum/event_container/mundane
 	available_events = list(
 		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Mortars",/datum/event/mortar,5),
-		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Carp",/datum/event/carp_migration,5)m
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Carp",/datum/event/carp_migration,5),
 		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None",/datum/event/no_event,25)
 		)
 
