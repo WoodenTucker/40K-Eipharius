@@ -21,7 +21,6 @@
 
 	switch(mortar_type)
 		if("frag")
-			sound_to(world, 'sound/weapons/mortar_fire.ogg')
 			sleep(10)
 			sound_to(world, 'sound/weapons/new_artillery_incoming01.ogg')
 			sleep(2)
@@ -32,7 +31,6 @@
 				sleep(10)
 
 /*		if("gas")
-			sound_to(world, 'sound/weapons/mortar_fire.ogg')
 			sleep(10)
 			sound_to(world, 'sound/weapons/new_artillery_incoming02.ogg')
 			sleep(2)
@@ -43,7 +41,6 @@
 				sleep(10)*/
 
 		if("fire")
-			sound_to(world, 'sound/weapons/mortar_fire.ogg')
 			sleep(10)
 			sound_to(world, 'sound/weapons/new_artillery_incoming03.ogg')
 			sleep(2)
@@ -54,7 +51,6 @@
 				sleep(10)
 
 		if("arty")
-			sound_to(world, 'sound/effects/arty_distant.ogg')
 			sleep(10)
 			sound_to(world, 'sound/weapons/new_artillery_incoming04.ogg')
 			sleep(2)
