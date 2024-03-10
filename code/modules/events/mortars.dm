@@ -15,6 +15,8 @@
 /datum/event/mortar/tick()
 	var/mortar_type = pick("frag", "fire", "arty")
 	for(var/i = 1, i<4, i++)
+	if(activeFor >= 150)
+		kill()
 	sound_to(world, 'sound/effects/arty_distant.ogg')
 	sleep(30)
 
