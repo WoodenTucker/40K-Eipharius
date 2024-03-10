@@ -25,7 +25,7 @@
 			sleep(2)
 			for(var/i = 1, i<21, i++)//No man's land is a big area so drop a lot of shells.
 				var/turf/T = pick(get_area_turfs(/area/cadiaoutpost/new_hive/hive_city))
-
+				command_announcement.Announce("activeFor value is [activeFor]")
 				drop_mortar(T, mortar_type)
 				sleep(10)
 
@@ -35,7 +35,7 @@
 			sleep(2)
 			for(var/i = 1, i<3, i++)//Only do this three times to reduce lag.
 				var/turf/T = pick(get_area_turfs(/area/cadiaoutpost/new_hive/hive_city))
-
+				command_announcement.Announce("activeFor value is [activeFor]")
 				drop_mortar(T, mortar_type)
 				sleep(10)*/
 
@@ -45,7 +45,7 @@
 			sleep(2)
 			for(var/i = 1, i<15, i++)//5 fire shells, going hot!
 				var/turf/T = pick(get_area_turfs(/area/cadiaoutpost/new_hive/hive_city))
-
+				command_announcement.Announce("activeFor value is [activeFor]")
 				drop_mortar(T, mortar_type)
 				sleep(10)
 
@@ -55,7 +55,7 @@
 			sleep(2)
 			for(var/i = 1, i<12, i++)
 				var/turf/T = pick(get_area_turfs(/area/cadiaoutpost/new_hive/hive_city))
-
+				command_announcement.Announce("activeFor value is [activeFor]")
 				drop_mortar(T, mortar_type)
 				sleep(10)
 
