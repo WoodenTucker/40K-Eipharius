@@ -1,6 +1,5 @@
 /datum/event/mortar
 	announceWhen = 0
-	var/area/area_hit
 	startWhen	= 30
 	endWhen		= 150
 	announceWhen	= 0	
