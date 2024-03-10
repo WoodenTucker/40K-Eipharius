@@ -230,7 +230,7 @@ obj/mortar/flare/blue
 		S.start()
 	qdel(src)
 
-/obj/mortar/arty/plasma
+/*/obj/mortar/arty/plasma
 	name = "Plasma Artillery Shell"
 	desc = "You'll never see this it just explodes."
 	fragment_types = list(/obj/item/projectile/energy/pulse/pulserifle)
@@ -239,7 +239,7 @@ obj/mortar/flare/blue
 	..()
 	sleep(0)
 	fragmentate(get_turf(src), 84)
-	qdel(src)
+	qdel(src)*/
 
 /obj/mortar/bombard //BIG GUN, be careful about how you use it.
 	name = "Bombard Artillery Shell"
@@ -268,7 +268,7 @@ obj/mortar/flare/blue
 
 /obj/mortar/deathstrike/New()
 	..()
-	playsound(source, 'sound/effects/siren.ogg', 100, TRUE)
+	playsound(get_turf(src), 'sound/effects/siren.ogg', 100, TRUE)
 	command_announcement.Announce("Warning. Deathstrike missile launch detected.")
 	sleep(120)
 	explosion(get_turf(src), 12, 18, 22, 24, 26)
