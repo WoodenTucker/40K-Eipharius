@@ -167,11 +167,20 @@ obj/mortar/flare/blue
 	new flare_type(loc)
 	qdel(src)
 
-/obj/mortar/arty
+/obj/mortar/arty //Template object
 	name = "Artillery Shell"
 	desc = "You'll never see this it just explodes."
 
 /obj/mortar/arty/New()
+	..()
+	sleep(0)
+	qdel(src)
+
+/obj/mortar/arty/shrapnel
+	name = "Shrapnel Artillery Shell"
+	desc = "You'll never see this it just explodes."
+
+/obj/mortar/arty/shrapnel/New()
 	..()
 	sleep(0)
 	fragmentate(get_turf(src), 84)
@@ -241,11 +250,20 @@ obj/mortar/flare/blue
 	fragmentate(get_turf(src), 84)
 	qdel(src)*/
 
-/obj/mortar/bombard //BIG GUN, be careful about how you use it.
+/obj/mortar/bombard //BIG GUN, be careful about how you use it. //Base template object.
 	name = "Bombard Artillery Shell"
 	desc = "You'll never see this it just explodes."
 
 /obj/mortar/bombard/New()
+	..()
+	sleep(0)
+	qdel(src)
+
+/obj/mortar/bombard/shrapnel 
+	name = "Bombard Shrapnel Artillery Shell"
+	desc = "You'll never see this it just explodes."
+
+/obj/mortar/bombard/shrapnel/New()
 	..()
 	sleep(0)
 	fragmentate(get_turf(src), 240)
