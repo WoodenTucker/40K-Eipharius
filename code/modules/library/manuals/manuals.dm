@@ -436,6 +436,10 @@
 				<h3>A discreet yet powerful magic weapon, perfect for self defense.</h3>
 				Lasgun powercell offered on a rune of Tzeentch.
 
+				<h2>Skinless Rite:</h2>
+				<h3>Convert a shambling corpse into an undead monstrosity.</h3>
+				Place a candle near a corpse and make it your servant.
+
 				<h2>Clothing Rite:</h2>
 				<h3>Summon the garb of Tzeentch, either magical armor(emerald), or one of four masks(ruby, sapphire, quartz or topaz) offered onto the rune.</h3>
 

@@ -188,10 +188,6 @@
 /obj/structure/crematorium{
 	id = 2
 	},
-/obj/machinery/button/crematorium{
-	pixel_y = 35;
-	id = 2
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
@@ -814,6 +810,13 @@
 	dir = 10
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
+"aRS" = (
+/obj/machinery/button/crematorium{
+	pixel_y = 35;
+	id = 2
+	},
+/turf/simulated/wall/castle,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "aTm" = (
 /obj/structure/closet/crate,
 /obj/item/ingots/goldingot,
@@ -1595,11 +1598,8 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "bGO" = (
-/obj/machinery/vending/medical{
-	name = "Mechanicus NanoMed Plus";
-	req_one_access = list(10,7,8)
-	},
 /obj/effect/floor_decal/newcorner/blue/solid,
+/obj/machinery/vending/medical,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -4046,6 +4046,13 @@
 	icon_state = "r_wall-2"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"eks" = (
+/obj/machinery/button/crematorium{
+	pixel_y = 35;
+	id = 3
+	},
+/turf/simulated/wall/castle,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "eli" = (
 /obj/effect/water/bottom{
 	color = "blue"
@@ -8857,6 +8864,13 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/new_hive/caves)
+"iJg" = (
+/obj/machinery/button/crematorium{
+	pixel_y = 35;
+	id = 4
+	},
+/turf/simulated/wall/castle,
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "iJR" = (
 /obj/random/junk,
 /obj/random/junk,
@@ -22717,10 +22731,6 @@
 /obj/structure/crematorium{
 	id = 3
 	},
-/obj/machinery/button/crematorium{
-	pixel_y = 35;
-	id = 3
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
@@ -23242,10 +23252,6 @@
 /area/cadiaoutpost/oa/farm)
 "wWp" = (
 /obj/structure/crematorium{
-	id = 4
-	},
-/obj/machinery/button/crematorium{
-	pixel_y = 35;
 	id = 4
 	},
 /turf/simulated/floor/fancyfloor/coralg,
@@ -46251,9 +46257,9 @@ tOB
 slE
 gXe
 gXe
-gXe
-gXe
-gXe
+iJg
+eks
+aRS
 cfC
 bai
 bai
