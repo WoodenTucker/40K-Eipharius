@@ -458,28 +458,35 @@ Area basic template
 	music = 'sound/newmusic/Caves_Terror.ogg'
 
 /area/cadiaoutpost/oa/dungeon2
-	name = "Necron Tomb P2 Lower Floor"
+	name = "Necron Tomb Lower Floor"
 	icon_state = "forwardpost"
 	requires_power = FALSE
 	dynamic_lighting = 1
 	music = 'sound/newmusic/lovecraft2.ogg'
 
 /area/cadiaoutpost/oa/dungeon3
-	name = "Necron Tomb P2 Upper Floor"
+	name = "Necron Tomb Upper Floor"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/Caves_Terror.ogg'
+
+/area/cadiaoutpost/oa/dungeon3a
+	name = "Necron Tomb Upper Floor Fog"
 	icon_state = "forwardpost"
 	requires_power = FALSE
 	dynamic_lighting = 1
 	music = 'sound/newmusic/Caves_Terror.ogg'
 
 /area/cadiaoutpost/oa/dungeon4
-	name = "Necron Tomb P3 Finale"
+	name = "Necron Lower End"
 	icon_state = "forwardpost"
 	requires_power = FALSE
 	dynamic_lighting = 1
 	music = 'sound/newmusic/lovecraft2.ogg'
 
 /area/cadiaoutpost/oa/mechanicusdig
-	name = "Necron Mechanicus Site"
+	name = "Necron Mechanicus Digsite"
 	icon_state = "forwardpost"
 	requires_power = FALSE
 	dynamic_lighting = 1
@@ -493,6 +500,91 @@ Area basic template
 	music = 'sound/newmusic/Caves_Terror.ogg'
 
 
+// New Dungeons
+
+/area/cadiaoutpost/oa/wilds
+	name = "Wilderness"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/WILDERNESS.ogg'
+
+/area/cadiaoutpost/oa/wilds/deathfog
+	name = "Wilderness Death Fog"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/WILDERNESS.ogg'
+
+/area/cadiaoutpost/oa/wilds/dungeonlower // A general miasma of death. No screen effect. Minimal status debuffs.
+	name = "Dungeon Lower"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/DUNGEONLOWER.ogg'
+
+/area/cadiaoutpost/oa/wilds/dungeonlower/deathfog // A fullscreen fog and harsher penalties for those without a mask. One will absolutely die without a mask in these areas. The corrosive effects eat through air filters. 
+	name = "Dungeon Lower Death Fog"
+	icon_state = "forwardpost"
+	requires_power = FALSE
+	dynamic_lighting = 1
+	music = 'sound/newmusic/DUNGEONLOWER.ogg'
+
+/*
+/area/cadiaoutpost/oa/wilds/deathfog/Entered(mob/living/carbon/L, atom/A)
+	. = ..()
+	if(src.consecrated == TRUE)
+		if(prob(5))
+			if(prob(5))
+				to_chat(L, "<span class='flick-holy'>+ I can feel His presence here... +</span>")
+				L.happiness += 3
+				M.make_jittery(1)
+				M.make_dizzy(1)
+		else
+			L.flash_weakest_pain()
+			to_chat(L, "<span class='horror-text'>+ I can feel His presence here... +</span> ")
+			L.happiness -= 3
+			sleep(3 SECONDS)
+			//not going to be fun if they stay
+			L.danger_timer = addtimer(CALLBACK(L, /mob/living/carbon/human/.proc/overstayed), 35 SECONDS, TIMER_STOPPABLE|TIMER_UNIQUE|TIMER_NO_HASH_WAIT|TIMER_OVERRIDE)
+			to_chat(L, "<span class='horror-text'>+ I HAVE TO GET OUT OF HERE +</span> ")
+*/
+// MASK CODES
+
+/*
+/mob/living/carbon/human/proc/handle_gas_mask_sound()
+	if(wear_mask)
+		remove_coldbreath()
+	if(stat == DEAD)
+		return
+	if(istype(wear_mask, /obj/item/clothing/mask/gas))
+		var/mask_sound = pick('sound/effects/gasmask1.ogg','sound/effects/gasmask2.ogg','sound/effects/gasmask3.ogg','sound/effects/gasmask4.ogg','sound/effects/gasmask5.ogg','sound/effects/gasmask6.ogg','sound/effects/gasmask7.ogg','sound/effects/gasmask8.ogg','sound/effects/gasmask9.ogg','sound/effects/gasmask10.ogg')
+		playsound(src, mask_sound, 50, 1)
+
+if(istype(user.wear_mask, /obj/item/clothing/mask/muzzle))
+*/
+
+/area/cadiaoutpost/oa/wilds/deathfog/Entered(mob/living/L,  atom/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))//Doesn't work but this does stop the lag.
+		L.overlay_fullscreen("fog", /obj/screen/fullscreen/fog)
+
+/area/cadiaoutpost/oa/wilds/deathfog/Exited(mob/living/L, area/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))
+		L.clear_fullscreen("fog")
+
+/area/cadiaoutpost/oa/wilds/dungeonlower/deathfog/Entered(mob/living/L,  atom/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))//Doesn't work but this does stop the lag.
+		L.overlay_fullscreen("fog", /obj/screen/fullscreen/fog)
+
+/area/cadiaoutpost/oa/wilds/dungeonlower/deathfog/Exited(mob/living/L, area/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))
+		L.clear_fullscreen("fog")
+
+// AREA CODES
 /area/cadiaoutpost/oa/dungeon1/Entered(mob/living/L,  atom/A)
 	. = ..()
 	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))//Doesn't work but this does stop the lag.
@@ -503,15 +595,35 @@ Area basic template
 	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))//Doesn't work but this does stop the lag.
 		L.overlay_fullscreen("fog", /obj/screen/fullscreen/fog)
 
+/area/cadiaoutpost/oa/dungeon1/Exited(mob/living/L, area/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))
+		L.clear_fullscreen("fog")
+
+/area/cadiaoutpost/oa/dungeon2/Exited(mob/living/L, area/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))
+		L.clear_fullscreen("fog")
+
 /area/cadiaoutpost/oa/dungeon3/Entered(mob/living/L,  atom/A)
 	. = ..()
 	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))//Doesn't work but this does stop the lag.
 		L.overlay_fullscreen("ashfall_light", /obj/screen/fullscreen/storm)
 
+/area/cadiaoutpost/oa/dungeon3/Exited(mob/living/L, area/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))
+		L.clear_fullscreen("ashfall_light")
+
 /area/cadiaoutpost/oa/dungeon4/Entered(mob/living/L,  atom/A)
 	. = ..()
 	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))//Doesn't work but this does stop the lag.
 		L.overlay_fullscreen("ashfall_heavy", /obj/screen/fullscreen/stormheavy)
+
+/area/cadiaoutpost/oa/dungeon4/Exited(mob/living/L, area/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))
+		L.clear_fullscreen("ashfall_heavy")
 
 /area/cadiaoutpost/oa/theforest/Entered(mob/living/L,  atom/A)
 	. = ..()
@@ -522,6 +634,38 @@ Area basic template
 	. = ..()
 	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))
 		L.clear_fullscreen("snowfall_heavy_old")
+
+/area/cadiaoutpost/oa/dungeon3a/Entered(mob/living/L,  atom/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))//Doesn't work but this does stop the lag.
+		L.overlay_fullscreen("ashfall_heavy", /obj/screen/fullscreen/stormheavy)
+
+
+/area/cadiaoutpost/oa/dungeon3a/Crossed(AM as mob|obj)
+	if (ismob(AM))
+		var/mob/M = AM
+		if (ishuman(M))
+			var/mob/living/carbon/human/H = M
+			if (prob (5))
+				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
+				if (affecting.status & ORGAN_ROBOT)
+					return
+				if (affecting.take_damage(13, FALSE))
+					H.UpdateDamageIcon()
+				H.updatehealth()
+			else
+				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
+				if (affecting.status & ORGAN_ROBOT)
+					return
+				if (affecting.take_damage(0, FALSE))
+					H.UpdateDamageIcon()
+				H.updatehealth()
+	return ..()
+
+/area/cadiaoutpost/oa/dungeon3a/Exited(mob/living/L, area/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))
+		L.clear_fullscreen("ashfall_heavy")
 /*
 /area/cadiaoutpost/oa/village/Entered(mob/living/L,  atom/A)
 	. = ..()
@@ -604,19 +748,19 @@ Area basic template
 	requires_power = FALSE
 
 /area/cadiaoutpost/oa/security/armory
-	name = "Armory"
+	name = "PDF Lower"
 	icon_state = "armory"
 	music = 'sound/newmusic/Outpost1.ogg'
 	requires_power = FALSE
 
 /area/cadiaoutpost/oa/security/barracks
-	name = "Barracks"
+	name = "Magistratum"
 	icon_state = "barracks"
 	music = 'sound/newmusic/Outpost1.ogg'
 	requires_power = FALSE
 
 /area/cadiaoutpost/oa/security/brig
-	name = "Brig"
+	name = "PDF Upper"
 	icon_state = "brig"
 	music = 'sound/newmusic/Outpost1.ogg'
 	requires_power = FALSE
@@ -1765,13 +1909,13 @@ Area basic template
 	requires_power = 0
 
 /area/cadiaoutpost/oa/shuttle/station1
-	name = "Station"
+	name = "Station Lower Floor"
 	icon_state = "shuttle"
 	music = 'sound/newmusic/Lab_Experiment.ogg'
 	requires_power = 0
 
 /area/cadiaoutpost/oa/shuttle/station2
-	name = "Station"
+	name = "Station Upper Floor"
 	icon_state = "shuttle"
 	music = 'sound/newmusic/Lab_Experiment.ogg'
 	requires_power = 0
@@ -1783,7 +1927,7 @@ Area basic template
 	requires_power = 0
 
 /area/cadiaoutpost/oa/shuttle/mechiferry
-	name = "Station"
+	name = "Mech Ele"
 	icon_state = "shuttle"
 	music = 'sound/newmusic/Outpost1.ogg'
 	requires_power = 0
