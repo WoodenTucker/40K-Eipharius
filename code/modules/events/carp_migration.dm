@@ -27,9 +27,8 @@
 /datum/event/carp_migration/proc/spawn_fish(var/num_groups, var/group_size_min=3, var/group_size_max=5)
 	var/list/spawn_locations = list()
 
-	for(var/obj/effect/landmark/C in landmarks_list)
-		if(C.name == "carpspawn")
-			spawn_locations.Add(C.loc)
+	for(/area/cadiaoutpost/new_hive/hive_city/H)
+			spawn_locations.Add(H.loc)
 	spawn_locations = shuffle(spawn_locations)
 	num_groups = min(num_groups, spawn_locations.len)
 
