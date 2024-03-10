@@ -1,5 +1,5 @@
 /**********
-* Gravity *
+* Mortars *
 **********/
 /datum/admin_secret_item/random_event/mortars
 	name = "Heretic Mortar Barrage"
