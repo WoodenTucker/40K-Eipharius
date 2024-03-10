@@ -1,6 +1,6 @@
 /datum/event/mortar
 	announceWhen = 0
-	startWhen	= 30
+	startWhen = 30
 	endWhen = 150
 
 /datum/event/mortar/setup()
