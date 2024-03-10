@@ -37,12 +37,14 @@
 /datum/event_container/mundane
 	available_events = list(
 		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Mortars",/datum/event/mortar,5),
-		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Carp",/datum/event/carp_migration,5)
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Carp",/datum/event/carp_migration,5)m
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None",/datum/event/no_event,25)
 		)
 
 /datum/event_container/moderate
 	available_events = list(
 		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Mortars",/datum/event/mortar,10),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None",/datum/event/no_event,25),
 		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Gravity",/datum/event/gravity,10)
 	)
 
@@ -50,5 +52,6 @@
 	available_events = list(
 		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Mortars",/datum/event/mortar,25),
 		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Carp",/datum/event/carp_migration,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None",/datum/event/no_event,25),
 		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Zombies",/datum/event/zombies,25)
 	)
