@@ -9,13 +9,8 @@
 /datum/event/mortar/announce()
 	command_announcement.Announce("PDF Outposts are reporting incoming indirect fire from Heretical forces. All citizens should take cover within a secure building.")
 
-
-/datum/event/mortar/end()
-	command_announcement.Announce("PDF Outposts are reporting that the fire has ceased. You may exit your buildings, but are advised to take care.")
-
 /datum/event/mortar/start()
 	to_chat(world, uppertext("<font size=5><b>INCOMING!!</b></font>"))
-
 
 /datum/event/mortar/tick()
 	var/mortar_type = pick("frag", "fire", "arty")
@@ -63,3 +58,6 @@
 
 				drop_mortar(T, mortar_type)
 				sleep(10)
+
+/datum/event/mortar/end()
+	command_announcement.Announce("PDF Outposts are reporting that the fire has ceased. You may exit your buildings, but are advised to take care.")
