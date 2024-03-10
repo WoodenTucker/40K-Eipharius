@@ -15,6 +15,8 @@
 	if(!.)
 		return
 
+	var/choice = input(user, "Are you certain? This cannot be cancelled, make sure not to spam it.") in list("Yes", "No")
+
 	feedback_inc("admin_secrets_fun_used",1)
 	feedback_add_details("admin_secrets_fun_used","Mortars")
 	log_and_message_admins("Launched Mortar Fire")
