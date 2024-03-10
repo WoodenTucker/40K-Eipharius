@@ -15,11 +15,11 @@
 /datum/event/mortar/start()
 	to_chat(world, uppertext("<font size=5><b>INCOMING!!</b></font>"))
 
-/datum/event/mortar/proc/tick()
+/datum/event/mortar/tick()
 	var/mortar_type = pick("gas", "frag", "fire", "arty")
 	for(var/i = 1, i<4, i++)
 	sound_to(world, 'sound/effects/arty_distant.ogg')
-		sleep(30)
+	sleep(30)
 
 	switch(mortar_type)
 		if("frag")
