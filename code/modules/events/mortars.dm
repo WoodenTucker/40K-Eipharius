@@ -1,6 +1,7 @@
 /datum/event/mortar
 	announceWhen = 0
 	startWhen	= 30
+	var/waves = 0
 
 /datum/event/mortar/setup()
 	endWhen = 150
@@ -14,11 +15,14 @@
 
 /datum/event/mortar/start()
 	to_chat(world, uppertext("<font size=5><b>INCOMING!!</b></font>"))
+	waves = rand(3,7)
 
 /datum/event/mortar/tick()
 	var/mortar_type = pick("frag", "fire", "arty")
 	for(var/i = 1, i<4, i++)
 	sound_to(world, 'sound/effects/arty_distant.ogg')
+	if(waves = 0)
+		/datum/event/mortar/end()
 	sleep(30)
 
 	switch(mortar_type)
@@ -31,6 +35,7 @@
 
 				drop_mortar(T, mortar_type)
 				sleep(10)
+				waves -= 1
 
 /*		if("gas")
 			sleep(10)
@@ -51,6 +56,7 @@
 
 				drop_mortar(T, mortar_type)
 				sleep(10)
+				waves -= 1
 
 		if("arty")
 			sleep(10)
@@ -61,3 +67,4 @@
 
 				drop_mortar(T, mortar_type)
 				sleep(10)
+				waves -= 1
