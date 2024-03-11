@@ -301,7 +301,7 @@
 
 	speed = 1.2
 
-/mob/living/simple_animal/construct/playerdaemonhost/dragon
+/mob/living/simple_animal/hostile/dragon
 	name = "Red Drake"
 	real_name = "Red Drake" 
 	desc = "It's a horrifyingly enormous daemon..."
@@ -312,20 +312,14 @@
 	icon_gib = "syndicate_gib"
 	maxHealth = 4000
 	health = 4000
-	harm_intent_damage = 80
-	melee_damage_upper = 100
-	melee_damage_lower = 80
+	harm_intent_damage = 50
+	melee_damage_upper = 70
+	melee_damage_lower = 30
 	attacktext = "torn"
 	faction = "Chaos"
 	pixel_x = -32
 	environment_smash = 2
-	construct_spells = list(/spell/targeted/projectile/dumbfire/fireball, /spell/targeted/ethereal_jaunt)
-	speed = 1.5
-
-/mob/living/simple_animal/construct/playerdaemonhost/dragon/death()
-	new /obj/item/ectoplasm (get_turf(src))
-	..(null, "disappears!")
-	qdel(src)
+	speed = 1.4
 
 
 /mob/living/simple_animal/construct/playerdaemonhost/elderthing

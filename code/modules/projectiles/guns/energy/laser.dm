@@ -827,7 +827,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 /obj/item/gun/energy/pulse/plasma/rifle/New()
 	..()
-	slowdown_per_slot[slot_back] = 0.1
+	slowdown_per_slot[slot_back] = 0.15
 	slowdown_per_slot[slot_wear_suit] = 0.2
 	slowdown_per_slot[slot_belt] = 0.2
 	slowdown_per_slot[slot_r_hand] = 0.41
@@ -847,14 +847,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		list(mode_name="ATAP", fire_delay=15, projectile_type=/obj/item/projectile/energy/pulse/plasmarifle, charge_cost=500),
 		list(mode_name="HEDP", fire_delay = 32, projectile_type=/obj/item/projectile/energy/pulse/plasmapistol/overcharge, charge_cost=900),
 		)
-
-/obj/item/gun/energy/pulse/plasma/rifle/New()
-	..()
-	slowdown_per_slot[slot_back] = 0.1
-	slowdown_per_slot[slot_wear_suit] = 0.15
-	slowdown_per_slot[slot_belt] = 0.15
-	slowdown_per_slot[slot_r_hand] = 0.32
-	slowdown_per_slot[slot_l_hand] = 0.32
 
 /obj/item/gun/energy/pulse/plasma/pistol
 	name = "plasma pistol"
@@ -882,11 +874,11 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 /obj/item/gun/energy/pulse/plasma/pistol/New()
 	..()
-	slowdown_per_slot[slot_back] = 0.05
-	slowdown_per_slot[slot_wear_suit] = 0.1
-	slowdown_per_slot[slot_belt] = 0.1
-	slowdown_per_slot[slot_r_hand] = 0.3
-	slowdown_per_slot[slot_l_hand] = 0.3
+	slowdown_per_slot[slot_back] = 0.1
+	slowdown_per_slot[slot_wear_suit] = 0.15
+	slowdown_per_slot[slot_belt] = 0.15
+	slowdown_per_slot[slot_r_hand] = 0.33
+	slowdown_per_slot[slot_l_hand] = 0.33
 
 /obj/item/gun/energy/pulse/plasma/pistol/astartes
 	name = "astartes plasma pistol"

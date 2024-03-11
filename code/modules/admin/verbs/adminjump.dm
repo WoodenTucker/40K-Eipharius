@@ -99,6 +99,9 @@
 		return
 	if(config.allow_admin_jump)
 		M.jumpTo(get_turf(mob))
+		M.make_jittery(5)
+		M.make_dizzy(5)
+		M.Weaken(8)
 		feedback_add_details("admin_verb","GM") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 	else
 		alert("Admin jumping disabled")

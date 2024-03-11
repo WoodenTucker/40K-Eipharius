@@ -7448,10 +7448,6 @@
 /obj/item/gun/projectile/eldar/scatapult,
 /turf/simulated/floor,
 /area/space)
-"OC" = (
-/obj/mecha/combat/gygax/xenostank,
-/turf/space,
-/area/space)
 "OD" = (
 /obj/structure/bed/chair/pew,
 /obj/machinery/light{
@@ -23152,7 +23148,7 @@ ax
 ax
 ax
 ax
-OC
+ax
 ax
 ax
 ax

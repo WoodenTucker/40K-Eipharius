@@ -3,10 +3,10 @@
 	name = "Eipharius"
 	full_name = "Eipharius"
 	path = "warhammer"
-	station_name  = "Capital City Messina"
+	station_name  = "Greater Messia"
 	station_short = "Eipharius"
 	dock_name     = "Eipharius"
-	boss_name     = "Segmentum Command"
+	boss_name     = "Command"
 	boss_short    = "SC"
 	company_name  = "Imperium of Man"
 	company_short = "Imperium"
@@ -36,24 +36,41 @@
 //Overriding event containers to remove random events.
 /datum/event_container/mundane
 	available_events = list(
-		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Mortars1",/datum/event/mortar,100),
-		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Mortars2",/datum/event/mortar,100),
-		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Mortars3",/datum/event/mortar,100),
-		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Mortars4",/datum/event/mortar,100)
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Mortars",/datum/event/mortar,5),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Carp",/datum/event/carp_migration,5),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None",/datum/event/no_event,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None2",/datum/event/no_event,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None3",/datum/event/no_event,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None4",/datum/event/no_event,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None5",/datum/event/no_event,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None6",/datum/event/no_event,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None7",/datum/event/no_event,25)
 		)
 
 /datum/event_container/moderate
 	available_events = list(
-		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Mortars1",/datum/event/mortar,100),
-		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Mortars2",/datum/event/mortar,100),
-		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Mortars3",/datum/event/mortar,100),
-		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Mortars4",/datum/event/mortar,100)
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Mortars",/datum/event/mortar,10),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None",/datum/event/no_event,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None2",/datum/event/no_event,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None3",/datum/event/no_event,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None3",/datum/event/no_event,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None4",/datum/event/no_event,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None5",/datum/event/no_event,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None6",/datum/event/no_event,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None7",/datum/event/no_event,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Gravity",/datum/event/gravity,10)
 	)
 
 /datum/event_container/major
 	available_events = list(
-		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Mortars1",/datum/event/mortar,100),
-		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Mortars2",/datum/event/mortar,100),
-		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Mortars3",/datum/event/mortar,100),
-		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Mortars4",/datum/event/mortar,100)
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Mortars",/datum/event/mortar,25),
+		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Carp",/datum/event/carp_migration,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None",/datum/event/no_event,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None2",/datum/event/no_event,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None3",/datum/event/no_event,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None3",/datum/event/no_event,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None4",/datum/event/no_event,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None5",/datum/event/no_event,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None6",/datum/event/no_event,25),
+		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "None7",/datum/event/no_event,25)
 	)
