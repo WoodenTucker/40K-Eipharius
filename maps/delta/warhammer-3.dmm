@@ -1069,15 +1069,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"aSO" = (
-/obj/machinery/door/blast/shutters{
-	dir = 8;
-	name = "East Imperial District Blast Door";
-	id = "east";
-	begins_closed = 0
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/villageinside)
 "aTd" = (
 /obj/structure/barbwire{
 	color = "grey"
@@ -5371,18 +5362,6 @@
 	},
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/bridge/hallway)
-"eqw" = (
-/obj/effect/floor_decal/newcorner/stone/corner{
-	dir = 8
-	},
-/obj/machinery/door/blast/shutters{
-	dir = 2;
-	name = "East Imperial District Blast Door";
-	id = "east";
-	begins_closed = 0
-	},
-/turf/simulated/floor/fancyfloor/oldcobble,
-/area/cadiaoutpost/oa/villageinside)
 "eqQ" = (
 /obj/item/reagent_containers/food/drinks/glass2/rocks{
 	pixel_y = 6;
@@ -8360,18 +8339,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/farm)
-"gCP" = (
-/obj/effect/floor_decal/newcorner/stone{
-	dir = 8
-	},
-/obj/machinery/door/blast/shutters{
-	dir = 8;
-	name = "East Imperial District Blast Door";
-	id = "east";
-	begins_closed = 0
-	},
-/turf/simulated/floor/fancyfloor/oldcobble,
-/area/cadiaoutpost/oa/villageinside)
 "gCQ" = (
 /obj/effect/floor_decal/turf/metal/five,
 /obj/machinery/light/small{
@@ -13134,12 +13101,6 @@
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 8
 	},
-/obj/machinery/door/blast/shutters{
-	dir = 8;
-	name = "East Imperial District Blast Door";
-	id = "east";
-	begins_closed = 0
-	},
 /turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/villageinside)
 "kdP" = (
@@ -15070,17 +15031,14 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "lDN" = (
-/obj/effect/floor_decal/newcorner/stone{
-	dir = 10
+/obj/effect/floor_decal/turf/splate,
+/obj/structure/sign/imperial{
+	pixel_x = 32
 	},
-/obj/machinery/door/blast/shutters{
-	dir = 2;
-	name = "East Imperial District Blast Door";
-	id = "east";
-	begins_closed = 0
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/turf/simulated/floor/fancyfloor/oldcobble,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "lDR" = (
 /obj/structure/bed/chair/stool2{
 	icon_state = "barstool";
@@ -19030,16 +18988,6 @@
 	pixel_y = 9
 	},
 /obj/structure/table/steel_reinforced,
-/obj/machinery/button/remote/blast_door/lever{
-	name = "LOCKDOWN WHOLE DISTRICT";
-	id = "east";
-	pixel_x = 8
-	},
-/obj/machinery/button/remote/blast_door/lever{
-	name = "West Shutter";
-	id = "west";
-	pixel_x = -8
-	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/villageinside)
 "oJm" = (
@@ -19325,11 +19273,6 @@
 	pixel_y = 8
 	},
 /obj/structure/table/graf/shrine,
-/obj/machinery/button/remote/blast_door/id_scan{
-	name = "LOCKDOWN!!!";
-	id = "east";
-	req_one_access = list(2,1984)
-	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -19904,18 +19847,6 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel)
-"pst" = (
-/obj/effect/floor_decal/newcorner/stone/corner{
-	dir = 4
-	},
-/obj/machinery/door/blast/shutters{
-	dir = 2;
-	name = "East Imperial District Blast Door";
-	id = "east";
-	begins_closed = 0
-	},
-/turf/simulated/floor/fancyfloor/oldcobble,
-/area/cadiaoutpost/oa/villageinside)
 "psP" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/effect/floor_decal/newcorner/reinforced/corner,
@@ -24680,12 +24611,6 @@
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 8
 	},
-/obj/machinery/door/blast/shutters{
-	dir = 8;
-	name = "East Imperial District Blast Door";
-	id = "east";
-	begins_closed = 0
-	},
 /turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/villageinside)
 "sVJ" = (
@@ -27655,15 +27580,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"vie" = (
-/obj/machinery/door/blast/shutters{
-	dir = 8;
-	name = "East Imperial District Blast Door";
-	id = "east";
-	begins_closed = 0
-	},
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/villageinside)
 "vii" = (
 /turf/simulated/floor/fancyfloor/marble,
 /area/cadiaoutpost/oa/villageinside)
@@ -28335,15 +28251,6 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/engineering/engine)
-"vzX" = (
-/obj/machinery/door/blast/shutters{
-	dir = 2;
-	name = "East Imperial District Blast Door";
-	id = "east";
-	begins_closed = 0
-	},
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/villageinside)
 "vAy" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 8
@@ -30843,14 +30750,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/medicae)
-"xEB" = (
-/obj/machinery/door/blast/shutters/open{
-	name = "West Imperial District Blast Door";
-	dir = 4;
-	id = "west"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/villageinside)
 "xEC" = (
 /obj/structure/bed/chair/wood/simple{
 	dir = 4
@@ -31336,17 +31235,14 @@
 /turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/service/inn)
 "yay" = (
-/obj/effect/floor_decal/newcorner/stone{
-	dir = 5
+/obj/effect/floor_decal/turf/splate,
+/obj/structure/sign/imperial{
+	pixel_x = 32
 	},
-/obj/machinery/door/blast/shutters{
-	dir = 2;
-	name = "East Imperial District Blast Door";
-	id = "east";
-	begins_closed = 0
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
 	},
-/turf/simulated/floor/fancyfloor/oldcobble,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/shuttle/station1)
 "yaK" = (
 /obj/structure/torchwall{
 	dir = 8;
@@ -39228,44 +39124,44 @@ jon
 jon
 fde
 hFd
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
-pLj
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
+pEx
+vAK
+vAK
+vAK
+pEx
+vAK
+vAK
+vAK
+vAK
+vAK
+vAK
 pLj
 soS
 xov
@@ -42049,7 +41945,7 @@ vAK
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -42301,7 +42197,7 @@ vAK
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 pEx
@@ -42553,7 +42449,7 @@ vAK
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -42805,7 +42701,7 @@ vAK
 vAK
 vAK
 qfr
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -43057,7 +42953,7 @@ qfr
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -43309,7 +43205,7 @@ vAK
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -43561,7 +43457,7 @@ vAK
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -43813,7 +43709,7 @@ vAK
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -44065,7 +43961,7 @@ pEx
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -44317,7 +44213,7 @@ vAK
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -44499,10 +44395,10 @@ bEN
 eDb
 uOj
 wNM
-wNM
+lDN
 wNM
 vaq
-wNM
+lDN
 tXZ
 oYE
 mfF
@@ -44513,10 +44409,10 @@ uOj
 mfF
 oYE
 osH
-lIK
+yay
 rRD
 lIK
-lIK
+yay
 vzC
 fde
 hFd
@@ -44569,7 +44465,7 @@ vAK
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -44821,7 +44717,7 @@ vAK
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 qfr
@@ -45073,7 +44969,7 @@ vAK
 vAK
 ifR
 vAK
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -45325,7 +45221,7 @@ vAK
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -45528,10 +45424,10 @@ jBp
 jBp
 tNW
 tNW
-xEB
-xEB
-xEB
-xEB
+qox
+qox
+qox
+qox
 pLj
 pLj
 pLj
@@ -45577,7 +45473,7 @@ vAK
 vAK
 vAK
 qfr
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -45829,7 +45725,7 @@ vAK
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -46081,7 +45977,7 @@ pEx
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -46333,7 +46229,7 @@ vAK
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -46585,7 +46481,7 @@ vAK
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -46837,7 +46733,7 @@ vAK
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -47089,7 +46985,7 @@ vAK
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -47341,7 +47237,7 @@ vAK
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -47544,10 +47440,10 @@ nSI
 bwI
 tNW
 tNW
-aSO
-aSO
-aSO
-aSO
+qox
+qox
+qox
+qox
 pLj
 pLj
 uHZ
@@ -48311,8 +48207,8 @@ pLj
 pLj
 pLj
 pLj
-vie
-vie
+fXX
+fXX
 pLj
 udB
 eIl
@@ -50332,7 +50228,7 @@ gQh
 gQh
 lsb
 tTQ
-lDN
+wmy
 wmy
 mDA
 mDA
@@ -50584,7 +50480,7 @@ wmm
 xKV
 gQh
 gQh
-pst
+lsb
 gQh
 wmy
 mDA
@@ -50836,7 +50732,7 @@ mDA
 lvK
 gQh
 gQh
-eqw
+xKV
 gQh
 lsb
 tTQ
@@ -51088,7 +50984,7 @@ mDA
 eZO
 wmm
 wmm
-yay
+eZO
 gQh
 gQh
 gQh
@@ -51116,7 +51012,7 @@ vAK
 vAK
 vAK
 vAK
-vzX
+vAK
 vAK
 vAK
 vAK
@@ -51368,7 +51264,7 @@ mDA
 vAK
 vAK
 vAK
-vzX
+vAK
 vAK
 vAK
 vAK
@@ -52350,7 +52246,7 @@ sWO
 cBq
 hFd
 sVC
-gCP
+wmm
 kdF
 pLj
 vAK
@@ -54390,7 +54286,7 @@ vAK
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -54642,7 +54538,7 @@ vAK
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -54894,7 +54790,7 @@ vAK
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -55146,7 +55042,7 @@ qfr
 vAK
 vAK
 qfr
-pLj
+vAK
 vAK
 vAK
 vAK
@@ -55398,7 +55294,7 @@ vAK
 vAK
 vAK
 vAK
-pLj
+vAK
 vAK
 vAK
 vAK
