@@ -298,7 +298,7 @@ SUBSYSTEM_DEF(vote)
 
 /datum/controller/subsystem/vote/proc/initiate_vote(var/vote_type, var/initiator_key, var/automatic = 0)
 	if(!mode)
-		if(started_time != null && !(check_rights(R_ADMIN) || automatic))
+		if(started_time != null && !(check_rights(R_ADMIN|R_MOD|R_MENTOR) || automatic))
 			var/next_allowed_time = (started_time + config.vote_delay)
 			if(next_allowed_time > world.time)
 				return 0
