@@ -1780,7 +1780,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "bzp" = (
 /obj/item/melee/sword/choppa{
 	color = "red";
@@ -2966,7 +2966,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "cwz" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/random/gloves,
@@ -3930,7 +3930,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "djo" = (
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/dark{
@@ -5131,7 +5131,7 @@
 	color = "grey";
 	icon_state = "wall3"
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "ehe" = (
 /obj/machinery/door/unpowered/inn/berryfarm{
 	req_one_access = list(247,225);
@@ -7792,7 +7792,7 @@
 	icon_state = "propulsion"
 	},
 /turf/simulated/floor/plating/reinforced,
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "gfx" = (
 /obj/structure/torchwall{
 	pixel_y = 30
@@ -7865,7 +7865,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "ghM" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled{
@@ -8162,7 +8162,7 @@
 	icon_state = "plating"
 	},
 /turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "guq" = (
 /obj/structure/sewers/wallholebigbrk,
 /turf/simulated/wall/concrete,
@@ -8239,7 +8239,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "gxj" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 4
@@ -9102,6 +9102,12 @@
 /mob/living/simple_animal/hostile/retaliate/rat,
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/engineering/engine)
+"heD" = (
+/obj/effect/floor_decal/turf/metal/six,
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/magosship2)
 "heZ" = (
 /obj/structure/window/fantasy{
 	icon_state = "windowwood2";
@@ -9624,7 +9630,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "hyE" = (
 /obj/structure/warfare/barricade/concrete_barrier/sandbag{
 	icon_state = "ends-e-w-s";
@@ -9725,7 +9731,7 @@
 	icon = 'icons/map_project/windows.dmi';
 	icon_state = "r_window"
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "hDL" = (
 /obj/machinery/door/unpowered/inn,
 /turf/simulated/floor/stone,
@@ -11547,7 +11553,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "iYV" = (
 /obj/structure/stairs/south,
 /turf/simulated/floor/tiled/dark,
@@ -11649,7 +11655,7 @@
 	color = "grey";
 	dir = 8
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "jcY" = (
 /obj/structure/girder/reinforced,
 /turf/simulated/floor/plating,
@@ -12019,7 +12025,7 @@
 	color = "grey";
 	icon_state = "wall3"
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "joq" = (
 /obj/machinery/door/airlock/hatch/simiel{
 	name = "Bridge";
@@ -12711,7 +12717,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "jOZ" = (
 /obj/effect/water/bottom{
 	color = "blue"
@@ -13317,6 +13323,14 @@
 /obj/item/broken_bottle,
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/hive_city)
+"kkV" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/magosship2)
 "klb" = (
 /obj/machinery/light/stolb{
 	on = 1
@@ -14505,7 +14519,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "liC" = (
 /obj/structure/landmine,
 /turf/simulated/floor/dirty,
@@ -14824,7 +14838,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "lvF" = (
 /obj/effect/floor_decal/corner/white/diagonal,
 /turf/simulated/floor/tiled/dark{
@@ -14947,7 +14961,7 @@
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/shuttle/station1)
+/area/cadiaoutpost/magosship2)
 "lzR" = (
 /obj/effect/floor_decal/newcorner/stone/corner,
 /obj/machinery/light/small{
@@ -15645,7 +15659,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "lUK" = (
 /obj/structure/closet,
 /obj/effect/floor_decal/newcorner/plating{
@@ -15881,7 +15895,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "mcJ" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 4
@@ -16507,7 +16521,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "mFi" = (
 /obj/structure/table/graf/reinf_table{
 	icon_state = "table_horizontal2";
@@ -17138,7 +17152,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "ngH" = (
 /obj/machinery/portable_atmospherics/hydroponics/soil,
 /turf/simulated/floor/dirty,
@@ -20506,6 +20520,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"pQH" = (
+/obj/effect/floor_decal/industrial/warning_red,
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/magosship2)
 "pQK" = (
 /obj/structure/warfare/barricade/concrete_barrier{
 	dir = 8
@@ -22395,7 +22415,7 @@
 	icon = 'icons/map_project/windows.dmi';
 	icon_state = "r_window"
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "rje" = (
 /obj/effect/floor_decal/newcorner/plating/quarter{
 	dir = 8
@@ -22676,7 +22696,7 @@
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "rsV" = (
 /obj/structure/warfare/barricade/sandbag{
 	dir = 4
@@ -24131,7 +24151,7 @@
 /turf/simulated/shuttle/wall/corner/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "sDK" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -24591,7 +24611,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "sVn" = (
 /obj/item/pyre/self_lit{
 	invisibility = 100;
@@ -25275,7 +25295,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "tyP" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 8;
@@ -27028,6 +27048,11 @@
 /obj/item/grenade_dud,
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/wilds)
+"uQq" = (
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/magosship2)
 "uQt" = (
 /obj/item/tray{
 	pixel_x = -6;
@@ -28121,6 +28146,14 @@
 	integrity = 3500
 	},
 /area/cadiaoutpost/oa/service/inn)
+"vxo" = (
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 1
+	},
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/magosship2)
 "vxt" = (
 /turf/simulated/floor/fancyfloor/carpet/green{
 	dir = 10
@@ -28474,7 +28507,7 @@
 	color = "grey";
 	icon_state = "wall3"
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "vIN" = (
 /obj/effect/water/bottom{
 	color = "blue"
@@ -28586,7 +28619,7 @@
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
-/area/cadiaoutpost/magosship2)
+/area/cadiaoutpost/oa/shuttle/magos)
 "vPs" = (
 /obj/effect/floor_decal/newcorner/nbar/corner{
 	dir = 1
@@ -37602,14 +37635,14 @@ vvX
 qxP
 keE
 ePM
-ong
-ong
-ong
-ong
-ong
-ong
-ong
-ong
+kkV
+kkV
+kkV
+kkV
+kkV
+kkV
+kkV
+kkV
 fde
 hFd
 vAK
@@ -37854,14 +37887,14 @@ bYb
 qxP
 keE
 uvu
-tFU
+uQq
 jcU
 jon
 riT
 hCS
 jon
 sDA
-tFU
+uQq
 fde
 hFd
 vAK
@@ -38106,14 +38139,14 @@ bYb
 qxP
 keE
 uvu
-tFU
+uQq
 jon
 byV
 mct
 vOO
 byV
 jon
-tFU
+uQq
 fde
 hFd
 vAK
@@ -38358,7 +38391,7 @@ bYb
 qxP
 keE
 uvu
-tFU
+uQq
 jon
 sUP
 hyC
@@ -40122,7 +40155,7 @@ bYb
 qxP
 keE
 uvu
-tFU
+uQq
 jon
 djm
 mFf
@@ -40374,14 +40407,14 @@ bYb
 qxP
 keE
 uvu
-tFU
+uQq
 egv
 gum
 gum
 gum
 gum
 egv
-tFU
+uQq
 fde
 hFd
 vAK
@@ -40626,14 +40659,14 @@ tpS
 qxP
 keE
 oRb
-tFU
-rqp
-nBJ
-nBJ
-nBJ
-nBJ
-xfq
-tFU
+uQq
+pQH
+heD
+heD
+heD
+heD
+vxo
+uQq
 fde
 hFd
 vAK
