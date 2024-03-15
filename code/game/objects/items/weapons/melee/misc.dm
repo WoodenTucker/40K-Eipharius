@@ -253,10 +253,10 @@
 		return FALSE
 
 	if(!bypass)
-		if(client)
+		/*if(client)
 			to_chat(M, "<span class='warning'>That blade has already been taken.</span>")
 			GLOB.offered_blade_list -= src
-			return FALSE
+			return FALSE*/
 
 		log_game("[key_name(M)] has taken over [(src)].")
 		message_admins("[key_name_admin(M)] has taken over [src].")
@@ -291,8 +291,8 @@
 	var/inhabited = 0
 
 /obj/item/melee/possessed/attack_self(mob/living/user as mob)
-	if(inhabited = 0)
-		src.offer_blade
-		to_chat(user, "<span class='notice'>\You focus on [src], summoning and binding a warp entity into the weapon.</span>")
+	if(inhabited <= 0)
+		src.offer_blade()
+		to_chat(user, "<span class='notice'>You focus on [src], summoning and binding a warp entity into the weapon.</span>")
 	if(inhabited >= 1)
-		to_chat(user, "<span class='notice'>\[src] is already inhabited by a Warp entity!</span>")
+		to_chat(user, "<span class='notice'>[src] is already inhabited by a Warp entity!</span>")
