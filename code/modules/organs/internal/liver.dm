@@ -12,6 +12,7 @@
 	sales_price = 14
 	var/blood_regen = 0.1 //The number of points of blood it regenerates per tick, when applicable.
 	var/organ_filter_mod = 3 //The filtering strength of the organ. Default is 3
+	var/organ_toxin_vulnerability = 100 //The vulnerability of the organ to damage from toxins. Default is 100, various toxins will base their damage probability modifiers off of this.
 
 /obj/item/organ/internal/liver/robotize()
 	. = ..()
@@ -53,7 +54,7 @@
 		owner.adjustToxLoss(0.5 * max(2 - filter_effect, 0) * (1 + owner.chem_effects[CE_ALCOHOL_TOXIC] + 0.5 * owner.chem_effects[CE_ALCOHOL]))
 
 	if(owner.chem_effects[CE_ALCOHOL_TOXIC])
-		take_damage(owner.chem_effects[CE_ALCOHOL_TOXIC], prob(90)) // Chance to warn them
+		take_damage(owner.chem_effects[CE_ALCOHOL_TOXIC], prob(organ_toxin_vulnerability - 10)) // Chance to warn them
 
 	// Heal a bit if needed and we're not busy. This allows recovery from low amounts of toxloss.
 	if(!owner.chem_effects[CE_ALCOHOL] && !owner.chem_effects[CE_TOXIN] && !owner.radiation && damage > 0)
@@ -110,5 +111,6 @@
 	min_broken_damage = 85
 	max_damage = 100
 	relative_size = 85
-	blood_regen = 0.5
+	blood_regen = 1
 	organ_filter_mod = 12
+	organ_toxin_vulnerability = 15
