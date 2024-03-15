@@ -19,6 +19,9 @@
 	var/max_focus = 100
 	var/isdrawing = 0
 
+	var/voice_of_god = 0 //Basic Voice Commands
+	var/superior_voice_of_god = 0 //Stronger, Admin Voice Commands
+
 	var/possess_stage = 0
 	var/shielded_energy = 0
 	var/shielded_projectile = 0
