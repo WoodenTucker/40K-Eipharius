@@ -191,13 +191,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
-"anh" = (
-/obj/structure/table/rack,
-/obj/item/ingots/diamantineingot,
-/turf/simulated/floor/factory_floor{
-	dir = 4
-	},
-/area/cadiaoutpost/oa/engineering)
 "anu" = (
 /turf/simulated/mineral/random,
 /area/cadiaoutpost/new_hive/caves)
@@ -2532,13 +2525,6 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"cJn" = (
-/obj/effect/floor_decal/newcorner/reinforced,
-/mob/living/simple_animal/hostile/broken_servitor,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/engineering)
 "cKb" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 1;
@@ -8145,18 +8131,6 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
-"hZB" = (
-/obj/effect/floor_decal/newcorner/reinforced{
-	dir = 1
-	},
-/mob/living/simple_animal/hostile/broken_servitor{
-	icon_living = "tombs1";
-	icon_state = "tombs1"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/engineering)
 "iae" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 10;
@@ -10656,15 +10630,6 @@
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/factory_floor{
 	dir = 4
-	},
-/area/cadiaoutpost/oa/engineering)
-"kuq" = (
-/mob/living/simple_animal/hostile/broken_servitor{
-	icon_living = "tombs1";
-	icon_state = "tombs1"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
 "kut" = (
@@ -18559,16 +18524,6 @@
 	},
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/oa/service/chapel/recovery)
-"sgX" = (
-/obj/effect/floor_decal/newcorner/reinforced/corner,
-/mob/living/simple_animal/hostile/broken_servitor{
-	icon_living = "tombs1";
-	icon_state = "tombs1"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/engineering)
 "shm" = (
 /obj/structure/toilet{
 	dir = 8;
@@ -19975,13 +19930,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
-"tDH" = (
-/obj/structure/table/rack,
-/obj/random/loot/tech1,
-/turf/simulated/floor/factory_floor{
-	dir = 4
-	},
-/area/cadiaoutpost/oa/engineering)
 "tEG" = (
 /turf/simulated/floor/ceramic/surgery2{
 	dir = 6
@@ -68016,7 +67964,7 @@ krZ
 krZ
 cKb
 kob
-tDH
+xLb
 wIr
 kob
 qVF
@@ -68522,8 +68470,8 @@ dHS
 krZ
 uiu
 kob
-tDH
-anh
+xLb
+xLb
 kob
 qVF
 tKI
@@ -70793,7 +70741,7 @@ rYB
 jcy
 fee
 wrE
-cJn
+jcy
 fee
 wrE
 bhD
@@ -71800,7 +71748,7 @@ bhD
 kAj
 kAj
 bhD
-kuq
+bhD
 bhD
 jcy
 kuc
@@ -73063,7 +73011,7 @@ omk
 kAj
 kAj
 bhD
-sgX
+xzK
 xPW
 xPW
 xPW
@@ -73325,7 +73273,7 @@ fJF
 fJF
 nMQ
 fee
-hZB
+wrE
 bhD
 bAu
 xGZ
