@@ -78,3 +78,6 @@
 	if(oxy < BLOOD_VOLUME_OKAY) //brain wants us to get MOAR OXY
 		owner.add_chemical_effect(CE_BLOODRESTORE) ///Gives a pretty rapid blood regen; Astartes blood clots very quickly, and they produce a lot of it.
 		owner.add_chemical_effect(CE_BLOODCLOT)
+		owner.add_chemical_effect(CE_MAJORBLOODCLOT)
+		owner.add_chemical_effect(CE_ANTIBIOTIC)
+		owner.add_chemical_effect(CE_ANTIVIRAL)
