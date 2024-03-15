@@ -370,8 +370,6 @@
 	atom_flags = 0
 	origin_tech = list(TECH_MAGNET = 1, TECH_COMBAT = 1)
 	attack_verb = list("mauled", "clawed", "cleaved", "torn", "cut")
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HEAD
-	armor = list(melee = 1, bullet = 2, laser = 2, energy = 2, bomb = 2, bio = 0, rad = 0)
 
 /obj/item/melee/energy/powersword/claw/integrated/activate(mob/living/user)
 	..()
@@ -388,12 +386,66 @@
 	..()
 	spawn(1) if(src) qdel(src)
 
+/obj/item/melee/energy/powersword/claw/integrated/terminator
+	name = "Terminator Lightning Claws"
+	desc = "A gauntlet with 4 clawed fingers with a void shield generator inside of it, the voidshield makes a concentrated power field around each of the 4 claws, making them able to cut through almost anything, this one was integrated to the user's armor and would need a series of ajustments to be safely removed."
+	icon_state = "powerclaw-alt_mag"
+	item_state = "none"
+	wielded_icon = "none"
+	active_force = 58
+	active_throwforce = 0
+	force = 35
+	throwforce = 1
+	throw_speed = 1
+	throw_range = 1
+	weapon_speed_delay = 8
+	armor_penetration = 22
+	edge = 1
+	sharp = 1
+	block_chance = 66
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	w_class = ITEM_SIZE_LARGE
+	atom_flags = 0
+	attack_verb = list("mauled", "clawed", "cleaved", "torn", "cut")
+	can_door_force = 1
 
+/obj/item/melee/energy/powersword/fist/integrated/terminator //Make other sub-groups for this when other power fists get added.
+	name = "Terminator Power Fist"
+	desc = "A powerful ceramite gauntlet, coated in a crackling power field, this one was integrated to the user's armor and would need a series of ajustments to be safely removed."
+	icon_state = "powerclaw-alt_mag"
+	item_state = "none"
+	wielded_icon = "none"
+	active_force = 55
+	active_throwforce = 0
+	force = 38
+	throwforce = 1
+	throw_speed = 1
+	throw_range = 1
+	weapon_speed_delay = 8
+	armor_penetration = 18
+	edge = 1
+	sharp = 1
+	block_chance = 45
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	w_class = ITEM_SIZE_LARGE
+	atom_flags = 0
+	attack_verb = list("crushed", "slammed", "bludgeoned", "smashed", "slammed")
+	can_door_force = 1
+	wall_breaker = 1
 
+/obj/item/melee/energy/powersword/fist/integrated/terminator/activate(mob/living/user)
+	..()
+	icon_state = "powerclaw-alt_on_mag"
+	to_chat(user, "<span class='notice'>\The [src] is now energised.</span>")
 
+/obj/item/melee/energy/powersword/fist/integrated/terminator/deactivate(mob/living/user)
+	..()
+	icon_state = initial(icon_state)
+	to_chat(user, "<span class='notice'>\The [src] is de-energised. It's just a ceramite fist now.</span>")
 
-
-
+/obj/item/melee/energy/powersword/fist/integrated/terminator/dropped()
+	..()
+	spawn(1) if(src) qdel(src)
 
 
 
