@@ -235,3 +235,64 @@
 	armor_penetration = 7
 	can_door_force = 1
 	wall_breaker = 1
+
+//POSSESSED BLADE STUFF
+
+/obj/item/melee/possessed/proc/offer_blade()
+	GLOB.offered_blade_list += src
+	notify_ghosts(SPAN_BNOTICE("A possessed blade is being offered!"), enter_link = "claim=\ref[src]", source = src, action = NOTIFY_ORBIT)
+
+///Used by ghosts to take over a offered mob.
+/obj/item/melee/possessed/proc/take_over(mob/M, bypass)
+	if(!M.mind)
+		to_chat(M, SPAN_WARNING("You don't have a mind."))
+		return FALSE
+
+	if(src.inhabited >= 1)
+		to_chat(M, SPAN_WARNING("This blade is already possessed.")) //Just in case.
+		return FALSE
+
+	if(!bypass)
+		if(client)
+			to_chat(M, "<span class='warning'>That blade has already been taken.</span>")
+			GLOB.offered_blade_list -= src
+			return FALSE
+
+		log_game("[key_name(M)] has taken over [(src)].")
+		message_admins("[key_name_admin(M)] has taken over [src].")
+
+	if(isghost(M))
+		M.say("I'm taking over \the [src]")
+		M.fully_replace_character_name("[src]")
+	GLOB.offered_blade_list -= src
+	M.mind.transfer_to(src, TRUE)
+
+	return TRUE
+
+/obj/item/melee/possessed
+	name = "Mysterious Blade"
+	desc = "Oddly glowing, this blade exudes a dark aura."
+	icon_state = "tau0"
+	item_state = "EB-knife"
+	force = 45
+	force_wielded = 60
+	block_chance = 66
+	throwforce = 10
+	throw_speed = 1
+	throw_range = 5
+	w_class = ITEM_SIZE_NORMAL
+	atom_flags = ATOM_FLAG_NO_BLOOD
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	origin_tech = list(TECH_MAGNET = 3, TECH_COMBAT = 4)
+	attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut")
+	sharp = 1
+	edge = 1
+	sales_price = 45
+	var/inhabited = 0
+
+/obj/item/melee/possessed/attack_self(mob/living/user as mob)
+	if(inhabited = 0)
+		src.offer_blade
+		to_chat(user, "<span class='notice'>\You focus on [src], summoning and binding a warp entity into the weapon.</span>")
+	if(inhabited >= 1)
+		to_chat(user, "<span class='notice'>\[src] is already inhabited by a Warp entity!</span>")
