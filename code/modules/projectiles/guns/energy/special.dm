@@ -389,3 +389,64 @@ obj/item/gun/energy/staff/focus
 	ammoType = /obj/item/cell/tyranid/large
 	projectile_type = /obj/item/projectile/bullet/tyranid/venomcannon
 	charge_cost = 300
+
+
+//TERMINATOR STUFF
+
+/obj/item/gun/energy/integrated
+	name = "Integrated Projectile system"
+	desc = "A basic template weapon. You shouldn't be seeing this."
+	icon_state = "xenoheavyr" //Placeholder
+	item_state = "xenoheavyr" //Placeholder
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_HUGE
+	force = 15
+	one_hand_penalty = 1.5
+	fire_delay = 3.1
+	accuracy = 1
+	self_recharge = 1
+	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/bullet
+	charge_cost = 500
+	cell_type = /obj/item/cell
+	ammoType = /obj/item/cell
+	wielded_item_state = "lascar-wielded"
+	sales_price = null
+	charge_meter = FALSE
+
+	firemodes = list(
+		list(mode_name="semi-automatic",       burst=1, fire_delay=3.1, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=0),
+		list(mode_name="automatic",       burst=1, fire_delay=0.8, burst_accuracy=null, dispersion=null, automatic = 1, charge_cost=0),
+		)
+
+
+/obj/item/gun/energy/integrated/stormbolter
+	name = "Terminator Stormbolter"
+	desc = "A powerful bolter system attached to a suit of Terminator Armour."
+	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
+	icon_state = "Rboltpistol_loaded_bigmag"
+	item_state = "Rboltpistol_loaded_bigmag"
+	slot_flags = null
+	w_class = ITEM_SIZE_NORMAL
+	force = 15
+	one_hand_penalty = 0 //It's intended to be used one-handed.
+	fire_delay = 1
+	accuracy = 0 //A bit innacurate by virtue of firing big rounds out of a single-handed weapon, but it's being used by Terminators.
+	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/bullet/bolt
+	charge_cost = 1 //One unit correlates to ammo capacity. 
+	cell_type = /obj/item/cell/stormbolter
+	ammoType = /obj/item/cell/stormbolter
+	charge_meter = FALSE
+
+	firemodes = list(
+		list(mode_name="semi-automatic",       burst=1, fire_delay=3.1, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=1),
+		list(mode_name="burst",       burst=3, fire_delay=0.8, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=1),
+		)
+
+/obj/item/gun/energy/integrated/stormbolter/dropped()
+	..()
+	spawn(1) if(src) qdel(src)
+	to_chat(user, "<span class='notice'>You return the Storm Bolter  to your armour, automated systems already reloading the magazine for you.</span>")
