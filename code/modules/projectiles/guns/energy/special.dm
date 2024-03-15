@@ -138,6 +138,10 @@ obj/item/gun/energy/staff/focus
 	projectile_type = /obj/item/projectile/gauss
 	self_recharge = 1
 
+/obj/item/gun/energy/gaussflayer/dropped()
+	..()
+	spawn(1) if(src) qdel(src)
+
 /obj/item/gun/energy/gaussblaster
 	name = "Gauss Blaster"
 	desc = "A double barreled gauss weapon with green energy coursing through it."
