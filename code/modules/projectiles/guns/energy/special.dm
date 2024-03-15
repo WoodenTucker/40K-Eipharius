@@ -449,4 +449,4 @@ obj/item/gun/energy/staff/focus
 /obj/item/gun/energy/integrated/stormbolter/dropped()
 	..()
 	spawn(1) if(src) qdel(src)
-	to_chat(user, "<span class='notice'>You return the Storm Bolter  to your armour, automated systems already reloading the magazine for you.</span>")
+	visible_message("<span class='warning'><b>The Terminator return the Storm Bolter to their armour, automated systems already reloading the magazine for them.</span>")
