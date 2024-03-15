@@ -362,3 +362,12 @@
 	icon_state = "ion"
 	w_class = ITEM_SIZE_NORMAL
 	maxcharge = 10000
+
+/obj/item/cell/stormbolter
+	name = "Stormbolter Magazine"
+	desc = "A magazine intended for use in a Terminator-mounted Stormbolter. It has connection points for automated reloading systems."
+	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
+	icon_state = "bolterbigmag"
+	item_state = "bolterbigmag"
+	w_class = ITEM_SIZE_NORMAL
+	maxcharge = 40
