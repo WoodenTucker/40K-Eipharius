@@ -126,6 +126,10 @@
 							//you're basically forced to do nothing at all, so let's make it pretty effective
 							var/min_eff_damage = max(0, W.damage - 10) / 6 //still want a little bit to drip out, for effect
 							blood_max += max(min_eff_damage, W.damage - 30) / 40
+						if((CE_MAJORBLOODCLOT in owner.chem_effects) && prob(15))
+							W.bandage()
+							to_chat(owner, "You feel your wounds scab over and stop bleeding!")
+							visible_message("<span class='danger'>[src]'s wounds begin to slow their bleeding!</span>")
 						else
 							blood_max += W.damage / 40
 
@@ -152,12 +156,6 @@
 			blood_max *= 0.7
 		if(CE_STABLE in owner.chem_effects) // inaprovaline
 			blood_max *= 0.8
-		if(CE_MAJORBLOODCLOT in owner.chem_effects)
-			for(var/datum/wound/W in owner.wounds)
-				if(prob(15))
-					W.bandage
-					to_chat(owner, "You feel your wounds scab over and stop bleeding!")
-					visible_message("<span class='danger'>[src]'s wounds begin to slow their bleeding!</span>")
 
 		if(world.time >= next_blood_squirt && istype(owner.loc, /turf) && do_spray.len)
 			owner.visible_message("<span class='danger'>Blood squirts from [pick(do_spray)]!</span>")
