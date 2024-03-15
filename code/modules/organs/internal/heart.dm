@@ -152,6 +152,12 @@
 			blood_max *= 0.7
 		if(CE_STABLE in owner.chem_effects) // inaprovaline
 			blood_max *= 0.8
+		if(CE_MAJORBLOODCLOT in owner.chem_effects)
+			for(var/datum/wound/W in owner.wounds)
+				if(prob(15))
+					W.bandage
+					to_chat(owner, "You feel your wounds scab over and stop bleeding!")
+					visible_message("<span class='danger'>[src]'s wounds begin to slow their bleeding!</span>")
 
 		if(world.time >= next_blood_squirt && istype(owner.loc, /turf) && do_spray.len)
 			owner.visible_message("<span class='danger'>Blood squirts from [pick(do_spray)]!</span>")
