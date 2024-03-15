@@ -17,7 +17,7 @@
 	flash_mod =      0.5                    // Stun from blindness modifier.
 	metabolism_mod = 0                    // Reagent metabolism modifier
 	passive_temp_gain = -7		                  // Species will gain this much temperature every second //This accounts for internal cooling systems, and the heat generated via various limbs.
-	species_flags = SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_SLIP|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_SCAN 
+	species_flags = SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_SLIP|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_SCAN|SPECIES_NO_FBP_CONSTRUCTION
 	vision_flags = SEE_SELF|SEE_MOBS
 	inherent_verbs = list(
 	/mob/living/carbon/human/necron/proc/necronsetup,
