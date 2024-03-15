@@ -431,7 +431,7 @@
 	atom_flags = 0
 	attack_verb = list("crushed", "slammed", "bludgeoned", "smashed", "slammed")
 	can_door_force = 1
-	wall_breaker = 1
+//	wall_breaker = 1
 
 /obj/item/melee/energy/powersword/fist/integrated/terminator/activate(mob/living/user)
 	..()
