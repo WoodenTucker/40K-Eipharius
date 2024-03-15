@@ -516,8 +516,6 @@ var/shield_count = 0
 	set src in usr
 	if(!usr.canmove || usr.stat || usr.restrained())
 		return
-	if(!can_toggle)
-		to_chat(usr,"This tool cannot be toggled!")
 	else
 		to_chat(usr,"You extend your lightning claws.")
 		usr.put_in_hands(new /obj/item/melee/energy/powersword/claw/integrated/terminator(usr))
@@ -528,8 +526,6 @@ var/shield_count = 0
 	set src in usr
 	if(!usr.canmove || usr.stat || usr.restrained())
 		return
-	if(!can_toggle)
-		to_chat(usr,"This tool cannot be toggled!")
 	else
 		to_chat(usr,"You activate your integrated Storm Bolter.")
 		usr.put_in_hands(new /obj/item/melee/energy/powersword/claw/integrated/terminator(usr))
@@ -540,8 +536,6 @@ var/shield_count = 0
 	set src in usr
 	if(!usr.canmove || usr.stat || usr.restrained())
 		return
-	if(!can_toggle)
-		to_chat(usr,"This tool cannot be toggled!")
 	else
 		to_chat(usr,"You activate your power fist.")
 		usr.put_in_hands(new /obj/item/melee/energy/powersword/claw/integrated/terminator(usr))
