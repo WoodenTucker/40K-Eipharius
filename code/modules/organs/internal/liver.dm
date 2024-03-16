@@ -111,6 +111,6 @@
 	min_broken_damage = 85
 	max_damage = 100
 	relative_size = 85
-	blood_regen = 1
+	blood_regen = 4
 	organ_filter_mod = 12
 	organ_toxin_vulnerability = 15
