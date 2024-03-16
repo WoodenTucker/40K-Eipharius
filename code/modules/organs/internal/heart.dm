@@ -126,8 +126,9 @@
 							//you're basically forced to do nothing at all, so let's make it pretty effective
 							var/min_eff_damage = max(0, W.damage - 10) / 6 //still want a little bit to drip out, for effect
 							blood_max += max(min_eff_damage, W.damage - 30) / 40
-						if((CE_MAJORBLOODCLOT in owner.chem_effects) && prob(15))
+						if((CE_MAJORBLOODCLOT in owner.chem_effects) && prob(75))
 							W.bandage()
+							W.clamp_wound()
 							to_chat(owner, "You feel your wounds scab over and stop bleeding!")
 							visible_message("<span class='danger'>[src]'s wounds begin to slow their bleeding!</span>")
 						else
@@ -239,6 +240,7 @@
 			owner.resuscitate()
 			owner.add_chemical_effect(CE_STABLE)
 			to_chat(owner, "<span class='warning'>You can feel your second heart beat hard, supporting your circulatory system!</span>")
+			owner.regenerate_blood((blood_regen * 2) + owner.chem_effects[CE_BLOODRESTORE]) //Emergency booster blood.
 		handle_blood()
 	..()
 
