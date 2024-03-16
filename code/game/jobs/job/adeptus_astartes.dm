@@ -556,6 +556,7 @@
 	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_pocket = /obj/item/storage/box/ifak/advanced/astartes
 	neck = null
+	suit_store = null
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
 	/obj/item/stack/thrones/five = 1,
