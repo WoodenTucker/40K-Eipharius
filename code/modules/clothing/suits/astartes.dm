@@ -528,7 +528,7 @@ var/shield_count = 0
 		return
 	else
 		to_chat(usr,"You activate your integrated Storm Bolter.")
-		usr.put_in_hands(new /obj/item/melee/energy/powersword/claw/integrated/terminator(usr))
+		usr.put_in_hands(new /obj/item/gun/energy/integrated/stormbolter(usr))
 
 /obj/item/clothing/suit/armor/astartes/terminator/verb/togglefist()
 	set name = "Activate Power Fist"
@@ -538,4 +538,4 @@ var/shield_count = 0
 		return
 	else
 		to_chat(usr,"You activate your power fist.")
-		usr.put_in_hands(new /obj/item/melee/energy/powersword/claw/integrated/terminator(usr))
+		usr.put_in_hands(new /obj/item/melee/energy/powersword/fist/integrated/terminator(usr))
