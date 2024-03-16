@@ -468,7 +468,7 @@
 /obj/item/clothing/suit/armor/astartes/terminator/shielded //Shielded version
 	name = "Indomitus Pattern Tactical Dreadnought Armour"
 
-var/shield_count = 0
+var/shield_count = 6
 
 /obj/item/clothing/suit/armor/astartes/terminator/shielded/Initialize()
 	. = ..()
