@@ -529,7 +529,7 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak/advanced/astartes
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/bolter_pistol/astartes
+	suit_store = null
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_pistol_magazine/astartes = 3,
