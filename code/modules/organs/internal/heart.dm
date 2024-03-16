@@ -117,7 +117,7 @@
 					if(!open_wound && (W.damage_type == CUT || W.damage_type == PIERCE) && W.damage && !W.is_treated())
 						open_wound = TRUE
 
-					if(CE_MAJORBLOODCLOT in owner.chem_effects && W.open_wound = TRUE)
+					if(CE_MAJORBLOODCLOT in owner.chem_effects && W.open_wound == TRUE)
 						W.bandage()
 						W.clamp_wound()
 						to_chat(owner, "You feel your wounds scab over and stop bleeding!")
@@ -243,7 +243,7 @@
 			owner.resuscitate()
 			owner.add_chemical_effect(CE_STABLE)
 			to_chat(owner, "<span class='warning'>You can feel your second heart beat hard, supporting your circulatory system!</span>")
-			owner.regenerate_blood((blood_regen * 2) + owner.chem_effects[CE_BLOODRESTORE]) //Emergency booster blood.
+			owner.regenerate_blood((blood_regen + owner.chem_effects[CE_BLOODRESTORE]) //Emergency booster blood.
 		handle_blood()
 	..()
 
