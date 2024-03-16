@@ -445,6 +445,7 @@ obj/item/gun/energy/staff/focus
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=3.1, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=1),
 		list(mode_name="burst",       burst=3, fire_delay=0.8, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=1),
+		list(mode_name="automatic",       burst=1, fire_delay=1, burst_accuracy=null, dispersion=null, automatic = 1, charge_cost=1),
 		)
 
 /obj/item/gun/energy/integrated/stormbolter/dropped()
