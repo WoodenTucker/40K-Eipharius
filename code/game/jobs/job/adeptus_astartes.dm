@@ -540,7 +540,7 @@
 	/obj/item/clothing/glasses/astartes/visor/techmarine = 1
 	)
 
-/decl/hierarchy/outfit/job/astartes/ultramarine/terminator
+/decl/hierarchy/outfit/job/astartes/ultraterm
 	name = OUTFIT_JOB_NAME("Ultramarine Terminator")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	gloves = /obj/item/clothing/gloves/combat/cadian
