@@ -117,6 +117,12 @@
 					if(!open_wound && (W.damage_type == CUT || W.damage_type == PIERCE) && W.damage && !W.is_treated())
 						open_wound = TRUE
 
+					if(CE_MAJORBLOODCLOT in owner.chem_effects && W.open_wound = TRUE)
+						W.bandage()
+						W.clamp_wound()
+						to_chat(owner, "You feel your wounds scab over and stop bleeding!")
+						visible_message("<span class='danger'>[src]'s wounds begin to slow their bleeding!</span>")
+
 					if(W.bleeding())
 						if(temp.applied_pressure)
 							if(ishuman(temp.applied_pressure))
@@ -126,11 +132,6 @@
 							//you're basically forced to do nothing at all, so let's make it pretty effective
 							var/min_eff_damage = max(0, W.damage - 10) / 6 //still want a little bit to drip out, for effect
 							blood_max += max(min_eff_damage, W.damage - 30) / 40
-						if((CE_MAJORBLOODCLOT in owner.chem_effects) && prob(75))
-							W.bandage()
-							W.clamp_wound()
-							to_chat(owner, "You feel your wounds scab over and stop bleeding!")
-							visible_message("<span class='danger'>[src]'s wounds begin to slow their bleeding!</span>")
 						else
 							blood_max += W.damage / 40
 
@@ -139,6 +140,8 @@
 				if(bleed_amount)
 					if(CE_BLOODCLOT in owner.chem_effects)
 						bleed_amount *= 0.8 // won't do much, but it'll help
+					if(CE_MAJORBLOODCLOT in owner.chem_effects)
+						bleed_amount *= 0.4 // Cuts down on bleeding, even when the wounds aren't fully patched.
 					if(open_wound)
 						blood_max += bleed_amount
 						do_spray += "the [temp.artery_name] in \the [owner]'s [temp.name]"
