@@ -432,6 +432,7 @@ obj/item/gun/energy/staff/focus
 	force = 15
 	one_hand_penalty = 0 //It's intended to be used one-handed.
 	fire_delay = 1
+	self_recharge = 0 //No magically manifesting ammo, you've got to get it back to the reloading systems in the suit.
 	accuracy = 0 //A bit innacurate by virtue of firing big rounds out of a single-handed weapon, but it's being used by Terminators.
 	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
