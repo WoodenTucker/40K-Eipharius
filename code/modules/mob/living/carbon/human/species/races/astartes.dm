@@ -164,7 +164,7 @@ Astartes
 		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
 		return
 
-	var/astartesu = input("Select a Class","Class Selection") as null|anything in list("Tactical Marine", "Apothecary", "Techmarine", "Sergeant")
+	var/astartesu = input("Select a Class","Class Selection") as null|anything in list("Tactical Marine", "Apothecary", "Techmarine", "Sergeant", "Terminator")
 	switch(astartesu)
 		if("Tactical Marine")
 			fully_replace_character_name("Brother [real_name]")
@@ -266,6 +266,32 @@ Astartes
 			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
 			src.vice = null //off for now
 			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
+			src.add_skills(rand(16,18),rand(16,18),rand(8,10),rand(6,8),rand(6,8)) //melee, ranged, med, eng, surgery
+			src.verbs -= /mob/living/carbon/human/astartes/proc/astartesequipu
+
+	switch(astartesu)
+		if("Terminator")
+			fully_replace_character_name("Brother [real_name]")
+			warfare_faction = IMPERIUM
+			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ultramarine/terminator)
+			outfit.equip(src)
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.set_quirk(new/datum/quirk/dead_inside)
+			src.get_idcard()?.access = get_all_accesses()
+			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+			src.warfare_faction = IMPERIUM
+			to_chat(src, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Ultramarines, sons of Guilliman, creator of the Codex Astartes.</font></b></span>")
+			src.gender = MALE
+			src.f_style = "shaved"
+			src.h_style = "Bald"
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //integrated shitter
+			src.thirst = INFINITY
+			src.nutrition = INFINITY
+			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
+			src.vice = null //off for now
+			src.add_stats(36, 28, 28, 22) //gives stats str, dext, end, int
 			src.add_skills(rand(16,18),rand(16,18),rand(8,10),rand(6,8),rand(6,8)) //melee, ranged, med, eng, surgery
 			src.verbs -= /mob/living/carbon/human/astartes/proc/astartesequipu
 
