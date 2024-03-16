@@ -139,7 +139,7 @@
 					if(CE_BLOODCLOT in owner.chem_effects)
 						bleed_amount *= 0.8 // won't do much, but it'll help
 					if(CE_MAJORBLOODCLOT in owner.chem_effects)
-						bleed_amount *= 0.4 // Cuts down on bleeding, even when the wounds aren't fully patched.
+						bleed_amount *= 0.1 // Cuts down on bleeding, even when the wounds aren't fully patched.
 					if(open_wound)
 						blood_max += bleed_amount
 						do_spray += "the [temp.artery_name] in \the [owner]'s [temp.name]"
