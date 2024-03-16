@@ -273,7 +273,7 @@ Astartes
 		if("Terminator")
 			fully_replace_character_name("Brother [real_name]")
 			warfare_faction = IMPERIUM
-			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ultramarine/terminator)
+			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ultraterm)
 			outfit.equip(src)
 			src.set_trait(new/datum/trait/death_tolerant())
 			src.set_quirk(new/datum/quirk/dead_inside)
