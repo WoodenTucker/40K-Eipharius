@@ -51,8 +51,8 @@ Please wait until completion...</TT><BR>
 <A href='?src=\ref[src];make=2'>Right Arm (25,000 cc metal.)<BR>
 <A href='?src=\ref[src];make=3'>Left Leg (25,000 cc metal.)<BR>
 <A href='?src=\ref[src];make=4'>Right Leg (25,000 cc metal).<BR>
-<A href='?src=\ref[src];make=5'>Chest (50,000 cc metal).<BR>
-<A href='?src=\ref[src];make=6'>Head (50,000 cc metal).<BR>
+//<A href='?src=\ref[src];make=5'>Chest (50,000 cc metal).<BR>
+//<A href='?src=\ref[src];make=6'>Head (50,000 cc metal).<BR>
 <A href='?src=\ref[src];make=7'>Robot Frame (75,000 cc metal).<BR>
 "}
 
@@ -95,7 +95,7 @@ Please wait until completion...</TT><BR>
 					build_time = 200
 					build_cost = 25000
 
-				if (5)
+				/*if (5)
 					build_type = /obj/item/robot_parts/chest
 					build_time = 350
 					build_cost = 50000
@@ -103,7 +103,7 @@ Please wait until completion...</TT><BR>
 				if (6)
 					build_type = /obj/item/robot_parts/head
 					build_time = 350
-					build_cost = 50000
+					build_cost = 50000*/ //People can't behave with FBPs, and I don't want to remove the code for them entirely, although it's bugged enough that even disabling FBP construction on the species doesn't work.
 
 				if (7)
 					build_type = /obj/item/robot_parts/robot_suit
