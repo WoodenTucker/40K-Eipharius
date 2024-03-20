@@ -2295,6 +2295,16 @@ obj/item/clothing/suit/armor/scion/trooper
 /obj/item/clothing/suit/storage/hooded/archeotech/Process()
 	return ..()
 
+/obj/item/clothing/suit/storage/hooded/archeotech/verb/activaterifle()
+	set name = "Activate Archeotech Rifle"
+	set category = "Weapons"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	else
+		to_chat(usr,"You activate your integrated Storm Bolter.")
+		usr.put_in_hands(new /obj/item/gun/energy/archeotech/integrated(usr))
+
 /obj/item/clothing/head/helmet/archoetech
 	name = "Archeotech Helmet"
 	desc = "An ancient looking helmet."
