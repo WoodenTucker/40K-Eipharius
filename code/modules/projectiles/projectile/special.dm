@@ -717,18 +717,15 @@
 		animation.icon = 'icons/mob/mob.dmi'
 		animation.layer = 5
 		animation.master = holder
-		target.mob_delete()
+		visible_message("<span class='danger'>[target] vanishes in a flow of anticausal particles!</span>")
+		animation.icon_state = "liquify"
+		flick("liquify",animation)
+		qdel(target)
 	if(isturf(target))
 		return
 	else
 		qdel(target)
 	..()
-
-/obj/item/projectile/archeotech/anticausality/proc/mob_delete(var/atom/movable/overlay/animation, var/mob/living/target)
-	visible_message("<span class='danger'>[target] vanishes in a flow of anticausal particles!</span>")
-	animation.icon_state = "liquify"
-	flick("liquify",animation)
-	qdel(target)
 
 /obj/item/projectile/archeotech/capture
 	name = "Capture Archeotech Shot"
