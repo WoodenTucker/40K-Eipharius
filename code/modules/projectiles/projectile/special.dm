@@ -789,7 +789,7 @@
 	check_armour = "energy"
 
 /obj/item/projectile/archeotech/kill/on_hit(var/atom/target, var/blocked = 0)
-	if(istype(target, /mob/living/simple_animal)
+	if(istype(target, /mob/living/simple_animal))
 		var/mob/living/simple_animal/S = target
 		S.health = 0
 		S.visible_message("[S] collapses to the ground, dead!")
