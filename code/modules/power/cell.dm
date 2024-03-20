@@ -377,5 +377,5 @@
 	desc = "An ancient looking power source. "
 	icon_state = "rail"
 	w_class = ITEM_SIZE_NORMAL
-	maxcharge = 10000
+	maxcharge = 20000
 	origin_tech = list(TECH_POWER = 8)
