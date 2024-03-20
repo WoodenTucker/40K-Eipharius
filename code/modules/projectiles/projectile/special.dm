@@ -717,7 +717,7 @@
 		animation.icon = 'icons/mob/mob.dmi'
 		animation.layer = 5
 		animation.master = holder
-		target.mob_delete
+		target.mob_delete()
 	if(isturf(target))
 		return
 	else
