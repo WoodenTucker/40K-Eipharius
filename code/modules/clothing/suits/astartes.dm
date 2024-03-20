@@ -456,6 +456,7 @@
 	item_state = "ultracap"
 	str_requirement = 25
 	canremove = 0
+	var/shield_count = 0
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 26, bullet = 55, laser = 55, energy = 30, bomb = 90, bio = 100, rad = 100)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
@@ -467,8 +468,7 @@
 
 /obj/item/clothing/suit/armor/astartes/terminator/shielded //Shielded version
 	name = "Indomitus Pattern Tactical Dreadnought Armour"
-
-var/shield_count = 6
+	shield_count = 6
 
 /obj/item/clothing/suit/armor/astartes/terminator/shielded/Initialize()
 	. = ..()
