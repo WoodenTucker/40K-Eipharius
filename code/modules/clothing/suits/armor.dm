@@ -2221,7 +2221,7 @@ obj/item/clothing/suit/armor/scion/trooper
 		del(P)
 	else
 		user.visible_message("<span class='danger'>\The [user]'s temporal field warps the [attack_text] around them!</span>")
-		return 1
+		return 100
 
 
 /obj/item/clothing/suit/storage/hooded/inquisitor/chronos/Destroy()
@@ -2230,3 +2230,79 @@ obj/item/clothing/suit/armor/scion/trooper
 
 /obj/item/clothing/suit/storage/hooded/inquisitor/chronos/Process()
 	return ..()
+
+/obj/item/clothing/suit/storage/hooded/inquisitor/chronos
+	name = "Ordo Chronos Armour"
+	desc = "Mysterious armour belonging to the strange Inquisitors of the ordo Chronos, this suit seems to warp space around it."
+	icon_state = "inqarmor"
+	item_state = "inqarmor"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 100, bullet = 100, laser = 100, energy = 100, bomb = 100, bio = 100, rad = 100) //Ordo Chronos bullshit, and it's event armour.
+	sales_price = 0
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS | HEAD| FACE | EYES
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
+	action_button_name = "Toggle Hood"
+	hoodtype = /obj/item/clothing/head/inqhood
+
+/obj/item/clothing/suit/storage/hooded/inquisitor/chronos/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = -0.5
+
+
+/obj/item/clothing/suit/storage/hooded/inquisitor/chronos/Initialize()
+	. = ..()
+
+
+/obj/item/clothing/suit/storage/hooded/archeotech
+	name = "Archeotech Armour"
+	desc = "This armour is clearly antique, seemingly predating the Imperium entirely."
+	icon_state = "military_rig_sealed"
+	item_state = "military_rig_sealed"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 100, bullet = 100, laser = 100, energy = 100, bomb = 100, bio = 100, rad = 100) //Archeotech, and it's event armour.
+	sales_price = 0
+	canremove = 0
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS | HEAD| FACE | EYES
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
+	action_button_name = "Toggle Helmet"
+	hoodtype = /obj/item/clothing/head/archeotech
+
+/obj/item/clothing/suit/storage/hooded/archeotech/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = -0.5
+
+
+/obj/item/clothing/suit/storage/hooded/archeotech/Initialize()
+	. = ..()
+
+/obj/item/clothing/suit/storage/hooded/archeotech/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
+	if(istype(damage_source, /obj/item/projectile))
+		var/obj/item/projectile/P = damage_source
+		user.visible_message("<span class='danger'>[attack_text] splashes harmlessly against [user]'s armour!</span>")
+		START_PROCESSING(SSobj, src)
+		del(P)
+	else
+		user.visible_message("<span class='danger'>\The [attack_text] splashes harmlessly against [user]'s armour!</span>")
+		return 100
+
+
+/obj/item/clothing/suit/storage/hooded/archeotech/Destroy()
+	STOP_PROCESSING(SSobj, src)
+	return ..()
+
+/obj/item/clothing/suit/storage/hooded/archeotech/Process()
+	return ..()
+
+/obj/item/clothing/head/helmet/archoetech
+	name = "Archeotech Helmet"
+	desc = "An ancient looking helmet."
+	icon_state = "military_rig"
+	item_state = "military_rig"
+	armor = list(melee = 100, bullet = 100, laser = 100, energy = 100, bomb = 100, bio = 100, rad = 100)
+	siemens_coefficient = 0
+	canremove = 0
+	siemens_coefficient = 0
+	unacidable = 1
+	body_parts_covered = HEAD|FACE|EYES
