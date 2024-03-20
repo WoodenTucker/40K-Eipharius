@@ -697,3 +697,35 @@
 		explosion(target, 1, 2, 3)
 	..()
 
+/obj/item/projectile/archeotech/anticausality
+	name = "Anticausal Archeotech Shot"
+	icon_state = "bluespace"
+	fire_sound = 'sound/weapons/Laser.ogg'
+	damage = 5
+	armor_penetration = 60
+	damage_type = BURN
+	check_armour = "energy"
+
+/obj/item/projectile/archeotech/anticausality/on_hit(var/atom/target, var/blocked = 0)
+	if(ismob(target))
+		var/mobloc = get_turf(target.loc)
+		var/obj/effect/dummy/spell_jaunt/holder = new /obj/effect/dummy/spell_jaunt( mobloc )
+		var/atom/movable/overlay/animation = new /atom/movable/overlay( mobloc )
+		animation.SetName("water")
+		animation.set_density(0)
+		animation.anchored = 1
+		animation.icon = 'icons/mob/mob.dmi'
+		animation.layer = 5
+		animation.master = holder
+		target.mob_delete
+	if(isturf(target))
+		return
+	else
+		target.qdel
+	..()
+
+/obj/item/projectile/archeotech/anticausality/proc/mob_delete(var/atom/movable/overlay/animation, var/mob/living/target)
+	visible_message("<span class='danger'>[target] vanishes in a flow of anticausal particles!</span>")
+	animation.icon_state = "liquify"
+	flick("liquify",animation)
+	target.qdel
