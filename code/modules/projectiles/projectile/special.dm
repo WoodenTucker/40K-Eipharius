@@ -749,7 +749,7 @@
 		H.update_inv_handcuffed()
 		H.visible_message("Beams of light form around \the [H]'s hands!")
 		H.Weaken(5)
-	if(istype(target, /mob/living/simple_animal)
+	if(istype(target, /mob/living/simple_animal))
 		var/mob/living/simple_animal/S = target
 		S.in_stasis = 1
 	..()
