@@ -148,8 +148,8 @@
 				animation.layer = 5
 				animation.master = holder
 				target.ExtinguishMob()
-					if(target.buckled)
-				target.buckled = null
+				if(target.buckled)
+					target.buckled = null
 				jaunt_disappear(animation, target)
 				target.loc = holder
 				target.transforming=0 //mob is safely inside holder now, no need for protection.
