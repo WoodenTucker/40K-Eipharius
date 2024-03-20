@@ -729,3 +729,45 @@
 	animation.icon_state = "liquify"
 	flick("liquify",animation)
 	target.qdel
+
+/obj/item/projectile/archeotech/capture
+	name = "Capture Archeotech Shot"
+	icon_state = "electricity2"
+	fire_sound = 'sound/weapons/Laser.ogg'
+	damage = 0
+	armor_penetration = 60
+	damage_type = BURN
+	check_armour = "energy"
+
+/obj/item/projectile/archeotech/capture/on_hit(var/atom/target, var/blocked = 0)
+	if(ishuman(target))
+		var/obj/item/handcuffs/archeotech/cuffs = new()
+		cuffs.forceMove(target)
+		target.handcuffed = cuffs
+		target.update_inv_handcuffed()
+		target.visible_message("Beams of light form around \the [target]'s hands!")
+		target.Weaken(5)
+	..()
+
+/obj/item/handcuffs/archeotech
+	name = "Energy Cuffs"
+	desc = "Strange beams of energy which restrain your hands."
+	breakouttime = 300 //30 seconds
+
+/obj/item/handcuffs/archeotech/dropped(var/mob/user)
+	..()
+	qdel(src)
+
+/obj/item/projectile/archeotech/stun
+	name = "Stun Archeotech Shot"
+	icon_state = "spark"
+	fire_sound = 'sound/weapons/Laser.ogg'
+	damage = 0
+	armor_penetration = 60
+	damage_type = BURN
+	check_armour = "energy"
+
+/obj/item/projectile/archeotech/capture/on_hit(var/atom/target, var/blocked = 0)
+	target.Weaken(15)
+	target.Stun(15)
+	..()
