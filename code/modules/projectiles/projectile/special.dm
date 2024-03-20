@@ -748,6 +748,9 @@
 		H.update_inv_handcuffed()
 		H.visible_message("Beams of light form around \the [H]'s hands!")
 		H.Weaken(5)
+	if(istype(target, /mob/living/simple_animal)
+		var/mob/living/simple_animal/S = target
+		S.in_stasis = 1
 	..()
 
 /obj/item/handcuffs/archeotech
@@ -768,7 +771,7 @@
 	damage_type = BURN
 	check_armour = "energy"
 
-/obj/item/projectile/archeotech/capture/on_hit(var/atom/target, var/blocked = 0)
+/obj/item/projectile/archeotech/stun/on_hit(var/atom/target, var/blocked = 0)
 	if(istype(target, /mob/living/carbon/human))
 		var/mob/living/carbon/human/H = target
 		H.Weaken(15)
@@ -779,7 +782,14 @@
 	name = "Lethal Archeotech Shot"
 	icon_state = "heavylaser"
 	fire_sound = 'sound/weapons/Laser.ogg'
-	damage = 750 //Instakill high HP simplemobs.
+	damage = 150 //High damage in most cases.
 	armor_penetration = 80
 	damage_type = BRUTE
 	check_armour = "energy"
+
+/obj/item/projectile/archeotech/kill/on_hit(var/atom/target, var/blocked = 0)
+	if(istype(target, /mob/living/simple_animal)
+		var/mob/living/simple_animal/S = target
+		S.health = 0
+		S.visible_message("[S] collapses to the ground, dead!")
+	..()
