@@ -727,6 +727,7 @@
 	else
 		if(!isturf(target))
 			qdel(target)
+			visible_message("<span class='danger'>The [target] vanishes in a flow of anticausal particles!</span>")
 		return
 	..()
 
