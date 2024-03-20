@@ -783,14 +783,15 @@
 	name = "Lethal Archeotech Shot"
 	icon_state = "heavylaser"
 	fire_sound = 'sound/weapons/Laser.ogg'
-	damage = 150 //High damage in most cases.
+	damage = 750 //Enough to instakill simplemobs.
 	armor_penetration = 80
-	damage_type = BRUTE
+	damage_type = BURN
 	check_armour = "energy"
+	sharp = 1
 
-/obj/item/projectile/archeotech/kill/on_hit(var/atom/target, var/blocked = 0)
+/*/obj/item/projectile/archeotech/kill/on_hit(var/atom/target, var/blocked = 0)
 	if(istype(target, /mob/living/simple_animal))
 		var/mob/living/simple_animal/S = target
 		S.health = 0
 		S.visible_message("[S] collapses to the ground, dead!")
-	..()
+	..()*/ //WIP
