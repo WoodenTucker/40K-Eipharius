@@ -220,10 +220,7 @@
 	spark_system.start()
 	playsound(user.loc, "sparks", 50, 1)
 	user.loc = picked
-	user.eye_blurry += 20
 	user.Weaken(20)
 	user.Stun(5)
-	user.take_damage(burn=20)
-	user.take_damage(brute=20)
-	user.take_damage(pain=60)
+	user.vomit()
 	..()
