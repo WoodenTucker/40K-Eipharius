@@ -723,12 +723,6 @@
 	if(istype(target, /turf/simulated/wall))
 		var/turf/simulated/wall/W = target
 		qdel(W)
-	if(istype(target, /obj/item))
-		var/obj/item/I = target
-		qdel(I)
-	if(istype(target, /obj/item))
-		var/obj/item/I = target
-		qdel(I)
 	else
 		if(!isturf(target))
 			qdel(target)
