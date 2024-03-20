@@ -2267,7 +2267,7 @@ obj/item/clothing/suit/armor/scion/trooper
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
 	action_button_name = "Toggle Helmet"
-	hoodtype = /obj/item/clothing/head/archeotech
+	hoodtype = /obj/item/clothing/head/helmet/archoetech
 
 /obj/item/clothing/suit/storage/hooded/archeotech/New()
 	..()
