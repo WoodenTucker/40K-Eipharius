@@ -769,6 +769,8 @@
 	check_armour = "energy"
 
 /obj/item/projectile/archeotech/capture/on_hit(var/atom/target, var/blocked = 0)
-	target.Weaken(15)
-	target.Stun(15)
+	if(istype(target, /mob/living/carbon/human))
+		var/mob/living/carbon/human/H = target
+		H.Weaken(15)
+		H.Stun(15)
 	..()
