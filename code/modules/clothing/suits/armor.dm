@@ -2273,6 +2273,12 @@ obj/item/clothing/suit/armor/scion/trooper
 	..()
 	slowdown_per_slot[slot_wear_suit] = -0.5
 
+/obj/item/clothing/suit/storage/hooded/archeotech/update_icon()
+	if(suittoggled)
+		icon_state = "military_rig_sealed"
+	else
+		icon_state = "military_rig_sealed"
+
 
 /obj/item/clothing/suit/storage/hooded/archeotech/Initialize()
 	. = ..()
