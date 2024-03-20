@@ -721,14 +721,14 @@
 	if(isturf(target))
 		return
 	else
-		target.qdel
+		qdel(target)
 	..()
 
 /obj/item/projectile/archeotech/anticausality/proc/mob_delete(var/atom/movable/overlay/animation, var/mob/living/target)
 	visible_message("<span class='danger'>[target] vanishes in a flow of anticausal particles!</span>")
 	animation.icon_state = "liquify"
 	flick("liquify",animation)
-	target.qdel
+	qdel(target)
 
 /obj/item/projectile/archeotech/capture
 	name = "Capture Archeotech Shot"
@@ -740,13 +740,14 @@
 	check_armour = "energy"
 
 /obj/item/projectile/archeotech/capture/on_hit(var/atom/target, var/blocked = 0)
-	if(ishuman(target))
+	if(istype(target, /mob/living/carbon/human))
+		var/mob/living/carbon/human/H = target
 		var/obj/item/handcuffs/archeotech/cuffs = new()
-		cuffs.forceMove(target)
-		target.handcuffed = cuffs
-		target.update_inv_handcuffed()
-		target.visible_message("Beams of light form around \the [target]'s hands!")
-		target.Weaken(5)
+		cuffs.forceMove(H)
+		H.handcuffed = cuffs
+		H.update_inv_handcuffed()
+		H.visible_message("Beams of light form around \the [H]'s hands!")
+		H.Weaken(5)
 	..()
 
 /obj/item/handcuffs/archeotech
