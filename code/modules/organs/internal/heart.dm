@@ -139,7 +139,7 @@
 					if(CE_BLOODCLOT in owner.chem_effects)
 						bleed_amount *= 0.8 // won't do much, but it'll help
 					if(CE_MAJORBLOODCLOT in owner.chem_effects)
-						bleed_amount *= 0.1 // Cuts down on bleeding, even when the wounds aren't fully patched.
+						bleed_amount *= 0.05 // Cuts down on bleeding, even when the wounds aren't fully patched.
 					if(open_wound)
 						blood_max += bleed_amount
 						do_spray += "the [temp.artery_name] in \the [owner]'s [temp.name]"
@@ -230,6 +230,8 @@
 
 /obj/item/organ/internal/heart/astartes/Process()
 	if(owner)
+		if(src.damage <= 60 && prob(15)) //Minor degree of organ healing.
+			src.damage -= 1
 		handle_pulse()
 		if(pulse)
 			handle_heartbeat()
