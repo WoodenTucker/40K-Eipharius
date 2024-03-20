@@ -456,7 +456,7 @@ obj/item/gun/energy/staff/focus
 //ARCHEOTECH
 
 /obj/item/gun/energy/archeotech
-	name = "Archeotech"
+	name = "Archeotech Rifle"
 	desc = "A truly ancient looking rifle. A miracle of ancient engineering, it is compatible with many forms of battery."
 	icon_state = "xray" //Placeholder
 	item_state = "xray" //Placeholder
@@ -479,3 +479,12 @@ obj/item/gun/energy/staff/focus
 		list(mode_name="EXPLOSION", fire_delay = 1, projectile_type=/obj/item/projectile/archeotech/explosion, charge_cost=4000),
 		list(mode_name="ANTICAUSAL", fire_delay = 4, projectile_type=/obj/item/projectile/archeotech/anticausality, charge_cost=10000),
 		)
+
+/obj/item/gun/energy/archeotech/integrated
+	name = "Archeotech Rifle"
+	desc = "A truly ancient looking rifle. A miracle of ancient engineering, it is compatible with many forms of battery. This one seems to be integrated into a suit of armour."
+
+/obj/item/gun/energy/archeotech/integrated/dropped()
+	..()
+	spawn(1) if(src) qdel(src)
+	visible_message("<span class='warning'><b>The Archeotech Rifle snaps back into the armour..</span>")
