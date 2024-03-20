@@ -727,6 +727,9 @@
 	if(istype(target, /atom/movable/lighting_overlay))
 		var/atom/movable/lighting_overlay/L = target
 		explosion(L, 1, 1, 1)
+	if(istype(target, /mob/living/simple_animal))
+		var/mob/living/simple_animal/S = target
+		qdel(S)
 	else
 		if(!isturf(target))
 			qdel(target)
