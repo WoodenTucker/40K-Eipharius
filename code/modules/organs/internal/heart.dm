@@ -114,12 +114,13 @@
 
 				for(var/datum/wound/W in temp.wounds)
 
+					if(CE_MAJORBLOODCLOT in owner.chem_effects)
+						W.bandage()
+						to_chat(owner, "You feel your wounds scab over and stop bleeding!")
+						visible_message("<span class='danger'>[src]'s wounds begin to slow their bleeding!</span>")
+
 					if(!open_wound && (W.damage_type == CUT || W.damage_type == PIERCE) && W.damage && !W.is_treated())
 						open_wound = TRUE
-						if(CE_MAJORBLOODCLOT in owner.chem_effects)
-							W.bandage()
-							to_chat(owner, "You feel your wounds scab over and stop bleeding!")
-							visible_message("<span class='danger'>[src]'s wounds begin to slow their bleeding!</span>")
 
 					if(W.bleeding())
 						if(temp.applied_pressure)
