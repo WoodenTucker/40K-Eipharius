@@ -133,7 +133,7 @@
 
 /spell/targeted/necron_jaunt/cast(list/targets)
 	for(var/mob/living/target in targets)
-		if(target.jaunting = 0)
+		if(target.jaunting == 0)
 			target.transforming = 1 //protects the mob from being transformed (replaced) midjaunt and getting stuck in bluespace
 			if(target.buckled)
 				target.buckled.unbuckle_mob()
