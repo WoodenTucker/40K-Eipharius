@@ -148,7 +148,7 @@
 				animation.layer = 5
 				animation.master = holder
 				target.ExtinguishMob()
-				if(target.buckled)
+					if(target.buckled)
 				target.buckled = null
 				jaunt_disappear(animation, target)
 				target.loc = holder
@@ -156,6 +156,9 @@
 				jaunt_steam(mobloc)
 				target.jaunting = 1
 		else
+			var/mobloc = get_turf(target.loc)
+			var/obj/effect/dummy/spell_jaunt/holder = new /obj/effect/dummy/spell_jaunt( mobloc )
+			var/atom/movable/overlay/animation = new /atom/movable/overlay( mobloc )
 			mobloc = holder.last_valid_turf
 			animation.loc = mobloc
 			jaunt_steam(mobloc)
