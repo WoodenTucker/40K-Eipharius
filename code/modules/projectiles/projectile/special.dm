@@ -774,3 +774,12 @@
 		H.Weaken(15)
 		H.Stun(15)
 	..()
+
+/obj/item/projectile/archeotech/kill
+	name = "Lethal Archeotech Shot"
+	icon_state = "heavylaser"
+	fire_sound = 'sound/weapons/Laser.ogg'
+	damage = 750 //Instakill high HP simplemobs.
+	armor_penetration = 80
+	damage_type = BRUTE
+	check_armour = "energy"
