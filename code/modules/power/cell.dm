@@ -371,3 +371,11 @@
 	item_state = "bolterbigmag"
 	w_class = ITEM_SIZE_NORMAL
 	maxcharge = 40
+
+/obj/item/cell/archeotech
+	name = "Archeotech Power Source"
+	desc = "An ancient looking power source. "
+	icon_state = "rail"
+	w_class = ITEM_SIZE_NORMAL
+	maxcharge = 10000
+	origin_tech = list(TECH_POWER = 8)
