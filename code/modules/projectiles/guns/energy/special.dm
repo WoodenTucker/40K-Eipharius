@@ -452,3 +452,30 @@ obj/item/gun/energy/staff/focus
 	..()
 	spawn(1) if(src) qdel(src)
 	visible_message("<span class='warning'><b>The Terminator return the Storm Bolter to their armour, automated systems already reloading the magazine for them.</span>")
+
+//ARCHEOTECH
+
+/obj/item/gun/energy/archeotech
+	name = "Archeotech"
+	desc = "A truly ancient looking rifle. A miracle of ancient engineering, it is compatible with many forms of battery."
+	icon_state = "xray" //Placeholder
+	item_state = "xray" //Placeholder
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_HUGE
+	force = 35
+	one_hand_penalty = 2
+	fire_delay = 3
+	accuracy = 5
+	self_recharge = 1
+	projectile_type = /obj/item/projectile/archeotech/stun
+	charge_cost = 500
+	cell_type = /obj/item/cell/archeotech
+	ammoType = /obj/item/cell/archeotech || /obj/item/cell/lasgun/small || /obj/item/cell/lasgun || /obj/item/cell/plasma
+	charge_meter = 0
+
+	firemodes = list(
+		list(mode_name="STUN", fire_delay=0.5, projectile_type=/obj/item/projectile/archeotech/stun, charge_cost=1000),
+		list(mode_name="CAPTURE", fire_delay = 1, projectile_type=/obj/item/projectile/archeotech/capture, charge_cost=2000),
+		list(mode_name="EXPLOSION", fire_delay = 1, projectile_type=/obj/item/projectile/archeotech/explosion, charge_cost=4000),
+		list(mode_name="ANTICAUSAL", fire_delay = 4, projectile_type=/obj/item/projectile/archeotech/anticausality, charge_cost=10000),
+		)
