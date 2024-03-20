@@ -724,6 +724,9 @@
 		var/turf/simulated/wall/W = target
 		explosion(W, 1, 1, 1)
 		qdel(W)
+	if(istype(target, /atom/movable/lighting_overlay))
+		var/atom/movable/lighting_overlay/L = target
+		explosion(L, 1, 1, 1)
 	else
 		if(!isturf(target))
 			qdel(target)
