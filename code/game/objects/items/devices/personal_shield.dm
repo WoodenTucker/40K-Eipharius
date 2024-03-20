@@ -205,7 +205,8 @@
 
 /obj/item/clothing/accessory/displacer/emp_act(mob/user, severity)
 	src.active = 0
-	to_chat(user, "<span class='danger'>The displacer field malfunctions, throwing you carelessly through the Warp!.</span>")
+	user.visible_message("<span class='danger'>The displacer field malfunctions, throwing [user] carelessly through the Warp!</span>")
+	var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
 	spark_system.set_up(5, 0, user.loc)
 	spark_system.start()
 	playsound(user.loc, "sparks", 50, 1)
@@ -213,4 +214,4 @@
 	user.apply_effect(20, EYE_BLUR)
 	user.apply_effect(20, WEAKEN)
 	user.apply_damage(60, PAIN, def_zone, blocked)
-	..()*/ //WIP
+	..()
