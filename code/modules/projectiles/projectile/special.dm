@@ -693,8 +693,7 @@
 	check_armour = "energy"
 
 /obj/item/projectile/archeotech/explosion/on_hit(var/atom/target, var/blocked = 0)
-	if(isturf(target))
-		explosion(target, 1, 2, 3)
+	explosion(target, 1, 2, 3)
 	..()
 
 /obj/item/projectile/archeotech/anticausality
@@ -721,10 +720,19 @@
 		animation.icon_state = "liquify"
 		flick("liquify",animation)
 		qdel(target)
-	if(isturf(target))
-		return
+	if(istype(target, /turf/simulated/wall))
+		var/turf/simulated/wall/W = target
+		qdel(W)
+	if(istype(target, /obj/item))
+		var/obj/item/I = target
+		qdel(I)
+	if(istype(target, /obj/item))
+		var/obj/item/I = target
+		qdel(I)
 	else
-		qdel(target)
+		if(!isturf(target))
+			qdel(target)
+		return
 	..()
 
 /obj/item/projectile/archeotech/capture
