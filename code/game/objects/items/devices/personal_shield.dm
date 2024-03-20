@@ -222,5 +222,4 @@
 	user.loc = picked
 	user.Weaken(20)
 	user.Stun(5)
-	user.vomit()
 	..()
