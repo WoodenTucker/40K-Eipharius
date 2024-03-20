@@ -722,7 +722,7 @@
 		qdel(target)
 	if(istype(target, /turf/simulated/wall))
 		var/turf/simulated/wall/W = target
-		explosion(target, 1, 1, 1)
+		explosion(W, 1, 1, 1)
 		qdel(W)
 	else
 		if(!isturf(target))
