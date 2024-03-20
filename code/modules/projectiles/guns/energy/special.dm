@@ -476,6 +476,7 @@ obj/item/gun/energy/staff/focus
 	firemodes = list(
 		list(mode_name="STUN", fire_delay=0.5, projectile_type=/obj/item/projectile/archeotech/stun, charge_cost=1000),
 		list(mode_name="CAPTURE", fire_delay = 1, projectile_type=/obj/item/projectile/archeotech/capture, charge_cost=2000),
+		list(mode_name="KILL", fire_delay = 1, projectile_type=/obj/item/projectile/archeotech/kill, charge_cost=2000),
 		list(mode_name="EXPLOSION", fire_delay = 1, projectile_type=/obj/item/projectile/archeotech/explosion, charge_cost=4000),
 		list(mode_name="ANTICAUSAL", fire_delay = 4, projectile_type=/obj/item/projectile/archeotech/anticausality, charge_cost=10000),
 		)
