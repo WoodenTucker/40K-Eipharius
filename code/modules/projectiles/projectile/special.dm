@@ -672,3 +672,28 @@
 			W.dismantle_wall(1)
 			explosion(location, -1, -1, 1, 2)
 			visible_message("<span class='danger'>The [src] falls apart unders its own weight!</span>")*/
+
+
+/obj/item/projectile/archeotech //Categorisation object.
+	name = "Archeotech Shot"
+	icon_state = "ion"
+	fire_sound = 'sound/weapons/Laser.ogg'
+	damage = 0
+	damage_type = BURN
+	nodamage = 1
+	check_armour = "energy"
+
+/obj/item/projectile/archeotech/explosion
+	name = "Explosive Archeotech Shot"
+	icon_state = "ion"
+	fire_sound = 'sound/weapons/Laser.ogg'
+	damage = 5
+	armor_penetration = 60
+	damage_type = BURN
+	check_armour = "energy"
+
+/obj/item/projectile/archeotech/explosion/on_hit(var/atom/target, var/blocked = 0)
+	if(isturf(target))
+		explosion(target, 1, 2, 3)
+	..()
+
