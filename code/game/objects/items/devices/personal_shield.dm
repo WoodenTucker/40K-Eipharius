@@ -204,14 +204,24 @@
 	return PROJECTILE_FORCE_MISS
 
 /obj/item/clothing/accessory/displacer/emp_act(mob/user, severity)
-	src.active = 0
 	user.visible_message("<span class='danger'>The displacer field malfunctions, throwing [user] carelessly through the Warp!</span>")
+	var/list/turfs = new/list()
+	for(var/turf/T in orange(18, user))
+		if(istype(T,/turf/space)) continue
+		if(T.density) continue
+		if(T.x>world.maxx-18 || T.x<18)	continue
+		if(T.y>world.maxy-18 || T.y<18)	continue
+		turfs += T
+	if(!turfs.len) turfs += pick(/turf in orange(9))
+	var/turf/picked = pick(turfs)
+	if(!isturf(picked)) return
 	var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
 	spark_system.set_up(5, 0, user.loc)
 	spark_system.start()
 	playsound(user.loc, "sparks", 50, 1)
 	user.loc = picked
 	user.apply_effect(20, EYE_BLUR)
-	user.apply_effect(20, WEAKEN)
-	user.apply_damage(60, PAIN, def_zone, blocked)
+	user.Weaken(20)
+	user.apply_damage(60, PAIN)
+	src.active = 0
 	..()
