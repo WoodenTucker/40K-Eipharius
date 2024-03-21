@@ -2357,7 +2357,7 @@ obj/item/clothing/suit/armor/scion/trooper
 		animation.loc = mobloc
 		usr.canmove = 0
 		holder.reappearing = 1
-		sleep(20)
+		//sleep(20)
 		displace_reappear(animation, usr)
 		sleep(5)
 		if(!usr.forceMove(mobloc))
