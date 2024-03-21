@@ -23,6 +23,20 @@
 		/datum/unarmed_attack/punch
 		)
 
+	has_limbs = list(
+		BP_CHEST =  list("path" = /obj/item/organ/external/chest),
+		BP_GROIN =  list("path" = /obj/item/organ/external/groin),
+		BP_HEAD =   list("path" = /obj/item/organ/external/head),
+		BP_L_ARM =  list("path" = /obj/item/organ/external/arm),
+		BP_R_ARM =  list("path" = /obj/item/organ/external/arm/right),
+		BP_L_LEG =  list("path" = /obj/item/organ/external/robotic/leg/skitarii),
+		BP_R_LEG =  list("path" = /obj/item/organ/external/robotic/leg/right/skitarii),
+		BP_L_HAND = list("path" = /obj/item/organ/external/hand),
+		BP_R_HAND = list("path" = /obj/item/organ/external/hand/right),
+		BP_L_FOOT = list("path" = /obj/item/organ/external/robotic/foot/skitarii),
+		BP_R_FOOT = list("path" = /obj/item/organ/external/robotic/foot/right/skitarii)
+		)
+
 /mob/living/carbon/human/skitarii
 	gender = MALE
 
