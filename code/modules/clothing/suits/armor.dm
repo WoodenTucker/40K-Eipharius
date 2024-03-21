@@ -2406,3 +2406,14 @@ obj/item/clothing/suit/armor/scion/trooper
 		user.alpha = 255
 		animation.icon_state = "uncloak"
 		flick("liquify",animation)
+
+/obj/item/storage/backpack/ert
+	name = "Archeotech Backpack"
+	desc = "An ancient looking backpack."
+	icon_state = "ert_commander"
+	item_state_slots = list(
+		slot_l_hand_str = "securitypack",
+		slot_r_hand_str = "securitypack",
+		)
+	canremove = 0
+	max_storage_space = 36
