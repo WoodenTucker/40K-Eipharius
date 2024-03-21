@@ -428,7 +428,6 @@
 			if(istype(H.wear_suit, /obj/item/clothing/suit/storage/hooded/archeotech) || istype(H.wear_suit, /obj/item/clothing/suit/storage/hooded/inquisitor/chronos))
 				M.show_message(text("Your suit protects you from the flames."), 1)
 				M.adjustFireLoss(0) //Does no burn damage
-				continue
 		M.adjust_fire_stacks(burnlevel) //Make it possible to light them on fire later.
 		if (prob(firelevel + 2*M.fire_stacks)) //the more soaked in fire you are, the likelier to be ignited
 			M.IgniteMob()
