@@ -2328,7 +2328,7 @@ obj/item/clothing/suit/armor/scion/trooper
 	set name = "Toggle Temporal Displacement"
 	set category = "Abilities"
 	set src in usr
-	if(usr.displaced == 0)
+	if(displaced == 0)
 		usr.transforming = 1 //protects the mob from being transformed (replaced) midjaunt and getting stuck in bluespace
 		if(usr.buckled)
 			usr.buckled.unbuckle_mob()
@@ -2347,7 +2347,7 @@ obj/item/clothing/suit/armor/scion/trooper
 			displace_disappear(animation, usr)
 			usr.loc = holder
 			usr.transforming=0 //mob is safely inside holder now, no need for protection.
-			usr.displaced = 1
+			displaced = 1
 	else
 		var/mobloc = get_turf(usr.loc)
 		var/obj/effect/dummy/spell_jaunt/holder = new /obj/effect/dummy/spell_jaunt( mobloc )
@@ -2367,7 +2367,7 @@ obj/item/clothing/suit/armor/scion/trooper
 						break
 		usr.canmove = 1
 		usr.client.eye = usr
-		usr.displaced = 0
+		displaced = 0
 		qdel(animation)
 		qdel(holder)
 
