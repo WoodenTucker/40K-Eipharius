@@ -2268,6 +2268,7 @@ obj/item/clothing/suit/armor/scion/trooper
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
 	action_button_name = "Toggle Helmet"
 	hoodtype = /obj/item/clothing/head/helmet/archoetech
+	var/displaced = 0
 
 /obj/item/clothing/suit/storage/hooded/archeotech/New()
 	..()
@@ -2327,7 +2328,7 @@ obj/item/clothing/suit/armor/scion/trooper
 	set name = "Toggle Temporal Displacement"
 	set category = "Abilities"
 	set src in usr
-	if(usr.jaunting == 0)
+	if(usr.displaced == 0)
 		usr.transforming = 1 //protects the mob from being transformed (replaced) midjaunt and getting stuck in bluespace
 		if(usr.buckled)
 			usr.buckled.unbuckle_mob()
@@ -2341,20 +2342,18 @@ obj/item/clothing/suit/armor/scion/trooper
 			animation.icon = 'icons/mob/mob.dmi'
 			animation.layer = 5
 			animation.master = holder
-			usr.ExtinguishMob()
 			if(usr.buckled)
 				usr.buckled = null
 			displace_disappear(animation, usr)
 			usr.loc = holder
 			usr.transforming=0 //mob is safely inside holder now, no need for protection.
-			usr.jaunting = 1
+			usr.displaced = 1
 	else
 		var/mobloc = get_turf(usr.loc)
 		var/obj/effect/dummy/spell_jaunt/holder = new /obj/effect/dummy/spell_jaunt( mobloc )
 		var/atom/movable/overlay/animation = new /atom/movable/overlay( mobloc )
 		mobloc = holder.last_valid_turf
 		animation.loc = mobloc
-		jaunt_steam(mobloc)
 		usr.canmove = 0
 		holder.reappearing = 1
 		sleep(20)
@@ -2368,7 +2367,7 @@ obj/item/clothing/suit/armor/scion/trooper
 						break
 		usr.canmove = 1
 		usr.client.eye = usr
-		usr.jaunting = 0
+		usr.displaced = 0
 		qdel(animation)
 		qdel(holder)
 
