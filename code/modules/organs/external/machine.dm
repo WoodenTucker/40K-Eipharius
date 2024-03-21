@@ -811,7 +811,7 @@ obj/item/organ/external/robotic/hand/experimental/right
 	joint = "right knee"
 	amputation_point = "right hip"
 
-/obj/item/organ/external/robotic/foot/skiarii
+/obj/item/organ/external/robotic/foot/skitarii
 	organ_tag = BP_L_FOOT
 	name = "Skitarii left foot"
 	icon_name = "l_foot"
