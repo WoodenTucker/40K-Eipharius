@@ -2347,6 +2347,7 @@ obj/item/clothing/suit/armor/scion/trooper
 			displace_disappear(animation, usr)
 			usr.loc = holder
 			usr.transforming=0 //mob is safely inside holder now, no need for protection.
+			to_chat(user, "<span class='notice'>You seperate yourself from the timestream, displacing yourself a fraction out of time.</span>")
 			displaced = 1
 	else
 		var/mobloc = get_turf(usr.loc)
@@ -2367,6 +2368,7 @@ obj/item/clothing/suit/armor/scion/trooper
 						break
 		usr.canmove = 1
 		usr.client.eye = usr
+		to_chat(user, "<span class='notice'>You return yourself to normal time.</span>")
 		displaced = 0
 		qdel(animation)
 		qdel(holder)
@@ -2379,3 +2381,28 @@ obj/item/clothing/suit/armor/scion/trooper
 
 /obj/item/clothing/suit/storage/hooded/archeotech/proc/displace_reappear(var/atom/movable/overlay/animation, usr)
 	flick("reappear",animation)
+
+/obj/item/clothing/suit/storage/hooded/archeotech/verb/invisibility(mob/user)
+	set name = "Toggle Photonic Distortion Field"
+	set category = "Abilities"
+	set src in usr
+	if(user.alpha == 255)
+		var/mobloc = get_turf(user.loc)
+		var/obj/effect/dummy/spell_jaunt/holder = new /obj/effect/dummy/spell_jaunt( mobloc )
+		var/atom/movable/overlay/animation = new /atom/movable/overlay( mobloc )
+		mobloc = holder.last_valid_turf
+		animation.loc = mobloc
+		to_chat(user, "<span class='notice'>You activate the Photonic Distortion Field.</span>")
+		user.alpha = 0
+		animation.icon_state = "cloak"
+		flick("liquify",animation)
+	else
+		var/mobloc = get_turf(user.loc)
+		var/obj/effect/dummy/spell_jaunt/holder = new /obj/effect/dummy/spell_jaunt( mobloc )
+		var/atom/movable/overlay/animation = new /atom/movable/overlay( mobloc )
+		mobloc = holder.last_valid_turf
+		animation.loc = mobloc
+		to_chat(user, "<span class='notice'>You disable the Photonic Distortion Field.</span>")
+		user.alpha = 255
+		animation.icon_state = "uncloak"
+		flick("liquify",animation)
