@@ -45,4 +45,4 @@
 	icon_state = "lyemp"
 	item_state = "lyemp"
 	origin_tech = list(TECH_BLUESPACE = 5, TECH_MAGNET = 4, TECH_ENGINEERING = 5)
-	arm_sound = 'sound/effects/3.wav' //Remind me to make this work at some point.*/
+	arm_sound = 'sound/effects/3.wav'*/ //Remind me to make this work at some point.
