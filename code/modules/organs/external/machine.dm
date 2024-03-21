@@ -785,3 +785,54 @@ obj/item/organ/external/robotic/hand/experimental/right
 	burn_mod = 0.2                   // As above for burn. //Mechanical limbs* can* be burned, but they're far more resistant.
 	var/toxins_mod = 0
 	robotic = ORGAN_ROBOT
+
+/obj/item/organ/external/robotic/leg/skitarii
+	organ_tag = BP_L_LEG
+	name = "Skitarii left leg"
+	icon_name = "l_leg"
+	max_damage = 100
+	min_broken_damage = 80
+	w_class = ITEM_SIZE_NORMAL
+	body_part = LEG_LEFT
+	icon_position = LEFT
+	parent_organ = BP_GROIN
+	joint = "left knee"
+	amputation_point = "left hip"
+	can_stand = 1
+
+/obj/item/organ/external/robotic/leg/right/skitarii
+	organ_tag = BP_R_LEG
+	name = "Skitarii right leg"
+	icon_name = "r_leg"
+	max_damage = 100
+	min_broken_damage = 80
+	body_part = LEG_RIGHT
+	icon_position = RIGHT
+	joint = "right knee"
+	amputation_point = "right hip"
+
+/obj/item/organ/external/robotic/foot/skiarii
+	organ_tag = BP_L_FOOT
+	name = "Skitarii left foot"
+	icon_name = "l_foot"
+	max_damage = 80
+	min_broken_damage = 70
+	w_class = ITEM_SIZE_SMALL
+	body_part = FOOT_LEFT
+	icon_position = LEFT
+	parent_organ = BP_L_LEG
+	joint = "left ankle"
+	amputation_point = "left ankle"
+	can_stand = 1
+
+/obj/item/organ/external/robotic/foot/right/skitarii
+	organ_tag = BP_R_FOOT
+	name = "Skitarii right foot"
+	icon_name = "r_foot"
+	max_damage = 80
+	min_broken_damage = 70
+	body_part = FOOT_RIGHT
+	icon_position = RIGHT
+	parent_organ = BP_R_LEG
+	joint = "right ankle"
+	amputation_point = "right ankle"
