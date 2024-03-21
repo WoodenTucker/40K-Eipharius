@@ -2322,3 +2322,61 @@ obj/item/clothing/suit/armor/scion/trooper
 	siemens_coefficient = 0
 	unacidable = 1
 	body_parts_covered = HEAD|FACE|EYES
+
+/obj/item/clothing/suit/storage/hooded/archeotech/verb/temporaldisplace()
+	set name = "Toggle Temporal Displacement"
+	set category = "Abilities"
+	set src in usr
+	if(usr.jaunting == 0)
+		usr.transforming = 1 //protects the mob from being transformed (replaced) midjaunt and getting stuck in bluespace
+		if(usr.buckled)
+			usr.buckled.unbuckle_mob()
+		spawn(0)
+			var/mobloc = get_turf(usr.loc)
+			var/obj/effect/dummy/spell_jaunt/holder = new /obj/effect/dummy/spell_jaunt( mobloc )
+			var/atom/movable/overlay/animation = new /atom/movable/overlay( mobloc )
+			animation.SetName("water")
+			animation.set_density(0)
+			animation.anchored = 1
+			animation.icon = 'icons/mob/mob.dmi'
+			animation.layer = 5
+			animation.master = holder
+			usr.ExtinguishMob()
+			if(usr.buckled)
+				usr.buckled = null
+			displace_disappear(animation, usr)
+			usr.loc = holder
+			usr.transforming=0 //mob is safely inside holder now, no need for protection.
+			usr.jaunting = 1
+	else
+		var/mobloc = get_turf(usr.loc)
+		var/obj/effect/dummy/spell_jaunt/holder = new /obj/effect/dummy/spell_jaunt( mobloc )
+		var/atom/movable/overlay/animation = new /atom/movable/overlay( mobloc )
+		mobloc = holder.last_valid_turf
+		animation.loc = mobloc
+		jaunt_steam(mobloc)
+		usr.canmove = 0
+		holder.reappearing = 1
+		sleep(20)
+		displace_reappear(animation, usr)
+		sleep(5)
+		if(!usr.forceMove(mobloc))
+			for(var/direction in list(1,2,4,8,5,6,9,10))
+				var/turf/T = get_step(mobloc, direction)
+				if(T)
+					if(usr.forceMove(T))
+						break
+		usr.canmove = 1
+		usr.client.eye = usr
+		usr.jaunting = 0
+		qdel(animation)
+		qdel(holder)
+
+
+
+/obj/item/clothing/suit/storage/hooded/archeotech/proc/displace_disappear(var/atom/movable/overlay/animation, usr)
+	animation.icon_state = "liquify"
+	flick("liquify",animation)
+
+/obj/item/clothing/suit/storage/hooded/archeotech/proc/displace_reappear(var/atom/movable/overlay/animation, usr)
+	flick("reappear",animation)
