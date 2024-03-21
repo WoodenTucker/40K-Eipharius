@@ -135,7 +135,7 @@
 /obj/item/projectile/flamer/on_hit(var/atom/target, var/blocked = 0)
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
-		if(!istype(H.wear_suit, /obj/item/clothing/suit/fire))
+		if(!istype(H.wear_suit, /obj/item/clothing/suit/fire) && !istype(M.wear_suit, /obj/item/clothing/suit/storage/hooded/archeotech) && !istype(M.wear_suit, /obj/item/clothing/suit/storage/hooded/inquisitor/chronos))
 			H.adjust_fire_stacks(10) //note left by walker, any more than 10 is impossibly OP
 			H.IgniteMob()
 		new /obj/flamer_fire(H.loc, 12, 10, "red", 1)
@@ -153,7 +153,7 @@
 /obj/item/projectile/flamer/salamander/on_hit(var/atom/target, var/blocked = 0)
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
-		if(!istype(H.wear_suit, /obj/item/clothing/suit/fire))
+		if(!istype(H.wear_suit, /obj/item/clothing/suit/fire) && !istype(M.wear_suit, /obj/item/clothing/suit/storage/hooded/archeotech) && !istype(M.wear_suit, /obj/item/clothing/suit/storage/hooded/inquisitor/chronos))
 			H.adjust_fire_stacks(5) //note left by walker, any more than 10 is impossibly OP
 			H.IgniteMob()
 		new /obj/flamer_fire(H.loc, 12, 10, "blue", 1)
@@ -170,9 +170,10 @@
 /obj/item/projectile/warpfire/on_hit(var/atom/target, var/blocked = 0)
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
-		if(!istype(H.wear_suit, /obj/item/clothing/suit/wizrobe/psypurple))
+		if(!istype(H.wear_suit, /obj/item/clothing/suit/wizrobe/psypurple) && !istype(M.wear_suit, /obj/item/clothing/suit/storage/hooded/archeotech) && !istype(M.wear_suit, /obj/item/clothing/suit/storage/hooded/inquisitor/chronos))
 			H.adjust_fire_stacks(10)
 			H.IgniteMob()
+
 		new /obj/warpfire(H.loc, 16, 12, "green", 3)
 
 
@@ -307,12 +308,12 @@
 	if(istype(M))
 		if(ishuman(M))
 			var/mob/living/carbon/human/H = M
-			if(istype(M.wear_suit, /obj/item/clothing/suit/storage/hooded/ruststalker))
-				M.show_message(text("Your suit protects you from the flames."), 1)
-				M.adjustFireLoss(rand(0 ,burnlevel*0.25)) //Does small burn damage to a person wearing one of the suits.
-			if(istype(M.wear_suit, /obj/item/clothing/suit/storage/hooded/archeotech) || istype(M.wear_suit, /obj/item/clothing/suit/armor/astartes) || istype(M.wear_suit, /obj/item/clothing/suit/sisterofbattle) || istype(M.wear_suit, /obj/item/clothing/suit/storage/hooded/inquisitor/chronos) || istype(M.wear_suit, /obj/item/clothing/suit/armor/ordohereticus)  || istype(M.wear_suit, /obj/item/clothing/suit/fire) || istype(M.wear_suit, /obj/item/clothing/suit/armor/catachan/flamerspecialist))
-				M.show_message(text("Your suit protects you from the flames."), 1)
-				M.adjustFireLoss(0) //Does no burn damage
+			if(istype(H.wear_suit, /obj/item/clothing/suit/storage/hooded/ruststalker))
+				H.show_message(text("Your suit protects you from the flames."), 1)
+				H.adjustFireLoss(rand(0 ,burnlevel*0.25)) //Does small burn damage to a person wearing one of the suits.
+			if(istype(H.wear_suit, /obj/item/clothing/suit/storage/hooded/archeotech) || istype(H.wear_suit, /obj/item/clothing/suit/armor/astartes) || istype(H.wear_suit, /obj/item/clothing/suit/sisterofbattle) || istype(H.wear_suit, /obj/item/clothing/suit/storage/hooded/inquisitor/chronos) || istype(H.wear_suit, /obj/item/clothing/suit/armor/ordohereticus)  || istype(H.wear_suit, /obj/item/clothing/suit/fire) || istype(H.wear_suit, /obj/item/clothing/suit/armor/catachan/flamerspecialist))
+				H.show_message(text("Your suit protects you from the flames."), 1)
+				H.adjustFireLoss(0) //Does no burn damage
 		M.adjust_fire_stacks(burnlevel) //Make it possible to light them on fire later.
 		if (prob(firelevel + 2*M.fire_stacks)) //the more soaked in fire you are, the likelier to be ignited
 			M.IgniteMob()
