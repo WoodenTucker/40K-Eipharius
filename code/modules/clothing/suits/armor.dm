@@ -2347,7 +2347,7 @@ obj/item/clothing/suit/armor/scion/trooper
 			displace_disappear(animation, usr)
 			usr.loc = holder
 			usr.transforming=0 //mob is safely inside holder now, no need for protection.
-			to_chat(user, "<span class='notice'>You seperate yourself from the timestream, displacing yourself a fraction out of time.</span>")
+			to_chat(usr, "<span class='notice'>You seperate yourself from the timestream, displacing yourself a fraction out of time.</span>")
 			displaced = 1
 	else
 		var/mobloc = get_turf(usr.loc)
@@ -2368,7 +2368,7 @@ obj/item/clothing/suit/armor/scion/trooper
 						break
 		usr.canmove = 1
 		usr.client.eye = usr
-		to_chat(user, "<span class='notice'>You return yourself to normal time.</span>")
+		to_chat(usr, "<span class='notice'>You return yourself to normal time.</span>")
 		displaced = 0
 		qdel(animation)
 		qdel(holder)
@@ -2382,7 +2382,7 @@ obj/item/clothing/suit/armor/scion/trooper
 /obj/item/clothing/suit/storage/hooded/archeotech/proc/displace_reappear(var/atom/movable/overlay/animation, usr)
 	flick("reappear",animation)
 
-/obj/item/clothing/suit/storage/hooded/archeotech/verb/invisibility(mob/user)
+/obj/item/clothing/suit/storage/hooded/archeotech/verb/archeocloak(mob/user)
 	set name = "Toggle Photonic Distortion Field"
 	set category = "Abilities"
 	set src in usr
