@@ -46,3 +46,20 @@
 	item_state = "lyemp"
 	origin_tech = list(TECH_BLUESPACE = 5, TECH_MAGNET = 4, TECH_ENGINEERING = 5)
 	arm_sound = 'sound/effects/3.wav'*/ //Remind me to make this work at some point.
+
+/obj/item/grenade/cryo
+	name = "Cryogenic Grenade"
+	desc = "An ancient looking grenade."
+	w_class = ITEM_SIZE_SMALL
+	icon = 'icons/obj/grenade.dmi'
+	icon_state = "delivery"
+	item_state = "delivery"
+	throw_speed = 4
+	throw_range = 20
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	slot_flags = SLOT_BELT
+
+/obj/item/grenade/cryo/proc/detonate()
+	for(var/mob/M in range(5) //Five tile range
+		M.bodytemperature = 0 //Instantly freezes you. 0 is absolute zero, don't set this to a negative, it breaks physics.
+		M.Weaken(2)
