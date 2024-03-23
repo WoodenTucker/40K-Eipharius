@@ -59,7 +59,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT
 
-/obj/item/grenade/cryo/proc/detonate()
+/obj/item/grenade/cryo/detonate()
 	for(var/mob/M in range(5)) //Five tile range
-		M.bodytemperature == 0 //Instantly freezes you. 0 is absolute zero, don't set this to a negative, it breaks physics.
+		M.bodytemperature = 0 //Instantly freezes you. 0 is absolute zero, don't set this to a negative, it breaks physics.
 		M.Weaken(2)
