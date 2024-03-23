@@ -232,3 +232,14 @@
 	radio_connection.post_signal(src, signal, filter = RADIO_ATMOSIA)
 	active = !active
 	update_icon()
+
+/obj/machinery/button/heresy
+	name = "Heresy Button"
+	icon = 'icons/obj/objects.dmi'
+	icon_state = "launcherbtt"
+	desc = "HERESY!"
+
+/obj/machinery/button/attack_hand(mob/living/user)
+	if(..()) return 1
+	if(istype(user, /mob/living/carbon))
+		visible_message("<span class='danger'>HERESY!</span>")
