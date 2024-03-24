@@ -239,7 +239,7 @@
 	icon_state = "launcherbtt"
 	desc = "HERESY!"
 
-/obj/machinery/button/attack_hand(mob/living/user)
+/obj/machinery/button/heresy/attack_hand(mob/living/user)
 	if(..()) return 1
 	if(istype(user, /mob/living/carbon))
 		visible_message("<span class='danger'>HERESY!</span>")
