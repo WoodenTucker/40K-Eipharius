@@ -152,7 +152,7 @@
 	charge_cost = 400
 	wielded_item_state = "longlas-wielded"
 	sales_price = 80
-	color = "#4d3716b4"
+	color = "#725831ff"
 
 	firemodes = list(
 		list(mode_name="semi-automatic", fire_delay=8, move_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=400),
@@ -160,8 +160,8 @@
 		)
 
 /obj/item/gun/projectile/thrower
-	name = "Boscolet Frontiersman"
-	desc = "Boscolet Frontiersman is an incredibly advanced single-shot magrail hunting rifle developed by the local nomadic tribes of Greater Messina. The Messian Tribes developed the weapon after studying Seolite artifacts that over generations were guarded and kept secret, eventually becoming great heirlooms of power. They say there is only a handful of these rifles left..."
+	name = "Messian Thrower"
+	desc = "Messian Thrower is an incredibly advanced single-shot magrail hunting thrower developed by the local nomadic tribes of Greater Messina. The Messian Tribes developed the weapon after studying Seolite artifacts that over generations were guarded and kept secret, eventually becoming great heirlooms of power. They say there is only a handful of these rifles left..."
 	icon = 'icons/obj/weapons/gun/projectile.dmi'
 	icon_state = "musket"
 	item_state = "musket"

@@ -530,16 +530,37 @@ Area basic template
 	dynamic_lighting = 1
 	music = 'sound/newmusic/DUNGEONLOWER.ogg'
 
+/area/cadiaoutpost/oa/wilds/deathfog/Crossed(AM as mob|obj)
+	if (ismob(AM))
+		var/mob/M = AM
+		if (ishuman(M))
+			var/mob/living/carbon/human/H = M
+			if (prob (2))
+				var/obj/item/organ/external/affecting = H.get_organ(pick("head"))
+				if (affecting.status & ORGAN_ROBOT)
+					return
+				if (affecting.take_damage(burn = 13, FALSE))
+					H.UpdateDamageIcon()
+				H.updatehealth()
+			else
+				var/obj/item/organ/external/affecting = H.get_organ(pick("head"))
+				if (affecting.status & ORGAN_ROBOT)
+					return
+				if (affecting.take_damage(burn = 0, FALSE))
+					H.UpdateDamageIcon()
+				H.updatehealth()
+	return ..()
+
+
 /*
-/area/cadiaoutpost/oa/wilds/deathfog/Entered(mob/living/carbon/L, atom/A)
+
+/area/cadiaoutpost/oa/service/chapel/Entered(mob/living/carbon/L, atom/A)
 	. = ..()
 	if(src.consecrated == TRUE)
-		if(prob(5))
+		if(L.faction != "Chaos")
 			if(prob(5))
 				to_chat(L, "<span class='flick-holy'>+ I can feel His presence here... +</span>")
 				L.happiness += 3
-				M.make_jittery(1)
-				M.make_dizzy(1)
 		else
 			L.flash_weakest_pain()
 			to_chat(L, "<span class='horror-text'>+ I can feel His presence here... +</span> ")
@@ -548,20 +569,16 @@ Area basic template
 			//not going to be fun if they stay
 			L.danger_timer = addtimer(CALLBACK(L, /mob/living/carbon/human/.proc/overstayed), 35 SECONDS, TIMER_STOPPABLE|TIMER_UNIQUE|TIMER_NO_HASH_WAIT|TIMER_OVERRIDE)
 			to_chat(L, "<span class='horror-text'>+ I HAVE TO GET OUT OF HERE +</span> ")
-*/
-// MASK CODES
 
-/*
-/mob/living/carbon/human/proc/handle_gas_mask_sound()
-	if(wear_mask)
-		remove_coldbreath()
-	if(stat == DEAD)
-		return
-	if(istype(wear_mask, /obj/item/clothing/mask/gas))
-		var/mask_sound = pick('sound/effects/gasmask1.ogg','sound/effects/gasmask2.ogg','sound/effects/gasmask3.ogg','sound/effects/gasmask4.ogg','sound/effects/gasmask5.ogg','sound/effects/gasmask6.ogg','sound/effects/gasmask7.ogg','sound/effects/gasmask8.ogg','sound/effects/gasmask9.ogg','sound/effects/gasmask10.ogg')
-		playsound(src, mask_sound, 50, 1)
 
-if(istype(user.wear_mask, /obj/item/clothing/mask/muzzle))
+/area/cadiaoutpost/oa/wilds/deathfog/Entered(mob/living/L,  atom/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))//Doesn't work but this does stop the lag.
+		L.overlay_fullscreen("fog", /obj/screen/fullscreen/fog)
+	if(prob(5))
+		L.happiness -= 1
+		L.Weaken(3)
+
 */
 
 /area/cadiaoutpost/oa/wilds/deathfog/Entered(mob/living/L,  atom/A)
@@ -646,18 +663,18 @@ if(istype(user.wear_mask, /obj/item/clothing/mask/muzzle))
 		var/mob/M = AM
 		if (ishuman(M))
 			var/mob/living/carbon/human/H = M
-			if (prob (5))
-				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
+			if (prob (4))
+				var/obj/item/organ/external/affecting = H.get_organ(pick("head"))
 				if (affecting.status & ORGAN_ROBOT)
 					return
-				if (affecting.take_damage(13, FALSE))
+				if (affecting.take_damage(burn = 13, FALSE))
 					H.UpdateDamageIcon()
 				H.updatehealth()
 			else
-				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
+				var/obj/item/organ/external/affecting = H.get_organ(pick("head"))
 				if (affecting.status & ORGAN_ROBOT)
 					return
-				if (affecting.take_damage(0, FALSE))
+				if (affecting.take_damage(burn = 1, FALSE))
 					H.UpdateDamageIcon()
 				H.updatehealth()
 	return ..()
@@ -771,7 +788,7 @@ if(istype(user.wear_mask, /obj/item/clothing/mask/muzzle))
 	icon_state = "maint_sec"
 
 /area/cadiaoutpost/oa/security/prison
-	name = "Prison"
+	name = "Trench Map Upper"
 	icon_state = "sec_prison"
 	music = 'sound/newmusic/Outpost1.ogg'
 	requires_power = FALSE
@@ -782,7 +799,7 @@ if(istype(user.wear_mask, /obj/item/clothing/mask/muzzle))
 	music = 'sound/newmusic/Outpost1.ogg'
 
 /area/cadiaoutpost/oa/security/warden
-	name = "Warden"
+	name = "Siege Map Lower"
 	icon_state = "warden"
 	music = 'sound/newmusic/Outpost1.ogg'
 	requires_power = FALSE
@@ -909,7 +926,7 @@ if(istype(user.wear_mask, /obj/item/clothing/mask/muzzle))
 /area/cadiaoutpost/oa/shuttle/cargo2
 	name = "Cargo Elevator"
 	icon_state = "shuttle"
-	music = 'sound/newmusic/General_Ambient2.ogg'
+	music = 'sound/newmusic/DUNGEONLOWER.ogg'
 	requires_power = 0
 
 /////////////////////////////////////////
@@ -939,7 +956,7 @@ if(istype(user.wear_mask, /obj/item/clothing/mask/muzzle))
 /area/cadiaoutpost/oa/engineering/engine/enginewaste
 	name = "Engine Waste"
 	icon_state = "engine_waste"
-	music = 'sound/newmusic/Lab_Experiment.ogg'
+	music = 'sound/newmusic/DUNGEONLOWER.ogg'
 	requires_power = 0
 
 /area/cadiaoutpost/oa/engineering/engine/enginesmes
@@ -1978,7 +1995,7 @@ if(istype(user.wear_mask, /obj/item/clothing/mask/muzzle))
 /area/cadiaoutpost/oa/shuttle/cargo1
 	name = "Cargo Elevator"
 	icon_state = "shuttle"
-	music = 'sound/newmusic/General_Ambient2.ogg'
+	music = 'sound/newmusic/DUNGEONLOWER.ogg'
 	requires_power = 0
 
 /area/cadiaoutpost/oa/shuttle/aquila

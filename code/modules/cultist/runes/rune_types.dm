@@ -15,7 +15,7 @@
 /obj/effect/cleanable/heretic_rune/khorne
 	name = "strange marking"
 	icon = 'icons/map_project/eldritch/Zizo_Rite.dmi'
-	icon_state = "angry"
+	icon_state = "1"
 	desc = "..."
 	gender = PLURAL
 	density = 0

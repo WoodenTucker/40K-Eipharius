@@ -490,6 +490,7 @@
 	icon_state = "example"
 	icon_living = "example"
 	icon_dead = "torso_lying_2"
+	faction = "Demon"
 	health = 325
 	maxHealth = 325
 	melee_damage_lower = 15
