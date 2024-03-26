@@ -5,6 +5,7 @@
 	#include "../shared/items/clothing.dm"
 	#include "../shared/items/cards_ids.dm"
 
+	#include "warhammer-0.dmm"
 	#include "warhammer-1.dmm"
 	#include "warhammer-2.dmm"
 	#include "warhammer-3.dmm"
@@ -12,8 +13,6 @@
 	#include "warhammer-5.dmm"
 	#include "warhammer-6.dmm"
 	#include "warhammer-7.dmm"
-	#include "warhammer-8.dmm"
-	#include "warhammer-9.dmm"
 
 	#include "../../code/modules/lobby_music/generic_songs.dm"
 
