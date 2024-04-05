@@ -159,6 +159,8 @@
 			blood_max *= 0.7
 		if(CE_STABLE in owner.chem_effects) // inaprovaline
 			blood_max *= 0.8
+		if(CE_MAJORBLOODCLOT in owner.chem_effects)
+			blood_max *= 0.05 // Cuts down on bleeding, even when the wounds aren't fully patched.
 
 		if(world.time >= next_blood_squirt && istype(owner.loc, /turf) && do_spray.len)
 			owner.visible_message("<span class='danger'>Blood squirts from [pick(do_spray)]!</span>")
