@@ -302,3 +302,11 @@
 
 /datum/hallucination/fakeattack/hypo/start()
 	to_chat(holder, "<span class='notice'>You feel a tiny prick!</span>")
+
+//Fake Broken Limb
+/datum/hallucination/fakeattack/break
+	min_power = 50
+
+/datum/hallucination/fakeattack/break/start()
+	to_chat(holder, "<span class='danger'>You hear a sickening crack.</span>")
+	holder.agony_scream()
