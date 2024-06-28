@@ -191,8 +191,28 @@
 
 
 
+/datum/shuttle/autodock/ferry/guard
+	name = "g1"
+	warmup_time = 20
+	waypoint_station = "g_start"
+	waypoint_offsite = "g_end"
+	shuttle_area = /area/cadiaoutpost/oa/shuttle/g1
 
+/obj/effect/shuttle_landmark/ferry/g_end
+	name = "Guard Landing Pad"
+	landmark_tag = "g_end"
+	base_area = /area/cadiaoutpost/oa/shuttle/g2
+	base_turf = /turf/simulated/floor/concrete
 
+/obj/effect/shuttle_landmark/ferry/g_start
+	name = "Guard Hanger"
+	landmark_tag = "g_start"
+	base_area = /area/cadiaoutpost/gma/inquisitoracolyte
+	base_turf = /turf/simulated/floor/plating/reinforced
+
+/obj/machinery/computer/shuttle_control/ferry/guard
+	name = "Shuttle Control Console"
+	shuttle_tag = "g1"
 
 /datum/shuttle/autodock/ferry/tau
 	name = "tau1"
@@ -239,7 +259,6 @@
 /obj/machinery/computer/shuttle_control/ferry/cargo
 	name = "Cargo Elevator Console"
 	shuttle_tag = "Cargo1"
-
 
 
 

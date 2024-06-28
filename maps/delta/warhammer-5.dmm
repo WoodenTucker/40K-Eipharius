@@ -48,8 +48,6 @@
 "al" = (
 /obj/structure/table/rack,
 /obj/item/grenade/fire,
-/obj/item/grenade/fire,
-/obj/item/grenade/fire,
 /obj/effect/floor_decal/industrial/mark,
 /obj/machinery/light/small,
 /turf/simulated/floor/darksteel_floor{
@@ -168,14 +166,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/rtship1)
-"aH" = (
-/obj/structure/curtain/open/shower/security{
-	name = "expensive curtain";
-	icon_state = "closed";
-	pixel_y = 32
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/hallway/northern)
 "aI" = (
 /turf/simulated/floor/fancyfloor/carpet/grey{
 	dir = 6
@@ -349,7 +339,9 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/effect/landmark/start/imperialguard/recruit,
+/obj/effect/landmark/start/imperialguard/specialist{
+	name = "PDF Trooper"
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -382,9 +374,6 @@
 	pixel_x = -6
 	},
 /obj/item/cell/lasgun,
-/obj/item/cell/lasgun{
-	pixel_x = 6
-	},
 /obj/effect/floor_decal/industrial/mark,
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
@@ -919,10 +908,6 @@
 /obj/item/clothing/head/hairflower/blue,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
-"dh" = (
-/obj/machinery/light,
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/security/brig)
 "di" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 1
@@ -1319,13 +1304,6 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/hallway/northern)
-"eN" = (
-/mob/living/simple_animal/corgi/puppy{
-	health = 500;
-	name = "Chad"
-	},
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/security/brig)
 "eO" = (
 /obj/effect/floor_decal/industrial/mark,
 /obj/structure/closet/crate/large,
@@ -1340,15 +1318,6 @@
 "eP" = (
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/villageinside)
-"eR" = (
-/obj/effect/floor_decal/spline/plain{
-	dir = 4
-	},
-/mob/living/simple_animal/corgi/Ian{
-	health = 200
-	},
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/security/brig)
 "eS" = (
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tilethick";
@@ -2793,7 +2762,6 @@
 	name = "sleeping mat"
 	},
 /obj/item/bedsheet/hos,
-/obj/effect/landmark/start/imperialguard/commissar,
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 9
 	},
@@ -2895,40 +2863,6 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/northern)
-"kf" = (
-/obj/structure/curtain/open/shower/security{
-	name = "privacy curtain";
-	pixel_x = -32
-	},
-/mob/living/simple_animal/corgi/Lisa{
-	health = 150
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/security/brig)
-"kh" = (
-/obj/item/clothing/head/servicesgt{
-	pixel_x = -6;
-	pixel_y = 6
-	},
-/obj/item/storage/fancy/cigarettes/cigarello/mint{
-	pixel_y = 8;
-	pixel_x = 8
-	},
-/obj/item/flame/lighter/zippo,
-/obj/item/reagent_containers/food/drinks/bottle/small/beer{
-	pixel_y = -8;
-	pixel_x = -10
-	},
-/obj/item/reagent_containers/food/drinks/bottle/small/beer{
-	pixel_y = -6;
-	pixel_x = -4
-	},
-/obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table3";
-	dir = 1
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/security/brig)
 "ki" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 4
@@ -3101,13 +3035,7 @@
 "kO" = (
 /obj/structure/table/rack,
 /obj/item/ammo_magazine/bolt_pistol_magazine,
-/obj/item/ammo_magazine/bolt_pistol_magazine{
-	pixel_x = 8
-	},
 /obj/effect/floor_decal/industrial/mark,
-/obj/item/ammo_magazine/bolt_pistol_magazine{
-	pixel_x = -8
-	},
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
@@ -3373,9 +3301,10 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/hab/inside)
 "lP" = (
-/obj/random/loot/goodweapon,
-/obj/structure/table/rack/dark,
-/turf/simulated/floor/darkwood,
+/obj/effect/landmark/start/imperialguard/medicae,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/security/brig)
 "lQ" = (
 /obj/structure/warfare/barricade/concrete_barrier{
@@ -3693,17 +3622,6 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/service/inn)
-"nq" = (
-/obj/structure/table/rack/dark,
-/obj/item/clothing/accessory/storage/webbing_large{
-	pixel_y = -5
-	},
-/obj/item/clothing/accessory/holster/armpit{
-	pixel_y = -2
-	},
-/obj/item/cell/lasgun/hotshot,
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/security/brig)
 "nr" = (
 /obj/machinery/door/airlock/multi_tile/glass,
 /turf/simulated/floor/tiled/dark{
@@ -3775,14 +3693,6 @@
 	},
 /area/cadiaoutpost/oa/service/chapel)
 "nD" = (
-/obj/item/clothing/accessory/medal/iron/Administratum{
-	pixel_y = 15;
-	pixel_x = 8
-	},
-/obj/item/reagent_containers/food/drinks/bottle/amasecexpensive{
-	pixel_y = 11;
-	pixel_x = -8
-	},
 /obj/item/reagent_containers/food/drinks/glass2/shot{
 	pixel_y = -5;
 	pixel_x = 9
@@ -3794,6 +3704,10 @@
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tilethick";
 	dir = 4
+	},
+/obj/item/reagent_containers/food/drinks/bottle/premiumwine{
+	pixel_y = 9;
+	pixel_x = 3
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/brig)
@@ -3967,14 +3881,6 @@
 /obj/effect/floor_decal/turf/metal/three,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/hab/inside)
-"oo" = (
-/obj/structure/bed/padded,
-/obj/item/bedsheet/green{
-	color = "grey"
-	},
-/obj/effect/landmark/start/imperialguard,
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/security/brig)
 "oq" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	icon_state = "4";
@@ -4132,14 +4038,8 @@
 /area/cadiaoutpost/oa/hallway/northern)
 "oS" = (
 /obj/structure/table/rack,
-/obj/item/gun/energy/las/lasgun/lucius{
-	pixel_y = 6
-	},
-/obj/item/gun/energy/las/lasgun/lucius,
-/obj/item/gun/energy/las/lasgun/lucius{
-	pixel_y = -6
-	},
 /obj/effect/floor_decal/industrial/mark,
+/obj/item/gun/energy/las/lasgun/lucius,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -4263,16 +4163,11 @@
 	},
 /area/cadiaoutpost/oa/security/brig)
 "pq" = (
-/obj/item/clothing/mask/gas/commissar{
-	pixel_y = -1
-	},
-/obj/item/clothing/head/commissar/adept{
-	pixel_y = 14
-	},
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tileendtable";
 	dir = 4
 	},
+/obj/item/device/boombox,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/brig)
 "pr" = (
@@ -4624,22 +4519,6 @@
 /obj/effect/water/top,
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/new_hive/hive_city)
-"qI" = (
-/obj/item/newspaper{
-	pixel_y = 10;
-	pixel_x = 7
-	},
-/obj/machinery/light/small{
-	dir = 8;
-	icon_state = "bulb1";
-	light_color = "#234F1E"
-	},
-/obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table3";
-	dir = 4
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/security/brig)
 "qJ" = (
 /obj/structure/lattice,
 /obj/structure/lattice,
@@ -4988,18 +4867,6 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/northern)
-"rY" = (
-/obj/machinery/recharger,
-/obj/item/defibrillator/loaded,
-/obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table3";
-	dir = 1
-	},
-/obj/effect/floor_decal/newcorner/blue/solid,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/security/brig)
 "sa" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 1
@@ -5215,13 +5082,6 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/new_hive/hive_city)
-"ta" = (
-/obj/effect/floor_decal/newcorner/blue/solid,
-/obj/structure/table/rack/dark,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/security/brig)
 "td" = (
 /obj/item/reagent_containers/food/drinks/bottle/small/beer{
 	pixel_x = 10
@@ -5368,12 +5228,12 @@
 /area/cadiaoutpost/oa/security/brig)
 "tJ" = (
 /obj/structure/table/rack,
-/obj/item/gun/energy/las/lasgun/accatran,
 /obj/effect/floor_decal/industrial/mark,
 /obj/machinery/light{
 	dir = 1;
 	icon_state = "tube1"
 	},
+/obj/item/gun/energy/las/lasgun,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -5628,7 +5488,9 @@
 "uA" = (
 /obj/structure/bed/barrack,
 /obj/structure/bed/barrack1,
-/obj/effect/landmark/start/imperialguard/medicae,
+/obj/effect/landmark/start/imperialguard/specialist{
+	name = "PDF Trooper"
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -5820,14 +5682,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/service/inn)
-"vr" = (
-/obj/structure/curtain/open/shower/security{
-	name = "expensive curtain";
-	pixel_x = -32;
-	icon_state = "closed"
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/hallway/northern)
 "vs" = (
 /obj/structure/flora/pottedplant/thinbush{
 	pixel_y = 22;
@@ -6592,18 +6446,6 @@
 /obj/effect/landmark/start/village,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/hab/inside)
-"yr" = (
-/obj/machinery/recharger,
-/obj/item/defibrillator/loaded,
-/obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table3";
-	dir = 8
-	},
-/obj/effect/floor_decal/newcorner/blue/solid,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/security/brig)
 "yu" = (
 /obj/structure/torchwall{
 	dir = 8;
@@ -7031,12 +6873,6 @@
 	dir = 10
 	},
 /area/cadiaoutpost/oa/hallway/northern)
-"zS" = (
-/obj/item/storage/firstaid/surgery,
-/obj/effect/floor_decal/newcorner/blue/solid,
-/obj/structure/table/steel_reinforced,
-/turf/simulated/floor/ceramic/surgery2,
-/area/cadiaoutpost/oa/security/brig)
 "zT" = (
 /obj/structure/table/rack,
 /obj/item/mortar_shell/flare/blue,
@@ -7702,13 +7538,6 @@
 	dir = 5
 	},
 /area/cadiaoutpost/oa/service/chapel)
-"Ch" = (
-/obj/machinery/organ_printer,
-/obj/effect/floor_decal/newcorner/blue/solid,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/security/brig)
 "Ck" = (
 /turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/new_hive/hive_city)
@@ -7732,14 +7561,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/villageinside)
-"Cn" = (
-/obj/structure/bed/barrack,
-/obj/structure/bed/barrack1,
-/obj/effect/landmark/start/imperialguard/recruit,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/security/brig)
 "Co" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/darkwood/rotten,
@@ -7877,27 +7698,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/roguet)
-"CO" = (
-/obj/item/device/healthanalyzer{
-	pixel_x = 8
-	},
-/obj/item/reagent_containers/hypospray/autoinjector/morphine{
-	pixel_x = -7;
-	pixel_y = 12
-	},
-/obj/item/reagent_containers/hypospray/autoinjector/morphine{
-	pixel_x = -7
-	},
-/obj/item/reagent_containers/spray/cleaner/warfare{
-	pixel_y = 16;
-	pixel_x = 10
-	},
-/obj/effect/floor_decal/newcorner/blue/solid,
-/obj/structure/table/rack/dark,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/security/brig)
 "CP" = (
 /turf/simulated/floor/ceramic/surgery{
 	dir = 6
@@ -8172,15 +7972,6 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/shuttle/station2)
-"DL" = (
-/obj/structure/curtain/open/shower/security{
-	name = "privacy curtain";
-	pixel_x = -32
-	},
-/mob/living/simple_animal/corgi/cpl_buddy,
-/obj/structure/dogbed,
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/security/brig)
 "DM" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 8
@@ -8523,11 +8314,12 @@
 	},
 /area/cadiaoutpost/oa/shuttle/roguet)
 "EQ" = (
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+/obj/effect/landmark/start/imperialguard/sniper{
+	name = "PDF Captain"
 	},
-/turf/simulated/floor/darkwood,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/security/brig)
 "ET" = (
 /obj/structure/closet/cabinet{
@@ -9158,18 +8950,6 @@
 /obj/item/stack/thrones3,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/hab/inside)
-"GZ" = (
-/obj/item/device/healthanalyzer{
-	pixel_x = 8
-	},
-/obj/item/reagent_containers/spray/sterilizine{
-	pixel_x = -6
-	},
-/obj/structure/table/steel_reinforced,
-/obj/item/FixOVein,
-/obj/effect/floor_decal/newcorner/blue/solid,
-/turf/simulated/floor/ceramic/surgery2,
-/area/cadiaoutpost/oa/security/brig)
 "Ha" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 8
@@ -9463,7 +9243,9 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/effect/landmark/start/imperialguard/medicae,
+/obj/effect/landmark/start/imperialguard/specialist{
+	name = "PDF Trooper"
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -9599,14 +9381,6 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"Iy" = (
-/obj/machinery/door/airlock/cone{
-	maxhealth = 3000;
-	name = "Guard Sergeant Quarters";
-	req_one_access = list(67,331)
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/security/brig)
 "Iz" = (
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /turf/simulated/floor/darkfloor,
@@ -9618,20 +9392,6 @@
 	},
 /turf/simulated/open,
 /area/cadiaoutpost/oa/villageinside)
-"IB" = (
-/obj/item/paper_bin{
-	pixel_y = 8
-	},
-/obj/item/pen/multi{
-	pixel_y = 4
-	},
-/obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table3";
-	dir = 8
-	},
-/obj/item/book/manual/law,
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/security/brig)
 "ID" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/darkwood,
@@ -9893,7 +9653,6 @@
 /area/cadiaoutpost/oa/security/brig)
 "JG" = (
 /obj/structure/table/rack,
-/obj/item/grenade/frag/high_yield/krak,
 /obj/item/grenade/frag/high_yield/krak,
 /obj/effect/floor_decal/industrial/mark,
 /turf/simulated/floor/darksteel_floor{
@@ -10352,10 +10111,6 @@
 /area/cadiaoutpost/oa/shuttle/roguet)
 "Ls" = (
 /obj/structure/table/rack,
-/obj/item/gun/energy/las/lasgun/catachan{
-	pixel_y = 8
-	},
-/obj/item/gun/energy/las/lasgun/catachan,
 /obj/effect/floor_decal/industrial/mark,
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -10490,10 +10245,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/service/inn)
-"LY" = (
-/obj/structure/closet/secure_closet/warden,
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/security/brig)
 "Ma" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 10
@@ -10621,11 +10372,7 @@
 /obj/item/cell/lasgun/hotshot{
 	pixel_x = -6
 	},
-/obj/item/cell/lasgun/hotshot{
-	pixel_x = 6
-	},
 /obj/effect/floor_decal/industrial/mark,
-/obj/item/gun/energy/las/hotshot,
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
@@ -11343,12 +11090,6 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
-"OU" = (
-/obj/effect/landmark/start{
-	name = "Commissar"
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/security/brig)
 "OV" = (
 /obj/structure/toilet{
 	dir = 8;
@@ -11661,10 +11402,6 @@
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/service/inn)
 "PU" = (
-/obj/item/card/id/commissar/spare{
-	pixel_x = -8;
-	pixel_y = -5
-	},
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tilethick";
 	dir = 4
@@ -11672,7 +11409,6 @@
 /obj/item/device/cassette/starcraft_1,
 /obj/item/device/cassette/grimdark,
 /obj/item/device/cassette/church1,
-/obj/item/device/boombox,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/brig)
 "PV" = (
@@ -11773,7 +11509,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/effect/landmark/start/imperialguard/sniper,
+/obj/effect/landmark/start/imperialguard/bullgryn,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -11848,14 +11584,12 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
 "QC" = (
-/obj/structure/closet/secure_closet/hos{
-	color = "grey";
-	req_one_access = list(67)
+/obj/item/device/radio/headset/red_team/all,
+/obj/item/device/radio/headset/red_team/all,
+/obj/item/device/radio/headset/red_team/all,
+/obj/structure/closet/secure_closet/personal{
+	color = "grey"
 	},
-/obj/item/device/megaphone,
-/obj/item/device/radio/headset/red_team/all,
-/obj/item/device/radio/headset/red_team/all,
-/obj/item/device/radio/headset/red_team/all,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/brig)
 "QD" = (
@@ -11885,10 +11619,6 @@
 /area/cadiaoutpost/oa/service/hab/inside)
 "QI" = (
 /obj/structure/table/rack,
-/obj/item/grenade/smokebomb/mortar,
-/obj/item/grenade/smokebomb/mortar,
-/obj/item/grenade/smokebomb/mortar/fire,
-/obj/item/grenade/smokebomb/mortar/fire,
 /obj/effect/floor_decal/industrial/mark,
 /obj/machinery/light/small{
 	dir = 1;
@@ -12020,7 +11750,6 @@
 /obj/structure/table/rack/shelf{
 	color = "grey"
 	},
-/obj/item/melee/sword/commissword,
 /obj/machinery/light{
 	dir = 1;
 	icon_state = "tube1"
@@ -12508,18 +12237,6 @@
 /obj/item/storage/belt/warfare{
 	pixel_y = 4
 	},
-/obj/item/storage/belt/warfare{
-	pixel_y = 8
-	},
-/obj/item/storage/belt/warfare{
-	pixel_y = 8
-	},
-/obj/item/storage/belt/warfare{
-	pixel_y = 12
-	},
-/obj/item/storage/belt/warfare{
-	pixel_y = 12
-	},
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
@@ -12607,6 +12324,14 @@
 /turf/simulated/floor/factory_floor{
 	dir = 1
 	},
+/area/cadiaoutpost/new_hive/hive_city)
+"SW" = (
+/obj/structure/curtain/open/shower/security{
+	name = "expensive curtain";
+	pixel_x = -32;
+	icon_state = "closed"
+	},
+/turf/simulated/open,
 /area/cadiaoutpost/new_hive/hive_city)
 "SX" = (
 /obj/effect/floor_decal/newcorner/reinforced{
@@ -12765,13 +12490,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/brig)
-"Tt" = (
-/obj/effect/floor_decal/newcorner/blue/solid,
-/obj/machinery/vending/medical,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/security/brig)
 "Tu" = (
 /obj/structure/closet/hive/narnia{
 	name = "Narnia closet"
@@ -12831,12 +12549,6 @@
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tileendtable";
 	dir = 8
-	},
-/obj/item/reagent_containers/food/snacks/enchiladas{
-	name = "Fried Traitor"
-	},
-/obj/item/reagent_containers/food/snacks/dionaroast{
-	name = "roasted gretchin"
 	},
 /obj/item/reagent_containers/food/snacks/meatpie{
 	name = "deserter pie"
@@ -13928,15 +13640,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/chapel)
-"Xp" = (
-/obj/machinery/body_scanconsole{
-	dir = 4;
-	icon_state = "body_scannerconsole"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/security/brig)
 "Xq" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1
@@ -14389,7 +14092,6 @@
 /obj/item/cell/lasgun{
 	pixel_x = -6
 	},
-/obj/item/cell/lasgun,
 /obj/effect/floor_decal/industrial/mark,
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
@@ -41136,15 +40838,15 @@ vt
 vt
 vt
 vt
-Qh
-Qh
-Lz
-Lz
-Qh
-Qh
-Lz
-Lz
-Qh
+cF
+cF
+cF
+cF
+cF
+cF
+cF
+cF
+cF
 Qh
 Qh
 Lz
@@ -41388,15 +41090,15 @@ vt
 vt
 vt
 vt
-Qh
-Lm
-vr
-vr
-Lm
-Wx
-vr
-vr
-Lm
+cF
+cF
+cF
+cF
+cF
+cF
+cF
+cF
+cF
 Qh
 fT
 ZB
@@ -41640,15 +41342,15 @@ vt
 vt
 vt
 vt
-Qh
-Lm
-Lm
-Lm
-Lm
-Lm
-Lm
-Lm
-Lm
+cF
+cF
+cF
+cF
+cF
+cF
+cF
+cF
+cF
 Qh
 aT
 zR
@@ -41892,15 +41594,15 @@ vt
 vt
 vt
 vt
+cF
+cF
+cF
 Qh
-LP
-Lm
-Lm
-Lm
-Lm
-Lm
-Lm
-Lm
+Qh
+Qh
+Lz
+Lz
+Qh
 Qh
 Pm
 Sl
@@ -42141,18 +41843,18 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
 Qh
-Lm
-Lm
-Lm
-Lm
-Lm
-Lm
-Lm
-ID
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
 Qh
 gs
 sj
@@ -42393,18 +42095,18 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-Lz
-aH
-Lm
-Lm
-Lm
-Lm
-Lm
-Lm
-Lm
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
 Qh
 Qh
 Qh
@@ -42645,18 +42347,18 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
-Lz
-aH
-Lm
-Lm
-Lm
-Lm
-Lm
-Lm
-Lm
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
 Qh
 LR
 zR
@@ -42897,18 +42599,18 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
 Qh
-LP
-Lm
-Lm
-Lm
-Lm
-Lm
-Lm
-ID
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
 Qh
 yj
 Sl
@@ -43149,18 +42851,18 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
 Qh
-Lm
-Lm
-Lm
-Lm
-Lm
-Lm
-Lm
-Lm
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
 Qh
 Lv
 XC
@@ -43401,18 +43103,18 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
 Qh
-Lm
-Lm
-Lm
-Lm
-Lm
-Lm
-Lm
-Lm
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
 Qh
 Qh
 Qh
@@ -43653,18 +43355,18 @@ vt
 vt
 vt
 vt
-vt
-vt
-vt
 Qh
-Lm
-Lm
-pT
-Lm
-Lm
-pT
-Lm
-Lm
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
+Qh
 Qh
 zV
 eM
@@ -43906,14 +43608,14 @@ vt
 vt
 vt
 vt
-vt
-vt
+SW
+SW
 Qh
 Qh
 Qh
 Qh
-se
-se
+Qh
+Qh
 Qh
 Qh
 Qh
@@ -50865,15 +50567,15 @@ UB
 UB
 UB
 UO
-zS
-eI
 UO
-Ch
-Tt
-ta
-CO
-rY
-yr
+UO
+UO
+UO
+UO
+UO
+UO
+UO
+UO
 UO
 UO
 UO
@@ -51116,16 +50818,16 @@ UB
 UB
 UB
 UB
-VC
-Gl
-Vx
 UO
-eF
-HU
-HU
-HU
-Xp
-oB
+UO
+UO
+UO
+UO
+UO
+UO
+UO
+UO
+UO
 UO
 HU
 YP
@@ -51369,16 +51071,16 @@ UB
 UB
 UB
 UO
-Rt
-Vx
-kX
-wk
-Wr
-Wr
-Rg
-Yj
-wk
-Ws
+UO
+UO
+UO
+UO
+UO
+UO
+UO
+UO
+UO
+UO
 HU
 RB
 dl
@@ -51621,15 +51323,15 @@ UB
 UB
 UB
 UO
-GZ
 Vx
-FZ
-wk
-vx
-vx
-my
-my
-wk
+Vx
+UO
+UO
+UO
+UO
+UO
+UO
+UO
 UO
 YI
 mq
@@ -53896,8 +53598,8 @@ UO
 jm
 ZJ
 CR
-HU
-HU
+EQ
+lP
 VO
 Lw
 lv
@@ -54401,7 +54103,7 @@ gz
 rk
 VB
 bp
-Cn
+uA
 UO
 Lw
 Lw
@@ -54904,7 +54606,7 @@ UO
 UO
 BB
 Jn
-kf
+Jn
 Jn
 UO
 Lw
@@ -55906,7 +55608,7 @@ UB
 eP
 Rd
 fu
-OU
+fu
 nD
 UO
 Ao
@@ -56163,7 +55865,7 @@ TE
 UO
 Ao
 Tm
-eN
+Tm
 Tm
 Tb
 UO
@@ -56414,7 +56116,7 @@ fu
 fu
 yn
 rT
-eR
+AP
 AP
 Al
 ny
@@ -57931,8 +57633,8 @@ fi
 cJ
 fi
 UO
-Iy
-FZ
+UO
+UO
 UO
 UO
 gP
@@ -58183,8 +57885,8 @@ UO
 UO
 UO
 UO
-fu
-DL
+UO
+UO
 UO
 Vc
 Bf
@@ -58432,11 +58134,11 @@ UO
 UO
 UO
 UO
-kh
-qI
-IB
-fu
-dh
+UO
+UO
+UO
+UO
+UO
 UO
 MP
 Bf
@@ -58684,11 +58386,11 @@ UO
 UO
 UO
 UO
-nq
-gv
-fu
-fu
-fu
+UO
+UO
+UO
+UO
+UO
 UO
 dj
 Bf
@@ -58936,11 +58638,11 @@ gS
 gS
 gS
 UO
-lP
-oo
-EQ
-fu
-LY
+UO
+UO
+UO
+UO
+UO
 UO
 AG
 ip
