@@ -502,8 +502,8 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	total_positions = 1
 	spawn_positions = 1
 	head_position = 1
-	selection_color = "#540c97"
-	department_flag = COM
+	selection_color = "#23742a"
+	department_flag = SEC
 	req_admin_notify = TRUE
 	social_class = SOCIAL_CLASS_MAX
 	announced = 0
@@ -530,6 +530,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		H.add_skills(rand(10,11),rand(9,10),rand(3,5),5,rand(2,4)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.witchblood()
+		H.get_idcard()?.access = list(20, 331, access_ai_upload, access_heads, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
