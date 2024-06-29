@@ -140,7 +140,7 @@ var/global/list/sparring_attack_cache = list()
 	attack_noun = list("fist")
 	eye_attack_text = "fingers"
 	eye_attack_text_victim = "digits"
-	damage = 28
+	damage = 18
 
 /datum/unarmed_attack/punch/show_attack(var/mob/living/carbon/human/user, var/mob/living/carbon/human/target, var/zone, var/attack_damage)
 	var/obj/item/organ/external/affecting = target.get_organ(zone)
@@ -184,7 +184,7 @@ var/global/list/sparring_attack_cache = list()
 	attack_noun = list("fist")
 	eye_attack_text = "fingers"
 	eye_attack_text_victim = "digits"
-	damage = 55
+	damage = 38
 
 /datum/unarmed_attack/kick
 	attack_verb = list("kicked", "kicked", "kicked", "kneed")
@@ -227,13 +227,13 @@ var/global/list/sparring_attack_cache = list()
 	attack_verb = list("kicked", "kicked", "kicked", "kneed")
 	attack_noun = list("kick", "kick", "kick", "knee strike")
 	attack_sound = "swing_hit"
-	damage = 65
+	damage = 40
 
 /datum/unarmed_attack/stomp
 	attack_verb = list("stomped on")
 	attack_noun = list("stomp")
 	attack_sound = "swing_hit"
-	damage = 25
+	damage = 18
 
 /datum/unarmed_attack/stomp/is_usable(var/mob/living/carbon/human/user, var/mob/living/carbon/human/target, var/zone)
 	if(!istype(target))
@@ -278,7 +278,7 @@ var/global/list/sparring_attack_cache = list()
 	attack_verb = list("stomped on")
 	attack_noun = list("stomp")
 	attack_sound = "swing_hit"
-	damage = 70
+	damage = 42
 
 
 /datum/unarmed_attack/light_strike
@@ -343,7 +343,7 @@ var/global/list/sparring_attack_cache = list()
 	attack_noun = list("claws")
 	eye_attack_text = "blades"
 	eye_attack_text_victim = "daggers"
-	damage = 100
+	damage = 95
 	sharp = 1
 	attack_sound = 'sound/effects/nidslash.ogg'
 	damtype = TOX
@@ -353,16 +353,16 @@ var/global/list/sparring_attack_cache = list()
 	attack_noun = list("fist")
 	eye_attack_text = "jabs"
 	eye_attack_text_victim = "digits"
-	damage = 45
+	damage = 36
 
 /datum/unarmed_attack/kick/necron
 	attack_verb = list("kicked", "kicked", "kicked", "kneed")
 	attack_noun = list("kick", "kick", "kick", "knee strike")
 	attack_sound = "swing_hit"
-	damage = 55
+	damage = 39
 
 /datum/unarmed_attack/stomp/necron
 	attack_verb = list("stomped on")
 	attack_noun = list("stomp")
 	attack_sound = "swing_hit"
-	damage = 55
+	damage = 38

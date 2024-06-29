@@ -1943,8 +1943,8 @@ obj/item/clothing/suit/armor
 	sales_price = 40
 
 /obj/item/clothing/suit/armor/royalguard
-	name = "Fancy Carapace"
-	desc = "The Carapace Armor of a local mercenary hired by the de Burgen family."
+	name = "Captain's Carapace"
+	desc = "The Carapace Armor of the local Messian Captain."
 	icon_state = "royalgc"
 	item_state = "royalgc"
 	armor = list(melee = 9, bullet = 38, laser = 38, energy = 30, bomb = 40, bio = 30, rad = 50)

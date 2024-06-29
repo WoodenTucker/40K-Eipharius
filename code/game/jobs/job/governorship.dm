@@ -496,19 +496,19 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 */
 
 /datum/job/royalguard
-	title = "Royal Guard"
-	supervisors = "The Governor and his family."
+	title = "PDF Captain"
+	supervisors = "The De Burgen Family, Inquisiton and Militarum High Command."
 	department_flag = COM
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	head_position = 1
 	selection_color = "#540c97"
 	department_flag = COM
 	req_admin_notify = TRUE
 	social_class = SOCIAL_CLASS_MAX
 	announced = 0
-	access = list(20, 331, 333, 63,  access_ai_upload, access_heads) 			//See get_access()
-	minimal_access = list(20, 331,  access_ai_upload, access_heads)
+	access = list(20, 331, access_ai_upload, access_heads, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_guard_armory, access_armory) 			//See get_access()
+	minimal_access = list(20, 331, access_ai_upload, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
 	minimal_player_age = 19
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/royalguard
@@ -523,7 +523,9 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	cultist_chance = 4
 
 	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
 		..()
+		H.fully_replace_character_name("Captain [current_name]")
 		H.add_stats(rand(15,17), rand(16,18), rand(18,19), rand(10,15)) //still not as good as a arbites
 		H.add_skills(rand(10,11),rand(9,10),rand(3,5),5,rand(2,4)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
@@ -532,6 +534,5 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.get_idcard()?.access = list(20, 331, access_ai_upload, access_heads)
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Mercenary serving as an bodyguard to the Governor and his family the only man you are loyal to. You unlike most locals trust the governor with your life and know you depend on him, that if he dies his sucessor will most likely have you executed, so yes even if an inquisitor or space marine demands the lords execution you are to defend the de Burgen family...</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the senior officer of the Messian PDF serving as the personal military might of the Planetary Governor and De Burgen family, while you owe allegiance to The Astra Militarum, your absolute loyalty remains with the House of De Burgen. The relative local politics of Messina make it unclear as to the chain of command when dealing with the Militarum and it is safe to say that you are officially in charge of planetary defense, though in the presence of Inquisitors, Militarum High Command or worse local laws tend to crumble under their political weight.</font></b></span>")

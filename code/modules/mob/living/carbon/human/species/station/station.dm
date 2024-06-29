@@ -1,6 +1,8 @@
 /datum/species/human
 	name = SPECIES_HUMAN
 	name_plural = "Humans"
+	brute_mod =      0.9                  
+	burn_mod =       0.9  
 	primitive_form = "Monkey"
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite)
 	blurb = "Humanity originated in the Solar System, and over the last five centuries has spread colonies across a wide swathe of space. They hold a wide range of forms and creeds."

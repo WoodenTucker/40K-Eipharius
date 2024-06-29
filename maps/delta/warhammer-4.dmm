@@ -1546,15 +1546,6 @@
 /obj/effect/decal/cleanable/cobweb,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
-"bsi" = (
-/obj/structure/bed/barrack,
-/obj/structure/bed/barrack1,
-/obj/effect/landmark/start/imperialguard/specialist,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "dark1"
-	},
-/area/cadiaoutpost/oa/security/armory)
 "bso" = (
 /obj/item/ammo_magazine/flamer,
 /turf/simulated/floor/stone,
@@ -1974,6 +1965,9 @@
 	},
 /turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/new_hive/hive_city)
+"bHk" = (
+/turf/simulated/floor/concrete,
+/area/cadiaoutpost/oa/shuttle/g2)
 "bHl" = (
 /obj/effect/floor_decal/newcorner/black{
 	dir = 1
@@ -2733,15 +2727,6 @@
 /obj/structure/warfare/barricade/concrete_barrier,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/hive_city)
-"cod" = (
-/obj/structure/bed/barrack,
-/obj/structure/bed/barrack1,
-/obj/effect/landmark/start/imperialguard/medicae,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "dark1"
-	},
-/area/cadiaoutpost/oa/security/armory)
 "cor" = (
 /obj/item/device/cassette/orks1,
 /turf/simulated/floor/trench,
@@ -2880,6 +2865,16 @@
 	dir = 9
 	},
 /area/cadiaoutpost/oa/village/pathfinder)
+"csC" = (
+/obj/effect/floor_decal/turf/splate,
+/obj/machinery/door/airlock/imperiumdoor{
+	req_one_access = list(63,10,331);
+	name = "Imperialis Doorway - Checkpoint Door"
+	},
+/turf/simulated/floor/factory_floor{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/shuttle/station1)
 "csP" = (
 /obj/effect/floor_decal/turf/metal/metal_wall{
 	dir = 4;
@@ -16060,6 +16055,10 @@
 	},
 /turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/new_hive/hive_city)
+"mhx" = (
+/obj/effect/shuttle_landmark/ferry/g_end,
+/turf/simulated/floor/concrete,
+/area/cadiaoutpost/oa/shuttle/g2)
 "mhF" = (
 /obj/structure/flora/yes/erista,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -19123,15 +19122,6 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/hab/inside)
-"oMq" = (
-/obj/structure/bed/barrack,
-/obj/structure/bed/barrack1,
-/obj/effect/landmark/start/imperialguard/recruit,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "dark1"
-	},
-/area/cadiaoutpost/oa/security/armory)
 "oML" = (
 /obj/effect/floor_decal/newcorner/grass,
 /turf/simulated/floor/exoplanet/grass,
@@ -24649,7 +24639,6 @@
 "sUn" = (
 /obj/structure/bed/barrack,
 /obj/structure/bed/barrack1,
-/obj/effect/landmark/start/imperialguard/guard,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -33678,8 +33667,8 @@ qiL
 qiL
 qiL
 qiL
-nSI
-nSI
+vAK
+vAK
 eOr
 eOr
 eOr
@@ -33930,8 +33919,12 @@ qiL
 qiL
 qiL
 qiL
-nSI
-nSI
+vAK
+vAK
+eOr
+eOr
+eOr
+eOr
 eOr
 rwV
 rwV
@@ -33941,10 +33934,6 @@ rwV
 rwV
 rwV
 rwV
-eOr
-eOr
-eOr
-eOr
 rwV
 rwV
 rwV
@@ -34182,21 +34171,21 @@ qiL
 qiL
 qiL
 qiL
-nSI
-nSI
+vAK
+vAK
 eOr
-rwV
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
 eOr
 ryD
 igi
-eOr
+eXC
+eXC
+eXC
+eXC
+eXC
+eXC
+eXC
+eXC
+eXC
 eXC
 eXC
 eXC
@@ -34434,27 +34423,27 @@ qiL
 qiL
 qiL
 qiL
-nSI
-nSI
+vAK
+vAK
 mVJ
-rwV
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
 eOr
 ryD
 ovu
-eOr
 eXC
-eXC
-eXC
-eXC
-eXC
-eXC
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bXK
 eXC
 rwV
 fde
@@ -34686,27 +34675,27 @@ qiL
 qiL
 qiL
 qiL
-nSI
-nSI
+vAK
+vAK
 mVJ
-rwV
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
 eOr
 arc
 pef
-eOr
 eXC
-eXC
-eXC
-eXC
-eXC
-eXC
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+hUu
 eXC
 rwV
 fde
@@ -34938,26 +34927,26 @@ qiL
 qiL
 qiL
 qiL
-nSI
-nSI
+vAK
+vAK
 mVJ
 rwV
 eXC
 eXC
 eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-bXK
-eXC
-eXC
-eXC
-eXC
-eXC
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
 eXC
 eXC
 rwV
@@ -35190,26 +35179,26 @@ qiL
 qiL
 qiL
 qiL
-nSI
-nSI
+vAK
+vAK
 mVJ
 rwV
 eXC
 eXC
 eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-hUu
-eXC
-eXC
-eXC
-eXC
-eXC
+bHk
+bHk
+mhx
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
 eXC
 eXC
 rwV
@@ -35442,26 +35431,26 @@ qiL
 qiL
 qiL
 qiL
-nSI
-nSI
+vAK
+vAK
 mVJ
 rwV
 eXC
 eXC
 eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
 eXC
 eXC
 rwV
@@ -35694,26 +35683,26 @@ qiL
 qiL
 qiL
 qiL
-nSI
-nSI
+vAK
+vAK
 mVJ
 rwV
 eXC
 eXC
 eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
 eXC
 eXC
 rwV
@@ -35946,26 +35935,26 @@ qiL
 qiL
 qiL
 qiL
-nSI
-nSI
+vAK
+vAK
 mVJ
 rwV
 eXC
 eXC
 eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
-eXC
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
+bHk
 eXC
 eXC
 rwV
@@ -36198,8 +36187,8 @@ qiL
 qiL
 qiL
 qiL
-nSI
-nSI
+vAK
+vAK
 mVJ
 rwV
 eXC
@@ -37471,7 +37460,7 @@ iVb
 iVb
 irL
 eOr
-uWR
+csC
 irL
 iVb
 iVb
@@ -66609,8 +66598,8 @@ eCh
 eCh
 eCh
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -66861,8 +66850,8 @@ eCh
 eCh
 eCh
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -67113,8 +67102,8 @@ fsf
 qom
 fsf
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -67365,8 +67354,8 @@ fsf
 fsf
 fsf
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -67617,8 +67606,8 @@ fsf
 qom
 fsf
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -67869,8 +67858,8 @@ fsf
 qom
 qom
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -68121,8 +68110,8 @@ fsf
 fsf
 qom
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 nYV
@@ -68373,8 +68362,8 @@ qom
 qom
 qom
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -68625,8 +68614,8 @@ qom
 nZZ
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -68877,8 +68866,8 @@ qom
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -69129,8 +69118,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -69381,8 +69370,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -69633,8 +69622,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -69885,8 +69874,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -70898,8 +70887,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -71150,8 +71139,8 @@ bKK
 fUE
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -71402,8 +71391,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -71654,8 +71643,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -71906,8 +71895,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -72158,8 +72147,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 nYV
 kUG
 kUG
@@ -72410,8 +72399,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 nYV
 kUG
@@ -72662,8 +72651,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -72914,8 +72903,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -73166,8 +73155,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -73418,17 +73407,6 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
-kUG
-kUG
-kUG
-kUG
-nYV
-kUG
-kUG
-kUG
-kUG
 kUG
 kUG
 kUG
@@ -73440,17 +73418,28 @@ kUG
 kUG
 kUG
 kUG
+kUG
+kUG
+kUG
+kUG
+kUG
+kUG
+nYV
+kUG
+kUG
+kUG
+kUG
 gsa
 gsa
 gsa
 gsa
 gsa
-bsi
-oMq
-cod
 sUn
 sUn
-oMq
+sUn
+sUn
+sUn
+sUn
 gsa
 dUq
 dUq
@@ -73670,8 +73659,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -73922,8 +73911,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -74174,8 +74163,8 @@ bKK
 fUE
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 nYV
 kUG
 kUG
@@ -74426,8 +74415,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -74678,8 +74667,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -74930,8 +74919,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -75182,8 +75171,8 @@ bKK
 fUE
 bKK
 xpr
-xpr
-upV
+kUG
+nYV
 kUG
 kUG
 nYV
@@ -75434,8 +75423,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -75686,8 +75675,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -75938,8 +75927,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -76190,8 +76179,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -76442,8 +76431,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -76694,8 +76683,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 kUG
 kUG
 kUG
@@ -76946,8 +76935,8 @@ bKK
 bKK
 bKK
 xpr
-xpr
-xpr
+kUG
+kUG
 nYV
 kUG
 kUG
@@ -79476,7 +79465,7 @@ bKK
 bKK
 xpr
 xpr
-xpr
+kUG
 kUG
 kUG
 kUG
@@ -79728,7 +79717,7 @@ fUE
 bKK
 xpr
 upV
-xpr
+kUG
 kUG
 kUG
 kUG
@@ -79980,7 +79969,7 @@ bKK
 bKK
 xpr
 xpr
-xpr
+kUG
 kUG
 kUG
 kUG
@@ -80232,7 +80221,7 @@ bKK
 fUE
 xpr
 xpr
-xpr
+kUG
 kUG
 kUG
 kUG
@@ -80484,7 +80473,7 @@ bKK
 bKK
 xpr
 xpr
-xpr
+kUG
 kUG
 kUG
 kUG
@@ -80736,7 +80725,7 @@ bKK
 bKK
 xpr
 xpr
-xpr
+kUG
 kUG
 kUG
 kUG
@@ -80988,7 +80977,7 @@ bKK
 bKK
 xpr
 xpr
-xpr
+kUG
 kUG
 kUG
 kUG
@@ -81240,7 +81229,7 @@ bKK
 bKK
 xpr
 xpr
-xpr
+kUG
 kUG
 nYV
 kUG
@@ -81492,7 +81481,7 @@ fUE
 bKK
 xpr
 xpr
-xpr
+kUG
 kUG
 kUG
 kUG
@@ -81744,7 +81733,7 @@ bKK
 bKK
 xpr
 xpr
-xpr
+kUG
 kUG
 kUG
 kUG
@@ -81996,7 +81985,7 @@ bKK
 bKK
 xpr
 upV
-xpr
+kUG
 kUG
 kUG
 kUG
@@ -82248,7 +82237,7 @@ bKK
 bKK
 xpr
 xpr
-xpr
+kUG
 kUG
 kUG
 kUG
@@ -82500,7 +82489,7 @@ bKK
 bKK
 xpr
 xpr
-xpr
+kUG
 kUG
 kUG
 kUG
@@ -82752,7 +82741,7 @@ oTj
 bKK
 xpr
 xpr
-xpr
+kUG
 nYV
 kUG
 kUG
@@ -83004,7 +82993,7 @@ bKK
 bKK
 xpr
 xpr
-xpr
+kUG
 kUG
 kUG
 kUG
@@ -83256,7 +83245,7 @@ bKK
 bKK
 xpr
 xpr
-xpr
+kUG
 kUG
 kUG
 kUG
@@ -83508,7 +83497,7 @@ bKK
 bKK
 xpr
 xpr
-xpr
+kUG
 kUG
 kUG
 kUG
@@ -83760,7 +83749,7 @@ bKK
 bKK
 xpr
 xpr
-xpr
+kUG
 kUG
 kUG
 kUG
@@ -84012,7 +84001,7 @@ bKK
 bKK
 xpr
 xpr
-xpr
+kUG
 kUG
 kUG
 kUG
@@ -84264,7 +84253,7 @@ bKK
 bKK
 xpr
 xpr
-xpr
+kUG
 kUG
 nYV
 kUG
@@ -84516,7 +84505,7 @@ fUE
 bKK
 xpr
 xpr
-xpr
+kUG
 kUG
 kUG
 kUG
@@ -84768,7 +84757,7 @@ bKK
 bKK
 xpr
 xpr
-xpr
+kUG
 kUG
 kUG
 kUG
@@ -85020,7 +85009,7 @@ bKK
 bKK
 xpr
 upV
-xpr
+kUG
 kUG
 kUG
 kUG
@@ -85272,7 +85261,7 @@ bKK
 bKK
 xpr
 xpr
-xpr
+kUG
 uBK
 kUG
 kUG
@@ -85524,7 +85513,7 @@ bKK
 bKK
 xpr
 xpr
-xpr
+kUG
 kUG
 kUG
 kUG
@@ -85776,7 +85765,7 @@ oTj
 bKK
 xpr
 xpr
-xpr
+kUG
 nYV
 kUG
 kUG
@@ -86028,7 +86017,7 @@ bKK
 bKK
 xpr
 xpr
-xpr
+kUG
 kUG
 kUG
 kUG
@@ -86280,7 +86269,7 @@ bKK
 bKK
 xpr
 xpr
-xpr
+kUG
 kUG
 kUG
 kUG

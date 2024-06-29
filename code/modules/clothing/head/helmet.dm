@@ -174,8 +174,8 @@
 	sales_price = 15
 
 /obj/item/clothing/head/helmet/royalguard
-	name = "Ceremonial Helmet"
-	desc = "A black painted carapace helmet cleverly covered up by the beret with the symbol of the de Burgen family on it"
+	name = "Messian Beret"
+	desc = "A black painted mesh beret worn by the Messian Captain."
 	icon_state = "royalgh"
 	item_state = "royalgh"
 	armor = list(melee = 8, bullet = 35, laser = 35, energy = 35, bomb = 50, bio = 0, rad = 10)

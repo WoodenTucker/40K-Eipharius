@@ -1992,6 +1992,18 @@ Area basic template
 	music = 'sound/newmusic/Lab_Experiment.ogg'
 	requires_power = FALSE
 
+/area/cadiaoutpost/oa/shuttle/g1
+	name = "Guard Ship"
+	icon_state = "shuttle"
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+	requires_power = 0
+
+/area/cadiaoutpost/oa/shuttle/g2
+	name = "Guard Landing"
+	icon_state = "red"
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+	requires_power = FALSE
+
 /area/cadiaoutpost/oa/shuttle/cargo1
 	name = "Cargo Elevator"
 	icon_state = "shuttle"

@@ -1,4 +1,10 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ae" = (
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "bZ" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	icon_state = "02";
@@ -24096,7 +24102,7 @@ hI
 hI
 hI
 hI
-hI
+ae
 hI
 hI
 hI

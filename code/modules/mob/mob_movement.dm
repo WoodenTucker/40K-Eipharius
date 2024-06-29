@@ -263,10 +263,10 @@
 		switch(mob.m_intent)
 			if("run")
 				if(mob.drowsyness > 0)
-					move_delay += 6
-				move_delay += 1+config.run_speed
+					move_delay += 3
+				move_delay += 2+config.run_speed
 			if("walk")
-				move_delay += 7+config.walk_speed
+				move_delay += 5+config.walk_speed
 		move_delay += mob.movement_delay()
 
 		if(istype(mob.buckled, /obj/vehicle))

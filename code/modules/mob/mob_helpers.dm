@@ -89,18 +89,18 @@ proc/getsensorlevel(A)
 
 //The base miss chance for the different defence zones
 var/list/global/base_miss_chance = list(
-	BP_HEAD = 30,
-	BP_THROAT = 35,
-	BP_CHEST = 10,
-	BP_GROIN = 10,
-	BP_L_LEG = 12,
-	BP_R_LEG = 12,
-	BP_L_ARM = 12,
-	BP_R_ARM = 12,
-	BP_L_HAND = 35,
-	BP_R_HAND = 35,
-	BP_L_FOOT = 22,
-	BP_R_FOOT = 22,
+	BP_HEAD = 35,
+	BP_THROAT = 40,
+	BP_CHEST = 15,
+	BP_GROIN = 15,
+	BP_L_LEG = 17,
+	BP_R_LEG = 17,
+	BP_L_ARM = 17,
+	BP_R_ARM = 17,
+	BP_L_HAND = 40,
+	BP_R_HAND = 40,
+	BP_L_FOOT = 27,
+	BP_R_FOOT = 27,
 )
 
 //Used to weight organs when an organ is hit randomly (i.e. not a directed, aimed attack).

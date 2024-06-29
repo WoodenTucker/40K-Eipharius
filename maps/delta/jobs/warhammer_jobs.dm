@@ -9,6 +9,7 @@
 	/datum/job/ordinate,
 	/datum/job/acolyte,
 	/*/datum/job/cadet,*/
+	/datum/job/royalguard,
 	/datum/job/ig/commissar,
 	/datum/job/ig/sergeant,
 	/datum/job/ig/guardsman/sniper,
@@ -34,7 +35,6 @@
 	/datum/job/enforcer,
 	/datum/job/arbitrator,
 //	/datum/job/kasrkin,
-	/datum/job/royalguard,
 	/datum/job/scavenger,
 	/datum/job/progena,/*
 	/datum/job/preacher, turn preacher into pilgrim fate */
