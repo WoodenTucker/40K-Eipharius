@@ -1311,7 +1311,7 @@ obj/item/clothing/suit/armor
 
 //Zealot
 /obj/item/clothing/suit/armor/zealot
-	name = "Planetary Governor's Mantle"
+	name = "Zealot's Mantle"
 	desc = "A mantle blessed by the Ecceliarchy to protect the wearer from threats to aid in protecting the faithful and to repel the heretic."
 	icon_state = "zealot"
 	item_state = "zealot"
