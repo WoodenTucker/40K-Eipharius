@@ -10829,16 +10829,6 @@
 /obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
-"GK" = (
-/obj/structure/stairs/south,
-/obj/effect/mist{
-	pixel_x = -24;
-	pixel_y = -24;
-	icon = 'icons/effects/96x96.dmi';
-	icon_state = "shadow2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/wilds/dungeonlower)
 "GL" = (
 /turf/simulated/shuttle/wall{
 	color = "grey";
@@ -11102,12 +11092,7 @@
 /turf/simulated/floor/ship_floor/engines,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "HB" = (
-/obj/effect/mist{
-	pixel_x = -24;
-	pixel_y = -24;
-	icon = 'icons/effects/96x96.dmi';
-	icon_state = "shadow2"
-	},
+/mob/living/simple_animal/hostile/flesh/abomination,
 /turf/simulated/floor/stone/seabed,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "HC" = (
@@ -11700,15 +11685,6 @@
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
-"Jm" = (
-/obj/effect/mist{
-	pixel_x = -24;
-	pixel_y = -24;
-	icon = 'icons/effects/96x96.dmi';
-	icon_state = "shadow2"
-	},
-/turf/simulated/wall/seolite,
-/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Jn" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	dir = 6
@@ -46857,7 +46833,7 @@ Rh
 Rh
 wS
 Bt
-Xt
+HB
 Xt
 Xt
 Xt
@@ -46866,7 +46842,7 @@ mW
 mW
 mW
 Xt
-Xt
+HB
 xD
 gQ
 gQ
@@ -47443,10 +47419,10 @@ gQ
 gQ
 gQ
 xD
-Jm
-Jm
-Jm
-Jm
+xD
+xD
+xD
+xD
 xD
 gQ
 zx
@@ -47695,10 +47671,10 @@ gQ
 gQ
 gQ
 xD
-HB
-GK
-GK
-Jm
+xD
+xD
+xD
+xD
 xD
 gQ
 zx
@@ -47947,10 +47923,10 @@ gQ
 gQ
 gQ
 xD
-HB
-GK
-GK
-Jm
+xD
+xD
+xD
+xD
 xD
 gQ
 gQ
@@ -48199,10 +48175,10 @@ gQ
 gQ
 gQ
 xD
-HB
-GK
-GK
-Jm
+xD
+xD
+xD
+xD
 xD
 gQ
 gQ
@@ -48451,10 +48427,10 @@ gQ
 gQ
 gQ
 xD
-HB
-GK
-GK
-Jm
+xD
+xD
+xD
+xD
 xD
 xD
 gQ
@@ -48703,10 +48679,10 @@ gQ
 gQ
 gQ
 xD
-Jm
-Jm
-Jm
-Jm
+xD
+xD
+xD
+xD
 xD
 xD
 gQ
