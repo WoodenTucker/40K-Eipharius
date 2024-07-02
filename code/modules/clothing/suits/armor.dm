@@ -1309,6 +1309,17 @@ obj/item/clothing/suit/armor
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT|HIDEGLOVES // bricked temporarily. people were abusing the shit out of it, can be used as an object in an imperial cult/heretic path thing. we can raise the armor values then later
 
+//Zealot
+/obj/item/clothing/suit/armor/zealot
+	name = "Planetary Governor's Mantle"
+	desc = "A mantle blessed by the Ecceliarchy to protect the wearer from threats to aid in protecting the faithful and to repel the heretic."
+	icon_state = "zealot"
+	item_state = "zealot"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 30, bullet = 11, laser = 11, energy = 25, bomb = 40, bio = 20, rad = 20) //Hidden armoured plates
+	sales_price = 30
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 // Eldar
 /obj/item/clothing/suit/armor/eldar
