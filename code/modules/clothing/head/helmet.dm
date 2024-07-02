@@ -182,6 +182,15 @@
 	siemens_coefficient = 0.6
 	sales_price = 15
 
+/obj/item/clothing/head/helmet/pdfcapt
+	name = "Messian Helm"
+	desc = "A glorious golden helmet worn by the Captain of the PDF."
+	icon_state = "PDF-CaptainH"
+	item_state = "PDF-CaptainH"
+	armor = list(melee = 8, bullet = 35, laser = 35, energy = 35, bomb = 50, bio = 0, rad = 10)
+	siemens_coefficient = 0.6
+	sales_price = 15
+
 /obj/item/clothing/head/helmet/genestealer
 	name = "tyranid scale hide"
 	desc = "The hide of a Tyranid Genestealer"

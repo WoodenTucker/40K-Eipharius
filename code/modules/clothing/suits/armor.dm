@@ -1954,6 +1954,18 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	sales_price = 60
 
+/obj/item/clothing/suit/armor/pdfcapt
+	name = "Captain's Carapace"
+	desc = "The Carapace Armor of the local Messian Captain."
+	icon_state = "PDF-CaptainT"
+	item_state = "PDF-CaptainT"
+	armor = list(melee = 9, bullet = 38, laser = 38, energy = 30, bomb = 40, bio = 30, rad = 50)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 60
+
 /obj/item/clothing/suit/armor/tduster
 	name = "Armored Duster"
 	desc = "A duster with a flak plate insert, sewn together with shafra leather."

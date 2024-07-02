@@ -68,8 +68,8 @@
 	gloves = /obj/item/clothing/gloves/royalguard
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	shoes = /obj/item/clothing/shoes/jackboots/noble
-	suit = /obj/item/clothing/suit/armor/royalguard
-	head = /obj/item/clothing/head/helmet/royalguard
+	suit = /obj/item/clothing/suit/armor/pdfcapt
+	head = /obj/item/clothing/head/helmet/pdfcapt
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = null
 	id = /obj/item/card/id/dog_tag/guardsman

@@ -735,12 +735,12 @@ datum/job/ig/bullgryn
 /decl/hierarchy/outfit/job/whiteshield
 	name = OUTFIT_JOB_NAME("Imperial Guard Whiteshield")
 	uniform = /obj/item/clothing/under/cadian_uniform
-	suit = /obj/item/clothing/suit/armor/whiteshield
+	suit = /obj/item/clothing/suit/armor/whiteshield/pdf
 	back = /obj/item/storage/backpack/satchel/heavy
 	belt = /obj/item/device/flashlight/lantern
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/helmet/whiteshield
+	head = /obj/item/clothing/head/helmet/whiteshield/pdf
 	mask = null
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
