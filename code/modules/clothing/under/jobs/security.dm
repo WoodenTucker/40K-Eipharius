@@ -241,6 +241,15 @@
 	siemens_coefficient = 0.9
 	species_restricted = list(SPECIES_HUMAN)
 
+/obj/item/clothing/under/guard/uniform/zealot
+	name = "Robes of the Faithful"
+	desc = "When you're blessed there's no need for a helmet, the Emperor protects."
+	armor = list(melee = 1, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
+	icon_state = "zealot"
+	worn_state = "zealot"
+	siemens_coefficient = 0.9
+	species_restricted = list(SPECIES_HUMAN)
+
 /obj/item/clothing/under/administratum
 	name = "administratum underlayers"
 	desc = "voluminous underlayers belonging to an administratum officer."
