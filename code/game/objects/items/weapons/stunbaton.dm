@@ -265,7 +265,7 @@
 	desc = "The Shock Maul commonly used by members of the Adeptus Arbites. It is good for incapacitating victims, not being as efficient as a power maul."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "shockmaul"
-	item_state = "baton"
+	item_state = "shockmaul_off"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	force = 10
 	sharp = 0
@@ -291,10 +291,13 @@
 /obj/item/melee/baton/shockmaul/update_icon()
 	if(status)
 		icon_state = "shockmaul_active"
+		item_state = "shockmaul_on"
 	else if(!bcell)
 		icon_state = "shockmaul_nocell"
+		item_state = "shockmaul_off"
 	else
 		icon_state = "shockmaul"
+		item_state = "shockmaul_off"
 
 	if(icon_state == "shockmaul_active")
 		set_light(2, 2, "#D9E9FF")
