@@ -297,17 +297,29 @@
 	icon_state = "ultrab"
 	item_state = "ultrab"
 
-/obj/item/storage/backpack/satchel/astartes/emperorschildren
+/obj/item/storage/backpack/satchel/astartes/nightlords
 	name = "Astartes Mark VII Powerpack"
-	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the IIIrd Legion, Emperor's Children."
-	icon_state = "emperorscb"
-	item_state = "emperorscb"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the IIIrd Legion, Night Lords."
+	icon_state = "nightlordb"
+	item_state = "nightlordb"
 
 /obj/item/storage/backpack/satchel/astartes/alphalegion
 	name = "Astartes Mark VII Powerpack"
 	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the XXth Legion, Alpha Legion."
 	icon_state = "alphalegb"
 	item_state = "alphalegb"
+
+/obj/item/storage/backpack/satchel/astartes/worldbearers
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the XXth Legion, World Bearers."
+	icon_state = "worldbb"
+	item_state = "worldbb"
+
+/obj/item/storage/backpack/satchel/astartes/plaguemarines
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the XXth Legion, Alpha Legion."
+	icon_state = "plaguemb"
+	item_state = "plaguemb"
 
 /obj/item/storage/backpack/satchel/astartes/ravenguard
 	name = "Astartes Mark VII Powerpack"

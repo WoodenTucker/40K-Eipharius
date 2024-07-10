@@ -354,6 +354,7 @@
 	/obj/item/pen = 1,
 	/obj/item/paper/administratum/weapon4 = 1,
 	/obj/item/gun/energy/taser = 1,
+	/obj/item/melee/baton/shockmaul/loaded = 1,
 	)
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
