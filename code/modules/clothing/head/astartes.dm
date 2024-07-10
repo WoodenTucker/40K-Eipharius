@@ -59,11 +59,11 @@
 	item_state = "ultrah"
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
 
-/obj/item/clothing/head/helmet/astartes/emperorschildren
+/obj/item/clothing/head/helmet/astartes/nightlord
 	name = "Astartes Mark VII Helmet"
-	desc = "The daunting helmet of the Emperor's chosen, This one bears the symbol of the IIIth Legion, Emperor's Children."
-	icon_state = "emperorsch"
-	item_state = "emperorsch"
+	desc = "The daunting helmet of the Emperor's chosen, This one bears the symbol of the IIIth Legion, Night Lords."
+	icon_state = "nightlordh"
+	item_state = "nightlordh"
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
 
 /obj/item/clothing/head/helmet/astartes/alphalegion
@@ -71,6 +71,20 @@
 	desc = "The daunting helmet of the Emperor's chosen, This one bears the symbol of the XXth Legion, Alpha Legion."
 	icon_state = "alphalegh"
 	item_state = "alphalegh"
+	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
+
+/obj/item/clothing/head/helmet/astartes/worldbearer
+	name = "Astartes Mark VII Helmet"
+	desc = "The daunting helmet of the Emperor's chosen, This one bears the symbol of the XXth Legion, World Bearers."
+	icon_state = "worldbh"
+	item_state = "worldbh"
+	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
+
+/obj/item/clothing/head/helmet/astartes/plaguemarine
+	name = "Astartes Mark VII Helmet"
+	desc = "The daunting helmet of the Emperor's chosen, This one bears the symbol of the XXth Legion, Plague Marines."
+	icon_state = "plaguemh"
+	item_state = "plaguemh"
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
 
 /obj/item/clothing/head/helmet/astartes/sergeant
