@@ -154,14 +154,14 @@
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
-/decl/hierarchy/outfit/job/astartes/children
-	name = OUTFIT_JOB_NAME("Chaos Marine -- Children")
+/decl/hierarchy/outfit/job/astartes/nightlord
+	name = OUTFIT_JOB_NAME("Chaos Marine -- Nightlord")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
-	suit = /obj/item/clothing/suit/armor/astartes/emperorschildren
-	back = /obj/item/storage/backpack/satchel/astartes/emperorschildren
+	suit = /obj/item/clothing/suit/armor/astartes/nightlord
+	back = /obj/item/storage/backpack/satchel/astartes/nightlords
 	belt = /obj/item/melee/chain/pcsword
 	shoes = /obj/item/clothing/shoes/jackboots/astartes/raven
-	head = /obj/item/clothing/head/helmet/astartes/emperorschildren
+	head = /obj/item/clothing/head/helmet/astartes/nightlord
 	mask = null
 	l_ear = /obj/item/device/radio/headset/cult1
 	r_ear = /obj/item/device/radio/headset/cult2
