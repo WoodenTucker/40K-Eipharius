@@ -319,8 +319,8 @@
 	name = "Power Maul"
 	desc = "The Power Maul commonly used by members of the Adeptus Arbites. It is good for stunning victims."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
-	icon_state = "thunder_hammer"
-	item_state = "thunder_hammer"
+	icon_state = "thunder_hammer_old"
+	item_state = "thunder_hammer_old"
 	color = "#292929"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 1
