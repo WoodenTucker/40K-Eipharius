@@ -66,17 +66,29 @@
 	icon_state = "ultraterm"
 	item_state = "ultraterm"
 
-/obj/item/clothing/suit/armor/astartes/emperorschildren
+/obj/item/clothing/suit/armor/astartes/nightlord
 	name = "Astartes Mark VII Power Armour"
-	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the IIIrd Legion, Emperor's Children."
-	icon_state = "emperorscc"
-	item_state = "emperorscc"
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the IIIrd Legion, Night Lords."
+	icon_state = "nightlordc"
+	item_state = "nightlordc"
 
 /obj/item/clothing/suit/armor/astartes/alphalegion
 	name = "Astartes Mark VII Power Armour"
 	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XXth Legion, Alpha Legion."
 	icon_state = "alphalegc"
 	item_state = "alphalegc"
+
+/obj/item/clothing/suit/armor/astartes/worldbearer
+	name = "Astartes Mark VII Power Armour"
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XXth Legion, World Bearers."
+	icon_state = "worldbc"
+	item_state = "worldbc"
+
+/obj/item/clothing/suit/armor/astartes/plaguemarine
+	name = "Astartes Mark VII Power Armour"
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XXth Legion, Plague Marines."
+	icon_state = "plaguemc"
+	item_state = "plaguemc"
 
 // SPESS MUUHREEN SIRGENT
 
