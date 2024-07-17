@@ -457,6 +457,13 @@
 	icon_state = "dark1"
 	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
+"ml" = (
+/obj/structure/torchwall/service{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "mB" = (
 /obj/structure/closet/hive/iron_c{
 	anchored = 1
@@ -1126,6 +1133,8 @@
 /obj/effect/floor_decal/newcorner/blue{
 	dir = 4
 	},
+/obj/item/storage/firstaid/o2,
+/obj/item/storage/firstaid/toxin,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -1188,9 +1197,14 @@
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "Cq" = (
-/mob/living/simple_animal/hostile/syndicate/ranged,
-/mob/living/simple_animal/hostile/syndicate/ranged,
-/turf/simulated/wall/ancient,
+/obj/structure/torchwall/service{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
+	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "Cu" = (
 /obj/machinery/door/unpowered/simple/iron{
@@ -1231,6 +1245,13 @@
 /obj/random/loot/randomlasammo,
 /obj/random/loot/randomlasammo,
 /obj/effect/floor_decal/newcorner/yellow/quarter,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"CW" = (
+/obj/structure/table/rack/dark,
+/obj/item/grenade/frag/plasma,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -1451,6 +1472,12 @@
 	dir = 4
 	},
 /turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"IE" = (
+/obj/item/grenade/frag/high_yield/krak2,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "IF" = (
 /obj/structure/table/graf/big_wood_table{
@@ -1768,6 +1795,7 @@
 /obj/effect/floor_decal/newcorner/yellow/quarter{
 	dir = 8
 	},
+/obj/item/grenade/frag/plasma,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -1777,6 +1805,7 @@
 	anchored = 1
 	},
 /obj/random/loot/badweaponlas,
+/obj/item/grenade/frag/high_yield/krak2,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -1820,6 +1849,7 @@
 /obj/effect/floor_decal/newcorner/yellow{
 	dir = 1
 	},
+/obj/item/plastique,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -2019,6 +2049,10 @@
 "Ub" = (
 /obj/structure/stairs/south,
 /turf/simulated/floor/stone/seabed,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"Uo" = (
+/obj/item/grenade/frag/high_yield/homemade,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "Ur" = (
 /obj/effect/floor_decal/turf/armory{
@@ -26330,7 +26364,7 @@ bQ
 xv
 vb
 bQ
-tl
+CW
 bQ
 me
 Jh
@@ -27100,7 +27134,7 @@ OA
 wl
 OA
 IC
-Cq
+xv
 iA
 bu
 vX
@@ -31118,7 +31152,7 @@ LM
 xv
 HL
 tf
-tf
+Uo
 WY
 vk
 tf
@@ -31371,7 +31405,7 @@ xv
 HL
 pC
 vk
-tf
+Uo
 xv
 HL
 HL
@@ -32159,7 +32193,7 @@ xv
 xv
 xv
 bQ
-iT
+bQ
 xv
 xv
 tf
@@ -32412,7 +32446,7 @@ xv
 GF
 bQ
 bQ
-Jh
+Cq
 xv
 vo
 tf
@@ -32925,7 +32959,7 @@ tf
 tf
 tf
 tf
-pC
+xv
 pC
 pC
 pC
@@ -33177,7 +33211,7 @@ tf
 tf
 tf
 tf
-tf
+ml
 pC
 pC
 pC
@@ -33420,7 +33454,7 @@ xv
 GF
 bQ
 Jh
-bQ
+FU
 xv
 GF
 tf
@@ -33671,7 +33705,7 @@ xv
 xv
 xv
 bQ
-FU
+bQ
 xv
 xv
 op
@@ -34178,7 +34212,7 @@ HL
 HL
 HL
 HL
-tf
+cv
 Tm
 pC
 pC
@@ -34430,7 +34464,7 @@ HL
 HL
 pC
 pC
-pC
+xv
 pC
 pC
 pC
@@ -35171,7 +35205,7 @@ HL
 HL
 xv
 Cy
-bQ
+IE
 Wb
 Jh
 bQ
@@ -35447,7 +35481,7 @@ pC
 pC
 pC
 pC
-tf
+cv
 tf
 tf
 tf
@@ -35699,7 +35733,7 @@ pC
 pC
 pC
 pC
-pC
+xv
 tf
 tf
 tf
@@ -35949,8 +35983,8 @@ pC
 pC
 pC
 pC
-Tm
-tf
+pC
+pC
 pC
 pC
 tf
@@ -36165,7 +36199,7 @@ tf
 tf
 tf
 tf
-tf
+cv
 tf
 tf
 tf
@@ -36417,7 +36451,7 @@ pC
 pC
 pC
 pC
-pC
+xv
 pC
 tf
 tf
@@ -36909,7 +36943,7 @@ pC
 pC
 pC
 tf
-tf
+cv
 tf
 tf
 tf
@@ -37161,7 +37195,7 @@ pC
 pC
 pC
 pC
-pC
+xv
 tf
 tf
 tf
@@ -37690,7 +37724,7 @@ pC
 pC
 pC
 pC
-tf
+cv
 tf
 tf
 tf
@@ -37925,7 +37959,7 @@ pC
 pC
 tf
 tf
-tf
+cv
 fh
 fh
 Ow
@@ -37942,7 +37976,7 @@ pC
 pC
 pC
 pC
-pC
+xv
 pC
 pC
 tf
@@ -38463,7 +38497,7 @@ tf
 tf
 tf
 tf
-tf
+cv
 pC
 pC
 pC
@@ -38715,7 +38749,7 @@ pC
 pC
 pC
 pC
-pC
+xv
 pC
 pC
 pC

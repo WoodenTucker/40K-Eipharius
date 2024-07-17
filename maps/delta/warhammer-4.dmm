@@ -20376,6 +20376,10 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/security/barracks)
+"pKd" = (
+/obj/effect/landmark/start/imperialguard/specialist,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/security/armory)
 "pKr" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/light/small/red{
@@ -29518,6 +29522,10 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/security/barracks)
+"wrt" = (
+/obj/effect/landmark/start/imperialguard/guard,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/security/armory)
 "wrw" = (
 /obj/effect/floor_decal/spline/fancy/wood/corner{
 	dir = 4
@@ -59397,7 +59405,7 @@ iFj
 bQR
 aYo
 btQ
-vqP
+btQ
 btQ
 btQ
 sCi
@@ -71421,7 +71429,7 @@ gsa
 kpF
 hxJ
 cTr
-hxJ
+wrt
 hxJ
 mYs
 gsa
@@ -71925,7 +71933,7 @@ gsa
 kpF
 hxJ
 ptc
-hxJ
+pKd
 hxJ
 pjV
 pjV

@@ -753,9 +753,11 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
 "cm" = (
-/turf/simulated/floor/plating{
-	icon_state = "evil"
+/obj/machinery/light/small/red{
+	dir = 1;
+	icon_state = "bulb1"
 	},
+/turf/simulated/floor/stone/seabed,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "cn" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
@@ -4151,12 +4153,6 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
-"mv" = (
-/mob/living/simple_animal/hostile/flesh/advanced,
-/turf/simulated/floor/plating{
-	icon_state = "evil"
-	},
-/area/cadiaoutpost/oa/wilds/dungeonlower)
 "mw" = (
 /obj/structure/table/graf/pagan,
 /obj/item/melee/sword/slaanesh,
@@ -7994,14 +7990,12 @@
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "yJ" = (
-/obj/machinery/door/unpowered/inn{
-	color = "grey";
-	name = "ancient door"
+/obj/machinery/light/small/red{
+	dir = 8;
+	icon_state = "bulb1"
 	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/caves)
+/turf/simulated/open,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "yK" = (
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/ship_floor/steel{
@@ -12498,12 +12492,6 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
-"LI" = (
-/obj/item/remains/human,
-/turf/simulated/floor/plating{
-	icon_state = "evil"
-	},
-/area/cadiaoutpost/oa/wilds/dungeonlower)
 "LJ" = (
 /obj/machinery/atmospherics/pipe/simple/visible/black{
 	dir = 6
@@ -13036,12 +13024,6 @@
 	icon_state = "rwall1"
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
-"NE" = (
-/obj/effect/gibspawner/human,
-/turf/simulated/floor/plating{
-	icon_state = "evil"
-	},
-/area/cadiaoutpost/oa/wilds/dungeonlower)
 "NG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -13736,15 +13718,6 @@
 /obj/structure/catwalkrust/blocked,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
-"PQ" = (
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/caves)
 "PR" = (
 /obj/machinery/door/blast/regular{
 	density = 0;
@@ -14353,11 +14326,6 @@
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
-"RM" = (
-/turf/simulated/wall/concrete{
-	integrity = 1500
-	},
-/area/cadiaoutpost/new_hive/caves)
 "RN" = (
 /obj/effect/floor_decal/newcorner/plating,
 /turf/simulated/floor/fancyfloor/oldcobble,
@@ -49141,10 +49109,10 @@ gQ
 gQ
 gQ
 gQ
-QV
-QV
-QV
-QV
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 gQ
@@ -49392,11 +49360,11 @@ gQ
 gQ
 gQ
 gQ
-QV
-tB
-WZ
-jW
-pR
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 gQ
@@ -49644,11 +49612,11 @@ gQ
 gQ
 gQ
 gQ
-QV
-vR
-Sm
-zM
-Nq
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 gQ
@@ -49896,11 +49864,11 @@ gQ
 gQ
 gQ
 gQ
-QV
-nR
-oQ
-nR
-QV
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 gQ
@@ -50148,11 +50116,11 @@ gQ
 gQ
 gQ
 gQ
-QV
-pV
-Dc
-pV
-TS
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 gQ
@@ -50400,11 +50368,11 @@ gQ
 gQ
 gQ
 gQ
-QV
-QV
-QV
-QV
-QV
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 gQ
@@ -51900,7 +51868,7 @@ gQ
 gQ
 gQ
 ep
-uA
+yJ
 uA
 Xt
 Xt
@@ -52915,7 +52883,7 @@ ep
 ep
 ep
 ep
-Xt
+cm
 Xt
 Xt
 Xt
@@ -53685,10 +53653,10 @@ gQ
 gQ
 gQ
 gQ
-QV
-QV
-QV
-QV
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 gQ
@@ -53936,11 +53904,6 @@ gQ
 gQ
 gQ
 gQ
-QV
-tB
-WZ
-jW
-pR
 gQ
 gQ
 gQ
@@ -53955,11 +53918,16 @@ gQ
 gQ
 gQ
 gQ
-QV
-QV
-QV
-QV
-QV
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 gQ
@@ -54188,11 +54156,6 @@ gQ
 gQ
 gQ
 gQ
-QV
-vR
-Sm
-zM
-Nq
 gQ
 gQ
 gQ
@@ -54207,11 +54170,16 @@ gQ
 gQ
 gQ
 gQ
-QV
-tB
-WZ
-jW
-pR
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 gQ
@@ -54440,11 +54408,6 @@ gQ
 gQ
 gQ
 gQ
-QV
-nR
-oQ
-nR
-QV
 gQ
 gQ
 gQ
@@ -54459,11 +54422,16 @@ gQ
 gQ
 gQ
 gQ
-QV
-vR
-Sm
-zM
-Nq
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 gQ
@@ -54692,11 +54660,6 @@ gQ
 gQ
 gQ
 gQ
-QV
-pV
-Dc
-pV
-TS
 gQ
 gQ
 gQ
@@ -54711,11 +54674,16 @@ gQ
 gQ
 gQ
 gQ
-QV
-nR
-oQ
-nR
-QV
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 gQ
@@ -54944,11 +54912,6 @@ gQ
 gQ
 gQ
 gQ
-QV
-QV
-QV
-QV
-QV
 gQ
 gQ
 gQ
@@ -54963,11 +54926,16 @@ gQ
 gQ
 gQ
 gQ
-QV
-pV
-Dc
-pV
-TS
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 gQ
@@ -55215,11 +55183,11 @@ gQ
 gQ
 gQ
 gQ
-QV
-QV
-QV
-QV
-QV
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 gQ
@@ -55708,13 +55676,13 @@ gQ
 gQ
 gQ
 gQ
-cm
-cm
-cm
-cm
-cm
-cm
-cm
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 gQ
@@ -55960,13 +55928,6 @@ gQ
 gQ
 gQ
 gQ
-LI
-cm
-cm
-cm
-cm
-cm
-LI
 gQ
 gQ
 gQ
@@ -55979,11 +55940,18 @@ gQ
 gQ
 gQ
 gQ
-QV
-QV
-QV
-QV
-QV
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 QV
@@ -56212,13 +56180,6 @@ gQ
 gQ
 gQ
 gQ
-cm
-cm
-cm
-cm
-LI
-cm
-cm
 gQ
 gQ
 gQ
@@ -56231,11 +56192,18 @@ gQ
 gQ
 gQ
 gQ
-QV
-tB
-WZ
-jW
-pR
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 QV
@@ -56464,13 +56432,6 @@ gQ
 gQ
 gQ
 gQ
-LI
-cm
-LI
-mv
-cm
-cm
-cm
 gQ
 gQ
 gQ
@@ -56483,11 +56444,18 @@ gQ
 gQ
 gQ
 gQ
-QV
-vR
-Sm
-zM
-Nq
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 QV
@@ -56716,13 +56684,6 @@ gQ
 gQ
 gQ
 gQ
-cm
-cm
-cm
-cm
-cm
-cm
-cm
 gQ
 gQ
 gQ
@@ -56735,11 +56696,18 @@ gQ
 gQ
 gQ
 gQ
-QV
-nR
-oQ
-nR
-QV
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 QV
@@ -56968,13 +56936,6 @@ gQ
 gQ
 gQ
 gQ
-LI
-cm
-LI
-cm
-cm
-LI
-cm
 gQ
 gQ
 gQ
@@ -56987,11 +56948,18 @@ gQ
 gQ
 gQ
 gQ
-QV
-pV
-Dc
-pV
-TS
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 QV
@@ -57220,13 +57188,6 @@ gQ
 gQ
 gQ
 gQ
-LI
-cm
-cm
-LI
-cm
-cm
-NE
 gQ
 gQ
 gQ
@@ -57239,11 +57200,18 @@ gQ
 gQ
 gQ
 gQ
-QV
-QV
-QV
-QV
-QV
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 QV
@@ -57987,11 +57955,11 @@ gQ
 gQ
 gQ
 gQ
-QV
-QV
-QV
-QV
-QV
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 gQ
@@ -58239,11 +58207,11 @@ gQ
 gQ
 gQ
 gQ
-QV
-tB
-WZ
-jW
-pR
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 gQ
@@ -58491,11 +58459,11 @@ gQ
 gQ
 gQ
 gQ
-QV
-vR
-Sm
-zM
-Nq
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 gQ
@@ -58743,11 +58711,11 @@ gQ
 gQ
 gQ
 gQ
-QV
-nR
-oQ
-nR
-QV
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 gQ
@@ -58995,11 +58963,11 @@ hI
 hI
 hI
 hI
-RM
-Wq
-PQ
-Wq
-yJ
+hI
+hI
+hI
+hI
+hI
 hI
 hI
 gQ
@@ -59247,11 +59215,11 @@ hI
 hI
 hI
 hI
-RM
-RM
-RM
-RM
-RM
+hI
+hI
+hI
+hI
+hI
 hI
 hI
 gQ
