@@ -54,6 +54,7 @@
 
 /datum/job/ig/guardsman
 	title = "Imperial Guardsman"
+	supervisors = "The Captain or Commissar"
 	total_positions = 0
 	spawn_positions = 0
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
@@ -113,8 +114,8 @@
 
 /datum/job/ig/whiteshield
 	title = "PDF Trooper"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	open_when_dead = FALSE
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/whiteshield
@@ -149,6 +150,7 @@
 	title = "Imperial Guard Specialist"
 	total_positions = 0
 	spawn_positions = 0
+	supervisors = "The Captain or Commissar"
 	open_when_dead = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sharpshooter
 	auto_rifle_skill = 10
@@ -210,8 +212,8 @@ datum/job/ig/bullgryn
 	title = "Bullgryn"
 	social_class = SOCIAL_CLASS_MED //is it lore accurate? no, does it make sense to have a bullgryn here? also no
 	selection_color = "#33813A"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "Da Emprah. Da Commesar, and da little on's!"
 	outfit_type = /decl/hierarchy/outfit/job/bullgryn
 	latejoin_at_spawnpoints = TRUE
@@ -296,8 +298,8 @@ datum/job/ig/bullgryn
 /datum/job/ig/sergeant
 	title = "Sergeant"
 	supervisors = "The Captain or Commissar"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	open_when_dead = FALSE
 	selection_color = "#23742a"
 	department_flag = SEC
@@ -367,6 +369,7 @@ datum/job/ig/bullgryn
 /datum/job/ig/medicae
 	title = "Combat Medicae"
 	department = "Medical"
+	supervisors = "The Captain or Commissar"
 	department_flag = SEC
 	social_class = SOCIAL_CLASS_MED
 	can_be_in_squad = TRUE

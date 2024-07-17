@@ -307,11 +307,6 @@
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/simulated/floor/wood,
 /area/centcom)
-"be" = (
-/obj/random/loot/goodweapon,
-/obj/structure/table/rack/dark,
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "bf" = (
 /obj/structure/railing{
 	dir = 1
@@ -586,30 +581,6 @@
 /obj/item/modular_computer/console/preset/command,
 /turf/simulated/floor/carpet/red,
 /area/centcom)
-"cg" = (
-/obj/item/clothing/head/servicesgt{
-	pixel_x = -6;
-	pixel_y = 6
-	},
-/obj/item/storage/fancy/cigarettes/cigarello/mint{
-	pixel_y = 8;
-	pixel_x = 8
-	},
-/obj/item/flame/lighter/zippo,
-/obj/item/reagent_containers/food/drinks/bottle/small/beer{
-	pixel_y = -8;
-	pixel_x = -10
-	},
-/obj/item/reagent_containers/food/drinks/bottle/small/beer{
-	pixel_y = -6;
-	pixel_x = -4
-	},
-/obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table3";
-	dir = 1
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "cj" = (
 /obj/machinery/recharger{
 	pixel_y = 32
@@ -1023,13 +994,6 @@
 	dir = 8
 	},
 /area/space)
-"eC" = (
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "eF" = (
 /obj/machinery/light/spot{
 	dir = 8;
@@ -2560,10 +2524,6 @@
 /obj/machinery/telecomms/allinone,
 /turf/unsimulated/miningtime,
 /area/space)
-"le" = (
-/obj/machinery/light,
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "lf" = (
 /obj/structure/table/rack/dark,
 /obj/item/clothing/glasses/hud/health,
@@ -4105,14 +4065,6 @@
 /obj/item/storage/backpack/holding,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
-"sM" = (
-/obj/structure/bed/padded,
-/obj/item/bedsheet/green{
-	color = "grey"
-	},
-/obj/effect/landmark/start/imperialguard,
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "sO" = (
 /obj/structure/catwalkrust/water,
 /turf/simulated/floor/plating,
@@ -6014,22 +5966,6 @@
 	},
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
-"CJ" = (
-/obj/item/newspaper{
-	pixel_y = 10;
-	pixel_x = 7
-	},
-/obj/machinery/light/small{
-	dir = 8;
-	icon_state = "bulb1";
-	light_color = "#234F1E"
-	},
-/obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table3";
-	dir = 4
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "CK" = (
 /obj/structure/table/woodentable,
 /obj/machinery/light,
@@ -6812,14 +6748,6 @@
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/centcom)
-"Gt" = (
-/obj/machinery/door/airlock/cone{
-	maxhealth = 3000;
-	name = "Guard Sergeant Quarters";
-	req_one_access = list(67,331)
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "Gw" = (
 /obj/structure/shipdecor{
 	icon_state = "tncB"
@@ -7099,20 +7027,6 @@
 	color = "grey"
 	},
 /area/centcom)
-"HM" = (
-/obj/item/paper_bin{
-	pixel_y = 8
-	},
-/obj/item/pen/multi{
-	pixel_y = 4
-	},
-/obj/structure/table/graf/reinf_table{
-	icon_state = "reinf_table3";
-	dir = 8
-	},
-/obj/item/book/manual/law,
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "HP" = (
 /obj/structure/table/rack,
 /obj/item/extinguisher/mini{
@@ -7139,10 +7053,6 @@
 	color = "grey"
 	},
 /area/centcom)
-"HR" = (
-/obj/structure/closet/secure_closet/warden,
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "HU" = (
 /obj/structure/table/rack,
 /obj/item/device/personal_shield,
@@ -7325,17 +7235,6 @@
 "IM" = (
 /turf/space,
 /area/cadiaoutpost/rtship2)
-"IN" = (
-/obj/structure/table/rack/dark,
-/obj/item/clothing/accessory/storage/webbing_large{
-	pixel_y = -5
-	},
-/obj/item/clothing/accessory/holster/armpit{
-	pixel_y = -2
-	},
-/obj/item/cell/lasgun/hotshot,
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "IP" = (
 /obj/structure/window/reinforced{
 	dir = 1;
@@ -8017,10 +7916,6 @@
 	icon_state = "wall3"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
-"Mv" = (
-/obj/effect/landmark/start/imperialguard/guard,
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "Mz" = (
 /obj/structure/table/woodentable,
 /obj/machinery/chemical_dispenser/bar_coffee/full,
@@ -8354,15 +8249,6 @@
 /obj/effect/floor_decal/turf/metal/five,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/shuttle/inquisition)
-"Oq" = (
-/obj/structure/curtain/open/shower/security{
-	name = "privacy curtain";
-	pixel_x = -32
-	},
-/mob/living/simple_animal/corgi/cpl_buddy,
-/obj/structure/dogbed,
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "Or" = (
 /obj/machinery/door/blast/grates,
 /turf/simulated/floor/tiled/dark,
@@ -10583,10 +10469,6 @@
 /obj/effect/floor_decal/turf/metal/five,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/shuttle/inquisition)
-"ZX" = (
-/obj/effect/landmark/start/imperialguard/specialist,
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "ZY" = (
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/shuttle/station1)
@@ -26437,9 +26319,9 @@ Bq
 Bq
 KO
 bI
-Mv
 bI
-ZX
+bI
+bI
 bI
 bI
 bI
@@ -29201,8 +29083,8 @@ An
 bC
 An
 fD
-Gt
-rZ
+fD
+fD
 fD
 fD
 Sc
@@ -29453,8 +29335,8 @@ fD
 fD
 fD
 fD
-iI
-Oq
+fD
+fD
 fD
 ZV
 AY
@@ -29702,11 +29584,11 @@ fD
 fD
 fD
 fD
-cg
-CJ
-HM
-iI
-le
+fD
+fD
+fD
+fD
+fD
 fD
 dr
 AY
@@ -29954,11 +29836,11 @@ fD
 fD
 fD
 fD
-IN
-Ws
-iI
-iI
-iI
+fD
+fD
+fD
+fD
+fD
 fD
 nD
 AY
@@ -30206,11 +30088,11 @@ FQ
 FQ
 FQ
 fD
-be
-sM
-eC
-iI
-HR
+fD
+fD
+fD
+fD
+fD
 fD
 Qx
 ti

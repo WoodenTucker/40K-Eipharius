@@ -74,6 +74,7 @@
 	name = "silver pickaxe"
 	icon_state = "spickaxe"
 	item_state = "spickaxe"
+	armor_penetration = 1
 	digspeed = 45
 	origin_tech = list(TECH_MATERIAL = 2)
 	desc = "This makes no metallurgic sense."
@@ -82,6 +83,8 @@
 	name = "mechanicus pickaxe"
 	icon_state = "spickaxe"
 	item_state = "spickaxe"
+	force = 27
+	armor_penetration = 5
 	digspeed = 35
 	origin_tech = list(TECH_MATERIAL = 2)
 	desc = "This makes no metallurgic sense."
@@ -91,6 +94,7 @@
 	icon_state = "handdrill"
 	item_state = "jackhammer"
 	digspeed = 25
+	armor_penetration = 6
 	origin_tech = list(TECH_MATERIAL = 2, TECH_POWER = 2, TECH_ENGINEERING = 2)
 	desc = "Yours is the drill that will pierce through the rock walls."
 	drill_verb = "drilling"
@@ -99,6 +103,7 @@
 	name = "sonic jackhammer"
 	icon_state = "jackhammer"
 	item_state = "jackhammer"
+	armor_penetration = 5
 	digspeed = 25 //faster than drill, but cannot dig
 	origin_tech = list(TECH_MATERIAL = 2, TECH_POWER = 2, TECH_ENGINEERING = 2)
 	desc = "Cracks rocks with sonic blasts, perfect for killing cave lizards."
@@ -109,6 +114,7 @@
 	icon_state = "gpickaxe"
 	item_state = "gpickaxe"
 	digspeed = 47
+	armor_penetration = 0
 	origin_tech = list(TECH_MATERIAL = 2)
 	desc = "This makes no metallurgic sense."
 	drill_verb = "picking"
@@ -118,6 +124,7 @@
 	icon_state = "dpickaxe"
 	item_state = "dpickaxe"
 	digspeed = 31
+	armor_penetration = 6
 	origin_tech = list(TECH_MATERIAL = 2, TECH_ENGINEERING = 2)
 	desc = "A pickaxe with a diamond pick head."
 	drill_verb = "picking"
@@ -126,6 +133,7 @@
 	name = "diamond mining drill"
 	icon_state = "diamonddrill"
 	item_state = "jackhammer"
+	armor_penetration = 7
 	digspeed = 22 //Digs through walls, girders, and can dig up sand
 	origin_tech = list(TECH_MATERIAL = 2, TECH_POWER = 2, TECH_ENGINEERING = 2)
 	desc = "Yours is the drill that will pierce the heavens!"

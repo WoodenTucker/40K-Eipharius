@@ -143,13 +143,13 @@ Pilgrim Fate System
 			U.add_skills(rand(5,8),rand(4,6),rand(3,6),rand(2,6),rand(2,6)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			new /obj/item/glass_jar(src.loc)
-			new /obj/item/storage/backpack/satchel/warfare(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			new /obj/item/device/radio/headset/headset_service(src.loc)
 			new /obj/item/device/flashlight/lantern(src.loc)
 			new /obj/item/paper/administratum(src.loc)
 			new /obj/item/pen(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,) //removes verb
 			U.stat = CONSCIOUS
 			U.sleeping = 0
@@ -159,7 +159,7 @@ Pilgrim Fate System
 				to_chat(U,"<span class='goodmood'><b><font size=3>You have had glimpses of the future, in these waking dreams you see yourself fighting against a terrible foe. A dark and hideous creature, this day will come soon. Train and prepare yourself for this fight, track down the great beasts of the land. You are not hunted. You are the hunter. </font></b></span>")
 				U.add_stats(rand(18,19), rand(14,16), rand(12,18), rand (12,14))
 				new /obj/item/stack/thrones3/twenty(src.loc) 
-				new /obj/item/clothing/suit/armor/exile(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/exile, slot_wear_suit)
 				new /obj/item/melee/sword/machete/chopper/heavy/slayer(src.loc) 
 				
 			else if(prob(15))
@@ -168,7 +168,7 @@ Pilgrim Fate System
 				U.add_stats(rand(16,19), rand(16,19), rand(19,21), rand (14,16)) 
 				U.add_skills(rand(5,8),rand(5,6),rand(5,6),rand(2,6),rand(5,6))
 				new /obj/item/stack/thrones3/twenty(src.loc)
-				new /obj/item/clothing/suit/armor/scum2(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/scum2, slot_wear_suit)
 				new /obj/item/reagent_containers/food/snacks/threebread(src.loc)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
@@ -192,7 +192,7 @@ Pilgrim Fate System
 					new /obj/item/storage/box/sniperammo/apds/bos(src.loc)
 				new /obj/item/ammo_magazine/handful/brifle_handful/ms(src.loc)
 				new /obj/item/ammo_magazine/handful/brifle_handful(src.loc)
-				new /obj/item/clothing/suit/sherpa(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/sherpa, slot_wear_suit)
 				new /obj/item/reagent_containers/food/snacks/threebread(src.loc)
 			else // Add a fate that is high chance, you are a target of a bounty and give them clothing that cannot be removed which is a criminal marker. Criminal Barcode. Penitent Markings. Penitent Tattoo.
 				to_chat(U,"<span class='danger'><b><font size=4>THE TRIBAL</font></b></span>")
@@ -200,20 +200,20 @@ Pilgrim Fate System
 				new /obj/item/stack/thrones3/twenty(src.loc) 
 				new /obj/item/stack/thrones3/twenty(src.loc) 
 				new /obj/item/melee/trench_axe/bspear/hunter(src.loc) 
-				new /obj/item/clothing/suit/armor/leather(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/leather, slot_wear_suit)
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are a local hunter and tribal from one of the many wandering tribes of Messina, you've only recently learned of Low Gothic and are adjusting to imperial rule.. </font></b></span>")
 		if("Nomad")
 			U.add_skills(rand(5,8),rand(7,9),rand(5,7),rand(1,3),rand(1,6)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
-			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			new /obj/item/clothing/head/ushanka2(src.loc)
 			new /obj/item/device/radio/headset/headset_service(src.loc)
-			new /obj/item/storage/backpack/satchel/warfare(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			new /obj/item/device/flashlight/lantern(src.loc) 
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			new /obj/item/storage/belt/stalker(src.loc) 
-			new /obj/item/clothing/head/pillbox(src.loc) 
-			new /obj/item/clothing/suit/chokha(src.loc) 
+			//new /obj/item/clothing/head/pillbox(src.loc) 
+			//new /obj/item/clothing/suit/chokha(src.loc) 
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
@@ -225,8 +225,8 @@ Pilgrim Fate System
 				new /obj/item/melee/trench_axe/bardiche/beast(src.loc)
 				new /obj/item/reagent_containers/food/snacks/threebread(src.loc)
 				new /obj/item/melee/sword/combat_knife/bowie(src.loc)
-				new /obj/item/clothing/suit/armor/bonearmor(src.loc)
-				new /obj/item/clothing/head/helmet/dragon(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/bonearmor, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/dragon, slot_head)
 			else
 				to_chat(U,"<span class='danger'><b><font size=4>THE EXPLORER</font></b></span>")
 				to_chat(U,"<span class='goodmood'>A skilled explorer of frontier worlds, you've plied your trade aiding the most unsensible of imperials and even xenos survive otherwise suicidal treks into alien worlds. Here you are once again, upon a xenos tainted world likely a few steps from your grave.</font></b></span>")
@@ -239,18 +239,18 @@ Pilgrim Fate System
 					new /obj/item/gun/energy/pulse/plasma/pistol/glock(src.loc)
 				else
 					new /obj/item/gun/energy/las/triplex(src.loc)
-				new /obj/item/clothing/suit/armor/ranger2(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/ranger2, slot_wear_suit)
 				new /obj/item/paper/administratum/weapon4(src.loc)
 				new /obj/item/pen(src.loc)
 				new /obj/item/paper/administratum/theta(src.loc)
 		if("Scum") // Pariah story. The magical 357
 			 //ex criminal, not fed very well, but random stats
 			U.add_skills(rand(5,10),rand(5,10),rand(5,10),rand(5,10),rand(5,10)) //melee, ranged, med, eng, surgery
-			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			new /obj/item/device/radio/headset/headset_sci(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			new /obj/item/torch/self_lit(src.loc)
-			new /obj/item/storage/backpack/satchel/warfare(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
@@ -262,11 +262,11 @@ Pilgrim Fate System
 				if(prob(50))
 					equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 				else if(prob(50))
-					new /obj/item/clothing/under/rank/victorian/blred(src.loc)
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian/blred, slot_w_uniform)
 				else
-					new /obj/item/clothing/under/rank/victorian/redbl(src.loc)
-				new /obj/item/clothing/suit/scum(src.loc)
-				new /obj/item/clothing/head/scum(src.loc)
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian/redbl, slot_w_uniform)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/scum, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/scum, slot_head)
 				new /obj/item/storage/fancy/cigarettes/dromedaryco(src.loc)
 				new /obj/item/storage/fancy/cigarettes/dromedaryco(src.loc)
 				new /obj/item/storage/pill_bottle/happy(src.loc) 
@@ -285,22 +285,22 @@ Pilgrim Fate System
 				to_chat(U,"<span class='danger'><b><font size=4>THE PENITENT</font></b></span>")
 				to_chat(U,"<span class='goodmood'>You are a penitent, after committing several horrible crimes to the imperium, you were arrested and imprisoned for years before being released by the church. As per your punishment you are marked and must take upon the burdens of others to ease your own...</font></b></span>")
 				U.add_stats(rand(16,17), rand(16,17), rand(12,16), rand (10,15))
-				new /obj/item/clothing/under/rank/penitent(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/penitent, slot_w_uniform)
 				new /obj/item/gun/projectile/slugrevolver/penitent(src.loc)
 				new /obj/item/ammo_magazine/c44(src.loc)
 				new /obj/item/ammo_magazine/c44(src.loc)
-				new /obj/item/clothing/suit/raggedrobe(src.loc)
-				new /obj/item/clothing/head/plebhood(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/raggedrobe, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/plebhood, slot_head)
 				new /obj/item/paper/administratum/weapon3(src.loc)
 				new /obj/item/pen(src.loc)
 				if(prob(25))
 					new /obj/item/device/radio/headset/headset_sci(src.loc)
 		if("Witch Hunter")
 			U.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(2,4),rand(2,6)) //melee, ranged, med, eng, surgery
-			new /obj/item/storage/backpack/satchel/warfare(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			new /obj/item/device/flashlight/lantern(src.loc) 
-			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			new /obj/item/clothing/accessory/holster/hip(src.loc)
 			new /obj/item/gun/energy/las/laspistol(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/key/grand/monastary, slot_wear_id)
@@ -311,19 +311,19 @@ Pilgrim Fate System
 			to_chat(U,"<span class='goodmood'>You are a Witch Hunter -- a unique subset of the Bounty Hunter Guild attached to the Chamber Militant, working both as Servant to the Ecclesiarchy and a 'bounty hunter' that the Ecclesiarchy can rely upon without tainting their own hands.</font></b></span>")
 			U.add_stats(rand(16,17), rand(14,16), rand(14,16), rand (10,12)) //veteran mercenary
 			new /obj/item/melee/sword/cane(src.loc)
-			new /obj/item/clothing/head/helmet/witch(src.loc)
-			new /obj/item/clothing/suit/armor/witch(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/witch, slot_head)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/witch, slot_wear_suit)
 			new /obj/item/device/radio/headset/headset_sci(src.loc)
 			new /obj/item/paper/administratum/weapon4(src.loc)
 			new /obj/item/pen(src.loc)
 			new /obj/item/paper/administratum/theta(src.loc)
 		if("Mercenary")
 			U.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(2,4),rand(2,6)) //melee, ranged, med, eng, surgery
-			new /obj/item/storage/backpack/satchel/warfare(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			new /obj/item/device/radio/headset/headset_service(src.loc)
 			new /obj/item/device/flashlight/lantern(src.loc) 
-			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
@@ -334,8 +334,8 @@ Pilgrim Fate System
 				to_chat(U,"<span class='goodmood'>A holy warrior of your chosen god, you work on behalf of the Ecclesiarchy(or the cult) as a slayer of the heretical and unfaithful. Face against the dark and protect your flock... for a price.</font></b></span>")
 				U.add_stats(rand(16,18), rand(14,16), rand(16,18), rand (10,12)) //veteran mercenary
 				new /obj/item/melee/trench_axe/glaive/adamantine(src.loc)
-				new /obj/item/clothing/suit/armor/brigandine(src.loc)
-				new /obj/item/clothing/head/helmet/hero(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/brigandine, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/hero, slot_head)
 				new /obj/item/paper/administratum/weapon3(src.loc)
 				new /obj/item/paper/administratum/theta(src.loc)
 				new /obj/item/pen(src.loc)
@@ -356,7 +356,7 @@ Pilgrim Fate System
 				new /obj/item/paper/administratum/weapon4(src.loc)
 				new /obj/item/paper/administratum/theta(src.loc)
 				new /obj/item/pen(src.loc)
-				new /obj/item/clothing/suit/armor/armoredtrench(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/armoredtrench, slot_wear_suit)
 				if(prob(2))
 					new /obj/item/device/radio/headset/headset_eng(src.loc)
 				if(prob(2))
@@ -376,13 +376,13 @@ Pilgrim Fate System
 				new /obj/item/paper/administratum/theta(src.loc)
 				new /obj/item/pen(src.loc)
 				if(prob(60))
-					new /obj/item/clothing/suit/armor/bountyhunter2(src.loc)
-					new /obj/item/clothing/head/bountyhead(src.loc)
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/bountyhunter2, slot_wear_suit)
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/bountyhead, slot_head)
 				else if(prob(50))
-					new /obj/item/clothing/suit/armor/carapace3(src.loc)
-					new /obj/item/clothing/head/helmet/marinehelm(src.loc)
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/carapace3, slot_wear_suit)
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/marinehelm, slot_head)
 				else if(prob(30))
-					new /obj/item/clothing/suit/armor/vanpa(src.loc)
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/vanpa, slot_wear_suit)
 				else
 					new /obj/item/ammo_magazine/c50(src.loc)
 				if(prob(15))
@@ -417,9 +417,9 @@ Pilgrim Fate System
 
 		if("Mysterious Citizen")
 			U.add_skills(rand(7,10),rand(7,9),rand(2,4),rand(3,4),rand(2,3)) //melee, ranged, med, eng, surgery
-			new /obj/item/storage/backpack/satchel/warfare(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			new /obj/item/device/radio/headset/headset_service(src.loc)
-			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			new /obj/item/device/flashlight/lantern(src.loc)
 			U.stat = CONSCIOUS
@@ -434,9 +434,9 @@ Pilgrim Fate System
 				new /obj/item/melee/sword/skinning_knife(src.loc)
 				new /obj/item/storage/firstaid/surgery(src.loc)
 				new /obj/item/clothing/mask/gas/prac_mask(src.loc)
-				new /obj/item/clothing/suit/prac_arpon(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/prac_arpon, slot_wear_suit)
 				new /obj/item/clothing/gloves/prac_gloves(src.loc)
-				new /obj/item/clothing/shoes/prac_boots(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
 				new /obj/item/toothpuller(src.loc)
 				equip_to_slot_or_store_or_drop(new /obj/item/card/id/ring/disgracedmedicae, slot_wear_id)
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
@@ -458,10 +458,10 @@ Pilgrim Fate System
 				new /obj/item/gun/projectile/talon/renegade(src.loc)
 				if(prob(50))
 					new /obj/item/device/batterer(src.loc)
-				new /obj/item/clothing/suit/armor/slumcoat(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/slumcoat, slot_wear_suit)
 				new /obj/item/storage/box/syndie_kit/imp_freedom(src.loc)
-				new /obj/item/clothing/head/chameleon(src.loc)
-				new /obj/item/clothing/under/chameleon(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/chameleon, slot_head)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/chameleon, slot_w_uniform)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
 				if(prob(1))
@@ -476,12 +476,12 @@ Pilgrim Fate System
 				new /obj/item/ammo_magazine/a357/ms(src.loc)
 				new /obj/item/ammo_magazine/a357/ms(src.loc)
 				new /obj/item/storage/briefcase/crimekit(src.loc)
-				new /obj/item/clothing/suit/armor/bountyhunter2(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/bountyhunter2, slot_wear_suit)
 				new /obj/item/clothing/suit/armor/tduster(src.loc)
-				new /obj/item/clothing/head/det(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/det, slot_head)
 				new /obj/item/storage/fancy/cigarettes/dromedaryco(src.loc)
 				new /obj/item/flame/lighter(src.loc)
-				new /obj/item/clothing/under/det/black(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/det/black, slot_w_uniform)
 				new /obj/item/paper/administratum/weapon3(src.loc)
 				new /obj/item/paper/administratum/theta(src.loc)
 				new /obj/item/pen(src.loc)
@@ -489,12 +489,12 @@ Pilgrim Fate System
 			U.add_stats(rand(16,18), rand(14,16), rand(14,18), rand (12,14)) //
 			U.add_skills(rand(6,8),rand(4,7),rand(3,6),rand(5,6),rand(2,6)) //melee, ranged, med, eng, surgery
 			new /obj/item/clothing/gloves/thick(src.loc)
-			new /obj/item/clothing/head/helmet/hard_had(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/hard_had, slot_head)
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			new /obj/item/storage/backpack/satchel/satchel_eng(src.loc)
-			new /obj/item/pickaxe/newpick(src.loc)
-			new /obj/item/clothing/suit/miner(src.loc)
-			new /obj/item/clothing/shoes/prac_boots(src.loc)
+			new /obj/item/pickaxe/mechanicus(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/miner, slot_wear_suit)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
 			new /obj/item/device/flashlight/lantern(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/ring/disgracedmedicae, slot_wear_id)
 			new /obj/item/stack/thrones3/twenty(src.loc)
@@ -502,7 +502,7 @@ Pilgrim Fate System
 			new /obj/item/paper/administratum/weapon4(src.loc)
 			new /obj/item/pen(src.loc)
 			to_chat(U,"<span class='danger'><b><font size=4>THE BROKEBACK MINER</font></b></span>")
-			to_chat(U,"<span class='goodmood'><b><font size=3>A veteran of many digsites you travelled the galaxy looking for work.</font></b></span>")
+			to_chat(U,"<span class='goodmood'><b><font size=3>A veteran of many digsites you were press ganged into service to the mechanicus here on Messina.</font></b></span>")
 			U.stat = CONSCIOUS
 			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
 			U.sleeping = 0
@@ -511,15 +511,15 @@ Pilgrim Fate System
 			U.add_stats(rand(15,17), rand(14,17), rand(14,16), rand (13,15)) //
 			U.add_skills(rand(6,8),rand(6,8),rand(4,6),rand(5,6),rand(2,6)) //melee, ranged, med, eng, surgery
 			new /obj/item/clothing/gloves/thick(src.loc)
-			new /obj/item/storage/backpack/satchel/warfare(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			new /obj/item/device/radio/headset/red_team(src.loc)
 			new /obj/item/device/flashlight/lantern(src.loc) 
 			new /obj/item/clothing/shoes/jackboots/noble(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/key/grand/monastary, slot_wear_id)
 			new /obj/item/stack/thrones/five(src.loc)
-			new /obj/item/clothing/head/helmet/hevhelm/palace(src.loc)
-			new /obj/item/clothing/suit/armor/brigandine/palace(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/hevhelm/palace, slot_head)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/brigandine/palace, slot_wear_suit)
 			new /obj/item/melee/trench_axe/glaive/adamantine(src.loc)
 			new /obj/item/paper/administratum/weapon3(src.loc)
 			new /obj/item/pen(src.loc)
@@ -536,18 +536,18 @@ Pilgrim Fate System
 			new /obj/item/clothing/gloves/thick(src.loc)
 			new /obj/item/clothing/mask/gas/half/cadianrespirator(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/cadian_uniform, slot_w_uniform)
-			new /obj/item/storage/backpack/satchel/warfare(src.loc)
-			if(prob(15))
-				new /obj/item/clothing/suit/armor/whiteshield/pdf(src.loc)
-				new /obj/item/clothing/head/helmet/whiteshield/pdf(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			if(prob(25))
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/whiteshield/pdf, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/whiteshield/pdf, slot_head)
 				new /obj/item/gun/projectile/automatic/heavystubber(src.loc)
-			if(prob(45))
-				new /obj/item/clothing/suit/armor/whiteshield/pdf/medic(src.loc)
+			if(prob(35))
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/whiteshield/pdf/medic, slot_wear_suit)
 				new /obj/item/storage/belt/medical/full(src.loc)
-				new /obj/item/clothing/head/helmet/whiteshield/pdf/medic(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/whiteshield/pdf/medic, slot_head)
 			else
-				new /obj/item/clothing/suit/armor/whiteshield/pdf/spec(src.loc)
-				new /obj/item/clothing/head/helmet/whiteshield/pdf/spec(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/whiteshield/pdf/spec, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/whiteshield/pdf/spec, slot_head)
 				new /obj/item/cell/plasma(src.loc)
 			new /obj/item/clothing/shoes/jackboots/cadian(src.loc)
 			new /obj/item/device/flashlight/lantern(src.loc)
@@ -568,10 +568,10 @@ Pilgrim Fate System
 			U.add_skills(rand(6,8),rand(4,8),rand(2,8),rand(2,8),rand(2,8)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			new /obj/item/device/radio/headset/headset_service(src.loc)
-			new /obj/item/storage/backpack/satchel/warfare(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			new /obj/item/device/flashlight/lantern(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
@@ -580,8 +580,8 @@ Pilgrim Fate System
 				to_chat(U,"<span class='danger'><b><font size=4>THE SORCERER</font></b></span>")
 				to_chat(U,"<span class='goodmood'>You're a foul sorcerer of chaos magics -- unless you aren't. In which case you're a crackpot. Or are you? Who knows. Best hide your robes unless you want to be shot to pieces though...</font></b></span>")
 				U.add_stats(rand(15,16), rand(14,16), rand(14,18), rand (12,16)) //
-				new /obj/item/clothing/head/culthood/magus(src.loc)
-				new /obj/item/clothing/suit/cultrobes/magusred(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/culthood/magus, slot_head)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/cultrobes/magusred, slot_wear_suit)
 				if(prob(10))
 					new /obj/item/device/radio/headset/blue_team/all(src.loc)
 				new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
@@ -594,7 +594,7 @@ Pilgrim Fate System
 				to_chat(U,"<span class='danger'><b><font size=4>THE MERCHANT</font></b></span>")
 				to_chat(U,"<span class='goodmood'>Guided by your lust for thrones you smelled opportunity on this newly founded world. You have connectoins to the local gangs and trade guilds, find allies to further your interests in Messina.</font></b></span>")
 				U.add_stats(rand(14,15), rand(14,15), rand(15,17), rand (15,16))
-				new /obj/item/clothing/suit/armor/vest/leather/tailcoat(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/vest/leather/tailcoat, slot_wear_suit)
 				new /obj/item/stack/thrones/five(src.loc) 
 				new /obj/item/stack/thrones2/ten(src.loc) 
 				new /obj/item/stack/thrones3/twenty(src.loc) 
@@ -615,8 +615,8 @@ Pilgrim Fate System
 				new /obj/item/stack/thrones/five(src.loc) 
 				new /obj/item/stack/thrones2/ten(src.loc) 
 				new /obj/item/stack/thrones3/twenty(src.loc)
-				new /obj/item/clothing/suit/musician(src.loc)
-				new /obj/item/clothing/head/musichat(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/musician, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/musichat, slot_head)
 				new /obj/item/instrument/guitar(src.loc)
 				new /obj/item/device/violin(src.loc)
 				new /obj/item/paper/administratum/weapon3(src.loc)
@@ -625,13 +625,13 @@ Pilgrim Fate System
 		if("Fate Touched")
 			U.add_stats(rand(16,17), rand(15,17), rand(10,16), rand (12,16)) 
 			U.add_skills(rand(2,7),rand(5,7),rand(1,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
-			new /obj/item/clothing/under/rank/chaplain(src.loc)
-			new /obj/item/storage/backpack/satchel/warfare(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/chaplain, slot_w_uniform)
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			new /obj/item/device/radio/headset/headset_sci(src.loc)
 			new /obj/item/book/manual(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			new /obj/item/device/flashlight/lantern(src.loc)
-			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
@@ -640,11 +640,11 @@ Pilgrim Fate System
 				to_chat(U,"<span class='danger'><b><font size=4>THE SORCERER</font></b></span>")
 				to_chat(U,"<span class='goodmood'>You're a foul sorcerer of chaos magics -- unless you aren't. In which case you're a crackpot. Or are you? Who knows. Best hide your robes unless you want to be shot to pieces though...</font></b></span>")
 				U.add_stats(rand(15,16), rand(14,16), rand(14,18), rand (12,16)) //
-				new /obj/item/clothing/suit/armor/knighthosp(src.loc)
-				new /obj/item/clothing/head/helmet/hauberk(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/knighthosp, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/hauberk, slot_head)
 				new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
 				new /obj/item/device/radio/headset/headset_sci(src.loc)
-				if(prob(25))
+				if(prob(30))
 					new /obj/item/device/radio/headset/blue_team/all(src.loc)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
@@ -652,9 +652,9 @@ Pilgrim Fate System
 				to_chat(U,"<span class='danger'><b><font size=4>THE CLERIC</font></b></span>")
 				to_chat(U,"<span class='goodmood'>Banish the heretic and redeem this world.</font></b></span>")
 				U.add_stats(rand(14,15), rand(14,15), rand(15,17), rand (15,16))
-				new /obj/item/clothing/suit/armor/knighthosp(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/knighthosp, slot_wear_suit)
 				new /obj/item/melee/chain/inqcs(src.loc) 
-				new /obj/item/clothing/head/helmet/hauberk(src.loc)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/hauberk, slot_head)
 				new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
 				new /obj/item/device/radio/headset/headset_sci(src.loc)
 				new /obj/item/paper/administratum/weapon4(src.loc)
@@ -675,7 +675,6 @@ Pilgrim Fate System
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
 	cultist_chance = 35
-	species_role = "Ogryn"
 
 	equip(var/mob/living/carbon/human/H)
 	//theres gonna be some redundencies here but I do not careeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
@@ -687,8 +686,7 @@ Pilgrim Fate System
 		H.verbs += list(
 			/mob/living/carbon/human/proc/ideology,
 		)
-		to_chat(H, "<span class='notice'><b><font size=3>You're an up-and-coming entrepreneur on Messina -- the wisest most big brain Ogryn bonehead that ever lived. You were sent here by House Goliath from Necromunda who supplies most of the sub-sector through the cold-trade, and the Militarum with cheap manufactured autoguns who give it by the freight-load to private armies in the frontier. Goliath expects big things from you, so you best get to grinding Oggy... </font></b></span>")
-		to_chat(H, "<span class='notice'><b><font size=3>You're an up-and-coming entrepreneur on Messina -- the wisest most big brain Ogryn bonehead that ever lived. You were sent here by House Goliath from Necromunda who supplies most of the sub-sector through the cold-trade, and the Militarum with cheap manufactured autoguns who give it by the freight-load to private armies in the frontier. Goliath expects big things from you, so you best get to grinding Oggy... </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You're an up-and-coming entrepreneur on Messina -- the wisest most big brain ganger that ever lived. Surviving the gangs of Necromunda which now supplies most of the sub-sector through the cold-trade, and the Militarum with cheap manufactured autoguns who give it by the freight-load to private armies in the frontier. Your gang expects big things from you, so you best get to grinding slummer... </font></b></span>")
 
 /*
 /datum/job/innkeeper
@@ -873,13 +871,13 @@ Pilgrim Fate System
 
 /decl/hierarchy/outfit/job/underboss
 	name = OUTFIT_JOB_NAME("Underboss")
-	uniform = /obj/item/clothing/under/ogryn/jumpsuit
-	head = /obj/item/clothing/head/ogryn
-	shoes = /obj/item/clothing/shoes/jackboots/ogryn
-	gloves = null
-	back = /obj/item/storage/backpack/satchel/warfare/ogryn
+	uniform = /obj/item/clothing/under/waiter
+	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	suit = /obj/item/clothing/suit/armor/ogryn/bouncer
+	r_ear = null
+	shoes = /obj/item/clothing/shoes/dress
+	gloves = /obj/item/clothing/gloves/latex
+	r_pocket = /obj/item/storage/box/coin
 	l_ear = /obj/item/device/radio/headset/ert2
 	r_ear = null
 	l_pocket = /obj/item/device/flashlight/lantern
@@ -888,9 +886,10 @@ Pilgrim Fate System
 	r_pocket = /obj/item/storage/box/coin
 	suit_store = null
 	l_hand = /obj/item/melee/sword/machete/chopper/heavy/adamantine
-	r_hand = /obj/item/gun/projectile/ork/automatic/shoota/big
+	r_hand = /obj/item/gun/projectile/shotgun/pump/shitty/magrave
 	backpack_contents = list(
 	/obj/item/card/id/pilgrim/penitent/keeper = 1,
+	/obj/item/ammo_box/shotgun/msslug = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,
 	/obj/item/pen = 1,
@@ -1125,11 +1124,11 @@ Pilgrim Fate System
 			U.add_stats(rand(14,18), rand(14,17), rand(17,19), rand (12,16))
 			U.add_skills(rand(8,10),rand(5,6),rand(1,3),rand(2,6),rand(1,2)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
-			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc) 
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			new /obj/item/clothing/suit/armor/goliathplate(src.loc) 
 			new /obj/item/clothing/head/helmet/gangerhelm(src.loc) 
 			new /obj/item/device/radio/headset/ert(src.loc) 
-			new /obj/item/storage/backpack/satchel/warfare(src.loc) 
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back) 
 			new /obj/item/melee/classic_baton/trench_club(src.loc)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent/keeper, slot_wear_id)  
 			new /obj/item/stack/thrones3/twenty(src.loc) 
@@ -1142,7 +1141,7 @@ Pilgrim Fate System
 			U.add_stats(rand(14,17), rand(15,17), rand(14,16), rand (14,16)) //ex criminal, not fed very well, but random stats
 			U.add_skills(rand(5,6),rand(9,11),rand(2,4),rand(5,10),rand(2,4)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/penitent, slot_w_uniform)
-			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc) 
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			new /obj/item/clothing/suit/storage/vest/tactical(src.loc) 
 			new /obj/item/device/radio/headset/ert(src.loc) 
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent/keeper, slot_wear_id) 
@@ -1157,10 +1156,10 @@ Pilgrim Fate System
 		if("Rogue Doc")
 			U.add_stats(rand(15,17), rand(12,15), rand(12,15), rand (15,15))
 			U.add_skills(rand(4,6),rand(4,6),rand(10,10),rand(9,10),rand(10,10)) //melee, ranged, med, eng, surgery
-			new /obj/item/storage/backpack/satchel/warfare(src.loc) 
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back) 
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			new /obj/item/storage/belt/medical/full(src.loc)  
-			new /obj/item/clothing/shoes/jackboots/pilgrim_boots(src.loc) 
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			new /obj/item/device/radio/headset/ert(src.loc) 
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent/keeper, slot_wear_id) 
 			new /obj/item/stack/thrones3/twenty(src.loc) 
