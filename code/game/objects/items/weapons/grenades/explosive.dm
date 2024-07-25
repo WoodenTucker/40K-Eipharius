@@ -367,7 +367,7 @@ obj/mortar/flare/blue
 	desc = "A standard issue imperial detpack, while simple these explosives when combined with grenades or further detpacks are capable of destroying even baneblades. Stand well clear!"
 	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/strong=1)
 	explosion_size = 16
-	num_fragments = 12
+	num_fragments = 9
 	throw_range = 4
 	w_class = ITEM_SIZE_SMALL
 	icon = 'icons/obj/assemblies.dmi'
