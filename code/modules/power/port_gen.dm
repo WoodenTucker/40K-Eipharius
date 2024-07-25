@@ -90,7 +90,7 @@
 
 //A power generator that runs on solid plasma sheets.
 /obj/machinery/power/port_gen/pacman
-	name = "\improper P.A.C.M.A.N.-type Portable Generator"
+	name = "Primitive Power Generator"
 	desc = "A power generator that runs on solid phoron sheets. Rated for 80 kW max safe output."
 
 	var/sheet_name = "Phoron Sheets"
@@ -402,12 +402,12 @@
 				power_output++
 
 /obj/machinery/power/port_gen/pacman/super
-	name = "S.U.P.E.R.P.A.C.M.A.N.-type Portable Generator"
+	name = "Imperium Power Generator"
 	desc = "A power generator that utilizes uranium sheets as fuel. Can run for much longer than the standard PACMAN type generators. Rated for 80 kW max safe output."
 	icon_state = "portgen1"
 	sheet_path = /obj/item/stack/material/uranium
 	sheet_name = "Uranium Sheets"
-	time_per_sheet = 576 //same power output, but a 50 sheet stack will last 2 hours at max safe power
+	time_per_sheet = 400 //same power output, but a 50 sheet stack will last 2 hours at max safe power
 	board_path = /obj/item/circuitboard/pacman/super
 	var/rad_power = 2
 
@@ -434,7 +434,7 @@
 
 /obj/machinery/power/port_gen/pacman/super/explode()
 	//a nice burst of radiation
-	var/rads = rad_power*25 + (sheets + sheet_left)*1.5
+	var/rads = rad_power*3 + (sheets + sheet_left)*1.5
 	radiation_repository.radiate(src, (max(20, rads)))
 
 	explosion(src.loc, rad_power+1, rad_power+1, rad_power*2, 3)
@@ -449,7 +449,7 @@
 	max_power_output = 8	//The maximum power setting without emagging.
 	temperature_gain = 80	//how much the temperature increases per power output level, in degrees per level
 	max_temperature = 450
-	time_per_sheet = 400
+	time_per_sheet = 300
 	rad_power = 6
 	atom_flags = ATOM_FLAG_OPEN_CONTAINER
 	board_path = /obj/item/circuitboard/pacman/super/potato

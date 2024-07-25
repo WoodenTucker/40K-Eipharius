@@ -88,6 +88,8 @@
 	if(alien != IS_DIONA)
 		M.add_chemical_effect(CE_PAINKILLER, 30) // Feel less pain.
 		M.add_chemical_effect(CE_SPEEDBOOST, 1) // Speed boost.
+		if(prob(10))
+			M.heal_organ_damage(1 * removed, 1 * removed)
 	if(M.chem_doses[type] < 0.2)	//not that effective after initial rush
 		M.emote(pick("twitch", "drool", "moan", "giggle"))
 		sleep(10)

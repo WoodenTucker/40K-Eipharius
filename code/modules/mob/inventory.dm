@@ -95,17 +95,23 @@ var/list/slot_equipment_priority = list( \
 		if(backpack.can_be_inserted(newitem, null, 1))
 			newitem.forceMove(src.back)
 			return backpack
+		else
+			drop_from_inventory(newitem)
 
 	// Try to place it in any item that can store stuff, on the mob.
 	for(var/obj/item/storage/S in src.contents)
 		if(S.can_be_inserted(newitem, null, 1))
 			newitem.forceMove(S)
 			return S
+		else
+			drop_from_inventory(newitem)
 
 /mob/proc/equip_to_storage_or_drop(obj/item/newitem)
 	var/stored = equip_to_storage(newitem)
 	if(!stored && newitem)
 		newitem.forceMove(loc)
+	else
+		drop_from_inventory(newitem)
 	return stored
 
 //These procs handle putting s tuff in your hand. It's probably best to use these rather than setting l_hand = ...etc

@@ -336,7 +336,7 @@ obj/mortar/flare/blue
 
 	w_class = ITEM_SIZE_SMALL
 	throw_speed = 2
-	throw_range = 6 //heavy, can't be thrown as far
+	throw_range = 8 //heavy, can't be thrown as far
 
 	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment=1)
 	explosion_size = 3
@@ -348,6 +348,7 @@ obj/mortar/flare/blue
 	icon_state = "krak_grenade"
 	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/strong=1)
 	explosion_size = 8
+	throw_range = 7
 	num_fragments = 4
 	w_class = ITEM_SIZE_SMALL
 
@@ -358,7 +359,20 @@ obj/mortar/flare/blue
 	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/strong=1)
 	explosion_size = 12
 	num_fragments = 7
+	throw_range = 6
 	w_class = ITEM_SIZE_SMALL
+
+/obj/item/grenade/frag/high_yield/krak/detpack
+	name = "Det Pack"
+	desc = "A standard issue imperial detpack, while simple these explosives when combined with grenades or further detpacks are capable of destroying even baneblades. Stand well clear!"
+	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/strong=1)
+	explosion_size = 16
+	num_fragments = 9
+	throw_range = 4
+	w_class = ITEM_SIZE_SMALL
+	icon = 'icons/obj/assemblies.dmi'
+	icon_state = "plastic-explosive0"
+	item_state = "plasticx"
 
 /obj/item/grenade/frag/high_yield/homemade
 	name = "Pipe Grenade"

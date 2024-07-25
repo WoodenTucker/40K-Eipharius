@@ -1,5 +1,5 @@
 /obj/item/plastique
-	name = "det pack(breacher)"
+	name = "det pack(breach)"
 	desc = "A simple explosive charge designed for breaching large fortifications."
 	gender = PLURAL
 	icon = 'icons/obj/assemblies.dmi'
@@ -68,15 +68,15 @@
 	if(!target)
 		target = src
 	if(location)
-		explosion(location, -1, -1, 3, 5)
+		explosion(location, -1, -1, 3, 4)
 
 	if(target)
 		if (istype(target, /turf/simulated/wall))
 			var/turf/simulated/wall/W = target
+			explosion(location, -1, -1, 3, 4)
 			W.dismantle_wall(1)
-			explosion(location, -1, -1, 3, 5)
 		else
-			explosion(location, -1, -1, 3, 5)
+			explosion(location, -1, 1, 4, 4)
 	if(target)
 		target.overlays -= image_overlay
 	qdel(src)

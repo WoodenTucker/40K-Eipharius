@@ -114,7 +114,7 @@
 	..()
 	return
 /obj/machinery/shieldgen
-	name = "Emergency shield projector"
+	name = "Emergency void shield projector"
 	desc = "Used to seal minor hull breaches."
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "shieldoff"

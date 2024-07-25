@@ -2,7 +2,7 @@
 	name = "camera assembly"
 	desc = "A pre-fabricated security camera kit, ready to be assembled and mounted to a surface."
 	icon = 'icons/obj/monitors.dmi'
-	icon_state = "cameracase"
+	icon_state = "alarmx"
 	w_class = ITEM_SIZE_SMALL
 	anchored = 0
 
