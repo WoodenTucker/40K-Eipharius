@@ -377,7 +377,7 @@
 /turf/unsimulated/floor/necron_floor,
 /area/cadiaoutpost/oa/dungeon1)
 "ci" = (
-/mob/living/simple_animal/hostile/necron,
+/mob/living/simple_animal/hostile/syndicate/mercenary/leader,
 /turf/simulated/floor/stone/seabed,
 /area/cadiaoutpost/oa/mechanicusdig)
 "cl" = (
@@ -1536,6 +1536,10 @@
 	icon_state = "lwall5"
 	},
 /area/cadiaoutpost/oa/dungeon1)
+"lg" = (
+/mob/living/simple_animal/hostile/syndicate/mercenary,
+/turf/simulated/floor/stone/seabed,
+/area/cadiaoutpost/oa/mechanicusdig)
 "lh" = (
 /obj/structure/hivedecor/xenos/artifact/megaweapon{
 	icon_state = "14"
@@ -3527,7 +3531,7 @@
 /turf/unsimulated/floor/sand,
 /area/cadiaoutpost/oa/dungeon1)
 "Bp" = (
-/obj/item/plastique,
+/obj/item/grenade/frag/high_yield/krak/detpack,
 /turf/simulated/floor/stone/seabed,
 /area/cadiaoutpost/oa/mechanicusdig)
 "Bs" = (
@@ -3955,7 +3959,7 @@
 "EX" = (
 /obj/structure/closet/excavation,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/plastique,
+/obj/item/grenade/frag/high_yield/krak/detpack,
 /turf/simulated/floor/darkfloor,
 /area/cadiaoutpost/oa/mechanicusdig)
 "Fe" = (
@@ -4512,7 +4516,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/dungeon3)
 "Kn" = (
-/obj/item/plastique,
+/obj/item/grenade/frag/high_yield/krak/detpack,
 /obj/item/remains/human{
 	color = "grey"
 	},
@@ -5988,11 +5992,9 @@
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/mechanicusdig)
 "Yr" = (
-/mob/living/simple_animal/hostile/necron,
-/turf/simulated/shuttle/wall/necron{
-	icon_state = "lawall12"
-	},
-/area/cadiaoutpost/oa/dungeon1)
+/mob/living/simple_animal/hostile/syndicate,
+/turf/simulated/floor/stone/seabed,
+/area/cadiaoutpost/oa/mechanicusdig)
 "Ys" = (
 /obj/effect/floor_decal/turf/bar3{
 	dir = 4
@@ -13940,7 +13942,7 @@ je
 je
 je
 Hi
-ci
+je
 Hi
 Hi
 Hi
@@ -16958,7 +16960,7 @@ je
 je
 je
 je
-ci
+je
 je
 je
 je
@@ -17498,7 +17500,7 @@ Hi
 je
 je
 je
-je
+Yr
 je
 je
 Hi
@@ -18432,7 +18434,7 @@ je
 je
 je
 je
-ci
+je
 je
 je
 Hi
@@ -18754,7 +18756,7 @@ Hi
 Hi
 je
 je
-je
+Yr
 je
 je
 je
@@ -19010,7 +19012,7 @@ je
 je
 je
 je
-je
+Yr
 je
 je
 Hi
@@ -19167,7 +19169,7 @@ fg
 je
 je
 je
-je
+lg
 fg
 rh
 et
@@ -20676,7 +20678,7 @@ fg
 fg
 fg
 fg
-je
+ci
 je
 je
 je
@@ -31035,7 +31037,7 @@ bF
 bF
 bF
 bF
-Yr
+Fs
 bF
 AC
 AC

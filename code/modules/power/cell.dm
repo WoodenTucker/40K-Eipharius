@@ -179,7 +179,7 @@
 	name = "APC power cell"
 	desc = "A special power cell designed for heavy-duty use in area power controllers."
 	origin_tech = list(TECH_POWER = 1)
-	maxcharge = 500
+	maxcharge = 4000
 	matter = list(DEFAULT_WALL_MATERIAL = 700, "glass" = 50)
 
 /obj/item/cell/apc/empty
@@ -194,7 +194,7 @@
 	desc = "An advanced high-grade power cell, for use in important systems."
 	origin_tech = list(TECH_POWER = 2)
 	icon_state = "hcell"
-	maxcharge = 1000
+	maxcharge = 3000
 	matter = list(DEFAULT_WALL_MATERIAL = 700, "glass" = 60)
 
 /obj/item/cell/high/empty/New()
@@ -207,7 +207,7 @@
 	desc = "A special power cell designed for heavy-duty use in industrial exosuits."
 	origin_tech = list(TECH_POWER = 3)
 	icon_state = "hcell"
-	maxcharge = 1500
+	maxcharge = 5500
 	matter = list(DEFAULT_WALL_MATERIAL = 700, "glass" = 70)
 
 
@@ -216,7 +216,7 @@
 	desc = "A very advanced power cell with increased energy density, for use in critical applications."
 	origin_tech = list(TECH_POWER = 3)
 	icon_state = "scell"
-	maxcharge = 2000
+	maxcharge = 5000
 	matter = list(DEFAULT_WALL_MATERIAL = 700, "glass" = 70)
 
 /obj/item/cell/super/empty/New()
@@ -229,7 +229,7 @@
 	desc = "Pinnacle of power storage technology, this very expensive power cell provides the best energy density reachable with conventional electrochemical cells."
 	origin_tech = list(TECH_POWER = 3)
 	icon_state = "hpcell"
-	maxcharge = 3000
+	maxcharge = 6000
 	matter = list(DEFAULT_WALL_MATERIAL = 700, "glass" = 80)
 
 /obj/item/cell/hyper/empty/New()
@@ -242,7 +242,7 @@
 	desc = "This special experimental power cell has both very large capacity, and ability to recharge itself by draining power from contained bluespace pocket."
 	icon_state = "icell"
 	origin_tech =  null
-	maxcharge = 3000
+	maxcharge = 6000
 	matter = list(DEFAULT_WALL_MATERIAL = 700, "glass" = 80)
 
 /obj/item/cell/infinite/check_charge()

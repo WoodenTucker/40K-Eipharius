@@ -287,6 +287,9 @@
 				<h1>Rites of The Grandfather</h1>
 				The sacred rites and practices of pestilence.
 
+				<h2>Secret Key</h2>
+				<h3>Gain a key in exchange for Strange Alloy / Diamond which can unlock the door House of Sondar...</h3>
+
 				<h2>Secret Channel</h2>
 				<h3>Alter your radio-headset to use a warp-touched radio channel only accessible to the followers of Khorne and Nurgle. Destroys the original</h3>
 
@@ -421,6 +424,9 @@
 				<h1>Rites of The Changer Of Ways</h1>
 				The sacred rites and practices of Change.
 
+				<h2>Secret Key</h2>
+				<h3>Gain a key in exchange for Strange Alloy / Diamond which can unlock the door House of Sondar...</h3>
+
 				<h2>Secret Channel</h2>
 				<h3>Alter your radio-headset to use a warp-touched radio channel only accessible to the followers of Tzeentch and Slaanesh. Destroys the original</h3>
 
@@ -473,6 +479,9 @@
 
 				<h1>Rites of The Dark Prince</h1>
 				The sacred rites and practices of excess.
+
+				<h2>Secret Key</h2>
+				<h3>Gain a key in exchange for Strange Alloy / Diamond which can unlock the door House of Sondar...</h3>
 
 				<h2>Escape Artist:</h2>
 				<h3>You slip out of handcuffs easily.</h3>

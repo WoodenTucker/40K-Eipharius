@@ -351,7 +351,7 @@ Pilgrim Fate System
 				U.add_stats(rand(13,17), rand(14,17), rand(14,17), rand (10,12)) //veteran mercenary
 				equip_to_slot_if_possible(new /obj/item/gun/projectile/talon/renegade, slot_in_backpack)
 				equip_to_slot_if_possible(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
-				equip_to_slot_if_possible(new /obj/item/plastique, slot_in_backpack)
+				equip_to_slot_if_possible(new /obj/item/grenade/frag/high_yield/krak/detpack, slot_in_backpack)
 				equip_to_slot_if_possible(new /obj/item/grenade/spawnergrenade/manhacks, slot_in_backpack)
 				equip_to_slot_if_possible(new /obj/item/ammo_casing/c45/ap, slot_in_backpack)
 				equip_to_slot_if_possible(new /obj/item/ammo_casing/c45/ap, slot_in_backpack)
@@ -667,10 +667,10 @@ Pilgrim Fate System
 	title = "Tavern Keeper"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MED //he's important to the pilgrims, but not to anyone else
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	open_when_dead = 0
-	supervisors = "HOUSE GOLIATH"
+	supervisors = "HOUSE VANE"
 	selection_color = "#530606"
 	access = list(access_bar, access_ganger)
 	minimal_access = list(access_bar)
@@ -722,8 +722,8 @@ Pilgrim Fate System
 /datum/job/noble
 	title = "Vane Noble"
 	department_flag = SUP
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	open_when_dead = 0
 	announced = FALSE
 	supervisors = "House Vane."
@@ -731,7 +731,7 @@ Pilgrim Fate System
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MAX
 	announced = 0
-	access = list(225,247,access_village,access_daemon)
+	access = list(225,247,access_village)
 	minimal_player_age = 3
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/cargo/noble
@@ -741,7 +741,7 @@ Pilgrim Fate System
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.get_idcard()?.access = list(225,247,access_village,access_daemon)
+		H.get_idcard()?.access = list(225,247,access_village)
 		H.fully_replace_character_name("[current_name] Vane")
 		H.verbs += list(
 			/mob/living/carbon/human/proc/ideology,

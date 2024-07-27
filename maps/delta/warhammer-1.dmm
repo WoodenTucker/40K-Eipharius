@@ -170,6 +170,7 @@
 /obj/effect/floor_decal/newcorner/yellow/quarter{
 	dir = 1
 	},
+/obj/random/loot/badweaponlas,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -669,6 +670,9 @@
 	dir = 1
 	},
 /obj/structure/closet/crate/xenos/chest,
+/obj/item/grenade/frag/high_yield/krak/detpack,
+/obj/item/grenade/frag/high_yield/krak/detpack,
+/obj/item/grenade/frag/high_yield/krak/detpack,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -866,6 +870,14 @@
 	pixel_y = 32
 	},
 /mob/living/simple_animal/hostile/syndicate/ranged,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"vG" = (
+/obj/structure/table/rack/dark,
+/obj/effect/floor_decal/newcorner/yellow,
+/obj/random/loot/badweaponlas,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -1251,7 +1263,8 @@
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "CW" = (
 /obj/structure/table/rack/dark,
-/obj/item/grenade/frag/plasma,
+/obj/effect/floor_decal/newcorner/yellow,
+/obj/random/loot/badweapon,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -1441,6 +1454,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
+"HD" = (
+/obj/structure/table/rack/dark,
+/obj/random/loot/badweapon,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "HG" = (
 /obj/machinery/body_scanconsole{
 	dir = 4
@@ -1455,6 +1475,12 @@
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "HL" = (
 /turf/unsimulated/mineral,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"Ia" = (
+/obj/effect/floor_decal/turf/sun,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "In" = (
 /obj/machinery/shower{
@@ -1849,7 +1875,6 @@
 /obj/effect/floor_decal/newcorner/yellow{
 	dir = 1
 	},
-/obj/item/plastique,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -2195,6 +2220,17 @@
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"XJ" = (
+/obj/effect/floor_decal/newcorner/yellow{
+	dir = 1
+	},
+/obj/structure/closet/crate/xenos/chest,
+/obj/item/grenade/frag/plasma,
+/obj/item/grenade/frag/plasma,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "XO" = (
@@ -25104,7 +25140,7 @@ HL
 xv
 fT
 iw
-tl
+RO
 bQ
 tl
 VF
@@ -25360,7 +25396,7 @@ tl
 Jh
 tl
 Jh
-wE
+CW
 xv
 HL
 HL
@@ -25610,7 +25646,7 @@ qW
 bQ
 me
 NP
-RO
+HD
 bQ
 wE
 xv
@@ -25864,7 +25900,7 @@ JW
 Ur
 tl
 bQ
-wE
+vG
 xv
 HL
 xv
@@ -26110,11 +26146,11 @@ ki
 bQ
 xv
 xv
-qW
+XJ
 Jh
 me
 RL
-RO
+HD
 bQ
 wE
 xv
@@ -26364,7 +26400,7 @@ bQ
 xv
 vb
 bQ
-CW
+tl
 bQ
 me
 Jh
@@ -28871,7 +28907,7 @@ Tv
 JR
 vU
 AY
-bQ
+Ia
 AY
 xv
 xv
@@ -30644,7 +30680,7 @@ LM
 bQ
 tl
 bQ
-tl
+KA
 xv
 HL
 HL

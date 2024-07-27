@@ -136,7 +136,7 @@
 	icon_state = "sheet-uranium"
 	default_type = "uranium"
 	icon = 'icons/obj/items.dmi'
-	sales_price = 2
+	sales_price = 1
 	
 /obj/item/stack/material/uranium/one
 	amount = 1

@@ -78,7 +78,7 @@
 	var/area/area
 	var/areastring = null
 	var/obj/item/cell/cell
-	var/chargelevel = 0.0005  // Cap for how fast APC cells charge, as a percentage-per-tick (0.01 means cellcharge is capped to 1% per second)
+	var/chargelevel = 0.001  // Cap for how fast APC cells charge, as a percentage-per-tick (0.01 means cellcharge is capped to 1% per second)
 	var/cell_type = /obj/item/cell/apc
 	var/opened = 0 //0=closed, 1=opened, 2=cover removed
 	var/shorted = 0
@@ -89,8 +89,8 @@
 	var/charging = 0
 	var/chargemode = 1
 	var/chargecount = 0
-	var/locked = 1
-	var/coverlocked = 1
+	var/locked = 0
+	var/coverlocked = 0
 	var/aidisabled = 0
 	var/obj/machinery/power/terminal/terminal = null
 	var/lastused_light = 0

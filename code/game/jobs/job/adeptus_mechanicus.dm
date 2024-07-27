@@ -102,8 +102,8 @@
 	department = "Engineering"
 	department_flag = ENG
 	social_class = SOCIAL_CLASS_MED
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "You obey the Biologis and Explorator, as well as the Tech Priests."
 	selection_color = "#FF3A3A"
 	economic_modifier = 5

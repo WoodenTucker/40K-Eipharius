@@ -39,6 +39,11 @@
 	ingredients = list(/obj/item/reagent_containers/food/snacks/meat/rat_meat)
 	product_path = /obj/structure/nganga
 
+/datum/rune_recipe/nurgle/key
+	name = "Daemon Key"
+	ingredients = list(/obj/item/stack/material/diamond)
+	product_path = (/obj/item/card/id/key/super/daemon)
+
 /datum/rune_recipe/nurgle/radio
 	name = "Create Radio"
 	ingredients = list(/obj/item/device/radio/headset)

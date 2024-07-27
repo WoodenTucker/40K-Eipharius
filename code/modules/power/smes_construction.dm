@@ -42,8 +42,11 @@
 // These are used on individual outposts as backup should power line be cut, or engineering outpost lost power.
 // 1M Charge, 150K I/O
 /obj/machinery/power/smes/buildable/outpost_substation/New()
+	name = "power substation"
 	..(0)
-	component_parts += new /obj/item/smes_coil/weak(src)
+	component_parts += new /obj/item/smes_coil(src)
+	component_parts += new /obj/item/smes_coil(src)
+	component_parts += new /obj/item/smes_coil(src)
 	recalc_coils()
 
 // This one is pre-installed on engineering shuttle. Allows rapid charging/discharging for easier transport of power to outpost
