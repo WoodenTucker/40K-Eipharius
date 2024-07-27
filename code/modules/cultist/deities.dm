@@ -48,6 +48,7 @@
 						/datum/heretic_effect/zombie)
 	rune_recipes = list(/datum/rune_recipe/nurgle/deathtolerance,
 						/datum/rune_recipe/nurgle/conversion,
+						/datum/rune_recipe/nurgle/key,
 						/datum/rune_recipe/nurgle/offer_gem,
 						/datum/rune_recipe/nurgle/offer_brain,
 						/datum/rune_recipe/nurgle/toughen,
@@ -75,6 +76,7 @@
 	rune_recipes = list(/datum/rune_recipe/slaanesh/conversion,
 						/datum/rune_recipe/slaanesh/arm,
 						/datum/rune_recipe/slaanesh/radio,
+						/datum/rune_recipe/slaanesh/key,
 						/datum/rune_recipe/slaanesh/escape,
 						/datum/rune_recipe/slaanesh/dagger,
 						/datum/rune_recipe/slaanesh/knife)
@@ -97,6 +99,7 @@
 						/datum/rune_recipe/tzeentch/cloth3,
 						/datum/rune_recipe/tzeentch/cloth4,
 						/datum/rune_recipe/tzeentch/cloth,
+						/datum/rune_recipe/tzeentch/key,
 						/datum/rune_recipe/tzeentch/radio,
 						/datum/rune_recipe/tzeentch/illusion,
 						/datum/rune_recipe/tzeentch/omniscience,

@@ -517,6 +517,16 @@ Template:
 		/obj/item/cell/lasgun = 20
 		)
 
+
+/obj/effect/landmark/poopie/New() // Difficulty: Medium. Guard level threat.
+	if (prob(20))
+		new /obj/item/reagent_containers/food/snacks/poo(src.loc)
+		new /obj/item/reagent_containers/food/snacks/poo(src.loc)
+		new /obj/item/reagent_containers/food/snacks/poo(src.loc)
+	else
+		new /obj/item/reagent_containers/food/snacks/vegetablesoup(src.loc)
+	delete_me = 1
+
 /obj/random/loot/badweapon
 	name = "Bad Weapon Spawner 1" // This spawner creates projectile weapons
 	desc = "This is a weapon loot spawner that spawns mostly low quality weapons."

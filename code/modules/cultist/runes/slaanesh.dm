@@ -15,6 +15,11 @@
 	ingredients = list(/obj/item/device/radio/headset)
 	product_path = /obj/item/device/radio/headset/cult2
 
+/datum/rune_recipe/slaanesh/key
+	name = "Daemon Key"
+	ingredients = list(/obj/item/stack/material/diamond)
+	product_path = (/obj/item/card/id/key/super/daemon)
+
 /datum/rune_recipe/slaanesh/knife
 	name = "Skinning Knife"
 	ingredients = list(/obj/item/melee/sword/combat_knife)

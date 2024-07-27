@@ -34,6 +34,7 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.warfare_faction = IMPERIUM
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 /*		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_advchapel, access_inquisition) */
 		H.adjustStaminaLoss(-INFINITY)
 		H.vice = null
@@ -90,6 +91,7 @@
 			/mob/living/carbon/human/proc/ideology,
 		)
 		H.witchblood()
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		/*H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_advchapel, access_inquisition, access_inquisition_fancy)*/
 		H.inquisitor = 1
 		H.adjustStaminaLoss(-INFINITY)

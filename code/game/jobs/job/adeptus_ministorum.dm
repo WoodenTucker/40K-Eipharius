@@ -2,6 +2,97 @@
 
 //Confessor
 
+/datum/job/hydro
+	title = "Ecclesiarchal Bondsman"
+	department_flag = MED
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "The Deacon and Sisters."
+	selection_color = "#FCFBFA"
+	latejoin_at_spawnpoints = TRUE
+	access = list(213 , 211, access_advchapel, access_medical, access_village)
+//	alt_titles = list("Hydroponicist")
+	outfit_type = /decl/hierarchy/outfit/job/service/gardener
+	announced = FALSE
+	auto_rifle_skill = 3
+	semi_rifle_skill = 3
+	sniper_skill = 3
+	shotgun_skill = 3
+	lmg_skill = 3
+	smg_skill = 3
+	cultist_chance = 30
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.verbs += list(
+			/mob/living/carbon/human/proc/hsclass)
+		H.fully_replace_character_name("[current_name]")
+		H.get_idcard()?.access = list(213 , 211, access_advchapel, access_medical, access_village)
+		H.voice_in_head(pick(GLOB.lone_thoughts))
+		H.add_stats(rand(15,17), rand(14,16), rand(15,16), rand(8,14)) //well fed and robust
+		H.add_skills(rand(7,10),rand(6,10),rand(3,5),rand(2,4),3) //farmers are handy
+		H.assign_random_quirk()
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
+		H.verbs += list(
+			/mob/living/carbon/human/proc/ideology,
+		)
+		H.warfare_faction = IMPERIUM
+		to_chat(H, "<span class='notice'><b><font size=3>You were formely a lowly slummer, your freedom being granted by the wisdom of The Deacon who gave you settling rights upon Messina. After a a grueling journey, you are able to finally settle down.. in the ass end of the frontier. </font></b></span>")
+
+
+
+/mob/living/carbon/human/proc/hsclass()
+	set name = "Select your equipment" // INTERROGATORS GEAR
+	set category = "CHOOSE YOUR FATE"
+	set desc = "Roll the dice and discover a new story."
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
+		return
+
+	var/mob/living/carbon/human/U = src
+	U.verbs -= list(/mob/living/carbon/human/proc/hsclass) //removes verb
+	var/fates = list("Temple Guard","Farm Overseer")
+
+
+	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
+
+
+	switch(classchoice) // The servant's outfit gives them thrones, backpack -- etc. Make sure to check before editing.
+		if("Temple Guard")
+			U.add_stats(rand(15,17), rand(14,17), rand(14,16), rand (13,15)) //
+			U.add_skills(rand(6,8),rand(6,8),rand(4,6),rand(5,6),rand(2,6)) //melee, ranged, med, eng, surgery
+			equip_to_slot_if_possible(new /obj/item/clothing/gloves/thick, slot_in_backpack)
+			equip_to_slot_if_possible(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
+			equip_to_slot_if_possible(new /obj/item/device/flashlight/lantern, slot_in_backpack) 
+			equip_to_slot_if_possible(new /obj/item/clothing/shoes/jackboots/noble, slot_shoes)
+			equip_to_slot_if_possible(new /obj/item/clothing/head/helmet/knighthelm, slot_head)
+			equip_to_slot_if_possible(new /obj/item/clothing/suit/armor/brigandine/palace, slot_wear_suit)
+			equip_to_slot_if_possible(new /obj/item/melee/sword/broadsword/adamantine, slot_in_backpack)
+			to_chat(U,"<span class='danger'><b><font size=4>THE PROTECTORATE</font></b></span>")
+			to_chat(U,"<span class='goodmood'><b><font size=3>Skilled in the arts of blade and gun lore, you are trained by the sisters to defend the church against all threats...</font></b></span>")
+		if("Farm Overseer")
+			equip_to_slot_if_possible(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
+			equip_to_slot_if_possible(new /obj/item/clothing/suit/farmer, slot_in_backpack)
+			equip_to_slot_if_possible(new /obj/item/clothing/suit/armor/hauberk, slot_wear_suit)
+			equip_to_slot_if_possible(new /obj/item/farmshovel, slot_in_backpack)
+			equip_to_slot_if_possible(new /obj/item/clothing/shoes/jackboots/noble, slot_shoes)
+			equip_to_slot_if_possible(new /obj/item/storage/plants, slot_in_backpack)
+			equip_to_slot_if_possible(new /obj/item/device/flashlight/lantern, slot_in_backpack) 
+			equip_to_slot_if_possible(new /obj/item/device/analyzer/plant_analyzer, slot_in_backpack)
+			equip_to_slot_if_possible(new /obj/item/clothing/gloves/thick/botany, slot_in_backpack)
+			equip_to_slot_if_possible(new /obj/item/melee/classic_baton/trench_club/overseer, slot_in_backpack)
+			equip_to_slot_if_possible(new /obj/item/gun/energy/taser, slot_in_backpack)
+			equip_to_slot_if_possible(new /obj/item/gun/energy/las/laspistol/militarum/lucius, slot_in_backpack)
+			equip_to_slot_if_possible(new /obj/item/handcuffs, slot_in_backpack)
+			equip_to_slot_if_possible(new /obj/item/stack/thrones2, slot_in_backpack)
+
+
 /datum/job/deacon
 	title = "Deacon"
 	department = "Ministorum"
@@ -352,6 +443,7 @@
 		H.add_stats(rand(18,22), rand(18,22), rand(18,20), 16)
 		H.add_skills(rand(9,12),rand(9,12),rand(7,9),rand(4,8),rand(4,7)) //melee, ranged, med, eng, surgery
 		H.get_idcard()?.access = list(213 , 211, 213, 333, access_heads, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_advchapel, access_medical, access_village)
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
@@ -475,6 +567,7 @@
 		H.add_stats(rand(12,15), rand(12,15), rand(12,15), rand (12,15)) //Has not begun their training with the sisters yet.
 		H.add_skills(rand(5,7),rand(5,7),rand(5,7),rand(1,3),rand(5,7)) //melee, ranged, med, eng, surgery
 		H.get_idcard()?.access = list(213 , 211, access_medical, access_village)
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)

@@ -55,8 +55,8 @@
 /datum/job/ig/guardsman
 	title = "Imperial Guardsman"
 	supervisors = "The Captain or Commissar"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	auto_rifle_skill = 8
 	semi_rifle_skill = 8
@@ -114,8 +114,8 @@
 
 /datum/job/ig/whiteshield
 	title = "PDF Trooper"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	open_when_dead = FALSE
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/whiteshield
@@ -655,7 +655,7 @@ datum/job/ig/bullgryn
 				if(prob(15))
 					new /obj/item/device/multitool/hacktool(src.loc)
 				if(prob(15))
-					new /obj/item/plastique(src.loc)
+					new /obj/item/grenade/frag/high_yield/krak/detpack(src.loc)
 			else
 				to_chat(U,"<span class='danger'><b><font size=4>THE SURVIVOR</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are one of many untold trillions of Guardsmen taken from your homeworld and pressed into service to the meatgrinder that is the Astra Militarum. As a result of the mind numbing horrors of war, you have taken to... interesting vices to survive your many years of service.</font></b></span>")
@@ -667,7 +667,7 @@ datum/job/ig/bullgryn
 				if(prob(45))
 					new /obj/item/device/multitool/hacktool(src.loc)
 				if(prob(45))
-					new /obj/item/plastique(src.loc)
+					new /obj/item/grenade/frag/high_yield/krak/detpack(src.loc)
 
 
 

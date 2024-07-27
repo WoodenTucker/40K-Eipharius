@@ -13,7 +13,7 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 	name = "Hive City"
 	icon_state = "village"
 	music = 'sound/newmusic/General_Ambient2.ogg'
-	requires_power = FALSE
+	requires_power = TRUE
 	dynamic_lighting = 1
 
 /area/cadiaoutpost/new_hive/caves
@@ -21,6 +21,7 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 	icon_state = "cave"
 	music = 'sound/newmusic/General_Ambient2.ogg'
 	var/instability = 0
+	requires_power = TRUE
 
 
 
@@ -768,7 +769,7 @@ Area basic template
 	name = "PDF Lower"
 	icon_state = "armory"
 	music = 'sound/newmusic/Outpost1.ogg'
-	requires_power = FALSE
+	requires_power = TRUE
 
 /area/cadiaoutpost/oa/security/barracks
 	name = "Magistratum"
@@ -780,7 +781,7 @@ Area basic template
 	name = "PDF Upper"
 	icon_state = "brig"
 	music = 'sound/newmusic/Outpost1.ogg'
-	requires_power = FALSE
+	requires_power = TRUE
 
 /area/cadiaoutpost/oa/maintenance/department/security
 	name = "Security Maintenance"
@@ -936,7 +937,7 @@ Area basic template
 	name = "Machinamentum"
 	icon_state = "engineering"
 	music = 'sound/newmusic/Outpost1.ogg'
-	requires_power = FALSE
+	requires_power = TRUE
 
 /area/cadiaoutpost/oa/engineering/engine
 	name = "Sacrarium Machina"
@@ -997,7 +998,7 @@ Area basic template
 //////////////Medical////////////////
 /////////////////////////////////////
 /area/cadiaoutpost/oa/medicae
-	name = "Medicae"
+	name = "Medicae Autopower"
 	icon_state = "medbay"
 	music = 'sound/newmusic/Outpost1.ogg'
 	dynamic_lighting = 1
@@ -1109,39 +1110,39 @@ Area basic template
 	name = "Biocogitatum"
 	icon_state = "research"
 	music = 'sound/newmusic/Outpost1.ogg'
-	requires_power = FALSE
+	requires_power = TRUE
 
 /area/cadiaoutpost/oa/research/robotics
 	name = "Cybersmithy"
 	icon_state = "robotics"
 	music = 'sound/newmusic/Outpost1.ogg'
-	requires_power = FALSE
+	requires_power = TRUE // <<<
 
 /area/cadiaoutpost/oa/research/xenobiology
 	name = "Sanctum Biologis"
 	icon_state = "green"
 	music = 'sound/newmusic/Outpost1.ogg'
-	requires_power = FALSE
+	requires_power = TRUE
 
 /area/cadiaoutpost/oa/research/toxins
-	name = "Toxins"
+	name = "Medicae Clinic Lower"
 	icon_state = "toxins"
-	requires_power = FALSE
+	requires_power = TRUE
 
 /area/cadiaoutpost/oa/research/toxins/toxinlab
-	name = "toxin lab"
+	name = "Medicae Clinic Virology Lab"
 	icon_state = "toxlab"
-	requires_power = FALSE
+	requires_power = TRUE
 
 /area/cadiaoutpost/oa/research/toxins/toxintest
 	name = "Toxin Test"
 	icon_state = "toxtest"
-	requires_power = FALSE
+	requires_power = TRUE
 
 /area/cadiaoutpost/oa/research/toxins/toxinstorage
 	name = "Toxin Storage"
 	icon_state = "toxstorage"
-	requires_power = FALSE
+	requires_power = TRUE
 
 /////////////////////////////////////
 /////////////Service/////////////////
@@ -1355,14 +1356,14 @@ Area basic template
 	name = "Village"
 	icon_state = "village"
 	music = 'sound/newmusic/General_Ambient2.ogg'
-	requires_power = FALSE
+	requires_power = TRUE
 	dynamic_lighting = 1
 
 /area/cadiaoutpost/oa/villageinside
 	name = "Inside Village"
 	icon_state = "villageinside"
 	music = 'sound/newmusic/General_Ambient2.ogg'
-	requires_power = FALSE
+	requires_power = TRUE
 	dynamic_lighting = 1
 
 /area/cadiaoutpost/oa/villageinside/lab
@@ -1414,44 +1415,44 @@ Area basic template
 	name = "Chapel"
 	icon_state = "chapel"
 	music = 'sound/newmusic/Chapel1.ogg'
-	requires_power = FALSE
+	requires_power = TRUE
 
 	var/consecrated = FALSE
 
 /area/cadiaoutpost/oa/service/chapel/chapeloffice
 	name = "Chapel Office"
 	icon_state = "chapeloffice"
-	requires_power = FALSE
+	requires_power = TRUE
 
 /area/cadiaoutpost/oa/service/chapel/chapeldorm
 	name = " Chapel Dorms"
 	icon_state = "chapeldorm"
-	requires_power = FALSE
+	requires_power = TRUE
 
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery
 	name = "Chapel Surgery"
 	icon_state = "chapelsurgery"
-	requires_power = FALSE
+	requires_power = TRUE
 
 /area/cadiaoutpost/oa/service/chapel/chapelchemistry
 	name = "Chapel Chemistry"
 	icon_state = "chapelchem"
-	requires_power = FALSE
+	requires_power = TRUE
 
 /area/cadiaoutpost/oa/service/chapel/recovery
 	name = "Chapel Recovery"
 	icon_state = "chapelrecovery"
-	requires_power = FALSE
+	requires_power = TRUE
 
 /area/cadiaoutpost/oa/service/chapel/armory
 	name = "Chapel Armory"
 	icon_state = "chapelarmory"
-	requires_power = FALSE
+	requires_power = TRUE
 
 /area/cadiaoutpost/oa/service/chapel/vault
 	name = "Chapel Vault"
 	icon_state = "chapelvault"
-	requires_power = FALSE
+	requires_power = TRUE
 
 
 

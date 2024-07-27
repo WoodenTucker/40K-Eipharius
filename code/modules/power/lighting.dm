@@ -141,9 +141,9 @@
 	anchored = 1
 	plane = ABOVE_HUMAN_PLANE
 	layer = ABOVE_HUMAN_LAYER  					// They were appearing under mobs which is a little weird - Ostaf
-	use_power = 0
-	idle_power_usage = 0
-	active_power_usage = 0 //temporary or maybe not so we can get power
+	use_power = 1
+	idle_power_usage = 15
+	active_power_usage = 15
 	power_channel = LIGHT //Lights are calc'd via area so they dont need to be in the machine list
 
 	var/on = 0					// 1 if on, 0 if off
@@ -164,8 +164,8 @@
 	desc = "A small lighting fixture."
 	light_type = /obj/item/light/bulb
 	construct_type = /obj/machinery/light_construct/small
-	idle_power_usage = 0
-	active_power_usage = 0
+	idle_power_usage = 10
+	active_power_usage = 10
 
 /obj/machinery/light/small/emergency
 	light_type = /obj/item/light/bulb/red
@@ -235,7 +235,7 @@
 			on = 0
 
 	if(on)
-		use_power = 0 //makes lights take 0 energy to power, probably should be set to something once we have a functional engine/wiring - wel 1/2/2021
+		use_power = 1
 
 		var/changed = 0
 		if(current_mode && (current_mode in lightbulb.lighting_modes))
@@ -248,8 +248,6 @@
 	else
 		use_power = 0
 		set_light(0)
-
-	active_power_usage = ((light_range * light_power) * LIGHTING_POWER_FACTOR)
 
 /obj/machinery/light/proc/get_status()
 	if(!lightbulb)
@@ -747,8 +745,6 @@
 	desc = "A solar power powered light post meant to illuminate the forest."
 	light_type = /obj/item/light/bulb/stolb
 	construct_type = /obj/machinery/light_construct/small
-	idle_power_usage = 0
-	active_power_usage = 0
 	bound_width = 32
 	on = 1
 	density = 1

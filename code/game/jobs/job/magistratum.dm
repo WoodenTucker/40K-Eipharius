@@ -75,6 +75,7 @@
 		var/current_name = H.real_name
 		..()
 		H.get_idcard()?.access = list(1984, 356, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village)
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.fully_replace_character_name("Detective [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(16,19), rand(13,17), rand(13,17), rand(10,13)) //meant to be a brute keeping the plebs in line
@@ -166,6 +167,7 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,18), rand(12,16), rand(12,16), rand(10,13)) //meant to be a brute keeping the plebs in line
 		H.add_skills(rand(9,10),rand(7,10),rand(3,5),3,rand(2,4)) //melee, ranged, med, eng, surgery
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.assign_random_quirk()
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.voice_in_head(pick(GLOB.lone_thoughts))
@@ -208,6 +210,7 @@
 		var/current_name = H.real_name
 		..()
 		H.get_idcard()?.access = list(1984, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village)
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.fully_replace_character_name("[current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,18), rand(12,16), rand(12,16), rand(10,13)) //meant to be a brute keeping the plebs in line

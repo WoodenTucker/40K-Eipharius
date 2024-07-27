@@ -371,13 +371,9 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/shuttle/station1)
 "bs" = (
-/obj/structure/table/graf/big_wood_table,
-/obj/item/reagent_containers/food/snacks/carrotfries,
-/turf/simulated/floor/ship_floor/steel{
-	icon_state = "a7";
-	icon = 'icons/map_project/ship/tilesnovos.dmi'
-	},
-/area/cadiaoutpost/oa/shuttle/governor)
+/obj/machinery/computer/planetarytrade2,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/shuttle/station1)
 "bt" = (
 /obj/structure/table/steel,
 /turf/simulated/floor/tiled/dark,
@@ -1016,8 +1012,10 @@
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "eH" = (
-/obj/structure/table/graf/big_wood_table,
-/obj/item/reagent_containers/food/snacks/cherrypie,
+/obj/item/reagent_containers/food/snacks/appletart,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
 /turf/simulated/floor/ship_floor/steel{
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
@@ -3367,10 +3365,9 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "pb" = (
-/obj/structure/bed/chair/wood/fancy,
-/obj/machinery/light{
-	icon_state = "tube1";
-	dir = 8
+/obj/item/reagent_containers/food/snacks/carrotfries,
+/obj/structure/table/woodentable{
+	color = "#36261B"
 	},
 /turf/simulated/floor/ship_floor/steel{
 	icon_state = "a7";
@@ -3660,12 +3657,11 @@
 /turf/simulated/floor/fancyfloor/carpet/blue,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "qG" = (
-/obj/structure/table/graf/big_wood_table,
-/turf/simulated/floor/ship_floor/steel{
-	icon_state = "a7";
-	icon = 'icons/map_project/ship/tilesnovos.dmi'
-	},
-/area/cadiaoutpost/oa/shuttle/governor)
+/obj/effect/landmark/cargospawn2,
+/obj/structure/cargo_pad,
+/turf/simulated/floor/fancyfloor/coralg,
+/turf/simulated/floor/darkfloor,
+/area/cadiaoutpost/oa/shuttle/station1)
 "qJ" = (
 /turf/unsimulated/oldship{
 	icon_state = "rwall5"
@@ -3862,8 +3858,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/shuttle/inquisition)
 "rH" = (
-/obj/structure/table/graf/big_wood_table,
-/obj/item/reagent_containers/food/snacks/appletart,
+/obj/item/reagent_containers/food/snacks/cherrypie,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
 /turf/simulated/floor/ship_floor/steel{
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
@@ -6554,14 +6552,6 @@
 /obj/effect/floor_decal/turf/bloodbar,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/shuttle/inquisition)
-"Fx" = (
-/obj/structure/table/graf/big_wood_table,
-/obj/item/reagent_containers/food/snacks/aesirsalad,
-/turf/simulated/floor/ship_floor/steel{
-	icon_state = "a7";
-	icon = 'icons/map_project/ship/tilesnovos.dmi'
-	},
-/area/cadiaoutpost/oa/shuttle/governor)
 "Fy" = (
 /obj/structure/bed/chair{
 	dir = 8;
@@ -8199,7 +8189,6 @@
 	},
 /area/space)
 "Oe" = (
-/obj/structure/sign/art/lordgovenor,
 /turf/simulated/wall,
 /area/cadiaoutpost/oa/shuttle/governor)
 "Oi" = (
@@ -8660,7 +8649,9 @@
 	},
 /area/cadiaoutpost/oa/shuttle/g1)
 "Qr" = (
-/obj/structure/bed/chair/wood/fancy,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
 /turf/simulated/floor/ship_floor/steel{
 	icon_state = "a7";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
@@ -42378,12 +42369,12 @@ ax
 ax
 ax
 BZ
-eg
+FM
+Uj
+ZY
+Qj
 Sg
-Sg
-Sg
-Sg
-Sg
+VQ
 oo
 BZ
 BZ
@@ -42630,12 +42621,12 @@ ax
 ax
 ax
 BZ
-BZ
-BZ
-BZ
-BZ
-BZ
-BZ
+FZ
+bs
+ZY
+qG
+qG
+FZ
 BZ
 BZ
 BZ
@@ -42882,12 +42873,12 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
+FZ
+ZY
+ZY
+qG
+qG
+FZ
 ax
 IM
 IM
@@ -43134,12 +43125,12 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
+eg
+Sg
+Sg
+Sg
+Sg
+oo
 ax
 IM
 IM
@@ -43673,17 +43664,17 @@ ax
 FG
 FG
 FG
-vu
-Qr
-Qr
-pb
+FG
+FG
 vu
 vu
-Po
 vu
 vu
 vu
 Po
+vu
+FG
+FG
 FG
 FG
 FG
@@ -43925,18 +43916,18 @@ FG
 ww
 GD
 FG
+FG
+vu
+vu
+vu
 Qr
-Fx
-qG
-eH
 Qr
+Qr
+rH
 vu
 vu
-vu
-vu
-vu
-vu
-VX
+FG
+FG
 dX
 ax
 ax
@@ -44177,18 +44168,18 @@ vu
 vu
 vu
 FG
+vu
+vu
+vu
+vu
 Qr
-rH
-bs
-qG
+eH
+pb
 Qr
 vu
 vu
 vu
-vu
-vu
-vu
-FG
+VX
 dX
 ax
 ax
@@ -44683,7 +44674,7 @@ vu
 FG
 FG
 FG
-VX
+FG
 gh
 FG
 FG
@@ -45439,7 +45430,7 @@ FG
 FG
 ma
 FG
-FG
+VX
 FG
 FG
 FG

@@ -108,7 +108,7 @@
 		return
 
 	visible_message("[name] flexs der' muscles afa' a long nap, feelin' der' strength an' skill return to 'em.")
-	src.add_stats(rand(15,19),rand(12,16),rand(14,19),rand(9,13)) //gives stats str, end, int, dex
+	src.add_stats(rand(22,23),rand(21,23),rand(10,15),rand(14,16)) //gives stats str, end, int, dex
 	src.add_skills(rand(10,10),rand(6,10),rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
 	src.adjustStaminaLoss(-INFINITY)
 	src.update_eyes() //should fix grey vision

@@ -15,7 +15,7 @@
 	supervisors = "House Vane."
 	selection_color = "#315dd4"
 	req_admin_notify = 1
-	access = list(247,355,268,225,267,268,269,270,355,271,272,273,access_bar,access_village,access_daemon)			//See get_access()
+	access = list(access_village, access_ganger,access_bar)			//See get_access()
 	minimal_access = list() 	//See get_access()
 	minimal_player_age = 25
 	economic_modifier = 20
@@ -39,7 +39,8 @@
 		H.verbs += list(
 			/mob/living/carbon/human/proc/ideology,
 		)
-		H.get_idcard()?.access = list(247,355,268,225,267,268,269,270,355,271,272,273,access_bar,access_village,access_daemon)
+		H.get_idcard()?.access = list(access_village, access_ganger,access_bar)
+		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.add_stats(rand(14,18), rand(14,18), rand(14,18), rand(14,18))
 		H.add_skills(rand(6,10),rand(6,10),rand(5,6),rand(1,8),rand(1,8)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -70,7 +71,7 @@
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MED
 	announced = 0
-	access = list(247,355,268,225,267,268,269,270,355,271,272,273) 
+	access = list(access_bar, access_ganger,access_village) 
 	minimal_player_age = 3
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/cargo/janissary
@@ -108,7 +109,7 @@
 	supervisors = "The Rogue Trader and House Vane"
 	selection_color = "#315dd4"
 	latejoin_at_spawnpoints = TRUE
-	access = list(247,355,268,225,267,268,269,270,355,271,272,273,access_bar,access_village,access_daemon)
+	access = list(access_bar, access_ganger,access_village)
 	announced = FALSE
 	cultist_chance = 0
 
@@ -116,7 +117,7 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.get_idcard()?.access = list(247,355,268,225,267,268,269,270,355,271,272,273,access_bar,access_village,access_daemon)
+		H.get_idcard()?.access = list(access_bar, access_ganger,access_village)
 		H.add_stats(rand(16,22), rand(16,22), rand(17,20), rand (6,40)) //its a xeno mercenary, random shit.
 		H.add_skills(rand(10,12),rand(9,10),rand(3,5),5,rand(2,4)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)

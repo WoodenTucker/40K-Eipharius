@@ -7,7 +7,7 @@
 		return ..(C, user)
 
 	if(flooring)
-		if(isCrowbar(C) && user.a_intent == I_GRAB)
+		if(isCrowbar(C))
 			if(broken || burnt)
 				to_chat(user, "<span class='notice'>You start to pry the [flooring.descriptor].</span>")
 				if(do_after(user, 4 SECONDS))

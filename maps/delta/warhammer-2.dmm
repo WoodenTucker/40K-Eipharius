@@ -1,4 +1,15 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/unsimulated/mineral{
+	icon = 'icons/turf/wall.dmi';
+	icon_state = "concrete0";
+	name = "strange wall"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "ab" = (
 /obj/machinery/cooker/fryer{
 	color = "grey"
@@ -17,6 +28,18 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"ad" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/structure/table/rack/dark,
+/obj/item/reagent_containers/hypospray/autoinjector/revive{
+	name = "Juvinate Treatment"
+	},
+/obj/item/reagent_containers/hypospray/autoinjector/revive{
+	name = "Juvinate Treatment"
+	},
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "af" = (
 /obj/machinery/light/small/red{
 	dir = 4
@@ -47,12 +70,9 @@
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "ak" = (
-/obj/effect/floor_decal/turf/tunnelchess,
 /obj/structure/table/steel_reinforced,
 /obj/item/archaeological_find/knife,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "al" = (
 /obj/structure/cable{
@@ -80,6 +100,12 @@
 	},
 /turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
+"aq" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/crystal_static/pink,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "ar" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/rack/dark,
@@ -97,6 +123,9 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"at" = (
+/turf/simulated/floor/fancyfloor/carpet/green,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "au" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 9
@@ -271,6 +300,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"aR" = (
+/obj/structure/sign/poster/poster6{
+	pixel_y = -32
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "aS" = (
 /obj/effect/floor_decal/newcorner/trench_flooring{
 	dir = 6
@@ -288,6 +323,19 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"aV" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/item/archaeological_find/remains/xeno{
+	color = "grey"
+	},
+/obj/item/clothing/suit/armor/sniper,
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/glory,
+/obj/item/ammo_magazine/handful/brifle_handful/ms,
+/obj/item/clothing/head/helmet/foxhelm,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/dark)
 "aX" = (
 /obj/effect/floor_decal/turf/cafe{
 	color = "grey"
@@ -347,6 +395,25 @@
 	name = "sexy alien garb"
 	},
 /turf/simulated/floor/carpet/purple,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"bf" = (
+/obj/item/reagent_containers/food/condiment/small/saltshaker,
+/obj/item/reagent_containers/food/condiment/small/peppermill{
+	pixel_x = 7;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/food/condiment/enzyme{
+	pixel_x = -6;
+	pixel_y = 6
+	},
+/obj/effect/floor_decal/newcorner/white/diagonal,
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/structure/table/marble{
+	color = "grey"
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "bh" = (
 /turf/simulated/wall/ancient{
@@ -420,6 +487,12 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"bq" = (
+/obj/random/loot/guardgear,
+/obj/random/loot/guardgear,
+/obj/structure/closet/crate,
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "br" = (
 /obj/machinery/door/airlock/ancient_ship/med{
 	name = "Operation Room"
@@ -463,6 +536,11 @@
 	dir = 10
 	},
 /turf/unsimulated/mineral,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"by" = (
+/turf/simulated/floor/fancyfloor/carpet/grey{
+	dir = 10
+	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "bz" = (
 /obj/machinery/light/small{
@@ -590,6 +668,18 @@
 "bL" = (
 /obj/effect/floor_decal/newcorner/plating,
 /turf/simulated/floor/dirty/tough,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"bM" = (
+/obj/effect/floor_decal/spline/fancy/wood,
+/mob/living/simple_animal/hostile/syndicate{
+	icon_living = "traitorguard2";
+	icon_state = "traitorguard2";
+	name = "Friendly Billy";
+	color = "yellow";
+	desc = "You bet you could drag billy around with you anywhere!";
+	canmove = 0
+	},
+/turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "bN" = (
 /obj/item/newore/gems/sapphire/fail,
@@ -732,6 +822,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
+"ci" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 4
+	},
+/obj/structure/banner/blue{
+	pixel_y = -32
+	},
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "cj" = (
 /obj/item/stack/telecrystal,
 /obj/structure/cult/maniamotor{
@@ -785,6 +884,11 @@
 /obj/structure/curtain/black,
 /turf/simulated/floor/carpet/blue,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
+"cs" = (
+/obj/effect/decal/cleanable/cobweb,
+/obj/structure/hivedecor/bookcase/huge,
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "ct" = (
 /obj/structure/grille,
 /obj/machinery/door/blast/regular{
@@ -824,6 +928,12 @@
 "cA" = (
 /obj/effect/floor_decal/turf/clockwork,
 /turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"cB" = (
+/obj/machinery/door/unpowered/inn,
+/turf/simulated/floor/factory_floor{
+	dir = 4
+	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "cD" = (
 /obj/structure/bed/chair{
@@ -975,6 +1085,15 @@
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"cY" = (
+/obj/structure/table/graf/rich_table,
+/obj/item/device/flashlight/candelabra{
+	pixel_y = 12;
+	pixel_x = 1
+	},
+/obj/effect/decal/cleanable/cobweb,
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "da" = (
 /obj/structure/table/graf/rusty_table,
 /obj/random/loot/tech2,
@@ -1070,6 +1189,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
+"dr" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "ds" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1;
@@ -1104,6 +1231,12 @@
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
+"dy" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/fancyfloor/carpet/grey,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "dz" = (
 /obj/effect/floor_decal/newcorner/nbar,
 /obj/structure/flora/ausbushes/ywflowers{
@@ -1322,12 +1455,9 @@
 	},
 /area/cadiaoutpost/oa/hangarpact)
 "ec" = (
-/obj/machinery/vending/snack{
-	color = "grey"
-	},
-/turf/simulated/floor/tiled{
-	color = "gray"
-	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "ed" = (
 /obj/structure/table/graf/pagan,
@@ -1397,6 +1527,24 @@
 "el" = (
 /obj/item/newore/smallrock,
 /turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"en" = (
+/obj/structure/closet/hive/luxury,
+/obj/item/reagent_containers/food/drinks/glass2/shake,
+/obj/item/reagent_containers/food/drinks/glass2/shake,
+/obj/item/reagent_containers/food/drinks/glass2/rocks,
+/obj/item/reagent_containers/food/drinks/glass2/rocks,
+/obj/item/reagent_containers/food/drinks/glass2/pint,
+/obj/item/reagent_containers/food/drinks/glass2/pint,
+/obj/item/reagent_containers/food/drinks/glass2/shot,
+/obj/item/reagent_containers/food/drinks/glass2/shot,
+/obj/item/reagent_containers/food/drinks/glass2/square,
+/obj/item/reagent_containers/food/drinks/glass2/square,
+/obj/item/reagent_containers/food/drinks/glass2/wine,
+/obj/item/reagent_containers/food/drinks/glass2/wine,
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "eo" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1518,7 +1666,7 @@
 	dir = 1;
 	icon_state = "bulb1"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "eD" = (
 /turf/unsimulated/oldship{
@@ -1560,6 +1708,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
+"eH" = (
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 6
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "eI" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /obj/structure/cult/tinkerscache,
@@ -1650,6 +1803,14 @@
 "eS" = (
 /turf/simulated/wall/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"eT" = (
+/obj/structure/bed/chair/wood/fancy/comfy2{
+	dir = 8
+	},
+/turf/simulated/floor/fancyfloor/carpet/green{
+	dir = 5
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "eW" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/closet/cabinet{
@@ -1696,6 +1857,12 @@
 /obj/item/rnd/eng8,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"ff" = (
+/obj/random/loot/meleespawner,
+/obj/random/loot/meleespawner,
+/obj/structure/closet/crate,
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "fg" = (
 /obj/item/archaeological_find/remains/xeno{
 	color = "grey"
@@ -1788,6 +1955,21 @@
 /obj/effect/floor_decal/spline/plain,
 /turf/simulated/floor/fancyfloor/carpet/blue,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"fy" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/structure/torchwall{
+	dir = 1;
+	icon_state = "torchwall0"
+	},
+/obj/structure/table/marble{
+	color = "grey"
+	},
+/obj/item/clothing/head/chefhat,
+/obj/item/clothing/suit/chef/classic,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "fA" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4
@@ -1818,6 +2000,11 @@
 	},
 /obj/effect/floor_decal/newcorner/plating,
 /turf/simulated/floor/fancyfloor/oldcobble,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"fF" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/structure/table/rack/dark,
+/turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "fG" = (
 /obj/item/paper/crumpled/bloody{
@@ -2106,10 +2293,10 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "gs" = (
-/obj/structure/table/steel_reinforced,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 1
 	},
+/turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "gt" = (
 /obj/structure/bed{
@@ -2143,6 +2330,17 @@
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"gw" = (
+/obj/structure/sign/art/pray{
+	pixel_y = 32
+	},
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"gx" = (
+/obj/structure/telearray/lowleft,
+/obj/effect/floor_decal/turf/bloodbar/off,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "gy" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /turf/simulated/floor/factory_floor,
@@ -2188,6 +2386,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"gG" = (
+/obj/structure/table/rack/shelf{
+	color = "grey"
+	},
+/obj/random/toolbox,
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "gI" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /obj/structure/cult/talisman{
@@ -2451,6 +2656,15 @@
 /obj/item/clothing/suit/armor/seolarmor,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
+"hx" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 8
+	},
+/obj/structure/banner/blue{
+	pixel_y = -32
+	},
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "hz" = (
 /obj/machinery/door/airlock/ancient_ship/med{
 	name = "Research Departament"
@@ -2468,6 +2682,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/mechanicus)
+"hB" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/machinery/computer/drone_control{
+	dronefab = "Cadia";
+	req_one_access = list()
+	},
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "hC" = (
 /obj/effect/floor_decal/turf/cafe{
 	color = "grey"
@@ -2491,6 +2714,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
+"hF" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/structure/table/rack/dark,
+/obj/item/cell/pulserifle,
+/obj/item/cell/ion,
+/obj/item/reagent_containers/glass/bottle/spice,
+/obj/item/reagent_containers/glass/bottle/spice,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "hG" = (
 /obj/effect/floor_decal/newcorner/trench_flooring{
 	dir = 10
@@ -2534,6 +2766,16 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
+"hN" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/structure/table/graf/rusty_table,
+/obj/machinery/button/remote/blast_door/id_scan{
+	name = "Cursed Keyhole";
+	id = "secretdoor";
+	req_one_access = list(247)
+	},
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "hO" = (
 /obj/effect/floor_decal/turf/bar2,
 /obj/effect/floor_decal/turf/bar3,
@@ -2569,6 +2811,11 @@
 /obj/machinery/light,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"hT" = (
+/obj/effect/decal/cleanable/cobweb,
+/turf/simulated/floor/darkwood/rotten,
+/turf/simulated/wall/concrete/strong,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "hZ" = (
 /obj/machinery/light/small/red{
 	dir = 4
@@ -2613,6 +2860,11 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"ig" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/structure/forge,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "ii" = (
 /obj/structure/bed/alien{
 	color = "grey"
@@ -2635,6 +2887,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"in" = (
+/obj/structure/telearray/centreleft,
+/obj/effect/floor_decal/turf/bloodbar/off,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "io" = (
 /obj/effect/landmark/corpse,
 /turf/simulated/floor/stone/seabed,
@@ -2723,12 +2980,8 @@
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "iz" = (
-/obj/effect/decal/cleanable/dirt{
-	icon_state = "cobweb2"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
+/obj/structure/hivedecor/statue7,
+/turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "iA" = (
 /obj/structure/table/graf/rusty_table,
@@ -2744,6 +2997,13 @@
 	},
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/new_hive/caves)
+"iC" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/rnd/eng5,
+/turf/simulated/floor/fancyfloor/carpet/blue/middle,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "iD" = (
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /obj/structure/table/rack/shelf{
@@ -2769,6 +3029,14 @@
 	dir = 5
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"iG" = (
+/obj/structure/bed/chair/wood/fancy{
+	dir = 1
+	},
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "iH" = (
 /obj/effect/floor_decal/turf/sigil{
 	icon_state = "SE"
@@ -2781,6 +3049,12 @@
 	icon_state = "bloodf2"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
+"iI" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/shieldgen,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "iJ" = (
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled{
@@ -2917,9 +3191,8 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "iZ" = (
-/obj/effect/decal/dead,
-/obj/random/loot/badweaponlas,
-/turf/simulated/floor/tiled/dark{
+/obj/effect/floor_decal/newcorner/reinforced/corner,
+/turf/simulated/floor/wood{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
@@ -2956,13 +3229,7 @@
 	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "jd" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/machinery/washing_machine{
-	color = "grey"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
+/turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "je" = (
 /obj/effect/floor_decal/turf/bar3,
@@ -2974,6 +3241,17 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"jf" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"jg" = (
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 4
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "jh" = (
 /obj/machinery/light{
 	icon_state = "tube1";
@@ -3106,6 +3384,11 @@
 "jw" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/floor_decal/turf/necro1,
+/obj/machinery/door/blast/grates{
+	id = "gateee";
+	name = "Lockdown";
+	begins_closed = 0
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -3114,6 +3397,19 @@
 /obj/effect/floor_decal/turf/basalt0,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
+"jz" = (
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 8
+	},
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"jA" = (
+/obj/random/trash,
+/obj/item/trash/popcorn,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "jB" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/decal/cleanable/blood/gibs/xeno/body,
@@ -3163,6 +3459,10 @@
 /obj/effect/landmark/corpse,
 /obj/effect/floor_decal/turf/necro1,
 /turf/simulated/floor/fancyfloor/oldcobble,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"jG" = (
+/obj/machinery/door/unpowered/inn,
+/turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "jH" = (
 /obj/structure/closet/secure_closet/security{
@@ -3253,6 +3553,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
+"jS" = (
+/obj/structure/torchwall{
+	pixel_y = 16
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "jT" = (
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -3270,6 +3576,30 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"jX" = (
+/obj/structure/closet/crate,
+/obj/item/device/radio/headset/ert,
+/obj/item/device/radio/headset/ert,
+/obj/item/device/radio/headset/ert,
+/obj/item/device/radio/headset/ert,
+/obj/item/device/radio/headset/ert,
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
+	},
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
+	},
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
+	},
+/obj/item/card/id/key/super/daemon{
+	name = "Strange Key"
+	},
+/obj/item/device/radio/headset/ert,
+/obj/item/device/radio/headset/ert,
+/obj/item/device/radio/headset/ert,
+/turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "jY" = (
 /obj/structure/bed/chair/wheelchair{
@@ -3353,6 +3683,12 @@
 /obj/structure/shipdecor/warp,
 /turf/unsimulated/wall/cult,
 /area/cadiaoutpost/oa/caves/undercity)
+"kj" = (
+/obj/structure/sign/poster/poster3{
+	pixel_x = 32
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "kk" = (
 /obj/random/loot/tech1,
 /turf/unsimulated/miningtime,
@@ -3434,6 +3770,19 @@
 	pixel_x = -32
 	},
 /turf/simulated/floor/stone/seabed,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"ky" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/structure/table/marble{
+	color = "grey"
+	},
+/obj/item/book/manual/chef_recipes,
+/obj/machinery/reagentgrinder{
+	pixel_y = 8
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "kz" = (
 /obj/machinery/door/unpowered/inn{
@@ -3589,6 +3938,12 @@
 /obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
+"kY" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/machinery/r_n_d/protolathe,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "kZ" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/cult/interdictionlensinactive{
@@ -3681,6 +4036,12 @@
 	},
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/new_hive/caves)
+"ll" = (
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 4
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "ln" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/effect/floor_decal/industrial/warning{
@@ -3854,6 +4215,18 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
+"lJ" = (
+/obj/random/loot/randomitemcaves,
+/obj/random/loot/randomitemcaves,
+/obj/random/loot/randomitemcaves,
+/obj/random/loot/randomitemtown,
+/obj/random/loot/randomitemtown,
+/obj/random/loot/randomlasammo,
+/obj/random/loot/randomlasammo,
+/obj/random/loot/randomsupply,
+/obj/structure/closet/crate,
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "lK" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 2;
@@ -3909,6 +4282,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
+"lP" = (
+/obj/structure/hivedecor,
+/turf/simulated/floor/ceramic/old,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "lQ" = (
 /obj/machinery/door/airlock/glass_arbiter{
 	color = "grey";
@@ -3929,6 +4306,13 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"lS" = (
+/obj/structure/hivedecor/oldclock,
+/obj/effect/decal/cleanable/cobweb2{
+	dir = 1
+	},
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "lT" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/random/trash,
@@ -3978,6 +4362,14 @@
 	dir = 8
 	},
 /turf/simulated/floor/stone/seabed,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"lY" = (
+/obj/structure/bed/chair/wood/fancy/comfy2{
+	dir = 4
+	},
+/turf/simulated/floor/fancyfloor/carpet/green{
+	dir = 9
+	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "lZ" = (
 /obj/machinery/atmospherics/binary/circulator,
@@ -4129,7 +4521,15 @@
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "mp" = (
 /obj/structure/closet/crate/uranium,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"mq" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "mr" = (
 /obj/structure/closet/crate/miner,
@@ -4153,11 +4553,32 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"mv" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/fancyfloor/carpet/grey{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "mw" = (
 /obj/structure/table/graf/pagan,
 /obj/item/melee/sword/slaanesh,
 /turf/simulated/floor/grass{
 	icon_state = "evil"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"mz" = (
+/obj/item/material/kitchen/rollingpin,
+/obj/item/material/kitchen/utensil/knife/boot,
+/obj/effect/floor_decal/newcorner/white/diagonal,
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/structure/table/marble{
+	color = "grey"
+	},
+/obj/item/material/knife/butch,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
 	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "mA" = (
@@ -4321,6 +4742,12 @@
 "mW" = (
 /turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
+"mX" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 4
+	},
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "mY" = (
 /obj/structure/railing{
 	dir = 8
@@ -4344,6 +4771,12 @@
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"nd" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/machinery/r_n_d/destructive_analyzer,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "ne" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/item/archaeological_find/remains/xeno{
@@ -4388,9 +4821,7 @@
 	dir = 8;
 	icon_state = "torchwall0"
 	},
-/turf/simulated/floor/tiled{
-	color = "gray"
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "nk" = (
 /obj/structure/bed/chair{
@@ -4548,6 +4979,12 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"nG" = (
+/obj/effect/decal/cleanable/cobweb{
+	dir = 1
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "nH" = (
 /obj/machinery/door/blast/regular{
 	dir = 4;
@@ -4691,6 +5128,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"ob" = (
+/obj/machinery/door/unpowered/inn{
+	color = "grey";
+	name = "ancient door"
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "oe" = (
 /obj/structure/table/rack/dark,
 /obj/random/loot/tech1,
@@ -4853,6 +5297,22 @@
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
+"oz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/structure/table/rack/dark,
+/obj/item/paper/crumpled/bloody{
+	name = "reseach instructions";
+	desc = "get ingots. turn into strange alloy. put in the protolathe. find archeotech or steal it from your rivals. become one with the machine god."
+	},
+/obj/item/card/id/silver{
+	access = list(221,222,223);
+	color = "grey";
+	job_access_type = null;
+	name = "L3 Access Card"
+	},
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "oB" = (
 /obj/item/newore/smallrock,
 /turf/simulated/floor/stone,
@@ -4913,6 +5373,19 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"oM" = (
+/obj/structure/bed/chair/wood/fancy/comfy2{
+	dir = 8
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 4
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"oN" = (
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "oO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/bed/chair/comfy/brown{
@@ -4992,6 +5465,16 @@
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"oX" = (
+/obj/machinery/door/unpowered/inn{
+	req_one_access = list(247);
+	name = "House Sondar Door";
+	maxhealth = 3000
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "oY" = (
 /obj/machinery/door/airlock/ancient_ship/maint,
 /turf/simulated/floor/ship_floor/steel{
@@ -5034,6 +5517,15 @@
 /obj/effect/landmark/corpse,
 /obj/effect/floor_decal/turf/necro1,
 /turf/simulated/floor/fancyfloor/oldcobble,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"pe" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 8
+	},
+/obj/structure/banner/blue{
+	pixel_y = 32
+	},
+/turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "pf" = (
 /obj/random/loot/heavymelee,
@@ -5129,6 +5621,24 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"pu" = (
+/obj/machinery/door/blast/grates{
+	id = "gateee";
+	name = "Lockdown";
+	begins_closed = 0
+	},
+/obj/machinery/door/unpowered/inn{
+	req_one_access = list(247);
+	name = "House Sondar Door";
+	maxhealth = 3000
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"pv" = (
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 5
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "pw" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/structure/shipdecor{
@@ -5144,6 +5654,17 @@
 	icon = 'icons/turf/wall.dmi';
 	icon_state = "concrete0"
 	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"py" = (
+/obj/structure/torchwall{
+	pixel_y = 30
+	},
+/obj/structure/table/graf/rich_table,
+/obj/structure/flora/pottedplant/dead{
+	pixel_y = 12;
+	pixel_x = 1
+	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "pz" = (
 /turf/simulated/wall/r_wall,
@@ -5352,6 +5873,15 @@
 /obj/item/retractor,
 /turf/simulated/floor/dirty/indestructable/lightless,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
+"qg" = (
+/obj/structure/torchwall{
+	dir = 1;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "qj" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 4
@@ -5458,6 +5988,14 @@
 /obj/machinery/vending/coffee,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"qG" = (
+/obj/machinery/door/unpowered/inn{
+	req_one_access = list(247);
+	name = "House Sondar Door";
+	maxhealth = 3000
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "qI" = (
 /obj/machinery/light/small/red{
 	dir = 8;
@@ -5491,6 +6029,9 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"qM" = (
+/turf/simulated/floor/fancyfloor/carpet/green/middle,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "qN" = (
 /obj/structure/kitchenspike,
 /obj/effect/decal/cleanable/blood,
@@ -5823,6 +6364,13 @@
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
+"rS" = (
+/obj/structure/torchwall{
+	dir = 8;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "rT" = (
 /obj/structure/shipdecor{
 	icon_state = "loading"
@@ -5885,7 +6433,6 @@
 	name = "weird stain"
 	},
 /obj/item/melee/sword/skinning_knife,
-/obj/item/melee/sword/machete/chopper/heavy/adamantine,
 /obj/item/melee/sword/chaosknife,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
@@ -5899,6 +6446,9 @@
 /obj/machinery/computer/teleporter,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"se" = (
+/turf/simulated/floor/ceramic/old,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "sg" = (
 /obj/machinery/button/remote/blast_door/lever{
 	id = "armorypact";
@@ -6021,6 +6571,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
+"sv" = (
+/obj/structure/hivedecor/bookcase/huge,
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "sw" = (
 /obj/machinery/door/blast/regular{
 	dir = 4;
@@ -6125,6 +6679,12 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"sM" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/structure/table/rack/dark,
+/obj/random/loot/tech2,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "sN" = (
 /obj/effect/floor_decal/industrial/warning_red{
 	dir = 8
@@ -6134,6 +6694,12 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"sO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/crystal_static,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "sP" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/bed/chair/wood{
@@ -6286,7 +6852,7 @@
 	desc = "A fuel tank meant for a welding tool. This one feels empty. There are runes all around the port.";
 	name = "ancient welding fuel tank"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "tj" = (
 /obj/structure/sign/ship/blood_signs{
@@ -6383,7 +6949,7 @@
 /obj/item/archaeological_find/remains/xeno{
 	color = "grey"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "tx" = (
 /obj/machinery/light/small/red{
@@ -6552,6 +7118,15 @@
 	integrity = 6500
 	},
 /area/cadiaoutpost/oa/hangarpact)
+"tT" = (
+/obj/structure/torchwall{
+	dir = 8;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "tU" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/woodentable{
@@ -6572,6 +7147,14 @@
 /obj/item/newore/phoronore,
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/new_hive/caves)
+"tY" = (
+/obj/structure/sewers/wallhole,
+/turf/unsimulated/mineral{
+	icon = 'icons/turf/wall.dmi';
+	icon_state = "concrete0";
+	name = "strange wall"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "tZ" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -6743,14 +7326,12 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "uu" = (
-/obj/effect/floor_decal/turf/splate,
-/obj/machinery/door/unpowered/inn{
-	color = "grey";
-	name = "ancient door"
+/obj/structure/torchwall{
+	dir = 1;
+	icon_state = "torchwall0"
 	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
+/obj/effect/floor_decal/spline/fancy/wood,
+/turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "uw" = (
 /obj/structure/bed/chair/wheelchair{
@@ -6937,14 +7518,20 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "va" = (
-/obj/effect/floor_decal/turf/tunnelchess,
 /obj/structure/table/rack/shelf{
 	color = "grey"
 	},
 /obj/random/coin,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"vb" = (
+/obj/effect/floor_decal/spline/fancy/wood,
+/obj/structure/table/graf/rich_table,
+/obj/structure/flora/pottedplant/shoot{
+	pixel_y = 12;
+	pixel_x = 1
 	},
+/turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "vd" = (
 /obj/item/trash/warfare_can/sardine,
@@ -6968,6 +7555,12 @@
 /obj/effect/floor_decal/turf/surgery2,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/caves/dark)
+"vh" = (
+/obj/structure/bed/chair/wood/fancy{
+	dir = 8
+	},
+/turf/simulated/floor/fancyfloor/carpet/grey,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "vi" = (
 /obj/effect/floor_decal/turf/sigil,
 /obj/item/rnd/demonic_grimorie,
@@ -7078,6 +7671,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"vv" = (
+/turf/simulated/floor/fancyfloor/carpet/green{
+	dir = 10
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "vx" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	dir = 5
@@ -7119,6 +7717,10 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"vF" = (
+/obj/structure/hivedecor/bookcase,
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "vG" = (
 /obj/structure/warfare/barricade/sandbag,
 /turf/simulated/floor/plating/reinforced,
@@ -7140,11 +7742,23 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"vJ" = (
+/obj/structure/bed/chair/wood/fancy{
+	dir = 4
+	},
+/turf/simulated/floor/fancyfloor/carpet/grey{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "vK" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	dir = 4
 	},
 /turf/unsimulated/mineral,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"vP" = (
+/obj/effect/floor_decal/newcorner/reinforced/corner,
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "vQ" = (
 /obj/effect/floor_decal/turf/brothel,
@@ -7183,13 +7797,11 @@
 	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "vW" = (
-/obj/effect/floor_decal/turf/tunneldirty,
-/obj/effect/decal/remains{
-	color = "grey"
+/obj/structure/torchwall{
+	pixel_y = 30
 	},
-/obj/item/clothing/head/helmet/guardhelmet,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 1
 	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "vY" = (
@@ -7204,8 +7816,37 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
+"vZ" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/machinery/microwave{
+	pixel_y = 8
+	},
+/obj/structure/table/marble{
+	color = "grey"
+	},
+/obj/structure/sign/prices{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "wa" = (
 /turf/simulated/mineral/random,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"we" = (
+/obj/machinery/door/unpowered/inn{
+	req_one_access = list(247);
+	name = "House Sondar Door";
+	maxhealth = 3000
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"wf" = (
+/obj/structure/bed/chair/wood/fancy{
+	dir = 4
+	},
+/turf/simulated/floor/fancyfloor/carpet/grey,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "wg" = (
 /obj/item/reagent_containers/hypospray/autoinjector/morphine{
@@ -7391,9 +8032,7 @@
 "wC" = (
 /obj/random/trash,
 /obj/random/junk,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "wD" = (
 /obj/machinery/telecomms/server{
@@ -7416,9 +8055,7 @@
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "wJ" = (
 /obj/random/trash,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "wK" = (
 /obj/effect/floor_decal/turf/plating,
@@ -7459,6 +8096,11 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"wQ" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/structure/gemwasher,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "wR" = (
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
@@ -7516,12 +8158,35 @@
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"xa" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/structure/table/rack/dark,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/diamond,
+/obj/item/stack/material/diamond,
+/obj/item/stack/material/diamond,
+/obj/item/stack/material/diamond,
+/obj/item/stack/material/phoron/one,
+/obj/item/stack/material/phoron/one,
+/obj/item/stack/material/phoron/one,
+/obj/item/stack/material/phoron/one,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "xb" = (
 /mob/living/simple_animal/hostile/flesh/stalker2,
 /turf/simulated/floor/plating{
 	icon_state = "evil"
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"xc" = (
+/obj/structure/closet/hive/darkwood{
+	anchored = 1
+	},
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "xe" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -7529,6 +8194,13 @@
 /obj/item/reagent_containers/food/condiment/enzyme,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"xh" = (
+/obj/structure/bed/chair/wood/fancy,
+/turf/simulated/floor/fancyfloor/carpet/blue/middle,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"xi" = (
+/turf/simulated/floor/fancyfloor/carpet/blue,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "xj" = (
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/hangarpact)
@@ -7570,6 +8242,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
+"xo" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "xp" = (
 /obj/effect/floor_decal/newcorner/shaft/corner{
 	dir = 4
@@ -7578,6 +8256,19 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
+"xq" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 6
+	},
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"xr" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/item/pickaxe,
+/obj/structure/closet/crate/miningcar,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "xt" = (
 /turf/unsimulated/oldship{
 	icon_state = "rwall4"
@@ -7624,6 +8315,12 @@
 /obj/structure/barbwire,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
+"xB" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/structure/table/steel,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "xC" = (
 /obj/structure/closet/crate/miningcar,
 /obj/random/loot/randomitemcaves,
@@ -7689,6 +8386,12 @@
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"xO" = (
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 1
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "xP" = (
 /obj/effect/floor_decal/newcorner/stone,
 /turf/simulated/floor/fancyfloor/oldcobble,
@@ -7812,6 +8515,19 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"yg" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/tray{
+	pixel_x = 6;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/food/drinks/glass2/shake{
+	pixel_x = 20
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue/middle,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "yh" = (
 /obj/structure/bed/chair,
 /turf/simulated/floor/tiled{
@@ -7873,6 +8589,12 @@
 "yo" = (
 /obj/effect/gibspawner,
 /turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"yp" = (
+/obj/machinery/artifact_analyser,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "yq" = (
 /obj/structure/table/marble{
@@ -8021,6 +8743,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"yP" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "yQ" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -8125,6 +8853,11 @@
 /obj/item/remains/human,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"ze" = (
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 10
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "zf" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -8152,6 +8885,11 @@
 	color = "grey";
 	icon_state = "white1"
 	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"zh" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/machinery/power/port_gen/pacman/super/potato,
+/turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "zi" = (
 /obj/random/loot/randomsupply,
@@ -8245,9 +8983,9 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
-/obj/item/plastique,
-/obj/item/plastique,
-/obj/item/plastique,
+/obj/item/grenade/frag/high_yield/krak/detpack,
+/obj/item/grenade/frag/high_yield/krak/detpack,
+/obj/item/grenade/frag/high_yield/krak/detpack,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -8262,6 +9000,20 @@
 /area/cadiaoutpost/oa/hangarpact)
 "zu" = (
 /turf/unsimulated/mineral,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"zv" = (
+/obj/effect/decal/cleanable/cobweb{
+	dir = 8
+	},
+/obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
+/obj/random/loot/randomammo1,
+/obj/structure/closet/crate,
+/turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "zw" = (
 /obj/effect/floor_decal/turf/necro1,
@@ -8352,6 +9104,12 @@
 	},
 /turf/simulated/floor/ship_floor/steel,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"zO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/machinery/r_n_d/circuit_imprinter,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "zP" = (
 /obj/machinery/cooker/grill{
 	color = "grey"
@@ -8533,13 +9291,14 @@
 	dir = 1
 	},
 /area/cadiaoutpost/new_hive/caves)
+"Ak" = (
+/obj/effect/decal/cleanable/cobweb2,
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Al" = (
-/obj/effect/floor_decal/turf/tunnelchess,
 /obj/structure/table/steel_reinforced,
 /obj/item/clothing/under/psysuit,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "Am" = (
 /obj/machinery/optable,
@@ -8632,7 +9391,13 @@
 	dir = 1;
 	icon_state = "torchwall0"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"AA" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "AB" = (
 /obj/effect/floor_decal/spline/plain{
@@ -8642,6 +9407,18 @@
 	dir = 6
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"AC" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/item/clothing/suit/armor/seolarmor{
+	sales_price = 0
+	},
+/obj/item/clothing/head/helmet/space/void/engineering/salvage{
+	desc = "An alien void helmet.";
+	name = "Seolite Protective Helmet";
+	sales_price = 0
+	},
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "AD" = (
 /obj/effect/floor_decal/newcorner/shaft{
 	dir = 1
@@ -8716,9 +9493,7 @@
 	color = "grey";
 	name = "Storage"
 	},
-/turf/simulated/floor/tiled{
-	color = "gray"
-	},
+/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "AP" = (
 /obj/structure/table/rack/dark,
@@ -8739,7 +9514,7 @@
 	icon = 'icons/effects/96x96.dmi';
 	icon_state = "shadow2"
 	},
-/turf/simulated/wall/seolite,
+/turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/wilds/deathfog)
 "AS" = (
 /turf/unsimulated/wall/fakeglass{
@@ -8748,6 +9523,21 @@
 	icon_state = "r_window"
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"AT" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/structure/cult/clockworkobelisk,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"AU" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/reagent_containers/food/drinks/glass2/shake{
+	pixel_y = 6;
+	pixel_x = -10
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue/middle,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "AV" = (
 /obj/structure/bed/chair,
 /turf/simulated/floor/plating{
@@ -8993,6 +9783,22 @@
 /obj/item/storage/fancy/crayons,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"BC" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/tray{
+	pixel_y = 6;
+	pixel_x = -6
+	},
+/obj/item/reagent_containers/food/drinks/glass2/shake{
+	pixel_x = -20
+	},
+/obj/item/reagent_containers/food/snacks/soylentgreen{
+	color = "grey"
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue/middle,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "BD" = (
 /obj/structure/closet/secure_closet/freezer/meat,
 /turf/simulated/floor/tiled/freezer{
@@ -9085,9 +9891,13 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "BQ" = (
-/turf/simulated/floor/tiled{
-	color = "gray"
+/obj/structure/table/woodentable{
+	color = "#36261B"
 	},
+/obj/item/tray{
+	pixel_y = 8
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue/middle,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "BS" = (
 /obj/structure/table/graf/rusty_table,
@@ -9255,6 +10065,15 @@
 	icon_state = "bloodf2"
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"Cu" = (
+/mob/living/simple_animal/hostile/syndicate{
+	icon_living = "traitorguard2";
+	icon_state = "traitorguard2";
+	canmove = 0;
+	faction = "Demon"
+	},
+/turf/simulated/floor/plating/reinforced,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Cv" = (
 /obj/machinery/light/small/red{
 	dir = 8;
@@ -9278,6 +10097,12 @@
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"Cy" = (
+/obj/effect/floor_decal/newcorner/reinforced,
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Cz" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/woodentable{
@@ -9297,6 +10122,15 @@
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"CB" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/machinery/computer/rdconsole/core{
+	req_one_access = list();
+	req_access = list()
+	},
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "CC" = (
 /obj/structure/sign/ship/blood_signs{
 	icon_state = "graffiti4"
@@ -9577,6 +10411,15 @@
 "Dk" = (
 /turf/unsimulated/wall/cult,
 /area/cadiaoutpost/oa/caves/undercity)
+"Dm" = (
+/obj/structure/torchwall{
+	pixel_y = 30
+	},
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 1
+	},
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Dn" = (
 /obj/structure/bed/barrack,
 /obj/structure/bed/barrack1,
@@ -9690,6 +10533,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
+"DF" = (
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 9
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "DG" = (
 /obj/structure/table/steel,
 /obj/item/reagent_containers/food/drinks/bottle/bluecuracao{
@@ -9701,6 +10549,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"DH" = (
+/obj/machinery/artifact_scanpad,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/item/grenade/frag/plasma,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "DI" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 5
@@ -9807,6 +10662,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"DW" = (
+/obj/structure/banner/blue{
+	pixel_y = 32
+	},
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "DX" = (
 /obj/effect/floor_decal/turf/brothel,
 /obj/structure/bed/chair/cage,
@@ -9872,6 +10735,17 @@
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"Eg" = (
+/obj/structure/table/rack/shelf{
+	color = "grey"
+	},
+/obj/effect/decal/cleanable/cobweb{
+	dir = 1
+	},
+/obj/random/voidhelmet,
+/obj/random/voidsuit,
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Eh" = (
 /obj/random/trash,
 /turf/simulated/floor/seolite,
@@ -9972,6 +10846,14 @@
 /obj/random/coin,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
+"Es" = (
+/obj/structure/sign/poster/poster2{
+	pixel_x = 32
+	},
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Eu" = (
 /obj/machinery/light/red,
 /obj/item/remains/human,
@@ -10054,7 +10936,8 @@
 /mob/living/simple_animal/hostile/syndicate{
 	icon_living = "traitorguard2";
 	icon_state = "traitorguard2";
-	canmove = 0
+	canmove = 0;
+	faction = "Demon"
 	},
 /turf/unsimulated/floor{
 	icon = 'icons/turf/shuttle.dmi';
@@ -10104,8 +10987,11 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "EJ" = (
-/obj/effect/floor_decal/turf/lfloorscorched1,
-/turf/simulated/floor/tiled,
+/obj/structure/torchwall{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "EK" = (
 /obj/machinery/light,
@@ -10138,6 +11024,12 @@
 "EO" = (
 /turf/simulated/mineral/random,
 /area/cadiaoutpost/oa/caves/dark)
+"EP" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue/middle,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "EQ" = (
 /obj/item/ingots/silveringot,
 /turf/simulated/floor/stone,
@@ -10283,13 +11175,6 @@
 	dir = 4
 	},
 /obj/structure/warfare/barricade/sandbag,
-/mob/living/simple_animal/hostile/syndicate{
-	icon_living = "traitorguard2";
-	icon_state = "traitorguard2";
-	name = "Friendly Billy";
-	color = "yellow";
-	desc = "You bet you could drag billy around with you anywhere!"
-	},
 /turf/simulated/floor/surface_floor,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "Fm" = (
@@ -10390,6 +11275,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
+"Fw" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Fx" = (
 /obj/machinery/door/airlock/arbiter{
 	color = "grey";
@@ -10436,6 +11328,14 @@
 /area/cadiaoutpost/oa/hangarpact)
 "FD" = (
 /turf/simulated/floor/dirty/indestructable/lightless,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"FE" = (
+/obj/machinery/button/remote/blast_door/lever{
+	id = "gateee";
+	name = "Main Entrace";
+	pixel_y = -32
+	},
+/turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "FF" = (
 /obj/random/loot/goodweapon,
@@ -10537,6 +11437,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
+"FS" = (
+/obj/effect/decal/cleanable/cobweb,
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "FT" = (
 /obj/item/remains/human,
 /turf/simulated/floor/ship_floor/steel{
@@ -10660,6 +11564,13 @@
 /obj/effect/floor_decal/newcorner/mine_walls,
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/new_hive/caves)
+"Gj" = (
+/obj/effect/decal/cleanable/cobweb{
+	dir = 4
+	},
+/obj/structure/hivedecor/bookcase,
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Gl" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -10766,6 +11677,22 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"Gx" = (
+/obj/item/reagent_containers/hypospray/autoinjector/tau{
+	desc = "A disgusting red liquid sloshes around inside the tube.";
+	name = "Mysterious Injector"
+	},
+/obj/effect/floor_decal/turf/carpetn00,
+/obj/item/newore/gems/ruby/cut,
+/obj/item/device/holyoils,
+/obj/item/device/autochisel,
+/obj/item/device/hammer,
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/item/rnd/combat10,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Gy" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/vending/props{
@@ -10958,6 +11885,14 @@
 /obj/item/clothing/suit/armor/seolarmor,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"He" = (
+/obj/structure/bed/chair/wood/fancy/comfy2{
+	dir = 4
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Hf" = (
 /obj/effect/floor_decal/turf/bar3,
 /turf/simulated/floor/ship_floor/steel{
@@ -11075,6 +12010,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"Hx" = (
+/obj/structure/torchwall{
+	dir = 1;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Hy" = (
 /turf/unsimulated/oldship{
 	icon_state = "rwall6"
@@ -11185,6 +12127,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"HR" = (
+/obj/effect/decal/cleanable/dirt{
+	icon_state = "cobweb2"
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "HS" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/paper_bin{
@@ -11412,6 +12360,15 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
+"Ix" = (
+/obj/structure/torchwall{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Iy" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /obj/machinery/logcutter,
@@ -11632,6 +12589,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"IZ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/structure/table/rack/dark,
+/obj/item/rcd,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Ja" = (
 /turf/simulated/shuttle/wall/corner/dark/nw,
 /area/cadiaoutpost/oa/shuttle/mechanicus)
@@ -11641,6 +12605,12 @@
 	icon = 'icons/map_project/windows.dmi';
 	icon_state = "r_window"
 	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"Je" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/machinery/integrated_circuit_printer,
+/turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "Jf" = (
 /mob/living/simple_animal/hostile/undead,
@@ -11685,6 +12655,13 @@
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"Jm" = (
+/obj/structure/table/rack/shelf{
+	color = "grey"
+	},
+/obj/random/toy,
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Jn" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	dir = 6
@@ -11731,6 +12708,23 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
+"Jx" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/structure/reagent_dispensers/acid{
+	pixel_x = -30
+	},
+/obj/structure/table/rack/dark,
+/obj/item/storage/belt/utility/atmostech{
+	color = "grey";
+	name = "forge belt"
+	},
+/obj/item/storage/belt/utility/atmostech{
+	color = "grey";
+	name = "forge belt"
+	},
+/obj/item/cell/plasma,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Jz" = (
 /obj/structure/shipdecor{
 	icon_state = "reading"
@@ -12011,6 +13005,22 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"Ke" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/machinery/cell_charger,
+/obj/structure/table/steel,
+/obj/random/tech_supply,
+/obj/random/powercell,
+/obj/random/powercell,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"Kf" = (
+/obj/effect/decal/cleanable/cobweb2{
+	dir = 8
+	},
+/turf/simulated/floor/ceramic/old,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Kg" = (
 /obj/structure/bed/chair{
 	dir = 8
@@ -12089,6 +13099,20 @@
 	icon_state = "evil"
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"Ks" = (
+/obj/structure/table/graf/rich_table,
+/obj/structure/flora/pottedplant/small{
+	pixel_y = 12;
+	pixel_x = 1
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"Kt" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/implantchair,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Ku" = (
 /obj/structure/closet/walllocker/emerglocker/north,
 /obj/structure/closet/secure_closet/freezer/fridge,
@@ -12102,6 +13126,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
+"Kx" = (
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 8
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Kz" = (
 /obj/item/gun/energy/las/lasgun/catachan,
 /turf/simulated/floor/tiled{
@@ -12276,6 +13306,9 @@
 /obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
+"KW" = (
+/turf/simulated/floor/fancyfloor/carpet/blue/middle,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "KX" = (
 /obj/structure/sign/ship{
 	icon_state = "picture2";
@@ -12319,6 +13352,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
+"Lh" = (
+/obj/structure/hivedecor/oldclock,
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Lj" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	icon_state = "04";
@@ -12413,6 +13452,12 @@
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
+"Lw" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/machinery/mecha_part_fabricator,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Lx" = (
 /obj/random/trash,
 /obj/item/trash/waffles,
@@ -12492,6 +13537,13 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"LI" = (
+/obj/structure/hivedecor/oldclock,
+/obj/effect/decal/cleanable/cobweb2,
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "LJ" = (
 /obj/machinery/atmospherics/pipe/simple/visible/black{
 	dir = 6
@@ -12577,6 +13629,16 @@
 /obj/item/grenade/chem_grenade/antiweed,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
+"Ma" = (
+/obj/structure/statue/fountain{
+	pixel_y = 10
+	},
+/obj/structure/sink/fountain{
+	color = "red";
+	pixel_y = 10
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Mb" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/black{
 	dir = 4
@@ -12596,6 +13658,16 @@
 	},
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"Md" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space/cpt{
+	canmove = 0;
+	faction = "Demon"
+	},
+/turf/unsimulated/floor{
+	icon = 'icons/turf/shuttle.dmi';
+	icon_state = "floor6"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Me" = (
 /obj/machinery/door/blast/bordergatel,
 /turf/simulated/floor/ship_floor/steel{
@@ -12697,12 +13769,17 @@
 /turf/simulated/floor/ship_floor/steel,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "Mu" = (
-/obj/machinery/vending/coffee{
-	icon_state = "coffe-broken"
+/obj/structure/table/woodentable{
+	color = "#36261B"
 	},
-/turf/simulated/floor/tiled{
-	color = "gray"
+/obj/item/tray{
+	pixel_y = 6;
+	pixel_x = -6
 	},
+/obj/item/reagent_containers/food/drinks/glass2/shake{
+	pixel_x = -20
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue/middle,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "Mv" = (
 /turf/unsimulated/oldship{
@@ -12746,6 +13823,13 @@
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"MF" = (
+/obj/machinery/artifact_harvester,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/clockwork,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "MG" = (
 /obj/machinery/media/jukebox{
 	color = "grey"
@@ -12753,11 +13837,10 @@
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
 "MH" = (
-/obj/random/trash,
-/obj/item/trash/popcorn,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 10
 	},
+/turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "MI" = (
 /obj/machinery/door/blast/id_door/open{
@@ -12818,6 +13901,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"MR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/machinery/vending/robotics,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "MU" = (
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/stone,
@@ -12838,6 +13927,15 @@
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"MY" = (
+/obj/structure/table/graf/rusty_table,
+/obj/machinery/button/remote/blast_door/id_scan{
+	name = "Cursed Keyhole";
+	id = "secretdoor";
+	req_one_access = list(247)
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "MZ" = (
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/ship_floor/steel{
@@ -12966,6 +14064,15 @@
 	dir = 10
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"Nt" = (
+/obj/effect/floor_decal/newcorner/reinforced,
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"Nu" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/machinery/vending/phoronresearch,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Nv" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 1
@@ -13091,6 +14198,15 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"NP" = (
+/obj/structure/torchwall{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/fancyfloor/carpet/grey{
+	dir = 9
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "NR" = (
 /obj/machinery/igniter{
 	desc = null;
@@ -13113,6 +14229,11 @@
 "NV" = (
 /turf/simulated/floor/tiled{
 	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"NW" = (
+/turf/simulated/floor/fancyfloor/carpet/green{
+	dir = 6
 	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "NY" = (
@@ -13197,6 +14318,14 @@
 /obj/item/reagent_containers/pill/noexcutite,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/undercity)
+"On" = (
+/obj/structure/torchwall{
+	pixel_y = 30
+	},
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Oo" = (
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /obj/item/archaeological_find/remains/xeno{
@@ -13228,6 +14357,11 @@
 	icon_state = "rwall12"
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"Ot" = (
+/obj/structure/telearray/centreright,
+/obj/effect/floor_decal/turf/bloodbar/off,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Ou" = (
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled{
@@ -13375,12 +14509,10 @@
 	},
 /area/cadiaoutpost/oa/hangarpact)
 "ON" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/plantspray/pests{
-	color = "grey"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
+/turf/unsimulated/mineral{
+	icon = 'icons/turf/wall.dmi';
+	icon_state = "concrete0";
+	name = "strange wall"
 	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "OO" = (
@@ -13441,6 +14573,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
+"OV" = (
+/obj/effect/decal/cleanable/cobweb{
+	dir = 8
+	},
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 5;
+	icon_state = "spline_fancy"
+	},
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "OX" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -13474,6 +14616,23 @@
 /mob/living/simple_animal/hostile/mining_borg/behemoth,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"Pd" = (
+/obj/structure/sign/art/statue{
+	pixel_x = -32
+	},
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"Pe" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/structure/table/rack/dark,
+/obj/item/gun/energy/pulse/pulserifle{
+	charge_cost = 25;
+	desc = "The remains of an ancient salvage, close examination reveals the power pack is drained and there are even cracks within the crystal assembly.";
+	name = "xenos rifle";
+	sales_price = 0
+	},
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Pf" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 8
@@ -13649,6 +14808,18 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"PA" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/machinery/microwave{
+	pixel_y = 8
+	},
+/obj/structure/table/marble{
+	color = "grey"
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "PE" = (
 /obj/effect/decal/cleanable/blood/gibs/vomit,
 /turf/simulated/floor/ship_floor/steel{
@@ -13677,6 +14848,12 @@
 	icon_state = "evil"
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"PJ" = (
+/obj/structure/bed/chair/wood/fancy,
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "PK" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/item/archaeological_find/remains/xeno{
@@ -13695,6 +14872,12 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"PM" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 9
+	},
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "PN" = (
 /obj/effect/floor_decal/newcorner/rails,
 /turf/simulated/floor/factory_floor{
@@ -13799,6 +14982,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
+"Qa" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Qc" = (
 /obj/structure/table/steel,
 /obj/item/reagent_containers/food/drinks/bottle/bluecuracao{
@@ -14176,6 +15367,16 @@
 "Rh" = (
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
+"Ri" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/item/card/id/silver{
+	access = list(221,222);
+	color = "grey";
+	job_access_type = null;
+	name = "L2 Access Card"
+	},
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Rk" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/rack/dark,
@@ -14192,6 +15393,18 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
+"Rp" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/structure/cult/talisman{
+	desc = "A dusty table constructed from stone - handcut and covered in runic scripture.";
+	name = "Ancient Table"
+	},
+/obj/random/loot/tech1,
+/obj/random/loot/tech1,
+/obj/random/loot/tech1,
+/obj/random/loot/tech1,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Rq" = (
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/new_hive/caves)
@@ -14296,14 +15509,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
+"RF" = (
+/turf/simulated/floor/fancyfloor/carpet/green{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "RH" = (
-/obj/item/archaeological_find/remains/xeno{
-	color = "grey"
-	},
-/obj/random/loot/randomarmor,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
+/obj/effect/floor_decal/spline/fancy/wood,
+/turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "RI" = (
 /obj/effect/floor_decal/turf/plating,
@@ -14490,15 +15703,25 @@
 	},
 /turf/simulated/floor/stone/seabed,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
-"Sk" = (
-/obj/effect/floor_decal/turf/necro1,
-/mob/living/simple_animal/hostile/flesh,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/caves/dark)
+"Sl" = (
+/obj/structure/telearray/lowright,
+/obj/effect/floor_decal/turf/bloodbar/off,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Sm" = (
 /turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"Sn" = (
+/obj/random/loot/randomarmor,
+/obj/random/loot/randomarmor,
+/obj/item/clothing/accessory/mfcloak,
+/obj/item/clothing/accessory/mfcloak,
+/obj/item/clothing/accessory/pcloak,
+/obj/item/clothing/accessory/pcloak,
+/obj/item/clothing/accessory/bishopcloak,
+/obj/item/clothing/accessory/bishopcloak,
+/obj/structure/closet/crate,
+/turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "So" = (
 /obj/structure/iv_drip,
@@ -14524,6 +15747,22 @@
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"Sx" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/structure/cult/talisman{
+	desc = "A dusty table constructed from stone - handcut and covered in runic scripture.";
+	name = "Ancient Table"
+	},
+/obj/item/reagent_containers/hypospray/autoinjector/tau{
+	desc = "A disgusting red liquid sloshes around inside the tube.";
+	name = "Mysterious Injector"
+	},
+/obj/item/reagent_containers/hypospray/autoinjector/tau{
+	desc = "A disgusting red liquid sloshes around inside the tube.";
+	name = "Mysterious Injector"
+	},
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Sy" = (
 /obj/effect/floor_decal/turf/sigil{
 	icon_state = "SW"
@@ -14620,6 +15859,22 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
+"SO" = (
+/obj/structure/telearray/upperleft,
+/obj/effect/floor_decal/turf/bloodbar/off,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"SP" = (
+/obj/structure/torchwall{
+	pixel_y = 30
+	},
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/fancyfloor/carpet/green{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "SQ" = (
 /obj/machinery/door/window/westleft,
 /obj/structure/cable{
@@ -14659,6 +15914,14 @@
 /obj/random/junk,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
+"SU" = (
+/obj/structure/sign/art/lordgovenor{
+	pixel_x = -32
+	},
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "SV" = (
 /obj/machinery/door/blast/shutters,
 /mob/living/simple_animal/hostile/flesh/advanced,
@@ -14694,6 +15957,17 @@
 	dir = 1
 	},
 /turf/simulated/floor/fancyfloor/oldcobble,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"Ta" = (
+/obj/structure/closet/hive/darkwood{
+	anchored = 1
+	},
+/obj/item/storage/box/glass_extras,
+/obj/item/storage/box/glass_extras/sticks,
+/obj/item/storage/box/glass_extras/straws,
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "Tb" = (
 /obj/structure/cult/tome,
@@ -14853,6 +16127,11 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
+"TF" = (
+/turf/simulated/floor/fancyfloor/carpet/grey{
+	dir = 6
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "TH" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	icon_state = "4";
@@ -14986,11 +16265,13 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
 "Uc" = (
-/mob/living/simple_animal/hostile/syndicate/ranged/space/cpt{
-	canmove = 0
+/obj/effect/floor_decal/turf/plating,
+/obj/item/archaeological_find/remains/xeno{
+	color = "grey"
 	},
+/obj/item/storage/toolbox/electrical,
 /turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/wilds/dungeonlower)
+/area/cadiaoutpost/oa/caves/undercity)
 "Ud" = (
 /obj/effect/decal/cleanable/blood/gibs/body,
 /turf/simulated/floor/stone,
@@ -15015,19 +16296,6 @@
 	dir = 1
 	},
 /turf/simulated/floor/surface_floor,
-/area/cadiaoutpost/oa/wilds/dungeonlower)
-"Uh" = (
-/obj/effect/floor_decal/turf/brothel,
-/obj/machinery/light/small{
-	dir = 4;
-	color = "#aa0000";
-	light_color = "#aa0000"
-	},
-/mob/living/simple_animal/hostile/smalldemon/bubblingmass{
-	faction = "Chaos";
-	name = "Guard Dog"
-	},
-/turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "Ui" = (
 /obj/structure/hivedecor/flesh,
@@ -15067,6 +16335,16 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"Up" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/structure/torchwall{
+	dir = 8;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Uq" = (
 /obj/effect/floor_decal/turf/basalt3,
 /obj/effect/floor_decal/turf/basalt1,
@@ -15167,6 +16445,11 @@
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"UF" = (
+/turf/simulated/floor/fancyfloor/carpet/green{
+	dir = 4
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "UG" = (
 /obj/machinery/door/unpowered/jail_door{
 	req_one_access = list();
@@ -15195,12 +16478,10 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "UJ" = (
-/obj/structure/torchwall{
-	pixel_y = 16
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 8
 	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
+/turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "UK" = (
 /obj/effect/floor_decal/turf/surgery2,
@@ -15212,6 +16493,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"UL" = (
+/obj/effect/floor_decal/newcorner/reinforced{
+	dir = 4
+	},
+/obj/structure/banner/blue{
+	pixel_y = 32
+	},
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "UM" = (
 /obj/structure/railing{
 	dir = 4
@@ -15441,6 +16731,15 @@
 /obj/effect/floor_decal/turf/basalt10,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
+"Vq" = (
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/machinery/door/unpowered/inn{
+	req_one_access = list(247);
+	name = "House Sondar Door";
+	maxhealth = 3000
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Vr" = (
 /obj/structure/disposalpipe/junction,
 /obj/structure/cable{
@@ -15477,6 +16776,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
+"Vv" = (
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Vw" = (
 /obj/structure/sewers/pipeflow,
 /turf/simulated/wall/ancient{
@@ -15881,6 +17185,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
+"WI" = (
+/obj/structure/torchwall{
+	pixel_y = 30
+	},
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "WJ" = (
 /obj/machinery/atmospherics/binary/oxyregenerator{
 	dir = 4;
@@ -15911,6 +17221,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
+"WM" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/turf/lfloorscorched1,
+/obj/structure/table/rack/dark,
+/obj/item/stack/material/glass/fifty,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/turf/simulated/floor/seolite,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "WO" = (
 /obj/machinery/door/airlock/gold{
 	color = "grey"
@@ -15990,6 +17309,14 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
+"Xf" = (
+/obj/structure/banner/blue{
+	pixel_y = 32
+	},
+/turf/simulated/floor/fancyfloor/carpet/blue{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Xg" = (
 /obj/structure/nganga,
 /turf/simulated/floor/seolite,
@@ -16058,6 +17385,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
+"Xo" = (
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/item/reagent_containers/food/condiment/flour,
+/obj/item/storage/fancy/egg_box,
+/obj/item/reagent_containers/food/drinks/milk,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Xp" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -16392,6 +17729,20 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
+"Yh" = (
+/obj/structure/banner/blue{
+	pixel_y = 32
+	},
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 1
+	},
+/obj/structure/table/graf/rich_table,
+/obj/item/device/flashlight/candelabra{
+	pixel_y = 12;
+	pixel_x = 1
+	},
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Yj" = (
 /obj/machinery/light/small/red,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -16481,18 +17832,21 @@
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "Yv" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/item/archaeological_find/remains/xeno{
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/tray{
+	pixel_x = 6;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/food/drinks/glass2/shake{
+	pixel_x = 20
+	},
+/obj/item/reagent_containers/food/snacks/soylentgreen{
 	color = "grey"
 	},
-/obj/item/clothing/suit/armor/sniper,
-/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/glory,
-/obj/item/ammo_magazine/handful/brifle_handful/ms,
-/obj/item/clothing/head/helmet/foxhelm,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/caves/undercity)
+/turf/simulated/floor/fancyfloor/carpet/blue/middle,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Yw" = (
 /obj/machinery/light/red{
 	dir = 1
@@ -16813,6 +18167,15 @@
 	},
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
+"Zj" = (
+/obj/machinery/door/blast/id_door{
+	req_one_access = list(302);
+	name = "Daemon Door";
+	id = "secretdoor";
+	maxhealth = 9000
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "Zk" = (
 /obj/structure/sign/ship/blood_signs{
 	icon_state = "goup";
@@ -16871,12 +18234,8 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine/enginewaste)
 "Zt" = (
-/obj/machinery/vending/sovietsoda{
-	color = "grey"
-	},
-/turf/simulated/floor/tiled{
-	color = "gray"
-	},
+/obj/effect/floor_decal/turf/bloodbar/off,
+/turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "Zx" = (
 /obj/structure/sign/chaos{
@@ -16913,6 +18272,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
+"ZB" = (
+/obj/structure/bed/chair/wood/fancy{
+	dir = 8
+	},
+/turf/simulated/floor/fancyfloor/carpet/grey{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/wilds/dungeonlower)
 "ZC" = (
 /turf/simulated/mineral/random,
 /area/cadiaoutpost/new_hive/caves)
@@ -17022,6 +18389,11 @@
 	pixel_y = 10
 	},
 /turf/simulated/floor/grass/dark,
+/area/cadiaoutpost/oa/wilds/dungeonlower)
+"ZV" = (
+/turf/simulated/floor/fancyfloor/carpet/grey{
+	dir = 5
+	},
 /area/cadiaoutpost/oa/wilds/dungeonlower)
 "ZX" = (
 /mob/living/simple_animal/hostile/smalldemon/chaos,
@@ -35332,7 +36704,7 @@ fC
 Hw
 Hw
 uE
-IO
+aV
 fC
 lf
 eS
@@ -38742,7 +40114,7 @@ UP
 vQ
 vQ
 vQ
-Uh
+UP
 iT
 rV
 xD
@@ -41396,7 +42768,7 @@ xE
 MU
 kS
 MU
-GG
+Uc
 MU
 yC
 Ih
@@ -46553,7 +47925,7 @@ wS
 ES
 wS
 Rh
-Rh
+bt
 xD
 Xt
 Xt
@@ -46807,7 +48179,7 @@ Rh
 Rh
 wS
 Bt
-HB
+Xt
 Xt
 Xt
 Xt
@@ -46869,8 +48241,8 @@ Wi
 Wi
 ZJ
 Wi
+Md
 Fo
-ED
 Fo
 Fo
 Wi
@@ -48125,7 +49497,7 @@ qV
 FJ
 FJ
 HD
-FJ
+Cu
 FJ
 FJ
 FJ
@@ -48215,9 +49587,9 @@ zj
 zj
 zj
 zj
-Ih
-MU
-MU
+kn
+kn
+kn
 MU
 KK
 MU
@@ -48467,8 +49839,8 @@ zj
 zj
 zj
 zj
-MU
-MU
+kn
+kn
 MU
 MU
 Ih
@@ -48718,9 +50090,9 @@ dd
 dd
 dd
 zj
-MU
-MU
-MU
+kn
+kn
+kn
 MU
 MU
 Ih
@@ -48969,9 +50341,9 @@ dd
 Ih
 Ih
 Ih
-Ih
-MU
-MU
+kn
+kn
+kn
 MU
 MU
 MU
@@ -49878,7 +51250,7 @@ gQ
 nA
 uB
 Sm
-Uc
+Rh
 Rh
 Sm
 qz
@@ -49935,7 +51307,7 @@ Yd
 Ft
 eS
 ho
-Sk
+ho
 ho
 ho
 kp
@@ -49974,7 +51346,7 @@ Ih
 Ih
 Ih
 Ih
-Ih
+kn
 Rl
 GG
 MU
@@ -50092,7 +51464,7 @@ wx
 Xt
 Xt
 xD
-gQ
+xD
 gQ
 gQ
 gQ
@@ -50226,8 +51598,8 @@ bi
 MU
 MU
 MU
-Ih
-MU
+kn
+kn
 VA
 MU
 MU
@@ -50344,7 +51716,7 @@ Xt
 Xt
 Xt
 sx
-gQ
+xD
 gQ
 gQ
 gQ
@@ -50479,8 +51851,8 @@ MU
 MU
 MU
 eO
-MU
-MU
+kn
+kn
 MU
 MU
 MU
@@ -50596,7 +51968,7 @@ Xt
 Xt
 Xt
 FG
-gQ
+xD
 gQ
 gQ
 gQ
@@ -50732,8 +52104,8 @@ MU
 xR
 MU
 MU
-MU
-MU
+kn
+kn
 MU
 MU
 MU
@@ -50843,12 +52215,12 @@ gQ
 gQ
 gQ
 gQ
-gQ
+xD
 Xt
 Xt
 Xt
 Xt
-gQ
+xD
 gQ
 gQ
 gQ
@@ -50985,7 +52357,7 @@ MU
 eO
 MU
 TP
-MU
+kn
 MU
 Ih
 Ih
@@ -51094,13 +52466,13 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
+xD
+xD
 Xt
 Xt
 Xt
 FG
-gQ
+xD
 gQ
 gQ
 gQ
@@ -51236,8 +52608,8 @@ MU
 wq
 MU
 MU
-MU
-MU
+kn
+kn
 MU
 Ih
 Ih
@@ -51346,13 +52718,13 @@ gQ
 gQ
 gQ
 gQ
-gQ
+xD
 Xt
 Xt
 Xt
 Xt
 Xt
-gQ
+xD
 gQ
 gQ
 gQ
@@ -51488,8 +52860,8 @@ MU
 MU
 MU
 Wl
-MU
-MU
+kn
+kn
 Ua
 MU
 MU
@@ -51597,14 +52969,14 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
+xD
+xD
 Xt
 Xt
 Xt
-gQ
-gQ
-gQ
+xD
+xD
+xD
 gQ
 gQ
 gQ
@@ -51740,8 +53112,8 @@ MU
 MU
 Ih
 Ih
-MU
-MU
+kn
+kn
 MU
 MU
 MU
@@ -51848,13 +53220,13 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
+xD
+xD
 Xt
 Xt
 Xt
 Xt
-gQ
+xD
 gQ
 gQ
 gQ
@@ -51992,8 +53364,8 @@ Ih
 Ih
 Ih
 Ih
-MU
-MU
+Ih
+Ih
 MU
 MU
 MU
@@ -52099,14 +53471,14 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
+xD
+xD
 Xt
 Xt
 Xt
 Xt
-gQ
-gQ
+xD
+xD
 gQ
 gQ
 gQ
@@ -52349,16 +53721,16 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
-gQ
+xD
+xD
+xD
 Xt
 Xt
 Xt
 Xt
 Xt
-gQ
-gQ
+xD
+xD
 gQ
 gQ
 gQ
@@ -52601,7 +53973,7 @@ gQ
 gQ
 gQ
 gQ
-gQ
+xD
 Xt
 Xt
 Xt
@@ -52853,7 +54225,7 @@ gQ
 gQ
 gQ
 gQ
-gQ
+xD
 Xt
 Xt
 Xt
@@ -53105,7 +54477,7 @@ gQ
 gQ
 gQ
 gQ
-gQ
+xD
 Xt
 Xt
 Xt
@@ -53357,7 +54729,7 @@ gQ
 gQ
 gQ
 gQ
-gQ
+xD
 Xt
 Xt
 Xt
@@ -53608,8 +54980,8 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
+xD
+xD
 Xt
 Xt
 Xt
@@ -53860,8 +55232,8 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
+xD
+xD
 Xt
 Xt
 Xt
@@ -53936,7 +55308,7 @@ gQ
 gQ
 zu
 vA
-gQ
+QV
 Sc
 XN
 fL
@@ -54113,17 +55485,17 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
-gQ
+xD
+xD
+xD
 Xt
 Xt
 Xt
 Xt
 Xt
 Xt
-gQ
-gQ
+xD
+xD
 gQ
 gQ
 gQ
@@ -54187,14 +55559,14 @@ gQ
 gQ
 gQ
 gQ
-vA
-vA
-vA
-vA
-vA
-vA
-vA
-vA
+QV
+QV
+QV
+QV
+QV
+QV
+QV
+QV
 gQ
 KE
 KE
@@ -54258,7 +55630,7 @@ zx
 zx
 Ih
 Ih
-Yv
+fi
 fi
 fi
 Jw
@@ -54366,6 +55738,25 @@ gQ
 gQ
 gQ
 gQ
+xD
+xD
+xD
+Xt
+Xt
+Xt
+Xt
+Xt
+Xt
+xD
+xD
+xD
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 gQ
@@ -54373,25 +55764,6 @@ Xt
 Xt
 Xt
 Xt
-Xt
-Xt
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-Xt
-Xt
-Xt
-Xt
 gQ
 gQ
 gQ
@@ -54442,10 +55814,10 @@ gQ
 gQ
 gQ
 gQ
-QV
-pV
-pV
-iZ
+gQ
+gQ
+gQ
+gQ
 QV
 Pt
 KE
@@ -54620,6 +55992,21 @@ gQ
 gQ
 gQ
 gQ
+xD
+xD
+xD
+xD
+Xt
+Xt
+Xt
+Xt
+Xt
+xD
+xD
+xD
+gQ
+gQ
+gQ
 gQ
 gQ
 gQ
@@ -54627,21 +56014,6 @@ gQ
 Xt
 Xt
 Xt
-Xt
-Xt
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-Xt
-Xt
-Xt
 gQ
 gQ
 gQ
@@ -54694,10 +56066,10 @@ gQ
 gQ
 gQ
 gQ
-QV
-pV
-pV
-vW
+gQ
+gQ
+gQ
+gQ
 QV
 QV
 QV
@@ -54875,23 +56247,23 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
-gQ
+xD
+xD
+xD
 Xt
 Xt
 Xt
 Xt
 Xt
+xD
+xD
 gQ
 gQ
 gQ
-gQ
-gQ
-gQ
+xD
+xD
 Xt
 Xt
-Xt
 gQ
 gQ
 gQ
@@ -54946,10 +56318,10 @@ gQ
 gQ
 gQ
 gQ
-QV
-pV
-pV
-pV
+gQ
+gQ
+gQ
+gQ
 QV
 QV
 QV
@@ -55129,20 +56501,21 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
+xD
+xD
 Xt
 Xt
 Xt
 Xt
 Xt
+xD
+xD
+xD
 gQ
-gQ
-gQ
-gQ
-gQ
+xD
+xD
 Xt
-Xt
+xD
 gQ
 gQ
 gQ
@@ -55198,15 +56571,14 @@ gQ
 gQ
 gQ
 gQ
-QV
-pV
-pV
-pV
+gQ
+gQ
+gQ
 QV
 Al
 ak
 QV
-pV
+rV
 zw
 QV
 QV
@@ -55382,19 +56754,23 @@ gQ
 gQ
 gQ
 gQ
+xD
+xD
+Xt
+Xt
+Xt
+Xt
+Xt
+Xt
+xD
+xD
+xD
+Xt
+Xt
+xD
 gQ
 gQ
-Xt
-Xt
-Xt
-Xt
-Xt
-Xt
 gQ
-gQ
-gQ
-Xt
-Xt
 gQ
 gQ
 gQ
@@ -55451,15 +56827,11 @@ gQ
 gQ
 gQ
 QV
-pV
-pV
-pV
-QV
-VG
-VG
-OO
-Sm
-pV
+rV
+rV
+ob
+rV
+rV
 QV
 QV
 NV
@@ -55635,8 +57007,8 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
+xD
+xD
 Xt
 Xt
 Xt
@@ -55646,9 +57018,9 @@ Xt
 Xt
 Xt
 Xt
-gQ
-gQ
-gQ
+xD
+xD
+xD
 gQ
 KF
 vK
@@ -55702,16 +57074,16 @@ gQ
 gQ
 gQ
 gQ
-QV
-pV
-pV
-pV
+gQ
+gQ
+gQ
+gQ
 QV
 va
-VG
+rV
 QV
-Sm
-jW
+rV
+rV
 QV
 QV
 NV
@@ -55888,8 +57260,8 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
+xD
+xD
 Xt
 Xt
 Xt
@@ -55897,9 +57269,9 @@ Xt
 Xt
 Xt
 Xt
-gQ
-gQ
-gQ
+xD
+xD
+xD
 vK
 vK
 eL
@@ -55929,40 +57301,40 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-QV
-pV
-pV
-QV
-QV
-QV
-QV
-QV
-EJ
+ON
+ON
+ON
+aa
+ON
+ON
+ON
+ON
+nA
+nA
+nA
+nA
+nA
+nA
+nA
+nA
+nA
+nA
+nA
+nA
+nA
+nA
+nA
+nA
+nA
+nA
+nA
+nA
+ON
+ON
+ON
+ON
+ON
+rV
 Az
 QV
 QV
@@ -56141,7 +57513,7 @@ gQ
 gQ
 gQ
 gQ
-gQ
+xD
 Xt
 Xt
 Xt
@@ -56181,41 +57553,41 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-QV
-pV
-pV
-QV
-tB
-WZ
-jW
-pR
-jW
-Sm
+ON
+oz
+ad
+ad
+ec
+CB
+MF
+xB
+ON
+nA
+nA
+PJ
+mq
+iG
+nA
+FS
+EJ
+rV
+rV
+EJ
+jd
+nA
+cs
+sv
+sv
+vF
+EJ
+Gj
+ON
+ON
+rV
+rV
+Vq
+rV
+rV
 QV
 gQ
 QV
@@ -56393,8 +57765,8 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
+xD
+xD
 Xt
 Xt
 Xt
@@ -56433,42 +57805,42 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-QV
+ON
+yp
+ec
+ec
+ec
+ec
+ec
+ec
+ON
+nA
+nA
+On
+xZ
+xZ
+nA
+UL
+xo
+ll
+Kx
+xo
+ci
+nA
+lY
+RF
+vv
+PM
 UJ
 MH
-QV
-vR
-Sm
-zM
-Nq
-BQ
-BQ
-QV
+pu
+rV
+rV
+rV
+tY
+rV
+rV
+ON
 gQ
 QV
 Xk
@@ -56642,11 +58014,11 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
-gQ
-gQ
-gQ
+xD
+xD
+xD
+xD
+xD
 Xt
 Xt
 Xt
@@ -56681,46 +58053,46 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-QV
-pV
-pV
-QV
-nR
-oQ
-nR
-QV
-pV
-Sm
-QV
+ON
+ON
+ON
+ON
+ON
+DH
+ec
+nd
+kY
+Je
+zO
+xr
+ON
+xZ
+xZ
+xZ
+jz
+Qa
+nA
+se
+lP
+yP
+Nt
+se
+lP
+nA
+SP
+qM
+at
+gs
+jd
+RH
+pu
+rV
+rV
+rV
+ON
+rV
+rV
+ON
 gQ
 QV
 NV
@@ -56893,8 +58265,8 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
+xD
+xD
 Xt
 Xt
 Xt
@@ -56902,12 +58274,12 @@ Xt
 Xt
 Xt
 Xt
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
+xD
+xD
+xD
+xD
+xD
+xD
 kg
 kg
 bx
@@ -56933,46 +58305,46 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-QV
-pV
-pV
-QV
-pV
-Dc
-pV
-TS
-pV
-pV
-QV
+ON
+bq
+ff
+lJ
+aa
+Kt
+ec
+ec
+ec
+ec
+ec
+ec
+ON
+xZ
+xZ
+xZ
+Cy
+iz
+nA
+FE
+se
+yP
+Nt
+se
+Kf
+nA
+eT
+UF
+NW
+gs
+jd
+uu
+ON
+rV
+nj
+rV
+oX
+rV
+rV
+ON
 gQ
 QV
 fN
@@ -57144,8 +58516,8 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
+xD
+xD
 Xt
 Hu
 Xt
@@ -57153,8 +58525,8 @@ Xt
 Xt
 ZQ
 Xt
-gQ
-gQ
+xD
+xD
 gQ
 gQ
 gQ
@@ -57185,46 +58557,46 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
+ON
+Sn
+jX
+zv
+ON
+aq
+ec
+Lw
+WM
+xa
+IZ
+sO
+ON
+xZ
+xZ
+xZ
+iZ
+dr
+nA
+pe
+AA
+xO
+vP
+AA
+hx
+nA
+sv
+sv
+sv
+gs
+jd
+RH
+ON
+ON
+ON
+ON
+ON
 QV
-pV
-pV
-QV
-QV
-QV
-QV
-QV
-QV
-TS
-QV
+we
+ON
 gQ
 QV
 NV
@@ -57396,7 +58768,7 @@ gQ
 gQ
 gQ
 gQ
-gQ
+xD
 Xt
 Xt
 Xt
@@ -57404,8 +58776,8 @@ Xt
 ZQ
 Xt
 Xt
-gQ
-gQ
+xD
+xD
 gQ
 gQ
 gQ
@@ -57437,46 +58809,46 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-QV
-pV
-pV
-pV
-pV
-pV
-BQ
-BQ
-jW
+ON
+WI
+jd
+jd
+ec
+ec
+ec
+ec
+ec
+ec
+ec
+ec
+ON
+xZ
+xZ
+xZ
+xZ
+qg
+nA
+Ak
+rS
+rV
+rV
+rS
+jd
+nA
+nA
+nA
+nA
+gs
+jd
+vb
+ON
+rV
+rV
+rV
+rV
+rV
 wJ
-QV
+ON
 QV
 QV
 NV
@@ -57648,7 +59020,7 @@ gQ
 gQ
 gQ
 gQ
-gQ
+xD
 ZQ
 Xt
 ZQ
@@ -57656,7 +59028,7 @@ ZT
 Xt
 Hu
 Xt
-gQ
+xD
 gQ
 gQ
 gQ
@@ -57689,46 +59061,46 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-QV
-iz
-pV
-pV
+ON
+gG
+Jm
+Eg
+ec
+ec
+hB
+MR
+ec
+Ke
+iI
+iI
+ON
+NP
+by
+xZ
+jz
+Qa
+nA
+nA
+nA
+qG
+qG
+nA
+nA
+nA
+nA
+nA
+nA
+gs
+jd
+bM
+ON
 wC
-pV
+rV
 nj
 zY
-pV
-pV
-QV
+rV
+rV
+ON
 QV
 QV
 NV
@@ -57900,7 +59272,7 @@ gQ
 gQ
 gQ
 gQ
-gQ
+xD
 Xt
 Xt
 Xt
@@ -57908,7 +59280,7 @@ Xt
 Xt
 Xt
 Xt
-gQ
+xD
 gQ
 gQ
 gQ
@@ -57941,46 +59313,46 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
+ON
+ON
+ON
+ON
+ec
 QV
+tk
 QV
+ON
+ON
+aa
+ON
+ON
+vJ
+wf
+xZ
+Cy
+iz
+nA
+cY
+EJ
+jd
+jd
+jd
+Pd
+EJ
+jd
+lS
+nA
+Yh
+jd
 uu
-QV
-QV
-QV
-QV
-QV
-pV
-pV
-QV
+ON
+rV
+rV
+ON
+ON
+rV
+rV
+ON
 QV
 QV
 NV
@@ -58152,7 +59524,7 @@ gQ
 gQ
 gQ
 gQ
-gQ
+xD
 Xt
 Xt
 ZQ
@@ -58160,7 +59532,7 @@ Xt
 Xt
 ZQ
 Xt
-gQ
+xD
 gQ
 gQ
 gQ
@@ -58194,45 +59566,45 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-QV
-jd
-pV
-pV
-pV
-gs
-QV
+ON
+ON
+Jx
 Zt
-BQ
-pV
+Zt
+Sx
+Rp
+ON
+ON
+jS
+jA
 QV
+mv
+dy
+On
+iZ
+dr
+jG
+jd
+jd
+jd
+jd
+jd
+jd
+jd
+jd
+jd
+nA
+gs
+jd
+RH
+ON
+rV
+rV
+ON
+rV
+rV
+rV
+ON
 QV
 QV
 Xk
@@ -58281,7 +59653,7 @@ Ih
 MU
 MU
 MU
-MU
+kn
 Ih
 dd
 kn
@@ -58404,15 +59776,15 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
+xD
+xD
 Xt
 Xt
 ZQ
 Xt
-gQ
-gQ
-gQ
+xD
+xD
+xD
 gQ
 gQ
 gQ
@@ -58446,45 +59818,45 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
+ON
+wQ
+Zt
+Zt
+Ri
+Zt
+Zt
+ig
+ON
+rV
+rV
 QV
+ZB
+vh
+Lh
+xZ
+Es
+jG
+jd
+jd
+jd
+jd
+jd
+jd
+jd
+jd
+Hx
+nA
+Dm
 jd
 RH
-pV
-Dc
 ON
-QV
-Mu
-BQ
-pV
-QV
+nj
+rV
+ON
+rV
+rV
+rV
+ON
 QV
 QV
 NV
@@ -58532,8 +59904,8 @@ Ih
 Ih
 Cq
 MU
-MU
-MU
+kn
+kn
 Ih
 dd
 kn
@@ -58657,12 +60029,12 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
+xD
+xD
+xD
+xD
+xD
+xD
 gQ
 gQ
 gQ
@@ -58698,44 +60070,44 @@ gQ
 gQ
 gQ
 gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
-gQ
+ON
+sM
+Zt
+Zt
+Zt
+Zt
+Zt
+Zt
+ON
+rV
+rV
 QV
-QV
+ZV
+TF
 nA
 nA
 nA
 nA
-QV
-ec
-pV
-pV
+iT
+iT
+ON
+ON
+ON
+ON
+jd
+jd
+jd
+jG
+gs
+jd
+RH
+ON
+ON
+ON
+ON
+rV
+rV
+rV
 QV
 zu
 QV
@@ -58783,9 +60155,9 @@ Ih
 Ih
 Ih
 Ih
-MU
-MU
-MU
+kn
+kn
+kn
 Ih
 dd
 kn
@@ -58943,33 +60315,6 @@ gQ
 gQ
 gQ
 gQ
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
 gQ
 gQ
 gQ
@@ -58977,11 +60322,38 @@ gQ
 gQ
 gQ
 gQ
-gQ
-zu
+ON
+Zt
+Zt
+Zt
+SO
+Zt
+Zt
+Zt
+Zj
+rV
+rV
 QV
-nA
-nA
+ON
+ON
+hT
+rV
+rV
+rV
+rV
+rV
+ON
+ON
+ON
+ON
+gw
+jd
+jd
+jG
+gs
+jd
+RH
+ON
 nA
 nA
 QV
@@ -59195,33 +60567,6 @@ gQ
 gQ
 gQ
 gQ
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
 gQ
 gQ
 gQ
@@ -59229,17 +60574,44 @@ gQ
 gQ
 gQ
 gQ
-gQ
-zu
-QV
+ON
+Nu
+Zt
+AT
+in
+gx
+Zt
+hN
+ON
+MY
+rV
+rV
+rV
+ON
+py
+rV
+rV
+rV
+rV
+kj
+ON
+ON
+ON
+ON
+jd
+jd
+jd
 nA
-NV
+OV
+mX
+xq
+ON
 nA
 nA
 QV
 mp
-Sm
-Sm
+rV
+rV
 QV
 zu
 QV
@@ -59447,33 +60819,6 @@ gQ
 gQ
 gQ
 gQ
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
 gQ
 gQ
 gQ
@@ -59481,11 +60826,38 @@ gQ
 gQ
 gQ
 gQ
-gQ
-zu
-QV
+ON
+fF
+Zt
+Zt
+Ot
+Sl
+Ri
+zh
+ON
+HR
+rV
+rV
+rV
+rV
+rV
+rV
+rV
+rV
 nA
 nA
+ON
+ON
+ON
+ON
+jG
+jG
+nA
+nA
+nA
+ON
+ON
+ON
 nA
 nA
 QV
@@ -59699,33 +61071,6 @@ gQ
 gQ
 gQ
 gQ
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
 gQ
 gQ
 gQ
@@ -59733,8 +61078,35 @@ gQ
 gQ
 gQ
 gQ
-gQ
-zu
+ON
+Pe
+Zt
+Zt
+Gx
+Zt
+Zt
+ON
+ON
+Ma
+rV
+rV
+rV
+rV
+rV
+rV
+rV
+rV
+nA
+DW
+xZ
+SU
+Ix
+xZ
+xZ
+xZ
+xZ
+qg
+ON
 nA
 nA
 nA
@@ -59951,33 +61323,6 @@ gQ
 gQ
 gQ
 gQ
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
 gQ
 gQ
 gQ
@@ -59985,9 +61330,36 @@ gQ
 gQ
 gQ
 gQ
-gQ
-zu
-zu
+ON
+hF
+AC
+Zt
+Zt
+Zt
+ON
+ON
+ON
+rV
+rV
+rV
+rV
+rV
+rV
+rV
+rV
+rV
+jG
+DF
+Vv
+Vv
+He
+He
+He
+He
+He
+ze
+QV
+QV
 zu
 zu
 zu
@@ -60203,33 +61575,6 @@ gQ
 gQ
 gQ
 gQ
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
 gQ
 gQ
 gQ
@@ -60237,8 +61582,35 @@ gQ
 gQ
 gQ
 gQ
-gQ
+ON
+ON
+ON
+ON
+ON
+ON
+ON
 zu
+ON
+rV
+rV
+rV
+rV
+ON
+Ks
+rV
+rV
+rV
+jG
+oN
+KW
+iC
+yg
+Yv
+yg
+yg
+Yv
+xi
+QV
 QV
 Tc
 Tc
@@ -60455,33 +61827,6 @@ gQ
 gQ
 gQ
 gQ
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
 gQ
 gQ
 gQ
@@ -60490,7 +61835,34 @@ gQ
 gQ
 gQ
 gQ
-zu
+gQ
+gQ
+gQ
+gQ
+gQ
+ON
+ON
+nA
+nA
+nA
+cB
+nA
+nA
+rV
+rV
+rV
+aR
+nA
+vW
+xh
+BQ
+EP
+EP
+EP
+EP
+EP
+xi
+QV
 QV
 Mj
 Mj
@@ -60707,33 +62079,11 @@ gQ
 gQ
 gQ
 gQ
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
+gQ
+gQ
+gQ
+gQ
+gQ
 gQ
 gQ
 gQ
@@ -60743,6 +62093,28 @@ gQ
 gQ
 gQ
 zu
+nA
+PA
+jf
+jf
+Fw
+ky
+nA
+ON
+ON
+ON
+nG
+nA
+Xf
+KW
+AU
+BC
+Mu
+Mu
+BC
+Mu
+xi
+QV
 QV
 Mj
 Mj
@@ -60959,33 +62331,6 @@ gQ
 gQ
 gQ
 gQ
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
 gQ
 gQ
 gQ
@@ -60994,7 +62339,34 @@ gQ
 gQ
 gQ
 gQ
-zu
+gQ
+gQ
+gQ
+gQ
+gQ
+nA
+nA
+vZ
+jf
+jf
+Fw
+fy
+nA
+ON
+ON
+ON
+nA
+nA
+pv
+jg
+jg
+oM
+oM
+oM
+oM
+oM
+eH
+QV
 QV
 Mj
 Mj
@@ -61211,33 +62583,6 @@ gQ
 gQ
 gQ
 gQ
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
 gQ
 gQ
 gQ
@@ -61246,7 +62591,34 @@ gQ
 gQ
 gQ
 gQ
-zu
+gQ
+gQ
+gQ
+gQ
+gQ
+nA
+mz
+jf
+jf
+jf
+jf
+nA
+nA
+ON
+ON
+ON
+nA
+nA
+xZ
+xZ
+xZ
+tT
+xZ
+xZ
+xZ
+xZ
+qg
+ON
 gj
 Yt
 Yt
@@ -61463,33 +62835,6 @@ gQ
 gQ
 gQ
 gQ
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
 gQ
 gQ
 gQ
@@ -61498,7 +62843,34 @@ gQ
 gQ
 gQ
 gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+nA
+bf
+Fw
+Up
+jf
+Xo
+nA
 zu
+ON
+ON
+ON
+nA
+nA
+cB
+nA
+nA
+nA
+xZ
+xZ
+xZ
+xZ
+xZ
+ON
 gj
 Mj
 Mj
@@ -61715,33 +63087,6 @@ gQ
 gQ
 gQ
 gQ
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-hI
 gQ
 gQ
 gQ
@@ -61750,7 +63095,34 @@ gQ
 gQ
 gQ
 gQ
+gQ
+gQ
+gQ
+gQ
+gQ
+nA
+nA
+nA
+nA
+nA
+nA
+nA
 zu
+ON
+ON
+nA
+PA
+jf
+jf
+Fw
+ky
+nA
+LI
+en
+tT
+Ta
+xc
+ON
 gj
 Mj
 Mj

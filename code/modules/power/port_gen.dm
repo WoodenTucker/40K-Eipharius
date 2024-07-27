@@ -92,6 +92,7 @@
 /obj/machinery/power/port_gen/pacman
 	name = "Primitive Power Generator"
 	desc = "A power generator that runs on solid phoron sheets. Rated for 80 kW max safe output."
+	power_gen = 2000
 
 	var/sheet_name = "Phoron Sheets"
 	var/sheet_path = /obj/item/stack/material/phoron
@@ -104,14 +105,14 @@
 		Setting to 5 or higher can only be done temporarily before the generator overheats.
 	*/
 	power_gen = 20000			//Watts output per power_output level
-	var/max_power_output = 5	//The maximum power setting without emagging.
-	var/max_safe_output = 4		// For UI use, maximal output that won't cause overheat.
-	var/time_per_sheet = 96		//fuel efficiency - how long 1 sheet lasts at power level 1
-	var/max_sheets = 100 		//max capacity of the hopper
-	var/max_temperature = 300	//max temperature before overheating increases
+	var/max_power_output = 6	//The maximum power setting without emagging.
+	var/max_safe_output = 5		// For UI use, maximal output that won't cause overheat.
+	var/time_per_sheet = 120		//fuel efficiency - how long 1 sheet lasts at power level 1
+	var/max_sheets = 200 		//max capacity of the hopper
+	var/max_temperature = 3000	//max temperature before overheating increases
 	var/temperature_gain = 50	//how much the temperature increases per power output level, in degrees per level
 
-	var/sheets = 0			//How many sheets of material are loaded in the generator
+	var/sheets = 1			//How many sheets of material are loaded in the generator
 	var/sheet_left = 0		//How much is left of the current sheet
 	var/temperature = 0		//The current temperature
 	var/overheating = 0		//if this gets high enough the generator explodes
@@ -407,14 +408,15 @@
 	icon_state = "portgen1"
 	sheet_path = /obj/item/stack/material/uranium
 	sheet_name = "Uranium Sheets"
-	time_per_sheet = 400 //same power output, but a 50 sheet stack will last 2 hours at max safe power
+	power_gen = 5000
+	time_per_sheet = 200 // 1 hour of fuel at 50 uranium sheets.
 	board_path = /obj/item/circuitboard/pacman/super
 	var/rad_power = 2
 
 /obj/machinery/power/port_gen/pacman/super/UseFuel()
 	//produces a tiny amount of radiation when in use
-	if (prob(rad_power*power_output))
-		radiation_repository.radiate(src, 2*rad_power)
+	if(prob(4))
+		radiation_repository.radiate(src, 0.5*rad_power)
 	..()
 
 /obj/machinery/power/port_gen/pacman/super/update_icon()
@@ -443,14 +445,14 @@
 /obj/machinery/power/port_gen/pacman/super/potato
 	name = "nuclear reactor"
 	desc = "PTTO-3, an industrial all-in-one nuclear power plant by Neo-Chernobyl GmbH. It uses uranium and vodka as a fuel source. Rated for 150 kW max safe output."
-	power_gen = 30000			//Watts output per power_output level
+	power_gen = 4000			//Watts output per power_output level
 	icon_state = "potato"
-	max_safe_output = 4
-	max_power_output = 8	//The maximum power setting without emagging.
+	max_safe_output = 5
+	max_power_output = 10	//The maximum power setting without emagging.
 	temperature_gain = 80	//how much the temperature increases per power output level, in degrees per level
-	max_temperature = 450
-	time_per_sheet = 300
-	rad_power = 6
+	max_temperature = 10000
+	time_per_sheet = 400 // 1-2 hours of fuel at 50 uranium sheets.
+	rad_power = 2
 	atom_flags = ATOM_FLAG_OPEN_CONTAINER
 	board_path = /obj/item/circuitboard/pacman/super/potato
 	anchored = 1
@@ -466,7 +468,7 @@
 /obj/machinery/power/port_gen/pacman/super/potato/UseFuel()
 	if(reagents.has_reagent("vodka"))
 		rad_power = 2
-		temperature_gain = 60
+		temperature_gain = 1000
 		reagents.remove_any(1)
 		if(prob(2))
 			audible_message("<span class='notice'>[src] churns happily</span>")
@@ -474,13 +476,13 @@
 		rad_power = initial(rad_power)
 		temperature_gain = initial(temperature_gain)
 	..()
-
+/*
 /obj/machinery/power/port_gen/pacman/super/potato/update_icon()
 	if(..())
 		return 1
 	if(power_output > max_safe_output)
 		icon_state = "potatodanger"
-
+*/
 /obj/machinery/power/port_gen/pacman/super/potato/attackby(var/obj/item/O, var/mob/user)
 	if(istype(O, /obj/item/reagent_containers/))
 		var/obj/item/reagent_containers/R = O
@@ -494,6 +496,28 @@
 		return
 	..()
 
+/obj/machinery/power/port_gen/pacman/super/potato/console1
+	name = "Reactor Console K19"
+	desc = "A complex cogitator machine that interfaces with the machine spirit of a DAOT super reactor."
+	icon_state = "charon"
+	dir = 4
+
+/obj/machinery/power/port_gen/pacman/super/potato/console2
+	name = "Reactor Console K19"
+	desc = "A complex cogitator machine that interfaces with the machine spirit of a DAOT super reactor."
+	icon_state = "charon"
+	dir = 2
+
+/obj/machinery/power/port_gen/pacman/super/potato/console3
+	name = "Reactor Console K19"
+	desc = "A complex cogitator machine that interfaces with the machine spirit of a DAOT super reactor."
+	icon_state = "tncA"
+
+/obj/machinery/power/port_gen/pacman/super/potato/console4
+	name = "Reactor Console K19"
+	desc = "A complex cogitator machine that interfaces with the machine spirit of a DAOT super reactor."
+	icon_state = "tncB"
+
 /obj/machinery/power/port_gen/pacman/mrs
 	name = "M.R.S.P.A.C.M.A.N.-type Portable Generator"
 	desc = "An advanced power generator that runs on tritium. Rated for 200 kW maximum safe output!"
@@ -503,7 +527,7 @@
 
 	//I don't think tritium has any other use, so we might as well make this rewarding for players
 	//max safe power output (power level = 8) is 200 kW and lasts for 1 hour - 3 or 4 of these could power the station
-	power_gen = 25000 //watts
+	power_gen = 11000 //watts
 	max_power_output = 10
 	max_safe_output = 8
 	time_per_sheet = 576

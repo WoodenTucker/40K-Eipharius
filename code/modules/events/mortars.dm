@@ -1,10 +1,10 @@
 /datum/event/mortar
 	announceWhen = 0
-	startWhen = 30
-	endWhen = 45 //Servers slows right down when this starts.
+	startWhen = 60
+	endWhen = 65 //Servers slows right down when this starts.
 
 /datum/event/mortar/setup()
-	endWhen = 45
+	endWhen = 65
 
 /datum/event/mortar/announce()
 	command_announcement.Announce("PDF Outposts are reporting incoming indirect fire from Heretical forces. All citizens should take cover within a secure building.")
