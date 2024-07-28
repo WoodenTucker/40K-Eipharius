@@ -13,7 +13,7 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 	name = "Hive City"
 	icon_state = "village"
 	music = 'sound/newmusic/General_Ambient2.ogg'
-	requires_power = TRUE
+	requires_power = FALSE
 	dynamic_lighting = 1
 
 /area/cadiaoutpost/new_hive/caves
@@ -21,7 +21,7 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 	icon_state = "cave"
 	music = 'sound/newmusic/General_Ambient2.ogg'
 	var/instability = 0
-	requires_power = TRUE
+	requires_power = FALSE
 
 
 
@@ -998,7 +998,7 @@ Area basic template
 //////////////Medical////////////////
 /////////////////////////////////////
 /area/cadiaoutpost/oa/medicae
-	name = "Medicae Autopower"
+	name = "Medicae Upper"
 	icon_state = "medbay"
 	music = 'sound/newmusic/Outpost1.ogg'
 	dynamic_lighting = 1
@@ -1415,44 +1415,44 @@ Area basic template
 	name = "Chapel"
 	icon_state = "chapel"
 	music = 'sound/newmusic/Chapel1.ogg'
-	requires_power = TRUE
+	requires_power = FALSE
 
 	var/consecrated = FALSE
 
 /area/cadiaoutpost/oa/service/chapel/chapeloffice
 	name = "Chapel Office"
 	icon_state = "chapeloffice"
-	requires_power = TRUE
+	requires_power = FALSE
 
 /area/cadiaoutpost/oa/service/chapel/chapeldorm
 	name = " Chapel Dorms"
 	icon_state = "chapeldorm"
-	requires_power = TRUE
+	requires_power = FALSE
 
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery
 	name = "Chapel Surgery"
 	icon_state = "chapelsurgery"
-	requires_power = TRUE
+	requires_power = FALSE
 
 /area/cadiaoutpost/oa/service/chapel/chapelchemistry
 	name = "Chapel Chemistry"
 	icon_state = "chapelchem"
-	requires_power = TRUE
+	requires_power = FALSE
 
 /area/cadiaoutpost/oa/service/chapel/recovery
 	name = "Chapel Recovery"
 	icon_state = "chapelrecovery"
-	requires_power = TRUE
+	requires_power = FALSE
 
 /area/cadiaoutpost/oa/service/chapel/armory
 	name = "Chapel Armory"
 	icon_state = "chapelarmory"
-	requires_power = TRUE
+	requires_power = FALSE
 
 /area/cadiaoutpost/oa/service/chapel/vault
 	name = "Chapel Vault"
 	icon_state = "chapelvault"
-	requires_power = TRUE
+	requires_power = FALSE
 
 
 

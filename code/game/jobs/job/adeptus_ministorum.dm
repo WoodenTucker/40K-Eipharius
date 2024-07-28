@@ -10,7 +10,7 @@
 	supervisors = "The Deacon and Sisters."
 	selection_color = "#FCFBFA"
 	latejoin_at_spawnpoints = TRUE
-	access = list(213 , 211, access_advchapel, access_medical, access_village)
+	access = list(213, 211, access_advchapel, access_medical, access_village)
 //	alt_titles = list("Hydroponicist")
 	outfit_type = /decl/hierarchy/outfit/job/service/gardener
 	announced = FALSE
@@ -28,7 +28,7 @@
 		H.verbs += list(
 			/mob/living/carbon/human/proc/hsclass)
 		H.fully_replace_character_name("[current_name]")
-		H.get_idcard()?.access = list(213 , 211, access_advchapel, access_medical, access_village)
+		H.get_idcard()?.access = list(213, 211, access_advchapel, access_medical, access_village)
 		H.voice_in_head(pick(GLOB.lone_thoughts))
 		H.add_stats(rand(15,17), rand(14,16), rand(15,16), rand(8,14)) //well fed and robust
 		H.add_skills(rand(7,10),rand(6,10),rand(3,5),rand(2,4),3) //farmers are handy

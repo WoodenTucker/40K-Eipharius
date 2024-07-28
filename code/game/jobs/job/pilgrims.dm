@@ -858,7 +858,7 @@ Pilgrim Fate System
 	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/storage/backpack/satchel/warfare
 	mask = null
-	l_ear = /obj/item/device/radio/headset/ert2
+	l_ear = /obj/item/device/radio/headset/heads/rt
 	r_pocket = /obj/item/storage/box/coin
 	l_pocket = /obj/item/device/flashlight/lantern
 	belt = /obj/item/gun/projectile/revolver/villiers
@@ -981,7 +981,7 @@ Pilgrim Fate System
 	id_type = /obj/item/card/id/pilgrim/innkeeper
 	r_pocket = /obj/item/storage/box/coin
 	pda_type = /obj/item/device/pda/penitent
-	l_ear = /obj/item/device/radio/headset/ert2
+	l_ear = /obj/item/device/radio/headset/heads/rt
 	r_ear = null
 	belt = /obj/item/device/flashlight/lantern
 	pda_slot = null
