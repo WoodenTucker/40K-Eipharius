@@ -1822,11 +1822,6 @@
 	dir = 8;
 	icon_state = "torchwall0"
 	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "bPU" = (
@@ -1981,20 +1976,6 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/engineering)
-"bWV" = (
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/machinery/power/apc{
-	dir = 4;
-	icon_state = "apc0";
-	pixel_x = 32;
-	pixel_y = 0
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/caves)
 "bXi" = (
 /turf/simulated/floor/fancyfloor/marble,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -2925,16 +2906,6 @@
 	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/caves)
-"cRw" = (
-/obj/machinery/power/smes/buildable/outpost_substation,
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
 /area/cadiaoutpost/new_hive/caves)
 "cRK" = (
 /obj/effect/floor_decal/newcorner/plating/quarter{
@@ -4282,9 +4253,6 @@
 /area/cadiaoutpost/oa/research)
 "efd" = (
 /obj/effect/floor_decal/turf/metal/six,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "efn" = (
@@ -7420,9 +7388,6 @@
 /area/cadiaoutpost/oa/magistratumpost)
 "haX" = (
 /obj/effect/floor_decal/turf/metal/six,
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "haY" = (
@@ -11851,16 +11816,6 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
-"ljr" = (
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/caves)
 "ljC" = (
 /obj/structure/torchwall{
 	dir = 8;
@@ -11928,15 +11883,6 @@
 	},
 /obj/item/grenade/frag/high_yield/homemade,
 /obj/item/grenade/frag/high_yield/homemade,
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/obj/machinery/power/apc{
-	dir = 1;
-	pixel_y = 32;
-	cell_type = /obj/item/cell/super;
-	name = "super APC"
-	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "lpG" = (
@@ -12710,9 +12656,6 @@
 /area/cadiaoutpost/new_hive/caves)
 "mgn" = (
 /obj/effect/floor_decal/turf/metal/five,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "mgt" = (
@@ -17790,17 +17733,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"qZA" = (
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/caves)
 "qZN" = (
 /obj/structure/bookcase,
 /obj/item/book{
@@ -19586,14 +19518,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research)
-"sNY" = (
-/obj/machinery/power/breakerbox/activated,
-/obj/structure/cable{
-	icon_state = "0-2";
-	d2 = 2
-	},
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "sPX" = (
 /obj/item/deck/cards,
 /obj/structure/table/graf/wood_office_table{
@@ -20684,7 +20608,7 @@
 /area/cadiaoutpost/oa/magistratumpost)
 "tPo" = (
 /obj/machinery/door/unpowered/inn/berryfarm{
-	req_one_access = list(333,213);
+	req_one_access = list();
 	name = "the farmhouse"
 	},
 /turf/simulated/floor/darkwood/rotten,
@@ -21404,18 +21328,10 @@
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/new_hive/caves)
 "uDI" = (
-/obj/machinery/power/terminal{
-	dir = 4;
-	icon_state = "term"
-	},
 /obj/structure/cable{
-	icon_state = "0-2";
-	pixel_y = 1;
-	d2 = 2
-	},
-/obj/structure/cable,
-/obj/structure/cable{
-	icon_state = "0-8"
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -21919,24 +21835,6 @@
 "vdr" = (
 /turf/simulated/floor/fancyfloor/oldcobble,
 /area/cadiaoutpost/new_hive/caves)
-"vdO" = (
-/obj/structure/cable{
-	icon_state = "16-0"
-	},
-/obj/structure/ladder/up,
-/obj/effect/floor_decal/newcorner/stone,
-/obj/structure/cable,
-/obj/structure/cable{
-	icon_state = "0-2";
-	d2 = 2
-	},
-/obj/effect/floor_decal/turf/metal/six,
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "vdP" = (
 /obj/structure/bed/barrack,
 /obj/structure/bed/barrack1,
@@ -23210,13 +23108,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/new_hive/caves)
-"wqQ" = (
-/obj/machinery/power/smes/buildable/outpost_substation,
-/obj/structure/cable,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/caves)
 "wrm" = (
 /obj/effect/decal/cleanable/cobweb{
 	dir = 8
@@ -23700,16 +23591,6 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/centralhall)
-"wOF" = (
-/obj/machinery/power/breakerbox/activated,
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/caves)
 "wPd" = (
 /obj/structure/closet/secure_closet/guncabinet{
 	name = "secure Sororitas cabinet";
@@ -23754,20 +23635,6 @@
 /obj/machinery/light/small,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/hallway/centralhall)
-"wTf" = (
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/structure/cable{
-	icon_state = "0-2";
-	pixel_y = 1;
-	d2 = 2
-	},
-/obj/machinery/power/port_gen/pacman/super/potato/console4,
-/turf/simulated/floor/darkfloor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/research)
 "wTm" = (
 /obj/effect/floor_decal/turf/bar2,
 /obj/effect/floor_decal/turf/bar2{
@@ -24694,16 +24561,6 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
-"xBx" = (
-/obj/structure/cable,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/machinery/power/port_gen/pacman/super/potato/console1,
-/turf/simulated/floor/darkfloor{
-	dir = 8
-	},
-/area/cadiaoutpost/oa/research)
 "xBW" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -39100,7 +38957,7 @@ tOB
 slE
 dxB
 dxB
-xes
+tPo
 dxB
 dxB
 dxB
@@ -53023,7 +52880,7 @@ gXe
 ueA
 gXe
 gXe
-vdO
+haX
 haX
 jUB
 dgd
@@ -53782,7 +53639,7 @@ rvv
 rvv
 rvv
 gXe
-sNY
+haX
 bNq
 uju
 iUc
@@ -65614,12 +65471,12 @@ lon
 lon
 sQU
 lJE
-xBx
+iEb
 aOo
 jzs
 jzs
 dwI
-wTf
+iEb
 hQi
 szk
 wnt
@@ -76006,10 +75863,10 @@ qVF
 qVF
 qVF
 pxR
-ljr
+iZm
 uDI
-qZA
-uDI
+xbe
+xbe
 mfU
 nvP
 nvP
@@ -76259,10 +76116,10 @@ oYr
 oYr
 kOh
 pxR
-wOF
-cRw
-bWV
-wqQ
+iZm
+iZm
+iZm
+iZm
 pxR
 pxR
 pxR

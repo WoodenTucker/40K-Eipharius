@@ -29,7 +29,7 @@
 	emergency_shuttle_leaving_dock = "The emergency escape shuttle has departed from %dock_name%."
 	emergency_shuttle_called_message = "An emergency escape shuttle has been sent."
 	emergency_shuttle_recall_message = "The emergency shuttle has been recalled"
-	map_lore = "A Rogue Trader has established this outpost to further the reach of the Imperium of Man. We have been stationed here for the past few months without incident, though the guardsmen have begun to worry following the arrival of the black ship 'Simiel' Inquisitorial Agents. Time will tell what this means, the Agents themselves are cryptic and do not associate with us. Some of my fellow Guardsmen have been disappearing, though when asked about, our Commissar simply refers to them as cowards."
+	map_lore = "Welcome to Messia, an ice world on the fringes of Imperial Space. Gravitic storms rage relentlessly, and cosmic collisions have scarred the land. The rogue star's chaotic dance with Pymbyle Minor adds to the pervasive sense of instability. The city of Messina is a twisted monument to opulence and power, reclaimed from grotesque ruins by the Lord Governor and their wealthy benefactors. Its ancient structures, once forged by war, are now adorned with decadent excess, masking the corruption that festers beneath the surface."
 
 
 

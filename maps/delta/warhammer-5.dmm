@@ -1312,16 +1312,6 @@
 /obj/item/exploration_loot/drugs,
 /turf/simulated/floor/fancyfloor/carpet/middle,
 /area/cadiaoutpost/oa/service/inn)
-"fs" = (
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/effect/floor_decal/turf/splate,
-/obj/structure/railing{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/hive_city)
 "ft" = (
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 9
@@ -1627,17 +1617,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/brig)
-"gw" = (
-/obj/machinery/power/terminal{
-	dir = 8;
-	icon_state = "term"
-	},
-/obj/effect/floor_decal/turf/splate,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/hive_city)
 "gy" = (
 /obj/structure/curtain/open/shower/security{
 	name = "expensive curtain";
@@ -1699,13 +1678,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/brig)
-"gH" = (
-/obj/structure/cable{
-	icon_state = "32-4"
-	},
-/obj/structure/ladder,
-/turf/simulated/open,
-/area/cadiaoutpost/new_hive/hive_city)
 "gJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/newcorner/plating,
@@ -3296,22 +3268,6 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/northern)
-"mH" = (
-/obj/machinery/power/terminal{
-	dir = 4;
-	icon_state = "term"
-	},
-/obj/structure/cable{
-	icon_state = "0-2";
-	pixel_y = 1;
-	d2 = 2
-	},
-/obj/structure/cable,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "mK" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 8;
@@ -3551,10 +3507,6 @@
 /obj/item/reagent_containers/glass/bottle/spice,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/brig)
-"nE" = (
-/obj/machinery/power/smes/buildable/outpost_substation,
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "nF" = (
 /obj/effect/floor_decal/newcorner/polar,
 /obj/effect/decal/cleanable/dirt,
@@ -4390,16 +4342,6 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/northern)
-"qV" = (
-/obj/effect/floor_decal/turf/splate,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/hive_city)
 "qX" = (
 /obj/structure/lattice,
 /obj/structure/ladder,
@@ -4810,12 +4752,15 @@
 /area/cadiaoutpost/oa/hallway/northern)
 "sJ" = (
 /obj/effect/floor_decal/turf/brick/two,
-/obj/item/card/id/key/grand/noble,
 /obj/structure/table/woodentable{
 	color = "#36261B"
 	},
 /obj/item/clothing/accessory/holster/armpit,
 /obj/random/drinkbottle,
+/obj/item/device/radio/headset/heads/rt,
+/obj/item/device/radio/headset/heads/rt,
+/obj/item/card/id/key/middle/ganger,
+/obj/item/card/id/key/middle/ganger,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/service/inn)
 "sL" = (
@@ -4900,13 +4845,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
-"tf" = (
-/obj/machinery/door/airlock/highsecurity/imperiumdoor{
-	name = "Power Control Room";
-	req_access = list(333)
-	},
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "tg" = (
 /obj/structure/flora/tree/pine,
 /turf/simulated/floor/snow,
@@ -4934,15 +4872,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hallway/northern)
-"tl" = (
-/obj/machinery/power/port_gen/pacman/super,
-/obj/structure/cable{
-	icon_state = "0-2";
-	pixel_y = 1;
-	d2 = 2
-	},
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "tm" = (
 /obj/structure/bed/chair/stool2{
 	icon_state = "barstool";
@@ -6984,22 +6913,6 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
-"BF" = (
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/obj/machinery/power/apc{
-	dir = 4;
-	icon_state = "apc0";
-	pixel_x = 32;
-	pixel_y = 0;
-	cell_type = /obj/item/cell/super;
-	name = "super APC"
-	},
-/obj/item/stack/material/uranium/ten,
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "BG" = (
 /obj/effect/floor_decal/newcorner/plating,
 /turf/simulated/floor/tiled/dark{
@@ -7121,16 +7034,6 @@
 	icon_state = "dark1"
 	},
 /area/cadiaoutpost/oa/service/inn)
-"Cj" = (
-/obj/effect/floor_decal/turf/splate,
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/hive_city)
 "Ck" = (
 /turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/new_hive/hive_city)
@@ -7163,6 +7066,10 @@
 	name = "Daemonic Tome"
 	},
 /obj/structure/closet/crate,
+/obj/item/card/id/key/grand{
+	access = list(267,268,269,270,271,272,273);
+	name = "Innkeeper Key"
+	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/inn)
 "Co" = (
@@ -7469,12 +7376,6 @@
 	},
 /obj/structure/mirror{
 	pixel_x = -32
-	},
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"Dq" = (
-/obj/structure/cable{
-	icon_state = "1-4"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -7798,12 +7699,14 @@
 /area/cadiaoutpost/oa/security/brig)
 "Ex" = (
 /obj/effect/floor_decal/turf/brick/two,
-/obj/item/card/id/key/grand/noble,
 /obj/structure/table/woodentable{
 	color = "#36261B"
 	},
 /obj/item/clothing/accessory/holster/armpit,
 /obj/item/device/radio/headset/heads/rt,
+/obj/item/device/radio/headset/heads/rt,
+/obj/item/card/id/key/middle/ganger,
+/obj/item/card/id/key/middle/ganger,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/service/inn)
 "Ey" = (
@@ -7956,10 +7859,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
-"Fm" = (
-/obj/item/stack/material/uranium/ten,
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "Fo" = (
 /obj/effect/floor_decal/turf/metal/eight,
 /obj/structure/bed/chair{
@@ -9536,6 +9435,22 @@
 	access = list(267,268,269,270,271,272,273);
 	name = "Innkeeper Key"
 	},
+/obj/item/card/id/key/grand{
+	access = list(267,268,269,270,271,272,273);
+	name = "Innkeeper Key"
+	},
+/obj/item/card/id/key/grand{
+	access = list(267,268,269,270,271,272,273);
+	name = "Innkeeper Key"
+	},
+/obj/item/card/id/key/grand{
+	access = list(267,268,269,270,271,272,273);
+	name = "Innkeeper Key"
+	},
+/obj/item/card/id/key/grand{
+	access = list(267,268,269,270,271,272,273);
+	name = "Innkeeper Key"
+	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/inn)
 "LI" = (
@@ -10416,19 +10331,6 @@
 "OF" = (
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/village/pathfinder)
-"OI" = (
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
-	},
-/obj/item/stack/material/uranium/ten,
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "OJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet,
@@ -10494,13 +10396,6 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/new_hive/hive_city)
-"OT" = (
-/obj/effect/floor_decal/turf/splate,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
 "OV" = (
 /obj/structure/toilet{
@@ -11150,24 +11045,6 @@
 /obj/effect/landmark/start/governor,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
-"Rr" = (
-/obj/machinery/power/terminal{
-	dir = 8;
-	icon_state = "term"
-	},
-/obj/structure/cable{
-	icon_state = "0-2";
-	pixel_y = 1;
-	d2 = 2
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/cable,
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "Rs" = (
 /obj/structure/curtain/open,
 /turf/simulated/floor/factory_floor,
@@ -12258,14 +12135,6 @@
 	},
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/new_hive/hive_city)
-"UT" = (
-/obj/machinery/power/port_gen/pacman/super,
-/obj/structure/cable{
-	icon_state = "0-4";
-	d2 = 4
-	},
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "UU" = (
 /turf/simulated/floor/darksteel_floor{
 	dir = 10
@@ -12325,12 +12194,6 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/shuttle/station2)
-"Vk" = (
-/obj/effect/floor_decal/turf/splate,
-/obj/structure/cable,
-/obj/machinery/power/smes/buildable/outpost_substation,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/hive_city)
 "Vp" = (
 /obj/structure/lattice,
 /turf/simulated/floor/plating/reinforced,
@@ -13337,13 +13200,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/brig)
-"Zi" = (
-/obj/structure/ladder,
-/obj/structure/cable{
-	icon_state = "32-1"
-	},
-/turf/simulated/open,
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "Zj" = (
 /obj/structure/sign/stainedglass1{
 	pixel_x = 32
@@ -13499,20 +13355,6 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/brig)
-"ZM" = (
-/obj/effect/floor_decal/turf/splate,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/obj/machinery/power/apc{
-	dir = 1;
-	pixel_y = 32
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/hive_city)
 "ZN" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/machinery/light/small{
@@ -40429,7 +40271,7 @@ vt
 vt
 Dn
 Dn
-UT
+Dn
 Dn
 Dn
 hq
@@ -40680,9 +40522,9 @@ vt
 vt
 Dn
 Dn
-nE
-OI
-Zi
+Dn
+Dn
+Dn
 Dn
 gO
 gO
@@ -40931,10 +40773,10 @@ vt
 vt
 vt
 Dn
-tl
-Rr
-mH
-Dq
+Dn
+Dn
+Dn
+Dn
 Dn
 Dn
 wg
@@ -41184,9 +41026,9 @@ vt
 vt
 Dn
 Dn
-Fm
-nE
-BF
+Dn
+Dn
+Dn
 Dn
 En
 jg
@@ -41436,7 +41278,7 @@ vt
 vt
 Dn
 Dn
-tf
+Dn
 Dn
 Dn
 Dn
@@ -67869,8 +67711,8 @@ vt
 vt
 IG
 IG
-ZM
-Vk
+IG
+IG
 IG
 IG
 IG
@@ -68120,9 +67962,9 @@ vt
 vt
 vt
 IG
-gH
-OT
-gw
+IG
+IG
+IG
 IG
 IG
 IG
@@ -68372,9 +68214,9 @@ vt
 vt
 vt
 IG
-fs
-Cj
-qV
+IG
+IG
+IG
 IG
 IG
 IG

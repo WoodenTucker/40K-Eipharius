@@ -640,7 +640,6 @@
 	item_state = "contvapour"
 	broken_chance = 1
 	matter = list("glass" = 100)
-
 	brightness_range = 10
 	brightness_power = 4
 	brightness_color = "#F9C763"//"#a0a080"
