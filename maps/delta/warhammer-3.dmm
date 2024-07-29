@@ -8368,9 +8368,6 @@
 	color = "grey"
 	},
 /obj/effect/floor_decal/newcorner/whitegreen/diagonal,
-/obj/structure/reagent_dispensers/virusfood{
-	pixel_x = -32
-	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -9401,13 +9398,9 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "iWY" = (
-/obj/machinery/door/airlock/engineering{
-	color = null;
-	name = "Emergency Storage";
-	maxhealth = 3000
-	},
+/obj/structure/reagent_dispensers/virusfood,
 /turf/simulated/wall/techno,
-/area/cadiaoutpost/oa/research/robotics)
+/area/cadiaoutpost/oa/research/toxins/toxinlab)
 "iXw" = (
 /obj/effect/decal/remains,
 /obj/effect/decal/cleanable/cobweb{
@@ -11765,14 +11758,6 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/research/robotics)
-"liy" = (
-/obj/machinery/door/airlock/glass_command/magos{
-	color = null;
-	maxhealth = 1200;
-	req_one_access = list(10)
-	},
-/turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/research/robotics)
 "liE" = (
 /obj/effect/floor_decal/newcorner/red{
@@ -25114,9 +25099,6 @@
 	},
 /area/cadiaoutpost/oa/research)
 "yhM" = (
-/obj/structure/reagent_dispensers/virusfood{
-	pixel_x = -32
-	},
 /obj/effect/floor_decal/newcorner/whitegreen/solid,
 /obj/structure/cable{
 	d1 = 1;
@@ -73306,7 +73288,7 @@ oin
 tSz
 ebw
 ifj
-liy
+tUs
 tUs
 aoJ
 dPn
@@ -75882,9 +75864,9 @@ fSw
 sIV
 iZm
 eMa
+iWY
 eMa
-eMa
-eMa
+iWY
 sTE
 eMa
 pjP
@@ -79638,7 +79620,7 @@ aMg
 aMg
 mMC
 uzv
-iWY
+tUs
 tUs
 djQ
 cqI
