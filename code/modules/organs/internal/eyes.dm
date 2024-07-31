@@ -229,4 +229,14 @@
 	max_damage = 65
 	var/vision_flags = SEE_TURFS|SEE_MOBS|SEE_OBJS|SEE_SELF
 
-
+/obj/item/organ/internal/eyes/kroot
+	name = "kroot eyeballs"
+	icon_state = "eyes"
+	gender = PLURAL
+	organ_tag = BP_EYES
+	parent_organ = BP_HEAD
+	surface_accessible = TRUE
+	relative_size = 10
+	max_damage = 55
+	sales_price = 25
+	vision_flags = SEE_TURFS|SEE_MOBS|SEE_SELF//Kroot infrared vision funky stuff. Don't get to see objects because it's not an organic that makes its own heat yada yada
