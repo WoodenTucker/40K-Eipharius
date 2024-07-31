@@ -239,4 +239,4 @@
 	relative_size = 10
 	max_damage = 55
 	sales_price = 25
-	vision_flags = SEE_TURFS|SEE_MOBS|SEE_SELF//Kroot infrared vision funky stuff. Don't get to see objects because it's not an organic that makes its own heat yada yada
+	var/vision_flags = SEE_TURFS|SEE_MOBS|SEE_SELF//Kroot infrared vision funky stuff. Don't get to see objects because it's not an organic that makes its own heat yada yada
