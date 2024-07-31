@@ -20,7 +20,6 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 	name = "Hive Depths" // Regular caves - little to no danger. Soft ambience.
 	icon_state = "cave"
 	music = 'sound/newmusic/General_Ambient2.ogg'
-	var/instability = 0
 	requires_power = FALSE
 
 
@@ -1331,7 +1330,6 @@ Area basic template
 	name = "Caves" // Regular caves - little to no danger. Soft ambience.
 	icon_state = "cave"
 	music = 'sound/newmusic/General_Ambient2.ogg'
-	var/instability = 0
 
 /area/cadiaoutpost/oa/caves/dark
 	name = "Evil dungeon" // Powered areas of the city. // used for dungeons. basically non caves
