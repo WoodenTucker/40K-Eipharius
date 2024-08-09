@@ -25,11 +25,16 @@
 		/datum/unarmed_attack/punch,
 		/datum/unarmed_attack/bite
 		)
+
+	has_organ = list(
+		BP_EYES =     /obj/item/organ/internal/eyes/kroot
+	)
+
 /datum/species/kroot/handle_post_spawn(var/mob/living/carbon/human/H)
 	H.age = rand(min_age,max_age)//Random age for kiddos.
 	if(H.f_style)//kroot don't get beards.
 		H.f_style = "Shaved"
-	to_chat(H, "<big><span class='warning'>Your a mercenary hired by the Tau. Obey whatever instructions they have, if you cannot communicate with any Tau immediately, then prepare a frontal base..</span></big>")
+	to_chat(H, "<big><span class='warning'>You're a mercenary hired by the Tau. Obey whatever instructions they have, if you cannot communicate with any Tau immediately, then prepare a frontal base..</span></big>")
 	H.update_eyes()	//hacky fix, i don't care and i'll never ever care
 	return ..()
 /mob/living/carbon/human
@@ -72,6 +77,7 @@
 	visible_message("[name] stretches their muscles after a long flight, feeling their strength and skill return to them.")
 	src.add_stats(rand(14,16),rand(14,18),rand(12,15),10)
 	src.add_skills(10,10,rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
+	src.set_quirk(new/datum/quirk/no_bathroom())//Kroot dont shit or piss. Their sweat is their excrement
 	src.adjustStaminaLoss(-INFINITY)
 	src.update_eyes() //should fix grey vision
 	src.warfare_language_shit(TAU) //secondary language
