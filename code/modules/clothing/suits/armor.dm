@@ -744,8 +744,8 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/guardsman/bloodpact
 	name = "Sekite Armor"
 	desc = "War torn and suited to savage needs. This is the armor of a Sekite warrior. It has certainly seen blood flown upon it."
-	icon_state = "heretmil"
-	item_state = "heretmil"
+	icon_state = "Sek_Armor"
+	item_state = "Sek_Armor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 7, bullet = 28, laser = 33, energy = 30, bomb = 40, bio = 30, rad = 30)
 	sales_price = 10
@@ -1386,10 +1386,10 @@ obj/item/clothing/suit/armor
   body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 
 /obj/item/clothing/suit/armor/heretcoat
-	name = "Scrap Overcoat"
+	name = "Sekite Overcoat"
 	desc = "Overcoat made with leather and some cheap forged steel parts"
-	icon_state = "heretmil"
-	item_state = "heretmil"
+	icon_state = "Sek_Armor"
+	item_state = "Sek_Armor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun,/obj/item/gun/projectile)
 	armor = list(melee = 9, bullet = 32, laser = 32, energy = 30, bomb = 40, bio = 30, rad = 30)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
