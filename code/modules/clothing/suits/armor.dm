@@ -2130,10 +2130,10 @@ obj/item/clothing/suit/armor
 
 
 /obj/item/clothing/suit/armor/flak1/renegadearmor
-	name = "renegade militia armor"
-	desc = "Makeshift steel armor, while not refined, it will protect you vital organs. It has strange marks carved into it"
-	icon_state = "renegade_militia_armor"
-	item_state = "renegade_militia_armor"
+	name = "Sekite armor"
+	desc = "Makeshift steel armor, while not refined, it will protect you vital organs. It has strange marks carved into it."
+	icon_state = "Sek_Armor"
+	item_state = "Sek_Armor"
 	armor = list(melee = 8, bullet = 34, laser = 34, energy = 34, bomb = 30, bio = 30, rad = 50)
 
 /obj/item/clothing/suit/armor/flak1/renegadearmor/bloodpact
