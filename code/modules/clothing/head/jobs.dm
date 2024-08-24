@@ -253,15 +253,15 @@
 /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact1
 	name = "Chosen Combat Helmet"
 	desc = "Armored helmet of the ruinous powers."
-	icon_state = "vraks2"
-	item_state = "vraks2"
+	icon_state = "Sek_Helmet"
+	item_state = "Sek_Helmet"
 	armor = list(melee = 11, bullet = 29, laser = 29, energy = 35, bomb = 35, bio = 50, rad = 50)
 
 /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2
 	name = "Chosen Combat Helmet"
 	desc = "Armored helmet of a chaos cultist."
-	icon_state = "vraks3"
-	item_state = "vraks3"
+	icon_state = "Sek_Helmet"
+	item_state = "Sek_Helmet"
 	armor = list(melee = 11, bullet = 29, laser = 29, energy = 35, bomb = 35, bio = 50, rad = 50)
 
 
@@ -767,23 +767,23 @@
 	item_state = "hood3"
 
 /obj/item/clothing/head/helmet/culthelm
-	name = "Scrap helmet"
+	name = "Sekite helmet"
 	desc = "Helmet made of some metal scrap in cheap forge"
-	icon_state = "vraks1"
-	icon_state = "vraks1"
+	icon_state = "Sek_Helmet"
+	icon_state = "Sek_Helmet"
 	armor = list(melee = 8, bullet = 29, laser = 29, energy = 35, bomb = 35, bio = 50, rad = 50)
 	flags_inv = HIDEEARS|BLOCKHAIR
 	body_parts_covered = HEAD
 
 /obj/item/clothing/head/helmet/culthelm/alt
-	icon_state = "vraks2"
-	icon_state = "vraks2"
+	icon_state = "Sek_Helmet"
+	icon_state = "Sek_Helmet"
 	flags_inv = HIDEEARS|HIDEEYES|BLOCKHAIR
 	body_parts_covered = HEAD|EYES
 
 /obj/item/clothing/head/helmet/culthelm/alt2
-	icon_state = "vraks3"
-	icon_state = "vraks3"
+	icon_state = "Sek_Helmet"
+	icon_state = "Sek_Helmet"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EYES
 

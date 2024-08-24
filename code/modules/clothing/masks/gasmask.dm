@@ -310,5 +310,11 @@
 	body_parts_covered = FACE|EYES|HEAD
 	unacidable = 1
 	canremove = 0
+
+/obj/item/clothing/mask/gas/security/sekite
+	name = "ominous mask"
+	desc = "The terrifying visage of a warrior of Chaos."
+	icon_state = "Sek_Mask"
+	item_state = "Sek_Mask"
 	species_restricted = list(SPECIES_NECRON)
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 0, bio = 100, rad = 100)
