@@ -293,9 +293,9 @@
 				to_chat(owner, "<span class='danger'>You feel your face burning and a searing heat in your lungs!</span>")
 
 			switch(breath.temperature)
-				if(species.heat_level_1 to species.heat_level_2)
+				if(HEAT_LEVEL_1) // first time fucking around wihh code i hope the code base doesnt get mega ultra super fucked
 					damage = HEAT_GAS_DAMAGE_LEVEL_1
-				if(species.heat_level_2 to species.heat_level_3)
+				if(HEAT_LEVEL_2)
 					damage = HEAT_GAS_DAMAGE_LEVEL_2
 				else
 					damage = HEAT_GAS_DAMAGE_LEVEL_3

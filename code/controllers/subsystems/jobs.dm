@@ -223,15 +223,15 @@ SUBSYSTEM_DEF(jobs)
 					continue
 
 				switch(age)
-					if(job.minimum_character_age to (job.minimum_character_age+10))
+					if(18 to 300)
 						weightedCandidates[V] = 3 // Still a bit young.
-					if((job.minimum_character_age+10) to (job.ideal_character_age-10))
+					if(18 to 300)
 						weightedCandidates[V] = 6 // Better.
-					if((job.ideal_character_age-10) to (job.ideal_character_age+10))
+					if(8 to 300)
 						weightedCandidates[V] = 10 // Great.
-					if((job.ideal_character_age+10) to (job.ideal_character_age+20))
+					if(8 to 300)
 						weightedCandidates[V] = 6 // Still good.
-					if((job.ideal_character_age+20) to INFINITY)
+					if(8 to 300)
 						weightedCandidates[V] = 3 // Geezer.
 					else
 						// If there's ABSOLUTELY NOBODY ELSE
