@@ -4249,6 +4249,7 @@
 /turf/simulated/floor/trench,
 /area/cadiaoutpost/oa/service/inn)
 "dNl" = (
+/obj/structure/stairs/south,
 /turf/simulated/floor/darksteel_floor,
 /area/cadiaoutpost/oa/security/barracks)
 "dNN" = (
@@ -7844,12 +7845,12 @@
 	},
 /area/cadiaoutpost/oa/engineering/engine)
 "gKi" = (
-/obj/machinery/door/airlock/highsecurity/imperiumdoor{
-	name = "Imperialis Doorway - Magistratum"
+/obj/effect/wingrille_spawn/reinforced,
+/obj/structure/window_frame{
+	color = "grey";
+	maxhealth = 1900
 	},
-/turf/simulated/floor/factory_floor{
-	dir = 1
-	},
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/security/barracks)
 "gKq" = (
 /obj/machinery/door/blast/grates{
@@ -8339,7 +8340,7 @@
 /area/cadiaoutpost/oa/bridge/hallway)
 "hfK" = (
 /obj/machinery/door/airlock/imperiumdoor{
-	req_one_access = list(247,225);
+	req_one_access = list(247,225, 63);
 	name = "Imperialis Doorway - Checkpoint Door"
 	},
 /turf/simulated/floor/factory_floor{
@@ -11002,7 +11003,8 @@
 /area/cadiaoutpost/oa/service/inn)
 "jjH" = (
 /obj/machinery/door/blast/id_door/open{
-	id = "butt2"
+	id = "butt2";
+	begins_closed = 1
 	},
 /turf/simulated/floor/factory_floor{
 	dir = 8
@@ -21725,6 +21727,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/fancyfloor/carpet/blue/middle,
 /area/cadiaoutpost/oa/service/inn)
+"sav" = (
+/obj/machinery/door/airlock/highsecurity/imperiumdoor{
+	name = "Imperialis Doorway - Magistratum"
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/security/barracks)
 "say" = (
 /obj/structure/barrel2{
 	density = 1
@@ -23740,6 +23748,7 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/hab/inside)
 "tLO" = (
+/obj/structure/stairs/south,
 /turf/simulated/floor/darksteel_floor{
 	dir = 4
 	},
@@ -68409,7 +68418,7 @@ jBp
 mKR
 mKR
 mbx
-mbx
+gKi
 mKR
 mKR
 xkb
@@ -68672,9 +68681,9 @@ xkb
 fQz
 xkb
 rfu
-mKR
-mKR
-mKR
+xkb
+xkb
+xkb
 mKR
 mKR
 mKR
@@ -68923,7 +68932,7 @@ xkb
 xkb
 xkb
 xkb
-dGW
+sav
 xkb
 xkb
 fNc
@@ -69175,7 +69184,7 @@ xkb
 xkb
 xkb
 xkb
-dGW
+sav
 xkb
 fNc
 fNc
@@ -69669,7 +69678,7 @@ jBp
 mKR
 mKR
 mbx
-mbx
+gKi
 mKR
 mKR
 xkb

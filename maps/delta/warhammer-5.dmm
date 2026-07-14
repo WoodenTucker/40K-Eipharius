@@ -239,6 +239,17 @@
 	},
 /turf/simulated/open,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"bb" = (
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tilethick";
+	dir = 4;
+	pixel_y = 3
+	},
+/obj/item/fluff_items/paperwork{
+	pixel_y = 11
+	},
+/turf/simulated/floor/ceramic/old,
+/area/cadiaoutpost/oa/security/barracks)
 "be" = (
 /obj/item/trash/warfare_can/sardine,
 /obj/effect/floor_decal/newcorner/plating{
@@ -253,6 +264,17 @@
 	icon_state = "rwall1"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
+"bi" = (
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table4"
+	},
+/obj/item/storage/box/syndie_kit/imp_explosive,
+/obj/item/storage/box/syndie_kit/imp_explosive,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/security/barracks)
 "bj" = (
 /obj/effect/floor_decal/newcorner/plating/quarter,
 /turf/simulated/floor/tiled/dark{
@@ -322,6 +344,12 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/inn)
+"bu" = (
+/obj/structure/filingcabinet/filingcabinet{
+	pixel_x = 8
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/security/barracks)
 "bv" = (
 /obj/structure/table/rack,
 /obj/item/cell/lasgun{
@@ -385,6 +413,9 @@
 /obj/structure/catwalk,
 /turf/simulated/open,
 /area/cadiaoutpost/oa/hallway/northern)
+"bI" = (
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/security/barracks)
 "bK" = (
 /obj/structure/warfare/barricade/concrete_barrier{
 	dir = 4
@@ -485,12 +516,8 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "ce" = (
-/obj/item/pyre/self_lit{
-	invisibility = 100;
-	name = "Invisible Light"
-	},
 /turf/simulated/wall/concrete/strong,
-/area/cadiaoutpost/new_hive/hive_city)
+/area/cadiaoutpost/oa/security/barracks)
 "cf" = (
 /obj/structure/bed/chair/wood/simple,
 /obj/effect/decal/cleanable/dirt,
@@ -597,6 +624,16 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
+"cu" = (
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tilethick";
+	dir = 4;
+	pixel_y = 3
+	},
+/turf/simulated/floor/fancyfloor/carpet/grey{
+	dir = 4
+	},
+/area/cadiaoutpost/oa/security/barracks)
 "cv" = (
 /obj/effect/floor_decal/newcorner/grey{
 	dir = 8
@@ -617,6 +654,10 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/oa/shuttle/inquisitionpact)
+"cz" = (
+/obj/machinery/papershredder,
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/security/barracks)
 "cA" = (
 /obj/item/gun/projectile/ork/automatic/shoota/kustom{
 	name = "Ogryn Shootie"
@@ -869,11 +910,11 @@
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/service/inn)
 "dr" = (
-/obj/structure/warfare/barricade/concrete_barrier{
-	dir = 1
+/obj/structure/sign/portrait_antonio{
+	pixel_y = 32
 	},
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/new_hive/hive_city)
+/turf/simulated/floor/ceramic/old,
+/area/cadiaoutpost/oa/security/barracks)
 "ds" = (
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tileendtable"
@@ -1239,6 +1280,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/fancyfloor/brokenfloor3,
 /area/cadiaoutpost/oa/service/inn)
+"fa" = (
+/obj/structure/hivedecor/bookcase{
+	pixel_x = -7
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/security/barracks)
 "fc" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	icon_state = "04";
@@ -1959,7 +2006,6 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
 "hF" = (
-/obj/machinery/computer/bountycogitator,
 /obj/structure/window/reinforced{
 	health = 800;
 	maxhealth = 800;
@@ -2072,6 +2118,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/hab/inside)
+"id" = (
+/obj/structure/bookcase,
+/obj/item/paper_bin{
+	pixel_y = 5;
+	pixel_x = -3
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/security/barracks)
 "if" = (
 /obj/effect/floor_decal/newcorner/plating,
 /turf/simulated/floor/tiled{
@@ -2329,6 +2383,13 @@
 	color = "purple"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
+"iS" = (
+/obj/item/paper_bin{
+	pixel_y = 5;
+	pixel_x = -3
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/security/barracks)
 "iT" = (
 /obj/structure/table/rack/dark,
 /obj/item/clothing/accessory/storage/webbing_large{
@@ -2865,11 +2926,28 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/security/brig)
+"kP" = (
+/obj/structure/filingcabinet/filingcabinet{
+	pixel_x = -7
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/security/barracks)
 "kR" = (
 /turf/simulated/floor/fancyfloor/carpet/grey{
 	dir = 5
 	},
 /area/cadiaoutpost/oa/hallway/northern)
+"kS" = (
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tilethick";
+	dir = 4;
+	pixel_y = 3
+	},
+/obj/item/fluff_items/paperwork{
+	pixel_y = 11
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/security/barracks)
 "kU" = (
 /obj/structure/grille/iron_fence,
 /turf/simulated/floor/factory_floor{
@@ -2935,6 +3013,17 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/security/brig)
+"lk" = (
+/obj/structure/closet/hive/metal{
+	anchored = 1
+	},
+/obj/effect/floor_decal/spline/fancy/wood/three_quarters,
+/obj/item/forensics/sample_kit,
+/obj/item/storage/briefcase/crimekit,
+/obj/item/flame/lighter/random,
+/obj/random/smokes,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/security/barracks)
 "ll" = (
 /obj/effect/floor_decal/turf/brothel,
 /obj/structure/bed/chair/cage,
@@ -2994,6 +3083,12 @@
 /obj/machinery/light/small,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/hab/inside)
+"lA" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/fancyfloor/gray_white,
+/area/cadiaoutpost/oa/security/barracks)
 "lB" = (
 /obj/structure/table/steel_reinforced,
 /obj/random/loot/randomsupply,
@@ -3134,6 +3229,16 @@
 /obj/item/storage/bag/trash,
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/hallway/northern)
+"lY" = (
+/obj/item/fluff_items/paperwork{
+	pixel_y = 11
+	},
+/obj/item/paper_bin{
+	pixel_y = 5;
+	pixel_x = -3
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/security/barracks)
 "lZ" = (
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/village/pathfinder)
@@ -3282,6 +3387,11 @@
 /obj/structure/sewers/pipeflowsmall,
 /turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/oa/service/inn)
+"mN" = (
+/turf/simulated/floor/fancyfloor/carpet/grey{
+	dir = 9
+	},
+/area/cadiaoutpost/oa/security/barracks)
 "mP" = (
 /obj/effect/floor_decal/newcorner/polar{
 	dir = 8
@@ -3313,6 +3423,12 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/shuttle/inquisitionpact)
+"mW" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/security/barracks)
 "mX" = (
 /obj/item/reagent_containers/pill/happy{
 	pixel_y = 10
@@ -3323,6 +3439,13 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/new_hive/hive_city)
+"mZ" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/simulated/wall/concrete/strong,
+/area/cadiaoutpost/oa/security/barracks)
 "na" = (
 /obj/structure/bed/chair/wood/fancy/comfy1{
 	dir = 1
@@ -3344,6 +3467,9 @@
 	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/service/inn)
+"nf" = (
+/turf/simulated/open,
+/area/cadiaoutpost/oa/security/barracks)
 "ng" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sink{
@@ -3448,6 +3574,17 @@
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
+"nw" = (
+/obj/item/modular_computer/console/preset/command{
+	icon = 'icons/map_project/port/objects.dmi'
+	},
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tilethick";
+	dir = 4;
+	pixel_y = 3
+	},
+/turf/simulated/floor/ceramic/old,
+/area/cadiaoutpost/oa/security/barracks)
 "nx" = (
 /obj/machinery/door/unpowered/newmap/inn/luxury_room{
 	name = "boudoir";
@@ -3469,6 +3606,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/roguet)
+"nB" = (
+/turf/simulated/floor/fancyfloor/carpet/grey{
+	dir = 6
+	},
+/area/cadiaoutpost/oa/security/barracks)
 "nC" = (
 /obj/structure/closet/secure_closet/CMO{
 	req_access = list()
@@ -3555,6 +3697,17 @@
 	color = "purple"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
+"nV" = (
+/obj/machinery/computer/tithecogitator{
+	icon = 'icons/map_project/port/objects.dmi'
+	},
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tilethick";
+	dir = 4;
+	pixel_y = 3
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/security/barracks)
 "nW" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 4
@@ -3780,6 +3933,13 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/northern)
+"oL" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/security/barracks)
 "oN" = (
 /obj/structure/bed/padded,
 /obj/item/bedsheet/green{
@@ -3871,6 +4031,23 @@
 "pb" = (
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/oa/service/inn)
+"pd" = (
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tilethick";
+	dir = 4;
+	pixel_y = 3
+	},
+/obj/item/paper_bin{
+	pixel_y = 9;
+	pixel_x = 7
+	},
+/obj/item/pen/multi{
+	pixel_y = 10
+	},
+/turf/simulated/floor/fancyfloor/carpet/grey{
+	dir = 8
+	},
+/area/cadiaoutpost/oa/security/barracks)
 "pf" = (
 /obj/structure/bed/chair{
 	dir = 8;
@@ -4284,6 +4461,28 @@
 /obj/item/paper/administratum/abhuman,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/village/pathfinder)
+"qF" = (
+/obj/structure/closet/secure_closet{
+	req_one_access = list(2);
+	name = "Marshall's locker";
+	pixel_x = -16
+	},
+/obj/random/loot/goodweapon,
+/obj/item/stack/thrones2/twenty,
+/obj/item/stack/thrones2/twenty,
+/obj/item/ammo_box/shotgun,
+/obj/item/stack/thrones3{
+	amount = 20
+	},
+/obj/item/stack/thrones2{
+	amount = 10
+	},
+/obj/item/stack/thrones{
+	amount = 10
+	},
+/obj/item/clothing/accessory/holster/waist,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/security/barracks)
 "qH" = (
 /obj/effect/water/bottom,
 /obj/effect/water/top,
@@ -4797,6 +4996,11 @@
 /obj/structure/hivedecor/bookcase/huge,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/service/inn)
+"sQ" = (
+/turf/simulated/floor/fancyfloor/carpet/grey{
+	dir = 10
+	},
+/area/cadiaoutpost/oa/security/barracks)
 "sS" = (
 /obj/structure/toilet{
 	dir = 4
@@ -4863,6 +5067,12 @@
 	},
 /turf/simulated/open,
 /area/cadiaoutpost/new_hive/hive_city)
+"tj" = (
+/obj/structure/bed/chair/office/dark,
+/turf/simulated/floor/fancyfloor/carpet/grey{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/security/barracks)
 "tk" = (
 /obj/machinery/washing_machine,
 /obj/effect/floor_decal/spline/plain{
@@ -4879,6 +5089,13 @@
 	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/village/pathfinder)
+"tn" = (
+/obj/item/paper_bin{
+	pixel_y = 5;
+	pixel_x = -3
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/security/barracks)
 "to" = (
 /obj/structure/table/rack,
 /obj/item/stack/material/wood/fifty,
@@ -5245,6 +5462,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/rtship1)
+"uS" = (
+/obj/structure/hivedecor/bookcase{
+	pixel_x = 11
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/security/barracks)
 "uU" = (
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/new_hive/hive_city)
@@ -5665,6 +5888,21 @@
 /obj/machinery/light/small,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/new_hive/hive_city)
+"wI" = (
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tilethick";
+	dir = 4;
+	pixel_y = 3
+	},
+/obj/item/paper_bin{
+	pixel_y = 5;
+	pixel_x = -3
+	},
+/obj/item/pen/multi{
+	pixel_y = 2
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/security/barracks)
 "wJ" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 4
@@ -5691,6 +5929,18 @@
 	},
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/new_hive/hive_city)
+"wQ" = (
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tilethick";
+	dir = 4;
+	pixel_y = 3
+	},
+/obj/item/stamp/hop,
+/obj/item/stamp/denied{
+	pixel_y = 10
+	},
+/turf/simulated/floor/ceramic/old,
+/area/cadiaoutpost/oa/security/barracks)
 "wR" = (
 /turf/simulated/floor/factory_floor{
 	dir = 1
@@ -5761,6 +6011,12 @@
 	},
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/inn)
+"xi" = (
+/obj/structure/bed/chair/wood/simple{
+	dir = 1
+	},
+/turf/simulated/floor/ceramic/old,
+/area/cadiaoutpost/oa/security/barracks)
 "xj" = (
 /obj/effect/floor_decal/newcorner/polar{
 	dir = 1
@@ -5867,6 +6123,21 @@
 	dir = 10
 	},
 /area/cadiaoutpost/oa/security/brig)
+"xK" = (
+/obj/structure/sign/imperial{
+	pixel_y = 32
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/security/barracks)
+"xL" = (
+/obj/structure/sink{
+	dir = 8;
+	icon_state = "sink";
+	layer = 50;
+	pixel_x = -12
+	},
+/turf/simulated/floor/fancyfloor/gray_white,
+/area/cadiaoutpost/oa/security/barracks)
 "xM" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -6042,6 +6313,23 @@
 /obj/effect/landmark/start/village,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/hab/inside)
+"yt" = (
+/obj/structure/table/graf/reinf_table{
+	icon_state = "reinf_table5"
+	},
+/obj/item/card/id/key/middle/jail{
+	access = list(1984,2,3,5,10);
+	name = "arbitrator's key"
+	},
+/obj/item/card/id/key/grand/monastary{
+	access = list(213,211)
+	},
+/obj/item/card/id/key/middle/jail{
+	access = list(1984,2,3,5,10);
+	name = "arbitrator's key"
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/security/barracks)
 "yv" = (
 /obj/effect/floor_decal/industrial/warning_red,
 /turf/simulated/floor/plating{
@@ -6131,7 +6419,7 @@
 /obj/structure/table/graf/rusty_table,
 /obj/machinery/door/blast/grates{
 	icon_state = "gshutter1";
-	id = "armoryshutters";
+	id = "armor_shutter";
 	maxhealth = 1000;
 	name = "armory reception grate"
 	},
@@ -6158,6 +6446,17 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
+"yS" = (
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tilethick";
+	dir = 4;
+	pixel_y = 3
+	},
+/obj/item/fluff_items/paperwork{
+	pixel_y = 11
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/security/barracks)
 "yT" = (
 /obj/structure/table/graf/wood_office_table{
 	icon_state = "wood_1tileendtable"
@@ -6582,6 +6881,11 @@
 /obj/machinery/papershredder,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/security/brig)
+"An" = (
+/obj/effect/floor_decal/spline/fancy/wood/three_quarters,
+/obj/structure/flora/pottedplant/minitree,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/security/barracks)
 "Ao" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 1;
@@ -6678,6 +6982,12 @@
 	dir = 1
 	},
 /area/cadiaoutpost/new_hive/hive_city)
+"AO" = (
+/obj/item/fluff_items/paperwork{
+	pixel_y = 11
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/security/barracks)
 "AP" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 4
@@ -6950,6 +7260,13 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
+"BO" = (
+/obj/structure/table/graf/rusty_table,
+/obj/machinery/photocopier/faxmachine{
+	department = "Administratum"
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/security/barracks)
 "BQ" = (
 /obj/structure/curtain/open/shower,
 /turf/simulated/floor/ceramic/surgery2,
@@ -7144,7 +7461,6 @@
 /turf/simulated/floor/concrete,
 /area/cadiaoutpost/oa/service/hab/inside)
 "CC" = (
-/obj/machinery/computer/tithecogitator,
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1
 	},
@@ -7247,6 +7563,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/brig)
+"CU" = (
+/obj/structure/sign/portrait_irineu{
+	pixel_y = 32
+	},
+/turf/simulated/floor/ceramic/old,
+/area/cadiaoutpost/oa/security/barracks)
 "CV" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -7457,6 +7779,12 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/inn)
+"DG" = (
+/obj/structure/filingcabinet/filingcabinet{
+	pixel_x = -7
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/security/barracks)
 "DI" = (
 /obj/effect/floor_decal/newcorner/reinforced/corner{
 	dir = 8
@@ -7746,6 +8074,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/brig)
+"EF" = (
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tilethick";
+	dir = 4;
+	pixel_y = 3
+	},
+/obj/item/book/manual/law,
+/turf/simulated/floor/fancyfloor/carpet/grey/middle,
+/area/cadiaoutpost/oa/security/barracks)
 "EI" = (
 /obj/structure/bed/chair/wood/fancy/comfy1{
 	dir = 8
@@ -7859,6 +8196,12 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
+"Fn" = (
+/obj/structure/bed/chair{
+	dir = 1
+	},
+/turf/simulated/floor/fancyfloor/carpet/grey,
+/area/cadiaoutpost/oa/security/barracks)
 "Fo" = (
 /obj/effect/floor_decal/turf/metal/eight,
 /obj/structure/bed/chair{
@@ -8414,7 +8757,6 @@
 /obj/item/clothing/head/bighat,
 /obj/item/clothing/head/cardborg,
 /obj/item/clothing/head/chefhat,
-/obj/item/clothing/head/collectable/kitty,
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 1
 	},
@@ -8636,6 +8978,11 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/village/pathfinder)
+"Ia" = (
+/turf/simulated/floor/fancyfloor/carpet/grey{
+	dir = 5
+	},
+/area/cadiaoutpost/oa/security/barracks)
 "Ib" = (
 /obj/machinery/door/airlock/cone{
 	maxhealth = 3000;
@@ -8695,6 +9042,10 @@
 "Io" = (
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
+"Ip" = (
+/obj/structure/bookcase,
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/security/barracks)
 "Iq" = (
 /turf/space,
 /area/cadiaoutpost/new_hive/hive_city)
@@ -8739,6 +9090,15 @@
 	dir = 5
 	},
 /area/cadiaoutpost/oa/village/pathfinder)
+"Iy" = (
+/obj/machinery/photocopier,
+/obj/item/device/toner,
+/obj/item/device/toner,
+/obj/structure/sign/imperial{
+	pixel_x = -30
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/security/barracks)
 "Iz" = (
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /turf/simulated/floor/darkfloor,
@@ -8844,7 +9204,6 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "IW" = (
-/obj/machinery/computer/requisitioncogitator,
 /obj/structure/window/reinforced{
 	health = 800;
 	maxhealth = 800;
@@ -8910,6 +9269,12 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
+"Jl" = (
+/obj/machinery/door/unpowered/inn{
+	name = "Bathroom"
+	},
+/turf/simulated/floor/fancyfloor/gray_white,
+/area/cadiaoutpost/oa/security/barracks)
 "Jn" = (
 /obj/structure/curtain/open/shower/security{
 	name = "privacy curtain";
@@ -8978,6 +9343,14 @@
 "JE" = (
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/brig)
+"JF" = (
+/obj/machinery/door/unpowered/inn/magistratum{
+	maxhealth = 2000;
+	name = "Magistratum Entrace";
+	req_one_access = list()
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/security/barracks)
 "JG" = (
 /obj/structure/table/rack,
 /obj/item/grenade/frag/high_yield/krak,
@@ -9013,6 +9386,17 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/hab/inside)
+"JP" = (
+/obj/machinery/computer/requisitioncogitator{
+	icon = 'icons/map_project/port/objects.dmi'
+	},
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tilethick";
+	dir = 4;
+	pixel_y = 3
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/security/barracks)
 "JQ" = (
 /obj/structure/bed,
 /turf/simulated/floor/tiled/dark{
@@ -9113,6 +9497,12 @@
 	color = "purple"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
+"Ko" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/ceramic/old,
+/area/cadiaoutpost/oa/security/barracks)
 "Kp" = (
 /obj/effect/floor_decal/newcorner/stone,
 /turf/simulated/floor/ceramic,
@@ -9372,6 +9762,12 @@
 /obj/random/trash,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/hab/inside)
+"Lq" = (
+/obj/structure/bed/chair{
+	dir = 8
+	},
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/security/barracks)
 "Lr" = (
 /obj/structure/shipdecor{
 	icon_state = "off"
@@ -9537,6 +9933,12 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/hallway/northern)
+"LW" = (
+/obj/structure/sign/portrait_hippocrates{
+	pixel_y = 32
+	},
+/turf/simulated/floor/ceramic/old,
+/area/cadiaoutpost/oa/security/barracks)
 "LX" = (
 /obj/effect/floor_decal/newcorner/polar{
 	dir = 1
@@ -9758,6 +10160,15 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
+"MD" = (
+/obj/structure/filingcabinet/filingcabinet{
+	pixel_x = -7
+	},
+/obj/structure/filingcabinet/filingcabinet{
+	pixel_x = 8
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/security/barracks)
 "ME" = (
 /obj/structure/catwalk,
 /obj/structure/railing{
@@ -10640,6 +11051,18 @@
 /obj/effect/floor_decal/newcorner/stone/corner,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"PK" = (
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tilethick";
+	dir = 4;
+	pixel_y = 3
+	},
+/obj/item/stamp/hop,
+/obj/item/stamp/denied{
+	pixel_y = 10
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/security/barracks)
 "PP" = (
 /obj/structure/lattice,
 /turf/simulated/open,
@@ -10729,6 +11152,12 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/security/brig)
+"Ql" = (
+/obj/machinery/door/unpowered/inn{
+	name = "Bathroom"
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/security/barracks)
 "Qm" = (
 /turf/simulated/floor/factory_floor{
 	dir = 1
@@ -11308,6 +11737,12 @@
 "Sl" = (
 /turf/simulated/floor/fancyfloor/carpet,
 /area/cadiaoutpost/oa/hallway/northern)
+"Sn" = (
+/obj/item/fluff_items/paperwork{
+	pixel_y = 11
+	},
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/security/barracks)
 "So" = (
 /obj/structure/lattice,
 /obj/effect/floor_decal/turf/piping{
@@ -11346,7 +11781,7 @@
 	pixel_y = 32
 	},
 /turf/simulated/wall/concrete/strong,
-/area/cadiaoutpost/new_hive/hive_city)
+/area/cadiaoutpost/oa/security/barracks)
 "Sx" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -11442,7 +11877,7 @@
 /obj/structure/table/graf/rusty_table,
 /obj/machinery/door/blast/grates{
 	icon_state = "gshutter1";
-	id = "armoryshutters";
+	id = "armor_shutter";
 	maxhealth = 1000;
 	name = "armory reception grate"
 	},
@@ -11794,6 +12229,18 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/shuttle/station2)
+"TM" = (
+/obj/machinery/computer/bountycogitator{
+	icon = 'icons/map_project/port/objects.dmi';
+	dir = 8
+	},
+/obj/structure/table/graf/wood_office_table{
+	icon_state = "wood_1tilethick";
+	dir = 4;
+	pixel_y = 3
+	},
+/turf/simulated/floor/ceramic/old,
+/area/cadiaoutpost/oa/security/barracks)
 "TN" = (
 /obj/machinery/door/airlock/hatch,
 /turf/simulated/floor/factory_floor,
@@ -12146,6 +12593,16 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
+"UZ" = (
+/obj/machinery/door/unpowered/inn/magistratum{
+	maxhealth = 2000;
+	name = "Magistratum Entrace";
+	req_one_access = list()
+	},
+/turf/simulated/floor/factory_floor{
+	dir = 1
+	},
+/area/cadiaoutpost/oa/security/barracks)
 "Vb" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -12229,6 +12686,9 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/service/inn)
+"Vv" = (
+/turf/simulated/floor/fancyfloor/gray_white,
+/area/cadiaoutpost/oa/security/barracks)
 "Vw" = (
 /obj/structure/sign/art/lordgovenor{
 	pixel_x = -32
@@ -12566,6 +13026,9 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/station2)
+"WB" = (
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/security/barracks)
 "WD" = (
 /obj/machinery/light{
 	dir = 8;
@@ -12581,6 +13044,14 @@
 "WG" = (
 /turf/simulated/floor/fancyfloor/carpet/blue/middle,
 /area/cadiaoutpost/oa/hallway/northern)
+"WJ" = (
+/obj/structure/toilet{
+	dir = 8;
+	icon_state = "toilet00"
+	},
+/obj/machinery/light/small,
+/turf/simulated/floor/fancyfloor/gray_white,
+/area/cadiaoutpost/oa/security/barracks)
 "WL" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 1
@@ -12607,6 +13078,18 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/inn)
+"WO" = (
+/obj/structure/bed{
+	desc = "This is used to lie in, sleep in or strap on.";
+	icon_state = "bed_padding1";
+	name = "comfy bed"
+	},
+/obj/item/bedsheet/hos{
+	color = "grey"
+	},
+/obj/effect/landmark/start/inqmagi/arbitrator,
+/turf/simulated/floor/darkwood,
+/area/cadiaoutpost/oa/security/barracks)
 "WP" = (
 /obj/machinery/door/airlock/cone{
 	maxhealth = 3000;
@@ -12761,8 +13244,8 @@
 /turf/simulated/open,
 /area/cadiaoutpost/oa/village/pathfinder)
 "XA" = (
-/turf/simulated/floor/darksteel_floor,
-/area/cadiaoutpost/new_hive/hive_city)
+/turf/simulated/floor/fancyfloor/coralg,
+/area/cadiaoutpost/oa/security/barracks)
 "XB" = (
 /obj/structure/torchwall/service{
 	dir = 1;
@@ -12834,6 +13317,12 @@
 	icon_state = "rwall12"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
+"XL" = (
+/obj/structure/filingcabinet/filingcabinet{
+	pixel_x = 8
+	},
+/turf/simulated/floor/ceramic,
+/area/cadiaoutpost/oa/security/barracks)
 "XN" = (
 /obj/effect/floor_decal/industrial/mark,
 /obj/structure/closet/crate/large,
@@ -13200,6 +13689,9 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/brig)
+"Zi" = (
+/turf/simulated/floor/ceramic/old,
+/area/cadiaoutpost/oa/security/barracks)
 "Zj" = (
 /obj/structure/sign/stainedglass1{
 	pixel_x = 32
@@ -13313,6 +13805,12 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
+"ZF" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/ceramic/old,
+/area/cadiaoutpost/oa/security/barracks)
 "ZG" = (
 /obj/effect/floor_decal/newcorner/plating,
 /obj/effect/decal/cleanable/dirt,
@@ -50906,30 +51404,30 @@ vt
 vt
 vt
 vt
-Ck
-Ck
-Ck
 ce
-Ck
-Ck
-Ck
 ce
-Ck
-Ck
-Ck
 ce
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
+ce
+ce
+ce
+ce
+mZ
+ce
+ce
+ce
+mZ
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
 vt
 vt
 vt
@@ -51157,32 +51655,32 @@ vt
 vt
 vt
 vt
-Ck
-Ck
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-Ck
-bx
-bx
-bx
-bx
-bx
-Ck
-Ck
+ce
+ce
+bi
+yt
+qF
+WB
+ce
+ce
+bI
+bI
+bI
+AO
+DG
+bI
+bI
+bI
+AO
+bI
+bI
+bI
+AO
+DG
+bI
+bI
+ce
+ce
 vt
 vt
 vt
@@ -51408,34 +51906,34 @@ vt
 vt
 vt
 vt
-Ck
-Ck
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-Ck
+ce
+ce
+lk
+Lq
+WB
+WB
+WB
+ce
+ce
+XL
+XA
+XA
+XA
+XA
+XA
+Sn
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+XA
+bI
+ce
 Sw
-Ck
+ce
 vt
 vt
 vt
@@ -51660,34 +52158,34 @@ vt
 vt
 vt
 vt
-Ck
-Ck
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-Ck
-Ck
-Ck
+ce
+ce
+WB
+WB
+WB
+WB
+WO
+ce
+ce
+bI
+XA
+XA
+XA
+bu
+Sn
+kP
+XA
+XA
+XA
+XA
+Sn
+XA
+XA
+XA
+AO
+ce
+ce
+ce
 vt
 vt
 vt
@@ -51913,33 +52411,33 @@ vt
 vt
 vt
 vt
-Ck
-Ck
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-Ck
-Ck
-Ck
+ce
+JF
+ce
+ce
+ce
+ce
+ce
+ce
+AO
+XA
+Sn
+XA
+Sn
+Sn
+XA
+XA
+bI
+iS
+MD
+bI
+bI
+XA
+XA
+bI
+ce
+ce
+ce
 vt
 vt
 vt
@@ -52165,33 +52663,33 @@ vt
 vt
 vt
 vt
-vt
-Ck
 ce
-Qm
+Zi
+Zi
+ZF
+Zi
+An
+mZ
+AO
+bI
+XA
+XA
+XA
+fa
+XA
+XA
+XA
+bI
 ce
-Ck
 ce
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-Ck
-bx
-bx
-bx
-bx
-bx
-Ck
+ce
+Ip
+XA
+XA
+bI
+ce
 Sw
-Ck
+ce
 vt
 vt
 vt
@@ -52417,32 +52915,32 @@ vt
 vt
 vt
 vt
-vt
-dr
-bx
-bx
-bx
-bx
-Ck
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
 ce
-Ck
-Ck
-Ck
-bx
-bx
-Ck
-Ck
+dr
+mN
+pd
+sQ
+Zi
+ce
+xK
+XA
+XA
+Sn
+XA
+XA
+XA
+XA
+XA
+bI
+ce
+ce
+ce
+Ip
+XA
+XA
+AO
+ce
+ce
 vt
 vt
 vt
@@ -52669,31 +53167,31 @@ vt
 vt
 vt
 vt
-vt
-dr
-bx
-bx
-bx
-bx
-Qm
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-Ck
-Ck
-Ck
+ce
+LW
+tj
+EF
+Fn
+Zi
+UZ
 XA
-bx
-bx
-Ck
+XA
+tn
+uS
+Sn
+oL
+XA
+XA
+XA
+AO
+ce
+mZ
+ce
+XL
+XA
+XA
+bI
+ce
 vt
 vt
 vt
@@ -52921,31 +53419,31 @@ Rh
 Rh
 Rh
 Rh
-ae
-dr
-bx
-bx
-bx
-bx
-Qm
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-Ck
-Ck
-Ck
-ty
-bx
-bx
-Ck
+ce
+CU
+Ia
+cu
+nB
+Zi
+ce
+xK
+XA
+Sn
+Sn
+XA
+tn
+XA
+XA
+XA
+bI
+ce
+nf
+XA
+XA
+XA
+XA
+bI
+ce
 vt
 vt
 vt
@@ -53173,31 +53671,31 @@ DS
 aX
 aX
 Rh
-ae
-dr
-bx
-bx
-bx
-bx
-Ck
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
 ce
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
+Zi
+Zi
+Ko
+Zi
+An
+mZ
+bI
+bI
+Sn
+XA
+XA
+lY
+XA
+Sn
+tn
+bI
+ce
+nf
+XA
+XA
+XA
+XA
+bI
+ce
 vt
 vt
 vt
@@ -53426,32 +53924,32 @@ AV
 PB
 Rh
 Rh
-Ck
 ce
-Qm
 ce
-Ck
 ce
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-Ck
-bx
-bx
-bx
-bx
-bx
-Ck
-Ck
-Ck
+ce
+ce
+ce
+ce
+bI
+XA
+XA
+XA
+Sn
+XA
+id
+Sn
+XL
+ce
+mZ
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
 vt
 vt
 vt
@@ -53678,32 +54176,32 @@ kc
 Cq
 PB
 Rh
-Ck
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-Ck
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+AO
+XA
+XA
+XA
+XA
+XA
+Sn
+XA
+bI
+bI
+ce
+Vv
+xL
+lA
+xL
+ce
+ce
+ce
+ce
 vt
 vt
 vt
@@ -53930,32 +54428,32 @@ kc
 kc
 FM
 Rh
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-Ck
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+MD
+XA
+tn
+Sn
+Sn
+XA
+XA
+XA
+XA
+XA
+Ql
+Vv
+Vv
+Vv
+Vv
+ce
+ce
+ce
+ce
 vt
 vt
 vt
@@ -54182,33 +54680,33 @@ kc
 wT
 Qx
 Rh
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-Ck
-Ck
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+bI
+XA
+XA
+XA
+oL
+XA
+XA
+XA
+bI
+bI
+ce
+ce
+Jl
+ce
+Jl
+ce
+ce
+ce
+ce
+ce
 vt
 vt
 vt
@@ -54434,33 +54932,33 @@ kc
 wT
 Qx
 Rh
-Ck
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-Ck
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-Ck
-Ck
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+bI
+bI
+bI
+AO
+AO
+AO
+bI
+bI
+AO
+ce
+ce
+ce
+WJ
+ce
+WJ
+ce
+ce
+ce
+ce
+ce
 vt
 vt
 vt
@@ -54686,33 +55184,33 @@ kc
 wT
 Qx
 Rh
-Ck
-Ck
-Ck
 ce
-Ck
-Ck
-Ck
-Ck
-bx
-bx
-bx
-Ck
-Ck
-bx
-bx
-bx
-Ck
-Ck
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-Ck
-Ck
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+bI
+bI
+ce
+ce
+ce
+bI
+bI
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
 vt
 vt
 vt
@@ -54943,28 +55441,28 @@ vt
 vt
 vt
 vt
-Ck
-Ck
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-Ck
-Ck
+ce
+ce
+bI
+bI
+bI
+bI
+Iy
+bI
+bI
+bI
+bI
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
 vt
 vt
 vt
@@ -55195,28 +55693,28 @@ vt
 vt
 vt
 vt
-Ck
-Ck
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-Ck
-Ck
+ce
+ce
+bI
+Zi
+Zi
+Zi
+Zi
+Zi
+Zi
+Zi
+bI
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
 vt
 vt
 vt
@@ -55447,28 +55945,28 @@ vt
 vt
 vt
 vt
-Ck
-Ck
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-Ck
-Ck
+ce
+ce
+PK
+Zi
+bb
+Zi
+Zi
+wQ
+Zi
+bb
+bI
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
 vt
 vt
 vt
@@ -55699,27 +56197,27 @@ vt
 vt
 vt
 vt
-Ck
-Ck
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-Ck
+ce
+ce
+nV
+xi
+yS
+Zi
+Zi
+TM
+xi
+bb
+bI
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
 vt
 vt
 vt
@@ -55951,27 +56449,27 @@ vt
 vt
 vt
 vt
-Ck
-Ck
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-Ck
+ce
+ce
+JP
+Zi
+yS
+Zi
+Zi
+nw
+Zi
+bb
+bI
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
 vt
 vt
 vt
@@ -56203,27 +56701,27 @@ vt
 vt
 vt
 vt
-Ck
 ce
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-bx
-Ck
+mZ
+wI
+mW
+kS
+cz
+BO
+wI
+mW
+kS
+bI
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
 vt
 vt
 vt
@@ -56455,27 +56953,27 @@ vt
 vt
 vt
 vt
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
-Ck
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
 vt
 vt
 vt
