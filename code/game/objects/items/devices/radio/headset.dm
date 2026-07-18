@@ -102,8 +102,8 @@
 	desc = "Keep that toaster-speak to yourselves."
 	icon_state = "eng_headset"
 	item_state = "headset"
-	ks1type = /obj/item/device/encryptionkey/headset_eng
-	ks2type = /obj/item/device/encryptionkey/red
+	ks1type = /obj/item/device/encryptionkey/red
+	ks2type = /obj/item/device/encryptionkey/headset_eng
 
 //not used rn
 /obj/item/device/radio/headset/headset_rob
