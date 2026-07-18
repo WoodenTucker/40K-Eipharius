@@ -103,7 +103,7 @@
 	icon_state = "eng_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/headset_eng
-	ks2type = null
+	ks2type = /obj/item/device/encryptionkey/red
 
 //not used rn
 /obj/item/device/radio/headset/headset_rob
